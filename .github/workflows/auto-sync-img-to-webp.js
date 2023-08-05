@@ -1,7 +1,7 @@
 on:
   push:
     branches: [master, main]
-    paths: '**/auto-sync-img-to-webp.js'
+    paths: '**/img-to-webp.js'
 
 jobs:
   build:
