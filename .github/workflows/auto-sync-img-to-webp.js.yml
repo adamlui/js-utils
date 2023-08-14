@@ -19,7 +19,10 @@ jobs:
       - name: Build list of target repos
         id: list_repos
         run: |
-          target_repos=("adamlui/userscripts" "adamlui/chatgpt-apps" "adamlui/chatgptevo.com" "adamlui/autoclear-chatgpt-history" "adamlui/chatgpt-auto-continue" "adamlui/chatgpt-auto-refresh" "adamlui/chatgpt-infinity" "adamlui/chatgpt-widescreen" "adamlui/youtube-classic" "kudoai/bravegpt" "kudoai/chatgpt.js" "kudoai/duckduckgpt")
+          target_repos=( \
+            "adamlui/userscripts" "adamlui/chatgpt-apps" "adamlui/chatgptevo.com" "adamlui/autoclear-chatgpt-history" \
+            "adamlui/chatgpt-auto-continue" "adamlui/chatgpt-auto-refresh" "adamlui/chatgpt-infinity" "adamlui/chatgpt-widescreen" \
+            "adamlui/youtube-classic" "kudoai/bravegpt" "kudoai/chatgpt.js" "kudoai/duckduckgpt")
           echo "::set-output name=repos::${target_repos[*]}"
       - name: Checkout target repos
         run: |
