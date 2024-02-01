@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "img-to-webp/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "minify-js/"
+    schedule:
+      interval: "daily"
