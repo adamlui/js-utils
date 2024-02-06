@@ -1,4 +1,4 @@
-# 🛠️ JavaScript Utilities
+# 🛠️ JavaScript utilities
 
 ## Contributing
 
