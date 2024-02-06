@@ -1,5 +1,8 @@
 # 🛠️ JavaScript utilities
 
+[![](https://img.shields.io/badge/License-MIT-fcde7b.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge)](../LICENSE.md)
+[![](https://img.shields.io/codacy/grade/29b89647254f49c2bc09f05fc25bcb53?label=Code+Quality&logo=codacy&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge)](https://app.codacy.com/gh/adamlui/js-utils/commits?utm_source=adamlui-js-utils&utm_content=github_shield)
+
 ## Contributing
 
 To set up linting, after forking/cloning:
