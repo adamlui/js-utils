@@ -6,7 +6,7 @@
 
 ## 💻 Contributing
 
-(Optional) To set up pre-commit linting, after forking/cloning:
+(Optional) To enable pre-commit linting, after forking/cloning:
 
 1. Navigate to project root
 
