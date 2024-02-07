@@ -39,3 +39,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
+
+<a href="https://github.com/adamlui">**Home**</a> /
+<a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
+<a href="#%EF%B8%8F-javascript-utilities">Back to top ↑</a>
