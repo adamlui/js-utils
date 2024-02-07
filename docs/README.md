@@ -4,18 +4,6 @@
 <a href="https://app.codacy.com/gh/adamlui/js-utils/commits?utm_source=adamlui-js-utils&utm_content=github_shield"><img height=25 src="https://img.shields.io/codacy/grade/89be3b7834174bedb6ffe66609e7cfc0?label=Code+Quality&logo=codacy&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge"></a>
 <br><br>
 
-## 💻 Contributing
-
-(Optional) To enable pre-commit linting, after forking/cloning:
-
-1. Navigate to project root
-
-2. Install dev dependencies ([ESLint](https://github.com/eslint/eslint) + [Husky](https://github.com/typicode/husky)):
-   
-   ```
-   npm install
-   ```
-
 ## 🏛️ MIT License
 
 **Copyright (c) 2023–2024 [Adam Lui](https://github.com/adamlui)**
@@ -37,6 +25,18 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## 💻 Contributing
+
+(Optional) To enable pre-commit linting, after forking/cloning:
+
+1. Navigate to project root
+
+2. Install dev dependencies ([ESLint](https://github.com/eslint/eslint) + [Husky](https://github.com/typicode/husky)):
+   
+   ```
+   npm install
+   ```
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
 
