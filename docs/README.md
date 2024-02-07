@@ -6,9 +6,9 @@
 
 ## 💻 Contributing
 
-Before contributing, to optionally set up pre-commit linting, after forking/cloning:
+Before contributing, to optionally set up pre-commit linting:
 
-1. Navigate to project root
+1. Fork or clone the repo, then nav to root
 
 2. Install dev dependencies (eslint + husky):
    
