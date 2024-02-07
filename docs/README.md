@@ -10,7 +10,7 @@ Before contributing, to optionally set up pre-commit linting, after forking/clon
 
 1. Navigate to project root
 
-2. Install dev dependencies (eslint + husky):
+2. Install dev dependencies (ESLint + Husky):
    
    ```
    npm install
