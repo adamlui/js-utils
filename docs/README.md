@@ -16,9 +16,7 @@
    npm install
    ```
 
-## 🏛️ License
-
-### [MIT License](../LICENSE.md)
+## 🏛️ MIT License
 
 **Copyright (c) 2023–2024 [Adam Lui](https://github.com/adamlui)**
 
