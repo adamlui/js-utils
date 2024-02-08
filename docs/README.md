@@ -33,7 +33,7 @@ SOFTWARE.
 
 1. Navigate to project root
 
-2. Install dev dependencies ([ESLint](https://github.com/eslint/eslint) + [Husky](https://github.com/typicode/husky)):
+2. Install dev dependencies ([ESLint](https://github.com/eslint/eslint) + [eslint-plugin-yml](https://github.com/ota-meshi/eslint-plugin-yml) + [Husky](https://github.com/typicode/husky)):
    
    ```
    npm install
