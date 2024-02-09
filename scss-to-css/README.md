@@ -3,7 +3,8 @@
 <a href="#%EF%B8%8F-mit-license"><img height=25 src="https://img.shields.io/badge/License-MIT-fcde7b.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
 Recursively compile all SCSS files into minified CSS.
-<br><br>
+
+<img height=10px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
 
 ## ⚡ Installation
 
