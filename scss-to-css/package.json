@@ -7,8 +7,8 @@
     "email": "adam@kudoai.com",
     "url": "https://github.com/adamlui"
   },
-  "license": "MIT",
   "homepage": "https://github.com/adamlui/js-utils",
+  "license": "MIT",
   "main": "scss-to-css.js",
   "bin": {
     "scss-to-css": "scss-to-css.js"
