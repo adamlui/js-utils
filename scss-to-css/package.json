@@ -1,0 +1,33 @@
+{
+  "name": "@adamlui/scss-to-css",
+  "version": "1.0.0",
+  "description": "Compile all SCSS files into CSS recursively",
+  "author": "Adam Lui",
+  "license": "MIT",
+  "homepage": "https://github.com/adamlui/js-utils",
+  "main": "scss-to-css.js",
+  "bin": {
+    "scss-to-css": "scss-to-css.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamlui/js-utils.git"
+  },
+  "keywords": [
+    "scss",
+    "sass",
+    "css",
+    "stylesheets",
+    "compiler",
+    "minifier"
+  ],
+  "bugs": {
+    "url": "https://github.com/adamlui/js-utils/issues"
+  },
+  "dependencies": {
+    "sass": "^1.70.0"
+  }
+}
