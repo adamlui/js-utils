@@ -1,7 +1,7 @@
 {
   "name": "@adamlui/scss-to-css",
-  "version": "1.0.0",
-  "description": "Compile all SCSS files into CSS recursively",
+  "version": "1.0.1",
+  "description": "Recursively compile all SCSS files into minified CSS",
   "author": "Adam Lui",
   "license": "MIT",
   "homepage": "https://github.com/adamlui/js-utils",
