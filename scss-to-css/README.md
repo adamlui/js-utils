@@ -3,20 +3,21 @@
 <a href="#%EF%B8%8F-mit-license"><img height=25 src="https://img.shields.io/badge/License-MIT-fcde7b.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
 Recursively compile all SCSS files into minified CSS.
+<br><br>
 
 ## ⚡ Installation
 
 - As a global utility:
 
-```
-npm install -g @adamlui/scss-to-css
-```
+   ```
+   npm install -g @adamlui/scss-to-css
+   ```
 
 - As a dev dependency, from your project root:
 
-```
-npm install -D @adamlui/scss-to-css
-```
+   ```
+   npm install -D @adamlui/scss-to-css
+   ```
 
 ## 💻 Usage
 
@@ -36,17 +37,17 @@ Sample output:
 
 1. Add build script to project's `package.json`:
 
-```json
-  "scripts": {
-    "build:css": "scss-to-css"
-  },
-```
+    ```json
+      "scripts": {
+        "build:css": "scss-to-css"
+      },
+    ```
 
 2. Run script from a folder to recursively compile all SCSS:
 
-```
-npm run build:css
-```
+    ```
+    npm run build:css
+    ```
 
 ## 🏛️ MIT License
 
@@ -69,6 +70,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+<br>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
 
