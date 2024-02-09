@@ -14,3 +14,8 @@ updates:
     directory: minify-js/
     schedule:
       interval: daily
+
+  - package-ecosystem: npm
+    directory: scss-to-css/
+    schedule:
+      interval: daily
