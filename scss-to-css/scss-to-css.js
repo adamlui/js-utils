@@ -48,7 +48,7 @@ const scssFiles = (() => {
 })();
 
 // Compile SCSS files to CSS
-if (scssFiles.length ===     0) console.info('\nNo SCSS files found.');
+if (scssFiles.length === 0) console.info('\nNo SCSS files found.');
 else {
     scssFiles.forEach(scssPath => {
         const inputDir = path.dirname(scssPath);
@@ -58,6 +58,6 @@ else {
         );
         console.info(`\nCompiling ${ scssPath } to ${ outputPath }...`);
         execSync(`sass --style compressed "${ scssPath }" "${ outputPath }"`);
-        console.info(`${bg}Compilation complete!`);
+        console.info(`${bg}Compilation complete!${nc}`);
     });
 }
