@@ -74,4 +74,4 @@ SOFTWARE.
 
 <a href="https://github.com/adamlui">**Home**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
-<a href="#">Back to top ↑</a>
+<a href="#-scss-to-cssjs-">Back to top ↑</a>
