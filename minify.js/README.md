@@ -109,4 +109,4 @@ SOFTWARE.
 
 <a href="https://github.com/adamlui/js-utils">**Home**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
-<a href="#--scss-to-cssjs">Back to top ↑</a>
+<a href="#-minifyjs">Back to top ↑</a>
