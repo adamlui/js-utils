@@ -5,7 +5,6 @@
 <a href="#%EF%B8%8F-mit-license"><img height=31 src="https://img.shields.io/badge/License-MIT-fcde7b.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
 <img src="https://github.com/adamlui/js-utils/blob/main/minify.js/media/images/minify-js-docs-demo.png">
-
 <br>
 
 ## ⚡ Installation
@@ -54,29 +53,29 @@ Replace `<minify-js-cmd>` with `minify-js` + optional args. Then, `npm run build
 
 ## 📃 Examples:
 
-Minify all JavaScript files in the **current directory** (outputs to `./minified/`):
+- Minify all JavaScript files in the **current directory** (outputs to `./minified/`):
 
-```
-minify-js
-```
+   ```
+   minify-js
+   ```
 
-Minify all JavaScript files in a **specific directory** (outputs to `path/to/your/directory/minified/`):
+- Minify all JavaScript files in a **specific directory** (outputs to `path/to/your/directory/minified/`):
 
-```
-minify-js path/to/your/directory
-```
+   ```
+   minify-js path/to/your/directory
+   ```
 
-Minify a **specific file** (outputs to `path/to/your/minified/file.min.js`):
+- Minify a **specific file** (outputs to `path/to/your/minified/file.min.js`):
 
-```
-minify-js path/to/your/file.js
-```
+   ```
+   minify-js path/to/your/file.js
+   ```
 
-Specify both **input and output** directories (outputs to `output_folder/`):
+- Specify both **input and output** directories (outputs to `output_folder/`):
 
-```
-minify-js input_folder output_folder
-```
+   ```
+   minify-js input_folder output_folder
+   ```
 
 ## 🏛️ MIT License
 
