@@ -1,15 +1,12 @@
 # <> minify.js 
 
-<a href="#%EF%B8%8F-mit-license"><img height=25 src="https://img.shields.io/badge/License-MIT-fcde7b.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-
 ### Minify JavaScript files from the CLI (recursively or indivdually)
 
-<img height=10px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
-
-<br>
+<a href="#%EF%B8%8F-mit-license"><img height=28 src="https://img.shields.io/badge/License-MIT-fcde7b.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
 <img src="https://github.com/adamlui/js-utils/blob/main/minify.js/media/images/minify-js-docs-demo.png">
 
+<br>
 
 ## ⚡ Installation
 
