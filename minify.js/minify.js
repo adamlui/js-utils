@@ -8,8 +8,8 @@ const fs = require('fs'),
 // Init UI colors
 const nc = '\x1b[0m', // no color
       br = '\x1b[1;91m', // bright red
-      bg = '\x1b[1;92m', // bright green
-      by = '\x1b[1;33m'; // bright yellow
+      by = '\x1b[1;33m', // bright yellow
+      bg = '\x1b[1;92m'; // bright green
 
 // Clean leading slashes from args to avoid parsing system root
 const inputArg = process.argv[2] ? process.argv[2].replace(/^\/*/, '') : '',
