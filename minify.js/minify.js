@@ -1,6 +1,6 @@
 /* ========================================================
 Script:       minify.js
-Version:      2024.2.10.1
+Version:      2024.2.10.2
 Description:  Minify all JavaScript in a directory
 Author:       Adam Lui
 URL:          https://github.com/adamlui/js-utils
@@ -11,35 +11,60 @@ const fs = require('fs'),
       path = require('path'),
       uglifyJS = require('uglify-js');
 
-// Init config
-const inputDir = path.join(__dirname, ''),
-      outputDir = path.join(__dirname, '/minified');
+// Init UI colors
+const nc = '\x1b[0m', // no color
+      br = '\x1b[1;91m', // bright red
+      bg = '\x1b[1;92m', // bright green
+      by = '\x1b[1;33m'; // bright yellow
 
-try { // to minify `inputDir` contents
-    if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-    minifyDirectory(inputDir, outputDir);
-} catch (err) { console.error('Error occurred during minification:', err.message); }
+// Clean leading slashes from args to avoid parsing system root
+const inputArg = process.argv[2] ? process.argv[2].replace(/^\/*/, '') : '',
+      outputArg = process.argv[3] ? process.argv[3].replace(/^\/*/, '') : '';
 
-// Define FUNCTIONS
-
-function minifyFile(inputFilePath, outputFilePath) {
-    console.log(`Minifying: ${inputFilePath}`);
-    const code = fs.readFileSync(inputFilePath, 'utf8');
-    const minifiedCode = uglifyJS.minify(code).code;
-    fs.writeFileSync(outputFilePath, minifiedCode, 'utf8');
+// Validate input arg (output arg can be anything)
+if (process.argv[2] && !fs.existsSync(inputArg)) {
+    console.error(`\n${br}Error: First arg must be an existing file or path.${nc}`
+        + '\nExample valid command: \n>> minify-js . output.min.js');
+    process.exit(1);
 }
 
-function minifyDirectory(inputDir, outputDir) { // including all files recursively
-    fs.readdirSync(inputDir).forEach(file => {
-        const inputFilePath = path.join(inputDir, file);
-        const stats = fs.statSync(inputFilePath);
-        if (stats.isDirectory()) { // create corresponding output dir & continue minification
-            const newOutputDir = outputDir; // keep track of output dir at this level
-            fs.mkdirSync(newOutputDir, { recursive: true });
-            minifyDirectory(inputFilePath, newOutputDir);
-        } else if (stats.isFile() && file.endsWith('.js') && !file.includes('.min.js')) { // proceed w/ minification
-            const minFileName = path.basename(file, '.js') + '.min.js',
-                  minOutputFilePath = path.join(outputDir, minFileName);
-            minifyFile(inputFilePath, minOutputFilePath);
-        }
-});}
+// Recursively find all JavaScript files or arg-passed file
+const inputPath = path.resolve(process.cwd(), inputArg);
+const jsFiles = !inputArg.endsWith('.js') ? (() => {
+    const fileList = [];
+    (function findJSfiles(dir) {
+        const files = fs.readdirSync(dir);
+        files.forEach(file => {
+            const filePath = path.join(dir, file);
+            if (fs.statSync(filePath).isDirectory())
+                findJSfiles(filePath); // recursively find unminified JS
+            else if (/\.js(?<!\.min\.js)$/.test(file)) // unminified JS file found
+                fileList.push(filePath); // store it for minification
+        });
+    })(inputPath); return fileList;
+})() : [inputPath];
+
+// Minify JavaScript files
+let minifiedCnt = 0;
+console.log(''); // line break before first log
+jsFiles.forEach(jsPath => {
+    const outputDir = path.join(
+        path.dirname(jsPath), // path of file to be minified
+        path.dirname(outputArg), // path from output arg
+        outputArg ? '' : 'minified' // minified/ if no output arg used
+    );
+    const outputFilename = (
+        outputArg.endsWith('.js') && inputArg.endsWith('.js')
+            ? path.basename(outputArg).replace(/(\.min)?\.js$/, '')
+            : path.basename(jsPath, '.js')
+    ) + '.min.js';
+    console.info(`Minifying ${ jsPath }...`);
+    const minifiedCode = uglifyJS.minify(fs.readFileSync(jsPath, 'utf8')).code;
+    if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+    fs.writeFileSync(path.join(outputDir, outputFilename), minifiedCode, 'utf8');
+    minifiedCnt++
+});
+
+// Final summary
+if (minifiedCnt) console.info(`\n${bg}Minification complete!${nc}\n${ minifiedCnt } files minified.`);
+else console.info(`\n${by}No unminified JavaScript files found.${nc}`);
