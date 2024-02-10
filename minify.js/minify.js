@@ -56,7 +56,7 @@ jsFiles.forEach(jsPath => {
     const minifiedCode = uglifyJS.minify(fs.readFileSync(jsPath, 'utf8')).code;
     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
     fs.writeFileSync(path.join(outputDir, outputFilename), minifiedCode, 'utf8');
-    minifiedCnt++
+    minifiedCnt++;
 });
 
 // Final summary
