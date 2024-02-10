@@ -1,5 +1,5 @@
 {
-  "name": "minify.js",
+  "name": "@adamlui/minify.js",
   "version": "1.0.0",
   "description": "Minify JavaScript files",
   "author": {

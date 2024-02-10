@@ -11,13 +11,13 @@
 - As a **global utility**:
 
    ```
-   npm install -g minify.js
+   npm install -g @adamlui/minify.js
    ```
 
 - As a **dev dependency**, from your project root:
 
    ```
-   npm install -D minify.js
+   npm install -D @adamlui/minify.js
    ```
 
 ## 💻 Usage
