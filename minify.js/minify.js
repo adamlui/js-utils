@@ -1,10 +1,4 @@
-/* ========================================================
-Script:       minify.js
-Version:      2024.2.10.2
-Description:  Minify all JavaScript in a directory
-Author:       Adam Lui
-URL:          https://github.com/adamlui/js-utils
-=========================================================== */
+#!/usr/bin/env node
 
 // Import libs
 const fs = require('fs'),
