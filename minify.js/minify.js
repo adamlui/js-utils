@@ -1,6 +1,6 @@
 /* ========================================================
 Script:       minify.js
-Version:      2024.2.10
+Version:      2024.2.10.1
 Description:  Minify all JavaScript in a directory
 Author:       Adam Lui
 URL:          https://github.com/adamlui/js-utils
@@ -22,10 +22,6 @@ try { // to minify `inputDir` contents
 
 // Define FUNCTIONS
 
-// Check if a file is already minified
-function isMinifiedFile(filename) { return filename; }
-
-// Minify a single file
 function minifyFile(inputFilePath, outputFilePath) {
     console.log(`Minifying: ${inputFilePath}`);
     const code = fs.readFileSync(inputFilePath, 'utf8');
@@ -33,8 +29,7 @@ function minifyFile(inputFilePath, outputFilePath) {
     fs.writeFileSync(outputFilePath, minifiedCode, 'utf8');
 }
 
-// Minify all files in a dir recursively
-function minifyDirectory(inputDir, outputDir) {
+function minifyDirectory(inputDir, outputDir) { // including all files recursively
     fs.readdirSync(inputDir).forEach(file => {
         const inputFilePath = path.join(inputDir, file);
         const stats = fs.statSync(inputFilePath);
