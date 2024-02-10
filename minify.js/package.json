@@ -1,4 +1,36 @@
 {
+  "name": "minify.js",
+  "version": "1.0.0",
+  "description": "Minify JavaScript files",
+  "author": {
+    "name": "Adam Lui",
+    "email": "adam@kudoai.com",
+    "url": "https://github.com/adamlui"
+  },
+  "homepage": "https://github.com/adamlui/js-utils",
+  "license": "MIT",
+  "main": "minify.js",
+  "bin": {
+    "minify-js": "minify.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamlui/js-utils.git"
+  },
+  "keywords": [
+    "javascript",
+    "js",
+    "js-utils",
+    "utils",
+    "utilities",
+    "minifier"
+  ],
+  "bugs": {
+    "url": "https://github.com/adamlui/js-utils/issues"
+  },
   "dependencies": {
     "uglify-js": "^3.17.4"
   }
