@@ -8,73 +8,73 @@
 
 ## ⚡ Installation
 
-- As a **global utility**:
+As a **global utility**:
 
-   ```
-   npm install -g @adamlui/minify.js
-   ```
+```
+npm install -g @adamlui/minify.js
+```
 
-- As a **dev dependency**, from your project root:
+As a **dev dependency**, from your project root:
 
-   ```
-   npm install -D @adamlui/minify.js
-   ```
+```
+npm install -D @adamlui/minify.js
+```
 
 ## 💻 Usage
 
-- The basic **global command** is:
+The basic **global command** is:
 
-   ```
-   minify-js
-   ```
+```
+minify-js
+```
 
-- To specify **input/output** directories:
+To specify **input/output** directories:
    
-   ```
-   minify-js <input_path> <output_path>
-   ```
-   
-   - `<input_path>`: Path to directory containing JavaScript files to be minified, relative to the current working directory. 
-   - `<output_path>`: Path to directory where minified files will be stored, relative to original file location. (If not provided, `./minified` is used.)
+```
+minify-js <input_path> <output_path>
+```
 
-   **💡 Note:** The paths can be either folders or specific files. If folders are passed, files will be processed recursively.<br><br>
+- `<input_path>`: Path to directory containing JavaScript files to be minified, relative to the current working directory. 
+- `<output_path>`: Path to directory where minified files will be stored, relative to original file location. (If not provided, `./minified` is used.)
 
-- To use as a **package script**, edit your project's `package.json` like this:
+**💡 Note:** The paths can be either folders or specific files. If folders are passed, files will be processed recursively.<br><br>
 
-   ```json
-     "scripts": {
-       "build:js": "<minify-js-cmd>"
-     },
-   ```
+To use as a **package script**, edit your project's `package.json` like this:
 
-   Replace `<minify-js-cmd>` with `minify-js` + optional args. Then, `npm run build:js` can be used to run the command.
-   <br><br>
+```json
+  "scripts": {
+    "build:js": "<minify-js-cmd>"
+  },
+```
+
+Replace `<minify-js-cmd>` with `minify-js` + optional args. Then, `npm run build:js` can be used to run the command.
+<br><br>
 
 ## 📃 Examples:
 
-- Minify all JavaScript files in the **current directory** (outputs to `./minified/`):
+Minify all JavaScript files in the **current directory** (outputs to `./minified/`):
 
-   ```
-   minify-js
-   ```
+```
+minify-js
+```
 
-- Minify all JavaScript files in a **specific directory** (outputs to `path/to/your/directory/minified/`):
+Minify all JavaScript files in a **specific directory** (outputs to `path/to/your/directory/minified/`):
 
-   ```
-   minify-js path/to/your/directory
-   ```
+```
+minify-js path/to/your/directory
+```
 
-- Minify a **specific file** (outputs to `path/to/your/minified/file.min.js`):
+Minify a **specific file** (outputs to `path/to/your/minified/file.min.js`):
 
-   ```
-   minify-js path/to/your/file.js
-   ```
+```
+minify-js path/to/your/file.js
+```
 
-- Specify both **input and output** directories (outputs to `output_folder/`):
+Specify both **input and output** directories (outputs to `output_folder/`):
 
-   ```
-   minify-js input_folder output_folder
-   ```
+```
+minify-js input_folder output_folder
+```
 
 ## 🏛️ MIT License
 
