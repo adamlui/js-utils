@@ -6,6 +6,11 @@
 
 <img height=10px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
 
+<br>
+
+<img src="https://github.com/adamlui/js-utils/blob/main/minify.js/media/images/minify-js-docs-demo.png">
+
+
 ## ⚡ Installation
 
 As a **global utility**:
