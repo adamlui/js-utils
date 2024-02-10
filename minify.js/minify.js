@@ -24,19 +24,20 @@ if (process.argv[2] && !fs.existsSync(inputArg)) {
 
 // Recursively find all JavaScript files or arg-passed file
 const inputPath = path.resolve(process.cwd(), inputArg);
-const jsFiles = !inputArg.endsWith('.js') ? (() => {
-    const fileList = [];
-    (function findJSfiles(dir) {
-        const files = fs.readdirSync(dir);
-        files.forEach(file => {
-            const filePath = path.join(dir, file);
-            if (fs.statSync(filePath).isDirectory())
-                findJSfiles(filePath); // recursively find unminified JS
-            else if (/\.js(?<!\.min\.js)$/.test(file)) // unminified JS file found
-                fileList.push(filePath); // store it for minification
-        });
-    })(inputPath); return fileList;
-})() : [inputPath];
+const jsFiles = inputArg.endsWith('.js') ? [inputPath]
+  : (() => {
+        const fileList = [];
+        (function findJSfiles(dir) {
+            const files = fs.readdirSync(dir);
+            files.forEach(file => {
+                const filePath = path.join(dir, file);
+                if (fs.statSync(filePath).isDirectory())
+                    findJSfiles(filePath); // recursively find unminified JS
+                else if (/\.js(?<!\.min\.js)$/.test(file)) // unminified JS file found
+                    fileList.push(filePath); // store it for minification
+            });
+        })(inputPath); return fileList;
+    })();
 
 // Minify JavaScript files
 let minifiedCnt = 0;
