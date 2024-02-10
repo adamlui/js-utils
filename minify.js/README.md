@@ -73,7 +73,7 @@ Minify a specific JavaScript file (outputs to `path/to/your/minified/file.min.js
 minify-js path/to/your/file.js
 ```
 
-Specify input and output directories (outputs to `output_folder/`):
+Specify both input and output directories (outputs to `output_folder/`):
 
 ```
 minify-js input_folder output_folder
