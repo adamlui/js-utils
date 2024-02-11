@@ -14,7 +14,13 @@
     "scss-to-css": "scss-to-css.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bump:patch": "bash utils/bump-vers-in-manifest-readme.sh",
+    "bump:minor": "bash utils/bump-vers-in-manifest-readme.sh minor",
+    "bump:major": "bash utils/bump-vers-in-manifest-readme.sh major",
+    "publish:patch": "bash utils/bump-vers-in-manifest-readme.sh && npm publish",
+    "publish:minor": "bash utils/bump-vers-in-manifest-readme.sh minor && npm publish",
+    "publish:major": "bash utils/bump-vers-in-manifest-readme.sh major && npm publish"
   },
   "repository": {
     "type": "git",
