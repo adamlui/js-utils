@@ -5,7 +5,11 @@
 <a href="#%EF%B8%8F-mit-license"><img height=31 src="https://img.shields.io/badge/License-MIT-fcde7b.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css"><img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.1-fc7811.svg?logo=npm&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
-<img height=10px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
+<img src="https://github.com/adamlui/js-utils/blob/main/minify.js/media/images/minify-js-docs-demo.png">
+
+<br>
+
+<img height=10px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/separators/aqua.png">
 
 ## ⚡ Installation
 
@@ -75,7 +79,7 @@ SOFTWARE.
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/separators/aqua.png">
 
 <a href="https://github.com/adamlui/js-utils">**Home**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
