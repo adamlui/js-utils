@@ -1,63 +1,71 @@
 #!/usr/bin/env node
 
 // Import libs
-const { execSync } = require('child_process'),
-      fs = require('fs'),
-      path = require('path');
+const fs = require('fs'),
+      path = require('path'),
+      sass = require('sass');
 
 // Init UI colors
 const nc = '\x1b[0m', // no color
       br = '\x1b[1;91m', // bright red
+      by = '\x1b[1;33m', // bright yellow
       bg = '\x1b[1;92m'; // bright green
 
-// Check for Sass
-try { execSync('sass --version'); }
-catch (err) {
-    console.error(`\n${br}Error: Sass not installed. `
-        + `\n${nc}Please run 'npm i @adamlui/scss-to-css -D' to ensure all dependencies are present.`);
+// Clean leading slashes from args to avoid parsing system root
+const inputArg = process.argv[2] ? process.argv[2].replace(/^\/*/, '') : '',
+      outputArg = process.argv[3] ? process.argv[3].replace(/^\/*/, '') : '';
+
+// Validate input arg (output arg can be anything)
+if (process.argv[2] && !fs.existsSync(inputArg)) {
+    console.error(`\n${br}Error: First arg must be an existing file or path.${nc}`
+        + '\nExample valid command: \n>> scss-to-css . output.min.css');
     process.exit(1);
 }
 
-// Locate first parent dir w/ package.json to indicate project root
-const userProjectDir = (() => {
-    let currentDir = process.cwd();
-    while (!fs.existsSync(path.join(currentDir, 'package.json'))) {
-        const parentDir = path.dirname(currentDir);
-        if (parentDir === currentDir) {
-            console.error(`\n${br}Error: Could not find package.json in any parent directory.`
-                + `\n${nc}Please add a manifest to your project to indicate a root.`);
-            process.exit(1);
-        }
-        currentDir = parentDir;
-    }
-    return currentDir;
-})();
-
-// Recursively find all SCSS files in project directory
-const scssFiles = (() => {
-    const fileList = [];
-    const findSCSSfiles = dir => {
-        const files = fs.readdirSync(dir);
-        files.forEach(file => {
-            const filePath = path.join(dir, file);
-            if (fs.statSync(filePath).isDirectory()) findSCSSfiles(filePath);
-            else if (file.endsWith('.scss')) fileList.push(filePath);
-        });
-    };
-    findSCSSfiles(userProjectDir); return fileList;
-})();
+// Recursively find all SCSS files or arg-passed file
+const inputPath = path.resolve(process.cwd(), inputArg);
+const scssFiles = inputArg.endsWith('.scss') ? [inputPath]
+  : (() => {
+        const fileList = [];
+        (function findSCSSfiles(dir) {
+            const files = fs.readdirSync(dir);
+            files.forEach(file => {
+                const filePath = path.resolve(dir, file);
+                if (fs.statSync(filePath).isDirectory())
+                    findSCSSfiles(filePath); // recursively find SCSS
+                else if (/\.scss$/.test(file)) // SCSS file found
+                    fileList.push(filePath); // store it for minification
+            });
+        })(inputPath); return fileList;
+    })();
 
 // Compile SCSS files to CSS
-if (scssFiles.length === 0) console.info('\nNo SCSS files found.');
-else {
-    scssFiles.forEach(scssPath => {
-        const inputDir = path.dirname(scssPath);
-        const outputPath = path.join(inputDir,
-            inputDir.includes('scss') ? '..' : '', 'css', // build to ../css/ if from scss/
-            path.basename(scssPath, '.scss') + '.min.css'
+let generatedCnt = 0;
+console.log(''); // line break before first log
+scssFiles.forEach(scssPath => {
+    try { // to compile it
+        const outputDir = path.join(
+            path.dirname(scssPath), // path of file to be minified
+            outputArg.endsWith('.css') ? path.dirname(outputArg) : outputArg, // path from output arg
+            outputArg ? '' : '../css' // ../css/ if no output arg used
         );
-        console.info(`\nCompiling ${ scssPath } to ${ outputPath }...`);
-        execSync(`sass --style compressed "${ scssPath }" "${ outputPath }"`);
-        console.info(`${bg}Compilation complete!${nc}`);
-    });
-}
+        const outputFilename = (
+            outputArg.endsWith('.css') && inputArg.endsWith('.scss')
+                ? path.basename(outputArg).replace(/(\.min)?\.css$/, '')
+                : path.basename(scssPath, '.scss')
+        ) + '.min.css';
+        const outputPath = path.join(outputDir, outputFilename);
+        console.info(`Compiling ${ scssPath }...`);
+        const compileResult = sass.compile(scssPath, { style: 'compressed', sourceMap: true });
+        if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+        fs.writeFileSync(outputPath, compileResult.css, 'utf8');
+        fs.writeFileSync(outputPath + '.map', JSON.stringify(compileResult.sourceMap), 'utf8');
+        generatedCnt+= 2;
+    } catch (err) {
+        console.error(`${br}Error compiling ${ scssPath }: ${ err.message }${nc}`);
+    }
+});
+
+// Print final summary
+if (generatedCnt) console.info(`\n${bg}Compilation complete!${nc}\n${ generatedCnt } files generated.`);
+else console.info(`\n${by}No SCSS files found.${nc}`);
