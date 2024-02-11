@@ -33,6 +33,8 @@ The basic **global command** is:
 minify-js
 ```
 
+#
+
 To specify **input/output** directories:
    
 ```
@@ -42,7 +44,9 @@ minify-js <input_path> <output_path>
 - `<input_path>`: Path to directory containing JavaScript files to be minified, relative to the current working directory. 
 - `<output_path>`: Path to directory where minified files will be stored, relative to original file location. (If not provided, `./minified` is used.)
 
-**💡 Note:** The paths can be either folders or specific files. If folders are passed, files will be processed recursively.<br><br>
+**💡 Note:** The paths can be either folders or specific files. If folders are passed, files will be processed recursively.
+
+#
 
 To use as a **package script**, edit your project's `package.json` like this:
 
