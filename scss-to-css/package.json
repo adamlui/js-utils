@@ -1,6 +1,6 @@
 {
   "name": "@adamlui/scss-to-css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Recursively compile all SCSS files into minified CSS",
   "author": {
     "name": "Adam Lui",
@@ -15,6 +15,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "bump": "bash utils/bump-vers-in-manifest-readme.sh",
     "bump:patch": "bash utils/bump-vers-in-manifest-readme.sh",
     "bump:minor": "bash utils/bump-vers-in-manifest-readme.sh minor",
     "bump:major": "bash utils/bump-vers-in-manifest-readme.sh major",
