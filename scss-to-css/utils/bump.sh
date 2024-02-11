@@ -30,4 +30,10 @@ git commit -m "Bumped version to $VERSION"
 # Push to GiHub
 echo -e "\nPushing to GitHub..."
 git push
+
+# Publish to NPM
+if [[ "$*" == *"--publish"* ]] ; then
+    echo -e "\nPublishing to npm..."
+    npm publish ; fi
+
 echo -e "\n${bg}Successfully bumped to v$VERSION!${nc}"
