@@ -55,6 +55,32 @@ To use as a **package script**, edit your project's `package.json` like this:
 Replace `<scss-to-css-cmd>` with `scss-to-css` + optional args. Then, `npm run build:css` can be used to run the command.
 <br><br>
 
+## 📃 Example commands:
+
+- Compile all SCSS files in the **current directory** (outputs to same directory`):
+
+   ```
+   scss-to-css
+   ```
+
+- Compile all SCSS files in a **specific directory** (outputs to `path/to/your/directory/`):
+
+   ```
+   scss-to-css path/to/your/directory
+   ```
+
+- Compile a **specific file** (outputs to `path/to/your/minified/file.min.css`):
+
+   ```
+   scss-to-css path/to/your/file.scss
+   ```
+
+- Specify both **input and output** directories (outputs to `output_folder/`):
+
+   ```
+   scss-to-css input_folder output_folder
+   ```
+
 ## 🏛️ MIT License
 
 **Copyright (c) 2024 [Adam Lui](https://github.com/adamlui)**
