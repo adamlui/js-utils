@@ -33,6 +33,10 @@ Sample output:
 
 <img src="https://github.com/adamlui/js-utils/blob/main/scss-to-css/media/images/sample-output.png">
 
+**💡 Note:** Source maps are also generated.
+
+#
+
 To specify **input/output** directories:
    
 ```
@@ -42,7 +46,9 @@ scss-to-css <input_path> <output_path>
 - `<input_path>`: Path to directory containing SCSS files to be compiled, relative to the current working directory. 
 - `<output_path>`: Path to directory where CSS/sourcemap files will be stored, relative to original file location. (If not provided, same location is used.)
 
-**💡 Note:** The paths can be either folders or specific files. If folders are passed, files will be processed recursively.<br><br>
+**💡 Note:** The paths can be either folders or specific files. If folders are passed, files will be processed recursively.
+
+#
 
 To use as a **package script**, edit your project's `package.json` like this:
 
