@@ -15,13 +15,13 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bump": "bash utils/bump-vers-in-manifest-readme.sh",
-    "bump:patch": "bash utils/bump-vers-in-manifest-readme.sh",
-    "bump:minor": "bash utils/bump-vers-in-manifest-readme.sh minor",
-    "bump:major": "bash utils/bump-vers-in-manifest-readme.sh major",
-    "publish:patch": "bash utils/bump-vers-in-manifest-readme.sh && npm publish",
-    "publish:minor": "bash utils/bump-vers-in-manifest-readme.sh minor && npm publish",
-    "publish:major": "bash utils/bump-vers-in-manifest-readme.sh major && npm publish"
+    "bump": "bash utils/bump.sh",
+    "bump:patch": "bash utils/bump.sh",
+    "bump:minor": "bash utils/bump.sh minor",
+    "bump:major": "bash utils/bump.sh major",
+    "publish:patch": "bash utils/bump.sh && npm publish",
+    "publish:minor": "bash utils/bump.sh minor && npm publish",
+    "publish:major": "bash utils/bump.sh major && npm publish"
   },
   "repository": {
     "type": "git",
