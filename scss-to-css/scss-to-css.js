@@ -47,7 +47,7 @@ scssFiles.forEach(scssPath => {
         const outputDir = path.join(
             path.dirname(scssPath), // path of file to be minified
             outputArg.endsWith('.css') ? path.dirname(outputArg) : outputArg, // path from output arg
-            outputArg ? '' : '../css' // ../css/ if no output arg used
+            path.dirname(scssPath).endsWith('scss') ? '../css' : '' // ../css/ if in scss/
         );
         const outputFilename = (
             outputArg.endsWith('.css') && inputArg.endsWith('.scss')
