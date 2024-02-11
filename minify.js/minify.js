@@ -42,24 +42,25 @@ const jsFiles = inputArg.endsWith('.js') ? [inputPath]
 // Minify JavaScript files
 let minifiedCnt = 0;
 console.log(''); // line break before first log
-jsFiles.forEach(jsPath => {
+jsFiles.forEach(inputPath => {
     const outputDir = path.join(
-        path.dirname(jsPath), // path of file to be minified
+        path.dirname(inputPath), // path of file to be minified
         path.dirname(outputArg), // path from output arg
         outputArg ? '' : 'minified' // minified/ if no output arg used
     );
     const outputFilename = (
         outputArg.endsWith('.js') && inputArg.endsWith('.js')
             ? path.basename(outputArg).replace(/(\.min)?\.js$/, '')
-            : path.basename(jsPath, '.js')
+            : path.basename(inputPath, '.js')
     ) + '.min.js';
-    console.info(`Minifying ${ jsPath }...`);
-    const minifiedCode = uglifyJS.minify(fs.readFileSync(jsPath, 'utf8')).code;
+    const outputPath = path.join(outputDir, outputFilename);
+    console.info(`Minifying ${ inputPath }...`);
+    const minifiedCode = uglifyJS.minify(fs.readFileSync(inputPath, 'utf8')).code;
     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-    fs.writeFileSync(path.join(outputDir, outputFilename), minifiedCode, 'utf8');
+    fs.writeFileSync(outputPath, minifiedCode, 'utf8');
     minifiedCnt++;
 });
 
-// Final summary
+// Print final summary
 if (minifiedCnt) console.info(`\n${bg}Minification complete!${nc}\n${ minifiedCnt } files minified.`);
 else console.info(`\n${by}No unminified JavaScript files found.${nc}`);
