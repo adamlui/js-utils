@@ -55,7 +55,7 @@ To use as a **package script**, edit your project's `package.json` like this:
 Replace `<minify-js-cmd>` with `minify-js` + optional args. Then, `npm run build:js` can be used to run the command.
 <br><br>
 
-## 📃 Examples:
+## 📃 Example commands:
 
 - Minify all JavaScript files in the **current directory** (outputs to `./minified/`):
 
