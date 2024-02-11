@@ -4,27 +4,38 @@
 nc="\033[0m" # no color
 bg="\033[1;92m" # bright green
 
-# Get latest version from package.json
-VERSION=$(node -pe "require('./package.json').version")
+# Get old version from package.json
+OLD_VERSION=$(node -pe "require('./package.json').version")
 
-# Bump version in package.json
-echo "Bumping version in package.json..."
-if [ -z "$1" ] || [ "$1" == "patch" ] ; then npm version patch # no arg or 'patch' passed, bump patch version  
-elif [ "$1" == "major" ] ; then npm version major # 'major' arg passed, bump major version  
-elif [ "$1" == "minor" ] ; then npm version minor # 'minor' arg passed, bump minor version  
-else echo "Invalid argument. Please specify 'major', 'minor' or 'patch'." ; exit 1 ; fi
+# Determine new version
+if [ -z "$1" ] || [ "$1" == "patch" ] ; then
+    IFS='.' read -ra PARTS <<< "$OLD_VERSION"
+    PATCH=$((PARTS[2] + 1))
+    NEW_VERSION="${PARTS[0]}.${PARTS[1]}.$PATCH"
+elif [ "$1" == "minor" ] ; then
+    IFS='.' read -ra PARTS <<< "$OLD_VERSION"
+    MINOR=$((PARTS[1] + 1))
+    NEW_VERSION="${PARTS[0]}.$MINOR.0"
+elif [ "$1" == "major" ] ; then
+    IFS='.' read -ra PARTS <<< "$OLD_VERSION"
+    MAJOR=$((PARTS[0] + 1))
+    NEW_VERSION="$MAJOR.0.0"
+else
+    echo "Invalid argument. Please specify 'major', 'minor', or 'patch'."
+    exit 1 ; fi
 
-# Get updated version after bump
-VERSION=$(node -pe "require('./package.json').version")
+# Bump version in package.json + package-lock.json
+echo -e "Bumping versions in package manifests..."
+npm version --no-git-tag-version "$NEW_VERSION"
 
 # Bump version in README.md
 echo -e "\nBumping version in README.md..."
-sed -i "s/Latest_Build-[0-9.]\+/Latest_Build-$VERSION/" README.md
-echo "v$VERSION"
+sed -i "s/Latest_Build-[0-9.]\+/Latest_Build-$NEW_VERSION/" README.md
+echo "v$NEW_VERSION"
 
 # Commit to Git
 echo -e "\nCommitting changes..."
-git add package.json README.md
+git add package*.json README.md
 git commit -m "Bumped version to $VERSION"
 
 # Push to GiHub
@@ -36,4 +47,4 @@ if [[ "$*" == *"--publish"* ]] ; then
     echo -e "\nPublishing to npm..."
     npm publish ; fi
 
-echo -e "\n${bg}Successfully bumped to v$VERSION!${nc}"
+echo -e "\n${bg}Successfully bumped to v$NEW_VERSION!${nc}"
