@@ -1,6 +1,6 @@
 {
   "name": "@adamlui/minify.js",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Minify JavaScript files",
   "author": {
     "name": "Adam Lui",
