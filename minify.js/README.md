@@ -1,6 +1,6 @@
 # <> minify.js 
 
-### Minify JavaScript files by CLI (recursively or indivdually)
+### Minify JavaScript files by CLI (recursively or individually)
 
 <a href="#%EF%B8%8F-mit-license"><img height=31 src="https://img.shields.io/badge/License-MIT-fcde7b.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
