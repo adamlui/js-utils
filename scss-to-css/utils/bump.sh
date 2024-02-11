@@ -8,7 +8,7 @@ bg="\033[1;92m" # bright green
 OLD_VERSION=$(node -pe "require('./package.json').version")
 
 # Determine new version
-if  [ "$1" == "patch" ] ; then
+if [ "$1" == "patch" ] ; then
     IFS='.' read -ra PARTS <<< "$OLD_VERSION"
     PATCH=$((PARTS[2] + 1))
     NEW_VERSION="${PARTS[0]}.${PARTS[1]}.$PATCH"
@@ -34,17 +34,17 @@ sed -i "s/Latest_Build-[0-9.]\+/Latest_Build-$NEW_VERSION/" README.md
 echo "v$NEW_VERSION"
 
 # Commit to Git
-echo -e "\nCommitting changes..."
+echo -e "\nCommitting changes...\n"
 git add package*.json README.md
 git commit -n -m "Bumped version to $NEW_VERSION"
 
 # Push to GiHub
-echo -e "\nPushing to GitHub..."
+echo -e "\nPushing to GitHub...\n"
 git push
 
 # Publish to NPM
 if [[ "$*" == *"--publish"* ]] ; then
-    echo -e "\nPublishing to npm..."
+    echo -e "\nPublishing to npm...\n"
     npm publish ; fi
 
 echo -e "\n${bg}Successfully bumped to v$NEW_VERSION!${nc}"
