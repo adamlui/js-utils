@@ -8,7 +8,7 @@ bg="\033[1;92m" # bright green
 OLD_VERSION=$(node -pe "require('./package.json').version")
 
 # Determine new version
-if [ -z "$1" ] || [ "$1" == "patch" ] ; then
+if [ "$1" == "patch" ] ; then
     IFS='.' read -ra PARTS <<< "$OLD_VERSION"
     PATCH=$((PARTS[2] + 1))
     NEW_VERSION="${PARTS[0]}.${PARTS[1]}.$PATCH"
