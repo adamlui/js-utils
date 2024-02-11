@@ -42,19 +42,19 @@ const jsFiles = inputArg.endsWith('.js') ? [inputPath]
 // Minify JavaScript files
 let minifiedCnt = 0;
 console.log(''); // line break before first log
-jsFiles.forEach(inputPath => {
+jsFiles.forEach(jsPath => {
     const outputDir = path.join(
-        path.dirname(inputPath), // path of file to be minified
+        path.dirname(jsPath), // path of file to be minified
         path.dirname(outputArg), // path from output arg
         outputArg ? '' : 'minified' // minified/ if no output arg used
     );
     const outputFilename = (
         outputArg.endsWith('.js') && inputArg.endsWith('.js')
             ? path.basename(outputArg).replace(/(\.min)?\.js$/, '')
-            : path.basename(inputPath, '.js')
+            : path.basename(jsPath, '.js')
     ) + '.min.js';
     const outputPath = path.join(outputDir, outputFilename);
-    console.info(`Minifying ${ inputPath }...`);
+    console.info(`Minifying ${ jsPath }...`);
     const minifiedCode = uglifyJS.minify(fs.readFileSync(inputPath, 'utf8')).code;
     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
     fs.writeFileSync(outputPath, minifiedCode, 'utf8');
