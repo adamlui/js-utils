@@ -29,6 +29,10 @@ The basic **global command** is:
 scss-to-css
 ```
 
+Sample output:
+
+<img src="https://github.com/adamlui/js-utils/blob/main/scss-to-css/media/images/sample-output.png">
+
 To specify **input/output** directories:
    
 ```
