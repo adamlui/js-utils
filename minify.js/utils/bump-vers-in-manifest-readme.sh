@@ -9,7 +9,7 @@ VERSION=$(node -pe "require('./package.json').version")
 
 # Bump version in package.json
 echo "Bumping version in package.json..."
-if [ "$1" == "patch" ] ; then npm version patch # 'patch' arg passed, bump patch version  
+if [ -z "$1" ] || [ "$1" == "patch" ] ; then npm version patch # no arg or 'patch' passed, bump patch version  
 elif [ "$1" == "major" ] ; then npm version major # 'major' arg passed, bump major version  
 elif [ "$1" == "minor" ] ; then npm version minor # 'minor' arg passed, bump minor version  
 else echo "Invalid argument. Please specify 'major', 'minor' or 'patch'." ; exit 1 ; fi
