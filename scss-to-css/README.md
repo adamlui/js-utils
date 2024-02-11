@@ -9,47 +9,47 @@
 
 ## ⚡ Installation
 
-- As a global utility:
+As a **global utility**:
 
-   ```
-   npm install -g @adamlui/scss-to-css
-   ```
+```
+npm install -g @adamlui/scss-to-css
+```
 
-- As a dev dependency, from your project root:
+As a **dev dependency**, from your project root:
 
-   ```
-   npm install -D @adamlui/scss-to-css
-   ```
+```
+npm install -D @adamlui/scss-to-css
+```
 
 ## 💻 Usage
 
-### Globally:
-
-Run the following command from a folder to recursively compile all SCSS:
+The basic **global command** is:
 
 ```
 scss-to-css
 ```
 
-Sample output:
+To specify **input/output** directories:
+   
+```
+scss-to-css <input_path> <output_path>
+```
 
-![](https://raw.githubusercontent.com/adamlui/js-utils/main/scss-to-css/media/images/sample-output.png)
+- `<input_path>`: Path to directory containing SCSS files to be compiled, relative to the current working directory. 
+- `<output_path>`: Path to directory where CSS/sourcemap files will be stored, relative to original file location. (If not provided, same location is used.)
 
-### Dev dependency:
+**💡 Note:** The paths can be either folders or specific files. If folders are passed, files will be processed recursively.<br><br>
 
-1. Add build script to project's `package.json`:
+To use as a **package script**, edit your project's `package.json` like this:
 
-    ```json
-      "scripts": {
-        "build:css": "scss-to-css"
-      },
-    ```
+```json
+  "scripts": {
+    "build:css": "<scss-to-css-cmd>"
+  },
+```
 
-2. Run script from a folder to recursively compile all SCSS:
-
-    ```
-    npm run build:css
-    ```
+Replace `<scss-to-css-cmd>` with `scss-to-css` + optional args. Then, `npm run build:css` can be used to run the command.
+<br><br>
 
 ## 🏛️ MIT License
 
