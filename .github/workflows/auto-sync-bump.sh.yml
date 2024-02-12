@@ -40,7 +40,7 @@ jobs:
           fi ; done ; fi
 
           # Store sync src for commit msg in next step
-          sync_src=$(echo "$newest_file" | cut -d'/' -f2)
+          sync_src=$(echo "$newest_file" | cut -d'/' -f2-3)
           echo "sync_src=$sync_src" >> $GITHUB_OUTPUT
 
       - name: Push to adamlui/js-utils
@@ -49,6 +49,6 @@ jobs:
           push_options: --force
           add_options: --all
           commit_user_email: auto-sync@kudoai.com
-          commit_message: "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/js-utils/${{ steps.sync_changes.outputs.sync_src }}`]"
+          commit_message: "${{ github.event.head_commit.message }} ↞ [auto-sync from `${{ steps.sync_changes.outputs.sync_src }}`]"
           file_pattern: "**"
           repository: adamlui/js-utils
