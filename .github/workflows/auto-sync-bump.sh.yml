@@ -1,0 +1,54 @@
+name: Sync changes between **/bump.sh
+
+on:
+  push:
+    branches: auto-sync-sandbox
+    paths: "**/bump.sh"
+
+jobs:
+  build:
+    if: (github.repository == 'adamlui/js-utils') && (github.event.commits[0].committer.username != 'kudo-sync-bot')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout adamlui/js-utils
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/js-utils
+          path: adamlui/js-utils
+          fetch-depth: 2
+
+      - name: Sync changes between **/bump.sh
+        id: sync_changes
+        run: |
+          cd ${{ github.workspace }}/adamlui/js-utils
+          files=$(find . -name "bump.sh" -type f)
+          newest_file="" ; newest_timestamp=0
+
+          # Find the newest bump.sh
+          for file in $files ; do
+            timestamp=$(git log -1 --format="%ct" -- "$file")
+            if [[ $timestamp -gt $newest_timestamp ]] ; then
+              newest_file=$file ; newest_timestamp=$timestamp
+          fi ; done
+
+          # Copy/paste over all other bump.sh files
+          if [[ -n $newest_file ]] ; then
+            for file in $files ; do
+              if [[ $file != $newest_file ]] ; then
+                cp -f "$newest_file" "$file"
+          fi ; done ; fi
+
+          # Store sync src for commit msg in next step
+          sync_src=$(echo "$newest_file" | cut -d'/' -f2)
+          echo "sync_src=$sync_src" >> $GITHUB_OUTPUT
+
+      - name: Push to adamlui/js-utils
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          push_options: --force
+          add_options: --all
+          commit_user_email: auto-sync@kudoai.com
+          commit_message: "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/js-utils/${{ steps.sync_changes.outputs.sync_src }}`]"
+          file_pattern: "**"
+          repository: adamlui/js-utils
