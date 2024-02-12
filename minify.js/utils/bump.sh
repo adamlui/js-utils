@@ -19,7 +19,7 @@ case $1 in # calculate version based on type
     "minor") PARTS[1]=$((PARTS[1] + 1)); PARTS[2]=0 ;;
     "major") PARTS[0]=$((PARTS[0] + 1)); PARTS[1]=0; PARTS[2]=0 ;;
 esac
-NEW_VERSION=$(IFS='.'; echo "${PARTS[*]}") # construct new version string
+NEW_VERSION=$(IFS='.'; echo "${PARTS[*]}")
 
 # Bump version in package.json + package-lock.json
 echo -e "Bumping versions in package manifests..."
