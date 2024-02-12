@@ -2,7 +2,7 @@ name: Sync changes between **/bump.sh
 
 on:
   push:
-    branches: auto-sync-sandbox
+    branches: main
     paths: "**/bump.sh"
 
 jobs:
