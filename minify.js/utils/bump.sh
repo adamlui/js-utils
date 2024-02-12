@@ -4,25 +4,22 @@
 nc="\033[0m" # no color
 bg="\033[1;92m" # bright green
 
-# Get old version from package.json
-OLD_VERSION=$(node -pe "require('./package.json').version")
-
-# Determine new version
-if [ "$1" == "patch" ] ; then
-    IFS='.' read -ra PARTS <<< "$OLD_VERSION"
-    PATCH=$((PARTS[2] + 1))
-    NEW_VERSION="${PARTS[0]}.${PARTS[1]}.$PATCH"
-elif [ "$1" == "minor" ] ; then
-    IFS='.' read -ra PARTS <<< "$OLD_VERSION"
-    MINOR=$((PARTS[1] + 1))
-    NEW_VERSION="${PARTS[0]}.$MINOR.0"
-elif [ "$1" == "major" ] ; then
-    IFS='.' read -ra PARTS <<< "$OLD_VERSION"
-    MAJOR=$((PARTS[0] + 1))
-    NEW_VERSION="$MAJOR.0.0"
-else
-    echo "Invalid argument. Please specify 'major', 'minor', or 'patch'."
+# Validate version arg
+VERSION_TYPES=("major" "minor" "patch")
+if [[ ! "${VERSION_TYPES[@]}" =~ "$1" ]] ; then
+    echo "${br}Invalid version argument. Please specify 'major', 'minor', or 'patch'.${nc}"
     exit 1 ; fi
+
+# Determine new version to bump to
+OLD_VERSION=$(node -pe "require('./package.json').version")
+INDEX=$((${#VERSION_TYPES[@]} - 1 - $(echo ${VERSION_TYPES[@]/$1*/} | wc -w))) # index of version type
+IFS='.' read -ra PARTS <<< "$OLD_VERSION" # split OLD_VERSION into array
+case $1 in # calculate version based on type
+    "patch") PARTS[2]=$((PARTS[2] + 1)) ;;
+    "minor") PARTS[1]=$((PARTS[1] + 1)); PARTS[2]=0 ;;
+    "major") PARTS[0]=$((PARTS[0] + 1)); PARTS[1]=0; PARTS[2]=0 ;;
+esac
+NEW_VERSION=$(IFS='.'; echo "${PARTS[*]}") # construct new version string
 
 # Bump version in package.json + package-lock.json
 echo -e "Bumping versions in package manifests..."
