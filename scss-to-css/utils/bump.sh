@@ -13,13 +13,13 @@ if [[ ! "${VERSION_TYPES[@]}" =~ "$1" ]] ; then
 # Determine new version to bump to
 OLD_VERSION=$(node -pe "require('./package.json').version")
 INDEX=$((${#VERSION_TYPES[@]} - 1 - $(echo ${VERSION_TYPES[@]/$1*/} | wc -w))) # index of version type
-IFS='.' read -ra PARTS <<< "$OLD_VERSION" # split OLD_VERSION into PARTS array
-case $1 in # edit PARTS based on version type
-    "patch") PARTS[2]=$((PARTS[2] + 1)) ;;
-    "minor") PARTS[1]=$((PARTS[1] + 1)); PARTS[2]=0 ;;
-    "major") PARTS[0]=$((PARTS[0] + 1)); PARTS[1]=0; PARTS[2]=0 ;;
+IFS='.' read -ra SUBVERS <<< "$OLD_VERSION" # split OLD_VERSION into SUBVERS array
+case $1 in # edit SUBVERS based on version type
+    "patch") SUBVERS[2]=$((SUBVERS[2] + 1)) ;;
+    "minor") SUBVERS[1]=$((SUBVERS[1] + 1)) ; SUBVERS[2]=0 ;;
+    "major") SUBVERS[0]=$((SUBVERS[0] + 1)) ; SUBVERS[1]=0 ; SUBVERS[2]=0 ;;
 esac
-NEW_VERSION=$(printf "%s.%s.%s" "${PARTS[@]}")
+NEW_VERSION=$(printf "%s.%s.%s" "${SUBVERS[@]}")
 
 # Bump version in package.json + package-lock.json
 echo -e "Bumping versions in package manifests..."
