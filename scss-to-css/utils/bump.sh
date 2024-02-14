@@ -3,6 +3,7 @@
 # Init UI colors
 nc="\033[0m" # no color
 bg="\033[1;92m" # bright green
+br="\033[1;91m" # bright red
 
 # Validate version arg
 VERSION_TYPES=("major" "minor" "patch")
