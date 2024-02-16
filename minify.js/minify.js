@@ -55,7 +55,7 @@ jsFiles.forEach(jsPath => {
     ) + '.min.js';
     const outputPath = path.join(outputDir, outputFilename);
     console.info(`Minifying ${ jsPath }...`);
-    const minifiedCode = uglifyJS.minify(fs.readFileSync(inputPath, 'utf8')).code;
+    const minifiedCode = uglifyJS.minify(fs.readFileSync(jsPath, 'utf8')).code;
     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
     fs.writeFileSync(outputPath, minifiedCode, 'utf8');
     minifiedCnt++;
