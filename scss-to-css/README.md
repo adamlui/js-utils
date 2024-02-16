@@ -44,7 +44,7 @@ scss-to-css <input_path> <output_path>
 ```
 
 - `<input_path>`: Path to directory containing SCSS files to be compiled, relative to the current working directory. 
-- `<output_path>`: Path to directory where CSS/sourcemap files will be stored, relative to original file location. (If not provided, same location is used.)
+- `<output_path>`: Path to directory where CSS/sourcemap files will be stored, relative to original file location. (If not provided, `css/` is used.)
 
 **💡 Note:** The paths can be either folders or specific files. If folders are passed, files will be processed recursively.
 
@@ -63,19 +63,19 @@ Replace `<scss-to-css-cmd>` with `scss-to-css` + optional args. Then, `npm run b
 
 ## 📃 Example commands:
 
-- Compile all SCSS files in the **current directory** (outputs to same directory):
+- Compile all SCSS files in the **current directory** (outputs to `css/`):
 
    ```
    scss-to-css
    ```
 
-- Compile all SCSS files in a **specific directory** (outputs to `path/to/your/directory/`):
+- Compile all SCSS files in a **specific directory** (outputs to `path/to/your/directory/css/`):
 
    ```
    scss-to-css path/to/your/directory
    ```
 
-- Compile a **specific file** (outputs to `path/to/your/minified/file.min.css`):
+- Compile a **specific file** (outputs to `path/to/your/css/file.min.css`):
 
    ```
    scss-to-css path/to/your/file.scss
