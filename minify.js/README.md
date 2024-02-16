@@ -42,7 +42,7 @@ minify-js <input_path> <output_path>
 ```
 
 - `<input_path>`: Path to directory containing JavaScript files to be minified, relative to the current working directory. 
-- `<output_path>`: Path to directory where minified files will be stored, relative to original file location. (If not provided, `./minified` is used.)
+- `<output_path>`: Path to directory where minified files will be stored, relative to original file location. (If not provided, `min/` is used.)
 
 **💡 Note:** The paths can be either folders or specific files. If folders are passed, files will be processed recursively.
 
@@ -61,19 +61,19 @@ Replace `<minify-js-cmd>` with `minify-js` + optional args. Then, `npm run build
 
 ## 📃 Example commands:
 
-- Minify all JavaScript files in the **current directory** (outputs to `./minified/`):
+- Minify all JavaScript files in the **current directory** (outputs to `min/`):
 
    ```
    minify-js
    ```
 
-- Minify all JavaScript files in a **specific directory** (outputs to `path/to/your/directory/minified/`):
+- Minify all JavaScript files in a **specific directory** (outputs to `path/to/your/directory/min/`):
 
    ```
    minify-js path/to/your/directory
    ```
 
-- Minify a **specific file** (outputs to `path/to/your/minified/file.min.js`):
+- Minify a **specific file** (outputs to `path/to/your/min/file.min.js`):
 
    ```
    minify-js path/to/your/file.js

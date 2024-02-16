@@ -45,8 +45,9 @@ console.log(''); // line break before first log
 jsFiles.forEach(jsPath => {
     const outputDir = path.join(
         path.dirname(jsPath), // path of file to be minified
-        outputArg.endsWith('.js') ? path.dirname(outputArg) : outputArg, // path from output arg
-        outputArg ? '' : 'minified' // minified/ if no output arg used
+        /so?u?rce?$/.test(path.dirname(jsPath)) ? '../min' // + ../min/ if in *(src|source)/
+            : outputArg.endsWith('.js') ? path.dirname(outputArg) // or path from file output arg
+            : outputArg || 'min' // or path from path output arg or min/ from no arg
     );
     const outputFilename = (
         outputArg.endsWith('.js') && inputArg.endsWith('.js')
