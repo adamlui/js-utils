@@ -63,5 +63,7 @@ jsFiles.forEach(jsPath => {
 });
 
 // Print final summary
-if (minifiedCnt) console.info(`\n${bg}Minification complete!${nc}\n${ minifiedCnt } files minified.`);
-else console.info(`${by}No unminified JavaScript files found.${nc}`);
+if (minifiedCnt) {
+    console.info(`\n${bg}Minification complete!${nc}`);
+    console.info(`\n${ minifiedCnt } file${ minifiedCnt > 1 ? 's' : '' } minified.`);
+} else console.info(`${by}No unminified JavaScript files found.${nc}`);
