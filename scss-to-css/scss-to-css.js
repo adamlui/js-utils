@@ -23,21 +23,19 @@ if (process.argv[2] && !fs.existsSync(inputArg)) {
 }
 
 // Recursively find all SCSS files or arg-passed file
-const inputPath = path.resolve(process.cwd(), inputArg);
-const scssFiles = inputArg.endsWith('.scss') ? [inputPath]
-  : (() => {
-        const fileList = [];
-        (function findSCSSfiles(dir) {
-            const files = fs.readdirSync(dir);
-            files.forEach(file => {
-                const filePath = path.resolve(dir, file);
-                if (fs.statSync(filePath).isDirectory())
-                    findSCSSfiles(filePath); // recursively find SCSS
-                else if (/\.scss$/.test(file)) // SCSS file found
-                    fileList.push(filePath); // store it for minification
-            });
-        })(inputPath); return fileList;
-    })();
+const inputPath = path.resolve(process.cwd(), inputArg),
+      scssFiles = [];
+if (inputArg.endsWith('.scss')) scssFiles.push(inputPath);
+else (function findSCSSfiles(dir) {
+    const files = fs.readdirSync(dir);
+    files.forEach(file => {
+        const filePath = path.resolve(dir, file);
+        if (fs.statSync(filePath).isDirectory())
+            findSCSSfiles(filePath); // recursively find SCSS
+        else if (/\.scss$/.test(file)) // SCSS file found
+            scssFiles.push(filePath); // store it for minification
+    });
+})(inputPath);
 
 // Compile SCSS files to CSS
 let generatedCnt = 0;
