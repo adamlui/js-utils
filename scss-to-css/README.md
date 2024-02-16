@@ -63,7 +63,7 @@ Replace `<scss-to-css-cmd>` with `scss-to-css` + optional args. Then, `npm run b
 
 ## 📃 Example commands:
 
-- Compile all SCSS files in the **current directory** (outputs to same directory`):
+- Compile all SCSS files in the **current directory** (outputs to same directory):
 
    ```
    scss-to-css
