@@ -67,8 +67,7 @@ scssFiles.forEach(scssPath => {
 
 // Print final summary
 if (generatedCnt) {
-    const isPlural = generatedCnt/2 > 1;
     console.info(`\n${bg}Compilation complete!${nc}`);
-    console.info(`\n${ generatedCnt/2 } CSS file${ isPlural ? 's' : '' }`
-              + ` + ${ generatedCnt/2 } source map${ isPlural ? 's' : '' } generated.`);
+    console.info(`\n${ generatedCnt/2 } CSS file${ generatedCnt/2 > 1 ? 's' : '' }`
+              + ` + ${ generatedCnt/2 } source map${ generatedCnt/2 > 1 ? 's' : '' } generated.`);
 } else console.info(`\n${by}No SCSS files found.${nc}`);
