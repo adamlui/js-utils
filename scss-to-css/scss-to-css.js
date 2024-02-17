@@ -33,7 +33,7 @@ else (function findSCSSfiles(dir) {
         if (fs.statSync(filePath).isDirectory())
             findSCSSfiles(filePath); // recursively find SCSS
         else if (/\.scss$/.test(file)) // SCSS file found
-            scssFiles.push(filePath); // store it for minification
+            scssFiles.push(filePath); // store it for compilation
     });
 })(inputPath);
 
@@ -46,7 +46,7 @@ scssFiles.forEach(scssPath => {
             path.dirname(scssPath), // path of file to be minified
             /(src|s[ac]ss)$/.test(path.dirname(scssPath)) ? '../css' // + ../css/ if in *(src|sass|scss)/
                 : outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
-                : outputArg || 'css' // or path from path output arg or css/ from no arg
+                : outputArg || 'css' // or path from folder output arg or css/ if no output arg passed
         );
         const outputFilename = (
             outputArg.endsWith('.css') && inputArg.endsWith('.scss')
