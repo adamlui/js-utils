@@ -31,7 +31,7 @@ const jsFiles = inputArg.endsWith('.js') ? [inputPath]
             const files = fs.readdirSync(dir);
             files.forEach(file => {
                 const filePath = path.join(dir, file);
-                if (fs.statSync(filePath).isDirectory())
+                if (fs.statSync(filePath).isDirectory() && file !== 'node_modules')
                     findJSfiles(filePath); // recursively find unminified JS
                 else if (/\.js(?<!\.min\.js)$/.test(file)) // unminified JS file found
                     fileList.push(filePath); // store it for minification
