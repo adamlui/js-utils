@@ -32,7 +32,7 @@ else (function findSCSSfiles(dir) {
         const filePath = path.resolve(dir, file);
         if (fs.statSync(filePath).isDirectory())
             findSCSSfiles(filePath); // recursively find SCSS
-        else if (/\.scss$/.test(file)) // SCSS file found
+        else if (file.endsWith('.scss')) // SCSS file found
             scssFiles.push(filePath); // store it for compilation
     });
 })(inputPath);
