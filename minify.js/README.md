@@ -1,6 +1,6 @@
 # <> minify.js 
 
-### Minify JavaScript files by CLI (recursively or individually)
+### Recursively minify all JavaScript files.
 
 <a href="https://www.npmjs.com/package/@adamlui/minify.js"><img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.2-fc7811.svg?logo=npm&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-license"><img height=31 src="https://img.shields.io/badge/License-MIT-fcde7b.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
