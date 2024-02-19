@@ -1,6 +1,6 @@
 {
   "name": "@adamlui/minify.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Minify JavaScript files",
   "author": {
     "name": "Adam Lui",
@@ -41,7 +41,7 @@
     "uglify-js": "^3.17.4"
   },
   "funding": {
-    "type" : "github",
-    "url" : "https://github.com/sponsors/adamlui"
+    "type": "github",
+    "url": "https://github.com/sponsors/adamlui"
   }
 }
