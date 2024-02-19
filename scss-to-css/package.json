@@ -39,5 +39,9 @@
   },
   "dependencies": {
     "sass": "^1.70.0"
+  },
+  "funding": {
+    "type" : "github",
+    "url" : "https://github.com/sponsors/adamlui"
   }
 }
