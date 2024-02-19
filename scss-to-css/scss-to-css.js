@@ -41,6 +41,7 @@ else (function findSCSSfiles(dir) {
 let generatedCnt = 0;
 console.log(''); // line break before first log
 scssFiles.forEach(scssPath => {
+    console.info(`Compiling ${ scssPath }...`);
     try { // to compile it
         const outputDir = path.join(
             path.dirname(scssPath), // path of file to be minified
@@ -53,9 +54,8 @@ scssFiles.forEach(scssPath => {
                 ? path.basename(outputArg).replace(/(\.min)?\.css$/, '')
                 : path.basename(scssPath, '.scss')
         ) + '.min.css';
-        const outputPath = path.join(outputDir, outputFilename);
-        console.info(`Compiling ${ scssPath }...`);
-        const compileResult = sass.compile(scssPath, { style: 'compressed', sourceMap: true });
+        const outputPath = path.join(outputDir, outputFilename),
+              compileResult = sass.compile(scssPath, { style: 'compressed', sourceMap: true });
         if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
         fs.writeFileSync(outputPath, compileResult.css, 'utf8');
         fs.writeFileSync(outputPath + '.map', JSON.stringify(compileResult.sourceMap), 'utf8');

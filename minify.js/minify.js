@@ -41,6 +41,7 @@ else (function findJSfiles(dir) {
 let minifiedCnt = 0;
 console.log(''); // line break before first log
 jsFiles.forEach(jsPath => {
+    console.info(`Minifying ${ jsPath }...`);
     const outputDir = path.join(
         path.dirname(jsPath), // path of file to be minified
         /so?u?rce?$/.test(path.dirname(jsPath)) ? '../min' // + ../min/ if in *(src|source)/
@@ -52,9 +53,8 @@ jsFiles.forEach(jsPath => {
             ? path.basename(outputArg).replace(/(\.min)?\.js$/, '')
             : path.basename(jsPath, '.js')
     ) + '.min.js';
-    const outputPath = path.join(outputDir, outputFilename);
-    console.info(`Minifying ${ jsPath }...`);
-    const minifiedCode = uglifyJS.minify(fs.readFileSync(jsPath, 'utf8')).code;
+    const outputPath = path.join(outputDir, outputFilename),
+          minifiedCode = uglifyJS.minify(fs.readFileSync(jsPath, 'utf8')).code;
     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
     fs.writeFileSync(outputPath, minifiedCode, 'utf8');
     minifiedCnt++;
