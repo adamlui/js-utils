@@ -30,8 +30,8 @@ else (function findSCSSfiles(dir) {
     const files = fs.readdirSync(dir);
     files.forEach(file => {
         const filePath = path.resolve(dir, file);
-        if (fs.statSync(filePath).isDirectory())
-            findSCSSfiles(filePath); // recursively find SCSS
+        if (fs.statSync(filePath).isDirectory() && !file.startsWith('.'))
+            findSCSSfiles(filePath); // recursively find SCSS in non-dot dir
         else if (file.endsWith('.scss')) // SCSS file found
             scssFiles.push(filePath); // store it for compilation
     });
@@ -68,6 +68,6 @@ scssFiles.forEach(scssPath => {
 // Print final summary
 if (generatedCnt) {
     console.info(`\n${bg}Compilation complete!${nc}`);
-    console.info(`\n${ generatedCnt/2 } CSS file${ generatedCnt/2 > 1 ? 's' : '' }`
-              + ` + ${ generatedCnt/2 } source map${ generatedCnt/2 > 1 ? 's' : '' } generated.`);
-} else console.info(`\n${by}No SCSS files found.${nc}`);
+    console.info(`${ generatedCnt/2 } CSS file${ generatedCnt/2 > 1 ? 's' : '' }`
+            + ` + ${ generatedCnt/2 } source map${ generatedCnt/2 > 1 ? 's' : '' } generated.`);
+} else console.info(`${by}No SCSS files found.${nc}`);
