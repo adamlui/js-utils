@@ -25,6 +25,12 @@ if (inputArg && !fs.existsSync(inputArg)) {
     process.exit(1);
 }
 
+// Store flag settings
+const config = { 
+    includeDotFolders: process.argv.some(arg => /--?include-dot-?folders?/.test(arg)),
+    includeDotFiles: process.argv.some(arg => /--?include-dot-?files?/.test(arg))
+};
+
 // Recursively find all eligible JavaScript files or arg-passed file
 const inputPath = path.resolve(process.cwd(), inputArg),
       jsFiles = [];
@@ -34,10 +40,10 @@ else (function findJSfiles(dir) {
     files.forEach(file => {
         const filePath = path.resolve(dir, file);
         if (fs.statSync(filePath).isDirectory() && file != 'node_modules' &&
-            (process.argv.some(arg => /--?include-dot-?folders/.test(arg)) || !file.startsWith('.')))
+            (config.includeDotFolders || !file.startsWith('.')))
                 findJSfiles(filePath); // recursively find unminified JS in eligible dir
         else if (/\.js(?<!\.min\.js)$/.test(file) &&
-            (process.argv.some(arg => /--?include-dot-?files/.test(arg)) || !file.startsWith('.')))
+            (config.includeDotFiles || !file.startsWith('.')))
                 jsFiles.push(filePath); // store eligible unminified JS file for compilation
     });
 })(inputPath);
