@@ -34,7 +34,7 @@ else (function findSCSSfiles(dir) {
     files.forEach(file => {
         const filePath = path.resolve(dir, file);
         if (fs.statSync(filePath).isDirectory() &&
-            (process.argv.includes('--include-dot-folders') || !file.startsWith('.')))
+            (process.argv.some(arg => /--?include-dot-?folders/.test(arg)) || !file.startsWith('.')))
                 findSCSSfiles(filePath); // recursively find SCSS in eligible dir
         else if (file.endsWith('.scss')) // SCSS file found
             scssFiles.push(filePath); // store it for compilation
