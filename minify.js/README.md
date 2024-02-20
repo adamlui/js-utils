@@ -44,7 +44,7 @@ minify-js <input_path> <output_path>
 - `<input_path>`: Path to JS file or directory containing JS files to be minified, relative to the current working directory. 
 - `<output_path>`: Path to file or directory where minified files will be stored, relative to original file location. (If not provided, `min/` is used.)
 
-**💡 Note:** If folders are passed, files will be processed recursively. To include dot folders, pass `--include-dot-folders`. To include dot files, pass `--include-dot-files`.
+**💡 Note:** If folders are passed, files will be processed recursively. To include dotfolders, pass `--include-dotfolders`. To include dotfiles, pass `--include-dotfiles`.
 
 #
 
