@@ -30,10 +30,12 @@ else (function findJSfiles(dir) {
     const files = fs.readdirSync(dir);
     files.forEach(file => {
         const filePath = path.resolve(dir, file);
-        if (fs.statSync(filePath).isDirectory() && !/^(\.|node_modules$)/.test(file))
-            findJSfiles(filePath); // recursively find unminified JS in eligible dir
-        else if (/^[^.].*\.js(?<!\.min\.js)$/.test(file)) // unminified, non-dot JS file found
-            jsFiles.push(filePath); // store it for compilation
+        if (fs.statSync(filePath).isDirectory() && file != 'node_modules' &&
+            (process.argv.includes('--include-dot-folders') || !file.startsWith('.')))
+                findJSfiles(filePath); // recursively find unminified JS in eligible dir
+        else if (/\.js(?<!\.min\.js)$/.test(file) &&
+            (process.argv.includes('--include-dot-files') || !file.startsWith('.')))
+                jsFiles.push(filePath); // store eligible unminified JS file for compilation
     });
 })(inputPath);
 
