@@ -25,6 +25,11 @@ if (inputArg && !fs.existsSync(inputArg)) {
     process.exit(1);
 }
 
+const config = {
+    includeDotFolders: process.argv.some(arg => /--?include-dot-?folders?/.test(arg)),
+    disableSourceMaps: process.argv.some(arg => /--?(exclude|disable)-source-?maps?/.test(arg))
+};
+
 // Recursively find all eligible SCSS files or arg-passed file
 const inputPath = path.resolve(process.cwd(), inputArg),
       scssFiles = [];
@@ -34,7 +39,7 @@ else (function findSCSSfiles(dir) {
     files.forEach(file => {
         const filePath = path.resolve(dir, file);
         if (fs.statSync(filePath).isDirectory() &&
-            (process.argv.some(arg => /--?include-dot-?folders/.test(arg)) || !file.startsWith('.')))
+            (config.includeDotFolders || !file.startsWith('.')))
                 findSCSSfiles(filePath); // recursively find SCSS in eligible dir
         else if (file.endsWith('.scss')) // SCSS file found
             scssFiles.push(filePath); // store it for compilation
@@ -42,7 +47,7 @@ else (function findSCSSfiles(dir) {
 })(inputPath);
 
 // Compile SCSS files to CSS
-let generatedCnt = 0;
+let cssGenCnt = 0, srcMapGenCnt = 0;
 console.log(''); // line break before first log
 scssFiles.forEach(scssPath => {
     console.info(`Compiling ${ scssPath }...`);
@@ -59,19 +64,22 @@ scssFiles.forEach(scssPath => {
                 : path.basename(scssPath, '.scss')
         ) + '.min.css';
         const outputPath = path.join(outputDir, outputFilename),
-              compileResult = sass.compile(scssPath, { style: 'compressed', sourceMap: true });
+              compileResult = sass.compile(scssPath, { style: 'compressed', sourceMap: !config.disableSourceMaps });
         if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-        fs.writeFileSync(outputPath, compileResult.css, 'utf8');
-        fs.writeFileSync(outputPath + '.map', JSON.stringify(compileResult.sourceMap), 'utf8');
-        generatedCnt+= 2;
+        fs.writeFileSync(outputPath, compileResult.css, 'utf8'); cssGenCnt++;
+        if (!config.disableSourceMaps) {
+            fs.writeFileSync(outputPath + '.map', JSON.stringify(compileResult.sourceMap), 'utf8');
+            srcMapGenCnt++;
+        }
     } catch (err) {
         console.error(`${br}Error compiling ${ scssPath }: ${ err.message }${nc}`);
     }
 });
 
 // Print final summary
-if (generatedCnt) {
+if (cssGenCnt) {
     console.info(`\n${bg}Compilation complete!${nc}`);
-    console.info(`${ generatedCnt/2 } CSS file${ generatedCnt/2 > 1 ? 's' : '' }`
-            + ` + ${ generatedCnt/2 } source map${ generatedCnt/2 > 1 ? 's' : '' } generated.`);
+    console.info(`${ cssGenCnt } CSS file${ cssGenCnt > 1 ? 's' : '' }`
+        + ( srcMapGenCnt ? ` + ${ srcMapGenCnt } source map${ srcMapGenCnt > 1 ? 's' : '' }` : '' )
+        + ' generated.');
 } else console.info(`${by}No SCSS files found.${nc}`);
