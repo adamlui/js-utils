@@ -25,7 +25,8 @@ if (inputArg && !fs.existsSync(inputArg)) {
     process.exit(1);
 }
 
-const config = {
+// Store flag settings
+const config = { 
     includeDotFolders: process.argv.some(arg => /--?include-dot-?folders?/.test(arg)),
     disableSourceMaps: process.argv.some(arg => /--?(exclude|disable)-source-?maps?/.test(arg))
 };
