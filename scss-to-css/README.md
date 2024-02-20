@@ -37,7 +37,7 @@ Sample output:
 
 #
 
-To specify **input/output** directories:
+To specify **input/output** paths:
    
 ```
 scss-to-css <input_path> <output_path>
