@@ -11,18 +11,19 @@ const nc = '\x1b[0m', // no color
       by = '\x1b[1;33m', // bright yellow
       bg = '\x1b[1;92m'; // bright green
 
-// Clean leading slashes from args to avoid parsing system root
-const inputArg = process.argv[2] ? process.argv[2].replace(/^\/*/, '') : '',
-      outputArg = process.argv[3] ? process.argv[3].replace(/^\/*/, '') : '';
+// Init I/O args
+const [inputArg = '', outputArg = ''] = process.argv.slice(2) // exclude executable and script path
+    .filter(arg => !arg.startsWith('-')) // exclude flags
+    .map(arg => arg.replace(/^\/*/, '')); // clean leading slashes to avoid parsing system root
 
 // Validate input arg (output arg can be anything)
-if (process.argv[2] && !fs.existsSync(inputArg)) {
+if (inputArg && !fs.existsSync(inputArg)) {
     console.error(`\n${br}Error: First arg must be an existing file or path.${nc}`
         + '\nExample valid command: \n>> minify-js . output.min.js');
     process.exit(1);
 }
 
-// Recursively find all JavaScript files or arg-passed file
+// Recursively find all eligible JavaScript files or arg-passed file
 const inputPath = path.resolve(process.cwd(), inputArg),
       jsFiles = [];
 if (inputArg.endsWith('.js')) jsFiles.push(inputPath);
