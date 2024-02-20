@@ -20,7 +20,7 @@ const [inputArg = '', outputArg = ''] = ( // default to empty strings for error-
 
 // Validate input arg (output arg can be anything)
 if (inputArg && !fs.existsSync(inputArg)) {
-    console.error(`\n${br}Error: First arg must be an existing file or path.${nc}`
+    console.error(`\n${br}Error: First arg must be an existing file or directory.${nc}`
         + '\nExample valid command: \n>> minify-js . output.min.js');
     process.exit(1);
 }
