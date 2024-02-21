@@ -46,6 +46,6 @@ if [[ "$*" == *"--publish"* ]] ; then
     npm publish ; fi
 
 # Print final summary
-echo -e "\n${bg}Successfully bumped to v$NEW_VERSION"$(
+echo -e "\n${bg}Successfully bumped to v$NEW_VERSION$(
     [[ "$*" == *"--publish"* ]] && echo ' and published to npm' || echo ''
-)"!${nc}"
+)!${nc}"
