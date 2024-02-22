@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       
-      - name: Get formatted downloads count
+      - name: Fetch/sum download counts
         id: get-downloads
         run: |
           total_downloads=0
