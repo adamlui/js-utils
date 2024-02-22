@@ -42,7 +42,7 @@ SOFTWARE.
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <a href="https://github.com/adamlui">**Home**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
