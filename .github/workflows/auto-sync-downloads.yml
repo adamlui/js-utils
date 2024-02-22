@@ -1,0 +1,72 @@
+name: Update npm downloads shield in docs/README.md
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs at midnight every day
+
+jobs:
+  update-downloads-shield:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout adamlui/js-utils
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/js-utils
+          path: adamlui/js-utils
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+          
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Get formatted downloads count
+        id: get-downloads
+        run: |
+          total_downloads=0
+          packages=("@adamlui/minify.js" "@adamlui/scss-to-css")
+
+          # Fetch/sum download counts
+          for pkg in "${packages[@]}" ; do
+            pkg_downloads=$(curl -s "https://img.shields.io/npm/dt/$pkg.svg" |
+              sed -n 's/.*<title>downloads: \([0-9]\+\)<\/title>.*/\1/p')
+            echo "$pkg downloads: $pkg_downloads"
+            total_downloads=$((total_downloads + pkg_downloads))
+          done
+          echo "Total downloads: $total_downloads"
+
+          # Format total
+          if ((total_downloads >= 1000000)) ; then
+            integer_part=$((total_downloads / 1000000))
+            decimal_part=$(((total_downloads % 1000000) / 100000))
+            formatted_total="$integer_part.$decimal_part""m"
+          elif ((total_downloads >= 1000)) ; then
+            integer_part=$((total_downloads / 1000))
+            decimal_part=$(((total_downloads % 1000) / 100))
+            formatted_total="$integer_part.$decimal_part""k"
+          else formatted_total="$total_downloads" ; fi
+          echo "Formatted total: $formatted_total"
+
+          # Store for update step next
+          echo "total_downloads=$formatted_total" >> $GITHUB_OUTPUT
+      
+      - name: Update README shield
+        run: |
+          cd ${{ github.workspace }}/adamlui/js-utils
+          total_downloads=$(echo ${{ steps.get-downloads.outputs.total_downloads }})
+          sed -i "s/badge\/Downloads-[0-9k]\+-/badge\/Downloads-$total_downloads-/g" docs/README.md
+
+      - name: Push to adamlui/js-utils
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          push_options: --force
+          add_options: --all
+          commit_user_email: auto-sync@kudoai.com
+          commit_author: Kudo Sync Bot <auto-sync@kudoai.com>
+          commit_message: Updated npm downloads shield counter
+          file_pattern: docs/README.md
+          repository: adamlui/js-utils
