@@ -24,7 +24,7 @@ if ! $test_cmd ; then
 fi
 
 # Compare generated files to expected output
-echo "> Comparing generated files to expected output..."
+echo -e "\n> Comparing generated files to expected output..."
 input_dir="$(dirname "$0")/input"
 expected_output_dir="$(dirname "$0")/expected_output"
 file1_expected=$(< "$expected_output_dir/$output_arg/file1.min.js")
