@@ -1,6 +1,6 @@
 module.exports = {
     'extends': ['eslint:recommended'],
-    'ignorePatterns': ['!/.github'],
+    'ignorePatterns': ['**/*.min.js', '!/.github'],
     'rules': {
         'indent': 'off', 'no-unexpected-multiline': 'off', // allow whitespace anywhere
         'semi': ['error', 'always'], // enforce semicolons at end of statement
