@@ -19,9 +19,11 @@ const [inputArg = '', outputArg = ''] = ( // default to empty strings for error-
 );
 
 // Validate input arg (output arg can be anything)
-if (inputArg && !fs.existsSync(inputArg)) {
-    console.error(`\n${br}Error: First arg must be an existing file or directory.${nc}`
-        + '\nExample valid command: \n>> scss-to-css . output.min.css');
+const inputPath = path.resolve(__dirname, inputArg);
+if (inputArg && !fs.existsSync(inputPath)) {
+    console.error(`\n${br}Error: First arg must be an existing file or directory.`
+        + `\n${ inputPath } does not exist.${nc}`
+        + '\n\nExample valid command: \n>> scss-to-css . output.min.css');
     process.exit(1);
 }
 
@@ -32,8 +34,7 @@ const config = {
 };
 
 // Recursively find all eligible SCSS files or arg-passed file
-const inputPath = path.resolve(process.cwd(), inputArg),
-      scssFiles = [];
+const scssFiles = [];
 if (inputArg.endsWith('.scss')) scssFiles.push(inputPath);
 else (function findSCSSfiles(dir) {
     const files = fs.readdirSync(dir);
