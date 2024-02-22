@@ -25,8 +25,8 @@ fi
 
 # Compare generated files to expected output
 echo "> Comparing generated files to expected output..."
-inputDir="$(dirname $0)/input"
-expectedOutputDir="$(dirname $0)/expected_output"
+inputDir="$(dirname "$0")/input"
+expectedOutputDir="$(dirname "$0")/expected_output"
 file1Expected=$(< "$expectedOutputDir/$outputArg/file1.min.js")
 file2Expected=$(< "$expectedOutputDir/nested/dir/$outputArg/file2.min.js")
 file1Actual=$(< "$inputDir/$outputArg/file1.min.js")
