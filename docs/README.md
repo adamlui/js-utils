@@ -1,7 +1,8 @@
 # 🛠️ JavaScript utilities
 
-<a href="#%EF%B8%8F-mit-license"><img height=25 src="https://img.shields.io/badge/License-MIT-fcde7b.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://app.codacy.com/gh/adamlui/js-utils/commits?utm_source=adamlui-js-utils&utm_content=github_shield"><img height=25 src="https://img.shields.io/codacy/grade/89be3b7834174bedb6ffe66609e7cfc0?label=Code+Quality&logo=codacy&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge"></a>
+<img height=31 src="https://img.shields.io/badge/Downloads-944-44cc11.svg?logo=npm&logoColor=white&labelColor=green&labelColor=464646&style=for-the-badge"></img>
+<a href="#%EF%B8%8F-mit-license"><img height=31 src="https://img.shields.io/badge/License-MIT-fcde7b.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://app.codacy.com/gh/adamlui/js-utils/commits?utm_source=adamlui-js-utils&utm_content=github_shield"><img height=31 src="https://img.shields.io/codacy/grade/89be3b7834174bedb6ffe66609e7cfc0?label=Code+Quality&logo=codacy&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge"></a>
 <br><br>
 
 ## 🏛️ MIT License
