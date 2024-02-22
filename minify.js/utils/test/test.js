@@ -8,12 +8,13 @@ const nc = '\x1b[0m', // no color
       br = '\x1b[1;91m', // bright red
       bg = '\x1b[1;92m'; // bright green
 
-// Init I/O args
-const inputArg = 'test/input',
+// Init args
+const scriptPath = path.resolve(__dirname, '../../minify.js'),
+      inputArg = 'utils/test/input',
       outputArg = 'output/min';
 
-// Run minify-js command
-const testCmd = `node ../minify.js ${ inputArg } ${ outputArg }`;
+// Run minify command
+const testCmd = `node ${ scriptPath } ${ inputArg } ${ outputArg }`;
 console.info(`\n> Running '${ testCmd }'...`);
 try { execSync(testCmd); }
 catch (err) {
