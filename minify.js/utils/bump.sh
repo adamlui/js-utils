@@ -13,7 +13,6 @@ if [[ ! "${VERSION_TYPES[@]}" =~ "$1" ]] ; then
 
 # Determine new version to bump to
 OLD_VERSION=$(node -pe "require('./package.json').version")
-INDEX=$((${#VERSION_TYPES[@]} - 1 - $(echo ${VERSION_TYPES[@]/$1*/} | wc -w))) # index of version type
 IFS='.' read -ra SUBVERS <<< "$OLD_VERSION" # split OLD_VERSION into SUBVERS array
 case $1 in # edit SUBVERS based on version type
     "patch") SUBVERS[2]=$((SUBVERS[2] + 1)) ;;
