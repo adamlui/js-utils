@@ -19,7 +19,7 @@ const [inputArg = '', outputArg = ''] = ( // default to empty strings for error-
 );
 
 // Validate input arg (output arg can be anything)
-const inputPath = path.resolve(__dirname, inputArg);
+const inputPath = path.resolve(process.cwd(), inputArg);
 if (inputArg && !fs.existsSync(inputPath)) {
     console.error(`\n${br}Error: First arg must be an existing file or directory.`
         + `\n${ inputPath } does not exist.${nc}`
