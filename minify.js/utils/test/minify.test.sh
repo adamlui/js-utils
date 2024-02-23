@@ -45,7 +45,7 @@ echo "> Cleaning up generated files/folders..."
 rm -rf "$input_dir/${output_arg%%/*}" "$input_dir/nested/dir/${output_arg%%/*}"
 
 # Print test results
-if [ "$file1_actual" = "$file1_expected" ] && [ "$file2_actual" = "$file2_expected" ]; then
+if [ "$file1_actual" = "$file1_expected" ] && [ "$file2_actual" = "$file2_expected" ] ; then
     echo -e "\n${bg}Test passed: Minification/recursion succeeded!${nc}"
 else
     echo -e "\n${br}Test failed: Generated files do not match expected output.${nc}"
