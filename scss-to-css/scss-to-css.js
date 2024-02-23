@@ -13,7 +13,7 @@ const nc = '\x1b[0m', // no color
 
 // Init I/O args
 const [inputArg = '', outputArg = ''] = ( // default to empty strings for error-less handling
-    process.argv.slice(2) // exclude executable and script path
+    process.argv.slice(2) // exclude executable and script paths
         .filter(arg => !arg.startsWith('-')) // exclude flags
         .map(arg => arg.replace(/^\/*/, '')) // clean leading slashes to avoid parsing system root
 );
