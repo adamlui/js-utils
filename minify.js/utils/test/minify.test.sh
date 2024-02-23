@@ -17,10 +17,10 @@ if [ "$relative_path" = "." ] ; then dirs_from_minifyjs=0
 else dirs_from_minifyjs=$(( $(echo "$relative_path" | tr -cd '/' | wc -c) + 1 )) ; fi
 
 # Init I/O args
-input_arg=$(
+input_arg="$(
     [ "$dirs_from_minifyjs" -gt 0 ] && # if not in minifyjs_path \
     printf '../%.0s' $(seq 1 $dirs_from_minifyjs) # construct appropriate "../" prefixes \
-)utils/test/input
+)utils/test/input"
 output_arg="output/min"
 
 # Run minify command
