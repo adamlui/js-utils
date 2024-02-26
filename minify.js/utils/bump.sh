@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This script automates: bump versions in manifests + README 
+# >>> commit changes to Git >>> push changes to GitHub >>> publish to npm (optional)
+
 # Init UI colors
 nc="\033[0m" # no color
 bg="\033[1;92m" # bright green
