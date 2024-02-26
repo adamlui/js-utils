@@ -41,13 +41,15 @@ jobs:
 
           # Format total
           if ((total_downloads >= 1000000)) ; then
-            integer_part=$((total_downloads / 1000000))
-            decimal_part=$(((total_downloads % 1000000) / 100000))
-            formatted_total="$integer_part.$decimal_part""m"
+            formatted_total="$((total_downloads / 1000000))"
+            if ((total_downloads % 1000000 != 0)) ; then
+              formatted_total+=".$(( (total_downloads % 1000000) / 100000))" ; fi
+            formatted_total+="m"
           elif ((total_downloads >= 1000)) ; then
-            integer_part=$((total_downloads / 1000))
-            decimal_part=$(((total_downloads % 1000) / 100))
-            formatted_total="$integer_part.$decimal_part""k"
+            formatted_total="$((total_downloads / 1000))"
+            if ((total_downloads % 1000 != 0)); then
+              formatted_total+=".$(( (total_downloads % 1000) / 100))" ; fi
+            formatted_total+="k"
           else formatted_total="$total_downloads" ; fi
           echo "Formatted total: $formatted_total"
 
