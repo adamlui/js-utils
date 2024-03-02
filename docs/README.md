@@ -27,3 +27,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+<br><br>
+
+## 🛡️ Security Policy
+
+If you find a vulnerability, please open a [draft security advisory](https://github.com/adamlui/js-utils/security/advisories/new).
+
+Pull requests are also welcome, but for safety reasons, send an email to adam@kudoai.com and wait for a response before making it public.
+
