@@ -29,20 +29,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 <br><br>
 
-## 💻 Contributing
-
-(Optional) To enable pre-commit linting, after forking/cloning:
-
-1. Navigate to project root
-
-2. Install dev dependencies ([ESLint](https://github.com/eslint/eslint) + [eslint-plugin-yml](https://github.com/ota-meshi/eslint-plugin-yml) + [Husky](https://github.com/typicode/husky)):
-
-    ```
-    npm install
-    ```
-
-<br>
-
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <a href="https://github.com/adamlui">**Home**</a> /
