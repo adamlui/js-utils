@@ -47,10 +47,10 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
 
         // Print formatted msg
-        lines.forEach((line, index) => {
-            if (index === 0) console.info(line); // print 1st line unindented
-            else console.info(' '.repeat(indentation) + line); // print subsequent lines indented
-        });
+        lines.forEach((line, index) => console.info(
+            index === 0 ? line // print 1st line unindented
+                : ' '.repeat(indentation) + line // print subsequent lines indented
+        ));
     }
 
 // Show version number if -v or --version passed
