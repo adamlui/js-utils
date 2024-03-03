@@ -39,10 +39,12 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         words.forEach(word => {
             const lineLength = terminalWidth - ( lines.length === 0 ? 0 : indentation );
             if (currentLine.length + word.length > lineLength) { // cap/store it
-                lines.push(currentLine); currentLine = ''; }
+                lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
+                currentLine = '';
+            }
             currentLine += word;
         });
-        lines.push(currentLine); // Push the last line without trimming
+        lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
 
         // Print formatted msg
         lines.forEach((line, index) => {
