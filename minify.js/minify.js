@@ -17,22 +17,22 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     // Print help
     console.info(`\n${by}minify-js [inputPath] [outputPath] [options]${nc}`);
     console.info('\nPath arguments:');
-    printWrappedMsg(' [input_path]          '
+    printWrappedMsg(' [input_path]               '
         + 'Path to JS file or directory containing JS files to be minified,'
         + ' relative to the current working directory.');
-    printWrappedMsg(' [output_path]         '
+    printWrappedMsg(' [output_path]              '
         + 'Path to file or directory where minified files will be stored,'
         + ' relative to original file location (if not provided, min/ is used).');
     console.info('\nConfig options:');
-    printWrappedMsg(' --include-dotfolders  Include dotfolders in file search.');
-    printWrappedMsg(' --include-dotfilles   Include dotfiles in file search.');
+    printWrappedMsg(' -dd, --include-dotfolders  Include dotfolders in file search.');
+    printWrappedMsg(' -df, --include-dotfilles   Include dotfiles in file search.');
     console.info('\nInfo commands:');
-    printWrappedMsg(' -h, --help            Display this help screen.');
-    printWrappedMsg(' -v, --version         Show version number.');
+    printWrappedMsg(' -h, --help                 Display this help screen.');
+    printWrappedMsg(' -v, --version              Show version number.');
 
     function printWrappedMsg(msg) { // indents 2nd+ lines
         const terminalWidth = process.stdout.columns || 80,
-              indentation = 23, lines = [], words = msg.match(/\S+|\s+/g);
+              indentation = 28, lines = [], words = msg.match(/\S+|\s+/g);
 
         // Split msg into lines of appropriate lengths
         let currentLine = '';
