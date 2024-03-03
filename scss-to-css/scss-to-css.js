@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// Import libs
+// Import LIBS
 const fs = require('fs'),
       path = require('path'),
       sass = require('sass');
@@ -11,7 +11,7 @@ const nc = '\x1b[0m', // no color
       by = '\x1b[1;33m', // bright yellow
       bg = '\x1b[1;92m'; // bright green
 
-// Show help screen if -h or --help passed
+// Show HELP screen if -h or --help passed
 if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
 
     // Print help
@@ -53,11 +53,11 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         ));
     }
 
-// Show version number if -v or --version passed
+// Show VERSION number if -v or --version passed
 } else if (process.argv.some(arg => /^--?v(?:er(?:s(?:ion)?)?)?$/.test(arg))) {
     console.info('v' + require('./package.json').version);
 
-} else { // run main routine
+} else { // run MAIN routine
 
     // Init I/O args
     const [inputArg = '', outputArg = ''] = ( // default to empty strings for error-less handling
