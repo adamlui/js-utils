@@ -75,8 +75,10 @@ if (process.argv.some(arg => /^--?h(elp)?$/.test(arg))) {
 
     // Load flag settings
     const config = { 
-        includeDotFolders: process.argv.some(arg => /--?include-dot-?folders?/.test(arg)),
-        includeDotFiles: process.argv.some(arg => /--?include-dot-?files?/.test(arg))
+        includeDotFolders: process.argv.some(arg =>
+            /^-dd|--?include-dot-?(folder|dir(ector(y|ie))?)s?$/.test(arg)),
+        includeDotFiles: process.argv.some(arg =>
+            /^-df|--?include-dot-?files?$/.test(arg))
     };
 
     // Recursively find all eligible JavaScript files or arg-passed file
