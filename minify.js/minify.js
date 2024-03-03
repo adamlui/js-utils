@@ -28,6 +28,7 @@ if (process.argv.some(arg => /^--?h(elp)?$/.test(arg))) {
     printWrappedMsg(' --include-dotfilles   Include dotfiles in file search.');
     console.info('\nInfo commands:');
     printWrappedMsg(' -h, --help            Display this help screen.');
+    printWrappedMsg(' -v, --version         Show version number.');
 
     function printWrappedMsg(msg) { // print full 1st line, indent remaining lines
         const terminalWidth = process.stdout.columns || 80,
@@ -49,6 +50,10 @@ if (process.argv.some(arg => /^--?h(elp)?$/.test(arg))) {
             else console.info(' '.repeat(indentation) + line); // print subsequent lines indented
         });
     }
+
+// Show version number if -v or --version passed
+} else if (process.argv.some(arg => /^--?v(er(s(ion)?)?)?$/.test(arg))) {
+    console.info('v' + require('./package.json').version);
 
 } else { // run main routine
 
