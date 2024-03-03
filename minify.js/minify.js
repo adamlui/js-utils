@@ -12,7 +12,7 @@ const nc = '\x1b[0m', // no color
       bg = '\x1b[1;92m'; // bright green
 
 // Show help screen if -h or --help passed
-if (process.argv.some(arg => /^--?h(elp)?$/.test(arg))) {
+if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
 
     // Print help
     console.info(`\n${by}minify-js [inputPath] [outputPath] [options]${nc}`);
@@ -52,7 +52,7 @@ if (process.argv.some(arg => /^--?h(elp)?$/.test(arg))) {
     }
 
 // Show version number if -v or --version passed
-} else if (process.argv.some(arg => /^--?v(er(s(ion)?)?)?$/.test(arg))) {
+} else if (process.argv.some(arg => /^--?v(?:er(?:s(?:ion)?)?)?$/.test(arg))) {
     console.info('v' + require('./package.json').version);
 
 } else { // run main routine
@@ -76,9 +76,9 @@ if (process.argv.some(arg => /^--?h(elp)?$/.test(arg))) {
     // Load flag settings
     const config = { 
         includeDotFolders: process.argv.some(arg =>
-            /^--?(dd|include-dot-?(folder|dir(ector(y|ie))?)s?)$/.test(arg)),
+            /^--?(?:dd|(?:include-)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
         includeDotFiles: process.argv.some(arg =>
-            /^--?(df|include-dot-?files?)$/.test(arg))
+            /^--?(?:df|(?:include-)?dot-?files?)$/.test(arg))
     };
 
     // Recursively find all eligible JavaScript files or arg-passed file
