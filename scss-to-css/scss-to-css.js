@@ -106,7 +106,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         try { // to compile it
             const outputDir = path.join(
                 path.dirname(scssPath), // path of file to be minified
-                /(src|s[ac]ss)$/.test(path.dirname(scssPath)) ? '../css' // + ../css/ if in *(src|sass|scss)/
+                /(?:src|s[ac]ss)$/.test(path.dirname(scssPath)) ? '../css' // + ../css/ if in *(src|sass|scss)/
                     : outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
                     : outputArg || 'css' // or path from folder output arg or css/ if no output arg passed
             );
