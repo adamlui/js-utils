@@ -1,8 +1,9 @@
 # 🛠️ JavaScript utilities
 
-<img height=31 src="https://img.shields.io/badge/Downloads-1.0k-44cc11.svg?logo=npm&logoColor=white&labelColor=green&labelColor=464646&style=for-the-badge"></img>
+<img height=31 src="https://img.shields.io/badge/Downloads-1.4k-44cc11.svg?logo=npm&logoColor=white&labelColor=464646&style=for-the-badge"></img>
 <a href="#%EF%B8%8F-mit-license"><img height=31 src="https://img.shields.io/badge/License-MIT-fcde7b.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://app.codacy.com/gh/adamlui/js-utils/commits?utm_source=adamlui-js-utils&utm_content=github_shield"><img height=31 src="https://img.shields.io/codacy/grade/89be3b7834174bedb6ffe66609e7cfc0?label=Code+Quality&logo=codacy&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge"></a>
+<a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_js-utils"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_js-utils%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></a>
 <br><br>
 
 ## 🏛️ MIT License
@@ -28,22 +29,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 <br><br>
 
-## 💻 Contributing
+## 🛡️ Security Policy
 
-(Optional) To enable pre-commit linting, after forking/cloning:
+If you find a vulnerability, please open a [draft security advisory](https://github.com/adamlui/js-utils/security/advisories/new).
 
-1. Navigate to project root
+Pull requests are also welcome, but for safety reasons, send an email to adam@kudoai.com and wait for a response before making it public.
 
-2. Install dev dependencies ([ESLint](https://github.com/eslint/eslint) + [eslint-plugin-yml](https://github.com/ota-meshi/eslint-plugin-yml) + [Husky](https://github.com/typicode/husky)):
-
-    ```
-    npm install
-    ```
-
-<br>
-
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
-
-<a href="https://github.com/adamlui">**Home**</a> /
-<a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
-<a href="#%EF%B8%8F-javascript-utilities">Back to top ↑</a>

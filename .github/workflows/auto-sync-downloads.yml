@@ -60,7 +60,7 @@ jobs:
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           total_downloads=$(echo ${{ steps.get-downloads.outputs.total_downloads }})
-          sed -i "s/badge\/Downloads-[0-9k]\+-/badge\/Downloads-$total_downloads-/g" docs/README.md
+          sed -i "s/badge\/Downloads-[0-9.km]\+-/badge\/Downloads-$total_downloads-/g" docs/README.md
 
       - name: Push to adamlui/js-utils
         uses: stefanzweifel/git-auto-commit-action@v4
