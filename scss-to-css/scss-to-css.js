@@ -28,6 +28,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     printWrappedMsg(' --disable-source-maps Prevent source maps from being generated.');
     console.info('\nInfo commands:');
     printWrappedMsg(' -h, --help            Display this help screen.');
+    printWrappedMsg(' -v, --version              Show version number.');
 
     function printWrappedMsg(msg) { // indents 2nd+ lines
         const terminalWidth = process.stdout.columns || 80,
@@ -49,6 +50,10 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
             else console.info(' '.repeat(indentation) + line); // print subsequent lines indented
         });
     }
+
+// Show version number if -v or --version passed
+} else if (process.argv.some(arg => /^--?v(?:er(?:s(?:ion)?)?)?$/.test(arg))) {
+    console.info('v' + require('./package.json').version);
 
 } else { // run main routine
 
