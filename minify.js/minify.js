@@ -30,7 +30,7 @@ if (process.argv.some(arg => /^--?h(elp)?$/.test(arg))) {
     printWrappedMsg(' -h, --help            Display this help screen.');
     printWrappedMsg(' -v, --version         Show version number.');
 
-    function printWrappedMsg(msg) { // print full 1st line, indent remaining lines
+    function printWrappedMsg(msg) { // indents 2nd+ lines
         const terminalWidth = process.stdout.columns || 80,
               indentation = 23, lines = [], words = msg.match(/\S+|\s+/g);
 
