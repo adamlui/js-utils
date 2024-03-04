@@ -17,10 +17,10 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     // Print help
     console.info(`\n${by}minify-js [inputPath] [outputPath] [options]${nc}`);
     console.info('\nPath arguments:');
-    printWrappedMsg(' [input_path]               '
+    printWrappedMsg(' [inputPath]                '
         + 'Path to JS file or directory containing JS files to be minified,'
         + ' relative to the current working directory.');
-    printWrappedMsg(' [output_path]              '
+    printWrappedMsg(' [outputPath]               '
         + 'Path to file or directory where minified files will be stored,'
         + ' relative to original file location (if not provided, min/ is used).');
     console.info('\nConfig options:');
