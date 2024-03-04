@@ -1,8 +1,8 @@
-name: Update npm downloads shield in docs/README.md
+name: Auto-update npm downloads shield in root README
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs at midnight every day
+    - cron: "0 0 * * *" # every midnight
 
 jobs:
   update-downloads-shield:
