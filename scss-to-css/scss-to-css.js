@@ -30,29 +30,6 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     printWrappedMsg(' -h, --help                  Display this help screen.');
     printWrappedMsg(' -v, --version               Show version number.');
 
-    function printWrappedMsg(msg) { // indents 2nd+ lines
-        const terminalWidth = process.stdout.columns || 80,
-              indentation = 29, lines = [], words = msg.match(/\S+|\s+/g);
-
-        // Split msg into lines of appropriate lengths
-        let currentLine = '';
-        words.forEach(word => {
-            const lineLength = terminalWidth - ( lines.length === 0 ? 0 : indentation );
-            if (currentLine.length + word.length > lineLength) { // cap/store it
-                lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
-                currentLine = '';
-            }
-            currentLine += word;
-        });
-        lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
-
-        // Print formatted msg
-        lines.forEach((line, index) => console.info(
-            index === 0 ? line // print 1st line unindented
-                : ' '.repeat(indentation) + line // print subsequent lines indented
-        ));
-    }
-
 // Show VERSION number if -v or --version passed
 } else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
     console.info('v' + require('./package.json').version);
@@ -135,4 +112,27 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
             + ( srcMapGenCnt ? ` + ${ srcMapGenCnt } source map${ srcMapGenCnt > 1 ? 's' : '' }` : '' )
             + ' generated.');
     } else console.info(`${by}No SCSS files found.${nc}`);
+}
+
+function printWrappedMsg(msg) { // truncates msg, indents 2nd+ lines
+    const terminalWidth = process.stdout.columns || 80,
+          indentation = 29, lines = [], words = msg.match(/\S+|\s+/g);
+
+    // Split msg into lines of appropriate lengths
+    let currentLine = '';
+    words.forEach(word => {
+        const lineLength = terminalWidth - ( lines.length === 0 ? 0 : indentation );
+        if (currentLine.length + word.length > lineLength) { // cap/store it
+            lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
+            currentLine = '';
+        }
+        currentLine += word;
+    });
+    lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
+
+    // Print formatted msg
+    lines.forEach((line, index) => console.info(
+        index === 0 ? line // print 1st line unindented
+            : ' '.repeat(indentation) + line // print subsequent lines indented
+    ));
 }
