@@ -2,7 +2,7 @@ name: Auto-update npm downloads shield in root README
 
 on:
   schedule:
-    - cron: "0 0 * * *" # every midnight
+    - cron: "5 0 * * *" # every day 12:05a
 
 jobs:
   update-downloads-shield:
