@@ -59,7 +59,6 @@ jobs:
           }
 
           # Fetch/sum download counts
-          total_downloads=0
           for pkg in "${packages[@]}" ; do
             pkg_downloads=$(curl -s "https://img.shields.io/npm/dt/$pkg.svg" |
               sed -n 's/.*<title>downloads: \([0-9,.km]\+\)<\/title>.*/\1/p')
