@@ -17,10 +17,10 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     // Print help
     console.info(`\n${by}scss-to-css [inputPath] [outputPath] [options]${nc}`);
     console.info('\nPath arguments:');
-    printWrappedMsg(' [input_path]                '
+    printWrappedMsg(' [inputPath]                 '
         + 'Path to SCSS file or directory containing SCSS files to be compiled,'
         + ' relative to the current working directory.');
-    printWrappedMsg(' [output_path]               '
+    printWrappedMsg(' [outputPath]                '
         + 'Path to file or directory where CSS + sourcemap files will be stored,'
         + ' relative to original file location (if not provided, css/ is used).');
     console.info('\nConfig options:');
