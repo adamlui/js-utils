@@ -62,8 +62,7 @@ jobs:
             pkg_downloads=$(expand_num "$pkg_downloads")
             echo "$pkg downloads: $pkg_downloads"
             total_downloads=$((total_downloads + pkg_downloads))
-          done
-          echo "Total downloads: $total_downloads"
+          done ; echo -e "\nTotal downloads: $total_downloads"
 
           # Format total download count
           formatted_total=$(abbreviate_num "$total_downloads")
