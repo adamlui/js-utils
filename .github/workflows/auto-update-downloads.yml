@@ -19,6 +19,7 @@ jobs:
       - name: Fetch/sum download counts
         id: get-downloads
         run: |
+          LC_NUMERIC=en_US # to insert commas
           packages=("@adamlui/minify.js" "@adamlui/scss-to-css")
 
           expand_num() { # expand nums abbreviated w/ 'k' or 'm' suffix to integers
@@ -32,24 +33,27 @@ jobs:
             fi ; echo "$num"
           }
 
-          abbreviate_num() { # abbreviate nums aesthetically
+          format_total() {
             local num=$1 ; first_digit="${num:0:1}" second_digit="${num:1:1}"
             second_digit=$(( second_digit < 5 ? 0 : 5 )) # round 2nd digit down
-            if (( num >= 10000000 )) ; then # abbr 10M+
-              abbreviated_num="$(( num / 1000000 ))M+"
-            elif (( num >= 1000000 )) ; then # abbr 1M+ to 9.5M+
-              abbreviated_num="${first_digit}"
-                (( second_digit != 0 )) && abbreviated_num+=".$second_digit"
-                abbreviated_num+="M+"
-            elif (( num >= 100000 )) ; then # abbr 100K+ to 950K+
-              abbreviated_num="${first_digit}${second_digit}0K+"
-            elif (( num >= 10000 )) ; then # abbr 10K+ to 90K+
-              abbreviated_num="${first_digit}0K+"
+            if (( num >= 1000000000 )) ; then # 1B+ w/ one decimal place
+              abbreviated_num="$(( num / 1000000000 ))"
+              remainder=$(( (num % 1000000000) / 100000000 ))
+              if (( remainder != 0 )) ; then abbreviated_num+=".$remainder" ; fi
+              abbreviated_num+="B+"
+            elif (( num >= 10000000 )) ; then # abbr 10,000,000+ to 999,000,000+
+              abbreviated_num=$(printf "%'.f+" $((( num / 1000000 ) * 1000000 )))
+            elif (( num >= 1000000 )) ; then # abbr 1,000,000+ to 9,500,000+
+              abbreviated_num="${first_digit},${second_digit}00,000+"
+            elif (( num >= 100000 )) ; then # abbr 100,000+ to 950,000+
+              abbreviated_num="${first_digit}${second_digit}0,000+"
+            elif (( num >= 10000 )) ; then # abbr 10,000+ to 90,000+
+              abbreviated_num="${first_digit}0,000+"
             elif (( num >= 1000 )) ; then # abbr 1K to 9.9K
-              remainder=$(( (num % 1000) / 100 ))
               abbreviated_num="$(( num / 1000 ))"
-                (( remainder != 0 )) && abbreviated_num+=".$remainder"
-                abbreviated_num+="K"
+              remainder=$(( (num % 1000) / 100 ))
+              if (( remainder != 0 )) ; then abbreviated_num+=".$remainder" ; fi
+              abbreviated_num+="K"
             else abbreviated_num="$num" ; fi # preserve <1K as is
             echo "$abbreviated_num"
           }
@@ -65,7 +69,7 @@ jobs:
           done ; echo -e "\nTotal downloads: $total_downloads"
 
           # Format total download count
-          formatted_total=$(abbreviate_num "$total_downloads")
+          formatted_total=$(format_total "$total_downloads")
           echo "Formatted total: $formatted_total"
 
           # Store for update step next
