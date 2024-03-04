@@ -19,30 +19,54 @@ jobs:
       - name: Fetch/sum download counts
         id: get-downloads
         run: |
-          total_downloads=0
           packages=("@adamlui/minify.js" "@adamlui/scss-to-css")
 
+          expand_num() { # expand nums abbreviated w/ 'k' or 'm' suffix to integers
+            local num=$(echo "$1" | tr '[:upper:]' '[:lower:]') # Convert to lowercase
+            if [[ $num =~ k$ ]] ; then
+              num="${num%k}" # remove 'k' suffix
+              num=$(awk "BEGIN { printf \"%.0f\", $num * 1000 }") # multiply by 1000
+            elif [[ $num =~ m$ ]] ; then
+              num="${num%m}" # remove 'm' suffix
+              num=$(awk "BEGIN { printf \"%.0f\", $num * 1000000 }") # multiply by 1000000
+            fi ; echo "$num"
+          }
+
+          abbreviate_num() { # abbreviate nums aesthetically
+            local num=$1 ; first_digit="${num:0:1}" second_digit="${num:1:1}"
+            second_digit=$(( second_digit < 5 ? 0 : 5 )) # round 2nd digit down
+            if (( num >= 10000000 )) ; then # abbr 10M+
+              abbreviated_num="$(( num / 1000000 ))M+"
+            elif (( num >= 1000000 )) ; then # abbr 1M+ to 9.5M+
+              abbreviated_num="${first_digit}"
+                (( second_digit != 0 )) && abbreviated_num+=".$second_digit"
+                abbreviated_num+="M+"
+            elif (( num >= 100000 )) ; then # abbr 100K+ to 950K+
+                abbreviated_num="${first_digit}${second_digit}0K+"
+            elif (( num >= 10000 )) ; then # abbr 10K+ to 90K+
+                abbreviated_num="${num:0:1}0K+"
+            elif (( num >= 1000 )) ; then # abbr 1K to 9.9K
+              remainder=$(( (num % 1000) / 100 ))
+              abbreviated_num="$(( num / 1000 ))"
+                (( remainder != 0 )) && abbreviated_num+=".$remainder"
+                abbreviated_num+="K"
+            else abbreviated_num="$num" ; fi # preserve <1K as is
+            echo "$abbreviated_num"
+          }
+
           # Fetch/sum download counts
+          total_downloads=0
           for pkg in "${packages[@]}" ; do
             pkg_downloads=$(curl -s "https://img.shields.io/npm/dt/$pkg.svg" |
-              sed -n 's/.*<title>downloads: \([0-9]\+\)<\/title>.*/\1/p')
+              sed -n 's/.*<title>downloads: \([0-9,.km]\+\)<\/title>.*/\1/p')
+            pkg_downloads=$(expand_num "$pkg_downloads")
             echo "$pkg downloads: $pkg_downloads"
             total_downloads=$((total_downloads + pkg_downloads))
           done
           echo "Total downloads: $total_downloads"
 
-          # Format total
-          if ((total_downloads >= 1000000)) ; then
-            formatted_total="$((total_downloads / 1000000))"
-            if ((total_downloads % 1000000 != 0)) ; then
-              formatted_total+=".$(( (total_downloads % 1000000) / 100000))" ; fi
-            formatted_total+="m"
-          elif ((total_downloads >= 1000)) ; then
-            formatted_total="$((total_downloads / 1000))"
-            if ((total_downloads % 1000 != 0)); then
-              formatted_total+=".$(( (total_downloads % 1000) / 100))" ; fi
-            formatted_total+="k"
-          else formatted_total="$total_downloads" ; fi
+          # Format total download count
+          formatted_total=$(abbreviate_num "$total_downloads")
           echo "Formatted total: $formatted_total"
 
           # Store for update step next
