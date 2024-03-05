@@ -50,7 +50,7 @@ minifyjs [input_path] [output_path]
 
 #
 
-To use as a **package script**, edit your project's `package.json` like this:
+To use as a **package script**, in your project's `package.json`:
 
 ```json
   "scripts": {
