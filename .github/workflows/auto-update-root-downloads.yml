@@ -67,7 +67,7 @@ jobs:
             total_downloads=$((total_downloads + pkg_downloads))
           done ; echo -e "\nTotal downloads: $total_downloads"
 
-          # Format total download count
+          # Format total
           formatted_total=$(format_total "$total_downloads")
           echo "Formatted total: $formatted_total"
 
