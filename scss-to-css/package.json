@@ -11,6 +11,7 @@
   "license": "MIT",
   "main": "scss-to-css.js",
   "bin": {
+    "scsstocss": "scss-to-css.js",
     "scss-to-css": "scss-to-css.js"
   },
   "scripts": {
