@@ -54,11 +54,11 @@ To use as a **package script**, edit your project's `package.json` like this:
 
 ```json
   "scripts": {
-    "build:js": "<minify-js-cmd>"
+    "build:js": "<minify.js-cmd>"
   },
 ```
 
-Replace `<minify-js-cmd>` with `minifyjs` + optional args. Then, `npm run build:js` can be used to run the command.
+Replace `<minify.js-cmd>` with `minifyjs` + optional args. Then, `npm run build:js` can be used to run the command.
 <br><br>
 
 ## 📃 Example commands:
