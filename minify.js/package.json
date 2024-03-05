@@ -11,6 +11,7 @@
   "license": "MIT",
   "main": "minify.js",
   "bin": {
+    "minifyjs": "minify.js",
     "minify-js": "minify.js"
   },
   "scripts": {
