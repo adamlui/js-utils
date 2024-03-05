@@ -15,7 +15,7 @@ const nc = '\x1b[0m', // no color
 if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
 
     // Print help
-    console.info(`\n${by}scss-to-css [inputPath] [outputPath] [options]${nc}`);
+    console.info(`\n${by}scsstocss [inputPath] [outputPath] [options]${nc}`);
     console.info('\nPath arguments:');
     printWrappedMsg(' [inputPath]                 '
         + 'Path to SCSS file or directory containing SCSS files to be compiled,'
@@ -48,7 +48,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     if (inputArg && !fs.existsSync(inputPath)) {
         console.error(`\n${br}Error: First arg must be an existing file or directory.`
             + `\n${ inputPath } does not exist.${nc}`
-            + '\n\nExample valid command: \n>> scss-to-css . output.min.css');
+            + '\n\nExample valid command: \n>> scsstocss . output.min.css');
         process.exit(1);
     }
 
