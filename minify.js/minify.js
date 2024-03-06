@@ -84,7 +84,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         jsFiles.forEach(file => console.info(file));
 
     } else { // actually minify JavaScript files
-        
+
         let minifiedCnt = 0;
         console.log(''); // line break before first log
         jsFiles.forEach(jsPath => {
