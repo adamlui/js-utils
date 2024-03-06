@@ -17,20 +17,20 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     // Print help
     console.info(`\n${by}scsstocss [inputPath] [outputPath] [options]${nc}`);
     console.info('\nPath arguments:');
-    printWrappedMsg(' [inputPath]                 '
+    printWrappedMsg(' [inputPath]                  '
         + 'Path to SCSS file or directory containing SCSS files to be compiled,'
         + ' relative to the current working directory.');
-    printWrappedMsg(' [outputPath]                '
+    printWrappedMsg(' [outputPath]                 '
         + 'Path to file or directory where CSS + sourcemap files will be stored,'
         + ' relative to original file location (if not provided, css/ is used).');
     console.info('\nConfig options:');
-    printWrappedMsg('  -n, --dry-run              Don\'t actually compile the file(s),'
+    printWrappedMsg('  -n, --dry-run               Don\'t actually compile the file(s),'
         + ' just show if they will be processed.');
-    printWrappedMsg(' -dd, --include-dotfolders   Include dotfolders in file search.');
-    printWrappedMsg('  -S, --disable-source-maps  Prevent source maps from being generated.');
+    printWrappedMsg(' -dd, --include-dotfolders    Include dotfolders in file search.');
+    printWrappedMsg('  -S, --disable-source-maps   Prevent source maps from being generated.');
     console.info('\nInfo commands:');
-    printWrappedMsg('  -h, --help                 Display this help screen.');
-    printWrappedMsg('  -v, --version              Show version number.');
+    printWrappedMsg('  -h, --help                  Display this help screen.');
+    printWrappedMsg('  -v, --version               Show version number.');
 
 // Show VERSION number if -v or --version passed
 } else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
@@ -126,7 +126,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
 
 function printWrappedMsg(msg) { // truncates msg, indents 2nd+ lines
     const terminalWidth = process.stdout.columns || 80,
-          indentation = 29, lines = [], words = msg.match(/\S+|\s+/g);
+          indentation = 30, lines = [], words = msg.match(/\S+|\s+/g);
 
     // Split msg into lines of appropriate lengths
     let currentLine = '';
