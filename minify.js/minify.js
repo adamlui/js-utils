@@ -80,8 +80,10 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     })(inputPath);
 
     if (config.dryRun) { // print files to be processed
-        console.info('\nJS files to be minified:');
-        unminnedJSfiles.forEach(file => console.info(file));
+        if (unminnedJSfiles.length > 0) {
+            console.info(`\n${by}JS files to be minified:${nc}`);
+            unminnedJSfiles.forEach(file => console.info(file));
+        } else console.info(`\n${by}No unminified JavaScript files found.${nc}`);
 
     } else { // actually minify JavaScript files
 

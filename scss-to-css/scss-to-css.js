@@ -79,8 +79,10 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     })(inputPath);
 
     if (config.dryRun) { // print files to be processed
-        console.info('\nSCSS files to be compiled:');
-        scssFiles.forEach(file => console.info(file));
+        if (scssFiles.length > 0) {
+            console.info(`\n${by}SCSS files to be compiled:${nc}`);
+            scssFiles.forEach(file => console.info(file));
+        } else console.info(`\n${by}No SCSS files found.${nc}`);
 
     } else { // actually compile SCSS files
 
