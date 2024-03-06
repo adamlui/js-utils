@@ -24,11 +24,13 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         + 'Path to file or directory where CSS + sourcemap files will be stored,'
         + ' relative to original file location (if not provided, css/ is used).');
     console.info('\nConfig options:');
+    printWrappedMsg('  -n, --dry-run              Don\'t actually compile the file(s),'
+        + ' just show if they will be processed.');
     printWrappedMsg(' -dd, --include-dotfolders   Include dotfolders in file search.');
-    printWrappedMsg(' -S, --disable-source-maps   Prevent source maps from being generated.');
+    printWrappedMsg('  -S, --disable-source-maps  Prevent source maps from being generated.');
     console.info('\nInfo commands:');
-    printWrappedMsg(' -h, --help                  Display this help screen.');
-    printWrappedMsg(' -v, --version               Show version number.');
+    printWrappedMsg('  -h, --help                 Display this help screen.');
+    printWrappedMsg('  -v, --version              Show version number.');
 
 // Show VERSION number if -v or --version passed
 } else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
@@ -54,6 +56,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
 
     // Load flag settings
     const config = { 
+        dryRun: process.argv.some(arg => /^--?(?:n|dry-?run)$/.test(arg)),
         includeDotFolders: process.argv.some(arg =>
             /^--?(?:dd|(?:include-)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
         disableSourceMaps: process.argv.some(arg =>
@@ -75,43 +78,50 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         });
     })(inputPath);
 
-    // Compile SCSS files to CSS
-    let cssGenCnt = 0, srcMapGenCnt = 0;
-    console.log(''); // line break before first log
-    scssFiles.forEach(scssPath => {
-        console.info(`Compiling ${ scssPath }...`);
-        try { // to compile it
-            const outputDir = path.join(
-                path.dirname(scssPath), // path of file to be minified
-                /(?:src|s[ac]ss)$/.test(path.dirname(scssPath)) ? '../css' // + ../css/ if in *(src|sass|scss)/
-                    : outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
-                    : outputArg || 'css' // or path from folder output arg or css/ if no output arg passed
-            );
-            const outputFilename = (
-                outputArg.endsWith('.css') && inputArg.endsWith('.scss')
-                    ? path.basename(outputArg).replace(/(\.min)?\.css$/, '')
-                    : path.basename(scssPath, '.scss')
-            ) + '.min.css';
-            const outputPath = path.join(outputDir, outputFilename),
-                  compileResult = sass.compile(scssPath, { style: 'compressed', sourceMap: !config.disableSourceMaps });
-            if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-            fs.writeFileSync(outputPath, compileResult.css, 'utf8'); cssGenCnt++;
-            if (!config.disableSourceMaps) {
-                fs.writeFileSync(outputPath + '.map', JSON.stringify(compileResult.sourceMap), 'utf8');
-                srcMapGenCnt++;
-            }
-        } catch (err) {
-            console.error(`${br}Error compiling ${ scssPath }: ${ err.message }${nc}`);
-        }
-    });
+    if (config.dryRun) { // print files to be processed
+        console.info('\nSCSS files to be compiled:');
+        scssFiles.forEach(file => console.info(file));
 
-    // Print final summary
-    if (cssGenCnt) {
-        console.info(`\n${bg}Compilation complete!${nc}`);
-        console.info(`${ cssGenCnt } CSS file${ cssGenCnt > 1 ? 's' : '' }`
-            + ( srcMapGenCnt ? ` + ${ srcMapGenCnt } source map${ srcMapGenCnt > 1 ? 's' : '' }` : '' )
-            + ' generated.');
-    } else console.info(`${by}No SCSS files found.${nc}`);
+    } else { // actually compile SCSS files
+
+        // Compile SCSS files to CSS
+        let cssGenCnt = 0, srcMapGenCnt = 0;
+        console.log(''); // line break before first log
+        scssFiles.forEach(scssPath => {
+            console.info(`Compiling ${ scssPath }...`);
+            try { // to compile it
+                const outputDir = path.join(
+                    path.dirname(scssPath), // path of file to be minified
+                    /(?:src|s[ac]ss)$/.test(path.dirname(scssPath)) ? '../css' // + ../css/ if in *(src|sass|scss)/
+                        : outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
+                        : outputArg || 'css' // or path from folder output arg or css/ if no output arg passed
+                );
+                const outputFilename = (
+                    outputArg.endsWith('.css') && inputArg.endsWith('.scss')
+                        ? path.basename(outputArg).replace(/(\.min)?\.css$/, '')
+                        : path.basename(scssPath, '.scss')
+                ) + '.min.css';
+                const outputPath = path.join(outputDir, outputFilename),
+                      compileResult = sass.compile(scssPath, { style: 'compressed', sourceMap: !config.disableSourceMaps });
+                if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+                fs.writeFileSync(outputPath, compileResult.css, 'utf8'); cssGenCnt++;
+                if (!config.disableSourceMaps) {
+                    fs.writeFileSync(outputPath + '.map', JSON.stringify(compileResult.sourceMap), 'utf8');
+                    srcMapGenCnt++;
+                }
+            } catch (err) {
+                console.error(`${br}Error compiling ${ scssPath }: ${ err.message }${nc}`);
+            }
+        });
+
+        // Print final summary
+        if (cssGenCnt) {
+            console.info(`\n${bg}Compilation complete!${nc}`);
+            console.info(`${ cssGenCnt } CSS file${ cssGenCnt > 1 ? 's' : '' }`
+                + ( srcMapGenCnt ? ` + ${ srcMapGenCnt } source map${ srcMapGenCnt > 1 ? 's' : '' }` : '' )
+                + ' generated.');
+        } else console.info(`${by}No SCSS files found.${nc}`);
+    }
 }
 
 function printWrappedMsg(msg) { // truncates msg, indents 2nd+ lines
