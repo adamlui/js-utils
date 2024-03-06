@@ -28,7 +28,7 @@ npm install -D @adamlui/scss-to-css
 The basic **global command** is:
 
 ```
-scsstocss
+scss-to-css
 ```
 
 **💡 Note:** Pass `-n` or `--dry-run` to only see what files will be processed.
@@ -44,7 +44,7 @@ Sample output:
 To specify **input/output** paths:
    
 ```
-scsstocss [input_path] [output_path]
+scss-to-css [input_path] [output_path]
 ```
 
 - `[input_path]`: Path to SCSS file or directory containing SCSS files to be compiled, relative to the current working directory. 
@@ -62,7 +62,7 @@ To use as a **package script**, in your project's `package.json`:
   },
 ```
 
-Replace `<scss-to-css-cmd>` with `scsstocss` + optional args. Then, `npm run build:css` can be used to run the command.
+Replace `<scss-to-css-cmd>` with `scss-to-css` + optional args. Then, `npm run build:css` can be used to run the command.
 <br><br>
 
 ## 📃 Example commands:
@@ -70,25 +70,25 @@ Replace `<scss-to-css-cmd>` with `scsstocss` + optional args. Then, `npm run bui
 - Compile all SCSS files in the **current directory** (outputs to `css/`):
 
    ```
-   scsstocss
+   scss-to-css
    ```
 
 - Compile all SCSS files in a **specific directory** (outputs to `path/to/your/directory/css/`):
 
    ```
-   scsstocss path/to/your/directory
+   scss-to-css path/to/your/directory
    ```
 
 - Compile a **specific file** (outputs to `path/to/your/css/file.min.css`):
 
    ```
-   scsstocss path/to/your/file.scss
+   scss-to-css path/to/your/file.scss
    ```
 
 - Specify both **input and output** directories (outputs to `output_folder/`):
 
    ```
-   scsstocss input_folder output_folder
+   scss-to-css input_folder output_folder
    ```
 
 ## 🏛️ MIT License
