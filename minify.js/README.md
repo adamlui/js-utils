@@ -32,7 +32,7 @@ npm install -D @adamlui/minify.js
 The basic **global command** is:
 
 ```
-minifyjs
+minify-js
 ```
 
 **💡 Note:** Pass `-n` or `--dry-run` to only see what files will be processed.
@@ -42,7 +42,7 @@ minifyjs
 To specify **input/output** paths:
    
 ```
-minifyjs [input_path] [output_path]
+minify-js [input_path] [output_path]
 ```
 
 - `[input_path]`: Path to JS file or directory containing JS files to be minified, relative to the current working directory. 
@@ -56,11 +56,11 @@ To use as a **package script**, in your project's `package.json`:
 
 ```json
   "scripts": {
-    "build:js": "<minify.js-cmd>"
+    "build:js": "<minify-js-cmd>"
   },
 ```
 
-Replace `<minify.js-cmd>` with `minifyjs` + optional args. Then, `npm run build:js` can be used to run the command.
+Replace `<minify-js-cmd>` with `minify-js` + optional args. Then, `npm run build:js` can be used to run the command.
 <br><br>
 
 ## 📃 Example commands:
@@ -68,25 +68,25 @@ Replace `<minify.js-cmd>` with `minifyjs` + optional args. Then, `npm run build:
 - Minify all JavaScript files in the **current directory** (outputs to `min/`):
 
    ```
-   minifyjs
+   minify-js
    ```
 
 - Minify all JavaScript files in a **specific directory** (outputs to `path/to/your/directory/min/`):
 
    ```
-   minifyjs path/to/your/directory
+   minify-js path/to/your/directory
    ```
 
 - Minify a **specific file** (outputs to `path/to/your/min/file.min.js`):
 
    ```
-   minifyjs path/to/your/file.js
+   minify-js path/to/your/file.js
    ```
 
 - Specify both **input and output** directories (outputs to `output_folder/`):
 
    ```
-   minifyjs input_folder output_folder
+   minify-js input_folder output_folder
    ```
 
 ## 🏛️ MIT License

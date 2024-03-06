@@ -15,7 +15,7 @@ const nc = '\x1b[0m', // no color
 if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
 
     // Print help
-    console.info(`\n${by}minifyjs [inputPath] [outputPath] [options]${nc}`);
+    console.info(`\n${by}minify-js [inputPath] [outputPath] [options]${nc}`);
     console.info('\nPath arguments:');
     printWrappedMsg(' [inputPath]                 '
         + 'Path to JS file or directory containing JS files to be minified,'
@@ -50,7 +50,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     if (inputArg && !fs.existsSync(inputPath)) {
         console.error(`\n${br}Error: First arg must be an existing file or directory.`
             + `\n${ inputPath } does not exist.${nc}`
-            + '\n\nExample valid command: \n>> minifyjs . output.min.js');
+            + '\n\nExample valid command: \n>> minify-js . output.min.js');
         process.exit(1);
     }
 
