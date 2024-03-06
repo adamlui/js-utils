@@ -64,30 +64,30 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     };
 
     // Recursively find all eligible JavaScript files or arg-passed file
-    const jsFiles = [];
-    if (inputArg.endsWith('.js')) jsFiles.push(inputPath);
-    else (function findJSfiles(dir) {
+    const unminnedJSfiles = [];
+    if (inputArg.endsWith('.js')) unminnedJSfiles.push(inputPath);
+    else (function findUnminnedJSfiles(dir) {
         const files = fs.readdirSync(dir);
         files.forEach(file => {
             const filePath = path.resolve(dir, file);
             if (fs.statSync(filePath).isDirectory() && file != 'node_modules' &&
                 (config.includeDotFolders || !file.startsWith('.')))
-                    findJSfiles(filePath); // recursively find unminified JS in eligible dir
+                    findUnminnedJSfiles(filePath); // recursively find unminified JS in eligible dir
             else if (/\.js(?<!\.min\.js)$/.test(file) &&
                 (config.includeDotFiles || !file.startsWith('.')))
-                    jsFiles.push(filePath); // store eligible unminified JS file for minification
+                    unminnedJSfiles.push(filePath); // store eligible unminified JS file for minification
         });
     })(inputPath);
 
     if (config.dryRun) { // print files to be processed
         console.info('\nJS files to be minified:');
-        jsFiles.forEach(file => console.info(file));
+        unminnedJSfiles.forEach(file => console.info(file));
 
     } else { // actually minify JavaScript files
 
         let minifiedCnt = 0;
         console.log(''); // line break before first log
-        jsFiles.forEach(jsPath => {
+        unminnedJSfiles.forEach(jsPath => {
             console.info(`Minifying ${ jsPath }...`);
             const outputDir = path.join(
                 path.dirname(jsPath), // path of file to be minified
