@@ -24,11 +24,13 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         + 'Path to file or directory where minified files will be stored,'
         + ' relative to original file location (if not provided, min/ is used).');
     console.info('\nConfig options:');
+    printWrappedMsg('  -n, --dry-run              Don\'t actually minify the file(s),'
+        + ' just show if they will be processed.');
     printWrappedMsg(' -dd, --include-dotfolders   Include dotfolders in file search.');
     printWrappedMsg(' -df, --include-dotfilles    Include dotfiles in file search.');
     console.info('\nInfo commands:');
-    printWrappedMsg(' -h, --help                  Display this help screen.');
-    printWrappedMsg(' -v, --version               Show version number.');
+    printWrappedMsg('  -h, --help                 Display this help screen.');
+    printWrappedMsg('  -v, --version              Show version number.');
 
 // Show VERSION number if -v or --version passed
 } else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
@@ -54,6 +56,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
 
     // Load flag settings
     const config = { 
+        dryRun: process.argv.some(arg => /^--?(?:n|dry-?run)$/.test(arg)),
         includeDotFolders: process.argv.some(arg =>
             /^--?(?:dd|(?:include-)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
         includeDotFiles: process.argv.some(arg =>
@@ -76,34 +79,40 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         });
     })(inputPath);
 
-    // Minify JavaScript files
-    let minifiedCnt = 0;
-    console.log(''); // line break before first log
-    jsFiles.forEach(jsPath => {
-        console.info(`Minifying ${ jsPath }...`);
-        const outputDir = path.join(
-            path.dirname(jsPath), // path of file to be minified
-            /so?u?rce?$/.test(path.dirname(jsPath)) ? '../min' // + ../min/ if in *(src|source)/
-                : outputArg.endsWith('.js') ? path.dirname(outputArg) // or path from file output arg
-                : outputArg || 'min' // or path from folder output arg or min/ if no output arg passed
-        );
-        const outputFilename = (
-            outputArg.endsWith('.js') && inputArg.endsWith('.js')
-                ? path.basename(outputArg).replace(/(\.min)?\.js$/, '')
-                : path.basename(jsPath, '.js')
-        ) + '.min.js';
-        const outputPath = path.join(outputDir, outputFilename),
-              minifiedCode = uglifyJS.minify(fs.readFileSync(jsPath, 'utf8')).code;
-        if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-        fs.writeFileSync(outputPath, minifiedCode, 'utf8');
-        minifiedCnt++;
-    });
+    if (config.dryRun) { // print files to be processed
+        console.info('\nJS files to be minified:');
+        jsFiles.forEach(file => console.info(file));
 
-    // Print final summary
-    if (minifiedCnt) {
-        console.info(`\n${bg}Minification complete!${nc}`);
-        console.info(`${ minifiedCnt } file${ minifiedCnt > 1 ? 's' : '' } minified.`);
-    } else console.info(`${by}No unminified JavaScript files found.${nc}`);
+    } else { // actually minify JavaScript files
+        
+        let minifiedCnt = 0;
+        console.log(''); // line break before first log
+        jsFiles.forEach(jsPath => {
+            console.info(`Minifying ${ jsPath }...`);
+            const outputDir = path.join(
+                path.dirname(jsPath), // path of file to be minified
+                /so?u?rce?$/.test(path.dirname(jsPath)) ? '../min' // + ../min/ if in *(src|source)/
+                    : outputArg.endsWith('.js') ? path.dirname(outputArg) // or path from file output arg
+                    : outputArg || 'min' // or path from folder output arg or min/ if no output arg passed
+            );
+            const outputFilename = (
+                outputArg.endsWith('.js') && inputArg.endsWith('.js')
+                    ? path.basename(outputArg).replace(/(\.min)?\.js$/, '')
+                    : path.basename(jsPath, '.js')
+            ) + '.min.js';
+            const outputPath = path.join(outputDir, outputFilename),
+                  minifiedCode = uglifyJS.minify(fs.readFileSync(jsPath, 'utf8')).code;
+            if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+            fs.writeFileSync(outputPath, minifiedCode, 'utf8');
+            minifiedCnt++;
+        });
+
+        // Print final summary
+        if (minifiedCnt) {
+            console.info(`\n${bg}Minification complete!${nc}`);
+            console.info(`${ minifiedCnt } file${ minifiedCnt > 1 ? 's' : '' } minified.`);
+        } else console.info(`${by}No unminified JavaScript files found.${nc}`);
+    }
 }
 
 function printWrappedMsg(msg) { // truncates msg, indents 2nd+ lines

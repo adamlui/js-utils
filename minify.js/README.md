@@ -35,6 +35,8 @@ The basic **global command** is:
 minifyjs
 ```
 
+**💡 Note:** Pass `-n` or `--dry-run` to only see what files will be processed.
+
 #
 
 To specify **input/output** paths:
