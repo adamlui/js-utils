@@ -84,7 +84,6 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
 
     } else { // actually compile SCSS files
 
-        // Compile SCSS files to CSS
         let cssGenCnt = 0, srcMapGenCnt = 0;
         console.log(''); // line break before first log
         scssFiles.forEach(scssPath => {
