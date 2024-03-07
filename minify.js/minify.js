@@ -27,21 +27,21 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     // Print help
     console.info(`\n${by}minify-js [inputPath] [outputPath] [options]${nc}`);
     console.info('\nPath arguments:');
-    printWrappedMsg(' [inputPath]                 '
+    printWrapped(' [inputPath]                 '
         + 'Path to JS file or directory containing JS files to be minified,'
         + ' relative to the current working directory.');
-    printWrappedMsg(' [outputPath]                '
+    printWrapped(' [outputPath]                '
         + 'Path to file or directory where minified files will be stored,'
         + ' relative to original file location (if not provided, min/ is used).');
     console.info('\nConfig options:');
-    printWrappedMsg(' -n, --dry-run               Don\'t actually minify the file(s),'
+    printWrapped(' -n, --dry-run               Don\'t actually minify the file(s),'
         + ' just show if they will be processed.');
-    printWrappedMsg(' -dd, --include-dotfolders   Include dotfolders in file search.');
-    printWrappedMsg(' -df, --include-dotfilles    Include dotfiles in file search.');
-    printWrappedMsg(' -q, --quiet                 Suppress all logging except errors.');
+    printWrapped(' -dd, --include-dotfolders   Include dotfolders in file search.');
+    printWrapped(' -df, --include-dotfilles    Include dotfiles in file search.');
+    printWrapped(' -q, --quiet                 Suppress all logging except errors.');
     console.info('\nInfo commands:');
-    printWrappedMsg(' -h, --help                  Display this help screen.');
-    printWrappedMsg(' -v, --version               Show version number.');
+    printWrapped(' -h, --help                  Display this help screen.');
+    printWrapped(' -v, --version               Show version number.');
 
 // Show VERSION number if -v or --version passed
 } else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
@@ -123,7 +123,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
 
 // Define LOGGING functions
 
-function printWrappedMsg(msg) { // wraps msg, indents 2nd+ lines
+function printWrapped(msg) { // + indent 2nd+ lines (for --help screen)
     const terminalWidth = process.stdout.columns || 80,
           indentation = 29, lines = [], words = msg.match(/\S+|\s+/g);
 
