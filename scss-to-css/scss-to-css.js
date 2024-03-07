@@ -51,7 +51,8 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     if (inputArg && !fs.existsSync(inputPath)) {
         console.error(`\n${br}Error: First arg must be an existing file or directory.`
             + `\n${ inputPath } does not exist.${nc}`
-            + '\n\nExample valid command: \n>> scss-to-css . output.min.css');
+            + '\n\nExample valid command: \n>> scss-to-css . output.min.css'
+            + `\n\n${by}For all command options: \n>> scss-to-css --help${nc}`);
         process.exit(1);
     }
 
