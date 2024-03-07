@@ -35,8 +35,8 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     console.info('\nConfig options:');
     printWrapped(' -n, --dry-run               Don\'t actually minify the file(s),'
         + ' just show if they will be processed.');
-    printWrapped(' -dd, --include-dotfolders   Include dotfolders in file search.');
-    printWrapped(' -df, --include-dotfiles     Include dotfiles in file search.');
+    printWrapped(' -d, --include-dotfolders    Include dotfolders in file search.');
+    printWrapped(' -d, --include-dotfiles      Include dotfiles in file search.');
     printWrapped(' -q, --quiet                 Suppress all logging except errors.');
     console.info('\nInfo commands:');
     printWrapped(' -h, --help                  Display this help screen.');

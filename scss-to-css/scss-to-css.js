@@ -37,7 +37,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     console.info('\nConfig options:');
     printWrapped(' -n, --dry-run                Don\'t actually compile the file(s),'
         + ' just show if they will be processed.');
-    printWrapped(' -dd, --include-dotfolders    Include dotfolders in file search.');
+    printWrapped(' -d, --include-dotfolders     Include dotfolders in file search.');
     printWrapped(' -S, --disable-source-maps    Prevent source maps from being generated.');
     printWrapped(' -M, --no-minify              Disable minification of output CSS.');
     printWrapped(' -q, --quiet                  Suppress all logging except errors.');
