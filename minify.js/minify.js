@@ -11,7 +11,7 @@ const nc = '\x1b[0m', // no color
       by = '\x1b[1;33m', // bright yellow
       bg = '\x1b[1;92m'; // bright green
 
-// Load flag settings
+// Load FLAG settings
 const config = { 
     dryRun: process.argv.some(arg => /^--?(?:n|dry-?run)$/.test(arg)),
     includeDotFolders: process.argv.some(arg =>
@@ -24,7 +24,6 @@ const config = {
 // Show HELP screen if -h or --help passed
 if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
 
-    // Print help
     console.info(`\n${by}minify-js [inputPath] [outputPath] [options]${nc}`);
     console.info('\nPath arguments:');
     printWrapped(' [inputPath]                 '
