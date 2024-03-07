@@ -11,6 +11,15 @@ const nc = '\x1b[0m', // no color
       by = '\x1b[1;33m', // bright yellow
       bg = '\x1b[1;92m'; // bright green
 
+// Load flag settings
+const config = { 
+    dryRun: process.argv.some(arg => /^--?(?:n|dry-?run)$/.test(arg)),
+    includeDotFolders: process.argv.some(arg =>
+        /^--?(?:dd|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
+    includeDotFiles: process.argv.some(arg =>
+        /^--?(?:df|(?:include-?)?dot-?files?)$/.test(arg))
+};
+
 // Show HELP screen if -h or --help passed
 if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
 
@@ -54,15 +63,6 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
             + `\n\n${by}For all command options: \n>> minify-js --help${nc}`);
         process.exit(1);
     }
-
-    // Load flag settings
-    const config = { 
-        dryRun: process.argv.some(arg => /^--?(?:n|dry-?run)$/.test(arg)),
-        includeDotFolders: process.argv.some(arg =>
-            /^--?(?:dd|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
-        includeDotFiles: process.argv.some(arg =>
-            /^--?(?:df|(?:include-?)?dot-?files?)$/.test(arg))
-    };
 
     // Recursively find all eligible JavaScript files or arg-passed file
     const unminnedJSfiles = [];
