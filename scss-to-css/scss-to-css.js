@@ -130,7 +130,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     }
 }
 
-function printWrappedMsg(msg) { // truncates msg, indents 2nd+ lines
+function printWrappedMsg(msg) { // wraps msg, indents 2nd+ lines
     const terminalWidth = process.stdout.columns || 80,
           indentation = 30, lines = [], words = msg.match(/\S+|\s+/g);
 
