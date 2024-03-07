@@ -101,6 +101,8 @@ minify-js [input_path] [output_path]
    minify-js input_folder output_folder
    ```
 
+<br>
+
 ## 💖 支持
 
 如果这对您有帮助，请考虑[给予 GitHub ⭐](https://github.com/adamlui/js-utils)！
