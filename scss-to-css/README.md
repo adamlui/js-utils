@@ -94,6 +94,11 @@ Replace `<scss-to-css-cmd>` with `scss-to-css` + optional args. Then, `npm run b
 **💡 Note:** Output CSS is minified unless `-M` or `--no-minify` is passed.
 <br><br>
 
+## 💖 Support
+
+Please consider giving a ⭐ on [GitHub](https://github.com/adamlui/js-utils) if this helped you!
+<br><br>
+
 ## 🏛️ MIT License
 
 **Copyright (c) 2024 [Adam Lui](https://github.com/adamlui)**

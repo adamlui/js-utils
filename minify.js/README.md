@@ -89,6 +89,11 @@ Replace `<minify-js-cmd>` with `minify-js` + optional args. Then, `npm run build
    minify-js input_folder output_folder
    ```
 
+## 💖 Support
+
+Please consider giving a ⭐ on [GitHub](https://github.com/adamlui/js-utils) if this helped you!
+<br><br>
+
 ## 🏛️ MIT License
 
 **Copyright (c) 2024 [Adam Lui](https://github.com/adamlui)**
