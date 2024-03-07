@@ -96,7 +96,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         printIfNotQuiet(''); // line break before first log
         scssFiles.forEach(scssPath => {
             printIfNotQuiet(`Compiling ${ scssPath }...`);
-            try { // to compile it
+            try { // to compile SCSS file
                 const outputDir = path.join(
                     path.dirname(scssPath), // path of file to be minified
                     /(?:src|s[ac]ss)$/.test(path.dirname(scssPath)) ? '../css' // + ../css/ if in *(src|sass|scss)/
@@ -118,9 +118,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
                     fs.writeFileSync(outputPath + '.map', JSON.stringify(compileResult.sourceMap), 'utf8');
                     srcMapGenCnt++;
                 }
-            } catch (err) {
-                console.error(`${br}Error compiling ${ scssPath }: ${ err.message }${nc}`);
-            }
+            } catch (err) { console.error(`${br}Error compiling ${ scssPath }: ${ err.message }${nc}`); }
         });
 
         // Print final summary
