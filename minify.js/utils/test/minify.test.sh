@@ -42,7 +42,7 @@ file2_actual=$(< "$input_dir/nested/dir/$output_arg/file2.min.js")
 
 # Cleanup generated files/folders
 echo "> Cleaning up generated files/folders..."
-rm -rf "$input_dir/${output_arg%%/*}" "$input_dir/nested/dir/${output_arg%%/*}"
+rm -rf "${input_dir:?}/${output_arg%%/*}" "${input_dir:?}/nested/dir/${output_arg%%/*}"
 
 # Print test results
 if [ "$file1_actual" = "$file1_expected" ] && [ "$file2_actual" = "$file2_expected" ] ; then
