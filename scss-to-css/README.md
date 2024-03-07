@@ -96,7 +96,7 @@ Replace `<scss-to-css-cmd>` with `scss-to-css` + optional args. Then, `npm run b
 
 ## 💖 Support
 
-Please consider giving a ⭐ on [GitHub](https://github.com/adamlui/js-utils) if this helped you!
+Please consider [giving a GitHub ⭐](https://github.com/adamlui/js-utils) if this helped you!
 <br><br>
 
 ## 🏛️ MIT License
