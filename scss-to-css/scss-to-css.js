@@ -134,6 +134,8 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     }
 }
 
+// Define LOGGING functions
+
 function printWrapped(msg) { // + indent 2nd+ lines (for --help screen)
     const terminalWidth = process.stdout.columns || 80,
           indentation = 30, lines = [], words = msg.match(/\S+|\s+/g);
