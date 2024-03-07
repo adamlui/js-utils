@@ -15,9 +15,9 @@ const nc = '\x1b[0m', // no color
 const config = { 
     dryRun: process.argv.some(arg => /^--?(?:n|dry-?run)$/.test(arg)),
     includeDotFolders: process.argv.some(arg =>
-        /^--?(?:dd|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
+        /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
     includeDotFiles: process.argv.some(arg =>
-        /^--?(?:df|(?:include-?)?dot-?files?)$/.test(arg)),
+        /^--?(?:d?f|(?:include-?)?dot-?files?)$/.test(arg)),
     quietMode: process.argv.some(arg => /^--?q(?:uiet)?$/.test(arg))
 };
 
