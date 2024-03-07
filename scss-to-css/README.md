@@ -91,6 +91,9 @@ Replace `<scss-to-css-cmd>` with `scss-to-css` + optional args. Then, `npm run b
    scss-to-css input_folder output_folder
    ```
 
+**💡 Note:** Output CSS is minified unless `-M` or `--no-minify` is passed.
+<br><br>
+
 ## 🏛️ MIT License
 
 **Copyright (c) 2024 [Adam Lui](https://github.com/adamlui)**

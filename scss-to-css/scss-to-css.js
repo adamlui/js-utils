@@ -28,6 +28,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         + ' just show if they will be processed.');
     printWrappedMsg(' -dd, --include-dotfolders    Include dotfolders in file search.');
     printWrappedMsg('  -S, --disable-source-maps   Prevent source maps from being generated.');
+    printWrappedMsg('  -M, --no-minify             Disable minification of output CSS.');
     console.info('\nInfo commands:');
     printWrappedMsg('  -h, --help                  Display this help screen.');
     printWrappedMsg('  -v, --version               Show version number.');
@@ -60,7 +61,9 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         includeDotFolders: process.argv.some(arg =>
             /^--?(?:dd|(?:include-)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
         disableSourceMaps: process.argv.some(arg =>
-            /^--?(?:S|(?:exclude|disable)-so?u?rce?-?maps?)$/.test(arg))
+            /^--?(?:S|(?:exclude|disable)-so?u?rce?-?maps?)$/.test(arg)),
+        noMinify: process.argv.some(arg =>
+            /^--?(?:M|(?:disable|no)-minif(?:y|ication))$/.test(arg))
     };
 
     // Recursively find all eligible SCSS files or arg-passed file
@@ -103,7 +106,9 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
                         : path.basename(scssPath, '.scss')
                 ) + '.min.css';
                 const outputPath = path.join(outputDir, outputFilename),
-                      compileResult = sass.compile(scssPath, { style: 'compressed', sourceMap: !config.disableSourceMaps });
+                      compileResult = sass.compile(scssPath, {
+                          style: config.noMinify ? 'expanded' : 'compressed',
+                          sourceMap: !config.disableSourceMaps });
                 if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
                 fs.writeFileSync(outputPath, compileResult.css, 'utf8'); cssGenCnt++;
                 if (!config.disableSourceMaps) {
