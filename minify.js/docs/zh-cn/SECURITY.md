@@ -9,7 +9,7 @@
     </h6>
 </div>
 
-# 安全政策
+# 🛡️ 安全政策
 
 如果您发现漏洞，请打开[安全公告草案](https://github.com/adamlui/js-utils/security/advisories/new)。
 
