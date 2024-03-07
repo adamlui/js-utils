@@ -26,24 +26,24 @@ const config = {
 // Show HELP screen if -h or --help passed
 if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
 
-    console.info(`\n${by}scss-to-css [inputPath] [outputPath] [options]${nc}`);
-    console.info('\nPath arguments:');
-    printWrapped(' [inputPath]                  '
+    printHelp(`\n${by}scss-to-css [inputPath] [outputPath] [options]${nc}`);
+    printHelp('\nPath arguments:');
+    printHelp(' [inputPath]                  '
         + 'Path to SCSS file or directory containing SCSS files to be compiled,'
         + ' relative to the current working directory.');
-    printWrapped(' [outputPath]                 '
+    printHelp(' [outputPath]                 '
         + 'Path to file or directory where CSS + sourcemap files will be stored,'
         + ' relative to original file location (if not provided, css/ is used).');
-    console.info('\nConfig options:');
-    printWrapped(' -n, --dry-run                Don\'t actually compile the file(s),'
+    printHelp('\nConfig options:');
+    printHelp(' -n, --dry-run                Don\'t actually compile the file(s),'
         + ' just show if they will be processed.');
-    printWrapped(' -d, --include-dotfolders     Include dotfolders in file search.');
-    printWrapped(' -S, --disable-source-maps    Prevent source maps from being generated.');
-    printWrapped(' -M, --no-minify              Disable minification of output CSS.');
-    printWrapped(' -q, --quiet                  Suppress all logging except errors.');
-    console.info('\nInfo commands:');
-    printWrapped(' -h, --help                   Display this help screen.');
-    printWrapped(' -v, --version                Show version number.');
+    printHelp(' -d, --include-dotfolders     Include dotfolders in file search.');
+    printHelp(' -S, --disable-source-maps    Prevent source maps from being generated.');
+    printHelp(' -M, --no-minify              Disable minification of output CSS.');
+    printHelp(' -q, --quiet                  Suppress all logging except errors.');
+    printHelp('\nInfo commands:');
+    printHelp(' -h, --help                   Display this help screen.');
+    printHelp(' -v, --version                Show version number.');
 
 // Show VERSION number if -v or --version passed
 } else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
@@ -133,7 +133,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
 
 // Define LOGGING functions
 
-function printWrapped(msg) { // + indent 2nd+ lines (for --help screen)
+function printHelp(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
     const terminalWidth = process.stdout.columns || 80,
           indentation = 30, lines = [], words = msg.match(/\S+|\s+/g);
 
