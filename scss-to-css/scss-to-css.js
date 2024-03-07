@@ -62,7 +62,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         includeDotFolders: process.argv.some(arg =>
             /^--?(?:dd|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
         disableSourceMaps: process.argv.some(arg =>
-            /^--?(?:S|(?:exclude|disable)-?so?u?rce?-?maps?)$/.test(arg)),
+            /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?)$/.test(arg)),
         noMinify: process.argv.some(arg =>
             /^--?(?:M|(?:disable|no)-?minif(?:y|ication))$/.test(arg))
     };
