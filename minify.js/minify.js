@@ -59,9 +59,9 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     const config = { 
         dryRun: process.argv.some(arg => /^--?(?:n|dry-?run)$/.test(arg)),
         includeDotFolders: process.argv.some(arg =>
-            /^--?(?:dd|(?:include-)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
+            /^--?(?:dd|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
         includeDotFiles: process.argv.some(arg =>
-            /^--?(?:df|(?:include-)?dot-?files?)$/.test(arg))
+            /^--?(?:df|(?:include-?)?dot-?files?)$/.test(arg))
     };
 
     // Recursively find all eligible JavaScript files or arg-passed file

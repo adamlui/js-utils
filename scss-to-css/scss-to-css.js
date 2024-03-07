@@ -60,11 +60,11 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     const config = { 
         dryRun: process.argv.some(arg => /^--?(?:n|dry-?run)$/.test(arg)),
         includeDotFolders: process.argv.some(arg =>
-            /^--?(?:dd|(?:include-)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
+            /^--?(?:dd|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
         disableSourceMaps: process.argv.some(arg =>
-            /^--?(?:S|(?:exclude|disable)-so?u?rce?-?maps?)$/.test(arg)),
+            /^--?(?:S|(?:exclude|disable)-?so?u?rce?-?maps?)$/.test(arg)),
         noMinify: process.argv.some(arg =>
-            /^--?(?:M|(?:disable|no)-minif(?:y|ication))$/.test(arg))
+            /^--?(?:M|(?:disable|no)-?minif(?:y|ication))$/.test(arg))
     };
 
     // Recursively find all eligible SCSS files or arg-passed file
