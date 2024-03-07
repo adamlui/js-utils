@@ -80,11 +80,12 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         });
     })(inputPath);
 
-    if (config.dryRun) { // print files to be processed
-        if (unminnedJSfiles.length > 0) {
-            console.info(`\n${by}JS files to be minified:${nc}`);
-            unminnedJSfiles.forEach(file => console.info(file));
-        } else console.info(`\n${by}No unminified JavaScript files found.${nc}`);
+    if (unminnedJSfiles.length === 0) { // print nothing found
+        console.info(`\n${by}No unminified JavaScript files found.${nc}`);
+
+    } else if (config.dryRun) { // print files to be processed
+        console.info(`\n${by}JS files to be minified:${nc}`);
+        unminnedJSfiles.forEach(file => console.info(file));
 
     } else { // actually minify JavaScript files
 
@@ -114,7 +115,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         if (minifiedCnt) {
             console.info(`\n${bg}Minification complete!${nc}`);
             console.info(`${ minifiedCnt } file${ minifiedCnt > 1 ? 's' : '' } minified.`);
-        } else console.info(`${by}No unminified JavaScript files found.${nc}`);
+        } else console.info(`${by}No unminified JavaScript files processed successfully.${nc}`);
     }
 }
 
