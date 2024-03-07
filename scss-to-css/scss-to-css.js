@@ -24,14 +24,14 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         + 'Path to file or directory where CSS + sourcemap files will be stored,'
         + ' relative to original file location (if not provided, css/ is used).');
     console.info('\nConfig options:');
-    printWrappedMsg('  -n, --dry-run               Don\'t actually compile the file(s),'
+    printWrappedMsg(' -n, --dry-run                Don\'t actually compile the file(s),'
         + ' just show if they will be processed.');
     printWrappedMsg(' -dd, --include-dotfolders    Include dotfolders in file search.');
-    printWrappedMsg('  -S, --disable-source-maps   Prevent source maps from being generated.');
-    printWrappedMsg('  -M, --no-minify             Disable minification of output CSS.');
+    printWrappedMsg(' -S, --disable-source-maps    Prevent source maps from being generated.');
+    printWrappedMsg(' -M, --no-minify              Disable minification of output CSS.');
     console.info('\nInfo commands:');
-    printWrappedMsg('  -h, --help                  Display this help screen.');
-    printWrappedMsg('  -v, --version               Show version number.');
+    printWrappedMsg(' -h, --help                   Display this help screen.');
+    printWrappedMsg(' -v, --version                Show version number.');
 
 // Show VERSION number if -v or --version passed
 } else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
