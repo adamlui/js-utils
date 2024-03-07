@@ -36,7 +36,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     printHelp(' -n, --dry-run               Don\'t actually minify the file(s),'
         + ' just show if they will be processed.');
     printHelp(' -d, --include-dotfolders    Include dotfolders in file search.');
-    printHelp(' -d, --include-dotfiles      Include dotfiles in file search.');
+    printHelp(' -f, --include-dotfiles      Include dotfiles in file search.');
     printHelp(' -q, --quiet                 Suppress all logging except errors.');
     printHelp('\nInfo commands:');
     printHelp(' -h, --help                  Display this help screen.');
