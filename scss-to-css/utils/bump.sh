@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script automates: bump versions in manifests + README 
+# This script automates: bump versions in manifests + READMEs
 # >>> commit changes to Git >>> push changes to GitHub >>> publish to npm (optional)
 
 # Init UI colors
@@ -28,15 +28,16 @@ NEW_VERSION=$(printf "%s.%s.%s" "${SUBVERS[@]}")
 echo -e "Bumping versions in package manifests..."
 npm version --no-git-tag-version "$NEW_VERSION"
 
-# Bump version in README.md
-echo -e "\nBumping version in README.md..."
-sed -i "s/Latest_Build-[0-9.]\+/Latest_Build-$NEW_VERSION/" README.md
+# Bump versions in READMEs
+echo -e "\nBumping versions in READMEs..."
+find . -name 'README.md' \
+  | xargs sed -i "s/[0-9]\+\.[0-9]\+\.[0-9]\+\(.*logo=icinga\)/$NEW_VERSION\1/"
 echo "v$NEW_VERSION"
 
 # Commit to Git
 echo -e "\nCommitting changes...\n"
-git add package*.json README.md
-git commit -n -m "Bumped version to $NEW_VERSION"
+git add package*.json *README.md
+git commit -n -m "Bumped versions to $NEW_VERSION"
 
 # Push to GiHub
 echo -e "\nPushing to GitHub...\n"
