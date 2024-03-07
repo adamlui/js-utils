@@ -1,4 +1,4 @@
-# MIT License
+# 🏛️ MIT License
 
 **Copyright (c) 2024 [Adam Lui](https://github.com/adamlui)**
 
