@@ -17,7 +17,8 @@ const config = {
     includeDotFolders: process.argv.some(arg =>
         /^--?(?:dd|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
     includeDotFiles: process.argv.some(arg =>
-        /^--?(?:df|(?:include-?)?dot-?files?)$/.test(arg))
+        /^--?(?:df|(?:include-?)?dot-?files?)$/.test(arg)),
+    quietMode: process.argv.some(arg => /^--?q(?:uiet)?$/.test(arg))
 };
 
 // Show HELP screen if -h or --help passed
@@ -37,6 +38,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         + ' just show if they will be processed.');
     printWrappedMsg(' -dd, --include-dotfolders   Include dotfolders in file search.');
     printWrappedMsg(' -df, --include-dotfilles    Include dotfiles in file search.');
+    printWrappedMsg(' -q, --quiet                 Suppress all logging except errors.');
     console.info('\nInfo commands:');
     printWrappedMsg(' -h, --help                  Display this help screen.');
     printWrappedMsg(' -v, --version               Show version number.');
@@ -81,7 +83,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     })(inputPath);
 
     if (unminnedJSfiles.length === 0) { // print nothing found
-        console.info(`\n${by}No unminified JavaScript files found.${nc}`);
+        printIfNotQuiet(`\n${by}No unminified JavaScript files found.${nc}`);
 
     } else if (config.dryRun) { // print files to be processed
         console.info(`\n${by}JS files to be minified:${nc}`);
@@ -90,9 +92,9 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     } else { // actually minify JavaScript files
 
         let minifiedCnt = 0;
-        console.log(''); // line break before first log
+        printIfNotQuiet(''); // line break before first log
         unminnedJSfiles.forEach(jsPath => {
-            console.info(`Minifying ${ jsPath }...`);
+            printIfNotQuiet(`Minifying ${ jsPath }...`);
             const outputDir = path.join(
                 path.dirname(jsPath), // path of file to be minified
                 /so?u?rce?$/.test(path.dirname(jsPath)) ? '../min' // + ../min/ if in *(src|source)/
@@ -113,11 +115,13 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
 
         // Print final summary
         if (minifiedCnt) {
-            console.info(`\n${bg}Minification complete!${nc}`);
-            console.info(`${ minifiedCnt } file${ minifiedCnt > 1 ? 's' : '' } minified.`);
-        } else console.info(`${by}No unminified JavaScript files processed successfully.${nc}`);
+            printIfNotQuiet(`\n${bg}Minification complete!${nc}`);
+            printIfNotQuiet(`${ minifiedCnt } file${ minifiedCnt > 1 ? 's' : '' } minified.`);
+        } else printIfNotQuiet(`${by}No unminified JavaScript files processed successfully.${nc}`);
     }
 }
+
+// Define LOGGING functions
 
 function printWrappedMsg(msg) { // wraps msg, indents 2nd+ lines
     const terminalWidth = process.stdout.columns || 80,
@@ -141,3 +145,5 @@ function printWrappedMsg(msg) { // wraps msg, indents 2nd+ lines
             : ' '.repeat(indentation) + line // print subsequent lines indented
     ));
 }
+
+function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }

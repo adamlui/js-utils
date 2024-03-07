@@ -19,7 +19,8 @@ const config = {
     disableSourceMaps: process.argv.some(arg =>
         /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?)$/.test(arg)),
     noMinify: process.argv.some(arg =>
-        /^--?(?:M|(?:disable|no)-?minif(?:y|ication))$/.test(arg))
+        /^--?(?:M|(?:disable|no)-?minif(?:y|ication))$/.test(arg)),
+    quietMode: process.argv.some(arg => /^--?q(?:uiet)?$/.test(arg))
 };
 
 // Show HELP screen if -h or --help passed
@@ -40,6 +41,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     printWrappedMsg(' -dd, --include-dotfolders    Include dotfolders in file search.');
     printWrappedMsg(' -S, --disable-source-maps    Prevent source maps from being generated.');
     printWrappedMsg(' -M, --no-minify              Disable minification of output CSS.');
+    printWrappedMsg(' -q, --quiet                  Suppress all logging except errors.');
     console.info('\nInfo commands:');
     printWrappedMsg(' -h, --help                   Display this help screen.');
     printWrappedMsg(' -v, --version                Show version number.');
@@ -83,7 +85,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     })(inputPath);
 
     if (scssFiles.length === 0) { // print nothing found
-        console.info(`\n${by}No SCSS files found.${nc}`);
+        printIfNotQuiet(`\n${by}No SCSS files found.${nc}`);
 
     } else if (config.dryRun) { // print files to be processed
         console.info(`\n${by}SCSS files to be compiled:${nc}`);
@@ -92,9 +94,9 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     } else { // actually compile SCSS files
 
         let cssGenCnt = 0, srcMapGenCnt = 0;
-        console.log(''); // line break before first log
+        printIfNotQuiet(''); // line break before first log
         scssFiles.forEach(scssPath => {
-            console.info(`Compiling ${ scssPath }...`);
+            printIfNotQuiet(`Compiling ${ scssPath }...`);
             try { // to compile it
                 const outputDir = path.join(
                     path.dirname(scssPath), // path of file to be minified
@@ -124,11 +126,11 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
 
         // Print final summary
         if (cssGenCnt) {
-            console.info(`\n${bg}Compilation complete!${nc}`);
-            console.info(`${ cssGenCnt } CSS file${ cssGenCnt > 1 ? 's' : '' }`
+            printIfNotQuiet(`\n${bg}Compilation complete!${nc}`);
+            printIfNotQuiet(`${ cssGenCnt } CSS file${ cssGenCnt > 1 ? 's' : '' }`
                 + ( srcMapGenCnt ? ` + ${ srcMapGenCnt } source map${ srcMapGenCnt > 1 ? 's' : '' }` : '' )
                 + ' generated.');
-        } else console.info(`${by}No SCSS files processed successfully.${nc}`);
+        } else printIfNotQuiet(`${by}No SCSS files processed successfully.${nc}`);
     }
 }
 
@@ -154,3 +156,5 @@ function printWrappedMsg(msg) { // wraps msg, indents 2nd+ lines
             : ' '.repeat(indentation) + line // print subsequent lines indented
     ));
 }
+
+function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
