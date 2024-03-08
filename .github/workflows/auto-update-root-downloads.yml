@@ -61,7 +61,7 @@ jobs:
           # Fetch/sum download counts
           for pkg in "${packages[@]}" ; do
             pkg_downloads=$(curl -s "https://img.shields.io/npm/dt/$pkg.svg" |
-              sed -n 's/.*<title>downloads: \([0-9,.km]\+\)<\/title>.*/\1/p')
+              sed -n 's/.*<title>downloads: \([0-9,.km]\+\)<\/title>.*/\1/Ip')
             pkg_downloads=$(expand_num "$pkg_downloads")
             echo "$pkg downloads: $pkg_downloads"
             total_downloads=$((total_downloads + pkg_downloads))
@@ -78,7 +78,7 @@ jobs:
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           total_downloads=$(echo ${{ steps.get-downloads.outputs.total_downloads }})
-          sed -i "s/badge\/Downloads-[0-9.km]\+-/badge\/Downloads-$total_downloads-/g" docs/README.md
+          sed -i "s/badge\/Downloads-[0-9.km]\+-/badge\/Downloads-$total_downloads-/Ig" docs/README.md
 
       - name: Push to adamlui/js-utils
         uses: stefanzweifel/git-auto-commit-action@v4
