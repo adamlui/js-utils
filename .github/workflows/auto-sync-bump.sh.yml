@@ -22,10 +22,10 @@ jobs:
         id: sync_changes
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
-          files=$(find . -name "bump.sh" -type f)
-          newest_file="" ; newest_timestamp=0
 
           # Find the newest bump.sh
+          files=$(find . -name "bump.sh" -type f)
+          newest_file="" ; newest_timestamp=0
           for file in $files ; do
             timestamp=$(git log -1 --format="%ct" -- "$file")
             if [[ $timestamp -gt $newest_timestamp ]] ; then
