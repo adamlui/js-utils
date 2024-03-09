@@ -20,20 +20,20 @@ const config = require.main !== module ? {} : {
 // Define MAIN functions
 
 function findJSfiles(dir, options = { recursive: true, verbose: false }) {
-    const dirFiles = fs.readdirSync(dir), unminnedJSfiles = [];
+    const dirFiles = fs.readdirSync(dir), jsFiles = [];
     dirFiles.forEach(file => {
         const filePath = path.resolve(dir, file);
         if (fs.statSync(filePath).isDirectory() && file != 'node_modules' &&
             (config.includeDotFolders || !file.startsWith('.')) && options.recursive) {
                 if (options.verbose)
                     console.info(`Searching for unminified JS files in: ${filePath}...`);
-                unminnedJSfiles.push( // recursively find unminified JS in eligible dir
+                jsFiles.push( // recursively find unminified JS in eligible dir
                     ...findJSfiles(filePath));
         } else if (/\.js(?<!\.min\.js)$/.test(file) &&
             (config.includeDotFiles || !file.startsWith('.')))
-                unminnedJSfiles.push(filePath); // store eligible unminified JS file for minification
+                jsFiles.push(filePath); // store eligible unminified JS file for minification
     });
-    return unminnedJSfiles;
+    return jsFiles;
 }
 
 function minify(input, options = { recursive: true, verbose: true }) {
