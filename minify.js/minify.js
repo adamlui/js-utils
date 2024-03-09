@@ -49,9 +49,8 @@ function minify(input, options = { recursive: true, verbose: true }) {
                 if (options.verbose) console.info(`Minifying ${ jsPath }...`);
                 try {
                     const srcCode = fs.readFileSync(jsPath, 'utf8'),
-                          minifiedCode = uglifyJS.minify(srcCode).code,
-                          fileName = path.basename(jsPath, '.js') + '.min.js';
-                    return { code: minifiedCode, filename: fileName, srcPath: jsPath };
+                          minifiedCode = uglifyJS.minify(srcCode).code;
+                    return { code: minifiedCode, srcPath: jsPath };
                 } catch (err) {
                     console.error(`Error minifying ${ jsPath }: ${ err.message }`);
                     return null;
