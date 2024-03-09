@@ -66,20 +66,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     }
 
     // Recursively find all eligible JavaScript files or arg-passed file
-    const unminnedJSfiles = [];
-    if (inputArg.endsWith('.js')) unminnedJSfiles.push(inputPath);
-    else (function findUnminnedJSfiles(dir) {
-        const files = fs.readdirSync(dir);
-        files.forEach(file => {
-            const filePath = path.resolve(dir, file);
-            if (fs.statSync(filePath).isDirectory() && file != 'node_modules' &&
-                (config.includeDotFolders || !file.startsWith('.')))
-                    findUnminnedJSfiles(filePath); // recursively find unminified JS in eligible dir
-            else if (/\.js(?<!\.min\.js)$/.test(file) &&
-                (config.includeDotFiles || !file.startsWith('.')))
-                    unminnedJSfiles.push(filePath); // store eligible unminified JS file for minification
-        });
-    })(inputPath);
+    const unminnedJSfiles = inputArg.endsWith('.js') ? [inputPath] : findUnminnedJSfiles(inputPath);
 
     if (unminnedJSfiles.length === 0) { // print nothing found
         printIfNotQuiet(`\n${by}No unminified JavaScript files found.${nc}`);
@@ -148,3 +135,20 @@ function printHelp(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
 }
 
 function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
+
+// Define SEARCH function
+
+function findUnminnedJSfiles(dir) {
+    const dirFiles = fs.readdirSync(dir), unminnedJSfiles = []
+    dirFiles.forEach(file => {
+        const filePath = path.resolve(dir, file);
+        if (fs.statSync(filePath).isDirectory() && file != 'node_modules' &&
+            (config.includeDotFolders || !file.startsWith('.')))
+                unminnedJSfiles.push( // recursively find unminified JS in eligible dir
+                    ...findUnminnedJSfiles(filePath));
+        else if (/\.js(?<!\.min\.js)$/.test(file) &&
+            (config.includeDotFiles || !file.startsWith('.')))
+                unminnedJSfiles.push(filePath); // store eligible unminified JS file for minification
+    });
+    return unminnedJSfiles;
+}
