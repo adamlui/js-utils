@@ -40,7 +40,7 @@ npm install -g @adamlui/minify.js
 npm install -D @adamlui/minify.js
 ```
 
-## 💻 用法
+## 💻 命令列使用
 
 基本的**全域命令**是：
 
@@ -53,7 +53,7 @@ minify-js
 #
 
 指定**輸入/輸出**路徑：
-
+   
 ```
 minify-js [input_path] [output_path]
 ```
@@ -61,7 +61,7 @@ minify-js [input_path] [output_path]
 - `[input_path]`: 相對於目前工作目錄的 JS 檔案或包含要縮小的 JS 檔案的目錄的路徑。
 - `[output_path]`: 將儲存縮小檔案的檔案或目錄的路徑，相對於原始檔案位置（如果未提供，則使用 `min/`）。
 
-**💡 注意：** 如果傳遞資料夾，檔案將會被遞歸處理。 若要包含點資料夾，請傳遞 `-d` 或 `--include-dotfolders`。 若要包含點文件，請傳遞 `-D` 或 `--include-dotfiles`。
+**💡 注意：** 如果傳遞資料夾，檔案將會被遞歸處理。
 
 #
 
@@ -76,31 +76,93 @@ minify-js [input_path] [output_path]
 將 `<minify-js-cmd>` 替換為 `minify-js` + 可選參數。 然後，可以使用 `npm run build:js` 來執行該指令。
 <br><br>
 
-## 📃 命令範例：
+### 命令列選項
 
-- 縮小**目前目錄**中的所有 JavaScript 檔案（輸出到 `min/`）：
+```
+配置選項：
+ -n, --dry-run               實際上並沒有縮小文件，只是顯示它們是否會被處理。
+ -d, --include-dotfolders    在文件搜尋中包含點資料夾。
+ -D, --include-dotfiles      在文件搜尋中包含點文件。
+ -q, --quiet                 禁止除錯誤之外的所有日誌記錄。
 
-   ```
-   minify-js
-   ```
+Info commands:
+ -h, --help                  顯示幫助畫面。
+ -v, --version               顯示版本號。
+```
 
-- 縮小**特定目錄**中的所有 JavaScript 檔案（輸出到 `path/to/your/directory/min/`）：
+### 命令範例
 
-   ```
-   minify-js path/to/your/directory
-   ```
+縮小**目前目錄**中的所有 JavaScript 檔案（輸出到 `min/`）：
 
-- 縮小**特定檔案**（輸出到 `path/to/your/min/file.min.js`）：
+```
+minify-js
+```
 
-   ```
-   minify-js path/to/your/file.js
-   ```
+縮小**特定目錄**中的所有 JavaScript 檔案（輸出到 `path/to/your/directory/min/`）：
 
-- 指定**輸入和輸出**目錄（輸出到 `output_folder/`）：
+```
+minify-js path/to/your/directory
+```
 
-   ```
-   minify-js input_folder output_folder
-   ```
+縮小**特定檔案**（輸出到 `path/to/your/min/file.min.js`）：
+
+```
+minify-js path/to/your/file.js
+```
+
+指定**輸入和輸出**目錄（輸出到 `output_folder/`）：
+
+```
+minify-js input_folder output_folder
+```
+
+## 🔌 API 參考
+
+您可以像這樣在應用程式中載入 **minify.js**：
+
+```js
+const minifyJS = require('@adamlui/minify.js');
+```
+
+有一個高階函數 `minify(input, options)`，它將以適應字串輸入的可配置方式執行所有縮小/遞歸階段。
+
+### minify(options)
+
+選項是布林值（預設為 `true`）作為物件屬性傳遞，例如 `minifyJS.minify(input, { option: true })`:
+
+```
+ recursive                   如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。
+ verbose                     在控制台/終端機中顯示日誌記錄。
+```
+
+### minify(input)
+
+輸入是表示原始碼或路徑的字串。
+
+如果傳遞**原始碼**，則直接縮小，然後傳回一個包含 `srcPath` + `code` + `error` 的物件：
+
+```js
+const srcCode = 'function add(first, second) { return first + second; }',
+      result = minifyJS.minify(srcCode);
+console.log(result.error); // 運行時錯誤，如果沒有錯誤則為 `undefined`
+console.log(result.code);  // 縮小輸出：function add(n,d){return n+d}
+```
+
+如果傳遞了**檔案路徑**，則載入檔案的程式碼然後縮小，傳回一個像上面一樣的物件。
+
+如果傳遞了 **目錄路徑**，則會搜尋 JavaScript 檔案（預設遞歸），每個檔案都會被縮小，然後傳回包含 `srcPath` + `code` + `error` 的物件陣列：
+
+```js
+const recursiveResults = minifyJS.minify('.');
+recursiveResults.forEach(result =>
+    console.log(result.srcPath) // 所有子目錄中的 JavaScript 文件
+);
+
+const nonRecursiveResults = minifyJS.minify('.', { recursive: false });
+nonRecursiveResults.forEach(result =>
+    console.log(result.srcPath) // 僅工作目錄中的 JavaScript 文件
+);
+```
 
 <br>
 

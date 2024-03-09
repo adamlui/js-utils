@@ -40,7 +40,7 @@ As a **dev dependency**, from your project root:
 npm install -D @adamlui/minify.js
 ```
 
-## 💻 Usage
+## 💻 Command line usage
 
 The basic **global command** is:
 
@@ -61,7 +61,7 @@ minify-js [input_path] [output_path]
 - `[input_path]`: Path to JS file or directory containing JS files to be minified, relative to the current working directory. 
 - `[output_path]`: Path to file or directory where minified files will be stored, relative to original file location (if not provided, `min/` is used).
 
-**💡 Note:** If folders are passed, files will be processed recursively. To include dotfolders, pass `-d` or `--include-dotfolders`. To include dotfiles, pass `-D` or `--include-dotfiles`.
+**💡 Note:** If folders are passed, files will be processed recursively.
 
 #
 
@@ -76,31 +76,94 @@ To use as a **package script**, in your project's `package.json`:
 Replace `<minify-js-cmd>` with `minify-js` + optional args. Then, `npm run build:js` can be used to run the command.
 <br><br>
 
-## 📃 Example commands:
+### Command line options
 
-- Minify all JavaScript files in the **current directory** (outputs to `min/`):
+```
+Config options:
+ -n, --dry-run               Don't actually minify the file(s), just show
+                             if they will be processed.
+ -d, --include-dotfolders    Include dotfolders in file search.
+ -D, --include-dotfiles      Include dotfiles in file search.
+ -q, --quiet                 Suppress all logging except errors.
 
-   ```
-   minify-js
-   ```
+Info commands:
+ -h, --help                  Display help screen.
+ -v, --version               Show version number.
+```
 
-- Minify all JavaScript files in a **specific directory** (outputs to `path/to/your/directory/min/`):
+### Example commands
 
-   ```
-   minify-js path/to/your/directory
-   ```
+Minify all JavaScript files in the **current directory** (outputs to `min/`):
 
-- Minify a **specific file** (outputs to `path/to/your/min/file.min.js`):
+```
+minify-js
+```
 
-   ```
-   minify-js path/to/your/file.js
-   ```
+Minify all JavaScript files in a **specific directory** (outputs to `path/to/your/directory/min/`):
 
-- Specify both **input and output** directories (outputs to `output_folder/`):
+```
+minify-js path/to/your/directory
+```
 
-   ```
-   minify-js input_folder output_folder
-   ```
+Minify a **specific file** (outputs to `path/to/your/min/file.min.js`):
+
+```
+minify-js path/to/your/file.js
+```
+
+Specify both **input and output** directories (outputs to `output_folder/`):
+
+```
+minify-js input_folder output_folder
+```
+
+## 🔌 API Reference
+
+You can load **minify.js** in your app like this:
+
+```js
+const minifyJS = require('@adamlui/minify.js');
+```
+
+There is a single high level function, `minify(input, options)`, which will perform all minification/recursion phases in a configurable manner that adapts to the string input.
+
+### minify(options)
+
+Options are boolean (set to `true` by default) passed as object properties e.g. `minifyJS.minify(input, { option: true })`:
+
+```
+ recursive                   Recursively search for nested files if dir path passed.
+ verbose                     Show logging in console/terminal.
+```
+
+### minify(input)
+
+Input is a string that represents either source code or a path.
+
+If **source code** is passed, it is directly minified, then an object containing `srcPath` + `code` + `error` is returned:
+
+```js
+const srcCode = 'function add(first, second) { return first + second; }',
+      result = minifyJS.minify(srcCode);
+console.log(result.error); // runtime error, or `undefined` if no error
+console.log(result.code);  // minified output: function add(n,d){return n+d}
+```
+
+If a **file path** is passed, the file's code is loaded then minified, returning an object like above.
+
+If a **directory path** is passed, JavaScript files are searched for (recursively by default), each is minified, then an array of objects containing `srcPath` + `code` + `error` is returned:
+
+```js
+const recursiveResults = minifyJS.minify('.');
+recursiveResults.forEach(result =>
+    console.log(result.srcPath) // JS files in all sub-directories
+);
+
+const nonRecursiveResults = minifyJS.minify('.', { recursive: false });
+nonRecursiveResults.forEach(result =>
+    console.log(result.srcPath) // JS files in working directory only
+);
+```
 
 <br>
 

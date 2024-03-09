@@ -40,7 +40,7 @@ npm install -g @adamlui/minify.js
 npm install -D @adamlui/minify.js
 ```
 
-## 💻 用法
+## 💻 命令行使用
 
 基本的**全局命令**是：
 
@@ -61,7 +61,7 @@ minify-js [input_path] [output_path]
 - `[input_path]`: 相对于当前工作目录的 JS 文件或包含要缩小的 JS 文件的目录的路径。
 - `[output_path]`: 将存储缩小文件的文件或目录的路径，相对于原始文件位置（如果未提供，则使用 `min/`）。
 
-**💡 注意：** 如果传递文件夹，文件将被递归处理。 要包含点文件夹，请传递 `-d` 或 `--include-dotfolders`。 要包含点文件，请传递 `-D` 或 `--include-dotfiles`。
+**💡 注意：** 如果传递文件夹，文件将被递归处理。
 
 #
 
@@ -76,31 +76,93 @@ minify-js [input_path] [output_path]
 将 `<minify-js-cmd>` 替换为 `minify-js` + 可选参数。 然后，可以使用 `npm run build:js` 来运行该命令。
 <br><br>
 
-## 📃 命令示例：
+### 命令行选项
 
-- 缩小**当前目录**中的所有 JavaScript 文件（输出到 `min/`）：
+```
+配置选项：
+ -n, --dry-run               实际上并不缩小文件，只是显示它们是否会被处理。
+ -d, --include-dotfolders    在文件搜索中包括点文件夹。
+ -D, --include-dotfiles      在文件搜索中包含点文件。
+ -q, --quiet                 禁止除错误之外的所有日志记录。
 
-   ```
-   minify-js
-   ```
+Info commands:
+ -h, --help                  显示帮助屏幕。
+ -v, --version               显示版本号。
+```
 
-- 缩小**特定目录**中的所有 JavaScript 文件（输出到 `path/to/your/directory/min/`）：
+### 命令示例
 
-   ```
-   minify-js path/to/your/directory
-   ```
+缩小**当前目录**中的所有 JavaScript 文件（输出到 `min/`）：
 
-- 缩小**特定文件**（输出到 `path/to/your/min/file.min.js`）：
+```
+minify-js
+```
 
-   ```
-   minify-js path/to/your/file.js
-   ```
+缩小**特定目录**中的所有 JavaScript 文件（输出到 `path/to/your/directory/min/`）：
 
-- 指定**输入和输出**目录（输出到 `output_folder/`）：
+```
+minify-js path/to/your/directory
+```
 
-   ```
-   minify-js input_folder output_folder
-   ```
+缩小**特定文件**（输出到 `path/to/your/min/file.min.js`）：
+
+```
+minify-js path/to/your/file.js
+```
+
+指定**输入和输出**目录（输出到 `output_folder/`）：
+
+```
+minify-js input_folder output_folder
+```
+
+## 🔌 API 参考
+
+您可以像这样在应用程序中加载 **minify.js**：
+
+```js
+const minifyJS = require('@adamlui/minify.js');
+```
+
+有一个高级函数 `minify(input, options)`，它将以适应字符串输入的可配置方式执行所有缩小/递归阶段。
+
+### minify(options)
+
+选项是布尔值（默认设置为 `true`）作为对象属性传递，例如 `minifyJS.minify(input, { option: true })`:
+
+```
+ recursive                   如果传递目录路径，则递归搜索嵌套文件。
+ verbose                     在控制台/终端中显示日志记录。
+```
+
+### minify(input)
+
+输入是表示源代码或路径的字符串。
+
+如果传递**源代码**，则直接缩小，然后返回一个包含 `srcPath` + `code` + `error` 的对象：
+
+```js
+const srcCode = 'function add(first, second) { return first + second; }',
+      result = minifyJS.minify(srcCode);
+console.log(result.error); // 运行时错误，如果没有错误则为 `undefined`
+console.log(result.code);  // 缩小输出：function add(n,d){return n+d}
+```
+
+如果传递了**文件路径**，则加载文件的代码然后缩小，返回一个像上面一样的对象。
+
+如果传递了 **目录路径**，则会搜索 JavaScript 文件（默认情况下递归），每个文件都会被缩小，然后返回包含 `srcPath` + `code` + `error` 的对象数组：
+
+```js
+const recursiveResults = minifyJS.minify('.');
+recursiveResults.forEach(result =>
+    console.log(result.srcPath) // 所有子目录中的 JavaScript 文件
+);
+
+const nonRecursiveResults = minifyJS.minify('.', { recursive: false });
+nonRecursiveResults.forEach(result =>
+    console.log(result.srcPath) // 仅工作目录中的 JavaScript 文件
+);
+```
 
 <br>
 
