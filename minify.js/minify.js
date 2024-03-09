@@ -134,11 +134,11 @@ else { // run as CLI tool
             const failedJSpaths = [];
             const minifiedJSdata = unminnedJSfiles.map(jsPath => {
                 const result = minify(jsPath);
-                if (result.code === undefined) failedJSpaths.push(jsPath);
+                if (result.error) failedJSpaths.push(jsPath);
                 printIfNotQuiet(`Minifying ${ jsPath }...`
                     + ( result.code === undefined ? `${br} FAILED${nc}` : '' ));
                 return result;
-            }).filter(file => file.code !== undefined); // filter out failed minifications
+            }).filter(result => !result.error); // filter out failed minifications
 
             // Write array data to files
             minifiedJSdata.forEach(({ code, srcPath }) => {
