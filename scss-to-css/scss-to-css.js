@@ -28,8 +28,8 @@ const config = {
 // Define MAIN functions
 
 function findSCSSfiles(dir, options = { recursive: true, verbose: false }) {
-    const files = fs.readdirSync(dir), scssFiles = [];
-    files.forEach(file => {
+    const dirFiles = fs.readdirSync(dir), scssFiles = [];
+    dirFiles.forEach(file => {
         const filePath = path.resolve(dir, file);
         if (fs.statSync(filePath).isDirectory() && options.recursive &&
             (config.includeDotFolders || !file.startsWith('.'))) {
