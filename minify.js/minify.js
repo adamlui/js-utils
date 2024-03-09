@@ -78,7 +78,6 @@ else { // run as CLI tool
 
     // Show HELP screen if -h or --help passed
     if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
-
         printHelp(`\n${by}minify-js [inputPath] [outputPath] [options]${nc}`);
         printHelp('\nPath arguments:');
         printHelp(' [inputPath]                 '
