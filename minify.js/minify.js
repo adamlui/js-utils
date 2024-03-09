@@ -12,6 +12,8 @@ const config = require.main !== module ? {} : {
         /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
     includeDotFiles: process.argv.some(arg =>
         /^--?(?:df|D|(?:include-?)?dot-?files?)$/.test(arg)),
+    disableRecursion: process.argv.some(arg =>
+        /^--?(?:R|(?:disable|no)-?recursion)$/.test(arg)),
     quietMode: process.argv.some(arg => /^--?q(?:uiet)?$/.test(arg))
 };
 
@@ -90,6 +92,7 @@ else { // run as CLI tool
             + ' just show if they will be processed.');
         printHelp(' -d, --include-dotfolders    Include dotfolders in file search.');
         printHelp(' -D, --include-dotfiles      Include dotfiles in file search.');
+        printHelp(' -R, --no-recursion          Disable recursive file searching.');
         printHelp(' -q, --quiet                 Suppress all logging except errors.');
         printHelp('\nInfo commands:');
         printHelp(' -h, --help                  Display this help screen.');
@@ -118,8 +121,9 @@ else { // run as CLI tool
             process.exit(1);
         }
 
-        // Recursively find all eligible JavaScript files or arg-passed file
-        const unminnedJSfiles = inputArg.endsWith('.js') ? [inputPath] : findJSfiles(inputPath);
+        // Find all eligible JavaScript files or arg-passed file
+        const unminnedJSfiles = inputArg.endsWith('.js') ? [inputPath]
+            : findJSfiles(inputPath, { recursive: !config.disableRecursion });
 
         if (unminnedJSfiles.length === 0) { // print nothing found
             printIfNotQuiet(`\n${by}No unminified JavaScript files found.${nc}`);

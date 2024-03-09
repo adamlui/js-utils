@@ -51,7 +51,7 @@ scss-to-css [input_path] [output_path]
 - `[input_path]`: Path to SCSS file or directory containing SCSS files to be compiled, relative to the current working directory. 
 - `[output_path]`: Path to file or directory where CSS + sourcemap files will be stored, relative to original file location (if not provided, `css/` is used).
 
-**💡 Note:** If folders are passed, files will be processed recursively. To include dotfolders, pass `-d` or `--include-dotfolders`.
+**💡 Note:** If folders are passed, files will be processed recursively unless `-R` or `--no-recursion` is passed. To include dotfolders, pass `-d` or `--include-dotfolders`.
 
 #
 

@@ -61,7 +61,7 @@ minify-js [input_path] [output_path]
 - `[input_path]`: Path to JS file or directory containing JS files to be minified, relative to the current working directory. 
 - `[output_path]`: Path to file or directory where minified files will be stored, relative to original file location (if not provided, `min/` is used).
 
-**💡 Note:** If folders are passed, files will be processed recursively.
+**💡 Note:** If folders are passed, files will be processed recursively unless `-R` or `--no-recursion` is passed.
 
 #
 
@@ -84,6 +84,7 @@ Config options:
                              if they will be processed.
  -d, --include-dotfolders    Include dotfolders in file search.
  -D, --include-dotfiles      Include dotfiles in file search.
+ -R, --no-recursion          Disable recursive file searching.
  -q, --quiet                 Suppress all logging except errors.
 
 Info commands:

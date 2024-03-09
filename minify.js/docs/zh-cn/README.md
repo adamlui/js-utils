@@ -61,7 +61,7 @@ minify-js [input_path] [output_path]
 - `[input_path]`: 相对于当前工作目录的 JS 文件或包含要缩小的 JS 文件的目录的路径。
 - `[output_path]`: 将存储缩小文件的文件或目录的路径，相对于原始文件位置（如果未提供，则使用 `min/`）。
 
-**💡 注意：** 如果传递文件夹，文件将被递归处理。
+**💡 注意：** 如果传递文件夹，文件将被递归处理，除非传递 `-R` 或 `--no-recursion`。
 
 #
 
@@ -83,6 +83,7 @@ minify-js [input_path] [output_path]
  -n, --dry-run               实际上并不缩小文件，只是显示它们是否会被处理。
  -d, --include-dotfolders    在文件搜索中包括点文件夹。
  -D, --include-dotfiles      在文件搜索中包含点文件。
+ -R, --no-recursion          禁用递归文件搜索。
  -q, --quiet                 禁止除错误之外的所有日志记录。
 
 Info commands:

@@ -18,6 +18,8 @@ const config = {
         /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
     disableSourceMaps: process.argv.some(arg =>
         /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?)$/.test(arg)),
+    disableRecursion: process.argv.some(arg =>
+        /^--?(?:R|(?:disable|no)-?recursion)$/.test(arg)),
     noMinify: process.argv.some(arg =>
         /^--?(?:M|(?:disable|no)-?minif(?:y|ication))$/.test(arg)),
     quietMode: process.argv.some(arg => /^--?q(?:uiet)?$/.test(arg))
@@ -40,6 +42,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     printHelp(' -d, --include-dotfolders     Include dotfolders in file search.');
     printHelp(' -S, --disable-source-maps    Prevent source maps from being generated.');
     printHelp(' -M, --no-minify              Disable minification of output CSS.');
+    printHelp(' -R, --no-recursion           Disable recursive file searching.');
     printHelp(' -q, --quiet                  Suppress all logging except errors.');
     printHelp('\nInfo commands:');
     printHelp(' -h, --help                   Display this help screen.');
@@ -68,7 +71,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         process.exit(1);
     }
 
-    // Recursively find all eligible SCSS files or arg-passed file
+    // Find all eligible SCSS files or arg-passed file
     const scssFiles = [];
     if (inputArg.endsWith('.scss')) scssFiles.push(inputPath);
     else (function findSCSSfiles(dir) {
@@ -76,7 +79,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         files.forEach(file => {
             const filePath = path.resolve(dir, file);
             if (fs.statSync(filePath).isDirectory() &&
-                (config.includeDotFolders || !file.startsWith('.')))
+                (config.includeDotFolders || !file.startsWith('.')) && !config.disableRecursion)
                     findSCSSfiles(filePath); // recursively find SCSS in eligible dir
             else if (file.endsWith('.scss')) // SCSS file found
                 scssFiles.push(filePath); // store it for compilation
