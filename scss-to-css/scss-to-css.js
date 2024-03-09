@@ -18,7 +18,7 @@ const config = {
         /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
     disableSourceMaps: process.argv.some(arg =>
         /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?)$/.test(arg)),
-    disableRecursion: process.argv.some(arg =>
+    noRecursion: process.argv.some(arg =>
         /^--?(?:R|(?:disable|no)-?recursion)$/.test(arg)),
     noMinify: process.argv.some(arg =>
         /^--?(?:M|(?:disable|no)-?minif(?:y|ication))$/.test(arg)),
@@ -79,7 +79,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         files.forEach(file => {
             const filePath = path.resolve(dir, file);
             if (fs.statSync(filePath).isDirectory() &&
-                (config.includeDotFolders || !file.startsWith('.')) && !config.disableRecursion)
+                (config.includeDotFolders || !file.startsWith('.')) && !config.noRecursion)
                     findSCSSfiles(filePath); // recursively find SCSS in eligible dir
             else if (file.endsWith('.scss')) // SCSS file found
                 scssFiles.push(filePath); // store it for compilation
