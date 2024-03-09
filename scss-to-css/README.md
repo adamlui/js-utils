@@ -83,31 +83,31 @@ Info commands:
  -v, --version               Show version number.
 ```
 
-## 📃 Example commands:
+### Example commands:
 
-- Compile all SCSS files in the **current directory** (outputs to `css/`):
+Compile all SCSS files in the **current directory** (outputs to `css/`):
 
-   ```
-   scss-to-css
-   ```
+```
+scss-to-css
+```
 
-- Compile all SCSS files in a **specific directory** (outputs to `path/to/your/directory/css/`):
+Compile all SCSS files in a **specific directory** (outputs to `path/to/your/directory/css/`):
 
-   ```
-   scss-to-css path/to/your/directory
-   ```
+```
+scss-to-css path/to/your/directory
+```
 
-- Compile a **specific file** (outputs to `path/to/your/css/file.min.css`):
+Compile a **specific file** (outputs to `path/to/your/css/file.min.css`):
 
-   ```
-   scss-to-css path/to/your/file.scss
-   ```
+```
+scss-to-css path/to/your/file.scss
+```
 
-- Specify both **input and output** directories (outputs to `output_folder/`):
+Specify both **input and output** directories (outputs to `output_folder/`):
 
-   ```
-   scss-to-css input_folder output_folder
-   ```
+```
+scss-to-css input_folder output_folder
+```
 
 **💡 Note:** Output CSS is minified unless `-M` or `--no-minify` is passed.
 <br><br>
