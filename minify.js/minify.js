@@ -79,13 +79,16 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         printIfNotQuiet(''); // line break before first log
 
         // Build array of minified code
+        const failedJSpaths = [];
         const minifiedJSdata = unminnedJSfiles.map(jsPath => {
-            printIfNotQuiet(`Minifying ${ jsPath }...`);
-            return minify(jsPath);
-        }).filter(file => file && file.code !== undefined); // filter out failed minifications
+            const minifiedResult = minify(jsPath);
+            if (minifiedResult.code === undefined) failedJSpaths.push(jsPath);
+            printIfNotQuiet(`Minifying ${ jsPath }...`
+                + ( minifiedResult.code === undefined ? `${br} FAILED${nc}` : '' ));
+            return minifiedResult;
+        }).filter(file => file.code !== undefined); // filter out failed minifications
 
         // Write array data to files
-        let minifiedCnt = 0;
         minifiedJSdata.forEach(({ code, srcPath }) => {
             const outputDir = path.join(
                 path.dirname(srcPath), // path of file to be minified
@@ -101,14 +104,19 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
             const outputPath = path.join(outputDir, outputFilename);
             if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
             fs.writeFileSync(outputPath, code, 'utf8');
-            minifiedCnt++;
         });
 
         // Print final summary
-        if (minifiedCnt) {
+        if (minifiedJSdata.length > 0) {
             printIfNotQuiet(`\n${bg}Minification complete!${nc}`);
-            printIfNotQuiet(`${ minifiedCnt } file${ minifiedCnt > 1 ? 's' : '' } minified.`);
+            printIfNotQuiet(
+                `${ minifiedJSdata.length } file${ minifiedJSdata.length > 1 ? 's' : '' } minified.`);
         } else printIfNotQuiet(`${by}No unminified JavaScript files processed successfully.${nc}`);
+        const failedCnt = unminnedJSfiles.length - minifiedJSdata.length;
+        if (failedCnt > 0)
+            printIfNotQuiet(`${br + failedCnt} file${ failedCnt > 1 ? 's' : '' } failed to minify:${nc}`);
+            printIfNotQuiet(failedJSpaths.join(', '));
+        return
     }
 }
 
