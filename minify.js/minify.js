@@ -5,6 +5,56 @@ const fs = require('fs'),
       path = require('path'),
       uglifyJS = require('uglify-js');
 
+// Define MAIN functions
+
+function findUnminnedJSfiles(dir, options = { recursive: true, verbose: false }) {
+    const dirFiles = fs.readdirSync(dir), unminnedJSfiles = [];
+    dirFiles.forEach(file => {
+        const filePath = path.resolve(dir, file);
+        if (fs.statSync(filePath).isDirectory() && file != 'node_modules' &&
+            (config.includeDotFolders || !file.startsWith('.')) && options.recursive) {
+                if (options.verbose)
+                    console.info(`Searching for unminified JS files in: ${filePath}...`);
+                unminnedJSfiles.push( // recursively find unminified JS in eligible dir
+                    ...findUnminnedJSfiles(filePath));
+            }
+        else if (/\.js(?<!\.min\.js)$/.test(file) &&
+            (config.includeDotFiles || !file.startsWith('.')))
+                unminnedJSfiles.push(filePath); // store eligible unminified JS file for minification
+    });
+    return unminnedJSfiles;
+}
+
+function minify(input, options = { recursive: true, verbose: true }) {
+    if (typeof input !== 'string')
+        return console.error('minify.js >> ERROR:'
+            + ' First argument must be a string of source code or filepath');
+    if (fs.existsSync(input)) { // minify based on path arg
+        if (input.endsWith('.js')) { // file path passed
+            try { return { code: uglifyJS.minify(fs.readFileSync(input, 'utf8')).code, srcPath: input }; }
+            catch (err) { console.error(err); return null; }
+        } else { // dir path passed
+            const unminnedJSfiles = findUnminnedJSfiles(input, { recursive: options.recursive });
+            const minifiedJSfiles = unminnedJSfiles.map(jsPath => {
+                if (options.verbose) console.info(`Minifying ${ jsPath }...`);
+                try {
+                    const srcCode = fs.readFileSync(jsPath, 'utf8'),
+                          minifiedCode = uglifyJS.minify(srcCode).code,
+                          fileName = path.basename(jsPath, '.js') + '.min.js';
+                    return { code: minifiedCode, filename: fileName, srcPath: jsPath };
+                } catch (err) {
+                    console.error(`${br}Error minifying ${ jsPath }: ${ err.message }${nc}`);
+                    return null;
+                }
+            }).filter(file => file !== null); // filter out failed minifications
+            return minifiedJSfiles;
+        }
+    } else { // minify based on src code arg
+        try { return { code: uglifyJS.minify(input).code, srcPath: input }; }
+        catch (err) { console.error(err); return null; }
+    }
+}
+
 // Init UI colors
 const nc = '\x1b[0m', // no color
       br = '\x1b[1;91m', // bright red
@@ -146,55 +196,3 @@ function printHelp(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
 }
 
 function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
-
-// Define SEARCH function
-
-function findUnminnedJSfiles(dir, options = { recursive: true, verbose: false }) {
-    const dirFiles = fs.readdirSync(dir), unminnedJSfiles = [];
-    dirFiles.forEach(file => {
-        const filePath = path.resolve(dir, file);
-        if (fs.statSync(filePath).isDirectory() && file != 'node_modules' &&
-            (config.includeDotFolders || !file.startsWith('.')) && options.recursive) {
-                if (options.verbose)
-                    console.info(`Searching for unminified JS files in: ${filePath}...`);
-                unminnedJSfiles.push( // recursively find unminified JS in eligible dir
-                    ...findUnminnedJSfiles(filePath));
-            }
-        else if (/\.js(?<!\.min\.js)$/.test(file) &&
-            (config.includeDotFiles || !file.startsWith('.')))
-                unminnedJSfiles.push(filePath); // store eligible unminified JS file for minification
-    });
-    return unminnedJSfiles;
-}
-
-// Define MINIFY function
-
-function minify(input, options = { recursive: true, verbose: true }) {
-    if (typeof input !== 'string')
-        return console.error('minify.js >> ERROR:'
-            + ' First argument must be a string of source code or filepath');
-    if (fs.existsSync(input)) { // minify based on path arg
-        if (input.endsWith('.js')) { // file path passed
-            try { return { code: uglifyJS.minify(fs.readFileSync(input, 'utf8')).code, srcPath: input }; }
-            catch (err) { console.error(err); return null; }
-        } else { // dir path passed
-            const unminnedJSfiles = findUnminnedJSfiles(input, { recursive: options.recursive });
-            const minifiedJSfiles = unminnedJSfiles.map(jsPath => {
-                if (options.verbose) console.info(`Minifying ${ jsPath }...`);
-                try {
-                    const srcCode = fs.readFileSync(jsPath, 'utf8'),
-                          minifiedCode = uglifyJS.minify(srcCode).code,
-                          fileName = path.basename(jsPath, '.js') + '.min.js';
-                    return { code: minifiedCode, filename: fileName, srcPath: jsPath };
-                } catch (err) {
-                    console.error(`${br}Error minifying ${ jsPath }: ${ err.message }${nc}`);
-                    return null;
-                }
-            }).filter(file => file !== null); // filter out failed minifications
-            return minifiedJSfiles;
-        }
-    } else { // minify based on src code arg
-        try { return { code: uglifyJS.minify(input).code, srcPath: input }; }
-        catch (err) { console.error(err); return null; }
-    }
-}
