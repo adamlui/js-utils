@@ -83,7 +83,7 @@ Info commands:
  -v, --version               Show version number.
 ```
 
-### Example commands:
+### Example commands
 
 Compile all SCSS files in the **current directory** (outputs to `css/`):
 
