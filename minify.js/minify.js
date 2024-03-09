@@ -5,6 +5,16 @@ const fs = require('fs'),
       path = require('path'),
       uglifyJS = require('uglify-js');
 
+// Load FLAGS
+const config = require.main !== module ? {} : {
+    dryRun: process.argv.some(arg => /^--?(?:n|dry-?run)$/.test(arg)),
+    includeDotFolders: process.argv.some(arg =>
+        /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
+    includeDotFiles: process.argv.some(arg =>
+        /^--?(?:df|D|(?:include-?)?dot-?files?)$/.test(arg)),
+    quietMode: process.argv.some(arg => /^--?q(?:uiet)?$/.test(arg))
+};
+
 // Define MAIN functions
 
 function findUnminnedJSfiles(dir, options = { recursive: true, verbose: false }) {
@@ -60,16 +70,6 @@ const nc = '\x1b[0m', // no color
       br = '\x1b[1;91m', // bright red
       by = '\x1b[1;33m', // bright yellow
       bg = '\x1b[1;92m'; // bright green
-
-// Load FLAG settings
-const config = { 
-    dryRun: process.argv.some(arg => /^--?(?:n|dry-?run)$/.test(arg)),
-    includeDotFolders: process.argv.some(arg =>
-        /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
-    includeDotFiles: process.argv.some(arg =>
-        /^--?(?:df|D|(?:include-?)?dot-?files?)$/.test(arg)),
-    quietMode: process.argv.some(arg => /^--?q(?:uiet)?$/.test(arg))
-};
 
 // Show HELP screen if -h or --help passed
 if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
