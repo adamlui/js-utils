@@ -150,7 +150,7 @@ console.log(result.code);  // 缩小输出：function add(n,d){return n+d}
 
 如果传递了**文件路径**，则加载文件的代码然后缩小，返回一个像上面一样的对象。
 
-如果传递了 **目录路径**，则会搜索 JavaScript 文件（默认情况下递归），每个文件都会被缩小，然后返回包含 `srcPath` + `code` + `error` 的对象数组：
+如果传递 **目录路径**，则会搜索 JavaScript 文件（默认情况下递归），加载每个代码并缩小，然后返回包含 `srcPath` + `code` + `error` 的对象数组：
 
 ```js
 const recursiveResults = minifyJS.minify('.');

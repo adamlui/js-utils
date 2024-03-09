@@ -150,7 +150,7 @@ console.log(result.code);  // 縮小輸出：function add(n,d){return n+d}
 
 如果傳遞了**檔案路徑**，則載入檔案的程式碼然後縮小，傳回一個像上面一樣的物件。
 
-如果傳遞了 **目錄路徑**，則會搜尋 JavaScript 檔案（預設遞歸），每個檔案都會被縮小，然後傳回包含 `srcPath` + `code` + `error` 的物件陣列：
+如果傳遞 **目錄路徑**，則會搜尋 JavaScript 檔案（預設遞歸），載入每個程式碼並縮小，然後傳回包含 `srcPath` + `code` + `error` 的物件陣列：
 
 ```js
 const recursiveResults = minifyJS.minify('.');

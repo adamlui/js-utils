@@ -151,7 +151,7 @@ console.log(result.code);  // minified output: function add(n,d){return n+d}
 
 If a **file path** is passed, the file's code is loaded then minified, returning an object like above.
 
-If a **directory path** is passed, JavaScript files are searched for (recursively by default), each is minified, then an array of objects containing `srcPath` + `code` + `error` is returned:
+If a **directory path** is passed, JavaScript files are searched for (recursively by default), each one's code is loaded then minified, then an array of objects containing `srcPath` + `code` + `error` is returned:
 
 ```js
 const recursiveResults = minifyJS.minify('.');
