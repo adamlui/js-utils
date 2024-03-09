@@ -17,7 +17,7 @@ const config = require.main !== module ? {} : {
 
 // Define MAIN functions
 
-function findUnminnedJSfiles(dir, options = { recursive: true, verbose: false }) {
+function findJSfiles(dir, options = { recursive: true, verbose: false }) {
     const dirFiles = fs.readdirSync(dir), unminnedJSfiles = [];
     dirFiles.forEach(file => {
         const filePath = path.resolve(dir, file);
@@ -26,7 +26,7 @@ function findUnminnedJSfiles(dir, options = { recursive: true, verbose: false })
                 if (options.verbose)
                     console.info(`Searching for unminified JS files in: ${filePath}...`);
                 unminnedJSfiles.push( // recursively find unminified JS in eligible dir
-                    ...findUnminnedJSfiles(filePath));
+                    ...findJSfiles(filePath));
             }
         else if (/\.js(?<!\.min\.js)$/.test(file) &&
             (config.includeDotFiles || !file.startsWith('.')))
@@ -46,7 +46,7 @@ function minify(input, options = { recursive: true, verbose: true }) {
             if (result.error) console.error(`ERROR: ${ result.error.message }`);
             return { code: result.code, srcPath: input, error: result.error };
         } else { // dir path passed
-            const unminnedJSfiles = findUnminnedJSfiles(input, { recursive: options.recursive });
+            const unminnedJSfiles = findJSfiles(input, { recursive: options.recursive });
             const minifiedJSfiles = unminnedJSfiles.map(jsPath => {
                 if (options.verbose) console.info(`Minifying ${ jsPath }...`);
                 const srcCode = fs.readFileSync(jsPath, 'utf8'),
@@ -65,7 +65,7 @@ function minify(input, options = { recursive: true, verbose: true }) {
 }
 
 // EXPORT functions if script was required
-if (require.main !== module) module.exports = { minify, findUnminnedJSfiles };
+if (require.main !== module) module.exports = { minify, findJSfiles };
 
 else { // run as CLI tool
 
@@ -120,7 +120,7 @@ else { // run as CLI tool
         }
 
         // Recursively find all eligible JavaScript files or arg-passed file
-        const unminnedJSfiles = inputArg.endsWith('.js') ? [inputPath] : findUnminnedJSfiles(inputPath);
+        const unminnedJSfiles = inputArg.endsWith('.js') ? [inputPath] : findJSfiles(inputPath);
 
         if (unminnedJSfiles.length === 0) { // print nothing found
             printIfNotQuiet(`\n${by}No unminified JavaScript files found.${nc}`);
@@ -169,6 +169,7 @@ else { // run as CLI tool
                 printIfNotQuiet(`\n${br + failedCnt} file${ failedCnt > 1 ? 's' : '' } failed to minify:${nc}`);
                 printIfNotQuiet(failedJSpaths.join(', '));
             }
+            return
         }
     }
 
