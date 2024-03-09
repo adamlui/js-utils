@@ -27,8 +27,7 @@ function findJSfiles(dir, options = { recursive: true, verbose: false }) {
                     console.info(`Searching for unminified JS files in: ${filePath}...`);
                 unminnedJSfiles.push( // recursively find unminified JS in eligible dir
                     ...findJSfiles(filePath));
-            }
-        else if (/\.js(?<!\.min\.js)$/.test(file) &&
+        } else if (/\.js(?<!\.min\.js)$/.test(file) &&
             (config.includeDotFiles || !file.startsWith('.')))
                 unminnedJSfiles.push(filePath); // store eligible unminified JS file for minification
     });
@@ -169,7 +168,6 @@ else { // run as CLI tool
                 printIfNotQuiet(`\n${br + failedCnt} file${ failedCnt > 1 ? 's' : '' } failed to minify:${nc}`);
                 printIfNotQuiet(failedJSpaths.join(', '));
             }
-            return
         }
     }
 
