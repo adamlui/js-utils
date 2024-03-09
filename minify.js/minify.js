@@ -25,8 +25,7 @@ function findJSfiles(dir, options = { recursive: true, verbose: false }) {
         const filePath = path.resolve(dir, file);
         if (fs.statSync(filePath).isDirectory() && file != 'node_modules' &&
             (config.includeDotFolders || !file.startsWith('.')) && options.recursive) {
-                if (options.verbose)
-                    console.info(`Searching for unminified JS files in: ${filePath}...`);
+                if (options.verbose) console.info(`Searching for unminified JS files in: ${filePath}...`);
                 jsFiles.push( // recursively find unminified JS in eligible dir
                     ...findJSfiles(filePath));
         } else if (/\.js(?<!\.min\.js)$/.test(file) &&
