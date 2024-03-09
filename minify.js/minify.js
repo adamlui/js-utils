@@ -41,6 +41,7 @@ function minify(input, options = { recursive: true, verbose: true }) {
             + ' First argument must be a string of source code or filepath');
     if (fs.existsSync(input)) { // minify based on path arg
         if (input.endsWith('.js')) { // file path passed
+            if (options.verbose) console.info(`Minifying ${ input }...`);
             const result = uglifyJS.minify(fs.readFileSync(input, 'utf8'));
             if (result.error) console.error(`ERROR: ${ result.error.message }`);
             return { code: result.code, srcPath: input, error: result.error };
@@ -56,6 +57,7 @@ function minify(input, options = { recursive: true, verbose: true }) {
             return minifiedJSfiles;
         }
     } else { // minify based on src code arg
+        if (options.verbose) console.info('Minifying passed source code...');
         const result = uglifyJS.minify(input);
         if (result.error) console.error(`ERROR: ${ result.error.message }`);
         return { code: result.code, srcPath: input, error: result.error };
