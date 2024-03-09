@@ -135,10 +135,8 @@ else { // run as CLI tool
             // Build array of minified code
             const failedJSpaths = [];
             const minifiedJSdata = unminnedJSfiles.map(jsPath => {
-                const result = minify(jsPath);
+                const result = minify(jsPath, { verbose: !config.quietMode });
                 if (result.error) failedJSpaths.push(jsPath);
-                printIfNotQuiet(`Minifying ${ jsPath }...`
-                    + ( result.code === undefined ? `${br} FAILED${nc}` : '' ));
                 return result;
             }).filter(result => !result.error); // filter out failed minifications
 
