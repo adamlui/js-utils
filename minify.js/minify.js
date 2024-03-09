@@ -46,14 +46,14 @@ function minify(input, options = { recursive: true, verbose: true }) {
             return { code: result.code, srcPath: input, error: result.error };
         } else { // dir path passed
             const unminnedJSfiles = findJSfiles(input, { recursive: options.recursive });
-            const minifiedJSfiles = unminnedJSfiles.map(jsPath => {
+            const minifiedJSdata = unminnedJSfiles.map(jsPath => {
                 if (options.verbose) console.info(`Minifying ${ jsPath }...`);
                 const srcCode = fs.readFileSync(jsPath, 'utf8'),
-                      result = uglifyJS.minify(srcCode).code;
+                      result = uglifyJS.minify(srcCode);
                 if (result.error) console.error(`ERROR: ${ result.error.message }`);
                 return { code: result.code, srcPath: jsPath, error: result.error };
-            }).filter(file => file !== null); // filter out failed minifications
-            return minifiedJSfiles;
+            }).filter(result => !result.error); // filter out failed minifications
+            return minifiedJSdata;
         }
     } else { // minify based on src code arg
         if (options.verbose) console.info('Minifying passed source code...');
