@@ -113,10 +113,10 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
                 `${ minifiedJSdata.length } file${ minifiedJSdata.length > 1 ? 's' : '' } minified.`);
         } else printIfNotQuiet(`${by}No unminified JavaScript files processed successfully.${nc}`);
         const failedCnt = unminnedJSfiles.length - minifiedJSdata.length;
-        if (failedCnt > 0)
-            printIfNotQuiet(`${br + failedCnt} file${ failedCnt > 1 ? 's' : '' } failed to minify:${nc}`);
+        if (failedCnt > 0) {
+            printIfNotQuiet(`\n${br + failedCnt} file${ failedCnt > 1 ? 's' : '' } failed to minify:${nc}`);
             printIfNotQuiet(failedJSpaths.join(', '));
-        return
+        }
     }
 }
 
