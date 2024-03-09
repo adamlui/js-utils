@@ -143,7 +143,7 @@ function findUnminnedJSfiles(dir, options = { recursive: true }) {
     dirFiles.forEach(file => {
         const filePath = path.resolve(dir, file);
         if (fs.statSync(filePath).isDirectory() && file != 'node_modules' &&
-            (config.includeDotFolders || !file.startsWith('.')))
+            (config.includeDotFolders || !file.startsWith('.')) && options.recursive)
                 unminnedJSfiles.push( // recursively find unminified JS in eligible dir
                     ...findUnminnedJSfiles(filePath));
         else if (/\.js(?<!\.min\.js)$/.test(file) &&
