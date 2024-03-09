@@ -53,7 +53,7 @@ function minify(input, options = { recursive: true, verbose: true }) {
                       minifyResult = uglifyJS.minify(srcCode);
                 if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
                 return { code: minifyResult.code, srcPath: jsPath, error: minifyResult.error };
-            }).filter(minifyResult => !minifyResult.error); // filter out failed minifications
+            }).filter(data => !data.error); // filter out failed minifications
             return minifiedJSdata;
         }
     } else { // minify based on src code arg
