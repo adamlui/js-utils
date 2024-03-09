@@ -53,7 +53,7 @@ function minify(input, options = { recursive: true, verbose: true }) {
                           fileName = path.basename(jsPath, '.js') + '.min.js';
                     return { code: minifiedCode, filename: fileName, srcPath: jsPath };
                 } catch (err) {
-                    console.error(`${br}Error minifying ${ jsPath }: ${ err.message }${nc}`);
+                    console.error(`Error minifying ${ jsPath }: ${ err.message }`);
                     return null;
                 }
             }).filter(file => file !== null); // filter out failed minifications
