@@ -131,8 +131,8 @@ const minifyJS = require('@adamlui/minify.js');
 选项是布尔值（默认设置为 `true`）作为对象属性传递，例如 `minifyJS.minify(input, { option: true })`:
 
 ```
- recursive                   如果传递目录路径，则递归搜索嵌套文件。
- verbose                     在控制台/终端中显示日志记录。
+ recursive     如果传递目录路径，则递归搜索嵌套文件。
+ verbose       在控制台/终端中显示日志记录。
 ```
 
 ### minify(input)

@@ -132,8 +132,8 @@ There is a single high level function, `minify(input, options)`, which will perf
 Options are boolean (set to `true` by default) passed as object properties e.g. `minifyJS.minify(input, { option: true })`:
 
 ```
- recursive                   Recursively search for nested files if dir path passed.
- verbose                     Show logging in console/terminal.
+ recursive     Recursively search for nested files if dir path passed.
+ verbose       Show logging in console/terminal.
 ```
 
 ### minify(input)

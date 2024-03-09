@@ -131,8 +131,8 @@ const minifyJS = require('@adamlui/minify.js');
 選項是布林值（預設為 `true`）作為物件屬性傳遞，例如 `minifyJS.minify(input, { option: true })`:
 
 ```
- recursive                   如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。
- verbose                     在控制台/終端機中顯示日誌記錄。
+ recursive     如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。
+ verbose       在控制台/終端機中顯示日誌記錄。
 ```
 
 ### minify(input)
