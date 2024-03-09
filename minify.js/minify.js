@@ -42,25 +42,25 @@ function minify(input, options = { recursive: true, verbose: true }) {
     if (fs.existsSync(input)) { // minify based on path arg
         if (input.endsWith('.js')) { // file path passed
             if (options.verbose) console.info(`Minifying ${ input }...`);
-            const result = uglifyJS.minify(fs.readFileSync(input, 'utf8'));
-            if (result.error) console.error(`ERROR: ${ result.error.message }`);
-            return { code: result.code, srcPath: input, error: result.error };
+            const minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'));
+            if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
+            return { code: minifyResult.code, srcPath: input, error: minifyResult.error };
         } else { // dir path passed
             const unminnedJSfiles = findJSfiles(input, { recursive: options.recursive });
             const minifiedJSdata = unminnedJSfiles.map(jsPath => {
                 if (options.verbose) console.info(`Minifying ${ jsPath }...`);
                 const srcCode = fs.readFileSync(jsPath, 'utf8'),
-                      result = uglifyJS.minify(srcCode);
-                if (result.error) console.error(`ERROR: ${ result.error.message }`);
-                return { code: result.code, srcPath: jsPath, error: result.error };
-            }).filter(result => !result.error); // filter out failed minifications
+                      minifyResult = uglifyJS.minify(srcCode);
+                if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
+                return { code: minifyResult.code, srcPath: jsPath, error: minifyResult.error };
+            }).filter(minifyResult => !minifyResult.error); // filter out failed minifications
             return minifiedJSdata;
         }
     } else { // minify based on src code arg
         if (options.verbose) console.info('Minifying passed source code...');
-        const result = uglifyJS.minify(input);
-        if (result.error) console.error(`ERROR: ${ result.error.message }`);
-        return { code: result.code, srcPath: input, error: result.error };
+        const minifyResult = uglifyJS.minify(input);
+        if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
+        return { code: minifyResult.code, srcPath: input, error: minifyResult.error };
     }
 }
 
@@ -136,10 +136,10 @@ else { // run as CLI tool
             // Build array of minified code
             const failedJSpaths = [];
             const minifiedJSdata = unminnedJSfiles.map(jsPath => {
-                const result = minify(jsPath, { verbose: !config.quietMode });
-                if (result.error) failedJSpaths.push(jsPath);
-                return result;
-            }).filter(result => !result.error); // filter out failed minifications
+                const minifyResult = minify(jsPath, { verbose: !config.quietMode });
+                if (minifyResult.error) failedJSpaths.push(jsPath);
+                return minifyResult;
+            }).filter(minifyResult => !minifyResult.error); // filter out failed minifications
 
             // Write array data to files
             minifiedJSdata.forEach(({ code, srcPath }) => {
