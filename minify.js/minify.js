@@ -46,15 +46,14 @@ function minify(input, options = { recursive: true, verbose: true }) {
             if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
             return { code: minifyResult.code, srcPath: input, error: minifyResult.error };
         } else { // dir path passed
-            const unminnedJSfiles = findJSfiles(input, { recursive: options.recursive });
-            const minifiedJSdata = unminnedJSfiles.map(jsPath => {
-                if (options.verbose) console.info(`Minifying ${ jsPath }...`);
-                const srcCode = fs.readFileSync(jsPath, 'utf8'),
-                      minifyResult = uglifyJS.minify(srcCode);
-                if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
-                return { code: minifyResult.code, srcPath: jsPath, error: minifyResult.error };
-            }).filter(data => !data.error); // filter out failed minifications
-            return minifiedJSdata;
+            return findJSfiles(input, { recursive: options.recursive })
+                .map(jsPath => { // minify found JS files
+                    if (options.verbose) console.info(`Minifying ${ jsPath }...`);
+                    const srcCode = fs.readFileSync(jsPath, 'utf8'),
+                          minifyResult = uglifyJS.minify(srcCode);
+                    if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
+                    return { code: minifyResult.code, srcPath: jsPath, error: minifyResult.error };
+                }).filter(data => !data.error); // filter out failed minifications
         }
     } else { // minify based on src code arg
         if (options.verbose) console.info('Minifying passed source code...');
