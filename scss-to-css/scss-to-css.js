@@ -25,6 +25,23 @@ const config = {
     quietMode: process.argv.some(arg => /^--?q(?:uiet)?$/.test(arg))
 };
 
+// Define MAIN functions
+
+function findSCSSfiles(dir, options = { recursive: true, verbose: false }) {
+    const files = fs.readdirSync(dir), scssFiles = [];
+    files.forEach(file => {
+        const filePath = path.resolve(dir, file);
+        if (fs.statSync(filePath).isDirectory() && options.recursive &&
+            (config.includeDotFolders || !file.startsWith('.'))) {
+                if (options.verbose) console.info(`Searching for SCSS files in: ${filePath}...`);
+                scssFiles.push( // recursively find SCSS in eligible dir
+                    ...findSCSSfiles(filePath));
+        } else if (file.endsWith('.scss')) // SCSS file found
+            scssFiles.push(filePath); // store it for compilation
+    });
+    return scssFiles;
+}
+
 // Show HELP screen if -h or --help passed
 if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     printHelp(`\n${by}scss-to-css [inputPath] [outputPath] [options]${nc}`);
@@ -70,20 +87,9 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         process.exit(1);
     }
 
-    // Find all eligible SCSS files or arg-passed file
-    const scssFiles = [];
-    if (inputArg.endsWith('.scss')) scssFiles.push(inputPath);
-    else (function findSCSSfiles(dir) {
-        const files = fs.readdirSync(dir);
-        files.forEach(file => {
-            const filePath = path.resolve(dir, file);
-            if (fs.statSync(filePath).isDirectory() &&
-                (config.includeDotFolders || !file.startsWith('.')) && !config.noRecursion)
-                    findSCSSfiles(filePath); // recursively find SCSS in eligible dir
-            else if (file.endsWith('.scss')) // SCSS file found
-                scssFiles.push(filePath); // store it for compilation
-        });
-    })(inputPath);
+    // Find all eligible JavaScript files or arg-passed file
+    const scssFiles = inputArg.endsWith('.scss') ? [inputPath]
+        : findSCSSfiles(inputPath, { recursive: !config.noRecursion });
 
     if (scssFiles.length === 0) { // print nothing found
         printIfNotQuiet(`\n${by}No SCSS files found.${nc}`);
