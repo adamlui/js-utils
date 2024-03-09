@@ -149,14 +149,17 @@ function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
 
 // Define SEARCH function
 
-function findUnminnedJSfiles(dir, options = { recursive: true }) {
+function findUnminnedJSfiles(dir, options = { recursive: true, verbose: false }) {
     const dirFiles = fs.readdirSync(dir), unminnedJSfiles = [];
     dirFiles.forEach(file => {
         const filePath = path.resolve(dir, file);
         if (fs.statSync(filePath).isDirectory() && file != 'node_modules' &&
-            (config.includeDotFolders || !file.startsWith('.')) && options.recursive)
+            (config.includeDotFolders || !file.startsWith('.')) && options.recursive) {
+                if (options.verbose)
+                    console.info(`Searching for unminified JS files in: ${filePath}...`);
                 unminnedJSfiles.push( // recursively find unminified JS in eligible dir
                     ...findUnminnedJSfiles(filePath));
+            }
         else if (/\.js(?<!\.min\.js)$/.test(file) &&
             (config.includeDotFiles || !file.startsWith('.')))
                 unminnedJSfiles.push(filePath); // store eligible unminified JS file for minification
@@ -166,7 +169,7 @@ function findUnminnedJSfiles(dir, options = { recursive: true }) {
 
 // Define MINIFY function
 
-function minify(input, options = { recursive: true }) {
+function minify(input, options = { recursive: true, verbose: true }) {
     if (typeof input !== 'string')
         return console.error('minify.js >> ERROR:'
             + ' First argument must be a string of source code or filepath');
@@ -177,7 +180,7 @@ function minify(input, options = { recursive: true }) {
         } else { // dir path passed
             const unminnedJSfiles = findUnminnedJSfiles(input, { recursive: options.recursive });
             const minifiedJSfiles = unminnedJSfiles.map(jsPath => {
-                printIfNotQuiet(`Minifying ${ jsPath }...`);
+                if (options.verbose) console.info(`Minifying ${ jsPath }...`);
                 try {
                     const srcCode = fs.readFileSync(jsPath, 'utf8'),
                           minifiedCode = uglifyJS.minify(srcCode).code,
