@@ -40,7 +40,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     printHelp(' -n, --dry-run                Don\'t actually compile the file(s),'
         + ' just show if they will be processed.');
     printHelp(' -d, --include-dotfolders     Include dotfolders in file search.');
-    printHelp(' -S, --disable-source-maps    Prevent source maps from being generated.');
+    printHelp(' -S, --no-source-maps         Prevent source maps from being generated.');
     printHelp(' -M, --no-minify              Disable minification of output CSS.');
     printHelp(' -R, --no-recursion           Disable recursive file searching.');
     printHelp(' -q, --quiet                  Suppress all logging except errors.');
