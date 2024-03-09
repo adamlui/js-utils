@@ -138,8 +138,8 @@ function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
 
 // Define SEARCH function
 
-function findUnminnedJSfiles(dir) {
-    const dirFiles = fs.readdirSync(dir), unminnedJSfiles = []
+function findUnminnedJSfiles(dir, options = { recursive: true }) {
+    const dirFiles = fs.readdirSync(dir), unminnedJSfiles = [];
     dirFiles.forEach(file => {
         const filePath = path.resolve(dir, file);
         if (fs.statSync(filePath).isDirectory() && file != 'node_modules' &&
