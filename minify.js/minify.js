@@ -41,26 +41,24 @@ function minify(input, options = { recursive: true, verbose: true }) {
             + ' First argument must be a string of source code or filepath');
     if (fs.existsSync(input)) { // minify based on path arg
         if (input.endsWith('.js')) { // file path passed
-            try { return { code: uglifyJS.minify(fs.readFileSync(input, 'utf8')).code, srcPath: input }; }
-            catch (err) { console.error(err); return null; }
+            const result = uglifyJS.minify(fs.readFileSync(input, 'utf8'));
+            if (result.error) console.error(`ERROR: ${ result.error.message }`);
+            return { code: result.code, srcPath: input, error: result.error };
         } else { // dir path passed
             const unminnedJSfiles = findUnminnedJSfiles(input, { recursive: options.recursive });
             const minifiedJSfiles = unminnedJSfiles.map(jsPath => {
                 if (options.verbose) console.info(`Minifying ${ jsPath }...`);
-                try {
-                    const srcCode = fs.readFileSync(jsPath, 'utf8'),
-                          minifiedCode = uglifyJS.minify(srcCode).code;
-                    return { code: minifiedCode, srcPath: jsPath };
-                } catch (err) {
-                    console.error(`Error minifying ${ jsPath }: ${ err.message }`);
-                    return null;
-                }
+                const srcCode = fs.readFileSync(jsPath, 'utf8'),
+                      result = uglifyJS.minify(srcCode).code;
+                if (result.error) console.error(`ERROR: ${ result.error.message }`);
+                return { code: result.code, srcPath: jsPath, error: result.error };
             }).filter(file => file !== null); // filter out failed minifications
             return minifiedJSfiles;
         }
     } else { // minify based on src code arg
-        try { return { code: uglifyJS.minify(input).code, srcPath: input }; }
-        catch (err) { console.error(err); return null; }
+        const result = uglifyJS.minify(input);
+        if (result.error) console.error(`ERROR: ${ result.error.message }`);
+        return { code: result.code, srcPath: input, error: result.error };
     }
 }
 
