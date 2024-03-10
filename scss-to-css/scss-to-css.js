@@ -52,14 +52,14 @@ function compile(inputPath, options = { minify: true, srcMaps: true, recursive: 
             const compileResult = sass.compile(inputPath, {
                 style: options.minify ? 'compressed' : 'expanded',
                 sourceMap: options.srcMaps });
-            return { code: compileResult.css, srcMap: compileResult.souceMap, srcPath: inputPath };
+            return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: inputPath };
         } else { // dir path passed
             return findSCSSfiles(inputPath, { recursive: options.recursive })
                 .map(scssPath => { // compile found SCSS files
                     if (options.verbose) console.info(`Compiling ${ scssPath }...`);
                     const compileResult = sass.compile(scssPath, {
                         style: options.minify ? 'compressed' : 'expanded', sourceMap: options.srcMaps });
-                    return { code: compileResult.css, srcMap: compileResult.souceMap, srcPath: scssPath };
+                    return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: scssPath };
                 }).filter(data => data && data.code !== undefined); // filter out failed compilations
         }
     } else return console.error('First argument must be an existing file or directory.'
