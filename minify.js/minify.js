@@ -20,25 +20,25 @@ const config = {
 // Define MAIN functions
 
 function findJSfiles(dir, options = {}) {
-    const defaultOptions = { recursive: true, verbose: false };
-    options = { ...defaultOptions, ...options }; 
+    const defaultOptions = { recursive: true, verbose: false, dotFolders: false, dotFiles: false };
+    options = { ...defaultOptions, ...options };
     const dirFiles = fs.readdirSync(dir), jsFiles = [];
     dirFiles.forEach(file => {
         const filePath = path.resolve(dir, file);
         if (fs.statSync(filePath).isDirectory() && file != 'node_modules' &&
-            (config.includeDotFolders || !file.startsWith('.')) && options.recursive) {
+            (options.dotFolders || !file.startsWith('.')) && options.recursive) {
                 if (options.verbose) console.info(`Searching for unminified JS files in: ${filePath}...`);
                 jsFiles.push( // recursively find unminified JS in eligible dir
                     ...findJSfiles(filePath));
         } else if (/\.js(?<!\.min\.js)$/.test(file) &&
-            (config.includeDotFiles || !file.startsWith('.')))
+            (options.dotFiles || !file.startsWith('.')))
                 jsFiles.push(filePath); // store eligible unminified JS file for minification
     });
     return jsFiles;
 }
 
 function minify(input, options = {}) {
-    const defaultOptions = { recursive: true, verbose: true };
+    const defaultOptions = { recursive: true, verbose: true, dotFolders: false, dotFiles: false };
     options = { ...defaultOptions, ...options };
     if (typeof input !== 'string')
         return console.error('ERROR:'
@@ -50,7 +50,8 @@ function minify(input, options = {}) {
             if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
             return { code: minifyResult.code, srcPath: input, error: minifyResult.error };
         } else { // dir path passed
-            return findJSfiles(input, { recursive: options.recursive })
+            return findJSfiles(input, { recursive: options.recursive,
+                                        dotFolders: options.dotFolders, dotFiles: options.dotFiles })
                 .map(jsPath => { // minify found JS files
                     if (options.verbose) console.info(`Minifying ${ jsPath }...`);
                     const srcCode = fs.readFileSync(jsPath, 'utf8'),
