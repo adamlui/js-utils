@@ -89,7 +89,7 @@ minify-js [input_path] [output_path]
  -R, --no-recursion          禁用遞歸文件搜尋。
  -q, --quiet                 禁止除錯誤之外的所有日誌記錄。
 
-Info commands:
+訊息命令：
  -h, --help                  顯示幫助畫面。
  -v, --version               顯示版本號。
 ```

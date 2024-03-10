@@ -89,7 +89,7 @@ minify-js [input_path] [output_path]
  -R, --no-recursion          आवर्ती फाइल शोध अक्षम करा.
  -q, --quiet                 त्रुटी वगळता सर्व लॉगिंग दाबा.
 
-Info commands:
+माहिती आदेश:
  -h, --help                  मदत स्क्रीन प्रदर्शित करा.
  -v, --version               आवृत्ती क्रमांक दर्शवा.
 ```
