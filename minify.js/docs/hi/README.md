@@ -7,7 +7,8 @@
         &nbsp;हिंदी |
         <a href="https://github.com/adamlui/js-utils/tree/main/minify.js#readme">English</a> |
         <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/zh-cn#readme">简体中文</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/zh-tw#readme">繁體中文</a>
+        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/zh-tw#readme">繁體中文</a> |
+        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/bn#readme">বাংলা</a>
     </h6>
 </div>
 
