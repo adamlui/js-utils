@@ -172,7 +172,6 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
                 + ` failed to compile:${nc}`);
             printIfNotQuiet(failedSCSSpaths.join(', '));
         }
-        return
     }
 }
 
