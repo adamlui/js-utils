@@ -5,12 +5,6 @@ const fs = require('fs'),
       path = require('path'),
       sass = require('sass');
 
-// Init UI colors
-const nc = '\x1b[0m', // no color
-      br = '\x1b[1;91m', // bright red
-      by = '\x1b[1;33m', // bright yellow
-      bg = '\x1b[1;92m'; // bright green
-
 // Define MAIN functions
 
 function findSCSSfiles(dir, options = {}) {
@@ -63,6 +57,12 @@ function compile(inputPath, options = {}) {
 if (require.main !== module) module.exports = { compile, findSCSSfiles };
 
 else { // run as CLI tool
+
+    // Init UI colors
+    const nc = '\x1b[0m', // no color
+          br = '\x1b[1;91m', // bright red
+          by = '\x1b[1;33m', // bright yellow
+          bg = '\x1b[1;92m'; // bright green
 
     // Load FLAG settings
     const config = { 
