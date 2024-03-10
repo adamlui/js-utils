@@ -50,8 +50,7 @@ function compile(inputPath, options = { minify: true, srcMaps: true, recursive: 
         if (inputPath.endsWith('.scss')) { // file path passed
             if (options.verbose) console.info(`Compiling ${ inputPath }...`);
             const compileResult = sass.compile(inputPath, {
-                style: options.minify ? 'compressed' : 'expanded',
-                sourceMap: options.srcMaps });
+                style: options.minify ? 'compressed' : 'expanded', sourceMap: options.srcMaps });
             return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: inputPath };
         } else { // dir path passed
             return findSCSSfiles(inputPath, { recursive: options.recursive })
