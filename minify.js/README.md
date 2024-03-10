@@ -121,7 +121,7 @@ Info commands:
  -v, --version               Show version number.
 ```
 
-## 🔌 API Reference
+## 🔌 API usage
 
 You can load **minify.js** in your app like this:
 

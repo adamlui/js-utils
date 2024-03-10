@@ -120,7 +120,7 @@ minify-js input_folder output_folder
  -v, --version               显示版本号。
 ```
 
-## 🔌 API 参考
+## 🔌 API 使用
 
 您可以像这样在应用程序中加载 **minify.js**：
 
