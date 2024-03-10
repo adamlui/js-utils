@@ -16,7 +16,7 @@ const config = {
     dryRun: process.argv.some(arg => /^--?(?:n|dry-?run)$/.test(arg)),
     includeDotFolders: process.argv.some(arg =>
         /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
-    disableSourceMaps: process.argv.some(arg =>
+    noSourceMaps: process.argv.some(arg =>
         /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?)$/.test(arg)),
     noRecursion: process.argv.some(arg =>
         /^--?(?:R|(?:disable|no)-?recursion)$/.test(arg)),
@@ -143,10 +143,10 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
                 const outputPath = path.join(outputDir, outputFilename),
                       compileResult = sass.compile(scssPath, {
                           style: config.noMinify ? 'expanded' : 'compressed',
-                          sourceMap: !config.disableSourceMaps });
+                          sourceMap: !config.noSourceMaps });
                 if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
                 fs.writeFileSync(outputPath, compileResult.css, 'utf8'); cssGenCnt++;
-                if (!config.disableSourceMaps) {
+                if (!config.noSourceMaps) {
                     fs.writeFileSync(outputPath + '.map', JSON.stringify(compileResult.sourceMap), 'utf8');
                     srcMapGenCnt++;
                 }
