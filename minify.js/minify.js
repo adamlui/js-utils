@@ -6,7 +6,7 @@ const fs = require('fs'),
       uglifyJS = require('uglify-js');
 
 // Load FLAGS
-const config = require.main !== module ? {} : {
+const config = {
     dryRun: process.argv.some(arg => /^--?(?:n|dry-?run)$/.test(arg)),
     includeDotFolders: process.argv.some(arg =>
         /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
