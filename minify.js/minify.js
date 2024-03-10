@@ -38,7 +38,7 @@ function findJSfiles(dir, options = { recursive: true, verbose: false }) {
 function minify(input, options = { recursive: true, verbose: true }) {
     if (typeof input !== 'string')
         return console.error('ERROR:'
-            + ' First argument must be a string of source code or filepath');
+            + ' First argument must be a string of source code or file/folder path.');
     if (fs.existsSync(input)) { // minify based on path arg
         if (input.endsWith('.js')) { // file path passed
             if (options.verbose) console.info(`Minifying ${ input }...`);
