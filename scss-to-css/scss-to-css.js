@@ -25,7 +25,7 @@ function findSCSSfiles(dir, options = {}) {
 }
 
 function compile(inputPath, options = {}) {
-    const defaultOptions = { minify: true, srcMaps: true, recursive: true, verbose: true, dotFolders: false };
+    const defaultOptions = { minify: true, sourceMaps: true, recursive: true, verbose: true, dotFolders: false };
     options = { ...defaultOptions, ...options };
     if (typeof inputPath !== 'string')
         return console.error('ERROR:'
@@ -35,7 +35,7 @@ function compile(inputPath, options = {}) {
             if (options.verbose) console.info(`Compiling ${ inputPath }...`);
             try { // to compile file passed
                 const compileResult = sass.compile(inputPath, {
-                    style: options.minify ? 'compressed' : 'expanded', sourceMap: options.srcMaps });
+                    style: options.minify ? 'compressed' : 'expanded', sourceMap: options.sourceMaps });
                 return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: inputPath };
             } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return { error: err }; }
         } else { // dir path passed
@@ -44,7 +44,7 @@ function compile(inputPath, options = {}) {
                     if (options.verbose) console.info(`Compiling ${ scssPath }...`); 
                     try { // to compile found file
                         const compileResult = sass.compile(scssPath, {
-                            style: options.minify ? 'compressed' : 'expanded', sourceMap: options.srcMaps });
+                            style: options.minify ? 'compressed' : 'expanded', sourceMap: options.sourceMaps });
                         return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: scssPath };
                     } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return { error: err }; }
                 }).filter(data => !data.error ); // filter out failed compilations
@@ -141,7 +141,7 @@ else { // run as CLI tool
             const failedSCSSpaths = [];
             const cssData = scssFiles.map(scssPath => {
                 const compileResult = compile(scssPath, {
-                    minify: !config.noMinify, srcMaps: !config.noSourceMaps, verbose: !config.quietMode });
+                    minify: !config.noMinify, sourceMaps: !config.noSourceMaps, verbose: !config.quietMode });
                 if (compileResult.error) failedSCSSpaths.push(scssPath);
                 return compileResult;
             }).filter(data => !data.error ); // filter out failed compilations
