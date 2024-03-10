@@ -28,13 +28,13 @@ const config = {
 // Define MAIN functions
 
 function findSCSSfiles(dir, options = {}) {
-    const defaultOptions = { recursive: true, verbose: false };
+    const defaultOptions = { recursive: true, verbose: false, dotFolders: false };
     options = { ...defaultOptions, ...options };        
     const dirFiles = fs.readdirSync(dir), scssFiles = [];
     dirFiles.forEach(file => {
         const filePath = path.resolve(dir, file);
         if (fs.statSync(filePath).isDirectory() && options.recursive &&
-            (config.includeDotFolders || !file.startsWith('.'))) {
+            (options.dotFolders || !file.startsWith('.'))) {
                 if (options.verbose) console.info(`Searching for SCSS files in: ${filePath}...`);
                 scssFiles.push( // recursively find SCSS in eligible dir
                     ...findSCSSfiles(filePath));
@@ -45,7 +45,7 @@ function findSCSSfiles(dir, options = {}) {
 }
 
 function compile(inputPath, options = {}) {
-    const defaultOptions = { minify: true, srcMaps: true, recursive: true, verbose: true };
+    const defaultOptions = { minify: true, srcMaps: true, recursive: true, verbose: true, dotFolders: false };
     options = { ...defaultOptions, ...options };
     if (typeof inputPath !== 'string')
         return console.error('ERROR:'
@@ -59,7 +59,7 @@ function compile(inputPath, options = {}) {
                 return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: inputPath };
             } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return { error: err }; }
         } else { // dir path passed
-            return findSCSSfiles(inputPath, { recursive: options.recursive })
+            return findSCSSfiles(inputPath, { recursive: options.recursive, dotFolders: options.dotFolders })
                 .map(scssPath => { // compile found SCSS files
                     if (options.verbose) console.info(`Compiling ${ scssPath }...`); 
                     try { // to compile found file
