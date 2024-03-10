@@ -42,6 +42,30 @@ function findSCSSfiles(dir, options = { recursive: true, verbose: false }) {
     return scssFiles;
 }
 
+function compile(inputPath, options = { minify: true, srcMaps: true, recursive: true, verbose: true }) {
+    if (typeof inputPath !== 'string')
+        return console.error('ERROR:'
+            + ' First argument must be a string representing a file/folder path.');
+    if (fs.existsSync(inputPath)) { // compile based on path arg
+        if (inputPath.endsWith('.scss')) { // file path passed
+            if (options.verbose) console.info(`Compiling ${ inputPath }...`);
+            const compileResult = sass.compile(inputPath, {
+                style: options.minify ? 'compressed' : 'expanded',
+                sourceMap: options.srcMaps });
+            return { code: compileResult.css, srcMap: compileResult.souceMap, srcPath: inputPath };
+        } else { // dir path passed
+            return findSCSSfiles(inputPath, { recursive: options.recursive })
+                .map(scssPath => { // compile found SCSS files
+                    if (options.verbose) console.info(`Compiling ${ scssPath }...`);
+                    const compileResult = sass.compile(scssPath, {
+                        style: options.minify ? 'compressed' : 'expanded', sourceMap: options.srcMaps });
+                    return { code: compileResult.css, srcMap: compileResult.souceMap, srcPath: scssPath };
+                }).filter(data => data && data.code !== undefined); // filter out failed compilations
+        }
+    } else return console.error('First argument must be an existing file or directory.'
+        + `\n'${ inputPath }' does not exist.`);
+}
+
 // Show HELP screen if -h or --help passed
 if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
     printHelp(`\n${by}scss-to-css [inputPath] [outputPath] [options]${nc}`);
