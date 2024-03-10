@@ -32,8 +32,6 @@ The basic **global command** is:
 scss-to-css
 ```
 
-**💡 Note:** Pass `-n` or `--dry-run` to only see what files will be processed.
-
 Sample output:
 
 <img src="https://github.com/adamlui/js-utils/blob/main/scss-to-css/media/images/sample-output.png">
