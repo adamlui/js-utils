@@ -53,7 +53,7 @@ function compile(inputPath, options = { minify: true, srcMaps: true, recursive: 
                 const compileResult = sass.compile(inputPath, {
                     style: options.minify ? 'compressed' : 'expanded', sourceMap: options.srcMaps });
                 return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: inputPath };
-            } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return null }
+            } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return null; }
         } else { // dir path passed
             return findSCSSfiles(inputPath, { recursive: options.recursive })
                 .map(scssPath => { // compile found SCSS files
@@ -62,8 +62,8 @@ function compile(inputPath, options = { minify: true, srcMaps: true, recursive: 
                         const compileResult = sass.compile(scssPath, {
                             style: options.minify ? 'compressed' : 'expanded', sourceMap: options.srcMaps });
                         return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: scssPath };
-                    } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return null }
-                }).filter(data => data && data.code !== undefined); // filter out failed compilations
+                    } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return null; }
+                }).filter(data => data); // filter out failed compilations
         }
     } else return console.error('First argument must be an existing file or directory.'
         + `\n'${ inputPath }' does not exist.`);
@@ -133,7 +133,7 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
             const compileResult = compile(scssPath, {
                 minify: !config.noMinify, srcMaps: !config.noSourceMaps, verbose: !config.quietMode });
             return compileResult;
-        }).filter(data => data && data.code !== undefined); // filter out failed compilations
+        }).filter(data => data); // filter out failed compilations
 
         // Write array data to files
         let cssGenCnt = 0, srcMapGenCnt = 0;
