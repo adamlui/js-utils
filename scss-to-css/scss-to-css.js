@@ -11,20 +11,6 @@ const nc = '\x1b[0m', // no color
       by = '\x1b[1;33m', // bright yellow
       bg = '\x1b[1;92m'; // bright green
 
-// Load FLAG settings
-const config = { 
-    dryRun: process.argv.some(arg => /^--?(?:n|dry-?run)$/.test(arg)),
-    includeDotFolders: process.argv.some(arg =>
-        /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
-    noSourceMaps: process.argv.some(arg =>
-        /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?)$/.test(arg)),
-    noRecursion: process.argv.some(arg =>
-        /^--?(?:R|(?:disable|no)-?recursion)$/.test(arg)),
-    noMinify: process.argv.some(arg =>
-        /^--?(?:M|(?:disable|no)-?minif(?:y|ication))$/.test(arg)),
-    quietMode: process.argv.some(arg => /^--?q(?:uiet)?$/.test(arg))
-};
-
 // Define MAIN functions
 
 function findSCSSfiles(dir, options = {}) {
@@ -77,6 +63,20 @@ function compile(inputPath, options = {}) {
 if (require.main !== module) module.exports = { compile, findSCSSfiles };
 
 else { // run as CLI tool
+
+    // Load FLAG settings
+    const config = { 
+        dryRun: process.argv.some(arg => /^--?(?:n|dry-?run)$/.test(arg)),
+        includeDotFolders: process.argv.some(arg =>
+            /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
+        noSourceMaps: process.argv.some(arg =>
+            /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?)$/.test(arg)),
+        noRecursion: process.argv.some(arg =>
+            /^--?(?:R|(?:disable|no)-?recursion)$/.test(arg)),
+        noMinify: process.argv.some(arg =>
+            /^--?(?:M|(?:disable|no)-?minif(?:y|ication))$/.test(arg)),
+        quietMode: process.argv.some(arg => /^--?q(?:uiet)?$/.test(arg))
+    };
 
     // Show HELP screen if -h or --help passed
     if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
