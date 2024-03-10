@@ -123,34 +123,36 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         scssFiles.forEach(file => console.info(file));
 
     } else { // actually compile SCSS files
-
-        let cssGenCnt = 0, srcMapGenCnt = 0;
         printIfNotQuiet(''); // line break before first log
-        scssFiles.forEach(scssPath => {
-            printIfNotQuiet(`Compiling ${ scssPath }...`);
-            try { // to compile SCSS file
-                const outputDir = path.join(
-                    path.dirname(scssPath), // path of file to be minified
-                    /(?:src|s[ac]ss)$/.test(path.dirname(scssPath)) ? '../css' // + ../css/ if in *(src|sass|scss)/
-                        : outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
-                        : outputArg || 'css' // or path from folder output arg or css/ if no output arg passed
-                );
-                const outputFilename = (
-                    outputArg.endsWith('.css') && inputArg.endsWith('.scss')
-                        ? path.basename(outputArg).replace(/(\.min)?\.css$/, '')
-                        : path.basename(scssPath, '.scss')
-                ) + '.min.css';
-                const outputPath = path.join(outputDir, outputFilename),
-                      compileResult = sass.compile(scssPath, {
-                          style: config.noMinify ? 'expanded' : 'compressed',
-                          sourceMap: !config.noSourceMaps });
-                if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-                fs.writeFileSync(outputPath, compileResult.css, 'utf8'); cssGenCnt++;
-                if (!config.noSourceMaps) {
-                    fs.writeFileSync(outputPath + '.map', JSON.stringify(compileResult.sourceMap), 'utf8');
-                    srcMapGenCnt++;
-                }
-            } catch (err) { console.error(`${br}Error compiling ${ scssPath }: ${ err.message }${nc}`); }
+
+        // Build array of compiled CSS
+        const cssData = scssFiles.map(scssPath => {
+            const compileResult = compile(scssPath, {
+                minify: !config.noMinify, srcMaps: !config.noSourceMaps, verbose: !config.quietMode });
+            return compileResult;
+        }).filter(data => data && data.code !== undefined); // filter out failed compilations
+
+        // Write array data to files
+        let cssGenCnt = 0, srcMapGenCnt = 0;
+        cssData.forEach(({ code, srcMap, srcPath }) => {                
+            const outputDir = path.join(
+                path.dirname(srcPath), // path of file to be minified
+                /(?:src|s[ac]ss)$/.test(path.dirname(srcPath)) ? '../css' // + ../css/ if in *(src|sass|scss)/
+                    : outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
+                    : outputArg || 'css' // or path from folder output arg or css/ if no output arg passed
+            );
+            const outputFilename = (
+                outputArg.endsWith('.css') && inputArg.endsWith('.scss')
+                    ? path.basename(outputArg).replace(/(\.min)?\.css$/, '')
+                    : path.basename(srcPath, '.scss')
+            ) + '.min.css';
+            const outputPath = path.join(outputDir, outputFilename);
+            if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+            fs.writeFileSync(outputPath, code, 'utf8'); cssGenCnt++;
+            if (!config.noSourceMaps) {
+                fs.writeFileSync(outputPath + '.map', JSON.stringify(srcMap), 'utf8');
+                srcMapGenCnt++;
+            }
         });
 
         // Print final summary
