@@ -145,9 +145,9 @@ If **source code** is passed, it is directly minified, then an object containing
 
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
-      result = minifyJS.minify(srcCode);
-console.log(result.error); // runtime error, or `undefined` if no error
-console.log(result.code);  // minified output: function add(n,d){return n+d}
+      minifyResult = minifyJS.minify(srcCode);
+console.log(minifyResult.error); // runtime error, or `undefined` if no error
+console.log(minifyResult.code);  // minified output: function add(n,d){return n+d}
 ```
 
 If a **file path** is passed, the file's code is loaded then minified, returning an object like above.

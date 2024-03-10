@@ -144,9 +144,9 @@ const minifyJS = require('@adamlui/minify.js');
 
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
-      result = minifyJS.minify(srcCode);
-console.log(result.error); // 运行时错误，如果没有错误则为 `undefined`
-console.log(result.code);  // 缩小输出：function add(n,d){return n+d}
+      minifyResult = minifyJS.minify(srcCode);
+console.log(minifyResult.error); // 运行时错误，如果没有错误则为 `undefined`
+console.log(minifyResult.code);  // 缩小输出：function add(n,d){return n+d}
 ```
 
 如果传递了**文件路径**，则加载文件的代码然后缩小，返回一个像上面一样的对象。
