@@ -49,16 +49,20 @@ function compile(inputPath, options = { minify: true, srcMaps: true, recursive: 
     if (fs.existsSync(inputPath)) { // compile based on path arg
         if (inputPath.endsWith('.scss')) { // file path passed
             if (options.verbose) console.info(`Compiling ${ inputPath }...`);
-            const compileResult = sass.compile(inputPath, {
-                style: options.minify ? 'compressed' : 'expanded', sourceMap: options.srcMaps });
-            return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: inputPath };
+            try { // to compile file passed
+                const compileResult = sass.compile(inputPath, {
+                    style: options.minify ? 'compressed' : 'expanded', sourceMap: options.srcMaps });
+                return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: inputPath };
+            } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return null }
         } else { // dir path passed
             return findSCSSfiles(inputPath, { recursive: options.recursive })
                 .map(scssPath => { // compile found SCSS files
-                    if (options.verbose) console.info(`Compiling ${ scssPath }...`);
-                    const compileResult = sass.compile(scssPath, {
-                        style: options.minify ? 'compressed' : 'expanded', sourceMap: options.srcMaps });
-                    return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: scssPath };
+                    if (options.verbose) console.info(`Compiling ${ scssPath }...`); 
+                    try { // to compile found file
+                        const compileResult = sass.compile(scssPath, {
+                            style: options.minify ? 'compressed' : 'expanded', sourceMap: options.srcMaps });
+                        return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: scssPath };
+                    } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return null }
                 }).filter(data => data && data.code !== undefined); // filter out failed compilations
         }
     } else return console.error('First argument must be an existing file or directory.'
