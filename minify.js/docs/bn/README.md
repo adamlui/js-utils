@@ -5,11 +5,11 @@
             <img height=14 src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/black/icon32.svg">
         </picture>
         &nbsp;বাংলা |
-        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js#readme">English</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/zh-cn#readme">简体中文</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/zh-tw#readme">繁體中文</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/hi#readme">हिंदी</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/mr#readme">मराठी</a>
+        <a href="../..#readme">English</a> |
+        <a href="../zh-cn#readme">简体中文</a> |
+        <a href="../zh-tw#readme">繁體中文</a> |
+        <a href="../hi#readme">हिंदी</a> |
+        <a href="../mr#readme">मराठी</a>
     </h6>
 </div>
 
