@@ -79,22 +79,6 @@ To use as a **package script**, in your project's `package.json`:
 Replace `<minify-js-cmd>` with `minify-js` + optional args. Then, `npm run build:js` can be used to run the command.
 <br><br>
 
-### Command line options
-
-```
-Config options:
- -n, --dry-run               Don't actually minify the file(s), just show
-                             if they will be processed.
- -d, --include-dotfolders    Include dotfolders in file search.
- -D, --include-dotfiles      Include dotfiles in file search.
- -R, --no-recursion          Disable recursive file searching.
- -q, --quiet                 Suppress all logging except errors.
-
-Info commands:
- -h, --help                  Display help screen.
- -v, --version               Show version number.
-```
-
 ### Example commands
 
 Minify all JavaScript files in the **current directory** (outputs to `min/`):
@@ -121,6 +105,22 @@ Specify both **input and output** directories (outputs to `output_folder/`):
 minify-js input_folder output_folder
 ```
 
+### Command line options
+
+```
+Config options:
+ -n, --dry-run               Don't actually minify the file(s), just show
+                             if they will be processed.
+ -d, --include-dotfolders    Include dotfolders in file search.
+ -D, --include-dotfiles      Include dotfiles in file search.
+ -R, --no-recursion          Disable recursive file searching.
+ -q, --quiet                 Suppress all logging except errors.
+
+Info commands:
+ -h, --help                  Display help screen.
+ -v, --version               Show version number.
+```
+
 ## 🔌 API Reference
 
 You can load **minify.js** in your app like this:
@@ -130,15 +130,6 @@ const minifyJS = require('@adamlui/minify.js');
 ```
 
 There is a single high level function, `minify(input, options)`, which will perform all minification/recursion phases in a configurable manner that adapts to the string input.
-
-### minify(options)
-
-Options are boolean (set to `true` by default) passed as object properties e.g. `minifyJS.minify(input, { option: true })`:
-
-```
- recursive     Recursively search for nested files if dir path passed.
- verbose       Show logging in console/terminal.
-```
 
 ### minify(input)
 
@@ -167,6 +158,15 @@ const nonRecursiveResults = minifyJS.minify('.', { recursive: false });
 nonRecursiveResults.forEach(result =>
     console.log(result.srcPath) // JS files in working directory only
 );
+```
+
+### minify(options)
+
+Options are boolean (set to `true` by default) passed as object properties e.g. `minifyJS.minify(input, { option: true })`:
+
+```
+ recursive     Recursively search for nested files if dir path passed.
+ verbose       Show logging in console/terminal.
 ```
 
 <br>

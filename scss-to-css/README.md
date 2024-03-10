@@ -64,23 +64,6 @@ To use as a **package script**, in your project's `package.json`:
 Replace `<scss-to-css-cmd>` with `scss-to-css` + optional args. Then, `npm run build:css` can be used to run the command.
 <br><br>
 
-### Command line options
-
-```
-Config options:
- -n, --dry-run               Don't actually compile the file(s), just
-                             show if they will be processed.
- -d, --include-dotfolders    Include dotfolders in file search.
- -S, --no-source-maps        Prevent source maps from being generated.
- -M, --no-minify             Disable minification of output CSS.
- -R, --no-recursion          Disable recursive file searching.
- -q, --quiet                 Suppress all logging except errors.
-
-Info commands:
- -h, --help                  Display this help screen.
- -v, --version               Show version number.
-```
-
 ### Example commands
 
 Compile all SCSS files in the **current directory** (outputs to `css/`):
@@ -109,6 +92,25 @@ scss-to-css input_folder output_folder
 
 **💡 Note:** Output CSS is minified unless `-M` or `--no-minify` is passed.
 <br><br>
+
+### Command line options
+
+```
+Config options:
+ -n, --dry-run               Don't actually compile the file(s), just
+                             show if they will be processed.
+ -d, --include-dotfolders    Include dotfolders in file search.
+ -S, --no-source-maps        Prevent source maps from being generated.
+ -M, --no-minify             Disable minification of output CSS.
+ -R, --no-recursion          Disable recursive file searching.
+ -q, --quiet                 Suppress all logging except errors.
+
+Info commands:
+ -h, --help                  Display this help screen.
+ -v, --version               Show version number.
+```
+
+<br>
 
 ## 💖 Support
 
