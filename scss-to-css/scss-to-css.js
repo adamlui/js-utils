@@ -167,9 +167,10 @@ else { // run as CLI tool
 
             // Print final summary
             if (cssData.length > 0) {
+                const cssCntSuffix = cssData.length > 1 ? 's' : '';
                 printIfNotQuiet(`\n${bg}Compilation complete!${nc}`);
-                printIfNotQuiet(`${ cssData.length } CSS file${ v > 1 ? 's' : '' }`
-                    + ( cssData.length ? ` + ${ cssData.length } source map${ cssData.length > 1 ? 's' : '' }` : '' )
+                printIfNotQuiet(`${ cssData.length } CSS file${ cssCntSuffix }`
+                    + ( !config.noSourceMaps ? ` + ${ cssData.length } source map${ cssCntSuffix }` : '' )
                     + ' generated.');
             } else printIfNotQuiet(`${by}No SCSS files processed successfully.${nc}`);
             if (failedSCSSpaths.length > 0) {
