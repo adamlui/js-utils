@@ -27,7 +27,9 @@ const config = {
 
 // Define MAIN functions
 
-function findSCSSfiles(dir, options = { recursive: true, verbose: false }) {
+function findSCSSfiles(dir, options = {}) {
+    const defaultOptions = { recursive: true, verbose: false };
+    options = { ...defaultOptions, ...options };        
     const dirFiles = fs.readdirSync(dir), scssFiles = [];
     dirFiles.forEach(file => {
         const filePath = path.resolve(dir, file);
@@ -42,7 +44,9 @@ function findSCSSfiles(dir, options = { recursive: true, verbose: false }) {
     return scssFiles;
 }
 
-function compile(inputPath, options = { minify: true, srcMaps: true, recursive: true, verbose: true }) {
+function compile(inputPath, options = {}) {
+    const defaultOptions = { minify: true, srcMaps: true, recursive: true, verbose: true };
+    options = { ...defaultOptions, ...options };
     if (typeof inputPath !== 'string')
         return console.error('ERROR:'
             + ' First argument must be a string representing a file/folder path.');

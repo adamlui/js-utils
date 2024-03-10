@@ -19,7 +19,9 @@ const config = {
 
 // Define MAIN functions
 
-function findJSfiles(dir, options = { recursive: true, verbose: false }) {
+function findJSfiles(dir, options = {}) {
+    const defaultOptions = { recursive: true, verbose: false };
+    options = { ...defaultOptions, ...options }; 
     const dirFiles = fs.readdirSync(dir), jsFiles = [];
     dirFiles.forEach(file => {
         const filePath = path.resolve(dir, file);
@@ -35,7 +37,9 @@ function findJSfiles(dir, options = { recursive: true, verbose: false }) {
     return jsFiles;
 }
 
-function minify(input, options = { recursive: true, verbose: true }) {
+function minify(input, options = {}) {
+    const defaultOptions = { recursive: true, verbose: true };
+    options = { ...defaultOptions, ...options };
     if (typeof input !== 'string')
         return console.error('ERROR:'
             + ' First argument must be a string of source code or file/folder path.');
