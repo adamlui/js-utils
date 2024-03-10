@@ -75,8 +75,8 @@ minify-js [input_path] [output_path]
   },
 ```
 
-`<minify-js-cmd>` को `minify-js` + वैकल्पिक तर्कों से बदलें। फिर, कमांड चलाने के लिए `npm run build:js` का उपयोग किया जा सकता है।
-<br><br>
+`<minify-js-cmd>` को `minify-js` + वैकल्पिक पैरामीटर से बदलें। फिर, कमांड चलाने के लिए `npm run build:js` का उपयोग किया जा सकता है।
+    <br><br>
 
 ### कमांड लाइन विकल्प
 
