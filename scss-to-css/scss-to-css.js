@@ -129,9 +129,11 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
         printIfNotQuiet(''); // line break before first log
 
         // Build array of compiled CSS
+        const failedSCSSpaths = [];
         const cssData = scssFiles.map(scssPath => {
             const compileResult = compile(scssPath, {
                 minify: !config.noMinify, srcMaps: !config.noSourceMaps, verbose: !config.quietMode });
+            if (!compileResult) failedSCSSpaths.push(scssPath);
             return compileResult;
         }).filter(data => data); // filter out failed compilations
 
@@ -165,6 +167,12 @@ if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
                 + ( srcMapGenCnt ? ` + ${ srcMapGenCnt } source map${ srcMapGenCnt > 1 ? 's' : '' }` : '' )
                 + ' generated.');
         } else printIfNotQuiet(`${by}No SCSS files processed successfully.${nc}`);
+        if (failedSCSSpaths.length > 0) {
+            printIfNotQuiet(`\n${ br + failedSCSSpaths.length } file${ failedSCSSpaths.length > 1 ? 's' : '' }`
+                + ` failed to compile:${nc}`);
+            printIfNotQuiet(failedSCSSpaths.join(', '));
+        }
+        return
     }
 }
 
