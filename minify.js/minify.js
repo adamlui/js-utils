@@ -112,7 +112,7 @@ else { // run as CLI tool
         const inputPath = path.resolve(process.cwd(), inputArg);
         if (inputArg && !fs.existsSync(inputPath)) {
             console.error(`\n${br}Error: First arg must be an existing file or directory.`
-                + `\n${ inputPath } does not exist.${nc}`
+                + `'\n${ inputPath }' does not exist.${nc}`
                 + `\n\n${bg}Example valid command: \n>> minify-js . output.min.js${nc}`
                 + `\n\n${by}For all command options: \n>> minify-js --help${nc}`);
             process.exit(1);
