@@ -36,7 +36,7 @@
 npm install -g @adamlui/minify.js
 ```
 
-作为**开发依赖**，从项目根目录：
+作为**开发人员依赖项**，从您的项目根目录：
 
 ```
 npm install -D @adamlui/minify.js

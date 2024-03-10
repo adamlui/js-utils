@@ -36,7 +36,7 @@
 npm install -g @adamlui/minify.js
 ```
 
-**डेव निर्भरता** के रूप में, आपके प्रोजेक्ट रूट से:
+**डेवलपर निर्भरता** के रूप में, आपके प्रोजेक्ट रूट से:
 
 ```
 npm install -D @adamlui/minify.js
