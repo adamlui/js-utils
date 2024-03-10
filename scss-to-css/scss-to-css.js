@@ -69,135 +69,141 @@ function compile(inputPath, options = { minify: true, srcMaps: true, recursive: 
         + `\n'${ inputPath }' does not exist.`);
 }
 
-// Show HELP screen if -h or --help passed
-if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
-    printHelp(`\n${by}scss-to-css [inputPath] [outputPath] [options]${nc}`);
-    printHelp('\nPath arguments:');
-    printHelp(' [inputPath]                  '
-        + 'Path to SCSS file or directory containing SCSS files to be compiled,'
-        + ' relative to the current working directory.');
-    printHelp(' [outputPath]                 '
-        + 'Path to file or directory where CSS + sourcemap files will be stored,'
-        + ' relative to original file location (if not provided, css/ is used).');
-    printHelp('\nConfig options:');
-    printHelp(' -n, --dry-run                Don\'t actually compile the file(s),'
-        + ' just show if they will be processed.');
-    printHelp(' -d, --include-dotfolders     Include dotfolders in file search.');
-    printHelp(' -S, --no-source-maps         Prevent source maps from being generated.');
-    printHelp(' -M, --no-minify              Disable minification of output CSS.');
-    printHelp(' -R, --no-recursion           Disable recursive file searching.');
-    printHelp(' -q, --quiet                  Suppress all logging except errors.');
-    printHelp('\nInfo commands:');
-    printHelp(' -h, --help                   Display this help screen.');
-    printHelp(' -v, --version                Show version number.');
+// EXPORT functions if script was required
+if (require.main !== module) module.exports = { compile, findSCSSfiles };
 
-// Show VERSION number if -v or --version passed
-} else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
-    console.info('v' + require('./package.json').version);
+else { // run as CLI tool
 
-} else { // run MAIN routine
+    // Show HELP screen if -h or --help passed
+    if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
+        printHelp(`\n${by}scss-to-css [inputPath] [outputPath] [options]${nc}`);
+        printHelp('\nPath arguments:');
+        printHelp(' [inputPath]                  '
+            + 'Path to SCSS file or directory containing SCSS files to be compiled,'
+            + ' relative to the current working directory.');
+        printHelp(' [outputPath]                 '
+            + 'Path to file or directory where CSS + sourcemap files will be stored,'
+            + ' relative to original file location (if not provided, css/ is used).');
+        printHelp('\nConfig options:');
+        printHelp(' -n, --dry-run                Don\'t actually compile the file(s),'
+            + ' just show if they will be processed.');
+        printHelp(' -d, --include-dotfolders     Include dotfolders in file search.');
+        printHelp(' -S, --no-source-maps         Prevent source maps from being generated.');
+        printHelp(' -M, --no-minify              Disable minification of output CSS.');
+        printHelp(' -R, --no-recursion           Disable recursive file searching.');
+        printHelp(' -q, --quiet                  Suppress all logging except errors.');
+        printHelp('\nInfo commands:');
+        printHelp(' -h, --help                   Display this help screen.');
+        printHelp(' -v, --version                Show version number.');
 
-    // Init I/O args
-    const [inputArg = '', outputArg = ''] = ( // default to empty strings for error-less handling
-        process.argv.slice(2) // exclude executable and script paths
-            .filter(arg => !arg.startsWith('-')) // exclude flags
-            .map(arg => arg.replace(/^\/*/, '')) // clean leading slashes to avoid parsing system root
-    );
+    // Show VERSION number if -v or --version passed
+    } else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
+        console.info('v' + require('./package.json').version);
 
-    // Validate input arg (output arg can be anything)
-    const inputPath = path.resolve(process.cwd(), inputArg);
-    if (inputArg && !fs.existsSync(inputPath)) {
-        console.error(`\n${br}Error: First arg must be an existing file or directory.`
-            + `\n${ inputPath } does not exist.${nc}`
-            + `\n\n${bg}Example valid command: \n>> scss-to-css . output.min.css${nc}`
-            + `\n\n${by}For all command options: \n>> scss-to-css --help${nc}`);
-        process.exit(1);
-    }
+    } else { // run MAIN routine
 
-    // Find all eligible JavaScript files or arg-passed file
-    const scssFiles = inputArg.endsWith('.scss') ? [inputPath]
-        : findSCSSfiles(inputPath, { recursive: !config.noRecursion });
+        // Init I/O args
+        const [inputArg = '', outputArg = ''] = ( // default to empty strings for error-less handling
+            process.argv.slice(2) // exclude executable and script paths
+                .filter(arg => !arg.startsWith('-')) // exclude flags
+                .map(arg => arg.replace(/^\/*/, '')) // clean leading slashes to avoid parsing system root
+        );
 
-    if (scssFiles.length === 0) { // print nothing found
-        printIfNotQuiet(`\n${by}No SCSS files found.${nc}`);
+        // Validate input arg (output arg can be anything)
+        const inputPath = path.resolve(process.cwd(), inputArg);
+        if (inputArg && !fs.existsSync(inputPath)) {
+            console.error(`\n${br}Error: First arg must be an existing file or directory.`
+                + `\n${ inputPath } does not exist.${nc}`
+                + `\n\n${bg}Example valid command: \n>> scss-to-css . output.min.css${nc}`
+                + `\n\n${by}For all command options: \n>> scss-to-css --help${nc}`);
+            process.exit(1);
+        }
 
-    } else if (config.dryRun) { // print files to be processed
-        console.info(`\n${by}SCSS files to be compiled:${nc}`);
-        scssFiles.forEach(file => console.info(file));
+        // Find all eligible JavaScript files or arg-passed file
+        const scssFiles = inputArg.endsWith('.scss') ? [inputPath]
+            : findSCSSfiles(inputPath, { recursive: !config.noRecursion });
 
-    } else { // actually compile SCSS files
-        printIfNotQuiet(''); // line break before first log
+        if (scssFiles.length === 0) { // print nothing found
+            printIfNotQuiet(`\n${by}No SCSS files found.${nc}`);
 
-        // Build array of compiled CSS
-        const failedSCSSpaths = [];
-        const cssData = scssFiles.map(scssPath => {
-            const compileResult = compile(scssPath, {
-                minify: !config.noMinify, srcMaps: !config.noSourceMaps, verbose: !config.quietMode });
-            if (!compileResult) failedSCSSpaths.push(scssPath);
-            return compileResult;
-        }).filter(data => data); // filter out failed compilations
+        } else if (config.dryRun) { // print files to be processed
+            console.info(`\n${by}SCSS files to be compiled:${nc}`);
+            scssFiles.forEach(file => console.info(file));
 
-        // Write array data to files
-        let cssGenCnt = 0, srcMapGenCnt = 0;
-        cssData.forEach(({ code, srcMap, srcPath }) => {                
-            const outputDir = path.join(
-                path.dirname(srcPath), // path of file to be minified
-                /(?:src|s[ac]ss)$/.test(path.dirname(srcPath)) ? '../css' // + ../css/ if in *(src|sass|scss)/
-                    : outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
-                    : outputArg || 'css' // or path from folder output arg or css/ if no output arg passed
-            );
-            const outputFilename = (
-                outputArg.endsWith('.css') && inputArg.endsWith('.scss')
-                    ? path.basename(outputArg).replace(/(\.min)?\.css$/, '')
-                    : path.basename(srcPath, '.scss')
-            ) + '.min.css';
-            const outputPath = path.join(outputDir, outputFilename);
-            if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-            fs.writeFileSync(outputPath, code, 'utf8'); cssGenCnt++;
-            if (!config.noSourceMaps) {
-                fs.writeFileSync(outputPath + '.map', JSON.stringify(srcMap), 'utf8');
-                srcMapGenCnt++;
+        } else { // actually compile SCSS files
+            printIfNotQuiet(''); // line break before first log
+
+            // Build array of compiled CSS
+            const failedSCSSpaths = [];
+            const cssData = scssFiles.map(scssPath => {
+                const compileResult = compile(scssPath, {
+                    minify: !config.noMinify, srcMaps: !config.noSourceMaps, verbose: !config.quietMode });
+                if (!compileResult) failedSCSSpaths.push(scssPath);
+                return compileResult;
+            }).filter(data => data); // filter out failed compilations
+
+            // Write array data to files
+            let cssGenCnt = 0, srcMapGenCnt = 0;
+            cssData.forEach(({ code, srcMap, srcPath }) => {                
+                const outputDir = path.join(
+                    path.dirname(srcPath), // path of file to be minified
+                    /(?:src|s[ac]ss)$/.test(path.dirname(srcPath)) ? '../css' // + ../css/ if in *(src|sass|scss)/
+                        : outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
+                        : outputArg || 'css' // or path from folder output arg or css/ if no output arg passed
+                );
+                const outputFilename = (
+                    outputArg.endsWith('.css') && inputArg.endsWith('.scss')
+                        ? path.basename(outputArg).replace(/(\.min)?\.css$/, '')
+                        : path.basename(srcPath, '.scss')
+                ) + '.min.css';
+                const outputPath = path.join(outputDir, outputFilename);
+                if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+                fs.writeFileSync(outputPath, code, 'utf8'); cssGenCnt++;
+                if (!config.noSourceMaps) {
+                    fs.writeFileSync(outputPath + '.map', JSON.stringify(srcMap), 'utf8');
+                    srcMapGenCnt++;
+                }
+            });
+
+            // Print final summary
+            if (cssGenCnt) {
+                printIfNotQuiet(`\n${bg}Compilation complete!${nc}`);
+                printIfNotQuiet(`${ cssGenCnt } CSS file${ cssGenCnt > 1 ? 's' : '' }`
+                    + ( srcMapGenCnt ? ` + ${ srcMapGenCnt } source map${ srcMapGenCnt > 1 ? 's' : '' }` : '' )
+                    + ' generated.');
+            } else printIfNotQuiet(`${by}No SCSS files processed successfully.${nc}`);
+            if (failedSCSSpaths.length > 0) {
+                printIfNotQuiet(`\n${ br + failedSCSSpaths.length } file${ failedSCSSpaths.length > 1 ? 's' : '' }`
+                    + ` failed to compile:${nc}`);
+                printIfNotQuiet(failedSCSSpaths.join(', '));
             }
-        });
-
-        // Print final summary
-        if (cssGenCnt) {
-            printIfNotQuiet(`\n${bg}Compilation complete!${nc}`);
-            printIfNotQuiet(`${ cssGenCnt } CSS file${ cssGenCnt > 1 ? 's' : '' }`
-                + ( srcMapGenCnt ? ` + ${ srcMapGenCnt } source map${ srcMapGenCnt > 1 ? 's' : '' }` : '' )
-                + ' generated.');
-        } else printIfNotQuiet(`${by}No SCSS files processed successfully.${nc}`);
-        if (failedSCSSpaths.length > 0) {
-            printIfNotQuiet(`\n${ br + failedSCSSpaths.length } file${ failedSCSSpaths.length > 1 ? 's' : '' }`
-                + ` failed to compile:${nc}`);
-            printIfNotQuiet(failedSCSSpaths.join(', '));
         }
     }
+
+    // Define LOGGING functions
+
+    function printHelp(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
+        const terminalWidth = process.stdout.columns || 80,
+              indentation = 30, lines = [], words = msg.match(/\S+|\s+/g);
+
+        // Split msg into lines of appropriate lengths
+        let currentLine = '';
+        words.forEach(word => {
+            const lineLength = terminalWidth - ( lines.length === 0 ? 0 : indentation );
+            if (currentLine.length + word.length > lineLength) { // cap/store it
+                lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
+                currentLine = '';
+            }
+            currentLine += word;
+        });
+        lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
+
+        // Print formatted msg
+        lines.forEach((line, index) => console.info(
+            index === 0 ? line // print 1st line unindented
+                : ' '.repeat(indentation) + line // print subsequent lines indented
+        ));
+    }
+
+    function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
 }
-
-// Define LOGGING functions
-
-function printHelp(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
-    const terminalWidth = process.stdout.columns || 80,
-          indentation = 30, lines = [], words = msg.match(/\S+|\s+/g);
-
-    // Split msg into lines of appropriate lengths
-    let currentLine = '';
-    words.forEach(word => {
-        const lineLength = terminalWidth - ( lines.length === 0 ? 0 : indentation );
-        if (currentLine.length + word.length > lineLength) { // cap/store it
-            lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
-            currentLine = '';
-        }
-        currentLine += word;
-    });
-    lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
-
-    // Print formatted msg
-    lines.forEach((line, index) => console.info(
-        index === 0 ? line // print 1st line unindented
-            : ' '.repeat(indentation) + line // print subsequent lines indented
-    ));
-}
-
-function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
