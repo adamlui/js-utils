@@ -147,7 +147,6 @@ else { // run as CLI tool
             }).filter(data => !data.error ); // filter out failed compilations
 
             // Write array data to files
-            let cssGenCnt = 0, srcMapGenCnt = 0;
             cssData.forEach(({ code, srcMap, srcPath }) => {                
                 const outputDir = path.join(
                     path.dirname(srcPath), // path of file to be minified
@@ -162,18 +161,15 @@ else { // run as CLI tool
                 ) + '.min.css';
                 const outputPath = path.join(outputDir, outputFilename);
                 if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-                fs.writeFileSync(outputPath, code, 'utf8'); cssGenCnt++;
-                if (!config.noSourceMaps) {
-                    fs.writeFileSync(outputPath + '.map', JSON.stringify(srcMap), 'utf8');
-                    srcMapGenCnt++;
-                }
+                fs.writeFileSync(outputPath, code, 'utf8');
+                if (!config.noSourceMaps) fs.writeFileSync(outputPath + '.map', JSON.stringify(srcMap), 'utf8');
             });
 
             // Print final summary
-            if (cssGenCnt) {
+            if (cssData.length > 0) {
                 printIfNotQuiet(`\n${bg}Compilation complete!${nc}`);
-                printIfNotQuiet(`${ cssGenCnt } CSS file${ cssGenCnt > 1 ? 's' : '' }`
-                    + ( srcMapGenCnt ? ` + ${ srcMapGenCnt } source map${ srcMapGenCnt > 1 ? 's' : '' }` : '' )
+                printIfNotQuiet(`${ cssData.length } CSS file${ v > 1 ? 's' : '' }`
+                    + ( cssData.length ? ` + ${ cssData.length } source map${ cssData.length > 1 ? 's' : '' }` : '' )
                     + ' generated.');
             } else printIfNotQuiet(`${by}No SCSS files processed successfully.${nc}`);
             if (failedSCSSpaths.length > 0) {
