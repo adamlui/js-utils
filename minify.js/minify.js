@@ -165,7 +165,8 @@ else { // run as CLI tool
                     `${ minifiedJSdata.length } file${ minifiedJSdata.length > 1 ? 's' : '' } minified.`);
             } else printIfNotQuiet(`${by}No unminified JavaScript files processed successfully.${nc}`);
             if (failedJSpaths.length > 0) {
-                printIfNotQuiet(`\n${br + failedJSpaths.length } file${ failedJSpaths.length > 1 ? 's' : '' }`
+                printIfNotQuiet(`\n${br}`
+                    + `${ failedJSpaths.length } file${ failedJSpaths.length > 1 ? 's' : '' }`
                     + ` failed to minify:${nc}`);
                 printIfNotQuiet(failedJSpaths.join(', '));
             }

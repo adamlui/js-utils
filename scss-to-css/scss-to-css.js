@@ -173,7 +173,8 @@ else { // run as CLI tool
                     + ' generated.');
             } else printIfNotQuiet(`${by}No SCSS files processed successfully.${nc}`);
             if (failedSCSSpaths.length > 0) {
-                printIfNotQuiet(`\n${ br + failedSCSSpaths.length } file${ failedSCSSpaths.length > 1 ? 's' : '' }`
+                printIfNotQuiet(`\n${br}`
+                    + `${ failedSCSSpaths.length } file${ failedSCSSpaths.length > 1 ? 's' : '' }`
                     + ` failed to compile:${nc}`);
                 printIfNotQuiet(failedSCSSpaths.join(', '));
             }
