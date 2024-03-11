@@ -2,7 +2,7 @@ name: Publish scss-to-css to npm on new release
 
 on:
   release:
-    types: [created]
+    types: [published]
     tags: scss-to-css*
 
 jobs:
