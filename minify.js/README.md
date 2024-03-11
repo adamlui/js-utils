@@ -1,4 +1,4 @@
-<div align="right">
+f<div align="right">
     <h6>
         <picture>
             <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/white/icon32.svg">
@@ -179,7 +179,8 @@ minifyJS.minify(input, { dotFiles: true });
 Possible parameters (and their default settings) are:
 
 ```
- recursive (true)     Recursively search for nested files if dir path passed.
+ recursive (true)     Recursively search for nested files if dir path
+                      passed.
  verbose (true)       Show logging in console/terminal.
  dotFolders (false)   Include dotfolders in file search.
  dotFiles (false)     Include dotfiles in file search.
@@ -200,7 +201,8 @@ minifyJS.findJS(searchDir, { recursive: false });
 Possible parameters (and their default settings) are:
 
 ```
- recursive (true)     Recursively search for nested files if dir path passed.
+ recursive (true)     Recursively search for nested files if dir path
+                      passed.
  verbose (false)      Show logging in console/terminal.
  dotFolders (false)   Include dotfolders in file search.
  dotFiles (false)     Include dotfiles in file search.
