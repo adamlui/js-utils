@@ -18,7 +18,7 @@ As a **global utility**:
 npm install -g @adamlui/scss-to-css
 ```
 
-As a **dev dependency**, from your project root:
+As a **dev dependency**:
 
 ```
 npm install -D @adamlui/scss-to-css
