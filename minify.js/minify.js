@@ -18,7 +18,7 @@ function findJS(searchDir, options = {}) {
                 if (options.verbose) console.info(`Searching for unminified JS files in: ${filePath}...`);
                 jsFiles.push( // recursively find unminified JS in eligible dir
                     ...findJS(filePath, { ...options, isRecursing: true }));
-        } else if (/\.jss(?<!\.min\.js)$/.test(file) &&
+        } else if (/\.js(?<!\.min\.js)$/.test(file) &&
             (options.dotFiles || !file.startsWith('.')))
                 jsFiles.push(filePath); // store eligible unminified JS file for minification
     });
