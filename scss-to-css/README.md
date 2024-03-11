@@ -18,7 +18,7 @@ As a **global utility**:
 npm install -g @adamlui/scss-to-css
 ```
 
-As a **dev dependency**:
+As a **dev dependency** (e.g. for build scripts):
 
 ```
 npm install -D @adamlui/scss-to-css
