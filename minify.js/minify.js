@@ -135,7 +135,7 @@ else { // run as CLI tool
 
         if (config.dryRun) { // print files to be processed
             console.info(`\n${by}JS files to be minified:${nc}`);
-            unminnedJSfiles.forEach(file => console.info(file));
+            unminnedJSfiles?.forEach(file => console.info(file));
 
         } else if (unminnedJSfiles?.length > 0) { // actually minify JavaScript files
             printIfNotQuiet(''); // line break before first log
