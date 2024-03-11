@@ -1,4 +1,4 @@
-name: Publish minify.js to npm on new release
+name: Publish minify.js to npm on new tag
 
 on:
   push:
