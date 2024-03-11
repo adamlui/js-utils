@@ -17,7 +17,7 @@ function findSCSS(searchDir, options = {}) {
             (options.dotFolders || !file.startsWith('.')) && options.recursive) {
                 if (options.verbose) console.info(`Searching for SCSS files in: ${filePath}...`);
                 scssFiles.push( // recursively find SCSS in eligible dir
-                    ...findSCSS(filePath));
+                    ...findSCSS(filePath, options));
         } else if (file.endsWith('.scss')) // SCSS file found
             scssFiles.push(filePath); // store it for compilation
     });
