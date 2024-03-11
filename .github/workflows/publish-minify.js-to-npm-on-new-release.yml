@@ -4,6 +4,7 @@ on:
   release:
     types: [created]
     tags: minify.js*
+
 jobs:
   build:
     runs-on: ubuntu-latest
