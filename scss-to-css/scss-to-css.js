@@ -7,7 +7,7 @@ const fs = require('fs'),
 
 // Define MAIN functions
 
-function findSCSSfiles(dir, options = {}) {
+function findSCSS(dir, options = {}) {
     const defaultOptions = { recursive: true, verbose: false, dotFolders: false };
     options = { ...defaultOptions, ...options };        
     const dirFiles = fs.readdirSync(dir), scssFiles = [];
@@ -17,7 +17,7 @@ function findSCSSfiles(dir, options = {}) {
             (options.dotFolders || !file.startsWith('.'))) {
                 if (options.verbose) console.info(`Searching for SCSS files in: ${filePath}...`);
                 scssFiles.push( // recursively find SCSS in eligible dir
-                    ...findSCSSfiles(filePath));
+                    ...findSCSS(filePath));
         } else if (file.endsWith('.scss')) // SCSS file found
             scssFiles.push(filePath); // store it for compilation
     });
@@ -39,7 +39,7 @@ function compile(inputPath, options = {}) {
                 return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: inputPath };
             } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return { error: err }; }
         } else { // dir path passed
-            return findSCSSfiles(inputPath, { recursive: options.recursive, dotFolders: options.dotFolders })
+            return findSCSS(inputPath, { recursive: options.recursive, dotFolders: options.dotFolders })
                 .map(scssPath => { // compile found SCSS files
                     if (options.verbose) console.info(`Compiling ${ scssPath }...`); 
                     try { // to compile found file
@@ -54,7 +54,7 @@ function compile(inputPath, options = {}) {
 }
 
 // EXPORT functions if script was required
-if (require.main !== module) module.exports = { compile, findSCSSfiles };
+if (require.main !== module) module.exports = { compile, findSCSS };
 
 else { // run as CLI tool
 
@@ -125,7 +125,7 @@ else { // run as CLI tool
 
         // Find all eligible JavaScript files or arg-passed file
         const scssFiles = inputArg.endsWith('.scss') ? [inputPath]
-            : findSCSSfiles(inputPath, { recursive: !config.noRecursion });
+            : findSCSS(inputPath, { recursive: !config.noRecursion });
 
         if (scssFiles.length === 0) { // print nothing found
             printIfNotQuiet(`\n${by}No SCSS files found.${nc}`);
