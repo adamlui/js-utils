@@ -137,7 +137,7 @@ else { // run as CLI tool
         } else { // actually minify JavaScript files
             printIfNotQuiet(''); // line break before first log
 
-            // Build array of minified code
+            // Build array of minification data
             const failedJSpaths = [];
             const minifiedData = unminnedJSfiles.map(jsPath => {
                 const minifyResult = minify(jsPath, { verbose: !config.quietMode });

@@ -137,7 +137,7 @@ else { // run as CLI tool
         } else { // actually compile SCSS files
             printIfNotQuiet(''); // line break before first log
 
-            // Build array of compiled CSS
+            // Build array of compilation data
             const failedSCSSpaths = [];
             const cssData = scssFiles.map(scssPath => {
                 const compileResult = compile(scssPath, {
