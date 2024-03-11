@@ -117,6 +117,82 @@ Info commands:
  -v, --version               Show version number.
 ```
 
+## 🔌 API reference
+
+You can also import **scss-to-css** into your app to use its API methods, both as an ECMAScript module or a CommonJS module.
+
+#### ESM:
+
+```js
+import * as scssToCSS from '@adamlui/scss-to-css';
+```
+
+#### CJS:
+
+```js
+const scssToCSS = require('@adamlui/scss-to-css');
+```
+
+### compile(inputPath, options)
+
+This function compiles SCSS found in the `inputPath` provided into CSS data.
+
+If a **file path** is passed, the file's code is compiled to CSS, then an object containing `srcPath` + `code` + `error` is returned:
+
+```js
+const compileResult = scssToCSS.compile('assets/style.scss');
+console.log(compileResult.error); // runtime error, or `undefined` if no error
+console.log(compileResult.code);  // compiled CSS output of assets/style.scss
+```
+
+If a **directory path** is passed, SCSS files are searched for (recursively by default), each one's code is loaded then compiled, then an array of objects containing `srcPath` + `code` + `error` is returned:
+
+```js
+const results = scssToCSS.compile('.');
+results.forEach(result =>
+    console.log(result.srcPath) // paths to SCSS files in working directory + all nested directories
+);
+console.log(results[1].code); // compiled CSS output of 2nd SCSS file if found, or `undefined` if not found
+```
+
+Options are boolean, passed as object properties. For example:
+
+```js
+scssToCSS.compile(inputDir, { minify: false });
+// returns data objects where `.code` contains unminified CSS
+```
+
+Possible parameters (and their default settings) are:
+
+```
+ recursive (true)     Recursively search for nested files if dir path
+                      passed.
+ verbose (true)       Show logging in console/terminal.
+ dotFolders (false)   Include dotfolders in file search.
+ minify (true)        Minify output CSS.
+ sourceMaps (true)    Generate CSS sourcemaps.
+```
+
+### findSCSS(searchDir, options)
+
+This function searches for all SCSS files within the `searchDir` string passed (useful for discovering what files [`compile()`](#compileinputpath-options) will process) and returns an array containing their filepaths.
+
+Options are boolean, passed as object properties. For example:
+
+```js
+scssToCSS.findSCSS(searchDir, { recursive: false });
+// returns array containing filepaths to SCSS files in exactly `searchDir`
+```
+
+Possible parameters (and their default settings) are:
+
+```
+ recursive (true)     Recursively search for nested files if dir path
+                      passed.
+ verbose (false)      Show logging in console/terminal.
+ dotFolders (false)   Include dotfolders in file search.
+```
+
 <br>
 
 ## 💖 Support
