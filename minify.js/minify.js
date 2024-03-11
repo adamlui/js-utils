@@ -39,7 +39,7 @@ function minify(input, options = {}) {
             return { code: minifyResult.code, srcPath: input, error: minifyResult.error };
         } else { // dir path passed
             return findJS(input, { recursive: options.recursive,
-                                        dotFolders: options.dotFolders, dotFiles: options.dotFiles })
+                                   dotFolders: options.dotFolders, dotFiles: options.dotFiles })
                 .map(jsPath => { // minify found JS files
                     if (options.verbose) console.info(`Minifying ${ jsPath }...`);
                     const srcCode = fs.readFileSync(jsPath, 'utf8'),
