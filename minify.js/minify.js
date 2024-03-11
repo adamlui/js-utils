@@ -10,9 +10,9 @@ const fs = require('fs'),
 function findJS(searchDir, options = {}) {
     const defaultOptions = { recursive: true, verbose: false, dotFolders: false, dotFiles: false };
     options = { ...defaultOptions, ...options };
-    const dirFiles = fs.readdirSync(dir), jsFiles = [];
+    const dirFiles = fs.readdirSync(searchDir), jsFiles = [];
     dirFiles.forEach(file => {
-        const filePath = path.resolve(dir, file);
+        const filePath = path.resolve(searchDir, file);
         if (fs.statSync(filePath).isDirectory() && file != 'node_modules' &&
             (options.dotFolders || !file.startsWith('.')) && options.recursive) {
                 if (options.verbose) console.info(`Searching for unminified JS files in: ${filePath}...`);

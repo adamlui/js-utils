@@ -10,9 +10,9 @@ const fs = require('fs'),
 function findSCSS(searchDir, options = {}) {
     const defaultOptions = { recursive: true, verbose: false, dotFolders: false };
     options = { ...defaultOptions, ...options };        
-    const dirFiles = fs.readdirSync(dir), scssFiles = [];
+    const dirFiles = fs.readdirSync(searchDir), scssFiles = [];
     dirFiles.forEach(file => {
-        const filePath = path.resolve(dir, file);
+        const filePath = path.resolve(searchDir, file);
         if (fs.statSync(filePath).isDirectory() && options.recursive &&
             (options.dotFolders || !file.startsWith('.'))) {
                 if (options.verbose) console.info(`Searching for SCSS files in: ${filePath}...`);
