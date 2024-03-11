@@ -41,7 +41,7 @@ function compile(inputPath, options = {}) {
             } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return { error: err }; }
         } else { // dir path passed
             return findSCSS(inputPath, { recursive: options.recursive, dotFolders: options.dotFolders })
-                .map(scssPath => { // compile found SCSS files
+                ?.map(scssPath => { // compile found SCSS files
                     if (options.verbose) console.info(`Compiling ${ scssPath }...`); 
                     try { // to compile found file
                         const compileResult = sass.compile(scssPath, compileOptions);
@@ -129,14 +129,14 @@ else { // run as CLI tool
 
         if (config.dryRun) { // print files to be processed
             console.info(`\n${by}SCSS files to be compiled:${nc}`);
-            scssFiles.forEach(file => console.info(file));
+            scssFiles?.forEach(file => console.info(file));
 
         } else if (scssFiles?.length > 0) { // actually compile SCSS files
             printIfNotQuiet(''); // line break before first log
 
             // Build array of compilation data
             const failedPaths = [];
-            const compileData = scssFiles.map(scssPath => {
+            const compileData = scssFiles?.map(scssPath => {
                 const compileResult = compile(scssPath, {
                     minify: !config.noMinify, sourceMaps: !config.noSourceMaps, verbose: !config.quietMode });
                 if (compileResult.error) failedPaths.push(scssPath);
@@ -144,7 +144,7 @@ else { // run as CLI tool
             }).filter(data => !data.error ); // filter out failed compilations
 
             // Write array data to files
-            compileData.forEach(({ code, srcMap, srcPath }) => {                
+            compileData?.forEach(({ code, srcMap, srcPath }) => {                
                 const outputDir = path.join(
                     path.dirname(srcPath), // path of file to be minified
                     /(?:src|s[ac]ss)$/.test(path.dirname(srcPath)) ? '../css' // + ../css/ if in *(src|sass|scss)/
@@ -163,7 +163,7 @@ else { // run as CLI tool
             });
 
             // Print final summary
-            if (compileData.length > 0) {
+            if (compileData?.length > 0) {
                 const cssCntSuffix = compileData.length > 1 ? 's' : '';
                 printIfNotQuiet(`\n${bg}Compilation complete!${nc}`);
                 printIfNotQuiet(`${ compileData.length } CSS file${ cssCntSuffix }`

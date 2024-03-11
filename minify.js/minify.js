@@ -43,7 +43,7 @@ function minify(input, options = {}) {
         } else { // dir path passed
             return findJS(input, { recursive: options.recursive,
                                    dotFolders: options.dotFolders, dotFiles: options.dotFiles })
-                .map(jsPath => { // minify found JS files
+                ?.map(jsPath => { // minify found JS files
                     if (options.verbose) console.info(`Minifying ${ jsPath }...`);
                     const srcCode = fs.readFileSync(jsPath, 'utf8'),
                           minifyResult = uglifyJS.minify(srcCode, minifyOptions);
@@ -142,14 +142,14 @@ else { // run as CLI tool
 
             // Build array of minification data
             const failedPaths = [];
-            const minifyData = unminnedJSfiles.map(jsPath => {
+            const minifyData = unminnedJSfiles?.map(jsPath => {
                 const minifyResult = minify(jsPath, { verbose: !config.quietMode, mangle: !config.noMangle });
                 if (minifyResult.error) failedPaths.push(jsPath);
                 return minifyResult;
             }).filter(minifyResult => !minifyResult.error); // filter out failed minifications
 
             // Write array data to files
-            minifyData.forEach(({ code, srcPath }) => {
+            minifyData?.forEach(({ code, srcPath }) => {
                 const outputDir = path.join(
                     path.dirname(srcPath), // path of file to be minified
                     /so?u?rce?$/.test(path.dirname(srcPath)) ? '../min' // + ../min/ if in *(src|source)/
@@ -167,7 +167,7 @@ else { // run as CLI tool
             });
 
             // Print final summary
-            if (minifyData.length > 0) {
+            if (minifyData?.length > 0) {
                 printIfNotQuiet(`\n${bg}Minification complete!${nc}`);
                 printIfNotQuiet(
                     `${ minifyData.length } file${ minifyData.length > 1 ? 's' : '' } minified.`);
