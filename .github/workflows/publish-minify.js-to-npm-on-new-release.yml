@@ -2,7 +2,7 @@ name: Publish minify.js to npm on new release
 
 on:
   release:
-    types: [created]
+    types: [published]
     tags: minify.js*
 
 jobs:
