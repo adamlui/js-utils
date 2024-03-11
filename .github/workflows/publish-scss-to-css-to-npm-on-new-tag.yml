@@ -1,8 +1,7 @@
-name: Publish scss-to-css to npm on new release
+name: Publish scss-to-css to npm on new tag
 
 on:
-  release:
-    types: [published]
+  push:
     tags: scss-to-css*
 
 jobs:
