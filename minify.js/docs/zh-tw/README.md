@@ -128,7 +128,7 @@ minify-js input_folder output_folder
 
 ## 🔌 API 參考
 
-您也可以將 **minify.js** 匯入到您的應用程式中以使用其 API 方法，無論是作為 ECMAScript 模組還是作為 CommonJS 模組。
+您也可以將 **minify.js** 匯入您的應用程式以使用其 API 方法，無論是作為 ECMAScript 模組還是 CommonJS 模組。
 
 #### ESM:
 

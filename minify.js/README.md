@@ -129,7 +129,7 @@ Info commands:
 
 ## 🔌 API reference
 
-You can also import **minify.js** into your app to use its API methods, both as an ECMAScript module or as a CommonJS module.
+You can also import **minify.js** into your app to use its API methods, both as an ECMAScript module or a CommonJS module.
 
 #### ESM:
 
