@@ -161,17 +161,11 @@ If a **file path** is passed, the file's code is loaded then minified, returning
 If a **directory path** is passed, JavaScript files are searched for (recursively by default), each one's code is loaded then minified, then an array of objects containing `srcPath` + `code` + `error` is returned:
 
 ```js
-const recursiveResults = minifyJS.minify('.');
-recursiveResults.forEach(result =>
-    console.log(result.srcPath) // JS files in working directory + all nested directories
+const results = minifyJS.minify('.');
+results.forEach(result =>
+    console.log(result.srcPath) // paths to JS files in working directory + all nested directories
 );
-
-const nonRecursiveResults = minifyJS.minify('.', { recursive: false });
-nonRecursiveResults.forEach(result =>
-    console.log(result.srcPath) // JS files in working directory only
-);
-
-console.log(recursiveResults[1].code) // minified code of 2nd JS file if found, or `undefined` if not found
+console.log(results[1].code) // minified code of 2nd JS file if found, or `undefined` if not found
 ```
 
 Options are boolean, passed as object properties. For example:

@@ -160,17 +160,11 @@ console.log(minifyResult.code);  // कमी केलेले आउटपु
 **डिरेक्टरी पाथ** पास केल्यास, JavaScript फाइल्स शोधल्या जातात (पुन्हा डिफॉल्टनुसार), प्रत्येकाचा कोड लोड केला जातो आणि नंतर छोटा केला जातो, त्यानंतर `srcPath` + `code` + `error` असलेल्या ऑब्जेक्ट्सचा ॲरे दिला जातो:
 
 ```js
-const recursiveResults = minifyJS.minify('.');
-recursiveResults.forEach(result =>
-    console.log(result.srcPath) // कार्यरत निर्देशिकेतील JS फायली + सर्व नेस्टेड निर्देशिका
+const results = minifyJS.minify('.');
+results.forEach(result =>
+    console.log(result.srcPath) // वर्किंग डिरेक्टरी + सर्व नेस्टेड डिरेक्टरीमधील JS फाइल्सचे मार्ग
 );
-
-const nonRecursiveResults = minifyJS.minify('.', { recursive: false });
-nonRecursiveResults.forEach(result =>
-    console.log(result.srcPath) // JS फाइल्स फक्त कार्यरत निर्देशिकेत
-);
-
-console.log(recursiveResults[1].code) // आढळल्यास 2रा JS फाइलचा मिनिफाइड कोड, किंवा न आढळल्यास `undefined`
+console.log(results[1].code) // आढळल्यास 2रा JS फाइलचा मिनिफाइड कोड, किंवा न आढळल्यास `undefined`
 ```
 
 पर्याय बुलियन आहेत, ऑब्जेक्ट गुणधर्म म्हणून पास केले जातात. उदाहरणार्थ:

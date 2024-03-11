@@ -160,17 +160,11 @@ console.log(minifyResult.code);  // ছোট আউটপুট: function add(n
 যদি একটি **ডিরেক্টরি পাথ** পাস করা হয়, জাভাস্ক্রিপ্ট ফাইলগুলি অনুসন্ধান করা হয় (পুনরাবৃত্তভাবে ডিফল্টভাবে), প্রতিটির কোড লোড করা হয় তারপর ছোট করা হয়, তারপর `srcPath` + `code` + `error` ধারণকারী বস্তুর একটি অ্যারে ফেরত দেওয়া হয়:
 
 ```js
-const recursiveResults = minifyJS.minify('.');
-recursiveResults.forEach(result =>
-    console.log(result.srcPath) // কাজের ডিরেক্টরি + সমস্ত নেস্টেড ডিরেক্টরিতে JS ফাইল
+const results = minifyJS.minify('.');
+results.forEach(result =>
+    console.log(result.srcPath) // ওয়ার্কিং ডিরেক্টরি + সমস্ত নেস্টেড ডিরেক্টরিতে JS ফাইলগুলির পাথ
 );
-
-const nonRecursiveResults = minifyJS.minify('.', { recursive: false });
-nonRecursiveResults.forEach(result =>
-    console.log(result.srcPath) // JS ফাইল শুধুমাত্র ওয়ার্কিং ডিরেক্টরিতে
-);
-
-console.log(recursiveResults[1].code) // পাওয়া গেলে 2য় JS ফাইলের সংক্ষিপ্ত কোড বা না পাওয়া গেলে `undefined`
+console.log(results[1].code) // পাওয়া গেলে 2য় JS ফাইলের সংক্ষিপ্ত কোড বা না পাওয়া গেলে `undefined`
 ```
 
 বিকল্পগুলি হল বুলিয়ান, অবজেক্টের বৈশিষ্ট্য হিসাবে পাস করা হয়েছে৷ উদাহরণ স্বরূপ:

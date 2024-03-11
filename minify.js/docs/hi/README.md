@@ -160,17 +160,11 @@ console.log(minifyResult.code);  // न्यूनतम आउटपुट: fu
 यदि **निर्देशिका पथ** पारित किया जाता है, तो जावास्क्रिप्ट फ़ाइलों को खोजा जाता है (डिफ़ॉल्ट रूप से पुनरावर्ती रूप से), प्रत्येक का कोड लोड किया जाता है और फिर छोटा किया जाता है, फिर `srcPath` + `code` + `error` युक्त ऑब्जेक्ट की एक सरणी लौटा दी जाती है:
 
 ```js
-const recursiveResults = minifyJS.minify('.');
-recursiveResults.forEach(result =>
-    console.log(result.srcPath) // कार्यशील निर्देशिका में JS फ़ाइलें + सभी नेस्टेड निर्देशिकाएँ
+const results = minifyJS.minify('.');
+results.forEach(result =>
+    console.log(result.srcPath) // कार्यशील निर्देशिका में JS फ़ाइलों के पथ + सभी नेस्टेड निर्देशिकाएँ
 );
-
-const nonRecursiveResults = minifyJS.minify('.', { recursive: false });
-nonRecursiveResults.forEach(result =>
-    console.log(result.srcPath) // JS फ़ाइलें केवल कार्यशील निर्देशिका में हैं
-);
-
-console.log(recursiveResults[1].code) // यदि पाया जाता है तो दूसरी JS फ़ाइल का छोटा कोड, या नहीं मिलने पर `undefined`
+console.log(results[1].code) // यदि पाया जाता है तो दूसरी JS फ़ाइल का छोटा कोड, या नहीं मिलने पर `undefined`
 ```
 
 विकल्प बूलियन हैं, ऑब्जेक्ट गुणों के रूप में पारित किए गए हैं। उदाहरण के लिए:
