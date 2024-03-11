@@ -139,14 +139,14 @@ else { // run as CLI tool
 
             // Build array of minified code
             const failedJSpaths = [];
-            const minifiedJSdata = unminnedJSfiles.map(jsPath => {
+            const minifiedData = unminnedJSfiles.map(jsPath => {
                 const minifyResult = minify(jsPath, { verbose: !config.quietMode });
                 if (minifyResult.error) failedJSpaths.push(jsPath);
                 return minifyResult;
             }).filter(minifyResult => !minifyResult.error); // filter out failed minifications
 
             // Write array data to files
-            minifiedJSdata.forEach(({ code, srcPath }) => {
+            minifiedData.forEach(({ code, srcPath }) => {
                 const outputDir = path.join(
                     path.dirname(srcPath), // path of file to be minified
                     /so?u?rce?$/.test(path.dirname(srcPath)) ? '../min' // + ../min/ if in *(src|source)/
@@ -164,10 +164,10 @@ else { // run as CLI tool
             });
 
             // Print final summary
-            if (minifiedJSdata.length > 0) {
+            if (minifiedData.length > 0) {
                 printIfNotQuiet(`\n${bg}Minification complete!${nc}`);
                 printIfNotQuiet(
-                    `${ minifiedJSdata.length } file${ minifiedJSdata.length > 1 ? 's' : '' } minified.`);
+                    `${ minifiedData.length } file${ minifiedData.length > 1 ? 's' : '' } minified.`);
             } else printIfNotQuiet(`${by}No unminified JavaScript files processed successfully.${nc}`);
             if (failedJSpaths.length > 0) {
                 printIfNotQuiet(`\n${br}`
