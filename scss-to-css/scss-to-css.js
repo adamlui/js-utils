@@ -138,11 +138,11 @@ else { // run as CLI tool
             printIfNotQuiet(''); // line break before first log
 
             // Build array of compilation data
-            const failedSCSSpaths = [];
+            const failedPaths = [];
             const compileData = scssFiles.map(scssPath => {
                 const compileResult = compile(scssPath, {
                     minify: !config.noMinify, sourceMaps: !config.noSourceMaps, verbose: !config.quietMode });
-                if (compileResult.error) failedSCSSpaths.push(scssPath);
+                if (compileResult.error) failedPaths.push(scssPath);
                 return compileResult;
             }).filter(data => !data.error ); // filter out failed compilations
 
@@ -173,11 +173,11 @@ else { // run as CLI tool
                     + ( !config.noSourceMaps ? ` + ${ compileData.length } source map${ cssCntSuffix }` : '' )
                     + ' generated.');
             } else printIfNotQuiet(`${by}No SCSS files processed successfully.${nc}`);
-            if (failedSCSSpaths.length > 0) {
+            if (failedPaths.length > 0) {
                 printIfNotQuiet(`\n${br}`
-                    + `${ failedSCSSpaths.length } file${ failedSCSSpaths.length > 1 ? 's' : '' }`
+                    + `${ failedPaths.length } file${ failedPaths.length > 1 ? 's' : '' }`
                     + ` failed to compile:${nc}`);
-                printIfNotQuiet(failedSCSSpaths.join(', '));
+                printIfNotQuiet(failedPaths.join(', '));
             }
         }
     }

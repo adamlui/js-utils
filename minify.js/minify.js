@@ -138,10 +138,10 @@ else { // run as CLI tool
             printIfNotQuiet(''); // line break before first log
 
             // Build array of minification data
-            const failedJSpaths = [];
+            const failedPaths = [];
             const minifyData = unminnedJSfiles.map(jsPath => {
                 const minifyResult = minify(jsPath, { verbose: !config.quietMode });
-                if (minifyResult.error) failedJSpaths.push(jsPath);
+                if (minifyResult.error) failedPaths.push(jsPath);
                 return minifyResult;
             }).filter(minifyResult => !minifyResult.error); // filter out failed minifications
 
@@ -169,11 +169,11 @@ else { // run as CLI tool
                 printIfNotQuiet(
                     `${ minifyData.length } file${ minifyData.length > 1 ? 's' : '' } minified.`);
             } else printIfNotQuiet(`${by}No unminified JavaScript files processed successfully.${nc}`);
-            if (failedJSpaths.length > 0) {
+            if (failedPaths.length > 0) {
                 printIfNotQuiet(`\n${br}`
-                    + `${ failedJSpaths.length } file${ failedJSpaths.length > 1 ? 's' : '' }`
+                    + `${ failedPaths.length } file${ failedPaths.length > 1 ? 's' : '' }`
                     + ` failed to minify:${nc}`);
-                printIfNotQuiet(failedJSpaths.join(', '));
+                printIfNotQuiet(failedPaths.join(', '));
             }
         }
     }
