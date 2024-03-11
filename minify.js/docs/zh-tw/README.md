@@ -198,7 +198,7 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 ```
  recursive (true)     如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。
- verbose (false)       在控制台/終端機中顯示日誌記錄。
+ verbose (false)      在控制台/終端機中顯示日誌記錄。
  dotFolders (false)   在文件搜尋中包含點資料夾。
  dotFiles (false)     在文件搜尋中包含點文件。
 ```
