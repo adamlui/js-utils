@@ -162,7 +162,7 @@ console.log(minifyResult.code);  // ছোট আউটপুট: function add(n
 ```js
 const recursiveResults = minifyJS.minify('.');
 recursiveResults.forEach(result =>
-    console.log(result.srcPath) // সমস্ত সাব-ডিরেক্টরিতে JS ফাইল
+    console.log(result.srcPath) // কাজের ডিরেক্টরি + সমস্ত নেস্টেড ডিরেক্টরিতে JS ফাইল
 );
 
 const nonRecursiveResults = minifyJS.minify('.', { recursive: false });

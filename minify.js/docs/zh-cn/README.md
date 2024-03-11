@@ -162,7 +162,7 @@ console.log(minifyResult.code);  // 缩小输出： function add(n,d){return n+d
 ```js
 const recursiveResults = minifyJS.minify('.');
 recursiveResults.forEach(result =>
-    console.log(result.srcPath) // 所有子目录中的 JS 文件
+    console.log(result.srcPath) // 工作目录 + 所有嵌套目录中的 JS 文件
 );
 
 const nonRecursiveResults = minifyJS.minify('.', { recursive: false });

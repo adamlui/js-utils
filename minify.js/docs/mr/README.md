@@ -122,7 +122,7 @@ minify-js input_folder output_folder
  -q, --quiet                 त्रुटी वगळता सर्व लॉगिंग दाबा.
 
 माहिती आदेश:
- -h, --help                  मदत स्क्रीन प्रदर्शित करा.
+ -h, --help                  मदत स्क्रीन प्रदर्शित करा. 
  -v, --version               आवृत्ती क्रमांक दर्शवा.
 ```
 
@@ -162,7 +162,7 @@ console.log(minifyResult.code);  // कमी केलेले आउटपु
 ```js
 const recursiveResults = minifyJS.minify('.');
 recursiveResults.forEach(result =>
-    console.log(result.srcPath) // JS फाइल्स सर्व उप-डिरेक्टरीमध्ये
+    console.log(result.srcPath) // कार्यरत निर्देशिकेतील JS फायली + सर्व नेस्टेड निर्देशिका
 );
 
 const nonRecursiveResults = minifyJS.minify('.', { recursive: false });

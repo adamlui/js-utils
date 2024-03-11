@@ -122,7 +122,7 @@ minify-js input_folder output_folder
  -q, --quiet                 त्रुटियों को छोड़कर सभी लॉगिंग को रोकें।
 
 जानकारी आदेश:
- -h, --help                  सहायता स्क्रीन प्रदर्शित करें।
+ -h, --help                  सहायता स्क्रीन प्रदर्शित करें.
  -v, --version               संस्करण संख्या दिखाएँ।
 ```
 
@@ -162,7 +162,7 @@ console.log(minifyResult.code);  // न्यूनतम आउटपुट: fu
 ```js
 const recursiveResults = minifyJS.minify('.');
 recursiveResults.forEach(result =>
-    console.log(result.srcPath) // सभी उप-निर्देशिकाओं में JS फ़ाइलें
+    console.log(result.srcPath) // कार्यशील निर्देशिका में JS फ़ाइलें + सभी नेस्टेड निर्देशिकाएँ
 );
 
 const nonRecursiveResults = minifyJS.minify('.', { recursive: false });
