@@ -127,11 +127,11 @@ else { // run as CLI tool
         const scssFiles = inputArg.endsWith('.scss') ? [inputPath]
             : findSCSS(inputPath, { recursive: !config.noRecursion });
 
-        if (config.dryRun) { // print files to be processed
+        if (config.dryRun && scssFiles?.length > 0) { // print files to be processed
             console.info(`\n${by}SCSS files to be compiled:${nc}`);
             scssFiles?.forEach(file => console.info(file));
 
-        } else if (scssFiles?.length > 0) { // actually compile SCSS files
+        } else { // actually compile SCSS files
             printIfNotQuiet(''); // line break before first log
 
             // Build array of compilation data
