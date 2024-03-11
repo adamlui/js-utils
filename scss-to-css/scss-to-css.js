@@ -139,7 +139,7 @@ else { // run as CLI tool
 
             // Build array of compilation data
             const failedSCSSpaths = [];
-            const cssData = scssFiles.map(scssPath => {
+            const compileData = scssFiles.map(scssPath => {
                 const compileResult = compile(scssPath, {
                     minify: !config.noMinify, sourceMaps: !config.noSourceMaps, verbose: !config.quietMode });
                 if (compileResult.error) failedSCSSpaths.push(scssPath);
@@ -147,7 +147,7 @@ else { // run as CLI tool
             }).filter(data => !data.error ); // filter out failed compilations
 
             // Write array data to files
-            cssData.forEach(({ code, srcMap, srcPath }) => {                
+            compileData.forEach(({ code, srcMap, srcPath }) => {                
                 const outputDir = path.join(
                     path.dirname(srcPath), // path of file to be minified
                     /(?:src|s[ac]ss)$/.test(path.dirname(srcPath)) ? '../css' // + ../css/ if in *(src|sass|scss)/
@@ -166,11 +166,11 @@ else { // run as CLI tool
             });
 
             // Print final summary
-            if (cssData.length > 0) {
-                const cssCntSuffix = cssData.length > 1 ? 's' : '';
+            if (compileData.length > 0) {
+                const cssCntSuffix = compileData.length > 1 ? 's' : '';
                 printIfNotQuiet(`\n${bg}Compilation complete!${nc}`);
-                printIfNotQuiet(`${ cssData.length } CSS file${ cssCntSuffix }`
-                    + ( !config.noSourceMaps ? ` + ${ cssData.length } source map${ cssCntSuffix }` : '' )
+                printIfNotQuiet(`${ compileData.length } CSS file${ cssCntSuffix }`
+                    + ( !config.noSourceMaps ? ` + ${ compileData.length } source map${ cssCntSuffix }` : '' )
                     + ' generated.');
             } else printIfNotQuiet(`${by}No SCSS files processed successfully.${nc}`);
             if (failedSCSSpaths.length > 0) {
