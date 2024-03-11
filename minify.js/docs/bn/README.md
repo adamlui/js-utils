@@ -169,6 +169,8 @@ const nonRecursiveResults = minifyJS.minify('.', { recursive: false });
 nonRecursiveResults.forEach(result =>
     console.log(result.srcPath) // JS ফাইল শুধুমাত্র ওয়ার্কিং ডিরেক্টরিতে
 );
+
+console.log(recursiveResults[1].code) // পাওয়া গেলে 2য় JS ফাইলের সংক্ষিপ্ত কোড বা না পাওয়া গেলে `undefined`
 ```
 
 বিকল্পগুলি হল বুলিয়ান, অবজেক্টের বৈশিষ্ট্য হিসাবে পাস করা হয়েছে৷ উদাহরণ স্বরূপ:

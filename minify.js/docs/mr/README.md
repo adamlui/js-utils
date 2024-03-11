@@ -169,6 +169,8 @@ const nonRecursiveResults = minifyJS.minify('.', { recursive: false });
 nonRecursiveResults.forEach(result =>
     console.log(result.srcPath) // JS फाइल्स फक्त कार्यरत निर्देशिकेत
 );
+
+console.log(recursiveResults[1].code) // आढळल्यास 2रा JS फाइलचा मिनिफाइड कोड, किंवा न आढळल्यास `undefined`
 ```
 
 पर्याय बुलियन आहेत, ऑब्जेक्ट गुणधर्म म्हणून पास केले जातात. उदाहरणार्थ:

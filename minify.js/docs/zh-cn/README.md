@@ -169,6 +169,8 @@ const nonRecursiveResults = minifyJS.minify('.', { recursive: false });
 nonRecursiveResults.forEach(result =>
     console.log(result.srcPath) // 仅工作目录中的 JS 文件
 );
+
+console.log(recursiveResults[1].code) // 如果找到，则为第二个 JS 文件的精简代码，如果未找到，则为 `undefined`
 ```
 
 选项是布尔值，作为对象属性传递。 例如：
