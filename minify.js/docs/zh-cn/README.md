@@ -196,7 +196,7 @@ minifyJS.findJS(searchDir, { recursive: false });
 // 返回包含指向 `searchDir` 中未缩小的 JS 文件的文件路径的数组
 ```
 
-可能的参数（及其默认设置）有：可能的参数（及其默认设置）有：
+可能的参数（及其默认设置）有：
 
 ```
  recursive (true)     如果传递目录路径，则递归搜索嵌套文件。
