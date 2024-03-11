@@ -5,7 +5,8 @@
             <img height=14 src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/black/icon32.svg">
         </picture>
         &nbsp;简体中文 |
-        <a href="../LICENSE.md">English</a>
+        <a href="../LICENSE.md">English</a> |
+        <a href="../zh-tw/LICENSE.md">繁體中文</a> 
     </h6>
 </div>
 
