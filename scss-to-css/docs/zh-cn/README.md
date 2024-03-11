@@ -169,7 +169,7 @@ console.log(results[1].code); // 如果找到，则编译第二个 SCSS 文件�
 
 ```js
 scssToCSS.compile(inputDir, { minify: false });
-// returns data objects where `.code` contains unminified CSS
+// 返回 `.code` 包含未缩小 CSS 的数据对象
 ```
 
 可能的参数（及其默认设置）有：
@@ -190,7 +190,7 @@ scssToCSS.compile(inputDir, { minify: false });
 
 ```js
 scssToCSS.findSCSS(searchDir, { recursive: false });
-// 返回包含恰好位于“searchDir”中的 SCSS 文件的文件路径的数组
+// 返回包含恰好位于 `searchDir` 中的 SCSS 文件的文件路径的数组
 ```
 
 可能的参数（及其默认设置）有：
