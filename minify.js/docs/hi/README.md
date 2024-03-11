@@ -198,7 +198,7 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 ```
  recursive (true)     यदि डीआईआर पथ पारित हो गया है तो नेस्टेड फ़ाइलों को पुनरावर्ती रूप से खोजें।
- verbose (true)       कंसोल/टर्मिनल में लॉगिंग दिखाएँ।
+ verbose (false)       कंसोल/टर्मिनल में लॉगिंग दिखाएँ।
  dotFolders (false)   फ़ाइल खोज में डॉटफ़ोल्डर शामिल करें।
  dotFiles (false)     फ़ाइल खोज में डॉटफ़ाइलें शामिल करें।
 ```
