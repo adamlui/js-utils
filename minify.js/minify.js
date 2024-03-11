@@ -173,7 +173,7 @@ else { // run as CLI tool
                 printIfNotQuiet(`\n${br}`
                     + `${ failedPaths.length } file${ failedPaths.length > 1 ? 's' : '' }`
                     + ` failed to minify:${nc}`);
-                printIfNotQuiet(failedPaths.join(', '));
+                failedPaths.forEach(path => printIfNotQuiet(path));
             }
         }
     }
