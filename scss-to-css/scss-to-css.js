@@ -30,12 +30,12 @@ function compile(inputPath, options = {}) {
     if (typeof inputPath !== 'string')
         return console.error('ERROR:'
             + ' First argument must be a string representing a file/folder path.');
+    const compileOptions = { style: options.minify ? 'compressed' : 'expanded', sourceMap: options.sourceMaps };
     if (fs.existsSync(inputPath)) { // compile based on path arg
         if (inputPath.endsWith('.scss')) { // file path passed
             if (options.verbose) console.info(`Compiling ${ inputPath }...`);
             try { // to compile file passed
-                const compileResult = sass.compile(inputPath, {
-                    style: options.minify ? 'compressed' : 'expanded', sourceMap: options.sourceMaps });
+                const compileResult = sass.compile(inputPath, compileOptions);
                 return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: inputPath };
             } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return { error: err }; }
         } else { // dir path passed
@@ -43,8 +43,7 @@ function compile(inputPath, options = {}) {
                 .map(scssPath => { // compile found SCSS files
                     if (options.verbose) console.info(`Compiling ${ scssPath }...`); 
                     try { // to compile found file
-                        const compileResult = sass.compile(scssPath, {
-                            style: options.minify ? 'compressed' : 'expanded', sourceMap: options.sourceMaps });
+                        const compileResult = sass.compile(scssPath, compileOptions);
                         return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: scssPath };
                     } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return { error: err }; }
                 }).filter(data => !data.error ); // filter out failed compilations
