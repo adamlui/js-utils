@@ -37,10 +37,16 @@ As a **global utility**:
 npm install -g @adamlui/minify.js
 ```
 
-As a **dev dependency**, from your project root:
+As a **dev dependency** (e.g. for build scripts), from your project root:
 
 ```
 npm install -D @adamlui/minify.js
+```
+
+As a **runtime dependency** (e.g. for on-the-fly minification), from your project root:
+
+```
+npm install @adamlui/minify.js
 ```
 
 ## 💻 Command line usage
