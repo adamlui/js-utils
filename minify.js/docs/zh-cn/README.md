@@ -37,13 +37,13 @@
 npm install -g @adamlui/minify.js
 ```
 
-作为**开发人员依赖**（例如，对于构建脚本），从项目根目录：
+作为**开发人员依赖**（例如，对于构建脚本）：
 
 ```
 npm install -D @adamlui/minify.js
 ```
 
-作为**运行时依赖项**（例如，用于动态缩小），从项目根目录：
+作为**运行时依赖项**（例如，用于动态缩小）：
 
 ```
 npm install @adamlui/minify.js
