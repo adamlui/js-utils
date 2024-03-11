@@ -121,19 +121,25 @@ Info commands:
  -v, --version               Show version number.
 ```
 
-## 🔌 API usage
+## 🔌 API reference
 
-You can load **minify.js** in your app like this:
+You can also import **minify.js** into your app to use its API methods, both as an ECMAScript module or as a CommonJS module.
+
+#### ESM:
+
+```js
+import * as minifyJS from '@adamlui/minify.js';
+```
+
+#### CJS:
 
 ```js
 const minifyJS = require('@adamlui/minify.js');
 ```
 
-There is a single high level function, `minify(input, options)`, which will perform all minification/recursion phases in a configurable manner that adapts to the string input.
+### minify(input, options)
 
-### minify(input)
-
-Input is a string that represents either source code or a path.
+This function minifies JavaScript code based on the string input supplied.
 
 If **source code** is passed, it is directly minified, then an object containing `srcPath` + `code` + `error` is returned:
 
@@ -160,13 +166,40 @@ nonRecursiveResults.forEach(result =>
 );
 ```
 
-### minify(options)
+Options are boolean, passed as object properties. For example:
 
-Options are boolean (set to `true` by default) passed as object properties e.g. `minifyJS.minify(input, { option: true })`:
+```js
+minifyJS.minify(input, { dotFiles: true });
+// returns data object where dotfiles are also processed if `input` is a path
+```
+
+Possible parameters (and their default settings) are:
 
 ```
- recursive     Recursively search for nested files if dir path passed.
- verbose       Show logging in console/terminal.
+ recursive (true)     Recursively search for nested files if dir path passed.
+ verbose (true)       Show logging in console/terminal.
+ dotFolders (false)   Include dotfolders in file search.
+ dotFiles (false)     Include dotfiles in file search.
+```
+
+### findJS(searchDir, options)
+
+This function searches for all unminified JavaScript files within the `searchDir` string passed (useful for discovering what files [`minify()`](#minifyinput-options) will process) and returns an array containing their filepaths.
+
+Options are boolean, passed as object properties. For example:
+
+```js
+minifyJS.findJS(searchDir, { recursive: false });
+// returns array containing filepaths to unminified JS files in exactly `searchDir`
+```
+
+Possible parameters (and their default settings) are:
+
+```
+ recursive (true)     Recursively search for nested files if dir path passed.
+ verbose (true)       Show logging in console/terminal.
+ dotFolders (false)   Include dotfolders in file search.
+ dotFiles (false)     Include dotfiles in file search.
 ```
 
 <br>

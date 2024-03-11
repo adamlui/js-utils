@@ -120,27 +120,33 @@ minify-js input_folder output_folder
  -v, --version               顯示版本號。
 ```
 
-## 🔌 API 使用
+## 🔌 API 參考
 
-您可以像這樣在應用程式中載入 **minify.js**：
+您也可以將 **minify.js** 匯入到您的應用程式中以使用其 API 方法，無論是作為 ECMAScript 模組還是作為 CommonJS 模組。
+
+#### ESM:
+
+```js
+import * as minifyJS from '@adamlui/minify.js';
+```
+
+#### CJS:
 
 ```js
 const minifyJS = require('@adamlui/minify.js');
 ```
 
-有一個高階函數 `minify(input, options)`，它將以適應字串輸入的可配置方式執行所有縮小/遞歸階段。
+### minify(input, options)
 
-### minify(input)
+此函數根據提供的字串輸入來縮小 JavaScript 程式碼。
 
-輸入是表示原始碼或路徑的字串。
-
-如果傳遞**原始碼**，則直接縮小，然後傳回一個包含 `srcPath` + `code` + `error` 的物件：
+如果傳入**原始碼**，則直接縮小，然後傳回一個包含 `srcPath` + `code` + `error` 的物件：
 
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
       minifyResult = minifyJS.minify(srcCode);
 console.log(minifyResult.error); // 運行時錯誤，如果沒有錯誤則為 `undefined`
-console.log(minifyResult.code);  // 縮小輸出：function add(n,d){return n+d}
+console.log(minifyResult.code);  // 縮小輸出： function add(n,d){return n+d}
 ```
 
 如果傳遞了**檔案路徑**，則載入檔案的程式碼然後縮小，傳回一個像上面一樣的物件。
@@ -150,40 +156,50 @@ console.log(minifyResult.code);  // 縮小輸出：function add(n,d){return n+d}
 ```js
 const recursiveResults = minifyJS.minify('.');
 recursiveResults.forEach(result =>
-    console.log(result.srcPath) // 所有子目錄中的 JavaScript 文件
+    console.log(result.srcPath) // 所有子目錄中的 JS 文件
 );
 
 const nonRecursiveResults = minifyJS.minify('.', { recursive: false });
 nonRecursiveResults.forEach(result =>
-    console.log(result.srcPath) // 僅工作目錄中的 JavaScript 文件
+    console.log(result.srcPath) // 僅工作目錄中的 JS 文件
 );
 ```
 
-### minify(options)
+選項是布林值，作為物件屬性傳遞。 例如：
 
-選項是布林值（預設為 `true`）作為物件屬性傳遞，例如 `minifyJS.minify(input, { option: true })`:
-
-```
- recursive     如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。
- verbose       在控制台/終端機中顯示日誌記錄。
+```js
+minifyJS.minify(input, { dotFiles: true });
+// 如果 `input` 是路徑，則傳回資料對象，其中也會處理點文件
 ```
 
-<br>
+可能的參數（及其預設設定）有：
 
-## 💖 支援
+```
+ recursive (true)     如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。
+ verbose (true)       在控制台/終端機中顯示日誌記錄。
+ dotFolders (false)   在文件搜尋中包含點資料夾。
+ dotFiles (false)     在文件搜尋中包含點文件。
+```
 
-如果這對您有幫助，請考慮[給予 GitHub ⭐](https://github.com/adamlui/js-utils)！
-<br><br>
+### findJS(searchDir, options)
 
-## 🏛️ MIT 许可证
+此函數搜尋傳遞的 `searchDir` 字串中的所有未縮小的 JavaScript 檔案（對於發現 [`minify()`](#minifyinput-options) 將處理哪些檔案很有用）並傳回包含其檔案路徑的陣列。
 
-**版權所有 © 2023–2024 [刘展鹏 (Adam Lui)](https://github.com/adamlui)**
+選項是布林值，作為物件屬性傳遞。 例如：
 
-特此免費授予任何取得副本的人許可本軟體和相關文件文件（『軟體』），處理在軟體中不受限制，包括但不限於權利使用、複製、修改、合併、發布、分發、再授權和/或出售該軟體的副本，並允許該軟體是提供這樣做，但須滿足以下條件：
+```js
+minifyJS.findJS(searchDir, { recursive: false });
+// 傳回包含指向 `searchDir` 中未縮小的 JS 檔案的檔案路徑的陣列
+```
 
-上述版權聲明和本許可聲明應包含在所有軟體的副本或重要部分。
+可能的參數（及其預設設定）有：
 
-本軟體『依現況』提供，不提供任何形式的明示或保證暗示的，包括但不限於適銷性保證，適用於特定目的和非侵權。 在任何情況下都不得作者或版權持有人對任何索賠、損害或其他責任，無論是在合約、侵權或其他方面的行為中，由以下原因引起，出於或與軟體或使用或其他交易有關軟體。
+```
+ recursive (true)     如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。
+ verbose (true)       在控制台/終端機中顯示日誌記錄。
+ dotFolders (false)   在文件搜尋中包含點資料夾。
+ dotFiles (false)     在文件搜尋中包含點文件。
+```
 
 <br>
 
