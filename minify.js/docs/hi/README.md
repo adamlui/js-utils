@@ -207,6 +207,12 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 <br>
 
+## 💖 सहायता
+
+यदि इससे आपको मदद मिली तो कृपया [GitHub ⭐](https://github.com/adamlui/js-utils) देने पर विचार करें!
+
+<br>
+
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <a href="https://github.com/adamlui/js-utils">**घर**</a> /
