@@ -24,6 +24,13 @@ As a **dev dependency** (e.g. for build scripts):
 npm install -D @adamlui/scss-to-css
 ```
 
+
+As a **runtime dependency** (e.g. for on-the-fly minification):
+
+```
+npm install @adamlui/scss-to-css
+```
+
 ## 💻 Usage
 
 The basic **global command** is:
