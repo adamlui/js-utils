@@ -4,6 +4,7 @@ on:
   release:
     types: [created]
     tags: scss-to-css*
+
 jobs:
   build:
     runs-on: ubuntu-latest
