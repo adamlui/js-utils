@@ -17,12 +17,13 @@ function findJS(searchDir, options = {}) {
             (options.dotFolders || !file.startsWith('.')) && options.recursive) {
                 if (options.verbose) console.info(`Searching for unminified JS files in: ${filePath}...`);
                 jsFiles.push( // recursively find unminified JS in eligible dir
-                    ...findJS(filePath, options));
-        } else if (/\.js(?<!\.min\.js)$/.test(file) &&
+                    ...findJS(filePath, { ...options, isRecursing: true }));
+        } else if (/\.jss(?<!\.min\.js)$/.test(file) &&
             (options.dotFiles || !file.startsWith('.')))
                 jsFiles.push(filePath); // store eligible unminified JS file for minification
     });
-    return jsFiles;
+    if (options.isRecursing || jsFiles.length > 0) return jsFiles;
+    else console.info('\nNo unminified JavaScript files found.');
 }
 
 function minify(input, options = {}) {
@@ -132,14 +133,11 @@ else { // run as CLI tool
         const unminnedJSfiles = inputArg.endsWith('.js') ? [inputPath]
             : findJS(inputPath, { recursive: !config.noRecursion });
 
-        if (unminnedJSfiles.length === 0) { // print nothing found
-            printIfNotQuiet(`\n${by}No unminified JavaScript files found.${nc}`);
-
-        } else if (config.dryRun) { // print files to be processed
+        if (config.dryRun) { // print files to be processed
             console.info(`\n${by}JS files to be minified:${nc}`);
             unminnedJSfiles.forEach(file => console.info(file));
 
-        } else { // actually minify JavaScript files
+        } else if (unminnedJSfiles?.length > 0) { // actually minify JavaScript files
             printIfNotQuiet(''); // line break before first log
 
             // Build array of minification data

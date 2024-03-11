@@ -17,11 +17,12 @@ function findSCSS(searchDir, options = {}) {
             (options.dotFolders || !file.startsWith('.')) && options.recursive) {
                 if (options.verbose) console.info(`Searching for SCSS files in: ${filePath}...`);
                 scssFiles.push( // recursively find SCSS in eligible dir
-                    ...findSCSS(filePath, options));
+                    ...findSCSS(filePath, { ...options, isRecursing: true }));
         } else if (file.endsWith('.scss')) // SCSS file found
             scssFiles.push(filePath); // store it for compilation
     });
-    return scssFiles;
+    if (options.isRecursing || scssFiles.length > 0) return scssFiles;
+    else console.info('\nNo SCSS files found.');
 }
 
 function compile(inputPath, options = {}) {
@@ -126,14 +127,11 @@ else { // run as CLI tool
         const scssFiles = inputArg.endsWith('.scss') ? [inputPath]
             : findSCSS(inputPath, { recursive: !config.noRecursion });
 
-        if (scssFiles.length === 0) { // print nothing found
-            printIfNotQuiet(`\n${by}No SCSS files found.${nc}`);
-
-        } else if (config.dryRun) { // print files to be processed
+        if (config.dryRun) { // print files to be processed
             console.info(`\n${by}SCSS files to be compiled:${nc}`);
             scssFiles.forEach(file => console.info(file));
 
-        } else { // actually compile SCSS files
+        } else if (scssFiles?.length > 0) { // actually compile SCSS files
             printIfNotQuiet(''); // line break before first log
 
             // Build array of compilation data
