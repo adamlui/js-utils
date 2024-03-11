@@ -1,8 +1,9 @@
-name: Publish package to GitHub Packages + npm on new releases
+name: Publish minify.js to GitHub Packages + npm
 
 on:
-  release:
-    types: [created]
+  push:
+    branches: main
+    paths: "**"
 
 jobs:
   build:
@@ -12,8 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm ci
-      - run: npm test
+      - run: cd minify.js && npm ci
 
   publish-gpr:
     needs: build
@@ -28,8 +28,8 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
           scope: "@adamlui"
-      - run: npm ci
-      - run: npm publish
+      - run: cd minify.js && npm ci
+      - run: cd minify.js && npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.PUBLISH_GPR_PAT}}
 
@@ -42,7 +42,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm publish --access public
+      - run: cd minify.js && npm ci
+      - run: cd minify.js && npm publish --access public --dry-run
         env:
           NODE_AUTH_TOKEN: ${{secrets.PUBLISH_NPM_PAT}}
