@@ -7,7 +7,7 @@ const fs = require('fs'),
 
 // Define MAIN functions
 
-function findSCSS(dir, options = {}) {
+function findSCSS(searchDir, options = {}) {
     const defaultOptions = { recursive: true, verbose: false, dotFolders: false };
     options = { ...defaultOptions, ...options };        
     const dirFiles = fs.readdirSync(dir), scssFiles = [];

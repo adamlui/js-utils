@@ -7,7 +7,7 @@ const fs = require('fs'),
 
 // Define MAIN functions
 
-function findJS(dir, options = {}) {
+function findJS(searchDir, options = {}) {
     const defaultOptions = { recursive: true, verbose: false, dotFolders: false, dotFiles: false };
     options = { ...defaultOptions, ...options };
     const dirFiles = fs.readdirSync(dir), jsFiles = [];
