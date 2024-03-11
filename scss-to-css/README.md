@@ -25,7 +25,7 @@ npm install -D @adamlui/scss-to-css
 ```
 
 
-As a **runtime dependency** (e.g. for on-the-fly minification):
+As a **runtime dependency** (e.g. for on-the-fly compilation):
 
 ```
 npm install @adamlui/scss-to-css
@@ -54,7 +54,7 @@ scss-to-css [input_path] [output_path]
 ```
 
 - `[input_path]`: Path to SCSS file or directory containing SCSS files to be compiled, relative to the current working directory.
-- `[output_path]`: Path to file or directory where CSS + sourcemap files will be stored, relative to original file location (if not provided, `css/` is used).
+- `[output_path]`: Path to file or directory where CSS + source map files will be stored, relative to original file location (if not provided, `css/` is used).
 
 **💡 Note:** If folders are passed, files will be processed recursively unless `-R` or `--no-recursion` is passed.
 
@@ -170,7 +170,7 @@ Possible parameters (and their default settings) are:
  verbose (true)       Show logging in console/terminal.
  dotFolders (false)   Include dotfolders in file search.
  minify (true)        Minify output CSS.
- sourceMaps (true)    Generate CSS sourcemaps.
+ sourceMaps (true)    Generate CSS source maps.
 ```
 
 ### findSCSS(searchDir, options)
