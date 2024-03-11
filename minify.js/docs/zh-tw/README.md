@@ -119,6 +119,7 @@ minify-js input_folder output_folder
  -d, --include-dotfolders    在文件搜尋中包含點資料夾。
  -D, --include-dotfiles      在文件搜尋中包含點文件。
  -R, --no-recursion          禁用遞歸文件搜尋。
+ -M, --no-mangle             禁用修改名稱。
  -q, --quiet                 禁止除錯誤之外的所有日誌記錄。
 
 訊息命令：
@@ -181,6 +182,7 @@ minifyJS.minify(input, { dotFiles: true });
  verbose (true)       在控制台/終端機中顯示日誌記錄。
  dotFolders (false)   在文件搜尋中包含點資料夾。
  dotFiles (false)     在文件搜尋中包含點文件。
+ mangle (true)        縮短變數名稱（通常為一個字元）。
 ```
 
 ### findJS(searchDir, options)

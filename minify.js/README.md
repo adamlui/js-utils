@@ -120,6 +120,7 @@ Config options:
  -d, --include-dotfolders    Include dotfolders in file search.
  -D, --include-dotfiles      Include dotfiles in file search.
  -R, --no-recursion          Disable recursive file searching.
+ -M, --no-mangle             Disable mangling names.
  -q, --quiet                 Suppress all logging except errors.
 
 Info commands:
@@ -182,6 +183,7 @@ Possible parameters (and their default settings) are:
  verbose (true)       Show logging in console/terminal.
  dotFolders (false)   Include dotfolders in file search.
  dotFiles (false)     Include dotfiles in file search.
+ mangle (true)        Shorten variable names (typically to one character).
 ```
 
 ### findJS(searchDir, options)

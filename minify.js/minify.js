@@ -26,15 +26,17 @@ function findJS(searchDir, options = {}) {
 }
 
 function minify(input, options = {}) {
-    const defaultOptions = { recursive: true, verbose: true, dotFolders: false, dotFiles: false };
+    const defaultOptions = {
+        recursive: true, verbose: true, dotFolders: false, dotFiles: false, mangle: true };
     options = { ...defaultOptions, ...options };
     if (typeof input !== 'string')
         return console.error('ERROR:'
             + ' First argument must be a string of source code or file/folder path.');
+    const minifyOptions = { mangle: options.mangle ? { toplevel: true } : false };
     if (fs.existsSync(input)) { // minify based on path arg
         if (input.endsWith('.js')) { // file path passed
             if (options.verbose) console.info(`Minifying ${ input }...`);
-            const minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'));
+            const minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions);
             if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
             return { code: minifyResult.code, srcPath: input, error: minifyResult.error };
         } else { // dir path passed
@@ -43,14 +45,14 @@ function minify(input, options = {}) {
                 .map(jsPath => { // minify found JS files
                     if (options.verbose) console.info(`Minifying ${ jsPath }...`);
                     const srcCode = fs.readFileSync(jsPath, 'utf8'),
-                          minifyResult = uglifyJS.minify(srcCode);
+                          minifyResult = uglifyJS.minify(srcCode, minifyOptions);
                     if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
                     return { code: minifyResult.code, srcPath: jsPath, error: minifyResult.error };
                 }).filter(data => !data.error); // filter out failed minifications
         }
     } else { // minify based on src code arg
         if (options.verbose) console.info('Minifying passed source code...');
-        const minifyResult = uglifyJS.minify(input);
+        const minifyResult = uglifyJS.minify(input, minifyOptions);
         if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
         return { code: minifyResult.code, srcPath: input, error: minifyResult.error };
     }
@@ -76,6 +78,8 @@ else { // run as CLI tool
             /^--?(?:df|D|(?:include-?)?dot-?files?)$/.test(arg)),
         noRecursion: process.argv.some(arg =>
             /^--?(?:R|(?:disable|no)-?recursion)$/.test(arg)),
+        noMangle: process.argv.some(arg =>
+            /^--?(?:M|(?:disable|no)-?mangle)$/.test(arg)),
         quietMode: process.argv.some(arg => /^--?q(?:uiet)?$/.test(arg))
     };
 
@@ -95,6 +99,7 @@ else { // run as CLI tool
         printHelp(' -d, --include-dotfolders    Include dotfolders in file search.');
         printHelp(' -D, --include-dotfiles      Include dotfiles in file search.');
         printHelp(' -R, --no-recursion          Disable recursive file searching.');
+        printHelp(' -M, --no-mangle             Disable mangling names.');
         printHelp(' -q, --quiet                 Suppress all logging except errors.');
         printHelp('\nInfo commands:');
         printHelp(' -h, --help                  Display this help screen.');
@@ -140,7 +145,7 @@ else { // run as CLI tool
             // Build array of minification data
             const failedPaths = [];
             const minifyData = unminnedJSfiles.map(jsPath => {
-                const minifyResult = minify(jsPath, { verbose: !config.quietMode });
+                const minifyResult = minify(jsPath, { verbose: !config.quietMode, mangle: !config.noMangle });
                 if (minifyResult.error) failedPaths.push(jsPath);
                 return minifyResult;
             }).filter(minifyResult => !minifyResult.error); // filter out failed minifications

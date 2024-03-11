@@ -119,6 +119,7 @@ minify-js input_folder output_folder
  -d, --include-dotfolders    फ़ाइल खोज में डॉटफ़ोल्डर शामिल करें।
  -D, --include-dotfiles      फ़ाइल खोज में डॉटफ़ाइलें शामिल करें।
  -R, --no-recursion          पुनरावर्ती फ़ाइल खोज अक्षम करें।
+ -M, --no-mangle             नामों में गड़बड़ी अक्षम करें।
  -q, --quiet                 त्रुटियों को छोड़कर सभी लॉगिंग को रोकें।
 
 जानकारी आदेश:
@@ -181,6 +182,7 @@ minifyJS.minify(input, { dotFiles: true });
  verbose (true)       कंसोल/टर्मिनल में लॉगिंग दिखाएँ।
  dotFolders (false)   फ़ाइल खोज में डॉटफ़ोल्डर शामिल करें।
  dotFiles (false)     फ़ाइल खोज में डॉटफ़ाइलें शामिल करें।
+ mangle (true)        परिवर्तनीय नामों को छोटा करें (आमतौर पर एक वर्ण तक)।
 ```
 
 ### findJS(searchDir, options)

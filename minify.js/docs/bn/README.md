@@ -119,6 +119,7 @@ minify-js input_folder output_folder
  -d, --include-dotfolders    ফাইল অনুসন্ধানে ডটফোল্ডার অন্তর্ভুক্ত করুন।
  -D, --include-dotfiles      ফাইল অনুসন্ধানে ডটফাইলগুলি অন্তর্ভুক্ত করুন।
  -R, --no-recursion          পুনরাবৃত্ত ফাইল অনুসন্ধান অক্ষম করুন।
+ -M, --no-mangle             ম্যাঙ্গলিং নাম অক্ষম করুন।
  -q, --quiet                 ত্রুটি ছাড়া সব লগিং দমন করুন।
 
 তথ্য কমান্ড:
@@ -181,6 +182,7 @@ minifyJS.minify(input, { dotFiles: true });
  verbose (true)       কনসোল/টার্মিনালে লগইন দেখান।
  dotFolders (false)   ফাইল অনুসন্ধানে ডটফোল্ডার অন্তর্ভুক্ত করুন।
  dotFiles (false)     ফাইল অনুসন্ধানে ডটফাইলগুলি অন্তর্ভুক্ত করুন।
+ mangle (true)        পরিবর্তনশীল নাম সংক্ষিপ্ত করুন (সাধারণত একটি অক্ষর পর্যন্ত)।
 ```
 
 ### findJS(searchDir, options)
