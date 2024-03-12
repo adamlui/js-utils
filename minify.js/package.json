@@ -29,13 +29,13 @@
   },
   "keywords": [
     "javascript",
-    "js",
-    "js-utils",
-    "utils",
     "utilities",
+    "js-utils",
     "minifier",
+    "api",
+    "js",
     "cli",
-    "api"
+    "utils"
   ],
   "bugs": {
     "url": "https://github.com/adamlui/js-utils/issues"

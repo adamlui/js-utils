@@ -29,13 +29,13 @@
   },
   "keywords": [
     "scss",
-    "sass",
-    "css",
-    "stylesheets",
     "compiler",
     "minifier",
     "cli",
-    "api"
+    "api",
+    "sass",
+    "css",
+    "stylesheets"
   ],
   "bugs": {
     "url": "https://github.com/adamlui/js-utils/issues"
