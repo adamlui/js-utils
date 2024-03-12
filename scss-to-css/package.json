@@ -33,7 +33,9 @@
     "css",
     "stylesheets",
     "compiler",
-    "minifier"
+    "minifier",
+    "cli",
+    "api"
   ],
   "bugs": {
     "url": "https://github.com/adamlui/js-utils/issues"
