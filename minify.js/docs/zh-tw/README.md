@@ -37,13 +37,13 @@
 npm install -g @adamlui/minify.js
 ```
 
-作為**開發人員依賴**（例如，對於建置腳本）：
+作為**開發人員依賴**（例如，對於建置腳本），從專案根目錄：
 
 ```
 npm install -D @adamlui/minify.js
 ```
 
-作為**運行時依賴項**（例如，用於動態縮小）：
+作為**運行時依賴**（例如，用於動態縮小），從專案根目錄：
 
 ```
 npm install @adamlui/minify.js

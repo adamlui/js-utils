@@ -30,14 +30,13 @@ As a **global utility**:
 npm install -g @adamlui/scss-to-css
 ```
 
-As a **dev dependency** (e.g. for build scripts):
+As a **dev dependency** (e.g. for build scripts), from your project root:
 
 ```
 npm install -D @adamlui/scss-to-css
 ```
 
-
-As a **runtime dependency** (e.g. for on-the-fly compilation):
+As a **runtime dependency** (e.g. for on-the-fly compilation), from your project root:
 
 ```
 npm install @adamlui/scss-to-css

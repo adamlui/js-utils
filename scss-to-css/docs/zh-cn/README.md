@@ -30,14 +30,13 @@
 npm install -g @adamlui/scss-to-css
 ```
 
-作为**开发人员依赖**（例如，对于构建脚本）：
+作为**开发人员依赖**（例如，对于构建脚本），从项目根目录：
 
 ```
 npm install -D @adamlui/scss-to-css
 ```
 
-
-作为**运行时依赖**（例如，用于动态编译）：
+作为**运行时依赖**（例如，用于动态编译），从项目根目录：
 
 ```
 npm install @adamlui/scss-to-css

@@ -30,13 +30,13 @@
 npm install -g @adamlui/scss-to-css
 ```
 
-作為**開發人員依賴**（例如，對於建置腳本）：
+作為**開發人員依賴**（例如，對於建置腳本），從專案根目錄：
 
 ```
 npm install -D @adamlui/scss-to-css
 ```
 
-作為**運行時依賴**（例如，用於動態編譯）：
+作為**運行時依賴**（例如，用於動態編譯），從專案根目錄：
 
 ```
 npm install @adamlui/scss-to-css
