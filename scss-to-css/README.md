@@ -11,7 +11,7 @@
     </h6>
 </div>
 
-# { } scss-to-css.js 
+# { } scss-to-css
 
 ### Recursively compile all SCSS files into minified CSS.
 
@@ -228,4 +228,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a href="https://github.com/adamlui/js-utils">**Home**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
-<a href="#--scss-to-cssjs">Back to top ↑</a>
+<a href="#--scss-to-css">Back to top ↑</a>
