@@ -228,4 +228,4 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 <a href="https://github.com/adamlui/js-utils">**घर**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">चर्चा करना</a> /
-<a href="#-minifyjs">Back to top ↑</a>
+<a href="#-minifyjs">वापस शीर्ष पर ↑</a>
