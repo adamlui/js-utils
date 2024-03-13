@@ -6,7 +6,8 @@
         </picture>
         &nbsp;繁體中文 |
         <a href="../SECURITY.md">English</a> |
-        <a href="../zh-cn/SECURITY.md">简体中文</a>
+        <a href="../zh-cn/SECURITY.md">简体中文</a> |
+        <a href="../hi/SECURITY.md">हिंदी</a>
     </h6>
 </div>
 
