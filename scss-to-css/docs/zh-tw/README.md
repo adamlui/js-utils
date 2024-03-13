@@ -11,7 +11,7 @@
     </h6>
 </div>
 
-# { } scss-to-css.js 
+# { } scss-to-css
 
 ### 將所有 SCSS 檔案遞歸編譯為縮小的 CSS。
 
