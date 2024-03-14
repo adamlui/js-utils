@@ -193,7 +193,7 @@ minifyJS.minify(input, { dotFiles: true });
 
 ```js
 minifyJS.findJS(searchDir, { recursive: false });
-// ঠিক `searchdir` এ আনমিনিফাইড JS ফাইলে ফাইলপাথ সমন্বিত অ্যারে ফেরত দেয়
+// ঠিক `searchdir`-এ আনমিনিফাইড JS ফাইলে ফাইলপাথ সমন্বিত অ্যারে ফেরত দেয়
 ```
 
 সম্ভাব্য প্যারামিটার (এবং তাদের ডিফল্ট সেটিংস) হল:
