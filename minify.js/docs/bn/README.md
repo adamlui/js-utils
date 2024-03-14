@@ -165,7 +165,7 @@ console.log(minifyResult.code);  // ছোট আউটপুট: function add(n
 const results = minifyJS.minify('.');
 results.forEach(result =>
     console.log(result.srcPath)); // ওয়ার্কিং ডিরেক্টরি + সমস্ত নেস্টেড ডিরেক্টরিতে JS ফাইলগুলির পাথ
-console.log(results[1].code) // পাওয়া গেলে 2য় JS ফাইলের সংক্ষিপ্ত কোড বা না পাওয়া গেলে `undefined`
+console.log(results[1].code);     // পাওয়া গেলে 2য় JS ফাইলের সংক্ষিপ্ত কোড বা না পাওয়া গেলে `undefined`
 ```
 
 বিকল্পগুলি হল বুলিয়ান, অবজেক্টের বৈশিষ্ট্য হিসাবে পাস করা হয়েছে৷ উদাহরণ স্বরূপ:

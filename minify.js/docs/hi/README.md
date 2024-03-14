@@ -165,7 +165,7 @@ console.log(minifyResult.code);  // न्यूनतम आउटपुट: fu
 const results = minifyJS.minify('.');
 results.forEach(result =>
     console.log(result.srcPath)); // कार्यशील निर्देशिका में JS फ़ाइलों के पथ + सभी नेस्टेड निर्देशिकाएँ
-console.log(results[1].code) // यदि पाया जाता है तो दूसरी JS फ़ाइल का छोटा कोड, या नहीं मिलने पर `undefined`
+console.log(results[1].code);     // यदि पाया जाता है तो दूसरी JS फ़ाइल का छोटा कोड, या नहीं मिलने पर `undefined`
 ```
 
 विकल्प बूलियन हैं, ऑब्जेक्ट गुणों के रूप में पारित किए गए हैं। उदाहरण के लिए:

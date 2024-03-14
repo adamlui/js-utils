@@ -164,7 +164,7 @@ console.log(minifyResult.code);  // ਘਟੀਆ ਆਉਟਪੁੱਟ: function
 const results = minifyJS.minify('.');
 results.forEach(result =>
     console.log(result.srcPath)); // ਵਰਕਿੰਗ ਡਾਇਰੈਕਟਰੀ + ਸਾਰੀਆਂ ਨੇਸਟਡ ਡਾਇਰੈਕਟਰੀਆਂ ਵਿੱਚ JS ਫਾਈਲਾਂ ਦੇ ਮਾਰਗ
-console.log(results[1].code) // ਦੂਜੀ JS ਫਾਈਲ ਦਾ ਮਿਨੀਫਾਈਡ ਕੋਡ ਜੇਕਰ ਮਿਲਦਾ ਹੈ, ਜਾਂ `undefined` ਨਹੀਂ ਮਿਲਦਾ ਹੈ
+console.log(results[1].code);     // ਦੂਜੀ JS ਫਾਈਲ ਦਾ ਮਿਨੀਫਾਈਡ ਕੋਡ ਜੇਕਰ ਮਿਲਦਾ ਹੈ, ਜਾਂ `undefined` ਨਹੀਂ ਮਿਲਦਾ ਹੈ
 ```
 
 ਵਿਕਲਪ ਬੂਲੀਅਨ ਹਨ, ਆਬਜੈਕਟ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਵਜੋਂ ਪਾਸ ਕੀਤੇ ਗਏ ਹਨ। ਉਦਾਹਰਣ ਲਈ:

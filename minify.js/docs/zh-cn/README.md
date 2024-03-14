@@ -165,7 +165,7 @@ console.log(minifyResult.code);  // 缩小输出： function add(n,d){return n+d
 const results = minifyJS.minify('.');
 results.forEach(result =>
     console.log(result.srcPath)); // 工作目录 + 所有嵌套目录中 JS 文件的路径
-console.log(results[1].code) // 如果找到，则为第二个 JS 文件的精简代码，如果未找到，则为 `undefined`
+console.log(results[1].code);     // 如果找到，则为第二个 JS 文件的精简代码，如果未找到，则为 `undefined`
 ```
 
 选项是布尔值，作为对象属性传递。 例如：

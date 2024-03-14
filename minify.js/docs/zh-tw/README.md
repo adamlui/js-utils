@@ -165,7 +165,7 @@ console.log(minifyResult.code);  // 縮小輸出： function add(n,d){return n+d
 const results = minifyJS.minify('.');
 results.forEach(result =>
     console.log(result.srcPath)); // 工作目錄 + 所有嵌套目錄中 JS 檔案的路徑
-console.log(results[1].code) // 如果找到，則為第二個 JS 檔案的精簡程式碼，如果未找到，則為 `undefined`
+console.log(results[1].code);     // 如果找到，則為第二個 JS 檔案的精簡程式碼，如果未找到，則為 `undefined`
 ```
 
 選項是布林值，作為物件屬性傳遞。 例如：
