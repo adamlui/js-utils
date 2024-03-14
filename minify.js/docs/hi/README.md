@@ -164,8 +164,7 @@ console.log(minifyResult.code);  // न्यूनतम आउटपुट: fu
 ```js
 const results = minifyJS.minify('.');
 results.forEach(result =>
-    console.log(result.srcPath) // कार्यशील निर्देशिका में JS फ़ाइलों के पथ + सभी नेस्टेड निर्देशिकाएँ
-);
+    console.log(result.srcPath)); // कार्यशील निर्देशिका में JS फ़ाइलों के पथ + सभी नेस्टेड निर्देशिकाएँ
 console.log(results[1].code) // यदि पाया जाता है तो दूसरी JS फ़ाइल का छोटा कोड, या नहीं मिलने पर `undefined`
 ```
 

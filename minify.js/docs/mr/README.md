@@ -164,8 +164,7 @@ console.log(minifyResult.code);  // कमी केलेले आउटपु
 ```js
 const results = minifyJS.minify('.');
 results.forEach(result =>
-    console.log(result.srcPath) // वर्किंग डिरेक्टरी + सर्व नेस्टेड डिरेक्टरीमधील JS फाइल्सचे मार्ग
-);
+    console.log(result.srcPath)); // वर्किंग डिरेक्टरी + सर्व नेस्टेड डिरेक्टरीमधील JS फाइल्सचे मार्ग
 console.log(results[1].code) // आढळल्यास 2रा JS फाइलचा मिनिफाइड कोड, किंवा न आढळल्यास `undefined`
 ```
 

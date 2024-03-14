@@ -165,8 +165,7 @@ If a **directory path** is passed, SCSS files are searched for (recursively by d
 ```js
 const results = scssToCSS.compile('.');
 results.forEach(result =>
-    console.log(result.srcPath) // paths to SCSS files in working directory + all nested directories
-);
+    console.log(result.srcPath)); // paths to SCSS files in working directory + all nested directories
 console.log(results[1].code); // compiled CSS output of 2nd SCSS file if found, or `undefined` if not found
 ```
 

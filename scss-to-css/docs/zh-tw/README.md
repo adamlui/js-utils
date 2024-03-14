@@ -164,8 +164,7 @@ console.log(compileResult.code);  // 編譯後的 assets/style.scss CSS 輸出
 ```js
 const results = scssToCSS.compile('.');
 results.forEach(result =>
-    console.log(result.srcPath) // 工作目錄 + 所有巢狀目錄中 SCSS 檔案的路徑
-);
+    console.log(result.srcPath)); // 工作目錄 + 所有巢狀目錄中 SCSS 檔案的路徑
 console.log(results[1].code);   // 如果找到，則編譯第二個 SCSS 檔案的 CSS 輸出，如果找不到，則為 `undefined`
 ```
 

@@ -165,8 +165,7 @@ If a **directory path** is passed, JavaScript files are searched for (recursivel
 ```js
 const results = minifyJS.minify('.');
 results.forEach(result =>
-    console.log(result.srcPath) // paths to JS files in working directory + all nested directories
-);
+    console.log(result.srcPath)); // paths to JS files in working directory + all nested directories
 console.log(results[1].code) // minified code of 2nd JS file if found, or `undefined` if not found
 ```
 
