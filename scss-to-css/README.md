@@ -43,7 +43,7 @@ As a **runtime dependency** (e.g. for on-the-fly compilation), from your project
 npm install @adamlui/scss-to-css
 ```
 
-## 💻 Usage
+## 💻 Command line usage
 
 The basic **global command** is:
 
