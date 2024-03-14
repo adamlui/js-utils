@@ -9,7 +9,8 @@
         <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/zh-tw#readme">繁體中文</a> |
         <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/hi#readme">हिंदी</a> |
         <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/bn#readme">বাংলা</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/mr#readme">मराठी</a>
+        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/mr#readme">मराठी</a> |
+        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/pa#readme">ਪੰਜਾਬੀ</a>
     </h6>
 </div>
 

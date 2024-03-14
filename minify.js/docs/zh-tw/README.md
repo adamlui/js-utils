@@ -9,7 +9,8 @@
         <a href="../zh-cn#readme">简体中文</a> |
         <a href="../hi#readme">हिंदी</a> |
         <a href="../bn#readme">বাংলা</a> |
-        <a href="../mr#readme">मराठी</a>
+        <a href="../mr#readme">मराठी</a> |
+        <a href="../pa#readme">ਪੰਜਾਬੀ</a>
     </h6>
 </div>
 
