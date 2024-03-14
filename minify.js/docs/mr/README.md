@@ -13,7 +13,7 @@
     </h6>
 </div>
 
-# </> minify.js 
+# </> minify.js
 
 ### सर्व JavaScript फायली वारंवार कमी करा.
 

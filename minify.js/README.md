@@ -13,7 +13,7 @@
     </h6>
 </div>
 
-# </> minify.js 
+# </> minify.js
 
 ### Recursively minify all JavaScript files.
 

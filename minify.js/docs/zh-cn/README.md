@@ -13,7 +13,7 @@
     </h6>
 </div>
 
-# </> minify.js 
+# </> minify.js
 
 ### 递归地缩小所有 JavaScript 文件。
 
