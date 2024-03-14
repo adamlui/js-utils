@@ -165,7 +165,7 @@ console.log(compileResult.code);  // assets/style.scss এর কম্পাই
 const results = scssToCSS.compile('.');
 results.forEach(result =>
     console.log(result.srcPath)); // কর্মরত ডিরেক্টরি + সমস্ত নেস্টেড ডিরেক্টরিতে SCSS ফাইলের পাথ
-console.log(results[1].code); // পাওয়া গেলে দ্বিতীয় SCSS ফাইলের কম্পাইল করা CSS আউটপুট, অথবা যদি না পাওয়া যায় তাহলে `undefined`
+console.log(results[1].code);     // পাওয়া গেলে দ্বিতীয় SCSS ফাইলের কম্পাইল করা CSS আউটপুট, অথবা যদি না পাওয়া যায় তাহলে `undefined`
 ```
 
 Options are boolean, passed as object properties. For example:

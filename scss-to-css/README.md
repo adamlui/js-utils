@@ -166,7 +166,7 @@ If a **directory path** is passed, SCSS files are searched for (recursively by d
 const results = scssToCSS.compile('.');
 results.forEach(result =>
     console.log(result.srcPath)); // paths to SCSS files in working directory + all nested directories
-console.log(results[1].code); // compiled CSS output of 2nd SCSS file if found, or `undefined` if not found
+console.log(results[1].code);     // compiled CSS output of 2nd SCSS file if found, or `undefined` if not found
 ```
 
 Options are boolean, passed as object properties. For example:

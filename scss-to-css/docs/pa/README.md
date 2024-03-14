@@ -165,7 +165,7 @@ console.log(compileResult.code);  // assets/style.scss ਦਾ ਸੰਕਲਿਤ
 const results = scssToCSS.compile('.');
 results.forEach(result =>
     console.log(result.srcPath)); // ਵਰਕਿੰਗ ਡਾਇਰੈਕਟਰੀ + ਸਾਰੀਆਂ ਨੇਸਟਡ ਡਾਇਰੈਕਟਰੀਆਂ ਵਿੱਚ SCSS ਫਾਈਲਾਂ ਲਈ ਮਾਰਗ
-console.log(results[1].code); // ਦੂਜੀ SCSS ਫਾਈਲ ਦਾ ਕੰਪਾਇਲ ਕੀਤਾ CSS ਆਉਟਪੁੱਟ ਜੇਕਰ ਮਿਲਿਆ, ਜਾਂ `undefined` ਜੇ ਨਹੀਂ ਮਿਲਿਆ
+console.log(results[1].code);     // ਦੂਜੀ SCSS ਫਾਈਲ ਦਾ ਕੰਪਾਇਲ ਕੀਤਾ CSS ਆਉਟਪੁੱਟ ਜੇਕਰ ਮਿਲਿਆ, ਜਾਂ `undefined` ਜੇ ਨਹੀਂ ਮਿਲਿਆ
 ```
 
 ਵਿਕਲਪ ਬੂਲੀਅਨ ਹਨ, ਆਬਜੈਕਟ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਵਜੋਂ ਪਾਸ ਕੀਤੇ ਗਏ ਹਨ। ਉਦਾਹਰਣ ਲਈ:

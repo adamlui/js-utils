@@ -165,7 +165,7 @@ console.log(compileResult.code);  // assets/style.scss चे संकलित
 const results = scssToCSS.compile('.');
 results.forEach(result =>
     console.log(result.srcPath)); // वर्किंग डिरेक्टरी + सर्व नेस्टेड डिरेक्टरीमध्ये SCSS फाइल्सचे मार्ग
-console.log(results[1].code); // आढळल्यास दुसऱ्या SCSS फाईलचे संकलित CSS आउटपुट, किंवा न आढळल्यास `undefined`
+console.log(results[1].code);     // आढळल्यास दुसऱ्या SCSS फाईलचे संकलित CSS आउटपुट, किंवा न आढळल्यास `undefined`
 ```
 
 पर्याय बुलियन आहेत, ऑब्जेक्ट गुणधर्म म्हणून पास केले जातात. उदाहरणार्थ:
