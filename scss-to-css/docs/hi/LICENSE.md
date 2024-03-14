@@ -8,7 +8,8 @@
         <a href="../LICENSE.md">English</a> |
         <a href="../zh-cn/LICENSE.md">简体中文</a> |
         <a href="../zh-tw/LICENSE.md">繁體中文</a> |
-        <a href="../bn/LICENSE.md">বাংলা</a>
+        <a href="../bn/LICENSE.md">বাংলা</a> |
+        <a href="../mr/LICENSE.md">मराठी</a>
     </h6>
 </div>
 
