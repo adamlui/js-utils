@@ -13,13 +13,13 @@ function findJS(searchDir, options = {}) {
     const dirFiles = fs.readdirSync(searchDir), jsFiles = [];
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file);
-        if (fs.statSync(filePath).isDirectory() && file != 'node_modules' &&
-            (options.dotFolders || !file.startsWith('.')) && options.recursive) {
+        if (fs.statSync(filePath).isDirectory() && file != 'node_modules'
+            && (options.dotFolders || !file.startsWith('.')) && options.recursive) {
                 if (options.verbose) console.info(`Searching for unminified JS files in: ${filePath}...`);
                 jsFiles.push( // recursively find unminified JS in eligible dir
                     ...findJS(filePath, { ...options, isRecursing: true }));
-        } else if (/\.js(?<!\.min\.js)$/.test(file) &&
-            (options.dotFiles || !file.startsWith('.')))
+        } else if (/\.js(?<!\.min\.js)$/.test(file)
+            && (options.dotFiles || !file.startsWith('.')))
                 jsFiles.push(filePath); // store eligible unminified JS file for minification
     });
     if (options.isRecursing || jsFiles.length > 0) return jsFiles;
