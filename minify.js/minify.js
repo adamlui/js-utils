@@ -8,7 +8,7 @@ const fs = require('fs'),
 // Define MAIN functions
 
 function findJS(searchDir, options = {}) {
-    const defaultOptions = { recursive: true, verbose: false, dotFolders: false, dotFiles: false };
+    const defaultOptions = { recursive: true, verbose: true, dotFolders: false, dotFiles: false };
     options = { ...defaultOptions, ...options };
     const dirFiles = fs.readdirSync(searchDir), jsFiles = [];
     dirFiles.forEach(file => {
