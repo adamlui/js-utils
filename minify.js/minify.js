@@ -23,7 +23,7 @@ function findJS(searchDir, options = {}) {
                 jsFiles.push(filePath); // store eligible unminified JS file for minification
     });
     if (options.isRecursing || jsFiles.length > 0) return jsFiles;
-    else console.info('\nNo unminified JavaScript files found.');
+    else if (options.verbose) console.info('\nNo unminified JavaScript files found.');
 }
 
 function minify(input, options = {}) {

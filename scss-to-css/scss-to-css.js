@@ -22,7 +22,7 @@ function findSCSS(searchDir, options = {}) {
             scssFiles.push(filePath); // store it for compilation
     });
     if (options.isRecursing || scssFiles.length > 0) return scssFiles;
-    else console.info('\nNo SCSS files found.');
+    else if (options.verbose) console.info('\nNo SCSS files found.');
 }
 
 function compile(inputPath, options = {}) {
