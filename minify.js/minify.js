@@ -135,9 +135,11 @@ else { // run as CLI tool
         const unminnedJSfiles = inputArg.endsWith('.js') ? [inputPath]
             : findJS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode });
 
-        if (config.dryRun && unminnedJSfiles?.length > 0) { // print files to be processed
-            console.info(`\n${by}JS files to be minified:${nc}`);
-            unminnedJSfiles?.forEach(file => console.info(file));
+        if (config.dryRun) { // -n or --dry-run passed
+            if (unminnedJSfiles.length > 0) { // print files to be processed
+                console.info(`\n${by}JS files to be minified:${nc}`);
+                unminnedJSfiles?.forEach(file => console.info(file));
+            } else console.info(`${by}\nNo JS files will be minified.${nc}`);
 
         } else { // actually minify JavaScript files
 

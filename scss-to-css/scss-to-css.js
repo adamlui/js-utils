@@ -130,9 +130,11 @@ else { // run as CLI tool
         const scssFiles = inputArg.endsWith('.scss') ? [inputPath]
             : findSCSS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode });
 
-        if (config.dryRun && scssFiles?.length > 0) { // print files to be processed
-            console.info(`\n${by}SCSS files to be compiled:${nc}`);
-            scssFiles?.forEach(file => console.info(file));
+        if (config.dryRun) { // -n or --dry-run passed
+            if (scssFiles.length > 0) { // print files to be processed
+                console.info(`\n${by}SCSS files to be compiled:${nc}`);
+                unminnedJSfiles?.forEach(file => console.info(file));
+            } else console.info(`${by}\nNo SCSS files will be compiled.${nc}`);
 
         } else { // actually compile SCSS files
 
