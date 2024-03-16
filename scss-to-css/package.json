@@ -41,7 +41,7 @@
     "url": "https://github.com/adamlui/js-utils/issues"
   },
   "dependencies": {
-    "sass": "^1.71.1"
+    "sass": "^1.72.0"
   },
   "funding": {
     "type": "github",
