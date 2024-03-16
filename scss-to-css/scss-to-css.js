@@ -173,7 +173,7 @@ else { // run as CLI tool
                 printIfNotQuiet(`${ compileData.length } CSS file${ cssCntSuffix }`
                     + ( !config.noSourceMaps ? ` + ${ compileData.length } source map${ cssCntSuffix }` : '' )
                     + ' generated.');
-            } else printIfNotQuiet(`${by}No SCSS files processed successfully.${nc}`);
+            } else printIfNotQuiet(`${by}No SCSS files processed.${nc}`);
             if (failedPaths.length > 0) {
                 printIfNotQuiet(`\n${br}`
                     + `${ failedPaths.length } file${ failedPaths.length > 1 ? 's' : '' }`
