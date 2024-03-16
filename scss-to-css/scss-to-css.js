@@ -140,7 +140,7 @@ else { // run as CLI tool
 
             // Build array of compilation data
             const failedPaths = [];
-            const compileData = scssFiles?.map(scssPath => {
+            const compileData = scssFiles.map(scssPath => {
                 const compileResult = compile(scssPath, {
                     minify: !config.noMinify, sourceMaps: !config.noSourceMaps, verbose: !config.quietMode });
                 if (compileResult.error) failedPaths.push(scssPath);
