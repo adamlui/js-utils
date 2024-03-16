@@ -11,6 +11,7 @@ function findJS(searchDir, options = {}) {
     const defaultOptions = { recursive: true, verbose: true, dotFolders: false, dotFiles: false };
     options = { ...defaultOptions, ...options };
     const dirFiles = fs.readdirSync(searchDir), jsFiles = [];
+    if (options.verbose && !options.isRecursing) console.info('\nSearching for unminified JS files...');
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file);
         if (fs.statSync(filePath).isDirectory() && file != 'node_modules'
@@ -43,7 +44,6 @@ function minify(input, options = {}) {
             if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
             return { code: minifyResult.code, srcPath: input, error: minifyResult.error };
         } else { // dir path passed
-            if (options.verbose) console.info('Searching for unminified JS files...');
             return findJS(input, { recursive: options.recursive,
                                    dotFolders: options.dotFolders, dotFiles: options.dotFiles })
                 ?.map(jsPath => { // minify found JS files
@@ -133,7 +133,6 @@ else { // run as CLI tool
         }
 
         // Find all eligible JavaScript files or arg-passed file
-        printIfNotQuiet('Searching for unminified JS files...');
         const unminnedJSfiles = inputArg.endsWith('.js') ? [inputPath]
             : findJS(inputPath, { recursive: !config.noRecursion });
 
