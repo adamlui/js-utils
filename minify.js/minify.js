@@ -22,8 +22,10 @@ function findJS(searchDir, options = {}) {
             && (options.dotFiles || !file.startsWith('.')))
                 jsFiles.push(filePath); // store eligible unminified JS file for minification
     });
-    if (options.isRecursing || jsFiles.length > 0) return jsFiles;
-    else if (options.verbose) console.info('\nNo unminified JavaScript files found.');
+    if (!options.isRecursing && options.verbose)
+        console.info('Search complete.'
+            + ( jsFiles.length === 0 ? ' No unminified JavaScript files found.' : '' ));
+    return options.isRecursing || jsFiles.length > 0 ? jsFiles : [];
 }
 
 function minify(input, options = {}) {

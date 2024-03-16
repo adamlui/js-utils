@@ -21,8 +21,10 @@ function findSCSS(searchDir, options = {}) {
         } else if (file.endsWith('.scss')) // SCSS file found
             scssFiles.push(filePath); // store it for compilation
     });
-    if (options.isRecursing || scssFiles.length > 0) return scssFiles;
-    else if (options.verbose) console.info('\nNo SCSS files found.');
+    if (!options.isRecursing && options.verbose)
+        console.info('Search complete.'
+            + ( scssFiles.length === 0 ? ' No SCSS files found.' : '' ));
+    return options.isRecursing || scssFiles.length > 0 ? scssFiles : [];
 }
 
 function compile(inputPath, options = {}) {
