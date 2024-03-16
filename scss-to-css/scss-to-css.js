@@ -42,8 +42,9 @@ function compile(inputPath, options = {}) {
                 return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: inputPath };
             } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return { error: err }; }
         } else { // dir path passed
-            return findSCSS(inputPath, { recursive: options.recursive, dotFolders: options.dotFolders })
-                ?.map(scssPath => { // compile found SCSS files
+            return findSCSS(inputPath, { recursive: options.recursive, verbosity: options.verbose,
+                                         dotFolders: options.dotFolders
+                })?.map(scssPath => { // compile found SCSS files
                     if (options.verbose) console.info(`Compiling ${ scssPath }...`); 
                     try { // to compile found file
                         const compileResult = sass.compile(scssPath, compileOptions);
@@ -127,7 +128,7 @@ else { // run as CLI tool
 
         // Find all eligible JavaScript files or arg-passed file
         const scssFiles = inputArg.endsWith('.scss') ? [inputPath]
-            : findSCSS(inputPath, { recursive: !config.noRecursion });
+            : findSCSS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode });
 
         if (config.dryRun && scssFiles?.length > 0) { // print files to be processed
             console.info(`\n${by}SCSS files to be compiled:${nc}`);

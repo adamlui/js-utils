@@ -43,9 +43,9 @@ function minify(input, options = {}) {
             if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
             return { code: minifyResult.code, srcPath: input, error: minifyResult.error };
         } else { // dir path passed
-            return findJS(input, { recursive: options.recursive,
-                                   dotFolders: options.dotFolders, dotFiles: options.dotFiles })
-                ?.map(jsPath => { // minify found JS files
+            return findJS(input, { recursive: options.recursive, verbosity: options.verbose,
+                                   dotFolders: options.dotFolders, dotFiles: options.dotFiles 
+                })?.map(jsPath => { // minify found JS files
                     if (options.verbose) console.info(`Minifying ${ jsPath }...`);
                     const srcCode = fs.readFileSync(jsPath, 'utf8'),
                           minifyResult = uglifyJS.minify(srcCode, minifyOptions);
@@ -133,7 +133,7 @@ else { // run as CLI tool
 
         // Find all eligible JavaScript files or arg-passed file
         const unminnedJSfiles = inputArg.endsWith('.js') ? [inputPath]
-            : findJS(inputPath, { recursive: !config.noRecursion });
+            : findJS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode });
 
         if (config.dryRun && unminnedJSfiles?.length > 0) { // print files to be processed
             console.info(`\n${by}JS files to be minified:${nc}`);
