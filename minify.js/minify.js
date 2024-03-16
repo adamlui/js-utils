@@ -41,6 +41,7 @@ function minify(input, options = {}) {
             if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
             return { code: minifyResult.code, srcPath: input, error: minifyResult.error };
         } else { // dir path passed
+            if (options.verbose) console.info(`Searching for unminified JS files...`);
             return findJS(input, { recursive: options.recursive,
                                    dotFolders: options.dotFolders, dotFiles: options.dotFiles })
                 ?.map(jsPath => { // minify found JS files
@@ -130,6 +131,7 @@ else { // run as CLI tool
         }
 
         // Find all eligible JavaScript files or arg-passed file
+        printIfNotQuiet(`Searching for unminified JS files...`);
         const unminnedJSfiles = inputArg.endsWith('.js') ? [inputPath]
             : findJS(inputPath, { recursive: !config.noRecursion });
 
@@ -138,7 +140,6 @@ else { // run as CLI tool
             unminnedJSfiles?.forEach(file => console.info(file));
 
         } else { // actually minify JavaScript files
-            printIfNotQuiet(''); // line break before first log
 
             // Build array of minification data
             const failedPaths = [];
