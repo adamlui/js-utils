@@ -40,7 +40,7 @@ function compile(inputPath, options = {}) {
                 return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: inputPath };
             } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return { error: err }; }
         } else { // dir path passed
-            if (options.verbose) console.info(`Searching for SCSS files...`);
+            if (options.verbose) console.info('Searching for SCSS files...');
             return findSCSS(inputPath, { recursive: options.recursive, dotFolders: options.dotFolders })
                 ?.map(scssPath => { // compile found SCSS files
                     if (options.verbose) console.info(`Compiling ${ scssPath }...`); 
@@ -125,7 +125,7 @@ else { // run as CLI tool
         }
 
         // Find all eligible JavaScript files or arg-passed file
-        printIfNotQuiet(`Searching for SCSS files...`);
+        printIfNotQuiet('Searching for SCSS files...');
         const scssFiles = inputArg.endsWith('.scss') ? [inputPath]
             : findSCSS(inputPath, { recursive: !config.noRecursion });
 
