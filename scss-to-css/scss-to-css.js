@@ -133,7 +133,7 @@ else { // run as CLI tool
         if (config.dryRun) { // -n or --dry-run passed
             if (scssFiles.length > 0) { // print files to be processed
                 console.info(`\n${by}SCSS files to be compiled:${nc}`);
-                unminnedJSfiles?.forEach(file => console.info(file));
+                scssFiles.forEach(file => console.info(file));
             } else console.info(`${by}\nNo SCSS files will be compiled.${nc}`);
 
         } else { // actually compile SCSS files
