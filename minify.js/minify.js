@@ -138,14 +138,14 @@ else { // run as CLI tool
         if (config.dryRun) { // -n or --dry-run passed
             if (unminnedJSfiles.length > 0) { // print files to be processed
                 console.info(`\n${by}JS files to be minified:${nc}`);
-                unminnedJSfiles?.forEach(file => console.info(file));
+                unminnedJSfiles.forEach(file => console.info(file));
             } else console.info(`${by}\nNo JS files will be minified.${nc}`);
 
         } else { // actually minify JavaScript files
 
             // Build array of minification data
             const failedPaths = [];
-            const minifyData = unminnedJSfiles?.map(jsPath => {
+            const minifyData = unminnedJSfiles.map(jsPath => {
                 const minifyResult = minify(jsPath, { verbose: !config.quietMode, mangle: !config.noMangle });
                 if (minifyResult.error) failedPaths.push(jsPath);
                 return minifyResult;
