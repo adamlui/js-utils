@@ -15,11 +15,10 @@ function findSCSS(searchDir, options = {}) {
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file);
         if (fs.statSync(filePath).isDirectory() && file != 'node_modules'
-            && (options.dotFolders || !file.startsWith('.')) && options.recursive) {
-                if (options.verbose) console.info(`Searching for SCSS files in: ${filePath}...`);
+            && (options.dotFolders || !file.startsWith('.')) && options.recursive)
                 scssFiles.push( // recursively find SCSS in eligible dir
                     ...findSCSS(filePath, { ...options, isRecursing: true }));
-        } else if (file.endsWith('.scss')) // SCSS file found
+        else if (file.endsWith('.scss')) // SCSS file found
             scssFiles.push(filePath); // store it for compilation
     });
     if (!options.isRecursing && options.verbose)
