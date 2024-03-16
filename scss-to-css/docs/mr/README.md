@@ -200,7 +200,7 @@ scssToCSS.findSCSS(searchDir, { recursive: false });
 
 ```
  recursive (true)     डिरेक्टरी मार्ग पास झाल्यास नेस्टेड फाइल्ससाठी वारंवार शोधा.
- verbose (false)      कन्सोल/टर्मिनलमध्ये लॉग इन दाखवा.
+ verbose (true)       कन्सोल/टर्मिनलमध्ये लॉग इन दाखवा.
  dotFolders (false)   फाइल शोधात डॉटफोल्डर समाविष्ट करा.
 ```
 

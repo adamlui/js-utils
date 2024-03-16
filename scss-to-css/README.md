@@ -203,7 +203,7 @@ Possible parameters (and their default settings) are:
 ```
  recursive (true)     Recursively search for nested files if dir path
                       passed.
- verbose (false)      Show logging in console/terminal.
+ verbose (true)       Show logging in console/terminal.
  dotFolders (false)   Include dotfolders in file search.
 ```
 

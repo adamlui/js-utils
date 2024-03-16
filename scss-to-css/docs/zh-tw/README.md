@@ -200,7 +200,7 @@ scssToCSS.findSCSS(searchDir, { recursive: false });
 
 ```
  recursive (true)     如果傳遞目錄路徑，則遞歸搜尋巢狀檔案。
- verbose (false)      在控制台/終端機中顯示日誌記錄。
+ verbose (true)       在控制台/終端機中顯示日誌記錄。
  dotFolders (false)   在檔案搜尋中包含點資料夾。
 ```
 

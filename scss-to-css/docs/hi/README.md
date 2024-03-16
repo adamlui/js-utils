@@ -199,7 +199,7 @@ scssToCSS.findSCSS(searchDir, { recursive: false });
 
 ```
  recursive (true)     यदि निर्देशिका पथ पारित हो गया है तो नेस्टेड फ़ाइलों को पुनरावर्ती रूप से खोजें।
- verbose (false)      कंसोल/टर्मिनल में लॉगिंग दिखाएँ।
+ verbose (true)       कंसोल/टर्मिनल में लॉगिंग दिखाएँ।
  dotFolders (false)   फ़ाइल खोज में डॉटफ़ोल्डर शामिल करें।
 ```
 
