@@ -32,7 +32,7 @@ The basic **global command** is:
 generate-pw
 ```
 
-**💡 Note:** To generate for multiple results, pass `--qty=n` where `n` is the number of passwords to generate.
+**💡 Note:** To generate multiple results, pass `--qty=n` where `n` is the number of passwords to generate.
 <br><br>
 
 ## 🏛️ MIT License
