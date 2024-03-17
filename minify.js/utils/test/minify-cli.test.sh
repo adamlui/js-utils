@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Init UI colors
-nc='\033[0m' # no color
+nc='\033[0m'    # no color
 br='\033[1;91m' # bright red
 bg='\033[1;92m' # bright green
 

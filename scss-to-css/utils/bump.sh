@@ -4,7 +4,7 @@
 # >>> commit changes to Git >>> push changes to GitHub >>> publish to npm (optional)
 
 # Init UI colors
-nc="\033[0m" # no color
+nc="\033[0m"    # no color
 bg="\033[1;92m" # bright green
 br="\033[1;91m" # bright red
 
