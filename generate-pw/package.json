@@ -1,0 +1,33 @@
+{
+  "name": "generate-pw",
+  "version": "1.0.0",
+  "description": "Randomly generate cryptographically-secure passwords.",
+  "author": {
+    "name": "Adam Lui",
+    "email": "adam@kudoai.com",
+    "url": "https://github.com/adamlui"
+  },
+  "homepage": "https://github.com/adamlui/js-utils",
+  "license": "MIT",
+  "main": "generate-pw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamlui/js-utils.git"
+  },
+  "keywords": [
+    "password",
+    "generator",
+    "unique",
+    "generate"
+  ],
+  "bugs": {
+    "url": "https://github.com/adamlui/js-utils/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/adamlui"
+  }
+}
