@@ -27,9 +27,11 @@ function findSCSS(searchDir, options = {}) {
     });
 
     // Log/return final result
-    if (!options.isRecursing && options.verbose)
-        console.info('Search complete.'
-            + ( scssFiles.length === 0 ? ' No SCSS files found.' : '' ));
+    if (!options.isRecursing && options.verbose) {
+        console.info('Search complete. '
+            + ( scssFiles.length === 0 ? 'No' : scssFiles.length )
+            + ` file${ scssFiles.length > 1 ? 's' : '' } found.`);
+    }
     return options.isRecursing || scssFiles.length > 0 ? scssFiles : [];
 }
 

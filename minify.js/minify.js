@@ -28,9 +28,11 @@ function findJS(searchDir, options = {}) {
     });
 
     // Log/return final result
-    if (!options.isRecursing && options.verbose)
-        console.info('Search complete.'
-            + ( jsFiles.length === 0 ? ' No unminified JavaScript files found.' : '' ));
+    if (!options.isRecursing && options.verbose) {
+        console.info('Search complete. '
+            + ( jsFiles.length === 0 ? 'No' : jsFiles.length )
+            + ` file${ jsFiles.length > 1 ? 's' : '' } found.`);
+    }
     return options.isRecursing || jsFiles.length > 0 ? jsFiles : [];
 }
 
@@ -46,7 +48,7 @@ function minify(input, options = {}) {
         return console.error('ERROR:'
             + ' First argument must be a string of source code or file/folder path.');
 
-    // Minify based on input
+    // Minify JS based on input
     const minifyOptions = { mangle: options.mangle ? { toplevel: true } : false };
     if (fs.existsSync(input)) { // minify based on path arg
         if (input.endsWith('.js')) { // file path passed
