@@ -140,7 +140,7 @@ else { // run as CLI tool
             lowercase: !config.excludeLowerChars, uppercase: !config.excludeUpperChars,
             strict: config.strictMode
         };
-        const pwGenResult = generatePassword(funcOptions);
+        const pwResult = generatePassword(funcOptions);
         console.log('\n' + bw + ( Array.isArray(pwResult) ? pwResult.join('\n') : pwResult ) + nc);
     }
 }
