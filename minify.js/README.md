@@ -114,20 +114,25 @@ minify-js input_folder output_folder
 
 ### Command line options
 
-```
-Config options:
- -n, --dry-run               Don't actually minify the file(s), just show
-                             if they will be processed.
- -d, --include-dotfolders    Include dotfolders in file search.
- -D, --include-dotfiles      Include dotfiles in file search.
- -R, --no-recursion          Disable recursive file searching.
- -M, --no-mangle             Disable mangling names.
- -q, --quiet                 Suppress all logging except errors.
+#### Config options:
 
-Info commands:
- -h, --help                  Display help screen.
- -v, --version               Show version number.
-```
+Flag                           | Description
+-------------------------------|-------------------------------------------------------------------------
+`-n` or `--dry-run`            | Don't actually minify the file(s), just show if they will be processed.
+`-d` or `--include-dotfolders` | Include dotfolders in file search.
+`-D` or `--include-dotfiles`   | Include dotfiles in file search.
+`-R` or `--no-recursion`       | Disable recursive file searching.
+`-M` or `--no-mangle`          | Disable mangling names.
+`-q` or `--quiet`              | Suppress all logging except errors.
+
+#### Info commands:
+
+Command             | Description
+--------------------|----------------------
+`-h` or `--help`    | Display help screen.
+`-v` or `--version` | Show version number.
+
+<br>
 
 ## 🔌 API reference
 
@@ -178,14 +183,15 @@ minifyJS.minify(input, { dotFiles: true });
 
 Possible parameters (and their default settings) are:
 
-```
- recursive (true)     Recursively search for nested files if dir path
-                      passed.
- verbose (true)       Show logging in console/terminal.
- dotFolders (false)   Include dotfolders in file search.
- dotFiles (false)     Include dotfiles in file search.
- mangle (true)        Shorten variable names (typically to one character).
-```
+Name         | Desciption                                              | Default value
+-------------|---------------------------------------------------------|---------------
+`recursive`  | Recursively search for nested files if dir path passed. | `true`
+`verbose`    | Show logging in console/terminal.                       | `true`
+`dotFolders` | Include dotfolders in file search.                      | `false`
+`dotFiles`   | Include dotfiles in file search.                        | `false`
+`mangle`     | Shorten variable names (typically to one character).    | `true`
+
+<br>
 
 ### findJS(searchDir, options)
 
@@ -200,13 +206,12 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 Possible parameters (and their default settings) are:
 
-```
- recursive (true)     Recursively search for nested files if dir path
-                      passed.
- verbose (true)       Show logging in console/terminal.
- dotFolders (false)   Include dotfolders in file search.
- dotFiles (false)     Include dotfiles in file search.
-```
+Name         | Desciption                                              | Default value
+-------------|---------------------------------------------------------|---------------
+`recursive`  | Recursively search for nested files if dir path passed. | `true`
+`verbose`    | Show logging in console/terminal.                       | `true`
+`dotFolders` | Include dotfolders in file search.                      | `false`
+`dotFiles`   | Include dotfiles in file search.                        | `false`
 
 <br>
 

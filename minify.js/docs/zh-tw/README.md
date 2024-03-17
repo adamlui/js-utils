@@ -114,19 +114,25 @@ minify-js input_folder output_folder
 
 ### 命令列選項
 
-```
-配置選項：
- -n, --dry-run               實際上並沒有縮小文件，只是顯示它們是否會被處理。
- -d, --include-dotfolders    在文件搜尋中包含點資料夾。
- -D, --include-dotfiles      在文件搜尋中包含點文件。
- -R, --no-recursion          禁用遞歸文件搜尋。
- -M, --no-mangle             禁用修改名稱。
- -q, --quiet                 禁止除錯誤之外的所有日誌記錄。
+#### 配置選項：
 
-訊息命令：
- -h, --help                  顯示幫助畫面。
- -v, --version               顯示版本號。
-```
+旗幟                             | 描述
+---------------------------------|---------------------------------------------
+`-n` 或者 `--dry-run`            | 實際上並沒有縮小文件，只是顯示它們是否會被處理。
+`-d` 或者 `--include-dotfolders` | 在文件搜尋中包含點資料夾。
+`-D` 或者 `--include-dotfiles`   | 在文件搜尋中包含點文件。
+`-R` 或者 `--no-recursion`       | 禁用遞歸文件搜尋。
+`-M` 或者 `--no-mangle`          | 禁用修改名稱。
+`-q` 或者 `--quiet`              | 禁止除錯誤之外的所有日誌記錄。
+
+#### 訊息命令：
+
+命令                  | 描述
+----------------------|--------------
+`-h` 或者 `--help`    | 顯示幫助畫面。
+`-v` 或者 `--version` | 顯示版本號。
+
+<br>
 
 ## 🔌 API 參考
 
@@ -177,13 +183,15 @@ minifyJS.minify(input, { dotFiles: true });
 
 可能的參數（及其預設設定）有：
 
-```
- recursive (true)     如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。
- verbose (true)       在控制台/終端機中顯示日誌記錄。
- dotFolders (false)   在文件搜尋中包含點資料夾。
- dotFiles (false)     在文件搜尋中包含點文件。
- mangle (true)        縮短變數名稱（通常為一個字元）。
-```
+姓名         | 描述                                | 預設值
+-------------|------------------------------------|---------
+`recursive`  | 如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。 | `true`
+`verbose`    | 在控制台/終端機中顯示日誌記錄。       | `true`
+`dotFolders` | 在文件搜尋中包含點資料夾。            | `false`
+`dotFiles`   | 在文件搜尋中包含點文件。              | `false`
+`mangle`     | 縮短變數名稱（通常為一個字元）。       | `true`
+
+<br>
 
 ### findJS(searchDir, options)
 
@@ -198,12 +206,12 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 可能的參數（及其預設設定）有：
 
-```
- recursive (true)     如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。
- verbose (true)       在控制台/終端機中顯示日誌記錄。
- dotFolders (false)   在文件搜尋中包含點資料夾。
- dotFiles (false)     在文件搜尋中包含點文件。
-```
+姓名         | 描述                                | 預設值
+-------------|------------------------------------|---------
+`recursive`  | 如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。 | `true`
+`verbose`    | 在控制台/終端機中顯示日誌記錄。       | `true`
+`dotFolders` | 在文件搜尋中包含點資料夾。            | `false`
+`dotFiles`   | 在文件搜尋中包含點文件。              | `false`
 
 <br>
 
