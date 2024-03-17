@@ -8,8 +8,12 @@ const fs = require('fs'),
 // Define MAIN functions
 
 function findSCSS(searchDir, options = {}) {
+
+    // Init options
     const defaultOptions = { recursive: true, verbose: true, dotFolders: false };
-    options = { ...defaultOptions, ...options };        
+    options = { ...defaultOptions, ...options };
+
+    // Search for SCSS
     const dirFiles = fs.readdirSync(searchDir), scssFiles = [];
     if (options.verbose && !options.isRecursing) console.info('\nSearching for SCSS files...');
     dirFiles.forEach(file => {
@@ -21,6 +25,8 @@ function findSCSS(searchDir, options = {}) {
         else if (file.endsWith('.scss')) // SCSS file found
             scssFiles.push(filePath); // store it for compilation
     });
+
+    // Log/return final result
     if (!options.isRecursing && options.verbose)
         console.info('Search complete.'
             + ( scssFiles.length === 0 ? ' No SCSS files found.' : '' ));
@@ -28,11 +34,17 @@ function findSCSS(searchDir, options = {}) {
 }
 
 function compile(inputPath, options = {}) {
+
+    // Init options
     const defaultOptions = { minify: true, sourceMaps: true, recursive: true, verbose: true, dotFolders: false };
     options = { ...defaultOptions, ...options };
+
+    // Validate inputPath
     if (typeof inputPath !== 'string')
         return console.error('ERROR:'
             + ' First argument must be a string representing a file/folder path.');
+
+    // Compile SCSS based on inputPath
     const compileOptions = { style: options.minify ? 'compressed' : 'expanded', sourceMap: options.sourceMaps };
     if (fs.existsSync(inputPath)) { // compile based on path arg
         if (inputPath.endsWith('.scss')) { // file path passed

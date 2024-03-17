@@ -8,8 +8,12 @@ const fs = require('fs'),
 // Define MAIN functions
 
 function findJS(searchDir, options = {}) {
+
+    // Init options
     const defaultOptions = { recursive: true, verbose: true, dotFolders: false, dotFiles: false };
     options = { ...defaultOptions, ...options };
+
+    // Search for unminified JS
     const dirFiles = fs.readdirSync(searchDir), jsFiles = [];
     if (options.verbose && !options.isRecursing) console.info('\nSearching for unminified JS files...');
     dirFiles.forEach(file => {
@@ -22,6 +26,8 @@ function findJS(searchDir, options = {}) {
             && (options.dotFiles || !file.startsWith('.')))
                 jsFiles.push(filePath); // store eligible unminified JS file for minification
     });
+
+    // Log/return final result
     if (!options.isRecursing && options.verbose)
         console.info('Search complete.'
             + ( jsFiles.length === 0 ? ' No unminified JavaScript files found.' : '' ));
@@ -29,12 +35,18 @@ function findJS(searchDir, options = {}) {
 }
 
 function minify(input, options = {}) {
+
+    // Init options
     const defaultOptions = {
         recursive: true, verbose: true, dotFolders: false, dotFiles: false, mangle: true };
     options = { ...defaultOptions, ...options };
+
+    // Validate input
     if (typeof input !== 'string')
         return console.error('ERROR:'
             + ' First argument must be a string of source code or file/folder path.');
+
+    // Minify based on input
     const minifyOptions = { mangle: options.mangle ? { toplevel: true } : false };
     if (fs.existsSync(input)) { // minify based on path arg
         if (input.endsWith('.js')) { // file path passed
