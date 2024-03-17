@@ -2,7 +2,7 @@
 
 ### Randomly generate cryptographically-secure passwords.
 
-<a href="https://github.com/adamlui/js-utils/tree/main/generate-pw"><img height=28 src="https://img.shields.io/badge/Latest_Build-1.0.0-fc7811.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://www.npmjs.com/package/generate-pw?activeTab=versions"><img height=28 src="https://img.shields.io/badge/Latest_Build-1.0.0-fc7811.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
 ## ⚡ Installation
 
