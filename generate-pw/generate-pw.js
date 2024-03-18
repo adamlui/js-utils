@@ -121,7 +121,7 @@ else { // run as CLI tool
             /^--?(?:L|(?:exclude|disable|no)-?lower-?(?:case)?|lower-?(?:case)?=(?:false|0))$/.test(arg)),
         excludeUpperChars: process.argv.some(arg =>
             /^--?(?:U|(?:exclude|disable|no)-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/.test(arg)),
-        strictMode: process.argv.some(arg => /^--?s(?:trict)?/.test(arg))
+        strictMode: process.argv.some(arg => /^--?s(?:trict)?$/.test(arg))
     };
 
     // Show VERSION number if -v or --version passed
