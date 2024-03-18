@@ -3,7 +3,7 @@
 // Import crypto.randomInt() for secure RNG
 const { randomInt } = require('crypto');
 
-// Init character sets
+// Init CHARACTER SETS
 const charsets = {
     lower: 'abcdefghijklmnopqrstuvwxyz',
     upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
@@ -99,7 +99,7 @@ function generatePasswords(qty, options) {
     return passwords;
 }
 
-// Export function if script was required
+// EXPORT functions if script was required
 if (require.main !== module) module.exports = { generatePassword, generatePasswords };
 
 else { // run as CLI tool
