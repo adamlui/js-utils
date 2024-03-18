@@ -118,11 +118,13 @@ else { // run as CLI tool
         includeNums: process.argv.some(arg => /^--?(?:n|(?:include-?)?num(?:ber)s?=?(?:true|1)?)$/.test(arg)),
         includeSymbols: process.argv.some(arg => /^--?(?:s|(?:include-?)?symbols?=?(?:true|1)?)$/.test(arg)),
         excludeLowerChars: process.argv.some(arg =>
-            /^--?(?:L|exclude-?lower-?(?:case)?|lower-?(?:case)?=(?:false|0))$/.test(arg)),
+            /^--?(?:L|(?:exclude|disable|no)-?lower-?(?:case)?|lower-?(?:case)?=(?:false|0))$/.test(arg)),
         excludeUpperChars: process.argv.some(arg =>
-            /^--?(?:U|exclude-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/.test(arg)),
+            /^--?(?:U|(?:exclude|disable|no)-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/.test(arg)),
         strictMode: process.argv.some(arg => /^--?s(?:trict)?/.test(arg))
     };
+
+    console.log(config.excludeChars) ; return
 
     // Show VERSION number if -v or --version passed
     if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
