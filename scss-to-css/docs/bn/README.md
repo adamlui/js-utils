@@ -161,8 +161,8 @@ CSS ডেটাতে দেওয়া `inputPath`-এ পাওয়া SCS
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
-console.log(compileResult.error); // রানটাইম ত্রুটি, অথবা কোনো ত্রুটি না থাকলে `undefined`
-console.log(compileResult.code);  // assets/style.scss এর কম্পাইল করা CSS আউটপুট
+console.log(compileResult.error); // আউটপুট রানটাইম ত্রুটি, বা `undefined` যদি কোনো ত্রুটি না থাকে
+console.log(compileResult.code);  // assets/style.scss থেকে CSS কম্পাইল করা আউটপুট
 ```
 
 যদি একটি **ডিরেক্টরি পাথ** পাস করা হয়, SCSS ফাইলগুলি অনুসন্ধান করা হয় (পুনরাবৃত্তভাবে ডিফল্টভাবে), প্রতিটির কোড লোড করা হয় তারপর কম্পাইল করা হয়, তারপর `srcPath` + `code` + `error` ধারণকারী বস্তুর একটি অ্যারে ফেরত দেওয়া হয়:

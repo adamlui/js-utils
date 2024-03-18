@@ -161,8 +161,8 @@ CSS डेटामध्ये प्रदान केलेल्या `इ
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
-console.log(compileResult.error); // रनटाइम त्रुटी, किंवा त्रुटी नसल्यास `undefined`
-console.log(compileResult.code);  // assets/style.scss चे संकलित CSS आउटपुट
+console.log(compileResult.error); // रनटाइम त्रुटी आउटपुट करते, किंवा त्रुटी नसल्यास `undefined`
+console.log(compileResult.code);  // assets/style.css वरून CSS संकलित आउटपुट
 ```
 
 **डिरेक्टरी पाथ** पास केल्यास, SCSS फायली शोधल्या जातात (पुन्हा डीफॉल्टनुसार), प्रत्येकाचा कोड लोड केला जातो आणि संकलित केला जातो, त्यानंतर `srcPath` + `code` + `error` समाविष्ट असलेल्या ऑब्जेक्ट्सचा ॲरे दिला जातो:

@@ -161,8 +161,8 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
-console.log(compileResult.error); // 執行階段錯誤，如果沒有錯誤則為 `undefined`
-console.log(compileResult.code);  // 編譯後的 assets/style.scss CSS 輸出
+console.log(compileResult.error); // 輸出運行時錯誤，如果沒有錯誤則輸出 `undefined`
+console.log(compileResult.code);  // 輸出從 asset/style.css 編譯的 CSS
 ```
 
 如果传递 **目录路径**，则搜索 SCSS 文件（默认情况下递归），加载每个文件的代码并编译，然后返回包含 `srcPath` + `code` + `error` 的对象数组：

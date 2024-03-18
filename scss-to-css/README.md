@@ -161,8 +161,8 @@ If a **file path** is passed, the file's code is compiled to CSS, then an object
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
-console.log(compileResult.error); // runtime error, or `undefined` if no error
-console.log(compileResult.code);  // compiled CSS output of assets/style.scss
+console.log(compileResult.error); // outputs runtime error, or `undefined` if no error
+console.log(compileResult.code);  // outputs compiled CSS from assets/style.scss
 ```
 
 If a **directory path** is passed, SCSS files are searched for (recursively by default), each one's code is loaded then compiled, then an array of objects containing `srcPath` + `code` + `error` is returned:
