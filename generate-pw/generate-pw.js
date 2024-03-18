@@ -129,10 +129,9 @@ else { // run as CLI tool
         console.info('v' + require('./package.json').version);
 
     } else { // run MAIN routine
-        for (const numArgType of ['length', 'qty']) {
+        for (const numArgType of ['length', 'qty'])
             if (config[numArgType] < 1) { return console.error(
                 `\n${br}Error: '${ numArgType }' argument must be 1 or greater.${nc}`);
-        }}
         const funcOptions = {
             length: config.length, qty: config.qty, charset: config.charset, exclude: config.excludeChars,
             numbers: config.includeNums, symbols: config.includeSymbols,
