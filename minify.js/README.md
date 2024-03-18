@@ -179,8 +179,8 @@ console.log(results[1].code);
 Options are boolean, passed as object properties. For example:
 
 ```js
+// Returns data object where dotfiles are also processed if `input` is a path
 minifyJS.minify(input, { dotFiles: true });
-// returns data object where dotfiles are also processed if `input` is a path
 ```
 
 Possible parameters (and their default settings) are:
@@ -202,8 +202,8 @@ Searches for all unminified JavaScript files within the `searchDir` string passe
 Options are boolean, passed as object properties. For example:
 
 ```js
+// Returns array containing filepaths to unminified JS files in exactly `searchDir`
 minifyJS.findJS(searchDir, { recursive: false });
-// returns array containing filepaths to unminified JS files in exactly `searchDir`
 ```
 
 Possible parameters (and their default settings) are:

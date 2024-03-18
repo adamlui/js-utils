@@ -179,8 +179,8 @@ console.log(results[1].code);
 選項是布林值，作為物件屬性傳遞。 例如：
 
 ```js
-minifyJS.minify(input, { dotFiles: true });
 // 如果 `input` 是路徑，則傳回資料對象，其中也會處理點文件
+minifyJS.minify(input, { dotFiles: true });
 ```
 
 可能的參數（及其預設設定）有：
@@ -202,8 +202,8 @@ minifyJS.minify(input, { dotFiles: true });
 選項是布林值，作為物件屬性傳遞。 例如：
 
 ```js
+// 傳回包含精確位於 `searchDir` 中的未縮小 JS 檔案的檔案路徑的陣列
 minifyJS.findJS(searchDir, { recursive: false });
-// 傳回包含指向 `searchDir` 中未縮小的 JS 檔案的檔案路徑的陣列
 ```
 
 可能的參數（及其預設設定）有：

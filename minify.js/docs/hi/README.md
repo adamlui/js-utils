@@ -179,8 +179,8 @@ console.log(results[1].code);
 विकल्प बूलियन हैं, ऑब्जेक्ट गुणों के रूप में पारित किए गए हैं। उदाहरण के लिए:
 
 ```js
-minifyJS.minify(input, { dotFiles: true });
 // डेटा ऑब्जेक्ट लौटाता है जहां `input` एक पथ होने पर डॉटफ़ाइलें भी संसाधित की जाती हैं
+minifyJS.minify(input, { dotFiles: true });
 ```
 
 संभावित पैरामीटर (और उनकी डिफ़ॉल्ट सेटिंग्स) हैं:
@@ -202,8 +202,8 @@ minifyJS.minify(input, { dotFiles: true });
 विकल्प बूलियन हैं, ऑब्जेक्ट गुणों के रूप में पारित किए गए हैं। उदाहरण के लिए:
 
 ```js
-minifyJS.findJS(searchDir, { recursive: false });
 // बिल्कुल `searchDir` में अनमिनिफाइड JS फ़ाइलों के लिए फ़ाइलपथ युक्त सरणी लौटाता है
+minifyJS.findJS(searchDir, { recursive: false });
 ```
 
 संभावित पैरामीटर (और उनकी डिफ़ॉल्ट सेटिंग्स) हैं:

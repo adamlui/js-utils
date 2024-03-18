@@ -179,8 +179,8 @@ console.log(results[1].code);
 पर्याय बुलियन आहेत, ऑब्जेक्ट गुणधर्म म्हणून पास केले जातात. उदाहरणार्थ:
 
 ```js
+// डेटा ऑब्जेक्ट परत करतो जिथे डॉटफाईल्सवर देखील प्रक्रिया केली जाते जर `input` एक पथ असेल
 minifyJS.minify(input, { dotFiles: true });
-// returns data object where dotfiles are also processed if `input` is a path
 ```
 
 संभाव्य पॅरामीटर्स (आणि त्यांची डीफॉल्ट सेटिंग्ज) आहेत:
@@ -202,8 +202,8 @@ minifyJS.minify(input, { dotFiles: true });
 पर्याय बुलियन आहेत, ऑब्जेक्ट गुणधर्म म्हणून पास केले जातात. उदाहरणार्थ:
 
 ```js
+// अचूक `searchDir` मधील अनमिनिफाईड JS फायलींवर फाइलपाथ असलेला ॲरे परत करतो
 minifyJS.findJS(searchDir, { recursive: false });
-// अचूक `searchDir` मधील अनमिनिफाईड JS फायलींसाठी फाइलपाथ असलेला ॲरे परत करतो
 ```
 
 संभाव्य पॅरामीटर्स (आणि त्यांची डीफॉल्ट सेटिंग्ज) आहेत:
