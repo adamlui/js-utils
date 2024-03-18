@@ -109,7 +109,7 @@ else { // run as CLI tool
           br = '\x1b[1;91m', // bright red
           bw = '\x1b[1;97m'; // bright white
 
-    // Load settings from args
+    // Load settings from ARGS
     const config = { 
         length: parseInt(process.argv.find(arg => /^--?length/.test(arg))?.split('=')[1]) || 8,
         qty: parseInt(process.argv.find(arg => /^--?qu?a?n?ti?t?y=\d+$/.test(arg))?.split('=')[1]) || 1,
@@ -130,7 +130,7 @@ else { // run as CLI tool
 
     } else { // run MAIN routine
         for (const numArgType of ['length', 'qty']) {
-            if (config['numArgType'] < 1) {
+            if (config[numArgType] < 1) {
                 console.error(`\n${br}Error: '${ numArgType }' argument must be 1 or greater.${nc}`);
                 process.exit(1);
         }}
