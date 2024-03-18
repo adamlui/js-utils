@@ -152,7 +152,7 @@ import * as scssToCSS from '@adamlui/scss-to-css';
 const scssToCSS = require('@adamlui/scss-to-css');
 ```
 
-### compile(inputPath, options)
+### compile(inputPath[, options])
 
 यह फ़ंक्शन CSS डेटा में दिए गए `inputPath` में पाए गए SCSS को संकलित करता है।
 
@@ -192,7 +192,7 @@ scssToCSS.compile(inputDir, { minify: false });
 
 <br>
 
-### findSCSS(searchDir, options)
+### findSCSS(searchDir[, options])
 
 यह फ़ंक्शन पारित `searchDir` स्ट्रिंग के भीतर सभी SCSS फ़ाइलों की खोज करता है (यह पता लगाने के लिए उपयोगी है कि कौन सी फ़ाइलें [`compile()`](#compileinputpath-options) संसाधित होंगी) और उनके फ़ाइलपथ वाली एक सरणी लौटाता है।
 
