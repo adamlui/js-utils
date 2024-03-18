@@ -120,7 +120,7 @@ else { // run as CLI tool
         excludeLowerChars: process.argv.some(arg =>
             /^--?(?:L|exclude-?lower-?(?:case)?|lower-?(?:case)?=(?:false|0))$/.test(arg)),
         excludeUpperChars: process.argv.some(arg =>
-            /^--?(?:L|exclude-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/.test(arg)),
+            /^--?(?:U|exclude-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/.test(arg)),
         strictMode: process.argv.some(arg => /^--?s(?:trict)?/.test(arg))
     };
 
