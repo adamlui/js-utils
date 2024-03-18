@@ -124,8 +124,6 @@ else { // run as CLI tool
         strictMode: process.argv.some(arg => /^--?s(?:trict)?/.test(arg))
     };
 
-    console.log(config.excludeChars) ; return
-
     // Show VERSION number if -v or --version passed
     if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
         console.info('v' + require('./package.json').version);
