@@ -94,9 +94,9 @@ else { // run as CLI tool
         includeDotFiles: process.argv.some(arg =>
             /^--?(?:df|D|(?:include-?)?dot-?files?=?(?:true|1)?)$/.test(arg)),
         noRecursion: process.argv.some(arg =>
-            /^--?(?:R|(?:disable|no)-?recursion)$/.test(arg)),
+            /^--?(?:R|(?:disable|no)-?recursion|recursion=(?:false|0))$/.test(arg)),
         noMangle: process.argv.some(arg =>
-            /^--?(?:M|(?:disable|no)-?mangle)$/.test(arg)),
+            /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/.test(arg)),
         quietMode: process.argv.some(arg => /^--?q(?:uiet)?$/.test(arg))
     };
 

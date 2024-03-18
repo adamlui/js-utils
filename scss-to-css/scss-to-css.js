@@ -87,11 +87,11 @@ else { // run as CLI tool
         includeDotFolders: process.argv.some(arg =>
             /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/.test(arg)),
         noSourceMaps: process.argv.some(arg =>
-            /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?)$/.test(arg)),
+            /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?|so?u?rce?-?maps?=(?:false|0))$/.test(arg)),
         noRecursion: process.argv.some(arg =>
-            /^--?(?:R|(?:disable|no)-?recursion)$/.test(arg)),
+            /^--?(?:R|(?:disable|no)-?recursion|recursion=(?:false|0))$/.test(arg)),
         noMinify: process.argv.some(arg =>
-            /^--?(?:M|(?:disable|no)-?minif(?:y|ication))$/.test(arg)),
+            /^--?(?:M|(?:disable|no)-?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/.test(arg)),
         quietMode: process.argv.some(arg => /^--?q(?:uiet)?$/.test(arg))
     };
 
