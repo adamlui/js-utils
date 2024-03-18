@@ -130,7 +130,7 @@ else { // run as CLI tool
 
     } else { // run MAIN routine
         for (const numArgType of ['length', 'qty'])
-            if (config[numArgType] < 1) { return console.error(
+            if (config[numArgType] < 1) return console.error(
                 `\n${br}Error: '${ numArgType }' argument must be 1 or greater.${nc}`);
         const funcOptions = {
             length: config.length, qty: config.qty, charset: config.charset, exclude: config.excludeChars,
