@@ -97,7 +97,7 @@ else { // run as CLI tool
             /^--?(?:R|(?:disable|no)-?recursion|recursion=(?:false|0))$/.test(arg)),
         noMangle: process.argv.some(arg =>
             /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/.test(arg)),
-        quietMode: process.argv.some(arg => /^--?q(?:uiet)?$/.test(arg))
+        quietMode: process.argv.some(arg => /^--?q(?:uiet)?(?:-?mode)?$/.test(arg))
     };
 
     // Show HELP screen if -h or --help passed

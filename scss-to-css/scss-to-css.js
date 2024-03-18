@@ -92,7 +92,7 @@ else { // run as CLI tool
             /^--?(?:R|(?:disable|no)-?recursion|recursion=(?:false|0))$/.test(arg)),
         noMinify: process.argv.some(arg =>
             /^--?(?:M|(?:disable|no)-?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/.test(arg)),
-        quietMode: process.argv.some(arg => /^--?q(?:uiet)?$/.test(arg))
+        quietMode: process.argv.some(arg => /^--?q(?:uiet)?(?:-?mode)?$/.test(arg))
     };
 
     // Show HELP screen if -h or --help passed
