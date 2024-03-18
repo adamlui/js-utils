@@ -113,7 +113,7 @@ else { // run as CLI tool
     const config = { 
         length: parseInt(process.argv.find(arg => /^--?length/.test(arg))?.split('=')[1]) || 8,
         qty: parseInt(process.argv.find(arg => /^--?qu?a?n?ti?t?y=\d+$/.test(arg))?.split('=')[1]) || 1,
-        charset: process.argv.find(arg => /^--?chars/.test(arg))?.split('=')[1] || charsets.lower + charsets.upper,
+        charset: process.argv.find(arg => /^--?chars/.test(arg))?.split('=')[1],
         excludeChars: process.argv.find(arg => /^--?exclude=/.test(arg))?.split('=')[1] || '',
         includeNums: process.argv.some(arg => /^--?(?:n|(?:include-?)?num(?:ber)?s?=?(?:true|1)?)$/.test(arg)),
         includeSymbols: process.argv.some(arg => /^--?(?:s|(?:include-?)?symbols?=?(?:true|1)?)$/.test(arg)),
