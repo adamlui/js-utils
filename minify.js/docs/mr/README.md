@@ -159,8 +159,8 @@ const minifyJS = require('@adamlui/minify.js');
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
       minifyResult = minifyJS.minify(srcCode);
-console.log(minifyResult.error); // रनटाइम त्रुटी, किंवा त्रुटी नसल्यास `undefined`
-console.log(minifyResult.code);  // कमी केलेले आउटपुट: function add(n,d){return n+d}
+console.log(minifyResult.error); // रनटाइम त्रुटी आउटपुट करते, किंवा त्रुटी नसल्यास `undefined`
+console.log(minifyResult.code);  // आउटपुट मिनिफाइड JS: function add(n,d){return n+d}
 ```
 
 जर **फाइल पथ** पास झाला असेल, तर फाइलचा कोड लोड केला जातो आणि नंतर लहान केला जातो, वरील प्रमाणे ऑब्जेक्ट परत करतो.

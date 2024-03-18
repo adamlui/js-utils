@@ -159,8 +159,8 @@ const minifyJS = require('@adamlui/minify.js');
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
       minifyResult = minifyJS.minify(srcCode);
-console.log(minifyResult.error); // 運行時錯誤，如果沒有錯誤則為 `undefined`
-console.log(minifyResult.code);  // 縮小輸出： function add(n,d){return n+d}
+console.log(minifyResult.error); // 輸出運行時錯誤，如果沒有錯誤則輸出 `undefined`
+console.log(minifyResult.code);  // 輸出縮小的 JS： function add(n,d){return n+d}
 ```
 
 如果傳遞了**檔案路徑**，則載入檔案的程式碼然後縮小，傳回一個像上面一樣的物件。

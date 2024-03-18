@@ -159,8 +159,8 @@ const minifyJS = require('@adamlui/minify.js');
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
       minifyResult = minifyJS.minify(srcCode);
-console.log(minifyResult.error); // রানটাইম ত্রুটি, অথবা কোনো ত্রুটি না থাকলে `undefined`
-console.log(minifyResult.code);  // ছোট আউটপুট: function add(n,d){return n+d}
+console.log(minifyResult.error); // আউটপুট রানটাইম ত্রুটি, বা `undefined` যদি কোনো ত্রুটি না থাকে
+console.log(minifyResult.code);  // আউটপুট ছোট JS: function add(n,d){return n+d}
 ```
 
 যদি একটি **ফাইল পাথ** পাস করা হয়, তাহলে ফাইলের কোড লোড হয় তারপর ছোট করা হয়, উপরের মত একটি বস্তু ফেরত দেয়।

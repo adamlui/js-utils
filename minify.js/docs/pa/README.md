@@ -158,8 +158,8 @@ const minifyJS = require('@adamlui/minify.js');
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
       minifyResult = minifyJS.minify(srcCode);
-console.log(minifyResult.error); // ਰਨਟਾਈਮ ਗਲਤੀ, ਜਾਂ ਜੇਕਰ ਕੋਈ ਗਲਤੀ ਨਹੀਂ ਹੈ ਤਾਂ `undefined`
-console.log(minifyResult.code);  // ਘਟੀਆ ਆਉਟਪੁੱਟ: function add(n,d){return n+d}
+console.log(minifyResult.error); // ਰਨਟਾਈਮ ਗਲਤੀ ਨੂੰ ਆਉਟਪੁੱਟ ਕਰਦਾ ਹੈ, ਜਾਂ ਜੇਕਰ ਕੋਈ ਗਲਤੀ ਨਹੀਂ ਹੈ ਤਾਂ `undefined`
+console.log(minifyResult.code);  // ਆਉਟਪੁੱਟ ਮਿਨੀਫਾਈਡ JS: function add(n,d){return n+d}
 ```
 
 ਜੇਕਰ ਇੱਕ **ਫਾਈਲ ਮਾਰਗ** ਪਾਸ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਤਾਂ ਫਾਈਲ ਦਾ ਕੋਡ ਲੋਡ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਫਿਰ ਮਿਨਿਫਾਈਡ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਉਪਰੋਕਤ ਵਰਗਾ ਇੱਕ ਵਸਤੂ ਵਾਪਸ ਕਰਦਾ ਹੈ।
