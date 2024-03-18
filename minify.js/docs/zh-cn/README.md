@@ -168,10 +168,12 @@ console.log(minifyResult.code);  // 缩小输出： function add(n,d){return n+d
 如果传递**目录路径**，则会搜索 JavaScript 文件（默认情况下递归），加载每个代码并缩小，然后返回包含 `srcPath` + `code` + `error` 的对象数组：
 
 ```js
+// 输出工作目录 + 所有嵌套目录中 JS 文件的路径
 const results = minifyJS.minify('.');
-results.forEach(result =>
-    console.log(result.srcPath)); // 工作目录 + 所有嵌套目录中 JS 文件的路径
-console.log(results[1].code);     // 如果找到，则为第二个 JS 文件的精简代码，如果未找到，则为 `undefined`
+results.forEach(result => console.log(result.srcPath));
+
+// 如果找到，则输出第二个 JS 文件的精简代码，如果未找到，则输出 `undefined`
+console.log(results[1].code);
 ```
 
 选项是布尔值，作为对象属性传递。 例如：

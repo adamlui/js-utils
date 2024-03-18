@@ -168,10 +168,12 @@ console.log(minifyResult.code);  // 縮小輸出： function add(n,d){return n+d
 如果傳遞 **目錄路徑**，則會搜尋 JavaScript 檔案（預設遞歸），載入每個程式碼並縮小，然後傳回包含 `srcPath` + `code` + `error` 的物件陣列：
 
 ```js
+// 輸出工作目錄 + 所有巢狀目錄中 JS 檔案的路徑
 const results = minifyJS.minify('.');
-results.forEach(result =>
-    console.log(result.srcPath)); // 工作目錄 + 所有嵌套目錄中 JS 檔案的路徑
-console.log(results[1].code);     // 如果找到，則為第二個 JS 檔案的精簡程式碼，如果未找到，則為 `undefined`
+results.forEach(result => console.log(result.srcPath));
+
+// 如果找到，則輸出第二個 JS 檔案的精簡程式碼，如果未找到，則輸出 `undefined`
+console.log(results[1].code);
 ```
 
 選項是布林值，作為物件屬性傳遞。 例如：
