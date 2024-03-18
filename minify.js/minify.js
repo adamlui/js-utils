@@ -90,9 +90,9 @@ else { // run as CLI tool
     const config = {
         dryRun: process.argv.some(arg => /^--?(?:n|dry-?run)$/.test(arg)),
         includeDotFolders: process.argv.some(arg =>
-            /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?)$/.test(arg)),
+            /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?))$/.test(arg)),
         includeDotFiles: process.argv.some(arg =>
-            /^--?(?:df|D|(?:include-?)?dot-?files?)$/.test(arg)),
+            /^--?(?:df|D|(?:include-?)?dot-?files?=?(?:true|1)?))$/.test(arg)),
         noRecursion: process.argv.some(arg =>
             /^--?(?:R|(?:disable|no)-?recursion)$/.test(arg)),
         noMangle: process.argv.some(arg =>
