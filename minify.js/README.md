@@ -217,7 +217,7 @@ Name         | Desciption                                              | Default
 
 ## 💖 Support
 
-Please consider [giving a GitHub ⭐](https://github.com/adamlui/js-utils) if this helped you!
+Please consider [giving a GitHub ⭐](https://github.com/adamlui/js-utils) or [funding](https://github.com/sponsors/adamlui) this project if it helped you!
 <br><br>
 
 ## 🏛️ MIT License

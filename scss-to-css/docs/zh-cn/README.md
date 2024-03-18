@@ -216,7 +216,7 @@ scssToCSS.findSCSS(searchDir, { recursive: false });
 
 ## 💖 支持
 
-如果这对您有帮助，请考虑[给予 GitHub ⭐](https://github.com/adamlui/js-utils)！
+如果这个项目对您有帮助，请考虑[给予 GitHub ⭐](https://github.com/adamlui/js-utils) 或[资助](https://github.com/sponsors/adamlui)！
 <br><br>
 
 ## 🏛️ MIT 许可证

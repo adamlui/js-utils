@@ -217,7 +217,7 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 ## 💖 支援
 
-如果這對您有幫助，請考慮[給予 GitHub ⭐](https://github.com/adamlui/js-utils)！
+如果這個專案對您有幫助，請考慮[給予 GitHub ⭐](https://github.com/adamlui/js-utils) 或[資助](https://github.com/sponsors/adamlui)！
 <br><br>
 
 ## 🏛️ MIT 许可证
