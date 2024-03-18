@@ -153,7 +153,7 @@ import * as scssToCSS from '@adamlui/scss-to-css';
 const scssToCSS = require('@adamlui/scss-to-css');
 ```
 
-### compile(inputPath[, options])
+### `compile(inputPath[, options])`
 
 此函數將在 `inputPath` 中找到的 SCSS 編譯為 CSS 資料。
 
@@ -193,7 +193,7 @@ scssToCSS.compile(inputDir, { minify: false });
 
 <br>
 
-### findSCSS(searchDir[, options])
+### `findSCSS(searchDir[, options])`
 
 此函數搜尋傳遞的 `searchDir` 字串中的所有 SCSS 檔案（對於發現 [`compile()`](#compileinputpath-options) 將處理哪些檔案很有用）並傳回包含其檔案路徑的陣列。
 

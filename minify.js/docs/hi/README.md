@@ -150,7 +150,7 @@ import * as minifyJS from '@adamlui/minify.js';
 const minifyJS = require('@adamlui/minify.js');
 ```
 
-### minify(input[, options])
+### `minify(input[, options])`
 
 यह फ़ंक्शन आपूर्ति किए गए स्ट्रिंग इनपुट के आधार पर जावास्क्रिप्ट कोड को छोटा करता है।
 
@@ -193,7 +193,7 @@ minifyJS.minify(input, { dotFiles: true });
 
 <br>
 
-### findJS(searchDir[, options])
+### `findJS(searchDir[, options])`
 
 यह फ़ंक्शन पास की गई `searchDir` स्ट्रिंग के भीतर सभी अनमिनिफाइड जावास्क्रिप्ट फ़ाइलों को खोजता है (यह पता लगाने के लिए उपयोगी है कि कौन सी फ़ाइलें [`minify()`](#minifyinput-options) प्रोसेस होंगी) और उनके फ़ाइलपथ वाली एक सरणी लौटाता है।
 

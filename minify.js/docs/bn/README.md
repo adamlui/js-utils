@@ -150,7 +150,7 @@ import * as minifyJS from '@adamlui/minify.js';
 const minifyJS = require('@adamlui/minify.js');
 ```
 
-### minify(input[, options])
+### `minify(input[, options])`
 
 এই ফাংশনটি সরবরাহকৃত স্ট্রিং ইনপুটের উপর ভিত্তি করে জাভাস্ক্রিপ্ট কোডকে ছোট করে।
 
@@ -193,7 +193,7 @@ minifyJS.minify(input, { dotFiles: true });
 
 <br>
 
-### findJS(searchDir[, options])
+### `findJS(searchDir[, options])`
 
 এই ফাংশনটি পাস করা `searchDir` স্ট্রিং এর মধ্যে সমস্ত অমিনিফাইড জাভাস্ক্রিপ্ট ফাইল অনুসন্ধান করে (কি ফাইলগুলি [`minify()`](#minifyinput-options) প্রক্রিয়া করবে তা আবিষ্কার করার জন্য দরকারী) এবং তাদের ফাইলপথ সমন্বিত একটি অ্যারে প্রদান করে।
 

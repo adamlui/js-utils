@@ -150,7 +150,7 @@ import * as minifyJS from '@adamlui/minify.js';
 const minifyJS = require('@adamlui/minify.js');
 ```
 
-### minify(input[, options])
+### `minify(input[, options])`
 
 हे फंक्शन पुरवलेल्या स्ट्रिंग इनपुटवर आधारित JavaScript कोड कमी करते.
 
@@ -193,7 +193,7 @@ minifyJS.minify(input, { dotFiles: true });
 
 <br>
 
-### findJS(searchDir[, options])
+### `findJS(searchDir[, options])`
 
 हे फंक्शन पास केलेल्या `searchDir` स्ट्रिंगमधील सर्व अनमिनिफाईड JavaScript फायली शोधते (कोणत्या फायली [`minify()`](#minifyinput-options) प्रक्रिया करतील हे शोधण्यासाठी उपयुक्त) आणि त्यांचे फाइलपाथ असलेले ॲरे परत करते.
 

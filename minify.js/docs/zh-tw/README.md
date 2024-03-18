@@ -150,7 +150,7 @@ import * as minifyJS from '@adamlui/minify.js';
 const minifyJS = require('@adamlui/minify.js');
 ```
 
-### minify(input[, options])
+### `minify(input[, options])`
 
 此函數根據提供的字串輸入來縮小 JavaScript 程式碼。
 
@@ -193,7 +193,7 @@ minifyJS.minify(input, { dotFiles: true });
 
 <br>
 
-### findJS(searchDir[, options])
+### `findJS(searchDir[, options])`
 
 此函數搜尋傳遞的 `searchDir` 字串中的所有未縮小的 JavaScript 檔案（對於發現 [`minify()`](#minifyinput-options) 將處理哪些檔案很有用）並傳回包含其檔案路徑的陣列。
 
