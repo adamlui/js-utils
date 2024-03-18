@@ -31,19 +31,19 @@
 As a **global utility**:
 
 ```
-npm install -g @adamlui/scss-to-css
+$ npm install -g @adamlui/scss-to-css
 ```
 
 As a **dev dependency** (e.g. for build scripts), from your project root:
 
 ```
-npm install -D @adamlui/scss-to-css
+$ npm install -D @adamlui/scss-to-css
 ```
 
 As a **runtime dependency** (e.g. for on-the-fly compilation), from your project root:
 
 ```
-npm install @adamlui/scss-to-css
+$ npm install @adamlui/scss-to-css
 ```
 
 ## 💻 Command line usage
@@ -51,7 +51,7 @@ npm install @adamlui/scss-to-css
 The basic **global command** is:
 
 ```
-scss-to-css
+$ scss-to-css
 ```
 
 Sample output:
@@ -65,7 +65,7 @@ Sample output:
 To specify **input/output** paths:
    
 ```
-scss-to-css [input_path] [output_path]
+$ scss-to-css [input_path] [output_path]
 ```
 
 - `[input_path]`: Path to SCSS file or directory containing SCSS files to be compiled, relative to the current working directory.
@@ -91,25 +91,25 @@ Replace `<scss-to-css-cmd>` with `scss-to-css` + optional args. Then, `npm run b
 Compile all SCSS files in the **current directory** (outputs to `css/`):
 
 ```
-scss-to-css
+$ scss-to-css
 ```
 
 Compile all SCSS files in a **specific directory** (outputs to `path/to/your/directory/css/`):
 
 ```
-scss-to-css path/to/your/directory
+$ scss-to-css path/to/your/directory
 ```
 
 Compile a **specific file** (outputs to `path/to/your/css/file.min.css`):
 
 ```
-scss-to-css path/to/your/file.scss
+$ scss-to-css path/to/your/file.scss
 ```
 
 Specify both **input and output** directories (outputs to `output_folder/`):
 
 ```
-scss-to-css input_folder output_folder
+$ scss-to-css input_folder output_folder
 ```
 
 **💡 Note:** Output CSS is minified unless `-M` or `--no-minify` is passed.

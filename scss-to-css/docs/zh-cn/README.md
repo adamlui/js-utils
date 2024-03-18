@@ -31,19 +31,19 @@
 作为**全局实用程序**：
 
 ```
-npm install -g @adamlui/scss-to-css
+$ npm install -g @adamlui/scss-to-css
 ```
 
 作为**开发人员依赖**（例如，对于构建脚本），从项目根目录：
 
 ```
-npm install -D @adamlui/scss-to-css
+$ npm install -D @adamlui/scss-to-css
 ```
 
 作为**运行时依赖**（例如，用于动态编译），从项目根目录：
 
 ```
-npm install @adamlui/scss-to-css
+$ npm install @adamlui/scss-to-css
 ```
 
 ## 💻 命令行使用
@@ -51,7 +51,7 @@ npm install @adamlui/scss-to-css
 基本的**全局命令**是：
 
 ```
-scss-to-css
+$ scss-to-css
 ```
 
 示例输出：
@@ -65,7 +65,7 @@ scss-to-css
 指定**输入/输出**路径：
    
 ```
-scss-to-css [input_path] [output_path]
+$ scss-to-css [input_path] [output_path]
 ```
 
 - `[input_path]`: SCSS 文件或包含要编译的 SCSS 文件的目录的路径，相对于当前工作目录。
@@ -91,25 +91,25 @@ scss-to-css [input_path] [output_path]
 编译 **当前目录** 中的所有 SCSS 文件（输出到 `css/`）：
 
 ```
-scss-to-css
+$ scss-to-css
 ```
 
 编译 **特定目录** 中的所有 SCSS 文件（输出到 `path/to/your/directory/css/`）：
 
 ```
-scss-to-css path/to/your/directory
+$ scss-to-css path/to/your/directory
 ```
 
 编译一个**特定文件**（输出到 `path/to/your/css/file.min.css`）：
 
 ```
-scss-to-css path/to/your/file.scss
+$ scss-to-css path/to/your/file.scss
 ```
 
 指定 **输入和输出** 目录（输出到 `output_folder/`）：
 
 ```
-scss-to-css input_folder output_folder
+$ scss-to-css input_folder output_folder
 ```
 
 **💡 注意：** 除非传递 `-M` 或 `--no-minify` ，否则输出 CSS 会被缩小。

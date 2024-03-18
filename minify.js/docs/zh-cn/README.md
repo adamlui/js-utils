@@ -35,19 +35,19 @@
 作为**全局实用程序**：
 
 ```
-npm install -g @adamlui/minify.js
+$ npm install -g @adamlui/minify.js
 ```
 
 作为**开发人员依赖**（例如，对于构建脚本），从项目根目录：
 
 ```
-npm install -D @adamlui/minify.js
+$ npm install -D @adamlui/minify.js
 ```
 
 作为**运行时依赖**（例如，用于动态缩小），从项目根目录：
 
 ```
-npm install @adamlui/minify.js
+$ npm install @adamlui/minify.js
 ```
 
 ## 💻 命令行使用
@@ -55,7 +55,7 @@ npm install @adamlui/minify.js
 基本的**全局命令**是：
 
 ```
-minify-js
+$ minify-js
 ```
 
 **💡 注意：** 通过 `-n` 或 `--dry-run` 来仅查看将处理哪些文件。
@@ -65,7 +65,7 @@ minify-js
 指定**输入/输出**路径：
    
 ```
-minify-js [input_path] [output_path]
+$ minify-js [input_path] [output_path]
 ```
 
 - `[input_path]`: 相对于当前工作目录的 JS 文件或包含要缩小的 JS 文件的目录的路径。
@@ -91,25 +91,25 @@ minify-js [input_path] [output_path]
 缩小**当前目录**中的所有 JavaScript 文件（输出到 `min/`）：
 
 ```
-minify-js
+$ minify-js
 ```
 
 缩小**特定目录**中的所有 JavaScript 文件（输出到 `path/to/your/directory/min/`）：
 
 ```
-minify-js path/to/your/directory
+$ minify-js path/to/your/directory
 ```
 
 缩小**特定文件**（输出到 `path/to/your/min/file.min.js`）：
 
 ```
-minify-js path/to/your/file.js
+$ minify-js path/to/your/file.js
 ```
 
 指定**输入和输出**目录（输出到 `output_folder/`）：
 
 ```
-minify-js input_folder output_folder
+$ minify-js input_folder output_folder
 ```
 
 ### 命令行选项

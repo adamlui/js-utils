@@ -31,19 +31,19 @@
 作為**全域實用程式**：
 
 ```
-npm install -g @adamlui/scss-to-css
+$ npm install -g @adamlui/scss-to-css
 ```
 
 作為**開發人員依賴**（例如，對於建置腳本），從專案根目錄：
 
 ```
-npm install -D @adamlui/scss-to-css
+$ npm install -D @adamlui/scss-to-css
 ```
 
 作為**運行時依賴**（例如，用於動態編譯），從專案根目錄：
 
 ```
-npm install @adamlui/scss-to-css
+$ npm install @adamlui/scss-to-css
 ```
 
 ## 💻 命令列使用
@@ -51,7 +51,7 @@ npm install @adamlui/scss-to-css
 基本的**全域命令**是：
 
 ```
-scss-to-css
+$ scss-to-css
 ```
 
 範例輸出：
@@ -65,7 +65,7 @@ scss-to-css
 指定**輸入/輸出**路徑：
    
 ```
-scss-to-css [input_path] [output_path]
+$ scss-to-css [input_path] [output_path]
 ```
 
 - `[input_path]`: SCSS 檔案或包含要編譯的 SCSS 檔案的目錄的路徑，相對於目前工作目錄。
@@ -91,25 +91,25 @@ scss-to-css [input_path] [output_path]
 編譯 **目前目錄** 中的所有 SCSS 檔案（輸出到 `css/`）：
 
 ```
-scss-to-css
+$ scss-to-css
 ```
 
 編譯 **特定目錄** 中的所有 SCSS 檔案（輸出到 `path/to/your/directory/css/`）：
 
 ```
-scss-to-css path/to/your/directory
+$ scss-to-css path/to/your/directory
 ```
 
 編譯一個**特定檔案**（輸出到 `path/to/your/css/file.min.css`）：
 
 ```
-scss-to-css path/to/your/file.scss
+$ scss-to-css path/to/your/file.scss
 ```
 
 指定 **輸入和輸出** 目錄（輸出到 `output_folder/`）：
 
 ```
-scss-to-css input_folder output_folder
+$ scss-to-css input_folder output_folder
 ```
 
 **💡 注意：** 除非傳遞 `-M` 或 `--no-minify` ，否則輸出 CSS 會被縮小。
