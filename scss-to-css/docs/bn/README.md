@@ -179,8 +179,8 @@ console.log(results[1].code);
 Options are boolean, passed as object properties. For example:
 
 ```js
+// ডেটা অবজেক্টের অ্যারে প্রদান করে যেখানে `.কোড` অমিনিফাইড CSS কোড
 scssToCSS.compile(inputDir, { minify: false });
-// ডাটা অবজেক্ট রিটার্ন করে যেখানে `.code`-এ unminified CSS থাকে
 ```
 
 সম্ভাব্য প্যারামিটার (এবং তাদের ডিফল্ট সেটিংস) হল:
@@ -202,8 +202,8 @@ scssToCSS.compile(inputDir, { minify: false });
 বিকল্পগুলি হল বুলিয়ান, অবজেক্টের বৈশিষ্ট্য হিসাবে পাস করা হয়েছে। উদাহরণ স্বরূপ:
 
 ```js
-scssToCSS.findSCSS(searchDir, { recursive: false });
 // ঠিক `searchDir`-এ SCSS ফাইলে ফাইলপাথ সমন্বিত অ্যারে ফেরত দেয়
+scssToCSS.findSCSS(searchDir, { recursive: false });
 ```
 
 সম্ভাব্য প্যারামিটার (এবং তাদের ডিফল্ট সেটিংস) হল:

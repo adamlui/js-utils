@@ -178,8 +178,8 @@ console.log(results[1].code);
 विकल्प बूलियन हैं, ऑब्जेक्ट गुणों के रूप में पारित किए गए हैं। उदाहरण के लिए:
 
 ```js
+// डेटा ऑब्जेक्ट की सरणी लौटाता है जहां `.code` में अनमिनिफाइड CSS होता है
 scssToCSS.compile(inputDir, { minify: false });
-// डेटा ऑब्जेक्ट लौटाता है जहां `.code` में अनमिनिफाइड CSS होता है
 ```
 
 संभावित पैरामीटर (और उनकी डिफ़ॉल्ट सेटिंग्स) हैं:
@@ -201,8 +201,8 @@ scssToCSS.compile(inputDir, { minify: false });
 विकल्प बूलियन हैं, ऑब्जेक्ट गुणों के रूप में पारित किए गए हैं। उदाहरण के लिए:
 
 ```js
-scssToCSS.findSCSS(searchDir, { recursive: false });
 // बिल्कुल `searchDir` में SCSS फ़ाइलों के लिए फ़ाइलपथ युक्त सरणी लौटाता है
+scssToCSS.findSCSS(searchDir, { recursive: false });
 ```
 
 संभावित पैरामीटर (और उनकी डिफ़ॉल्ट सेटिंग्स) हैं:

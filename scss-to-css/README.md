@@ -179,8 +179,8 @@ console.log(results[1].code);
 Options are boolean, passed as object properties. For example:
 
 ```js
+// Returns array of data objects where `.code` contains unminified CSS
 scssToCSS.compile(inputDir, { minify: false });
-// returns data objects where `.code` contains unminified CSS
 ```
 
 Possible parameters (and their default settings) are:
@@ -202,8 +202,8 @@ Searches for all SCSS files within the `searchDir` string passed (useful for dis
 Options are boolean, passed as object properties. For example:
 
 ```js
+// Returns array containing filepaths to SCSS files in exactly `searchDir`
 scssToCSS.findSCSS(searchDir, { recursive: false });
-// returns array containing filepaths to SCSS files in exactly `searchDir`
 ```
 
 Possible parameters (and their default settings) are:

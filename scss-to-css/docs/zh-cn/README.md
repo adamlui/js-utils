@@ -179,8 +179,8 @@ console.log(results[1].code);
 选项是布尔值，作为对象属性传递。 例如：
 
 ```js
+// 返回数据对象数组，其中 `.code` 包含未缩小的 CSS
 scssToCSS.compile(inputDir, { minify: false });
-// 返回 `.code` 包含未缩小 CSS 的数据对象
 ```
 
 可能的参数（及其默认设置）有：
@@ -202,8 +202,8 @@ scssToCSS.compile(inputDir, { minify: false });
 选项是布尔值，作为对象属性传递。 例如：
 
 ```js
-scssToCSS.findSCSS(searchDir, { recursive: false });
 // 返回包含恰好位于 `searchDir` 中的 SCSS 文件的文件路径的数组
+scssToCSS.findSCSS(searchDir, { recursive: false });
 ```
 
 可能的参数（及其默认设置）有：

@@ -179,8 +179,8 @@ console.log(results[1].code);
 選項是布林值，作為物件屬性傳遞。 例如：
 
 ```js
+// 傳回資料物件數組，其中 `.code` 包含未縮小的 CSS
 scssToCSS.compile(inputDir, { minify: false });
-// 傳回 `.code` 包含未縮小 CSS 的資料對象
 ```
 
 可能的參數（及其預設設定）有：
@@ -202,8 +202,8 @@ scssToCSS.compile(inputDir, { minify: false });
 選項是布林值，作為物件屬性傳遞。 例如：
 
 ```js
-scssToCSS.findSCSS(searchDir, { recursive: false });
 // 傳回包含恰好位於 `searchDir` 中的 SCSS 檔案的檔案路徑的陣列
+scssToCSS.findSCSS(searchDir, { recursive: false });
 ```
 
 可能的參數（及其預設設定）有：
