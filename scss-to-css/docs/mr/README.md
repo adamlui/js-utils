@@ -168,10 +168,12 @@ console.log(compileResult.code);  // assets/style.css वरून CSS संक
 **डिरेक्टरी पाथ** पास केल्यास, SCSS फायली शोधल्या जातात (पुन्हा डीफॉल्टनुसार), प्रत्येकाचा कोड लोड केला जातो आणि संकलित केला जातो, त्यानंतर `srcPath` + `code` + `error` समाविष्ट असलेल्या ऑब्जेक्ट्सचा ॲरे दिला जातो:
 
 ```js
+// वर्किंग डिरेक्टरी + सर्व नेस्टेड डिरेक्टरीमध्ये SCSS फाइल्सचे मार्ग आउटपुट करते
 const results = scssToCSS.compile('.');
-results.forEach(result =>
-    console.log(result.srcPath)); // वर्किंग डिरेक्टरी + सर्व नेस्टेड डिरेक्टरीमध्ये SCSS फाइल्सचे मार्ग
-console.log(results[1].code);     // आढळल्यास दुसऱ्या SCSS फाईलचे संकलित CSS आउटपुट, किंवा न आढळल्यास `undefined`
+results.forEach(result => console.log(result.srcPath));
+
+// आढळल्यास दुसऱ्या SCSS फाईलमधून CSS संकलित केलेले आउटपुट, किंवा न आढळल्यास `undefined`
+console.log(results[1].code);
 ```
 
 पर्याय बुलियन आहेत, ऑब्जेक्ट गुणधर्म म्हणून पास केले जातात. उदाहरणार्थ:

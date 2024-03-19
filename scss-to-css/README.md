@@ -168,10 +168,12 @@ console.log(compileResult.code);  // outputs compiled CSS from assets/style.scss
 If a **directory path** is passed, SCSS files are searched for (recursively by default), each one's code is loaded then compiled, then an array of objects containing `srcPath` + `code` + `error` is returned:
 
 ```js
+// Outputs paths to SCSS files in working directory + all nested directories
 const results = scssToCSS.compile('.');
-results.forEach(result =>
-    console.log(result.srcPath)); // paths to SCSS files in working directory + all nested directories
-console.log(results[1].code);     // compiled CSS output of 2nd SCSS file if found, or `undefined` if not found
+results.forEach(result => console.log(result.srcPath));
+
+// Outputs compiled CSS from 2nd SCSS file if found, or `undefined` if not found
+console.log(results[1].code);
 ```
 
 Options are boolean, passed as object properties. For example:

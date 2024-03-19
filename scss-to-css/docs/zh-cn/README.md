@@ -168,10 +168,12 @@ console.log(compileResult.code);  // 输出从 asset/style.css 编译的 CSS
 如果传递 **目录路径**，则搜索 SCSS 文件（默认情况下递归），加载每个文件的代码并编译，然后返回包含 `srcPath` + `code` + `error` 的对象数组：
 
 ```js
+// // 输出工作目录 + 所有嵌套目录中 SCSS 文件的路径
 const results = scssToCSS.compile('.');
-results.forEach(result =>
-    console.log(result.srcPath)); // 工作目录 + 所有嵌套目录中 SCSS 文件的路径
-console.log(results[1].code);     // 如果找到，则编译第二个 SCSS 文件的 CSS 输出，如果未找到，则为 `undefined`
+results.forEach(result => console.log(result.srcPath));
+
+// 如果找到，则输出从第二个 SCSS 文件编译的 CSCS，如果未找到，则输出 `undefined`
+console.log(results[1].code);
 ```
 
 选项是布尔值，作为对象属性传递。 例如：

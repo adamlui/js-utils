@@ -167,10 +167,12 @@ console.log(compileResult.code);  // assets/style.css से संकलित 
 यदि एक **निर्देशिका पथ** पारित किया जाता है, तो SCSS फ़ाइलें खोजी जाती हैं (डिफ़ॉल्ट रूप से पुनरावर्ती), प्रत्येक का कोड लोड किया जाता है और फिर संकलित किया जाता है, फिर `srcPath` + `code` + `error` युक्त ऑब्जेक्ट की एक सरणी वापस की जाती है:
 
 ```js
+// कार्यशील निर्देशिका + सभी नेस्टेड निर्देशिकाओं में SCSS फ़ाइलों के लिए आउटपुट पथ
 const results = scssToCSS.compile('.');
-results.forEach(result =>
-    console.log(result.srcPath)); // कार्यशील निर्देशिका में SCSS फ़ाइलों के पथ + सभी नेस्टेड निर्देशिकाएँ
-console.log(results[1].code);     // यदि पाया जाता है तो दूसरी SCSS फ़ाइल का संकलित CSS आउटपुट, या नहीं मिलने पर `undefined`
+results.forEach(result => console.log(result.srcPath));
+
+// यदि पाया जाता है तो दूसरी SCSS फ़ाइल से आउटपुट संकलित CSS, या नहीं मिलने पर `undefined`
+console.log(results[1].code);
 ```
 
 विकल्प बूलियन हैं, ऑब्जेक्ट गुणों के रूप में पारित किए गए हैं। उदाहरण के लिए:
