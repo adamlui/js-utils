@@ -165,6 +165,7 @@ console.log(minifyResult.code);  // ਆਉਟਪੁੱਟ ਮਿਨੀਫਾਈ�
 const results = minifyJS.minify('.');
 results.forEach(result => console.log(result.srcPath));
 
+
 // ਦੂਜੀ JS ਫਾਈਲ ਦਾ ਮਿਨਿਫਾਈਡ ਕੋਡ ਆਉਟਪੁੱਟ ਕਰਦਾ ਹੈ, ਜੇਕਰ ਮਿਲਦਾ ਹੈ, ਜਾਂ 'undefined' ਨਹੀਂ ਮਿਲਦਾ ਹੈ
 console.log(results[1].code);
 ```

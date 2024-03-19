@@ -166,6 +166,7 @@ console.log(minifyResult.code);  // आउटपुट मिनिफाइड 
 const results = minifyJS.minify('.');
 results.forEach(result => console.log(result.srcPath));
 
+
 // आढळल्यास दुसऱ्या JS फाईलचा मिनिफाइड कोड आउटपुट करतो, किंवा न आढळल्यास `undefined`
 console.log(results[1].code);
 ```

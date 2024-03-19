@@ -166,6 +166,7 @@ console.log(minifyResult.code);  // 输出缩小的 JS： function add(n,d){retu
 const results = minifyJS.minify('.');
 results.forEach(result => console.log(result.srcPath));
 
+
 // 如果找到，则输出第二个 JS 文件的精简代码，如果未找到，则输出 `undefined`
 console.log(results[1].code);
 ```
