@@ -164,8 +164,8 @@ console.log(compileResult.code);  // assets/style.css वरून CSS संक
 
 ```js
 // वर्किंग डिरेक्टरी + सर्व नेस्टेड डिरेक्टरीमध्ये SCSS फाइल्सचे मार्ग आउटपुट करते
-const results = scssToCSS.compile('.');
-results.forEach(result => console.log(result.srcPath));
+const compileResults = scssToCSS.compile('.');
+compileResults.forEach(result => console.log(result.srcPath));
 
 // आढळल्यास दुसऱ्या SCSS फाईलमधून CSS संकलित केलेले आउटपुट, किंवा न आढळल्यास `undefined`
 console.log(results[1].code);

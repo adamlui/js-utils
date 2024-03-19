@@ -164,8 +164,8 @@ console.log(compileResult.code);  // assets/style.css ਤੋਂ CSS ਕੰਪਾ
 
 ```js
 // ਵਰਕਿੰਗ ਡਾਇਰੈਕਟਰੀ + ਸਾਰੀਆਂ ਨੇਸਟਡ ਡਾਇਰੈਕਟਰੀਆਂ ਵਿੱਚ SCSS ਫਾਈਲਾਂ ਦੇ ਮਾਰਗਾਂ ਨੂੰ ਆਉਟਪੁੱਟ ਕਰਦਾ ਹੈ
-const results = scssToCSS.compile('.');
-results.forEach(result => console.log(result.srcPath));
+const compileResults = scssToCSS.compile('.');
+compileResults.forEach(result => console.log(result.srcPath));
 
 // ਜੇਕਰ ਲੱਭੀ ਤਾਂ ਦੂਜੀ SCSS ਫਾਈਲ ਤੋਂ CSS ਕੰਪਾਇਲ ਕੀਤੀ ਆਉਟਪੁੱਟ, ਜਾਂ `undefined` ਜੇ ਨਹੀਂ ਮਿਲੀ ਤਾਂ
 console.log(results[1].code);

@@ -164,8 +164,8 @@ console.log(compileResult.code);  // 输出从 asset/style.css 编译的 CSS
 
 ```js
 // 输出工作目录 + 所有嵌套目录中 SCSS 文件的路径
-const results = scssToCSS.compile('.');
-results.forEach(result => console.log(result.srcPath));
+const compileResults = scssToCSS.compile('.');
+compileResults.forEach(result => console.log(result.srcPath));
 
 // 如果找到，则输出从第二个 SCSS 文件编译的 CSCS，如果未找到，则输出 `undefined`
 console.log(results[1].code);

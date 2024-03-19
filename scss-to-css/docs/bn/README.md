@@ -164,8 +164,8 @@ console.log(compileResult.code);  // assets/style.scss থেকে CSS কম�
 
 ```js
 // কর্মরত ডিরেক্টরি + সমস্ত নেস্টেড ডিরেক্টরিতে SCSS ফাইলের পাথ আউটপুট করে
-const results = scssToCSS.compile('.');
-results.forEach(result => console.log(result.srcPath));
+const compileResults = scssToCSS.compile('.');
+compileResults.forEach(result => console.log(result.srcPath));
 
 // পাওয়া গেলে দ্বিতীয় SCSS ফাইল থেকে CSS কম্পাইল করা আউটপুট, বা না পাওয়া গেলে `undefined`
 console.log(results[1].code);
