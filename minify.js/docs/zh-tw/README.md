@@ -164,8 +164,8 @@ console.log(minifyResult.code);  // 輸出縮小的 JS： function add(n,d){retu
 
 ```js
 // 輸出工作目錄+所有巢狀目錄下 JS 檔案的來源路徑
-const results = minifyJS.minify('.');
-results.forEach(result => console.log(result.srcPath));
+const minifyResults = minifyJS.minify('.');
+minifyResults.forEach(result => console.log(result.srcPath));
 
 // 如果找到，則輸出第二個 JS 檔案的精簡程式碼，如果未找到，則輸出 `undefined`
 console.log(results[1].code);

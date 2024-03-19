@@ -166,8 +166,8 @@ console.log(minifyResult.code);  // आउटपुट छोटा जावा
 
 ```js
 // कार्यशील निर्देशिका + सभी नेस्टेड निर्देशिकाओं में जावास्क्रिप्ट फ़ाइलों के स्रोत पथ को आउटपुट करता है
-const results = minifyJS.minify('.');
-results.forEach(result => console.log(result.srcPath));
+const minifyResults = minifyJS.minify('.');
+minifyResults.forEach(result => console.log(result.srcPath));
 
 // यदि पाया जाता है तो दूसरी जावास्क्रिप्ट फ़ाइल का छोटा कोड आउटपुट करता है, या नहीं मिलने पर `undefined`
 console.log(results[1].code);

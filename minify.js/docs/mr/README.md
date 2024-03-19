@@ -164,8 +164,8 @@ console.log(minifyResult.code);  // आउटपुट मिनिफाइड 
 
 ```js
 // वर्किंग डिरेक्टरी + सर्व नेस्टेड डिरेक्टरीमध्ये JS फाइल्सचे स्त्रोत मार्ग आउटपुट करते
-const results = minifyJS.minify('.');
-results.forEach(result => console.log(result.srcPath));
+const minifyResults = minifyJS.minify('.');
+minifyResults.forEach(result => console.log(result.srcPath));
 
 // आढळल्यास दुसऱ्या JS फाईलचा मिनिफाइड कोड आउटपुट करतो, किंवा न आढळल्यास `undefined`
 console.log(results[1].code);

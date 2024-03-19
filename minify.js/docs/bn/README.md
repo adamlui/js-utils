@@ -166,8 +166,8 @@ console.log(minifyResult.code);  // আউটপুট ছোট JS: function ad
 
 ```js
 // ওয়ার্কিং ডিরেক্টরি + সমস্ত নেস্টেড ডিরেক্টরিতে জাভাস্ক্রিপ্ট ফাইলগুলির উত্সের পাথগুলি আউটপুট করে
-const results = minifyJS.minify('.');
-results.forEach(result => console.log(result.srcPath));
+const minifyResults = minifyJS.minify('.');
+minifyResults.forEach(result => console.log(result.srcPath));
 
 // পাওয়া গেলে 2য় JS ফাইলের মিনিফাইড কোড আউটপুট করে, অথবা না পাওয়া গেলে `undefined`
 console.log(results[1].code);

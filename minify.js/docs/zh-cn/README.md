@@ -164,8 +164,8 @@ console.log(minifyResult.code);  // 输出缩小的 JS： function add(n,d){retu
 
 ```js
 // 输出工作目录+所有嵌套目录下 JS 文件的源路径
-const results = minifyJS.minify('.');
-results.forEach(result => console.log(result.srcPath));
+const minifyResults = minifyJS.minify('.');
+minifyResults.forEach(result => console.log(result.srcPath));
 
 // 如果找到，则输出第二个 JS 文件的精简代码，如果未找到，则输出 `undefined`
 console.log(results[1].code);
