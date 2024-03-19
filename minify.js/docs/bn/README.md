@@ -155,6 +155,7 @@ const minifyJS = require('@adamlui/minify.js');
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
       minifyResult = minifyJS.minify(srcCode);
+
 console.log(minifyResult.error); // আউটপুট রানটাইম ত্রুটি, বা `undefined` যদি কোনো ত্রুটি না থাকে
 console.log(minifyResult.code);  // আউটপুট ছোট JS: function add(n,d){return n+d}
 ```

@@ -155,6 +155,7 @@ CSS डेटामध्ये प्रदान केलेल्या `इ
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
+
 console.log(compileResult.error); // रनटाइम त्रुटी आउटपुट करते, किंवा त्रुटी नसल्यास `undefined`
 console.log(compileResult.code);  // assets/style.css वरून CSS संकलित आउटपुट
 ```

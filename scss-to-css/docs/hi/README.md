@@ -154,6 +154,7 @@ CSS डेटा में प्रदान किए गए `inputPath` म�
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
+
 console.log(compileResult.error); // यदि कोई त्रुटि नहीं है तो रनटाइम त्रुटि, या `undefined` आउटपुट करता है
 console.log(compileResult.code);  // assets/style.css से संकलित CSS को आउटपुट करता है
 ```

@@ -155,6 +155,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
+
 console.log(compileResult.error); // 输出运行时错误，如果没有错误则输出 `undefined`
 console.log(compileResult.code);  // 输出从 asset/style.css 编译的 CSS
 ```

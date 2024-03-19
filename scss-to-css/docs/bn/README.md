@@ -155,6 +155,7 @@ CSS ডেটাতে দেওয়া `inputPath`-এ পাওয়া SCS
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
+
 console.log(compileResult.error); // আউটপুট রানটাইম ত্রুটি, বা `undefined` যদি কোনো ত্রুটি না থাকে
 console.log(compileResult.code);  // assets/style.scss থেকে CSS কম্পাইল করা আউটপুট
 ```

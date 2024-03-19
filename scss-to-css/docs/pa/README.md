@@ -155,6 +155,7 @@ CSS ਡੇਟਾ ਵਿੱਚ ਪ੍ਰਦਾਨ ਕੀਤੇ ਗਏ `inputPath`
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
+
 console.log(compileResult.error); // ਰਨਟਾਈਮ ਗਲਤੀ ਨੂੰ ਆਉਟਪੁੱਟ ਕਰਦਾ ਹੈ, ਜਾਂ ਜੇਕਰ ਕੋਈ ਗਲਤੀ ਨਹੀਂ ਹੈ ਤਾਂ `undefined`
 console.log(compileResult.code);  // assets/style.css ਤੋਂ CSS ਕੰਪਾਇਲ ਕੀਤੇ ਆਉਟਪੁੱਟ
 ```

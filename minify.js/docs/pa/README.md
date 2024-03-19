@@ -152,6 +152,7 @@ const minifyJS = require('@adamlui/minify.js');
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
       minifyResult = minifyJS.minify(srcCode);
+
 console.log(minifyResult.error); // ਰਨਟਾਈਮ ਗਲਤੀ ਨੂੰ ਆਉਟਪੁੱਟ ਕਰਦਾ ਹੈ, ਜਾਂ ਜੇਕਰ ਕੋਈ ਗਲਤੀ ਨਹੀਂ ਹੈ ਤਾਂ `undefined`
 console.log(minifyResult.code);  // ਆਉਟਪੁੱਟ ਮਿਨੀਫਾਈਡ JS: function add(n,d){return n+d}
 ```

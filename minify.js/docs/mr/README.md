@@ -153,6 +153,7 @@ const minifyJS = require('@adamlui/minify.js');
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
       minifyResult = minifyJS.minify(srcCode);
+
 console.log(minifyResult.error); // रनटाइम त्रुटी आउटपुट करते, किंवा त्रुटी नसल्यास `undefined`
 console.log(minifyResult.code);  // आउटपुट मिनिफाइड JS: function add(n,d){return n+d}
 ```

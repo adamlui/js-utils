@@ -156,6 +156,7 @@ If a **file path** is passed, the file's code is compiled to CSS, then an object
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
+
 console.log(compileResult.error); // outputs runtime error, or `undefined` if no error
 console.log(compileResult.code);  // outputs compiled CSS from assets/style.scss
 ```
