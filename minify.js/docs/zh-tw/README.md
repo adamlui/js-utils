@@ -168,7 +168,7 @@ console.log(minifyResult.code);  // 輸出縮小的 JS： function add(n,d){retu
 如果傳遞 **目錄路徑**，則會搜尋 JavaScript 檔案（預設遞歸），載入每個程式碼並縮小，然後傳回包含 `srcPath` + `code` + `error` 的物件陣列：
 
 ```js
-// 輸出工作目錄 + 所有巢狀目錄中 JS 檔案的路徑
+// 輸出工作目錄+所有巢狀目錄下 JS 檔案的來源路徑
 const results = minifyJS.minify('.');
 results.forEach(result => console.log(result.srcPath));
 

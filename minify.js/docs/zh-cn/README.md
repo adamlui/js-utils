@@ -168,7 +168,7 @@ console.log(minifyResult.code);  // 输出缩小的 JS： function add(n,d){retu
 如果传递**目录路径**，则会搜索 JavaScript 文件（默认情况下递归），加载每个代码并缩小，然后返回包含 `srcPath` + `code` + `error` 的对象数组：
 
 ```js
-// 输出工作目录 + 所有嵌套目录中 JS 文件的路径
+// 输出工作目录+所有嵌套目录下 JS 文件的源路径
 const results = minifyJS.minify('.');
 results.forEach(result => console.log(result.srcPath));
 

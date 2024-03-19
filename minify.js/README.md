@@ -168,7 +168,7 @@ If a **file path** is passed, the file's code is loaded then minified, returning
 If a **directory path** is passed, JavaScript files are searched for (recursively by default), each one's code is loaded then minified, then an array of objects containing `srcPath` + `code` + `error` is returned:
 
 ```js
-// Outputs paths to JS files in working directory + all nested directories
+// Outputs paths to source JS files in working directory + all nested directories
 const results = minifyJS.minify('.');
 results.forEach(result => console.log(result.srcPath));
 
