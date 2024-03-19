@@ -117,25 +117,19 @@ $ scss-to-css input_folder output_folder
 
 ### 命令列選項
 
-#### 配置選項：
+```
+配置選項：
+ -n, --dry-run               實際上並不會縮小文件，只是顯示它們是否會被處理。
+ -d, --include-dotfolders    在檔案搜尋中包含點資料夾。
+ -S, --no-source-maps        防止產生來源映射。
+ -M, --no-minify             禁用輸出 CSS 的縮小。
+ -R, --no-recursion          停用遞歸檔案搜尋。
+ -q, --quiet                 禁止錯誤以外的所有日誌記錄。
 
-旗幟                             | 描述
----------------------------------|---------------------------------------------
-`-n` 或者 `--dry-run`            | 實際上並不會縮小文件，只是顯示它們是否會被處理。
-`-d` 或者 `--include-dotfolders` | 在檔案搜尋中包含點資料夾。
-`-S` 或者 `--no-source-maps`     | 防止產生來源映射。
-`-M` 或者 `--no-minify`          | 禁用輸出 CSS 的縮小。
-`-R` 或者 `--no-recursion`       | 停用遞歸檔案搜尋。
-`-q` 或者 `--quiet`              | 禁止錯誤以外的所有日誌記錄。
-
-#### 訊息命令：
-
-命令                  | 描述
-----------------------|--------------
-`-h` 或者 `--help`    | 顯示幫助畫面。
-`-v` 或者 `--version` | 顯示版本號。
-
-<br>
+訊息命令：
+ -h, --help                  顯示幫助畫面。
+ -v, --version               顯示版本號。
+```
 
 ## 🔌 API 參考
 
@@ -185,15 +179,13 @@ scssToCSS.compile(inputDir, { minify: false });
 
 可能的參數（及其預設設定）有：
 
-姓名         | 描述                                | 預設值
--------------|------------------------------------|---------
-`recursive`  | 如果傳遞目錄路徑，則遞歸搜尋巢狀檔案。 | `true`
-`verbose`    | 在控制台/終端機中顯示日誌記錄。       | `true`
-`dotFolders` | 在檔案搜尋中包含點資料夾。            | `false`
-`minify`     | 縮小輸出 CSS。                       | `true`
-`sourceMaps` | 產生 CSS 來源映射。                   | `true`
-
-<br>
+```
+ recursive (true)     如果傳遞目錄路徑，則遞歸搜尋巢狀檔案。
+ verbose (true)       在控制台/終端機中顯示日誌記錄。
+ dotFolders (false)   在檔案搜尋中包含點資料夾。
+ minify (true)        縮小輸出 CSS。
+ sourceMaps (true)    產生 CSS 來源映射。
+```
 
 ### `findSCSS(searchDir[, options])`
 
@@ -208,11 +200,11 @@ scssToCSS.findSCSS(searchDir, { recursive: false });
 
 可能的參數（及其預設設定）有：
 
-姓名         | 描述                                | 預設值
--------------|------------------------------------|---------
-`recursive`  | 如果傳遞目錄路徑，則遞歸搜尋巢狀檔案。 | `true`
-`verbose`    | 在控制台/終端機中顯示日誌記錄。       | `true`
-`dotFolders` | 在檔案搜尋中包含點資料夾。            | `false`
+```
+ recursive (true)     如果傳遞目錄路徑，則遞歸搜尋巢狀檔案。
+ verbose (true)       在控制台/終端機中顯示日誌記錄。
+ dotFolders (false)   在檔案搜尋中包含點資料夾。
+```
 
 <br>
 

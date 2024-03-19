@@ -114,25 +114,19 @@ $ minify-js input_folder output_folder
 
 ### 命令行选项
 
-#### 配置选项：
+```
+配置选项：
+ -n, --dry-run               实际上并不缩小文件，只是显示它们是否会被处理。
+ -d, --include-dotfolders    在文件搜索中包括点文件夹。
+ -D, --include-dotfiles      在文件搜索中包含点文件。
+ -R, --no-recursion          禁用递归文件搜索。
+ -M, --no-mangle             禁用修改名称。
+ -q, --quiet                 禁止除错误之外的所有日志记录。
 
-旗帜                             | 描述
----------------------------------|-------------------------------------------
-`-n` 或者 `--dry-run`            | 实际上并不缩小文件，只是显示它们是否会被处理。
-`-d` 或者 `--include-dotfolders` | 在文件搜索中包括点文件夹。
-`-D` 或者 `--include-dotfiles`   | 在文件搜索中包含点文件。
-`-R` 或者 `--no-recursion`       | 禁用递归文件搜索。
-`-M` 或者 `--no-mangle`          | 禁用修改名称。
-`-q` 或者 `--quiet`              | 禁止除错误之外的所有日志记录。
-
-#### 信息命令：
-
-命令                  | 描述
-----------------------|--------------
-`-h` 或者 `--help`    | 显示帮助屏幕。
-`-v` 或者 `--version` | 显示版本号。
-
-<br>
+信息命令：
+ -h, --help                  显示帮助屏幕。
+ -v, --version               显示版本号。
+```
 
 ## 🔌 API 参考
 
@@ -185,15 +179,13 @@ minifyJS.minify(input, { dotFiles: true });
 
 可能的参数（及其默认设置）有：
 
-姓名         | 描述                                | 默认值
--------------|------------------------------------|---------
-`recursive`  | 如果传递目录路径，则递归搜索嵌套文件。 | `true`
-`verbose`    | 在控制台/终端中显示日志记录。         | `true`
-`dotFolders` | 在文件搜索中包括点文件夹。            | `false`
-`dotFiles`   | 在文件搜索中包含点文件。              | `false`
-`mangle`     | 缩短变量名称（通常为一个字符）。       | `true`
-
-<br>
+```
+ recursive (true)     如果传递目录路径，则递归搜索嵌套文件。
+ verbose (true)       在控制台/终端中显示日志记录。
+ dotFolders (false)   在文件搜索中包括点文件夹。
+ dotFiles (false)     在文件搜索中包含点文件。
+ mangle (true)        缩短变量名称（通常为一个字符）。
+```
 
 ### `findJS(searchDir[, options])`
 
@@ -208,12 +200,12 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 可能的参数（及其默认设置）有：
 
-姓名         | 描述                                | 默认值
--------------|------------------------------------|---------
-`recursive`  | 如果传递目录路径，则递归搜索嵌套文件。 | `true`
-`verbose`    | 在控制台/终端中显示日志记录。         | `true`
-`dotFolders` | 在文件搜索中包括点文件夹。            | `false`
-`dotFiles`   | 在文件搜索中包含点文件。              | `false`
+```
+ recursive (true)     如果传递目录路径，则递归搜索嵌套文件。
+ verbose (true)       在控制台/终端中显示日志记录。
+ dotFolders (false)   在文件搜索中包括点文件夹。
+ dotFiles (false)     在文件搜索中包含点文件。
+```
 
 <br>
 
