@@ -168,7 +168,7 @@ const minifyResults = minifyJS.minify('.');
 minifyResults.forEach(result => console.log(result.srcPath));
 
 // 如果找到，則輸出第二個 JS 檔案的精簡程式碼，如果未找到，則輸出 `undefined`
-console.log(results[1].code);
+console.log(minifyResults[1].code);
 ```
 
 選項是布林值，作為物件屬性傳遞。 例如：

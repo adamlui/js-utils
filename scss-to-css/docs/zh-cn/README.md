@@ -168,7 +168,7 @@ const compileResults = scssToCSS.compile('.');
 compileResults.forEach(result => console.log(result.srcPath));
 
 // 如果找到，则输出从第二个 SCSS 文件编译的 CSCS，如果未找到，则输出 `undefined`
-console.log(results[1].code);
+console.log(compileResults[1].code);
 ```
 
 选项是布尔值，作为对象属性传递。 例如：

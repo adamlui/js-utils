@@ -168,7 +168,7 @@ const compileResults = scssToCSS.compile('.');
 compileResults.forEach(result => console.log(result.srcPath));
 
 // 如果找到，則輸出從第二個 SCSS 檔案編譯的 CSS，如果未找到，則輸出 `undefined`
-console.log(results[1].code);
+console.log(compileResults[1].code);
 ```
 
 選項是布林值，作為物件屬性傳遞。 例如：

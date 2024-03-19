@@ -169,7 +169,7 @@ const compileResults = scssToCSS.compile('.');
 compileResults.forEach(result => console.log(result.srcPath));
 
 // Outputs compiled CSS from 2nd SCSS file if found, or `undefined` if not found
-console.log(results[1].code);
+console.log(compileResults[1].code);
 ```
 
 Options are boolean, passed as object properties. For example:

@@ -167,7 +167,7 @@ const minifyResults = minifyJS.minify('.');
 minifyResults.forEach(result => console.log(result.srcPath));
 
 // ਦੂਜੀ JS ਫਾਈਲ ਦਾ ਮਿਨਿਫਾਈਡ ਕੋਡ ਆਉਟਪੁੱਟ ਕਰਦਾ ਹੈ, ਜੇਕਰ ਮਿਲਦਾ ਹੈ, ਜਾਂ 'undefined' ਨਹੀਂ ਮਿਲਦਾ ਹੈ
-console.log(results[1].code);
+console.log(minifyResults[1].code);
 ```
 
 ਵਿਕਲਪ ਬੂਲੀਅਨ ਹਨ, ਆਬਜੈਕਟ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਵਜੋਂ ਪਾਸ ਕੀਤੇ ਗਏ ਹਨ। ਉਦਾਹਰਣ ਲਈ:

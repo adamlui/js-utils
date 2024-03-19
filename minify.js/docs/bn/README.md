@@ -170,7 +170,7 @@ const minifyResults = minifyJS.minify('.');
 minifyResults.forEach(result => console.log(result.srcPath));
 
 // পাওয়া গেলে 2য় JS ফাইলের মিনিফাইড কোড আউটপুট করে, অথবা না পাওয়া গেলে `undefined`
-console.log(results[1].code);
+console.log(minifyResults[1].code);
 ```
 
 বিকল্পগুলি হল বুলিয়ান, অবজেক্টের বৈশিষ্ট্য হিসাবে পাস করা হয়েছে৷ উদাহরণ স্বরূপ:

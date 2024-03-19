@@ -168,7 +168,7 @@ const compileResults = scssToCSS.compile('.');
 compileResults.forEach(result => console.log(result.srcPath));
 
 // आढळल्यास दुसऱ्या SCSS फाईलमधून CSS संकलित केलेले आउटपुट, किंवा न आढळल्यास `undefined`
-console.log(results[1].code);
+console.log(compileResults[1].code);
 ```
 
 पर्याय बुलियन आहेत, ऑब्जेक्ट गुणधर्म म्हणून पास केले जातात. उदाहरणार्थ:

@@ -168,7 +168,7 @@ const compileResults = scssToCSS.compile('.');
 compileResults.forEach(result => console.log(result.srcPath));
 
 // পাওয়া গেলে দ্বিতীয় SCSS ফাইল থেকে CSS কম্পাইল করা আউটপুট, বা না পাওয়া গেলে `undefined`
-console.log(results[1].code);
+console.log(compileResults[1].code);
 ```
 
 Options are boolean, passed as object properties. For example:

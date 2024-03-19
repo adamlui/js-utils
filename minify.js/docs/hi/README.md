@@ -170,7 +170,7 @@ const minifyResults = minifyJS.minify('.');
 minifyResults.forEach(result => console.log(result.srcPath));
 
 // यदि पाया जाता है तो दूसरी जावास्क्रिप्ट फ़ाइल का छोटा कोड आउटपुट करता है, या नहीं मिलने पर `undefined`
-console.log(results[1].code);
+console.log(minifyResults[1].code);
 ```
 
 विकल्प बूलियन हैं, ऑब्जेक्ट गुणों के रूप में पारित किए गए हैं। उदाहरण के लिए:

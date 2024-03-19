@@ -168,7 +168,7 @@ const minifyResults = minifyJS.minify('.');
 minifyResults.forEach(result => console.log(result.srcPath));
 
 // आढळल्यास दुसऱ्या JS फाईलचा मिनिफाइड कोड आउटपुट करतो, किंवा न आढळल्यास `undefined`
-console.log(results[1].code);
+console.log(minifyResults[1].code);
 ```
 
 पर्याय बुलियन आहेत, ऑब्जेक्ट गुणधर्म म्हणून पास केले जातात. उदाहरणार्थ:

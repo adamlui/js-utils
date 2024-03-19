@@ -169,7 +169,7 @@ const minifyResults = minifyJS.minify('.');
 minifyResults.forEach(result => console.log(result.srcPath));
 
 // Outputs minified code of 2nd JS file if found, or `undefined` if not found
-console.log(results[1].code);
+console.log(minifyResults[1].code);
 ```
 
 Options are boolean, passed as object properties. For example:

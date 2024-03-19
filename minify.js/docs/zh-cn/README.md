@@ -168,7 +168,7 @@ const minifyResults = minifyJS.minify('.');
 minifyResults.forEach(result => console.log(result.srcPath));
 
 // 如果找到，则输出第二个 JS 文件的精简代码，如果未找到，则输出 `undefined`
-console.log(results[1].code);
+console.log(minifyResults[1].code);
 ```
 
 选项是布尔值，作为对象属性传递。 例如：
