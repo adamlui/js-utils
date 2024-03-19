@@ -168,7 +168,6 @@ console.log(minifyResult.code);  // আউটপুট ছোট JS: function ad
 const results = minifyJS.minify('.');
 results.forEach(result => console.log(result.srcPath));
 
-
 // পাওয়া গেলে 2য় JS ফাইলের মিনিফাইড কোড আউটপুট করে, অথবা না পাওয়া গেলে `undefined`
 console.log(results[1].code);
 ```

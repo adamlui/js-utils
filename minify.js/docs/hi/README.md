@@ -168,7 +168,6 @@ console.log(minifyResult.code);  // आउटपुट छोटा जावा
 const results = minifyJS.minify('.');
 results.forEach(result => console.log(result.srcPath));
 
-
 // यदि पाया जाता है तो दूसरी जावास्क्रिप्ट फ़ाइल का छोटा कोड आउटपुट करता है, या नहीं मिलने पर `undefined`
 console.log(results[1].code);
 ```
