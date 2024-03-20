@@ -41,6 +41,8 @@ import * as pw from 'generate-pw';
 const pw = require('generate-pw');
 ```
 
+#
+
 ### `generatePassword([options])`
 
 Generates **one** password if `qty` option is not given, returning a string:
@@ -61,6 +63,8 @@ console.log(passwords);
 
 **💡 Note:** If no options are passed, passwords will be 8-chars long, consisting of upper/lower cased letters.
 
+#
+
 ### `generatePasswords(qty[, options])`
 
 Generates **multiple** passwords based on `qty` given, returning an array of strings:
@@ -70,6 +74,8 @@ const passwords = pw.generatePasswords(5, { length: 3, uppercase: false });
 console.log(passwords);
 // sample output: [ 'yilppxru', 'ckvkyjfp', 'zolcpyfb' ]
 ```
+
+#
 
 ### Available options
 
@@ -102,6 +108,8 @@ $ generate-pw
 ```
 
 **💡 Note:** To generate multiple results, pass `--qty=n` where `n` is the number of passwords to generate.
+
+#
 
 ### Command line options
 
