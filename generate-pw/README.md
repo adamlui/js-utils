@@ -94,7 +94,28 @@ $ generate-pw
 ```
 
 **💡 Note:** To generate multiple results, pass `--qty=n` where `n` is the number of passwords to generate.
-<br><br>
+
+### Command line options
+
+```
+Argument options:
+ --length=n                  Generate password(s) of n length.
+ --qty=n                     Generate n password(s).
+ --charset=chars             Only include chars in password(s).
+ --exclude=chars             Exclude chars from password(s).
+
+Boolean options:
+ -n, --include-numbers       Allow numbers in password(s).
+ -s, --include-symbols       Allow symbols in password(s).
+ -L, --no-lowercase          Disallow lowercase letters in password(s).
+ -U, --no-uppercase          Disallow uppercase letters in password(s).
+
+Info commands:
+ -h, --help                  Display this help screen.
+ -v, --version               Show version number.
+```
+
+<br>
 
 ## 🏛️ MIT License
 
