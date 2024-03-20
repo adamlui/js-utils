@@ -198,7 +198,7 @@ else { // run as CLI tool
                 `\n${by}generate-pw [options|commands]${nc}`
             ],
             'paramOptions': [
-                '\nArgument options:',
+                '\nParameter options:',
                 ' --length=n                  Generate password(s) of n length.',
                 ' --qty=n                     Generate n password(s).',
                 ' --charset=chars             Only include chars in password(s).',
