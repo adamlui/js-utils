@@ -29,6 +29,12 @@ function generatePassword(options = {}) {
     };
     options = { ...defaultOptions, ...options };
 
+    // Validate integer args
+    for (const numArgType of ['length', 'qty'])
+        if (isNaN(options[numArgType]) || options[numArgType] < 1)
+            return console.error(
+                `ERROR: <${ numArgType }> argument must be 1 or greater.`);
+
     if (options.qty > 1) { // return array of [qty] password strings
         const { qty, ...otherOptions } = options;
         return generatePasswords(qty, otherOptions);
