@@ -125,23 +125,28 @@ else { // run as CLI tool
             'excludeLowerChars': /^--?(?:L|(?:exclude|disable|no)-?lower-?(?:case)?|lower-?(?:case)?=(?:false|0))$/,
             'excludeUpperChars': /^--?(?:U|(?:exclude|disable|no)-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/,
             'strictMode': /^--?s(?:trict)?(?:-?mode)?$/
+        },
+        cmds: {
+            'help': /^--?h(?:elp)?$/,
+            'version': /^--?ve?r?s?i?o?n?$/
         }
     };
     process.argv.forEach(arg => {
         if (!arg.startsWith('-')) return;
         const matchedFlag = Object.keys(argRegex.flags).find(flag => argRegex.flags[flag].test(arg)),
-              matchedArgOption = Object.keys(argRegex.argOptions).find(option => argRegex.argOptions[option].test(arg));
+              matchedArgOption = Object.keys(argRegex.argOptions).find(option => argRegex.argOptions[option].test(arg)),
+              matchedCmd = Object.keys(argRegex.cmds).find(cmd => argRegex.cmds[cmd].test(arg));
         if (matchedFlag) config[matchedFlag] = true;
         else if (matchedArgOption) {
             const value = arg.split('=')[1];
             config[matchedArgOption] = parseInt(value) || value;
-        } else {
+        } else if (!matchedCmd) {
             console.error(`\n${br}ERROR: Arg '${ arg }' not recognized.${nc}`);
             process.exit(1);
     }});
 
     // Show HELP screen if -h or --help passed
-    if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
+    if (process.argv.some(arg => argRegex.cmds.help.test(arg))) {
         printHelpMsg(`\n${by}generate-pw [options]${nc}`);
         printHelpMsg('\nArgument options:');
         printHelpMsg(' --length=n                  Generate password(s) of n length.');
@@ -158,7 +163,7 @@ else { // run as CLI tool
         printHelpMsg(' -v, --version               Show version number.');
 
     // Show VERSION number if -v or --version passed
-    } else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
+    } else if (process.argv.some(arg => argRegex.cmds.version.test(arg))) {
         console.info('v' + require('./package.json').version);
 
     } else { // run MAIN routine
