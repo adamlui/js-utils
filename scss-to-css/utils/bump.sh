@@ -36,7 +36,8 @@ echo "v$NEW_VERSION"
 
 # Commit to Git
 echo -e "\nCommitting changes...\n"
-git add package*.json README.md ./**/README.md
+find . -name "README.md" -exec git add {} +
+git add package*.json
 git commit -n -m "Bumped versions to $NEW_VERSION"
 
 # Push to GiHub
