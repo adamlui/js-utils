@@ -95,7 +95,8 @@ else { // run as CLI tool
         'noRecursion': /^--?(?:R|(?:disable|no)-?recursion|recursion=(?:false|0))$/,
         'noMangle': /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/,
         'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/,
-        'help': /^--?h(?:elp)?$/
+        'help': /^--?h(?:elp)?$/,
+        'version': /^--?ve?r?s?i?o?n?$/
     };
     process.argv.forEach(arg => {
         if (!arg.startsWith('-')) return;
@@ -112,7 +113,7 @@ else { // run as CLI tool
     if (process.argv.some(arg => argRegex.help.test(arg))) printHelpScreen();
 
     // Show VERSION number if -v or --version passed
-    else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg)))
+    else if (process.argv.some(arg => argRegex.version.test(arg)))
         console.info('v' + require('./package.json').version);
 
     else { // run MAIN routine
