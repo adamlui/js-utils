@@ -86,7 +86,8 @@ $ minify-js [input_path] [output_path]
 ```
 
 将 `<minify-js-cmd>` 替换为 `minify-js` + 可选参数。 然后，可以使用 `npm run build:js` 来运行该命令。
-<br><br>
+
+#
 
 ### 命令示例
 
@@ -113,6 +114,8 @@ $ minify-js path/to/your/file.js
 ```
 $ minify-js input_folder output_folder
 ```
+
+#
 
 ### 命令行选项
 
@@ -148,7 +151,7 @@ import * as minifyJS from '@adamlui/minify.js';
 const minifyJS = require('@adamlui/minify.js');
 ```
 
-<br>
+#
 
 ### `minify(input[, options])`
 
@@ -194,7 +197,7 @@ minifyJS.minify(input, { dotFiles: true });
 `dotFiles`   | 在文件搜索中包含点文件。              | `false`
 `mangle`     | 缩短变量名称（通常为一个字符）。       | `true`
 
-<br>
+#
 
 ### `findJS(searchDir[, options])`
 

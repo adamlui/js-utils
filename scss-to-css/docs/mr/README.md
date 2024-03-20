@@ -86,7 +86,8 @@ $ scss-to-css [input_path] [output_path]
 ```
 
 `<scss-to-css-cmd>` ला `scss-to-css` + पर्यायी पॅरामीटरने बदला. त्यानंतर, कमांड रन करण्यासाठी `npm run build:css` वापरले जाऊ शकते.
-<br><br>
+
+#
 
 ### उदाहरणे आज्ञा
 
@@ -115,7 +116,8 @@ $ scss-to-css input_folder output_folder
 ```
 
 **💡 टीप:** `-M` किंवा `--no-minify` पास केल्याशिवाय आउटपुट CSS कमी केले जाते.
-<br><br>
+
+#
 
 ### कमांड लाइन पर्याय
 
@@ -151,7 +153,7 @@ import * as scssToCSS from '@adamlui/scss-to-css';
 const scssToCSS = require('@adamlui/scss-to-css');
 ```
 
-<br>
+#
 
 ### `compile(inputPath[, options])`
 
@@ -194,7 +196,7 @@ scssToCSS.compile(inputDir, { minify: false });
 `minify`     | आउटपुट CSS कमी करा.                             | `true`
 `sourceMaps` | CSS स्त्रोत नकाशे व्युत्पन्न करा.                         | `true`
 
-<br>
+#
 
 ### `findSCSS(searchDir[, options])`
 

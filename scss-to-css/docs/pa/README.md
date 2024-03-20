@@ -86,7 +86,8 @@ $ scss-to-css [input_path] [output_path]
 ```
 
 `<scss-to-css-cmd>` ਨੂੰ `scss-to-css` + ਵਿਕਲਪਿਕ ਮਾਪਦੰਡਾਂ ਨਾਲ ਬਦਲੋ। ਫਿਰ, `npm run build:css` ਕਮਾਂਡ ਨੂੰ ਚਲਾਉਣ ਲਈ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ।
-<br><br>
+
+#
 
 ### Example commands
 
@@ -115,7 +116,8 @@ $ scss-to-css input_folder output_folder
 ```
 
 **💡 ਨੋਟ:** ਆਉਟਪੁੱਟ CSS ਨੂੰ ਘੱਟ ਕੀਤਾ ਜਾਂਦਾ ਹੈ ਜਦੋਂ ਤੱਕ `-M` ਜਾਂ `--no-minify` ਪਾਸ ਨਹੀਂ ਕੀਤਾ ਜਾਂਦਾ।
-<br><br>
+
+#
 
 ### ਕਮਾਂਡ ਲਾਈਨ ਵਿਕਲਪ
 
@@ -151,7 +153,7 @@ import * as scssToCSS from '@adamlui/scss-to-css';
 const scssToCSS = require('@adamlui/scss-to-css');
 ```
 
-<br>
+#
 
 ### `compile(inputPath[, options])`
 
@@ -194,7 +196,7 @@ scssToCSS.compile(inputDir, { minify: false });
 `minify`     | ਆਉਟਪੁੱਟ CSS ਨੂੰ ਘੱਟ ਕਰੋ।                                           | `true`
 `sourceMaps` | CSS ਸਰੋਤ ਨਕਸ਼ੇ ਤਿਆਰ ਕਰੋ।                                          | `true`
 
-<br>
+#
 
 ### `findSCSS(searchDir[, options])`
 

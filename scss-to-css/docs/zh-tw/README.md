@@ -86,7 +86,8 @@ $ scss-to-css [input_path] [output_path]
 ```
 
 將 `<scss-to-css-cmd>` 替換為 `scss-to-css` + 可選參數。 然後，可以使用 `npm run build:css` 來執行該指令。
-<br><br>
+
+#
 
 ### 命令範例
 
@@ -115,7 +116,8 @@ $ scss-to-css input_folder output_folder
 ```
 
 **💡 注意：** 除非傳遞 `-M` 或 `--no-minify` ，否則輸出 CSS 會被縮小。
-<br><br>
+
+#
 
 ### 命令列選項
 
@@ -151,7 +153,7 @@ import * as scssToCSS from '@adamlui/scss-to-css';
 const scssToCSS = require('@adamlui/scss-to-css');
 ```
 
-<br>
+#
 
 ### `compile(inputPath[, options])`
 
@@ -194,7 +196,7 @@ scssToCSS.compile(inputDir, { minify: false });
 `minify`     | 縮小輸出 CSS。                       | `true`
 `sourceMaps` | 產生 CSS 來源映射。                   | `true`
 
-<br>
+#
 
 ### `findSCSS(searchDir[, options])`
 

@@ -86,7 +86,8 @@ To use as a **package script**, in your project's `package.json`:
 ```
 
 Replace `<scss-to-css-cmd>` with `scss-to-css` + optional args. Then, `npm run build:css` can be used to run the command.
-<br><br>
+
+#
 
 ### Example commands
 
@@ -115,7 +116,8 @@ $ scss-to-css input_folder output_folder
 ```
 
 **💡 Note:** Output CSS is minified unless `-M` or `--no-minify` is passed.
-<br><br>
+
+#
 
 ### Command line options
 
@@ -152,7 +154,7 @@ import * as scssToCSS from '@adamlui/scss-to-css';
 const scssToCSS = require('@adamlui/scss-to-css');
 ```
 
-<br>
+#
 
 ### `compile(inputPath[, options])`
 
@@ -195,7 +197,7 @@ Name         | Desciption                                              | Default
 `minify`     | Minify output CSS.                                      | `true`
 `sourceMaps` | Generate CSS source maps.                               | `true`
 
-<br>
+#
 
 ### `findSCSS(searchDir[, options])`
 

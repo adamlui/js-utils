@@ -86,7 +86,8 @@ $ minify-js [input_path] [output_path]
 ```
 
 `<minify-js-cmd>` ला `minify-js` + पर्यायी पॅरामीटरने बदला. त्यानंतर, कमांड रन करण्यासाठी `npm run build:js` वापरता येईल.
-<br><br>
+
+#
 
 ### उदाहरणे आज्ञा
 
@@ -113,6 +114,8 @@ $ minify-js path/to/your/file.js
 ```
 $ minify-js input_folder output_folder
 ```
+
+#
 
 ### कमांड लाइन पर्याय
 
@@ -148,7 +151,7 @@ import * as minifyJS from '@adamlui/minify.js';
 const minifyJS = require('@adamlui/minify.js');
 ```
 
-<br>
+#
 
 ### `minify(input[, options])`
 
@@ -194,7 +197,7 @@ minifyJS.minify(input, { dotFiles: true });
 `dotFiles`   | फाइल शोधात डॉटफाईल्स समाविष्ट करा.                | `false`
 `mangle`     | व्हेरिएबलची नावे (सामान्यत: एका वर्णापर्यंत) लहान करा.   | `true`
 
-<br>
+#
 
 ### `findJS(searchDir[, options])`
 

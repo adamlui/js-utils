@@ -86,7 +86,8 @@ To use as a **package script**, in your project's `package.json`:
 ```
 
 Replace `<minify-js-cmd>` with `minify-js` + optional args. Then, `npm run build:js` can be used to run the command.
-<br><br>
+
+#
 
 ### Example commands
 
@@ -113,6 +114,8 @@ Specify both **input and output** directories (outputs to `output_folder/`):
 ```
 $ minify-js input_folder output_folder
 ```
+
+#
 
 ### Command line options
 
@@ -149,7 +152,7 @@ import * as minifyJS from '@adamlui/minify.js';
 const minifyJS = require('@adamlui/minify.js');
 ```
 
-<br>
+#
 
 ### `minify(input[, options])`
 
@@ -195,7 +198,7 @@ Name         | Desciption                                              | Default
 `dotFiles`   | Include dotfiles in file search.                        | `false`
 `mangle`     | Shorten variable names (typically to one character).    | `true`
 
-<br>
+#
 
 ### `findJS(searchDir[, options])`
 
