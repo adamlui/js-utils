@@ -147,6 +147,8 @@ import * as scssToCSS from '@adamlui/scss-to-css';
 const scssToCSS = require('@adamlui/scss-to-css');
 ```
 
+<br>
+
 ### `compile(inputPath[, options])`
 
 将在 `inputPath` 中找到的 SCSS 编译为 CSS 数据。

@@ -148,6 +148,8 @@ import * as scssToCSS from '@adamlui/scss-to-css';
 const scssToCSS = require('@adamlui/scss-to-css');
 ```
 
+<br>
+
 ### `compile(inputPath[, options])`
 
 Compiles SCSS found in the `inputPath` provided into CSS data.

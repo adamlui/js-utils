@@ -147,6 +147,8 @@ import * as scssToCSS from '@adamlui/scss-to-css';
 const scssToCSS = require('@adamlui/scss-to-css');
 ```
 
+<br>
+
 ### `compile(inputPath[, options])`
 
 CSS ਡੇਟਾ ਵਿੱਚ ਪ੍ਰਦਾਨ ਕੀਤੇ ਗਏ `inputPath` ਵਿੱਚ ਮਿਲੇ SCSS ਨੂੰ ਕੰਪਾਇਲ ਕਰਦਾ ਹੈ।
