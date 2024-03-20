@@ -241,14 +241,6 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-## 💖 支援
-
-如果這個專案對您有幫助，請考慮[給予 GitHub ⭐](https://github.com/adamlui/js-utils) 或[資助](https://github.com/sponsors/adamlui)！
-
-<br>
-
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
-
 <a href="https://github.com/adamlui/js-utils">**家**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">讨论</a> /
 <a href="#-minifyjs">回到顶部 ↑</a>

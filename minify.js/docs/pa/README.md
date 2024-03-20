@@ -240,14 +240,6 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-## 💖 ਸਪੋਰਟ
-
-ਕਿਰਪਾ ਕਰਕੇ [ਇੱਕ GitHub ਦੇਣ ⭐](https://github.com/adamlui/js-utils) ਜਾਂ [ਫੰਡਿੰਗ](https://github.com/sponsors/adamlui) 'ਤੇ ਵਿਚਾਰ ਕਰੋ ਜੇਕਰ ਇਹ ਤੁਹਾਡੀ ਮਦਦ ਕਰਦਾ ਹੈ!
-
-<br>
-
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
-
 <a href="https://github.com/adamlui/js-utils">**ਘਰ**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">ਚਰਚਾ ਕਰੋ</a> /
 <a href="#-minifyjs">ਸਿਖਰ 'ਤੇ ਵਾਪਸ ਜਾਓ ↑</a>

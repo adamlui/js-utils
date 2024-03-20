@@ -149,14 +149,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-## 💖 Support
-
-Please consider [giving a GitHub ⭐](https://github.com/adamlui/js-utils) or [funding](https://github.com/sponsors/adamlui) this project if it helped you!
-
-<br>
-
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
-
 <a href="https://github.com/adamlui/js-utils">**Home**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
 <a href="#-generate-pw">Back to top ↑</a>

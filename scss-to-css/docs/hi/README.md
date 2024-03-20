@@ -238,14 +238,6 @@ scssToCSS.findSCSS(searchDir, { recursive: false });
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-## 💖 सहायता
-
-कृपया इस प्रोजेक्ट पर [GitHub ⭐](https://github.com/adamlui/js-utils) या [फंडिंग](https://github.com/sponsors/adamlui) देने पर विचार करें, अगर इससे आपको मदद मिली हो!
-
-<br>
-
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
-
 <a href="https://github.com/adamlui/js-utils">**घर**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">चर्चा करना</a> /
 <a href="#--scss-to-css">वापस शीर्ष पर ↑</a>

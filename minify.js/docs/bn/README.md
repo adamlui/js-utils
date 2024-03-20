@@ -243,14 +243,6 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-## 💖 সমর্থন
-
-অনুগ্রহ করে বিবেচনা করুন [একটি GitHub প্রদান ⭐](https://github.com/adamlui/js-utils) বা [ফান্ডিং](https://github.com/sponsors/adamlui) যদি এটি আপনাকে সাহায্য করে!
-
-<br>
-
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
-
 <a href="https://github.com/adamlui/js-utils">**বাড়ি**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">আলোচনা করা</a> /
 <a href="#-minifyjs">উপরে ফিরে যাও ↑</a>
