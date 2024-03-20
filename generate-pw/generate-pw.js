@@ -113,7 +113,7 @@ else { // run as CLI tool
     // Load settings from ARGS
     const config = {};
     const argRegex = {
-        options: {
+        argOptions: {
             'length': /^--?length/,
             'qty': /^--?qu?a?n?ti?t?y=\d+$/,
             'charset': /^--?chars/,
@@ -130,7 +130,7 @@ else { // run as CLI tool
     process.argv.forEach(arg => {
         if (!arg.startsWith('-')) return;
         const matchedFlag = Object.keys(argRegex.flags).find(flag => argRegex.flags[flag].test(arg)),
-              matchedOption = Object.keys(argRegex.options).find(option => argRegex.options[option].test(arg));
+              matchedOption = Object.keys(argRegex.argOptions).find(option => argRegex.argOptions[option].test(arg));
         if (matchedFlag) config[matchedFlag] = true;
         else if (matchedOption) {
             const value = arg.split('=')[1];
