@@ -82,8 +82,6 @@ Name | Description | Default Value
 
 ##### _*Only available in [`generatePassword([options])`](#generatepasswordoptions) since [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) takes a `qty` argument_
 
-<br>
-
 ## 💻 Command line usage
 
 **generate-pw** can also be used from the command line. The basic **global command** is:
