@@ -85,6 +85,8 @@ Name        | Type    | Description                                             
 
 ##### _*Only available in [`generatePassword([options])`](#generatepasswordoptions) since [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) takes a `qty` argument_
 
+<br>
+
 ## 💻 Command line usage
 
 **generate-pw** can also be used from the command line. The basic **global command** is:
@@ -116,6 +118,11 @@ Info commands:
 ```
 
 <br>
+
+## 💖 Support
+
+Please consider [giving a GitHub ⭐](https://github.com/adamlui/js-utils) or [funding](https://github.com/sponsors/adamlui) this project if it helped you!
+<br><br>
 
 ## 🏛️ MIT License
 
