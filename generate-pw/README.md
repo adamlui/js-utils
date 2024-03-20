@@ -49,7 +49,6 @@ Generates **one** password if `qty` option is not given, returning a string:
 
 ```js
 const password = pw.generatePassword({ length: 11, numbers: true });
-
 console.log(password); // sample output: 'bAsZmsmqoQn'
 ```
 
@@ -57,7 +56,6 @@ console.log(password); // sample output: 'bAsZmsmqoQn'
 
 ```js
 const passwords = pw.generatePassword({ qty: 5, length: 8, symbols: true });
-
 console.log(passwords); // sample output: [ '!zSf@Q.s', '!,HT\\;m=', '?Lq&FV>^', 'gf}Y;}Ne', 'Stsx(GqE' ]
 ```
 
@@ -69,7 +67,6 @@ Generates **multiple** passwords based on `qty` given, returning an array of str
 
 ```js
 const passwords = pw.generatePasswords(5, { length: 3, uppercase: false });
-
 console.log(passwords); // sample output: [ 'yilppxru', 'ckvkyjfp', 'zolcpyfb' ]
 ```
 
