@@ -107,6 +107,7 @@ else { // run as CLI tool
     // Init UI colors
     const nc = '\x1b[0m',    // no color
           br = '\x1b[1;91m', // bright red
+          by = '\x1b[1;33m', // bright yellow
           bw = '\x1b[1;97m'; // bright white
 
     // Load settings from ARGS
@@ -124,8 +125,25 @@ else { // run as CLI tool
         strictMode: process.argv.some(arg => /^--?s(?:trict)?(?:-?mode)?$/.test(arg))
     };
 
+    // Show HELP screen if -h or --help passed
+    if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
+        printHelp(`\n${by}generate-pw [options]${nc}`);
+        printHelp('\nArgument options:');
+        printHelp(' --length=n                  Generate password(s) of n length.');
+        printHelp(' --qty=n                     Generate n password(s).');
+        printHelp(' --charset=chars             Only include chars in password(s).');
+        printHelp(' --exclude=chars             Exclude chars from password(s).');
+        printHelp('\nBoolean options:');
+        printHelp(' -n, --include-numbers       Allow numbers in password(s).');
+        printHelp(' -s, --include-symbols       Allow symbols in password(s).');
+        printHelp(' -L, --no-lowercase          Disallow lowercase letters in password(s).');
+        printHelp(' -U, --no-uppercase          Disallow uppercase letters in password(s).');
+        printHelp('\nInfo commands:');
+        printHelp(' -h, --help                  Display this help screen.');
+        printHelp(' -v, --version               Show version number.');
+
     // Show VERSION number if -v or --version passed
-    if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
+    } else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
         console.info('v' + require('./package.json').version);
 
     } else { // run MAIN routine
@@ -140,5 +158,28 @@ else { // run as CLI tool
         };
         const pwResult = generatePassword(funcOptions);
         console.log('\n' + bw + ( Array.isArray(pwResult) ? pwResult.join('\n') : pwResult ) + nc);
+    }
+
+    function printHelp(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
+        const terminalWidth = process.stdout.columns || 80,
+              indentation = 29, lines = [], words = msg.match(/\S+|\s+/g);
+
+        // Split msg into lines of appropriate lengths
+        let currentLine = '';
+        words.forEach(word => {
+            const lineLength = terminalWidth - ( lines.length === 0 ? 0 : indentation );
+            if (currentLine.length + word.length > lineLength) { // cap/store it
+                lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
+                currentLine = '';
+            }
+            currentLine += word;
+        });
+        lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
+
+        // Print formatted msg
+        lines.forEach((line, index) => console.info(
+            index === 0 ? line // print 1st line unindented
+                : ' '.repeat(indentation) + line // print subsequent lines indented
+        ));
     }
 }
