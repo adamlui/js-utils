@@ -27,9 +27,75 @@ As a **runtime dependency**, from your project root:
 $ npm install generate-pw
 ```
 
+## 🔌 API reference
+
+**generate-pw** can be imported into your app as an ECMAScript module or a CommonJS module.
+
+#### ESM:
+
+```js
+import * as pw from 'generate-pw';
+```
+
+#### CJS:
+
+```js
+const pw = require('generate-pw');
+```
+
+### `generatePassword([options])`
+
+Generates **one** password if `qty` option is not given, returning a string:
+
+```js
+const password = pw.generatePassword({ length: 11, numbers: true });
+
+console.log(password); // sample output: 'bAsZmsmqoQn'
+```
+
+...or **multiple** passwords if `qty` option is given, returning an array of strings:
+
+```js
+const passwords = pw.generatePassword({ qty: 5, length: 8, symbols: true });
+
+console.log(passwords); // sample output: [ '!zSf@Q.s', '!,HT\\;m=', '?Lq&FV>^', 'gf}Y;}Ne', 'Stsx(GqE' ]
+```
+
+**💡 Note:** If no options are passed, passwords will be 8-chars long, consisting of upper/lower cased letters.
+
+### `generatePasswords(qty[, options])`
+
+Generates **multiple** passwords based on `qty` given, returning an array of strings:
+
+```js
+const passwords = pw.generatePasswords(5, { length: 3, uppercase: false });
+
+console.log(passwords); // sample output: [ 'yilppxru', 'ckvkyjfp', 'zolcpyfb' ]
+```
+
+### Available options
+
+Any of these can be passed into the options object for each function:
+
+Name | Description | Default Value
+---|---|---
+`length` | Integer, length of password. | `8`
+`qty`* | Integer, number of passwords to generate. | `1`
+`charset` | String, only characters to be included in password. | ''
+`exclude` | String, characters to be excluded from password. | ''
+`numbers` | Boolean, allow numbers in password. | `false`
+`symbols` | Boolean, allow symbols in password. | `false`
+`lowercase` | Boolean, allow lowercase letters in password. | `true`
+`uppercase` | Boolean, allow uppercase letters in password. | `true`
+`strict` | Boolean, password must include at least one character from each included character set. | `false`
+
+##### _*Only available in [`generatePassword([options])`](#generatepasswordoptions) since [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) takes a `qty` argument_
+
+<br>
+
 ## 💻 Command line usage
 
-The basic **global command** is:
+**generate-pw** can also be used from the command line. The basic **global command** is:
 
 ```
 $ generate-pw
