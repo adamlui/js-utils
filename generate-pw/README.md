@@ -89,7 +89,7 @@ Name        | Type    | Description                                             
 
 ## 💻 Command line usage
 
-**generate-pw** can also be used from the command line. The basic **global command** is:
+When installed globally, **generate-pw** can also be used from the command line. The basic command is:
 
 ```
 $ generate-pw
