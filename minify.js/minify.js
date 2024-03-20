@@ -103,9 +103,10 @@ else { // run as CLI tool
         if (matchedFlag) config[matchedFlag] = true;
         else {
             console.error(`\n${br}ERROR: Arg '${ arg }' not recognized.${nc}`);
+            console.info(`\n${by}Valid arguments are below.${nc}`)
+            printHelpScreen(['configOptions', 'infoCmds']);
             process.exit(1);
-        }
-    });
+    }});
 
     // Show HELP screen if -h or --help passed
     if (process.argv.some(arg => argRegex.help.test(arg))) printHelpScreen();
@@ -211,26 +212,38 @@ else { // run as CLI tool
         ));
     }
 
-    function printHelpScreen() {
-        printHelpMsg(`\n${by}minify-js [inputPath] [outputPath] [options]${nc}`);
-        printHelpMsg('\nPath arguments:');
-        printHelpMsg(' [inputPath]                 '
-            + 'Path to JS file or directory containing JS files to be minified,'
-            + ' relative to the current working directory.');
-        printHelpMsg(' [outputPath]                '
-            + 'Path to file or directory where minified files will be stored,'
-            + ' relative to original file location (if not provided, min/ is used).');
-        printHelpMsg('\nConfig options:');
-        printHelpMsg(' -n, --dry-run               Don\'t actually minify the file(s),'
-            + ' just show if they will be processed.');
-        printHelpMsg(' -d, --include-dotfolders    Include dotfolders in file search.');
-        printHelpMsg(' -D, --include-dotfiles      Include dotfiles in file search.');
-        printHelpMsg(' -R, --no-recursion          Disable recursive file searching.');
-        printHelpMsg(' -M, --no-mangle             Disable mangling names.');
-        printHelpMsg(' -q, --quiet                 Suppress all logging except errors.');
-        printHelpMsg('\nInfo commands:');
-        printHelpMsg(' -h, --help                  Display this help screen.');
-        printHelpMsg(' -v, --version               Show version number.');
+    function printHelpScreen(includeSections = ['sampleCmd', 'pathArgs', 'configOptions', 'infoCmds']) {
+        const sections = {
+            'sampleCmd': [
+                `\n${by}minify-js [inputPath] [outputPath] [options]${nc}`
+            ],
+            'pathArgs': [
+                '\nPath arguments:',
+                ' [inputPath]                 '
+                    + 'Path to JS file or directory containing JS files to be minified,'
+                    + ' relative to the current working directory.',
+                ' [outputPath]                '
+                    + 'Path to file or directory where minified files will be stored,'
+                    + ' relative to original file location (if not provided, min/ is used).'
+            ],
+            'configOptions': [
+                '\nConfig options:',
+                ' -n, --dry-run               Don\'t actually minify the file(s),'
+                                           + ' just show if they will be processed.',
+                ' -d, --include-dotfolders    Include dotfolders in file search.',
+                ' -D, --include-dotfiles      Include dotfiles in file search.',
+                ' -R, --no-recursion          Disable recursive file searching.',
+                ' -M, --no-mangle             Disable mangling names.',
+                ' -q, --quiet                 Suppress all logging except errors.'
+            ],
+            'infoCmds': [
+                '\nInfo commands:',
+                ' -h, --help                  Display help screen.',
+                ' -v, --version               Show version number.'
+            ]
+        };
+        includeSections.forEach(section => { // print valid arg elems
+            if (sections[section]) sections[section].forEach(line => printHelpMsg(line)); });
     }
 
     function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
