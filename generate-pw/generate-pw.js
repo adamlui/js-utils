@@ -146,27 +146,13 @@ else { // run as CLI tool
     }});
 
     // Show HELP screen if -h or --help passed
-    if (process.argv.some(arg => argRegex.cmds.help.test(arg))) {
-        printHelpMsg(`\n${by}generate-pw [options]${nc}`);
-        printHelpMsg('\nArgument options:');
-        printHelpMsg(' --length=n                  Generate password(s) of n length.');
-        printHelpMsg(' --qty=n                     Generate n password(s).');
-        printHelpMsg(' --charset=chars             Only include chars in password(s).');
-        printHelpMsg(' --exclude=chars             Exclude chars from password(s).');
-        printHelpMsg('\nBoolean options:');
-        printHelpMsg(' -n, --include-numbers       Allow numbers in password(s).');
-        printHelpMsg(' -s, --include-symbols       Allow symbols in password(s).');
-        printHelpMsg(' -L, --no-lowercase          Disallow lowercase letters in password(s).');
-        printHelpMsg(' -U, --no-uppercase          Disallow uppercase letters in password(s).');
-        printHelpMsg('\nInfo commands:');
-        printHelpMsg(' -h, --help                  Display this help screen.');
-        printHelpMsg(' -v, --version               Show version number.');
+    if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) printHelpScreen();
 
     // Show VERSION number if -v or --version passed
-    } else if (process.argv.some(arg => argRegex.cmds.version.test(arg))) {
+    else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg)))
         console.info('v' + require('./package.json').version);
 
-    } else { // run MAIN routine
+    else { // run MAIN routine
         for (const numArgType of ['length', 'qty'])
             if (config[numArgType] < 1) return console.error(
                 `\n${br}Error: '${ numArgType }' argument must be 1 or greater.${nc}`);
@@ -180,6 +166,8 @@ else { // run as CLI tool
         const pwResult = generatePassword(funcOptions);
         console.log('\n' + bw + ( Array.isArray(pwResult) ? pwResult.join('\n') : pwResult ) + nc);
     }
+
+    // Define LOGGING functions
 
     function printHelpMsg(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
         const terminalWidth = process.stdout.columns || 80,
@@ -202,5 +190,35 @@ else { // run as CLI tool
             index === 0 ? line // print 1st line unindented
                 : ' '.repeat(indentation) + line // print subsequent lines indented
         ));
+    }
+
+    function printHelpScreen(includeSections = ['sampleCmd', 'argOptions', 'booelanOptions', 'infoCmds']) {
+        const sections = {
+            'sampleCmd': [
+                `\n${by}generate-pw [options|commands]${nc}`
+            ],
+            'argOptions': [
+                '\nArgument options:',
+                ' --length=n                  Generate password(s) of n length.',
+                ' --qty=n                     Generate n password(s).',
+                ' --charset=chars             Only include chars in password(s).',
+                ' --charset=chars             Only include chars in password(s).',
+                ' --exclude=chars             Exclude chars from password(s).'
+            ],
+            'booelanOptions': [
+                '\nBoolean options:',
+                ' -n, --include-numbers       Allow numbers in password(s).',
+                ' -s, --include-symbols       Allow symbols in password(s).',
+                ' -L, --no-lowercase          Disallow lowercase letters in password(s).',
+                ' -U, --no-uppercase          Disallow uppercase letters in password(s).'
+            ],
+            'infoCmds': [
+                '\nInfo commands:',
+                ' -h, --help                  Display help screen.',
+                ' -v, --version               Show version number.'
+            ]
+        };
+        includeSections.forEach(section => { // print valid arg elems
+            if (sections[section]) sections[section].forEach(line => printHelpMsg(line)); });
     }
 }
