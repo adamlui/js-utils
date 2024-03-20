@@ -102,32 +102,13 @@ else { // run as CLI tool
     });
 
     // Show HELP screen if -h or --help passed
-    if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
-        printHelp(`\n${by}scss-to-css [inputPath] [outputPath] [options]${nc}`);
-        printHelp('\nPath arguments:');
-        printHelp(' [inputPath]                  '
-            + 'Path to SCSS file or directory containing SCSS files to be compiled,'
-            + ' relative to the current working directory.');
-        printHelp(' [outputPath]                 '
-            + 'Path to file or directory where CSS + sourcemap files will be stored,'
-            + ' relative to original file location (if not provided, css/ is used).');
-        printHelp('\nConfig options:');
-        printHelp(' -n, --dry-run                Don\'t actually compile the file(s),'
-            + ' just show if they will be processed.');
-        printHelp(' -d, --include-dotfolders     Include dotfolders in file search.');
-        printHelp(' -S, --no-source-maps         Prevent source maps from being generated.');
-        printHelp(' -M, --no-minify              Disable minification of output CSS.');
-        printHelp(' -R, --no-recursion           Disable recursive file searching.');
-        printHelp(' -q, --quiet                  Suppress all logging except errors.');
-        printHelp('\nInfo commands:');
-        printHelp(' -h, --help                   Display this help screen.');
-        printHelp(' -v, --version                Show version number.');
+    if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) printHelpScreen();
 
     // Show VERSION number if -v or --version passed
-    } else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
+    else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg)))
         console.info('v' + require('./package.json').version);
 
-    } else { // run MAIN routine
+    else { // run MAIN routine
 
         // Init I/O args
         const [inputArg = '', outputArg = ''] = ( // default to empty strings for error-less handling
@@ -205,7 +186,7 @@ else { // run as CLI tool
 
     // Define LOGGING functions
 
-    function printHelp(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
+    function printHelpMsg(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
         const terminalWidth = process.stdout.columns || 80,
               indentation = 30, lines = [], words = msg.match(/\S+|\s+/g);
 
@@ -226,6 +207,28 @@ else { // run as CLI tool
             index === 0 ? line // print 1st line unindented
                 : ' '.repeat(indentation) + line // print subsequent lines indented
         ));
+    }
+
+    function printHelpScreen() {
+        printHelpMsg(`\n${by}scss-to-css [inputPath] [outputPath] [options]${nc}`);
+        printHelpMsg('\nPath arguments:');
+        printHelpMsg(' [inputPath]                  '
+            + 'Path to SCSS file or directory containing SCSS files to be compiled,'
+            + ' relative to the current working directory.');
+        printHelpMsg(' [outputPath]                 '
+            + 'Path to file or directory where CSS + sourcemap files will be stored,'
+            + ' relative to original file location (if not provided, css/ is used).');
+        printHelpMsg('\nConfig options:');
+        printHelpMsg(' -n, --dry-run                Don\'t actually compile the file(s),'
+            + ' just show if they will be processed.');
+        printHelpMsg(' -d, --include-dotfolders     Include dotfolders in file search.');
+        printHelpMsg(' -S, --no-source-maps         Prevent source maps from being generated.');
+        printHelpMsg(' -M, --no-minify              Disable minification of output CSS.');
+        printHelpMsg(' -R, --no-recursion           Disable recursive file searching.');
+        printHelpMsg(' -q, --quiet                  Suppress all logging except errors.');
+        printHelpMsg('\nInfo commands:');
+        printHelpMsg(' -h, --help                   Display this help screen.');
+        printHelpMsg(' -v, --version                Show version number.');
     }
 
     function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }

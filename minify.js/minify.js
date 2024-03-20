@@ -107,32 +107,13 @@ else { // run as CLI tool
     });
 
     // Show HELP screen if -h or --help passed
-    if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
-        printHelp(`\n${by}minify-js [inputPath] [outputPath] [options]${nc}`);
-        printHelp('\nPath arguments:');
-        printHelp(' [inputPath]                 '
-            + 'Path to JS file or directory containing JS files to be minified,'
-            + ' relative to the current working directory.');
-        printHelp(' [outputPath]                '
-            + 'Path to file or directory where minified files will be stored,'
-            + ' relative to original file location (if not provided, min/ is used).');
-        printHelp('\nConfig options:');
-        printHelp(' -n, --dry-run               Don\'t actually minify the file(s),'
-            + ' just show if they will be processed.');
-        printHelp(' -d, --include-dotfolders    Include dotfolders in file search.');
-        printHelp(' -D, --include-dotfiles      Include dotfiles in file search.');
-        printHelp(' -R, --no-recursion          Disable recursive file searching.');
-        printHelp(' -M, --no-mangle             Disable mangling names.');
-        printHelp(' -q, --quiet                 Suppress all logging except errors.');
-        printHelp('\nInfo commands:');
-        printHelp(' -h, --help                  Display this help screen.');
-        printHelp(' -v, --version               Show version number.');
+    if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) printHelpScreen();
 
     // Show VERSION number if -v or --version passed
-    } else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
+    else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg)))
         console.info('v' + require('./package.json').version);
 
-    } else { // run MAIN routine
+    else { // run MAIN routine
 
         // Init I/O args
         const [inputArg = '', outputArg = ''] = ( // default to empty strings for error-less handling
@@ -206,7 +187,7 @@ else { // run as CLI tool
 
     // Define LOGGING functions
 
-    function printHelp(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
+    function printHelpMsg(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
         const terminalWidth = process.stdout.columns || 80,
               indentation = 29, lines = [], words = msg.match(/\S+|\s+/g);
 
@@ -227,6 +208,28 @@ else { // run as CLI tool
             index === 0 ? line // print 1st line unindented
                 : ' '.repeat(indentation) + line // print subsequent lines indented
         ));
+    }
+
+    function printHelpScreen() {
+        printHelpMsg(`\n${by}minify-js [inputPath] [outputPath] [options]${nc}`);
+        printHelpMsg('\nPath arguments:');
+        printHelpMsg(' [inputPath]                 '
+            + 'Path to JS file or directory containing JS files to be minified,'
+            + ' relative to the current working directory.');
+        printHelpMsg(' [outputPath]                '
+            + 'Path to file or directory where minified files will be stored,'
+            + ' relative to original file location (if not provided, min/ is used).');
+        printHelpMsg('\nConfig options:');
+        printHelpMsg(' -n, --dry-run               Don\'t actually minify the file(s),'
+            + ' just show if they will be processed.');
+        printHelpMsg(' -d, --include-dotfolders    Include dotfolders in file search.');
+        printHelpMsg(' -D, --include-dotfiles      Include dotfiles in file search.');
+        printHelpMsg(' -R, --no-recursion          Disable recursive file searching.');
+        printHelpMsg(' -M, --no-mangle             Disable mangling names.');
+        printHelpMsg(' -q, --quiet                 Suppress all logging except errors.');
+        printHelpMsg('\nInfo commands:');
+        printHelpMsg(' -h, --help                  Display this help screen.');
+        printHelpMsg(' -v, --version               Show version number.');
     }
 
     function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
