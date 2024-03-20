@@ -71,17 +71,17 @@ console.log(passwords);
 
 Any of these can be passed into the options object for each function:
 
-Name        | Description                                                                             | Default Value
-------------|-----------------------------------------------------------------------------------------|---------------
-`length`    | Integer, length of password(s).                                                         | `8`
-`qty`*      | Integer, number of passwords to generate.                                               | `1`
-`charset`   | String, possible characters to include in password(s).                                  | ''
-`exclude`   | String, characters to exclude from password(s).                                         | ''
-`numbers`   | Boolean, allow numbers in password(s).                                                  | `false`
-`symbols`   | Boolean, allow symbols in password(s).                                                  | `false`
-`lowercase` | Boolean, allow lowercase letters in password(s).                                        | `true`
-`uppercase` | Boolean, allow uppercase letters in password(s).                                        | `true`
-`strict`    | Boolean, require at least one character from each allowed character set in password(s). | `false`
+Name        | Type | Description                                                                        | Default Value
+------------|--------------------------------------------------------------------------------|---------|---------------
+`length`    | Integer |Length of password(s).                                                         |  `8`
+`qty`*      | Integer | Number of passwords to generate.                                               | `1`
+`charset`   | String  |Characters to include in password(s).                                          |  ''
+`exclude`   | String  | Characters to exclude from password(s).                                        | ''
+`numbers`   | Boolean | Allow numbers in password(s).                                                  | `false`
+`symbols`   | Boolean | Allow symbols in password(s).                                                  | `false`
+`lowercase` | Boolean | Allow lowercase letters in password(s).                                        | `true`
+`uppercase` | Boolean | Allow uppercase letters in password(s).                                        | `true`
+`strict`    | Boolean | Require at least one character from each allowed character set in password(s). | `false`
 
 ##### _*Only available in [`generatePassword([options])`](#generatepasswordoptions) since [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) takes a `qty` argument_
 
