@@ -180,13 +180,15 @@ minifyJS.minify(input, { dotFiles: true });
 
 可能的参数（及其默认设置）有：
 
-```
- recursive (true)     如果传递目录路径，则递归搜索嵌套文件。
- verbose (true)       在控制台/终端中显示日志记录。
- dotFolders (false)   在文件搜索中包括点文件夹。
- dotFiles (false)     在文件搜索中包含点文件。
- mangle (true)        缩短变量名称（通常为一个字符）。
-```
+姓名         | 描述                                | 默认值
+-------------|------------------------------------|---------
+`recursive`  | 如果传递目录路径，则递归搜索嵌套文件。 | `true`
+`verbose`    | 在控制台/终端中显示日志记录。         | `true`
+`dotFolders` | 在文件搜索中包括点文件夹。            | `false`
+`dotFiles`   | 在文件搜索中包含点文件。              | `false`
+`mangle`     | 缩短变量名称（通常为一个字符）。       | `true`
+
+<br>
 
 ### `findJS(searchDir[, options])`
 
@@ -201,12 +203,12 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 可能的参数（及其默认设置）有：
 
-```
- recursive (true)     如果传递目录路径，则递归搜索嵌套文件。
- verbose (true)       在控制台/终端中显示日志记录。
- dotFolders (false)   在文件搜索中包括点文件夹。
- dotFiles (false)     在文件搜索中包含点文件。
-```
+姓名         | 描述                                | 默认值
+-------------|------------------------------------|---------
+`recursive`  | 如果传递目录路径，则递归搜索嵌套文件。 | `true`
+`verbose`    | 在控制台/终端中显示日志记录。         | `true`
+`dotFolders` | 在文件搜索中包括点文件夹。            | `false`
+`dotFiles`   | 在文件搜索中包含点文件。              | `false`
 
 <br>
 

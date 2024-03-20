@@ -180,13 +180,15 @@ minifyJS.minify(input, { dotFiles: true });
 
 可能的參數（及其預設設定）有：
 
-```
- recursive (true)     如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。
- verbose (true)       在控制台/終端機中顯示日誌記錄。
- dotFolders (false)   在文件搜尋中包含點資料夾。
- dotFiles (false)     在文件搜尋中包含點文件。
- mangle (true)        縮短變數名稱（通常為一個字元）。
-```
+姓名         | 描述                                | 預設值
+-------------|------------------------------------|---------
+`recursive`  | 如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。 | `true`
+`verbose`    | 在控制台/終端機中顯示日誌記錄。       | `true`
+`dotFolders` | 在文件搜尋中包含點資料夾。            | `false`
+`dotFiles`   | 在文件搜尋中包含點文件。              | `false`
+`mangle`     | 縮短變數名稱（通常為一個字元）。       | `true`
+
+<br>
 
 ### `findJS(searchDir[, options])`
 
@@ -201,12 +203,12 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 可能的參數（及其預設設定）有：
 
-```
- recursive (true)     如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。
- verbose (true)       在控制台/終端機中顯示日誌記錄。
- dotFolders (false)   在文件搜尋中包含點資料夾。
- dotFiles (false)     在文件搜尋中包含點文件。
-```
+姓名         | 描述                                | 預設值
+-------------|------------------------------------|---------
+`recursive`  | 如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。 | `true`
+`verbose`    | 在控制台/終端機中顯示日誌記錄。       | `true`
+`dotFolders` | 在文件搜尋中包含點資料夾。            | `false`
+`dotFiles`   | 在文件搜尋中包含點文件。              | `false`
 
 <br>
 

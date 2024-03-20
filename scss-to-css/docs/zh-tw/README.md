@@ -180,13 +180,15 @@ scssToCSS.compile(inputDir, { minify: false });
 
 可能的參數（及其預設設定）有：
 
-```
- recursive (true)     如果傳遞目錄路徑，則遞歸搜尋巢狀檔案。
- verbose (true)       在控制台/終端機中顯示日誌記錄。
- dotFolders (false)   在檔案搜尋中包含點資料夾。
- minify (true)        縮小輸出 CSS。
- sourceMaps (true)    產生 CSS 來源映射。
-```
+姓名         | 描述                                | 預設值
+-------------|------------------------------------|---------
+`recursive`  | 如果傳遞目錄路徑，則遞歸搜尋巢狀檔案。 | `true`
+`verbose`    | 在控制台/終端機中顯示日誌記錄。       | `true`
+`dotFolders` | 在檔案搜尋中包含點資料夾。            | `false`
+`minify`     | 縮小輸出 CSS。                       | `true`
+`sourceMaps` | 產生 CSS 來源映射。                   | `true`
+
+<br>
 
 ### `findSCSS(searchDir[, options])`
 
@@ -201,11 +203,11 @@ scssToCSS.findSCSS(searchDir, { recursive: false });
 
 可能的參數（及其預設設定）有：
 
-```
- recursive (true)     如果傳遞目錄路徑，則遞歸搜尋巢狀檔案。
- verbose (true)       在控制台/終端機中顯示日誌記錄。
- dotFolders (false)   在檔案搜尋中包含點資料夾。
-```
+姓名         | 描述                                | 預設值
+-------------|------------------------------------|---------
+`recursive`  | 如果傳遞目錄路徑，則遞歸搜尋巢狀檔案。 | `true`
+`verbose`    | 在控制台/終端機中顯示日誌記錄。       | `true`
+`dotFolders` | 在檔案搜尋中包含點資料夾。            | `false`
 
 <br>
 

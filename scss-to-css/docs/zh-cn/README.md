@@ -180,13 +180,15 @@ scssToCSS.compile(inputDir, { minify: false });
 
 可能的参数（及其默认设置）有：
 
-```
- recursive (true)     如果传递目录路径，则递归搜索嵌套文件。
- verbose (true)       在控制台/终端中显示日志记录。
- dotFolders (false)   在文件搜索中包括点文件夹。
- minify (true)        缩小输出 CSS。
- sourceMaps (true)    生成 CSS 源映射。
-```
+姓名         | 描述                                | 默认值
+-------------|------------------------------------|---------
+`recursive`  | 如果传递目录路径，则递归搜索嵌套文件。 | `true`
+`verbose`    | 在控制台/终端中显示日志记录。         | `true`
+`dotFolders` | 在文件搜索中包括点文件夹。            | `false`
+`minify`     | 缩小输出 CSS。                       | `true`
+`sourceMaps` | 生成 CSS 源映射。                    | `true`
+
+<br>
 
 ### `findSCSS(searchDir[, options])`
 
@@ -201,11 +203,11 @@ scssToCSS.findSCSS(searchDir, { recursive: false });
 
 可能的参数（及其默认设置）有：
 
-```
- recursive (true)     如果传递目录路径，则递归搜索嵌套文件。
- verbose (true)       在控制台/终端中显示日志记录。
- dotFolders (false)   在文件搜索中包括点文件夹。
-```
+姓名         | 描述                                | 默认值
+-------------|------------------------------------|---------
+`recursive`  | 如果传递目录路径，则递归搜索嵌套文件。 | `true`
+`verbose`    | 在控制台/终端中显示日志记录。         | `true`
+`dotFolders` | 在文件搜索中包括点文件夹。            | `false`
 
 <br>
 

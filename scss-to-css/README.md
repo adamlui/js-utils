@@ -181,14 +181,15 @@ scssToCSS.compile(inputDir, { minify: false });
 
 Possible parameters (and their default settings) are:
 
-```
- recursive (true)     Recursively search for nested files if dir path
-                      passed.
- verbose (true)       Show logging in console/terminal.
- dotFolders (false)   Include dotfolders in file search.
- minify (true)        Minify output CSS.
- sourceMaps (true)    Generate CSS source maps.
-```
+Name         | Desciption                                              | Default value
+-------------|---------------------------------------------------------|---------------
+`recursive`  | Recursively search for nested files if dir path passed. | `true`
+`verbose`    | Show logging in console/terminal.                       | `true`
+`dotFolders` | Include dotfolders in file search.                      | `false`
+`minify`     | Minify output CSS.                                      | `true`
+`sourceMaps` | Generate CSS source maps.                               | `true`
+
+<br>
 
 ### `findSCSS(searchDir[, options])`
 
@@ -203,12 +204,11 @@ scssToCSS.findSCSS(searchDir, { recursive: false });
 
 Possible parameters (and their default settings) are:
 
-```
- recursive (true)     Recursively search for nested files if dir path
-                      passed.
- verbose (true)       Show logging in console/terminal.
- dotFolders (false)   Include dotfolders in file search.
-```
+Name         | Desciption                                              | Default value
+-------------|---------------------------------------------------------|---------------
+`recursive`  | Recursively search for nested files if dir path passed. | `true`
+`verbose`    | Show logging in console/terminal.                       | `true`
+`dotFolders` | Include dotfolders in file search.                      | `false`
 
 <br>
 
