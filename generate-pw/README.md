@@ -15,12 +15,6 @@ As a **global utility**:
 $ npm install -g generate-pw
 ```
 
-As a **dev dependency**, from your project root:
-
-```
-$ npm install -D generate-pw
-```
-
 As a **runtime dependency**, from your project root:
 
 ```
