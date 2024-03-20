@@ -88,17 +88,18 @@ else { // run as CLI tool
 
     // Load FLAG settings
     const config = {};
-    const flagRegex = {
+    const argRegex = {
         'dryRun': /^--?(?:n|dry-?run)$/,
         'includeDotFolders': /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
         'includeDotFiles': /^--?(?:df|D|(?:include-?)?dot-?files?=?(?:true|1)?)$/,
         'noRecursion': /^--?(?:R|(?:disable|no)-?recursion|recursion=(?:false|0))$/,
         'noMangle': /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/,
-        'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
+        'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/,
+        'help': /^--?h(?:elp)?$/
     };
     process.argv.forEach(arg => {
         if (!arg.startsWith('-')) return;
-        const matchedFlag = Object.keys(flagRegex).find(flag => flagRegex[flag].test(arg));
+        const matchedFlag = Object.keys(argRegex).find(flag => argRegex[flag].test(arg));
         if (matchedFlag) config[matchedFlag] = true;
         else {
             console.error(`\n${br}ERROR: Arg '${ arg }' not recognized.${nc}`);
@@ -107,7 +108,7 @@ else { // run as CLI tool
     });
 
     // Show HELP screen if -h or --help passed
-    if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) printHelpScreen();
+    if (process.argv.some(arg => argRegex.help.test(arg))) printHelpScreen();
 
     // Show VERSION number if -v or --version passed
     else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg)))
