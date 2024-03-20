@@ -98,7 +98,7 @@ else { // run as CLI tool
         if (matchedFlag) config[matchedFlag] = true;
         else {
             console.error(`\n${br}ERROR: Arg '${ arg }' not recognized.${nc}`);
-            console.info(`\n${by}Valid arguments are below.${nc}`)
+            console.info(`\n${by}Valid arguments are below.${nc}`);
             printHelpScreen(['configOptions', 'infoCmds']);
             process.exit(1);
     }});
