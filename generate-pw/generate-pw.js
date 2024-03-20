@@ -33,7 +33,7 @@ function generatePassword(options = {}) {
     for (const numArgType of ['length', 'qty'])
         if (isNaN(options[numArgType]) || options[numArgType] < 1)
             return console.error(
-                `ERROR: <${ numArgType }> argument must be 1 or greater.`);
+                `ERROR: [${ numArgType }] argument must be 1 or greater.`);
 
     if (options.qty > 1) { // return array of [qty] password strings
         const { qty, ...otherOptions } = options;
@@ -99,7 +99,7 @@ function generatePassword(options = {}) {
 function generatePasswords(qty, options) {
     qty = parseInt(qty);
     if (isNaN(qty)) return console.error(
-        'ERROR: First argument <qty> of generatePasswords() must be an integer');
+        'ERROR: First argument [qty] of generatePasswords() must be an integer');
     const passwords = [];
     for (let i = 0; i < qty; i++) passwords.push(generatePassword(options));
     return passwords;
@@ -147,7 +147,7 @@ else { // run as CLI tool
             const value = arg.split('=')[1];
             config[matchedArgOption] = parseInt(value) || value;
         } else if (!matchedCmd) {
-            console.error(`\n${br}ERROR: Arg '${ arg }' not recognized.${nc}`);
+            console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
             console.info(`\n${by}Valid arguments are below.${nc}`);
             printHelpScreen(['paramOptions', 'booelanOptions', 'infoCmds']);
             process.exit(1);
@@ -163,7 +163,7 @@ else { // run as CLI tool
     else { // run MAIN routine
         for (const numArgType of ['length', 'qty'])
             if (isNaN(config[numArgType]) || config[numArgType] < 1) return console.error(
-                `\n${br}Error: '${ numArgType }' argument must be 1 or greater.${nc}`);
+                `\n${br}Error: [${ numArgType }] argument must be 1 or greater.${nc}`);
         const funcOptions = {
             length: config.length || 8, qty: config.qty || 1,
             charset: config.charset, exclude: config.excludeChars,
