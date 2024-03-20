@@ -130,11 +130,11 @@ else { // run as CLI tool
     process.argv.forEach(arg => {
         if (!arg.startsWith('-')) return;
         const matchedFlag = Object.keys(argRegex.flags).find(flag => argRegex.flags[flag].test(arg)),
-              matchedOption = Object.keys(argRegex.argOptions).find(option => argRegex.argOptions[option].test(arg));
+              matchedArgOption = Object.keys(argRegex.argOptions).find(option => argRegex.argOptions[option].test(arg));
         if (matchedFlag) config[matchedFlag] = true;
-        else if (matchedOption) {
+        else if (matchedArgOption) {
             const value = arg.split('=')[1];
-            config[matchedOption] = parseInt(value) || value;
+            config[matchedArgOption] = parseInt(value) || value;
         } else {
             console.error(`\n${br}ERROR: Arg '${ arg }' not recognized.${nc}`);
             process.exit(1);
