@@ -228,14 +228,6 @@ Name         | Desciption                                              | Default
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-## 💖 Support
-
-Please consider [giving a GitHub ⭐](https://github.com/adamlui/js-utils) or [funding](https://github.com/sponsors/adamlui) this project if it helped you!
-
-<br>
-
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
-
 ## 🏛️ MIT License
 
 **Copyright © 2023–2024 [Adam Lui](https://github.com/adamlui) & contributors**
@@ -245,6 +237,14 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
+## 💖 Support
+
+Please consider [giving a GitHub ⭐](https://github.com/adamlui/js-utils) or [funding](https://github.com/sponsors/adamlui) this project if it helped you!
 
 <br>
 

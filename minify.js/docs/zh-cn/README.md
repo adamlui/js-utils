@@ -227,14 +227,6 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-## 💖 支持
-
-如果这个项目对您有帮助，请考虑[给予 GitHub ⭐](https://github.com/adamlui/js-utils) 或[资助](https://github.com/sponsors/adamlui)！
-
-<br>
-
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
-
 ## 🏛️ MIT 许可证
 
 **版权所有 © 2023–2024 [刘展鹏 (Adam Lui)](https://github.com/adamlui) 和贡献者**
@@ -244,6 +236,14 @@ minifyJS.findJS(searchDir, { recursive: false });
 上述版权声明和本许可声明应包含在所有软件的副本或重要部分。
 
 本软件『按原样』提供，不提供任何形式的明示或保证暗示的，包括但不限于适销性保证，适用于特定目的和非侵权。 在任何情况下都不得作者或版权持有人对任何索赔、损害或其他责任，无论是在合同、侵权或其他方面的行为中，由以下原因引起，出于或与软件或使用或其他交易有关软件。
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
+## 💖 支持
+
+如果这个项目对您有帮助，请考虑[给予 GitHub ⭐](https://github.com/adamlui/js-utils) 或[资助](https://github.com/sponsors/adamlui)！
 
 <br>
 
