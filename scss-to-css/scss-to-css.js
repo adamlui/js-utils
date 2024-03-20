@@ -82,18 +82,24 @@ else { // run as CLI tool
           bg = '\x1b[1;92m'; // bright green
 
     // Load FLAG settings
-    const config = { 
-        dryRun: process.argv.some(arg => /^--?(?:n|dry-?run)$/.test(arg)),
-        includeDotFolders: process.argv.some(arg =>
-            /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/.test(arg)),
-        noSourceMaps: process.argv.some(arg =>
-            /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?|so?u?rce?-?maps?=(?:false|0))$/.test(arg)),
-        noRecursion: process.argv.some(arg =>
-            /^--?(?:R|(?:disable|no)-?recursion|recursion=(?:false|0))$/.test(arg)),
-        noMinify: process.argv.some(arg =>
-            /^--?(?:M|(?:disable|no)-?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/.test(arg)),
-        quietMode: process.argv.some(arg => /^--?q(?:uiet)?(?:-?mode)?$/.test(arg))
+    const config = {};
+    const flagRegex = {
+        'dryRun': /^--?(?:n|dry-?run)$/,
+        'includeDotFolders': /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
+        'noSourceMaps': /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?|so?u?rce?-?maps?=(?:false|0))$/,
+        'noRecursion': /^--?(?:R|(?:disable|no)-?recursion|recursion=(?:false|0))$/,
+        'noMinify': /^--?(?:M|(?:disable|no)-?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/,
+        'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
     };
+    process.argv.forEach(arg => {
+        if (!arg.startsWith('-')) return;
+        const matchedFlag = Object.keys(flagRegex).find(flag => flagRegex[flag].test(arg));
+        if (matchedFlag) config[matchedFlag] = true;
+        else {
+            console.error(`\n${br}ERROR: Arg '${ arg }' not recognized.${nc}`);
+            process.exit(1);
+        }
+    });
 
     // Show HELP screen if -h or --help passed
     if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
