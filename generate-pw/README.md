@@ -71,11 +71,11 @@ console.log(passwords);
 
 Any of these can be passed into the options object for each function:
 
-Name        | Type | Description                                                                        | Default Value
-------------|--------------------------------------------------------------------------------|---------|---------------
-`length`    | Integer |Length of password(s).                                                         |  `8`
+Name        | Type    | Description                                                                    | Default Value
+------------|---------|--------------------------------------------------------------------------------|---------------
+`length`    | Integer | Length of password(s).                                                         | `8`
 `qty`*      | Integer | Number of passwords to generate.                                               | `1`
-`charset`   | String  |Characters to include in password(s).                                          |  ''
+`charset`   | String  | Characters to include in password(s).                                          | ''
 `exclude`   | String  | Characters to exclude from password(s).                                        | ''
 `numbers`   | Boolean | Allow numbers in password(s).                                                  | `false`
 `symbols`   | Boolean | Allow symbols in password(s).                                                  | `false`
