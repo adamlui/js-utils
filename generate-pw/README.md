@@ -72,8 +72,8 @@ Name | Description | Default Value
 ---|---|---
 `length` | Integer, length of password. | `8`
 `qty`* | Integer, number of passwords to generate. | `1`
-`charset` | String, only characters to be included in password. | ''
-`exclude` | String, characters to be excluded from password. | ''
+`charset` | String, possible characters to include in password. | ''
+`exclude` | String, characters to exclude from password. | ''
 `numbers` | Boolean, allow numbers in password. | `false`
 `symbols` | Boolean, allow symbols in password. | `false`
 `lowercase` | Boolean, allow lowercase letters in password. | `true`
