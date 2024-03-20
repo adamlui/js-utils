@@ -28,7 +28,7 @@
 
 <br>
 
-<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## ⚡ স্থাপন
 
@@ -52,7 +52,7 @@ $ npm install @adamlui/minify.js
 
 <br>
 
-<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 💻 কমান্ড লাইন ব্যবহার
 
@@ -139,7 +139,7 @@ $ minify-js input_folder output_folder
 
 <br>
 
-<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🔌 API ব্যবহার
 
@@ -227,7 +227,7 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 <br>
 
-<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 💖 সমর্থন
 
@@ -235,7 +235,7 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 <br>
 
-<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🏛️ MIT লাইসেন্স
 

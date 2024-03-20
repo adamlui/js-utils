@@ -28,7 +28,7 @@
 
 <br>
 
-<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## ⚡ 如何安装
 
@@ -52,7 +52,7 @@ $ npm install @adamlui/minify.js
 
 <br>
 
-<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 💻 命令行使用
 
@@ -137,7 +137,7 @@ $ minify-js input_folder output_folder
 
 <br>
 
-<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🔌 API 使用
 
@@ -225,7 +225,7 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 <br>
 
-<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 💖 支持
 
@@ -233,7 +233,7 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 <br>
 
-<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🏛️ MIT 许可证
 

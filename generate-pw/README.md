@@ -23,7 +23,7 @@ $ npm install generate-pw
 
 <br>
 
-<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🔌 API usage
 
@@ -97,7 +97,7 @@ Name        | Type    | Description                                             
 
 <br>
 
-<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 💻 Command line usage
 
@@ -133,7 +133,7 @@ Info commands:
 
 <br>
 
-<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 💖 Support
 
@@ -141,7 +141,7 @@ Please consider [giving a GitHub ⭐](https://github.com/adamlui/js-utils) or [f
 
 <br>
 
-<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🏛️ MIT License
 
