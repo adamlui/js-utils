@@ -21,7 +21,7 @@ As a **runtime dependency**, from your project root:
 $ npm install generate-pw
 ```
 
-## 🔌 API reference
+## 🔌 API usage
 
 **generate-pw** can be imported into your app as an ECMAScript module or a CommonJS module.
 
