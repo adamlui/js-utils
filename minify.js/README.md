@@ -145,6 +145,8 @@ import * as minifyJS from '@adamlui/minify.js';
 const minifyJS = require('@adamlui/minify.js');
 ```
 
+<br>
+
 ### `minify(input[, options])`
 
 Minifies JavaScript code based on the string input supplied.

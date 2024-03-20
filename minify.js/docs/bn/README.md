@@ -146,6 +146,8 @@ import * as minifyJS from '@adamlui/minify.js';
 const minifyJS = require('@adamlui/minify.js');
 ```
 
+<br>
+
 ### `minify(input[, options])`
 
 সরবরাহকৃত স্ট্রিং ইনপুটের উপর ভিত্তি করে জাভাস্ক্রিপ্ট কোড ছোট করে।

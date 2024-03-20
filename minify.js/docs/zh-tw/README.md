@@ -144,6 +144,8 @@ import * as minifyJS from '@adamlui/minify.js';
 const minifyJS = require('@adamlui/minify.js');
 ```
 
+<br>
+
 ### `minify(input[, options])`
 
 根據提供的字串輸入縮小 JavaScript 程式碼。

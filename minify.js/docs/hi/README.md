@@ -146,6 +146,8 @@ import * as minifyJS from '@adamlui/minify.js';
 const minifyJS = require('@adamlui/minify.js');
 ```
 
+<br>
+
 ### `minify(input[, options])`
 
 आपूर्ति किए गए स्ट्रिंग इनपुट के आधार पर जावास्क्रिप्ट कोड को छोटा करता है।

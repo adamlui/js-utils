@@ -143,6 +143,8 @@ import * as minifyJS from '@adamlui/minify.js';
 const minifyJS = require('@adamlui/minify.js');
 ```
 
+<br>
+
 ### `minify(input[, options])`
 
 ਸਪਲਾਈ ਕੀਤੇ ਸਟ੍ਰਿੰਗ ਇਨਪੁਟ ਦੇ ਆਧਾਰ 'ਤੇ JavaScript ਕੋਡ ਨੂੰ ਘੱਟ ਕਰਦਾ ਹੈ।
