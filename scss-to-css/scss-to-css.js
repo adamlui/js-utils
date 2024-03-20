@@ -212,9 +212,9 @@ else { // run as CLI tool
         ));
     }
 
-    function printHelpScreen(includeSections = ['sampleCmd', 'pathArgs', 'configOptions', 'infoCmds']) {
+    function printHelpScreen(includeSections = ['cmdFormat', 'pathArgs', 'configOptions', 'infoCmds']) {
         const sections = {
-            'sampleCmd': [
+            'cmdFormat': [
                 `\n${by}scss-to-css [inputPath] [outputPath] [options]${nc}`
             ],
             'pathArgs': [

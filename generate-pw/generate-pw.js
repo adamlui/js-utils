@@ -192,9 +192,9 @@ else { // run as CLI tool
         ));
     }
 
-    function printHelpScreen(includeSections = ['sampleCmd', 'paramOptions', 'booelanOptions', 'infoCmds']) {
+    function printHelpScreen(includeSections = ['cmdFormat', 'paramOptions', 'booelanOptions', 'infoCmds']) {
         const sections = {
-            'sampleCmd': [
+            'cmdFormat': [
                 `\n${by}generate-pw [options|commands]${nc}`
             ],
             'paramOptions': [
