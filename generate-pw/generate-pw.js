@@ -111,19 +111,34 @@ else { // run as CLI tool
           bw = '\x1b[1;97m'; // bright white
 
     // Load settings from ARGS
-    const config = { 
-        length: parseInt(process.argv.find(arg => /^--?length/.test(arg))?.split('=')[1]) || 8,
-        qty: parseInt(process.argv.find(arg => /^--?qu?a?n?ti?t?y=\d+$/.test(arg))?.split('=')[1]) || 1,
-        charset: process.argv.find(arg => /^--?chars/.test(arg))?.split('=')[1],
-        excludeChars: process.argv.find(arg => /^--?exclude=/.test(arg))?.split('=')[1] || '',
-        includeNums: process.argv.some(arg => /^--?(?:n|(?:include-?)?num(?:ber)?s?=?(?:true|1)?)$/.test(arg)),
-        includeSymbols: process.argv.some(arg => /^--?(?:s|(?:include-?)?symbols?=?(?:true|1)?)$/.test(arg)),
-        excludeLowerChars: process.argv.some(arg =>
-            /^--?(?:L|(?:exclude|disable|no)-?lower-?(?:case)?|lower-?(?:case)?=(?:false|0))$/.test(arg)),
-        excludeUpperChars: process.argv.some(arg =>
-            /^--?(?:U|(?:exclude|disable|no)-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/.test(arg)),
-        strictMode: process.argv.some(arg => /^--?s(?:trict)?(?:-?mode)?$/.test(arg))
+    const config = {};
+    const argRegex = {
+        options: {
+            'length': /^--?length/,
+            'qty': /^--?qu?a?n?ti?t?y=\d+$/,
+            'charset': /^--?chars/,
+            'excludeChars': /^--?exclude=/
+        },
+        flags: {
+            'includeNums': /^--?(?:n|(?:include-?)?num(?:ber)?s?=?(?:true|1)?)$/,
+            'includeSymbols': /^--?(?:s|(?:include-?)?symbols?=?(?:true|1)?)$/,
+            'excludeLowerChars': /^--?(?:L|(?:exclude|disable|no)-?lower-?(?:case)?|lower-?(?:case)?=(?:false|0))$/,
+            'excludeUpperChars': /^--?(?:U|(?:exclude|disable|no)-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/,
+            'strictMode': /^--?s(?:trict)?(?:-?mode)?$/
+        }
     };
+    process.argv.forEach(arg => {
+        if (!arg.startsWith('-')) return;
+        const matchedFlag = Object.keys(argRegex.flags).find(flag => argRegex.flags[flag].test(arg)),
+              matchedOption = Object.keys(argRegex.options).find(option => argRegex.options[option].test(arg));
+        if (matchedFlag) config[matchedFlag] = true;
+        else if (matchedOption) {
+            const value = arg.split('=')[1];
+            config[matchedOption] = parseInt(value) || value;
+        } else {
+            console.error(`\n${br}ERROR: Arg '${ arg }' not recognized.${nc}`);
+            process.exit(1);
+    }});
 
     // Show HELP screen if -h or --help passed
     if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
@@ -151,7 +166,8 @@ else { // run as CLI tool
             if (config[numArgType] < 1) return console.error(
                 `\n${br}Error: '${ numArgType }' argument must be 1 or greater.${nc}`);
         const funcOptions = {
-            length: config.length, qty: config.qty, charset: config.charset, exclude: config.excludeChars,
+            length: config.length || 8, qty: config.qty || 1,
+            charset: config.charset, exclude: config.excludeChars,
             numbers: config.includeNums, symbols: config.includeSymbols,
             lowercase: !config.excludeLowerChars, uppercase: !config.excludeUpperChars,
             strict: config.strictMode
