@@ -142,6 +142,8 @@ else { // run as CLI tool
             config[matchedArgOption] = parseInt(value) || value;
         } else if (!matchedCmd) {
             console.error(`\n${br}ERROR: Arg '${ arg }' not recognized.${nc}`);
+            console.info(`\n${by}Valid arguments are below.${nc}`);
+            printHelpScreen(['paramOptions', 'booelanOptions', 'infoCmds']);
             process.exit(1);
     }});
 
