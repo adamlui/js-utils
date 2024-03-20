@@ -43,14 +43,16 @@ Generates **one** password if `qty` option is not given, returning a string:
 
 ```js
 const password = pw.generatePassword({ length: 11, numbers: true });
-console.log(password); // sample output: 'bAsZmsmqoQn'
+console.log(password);
+// sample output: 'bAsZmsmqoQn'
 ```
 
 ...or **multiple** passwords if `qty` option is given, returning an array of strings:
 
 ```js
 const passwords = pw.generatePassword({ qty: 5, length: 8, symbols: true });
-console.log(passwords); // sample output: [ '!zSf@Q.s', '!,HT\\;m=', '?Lq&FV>^', 'gf}Y;}Ne', 'Stsx(GqE' ]
+console.log(passwords);
+// sample output: [ '!zSf@Q.s', '!,HT\\;m=', '?Lq&FV>^', 'gf}Y;}Ne', 'Stsx(GqE' ]
 ```
 
 **💡 Note:** If no options are passed, passwords will be 8-chars long, consisting of upper/lower cased letters.
@@ -61,7 +63,8 @@ Generates **multiple** passwords based on `qty` given, returning an array of str
 
 ```js
 const passwords = pw.generatePasswords(5, { length: 3, uppercase: false });
-console.log(passwords); // sample output: [ 'yilppxru', 'ckvkyjfp', 'zolcpyfb' ]
+console.log(passwords);
+// sample output: [ 'yilppxru', 'ckvkyjfp', 'zolcpyfb' ]
 ```
 
 ### Available options
