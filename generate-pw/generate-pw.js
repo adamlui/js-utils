@@ -142,20 +142,20 @@ else { // run as CLI tool
 
     // Show HELP screen if -h or --help passed
     if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) {
-        printHelp(`\n${by}generate-pw [options]${nc}`);
-        printHelp('\nArgument options:');
-        printHelp(' --length=n                  Generate password(s) of n length.');
-        printHelp(' --qty=n                     Generate n password(s).');
-        printHelp(' --charset=chars             Only include chars in password(s).');
-        printHelp(' --exclude=chars             Exclude chars from password(s).');
-        printHelp('\nBoolean options:');
-        printHelp(' -n, --include-numbers       Allow numbers in password(s).');
-        printHelp(' -s, --include-symbols       Allow symbols in password(s).');
-        printHelp(' -L, --no-lowercase          Disallow lowercase letters in password(s).');
-        printHelp(' -U, --no-uppercase          Disallow uppercase letters in password(s).');
-        printHelp('\nInfo commands:');
-        printHelp(' -h, --help                  Display this help screen.');
-        printHelp(' -v, --version               Show version number.');
+        printHelpMsg(`\n${by}generate-pw [options]${nc}`);
+        printHelpMsg('\nArgument options:');
+        printHelpMsg(' --length=n                  Generate password(s) of n length.');
+        printHelpMsg(' --qty=n                     Generate n password(s).');
+        printHelpMsg(' --charset=chars             Only include chars in password(s).');
+        printHelpMsg(' --exclude=chars             Exclude chars from password(s).');
+        printHelpMsg('\nBoolean options:');
+        printHelpMsg(' -n, --include-numbers       Allow numbers in password(s).');
+        printHelpMsg(' -s, --include-symbols       Allow symbols in password(s).');
+        printHelpMsg(' -L, --no-lowercase          Disallow lowercase letters in password(s).');
+        printHelpMsg(' -U, --no-uppercase          Disallow uppercase letters in password(s).');
+        printHelpMsg('\nInfo commands:');
+        printHelpMsg(' -h, --help                  Display this help screen.');
+        printHelpMsg(' -v, --version               Show version number.');
 
     // Show VERSION number if -v or --version passed
     } else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg))) {
@@ -176,7 +176,7 @@ else { // run as CLI tool
         console.log('\n' + bw + ( Array.isArray(pwResult) ? pwResult.join('\n') : pwResult ) + nc);
     }
 
-    function printHelp(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
+    function printHelpMsg(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
         const terminalWidth = process.stdout.columns || 80,
               indentation = 29, lines = [], words = msg.match(/\S+|\s+/g);
 
