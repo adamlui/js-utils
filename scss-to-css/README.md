@@ -132,7 +132,7 @@ Info commands:
  -v, --version               Show version number.
 ```
 
-## 🔌 API reference
+## 🔌 API usage
 
 You can also import **scss-to-css** into your app to use its API methods, both as an ECMAScript module or a CommonJS module.
 

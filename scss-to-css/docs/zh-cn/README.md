@@ -131,7 +131,7 @@ $ scss-to-css input_folder output_folder
  -v, --version               显示版本号。
 ```
 
-## 🔌 API 参考
+## 🔌 API 使用
 
 您还可以将 **scss-to-css** 导入您的应用程序以使用其 API 方法，无论是作为 ECMAScript 模块还是 CommonJS 模块。
 

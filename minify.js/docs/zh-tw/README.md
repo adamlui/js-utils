@@ -128,7 +128,7 @@ $ minify-js input_folder output_folder
  -v, --version               顯示版本號。
 ```
 
-## 🔌 API 參考
+## 🔌 API 使用
 
 您也可以將 **minify.js** 匯入您的應用程式以使用其 API 方法，無論是作為 ECMAScript 模組還是 CommonJS 模組。
 
