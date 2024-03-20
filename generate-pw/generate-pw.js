@@ -113,7 +113,7 @@ else { // run as CLI tool
     // Load settings from ARGS
     const config = {};
     const argRegex = {
-        argOptions: {
+        paramOptions: {
             'length': /^--?length/,
             'qty': /^--?qu?a?n?ti?t?y=\d+$/,
             'charset': /^--?chars/,
@@ -134,7 +134,7 @@ else { // run as CLI tool
     process.argv.forEach(arg => {
         if (!arg.startsWith('-')) return;
         const matchedFlag = Object.keys(argRegex.flags).find(flag => argRegex.flags[flag].test(arg)),
-              matchedArgOption = Object.keys(argRegex.argOptions).find(option => argRegex.argOptions[option].test(arg)),
+              matchedArgOption = Object.keys(argRegex.paramOptions).find(option => argRegex.paramOptions[option].test(arg)),
               matchedCmd = Object.keys(argRegex.cmds).find(cmd => argRegex.cmds[cmd].test(arg));
         if (matchedFlag) config[matchedFlag] = true;
         else if (matchedArgOption) {
@@ -192,12 +192,12 @@ else { // run as CLI tool
         ));
     }
 
-    function printHelpScreen(includeSections = ['sampleCmd', 'argOptions', 'booelanOptions', 'infoCmds']) {
+    function printHelpScreen(includeSections = ['sampleCmd', 'paramOptions', 'booelanOptions', 'infoCmds']) {
         const sections = {
             'sampleCmd': [
                 `\n${by}generate-pw [options|commands]${nc}`
             ],
-            'argOptions': [
+            'paramOptions': [
                 '\nArgument options:',
                 ' --length=n                  Generate password(s) of n length.',
                 ' --qty=n                     Generate n password(s).',
