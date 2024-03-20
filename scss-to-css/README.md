@@ -46,6 +46,8 @@ As a **runtime dependency** (e.g. for on-the-fly compilation), from your project
 $ npm install @adamlui/scss-to-css
 ```
 
+<br>
+
 ## 💻 Command line usage
 
 The basic **global command** is:
@@ -131,6 +133,8 @@ Info commands:
  -h, --help                  Display this help screen.
  -v, --version               Show version number.
 ```
+
+<br>
 
 ## 🔌 API usage
 

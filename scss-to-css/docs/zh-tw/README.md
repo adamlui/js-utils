@@ -46,6 +46,8 @@ $ npm install -D @adamlui/scss-to-css
 $ npm install @adamlui/scss-to-css
 ```
 
+<br>
+
 ## 💻 命令列使用
 
 基本的**全域命令**是：
@@ -130,6 +132,8 @@ $ scss-to-css input_folder output_folder
  -h, --help                  顯示幫助畫面。
  -v, --version               顯示版本號。
 ```
+
+<br>
 
 ## 🔌 API 使用
 

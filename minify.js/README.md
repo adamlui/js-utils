@@ -50,6 +50,8 @@ As a **runtime dependency** (e.g. for on-the-fly minification), from your projec
 $ npm install @adamlui/minify.js
 ```
 
+<br>
+
 ## 💻 Command line usage
 
 The basic **global command** is:
@@ -128,6 +130,8 @@ Info commands:
  -h, --help                  Display help screen.
  -v, --version               Show version number.
 ```
+
+<br>
 
 ## 🔌 API usage
 
