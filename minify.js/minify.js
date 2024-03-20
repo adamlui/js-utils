@@ -103,7 +103,7 @@ else { // run as CLI tool
         const matchedFlag = Object.keys(argRegex).find(flag => argRegex[flag].test(arg));
         if (matchedFlag) config[matchedFlag] = true;
         else {
-            console.error(`\n${br}ERROR: Arg '${ arg }' not recognized.${nc}`);
+            console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
             console.info(`\n${by}Valid arguments are below.${nc}`);
             printHelpScreen(['configOptions', 'infoCmds']);
             process.exit(1);
