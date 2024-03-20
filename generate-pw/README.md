@@ -79,6 +79,8 @@ console.log(passwords);
 // sample output: [ 'yilppxru', 'ckvkyjfp', 'zolcpyfb' ]
 ```
 
+**💡 Note:** If no `qty` arg is passed, just one password will be generated, returned as a string.
+
 #
 
 ### Available options
