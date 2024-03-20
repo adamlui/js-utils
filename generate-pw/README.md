@@ -78,7 +78,7 @@ Name | Description | Default Value
 `symbols` | Boolean, allow symbols in password. | `false`
 `lowercase` | Boolean, allow lowercase letters in password. | `true`
 `uppercase` | Boolean, allow uppercase letters in password. | `true`
-`strict` | Boolean, password must include at least one character from each included character set. | `false`
+`strict` | Boolean, require at least one character from each allowed character set in password. | `false`
 
 ##### _*Only available in [`generatePassword([options])`](#generatepasswordoptions) since [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) takes a `qty` argument_
 
