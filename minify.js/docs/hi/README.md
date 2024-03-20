@@ -52,6 +52,8 @@ $ npm install @adamlui/minify.js
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 💻 कमांड लाइन उपयोग
 
 मूल **वैश्विक कमांड** है:
@@ -136,6 +138,8 @@ $ minify-js input_folder output_folder
 <br>
 
 <br>
+
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🔌 API उपयोग
 
@@ -223,10 +227,15 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 💖 सहायता
 
 कृपया इस प्रोजेक्ट पर [GitHub ⭐](https://github.com/adamlui/js-utils) या [फंडिंग](https://github.com/sponsors/adamlui) देने पर विचार करें, अगर इससे आपको मदद मिली हो!
-<br><br>
+
+<br>
+
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🏛️ MIT लाइसेंस
 

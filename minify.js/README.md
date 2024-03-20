@@ -52,6 +52,8 @@ $ npm install @adamlui/minify.js
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 💻 Command line usage
 
 The basic **global command** is:
@@ -135,6 +137,8 @@ Info commands:
 ```
 
 <br>
+
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🔌 API usage
 
@@ -222,10 +226,15 @@ Name         | Desciption                                              | Default
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 💖 Support
 
 Please consider [giving a GitHub ⭐](https://github.com/adamlui/js-utils) or [funding](https://github.com/sponsors/adamlui) this project if it helped you!
-<br><br>
+
+<br>
+
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🏛️ MIT License
 

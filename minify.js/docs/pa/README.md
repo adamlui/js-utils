@@ -52,6 +52,8 @@ $ npm install @adamlui/minify.js
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 💻 ਕਮਾਂਡ ਲਾਈਨ ਦੀ ਵਰਤੋਂ
 
 ਮੂਲ **ਗਲੋਬਲ ਕਮਾਂਡ** ਹੈ:
@@ -133,6 +135,8 @@ $ minify-js input_folder output_folder
 ```
 
 <br>
+
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🔌 API ਵਰਤੋਂ
 
@@ -220,10 +224,15 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 💖 ਸਪੋਰਟ
 
 ਕਿਰਪਾ ਕਰਕੇ [ਇੱਕ GitHub ਦੇਣ ⭐](https://github.com/adamlui/js-utils) ਜਾਂ [ਫੰਡਿੰਗ](https://github.com/sponsors/adamlui) 'ਤੇ ਵਿਚਾਰ ਕਰੋ ਜੇਕਰ ਇਹ ਤੁਹਾਡੀ ਮਦਦ ਕਰਦਾ ਹੈ!
-<br><br>
+
+<br>
+
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🏛️ MIT ਲਾਇਸੈਂਸ
 

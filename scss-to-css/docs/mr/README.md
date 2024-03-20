@@ -48,6 +48,8 @@ $ npm install @adamlui/scss-to-css
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 💻 कमांड लाइन वापर
 
 मूलभूत **ग्लोबल कमांड** आहे:
@@ -137,6 +139,8 @@ $ scss-to-css input_folder output_folder
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 🔌 API वापर
 
 तुम्ही ECMAScript मॉड्यूल किंवा CommonJS मॉड्यूल या दोन्हीप्रमाणे, API पद्धती वापरण्यासाठी तुमच्या ॲपमध्ये **scss-to-css** देखील इंपोर्ट करू शकता.
@@ -219,10 +223,15 @@ scssToCSS.findSCSS(searchDir, { recursive: false });
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 💖 सपोर्ट
 
 कृपया [GitHub देणे ⭐](https://github.com/adamlui/js-utils) किंवा [निधी](https://github.com/sponsors/adamlui) या प्रकल्पाने तुम्हाला मदत केली असल्यास विचार करा!
-<br><br>
+
+<br>
+
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🏛️ MIT परवाना
 

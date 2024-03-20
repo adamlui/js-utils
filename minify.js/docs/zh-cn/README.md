@@ -52,6 +52,8 @@ $ npm install @adamlui/minify.js
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 💻 命令行使用
 
 基本的**全局命令**是：
@@ -134,6 +136,8 @@ $ minify-js input_folder output_folder
 ```
 
 <br>
+
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🔌 API 使用
 
@@ -221,10 +225,15 @@ minifyJS.findJS(searchDir, { recursive: false });
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 💖 支持
 
 如果这个项目对您有帮助，请考虑[给予 GitHub ⭐](https://github.com/adamlui/js-utils) 或[资助](https://github.com/sponsors/adamlui)！
-<br><br>
+
+<br>
+
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🏛️ MIT 许可证
 

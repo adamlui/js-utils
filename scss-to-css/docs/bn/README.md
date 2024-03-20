@@ -48,6 +48,8 @@ $ npm install @adamlui/scss-to-css
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 💻 কমান্ড লাইন ব্যবহার
 
 মৌলিক **গ্লোবাল কমান্ড** হল:
@@ -137,6 +139,8 @@ $ scss-to-css input_folder output_folder
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 🔌 API ব্যবহার
 
 আপনি ECMAScript মডিউল বা CommonJS মডিউল উভয় হিসাবে, এর API পদ্ধতিগুলি ব্যবহার করতে আপনার অ্যাপে **scss-to-css** আমদানি করতে পারেন।
@@ -219,10 +223,15 @@ scssToCSS.findSCSS(searchDir, { recursive: false });
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 💖 সমর্থন
 
 অনুগ্রহ করে বিবেচনা করুন [একটি GitHub প্রদান ⭐](https://github.com/adamlui/js-utils) বা [ফান্ডিং](https://github.com/sponsors/adamlui) যদি এটি আপনাকে সাহায্য করে!
-<br><br>
+
+<br>
+
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🏛️ MIT লাইসেন্স
 

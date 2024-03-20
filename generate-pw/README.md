@@ -23,6 +23,8 @@ $ npm install generate-pw
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 🔌 API usage
 
 **generate-pw** can be imported into your app as an ECMAScript module or a CommonJS module.
@@ -89,6 +91,8 @@ Name        | Type    | Description                                             
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 💻 Command line usage
 
 When installed globally, **generate-pw** can also be used from the command line. The basic command is:
@@ -121,10 +125,15 @@ Info commands:
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 💖 Support
 
 Please consider [giving a GitHub ⭐](https://github.com/adamlui/js-utils) or [funding](https://github.com/sponsors/adamlui) this project if it helped you!
-<br><br>
+
+<br>
+
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🏛️ MIT License
 

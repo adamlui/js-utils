@@ -48,6 +48,8 @@ $ npm install @adamlui/scss-to-css
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 💻 命令列使用
 
 基本的**全域命令**是：
@@ -137,6 +139,8 @@ $ scss-to-css input_folder output_folder
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 🔌 API 使用
 
 您也可以將 **scss-to-css** 匯入您的應用程式以使用其 API 方法，無論是作為 ECMAScript 模組還是 CommonJS 模組。
@@ -219,10 +223,15 @@ scssToCSS.findSCSS(searchDir, { recursive: false });
 
 <br>
 
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## 💖 支援
 
 如果這個專案對您有幫助，請考慮[給予 GitHub ⭐](https://github.com/adamlui/js-utils) 或[資助](https://github.com/sponsors/adamlui)！
-<br><br>
+
+<br>
+
+<img height=8px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 🏛️ MIT 许可证
 
