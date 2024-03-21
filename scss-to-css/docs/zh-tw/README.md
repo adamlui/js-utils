@@ -64,7 +64,7 @@ $ scss-to-css
 
 <img src="https://github.com/adamlui/js-utils/blob/main/scss-to-css/media/images/sample-output.png">
 
-**💡 筆記：** 預設也會產生來源映射，除非傳遞 `-S` 或 `--no-source-maps`。
+**💡 筆記：**預設也會產生來源映射，除非傳遞 `-S` 或 `--no-source-maps`。
 
 #
 
@@ -77,7 +77,7 @@ $ scss-to-css [input_path] [output_path]
 - `[input_path]`: SCSS 檔案或包含要編譯的 SCSS 檔案的目錄的路徑，相對於目前工作目錄。
 - `[output_path]`: 將儲存 CSS + 來源對應檔案的檔案或目錄的路徑，相對於原始檔案位置（如果未提供，則使用 `css/`）。
 
-**💡 注意：** 如果傳遞資料夾，檔案將被遞歸處理，除非傳遞 `-R` 或 `--no-recursion`。
+**💡 注意：**如果傳遞資料夾，檔案將被遞歸處理，除非傳遞 `-R` 或 `--no-recursion`。
 
 #
 
@@ -119,7 +119,7 @@ $ scss-to-css path/to/your/file.scss
 $ scss-to-css input_folder output_folder
 ```
 
-**💡 注意：** 除非傳遞 `-M` 或 `--no-minify` ，否則輸出 CSS 會被縮小。
+**💡 注意：**除非傳遞 `-M` 或 `--no-minify` ，否則輸出 CSS 會被縮小。
 
 #
 
