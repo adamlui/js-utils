@@ -243,7 +243,7 @@ else { // run as CLI tool
             ]
         };
         includeSections.forEach(section => { // print valid arg elems
-            if (sections[section]) sections[section].forEach(line => printHelpMsg(line)); });
+            sections[section]?.forEach(line => printHelpMsg(line)); });
     }
 
     function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
