@@ -133,7 +133,7 @@ Boolean options:
  -U, --no-uppercase          Disallow uppercase letters in password(s).
 
 Info commands:
- -h, --help                  Display this help screen.
+ -h, --help                  Display help screen.
  -v, --version               Show version number.
 ```
 

@@ -136,7 +136,7 @@ Config options:
  -q, --quiet                 Suppress all logging except errors.
 
 Info commands:
- -h, --help                  Display this help screen.
+ -h, --help                  Display help screen.
  -v, --version               Show version number.
 ```
 
