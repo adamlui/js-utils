@@ -191,7 +191,7 @@ console.log(minifyResults[1].code);
 minifyJS.minify(input, { dotFiles: true });
 ```
 
-可能的参数（及其默认设置）有：
+可用参数（及其默认设置）有：
 
 姓名         | 描述                                | 默认值
 -------------|------------------------------------|---------
@@ -214,7 +214,7 @@ minifyJS.minify(input, { dotFiles: true });
 minifyJS.findJS(searchDir, { recursive: false });
 ```
 
-可能的参数（及其默认设置）有：
+可用参数（及其默认设置）有：
 
 姓名         | 描述                                | 默认值
 -------------|------------------------------------|---------

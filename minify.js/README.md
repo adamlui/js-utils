@@ -192,7 +192,7 @@ Options are boolean, passed as object properties. For example:
 minifyJS.minify(input, { dotFiles: true });
 ```
 
-Possible parameters (and their default settings) are:
+Available parameters (and their default settings) are:
 
 Name         | Desciption                                              | Default value
 -------------|---------------------------------------------------------|---------------
@@ -215,7 +215,7 @@ Options are boolean, passed as object properties. For example:
 minifyJS.findJS(searchDir, { recursive: false });
 ```
 
-Possible parameters (and their default settings) are:
+Available parameters (and their default settings) are:
 
 Name         | Desciption                                              | Default value
 -------------|---------------------------------------------------------|---------------

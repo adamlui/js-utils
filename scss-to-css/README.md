@@ -191,7 +191,7 @@ Options are boolean, passed as object properties. For example:
 scssToCSS.compile(inputDir, { minify: false });
 ```
 
-Possible parameters (and their default settings) are:
+Available parameters (and their default settings) are:
 
 Name         | Desciption                                              | Default value
 -------------|---------------------------------------------------------|---------------
@@ -214,7 +214,7 @@ Options are boolean, passed as object properties. For example:
 scssToCSS.findSCSS(searchDir, { recursive: false });
 ```
 
-Possible parameters (and their default settings) are:
+Available parameters (and their default settings) are:
 
 Name         | Desciption                                              | Default value
 -------------|---------------------------------------------------------|---------------

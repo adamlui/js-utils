@@ -190,7 +190,7 @@ console.log(compileResults[1].code);
 scssToCSS.compile(inputDir, { minify: false });
 ```
 
-可能的参数（及其默认设置）有：
+可用参数（及其默认设置）有：
 
 姓名         | 描述                                | 默认值
 -------------|------------------------------------|---------
@@ -213,7 +213,7 @@ scssToCSS.compile(inputDir, { minify: false });
 scssToCSS.findSCSS(searchDir, { recursive: false });
 ```
 
-可能的参数（及其默认设置）有：
+可用参数（及其默认设置）有：
 
 姓名         | 描述                                | 默认值
 -------------|------------------------------------|---------
