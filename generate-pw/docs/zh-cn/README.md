@@ -101,7 +101,7 @@ console.log(passwords);
 
 ### `strictify(password[, requiredCharTypes])`
 
-修改指定的 `password`，以使用传递的每个 `requiredCharTypes` 元素中的至少一个字符，返回一个字符串。
+修改指定的 `password`，以使用传递的每个 `requiredCharTypes` 元素中的至少一个字符，返回一个字符串：
 
 ```js
 const password = 'abcdef',

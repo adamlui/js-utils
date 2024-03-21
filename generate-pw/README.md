@@ -101,7 +101,7 @@ See: [Available options](#available-options-for-generate-functions)
 
 ### `strictify(password[, requiredCharTypes])`
 
-Modifies `password` given to use at least one character of each `requiredCharTypes` element passed, returning a string.
+Modifies `password` given to use at least one character of each `requiredCharTypes` element passed, returning a string:
 
 ```js
 const password = 'abcdef',
@@ -119,7 +119,12 @@ Available `requiredCharTypes` are: `['number', 'symbol', 'lower', 'upper']`
 
 ### `validateStrength(password)`
 
-Validates the strength of a password, returning an object containing `strengthScore` (1—100) + `recommendations` array.
+Validates the strength of a password, returning an object containing:
+- `strengthScore` (1—100)
+- `recommendations` array
+- `isGood` boolean (`true` if `strengthScore` >= 80) 
+
+Example:
 
 ```js
 const password = 'AawiddsE',
@@ -130,7 +135,8 @@ console.log(pwStrength);
 /* outputs:
 {
   strengthScore: 60,
-  recommendations: [ 'Include at least one number.', 'Include at least one symbol.' ]
+  recommendations: [ 'Include at least one number.', 'Include at least one symbol.' ],
+  isGood: false
 }
 */
 ```
