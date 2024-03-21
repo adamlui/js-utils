@@ -9,32 +9,36 @@
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-## 🏛️ MIT License
+### <img height=21px src="https://i.imgur.com/kvf7fXm.png"></img> [generate-ip](generate-ip)
 
-**Copyright © 2023–2024 [Adam Lui](https://github.com/adamlui) & contributors**
+> Randomly generate fake IPv4 addresses.
+<br>[Install](generate-ip#-installation) /
+[Readme](generate-ip#readme) /
+[Discuss](https://github.com/adamlui/js-utils/discussions)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+### [🔒 generate-pw](generate-pw)
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+> Randomly generate cryptographically-secure passwords.
+<br>[Install](generate-pw#-installation) /
+[Readme](generate-pw#readme) /
+[Discuss](https://github.com/adamlui/js-utils/discussions)
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-<br><br>
+### [🖼️ img-to-webp](img-to-webp)
 
-## 🛡️ Security Policy
+> Recursively convert images to WEBP files.
+<br>[Download](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
+[Discuss](https://github.com/adamlui/js-utils/discussions)
 
-If you find a vulnerability, please open a [draft security advisory](https://github.com/adamlui/js-utils/security/advisories/new).
+### [</> minify.js](minify.js)
 
-Pull requests are also welcome, but for safety reasons, send an email to <adam@kudoai.com> and wait for a response before making it public.
+> Recursively minify all JavaScript files.
+<br>[Install](minify.js#-installation) /
+[Readme](minify.js#readme) /
+[Discuss](https://github.com/adamlui/js-utils/discussions)
 
+### [{ } scss-to-css](scss-to-css)
+
+> Recursively compile all SCSS files into minified CSS.
+<br>[Install](scss-to-css#-installation) /
+[Readme](scss-to-css#readme) /
+[Discuss](https://github.com/adamlui/js-utils/discussions)
