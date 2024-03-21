@@ -62,34 +62,10 @@ function generatePassword(options = {}) {
         }
 
         // Enforce strict mode if enabled
-        if (options.strict) { 
+        if (options.strict) {
             const charTypes = ['number', 'symbol', 'lower', 'upper'],
                   requiredCharTypes = charTypes.filter(charType => options[charType + 's'] || options[charType + 'case']);
-
-            // Init flags
-            for (const charType of requiredCharTypes)
-                global['has' + charType.charAt(0).toUpperCase() + charType.slice(1)] = false;
-            for (let i = 0; i < password.length; i++)
-                for (const charType of requiredCharTypes)
-                    if ((charsets[charType] || charsets[charType + 's']).includes(password.charAt(i)))
-                        global['has' + charType.charAt(0).toUpperCase() + charType.slice(1)] = true;
-
-            // Modify password if necessary
-            const maxReplacements = Math.min(password.length, requiredCharTypes.length),
-                  replacedPositions = []; let replacementCnt = 0;
-            for (const charType of requiredCharTypes) {
-                if (replacementCnt < maxReplacements) {
-                    if (!global['has' + charType.charAt(0).toUpperCase() + charType.slice(1)]) {
-                        let replacementPos;
-                        do replacementPos = randomInt(0, password.length); // pick random pos
-                        while (replacedPositions.includes(replacementPos)); // check if pos already replaced
-                        replacedPositions.push(replacementPos); // track new replacement pos
-                        const replacementCharSet = charsets[charType] || charsets[charType + 's'];
-                        password = password.substring(0, replacementPos) // perform actual replacement
-                                 + replacementCharSet.charAt(randomInt(0, replacementCharSet.length))
-                                 + password.substring(replacementPos + 1);
-                        replacementCnt++;
-            }}}
+            password = strictify(password, requiredCharTypes);
         }
 
         return password;
@@ -103,6 +79,36 @@ function generatePasswords(qty, options) {
     const passwords = [];
     for (let i = 0; i < qty; i++) passwords.push(generatePassword(options));
     return passwords;
+}
+
+function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', 'upper']) {
+
+    // Init flags
+    for (const charType of requiredCharTypes)
+        global['has' + charType.charAt(0).toUpperCase() + charType.slice(1)] = false;
+    for (let i = 0; i < password.length; i++)
+        for (const charType of requiredCharTypes)
+            if ((charsets[charType] || charsets[charType + 's']).includes(password.charAt(i)))
+                global['has' + charType.charAt(0).toUpperCase() + charType.slice(1)] = true;
+
+    // Modify password if necessary
+    const maxReplacements = Math.min(password.length, requiredCharTypes.length),
+          replacedPositions = []; let replacementCnt = 0;
+    for (const charType of requiredCharTypes) {
+        if (replacementCnt < maxReplacements) {
+            if (!global['has' + charType.charAt(0).toUpperCase() + charType.slice(1)]) {
+                let replacementPos;
+                do replacementPos = randomInt(0, password.length); // pick random pos
+                while (replacedPositions.includes(replacementPos)); // check if pos already replaced
+                replacedPositions.push(replacementPos); // track new replacement pos
+                const replacementCharSet = charsets[charType] || charsets[charType + 's'];
+                password = password.substring(0, replacementPos) // perform actual replacement
+                         + replacementCharSet.charAt(randomInt(0, replacementCharSet.length))
+                         + password.substring(replacementPos + 1);
+                replacementCnt++;
+    }}}
+
+    return password;
 }
 
 function validateStrength(password) {
@@ -138,7 +144,7 @@ function validateStrength(password) {
 }
 
 // EXPORT functions if script was required
-if (require.main !== module) module.exports = { generatePassword, generatePasswords, validateStrength };
+if (require.main !== module) module.exports = { generatePassword, generatePasswords, strictify, validateStrength };
 
 else { // run as CLI tool
 

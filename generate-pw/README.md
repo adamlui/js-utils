@@ -87,6 +87,24 @@ See: [Available options](#available-options-for-generate-functions)
 
 #
 
+### `strictify(password[, requiredCharTypes])`
+
+Modifies `password` given to use at least one character of each `requiredCharTypes` element passed, returning a string.
+
+```js
+const password = 'abcdef',
+      strictPW = pw.strictify(password, ['numbers', 'symbols']);
+
+console.log(strictPW);
+// sample output: 'a!c2eR'
+```
+
+Available `requiredCharTypes` are: `['number', 'symbol', 'lower', 'upper']`
+
+**💡 Note:** If no `requiredCharTypes` array is passed, all available types will be required.
+
+#
+
 ### `validateStrength(password)`
 
 Validates the strength of a password, returning an object containing `strengthScore` (out of 100) + `recommendations` array.
