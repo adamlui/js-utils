@@ -119,7 +119,7 @@ console.log(strictPW);
 
 ### `validateStrength(password)`
 
-驗證密碼的強度，傳回一個包含 `strengthScore`（滿分 100）+ `recommendations` 陣列的物件。
+驗證密碼的強度，傳回一個包含 `strengthScore`（1—100）+ `recommendations` 陣列的物件。
 
 ```js
 const password = 'AawiddsE',

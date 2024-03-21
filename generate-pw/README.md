@@ -119,7 +119,7 @@ Available `requiredCharTypes` are: `['number', 'symbol', 'lower', 'upper']`
 
 ### `validateStrength(password)`
 
-Validates the strength of a password, returning an object containing `strengthScore` (out of 100) + `recommendations` array.
+Validates the strength of a password, returning an object containing `strengthScore` (1—100) + `recommendations` array.
 
 ```js
 const password = 'AawiddsE',
