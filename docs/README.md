@@ -9,34 +9,34 @@
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-### <img height=21px src="https://i.imgur.com/kvf7fXm.png"></img> [generate-ip](generate-ip)
+### <img height=21px src="https://i.imgur.com/kvf7fXm.png"></img> [generate-ip](../generate-ip)
 
 > Randomly generate fake IPv4 addresses.
 <br>[Install](../generate-ip#-installation) /
 [Readme](../generate-ip#readme) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
-### [🔒 generate-pw](generate-pw)
+### [🔒 generate-pw](../generate-pw)
 
 > Randomly generate cryptographically-secure passwords.
 <br>[Install](../generate-pw#-installation) /
 [Readme](../generate-pw#readme) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
-### [🖼️ img-to-webp](img-to-webp)
+### [🖼️ img-to-webp](../img-to-webp)
 
 > Recursively convert images to WEBP files.
 <br>[Download](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
-### [</> minify.js](minify.js)
+### [</> minify.js](../minify.js)
 
 > Recursively minify all JavaScript files.
 <br>[Install](../minify.js#-installation) /
 [Readme](../minify.js#readme) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
-### [{ } scss-to-css](scss-to-css)
+### [{ } scss-to-css](../scss-to-css)
 
 > Recursively compile all SCSS files into minified CSS.
 <br>[Install](../scss-to-css#-installation) /
