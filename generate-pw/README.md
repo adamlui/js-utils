@@ -1,3 +1,15 @@
+<div align="right">
+    <h6>
+        <picture>
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/white/icon32.svg">
+            <img height=14 src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/black/icon32.svg">
+        </picture>
+        &nbsp;English |
+        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/zh-cn#readme">简体中文</a> |
+        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/zh-tw#readme">繁體中文</a>
+    </h6>
+</div>
+
 # > generate-pw
 
 ### Randomly generate cryptographically-secure passwords.
