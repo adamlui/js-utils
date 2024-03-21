@@ -120,7 +120,7 @@ Available `requiredCharTypes` are: `['number', 'symbol', 'lower', 'upper']`
 ### `validateStrength(password)`
 
 Validates the strength of a password, returning an object containing:
-- `strengthScore` (1—100)
+- `strengthScore` (1–100)
 - `recommendations` array
 - `isGood` boolean (`true` if `strengthScore` >= 80) 
 
