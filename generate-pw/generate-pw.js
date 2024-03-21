@@ -140,7 +140,7 @@ function validateStrength(password) {
         strengthScore += ( // +20 per char type included
             charCnts[charType] >= strengthCriteria['min' + charType.charAt(0).toUpperCase() + charType.slice(1)]) ? 20 : 0;
 
-    return { strengthScore, recommendations };
+    return { strengthScore, recommendations, isGood: strengthScore >= 80 };
 }
 
 // EXPORT functions if script was required
