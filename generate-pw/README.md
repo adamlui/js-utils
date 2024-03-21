@@ -67,6 +67,8 @@ console.log(passwords);
 
 **💡 Note:** If no options are passed, passwords will be 8-chars long, consisting of upper/lower cased letters.
 
+See: [Available options](#available-options-for-generate-functions)
+
 #
 
 ### `generatePasswords(qty[, options])`
@@ -81,11 +83,33 @@ console.log(passwords);
 
 **💡 Note:** If no `qty` arg is passed, just one password will be generated, returned as a string.
 
+See: [Available options](#available-options-for-generate-functions)
+
 #
 
-### Available options
+### `validateStrength(password)`
 
-Any of these can be passed into the options object for each function:
+Validates the strength of a password, returning an object containing `strengthScore` (out of 100) + `recommendations` array.
+
+```js
+const password = 'AawiddsE',
+      pwStrength = pw.validateStrength(password);
+
+console.log(pwStrength);
+
+/* outputs:
+{
+  strengthScore: 60,
+  recommendations: [ 'Include at least one number.', 'Include at least one symbol.' ]
+}
+*/
+```
+
+#
+
+### Available options for `generate*` functions
+
+Any of these can be passed into the options object for each `generate* function:
 
 Name        | Type    | Description                                                                    | Default Value
 ------------|---------|--------------------------------------------------------------------------------|---------------

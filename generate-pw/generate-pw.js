@@ -105,8 +105,40 @@ function generatePasswords(qty, options) {
     return passwords;
 }
 
+function validateStrength(password) {
+    const strengthCriteria = { minLength: 8, minLower: 1, minUpper: 1, minNumber: 1, minSymbol: 1 };
+
+    // Count occurrences of each char type
+    const charCnts = { 'lower': 0, 'upper': 0, 'number': 0, 'symbol': 0 };
+    for (let i = 0; i < password.length; i++) {
+        const char = password[i];
+        for (const charType of Object.keys(charCnts))
+            if ((charsets[charType] || charsets[charType + 's']).includes(char))
+                charCnts[charType]++;
+    }
+
+    // Check criteria + add recommendations
+    const recommendations = [];
+    if (password.length < strengthCriteria.minLength)
+        recommendations.push(`Make it at least ${ strengthCriteria.minLength } characters long.`);
+    for (const charType of Object.keys(charCnts))
+        if (charCnts[charType] < strengthCriteria['min' + charType.charAt(0).toUpperCase() + charType.slice(1)])
+            recommendations.push('Include at least one ' + charType
+                + `${ ['upper', 'lower'].includes(charType) ? 'case letter' : '' }.`);
+
+    // Calculate strength score based on counts and criteria
+    let strengthScore = 0;
+    strengthScore += ( // +20 for satisfying min length
+        password.length >= strengthCriteria.minLength) ? 20 : 0;
+    for (const charType of Object.keys(charCnts))
+        strengthScore += ( // +20 per char type included
+            charCnts[charType] >= strengthCriteria['min' + charType.charAt(0).toUpperCase() + charType.slice(1)]) ? 20 : 0;
+
+    return { strengthScore, recommendations };
+}
+
 // EXPORT functions if script was required
-if (require.main !== module) module.exports = { generatePassword, generatePasswords };
+if (require.main !== module) module.exports = { generatePassword, generatePasswords, validateStrength };
 
 else { // run as CLI tool
 
