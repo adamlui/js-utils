@@ -119,7 +119,12 @@ console.log(strictPW);
 
 ### `validateStrength(password)`
 
-验证密码的强度，返回一个包含 `strengthScore`（1—100）+ `recommendations` 数组的对象。
+验证密码的强度，返回一个包含以下内容的对象：
+- `strengthScore` (1—100)
+- `recommendations` 大批
+- `isGood` 布尔值 (`true` 如果 `strengthScore` >= 80) 
+
+Example:
 
 ```js
 const password = 'AawiddsE',
@@ -130,7 +135,8 @@ console.log(pwStrength);
 /* 输出：
 {
   strengthScore: 60,
-  recommendations: [ 'Include at least one number.', 'Include at least one symbol.' ]
+  recommendations: [ 'Include at least one number.', 'Include at least one symbol.' ],
+  isGood: false
 }
 */
 ```
