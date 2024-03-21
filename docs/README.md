@@ -40,3 +40,9 @@
 <br>[Install](../scss-to-css#-installation) /
 [Readme](../scss-to-css#readme) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
+
+<a href="https://github.com/adamlui/js-utils/releases">**Latest releases**</a> /
+<a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
+<a href="#%EF%B8%8F-javascript-utilities">Back to top ↑</a>
