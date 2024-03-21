@@ -125,9 +125,9 @@ console.log(pwStrength);
 
 #
 
-### Available options for `generate*` functions
+### Available options for `generate*()` functions
 
-Any of these can be passed into the options object for each `generate* function:
+Any of these can be passed into the options object for each `generate*()` function:
 
 Name        | Type    | Description                                                                    | Default Value
 ------------|---------|--------------------------------------------------------------------------------|---------------
