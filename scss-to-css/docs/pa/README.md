@@ -10,7 +10,8 @@
         <a href="../zh-tw#readme">繁體中文</a> |
         <a href="../hi#readme">हिंदी</a> |
         <a href="../bn#readme">বাংলা</a> |
-        <a href="../mr#readme">मराठी</a>
+        <a href="../mr#readme">मराठी</a> |
+        <a href="../es#readme">Español</a>
     </h6>
 </div>
 

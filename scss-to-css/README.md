@@ -10,7 +10,8 @@
         <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/hi#readme">हिंदी</a> |
         <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/bn#readme">বাংলা</a> |
         <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/mr#readme">मराठी</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/pa#readme">ਪੰਜਾਬੀ</a>
+        <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/pa#readme">ਪੰਜਾਬੀ</a> |
+        <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/es#readme">Español</a>
     </h6>
 </div>
 
