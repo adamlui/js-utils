@@ -12,15 +12,15 @@
 ### <img height=21px src="https://i.imgur.com/kvf7fXm.png"></img> [generate-ip](generate-ip)
 
 > Randomly generate fake IPv4 addresses.
-<br>[Install](generate-ip#-installation) /
-[Readme](generate-ip#readme) /
+<br>[Install](../generate-ip#-installation) /
+[Readme](../generate-ip#readme) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
 ### [🔒 generate-pw](generate-pw)
 
 > Randomly generate cryptographically-secure passwords.
-<br>[Install](generate-pw#-installation) /
-[Readme](generate-pw#readme) /
+<br>[Install](../generate-pw#-installation) /
+[Readme](../generate-pw#readme) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
 ### [🖼️ img-to-webp](img-to-webp)
@@ -32,13 +32,13 @@
 ### [</> minify.js](minify.js)
 
 > Recursively minify all JavaScript files.
-<br>[Install](minify.js#-installation) /
-[Readme](minify.js#readme) /
+<br>[Install](../minify.js#-installation) /
+[Readme](../minify.js#readme) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
 ### [{ } scss-to-css](scss-to-css)
 
 > Recursively compile all SCSS files into minified CSS.
-<br>[Install](scss-to-css#-installation) /
-[Readme](scss-to-css#readme) /
+<br>[Install](../scss-to-css#-installation) /
+[Readme](../scss-to-css#readme) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
