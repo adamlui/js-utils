@@ -120,7 +120,7 @@ $ generate-pw
 ### Command line options
 
 ```
-Argument options:
+Parameter options:
  --length=n                  Generate password(s) of n length.
  --qty=n                     Generate n password(s).
  --charset=chars             Only include chars in password(s).
