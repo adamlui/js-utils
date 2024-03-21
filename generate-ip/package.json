@@ -1,0 +1,43 @@
+{
+  "name": "generate-ip",
+  "version": "1.0.0",
+  "description": "Randomly generate fake IPv4 addresses.",
+  "author": {
+    "name": "Adam Lui",
+    "email": "adam@kudoai.com",
+    "url": "https://github.com/adamlui"
+  },
+  "homepage": "https://github.com/adamlui/js-utils",
+  "license": "MIT",
+  "main": "generate-ip.js",
+  "bin": {
+    "generateip": "generate-ip.js",
+    "generate-ip": "generate-ip.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamlui/js-utils.git"
+  },
+  "keywords": [
+    "ip",
+    "generator",
+    "unique",
+    "generate",
+    "api",
+    "cli",
+    "address",
+    "ipv4",
+    "ipv6",
+    "mac"
+  ],
+  "bugs": {
+    "url": "https://github.com/adamlui/js-utils/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/adamlui"
+  }
+}

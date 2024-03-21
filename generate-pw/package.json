@@ -31,7 +31,9 @@
     "password",
     "generator",
     "unique",
-    "generate"
+    "generate",
+    "api",
+    "cli"
   ],
   "bugs": {
     "url": "https://github.com/adamlui/js-utils/issues"
