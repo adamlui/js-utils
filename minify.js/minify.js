@@ -20,9 +20,8 @@ function findJS(searchDir, options = {}) {
         'findJS() error: 1st arg `searchDir` must be a string.');
     else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir);
-        if (!fs.existsSync(path.resolve(process.cwd(), searchDir)))
-            return console.error('findJS() error:'
-                + ' 1st arg `searchDir` must be an existing directory.'
+        if (!fs.existsSync(searchPath)) return console.error(
+            'findJS() error: 1st arg `searchDir` must be an existing directory.'
                 + `\n'${ searchPath }' does not exist.`);
     }
 
