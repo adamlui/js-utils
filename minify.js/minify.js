@@ -76,7 +76,8 @@ function minify(input, options = {}) {
             if (options.verbose) console.info(`Minifying ${ input }...`);
             const minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions);
             if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
-            return { code: minifyResult.code, srcPath: input, error: minifyResult.error };
+            return { code: minifyResult.code, srcPath: path.resolve(process.cwd(), input),
+                     error: minifyResult.error };
         } else { // dir path passed
             return findJS(input, { recursive: options.recursive, verbose: options.verbose,
                                    dotFolders: options.dotFolders, dotFiles: options.dotFiles 
