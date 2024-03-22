@@ -63,9 +63,8 @@ function compile(inputPath, options = {}) {
     options = { ...defaultOptions, ...options };
 
     // Validate inputPath
-    if (typeof inputPath !== 'string')
-        return console.error('ERROR:'
-            + ' First argument must be a string representing a file/folder path.');
+    if (typeof inputPath !== 'string') return console.error(
+        'compile() error: Arg `inputPath` must be a string.');
 
     // Compile SCSS based on inputPath
     const compileOptions = { style: options.minify ? 'compressed' : 'expanded', sourceMap: options.sourceMaps };
