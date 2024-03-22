@@ -65,9 +65,8 @@ function minify(input, options = {}) {
     options = { ...defaultOptions, ...options };
 
     // Validate input
-    if (typeof input !== 'string')
-        return console.error('ERROR:'
-            + ' First argument must be a string of source code or file/folder path.');
+    if (typeof input !== 'string') return console.error(
+        'minify() error: Arg `inputPath` must be a string.');
 
     // Minify JS based on input
     const minifyOptions = { mangle: options.mangle ? { toplevel: true } : false };
