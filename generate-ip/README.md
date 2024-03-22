@@ -73,7 +73,7 @@ console.log(ipIsValid); // outputs `true`
 
 ## 💻 Command line usage
 
-When installed globally, **generate-ip** can also be used from the command line. The basic command is:
+When installed [globally](#-installation), **generate-ip** can also be used from the command line. The basic command is:
 
 ```
 $ generate-ip
