@@ -5,8 +5,8 @@
             <img height=14 src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/black/icon32.svg">
         </picture>
         &nbsp;English |
-        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/zh-cn#readme">简体中文</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/zh-tw#readme">繁體中文</a>
+        <a href="https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/zh-cn#readme">简体中文</a> |
+        <a href="https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/zh-tw#readme">繁體中文</a>
     </h6>
 </div>
 
