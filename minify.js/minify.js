@@ -93,7 +93,7 @@ function minify(input, options = {}) {
         if (options.verbose) console.info('Minifying passed source code...');
         const minifyResult = uglifyJS.minify(input, minifyOptions);
         if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
-        return { code: minifyResult.code, srcPath: input, error: minifyResult.error };
+        return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error };
     }
 }
 
