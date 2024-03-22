@@ -13,6 +13,16 @@ function findSCSS(searchDir, options = {}) {
     const defaultOptions = { recursive: true, verbose: true, dotFolders: false };
     options = { ...defaultOptions, ...options };
 
+    // Validate searchDir
+    if (!searchDir) return console.error('findSCSS() error: Please supply a `searchDir` as 1st arg.');
+    else { // verify searchDir path existence
+        const searchPath = path.resolve(process.cwd(), searchDir);
+        if (!fs.existsSync(path.resolve(process.cwd(), searchDir)))
+            return console.error('findSCSS() error:'
+                + ' 1st argument `searchDir` must be an existing directory.'
+                + `\n'${ searchPath }' does not exist.`);
+    }
+
     // Search for SCSS
     const dirFiles = fs.readdirSync(searchDir), scssFiles = [];
     if (options.verbose && !options.isRecursing) console.info('\nSearching for SCSS files...');
