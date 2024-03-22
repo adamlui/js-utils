@@ -23,7 +23,7 @@ function isValidIPv4(address) {
     return true;
 }
 
-// EXPORT functions if script was required
+// EXPORT main functions if script was required
 if (require.main !== module) module.exports = { generateIPv4, isValidIPv4 };
 
 else { // run as CLI utility

@@ -143,10 +143,10 @@ function validateStrength(password) {
     return { strengthScore, recommendations, isGood: strengthScore >= 80 };
 }
 
-// EXPORT functions if script was required
+// EXPORT main functions if script was required
 if (require.main !== module) module.exports = { generatePassword, generatePasswords, strictify, validateStrength };
 
-else { // run as CLI tool
+else { // run as CLI utility
 
     // Init UI colors
     const nc = '\x1b[0m',    // no color

@@ -70,10 +70,10 @@ function compile(inputPath, options = {}) {
         + `\n'${ inputPath }' does not exist.`);
 }
 
-// EXPORT functions if script was required
+// EXPORT main functions if script was required
 if (require.main !== module) module.exports = { compile, findSCSS };
 
-else { // run as CLI tool
+else { // run as CLI utility
 
     // Init UI colors
     const nc = '\x1b[0m',    // no color
