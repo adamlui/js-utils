@@ -93,7 +93,8 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
 
     // Modify password if necessary
     const maxReplacements = Math.min(password.length, requiredCharTypes.length),
-          replacedPositions = []; let replacementCnt = 0;
+          replacedPositions = [];
+    let replacementCnt = 0, strictPW = password;
     for (const charType of requiredCharTypes) {
         if (replacementCnt < maxReplacements) {
             if (!global['has' + charType.charAt(0).toUpperCase() + charType.slice(1)]) {
@@ -102,13 +103,13 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
                 while (replacedPositions.includes(replacementPos)); // check if pos already replaced
                 replacedPositions.push(replacementPos); // track new replacement pos
                 const replacementCharSet = charsets[charType] || charsets[charType + 's'];
-                password = password.substring(0, replacementPos) // perform actual replacement
+                strictPW = strictPW.substring(0, replacementPos) // perform actual replacement
                          + replacementCharSet.charAt(randomInt(0, replacementCharSet.length))
-                         + password.substring(replacementPos + 1);
+                         + strictPW.substring(replacementPos + 1);
                 replacementCnt++;
     }}}
 
-    return password;
+    return strictPW;
 }
 
 function validateStrength(password) {
