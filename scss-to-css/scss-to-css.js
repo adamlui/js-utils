@@ -190,7 +190,7 @@ else { // run as CLI tool
     // Define LOGGING functions
 
     function printHelpSections(includeSections = ['cmdFormat', 'pathArgs', 'configOptions', 'infoCmds']) {
-        const sections = {
+        const helpSections = {
             'cmdFormat': [
                 `\n${by}scss-to-css [inputPath] [outputPath] [options]${nc}`
             ],
@@ -220,7 +220,7 @@ else { // run as CLI tool
             ]
         };
         includeSections.forEach(section => { // print valid arg elems
-            sections[section]?.forEach(line => printHelpMsg(line)); });
+            helpSections[section]?.forEach(line => printHelpMsg(line)); });
 
         function printHelpMsg(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
             const terminalWidth = process.stdout.columns || 80,

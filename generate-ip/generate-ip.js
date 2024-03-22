@@ -68,7 +68,7 @@ else { // run as CLI utility
         console.log(bw + generateIPv4() + nc);
 
     function printHelpSections(includeSections = ['cmdFormat', 'formatOptions', 'infoCmds']) {
-        const sections = {
+        const helpSections = {
             'cmdFormat': [
                 `\n${by}generate-ip [commands]${nc}`
             ],
@@ -79,7 +79,7 @@ else { // run as CLI utility
             ]
         };
         includeSections.forEach(section => { // print valid arg elems
-            sections[section]?.forEach(line => printHelpMsg(line)); });
+            helpSections[section]?.forEach(line => printHelpMsg(line)); });
 
         function printHelpMsg(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
             const terminalWidth = process.stdout.columns || 80,
