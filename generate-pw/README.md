@@ -108,7 +108,7 @@ const password = 'abcdef',
       strictPW = pw.strictify(password, ['numbers', 'symbols']);
 
 console.log(strictPW);
-// sample output: 'a!c2eR'
+// sample output: 'a!c2ef'
 ```
 
 Available `requiredCharTypes` are: `['number', 'symbol', 'lower', 'upper']`

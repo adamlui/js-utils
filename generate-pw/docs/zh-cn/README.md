@@ -108,7 +108,7 @@ const password = 'abcdef',
       strictPW = pw.strictify(password, ['numbers', 'symbols']);
 
 console.log(strictPW);
-// 示例输出：'a!c2eR'
+// 示例输出：'a!c2ef'
 ```
 
 可用的 `requiredCharTypes` 有：`['number', 'symbol', 'lower', 'upper']`
