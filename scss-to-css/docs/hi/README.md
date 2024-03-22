@@ -210,8 +210,16 @@ scssToCSS.compile(inputDir, { minify: false });
 विकल्प बूलियन हैं, ऑब्जेक्ट गुणों के रूप में पारित किए गए हैं। उदाहरण के लिए:
 
 ```js
-// बिल्कुल `searchDir` में SCSS फ़ाइलों के लिए फ़ाइलपथ युक्त सरणी लौटाता है
-scssToCSS.findSCSS(searchDir, { recursive: false });
+// SCSS फ़ाइलों को बिल्कुल `assets/scss` में खोजें:
+const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
+console.log(searchResults);
+
+/* आउटपुट:
+Searching for SCSS files...
+Search complete. 2 files found.
+[ 'E:\\js\\utils\\minify.js\\assets\\scss\\foo.scss',
+  'E:\\js\\utils\\minify.js\\assets\\scss\\bar.scss' ]
+*/
 ```
 
 उपलब्ध पैरामीटर (और उनकी डिफ़ॉल्ट सेटिंग्स) हैं:

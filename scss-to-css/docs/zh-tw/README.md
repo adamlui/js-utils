@@ -211,8 +211,16 @@ scssToCSS.compile(inputDir, { minify: false });
 選項是布林值，作為物件屬性傳遞。 例如：
 
 ```js
-// 傳回包含恰好位於 `searchDir` 中的 SCSS 檔案的檔案路徑的陣列
-scssToCSS.findSCSS(searchDir, { recursive: false });
+// 在 `assets/scss` 中搜尋 SCSS 檔案：
+const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
+console.log(searchResults);
+
+/* 輸出：
+Searching for SCSS files...
+Search complete. 2 files found.
+[ 'E:\\js\\utils\\minify.js\\assets\\scss\\foo.scss',
+  'E:\\js\\utils\\minify.js\\assets\\scss\\bar.scss' ]
+*/
 ```
 
 可用的參數（及其預設設定）是：

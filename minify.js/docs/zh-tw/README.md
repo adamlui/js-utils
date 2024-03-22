@@ -210,8 +210,16 @@ minifyJS.minify(input, { dotFiles: true });
 選項是布林值，作為物件屬性傳遞。 例如：
 
 ```js
-// 傳回包含精確位於 `searchDir` 中的未縮小 JS 檔案的檔案路徑的陣列
-minifyJS.findJS(searchDir, { recursive: false });
+// 在 `assets/js` 中搜尋未縮小的 JavaScript 檔案：
+const searchResults = minifyJS.findJS('assets/js', { recursive: false });
+console.log(searchResults);
+
+/* 輸出：
+Searching for unminified JS files...
+Search complete. 2 files found.
+[ 'E:\\js\\utils\\minify.js\\assets\\js\\foo.js',
+  'E:\\js\\utils\\minify.js\\assets\\js\\bar.js' ]
+*/
 ```
 
 可用的參數（及其預設設定）是：

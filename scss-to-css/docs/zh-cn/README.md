@@ -211,8 +211,16 @@ scssToCSS.compile(inputDir, { minify: false });
 选项是布尔值，作为对象属性传递。 例如：
 
 ```js
-// 返回包含恰好位于 `searchDir` 中的 SCSS 文件的文件路径的数组
-scssToCSS.findSCSS(searchDir, { recursive: false });
+// 在 `assets/scss` 中搜索 SCSS 文件：
+const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
+console.log(searchResults);
+
+/* 输出：
+Searching for SCSS files...
+Search complete. 2 files found.
+[ 'E:\\js\\utils\\minify.js\\assets\\scss\\foo.scss',
+  'E:\\js\\utils\\minify.js\\assets\\scss\\bar.scss' ]
+*/
 ```
 
 可用参数（及其默认设置）有：

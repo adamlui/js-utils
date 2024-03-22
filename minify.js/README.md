@@ -211,8 +211,16 @@ Searches for all unminified JavaScript files within the `searchDir` string passe
 Options are boolean, passed as object properties. For example:
 
 ```js
-// Returns array containing filepaths to unminified JS files in exactly `searchDir`
-minifyJS.findJS(searchDir, { recursive: false });
+// Search for unminified JS files in exactly `assets/js`:
+const searchResults = minifyJS.findJS('assets/js', { recursive: false });
+console.log(searchResults);
+
+/* outputs:
+Searching for unminified JS files...
+Search complete. 2 files found.
+[ 'E:\\js\\utils\\minify.js\\assets\\js\\foo.js',
+  'E:\\js\\utils\\minify.js\\assets\\js\\bar.js' ]
+*/
 ```
 
 Available parameters (and their default settings) are:

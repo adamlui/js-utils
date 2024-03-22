@@ -211,8 +211,16 @@ scssToCSS.compile(inputDir, { minify: false });
 বিকল্পগুলি হল বুলিয়ান, অবজেক্টের বৈশিষ্ট্য হিসাবে পাস করা হয়েছে। উদাহরণ স্বরূপ:
 
 ```js
-// ঠিক `searchDir`-এ SCSS ফাইলে ফাইলপাথ সমন্বিত অ্যারে ফেরত দেয়
-scssToCSS.findSCSS(searchDir, { recursive: false });
+// ঠিক `assets/scss`-এ SCSS ফাইল অনুসন্ধান করুন:
+const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
+console.log(searchResults);
+
+/* আউটপুট:
+Searching for SCSS files...
+Search complete. 2 files found.
+[ 'E:\\js\\utils\\minify.js\\assets\\scss\\foo.scss',
+  'E:\\js\\utils\\minify.js\\assets\\scss\\bar.scss' ]
+*/
 ```
 
 উপলব্ধ প্যারামিটার (এবং তাদের ডিফল্ট সেটিংস) হল:

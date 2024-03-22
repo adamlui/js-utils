@@ -211,8 +211,16 @@ scssToCSS.compile(inputDir, { minify: false });
 ਵਿਕਲਪ ਬੂਲੀਅਨ ਹਨ, ਆਬਜੈਕਟ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਵਜੋਂ ਪਾਸ ਕੀਤੇ ਗਏ ਹਨ। ਉਦਾਹਰਣ ਲਈ:
 
 ```js
-// ਅਸਲ ਵਿੱਚ `searchDir` ਵਿੱਚ SCSS ਫਾਈਲਾਂ ਲਈ ਫਾਈਲਪਾਥਾਂ ਵਾਲੀ ਐਰੇ ਵਾਪਸ ਕਰਦਾ ਹੈ
-scssToCSS.findSCSS(searchDir, { recursive: false });
+// SCSS ਫਾਈਲਾਂ ਲਈ ਬਿਲਕੁਲ `assets/scss` ਵਿੱਚ ਖੋਜ ਕਰੋ:
+const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
+console.log(searchResults);
+
+/* ਆਉਟਪੁੱਟ:
+Searching for SCSS files...
+Search complete. 2 files found.
+[ 'E:\\js\\utils\\minify.js\\assets\\scss\\foo.scss',
+  'E:\\js\\utils\\minify.js\\assets\\scss\\bar.scss' ]
+*/
 ```
 
 ਉਪਲਬਧ ਪੈਰਾਮੀਟਰ (ਅਤੇ ਉਹਨਾਂ ਦੀਆਂ ਡਿਫੌਲਟ ਸੈਟਿੰਗਾਂ) ਹਨ:

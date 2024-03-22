@@ -212,8 +212,16 @@ Searches for all SCSS files within the `searchDir` string passed (useful for dis
 Options are boolean, passed as object properties. For example:
 
 ```js
-// Returns array containing filepaths to SCSS files in exactly `searchDir`
-scssToCSS.findSCSS(searchDir, { recursive: false });
+// Search for SCSS files in exactly `assets/scss`:
+const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
+console.log(searchResults);
+
+/* outputs:
+Searching for SCSS files...
+Search complete. 2 files found.
+[ 'E:\\js\\utils\\minify.js\\assets\\scss\\foo.scss',
+  'E:\\js\\utils\\minify.js\\assets\\scss\\bar.scss' ]
+*/
 ```
 
 Available parameters (and their default settings) are:

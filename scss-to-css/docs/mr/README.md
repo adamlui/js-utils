@@ -211,8 +211,16 @@ scssToCSS.compile(inputDir, { minify: false });
 पर्याय बुलियन आहेत, ऑब्जेक्ट गुणधर्म म्हणून पास केले जातात. उदाहरणार्थ:
 
 ```js
-// अचूक `searchDir` मधील SCSS फायलींमध्ये फाइलपाथ असलेला ॲरे परत करतो
-scssToCSS.findSCSS(searchDir, { recursive: false });
+// SCSS फाईल्स नक्की `assets/scss` मध्ये शोधा:
+const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
+console.log(searchResults);
+
+/* आउटपुट:
+Searching for SCSS files...
+Search complete. 2 files found.
+[ 'E:\\js\\utils\\minify.js\\assets\\scss\\foo.scss',
+  'E:\\js\\utils\\minify.js\\assets\\scss\\bar.scss' ]
+*/
 ```
 
 उपलब्ध पॅरामीटर्स (आणि त्यांची डीफॉल्ट सेटिंग्ज) आहेत:

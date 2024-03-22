@@ -210,8 +210,16 @@ minifyJS.minify(input, { dotFiles: true });
 पर्याय बुलियन आहेत, ऑब्जेक्ट गुणधर्म म्हणून पास केले जातात. उदाहरणार्थ:
 
 ```js
-// अचूक `searchDir` मधील अनमिनिफाईड JS फायलींवर फाइलपाथ असलेला ॲरे परत करतो
-minifyJS.findJS(searchDir, { recursive: false });
+// नेमक्या `मालमत्ता/js` मध्ये अनमिनिफाइड JavaScript फायली शोधा:
+const searchResults = minifyJS.findJS('assets/js', { recursive: false });
+console.log(searchResults);
+
+/* आउटपुट:
+Searching for unminified JS files...
+Search complete. 2 files found.
+[ 'E:\\js\\utils\\minify.js\\assets\\js\\foo.js',
+  'E:\\js\\utils\\minify.js\\assets\\js\\bar.js' ]
+*/
 ```
 
 उपलब्ध पॅरामीटर्स (आणि त्यांची डीफॉल्ट सेटिंग्ज) आहेत:

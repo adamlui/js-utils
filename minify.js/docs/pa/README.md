@@ -209,8 +209,16 @@ minifyJS.minify(input, { dotFiles: true });
 ਵਿਕਲਪ ਬੂਲੀਅਨ ਹਨ, ਆਬਜੈਕਟ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਵਜੋਂ ਪਾਸ ਕੀਤੇ ਗਏ ਹਨ। ਉਦਾਹਰਣ ਲਈ:
 
 ```js
-// ਅਸਲ ਵਿੱਚ `searchDir` ਵਿੱਚ ਅਣਮਿੱਥੇ JS ਫਾਈਲਾਂ ਲਈ ਫਾਈਲਪਾਥਾਂ ਵਾਲੀ ਐਰੇ ਵਾਪਸ ਕਰਦਾ ਹੈ
-minifyJS.findJS(searchDir, { recursive: false });
+// ਬਿਲਕੁਲ `assets/js` ਵਿੱਚ ਅਣਮਿੱਥੇ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਫਾਈਲਾਂ ਦੀ ਖੋਜ ਕਰੋ:
+const searchResults = minifyJS.findJS('assets/js', { recursive: false });
+console.log(searchResults);
+
+/* ਆਉਟਪੁੱਟ:
+Searching for unminified JS files...
+Search complete. 2 files found.
+[ 'E:\\js\\utils\\minify.js\\assets\\js\\foo.js',
+  'E:\\js\\utils\\minify.js\\assets\\js\\bar.js' ]
+*/
 ```
 
 ਉਪਲਬਧ ਪੈਰਾਮੀਟਰ (ਅਤੇ ਉਹਨਾਂ ਦੀਆਂ ਡਿਫੌਲਟ ਸੈਟਿੰਗਾਂ) ਹਨ:
