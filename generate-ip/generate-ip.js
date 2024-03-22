@@ -67,29 +67,6 @@ else { // run as CLI utility
     else // log RESULT
         console.log(bw + generateIPv4() + nc);
 
-    function printHelpMsg(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
-        const terminalWidth = process.stdout.columns || 80,
-              indentation = 29, lines = [], words = msg.match(/\S+|\s+/g);
-
-        // Split msg into lines of appropriate lengths
-        let currentLine = '';
-        words.forEach(word => {
-            const lineLength = terminalWidth - ( lines.length === 0 ? 0 : indentation );
-            if (currentLine.length + word.length > lineLength) { // cap/store it
-                lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
-                currentLine = '';
-            }
-            currentLine += word;
-        });
-        lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
-
-        // Print formatted msg
-        lines.forEach((line, index) => console.info(
-            index === 0 ? line // print 1st line unindented
-                : ' '.repeat(indentation) + line // print subsequent lines indented
-        ));
-    }
-
     function printHelpSections(includeSections = ['cmdFormat', 'formatOptions', 'infoCmds']) {
         const sections = {
             'cmdFormat': [
@@ -103,5 +80,28 @@ else { // run as CLI utility
         };
         includeSections.forEach(section => { // print valid arg elems
             sections[section]?.forEach(line => printHelpMsg(line)); });
+
+        function printHelpMsg(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
+            const terminalWidth = process.stdout.columns || 80,
+                  indentation = 29, lines = [], words = msg.match(/\S+|\s+/g);
+
+            // Split msg into lines of appropriate lengths
+            let currentLine = '';
+            words.forEach(word => {
+                const lineLength = terminalWidth - ( lines.length === 0 ? 0 : indentation );
+                if (currentLine.length + word.length > lineLength) { // cap/store it
+                    lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
+                    currentLine = '';
+                }
+                currentLine += word;
+            });
+            lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
+
+            // Print formatted msg
+            lines.forEach((line, index) => console.info(
+                index === 0 ? line // print 1st line unindented
+                    : ' '.repeat(indentation) + line // print subsequent lines indented
+            ));
+        }
     }
 }
