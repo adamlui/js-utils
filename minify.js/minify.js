@@ -69,6 +69,15 @@ function minify(input, options = {}) {
     if (typeof input !== 'string') return console.error(
         'minify() error: Arg `inputPath` must be a string.');
 
+    // Validate options
+    for (const key of Object.keys(options)) {
+        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
+            `findJS() error: \`${ key }\` is an invalid option.`
+                + `\nValid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+        else if (typeof options[key] !== 'boolean') return console.error(
+            `findJS() error: \`${ key }\` option must be set to \`true\` or \`false\`.`);
+    }
+
     // Minify JS based on input
     const minifyOptions = { mangle: options.mangle ? { toplevel: true } : false };
     if (fs.existsSync(input)) { // minify based on path arg

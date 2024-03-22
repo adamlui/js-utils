@@ -66,6 +66,21 @@ function compile(inputPath, options = {}) {
     // Validate inputPath
     if (typeof inputPath !== 'string') return console.error(
         'compile() error: Arg `inputPath` must be a string.');
+    else { // verify inputPath path existence
+        inputPath = path.resolve(process.cwd(), inputPath);
+        if (!fs.existsSync(inputPath)) return console.error(
+            'compile() error: Arg `inputPath` must be an existing directory or file.'
+                + `\n'${ inputPath }' does not exist.`);
+    }
+
+    // Validate options
+    for (const key of Object.keys(options)) {
+        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
+            `findSCSS() error: \`${ key }\` is an invalid option.`
+                + `\nValid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+        else if (typeof options[key] !== 'boolean') return console.error(
+            `findSCSS() error: \`${ key }\` option must be set to \`true\` or \`false\`.`);
+    }
 
     // Compile SCSS based on inputPath
     const compileOptions = { style: options.minify ? 'compressed' : 'expanded', sourceMap: options.sourceMaps };
@@ -88,8 +103,7 @@ function compile(inputPath, options = {}) {
                     } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return { error: err }; }
                 }).filter(data => !data.error ); // filter out failed compilations
         }
-    } else return console.error('First argument must be an existing file or directory.'
-        + `\n'${ inputPath }' does not exist.`);
+    }
 }
 
 // EXPORT main functions if script was required
