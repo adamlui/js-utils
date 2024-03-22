@@ -79,7 +79,7 @@ console.log(passwords);
 
 **💡注意：**如果不傳遞任何選項，密碼將為 8 個字元長，由大小寫字母組成。
 
-請參閱：[可用選項](#available-options-for-generate-functions)
+請參閱：[可用選項](#generate-函數的可用選項)
 
 #
 
@@ -95,7 +95,7 @@ console.log(passwords);
 
 **💡 注意：** 如果沒有傳遞 `qty` 參數，則只會產生一個密碼，並以字串形式傳回。
 
-請參閱：[可用選項](#available-options-for-generate-functions)
+請參閱：[可用選項](#generate-函數的可用選項)
 
 #
 

@@ -79,7 +79,7 @@ console.log(passwords);
 
 **💡 注意：**如果不传递任何选项，密码将为 8 个字符长，由大小写字母组成。
 
-请参阅：[可用选项](#available-options-for-generate-functions)
+请参阅：[可用选项](#generate-函数的可用选项)
 
 #
 
@@ -95,7 +95,7 @@ console.log(passwords);
 
 **💡 注意：**如果没有传递 `qty` 参数，则只会生成一个密码，并以字符串形式返回。
 
-请参阅：[可用选项](#available-options-for-generate-functions)
+请参阅：[可用选项](#generate-函数的可用选项)
 
 #
 
