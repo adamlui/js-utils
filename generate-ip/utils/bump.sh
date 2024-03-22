@@ -31,7 +31,8 @@ npm version --no-git-tag-version "$NEW_VERSION"
 # Bump versions in READMEs
 echo -e "\nBumping versions in READMEs..."
 find . -name 'README.md' \
-  | xargs sed -i "s/[0-9]\+\.[0-9]\+\.[0-9]\+\(.*logo=icinga\)/$NEW_VERSION\1/"
+  -exec sed -i "s/[0-9.]\+\(-.*logo=icinga\)/$NEW_VERSION\1/" {} + \
+  -exec sed -i -E "s~(releases/tag/[^/]+-)[0-9.]+~\1$NEW_VERSION~g" {} +
 echo "v$NEW_VERSION"
 
 # Commit to Git
