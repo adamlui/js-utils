@@ -167,7 +167,7 @@ Name        | Type    | Description                                             
 
 ## 💻 Command line usage
 
-When installed globally, **generate-pw** can also be used from the command line. The basic command is:
+When installed [globally](#-installation), **generate-pw** can also be used from the command line. The basic command is:
 
 ```
 $ generate-pw
