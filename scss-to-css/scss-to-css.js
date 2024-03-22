@@ -74,7 +74,8 @@ function compile(inputPath, options = {}) {
             if (options.verbose) console.info(`Compiling ${ inputPath }...`);
             try { // to compile file passed
                 const compileResult = sass.compile(inputPath, compileOptions);
-                return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: inputPath };
+                return { code: compileResult.css, srcMap: compileResult.sourceMap,
+                         srcPath: path.resolve(process.cwd(), inputPath) };
             } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return { error: err }; }
         } else { // dir path passed
             return findSCSS(inputPath, { recursive: options.recursive, verbose: options.verbose,
