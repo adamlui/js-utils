@@ -217,8 +217,10 @@ console.log(searchResults);
 /* आउटपुट:
 Searching for SCSS files...
 Search complete. 2 files found.
-[ 'E:\\js\\utils\\minify.js\\assets\\scss\\foo.scss',
-  'E:\\js\\utils\\minify.js\\assets\\scss\\bar.scss' ]
+[
+  'E:\\js\\utils\\minify.js\\assets\\scss\\foo.scss',
+  'E:\\js\\utils\\minify.js\\assets\\scss\\bar.scss'
+]
 */
 ```
 

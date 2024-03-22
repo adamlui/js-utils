@@ -219,8 +219,10 @@ console.log(searchResults);
 /* आउटपुट:
 Searching for unminified JS files...
 Search complete. 2 files found.
-[ 'E:\\js\\utils\\minify.js\\assets\\js\\foo.js',
-  'E:\\js\\utils\\minify.js\\assets\\js\\bar.js' ]
+[
+  'E:\\js\\utils\\minify.js\\assets\\js\\foo.js',
+  'E:\\js\\utils\\minify.js\\assets\\js\\bar.js'
+]
 */
 ```
 
