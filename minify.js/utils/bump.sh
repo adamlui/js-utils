@@ -38,7 +38,8 @@ echo "v$NEW_VERSION"
 echo -e "\nCommitting changes...\n"
 find . -name "README.md" -exec git add {} +
 git add package*.json
-git commit -n -m "Bumped versions to $NEW_VERSION"
+PACKAGE_NAME=$(node -pe "require('./package.json').name")
+git commit -n -m "Bumped $PACKAGE_NAME versions to $NEW_VERSION"
 
 # Push to GiHub
 echo -e "\nPushing to GitHub...\n"
