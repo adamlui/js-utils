@@ -77,7 +77,7 @@ function minify(input, options = {}) {
             if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
             return { code: minifyResult.code, srcPath: input, error: minifyResult.error };
         } else { // dir path passed
-            return findJS(input, { recursive: options.recursive, verbosity: options.verbose,
+            return findJS(input, { recursive: options.recursive, verbose: options.verbose,
                                    dotFolders: options.dotFolders, dotFiles: options.dotFiles 
                 })?.map(jsPath => { // minify found JS files
                     if (options.verbose) console.info(`Minifying ${ jsPath }...`);
