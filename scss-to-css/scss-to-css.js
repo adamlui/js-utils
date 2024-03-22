@@ -76,7 +76,7 @@ function compile(inputPath, options = {}) {
                 return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: inputPath };
             } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return { error: err }; }
         } else { // dir path passed
-            return findSCSS(inputPath, { recursive: options.recursive, verbosity: options.verbose,
+            return findSCSS(inputPath, { recursive: options.recursive, verbose: options.verbose,
                                          dotFolders: options.dotFolders
                 })?.map(scssPath => { // compile found SCSS files
                     if (options.verbose) console.info(`Compiling ${ scssPath }...`); 
