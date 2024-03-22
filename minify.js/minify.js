@@ -14,12 +14,15 @@ function findJS(searchDir, options = {}) {
     options = { ...defaultOptions, ...options };
 
     // Validate searchDir
-    if (!searchDir) return console.error('findJS() error: Please supply a `searchDir` as 1st arg.');
+    if (!searchDir) return console.error(
+        'findJS() error: Please supply a `searchDir` as 1st arg.');
+    else if (typeof searchDir !== 'string') return console.error(
+        'findJS() error: 1st arg `searchDir` must be a string.');
     else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir);
         if (!fs.existsSync(path.resolve(process.cwd(), searchDir)))
             return console.error('findJS() error:'
-                + ' 1st argument `searchDir` must be an existing directory.'
+                + ' 1st arg `searchDir` must be an existing directory.'
                 + `\n'${ searchPath }' does not exist.`);
     }
 
