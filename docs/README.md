@@ -23,7 +23,7 @@
 
 ### [🖼️ img-to-webp](../img-to-webp)
 
-> Recursively convert images to WEBP files.
+> Recursively compress all images to WEBPs.
 <br>[Download](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
