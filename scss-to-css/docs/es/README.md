@@ -215,7 +215,7 @@ Las opciones son booleanas y se pasan como propiedades del objeto. Por ejemplo:
 const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
 console.log(searchResults);
 
-/* salidas:
+/* salida de muestra:
 Searching for SCSS files...
 Search complete. 2 files found.
 [

@@ -215,7 +215,7 @@ scssToCSS.compile(inputDir, { minify: false });
 const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
 console.log(searchResults);
 
-/* 输出：
+/* 示例输出：
 Searching for SCSS files...
 Search complete. 2 files found.
 [

@@ -214,7 +214,7 @@ scssToCSS.compile(inputDir, { minify: false });
 const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
 console.log(searchResults);
 
-/* आउटपुट:
+/* नमूना आउटपुट:
 Searching for SCSS files...
 Search complete. 2 files found.
 [

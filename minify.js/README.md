@@ -215,7 +215,7 @@ Options are boolean, passed as object properties. For example:
 const searchResults = minifyJS.findJS('assets/js', { recursive: false });
 console.log(searchResults);
 
-/* outputs:
+/* sample output:
 Searching for unminified JS files...
 Search complete. 2 files found.
 [

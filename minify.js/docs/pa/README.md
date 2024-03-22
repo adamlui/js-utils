@@ -213,7 +213,7 @@ minifyJS.minify(input, { dotFiles: true });
 const searchResults = minifyJS.findJS('assets/js', { recursive: false });
 console.log(searchResults);
 
-/* ਆਉਟਪੁੱਟ:
+/* ਨਮੂਨਾ ਆਉਟਪੁੱਟ:
 Searching for unminified JS files...
 Search complete. 2 files found.
 [
