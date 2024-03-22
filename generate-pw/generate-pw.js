@@ -187,12 +187,12 @@ else { // run as CLI tool
         } else if (!matchedCmd) {
             console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
             console.info(`\n${by}Valid arguments are below.${nc}`);
-            printHelpScreen(['paramOptions', 'booelanOptions', 'infoCmds']);
+            printHelpSections(['paramOptions', 'booelanOptions', 'infoCmds']);
             process.exit(1);
     }});
 
     // Show HELP screen if -h or --help passed
-    if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) printHelpScreen();
+    if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) printHelpSections();
 
     // Show VERSION number if -v or --version passed
     else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg)))
@@ -238,7 +238,7 @@ else { // run as CLI tool
         ));
     }
 
-    function printHelpScreen(includeSections = ['cmdFormat', 'paramOptions', 'booelanOptions', 'infoCmds']) {
+    function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'booelanOptions', 'infoCmds']) {
         const sections = {
             'cmdFormat': [
                 `\n${by}generate-pw [options|commands]${nc}`

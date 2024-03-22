@@ -105,12 +105,12 @@ else { // run as CLI tool
         else {
             console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
             console.info(`\n${by}Valid arguments are below.${nc}`);
-            printHelpScreen(['configOptions', 'infoCmds']);
+            printHelpSections(['configOptions', 'infoCmds']);
             process.exit(1);
     }});
 
     // Show HELP screen if -h or --help passed
-    if (process.argv.some(arg => argRegex.help.test(arg))) printHelpScreen();
+    if (process.argv.some(arg => argRegex.help.test(arg))) printHelpSections();
 
     // Show VERSION number if -v or --version passed
     else if (process.argv.some(arg => argRegex.version.test(arg)))
@@ -213,7 +213,7 @@ else { // run as CLI tool
         ));
     }
 
-    function printHelpScreen(includeSections = ['cmdFormat', 'pathArgs', 'configOptions', 'infoCmds']) {
+    function printHelpSections(includeSections = ['cmdFormat', 'pathArgs', 'configOptions', 'infoCmds']) {
         const sections = {
             'cmdFormat': [
                 `\n${by}minify-js [inputPath] [outputPath] [options]${nc}`

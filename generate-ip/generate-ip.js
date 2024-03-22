@@ -53,12 +53,12 @@ else { // run as CLI utility
     if (unrecognizedArg) {
         console.error(`\n${br}ERROR: Arg [${unrecognizedArg}] not recognized.${nc}`);
         console.info(`\n${by}Valid arguments are below.${nc}`);
-        printHelpScreen(['infoCmds']);
+        printHelpSections(['infoCmds']);
         process.exit(1);
     }
 
     // Show HELP screen if -h or --help passed
-    if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) printHelpScreen();
+    if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) printHelpSections();
 
     // Show VERSION number if -v or --version passed
     else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg)))
@@ -90,7 +90,7 @@ else { // run as CLI utility
         ));
     }
 
-    function printHelpScreen(includeSections = ['cmdFormat', 'formatOptions', 'infoCmds']) {
+    function printHelpSections(includeSections = ['cmdFormat', 'formatOptions', 'infoCmds']) {
         const sections = {
             'cmdFormat': [
                 `\n${by}generate-ip [commands]${nc}`
