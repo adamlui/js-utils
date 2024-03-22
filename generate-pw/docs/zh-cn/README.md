@@ -120,7 +120,7 @@ console.log(strictPW);
 ### `validateStrength(password)`
 
 验证密码的强度，返回一个包含以下内容的对象：
-- `strengthScore` (1–100)
+- `strengthScore` (0–100)
 - `recommendations` 大批
 - `isGood` 布尔值 (`true` 如果 `strengthScore` >= 80) 
 
