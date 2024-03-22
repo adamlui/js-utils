@@ -27,9 +27,10 @@ function findJS(searchDir, options = {}) {
 
     // Validate options
     for (const key of Object.keys(options)) {
-        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
-            `findJS() error: \`${ key }\` is an invalid option.`
-                + `\nValid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key))
+            if (key !== 'isRecursing') return console.error(
+                `findJS() error: \`${ key }\` is an invalid option.`
+                    + `\nValid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
             `findJS() error: \`${ key }\` option must be set to \`true\` or \`false\`.`);
     }
