@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
-// Import crypto.randomInt() for secure RNG
-const { randomInt } = require('crypto');
+// Import LIBS
+const { randomInt } = require('crypto'),
+      { execSync } = require('child_process');
 
 // Init CHARACTER SETS
 const charsets = {
@@ -150,8 +151,7 @@ else { // run as CLI utility
     // Init UI colors
     const nc = '\x1b[0m',    // no color
           br = '\x1b[1;91m', // bright red
-          by = '\x1b[1;33m', // bright yellow
-          bw = '\x1b[1;97m'; // bright white
+          by = '\x1b[1;33m'; // bright yellow
 
     // Load settings from ARGS
     const config = {};
@@ -209,7 +209,7 @@ else { // run as CLI utility
             strict: config.strictMode
         };
         const pwResult = generatePassword(funcOptions);
-        console.log('\n' + bw + ( Array.isArray(pwResult) ? pwResult.join('\n') : pwResult ) + nc);
+        copyToClipboard(Array.isArray(pwResult) ? pwResult.join('\n') : pwResult);
     }
 
     function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'booelanOptions', 'infoCmds']) {
@@ -263,5 +263,15 @@ else { // run as CLI utility
                     : ' '.repeat(indentation) + line // print subsequent lines indented
             ));
         }
+    }
+
+    function copyToClipboard(data) {
+        data = data.replace(/\s+$/m, '').replace(/"/g, '""');
+        if (process.platform === 'darwin') // macOS
+            execSync(`printf "${ data }" | pbcopy`);
+        else if (process.platform === 'linux')
+            execSync(`printf "${ data }" | xclip -selection clipboard`);
+        else if (process.platform === 'win32')
+            execSync(`Set-Clipboard -Value "${ data }"`, { shell: 'powershell' });
     }
 }
