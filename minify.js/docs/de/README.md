@@ -166,10 +166,10 @@ Wenn **Quellcode** übergeben wird, wird dieser direkt minimiert, dann wird ein 
 
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
-      minifyResult = minifyJS.minify(srcCode);
+      minErgebnis = minifyJS.minify(srcCode);
 
-console.log(minifyResult.error); // gibt einen Laufzeitfehler oder `undefined` aus, wenn kein Fehler vorliegt
-console.log(minifyResult.code);  // gibt minimiertes JS aus: function add(n,d){return n+d}
+console.log(minErgebnis.error); // gibt einen Laufzeitfehler oder `undefined` aus, wenn kein Fehler vorliegt
+console.log(minErgebnis.code);  // gibt minimiertes JS aus: function add(n,d){return n+d}
 ```
 
 Wenn ein **Dateipfad** übergeben wird, wird der Code der Datei geladen und dann minimiert, wodurch ein Objekt wie oben zurückgegeben wird.
@@ -178,11 +178,11 @@ Wenn ein **Verzeichnispfad** übergeben wird, wird nach JavaScript-Dateien gesuc
 
 ```js
 // Gibt Pfade zu Quell-JS-Dateien im Arbeitsverzeichnis + allen verschachtelten Verzeichnissen aus
-const minifyResults = minifyJS.minify('.');
-minifyResults.forEach(result => console.log(result.srcPath));
+const minErgebnisse = minifyJS.minify('.');
+minErgebnisse.forEach(ergebnis => console.log(ergebnis.srcPath));
 
 // Gibt minimierten Code der zweiten JS-Datei aus, wenn er gefunden wird, oder `undefined`, wenn er nicht gefunden wird
-console.log(minifyResults[1].code);
+console.log(minErgebnisse[1].code);
 ```
 
 Optionen sind boolesche Werte und werden als Objekteigenschaften übergeben. Zum Beispiel:
@@ -212,8 +212,8 @@ Optionen sind boolesche Werte und werden als Objekteigenschaften übergeben. Zum
 
 ```js
 // Suche nach nicht minimierten JS-Dateien genau in assets/js:
-const searchResults = minifyJS.findJS('assets/js', { recursive: false });
-console.log(searchResults);
+const suchergEbnisse = minifyJS.findJS('assets/js', { recursive: false });
+console.log(suchergEbnisse);
 
 /* Beispielausgabe:
 Searching for unminified JS files...
