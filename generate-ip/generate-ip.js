@@ -111,12 +111,12 @@ else { // run as CLI utility
     }
 
     function copyToClipboard(data) {
-        data = data.replace(/\s+$/, '');
+        data = data.replace(/\s+$/, '').replace(/"/g, '""');
         if (process.platform === 'darwin') // macOS
             execSync(`printf "${ data }" | pbcopy`);
         else if (process.platform === 'linux')
             execSync(`printf "${ data }" | xclip -selection clipboard`);
         else if (process.platform === 'win32')
-            execSync(`Set-Clipboard -Value "${ data.replace(/"/g, '""') }"`, { shell: 'powershell' });
+            execSync(`Set-Clipboard -Value "${ data }"`, { shell: 'powershell' });
     }
 }
