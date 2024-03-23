@@ -125,8 +125,8 @@ $ minify-js eingabeordner ausgabeordner
 ```
 Konfigurationsoptionen:
  -n, --dry-run               Minimieren Sie die Datei(en) nicht wirklich, sondern zeigen Sie nur an, ob sie verarbeitet werden.
- -d, --include-dotfolders    Beziehen Sie Dot-Verzeichnisse in die Dateisuche ein.
- -D, --include-dotfiles      Beziehen Sie Dot-Dateien in die Dateisuche ein.
+ -d, --include-dotfolders    Beziehen Sie Punktordner in die Dateisuche ein.
+ -D, --include-dotfiles      Beziehen Sie Punktdateien in die Dateisuche ein.
  -R, --no-recursion          Deaktivieren Sie die rekursive Dateisuche.
  -M, --no-mangle             Deaktivieren Sie das Verstümmeln von Namen.
  -q, --quiet                 Unterdrücken Sie alle Protokolle außer Fehlern.
@@ -188,7 +188,7 @@ console.log(minifyResults[1].code);
 Optionen sind boolesche Werte und werden als Objekteigenschaften übergeben. Zum Beispiel:
 
 ```js
-// Gibt ein Datenobjekt zurück, in dem Dot-Dateien auch verarbeitet werden, wenn `eingang` ein Pfad ist
+// Gibt ein Datenobjekt zurück, in dem Punktdateien auch verarbeitet werden, wenn `eingang` ein Pfad ist
 minifyJS.minify(eingang, { dotFiles: true });
 ```
 
@@ -198,8 +198,8 @@ Name         | Beschreibung                                                     
 -------------|----------------------------------------------------------------------------------------|--------------
 `recursive`  | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird. | `true`
 `verbose`    | Anmeldung in Konsole/Terminal anzeigen.                                                | `true`
-`dotFolders` | Beziehen Sie Dot-Verzeichnisse in die Dateisuche ein.                                  | `false`
-`dotFiles`   | Beziehen Sie Dot-Dateien in die Dateisuche ein.                                        | `false`
+`dotFolders` | Beziehen Sie Punktordner in die Dateisuche ein.                                  | `false`
+`dotFiles`   | Beziehen Sie Punktdateien in die Dateisuche ein.                                        | `false`
 `mangle`     | Variablennamen kürzen (normalerweise auf ein Zeichen).                                 | `true`
 
 #
@@ -231,8 +231,8 @@ Name         | Beschreibung                                                     
 -------------|----------------------------------------------------------------------------------------|--------------
 `recursive`  | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird. | `true`
 `verbose`    | Anmeldung in Konsole/Terminal anzeigen.                                                | `true`
-`dotFolders` | Beziehen Sie Dot-Verzeichnisse in die Dateisuche ein.                                  | `false`
-`dotFiles`   | Beziehen Sie Dot-Dateien in die Dateisuche ein.                                        | `false`
+`dotFolders` | Beziehen Sie Punktordner in die Dateisuche ein.                                  | `false`
+`dotFiles`   | Beziehen Sie Punktdateien in die Dateisuche ein.                                        | `false`
 
 <br>
 
