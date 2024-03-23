@@ -47,7 +47,7 @@ else { // run as CLI utility
             if (!matchedArg) process.argv.forEach(arg => {
                 if (!arg.startsWith('-')) return;
                 if (argRegex[argType][option].test(arg)) {
-                    matchedArg = true; unrecognizedArg = undefined; return;
+                    matchedArg = true; unrecognizedArg = undefined;
                 } else unrecognizedArg = arg;
     });
     if (unrecognizedArg) {
