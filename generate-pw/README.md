@@ -175,7 +175,7 @@ When installed [globally](#-installation), **generate-pw** can also be used from
 $ generate-pw
 ```
 
-**💡 Note:** To generate multiple results, pass `--qty=n` where `n` is the number of passwords to generate.
+**💡 Note:** For security reasons, generated password(s) are stored in the clipboard.
 
 #
 
