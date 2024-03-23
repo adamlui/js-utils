@@ -36,34 +36,34 @@ $ npm install generate-ip
 #### ESM:
 
 ```js
-import * as ip from 'generate-ip';
+import { ipv4 } from 'generate-ip';
 ```
 
 #### CJS:
 
 ```js
-const ip = require('generate-ip');
+const { ipv4 } = require('generate-ip');
 ```
 
 #
 
-### `generateIPv4()`
+### `ipv4.generate()`
 
 Generates **one** IPv4 address:
 
 ```js
-const ipResult = ip.generateIPv4();
+const ipResult = ipv4.generate();
 console.log(ipResult); // sample output: 36.42.224.208
 ```
 
 #
 
-### `isValidIPv4(address)`
+### `ipv4.validate(address)`
 
 Checks if given `address` is a valid IPv4 address:
 
 ```js
-const ipIsValid = ip.isValidIPv4('36.42.224.208');
+const ipIsValid = ipv4.validate('36.42.224.208');
 console.log(ipIsValid); // outputs `true`
 ```
 
