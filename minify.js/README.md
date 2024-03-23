@@ -10,7 +10,8 @@
         <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/hi#readme">हिंदी</a> |
         <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/bn#readme">বাংলা</a> |
         <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/mr#readme">मराठी</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/pa#readme">ਪੰਜਾਬੀ</a>
+        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/pa#readme">ਪੰਜਾਬੀ</a> |
+        <a href="https://github.com/adamlui/js-utils/tree/main/minify.js/docs/de#readme">Deutsch</a>
     </h6>
 </div>
 

@@ -10,7 +10,8 @@
         <a href="hi/SECURITY.md">हिंदी</a> |
         <a href="bn/SECURITY.md">বাংলা</a> |
         <a href="mr/SECURITY.md">मराठी</a> |
-        <a href="pa/SECURITY.md">ਪੰਜਾਬੀ</a>
+        <a href="pa/SECURITY.md">ਪੰਜਾਬੀ</a> |
+        <a href="de/SECURITY.md">Deutsch</a>
     </h6>
 </div>
 
