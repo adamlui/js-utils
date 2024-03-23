@@ -79,7 +79,7 @@ When installed [globally](#-installation), **generate-ip** can also be used from
 $ generate-ip
 ```
 
-The generated address will be logged to the console + copied to the clipboard.
+Generated IP is logged to the console + copied to the clipboard.
 
 #
 
