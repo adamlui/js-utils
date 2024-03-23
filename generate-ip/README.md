@@ -52,8 +52,8 @@ const { ipv4 } = require('generate-ip');
 Generates **one** IPv4 address:
 
 ```js
-const ipResult = ipv4.generate();
-console.log(ipResult); // sample output: 36.42.224.208
+const ip = ipv4.generate();
+console.log(ip); // sample output: 36.42.224.208
 ```
 
 #
