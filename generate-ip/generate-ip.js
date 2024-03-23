@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
-// Import crypto.randomInt() for secure RNG
-const { randomInt } = require('crypto');
+// Import LIBS
+const { randomInt } = require('crypto'),
+      { execSync } = require('child_process');
 
 // Define MAIN functions
 
@@ -64,8 +65,12 @@ else { // run as CLI utility
     else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg)))
         console.info('v' + require('./package.json').version);
 
-    else // log RESULT
-        console.log(bw + generateIPv4() + nc);
+    else { // log/copy RESULT
+        const address = generateIPv4();
+        copyToClipboard(address); console.log(bw + address + nc);
+    }
+
+    // Define CLI functions
 
     function printHelpSections(includeSections = ['cmdFormat', 'formatOptions', 'infoCmds']) {
         const helpSections = {
@@ -103,5 +108,15 @@ else { // run as CLI utility
                     : ' '.repeat(indentation) + line // print subsequent lines indented
             ));
         }
+    }
+
+    function copyToClipboard(data) {
+        data = data.replace(/\s+$/, '');
+        if (process.platform === 'darwin') // macOS
+            execSync(`printf "${ data }" | pbcopy`);
+        else if (process.platform === 'linux')
+            execSync(`printf "${ data }" | xclip -selection clipboard`);
+        else if (process.platform === 'win32')
+            execSync(`Set-Clipboard -Value "${ data.replace(/"/g, '""') }"`, { shell: 'powershell' });
     }
 }
