@@ -117,12 +117,10 @@ function validateStrength(password) {
 
     // Count occurrences of each char type
     const charCnts = { 'lower': 0, 'upper': 0, 'number': 0, 'symbol': 0 };
-    for (let i = 0; i < password.length; i++) {
-        const char = password[i];
+    for (const char of password)
         for (const charType of Object.keys(charCnts))
             if ((charsets[charType] || charsets[charType + 's']).includes(char))
                 charCnts[charType]++;
-    }
 
     // Check criteria + add recommendations
     const recommendations = [];
