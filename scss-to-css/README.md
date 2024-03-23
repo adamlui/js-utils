@@ -1,24 +1,24 @@
-<div align="center">
-    <h6>
-        <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/white/icon32.svg">
-            <img height=14 src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/black/icon32.svg">
-        </picture>
-        &nbsp;English |
-        <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-cn#readme">简体中文</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-tw#readme">繁體中文</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/hi#readme">हिंदी</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/bn#readme">বাংলা</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/mr#readme">मराठी</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/pa#readme">ਪੰਜਾਬੀ</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/de#readme">Deutsch</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/es#readme">Español</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/fr#readme">Français</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/pt#readme">Português</a>
-    </h6>
-</div>
-
-<br>
+<table align="center">
+    <td align="center" width=1000>
+        <h6>
+            <picture>
+                <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/white/icon32.svg">
+                <img height=14 src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/black/icon32.svg">
+            </picture>
+            &nbsp;English |
+            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-cn#readme">简体中文</a> |
+            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-tw#readme">繁體中文</a> |
+            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/hi#readme">हिंदी</a> |
+            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/bn#readme">বাংলা</a> |
+            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/mr#readme">मराठी</a> |
+            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/pa#readme">ਪੰਜਾਬੀ</a> |
+            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/de#readme">Deutsch</a> |
+            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/es#readme">Español</a> |
+            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/fr#readme">Français</a> |
+            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/pt#readme">Português</a>
+        </h6>
+    </td>
+</table>
 
 # { } scss-to-css
 
