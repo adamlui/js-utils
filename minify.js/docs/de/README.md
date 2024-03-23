@@ -39,13 +39,13 @@ Als **globales Dienstprogramm**:
 $ npm install -g @adamlui/minify.js
 ```
 
-Als **Entwicklerabhängigkeit** (z. B. für Build-Skripte) aus Ihrem Projektstammverzeichnis:
+Als **Entwicklerabhängigkeit** (z.B. für Build-Skripte) aus Ihrem Projektstammverzeichnis:
 
 ```
 $ npm install -D @adamlui/minify.js
 ```
 
-Als **Entwicklerabhängigkeit** (z. B. für Build-Skripte) aus Ihrem Projektstammverzeichnis:
+Als **Entwicklerabhängigkeit** (z.B. für Build-Skripte) aus Ihrem Projektstammverzeichnis:
 
 ```
 $ npm install @adamlui/minify.js
