@@ -18,6 +18,8 @@
     </h6>
 </div>
 
+<br>
+
 # { } scss-to-css
 
 ### Recursively compile all SCSS files into minified CSS.
