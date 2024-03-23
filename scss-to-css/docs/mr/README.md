@@ -11,6 +11,7 @@
         <a href="../hi#readme">हिंदी</a> |
         <a href="../bn#readme">বাংলা</a> |
         <a href="../pa#readme">ਪੰਜਾਬੀ</a> |
+        <a href="../de#readme">Deutsch</a> |
         <a href="../es#readme">Español</a> |
         <a href="../pt#readme">Português</a>
     </h6>
