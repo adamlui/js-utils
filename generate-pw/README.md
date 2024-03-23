@@ -7,7 +7,8 @@
         &nbsp;English |
         <a href="https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/zh-cn#readme">简体中文</a> |
         <a href="https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/zh-tw#readme">繁體中文</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/hi#readme">हिंदी</a>
+        <a href="https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/hi#readme">हिंदी</a> |
+        <a href="https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/bn#readme">বাংলা</a>
     </h6>
 </div>
 
