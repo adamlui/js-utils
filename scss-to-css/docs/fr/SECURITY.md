@@ -18,8 +18,8 @@
     </h6>
 </div>
 
-# 🛡️ Security Policy
+# 🛡️ Politique de sécurité
 
-If you find a vulnerability, please open a [draft security advisory](https://github.com/adamlui/js-utils/security/advisories/new).
+Si vous trouvez une vulnérabilité, veuillez ouvrir un [projet d'avis de sécurité](https://github.com/adamlui/js-utils/security/advisories/new).
 
-Pull requests are also welcome, but for safety reasons, send an email to <adam@kudoai.com> and wait for a response before making it public.
+Les demandes de tirage sont également les bienvenues, mais pour des raisons de sécurité, envoyez un e-mail à <adam@kudoai.com> et attendez une réponse avant de la rendre publique.
