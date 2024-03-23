@@ -1,6 +1,6 @@
 # > generate-ip
 
-### Randomly generate fake IPv4 addresses.
+### Randomly generate IPv4 addresses.
 
 <a href="#%EF%B8%8F-mit-license"><img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/generate-ip-1.0.0"><img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>

@@ -9,7 +9,7 @@
 
 ### <img height=21px src="https://i.imgur.com/kvf7fXm.png"></img> [generate-ip](../generate-ip)
 
-> Randomly generate fake IPv4 addresses.
+> Randomly generate IPv4 addresses.
 <br>[Install](../generate-ip#-installation) /
 [Readme](../generate-ip#readme) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
