@@ -13,6 +13,7 @@
         <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/pa#readme">ਪੰਜਾਬੀ</a> |
         <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/de#readme">Deutsch</a> |
         <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/es#readme">Español</a> |
+        <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/fr#readme">Français</a> |
         <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/pt#readme">Português</a>
     </h6>
 </div>
