@@ -211,7 +211,7 @@ scssToCSS.compile(inputDir, { minify: false });
 ਵਿਕਲਪ ਬੂਲੀਅਨ ਹਨ, ਆਬਜੈਕਟ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਵਜੋਂ ਪਾਸ ਕੀਤੇ ਗਏ ਹਨ। ਉਦਾਹਰਣ ਲਈ:
 
 ```js
-// SCSS ਫਾਈਲਾਂ ਲਈ ਬਿਲਕੁਲ `assets/scss` ਵਿੱਚ ਖੋਜ ਕਰੋ:
+// SCSS ਫਾਈਲਾਂ ਲਈ ਬਿਲਕੁਲ assets/scss ਵਿੱਚ ਖੋਜ ਕਰੋ:
 const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
 console.log(searchResults);
 

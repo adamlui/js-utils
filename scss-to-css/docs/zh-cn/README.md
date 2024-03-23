@@ -211,7 +211,7 @@ scssToCSS.compile(inputDir, { minify: false });
 选项是布尔值，作为对象属性传递。 例如：
 
 ```js
-// 在 `assets/scss` 中搜索 SCSS 文件：
+// 在 assets/scss 中搜索 SCSS 文件：
 const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
 console.log(searchResults);
 
