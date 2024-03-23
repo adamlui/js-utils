@@ -41,7 +41,7 @@ else { // run as CLI utility
             'version': /^--?ve?r?s?i?o?n?$/
         }
     };
-    let matchedArg = false, unrecognizedArg = undefined;
+    let matchedArg = false, unrecognizedArg;
     for (const argType of Object.keys(argRegex))
         for (const option of Object.keys(argRegex[argType]))
             if (!matchedArg) process.argv.forEach(arg => {
