@@ -6,26 +6,27 @@ const { randomInt } = require('crypto'),
 
 // Define MAIN functions
 
-function generateIPv4() {
-    console.info('Generating IPv4 address...');
-    const segments = [];
-    for (let i = 0; i < 4; i++) segments.push(randomInt(0, 256));
-    return segments.join('.');
-}
-
-function isValidIPv4(address) {
-    console.info(`Validating IPv4 address ${ address }...`);
-    const segments = address.split('.');
-    if (segments.length !== 4) return false;
-    for (const segment of segments) {
-        const num = parseInt(segment);
-        if (isNaN(num) || num < 0 || num > 255) return false;
+const ipv4 = {
+    generate: function() {
+        console.info('Generating ipv4 address...');
+        const segments = [];
+        for (let i = 0; i < 4; i++) segments.push(randomInt(0, 256));
+        return segments.join('.');
+    },
+    validate: function(address) {
+        console.info(`Validating ipv4 address ${ address }...`);
+        const segments = address.split('.');
+        if (segments.length !== 4) return false;
+        for (const segment of segments) {
+            const num = parseInt(segment);
+            if (isNaN(num) || num < 0 || num > 255) return false;
+        }
+        return true;
     }
-    return true;
-}
+};
 
 // EXPORT main functions if script was required
-if (require.main !== module) module.exports = { generateIPv4, isValidIPv4 };
+if (require.main !== module) module.exports = { ipv4 };
 
 else { // run as CLI utility
 
@@ -66,7 +67,7 @@ else { // run as CLI utility
         console.info('v' + require('./package.json').version);
 
     else { // log/copy RESULT
-        const address = generateIPv4();
+        const address = ipv4.generate();
         copyToClipboard(address); console.log(bw + address + nc);
     }
 
