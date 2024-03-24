@@ -79,7 +79,7 @@ else { // run as CLI utility
         console.info('v' + require('./package.json').version);
 
     else { // log/copy RESULT
-        const address = ipv4.generate();
+        const address = ipv4.generate({ verbose: false });
         copyToClipboard(address); console.log(bw + address + nc);
     }
 
