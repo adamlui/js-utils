@@ -14,15 +14,15 @@ const ipv4 = {
         return segments.join('.');
     },
     validate: function(address) {
-        console.info(`Validating ipv4 address ${ address }...`);
+        console.info(`Validating IPv4 address ${ address }...`);
         const segments = address.split('.');
-        if (segments.length !== 4) return false;
-        for (const segment of segments) {
-            const num = parseInt(segment);
-            if (isNaN(num) || num < 0 || num > 255) return false;
-        }
-        return true;
-    }
+        return !( // false if any dq condition matches
+               segments.length !== 4 // not 4-segments long
+            || segments.some(segment => // segment invalid
+                   !/^\d+$/.test(segment) // for being non-numeric
+                || parseInt(segment, 10) < 0 // or negative
+                || parseInt(segment, 10) > 255 // or > 255
+    ));}
 };
 
 // EXPORT main functions if script was required
