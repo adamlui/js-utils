@@ -9,11 +9,11 @@
   },
   "homepage": "https://github.com/adamlui/js-utils",
   "license": "MIT",
-  "main": "dist/generate-ip.js",
+  "main": "dist/generate-ip.min.js",
   "files": [ "dist", "docs" ],
   "bin": {
-    "generateip": "dist/generate-ip.js",
-    "generate-ip": "dist/generate-ip.js"
+    "generateip": "dist/generate-ip.min.js",
+    "generate-ip": "dist/generate-ip.min.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
