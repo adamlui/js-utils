@@ -36,13 +36,13 @@ $ npm install generate-ip
 #### ESM:
 
 ```js
-import { ipv4 } from 'generate-ip';
+import { ipv4, ipv6 } from 'generate-ip';
 ```
 
 #### CJS:
 
 ```js
-const { ipv4 } = require('generate-ip');
+const { ipv4, ipv6 } = require('generate-ip');
 ```
 
 #
