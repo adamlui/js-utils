@@ -7,6 +7,7 @@ const { randomInt } = require('crypto'), // for secure RNG
 // Define MAIN functions
 
 const ipv4 = {
+
     generate: function(options = {}) {
         const defaultOptions = { verbose: true };
         options = { ...defaultOptions, ...options };
@@ -18,6 +19,7 @@ const ipv4 = {
         if (options.verbose) console.log('\n' + ip);
         return ip;
     },
+
     validate: function(address, options = {}) {
         const defaultOptions = { verbose: true };
         options = { ...defaultOptions, ...options };
@@ -38,6 +40,7 @@ const ipv4 = {
 };
 
 const ipv6 = {
+
     generate: function(options = {}) {
         const defaultOptions = { verbose: true, leadingZeros: false, doubleColon: true };
         options = { ...defaultOptions, ...options };
@@ -54,6 +57,7 @@ const ipv6 = {
         if (options.verbose) console.log('\n' + ip);
         return ip;
     },
+
     format: function(ipv6Address, options = {}) {
         const defaultOptions = { verbose: true, leadingZeros: false, doubleColon: true };
         options = { ...defaultOptions, ...options };
@@ -99,6 +103,7 @@ const ipv6 = {
                                                  : 'Address cannot be formatted!' ));
         return formattedAddress;
     },
+
     validate: function(address, options = {}) {
         const defaultOptions = { verbose: true };
         options = { ...defaultOptions, ...options };
