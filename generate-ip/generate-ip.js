@@ -121,7 +121,7 @@ const ipv6 = {
                            || !ipv4.validate( // where IPv4-mapping appended invalid address
                                    lastPiece.replace( // determined by stripping valid length suffixes first
                                        /\/(?:0|(?:[1-2]?\d)|32|96)$/, ''), { verbose: false }
-            )))
+                  )))
         );
         if (options.verbose) console.info('ipv6.validate() » '
             + `IP is ${ !addressIsValid ? 'in' : '' }valid IPv6 address!`);
