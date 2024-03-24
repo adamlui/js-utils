@@ -53,11 +53,56 @@ const ipv6 = {
         const ip = this.format(pieces.join(':'), { ...options, verbose: false });
         if (options.verbose) console.log('\n' + ip);
         return ip;
-    }
-}
+    },
+    format: function(ipv6Address, options = {}) {
+        const defaultOptions = { verbose: true, leadingZeros: false, doubleColon: true };
+        options = { ...defaultOptions, ...options };
 
-// EXPORT main functions if script was required
-if (require.main !== module) module.exports = { ipv4 };
+        // Validate ipv6Address
+        if (!this.validate(ipv6Address, { verbose: false}))
+            return console.error('ipv6.format() » '
+                + `ERROR: \n- ${ ipv6Address } is not a valid IPv6 address.`);
+
+        if (options.verbose) console.info(`ipv6.format() » Formatting ${ ipv6Address }...`);
+        let formattedAddress = ipv6Address;
+
+        // Handle leading zeros
+        if (options.leadingZeros) { // add leading zeros
+            if (options.verbose) console.info('ipv6.format() » '
+                + 'Adding leading zeros...');
+            const pieces = ipv6Address.split(':');
+            for (let i = 0; i < pieces.length; i++)
+                while (pieces[i].length < 4) pieces[i] = '0' + pieces[i];
+            formattedAddress = pieces.join(':');
+        } else { // strip leading zeros
+            if (options.verbose) console.info('ipv6.format() » '
+                + 'Stripping leading zeros...');
+            formattedAddress = ipv6Address.replace(/(^|(?<=:))0+(?!:)/g, '$1');
+        }
+
+        // Handle double colons
+        if (options.doubleColon) { // replace zero series w/ '::'
+            if (options.verbose) console.info('ipv6.format() » '
+                + 'Replacing zero series w/ \'::\'...');
+            formattedAddress = formattedAddress.replace(/:(?:0+:)+/, '::');
+        } else { // expand '::' into zero series
+            if (options.verbose) console.info('ipv6.format() » '
+                + 'Expanding \'::\' into zero series...');
+            const totalPieces = formattedAddress.split(':').length,
+                  zeroSegment = options.leadingZeros ? '0000' : '0',
+                  zeroSeries = Array(8 - totalPieces).fill(zeroSegment).join(':');
+            formattedAddress = formattedAddress.replace('::', `:${ zeroSeries }:`);
+        }
+
+        if (options.verbose) console.info('\n'
+            + ( formattedAddress !== ipv6Address ? `Formatted address: ${ formattedAddress }`
+                                                 : 'Address cannot be formatted!' ));
+        return formattedAddress;
+    }
+};
+
+// EXPORT main function objs if script was required
+if (require.main !== module) module.exports = { ipv4, ipv6 };
 
 else { // run as CLI utility
 
