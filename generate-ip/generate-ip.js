@@ -99,7 +99,7 @@ const ipv6 = {
         }
 
         if (options.verbose) console.info('\n'
-            + ( formattedAddress !== ipv6Address ? `Formatted address: ${ formattedAddress }`
+            + ( formattedAddress !== ipv6Address ? formattedAddress
                                                  : 'Address cannot be formatted!' ));
         return formattedAddress;
     },
