@@ -109,17 +109,18 @@ const ipv6 = {
         options = { ...defaultOptions, ...options };
         if (options.verbose) console.info('ipv6.validate() » '
             + `Validating ${ address }...`);
-        const pieces = address.split(/::?/);
+        const pieces = address.split(/::?/),
+              lastPiece = pieces[pieces.length - 1];
         const addressIsValid = !( // false if any dq condition matches
-               address.includes('::') && address.split('::').length > 2 // 2+ '::'
-            || /:{3,}/g.test(address) // 3+ consecutive ':'
-            || pieces.length < 2 || pieces.length > 8 // 1 or 9+ hex pieces
-            || pieces.some(piece => // hex piece invalid
-                !/^[\dA-Fa-f]{1,4}$/.test(piece) // for not being 1-4 valid chars
-                    && (piece !== pieces[pieces.length - 1] // except last piece
-                        || !ipv4.validate( // where IPv4-mapping appended invalid address
-                                pieces[pieces.length - 1].replace( // determined by stripping suffix first
-                                    /\/(?:0|(?:[1-2]?\d)|32|96)$/, ''), { verbose: false }
+                  address.includes('::') && address.split('::').length > 2 // 2+ '::'
+               || /:{3,}/g.test(address) // 3+ consecutive ':'
+               || pieces.length < 2 || pieces.length > 8 // 1 or 9+ hex pieces
+               || pieces.some(piece => // hex piece invalid
+                   !/^[\dA-Fa-f]{1,4}$/.test(piece) // for not being 1-4 valid chars
+                       && (piece !== lastPiece // except last piece
+                           || !ipv4.validate( // where IPv4-mapping appended invalid address
+                                   lastPiece.replace( // determined by stripping valid length suffixes first
+                                       /\/(?:0|(?:[1-2]?\d)|32|96)$/, ''), { verbose: false }
             )))
         );
         if (options.verbose) console.info('ipv6.validate() » '
