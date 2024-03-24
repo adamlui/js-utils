@@ -37,7 +37,7 @@ $ npm install generate-ip
 
 ## 🔌 API usage
 
-**generate-ip** provides the [**`ipv4`**](#ipv4-methods) and [**`ipv6`**](#ipv6-methods) APIs that can be imported into your app as ECMAScript modules or a CommonJS modules.
+**generate-ip** provides the [**`ipv4`**](#ipv4-methods) and [**`ipv6`**](#ipv6-methods) APIs that can be imported into your app as ECMAScript modules or CommonJS modules.
 
 #### ESM:
 
