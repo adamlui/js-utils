@@ -29,9 +29,10 @@ const ipv4 = {
         const addressIsValid = !( // false if any dq condition matches
                   segments.length !== 4 // not 4-segments long
                || segments.some(segment => // segment invalid
-                      !/^\d+$/.test(segment) // for being non-numeric
-                   || parseInt(segment, 10) < 0 // or negative
-                   || parseInt(segment, 10) > 255 ) // or > 255
+                       !/^\d+$/.test(segment) // for being non-numeric
+                    || parseInt(segment, 10) < 0 // or negative
+                    || parseInt(segment, 10) > 255 // or > 255
+                  )
         );
         if (options.verbose) console.info('ipv4.validate() » '
             + `IP is ${ !addressIsValid ? 'in' : '' }valid IPv4 address!`);
@@ -116,11 +117,11 @@ const ipv6 = {
                || /:{3,}/g.test(address) // 3+ consecutive ':'
                || pieces.length < 2 || pieces.length > 8 // 1 or 9+ hex pieces
                || pieces.some(piece => // hex piece invalid
-                   !/^[\dA-Fa-f]{1,4}$/.test(piece) // for not being 1-4 valid chars
-                       && (piece !== lastPiece // except last piece
-                           || !ipv4.validate( // where IPv4-mapping appended invalid address
-                                   lastPiece.replace( // determined by stripping valid length suffixes first
-                                       /\/(?:0|(?:[1-2]?\d)|32|96)$/, ''), { verbose: false }
+                      !/^[\dA-Fa-f]{1,4}$/.test(piece) // for not being 1-4 valid chars
+                          && (piece !== lastPiece // except last piece
+                              || !ipv4.validate( // where IPv4-mapping appended invalid address
+                                      lastPiece.replace( // determined by stripping valid length suffixes first
+                                          /\/(?:0|(?:[1-2]?\d)|32|96)$/, ''), { verbose: false }
                   )))
         );
         if (options.verbose) console.info('ipv6.validate() » '
