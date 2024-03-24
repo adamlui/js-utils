@@ -47,7 +47,13 @@ const { ipv4, ipv6 } = require('generate-ip');
 
 #
 
-### `ipv4.generate()`
+### `ipv4` methods
+
+Use the `ipv4` methods to generate and validate IPv4 addresses.
+
+#
+
+#### `ipv4.generate()`
 
 Generates **one** IPv4 address:
 
@@ -58,7 +64,7 @@ console.log(ip); // sample output: 36.42.224.208
 
 #
 
-### `ipv4.validate(address)`
+#### `ipv4.validate(address)`
 
 Checks if given `address` is a valid IPv4 address:
 
