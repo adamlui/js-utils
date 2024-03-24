@@ -37,6 +37,25 @@ const ipv4 = {
     }
 };
 
+const ipv6 = {
+    generate: function(options = {}) {
+        const defaultOptions = { verbose: true, leadingZeros: false, doubleColon: true };
+        options = { ...defaultOptions, ...options };
+        if (options.verbose) console.info('ipv6.generate() » '
+            + 'Generating IPv6 address...');
+        const pieces = [];
+        for (let i = 0; i < 8; i++) { // generate 8x 16-bit hex pieces
+            let hex = '';
+            for (let j = 0; j < 4; j++) // generate 4-char hex piece
+                hex += randomInt(0, 16).toString(16);
+            pieces.push(hex);
+        }
+        const ip = this.format(pieces.join(':'), { ...options, verbose: false });
+        if (options.verbose) console.log('\n' + ip);
+        return ip;
+    }
+}
+
 // EXPORT main functions if script was required
 if (require.main !== module) module.exports = { ipv4 };
 
