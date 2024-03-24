@@ -62,7 +62,7 @@ const ip = ipv4.generate();
 console.log(ip); // sample output: 36.42.224.208
 ```
 
-Available options:
+Available options (passed as object properties):
 
 Name        | Type    | Description                                                                    | Default Value
 ------------|---------|--------------------------------------------------------------------------------|---------------
@@ -79,7 +79,7 @@ const ipIsValid = ipv4.validate('36.42.224.208');
 console.log(ipIsValid); // outputs `true`
 ```
 
-Available options:
+Available options (passed as object properties):
 
 Name        | Type    | Description                                                                    | Default Value
 ------------|---------|--------------------------------------------------------------------------------|---------------
