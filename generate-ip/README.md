@@ -53,7 +53,7 @@ Use the `ipv4` methods to generate and validate IPv4 addresses.
 
 #
 
-#### `ipv4.generate()`
+#### `ipv4.generate([options])`
 
 Generates **one** IPv4 address:
 
@@ -62,9 +62,15 @@ const ip = ipv4.generate();
 console.log(ip); // sample output: 36.42.224.208
 ```
 
+Available options:
+
+Name        | Type    | Description                                                                    | Default Value
+------------|---------|--------------------------------------------------------------------------------|---------------
+`verbose`   | Integer | Show logging in console/terminal.                                              | `true`
+
 #
 
-#### `ipv4.validate(address)`
+#### `ipv4.validate(address[, options])`
 
 Checks if given `address` is a valid IPv4 address:
 
@@ -72,6 +78,12 @@ Checks if given `address` is a valid IPv4 address:
 const ipIsValid = ipv4.validate('36.42.224.208');
 console.log(ipIsValid); // outputs `true`
 ```
+
+Available options:
+
+Name        | Type    | Description                                                                    | Default Value
+------------|---------|--------------------------------------------------------------------------------|---------------
+`verbose`   | Integer | Show logging in console/terminal.                                              | `true`
 
 <br>
 
