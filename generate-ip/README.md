@@ -85,6 +85,60 @@ Name        | Type    | Description                                             
 ------------|---------|--------------------------------------------------------------------------------|---------------
 `verbose`   | Integer | Show logging in console/terminal.                                              | `true`
 
+#
+
+### `ipv6` methods
+
+Use the `ipv6` methods to generate, format, and validate IPv6 addresses.
+
+#
+
+#### `ipv6.generate([options])`
+
+Generates **one** IPv6 address, returned as a string:
+
+```js
+const ip = ipv6.generate();
+console.log(ip); // sample output: 1379:6748:810c:5e16:b6c9:ae2:939f:8f2a
+```
+
+Available options (passed as object properties):
+
+Name           | Type    | Description                                                                    | Default Value
+---------------|---------|--------------------------------------------------------------------------------|---------------
+`verbose`      | Integer | Show logging in console/terminal.                                              | `true`
+`leadingZeros` | Integer | Include leading zeros in hex pieces.                                           | `false`
+`doubleColon`  | Integer | Replace series of zeros w/ `::`                                                | `true`
+
+#
+
+
+#### `ipv6.format(ipv6Address[, options])`
+
+Formats an IPv6 address according to `options` passed, returning a string:
+
+```js
+const address = '0d::ffff:192.1.56.10/96'
+      formattedAddress = ipv6.format(address, { leadingZeros: true, doubleColon: false });
+
+/* outputs:
+
+ipv6.format() » Formatting 0d::ffff:192.1.56.10/96...
+ipv6.format() » Expanding '::' into zero series...
+ipv6.format() » Adding leading zeros...
+
+000d:0000:0000:0000:0000:0000:ffff:192.1.56.10/96
+*/
+```
+
+Available options (passed as object properties):
+
+Name           | Type    | Description                                                                    | Default Value
+---------------|---------|--------------------------------------------------------------------------------|---------------
+`verbose`      | Integer | Show logging in console/terminal.                                              | `true`
+`leadingZeros` | Integer | Include leading zeros in hex pieces.                                           | `false`
+`doubleColon`  | Integer | Replace series of zeros w/ `::`                                                | `true`
+
 <br>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
