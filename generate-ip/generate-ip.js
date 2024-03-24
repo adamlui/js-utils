@@ -15,7 +15,7 @@ const ipv4 = {
         const segments = [];
         for (let i = 0; i < 4; i++) segments.push(randomInt(0, 256));
         const ip = segments.join('.');
-        if (options.verbose) console.log('ipv4.generate() » ' + ip);
+        if (options.verbose) console.log('\n' + ip);
         return ip;
     },
     validate: function(address, options = {}) {
