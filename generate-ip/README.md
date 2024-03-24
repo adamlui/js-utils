@@ -31,7 +31,7 @@ $ npm install generate-ip
 
 ## 🔌 API usage
 
-**generate-ip** can be imported into your app as an ECMAScript module or a CommonJS module.
+**generate-ip**'s APIs can be imported into your app as ECMAScript modules or a CommonJS modules.
 
 #### ESM:
 
