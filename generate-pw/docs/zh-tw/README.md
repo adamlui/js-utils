@@ -135,6 +135,7 @@ const password = 'AawiddsE',
 console.log(pwStrength);
 
 /* 輸出：
+
 {
   strengthScore: 60,
   recommendations: [ 'Include at least one number.', 'Include at least one symbol.' ],

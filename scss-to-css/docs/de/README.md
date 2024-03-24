@@ -218,6 +218,7 @@ const suchergEbnisse = scssToCSS.findSCSS('assets/scss', { recursive: false });
 console.log(suchergEbnisse);
 
 /* beispielausgabe:
+
 Searching for SCSS files...
 Search complete. 2 files found.
 [
