@@ -92,7 +92,7 @@ const ipv6 = {
         } else { // expand '::' into zero series
             if (options.verbose) console.info('ipv6.format() » '
                 + 'Expanding \'::\' into zero series...');
-            const totalPieces = formattedAddress.split(':').length,
+            const totalPieces = formattedAddress.split(':').filter(Boolean).length,
                   zeroSegment = options.leadingZeros ? '0000' : '0',
                   zeroSeries = Array(8 - totalPieces).fill(zeroSegment).join(':');
             formattedAddress = formattedAddress.replace('::', `:${ zeroSeries }:`);
