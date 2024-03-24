@@ -17,7 +17,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "minify-js generate-ip.js dist && cp generate-ip.js ./dist 2> nul || copy generate-ip.js dist",
+    "build": "minify-js generate-ip.js dist",
     "bump:patch": "bash utils/bump.sh patch",
     "bump:minor": "bash utils/bump.sh minor",
     "bump:major": "bash utils/bump.sh major",
