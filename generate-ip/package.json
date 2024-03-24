@@ -1,7 +1,7 @@
 {
   "name": "generate-ip",
   "version": "1.0.0",
-  "description": "Randomly generate IPv4 addresses.",
+  "description": "Randomly generate IPv4 and IPv6 addresses.",
   "author": {
     "name": "Adam Lui",
     "email": "adam@kudoai.com",
