@@ -22,7 +22,7 @@ const ipv4 = {
         const defaultOptions = { verbose: true };
         options = { ...defaultOptions, ...options };
         if (options.verbose) console.info('ipv4.validate() » '
-            + 'Validating IPv4 address...');
+            + `Validating ${ address }...`);
         const segments = address.split('.');
         const addressIsValid = !( // false if any dq condition matches
                   segments.length !== 4 // not 4-segments long
@@ -32,7 +32,7 @@ const ipv4 = {
                    || parseInt(segment, 10) > 255 ) // or > 255
         );
         if (options.verbose) console.info('ipv4.validate() » '
-            + `${ address } is ${ !addressIsValid ? 'in' : '' }valid!`);
+            + `IP is ${ !addressIsValid ? 'in' : '' }valid IPv4 address!`);
         return addressIsValid;
     }
 };
