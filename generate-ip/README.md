@@ -19,6 +19,12 @@ As a **global utility**:
 $ npm install -g generate-ip
 ```
 
+As a **dev dependency**, from your project root:
+
+```
+$ npm install -D generate-ip
+```
+
 As a **runtime dependency**, from your project root:
 
 ```
