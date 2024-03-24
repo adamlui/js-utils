@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 // Import LIBS
-const { randomInt } = require('crypto'),
-      { execSync } = require('child_process');
+const { randomInt } = require('crypto'), // for secure RNG
+      { execSync } = require('child_process'); // for cross-platform CLI copying
 
 // Define MAIN functions
 
