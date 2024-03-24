@@ -10,6 +10,7 @@
   "homepage": "https://github.com/adamlui/js-utils",
   "license": "MIT",
   "main": "generate-ip.js",
+  "files": [ "dist" ],
   "bin": {
     "generateip": "generate-ip.js",
     "generate-ip": "generate-ip.js"
