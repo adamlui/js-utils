@@ -131,7 +131,7 @@ ipv6.format() » Adding leading zeros...
 */
 ```
 
-Available options (passed as object properties):
+Available options:
 
 Name           | Type    | Description                                                                    | Default Value
 ---------------|---------|--------------------------------------------------------------------------------|---------------
