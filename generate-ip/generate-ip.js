@@ -7,22 +7,34 @@ const { randomInt } = require('crypto'),
 // Define MAIN functions
 
 const ipv4 = {
-    generate: function() {
-        console.info('Generating ipv4 address...');
+    generate: function(options = {}) {
+        const defaultOptions = { verbose: true };
+        options = { ...defaultOptions, ...options };
+        if (options.verbose) console.info('ipv4.generate() » '
+            + 'Generating IPv4 address...');
         const segments = [];
         for (let i = 0; i < 4; i++) segments.push(randomInt(0, 256));
-        return segments.join('.');
+        const ip = segments.join('.');
+        if (options.verbose) console.log('ipv4.generate() » ' + ip);
+        return ip;
     },
-    validate: function(address) {
-        console.info(`Validating IPv4 address ${ address }...`);
+    validate: function(address, options = {}) {
+        const defaultOptions = { verbose: true };
+        options = { ...defaultOptions, ...options };
+        if (options.verbose) console.info('ipv4.validate() » '
+            + 'Validating IPv4 address...');
         const segments = address.split('.');
-        return !( // false if any dq condition matches
-               segments.length !== 4 // not 4-segments long
-            || segments.some(segment => // segment invalid
-                   !/^\d+$/.test(segment) // for being non-numeric
-                || parseInt(segment, 10) < 0 // or negative
-                || parseInt(segment, 10) > 255 // or > 255
-    ));}
+        const addressIsValid = !( // false if any dq condition matches
+                  segments.length !== 4 // not 4-segments long
+               || segments.some(segment => // segment invalid
+                      !/^\d+$/.test(segment) // for being non-numeric
+                   || parseInt(segment, 10) < 0 // or negative
+                   || parseInt(segment, 10) > 255 ) // or > 255
+        );
+        if (options.verbose) console.info('ipv4.validate() » '
+            + `${ address } is ${ !addressIsValid ? 'in' : '' }valid!`);
+        return addressIsValid;
+    }
 };
 
 // EXPORT main functions if script was required
