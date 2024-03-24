@@ -70,20 +70,6 @@ const ipv6 = {
         if (options.verbose) console.info(`ipv6.format() » Formatting ${ ipv6Address }...`);
         let formattedAddress = ipv6Address;
 
-        // Handle leading zeros
-        if (options.leadingZeros) { // add leading zeros
-            if (options.verbose) console.info('ipv6.format() » '
-                + 'Adding leading zeros...');
-            const pieces = ipv6Address.split(':');
-            for (let i = 0; i < pieces.length; i++)
-                while (pieces[i].length < 4) pieces[i] = '0' + pieces[i];
-            formattedAddress = pieces.join(':');
-        } else { // strip leading zeros
-            if (options.verbose) console.info('ipv6.format() » '
-                + 'Stripping leading zeros...');
-            formattedAddress = ipv6Address.replace(/(^|(?<=:))0+(?!:)/g, '$1');
-        }
-
         // Handle double colons
         if (options.doubleColon) { // replace zero series w/ '::'
             if (options.verbose) console.info('ipv6.format() » '
@@ -96,6 +82,20 @@ const ipv6 = {
                   zeroSegment = options.leadingZeros ? '0000' : '0',
                   zeroSeries = Array(8 - totalPieces).fill(zeroSegment).join(':');
             formattedAddress = formattedAddress.replace('::', `:${ zeroSeries }:`);
+        }
+
+        // Handle leading zeros
+        if (options.leadingZeros) { // add leading zeros
+            if (options.verbose) console.info('ipv6.format() » '
+                + 'Adding leading zeros...');
+            const pieces = formattedAddress.split(':');
+            for (let i = 0; i < pieces.length; i++)
+                while (pieces[i].length < 4) pieces[i] = '0' + pieces[i];
+            formattedAddress = pieces.join(':');
+        } else { // strip leading zeros
+            if (options.verbose) console.info('ipv6.format() » '
+                + 'Stripping leading zeros...');
+            formattedAddress = ipv6Address.replace(/(^|(?<=:))0+(?!:)/g, '$1');
         }
 
         if (options.verbose) console.info('\n'
