@@ -123,7 +123,7 @@ else { // run as CLI utility
         'dryRun': /^--?(?:n|dry-?run)$/,
         'includeDotFolders': /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
         'noSourceMaps': /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?|so?u?rce?-?maps?=(?:false|0))$/,
-        'noRecursion': /^--?(?:R|(?:disable|no)-?recursion|recursion=(?:false|0))$/,
+        'noRecursion': /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
         'noMinify': /^--?(?:M|(?:disable|no)-?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/,
         'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/,
         'help': /^--?h(?:elp)?$/,
