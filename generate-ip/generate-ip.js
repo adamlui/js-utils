@@ -119,7 +119,7 @@ const ipv6 = {
                     && (piece !== pieces[pieces.length - 1] // except last piece
                         || !ipv4.validate( // where IPv4-mapping appended invalid address
                                 pieces[pieces.length - 1].replace( // determined by stripping suffix first
-                                    /\/(0|([1-2]?\d)|32|96)$/, ''), { verbose: false }
+                                    /\/(?:0|(?:[1-2]?\d)|32|96)$/, ''), { verbose: false }
             )))
         );
         if (options.verbose) console.info('ipv6.validate() » '
