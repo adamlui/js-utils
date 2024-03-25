@@ -211,13 +211,13 @@ else { // run as CLI utility
     };
     process.argv.forEach(arg => {
         if (!arg.startsWith('-')) return;
-        const matchedFlag = Object.keys(argRegex.flags).find(flag => argRegex.flags[flag].test(arg)),
-              matchedArgOption = Object.keys(argRegex.paramOptions).find(option => argRegex.paramOptions[option].test(arg)),
+        const matchedParamOption = Object.keys(argRegex.paramOptions).find(option => argRegex.paramOptions[option].test(arg)),
+              matchedFlag = Object.keys(argRegex.flags).find(flag => argRegex.flags[flag].test(arg)),
               matchedCmd = Object.keys(argRegex.cmds).find(cmd => argRegex.cmds[cmd].test(arg));
         if (matchedFlag) config[matchedFlag] = true;
-        else if (matchedArgOption) {
+        else if (matchedParamOption) {
             const value = arg.split('=')[1];
-            config[matchedArgOption] = parseInt(value) || value;
+            config[matchedParamOption] = parseInt(value) || value;
         } else if (!matchedCmd) {
             console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
             console.info(`\n${by}Valid arguments are below.${nc}`);
