@@ -55,7 +55,7 @@ const { ipv4, ipv6 } = require('generate-ip');
 
 ### `ipv4` methods
 
-Use the `ipv4` methods to generate and validate IPv4 addresses.
+Use the `ipv4` methods to [**generate**](#ipv4generateoptions) and [**validate**](#ipv4validateaddress-options) IPv4 addresses.
 
 #
 
@@ -95,7 +95,7 @@ Name        | Type    | Description                                             
 
 ### `ipv6` methods
 
-Use the `ipv6` methods to generate, format, and validate IPv6 addresses.
+Use the `ipv6` methods to [**generate**](#ipv6generateoptions), [**format**](#ipv6formatipv6address-options), and **validate** IPv6 addresses.
 
 #
 
