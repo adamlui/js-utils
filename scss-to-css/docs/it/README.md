@@ -197,13 +197,13 @@ scssToCSS.compile(inputDir, { minify: false });
 
 I parametri disponibili (e le relative impostazioni predefinite) sono:
 
-Nome         | Descrizione                                                                      | Valore di default
--------------|----------------------------------------------------------------------------------|-------------------
+Nome         | Descrizione                                                                       | Valore di default
+-------------|-----------------------------------------------------------------------------------|-------------------
 `recursive`  | Cerca ricorsivamente i file nidificati se il percorso della direttorio è passato. | `true`
-`verbose`    | Mostra l'accesso nella console/terminale.                                        | `true`
-`dotFolders` | Includi cartelle punto nella ricerca di file.                                 | `false`
-`minify`     | Minimizza il CSS di output.                                                      | `true`
-`sourceMaps` | Genera mappe di origine CSS.                                                     | `true`
+`verbose`    | Mostra l'accesso nella console/terminale.                                         | `true`
+`dotFolders` | Includi cartelle punto nella ricerca di file.                                     | `false`
+`minify`     | Minimizza il CSS di output.                                                       | `true`
+`sourceMaps` | Genera mappe di origine CSS.                                                      | `true`
 
 #
 
@@ -231,11 +231,11 @@ Search complete. 2 files found.
 
 I parametri disponibili (e le relative impostazioni predefinite) sono:
 
-Nome         | Descrizione                                              | Valore di default
--------------|---------------------------------------------------------|---------------
+Nome         | Descrizione                                                                       | Valore di default
+-------------|-----------------------------------------------------------------------------------|-------------------
 `recursive`  | Cerca ricorsivamente i file nidificati se il percorso della direttorio è passato. | `true`
-`verbose`    | Mostra l'accesso nella console/terminale.                       | `true`
-`dotFolders` | Includi cartelle punto nella ricerca di file.                      | `false`
+`verbose`    | Mostra l'accesso nella console/terminale.                                         | `true`
+`dotFolders` | Includi cartelle punto nella ricerca di file.                                     | `false`
 
 <br>
 
