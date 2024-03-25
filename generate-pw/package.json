@@ -9,10 +9,10 @@
   },
   "homepage": "https://github.com/adamlui/js-utils",
   "license": "MIT",
-  "main": "generate-pw.js",
+  "main": "dist/generate-pw.min.js",
   "bin": {
-    "generatepw": "generate-pw.js",
-    "generate-pw": "generate-pw.js"
+    "generatepw": "dist/generate-pw.min.js",
+    "generate-pw": "dist/generate-pw.min.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
