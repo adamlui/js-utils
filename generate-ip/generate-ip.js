@@ -23,8 +23,7 @@ const ipv4 = {
             'ipv4.generate() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
 
         // Generate IPv4 address
-        if (options.verbose) console.info('ipv4.generate() » '
-            + 'Generating IPv4 address...');
+        if (options.verbose) console.info('ipv4.generate() » Generating IPv4 address...');
         const segments = [];
         for (let i = 0; i < 4; i++) segments.push(randomInt(0, 256));
         const ip = segments.join('.');
@@ -51,8 +50,7 @@ const ipv4 = {
             'ipv4.validate() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
 
         // Validate address as IPv4 address
-        if (options.verbose) console.info('ipv4.validate() » '
-            + `Validating ${ address }...`);
+        if (options.verbose) console.info(`ipv4.validate() » Validating ${ address }...`);
         const segments = address.split('.');
         const addressIsValid = !( // false if any dq condition matches
                   segments.length !== 4 // not 4-segments long
@@ -62,8 +60,8 @@ const ipv4 = {
                     || parseInt(segment, 10) > 255 // or > 255
                   )
         );
-        if (options.verbose) console.info('ipv4.validate() » '
-            + `IP is ${ !addressIsValid ? 'in' : '' }valid IPv4 address!`);
+        if (options.verbose) console.info(
+            `ipv4.validate() » IP is ${ !addressIsValid ? 'in' : '' }valid IPv4 address!`);
         return addressIsValid;
     }
 };
@@ -86,8 +84,7 @@ const ipv6 = {
         }
 
         // Generate IPv6 address
-        if (options.verbose) console.info('ipv6.generate() » '
-            + 'Generating IPv6 address...');
+        if (options.verbose) console.info('ipv6.generate() » Generating IPv6 address...');
         const pieces = [];
         for (let i = 0; i < 8; i++) { // generate 8x 16-bit hex pieces
             let hex = '';
@@ -120,21 +117,20 @@ const ipv6 = {
         }
 
         // Validate address as IPv6 address
-        if (!this.validate(address, { verbose: false}))
-            return console.error('ipv6.format() » '
-                + `ERROR: \n- ${ address } is not a valid IPv6 address.`);
+        if (!this.validate(address, { verbose: false})) return console.error(
+            `ipv6.format() » ERROR: \n- ${ address } is not a valid IPv6 address.`);
 
         if (options.verbose) console.info(`ipv6.format() » Formatting ${ address }...`);
         let formattedAddress = address;
 
         // Handle double colons
         if (options.doubleColon) { // replace zero series w/ '::'
-            if (options.verbose) console.info('ipv6.format() » '
-                + 'Replacing zero series w/ \'::\'...');
+            if (options.verbose) console.info(
+                'ipv6.format() » Replacing zero series w/ \'::\'...');
             formattedAddress = formattedAddress.replace(/:(?:0+:)+/, '::');
         } else { // expand '::' into zero series
-            if (options.verbose) console.info('ipv6.format() » '
-                + 'Expanding \'::\' into zero series...');
+            if (options.verbose) console.info(
+                'ipv6.format() » Expanding \'::\' into zero series...');
             const totalPieces = formattedAddress.split(':').filter(Boolean).length,
                   zeroSegment = options.leadingZeros ? '0000' : '0',
                   zeroSeries = Array(8 - totalPieces).fill(zeroSegment).join(':');
@@ -143,15 +139,15 @@ const ipv6 = {
 
         // Handle leading zeros
         if (options.leadingZeros) { // add leading zeros
-            if (options.verbose) console.info('ipv6.format() » '
-                + 'Adding leading zeros...');
+            if (options.verbose) console.info(
+                'ipv6.format() » Adding leading zeros...');
             const pieces = formattedAddress.split(':');
             for (let i = 0; i < pieces.length; i++)
                 while (pieces[i].length < 4) pieces[i] = '0' + pieces[i];
             formattedAddress = pieces.join(':');
         } else { // strip leading zeros
-            if (options.verbose) console.info('ipv6.format() » '
-                + 'Stripping leading zeros...');
+            if (options.verbose) console.info(
+                'ipv6.format() » Stripping leading zeros...');
             formattedAddress = address.replace(/(^|(?<=:))0+(?!:)/g, '$1');
         }
 
@@ -180,8 +176,8 @@ const ipv6 = {
             'ipv6.validate() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
 
         // Validate address as IPv6 address
-        if (options.verbose) console.info('ipv6.validate() » '
-            + `Validating ${ address }...`);
+        if (options.verbose) console.info(
+            `ipv6.validate() » Validating ${ address }...`);
         const pieces = address.split(/::?/),
               lastPiece = pieces[pieces.length - 1];
         const addressIsValid = !( // false if any dq condition matches
@@ -196,8 +192,8 @@ const ipv6 = {
                                           /\/(?:0|(?:[1-2]?\d)|32|96)$/, ''), { verbose: false }
                   )))
         );
-        if (options.verbose) console.info('ipv6.validate() » '
-            + `IP is ${ !addressIsValid ? 'in' : '' }valid IPv6 address!`);
+        if (options.verbose) console.info(
+            `ipv6.validate() » IP is ${ !addressIsValid ? 'in' : '' }valid IPv6 address!`);
         return addressIsValid;
     }
 };
