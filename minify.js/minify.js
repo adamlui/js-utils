@@ -52,7 +52,7 @@ function findJS(searchDir, options = {}) {
 
     // Log/return final result
     if (!options.isRecursing && options.verbose) {
-        console.info('findJS() » Search complete. '
+        console.info('findJS() » Search complete! '
             + ( jsFiles.length === 0 ? 'No' : jsFiles.length )
                 + ` file${ jsFiles.length > 1 ? 's' : '' } found.`
             + ( findJS.caller.name !== 'minify' ? '\nfindJS() » Check returned object.' : '' ));
