@@ -217,8 +217,9 @@ console.log(searchResults);
 
 /* 範例輸出：
 
-Searching for unminified JS files...
-Search complete. 2 files found.
+findJS() » Searching for unminified JS files...
+findJS() » Search complete! 2 files found.
+findJS() » Check returned array.
 [
   'E:\\js\\utils\\minify.js\\assets\\js\\foo.js',
   'E:\\js\\utils\\minify.js\\assets\\js\\bar.js'

@@ -224,8 +224,9 @@ console.log(searchResults);
 
 /* sample output:
 
-Searching for SCSS files...
-Search complete. 2 files found.
+findSCSS() » Searching for SCSS files...
+findSCSS() » Search complete! 2 files found.
+findSCSS() » Check returned array.
 [
   'E:\\js\\utils\\minify.js\\assets\\scss\\foo.scss',
   'E:\\js\\utils\\minify.js\\assets\\scss\\bar.scss'
