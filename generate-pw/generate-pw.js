@@ -241,9 +241,9 @@ else { // run as CLI utility
         const funcOptions = {
             length: config.length || 8, qty: config.qty || 1,
             charset: config.charset, exclude: config.excludeChars,
-            numbers: config.includeNums, symbols: config.includeSymbols,
+            numbers: !!config.includeNums, symbols: !!config.includeSymbols,
             lowercase: !config.excludeLowerChars, uppercase: !config.excludeUpperChars,
-            strict: config.strictMode
+            strict: !!config.strictMode
         };
         const pwResult = generatePassword(funcOptions);
         copyToClipboard(Array.isArray(pwResult) ? pwResult.join('\n') : pwResult);
