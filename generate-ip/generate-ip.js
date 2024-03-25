@@ -151,9 +151,9 @@ const ipv6 = {
             formattedAddress = address.replace(/(^|(?<=:))0+(?!:)/g, '$1');
         }
 
-        if (options.verbose) console.info('\n'
-            + ( formattedAddress !== address ? formattedAddress
-                                                 : 'Address cannot be formatted!' ));
+        if (options.verbose) console.info(
+            formattedAddress !== address ? formattedAddress
+                                         : 'ipv6.format() » Address cannot be formatted!\n' );
         return formattedAddress;
     },
 
