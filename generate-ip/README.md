@@ -82,7 +82,14 @@ Checks if given `address` is a valid IPv4 address:
 
 ```js
 const ipIsValid = ipv4.validate('36.42.224.208');
-console.log(ipIsValid); // outputs `true`
+console.log(ipIsValid);
+
+/* outputs:
+
+ipv4.validate() » Validating 36.42.224.208...
+ipv4.validate() » IP is valid IPv4 address!
+true
+*/
 ```
 
 Available options (passed as object properties):
