@@ -100,7 +100,7 @@ const ipv6 = {
         return ip;
     },
 
-    format: function(ipv6Address, options = {}) {
+    format: function(address, options = {}) {
 
         // Init options
         const defaultOptions = { verbose: true, leadingZeros: false, doubleColon: true };
@@ -115,13 +115,13 @@ const ipv6 = {
                 `ipv6.format() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
         }
 
-        // Validate ipv6Address
-        if (!this.validate(ipv6Address, { verbose: false}))
+        // Validate address as arg
+        if (!this.validate(address, { verbose: false}))
             return console.error('ipv6.format() » '
-                + `ERROR: \n- ${ ipv6Address } is not a valid IPv6 address.`);
+                + `ERROR: \n- ${ address } is not a valid IPv6 address.`);
 
-        if (options.verbose) console.info(`ipv6.format() » Formatting ${ ipv6Address }...`);
-        let formattedAddress = ipv6Address;
+        if (options.verbose) console.info(`ipv6.format() » Formatting ${ address }...`);
+        let formattedAddress = address;
 
         // Handle double colons
         if (options.doubleColon) { // replace zero series w/ '::'
@@ -148,11 +148,11 @@ const ipv6 = {
         } else { // strip leading zeros
             if (options.verbose) console.info('ipv6.format() » '
                 + 'Stripping leading zeros...');
-            formattedAddress = ipv6Address.replace(/(^|(?<=:))0+(?!:)/g, '$1');
+            formattedAddress = address.replace(/(^|(?<=:))0+(?!:)/g, '$1');
         }
 
         if (options.verbose) console.info('\n'
-            + ( formattedAddress !== ipv6Address ? formattedAddress
+            + ( formattedAddress !== address ? formattedAddress
                                                  : 'Address cannot be formatted!' ));
         return formattedAddress;
     },

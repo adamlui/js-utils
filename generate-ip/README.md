@@ -126,7 +126,7 @@ Name           | Type    | Description                                          
 #
 
 
-#### `ipv6.format(ipv6Address[, options])`
+#### `ipv6.format(address[, options])`
 
 Formats an IPv6 address according to `options` passed, returning a string:
 
