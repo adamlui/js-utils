@@ -10,6 +10,7 @@
   "homepage": "https://github.com/adamlui/js-utils",
   "license": "MIT",
   "main": "scss-to-css.js",
+  "files": [ "dist", "docs/", "!docs/*/" ],
   "bin": {
     "scsstocss": "scss-to-css.js",
     "scss-to-css": "scss-to-css.js"
