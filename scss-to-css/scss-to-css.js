@@ -91,7 +91,6 @@ function compile(inputPath, options = {}) {
             if (options.verbose) console.info(`compile() » Compiling ${ inputPath }...`);
             try { // to compile file passed
                 const compileResult = sass.compile(inputPath, compileOptions);
-                console.info('compile() » Compilation complete! Check returned object.');
                 return { code: compileResult.css, srcMap: compileResult.sourceMap,
                          srcPath: path.resolve(process.cwd(), inputPath) };
             } catch (err) { console.error(`\ncompile() » ERROR: ${ err.message }\n`); return { error: err }; }
@@ -102,7 +101,6 @@ function compile(inputPath, options = {}) {
                     if (options.verbose) console.info(`compile() » Compiling ${ scssPath }...`); 
                     try { // to compile found file
                         const compileResult = sass.compile(scssPath, compileOptions);
-                        console.info('compile() » Compilation complete! Check returned object.');
                         return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: scssPath };
                     } catch (err) { console.error(`\ncompile() » ERROR: ${ err.message }\n`); return { error: err }; }
                 }).filter(data => !data.error ); // filter out failed compilations
