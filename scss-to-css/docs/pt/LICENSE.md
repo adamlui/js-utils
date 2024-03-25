@@ -15,7 +15,8 @@
         <a href="../de/LICENSE.md">Deutsch</a> |
         <a href="../es/LICENSE.md">Español</a> |
         <a href="../fr/LICENSE.md">Français</a> |
-        <a href="../it/LICENSE.md">Italiano</a>
+        <a href="../it/LICENSE.md">Italiano</a> |
+        <a href="../nl/LICENSE.md">Nederlands</a>
     </h6>
 </div>
 

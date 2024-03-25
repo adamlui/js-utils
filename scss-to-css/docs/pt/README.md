@@ -14,8 +14,9 @@
         <a href="../pa#readme">ਪੰਜਾਬੀ</a> |
         <a href="../de#readme">Deutsch</a> |
         <a href="../es#readme">Español</a> |
+        <a href="../fr#readme">Français</a> |
         <a href="../it#readme">Italiano</a> |
-        <a href="../fr#readme">Français</a>
+        <a href="../nl#readme">Nederlands</a>
     </h6>
 </div>
 

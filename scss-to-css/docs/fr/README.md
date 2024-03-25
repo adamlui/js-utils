@@ -15,6 +15,7 @@
         <a href="../de#readme">Deutsch</a> |
         <a href="../es#readme">Español</a> |
         <a href="../it#readme">Italiano</a> |
+        <a href="../nl#readme">Nederlands</a> |
         <a href="../pt#readme">Português</a>
     </h6>
 </div>
