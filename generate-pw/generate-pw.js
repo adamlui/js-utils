@@ -34,7 +34,7 @@ function generatePassword(options = {}) {
     for (const numArgType of ['length', 'qty'])
         if (isNaN(options[numArgType]) || options[numArgType] < 1)
             return console.error(
-                `ERROR: [${ numArgType }] argument must be 1 or greater.`);
+                `generatePassword() » ERROR: [${ numArgType }] argument must be 1 or greater.`);
 
     if (options.qty > 1) { // return array of [qty] password strings
         const { qty, ...otherOptions } = options;
@@ -76,7 +76,7 @@ function generatePassword(options = {}) {
 function generatePasswords(qty, options) {
     qty = parseInt(qty);
     if (isNaN(qty)) return console.error(
-        'ERROR: First argument [qty] of generatePasswords() must be an integer');
+        'generatePasswords() » ERROR: First argument [qty] of generatePasswords() must be an integer');
     const passwords = [];
     for (let i = 0; i < qty; i++) passwords.push(generatePassword(options));
     return passwords;
