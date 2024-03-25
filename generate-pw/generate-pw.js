@@ -73,10 +73,28 @@ function generatePassword(options = {}) {
     }
 }
 
-function generatePasswords(qty, options) {
+function generatePasswords(qty, options = {}) {
+
+    // Init options
+    const defaultOptions = {
+        length: 8,       // length of password
+        qty: 1,          // number of passwords to generate
+        charset: '',     // characters to include
+        exclude: '',     // characters to exclude
+        numbers: false,  // include numberChars
+        symbols: false,  // include symbolChars
+        lowercase: true, // include lowercase letters
+        uppercase: true, // include uppercase letters
+        strict: false    // require at least one char from each enabled set
+    };
+    options = { ...defaultOptions, ...options };
+
+    // Validate qty
     qty = parseInt(qty);
     if (isNaN(qty)) return console.error(
         'generatePasswords() » ERROR: First argument [qty] of generatePasswords() must be an integer');
+
+    // Generate/return passwords
     const passwords = [];
     for (let i = 0; i < qty; i++) passwords.push(generatePassword(options));
     return passwords;
