@@ -95,7 +95,7 @@ Name        | Type    | Description                                             
 
 ### `ipv6` methods
 
-Use the `ipv6` methods to [**generate**](#ipv6generateoptions), [**format**](#ipv6formatipv6address-options), and **validate** IPv6 addresses.
+Use the `ipv6` methods to [**generate**](#ipv6generateoptions), [**format**](#ipv6formatipv6address-options), and [**validate**](#ipv6validateaddress-options) IPv6 addresses.
 
 #
 
@@ -144,6 +144,31 @@ Name           | Type    | Description                                          
 `verbose`      | Boolean | Show logging in console/terminal.                                              | `true`
 `leadingZeros` | Boolean | Include leading zeros in hex pieces.                                           | `false`
 `doubleColon`  | Boolean | Replace series of zeros w/ `::`                                                | `true`
+
+#
+
+#### `ipv6.validate(address[, options])`
+
+Checks if given `address` is a valid IPv6 address:
+
+```js
+const address = '0:0:0:0:0:ffff:192.1.56.10/96',
+      ipIsValid = ipv6.validate(address);
+console.log(ipIsValid);
+
+/* outputs:
+
+ipv6.validate() » Validating 0:0:0:0:0:ffff:192.1.56.10/96...
+ipv6.validate() » IP is valid IPv6 address!
+true
+*/
+```
+
+Available options (passed as object properties):
+
+Name        | Type    | Description                                                                    | Default Value
+------------|---------|--------------------------------------------------------------------------------|---------------
+`verbose`   | Boolean | Show logging in console/terminal.                                              | `true`
 
 <br>
 
