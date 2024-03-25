@@ -9,15 +9,15 @@
   },
   "homepage": "https://github.com/adamlui/js-utils",
   "license": "MIT",
-  "main": "scss-to-css.js",
+  "main": "dist/scss-to-css.min.js",
   "files": [
     "dist",
     "docs/",
     "!docs/*/"
   ],
   "bin": {
-    "scsstocss": "scss-to-css.js",
-    "scss-to-css": "scss-to-css.js"
+    "scsstocss": "dist/scss-to-css.min.js",
+    "scss-to-css": "dist/scss-to-css.min.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
