@@ -221,7 +221,7 @@ else { // run as CLI utility
         } else if (!matchedCmd) {
             console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
             console.info(`\n${by}Valid arguments are below.${nc}`);
-            printHelpSections(['paramOptions', 'booelanOptions', 'infoCmds']);
+            printHelpSections(['paramOptions', 'flags', 'infoCmds']);
             process.exit(1);
     }});
 
@@ -249,7 +249,7 @@ else { // run as CLI utility
         copyToClipboard(Array.isArray(pwResult) ? pwResult.join('\n') : pwResult);
     }
 
-    function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'booelanOptions', 'infoCmds']) {
+    function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'flags', 'infoCmds']) {
         const helpSections = {
             'cmdFormat': [
                 `\n${by}generate-pw [options|commands]${nc}`
@@ -262,7 +262,7 @@ else { // run as CLI utility
                 ' --charset=chars             Only include chars in password(s).',
                 ' --exclude=chars             Exclude chars from password(s).'
             ],
-            'booelanOptions': [
+            'flags': [
                 '\nBoolean options:',
                 ' -n, --include-numbers       Allow numbers in password(s).',
                 ' -s, --include-symbols       Allow symbols in password(s).',
