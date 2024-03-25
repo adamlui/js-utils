@@ -30,11 +30,17 @@ function generatePassword(options = {}) {
     };
     options = { ...defaultOptions, ...options };
 
-    // Validate integer args
+    // Validate options
+    for (const key of Object.keys(options))
+        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
+            `generatePassword() » ERROR: \`${ key }\` is an invalid option.`
+                + `\ngeneratePassword() » Valid options:\n  [ ${Object.keys(defaultOptions).join(', ')} ]`);
     for (const numArgType of ['length', 'qty'])
-        if (isNaN(options[numArgType]) || options[numArgType] < 1)
-            return console.error(
-                `generatePassword() » ERROR: [${ numArgType }] argument must be 1 or greater.`);
+        if (isNaN(options[numArgType]) || options[numArgType] < 1) return console.error(
+            `generatePassword() » ERROR: [${ numArgType }] argument must be 1 or greater.`);
+    for (const booleanArgType of ['numbers', 'symbols', 'lowercase', 'uppercase', 'strict'])
+        if (typeof options[booleanArgType] !== 'boolean') return console.error(
+            `generatePassword() » ERROR: [${ booleanArgType }] option can only be \`true\` or \`false\`.`);
 
     if (options.qty > 1) { // return array of [qty] password strings
         const { qty, ...otherOptions } = options;
@@ -93,6 +99,17 @@ function generatePasswords(qty, options = {}) {
     qty = parseInt(qty);
     if (isNaN(qty)) return console.error(
         'generatePasswords() » ERROR: First argument [qty] of generatePasswords() must be an integer');
+
+    // Validate options
+    for (const key of Object.keys(options))
+        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
+            `generatePasswords() » ERROR: \`${ key }\` is an invalid option.`
+                + `\ngeneratePassword() » Valid options:\n  [ ${Object.keys(defaultOptions).join(', ')} ]`);
+    if (isNaN(options.length) || options.length < 1) return console.error(
+        'generatePasswords() » ERROR: [length] argument must be 1 or greater.');
+    for (const booleanArgType of ['numbers', 'symbols', 'lowercase', 'uppercase', 'strict'])
+        if (typeof options[booleanArgType] !== 'boolean') return console.error(
+            `generatePasswords() » ERROR: [${ booleanArgType }] option can only be \`true\` or \`false\`.`);
 
     // Generate/return passwords
     const passwords = [];
