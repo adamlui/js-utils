@@ -87,7 +87,6 @@ function minify(input, options = {}) {
             if (options.verbose) console.info(`minify() » Minifying ${ input }...`);
             const minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions);
             if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
-            else console.info('minify() » Minification complete! Check returned object.');
             return { code: minifyResult.code, srcPath: path.resolve(process.cwd(), input),
                      error: minifyResult.error };
         } else { // dir path passed
@@ -98,7 +97,6 @@ function minify(input, options = {}) {
                     const srcCode = fs.readFileSync(jsPath, 'utf8'),
                           minifyResult = uglifyJS.minify(srcCode, minifyOptions);
                     if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
-                    else console.info('minify() » Minification complete! Check returned object.');
                     return { code: minifyResult.code, srcPath: jsPath, error: minifyResult.error };
                 }).filter(data => !data.error); // filter out failed minifications
         }
@@ -106,7 +104,7 @@ function minify(input, options = {}) {
         if (options.verbose) console.info('minify() » Minifying passed source code...');
         const minifyResult = uglifyJS.minify(input, minifyOptions);
         if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
-        else console.info('minify() » Minification complete! Check returned object.');
+
         return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error };
     }
 }
