@@ -158,7 +158,7 @@ else { // run as CLI utility
     const argRegex = {
         paramOptions: {
             'length': /^--?length/,
-            'qty': /^--?qu?a?n?ti?t?y=\d+$/,
+            'qty': /^--?qu?a?n?ti?t?y=.*$/,
             'charset': /^--?chars/,
             'excludeChars': /^--?exclude=/
         },
