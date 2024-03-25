@@ -199,8 +199,10 @@ else { // run as CLI utility
 
     else { // run MAIN routine
         for (const numArgType of ['length', 'qty'])
-            if (config[numArgType] && (isNaN(config[numArgType]) || config[numArgType] < 1))
-                return console.error(`\n${br}Error: [${ numArgType }] argument must be 1 or greater.${nc}`);
+            if (config[numArgType] && (isNaN(config[numArgType]) || config[numArgType] < 1)) {
+                console.error(`\n${br}Error: [${ numArgType }] argument must be 1 or greater.${nc}`);
+                process.exit(1);
+            }
         const funcOptions = {
             length: config.length || 8, qty: config.qty || 1,
             charset: config.charset, exclude: config.excludeChars,
