@@ -10,6 +10,11 @@
   "homepage": "https://github.com/adamlui/js-utils",
   "license": "MIT",
   "main": "dist/generate-pw.min.js",
+  "files": [
+    "dist",
+    "docs/",
+    "!docs/*/"
+  ],
   "bin": {
     "generatepw": "dist/generate-pw.min.js",
     "generate-pw": "dist/generate-pw.min.js"
