@@ -72,7 +72,7 @@ Available options (passed as object properties):
 
 Name        | Type    | Description                                                                    | Default Value
 ------------|---------|--------------------------------------------------------------------------------|---------------
-`verbose`   | Integer | Show logging in console/terminal.                                              | `true`
+`verbose`   | Boolean | Show logging in console/terminal.                                              | `true`
 
 #
 
@@ -89,7 +89,7 @@ Available options (passed as object properties):
 
 Name        | Type    | Description                                                                    | Default Value
 ------------|---------|--------------------------------------------------------------------------------|---------------
-`verbose`   | Integer | Show logging in console/terminal.                                              | `true`
+`verbose`   | Boolean | Show logging in console/terminal.                                              | `true`
 
 #
 
@@ -112,9 +112,9 @@ Available options (passed as object properties):
 
 Name           | Type    | Description                                                                    | Default Value
 ---------------|---------|--------------------------------------------------------------------------------|---------------
-`verbose`      | Integer | Show logging in console/terminal.                                              | `true`
-`leadingZeros` | Integer | Include leading zeros in hex pieces.                                           | `false`
-`doubleColon`  | Integer | Replace series of zeros w/ `::`                                                | `true`
+`verbose`      | Boolean | Show logging in console/terminal.                                              | `true`
+`leadingZeros` | Boolean | Include leading zeros in hex pieces.                                           | `false`
+`doubleColon`  | Boolean | Replace series of zeros w/ `::`                                                | `true`
 
 #
 
@@ -141,9 +141,9 @@ Available options:
 
 Name           | Type    | Description                                                                    | Default Value
 ---------------|---------|--------------------------------------------------------------------------------|---------------
-`verbose`      | Integer | Show logging in console/terminal.                                              | `true`
-`leadingZeros` | Integer | Include leading zeros in hex pieces.                                           | `false`
-`doubleColon`  | Integer | Replace series of zeros w/ `::`                                                | `true`
+`verbose`      | Boolean | Show logging in console/terminal.                                              | `true`
+`leadingZeros` | Boolean | Include leading zeros in hex pieces.                                           | `false`
+`doubleColon`  | Boolean | Replace series of zeros w/ `::`                                                | `true`
 
 <br>
 
