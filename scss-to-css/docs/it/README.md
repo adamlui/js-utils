@@ -201,7 +201,7 @@ Nome         | Descrizione                                                      
 -------------|----------------------------------------------------------------------------------|-------------------
 `recursive`  | Cerca ricorsivamente i file nidificati se il percorso della direttorio è passato. | `true`
 `verbose`    | Mostra l'accesso nella console/terminale.                                        | `true`
-`dotFolders` | Includi cartelle di punti nella ricerca di file.                                 | `false`
+`dotFolders` | Includi cartelle punto nella ricerca di file.                                 | `false`
 `minify`     | Minimizza il CSS di output.                                                      | `true`
 `sourceMaps` | Genera mappe di origine CSS.                                                     | `true`
 
@@ -235,7 +235,7 @@ Nome         | Descrizione                                              | Valore
 -------------|---------------------------------------------------------|---------------
 `recursive`  | Cerca ricorsivamente i file nidificati se il percorso della direttorio è passato. | `true`
 `verbose`    | Mostra l'accesso nella console/terminale.                       | `true`
-`dotFolders` | Includi cartelle di punti nella ricerca di file.                      | `false`
+`dotFolders` | Includi cartelle punto nella ricerca di file.                      | `false`
 
 <br>
 
