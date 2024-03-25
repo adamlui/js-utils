@@ -9,8 +9,20 @@ const { randomInt } = require('crypto'), // for secure RNG
 const ipv4 = {
 
     generate: function(options = {}) {
+
+        // Init options
         const defaultOptions = { verbose: true };
         options = { ...defaultOptions, ...options };
+
+        // Validate options
+        for (const key of Object.keys(options))
+            if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
+                `ipv4.generate() » ERROR: \`${ key }\` is an invalid option.`
+                    + `\nipv4.generate() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+        if (typeof options.verbose !== 'boolean') return console.error(
+            'ipv4.generate() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
+
+        // Generate IPv4 address
         if (options.verbose) console.info('ipv4.generate() » '
             + 'Generating IPv4 address...');
         const segments = [];
@@ -21,8 +33,20 @@ const ipv4 = {
     },
 
     validate: function(address, options = {}) {
+
+        // Init options
         const defaultOptions = { verbose: true };
         options = { ...defaultOptions, ...options };
+
+        // Validate options
+        for (const key of Object.keys(options))
+            if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
+                `ipv4.validate() » ERROR: \`${ key }\` is an invalid option.`
+                    + `\nipv4.validate() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+        if (typeof options.verbose !== 'boolean') return console.error(
+            'ipv4.validate() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
+
+        // Validate address as IPv4 address
         if (options.verbose) console.info('ipv4.validate() » '
             + `Validating ${ address }...`);
         const segments = address.split('.');
@@ -43,8 +67,21 @@ const ipv4 = {
 const ipv6 = {
 
     generate: function(options = {}) {
+
+        // Init options
         const defaultOptions = { verbose: true, leadingZeros: false, doubleColon: true };
         options = { ...defaultOptions, ...options };
+
+        // Validate options
+        for (const key in options) {
+            if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
+                `ipv6.generate() » ERROR: \`${ key }\` is an invalid option.`
+                    + `\nipv6.generate() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+            if (typeof options[key] !== 'boolean') return console.error(
+                `ipv6.generate() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+        }
+
+        // Generate IPv6 address
         if (options.verbose) console.info('ipv6.generate() » '
             + 'Generating IPv6 address...');
         const pieces = [];
@@ -60,8 +97,19 @@ const ipv6 = {
     },
 
     format: function(ipv6Address, options = {}) {
+
+        // Init options
         const defaultOptions = { verbose: true, leadingZeros: false, doubleColon: true };
         options = { ...defaultOptions, ...options };
+
+        // Validate options
+        for (const key in options) {
+            if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
+                `ipv6.format() » ERROR: \`${ key }\` is an invalid option.`
+                    + `\nipv6.format() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+            if (typeof options[key] !== 'boolean') return console.error(
+                `ipv6.format() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+        }
 
         // Validate ipv6Address
         if (!this.validate(ipv6Address, { verbose: false}))
@@ -106,8 +154,20 @@ const ipv6 = {
     },
 
     validate: function(address, options = {}) {
+
+        // Init options
         const defaultOptions = { verbose: true };
         options = { ...defaultOptions, ...options };
+
+        // Validate options
+        for (const key of Object.keys(options))
+            if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
+                `ipv6.validate() » ERROR: \`${ key }\` is an invalid option.`
+                    + `\nipv6.validate() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+        if (typeof options.verbose !== 'boolean') return console.error(
+            'ipv6.validate() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
+
+        // Validate address as IPv6 address
         if (options.verbose) console.info('ipv6.validate() » '
             + `Validating ${ address }...`);
         const pieces = address.split(/::?/),
