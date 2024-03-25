@@ -38,6 +38,10 @@ const ipv4 = {
         const defaultOptions = { verbose: true };
         options = { ...defaultOptions, ...options };
 
+        // Validate address as arg
+        if (typeof address !== 'string') return console.error(
+            'ipv4.validate() » ERROR: 1st arg `address` must be a string.');
+
         // Validate options
         for (const key of Object.keys(options))
             if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
@@ -158,6 +162,10 @@ const ipv6 = {
         // Init options
         const defaultOptions = { verbose: true };
         options = { ...defaultOptions, ...options };
+
+        // Validate address as arg
+        if (typeof address !== 'string') return console.error(
+            'ipv6.validate() » ERROR: 1st arg `address` must be a string.');
 
         // Validate options
         for (const key of Object.keys(options))
