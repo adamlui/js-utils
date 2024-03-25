@@ -1,6 +1,6 @@
 {
   "name": "@adamlui/scss-to-css",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "description": "Recursively compile all SCSS files into minified CSS",
   "author": {
     "name": "Adam Lui",
@@ -10,7 +10,11 @@
   "homepage": "https://github.com/adamlui/js-utils",
   "license": "MIT",
   "main": "scss-to-css.js",
-  "files": [ "dist", "docs/", "!docs/*/" ],
+  "files": [
+    "dist",
+    "docs/",
+    "!docs/*/"
+  ],
   "bin": {
     "scsstocss": "scss-to-css.js",
     "scss-to-css": "scss-to-css.js"
