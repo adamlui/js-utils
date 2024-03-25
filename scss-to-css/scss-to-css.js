@@ -15,13 +15,13 @@ function findSCSS(searchDir, options = {}) {
 
     // Validate searchDir
     if (!searchDir) return console.error(
-        'findSCSS() error: Please supply a `searchDir` arg.');
+        'findSCSS() » ERROR: Please supply a `searchDir` as 1st arg.');
     else if (typeof searchDir !== 'string') return console.error(
-        'findSCSS() error: Arg `searchDir` must be a string.');
+        'findSCSS() » ERROR: 1st arg `searchDir` must be a string.');
     else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir);
         if (!fs.existsSync(searchPath)) return console.error(
-            'findSCSS() error: Arg `searchDir` must be an existing directory.'
+            'findSCSS() » ERROR: Arg `searchDir` must be an existing directory.'
                 + `\n'${ searchPath }' does not exist.`);
     }
 
@@ -29,15 +29,16 @@ function findSCSS(searchDir, options = {}) {
     for (const key of Object.keys(options)) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key))
             if (key !== 'isRecursing') return console.error(
-                `findSCSS() error: \`${ key }\` is an invalid option.`
-                    + `\nValid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+                `findSCSS() » ERROR: \`${ key }\` is an invalid option.`
+                    + `\nfindSCSS() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
-            `findSCSS() error: \`${ key }\` option must be set to \`true\` or \`false\`.`);
+            `findSCSS() » ERROR: \`${ key }\` option must be set to \`true\` or \`false\`.`);
     }
 
     // Search for SCSS
     const dirFiles = fs.readdirSync(searchDir), scssFiles = [];
-    if (options.verbose && !options.isRecursing) console.info('\nSearching for SCSS files...');
+    if (options.verbose && !options.isRecursing) console.info(
+        '\nfindSCSS() » Searching for SCSS files...');
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file);
         if (fs.statSync(filePath).isDirectory() && file != 'node_modules'
@@ -50,9 +51,10 @@ function findSCSS(searchDir, options = {}) {
 
     // Log/return final result
     if (!options.isRecursing && options.verbose) {
-        console.info('Search complete. '
+        console.info('findSCSS() » Search complete. '
             + ( scssFiles.length === 0 ? 'No' : scssFiles.length )
-            + ` file${ scssFiles.length > 1 ? 's' : '' } found.`);
+                + ` file${ scssFiles.length > 1 ? 's' : '' } found.`
+            + ( findSCSS.caller.name !== 'compile' ? '\nfindSCSS() » Check returned object.' : '' ));
     }
     return options.isRecursing || scssFiles.length > 0 ? scssFiles : [];
 }
@@ -65,42 +67,44 @@ function compile(inputPath, options = {}) {
 
     // Validate inputPath
     if (typeof inputPath !== 'string') return console.error(
-        'compile() error: Arg `inputPath` must be a string.');
+        'findSCSS() » ERROR: Arg `inputPath` must be a string.');
     else { // verify inputPath path existence
         inputPath = path.resolve(process.cwd(), inputPath);
         if (!fs.existsSync(inputPath)) return console.error(
-            'compile() error: Arg `inputPath` must be an existing directory or file.'
-                + `\n'${ inputPath }' does not exist.`);
+            'findSCSS() » ERROR: Arg `inputPath` must be an existing directory or file.'
+                + `\nfindSCSS() » '${ inputPath }' does not exist.`);
     }
 
     // Validate options
     for (const key of Object.keys(options)) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
-            `findSCSS() error: \`${ key }\` is an invalid option.`
-                + `\nValid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+            `compile() » ERROR: \`${ key }\` is an invalid option.`
+                + `\nfindSCSS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
-            `findSCSS() error: \`${ key }\` option must be set to \`true\` or \`false\`.`);
+            `compile() » ERROR: \`${ key }\` option must be set to \`true\` or \`false\`.`);
     }
 
     // Compile SCSS based on inputPath
     const compileOptions = { style: options.minify ? 'compressed' : 'expanded', sourceMap: options.sourceMaps };
     if (fs.existsSync(inputPath)) { // compile based on path arg
         if (inputPath.endsWith('.scss')) { // file path passed
-            if (options.verbose) console.info(`Compiling ${ inputPath }...`);
+            if (options.verbose) console.info(`compile() » Compiling ${ inputPath }...`);
             try { // to compile file passed
                 const compileResult = sass.compile(inputPath, compileOptions);
+                console.info('compile() » Compilation complete! Check returned object.');
                 return { code: compileResult.css, srcMap: compileResult.sourceMap,
                          srcPath: path.resolve(process.cwd(), inputPath) };
-            } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return { error: err }; }
+            } catch (err) { console.error(`\ncompile() » ERROR: ${ err.message }\n`); return { error: err }; }
         } else { // dir path passed
             return findSCSS(inputPath, { recursive: options.recursive, verbose: options.verbose,
                                          dotFolders: options.dotFolders
                 })?.map(scssPath => { // compile found SCSS files
-                    if (options.verbose) console.info(`Compiling ${ scssPath }...`); 
+                    if (options.verbose) console.info(`compile() » Compiling ${ scssPath }...`); 
                     try { // to compile found file
                         const compileResult = sass.compile(scssPath, compileOptions);
+                        console.info('compile() » Compilation complete! Check returned object.');
                         return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: scssPath };
-                    } catch (err) { console.error(`\nERROR: ${ err.message }\n`); return { error: err }; }
+                    } catch (err) { console.error(`\ncompile() » ERROR: ${ err.message }\n`); return { error: err }; }
                 }).filter(data => !data.error ); // filter out failed compilations
         }
     }

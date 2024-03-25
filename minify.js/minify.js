@@ -15,13 +15,13 @@ function findJS(searchDir, options = {}) {
 
     // Validate searchDir
     if (!searchDir) return console.error(
-        'findJS() error: Please supply a `searchDir` arg.');
+        'findJS() » ERROR: Please supply a `searchDir` as 1st arg.');
     else if (typeof searchDir !== 'string') return console.error(
-        'findJS() error: Arg `searchDir` must be a string.');
+        'findJS() » ERROR: 1st arg `searchDir` must be a string.');
     else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir);
         if (!fs.existsSync(searchPath)) return console.error(
-            'findJS() error: Arg `searchDir` must be an existing directory.'
+            'findJS() » ERROR: Arg `searchDir` must be an existing directory.'
                 + `\n'${ searchPath }' does not exist.`);
     }
 
@@ -29,15 +29,16 @@ function findJS(searchDir, options = {}) {
     for (const key of Object.keys(options)) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key))
             if (key !== 'isRecursing') return console.error(
-                `findJS() error: \`${ key }\` is an invalid option.`
-                    + `\nValid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+                `findJS() » ERROR: \`${ key }\` is an invalid option.`
+                    + `\nfindJS() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
-            `findJS() error: \`${ key }\` option must be set to \`true\` or \`false\`.`);
+            `findJS() » ERROR: \`${ key }\` option must be set to \`true\` or \`false\`.`);
     }
 
     // Search for unminified JS
     const dirFiles = fs.readdirSync(searchDir), jsFiles = [];
-    if (options.verbose && !options.isRecursing) console.info('\nSearching for unminified JS files...');
+    if (options.verbose && !options.isRecursing) console.info(
+        '\nfindJS() » Searching for unminified JS files...');
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file);
         if (fs.statSync(filePath).isDirectory() && file != 'node_modules'
@@ -51,9 +52,10 @@ function findJS(searchDir, options = {}) {
 
     // Log/return final result
     if (!options.isRecursing && options.verbose) {
-        console.info('Search complete. '
+        console.info('findJS() » Search complete. '
             + ( jsFiles.length === 0 ? 'No' : jsFiles.length )
-            + ` file${ jsFiles.length > 1 ? 's' : '' } found.`);
+                + ` file${ jsFiles.length > 1 ? 's' : '' } found.`
+            + ( findJS.caller.name !== 'minify' ? '\nfindJS() » Check returned object.' : '' ));
     }
     return options.isRecursing || jsFiles.length > 0 ? jsFiles : [];
 }
@@ -67,41 +69,44 @@ function minify(input, options = {}) {
 
     // Validate input
     if (typeof input !== 'string') return console.error(
-        'minify() error: Arg `inputPath` must be a string.');
+        'minify() » ERROR: Arg `input` must be a string.');
 
     // Validate options
     for (const key of Object.keys(options)) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
-            `findJS() error: \`${ key }\` is an invalid option.`
-                + `\nValid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+            `minify() » ERROR: \`${ key }\` is an invalid option.`
+                + `\nminify() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
-            `findJS() error: \`${ key }\` option must be set to \`true\` or \`false\`.`);
+            `minify() » ERROR: \`${ key }\` option must be set to \`true\` or \`false\`.`);
     }
 
     // Minify JS based on input
     const minifyOptions = { mangle: options.mangle ? { toplevel: true } : false };
     if (fs.existsSync(input)) { // minify based on path arg
         if (input.endsWith('.js')) { // file path passed
-            if (options.verbose) console.info(`Minifying ${ input }...`);
+            if (options.verbose) console.info(`minify() » Minifying ${ input }...`);
             const minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions);
-            if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
+            if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
+            else console.info('minify() » Minification complete! Check returned object.');
             return { code: minifyResult.code, srcPath: path.resolve(process.cwd(), input),
                      error: minifyResult.error };
         } else { // dir path passed
             return findJS(input, { recursive: options.recursive, verbose: options.verbose,
                                    dotFolders: options.dotFolders, dotFiles: options.dotFiles 
                 })?.map(jsPath => { // minify found JS files
-                    if (options.verbose) console.info(`Minifying ${ jsPath }...`);
+                    if (options.verbose) console.info(`minify() » Minifying ${ jsPath }...`);
                     const srcCode = fs.readFileSync(jsPath, 'utf8'),
                           minifyResult = uglifyJS.minify(srcCode, minifyOptions);
-                    if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
+                    if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
+                    else console.info('minify() » Minification complete! Check returned object.');
                     return { code: minifyResult.code, srcPath: jsPath, error: minifyResult.error };
                 }).filter(data => !data.error); // filter out failed minifications
         }
     } else { // minify based on src code arg
-        if (options.verbose) console.info('Minifying passed source code...');
+        if (options.verbose) console.info('minify() » Minifying passed source code...');
         const minifyResult = uglifyJS.minify(input, minifyOptions);
-        if (minifyResult.error) console.error(`ERROR: ${ minifyResult.error.message }`);
+        if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
+        else console.info('minify() » Minification complete! Check returned object.');
         return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error };
     }
 }
