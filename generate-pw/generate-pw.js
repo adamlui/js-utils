@@ -37,7 +37,7 @@ function generatePassword(options = {}) {
                 + `\ngeneratePassword() » Valid options:\n  [ ${Object.keys(defaultOptions).join(', ')} ]`);
     for (const numArgType of ['length', 'qty'])
         if (isNaN(options[numArgType]) || options[numArgType] < 1) return console.error(
-            `generatePassword() » ERROR: [${ numArgType }] argument must be 1 or greater.`);
+            `generatePassword() » ERROR: [${ numArgType }] option must be > 1.`);
     for (const booleanArgType of ['numbers', 'symbols', 'lowercase', 'uppercase', 'strict'])
         if (typeof options[booleanArgType] !== 'boolean') return console.error(
             `generatePassword() » ERROR: [${ booleanArgType }] option can only be \`true\` or \`false\`.`);
@@ -106,7 +106,7 @@ function generatePasswords(qty, options = {}) {
             `generatePasswords() » ERROR: \`${ key }\` is an invalid option.`
                 + `\ngeneratePassword() » Valid options:\n  [ ${Object.keys(defaultOptions).join(', ')} ]`);
     if (isNaN(options.length) || options.length < 1) return console.error(
-        'generatePasswords() » ERROR: [length] argument must be 1 or greater.');
+        'generatePasswords() » ERROR: [length] options must be > 1.');
     for (const booleanArgType of ['numbers', 'symbols', 'lowercase', 'uppercase', 'strict'])
         if (typeof options[booleanArgType] !== 'boolean') return console.error(
             `generatePasswords() » ERROR: [${ booleanArgType }] option can only be \`true\` or \`false\`.`);
@@ -235,7 +235,7 @@ else { // run as CLI utility
     else { // run MAIN routine
         for (const numArgType of ['length', 'qty'])
             if (config[numArgType] && (isNaN(config[numArgType]) || config[numArgType] < 1)) {
-                console.error(`\n${br}Error: [${ numArgType }] argument must be 1 or greater.${nc}`);
+                console.error(`\n${br}Error: [${ numArgType }] argument must be > 1.${nc}`);
                 process.exit(1);
             }
         const funcOptions = {
