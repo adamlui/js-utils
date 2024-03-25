@@ -14,6 +14,7 @@
         <a href="../pa/SECURITY.md">ਪੰਜਾਬੀ</a> |
         <a href="../de/SECURITY.md">Deutsch</a> |
         <a href="../fr/SECURITY.md">Français</a> |
+        <a href="../it/SECURITY.md">Italiano</a> |
         <a href="../pt/SECURITY.md">Português</a>
     </h6>
 </div>
