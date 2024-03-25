@@ -159,8 +159,7 @@ Name           | Type    | Description                                          
 Checks if given `address` is a valid IPv6 address:
 
 ```js
-const address = '0:0:0:0:0:ffff:192.1.56.10/96',
-      ipIsValid = ipv6.validate(address);
+const ipIsValid = ipv6.validate('0:0:0:0:0:ffff:192.1.56.10/96');
 console.log(ipIsValid);
 
 /* outputs:
