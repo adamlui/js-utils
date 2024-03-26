@@ -101,19 +101,31 @@ See: [Available options](#available-options-for-generate-functions)
 
 #
 
-### `strictify(password[, requiredCharTypes])`
+### `strictify(password[, requiredCharTypes, options])`
 
 Modifies `password` given to use at least one character of each `requiredCharTypes` element passed, returning a string:
 
 ```js
 const strictPW = pw.strictify('abcdef', ['numbers', 'symbols']);
 console.log(strictPW);
-// sample output: 'a!c2ef'
+
+/* sample output:
+
+strictify() » Strictifying password...
+strictify() » Strictification complete!
+a!c2ef
+*/
 ```
+
+**💡 Note:** If no `requiredCharTypes` array is passed, all available types will be required.
 
 Available `requiredCharTypes` are: `['number', 'symbol', 'lower', 'upper']`
 
-**💡 Note:** If no `requiredCharTypes` array is passed, all available types will be required.
+Available options (passed as object properties):
+
+Name      | Type    | Description                       | Default Value
+----------|---------|-----------------------------------|---------------
+`verbose` | Boolean | Show logging in console/terminal. | `true`
 
 #
 

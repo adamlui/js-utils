@@ -101,19 +101,31 @@ console.log(passwords);
 
 #
 
-### `strictify(password[, requiredCharTypes])`
+### `strictify(password[, requiredCharTypes, options])`
 
 修改指定的 `password`，以使用传递的每个 `requiredCharTypes` 元素中的至少一个字符，返回一个字符串：
 
 ```js
 const strictPW = pw.strictify('abcdef', ['numbers', 'symbols']);
 console.log(strictPW);
-// 示例输出：'a!c2ef'
+
+/* 示例输出：
+
+strictify() » Strictifying password...
+strictify() » Strictification complete!
+a!c2ef
+*/
 ```
+
+**💡注意：**如果没有传递 `requiredCharTypes` 数组，则所有可用类型都将是必需的。
 
 可用的 `requiredCharTypes` 有：`['number', 'symbol', 'lower', 'upper']`
 
-**💡注意：**如果没有传递 `requiredCharTypes` 数组，则所有可用类型都将是必需的。
+可用选项（作为对象属性传递）：
+
+姓名      | 类型    | 描述                       | 默认值
+----------|--------|----------------------------|--------
+`verbose` | 布尔值 | 在控制台/终端中显示日志记录。 | `true`
 
 #
 
