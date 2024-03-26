@@ -117,7 +117,11 @@ function generatePasswords(qty, options = {}) {
     return passwords;
 }
 
-function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', 'upper']) {
+function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', 'upper'], options = {}) {
+
+    // Init options
+    const defaultOptions = { verbose: true };
+    options = { ...defaultOptions, ...options };
 
     // Validate password
     if (typeof password !== 'string') return console.error(
@@ -130,6 +134,14 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
             `strictify() » ERROR: \`${ charType }\` is an invalid character type.`
                 + `\nstrictify() » Valid character types: [ ${ validCharTypes.join(', ') } ]`);
 
+    // Validate options
+    for (const key of Object.keys(options))
+        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
+              `strictify() » ERROR: \`${ key }\` is an invalid option.`
+          + `\nstrictify() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+    if (typeof options.verbose !== 'boolean') return console.error(
+        'strictify() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
+
     // Init mod flags
     for (const charType of requiredCharTypes)
         global['has' + charType.charAt(0).toUpperCase() + charType.slice(1)] = false;
@@ -138,7 +150,8 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
             if ((charsets[charType] || charsets[charType + 's']).includes(password.charAt(i)))
                 global['has' + charType.charAt(0).toUpperCase() + charType.slice(1)] = true;
 
-    // Modify/return strict password
+    // Modify/return strict password if unstrict
+    if (options.verbose) console.info(`strictify() » Strictifying '${ password }'...`);
     const maxReplacements = Math.min(password.length, requiredCharTypes.length),
           replacedPositions = [];
     let replacementCnt = 0, strictPW = password;
@@ -155,6 +168,12 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
                          + strictPW.substring(replacementPos + 1);
                 replacementCnt++;
     }}}
+    if (options.verbose) {
+        if (replacementCnt > 0) console.info('strictify() » Strictification complete!');
+        else console.info(
+              `strictify() » Password already includes ${ requiredCharTypes.join(' + ') } characters!`
+          + '\nstrictify() » No modifications made.' );
+    }
     return strictPW;
 }
 
