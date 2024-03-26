@@ -1,6 +1,6 @@
 {
   "name": "generate-pw",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "Randomly generate cryptographically-secure passwords.",
   "author": {
     "name": "Adam Lui",
