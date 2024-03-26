@@ -151,7 +151,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
                 global['has' + charType.charAt(0).toUpperCase() + charType.slice(1)] = true;
 
     // Modify password if unstrict
-    if (options.verbose) console.info(`strictify() » Strictifying '${ password }'...`);
+    if (options.verbose) console.info('strictify() » Strictifying password...');
     const maxReplacements = Math.min(password.length, requiredCharTypes.length),
           replacedPositions = [];
     let replacementCnt = 0, strictPW = password;
