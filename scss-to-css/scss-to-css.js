@@ -73,7 +73,7 @@ function compile(inputPath, options = {}) {
         inputPath = path.resolve(process.cwd(), inputPath);
         if (!fs.existsSync(inputPath)) return console.error(
             'findSCSS() » ERROR: Arg `inputPath` must be an existing directory or file.\n'
-          + `findSCSS() » '${ inputPath }' does not exist.`);
+          + `findSCSS() » ${ inputPath } does not exist.`);
     }
 
     // Validate options
