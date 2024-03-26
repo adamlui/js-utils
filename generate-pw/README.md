@@ -119,7 +119,7 @@ Available `requiredCharTypes` are: `['number', 'symbol', 'lower', 'upper']`
 
 #
 
-### `validateStrength(password)`
+### `validateStrength(password[, options])`
 
 Validates the strength of a password, returning an object containing:
 - `strengthScore` (0–100)
@@ -136,13 +136,25 @@ console.log(pwStrength);
 
 /* outputs:
 
+validateStrength() » Validating password strength...
+validateStrength() » Password strength validated!
+validateStrength() » Check returned object for score/recommendations.
 {
   strengthScore: 60,
-  recommendations: [ 'Include at least one number.', 'Include at least one symbol.' ],
+  recommendations: [
+    'Make it at least 8 characters long.',
+    'Include at least one number.'
+  ],
   isGood: false
 }
 */
 ```
+
+Available options (passed as object properties):
+
+Name      | Type    | Description                       | Default Value
+----------|---------|-----------------------------------|---------------
+`verbose` | Boolean | Show logging in console/terminal. | `true`
 
 #
 

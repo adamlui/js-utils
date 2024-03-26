@@ -119,7 +119,7 @@ console.log(strictPW);
 
 #
 
-### `validateStrength(password)`
+### `validateStrength(password[, options])`
 
 验证密码的强度，返回一个包含以下内容的对象：
 - `strengthScore` (0–100)
@@ -136,13 +136,25 @@ console.log(pwStrength);
 
 /* 输出：
 
+validateStrength() » Validating password strength...
+validateStrength() » Password strength validated!
+validateStrength() » Check returned object for score/recommendations.
 {
   strengthScore: 60,
-  recommendations: [ 'Include at least one number.', 'Include at least one symbol.' ],
+  recommendations: [
+    'Make it at least 8 characters long.',
+    'Include at least one number.'
+  ],
   isGood: false
 }
 */
 ```
+
+可用选项（作为对象属性传递）：
+
+姓名      | 类型    | 描述                       | 默认值
+----------|--------|----------------------------|--------
+`verbose` | 布尔值 | 在控制台/终端中显示日志记录。 | `true`
 
 #
 

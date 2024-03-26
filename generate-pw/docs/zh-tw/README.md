@@ -119,7 +119,7 @@ console.log(strictPW);
 
 #
 
-### `validateStrength(password)`
+### `validateStrength(password[, options])`
 
 驗證密碼的強度，傳回一個包含以下內容的物件：
 - `strengthScore` (0–100)
@@ -136,13 +136,25 @@ console.log(pwStrength);
 
 /* 輸出：
 
+validateStrength() » Validating password strength...
+validateStrength() » Password strength validated!
+validateStrength() » Check returned object for score/recommendations.
 {
   strengthScore: 60,
-  recommendations: [ 'Include at least one number.', 'Include at least one symbol.' ],
+  recommendations: [
+    'Make it at least 8 characters long.',
+    'Include at least one number.'
+  ],
   isGood: false
 }
 */
 ```
+
+可用選項（作為物件屬性傳遞）：
+
+姓名      | 類型   | 描述                          | 預設值
+----------|-------|-------------------------------|--------
+`verbose` | 布林值 | 在控制台/終端機中顯示日誌記錄。 | `true`
 
 #
 

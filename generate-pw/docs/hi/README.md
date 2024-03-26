@@ -119,7 +119,7 @@ console.log(strictPW);
 
 #
 
-### `validateStrength(password)`
+### `validateStrength(password[, options])`
 
 पासवर्ड की ताकत को सत्यापित करता है, एक ऑब्जेक्ट लौटाता है जिसमें:
 - `strengthScore` (0–100)
@@ -136,13 +136,25 @@ console.log(pwStrength);
 
 /* आउटपुट:
 
+validateStrength() » Validating password strength...
+validateStrength() » Password strength validated!
+validateStrength() » Check returned object for score/recommendations.
 {
   strengthScore: 60,
-  recommendations: [ 'Include at least one number.', 'Include at least one symbol.' ],
+  recommendations: [
+    'Make it at least 8 characters long.',
+    'Include at least one number.'
+  ],
   isGood: false
 }
 */
 ```
+
+उपलब्ध विकल्प (ऑब्जेक्ट गुणों के रूप में पारित):
+
+नाम       | प्रकार  | विवरण                     | डिफ़ॉल्ट मान
+----------|-------|---------------------------|-----------
+`verbose` | बूलियन | कंसोल/टर्मिनल में लॉगिंग दिखाएँ। | `true`
 
 #
 
