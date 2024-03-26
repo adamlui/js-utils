@@ -96,8 +96,8 @@ function generatePasswords(qty, options = {}) {
 
     // Validate qty
     qty = parseInt(qty);
-    if (isNaN(qty)) return console.error(
-        'generatePasswords() » ERROR: 1st arg [qty] can only be an integer');
+    if (isNaN(qty) || qty < 1) return console.error(
+        'generatePasswords() » ERROR: 1st arg [qty] can only be an integer > 1.');
 
     // Validate options
     for (const key of Object.keys(options))
