@@ -30,7 +30,7 @@ function findSCSS(searchDir, options = {}) {
                 `findSCSS() » ERROR: \`${ key }\` is an invalid option.\n`
               + `findSCSS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
-                `findSCSS() » ERROR: \`${ key }\` option must be set to \`true\` or \`false\`.`);
+                `findSCSS() » ERROR: \`${ key }\` option can only be set to \`true\` or \`false\`.`);
     }
 
     // Search for SCSS
@@ -78,7 +78,7 @@ function compile(inputPath, options = {}) {
             `compile() » ERROR: \`${ key }\` is an invalid option.\n`
           + `compile() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
-            `compile() » ERROR: \`${ key }\` option must be set to \`true\` or \`false\`.`);
+            `compile() » ERROR: \`${ key }\` option can only be set to \`true\` or \`false\`.`);
     }
 
     // Compile SCSS based on inputPath
@@ -158,7 +158,7 @@ else { // run as CLI utility
         // Validate input arg (output arg can be anything)
         const inputPath = path.resolve(process.cwd(), inputArg);
         if (inputArg && !fs.existsSync(inputPath)) {
-            console.error(`\n${br}Error: First argument must be an existing file or directory.`
+            console.error(`\n${br}Error: First argument can only be an existing file or directory.`
                 + `\n'${ inputPath }' does not exist.${nc}`
                 + `\n\n${bg}Example valid command: \n>> scss-to-css . output.min.css${nc}`
                 + `\n\n${by}For all command options: \n>> scss-to-css --help${nc}`);

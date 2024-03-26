@@ -30,7 +30,7 @@ function findJS(searchDir, options = {}) {
                 `findJS() » ERROR: \`${ key }\` is an invalid option.\n`
               + `findJS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
-                `findJS() » ERROR: \`${ key }\` option must be set to \`true\` or \`false\`.`);
+                `findJS() » ERROR: \`${ key }\` option can only be set to \`true\` or \`false\`.`);
     }
 
     // Search for unminified JS
@@ -74,7 +74,7 @@ function minify(input, options = {}) {
             `minify() » ERROR: \`${ key }\` is an invalid option.\n`
           + `minify() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
-            `minify() » ERROR: \`${ key }\` option must be set to \`true\` or \`false\`.`);
+            `minify() » ERROR: \`${ key }\` option can only be set to \`true\` or \`false\`.`);
     }
 
     // Minify JS based on input
@@ -159,7 +159,7 @@ else { // run as CLI utility
         // Validate input arg (output arg can be anything)
         const inputPath = path.resolve(process.cwd(), inputArg);
         if (inputArg && !fs.existsSync(inputPath)) {
-            console.error(`\n${br}Error: First argument must be an existing file or directory.`
+            console.error(`\n${br}Error: First argument can only be an existing file or directory.`
                 + `\n${ inputPath } does not exist.${nc}`
                 + `\n\n${bg}Example valid command: \n>> minify-js . output.min.js${nc}`
                 + `\n\n${by}For all command options: \n>> minify-js --help${nc}`);
