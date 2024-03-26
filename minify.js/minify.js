@@ -21,8 +21,8 @@ function findJS(searchDir, options = {}) {
     else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir);
         if (!fs.existsSync(searchPath)) return console.error(
-            'findJS() » ERROR: Arg `searchDir` must be an existing directory.'
-                + `\n'${ searchPath }' does not exist.`);
+            'findJS() » ERROR: Arg `searchDir` must be an existing directory.\n'
+          + `findJS() » ${ searchPath } does not exist.`);
     }
 
     // Validate options
@@ -164,7 +164,7 @@ else { // run as CLI utility
         const inputPath = path.resolve(process.cwd(), inputArg);
         if (inputArg && !fs.existsSync(inputPath)) {
             console.error(`\n${br}Error: First argument must be an existing file or directory.`
-                + `\n'${ inputPath }' does not exist.${nc}`
+                + `\n${ inputPath } does not exist.${nc}`
                 + `\n\n${bg}Example valid command: \n>> minify-js . output.min.js${nc}`
                 + `\n\n${by}For all command options: \n>> minify-js --help${nc}`);
             process.exit(1);
