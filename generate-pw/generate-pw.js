@@ -179,8 +179,23 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     return strictPW;
 }
 
-function validateStrength(password) {
+function validateStrength(password, options = {}) {
     const strengthCriteria = { minLength: 8, minLower: 1, minUpper: 1, minNumber: 1, minSymbol: 1 };
+
+    // Init options
+    const defaultOptions = { verbose: true };
+    options = { ...defaultOptions, ...options };
+
+    // Validate options
+    for (const key of Object.keys(options)) {
+        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
+            `validateStrength() » ERROR: \`${ key }\` is an invalid option.\n`
+          + `validateStrength() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+        else if (typeof options[key] !== 'boolean') return console.error(
+            `validateStrength() » ERROR: \`${ key }\` option can only be set to \`true\` or \`false\`.`);
+    }
+
+    if (options.verbose) console.info('validateStrength() » Validating password strength...');
 
     // Count occurrences of each char type
     const charCnts = { 'lower': 0, 'upper': 0, 'number': 0, 'symbol': 0 };
@@ -206,6 +221,9 @@ function validateStrength(password) {
         strengthScore += ( // +20 per char type included
             charCnts[charType] >= strengthCriteria['min' + charType.charAt(0).toUpperCase() + charType.slice(1)]) ? 20 : 0;
 
+    // Final log/return
+    if (options.verbose) console.info('validateStrength() » Password strength validated!\n'
+        + ( require.main !== module ? 'validateStrength() » Check returned object for score/recommendations.' : '' ));
     return { strengthScore, recommendations, isGood: strengthScore >= 80 };
 }
 
