@@ -150,7 +150,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
             if ((charsets[charType] || charsets[charType + 's']).includes(password.charAt(i)))
                 global['has' + charType.charAt(0).toUpperCase() + charType.slice(1)] = true;
 
-    // Modify/return strict password if unstrict
+    // Modify password if unstrict
     if (options.verbose) console.info(`strictify() » Strictifying '${ password }'...`);
     const maxReplacements = Math.min(password.length, requiredCharTypes.length),
           replacedPositions = [];
@@ -168,6 +168,8 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
                          + strictPW.substring(replacementPos + 1);
                 replacementCnt++;
     }}}
+
+    // Final summary/return
     if (options.verbose) {
         if (replacementCnt > 0) console.info('strictify() » Strictification complete!');
         else console.info(
