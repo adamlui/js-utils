@@ -38,7 +38,7 @@ function generatePassword(options = {}) {
     for (const numArgType of ['length', 'qty']) {
         options[numArgType] = parseInt(options[numArgType], 10);
         if (isNaN(options[numArgType]) || options[numArgType] < 1) return console.error(
-            `generatePassword() » ERROR: [${ numArgType }] option can only be an integer > 1.`);
+            `generatePassword() » ERROR: [${ numArgType }] option can only be an integer > 0.`);
     }
     for (const booleanArgType of ['numbers', 'symbols', 'lowercase', 'uppercase', 'strict'])
         if (typeof options[booleanArgType] !== 'boolean') return console.error(
@@ -99,7 +99,7 @@ function generatePasswords(qty, options = {}) {
     // Validate qty
     qty = parseInt(qty, 10);
     if (isNaN(qty) || qty < 1) return console.error(
-        'generatePasswords() » ERROR: 1st arg [qty] can only be an integer > 1.');
+        'generatePasswords() » ERROR: 1st arg [qty] can only be an integer > 0.');
 
     // Validate options
     for (const key of Object.keys(options))
@@ -108,7 +108,7 @@ function generatePasswords(qty, options = {}) {
           + `generatePasswords() » Valid options:\n  [ ${ Object.keys(defaultOptions).join(', ') } ]`);
     options.length = parseInt(options.length);
     if (isNaN(options.length) || options.length < 1) return console.error(
-            'generatePasswords() » ERROR: [length] option can only be an integer > 1.');
+            'generatePasswords() » ERROR: [length] option can only be an integer > 0.');
     for (const booleanArgType of ['numbers', 'symbols', 'lowercase', 'uppercase', 'strict'])
         if (typeof options[booleanArgType] !== 'boolean') return console.error(
             `generatePasswords() » ERROR: [${ booleanArgType }] option can only be \`true\` or \`false\`.`);
@@ -291,7 +291,7 @@ else { // run as CLI utility
     else { // run MAIN routine
         for (const numArgType of ['length', 'qty'])
             if (config[numArgType] && (isNaN(config[numArgType]) || config[numArgType] < 1)) {
-                console.error(`\n${br}Error: [${ numArgType }] argument can only be > 1.${nc}`);
+                console.error(`\n${br}Error: [${ numArgType }] argument can only be > 0.${nc}`);
                 process.exit(1);
             }
         const funcOptions = {
