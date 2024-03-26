@@ -139,9 +139,7 @@ Validates the strength of a password, returning an object containing:
 Example:
 
 ```js
-const password = 'AawiddsE',
-      pwStrength = pw.validateStrength(password);
-
+const pwStrength = pw.validateStrength('Aa?idsE');
 console.log(pwStrength);
 
 /* outputs:

@@ -139,9 +139,7 @@ a!c2ef
 উদাহরণ:
 
 ```js
-const password = 'Aa?idsE',
-      pwStrength = pw.validateStrength(password);
-
+const pwStrength = pw.validateStrength('Aa?idsE');
 console.log(pwStrength);
 
 /* আউটপুট:
