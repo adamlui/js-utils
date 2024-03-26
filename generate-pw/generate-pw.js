@@ -46,7 +46,7 @@ function generatePassword(options = {}) {
         const { qty, ...otherOptions } = options;
         return generatePasswords(qty, otherOptions);
 
-    } else { // return single password string
+    } else { // generate/return single password
 
         // Init password's char set
         let pwCharset = options.charset || ( // use passed [charset], or construct from options
@@ -126,6 +126,10 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
         for (const charType of requiredCharTypes)
             if ((charsets[charType] || charsets[charType + 's']).includes(password.charAt(i)))
                 global['has' + charType.charAt(0).toUpperCase() + charType.slice(1)] = true;
+
+    // Validate password
+    if (typeof password !== 'string') return console.error(
+        'strictify() » ERROR: 1st arg `password` must be a string.');
 
     // Modify password if necessary
     const maxReplacements = Math.min(password.length, requiredCharTypes.length),
