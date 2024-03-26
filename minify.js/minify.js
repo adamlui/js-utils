@@ -21,7 +21,7 @@ function findJS(searchDir, options = {}) {
     else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir);
         if (!fs.existsSync(searchPath)) return console.error(
-            'findJS() » ERROR: Arg `searchDir` must be an existing directory.\n'
+            'findJS() » ERROR: 1st arg `searchDir` must be an existing directory.\n'
           + `findJS() » ${ searchPath } does not exist.`);
     }
 
@@ -70,7 +70,7 @@ function minify(input, options = {}) {
 
     // Validate input
     if (typeof input !== 'string') return console.error(
-        'minify() » ERROR: Arg `input` must be a string.');
+        'minify() » ERROR: 1st arg `input` must be a string.');
 
     // Validate options
     for (const key of Object.keys(options)) {
