@@ -106,9 +106,7 @@ console.log(passwords);
 পাস করা প্রতিটি `requiredCharTypes` উপাদানের অন্তত একটি অক্ষর ব্যবহার করার জন্য দেওয়া `password` পরিবর্তন করে, একটি স্ট্রিং ফিরিয়ে দেয়:
 
 ```js
-const password = 'abcdef',
-      strictPW = pw.strictify(password, ['numbers', 'symbols']);
-
+const strictPW = pw.strictify('abcdef', ['numbers', 'symbols']);
 console.log(strictPW);
 // নমুনা আউটপুট: 'a!c2ef'
 ```

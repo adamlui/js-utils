@@ -106,9 +106,7 @@ console.log(passwords);
 修改指定的 `password`，以使用傳遞的每個 `requiredCharTypes` 元素中的至少一個字符，傳回一個字串：
 
 ```js
-const password = 'abcdef',
-      strictPW = pw.strictify(password, ['numbers', 'symbols']);
-
+const strictPW = pw.strictify('abcdef', ['numbers', 'symbols']);
 console.log(strictPW);
 // 範例輸出：'a!c2ef'
 ```

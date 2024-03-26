@@ -106,9 +106,7 @@ console.log(passwords);
 प्रत्येक `requiredCharTypes` तत्व के कम से कम एक वर्ण का उपयोग करने के लिए दिए गए `password` को संशोधित करता है, एक स्ट्रिंग लौटाता है:
 
 ```js
-const password = 'abcdef',
-      strictPW = pw.strictify(password, ['numbers', 'symbols']);
-
+const strictPW = pw.strictify('abcdef', ['numbers', 'symbols']);
 console.log(strictPW);
 // नमूना आउटपुट: 'a!c2ef'
 ```

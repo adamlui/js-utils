@@ -106,9 +106,7 @@ See: [Available options](#available-options-for-generate-functions)
 Modifies `password` given to use at least one character of each `requiredCharTypes` element passed, returning a string:
 
 ```js
-const password = 'abcdef',
-      strictPW = pw.strictify(password, ['numbers', 'symbols']);
-
+const strictPW = pw.strictify('abcdef', ['numbers', 'symbols']);
 console.log(strictPW);
 // sample output: 'a!c2ef'
 ```
