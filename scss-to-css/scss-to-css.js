@@ -22,7 +22,7 @@ function findSCSS(searchDir, options = {}) {
         const searchPath = path.resolve(process.cwd(), searchDir);
         if (!fs.existsSync(searchPath)) return console.error(
             'findSCSS() » ERROR: Arg `searchDir` must be an existing directory.\n'
-          + `findSCSS() » '${ searchPath }' does not exist.`);
+          + `findSCSS() » ${ searchPath } does not exist.`);
     }
 
     // Validate options
