@@ -186,6 +186,10 @@ function validateStrength(password, options = {}) {
     const defaultOptions = { verbose: true };
     options = { ...defaultOptions, ...options };
 
+    // Validate password
+    if (typeof password !== 'string') return console.error(
+        'validateStrength() » ERROR: 1st arg <password> must be a string.');
+
     // Validate options
     for (const key of Object.keys(options)) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
