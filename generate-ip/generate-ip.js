@@ -28,7 +28,6 @@ const ipv4 = {
         const segments = [];
         for (let i = 0; i < 4; i++) segments.push(randomInt(0, 256));
         const ip = segments.join('.');
-        if (options.verbose) console.log('\n' + ip);
         return ip;
     },
 
@@ -95,7 +94,6 @@ const ipv6 = {
             pieces.push(hex);
         }
         const ip = this.format(pieces.join(':'), { ...options, verbose: false });
-        if (options.verbose) console.log('\n' + ip);
         return ip;
     },
 
@@ -151,9 +149,8 @@ const ipv6 = {
             formattedAddress = address.replace(/(^|(?<=:))0+(?!:)/g, '$1');
         }
 
-        if (options.verbose) console.info(
-            formattedAddress !== address ? formattedAddress
-                                         : 'ipv6.format() » Address cannot be formatted!\n' );
+        if (options.verbose && formattedAddress !== address) console.info(
+            'ipv6.format() » Address cannot be formatted!');
         return formattedAddress;
     },
 
