@@ -17,11 +17,11 @@ function findSCSS(searchDir, options = {}) {
     if (!searchDir) return console.error(
         'findSCSS() » ERROR: Please supply a `searchDir` as 1st arg.');
     else if (typeof searchDir !== 'string') return console.error(
-        'findSCSS() » ERROR: 1st arg `searchDir` must be a string.');
+        'findSCSS() » ERROR: 1st arg <searchDir> must be a string.');
     else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir);
         if (!fs.existsSync(searchPath)) return console.error(
-            'findSCSS() » ERROR: 1st arg `searchDir` must be an existing directory.\n'
+            'findSCSS() » ERROR: 1st arg <searchDir> must be an existing directory.\n'
           + `findSCSS() » ${ searchPath } does not exist.`);
     }
 
@@ -68,11 +68,11 @@ function compile(inputPath, options = {}) {
 
     // Validate inputPath
     if (typeof inputPath !== 'string') return console.error(
-            'findSCSS() » ERROR: 1st arg `inputPath` must be a string.');
+            'findSCSS() » ERROR: 1st arg <inputPath> must be a string.');
     else { // verify inputPath path existence
         inputPath = path.resolve(process.cwd(), inputPath);
         if (!fs.existsSync(inputPath)) return console.error(
-            'findSCSS() » ERROR: 1st arg `inputPath` must be an existing directory or file.\n'
+            'findSCSS() » ERROR: 1st arg <inputPath> must be an existing directory or file.\n'
           + `findSCSS() » ${ inputPath } does not exist.`);
     }
 

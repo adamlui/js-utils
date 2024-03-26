@@ -39,7 +39,7 @@ const ipv4 = {
 
         // Validate address as arg
         if (typeof address !== 'string') return console.error(
-            'ipv4.validate() » ERROR: 1st arg `address` must be a string.');
+            'ipv4.validate() » ERROR: 1st arg <address> must be a string.');
 
         // Validate options
         for (const key of Object.keys(options))
@@ -105,7 +105,7 @@ const ipv6 = {
 
         // Validate address
         if (typeof address !== 'string') return console.error(
-            'ipv6.format() » ERROR: 1st arg `address` must be a string.');
+            'ipv6.format() » ERROR: 1st arg <address> must be a string.');
         if (!this.validate(address, { verbose: false})) return console.error(
             `ipv6.format() » ERROR: \n- ${ address } is not a valid IPv6 address.`);
 
@@ -163,7 +163,7 @@ const ipv6 = {
 
         // Validate address as arg
         if (typeof address !== 'string') return console.error(
-            'ipv6.validate() » ERROR: 1st arg `address` must be a string.');
+            'ipv6.validate() » ERROR: 1st arg <address> must be a string.');
 
         // Validate options
         for (const key of Object.keys(options))

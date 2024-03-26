@@ -129,7 +129,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
 
     // Validate password
     if (typeof password !== 'string') return console.error(
-        'strictify() » ERROR: 1st arg `password` must be a string.');
+        'strictify() » ERROR: 1st arg <password> must be a string.');
 
     // Validate requiredCharTypes
     const validCharTypes = ['number', 'symbol', 'lower', 'upper'];
