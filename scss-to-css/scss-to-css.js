@@ -15,7 +15,7 @@ function findSCSS(searchDir, options = {}) {
 
     // Validate searchDir
     if (typeof searchDir !== 'string') return console.error(
-        'findSCSS() » ERROR: 1st arg <searchDir> must be a string.');
+            'findSCSS() » ERROR: 1st arg <searchDir> must be a string.');
     else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir);
         if (!fs.existsSync(searchPath)) return console.error(
