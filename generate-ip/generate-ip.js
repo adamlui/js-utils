@@ -231,10 +231,10 @@ else { // run as CLI utility
     }
 
     // Show HELP screen if -h or --help passed
-    if (process.argv.some(arg => /^--?h(?:elp)?$/.test(arg))) printHelpSections();
+    if (process.argv.some(arg => argRegex.infoCmds.help.test(arg))) printHelpSections();
 
     // Show VERSION number if -v or --version passed
-    else if (process.argv.some(arg => /^--?ve?r?s?i?o?n?$/.test(arg)))
+    else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg)))
         console.info('v' + require('./package.json').version);
 
     else { // log/copy RESULT
