@@ -134,12 +134,13 @@ Formats an IPv6 address according to `options` passed, returning a string:
 const address = '0d::ffff:192.1.56.10/96',
       formattedAddress = ipv6.format(address, { leadingZeros: true, doubleColon: false });
 
+console.log(formattedAddress);
+
 /* outputs:
 
 ipv6.format() » Formatting 0d::ffff:192.1.56.10/96...
 ipv6.format() » Expanding '::' into zero series...
 ipv6.format() » Adding leading zeros...
-
 000d:0000:0000:0000:0000:0000:ffff:192.1.56.10/96
 */
 ```
