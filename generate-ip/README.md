@@ -131,7 +131,7 @@ Name           | Type    | Description                                          
 Formats an IPv6 address according to `options` passed, returning a string:
 
 ```js
-const address = '0d::ffff:192.1.56.10/96'
+const address = '0d::ffff:192.1.56.10/96',
       formattedAddress = ipv6.format(address, { leadingZeros: true, doubleColon: false });
 
 /* outputs:
