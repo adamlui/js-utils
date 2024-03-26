@@ -103,9 +103,11 @@ const ipv6 = {
         const defaultOptions = { verbose: true, leadingZeros: false, doubleColon: true };
         options = { ...defaultOptions, ...options };
 
-        // Validate address as arg
+        // Validate address
         if (typeof address !== 'string') return console.error(
             'ipv6.format() » ERROR: 1st arg `address` must be a string.');
+        if (!this.validate(address, { verbose: false})) return console.error(
+            `ipv6.format() » ERROR: \n- ${ address } is not a valid IPv6 address.`);
 
         // Validate options
         for (const key in options) {
@@ -115,10 +117,6 @@ const ipv6 = {
             if (typeof options[key] !== 'boolean') return console.error(
                 `ipv6.format() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
         }
-
-        // Validate address as IPv6 address
-        if (!this.validate(address, { verbose: false})) return console.error(
-            `ipv6.format() » ERROR: \n- ${ address } is not a valid IPv6 address.`);
 
         if (options.verbose) console.info(`ipv6.format() » Formatting ${ address }...`);
         let formattedAddress = address;
