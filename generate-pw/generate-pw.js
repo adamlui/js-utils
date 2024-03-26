@@ -142,7 +142,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
             `strictify() » ERROR: \`${ key }\` is an invalid option.\n`
           + `strictify() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
-            `strictify() » ERROR: \`${ key }\` option can only be set to \`true\` or \`false\`.`);
+            `strictify() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
     }
 
     // Init mod flags
@@ -199,7 +199,7 @@ function validateStrength(password, options = {}) {
             `validateStrength() » ERROR: \`${ key }\` is an invalid option.\n`
           + `validateStrength() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
-            `validateStrength() » ERROR: \`${ key }\` option can only be set to \`true\` or \`false\`.`);
+            `validateStrength() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
     }
 
     if (options.verbose) console.info('validateStrength() » Validating password strength...');

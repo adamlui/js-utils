@@ -30,7 +30,7 @@ function findSCSS(searchDir, options = {}) {
                 `findSCSS() » ERROR: \`${ key }\` is an invalid option.\n`
               + `findSCSS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
-                `findSCSS() » ERROR: \`${ key }\` option can only be set to \`true\` or \`false\`.`);
+                `findSCSS() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
     }
 
     // Search for SCSS
@@ -78,7 +78,7 @@ function compile(inputPath, options = {}) {
             `compile() » ERROR: \`${ key }\` is an invalid option.\n`
           + `compile() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
-            `compile() » ERROR: \`${ key }\` option can only be set to \`true\` or \`false\`.`);
+            `compile() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
     }
 
     // Compile SCSS based on inputPath

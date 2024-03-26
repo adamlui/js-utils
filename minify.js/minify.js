@@ -30,7 +30,7 @@ function findJS(searchDir, options = {}) {
                 `findJS() » ERROR: \`${ key }\` is an invalid option.\n`
               + `findJS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
-                `findJS() » ERROR: \`${ key }\` option can only be set to \`true\` or \`false\`.`);
+                `findJS() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
     }
 
     // Search for unminified JS
@@ -74,7 +74,7 @@ function minify(input, options = {}) {
             `minify() » ERROR: \`${ key }\` is an invalid option.\n`
           + `minify() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
-            `minify() » ERROR: \`${ key }\` option can only be set to \`true\` or \`false\`.`);
+            `minify() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
     }
 
     // Minify JS based on input

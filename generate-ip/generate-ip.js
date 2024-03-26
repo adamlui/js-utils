@@ -20,7 +20,7 @@ const ipv4 = {
                 `ipv4.generate() » ERROR: \`${ key }\` is an invalid option.\n`
               + `ipv4.generate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
             else if (typeof options[key] !== 'boolean') return console.error(
-                `ipv4.generate() » ERROR: \`${ key }\` option can only be set to \`true\` or \`false\`.`);
+                `ipv4.generate() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
         }
 
         // Generate IPv4 address
@@ -47,7 +47,7 @@ const ipv4 = {
                 `ipv4.validate() » ERROR: \`${ key }\` is an invalid option.\n`
               + `ipv4.validate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
             else if (typeof options[key] !== 'boolean') return console.error(
-                `ipv4.validate() » ERROR: \`${ key }\` option can only be set to \`true\` or \`false\`.`);
+                `ipv4.validate() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
         }
 
         // Validate address as IPv4 address
