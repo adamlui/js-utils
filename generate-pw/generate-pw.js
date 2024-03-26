@@ -87,7 +87,6 @@ function generatePasswords(qty, options = {}) {
     // Init options
     const defaultOptions = {
         length: 8,       // length of password
-        qty: 1,          // number of passwords to generate
         charset: '',     // characters to include
         exclude: '',     // characters to exclude
         numbers: false,  // include numberChars
