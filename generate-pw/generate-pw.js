@@ -119,17 +119,24 @@ function generatePasswords(qty, options = {}) {
 
 function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', 'upper']) {
 
-    // Init flags
+    // Validate password
+    if (typeof password !== 'string') return console.error(
+        'strictify() » ERROR: 1st arg `password` must be a string.');
+
+    // Validate requiredCharTypes
+    const validCharTypes = ['number', 'symbol', 'lower', 'upper']
+    for (const charType of requiredCharTypes)
+        if (!validCharTypes.includes(charType)) return console.error(
+            `strictify() » ERROR: \`${ charType }\` is an invalid character type.`
+                + `\nstrictify() » Valid character types: [ ${ validCharTypes.join(', ') } ]`);
+
+    // Init mod flags
     for (const charType of requiredCharTypes)
         global['has' + charType.charAt(0).toUpperCase() + charType.slice(1)] = false;
     for (let i = 0; i < password.length; i++)
         for (const charType of requiredCharTypes)
             if ((charsets[charType] || charsets[charType + 's']).includes(password.charAt(i)))
                 global['has' + charType.charAt(0).toUpperCase() + charType.slice(1)] = true;
-
-    // Validate password
-    if (typeof password !== 'string') return console.error(
-        'strictify() » ERROR: 1st arg `password` must be a string.');
 
     // Modify/return strict password
     const maxReplacements = Math.min(password.length, requiredCharTypes.length),
