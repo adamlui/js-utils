@@ -131,7 +131,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     if (typeof password !== 'string') return console.error(
         'strictify() » ERROR: 1st arg `password` must be a string.');
 
-    // Modify password if necessary
+    // Modify/return strict password
     const maxReplacements = Math.min(password.length, requiredCharTypes.length),
           replacedPositions = [];
     let replacementCnt = 0, strictPW = password;
@@ -148,7 +148,6 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
                          + strictPW.substring(replacementPos + 1);
                 replacementCnt++;
     }}}
-
     return strictPW;
 }
 
