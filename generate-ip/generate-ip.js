@@ -20,7 +20,7 @@ const ipv4 = {
                 `ipv4.generate() » ERROR: \`${ key }\` is an invalid option.\n`
               + `ipv4.generate() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
         if (typeof options.verbose !== 'boolean') return console.error(
-            'ipv4.generate() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
+                'ipv4.generate() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
 
         // Generate IPv4 address
         if (options.verbose) console.info('ipv4.generate() » Generating IPv4 address...');
@@ -47,7 +47,7 @@ const ipv4 = {
                 `ipv4.validate() » ERROR: \`${ key }\` is an invalid option.\n`
               + `ipv4.validate() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
         if (typeof options.verbose !== 'boolean') return console.error(
-            'ipv4.validate() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
+                'ipv4.validate() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
 
         // Validate address as IPv4 address
         if (options.verbose) console.info(`ipv4.validate() » Validating ${ address }...`);
@@ -171,7 +171,7 @@ const ipv6 = {
                 `ipv6.validate() » ERROR: \`${ key }\` is an invalid option.\n`
               + `ipv6.validate() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
         if (typeof options.verbose !== 'boolean') return console.error(
-            'ipv6.validate() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
+                'ipv6.validate() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
 
         // Validate address as IPv6 address
         if (options.verbose) console.info(

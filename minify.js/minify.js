@@ -32,7 +32,7 @@ function findJS(searchDir, options = {}) {
                 `findJS() » ERROR: \`${ key }\` is an invalid option.\n`
               + `findJS() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
-            `findJS() » ERROR: \`${ key }\` option must be set to \`true\` or \`false\`.`);
+                `findJS() » ERROR: \`${ key }\` option must be set to \`true\` or \`false\`.`);
     }
 
     // Search for unminified JS

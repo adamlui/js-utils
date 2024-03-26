@@ -106,7 +106,7 @@ function generatePasswords(qty, options = {}) {
             `generatePasswords() » ERROR: \`${ key }\` is an invalid option.\n`
           + `generatePasswords() » Valid options:\n  [ ${Object.keys(defaultOptions).join(', ')} ]`);
     if (isNaN(options.length) || options.length < 1) return console.error(
-        'generatePasswords() » ERROR: [length] options must be > 1.');
+            'generatePasswords() » ERROR: [length] options must be > 1.');
     for (const booleanArgType of ['numbers', 'symbols', 'lowercase', 'uppercase', 'strict'])
         if (typeof options[booleanArgType] !== 'boolean') return console.error(
             `generatePasswords() » ERROR: [${ booleanArgType }] option can only be \`true\` or \`false\`.`);
@@ -140,7 +140,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
             `strictify() » ERROR: \`${ key }\` is an invalid option.\n`
           + `strictify() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
     if (typeof options.verbose !== 'boolean') return console.error(
-        'strictify() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
+            'strictify() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
 
     // Init mod flags
     for (const charType of requiredCharTypes)
