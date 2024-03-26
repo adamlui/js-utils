@@ -80,7 +80,7 @@ function compile(inputPath, options = {}) {
     for (const key of Object.keys(options)) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
             `compile() » ERROR: \`${ key }\` is an invalid option.\n`
-          + `findSCSS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+          + `compile() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
             `compile() » ERROR: \`${ key }\` option must be set to \`true\` or \`false\`.`);
     }
