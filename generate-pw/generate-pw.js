@@ -33,8 +33,8 @@ function generatePassword(options = {}) {
     // Validate options
     for (const key of Object.keys(options))
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
-            `generatePassword() » ERROR: \`${ key }\` is an invalid option.`
-        + `\ngeneratePassword() » Valid options:\n  [ ${Object.keys(defaultOptions).join(', ')} ]`);
+            `generatePassword() » ERROR: \`${ key }\` is an invalid option.\n`
+          + `generatePassword() » Valid options:\n  [ ${Object.keys(defaultOptions).join(', ')} ]`);
     for (const numArgType of ['length', 'qty'])
         if (isNaN(options[numArgType]) || options[numArgType] < 1) return console.error(
             `generatePassword() » ERROR: [${ numArgType }] option must be > 1.`);
@@ -103,8 +103,8 @@ function generatePasswords(qty, options = {}) {
     // Validate options
     for (const key of Object.keys(options))
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
-            `generatePasswords() » ERROR: \`${ key }\` is an invalid option.`
-        + `\ngeneratePasswords() » Valid options:\n  [ ${Object.keys(defaultOptions).join(', ')} ]`);
+            `generatePasswords() » ERROR: \`${ key }\` is an invalid option.\n`
+          + `generatePasswords() » Valid options:\n  [ ${Object.keys(defaultOptions).join(', ')} ]`);
     if (isNaN(options.length) || options.length < 1) return console.error(
         'generatePasswords() » ERROR: [length] options must be > 1.');
     for (const booleanArgType of ['numbers', 'symbols', 'lowercase', 'uppercase', 'strict'])
@@ -131,14 +131,14 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     const validCharTypes = ['number', 'symbol', 'lower', 'upper'];
     for (const charType of requiredCharTypes)
         if (!validCharTypes.includes(charType)) return console.error(
-            `strictify() » ERROR: \`${ charType }\` is an invalid character type.`
-        + `\nstrictify() » Valid character types: [ ${ validCharTypes.join(', ') } ]`);
+            `strictify() » ERROR: \`${ charType }\` is an invalid character type.\n`
+          + `strictify() » Valid character types: [ ${ validCharTypes.join(', ') } ]`);
 
     // Validate options
     for (const key of Object.keys(options))
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
-            `strictify() » ERROR: \`${ key }\` is an invalid option.`
-        + `\nstrictify() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+            `strictify() » ERROR: \`${ key }\` is an invalid option.\n`
+          + `strictify() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
     if (typeof options.verbose !== 'boolean') return console.error(
         'strictify() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
 
@@ -173,8 +173,8 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     if (options.verbose) {
         if (replacementCnt > 0) console.info('strictify() » Strictification complete!');
         else console.info(
-            `strictify() » Password already includes ${ requiredCharTypes.join(' + ') } characters!`
-        + '\nstrictify() » No modifications made.' );
+            `strictify() » Password already includes ${ requiredCharTypes.join(' + ') } characters!\n`
+          + 'strictify() » No modifications made.' );
     }
     return strictPW;
 }

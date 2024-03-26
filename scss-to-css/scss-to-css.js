@@ -29,8 +29,8 @@ function findSCSS(searchDir, options = {}) {
     for (const key of Object.keys(options)) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key))
             if (key !== 'isRecursing') return console.error(
-                `findSCSS() » ERROR: \`${ key }\` is an invalid option.`
-            + `\nfindSCSS() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+                `findSCSS() » ERROR: \`${ key }\` is an invalid option.\n`
+              + `findSCSS() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
             `findSCSS() » ERROR: \`${ key }\` option must be set to \`true\` or \`false\`.`);
     }
@@ -72,15 +72,15 @@ function compile(inputPath, options = {}) {
     else { // verify inputPath path existence
         inputPath = path.resolve(process.cwd(), inputPath);
         if (!fs.existsSync(inputPath)) return console.error(
-            'findSCSS() » ERROR: Arg `inputPath` must be an existing directory or file.'
-        + `\nfindSCSS() » '${ inputPath }' does not exist.`);
+            'findSCSS() » ERROR: Arg `inputPath` must be an existing directory or file.\n'
+          + `findSCSS() » '${ inputPath }' does not exist.`);
     }
 
     // Validate options
     for (const key of Object.keys(options)) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
-            `compile() » ERROR: \`${ key }\` is an invalid option.`
-                + `\nfindSCSS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+            `compile() » ERROR: \`${ key }\` is an invalid option.\n`
+          + `findSCSS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
             `compile() » ERROR: \`${ key }\` option must be set to \`true\` or \`false\`.`);
     }
