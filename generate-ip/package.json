@@ -52,6 +52,6 @@
     "url": "https://github.com/sponsors/adamlui"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^1.4.5"
+    "@adamlui/minify.js": "^1.4.7"
   }
 }
