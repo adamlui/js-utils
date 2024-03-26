@@ -139,12 +139,13 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
           + `strictify() » Valid character types: [ ${ validCharTypes.join(', ') } ]`);
 
     // Validate options
-    for (const key of Object.keys(options))
+    for (const key of Object.keys(options)) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
             `strictify() » ERROR: \`${ key }\` is an invalid option.\n`
           + `strictify() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
-    if (typeof options.verbose !== 'boolean') return console.error(
-            'strictify() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
+        else if (typeof options[key] !== 'boolean') return console.error(
+            `strictify() » ERROR: \`${ key }\` option can only be set to \`true\` or \`false\`.`);
+    }
 
     // Init mod flags
     for (const charType of requiredCharTypes)
