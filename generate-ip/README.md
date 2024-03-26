@@ -70,9 +70,9 @@ console.log(ip); // sample output: 36.42.224.208
 
 Available options (passed as object properties):
 
-Name        | Type    | Description                                                                    | Default Value
-------------|---------|--------------------------------------------------------------------------------|---------------
-`verbose`   | Boolean | Show logging in console/terminal.                                              | `true`
+Name        | Type    | Description                       | Default Value
+------------|---------|-----------------------------------|---------------
+`verbose`   | Boolean | Show logging in console/terminal. | `true`
 
 #
 
@@ -94,9 +94,9 @@ true
 
 Available options (passed as object properties):
 
-Name        | Type    | Description                                                                    | Default Value
-------------|---------|--------------------------------------------------------------------------------|---------------
-`verbose`   | Boolean | Show logging in console/terminal.                                              | `true`
+Name        | Type    | Description                       | Default Value
+------------|---------|-----------------------------------|---------------
+`verbose`   | Boolean | Show logging in console/terminal. | `true`
 
 #
 
@@ -117,11 +117,11 @@ console.log(ip); // sample output: 1379:6748:810c:5e16:b6c9:ae2:939f:8f2a
 
 Available options (passed as object properties):
 
-Name           | Type    | Description                                                                    | Default Value
----------------|---------|--------------------------------------------------------------------------------|---------------
-`verbose`      | Boolean | Show logging in console/terminal.                                              | `true`
-`leadingZeros` | Boolean | Include leading zeros in hex pieces.                                           | `false`
-`doubleColon`  | Boolean | Replace series of zeros w/ `::`                                                | `true`
+Name           | Type    | Description                          | Default Value
+---------------|---------|--------------------------------------|---------------
+`verbose`      | Boolean | Show logging in console/terminal.    | `true`
+`leadingZeros` | Boolean | Include leading zeros in hex pieces. | `false`
+`doubleColon`  | Boolean | Replace series of zeros w/ `::`      | `true`
 
 #
 
@@ -146,11 +146,11 @@ ipv6.format() » Adding leading zeros...
 
 Available options:
 
-Name           | Type    | Description                                                                    | Default Value
----------------|---------|--------------------------------------------------------------------------------|---------------
-`verbose`      | Boolean | Show logging in console/terminal.                                              | `true`
-`leadingZeros` | Boolean | Include leading zeros in hex pieces.                                           | `false`
-`doubleColon`  | Boolean | Replace series of zeros w/ `::`                                                | `true`
+Name           | Type    | Description                          | Default Value
+---------------|---------|--------------------------------------|---------------
+`verbose`      | Boolean | Show logging in console/terminal.    | `true`
+`leadingZeros` | Boolean | Include leading zeros in hex pieces. | `false`
+`doubleColon`  | Boolean | Replace series of zeros w/ `::`      | `true`
 
 #
 
@@ -172,9 +172,9 @@ true
 
 Available options (passed as object properties):
 
-Name        | Type    | Description                                                                    | Default Value
-------------|---------|--------------------------------------------------------------------------------|---------------
-`verbose`   | Boolean | Show logging in console/terminal.                                              | `true`
+Name        | Type    | Description                       | Default Value
+------------|---------|-----------------------------------|---------------
+`verbose`   | Boolean | Show logging in console/terminal. | `true`
 
 <br>
 
