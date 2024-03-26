@@ -239,7 +239,7 @@ else { // run as CLI utility
             'excludeUpperChars': /^--?(?:U|(?:exclude|disable|no)-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/,
             'strictMode': /^--?s(?:trict)?(?:-?mode)?$/
         },
-        cmds: {
+        infoCmds: {
             'help': /^--?h(?:elp)?$/,
             'version': /^--?ve?r?s?i?o?n?$/
         }
@@ -248,12 +248,12 @@ else { // run as CLI utility
         if (!arg.startsWith('-')) return;
         const matchedParamOption = Object.keys(argRegex.paramOptions).find(option => argRegex.paramOptions[option].test(arg)),
               matchedFlag = Object.keys(argRegex.flags).find(flag => argRegex.flags[flag].test(arg)),
-              matchedCmd = Object.keys(argRegex.cmds).find(cmd => argRegex.cmds[cmd].test(arg));
+              matchedInfoCmd = Object.keys(argRegex.infoCmds).find(cmd => argRegex.infoCmds[cmd].test(arg));
         if (matchedFlag) config[matchedFlag] = true;
         else if (matchedParamOption) {
             const value = arg.split('=')[1];
             config[matchedParamOption] = parseInt(value) || value;
-        } else if (!matchedCmd) {
+        } else if (!matchedInfoCmd) {
             console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
             console.info(`\n${by}Valid arguments are below.${nc}`);
             printHelpSections(['paramOptions', 'flags', 'infoCmds']);
@@ -261,10 +261,10 @@ else { // run as CLI utility
     }});
 
     // Show HELP screen if -h or --help passed
-    if (process.argv.some(arg => argRegex.cmds.help.test(arg))) printHelpSections();
+    if (process.argv.some(arg => argRegex.infoCmds.help.test(arg))) printHelpSections();
 
     // Show VERSION number if -v or --version passed
-    else if (process.argv.some(arg => argRegex.cmds.version.test(arg)))
+    else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg)))
         console.info('v' + require('./package.json').version);
 
     else { // run MAIN routine
