@@ -35,9 +35,12 @@ function generatePassword(options = {}) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
             `generatePassword() » ERROR: \`${ key }\` is an invalid option.\n`
           + `generatePassword() » Valid options:\n  [ ${Object.keys(defaultOptions).join(', ')} ]`);
-    for (const numArgType of ['length', 'qty'])
-        if (isNaN(options[numArgType]) || options[numArgType] < 1) return console.error(
+    for (const numArgType of ['length', 'qty']) {
+        if (isNaN(options[numArgType])) return console.error(
+            `generatePassword() » ERROR: [${ numArgType }] option must be an integer.`);
+        else if (options[numArgType] < 1) return console.error(
             `generatePassword() » ERROR: [${ numArgType }] option must be > 1.`);
+    }
     for (const booleanArgType of ['numbers', 'symbols', 'lowercase', 'uppercase', 'strict'])
         if (typeof options[booleanArgType] !== 'boolean') return console.error(
             `generatePassword() » ERROR: [${ booleanArgType }] option can only be \`true\` or \`false\`.`);
@@ -105,8 +108,10 @@ function generatePasswords(qty, options = {}) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
             `generatePasswords() » ERROR: \`${ key }\` is an invalid option.\n`
           + `generatePasswords() » Valid options:\n  [ ${Object.keys(defaultOptions).join(', ')} ]`);
-    if (isNaN(options.length) || options.length < 1) return console.error(
-            'generatePasswords() » ERROR: [length] options must be > 1.');
+    if (isNaN(options.length)) return console.error(
+            'generatePasswords() » ERROR: [length] option must be an integer.');
+    else if (options.length < 1) return console.error(
+            'generatePasswords() » ERROR: [length] option must be > 1.');
     for (const booleanArgType of ['numbers', 'symbols', 'lowercase', 'uppercase', 'strict'])
         if (typeof options[booleanArgType] !== 'boolean') return console.error(
             `generatePasswords() » ERROR: [${ booleanArgType }] option can only be \`true\` or \`false\`.`);
