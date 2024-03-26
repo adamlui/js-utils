@@ -139,7 +139,7 @@ a!c2ef
 उदाहरण:
 
 ```js
-const password = 'AawiddsE',
+const password = 'Aa?idsE',
       pwStrength = pw.validateStrength(password);
 
 console.log(pwStrength);
