@@ -34,7 +34,7 @@ function generatePassword(options = {}) {
     for (const key of Object.keys(options))
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
             `generatePassword() » ERROR: \`${ key }\` is an invalid option.\n`
-          + `generatePassword() » Valid options:\n  [ ${Object.keys(defaultOptions).join(', ')} ]`);
+          + `generatePassword() » Valid options:\n  [ ${ Object.keys(defaultOptions).join(', ') } ]`);
     for (const numArgType of ['length', 'qty']) {
         if (isNaN(options[numArgType])) return console.error(
             `generatePassword() » ERROR: [${ numArgType }] option must be an integer.`);
@@ -106,7 +106,7 @@ function generatePasswords(qty, options = {}) {
     for (const key of Object.keys(options))
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
             `generatePasswords() » ERROR: \`${ key }\` is an invalid option.\n`
-          + `generatePasswords() » Valid options:\n  [ ${Object.keys(defaultOptions).join(', ')} ]`);
+          + `generatePasswords() » Valid options:\n  [ ${ Object.keys(defaultOptions).join(', ') } ]`);
     if (isNaN(options.length)) return console.error(
             'generatePasswords() » ERROR: [length] option must be an integer.');
     else if (options.length < 1) return console.error(
@@ -142,7 +142,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     for (const key of Object.keys(options))
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
             `strictify() » ERROR: \`${ key }\` is an invalid option.\n`
-          + `strictify() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+          + `strictify() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
     if (typeof options.verbose !== 'boolean') return console.error(
             'strictify() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
 

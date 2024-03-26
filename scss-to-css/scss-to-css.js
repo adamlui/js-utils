@@ -30,7 +30,7 @@ function findSCSS(searchDir, options = {}) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key))
             if (key !== 'isRecursing') return console.error(
                 `findSCSS() » ERROR: \`${ key }\` is an invalid option.\n`
-              + `findSCSS() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+              + `findSCSS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         else if (typeof options[key] !== 'boolean') return console.error(
                 `findSCSS() » ERROR: \`${ key }\` option must be set to \`true\` or \`false\`.`);
     }

@@ -18,7 +18,7 @@ const ipv4 = {
         for (const key of Object.keys(options))
             if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
                 `ipv4.generate() » ERROR: \`${ key }\` is an invalid option.\n`
-              + `ipv4.generate() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+              + `ipv4.generate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         if (typeof options.verbose !== 'boolean') return console.error(
                 'ipv4.generate() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
 
@@ -45,7 +45,7 @@ const ipv4 = {
         for (const key of Object.keys(options))
             if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
                 `ipv4.validate() » ERROR: \`${ key }\` is an invalid option.\n`
-              + `ipv4.validate() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+              + `ipv4.validate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         if (typeof options.verbose !== 'boolean') return console.error(
                 'ipv4.validate() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
 
@@ -78,7 +78,7 @@ const ipv6 = {
         for (const key in options) {
             if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
                 `ipv6.generate() » ERROR: \`${ key }\` is an invalid option.\n`
-              + `ipv6.generate() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+              + `ipv6.generate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
             if (typeof options[key] !== 'boolean') return console.error(
                 `ipv6.generate() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
         }
@@ -113,7 +113,7 @@ const ipv6 = {
         for (const key in options) {
             if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
                 `ipv6.format() » ERROR: \`${ key }\` is an invalid option.\n`
-              + `ipv6.format() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+              + `ipv6.format() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
             if (typeof options[key] !== 'boolean') return console.error(
                 `ipv6.format() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
         }
@@ -169,7 +169,7 @@ const ipv6 = {
         for (const key of Object.keys(options))
             if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
                 `ipv6.validate() » ERROR: \`${ key }\` is an invalid option.\n`
-              + `ipv6.validate() » Valid options: [ ${Object.keys(defaultOptions).join(', ')} ]`);
+              + `ipv6.validate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
         if (typeof options.verbose !== 'boolean') return console.error(
                 'ipv6.validate() » ERROR: [verbose] option can only be \`true\` or \`false\`.');
 
@@ -224,7 +224,7 @@ else { // run as CLI utility
                 } else unrecognizedArg = arg;
     });
     if (unrecognizedArg) {
-        console.error(`\n${br}ERROR: Arg [${unrecognizedArg}] not recognized.${nc}`);
+        console.error(`\n${br}ERROR: Arg [${ unrecognizedArg }] not recognized.${nc}`);
         console.info(`\n${by}Valid arguments are below.${nc}`);
         printHelpSections(['infoCmds']);
         process.exit(1);
