@@ -104,7 +104,7 @@ function generatePasswords(qty, options = {}) {
     for (const key of Object.keys(options))
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
             `generatePasswords() » ERROR: \`${ key }\` is an invalid option.`
-         + `\ngeneratePassword() » Valid options:\n  [ ${Object.keys(defaultOptions).join(', ')} ]`);
+        + `\ngeneratePasswords() » Valid options:\n  [ ${Object.keys(defaultOptions).join(', ')} ]`);
     if (isNaN(options.length) || options.length < 1) return console.error(
         'generatePasswords() » ERROR: [length] options must be > 1.');
     for (const booleanArgType of ['numbers', 'symbols', 'lowercase', 'uppercase', 'strict'])
