@@ -28,6 +28,12 @@ const ipv4 = {
         const segments = [];
         for (let i = 0; i < 4; i++) segments.push(randomInt(0, 256));
         const ip = segments.join('.');
+
+        // Log/return final result
+        if (options.verbose) console.info(
+              'ipv4.generate() » IPv4 address generated!'
+          + ( require.main !== module ?
+            '\nipv4.generate() » Check returned string.' : '' ));
         return ip;
     },
 
@@ -94,6 +100,12 @@ const ipv6 = {
             pieces.push(hex);
         }
         const ip = this.format(pieces.join(':'), { ...options, verbose: false });
+
+        // Log/return final result
+        if (options.verbose) console.info(
+              'ipv6.generate() » IPv6 address generated!'
+          + ( require.main !== module ?
+            '\nipv6.generate() » Check returned string.' : '' ));
         return ip;
     },
 

@@ -65,7 +65,15 @@ Generates **one** IPv4 address:
 
 ```js
 const ip = ipv4.generate();
-console.log(ip); // sample output: 36.42.224.208
+console.log(ip);
+
+/* sample output:
+
+ipv4.generate() » Generating IPv4 address...
+ipv4.generate() » IPv4 address generated!
+ipv4.generate() » Check returned string.
+36.42.224.208
+*/
 ```
 
 Available options (passed as object properties):
@@ -112,7 +120,15 @@ Generates **one** IPv6 address, returned as a string:
 
 ```js
 const ip = ipv6.generate();
-console.log(ip); // sample output: 1379:6748:810c:5e16:b6c9:ae2:939f:8f2a
+console.log(ip);
+
+/* sample output:
+
+ipv6.generate() » Generating IPv6 address...
+ipv6.generate() » IPv6 address generated!
+ipv6.generate() » Check returned string.
+1379:6748:810c:5e16:b6c9:ae2:939f:8f2a
+*/
 ```
 
 Available options (passed as object properties):
