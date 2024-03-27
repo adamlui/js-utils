@@ -192,7 +192,7 @@ validateStrength() » Check returned object for score/recommendations.
 
 姓名        | 类型   | 描述                                     | 默认值
 ------------|-------|------------------------------------------|--------
-`verbose`   | 布尔值 | 启用日志记录。                            | `true`
+`verbose`   | 布尔值 | 在控制台/终端中显示日志记录。              | `true`
 `length`    | 整数   | 密码的长度。                              | `8`
 `qty`*      | 整数   | 要生成的密码数量。                         | `1`
 `charset`   | 字符串 | 密码中包含的字符。                         | `''`

@@ -195,7 +195,7 @@ Any of these can be passed into the options object for each `generate*()` functi
 
 Name        | Type    | Description                                                                    | Default Value
 ------------|---------|--------------------------------------------------------------------------------|---------------
-`verbose`   | Boolean | Enable logging.                                                                | `true`
+`verbose`   | Boolean | Show logging in console/terminal.                                                                | `true`
 `length`    | Integer | Length of password(s).                                                         | `8`
 `qty`*      | Integer | Number of passwords to generate.                                               | `1`
 `charset`   | String  | Characters to include in password(s).                                          | `''`
