@@ -30,10 +30,8 @@ const ipv4 = {
         const ip = segments.join('.');
 
         // Log/return final result
-        if (options.verbose) console.info(
-              'ipv4.generate() » IPv4 address generated!'
-          + ( require.main !== module ?
-            '\nipv4.generate() » Check returned string.' : '' ));
+        if (options.verbose) console.info('ipv4.generate() » IPv4 address generated!'
+          + ( require.main !== module ? '\nipv4.generate() » Check returned string.' : '' ));
         return ip;
     },
 
@@ -104,10 +102,8 @@ const ipv6 = {
         const ip = this.format(pieces.join(':'), { ...options, verbose: false });
 
         // Log/return final result
-        if (options.verbose) console.info(
-              'ipv6.generate() » IPv6 address generated!'
-          + ( require.main !== module ?
-            '\nipv6.generate() » Check returned string.' : '' ));
+        if (options.verbose) console.info('ipv6.generate() » IPv6 address generated!'
+          + ( require.main !== module ? '\nipv6.generate() » Check returned string.' : '' ));
         return ip;
     },
 
