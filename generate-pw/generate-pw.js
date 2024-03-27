@@ -124,7 +124,7 @@ function generatePasswords(qty, options = {}) {
             `generatePasswords() » ERROR: [${ booleanArgType }] option can only be \`true\` or \`false\`.`);
 
     // Generate passwords
-    if (options.verbose) console.info(`generatePasswords() » Generating password${ qty > 1 ? 's' : '' }...`)
+    if (options.verbose) console.info(`generatePasswords() » Generating password${ qty > 1 ? 's' : '' }...`);
     const passwords = [];
     for (let i = 0; i < qty; i++) passwords.push(generatePassword(options));
 
