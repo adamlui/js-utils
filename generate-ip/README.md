@@ -138,9 +138,9 @@ console.log(formattedAddress);
 
 /* outputs:
 
-ipv6.format() » Formatting 0d::ffff:192.1.56.10/96...
 ipv6.format() » Expanding '::' into zero series...
 ipv6.format() » Adding leading zeros...
+ipv6.format() » IP formatted successfully!
 000d:0000:0000:0000:0000:0000:ffff:192.1.56.10/96
 */
 ```

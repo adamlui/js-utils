@@ -118,7 +118,7 @@ const ipv6 = {
                 `ipv6.format() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
         }
 
-        if (options.verbose) console.info('ipv6.format() » Formatting IPv6 address...');
+        // Init formattedAddress
         let formattedAddress = address;
 
         // Handle double colons
@@ -149,8 +149,9 @@ const ipv6 = {
             formattedAddress = address.replace(/(^|(?<=:))0+(?!:)/g, '$1');
         }
 
-        if (options.verbose && formattedAddress !== address) console.info(
-            'ipv6.format() » Address cannot be formatted!');
+        if (options.verbose) console.info('ipv6.format() » '
+            + ( formattedAddress !== address ? 'IP formatted successfully!'
+                                             : 'IP already formatted to specs.' ));
         return formattedAddress;
     },
 
