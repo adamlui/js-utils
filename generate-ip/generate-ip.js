@@ -164,10 +164,13 @@ const ipv6 = {
         }
 
         // Log/return final result
-        if (options.verbose) console.info(
-            ( formattedAddress !== address ? 'ipv6.format() » IP formatted successfully!\n'
-                                           + 'ipv6.format() » Check returned string.'
-                                           : 'ipv6.format() » IP already formatted to specs.' ));
+        if (options.verbose) {
+            if (formattedAddress !== address) console.info(
+                'ipv6.format() » IP formatted successfully!\n'
+              + 'ipv6.format() » Check returned string.');
+            else console.info(
+                'ipv6.format() » IP already formatted to specs.');
+        }
         return formattedAddress;
     },
 
