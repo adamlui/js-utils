@@ -67,6 +67,8 @@ const ipv4 = {
                     || parseInt(segment, 10) > 255 // or > 255
                   )
         );
+
+        // Log/return final result
         if (options.verbose) console.info(
             `ipv4.validate() » IP is ${ !addressIsValid ? 'in' : '' }valid IPv4 address!`);
         return addressIsValid;
@@ -161,6 +163,7 @@ const ipv6 = {
             formattedAddress = address.replace(/(^|(?<=:))0+(?!:)/g, '$1');
         }
 
+        // Log/return final result
         if (options.verbose) console.info(
             ( formattedAddress !== address ? 'ipv6.format() » IP formatted successfully!\n'
                                            + 'ipv6.format() » Check returned string.'
@@ -204,6 +207,8 @@ const ipv6 = {
                                           /\/(?:0|(?:[1-2]?\d)|32|96)$/, ''), { verbose: false }
                   )))
         );
+
+        // Log/return final result
         if (options.verbose) console.info(
             `ipv6.validate() » IP is ${ !addressIsValid ? 'in' : '' }valid IPv6 address!`);
         return addressIsValid;
