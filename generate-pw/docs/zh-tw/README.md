@@ -68,7 +68,14 @@ const pw = require('generate-pw');
 ```js
 const password = pw.generatePassword({ length: 11, numbers: true });
 console.log(password);
-// 範例輸出：'bAsZm3mq6Qn'
+/* 範例輸出：
+
+generatePassword() » Initializing character set...
+generatePassword() » Generating password...
+generatePassword() » Password generated!
+generatePassword() » Check returned string.
+'bAsZm3mq6Qn'
+*/
 ```
 
 ...或 **多個** 密碼（如果給了 `qty` 選項），傳回一個字串陣列：
@@ -76,7 +83,13 @@ console.log(password);
 ```js
 const passwords = pw.generatePassword({ qty: 5, length: 8, symbols: true });
 console.log(passwords);
-// 範例輸出：[ '!zSf@Q.s', '!,HT\\;m=', '?Lq&FV>^', 'gf}Y;}Ne', 'Stsx(GqE' ]
+/* 範例輸出：
+
+generatePassword() » Generating passwords...
+generatePassword() » Passwords generated!
+generatePassword() » Check returned array.
+[ '!zSf@Q.s', '!,HT\\;m=', '?Lq&FV>^', 'gf}Y;}Ne', 'Stsx(GqE' ]
+*/
 ```
 
 **💡注意：**如果不傳遞任何選項，密碼將為 8 個字元長，由大小寫字母組成。
@@ -92,7 +105,13 @@ console.log(passwords);
 ```js
 const passwords = pw.generatePasswords(5, { length: 3, uppercase: false });
 console.log(passwords);
-// 範例輸出：[ 'yilppxru', 'ckvkyjfp', 'zolcpyfb' ]
+/* 範例輸出：
+
+generatePasswords() » Generating passwords...
+generatePasswords() » Passwords generated!
+generatePasswords() » Check returned array.
+[ 'yilppxru', 'ckvkyjfp', 'zolcpyfb' ]
+*/
 ```
 
 **💡 注意：** 如果沒有傳遞 `qty` 參數，則只會產生一個密碼，並以字串形式傳回。

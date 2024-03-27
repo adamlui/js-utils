@@ -68,7 +68,15 @@ const pw = require('generate-pw');
 ```js
 const password = pw.generatePassword({ length: 11, numbers: true });
 console.log(password);
-// নমুনা আউটপুট: 'bAsZm3mq6Qn'
+
+/* নমুনা আউটপুট:
+
+generatePassword() » Initializing character set...
+generatePassword() » Generating password...
+generatePassword() » Password generated!
+generatePassword() » Check returned string.
+'bAsZm3mq6Qn'
+*/
 ```
 
 ...অথবা **একাধিক** পাসওয়ার্ড যদি `qty` বিকল্প দেওয়া হয়, স্ট্রিংগুলির একটি অ্যারে প্রদান করে:
@@ -76,7 +84,13 @@ console.log(password);
 ```js
 const passwords = pw.generatePassword({ qty: 5, length: 8, symbols: true });
 console.log(passwords);
-// নমুনা আউটপুট: [ '!zSf@Q.s', '!,HT\\;m=', '?Lq&FV>^', 'gf}Y;}Ne', 'Stsx(GqE' ]
+/* নমুনা আউটপুট:
+
+generatePassword() » Generating passwords...
+generatePassword() » Passwords generated!
+generatePassword() » Check returned array.
+[ '!zSf@Q.s', '!,HT\\;m=', '?Lq&FV>^', 'gf}Y;}Ne', 'Stsx(GqE' ]
+*/
 ```
 
 **💡 দ্রষ্টব্য:** যদি কোন বিকল্প পাস না করা হয়, পাসওয়ার্ডগুলি 8-অক্ষরের দীর্ঘ, বড়/লোয়ার হাতের অক্ষর সমন্বিত হবে।
@@ -92,7 +106,13 @@ console.log(passwords);
 ```js
 const passwords = pw.generatePasswords(5, { length: 3, uppercase: false });
 console.log(passwords);
-// নমুনা আউটপুট: [ 'yilppxru', 'ckvkyjfp', 'zolcpyfb' ]
+/* নমুনা আউটপুট:
+
+generatePasswords() » Generating passwords...
+generatePasswords() » Passwords generated!
+generatePasswords() » Check returned array.
+[ 'yilppxru', 'ckvkyjfp', 'zolcpyfb' ]
+*/
 ```
 
 **💡 দ্রষ্টব্য:** যদি কোন `qty` arg পাস না হয়, শুধুমাত্র একটি পাসওয়ার্ড তৈরি করা হবে, একটি স্ট্রিং হিসাবে ফেরত দেওয়া হবে।

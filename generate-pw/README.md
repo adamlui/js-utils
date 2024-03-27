@@ -68,7 +68,15 @@ Generates **one** password if `qty` option is not given, returning a string:
 ```js
 const password = pw.generatePassword({ length: 11, numbers: true });
 console.log(password);
-// sample output: 'bAsZm3mq6Qn'
+
+/* sample output:
+
+generatePassword() » Initializing character set...
+generatePassword() » Generating password...
+generatePassword() » Password generated!
+generatePassword() » Check returned string.
+'bAsZm3mq6Qn'
+*/
 ```
 
 ...or **multiple** passwords if `qty` option is given, returning an array of strings:
@@ -76,7 +84,14 @@ console.log(password);
 ```js
 const passwords = pw.generatePassword({ qty: 5, length: 8, symbols: true });
 console.log(passwords);
-// sample output: [ '!zSf@Q.s', '!,HT\\;m=', '?Lq&FV>^', 'gf}Y;}Ne', 'Stsx(GqE' ]
+
+/* sample output:
+
+generatePassword() » Generating passwords...
+generatePassword() » Passwords generated!
+generatePassword() » Check returned array.
+[ '!zSf@Q.s', '!,HT\\;m=', '?Lq&FV>^', 'gf}Y;}Ne', 'Stsx(GqE' ]
+*/
 ```
 
 **💡 Note:** If no options are passed, passwords will be 8-chars long, consisting of upper/lower cased letters.
@@ -92,7 +107,14 @@ Generates **multiple** passwords based on `qty` given, returning an array of str
 ```js
 const passwords = pw.generatePasswords(5, { length: 3, uppercase: false });
 console.log(passwords);
-// sample output: [ 'yilppxru', 'ckvkyjfp', 'zolcpyfb' ]
+
+/* sample output:
+
+generatePasswords() » Generating passwords...
+generatePasswords() » Passwords generated!
+generatePasswords() » Check returned array.
+[ 'yilppxru', 'ckvkyjfp', 'zolcpyfb' ]
+*/
 ```
 
 **💡 Note:** If no `qty` arg is passed, just one password will be generated, returned as a string.

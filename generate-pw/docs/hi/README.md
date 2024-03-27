@@ -68,7 +68,14 @@ const pw = require('generate-pw');
 ```js
 const password = pw.generatePassword({ length: 11, numbers: true });
 console.log(password);
-// नमूना आउटपुट: 'bAsZm3mq6Qn'
+/* नमूना आउटपुट:
+
+generatePassword() » Initializing character set...
+generatePassword() » Generating password...
+generatePassword() » Password generated!
+generatePassword() » Check returned string.
+'bAsZm3mq6Qn'
+*/
 ```
 
 ...या **एकाधिक** पासवर्ड यदि `qty` विकल्प दिया गया है, तो स्ट्रिंग्स की एक सरणी लौटाएं:
@@ -76,7 +83,13 @@ console.log(password);
 ```js
 const passwords = pw.generatePassword({ qty: 5, length: 8, symbols: true });
 console.log(passwords);
-// नमूना आउटपुट: [ '!zSf@Q.s', '!,HT\\;m=', '?Lq&FV>^', 'gf}Y;}Ne', 'Stsx(GqE' ]
+/* नमूना आउटपुट:
+
+generatePassword() » Generating passwords...
+generatePassword() » Passwords generated!
+generatePassword() » Check returned array.
+[ '!zSf@Q.s', '!,HT\\;m=', '?Lq&FV>^', 'gf}Y;}Ne', 'Stsx(GqE' ]
+*/
 ```
 
 **💡 नोट:** यदि कोई विकल्प नहीं चुना जाता है, तो पासवर्ड 8-अक्षर लंबा होगा, जिसमें अपर/लोअर केस अक्षर शामिल होंगे।
@@ -92,7 +105,13 @@ console.log(passwords);
 ```js
 const passwords = pw.generatePasswords(5, { length: 3, uppercase: false });
 console.log(passwords);
-// नमूना आउटपुट: [ 'yilppxru', 'ckvkyjfp', 'zolcpyfb' ]
+/* नमूना आउटपुट:
+
+generatePasswords() » Generating passwords...
+generatePasswords() » Passwords generated!
+generatePasswords() » Check returned array.
+[ 'yilppxru', 'ckvkyjfp', 'zolcpyfb' ]
+*/
 ```
 
 **💡 नोट:** यदि कोई `qty` तर्क पारित नहीं किया गया है, तो केवल एक पासवर्ड उत्पन्न किया जाएगा, एक स्ट्रिंग के रूप में लौटाया जाएगा।
