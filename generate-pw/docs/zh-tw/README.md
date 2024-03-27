@@ -172,6 +172,7 @@ validateStrength() » Check returned object for score/recommendations.
 
 姓名        | 類型   | 描述                                     | 預設值
 ------------|--------|-----------------------------------------|---------
+`verbose`   | 布林值 | 啟用日誌記錄。                            | `true`
 `length`    | 整數   | 密碼的長度。                              | `8`
 `qty`*      | 整數   | 要產生的密碼數量。                         | `1`
 `charset`   | 字串   | 密碼中包含的字元。                         | `''`
