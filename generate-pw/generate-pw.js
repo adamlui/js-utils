@@ -64,8 +64,10 @@ function generatePassword(options = {}) {
             pwCharset = charsets.lower + charsets.upper; // default to upper + lower
 
         // Exclude passed `exclude` chars
-        if (options.verbose && !fromMutliFunc) console.info('generatePassword() » Removing excluded characters...');
-        pwCharset = pwCharset.replace(new RegExp(`[${ options.exclude }]`, 'g'), '');
+        if (options.exclude) {
+            if (options.verbose && !fromMutliFunc) console.info('generatePassword() » Removing excluded characters...');
+            pwCharset = pwCharset.replace(new RegExp(`[${ options.exclude }]`, 'g'), '');
+        }
 
         // Generate unstrict password
         if (options.verbose && !fromMutliFunc) console.info('generatePassword() » Generating password...');
