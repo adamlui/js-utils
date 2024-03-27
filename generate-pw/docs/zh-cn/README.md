@@ -131,7 +131,8 @@ console.log(strictPW);
 /* 示例输出：
 
 strictify() » Strictifying password...
-strictify() » Strictification complete!
+strictify() » Password is now strict!
+strictify() » Check returned string.
 a!c2ef
 */
 ```

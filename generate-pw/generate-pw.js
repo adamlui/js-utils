@@ -191,7 +191,9 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
 
     // Log/return final result
     if (options.verbose) {
-        if (replacementCnt > 0) console.info('strictify() » Strictification complete!');
+        if (replacementCnt > 0) console.info(
+            'strictify() » Password is now strict!\n'
+          + 'strictify() » Check returned string.');
         else console.info(
             `strictify() » Password already includes ${ requiredCharTypes.join(' + ') } characters!\n`
           + 'strictify() » No modifications made.' );
