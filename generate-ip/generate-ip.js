@@ -51,7 +51,7 @@ const ipv4 = {
         }
 
         // Validate address as IPv4 address
-        if (options.verbose) console.info(`ipv4.validate() » Validating IPv4 address...`);
+        if (options.verbose) console.info('ipv4.validate() » Validating IPv4 address...');
         const segments = address.split('.');
         const addressIsValid = !( // false if any dq condition matches
                   segments.length !== 4 // not 4-segments long
@@ -118,7 +118,7 @@ const ipv6 = {
                 `ipv6.format() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
         }
 
-        if (options.verbose) console.info(`ipv6.format() » Formatting IPv6 address...`);
+        if (options.verbose) console.info('ipv6.format() » Formatting IPv6 address...');
         let formattedAddress = address;
 
         // Handle double colons
@@ -175,7 +175,7 @@ const ipv6 = {
 
         // Validate address as IPv6 address
         if (options.verbose) console.info(
-            `ipv6.validate() » Validating IPv6 address...`);
+            'ipv6.validate() » Validating IPv6 address...');
         const pieces = address.split(/::?/),
               lastPiece = pieces[pieces.length - 1];
         const addressIsValid = !( // false if any dq condition matches
