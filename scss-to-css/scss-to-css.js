@@ -49,10 +49,10 @@ function findSCSS(searchDir, options = {}) {
 
     // Log/return final result
     if (!options.isRecursing && options.verbose) console.info(
-        'findSCSS() » Search complete! ' + ( scssFiles.length === 0 ? 'No' : scssFiles.length )
-            + ` file${ scssFiles.length > 1 ? 's' : '' } found.`
+            'findSCSS() » Search complete! ' + ( scssFiles.length === 0 ? 'No' : scssFiles.length )
+                + ` file${ scssFiles.length > 1 ? 's' : '' } found.`
         + ( findSCSS.caller.name !== 'compile' && require.main !== module ?
-            '\nfindSCSS() » Check returned array.' : '' ));
+          '\nfindSCSS() » Check returned array.' : '' ));
     return options.isRecursing || scssFiles.length > 0 ? scssFiles : [];
 }
 

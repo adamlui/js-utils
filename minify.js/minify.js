@@ -50,10 +50,10 @@ function findJS(searchDir, options = {}) {
 
     // Log/return final result
     if (!options.isRecursing && options.verbose) console.info(
-        'findJS() » Search complete! ' + ( jsFiles.length === 0 ? 'No' : jsFiles.length )
-            + ` file${ jsFiles.length > 1 ? 's' : '' } found.`
+            'findJS() » Search complete! ' + ( jsFiles.length === 0 ? 'No' : jsFiles.length )
+                + ` file${ jsFiles.length > 1 ? 's' : '' } found.`
         + ( findJS.caller.name !== 'minify' && require.main !== module ?
-            '\nfindJS() » Check returned array.' : '' ));
+          '\nfindJS() » Check returned array.' : '' ));
     return options.isRecursing || jsFiles.length > 0 ? jsFiles : [];
 }
 
