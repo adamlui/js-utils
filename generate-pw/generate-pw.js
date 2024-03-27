@@ -18,6 +18,7 @@ function generatePassword(options = {}) {
 
     // Init options
     const defaultOptions = {
+        verbose: true,   // enable logging
         length: 8,       // length of password
         qty: 1,          // number of passwords to generate
         charset: '',     // characters to include
@@ -49,8 +50,10 @@ function generatePassword(options = {}) {
         return generatePasswords(qty, otherOptions);
 
     } else { // generate/return single password
+        const fromMutliFunc = generatePassword.caller.name === 'generatePasswords'; // for uncluttered logging
 
         // Init password's char set
+        if (options.verbose && !fromMutliFunc) console.info('generatePassword() » Initializing character set...');
         let pwCharset = options.charset || ( // use passed [charset], or construct from options
             (options.numbers ? charsets.numbers : '')
               + (options.symbols ? charsets.symbols : '')
@@ -61,9 +64,11 @@ function generatePassword(options = {}) {
             pwCharset = charsets.lower + charsets.upper; // default to upper + lower
 
         // Exclude passed `exclude` chars
+        if (options.verbose && !fromMutliFunc) console.info('generatePassword() » Removing excluded characters...');
         pwCharset = pwCharset.replace(new RegExp(`[${ options.exclude }]`, 'g'), '');
 
         // Generate unstrict password
+        if (options.verbose && !fromMutliFunc) console.info('generatePassword() » Generating password...');
         let password = '';
         for (let i = 0; i < options.length; i++) {
             const randomIndex = randomInt(0, pwCharset.length);
@@ -72,11 +77,15 @@ function generatePassword(options = {}) {
 
         // Enforce strict mode if enabled
         if (options.strict) {
+            if (options.verbose && !fromMutliFunc) console.info('generatePassword() » Enforcing strict mode...');
             const charTypes = ['number', 'symbol', 'lower', 'upper'],
                   requiredCharTypes = charTypes.filter(charType => options[charType + 's'] || options[charType + 'case']);
             password = strictify(password, requiredCharTypes);
         }
 
+        // Log/return final result
+        if (options.verbose && !fromMutliFunc) console.info('generatePassword() » Password generated!'
+                            + ( require.main !== module ? '\ngeneratePassword() » Check returned string.' : '' ));
         return password;
     }
 }
@@ -85,6 +94,7 @@ function generatePasswords(qty, options = {}) {
 
     // Init options
     const defaultOptions = {
+        verbose: true,   // enable logging
         length: 8,       // length of password
         charset: '',     // characters to include
         exclude: '',     // characters to exclude
@@ -113,9 +123,14 @@ function generatePasswords(qty, options = {}) {
         if (typeof options[booleanArgType] !== 'boolean') return console.error(
             `generatePasswords() » ERROR: [${ booleanArgType }] option can only be \`true\` or \`false\`.`);
 
-    // Generate/return passwords
+    // Generate passwords
+    if (options.verbose) console.info(`generatePasswords() » Generating password${ qty > 1 ? 's' : '' }...`)
     const passwords = [];
     for (let i = 0; i < qty; i++) passwords.push(generatePassword(options));
+
+    // Log/return final result
+    if (options.verbose) console.info(`generatePasswords() » Password${ qty > 1 ? 's' : '' } generated!`
+      + ( require.main !== module ? '\ngeneratePasswords() » Check returned array.' : '' ));
     return passwords;
 }
 
@@ -172,7 +187,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
                 replacementCnt++;
     }}}
 
-    // Final summary/return
+    // Log/return final result
     if (options.verbose) {
         if (replacementCnt > 0) console.info('strictify() » Strictification complete!');
         else console.info(
@@ -228,7 +243,7 @@ function validateStrength(password, options = {}) {
         strengthScore += ( // +20 per char type included
             charCnts[charType] >= strengthCriteria['min' + charType.charAt(0).toUpperCase() + charType.slice(1)]) ? 20 : 0;
 
-    // Final log/return
+    // Log/return final result
     if (options.verbose) console.info('validateStrength() » Password strength validated!\n'
         + ( require.main !== module ? 'validateStrength() » Check returned object for score/recommendations.' : '' ));
     return { strengthScore, recommendations, isGood: strengthScore >= 80 };
