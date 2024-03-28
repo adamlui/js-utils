@@ -64,12 +64,12 @@ function compile(inputPath, options = {}) {
 
     // Validate inputPath
     if (typeof inputPath !== 'string') return console.error(
-            'findSCSS() » ERROR: 1st arg <inputPath> must be a string.');
+            'compile() » ERROR: 1st arg <inputPath> must be a string.');
     else { // verify inputPath path existence
         inputPath = path.resolve(process.cwd(), inputPath);
         if (!fs.existsSync(inputPath)) return console.error(
-            'findSCSS() » ERROR: 1st arg <inputPath> must be an existing directory or file.\n'
-          + `findSCSS() » ${ inputPath } does not exist.`);
+            'compile() » ERROR: 1st arg <inputPath> must be an existing directory or file.\n'
+          + `compile() » ${ inputPath } does not exist.`);
     }
 
     // Validate options
