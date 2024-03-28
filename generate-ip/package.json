@@ -15,8 +15,8 @@
     "docs"
   ],
   "bin": {
-    "generateip": "dist/generate-ip.min.js",
-    "generate-ip": "dist/generate-ip.min.js"
+    "generateip": "dist/cli.min.js",
+    "generate-ip": "dist/cli.min.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
