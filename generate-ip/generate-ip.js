@@ -26,7 +26,7 @@ const ipv4 = {
         // Generate IPv4 address
         if (options.verbose) console.info('ipv4.generate() » Generating IPv4 address...');
         const segments = [];
-        for (let i = 0; i < 4; i++) segments.push(randomInt(0, 255));
+        for (let i = 0; i < 4; i++) segments.push(randomInt(0, 256));
         const ip = segments.join('.');
 
         // Log/return final result
