@@ -169,7 +169,7 @@ const srcCode = 'function add(first, second) { return first + second; }',
       minErgebnis = minifyJS.minify(srcCode);
 
 console.log(minErgebnis.error); // gibt einen Laufzeitfehler oder `undefined` aus, wenn kein Fehler vorliegt
-console.log(minErgebnis.code);  // gibt minimiertes JS aus: function add(n,d){return n+d}
+console.log(minErgebnis.code);  // gibt minimiertes JS aus: 'function add(n,d){return n+d}'
 ```
 
 Wenn ein **Dateipfad** übergeben wird, wird der Code der Datei geladen und dann minimiert, wodurch ein Objekt wie oben zurückgegeben wird.

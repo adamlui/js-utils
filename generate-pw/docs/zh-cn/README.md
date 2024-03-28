@@ -133,7 +133,7 @@ console.log(strictPW);
 strictify() » Strictifying password...
 strictify() » Password is now strict!
 strictify() » Check returned string.
-a!c2ef
+'a!c2ef'
 */
 ```
 

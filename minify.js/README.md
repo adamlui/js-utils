@@ -170,7 +170,7 @@ const srcCode = 'function add(first, second) { return first + second; }',
       minifyResult = minifyJS.minify(srcCode);
 
 console.log(minifyResult.error); // outputs runtime error, or `undefined` if no error
-console.log(minifyResult.code);  // outputs minified JS: function add(n,d){return n+d}
+console.log(minifyResult.code);  // outputs minified JS: 'function add(n,d){return n+d}'
 ```
 
 If a **file path** is passed, the file's code is loaded then minified, returning an object like above.
