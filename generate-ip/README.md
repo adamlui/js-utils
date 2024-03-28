@@ -3,7 +3,7 @@
 ### Randomly generate IPv4 and IPv6 addresses.
 
 <a href="#%EF%B8%8F-mit-license"><img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/generate-ip-2.1.0"><img height=31 src="https://img.shields.io/badge/Latest_Build-2.1.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/generate-ip-2.1.1"><img height=31 src="https://img.shields.io/badge/Latest_Build-2.1.1-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/generate-ip?activeTab=code"><img height=31 src="https://img.shields.io/npm/unpacked-size/generate-ip?style=for-the-badge&logo=ebox&logoColor=white&labelColor=464646&color=blue"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_js-utils:generate-ip/generate-ip.js"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_js-utils%3Agenerate-ip%2Fsrc%2Fgenerate-ip.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></a>
 
@@ -56,14 +56,14 @@ const { ipv4, ipv6 } = require('generate-ip');
 #### HTML script tag:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/generate-ip@2.1.0/dist/generate-ip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/generate-ip@2.1.1/dist/generate-ip.min.js"></script>
 ```
 
 #### ES6:
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-ip@2.1.0/dist/generate-ip.min.js');
+    await import('https://cdn.jsdelivr.net/npm/generate-ip@2.1.1/dist/generate-ip.min.js');
     // Your code here...
 })();
 ```
@@ -72,7 +72,7 @@ const { ipv4, ipv6 } = require('generate-ip');
 
 ```js
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://cdn.jsdelivr.net/npm/generate-ip@2.1.0/dist/generate-ip.min.js');
+xhr.open('GET', 'https://cdn.jsdelivr.net/npm/generate-ip@2.1.1/dist/generate-ip.min.js');
 xhr.onload = function() {
     if (xhr.status === 200) {
         var generateIP = document.createElement('script');
@@ -88,7 +88,7 @@ xhr.send();
 
 ```js
 ...
-// @require https://cdn.jsdelivr.net/npm/generate-ip@2.1.0/dist/generate-ip.min.js
+// @require https://cdn.jsdelivr.net/npm/generate-ip@2.1.1/dist/generate-ip.min.js
 // ==/UserScript==
 
 // Your code here...
