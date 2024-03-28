@@ -233,11 +233,11 @@ findSCSS() » Check returned array.
 
 Beschikbare parameters (en hun standaardinstellingen) zijn:
 
-Naam         | Beschrijving                                                         | Standaardwaarde
--------------|----------------------------------------------------------------------|---------------
-`recursive`  | Zoek recursief naar geneste bestanden als het mappad is doorgegeven. | `true`
-`verbose`    | Toon inloggen op console/terminal.                                   | `true`
-`dotFolders` | Puntmappen opnemen in het zoeken naar bestanden.                     | `false`
+Naam         | Beschrijving                                                    | Standaardwaarde
+-------------|-----------------------------------------------------------------|-----------------
+`recursive`  | Recursief zoeken naar geneste bestanden in zoekMap is geslaagd. | `true`
+`verbose`    | Toon inloggen op console/terminal.                              | `true`
+`dotFolders` | Puntmappen opnemen in het zoeken naar bestanden.                | `false`
 
 <br>
 

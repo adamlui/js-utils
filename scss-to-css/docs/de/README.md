@@ -233,11 +233,11 @@ findSCSS() » Check returned array.
 
 Verfügbare Parameter (und ihre Standardeinstellungen) sind:
 
-Name         | Beschreibung                                                                           | Standardwert
--------------|----------------------------------------------------------------------------------------|--------------
-`recursive`  | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird. | `true`
-`verbose`    | Anmeldung in Konsole/Terminal anzeigen.                                                | `true`
-`dotFolders` | Beziehen Sie Punktordner in die Dateisuche ein.                                        | `false`
+Name         | Beschreibung                                                                 | Standardwert
+-------------|------------------------------------------------------------------------------|--------------
+`recursive`  | Rekursive Suche nach verschachtelten Dateien im übergebenen suchverzeichnis. | `true`
+`verbose`    | Anmeldung in Konsole/Terminal anzeigen.                                      | `true`
+`dotFolders` | Beziehen Sie Punktordner in die Dateisuche ein.                              | `false`
 
 <br>
 

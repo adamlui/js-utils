@@ -233,11 +233,11 @@ findSCSS() » Check returned array.
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:
 
-Nombre       | Descripción                                                                | Valor por defecto
--------------|----------------------------------------------------------------------------|-------------------
-`recursive`  | Busque recursivamente archivos anidados si se pasa la ruta del directorio. | `true`
-`verbose`    | Mostrar el inicio de sesión en la consola/terminal.                        | `true`
-`dotFolders` | Incluir carpetas de puntos en la búsqueda de archivos.                     | `false`
+Nombre       | Descripción                                                       | Valor por defecto
+-------------|-------------------------------------------------------------------|-------------------
+`recursive`  | Se pasó la búsqueda recursiva de archivos anidados en sesarchDir. | `true`
+`verbose`    | Mostrar el inicio de sesión en la consola/terminal.               | `true`
+`dotFolders` | Incluir carpetas de puntos en la búsqueda de archivos.            | `false`
 
 <br>
 

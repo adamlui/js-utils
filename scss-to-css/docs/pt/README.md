@@ -233,11 +233,11 @@ findSCSS() » Check returned array.
 
 Os parâmetros disponíveis (e suas configurações padrão) são:
 
-Nome         | Descrição                                                                             | Valor padrão
--------------|---------------------------------------------------------------------------------------|--------------
-`recursive`  | Pesquise recursivamente por arquivos aninhados se o caminho do diretório for passado. | `true`
-`verbose`    | Mostrar login no console/terminal.                                                    | `true`
-`dotFolders` | Incluir dotfolders na pesquisa de arquivos.                                           | `false`
+Nome         | Descrição                                                              | Valor padrão
+-------------|------------------------------------------------------------------------|--------------
+`recursive`  | Pesquise recursivamente por arquivos aninhados em sesarchDir aprovado. | `true`
+`verbose`    | Mostrar login no console/terminal.                                     | `true`
+`dotFolders` | Incluir dotfolders na pesquisa de arquivos.                            | `false`
 
 <br>
 

@@ -198,8 +198,8 @@ Name         | Beschreibung                                                     
 -------------|----------------------------------------------------------------------------------------|--------------
 `recursive`  | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird. | `true`
 `verbose`    | Anmeldung in Konsole/Terminal anzeigen.                                                | `true`
-`dotFolders` | Beziehen Sie Punktordner in die Dateisuche ein.                                  | `false`
-`dotFiles`   | Beziehen Sie Punktdateien in die Dateisuche ein.                                        | `false`
+`dotFolders` | Beziehen Sie Punktordner in die Dateisuche ein.                                        | `false`
+`dotFiles`   | Beziehen Sie Punktdateien in die Dateisuche ein.                                       | `false`
 `mangle`     | Variablennamen kürzen (normalerweise auf ein Zeichen).                                 | `true`
 
 #
@@ -231,10 +231,10 @@ Verfügbare Parameter (und ihre Standardeinstellungen) sind:
 
 Name         | Beschreibung                                                                           | Standardwert
 -------------|----------------------------------------------------------------------------------------|--------------
-`recursive`  | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird. | `true`
+`recursive`  | Rekursive Suche nach verschachtelten Dateien im übergebenen suchverzeichnis.           | `true`
 `verbose`    | Anmeldung in Konsole/Terminal anzeigen.                                                | `true`
-`dotFolders` | Beziehen Sie Punktordner in die Dateisuche ein.                                  | `false`
-`dotFiles`   | Beziehen Sie Punktdateien in die Dateisuche ein.                                        | `false`
+`dotFolders` | Beziehen Sie Punktordner in die Dateisuche ein.                                        | `false`
+`dotFiles`   | Beziehen Sie Punktdateien in die Dateisuche ein.                                       | `false`
 
 <br>
 

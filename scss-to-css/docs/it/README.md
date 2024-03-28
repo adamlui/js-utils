@@ -233,11 +233,11 @@ findSCSS() » Check returned array.
 
 I parametri disponibili (e le relative impostazioni predefinite) sono:
 
-Nome         | Descrizione                                                                       | Valore di default
--------------|-----------------------------------------------------------------------------------|-------------------
-`recursive`  | Cerca ricorsivamente i file nidificati se il percorso della direttorio è passato. | `true`
-`verbose`    | Mostra l'accesso nella console/terminale.                                         | `true`
-`dotFolders` | Includi cartelle punto nella ricerca di file.                                     | `false`
+Nome         | Descrizione                                                   | Valore di default
+-------------|---------------------------------------------------------------|-------------------
+`recursive`  | Cerca ricorsivamente i file nidificati in dirRicerca passati. | `true`
+`verbose`    | Mostra l'accesso nella console/terminale.                     | `true`
+`dotFolders` | Includi cartelle punto nella ricerca di file.                 | `false`
 
 <br>
 
