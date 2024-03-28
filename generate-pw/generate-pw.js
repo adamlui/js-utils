@@ -50,7 +50,7 @@ function generatePassword(options = {}) {
         return generatePasswords(qty, otherOptions);
 
     } else { // generate/return single password
-        const fromMutliFunc = generatePassword.caller.name === 'generatePasswords'; // for uncluttered logging
+        const fromMutliFunc = generatePassword.caller.name === 'generatePasswords'; // flag to avoid repetitive logs
 
         // Init password's char set
         if (options.verbose && !fromMutliFunc) console.info('generatePassword() » Initializing character set...');
