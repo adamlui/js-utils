@@ -46,7 +46,7 @@ const ipv4 = {
         const ips = [];
         if (options.qty > 1) // generate array of [qty] IP strings
             for (let i = 0; i < options.qty; i++)
-                ips.push(this.generate({ verbose: false }));
+                ips.push(this.generate({ ...options, qty: 1, verbose: false }));
         else { // generate single IP
             const segments = [];
             for (let i = 0; i < 4; i++) segments.push(randomInt(0, 256));
@@ -131,7 +131,7 @@ const ipv6 = {
         const ips = [];
         if (options.qty > 1) // generate array of [qty] IP strings
             for (let i = 0; i < options.qty; i++)
-                ips.push(this.generate({ verbose: false }));
+                ips.push(this.generate({ ...options, qty: 1, verbose: false }));
         else { // generate single IP
             const pieces = [], { qty, ...nonQtyOptions } = options; // eslint-disable-line no-unused-vars
             for (let i = 0; i < 8; i++) { // generate 8x 16-bit hex pieces
