@@ -24,7 +24,7 @@ function findJS(searchDir, options = {}) {
     }
 
     // Validate options
-    for (const key of Object.keys(options)) {
+    for (const key in options) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key))
             if (key !== 'isRecursing') return console.error(
                 `findJS() » ERROR: \`${ key }\` is an invalid option.\n`
@@ -69,7 +69,7 @@ function minify(input, options = {}) {
         'minify() » ERROR: 1st arg <input> must be a string.');
 
     // Validate options
-    for (const key of Object.keys(options)) {
+    for (const key in options) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
             `minify() » ERROR: \`${ key }\` is an invalid option.\n`
           + `minify() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);

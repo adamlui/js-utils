@@ -28,7 +28,7 @@ const ipv4 = {
         options = { ...defaultOptions, ...options };
 
         // Validate options
-        for (const key of Object.keys(options)) {
+        for (const key in options) {
             if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
                     `ipv4.generate() » ERROR: \`${ key }\` is an invalid option.\n`
                   + `ipv4.generate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
@@ -72,7 +72,7 @@ const ipv4 = {
             'ipv4.validate() » ERROR: 1st arg <address> must be a string.');
 
         // Validate options
-        for (const key of Object.keys(options)) {
+        for (const key in options) {
             if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
                 `ipv4.validate() » ERROR: \`${ key }\` is an invalid option.\n`
               + `ipv4.validate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);

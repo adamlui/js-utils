@@ -32,7 +32,7 @@ function generatePassword(options = {}) {
     options = { ...defaultOptions, ...options };
 
     // Validate options
-    for (const key of Object.keys(options))
+    for (const key in options)
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
             `generatePassword() » ERROR: \`${ key }\` is an invalid option.\n`
           + `generatePassword() » Valid options:\n  [ ${ Object.keys(defaultOptions).join(', ') } ]`);
@@ -114,7 +114,7 @@ function generatePasswords(qty, options = {}) {
         'generatePasswords() » ERROR: 1st arg <qty> can only be an integer > 0.');
 
     // Validate options
-    for (const key of Object.keys(options))
+    for (const key in options)
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
             `generatePasswords() » ERROR: \`${ key }\` is an invalid option.\n`
           + `generatePasswords() » Valid options:\n  [ ${ Object.keys(defaultOptions).join(', ') } ]`);
@@ -154,7 +154,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
           + `strictify() » Valid character types: [ ${ validCharTypes.join(', ') } ]`);
 
     // Validate options
-    for (const key of Object.keys(options)) {
+    for (const key in options) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
             `strictify() » ERROR: \`${ key }\` is an invalid option.\n`
           + `strictify() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
@@ -213,7 +213,7 @@ function validateStrength(password, options = {}) {
         'validateStrength() » ERROR: 1st arg <password> must be a string.');
 
     // Validate options
-    for (const key of Object.keys(options)) {
+    for (const key in options) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
             `validateStrength() » ERROR: \`${ key }\` is an invalid option.\n`
           + `validateStrength() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
