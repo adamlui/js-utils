@@ -102,7 +102,7 @@ xhr.send();
 
 ### `ipv4` methods
 
-Use the `ipv4` methods to [**generate**](#ipv4generateoptions) and [**validate**](#ipv4validateaddress-options) IPv4 addresses.
+💡 Use the `ipv4` methods to [**generate**](#ipv4generateoptions) and [**validate**](#ipv4validateaddress-options) IPv4 addresses.
 
 #
 
@@ -173,7 +173,7 @@ Name        | Type    | Description                       | Default Value
 
 ### `ipv6` methods
 
-Use the `ipv6` methods to [**generate**](#ipv6generateoptions), [**format**](#ipv6formatipv6address-options), and [**validate**](#ipv6validateaddress-options) IPv6 addresses.
+💡 Use the `ipv6` methods to [**generate**](#ipv6generateoptions), [**format**](#ipv6formatipv6address-options), and [**validate**](#ipv6validateaddress-options) IPv6 addresses.
 
 #
 
