@@ -21,30 +21,44 @@ const ipv4 = {
     generate: function(options = {}) {
 
         // Init options
-        const defaultOptions = { verbose: true };
+        const defaultOptions = {
+            verbose: true, // enable logging
+            qty: 1         // number of IP addresses to generate
+        };
         options = { ...defaultOptions, ...options };
 
         // Validate options
         for (const key of Object.keys(options)) {
             if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
-                `ipv4.generate() » ERROR: \`${ key }\` is an invalid option.\n`
-              + `ipv4.generate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
-            else if (typeof options[key] !== 'boolean') return console.error(
-                `ipv4.generate() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
+                    `ipv4.generate() » ERROR: \`${ key }\` is an invalid option.\n`
+                  + `ipv4.generate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+            else if (['verbose'].includes(key)
+                && typeof options[key] !== 'boolean') return console.error(
+                    `ipv4.generate() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+            else if (['qty'].includes(key)
+                && (isNaN(options[key]) || options[key] < 1)) return console.error(
+                    `ipv4.generate() » ERROR: [${ key }] option can only be an integer > 0.`);
         }
 
-        // Generate IPv4 address
-        if (options.verbose) console.info('ipv4.generate() » Generating IPv4 address...');
-        const segments = [];
-        for (let i = 0; i < 4; i++) segments.push(randomInt(0, 256));
-        const ip = segments.join('.');
+        // Generate IPv4 address(es)
+        if (options.verbose) console.info(
+            `ipv4.generate() » Generating IPv4 address${ options.qty > 1 ? 'es' : '' }...`);
+        const ips = [];
+        if (options.qty > 1) // generate array of [qty] IP strings
+            for (let i = 0; i < options.qty; i++)
+                ips.push(this.generate({ verbose: false }));
+        else { // generate single IP
+            const segments = [];
+            for (let i = 0; i < 4; i++) segments.push(randomInt(0, 256));
+            ips.push(segments.join('.'));
+        }
 
         // Log/return final result
         if (options.verbose) console.info(
-                'ipv4.generate() » IPv4 address generated!'
+                `ipv4.generate() » IPv4 address${ options.qty > 1 ? 'es' : '' } generated!`
           + (typeof require !== 'undefined' && require.main !== module ?
-              '\nipv4.generate() » Check returned string.' : '' ));
-        return ip;
+              `\nipv4.generate() » Check returned ${ options.qty > 1 ? 'array' : 'string' }.` : '' ));
+        return options.qty > 1 ? ips : ips[0];
     },
 
     validate: function(address, options = {}) {
@@ -90,35 +104,51 @@ const ipv6 = {
     generate: function(options = {}) {
 
         // Init options
-        const defaultOptions = { verbose: true, leadingZeros: false, doubleColon: true };
+        const defaultOptions = {
+            verbose: true,       // enable logging
+            qty: 1,              // number of IP addresses to generate
+            leadingZeros: false, // include leading zeros in hex pieces
+            doubleColon: true    // replace series of zeros w/ '::'
+        };
         options = { ...defaultOptions, ...options };
 
         // Validate options
         for (const key in options) {
             if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
-                `ipv6.generate() » ERROR: \`${ key }\` is an invalid option.\n`
-              + `ipv6.generate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
-            if (typeof options[key] !== 'boolean') return console.error(
-                `ipv6.generate() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+                    `ipv6.generate() » ERROR: \`${ key }\` is an invalid option.\n`
+                  + `ipv6.generate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+            else if (['verbose', 'leadingZeros', 'doubleColon'].includes(key)
+                && typeof options[key] !== 'boolean') return console.error(
+                    `ipv6.generate() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+            else if (['qty'].includes(key)
+                && (isNaN(options[key]) || options[key] < 1)) return console.error(
+                    `ipv6.generate() » ERROR: [${ key }] option can only be an integer > 0.`);
         }
 
-        // Generate IPv6 address
-        if (options.verbose) console.info('ipv6.generate() » Generating IPv6 address...');
-        const pieces = [];
-        for (let i = 0; i < 8; i++) { // generate 8x 16-bit hex pieces
-            let hex = '';
-            for (let j = 0; j < 4; j++) // generate 4-char hex piece
-                hex += randomInt(0, 16).toString(16);
-            pieces.push(hex);
+        // Generate IPv6 address(es)
+        if (options.verbose) console.info(
+            `ipv6.generate() » Generating IPv6 address${ options.qty > 1 ? 'es' : '' }...`);
+        const ips = [];
+        if (options.qty > 1) // generate array of [qty] IP strings
+            for (let i = 0; i < options.qty; i++)
+                ips.push(this.generate({ verbose: false }));
+        else { // generate single IP
+            const pieces = [], { qty, ...nonQtyOptions } = options; // eslint-disable-line no-unused-vars
+            for (let i = 0; i < 8; i++) { // generate 8x 16-bit hex pieces
+                let hex = '';
+                for (let j = 0; j < 4; j++) // generate 4-char hex piece
+                    hex += randomInt(0, 16).toString(16);
+                pieces.push(hex);
+            }
+            ips.push(this.format(pieces.join(':'), { ...nonQtyOptions, verbose: false }));
         }
-        const ip = this.format(pieces.join(':'), { ...options, verbose: false });
 
         // Log/return final result
         if (options.verbose) console.info(
-                'ipv6.generate() » IPv6 address generated!'
+                `ipv6.generate() » IPv6 address${ options.qty > 1 ? 'es' : '' } generated!`
           + (typeof require !== 'undefined' && require.main !== module ?
-              '\nipv6.generate() » Check returned string.' : '' ));
-        return ip;
+              `\nipv6.generate() » Check returned ${ options.qty > 1 ? 'array' : 'string' }.` : '' ));
+        return options.qty > 1 ? ips : ips[0];
     },
 
     format: function(address, options = {}) {
