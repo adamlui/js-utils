@@ -190,7 +190,7 @@ console.log(ip);
 ipv6.generate() » Generating IPv6 address...
 ipv6.generate() » IPv6 address generated!
 ipv6.generate() » Check returned string.
-1379:6748:810c:5e16:b6c9:ae2:939f:8f2a
+'1379:6748:810c:5e16:b6c9:ae2:939f:8f2a'
 */
 ```
 
@@ -243,7 +243,7 @@ ipv6.format() » Expanding '::' into zero series...
 ipv6.format() » Adding leading zeros...
 ipv6.format() » IP formatted successfully!
 ipv6.format() » Check returned string.
-000d:0000:0000:0000:0000:0000:ffff:192.1.56.10/96
+'000d:0000:0000:0000:0000:0000:ffff:192.1.56.10/96'
 */
 ```
 
