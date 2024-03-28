@@ -8,13 +8,9 @@ try { // to use Node.js module
     randomInt = require('crypto').randomInt;
 } catch (err) { // use browser API or JS method
     const webCrypto = window.crypto || window.msCrypto;
-    randomInt = function(min, max) {
-        if (webCrypto) {
-            const range = max - min,
-                  randomVal = webCrypto.getRandomValues(new Uint32Array(1))[0];
-            return Math.floor(randomVal / 0xFFFFFFFF * range) + min;
-        } else // use JS method
-            return Math.floor(Math.random() * (max - min)) + min;
+    randomInt = (min, max) => {
+        const randomVal = webCrypto?.getRandomValues(new Uint32Array(1))[0] / 0xFFFFFFFF || Math.random();
+        return Math.floor(randomVal * (max - min)) + min;
     };
 }
 
