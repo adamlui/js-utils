@@ -10,7 +10,11 @@ const fs = require('fs'),
 function findSCSS(searchDir, options = {}) {
 
     // Init options
-    const defaultOptions = { recursive: true, verbose: true, dotFolders: false };
+    const defaultOptions = {
+        recursive: true,  // recursively search for nested files in searchDir passed
+        verbose: true,    // enable logging
+        dotFolders: false // include dotfolders in file search
+    };
     options = { ...defaultOptions, ...options };
 
     // Validate searchDir
@@ -44,7 +48,7 @@ function findSCSS(searchDir, options = {}) {
                 scssFiles.push( // recursively find SCSS in eligible dir
                     ...findSCSS(filePath, { ...options, isRecursing: true }));
         else if (file.endsWith('.scss')) // SCSS file found
-            scssFiles.push(filePath); // store it for compilation
+            scssFiles.push(filePath); // store it for returning
     });
 
     // Log/return final result
@@ -59,7 +63,13 @@ function findSCSS(searchDir, options = {}) {
 function compile(inputPath, options = {}) {
 
     // Init options
-    const defaultOptions = { minify: true, sourceMaps: true, recursive: true, verbose: true, dotFolders: false };
+    const defaultOptions = {
+        recursive: true,   // recursively search for nested files if dir path passed
+        verbose: true,     // enable logging
+        dotFolders: false, // include dotfolders in file search
+        minify: true,      // minify output CSS
+        sourceMaps: true   // generate CSS source maps
+    };
     options = { ...defaultOptions, ...options };
 
     // Validate inputPath

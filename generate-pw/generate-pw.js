@@ -139,7 +139,9 @@ function generatePasswords(qty, options = {}) {
 function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', 'upper'], options = {}) {
 
     // Init options
-    const defaultOptions = { verbose: true };
+    const defaultOptions = {
+        verbose: true // enable logging
+    };
     options = { ...defaultOptions, ...options };
 
     // Validate password
@@ -205,7 +207,9 @@ function validateStrength(password, options = {}) {
     const strengthCriteria = { minLength: 8, minLower: 1, minUpper: 1, minNumber: 1, minSymbol: 1 };
 
     // Init options
-    const defaultOptions = { verbose: true };
+    const defaultOptions = {
+        verbose: true // enable logging
+    };
     options = { ...defaultOptions, ...options };
 
     // Validate password

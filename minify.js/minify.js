@@ -10,7 +10,12 @@ const fs = require('fs'),
 function findJS(searchDir, options = {}) {
 
     // Init options
-    const defaultOptions = { recursive: true, verbose: true, dotFolders: false, dotFiles: false };
+    const defaultOptions = {
+        recursive: true,   // recursively search for nested files in searchDir passed
+        verbose: true,     // enable logging
+        dotFolders: false, // include dotfolders in file search
+        dotFiles: false    // include dotfiles in file search
+    };
     options = { ...defaultOptions, ...options };
 
     // Validate searchDir
@@ -45,7 +50,7 @@ function findJS(searchDir, options = {}) {
                     ...findJS(filePath, { ...options, isRecursing: true }));
         else if (/\.js(?<!\.min\.js)$/.test(file)
             && (options.dotFiles || !file.startsWith('.')))
-                jsFiles.push(filePath); // store eligible unminified JS file for minification
+                jsFiles.push(filePath); // store eligible unminified JS file for returning
     });
 
     // Log/return final result
@@ -61,7 +66,12 @@ function minify(input, options = {}) {
 
     // Init options
     const defaultOptions = {
-        recursive: true, verbose: true, dotFolders: false, dotFiles: false, mangle: true };
+        recursive: true,   // recursively search for nested files if dir path passed
+        verbose: true,     // enable logging
+        dotFolders: false, // include dotfolders in file search
+        dotFiles: false,   // include dotfiles in file search
+        mangle: true       // shorten var names (typically to one character)
+    };
     options = { ...defaultOptions, ...options };
 
     // Validate input

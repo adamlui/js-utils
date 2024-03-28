@@ -64,7 +64,9 @@ const ipv4 = {
     validate: function(address, options = {}) {
 
         // Init options
-        const defaultOptions = { verbose: true };
+        const defaultOptions = {
+            verbose: true // enable logging
+        };
         options = { ...defaultOptions, ...options };
 
         // Validate address as arg
@@ -154,7 +156,11 @@ const ipv6 = {
     format: function(address, options = {}) {
 
         // Init options
-        const defaultOptions = { verbose: true, leadingZeros: false, doubleColon: true };
+        const defaultOptions = {
+            verbose: true,       // enable logging
+            leadingZeros: false, // include leading zeros in hex pieces
+            doubleColon: true    // replace series of zeros w/ '::'
+        };
         options = { ...defaultOptions, ...options };
 
         // Validate address
@@ -217,7 +223,9 @@ const ipv6 = {
     validate: function(address, options = {}) {
 
         // Init options
-        const defaultOptions = { verbose: true };
+        const defaultOptions = {
+            verbose: true // enable logging
+        };
         options = { ...defaultOptions, ...options };
 
         // Validate address as arg
