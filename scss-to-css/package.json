@@ -19,6 +19,10 @@
     "scsstocss": "dist/scss-to-css.min.js",
     "scss-to-css": "dist/scss-to-css.min.js"
   },
+  "directories": {
+    "lib": ".",
+    "doc": "./docs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "minify-js scss-to-css.js dist",

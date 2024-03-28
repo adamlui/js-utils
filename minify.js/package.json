@@ -14,6 +14,11 @@
     "minifyjs": "minify.js",
     "minify-js": "minify.js"
   },
+  "directories": {
+    "lib": ".",
+    "doc": "./docs",
+    "test": "./utils/test"
+  },
   "scripts": {
     "test": "bash utils/test/minify-cli.test.sh",
     "bump:patch": "bash utils/bump.sh patch",

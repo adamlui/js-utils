@@ -19,6 +19,10 @@
     "generatepw": "dist/generate-pw.min.js",
     "generate-pw": "dist/generate-pw.min.js"
   },
+  "directories": {
+    "lib": ".",
+    "doc": "./docs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "minify-js generate-pw.js dist",

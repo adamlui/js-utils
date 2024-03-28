@@ -18,6 +18,10 @@
     "generateip": "dist/cli.min.js",
     "generate-ip": "dist/cli.min.js"
   },
+  "directories": {
+    "lib": "./src",
+    "doc": "./docs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "minify-js src dist",
