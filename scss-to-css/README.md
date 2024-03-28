@@ -228,8 +228,8 @@ findSCSS() » Searching for SCSS files...
 findSCSS() » Search complete! 2 files found.
 findSCSS() » Check returned array.
 [
-  'E:\\js\\utils\\minify.js\\assets\\scss\\foo.scss',
-  'E:\\js\\utils\\minify.js\\assets\\scss\\bar.scss'
+  'E:\\js\\utils\\scss-to-css\assets\\scss\\foo.scss',
+  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.scss'
 ]
 */
 ```
