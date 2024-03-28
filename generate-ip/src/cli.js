@@ -2,7 +2,7 @@
 
 // Import LIBS
 const { ipv4 } = require(__dirname.match(/src/) ? './generate-ip' : './generate-ip.min'),
-      { execSync } = require('child_process'); // for cross-platform CLI copying
+      { execSync } = require('child_process'); // for cross-platform copying
 
 // Init UI colors
 const nc = '\x1b[0m',    // no color
@@ -45,7 +45,7 @@ else { // log/copy RESULT
     copyToClipboard(address); console.log(bw + address + nc);
 }
 
-// Define CLI functions
+// Define functions
 
 function printHelpSections(includeSections = ['cmdFormat', 'formatOptions', 'infoCmds']) {
     const helpSections = {
