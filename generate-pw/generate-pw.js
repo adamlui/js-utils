@@ -46,8 +46,8 @@ function generatePassword(options = {}) {
             `generatePassword() » ERROR: [${ booleanArgType }] option can only be \`true\` or \`false\`.`);
 
     if (options.qty > 1) { // generate/return array of [qty] password strings
-        const { qty, ...otherOptions } = options;
-        return generatePasswords(qty, otherOptions);
+        const { qty, ...nonQtyOptions } = options;
+        return generatePasswords(qty, nonQtyOptions);
 
     } else { // generate/return single password
         const fromMutliFunc = generatePassword.caller.name === 'generatePasswords'; // flag to avoid repetitive logs
