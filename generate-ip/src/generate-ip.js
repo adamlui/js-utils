@@ -1,9 +1,20 @@
-#!/usr/bin/env node
+// IMPORT secure crypto RNG
+let randomInt;
+try { // to use Node.js module
+    randomInt = require('crypto').randomInt;
+} catch (err) { // use browser API or JS method
+    const webCrypto = window.crypto || window.msCrypto;
+    randomInt = function(min, max) {
+        if (webCrypto) {
+            const range = max - min,
+                  randomVal = webCrypto.getRandomValues(new Uint32Array(1))[0];
+            return Math.floor(randomVal / 0xFFFFFFFF * range) + min;
+        } else // use JS method
+            return Math.floor(Math.random() * (max - min)) + min;
+    };
+}
 
-// Import crypto.randomInt() for secure RNG
-const { randomInt } = require('crypto');
-
-// Define MAIN functions
+// Define APIs
 
 const ipv4 = {
 
@@ -29,8 +40,10 @@ const ipv4 = {
         const ip = segments.join('.');
 
         // Log/return final result
-        if (options.verbose) console.info('ipv4.generate() » IPv4 address generated!'
-          + ( require.main !== module ? '\nipv4.generate() » Check returned string.' : '' ));
+        if (options.verbose) console.info(
+                'ipv4.generate() » IPv4 address generated!'
+          + (typeof require !== 'undefined' && require.main !== module ?
+              '\nipv4.generate() » Check returned string.' : '' ));
         return ip;
     },
 
@@ -101,8 +114,10 @@ const ipv6 = {
         const ip = this.format(pieces.join(':'), { ...options, verbose: false });
 
         // Log/return final result
-        if (options.verbose) console.info('ipv6.generate() » IPv6 address generated!'
-          + ( require.main !== module ? '\nipv6.generate() » Check returned string.' : '' ));
+        if (options.verbose) console.info(
+                'ipv6.generate() » IPv6 address generated!'
+          + (typeof require !== 'undefined' && require.main !== module ?
+              '\nipv6.generate() » Check returned string.' : '' ));
         return ip;
     },
 
@@ -213,5 +228,6 @@ const ipv6 = {
     }
 };
 
-// EXPORT main function objs
-module.exports = { ipv4, ipv6 };
+// EXPORT APIs
+try { module.exports = { ipv4, ipv6 }; } catch (err) {} // for Node.js
+try { window.ipv4 = ipv4; window.ipv6 = ipv6; } catch (err) {} // for Greasemonkey

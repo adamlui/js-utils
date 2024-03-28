@@ -35,9 +35,9 @@ $ npm install generate-ip
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-## 🔌 API usage
+## 🔌 Importing the APIs
 
-**generate-ip** provides the [**`ipv4`**](#ipv4-methods) and [**`ipv6`**](#ipv6-methods) APIs that can be imported into your app as ECMAScript modules or CommonJS modules.
+### <img height=18 src="https://i.imgur.com/JIeAdsr.png"> Node.js
 
 #### ESM:
 
@@ -51,7 +51,54 @@ import { ipv4, ipv6 } from 'generate-ip';
 const { ipv4, ipv6 } = require('generate-ip');
 ```
 
-#
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/JSEb19A.png"><img width=16 src="https://i.imgur.com/5VPxf9y.png"></picture> Web
+
+#### HTML script tag:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/generate-ip@2.0.3/dist/generate-ip.min.js"></script>
+```
+
+#### ES6:
+
+```js
+(async () => {
+    await import('https://cdn.jsdelivr.net/npm/generate-ip@2.0.3/dist/generate-ip.min.js');
+    // Your code here...
+})();
+```
+
+#### ES5:
+
+```js
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://cdn.jsdelivr.net/npm/generate-ip@2.0.3/dist/generate-ip.min.js');
+xhr.onload = function() {
+    if (xhr.status === 200) {
+        var generateIP = document.createElement('script');
+        generateIP.textContent = xhr.responseText;
+        document.head.append(generateIP);
+        // Your code here...
+    }
+};
+xhr.send();
+```
+
+### <img height=17 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/tampermonkey-icon28.png"><img height=17.5 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/violentmonkey-icon100.png"> Greasemonkey
+
+```js
+...
+// @require https://cdn.jsdelivr.net/npm/generate-ip@2.0.3/dist/generate-ip.min.js
+// ==/UserScript==
+
+// Your code here...
+```
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
+## 📋 API usage
 
 ### `ipv4` methods
 
