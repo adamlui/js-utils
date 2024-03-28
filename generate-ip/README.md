@@ -56,14 +56,14 @@ const { ipv4, ipv6 } = require('generate-ip');
 #### HTML script tag:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/generate-ip@2.0.3/dist/generate-ip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/generate-ip@2.1.0/dist/generate-ip.min.js"></script>
 ```
 
 #### ES6:
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-ip@2.0.3/dist/generate-ip.min.js');
+    await import('https://cdn.jsdelivr.net/npm/generate-ip@2.1.0/dist/generate-ip.min.js');
     // Your code here...
 })();
 ```
@@ -72,7 +72,7 @@ const { ipv4, ipv6 } = require('generate-ip');
 
 ```js
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://cdn.jsdelivr.net/npm/generate-ip@2.0.3/dist/generate-ip.min.js');
+xhr.open('GET', 'https://cdn.jsdelivr.net/npm/generate-ip@2.1.0/dist/generate-ip.min.js');
 xhr.onload = function() {
     if (xhr.status === 200) {
         var generateIP = document.createElement('script');
@@ -88,7 +88,7 @@ xhr.send();
 
 ```js
 ...
-// @require https://cdn.jsdelivr.net/npm/generate-ip@2.0.3/dist/generate-ip.min.js
+// @require https://cdn.jsdelivr.net/npm/generate-ip@2.1.0/dist/generate-ip.min.js
 // ==/UserScript==
 
 // Your code here...
