@@ -96,6 +96,10 @@ xhr.send();
 
 <br>
 
+📝 **Note:** To always import the latest version (not recommended in production!), remove the `@2.1.1` version tag from the jsDelivr URL: `https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js`
+
+<br>
+
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 ## 📋 API usage
