@@ -43,9 +43,9 @@ $ npm install generate-pw
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-## 🔌 API 使用
+## 🔌 导入 API
 
-**generate-pw** 可以作为 ECMAScript 模块或 CommonJS 模块导入到您的应用程序中。
+### <img height=18 src="https://i.imgur.com/JIeAdsr.png"> Node.js
 
 #### ESM:
 
@@ -59,7 +59,58 @@ import * as pw from 'generate-pw';
 const pw = require('generate-pw');
 ```
 
-#
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/JSEb19A.png"><img width=16 src="https://i.imgur.com/5VPxf9y.png"></picture> Web
+
+#### HTML 脚本标签:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js"></script>
+```
+
+#### ES6:
+
+```js
+(async () => {
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js');
+    // 你的代码在这里...
+})();
+```
+
+#### ES5:
+
+```js
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js');
+xhr.onload = function() {
+    if (xhr.status === 200) {
+        var generateIP = document.createElement('script');
+        generateIP.textContent = xhr.responseText;
+        document.head.append(generateIP);
+        // 你的代码在这里...
+    }
+};
+xhr.send();
+```
+
+### <img height=17 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/tampermonkey-icon28.png"><img height=17.5 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/violentmonkey-icon100.png"> Greasemonkey
+
+```js
+...
+// @require https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js
+// ==/UserScript==
+
+// 你的代码在这里...
+```
+
+<br>
+
+**📝 注意：** 要始终导入最新版本（不建议在生产中使用！），请从 jsDelivr URL 中删除 `@1.3.1` 版本标签：`https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
+## 📋 API 使用
 
 ### `generatePassword([options])`
 

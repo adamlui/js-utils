@@ -43,9 +43,9 @@ $ npm install generate-pw
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-## 🔌 एपीआई उपयोग
+## 🔌 API को आयात करना
 
-**generate-pw** को आपके ऐप में ईसीएमएस्क्रिप्ट मॉड्यूल या कॉमनजेएस मॉड्यूल के रूप में आयात किया जा सकता है।
+### <img height=18 src="https://i.imgur.com/JIeAdsr.png"> Node.js
 
 #### ESM:
 
@@ -59,7 +59,58 @@ import * as pw from 'generate-pw';
 const pw = require('generate-pw');
 ```
 
-#
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/JSEb19A.png"><img width=16 src="https://i.imgur.com/5VPxf9y.png"></picture> Web
+
+#### HTML स्क्रिप्ट टैग:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js"></script>
+```
+
+#### ES6:
+
+```js
+(async () => {
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js');
+    // आपका कोड यहाँ...
+})();
+```
+
+#### ES5:
+
+```js
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js');
+xhr.onload = function() {
+    if (xhr.status === 200) {
+        var generateIP = document.createElement('script');
+        generateIP.textContent = xhr.responseText;
+        document.head.append(generateIP);
+        // आपका कोड यहाँ...
+    }
+};
+xhr.send();
+```
+
+### <img height=17 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/tampermonkey-icon28.png"><img height=17.5 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/violentmonkey-icon100.png"> Greasemonkey
+
+```js
+...
+// @require https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js
+// ==/UserScript==
+
+// आपका कोड यहाँ...
+```
+
+<br>
+
+**📝 ध्यान दें:** हमेशा नवीनतम संस्करण आयात करने के लिए (उत्पादन में अनुशंसित नहीं!) jsDelivr URL से `@1.3.1` संस्करण टैग हटा दें: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
+## 📋 एपीआई उपयोग
 
 ### `generatePassword([options])`
 

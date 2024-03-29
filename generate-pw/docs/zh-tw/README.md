@@ -43,9 +43,9 @@ $ npm install generate-pw
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-## 🔌 API 使用
+## 🔌 導入 API
 
-**generate-pw** 可以作為 ECMAScript 模組或 CommonJS 模組匯入到您的應用程式中。
+### <img height=18 src="https://i.imgur.com/JIeAdsr.png"> Node.js
 
 #### ESM:
 
@@ -59,7 +59,58 @@ import * as pw from 'generate-pw';
 const pw = require('generate-pw');
 ```
 
-#
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/JSEb19A.png"><img width=16 src="https://i.imgur.com/5VPxf9y.png"></picture> Web
+
+#### HTML 腳本標籤:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js"></script>
+```
+
+#### ES6:
+
+```js
+(async () => {
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js');
+    // 你的程式碼在這裡...
+})();
+```
+
+#### ES5:
+
+```js
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js');
+xhr.onload = function() {
+    if (xhr.status === 200) {
+        var generateIP = document.createElement('script');
+        generateIP.textContent = xhr.responseText;
+        document.head.append(generateIP);
+        // 你的程式碼在這裡...
+    }
+};
+xhr.send();
+```
+
+### <img height=17 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/tampermonkey-icon28.png"><img height=17.5 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/violentmonkey-icon100.png"> Greasemonkey
+
+```js
+...
+// @require https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js
+// ==/UserScript==
+
+// 你的程式碼在這裡...
+```
+
+<br>
+
+**📝 注意：** 若要始終匯入最新版本（不建議在生產中使用！），請從 jsDelivr URL 中刪除 `@1.3.1` 版本標籤：`https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
+## 📋 API 使用
 
 ### `generatePassword([options])`
 
