@@ -104,10 +104,12 @@ function generatePassword(options = {}) {
         }
 
         // Log/return final result
-        if (options.verbose && !fromMutliFunc) console.info(
-            'generatePassword() » Password generated!');
-        if (!require.main.filename.endsWith('cli.js')) console.info(
-            'generatePassword() » Check returned string.');
+        if (options.verbose && !fromMutliFunc) {
+            console.info(
+                'generatePassword() » Password generated!');       
+            if (!require.main.filename.endsWith('cli.js')) console.info(
+                'generatePassword() » Check returned string.');
+        }
         return password;
     }
 }
