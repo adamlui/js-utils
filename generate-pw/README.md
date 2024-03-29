@@ -238,6 +238,8 @@ Boolean options:
  -s, --include-symbols       Allow symbols in password(s).
  -L, --no-lowercase          Disallow lowercase letters in password(s).
  -U, --no-uppercase          Disallow uppercase letters in password(s).
+ -s, --strict                Require at least one character from each
+                             allowed character set in password(s).
 
 Info commands:
  -h, --help                  Display help screen.
