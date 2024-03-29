@@ -58,7 +58,8 @@ const ipv4 = {
         const ipResult = options.qty > 1 ? ips : ips[0];
         if (options.verbose) console.info(
             `ipv4.generate() » IPv4 address${ options.qty > 1 ? 'es' : '' } generated!\n`
-          + `ipv4.generate() » ${ ipResult }`);
+                + ( options.qty === 1 ? `ipv4.generate() » ${ ipResult }`
+                                      : 'ipv4.generate() » Check returned array.' ));
         return ipResult;
     },
 
@@ -149,8 +150,9 @@ const ipv6 = {
         // Log/return final result
         const ipResult = options.qty > 1 ? ips : ips[0];
         if (options.verbose) console.info(
-            `ipv6.generate() » ipv6 address${ options.qty > 1 ? 'es' : '' } generated!\n`
-          + `ipv6.generate() » ${ ipResult }`);
+            `ipv6.generate() » IPv6 address${ options.qty > 1 ? 'es' : '' } generated!\n`
+                + ( options.qty === 1 ? `ipv6.generate() » ${ ipResult }`
+                                      : 'ipv6.generate() » Check returned array.' ));
         return ipResult;
     },
 
