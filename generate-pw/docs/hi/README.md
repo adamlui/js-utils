@@ -61,7 +61,7 @@ const pw = require('generate-pw');
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/JSEb19A.png"><img width=16 src="https://i.imgur.com/5VPxf9y.png"></picture> Web
 
-#### HTML स्क्रिप्ट टैग:
+#### <> HTML स्क्रिप्ट टैग:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js"></script>

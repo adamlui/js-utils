@@ -53,7 +53,7 @@ const { ipv4, ipv6 } = require('generate-ip');
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/JSEb19A.png"><img width=16 src="https://i.imgur.com/5VPxf9y.png"></picture> Web
 
-#### HTML script tag:
+#### <> HTML script tag:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/generate-ip@2.1.1/dist/generate-ip.min.js"></script>
