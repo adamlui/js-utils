@@ -258,9 +258,8 @@ function validateStrength(password, options = {}) {
 
     // Log/return final result
     if (options.verbose) console.info(
-            'validateStrength() » Password strength validated!\n'
-      + ( !require.main.filename.endsWith('cli.js') ? 
-            'validateStrength() » Check returned object for score/recommendations.' : '' ));
+        'validateStrength() » Password strength validated!\n'
+      + 'validateStrength() » Check returned object for score/recommendations.');
     return { strengthScore, recommendations, isGood: strengthScore >= 80 };
 }
 
