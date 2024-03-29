@@ -16,8 +16,8 @@
     "!docs/*/"
   ],
   "bin": {
-    "scsstocss": "dist/scss-to-css.min.js",
-    "scss-to-css": "dist/scss-to-css.min.js"
+    "scsstocss": "dist/cli.min.js",
+    "scss-to-css": "dist/cli.min.js"
   },
   "directories": {
     "lib": ".",
