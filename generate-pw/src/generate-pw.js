@@ -33,12 +33,21 @@ function generatePassword(options = {}) {
     options = { ...defaultOptions, ...options };
 
     // Validate options
+    const validOptions = Object.keys(defaultOptions).join(', ');
     for (const key in options) {
-        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+        if (key == '0') {
+            console.error(
+                'generatePassword() » ERROR: 1st arg `options` can only be an object of key/values.');
+            console.error(
+                'generatePassword() » Example: generatePassword({ verbose: false, numbers: true })');
+            console.error(
+                `generatePassword() » Valid options: [ ${ validOptions } ]`);
+            return;
+        } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
                 `generatePassword() » ERROR: \`${ key }\` is an invalid option.`);
             console.error(
-                `generatePassword() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+                `generatePassword() » Valid options: [ ${ validOptions } ]`);
             return;
         }
         else if (['length', 'qty'].includes(key)) {
@@ -121,13 +130,24 @@ function generatePasswords(qty, options = {}) {
         'generatePasswords() » ERROR: 1st arg <qty> can only be an integer > 0.');
 
     // Validate options
-    for (const key in options) { if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
-        console.error(
-            `generatePasswords() » ERROR: \`${ key }\` is an invalid option.`);
-        console.error(
-            `generatePasswords() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
-        return;
-    }}
+    const validOptions = Object.keys(defaultOptions).join(', ');
+    for (const key in options) {
+        if (key == '0') {
+            console.error(
+                'generatePasswords() » ERROR: 2nd arg `options` can only be an object of key/values.');
+            console.error(
+                'generatePasswords() » Example: generatePasswords(3, { verbose: false, symbols: true })');
+            console.error(
+                `generatePasswords() » Valid options: [ ${ validOptions } ]`);
+            return;
+        } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+            console.error(
+                `generatePasswords() » ERROR: \`${ key }\` is an invalid option.`);
+            console.error(
+                `generatePasswords() » Valid options: [ ${ validOptions } ]`);
+            return;
+        }
+    }
     options.length = parseInt(options.length);
     if (isNaN(options.length) || options.length < 1) return console.error(
             'generatePasswords() » ERROR: [length] option can only be an integer > 0.');
@@ -163,7 +183,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     // Validate requiredCharTypes
     const validCharTypes = ['number', 'symbol', 'lower', 'upper'];
     if (!Array.isArray(requiredCharTypes)) // convert string to array
-        requiredCharTypes = [requiredCharTypes]
+        requiredCharTypes = [requiredCharTypes];
     for (const charType of requiredCharTypes) {
         if (!validCharTypes.includes(charType)) { 
             console.error(`strictify() » ERROR: 2nd arg \`${ charType }\` is an invalid character type.`);
@@ -172,12 +192,21 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     }}
 
     // Validate options
+    const validOptions = Object.keys(defaultOptions).join(', ');
     for (const key in options) {
-        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+        if (key == '0') {
+            console.error(
+                'strictify() » ERROR: 3nd arg `options` can only be an object of key/values.');
+            console.error(
+                'strictify() » Example: strictify(\'pa55word\', [\'symbol\', \'upper\'], { verbose: false })');
+            console.error(
+                `strictify() » Valid options: [ ${ validOptions } ]`);
+            return;
+        } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
                 `strictify() » ERROR: \`${ key }\` is an invalid option.`);
             console.error(
-                `strictify() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+                `strictify() » Valid options: [ ${ validOptions } ]`);
             return;
         } else if (typeof options[key] !== 'boolean')
             return console.error(
@@ -239,12 +268,21 @@ function validateStrength(password, options = {}) {
         'validateStrength() » ERROR: 1st arg <password> must be a string.');
 
     // Validate options
+    const validOptions = Object.keys(defaultOptions).join(', ');
     for (const key in options) {
-        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+        if (key == '0') {
+            console.error(
+                'validateStrength() » ERROR: 2nd arg `options` can only be an object of key/values.');
+            console.error(
+                'validateStrength() » Example: validateStrength(\'pa55word\', { verbose: false })');
+            console.error(
+                `validateStrength() » Valid options: [ ${ validOptions } ]`);
+            return;
+        } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
                 `validateStrength() » ERROR: \`${ key }\` is an invalid option.`);
             console.error(
-                `validateStrength() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+                `validateStrength() » Valid options: [ ${ validOptions } ]`);
             return;
         } else if (typeof options[key] !== 'boolean')
             return console.error(
