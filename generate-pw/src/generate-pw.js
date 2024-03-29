@@ -33,7 +33,7 @@ function generatePassword(options = {}) {
     options = { ...defaultOptions, ...options };
 
     // Validate options
-    const exampleCmd = 'generatePassword({ verbose: false, numbers: true })',
+    const exampleCall = 'generatePassword({ verbose: false, numbers: true })',
           strDefaultOptions = JSON.stringify(defaultOptions),
           strValidOptions = Object.keys(defaultOptions).join(', ');          
     const printValidOptions = () => {
@@ -45,7 +45,7 @@ function generatePassword(options = {}) {
             console.error(
                 'generatePassword() » ERROR: 1st arg [options] can only be an object of key/values.');
             console.info(
-                `generatePassword() » Example valid command: ${ exampleCmd }`);
+                `generatePassword() » Example valid call: ${ exampleCall }`);
             printValidOptions();
             return;
         } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
@@ -134,7 +134,7 @@ function generatePasswords(qty, options = {}) {
         'generatePasswords() » ERROR: 1st arg <qty> can only be an integer > 0.');
 
     // Validate options
-    const exampleCmd = 'generatePasswords(3, { verbose: false, symbols: true })',
+    const exampleCall = 'generatePasswords(3, { verbose: false, symbols: true })',
           strDefaultOptions = JSON.stringify(defaultOptions),
           strValidOptions = Object.keys(defaultOptions).join(', ');          
     const printValidOptions = () => {
@@ -146,7 +146,7 @@ function generatePasswords(qty, options = {}) {
             console.error(
                 'generatePasswords() » ERROR: 2nd arg [options] can only be an object of key/values.');
             console.info(
-                `generatePasswords() » Example valid command: ${ exampleCmd }`);
+                `generatePasswords() » Example valid call: ${ exampleCall }`);
             printValidOptions();
             return;
         } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
@@ -201,7 +201,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     }}
 
     // Validate options
-    const exampleCmd = 'strictify(\'pa55word\', [\'symbol\', \'upper\'], { verbose: false })',
+    const exampleCall = 'strictify(\'pa55word\', [\'symbol\', \'upper\'], { verbose: false })',
           strDefaultOptions = JSON.stringify(defaultOptions),
           strValidOptions = Object.keys(defaultOptions).join(', ');          
     const printValidOptions = () => {
@@ -213,7 +213,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
             console.error(
                 'strictify() » ERROR: 3nd arg [options] can only be an object of key/values.');
             console.info(
-                `strictify() » Example valid command: ${ exampleCmd }`);
+                `strictify() » Example valid call: ${ exampleCall }`);
             printValidOptions(); return;
         } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
@@ -279,7 +279,7 @@ function validateStrength(password, options = {}) {
         'validateStrength() » ERROR: 1st arg <password> must be a string.');
 
     // Validate options
-    const exampleCmd = 'validateStrength(\'pa55word\', { verbose: false })',
+    const exampleCall = 'validateStrength(\'pa55word\', { verbose: false })',
           strDefaultOptions = JSON.stringify(defaultOptions),
           strValidOptions = Object.keys(defaultOptions).join(', ');          
     const printValidOptions = () => {
@@ -291,7 +291,7 @@ function validateStrength(password, options = {}) {
             console.error(
                 'validateStrength() » ERROR: 2nd arg [options] can only be an object of key/values.');
             console.info(
-                `validateStrength() » Example valid command: ${ exampleCmd }`);
+                `validateStrength() » Example valid call: ${ exampleCall }`);
             printValidOptions(); return;
         } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
