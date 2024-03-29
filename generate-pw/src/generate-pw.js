@@ -260,7 +260,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
             console.info('strictify() » Password is now strict!');
             console.info('strictify() » Check returned string.');
         } else {
-            console.info(`strictify() » Password already includes ${ requiredCharTypes.join(' + ') } characters!\n`);
+            console.info(`strictify() » Password already includes ${ requiredCharTypes.join(' + ') } characters!`);
             console.info('strictify() » No modifications made.');
         }
     }
