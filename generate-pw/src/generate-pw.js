@@ -2,8 +2,17 @@
 // Source: https://github.com/adamlui/js-utils/tree/main/generate-pw
 // Documentation: https://github.com/adamlui/js-utils/tree/main/generate-pw#readme
 
-// Import crypto.randomInt() for secure RNG
-const { randomInt } = require('crypto');
+// IMPORT secure crypto RNG
+let randomInt;
+try { // to use Node.js module
+    randomInt = require('crypto').randomInt;
+} catch (err) { // use browser API or JS method
+    const webCrypto = window.crypto || window.msCrypto;
+    randomInt = (min, max) => {
+        const randomVal = webCrypto?.getRandomValues(new Uint32Array(1))[0] / 0xFFFFFFFF || Math.random();
+        return Math.floor(randomVal * (max - min)) + min;
+    };
+}
 
 // Init CHARACTER SETS
 const charsets = {
@@ -107,7 +116,7 @@ function generatePassword(options = {}) {
         if (options.verbose && !fromMutliFunc) {
             console.info(
                 'generatePassword() » Password generated!');       
-            if (!require.main.filename.endsWith('cli.js')) console.info(
+            if (typeof require !== 'undefined' && !require.main.filename.endsWith('cli.js')) console.info(
                 'generatePassword() » Check returned string.');
         }
         return password;
@@ -173,7 +182,7 @@ function generatePasswords(qty, options = {}) {
     // Log/return final result
     if (options.verbose) console.info(
         `generatePasswords() » Password${ qty > 1 ? 's' : '' } generated!`);
-    if (!require.main.filename.endsWith('cli.js')) console.info(
+    if (typeof require !== 'undefined' && !require.main.filename.endsWith('cli.js')) console.info(
         'generatePasswords() » Check returned array.');
     return passwords;
 }
@@ -339,4 +348,5 @@ function validateStrength(password, options = {}) {
 }
 
 // EXPORT main functions
-module.exports = { generatePassword, generatePasswords, strictify, validateStrength };
+try { module.exports = { generatePassword, generatePasswords, strictify, validateStrength }; } catch (err) {} // for Node.js
+try { window.pw = { generatePassword, generatePasswords, strictify, validateStrength }; } catch (err) {} // for Greasemonkey
