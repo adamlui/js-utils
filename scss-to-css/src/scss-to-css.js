@@ -1,3 +1,7 @@
+// © 2024 Adam Lui under the MIT license.
+// Source: https://github.com/adamlui/js-utils/tree/main/scss-to-css
+// Documentation: https://github.com/adamlui/js-utils/tree/main/scss-to-css#readme
+
 // Import LIBS
 const fs = require('fs'),
       path = require('path'),
