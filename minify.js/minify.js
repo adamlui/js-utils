@@ -176,8 +176,8 @@ else { // run as CLI utility
         if (inputArg && !fs.existsSync(inputPath)) {
             console.error(`\n${br}Error: First argument can only be an existing file or directory.`
                 + `\n${ inputPath } does not exist.${nc}`
-                + `\n\n${bg}Example valid command: \n>> minify-js . output.min.js${nc}`
-                + `\n\n${by}For all command options: \n>> minify-js --help${nc}`);
+                + `\n\n${bg}Example valid command: \n» minify-js . output.min.js${nc}`
+                + `\n\n${by}For all command options: \n» minify-js --help${nc}`);
             process.exit(1);
         }
 

@@ -55,8 +55,8 @@ else { // run MAIN routine
     if (inputArg && !fs.existsSync(inputPath)) {
         console.error(`\n${br}Error: First argument can only be an existing file or directory.`
             + `\n'${ inputPath }' does not exist.${nc}`
-            + `\n\n${bg}Example valid command: \n>> scss-to-css . output.min.css${nc}`
-            + `\n\n${by}For all command options: \n>> scss-to-css --help${nc}`);
+            + `\n\n${bg}Example valid command: \n» scss-to-css . output.min.css${nc}`
+            + `\n\n${by}For all command options: \n» scss-to-css --help${nc}`);
         process.exit(1);
     }
 
