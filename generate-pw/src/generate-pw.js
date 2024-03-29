@@ -33,7 +33,8 @@ function generatePassword(options = {}) {
     options = { ...defaultOptions, ...options };
 
     // Validate options
-    const strDefaultOptions = JSON.stringify(defaultOptions),
+    const exampleCmd = 'generatePassword({ verbose: false, numbers: true })',
+          strDefaultOptions = JSON.stringify(defaultOptions),
           strValidOptions = Object.keys(defaultOptions).join(', ');          
     const printValidOptions = () => {
         console.info(`generatePassword() » Valid options: [ ${ strValidOptions } ]`);
@@ -44,7 +45,7 @@ function generatePassword(options = {}) {
             console.error(
                 'generatePassword() » ERROR: 1st arg [options] can only be an object of key/values.');
             console.info(
-                'generatePassword() » Example valid command: generatePassword({ verbose: false, numbers: true })');
+                `generatePassword() » Example valid command: ${ exampleCmd }`);
             printValidOptions();
             return;
         } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
@@ -133,7 +134,8 @@ function generatePasswords(qty, options = {}) {
         'generatePasswords() » ERROR: 1st arg <qty> can only be an integer > 0.');
 
     // Validate options
-    const strDefaultOptions = JSON.stringify(defaultOptions),
+    const exampleCmd = 'generatePasswords(3, { verbose: false, symbols: true })',
+          strDefaultOptions = JSON.stringify(defaultOptions),
           strValidOptions = Object.keys(defaultOptions).join(', ');          
     const printValidOptions = () => {
         console.info(`generatePasswords() » Valid options: [ ${ strValidOptions } ]`);
@@ -144,7 +146,7 @@ function generatePasswords(qty, options = {}) {
             console.error(
                 'generatePasswords() » ERROR: 2nd arg [options] can only be an object of key/values.');
             console.info(
-                'generatePasswords() » Example valid command: generatePasswords(3, { verbose: false, symbols: true })');
+                `generatePasswords() » Example valid command: ${ exampleCmd }`);
             printValidOptions();
             return;
         } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
@@ -199,7 +201,8 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     }}
 
     // Validate options
-    const strDefaultOptions = JSON.stringify(defaultOptions),
+    const exampleCmd = 'strictify(\'pa55word\', [\'symbol\', \'upper\'], { verbose: false })',
+          strDefaultOptions = JSON.stringify(defaultOptions),
           strValidOptions = Object.keys(defaultOptions).join(', ');          
     const printValidOptions = () => {
         console.info(`strictify() » Valid options: [ ${ strValidOptions } ]`);
@@ -210,7 +213,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
             console.error(
                 'strictify() » ERROR: 3nd arg [options] can only be an object of key/values.');
             console.info(
-                'strictify() » Example valid command: strictify(\'pa55word\', [\'symbol\', \'upper\'], { verbose: false })');
+                `strictify() » Example valid command: ${ exampleCmd }`);
             printValidOptions(); return;
         } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
@@ -276,7 +279,8 @@ function validateStrength(password, options = {}) {
         'validateStrength() » ERROR: 1st arg <password> must be a string.');
 
     // Validate options
-    const strDefaultOptions = JSON.stringify(defaultOptions),
+    const exampleCmd = 'validateStrength(\'pa55word\', { verbose: false })',
+          strDefaultOptions = JSON.stringify(defaultOptions),
           strValidOptions = Object.keys(defaultOptions).join(', ');          
     const printValidOptions = () => {
         console.info(`validateStrength() » Valid options: [ ${ strValidOptions } ]`);
@@ -287,7 +291,7 @@ function validateStrength(password, options = {}) {
             console.error(
                 'validateStrength() » ERROR: 2nd arg [options] can only be an object of key/values.');
             console.info(
-                'validateStrength() » Example valid command: validateStrength(\'pa55word\', { verbose: false })');
+                `validateStrength() » Example valid command: ${ exampleCmd }`);
             printValidOptions(); return;
         } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
