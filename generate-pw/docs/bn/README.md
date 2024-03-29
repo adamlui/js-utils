@@ -64,14 +64,14 @@ const pw = require('generate-pw');
 #### <> HTML স্ক্রিপ্ট ট্যাগ:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/generate-pw@1.4.0/dist/generate-pw.min.js"></script>
 ```
 
 #### ES6:
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js');
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.4.0/dist/generate-pw.min.js');
     // আপনার কোড এখানে...
 })();
 ```
@@ -80,7 +80,7 @@ const pw = require('generate-pw');
 
 ```js
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js');
+xhr.open('GET', 'https://cdn.jsdelivr.net/npm/generate-pw@1.4.0/dist/generate-pw.min.js');
 xhr.onload = function() {
     if (xhr.status === 200) {
         var generateIP = document.createElement('script');
@@ -96,7 +96,7 @@ xhr.send();
 
 ```js
 ...
-// @require https://cdn.jsdelivr.net/npm/generate-pw@1.3.1/dist/generate-pw.min.js
+// @require https://cdn.jsdelivr.net/npm/generate-pw@1.4.0/dist/generate-pw.min.js
 // ==/UserScript==
 
 // আপনার কোড এখানে...
