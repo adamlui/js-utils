@@ -169,15 +169,7 @@ generatePasswords() » Check returned array.
 
 ```js
 const strictPW = pw.strictify('abcdef', ['numbers', 'symbols']);
-console.log(strictPW);
-
-/* 範例輸出：
-
-strictify() » Strictifying password...
-strictify() » Password is now strict!
-strictify() » Check returned string.
-'a!c2ef'
-*/
+console.log(strictPW); // 範例輸出：'a!c2ef'
 ```
 
 **💡注意：**如果沒有傳遞 `requiredCharTypes` 數組，則所有可用類型都將是必需的。

@@ -171,15 +171,7 @@ Modifies `password` given to use at least one character of each `requiredCharTyp
 
 ```js
 const strictPW = pw.strictify('abcdef', ['numbers', 'symbols']);
-console.log(strictPW);
-
-/* sample output:
-
-strictify() » Strictifying password...
-strictify() » Password is now strict!
-strictify() » Check returned string.
-'a!c2ef'
-*/
+console.log(strictPW); // sample output: 'a!c2ef'
 ```
 
 **💡 Note:** If no `requiredCharTypes` array is passed, all available types will be required.

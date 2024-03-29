@@ -169,15 +169,7 @@ generatePasswords() » Check returned array.
 
 ```js
 const strictPW = pw.strictify('abcdef', ['numbers', 'symbols']);
-console.log(strictPW);
-
-/* नमूना आउटपुट:
-
-strictify() » Strictifying password...
-strictify() » Password is now strict!
-strictify() » Check returned string.
-'a!c2ef'
-*/
+console.log(strictPW); // नमूना आउटपुट: 'a!c2ef'
 ```
 
 **💡 नोट:** यदि कोई `requiredCharTypes` सरणी पारित नहीं की गई है, तो सभी उपलब्ध प्रकारों की आवश्यकता होगी।
