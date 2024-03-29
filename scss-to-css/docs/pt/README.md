@@ -257,6 +257,25 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
+## 🛠️ Utilitários relacionados
+
+### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
+
+> Compacte recursivamente todas as imagens em WEBPs.
+<br>[Baixar](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
+[Discutir](https://github.com/adamlui/js-utils/discussions)
+
+### [</> minify.js](https://github.com/adamlui/js-utils/tree/main/minify.js#readme)
+
+> Minimize recursivamente todos os arquivos JavaScript.
+<br>[Instalar](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 
+[Leia-me](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) / 
+[Discutir](https://github.com/adamlui/js-utils/discussions)
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 <a href="https://github.com/adamlui/js-utils">**Lar**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Discutir</a> /
 <a href="#--scss-to-css">De volta ao topo ↑</a>

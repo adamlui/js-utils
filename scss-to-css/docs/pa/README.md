@@ -257,6 +257,25 @@ findSCSS() » Check returned array.
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
+## 🛠️ ਸੰਬੰਧਿਤ ਉਪਯੋਗਤਾਵਾਂ
+
+### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
+
+> ਵਾਰ-ਵਾਰ ਸਾਰੀਆਂ ਤਸਵੀਰਾਂ ਨੂੰ WEBP ਵਿੱਚ ਸੰਕੁਚਿਤ ਕਰੋ।
+<br>[ਡਾਊਨਲੋਡ ਕਰੋ](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
+[ਚਰਚਾ ਕਰੋ](https://github.com/adamlui/js-utils/discussions)
+
+### [</> minify.js](https://github.com/adamlui/js-utils/tree/main/minify.js#readme)
+
+> ਸਾਰੀਆਂ JavaScript ਫਾਈਲਾਂ ਨੂੰ ਆਵਰਤੀ ਤੌਰ 'ਤੇ ਛੋਟਾ ਕਰੋ।
+<br>[ਇੰਸਟਾਲ ਕਰੋ](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 
+[ਪੜ੍ਹੋ](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) / 
+[ਚਰਚਾ ਕਰੋ](https://github.com/adamlui/js-utils/discussions)
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 <a href="https://github.com/adamlui/js-utils">**ਘਰ**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">ਚਰਚਾ ਕਰੋ</a> /
 <a href="#--scss-to-css">ਸਿਖਰ 'ਤੇ ਵਾਪਸ ਜਾਓ ↑</a>

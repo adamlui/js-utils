@@ -257,6 +257,25 @@ findSCSS() » Check returned array.
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
+## 🛠️ 相關實用程式
+
+### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
+
+> 遞歸地將所有影像壓縮為 WEBP。
+<br>[下載](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
+[討論](https://github.com/adamlui/js-utils/discussions)
+
+### [</> minify.js](https://github.com/adamlui/js-utils/tree/main/minify.js#readme)
+
+> 遞歸地縮小所有 JavaScript 檔案。
+<br>[安裝](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 
+[自述文件](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) / 
+[討論](https://github.com/adamlui/js-utils/discussions)
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 <a href="https://github.com/adamlui/js-utils">**家**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">讨论</a> /
 <a href="#--scss-to-css">回到顶部 ↑</a>

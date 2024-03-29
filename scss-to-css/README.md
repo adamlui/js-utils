@@ -260,6 +260,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
+## 🛠️ Related utilities
+
+### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
+
+> Recursively compress all images to WEBPs.
+<br>[Download](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
+[Discuss](https://github.com/adamlui/js-utils/discussions)
+
+### [</> minify.js](https://github.com/adamlui/js-utils/tree/main/minify.js#readme)
+
+> Recursively minify all JavaScript files.
+<br>[Install](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 
+[Readme](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) / 
+[Discuss](https://github.com/adamlui/js-utils/discussions)
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 <a href="https://github.com/adamlui/js-utils">**Home**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
 <a href="#--scss-to-css">Back to top ↑</a>
