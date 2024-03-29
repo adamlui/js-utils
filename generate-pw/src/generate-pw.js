@@ -38,15 +38,15 @@ function generatePassword(options = {}) {
         if (key == '0') {
             console.error(
                 'generatePassword() » ERROR: 1st arg `options` can only be an object of key/values.');
-            console.error(
+            console.info(
                 'generatePassword() » Example: generatePassword({ verbose: false, numbers: true })');
-            console.error(
+            console.info(
                 `generatePassword() » Valid options: [ ${ validOptions } ]`);
             return;
         } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
                 `generatePassword() » ERROR: \`${ key }\` is an invalid option.`);
-            console.error(
+            console.info(
                 `generatePassword() » Valid options: [ ${ validOptions } ]`);
             return;
         }
@@ -135,15 +135,15 @@ function generatePasswords(qty, options = {}) {
         if (key == '0') {
             console.error(
                 'generatePasswords() » ERROR: 2nd arg `options` can only be an object of key/values.');
-            console.error(
+            console.info(
                 'generatePasswords() » Example: generatePasswords(3, { verbose: false, symbols: true })');
-            console.error(
+            console.info(
                 `generatePasswords() » Valid options: [ ${ validOptions } ]`);
             return;
         } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
                 `generatePasswords() » ERROR: \`${ key }\` is an invalid option.`);
-            console.error(
+            console.info(
                 `generatePasswords() » Valid options: [ ${ validOptions } ]`);
             return;
         }
@@ -187,7 +187,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     for (const charType of requiredCharTypes) {
         if (!validCharTypes.includes(charType)) { 
             console.error(`strictify() » ERROR: 2nd arg \`${ charType }\` is an invalid character type.`);
-            console.error(`strictify() » Valid character types: [ ${ validCharTypes.join(', ') } ]`);
+            console.info(`strictify() » Valid character types: [ ${ validCharTypes.join(', ') } ]`);
             return;
     }}
 
@@ -197,15 +197,15 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
         if (key == '0') {
             console.error(
                 'strictify() » ERROR: 3nd arg `options` can only be an object of key/values.');
-            console.error(
+            console.info(
                 'strictify() » Example: strictify(\'pa55word\', [\'symbol\', \'upper\'], { verbose: false })');
-            console.error(
+            console.info(
                 `strictify() » Valid options: [ ${ validOptions } ]`);
             return;
         } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
                 `strictify() » ERROR: \`${ key }\` is an invalid option.`);
-            console.error(
+            console.info(
                 `strictify() » Valid options: [ ${ validOptions } ]`);
             return;
         } else if (typeof options[key] !== 'boolean')
@@ -273,15 +273,15 @@ function validateStrength(password, options = {}) {
         if (key == '0') {
             console.error(
                 'validateStrength() » ERROR: 2nd arg `options` can only be an object of key/values.');
-            console.error(
+            console.info(
                 'validateStrength() » Example: validateStrength(\'pa55word\', { verbose: false })');
-            console.error(
+            console.info(
                 `validateStrength() » Valid options: [ ${ validOptions } ]`);
             return;
         } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
                 `validateStrength() » ERROR: \`${ key }\` is an invalid option.`);
-            console.error(
+            console.info(
                 `validateStrength() » Valid options: [ ${ validOptions } ]`);
             return;
         } else if (typeof options[key] !== 'boolean')
