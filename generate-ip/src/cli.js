@@ -50,7 +50,7 @@ else { // log/copy RESULT
 function printHelpSections(includeSections = ['cmdFormat', 'formatOptions', 'infoCmds']) {
     const helpSections = {
         'cmdFormat': [
-            `\n${by}generate-ip [commands]${nc}`
+            `\n${by}generate-ip [options|commands]${nc}`
         ],
         'flags': [
             '\nBoolean options:',
