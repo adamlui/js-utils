@@ -326,6 +326,7 @@ else { // run as CLI utility
             strict: !!config.strictMode, verbose: !config.quietMode
         };
         const pwResult = generatePassword(funcOptions);
+        if (!config.quiet) console.info('Copying to clipboard...')
         copyToClipboard(Array.isArray(pwResult) ? pwResult.join('\n') : pwResult);
     }
 

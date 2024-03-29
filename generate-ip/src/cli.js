@@ -42,6 +42,7 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg)))
 
 else { // log/copy RESULT
     const address = ipv4.generate({ verbose: !config.quietMode });
+    if (!config.quietMode) console.info('Copying to clipboard...')
     copyToClipboard(address); console.log(bw + address + nc);
 }
 
