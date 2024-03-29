@@ -7,8 +7,7 @@ const { ipv4 } = require(__dirname.match(/src/) ? './generate-ip' : './generate-
 // Init UI colors
 const nc = '\x1b[0m',    // no color
       br = '\x1b[1;91m', // bright red
-      by = '\x1b[1;33m', // bright yellow
-      bw = '\x1b[1;97m'; // bright white
+      by = '\x1b[1;33m'; // bright yellow
 
 // Load settings from ARGS
 const config = {};
@@ -43,7 +42,7 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg)))
 else { // log/copy RESULT
     const address = ipv4.generate({ verbose: !config.quietMode });
     if (!config.quietMode) console.info('Copying to clipboard...');
-    copyToClipboard(address); console.log(bw + address + nc);
+    copyToClipboard(address);
 }
 
 // Define functions
