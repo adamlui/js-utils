@@ -56,7 +56,7 @@ const ipv4 = {
         // Log/return final result
         if (options.verbose) console.info(
                 `ipv4.generate() » IPv4 address${ options.qty > 1 ? 'es' : '' } generated!`
-          + (typeof require !== 'undefined' && require.main !== module ?
+          + (typeof reqruire !== 'undefined' && require.main.filename.endsWith('cli.js') ?
               `\nipv4.generate() » Check returned ${ options.qty > 1 ? 'array' : 'string' }.` : '' ));
         return options.qty > 1 ? ips : ips[0];
     },
@@ -148,7 +148,7 @@ const ipv6 = {
         // Log/return final result
         if (options.verbose) console.info(
                 `ipv6.generate() » IPv6 address${ options.qty > 1 ? 'es' : '' } generated!`
-          + (typeof require !== 'undefined' && require.main !== module ?
+          + (typeof reqruire !== 'undefined' && require.main.filename.endsWith('cli.js') ?
               `\nipv6.generate() » Check returned ${ options.qty > 1 ? 'array' : 'string' }.` : '' ));
         return options.qty > 1 ? ips : ips[0];
     },
