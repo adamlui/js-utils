@@ -55,11 +55,11 @@ const ipv4 = {
         }
 
         // Log/return final result
+        const ipResult = options.qty > 1 ? ips : ips[0];
         if (options.verbose) console.info(
-                `ipv4.generate() » IPv4 address${ options.qty > 1 ? 'es' : '' } generated!`
-          + (typeof require !== 'undefined' && !require.main.filename.endsWith('cli.js') ?
-              `\nipv4.generate() » Check returned ${ options.qty > 1 ? 'array' : 'string' }.` : '' ));
-        return options.qty > 1 ? ips : ips[0];
+            `ipv4.generate() » IPv4 address${ options.qty > 1 ? 'es' : '' } generated!\n`
+          + `ipv4.generate() » ${ ipResult }`);
+        return ipResult;
     },
 
     validate: function(address, options = {}) {
@@ -147,11 +147,11 @@ const ipv6 = {
         }
 
         // Log/return final result
+        const ipResult = options.qty > 1 ? ips : ips[0];
         if (options.verbose) console.info(
-                `ipv6.generate() » IPv6 address${ options.qty > 1 ? 'es' : '' } generated!`
-          + (typeof require !== 'undefined' && !require.main.filename.endsWith('cli.js') ?
-              `\nipv6.generate() » Check returned ${ options.qty > 1 ? 'array' : 'string' }.` : '' ));
-        return options.qty > 1 ? ips : ips[0];
+            `ipv6.generate() » ipv6 address${ options.qty > 1 ? 'es' : '' } generated!\n`
+          + `ipv6.generate() » ${ ipResult }`);
+        return ipResult;
     },
 
     format: function(address, options = {}) {
