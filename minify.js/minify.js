@@ -200,10 +200,9 @@ else { // run as CLI utility
             minifyData?.forEach(({ code, srcPath }) => {
                 const outputDir = path.join(
                     path.dirname(srcPath), // path of file to be minified
-                    /so?u?rce?$/.test(path.dirname(srcPath)) ? (
-                        '../' + ( outputArg || 'min' ) // + ../outputArg|min/ if in *(src|source)/
-                    ) : outputArg.endsWith('.js') ? path.dirname(outputArg) // or path from file output arg
-                      : outputArg || 'min' // or path from folder outputArg or min/ if no outputArg passed
+                    ( /so?u?rce?$/.test(path.dirname(srcPath)) ? '../' : '' ) // + '../' if in if in *(src|source)/
+                  + ( outputArg.endsWith('.js') ? path.dirname(outputArg) // + path from file outputArg
+                      : outputArg || 'min' ) // or path from folder outputArg or min/ if no outputArg passed
                 );
                 const outputFilename = (
                     outputArg.endsWith('.js') && inputArg.endsWith('.js')
