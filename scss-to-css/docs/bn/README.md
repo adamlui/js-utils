@@ -276,6 +276,6 @@ findSCSS() » Check returned array.
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-<a href="https://github.com/adamlui/js-utils">**বাড়ি**</a> /
+<a href="https://github.com/adamlui/js-utils">**জাভাস্ক্রিপ্ট ইউটিলিটি**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">আলোচনা করা</a> /
 <a href="#--scss-to-css">উপরে ফিরে যাও ↑</a>

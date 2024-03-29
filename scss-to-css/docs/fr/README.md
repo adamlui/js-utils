@@ -276,6 +276,6 @@ LE LOGICIEL EST FOURNI « EN L'ÉTAT », SANS GARANTIE D'AUCUNE SORTE, EXPRESSE 
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-<a href="https://github.com/adamlui/js-utils">**Maison**</a> /
+<a href="https://github.com/adamlui/js-utils">**Utilitaires JavaScript**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Discuter</a> /
 <a href="#--scss-to-css">Retour au sommet ↑</a>

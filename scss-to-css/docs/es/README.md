@@ -276,6 +276,6 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-<a href="https://github.com/adamlui/js-utils">**Hogar**</a> /
+<a href="https://github.com/adamlui/js-utils">**Utilidades de JavaScript**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Conversar</a> /
 <a href="#--scss-to-css">Volver arriba ↑</a>

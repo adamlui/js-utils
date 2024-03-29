@@ -256,6 +256,6 @@ findJS() » Check returned array.
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-<a href="https://github.com/adamlui/js-utils">**घर**</a> /
+<a href="https://github.com/adamlui/js-utils">**जावास्क्रिप्ट उपयोगिताएँ**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">चर्चा करना</a> /
 <a href="#-minifyjs">वापस शीर्ष पर ↑</a>

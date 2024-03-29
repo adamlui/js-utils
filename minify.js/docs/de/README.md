@@ -254,6 +254,6 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-<a href="https://github.com/adamlui/js-utils">**Heim**</a> /
+<a href="https://github.com/adamlui/js-utils">**JavaScript-Dienstprogramme**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Diskutieren</a> /
 <a href="#-minifyjs">Zurück nach oben ↑</a>
