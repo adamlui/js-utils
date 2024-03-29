@@ -338,7 +338,6 @@ else { // run as CLI utility
                 ' --length=n                  Generate password(s) of n length.',
                 ' --qty=n                     Generate n password(s).',
                 ' --charset=chars             Only include chars in password(s).',
-                ' --charset=chars             Only include chars in password(s).',
                 ' --exclude=chars             Exclude chars from password(s).'
             ],
             'flags': [
