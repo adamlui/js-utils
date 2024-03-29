@@ -30,9 +30,13 @@ const ipv4 = {
 
         // Validate options
         for (const key in options) {
-            if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
-                    `ipv4.generate() » ERROR: \`${ key }\` is an invalid option.\n`
-                  + `ipv4.generate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+            if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+                console.error(
+                    `ipv4.generate() » ERROR: \`${ key }\` is an invalid option.`);
+                console.error(
+                    `ipv4.generate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+                return;
+            }
             else if (['verbose'].includes(key)
                 && typeof options[key] !== 'boolean') return console.error(
                     `ipv4.generate() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
@@ -56,10 +60,11 @@ const ipv4 = {
 
         // Log/return final result
         const ipResult = options.qty > 1 ? ips : ips[0];
-        if (options.verbose) console.info(
-            `ipv4.generate() » IPv4 address${ options.qty > 1 ? 'es' : '' } generated!\n`
-                + ( options.qty === 1 ? `ipv4.generate() » ${ ipResult }`
-                                      : 'ipv4.generate() » Check returned array.' ));
+        if (options.verbose) {
+            console.info(`ipv4.generate() » IPv4 address${ options.qty > 1 ? 'es' : '' } generated!`);
+            console.info(options.qty === 1 ? `ipv4.generate() » ${ ipResult }`
+                                           : 'ipv4.generate() » Check returned array.' );
+        }
         return ipResult;
     },
 
@@ -77,11 +82,16 @@ const ipv4 = {
 
         // Validate options
         for (const key in options) {
-            if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
-                `ipv4.validate() » ERROR: \`${ key }\` is an invalid option.\n`
-              + `ipv4.validate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
-            else if (typeof options[key] !== 'boolean') return console.error(
-                `ipv4.validate() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
+            if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+                console.error(
+                    `ipv4.validate() » ERROR: \`${ key }\` is an invalid option.`);
+                console.error(
+                    `ipv4.validate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+                return;
+            }
+            else if (typeof options[key] !== 'boolean')
+                return console.error(
+                    `ipv4.validate() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
         }
 
         // Validate address as IPv4 address
@@ -118,10 +128,13 @@ const ipv6 = {
 
         // Validate options
         for (const key in options) {
-            if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
-                    `ipv6.generate() » ERROR: \`${ key }\` is an invalid option.\n`
-                  + `ipv6.generate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
-            else if (['verbose', 'leadingZeros', 'doubleColon'].includes(key)
+            if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+                console.error(
+                    `ipv6.generate() » ERROR: \`${ key }\` is an invalid option.`);
+                console.info(
+                    `ipv6.generate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+                return;
+            } else if (['verbose', 'leadingZeros', 'doubleColon'].includes(key)
                 && typeof options[key] !== 'boolean') return console.error(
                     `ipv6.generate() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
             else if (['qty'].includes(key)
@@ -149,10 +162,11 @@ const ipv6 = {
 
         // Log/return final result
         const ipResult = options.qty > 1 ? ips : ips[0];
-        if (options.verbose) console.info(
-            `ipv6.generate() » IPv6 address${ options.qty > 1 ? 'es' : '' } generated!\n`
-                + ( options.qty === 1 ? `ipv6.generate() » ${ ipResult }`
-                                      : 'ipv6.generate() » Check returned array.' ));
+        if (options.verbose) {
+            console.info(`ipv6.generate() » IPv6 address${ options.qty > 1 ? 'es' : '' } generated!`);
+            console.info(options.qty === 1 ? `ipv6.generate() » ${ ipResult }`
+                                           : 'ipv6.generate() » Check returned array.' );
+        }
         return ipResult;
     },
 
@@ -170,15 +184,20 @@ const ipv6 = {
         if (typeof address !== 'string') return console.error(
             'ipv6.format() » ERROR: 1st arg <address> must be a string.');
         if (!this.validate(address, { verbose: false})) return console.error(
-            `ipv6.format() » ERROR: \n- ${ address } is not a valid IPv6 address.`);
+            `ipv6.format() » ERROR:  ${ address } is not a valid IPv6 address.`);
 
         // Validate options
         for (const key in options) {
-            if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
-                `ipv6.format() » ERROR: \`${ key }\` is an invalid option.\n`
-              + `ipv6.format() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
-            if (typeof options[key] !== 'boolean') return console.error(
-                `ipv6.format() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+            if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+                console.error(
+                    `ipv6.format() » ERROR: \`${ key }\` is an invalid option.`);
+                console.error(
+                    `ipv6.format() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+                return;
+            }
+            if (typeof options[key] !== 'boolean')
+                return console.error(
+                    `ipv6.format() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
         }
 
         // Init formattedAddress
@@ -238,11 +257,16 @@ const ipv6 = {
 
         // Validate options
         for (const key in options) {
-            if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
-                `ipv6.validate() » ERROR: \`${ key }\` is an invalid option.\n`
-              + `ipv6.validate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
-            if (typeof options[key] !== 'boolean') return console.error(
-                `ipv6.validate() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+            if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+                console.error(
+                    `ipv6.validate() » ERROR: \`${ key }\` is an invalid option.`);
+                console.error(
+                    `ipv6.validate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+                return;
+            }
+            if (typeof options[key] !== 'boolean')
+                return console.error(
+                    `ipv6.validate() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
         }
 
         // Validate address as IPv6 address

@@ -19,29 +19,31 @@ function findJS(searchDir, options = {}) {
     options = { ...defaultOptions, ...options };
 
     // Validate searchDir
-    if (typeof searchDir !== 'string') return console.error(
-            'findJS() » ERROR: 1st arg <searchDir> must be a string.');
+    if (typeof searchDir !== 'string')
+        return console.error('findJS() » ERROR: 1st arg <searchDir> must be a string.');
     else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir);
-        if (!fs.existsSync(searchPath)) return console.error(
-            'findJS() » ERROR: 1st arg <searchDir> must be an existing directory.\n'
-          + `findJS() » ${ searchPath } does not exist.`);
-    }
+        if (!fs.existsSync(searchPath)) {
+           console.error('findJS() » ERROR: 1st arg <searchDir> must be an existing directory.');
+           console.error(`findJS() » ${ searchPath } does not exist.`);
+           return;
+    }}
 
     // Validate options
     for (const key in options) {
-        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key))
-            if (key !== 'isRecursing') return console.error(
-                `findJS() » ERROR: \`${ key }\` is an invalid option.\n`
-              + `findJS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
-        else if (typeof options[key] !== 'boolean') return console.error(
+        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key) && (key !== 'isRecursing')) {
+            console.error(`findJS() » ERROR: \`${ key }\` is an invalid option.`);
+            console.error(`findJS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+            return;
+        } else if (typeof options[key] !== 'boolean')
+            return console.error(
                 `findJS() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
     }
 
     // Search for unminified JS
     const dirFiles = fs.readdirSync(searchDir), jsFiles = [];
-    if (options.verbose && !options.isRecursing) console.info(
-        '\nfindJS() » Searching for unminified JS files...');
+    if (options.verbose && !options.isRecursing) {
+        console.info('findJS() » Searching for unminified JS files...'); }
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file);
         if (fs.statSync(filePath).isDirectory() && file != 'node_modules'
@@ -54,11 +56,13 @@ function findJS(searchDir, options = {}) {
     });
 
     // Log/return final result
-    if (!options.isRecursing && options.verbose) console.info(
-            'findJS() » Search complete! ' + ( jsFiles.length === 0 ? 'No' : jsFiles.length )
-                + ` file${ jsFiles.length > 1 ? 's' : '' } found.`
-        + ( findJS.caller.name !== 'minify' && require.main !== module ?
-          '\nfindJS() » Check returned array.' : '' ));
+    if (!options.isRecursing && options.verbose) {
+            console.info('findJS() » Search complete! '
+              + ( jsFiles.length === 0 ? 'No' : jsFiles.length )
+              + ` file${ jsFiles.length > 1 ? 's' : '' } found.`);
+        if (findJS.caller.name !== 'minify' && require.main !== module)
+            console.info('findJS() » Check returned array.');
+    }
     return options.isRecursing || jsFiles.length > 0 ? jsFiles : [];
 }
 
@@ -80,11 +84,13 @@ function minify(input, options = {}) {
 
     // Validate options
     for (const key in options) {
-        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) return console.error(
-            `minify() » ERROR: \`${ key }\` is an invalid option.\n`
-          + `minify() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
-        else if (typeof options[key] !== 'boolean') return console.error(
-            `minify() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
+        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+            console.error(`minify() » ERROR: \`${ key }\` is an invalid option.`);
+            console.error(`minify() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+            return;
+        } else if (typeof options[key] !== 'boolean')
+            return console.error(
+                `minify() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
     }
 
     // Minify JS based on input
@@ -111,7 +117,6 @@ function minify(input, options = {}) {
         if (options.verbose) console.info('minify() » Minifying passed source code...');
         const minifyResult = uglifyJS.minify(input, minifyOptions);
         if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
-
         return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error };
     }
 }
