@@ -104,7 +104,7 @@ xhr.send();
 
 <br>
 
-**📝 Note:** To always import the latest version (not recommended in production!) remove the `@1.3.1` version tag from the jsDelivr URL: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
+**💡 Note:** To always import the latest version (not recommended in production!) remove the `@1.3.1` version tag from the jsDelivr URL: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
 
 <br>
 

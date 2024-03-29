@@ -104,7 +104,7 @@ xhr.send();
 
 <br>
 
-**📝 注意：** 若要始終匯入最新版本（不建議在生產中使用！），請從 jsDelivr URL 中刪除 `@1.3.1` 版本標籤：`https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
+**💡 注意：** 若要始終匯入最新版本（不建議在生產中使用！），請從 jsDelivr URL 中刪除 `@1.3.1` 版本標籤：`https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
 
 <br>
 
