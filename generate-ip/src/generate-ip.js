@@ -1,4 +1,4 @@
-// © 2024 Adam Lui under the MIT license.
+// © 2024 Adam Lui & contributors under the MIT license.
 // Source: https://github.com/adamlui/js-utils/tree/main/generate-ip
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js
 // Documentation: https://github.com/adamlui/js-utils/tree/main/generate-ip#readme
