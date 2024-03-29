@@ -37,7 +37,7 @@ function generatePassword(options = {}) {
     for (const key in options) {
         if (key == '0') {
             console.error(
-                'generatePassword() » ERROR: 1st arg `options` can only be an object of key/values.');
+                'generatePassword() » ERROR: 1st arg [options] can only be an object of key/values.');
             console.info(
                 'generatePassword() » Example: generatePassword({ verbose: false, numbers: true })');
             console.info(
@@ -134,7 +134,7 @@ function generatePasswords(qty, options = {}) {
     for (const key in options) {
         if (key == '0') {
             console.error(
-                'generatePasswords() » ERROR: 2nd arg `options` can only be an object of key/values.');
+                'generatePasswords() » ERROR: 2nd arg [options] can only be an object of key/values.');
             console.info(
                 'generatePasswords() » Example: generatePasswords(3, { verbose: false, symbols: true })');
             console.info(
@@ -196,7 +196,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     for (const key in options) {
         if (key == '0') {
             console.error(
-                'strictify() » ERROR: 3nd arg `options` can only be an object of key/values.');
+                'strictify() » ERROR: 3nd arg [options] can only be an object of key/values.');
             console.info(
                 'strictify() » Example: strictify(\'pa55word\', [\'symbol\', \'upper\'], { verbose: false })');
             console.info(
@@ -272,7 +272,7 @@ function validateStrength(password, options = {}) {
     for (const key in options) {
         if (key == '0') {
             console.error(
-                'validateStrength() » ERROR: 2nd arg `options` can only be an object of key/values.');
+                'validateStrength() » ERROR: 2nd arg [options] can only be an object of key/values.');
             console.info(
                 'validateStrength() » Example: validateStrength(\'pa55word\', { verbose: false })');
             console.info(
