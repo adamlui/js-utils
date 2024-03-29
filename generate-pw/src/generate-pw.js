@@ -132,8 +132,10 @@ function generatePasswords(qty, options = {}) {
     for (let i = 0; i < qty; i++) passwords.push(generatePassword(options));
 
     // Log/return final result
-    if (options.verbose) console.info(`generatePasswords() » Password${ qty > 1 ? 's' : '' } generated!`
-      + ( require.main !== module ? '\ngeneratePasswords() » Check returned array.' : '' ));
+    if (options.verbose) console.info(
+              `generatePasswords() » Password${ qty > 1 ? 's' : '' } generated!`
+      + ( !require.main.filename.endsWith('cli.js') ?
+            '\ngeneratePasswords() » Check returned array.' : '' ));
     return passwords;
 }
 
@@ -253,8 +255,10 @@ function validateStrength(password, options = {}) {
             charCnts[charType] >= strengthCriteria['min' + charType.charAt(0).toUpperCase() + charType.slice(1)]) ? 20 : 0;
 
     // Log/return final result
-    if (options.verbose) console.info('validateStrength() » Password strength validated!\n'
-        + ( require.main !== module ? 'validateStrength() » Check returned object for score/recommendations.' : '' ));
+    if (options.verbose) console.info(
+            'validateStrength() » Password strength validated!\n'
+      + ( !require.main.filename.endsWith('cli.js') ? 
+            'validateStrength() » Check returned object for score/recommendations.' : '' ));
     return { strengthScore, recommendations, isGood: strengthScore >= 80 };
 }
 
