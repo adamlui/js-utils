@@ -349,7 +349,7 @@ else { // run as CLI utility
                 ' -L, --no-lowercase          Disallow lowercase letters in password(s).',
                 ' -U, --no-uppercase          Disallow uppercase letters in password(s).',
                 ' -s, --strict                Require at least one character from each'
-                                           + ' allowed character set in password(s).'
+                                           + ' allowed character set in password(s).',
                 ' -q, --quiet                 Suppress all logging except errors.'
             ],
             'infoCmds': [
