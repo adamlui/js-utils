@@ -77,10 +77,10 @@ function generatePassword(options = {}) {
         return generatePasswords(qty, nonQtyOptions);
 
     } else { // generate/return single password
-        const fromMutliFunc = generatePassword.caller?.name === 'generatePasswords'; // flag to avoid repetitive logs
+        const fromGeneratePasswords = generatePassword.caller?.name === 'generatePasswords'; // flag to avoid repetitive logs
 
         // Init password's char set
-        if (options.verbose && !fromMutliFunc) console.info('generatePassword() » Initializing character set...');
+        if (options.verbose && !fromGeneratePasswords) console.info('generatePassword() » Initializing character set...');
         let pwCharset = options.charset || ( // use passed [charset], or construct from options
             (options.numbers ? charsets.numbers : '')
               + (options.symbols ? charsets.symbols : '')
@@ -92,12 +92,12 @@ function generatePassword(options = {}) {
 
         // Exclude passed `exclude` chars
         if (options.exclude) {
-            if (options.verbose && !fromMutliFunc) console.info('generatePassword() » Removing excluded characters...');
+            if (options.verbose && !fromGeneratePasswords) console.info('generatePassword() » Removing excluded characters...');
             pwCharset = pwCharset.replace(new RegExp(`[${ options.exclude }]`, 'g'), '');
         }
 
         // Generate unstrict password
-        if (options.verbose && !fromMutliFunc) console.info('generatePassword() » Generating password...');
+        if (options.verbose && !fromGeneratePasswords) console.info('generatePassword() » Generating password...');
         let password = '';
         for (let i = 0; i < options.length; i++) {
             const randomIndex = randomInt(0, pwCharset.length);
@@ -106,14 +106,14 @@ function generatePassword(options = {}) {
 
         // Enforce strict mode if enabled
         if (options.strict) {
-            if (options.verbose && !fromMutliFunc) console.info('generatePassword() » Enforcing strict mode...');
+            if (options.verbose && !fromGeneratePasswords) console.info('generatePassword() » Enforcing strict mode...');
             const charTypes = ['number', 'symbol', 'lower', 'upper'],
                   requiredCharTypes = charTypes.filter(charType => options[charType + 's'] || options[charType + 'case']);
             password = strictify(password, requiredCharTypes);
         }
 
         // Log/return final result
-        if (options.verbose && !fromMutliFunc) {
+        if (options.verbose && !fromGeneratePasswords) {
             console.info(
                 'generatePassword() » Password generated!');       
             if (typeof require !== 'undefined' && !require.main.filename.endsWith('cli.js')) console.info(
