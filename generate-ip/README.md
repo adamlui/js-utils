@@ -96,7 +96,7 @@ xhr.send();
 
 <br>
 
-📝 **Note:** To always import the latest version (not recommended in production!), remove the `@2.1.1` version tag from the jsDelivr URL: `https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js`
+📝 **Note:** To always import the latest version (not recommended in production!) remove the `@2.1.1` version tag from the jsDelivr URL: `https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js`
 
 <br>
 
