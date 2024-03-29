@@ -41,7 +41,7 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg)))
     console.info('v' + require('./package.json').version);
 
 else { // log/copy RESULT
-    const address = ipv4.generate({ verbose: false });
+    const address = ipv4.generate();
     copyToClipboard(address); console.log(bw + address + nc);
 }
 
