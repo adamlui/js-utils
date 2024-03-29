@@ -2,8 +2,17 @@
 // Source: https://github.com/adamlui/js-utils/tree/main/generate-pw
 // Documentation: https://github.com/adamlui/js-utils/tree/main/generate-pw#readme
 
-// Import crypto.randomInt() for secure RNG
-const { randomInt } = require('crypto');
+// IMPORT secure crypto RNG
+let randomInt;
+try { // to use Node.js module
+    randomInt = require('crypto').randomInt;
+} catch (err) { // use browser API or JS method
+    const webCrypto = window.crypto || window.msCrypto;
+    randomInt = (min, max) => {
+        const randomVal = webCrypto?.getRandomValues(new Uint32Array(1))[0] / 0xFFFFFFFF || Math.random();
+        return Math.floor(randomVal * (max - min)) + min;
+    };
+}
 
 // Init CHARACTER SETS
 const charsets = {
@@ -87,8 +96,10 @@ function generatePassword(options = {}) {
         }
 
         // Log/return final result
-        if (options.verbose && !fromMutliFunc) console.info('generatePassword() » Password generated!'
-          + ( !require.main.filename.endsWith('cli.js') ? '\ngeneratePassword() » Check returned string.' : '' ));
+        if (options.verbose && !fromMutliFunc) console.info(
+                'generatePassword() » Password generated!'
+          + ( typeof require !== 'undefined' && !require.main.filename.endsWith('cli.js') ?
+              '\ngeneratePassword() » Check returned string.' : '' ));
         return password;
     }
 }
