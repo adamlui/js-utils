@@ -57,7 +57,7 @@ function findSCSS(searchDir, options = {}) {
     if (!options.isRecursing && options.verbose) console.info(
             'findSCSS() » Search complete! ' + ( scssFiles.length === 0 ? 'No' : scssFiles.length )
                 + ` file${ scssFiles.length > 1 ? 's' : '' } found.`
-        + ( findSCSS.caller.name !== 'compile' && require.main !== module ?
+        + ( findSCSS.caller.name !== 'compile' && !require.main.filename.endsWith('cli.js') ?
           '\nfindSCSS() » Check returned array.' : '' ));
     return options.isRecursing || scssFiles.length > 0 ? scssFiles : [];
 }
