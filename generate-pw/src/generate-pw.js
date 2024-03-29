@@ -44,7 +44,7 @@ function generatePassword(options = {}) {
             console.error(
                 'generatePassword() » ERROR: 1st arg [options] can only be an object of key/values.');
             console.info(
-                'generatePassword() » Example: generatePassword({ verbose: false, numbers: true })');
+                'generatePassword() » Example valid command: generatePassword({ verbose: false, numbers: true })');
             printValidOptions();
             return;
         } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
@@ -144,7 +144,7 @@ function generatePasswords(qty, options = {}) {
             console.error(
                 'generatePasswords() » ERROR: 2nd arg [options] can only be an object of key/values.');
             console.info(
-                'generatePasswords() » Example: generatePasswords(3, { verbose: false, symbols: true })');
+                'generatePasswords() » Example valid command: generatePasswords(3, { verbose: false, symbols: true })');
             printValidOptions();
             return;
         } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
@@ -210,7 +210,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
             console.error(
                 'strictify() » ERROR: 3nd arg [options] can only be an object of key/values.');
             console.info(
-                'strictify() » Example: strictify(\'pa55word\', [\'symbol\', \'upper\'], { verbose: false })');
+                'strictify() » Example valid command: strictify(\'pa55word\', [\'symbol\', \'upper\'], { verbose: false })');
             printValidOptions(); return;
         } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
@@ -287,7 +287,7 @@ function validateStrength(password, options = {}) {
             console.error(
                 'validateStrength() » ERROR: 2nd arg [options] can only be an object of key/values.');
             console.info(
-                'validateStrength() » Example: validateStrength(\'pa55word\', { verbose: false })');
+                'validateStrength() » Example valid command: validateStrength(\'pa55word\', { verbose: false })');
             printValidOptions(); return;
         } else if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
