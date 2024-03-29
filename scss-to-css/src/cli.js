@@ -1,5 +1,10 @@
 #!/usr/bin/env node
 
+// Import LIBS
+const fs = require('fs'),
+      path = require('path'),
+      scssToCSS = require(__dirname.match(/src/) ? './scss-to-css' : './scss-to-css.min');
+
 // Init UI colors
 const nc = '\x1b[0m',    // no color
       br = '\x1b[1;91m', // bright red
@@ -57,7 +62,7 @@ else { // run MAIN routine
 
     // Find all eligible JavaScript files or arg-passed file
     const scssFiles = inputArg.endsWith('.scss') ? [inputPath]
-        : findSCSS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode });
+        : scssToCSS.findSCSS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode });
 
     if (config.dryRun) { // -n or --dry-run passed
         if (scssFiles.length > 0) { // print files to be processed
@@ -70,7 +75,7 @@ else { // run MAIN routine
         // Build array of compilation data
         const failedPaths = [];
         const compileData = scssFiles.map(scssPath => {
-            const compileResult = compile(scssPath, {
+            const compileResult = scssToCSS.compile(scssPath, {
                 minify: !config.noMinify, sourceMaps: !config.noSourceMaps, verbose: !config.quietMode });
             if (compileResult.error) failedPaths.push(scssPath);
             return compileResult;
