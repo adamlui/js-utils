@@ -118,16 +118,7 @@ xhr.send();
 
 ```js
 const password = pw.generatePassword({ length: 11, numbers: true });
-console.log(password);
-
-/* নমুনা আউটপুট:
-
-generatePassword() » Initializing character set...
-generatePassword() » Generating password...
-generatePassword() » Password generated!
-generatePassword() » Check returned string.
-'bAsZm3mq6Qn'
-*/
+console.log(password); // নমুনা আউটপুট: 'bAsZm3mq6Qn'
 ```
 
 ...অথবা **একাধিক** পাসওয়ার্ড যদি `qty` বিকল্প দেওয়া হয়, স্ট্রিংগুলির একটি অ্যারে প্রদান করে:

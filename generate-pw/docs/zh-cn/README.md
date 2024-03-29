@@ -118,15 +118,7 @@ xhr.send();
 
 ```js
 const password = pw.generatePassword({ length: 11, numbers: true });
-console.log(password);
-/* 示例输出：
-
-generatePassword() » Initializing character set...
-generatePassword() » Generating password...
-generatePassword() » Password generated!
-generatePassword() » Check returned string.
-'bAsZm3mq6Qn'
-*/
+console.log(password); // 示例输出：'bAsZm3mq6Qn'
 ```
 
 ...或 **多个** 密码（如果给出了 `qty` 选项），返回一个字符串数组：

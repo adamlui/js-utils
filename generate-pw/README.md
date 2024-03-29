@@ -118,16 +118,7 @@ Generates **one** password if `qty` option is not given, returning a string:
 
 ```js
 const password = pw.generatePassword({ length: 11, numbers: true });
-console.log(password);
-
-/* sample output:
-
-generatePassword() » Initializing character set...
-generatePassword() » Generating password...
-generatePassword() » Password generated!
-generatePassword() » Check returned string.
-'bAsZm3mq6Qn'
-*/
+console.log(password); // sample output: 'bAsZm3mq6Qn'
 ```
 
 ...or **multiple** passwords if `qty` option is given, returning an array of strings:

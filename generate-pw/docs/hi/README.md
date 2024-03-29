@@ -118,15 +118,7 @@ xhr.send();
 
 ```js
 const password = pw.generatePassword({ length: 11, numbers: true });
-console.log(password);
-/* नमूना आउटपुट:
-
-generatePassword() » Initializing character set...
-generatePassword() » Generating password...
-generatePassword() » Password generated!
-generatePassword() » Check returned string.
-'bAsZm3mq6Qn'
-*/
+console.log(password); // नमूना आउटपुट: 'bAsZm3mq6Qn'
 ```
 
 ...या **एकाधिक** पासवर्ड यदि `qty` विकल्प दिया गया है, तो स्ट्रिंग्स की एक सरणी लौटाएं:
