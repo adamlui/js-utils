@@ -213,10 +213,11 @@ const ipv6 = {
         // Log/return final result
         if (options.verbose) {
             if (formattedAddress !== address) console.info(
-                'ipv6.format() » IP formatted successfully!\n'
-              + 'ipv6.format() » Check returned string.');
+                'ipv6.format() » IP formatted successfully!');
             else console.info(
                 'ipv6.format() » IP already formatted to specs.');
+            console.info(
+                `ipv6.format() » ${ formattedAddress }`);
         }
         return formattedAddress;
     },
