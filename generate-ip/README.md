@@ -298,6 +298,9 @@ Generated IP is logged to the console + copied to the clipboard.
 ### Command line options
 
 ```
+Parameter options:
+ -q, --quiet                 Suppress all logging except errors.
+
 Info commands:
  -h, --help                  Display help screen.
  -v, --version               Show version number.

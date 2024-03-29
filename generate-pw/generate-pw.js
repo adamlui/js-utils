@@ -281,7 +281,8 @@ else { // run as CLI utility
             'includeSymbols': /^--?(?:s|(?:include-?)?symbols?=?(?:true|1)?)$/,
             'excludeLowerChars': /^--?(?:L|(?:exclude|disable|no)-?lower-?(?:case)?|lower-?(?:case)?=(?:false|0))$/,
             'excludeUpperChars': /^--?(?:U|(?:exclude|disable|no)-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/,
-            'strictMode': /^--?s(?:trict)?(?:-?mode)?$/
+            'strictMode': /^--?s(?:trict)?(?:-?mode)?$/,
+            'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
         },
         infoCmds: {
             'help': /^--?h(?:elp)?$/,
@@ -322,7 +323,7 @@ else { // run as CLI utility
             charset: config.charset, exclude: config.excludeChars,
             numbers: !!config.includeNums, symbols: !!config.includeSymbols,
             lowercase: !config.excludeLowerChars, uppercase: !config.excludeUpperChars,
-            strict: !!config.strictMode
+            strict: !!config.strictMode, verbose: !config.quietMode
         };
         const pwResult = generatePassword(funcOptions);
         copyToClipboard(Array.isArray(pwResult) ? pwResult.join('\n') : pwResult);
@@ -348,6 +349,7 @@ else { // run as CLI utility
                 ' -U, --no-uppercase          Disallow uppercase letters in password(s).',
                 ' -s, --strict                Require at least one character from each'
                                            + ' allowed character set in password(s).'
+                ' -q, --quiet                 Suppress all logging except errors.'
             ],
             'infoCmds': [
                 '\nInfo commands:',

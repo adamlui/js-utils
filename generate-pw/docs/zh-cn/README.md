@@ -236,6 +236,7 @@ $ generate-pw
  -L, --no-lowercase          密码中不允许使用小写字母。
  -U, --no-uppercase          密码中不允许使用大写字母。
  -s, --strict                要求密码中每个允许的字符集中至少有一个字符。
+ -q, --quiet                 禁止除错误之外的所有日志记录。
 
 信息命令：
  -h, --help                  显示帮助屏幕。

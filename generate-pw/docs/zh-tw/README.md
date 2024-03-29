@@ -236,6 +236,7 @@ $ generate-pw
  -L, --no-lowercase          密碼中不允許使用小寫字母。
  -U, --no-uppercase          密碼中不允許使用大寫字母。
  -s, --strict                要求密碼中每個允許的字元集中至少有一個字元。
+ -q, --quiet                 禁止除錯誤之外的所有日誌記錄。
 
 訊息命令：
  -h, --help                  顯示幫助畫面。

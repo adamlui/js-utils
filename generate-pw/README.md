@@ -240,6 +240,7 @@ Boolean options:
  -U, --no-uppercase          Disallow uppercase letters in password(s).
  -s, --strict                Require at least one character from each
                              allowed character set in password(s).
+ -q, --quiet                 Suppress all logging except errors.
 
 Info commands:
  -h, --help                  Display help screen.

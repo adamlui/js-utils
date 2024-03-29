@@ -11,27 +11,27 @@ const nc = '\x1b[0m',    // no color
       bw = '\x1b[1;97m'; // bright white
 
 // Load settings from ARGS
+const config = {};
 const argRegex = {
+    flags: {
+        'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
+    },
     infoCmds: {
         'help': /^--?h(?:elp)?$/,
         'version': /^--?ve?r?s?i?o?n?$/
     }
 };
-let matchedArg = false, unrecognizedArg;
-for (const argType of Object.keys(argRegex))
-    for (const option of Object.keys(argRegex[argType]))
-        if (!matchedArg) process.argv.forEach(arg => {
-            if (!arg.startsWith('-')) return;
-            if (argRegex[argType][option].test(arg)) {
-                matchedArg = true; unrecognizedArg = undefined;
-            } else unrecognizedArg = arg;
-});
-if (unrecognizedArg) {
-    console.error(`\n${br}ERROR: Arg [${ unrecognizedArg }] not recognized.${nc}`);
-    console.info(`\n${by}Valid arguments are below.${nc}`);
-    printHelpSections(['infoCmds']);
-    process.exit(1);
-}
+process.argv.forEach(arg => {
+    if (!arg.startsWith('-')) return;
+    const matchedFlag = Object.keys(argRegex.flags).find(flag => argRegex.flags[flag].test(arg)),
+          matchedInfoCmd = Object.keys(argRegex.infoCmds).find(cmd => argRegex.infoCmds[cmd].test(arg));
+    if (matchedFlag) config[matchedFlag] = true;
+    else if (!matchedInfoCmd) {
+        console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
+        console.info(`\n${by}Valid arguments are below.${nc}`);
+        printHelpSections(['flags', 'infoCmds']);
+        process.exit(1);
+}});
 
 // Show HELP screen if -h or --help passed
 if (process.argv.some(arg => argRegex.infoCmds.help.test(arg))) printHelpSections();
@@ -41,7 +41,7 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg)))
     console.info('v' + require('./package.json').version);
 
 else { // log/copy RESULT
-    const address = ipv4.generate();
+    const address = ipv4.generate({ verbose: !config.quietMode });
     copyToClipboard(address); console.log(bw + address + nc);
 }
 
@@ -51,6 +51,10 @@ function printHelpSections(includeSections = ['cmdFormat', 'formatOptions', 'inf
     const helpSections = {
         'cmdFormat': [
             `\n${by}generate-ip [commands]${nc}`
+        ],
+        'flags': [
+            '\nBoolean options:',
+            ' -q, --quiet                 Suppress all logging except errors.'
         ],
         'infoCmds': [
             '\nInfo commands:',
