@@ -1,3 +1,7 @@
+// © 2024 Adam Lui & contributors under the MIT license.
+// Source: https://github.com/adamlui/js-utils/tree/main/generate-pw
+// Documentation: https://github.com/adamlui/js-utils/tree/main/generate-pw#readme
+
 // Import crypto.randomInt() for secure RNG
 const { randomInt } = require('crypto');
 
