@@ -1,6 +1,8 @@
+#!/usr/bin/env node
+
 /* ========================================================
 Script:       img-to-webp.js
-Version:      2023.8.4.2
+Version:      2024.3.31
 Description:  Compress all JPG/PNG images in a directory to WEBPs
 Author:       Adam Lui
 URL:          https://github.com/adamlui/js-utils
