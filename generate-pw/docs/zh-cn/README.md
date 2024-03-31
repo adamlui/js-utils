@@ -17,7 +17,7 @@
 ### 随机生成加密安全密码。
 
 <a href="#%EF%B8%8F-mit-%E8%AE%B8%E5%8F%AF%E8%AF%81"><img height=31 src="https://img.shields.io/badge/许可证-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-1.4.0"><img height=31 src="https://img.shields.io/badge/最新版本-1.4.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-1.4.1"><img height=31 src="https://img.shields.io/badge/最新版本-1.4.1-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/generate-pw?activeTab=code"><img height=31 src="https://img.shields.io/npm/unpacked-size/generate-pw?label=%E6%8B%86%E5%B0%81%E5%B0%BA%E5%AF%B8&style=for-the-badge&logo=ebox&logoColor=white&labelColor=464646&color=blue"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_js-utils:generate-pw/src/generate-pw.js"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_js-utils%3Agenerate-pw%2Fsrc%2Fgenerate-pw.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=%E6%BC%8F%E6%B4%9E&color=gold"></a>
 
@@ -66,14 +66,14 @@ const pw = require('generate-pw');
 #### <> HTML 脚本标签:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/generate-pw@1.4.0/dist/generate-pw.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/generate-pw@1.4.1/dist/generate-pw.min.js"></script>
 ```
 
 #### ES6:
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.4.0/dist/generate-pw.min.js');
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.4.1/dist/generate-pw.min.js');
     // 你的代码在这里...
 })();
 ```
@@ -82,7 +82,7 @@ const pw = require('generate-pw');
 
 ```js
 ...
-// @require https://cdn.jsdelivr.net/npm/generate-pw@1.4.0/dist/generate-pw.min.js
+// @require https://cdn.jsdelivr.net/npm/generate-pw@1.4.1/dist/generate-pw.min.js
 // ==/UserScript==
 
 // 你的代码在这里...
@@ -90,7 +90,7 @@ const pw = require('generate-pw');
 
 <br>
 
-**💡 注意：** 要始终导入最新版本（不建议在生产中使用！），请从 jsDelivr URL 中删除 `@1.4.0` 版本标签：`https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
+**💡 注意：** 要始终导入最新版本（不建议在生产中使用！），请从 jsDelivr URL 中删除 `@1.4.1` 版本标签：`https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
 
 <br>
 
