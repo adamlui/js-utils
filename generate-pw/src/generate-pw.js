@@ -1,6 +1,7 @@
 // © 2024 Adam Lui & contributors under the MIT license.
 // Source: https://github.com/adamlui/js-utils/tree/main/generate-pw
 // Documentation: https://github.com/adamlui/js-utils/tree/main/generate-pw#readme
+// Latest minified release: https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js
 
 // IMPORT secure crypto RNG
 let randomInt;
