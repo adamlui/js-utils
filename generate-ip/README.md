@@ -68,22 +68,6 @@ const { ipv4, ipv6 } = require('generate-ip');
 })();
 ```
 
-#### ES5:
-
-```js
-var xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://cdn.jsdelivr.net/npm/generate-ip@2.1.1/dist/generate-ip.min.js');
-xhr.onload = function() {
-    if (xhr.status === 200) {
-        var generateIP = document.createElement('script');
-        generateIP.textContent = xhr.responseText;
-        document.head.append(generateIP);
-        // Your code here...
-    }
-};
-xhr.send();
-```
-
 ### <img height=17 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/tampermonkey-icon28.png"><img height=17.5 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/violentmonkey-icon100.png"> Greasemonkey
 
 ```js

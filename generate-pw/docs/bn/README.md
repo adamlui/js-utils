@@ -76,22 +76,6 @@ const pw = require('generate-pw');
 })();
 ```
 
-#### ES5:
-
-```js
-var xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://cdn.jsdelivr.net/npm/generate-pw@1.4.0/dist/generate-pw.min.js');
-xhr.onload = function() {
-    if (xhr.status === 200) {
-        var generateIP = document.createElement('script');
-        generateIP.textContent = xhr.responseText;
-        document.head.append(generateIP);
-        // আপনার কোড এখানে...
-    }
-};
-xhr.send();
-```
-
 ### <img height=17 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/tampermonkey-icon28.png"><img height=17.5 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/violentmonkey-icon100.png"> Greasemonkey
 
 ```js
