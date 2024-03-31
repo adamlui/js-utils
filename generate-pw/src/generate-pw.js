@@ -348,5 +348,6 @@ function validateStrength(password, options = {}) {
 }
 
 // EXPORT API functions
-try { module.exports = { generatePassword, generatePasswords, strictify, validateStrength }; } catch (err) {} // for Node.js
-try { window.pw = { generatePassword, generatePasswords, strictify, validateStrength }; } catch (err) {} // for Greasemonkey
+const apiFunctions = { generatePassword, generatePasswords, strictify, validateStrength };
+try { module.exports = { ...apiFunctions }; } catch (err) {} // for Node.js
+try { window.pw = { ...apiFunctions }; } catch (err) {} // for Greasemonkey
