@@ -19,7 +19,7 @@
 - IPv3 + IPv4 support
 - No external dependencies
 - Command line usable
-- Web browser-compatible
+- Node.js + web browser-compatible
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
