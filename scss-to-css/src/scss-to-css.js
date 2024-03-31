@@ -40,7 +40,7 @@ function findSCSS(searchDir, options = {}) {
         console.info(`findSCSS() » If omitted, default settings are: ${ strDefaultOptions }`);
     };
     if (typeof options !== 'object') { // validate as obj
-        console.error('findSCSS() » ERROR: [options] can only be an object of key/values.');
+        console.error('findSCSS() » ERROR: 2nd arg [options] can only be an object of key/values.');
         console.info(`findSCSS() » Example valid call: ${ exampleCall }`);
         printValidOptions(); return;
     }
@@ -113,7 +113,7 @@ function compile(inputPath, options = {}) {
         console.info(`compile() » If omitted, default settings are: ${ strDefaultOptions }`);
     };
     if (typeof options !== 'object') { // validate as obj
-        console.error('compile() » ERROR: [options] can only be an object of key/values.');
+        console.error('compile() » ERROR: 2nd [options] can only be an object of key/values.');
         console.info(`compile() » Example valid call: ${ exampleCall }`);
         printValidOptions(); return;
     }

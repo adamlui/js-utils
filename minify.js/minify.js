@@ -39,7 +39,7 @@ function findJS(searchDir, options = {}) {
         console.info(`findJS() » If omitted, default settings are: ${ strDefaultOptions }`);
     };
     if (typeof options !== 'object') { // validate as obj
-        console.error('findJS() » ERROR: [options] can only be an object of key/values.');
+        console.error('findJS() » ERROR: 2nd arg [options] can only be an object of key/values.');
         console.info(`findJS() » Example valid call: ${ exampleCall }`);
         printValidOptions(); return;
     }
@@ -106,7 +106,7 @@ function minify(input, options = {}) {
         console.info(`minify() » If omitted, default settings are: ${ strDefaultOptions }`);
     };
     if (typeof options !== 'object') { // validate as obj
-        console.error('minify() » ERROR: [options] can only be an object of key/values.');
+        console.error('minify() » ERROR: 2nd arg [options] can only be an object of key/values.');
         console.info(`minify() » Example valid call: ${ exampleCall }`);
         printValidOptions(); return;
     }
