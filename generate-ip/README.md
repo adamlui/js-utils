@@ -14,7 +14,7 @@
 
 ## 💡 About
 
-**generate-ip** is a lightweight, easy-to-use library that allows you to generate, format & validate random IP address(es).
+**generate-ip** is a lightweight, easy-to-use library that allows you to randomly generate, format & validate IP address(es).
 
 - **No external dependencies —** Only built-in crypto methods used for secure randomization
 - **Multi-format support —** Both IPv4 and IPv6 addresses supported
