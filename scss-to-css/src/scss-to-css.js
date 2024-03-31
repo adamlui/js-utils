@@ -11,13 +11,12 @@ const fs = require('fs'),
 
 function findSCSS(searchDir, options = {}) {
 
-    // Init options
+    const exampleCall = 'findSCSS(\'assets/scss\', { verbose: false, dotFolders: true })';
     const defaultOptions = {
         recursive: true,  // recursively search for nested files in searchDir passed
         verbose: true,    // enable logging
         dotFolders: false // include dotfolders in file search
     };
-    options = { ...defaultOptions, ...options };
 
     // Validate searchDir
     if (typeof searchDir !== 'string')
@@ -31,15 +30,30 @@ function findSCSS(searchDir, options = {}) {
     }}
 
     // Validate options
-    for (const key in options) {
+    const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
+        .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
+        .replace(/"/g, '\'') // replace double quotes w/ single quotes
+        .replace(/\n\s*/g, ' '); // condense to single line
+    const strValidOptions = Object.keys(defaultOptions).join(', ');
+    const printValidOptions = () => {
+        console.info(`findSCSS() » Valid options: [ ${ strValidOptions } ]`);
+        console.info(`findSCSS() » If omitted, default settings are: ${ strDefaultOptions }`);
+    };
+    if (typeof options !== 'object') { // validate as obj
+        console.error('findSCSS() » ERROR: [options] can only be an object of key/values.');
+        console.info(`findSCSS() » Example valid call: ${ exampleCall }`);
+        printValidOptions(); return;
+    }
+    for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key) && (key !== 'isRecursing')) {
-            console.error(`findSCSS() » ERROR: \`${ key }\` is an invalid option.`);
-            console.info(`findSCSS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
-            return;
+            console.error(
+                `findSCSS() » ERROR: \`${ key }\` is an invalid option.`);
+            printValidOptions(); return;
         } else if (typeof options[key] !== 'boolean')
             return console.error(
-                `findSCSS() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
+                `findSCSS() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
     }
+    options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     // Search for SCSS
     const dirFiles = fs.readdirSync(searchDir), scssFiles = [];
@@ -68,7 +82,7 @@ function findSCSS(searchDir, options = {}) {
 
 function compile(inputPath, options = {}) {
 
-    // Init options
+    const exampleCall = 'compile(\'assets/scss\', { recursive: false, minify: false })';
     const defaultOptions = {
         recursive: true,   // recursively search for nested files if dir path passed
         verbose: true,     // enable logging
@@ -76,7 +90,6 @@ function compile(inputPath, options = {}) {
         minify: true,      // minify output CSS
         sourceMaps: true   // generate CSS source maps
     };
-    options = { ...defaultOptions, ...options };
 
     // Validate inputPath
     if (typeof inputPath !== 'string')
@@ -90,15 +103,30 @@ function compile(inputPath, options = {}) {
     }}
 
     // Validate options
-    for (const key in options) {
-        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key) && (key !== 'isRecursing')) {
-            console.error(`compile() » ERROR: \`${ key }\` is an invalid option.`);
-            console.info(`compile() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
-            return;
+    const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
+        .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
+        .replace(/"/g, '\'') // replace double quotes w/ single quotes
+        .replace(/\n\s*/g, ' '); // condense to single line
+    const strValidOptions = Object.keys(defaultOptions).join(', ');
+    const printValidOptions = () => {
+        console.info(`compile() » Valid options: [ ${ strValidOptions } ]`);
+        console.info(`compile() » If omitted, default settings are: ${ strDefaultOptions }`);
+    };
+    if (typeof options !== 'object') { // validate as obj
+        console.error('compile() » ERROR: [options] can only be an object of key/values.');
+        console.info(`compile() » Example valid call: ${ exampleCall }`);
+        printValidOptions(); return;
+    }
+    for (const key in options) { // validate each key
+        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+            console.error(
+                `compile() » ERROR: \`${ key }\` is an invalid option.`);
+            printValidOptions(); return;
         } else if (typeof options[key] !== 'boolean')
             return console.error(
-                `compile() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
+                `compile() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
     }
+    options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     // Compile SCSS based on inputPath
     const compileOptions = { style: options.minify ? 'compressed' : 'expanded', sourceMap: options.sourceMaps };

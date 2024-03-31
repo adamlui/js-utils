@@ -9,14 +9,13 @@ const fs = require('fs'),
 
 function findJS(searchDir, options = {}) {
 
-    // Init options
+    const exampleCall = 'findJS(\'assets/js\', { verbose: false, dotFolders: true })';
     const defaultOptions = {
         recursive: true,   // recursively search for nested files in searchDir passed
         verbose: true,     // enable logging
         dotFolders: false, // include dotfolders in file search
         dotFiles: false    // include dotfiles in file search
     };
-    options = { ...defaultOptions, ...options };
 
     // Validate searchDir
     if (typeof searchDir !== 'string')
@@ -30,15 +29,30 @@ function findJS(searchDir, options = {}) {
     }}
 
     // Validate options
-    for (const key in options) {
+    const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
+        .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
+        .replace(/"/g, '\'') // replace double quotes w/ single quotes
+        .replace(/\n\s*/g, ' '); // condense to single line
+    const strValidOptions = Object.keys(defaultOptions).join(', ');
+    const printValidOptions = () => {
+        console.info(`findJS() » Valid options: [ ${ strValidOptions } ]`);
+        console.info(`findJS() » If omitted, default settings are: ${ strDefaultOptions }`);
+    };
+    if (typeof options !== 'object') { // validate as obj
+        console.error('findJS() » ERROR: [options] can only be an object of key/values.');
+        console.info(`findJS() » Example valid call: ${ exampleCall }`);
+        printValidOptions(); return;
+    }
+    for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key) && (key !== 'isRecursing')) {
-            console.error(`findJS() » ERROR: \`${ key }\` is an invalid option.`);
-            console.info(`findJS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
-            return;
+            console.error(
+                `findJS() » ERROR: \`${ key }\` is an invalid option.`);
+            printValidOptions(); return;
         } else if (typeof options[key] !== 'boolean')
             return console.error(
-                `findJS() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
+                `findJS() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
     }
+    options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     // Search for unminified JS
     const dirFiles = fs.readdirSync(searchDir), jsFiles = [];
@@ -68,7 +82,7 @@ function findJS(searchDir, options = {}) {
 
 function minify(input, options = {}) {
 
-    // Init options
+    const exampleCall = 'minify(\'assets/js\', { recursive: false, mangle: false })';
     const defaultOptions = {
         recursive: true,   // recursively search for nested files if dir path passed
         verbose: true,     // enable logging
@@ -76,22 +90,36 @@ function minify(input, options = {}) {
         dotFiles: false,   // include dotfiles in file search
         mangle: true       // shorten var names (typically to one character)
     };
-    options = { ...defaultOptions, ...options };
 
     // Validate input
     if (typeof input !== 'string') return console.error(
         'minify() » ERROR: 1st arg <input> must be a string.');
 
     // Validate options
-    for (const key in options) {
+    const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
+        .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
+        .replace(/"/g, '\'') // replace double quotes w/ single quotes
+        .replace(/\n\s*/g, ' '); // condense to single line
+    const strValidOptions = Object.keys(defaultOptions).join(', ');
+    const printValidOptions = () => {
+        console.info(`minify() » Valid options: [ ${ strValidOptions } ]`);
+        console.info(`minify() » If omitted, default settings are: ${ strDefaultOptions }`);
+    };
+    if (typeof options !== 'object') { // validate as obj
+        console.error('minify() » ERROR: [options] can only be an object of key/values.');
+        console.info(`minify() » Example valid call: ${ exampleCall }`);
+        printValidOptions(); return;
+    }
+    for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
-            console.error(`minify() » ERROR: \`${ key }\` is an invalid option.`);
-            console.info(`minify() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
-            return;
+            console.error(
+                `minify() » ERROR: \`${ key }\` is an invalid option.`);
+            printValidOptions(); return;
         } else if (typeof options[key] !== 'boolean')
             return console.error(
-                `minify() » ERROR: [${ key }] option can only be set to \`true\` or \`false\`.`);
+                `minify() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
     }
+    options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     // Minify JS based on input
     const minifyOptions = { mangle: options.mangle ? { toplevel: true } : false };
