@@ -23,7 +23,7 @@ const charsets = {
     symbols: '!@#$%^&*()-_=+[]{}/\\|;:\'",.<>?'
 };
 
-// Define MAIN functions
+// Define API functions
 
 function generatePassword(options = {}) {
 
@@ -343,6 +343,6 @@ function validateStrength(password, options = {}) {
     return { strengthScore, recommendations, isGood: strengthScore >= 80 };
 }
 
-// EXPORT main functions
+// EXPORT API functions
 try { module.exports = { generatePassword, generatePasswords, strictify, validateStrength }; } catch (err) {} // for Node.js
 try { window.pw = { generatePassword, generatePasswords, strictify, validateStrength }; } catch (err) {} // for Greasemonkey
