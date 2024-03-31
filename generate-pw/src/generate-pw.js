@@ -60,7 +60,8 @@ function generatePassword(options = {}) {
     }
     for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
-            console.error(`generatePassword() » ERROR: \`${ key }\` is an invalid option.`);
+            console.error(
+                `generatePassword() » ERROR: \`${ key }\` is an invalid option.`);
             printValidOptions(); return;
         } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean') {
             return console.error(
@@ -163,7 +164,8 @@ function generatePasswords(qty, options = {}) {
     }
     for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
-            console.error(`generatePasswords() » ERROR: \`${ key }\` is an invalid option.`);
+            console.error(
+                `generatePasswords() » ERROR: \`${ key }\` is an invalid option.`);
             printValidOptions(); return;
         } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean') {
             return console.error(
