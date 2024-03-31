@@ -1,6 +1,6 @@
 {
   "name": "generate-ip",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Randomly generate IPv4 and IPv6 addresses.",
   "author": {
     "name": "Adam Lui",
