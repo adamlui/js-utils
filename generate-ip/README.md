@@ -39,13 +39,13 @@ $ npm install generate-ip
 
 ### <img height=18 src="https://i.imgur.com/JIeAdsr.png"> Node.js
 
-#### ESM:
+#### ES module:
 
 ```js
 import { ipv4, ipv6 } from 'generate-ip';
 ```
 
-#### CJS:
+#### CommonJS:
 
 ```js
 const { ipv4, ipv6 } = require('generate-ip');

@@ -47,13 +47,13 @@ $ npm install generate-pw
 
 ### <img height=18 src="https://i.imgur.com/JIeAdsr.png"> Node.js
 
-#### ESM:
+#### ES module:
 
 ```js
 import * as pw from 'generate-pw';
 ```
 
-#### CJS:
+#### CommonJS:
 
 ```js
 const pw = require('generate-pw');
