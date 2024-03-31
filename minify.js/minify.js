@@ -33,7 +33,7 @@ function findJS(searchDir, options = {}) {
     for (const key in options) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key) && (key !== 'isRecursing')) {
             console.error(`findJS() » ERROR: \`${ key }\` is an invalid option.`);
-            console.error(`findJS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+            console.info(`findJS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
             return;
         } else if (typeof options[key] !== 'boolean')
             return console.error(
@@ -86,7 +86,7 @@ function minify(input, options = {}) {
     for (const key in options) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(`minify() » ERROR: \`${ key }\` is an invalid option.`);
-            console.error(`minify() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+            console.info(`minify() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
             return;
         } else if (typeof options[key] !== 'boolean')
             return console.error(

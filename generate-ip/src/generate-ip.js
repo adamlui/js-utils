@@ -33,7 +33,7 @@ const ipv4 = {
             if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
                 console.error(
                     `ipv4.generate() » ERROR: \`${ key }\` is an invalid option.`);
-                console.error(
+                console.info(
                     `ipv4.generate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
                 return;
             }
@@ -85,7 +85,7 @@ const ipv4 = {
             if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
                 console.error(
                     `ipv4.validate() » ERROR: \`${ key }\` is an invalid option.`);
-                console.error(
+                console.info(
                     `ipv4.validate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
                 return;
             }
@@ -191,7 +191,7 @@ const ipv6 = {
             if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
                 console.error(
                     `ipv6.format() » ERROR: \`${ key }\` is an invalid option.`);
-                console.error(
+                console.info(
                     `ipv6.format() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
                 return;
             }
@@ -260,7 +260,7 @@ const ipv6 = {
             if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
                 console.error(
                     `ipv6.validate() » ERROR: \`${ key }\` is an invalid option.`);
-                console.error(
+                console.info(
                     `ipv6.validate() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
                 return;
             }

@@ -34,7 +34,7 @@ function findSCSS(searchDir, options = {}) {
     for (const key in options) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key) && (key !== 'isRecursing')) {
             console.error(`findSCSS() » ERROR: \`${ key }\` is an invalid option.`);
-            console.error(`findSCSS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+            console.info(`findSCSS() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
             return;
         } else if (typeof options[key] !== 'boolean')
             return console.error(
@@ -93,7 +93,7 @@ function compile(inputPath, options = {}) {
     for (const key in options) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key) && (key !== 'isRecursing')) {
             console.error(`compile() » ERROR: \`${ key }\` is an invalid option.`);
-            console.error(`compile() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
+            console.info(`compile() » Valid options: [ ${ Object.keys(defaultOptions).join(', ') } ]`);
             return;
         } else if (typeof options[key] !== 'boolean')
             return console.error(
