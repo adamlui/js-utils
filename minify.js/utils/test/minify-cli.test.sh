@@ -5,31 +5,27 @@ nc='\033[0m'    # no color
 br='\033[1;91m' # bright red
 bg='\033[1;92m' # bright green
 
-# Init minify.js path
-search_path="$(realpath "$0")" # start in test script path
-while [[ ! -f "$search_path/minify.js" ]] # minify.js not found
-    do search_path="$(dirname "$search_path")" # nav up one
-done ; minifyjs_path="$search_path/minify.js"
-
-# Calculate the distance from command dir to minify.js for input arg
-relative_path="$(realpath --relative-to="$(pwd)" "$(dirname "$minifyjs_path")")"
-if [ "$relative_path" = "." ] ; then dirs_from_minifyjs=0
-else dirs_from_minifyjs=$(( $(echo "$relative_path" | tr -cd '/' | wc -c) + 1 )) ; fi
+# Init minify.js root
+dir="$PWD"
+while [ "$dir" != "/" ] ; do
+    if [ -f "$dir/package.json" ] ; then
+        minifyjs_root="$dir" ; break ; fi
+    dir=$(dirname "$dir") # go up one
+done
 
 # Init I/O args
-input_arg="$(
-    [ "$dirs_from_minifyjs" -gt 0 ] && # if not in minifyjs_path \
-    printf '../%.0s' $(seq 1 $dirs_from_minifyjs) # construct appropriate "../" prefixes \
-)utils/test/input"
+relative_path="$(realpath --relative-to="$minifyjs_root" "$PWD")"
+if [ "$relative_path" = "utils/test" ] ; then input_arg="input"
+elif [ "$relative_path" = "." ] ; then input_arg="utils/test/input"
+else
+    levels_up=$(echo "$relative_path" | tr '/' '\n' | wc -l)
+    parent_dirs=$(printf "../%.0s" $(seq 1 $((levels_up - 1))))
+    input_arg="$parent_dirs/utils/test/input"
+fi
 output_arg="output/min"
 
-# Run minify command
-test_cmd="node $minifyjs_path $input_arg $output_arg"
-echo -e "\n> Running '$test_cmd'..."
-if ! $test_cmd ; then
-    echo -e "\n${br}Error executing command: $test_cmd${nc}"
-    exit 1
-fi
+# Run minify.js CLI
+node "$minifyjs_root/src/cli.js" "$input_arg" "$output_arg"
 
 # Compare generated files to expected output
 echo -e "\n> Comparing generated files to expected output..."
