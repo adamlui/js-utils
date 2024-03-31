@@ -69,7 +69,7 @@ function generatePassword(options = {}) {
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) return console.error(
-                `generatePassword() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+                `generatePassword() » ERROR: [${ key }] option can only be an integer > 0.`);
         }
     }
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
