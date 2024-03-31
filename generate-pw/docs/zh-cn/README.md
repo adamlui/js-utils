@@ -88,7 +88,7 @@ const pw = require('generate-pw');
 
 <br>
 
-**💡 注意：** 要始终导入最新版本（不建议在生产中使用！），请从 jsDelivr URL 中删除 `@1.3.1` 版本标签：`https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
+**💡 注意：** 要始终导入最新版本（不建议在生产中使用！），请从 jsDelivr URL 中删除 `@1.4.0` 版本标签：`https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
 
 <br>
 
