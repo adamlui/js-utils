@@ -16,6 +16,8 @@ Essential JavaScript libraries/utilities for Node.js and the web.
 [Readme](../generate-ip#readme) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
+#
+
 ### [🔒 generate-pw](../generate-pw)
 
 > Randomly generate cryptographically-secure passwords.
@@ -23,11 +25,15 @@ Essential JavaScript libraries/utilities for Node.js and the web.
 [Readme](../generate-pw#readme) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
+#
+
 ### [🖼️ img-to-webp](../img-to-webp)
 
 > Recursively compress all images to WEBPs.
 <br>[Download](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
+
+#
 
 ### [</> minify.js](../minify.js)
 
@@ -35,6 +41,8 @@ Essential JavaScript libraries/utilities for Node.js and the web.
 <br>[Install](../minify.js#-installation) /
 [Readme](../minify.js#readme) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
+
+#
 
 ### [{ } scss-to-css](../scss-to-css)
 
