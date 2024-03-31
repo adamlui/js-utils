@@ -21,6 +21,7 @@
   },
   "scripts": {
     "test": "bash utils/test/minify-cli.test.sh",
+    "build": "node src/cli src dist",
     "bump:patch": "bash utils/bump.sh patch",
     "bump:minor": "bash utils/bump.sh minor",
     "bump:major": "bash utils/bump.sh major",
