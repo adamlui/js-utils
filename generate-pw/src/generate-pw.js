@@ -62,10 +62,10 @@ function generatePassword(options = {}) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(`generatePassword() » ERROR: \`${ key }\` is an invalid option.`);
             printValidOptions(); return;
-        } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean')
+        } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean') {
             return console.error(
                 `generatePassword() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
-        else if (integerOptions.includes(key)) {
+        } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) return console.error(
                 `generatePassword() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
@@ -165,10 +165,10 @@ function generatePasswords(qty, options = {}) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(`generatePasswords() » ERROR: \`${ key }\` is an invalid option.`);
             printValidOptions(); return;
-        } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean')
+        } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean') {
             return console.error(
                 `generatePassword() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
-        else if (integerOptions.includes(key)) {
+        } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) return console.error(
                 `generatePassword() » ERROR: [${ key }] option can only be an integer > 0.`);
