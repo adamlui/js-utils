@@ -62,14 +62,14 @@ function generatePassword(options = {}) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(`generatePassword() » ERROR: \`${ key }\` is an invalid option.`);
             printValidOptions(); return;
-        }
+        } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean')
+            return console.error(
+                `generatePassword() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
         else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) return console.error(
                 `generatePassword() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
-        } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean')
-            return console.error(
-                `generatePassword() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+        }
     }
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
@@ -165,14 +165,14 @@ function generatePasswords(qty, options = {}) {
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(`generatePasswords() » ERROR: \`${ key }\` is an invalid option.`);
             printValidOptions(); return;
-        }
+        } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean')
+            return console.error(
+                `generatePassword() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
         else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) return console.error(
                 `generatePassword() » ERROR: [${ key }] option can only be an integer > 0.`);
-        } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean')
-            return console.error(
-                `generatePassword() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+        }
     }
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
@@ -297,12 +297,12 @@ function validateStrength(password, options = {}) {
         console.info(`validateStrength() » Valid options: [ ${ strValidOptions } ]`);
         console.info(`validateStrength() » If omitted, default settings are: ${ strDefaultOptions }`);
     };
-    if (typeof options !== 'object') {
+    if (typeof options !== 'object') { // validate as obj
         console.error('validateStrength() » ERROR: 2nd arg [options] can only be an object of key/values.');
         console.info(`validateStrength() » Example valid call: ${ exampleCall }`);
         printValidOptions(); return;
     }
-    for (const key in options) {
+    for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
                 `validateStrength() » ERROR: \`${ key }\` is an invalid option.`);
