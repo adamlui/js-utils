@@ -48,7 +48,7 @@
     "stylesheets"
   ],
   "bugs": {
-    "url": "https://github.com/adamlui/js-utils/issues"
+    "url": "https://js-utils.com/issues"
   },
   "dependencies": {
     "sass": "^1.72.0"

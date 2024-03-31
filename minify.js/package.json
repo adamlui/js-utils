@@ -44,7 +44,7 @@
     "utils"
   ],
   "bugs": {
-    "url": "https://github.com/adamlui/js-utils/issues"
+    "url": "https://js-utils.com/issues"
   },
   "dependencies": {
     "uglify-js": "^3.17.4"
