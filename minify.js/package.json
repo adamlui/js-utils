@@ -7,7 +7,7 @@
     "email": "adam@kudoai.com",
     "url": "https://github.com/adamlui"
   },
-  "homepage": "https://github.com/adamlui/js-utils/tree/main/minify.js#readme",
+  "homepage": "https://js-utils.com/minify.js",
   "license": "MIT",
   "main": "minify.js",
   "bin": {

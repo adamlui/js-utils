@@ -7,7 +7,7 @@
     "email": "adam@kudoai.com",
     "url": "https://github.com/adamlui"
   },
-  "homepage": "https://github.com/adamlui/js-utils/tree/main/generate-ip#readme",
+  "homepage": "https://js-utils.com/generate-ip",
   "license": "MIT",
   "main": "dist/generate-ip.min.js",
   "files": [
