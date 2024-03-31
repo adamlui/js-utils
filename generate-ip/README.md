@@ -18,7 +18,7 @@
 
 - IPv3 + IPv4 support
 - No external dependencies
-- Command line accessible
+- Command line usable
 - Browser-compatible
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
