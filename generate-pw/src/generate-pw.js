@@ -150,17 +150,19 @@ function generatePasswords(qty, options = {}) {
         console.info(`generatePasswords() » Example valid call: ${ exampleCall }`);
         printValidOptions(); return;
     }
-    for (const key in options) // validate each key
+    for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(`generatePasswords() » ERROR: \`${ key }\` is an invalid option.`);
             printValidOptions(); return;
         }
-    options.length = parseInt(options.length);
-    if (isNaN(options.length) || options.length < 1) return console.error(
-            'generatePasswords() » ERROR: [length] option can only be an integer > 0.');
-    for (const booleanArgType of ['numbers', 'symbols', 'lowercase', 'uppercase', 'strict'])
-        if (typeof options[booleanArgType] !== 'boolean') return console.error(
-            `generatePasswords() » ERROR: [${ booleanArgType }] option can only be \`true\` or \`false\`.`);
+        else if (['length'].includes(key)) {
+            options[key] = parseInt(options[key], 10);
+            if (isNaN(options[key]) || options[key] < 1) return console.error(
+                `generatePassword() » ERROR: [${ key }] option can only be an integer > 0.`);
+        } else if (['numbers', 'symbols', 'lowercase', 'uppercase', 'strict'].includes(key))
+            if (typeof options[key] !== 'boolean') return console.error(
+                `generatePassword() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+    }
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     // Generate passwords
@@ -193,7 +195,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
         if (!validCharTypes.includes(charType)) { 
             console.error(`strictify() » ERROR: 2nd arg \`${ charType }\` is an invalid character type.`);
             console.info(`strictify() » Valid character types: [ ${ validCharTypes.map(type => `'${ type }'`).join(', ') } ]`);
-            console.error('strictify() » Pass one or more as a string or in an array, or all types will be required.');
+            console.info('strictify() » Pass one or more as a string or in an array, or all types will be required.');
             return;
     }}
 
