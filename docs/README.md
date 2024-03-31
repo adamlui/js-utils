@@ -23,8 +23,8 @@ Essential JavaScript libraries/utilities for Node.js and the web.
 > Randomly generate cryptographically-secure passwords.
 <br>[Install](../generate-pw#-installation) /
 [Readme](../generate-pw#readme) /
-[API usage](../generate-ip#-api-usage) /
-[CLI usage](../generate-ip#-command-line-usage) /
+[API usage](../generate-pw#-api-usage) /
+[CLI usage](../generate-pw#-command-line-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
 ### [🖼️ img-to-webp](../img-to-webp)
@@ -38,8 +38,8 @@ Essential JavaScript libraries/utilities for Node.js and the web.
 > Recursively minify all JavaScript files.
 <br>[Install](../minify.js#-installation) /
 [Readme](../minify.js#readme) /
-[CLI usage](../generate-ip#-command-line-usage) /
-[API usage](../generate-ip#-api-usage) /
+[CLI usage](../minify.js#-command-line-usage) /
+[API usage](../minify.js#-api-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
 ### [{ } scss-to-css](../scss-to-css)
@@ -47,8 +47,8 @@ Essential JavaScript libraries/utilities for Node.js and the web.
 > Recursively compile all SCSS files into minified CSS.
 <br>[Install](../scss-to-css#-installation) /
 [Readme](../scss-to-css#readme) /
-[CLI usage](../generate-ip#-command-line-usage) /
-[API usage](../generate-ip#-api-usage) /
+[CLI usage](../scss-to-css#-command-line-usage) /
+[API usage](../scss-to-css#-api-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
