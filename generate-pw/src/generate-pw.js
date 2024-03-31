@@ -41,8 +41,11 @@ function generatePassword(options = {}) {
     };
 
     // Validate options
-    const strDefaultOptions = JSON.stringify(defaultOptions),
-          strValidOptions = Object.keys(defaultOptions).join(', ');          
+    const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
+        .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
+        .replace(/"/g, '\'') // replace double quotes w/ single quotes
+        .replace(/\n\s*/g, ' '); // condense to single line
+    const strValidOptions = Object.keys(defaultOptions).join(', ');          
     const printValidOptions = () => {
         console.info(`generatePassword() » Valid options: [ ${ strValidOptions } ]`);
         console.info(`generatePassword() » If omitted, default settings are: ${ strDefaultOptions }`);
@@ -139,8 +142,11 @@ function generatePasswords(qty, options = {}) {
         'generatePasswords() » ERROR: 1st arg <qty> can only be an integer > 0.');
 
     // Validate options
-    const strDefaultOptions = JSON.stringify(defaultOptions),
-          strValidOptions = Object.keys(defaultOptions).join(', ');          
+    const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
+        .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
+        .replace(/"/g, '\'') // replace double quotes w/ single quotes
+        .replace(/\n\s*/g, ' '); // condense to single line
+    const strValidOptions = Object.keys(defaultOptions).join(', ');          
     const printValidOptions = () => {
         console.info(`generatePasswords() » Valid options: [ ${ strValidOptions } ]`);
         console.info(`generatePasswords() » If omitted, default settings are: ${ strDefaultOptions }`);
@@ -200,8 +206,11 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     }}
 
     // Validate options
-    const strDefaultOptions = JSON.stringify(defaultOptions),
-          strValidOptions = Object.keys(defaultOptions).join(', ');          
+    const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
+        .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
+        .replace(/"/g, '\'') // replace double quotes w/ single quotes
+        .replace(/\n\s*/g, ' '); // condense to single line
+    const strValidOptions = Object.keys(defaultOptions).join(', ');          
     const printValidOptions = () => {
         console.info(`strictify() » Valid options: [ ${ strValidOptions } ]`);
         console.info(`strictify() » If omitted, default settings are: ${ strDefaultOptions }`);
@@ -274,8 +283,11 @@ function validateStrength(password, options = {}) {
         'validateStrength() » ERROR: 1st arg <password> must be a string.');
 
     // Validate options
-    const strDefaultOptions = JSON.stringify(defaultOptions),
-          strValidOptions = Object.keys(defaultOptions).join(', ');          
+    const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
+        .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
+        .replace(/"/g, '\'') // replace double quotes w/ single quotes
+        .replace(/\n\s*/g, ' '); // condense to single line
+    const strValidOptions = Object.keys(defaultOptions).join(', ');          
     const printValidOptions = () => {
         console.info(`validateStrength() » Valid options: [ ${ strValidOptions } ]`);
         console.info(`validateStrength() » If omitted, default settings are: ${ strDefaultOptions }`);
