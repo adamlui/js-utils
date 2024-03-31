@@ -47,7 +47,7 @@ $ npm install generate-pw
 
 ### <img height=18 src="https://i.imgur.com/JIeAdsr.png"> Node.js
 
-#### ES module:
+#### ES module*:
 
 ```js
 import * as pw from 'generate-pw';
@@ -58,6 +58,8 @@ import * as pw from 'generate-pw';
 ```js
 const pw = require('generate-pw');
 ```
+
+###### _*需要 Node.js 版本 14 或更高版本_
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/JSEb19A.png"><img width=16 src="https://i.imgur.com/5VPxf9y.png"></picture> Web
 

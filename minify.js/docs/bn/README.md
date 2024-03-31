@@ -146,7 +146,7 @@ $ minify-js input_folder output_folder
 
 আপনি একটি ECMAScript মডিউল বা CommonJS মডিউল উভয় হিসাবে, এর API পদ্ধতিগুলি ব্যবহার করতে আপনার অ্যাপে **minify.js** আমদানি করতে পারেন৷
 
-#### ESM:
+#### ESM*:
 
 ```js
 import * as minifyJS from '@adamlui/minify.js';
@@ -157,6 +157,8 @@ import * as minifyJS from '@adamlui/minify.js';
 ```js
 const minifyJS = require('@adamlui/minify.js');
 ```
+
+###### _*Node.js সংস্করণ 14 বা উচ্চতর প্রয়োজন_
 
 #
 

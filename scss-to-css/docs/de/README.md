@@ -151,7 +151,7 @@ Info-Befehle:
 
 Sie können auch **scss-to-css** in Ihre App importieren, um deren API-Methoden zu verwenden, sowohl als ECMAScript-Modul als auch als CommonJS-Modul.
 
-#### ESM:
+#### ESM*:
 
 ```js
 import * as scssToCSS from '@adamlui/scss-to-css';
@@ -162,6 +162,8 @@ import * as scssToCSS from '@adamlui/scss-to-css';
 ```js
 const scssToCSS = require('@adamlui/scss-to-css');
 ```
+
+###### _*Node.js Version 14 oder höher erforderlich_
 
 #
 

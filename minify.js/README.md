@@ -145,7 +145,7 @@ Info commands:
 
 You can also import **minify.js** into your app to use its API methods, both as an ECMAScript module or a CommonJS module.
 
-#### ESM:
+#### ESM*:
 
 ```js
 import * as minifyJS from '@adamlui/minify.js';
@@ -156,6 +156,8 @@ import * as minifyJS from '@adamlui/minify.js';
 ```js
 const minifyJS = require('@adamlui/minify.js');
 ```
+
+###### _*Node.js version 14 or higher required_
 
 #
 

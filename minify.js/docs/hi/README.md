@@ -146,7 +146,7 @@ $ minify-js input_folder output_folder
 
 आप API विधियों का उपयोग करने के लिए अपने ऐप में **minify.js** को ECMAScript मॉड्यूल या CommonJS मॉड्यूल दोनों के रूप में आयात कर सकते हैं।
 
-#### ESM:
+#### ESM*:
 
 ```js
 import * as minifyJS from '@adamlui/minify.js';
@@ -157,6 +157,8 @@ import * as minifyJS from '@adamlui/minify.js';
 ```js
 const minifyJS = require('@adamlui/minify.js');
 ```
+
+###### _*Node.js संस्करण 14 या उच्चतर आवश्यक_
 
 #
 

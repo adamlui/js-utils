@@ -39,7 +39,7 @@ $ npm install generate-ip
 
 ### <img height=18 src="https://i.imgur.com/JIeAdsr.png"> Node.js
 
-#### ES module:
+#### ES module*:
 
 ```js
 import { ipv4, ipv6 } from 'generate-ip';
@@ -50,6 +50,8 @@ import { ipv4, ipv6 } from 'generate-ip';
 ```js
 const { ipv4, ipv6 } = require('generate-ip');
 ```
+
+###### _*Node.js version 14 or higher required_
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/JSEb19A.png"><img width=16 src="https://i.imgur.com/5VPxf9y.png"></picture> Web
 

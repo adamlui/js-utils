@@ -151,7 +151,7 @@ $ scss-to-css input_folder output_folder
 
 तुम्ही ECMAScript मॉड्यूल किंवा CommonJS मॉड्यूल या दोन्हीप्रमाणे, API पद्धती वापरण्यासाठी तुमच्या ॲपमध्ये **scss-to-css** देखील इंपोर्ट करू शकता.
 
-#### ESM:
+#### ESM*:
 
 ```js
 import * as scssToCSS from '@adamlui/scss-to-css';
@@ -162,6 +162,8 @@ import * as scssToCSS from '@adamlui/scss-to-css';
 ```js
 const scssToCSS = require('@adamlui/scss-to-css');
 ```
+
+###### _*Node.js आवृत्ती 14 किंवा उच्च आवश्यक_
 
 #
 

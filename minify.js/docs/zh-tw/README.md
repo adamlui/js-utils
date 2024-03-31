@@ -144,7 +144,7 @@ $ minify-js input_folder output_folder
 
 您也可以將 **minify.js** 匯入您的應用程式以使用其 API 方法，無論是作為 ECMAScript 模組還是 CommonJS 模組。
 
-#### ESM:
+#### ESM*:
 
 ```js
 import * as minifyJS from '@adamlui/minify.js';
@@ -155,6 +155,8 @@ import * as minifyJS from '@adamlui/minify.js';
 ```js
 const minifyJS = require('@adamlui/minify.js');
 ```
+
+###### _*需要 Node.js 版本 14 或更高版本_
 
 #
 
