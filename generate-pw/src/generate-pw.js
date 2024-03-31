@@ -192,8 +192,8 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     for (const charType of requiredCharTypes) {
         if (!validCharTypes.includes(charType)) { 
             console.error(`strictify() » ERROR: 2nd arg \`${ charType }\` is an invalid character type.`);
-            console.info(`strictify() » Valid character types: [ ${ validCharTypes.join(', ') } ]`);
-            console.error('strictify() » Note: If omitted, all character types will be required.');
+            console.info(`strictify() » Valid character types: [ ${ validCharTypes.map(type => `'${ type }'`).join(', ') } ]`);
+            console.error('strictify() » Pass one or more as a string or in an array, or all types will be required.');
             return;
     }}
 
