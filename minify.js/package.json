@@ -10,6 +10,11 @@
   "homepage": "https://js-utils.com/minify.js",
   "license": "MIT",
   "main": "dist/minify.min.js",
+  "files": [
+    "dist",
+    "docs/",
+    "!docs/*/"
+  ],
   "bin": {
     "minifyjs": "dist/cli.min.js",
     "minify-js": "dist/cli.min.js"
