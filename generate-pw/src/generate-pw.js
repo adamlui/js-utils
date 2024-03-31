@@ -24,7 +24,9 @@ const charsets = {
 
 // Define MAIN functions
 
-function generatePassword(options = {}) { 
+function generatePassword(options = {}) {
+
+    const exampleCall = 'generatePassword({ verbose: false, numbers: true })';
     const defaultOptions = {
         verbose: true,   // enable logging
         length: 8,       // length of password
@@ -39,8 +41,7 @@ function generatePassword(options = {}) {
     };
 
     // Validate options
-    const exampleCall = 'generatePassword({ verbose: false, numbers: true })',
-          strDefaultOptions = JSON.stringify(defaultOptions),
+    const strDefaultOptions = JSON.stringify(defaultOptions),
           strValidOptions = Object.keys(defaultOptions).join(', ');          
     const printValidOptions = () => {
         console.info(`generatePassword() » Valid options: [ ${ strValidOptions } ]`);
@@ -118,6 +119,8 @@ function generatePassword(options = {}) {
 }
 
 function generatePasswords(qty, options = {}) {
+
+    const exampleCall = 'generatePasswords(3, { verbose: false, symbols: true })';
     const defaultOptions = {
         verbose: true,   // enable logging
         length: 8,       // length of password
@@ -136,8 +139,7 @@ function generatePasswords(qty, options = {}) {
         'generatePasswords() » ERROR: 1st arg <qty> can only be an integer > 0.');
 
     // Validate options
-    const exampleCall = 'generatePasswords(3, { verbose: false, symbols: true })',
-          strDefaultOptions = JSON.stringify(defaultOptions),
+    const strDefaultOptions = JSON.stringify(defaultOptions),
           strValidOptions = Object.keys(defaultOptions).join(', ');          
     const printValidOptions = () => {
         console.info(`generatePasswords() » Valid options: [ ${ strValidOptions } ]`);
@@ -175,6 +177,8 @@ function generatePasswords(qty, options = {}) {
 }
 
 function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', 'upper'], options = {}) {
+
+    const exampleCall = 'strictify(\'pa55word\', [\'symbol\', \'upper\'], { verbose: false })';
     const defaultOptions = {
         verbose: true // enable logging
     };
@@ -196,8 +200,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     }}
 
     // Validate options
-    const exampleCall = 'strictify(\'pa55word\', [\'symbol\', \'upper\'], { verbose: false })',
-          strDefaultOptions = JSON.stringify(defaultOptions),
+    const strDefaultOptions = JSON.stringify(defaultOptions),
           strValidOptions = Object.keys(defaultOptions).join(', ');          
     const printValidOptions = () => {
         console.info(`strictify() » Valid options: [ ${ strValidOptions } ]`);
@@ -261,7 +264,9 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
 }
 
 function validateStrength(password, options = {}) {
-    const strengthCriteria = { minLength: 8, minLower: 1, minUpper: 1, minNumber: 1, minSymbol: 1 };
+
+    const exampleCall = 'validateStrength(\'pa55word\', { verbose: false })',
+          strengthCriteria = { minLength: 8, minLower: 1, minUpper: 1, minNumber: 1, minSymbol: 1 };
     const defaultOptions = {
         verbose: true // enable logging
     };
@@ -271,8 +276,7 @@ function validateStrength(password, options = {}) {
         'validateStrength() » ERROR: 1st arg <password> must be a string.');
 
     // Validate options
-    const exampleCall = 'validateStrength(\'pa55word\', { verbose: false })',
-          strDefaultOptions = JSON.stringify(defaultOptions),
+    const strDefaultOptions = JSON.stringify(defaultOptions),
           strValidOptions = Object.keys(defaultOptions).join(', ');          
     const printValidOptions = () => {
         console.info(`validateStrength() » Valid options: [ ${ strValidOptions } ]`);
