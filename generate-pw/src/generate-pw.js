@@ -178,10 +178,8 @@ function generatePasswords(qty, options = {}) {
 
 function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', 'upper'], options = {}) {
 
-    const exampleCall = 'strictify(\'pa55word\', [\'symbol\', \'upper\'], { verbose: false })';
-    const defaultOptions = {
-        verbose: true // enable logging
-    };
+    const exampleCall = 'strictify(\'pa55word\', [\'symbol\', \'upper\'], { verbose: false })',
+          defaultOptions = { verbose: true /* enable logging */ };
 
     // Validate password
     if (typeof password !== 'string') return console.error(
@@ -266,10 +264,8 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
 function validateStrength(password, options = {}) {
 
     const exampleCall = 'validateStrength(\'pa55word\', { verbose: false })',
-          strengthCriteria = { minLength: 8, minLower: 1, minUpper: 1, minNumber: 1, minSymbol: 1 };
-    const defaultOptions = {
-        verbose: true // enable logging
-    };
+          strengthCriteria = { minLength: 8, minLower: 1, minUpper: 1, minNumber: 1, minSymbol: 1 },
+          defaultOptions = { verbose: true /* enable logging */ };
 
     // Validate password
     if (typeof password !== 'string') return console.error(
