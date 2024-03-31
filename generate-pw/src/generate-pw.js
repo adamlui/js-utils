@@ -46,7 +46,9 @@ function generatePassword(options = {}) {
         .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
         .replace(/"/g, '\'') // replace double quotes w/ single quotes
         .replace(/\n\s*/g, ' '); // condense to single line
-    const strValidOptions = Object.keys(defaultOptions).join(', ');          
+    const strValidOptions = Object.keys(defaultOptions).join(', '),
+          booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] === 'boolean'),
+          integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]));
     const printValidOptions = () => {
         console.info(`generatePassword() » Valid options: [ ${ strValidOptions } ]`);
         console.info(`generatePassword() » If omitted, default settings are: ${ strDefaultOptions }`);
@@ -61,12 +63,12 @@ function generatePassword(options = {}) {
             console.error(`generatePassword() » ERROR: \`${ key }\` is an invalid option.`);
             printValidOptions(); return;
         }
-        else if (['length', 'qty'].includes(key)) {
+        else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) return console.error(
                 `generatePassword() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
-        } else if (['numbers', 'symbols', 'lowercase', 'uppercase', 'strict'].includes(key))
-            if (typeof options[key] !== 'boolean') return console.error(
+        } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean')
+            return console.error(
                 `generatePassword() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
     }
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
@@ -147,7 +149,9 @@ function generatePasswords(qty, options = {}) {
         .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
         .replace(/"/g, '\'') // replace double quotes w/ single quotes
         .replace(/\n\s*/g, ' '); // condense to single line
-    const strValidOptions = Object.keys(defaultOptions).join(', ');          
+    const strValidOptions = Object.keys(defaultOptions).join(', '),
+          booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] === 'boolean'),
+          integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]));
     const printValidOptions = () => {
         console.info(`generatePasswords() » Valid options: [ ${ strValidOptions } ]`);
         console.info(`generatePasswords() » If omitted, default settings are: ${ strDefaultOptions }`);
@@ -162,12 +166,12 @@ function generatePasswords(qty, options = {}) {
             console.error(`generatePasswords() » ERROR: \`${ key }\` is an invalid option.`);
             printValidOptions(); return;
         }
-        else if (['length'].includes(key)) {
+        else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) return console.error(
                 `generatePassword() » ERROR: [${ key }] option can only be an integer > 0.`);
-        } else if (['numbers', 'symbols', 'lowercase', 'uppercase', 'strict'].includes(key))
-            if (typeof options[key] !== 'boolean') return console.error(
+        } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean')
+            return console.error(
                 `generatePassword() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
     }
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
