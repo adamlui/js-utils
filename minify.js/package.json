@@ -9,10 +9,10 @@
   },
   "homepage": "https://js-utils.com/minify.js",
   "license": "MIT",
-  "main": "src/minify.js",
+  "main": "dist/minify.min.js",
   "bin": {
-    "minifyjs": "src/cli.js",
-    "minify-js": "src/cli.js"
+    "minifyjs": "dist/cli.min.js",
+    "minify-js": "dist/cli.min.js"
   },
   "directories": {
     "lib": ".",
