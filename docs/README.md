@@ -18,8 +18,6 @@ Essential JavaScript libraries/utilities for Node.js and the web.
 [CLI usage](../generate-ip#-command-line-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
-#
-
 ### [🔒 generate-pw](../generate-pw)
 
 > Randomly generate cryptographically-secure passwords.
@@ -29,15 +27,11 @@ Essential JavaScript libraries/utilities for Node.js and the web.
 [CLI usage](../generate-ip#-command-line-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
-#
-
 ### [🖼️ img-to-webp](../img-to-webp)
 
 > Recursively compress all images to WEBPs.
 <br>[Download](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
-
-#
 
 ### [</> minify.js](../minify.js)
 
@@ -47,8 +41,6 @@ Essential JavaScript libraries/utilities for Node.js and the web.
 [CLI usage](../generate-ip#-command-line-usage) /
 [API usage](../generate-ip#-api-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
-
-#
 
 ### [{ } scss-to-css](../scss-to-css)
 
