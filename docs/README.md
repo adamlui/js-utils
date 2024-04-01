@@ -43,7 +43,7 @@ Essential JavaScript libraries/utilities for Node.js and the web.
 [API usage](../minify.js#-api-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
-### [{ } scss-to-css](../scss-to-css)
+### [{ } scss-to-css](../scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Recursively compile all SCSS files into minified CSS.
 <br>[Install](../scss-to-css#-installation) /
