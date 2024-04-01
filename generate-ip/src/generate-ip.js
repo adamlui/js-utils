@@ -72,13 +72,16 @@ const ipv4 = {
             for (let i = 0; i < 4; i++) segments.push(randomInt(0, 256));
             ips.push(segments.join('.'));
         }
+        const ipResult = options.qty > 1 ? ips : ips[0];
 
         // Log/return final result
-        const ipResult = options.qty > 1 ? ips : ips[0];
         if (options.verbose) {
-            console.info(`ipv4.generate() » IPv4 address${ options.qty > 1 ? 'es' : '' } generated!`);
-            console.info(options.qty === 1 ? `ipv4.generate() » ${ ipResult }`
-                                           : 'ipv4.generate() » Check returned array.' );
+            console.info(
+                `ipv4.generate() » IPv4 address${ options.qty > 1 ? 'es' : '' } generated!`);
+            if (options.qty === 1) console.info(
+                `ipv4.generate() » ${ ipResult }`);
+            else if (typeof require !== 'undefined' && !require.main.filename.endsWith('cli.js')) console.info(
+                'ipv4.generate() » Check returned array.' );
         }
         return ipResult;
     },

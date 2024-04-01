@@ -12,9 +12,8 @@ const nc = '\x1b[0m',    // no color
 // Load settings from ARGS
 const config = {};
 const argRegex = {
-    flags: {
-        'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
-    },
+    paramOptions: { 'qty': /^--?qu?a?n?ti?t?y=.*$/ },
+    flags: { 'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/ },
     infoCmds: {
         'help': /^--?h(?:elp)?$/,
         'version': /^--?ve?r?s?i?o?n?$/
@@ -22,13 +21,17 @@ const argRegex = {
 };
 process.argv.forEach(arg => {
     if (!arg.startsWith('-')) return;
-    const matchedFlag = Object.keys(argRegex.flags).find(flag => argRegex.flags[flag].test(arg)),
+    const matchedParamOption = Object.keys(argRegex.paramOptions).find(option => argRegex.paramOptions[option].test(arg)),
+          matchedFlag = Object.keys(argRegex.flags).find(flag => argRegex.flags[flag].test(arg)),
           matchedInfoCmd = Object.keys(argRegex.infoCmds).find(cmd => argRegex.infoCmds[cmd].test(arg));
     if (matchedFlag) config[matchedFlag] = true;
-    else if (!matchedInfoCmd) {
+    else if (matchedParamOption) {
+        const value = arg.split('=')[1];
+        config[matchedParamOption] = parseInt(value) || value;
+    } else if (!matchedInfoCmd) {
         console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
         console.info(`\n${by}Valid arguments are below.${nc}`);
-        printHelpSections(['flags', 'infoCmds']);
+        printHelpSections(['paramOptions', 'flags', 'infoCmds']);
         process.exit(1);
 }});
 
@@ -39,18 +42,29 @@ if (process.argv.some(arg => argRegex.infoCmds.help.test(arg))) printHelpSection
 else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg)))
     console.info('v' + require('./package.json').version);
 
-else { // log/copy RESULT
-    const address = ipv4.generate({ verbose: !config.quietMode });
-    if (!config.quietMode) console.info('\nCopying to clipboard...');
-    copyToClipboard(address);
+else { // log/copy RESULT(S)
+    if (config.qty && (isNaN(config.qty) || config.qty < 1)) {
+        console.error(`\n${br}Error: [qty] argument can only be > 0.${nc}`);
+        process.exit(1);
+    }
+    const ipResult = ipv4.generate({ qty: config.qty || 1, verbose: !config.quietMode });
+    if (!config.quietMode) {
+        if (config.qty > 1) console.info(`[ ${ ipResult.join(', ') } ]`);
+        console.info('\nCopying to clipboard...');
+    }
+    copyToClipboard(Array.isArray(ipResult) ? ipResult.join('\n') : ipResult);
 }
 
-// Define functions
+// Define FUNCTIONS
 
-function printHelpSections(includeSections = ['cmdFormat', 'flags', 'infoCmds']) {
+function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'flags', 'infoCmds']) {
     const helpSections = {
         'cmdFormat': [
             `\n${by}generate-ip [options|commands]${nc}`
+        ],
+        'paramOptions': [
+            '\nParameter options:',
+            ' --qty=n                     Generate n IP address(es).'
         ],
         'flags': [
             '\nBoolean options:',

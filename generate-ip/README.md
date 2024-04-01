@@ -278,7 +278,9 @@ When installed [globally](#-installation), **generate-ip** can also be used from
 $ generate-ip
 ```
 
-Generated IP is logged to the console + copied to the clipboard.
+Generated result is logged to the console + copied to clipboard.
+
+📝 **Note:** To generate multiple IP addresses, pass `--qty=n` where `n` is the number of IPs to generate.
 
 #
 
@@ -286,6 +288,9 @@ Generated IP is logged to the console + copied to the clipboard.
 
 ```
 Parameter options:
+ --qty=n                     Generate n IP address(es).
+
+Boolean options:
  -q, --quiet                 Suppress all logging except errors.
 
 Info commands:
