@@ -31,9 +31,9 @@ npm version --no-git-tag-version "$NEW_VERSION"
 # Bump versions in READMEs
 echo -e "\nBumping versions in READMEs..."
 find . -name 'README.md' \
-  -exec sed -i -E "s~[0-9.]+(-.*logo=icinga)~$NEW_VERSION\1~" {} + \
-  -exec sed -i -E "s~(releases/tag/[^/]+-)[0-9.]+~\1$NEW_VERSION~g" {} + \
-  -exec sed -i -E "s~@([0-9]+\.[0-9]+\.[0-9]+)~@$NEW_VERSION~g" {} +
+  -exec sed -i -E "s~[0-9.]+(-.*logo=icinga)~$NEW_VERSION\1~" {} + `# Latest Build shield src` \
+  -exec sed -i -E "s~(releases/tag/[^/]+-)[0-9.]+~\1$NEW_VERSION~g" {} + `# Latest Build shield link` \
+  -exec sed -i -E "s~@([0-9]+\.[0-9]+\.[0-9]+)~@$NEW_VERSION~g" {} + # jsDelivr ver tags
 echo "v$NEW_VERSION"
 
 # Commit to Git
