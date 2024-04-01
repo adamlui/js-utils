@@ -1,4 +1,4 @@
-name: Auto-update npm downloads shield in root README
+name: Auto-update npm downloads + jsDelivr hits shields in root README
 
 on:
   schedule:
@@ -70,17 +70,18 @@ jobs:
           done ; echo -e "\nTotal downloads: $total_downloads"
 
           # Format total
-          formatted_total=$(format_total "$total_downloads")
-          echo "Formatted total: $formatted_total"
+          formatted_total_downloads=$(format_total "$total_downloads")
+          echo "Formatted total downloads: $formatted_total_downloads"
 
           # Store for update step next
-          echo "total_downloads=$formatted_total" >> $GITHUB_OUTPUT
+          echo "total_downloads=$formatted_total_downloads" >> $GITHUB_OUTPUT
       
       - name: Update README shield
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           total_downloads=$(echo ${{ steps.get-downloads.outputs.total_downloads }})
-          sed -i "s/badge\/Downloads-[0-9.km]\+-/badge\/Downloads-$total_downloads-/Ig" docs/README.md
+          if [ "$total_downloads" != "0" ]; then
+            sed -i "s/badge\/Downloads-[0-9.km]\+-/badge\/Downloads-$total_downloads-/Ig" docs/README.md ; fi
 
       - name: Push to adamlui/js-utils
         uses: stefanzweifel/git-auto-commit-action@v4
