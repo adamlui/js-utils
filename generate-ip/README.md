@@ -1,6 +1,6 @@
 # > generate-ip
 
-### Randomly generate, format, and validate IP addresses.
+### Randomly generate, format, and validate IPv4/IPv6 addresses.
 
 <a href="#%EF%B8%8F-mit-license"><img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/generate-ip-2.2.0"><img height=31 src="https://img.shields.io/badge/Latest_Build-2.2.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
@@ -15,7 +15,7 @@
 
 ## 💡 About
 
-**generate-ip** is a lightweight, easy-to-use library that allows you to randomly generate, format & validate IPv4/IPv6 address(es).
+**generate-ip** is a lightweight, easy-to-use library that allows you to randomly generate, format & validate IP address(es).
 
 - **No external dependencies —** Only built-in crypto methods used for secure randomization
 - **Multi-protocol support —** IPv4 + IPv6 addresses supported
