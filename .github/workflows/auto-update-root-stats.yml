@@ -64,7 +64,7 @@ jobs:
             encoded_pkg="${pkg//@/%40}" # encode @
             encoded_pkg="${encoded_pkg//\//%2F}" # encode /
             pkg_downloads=$(curl -s "https://npm-stat.link/$encoded_pkg" |
-              sed -n 's|.*(all time).*\?dd>\([0-9.KM]\+\)<.*|\1|Ip')
+              sed -n -E 's|.*\(all time\).*?dd>([0-9.KM]+)<.*|\1|Ip')
             pkg_downloads=$(expand_num "$pkg_downloads")
             echo "$pkg downloads: $pkg_downloads"
             total_downloads=$((total_downloads + pkg_downloads))
@@ -73,7 +73,7 @@ jobs:
           # Fetch/sum jsDelivr hits
           for pkg in "${jsd_packages[@]}" ; do
             pkg_hits=$(curl -s "https://img.shields.io/jsdelivr/npm/hm/$pkg.svg" |
-              sed -n 's|.*<title>jsdelivr: \([0-9,.km]\+\).*</title>.*|\1|Ip')
+              sed -n -E 's|.*<title>jsdelivr: ([0-9,.km]+).*</title>.*|\1|Ip')
             pkg_hits=$(expand_num "$pkg_hits")
             echo "$pkg jsDelivr hits: $pkg_hits"
             total_hits=$((total_hits + pkg_hits))
@@ -95,9 +95,9 @@ jobs:
           total_downloads=$(echo ${{ steps.get-downloads.outputs.total_downloads }})
           total_hits=$(echo ${{ steps.get-downloads.outputs.total_hits }})
           if [ "$total_downloads" != "0" ]; then
-            sed -i "s|\(badge/Downloads-\)[0-9.km]\+-|\1$total_downloads-|Ig" docs/README.md ; fi
+            sed -i -E "s|(badge/Downloads-)[0-9.km]+-|\1$total_downloads-|Ig" docs/README.md ; fi
           if [ "$total_hits" != "0" ]; then
-            sed -i "s|\(badge/jsDelivr_Hits-\)[0-9.km]\+|\1$total_hits|Ig" docs/README.md ; fi
+            sed -i -E "s|(badge/jsDelivr_Hits-)[0-9.km]+|\1$total_hits|Ig" docs/README.md ; fi
 
       - name: Push to adamlui/js-utils
         uses: stefanzweifel/git-auto-commit-action@v4
