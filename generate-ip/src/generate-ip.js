@@ -32,7 +32,9 @@ const ipv4 = {
             .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
             .replace(/"/g, '\'') // replace double quotes w/ single quotes
             .replace(/\n\s*/g, ' '); // condense to single line
-        const strValidOptions = Object.keys(defaultOptions).join(', ');
+        const strValidOptions = Object.keys(defaultOptions).join(', '),
+              booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] === 'boolean'),
+              integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]));
         const printValidOptions = () => {
             console.info(`ipv4.generate() » Valid options: [ ${ strValidOptions } ]`);
             console.info(`ipv4.generate() » If omitted, default settings are: ${ strDefaultOptions }`);
@@ -47,9 +49,14 @@ const ipv4 = {
                 console.error(
                     `ipv4.generate() » ERROR: \`${ key }\` is an invalid option.`);
                 printValidOptions(); return;
-            } else if (typeof options[key] !== 'boolean')
+            } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean') {
                 return console.error(
                     `ipv4.generate() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+            } else if (integerOptions.includes(key)) {
+                options[key] = parseInt(options[key], 10);
+                if (isNaN(options[key]) || options[key] < 1) return console.error(
+                    `ipv4.generate() » ERROR: [${ key }] option can only be an integer > 0.`);
+            }
         }
         options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
