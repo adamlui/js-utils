@@ -30,17 +30,17 @@ npm version --no-git-tag-version "$NEW_VERSION"
 
 # Bump versions in READMEs
 echo -e "\nBumping versions in READMEs..."
+PACKAGE_NAME=$(node -pe "require('./package.json').name" | sed -e 's/^@[a-zA-Z0-9-]*\///' -e 's/^@//')
 find . -name 'README.md' \
   -exec sed -i -E "s~[0-9.]+(-.*logo=icinga)~$NEW_VERSION\1~" {} + `# Latest Build shield src` \
-  -exec sed -i -E "s~(releases/tag/[^/]+-)[0-9.]+~\1$NEW_VERSION~g" {} + `# Latest Build shield link` \
-  -exec sed -i -E "s~@([0-9]+\.[0-9]+\.[0-9]+)~@$NEW_VERSION~g" {} + # jsDelivr ver tags
+  -exec sed -i -E "s~@([0-9]+\.[0-9]+\.[0-9]+)~@$NEW_VERSION~g" {} + `# jsDelivr ver tags` \
+  -exec sed -i -E "s~($PACKAGE_NAME-)[0-9]+\.[0-9]+\.[0-9]+~\1$NEW_VERSION~g" {} + # Latest Build link + Unpacked Size link/src
 echo "v$NEW_VERSION"
 
 # Commit to Git
 echo -e "\nCommitting changes...\n"
 find . -name "README.md" -exec git add {} +
 git add package*.json
-PACKAGE_NAME=$(node -pe "require('./package.json').name" | sed -e 's/^@[a-zA-Z0-9-]*\///' -e 's/^@//')
 git commit -n -m "Bumped $PACKAGE_NAME versions to $NEW_VERSION"
 
 # Push to GiHub
