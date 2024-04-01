@@ -31,10 +31,15 @@ npm version --no-git-tag-version "$NEW_VERSION"
 # Bump versions in READMEs
 echo -e "\nBumping versions in READMEs..."
 PACKAGE_NAME=$(node -pe "require('./package.json').name" | sed -e 's/^@[a-zA-Z0-9-]*\///' -e 's/^@//')
-find . -name 'README.md' \
-  -exec sed -i -E "s~[0-9.]+(-.*logo=icinga)~$NEW_VERSION\1~" {} + `# Latest Build shield src` \
-  -exec sed -i -E "s~@([0-9]+\.[0-9]+\.[0-9]+)~@$NEW_VERSION~g" {} + `# jsDelivr ver tags` \
-  -exec sed -i -E "s~($PACKAGE_NAME-)[0-9]+\.[0-9]+\.[0-9]+~\1$NEW_VERSION~g" {} + # Latest Build link + Unpacked Size link/src
+sed_actions=(
+    # Latest Build shield src
+    -exec sed -i -E "s~[0-9.]+(-.*logo=icinga)~$NEW_VERSION\1~" {} +
+    # jsDelivr ver tags in import section
+    -exec sed -i -E "s~@([0-9]+\.[0-9]+\.[0-9]+)~@$NEW_VERSION~g" {} +
+    # Latest Build shield link + Unpacked Size shield link/src
+    -exec sed -i -E "s~($PACKAGE_NAME-)[0-9]+\.[0-9]+\.[0-9]+~\1$NEW_VERSION~g" {} +
+)
+find . -name 'README.md' "${sed_actions[@]}"
 echo "v$NEW_VERSION"
 
 # Commit to Git
