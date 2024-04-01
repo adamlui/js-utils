@@ -78,10 +78,8 @@ const ipv4 = {
 
     validate: function(address, options = {}) {
 
-        const exampleCall = 'ipv4.validate(\'0.0.255.255\', { verbose: false })';
-        const defaultOptions = {
-            verbose: true // enable logging
-        };
+        const exampleCall = 'ipv4.validate(\'0.0.255.255\', { verbose: false })',
+              defaultOptions = { verbose: true /* enable logging */ };
 
         // Validate address as arg
         if (typeof address !== 'string') return console.error(
@@ -291,10 +289,8 @@ const ipv6 = {
 
     validate: function(address, options = {}) {
 
-        const exampleCall = 'ipv6.validate(\'0:0:0:0:0:ffff:192.1.56.10/96\', { verbose: false })';
-        const defaultOptions = {
-            verbose: true // enable logging
-        };
+        const exampleCall = 'ipv6.validate(\'0:0:0:0:0:ffff:192.1.56.10/96\', { verbose: false })',
+              defaultOptions = { verbose: true /* enable logging */ };
 
         // Validate address as arg
         if (typeof address !== 'string') return console.error(
