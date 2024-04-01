@@ -47,7 +47,7 @@ else { // log/copy RESULT
 
 // Define functions
 
-function printHelpSections(includeSections = ['cmdFormat', 'formatOptions', 'infoCmds']) {
+function printHelpSections(includeSections = ['cmdFormat', 'flags', 'infoCmds']) {
     const helpSections = {
         'cmdFormat': [
             `\n${by}generate-ip [options|commands]${nc}`
