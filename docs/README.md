@@ -12,7 +12,7 @@ Essential JavaScript libraries/utilities for Node.js and the web.
 
 ### <img height=21px src="https://i.imgur.com/kvf7fXm.png"></img> [generate-ip](../generate-ip)
 
-> Randomly generate IPv4 and IPv6 addresses.
+> Randomly generate, format, and validate IP addresses.
 <br>[Install](../generate-ip#-installation) /
 [Readme](../generate-ip#readme) /
 [API usage](../generate-ip#-api-usage) /
