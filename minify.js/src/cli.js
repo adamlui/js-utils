@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 // Import LIBS
-const fs = require('fs'),
-      path = require('path'),
-      minifyJS = require('./minify');
+const minifyJS = require(__dirname.match(/src/) ? './minify' : './minify.min'),
+      fs = require('fs'),
+      path = require('path');
 
 // Init UI colors
 const nc = '\x1b[0m',    // no color
