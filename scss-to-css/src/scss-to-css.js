@@ -51,7 +51,7 @@ function findSCSS(searchDir, options = {}) {
     if (!options.isRecursing && options.verbose) {
             console.info('findSCSS() » Search complete! '
               + ( scssFiles.length === 0 ? 'No' : scssFiles.length )
-              + ` file${ scssFiles.length > 1 ? 's' : '' } found.`);
+              + ` file${ scssFiles.length == 0 || scssFiles.length > 1 ? 's' : '' } found.`);
         if (findSCSS.caller.name !== 'compile' && !require.main.filename.endsWith('cli.js'))
             console.info('findSCSS() » Check returned array.');
     }
