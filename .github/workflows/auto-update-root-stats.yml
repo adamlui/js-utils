@@ -104,6 +104,6 @@ jobs:
           add_options: --all
           commit_user_email: auto-sync@kudoai.com
           commit_author: kudo-sync-bot <auto-sync@kudoai.com>
-          commit_message: Updated npm downloads shield counter
+          commit_message: Updated downloads/hits shield counters
           file_pattern: docs/README.md
           repository: adamlui/js-utils
