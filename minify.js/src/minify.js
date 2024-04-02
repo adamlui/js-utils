@@ -28,30 +28,8 @@ function findJS(searchDir, options = {}) {
            return;
     }}
 
-    // Validate options
-    const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
-        .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
-        .replace(/"/g, '\'') // replace double quotes w/ single quotes
-        .replace(/\n\s*/g, ' '); // condense to single line
-    const strValidOptions = Object.keys(defaultOptions).join(', ');
-    const printValidOptions = () => {
-        console.info(`findJS() » Valid options: [ ${ strValidOptions } ]`);
-        console.info(`findJS() » If omitted, default settings are: ${ strDefaultOptions }`);
-    };
-    if (typeof options !== 'object') { // validate as obj
-        console.error('findJS() » ERROR: 2nd arg [options] can only be an object of key/values.');
-        console.info(`findJS() » Example valid call: ${ exampleCall }`);
-        printValidOptions(); return;
-    }
-    for (const key in options) { // validate each key
-        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key) && (key !== 'isRecursing')) {
-            console.error(
-                `findJS() » ERROR: \`${ key }\` is an invalid option.`);
-            printValidOptions(); return;
-        } else if (typeof options[key] !== 'boolean')
-            return console.error(
-                `findJS() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
-    }
+    // Validate/init options
+    if (!validateOptions(options, defaultOptions, exampleCall)) return;
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     // Search for unminified JS
@@ -95,30 +73,8 @@ function minify(input, options = {}) {
     if (typeof input !== 'string') return console.error(
         'minify() » ERROR: 1st arg <input> must be a string.');
 
-    // Validate options
-    const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
-        .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
-        .replace(/"/g, '\'') // replace double quotes w/ single quotes
-        .replace(/\n\s*/g, ' '); // condense to single line
-    const strValidOptions = Object.keys(defaultOptions).join(', ');
-    const printValidOptions = () => {
-        console.info(`minify() » Valid options: [ ${ strValidOptions } ]`);
-        console.info(`minify() » If omitted, default settings are: ${ strDefaultOptions }`);
-    };
-    if (typeof options !== 'object') { // validate as obj
-        console.error('minify() » ERROR: 2nd arg [options] can only be an object of key/values.');
-        console.info(`minify() » Example valid call: ${ exampleCall }`);
-        printValidOptions(); return;
-    }
-    for (const key in options) { // validate each key
-        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
-            console.error(
-                `minify() » ERROR: \`${ key }\` is an invalid option.`);
-            printValidOptions(); return;
-        } else if (typeof options[key] !== 'boolean')
-            return console.error(
-                `minify() » ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
-    }
+    // Validate/init options
+    if (!validateOptions(options, defaultOptions, exampleCall)) return;
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     // Minify JS based on input
@@ -147,6 +103,46 @@ function minify(input, options = {}) {
         if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
         return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error };
     }
+}
+
+// Define INTERNAL validation function
+
+function validateOptions(options, defaultOptions, exampleCall) {
+    const logPrefix = ( validateOptions.caller?.name || 'validateOptions' ) + '() » ';
+    const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
+        .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
+        .replace(/"/g, '\'') // replace double quotes w/ single quotes
+        .replace(/\n\s*/g, ' '); // condense to single line
+    const strValidOptions = Object.keys(defaultOptions).join(', '),
+          booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] === 'boolean'),
+          integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]));
+    const printValidOptions = () => {
+        console.info(`${ logPrefix }Valid options: [ ${ strValidOptions } ]`);
+        console.info(`${ logPrefix }If omitted, default settings are: ${ strDefaultOptions }`);
+    };
+    if (typeof options != 'object') { // validate as obj
+        console.error(`${ logPrefix }ERROR: [options] can only be an object of key/values.`);
+        console.info(`${ logPrefix }Example valid call: ${ exampleCall }`);
+        printValidOptions(); return false;
+    }
+    for (const key in options) { // validate each key
+        if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+            console.error(
+                `${ logPrefix }ERROR: \`${ key }\` is an invalid option.`);
+            printValidOptions(); return false;
+        } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean') {
+            console.error(
+                `${ logPrefix }ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+            return false;
+        } else if (integerOptions.includes(key)) {
+            options[key] = parseInt(options[key], 10);
+            if (isNaN(options[key]) || options[key] < 1) {
+                console.error(`${ logPrefix }ERROR: [${ key }] option can only be an integer > 0.`);
+                return false;
+            }
+        }
+    }
+    return true;
 }
 
 // EXPORT API functions
