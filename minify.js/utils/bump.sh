@@ -37,7 +37,7 @@ sed_actions=(
     # jsDelivr ver tags in import section
     -exec sed -i -E "s~@([0-9]+\.[0-9]+\.[0-9]+)~@$NEW_VERSION~g" {} +
     # Latest Build shield link + Unpacked Size shield link/src
-    -exec sed -i -E "s~($PACKAGE_NAME-)[0-9]+\.[0-9]+\.[0-9]+~\1$NEW_VERSION~g" {} +
+    -exec sed -i -E "s~($PACKAGE_NAME-)[0-9]+\.[0-9]+\.[0-9]+([^.]|$)~\1$NEW_VERSION\2~g" {} +
 )
 find . -name 'README.md' "${sed_actions[@]}"
 echo "v$NEW_VERSION"
