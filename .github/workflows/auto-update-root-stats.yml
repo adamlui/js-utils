@@ -20,8 +20,8 @@ jobs:
         id: get-downloads
         run: |
           LC_NUMERIC=en_US # to insert commas
-          npm_packages=("@adamlui/minify.js" "@adamlui/scss-to-css" "generate-ip" "generate-pw")
-          jsd_packages=("generate-ip" "generate-pw")
+          npm_packages=("@adamlui/geolocate" "@adamlui/minify.js" "@adamlui/scss-to-css" "generate-ip" "generate-pw")
+          jsd_packages=("@adamlui/geolocate" "generate-ip" "generate-pw")
 
           expand_num() { # expand nums abbreviated w/ 'k' or 'm' suffix to integers
             local num=$(echo "$1" | tr '[:upper:]' '[:lower:]') # convert to lowercase
