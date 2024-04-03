@@ -45,7 +45,7 @@ $ geolocate
 
 Sample output:
 
-<img src="https://github.com/adamlui/js-utils/blob/main/geolocate/media/images/screenshots/cli-geolocate-1.0.1.8.jpg">
+<img src="https://github.com/adamlui/js-utils/blob/main/geolocate/media/images/screenshots/cli-geolocate-8.8.8.8.jpg">
 
 **💡 Note:** If no IPv4 address is passed, your own one will be used.
 
