@@ -6,7 +6,7 @@
 // IMPORT secure crypto RNG
 let randomInt;
 try { // to use Node.js module
-    randomInt = require('crypto').randomInt;
+    ({ randomInt } = require('crypto'));
 } catch (err) { // use browser API or JS method
     const webCrypto = window.crypto || window.msCrypto;
     randomInt = (min, max) => {
