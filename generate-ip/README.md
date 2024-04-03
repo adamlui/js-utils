@@ -8,6 +8,7 @@
 <a href="https://github.com/adamlui/js-utils/blob/generate-ip-2.2.0/generate-ip/dist/generate-ip.min.js"><img height=31 src="https://img.shields.io/github/size/adamlui/js-utils/generate-ip/dist/generate-ip.min.js??branch=generate-ip-2.2.0&label=Minified%20Size&logo=databricks&logoColor=white&labelColor=464646&color=ff69b4&style=for-the-badge"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_js-utils:generate-ip/src/generate-ip.js"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_js-utils%3Agenerate-ip%2Fsrc%2Fgenerate-ip.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></a>
 <a href="https://www.jsdelivr.com/package/npm/generate-ip?tab=stats"><img height=31 src="https://img.shields.io/jsdelivr/npm/hw/generate-ip?style=for-the-badge&logo=jsdelivr&logoColor=white&label=jsDelivr%20Hits&labelColor=464646&color=49c5d8"></a>
+<a href="https://github.com/toolleeo/cli-apps#networking"><img height=31 src="https://img.shields.io/badge/Mentioned_in-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
 <br>
 

@@ -10,7 +10,7 @@ Essential JavaScript libraries/utilities for Node.js and the web.
 
 <img height=10px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-### <img height=21px src="https://i.imgur.com/kvf7fXm.png"></img> [generate-ip](../generate-ip)
+### <img height=21px src="https://i.imgur.com/kvf7fXm.png"></img> [generate-ip](../generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Randomly generate, format, and validate IPv4/IPv6 addresses.
 <br>[Install](../generate-ip#-installation) /
