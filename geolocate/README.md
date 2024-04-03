@@ -129,8 +129,10 @@ Asynchronous method to fetch geolocation data for the `ip` passed, returned as a
 
 ```js
 // Using await syntax
-const location = await geo.locate('8.8.8.8');
-console.log(location);
+(async () => {
+    const location = await geo.locate('8.8.8.8');
+    console.log(location);
+})();
 
 // Using .then() syntax
 geo.locate('8.8.8.8').then(location => {
@@ -162,8 +164,10 @@ Asynchronous method to fetch/return your own IP as a string:
 
 ```js
 // Using await syntax
-const ip = await geo.getOwnIP();
-console.log(ip); // outputs your IP
+(async () => {
+    const ip = await geo.getOwnIP();
+    console.log(ip); // outputs your IP
+})();
 
 // Using .then() syntax
 geo.getOwnIP().then(ip => {
