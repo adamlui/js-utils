@@ -8,7 +8,6 @@ let randomInt;
 try { // to use Node.js module
     ({ randomInt } = require('crypto'));
 } catch (err) { // use browser API or JS method
-    console.error('could not iport crcypto');
     const browserCrypto = window.crypto || window.msCrypto;
     randomInt = (min, max) => {
         const randomVal = browserCrypto?.getRandomValues(new Uint32Array(1))[0] / 0xFFFFFFFF || Math.random();
