@@ -88,14 +88,14 @@ const geo = require('@adamlui/geolocate');
 #### <> HTML script tag:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@adamlui/geolocate@1.0.0/dist/generate-ip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@adamlui/geolocate@1.0.0/dist/geolocate.min.js"></script>
 ```
 
 #### ES6:
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/@adamlui/geolocate@1.0.0/dist/generate-ip.min.js');
+    await import('https://cdn.jsdelivr.net/npm/@adamlui/geolocate@1.0.0/dist/geolocate.min.js');
     // Your code here...
 })();
 ```
