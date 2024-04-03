@@ -34,7 +34,7 @@ Essential JavaScript libraries/utilities for Node.js and the web.
 <br>[Download](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
-### [</> minify.js](../minify.js)
+### [</> minify.js](../minify.js) <a href="https://github.com/toolleeo/cli-apps?tab=readme-ov-file#programming"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Recursively minify all JavaScript files.
 <br>[Install](../minify.js#-installation) /
