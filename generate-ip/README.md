@@ -19,8 +19,8 @@
 
 - **No external dependencies —** Only built-in crypto methods used for secure randomization
 - **Multi-protocol support —** IPv4 + IPv6 addresses supported
-- **Command line usable —** Just type `generate-ip`, that's it
 - **Multi-environment support —** Use in Node.js or the web browser
+- **Command line usable —** Just type `generate-ip`, that's it
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
