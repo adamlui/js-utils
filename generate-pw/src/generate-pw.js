@@ -89,7 +89,7 @@ function generatePassword(options = {}) {
         if (options.verbose && !fromGeneratePasswords) {
             console.info(
                 'generatePassword() » Password generated!');       
-            if (typeof require !== 'undefined' && !require.main.filename.endsWith('cli.js')) console.info(
+            if (typeof require == 'undefined' || !require.main.filename.endsWith('cli.js')) console.info(
                 'generatePassword() » Check returned string.');
         }
         return password;
@@ -128,7 +128,7 @@ function generatePasswords(qty, options = {}) {
     // Log/return final result
     if (options.verbose) console.info(
         `generatePasswords() » Password${ qty > 1 ? 's' : '' } generated!`);
-    if (typeof require !== 'undefined' && !require.main.filename.endsWith('cli.js')) console.info(
+    if (typeof require == 'undefined' || !require.main.filename.endsWith('cli.js')) console.info(
         'generatePasswords() » Check returned array.');
     return passwords;
 }
