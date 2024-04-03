@@ -40,7 +40,7 @@ $ npm install @adamlui/geolocate
 The basic **global command** is:
 
 ```
-$ geolocate
+$ geolocate [ip]
 ```
 
 Sample output:
