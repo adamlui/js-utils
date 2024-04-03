@@ -129,11 +129,11 @@ Asynchronous method to fetch geolocation data for the `ip` passed, returned as a
 
 ```js
 // Using await syntax
-const location = await geo.locate('192.12.85.186');
+const location = await geo.locate('8.8.8.8');
 console.log(location);
 
 // Using .then() syntax
-geo.locate('192.12.85.186').then(location => {
+geo.locate('8.8.8.8').then(location => {
     console.log(location);
 });
 
