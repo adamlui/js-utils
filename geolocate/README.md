@@ -123,9 +123,7 @@ const geo = require('@adamlui/geolocate');
 
 ### `locate([ip])`
 
-Asynchronous method to fetch geolocation data for the `ip` passed, returned as an object.
-
-**💡 Note:** If no `ip` is supplied, your own one will be used.
+Asynchronous method to fetch geolocation data for the `ip` passed, returned as an object:
 
 ```js
 // Using await syntax
@@ -155,6 +153,8 @@ geo.locate('8.8.8.8').then(location => {
 }
 */
 ```
+
+**💡 Note:** If no `ip` is supplied, your own one will be used.
 
 #
 
