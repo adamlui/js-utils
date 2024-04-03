@@ -9,9 +9,9 @@ try { // to use Node.js module
     ({ randomInt } = require('crypto'));
 } catch (err) { // use browser API or JS method
     console.error('could not iport crcypto');
-    const webCrypto = window.crypto || window.msCrypto;
+    const browserCrypto = window.crypto || window.msCrypto;
     randomInt = (min, max) => {
-        const randomVal = webCrypto?.getRandomValues(new Uint32Array(1))[0] / 0xFFFFFFFF || Math.random();
+        const randomVal = browserCrypto?.getRandomValues(new Uint32Array(1))[0] / 0xFFFFFFFF || Math.random();
         return Math.floor(randomVal * (max - min)) + min;
     };
 }
