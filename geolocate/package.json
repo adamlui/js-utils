@@ -1,0 +1,43 @@
+{
+  "name": "@adamlui/geolocate",
+  "version": "1.0.0",
+  "description": "Fetch IP geolocation data from the CLI.",
+  "author": {
+    "name": "Adam Lui",
+    "email": "adam@kudoai.com",
+    "url": "https://github.com/adamlui"
+  },
+  "homepage": "https://js-utils.com/geolocate",
+  "license": "MIT",
+  "main": "dist/geolocate.min.js",
+  "files": [
+    "dist",
+    "docs/"
+  ],
+  "bin": {
+    "geolocate": "dist/cli.min.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "minify-js src dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamlui/js-utils.git"
+  },
+  "keywords": [
+    "geolocate",
+    "geolocation",
+    "ip",
+    "networking"
+  ],
+  "bugs": {
+    "url": "https://github.com/adamlui/js-utils/issues"
+  },
+  "dependencies": {
+    "generate-ip": "^2.2.0"
+  },
+  "devDependencies": {
+    "@adamlui/minify.js": "^1.4.10"
+  }
+}
