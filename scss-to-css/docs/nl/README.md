@@ -266,19 +266,19 @@ DE SOFTWARE WORDT GELEVERD "AS IS", ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIE
 
 > Comprimeer alle afbeeldingen recursief naar WEBP's.
 <br>[Downloaden](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
-[Bespreken](https://github.com/adamlui/js-utils/discussions)
+[Bespreken](https://js-utils.com/discussions)
 
 ### [</> minify.js](https://js-utils.com/minify.js)
 
 > Verklein alle JavaScript-bestanden recursief.
 <br>[Installeren](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 
 [Leesmij](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) / 
-[Bespreken](https://github.com/adamlui/js-utils/discussions)
+[Bespreken](https://js-utils.com/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <a href="https://github.com/adamlui/js-utils">**Meer JavaScript-hulpprogramma's**</a> /
-<a href="https://github.com/adamlui/js-utils/discussions">Bespreken</a> /
+<a href="https://js-utils.com/discussions">Bespreken</a> /
 <a href="#--scss-to-css">Terug naar boven ↑</a>

@@ -265,19 +265,19 @@ findSCSS() » Check returned array.
 
 > सभी छवियों को WEBPs पर पुनरावर्ती रूप से संपीड़ित करें।
 <br>[डाउनलोड करना](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
-[चर्चा करना](https://github.com/adamlui/js-utils/discussions)
+[चर्चा करना](https://js-utils.com/discussions)
 
 ### [</> minify.js](https://js-utils.com/minify.js)
 
 > सभी जावास्क्रिप्ट फ़ाइलों को पुनरावर्ती रूप से छोटा करें।
 <br>[स्थापित करना](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 
 [रीडमी](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) / 
-[चर्चा करना](https://github.com/adamlui/js-utils/discussions)
+[चर्चा करना](https://js-utils.com/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <a href="https://github.com/adamlui/js-utils">**अधिक जावास्क्रिप्ट उपयोगिताएँ**</a> /
-<a href="https://github.com/adamlui/js-utils/discussions">चर्चा करना</a> /
+<a href="https://js-utils.com/discussions">चर्चा करना</a> /
 <a href="#--scss-to-css">वापस शीर्ष पर ↑</a>

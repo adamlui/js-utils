@@ -293,5 +293,5 @@ $ generate-pw
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <a href="https://github.com/adamlui/js-utils">**更多 JavaScript 實用程式**</a> /
-<a href="https://github.com/adamlui/js-utils/discussions">討論</a> /
+<a href="https://js-utils.com/discussions">討論</a> /
 <a href="#-generate-pw">回到頂部 ↑</a>

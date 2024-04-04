@@ -266,19 +266,19 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 > Komprimieren Sie alle Bilder rekursiv zu WEBPs.
 <br>[Herunterladen](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
-[Diskutieren](https://github.com/adamlui/js-utils/discussions)
+[Diskutieren](https://js-utils.com/discussions)
 
 ### [</> minify.js](https://js-utils.com/minify.js)
 
 > Alle JavaScript-Dateien rekursiv verkleinern.
 <br>[Installieren](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 
 [Liesmich](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) / 
-[Diskutieren](https://github.com/adamlui/js-utils/discussions)
+[Diskutieren](https://js-utils.com/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <a href="https://github.com/adamlui/js-utils">**Weitere JavaScript-Dienstprogramme**</a> /
-<a href="https://github.com/adamlui/js-utils/discussions">Diskutieren</a> /
+<a href="https://js-utils.com/discussions">Diskutieren</a> /
 <a href="#--scss-to-css">Zurück nach oben ↑</a>

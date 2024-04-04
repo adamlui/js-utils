@@ -266,19 +266,19 @@ findSCSS() » Check returned array.
 
 > ਵਾਰ-ਵਾਰ ਸਾਰੀਆਂ ਤਸਵੀਰਾਂ ਨੂੰ WEBP ਵਿੱਚ ਸੰਕੁਚਿਤ ਕਰੋ।
 <br>[ਡਾਊਨਲੋਡ ਕਰੋ](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
-[ਚਰਚਾ ਕਰੋ](https://github.com/adamlui/js-utils/discussions)
+[ਚਰਚਾ ਕਰੋ](https://js-utils.com/discussions)
 
 ### [</> minify.js](https://js-utils.com/minify.js)
 
 > ਸਾਰੀਆਂ JavaScript ਫਾਈਲਾਂ ਨੂੰ ਆਵਰਤੀ ਤੌਰ 'ਤੇ ਛੋਟਾ ਕਰੋ।
 <br>[ਇੰਸਟਾਲ ਕਰੋ](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 
 [ਪੜ੍ਹੋ](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) / 
-[ਚਰਚਾ ਕਰੋ](https://github.com/adamlui/js-utils/discussions)
+[ਚਰਚਾ ਕਰੋ](https://js-utils.com/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <a href="https://github.com/adamlui/js-utils">**ਹੋਰ JavaScript ਉਪਯੋਗਤਾਵਾਂ**</a> /
-<a href="https://github.com/adamlui/js-utils/discussions">ਚਰਚਾ ਕਰੋ</a> /
+<a href="https://js-utils.com/discussions">ਚਰਚਾ ਕਰੋ</a> /
 <a href="#--scss-to-css">ਸਿਖਰ 'ਤੇ ਵਾਪਸ ਜਾਓ ↑</a>
