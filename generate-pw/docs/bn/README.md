@@ -283,6 +283,6 @@ $ generate-pw
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-<a href="https://github.com/adamlui/js-utils">**জাভাস্ক্রিপ্ট ইউটিলিটি**</a> /
+<a href="https://github.com/adamlui/js-utils">**আরো জাভাস্ক্রিপ্ট ইউটিলিটি**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">আলোচনা করা</a> /
 <a href="#-generate-pw">উপরে ফিরে যাও ↑</a>

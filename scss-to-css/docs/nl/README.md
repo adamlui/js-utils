@@ -279,6 +279,6 @@ DE SOFTWARE WORDT GELEVERD "AS IS", ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIE
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-<a href="https://github.com/adamlui/js-utils">**JavaScript-hulpprogramma's**</a> /
+<a href="https://github.com/adamlui/js-utils">**Meer JavaScript-hulpprogramma's**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Bespreken</a> /
 <a href="#--scss-to-css">Terug naar boven ↑</a>
