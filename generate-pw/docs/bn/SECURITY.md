@@ -9,6 +9,7 @@
         <a href="../zh-cn/SECURITY.md">简体中文</a> |
         <a href="../zh-tw/SECURITY.md">繁體中文</a> |
         <a href="../hi/SECURITY.md">हिंदी</a> |
+        <a href="../de/SECURITY.md">Deutsch</a> |
         <a href="../es/SECURITY.md">Español</a>
     </h6>
 </div>

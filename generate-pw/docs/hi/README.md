@@ -9,6 +9,7 @@
         <a href="../zh-cn#readme">简体中文</a> |
         <a href="../zh-tw#readme">繁體中文</a> |
         <a href="../bn#readme">বাংলা</a> |
+        <a href="../de#readme">Deutsch</a> |
         <a href="../es#readme">Español</a>
     </h6>
 </div>

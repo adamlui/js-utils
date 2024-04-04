@@ -9,6 +9,7 @@
         <a href="../zh-cn/LICENSE.md">简体中文</a> |
         <a href="../zh-tw/LICENSE.md">繁體中文</a> |
         <a href="../bn/LICENSE.md">বাংলা</a> |
+        <a href="../de/LICENSE.md">Deutsch</a> |
         <a href="../es/LICENSE.md">Español</a>
     </h6>
 </div>
