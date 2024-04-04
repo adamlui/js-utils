@@ -35,7 +35,9 @@
     "geolocate",
     "geolocation",
     "ip",
-    "networking"
+    "networking",
+    "api",
+    "cli"
   ],
   "bugs": {
     "url": "https://github.com/adamlui/js-utils/issues"
