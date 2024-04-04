@@ -26,6 +26,17 @@
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
+## 💡 About
+
+**generate-pw** is a lightweight, easy-to-use library that allows you to randomly generate, strengthen & validate cryptographically-secure password(s).
+
+- **No external dependencies —** Only built-in crypto methods used for secure randomization
+- **Highly customizable —** Specify length, quantity, charsets to use, etc.
+- **Multi-environment support —** Use in Node.js or the web browser
+- **Command line usable —** Just type `generate-pw`, that's it
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 ## ⚡ Installation
 
 As a **global utility**:

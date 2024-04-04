@@ -26,6 +26,15 @@
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
+## 💡 关于
+
+**generate-pw** 是一个轻量级、易于使用的库，允许您随机生成、加强和验证加密安全密码。
+
+- **无外部依赖项 —** 仅用于安全随机化的内置加密方法
+- **高度可定制 —** 指定长度、数量、要使用的字符集等。
+- **多环境支持 —** 在 Node.js 或 Web 浏览器中使用
+- **可用命令行 —** 只需输入`generate-pw`即可
+
 ## ⚡ 安装
 
 作为**全局实用程序**：
