@@ -271,8 +271,8 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 ### [</> minify.js](https://js-utils.com/minify.js)
 
 > Alle JavaScript-Dateien rekursiv verkleinern.
-<br>[Installieren](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 
-[Liesmich](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) / 
+<br>[Installieren](https://github.com/adamlui/js-utils/tree/main/minify.js/docs/de#-installation) / 
+[Liesmich](https://github.com/adamlui/js-utils/tree/main/minify.js/docs/de#readme) / 
 [Diskutieren](https://js-utils.com/discussions)
 
 <br>

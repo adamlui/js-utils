@@ -271,8 +271,8 @@ findSCSS() » Check returned array.
 ### [</> minify.js](https://js-utils.com/minify.js)
 
 > ਸਾਰੀਆਂ JavaScript ਫਾਈਲਾਂ ਨੂੰ ਆਵਰਤੀ ਤੌਰ 'ਤੇ ਛੋਟਾ ਕਰੋ।
-<br>[ਇੰਸਟਾਲ ਕਰੋ](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 
-[ਪੜ੍ਹੋ](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) / 
+<br>[ਇੰਸਟਾਲ ਕਰੋ](https://github.com/adamlui/js-utils/tree/main/minify.js/docs/pa#-%E0%A8%87%E0%A9%B0%E0%A8%B8%E0%A8%9F%E0%A8%BE%E0%A8%B2%E0%A9%87%E0%A8%B8%E0%A8%BC%E0%A8%A8) / 
+[ਪੜ੍ਹੋ](https://github.com/adamlui/js-utils/tree/main/minify.js/docs/pa#readme) / 
 [ਚਰਚਾ ਕਰੋ](https://js-utils.com/discussions)
 
 <br>

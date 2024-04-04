@@ -271,8 +271,8 @@ findSCSS() » Check returned array.
 ### [</> minify.js](https://js-utils.com/minify.js)
 
 > সব জাভাস্ক্রিপ্ট ফাইল পুনরাবৃত্তিমূলকভাবে ছোট করুন।
-<br>[ইনস্টল করুন](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 
-[রিডমি](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) / 
+<br>[ইনস্টল করুন](https://github.com/adamlui/js-utils/tree/main/minify.js/docs/bn#-%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE%E0%A6%AA%E0%A6%A8) / 
+[রিডমি](https://github.com/adamlui/js-utils/tree/main/minify.js/docs/bn#readme) / 
 [আলোচনা করা](https://js-utils.com/discussions)
 
 <br>

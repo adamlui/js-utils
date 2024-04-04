@@ -271,8 +271,8 @@ findSCSS() » Check returned array.
 ### [</> minify.js](https://js-utils.com/minify.js)
 
 > सर्व JavaScript फायली आवर्तीपणे लहान करा.
-<br>[स्थापित करा](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 
-[मला वाचा](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) / 
+<br>[स्थापित करा](https://github.com/adamlui/js-utils/tree/main/minify.js/docs/mr#-%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BE%E0%A4%AA%E0%A4%A8%E0%A4%BE) / 
+[मला वाचा](https://github.com/adamlui/js-utils/tree/main/minify.js/docs/mr#readme) / 
 [चर्चा करा](https://js-utils.com/discussions)
 
 <br>

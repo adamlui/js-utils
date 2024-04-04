@@ -271,8 +271,8 @@ findSCSS() » Check returned array.
 ### [</> minify.js](https://js-utils.com/minify.js)
 
 > 遞歸地縮小所有 JavaScript 檔案。
-<br>[安裝](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 
-[自述文件](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) / 
+<br>[安裝](https://github.com/adamlui/js-utils/tree/main/minify.js/docs/zh-tw#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%9D) / 
+[自述文件](https://github.com/adamlui/js-utils/tree/main/minify.js/docs/zh-tw#readme) / 
 [討論](https://js-utils.com/discussions)
 
 <br>
