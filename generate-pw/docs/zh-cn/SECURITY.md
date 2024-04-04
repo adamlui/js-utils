@@ -8,7 +8,8 @@
         <a href="../SECURITY.md">English</a> |
         <a href="../zh-tw/SECURITY.md">繁體中文</a> |
         <a href="../hi/SECURITY.md">हिंदी</a> |
-        <a href="../bn/SECURITY.md">বাংলা</a>
+        <a href="../bn/SECURITY.md">বাংলা</a> |
+        <a href="../es/SECURITY.md">Español</a>
     </h6>
 </div>
 
