@@ -28,7 +28,7 @@ Essential JavaScript libraries/utilities for Node.js and the web.
 [CLI usage](../generate-pw#-command-line-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
-### <a href="../geolocate"><picture><source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/JSEb19A.png"><img height=22 src="https://i.imgur.com/FlWE4zu.png"></picture> geolocate</a>
+### <a href="../geolocate"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> geolocate</a>
 
 > Fetch IP geolocation data from the CLI.
 <br>[Install](../geolocate#-installation) /
