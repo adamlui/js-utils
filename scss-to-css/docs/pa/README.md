@@ -268,7 +268,7 @@ findSCSS() » Check returned array.
 <br>[ਡਾਊਨਲੋਡ ਕਰੋ](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
 [ਚਰਚਾ ਕਰੋ](https://github.com/adamlui/js-utils/discussions)
 
-### [</> minify.js](https://github.com/adamlui/js-utils/tree/main/minify.js#readme)
+### [</> minify.js](https://js-utils.com/minify.js)
 
 > ਸਾਰੀਆਂ JavaScript ਫਾਈਲਾਂ ਨੂੰ ਆਵਰਤੀ ਤੌਰ 'ਤੇ ਛੋਟਾ ਕਰੋ।
 <br>[ਇੰਸਟਾਲ ਕਰੋ](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 

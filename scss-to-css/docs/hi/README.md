@@ -267,7 +267,7 @@ findSCSS() » Check returned array.
 <br>[डाउनलोड करना](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
 [चर्चा करना](https://github.com/adamlui/js-utils/discussions)
 
-### [</> minify.js](https://github.com/adamlui/js-utils/tree/main/minify.js#readme)
+### [</> minify.js](https://js-utils.com/minify.js)
 
 > सभी जावास्क्रिप्ट फ़ाइलों को पुनरावर्ती रूप से छोटा करें।
 <br>[स्थापित करना](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 

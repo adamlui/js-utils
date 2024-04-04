@@ -268,7 +268,7 @@ findSCSS() » Check returned array.
 <br>[下载](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
 [讨论](https://github.com/adamlui/js-utils/discussions)
 
-### [</> minify.js](https://github.com/adamlui/js-utils/tree/main/minify.js#readme)
+### [</> minify.js](https://js-utils.com/minify.js)
 
 > 递归地缩小所有 JavaScript 文件。
 <br>[安装](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 

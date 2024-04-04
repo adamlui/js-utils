@@ -268,7 +268,7 @@ DE SOFTWARE WORDT GELEVERD "AS IS", ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIE
 <br>[Downloaden](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
 [Bespreken](https://github.com/adamlui/js-utils/discussions)
 
-### [</> minify.js](https://github.com/adamlui/js-utils/tree/main/minify.js#readme)
+### [</> minify.js](https://js-utils.com/minify.js)
 
 > Verklein alle JavaScript-bestanden recursief.
 <br>[Installeren](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 
