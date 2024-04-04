@@ -1,16 +1,16 @@
 # 🛠️ JavaScript utilities
 
-<img height=31 src="https://img.shields.io/badge/Downloads-3.5K/month-44cc11.svg?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img>
+<img height=31 src="https://img.shields.io/badge/Downloads-3.5K/month-44cc11.svg?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge">
 <a href="#%EF%B8%8F-mit-license"><img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/js-utils"><img height=31 src="https://img.shields.io/codefactor/grade/github/adamlui/js-utils?label=Code+Quality&logo=codefactor&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_js-utils"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_js-utils%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></a>
-<img height=31 src="https://img.shields.io/badge/jsDelivr_Hits-8.5K/month-49c5d8.svg?logo=jsdelivr&logoColor=white&labelColor=464646&style=for-the-badge"></img>
+<img height=31 src="https://img.shields.io/badge/jsDelivr_Hits-8.5K/month-49c5d8.svg?logo=jsdelivr&logoColor=white&labelColor=464646&style=for-the-badge">
 
 Essential JavaScript libraries/utilities for Node.js and the web.
 
 <img height=10px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-### <img height=21px src="https://i.imgur.com/kvf7fXm.png"></img> [generate-ip](../generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+### <img height=21px src="https://i.imgur.com/kvf7fXm.png"> [generate-ip](../generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Randomly generate, format, and validate IPv4/IPv6 addresses.
 <br>[Install](../generate-ip#-installation) /
