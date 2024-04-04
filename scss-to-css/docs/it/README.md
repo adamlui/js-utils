@@ -281,6 +281,6 @@ IL SOFTWARE VIENE FORNITO "COSÌ COM'È", SENZA GARANZIA DI ALCUN TIPO, ESPLICIT
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-<a href="https://github.com/adamlui/js-utils">**Altre utilità JavaScript**</a> /
+<a href="https://js-utils.com">**Altre utilità JavaScript**</a> /
 <a href="https://js-utils.com/discussions">Discutere</a> /
 <a href="#--scss-to-css">Torna in cima ↑</a>

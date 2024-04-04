@@ -343,6 +343,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
-<a href="https://github.com/adamlui/js-utils">**More JavaScript utilities**</a> /
+<a href="https://js-utils.com">**More JavaScript utilities**</a> /
 <a href="https://js-utils.com/discussions">Discuss</a> /
 <a href="#-generate-ip">Back to top ↑</a>
