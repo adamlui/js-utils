@@ -273,6 +273,8 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU
 > Minimize recursivamente todos os arquivos JavaScript.
 <br>[Instalar](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) /
 [Leia-me](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) /
+[Uso da CLI](https://github.com/adamlui/js-utils/tree/main/minify.js#-command-line-usage) /
+[Uso de API](https://github.com/adamlui/js-utils/tree/main/minify.js#-api-usage) /
 [Discutir](https://js-utils.com/discussions)
 
 <br>

@@ -276,6 +276,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 > Recursively minify all JavaScript files.
 <br>[Install](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) /
 [Readme](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) /
+[CLI usage](https://github.com/adamlui/js-utils/tree/main/minify.js#-command-line-usage) /
+[API usage](https://github.com/adamlui/js-utils/tree/main/minify.js#-api-usage) /
 [Discuss](https://js-utils.com/discussions)
 
 <br>
