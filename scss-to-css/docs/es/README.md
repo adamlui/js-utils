@@ -271,8 +271,8 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 ### [</> minify.js](https://js-utils.com/minify.js)
 
 > Minimice recursivamente todos los archivos JavaScript.
-<br>[Instalar](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 
-[Léame](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) / 
+<br>[Instalar](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) /
+[Léame](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) /
 [Conversar](https://js-utils.com/discussions)
 
 <br>

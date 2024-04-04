@@ -271,8 +271,8 @@ DE SOFTWARE WORDT GELEVERD "AS IS", ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIE
 ### [</> minify.js](https://js-utils.com/minify.js)
 
 > Verklein alle JavaScript-bestanden recursief.
-<br>[Installeren](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) / 
-[Leesmij](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) / 
+<br>[Installeren](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) /
+[Leesmij](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) /
 [Bespreken](https://js-utils.com/discussions)
 
 <br>
