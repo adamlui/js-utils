@@ -294,6 +294,30 @@ $ generate-pw
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
+## 🛠️ সম্পর্কিত ইউটিলিটি
+
+### <img height=21px src="https://i.imgur.com/kvf7fXm.png"> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+
+> এলোমেলোভাবে IPv4/IPv6 ঠিকানাগুলি তৈরি করুন, বিন্যাস করুন এবং যাচাই করুন৷
+<br>[ইনস্টল করুন](https://github.com/adamlui/js-utils/tree/main/generate-ip#-installation) /
+[রিডমি](https://github.com/adamlui/js-utils/tree/main/generate-ip#readme) /
+[API ব্যবহার](https://github.com/adamlui/js-utils/tree/main/generate-ip#-api-usage) /
+[CLI ব্যবহার](https://github.com/adamlui/js-utils/tree/main/generate-ip#-command-line-usage) /
+[আলোচনা করা](https://js-utils.com/discussions)
+
+### <a href="https://js-utils.com/geolocate"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> geolocate</a>
+
+> CLI থেকে আইপি জিওলোকেশন ডেটা আনুন।
+<br>[ইনস্টল করুন](https://github.com/adamlui/js-utils/tree/main/geolocate#-installation) /
+[রিডমি](https://github.com/adamlui/js-utils/tree/main/geolocate#readme) /
+[CLI ব্যবহার](https://github.com/adamlui/js-utils/tree/main/geolocate#-command-line-usage) /
+[API ব্যবহার](https://github.com/adamlui/js-utils/tree/main/geolocate#-api-usage) /
+[আলোচনা করা](https://js-utils.com/discussions)
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 <a href="https://github.com/adamlui/js-utils">**আরো জাভাস্ক্রিপ্ট ইউটিলিটি**</a> /
 <a href="https://js-utils.com/discussions">আলোচনা করা</a> /
 <a href="#-generate-pw">উপরে ফিরে যাও ↑</a>

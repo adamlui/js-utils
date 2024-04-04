@@ -297,6 +297,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
+## 🛠️ Related utilities
+
+### <img height=21px src="https://i.imgur.com/kvf7fXm.png"> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+
+> Randomly generate, format, and validate IPv4/IPv6 addresses.
+<br>[Install](https://github.com/adamlui/js-utils/tree/main/generate-ip#-installation) /
+[Readme](https://github.com/adamlui/js-utils/tree/main/generate-ip#readme) /
+[API usage](https://github.com/adamlui/js-utils/tree/main/generate-ip#-api-usage) /
+[CLI usage](https://github.com/adamlui/js-utils/tree/main/generate-ip#-command-line-usage) /
+[Discuss](https://js-utils.com/discussions)
+
+### <a href="https://js-utils.com/geolocate"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> geolocate</a>
+
+> Fetch IP geolocation data from the CLI.
+<br>[Install](https://github.com/adamlui/js-utils/tree/main/geolocate#-installation) /
+[Readme](https://github.com/adamlui/js-utils/tree/main/geolocate#readme) /
+[CLI usage](https://github.com/adamlui/js-utils/tree/main/geolocate#-command-line-usage) /
+[API usage](https://github.com/adamlui/js-utils/tree/main/geolocate#-api-usage) /
+[Discuss](https://js-utils.com/discussions)
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 <a href="https://github.com/adamlui/js-utils">**More JavaScript utilities**</a> /
 <a href="https://js-utils.com/discussions">Discuss</a> /
 <a href="#-generate-pw">Back to top ↑</a>

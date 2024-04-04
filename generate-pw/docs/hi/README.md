@@ -292,6 +292,30 @@ $ generate-pw
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
+## 🛠️ संबंधित उपयोगिताएँ
+
+### <img height=21px src="https://i.imgur.com/kvf7fXm.png"> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+
+> IPv4/IPv6 पतों को बेतरतीब ढंग से उत्पन्न, प्रारूपित और मान्य करें।
+<br>[स्थापित करना](https://github.com/adamlui/js-utils/tree/main/generate-ip#-installation) /
+[रीडमी](https://github.com/adamlui/js-utils/tree/main/generate-ip#readme) /
+[एपीआई उपयोग](https://github.com/adamlui/js-utils/tree/main/generate-ip#-api-usage) /
+[सीएलआई उपयोग](https://github.com/adamlui/js-utils/tree/main/generate-ip#-command-line-usage) /
+[चर्चा करना](https://js-utils.com/discussions)
+
+### <a href="https://js-utils.com/geolocate"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> geolocate</a>
+
+> सीएलआई से आईपी जियोलोकेशन डेटा प्राप्त करें।
+<br>[स्थापित करना](https://github.com/adamlui/js-utils/tree/main/geolocate#-installation) /
+[रीडमी](https://github.com/adamlui/js-utils/tree/main/geolocate#readme) /
+[सीएलआई उपयोग](https://github.com/adamlui/js-utils/tree/main/geolocate#-command-line-usage) /
+[एपीआई उपयोग](https://github.com/adamlui/js-utils/tree/main/geolocate#-api-usage) /
+[चर्चा करना](https://js-utils.com/discussions)
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 <a href="https://github.com/adamlui/js-utils">**अधिक जावास्क्रिप्ट उपयोगिताएँ**</a> /
 <a href="https://js-utils.com/discussions">चर्चा करना</a> /
 <a href="#-generate-pw">वापस शीर्ष पर ↑</a>
