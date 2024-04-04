@@ -21,7 +21,7 @@ Essential JavaScript libraries/utilities for Node.js and the web.
 
 ### [🔒 generate-pw](../generate-pw)
 
-> Randomly generate cryptographically-secure passwords.
+> Randomly generate, strengthen, and validate cryptographically-secure passwords.
 <br>[Install](../generate-pw#-installation) /
 [Readme](../generate-pw#readme) /
 [API usage](../generate-pw#-api-usage) /

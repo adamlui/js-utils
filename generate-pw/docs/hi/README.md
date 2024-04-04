@@ -14,7 +14,7 @@
 
 # > generate-pw
 
-### क्रिप्टोग्राफ़िक रूप से सुरक्षित पासवर्ड यादृच्छिक रूप से उत्पन्न करें।
+### क्रिप्टोग्राफ़िक रूप से सुरक्षित पासवर्ड को बेतरतीब ढंग से उत्पन्न, मजबूत और मान्य करें।
 
 <a href="#%EF%B8%8F-mit-लाइसेंस"><img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-1.4.2"><img height=31 src="https://img.shields.io/badge/Latest_Build-1.4.2-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>

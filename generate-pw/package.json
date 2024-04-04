@@ -1,7 +1,7 @@
 {
   "name": "generate-pw",
   "version": "1.4.2",
-  "description": "Randomly generate cryptographically-secure passwords.",
+  "description": "Randomly generate, strengthen, and validate cryptographically-secure passwords.",
   "author": {
     "name": "Adam Lui",
     "email": "adam@kudoai.com",

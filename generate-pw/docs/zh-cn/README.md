@@ -14,7 +14,7 @@
 
 # > generate-pw
 
-### 随机生成加密安全密码。
+### 随机生成、强化和验证加密安全密码。
 
 <a href="#%EF%B8%8F-mit-%E8%AE%B8%E5%8F%AF%E8%AF%81"><img height=31 src="https://img.shields.io/badge/许可证-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-1.4.2"><img height=31 src="https://img.shields.io/badge/最新版本-1.4.2-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
