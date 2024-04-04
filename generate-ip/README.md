@@ -319,6 +319,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
+## 🛠️ Related utilities
+
+### [🔒 generate-pw](../generate-pw)
+
+> Randomly generate, strengthen, and validate cryptographically-secure passwords.
+<br>[Install](https://github.com/adamlui/js-utils/tree/main/generate-pw#-installation) /
+[Readme](https://github.com/adamlui/js-utils/tree/main/generate-pw#readme) /
+[API usage](https://github.com/adamlui/js-utils/tree/main/generate-pw#-api-usage) /
+[CLI usage](https://github.com/adamlui/js-utils/tree/main/generate-pw#-command-line-usage) /
+[Discuss](https://js-utils.com/discussions)
+
+### <a href="https://js-utils.com/geolocate"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> geolocate</a>
+
+> Fetch IP geolocation data from the CLI.
+<br>[Install](https://github.com/adamlui/js-utils/tree/main/geolocate#-installation) /
+[Readme](https://github.com/adamlui/js-utils/tree/main/geolocate#readme) /
+[CLI usage](https://github.com/adamlui/js-utils/tree/main/geolocate#-command-line-usage) /
+[API usage](https://github.com/adamlui/js-utils/tree/main/geolocate#-api-usage) /
+[Discuss](https://js-utils.com/discussions)
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 <a href="https://github.com/adamlui/js-utils">**More JavaScript utilities**</a> /
 <a href="https://js-utils.com/discussions">Discuss</a> /
 <a href="#-generate-ip">Back to top ↑</a>
