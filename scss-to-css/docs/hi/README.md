@@ -8,6 +8,7 @@
         <a href="../..#readme">English</a> |
         <a href="../zh-cn#readme">简体中文</a> |
         <a href="../zh-tw#readme">繁體中文</a> |
+        <a href="../ja#readme">日本語</a> |
         <a href="../bn#readme">বাংলা</a> |
         <a href="../mr#readme">मराठी</a> |
         <a href="../pa#readme">ਪੰਜਾਬੀ</a> |
