@@ -268,7 +268,7 @@ LE LOGICIEL EST FOURNI « EN L'ÉTAT », SANS GARANTIE D'AUCUNE SORTE, EXPRESSE 
 <br>[Télécharger](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
 [Discuter](https://js-utils.com/discussions)
 
-### [</> minify.js](https://js-utils.com/minify.js)
+### [</> minify.js](https://minify-js.org)
 
 > Réduisez de manière récursive tous les fichiers JavaScript.
 <br>[Installer](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) /

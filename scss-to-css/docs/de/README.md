@@ -268,7 +268,7 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 <br>[Herunterladen](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
 [Diskutieren](https://js-utils.com/discussions)
 
-### [</> minify.js](https://js-utils.com/minify.js)
+### [</> minify.js](https://minify-js.org)
 
 > Alle JavaScript-Dateien rekursiv verkleinern.
 <br>[Installieren](https://github.com/adamlui/js-utils/tree/main/minify.js/docs/de#-installation) /

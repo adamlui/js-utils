@@ -268,7 +268,7 @@ findSCSS() » Check returned array.
 <br>[ডাউনলোড করুন](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
 [আলোচনা করা](https://js-utils.com/discussions)
 
-### [</> minify.js](https://js-utils.com/minify.js)
+### [</> minify.js](https://minify-js.org)
 
 > সব জাভাস্ক্রিপ্ট ফাইল পুনরাবৃত্তিমূলকভাবে ছোট করুন।
 <br>[ইনস্টল করুন](https://github.com/adamlui/js-utils/tree/main/minify.js/docs/bn#-%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE%E0%A6%AA%E0%A6%A8) /
