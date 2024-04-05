@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
+// © 2023–2024 Adam Lui & contributors under the MIT license.
+// Source: https://github.minify-js.org
+// Documentation: https://minify-js.org/#readme
+
 // Import LIBS
 const fs = require('fs'),
       path = require('path'),
