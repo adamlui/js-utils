@@ -70,7 +70,7 @@ You can also import **geolocate** into your app to use its API methods.
 
 ### <img height=18 src="https://i.imgur.com/JIeAdsr.png"> Node.js
 
-#### ES module*:
+#### ECMAScript*:
 
 ```js
 import * as geo from '@adamlui/geolocate';

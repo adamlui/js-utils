@@ -60,7 +60,7 @@ $ npm install generate-pw
 
 ### <img height=18 src="https://i.imgur.com/JIeAdsr.png"> Node.js
 
-#### ES module*:
+#### ECMAScript*:
 
 ```js
 import * as pw from 'generate-pw';

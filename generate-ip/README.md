@@ -53,7 +53,7 @@ $ npm install generate-ip
 
 ### <img height=18 src="https://i.imgur.com/JIeAdsr.png"> Node.js
 
-#### ES module*:
+#### ECMAScript*:
 
 ```js
 import { ipv4, ipv6 } from 'generate-ip';
