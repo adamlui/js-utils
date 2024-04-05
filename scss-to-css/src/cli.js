@@ -85,9 +85,10 @@ else { // run MAIN routine
         compileData?.forEach(({ code, srcMap, srcPath }) => {                
             const outputDir = path.join(
                 path.dirname(srcPath), // path of file to be minified
-                /(?:src|s[ac]ss)$/.test(path.dirname(srcPath)) ? '../css' // + ../css/ if in *(src|sass|scss)/
-                    : outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
-                    : outputArg || 'css' // or path from folder output arg or css/ if no output arg passed
+                /(?:src|s[ac]ss)$/.test(path.dirname(srcPath)) ? (
+                    '../' + ( outputArg || 'css' ) // + ../outputArg|css/ if in *(src|sass|scss)/
+                ) : outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
+                  : outputArg || 'css' // or path from folder outputArg or css/ if no outputArg passed
             );
             const outputFilename = (
                 outputArg.endsWith('.css') && inputArg.endsWith('.scss')
