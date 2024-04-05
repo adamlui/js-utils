@@ -51,7 +51,7 @@
     "url": "https://js-utils.com/issues"
   },
   "dependencies": {
-    "sass": "^1.72.0"
+    "sass": "^1.74.1"
   },
   "funding": {
     "type": "github",
