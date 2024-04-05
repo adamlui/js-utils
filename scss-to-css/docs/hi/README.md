@@ -270,10 +270,10 @@ findSCSS() » Check returned array.
 ### [</> minify.js](https://minify-js.org)
 
 > सभी जावास्क्रिप्ट फ़ाइलों को पुनरावर्ती रूप से छोटा करें।
-<br>[स्थापित करना](https://github.com/adamlui/js-utils/tree/main/minify.js/docs/hi#-%E0%A4%87%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A4%BE%E0%A4%B2%E0%A5%87%E0%A4%B6%E0%A4%A8) /
-[रीडमी](https://github.com/adamlui/js-utils/tree/main/minify.js/docs/hi#readme) /
-[सीएलआई उपयोग](https://github.com/adamlui/js-utils/tree/main/minify.js/docs/hi#-%E0%A4%95%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%A1-%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%A8-%E0%A4%89%E0%A4%AA%E0%A4%AF%E0%A5%8B%E0%A4%97) /
-[एपीआई उपयोग](https://github.com/adamlui/js-utils/tree/main/minify.js/docs/hi#-api-%E0%A4%89%E0%A4%AA%E0%A4%AF%E0%A5%8B%E0%A4%97) /
+<br>[स्थापित करना](http://minify-js.org/docs/hi#-%E0%A4%87%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A4%BE%E0%A4%B2%E0%A5%87%E0%A4%B6%E0%A4%A8) /
+[रीडमी](http://minify-js.org/docs/hi#readme) /
+[सीएलआई उपयोग](http://minify-js.org/docs/hi#-%E0%A4%95%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%A1-%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%A8-%E0%A4%89%E0%A4%AA%E0%A4%AF%E0%A5%8B%E0%A4%97) /
+[एपीआई उपयोग](http://minify-js.org/docs/hi#-api-%E0%A4%89%E0%A4%AA%E0%A4%AF%E0%A5%8B%E0%A4%97) /
 [चर्चा करना](https://js-utils.com/discussions)
 
 <br>

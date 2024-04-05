@@ -272,9 +272,9 @@ LE LOGICIEL EST FOURNI « EN L'ÉTAT », SANS GARANTIE D'AUCUNE SORTE, EXPRESSE 
 
 > Réduisez de manière récursive tous les fichiers JavaScript.
 <br>[Installer](https://github.com/adamlui/js-utils/tree/main/minify.js#-installation) /
-[Lisez-moi](https://github.com/adamlui/js-utils/tree/main/minify.js#readme) /
-[Utilisation de la CLI](https://github.com/adamlui/js-utils/tree/main/minify.js#-command-line-usage) /
-[Utilisation de l'API](https://github.com/adamlui/js-utils/tree/main/minify.js#-api-usage) /
+[Lisez-moi](http://minify-js.org/#readme) /
+[Utilisation de la CLI](http://minify-js.org/README.md#-command-line-usage) /
+[Utilisation de l'API](http://minify-js.org/README.md#-api-usage) /
 [Discuter](https://js-utils.com/discussions)
 
 <br>
