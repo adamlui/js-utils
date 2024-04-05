@@ -100,7 +100,7 @@ function compile(inputPath, options = {}) {
             } catch (err) { console.error(`\ncompile() » ERROR: ${ err.message }\n`); return { error: err }; }
         } else { // dir path passed
             const compileResult = findSCSS(inputPath, { recursive: options.recursive, verbose: options.verbose,
-                                         dotFolders: options.dotFolders
+                                                        dotFolders: options.dotFolders
                 })?.map(scssPath => { // compile found SCSS files
                     if (options.verbose) console.info(`compile() » Compiling ${ scssPath }...`); 
                     try { // to compile found file
