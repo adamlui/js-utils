@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // © 2024 Adam Lui & contributors under the MIT license.
 // Source: https://github.com/adamlui/js-utils/tree/main/scss-to-css
 // Documentation: https://github.com/adamlui/js-utils/tree/main/scss-to-css#readme
