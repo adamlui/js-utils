@@ -93,7 +93,7 @@ jobs:
           total_downloads=$(echo ${{ steps.get-downloads.outputs.total_downloads }})
           total_hits=$(echo ${{ steps.get-downloads.outputs.total_hits }})
           if [ "$total_downloads" != "0" ]; then
-            sed -i -E "s|(badge/Downloads-)[0-9.km]+-|\1$total_downloads-|Ig" docs/README.md ; fi
+            sed -i -E "s|(badge/Downloads-)[0-9.,km+]+|\1$total_downloads|Ig" docs/README.md ; fi
           if [ "$total_hits" != "0" ]; then
             sed -i -E "s|(badge/jsDelivr_Hits-)[0-9.,km+]+|\1$total_hits|Ig" docs/README.md ; fi
 
