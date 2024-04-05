@@ -160,4 +160,4 @@ function validateOptions(options, defaultOptions, exampleCall) {
 }
 
 // EXPORT API functions
-module.exports = { minify, findJS };
+module.exports = { minify, find: findJS, findJS };

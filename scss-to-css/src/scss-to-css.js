@@ -160,4 +160,4 @@ function validateOptions(options, defaultOptions, exampleCall) {
 }
 
 // EXPORT main functions
-module.exports = { compile, findSCSS };
+module.exports = { compile, find: findSCSS, findSCSS };
