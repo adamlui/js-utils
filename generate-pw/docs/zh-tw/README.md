@@ -306,7 +306,7 @@ $ generate-pw
 [CLI 用法](https://github.com/adamlui/js-utils/tree/main/generate-ip#-command-line-usage) /
 [討論](https://js-utils.com/discussions)
 
-### <a href="https://js-utils.com/geolocate"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> geolocate</a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > 從 CLI 取得 IP 地理位置資料。
 <br>[安裝](https://github.com/adamlui/js-utils/tree/main/geolocate#-installation) /

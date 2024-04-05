@@ -310,7 +310,7 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 [CLI-Nutzung](https://github.com/adamlui/js-utils/tree/main/generate-ip#-command-line-usage) /
 [Diskutieren](https://js-utils.com/discussions)
 
-### <a href="https://js-utils.com/geolocate"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> geolocate</a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > Rufen Sie IP-Geolocation-Daten von der CLI ab.
 <br>[Installieren](https://github.com/adamlui/js-utils/tree/main/geolocate#-installation) /

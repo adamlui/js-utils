@@ -308,7 +308,7 @@ $ generate-pw
 [CLI ব্যবহার](https://github.com/adamlui/js-utils/tree/main/generate-ip#-command-line-usage) /
 [আলোচনা করা](https://js-utils.com/discussions)
 
-### <a href="https://js-utils.com/geolocate"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> geolocate</a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > CLI থেকে আইপি জিওলোকেশন ডেটা আনুন।
 <br>[ইনস্টল করুন](https://github.com/adamlui/js-utils/tree/main/geolocate#-installation) /
