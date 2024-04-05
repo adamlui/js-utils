@@ -153,7 +153,7 @@ Info-opdrachten:
 
 U kunt ook **scss-naar-css** in uw app importeren om de API-methoden ervan te gebruiken, zowel als een ECMAScript-module als een CommonJS-module.
 
-#### ESM*:
+#### ECMAScript*:
 
 ```js
 import * as scssToCSS from '@adamlui/scss-to-css';

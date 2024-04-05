@@ -153,7 +153,7 @@ $ scss-to-css input_folder output_folder
 
 আপনি ECMAScript মডিউল বা CommonJS মডিউল উভয় হিসাবে, এর API পদ্ধতিগুলি ব্যবহার করতে আপনার অ্যাপে **scss-to-css** আমদানি করতে পারেন।
 
-#### ESM*:
+#### ECMAScript*:
 
 ```js
 import * as scssToCSS from '@adamlui/scss-to-css';

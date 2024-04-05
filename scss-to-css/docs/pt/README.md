@@ -153,7 +153,7 @@ Comandos de informação:
 
 Você também pode importar **scss-to-css** para seu aplicativo para usar seus métodos de API, tanto como um módulo ECMAScript quanto como um módulo CommonJS.
 
-#### ESM*:
+#### ECMAScript*:
 
 ```js
 import * as scssToCSS from '@adamlui/scss-to-css';

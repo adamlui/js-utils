@@ -153,7 +153,7 @@ $ scss-to-css input_folder output_folder
 
 您也可以將 **scss-to-css** 匯入您的應用程式以使用其 API 方法，無論是作為 ECMAScript 模組還是 CommonJS 模組。
 
-#### ESM*:
+#### ECMAScript*:
 
 ```js
 import * as scssToCSS from '@adamlui/scss-to-css';

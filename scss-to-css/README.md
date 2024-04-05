@@ -156,7 +156,7 @@ Info commands:
 
 You can also import **scss-to-css** into your app to use its API methods, both as an ECMAScript module or a CommonJS module.
 
-#### ESM*:
+#### ECMAScript*:
 
 ```js
 import * as scssToCSS from '@adamlui/scss-to-css';

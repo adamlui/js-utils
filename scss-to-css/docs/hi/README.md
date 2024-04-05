@@ -152,7 +152,7 @@ $ scss-to-css input_folder output_folder
 
 आप इसके एपीआई तरीकों का उपयोग करने के लिए अपने ऐप में **scss-to-css** भी आयात कर सकते हैं, ECMAScript मॉड्यूल या CommonJS मॉड्यूल दोनों के रूप में।
 
-#### ESM*:
+#### ECMAScript*:
 
 ```js
 import * as scssToCSS from '@adamlui/scss-to-css';
