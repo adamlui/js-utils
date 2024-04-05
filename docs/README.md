@@ -19,7 +19,7 @@ Essential JavaScript libraries/utilities for Node.js and the web.
 [CLI usage](../generate-ip#-command-line-usage) /
 [Discuss](https://js-utils.com/discussions)
 
-### [🔒 generate-pw](../generate-pw)
+### [🔒 generate-pw](../generate-pw) <a href="https://github.com/toolleeo/cli-apps#password-managers"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Randomly generate, strengthen, and validate cryptographically-secure passwords.
 <br>[Install](../generate-pw#-installation) /
