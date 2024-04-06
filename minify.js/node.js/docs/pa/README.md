@@ -27,7 +27,7 @@
 <a href="https://github.com/toolleeo/cli-apps#programming"><img height=31 src="https://img.shields.io/badge/Mentioned_in-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://minify-js.org"><img src="https://img.shields.io/badge/web-minify--js.org-lightgrey?logo=dribbble&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
-<img src="https://github.com/adamlui/js-utils/blob/main/minify.js/media/images/minify.js-docs-demo.png">
+<img src="https://raw.githubusercontent.com/adamlui/minify.js/main/node.js/media/images/screenshots/cli-minify-js-docs.png">
 
 <br>
 
