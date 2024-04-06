@@ -28,7 +28,7 @@ jobs:
           pkg_roots=($(find . -type d -name "docs" `# paths to docs/` \
             ! -path "*/node_modules/*" `# exclude node_modules` \
             -exec dirname {} \; | # get parent dir of found docs/
-            grep -Ev "^\.$|^./minify.js/$")) # exclude js-utils root + multi-platform pkgs
+            grep -Ev "^(\.|^./minify.js/)$")) # exclude js-utils root + multi-platform pkgs
 
           # Sync READMEs per pkg
           for pkg_root in "${pkg_roots[@]}" ; do
