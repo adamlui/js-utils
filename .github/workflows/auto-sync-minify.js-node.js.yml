@@ -1,0 +1,82 @@
+name: Sync README.md between minify.js/node.js/ and minify.js/node.js/docs/, then minify.js/node.js/* to adamlui/minify.js/node.js/*
+
+on:
+  push:
+    branches: main
+    paths: minify.js/node.js/**
+
+jobs:
+  build:
+    if: (github.repository == 'adamlui/js-utils') && (github.event.commits[0].committer.username != 'kudo-sync-bot')
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout adamlui/js-utils
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/js-utils
+          path: adamlui/js-utils
+          fetch-depth: 2
+
+      - name: Checkout adamlui/minify.js
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/minify.js
+          path: adamlui/minify.js
+
+      - name: Sync README.md between minify.js/node.js/ and minify.js/node.js/docs
+        id: sync_readmes
+        run: |
+          cd ${{ github.workspace }}/adamlui/js-utils
+
+          # Init paths/content/mod timestamps
+          root_readme="./minify.js/node.js/README.md"
+          root_readme_content=$(git show HEAD:"$root_readme")
+          root_readme_modified=$(git log -1 --format="%ct" -- "$root_readme")
+          docs_readme="./minify.js/node.js/docs/README.md"
+          docs_readme_content=$(git show HEAD:"$docs_readme")
+          docs_readme_modified=$(git log -1 --format="%ct" -- "$docs_readme")
+
+          # Perform syncs of diff READMEs
+          if [[ "$root_readme_content" != "$docs_readme_content" ]] ; then
+            if [[ $root_readme_modified -gt $docs_readme_modified ]] ; then
+              cp -f "$root_readme" "$docs_readme"
+              echo "Copied $root_readme to $docs_readme"
+              src_folder="/minify.js/node.js"
+            elif [[ $docs_readme_modified -gt $root_readme_modified ]] ; then
+              cp -f "$docs_readme" "$root_readme"
+              echo "Copied $docs_readme to $root_readme"
+              src_folder="/minify.js/node.js/docs"
+            fi
+          fi
+
+          # Store sync src for commit msg in self-push step
+          echo "sync_src=$src_folder" >> $GITHUB_OUTPUT
+
+      - name: Sync minify.js/node.js/* to adamlui/minify.js/node.js/*
+        run: |
+          rsync -avhr --delete \
+            ${{ github.workspace }}/adamlui/js-utils/minify.js/node.js/ \
+            ${{ github.workspace }}/adamlui/minify.js/node.js/
+
+      - name: Push to adamlui/js-utils
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          push_options: --force
+          add_options: --all
+          commit_user_email: auto-sync@kudoai.com
+          commit_message: "${{ github.event.head_commit.message }} ↞ [auto-sync from `${{ steps.sync_readmes.outputs.sync_src }}`]"
+          file_pattern: "minify.js/node.js/**"
+          repository: adamlui/js-utils
+
+      - name: Push to adamlui/minify.js
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          push_options: --force
+          add_options: --all
+          commit_user_email: auto-sync@kudoai.com
+          commit_message: "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/js-utils`]"
+          file_pattern: "node.js/**"
+          repository: adamlui/minify.js
