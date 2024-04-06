@@ -1,4 +1,4 @@
-name: Auto-update npm downloads + jsDelivr hits shields in root README
+name: Update npm downloads + jsDelivr hits shields in root README
 
 on:
   schedule:
