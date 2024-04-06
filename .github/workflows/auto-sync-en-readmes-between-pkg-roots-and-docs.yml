@@ -1,0 +1,69 @@
+name: Sync README.md between <pkg>/ and <pkg>/docs
+
+on:
+  push:
+    branches: main
+    paths: "**/README.md"
+
+jobs:
+  build:
+    if: (github.repository == 'adamlui/js-utils') && (github.event.commits[0].committer.username != 'kudo-sync-bot')
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout adamlui/js-utils
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/js-utils
+          path: adamlui/js-utils
+          fetch-depth: 2
+
+      - name: Sync README.md between <pkg>/ and <pkg>/docs
+        id: sync_readmes
+        run: |
+          cd ${{ github.workspace }}/adamlui/js-utils
+
+          # Init pkg paths
+          pkg_roots=($(find . -type d -name "docs" `# paths to docs/` \
+            ! -path "*/node_modules/*" `# exclude node_modules` \
+            -exec dirname {} \; | # get parent dir of found docs/
+            grep -Ev "^\.$|^./minify.js/$")) # exclude js-utils root + multi-platform pkgs
+
+          # Sync READMEs per pkg
+          for pkg_root in "${pkg_roots[@]}" ; do
+
+            # Init paths/content/mod timestamps
+            root_readme=$pkg_root"/README.md"
+            root_readme_content=$(git show HEAD:"$root_readme")
+            root_readme_modified=$(git log -1 --format="%ct" -- "$root_readme")
+            docs_readme=$pkg_root"/docs/README.md"
+            docs_readme_content=$(git show HEAD:"$docs_readme")
+            docs_readme_modified=$(git log -1 --format="%ct" -- "$docs_readme")
+
+            # Perform syncs of diff READMEs
+            if [[ "$root_readme_content" != "$docs_readme_content" ]] ; then
+              if [[ $root_readme_modified -gt $docs_readme_modified ]] ; then
+                cp -f "$root_readme" "$docs_readme"
+                echo "Copied $root_readme to $docs_readme"
+                src_folder=${pkg_root#./}
+              elif [[ $docs_readme_modified -gt $root_readme_modified ]] ; then
+                cp -f "$docs_readme" "$root_readme"
+                echo "Copied $docs_readme to $root_readme"
+                src_folder=${pkg_root#./}"/docs"
+              fi
+            fi
+          done
+
+          # Store sync src for commit msg in next step
+          echo "sync_src=$src_folder" >> $GITHUB_OUTPUT
+
+      - name: Push to adamlui/js-utils
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          push_options: --force
+          add_options: --all
+          commit_user_email: auto-sync@kudoai.com
+          commit_message: "${{ github.event.head_commit.message }} ↞ [auto-sync from `${{ steps.sync_readmes.outputs.sync_src }}`]"
+          file_pattern: "**"
+          repository: adamlui/js-utils
