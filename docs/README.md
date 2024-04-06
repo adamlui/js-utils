@@ -43,13 +43,13 @@ Essential JavaScript libraries/utilities for Node.js and the web
 <br>[Download](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
 [Discuss](https://js-utils.com/discussions)
 
-### [</> minify.js](../minify.js) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+### [</> minify.js](../node.js/minify.js) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Recursively minify all JavaScript files.
-<br>[Install](../minify.js#-installation) /
-[Readme](../minify.js#readme) /
-[CLI usage](../minify.js#-command-line-usage) /
-[API usage](../minify.js#-api-usage) /
+<br>[Install](../minify.js/node.js#-installation) /
+[Readme](../minify.js/node.js#readme) /
+[CLI usage](../minify.js/node.js#-command-line-usage) /
+[API usage](../minify.js/node.js#-api-usage) /
 [Discuss](https://js-utils.com/discussions)
 
 ### [{ } scss-to-css](../scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
