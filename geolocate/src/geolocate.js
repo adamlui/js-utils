@@ -7,6 +7,8 @@
 
 async function geolocate(ip) {
 
+    const docURL = 'https://github.com/adamlui/js-utils/tree/main/geolocate#locateip';
+
     // Validate IP
     let ipIsValid;
     try { // to use Node.js module
@@ -15,8 +17,11 @@ async function geolocate(ip) {
         await import('https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js');
         ipIsValid = ipv4.validate; // eslint-disable-line no-undef
     }
-    if (ipIsValid && !ipIsValid(ip, { verbose: false }))
-        return console.error('geolocate() » ERROR: Invalid IP address passed.');
+    if (ipIsValid && !ipIsValid(ip, { verbose: false })) {
+        console.error('geolocate() » ERROR: Invalid IP address passed.');
+        console.info('geolocate() » For more help, please visit ' + docURL);
+        return;
+    }
 
     try { // to fetch/get/return geolocation data
         let response;
