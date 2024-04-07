@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+const docURL = 'https://docs.minify-js.org/#-command-line-usage';
+
 // Import LIBS
 const minifyJS = require(__dirname.match(/src/) ? './minify' : './minify.min'),
       fs = require('fs'),
@@ -37,8 +39,7 @@ process.argv.forEach(arg => {
     else if (matchedParamOption) {
         if (!arg.includes('=')) {
             console.error(`\n${br}ERROR: Arg [--${arg.replace(/-/g, '')}] requires '=' followed by a value.${nc}`);
-            console.error(`\n${by}For more help, type 'minify-js --help'.${nc}`);
-            process.exit(1);
+            printHelpCmdAndDocURL(); process.exit(1);
         }
         const value = arg.split('=')[1];
         config[matchedParamOption] = parseInt(value) || value;
@@ -46,7 +47,7 @@ process.argv.forEach(arg => {
         console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
         console.info(`\n${by}Valid arguments are below.${nc}`);
         printHelpSections(['paramOptions', 'flags', 'infoCmds']);
-        process.exit(1);
+        printHelpCmdAndDocURL(); process.exit(1);
 }});
 
 // Show HELP screen if -h or --help passed
@@ -70,9 +71,8 @@ else { // run MAIN routine
     if (inputArg && !fs.existsSync(inputPath)) {
         console.error(`\n${br}Error: First argument can only be an existing file or directory.`
             + `\n${ inputPath } does not exist.${nc}`
-            + `\n\n${bg}Example valid command: \n» minify-js . output.min.js${nc}`
-            + `\n\n${by}For all command options: \n» minify-js --help${nc}`);
-        process.exit(1);
+            + `\n\n${bg}Example valid command: \n» minify-js . output.min.js${nc}`);
+        printHelpCmdAndDocURL(); process.exit(1);
     }
 
     // Find all eligible JavaScript files or arg-passed file
@@ -192,5 +192,8 @@ function printHelpSections(
         ));
     }
 }
+
+function printHelpCmdAndDocURL() {
+    console.info(`\n${by}For more help, type 'minify-js --help' or visit\n${docURL + nc}`); }
 
 function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }

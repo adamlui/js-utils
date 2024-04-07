@@ -13,7 +13,9 @@ const fs = require('fs'),
 
 function findJS(searchDir, options = {}) {
 
-    const exampleCall = 'findJS(\'assets/js\', { verbose: false, dotFolders: true })';
+    const docURL = 'https://docs.minify-js.org/#findjssearchdir-options',
+          exampleCall = 'findJS(\'assets/js\', { verbose: false, dotFoldes: true })';
+
     const defaultOptions = {
         recursive: true,   // recursively search for nested files in searchDir passed
         verbose: true,     // enable logging
@@ -22,13 +24,16 @@ function findJS(searchDir, options = {}) {
     };
 
     // Validate searchDir
-    if (typeof searchDir !== 'string')
-        return console.error('findJS() » ERROR: 1st arg <searchDir> must be a string.');
-    else { // verify searchDir path existence
+    if (typeof searchDir !== 'string') {
+           console.error('findJS() » ERROR: 1st arg <searchDir> must be a string.');
+           console.info('findJS() » For more help, please visit ' + docURL);
+           return;
+    } else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir);
         if (!fs.existsSync(searchPath)) {
            console.error('findJS() » ERROR: 1st arg <searchDir> must be an existing directory.');
-           console.error(`findJS() » ${ searchPath } does not exist.`);
+           console.error(`findJS() » ${ searchPath } does not exist.`);           
+           console.info('findJS() » For more help, please visit ' + docURL);
            return;
     }}
 
@@ -64,7 +69,9 @@ function findJS(searchDir, options = {}) {
 
 function minify(input, options = {}) {
 
-    const exampleCall = 'minify(\'assets/js\', { recursive: false, mangle: false })';
+    const docURL = 'https://docs.minify-js.org/#minifyinput-options',
+          exampleCall = 'minify(\'assets/js\', { recursive: false, mangle: false })';
+
     const defaultOptions = {
         recursive: true,   // recursively search for nested files if dir path passed
         verbose: true,     // enable logging
@@ -75,8 +82,11 @@ function minify(input, options = {}) {
     };
 
     // Validate input
-    if (typeof input !== 'string') return console.error(
-        'minify() » ERROR: 1st arg <input> must be a string.');
+    if (typeof input !== 'string') {
+        console.error('minify() » ERROR: 1st arg <input> must be a string.');
+        console.info('minify() » For more help, please visit ' + docURL);
+        return;
+    }
 
     // Validate/init options
     if (!validateOptions(options, defaultOptions, exampleCall)) return;
@@ -127,7 +137,10 @@ function minify(input, options = {}) {
 // Define INTERNAL validation function
 
 function validateOptions(options, defaultOptions, exampleCall) {
-    const logPrefix = ( validateOptions.caller?.name || 'validateOptions' ) + '() » ';
+
+    const docURL = 'https://docs.minify-js.org/#-api-usage';
+
+    // Init option strings/types
     const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
         .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
         .replace(/"/g, '\'') // replace double quotes w/ single quotes
@@ -135,29 +148,36 @@ function validateOptions(options, defaultOptions, exampleCall) {
     const strValidOptions = Object.keys(defaultOptions).join(', '),
           booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] === 'boolean'),
           integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]));
+
+    // Define print functions
+    const logPrefix = ( validateOptions.caller?.name || 'validateOptions' ) + '() » ';
     const printValidOptions = () => {
         console.info(`${ logPrefix }Valid options: [ ${ strValidOptions } ]`);
         console.info(`${ logPrefix }If omitted, default settings are: ${ strDefaultOptions }`);
     };
+    const printDocURL = () => {
+        console.info(`${ logPrefix }For more help, please visit ${docURL}`); };
+
+    // Validate options
     if (typeof options != 'object') { // validate as obj
         console.error(`${ logPrefix }ERROR: [options] can only be an object of key/values.`);
         console.info(`${ logPrefix }Example valid call: ${ exampleCall }`);
-        printValidOptions(); return false;
+        printValidOptions(); printDocURL(); return false;
     }
     for (const key in options) { // validate each key
         if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
                 `${ logPrefix }ERROR: \`${ key }\` is an invalid option.`);
-            printValidOptions(); return false;
+            printValidOptions(); printDocURL(); return false;
         } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean') {
             console.error(
                 `${ logPrefix }ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
-            return false;
+            printDocURL(); return false;
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) {
                 console.error(`${ logPrefix }ERROR: [${ key }] option can only be an integer > 0.`);
-                return false;
+                printDocURL(); return false;
             }
         }
     }
