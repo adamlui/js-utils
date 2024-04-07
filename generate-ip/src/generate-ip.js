@@ -21,14 +21,16 @@ const ipv4 = {
 
     generate: function(options = {}) {
 
-        const exampleCall = 'ipv4.generate({ verbose: false, qty: 3 })';
+        const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip#ipv4generateoptions',
+              exampleCall = 'ipv4.generate({ verbose: false, qty: 3 })';
+
         const defaultOptions = {
             verbose: true, // enable logging
             qty: 1         // number of IP addresses to generate
         };
 
         // Validate/init options
-        if (!validateOptions(options, defaultOptions, exampleCall)) return;
+        if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
         options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
         // Generate IPv4 address(es)
@@ -59,15 +61,19 @@ const ipv4 = {
 
     validate: function(address, options = {}) {
 
-        const exampleCall = 'ipv4.validate(\'0.0.255.255\', { verbose: false })',
+        const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip#ipv4validateaddress-options',
+              exampleCall = 'ipv4.validate(\'0.0.255.255\', { verbose: false })',
               defaultOptions = { verbose: true /* enable logging */ };
 
         // Validate address as arg
-        if (typeof address !== 'string') return console.error(
-            'ipv4.validate() » ERROR: 1st arg <address> must be a string.');
+        if (typeof address !== 'string') {
+            console.error('ipv4.validate() » ERROR: 1st arg <address> must be a string.');
+            console.info('ipv4.validate() » For more help, please visit ' + docURL);
+            return;
+        }
 
         // Validate/init options
-        if (!validateOptions(options, defaultOptions, exampleCall)) return;
+        if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
         options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
         // Validate address as IPv4 address
@@ -93,7 +99,9 @@ const ipv6 = {
 
     generate: function(options = {}) {
 
-        const exampleCall = 'ipv6.generate({ leadingZeros: true, qty: 5 })';
+        const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip#ipv6generateoptions',
+              exampleCall = 'ipv6.generate({ leadingZeros: true, qty: 5 })';
+
         const defaultOptions = {
             verbose: true,       // enable logging
             qty: 1,              // number of IP addresses to generate
@@ -102,7 +110,7 @@ const ipv6 = {
         };
 
         // Validate/init options
-        if (!validateOptions(options, defaultOptions, exampleCall)) return;
+        if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
         options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
         // Generate IPv6 address(es)
@@ -134,8 +142,11 @@ const ipv6 = {
     },
 
     format: function(address, options = {}) {
-        const exampleCall = 'ipv6.format(\'0d::ffff:192.1.56.10/96\', '
+
+        const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip#ipv6formataddress-options',
+              exampleCall = 'ipv6.format(\'0d::ffff:192.1.56.10/96\', '
                           + '{ leadingZeros: true, doubleColon: false })';
+
         const defaultOptions = {
             verbose: true,       // enable logging
             leadingZeros: false, // include leading zeros in hex pieces
@@ -143,13 +154,19 @@ const ipv6 = {
         };
 
         // Validate address
-        if (typeof address !== 'string') return console.error(
-            'ipv6.format() » ERROR: 1st arg <address> must be a string.');
-        if (!this.validate(address, { verbose: false})) return console.error(
-            `ipv6.format() » ERROR:  ${ address } is not a valid IPv6 address.`);
+        if (typeof address !== 'string') {
+            console.error('ipv6.format() » ERROR: 1st arg <address> must be a string.');
+            console.info('ipv6.format() » For more help, please visit ' + docURL);
+            return;
+        }
+        if (!this.validate(address, { verbose: false})) {
+            console.error(`ipv6.format() » ERROR:  ${ address } is not a valid IPv6 address.`);
+            console.info('ipv6.format() » For more help, please visit ' + docURL);
+            return;
+        }
 
         // Validate/init options
-        if (!validateOptions(options, defaultOptions, exampleCall)) return;
+        if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
         options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
         // Init formattedAddress
@@ -197,15 +214,19 @@ const ipv6 = {
 
     validate: function(address, options = {}) {
 
-        const exampleCall = 'ipv6.validate(\'0:0:0:0:0:ffff:192.1.56.10/96\', { verbose: false })',
+        const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip#ipv6validateaddress-options',
+              exampleCall = 'ipv6.validate(\'0:0:0:0:0:ffff:192.1.56.10/96\', { verbose: false })',
               defaultOptions = { verbose: true /* enable logging */ };
 
         // Validate address as arg
-        if (typeof address !== 'string') return console.error(
-            'ipv6.validate() » ERROR: 1st arg <address> must be a string.');
+        if (typeof address !== 'string') {
+            console.error('ipv6.validate() » ERROR: 1st arg <address> must be a string.');
+            console.info('ipv6.validate() » For more help, please visit ' + docURL);
+            return;
+        }
 
         // Validate/init options
-        if (!validateOptions(options, defaultOptions, exampleCall)) return;
+        if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
         options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
         // Validate address as IPv6 address
@@ -235,8 +256,9 @@ const ipv6 = {
 
 // Define INTERNAL validation function
 
-function validateOptions(options, defaultOptions, exampleCall) {
-    const logPrefix = ( validateOptions.caller?.name || 'validateOptions' ) + '() » ';
+function validateOptions(options, defaultOptions, docURL, exampleCall) {
+
+    // Init option strings/types
     const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
         .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
         .replace(/"/g, '\'') // replace double quotes w/ single quotes
@@ -244,29 +266,36 @@ function validateOptions(options, defaultOptions, exampleCall) {
     const strValidOptions = Object.keys(defaultOptions).join(', '),
           booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] === 'boolean'),
           integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]));
+
+    // Define print functions
+    const logPrefix = ( validateOptions.caller?.name || 'validateOptions' ) + '() » ';
     const printValidOptions = () => {
         console.info(`${ logPrefix }Valid options: [ ${ strValidOptions } ]`);
         console.info(`${ logPrefix }If omitted, default settings are: ${ strDefaultOptions }`);
     };
+    const printDocURL = () => {
+        console.info(`${ logPrefix }For more help, please visit ${docURL}`); };
+
+    // Validate options
     if (typeof options != 'object') { // validate as obj
         console.error(`${ logPrefix }ERROR: [options] can only be an object of key/values.`);
         console.info(`${ logPrefix }Example valid call: ${ exampleCall }`);
-        printValidOptions(); return false;
+        printValidOptions(); printDocURL(); return false;
     }
     for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
                 `${ logPrefix }ERROR: \`${ key }\` is an invalid option.`);
-            printValidOptions(); return false;
+            printValidOptions(); printDocURL(); return false;
         } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean') {
             console.error(
                 `${ logPrefix }ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
-            return false;
+            printDocURL(); return false;
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) {
                 console.error(`${ logPrefix }ERROR: [${ key }] option can only be an integer > 0.`);
-                return false;
+                printDocURL(); return false;
             }
         }
     }
