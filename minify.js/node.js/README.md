@@ -125,7 +125,10 @@ $ minify-js input_folder output_folder
 ### Command line options
 
 ```
-Config options:
+Parameter options:
+ --comment=comment           Prepend comment to minified code.
+
+Boolean options:
  -n, --dry-run               Don't actually minify the file(s), just show
                              if they will be processed.
  -d, --include-dotfolders    Include dotfolders in file search.
@@ -199,13 +202,14 @@ minifyJS.minify(input, { dotFiles: true });
 
 Available parameters (and their default settings) are:
 
-Name         | Desciption                                              | Default value
--------------|---------------------------------------------------------|---------------
-`recursive`  | Recursively search for nested files if dir path passed. | `true`
-`verbose`    | Show logging in console/terminal.                       | `true`
-`dotFolders` | Include dotfolders in file search.                      | `false`
-`dotFiles`   | Include dotfiles in file search.                        | `false`
-`mangle`     | Shorten variable names (typically to one character).    | `true`
+Name         | Type    | Desciption                                              | Default value
+-------------|---------|---------------------------------------------------------|---------------
+`recursive`  | Boolean | Recursively search for nested files if dir path passed. | `true`
+`verbose`    | Boolean | Show logging in console/terminal.                       | `true`
+`dotFolders` | Boolean | Include dotfolders in file search.                      | `false`
+`dotFiles`   | Boolean | Include dotfiles in file search.                        | `false`
+`mangle`     | Boolean | Shorten variable names (typically to one character).    | `true`
+`comment`    | String  | Comment to prepend to minified code.                    | `''`
 
 #
 

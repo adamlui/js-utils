@@ -14,6 +14,7 @@ const nc = '\x1b[0m',    // no color
 // Load FLAG settings
 const config = {};
 const argRegex = {
+    paramOptions: { 'comment': /^--?comments?/ },
     flags: {
         'dryRun': /^--?(?:n|dry-?run)$/,
         'includeDotFolders': /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
@@ -29,10 +30,19 @@ const argRegex = {
 };
 process.argv.forEach(arg => {
     if (!arg.startsWith('-')) return;
-    const matchedFlag = Object.keys(argRegex.flags).find(flag => argRegex.flags[flag].test(arg)),
+    const matchedParamOption = Object.keys(argRegex.paramOptions).find(option => argRegex.paramOptions[option].test(arg)),
+          matchedFlag = Object.keys(argRegex.flags).find(flag => argRegex.flags[flag].test(arg)),
           matchedInfoCmd = Object.keys(argRegex.infoCmds).find(cmd => argRegex.infoCmds[cmd].test(arg));
     if (matchedFlag) config[matchedFlag] = true;
-    else if (!matchedInfoCmd) {
+    else if (matchedParamOption) {
+        if (!arg.includes('=')) {
+            console.error(`\n${br}ERROR: Arg [--${arg.replace(/-/g, '')}] requires '=' followed by a value.${nc}`);
+            console.error(`\n${by}For more help, type 'minify-js --help'.${nc}`);
+            process.exit(1);
+        }
+        const value = arg.split('=')[1];
+        config[matchedParamOption] = parseInt(value) || value;
+    } else if (!matchedInfoCmd) {
         console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
         console.info(`\n${by}Valid arguments are below.${nc}`);
         printHelpSections(['paramOptions', 'flags', 'infoCmds']);
@@ -80,7 +90,8 @@ else { // run MAIN routine
         // Build array of minification data
         const failedPaths = [];
         const minifyData = unminnedJSfiles.map(jsPath => {
-            const minifyResult = minifyJS.minify(jsPath, { verbose: !config.quietMode, mangle: !config.noMangle });
+            const minifyResult = minifyJS.minify(jsPath, { verbose: !config.quietMode, mangle: !config.noMangle,
+                                                           comment: config.comment });
             if (minifyResult.error) failedPaths.push(jsPath);
             return minifyResult;
         }).filter(minifyResult => !minifyResult.error); // filter out failed minifications
@@ -120,7 +131,8 @@ else { // run MAIN routine
 
 // Define LOGGING functions
 
-function printHelpSections(includeSections = ['cmdFormat', 'pathArgs', 'flags', 'infoCmds']) {
+function printHelpSections(
+    includeSections = ['cmdFormat', 'pathArgs', 'paramOptions', 'flags', 'infoCmds']) {
     const helpSections = {
         'cmdFormat': [
             `\n${by}minify-js [inputPath] [outputPath] [options]${nc}`
@@ -133,6 +145,10 @@ function printHelpSections(includeSections = ['cmdFormat', 'pathArgs', 'flags', 
             ' [outputPath]                '
                 + 'Path to file or directory where minified files will be stored,'
                 + ' relative to original file location (if not provided, min/ is used).'
+        ],
+        'paramOptions': [
+            '\nParameter options:',
+            ' --comment=comment           Prepend comment to minified code.'
         ],
         'flags': [
             '\nBoolean options:',

@@ -70,7 +70,8 @@ function minify(input, options = {}) {
         verbose: true,     // enable logging
         dotFolders: false, // include dotfolders in file search
         dotFiles: false,   // include dotfiles in file search
-        mangle: true       // shorten var names (typically to one character)
+        mangle: true,      // shorten var names (typically to one character)
+        comment: ''        // prepend comment to code
     };
 
     // Validate input
@@ -86,7 +87,8 @@ function minify(input, options = {}) {
     if (fs.existsSync(input)) { // minify based on path arg
         if (input.endsWith('.js')) { // file path passed
             if (options.verbose) console.info(`minify() » Minifying ${ input }...`);
-            const minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions);
+            let minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions);
+            if (options.comment) minifyResult.code = prependComment(minifyResult.code);
             if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
             else if (options.verbose && !require.main.filename.endsWith('cli.js'))
                 console.info('minify() » Minification complete. Check returned object.');
@@ -97,8 +99,9 @@ function minify(input, options = {}) {
                                                  dotFolders: options.dotFolders, dotFiles: options.dotFiles 
                 })?.map(jsPath => { // minify found JS files
                     if (options.verbose) console.info(`minify() » Minifying ${ jsPath }...`);
-                    const srcCode = fs.readFileSync(jsPath, 'utf8'),
-                          minifyResult = uglifyJS.minify(srcCode, minifyOptions);
+                    const srcCode = fs.readFileSync(jsPath, 'utf8');
+                    let minifyResult = uglifyJS.minify(srcCode, minifyOptions);
+                    if (options.comment) minifyResult.code = prependComment(minifyResult.code);
                     if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
                     return { code: minifyResult.code, srcPath: jsPath, error: minifyResult.error };
                 }).filter(data => !data.error); // filter out failed minifications
@@ -112,11 +115,13 @@ function minify(input, options = {}) {
         }
     } else { // minify based on src code arg
         if (options.verbose) console.info('minify() » Minifying passed source code...');
-        const minifyResult = uglifyJS.minify(input, minifyOptions);
+        let minifyResult = uglifyJS.minify(input, minifyOptions);
+        if (options.comment) minifyResult.code = prependComment(minifyResult.code);
         if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
         else if (options.verbose) console.info('minify() » Minification complete. Check returned object.');
         return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error };
     }
+    function prependComment(code) { return `/*\n  ${ options.comment }\n*/\n${ code }`; }
 }
 
 // Define INTERNAL validation function
