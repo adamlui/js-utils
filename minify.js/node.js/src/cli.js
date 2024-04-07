@@ -22,7 +22,7 @@ const argRegex = {
         'noMangle': /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/,
         'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
     },
-    paramOptions: { 'comment': /^--?comments?/ },
+    paramOptions: { 'comment': /^--?comments?(?:=.*|$)/ },
     infoCmds: {
         'help': /^--?h(?:elp)?$/,
         'version': /^--?ve?r?s?i?o?n?$/
