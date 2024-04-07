@@ -14,31 +14,36 @@ const nc = '\x1b[0m',    // no color
 // Load FLAG settings
 const config = {};
 const argRegex = {
-    'dryRun': /^--?(?:n|dry-?run)$/,
-    'includeDotFolders': /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
-    'includeDotFiles': /^--?(?:df|D|(?:include-?)?dot-?files?=?(?:true|1)?)$/,
-    'noRecursion': /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
-    'noMangle': /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/,
-    'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/,
-    'help': /^--?h(?:elp)?$/,
-    'version': /^--?ve?r?s?i?o?n?$/
+    flags: {
+        'dryRun': /^--?(?:n|dry-?run)$/,
+        'includeDotFolders': /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
+        'includeDotFiles': /^--?(?:df|D|(?:include-?)?dot-?files?=?(?:true|1)?)$/,
+        'noRecursion': /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
+        'noMangle': /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/,
+        'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
+    },
+    infoCmds: {
+        'help': /^--?h(?:elp)?$/,
+        'version': /^--?ve?r?s?i?o?n?$/
+    }
 };
 process.argv.forEach(arg => {
     if (!arg.startsWith('-')) return;
-    const matchedFlag = Object.keys(argRegex).find(flag => argRegex[flag].test(arg));
+    const matchedFlag = Object.keys(argRegex.flags).find(flag => argRegex.flags[flag].test(arg)),
+          matchedInfoCmd = Object.keys(argRegex.infoCmds).find(cmd => argRegex.infoCmds[cmd].test(arg));
     if (matchedFlag) config[matchedFlag] = true;
-    else {
+    else if (!matchedInfoCmd) {
         console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
         console.info(`\n${by}Valid arguments are below.${nc}`);
-        printHelpSections(['configOptions', 'infoCmds']);
+        printHelpSections(['paramOptions', 'flags', 'infoCmds']);
         process.exit(1);
 }});
 
 // Show HELP screen if -h or --help passed
-if (process.argv.some(arg => argRegex.help.test(arg))) printHelpSections();
+if (process.argv.some(arg => argRegex.infoCmds.help.test(arg))) printHelpSections();
 
 // Show VERSION number if -v or --version passed
-else if (process.argv.some(arg => argRegex.version.test(arg)))
+else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg)))
     console.info('v' + require('./package.json').version);
 
 else { // run MAIN routine
