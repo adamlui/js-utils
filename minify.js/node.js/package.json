@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adamlui/js-utils.git"
+    "url": "git+https://github.com/adamlui/minify.js.git"
   },
   "keywords": [
     "javascript",
