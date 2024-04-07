@@ -27,7 +27,9 @@ const charsets = {
 
 function generatePassword(options = {}) {
 
-    const exampleCall = 'generatePassword({ verbose: false, numbers: true })';
+    const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw#generatepasswordoptions',
+          exampleCall = 'generatePassword({ verbose: false, numbers: true })';
+
     const defaultOptions = {
         verbose: true,   // enable logging
         length: 8,       // length of password
@@ -42,7 +44,7 @@ function generatePassword(options = {}) {
     };
 
     // Validate/init options
-    if (!validateOptions(options, defaultOptions, exampleCall)) return;
+    if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     if (options.qty > 1) { // generate/return array of [qty] password strings
@@ -98,7 +100,9 @@ function generatePassword(options = {}) {
 
 function generatePasswords(qty, options = {}) {
 
-    const exampleCall = 'generatePasswords(3, { verbose: false, symbols: true })';
+    const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw#generatepasswordsqty-options',
+          exampleCall = 'generatePasswords(3, { verbose: false, symbols: true })';
+
     const defaultOptions = {
         verbose: true,   // enable logging
         length: 8,       // length of password
@@ -113,11 +117,14 @@ function generatePasswords(qty, options = {}) {
 
     // Validate qty
     qty = parseInt(qty, 10);
-    if (isNaN(qty) || qty < 1) return console.error(
-        'generatePasswords() » ERROR: 1st arg <qty> can only be an integer > 0.');
+    if (isNaN(qty) || qty < 1) {
+        console.error('generatePasswords() » ERROR: 1st arg <qty> can only be an integer > 0.');
+        console.info('generatePasswords() » For more help, please visit ' + docURL);
+        return;
+    }
 
     // Validate/init options
-    if (!validateOptions(options, defaultOptions, exampleCall)) return;
+    if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     // Generate passwords
@@ -135,12 +142,16 @@ function generatePasswords(qty, options = {}) {
 
 function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', 'upper'], options = {}) {
 
-    const exampleCall = 'strictify(\'pa55word\', [\'symbol\', \'upper\'], { verbose: false })',
+    const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw#strictifypassword-requiredchartypes-options',
+          exampleCall = 'strictify(\'pa55word\', [\'symbol\', \'upper\'], { verbose: false })',
           defaultOptions = { verbose: true /* enable logging */ };
 
     // Validate password
-    if (typeof password !== 'string') return console.error(
-        'strictify() » ERROR: 1st arg <password> must be a string.');
+    if (typeof password !== 'string') {
+        console.error('strictify() » ERROR: 1st arg <password> must be a string.');
+        console.info('strictify() » For more help, please visit ' + docURL);
+        return;
+    }
 
     // Validate requiredCharTypes
     const validCharTypes = ['number', 'symbol', 'lower', 'upper'];
@@ -151,11 +162,12 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
             console.error(`strictify() » ERROR: 2nd arg \`${ charType }\` is an invalid character type.`);
             console.info(`strictify() » Valid character types: [ ${ validCharTypes.map(type => `'${ type }'`).join(', ') } ]`);
             console.info('strictify() » Pass one as a string or more as an array, or all types will be required.');
+            console.info('strictify() » For more help, please visit ' + docURL);
             return;
     }}
 
     // Validate/init options
-    if (!validateOptions(options, defaultOptions, exampleCall)) return;
+    if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     // Init mod flags
@@ -201,16 +213,20 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
 
 function validateStrength(password, options = {}) {
 
-    const exampleCall = 'validateStrength(\'pa55word\', { verbose: false })',
+    const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw#validatestrengthpassword-options',
+          exampleCall = 'validateStrength(\'pa55word\', { verbose: false })',
           strengthCriteria = { minLength: 8, minLower: 1, minUpper: 1, minNumber: 1, minSymbol: 1 },
           defaultOptions = { verbose: true /* enable logging */ };
 
     // Validate password
-    if (typeof password !== 'string') return console.error(
-        'validateStrength() » ERROR: 1st arg <password> must be a string.');
+    if (typeof password !== 'string') {
+        console.error('validateStrength() » ERROR: 1st arg <password> must be a string.');
+        console.info('validateStrength() » For more help, please visit ' + docURL);
+        return;
+    }
 
     // Validate/init options
-    if (!validateOptions(options, defaultOptions, exampleCall)) return;
+    if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     if (options.verbose) console.info('validateStrength() » Validating password strength...');
@@ -249,8 +265,9 @@ function validateStrength(password, options = {}) {
 
 // Define INTERNAL validation function
 
-function validateOptions(options, defaultOptions, exampleCall) {
-    const logPrefix = ( validateOptions.caller?.name || 'validateOptions' ) + '() » ';
+function validateOptions(options, defaultOptions, docURL, exampleCall) {
+
+    // Init option strings/types
     const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
         .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
         .replace(/"/g, '\'') // replace double quotes w/ single quotes
@@ -258,29 +275,36 @@ function validateOptions(options, defaultOptions, exampleCall) {
     const strValidOptions = Object.keys(defaultOptions).join(', '),
           booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] === 'boolean'),
           integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]));
+
+    // Define print functions
+    const logPrefix = ( validateOptions.caller?.name || 'validateOptions' ) + '() » ';
     const printValidOptions = () => {
         console.info(`${ logPrefix }Valid options: [ ${ strValidOptions } ]`);
         console.info(`${ logPrefix }If omitted, default settings are: ${ strDefaultOptions }`);
     };
+    const printDocURL = () => {
+        console.info(`${ logPrefix }For more help, please visit ${docURL}`); };
+
+    // Validate options
     if (typeof options != 'object') { // validate as obj
         console.error(`${ logPrefix }ERROR: [options] can only be an object of key/values.`);
         console.info(`${ logPrefix }Example valid call: ${ exampleCall }`);
-        printValidOptions(); return false;
+        printValidOptions(); printDocURL(); return false;
     }
     for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
                 `${ logPrefix }ERROR: \`${ key }\` is an invalid option.`);
-            printValidOptions(); return false;
+            printValidOptions(); printDocURL(); return false;
         } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean') {
             console.error(
                 `${ logPrefix }ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
-            return false;
+            printDocURL(); return false;
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) {
                 console.error(`${ logPrefix }ERROR: [${ key }] option can only be an integer > 0.`);
-                return false;
+                printDocURL(); return false;
             }
         }
     }
