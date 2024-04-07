@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip#-command-line-usage';
+
 // Import LIBS
 const { ipv4 } = require(__dirname.match(/src/) ? './generate-ip' : './generate-ip.min'),
       { execSync } = require('child_process'); // for cross-platform copying
@@ -28,8 +30,7 @@ process.argv.forEach(arg => {
     else if (matchedParamOption) {
         if (!arg.includes('=')) {
             console.error(`\n${br}ERROR: Arg [--${arg.replace(/-/g, '')}] requires '=' followed by a value.${nc}`);
-            console.error(`\n${by}For more help, type 'generate-pw --help'.${nc}`);
-            process.exit(1);
+            printHelpCmdAndDocURL(); process.exit(1);
         }
         const value = arg.split('=')[1];
         config[matchedParamOption] = parseInt(value) || value;
@@ -37,7 +38,7 @@ process.argv.forEach(arg => {
         console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
         console.info(`\n${by}Valid arguments are below.${nc}`);
         printHelpSections(['paramOptions', 'flags', 'infoCmds']);
-        process.exit(1);
+        printHelpCmdAndDocURL(); process.exit(1);
 }});
 
 // Show HELP screen if -h or --help passed
@@ -50,7 +51,7 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg)))
 else { // log/copy RESULT(S)
     if (config.qty && (isNaN(config.qty) || config.qty < 1)) {
         console.error(`\n${br}Error: [qty] argument can only be > 0.${nc}`);
-        process.exit(1);
+        printHelpCmdAndDocURL(); process.exit(1);
     }
     const ipResult = ipv4.generate({ qty: config.qty || 1, verbose: !config.quietMode });
     if (!config.quietMode) {
@@ -107,6 +108,9 @@ function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'flag
         ));
     }
 }
+
+function printHelpCmdAndDocURL() {
+    console.info(`\n${by}For more help, type 'generate-ip --help' or visit\n${docURL + nc}`); }
 
 function copyToClipboard(data) {
     data = data.replace(/\s+$/, '').replace(/"/g, '""');
