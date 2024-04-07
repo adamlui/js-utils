@@ -12,7 +12,7 @@ const nc = '\x1b[0m',    // no color
 // Load settings from ARGS
 const config = {};
 const argRegex = {
-    paramOptions: { 'qty': /^--?qu?a?n?ti?t?y/ },
+    paramOptions: { 'qty': /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
     flags: { 'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/ },
     infoCmds: {
         'help': /^--?h(?:elp)?$/,
