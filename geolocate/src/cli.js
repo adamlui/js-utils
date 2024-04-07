@@ -2,6 +2,8 @@
 
 (async () => {
 
+    const docURL = 'https://github.com/adamlui/js-utils/tree/main/geolocate#-command-line-usage';
+
     // Import LIBS
     const geo = require(__dirname.match(/src/) ? './geolocate' : './geolocate.min'),
           { ipv4 } = require('generate-ip'),
@@ -30,7 +32,7 @@
             console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
             console.info(`\n${by}Valid arguments are below.${nc}`);
             printHelpSections(['flags', 'infoCmds']);
-            process.exit(1);
+            printHelpCmdAndDocURL(); process.exit(1);
     }});
 
     // Show HELP screen if -h or --help passed
@@ -50,8 +52,7 @@
                 else {
                     const ordSuffix = i == 0 ? 'st' : i == 1 ? 'nd' : 'th';
                     console.error(`ERROR: ${ i + 1 + ordSuffix } arg '${args[i]}' is not a valid IPv4 address.`);
-                    console.info('Type \'geolocate --help\' for help.');
-                    process.exit(1);
+                    printHelpCmdAndDocURL(); process.exit(1);
         }}}
         if (validIPs.length == 0) // no IP arg passed
             validIPs.push(await geo.getOwnIP()); // use own IP
@@ -110,6 +111,9 @@
             ));
         }
     }
+
+    function printHelpCmdAndDocURL() {
+        console.info(`\n${by}For more help, type 'minify-js --help' or visit\n${docURL + nc}`); }
 
     function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
 
