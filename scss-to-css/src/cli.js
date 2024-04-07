@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+const docURL = 'https://github.com/adamlui/js-utils/tree/main/scss-to-css#-command-line-usage';
+
 // Import LIBS
 const fs = require('fs'),
       path = require('path'),
@@ -31,7 +33,7 @@ process.argv.forEach(arg => {
         console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
         console.info(`\n${by}Valid arguments are below.${nc}`);
         printHelpSections(['configOptions', 'infoCmds']);
-        process.exit(1);
+        printHelpCmdAndDocURL(); process.exit(1);
 }});
 
 // Show HELP screen if -h or --help passed
@@ -55,9 +57,8 @@ else { // run MAIN routine
     if (inputArg && !fs.existsSync(inputPath)) {
         console.error(`\n${br}Error: First argument can only be an existing file or directory.`
             + `\n'${ inputPath }' does not exist.${nc}`
-            + `\n\n${bg}Example valid command: \n» scss-to-css . output.min.css${nc}`
-            + `\n\n${by}For all command options: \n» scss-to-css --help${nc}`);
-        process.exit(1);
+            + `\n\n${bg}Example valid command: \n» scss-to-css . output.min.css${nc}`);
+        printHelpCmdAndDocURL(); process.exit(1);
     }
 
     // Find all eligible JavaScript files or arg-passed file
@@ -176,5 +177,8 @@ function printHelpSections(includeSections = ['cmdFormat', 'pathArgs', 'configOp
         ));
     }
 }
+
+function printHelpCmdAndDocURL() {
+    console.info(`\n${by}For more help, type 'scss-to-css --help' or visit\n${docURL + nc}`); }
 
 function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
