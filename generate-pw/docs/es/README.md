@@ -19,9 +19,9 @@
 ### Genere, fortalezca y valide aleatoriamente contraseñas criptográficamente seguras.
 
 <a href="#%EF%B8%8F-licencia-mit"><img height=31 src="https://img.shields.io/badge/Licencia-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-1.4.3"><img height=31 src="https://img.shields.io/badge/Ultima_Versión-1.4.3-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-1.4.4"><img height=31 src="https://img.shields.io/badge/Ultima_Versión-1.4.4-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/generate-pw?activeTab=code"><img height=31 src="https://img.shields.io/npm/unpacked-size/generate-pw?style=for-the-badge&logo=ebox&logoColor=white&labelColor=464646&color=blue&label=Tama%C3%B1o%20Desempaquetado"></a>
-<a href="https://github.com/adamlui/js-utils/blob/generate-pw-1.4.3/generate-pw/dist/generate-pw.min.js"><img height=31 src="https://img.shields.io/github/size/adamlui/js-utils/generate-pw/dist/generate-pw.min.js?branch=generate-pw-1.4.3&label=Tama%C3%B1o%20Minimizado&logo=databricks&logoColor=white&labelColor=464646&color=ff69b4&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/blob/generate-pw-1.4.4/generate-pw/dist/generate-pw.min.js"><img height=31 src="https://img.shields.io/github/size/adamlui/js-utils/generate-pw/dist/generate-pw.min.js?branch=generate-pw-1.4.4&label=Tama%C3%B1o%20Minimizado&logo=databricks&logoColor=white&labelColor=464646&color=ff69b4&style=for-the-badge"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_js-utils:generate-pw/src/generate-pw.js"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_js-utils%3Agenerate-pw%2Fsrc%2Fgenerate-pw.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilidades&color=gold"></a>
 <a href="https://github.com/toolleeo/cli-apps#password-managers"><img height=31 src="https://img.shields.io/badge/Mencionado_en-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
@@ -81,14 +81,14 @@ const pw = require('generate-pw');
 #### <> Etiqueta de secuencia de comandos HTML:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/generate-pw@1.4.3/dist/generate-pw.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/generate-pw@1.4.4/dist/generate-pw.min.js"></script>
 ```
 
 #### ES6:
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.4.3/dist/generate-pw.min.js');
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.4.4/dist/generate-pw.min.js');
     // Tu código aquí...
 })();
 ```
@@ -97,7 +97,7 @@ const pw = require('generate-pw');
 
 ```js
 ...
-// @require https://cdn.jsdelivr.net/npm/generate-pw@1.4.3/dist/generate-pw.min.js
+// @require https://cdn.jsdelivr.net/npm/generate-pw@1.4.4/dist/generate-pw.min.js
 // ==/UserScript==
 
 // Tu código aquí...
@@ -105,7 +105,7 @@ const pw = require('generate-pw');
 
 <br>
 
-**💡 Nota:** Para importar siempre la última versión (¡no se recomienda en producción!), elimine la etiqueta de versión `@1.4.3` de la URL de jsDelivr: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
+**💡 Nota:** Para importar siempre la última versión (¡no se recomienda en producción!), elimine la etiqueta de versión `@1.4.4` de la URL de jsDelivr: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
 
 <br>
 
