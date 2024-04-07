@@ -120,7 +120,7 @@ else { // run MAIN routine
 
 // Define LOGGING functions
 
-function printHelpSections(includeSections = ['cmdFormat', 'pathArgs', 'configOptions', 'infoCmds']) {
+function printHelpSections(includeSections = ['cmdFormat', 'pathArgs', 'flags', 'infoCmds']) {
     const helpSections = {
         'cmdFormat': [
             `\n${by}minify-js [inputPath] [outputPath] [options]${nc}`
@@ -134,8 +134,8 @@ function printHelpSections(includeSections = ['cmdFormat', 'pathArgs', 'configOp
                 + 'Path to file or directory where minified files will be stored,'
                 + ' relative to original file location (if not provided, min/ is used).'
         ],
-        'configOptions': [
-            '\nConfig options:',
+        'flags': [
+            '\nBoolean options:',
             ' -n, --dry-run               Don\'t actually minify the file(s),'
                                        + ' just show if they will be processed.',
             ' -d, --include-dotfolders    Include dotfolders in file search.',
