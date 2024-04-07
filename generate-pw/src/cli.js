@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw#-command-line-usage';
+
 // Import LIBS
 const { generatePassword } = require(__dirname.match(/src/) ? './generate-pw' : './generate-pw.min'),
       { execSync } = require('child_process'); // for cross-platform copying
@@ -40,8 +42,7 @@ process.argv.forEach(arg => {
     else if (matchedParamOption) {
         if (!arg.includes('=')) {
             console.error(`\n${br}ERROR: Arg [--${arg.replace(/-/g, '')}] requires '=' followed by a value.${nc}`);
-            console.error(`\n${by}For more help, type 'generate-pw --help'.${nc}`);
-            process.exit(1);
+            printHelpCmdAndDocURL(); process.exit(1);
         }
         const value = arg.split('=')[1];
         config[matchedParamOption] = parseInt(value) || value;
@@ -49,7 +50,7 @@ process.argv.forEach(arg => {
         console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
         console.info(`\n${by}Valid arguments are below.${nc}`);
         printHelpSections(['paramOptions', 'flags', 'infoCmds']);
-        process.exit(1);
+        printHelpCmdAndDocURL(); process.exit(1);
 }});
 
 // Show HELP screen if -h or --help passed
@@ -63,7 +64,7 @@ else { // run MAIN routine
     for (const numArgType of ['length', 'qty'])
         if (config[numArgType] && (isNaN(config[numArgType]) || config[numArgType] < 1)) {
             console.error(`\n${br}Error: [${ numArgType }] argument can only be > 0.${nc}`);
-            process.exit(1);
+            printHelpCmdAndDocURL(); process.exit(1);
         }
     const funcOptions = {
         length: config.length || 8, qty: config.qty || 1,
@@ -131,6 +132,9 @@ function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'flag
         ));
     }
 }
+
+function printHelpCmdAndDocURL() {
+    console.info(`\n${by}For more help, type 'generate-pw --help' or visit\n${docURL + nc}`); }
 
 function copyToClipboard(data) {
     data = data.replace(/\s+$/m, '').replace(/"/g, '""');
