@@ -9,11 +9,13 @@ const fs = require('fs'),
       path = require('path'),
       sass = require('sass');
 
-// Define MAIN functions
+// Define API functions
 
 function findSCSS(searchDir, options = {}) {
 
-    const exampleCall = 'findSCSS(\'assets/scss\', { verbose: false, dotFolders: true })';
+    const docURL = 'https://github.com/adamlui/js-utils/tree/main/scss-to-css#findscsssearchdir-options',
+          exampleCall = 'findSCSS(\'assets/scss\', { verbose: false, dotFolders: true })';
+
     const defaultOptions = {
         recursive: true,  // recursively search for nested files in searchDir passed
         verbose: true,    // enable logging
@@ -21,18 +23,21 @@ function findSCSS(searchDir, options = {}) {
     };
 
     // Validate searchDir
-    if (typeof searchDir !== 'string')
-        return console.error('findSCSS() » ERROR: 1st arg <searchDir> must be a string.');
-    else { // verify searchDir path existence
+    if (typeof searchDir !== 'string') {
+            console.error('findSCSS() » ERROR: 1st arg <searchDir> must be a string.');     
+            console.info('findSCSS() » For more help, please visit ' + docURL);
+            return;
+    } else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir);
         if (!fs.existsSync(searchPath)) {
-           console.error('findSCSS() » ERROR: 1st arg <searchDir> must be an existing directory.');
-           console.error(`findSCSS() » ${ searchPath } does not exist.`);
-           return;
+            console.error('findSCSS() » ERROR: 1st arg <searchDir> must be an existing directory.');
+            console.error(`findSCSS() » ${ searchPath } does not exist.`);     
+            console.info('findSCSS() » For more help, please visit ' + docURL);
+            return;
     }}
 
     // Validate/init options
-    if (!validateOptions(options, defaultOptions, exampleCall)) return;
+    if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     // Search for SCSS
@@ -62,7 +67,9 @@ function findSCSS(searchDir, options = {}) {
 
 function compile(inputPath, options = {}) {
 
-    const exampleCall = 'compile(\'assets/scss\', { recursive: false, minify: false })';
+    const docURL = 'https://github.com/adamlui/js-utils/tree/main/scss-to-css#compileinputpath-options',
+          exampleCall = 'compile(\'assets/scss\', { recursive: false, minify: false })';
+
     const defaultOptions = {
         recursive: true,   // recursively search for nested files if dir path passed
         verbose: true,     // enable logging
@@ -72,18 +79,22 @@ function compile(inputPath, options = {}) {
     };
 
     // Validate inputPath
-    if (typeof inputPath !== 'string')
-        return console.error('compile() » ERROR: 1st arg <inputPath> must be a string.');
+    if (typeof inputPath !== 'string') {
+            console.error('compile() » ERROR: 1st arg <inputPath> must be a string.');
+            console.info('compile() » For more help, please visit ' + docURL);
+            return;
+    }
     else { // verify inputPath path existence
         inputPath = path.resolve(process.cwd(), inputPath);
         if (!fs.existsSync(inputPath)) {
             console.error('compile() » ERROR: 1st arg <inputPath> must be an existing directory or file.');
             console.error(`compile() » ${ inputPath } does not exist.`);
+            console.info('compile() » For more help, please visit ' + docURL);
             return;
     }}
 
     // Validate/init options
-    if (!validateOptions(options, defaultOptions, exampleCall)) return;
+    if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     // Compile SCSS based on inputPath
@@ -121,8 +132,9 @@ function compile(inputPath, options = {}) {
 
 // Define INTERNAL validation function
 
-function validateOptions(options, defaultOptions, exampleCall) {
-    const logPrefix = ( validateOptions.caller?.name || 'validateOptions' ) + '() » ';
+function validateOptions(options, defaultOptions, docURL, exampleCall) {
+
+    // Init option strings/types
     const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
         .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
         .replace(/"/g, '\'') // replace double quotes w/ single quotes
@@ -130,34 +142,41 @@ function validateOptions(options, defaultOptions, exampleCall) {
     const strValidOptions = Object.keys(defaultOptions).join(', '),
           booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] === 'boolean'),
           integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]));
+
+    // Define print functions
+    const logPrefix = ( validateOptions.caller?.name || 'validateOptions' ) + '() » ';
     const printValidOptions = () => {
         console.info(`${ logPrefix }Valid options: [ ${ strValidOptions } ]`);
         console.info(`${ logPrefix }If omitted, default settings are: ${ strDefaultOptions }`);
     };
+    const printDocURL = () => {
+        console.info(`${ logPrefix }For more help, please visit ${docURL}`); };
+
+    // Validate options
     if (typeof options != 'object') { // validate as obj
         console.error(`${ logPrefix }ERROR: [options] can only be an object of key/values.`);
         console.info(`${ logPrefix }Example valid call: ${ exampleCall }`);
-        printValidOptions(); return false;
+        printValidOptions(); printDocURL(); return false;
     }
     for (const key in options) { // validate each key
         if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
                 `${ logPrefix }ERROR: \`${ key }\` is an invalid option.`);
-            printValidOptions(); return false;
+            printValidOptions(); printDocURL(); return false;
         } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean') {
             console.error(
                 `${ logPrefix }ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
-            return false;
+            printDocURL(); return false;
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) {
                 console.error(`${ logPrefix }ERROR: [${ key }] option can only be an integer > 0.`);
-                return false;
+                printDocURL(); return false;
             }
         }
     }
     return true;
 }
 
-// EXPORT main functions
+// EXPORT API functions
 module.exports = { compile, find: findSCSS, findSCSS };
