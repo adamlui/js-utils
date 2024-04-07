@@ -125,9 +125,6 @@ $ minify-js input_folder output_folder
 ### 命令列選項
 
 ```
-參數選項：
- --comment=comment           在縮小的程式碼前面加入註解。
-
 布林選項：
  -n, --dry-run               實際上並沒有縮小文件，只是顯示它們是否會被處理。
  -d, --include-dotfolders    在文件搜尋中包含點資料夾。
@@ -135,6 +132,9 @@ $ minify-js input_folder output_folder
  -R, --no-recursion          禁用遞歸文件搜尋。
  -M, --no-mangle             禁用修改名稱。
  -q, --quiet                 禁止除錯誤之外的所有日誌記錄。
+
+參數選項：
+ --comment=comment           在縮小的程式碼前面加入註解。
 
 訊息命令：
  -h, --help                  顯示幫助畫面。

@@ -125,9 +125,6 @@ $ minify-js input_folder output_folder
 ### Command line options
 
 ```
-Parameter options:
- --comment=comment           Prepend comment to minified code.
-
 Boolean options:
  -n, --dry-run               Don't actually minify the file(s), just show
                              if they will be processed.
@@ -136,6 +133,9 @@ Boolean options:
  -R, --no-recursion          Disable recursive file searching.
  -M, --no-mangle             Disable mangling names.
  -q, --quiet                 Suppress all logging except errors.
+
+Parameter options:
+ --comment=comment           Prepend comment to minified code.
 
 Info commands:
  -h, --help                  Display help screen.

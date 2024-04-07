@@ -14,7 +14,6 @@ const nc = '\x1b[0m',    // no color
 // Load FLAG settings
 const config = {};
 const argRegex = {
-    paramOptions: { 'comment': /^--?comments?/ },
     flags: {
         'dryRun': /^--?(?:n|dry-?run)$/,
         'includeDotFolders': /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
@@ -23,6 +22,7 @@ const argRegex = {
         'noMangle': /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/,
         'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
     },
+    paramOptions: { 'comment': /^--?comments?/ },
     infoCmds: {
         'help': /^--?h(?:elp)?$/,
         'version': /^--?ve?r?s?i?o?n?$/
@@ -132,7 +132,7 @@ else { // run MAIN routine
 // Define LOGGING functions
 
 function printHelpSections(
-    includeSections = ['cmdFormat', 'pathArgs', 'paramOptions', 'flags', 'infoCmds']) {
+    includeSections = ['cmdFormat', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
     const helpSections = {
         'cmdFormat': [
             `\n${by}minify-js [inputPath] [outputPath] [options]${nc}`
@@ -146,10 +146,6 @@ function printHelpSections(
                 + 'Path to file or directory where minified files will be stored,'
                 + ' relative to original file location (if not provided, min/ is used).'
         ],
-        'paramOptions': [
-            '\nParameter options:',
-            ' --comment=comment           Prepend comment to minified code.'
-        ],
         'flags': [
             '\nBoolean options:',
             ' -n, --dry-run               Don\'t actually minify the file(s),'
@@ -159,6 +155,10 @@ function printHelpSections(
             ' -R, --no-recursion          Disable recursive file searching.',
             ' -M, --no-mangle             Disable mangling names.',
             ' -q, --quiet                 Suppress all logging except errors.'
+        ],
+        'paramOptions': [
+            '\nParameter options:',
+            ' --comment=comment           Prepend comment to minified code.'
         ],
         'infoCmds': [
             '\nInfo commands:',

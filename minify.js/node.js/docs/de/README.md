@@ -125,9 +125,6 @@ $ minify-js eingabeordner ausgabeordner
 ### Befehlszeilenoptionen
 
 ```
-Parameteroptionen:
- --comment=comment           Kommentar dem minimierten Code voranstellen.
-
 Boolesche Optionen:
  -n, --dry-run               Minimieren Sie die Datei(en) nicht wirklich, sondern zeigen Sie nur an, ob sie verarbeitet werden.
  -d, --include-dotfolders    Beziehen Sie Punktordner in die Dateisuche ein.
@@ -135,6 +132,9 @@ Boolesche Optionen:
  -R, --no-recursion          Deaktivieren Sie die rekursive Dateisuche.
  -M, --no-mangle             Deaktivieren Sie das Verstümmeln von Namen.
  -q, --quiet                 Unterdrücken Sie alle Protokolle außer Fehlern.
+
+Parameteroptionen:
+ --comment=comment           Kommentar dem minimierten Code voranstellen.
 
 Info-Befehle:
  -h, --help                  Hilfebildschirm anzeigen.

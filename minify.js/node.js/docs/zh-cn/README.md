@@ -125,9 +125,6 @@ $ minify-js input_folder output_folder
 ### 命令行选项
 
 ```
-参数选项：
- --comment=comment           在缩小的代码前面添加注释。
-
 布尔选项：
  -n, --dry-run               实际上并不缩小文件，只是显示它们是否会被处理。
  -d, --include-dotfolders    在文件搜索中包括点文件夹。
@@ -135,6 +132,9 @@ $ minify-js input_folder output_folder
  -R, --no-recursion          禁用递归文件搜索。
  -M, --no-mangle             禁用修改名称。
  -q, --quiet                 禁止除错误之外的所有日志记录。
+
+参数选项：
+ --comment=comment           在缩小的代码前面添加注释。
 
 信息命令：
  -h, --help                  显示帮助屏幕。
