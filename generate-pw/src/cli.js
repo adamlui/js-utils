@@ -13,10 +13,10 @@ const nc = '\x1b[0m',    // no color
 const config = {};
 const argRegex = {
     paramOptions: {
-        'length': /^--?length/,
-        'qty': /^--?qu?a?n?ti?t?y=.*$/,
-        'charset': /^--?chars/,
-        'excludeChars': /^--?exclude=/
+        'length': /^--?length(?:=.*|$)/,
+        'qty': /^--?qu?a?n?ti?t?y(?:=.*|$)/,
+        'charset': /^--?chars(?:=.*|$)/,
+        'excludeChars': /^--?exclude(?:=.*|$)/
     },
     flags: {
         'includeNums': /^--?(?:n|(?:include-?)?num(?:ber)?s?=?(?:true|1)?)$/,
@@ -38,6 +38,11 @@ process.argv.forEach(arg => {
           matchedInfoCmd = Object.keys(argRegex.infoCmds).find(cmd => argRegex.infoCmds[cmd].test(arg));
     if (matchedFlag) config[matchedFlag] = true;
     else if (matchedParamOption) {
+        if (!arg.includes('=')) {
+            console.error(`\n${br}ERROR: Arg [--${arg.replace(/-/g, '')}] requires '=' followed by a value.${nc}`);
+            console.error(`\n${by}For more help, type 'generate-pw --help'.${nc}`);
+            process.exit(1);
+        }
         const value = arg.split('=')[1];
         config[matchedParamOption] = parseInt(value) || value;
     } else if (!matchedInfoCmd) {
