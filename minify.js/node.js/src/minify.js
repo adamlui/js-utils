@@ -25,16 +25,16 @@ function findJS(searchDir, options = {}) {
 
     // Validate searchDir
     if (typeof searchDir !== 'string') {
-           console.error('findJS() » ERROR: 1st arg <searchDir> must be a string.');
-           console.info('findJS() » For more help, please visit ' + docURL);
-           return;
+            console.error('findJS() » ERROR: 1st arg <searchDir> must be a string.');
+            console.info('findJS() » For more help, please visit ' + docURL);
+            return;
     } else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir);
         if (!fs.existsSync(searchPath)) {
-           console.error('findJS() » ERROR: 1st arg <searchDir> must be an existing directory.');
-           console.error(`findJS() » ${ searchPath } does not exist.`);           
-           console.info('findJS() » For more help, please visit ' + docURL);
-           return;
+            console.error('findJS() » ERROR: 1st arg <searchDir> must be an existing directory.');
+            console.error(`findJS() » ${ searchPath } does not exist.`);           
+            console.info('findJS() » For more help, please visit ' + docURL);
+            return;
     }}
 
     // Validate/init options
