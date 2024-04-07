@@ -38,7 +38,7 @@ function findJS(searchDir, options = {}) {
     }}
 
     // Validate/init options
-    if (!validateOptions(options, defaultOptions, exampleCall)) return;
+    if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     // Search for unminified JS
@@ -89,7 +89,7 @@ function minify(input, options = {}) {
     }
 
     // Validate/init options
-    if (!validateOptions(options, defaultOptions, exampleCall)) return;
+    if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     // Minify JS based on input
@@ -136,9 +136,7 @@ function minify(input, options = {}) {
 
 // Define INTERNAL validation function
 
-function validateOptions(options, defaultOptions, exampleCall) {
-
-    const docURL = 'https://docs.minify-js.org/#-api-usage';
+function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Init option strings/types
     const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
