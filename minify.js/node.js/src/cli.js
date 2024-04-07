@@ -46,7 +46,7 @@ process.argv.forEach(arg => {
     } else if (!matchedInfoCmd) {
         console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
         console.info(`\n${by}Valid arguments are below.${nc}`);
-        printHelpSections(['paramOptions', 'flags', 'infoCmds']);
+        printHelpSections(['flags', 'paramOptions', 'infoCmds']);
         printHelpCmdAndDocURL(); process.exit(1);
 }});
 
