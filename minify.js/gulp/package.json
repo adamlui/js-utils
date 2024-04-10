@@ -1,0 +1,56 @@
+{
+  "name": "gulp-minify.js",
+  "version": "1.0.0",
+  "description": "Gulp plug-in to recursively minify JavaScript files",
+  "author": {
+    "name": "Adam Lui",
+    "email": "adam@kudoai.com",
+    "url": "https://github.com/adamlui"
+  },
+  "homepage": "https://minify-js.org",
+  "license": "MIT",
+  "main": "dist/gulp-minify.min.js",
+  "files": [
+    "dist",
+    "docs/"
+  ],
+  "directories": {
+    "lib": "./dist",
+    "doc": "./docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "minify-js src dist",
+    "bump:patch": "bash utils/bump.sh patch",
+    "bump:minor": "bash utils/bump.sh minor",
+    "bump:major": "bash utils/bump.sh major",
+    "publish:patch": "bash utils/bump.sh patch --publish",
+    "publish:minor": "bash utils/bump.sh minor --publish",
+    "publish:major": "bash utils/bump.sh major --publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamlui/minify.js.git"
+  },
+  "keywords": [
+    "javascript",
+    "utilities",
+    "js-utils",
+    "minifier",
+    "api",
+    "js",
+    "utils",
+    "gulpplugin",
+    "gulpfriendly"
+  ],
+  "bugs": {
+    "url": "https://github.minify-js.org/issues"
+  },
+  "dependencies": {
+    "@adamlui/minify.js": "^1.5.1"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/adamlui"
+  }
+}
