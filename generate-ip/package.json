@@ -19,7 +19,7 @@
     "generate-ip": "dist/cli.min.js"
   },
   "directories": {
-    "lib": "./src",
+    "lib": "./dist",
     "doc": "./docs"
   },
   "scripts": {
