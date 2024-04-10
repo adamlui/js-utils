@@ -17,6 +17,10 @@
   "bin": {
     "geolocate": "dist/cli.min.js"
   },
+  "directories": {
+    "lib": "./dist",
+    "doc": "./docs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "minify-js src dist",
