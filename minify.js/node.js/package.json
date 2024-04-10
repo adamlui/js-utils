@@ -50,7 +50,7 @@
     "utils"
   ],
   "bugs": {
-    "url": "https://js-utils.com/issues"
+    "url": "https://github.minify-js.org/issues"
   },
   "dependencies": {
     "uglify-js": "^3.17.4"
