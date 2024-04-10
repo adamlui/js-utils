@@ -20,7 +20,7 @@
     "scss-to-css": "dist/cli.min.js"
   },
   "directories": {
-    "lib": ".",
+    "lib": "./dist",
     "doc": "./docs"
   },
   "scripts": {
