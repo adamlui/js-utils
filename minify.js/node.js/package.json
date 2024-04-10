@@ -20,7 +20,7 @@
     "minify-js": "dist/cli.min.js"
   },
   "directories": {
-    "lib": ".",
+    "lib": "./dist",
     "doc": "./docs",
     "test": "./utils/test"
   },
