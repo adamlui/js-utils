@@ -1,23 +1,69 @@
-const { Transform } = require('stream'),
-      { minify, findJS } = require('@adamlui/minify.js');
+// © 2024 Adam Lui under the MIT license.
 
-function gulpMinify(searchDir, options = {}) {
-    return new Transform({
-        objectMode: true,
-        transform(file, encoding, callback) {
-            if (file.isNull()) { // do nothing if no contents
-                callback(null, file); return; }
-            if (file.isBuffer()) { // minify buffer contents
-                const jsFiles = findJS(searchDir, { ...options, recursive: true });
-                jsFiles.forEach(jsFile => {
-                    const minified = minify(jsFile, options);
-                    file.contents = Buffer.from(minified.code);
-            });}
-            if (file.isStream()) { // error if stream provided
-                callback(new Error('gulpMinify() » ERROR: Streaming not supported'));
-                return;
-            }
-            callback(null, file); // pass transformed file along
-}});}
+const minifyJS = require('@adamlui/minify.js'),
+      fs = require('fs'),
+      path = require('path'),
+      { Transform } = require('stream');
 
-module.exports = { gulpMinify };
+function minify(input, output, options = {}) {
+
+    if (arguments.length === 0) { // return argless minify() for use as a stream transformation
+        return new Transform({
+            objectMode: true,
+            transform(file, _, callback) {
+                if (file.isBuffer()) {
+                    console.info(`minify() » Minifying ${file.path}...`);
+                    const minifiedCode = minifyJS.minify(file.contents.toString(), {});
+                    file.contents = Buffer.from(minifiedCode.code);
+                }
+                this.push(file); callback();
+    }});}
+
+    // Init options
+    const defaultOptions = {
+        recursive: true,   // recursively search for nested files if dir path passed
+        verbose: true,     // enable logging
+        dotFolders: false, // include dotfolders in file search
+        dotFiles: false,   // include dotfiles in file search
+        mangle: true,      // shorten var names (typically to one character)
+        comment: ''        // prepend comment to code
+    };
+    options = { ...defaultOptions, ...options };
+
+    // Validate input arg (output arg can be anything)
+    const inputPath = path.resolve(process.cwd(), input);
+    if (input && !fs.existsSync(inputPath)) {
+        console.error('\nminify() » ERROR: 1st: First argument can only be an existing file or directory.');
+        console.info(`\nminify() » ${inputPath} does not exist.`);
+        return;
+    }
+
+    // Find all eligible JavaScript files or arg-passed file
+    const { mangle, comment, ...findJSoptions } = options; // eslint-disable-line no-unused-vars
+    const unminnedJSfiles = input.endsWith('.js') ? [inputPath]
+        : minifyJS.findJS(inputPath, findJSoptions);
+
+    // Build array of minification data
+    const minifyData = unminnedJSfiles
+        .map(jsPath => minifyJS.minify(jsPath, options)) // minify each file
+        .filter(minifyResult => !minifyResult.error); // filter out failed minifications
+
+    // Write array data to files in output dir
+    minifyData?.forEach(({ code, srcPath }) => {
+        const outputDir = path.join(
+            process.cwd(), // path of working dir
+            (output.endsWith('.js') ? path.dirname(output) // + path from file output
+                : output || 'min') // or path from folder output or min/ if no output passed
+        );
+        const outputFilename = (
+            output.endsWith('.js') && input.endsWith('.js')
+                ? path.basename(output).replace(/(\.min)?\.js$/, '')
+                : path.basename(srcPath, '.js')
+        ) + '.min.js';
+        const outputPath = path.join(outputDir, outputFilename);
+        if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+        fs.writeFileSync(outputPath, code, 'utf8');
+    });
+}
+
+module.exports = minify;
