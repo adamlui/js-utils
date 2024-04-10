@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script automates: bump versions in manifests + READMEs
+# This script automates: build minified JS >>> bump versions in manifests + READMEs
 # >>> commit changes to Git >>> push changes to GitHub >>> publish to npm (optional)
 
 # Init UI colors
@@ -23,6 +23,9 @@ case $1 in # edit SUBVERS based on version type
     "major") SUBVERS[0]=$((SUBVERS[0] + 1)) ; SUBVERS[1]=0 ; SUBVERS[2]=0 ;;
 esac
 NEW_VERSION=$(printf "%s.%s.%s" "${SUBVERS[@]}")
+
+# Build minified JS for dist/
+npm run build
 
 # Bump version in package.json + package-lock.json
 echo -e "Bumping versions in package manifests..."
@@ -47,6 +50,8 @@ echo -e "\nCommitting changes...\n"
 find . -name "README.md" -exec git add {} +
 git add package*.json
 git commit -n -m "Bumped $PACKAGE_NAME versions to $NEW_VERSION"
+git add ./dist/*.js
+git commit -n -m "Built $PACKAGE_NAME v$NEW_VERSION"
 
 # Push to GiHub
 echo -e "\nPushing to GitHub...\n"
