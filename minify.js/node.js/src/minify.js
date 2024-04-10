@@ -61,7 +61,7 @@ function findJS(searchDir, options = {}) {
             console.info('findJS() » Search complete! '
               + ( jsFiles.length === 0 ? 'No' : jsFiles.length )
               + ` file${ jsFiles.length == 0 || jsFiles.length > 1 ? 's' : '' } found.`);
-        if (findJS.caller.name !== 'minify' && !require.main.filename.endsWith('cli.js'))
+        if (findJS.caller.name !== 'minify' && !/cli(?:\.min)?\.js$/.test(require.main.filename))
             console.info('findJS() » Check returned array.');
     }
     return options.isRecursing || jsFiles.length > 0 ? jsFiles : [];
@@ -100,7 +100,7 @@ function minify(input, options = {}) {
             let minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions);
             if (options.comment) minifyResult.code = prependComment(minifyResult.code);
             if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
-            else if (options.verbose && !require.main.filename.endsWith('cli.js'))
+            else if (options.verbose && !/cli(?:\.min)?\.js$/.test(require.main.filename))
                 console.info('minify() » Minification complete. Check returned object.');
             return { code: minifyResult.code, srcPath: path.resolve(process.cwd(), input),
                      error: minifyResult.error };

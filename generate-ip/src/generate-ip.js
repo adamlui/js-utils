@@ -53,7 +53,7 @@ const ipv4 = {
                 `ipv4.generate() » IPv4 address${ options.qty > 1 ? 'es' : '' } generated!`);
             if (options.qty === 1) console.info(
                 `ipv4.generate() » ${ ipResult }`);
-            else if (typeof require == 'undefined' || !require.main.filename.endsWith('cli.js')) console.info(
+            else if (typeof require == 'undefined' || !/cli(?:\.min)?\.js$/.test(require.main.filename)) console.info(
                 'ipv4.generate() » Check returned array.' );
         }
         return ipResult;
