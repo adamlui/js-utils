@@ -20,7 +20,7 @@ jobs:
         id: get-downloads
         run: |
           LC_NUMERIC=en_US # to insert commas
-          npm_packages=("@adamlui/geolocate" "@adamlui/minify.js" "@adamlui/scss-to-css" "generate-ip" "generate-pw")
+          npm_packages=("@adamlui/geolocate" "@adamlui/minify.js" "@adamlui/scss-to-css" "generate-ip" "generate-pw" "gulp-minify.js")
           jsd_packages=("@adamlui/geolocate" "generate-ip" "generate-pw")
 
           expand_num() { # expand nums abbreviated w/ 'k' or 'm' suffix to integers
