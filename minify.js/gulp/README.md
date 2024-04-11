@@ -55,7 +55,7 @@ gulp.task('minify', cb => {
 
 #
 
-Use `minify()` w/ **no args**, as a stream transformation:
+Use `minify()` w/ **no args**, as part of a stream's transformations:
 
 ```js
 const gulp = require('gulp'),
