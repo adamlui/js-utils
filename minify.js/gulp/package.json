@@ -1,6 +1,6 @@
 {
   "name": "gulp-minify.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gulp plug-in to recursively minify JavaScript files",
   "author": {
     "name": "Adam Lui",
