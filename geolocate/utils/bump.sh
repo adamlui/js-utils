@@ -28,7 +28,7 @@ NEW_VERSION=$(printf "%s.%s.%s" "${SUBVERS[@]}")
 npm run build
 
 # Bump version in package.json + package-lock.json
-echo -e "Bumping versions in package manifests..."
+echo -e "\nBumping versions in package manifests..."
 npm version --no-git-tag-version "$NEW_VERSION"
 
 # Bump versions in READMEs
