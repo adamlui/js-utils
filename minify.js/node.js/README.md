@@ -135,7 +135,8 @@ Boolean options:
  -q, --quiet                 Suppress all logging except errors.
 
 Parameter options:
- --comment="comment"         Prepend comment to minified code.
+ --comment="comment"         Prepend comment to minified code. Separate
+                             by line using '\n'.
 
 Info commands:
  -h, --help                  Display help screen.
@@ -202,14 +203,14 @@ minifyJS.minify(input, { dotFiles: true });
 
 Available parameters (and their default settings) are:
 
-Name         | Type    | Desciption                                              | Default value
--------------|---------|---------------------------------------------------------|---------------
-`recursive`  | Boolean | Recursively search for nested files if dir path passed. | `true`
-`verbose`    | Boolean | Show logging in console/terminal.                       | `true`
-`dotFolders` | Boolean | Include dotfolders in file search.                      | `false`
-`dotFiles`   | Boolean | Include dotfiles in file search.                        | `false`
-`mangle`     | Boolean | Shorten variable names (typically to one character).    | `true`
-`comment`    | String  | Comment to prepend to minified code.                    | `''`
+Name         | Type    | Desciption                                                        | Default value
+-------------|---------|-------------------------------------------------------------------|---------------
+`recursive`  | Boolean | Recursively search for nested files if dir path passed.           | `true`
+`verbose`    | Boolean | Show logging in console/terminal.                                 | `true`
+`dotFolders` | Boolean | Include dotfolders in file search.                                | `false`
+`dotFiles`   | Boolean | Include dotfiles in file search.                                  | `false`
+`mangle`     | Boolean | Shorten variable names (typically to one character).              | `true`
+`comment`    | String  | Comment to prepend to minified code. Separate by line using '\n'. | `''`
 
 #
 
