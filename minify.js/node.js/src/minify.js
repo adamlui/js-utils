@@ -135,7 +135,17 @@ function minify(input, options = {}) {
             console.info('minify() » Minification complete. Check returned object.');
         return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error };
     }
-    function prependComment(code) { return `/*\n  ${ options.comment }\n*/\n${ code }`; }
+
+    function prependComment(code) {
+        const commentBlock = `/**\n * ${options.comment}\n */`,
+              shebangIdx = code.indexOf('#!');
+        if (shebangIdx >= 0) {
+            const postShebangIdx = code.indexOf('\n', shebangIdx) + 1; // idx of 1st newline after shebang
+            return code.slice(0, postShebangIdx) + commentBlock + '\n' + code.slice(postShebangIdx);
+        } else return `${ commentBlock }\n${ code }`;
+    }
+
+
 }
 
 // Define INTERNAL validation function
