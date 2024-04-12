@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
-const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw#-command-line-usage';
+const pkgName = 'generate-pw',
+      docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw#-command-line-usage';
 
 // Import LIBS
 const { generatePassword } = require(__dirname.match(/src/) ? './generate-pw' : './generate-pw.min'),
-      { execSync } = require('child_process'); // for cross-platform copying
+      { execSync } = require('child_process'); // for --version cmd + cross-platform copying
 
 // Init UI colors
 const nc = '\x1b[0m',    // no color
@@ -57,10 +58,11 @@ process.argv.forEach(arg => {
 if (process.argv.some(arg => argRegex.infoCmds.help.test(arg))) printHelpSections();
 
 // Show VERSION number if -v or --version passed
-else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg)))
-    console.info('v' + require('./package.json').version);
+else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
+    const globalVer = execSync(`npm view ${pkgName} version`).toString().trim() || 'none';
+    console.info(`\nGlobal version: ${globalVer}`);
 
-else { // run MAIN routine
+} else { // run MAIN routine
     for (const numArgType of ['length', 'qty'])
         if (config[numArgType] && (isNaN(config[numArgType]) || config[numArgType] < 1)) {
             console.error(`\n${br}Error: [${ numArgType }] argument can only be > 0.${nc}`);

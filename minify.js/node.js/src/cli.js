@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
-const docURL = 'https://docs.minify-js.org/#-command-line-usage';
+const pkgName = '@adamlui/minify.js',
+      docURL = 'https://docs.minify-js.org/#-command-line-usage';
 
 // Import LIBS
 const minifyJS = require(__dirname.match(/src/) ? './minify' : './minify.min'),
-      fs = require('fs'),
-      path = require('path');
+      fs = require('fs'), path = require('path'),
+      { execSync } = require('child_process'); // for --version cmd
 
 // Init UI colors
 const nc = '\x1b[0m',    // no color
@@ -54,10 +55,11 @@ process.argv.forEach(arg => {
 if (process.argv.some(arg => argRegex.infoCmds.help.test(arg))) printHelpSections();
 
 // Show VERSION number if -v or --version passed
-else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg)))
-    console.info('v' + require('./package.json').version);
+else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
+    const globalVer = execSync(`npm view ${pkgName} version`).toString().trim() || 'none';
+    console.info(`\nGlobal version: ${globalVer}`);
 
-else { // run MAIN routine
+} else { // run MAIN routine
 
     // Init I/O args
     const [inputArg = '', outputArg = ''] = ( // default to empty strings for error-less handling

@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
-const docURL = 'https://github.com/adamlui/js-utils/tree/main/scss-to-css#-command-line-usage';
+const pkgName = '@adamlui/scss-to-css',
+      docURL = 'https://github.com/adamlui/js-utils/tree/main/scss-to-css#-command-line-usage';
 
 // Import LIBS
-const fs = require('fs'),
-      path = require('path'),
-      scssToCSS = require(__dirname.match(/src/) ? './scss-to-css' : './scss-to-css.min');
+const scssToCSS = require(__dirname.match(/src/) ? './scss-to-css' : './scss-to-css.min'),
+      fs = require('fs'), path = require('path'),
+      { execSync } = require('child_process'); // for --version cmd
 
 // Init UI colors
 const nc = '\x1b[0m',    // no color
@@ -40,10 +41,11 @@ process.argv.forEach(arg => {
 if (process.argv.some(arg => argRegex.help.test(arg))) printHelpSections();
 
 // Show VERSION number if -v or --version passed
-else if (process.argv.some(arg => argRegex.version.test(arg)))
-    console.info('v' + require('./package.json').version);
+else if (process.argv.some(arg => argRegex.version.test(arg))) {
+    const globalVer = execSync(`npm view ${pkgName} version`).toString().trim() || 'none';
+    console.info(`\nGlobal version: ${globalVer}`);
 
-else { // run MAIN routine
+} else { // run MAIN routine
 
     // Init I/O args
     const [inputArg = '', outputArg = ''] = ( // default to empty strings for error-less handling

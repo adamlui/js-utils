@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
-const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip#-command-line-usage';
+const pkgName = 'generate-ip',
+      docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip#-command-line-usage';
 
 // Import LIBS
 const { ipv4 } = require(__dirname.match(/src/) ? './generate-ip' : './generate-ip.min'),
-      { execSync } = require('child_process'); // for cross-platform copying
+      { execSync } = require('child_process'); // for --version cmd + cross-platform copying
 
 // Init UI colors
 const nc = '\x1b[0m',    // no color
@@ -45,10 +46,11 @@ process.argv.forEach(arg => {
 if (process.argv.some(arg => argRegex.infoCmds.help.test(arg))) printHelpSections();
 
 // Show VERSION number if -v or --version passed
-else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg)))
-    console.info('v' + require('./package.json').version);
+else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
+    const globalVer = execSync(`npm view ${pkgName} version`).toString().trim() || 'none';
+    console.info(`\nGlobal version: ${globalVer}`);
 
-else { // log/copy RESULT(S)
+} else { // log/copy RESULT(S)
     if (config.qty && (isNaN(config.qty) || config.qty < 1)) {
         console.error(`\n${br}Error: [qty] argument can only be > 0.${nc}`);
         printHelpCmdAndDocURL(); process.exit(1);

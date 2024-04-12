@@ -2,12 +2,13 @@
 
 (async () => {
 
-    const docURL = 'https://github.com/adamlui/js-utils/tree/main/geolocate#-command-line-usage';
+    const pkgName = '@adamlui/geolocate',
+          docURL = 'https://github.com/adamlui/js-utils/tree/main/geolocate#-command-line-usage';
 
     // Import LIBS
     const geo = require(__dirname.match(/src/) ? './geolocate' : './geolocate.min'),
           { ipv4 } = require('generate-ip'),
-          { execSync } = require('child_process'); // for cross-platform copying
+          { execSync } = require('child_process'); // for --version cmd + cross-platform copying
 
     // Init UI colors
     const nc = '\x1b[0m',    // no color
@@ -39,10 +40,11 @@
     if (process.argv.some(arg => argRegex.infoCmds.help.test(arg))) printHelpSections();
 
     // Show VERSION number if -v or --version passed
-    else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg)))
-        console.info('v' + require('./package.json').version);
+    else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
+        const globalVer = execSync(`npm view ${pkgName} version`).toString().trim() || 'none';
+        console.info(`\nGlobal version: ${globalVer}`);
 
-    else { // run MAIN routine
+    } else { // run MAIN routine
 
         // Validate IP args
         const args = process.argv.slice(2), validIPs = [];
