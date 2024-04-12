@@ -21,6 +21,11 @@ updates:
       interval: daily
 
   - package-ecosystem: npm
+    directory: geolocate/
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
     directory: minify.js/
     schedule:
       interval: daily
