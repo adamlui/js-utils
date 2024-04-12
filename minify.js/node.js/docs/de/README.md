@@ -134,7 +134,7 @@ Boolesche Optionen:
  -q, --quiet                 Unterdrücken Sie alle Protokolle außer Fehlern.
 
 Parameteroptionen:
- --comment="comment"           Kommentar dem minimierten Code voranstellen.
+ --comment="comment"         Kommentar dem minimierten Code voranstellen.
 
 Info-Befehle:
  -h, --help                  Hilfebildschirm anzeigen.

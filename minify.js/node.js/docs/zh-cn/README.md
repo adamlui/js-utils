@@ -134,7 +134,7 @@ $ minify-js input_folder output_folder
  -q, --quiet                 禁止除错误之外的所有日志记录。
 
 参数选项：
- --comment="comment"           在缩小的代码前面添加注释。
+ --comment="comment"         在缩小的代码前面添加注释。
 
 信息命令：
  -h, --help                  显示帮助屏幕。

@@ -173,7 +173,7 @@ function printHelpSections(
         ],
         'paramOptions': [
             '\nParameter options:',
-            ' --comment="comment"           Prepend comment to minified code.'
+            ' --comment="comment"         Prepend comment to minified code.'
         ],
         'infoCmds': [
             '\nInfo commands:',
