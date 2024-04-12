@@ -2,7 +2,7 @@
 
 // © 2023–2024 Adam Lui & contributors under the MIT license.
 // Source: https://github.minify-js.org/tree/main/node.js/src
-// Documentation: https://minify-js.org/#readme
+// Documentation: https://docs.minify-js.org
 
 // Import LIBS
 const fs = require('fs'),
