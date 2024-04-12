@@ -137,15 +137,13 @@ function minify(input, options = {}) {
     }
 
     function prependComment(code) {
-        const commentBlock = `/**\n * ${options.comment}\n */`,
+        const commentBlock = options.comment.split('\n').map(line => ` * ${line}`).join('\n'),
               shebangIdx = code.indexOf('#!');
         if (shebangIdx >= 0) {
             const postShebangIdx = code.indexOf('\n', shebangIdx) + 1; // idx of 1st newline after shebang
-            return code.slice(0, postShebangIdx) + commentBlock + '\n' + code.slice(postShebangIdx);
-        } else return `${ commentBlock }\n${ code }`;
+            return code.slice(0, postShebangIdx) + `/**\n${ commentBlock }\n */\n` + code.slice(postShebangIdx);
+        } else return `/**\n${ commentBlock }\n */\n${ code }`;
     }
-
-
 }
 
 // Define INTERNAL validation function
