@@ -106,7 +106,7 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
         const failedPaths = [];
         const minifyData = unminnedJSfiles.map(jsPath => {
             const minifyResult = minifyJS.minify(jsPath, { verbose: !config.quietMode, mangle: !config.noMangle,
-                                                           comment: config.comment });
+                                                           comment: config.comment?.replace(/\\n/g, '\n') });
             if (minifyResult.error) failedPaths.push(jsPath);
             return minifyResult;
         }).filter(minifyResult => !minifyResult.error); // filter out failed minifications
