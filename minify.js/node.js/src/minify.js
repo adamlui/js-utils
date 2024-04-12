@@ -94,7 +94,7 @@ function minify(input, options = {}) {
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     // Minify JS based on input
-    const minifyOptions = { mangle: options.mangle ? { toplevel: true } : false };
+    const minifyOptions = { mangle: options.mangle };
     if (fs.existsSync(input)) { // minify based on path arg
         if (input.endsWith('.js')) { // file path passed
             if (options.verbose) console.info(`minify() » Minifying ${ input }...`);
