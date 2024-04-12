@@ -135,7 +135,7 @@ Boolean options:
  -q, --quiet                 Suppress all logging except errors.
 
 Parameter options:
- --comment=comment           Prepend comment to minified code.
+ --comment="comment"           Prepend comment to minified code.
 
 Info commands:
  -h, --help                  Display help screen.

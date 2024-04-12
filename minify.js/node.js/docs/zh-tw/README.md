@@ -134,7 +134,7 @@ $ minify-js input_folder output_folder
  -q, --quiet                 禁止除錯誤之外的所有日誌記錄。
 
 參數選項：
- --comment=comment           在縮小的程式碼前面加入註解。
+ --comment="comment"           在縮小的程式碼前面加入註解。
 
 訊息命令：
  -h, --help                  顯示幫助畫面。
