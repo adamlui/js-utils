@@ -8,6 +8,7 @@
     // Import LIBS
     const geo = require(__dirname.match(/src/) ? './geolocate' : './geolocate.min'),
           { ipv4 } = require('generate-ip'),
+          fs = require('fs'), path = require('path'),
           { execSync } = require('child_process'); // for --version cmd + cross-platform copying
 
     // Init UI colors
@@ -42,7 +43,20 @@
     // Show VERSION number if -v or --version passed
     else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
         const globalVer = execSync(`npm view ${pkgName} version`).toString().trim() || 'none';
+        let localVer, currentDir = process.cwd();
+        while (currentDir !== '/') {
+            const localManifestPath = path.join(currentDir, 'package.json');
+            if (fs.existsSync(localManifestPath)) {
+                const localManifest = require(localManifestPath);
+                localVer = ( localManifest.dependencies?.[pkgName]
+                          || localManifest.devDependencies?.[pkgName]
+                )?.match(/(\d+\.\d+\.\d+)/)[0] || 'none';
+                break;
+            }
+            currentDir = path.dirname(currentDir);
+        }
         console.info(`\nGlobal version: ${globalVer}`);
+        console.info(`Local version: ${localVer}`);
 
     } else { // run MAIN routine
 
