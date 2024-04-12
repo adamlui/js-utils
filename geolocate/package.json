@@ -50,6 +50,6 @@
     "generate-ip": "^2.2.0"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^1.5.0"
+    "@adamlui/minify.js": "^1.5.1"
   }
 }
