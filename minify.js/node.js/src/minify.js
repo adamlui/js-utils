@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // © 2023–2024 Adam Lui & contributors under the MIT license.
-// Source: https://github.com/adamlui/js-utils/tree/main/minify.js
+// Source: https://github.minify-js.org/tree/main/node.js/src
 // Documentation: https://minify-js.org/#readme
 
 // Import LIBS
