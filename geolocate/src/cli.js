@@ -65,7 +65,8 @@
         const args = process.argv.slice(2), validIPs = [];
         for (let i = 0; i < args.length; i++) {
             if (!args[i].startsWith('-')) {
-                if (ipv4.validate(args[i], { verbose: false })) validIPs.push(args[i]);
+                const ip = args[i].replace(/\[|\]/g, ''); // strip surrounding '[]' in case copied from docs
+                if (ipv4.validate(ip, { verbose: false })) validIPs.push(ip);
                 else {
                     const ordSuffix = i == 0 ? 'st' : i == 1 ? 'nd' : 'th';
                     console.error(`ERROR: ${ i + 1 + ordSuffix } arg '${args[i]}' is not a valid IPv4 address.`);
