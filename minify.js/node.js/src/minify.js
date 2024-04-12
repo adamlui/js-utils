@@ -168,13 +168,24 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     }
     for (const key in options) { // validate each key
         if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
-            console.error(
-                `${ logPrefix }ERROR: \`${ key }\` is an invalid option.`);
+            console.error(`${ logPrefix }ERROR: \`${ key }\` is an invalid option.`);
             printValidOptions(); printDocURL(); return false;
-        } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean') {
-            console.error(
-                `${ logPrefix }ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
-            printDocURL(); return false;
+        } else if (booleanOptions.includes(key)) {
+            if (key == 'mangle') {
+                const printMangleErr = () => console.error(
+                        `${ logPrefix }ERROR: [mangle] option can only be \`true\`, \`false\`,`
+                            + ' or an object w/ key [toplevel] set to \`true\` or \`false\`.');
+                if (typeof options.mangle == 'object')
+                    for (const mangleKey in options.mangle) {
+                        if (!['toplevel'].includes(mangleKey) || typeof options.mangle[mangleKey] != 'boolean') {
+                            printMangleErr(); printDocURL(); return false; }
+                    }
+                else if (typeof options.mangle !== 'boolean') {
+                            printMangleErr(); printDocURL(); return false; }
+            } else if (typeof options[key] !== 'boolean') {
+                console.error(`${ logPrefix }ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+                printDocURL(); return false;
+            }
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) {
