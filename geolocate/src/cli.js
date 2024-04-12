@@ -14,7 +14,8 @@
     // Init UI colors
     const nc = '\x1b[0m',    // no color
           br = '\x1b[1;91m', // bright red
-          by = '\x1b[1;33m'; // bright yellow
+          by = '\x1b[1;33m', // bright yellow
+          bw = '\x1b[1;97m'; // bright white
 
     // Load settings from ARGS
     const config = {};
@@ -77,7 +78,15 @@
         validIPs.forEach(ip => printIfNotQuiet(`Fetching geolocation data for ${ip}...`));
         const geoResults = [];
         for (const ip of validIPs) geoResults.push(await geo.locate(ip));
-        if (geoResults.length == 1) printIfNotQuiet(geoResults[0]);
+        if (!config.quietMode && geoResults.length == 1) {
+            console.info(`\nIP: ${bw + validIPs[0] + nc}`);
+            console.info(`Country: ${bw + geoResults[0].country + nc}`);
+            console.info(`Region: ${bw + geoResults[0].regionName + nc}`);
+            console.info(`City: ${bw + geoResults[0].city + nc}`);
+            console.info(`Latitude: ${bw + geoResults[0].lat + nc}`);
+            console.info(`Longitude: ${bw + geoResults[0].lon + nc}`);
+            console.info(`ISP: ${bw + geoResults[0].isp + nc}\n`);
+        }
 
         // Copy to clipboard
         printIfNotQuiet('Copying to clipboard...');
