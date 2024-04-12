@@ -26,7 +26,12 @@ updates:
       interval: daily
 
   - package-ecosystem: npm
-    directory: minify.js/
+    directory: minify.js/gulp/
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: minify.js/node.js/
     schedule:
       interval: daily
 
