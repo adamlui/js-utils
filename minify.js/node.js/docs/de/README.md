@@ -134,7 +134,7 @@ Boolesche Optionen:
  -q, --quiet                 Unterdrücken Sie alle Protokolle außer Fehlern.
 
 Parameteroptionen:
- --comment="comment"         Kommentar dem minimierten Code voranstellen.
+ --comment="kommentar"       Kommentar dem minimierten Code voranstellen. Mit „\n“ zeilenweise trennen.
 
 Info-Befehle:
  -h, --help                  Hilfebildschirm anzeigen.
@@ -208,7 +208,7 @@ Name         | Typ             | Beschreibung                                   
 `dotFolders` | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                        | `false`
 `dotFiles`   | Boolescher Wert | Beziehen Sie Punktdateien in die Dateisuche ein.                                       | `false`
 `mangle`     | Boolescher Wert | Variablennamen kürzen (normalerweise auf ein Zeichen).                                 | `true`
-`comment`    | Zeichenfolge    | Comment to prepend to minified code.                                                   | `''`
+`comment`    | Zeichenfolge    | Kommentar, der dem minimierten Code vorangestellt wird. Mit „\n“ zeilenweise trennen.  | `''`
 
 #
 
