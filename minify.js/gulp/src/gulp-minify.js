@@ -25,7 +25,7 @@ function minify(input, output, options = {}) {
             objectMode: true,
             transform(file, _, callback) {
                 if (file.isBuffer()) {
-                    console.info(`minify() » Minifying ${file.path}...`);
+                    if (options.verbose) console.info(`minify() » Minifying ${file.path}...`);
                     const minifiedCode = minifyJS.minify(file.contents.toString(), {});
                     file.contents = Buffer.from(minifiedCode.code);
                 }
