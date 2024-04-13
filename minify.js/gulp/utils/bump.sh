@@ -25,11 +25,13 @@ esac
 NEW_VERSION=$(printf "%s.%s.%s" "${SUBVERS[@]}")
 
 # Build minified JS for dist/
-npm run build
+bash utils/build.sh
 
 # Bump version in package.json + package-lock.json
 echo -e "\nBumping versions in package manifests..."
 npm version --no-git-tag-version "$NEW_VERSION"
+
+exit
 
 # Bump versions in READMEs
 echo -e "\nBumping versions in READMEs..."
