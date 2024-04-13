@@ -13,6 +13,7 @@ async function geolocate(ip, options = {}) {
 
     // Init/validate IP
     ip = ip || await getOwnIP();
+    if (options.verbose) console.info(`geolocate() » Validating ${ip}...`);
     let ipIsValid;
     try { // to use Node.js generate-ip for validation
         ipIsValid = require('generate-ip').ipv4.validate;
@@ -27,10 +28,12 @@ async function geolocate(ip, options = {}) {
     }
 
     // Validate/init options
+    if (options.verbose) console.info('geolocate() » Validating options...');
     if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     try { // to fetch/get/return geolocation data
+        if (options.verbose) console.info('geolocate() » Fetching geolocation data...');
         let response;
         if (typeof fetch != 'undefined') // web browser
             response = await fetch(`http://ip-api.com/json/${ip}`);
@@ -38,6 +41,8 @@ async function geolocate(ip, options = {}) {
             response = await require('axios').get(`http://ip-api.com/json/${ip}`);
         else return console.error('geolocate() » ERROR: Environment not supported.');
         const { status, org, as, query, ...filteredData } = await response.json(); // eslint-disable-line no-unused-vars
+        if (options.verbose && ( typeof require == 'undefined' || !/cli(?:\.min)?\.js$/.test(require.main.filename) ))
+            console.info('geolocate() » Success! Check returned object.');
         return { ip, ...filteredData };
     } catch (err) { console.error('geolocate() »', err); }
 
