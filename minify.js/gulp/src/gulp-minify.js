@@ -9,7 +9,7 @@ const minifyJS = require('@adamlui/minify.js'),
 
 function minify(input, output, options = {}) {
 
-    if (arguments.length === 0) { // return argless minify() for use as a stream transformation
+    if (arguments.length == 0) { // return argless minify() for use as a stream transformation
         return new Transform({
             objectMode: true,
             transform(file, _, callback) {

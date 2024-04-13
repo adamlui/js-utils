@@ -23,7 +23,7 @@ function findSCSS(searchDir, options = {}) {
     };
 
     // Validate searchDir
-    if (typeof searchDir !== 'string') {
+    if (typeof searchDir != 'string') {
             console.error('findSCSS() » ERROR: 1st arg <searchDir> must be a string.');     
             console.info('findSCSS() » For more help, please visit ' + docURL);
             return;
@@ -57,9 +57,9 @@ function findSCSS(searchDir, options = {}) {
     // Log/return final result
     if (!options.isRecursing && options.verbose) {
             console.info('findSCSS() » Search complete! '
-              + ( scssFiles.length === 0 ? 'No' : scssFiles.length )
+              + ( scssFiles.length == 0 ? 'No' : scssFiles.length )
               + ` file${ scssFiles.length == 0 || scssFiles.length > 1 ? 's' : '' } found.`);
-        if (findSCSS.caller.name !== 'compile' && !/cli(?:\.min)?\.js$/.test(require.main.filename))
+        if (findSCSS.caller.name != 'compile' && !/cli(?:\.min)?\.js$/.test(require.main.filename))
             console.info('findSCSS() » Check returned array.');
     }
     return options.isRecursing || scssFiles.length > 0 ? scssFiles : [];
@@ -79,7 +79,7 @@ function compile(inputPath, options = {}) {
     };
 
     // Validate inputPath
-    if (typeof inputPath !== 'string') {
+    if (typeof inputPath != 'string') {
             console.error('compile() » ERROR: 1st arg <inputPath> must be a string.');
             console.info('compile() » For more help, please visit ' + docURL);
             return;
@@ -140,7 +140,7 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
         .replace(/"/g, '\'') // replace double quotes w/ single quotes
         .replace(/\n\s*/g, ' '); // condense to single line
     const strValidOptions = Object.keys(defaultOptions).join(', '),
-          booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] === 'boolean'),
+          booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
           integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]));
 
     // Define print functions
@@ -163,7 +163,7 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
             console.error(
                 `${ logPrefix }ERROR: \`${ key }\` is an invalid option.`);
             printValidOptions(); printDocURL(); return false;
-        } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean') {
+        } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
             console.error(
                 `${ logPrefix }ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
             printDocURL(); return false;

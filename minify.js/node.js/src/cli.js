@@ -62,7 +62,7 @@ if (process.argv.some(arg => argRegex.infoCmds.help.test(arg))) printHelpSection
 else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
     const globalVer = execSync(`npm view ${pkgName} version`).toString().trim() || 'none';
     let localVer, currentDir = process.cwd();
-    while (currentDir !== '/') {
+    while (currentDir != '/') {
         const localManifestPath = path.join(currentDir, 'package.json');
         if (fs.existsSync(localManifestPath)) {
             const localManifest = require(localManifestPath);
@@ -195,18 +195,18 @@ function printHelpSections(
         // Split msg into lines of appropriate lengths
         let currentLine = '';
         words.forEach(word => {
-            const lineLength = terminalWidth - ( lines.length === 0 ? 0 : indentation );
+            const lineLength = terminalWidth - ( lines.length == 0 ? 0 : indentation );
             if (currentLine.length + word.length > lineLength) { // cap/store it
-                lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
+                lines.push(lines.length == 0 ? currentLine : currentLine.trimStart());
                 currentLine = '';
             }
             currentLine += word;
         });
-        lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
+        lines.push(lines.length == 0 ? currentLine : currentLine.trimStart());
 
         // Print formatted msg
         lines.forEach((line, index) => console.info(
-            index === 0 ? line // print 1st line unindented
+            index == 0 ? line // print 1st line unindented
                 : ' '.repeat(indentation) + line // print subsequent lines indented
         ));
     }

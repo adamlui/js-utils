@@ -52,7 +52,7 @@ function generatePassword(options = {}) {
         return generatePasswords(qty, nonQtyOptions);
 
     } else { // generate/return single password
-        const fromGeneratePasswords = generatePassword.caller?.name === 'generatePasswords'; // flag to avoid repetitive logs
+        const fromGeneratePasswords = generatePassword.caller?.name == 'generatePasswords'; // flag to avoid repetitive logs
 
         // Init password's char set
         if (options.verbose && !fromGeneratePasswords) console.info('generatePassword() » Initializing character set...');
@@ -62,7 +62,7 @@ function generatePassword(options = {}) {
               + (options.lowercase ? charsets.lower : '') 
               + (options.uppercase ? charsets.upper : '')
         );
-        if (pwCharset === '') // all flags false + no charset passed
+        if (pwCharset == '') // all flags false + no charset passed
             pwCharset = charsets.lower + charsets.upper; // default to upper + lower
 
         // Exclude passed `exclude` chars
@@ -147,7 +147,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
           defaultOptions = { verbose: true /* enable logging */ };
 
     // Validate password
-    if (typeof password !== 'string') {
+    if (typeof password != 'string') {
         console.error('strictify() » ERROR: 1st arg <password> must be a string.');
         console.info('strictify() » For more help, please visit ' + docURL);
         return;
@@ -219,7 +219,7 @@ function validateStrength(password, options = {}) {
           defaultOptions = { verbose: true /* enable logging */ };
 
     // Validate password
-    if (typeof password !== 'string') {
+    if (typeof password != 'string') {
         console.error('validateStrength() » ERROR: 1st arg <password> must be a string.');
         console.info('validateStrength() » For more help, please visit ' + docURL);
         return;
@@ -273,7 +273,7 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
         .replace(/"/g, '\'') // replace double quotes w/ single quotes
         .replace(/\n\s*/g, ' '); // condense to single line
     const strValidOptions = Object.keys(defaultOptions).join(', '),
-          booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] === 'boolean'),
+          booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
           integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]));
 
     // Define print functions
@@ -296,7 +296,7 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
             console.error(
                 `${ logPrefix }ERROR: \`${ key }\` is an invalid option.`);
             printValidOptions(); printDocURL(); return false;
-        } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean') {
+        } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
             console.error(
                 `${ logPrefix }ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
             printDocURL(); return false;

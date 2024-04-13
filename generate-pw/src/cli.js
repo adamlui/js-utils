@@ -66,7 +66,7 @@ if (process.argv.some(arg => argRegex.infoCmds.help.test(arg))) printHelpSection
 else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
     const globalVer = execSync(`npm view ${pkgName} version`).toString().trim() || 'none';
     let localVer, currentDir = process.cwd();
-    while (currentDir !== '/') {
+    while (currentDir != '/') {
         const localManifestPath = path.join(currentDir, 'package.json');
         if (fs.existsSync(localManifestPath)) {
             const localManifest = require(localManifestPath);
@@ -136,18 +136,18 @@ function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'flag
         // Split msg into lines of appropriate lengths
         let currentLine = '';
         words.forEach(word => {
-            const lineLength = terminalWidth - ( lines.length === 0 ? 0 : indentation );
+            const lineLength = terminalWidth - ( lines.length == 0 ? 0 : indentation );
             if (currentLine.length + word.length > lineLength) { // cap/store it
-                lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
+                lines.push(lines.length == 0 ? currentLine : currentLine.trimStart());
                 currentLine = '';
             }
             currentLine += word;
         });
-        lines.push(lines.length === 0 ? currentLine : currentLine.trimStart());
+        lines.push(lines.length == 0 ? currentLine : currentLine.trimStart());
 
         // Print formatted msg
         lines.forEach((line, index) => console.info(
-            index === 0 ? line // print 1st line unindented
+            index == 0 ? line // print 1st line unindented
                 : ' '.repeat(indentation) + line // print subsequent lines indented
         ));
     }
@@ -158,10 +158,10 @@ function printHelpCmdAndDocURL() {
 
 function copyToClipboard(data) {
     data = data.replace(/\s+$/m, '').replace(/"/g, '""');
-    if (process.platform === 'darwin') // macOS
+    if (process.platform == 'darwin') // macOS
         execSync(`printf "${ data }" | pbcopy`);
-    else if (process.platform === 'linux')
+    else if (process.platform == 'linux')
         execSync(`printf "${ data }" | xclip -selection clipboard`);
-    else if (process.platform === 'win32')
+    else if (process.platform == 'win32')
         execSync(`Set-Clipboard -Value "${ data }"`, { shell: 'powershell' });
 }

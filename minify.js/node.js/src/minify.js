@@ -24,7 +24,7 @@ function findJS(searchDir, options = {}) {
     };
 
     // Validate searchDir
-    if (typeof searchDir !== 'string') {
+    if (typeof searchDir != 'string') {
             console.error('findJS() » ERROR: 1st arg <searchDir> must be a string.');
             console.info('findJS() » For more help, please visit ' + docURL);
             return;
@@ -59,9 +59,9 @@ function findJS(searchDir, options = {}) {
     // Log/return final result
     if (!options.isRecursing && options.verbose) {
             console.info('findJS() » Search complete! '
-              + ( jsFiles.length === 0 ? 'No' : jsFiles.length )
+              + ( jsFiles.length == 0 ? 'No' : jsFiles.length )
               + ` file${ jsFiles.length == 0 || jsFiles.length > 1 ? 's' : '' } found.`);
-        if (findJS.caller.name !== 'minify' && !process.argv.some(arg => arg.includes('gulp')) &&
+        if (findJS.caller.name != 'minify' && !process.argv.some(arg => arg.includes('gulp')) &&
             !/cli(?:\.min)?\.js$/.test(require.main.filename))
                 console.info('findJS() » Check returned array.');
     }
@@ -83,7 +83,7 @@ function minify(input, options = {}) {
     };
 
     // Validate input
-    if (typeof input !== 'string') {
+    if (typeof input != 'string') {
         console.error('minify() » ERROR: 1st arg <input> must be a string.');
         console.info('minify() » For more help, please visit ' + docURL);
         return;
@@ -156,7 +156,7 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
         .replace(/"/g, '\'') // replace double quotes w/ single quotes
         .replace(/\n\s*/g, ' '); // condense to single line
     const strValidOptions = Object.keys(defaultOptions).join(', '),
-          booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] === 'boolean'),
+          booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
           integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]));
 
     // Define print functions
@@ -188,9 +188,9 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
                         if (!['toplevel'].includes(mangleKey) || typeof options.mangle[mangleKey] != 'boolean') {
                             printMangleErr(); printDocURL(); return false; }
                     }
-                else if (typeof options.mangle !== 'boolean') {
+                else if (typeof options.mangle != 'boolean') {
                             printMangleErr(); printDocURL(); return false; }
-            } else if (typeof options[key] !== 'boolean') {
+            } else if (typeof options[key] != 'boolean') {
                 console.error(`${ logPrefix }ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
                 printDocURL(); return false;
             }

@@ -51,7 +51,7 @@ const ipv4 = {
         if (options.verbose) {
             console.info(
                 `ipv4.generate() » IPv4 address${ options.qty > 1 ? 'es' : '' } generated!`);
-            if (options.qty === 1) console.info(
+            if (options.qty == 1) console.info(
                 `ipv4.generate() » ${ ipResult }`);
             else if (typeof require == 'undefined' || !/cli(?:\.min)?\.js$/.test(require.main.filename)) console.info(
                 'ipv4.generate() » Check returned array.' );
@@ -66,7 +66,7 @@ const ipv4 = {
               defaultOptions = { verbose: true /* enable logging */ };
 
         // Validate address as arg
-        if (typeof address !== 'string') {
+        if (typeof address != 'string') {
             console.error('ipv4.validate() » ERROR: 1st arg <address> must be a string.');
             console.info('ipv4.validate() » For more help, please visit ' + docURL);
             return;
@@ -80,7 +80,7 @@ const ipv4 = {
         if (options.verbose) console.info('ipv4.validate() » Validating IPv4 address...');
         const segments = address.split('.');
         const addressIsValid = !( // false if any dq condition matches
-                  segments.length !== 4 // not 4-segments long
+                  segments.length != 4 // not 4-segments long
                || segments.some(segment => // segment invalid
                        !/^\d+$/.test(segment) // for being non-numeric
                     || parseInt(segment, 10) < 0 // or negative
@@ -135,7 +135,7 @@ const ipv6 = {
         const ipResult = options.qty > 1 ? ips : ips[0];
         if (options.verbose) {
             console.info(`ipv6.generate() » IPv6 address${ options.qty > 1 ? 'es' : '' } generated!`);
-            console.info(options.qty === 1 ? `ipv6.generate() » ${ ipResult }`
+            console.info(options.qty == 1 ? `ipv6.generate() » ${ ipResult }`
                                            : 'ipv6.generate() » Check returned array.' );
         }
         return ipResult;
@@ -154,7 +154,7 @@ const ipv6 = {
         };
 
         // Validate address
-        if (typeof address !== 'string') {
+        if (typeof address != 'string') {
             console.error('ipv6.format() » ERROR: 1st arg <address> must be a string.');
             console.info('ipv6.format() » For more help, please visit ' + docURL);
             return;
@@ -202,7 +202,7 @@ const ipv6 = {
 
         // Log/return final result
         if (options.verbose) {
-            if (formattedAddress !== address) console.info(
+            if (formattedAddress != address) console.info(
                 'ipv6.format() » IP formatted successfully!');
             else console.info(
                 'ipv6.format() » IP already formatted to specs.');
@@ -219,7 +219,7 @@ const ipv6 = {
               defaultOptions = { verbose: true /* enable logging */ };
 
         // Validate address as arg
-        if (typeof address !== 'string') {
+        if (typeof address != 'string') {
             console.error('ipv6.validate() » ERROR: 1st arg <address> must be a string.');
             console.info('ipv6.validate() » For more help, please visit ' + docURL);
             return;
@@ -240,7 +240,7 @@ const ipv6 = {
                || pieces.length < 2 || pieces.length > 8 // 1 or 9+ hex pieces
                || pieces.some(piece => // hex piece invalid
                       !/^[\dA-Fa-f]{1,4}$/.test(piece) // for not being 1-4 valid chars
-                          && (piece !== lastPiece // except last piece
+                          && (piece != lastPiece // except last piece
                               || !ipv4.validate( // where IPv4-mapping appended invalid address
                                       lastPiece.replace( // determined by stripping valid length suffixes first
                                           /\/(?:0|(?:[1-2]?\d)|32|96)$/, ''), { verbose: false }
@@ -264,7 +264,7 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
         .replace(/"/g, '\'') // replace double quotes w/ single quotes
         .replace(/\n\s*/g, ' '); // condense to single line
     const strValidOptions = Object.keys(defaultOptions).join(', '),
-          booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] === 'boolean'),
+          booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
           integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]));
 
     // Define print functions
@@ -287,7 +287,7 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
             console.error(
                 `${ logPrefix }ERROR: \`${ key }\` is an invalid option.`);
             printValidOptions(); printDocURL(); return false;
-        } else if (booleanOptions.includes(key) && typeof options[key] !== 'boolean') {
+        } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
             console.error(
                 `${ logPrefix }ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
             printDocURL(); return false;
