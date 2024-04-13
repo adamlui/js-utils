@@ -23,10 +23,8 @@ async function geolocate(ips, options = {}) {
             await import('https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js');
             ipIsValid = ipv4.validate; // eslint-disable-line no-undef
         }
-        if (ipIsValid && !ipIsValid(ip, { verbose: false })) {
-            console.error(`geolocate() » ERROR: ${ip} is not a valid IPv4 address.`);
-            return;
-        }
+        if (ipIsValid && !ipIsValid(ip, { verbose: false }))
+            return console.error(`geolocate() » ERROR: ${ip} is not a valid IPv4 address.`);
     }
 
     // Validate/init options
