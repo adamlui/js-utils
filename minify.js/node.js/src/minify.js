@@ -159,9 +159,13 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
           booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
           integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]));
 
-    // Define print functions
+    // Init log vars
     let logPrefix = 'validateOptions() » ';
     try { logPrefix = validateOptions.caller?.name + '() » '; } catch (err) {}
+    let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) + 1;
+    optionsPos += ['st','nd','rd'][optionsPos - 1] || 'th'; // append ordinal suffix
+
+    // Define print functions
     const printValidOptions = () => {
         console.info(`${ logPrefix }Valid options: [ ${ strValidOptions } ]`);
         console.info(`${ logPrefix }If omitted, default settings are: ${ strDefaultOptions }`);
@@ -171,7 +175,8 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Validate options
     if (typeof options != 'object') { // validate as obj
-        console.error(`${ logPrefix }ERROR: [options] can only be an object of key/values.`);
+        console.error(`${ logPrefix }ERROR: ${
+            optionsPos == '0th' ? '[O' : optionsPos + ' arg [o'}ptions] can only be an object of key/values.`);
         console.info(`${ logPrefix }Example valid call: ${ exampleCall }`);
         printValidOptions(); printDocURL(); return false;
     }
