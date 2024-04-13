@@ -224,18 +224,19 @@ validateStrength() » Check returned object for score/recommendations.
 
 其中任何一個都可以傳遞到每個 `generate*()` 函數的選項物件中：
 
-姓名        | 類型   | 描述                                     | 預設值
-------------|--------|-----------------------------------------|---------
-`verbose`   | 布林值 | 在控制台/終端機中顯示日誌記錄。            | `true`
-`length`    | 整數   | 密碼的長度。                             | `8`
-`qty`*      | 整數   | 要產生的密碼數量。                        | `1`
-`charset`   | 字串   | 密碼中包含的字元。                        | `''`
-`exclude`   | 字串   | 要從密碼中排除的字元。                     | `''`
-`numbers`   | 布林值 | 允許密碼中包含數字。                       | `false`
-`symbols`   | 布林值 | 允許密碼中包含符號。                       | `false`
-`lowercase` | 布林值 | 密碼中允許使用小寫字母。                   | `true`
-`uppercase` | 布林值 | 密碼中允許使用大寫字母。                   | `true`
-`strict`    | 布林值 | 要求密碼中每個允許的字元集中至少有一個字元。 | `false`
+姓名                   | 類型   | 描述                                           | 預設值
+----------------------|--------|------------------------------------------------|---------
+`verbose`             | 布林值 | 在控制台/終端機中顯示日誌記錄。                   | `true`
+`length`              | 整數   | 密碼的長度。                                    | `8`
+`qty`*                | 整數   | 要產生的密碼數量。                              | `1`
+`charset`             | 字串   | 密碼中包含的字元。                              | `''`
+`exclude`             | 字串   | 要從密碼中排除的字元。                           | `''`
+`numbers`             | 布林值 | 允許密碼中包含數字。                             | `false`
+`symbols`             | 布林值 | 允許密碼中包含符號。                             | `false`
+`lowercase`           | 布林值 | 密碼中允許使用小寫字母。                         | `true`
+`uppercase`           | 布林值 | 密碼中允許使用大寫字母。                         | `true`
+`excludeSimilarChars` | 布林值 | 排除密碼中的相似字元（例如 o、0、O、i、l、1、|）。 | `false`
+`strict`              | 布林值 | 要求密碼中每個允許的字元集中至少有一個字元。       | `false`
 
 ##### _*只在 [`generatePassword([options])`](#generatepasswordoptions) 中可用，因為 [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) 採用 `qty` 參數_
 

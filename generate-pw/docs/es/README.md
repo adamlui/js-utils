@@ -228,18 +228,19 @@ Nombre    | Tipo     | Descripción                               | Valor por De
 
 Cualquiera de estos se puede pasar al objeto de opciones para cada función `generate*()`:
 
-Nombre      | Tipo     | Descripción                                                                                  | Valor por Defecto
-------------|----------|----------------------------------------------------------------------------------------------|---------------
-`verbose`   | Booleano | Mostrar registros en la consola/terminal.                                                    | `true`
-`length`    | Entero   | Longitud de la(s) contraseña(s).                                                             | `8`
-`qty`*      | Entero   | Número de contraseñas a generar.                                                             | `1`
-`charset`   | Cadena   | Caracteres a incluir en la(s) contraseña(s).                                                 | `''`
-`exclude`   | Cadena   | Caracteres para excluir de la(s) contraseña(s).                                              | `''`
-`numbers`   | Booleano | Permitir números en contraseña(s).                                                           | `false`
-`symbols`   | Booleano | Permitir símbolos en la(s) contraseña(s).                                                    | `false`
-`lowercase` | Booleano | Permitir letras minúsculas en la(s) contraseña(s).                                           | `true`
-`uppercase` | Booleano | Permitir letras mayúsculas en la(s) contraseña(s).                                           | `true`
-`strict`    | Booleano | Requiere al menos un carácter de cada carácter permitido establecido en la(s) contraseña(s). | `false`
+Nombre                | Tipo     | Descripción                                                                                  | Valor por Defecto
+----------------------|----------|----------------------------------------------------------------------------------------------|---------------
+`verbose`             | Booleano | Mostrar registros en la consola/terminal.                                                    | `true`
+`length`              | Entero   | Longitud de la(s) contraseña(s).                                                             | `8`
+`qty`*                | Entero   | Número de contraseñas a generar.                                                             | `1`
+`charset`             | Cadena   | Caracteres a incluir en la(s) contraseña(s).                                                 | `''`
+`exclude`             | Cadena   | Caracteres para excluir de la(s) contraseña(s).                                              | `''`
+`numbers`             | Booleano | Permitir números en contraseña(s).                                                           | `false`
+`symbols`             | Booleano | Permitir símbolos en la(s) contraseña(s).                                                    | `false`
+`lowercase`           | Booleano | Permitir letras minúsculas en la(s) contraseña(s).                                           | `true`
+`uppercase`           | Booleano | Permitir letras mayúsculas en la(s) contraseña(s).                                           | `true`
+`excludeSimilarChars` | Booleano | Excluya caracteres similares (por ejemplo, o,0,O,i,l,1,|) en las contraseñas.                | `false`
+`strict`              | Booleano | Requiere al menos un carácter de cada carácter permitido establecido en la(s) contraseña(s). | `false`
 
 ##### _*Solo disponible en [`generatePassword([opciones])`](#generatepasswordopciones) ya que [`generatePasswords(qty[, opciones])`](#generatepasswordsqty-opciones) toma un argumento `qty`_
 

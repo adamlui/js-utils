@@ -228,18 +228,19 @@ Name      | Type    | Description                       | Default Value
 
 Any of these can be passed into the options object for each `generate*()` function:
 
-Name        | Type    | Description                                                                    | Default Value
-------------|---------|--------------------------------------------------------------------------------|---------------
-`verbose`   | Boolean | Show logging in console/terminal.                                                                | `true`
-`length`    | Integer | Length of password(s).                                                         | `8`
-`qty`*      | Integer | Number of passwords to generate.                                               | `1`
-`charset`   | String  | Characters to include in password(s).                                          | `''`
-`exclude`   | String  | Characters to exclude from password(s).                                        | `''`
-`numbers`   | Boolean | Allow numbers in password(s).                                                  | `false`
-`symbols`   | Boolean | Allow symbols in password(s).                                                  | `false`
-`lowercase` | Boolean | Allow lowercase letters in password(s).                                        | `true`
-`uppercase` | Boolean | Allow uppercase letters in password(s).                                        | `true`
-`strict`    | Boolean | Require at least one character from each allowed character set in password(s). | `false`
+Name                  | Type    | Description                                                                    | Default Value
+----------------------|---------|--------------------------------------------------------------------------------|---------------
+`verbose`             | Boolean | Show logging in console/terminal.                                              | `true`
+`length`              | Integer | Length of password(s).                                                         | `8`
+`qty`*                | Integer | Number of passwords to generate.                                               | `1`
+`charset`             | String  | Characters to include in password(s).                                          | `''`
+`exclude`             | String  | Characters to exclude from password(s).                                        | `''`
+`numbers`             | Boolean | Allow numbers in password(s).                                                  | `false`
+`symbols`             | Boolean | Allow symbols in password(s).                                                  | `false`
+`lowercase`           | Boolean | Allow lowercase letters in password(s).                                        | `true`
+`uppercase`           | Boolean | Allow uppercase letters in password(s).                                        | `true`
+`excludeSimilarChars` | Boolean | Exclude similar characters (e.g. o,0,O,i,l,1,|) in password(s).                | `false`
+`strict`              | Boolean | Require at least one character from each allowed character set in password(s). | `false`
 
 ##### _*Only available in [`generatePassword([options])`](#generatepasswordoptions) since [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) takes a `qty` argument_
 

@@ -228,18 +228,19 @@ Name      | Geben Sie       | ein Beschreibung                         | Standar
 
 Jede davon kann für jede `generate*()`-Funktion an das Optionsobjekt übergeben werden:
 
-Name        | Geben Sie       | ein Beschreibung                                                                  | Standardwert
-------------|-----------------|-----------------------------------------------------------------------------------|--------------
-`verbose`   | Boolescher Wert | Protokolle in Konsole/Terminal anzeigen.                                          | `true`
-`length`    | Ganze Zahl      | Länge des/der Passwort(s).                                                        | `8`
-`qty`*      | Ganze Zahl      | Anzahl der zu generierenden Passwörter.                                           | `1`
-`charset`   | Zeichenfolge    | In Passwörter aufzunehmende Zeichen.                                              | `''`
-`exclude`   | Zeichenfolge    | Von Passwörtern auszuschließende Zeichen.                                         | `''`
-`numbers`   | Boolescher Wert | Zahlen in Passwörtern zulassen.                                                   | `false`
-`symbols`   | Boolescher Wert | Erlaube Symbole in Passwörtern.                                                   | `false`
-`lowercase` | Boolescher Wert | Erlauben Sie Kleinbuchstaben in Passwörtern.                                      | `true`
-`uppercase` | Boolescher Wert | Erlauben Sie Großbuchstaben in Passwörtern.                                       | `true`
-`strict`    | Boolescher Wert | Erfordern mindestens ein Zeichen aus jedem zulässigen Zeichensatz in Passwörtern. | `false`
+Name                  | Geben Sie       | ein Beschreibung                                                                  | Standardwert
+----------------------|-----------------|-----------------------------------------------------------------------------------|--------------
+`verbose`             | Boolescher Wert | Protokolle in Konsole/Terminal anzeigen.                                          | `true`
+`length`              | Ganze Zahl      | Länge des/der Passwort(s).                                                        | `8`
+`qty`*                | Ganze Zahl      | Anzahl der zu generierenden Passwörter.                                           | `1`
+`charset`             | Zeichenfolge    | In Passwörter aufzunehmende Zeichen.                                              | `''`
+`exclude`             | Zeichenfolge    | Von Passwörtern auszuschließende Zeichen.                                         | `''`
+`numbers`             | Boolescher Wert | Zahlen in Passwörtern zulassen.                                                   | `false`
+`symbols`             | Boolescher Wert | Erlaube Symbole in Passwörtern.                                                   | `false`
+`lowercase`           | Boolescher Wert | Erlauben Sie Kleinbuchstaben in Passwörtern.                                      | `true`
+`uppercase`           | Boolescher Wert | Erlauben Sie Großbuchstaben in Passwörtern.                                       | `true`
+`excludeSimilarChars` | Boolescher Wert | Schließen Sie ähnliche Zeichen (z. B. o,0,O,i,l,1,|) in Passwörtern aus.          | `false`
+`strict`              | Boolescher Wert | Erfordern mindestens ein Zeichen aus jedem zulässigen Zeichensatz in Passwörtern. | `false`
 
 ##### _*Nur verfügbar in [`generatePassword([optionen])`](#generatepasswordoptionen), da [`generatePasswords(qty[, optionen])`](#generatepasswordsqty-optionen) ein `qty`-Argument annimmt_
 

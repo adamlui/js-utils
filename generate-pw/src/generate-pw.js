@@ -31,16 +31,17 @@ function generatePassword(options = {}) {
           exampleCall = 'generatePassword({ verbose: false, numbers: true })';
 
     const defaultOptions = {
-        verbose: true,   // enable logging
-        length: 8,       // length of password
-        qty: 1,          // number of passwords to generate
-        charset: '',     // characters to include
-        exclude: '',     // characters to exclude
-        numbers: false,  // include numberChars
-        symbols: false,  // include symbolChars
-        lowercase: true, // include lowercase letters
-        uppercase: true, // include uppercase letters
-        strict: false    // require at least one char from each enabled set
+        verbose: true,              // enable logging
+        length: 8,                  // length of password
+        qty: 1,                     // number of passwords to generate
+        charset: '',                // characters to include
+        exclude: '',                // characters to exclude
+        numbers: false,             // include numberChars
+        symbols: false,             // include symbolChars
+        lowercase: true,            // include lowercase letters
+        uppercase: true,            // include uppercase letters
+        excludeSimilarChars: false, // exclude similar chars (e.g. o,0,O,i,l,1,|)
+        strict: false               // require at least one char from each enabled set
     };
 
     // Validate/init options
@@ -69,6 +70,12 @@ function generatePassword(options = {}) {
         if (options.exclude) {
             if (options.verbose && !fromGeneratePasswords) console.info('generatePassword() » Removing excluded characters...');
             pwCharset = pwCharset.replace(new RegExp(`[${ options.exclude }]`, 'g'), '');
+        }
+
+        // Exclude similar chars if `excludeSimilarChars` is `true`
+        if (options.excludeSimilarChars) {
+            if (options.verbose && !fromGeneratePasswords) console.info('generatePassword() » Excluding similar characters...');
+            pwCharset = pwCharset.replace(/[o0Oil1|]/g, '');
         }
 
         // Generate unstrict password
@@ -104,15 +111,16 @@ function generatePasswords(qty, options = {}) {
           exampleCall = 'generatePasswords(3, { verbose: false, symbols: true })';
 
     const defaultOptions = {
-        verbose: true,   // enable logging
-        length: 8,       // length of password
-        charset: '',     // characters to include
-        exclude: '',     // characters to exclude
-        numbers: false,  // include numberChars
-        symbols: false,  // include symbolChars
-        lowercase: true, // include lowercase letters
-        uppercase: true, // include uppercase letters
-        strict: false    // require at least one char from each enabled set
+        verbose: true,              // enable logging
+        length: 8,                  // length of password
+        charset: '',                // characters to include
+        exclude: '',                // characters to exclude
+        numbers: false,             // include numberChars
+        symbols: false,             // include symbolChars
+        lowercase: true,            // include lowercase letters
+        uppercase: true,            // include uppercase letters
+        excludeSimilarChars: false, // exclude similar chars (e.g. o,0,O,i,l,1,|)
+        strict: false               // require at least one char from each enabled set
     };
 
     // Validate qty

@@ -224,18 +224,19 @@ validateStrength() » Check returned object for score/recommendations.
 
 其中任何一个都可以传递到每个 `generate*()` 函数的选项对象中：
 
-姓名        | 类型   | 描述                                     | 默认值
-------------|-------|------------------------------------------|--------
-`verbose`   | 布尔值 | 在控制台/终端中显示日志记录。              | `true`
-`length`    | 整数   | 密码的长度。                              | `8`
-`qty`*      | 整数   | 要生成的密码数量。                         | `1`
-`charset`   | 字符串 | 密码中包含的字符。                         | `''`
-`exclude`   | 字符串 | 要从密码中排除的字符。                     | `''`
-`numbers`   | 布尔值 | 允许密码中包含数字。                       | `false`
-`symbols`   | 布尔值 | 允许密码中包含符号。                       | `false`
-`lowercase` | 布尔值 | 密码中允许使用小写字母。                   | `true`
-`uppercase` | 布尔值 | 密码中允许使用大写字母。                   | `true`
-`strict`    | 布尔值 | 要求密码中每个允许的字符集中至少有一个字符。 | `false`
+姓名                  | 类型   | 描述                                            | 默认值
+----------------------|-------|-------------------------------------------------|--------
+`verbose`             | 布尔值 | 在控制台/终端中显示日志记录。                     | `true`
+`length`              | 整数   | 密码的长度。                                    | `8`
+`qty`*                | 整数   | 要生成的密码数量。                               | `1`
+`charset`             | 字符串 | 密码中包含的字符。                               | `''`
+`exclude`             | 字符串 | 要从密码中排除的字符。                           | `''`
+`numbers`             | 布尔值 | 允许密码中包含数字。                             | `false`
+`symbols`             | 布尔值 | 允许密码中包含符号。                             | `false`
+`lowercase`           | 布尔值 | 密码中允许使用小写字母。                         | `true`
+`uppercase`           | 布尔值 | 密码中允许使用大写字母。                         | `true`
+`excludeSimilarChars` | 布尔值 | 排除密码中的相似字符（例如 o、0、O、i、l、1、|）。 | `false`
+`strict`              | 布尔值 | 要求密码中每个允许的字符集中至少有一个字符。       | `false`
 
 ##### _*仅在 [`generatePassword([options])`](#generatepasswordoptions) 中可用，因为 [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) 采用 `qty` 参数_
 
