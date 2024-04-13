@@ -9,6 +9,17 @@ const minifyJS = require('@adamlui/minify.js'),
 
 function minify(input, output, options = {}) {
 
+    // Init options
+    const defaultOptions = {
+        recursive: true,   // recursively search for nested files if dir path passed
+        verbose: true,     // enable logging
+        dotFolders: false, // include dotfolders in file search
+        dotFiles: false,   // include dotfiles in file search
+        mangle: true,      // shorten var names (typically to one character)
+        comment: ''        // prepend comment to code
+    };
+    options = { ...defaultOptions, ...options };
+
     if (!input && !output) { // return I/O-argless minify() for use as a stream transformation
         return new Transform({
             objectMode: true,
@@ -20,17 +31,6 @@ function minify(input, output, options = {}) {
                 }
                 this.push(file); callback();
     }});}
-
-    // Init options
-    const defaultOptions = {
-        recursive: true,   // recursively search for nested files if dir path passed
-        verbose: true,     // enable logging
-        dotFolders: false, // include dotfolders in file search
-        dotFiles: false,   // include dotfiles in file search
-        mangle: true,      // shorten var names (typically to one character)
-        comment: ''        // prepend comment to code
-    };
-    options = { ...defaultOptions, ...options };
 
     // Validate input arg (output arg can be anything)
     const inputPath = path.resolve(process.cwd(), input);
