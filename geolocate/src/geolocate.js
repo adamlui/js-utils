@@ -79,7 +79,8 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
           booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean');
 
     // Define print functions
-    const logPrefix = ( validateOptions.caller?.name || 'validateOptions' ) + '() » ';
+    let logPrefix = 'validateOptions() » ';
+    try { logPrefix = validateOptions.caller?.name + '() » '; } catch {}
     const printValidOptions = () => {
         console.info(`${ logPrefix }Valid options: [ ${ strValidOptions } ]`);
         console.info(`${ logPrefix }If omitted, default settings are: ${ strDefaultOptions }`);

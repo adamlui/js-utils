@@ -160,7 +160,8 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
           integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]));
 
     // Define print functions
-    const logPrefix = ( validateOptions.caller?.name || 'validateOptions' ) + '() » ';
+    let logPrefix = 'validateOptions() » ';
+    try { logPrefix = validateOptions.caller?.name + '() » '; } catch {}
     const printValidOptions = () => {
         console.info(`${ logPrefix }Valid options: [ ${ strValidOptions } ]`);
         console.info(`${ logPrefix }If omitted, default settings are: ${ strDefaultOptions }`);
