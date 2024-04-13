@@ -5,26 +5,29 @@
 
 // Define API functions
 
-async function geolocate(ip, options = {}) {
+async function geolocate(ips, options = {}) {
 
     const docURL = 'https://github.com/adamlui/js-utils/tree/main/geolocate#locateip',
           exampleCall = 'geolocate(\'8.8.8.8\', { verbose: false })',
           defaultOptions = { verbose: true /* enable logging */ };
 
-    // Init/validate IP
-    ip = ip || await getOwnIP();
-    if (options.verbose) console.info(`geolocate() » Validating ${ip}...`);
-    let ipIsValid;
-    try { // to use Node.js generate-ip for validation
-        ipIsValid = require('generate-ip').ipv4.validate;
-    } catch (err) { // use jsDelivr's latest copy of generate-ip
-        await import('https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js');
-        ipIsValid = ipv4.validate; // eslint-disable-line no-undef
-    }
-    if (ipIsValid && !ipIsValid(ip, { verbose: false })) {
-        console.error('geolocate() » ERROR: Invalid IP address passed.');
-        console.info('geolocate() » For more help, please visit ' + docURL);
-        return;
+    // Init/validate IP(s)
+    ips = Array.isArray(ips) ? ips : [ips]; // normalize to array
+    ips[0] = ips[0] || await getOwnIP(); // fill own IP if none passed
+    for (const ip of ips) {
+        if (options.verbose) console.info(`geolocate() » Validating ${ip}...`);
+        let ipIsValid;
+        try { // to use Node.js generate-ip for validation
+            ipIsValid = require('generate-ip').ipv4.validate;
+        } catch (err) { // use jsDelivr's latest copy of generate-ip
+            await import('https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js');
+            ipIsValid = ipv4.validate; // eslint-disable-line no-undef
+        }
+        if (ipIsValid && !ipIsValid(ip, { verbose: false })) {
+            console.error(`geolocate() » ERROR: ${ip} is an invalid IP address.`);
+            console.info('geolocate() » For more help, please visit ' + docURL);
+            return;
+        }
     }
 
     // Validate/init options
@@ -33,17 +36,21 @@ async function geolocate(ip, options = {}) {
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
     try { // to fetch/get/return geolocation data
-        if (options.verbose) console.info('geolocate() » Fetching geolocation data...');
-        let response;
-        if (typeof fetch != 'undefined') // web browser
-            response = await fetch(`http://ip-api.com/json/${ip}`);
-        else if (typeof require == 'function') // Node.js
-            response = await require('axios').get(`http://ip-api.com/json/${ip}`);
-        else return console.error('geolocate() » ERROR: Environment not supported.');
-        const { status, org, as, query, ...filteredData } = await response.json(); // eslint-disable-line no-unused-vars
-        if (options.verbose && ( typeof require == 'undefined' || !/cli(?:\.min)?\.js$/.test(require.main.filename) ))
-            console.info('geolocate() » Success! Check returned object.');
-        return { ip, ...filteredData };
+        const geoData = [];
+        for (const ip of ips) {
+            if (options.verbose) console.info(`geolocate() » Fetching geolocation data for ${ip}...`);
+            let response;
+            if (typeof fetch != 'undefined') // web browser
+                response = await fetch(`http://ip-api.com/json/${ip}`);
+            else if (typeof require == 'function') // Node.js
+                response = await require('axios').get(`http://ip-api.com/json/${ip}`);
+            else return console.error('geolocate() » ERROR: Environment not supported.');
+            const { status, org, as, query, ...filteredData } = await response.json(); // eslint-disable-line no-unused-vars
+            geoData.push(filteredData);
+        }
+        if (options.verbose && (typeof require == 'undefined' || !/cli(?:\.min)?\.js$/.test(require.main.filename)))
+            console.info('geolocate() » Success! Check returned array.');
+        return geoData;
     } catch (err) { console.error('geolocate() »', err); }
 
     async function getOwnIP() {
