@@ -97,7 +97,7 @@
     function printHelpSections(includeSections = ['cmdFormat', 'flags', 'infoCmds']) {
         const helpSections = {
             'cmdFormat': [
-                `\n${by}geolocate [ip] [options|commands]${nc}`
+                `\n${by}geolocate [ip1] [ip2] [...] [options|commands]${nc}`
             ],
             'flags': [
                 '\nBoolean options:',
