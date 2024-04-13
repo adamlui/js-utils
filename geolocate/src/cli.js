@@ -77,14 +77,15 @@
                     printHelpCmdAndDocURL(); process.exit(1);
         }}}
         if (validIPs.length == 0) // no IP arg passed
-            validIPs.push(await geo.getOwnIP()); // use own IP
+            validIPs.push(''); // to use own IP
 
         // Fetch/store/log geolocation data
-        validIPs.forEach(ip => printIfNotQuiet(`Fetching geolocation data for ${ip}...`));
+        validIPs.forEach(ip => printIfNotQuiet(
+            `Fetching geolocation data${ ip ? ( ' for ' + ip ) : '' }...`));
         const geoResults = [];
         for (const ip of validIPs) geoResults.push(await geo.locate(ip));
         if (!config.quietMode && geoResults.length == 1) {
-            console.info(`\nIP: ${bw + validIPs[0] + nc}`);
+            console.info(`\nIP: ${bw + geoResults[0].ip + nc}`);
             console.info(`Country: ${bw + geoResults[0].country + nc}`);
             console.info(`Region: ${bw + geoResults[0].regionName + nc}`);
             console.info(`City: ${bw + geoResults[0].city + nc}`);
