@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
+// © 2024 Adam Lui & contributors under the MIT license.
+// Source: https://github.js-utils.com/tree/main/scss-to-css/src
+// Documentation: https://github.js-utils.com/tree/main/scss-to-css/docs
+
 const pkgName = '@adamlui/scss-to-css',
       docURL = 'https://github.com/adamlui/js-utils/tree/main/scss-to-css#-command-line-usage';
 

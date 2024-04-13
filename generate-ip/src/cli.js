@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
+// © 2024 Adam Lui & contributors under the MIT license.
+// Source: https://github.js-utils.com/tree/main/generate-ip/src
+// Documentation: https://github.js-utils.com/tree/main/generate-ip/docs
+
 const pkgName = 'generate-ip',
       docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip#-command-line-usage';
 

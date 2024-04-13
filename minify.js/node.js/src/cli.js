@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
+// © 2024 Adam Lui & contributors under the MIT license.
+// Source: https://github.minify-js.org/tree/main/node.js/src
+// Documentation: https://docs.minify-js.org
+
 const pkgName = '@adamlui/minify.js',
       docURL = 'https://docs.minify-js.org/#-command-line-usage';
 

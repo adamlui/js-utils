@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
+// © 2024 Adam Lui under the MIT license.
+// Source: https://github.js-utils.com/tree/main/geolocate/src
+// Documentation: https://github.js-utils.com/tree/main/geolocate/docs
+
 (async () => {
 
     const pkgName = '@adamlui/geolocate',
