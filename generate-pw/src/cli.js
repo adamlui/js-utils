@@ -31,6 +31,8 @@ const argRegex = {
         'includeSymbols': /^--?(?:s|(?:include-?)?symbols?=?(?:true|1)?)$/,
         'excludeLowerChars': /^--?(?:L|(?:exclude|disable|no)-?lower-?(?:case)?|lower-?(?:case)?=(?:false|0))$/,
         'excludeUpperChars': /^--?(?:U|(?:exclude|disable|no)-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/,
+        'excludeSimilarChars':
+            /^--?(?:S|(?:exclude|disable|no)-?similar-?(?:char(?:acter)?s?)?|similar-?(?:char(?:acter)?s?)?=(?:false|0))$/,
         'strictMode': /^--?s(?:trict)?(?:-?mode)?$/,
         'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
     },
@@ -58,6 +60,8 @@ process.argv.forEach(arg => {
         printHelpSections(['paramOptions', 'flags', 'infoCmds']);
         printHelpCmdAndDocURL(); process.exit(1);
 }});
+
+console.log(config.excludeSimilarChars) ; process.exit();
 
 // Show HELP screen if -h or --help passed
 if (process.argv.some(arg => argRegex.infoCmds.help.test(arg))) printHelpSections();
@@ -118,6 +122,7 @@ function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'flag
             ' -U, --no-uppercase          Disallow uppercase letters in password(s).',
             ' -s, --strict                Require at least one character from each'
                                        + ' allowed character set in password(s).',
+            ' -S, --no-similar            Exclude similar characters in password(s).',
             ' -q, --quiet                 Suppress all logging except errors.'
         ],
         'infoCmds': [

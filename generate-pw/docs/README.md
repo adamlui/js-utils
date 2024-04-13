@@ -239,8 +239,8 @@ Name                  | Type    | Description                                   
 `symbols`             | Boolean | Allow symbols in password(s).                                                  | `false`
 `lowercase`           | Boolean | Allow lowercase letters in password(s).                                        | `true`
 `uppercase`           | Boolean | Allow uppercase letters in password(s).                                        | `true`
-`excludeSimilarChars` | Boolean | Exclude similar characters (e.g. o,0,O,i,l,1,|) in password(s).                | `false`
 `strict`              | Boolean | Require at least one character from each allowed character set in password(s). | `false`
+`excludeSimilarChars` | Boolean | Exclude similar characters (e.g. o,0,O,i,l,1,|) in password(s).                | `false`
 
 ##### _*Only available in [`generatePassword([options])`](#generatepasswordoptions) since [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) takes a `qty` argument_
 
@@ -274,6 +274,7 @@ Boolean options:
  -s, --include-symbols       Allow symbols in password(s).
  -L, --no-lowercase          Disallow lowercase letters in password(s).
  -U, --no-uppercase          Disallow uppercase letters in password(s).
+ -S, --no-similar            Exclude similar characters in password(s).
  -s, --strict                Require at least one character from each
                              allowed character set in password(s).
  -q, --quiet                 Suppress all logging except errors.

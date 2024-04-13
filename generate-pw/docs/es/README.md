@@ -274,6 +274,7 @@ Opciones booleanas:
  -s, --include-symbols       Permitir símbolos en las contraseña(s).
  -L, --no-lowercase          No permitir letras minúsculas en las contraseña(s).
  -U, --no-uppercase          No permitir letras mayúsculas en las contraseña(s).
+ -S, --no-similar            Excluya caracteres similares en la(s) contraseña(s).
  -s, --strict                Requiere al menos un carácter de cada carácter permitido establecido en las contraseña(s).
  -q, --quiet                 Suprime todos los registros excepto los errores.
 

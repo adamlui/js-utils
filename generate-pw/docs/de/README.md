@@ -274,6 +274,7 @@ Boolesche Optionen:
  -s, --include-symbols       Erlaube Symbole in Passwörtern.
  -L, --no-lowercase          Kleinbuchstaben in Passwörtern nicht zulassen.
  -U, --no-uppercase          Großbuchstaben in Passwörtern nicht zulassen.
+ -S, --no-similar            Schließen Sie ähnliche Zeichen in Passwörtern aus.
  -s, --strict                Erfordern mindestens ein Zeichen aus jedem zulässigen Zeichensatz in Passwörtern.
  -q, --quiet                 Unterdrücken Sie alle Protokolle außer Fehlern.
 
