@@ -1,3 +1,3 @@
 #!/bin/bash
 
-minify-js src dist --no-mangle
+minify-js src dist
