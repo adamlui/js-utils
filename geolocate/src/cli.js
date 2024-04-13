@@ -11,7 +11,6 @@
 
     // Import LIBS
     const geo = require(__dirname.match(/src/) ? './geolocate' : './geolocate.min'),
-          { ipv4 } = require('generate-ip'),
           fs = require('fs'), path = require('path'),
           { execSync } = require('child_process'); // for --version cmd + cross-platform copying
 
@@ -65,25 +64,19 @@
 
     } else { // run MAIN routine
 
-        // Validate IP args
+        // Load IP arg(s) into [validIPs]
         const args = process.argv.slice(2), validIPs = [];
         for (let i = 0; i < args.length; i++) {
             if (!args[i].startsWith('-')) {
                 const ip = args[i].replace(/\[|\]/g, ''); // strip surrounding '[]' in case copied from docs
-                if (ipv4.validate(ip, { verbose: false })) validIPs.push(ip);
-                else {
-                    const ordSuffix = i == 0 ? 'st' : i == 1 ? 'nd' : 'th';
-                    console.error(`ERROR: ${ i + 1 + ordSuffix } arg '${args[i]}' is not a valid IPv4 address.`);
-                    printHelpCmdAndDocURL(); process.exit(1);
-        }}}
-        if (validIPs.length == 0) // no IP arg passed
-            validIPs.push(''); // to use own IP
+                validIPs.push(ip);
+        }}
 
-        // Fetch/store/log geolocation data
-        validIPs.forEach(ip => printIfNotQuiet(
-            `Fetching geolocation data${ ip ? ( ' for ' + ip ) : '' }...`));
-        const geoResults = [];
-        for (const ip of validIPs) geoResults.push(await geo.locate(ip, { verbose: false }));
+        // Fetch/store geolocation data
+        const geoResults = await geo.locate(validIPs, { verbose: !config.quietMode });
+        if (!geoResults) process.exit(1);
+
+        // Log single result
         if (!config.quietMode && geoResults.length == 1) {
             console.info(`\nIP: ${bw + geoResults[0].ip + nc}`);
             console.info(`Country: ${bw + geoResults[0].country + nc}`);
@@ -91,11 +84,11 @@
             console.info(`City: ${bw + geoResults[0].city + nc}`);
             console.info(`Latitude: ${bw + geoResults[0].lat + nc}`);
             console.info(`Longitude: ${bw + geoResults[0].lon + nc}`);
-            console.info(`ISP: ${bw + geoResults[0].isp + nc}\n`);
+            console.info(`ISP: ${bw + geoResults[0].isp + nc}`);
         }
 
         // Copy to clipboard
-        printIfNotQuiet('Copying to clipboard...');
+        printIfNotQuiet('\nCopying to clipboard...');
         copyToClipboard(JSON.stringify(geoResults));
     }
 
