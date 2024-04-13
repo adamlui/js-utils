@@ -9,7 +9,8 @@ async function geolocate(ip) {
 
     const docURL = 'https://github.com/adamlui/js-utils/tree/main/geolocate#locateip';
 
-    // Validate IP
+    // Init/validate IP
+    ip = ip || await getOwnIP();
     let ipIsValid;
     try { // to use Node.js module
         ipIsValid = require('generate-ip').ipv4.validate;
@@ -33,22 +34,22 @@ async function geolocate(ip) {
         const { status, org, as, query, ...filteredData } = await response.json(); // eslint-disable-line no-unused-vars
         return { ip, ...filteredData };
     } catch (err) { console.error('geolocate() »', err); }
-}
 
-async function getOwnIP() {
-    return ( // fetch in browser + Node.js 16+
-        fetch('https://ifconfig.me/ip').then(response => response.text()).catch(() =>
-        fetch('http://ip-api.com/json/').then(response => response.json()).then(data => data.query))
-    .catch(async () => { try { // if failed, exec curl in Node.js <16
-            const { exec } = require('child_process'),
-                  { promisify } = require('util'), execAsync = promisify(exec),
-                  { stdout, stderr } = await execAsync('curl -s ifconfig.me');
-            return stderr ? console.error('getOwnIP() »', stderr) : stdout.trim();
-        } catch (err) { console.error('getOwnIP() »', err); }
-    }));
+    async function getOwnIP() {
+        return ( // fetch in browser + Node.js 16+
+            fetch('https://ifconfig.me/ip').then(response => response.text()).catch(() =>
+            fetch('http://ip-api.com/json/').then(response => response.json()).then(data => data.query))
+        .catch(async () => { try { // if failed, exec curl in Node.js <16
+                const { exec } = require('child_process'),
+                      { promisify } = require('util'), execAsync = promisify(exec),
+                      { stdout, stderr } = await execAsync('curl -s ifconfig.me');
+                return stderr ? console.error('geolocate() »', stderr) : stdout.trim();
+            } catch (err) { console.error('geolocate() »', err); }
+        }));
+    }
 }
 
 // EXPORT API functions
-const apiFunctions = { geolocate, locate: geolocate, getOwnIP };
+const apiFunctions = { geolocate, locate: geolocate };
 try { module.exports = { ...apiFunctions }; } catch (err) {} // for Node.js
 try { window.geo = { ...apiFunctions }; } catch (err) {} // for Greasemonkey
