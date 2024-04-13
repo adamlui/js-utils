@@ -239,7 +239,7 @@ Nombre                | Tipo     | Descripción                                 
 `symbols`             | Booleano | Permitir símbolos en la(s) contraseña(s).                                                    | `false`
 `lowercase`           | Booleano | Permitir letras minúsculas en la(s) contraseña(s).                                           | `true`
 `uppercase`           | Booleano | Permitir letras mayúsculas en la(s) contraseña(s).                                           | `true`
-`excludeSimilarChars` | Booleano | Excluya caracteres similares (por ejemplo, o,0,O,i,l,1,|) en las contraseñas.                | `false`
+`excludeSimilarChars` | Booleano | Excluya caracteres similares (por ejemplo, o,0,O,i,l,1,|) en la(s) contraseña(s).            | `false`
 `strict`              | Booleano | Requiere al menos un carácter de cada carácter permitido establecido en la(s) contraseña(s). | `false`
 
 ##### _*Solo disponible en [`generatePassword([opciones])`](#generatepasswordopciones) ya que [`generatePasswords(qty[, opciones])`](#generatepasswordsqty-opciones) toma un argumento `qty`_
@@ -266,16 +266,16 @@ $ generate-pw
 Opciones de parámetros:
  --length=n                  Genere contraseña(s) de n longitud.
  --qty=n                     Generar n contraseña(s).
- --charset=cars              Incluya únicamente cars en las contraseña(s).
- --exclude=cars              Excluir cars de las contraseña(s).
+ --charset=cars              Incluya únicamente cars en la(s) contraseña(s).
+ --exclude=cars              Excluir cars de la(s) contraseña(s).
 
 Opciones booleanas:
  -n, --include-numbers       Permitir números en contraseña(s).
- -s, --include-symbols       Permitir símbolos en las contraseña(s).
- -L, --no-lowercase          No permitir letras minúsculas en las contraseña(s).
- -U, --no-uppercase          No permitir letras mayúsculas en las contraseña(s).
+ -s, --include-symbols       Permitir símbolos en la(s) contraseña(s).
+ -L, --no-lowercase          No permitir letras minúsculas en la(s) contraseña(s).
+ -U, --no-uppercase          No permitir letras mayúsculas en la(s) contraseña(s).
  -S, --no-similar            Excluya caracteres similares en la(s) contraseña(s).
- -s, --strict                Requiere al menos un carácter de cada carácter permitido establecido en las contraseña(s).
+ -s, --strict                Requiere al menos un carácter de cada carácter permitido establecido en la(s) contraseña(s).
  -q, --quiet                 Suprime todos los registros excepto los errores.
 
 Comandos de información:
