@@ -271,7 +271,7 @@ Parameter options:
 
 Boolean options:
  -n, --include-numbers       Allow numbers in password(s).
- -s, --include-symbols       Allow symbols in password(s).
+ -y, --include-symbols       Allow symbols in password(s).
  -L, --no-lowercase          Disallow lowercase letters in password(s).
  -U, --no-uppercase          Disallow uppercase letters in password(s).
  -S, --no-similar            Exclude similar characters in password(s).

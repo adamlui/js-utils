@@ -271,7 +271,7 @@ Opciones de parámetros:
 
 Opciones booleanas:
  -n, --include-numbers       Permitir números en contraseña(s).
- -s, --include-symbols       Permitir símbolos en la(s) contraseña(s).
+ -y, --include-symbols       Permitir símbolos en la(s) contraseña(s).
  -L, --no-lowercase          No permitir letras minúsculas en la(s) contraseña(s).
  -U, --no-uppercase          No permitir letras mayúsculas en la(s) contraseña(s).
  -S, --no-similar            Excluya caracteres similares en la(s) contraseña(s).

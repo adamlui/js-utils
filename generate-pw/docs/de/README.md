@@ -271,7 +271,7 @@ Parameteroptionen:
 
 Boolesche Optionen:
  -n, --include-numbers       Zahlen in Passwörtern zulassen.
- -s, --include-symbols       Erlaube Symbole in Passwörtern.
+ -y, --include-symbols       Erlaube Symbole in Passwörtern.
  -L, --no-lowercase          Kleinbuchstaben in Passwörtern nicht zulassen.
  -U, --no-uppercase          Großbuchstaben in Passwörtern nicht zulassen.
  -S, --no-similar            Schließen Sie ähnliche Zeichen in Passwörtern aus.

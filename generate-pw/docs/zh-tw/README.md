@@ -267,7 +267,7 @@ $ generate-pw
 
 布林選項：
  -n, --include-numbers       允許密碼中包含數字。
- -s, --include-symbols       允許密碼中包含符號。
+ -y, --include-symbols       允許密碼中包含符號。
  -L, --no-lowercase          密碼中不允許使用小寫字母。
  -U, --no-uppercase          密碼中不允許使用大寫字母。
  -S, --no-similar            排除密碼中的相似字元。

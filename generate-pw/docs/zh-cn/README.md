@@ -267,7 +267,7 @@ $ generate-pw
 
 布尔选项：
  -n, --include-numbers       允许密码中包含数字。
- -s, --include-symbols       允许密码中包含符号。
+ -y, --include-symbols       允许密码中包含符号。
  -L, --no-lowercase          密码中不允许使用小写字母。
  -U, --no-uppercase          密码中不允许使用大写字母。
  -S, --no-similar            排除密码中的相似字符。

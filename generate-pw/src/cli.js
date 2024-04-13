@@ -28,7 +28,7 @@ const argRegex = {
     },
     flags: {
         'includeNums': /^--?(?:n|(?:include-?)?num(?:ber)?s?=?(?:true|1)?)$/,
-        'includeSymbols': /^--?(?:s|(?:include-?)?symbols?=?(?:true|1)?)$/,
+        'includeSymbols': /^--?(?:y|(?:include-?)?symbols?=?(?:true|1)?)$/,
         'excludeLowerChars': /^--?(?:L|(?:exclude|disable|no)-?lower-?(?:case)?|lower-?(?:case)?=(?:false|0))$/,
         'excludeUpperChars': /^--?(?:U|(?:exclude|disable|no)-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/,
         'excludeSimilarChars':
@@ -117,7 +117,7 @@ function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'flag
         'flags': [
             '\nBoolean options:',
             ' -n, --include-numbers       Allow numbers in password(s).',
-            ' -s, --include-symbols       Allow symbols in password(s).',
+            ' -y, --include-symbols       Allow symbols in password(s).',
             ' -L, --no-lowercase          Disallow lowercase letters in password(s).',
             ' -U, --no-uppercase          Disallow uppercase letters in password(s).',
             ' -s, --strict                Require at least one character from each'
