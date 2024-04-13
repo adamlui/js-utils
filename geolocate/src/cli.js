@@ -83,7 +83,7 @@
         validIPs.forEach(ip => printIfNotQuiet(
             `Fetching geolocation data${ ip ? ( ' for ' + ip ) : '' }...`));
         const geoResults = [];
-        for (const ip of validIPs) geoResults.push(await geo.locate(ip));
+        for (const ip of validIPs) geoResults.push(await geo.locate(ip, { verbose: false }));
         if (!config.quietMode && geoResults.length == 1) {
             console.info(`\nIP: ${bw + geoResults[0].ip + nc}`);
             console.info(`Country: ${bw + geoResults[0].country + nc}`);
