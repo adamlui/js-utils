@@ -161,7 +161,7 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Define print functions
     let logPrefix = 'validateOptions() » ';
-    try { logPrefix = validateOptions.caller?.name + '() » '; } catch {}
+    try { logPrefix = validateOptions.caller?.name + '() » '; } catch (err) {}
     const printValidOptions = () => {
         console.info(`${ logPrefix }Valid options: [ ${ strValidOptions } ]`);
         console.info(`${ logPrefix }If omitted, default settings are: ${ strDefaultOptions }`);
