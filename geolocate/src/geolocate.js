@@ -24,7 +24,7 @@ async function geolocate(ips, options = {}) {
             ipIsValid = ipv4.validate; // eslint-disable-line no-undef
         }
         if (ipIsValid && !ipIsValid(ip, { verbose: false })) {
-            console.error(`geolocate() » ERROR: ${ip} is an invalid IP address.`);
+            console.error(`geolocate() » ERROR: ${ip} is not a valid IPv4 address.`);
             console.info('geolocate() » For more help, please visit ' + docURL);
             return;
         }
