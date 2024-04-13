@@ -154,7 +154,7 @@ geo.locate('8.8.8.8').then(location => {
 */
 ```
 
-**💡 Note:** If no `ip` is supplied, your own one will be used.
+**💡 Note:** If no IPv4 address is passed, your own one will be used.
 
 Available options (passed as object properties):
 
