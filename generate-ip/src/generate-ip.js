@@ -1,6 +1,6 @@
 // © 2024 Adam Lui & contributors under the MIT license.
-// Source: https://github.com/adamlui/js-utils/tree/main/generate-ip
-// Documentation: https://github.com/adamlui/js-utils/tree/main/generate-ip#readme
+// Source: https://github.js-utils.com/tree/main/generate-ip/src
+// Documentation: https://github.js-utils.com/tree/main/generate-ip/docs
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js
 
 // IMPORT secure crypto RNG

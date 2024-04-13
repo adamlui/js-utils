@@ -1,6 +1,6 @@
 // © 2024 Adam Lui under the MIT license.
-// Source: https://github.com/adamlui/js-utils/tree/main/geolocate
-// Documentation: https://github.com/adamlui/js-utils/tree/main/geolocate#readme
+// Source: https://github.js-utils.com/tree/main/geolocate/src
+// Documentation: https://github.js-utils.com/tree/main/geolocate/docs
 // Latest minified release: https://cdn.jsdelivr.net/npm/@adamlui/geolocate/dist/geolocate.min.js
 
 // Define API functions
