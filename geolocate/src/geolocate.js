@@ -28,7 +28,6 @@ async function geolocate(ips, options = {}) {
     }
 
     // Validate/init options
-    if (options.verbose) console.info('geolocate() » Validating options...');
     if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
