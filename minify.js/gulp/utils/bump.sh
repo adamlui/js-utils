@@ -31,8 +31,6 @@ bash utils/build.sh
 echo -e "\nBumping versions in package manifests..."
 npm version --no-git-tag-version "$NEW_VERSION"
 
-exit
-
 # Bump versions in READMEs
 echo -e "\nBumping versions in READMEs..."
 PACKAGE_NAME=$(node -pe "require('./package.json').name" | sed -e 's/^@[a-zA-Z0-9-]*\///' -e 's/^@//')
