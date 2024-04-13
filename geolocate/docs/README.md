@@ -66,7 +66,7 @@ Info commands:
 
 ## 🔌 Importing the API
 
-You can also import **geolocate** into your app to use its API methods.
+You can also import **geolocate** into your app to use its main API method.
 
 ### <img height=18 src="https://i.imgur.com/JIeAdsr.png"> Node.js
 
@@ -155,25 +155,6 @@ geo.locate('8.8.8.8').then(location => {
 ```
 
 **💡 Note:** If no `ip` is supplied, your own one will be used.
-
-#
-
-### `getOwnIP()`
-
-Asynchronous method to fetch/return your own IP as a string:
-
-```js
-// Using await syntax
-(async () => {
-    const ip = await geo.getOwnIP();
-    console.log(ip); // outputs your IP
-})();
-
-// Using .then() syntax
-geo.getOwnIP().then(ip => {
-    console.log(ip); // outputs your IP
-});
-```
 
 <br>
 
