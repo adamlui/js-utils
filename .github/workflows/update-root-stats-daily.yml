@@ -61,7 +61,7 @@ jobs:
 
           # Fetch/sum download counts
           for pkg in "${npm_packages[@]}" ; do
-            pkg_downloads=$(curl -s "https://img.shields.io/npm/dw/$pkg.svg" |
+            pkg_downloads=$(curl -s "https://img.shields.io/npm/dm/$pkg.svg" |
               sed -n 's/.*<title>downloads: \([0-9,.km]\+\).*<\/title>.*/\1/Ip')
             pkg_downloads=$(expand_num "$pkg_downloads")
             echo "$pkg downloads: $pkg_downloads"
@@ -79,7 +79,7 @@ jobs:
 
           # Format totals
           formatted_total_downloads=$(format_total "$total_downloads")
-          echo "Formatted total weekly npm downloads: $formatted_total_downloads"
+          echo "Formatted total monthly npm downloads: $formatted_total_downloads"
           formatted_total_hits=$(format_total "$total_hits")
           echo "Formatted total monthly jsDelivr hits: $formatted_total_hits"
 
