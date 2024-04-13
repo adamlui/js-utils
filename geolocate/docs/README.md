@@ -121,7 +121,7 @@ const geo = require('@adamlui/geolocate');
 
 ## 📋 API usage
 
-### `locate([ips])`
+### `locate([ips, options])`
 
 Asynchronous method to fetch geolocation data for each `ip` passed in an array, returned as an array of data objects:
 
@@ -155,6 +155,12 @@ geo.locate('8.8.8.8').then(location => {
 ```
 
 **💡 Note:** If no `ip` is supplied, your own one will be used.
+
+Available options (passed as object properties):
+
+Name      | Type    | Description                       | Default Value
+----------|---------|-----------------------------------|---------------
+`verbose` | Boolean | Show logging in console/terminal. | `true`
 
 <br>
 
