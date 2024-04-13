@@ -239,7 +239,7 @@ Nombre                | Tipo     | Descripción                                 
 `symbols`             | Booleano | Permitir símbolos en la(s) contraseña(s).                                                    | `false`
 `lowercase`           | Booleano | Permitir letras minúsculas en la(s) contraseña(s).                                           | `true`
 `uppercase`           | Booleano | Permitir letras mayúsculas en la(s) contraseña(s).                                           | `true`
-`excludeSimilarChars` | Booleano | Excluya caracteres similares (por ejemplo, o,0,O,i,l,1,|) en la(s) contraseña(s).            | `false`
+`excludeSimilarChars` | Booleano | Excluya caracteres similares (por ejemplo, o,0,O,i,l,1,\|) en la(s) contraseña(s).           | `false`
 `strict`              | Booleano | Requiere al menos un carácter de cada carácter permitido establecido en la(s) contraseña(s). | `false`
 
 ##### _*Solo disponible en [`generatePassword([opciones])`](#generatepasswordopciones) ya que [`generatePasswords(qty[, opciones])`](#generatepasswordsqty-opciones) toma un argumento `qty`_

@@ -235,7 +235,7 @@ validateStrength() » Check returned object for score/recommendations.
 `symbols`             | बूलियन | पासवर्ड में प्रतीकों की अनुमति दें।                                   | `false`
 `lowercase`           | बूलियन | पासवर्ड में छोटे अक्षरों को अनुमति दें।                                | `true`
 `uppercase`           | बूलियन | पासवर्ड में बड़े अक्षरों को अनुमति दें।                                | `true`
-`excludeSimilarChars` | बूलियन | पासवर्ड में समान अक्षर (उदा. o,0,O,i,l,1,|) हटा दें।                | `false`
+`excludeSimilarChars` | बूलियन | पासवर्ड में समान अक्षर (उदा. o,0,O,i,l,1,\|) हटा दें।               | `false`
 `strict`              | बूलियन | पासवर्ड में प्रत्येक अनुमत वर्ण सेट से कम से कम एक वर्ण की आवश्यकता है। | `false`
 
 ##### _*केवल [`generatePassword([options])`](#generatepasswordoptions) में उपलब्ध है क्योंकि [`generatePasswords(qty[, option])`](#generatepasswordsqty-options) एक `qty` तर्क लेता है_

@@ -237,7 +237,7 @@ validateStrength() » Check returned object for score/recommendations.
 `symbols`             | বুলিয়ান  | পাসওয়ার্ডে চিহ্নের অনুমতি দিন।                                              | `false`
 `lowercase`           | বুলিয়ান  | পাসওয়ার্ডে ছোট হাতের অক্ষরের অনুমতি দিন।                                  | `true`
 `uppercase`           | বুলিয়ান  | পাসওয়ার্ডে বড় হাতের অক্ষরের অনুমতি দিন।                                   | `true`
-`excludeSimilarChars` | বুলিয়ান  | পাসওয়ার্ডে অনুরূপ অক্ষর (যেমন o,0,O,i,l,1,|) বাদ দিন।                     | `false`
+`excludeSimilarChars` | বুলিয়ান  | পাসওয়ার্ডে অনুরূপ অক্ষর (যেমন o,0,O,i,l,1,\|) বাদ দিন।                    | `false`
 `strict`              | বুলিয়ান  | পাসওয়ার্ডে সেট করা প্রতিটি অনুমোদিত অক্ষর থেকে কমপক্ষে একটি অক্ষর প্রয়োজন। | `false`
 
 ##### _*শুধুমাত্র [`generatePassword([options])`](#generatepasswordoptions) এ উপলব্ধ যেহেতু [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) একটি `qty` আর্গুমেন্ট নেয়_

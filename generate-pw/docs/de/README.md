@@ -239,7 +239,7 @@ Name                  | Geben Sie       | ein Beschreibung                      
 `symbols`             | Boolescher Wert | Erlaube Symbole in Passwörtern.                                                   | `false`
 `lowercase`           | Boolescher Wert | Erlauben Sie Kleinbuchstaben in Passwörtern.                                      | `true`
 `uppercase`           | Boolescher Wert | Erlauben Sie Großbuchstaben in Passwörtern.                                       | `true`
-`excludeSimilarChars` | Boolescher Wert | Schließen Sie ähnliche Zeichen (z. B. o,0,O,i,l,1,|) in Passwörtern aus.          | `false`
+`excludeSimilarChars` | Boolescher Wert | Schließen Sie ähnliche Zeichen (z. B. o,0,O,i,l,1,\|) in Passwörtern aus.         | `false`
 `strict`              | Boolescher Wert | Erfordern mindestens ein Zeichen aus jedem zulässigen Zeichensatz in Passwörtern. | `false`
 
 ##### _*Nur verfügbar in [`generatePassword([optionen])`](#generatepasswordoptionen), da [`generatePasswords(qty[, optionen])`](#generatepasswordsqty-optionen) ein `qty`-Argument annimmt_
