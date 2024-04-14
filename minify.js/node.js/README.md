@@ -197,7 +197,7 @@ console.log(minifyResults[1].code);
 Options are boolean, passed as object properties. For example:
 
 ```js
-// Returns data object where dotfiles are also processed if `input` is a path
+// Returns array of data objects where dotfiles are also processed if `input` is a path
 minifyJS.minify(input, { dotFiles: true });
 ```
 

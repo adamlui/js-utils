@@ -195,7 +195,7 @@ console.log(minErgebnisse[1].code);
 Optionen sind boolesche Werte und werden als Objekteigenschaften übergeben. Zum Beispiel:
 
 ```js
-// Gibt ein Datenobjekt zurück, in dem Punktdateien auch verarbeitet werden, wenn `eingang` ein Pfad ist
+// Gibt ein Array von Datenobjekten zurück, in denen auch Punktdateien verarbeitet werden, wenn `eingang` ein Pfad ist
 minifyJS.minify(eingang, { dotFiles: true });
 ```
 

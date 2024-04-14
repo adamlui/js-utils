@@ -195,7 +195,7 @@ console.log(minifyResults[1].code);
 選項是布林值，作為物件屬性傳遞。 例如：
 
 ```js
-// 如果 `input` 是路徑，則傳回資料對象，其中也會處理點文件
+// 傳回資料物件數組，如果 `input` 是路徑，則也會處理點文件
 minifyJS.minify(input, { dotFiles: true });
 ```
 

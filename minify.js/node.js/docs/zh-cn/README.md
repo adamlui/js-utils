@@ -195,7 +195,7 @@ console.log(minifyResults[1].code);
 选项是布尔值，作为对象属性传递。 例如：
 
 ```js
-// 如果 `input` 是路径，则返回数据对象，其中也会处理点文件
+// 返回数据对象数组，如果 `input` 是路径，则也会处理点文件
 minifyJS.minify(input, { dotFiles: true });
 ```
 
