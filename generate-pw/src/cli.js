@@ -23,7 +23,7 @@ const argRegex = {
     paramOptions: {
         'length': /^--?length(?:=.*|$)/,
         'qty': /^--?qu?a?n?ti?t?y(?:=.*|$)/,
-        'charset': /^--?chars(?:=.*|$)/,
+        'charset': /^--?charse?t?(?:=.*|$)/,
         'excludeChars': /^--?exclude(?:=.*|$)/
     },
     flags: {
