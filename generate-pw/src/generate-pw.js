@@ -1,6 +1,6 @@
 // © 2024 Adam Lui & contributors under the MIT license.
 // Source: https://github.js-utils.com/tree/main/generate-pw/src
-// Documentation: https://github.js-utils.com/tree/main/generate-pw/docs
+// Documentation: https://docs.js-utils.com/generate-pw
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js
 
 // IMPORT secure crypto RNG
@@ -27,7 +27,7 @@ const charsets = {
 
 function generatePassword(options = {}) {
 
-    const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw#generatepasswordoptions',
+    const docURL = 'https://docs.js-utils.com/generate-pw/#generatepasswordoptions',
           exampleCall = 'generatePassword({ verbose: false, numbers: true })';
 
     const defaultOptions = {
@@ -107,7 +107,7 @@ function generatePassword(options = {}) {
 
 function generatePasswords(qty, options = {}) {
 
-    const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw#generatepasswordsqty-options',
+    const docURL = 'https://docs.js-utils.com/generate-pw/#generatepasswordsqty-options',
           exampleCall = 'generatePasswords(3, { verbose: false, symbols: true })';
 
     const defaultOptions = {
@@ -150,7 +150,7 @@ function generatePasswords(qty, options = {}) {
 
 function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', 'upper'], options = {}) {
 
-    const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw#strictifypassword-requiredchartypes-options',
+    const docURL = 'https://docs.js-utils.com/generate-pw/#strictifypassword-requiredchartypes-options',
           exampleCall = 'strictify(\'pa55word\', [\'symbol\', \'upper\'], { verbose: false })',
           defaultOptions = { verbose: true /* enable logging */ };
 
@@ -221,7 +221,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
 
 function validateStrength(password, options = {}) {
 
-    const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw#validatestrengthpassword-options',
+    const docURL = 'https://docs.js-utils.com/generate-pw/#validatestrengthpassword-options',
           exampleCall = 'validateStrength(\'pa55word\', { verbose: false })',
           strengthCriteria = { minLength: 8, minLower: 1, minUpper: 1, minNumber: 1, minSymbol: 1 },
           defaultOptions = { verbose: true /* enable logging */ };

@@ -2,10 +2,10 @@
 
 // © 2024 Adam Lui & contributors under the MIT license.
 // Source: https://github.js-utils.com/tree/main/scss-to-css/src
-// Documentation: https://github.js-utils.com/tree/main/scss-to-css/docs
+// Documentation: https://docs.js-utils.com/scss-to-css
 
 const pkgName = '@adamlui/scss-to-css',
-      docURL = 'https://github.com/adamlui/js-utils/tree/main/scss-to-css#-command-line-usage';
+      docURL = 'https://docs.js-utils.com/scss-to-css/#-command-line-usage';
 
 // Import LIBS
 const scssToCSS = require(__dirname.match(/src/) ? './scss-to-css' : './scss-to-css.min'),

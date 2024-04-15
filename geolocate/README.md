@@ -185,19 +185,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ### <img height=21px src="https://i.imgur.com/kvf7fXm.png"> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Randomly generate, format, and validate IPv4/IPv6 addresses.
-<br>[Install](https://github.com/adamlui/js-utils/tree/main/generate-ip#-installation) /
-[Readme](https://github.com/adamlui/js-utils/tree/main/generate-ip#readme) /
-[API usage](https://github.com/adamlui/js-utils/tree/main/generate-ip#-api-usage) /
-[CLI usage](https://github.com/adamlui/js-utils/tree/main/generate-ip#-command-line-usage) /
+<br>[Install](https://docs.js-utils.com/generate-ip/#-installation) /
+[Readme](https://docs.js-utils.com/generate-ip/#readme) /
+[API usage](https://docs.js-utils.com/generate-ip/#-api-usage) /
+[CLI usage](https://docs.js-utils.com/generate-ip/#-command-line-usage) /
 [Discuss](https://js-utils.com/discussions)
 
 ### [🔒 generate-pw](../generate-pw) <a href="https://github.com/toolleeo/cli-apps#password-managers"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Randomly generate, strengthen, and validate cryptographically-secure passwords.
-<br>[Install](https://github.com/adamlui/js-utils/tree/main/generate-pw#-installation) /
-[Readme](https://github.com/adamlui/js-utils/tree/main/generate-pw#readme) /
-[API usage](https://github.com/adamlui/js-utils/tree/main/generate-pw#-api-usage) /
-[CLI usage](https://github.com/adamlui/js-utils/tree/main/generate-pw#-command-line-usage) /
+<br>[Install](https://docs.js-utils.com/generate-pw/#-installation) /
+[Readme](https://docs.js-utils.com/generate-pw/#readme) /
+[API usage](https://docs.js-utils.com/generate-pw/#-api-usage) /
+[CLI usage](https://docs.js-utils.com/generate-pw/#-command-line-usage) /
 [Discuss](https://js-utils.com/discussions)
 
 <br>

@@ -2,12 +2,12 @@
 
 // © 2024 Adam Lui under the MIT license.
 // Source: https://github.js-utils.com/tree/main/geolocate/src
-// Documentation: https://github.js-utils.com/tree/main/geolocate/docs
+// Documentation: https://docs.js-utils.com/geolocate
 
 (async () => {
 
     const pkgName = '@adamlui/geolocate',
-          docURL = 'https://github.com/adamlui/js-utils/tree/main/geolocate#-command-line-usage';
+          docURL = 'https://docs.js-utils.com/geolocate/#-command-line-usage';
 
     // Import LIBS
     const geo = require(__dirname.match(/src/) ? './geolocate' : './geolocate.min'),

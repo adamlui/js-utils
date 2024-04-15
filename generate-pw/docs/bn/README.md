@@ -304,19 +304,19 @@ $ generate-pw
 ### <img height=21px src="https://i.imgur.com/kvf7fXm.png"> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > এলোমেলোভাবে IPv4/IPv6 ঠিকানাগুলি তৈরি করুন, বিন্যাস করুন এবং যাচাই করুন৷
-<br>[ইনস্টল করুন](https://github.com/adamlui/js-utils/tree/main/generate-ip#-installation) /
-[রিডমি](https://github.com/adamlui/js-utils/tree/main/generate-ip#readme) /
-[API ব্যবহার](https://github.com/adamlui/js-utils/tree/main/generate-ip#-api-usage) /
-[CLI ব্যবহার](https://github.com/adamlui/js-utils/tree/main/generate-ip#-command-line-usage) /
+<br>[ইনস্টল করুন](https://docs.js-utils.com/generate-ip/#-installation) /
+[রিডমি](https://docs.js-utils.com/generate-ip/#readme) /
+[API ব্যবহার](https://docs.js-utils.com/generate-ip/#-api-usage) /
+[CLI ব্যবহার](https://docs.js-utils.com/generate-ip/#-command-line-usage) /
 [আলোচনা করা](https://js-utils.com/discussions)
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > CLI থেকে আইপি জিওলোকেশন ডেটা আনুন।
-<br>[ইনস্টল করুন](https://github.com/adamlui/js-utils/tree/main/geolocate#-installation) /
-[রিডমি](https://github.com/adamlui/js-utils/tree/main/geolocate#readme) /
-[CLI ব্যবহার](https://github.com/adamlui/js-utils/tree/main/geolocate#-command-line-usage) /
-[API ব্যবহার](https://github.com/adamlui/js-utils/tree/main/geolocate#-api-usage) /
+<br>[ইনস্টল করুন](https://docs.js-utils.com/geolocate/#-installation) /
+[রিডমি](https://docs.js-utils.com/geolocate/#readme) /
+[CLI ব্যবহার](https://docs.js-utils.com/geolocate/#-command-line-usage) /
+[API ব্যবহার](https://docs.js-utils.com/geolocate/#-api-usage) /
 [আলোচনা করা](https://js-utils.com/discussions)
 
 <br>

@@ -302,19 +302,19 @@ $ generate-pw
 ### <img height=21px src="https://i.imgur.com/kvf7fXm.png"> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > IPv4/IPv6 पतों को बेतरतीब ढंग से उत्पन्न, प्रारूपित और मान्य करें।
-<br>[स्थापित करना](https://github.com/adamlui/js-utils/tree/main/generate-ip#-installation) /
-[रीडमी](https://github.com/adamlui/js-utils/tree/main/generate-ip#readme) /
-[एपीआई उपयोग](https://github.com/adamlui/js-utils/tree/main/generate-ip#-api-usage) /
-[सीएलआई उपयोग](https://github.com/adamlui/js-utils/tree/main/generate-ip#-command-line-usage) /
+<br>[स्थापित करना](https://docs.js-utils.com/generate-ip/#-installation) /
+[रीडमी](https://docs.js-utils.com/generate-ip/#readme) /
+[एपीआई उपयोग](https://docs.js-utils.com/generate-ip/#-api-usage) /
+[सीएलआई उपयोग](https://docs.js-utils.com/generate-ip/#-command-line-usage) /
 [चर्चा करना](https://js-utils.com/discussions)
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > सीएलआई से आईपी जियोलोकेशन डेटा प्राप्त करें।
-<br>[स्थापित करना](https://github.com/adamlui/js-utils/tree/main/geolocate#-installation) /
-[रीडमी](https://github.com/adamlui/js-utils/tree/main/geolocate#readme) /
-[सीएलआई उपयोग](https://github.com/adamlui/js-utils/tree/main/geolocate#-command-line-usage) /
-[एपीआई उपयोग](https://github.com/adamlui/js-utils/tree/main/geolocate#-api-usage) /
+<br>[स्थापित करना](https://docs.js-utils.com/geolocate/#-installation) /
+[रीडमी](https://docs.js-utils.com/geolocate/#readme) /
+[सीएलआई उपयोग](https://docs.js-utils.com/geolocate/#-command-line-usage) /
+[एपीआई उपयोग](https://docs.js-utils.com/geolocate/#-api-usage) /
 [चर्चा करना](https://js-utils.com/discussions)
 
 <br>

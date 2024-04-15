@@ -306,19 +306,19 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 ### <img height=21px src="https://i.imgur.com/kvf7fXm.png"> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Generieren, formatieren und validieren Sie IPv4/IPv6-Adressen nach dem Zufallsprinzip.
-<br>[Installieren](https://github.com/adamlui/js-utils/tree/main/generate-ip#-installation) /
-[Liesmich](https://github.com/adamlui/js-utils/tree/main/generate-ip#readme) /
-[API-Nutzung](https://github.com/adamlui/js-utils/tree/main/generate-ip#-api-usage) /
-[CLI-Nutzung](https://github.com/adamlui/js-utils/tree/main/generate-ip#-command-line-usage) /
+<br>[Installieren](https://docs.js-utils.com/generate-ip/#-installation) /
+[Liesmich](https://docs.js-utils.com/generate-ip/#readme) /
+[API-Nutzung](https://docs.js-utils.com/generate-ip/#-api-usage) /
+[CLI-Nutzung](https://docs.js-utils.com/generate-ip/#-command-line-usage) /
 [Diskutieren](https://js-utils.com/discussions)
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > Rufen Sie IP-Geolocation-Daten von der CLI ab.
-<br>[Installieren](https://github.com/adamlui/js-utils/tree/main/geolocate#-installation) /
-[Liesmich](https://github.com/adamlui/js-utils/tree/main/geolocate#readme) /
-[CLI-Nutzung](https://github.com/adamlui/js-utils/tree/main/geolocate#-command-line-usage) /
-[API-Nutzung](https://github.com/adamlui/js-utils/tree/main/geolocate#-api-usage) /
+<br>[Installieren](https://docs.js-utils.com/geolocate/#-installation) /
+[Liesmich](https://docs.js-utils.com/geolocate/#readme) /
+[CLI-Nutzung](https://docs.js-utils.com/geolocate/#-command-line-usage) /
+[API-Nutzung](https://docs.js-utils.com/geolocate/#-api-usage) /
 [Diskutieren](https://js-utils.com/discussions)
 
 <br>

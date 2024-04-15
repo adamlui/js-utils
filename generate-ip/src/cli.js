@@ -2,10 +2,10 @@
 
 // © 2024 Adam Lui & contributors under the MIT license.
 // Source: https://github.js-utils.com/tree/main/generate-ip/src
-// Documentation: https://github.js-utils.com/tree/main/generate-ip/docs
+// Documentation: https://docs.js-utils.com/generate-ip
 
 const pkgName = 'generate-ip',
-      docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip#-command-line-usage';
+      docURL = 'https://docs.js-utils.com/generate-ip/#-command-line-usage';
 
 // Import LIBS
 const { ipv4 } = require(__dirname.match(/src/) ? './generate-ip' : './generate-ip.min'),

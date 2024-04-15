@@ -1,13 +1,13 @@
 // © 2024 Adam Lui under the MIT license.
 // Source: https://github.js-utils.com/tree/main/geolocate/src
-// Documentation: https://github.js-utils.com/tree/main/geolocate/docs
+// Documentation: https://docs.js-utils.com/geolocate
 // Latest minified release: https://cdn.jsdelivr.net/npm/@adamlui/geolocate/dist/geolocate.min.js
 
 // Define API functions
 
 async function geolocate(ips, options = {}) {
 
-    const docURL = 'https://github.com/adamlui/js-utils/tree/main/geolocate#locateip',
+    const docURL = 'https://docs.js-utils.com/geolocate/#locateip',
           exampleCall = 'geolocate(\'8.8.8.8\', { verbose: false })',
           defaultOptions = { verbose: true /* enable logging */ };
 

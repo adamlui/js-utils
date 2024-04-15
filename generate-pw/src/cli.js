@@ -2,10 +2,10 @@
 
 // © 2024 Adam Lui & contributors under the MIT license.
 // Source: https://github.js-utils.com/tree/main/generate-pw/src
-// Documentation: https://github.js-utils.com/tree/main/generate-pw/docs
+// Documentation: https://docs.js-utils.com/generate-pw
 
 const pkgName = 'generate-pw',
-      docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw#-command-line-usage';
+      docURL = 'https://docs.js-utils.com/generate-pw/#-command-line-usage';
 
 // Import LIBS
 const { generatePassword } = require(__dirname.match(/src/) ? './generate-pw' : './generate-pw.min'),

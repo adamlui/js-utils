@@ -302,19 +302,19 @@ $ generate-pw
 ### <img height=21px src="https://i.imgur.com/kvf7fXm.png"> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > 随机生成、格式化和验证 IPv4/IPv6 地址。
-<br>[安装](https://github.com/adamlui/js-utils/tree/main/generate-ip#-installation) /
-[自述文件](https://github.com/adamlui/js-utils/tree/main/generate-ip#readme) /
-[API 使用](https://github.com/adamlui/js-utils/tree/main/generate-ip#-api-usage) /
-[CLI 用法](https://github.com/adamlui/js-utils/tree/main/generate-ip#-command-line-usage) /
+<br>[安装](https://docs.js-utils.com/generate-ip/#-installation) /
+[自述文件](https://docs.js-utils.com/generate-ip/#readme) /
+[API 使用](https://docs.js-utils.com/generate-ip/#-api-usage) /
+[CLI 用法](https://docs.js-utils.com/generate-ip/#-command-line-usage) /
 [讨论](https://js-utils.com/discussions)
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > 从 CLI 获取 IP 地理位置数据。
-<br>[安装](https://github.com/adamlui/js-utils/tree/main/geolocate#-installation) /
-[自述文件](https://github.com/adamlui/js-utils/tree/main/geolocate#readme) /
-[CLI 用法](https://github.com/adamlui/js-utils/tree/main/geolocate#-command-line-usage) /
-[API 使用](https://github.com/adamlui/js-utils/tree/main/geolocate#-api-usage) /
+<br>[安装](https://docs.js-utils.com/geolocate/#-installation) /
+[自述文件](https://docs.js-utils.com/geolocate/#readme) /
+[CLI 用法](https://docs.js-utils.com/geolocate/#-command-line-usage) /
+[API 使用](https://docs.js-utils.com/geolocate/#-api-usage) /
 [讨论](https://js-utils.com/discussions)
 
 <br>

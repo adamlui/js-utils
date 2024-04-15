@@ -2,7 +2,7 @@
 
 // © 2024 Adam Lui & contributors under the MIT license.
 // Source: https://github.js-utils.com/tree/main/scss-to-css/src
-// Documentation: https://github.js-utils.com/tree/main/scss-to-css/docs
+// Documentation: https://docs.js-utils.com/scss-to-css
 
 // Import LIBS
 const fs = require('fs'),
@@ -13,7 +13,7 @@ const fs = require('fs'),
 
 function findSCSS(searchDir, options = {}) {
 
-    const docURL = 'https://github.com/adamlui/js-utils/tree/main/scss-to-css#findscsssearchdir-options',
+    const docURL = 'https://docs.js-utils.com/scss-to-css/#findscsssearchdir-options',
           exampleCall = 'findSCSS(\'assets/scss\', { verbose: false, dotFolders: true })';
 
     const defaultOptions = {
@@ -67,7 +67,7 @@ function findSCSS(searchDir, options = {}) {
 
 function compile(inputPath, options = {}) {
 
-    const docURL = 'https://github.com/adamlui/js-utils/tree/main/scss-to-css#compileinputpath-options',
+    const docURL = 'https://docs.js-utils.com/scss-to-css/#compileinputpath-options',
           exampleCall = 'compile(\'assets/scss\', { recursive: false, minify: false })';
 
     const defaultOptions = {
