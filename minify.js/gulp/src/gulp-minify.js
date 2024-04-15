@@ -1,6 +1,6 @@
 // © 2024 Adam Lui under the MIT license.
 // Source: https://code.minify-js.org/gulp
-// Documentation: https://github.minify-js.org/tree/main/gulp/docs
+// Documentation: https://docs.minify-js.org/gulp
 
 const minifyJS = require('@adamlui/minify.js'),
       fs = require('fs'),
