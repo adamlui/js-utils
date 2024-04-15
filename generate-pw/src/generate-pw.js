@@ -57,7 +57,7 @@ function generatePassword(options = {}) {
 
         // Init password's char set
         if (options.verbose && !fromGeneratePasswords) console.info('generatePassword() » Initializing character set...');
-        let pwCharset = options.charset || ( // use passed [charset], or construct from options
+        let pwCharset = options.charset?.toString() || ( // use passed [charset], or construct from options
             (options.numbers ? charsets.numbers : '')
               + (options.symbols ? charsets.symbols : '')
               + (options.lowercase ? charsets.lower : '') 

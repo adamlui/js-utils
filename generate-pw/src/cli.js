@@ -90,7 +90,7 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
         }
     const funcOptions = {
         length: config.length || 8, qty: config.qty || 1,
-        charset: config.charset.toString(), exclude: config.excludeChars,
+        charset: config.charset, exclude: config.excludeChars,
         numbers: !!config.includeNums, symbols: !!config.includeSymbols,
         lowercase: !config.excludeLowerChars, uppercase: !config.excludeUpperChars,
         strict: !!config.strictMode, verbose: !config.quietMode
