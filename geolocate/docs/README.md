@@ -47,7 +47,7 @@ Sample output:
 
 <img src="https://github.com/adamlui/js-utils/blob/main/geolocate/media/images/screenshots/cli-geolocate-8.8.8.8.jpg">
 
-**💡 Note:** If no IPv4 address is passed, your own one will be used.
+**📝 Note:** If no IPv4 address is passed, your own one will be used.
 
 ### Command line options
 
@@ -156,7 +156,7 @@ geo.locate('8.8.8.8').then(location => {
 */
 ```
 
-**💡 Note:** If no IPv4 address is passed, your own one will be used.
+**📝 Note:** If no IPv4 address is passed, your own one will be used.
 
 Available options (passed as object properties):
 
