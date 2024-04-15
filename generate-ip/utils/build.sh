@@ -2,5 +2,5 @@
 
 minify-js src dist --comment=" \
 © 2024 Adam Lui & contributors under the MIT license.\n \
-Source: https://github.js-utils.com/tree/main/generate-ip/src\n \
+Source: https://code.js-utils.com/generate-ip\n \
 Documentation: https://docs.js-utils.com/generate-ip"

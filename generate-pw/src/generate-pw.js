@@ -1,5 +1,5 @@
 // © 2024 Adam Lui & contributors under the MIT license.
-// Source: https://github.js-utils.com/tree/main/generate-pw/src
+// Source: https://code.js-utils.com/generate-pw
 // Documentation: https://docs.js-utils.com/generate-pw
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // © 2024 Adam Lui & contributors under the MIT license.
-// Source: https://github.js-utils.com/tree/main/scss-to-css/src
+// Source: https://code.js-utils.com/scss-to-css
 // Documentation: https://docs.js-utils.com/scss-to-css
 
 const pkgName = '@adamlui/scss-to-css',

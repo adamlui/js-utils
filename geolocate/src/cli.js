@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // © 2024 Adam Lui under the MIT license.
-// Source: https://github.js-utils.com/tree/main/geolocate/src
+// Source: https://code.js-utils.com/geolocate
 // Documentation: https://docs.js-utils.com/geolocate
 
 (async () => {
