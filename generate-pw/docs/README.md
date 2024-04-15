@@ -10,7 +10,8 @@
         <a href="https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/hi#readme">हिंदी</a> |
         <a href="https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/bn#readme">বাংলা</a> |
         <a href="https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/de#readme">Deutsch</a> |
-        <a href="https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/es#readme">Español</a>
+        <a href="https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/es#readme">Español</a> |
+        <a href="https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/fr#readme">Français</a>
     </h6>
 </div>
 

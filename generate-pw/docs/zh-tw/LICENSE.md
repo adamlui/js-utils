@@ -10,7 +10,8 @@
         <a href="../hi/LICENSE.md">हिंदी</a> |
         <a href="../bn/LICENSE.md">বাংলা</a> |
         <a href="../de/LICENSE.md">Deutsch</a> |
-        <a href="../es/LICENSE.md">Español</a>
+        <a href="../es/LICENSE.md">Español</a> |
+        <a href="../fr/LICENSE.md">Français</a>
     </h6>
 </div>
 
