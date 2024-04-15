@@ -61,8 +61,6 @@ process.argv.forEach(arg => {
         printHelpCmdAndDocURL(); process.exit(1);
 }});
 
-console.log(config.excludeSimilarChars) ; process.exit();
-
 // Show HELP screen if -h or --help passed
 if (process.argv.some(arg => argRegex.infoCmds.help.test(arg))) printHelpSections();
 
