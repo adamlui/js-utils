@@ -1,4 +1,4 @@
-# > generate-ip
+# <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=32 src="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> generate-ip
 
 ### Randomly generate, format, and validate IPv4/IPv6 addresses.
 
