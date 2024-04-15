@@ -2,7 +2,7 @@
 
 // © 2024 Adam Lui & contributors under the MIT license.
 // Source: https://code.minify-js.org/node.js
-// Documentation: https://docs.minify-js.org
+// Documentation: https://docs.minify-js.org/node.js
 
 const pkgName = '@adamlui/minify.js',
       docURL = 'https://docs.minify-js.org/#-command-line-usage';
