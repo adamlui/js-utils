@@ -113,7 +113,7 @@ const geo = require('@adamlui/geolocate');
 
 <br>
 
-📝 **Note:** To always import the latest version (not recommended in production!) remove the `@2.0.0` version tag from the jsDelivr URL: `https://cdn.jsdelivr.net/npm/@adamlui/geolocate/dist/geolocate.min.js`
+**📝 Note:** To always import the latest version (not recommended in production!) remove the `@2.0.0` version tag from the jsDelivr URL: `https://cdn.jsdelivr.net/npm/@adamlui/geolocate/dist/geolocate.min.js`
 
 <br>
 
