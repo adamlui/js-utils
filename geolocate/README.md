@@ -138,7 +138,7 @@ geo.locate('8.8.8.8').then(location => {
 });
 
 /* outputs:
-{
+[{
   ip: '8.8.8.8',
   country: 'United States',
   countryCode: 'US',
@@ -150,7 +150,7 @@ geo.locate('8.8.8.8').then(location => {
   lon: -77.5,
   timezone: 'America/New_York',
   isp: 'Google LLC'
-}
+}]
 */
 ```
 
