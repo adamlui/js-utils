@@ -123,7 +123,9 @@ const geo = require('@adamlui/geolocate');
 
 ### `locate([ips, options])`
 
-💡 Asynchronous method to fetch geolocation data for each `ip` passed in an array, returned as an array of data objects:
+💡 Asynchronous method to fetch geolocation data for each `ip` passed in an array, returned as an array of data objects.
+
+Example:
 
 ```js
 // Using await syntax
