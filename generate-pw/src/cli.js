@@ -93,6 +93,7 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
         charset: config.charset, exclude: config.excludeChars,
         numbers: !!config.includeNums, symbols: !!config.includeSymbols,
         lowercase: !config.excludeLowerChars, uppercase: !config.excludeUpperChars,
+        excludeSimilarChars: !!config.excludeSimilarChars,
         strict: !!config.strictMode, verbose: !config.quietMode
     };
     const pwResult = generatePassword(funcOptions);
