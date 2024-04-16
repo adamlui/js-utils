@@ -136,7 +136,7 @@ const ipv6 = {
         if (options.verbose) {
             console.info(`ipv6.generate() » IPv6 address${ options.qty > 1 ? 'es' : '' } generated!`);
             console.info(options.qty == 1 ? `ipv6.generate() » ${ ipResult }`
-                                           : 'ipv6.generate() » Check returned array.' );
+                                          : 'ipv6.generate() » Check returned array.' );
         }
         return ipResult;
     },
