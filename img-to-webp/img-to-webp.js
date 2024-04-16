@@ -6,7 +6,7 @@ Version:      2024.4.15
 Description:  Compress all JPG/PNG images in a directory to WEBPs
 Author:       Adam Lui
 License:      MIT
-URL:          https://js-utils.com
+URL:          https://js-utils.com/img-to-webp
 ========================================================= */
 
 (async () => {
