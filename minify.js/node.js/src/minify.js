@@ -212,4 +212,7 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 }
 
 // EXPORT API functions
-module.exports = { minify, find: findJS, findJS };
+const funcAliases = { minify: ['compress'], findJS: ['find', 'findJs', 'findjs'] };
+module.exports = { minify, findJS };
+for (const func in funcAliases) // init/export aliases
+    funcAliases[func].forEach(alias => module.exports[alias] = module.exports[func]);
