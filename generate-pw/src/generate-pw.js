@@ -178,26 +178,25 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
-    // Init mod flags
-    const hasFlags = {};
+    // Init mod flags + untouchable positions
+    const hasFlags = {}, untouchablePositions = [];
     requiredCharTypes.forEach(charType => hasFlags[charType] = false);
     for (let i = 0; i < password.length; i++)
         for (const charType of requiredCharTypes)
-            if ((charsets[charType] || charsets[charType + 's']).includes(password.charAt(i)))
-                hasFlags[charType] = true;
+            if ((charsets[charType] || charsets[charType + 's']).includes(password.charAt(i))) {
+                hasFlags[charType] = true; untouchablePositions.push(i); }
 
     // Modify password if unstrict
     if (options.verbose) console.info('strictify() » Strictifying password...');
-    const maxReplacements = Math.min(password.length, requiredCharTypes.length),
-          replacedPositions = [];
+    const maxReplacements = Math.min(password.length, requiredCharTypes.length);
     let replacementCnt = 0, strictPW = password;
     for (const charType of requiredCharTypes) {
         if (replacementCnt < maxReplacements) {
             if (!hasFlags[charType]) {
                 let replacementPos;
                 do replacementPos = randomInt(0, password.length); // pick random pos
-                while (replacedPositions.includes(replacementPos)); // check if pos already replaced
-                replacedPositions.push(replacementPos); // track new replacement pos
+                while (untouchablePositions.includes(replacementPos)); // check if pos already replaced
+                untouchablePositions.push(replacementPos); // track new replacement pos
                 const replacementCharSet = charsets[charType] || charsets[charType + 's'];
                 strictPW = strictPW.substring(0, replacementPos) // perform actual replacement
                          + replacementCharSet.charAt(randomInt(0, replacementCharSet.length))
