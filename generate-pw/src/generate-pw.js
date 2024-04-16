@@ -180,12 +180,11 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
 
     // Init mod flags
     const hasFlags = {};
-    for (const charType of requiredCharTypes)
-        hasFlags['has' + charType.charAt(0).toUpperCase() + charType.slice(1)] = false;
+    requiredCharTypes.forEach(charType => hasFlags[charType] = false);
     for (let i = 0; i < password.length; i++)
         for (const charType of requiredCharTypes)
             if ((charsets[charType] || charsets[charType + 's']).includes(password.charAt(i)))
-                hasFlags['has' + charType.charAt(0).toUpperCase() + charType.slice(1)] = true;
+                hasFlags[charType] = true;
 
     // Modify password if unstrict
     if (options.verbose) console.info('strictify() » Strictifying password...');
@@ -194,7 +193,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     let replacementCnt = 0, strictPW = password;
     for (const charType of requiredCharTypes) {
         if (replacementCnt < maxReplacements) {
-            if (!hasFlags['has' + charType.charAt(0).toUpperCase() + charType.slice(1)]) {
+            if (!hasFlags[charType]) {
                 let replacementPos;
                 do replacementPos = randomInt(0, password.length); // pick random pos
                 while (replacedPositions.includes(replacementPos)); // check if pos already replaced
