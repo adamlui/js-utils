@@ -41,7 +41,7 @@ $ npm install gulp-minify.js
 
 ## 💻 Usage
 
-Use `minify()` w/ **input/output args**:
+Use `minify()` w/ **input/output args** in your `gulpfile.js`:
 
 ```js
 const gulp = require('gulp'),
@@ -55,8 +55,7 @@ gulp.task('minify', cb => {
 
 #
 
-Use `minify()` w/ **no args**, as part of a stream's transformations:
-
+Use `minify()` w/ **no args**, as part of a stream's transformations in your `gulpfile.js`:
 ```js
 const gulp = require('gulp'),
       minify = require('gulp-minify.js'),
