@@ -2,7 +2,7 @@
 
 /* ========================================================
 Script:       img-to-webp.js
-Version:      2024.3.31
+Version:      2024.4.15
 Description:  Compress all JPG/PNG images in a directory to WEBPs
 Author:       Adam Lui
 License:      MIT
@@ -23,7 +23,7 @@ URL:          https://js-utils.com
 
     // Check if `inputDir` exists
     try { await fs.access(inputDir); }
-    catch (err) { console.error(`Input directory '${ inputDir }' not found.`); return; }
+    catch (err) { console.error(`Input directory '${inputDir}' not found.`); return; }
 
     // Get all PNG/JPG files from `inputDir`
     const pngFiles = glob.sync(path.join(inputDir, '**/*.png'), { nodir: true }),
@@ -61,7 +61,7 @@ URL:          https://js-utils.com
 
             // Skip conversion if `overwriteExisting` is `false`
             if (!overwriteExisting && await fileExists(outputFileName)) {
-                console.log(`Skipping ${ type } conversion: WebP image already exists for ${ file }`);
+                console.log(`Skipping ${type} conversion: WebP image already exists for ${file}`);
                 skippedCount++; return;
             }
 
@@ -71,7 +71,7 @@ URL:          https://js-utils.com
                 plugins: [webp.default(qualityOptions)]
             });
             compressedCount++;
-            console.log(`${ type } processed: ${ file } => ${ outputFileName }`);
+            console.log(`${type} processed: ${file} => ${outputFileName}`);
 
         }));
         return { compressedCount, skippedCount };

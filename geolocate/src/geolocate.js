@@ -83,8 +83,8 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Define print functions
     const printValidOptions = () => {
-        console.info(`${ logPrefix }Valid options: [ ${ strValidOptions } ]`);
-        console.info(`${ logPrefix }If omitted, default settings are: ${ strDefaultOptions }`);
+        console.info(`${ logPrefix }Valid options: [ ${strValidOptions} ]`);
+        console.info(`${ logPrefix }If omitted, default settings are: ${strDefaultOptions}`);
     };
     const printDocURL = () => {
         console.info(`${ logPrefix }For more help, please visit ${docURL}`); };
@@ -93,17 +93,17 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     if (typeof options != 'object') { // validate as obj
         console.error(`${ logPrefix }ERROR: ${
             optionsPos == '0th' ? '[O' : optionsPos + ' arg [o'}ptions] can only be an object of key/values.`);
-        console.info(`${ logPrefix }Example valid call: ${ exampleCall }`);
+        console.info(`${ logPrefix }Example valid call: ${exampleCall}`);
         printValidOptions(); printDocURL(); return false;
     }
     for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
-                `${ logPrefix }ERROR: \`${ key }\` is an invalid option.`);
+                `${ logPrefix }ERROR: \`${key}\` is an invalid option.`);
             printValidOptions(); printDocURL(); return false;
         } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
             console.error(
-                `${ logPrefix }ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+                `${ logPrefix }ERROR: [${key}] option can only be \`true\` or \`false\`.`);
             printDocURL(); return false;
         }
     }

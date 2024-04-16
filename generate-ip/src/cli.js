@@ -41,7 +41,7 @@ process.argv.forEach(arg => {
         const value = arg.split('=')[1];
         config[matchedParamOption] = parseInt(value) || value;
     } else if (!matchedInfoCmd) {
-        console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
+        console.error(`\n${br}ERROR: Arg [${arg}] not recognized.${nc}`);
         console.info(`\n${by}Valid arguments are below.${nc}`);
         printHelpSections(['paramOptions', 'flags', 'infoCmds']);
         printHelpCmdAndDocURL(); process.exit(1);
@@ -75,7 +75,7 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
     }
     const ipResult = ipv4.generate({ qty: config.qty || 1, verbose: !config.quietMode });
     if (!config.quietMode) {
-        if (config.qty > 1) console.info(`[ ${ ipResult.join(', ') } ]`);
+        if (config.qty > 1) console.info(`[ ${ipResult.join(', ')} ]`);
         console.info('\nCopying to clipboard...');
     }
     copyToClipboard(Array.isArray(ipResult) ? ipResult.join('\n') : ipResult);
@@ -130,14 +130,14 @@ function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'flag
 }
 
 function printHelpCmdAndDocURL() {
-    console.info(`\n${by}For more help, type 'generate-ip --help' or visit\n${docURL + nc}`); }
+    console.info(`\n${by}For more help, type 'generate-ip --help' or visit\n${ docURL + nc }`); }
 
 function copyToClipboard(data) {
     data = data.replace(/\s+$/, '').replace(/"/g, '""');
     if (process.platform == 'darwin') // macOS
-        execSync(`printf "${ data }" | pbcopy`);
+        execSync(`printf "${data}" | pbcopy`);
     else if (process.platform == 'linux')
-        execSync(`printf "${ data }" | xclip -selection clipboard`);
+        execSync(`printf "${data}" | xclip -selection clipboard`);
     else if (process.platform == 'win32')
-        execSync(`Set-Clipboard -Value "${ data }"`, { shell: 'powershell' });
+        execSync(`Set-Clipboard -Value "${data}"`, { shell: 'powershell' });
 }

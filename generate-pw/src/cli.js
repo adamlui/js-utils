@@ -55,7 +55,7 @@ process.argv.forEach(arg => {
         const value = arg.split('=')[1];
         config[matchedParamOption] = parseInt(value) || value;
     } else if (!matchedInfoCmd) {
-        console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
+        console.error(`\n${br}ERROR: Arg [${arg}] not recognized.${nc}`);
         console.info(`\n${by}Valid arguments are below.${nc}`);
         printHelpSections(['paramOptions', 'flags', 'infoCmds']);
         printHelpCmdAndDocURL(); process.exit(1);
@@ -85,7 +85,7 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
 } else { // run MAIN routine
     for (const numArgType of ['length', 'qty'])
         if (config[numArgType] && (isNaN(config[numArgType]) || config[numArgType] < 1)) {
-            console.error(`\n${br}Error: [${ numArgType }] argument can only be > 0.${nc}`);
+            console.error(`\n${br}Error: [${numArgType}] argument can only be > 0.${nc}`);
             printHelpCmdAndDocURL(); process.exit(1);
         }
     const funcOptions = {
@@ -158,14 +158,14 @@ function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'flag
 }
 
 function printHelpCmdAndDocURL() {
-    console.info(`\n${by}For more help, type 'generate-pw --help' or visit\n${docURL + nc}`); }
+    console.info(`\n${by}For more help, type 'generate-pw --help' or visit\n${ docURL + nc }`); }
 
 function copyToClipboard(data) {
     data = data.replace(/\s+$/m, '').replace(/"/g, '""');
     if (process.platform == 'darwin') // macOS
-        execSync(`printf "${ data }" | pbcopy`);
+        execSync(`printf "${data}" | pbcopy`);
     else if (process.platform == 'linux')
-        execSync(`printf "${ data }" | xclip -selection clipboard`);
+        execSync(`printf "${data}" | xclip -selection clipboard`);
     else if (process.platform == 'win32')
-        execSync(`Set-Clipboard -Value "${ data }"`, { shell: 'powershell' });
+        execSync(`Set-Clipboard -Value "${data}"`, { shell: 'powershell' });
 }

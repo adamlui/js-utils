@@ -35,7 +35,7 @@
               matchedInfoCmd = Object.keys(argRegex.infoCmds).find(cmd => argRegex.infoCmds[cmd].test(arg));
         if (matchedFlag) config[matchedFlag] = true;
         else if (!matchedInfoCmd) {
-            console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
+            console.error(`\n${br}ERROR: Arg [${arg}] not recognized.${nc}`);
             console.info(`\n${by}Valid arguments are below.${nc}`);
             printHelpSections(['flags', 'infoCmds']);
             printHelpCmdAndDocURL(); process.exit(1);
@@ -137,18 +137,18 @@
     }
 
     function printHelpCmdAndDocURL() {
-        console.info(`\n${by}For more help, type 'minify-js --help' or visit\n${docURL + nc}`); }
+        console.info(`\n${by}For more help, type 'minify-js --help' or visit\n${ docURL + nc }`); }
 
     function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
 
     function copyToClipboard(data) {
         data = data.replace(/\s+$/, '').replace(/"/g, '""');
         if (process.platform == 'darwin') // macOS
-            execSync(`printf "${ data }" | pbcopy`);
+            execSync(`printf "${data}" | pbcopy`);
         else if (process.platform == 'linux')
-            execSync(`printf "${ data }" | xclip -selection clipboard`);
+            execSync(`printf "${data}" | xclip -selection clipboard`);
         else if (process.platform == 'win32')
-            execSync(`Set-Clipboard -Value "${ data }"`, { shell: 'powershell' });
+            execSync(`Set-Clipboard -Value "${data}"`, { shell: 'powershell' });
     }
 
 })();

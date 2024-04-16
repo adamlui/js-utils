@@ -52,7 +52,7 @@ const ipv4 = {
             console.info(
                 `ipv4.generate() » IPv4 address${ options.qty > 1 ? 'es' : '' } generated!`);
             if (options.qty == 1) console.info(
-                `ipv4.generate() » ${ ipResult }`);
+                `ipv4.generate() » ${ipResult}`);
             else if (typeof require == 'undefined' || !/cli(?:\.min)?\.js$/.test(require.main.filename)) console.info(
                 'ipv4.generate() » Check returned array.' );
         }
@@ -135,7 +135,7 @@ const ipv6 = {
         const ipResult = options.qty > 1 ? ips : ips[0];
         if (options.verbose) {
             console.info(`ipv6.generate() » IPv6 address${ options.qty > 1 ? 'es' : '' } generated!`);
-            console.info(options.qty == 1 ? `ipv6.generate() » ${ ipResult }`
+            console.info(options.qty == 1 ? `ipv6.generate() » ${ipResult}`
                                           : 'ipv6.generate() » Check returned array.' );
         }
         return ipResult;
@@ -160,7 +160,7 @@ const ipv6 = {
             return;
         }
         if (!this.validate(address, { verbose: false})) {
-            console.error(`ipv6.format() » ERROR:  ${ address } is not a valid IPv6 address.`);
+            console.error(`ipv6.format() » ERROR:  ${address} is not a valid IPv6 address.`);
             console.info('ipv6.format() » For more help, please visit ' + docURL);
             return;
         }
@@ -183,7 +183,7 @@ const ipv6 = {
             const totalPieces = formattedAddress.split(':').filter(Boolean).length,
                   zeroSegment = options.leadingZeros ? '0000' : '0',
                   zeroSeries = Array(8 - totalPieces).fill(zeroSegment).join(':');
-            formattedAddress = formattedAddress.replace('::', `:${ zeroSeries }:`);
+            formattedAddress = formattedAddress.replace('::', `:${zeroSeries}:`);
         }
 
         // Handle leading zeros
@@ -207,7 +207,7 @@ const ipv6 = {
             else console.info(
                 'ipv6.format() » IP already formatted to specs.');
             console.info(
-                `ipv6.format() » ${ formattedAddress }`);
+                `ipv6.format() » ${formattedAddress}`);
         }
         return formattedAddress;
     },
@@ -275,8 +275,8 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Define print functions
     const printValidOptions = () => {
-        console.info(`${ logPrefix }Valid options: [ ${ strValidOptions } ]`);
-        console.info(`${ logPrefix }If omitted, default settings are: ${ strDefaultOptions }`);
+        console.info(`${ logPrefix }Valid options: [ ${strValidOptions} ]`);
+        console.info(`${ logPrefix }If omitted, default settings are: ${strDefaultOptions}`);
     };
     const printDocURL = () => {
         console.info(`${ logPrefix }For more help, please visit ${docURL}`); };
@@ -285,22 +285,22 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     if (typeof options != 'object') { // validate as obj
         console.error(`${ logPrefix }ERROR: ${
             optionsPos == '0th' ? '[O' : optionsPos + ' arg [o'}ptions] can only be an object of key/values.`);
-        console.info(`${ logPrefix }Example valid call: ${ exampleCall }`);
+        console.info(`${ logPrefix }Example valid call: ${exampleCall}`);
         printValidOptions(); printDocURL(); return false;
     }
     for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
-                `${ logPrefix }ERROR: \`${ key }\` is an invalid option.`);
+                `${ logPrefix }ERROR: \`${key}\` is an invalid option.`);
             printValidOptions(); printDocURL(); return false;
         } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
             console.error(
-                `${ logPrefix }ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+                `${ logPrefix }ERROR: [${key}] option can only be \`true\` or \`false\`.`);
             printDocURL(); return false;
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) {
-                console.error(`${ logPrefix }ERROR: [${ key }] option can only be an integer > 0.`);
+                console.error(`${ logPrefix }ERROR: [${key}] option can only be an integer > 0.`);
                 printDocURL(); return false;
             }
         }

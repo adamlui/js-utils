@@ -32,7 +32,7 @@ function findJS(searchDir, options = {}) {
         const searchPath = path.resolve(process.cwd(), searchDir);
         if (!fs.existsSync(searchPath)) {
             console.error('findJS() » ERROR: 1st arg <searchDir> must be an existing directory.');
-            console.error(`findJS() » ${ searchPath } does not exist.`);           
+            console.error(`findJS() » ${searchPath} does not exist.`);           
             console.info('findJS() » For more help, please visit ' + docURL);
             return;
     }}
@@ -97,10 +97,10 @@ function minify(input, options = {}) {
     const minifyOptions = { mangle: options.mangle };
     if (fs.existsSync(input)) { // minify based on path arg
         if (input.endsWith('.js')) { // file path passed
-            if (options.verbose) console.info(`minify() » Minifying ${ input }...`);
+            if (options.verbose) console.info(`minify() » Minifying ${input}...`);
             let minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions);
             if (options.comment) minifyResult.code = prependComment(minifyResult.code);
-            if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
+            if (minifyResult.error) console.error(`minify() » ERROR: ${minifyResult.error.message}`);
             else if (options.verbose && !process.argv.some(arg => arg.includes('gulp')) &&
                 !/cli(?:\.min)?\.js$/.test(require.main.filename))
                     console.info('minify() » Minification complete. Check returned object.');
@@ -110,7 +110,7 @@ function minify(input, options = {}) {
             const minifyResult = findJS(input, { recursive: options.recursive, verbose: options.verbose,
                                                  dotFolders: options.dotFolders, dotFiles: options.dotFiles 
                 })?.map(jsPath => { // minify found JS files
-                    if (options.verbose) console.info(`minify() » Minifying ${ jsPath }...`);
+                    if (options.verbose) console.info(`minify() » Minifying ${jsPath}...`);
                     const srcCode = fs.readFileSync(jsPath, 'utf8');
                     let minifyResult = uglifyJS.minify(srcCode, minifyOptions);
                     if (options.comment) minifyResult.code = prependComment(minifyResult.code);
@@ -130,7 +130,7 @@ function minify(input, options = {}) {
             console.info('minify() » Minifying passed source code...');
         let minifyResult = uglifyJS.minify(input, minifyOptions);
         if (options.comment) minifyResult.code = prependComment(minifyResult.code);
-        if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
+        if (minifyResult.error) console.error(`minify() » ERROR: ${minifyResult.error.message}`);
         else if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
             console.info('minify() » Minification complete. Check returned object.');
         return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error };
@@ -167,8 +167,8 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Define print functions
     const printValidOptions = () => {
-        console.info(`${ logPrefix }Valid options: [ ${ strValidOptions } ]`);
-        console.info(`${ logPrefix }If omitted, default settings are: ${ strDefaultOptions }`);
+        console.info(`${ logPrefix }Valid options: [ ${strValidOptions} ]`);
+        console.info(`${ logPrefix }If omitted, default settings are: ${strDefaultOptions}`);
     };
     const printDocURL = () => {
         console.info(`${ logPrefix }For more help, please visit ${docURL}`); };
@@ -177,12 +177,12 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     if (typeof options != 'object') { // validate as obj
         console.error(`${ logPrefix }ERROR: ${
             optionsPos == '0th' ? '[O' : optionsPos + ' arg [o'}ptions] can only be an object of key/values.`);
-        console.info(`${ logPrefix }Example valid call: ${ exampleCall }`);
+        console.info(`${ logPrefix }Example valid call: ${exampleCall}`);
         printValidOptions(); printDocURL(); return false;
     }
     for (const key in options) { // validate each key
         if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
-            console.error(`${ logPrefix }ERROR: \`${ key }\` is an invalid option.`);
+            console.error(`${ logPrefix }ERROR: \`${key}\` is an invalid option.`);
             printValidOptions(); printDocURL(); return false;
         } else if (booleanOptions.includes(key)) {
             if (key == 'mangle') {
@@ -197,13 +197,13 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
                 else if (typeof options.mangle != 'boolean') {
                             printMangleErr(); printDocURL(); return false; }
             } else if (typeof options[key] != 'boolean') {
-                console.error(`${ logPrefix }ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+                console.error(`${ logPrefix }ERROR: [${key}] option can only be \`true\` or \`false\`.`);
                 printDocURL(); return false;
             }
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) {
-                console.error(`${ logPrefix }ERROR: [${ key }] option can only be an integer > 0.`);
+                console.error(`${ logPrefix }ERROR: [${key}] option can only be an integer > 0.`);
                 printDocURL(); return false;
             }
         }

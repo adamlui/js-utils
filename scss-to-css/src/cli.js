@@ -35,7 +35,7 @@ process.argv.forEach(arg => {
     const matchedFlag = Object.keys(argRegex).find(flag => argRegex[flag].test(arg));
     if (matchedFlag) config[matchedFlag] = true;
     else {
-        console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
+        console.error(`\n${br}ERROR: Arg [${arg}] not recognized.${nc}`);
         console.info(`\n${by}Valid arguments are below.${nc}`);
         printHelpSections(['configOptions', 'infoCmds']);
         printHelpCmdAndDocURL(); process.exit(1);
@@ -75,7 +75,7 @@ else if (process.argv.some(arg => argRegex.version.test(arg))) {
     const inputPath = path.resolve(process.cwd(), inputArg);
     if (inputArg && !fs.existsSync(inputPath)) {
         console.error(`\n${br}Error: First argument can only be an existing file or directory.`
-            + `\n'${ inputPath }' does not exist.${nc}`
+            + `\n'${inputPath}' does not exist.${nc}`
             + `\n\n${bg}Example valid command: \n» scss-to-css . output.min.css${nc}`);
         printHelpCmdAndDocURL(); process.exit(1);
     }
@@ -125,13 +125,13 @@ else if (process.argv.some(arg => argRegex.version.test(arg))) {
         if (compileData?.length > 0) {
             const cssCntSuffix = compileData.length > 1 ? 's' : '';
             printIfNotQuiet(`\n${bg}Compilation complete!${nc}`);
-            printIfNotQuiet(`${ compileData.length } CSS file${ cssCntSuffix }`
-                + ( !config.noSourceMaps ? ` + ${ compileData.length } source map${ cssCntSuffix }` : '' )
+            printIfNotQuiet(`${compileData.length} CSS file${ cssCntSuffix }`
+                + ( !config.noSourceMaps ? ` + ${compileData.length} source map${ cssCntSuffix }` : '' )
                 + ' generated.');
         } else printIfNotQuiet(`${by}No SCSS files processed.${nc}`);
         if (failedPaths.length > 0) {
             printIfNotQuiet(`\n${br}`
-                + `${ failedPaths.length } file${ failedPaths.length > 1 ? 's' : '' }`
+                + `${failedPaths.length} file${ failedPaths.length > 1 ? 's' : '' }`
                 + ` failed to compile:${nc}`);
             failedPaths.forEach(path => printIfNotQuiet(path));
         }
@@ -198,6 +198,6 @@ function printHelpSections(includeSections = ['cmdFormat', 'pathArgs', 'configOp
 }
 
 function printHelpCmdAndDocURL() {
-    console.info(`\n${by}For more help, type 'scss-to-css --help' or visit\n${docURL + nc}`); }
+    console.info(`\n${by}For more help, type 'scss-to-css --help' or visit\n${ docURL + nc }`); }
 
 function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }

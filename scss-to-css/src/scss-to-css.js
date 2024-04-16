@@ -31,7 +31,7 @@ function findSCSS(searchDir, options = {}) {
         const searchPath = path.resolve(process.cwd(), searchDir);
         if (!fs.existsSync(searchPath)) {
             console.error('findSCSS() » ERROR: 1st arg <searchDir> must be an existing directory.');
-            console.error(`findSCSS() » ${ searchPath } does not exist.`);     
+            console.error(`findSCSS() » ${searchPath} does not exist.`);     
             console.info('findSCSS() » For more help, please visit ' + docURL);
             return;
     }}
@@ -88,7 +88,7 @@ function compile(inputPath, options = {}) {
         inputPath = path.resolve(process.cwd(), inputPath);
         if (!fs.existsSync(inputPath)) {
             console.error('compile() » ERROR: 1st arg <inputPath> must be an existing directory or file.');
-            console.error(`compile() » ${ inputPath } does not exist.`);
+            console.error(`compile() » ${inputPath} does not exist.`);
             console.info('compile() » For more help, please visit ' + docURL);
             return;
     }}
@@ -101,23 +101,23 @@ function compile(inputPath, options = {}) {
     const compileOptions = { style: options.minify ? 'compressed' : 'expanded', sourceMap: options.sourceMaps };
     if (fs.existsSync(inputPath)) { // compile based on path arg
         if (inputPath.endsWith('.scss')) { // file path passed
-            if (options.verbose) console.info(`compile() » Compiling ${ inputPath }...`);
+            if (options.verbose) console.info(`compile() » Compiling ${inputPath}...`);
             try { // to compile file passed
                 const compileResult = sass.compile(inputPath, compileOptions);
                 if (options.verbose && !/cli(?:\.min)?\.js$/.test(require.main.filename))
                     console.info('compile() » Compilation complete. Check returned object.');
                 return { code: compileResult.css, srcMap: compileResult.sourceMap,
                          srcPath: path.resolve(process.cwd(), inputPath) };
-            } catch (err) { console.error(`\ncompile() » ERROR: ${ err.message }\n`); return { error: err }; }
+            } catch (err) { console.error(`\ncompile() » ERROR: ${err.message}\n`); return { error: err }; }
         } else { // dir path passed
             const compileResult = findSCSS(inputPath, { recursive: options.recursive, verbose: options.verbose,
                                                         dotFolders: options.dotFolders
                 })?.map(scssPath => { // compile found SCSS files
-                    if (options.verbose) console.info(`compile() » Compiling ${ scssPath }...`); 
+                    if (options.verbose) console.info(`compile() » Compiling ${scssPath}...`); 
                     try { // to compile found file
                         const compileResult = sass.compile(scssPath, compileOptions);
                         return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: scssPath };
-                    } catch (err) { console.error(`\ncompile() » ERROR: ${ err.message }\n`); return { error: err }; }
+                    } catch (err) { console.error(`\ncompile() » ERROR: ${err.message}\n`); return { error: err }; }
                 }).filter(data => !data.error ); // filter out failed compilations
             if (options.verbose) { 
                 if (compileResult.length > 0) console.info(
@@ -151,8 +151,8 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Define print functions
     const printValidOptions = () => {
-        console.info(`${ logPrefix }Valid options: [ ${ strValidOptions } ]`);
-        console.info(`${ logPrefix }If omitted, default settings are: ${ strDefaultOptions }`);
+        console.info(`${ logPrefix }Valid options: [ ${strValidOptions} ]`);
+        console.info(`${ logPrefix }If omitted, default settings are: ${strDefaultOptions}`);
     };
     const printDocURL = () => {
         console.info(`${ logPrefix }For more help, please visit ${docURL}`); };
@@ -161,22 +161,22 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     if (typeof options != 'object') { // validate as obj
         console.error(`${ logPrefix }ERROR: ${
             optionsPos == '0th' ? '[O' : optionsPos + ' arg [o'}ptions] can only be an object of key/values.`);
-        console.info(`${ logPrefix }Example valid call: ${ exampleCall }`);
+        console.info(`${ logPrefix }Example valid call: ${exampleCall}`);
         printValidOptions(); printDocURL(); return false;
     }
     for (const key in options) { // validate each key
         if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
-                `${ logPrefix }ERROR: \`${ key }\` is an invalid option.`);
+                `${ logPrefix }ERROR: \`${key}\` is an invalid option.`);
             printValidOptions(); printDocURL(); return false;
         } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
             console.error(
-                `${ logPrefix }ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+                `${ logPrefix }ERROR: [${key}] option can only be \`true\` or \`false\`.`);
             printDocURL(); return false;
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) {
-                console.error(`${ logPrefix }ERROR: [${ key }] option can only be an integer > 0.`);
+                console.error(`${ logPrefix }ERROR: [${key}] option can only be an integer > 0.`);
                 printDocURL(); return false;
             }
         }

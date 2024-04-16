@@ -49,7 +49,7 @@ process.argv.forEach(arg => {
         const value = arg.split('=')[1];
         config[matchedParamOption] = parseInt(value) || value;
     } else if (!matchedInfoCmd) {
-        console.error(`\n${br}ERROR: Arg [${ arg }] not recognized.${nc}`);
+        console.error(`\n${br}ERROR: Arg [${arg}] not recognized.${nc}`);
         console.info(`\n${by}Valid arguments are below.${nc}`);
         printHelpSections(['flags', 'paramOptions', 'infoCmds']);
         printHelpCmdAndDocURL(); process.exit(1);
@@ -89,7 +89,7 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
     const inputPath = path.resolve(process.cwd(), inputArg);
     if (inputArg && !fs.existsSync(inputPath)) {
         console.error(`\n${br}Error: First argument can only be an existing file or directory.`
-            + `\n${ inputPath } does not exist.${nc}`
+            + `\n${inputPath} does not exist.${nc}`
             + `\n\n${bg}Example valid command: \n» minify-js . output.min.js${nc}`);
         printHelpCmdAndDocURL(); process.exit(1);
     }
@@ -137,11 +137,11 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
         if (minifyData?.length > 0) {
             printIfNotQuiet(`\n${bg}Minification complete!${nc}`);
             printIfNotQuiet(
-                `${ minifyData.length } file${ minifyData.length > 1 ? 's' : '' } minified.`);
+                `${minifyData.length} file${ minifyData.length > 1 ? 's' : '' } minified.`);
         } else printIfNotQuiet(`${by}No unminified JavaScript files processed.${nc}`);
         if (failedPaths.length > 0) {
             printIfNotQuiet(`\n${br}`
-                + `${ failedPaths.length } file${ failedPaths.length > 1 ? 's' : '' }`
+                + `${failedPaths.length} file${ failedPaths.length > 1 ? 's' : '' }`
                 + ` failed to minify:${nc}`);
             failedPaths.forEach(path => printIfNotQuiet(path));
         }
@@ -213,6 +213,6 @@ function printHelpSections(
 }
 
 function printHelpCmdAndDocURL() {
-    console.info(`\n${by}For more help, type 'minify-js --help' or visit\n${docURL + nc}`); }
+    console.info(`\n${by}For more help, type 'minify-js --help' or visit\n${ docURL + nc }`); }
 
 function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }

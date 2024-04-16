@@ -69,7 +69,7 @@ function generatePassword(options = {}) {
         // Exclude passed `exclude` chars
         if (options.exclude) {
             if (options.verbose && !fromGeneratePasswords) console.info('generatePassword() » Removing excluded characters...');
-            pwCharset = pwCharset.replace(new RegExp(`[${ options.exclude }]`, 'g'), '');
+            pwCharset = pwCharset.replace(new RegExp(`[${options.exclude}]`, 'g'), '');
         }
 
         // Exclude similar chars if `excludeSimilarChars` is `true`
@@ -167,8 +167,8 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
         requiredCharTypes = [requiredCharTypes];
     for (const charType of requiredCharTypes) {
         if (!validCharTypes.includes(charType)) { 
-            console.error(`strictify() » ERROR: 2nd arg \`${ charType }\` is an invalid character type.`);
-            console.info(`strictify() » Valid character types: [ ${ validCharTypes.map(type => `'${ type }'`).join(', ') } ]`);
+            console.error(`strictify() » ERROR: 2nd arg \`${charType}\` is an invalid character type.`);
+            console.info(`strictify() » Valid character types: [ ${validCharTypes.map(type => `'${ type }'`).join(', ')} ]`);
             console.info('strictify() » Pass one as a string or more as an array, or all types will be required.');
             console.info('strictify() » For more help, please visit ' + docURL);
             return;
@@ -212,7 +212,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
             console.info('strictify() » Password is now strict!');
             console.info('strictify() » Check returned string.');
         } else {
-            console.info(`strictify() » Password already includes ${ requiredCharTypes.join(' + ') } characters!`);
+            console.info(`strictify() » Password already includes ${requiredCharTypes.join(' + ')} characters!`);
             console.info('strictify() » No modifications made.');
         }
     }
@@ -249,7 +249,7 @@ function validateStrength(password, options = {}) {
     // Check criteria + add recommendations
     const recommendations = [];
     if (password.length < strengthCriteria.minLength)
-        recommendations.push(`Make it at least ${ strengthCriteria.minLength } characters long.`);
+        recommendations.push(`Make it at least ${strengthCriteria.minLength} characters long.`);
     for (const charType of Object.keys(charCnts))
         if (charCnts[charType] < strengthCriteria['min' + charType.charAt(0).toUpperCase() + charType.slice(1)])
             recommendations.push('Include at least one ' + charType
@@ -292,8 +292,8 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Define print functions
     const printValidOptions = () => {
-        console.info(`${ logPrefix }Valid options: [ ${ strValidOptions } ]`);
-        console.info(`${ logPrefix }If omitted, default settings are: ${ strDefaultOptions }`);
+        console.info(`${ logPrefix }Valid options: [ ${strValidOptions} ]`);
+        console.info(`${ logPrefix }If omitted, default settings are: ${strDefaultOptions}`);
     };
     const printDocURL = () => {
         console.info(`${ logPrefix }For more help, please visit ${docURL}`); };
@@ -302,22 +302,22 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     if (typeof options != 'object') { // validate as obj
         console.error(`${ logPrefix }ERROR: ${
             optionsPos == '0th' ? '[O' : optionsPos + ' arg [o'}ptions] can only be an object of key/values.`);
-        console.info(`${ logPrefix }Example valid call: ${ exampleCall }`);
+        console.info(`${ logPrefix }Example valid call: ${exampleCall}`);
         printValidOptions(); printDocURL(); return false;
     }
     for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             console.error(
-                `${ logPrefix }ERROR: \`${ key }\` is an invalid option.`);
+                `${ logPrefix }ERROR: \`${key}\` is an invalid option.`);
             printValidOptions(); printDocURL(); return false;
         } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
             console.error(
-                `${ logPrefix }ERROR: [${ key }] option can only be \`true\` or \`false\`.`);
+                `${ logPrefix }ERROR: [${key}] option can only be \`true\` or \`false\`.`);
             printDocURL(); return false;
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) {
-                console.error(`${ logPrefix }ERROR: [${ key }] option can only be an integer > 0.`);
+                console.error(`${ logPrefix }ERROR: [${key}] option can only be an integer > 0.`);
                 printDocURL(); return false;
             }
         }
