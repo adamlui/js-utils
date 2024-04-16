@@ -65,11 +65,10 @@ const pkgName = '@adamlui/geolocate',
 
         // Load IP arg(s) into [validIPs]
         const args = process.argv.slice(2), validIPs = [];
-        for (let i = 0; i < args.length; i++) {
-            if (!args[i].startsWith('-')) {
-                const ip = args[i].replace(/\[|\]/g, ''); // strip surrounding '[]' in case copied from docs
-                validIPs.push(ip);
-        }}
+        for (const arg of args) if (!arg.startsWith('-')) {
+            const ip = arg.replace(/\[|\]/g, ''); // strip surrounding '[]' in case copied from docs
+            validIPs.push(ip);
+        }
 
         // Fetch/store geolocation data
         const geoResults = await geo.locate(validIPs, { verbose: !config.quietMode });
