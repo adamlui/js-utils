@@ -275,7 +275,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ### [</> minify.js](https://minify-js.org)
 
 > Recursively minify all JavaScript files.
-<br>[Install](https://docs.minify-js.org/#-installation) /
+<br>[Install](https://node.minify-js.org/#-installation) /
 [Readme](http://minify-js.org/#readme) /
 [CLI usage](http://minify-js.org/README.md#-command-line-usage) /
 [API usage](http://minify-js.org/README.md#-api-usage) /

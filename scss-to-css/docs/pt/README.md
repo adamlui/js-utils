@@ -272,7 +272,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU
 ### [</> minify.js](https://minify-js.org)
 
 > Minimize recursivamente todos os arquivos JavaScript.
-<br>[Instalar](https://docs.minify-js.org/#-installation) /
+<br>[Instalar](https://node.minify-js.org/#-installation) /
 [Leia-me](http://minify-js.org/#readme) /
 [Uso da CLI](http://minify-js.org/README.md#-command-line-usage) /
 [Uso de API](http://minify-js.org/README.md#-api-usage) /

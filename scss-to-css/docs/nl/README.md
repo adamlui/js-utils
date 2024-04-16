@@ -272,7 +272,7 @@ DE SOFTWARE WORDT GELEVERD "AS IS", ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIE
 ### [</> minify.js](https://minify-js.org)
 
 > Verklein alle JavaScript-bestanden recursief.
-<br>[Installeren](https://docs.minify-js.org/#-installation) /
+<br>[Installeren](https://node.minify-js.org/#-installation) /
 [Leesmij](http://minify-js.org/#readme) /
 [CLI-gebruik](http://minify-js.org/README.md#-command-line-usage) /
 [API-gebruik](http://minify-js.org/README.md#-api-usage) /

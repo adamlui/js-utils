@@ -272,7 +272,7 @@ findSCSS() » Check returned array.
 ### [</> minify.js](https://minify-js.org)
 
 > すべての JavaScript ファイルを再帰的に縮小します。
-<br>[インストール](https://docs.minify-js.org/#-installation) /
+<br>[インストール](https://node.minify-js.org/#-installation) /
 [お読みください](http://minify-js.org/#readme) /
 [CLI の使用法](http://minify-js.org/README.md#-command-line-usage) /
 [API の使用法](http://minify-js.org/README.md#-api-usage) /
