@@ -267,7 +267,7 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 
 > Comprime recursivamente todas las imágenes a WEBP.
 <br>[Descargar](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
-[Conversar](https://js-utils.com/discussions)
+[Conversar](https://github.js-utils.com/discussions)
 
 ### [</> minify.js](https://minify-js.org)
 
@@ -276,12 +276,12 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 [Léame](https://node.minify-js.org/#readme) /
 [Uso de CLI](https://node.minify-js.org/#-command-line-usage) /
 [Uso de API](https://node.minify-js.org/#-api-usage) /
-[Conversar](https://js-utils.com/discussions)
+[Conversar](https://github.js-utils.com/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**Más utilidades de JavaScript**</a> /
-<a href="https://js-utils.com/discussions">Conversar</a> /
+<a href="https://github.js-utils.com/discussions">Conversar</a> /
 <a href="#--scss-to-css">Volver arriba ↑</a>

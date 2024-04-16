@@ -267,7 +267,7 @@ findSCSS() » Check returned array.
 
 > ਵਾਰ-ਵਾਰ ਸਾਰੀਆਂ ਤਸਵੀਰਾਂ ਨੂੰ WEBP ਵਿੱਚ ਸੰਕੁਚਿਤ ਕਰੋ।
 <br>[ਡਾਊਨਲੋਡ ਕਰੋ](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
-[ਚਰਚਾ ਕਰੋ](https://js-utils.com/discussions)
+[ਚਰਚਾ ਕਰੋ](https://github.js-utils.com/discussions)
 
 ### [</> minify.js](https://minify-js.org)
 
@@ -276,12 +276,12 @@ findSCSS() » Check returned array.
 [ਪੜ੍ਹੋ](http://minify-js.org/docs/pa#readme) /
 [CLI ਦੀ ਵਰਤੋਂ](http://minify-js.org/docs/pa#-%E0%A8%95%E0%A8%AE%E0%A8%BE%E0%A8%82%E0%A8%A1-%E0%A8%B2%E0%A8%BE%E0%A8%88%E0%A8%A8-%E0%A8%A6%E0%A9%80-%E0%A8%B5%E0%A8%B0%E0%A8%A4%E0%A9%8B%E0%A8%82) /
 [API ਵਰਤੋਂ](http://minify-js.org/docs/pa#-api-%E0%A8%B5%E0%A8%B0%E0%A8%A4%E0%A9%8B%E0%A8%82) /
-[ਚਰਚਾ ਕਰੋ](https://js-utils.com/discussions)
+[ਚਰਚਾ ਕਰੋ](https://github.js-utils.com/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**ਹੋਰ JavaScript ਉਪਯੋਗਤਾਵਾਂ**</a> /
-<a href="https://js-utils.com/discussions">ਚਰਚਾ ਕਰੋ</a> /
+<a href="https://github.js-utils.com/discussions">ਚਰਚਾ ਕਰੋ</a> /
 <a href="#--scss-to-css">ਸਿਖਰ 'ਤੇ ਵਾਪਸ ਜਾਓ ↑</a>

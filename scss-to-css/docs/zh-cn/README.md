@@ -267,7 +267,7 @@ findSCSS() » Check returned array.
 
 > 递归地将所有图像压缩为 WEBP。
 <br>[下载](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
-[讨论](https://js-utils.com/discussions)
+[讨论](https://github.js-utils.com/discussions)
 
 ### [</> minify.js](https://minify-js.org)
 
@@ -276,12 +276,12 @@ findSCSS() » Check returned array.
 [自述文件](http://minify-js.org/docs/zh-cn#readme) /
 [CLI 用法](http://minify-js.org/docs/zh-cn#-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%BD%BF%E7%94%A8) /
 [API 使用](http://minify-js.org/docs/zh-cn#-api-%E4%BD%BF%E7%94%A8) /
-[讨论](https://js-utils.com/discussions)
+[讨论](https://github.js-utils.com/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**更多 JavaScript 实用程序**</a> /
-<a href="https://js-utils.com/discussions">讨论</a> /
+<a href="https://github.js-utils.com/discussions">讨论</a> /
 <a href="#--scss-to-css">回到顶部 ↑</a>

@@ -267,7 +267,7 @@ DE SOFTWARE WORDT GELEVERD "AS IS", ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIE
 
 > Comprimeer alle afbeeldingen recursief naar WEBP's.
 <br>[Downloaden](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
-[Bespreken](https://js-utils.com/discussions)
+[Bespreken](https://github.js-utils.com/discussions)
 
 ### [</> minify.js](https://minify-js.org)
 
@@ -276,12 +276,12 @@ DE SOFTWARE WORDT GELEVERD "AS IS", ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIE
 [Leesmij](https://node.minify-js.org/#readme) /
 [CLI-gebruik](https://node.minify-js.org/#-command-line-usage) /
 [API-gebruik](https://node.minify-js.org/#-api-usage) /
-[Bespreken](https://js-utils.com/discussions)
+[Bespreken](https://github.js-utils.com/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**Meer JavaScript-hulpprogramma's**</a> /
-<a href="https://js-utils.com/discussions">Bespreken</a> /
+<a href="https://github.js-utils.com/discussions">Bespreken</a> /
 <a href="#--scss-to-css">Terug naar boven ↑</a>

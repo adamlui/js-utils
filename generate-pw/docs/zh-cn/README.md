@@ -307,7 +307,7 @@ $ generate-pw
 [自述文件](https://docs.js-utils.com/generate-ip/#readme) /
 [API 使用](https://docs.js-utils.com/generate-ip/#-api-usage) /
 [CLI 用法](https://docs.js-utils.com/generate-ip/#-command-line-usage) /
-[讨论](https://js-utils.com/discussions)
+[讨论](https://github.js-utils.com/discussions)
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
@@ -316,12 +316,12 @@ $ generate-pw
 [自述文件](https://docs.js-utils.com/geolocate/#readme) /
 [CLI 用法](https://docs.js-utils.com/geolocate/#-command-line-usage) /
 [API 使用](https://docs.js-utils.com/geolocate/#-api-usage) /
-[讨论](https://js-utils.com/discussions)
+[讨论](https://github.js-utils.com/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**更多 JavaScript 实用程序**</a> /
-<a href="https://js-utils.com/discussions">讨论</a> /
+<a href="https://github.js-utils.com/discussions">讨论</a> /
 <a href="#-generate-pw">回到顶部 ↑</a>

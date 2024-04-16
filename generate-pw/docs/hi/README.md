@@ -307,7 +307,7 @@ $ generate-pw
 [रीडमी](https://docs.js-utils.com/generate-ip/#readme) /
 [एपीआई उपयोग](https://docs.js-utils.com/generate-ip/#-api-usage) /
 [सीएलआई उपयोग](https://docs.js-utils.com/generate-ip/#-command-line-usage) /
-[चर्चा करना](https://js-utils.com/discussions)
+[चर्चा करना](https://github.js-utils.com/discussions)
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
@@ -316,12 +316,12 @@ $ generate-pw
 [रीडमी](https://docs.js-utils.com/geolocate/#readme) /
 [सीएलआई उपयोग](https://docs.js-utils.com/geolocate/#-command-line-usage) /
 [एपीआई उपयोग](https://docs.js-utils.com/geolocate/#-api-usage) /
-[चर्चा करना](https://js-utils.com/discussions)
+[चर्चा करना](https://github.js-utils.com/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**अधिक जावास्क्रिप्ट उपयोगिताएँ**</a> /
-<a href="https://js-utils.com/discussions">चर्चा करना</a> /
+<a href="https://github.js-utils.com/discussions">चर्चा करना</a> /
 <a href="#-generate-pw">वापस शीर्ष पर ↑</a>

@@ -267,7 +267,7 @@ findSCSS() » Check returned array.
 
 > すべての画像を再帰的に WEBP に圧縮します。
 <br>[ダウンロード](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
-[話し合う](https://js-utils.com/discussions)
+[話し合う](https://github.js-utils.com/discussions)
 
 ### [</> minify.js](https://minify-js.org)
 
@@ -276,12 +276,12 @@ findSCSS() » Check returned array.
 [お読みください](https://node.minify-js.org/#readme) /
 [CLI の使用法](https://node.minify-js.org/#-command-line-usage) /
 [API の使用法](https://node.minify-js.org/#-api-usage) /
-[話し合う](https://js-utils.com/discussions)
+[話し合う](https://github.js-utils.com/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**その他の JavaScript ユーティリティ**</a> /
-<a href="https://js-utils.com/discussions">話し合う</a> /
+<a href="https://github.js-utils.com/discussions">話し合う</a> /
 <a href="#--scss-to-css">トップに戻る ↑</a>

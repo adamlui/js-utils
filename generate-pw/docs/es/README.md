@@ -311,7 +311,7 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 [Léame](https://docs.js-utils.com/generate-ip/#readme) /
 [Uso de API](https://docs.js-utils.com/generate-ip/#-api-usage) /
 [Uso de CLI](https://docs.js-utils.com/generate-ip/#-command-line-usage) /
-[Conversar](https://js-utils.com/discussions)
+[Conversar](https://github.js-utils.com/discussions)
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
@@ -320,12 +320,12 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 [Léame](https://docs.js-utils.com/geolocate/#readme) /
 [Uso de CLI](https://docs.js-utils.com/geolocate/#-command-line-usage) /
 [Uso de API](https://docs.js-utils.com/geolocate/#-api-usage) /
-[Conversar](https://js-utils.com/discussions)
+[Conversar](https://github.js-utils.com/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**Más utilidades de JavaScript**</a> /
-<a href="https://js-utils.com/discussions">Conversar</a> /
+<a href="https://github.js-utils.com/discussions">Conversar</a> /
 <a href="#-generate-pw">Volver arriba ↑</a>

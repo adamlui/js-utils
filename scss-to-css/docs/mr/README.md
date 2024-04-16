@@ -267,7 +267,7 @@ findSCSS() » Check returned array.
 
 > सर्व प्रतिमा WEBP वर वारंवार संकुचित करा.
 <br>[डाउनलोड करा](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
-[चर्चा करा](https://js-utils.com/discussions)
+[चर्चा करा](https://github.js-utils.com/discussions)
 
 ### [</> minify.js](https://minify-js.org)
 
@@ -276,12 +276,12 @@ findSCSS() » Check returned array.
 [मला वाचा](http://minify-js.org/docs/mr#readme) /
 [CLI वापर](http://minify-js.org/docs/mr#-%E0%A4%95%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%A1-%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%A8-%E0%A4%B5%E0%A4%BE%E0%A4%AA%E0%A4%B0) /
 [API वापर](http://minify-js.org/docs/mr#-api-%E0%A4%B5%E0%A4%BE%E0%A4%AA%E0%A4%B0) /
-[चर्चा करा](https://js-utils.com/discussions)
+[चर्चा करा](https://github.js-utils.com/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**अधिक JavaScript उपयुक्तता**</a> /
-<a href="https://js-utils.com/discussions">चर्चा करा</a> /
+<a href="https://github.js-utils.com/discussions">चर्चा करा</a> /
 <a href="#--scss-to-css">परत वर जा ↑</a>

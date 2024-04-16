@@ -266,7 +266,7 @@ findSCSS() » Check returned array.
 
 > सभी छवियों को WEBPs पर पुनरावर्ती रूप से संपीड़ित करें।
 <br>[डाउनलोड करना](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
-[चर्चा करना](https://js-utils.com/discussions)
+[चर्चा करना](https://github.js-utils.com/discussions)
 
 ### [</> minify.js](https://minify-js.org)
 
@@ -275,12 +275,12 @@ findSCSS() » Check returned array.
 [रीडमी](http://minify-js.org/docs/hi#readme) /
 [सीएलआई उपयोग](http://minify-js.org/docs/hi#-%E0%A4%95%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%A1-%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%A8-%E0%A4%89%E0%A4%AA%E0%A4%AF%E0%A5%8B%E0%A4%97) /
 [एपीआई उपयोग](http://minify-js.org/docs/hi#-api-%E0%A4%89%E0%A4%AA%E0%A4%AF%E0%A5%8B%E0%A4%97) /
-[चर्चा करना](https://js-utils.com/discussions)
+[चर्चा करना](https://github.js-utils.com/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**अधिक जावास्क्रिप्ट उपयोगिताएँ**</a> /
-<a href="https://js-utils.com/discussions">चर्चा करना</a> /
+<a href="https://github.js-utils.com/discussions">चर्चा करना</a> /
 <a href="#--scss-to-css">वापस शीर्ष पर ↑</a>
