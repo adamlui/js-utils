@@ -262,6 +262,28 @@ findJS() » Check returned array.
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
+## 🛠️ 相關實用程式
+
+### [</> minify.js (Gulp)](https://gulp.minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+
+> Gulp 外掛程式可遞歸地縮小所有 JavaScript 檔案。
+<br>[安裝](https://gulp.minify-js.org/#-installation) /
+[自述文件](http://gulp.minify-js.org/#readme) /
+[討論](https://github.minify-js.org/discussions)
+
+### [{ } scss-to-css](https://js-utils.com/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+
+> 將所有 SCSS 檔案遞歸編譯為縮小的 CSS。
+<br>[安裝](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-tw#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%9D) /
+[自述文件](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-tw#readme) /
+[CLI 使用](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-tw#-%E5%91%BD%E4%BB%A4%E5%88%97%E4%BD%BF%E7%94%A8) /
+[API 使用](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-tw#-api-%E4%BD%BF%E7%94%A8) /
+[討論](https://github.js-utils.com/discussions)
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**更多 JavaScript 實用程式**</a> /
 <a href="https://js-utils.com/discussions">讨论</a> /
 <a href="#-minifyjs">回到顶部 ↑</a>

@@ -264,6 +264,28 @@ findJS() » Check returned array.
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
+## 🛠️ संबंधित उपयोगिताएँ
+
+### [</> minify.js (Gulp)](https://gulp.minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+
+> सभी जावास्क्रिप्ट फ़ाइलों को पुनरावर्ती रूप से छोटा करने के लिए Gulp प्लग-इन।
+<br>[स्थापित करना](https://gulp.minify-js.org/#-installation) /
+[रीडमी](http://gulp.minify-js.org/#readme) /
+[चर्चा करना](https://github.minify-js.org/discussions)
+
+### [{ } scss-to-css](https://js-utils.com/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+
+> सभी SCSS फ़ाइलों को पुनरावर्ती रूप से लघु CSS में संकलित करें।
+<br>[स्थापित करना](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/hi#-%E0%A4%87%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A4%BE%E0%A4%B2%E0%A5%87%E0%A4%B6%E0%A4%A8) /
+[रीडमी](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/hi#readme) /
+[सीएलआई उपयोग](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/hi#-%E0%A4%95%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%A1-%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%A8-%E0%A4%89%E0%A4%AA%E0%A4%AF%E0%A5%8B%E0%A4%97) /
+[एपीआई उपयोग](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/hi#-api-%E0%A4%89%E0%A4%AA%E0%A4%AF%E0%A5%8B%E0%A4%97) /
+[चर्चा करना](https://github.js-utils.com/discussions)
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**अधिक जावास्क्रिप्ट उपयोगिताएँ**</a> /
 <a href="https://js-utils.com/discussions">चर्चा करना</a> /
 <a href="#-minifyjs">वापस शीर्ष पर ↑</a>

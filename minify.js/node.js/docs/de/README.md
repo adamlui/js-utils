@@ -262,6 +262,28 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
+## 🛠️ Verwandte Dienstprogramme
+
+### [</> minify.js (Gulp)](https://gulp.minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+
+> Gulp-Plug-in zur rekursiven Minimierung aller JavaScript-Dateien.
+<br>[Installieren](https://gulp.minify-js.org/#-installation) /
+[Liesmich](http://gulp.minify-js.org/#readme) /
+[Diskutieren](https://github.minify-js.org/discussions)
+
+### [{ } scss-to-css](https://js-utils.com/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+
+> Kompilieren Sie alle SCSS-Dateien rekursiv in minimiertes CSS.
+<br>[Installieren](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/de#-installation) /
+[Liesmich](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/de#readme) /
+[CLI-Nutzung](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/de#-verwendung-der-befehlszeile) /
+[API-Nutzung](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/de#-api-nutzung) /
+[Diskutieren](https://github.js-utils.com/discussions)
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**Weitere JavaScript-Dienstprogramme**</a> /
 <a href="https://js-utils.com/discussions">Diskutieren</a> /
 <a href="#-minifyjs">Zurück nach oben ↑</a>

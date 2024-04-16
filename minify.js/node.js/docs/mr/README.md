@@ -262,6 +262,28 @@ findJS() » Check returned array.
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
+## 🛠️ संबंधित उपयुक्तता
+
+### [</> minify.js (Gulp)](https://gulp.minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+
+> Gulp प्लग-इन सर्व JavaScript फायली आवर्तीपणे लहान करण्यासाठी.
+<br>[स्थापित करा](https://gulp.minify-js.org/#-installation) /
+[मला वाचा](http://gulp.minify-js.org/#readme) /
+[चर्चा करा](https://github.minify-js.org/discussions)
+
+### [{ } scss-to-css](https://js-utils.com/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+
+> सर्व SCSS फाईल्स संकुचित CSS मध्ये पुनरावृत्तीने संकलित करा.
+<br>[स्थापित करा](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/mr#-%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BE%E0%A4%AA%E0%A4%A8%E0%A4%BE) /
+[मला वाचा](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/mr#readme) /
+[CLI वापर](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/mr#-%E0%A4%95%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%A1-%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%A8-%E0%A4%B5%E0%A4%BE%E0%A4%AA%E0%A4%B0) /
+[API वापर](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/mr#-api-%E0%A4%B5%E0%A4%BE%E0%A4%AA%E0%A4%B0) /
+[चर्चा करा](https://github.js-utils.com/discussions)
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**अधिक JavaScript उपयुक्तता**</a> /
 <a href="https://js-utils.com/discussions">चर्चा करा</a> /
 <a href="#-minifyjs">परत वर जा ↑</a>

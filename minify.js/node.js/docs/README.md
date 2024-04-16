@@ -264,6 +264,28 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
+## 🛠️ Related utilities
+
+### [</> minify.js (Gulp)](https://gulp.minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+
+> Gulp plug-in to recursively minify all JavaScript files.
+<br>[Install](https://gulp.minify-js.org/#-installation) /
+[Readme](http://gulp.minify-js.org/#readme) /
+[Discuss](https://github.minify-js.org/discussions)
+
+### [{ } scss-to-css](https://js-utils.com/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+
+> Recursively compile all SCSS files into minified CSS.
+<br>[Install](https://docs.js-utils.com/scss-to-css/#-installation) /
+[Readme](https://docs.js-utils.com/scss-to-css/#readme) /
+[CLI usage](https://docs.js-utils.com/scss-to-css/#-command-line-usage) /
+[API usage](https://docs.js-utils.com/scss-to-css/#-api-usage) /
+[Discuss](https://github.js-utils.com/discussions)
+
+<br>
+
+<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**More JavaScript utilities**</a> /
 <a href="https://js-utils.com/discussions">Discuss</a> /
 <a href="#-minifyjs">Back to top ↑</a>
