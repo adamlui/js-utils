@@ -66,7 +66,7 @@ const pkgName = '@adamlui/geolocate',
         // Load IP arg(s) into [validIPs]
         const args = process.argv.slice(2), validIPs = [];
         for (const arg of args) if (!arg.startsWith('-')) {
-            const ip = arg.replace(/\[|\]/g, ''); // strip surrounding '[]' in case copied from docs
+            const ip = arg.replace(/[\[\]]/g, ''); // strip surrounding '[]' in case copied from docs
             validIPs.push(ip);
         }
 
