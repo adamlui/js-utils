@@ -41,8 +41,8 @@ async function geolocate(ips, options = {}) {
             else if (typeof require == 'function') // Node.js
                 response = await require('axios').get(`http://ip-api.com/json/${ip}`);
             else return console.error('geolocate() » ERROR: Environment not supported.');
-            const { status, org, as, query, ...filteredData } = await response.json(); // eslint-disable-line no-unused-vars
-            geoData.push(filteredData);
+            let { status, org, as, query, ...filteredData } = await response.json(); // eslint-disable-line no-unused-vars
+            filteredData = { ip, ...filteredData }; geoData.push(filteredData);
         }
         if (options.verbose && (typeof require == 'undefined' || !/cli(?:\.min)?\.js$/.test(require.main.filename)))
             console.info('geolocate() » Success! Check returned array.');
