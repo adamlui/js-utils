@@ -276,9 +276,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 > Recursively minify all JavaScript files.
 <br>[Install](https://node.minify-js.org/#-installation) /
-[Readme](http://minify-js.org/#readme) /
-[CLI usage](http://minify-js.org/README.md#-command-line-usage) /
-[API usage](http://minify-js.org/README.md#-api-usage) /
+[Readme](https://node.minify-js.org/#readme) /
+[CLI usage](https://node.minify-js.org/#-command-line-usage) /
+[API usage](https://node.minify-js.org/#-api-usage) /
 [Discuss](https://js-utils.com/discussions)
 
 <br>

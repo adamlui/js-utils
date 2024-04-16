@@ -273,9 +273,9 @@ IL SOFTWARE VIENE FORNITO "COSÌ COM'È", SENZA GARANZIA DI ALCUN TIPO, ESPLICIT
 
 > Minimizza ricorsivamente tutti i file JavaScript.
 <br>[Installare](https://node.minify-js.org/#-installation) /
-[Leggimi](http://minify-js.org/#readme) /
-[Utilizzo della CLI](http://minify-js.org/README.md#-command-line-usage) /
-[Utilizzo dell'API](http://minify-js.org/README.md#-api-usage) /
+[Leggimi](https://node.minify-js.org/#readme) /
+[Utilizzo della CLI](https://node.minify-js.org/#-command-line-usage) /
+[Utilizzo dell'API](https://node.minify-js.org/#-api-usage) /
 [Discutere](https://js-utils.com/discussions)
 
 <br>

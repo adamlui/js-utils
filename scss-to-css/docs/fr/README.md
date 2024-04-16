@@ -273,9 +273,9 @@ LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMP
 
 > Réduisez de manière récursive tous les fichiers JavaScript.
 <br>[Installer](https://node.minify-js.org/#-installation) /
-[Lisez-moi](http://minify-js.org/#readme) /
-[Utilisation de la CLI](http://minify-js.org/README.md#-command-line-usage) /
-[Utilisation de l'API](http://minify-js.org/README.md#-api-usage) /
+[Lisez-moi](https://node.minify-js.org/#readme) /
+[Utilisation de la CLI](https://node.minify-js.org/#-command-line-usage) /
+[Utilisation de l'API](https://node.minify-js.org/#-api-usage) /
 [Discuter](https://js-utils.com/discussions)
 
 <br>

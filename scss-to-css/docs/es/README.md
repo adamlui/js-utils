@@ -273,9 +273,9 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 
 > Minimice recursivamente todos los archivos JavaScript.
 <br>[Instalar](https://node.minify-js.org/#-installation) /
-[Léame](http://minify-js.org/#readme) /
-[Uso de CLI](http://minify-js.org/README.md#-command-line-usage) /
-[Uso de API](http://minify-js.org/README.md#-api-usage) /
+[Léame](https://node.minify-js.org/#readme) /
+[Uso de CLI](https://node.minify-js.org/#-command-line-usage) /
+[Uso de API](https://node.minify-js.org/#-api-usage) /
 [Conversar](https://js-utils.com/discussions)
 
 <br>
