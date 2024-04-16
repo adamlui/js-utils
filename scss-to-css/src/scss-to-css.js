@@ -166,12 +166,10 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     }
     for (const key in options) { // validate each key
         if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
-            console.error(
-                `${ logPrefix }ERROR: \`${key}\` is an invalid option.`);
+            console.error(`${ logPrefix }ERROR: \`${key}\` is an invalid option.`);
             printValidOptions(); printDocURL(); return false;
         } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
-            console.error(
-                `${ logPrefix }ERROR: [${key}] option can only be \`true\` or \`false\`.`);
+            console.error(`${ logPrefix }ERROR: [${key}] option can only be \`true\` or \`false\`.`);
             printDocURL(); return false;
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10);
