@@ -188,7 +188,7 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
             if (key == 'mangle') {
                 const printMangleErr = () => console.error(
                         `${ logPrefix }ERROR: [mangle] option can only be \`true\`, \`false\`,`
-                            + ' or an object w/ key [toplevel] set to \`true\` or \`false\`.');
+                            + ' or an object w/ key [toplevel] set to `true` or `false`.');
                 if (typeof options.mangle == 'object')
                     for (const mangleKey in options.mangle) {
                         if (!['toplevel'].includes(mangleKey) || typeof options.mangle[mangleKey] != 'boolean') {
