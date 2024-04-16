@@ -215,13 +215,13 @@ Name           | Type    | Description                          | Default Value
 #
 
 
-#### `ipv6.format(address[, options])`
+#### `ipv6.format(ipv6address[, options])`
 
 Formats an IPv6 address according to `options` passed, returning a string:
 
 ```js
-const address = '0d::ffff:192.1.56.10/96',
-      formattedAddress = ipv6.format(address, { leadingZeros: true, doubleColon: false });
+const ipv6address = '0d::ffff:192.1.56.10/96',
+      formattedAddress = ipv6.format(ipv6address, { leadingZeros: true, doubleColon: false });
 
 console.log(formattedAddress);
 

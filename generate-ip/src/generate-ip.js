@@ -141,9 +141,9 @@ const ipv6 = {
         return ipResult;
     },
 
-    format: function(address, options = {}) {
+    format: function(ipv6address, options = {}) {
 
-        const docURL = 'https://docs.js-utils.com/generate-ip/#ipv6formataddress-options',
+        const docURL = 'https://docs.js-utils.com/generate-ip/#ipv6formatipv6address-options',
               exampleCall = 'ipv6.format(\'0d::ffff:192.1.56.10/96\', '
                           + '{ leadingZeros: true, doubleColon: false })';
 
@@ -154,13 +154,13 @@ const ipv6 = {
         };
 
         // Validate address
-        if (typeof address != 'string') {
-            console.error('ipv6.format() » ERROR: 1st arg <address> must be a string.');
+        if (typeof ipv6address != 'string') {
+            console.error('ipv6.format() » ERROR: 1st arg <ipv6address> must be a string.');
             console.info('ipv6.format() » For more help, please visit ' + docURL);
             return;
         }
-        if (!this.validate(address, { verbose: false})) {
-            console.error(`ipv6.format() » ERROR:  ${address} is not a valid IPv6 address.`);
+        if (!this.validate(ipv6address, { verbose: false})) {
+            console.error(`ipv6.format() » ERROR:  ${ipv6address} is not a valid IPv6 address.`);
             console.info('ipv6.format() » For more help, please visit ' + docURL);
             return;
         }
@@ -170,7 +170,7 @@ const ipv6 = {
         options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
         // Init formattedAddress
-        let formattedAddress = address;
+        let formattedAddress = ipv6address;
 
         // Handle double colons
         if (options.doubleColon) { // replace zero series w/ '::'
@@ -197,12 +197,12 @@ const ipv6 = {
         } else { // strip leading zeros
             if (options.verbose) console.info(
                 'ipv6.format() » Stripping leading zeros...');
-            formattedAddress = address.replace(/(^|(?<=:))0+(?!:)/g, '$1');
+            formattedAddress = ipv6address.replace(/(^|(?<=:))0+(?!:)/g, '$1');
         }
 
         // Log/return final result
         if (options.verbose) {
-            if (formattedAddress != address) console.info(
+            if (formattedAddress != ipv6address) console.info(
                 'ipv6.format() » IP formatted successfully!');
             else console.info(
                 'ipv6.format() » IP already formatted to specs.');
