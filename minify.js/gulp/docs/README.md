@@ -26,13 +26,13 @@ For a quick start on using Gulp: https://gulpjs.com/docs/en/getting-started/quic
 As a **dev dependency**, from your project root:
 
 ```
-$ npm install -D @gulp-minify.js
+$ npm install -D gulp-minify.js
 ```
 
 As a **runtime dependency**, from your project root:
 
 ```
-$ npm install @gulp-minify.js
+$ npm install gulp-minify.js
 ```
 
 <br>
