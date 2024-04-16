@@ -302,7 +302,7 @@ $ generate-pw
 
 ## 🛠️ সম্পর্কিত ইউটিলিটি
 
-### <img height=21px src="https://i.imgur.com/kvf7fXm.png"> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > এলোমেলোভাবে IPv4/IPv6 ঠিকানাগুলি তৈরি করুন, বিন্যাস করুন এবং যাচাই করুন৷
 <br>[ইনস্টল করুন](https://docs.js-utils.com/generate-ip/#-installation) /
