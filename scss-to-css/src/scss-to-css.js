@@ -185,4 +185,7 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 }
 
 // EXPORT API functions
-module.exports = { compile, find: findSCSS, findSCSS };
+const funcAliases = { compile: ['minify'], findSCSS: ['find', 'findScss', 'findscss'] };
+module.exports = { compile, findSCSS };
+for (const func in funcAliases) // init/export aliases
+    funcAliases[func].forEach(alias => module.exports[alias] = module.exports[func]);
