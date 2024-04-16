@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 
-// © 2024 Adam Lui & contributors under the MIT license.
-// Source: https://code.js-utils.com/generate-ip
-// Documentation: https://docs.js-utils.com/generate-ip
-
 const pkgName = 'generate-ip',
       docURL = 'https://docs.js-utils.com/generate-ip/#-command-line-usage';
+
+// © 2024 Adam Lui & contributors under the MIT license.
+// Source: https://code.js-utils.com/generate-ip
 
 // Import LIBS
 const { ipv4 } = require(__dirname.match(/src/) ? './generate-ip' : './generate-ip.min'),

@@ -1,13 +1,12 @@
 #!/usr/bin/env node
 
+const pkgName = '@adamlui/geolocate',
+      docURL = 'https://docs.js-utils.com/geolocate/#-command-line-usage';
+
 // © 2024 Adam Lui under the MIT license.
 // Source: https://code.js-utils.com/geolocate
-// Documentation: https://docs.js-utils.com/geolocate
 
 (async () => {
-
-    const pkgName = '@adamlui/geolocate',
-          docURL = 'https://docs.js-utils.com/geolocate/#-command-line-usage';
 
     // Import LIBS
     const geo = require(__dirname.match(/src/) ? './geolocate' : './geolocate.min'),

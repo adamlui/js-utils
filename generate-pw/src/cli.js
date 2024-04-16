@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 
-// © 2024 Adam Lui & contributors under the MIT license.
-// Source: https://code.js-utils.com/generate-pw
-// Documentation: https://docs.js-utils.com/generate-pw
-
 const pkgName = 'generate-pw',
       docURL = 'https://docs.js-utils.com/generate-pw/#-command-line-usage';
+
+// © 2024 Adam Lui & contributors under the MIT license.
+// Source: https://code.js-utils.com/generate-pw
 
 // Import LIBS
 const { generatePassword } = require(__dirname.match(/src/) ? './generate-pw' : './generate-pw.min'),
