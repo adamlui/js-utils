@@ -53,13 +53,13 @@ Essential JavaScript libraries/utilities for Node.js and the web
 [API usage](../minify.js/node.js#-api-usage) /
 [Discuss](https://github.js-utils.com/discussions)
 
-### [{ } scss-to-css](../scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+### [{ } scss-to-css](../scss-to-css/node.js) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Recursively compile all SCSS files into minified CSS.
-<br>[Install](../scss-to-css#-installation) /
-[Readme](../scss-to-css#readme) /
-[CLI usage](../scss-to-css#-command-line-usage) /
-[API usage](../scss-to-css#-api-usage) /
+<br>[Install](../scss-to-css/node.js/#-installation) /
+[Readme](../scss-to-css/node.js/#readme) /
+[CLI usage](../scss-to-css/node.js/#-command-line-usage) /
+[API usage](../scss-to-css/node.js/#-api-usage) /
 [Discuss](https://github.js-utils.com/discussions)
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
