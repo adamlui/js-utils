@@ -68,7 +68,7 @@ $ scss-to-css
 
 নমুনা আউটপুট:
 
-<img src="https://github.com/adamlui/js-utils/blob/main/scss-to-css/media/images/sample-output.png">
+<img src="https://raw.githubusercontent.com/adamlui/scss-to-css/main/node.js/media/images/screenshots/cli-scss-to-css-docs.png">
 
 **💡 দ্রষ্টব্য:** উৎস মানচিত্রগুলিও ডিফল্টরূপে তৈরি করা হয় যদি না `-S` বা `--no-source-maps` পাস না হয়।
 

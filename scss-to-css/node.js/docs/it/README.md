@@ -68,7 +68,7 @@ $ scss-to-css
 
 Output di esempio:
 
-<img src="https://github.com/adamlui/js-utils/blob/main/scss-to-css/media/images/sample-output.png">
+<img src="https://raw.githubusercontent.com/adamlui/scss-to-css/main/node.js/media/images/screenshots/cli-scss-to-css-docs.png">
 
 **💡 Nota:** Anche le mappe sorgente vengono generate per impostazione predefinita a meno che non venga passato `-S` o `--no-source-maps`.
 

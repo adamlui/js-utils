@@ -68,7 +68,7 @@ $ scss-to-css
 
 サンプル出力:
 
-<img src="https://github.com/adamlui/js-utils/blob/main/scss-to-css/media/images/sample-output.png">
+<img src="https://raw.githubusercontent.com/adamlui/scss-to-css/main/node.js/media/images/screenshots/cli-scss-to-css-docs.png">
 
 **💡 注:** `-S` または `--no-source-maps` が渡されない限り、ソース マップもデフォルトで生成されます。
 

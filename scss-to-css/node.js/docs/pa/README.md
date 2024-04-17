@@ -68,7 +68,7 @@ $ scss-to-css
 
 ਨਮੂਨਾ ਆਉਟਪੁੱਟ:
 
-<img src="https://github.com/adamlui/js-utils/blob/main/scss-to-css/media/images/sample-output.png">
+<img src="https://raw.githubusercontent.com/adamlui/scss-to-css/main/node.js/media/images/screenshots/cli-scss-to-css-docs.png">
 
 **💡 ਨੋਟ:** ਸਰੋਤ ਨਕਸ਼ੇ ਵੀ ਮੂਲ ਰੂਪ ਵਿੱਚ ਤਿਆਰ ਕੀਤੇ ਜਾਂਦੇ ਹਨ ਜਦੋਂ ਤੱਕ `-S` ਜਾਂ `--no-source-maps` ਪਾਸ ਨਹੀਂ ਕੀਤੇ ਜਾਂਦੇ ਹਨ।
 

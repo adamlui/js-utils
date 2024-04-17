@@ -68,7 +68,7 @@ $ scss-to-css
 
 Beispielausgabe:
 
-<img src="https://github.com/adamlui/js-utils/blob/main/scss-to-css/media/images/sample-output.png">
+<img src="https://raw.githubusercontent.com/adamlui/scss-to-css/main/node.js/media/images/screenshots/cli-scss-to-css-docs.png">
 
 **💡 Hinweis:** Quellkarten werden ebenfalls standardmäßig generiert, es sei denn, `-S` oder `--no-source-maps` wird übergeben.
 
