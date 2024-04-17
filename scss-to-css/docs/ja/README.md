@@ -269,7 +269,7 @@ findSCSS() » Check returned array.
 <br>[ダウンロード](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
 [話し合う](https://github.js-utils.com/discussions)
 
-### [</> minify.js](https://minify-js.org)
+### [</> minify.js](https://minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > すべての JavaScript ファイルを再帰的に縮小します。
 <br>[インストール](https://node.minify-js.org/#-installation) /
