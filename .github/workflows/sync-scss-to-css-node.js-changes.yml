@@ -1,0 +1,82 @@
+name: Sync README.md between scss-to-css/node.js/ and scss-to-css/node.js/docs/, then scss-to-css/node.js/* to adamlui/scss-to-css/node.js/*
+
+on:
+  push:
+    branches: main
+    paths: scss-to-css/node.js/**
+
+jobs:
+  build:
+    if: (github.repository == 'adamlui/js-utils') && (github.event.commits[0].committer.username != 'kudo-sync-bot')
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout adamlui/js-utils
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/js-utils
+          path: adamlui/js-utils
+          fetch-depth: 2
+
+      - name: Checkout adamlui/scss-to-css
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/scss-to-css
+          path: adamlui/scss-to-css
+
+      - name: Sync README.md between scss-to-css/node.js/ and scss-to-css/node.js/docs
+        id: sync_readmes
+        run: |
+          cd ${{ github.workspace }}/adamlui/js-utils
+
+          # Init paths/content/mod timestamps
+          root_readme="./scss-to-css/node.js/README.md"
+          root_readme_content=$(git show HEAD:"$root_readme")
+          root_readme_modified=$(git log -1 --format="%ct" -- "$root_readme")
+          docs_readme="./scss-to-css/node.js/docs/README.md"
+          docs_readme_content=$(git show HEAD:"$docs_readme")
+          docs_readme_modified=$(git log -1 --format="%ct" -- "$docs_readme")
+
+          # Perform syncs of diff READMEs
+          if [[ "$root_readme_content" != "$docs_readme_content" ]] ; then
+            if [[ $root_readme_modified -gt $docs_readme_modified ]] ; then
+              cp -f "$root_readme" "$docs_readme"
+              echo "Copied $root_readme to $docs_readme"
+              src_folder="/scss-to-css/node.js"
+            elif [[ $docs_readme_modified -gt $root_readme_modified ]] ; then
+              cp -f "$docs_readme" "$root_readme"
+              echo "Copied $docs_readme to $root_readme"
+              src_folder="/scss-to-css/node.js/docs"
+            fi
+          fi
+
+          # Store sync src for commit msg in self-push step
+          echo "sync_src=$src_folder" >> $GITHUB_OUTPUT
+
+      - name: Sync scss-to-css/node.js/* to adamlui/scss-to-css/node.js/*
+        run: |
+          rsync -avhr --delete \
+            ${{ github.workspace }}/adamlui/js-utils/scss-to-css/node.js/ \
+            ${{ github.workspace }}/adamlui/scss-to-css/node.js/
+
+      - name: Push to adamlui/js-utils
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          push_options: --force
+          add_options: --all
+          commit_user_email: auto-sync@kudoai.com
+          commit_message: "${{ github.event.head_commit.message }} ↞ [auto-sync from `${{ steps.sync_readmes.outputs.sync_src }}`]"
+          file_pattern: "scss-to-css/node.js/**"
+          repository: adamlui/js-utils
+
+      - name: Push to adamlui/scss-to-css
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          push_options: --force
+          add_options: --all
+          commit_user_email: auto-sync@kudoai.com
+          commit_message: "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/js-utils`]"
+          file_pattern: "node.js/**"
+          repository: adamlui/scss-to-css
