@@ -6,19 +6,19 @@
                 <img height=14 src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/black/icon32.svg">
             </picture>
             &nbsp;English |
-            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-cn#readme">简体中文</a> |
-            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-tw#readme">繁體中文</a> |
-            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/ja#readme">日本語</a> |
-            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/hi#readme">हिंदी</a> |
-            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/bn#readme">বাংলা</a> |
-            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/mr#readme">मराठी</a> |
-            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/pa#readme">ਪੰਜਾਬੀ</a> |
-            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/de#readme">Deutsch</a> |
-            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/es#readme">Español</a> |
-            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/fr#readme">Français</a> |
-            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/it#readme">Italiano</a> |
-            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/nl#readme">Nederlands</a> |
-            <a href="https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/pt#readme">Português</a>
+            <a href="https://github.com/adamlui/scss-to-css/tree/main/node.js/docs/zh-cn#readme">简体中文</a> |
+            <a href="https://github.com/adamlui/scss-to-css/tree/main/node.js/docs/zh-tw#readme">繁體中文</a> |
+            <a href="https://github.com/adamlui/scss-to-css/tree/main/node.js/docs/ja#readme">日本語</a> |
+            <a href="https://github.com/adamlui/scss-to-css/tree/main/node.js/docs/hi#readme">हिंदी</a> |
+            <a href="https://github.com/adamlui/scss-to-css/tree/main/node.js/docs/bn#readme">বাংলা</a> |
+            <a href="https://github.com/adamlui/scss-to-css/tree/main/node.js/docs/mr#readme">मराठी</a> |
+            <a href="https://github.com/adamlui/scss-to-css/tree/main/node.js/docs/pa#readme">ਪੰਜਾਬੀ</a> |
+            <a href="https://github.com/adamlui/scss-to-css/tree/main/node.js/docs/de#readme">Deutsch</a> |
+            <a href="https://github.com/adamlui/scss-to-css/tree/main/node.js/docs/es#readme">Español</a> |
+            <a href="https://github.com/adamlui/scss-to-css/tree/main/node.js/docs/fr#readme">Français</a> |
+            <a href="https://github.com/adamlui/scss-to-css/tree/main/node.js/docs/it#readme">Italiano</a> |
+            <a href="https://github.com/adamlui/scss-to-css/tree/main/node.js/docs/nl#readme">Nederlands</a> |
+            <a href="https://github.com/adamlui/scss-to-css/tree/main/node.js/docs/pt#readme">Português</a>
         </h6>
     </td>
 </table>
@@ -31,7 +31,7 @@
 <a href="#%EF%B8%8F-mit-license"><img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-1.7.14"><img height=31 src="https://img.shields.io/badge/Latest_Build-1.7.14-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css?activeTab=code"><img height=31 src="https://img.shields.io/npm/unpacked-size/%40adamlui%2Fscss-to-css?style=for-the-badge&logo=ebox&logoColor=white&color=blue&labelColor=464646"></a>
-<a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_js-utils:scss-to-css/node.js/src/scss-to-css.js"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_js-utils%3Ascss-to-css%2Fnode.js%2Fsrc%2Fscss-to-css.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></a>
+<a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:node.js/src/scss-to-css.js"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_scss-to-css%3Anode.js%2Fsrc%2Fscss-to-css.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></a>
 <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=31 src="https://img.shields.io/badge/Mentioned_in-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
