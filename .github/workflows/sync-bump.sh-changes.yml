@@ -2,8 +2,8 @@ name: Sync changes between **/bump.sh
 
 on:
   push:
-    branches: main
-    paths: "**/bump.sh"
+    branches: [main]
+    paths: ["**/bump.sh"]
 
 jobs:
   build:

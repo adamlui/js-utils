@@ -2,8 +2,8 @@ name: Sync README.md between scss-to-css/node.js/ and scss-to-css/node.js/docs/,
 
 on:
   push:
-    branches: main
-    paths: scss-to-css/node.js/**
+    branches: [main]
+    paths: [scss-to-css/node.js/**]
 
 jobs:
   build:

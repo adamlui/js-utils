@@ -2,8 +2,8 @@ name: Sync README.md between minify.js/node.js/ and minify.js/node.js/docs/, the
 
 on:
   push:
-    branches: main
-    paths: minify.js/node.js/**
+    branches: [main]
+    paths: [minify.js/node.js/**]
 
 jobs:
   build:

@@ -2,8 +2,8 @@ name: Sync README.md between <pkg>/ and <pkg>/docs
 
 on:
   push:
-    branches: main
-    paths: "**/README.md"
+    branches: [main]
+    paths: ["**/README.md"]
 
 jobs:
   build:

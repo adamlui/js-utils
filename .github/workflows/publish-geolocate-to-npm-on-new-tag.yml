@@ -2,7 +2,7 @@ name: Publish geolocate to npm on new tag
 
 on:
   push:
-    tags: geolocate*
+    tags: [geolocate*]
 
 jobs:
   build:

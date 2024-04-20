@@ -2,8 +2,8 @@ name: Sync README.md between minify.js/gulp/ and minify.js/gulp/docs/, then mini
 
 on:
   push:
-    branches: main
-    paths: minify.js/gulp/**
+    branches: [main]
+    paths: [minify.js/gulp/**]
 
 jobs:
   build:

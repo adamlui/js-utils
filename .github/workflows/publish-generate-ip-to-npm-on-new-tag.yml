@@ -2,7 +2,7 @@ name: Publish generate-ip to npm on new tag
 
 on:
   push:
-    tags: generate-ip*
+    tags: [generate-ip*]
 
 jobs:
   build:

@@ -2,7 +2,7 @@ name: Publish generate-pw to npm on new tag
 
 on:
   push:
-    tags: generate-pw*
+    tags: [generate-pw*]
 
 jobs:
   build:
