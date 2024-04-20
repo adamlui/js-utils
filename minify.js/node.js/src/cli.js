@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-const pkgName = '@adamlui/minify.js',
-      docURL = 'https://docs.minify-js.org/#-command-line-usage';
-
 // © 2024 Adam Lui & contributors under the MIT license.
 // Source: https://code.minify-js.org/node.js
+
+const pkgName = '@adamlui/minify.js',
+      docURL = 'https://docs.minify-js.org/#-command-line-usage';
 
 // Import LIBS
 const minifyJS = require(__dirname.match(/src/) ? './minify' : './minify.min'),

@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-const pkgName = '@adamlui/geolocate',
-      docURL = 'https://docs.js-utils.com/geolocate/#-command-line-usage';
-
 // © 2024 Adam Lui under the MIT license.
 // Source: https://code.js-utils.com/geolocate
+
+const pkgName = '@adamlui/geolocate',
+      docURL = 'https://docs.js-utils.com/geolocate/#-command-line-usage';
 
 (async () => {
 
