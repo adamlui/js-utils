@@ -238,12 +238,12 @@ findJS() » Check returned array.
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:
 
-Nombre       | Tipo     | Descripción                                                                   | Valor por defecto
--------------|----------|-------------------------------------------------------------------------------|-------------------
-`recursive`  | Booleano | Busque recursivamente archivos anidados si se pasa la ruta del directorio.    | `true`
-`verbose`    | Booleano | Mostrar registros en la consola/terminal.                                     | `true`
-`dotFolders` | Booleano | Incluya carpetas de puntos en la búsqueda de archivos.                        | `false`
-`dotFiles`   | Booleano | Incluya archivos de puntos en la búsqueda de archivos.                        | `false`
+Nombre       | Tipo     | Descripción                                                      | Valor por defecto
+-------------|----------|------------------------------------------------------------------|-------------------
+`recursive`  | Booleano | Se pasó la búsqueda recursiva de archivos anidados en searchDir. | `true`
+`verbose`    | Booleano | Mostrar registros en la consola/terminal.                        | `true`
+`dotFolders` | Booleano | Incluya carpetas de puntos en la búsqueda de archivos.           | `false`
+`dotFiles`   | Booleano | Incluya archivos de puntos en la búsqueda de archivos.           | `false`
 
 <br>
 
