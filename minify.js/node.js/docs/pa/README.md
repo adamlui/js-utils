@@ -271,7 +271,7 @@ findJS() » Check returned array.
 [ਪੜ੍ਹੋ](http://gulp.minify-js.org/#readme) /
 [ਚਰਚਾ ਕਰੋ](https://github.minify-js.org/discussions)
 
-### [{ } scss-to-css](https://js-utils.com/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > ਸਾਰੀਆਂ SCSS ਫਾਈਲਾਂ ਨੂੰ ਬਾਰ ਬਾਰ ਮਿਨੀਫਾਈਡ CSS ਵਿੱਚ ਕੰਪਾਇਲ ਕਰੋ।
 <br>[ਇੰਸਟਾਲ ਕਰੋ](https://github.com/adamlui/scss-to-css/#-installation) /
