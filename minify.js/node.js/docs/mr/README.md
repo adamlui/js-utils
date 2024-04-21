@@ -279,7 +279,7 @@ findJS() » Check returned array.
 [मला वाचा](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/mr#readme) /
 [CLI वापर](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/mr#-%E0%A4%95%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%A1-%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%A8-%E0%A4%B5%E0%A4%BE%E0%A4%AA%E0%A4%B0) /
 [API वापर](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/mr#-api-%E0%A4%B5%E0%A4%BE%E0%A4%AA%E0%A4%B0) /
-[चर्चा करा](https://github.js-utils.com/discussions)
+[चर्चा करा](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>
 

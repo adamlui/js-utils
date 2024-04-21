@@ -281,7 +281,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [Readme](https://docs.js-utils.com/scss-to-css/#readme) /
 [CLI usage](https://docs.js-utils.com/scss-to-css/#-command-line-usage) /
 [API usage](https://docs.js-utils.com/scss-to-css/#-api-usage) /
-[Discuss](https://github.js-utils.com/discussions)
+[Discuss](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>
 

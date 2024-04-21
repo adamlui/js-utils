@@ -279,7 +279,7 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 [Liesmich](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/de#readme) /
 [CLI-Nutzung](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/de#-verwendung-der-befehlszeile) /
 [API-Nutzung](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/de#-api-nutzung) /
-[Diskutieren](https://github.js-utils.com/discussions)
+[Diskutieren](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>
 

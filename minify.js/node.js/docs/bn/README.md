@@ -281,7 +281,7 @@ findJS() » Check returned array.
 [রিডমি](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/bn#readme) /
 [CLI ব্যবহার](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/bn#-%E0%A6%95%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A1-%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%A8-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B9%E0%A6%BE%E0%A6%B0) /
 [API ব্যবহার](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/bn#-api-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B9%E0%A6%BE%E0%A6%B0) /
-[আলোচনা করা](https://github.js-utils.com/discussions)
+[আলোচনা করা](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>
 

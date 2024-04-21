@@ -279,7 +279,7 @@ findJS() » Check returned array.
 [自述文件](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-tw#readme) /
 [CLI 使用](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-tw#-%E5%91%BD%E4%BB%A4%E5%88%97%E4%BD%BF%E7%94%A8) /
 [API 使用](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-tw#-api-%E4%BD%BF%E7%94%A8) /
-[討論](https://github.js-utils.com/discussions)
+[討論](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>
 
