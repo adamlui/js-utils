@@ -101,7 +101,7 @@ else if (process.argv.some(arg => argRegex.version.test(arg))) {
         }).filter(data => !data.error ); // filter out failed compilations
 
         // Write array data to files
-        compileData?.forEach(({ code, srcMap, srcPath }) => {                
+        compileData?.forEach(({ code, srcMap, srcPath }) => {
             const outputDir = path.join(
                 path.dirname(srcPath), // path of file to be minified
                 /(?:src|s[ac]ss)$/.test(path.dirname(srcPath)) ? (
