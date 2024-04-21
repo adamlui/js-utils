@@ -238,12 +238,12 @@ findJS() » Check returned array.
 
 Verfügbare Parameter (und ihre Standardeinstellungen) sind:
 
-Name         | Beschreibung                                                                           | Standardwert
--------------|----------------------------------------------------------------------------------------|--------------
-`recursive`  | Rekursive Suche nach verschachtelten Dateien im übergebenen suchverzeichnis.           | `true`
-`verbose`    | Anmeldung in Konsole/Terminal anzeigen.                                                | `true`
-`dotFolders` | Beziehen Sie Punktordner in die Dateisuche ein.                                        | `false`
-`dotFiles`   | Beziehen Sie Punktdateien in die Dateisuche ein.                                       | `false`
+Name         | Typ             | Beschreibung                                                           | Standardwert
+-------------|-----------------|------------------------------------------------------------------------|--------------
+`recursive`  | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien im übergebenen searchDir. | `true`
+`verbose`    | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                | `true`
+`dotFolders` | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                        | `false`
+`dotFiles`   | Boolescher Wert | Beziehen Sie Punktdateien in die Dateisuche ein.                       | `false`
 
 <br>
 
