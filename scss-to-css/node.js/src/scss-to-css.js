@@ -108,7 +108,10 @@ function compile(inputPath, options = {}) {
                     console.info('compile() » Compilation complete. Check returned object.');
                 return { code: compileResult.css, srcMap: compileResult.sourceMap,
                          srcPath: path.resolve(process.cwd(), inputPath), error: undefined };
-            } catch (err) { console.error(`\ncompile() » ERROR: ${err.message}\n`); return { error: err }; }
+            } catch (err) {
+                console.error(`\ncompile() » ERROR: ${err.message}\n`);
+                return { code: undefined, srcMap: undefined, srcPath: undefined, error: err };
+            }
         } else { // dir path passed
             const compileResult = findSCSS(inputPath, { recursive: options.recursive, verbose: options.verbose,
                                                         dotFolders: options.dotFolders
@@ -118,7 +121,10 @@ function compile(inputPath, options = {}) {
                         const compileResult = sass.compile(scssPath, compileOptions);
                         return { code: compileResult.css, srcMap: compileResult.sourceMap,
                                  srcPath: scssPath, error: undefined };
-                    } catch (err) { console.error(`\ncompile() » ERROR: ${err.message}\n`); return { error: err }; }
+                    } catch (err) {
+                        console.error(`\ncompile() » ERROR: ${err.message}\n`);
+                        return { code: undefined, srcMap: undefined, srcPath: undefined, error: err };
+                    }
                 }).filter(data => !data.error ); // filter out failed compilations
             if (options.verbose) { 
                 if (compileResult.length > 0) console.info(
