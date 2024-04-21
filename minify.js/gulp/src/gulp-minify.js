@@ -43,7 +43,7 @@ function minify(input, output, options = {}) {
     // Find all eligible JavaScript files or arg-passed file
     const { mangle, comment, ...findJSoptions } = options; // eslint-disable-line no-unused-vars
     const unminnedJSfiles = input.endsWith('.js') ? [inputPath]
-        : minifyJS.findJS(inputPath, findJSoptions);
+        : minifyJS.findJS(inputPath, { ...findJSoptions, verbose: false });
 
     // Build array of minification data
     const minifyData = unminnedJSfiles
