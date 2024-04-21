@@ -219,7 +219,7 @@ minifyJS.minify(input, { dotFiles: true });
 选项是布尔值，作为对象属性传递。 例如：
 
 ```js
-// 在 assets/js 中搜索未缩小的 JavaScript 文件：
+// 在 assets/js 中搜索未缩小的 JavaScript 文件
 const searchResults = minifyJS.findJS('assets/js', { recursive: false });
 console.log(searchResults);
 

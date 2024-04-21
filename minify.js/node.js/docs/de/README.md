@@ -219,7 +219,7 @@ Sucht nach allen nicht minimierten JavaScript-Dateien innerhalb der übergebenen
 Optionen sind boolesche Werte und werden als Objekteigenschaften übergeben. Zum Beispiel:
 
 ```js
-// Suche nach nicht minimierten JS-Dateien genau in assets/js:
+// Suche nach nicht minimierten JS-Dateien genau in assets/js
 const suchergEbnisse = minifyJS.findJS('assets/js', { recursive: false });
 console.log(suchergEbnisse);
 

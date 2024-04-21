@@ -221,7 +221,7 @@ minifyJS.minify(input, { dotFiles: true });
 বিকল্পগুলি হল বুলিয়ান, অবজেক্টের বৈশিষ্ট্য হিসাবে পাস করা হয়েছে৷ উদাহরণ স্বরূপ:
 
 ```js
-// অবিন্যস্ত জাভাস্ক্রিপ্ট ফাইলের জন্য ঠিক assets/js-এ অনুসন্ধান করুন:
+// অবিন্যস্ত জাভাস্ক্রিপ্ট ফাইলের জন্য ঠিক assets/js-এ অনুসন্ধান করুন
 const searchResults = minifyJS.findJS('assets/js', { recursive: false });
 console.log(searchResults);
 

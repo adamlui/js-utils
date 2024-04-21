@@ -219,7 +219,7 @@ minifyJS.minify(input, { dotFiles: true });
 選項是布林值，作為物件屬性傳遞。 例如：
 
 ```js
-// 在 assets/js 中搜尋未縮小的 JavaScript 檔案：
+// 在 assets/js 中搜尋未縮小的 JavaScript 檔案
 const searchResults = minifyJS.findJS('assets/js', { recursive: false });
 console.log(searchResults);
 

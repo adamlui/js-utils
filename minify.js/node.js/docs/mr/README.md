@@ -219,7 +219,7 @@ minifyJS.minify(input, { dotFiles: true });
 पर्याय बुलियन आहेत, ऑब्जेक्ट गुणधर्म म्हणून पास केले जातात. उदाहरणार्थ:
 
 ```js
-// नेमक्या `मालमत्ता/js` मध्ये अनमिनिफाइड JavaScript फायली शोधा:
+// नेमक्या `मालमत्ता/js` मध्ये अनमिनिफाइड JavaScript फायली शोधा
 const searchResults = minifyJS.findJS('assets/js', { recursive: false });
 console.log(searchResults);
 

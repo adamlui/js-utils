@@ -221,7 +221,7 @@ minifyJS.minify(input, { dotFiles: true });
 विकल्प बूलियन हैं, ऑब्जेक्ट गुणों के रूप में पारित किए गए हैं। उदाहरण के लिए:
 
 ```js
-// बिल्कुल assets/js में असंबद्ध जावास्क्रिप्ट फ़ाइलों की खोज करें:
+// बिल्कुल assets/js में असंबद्ध जावास्क्रिप्ट फ़ाइलों की खोज करें
 const searchResults = minifyJS.findJS('assets/js', { recursive: false });
 console.log(searchResults);
 

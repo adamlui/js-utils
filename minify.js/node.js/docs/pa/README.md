@@ -218,7 +218,7 @@ minifyJS.minify(input, { dotFiles: true });
 ਵਿਕਲਪ ਬੂਲੀਅਨ ਹਨ, ਆਬਜੈਕਟ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਵਜੋਂ ਪਾਸ ਕੀਤੇ ਗਏ ਹਨ। ਉਦਾਹਰਣ ਲਈ:
 
 ```js
-// ਬਿਲਕੁਲ assets/js ਵਿੱਚ ਅਣਮਿੱਥੇ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਫਾਈਲਾਂ ਦੀ ਖੋਜ ਕਰੋ:
+// ਬਿਲਕੁਲ assets/js ਵਿੱਚ ਅਣਮਿੱਥੇ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਫਾਈਲਾਂ ਦੀ ਖੋਜ ਕਰੋ
 const searchResults = minifyJS.findJS('assets/js', { recursive: false });
 console.log(searchResults);
 

@@ -221,7 +221,7 @@ Searches for all unminified JavaScript files within the `searchDir` string passe
 Options are boolean, passed as object properties. For example:
 
 ```js
-// Search for unminified JS files in exactly assets/js:
+// Search for unminified JS files in exactly assets/js
 const searchResults = minifyJS.findJS('assets/js', { recursive: false });
 console.log(searchResults);
 
