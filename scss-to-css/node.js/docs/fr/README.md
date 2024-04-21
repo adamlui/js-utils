@@ -202,7 +202,7 @@ scssToCSS.compile(cheminEntrée, { minify: false });
 
 Les paramètres disponibles (et leurs paramètres par défaut) sont:
 
-Nom          | Desciption                                                                               | Valeur par défaut
+Nom          | Description                                                                              | Valeur par défaut
 -------------|------------------------------------------------------------------------------------------|-------------------
 `recursive`  | Rechercher récursivement les fichiers imbriqués si le chemin du répertoire est transmis. | `true`
 `verbose`    | Afficher la connexion dans la console/terminal.                                          | `true`
@@ -237,7 +237,7 @@ findSCSS() » Check returned array.
 
 Les paramètres disponibles (et leurs paramètres par défaut) sont:
 
-Nom          | Desciption                                                             | Valeur par défaut
+Nom          | Description                                                            | Valeur par défaut
 -------------|------------------------------------------------------------------------|-------------------
 `recursive`  | Recherche récursive des fichiers imbriqués dans repRecherche transmis. | `true`
 `verbose`    | Afficher la connexion dans la console/terminal.                        | `true`
