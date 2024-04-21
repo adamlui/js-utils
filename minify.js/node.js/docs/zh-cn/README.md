@@ -275,10 +275,10 @@ findJS() » Check returned array.
 ### [{ } scss-to-css](https://js-utils.com/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > 将所有 SCSS 文件递归编译为缩小的 CSS。
-<br>[安装](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-cn#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85) /
-[自述文件](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-cn#readme) /
-[CLI 用法](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-cn#-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%BD%BF%E7%94%A8) /
-[API 用法](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-cn#-api-%E4%BD%BF%E7%94%A8) /
+<br>[安装](https://github.com/adamlui/scss-to-css/#-installation) /
+[自述文件](https://github.com/adamlui/scss-to-css/#readme) /
+[CLI 用法](https://github.com/adamlui/scss-to-css/#-command-line-usage) /
+[API 用法](https://github.com/adamlui/scss-to-css/#-api-usage) /
 [讨论](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>

@@ -274,10 +274,10 @@ findJS() » Check returned array.
 ### [{ } scss-to-css](https://js-utils.com/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > ਸਾਰੀਆਂ SCSS ਫਾਈਲਾਂ ਨੂੰ ਬਾਰ ਬਾਰ ਮਿਨੀਫਾਈਡ CSS ਵਿੱਚ ਕੰਪਾਇਲ ਕਰੋ।
-<br>[ਇੰਸਟਾਲ ਕਰੋ](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/pa#-%E0%A8%87%E0%A9%B0%E0%A8%B8%E0%A8%9F%E0%A8%BE%E0%A8%B2%E0%A9%87%E0%A8%B8%E0%A8%BC%E0%A8%A8) /
-[ਪੜ੍ਹੋ](https://github.com/adamlui/js-utils/blob/main/scss-to-css/docs/pa#readme) /
-[CLI ਦੀ ਵਰਤੋਂ](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/pa#-%E0%A8%95%E0%A8%AE%E0%A8%BE%E0%A8%82%E0%A8%A1-%E0%A8%B2%E0%A8%BE%E0%A8%88%E0%A8%A8-%E0%A8%A6%E0%A9%80-%E0%A8%B5%E0%A8%B0%E0%A8%A4%E0%A9%8B%E0%A8%82) /
-[API ਦੀ ਵਰਤੋਂ](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/pa#-api-%E0%A8%B5%E0%A8%B0%E0%A8%A4%E0%A9%8B%E0%A8%82) /
+<br>[ਇੰਸਟਾਲ ਕਰੋ](https://github.com/adamlui/scss-to-css/#-installation) /
+[ਪੜ੍ਹੋ](https://github.com/adamlui/scss-to-css/#readme) /
+[CLI ਦੀ ਵਰਤੋਂ](https://github.com/adamlui/scss-to-css/#-cli-usage) /
+[API ਦੀ ਵਰਤੋਂ](https://github.com/adamlui/scss-to-css/#-api-usage) /
 [ਚਰਚਾ ਕਰੋ](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>
