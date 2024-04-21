@@ -219,7 +219,7 @@ Recherche tous les fichiers SCSS dans la chaîne `repRecherche` passée (utile p
 Les options sont booléennes, transmises en tant que propriétés d'objet. Par exemple:
 
 ```js
-// Recherche des fichiers SCSS exactement dans assets/scss:
+// Recherche des fichiers SCSS exactement dans assets/scss
 const resultatsRecherche = scssToCSS.findSCSS('assets/scss', { recursive: false });
 console.log(resultatsRecherche);
 

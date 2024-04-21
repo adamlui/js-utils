@@ -219,7 +219,7 @@ Zoekt naar alle SCSS-bestanden binnen de doorgegeven tekenreeks `zoekMap` (handi
 Opties zijn Booleaans en worden doorgegeven als objecteigenschappen. Bijvoorbeeld:
 
 ```js
-// Zoek naar SCSS-bestanden in precies assets/scss:
+// Zoek naar SCSS-bestanden in precies assets/scss
 const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
 console.log(searchResults);
 

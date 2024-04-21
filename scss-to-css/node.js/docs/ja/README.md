@@ -219,7 +219,7 @@ scssToCSS.compile(inputPath, { minify: false });
 オプションはブール値であり、オブジェクトのプロパティとして渡されます。 例えば：
 
 ```js
-// 正確に assets/scss で SCSS ファイルを検索します:
+// 正確に assets/scss で SCSS ファイルを検索します
 const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
 console.log(searchResults);
 

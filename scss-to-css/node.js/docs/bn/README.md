@@ -219,7 +219,7 @@ scssToCSS.compile(inputPath, { minify: false });
 বিকল্পগুলি হল বুলিয়ান, অবজেক্টের বৈশিষ্ট্য হিসাবে পাস করা হয়েছে। উদাহরণ স্বরূপ:
 
 ```js
-// ঠিক assets/scss-এ SCSS ফাইল অনুসন্ধান করুন:
+// ঠিক assets/scss-এ SCSS ফাইল অনুসন্ধান করুন
 const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
 console.log(searchResults);
 

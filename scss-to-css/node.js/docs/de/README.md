@@ -219,7 +219,7 @@ Sucht nach allen SCSS-Dateien innerhalb der übergebenen Zeichenfolge `suchverze
 Optionen sind boolesche Werte und werden als Objekteigenschaften übergeben. Zum Beispiel:
 
 ```js
-// Suche nach SCSS-Dateien genau in assets/scss:
+// Suche nach SCSS-Dateien genau in assets/scss
 const suchergEbnisse = scssToCSS.findSCSS('assets/scss', { recursive: false });
 console.log(suchergEbnisse);
 

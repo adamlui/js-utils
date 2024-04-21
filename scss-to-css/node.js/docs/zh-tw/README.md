@@ -219,7 +219,7 @@ scssToCSS.compile(inputPath, { minify: false });
 選項是布林值，作為物件屬性傳遞。 例如：
 
 ```js
-// 在 assets/scss 中搜尋 SCSS 檔案：
+// 在 assets/scss 中搜尋 SCSS 檔案
 const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
 console.log(searchResults);
 

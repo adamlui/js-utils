@@ -222,7 +222,7 @@ Searches for all SCSS files within the `searchDir` string passed (useful for dis
 Options are boolean, passed as object properties. For example:
 
 ```js
-// Search for SCSS files in exactly assets/scss:
+// Search for SCSS files in exactly assets/scss
 const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
 console.log(searchResults);
 

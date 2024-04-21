@@ -219,7 +219,7 @@ Busca todos los archivos SCSS dentro de la cadena `dirBúsqueda` pasada (útil p
 Las opciones son booleanas y se pasan como propiedades del objeto. Por ejemplo:
 
 ```js
-// Busca archivos SCSS exactamente en assets/scss:
+// Busca archivos SCSS exactamente en assets/scss
 const resultadosBúsqueda = scssToCSS.findSCSS('assets/scss', { recursive: false });
 console.log(resultadosBúsqueda);
 

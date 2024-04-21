@@ -219,7 +219,7 @@ scssToCSS.compile(inputPath, { minify: false });
 पर्याय बुलियन आहेत, ऑब्जेक्ट गुणधर्म म्हणून पास केले जातात. उदाहरणार्थ:
 
 ```js
-// SCSS फाईल्स नक्की assets/scss मध्ये शोधा:
+// SCSS फाईल्स नक्की assets/scss मध्ये शोधा
 const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
 console.log(searchResults);
 
