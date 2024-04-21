@@ -268,7 +268,7 @@ findJS() » Check returned array.
 
 > Gulp ਪਲੱਗ-ਇਨ ਸਾਰੀਆਂ JavaScript ਫਾਈਲਾਂ ਨੂੰ ਮੁੜ ਤੋਂ ਘੱਟ ਕਰਨ ਲਈ।
 <br>[ਇੰਸਟਾਲ ਕਰੋ](https://gulp.minify-js.org/#-installation) /
-[ਪੜ੍ਹੋ](http://gulp.minify-js.org/#readme) /
+[ਪੜ੍ਹੋ](https://gulp.minify-js.org/#readme) /
 [ਚਰਚਾ ਕਰੋ](https://github.minify-js.org/discussions)
 
 ### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>

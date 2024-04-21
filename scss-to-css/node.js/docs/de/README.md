@@ -272,10 +272,10 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 ### [</> minify.js](https://minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Alle JavaScript-Dateien rekursiv verkleinern.
-<br>[Installieren](http://minify-js.org/docs/de#-installation) /
-[CLI-Nutzung](http://minify-js.org/docs/de#-verwendung-der-befehlszeile) /
-[API-Nutzung](http://minify-js.org/docs/de#-api-nutzung) /
-[Liesmich](http://minify-js.org/docs/de#readme) /
+<br>[Installieren](https://minify-js.org/docs/de#-installation) /
+[CLI-Nutzung](https://minify-js.org/docs/de#-verwendung-der-befehlszeile) /
+[API-Nutzung](https://minify-js.org/docs/de#-api-nutzung) /
+[Liesmich](https://minify-js.org/docs/de#readme) /
 [Diskutieren](https://github.js-utils.com/discussions)
 
 <br>

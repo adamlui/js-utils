@@ -271,7 +271,7 @@ findJS() » Check returned array.
 
 > সমস্ত জাভাস্ক্রিপ্ট ফাইলকে পুনরাবৃত্তভাবে ছোট করতে Gulp প্লাগ-ইন করুন।
 <br>[ইনস্টল করুন](https://gulp.minify-js.org/#-installation) /
-[রিডমি](http://gulp.minify-js.org/#readme) /
+[রিডমি](https://gulp.minify-js.org/#readme) /
 [আলোচনা করা](https://github.minify-js.org/discussions)
 
 ### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>

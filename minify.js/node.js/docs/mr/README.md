@@ -269,7 +269,7 @@ findJS() » Check returned array.
 
 > Gulp प्लग-इन सर्व JavaScript फायली आवर्तीपणे लहान करण्यासाठी.
 <br>[स्थापित करा](https://gulp.minify-js.org/#-installation) /
-[मला वाचा](http://gulp.minify-js.org/#readme) /
+[मला वाचा](https://gulp.minify-js.org/#readme) /
 [चर्चा करा](https://github.minify-js.org/discussions)
 
 ### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>

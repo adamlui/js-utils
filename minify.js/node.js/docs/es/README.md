@@ -269,7 +269,7 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 
 > Complemento Gulp para minimizar recursivamente todos los archivos JavaScript.
 <br>[Instalar](https://gulp.minify-js.org/#-installation) /
-[Léame](http://gulp.minify-js.org/#readme) /
+[Léame](https://gulp.minify-js.org/#readme) /
 [Conversar](https://github.minify-js.org/discussions)
 
 ### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>

@@ -269,7 +269,7 @@ findJS() » Check returned array.
 
 > Gulp 外掛程式可遞歸地縮小所有 JavaScript 檔案。
 <br>[安裝](https://gulp.minify-js.org/#-installation) /
-[自述文件](http://gulp.minify-js.org/#readme) /
+[自述文件](https://gulp.minify-js.org/#readme) /
 [討論](https://github.minify-js.org/discussions)
 
 ### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>

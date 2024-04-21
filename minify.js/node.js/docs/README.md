@@ -5,14 +5,14 @@
             <img height=14 src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/black/icon32.svg">
         </picture>
         &nbsp;English |
-        <a href="http://github.minify-js.org/tree/main/node.js/docs/zh-cn/#readme">简体中文</a> |
-        <a href="http://github.minify-js.org/tree/main/node.js/docs/zh-tw/#readme">繁體中文</a> |
-        <a href="http://github.minify-js.org/tree/main/node.js/docs/hi/#readme">हिंदी</a> |
-        <a href="http://github.minify-js.org/tree/main/node.js/docs/bn/#readme">বাংলা</a> |
-        <a href="http://github.minify-js.org/tree/main/node.js/docs/mr/#readme">मराठी</a> |
-        <a href="http://github.minify-js.org/tree/main/node.js/docs/pa/#readme">ਪੰਜਾਬੀ</a> |
-        <a href="http://github.minify-js.org/tree/main/node.js/docs/de/#readme">Deutsch</a> |
-        <a href="http://github.minify-js.org/tree/main/node.js/docs/es/#readme">Español</a>
+        <a href="https://github.minify-js.org/tree/main/node.js/docs/zh-cn/#readme">简体中文</a> |
+        <a href="https://github.minify-js.org/tree/main/node.js/docs/zh-tw/#readme">繁體中文</a> |
+        <a href="https://github.minify-js.org/tree/main/node.js/docs/hi/#readme">हिंदी</a> |
+        <a href="https://github.minify-js.org/tree/main/node.js/docs/bn/#readme">বাংলা</a> |
+        <a href="https://github.minify-js.org/tree/main/node.js/docs/mr/#readme">मराठी</a> |
+        <a href="https://github.minify-js.org/tree/main/node.js/docs/pa/#readme">ਪੰਜਾਬੀ</a> |
+        <a href="https://github.minify-js.org/tree/main/node.js/docs/de/#readme">Deutsch</a> |
+        <a href="https://github.minify-js.org/tree/main/node.js/docs/es/#readme">Español</a>
     </h6>
 </div>
 
@@ -271,7 +271,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 > Gulp plug-in to recursively minify all JavaScript files.
 <br>[Install](https://gulp.minify-js.org/#-installation) /
-[Readme](http://gulp.minify-js.org/#readme) /
+[Readme](https://gulp.minify-js.org/#readme) /
 [Discuss](https://github.minify-js.org/discussions)
 
 ### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>

@@ -272,10 +272,10 @@ findSCSS() » Check returned array.
 ### [</> minify.js](https://minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > सर्व JavaScript फायली आवर्तीपणे लहान करा.
-<br>[स्थापित करा](http://minify-js.org/docs/mr#-%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BE%E0%A4%AA%E0%A4%A8%E0%A4%BE) /
-[मला वाचा](http://minify-js.org/docs/mr#readme) /
-[CLI वापर](http://minify-js.org/docs/mr#-%E0%A4%95%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%A1-%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%A8-%E0%A4%B5%E0%A4%BE%E0%A4%AA%E0%A4%B0) /
-[API वापर](http://minify-js.org/docs/mr#-api-%E0%A4%B5%E0%A4%BE%E0%A4%AA%E0%A4%B0) /
+<br>[स्थापित करा](https://minify-js.org/docs/mr#-%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BE%E0%A4%AA%E0%A4%A8%E0%A4%BE) /
+[मला वाचा](https://minify-js.org/docs/mr#readme) /
+[CLI वापर](https://minify-js.org/docs/mr#-%E0%A4%95%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%A1-%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%A8-%E0%A4%B5%E0%A4%BE%E0%A4%AA%E0%A4%B0) /
+[API वापर](https://minify-js.org/docs/mr#-api-%E0%A4%B5%E0%A4%BE%E0%A4%AA%E0%A4%B0) /
 [चर्चा करा](https://github.js-utils.com/discussions)
 
 <br>

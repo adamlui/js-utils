@@ -272,10 +272,10 @@ findSCSS() » Check returned array.
 ### [</> minify.js](https://minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > 递归地缩小所有 JavaScript 文件。
-<br>[安装](http://minify-js.org/docs/zh-cn#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85) /
-[自述文件](http://minify-js.org/docs/zh-cn#readme) /
-[CLI 用法](http://minify-js.org/docs/zh-cn#-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%BD%BF%E7%94%A8) /
-[API 使用](http://minify-js.org/docs/zh-cn#-api-%E4%BD%BF%E7%94%A8) /
+<br>[安装](https://minify-js.org/docs/zh-cn#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85) /
+[自述文件](https://minify-js.org/docs/zh-cn#readme) /
+[CLI 用法](https://minify-js.org/docs/zh-cn#-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%BD%BF%E7%94%A8) /
+[API 使用](https://minify-js.org/docs/zh-cn#-api-%E4%BD%BF%E7%94%A8) /
 [讨论](https://github.js-utils.com/discussions)
 
 <br>

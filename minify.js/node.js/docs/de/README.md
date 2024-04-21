@@ -269,7 +269,7 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 > Gulp-Plug-in zur rekursiven Minimierung aller JavaScript-Dateien.
 <br>[Installieren](https://gulp.minify-js.org/#-installation) /
-[Liesmich](http://gulp.minify-js.org/#readme) /
+[Liesmich](https://gulp.minify-js.org/#readme) /
 [Diskutieren](https://github.minify-js.org/discussions)
 
 ### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
