@@ -169,9 +169,9 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 #
 
-### `compile(inputPath[, options])`
+### `compile(rutaEntrada[, options])`
 
-Compila SCSS que se encuentra en `inputPath` proporcionado en datos CSS.
+Compila SCSS que se encuentra en `rutaEntrada` proporcionado en datos CSS.
 
 Si se pasa una **ruta de archivo**, el código del archivo se compila en CSS y luego se devuelve un objeto que contiene `srcPath` + `code` + `error`:
 
@@ -197,7 +197,7 @@ Las opciones son booleanas y se pasan como propiedades del objeto. Por ejemplo:
 
 ```js
 // Devuelve una matriz de objetos de datos donde `.code` contiene CSS no minificado
-scssToCSS.compile(inputDir, { minify: false });
+scssToCSS.compile(rutaEntrada, { minify: false });
 ```
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:
@@ -214,7 +214,7 @@ Nombre       | Descripción                                                     
 
 ### `findSCSS(searchDir[, options])`
 
-Busca todos los archivos SCSS dentro de la cadena `searchDir` pasada (útil para descubrir qué archivos procesará [`compile()`](#compileinputpath-options)) y devuelve una matriz que contiene sus rutas de archivo.
+Busca todos los archivos SCSS dentro de la cadena `searchDir` pasada (útil para descubrir qué archivos procesará [`compile()`](#compilerutaEntrada-options)) y devuelve una matriz que contiene sus rutas de archivo.
 
 Las opciones son booleanas y se pasan como propiedades del objeto. Por ejemplo:
 
