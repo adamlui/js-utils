@@ -220,8 +220,8 @@ Las opciones son booleanas y se pasan como propiedades del objeto. Por ejemplo:
 
 ```js
 // Busca archivos SCSS exactamente en assets/scss:
-const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
-console.log(searchResults);
+const resultadosBúsqueda = scssToCSS.findSCSS('assets/scss', { recursive: false });
+console.log(resultadosBúsqueda);
 
 /* salida de muestra:
 
