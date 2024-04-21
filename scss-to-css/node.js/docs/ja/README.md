@@ -197,7 +197,7 @@ console.log(compileResults[1].code);
 
 ```js
 // `.code` に縮小されていない CSS が含まれるデータ オブジェクトの配列を返します
-scssToCSS.compile(inputDir, { minify: false });
+scssToCSS.compile(inputPath, { minify: false });
 ```
 
 利用可能なパラメータ (およびそのデフォルト設定) は次のとおりです:

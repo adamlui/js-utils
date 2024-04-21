@@ -197,7 +197,7 @@ Options are boolean, passed as object properties. For example:
 
 ```js
 // ডেটা অবজেক্টের অ্যারে প্রদান করে যেখানে `.কোড` অমিনিফাইড CSS কোড
-scssToCSS.compile(inputDir, { minify: false });
+scssToCSS.compile(inputPath, { minify: false });
 ```
 
 উপলব্ধ প্যারামিটার (এবং তাদের ডিফল্ট সেটিংস) হল:
