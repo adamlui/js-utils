@@ -240,12 +240,12 @@ findJS() » Check returned array.
 
 Available parameters (and their default settings) are:
 
-Name         | Desciption                                                | Default value
--------------|-----------------------------------------------------------|---------------
-`recursive`  | Recursively search for nested files in searchDir passed.  | `true`
-`verbose`    | Show logging in console/terminal.                         | `true`
-`dotFolders` | Include dotfolders in file search.                        | `false`
-`dotFiles`   | Include dotfiles in file search.                          | `false`
+Name         | Type    | Desciption                                               | Default value
+-------------|---------|----------------------------------------------------------|---------------
+`recursive`  | Boolean | Recursively search for nested files in searchDir passed. | `true`
+`verbose`    | Boolean | Show logging in console/terminal.                        | `true`
+`dotFolders` | Boolean | Include dotfolders in file search.                       | `false`
+`dotFiles`   | Boolean | Include dotfiles in file search.                         | `false`
 
 <br>
 
