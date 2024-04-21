@@ -53,9 +53,10 @@ function minify(input, output, options = {}) {
     // Write array data to files in output dir
     minifyData?.forEach(({ code, srcPath }) => {
         const outputDir = path.join(
-            process.cwd(), // path of working dir
-            (output.endsWith('.js') ? path.dirname(output) // + path from file output
-                : output || 'min') // or path from folder output or min/ if no output passed
+                path.dirname(srcPath), // path of file to be minified
+                ( /so?u?rce?$/.test(path.dirname(srcPath)) ? '../' : '' ) // + '../' if in if in *(src|source)/
+              + ( output.endsWith('.js') ? path.dirname(output) // + path from file output
+                  : output || 'min' ) // or path from folder output or min/ if no output passed
         );
         const outputFilename = (
             output.endsWith('.js') && input.endsWith('.js')
