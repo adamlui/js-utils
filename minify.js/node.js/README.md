@@ -5,14 +5,14 @@
             <img height=14 src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/black/icon32.svg">
         </picture>
         &nbsp;English |
-        <a href="http://minify-js.org/docs/zh-cn#readme">简体中文</a> |
-        <a href="http://minify-js.org/docs/zh-tw#readme">繁體中文</a> |
-        <a href="http://minify-js.org/docs/hi#readme">हिंदी</a> |
-        <a href="http://minify-js.org/docs/bn#readme">বাংলা</a> |
-        <a href="http://minify-js.org/docs/mr#readme">मराठी</a> |
-        <a href="http://minify-js.org/docs/pa#readme">ਪੰਜਾਬੀ</a> |
-        <a href="http://minify-js.org/docs/de#readme">Deutsch</a> |
-        <a href="http://minify-js.org/docs/es#readme">Español</a>
+        <a href="http://github.minify-js.org/tree/main/node.js/docs/zh-cn/#readme">简体中文</a> |
+        <a href="http://github.minify-js.org/tree/main/node.js/docs/zh-tw/#readme">繁體中文</a> |
+        <a href="http://github.minify-js.org/tree/main/node.js/docs/hi/#readme">हिंदी</a> |
+        <a href="http://github.minify-js.org/tree/main/node.js/docs/bn/#readme">বাংলা</a> |
+        <a href="http://github.minify-js.org/tree/main/node.js/docs/mr/#readme">मराठी</a> |
+        <a href="http://github.minify-js.org/tree/main/node.js/docs/pa/#readme">ਪੰਜਾਬੀ</a> |
+        <a href="http://github.minify-js.org/tree/main/node.js/docs/de/#readme">Deutsch</a> |
+        <a href="http://github.minify-js.org/tree/main/node.js/docs/es/#readme">Español</a>
     </h6>
 </div>
 
