@@ -135,7 +135,7 @@ Opciones booleanas:
  -q, --quiet                 Suprime todos los registros excepto los errores.
 
 Opciones de parámetros:
- --comment="comment"         Anteponer comentario al código minimizado. Separe por línea usando '\n'.
+ --comment="comentar"            Anteponer comentar al código minimizado. Separe por línea usando '\n'.
 
 Comandos de información:
  -h, --help                  Mostrar pantalla de ayuda.
