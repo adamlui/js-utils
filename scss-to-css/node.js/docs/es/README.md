@@ -187,7 +187,7 @@ Si se pasa una **ruta de directorio**, se buscan los archivos SCSS (de forma rec
 ```js
 // Genera rutas a archivos SCSS en el directorio de trabajo + todos los directorios anidados
 const compilarResultados = scssToCSS.compile('.');
-compilarResultados.forEach(result => console.log(result.srcPath));
+compilarResultados.forEach(resultado => console.log(resultado.srcPath));
 
 // Genera CSS compilado desde el segundo archivo SCSS si se encuentra, o `undefined` si no se encuentra
 console.log(compilarResultados[1].code);
