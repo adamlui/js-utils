@@ -119,10 +119,10 @@ Compilez un **fichier spécifique** (sorties vers `chemin/vers/votre/css/fichier
 $ scss-to-css chemin/vers/votre/fichier.scss
 ```
 
-Spécifiez les répertoires **saisir et sortir** (sorties vers `dossier_de_sortie/`):
+Spécifiez les répertoires **saisir et sortir** (sorties vers `dossier_sortie/`):
 
 ```
-$ scss-to-css dossier_d_entrée dossier_de_sortie
+$ scss-to-css dossier_entrée dossier_sortie
 ```
 
 **💡 Remarque:** Le CSS de sortie est réduit à moins que `-M` ou `--no-minify` soit transmis.
