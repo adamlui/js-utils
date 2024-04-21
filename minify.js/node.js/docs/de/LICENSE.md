@@ -12,7 +12,8 @@
         <a href="../bn/LICENSE.md">বাংলা</a> |
         <a href="../mr/LICENSE.md">मराठी</a> |
         <a href="../pa/LICENSE.md">ਪੰਜਾਬੀ</a> |
-        <a href="../es/LICENSE.md">Español</a>
+        <a href="../es/LICENSE.md">Español</a> |
+        <a href="../fr/LICENSE.md">Français</a>
     </h6>
 </div>
 

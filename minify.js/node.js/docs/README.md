@@ -12,7 +12,8 @@
         <a href="https://github.minify-js.org/tree/main/node.js/docs/mr/#readme">मराठी</a> |
         <a href="https://github.minify-js.org/tree/main/node.js/docs/pa/#readme">ਪੰਜਾਬੀ</a> |
         <a href="https://github.minify-js.org/tree/main/node.js/docs/de/#readme">Deutsch</a> |
-        <a href="https://github.minify-js.org/tree/main/node.js/docs/es/#readme">Español</a>
+        <a href="https://github.minify-js.org/tree/main/node.js/docs/es/#readme">Español</a> |
+        <a href="https://github.minify-js.org/tree/main/node.js/docs/fr/#readme">Français</a>
     </h6>
 </div>
 
