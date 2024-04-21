@@ -4,7 +4,7 @@
             <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/white/icon32.svg">
             <img height=14 src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/black/icon32.svg">
         </picture>
-        &nbsp;Deutsch |
+        &nbsp;Español |
         <a href="../SECURITY.md">English</a> |
         <a href="../zh-cn/SECURITY.md">简体中文</a> |
         <a href="../zh-tw/SECURITY.md">繁體中文</a> |
@@ -12,12 +12,12 @@
         <a href="../bn/SECURITY.md">বাংলা</a> |
         <a href="../mr/SECURITY.md">मराठी</a> |
         <a href="../pa/SECURITY.md">ਪੰਜਾਬੀ</a> |
-        <a href="../es/SECURITY.md">Español</a>
+        <a href="../de/SECURITY.md">Deutsch</a>
     </h6>
 </div>
 
-# 🛡️ Sicherheitsrichtlinie
+# 🛡️ Politica de seguridad
 
-Wenn Sie eine Schwachstelle finden, öffnen Sie bitte einen [Entwurf einer Sicherheitswarnung](https://github.com/adamlui/minify.js/security/advisories/new).
+Si encuentra una vulnerabilidad, abra un [borrador de aviso de seguridad](https://github.com/adamlui/minify.js/security/advisories/new).
 
-Pull-Anfragen sind ebenfalls willkommen, aber aus Sicherheitsgründen senden Sie eine E-Mail an <adam@kudoai.com> und warten Sie auf eine Antwort, bevor Sie sie veröffentlichen.
+Las solicitudes de extracción también son bienvenidas, pero por razones de seguridad, envíe un correo electrónico a <adam@kudoai.com> y espere una respuesta antes de hacerla pública.

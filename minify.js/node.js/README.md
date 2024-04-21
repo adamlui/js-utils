@@ -11,7 +11,8 @@
         <a href="http://minify-js.org/docs/bn#readme">বাংলা</a> |
         <a href="http://minify-js.org/docs/mr#readme">मराठी</a> |
         <a href="http://minify-js.org/docs/pa#readme">ਪੰਜਾਬੀ</a> |
-        <a href="http://minify-js.org/docs/de#readme">Deutsch</a>
+        <a href="http://minify-js.org/docs/de#readme">Deutsch</a> |
+        <a href="http://minify-js.org/docs/es#readme">Español</a>
     </h6>
 </div>
 

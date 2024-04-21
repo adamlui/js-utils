@@ -11,7 +11,8 @@
         <a href="../hi/SECURITY.md">हिंदी</a> |
         <a href="../bn/SECURITY.md">বাংলা</a> |
         <a href="../mr/SECURITY.md">मराठी</a> |
-        <a href="../de/SECURITY.md">Deutsch</a>
+        <a href="../de/SECURITY.md">Deutsch</a> |
+        <a href="../es/SECURITY.md">Español</a>
     </h6>
 </div>
 
