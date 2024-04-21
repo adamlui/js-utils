@@ -4,7 +4,8 @@
             <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/white/icon32.svg">
             <img height=14 src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/black/icon32.svg">
         </picture>
-        &nbsp;English |
+        &nbsp;Français |
+        <a href="http://github.minify-js.org/tree/main/node.js/#readme">English</a> |
         <a href="http://github.minify-js.org/tree/main/node.js/docs/zh-cn/#readme">简体中文</a> |
         <a href="http://github.minify-js.org/tree/main/node.js/docs/zh-tw/#readme">繁體中文</a> |
         <a href="http://github.minify-js.org/tree/main/node.js/docs/hi/#readme">हिंदी</a> |
