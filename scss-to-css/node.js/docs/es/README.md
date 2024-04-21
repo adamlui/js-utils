@@ -169,7 +169,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 #
 
-### `compile(rutaEntrada[, options])`
+### `compile(rutaEntrada[, opciones])`
 
 Compila SCSS que se encuentra en `rutaEntrada` proporcionado en datos CSS.
 
@@ -212,9 +212,9 @@ Nombre       | Descripción                                                     
 
 #
 
-### `findSCSS(searchDir[, options])`
+### `findSCSS(searchDir[, opciones])`
 
-Busca todos los archivos SCSS dentro de la cadena `searchDir` pasada (útil para descubrir qué archivos procesará [`compile()`](#compilerutaEntrada-options)) y devuelve una matriz que contiene sus rutas de archivo.
+Busca todos los archivos SCSS dentro de la cadena `searchDir` pasada (útil para descubrir qué archivos procesará [`compile()`](#compilerutaEntrada-opciones)) y devuelve una matriz que contiene sus rutas de archivo.
 
 Las opciones son booleanas y se pasan como propiedades del objeto. Por ejemplo:
 
