@@ -23,6 +23,6 @@
 
 # 🛡️ Política de segurança
 
-Se você encontrar uma vulnerabilidade, abra um [rascunho de comunicado de segurança](https://github.com/adamlui/js-utils/security/advisories/new).
+Se você encontrar uma vulnerabilidade, abra um [rascunho de comunicado de segurança](https://github.com/adamlui/scss-to-css/security/advisories/new).
 
 Solicitações pull também são bem-vindas, mas por questões de segurança, envie um email para <adam@kudoai.com> e aguarde uma resposta antes de torná-la pública.

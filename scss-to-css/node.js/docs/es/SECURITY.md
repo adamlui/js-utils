@@ -23,6 +23,6 @@
 
 # 🛡️ Politica de seguridad
 
-Si encuentra una vulnerabilidad, abra un [borrador de aviso de seguridad](https://github.com/adamlui/js-utils/security/advisories/new).
+Si encuentra una vulnerabilidad, abra un [borrador de aviso de seguridad](https://github.com/adamlui/scss-to-css/security/advisories/new).
 
 Las solicitudes de extracción también son bienvenidas, pero por razones de seguridad, envíe un correo electrónico a <adam@kudoai.com> y espere una respuesta antes de hacerla pública.
