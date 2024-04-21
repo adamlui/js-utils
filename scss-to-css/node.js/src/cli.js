@@ -3,9 +3,9 @@
 // © 2024 Adam Lui & contributors under the MIT license.
 // Source: https://code.js-utils.com/scss-to-css
 
-
 const pkgName = '@adamlui/scss-to-css',
       docURL = 'https://docs.js-utils.com/scss-to-css/#-command-line-usage';
+
 // Import LIBS
 const scssToCSS = require(__dirname.match(/src/) ? './scss-to-css' : './scss-to-css.min'),
       fs = require('fs'), path = require('path'),
@@ -107,7 +107,7 @@ else if (process.argv.some(arg => argRegex.version.test(arg))) {
                 /(?:src|s[ac]ss)$/.test(path.dirname(srcPath)) ? (
                     '../' + ( outputArg || 'css' ) // + ../outputArg|css/ if in *(src|sass|scss)/
                 ) : outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
-                  : outputArg || 'css' // or path from folder outputArg or css/ if no outputArg passed
+                                               : outputArg || 'css' // or path from folder outputArg or css/ if no outputArg passed
             );
             const outputFilename = (
                 outputArg.endsWith('.css') && inputArg.endsWith('.scss')
