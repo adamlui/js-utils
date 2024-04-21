@@ -176,21 +176,21 @@ Compila SCSS que se encuentra en `rutaEntrada` proporcionado en datos CSS.
 Si se pasa una **ruta de archivo**, el código del archivo se compila en CSS y luego se devuelve un objeto que contiene `srcPath` + `code` + `error`:
 
 ```js
-const compileResult = scssToCSS.compile('assets/style.scss');
+const compilarResultado = scssToCSS.compile('assets/style.scss');
 
-console.log(compileResult.error); // genera un error de tiempo de ejecución, o `undefined` si no hay error
-console.log(compileResult.code);  // genera CSS compilado desde assets/style.scss
+console.log(compilarResultado.error); // genera un error de tiempo de ejecución, o `undefined` si no hay error
+console.log(compilarResultado.code);  // genera CSS compilado desde assets/style.scss
 ```
 
 Si se pasa una **ruta de directorio**, se buscan los archivos SCSS (de forma recursiva de forma predeterminada), el código de cada uno se carga, luego se compila y luego se devuelve una matriz de objetos que contiene `srcPath` + `code` + `error`:
 
 ```js
 // Genera rutas a archivos SCSS en el directorio de trabajo + todos los directorios anidados
-const compileResults = scssToCSS.compile('.');
-compileResults.forEach(result => console.log(result.srcPath));
+const compilarResultados = scssToCSS.compile('.');
+compilarResultados.forEach(result => console.log(result.srcPath));
 
 // Genera CSS compilado desde el segundo archivo SCSS si se encuentra, o `undefined` si no se encuentra
-console.log(compileResults[1].code);
+console.log(compilarResultados[1].code);
 ```
 
 Las opciones son booleanas y se pasan como propiedades del objeto. Por ejemplo:
