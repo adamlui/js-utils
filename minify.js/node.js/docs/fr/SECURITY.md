@@ -5,15 +5,15 @@
             <img height=14 src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/black/icon32.svg">
         </picture>
         &nbsp;Français |
-        <a href="../..#readme">English</a> |
-        <a href="../zh-cn#readme">简体中文</a> |
-        <a href="../zh-tw#readme">繁體中文</a> |
-        <a href="../hi#readme">हिंदी</a> |
-        <a href="../bn#readme">বাংলা</a> |
-        <a href="../mr#readme">मराठी</a> |
-        <a href="../pa#readme">ਪੰਜਾਬੀ</a> |
-        <a href="../de#readme">Deutsch</a> |
-        <a href="../es#readme">Español</a>
+        <a href="../SECURITY.md">English</a> |
+        <a href="../zh-cn/SECURITY.md">简体中文</a> |
+        <a href="../zh-tw/SECURITY.md">繁體中文</a> |
+        <a href="../hi/SECURITY.md">हिंदी</a> |
+        <a href="../bn/SECURITY.md">বাংলা</a> |
+        <a href="../mr/SECURITY.md">मराठी</a> |
+        <a href="../pa/SECURITY.md">ਪੰਜਾਬੀ</a> |
+        <a href="../de/SECURITY.md">Deutsch</a> |
+        <a href="../es/SECURITY.md">Español</a>
     </h6>
 </div>
 
