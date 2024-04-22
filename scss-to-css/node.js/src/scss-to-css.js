@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 // © 2024 Adam Lui & contributors under the MIT license.
-// Source: https://code.js-utils.com/scss-to-css
-// Documentation: https://docs.js-utils.com/scss-to-css
+// Source: https://github.com/adamlui/scss-to-css/tree/main/node.js/src
+// Documentation: https://github.com/adamlui/scss-to-css/tree/main/node.js/docs
 
 // Import LIBS
 const fs = require('fs'),

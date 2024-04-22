@@ -2,5 +2,5 @@
 
 minify-js src dist --comment=" \
 © 2024 Adam Lui & contributors under the MIT license.\n \
-Source: https://code.js-utils.com/scss-to-css\n \
-Documentation: https://docs.js-utils.com/scss-to-css"
+Source: https://github.com/adamlui/scss-to-css/tree/main/node.js/src\n \
+Documentation: https://github.com/adamlui/scss-to-css/tree/main/node.js/docs"

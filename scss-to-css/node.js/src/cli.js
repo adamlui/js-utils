@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 // © 2024 Adam Lui & contributors under the MIT license.
-// Source: https://code.js-utils.com/scss-to-css
+// Source: https://github.com/adamlui/scss-to-css/tree/main/node.js/src
 
 const pkgName = '@adamlui/scss-to-css',
-      docURL = 'https://docs.js-utils.com/scss-to-css/#-command-line-usage';
+      docURL = 'https://github.com/adamlui/scss-to-css/#-command-line-usage';
 
 // Import LIBS
 const scssToCSS = require(__dirname.match(/src/) ? './scss-to-css' : './scss-to-css.min'),
