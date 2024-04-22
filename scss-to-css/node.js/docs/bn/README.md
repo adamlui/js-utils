@@ -193,7 +193,7 @@ compileResults.forEach(result => console.log(result.srcPath));
 console.log(compileResults[1].code);
 ```
 
-Options are boolean, passed as object properties. For example:
+বিকল্পগুলি হল বুলিয়ান, অবজেক্টের বৈশিষ্ট্য হিসাবে পাস করা হয়েছে৷ উদাহরণ স্বরূপ:
 
 ```js
 // ডেটা অবজেক্টের অ্যারে প্রদান করে যেখানে `.কোড` অমিনিফাইড CSS কোড
