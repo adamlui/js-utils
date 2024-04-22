@@ -50,12 +50,12 @@
   "bugs": {
     "url": "https://github.com/adamlui/scss-to-css/issues"
   },
-  "dependencies": {
-    "sass": "^1.75.0"
-  },
   "funding": {
     "type": "github",
     "url": "https://github.com/sponsors/adamlui"
+  },
+  "dependencies": {
+    "sass": "^1.75.0"
   },
   "devDependencies": {
     "@adamlui/minify.js": "^1.5.4"
