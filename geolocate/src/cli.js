@@ -95,7 +95,8 @@ const pkgName = '@adamlui/geolocate',
     function printHelpSections(includeSections = ['usage', 'flags', 'infoCmds']) {
         const helpSections = {
             'usage': [
-                '\ngeolocate [ip1] [ip2] [...] [options|commands]'
+                `\n${bw}Usage:${nc}`,
+                ' geolocate [ip1] [ip2] [...] [options|commands]'
             ],
             'flags': [
                 `\n${bw}Boolean options:${nc}`,

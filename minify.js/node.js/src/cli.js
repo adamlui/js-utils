@@ -153,7 +153,8 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
 function printHelpSections(includeSections = ['usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
     const helpSections = {
         'usage': [
-            '\nminify-js [inputPath] [outputPath] [options]'
+            `\n${bw}Usage:${nc}`,
+            ' minify-js [inputPath] [outputPath] [options]'
         ],
         'pathArgs': [
             `\n${bw}Path arguments:${nc}`,
