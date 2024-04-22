@@ -36,7 +36,7 @@ const pkgName = '@adamlui/geolocate',
         else if (!matchedInfoCmd) {
             console.error(`\n${br}ERROR: Arg [${arg}] not recognized.${nc}`);
             console.info(`\n${by}Valid arguments are below.${nc}`);
-            printHelpSections(['flags', 'infoCmds']);
+            printHelpSections(['configOptions', 'infoCmds']);
             printHelpCmdAndDocURL(); process.exit(1);
     }});
 
@@ -92,14 +92,14 @@ const pkgName = '@adamlui/geolocate',
 
     // Define FUNCTIONS
 
-    function printHelpSections(includeSections = ['usage', 'flags', 'infoCmds']) {
+    function printHelpSections(includeSections = ['usage', 'configOptions', 'infoCmds']) {
         const helpSections = {
             'usage': [
                 `\n${bw}Usage:${nc}`,
                 ' geolocate [ip1] [ip2] [...] [options|commands]'
             ],
-            'flags': [
-                `\n${bw}Boolean options:${nc}`,
+            'configOptions': [
+                `\n${bw}Config options:${nc}`,
                 ' -q, --quiet                 Suppress all logging except errors.'
             ],
             'infoCmds': [
