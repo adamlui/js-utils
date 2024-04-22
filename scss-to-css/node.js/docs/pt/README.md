@@ -173,7 +173,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 Compila o SCSS encontrado no `inputPath` fornecido nos dados CSS.
 
-Se um **caminho do arquivo** for passado, o código do arquivo será compilado em CSS, então um objeto contendo `srcPath` + `code` + `error` será retornado:
+Se um **caminho do arquivo** for passado, o código do arquivo será compilado em CSS, então um objeto contendo `srcPath` + `code` + `srcMap` + `error` será retornado:
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
@@ -182,7 +182,7 @@ console.log(compileResult.error); // gera erro de tempo de execução ou `undefi
 console.log(compileResult.code);  // gera CSS compilado de assets/style.scss
 ```
 
-Se um **caminho de diretório** for passado, os arquivos SCSS serão procurados (recursivamente por padrão), o código de cada um será carregado e compilado, então um array de objetos contendo `srcPath` + `code` + `error` será retornado:
+Se um **caminho de diretório** for passado, os arquivos SCSS serão procurados (recursivamente por padrão), o código de cada um será carregado e compilado, então um array de objetos contendo `srcPath` + `code` + `srcMap` + `error` será retornado:
 
 ```js
 // Gera caminhos para arquivos SCSS no diretório de trabalho + todos os diretórios aninhados

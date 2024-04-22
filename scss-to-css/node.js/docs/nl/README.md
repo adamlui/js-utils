@@ -173,7 +173,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 Compileert SCSS gevonden in het `invoerPad` dat is opgegeven in CSS-gegevens.
 
-Als een **bestandspad** wordt doorgegeven, wordt de code van het bestand gecompileerd naar CSS, waarna een object met `srcPath` + `code` + `error` wordt geretourneerd:
+Als een **bestandspad** wordt doorgegeven, wordt de code van het bestand gecompileerd naar CSS, waarna een object met `srcPath` + `code` + `srcMap` + `error` wordt geretourneerd:
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
@@ -182,7 +182,7 @@ console.log(compileResult.error); // geeft een runtimefout weer, of `undefined` 
 console.log(compileResult.code);  // voert gecompileerde CSS uit assets/style.scss uit
 ```
 
-Als een **mappad** wordt doorgegeven, wordt er naar SCSS-bestanden gezocht (standaard recursief), wordt de code van elk bestand geladen en vervolgens gecompileerd, waarna een array van objecten met `srcPath` + `code` + `error` wordt geretourneerd:
+Als een **mappad** wordt doorgegeven, wordt er naar SCSS-bestanden gezocht (standaard recursief), wordt de code van elk bestand geladen en vervolgens gecompileerd, waarna een array van objecten met `srcPath` + `code` + `srcMap` + `error` wordt geretourneerd:
 
 ```js
 // Voert paden uit naar SCSS-bestanden in de werkmap + alle geneste mappen

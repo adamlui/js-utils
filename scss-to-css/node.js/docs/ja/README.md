@@ -173,7 +173,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 指定された `inputPath` で見つかった SCSS を CSS データにコンパイルします。
 
-**ファイル パス**が渡された場合、ファイルのコードは CSS にコンパイルされ、`srcPath` + `code` + `error` を含むオブジェクトが返されます:
+**ファイル パス**が渡された場合、ファイルのコードは CSS にコンパイルされ、`srcPath` + `code` + `srcMap` + `error` を含むオブジェクトが返されます:
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
@@ -182,7 +182,7 @@ console.log(compileResult.error); // 実行時エラーを出力するか、エ�
 console.log(compileResult.code);  // コンパイルされた CSS を assets/style.scss から出力します
 ```
 
-**ディレクトリ パス**が渡された場合、SCSS ファイルが検索され (デフォルトでは再帰的)、それぞれのコードがロードされてコンパイルされ、`srcPath` + `code` + `error` を含むオブジェクトの配列が返されます:
+**ディレクトリ パス**が渡された場合、SCSS ファイルが検索され (デフォルトでは再帰的)、それぞれのコードがロードされてコンパイルされ、`srcPath` + `code` + `srcMap` + `error` を含むオブジェクトの配列が返されます:
 
 ```js
 // 作業ディレクトリ + ネストされたすべてのディレクトリ内の SCSS ファイルへのパスを出力します

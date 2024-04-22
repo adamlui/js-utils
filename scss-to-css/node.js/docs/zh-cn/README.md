@@ -173,7 +173,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 将在 `inputPath` 中找到的 SCSS 编译为 CSS 数据。
 
-如果传递 **文件路径**，则文件的代码将编译为 CSS，然后返回一个包含 `srcPath` + `code` + `error` 的对象：
+如果传递 **文件路径**，则文件的代码将编译为 CSS，然后返回一个包含 `srcPath` + `code` + `srcMap` + `error` 的对象：
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
@@ -182,7 +182,7 @@ console.log(compileResult.error); // 输出运行时错误，如果没有错误�
 console.log(compileResult.code);  // 输出从 asset/style.css 编译的 CSS
 ```
 
-如果传递 **目录路径**，则搜索 SCSS 文件（默认情况下递归），加载每个文件的代码并编译，然后返回包含 `srcPath` + `code` + `error` 的对象数组：
+如果传递 **目录路径**，则搜索 SCSS 文件（默认情况下递归），加载每个文件的代码并编译，然后返回包含 `srcPath` + `code` + `srcMap` + `error` 的对象数组：
 
 ```js
 // 输出工作目录 + 所有嵌套目录中 SCSS 文件的路径

@@ -173,7 +173,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 Compile les SCSS trouvés dans le `cheminEntrée` fourni en données CSS.
 
-Si un **chemin de fichier** est passé, le code du fichier est compilé en CSS, puis un objet contenant `srcPath` + `code` + `error` est renvoyé:
+Si un **chemin de fichier** est passé, le code du fichier est compilé en CSS, puis un objet contenant `srcPath` + `code` + `srcMap` + `error` est renvoyé:
 
 ```js
 const résultatCompilation = scssToCSS.compile('assets/style.scss');
@@ -182,7 +182,7 @@ console.log(résultatCompilation.error); // génère une erreur d'exécution, ou
 console.log(résultatCompilation.code);  // génère du CSS compilé à partir de assets/style.scss
 ```
 
-Si un **chemin de répertoire** est passé, les fichiers SCSS sont recherchés (de manière récursive par défaut), le code de chacun est chargé puis compilé, puis un tableau d'objets contenant `srcPath` + `code` + `error` est renvoyé:
+Si un **chemin de répertoire** est passé, les fichiers SCSS sont recherchés (de manière récursive par défaut), le code de chacun est chargé puis compilé, puis un tableau d'objets contenant `srcPath` + `code` + `srcMap` + `error` est renvoyé:
 
 ```js
 // Affiche les chemins d'accès aux fichiers SCSS dans le répertoire de travail + tous les répertoires imbriqués

@@ -176,7 +176,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 Compiles SCSS found in the `inputPath` provided into CSS data.
 
-If a **file path** is passed, the file's code is compiled to CSS, then an object containing `srcPath` + `code` + `error` is returned:
+If a **file path** is passed, the file's code is compiled to CSS, then an object containing `srcPath` + `code` + `srcMap` + `error` is returned:
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
@@ -185,7 +185,7 @@ console.log(compileResult.error); // outputs runtime error, or `undefined` if no
 console.log(compileResult.code);  // outputs compiled CSS from assets/style.scss
 ```
 
-If a **directory path** is passed, SCSS files are searched for (recursively by default), each one's code is loaded then compiled, then an array of objects containing `srcPath` + `code` + `error` is returned:
+If a **directory path** is passed, SCSS files are searched for (recursively by default), each one's code is loaded then compiled, then an array of objects containing `srcPath` + `code` + `srcMap` + `error` is returned:
 
 ```js
 // Outputs paths to SCSS files in working directory + all nested directories

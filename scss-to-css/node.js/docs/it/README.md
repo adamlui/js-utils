@@ -173,7 +173,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 Compila SCSS trovato nel `percorsoInput` fornito nei dati CSS.
 
-Se viene passato un **percorso file**, il codice del file viene compilato in CSS, quindi viene restituito un oggetto contenente `srcPath` + `code` + `error`:
+Se viene passato un **percorso file**, il codice del file viene compilato in CSS, quindi viene restituito un oggetto contenente `srcPath` + `code` + `srcMap` + `error`:
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
@@ -182,7 +182,7 @@ console.log(compileResult.error); // restituisce un errore di runtime o `undefin
 console.log(compileResult.code);  // output compilato CSS da assets/style.scss
 ```
 
-Se viene passato un **percorso di direttorio**, vengono cercati i file SCSS (ricorsivamente per impostazione predefinita), il codice di ognuno viene caricato e poi compilato, quindi viene restituito un array di oggetti contenenti `srcPath` + `code` + `error`:
+Se viene passato un **percorso di direttorio**, vengono cercati i file SCSS (ricorsivamente per impostazione predefinita), il codice di ognuno viene caricato e poi compilato, quindi viene restituito un array di oggetti contenenti `srcPath` + `code` + `srcMap` + `error`:
 
 ```js
 // Restituisce i percorsi dei file SCSS nella direttorio di lavoro + tutte le direttorio nidificate

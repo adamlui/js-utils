@@ -173,7 +173,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 將在 `inputPath` 中找到的 SCSS 編譯為 CSS 資料。
 
-如果傳遞 **檔案路徑**，則檔案的程式碼將編譯為 CSS，然後傳回一個包含 `srcPath` + `code` + `error` 的物件：
+如果傳遞 **檔案路徑**，則檔案的程式碼將編譯為 CSS，然後傳回一個包含 `srcPath` + `code` + `srcMap` + `error` 的物件：
 
 ```js
 const compileResult = scssToCSS.compile('assets/style.scss');
@@ -182,7 +182,7 @@ console.log(compileResult.error); // 輸出運行時錯誤，如果沒有錯誤�
 console.log(compileResult.code);  // 輸出從 asset/style.css 編譯的 CSS
 ```
 
-如果传递 **目录路径**，则搜索 SCSS 文件（默认情况下递归），加载每个文件的代码并编译，然后返回包含 `srcPath` + `code` + `error` 的对象数组：
+如果传递 **目录路径**，则搜索 SCSS 文件（默认情况下递归），加载每个文件的代码并编译，然后返回包含 `srcPath` + `code` + `srcMap` + `error` 的对象数组：
 
 ```js
 // 輸出工作目錄 + 所有巢狀目錄中 SCSS 檔案的路徑

@@ -173,7 +173,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 Kompiliert SCSS, das im bereitgestellten `eingabepfad` gefunden wird, in CSS-Daten.
 
-Wenn ein **Dateipfad** übergeben wird, wird der Code der Datei nach CSS kompiliert, dann wird ein Objekt zurückgegeben, das `srcPath` + `code` + `error` enthält:
+Wenn ein **Dateipfad** übergeben wird, wird der Code der Datei nach CSS kompiliert, dann wird ein Objekt zurückgegeben, das `srcPath` + `code` + `srcMap` + `error` enthält:
 
 ```js
 const kompEbnis = scssToCSS.compile('assets/style.scss');
@@ -182,7 +182,7 @@ console.log(kompEbnis.error); // gibt einen Laufzeitfehler oder `undefined` aus,
 console.log(kompEbnis.code);  // gibt kompiliertes CSS aus asset/style.scss aus
 ```
 
-Wenn ein **Verzeichnispfad** übergeben wird, wird nach SCSS-Dateien gesucht (standardmäßig rekursiv), der Code jeder Datei wird geladen und dann kompiliert, dann wird ein Array von Objekten zurückgegeben, die `srcPath` + `code` + `error` enthalten:
+Wenn ein **Verzeichnispfad** übergeben wird, wird nach SCSS-Dateien gesucht (standardmäßig rekursiv), der Code jeder Datei wird geladen und dann kompiliert, dann wird ein Array von Objekten zurückgegeben, die `srcPath` + `code` + `srcMap` + `error` enthalten:
 
 ```js
 // Gibt Pfade zu SCSS-Dateien im Arbeitsverzeichnis + allen verschachtelten Verzeichnissen aus
