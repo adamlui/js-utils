@@ -197,7 +197,7 @@ Optionen sind boolesche Werte und werden als Objekteigenschaften übergeben. Zum
 
 ```js
 // Gibt ein Array von Datenobjekten zurück, wobei `.code` nicht minimiertes CSS enthält
-scssToCSS.compile(inputPath, { minify: false });
+scssToCSS.compile(inputDir, { minify: false });
 ```
 
 Verfügbare Parameter (und ihre Standardeinstellungen) sind:

@@ -197,7 +197,7 @@ Opties zijn Booleaans en worden doorgegeven als objecteigenschappen. Bijvoorbeel
 
 ```js
 // Retourneert een reeks gegevensobjecten waarin `.code` niet-verkleinde CSS bevat
-scssToCSS.compile(inputPath, { minify: false });
+scssToCSS.compile(inputDir, { minify: false });
 ```
 
 Beschikbare parameters (en hun standaardinstellingen) zijn:

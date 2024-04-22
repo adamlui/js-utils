@@ -197,7 +197,7 @@ console.log(compileResults[1].code);
 
 ```js
 // 傳回資料物件數組，其中 `.code` 包含未縮小的 CSS
-scssToCSS.compile(inputPath, { minify: false });
+scssToCSS.compile(inputDir, { minify: false });
 ```
 
 可用的參數（及其預設設定）是：

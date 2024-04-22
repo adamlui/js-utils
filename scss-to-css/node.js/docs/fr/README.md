@@ -197,7 +197,7 @@ Les options sont booléennes, transmises en tant que propriétés d'objet. Par e
 
 ```js
 // Renvoie un tableau d'objets de données où `.code` contient du CSS non minifié
-scssToCSS.compile(cheminEntrée, { minify: false });
+scssToCSS.compile(répEntrée, { minify: false });
 ```
 
 Les paramètres disponibles (et leurs paramètres par défaut) sont:

@@ -197,7 +197,7 @@ Las opciones son booleanas y se pasan como propiedades del objeto. Por ejemplo:
 
 ```js
 // Devuelve una matriz de objetos de datos donde `.code` contiene CSS no minificado
-scssToCSS.compile(rutaEntrada, { minify: false });
+scssToCSS.compile(dirEntrada, { minify: false });
 ```
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:

@@ -200,7 +200,7 @@ Options are boolean, passed as object properties. For example:
 
 ```js
 // Returns array of data objects where `.code` contains unminified CSS
-scssToCSS.compile(inputPath, { minify: false });
+scssToCSS.compile(inputDir, { minify: false });
 ```
 
 Available parameters (and their default settings) are:

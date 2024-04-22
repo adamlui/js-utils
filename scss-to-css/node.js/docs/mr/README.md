@@ -197,7 +197,7 @@ console.log(compileResults[1].code);
 
 ```js
 // डेटा ऑब्जेक्ट्सचा ॲरे देते जेथे `.code` मध्ये अनमिनिफाइड CSS आहे
-scssToCSS.compile(inputPath, { minify: false });
+scssToCSS.compile(inputDir, { minify: false });
 ```
 
 उपलब्ध पॅरामीटर्स (आणि त्यांची डीफॉल्ट सेटिंग्ज) आहेत:
