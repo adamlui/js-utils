@@ -150,10 +150,9 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
 
 // Define LOGGING functions
 
-function printHelpSections(
-    includeSections = ['cmdFormat', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
+function printHelpSections(includeSections = ['usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
     const helpSections = {
-        'cmdFormat': [
+        'usage': [
             `\n${by}minify-js [inputPath] [outputPath] [options]${nc}`
         ],
         'pathArgs': [

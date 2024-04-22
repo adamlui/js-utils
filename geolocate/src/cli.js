@@ -92,9 +92,9 @@ const pkgName = '@adamlui/geolocate',
 
     // Define FUNCTIONS
 
-    function printHelpSections(includeSections = ['cmdFormat', 'flags', 'infoCmds']) {
+    function printHelpSections(includeSections = ['usage', 'flags', 'infoCmds']) {
         const helpSections = {
-            'cmdFormat': [
+            'usage': [
                 `\n${by}geolocate [ip1] [ip2] [...] [options|commands]${nc}`
             ],
             'flags': [

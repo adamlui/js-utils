@@ -83,9 +83,9 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
 
 // Define FUNCTIONS
 
-function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'flags', 'infoCmds']) {
+function printHelpSections(includeSections = ['usage', 'paramOptions', 'flags', 'infoCmds']) {
     const helpSections = {
-        'cmdFormat': [
+        'usage': [
             `\n${by}generate-ip [options|commands]${nc}`
         ],
         'paramOptions': [

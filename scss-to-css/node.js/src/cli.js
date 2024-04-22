@@ -140,9 +140,9 @@ else if (process.argv.some(arg => argRegex.version.test(arg))) {
 
 // Define LOGGING functions
 
-function printHelpSections(includeSections = ['cmdFormat', 'pathArgs', 'configOptions', 'infoCmds']) {
+function printHelpSections(includeSections = ['usage', 'pathArgs', 'configOptions', 'infoCmds']) {
     const helpSections = {
-        'cmdFormat': [
+        'usage': [
             `\n${by}scss-to-css [inputPath] [outputPath] [options]${nc}`
         ],
         'pathArgs': [

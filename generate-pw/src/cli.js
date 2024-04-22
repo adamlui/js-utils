@@ -101,9 +101,9 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
     copyToClipboard(Array.isArray(pwResult) ? pwResult.join('\n') : pwResult);
 }
 
-function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'flags', 'infoCmds']) {
+function printHelpSections(includeSections = ['usage', 'paramOptions', 'flags', 'infoCmds']) {
     const helpSections = {
-        'cmdFormat': [
+        'usage': [
             `\n${by}generate-pw [options|commands]${nc}`
         ],
         'paramOptions': [
