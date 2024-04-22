@@ -143,7 +143,7 @@ else if (process.argv.some(arg => argRegex.version.test(arg))) {
 function printHelpSections(includeSections = ['usage', 'pathArgs', 'configOptions', 'infoCmds']) {
     const helpSections = {
         'usage': [
-            `\n${by}scss-to-css [inputPath] [outputPath] [options]${nc}`
+            '\nscss-to-css [inputPath] [outputPath] [options]'
         ],
         'pathArgs': [
             `\n${bw}Path arguments:${nc}`,
