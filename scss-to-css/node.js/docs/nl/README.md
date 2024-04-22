@@ -189,11 +189,11 @@ Als een **mappad** wordt doorgegeven, wordt er naar SCSS-bestanden gezocht (stan
 
 ```js
 // Voert paden uit naar SCSS-bestanden in de werkmap + alle geneste mappen
-const compileResults = scssToCSS.compile('.');
-compileResults.forEach(result => console.log(result.srcPath));
+const resultatenCompileren = scssToCSS.compile('.');
+resultatenCompileren.forEach(resultaat => console.log(resultaat.srcPath));
 
 // Voert gecompileerde CSS uit het tweede SCSS-bestand uit als dit wordt gevonden, of `undefined` als het niet wordt gevonden
-console.log(compileResults[1].code);
+console.log(resultatenCompileren[1].code);
 ```
 
 Opties zijn Booleaans en worden doorgegeven als objecteigenschappen. Bijvoorbeeld:

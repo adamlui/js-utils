@@ -189,11 +189,11 @@ Se viene passato un **percorso di direttorio**, vengono cercati i file SCSS (ric
 
 ```js
 // Restituisce i percorsi dei file SCSS nella direttorio di lavoro + tutte le direttorio nidificate
-const compileResults = scssToCSS.compile('.');
-compileResults.forEach(result => console.log(result.srcPath));
+const risultatiCompilazione = scssToCSS.compile('.');
+risultatiCompilazione.forEach(risultato => console.log(risultato.srcPath));
 
 // Restituisce il CSS compilato dal 2° file SCSS se trovato, o `undefined` se non trovato
-console.log(compileResults[1].code);
+console.log(risultatiCompilazione[1].code);
 ```
 
 Le opzioni sono booleane, passate come proprietà dell'oggetto. Per esempio:

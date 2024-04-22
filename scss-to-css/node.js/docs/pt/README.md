@@ -189,11 +189,11 @@ Se um **caminho de diretório** for passado, os arquivos SCSS serão procurados 
 
 ```js
 // Gera caminhos para arquivos SCSS no diretório de trabalho + todos os diretórios aninhados
-const compileResults = scssToCSS.compile('.');
-compileResults.forEach(result => console.log(result.srcPath));
+const compilarResultados = scssToCSS.compile('.');
+compilarResultados.forEach(resultado => console.log(resultado.srcPath));
 
 // Produz CSS compilado do segundo arquivo SCSS, se encontrado, ou `undefined` se não for encontrado
-console.log(compileResults[1].code);
+console.log(compilarResultados[1].code);
 ```
 
 As opções são booleanas, passadas como propriedades do objeto. Por exemplo:
