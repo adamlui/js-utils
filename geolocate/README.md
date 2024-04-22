@@ -128,6 +128,8 @@ const geo = require('@adamlui/geolocate');
 Example:
 
 ```js
+const geo = require('@adamlui/geolocate');
+
 // Using await syntax
 (async () => {
     const location = await geo.locate('8.8.8.8');
