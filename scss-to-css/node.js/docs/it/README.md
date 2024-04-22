@@ -200,7 +200,7 @@ Le opzioni sono booleane, passate come proprietà dell'oggetto. Per esempio:
 
 ```js
 // Restituisce un array di oggetti dati in cui `.code` contiene CSS non minimizzati
-scssToCSS.compile(inputDir, { minify: false });
+scssToCSS.compile(dirInput, { minify: false });
 ```
 
 I parametri disponibili (e le relative impostazioni predefinite) sono:
