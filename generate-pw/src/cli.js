@@ -14,7 +14,8 @@ const { generatePassword } = require(__dirname.match(/src/) ? './generate-pw' : 
 // Init UI colors
 const nc = '\x1b[0m',    // no color
       br = '\x1b[1;91m', // bright red
-      by = '\x1b[1;33m'; // bright yellow
+      by = '\x1b[1;33m', // bright yellow
+      bw = '\x1b[1;97m'; // bright white
 
 // Load settings from ARGS
 const config = {};
@@ -106,14 +107,14 @@ function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'flag
             `\n${by}generate-pw [options|commands]${nc}`
         ],
         'paramOptions': [
-            '\nParameter options:',
+            `\n${bw}Parameter options:${nc}`,
             ' --length=n                  Generate password(s) of n length.',
             ' --qty=n                     Generate n password(s).',
             ' --charset=chars             Only include chars in password(s).',
             ' --exclude=chars             Exclude chars from password(s).'
         ],
         'flags': [
-            '\nBoolean options:',
+            `\n${bw}Boolean options:${nc}`,
             ' -n, --include-numbers       Allow numbers in password(s).',
             ' -y, --include-symbols       Allow symbols in password(s).',
             ' -L, --no-lowercase          Disallow lowercase letters in password(s).',
@@ -124,7 +125,7 @@ function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'flag
             ' -q, --quiet                 Suppress all logging except errors.'
         ],
         'infoCmds': [
-            '\nInfo commands:',
+            `\n${bw}Info commands:${nc}`,
             ' -h, --help                  Display help screen.',
             ' -v, --version               Show version number.'
         ]

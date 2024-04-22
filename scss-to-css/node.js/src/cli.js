@@ -15,7 +15,8 @@ const scssToCSS = require(__dirname.match(/src/) ? './scss-to-css' : './scss-to-
 const nc = '\x1b[0m',    // no color
       br = '\x1b[1;91m', // bright red
       by = '\x1b[1;33m', // bright yellow
-      bg = '\x1b[1;92m'; // bright green
+      bg = '\x1b[1;92m', // bright green
+      bw = '\x1b[1;97m'; // bright white
 
 // Load FLAG settings
 const config = {};
@@ -145,7 +146,7 @@ function printHelpSections(includeSections = ['cmdFormat', 'pathArgs', 'configOp
             `\n${by}scss-to-css [inputPath] [outputPath] [options]${nc}`
         ],
         'pathArgs': [
-            '\nPath arguments:',
+            `\n${bw}Path arguments:${nc}`,
             ' [inputPath]                 '
                 + 'Path to SCSS file or directory containing SCSS files to be compiled,'
                 + ' relative to the current working directory.',
@@ -154,7 +155,7 @@ function printHelpSections(includeSections = ['cmdFormat', 'pathArgs', 'configOp
                 + ' relative to original file location (if not provided, css/ is used).'
         ],
         'configOptions': [
-            '\nConfig options:',
+            `\n${bw}Config options:${nc}`,
             ' -n, --dry-run                Don\'t actually compile the file(s),'
                                         + ' just show if they will be processed.',
             ' -d, --include-dotfolders     Include dotfolders in file search.',
@@ -164,7 +165,7 @@ function printHelpSections(includeSections = ['cmdFormat', 'pathArgs', 'configOp
             ' -q, --quiet                  Suppress all logging except errors.'
         ],
         'infoCmds': [
-            '\nInfo commands:',
+            `\n${bw}Info commands:${nc}`,
             ' -h, --help                   Display help screen.',
             ' -v, --version                Show version number.'
         ]

@@ -14,7 +14,8 @@ const { ipv4 } = require(__dirname.match(/src/) ? './generate-ip' : './generate-
 // Init UI colors
 const nc = '\x1b[0m',    // no color
       br = '\x1b[1;91m', // bright red
-      by = '\x1b[1;33m'; // bright yellow
+      by = '\x1b[1;33m', // bright yellow
+      bw = '\x1b[1;97m'; // bright white
 
 // Load settings from ARGS
 const config = {};
@@ -88,15 +89,15 @@ function printHelpSections(includeSections = ['cmdFormat', 'paramOptions', 'flag
             `\n${by}generate-ip [options|commands]${nc}`
         ],
         'paramOptions': [
-            '\nParameter options:',
+            `\n${bw}Parameter options:${nc}`,
             ' --qty=n                     Generate n IP address(es).'
         ],
         'flags': [
-            '\nBoolean options:',
+            `\n${bw}Boolean options:${nc}`,
             ' -q, --quiet                 Suppress all logging except errors.'
         ],
         'infoCmds': [
-            '\nInfo commands:',
+            `\n${bw}Info commands:${nc}`,
             ' -h, --help                  Display help screen.',
             ' -v, --version               Show version number.'
         ]

@@ -15,7 +15,8 @@ const minifyJS = require(__dirname.match(/src/) ? './minify' : './minify.min'),
 const nc = '\x1b[0m',    // no color
       br = '\x1b[1;91m', // bright red
       by = '\x1b[1;33m', // bright yellow
-      bg = '\x1b[1;92m'; // bright green
+      bg = '\x1b[1;92m', // bright green
+      bw = '\x1b[1;97m'; // bright white
 
 // Load FLAG settings
 const config = {};
@@ -156,7 +157,7 @@ function printHelpSections(
             `\n${by}minify-js [inputPath] [outputPath] [options]${nc}`
         ],
         'pathArgs': [
-            '\nPath arguments:',
+            `\n${bw}Path arguments:${nc}`,
             ' [inputPath]                 '
                 + 'Path to JS file or directory containing JS files to be minified,'
                 + ' relative to the current working directory.',
@@ -165,7 +166,7 @@ function printHelpSections(
                 + ' relative to original file location (if not provided, min/ is used).'
         ],
         'flags': [
-            '\nBoolean options:',
+            `\n${bw}Boolean options:${nc}`,
             ' -n, --dry-run               Don\'t actually minify the file(s),'
                                        + ' just show if they will be processed.',
             ' -d, --include-dotfolders    Include dotfolders in file search.',
@@ -175,11 +176,11 @@ function printHelpSections(
             ' -q, --quiet                 Suppress all logging except errors.'
         ],
         'paramOptions': [
-            '\nParameter options:',
+            `\n${bw}Parameter options:${nc}`,
             ' --comment="comment"         Prepend comment to minified code.'
         ],
         'infoCmds': [
-            '\nInfo commands:',
+            `\n${bw}Info commands:${nc}`,
             ' -h, --help                  Display help screen.',
             ' -v, --version               Show version number.'
         ]

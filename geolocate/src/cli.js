@@ -98,11 +98,11 @@ const pkgName = '@adamlui/geolocate',
                 `\n${by}geolocate [ip1] [ip2] [...] [options|commands]${nc}`
             ],
             'flags': [
-                '\nBoolean options:',
+                `\n${bw}Boolean options:${nc}`,
                 ' -q, --quiet                 Suppress all logging except errors.'
             ],
             'infoCmds': [
-                '\nInfo commands:',
+                `\n${bw}Info commands:${nc}`,
                 ' -h, --help                  Display help screen.',
                 ' -v, --version               Show version number.'
             ]
