@@ -24,6 +24,12 @@ jobs:
           echo "Release Title: $release_title"
           echo "Release Tag: $release_tag_name"
 
+          # Check for multi-repo existence
+          for repo in "${app_repos[@]}" ; do
+              if [[ "$release_tag_name" == "$repo"* ]] ; then repo_exists=true ; break ; fi ; done
+          if [ ! -v repo_exists ] ; then
+              echo "No multi-repo for $release_app_name exists." ; exit 0 ; fi
+
           # Check for release existence in target repo
           target_release_tag_name=$(echo $release_tag_name | sed -E 's|.*-([^-]+)-([0-9.]+)|\1-v\2|')
           response_code=$(curl -L -s -o /dev/null -w "%{http_code}" \
