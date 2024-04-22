@@ -80,8 +80,13 @@ const pkgName = '@adamlui/geolocate',
             console.info(`Country: ${bw + geoResults[0].country + nc}`);
             console.info(`Region: ${bw + geoResults[0].regionName + nc}`);
             console.info(`City: ${bw + geoResults[0].city + nc}`);
+            console.info(`Zip: ${bw + geoResults[0].zip + nc}`);
             console.info(`Latitude: ${bw + geoResults[0].lat + nc}`);
             console.info(`Longitude: ${bw + geoResults[0].lon + nc}`);
+            console.info(`Time zone: ${bw + geoResults[0].timezone
+                .replace(/_/g, ' ') // insert spaces
+                .replace(/\//g, ' / ') // pad slashes
+                    + nc}`);
             console.info(`ISP: ${bw + geoResults[0].isp + nc}`);
         }
 
