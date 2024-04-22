@@ -283,5 +283,5 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**Mais utilitários JavaScript**</a> /
-<a href="https://github.js-utils.com/discussions">Discutir</a> /
+<a href="https://github.com/adamlui/scss-to-css/discussions">Discutir</a> /
 <a href="#--scss-to-css">De volta ao topo ↑</a>

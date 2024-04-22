@@ -283,5 +283,5 @@ findSCSS() » Check returned array.
 <img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**更多 JavaScript 实用程序**</a> /
-<a href="https://github.js-utils.com/discussions">讨论</a> /
+<a href="https://github.com/adamlui/scss-to-css/discussions">讨论</a> /
 <a href="#--scss-to-css">回到顶部 ↑</a>
