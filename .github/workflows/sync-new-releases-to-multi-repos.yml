@@ -63,4 +63,4 @@ jobs:
                    > /dev/null 2>&1 # hide verbosity
           done
           
-          echo "Release duplicated to adamlui/$release_app_name."
+          echo "Release duplicated to adamlui/$release_app_name tagged $target_release_tag_name"
