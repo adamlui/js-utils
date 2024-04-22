@@ -169,18 +169,21 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 #
 
-### `compile(cheminEntrée[, options])`
+### `compile(entrée[, options])`
 
-Compile les SCSS trouvés dans le `cheminEntrée` fourni en données CSS.
+Compile SCSS en fonction de l'entrée de chaîne fournie.
 
-Si un **chemin de fichier** est passé, le code du fichier est compilé en CSS, puis un objet contenant `srcPath` + `code` + `srcMap` + `error` est renvoyé:
+Si le **code source** est passé, il est directement compilé, puis un objet contenant `srcPath` + `code` + `srcMap` + `error` est renvoyé:
 
 ```js
-const résultatCompilation = scssToCSS.compile('assets/style.scss');
+const codeSrc = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
+      résultatCompilation = scssToCSS.compile(codeSrc);
 
 console.log(résultatCompilation.error); // génère une erreur d'exécution, ou `undefined` si aucune erreur
-console.log(résultatCompilation.code);  // génère du CSS compilé à partir de assets/style.scss
+console.log(résultatCompilation.code);  // génère du CSS minifié: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
+
+Si un **chemin de fichier** est transmis, le code du fichier est chargé puis compilé en CSS, renvoyant un objet comme ci-dessus.
 
 Si un **chemin de répertoire** est passé, les fichiers SCSS sont recherchés (de manière récursive par défaut), le code de chacun est chargé puis compilé, puis un tableau d'objets contenant `srcPath` + `code` + `srcMap` + `error` est renvoyé:
 
@@ -214,7 +217,7 @@ Nom          | Description                                                      
 
 ### `findSCSS(repRecherche[, options])`
 
-Recherche tous les fichiers SCSS dans la chaîne `repRecherche` passée (utile pour découvrir quels fichiers [`compile()`](#compilecheminentrée-options) traiteront) et renvoie un tableau contenant leurs chemins de fichiers.
+Recherche tous les fichiers SCSS dans la chaîne `repRecherche` passée (utile pour découvrir quels fichiers [`compile()`](#compileentrée-options) traiteront) et renvoie un tableau contenant leurs chemins de fichiers.
 
 Les options sont booléennes, transmises en tant que propriétés d'objet. Par exemple:
 

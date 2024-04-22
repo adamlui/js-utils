@@ -168,18 +168,21 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 #
 
-### `compile(inputPath[, options])`
+### `compile(input[, options])`
 
-CSS डेटा में प्रदान किए गए `inputPath` में पाए गए SCSS को संकलित करता है।
+आपूर्ति किए गए स्ट्रिंग इनपुट के आधार पर एससीएसएस संकलित करता है।
 
-यदि एक **फ़ाइल पथ** पास हो जाता है, तो फ़ाइल का कोड CSS पर संकलित किया जाता है, फिर `srcPath` + `code` + `srcMap` + `error` वाला एक ऑब्जेक्ट लौटाया जाता है:
+यदि **स्रोत कोड** पारित हो जाता है, तो इसे सीधे संकलित किया जाता है, फिर `srcPath` + `code` + `srcMap` + `error` वाला एक ऑब्जेक्ट वापस कर दिया जाता है:
 
 ```js
-const compileResult = scssToCSS.compile('assets/style.scss');
+const srcCode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
+      compileResult = scssToCSS.compile(srcCode);
 
 console.log(compileResult.error); // यदि कोई त्रुटि नहीं है तो रनटाइम त्रुटि, या `undefined` आउटपुट करता है
-console.log(compileResult.code);  // assets/style.css से संकलित CSS को आउटपुट करता है
+console.log(compileResult.code);  // आउटपुट छोटा सीएसएस: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
+
+यदि **फ़ाइल पथ** पारित हो जाता है, तो फ़ाइल का कोड लोड किया जाता है और फिर सीएसएस में संकलित किया जाता है, जो उपरोक्त जैसा एक ऑब्जेक्ट लौटाता है।
 
 यदि एक **निर्देशिका पथ** पारित किया जाता है, तो SCSS फ़ाइलें खोजी जाती हैं (डिफ़ॉल्ट रूप से पुनरावर्ती), प्रत्येक का कोड लोड किया जाता है और फिर संकलित किया जाता है, फिर `srcPath` + `code` + `srcMap` + `error` युक्त ऑब्जेक्ट की एक सरणी वापस की जाती है:
 
@@ -213,7 +216,7 @@ scssToCSS.compile(inputDir, { minify: false });
 
 ### `findSCSS(searchDir[, options])`
 
-पारित `searchDir` स्ट्रिंग के भीतर सभी SCSS फ़ाइलों की खोज करता है (यह पता लगाने के लिए उपयोगी है कि कौन सी फ़ाइलें [`compile()`](#compileinputpath-options) संसाधित होंगी) और उनके फ़ाइलपथ वाली एक सरणी लौटाता है।
+पारित `searchDir` स्ट्रिंग के भीतर सभी SCSS फ़ाइलों की खोज करता है (यह पता लगाने के लिए उपयोगी है कि कौन सी फ़ाइलें [`compile()`](#compileinput-options) संसाधित होंगी) और उनके फ़ाइलपथ वाली एक सरणी लौटाता है।
 
 विकल्प बूलियन हैं, ऑब्जेक्ट गुणों के रूप में पारित किए गए हैं। उदाहरण के लिए:
 

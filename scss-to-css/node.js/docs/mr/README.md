@@ -169,18 +169,21 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 #
 
-### `compile(inputPath[, options])`
+### `compile(input[, options])`
 
-CSS डेटामध्ये प्रदान केलेल्या `इनपुटपाथ` मध्ये SCSS संकलित करते.
+पुरवलेल्या स्ट्रिंग इनपुटवर आधारित SCSS संकलित करते.
 
-**फाइल पथ** पास केल्यास, फाइलचा कोड CSS वर संकलित केला जातो, त्यानंतर `srcPath` + `code` + `srcMap` + `error` असलेला ऑब्जेक्ट परत केला जातो:
+**स्रोत कोड** पास केल्यास, तो थेट संकलित केला जातो, त्यानंतर `srcPath` + `code` + `srcMap` + `error` असलेली एखादी वस्तू परत केली जाते:
 
 ```js
-const compileResult = scssToCSS.compile('assets/style.scss');
+const srcCode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
+      compileResult = scssToCSS.compile(srcCode);
 
 console.log(compileResult.error); // रनटाइम त्रुटी आउटपुट करते, किंवा त्रुटी नसल्यास `undefined`
-console.log(compileResult.code);  // assets/style.css वरून CSS संकलित आउटपुट
+console.log(compileResult.code);  // आउटपुट minified CSS: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
+
+जर **फाइल पथ** पास झाला असेल, तर फाइलचा कोड लोड केला जातो आणि नंतर CSS वर संकलित केला जातो, वरीलप्रमाणे ऑब्जेक्ट परत करतो.
 
 **डिरेक्टरी पाथ** पास केल्यास, SCSS फायली शोधल्या जातात (पुन्हा डीफॉल्टनुसार), प्रत्येकाचा कोड लोड केला जातो आणि संकलित केला जातो, त्यानंतर `srcPath` + `code` + `srcMap` + `error` समाविष्ट असलेल्या ऑब्जेक्ट्सचा ॲरे दिला जातो:
 
@@ -214,7 +217,7 @@ scssToCSS.compile(inputDir, { minify: false });
 
 ### `findSCSS(searchDir[, options])`
 
-पास केलेल्या `searchDir` स्ट्रिंगमधील सर्व SCSS फायली शोधते (कोणत्या फायली [`compile()`](#compileinputpath-options) प्रक्रिया करतील हे शोधण्यासाठी उपयुक्त) आणि त्यांचे फाइलपाथ असलेले ॲरे परत करते.
+पास केलेल्या `searchDir` स्ट्रिंगमधील सर्व SCSS फायली शोधते (कोणत्या फायली [`compile()`](#compileinput-options) प्रक्रिया करतील हे शोधण्यासाठी उपयुक्त) आणि त्यांचे फाइलपाथ असलेले ॲरे परत करते.
 
 पर्याय बुलियन आहेत, ऑब्जेक्ट गुणधर्म म्हणून पास केले जातात. उदाहरणार्थ:
 

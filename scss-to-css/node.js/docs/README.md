@@ -172,18 +172,21 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 #
 
-### `compile(inputPath[, options])`
+### `compile(input[, options])`
 
-Compiles SCSS found in the `inputPath` provided into CSS data.
+Compiles SCSS based on the string input supplied.
 
-If a **file path** is passed, the file's code is compiled to CSS, then an object containing `srcPath` + `code` + `srcMap` + `error` is returned:
+If **source code** is passed, it is directly compiled, then an object containing `srcPath` + `code` + `srcMap` + `error` is returned:
 
 ```js
-const compileResult = scssToCSS.compile('assets/style.scss');
+const srcCode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
+      compileResult = scssToCSS.compile(srcCode);
 
 console.log(compileResult.error); // outputs runtime error, or `undefined` if no error
-console.log(compileResult.code);  // outputs compiled CSS from assets/style.scss
+console.log(compileResult.code);  // outputs minified CSS: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
+
+If a **file path** is passed, the file's code is loaded then compiled to CSS, returning an object like above.
 
 If a **directory path** is passed, SCSS files are searched for (recursively by default), each one's code is loaded then compiled, then an array of objects containing `srcPath` + `code` + `srcMap` + `error` is returned:
 
@@ -217,7 +220,7 @@ Name         | Desciption                                              | Default
 
 ### `findSCSS(searchDir[, options])`
 
-Searches for all SCSS files within the `searchDir` string passed (useful for discovering what files [`compile()`](#compileinputpath-options) will process) and returns an array containing their filepaths.
+Searches for all SCSS files within the `searchDir` string passed (useful for discovering what files [`compile()`](#compileinput-options) will process) and returns an array containing their filepaths.
 
 Options are boolean, passed as object properties. For example:
 

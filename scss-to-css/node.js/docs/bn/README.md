@@ -169,18 +169,21 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 #
 
-### `compile(inputPath[, options])`
+### `compile(input[, options])`
 
-CSS ডেটাতে দেওয়া `inputPath`-এ পাওয়া SCSS সংকলন করে।
+সরবরাহকৃত স্ট্রিং ইনপুটের উপর ভিত্তি করে SCSS কম্পাইল করে।
 
-যদি একটি **ফাইল পাথ** পাস করা হয়, ফাইলের কোডটি CSS-এ কম্পাইল করা হয়, তারপর `srcPath` + `code` + `srcMap` + `error` ধারণকারী একটি অবজেক্ট রিটার্ন করা হয়:
+যদি **সোর্স কোড** পাস করা হয়, এটি সরাসরি কম্পাইল করা হয়, তারপর `srcPath` + `code` + `srcMap` + `error` সম্বলিত একটি বস্তু ফেরত দেওয়া হয়:
 
 ```js
-const compileResult = scssToCSS.compile('assets/style.scss');
+const srcCode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
+      compileResult = scssToCSS.compile(srcCode);
 
 console.log(compileResult.error); // আউটপুট রানটাইম ত্রুটি, বা `undefined` যদি কোনো ত্রুটি না থাকে
-console.log(compileResult.code);  // assets/style.scss থেকে CSS কম্পাইল করা আউটপুট
+console.log(compileResult.code);  // আউটপুট মিনিফাইড CSS: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
+
+যদি একটি **ফাইল পাথ** পাস করা হয়, তাহলে ফাইলের কোডটি লোড হয় তারপর CSS-এ কম্পাইল করা হয়, উপরের মত একটি বস্তু ফিরিয়ে দেয়।
 
 যদি একটি **ডিরেক্টরি পাথ** পাস করা হয়, SCSS ফাইলগুলি অনুসন্ধান করা হয় (পুনরাবৃত্তভাবে ডিফল্টভাবে), প্রতিটির কোড লোড করা হয় তারপর কম্পাইল করা হয়, তারপর `srcPath` + `code` + `srcMap` + `error` ধারণকারী বস্তুর একটি অ্যারে ফেরত দেওয়া হয়:
 
@@ -214,7 +217,7 @@ scssToCSS.compile(inputDir, { minify: false });
 
 ### `findSCSS(searchDir[, options])`
 
-পাস করা `searchDir` স্ট্রিং-এর মধ্যে সমস্ত SCSS ফাইলের জন্য অনুসন্ধান করে (কি ফাইলগুলি [`compile()`](#compileinputpath-options) প্রক্রিয়া করবে তা আবিষ্কার করার জন্য দরকারী) এবং তাদের ফাইলপাথ সমন্বিত একটি অ্যারে প্রদান করে।
+পাস করা `searchDir` স্ট্রিং-এর মধ্যে সমস্ত SCSS ফাইলের জন্য অনুসন্ধান করে (কি ফাইলগুলি [`compile()`](#compileinput-options) প্রক্রিয়া করবে তা আবিষ্কার করার জন্য দরকারী) এবং তাদের ফাইলপাথ সমন্বিত একটি অ্যারে প্রদান করে।
 
 বিকল্পগুলি হল বুলিয়ান, অবজেক্টের বৈশিষ্ট্য হিসাবে পাস করা হয়েছে। উদাহরণ স্বরূপ:
 

@@ -169,18 +169,21 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 #
 
-### `compile(inputPath[, options])`
+### `compile(input[, options])`
 
-将在 `inputPath` 中找到的 SCSS 编译为 CSS 数据。
+根据提供的字符串输入编译 SCSS。
 
-如果传递 **文件路径**，则文件的代码将编译为 CSS，然后返回一个包含 `srcPath` + `code` + `srcMap` + `error` 的对象：
+如果传入**源代码**，则直接编译，然后返回一个包含 `srcPath` + `code` + `srcMap` + `error` 的对象：
 
 ```js
-const compileResult = scssToCSS.compile('assets/style.scss');
+const srcCode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
+      compileResult = scssToCSS.compile(srcCode);
 
 console.log(compileResult.error); // 输出运行时错误，如果没有错误则输出 `undefined`
-console.log(compileResult.code);  // 输出从 asset/style.css 编译的 CSS
+console.log(compileResult.code);  // 输出缩小的 CSS：'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
+
+如果传递了 **文件路径**，则文件的代码将被加载，然后编译为 CSS，返回一个像上面一样的对象。
 
 如果传递 **目录路径**，则搜索 SCSS 文件（默认情况下递归），加载每个文件的代码并编译，然后返回包含 `srcPath` + `code` + `srcMap` + `error` 的对象数组：
 
@@ -214,7 +217,7 @@ scssToCSS.compile(inputDir, { minify: false });
 
 ### `findSCSS(searchDir[, options])`
 
-搜索传递的 `searchDir` 字符串中的所有 SCSS 文件（对于发现 [`compile()`](#compileinputpath-options) 将处理哪些文件很有用）并返回包含其文件路径的数组。
+搜索传递的 `searchDir` 字符串中的所有 SCSS 文件（对于发现 [`compile()`](#compileinput-options) 将处理哪些文件很有用）并返回包含其文件路径的数组。
 
 选项是布尔值，作为对象属性传递。 例如：
 

@@ -169,18 +169,21 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 #
 
-### `compile(invoerPad[, opties])`
+### `compile(invoer[, opties])`
 
-Compileert SCSS gevonden in het `invoerPad` dat is opgegeven in CSS-gegevens.
+Compileert SCSS op basis van de opgegeven stringinvoer.
 
-Als een **bestandspad** wordt doorgegeven, wordt de code van het bestand gecompileerd naar CSS, waarna een object met `srcPath` + `code` + `srcMap` + `error` wordt geretourneerd:
+Als **broncode** wordt doorgegeven, wordt deze direct gecompileerd, waarna een object met `srcPath` + `code` + `srcMap` + `error` wordt geretourneerd:
 
 ```js
-const compileResult = scssToCSS.compile('assets/style.scss');
+const broncode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
+      resultaatCompileren = scssToCSS.compile(broncode);
 
-console.log(compileResult.error); // geeft een runtimefout weer, of `undefined` als er geen fout is
-console.log(compileResult.code);  // voert gecompileerde CSS uit assets/style.scss uit
+console.log(resultaatCompileren.error); // geeft een runtimefout weer, of `undefined` als er geen fout is
+console.log(resultaatCompileren.code);  // voert verkleinde CSS uit: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
+
+Als een **bestandspad** wordt doorgegeven, wordt de code van het bestand geladen en vervolgens gecompileerd naar CSS, waarbij een object zoals hierboven wordt geretourneerd.
 
 Als een **mappad** wordt doorgegeven, wordt er naar SCSS-bestanden gezocht (standaard recursief), wordt de code van elk bestand geladen en vervolgens gecompileerd, waarna een array van objecten met `srcPath` + `code` + `srcMap` + `error` wordt geretourneerd:
 
@@ -214,7 +217,7 @@ Naam         | Beschrijving                                                     
 
 ### `findSCSS(zoekMap[, opties])`
 
-Zoekt naar alle SCSS-bestanden binnen de doorgegeven tekenreeks `zoekMap` (handig om te ontdekken welke bestanden [`compile()`](#compileinvoerpad-opties) zal verwerken) en retourneert een array met hun bestandspaden.
+Zoekt naar alle SCSS-bestanden binnen de doorgegeven tekenreeks `zoekMap` (handig om te ontdekken welke bestanden [`compile()`](#compileinvoer-opties) zal verwerken) en retourneert een array met hun bestandspaden.
 
 Opties zijn Booleaans en worden doorgegeven als objecteigenschappen. Bijvoorbeeld:
 

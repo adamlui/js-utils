@@ -169,18 +169,21 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 #
 
-### `compile(inputPath[, options])`
+### `compile(input[, options])`
 
-指定された `inputPath` で見つかった SCSS を CSS データにコンパイルします。
+指定された文字列入力に基づいて SCSS をコンパイルします。
 
-**ファイル パス**が渡された場合、ファイルのコードは CSS にコンパイルされ、`srcPath` + `code` + `srcMap` + `error` を含むオブジェクトが返されます:
+**ソース コード** が渡された場合、それは直接コンパイルされ、`srcPath` + `code` + `srcMap` + `error` を含むオブジェクトが返されます:
 
 ```js
-const compileResult = scssToCSS.compile('assets/style.scss');
+const srcCode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
+      compileResult = scssToCSS.compile(srcCode);
 
 console.log(compileResult.error); // 実行時エラーを出力するか、エラーがない場合は `undefined` を出力します
-console.log(compileResult.code);  // コンパイルされた CSS を assets/style.scss から出力します
+console.log(compileResult.code);  // 縮小されたCSSを出力します: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
+
+**ファイル パス**が渡された場合、ファイルのコードがロードされて CSS にコンパイルされ、上記のようなオブジェクトが返されます。
 
 **ディレクトリ パス**が渡された場合、SCSS ファイルが検索され (デフォルトでは再帰的)、それぞれのコードがロードされてコンパイルされ、`srcPath` + `code` + `srcMap` + `error` を含むオブジェクトの配列が返されます:
 
@@ -214,7 +217,7 @@ scssToCSS.compile(inputDir, { minify: false });
 
 ### `findSCSS(searchDir[, options])`
 
-渡された `searchDir` 文字列内のすべての SCSS ファイルを検索し ([`compile()`](#compileinputpath-options) が処理するファイルを見つけるのに役立ちます)、そのファイルパスを含む配列を返します。
+渡された `searchDir` 文字列内のすべての SCSS ファイルを検索し ([`compile()`](#compileinput-options) が処理するファイルを見つけるのに役立ちます)、そのファイルパスを含む配列を返します。
 
 オプションはブール値であり、オブジェクトのプロパティとして渡されます。 例えば：
 

@@ -169,18 +169,21 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 #
 
-### `compile(rutaEntrada[, opciones])`
+### `compile(entrada[, opciones])`
 
-Compila SCSS que se encuentra en `rutaEntrada` proporcionado en datos CSS.
+Compila SCSS basándose en la entrada de cadena proporcionada.
 
-Si se pasa una **ruta de archivo**, el código del archivo se compila en CSS y luego se devuelve un objeto que contiene `srcPath` + `code` + `srcMap` + `error`:
+Si se pasa **código fuente**, se compila directamente, luego se devuelve un objeto que contiene `srcPath` + `code` + `srcMap` + `error`:
 
 ```js
-const compilarResultado = scssToCSS.compile('assets/style.scss');
+const códigoFuente = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
+      compilarResultado = scssToCSS.compile(códigoFuente);
 
 console.log(compilarResultado.error); // genera un error de tiempo de ejecución, o `undefined` si no hay error
-console.log(compilarResultado.code);  // genera CSS compilado desde assets/style.scss
+console.log(compilarResultado.code);  // genera CSS minimizado: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
+
+Si se pasa una **ruta de archivo**, el código del archivo se carga y luego se compila en CSS, devolviendo un objeto como el anterior.
 
 Si se pasa una **ruta de directorio**, se buscan los archivos SCSS (de forma recursiva de forma predeterminada), el código de cada uno se carga, luego se compila y luego se devuelve una matriz de objetos que contiene `srcPath` + `code` + `srcMap` + `error`:
 
@@ -214,7 +217,7 @@ Nombre       | Descripción                                                     
 
 ### `findSCSS(dirBúsqueda[, opciones])`
 
-Busca todos los archivos SCSS dentro de la cadena `dirBúsqueda` pasada (útil para descubrir qué archivos procesará [`compile()`](#compilerutaEntrada-opciones)) y devuelve una matriz que contiene sus rutas de archivo.
+Busca todos los archivos SCSS dentro de la cadena `dirBúsqueda` pasada (útil para descubrir qué archivos procesará [`compile()`](#compileentrada-opciones)) y devuelve una matriz que contiene sus rutas de archivo.
 
 Las opciones son booleanas y se pasan como propiedades del objeto. Por ejemplo:
 

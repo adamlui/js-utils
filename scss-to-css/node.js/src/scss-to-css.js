@@ -65,9 +65,9 @@ function findSCSS(searchDir, options = {}) {
     return options.isRecursing || scssFiles.length > 0 ? scssFiles : [];
 }
 
-function compile(inputPath, options = {}) {
+function compile(input, options = {}) {
 
-    const docURL = 'https://docs.js-utils.com/scss-to-css/#compileinputpath-options',
+    const docURL = 'https://docs.js-utils.com/scss-to-css/#compileinput-options',
           exampleCall = 'compile(\'assets/scss\', { recursive: false, minify: false })';
 
     const defaultOptions = {
@@ -78,43 +78,35 @@ function compile(inputPath, options = {}) {
         sourceMaps: true   // generate CSS source maps
     };
 
-    // Validate inputPath
-    if (typeof inputPath != 'string') {
-            console.error('compile() » ERROR: 1st arg <inputPath> must be a string.');
-            console.info('compile() » For more help, please visit ' + docURL);
-            return;
+    // Validate input
+    if (typeof input != 'string') {
+        console.error('compile() » ERROR: 1st arg <input> must be a string.');
+        console.info('compile() » For more help, please visit ' + docURL);
+        return;
     }
-    else { // verify inputPath path existence
-        inputPath = path.resolve(process.cwd(), inputPath);
-        if (!fs.existsSync(inputPath)) {
-            console.error('compile() » ERROR: 1st arg <inputPath> must be an existing directory or file.');
-            console.error(`compile() » ${inputPath} does not exist.`);
-            console.info('compile() » For more help, please visit ' + docURL);
-            return;
-    }}
 
     // Validate/init options
     if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
     options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
-    // Compile SCSS based on inputPath
+    // Compile SCSS based on input
     const compileOptions = { style: options.minify ? 'compressed' : 'expanded', sourceMap: options.sourceMaps };
-    if (fs.existsSync(inputPath)) { // compile based on path arg
-        if (inputPath.endsWith('.scss')) { // file path passed
-            if (options.verbose) console.info(`compile() » Compiling ${inputPath}...`);
+    if (fs.existsSync(input)) { // compile based on path arg
+        if (input.endsWith('.scss')) { // file path passed
+            if (options.verbose) console.info(`compile() » Compiling ${input}...`);
             try { // to compile file passed
-                const compileResult = sass.compile(inputPath, compileOptions);
+                const compileResult = sass.compile(input, compileOptions);
                 if (options.verbose && !/cli(?:\.min)?\.js$/.test(require.main.filename))
                     console.info('compile() » Compilation complete. Check returned object.');
                 return { code: compileResult.css, srcMap: compileResult.sourceMap,
-                         srcPath: path.resolve(process.cwd(), inputPath), error: undefined };
+                         srcPath: path.resolve(process.cwd(), input), error: undefined };
             } catch (err) {
                 console.error(`\ncompile() » ERROR: ${err.message}\n`);
                 return { code: undefined, srcMap: undefined, srcPath: undefined, error: err };
             }
         } else { // dir path passed
-            const compileResult = findSCSS(inputPath, { recursive: options.recursive, verbose: options.verbose,
-                                                        dotFolders: options.dotFolders
+            const compileResult = findSCSS(input, { recursive: options.recursive, verbose: options.verbose,
+                                                    dotFolders: options.dotFolders
                 })?.map(scssPath => { // compile found SCSS files
                     if (options.verbose) console.info(`compile() » Compiling ${scssPath}...`); 
                     try { // to compile found file
@@ -133,6 +125,17 @@ function compile(inputPath, options = {}) {
                     'compile() » No SCSS files processed.');
             }
             return compileResult;            
+        }
+    } else { // compile based on src code arg
+        if (options.verbose)
+            console.info('compile() » Compiling passed source code...');
+        try { // to compile passed src code
+            const compileResult = sass.compileString(input, compileOptions);
+            return { code: compileResult.css, srcMap: compileResult.sourceMap,
+                     srcPath: undefined, error: undefined };
+        } catch (err) {
+            console.error(`\ncompile() » ERROR: ${err.message}\n`);
+            return { code: undefined, srcMap: undefined, srcPath: undefined, error: err };
         }
     }
 }

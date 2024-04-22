@@ -169,18 +169,21 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 #
 
-### `compile(inputPath[, options])`
+### `compile(input[, options])`
 
-Compila o SCSS encontrado no `inputPath` fornecido nos dados CSS.
+Compila SCSS com base na entrada de string fornecida.
 
-Se um **caminho do arquivo** for passado, o código do arquivo será compilado em CSS, então um objeto contendo `srcPath` + `code` + `srcMap` + `error` será retornado:
+Se **código fonte** for passado, ele será compilado diretamente, então um objeto contendo `srcPath` + `code` + `srcMap` + `error` será retornado:
 
 ```js
-const compileResult = scssToCSS.compile('assets/style.scss');
+const códigoFnt = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
+      compilarResultado = scssToCSS.compile(códigoFnt);
 
-console.log(compileResult.error); // gera erro de tempo de execução ou `undefined` se não houver erro
-console.log(compileResult.code);  // gera CSS compilado de assets/style.scss
+console.log(compilarResultado.error); // gera erro de tempo de execução ou `undefined` se não houver erro
+console.log(compilarResultado.code);  // gera CSS minificado: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
+
+Se um **caminho do arquivo** for passado, o código do arquivo é carregado e então compilado em CSS, retornando um objeto como acima.
 
 Se um **caminho de diretório** for passado, os arquivos SCSS serão procurados (recursivamente por padrão), o código de cada um será carregado e compilado, então um array de objetos contendo `srcPath` + `code` + `srcMap` + `error` será retornado:
 
@@ -214,7 +217,7 @@ Nome         | Descrição                                                      
 
 ### `findSCSS(searchDir[, options])`
 
-Procura todos os arquivos SCSS dentro da string `searchDir` passada (útil para descobrir quais arquivos [`compile()`](#compileinputpath-options) irão processar) e retorna um array contendo seus caminhos de arquivo.
+Procura todos os arquivos SCSS dentro da string `searchDir` passada (útil para descobrir quais arquivos [`compile()`](#compileinput-options) irão processar) e retorna um array contendo seus caminhos de arquivo.
 
 As opções são booleanas, passadas como propriedades do objeto. Por exemplo:
 

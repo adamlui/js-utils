@@ -169,18 +169,21 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 #
 
-### `compile(percorsoInput[, opzioni])`
+### `compile(input[, opzioni])`
 
-Compila SCSS trovato nel `percorsoInput` fornito nei dati CSS.
+Compila SCSS in base alla stringa di input fornita.
 
-Se viene passato un **percorso file**, il codice del file viene compilato in CSS, quindi viene restituito un oggetto contenente `srcPath` + `code` + `srcMap` + `error`:
+Se viene passato il **codice sorgente**, viene compilato direttamente, quindi viene restituito un oggetto contenente `srcPath` + `code` + `srcMap` + `error`:
 
 ```js
-const compileResult = scssToCSS.compile('assets/style.scss');
+const codiceSrg = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
+      risultatoCompilazione = scssToCSS.compile(codiceSrg);
 
-console.log(compileResult.error); // restituisce un errore di runtime o `undefined` se non è presente alcun errore
-console.log(compileResult.code);  // output compilato CSS da assets/style.scss
+console.log(risultatoCompilazione.error); // restituisce un errore di runtime o `undefined` se non è presente alcun errore
+console.log(risultatoCompilazione.code);  // restituisce CSS minimizzato: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
+
+Se viene passato un **percorso file**, il codice del file viene caricato e quindi compilato in CSS, restituendo un oggetto come sopra.
 
 Se viene passato un **percorso di direttorio**, vengono cercati i file SCSS (ricorsivamente per impostazione predefinita), il codice di ognuno viene caricato e poi compilato, quindi viene restituito un array di oggetti contenenti `srcPath` + `code` + `srcMap` + `error`:
 
@@ -214,7 +217,7 @@ Nome         | Descrizione                                                      
 
 ### `findSCSS(dirRicerca[, opzioni])`
 
-Cerca tutti i file SCSS all'interno della stringa `dirRicerca` passata (utile per scoprire quali file [`compile()`](#compilepercorsoinput-opzioni) elaboreranno) e restituisce un array contenente i relativi percorsi di file.
+Cerca tutti i file SCSS all'interno della stringa `dirRicerca` passata (utile per scoprire quali file [`compile()`](#compileinput-opzioni) elaboreranno) e restituisce un array contenente i relativi percorsi di file.
 
 Le opzioni sono booleane, passate come proprietà dell'oggetto. Per esempio:
 

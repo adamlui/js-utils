@@ -169,18 +169,21 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 #
 
-### `compile(eingabepfad[, optionen])`
+### `compile(eingang[, optionen])`
 
-Kompiliert SCSS, das im bereitgestellten `eingabepfad` gefunden wird, in CSS-Daten.
+Kompiliert SCSS basierend auf der bereitgestellten Zeichenfolgeneingabe.
 
-Wenn ein **Dateipfad** übergeben wird, wird der Code der Datei nach CSS kompiliert, dann wird ein Objekt zurückgegeben, das `srcPath` + `code` + `srcMap` + `error` enthält:
+Wenn **Quellcode** übergeben wird, wird dieser direkt kompiliert, dann wird ein Objekt zurückgegeben, das `srcPath` + `code` + `srcMap` + `error` enthält:
 
 ```js
-const kompEbnis = scssToCSS.compile('assets/style.scss');
+const quellcode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
+      kompEbnis = scssToCSS.compile(quellcode);
 
 console.log(kompEbnis.error); // gibt einen Laufzeitfehler oder `undefined` aus, wenn kein Fehler vorliegt
-console.log(kompEbnis.code);  // gibt kompiliertes CSS aus asset/style.scss aus
+console.log(kompEbnis.code);  // gibt minimiertes CSS aus: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
+
+Wenn ein **Dateipfad** übergeben wird, wird der Code der Datei geladen und dann in CSS kompiliert, wodurch ein Objekt wie oben zurückgegeben wird.
 
 Wenn ein **Verzeichnispfad** übergeben wird, wird nach SCSS-Dateien gesucht (standardmäßig rekursiv), der Code jeder Datei wird geladen und dann kompiliert, dann wird ein Array von Objekten zurückgegeben, die `srcPath` + `code` + `srcMap` + `error` enthalten:
 
@@ -214,7 +217,7 @@ Name         | Beschreibung                                                     
 
 ### `findSCSS(suchverzeichnis[, optionen])`
 
-Sucht nach allen SCSS-Dateien innerhalb der übergebenen Zeichenfolge `suchverzeichnis` (nützlich, um herauszufinden, welche Dateien [`compile()`](#compileeingabepfad-optionen) verarbeiten wird) und gibt ein Array mit ihren Dateipfaden zurück.
+Sucht nach allen SCSS-Dateien innerhalb der übergebenen Zeichenfolge `suchverzeichnis` (nützlich, um herauszufinden, welche Dateien [`compile()`](#compileeingang-optionen) verarbeiten wird) und gibt ein Array mit ihren Dateipfaden zurück.
 
 Optionen sind boolesche Werte und werden als Objekteigenschaften übergeben. Zum Beispiel:
 
