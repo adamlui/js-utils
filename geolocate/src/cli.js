@@ -16,6 +16,7 @@ const pkgName = '@adamlui/geolocate',
     const nc = '\x1b[0m',    // no color
           br = '\x1b[1;91m', // bright red
           by = '\x1b[1;33m', // bright yellow
+          bg = '\x1b[1;92m', // bright green
           bw = '\x1b[1;97m'; // bright white
 
     // Load settings from ARGS
@@ -102,7 +103,7 @@ const pkgName = '@adamlui/geolocate',
             'header': [`\n├ ${ appPrefix + copyright}`, `${ appPrefix }Source: ${srcURL}`, `${ appPrefix }Doc: ${docURL}`],
             'usage': [
                 `\n${bw}o Usage:${nc}`,
-                ` ${bw}»${nc} geolocate [ip1] [ip2] [...] [options|commands]`
+                ` ${bw}»${nc} ${bg}geolocate [ip1] [ip2] [...] [options|commands]${nc}`
             ],
             'configOptions': [
                 `\n${bw}o Config options:${nc}`,

@@ -14,6 +14,7 @@ const { ipv4 } = require(__dirname.match(/src/) ? './generate-ip' : './generate-
 const nc = '\x1b[0m',    // no color
       br = '\x1b[1;91m', // bright red
       by = '\x1b[1;33m', // bright yellow
+      bg = '\x1b[1;92m', // bright green
       bw = '\x1b[1;97m'; // bright white
 
 // Load settings from ARGS
@@ -88,7 +89,7 @@ function printHelpSections(includeSections = ['header', 'usage', 'paramOptions',
         'header': [`\n├ ${ appPrefix + copyright}`, `${ appPrefix }Source: ${srcURL}`, `${ appPrefix }Doc: ${docURL}`],
         'usage': [
             `\n${bw}o Usage:${nc}`,
-            ` ${bw}»${nc} generate-ip [options|commands]`
+            ` ${bw}»${nc} ${bg}generate-ip [options|commands]${nc}`
         ],
         'paramOptions': [
             `\n${bw}o ${bw}Parameter options:${nc}`,

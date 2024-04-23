@@ -145,7 +145,7 @@ function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'co
         'header': [`\n├ ${ appPrefix + copyright }`, `${ appPrefix }Source: ${srcURL}`, `${ appPrefix }Doc: ${docURL}`],
         'usage': [
             `\n${bw}o Usage:${nc}`,
-            `${bw} »${nc} scss-to-css [inputPath] [outputPath] [options]`
+            `${bw} »${nc} ${bg}scss-to-css [inputPath] [outputPath] [options]${nc}`
         ],
         'pathArgs': [
             `\n${bw}o Path arguments:${nc}`,

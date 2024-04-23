@@ -155,7 +155,7 @@ function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'fl
         'header': [`\n├ ${ appPrefix + copyright}`, `${ appPrefix }Source: ${srcURL}`, `${ appPrefix }Doc: ${docURL}`],
         'usage': [
             `\n${bw}o Usage:${nc}`,
-            ` ${bw}»${nc} minify-js [inputPath] [outputPath] [options]`
+            ` ${bw}»${nc} ${bg}minify-js [inputPath] [outputPath] [options]${nc}`
         ],
         'pathArgs': [
             `\n${bw}o Path arguments:${nc}`,
