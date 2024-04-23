@@ -3,8 +3,6 @@
 // Documentation: https://docs.js-utils.com/geolocate
 // Latest minified release: https://cdn.jsdelivr.net/npm/@adamlui/geolocate/dist/geolocate.min.js
 
-// Define API functions
-
 async function geolocate(ips, options = {}) {
 
     const docURL = 'https://docs.js-utils.com/geolocate/#locateip',
@@ -35,12 +33,7 @@ async function geolocate(ips, options = {}) {
         const geoData = [];
         for (const ip of ips) {
             if (options.verbose) console.info(`geolocate() » Fetching geolocation data for ${ip}...`);
-            let response;
-            if (typeof fetch != 'undefined') // web browser
-                response = await fetch(`http://ip-api.com/json/${ip}`);
-            else if (typeof require == 'function') // Node.js
-                response = await require('axios').get(`http://ip-api.com/json/${ip}`);
-            else return console.error('geolocate() » ERROR: Environment not supported.');
+            const response = await fetch(`http://ip-api.com/json/${ip}`);
             let { status, org, as, query, ...filteredData } = await response.json(); // eslint-disable-line no-unused-vars
             filteredData = { ip, ...filteredData }; geoData.push(filteredData);
         }
@@ -63,7 +56,23 @@ async function geolocate(ips, options = {}) {
     }
 }
 
-// Define INTERNAL validation function
+// Define INTERNAL functions
+
+if (typeof fetch == 'undefined') {
+    try { // to polyfill fetch() for Node.js < v21
+        const http = require('http');
+        function fetch(url) { // eslint-disable-line no-unused-vars
+            return new Promise((resolve, reject) => {
+                http.get(url, res => {
+                    let rawData = '';
+                    res.on('data', chunk => { rawData += chunk; });
+                    res.on('end', () => { resolve({  json: async () => JSON.parse(rawData) }); });
+                }).on('error', err => { reject(err); });
+        });}
+    } catch (err) { // eslint-disable-next-line no-unused-vars
+        function fetch() { return Promise.reject(new Error('Environment not supported.')); }
+    }
+}
 
 function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
