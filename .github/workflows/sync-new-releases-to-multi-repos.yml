@@ -27,9 +27,9 @@ jobs:
           # Check for multi-repo existence
           app_repos=("minify.js" "scss-to-css")
           for repo in "${app_repos[@]}" ; do
-              if [[ "$release_tag_name" == "$repo"* ]] ; then repo_exists=true ; break ; fi ; done
+            if [[ "$release_tag_name" == "$repo"* ]] ; then repo_exists=true ; break ; fi ; done
           if [ ! -v repo_exists ] ; then
-              echo "No multi-repo for $release_app_name exists. Exiting..." ; exit 0 ; fi
+            echo "No multi-repo for $release_app_name exists. Exiting..." ; exit 0 ; fi
 
           # Check for release existence in target repo
           target_release_tag_name=$(echo $release_tag_name | sed -E 's|.*-([^-]+)-([0-9.]+)|\1-v\2|')
