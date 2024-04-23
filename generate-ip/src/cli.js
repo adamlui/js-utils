@@ -87,7 +87,7 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
 function printHelpSections(includeSections = ['header', 'usage', 'paramOptions', 'flags', 'infoCmds']) {
     const appPrefix = `\x1b[106m\x1b[30m ${pkgName} ${nc} `; // bright teal bg + black fg
     const helpSections = {
-        'header': [`\n├ ${ appPrefix + copyright}`, `${ appPrefix }Source: ${srcURL}`, `${ appPrefix }Doc: ${docURL}`],
+        'header': [`\n├ ${ appPrefix + copyright}`, `${ appPrefix }Source: ${srcURL}`],
         'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}» ${bg + cmdFormat + nc}`],
         'paramOptions': [
             `\n${bw}o ${bw}Parameter options:${nc}`,
@@ -105,6 +105,7 @@ function printHelpSections(includeSections = ['header', 'usage', 'paramOptions',
     };
     includeSections.forEach(section => { // print valid arg elems
         helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)); });
+    console.info('\nFor more help, please visit: ' + bw + docURL + nc);
 
     function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
         const terminalWidth = process.stdout.columns || 80,

@@ -101,7 +101,7 @@ const pkgName = '@adamlui/geolocate',
     function printHelpSections(includeSections = ['header', 'usage', 'configOptions', 'infoCmds']) {
         const appPrefix = `\x1b[106m\x1b[30m ${pkgName.replace(/^@[^/]+\//, '')} ${nc} `; // bright teal bg + black fg
         const helpSections = {
-            'header': [`\n├ ${ appPrefix + copyright}`, `${ appPrefix }Source: ${srcURL}`, `${ appPrefix }Doc: ${docURL}`],
+            'header': [`\n├ ${ appPrefix + copyright}`, `${ appPrefix }Source: ${srcURL}`],
             'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}» ${bg + cmdFormat + nc}`],
             'configOptions': [
                 `\n${bw}o Config options:${nc}`,
@@ -115,6 +115,7 @@ const pkgName = '@adamlui/geolocate',
         };
         includeSections.forEach(section => { // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)); });
+        console.info('\nFor more help, please visit: ' + bw + docURL + nc);
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
