@@ -102,7 +102,7 @@ const pkgName = '@adamlui/geolocate',
         const appPrefix = `\x1b[106m\x1b[30m ${pkgName.replace(/^@[^/]+\//, '')} ${nc} `; // bright teal bg + black fg
         const helpSections = {
             'header': [`\n├ ${ appPrefix + copyright}`, `${ appPrefix }Source: ${srcURL}`, `${ appPrefix }Doc: ${docURL}`],
-            'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}»${nc} ${bg + cmdFormat + nc}`],
+            'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}» ${bg + cmdFormat + nc}`],
             'configOptions': [
                 `\n${bw}o Config options:${nc}`,
                 ' -q, --quiet                 Suppress all logging except errors.'

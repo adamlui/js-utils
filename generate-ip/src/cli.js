@@ -88,7 +88,7 @@ function printHelpSections(includeSections = ['header', 'usage', 'paramOptions',
     const appPrefix = `\x1b[106m\x1b[30m ${pkgName} ${nc} `; // bright teal bg + black fg
     const helpSections = {
         'header': [`\n├ ${ appPrefix + copyright}`, `${ appPrefix }Source: ${srcURL}`, `${ appPrefix }Doc: ${docURL}`],
-        'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}»${nc} ${bg + cmdFormat + nc}`],
+        'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}» ${bg + cmdFormat + nc}`],
         'paramOptions': [
             `\n${bw}o ${bw}Parameter options:${nc}`,
             ' --qty=n                     Generate n IP address(es).'
