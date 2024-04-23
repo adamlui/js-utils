@@ -153,36 +153,36 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
 function printHelpSections(includeSections = ['usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
     const helpSections = {
         'usage': [
-            `\n${bw}Usage:`,
-            ` »${nc} minify-js [inputPath] [outputPath] [options]`
+            `\n${bw}o Usage:${nc}`,
+            `${bw}»${nc} minify-js [inputPath] [outputPath] [options]`
         ],
         'pathArgs': [
-            `\n${bw}Path arguments:${nc}`,
-            ' [inputPath]                 '
+            `\n${bw}o Path arguments:${nc}`,
+            '[inputPath]                 '
                 + 'Path to JS file or directory containing JS files to be minified,'
                 + ' relative to the current working directory.',
-            ' [outputPath]                '
+            '[outputPath]                '
                 + 'Path to file or directory where minified files will be stored,'
                 + ' relative to original file location (if not provided, min/ is used).'
         ],
         'flags': [
-            `\n${bw}Boolean options:${nc}`,
-            ' -n, --dry-run               Don\'t actually minify the file(s),'
+            `\n${bw}o Boolean options:${nc}`,
+            '-n, --dry-run               Don\'t actually minify the file(s),'
                                        + ' just show if they will be processed.',
-            ' -d, --include-dotfolders    Include dotfolders in file search.',
-            ' -D, --include-dotfiles      Include dotfiles in file search.',
-            ' -R, --no-recursion          Disable recursive file searching.',
-            ' -M, --no-mangle             Disable mangling names.',
-            ' -q, --quiet                 Suppress all logging except errors.'
+            '-d, --include-dotfolders    Include dotfolders in file search.',
+            '-D, --include-dotfiles      Include dotfiles in file search.',
+            '-R, --no-recursion          Disable recursive file searching.',
+            '-M, --no-mangle             Disable mangling names.',
+            '-q, --quiet                 Suppress all logging except errors.'
         ],
         'paramOptions': [
-            `\n${bw}Parameter options:${nc}`,
-            ' --comment="comment"         Prepend comment to minified code.'
+            `\n${bw}o Parameter options:${nc}`,
+            '--comment="comment"         Prepend comment to minified code.'
         ],
         'infoCmds': [
-            `\n${bw}Info commands:${nc}`,
-            ' -h, --help                  Display help screen.',
-            ' -v, --version               Show version number.'
+            `\n${bw}o Info commands:${nc}`,
+            '-h, --help                  Display help screen.',
+            '-v, --version               Show version number.'
         ]
     };
     includeSections.forEach(section => { // print valid arg elems
@@ -190,13 +190,14 @@ function printHelpSections(includeSections = ['usage', 'pathArgs', 'flags', 'par
 
     function printHelpMsg(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
         const terminalWidth = process.stdout.columns || 80,
-              indentation = 29, lines = [], words = msg.match(/\S+|\s+/g);
+              lines = [], words = msg.match(/\S+|\s+/g),
+              indentation = 28, prefix = '|  ';
 
         // Split msg into lines of appropriate lengths
         let currentLine = '';
         words.forEach(word => {
             const lineLength = terminalWidth - ( lines.length == 0 ? 0 : indentation );
-            if (currentLine.length + word.length > lineLength) { // cap/store it
+            if (currentLine.length + prefix.length + word.length > lineLength) { // cap/store it
                 lines.push(lines.length == 0 ? currentLine : currentLine.trimStart());
                 currentLine = '';
             }
@@ -205,10 +206,10 @@ function printHelpSections(includeSections = ['usage', 'pathArgs', 'flags', 'par
         lines.push(lines.length == 0 ? currentLine : currentLine.trimStart());
 
         // Print formatted msg
-        lines.forEach((line, index) => console.info(
+        lines.forEach((line, index) => console.info(prefix + (
             index == 0 ? line // print 1st line unindented
                 : ' '.repeat(indentation) + line // print subsequent lines indented
-        ));
+        )));
     }
 }
 

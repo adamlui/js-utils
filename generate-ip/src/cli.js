@@ -86,21 +86,21 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
 function printHelpSections(includeSections = ['usage', 'paramOptions', 'flags', 'infoCmds']) {
     const helpSections = {
         'usage': [
-            `\n${bw}Usage:`,
-            ` » ${nc}generate-ip [options|commands]`
+            `\n${bw}o Usage:${nc}`,
+            `${bw}»${nc} generate-ip [options|commands]`
         ],
         'paramOptions': [
-            `\n${bw}Parameter options:${nc}`,
-            ' --qty=n                     Generate n IP address(es).'
+            `\n${bw}o ${bw}Parameter options:${nc}`,
+            '--qty=n                     Generate n IP address(es).'
         ],
         'flags': [
-            `\n${bw}Boolean options:${nc}`,
-            ' -q, --quiet                 Suppress all logging except errors.'
+            `\n${bw}o ${bw}Boolean options:${nc}`,
+            '-q, --quiet                 Suppress all logging except errors.'
         ],
         'infoCmds': [
-            `\n${bw}Info commands:${nc}`,
-            ' -h, --help                  Display help screen.',
-            ' -v, --version               Show version number.'
+            `\n${bw}o ${bw}Info commands:${nc}`,
+            '-h, --help                  Display help screen.',
+            '-v, --version               Show version number.'
         ]
     };
     includeSections.forEach(section => { // print valid arg elems
@@ -108,13 +108,14 @@ function printHelpSections(includeSections = ['usage', 'paramOptions', 'flags', 
 
     function printHelpMsg(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
         const terminalWidth = process.stdout.columns || 80,
-              indentation = 29, lines = [], words = msg.match(/\S+|\s+/g);
+              lines = [], words = msg.match(/\S+|\s+/g),
+              indentation = 28, prefix = '|  ';
 
         // Split msg into lines of appropriate lengths
         let currentLine = '';
         words.forEach(word => {
             const lineLength = terminalWidth - ( lines.length == 0 ? 0 : indentation );
-            if (currentLine.length + word.length > lineLength) { // cap/store it
+            if (currentLine.length + prefix.length + word.length > lineLength) { // cap/store it
                 lines.push(lines.length == 0 ? currentLine : currentLine.trimStart());
                 currentLine = '';
             }
@@ -123,10 +124,10 @@ function printHelpSections(includeSections = ['usage', 'paramOptions', 'flags', 
         lines.push(lines.length == 0 ? currentLine : currentLine.trimStart());
 
         // Print formatted msg
-        lines.forEach((line, index) => console.info(
+        lines.forEach((line, index) => console.info(prefix + (
             index == 0 ? line // print 1st line unindented
                 : ' '.repeat(indentation) + line // print subsequent lines indented
-        ));
+        )));
     }
 }
 
