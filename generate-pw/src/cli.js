@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-// © 2024 Adam Lui & contributors under the MIT license.
-// Source: https://code.js-utils.com/generate-pw
-
 const pkgName = 'generate-pw',
+      copyright = '© 2024 Adam Lui & contributors under the MIT license.',
+      srcURL = 'https://code.js-utils.com/generate-pw',
       docURL = 'https://docs.js-utils.com/generate-pw/#-command-line-usage';
 
 // Import LIBS
@@ -101,48 +100,50 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
     copyToClipboard(Array.isArray(pwResult) ? pwResult.join('\n') : pwResult);
 }
 
-function printHelpSections(includeSections = ['usage', 'paramOptions', 'flags', 'infoCmds']) {
+function printHelpSections(includeSections = ['header', 'usage', 'paramOptions', 'flags', 'infoCmds']) {
+    const appPrefix = `\x1b[106m\x1b[30m ${pkgName} ${nc} `; // bright teal bg + black fg
     const helpSections = {
+        'header': [`\n├ ${ appPrefix + copyright}`, `${ appPrefix }Source: ${srcURL}`, `${ appPrefix }Doc: ${docURL}`],
         'usage': [
             `\n${bw}o Usage:${nc}`,
-            `${bw}»${nc} generate-pw [options|commands]`
+            ` ${bw}»${nc} generate-pw [options|commands]`
         ],
         'paramOptions': [
             `\n${bw}o Parameter options:${nc}`,
-            '--length=n                  Generate password(s) of n length.',
-            '--qty=n                     Generate n password(s).',
-            '--charset=chars             Only include chars in password(s).',
-            '--exclude=chars             Exclude chars from password(s).'
+            ' --length=n                  Generate password(s) of n length.',
+            ' --qty=n                     Generate n password(s).',
+            ' --charset=chars             Only include chars in password(s).',
+            ' --exclude=chars             Exclude chars from password(s).'
         ],
         'flags': [
             `\n${bw}o Boolean options:${nc}`,
-            '-n, --include-numbers       Allow numbers in password(s).',
-            '-y, --include-symbols       Allow symbols in password(s).',
-            '-L, --no-lowercase          Disallow lowercase letters in password(s).',
-            '-U, --no-uppercase          Disallow uppercase letters in password(s).',
-            '-S, --no-similar            Exclude similar characters in password(s).',
-            '-s, --strict                Require at least one character from each'
+            ' -n, --include-numbers       Allow numbers in password(s).',
+            ' -y, --include-symbols       Allow symbols in password(s).',
+            ' -L, --no-lowercase          Disallow lowercase letters in password(s).',
+            ' -U, --no-uppercase          Disallow uppercase letters in password(s).',
+            ' -S, --no-similar            Exclude similar characters in password(s).',
+            ' -s, --strict                Require at least one character from each'
                                         + ' allowed character set in password(s).',
-            '-q, --quiet                 Suppress all logging except errors.'
+            ' -q, --quiet                 Suppress all logging except errors.'
         ],
         'infoCmds': [
             `\n${bw}o Info commands:${nc}`,
-            '-h, --help                  Display help screen.',
-            '-v, --version               Show version number.'
+            ' -h, --help                  Display help screen.',
+            ' -v, --version               Show version number.'
         ]
     };
     includeSections.forEach(section => { // print valid arg elems
-        helpSections[section]?.forEach(line => printHelpMsg(line)); });
+        helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)); });
 
-    function printHelpMsg(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
+    function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
         const terminalWidth = process.stdout.columns || 80,
               lines = [], words = msg.match(/\S+|\s+/g),
-              indentation = 28, prefix = '|  ';
+              prefix = '| ';
 
         // Split msg into lines of appropriate lengths
         let currentLine = '';
         words.forEach(word => {
-            const lineLength = terminalWidth - ( lines.length == 0 ? 0 : indentation );
+            const lineLength = terminalWidth - ( lines.length == 0 ? 0 : indent );
             if (currentLine.length + prefix.length + word.length > lineLength) { // cap/store it
                 lines.push(lines.length == 0 ? currentLine : currentLine.trimStart());
                 currentLine = '';
@@ -154,7 +155,7 @@ function printHelpSections(includeSections = ['usage', 'paramOptions', 'flags', 
         // Print formatted msg
         lines.forEach((line, index) => console.info(prefix + (
             index == 0 ? line // print 1st line unindented
-                : ' '.repeat(indentation) + line // print subsequent lines indented
+                : ' '.repeat(indent) + line // print subsequent lines indented
         )));
     }
 }

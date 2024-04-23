@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-// © 2024 Adam Lui & contributors under the MIT license.
-// Source: https://github.com/adamlui/scss-to-css/tree/main/node.js/src
-
 const pkgName = '@adamlui/scss-to-css',
+      srcURL = 'https://github.com/adamlui/scss-to-css/tree/main/node.js/src',
+      copyright = '© 2024 Adam Lui & contributors under the MIT license.',
       docURL = 'https://github.com/adamlui/scss-to-css/#-command-line-usage';
 
 // Import LIBS
@@ -140,49 +139,51 @@ else if (process.argv.some(arg => argRegex.version.test(arg))) {
 
 // Define LOGGING functions
 
-function printHelpSections(includeSections = ['usage', 'pathArgs', 'configOptions', 'infoCmds']) {
+function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'configOptions', 'infoCmds']) {
+    const appPrefix = `\x1b[106m\x1b[30m ${pkgName.replace(/^@[^/]+\//, '')} ${nc} `; // bright teal bg + black fg
     const helpSections = {
+        'header': [`\n├ ${ appPrefix + copyright }`, `${ appPrefix }Source: ${srcURL}`, `${ appPrefix }Doc: ${docURL}`],
         'usage': [
             `\n${bw}o Usage:${nc}`,
-            `${bw}»${nc} scss-to-css [inputPath] [outputPath] [options]`
+            `${bw} »${nc} scss-to-css [inputPath] [outputPath] [options]`
         ],
         'pathArgs': [
             `\n${bw}o Path arguments:${nc}`,
-            '[inputPath]                 '
+            ' [inputPath]                 '
                 + 'Path to SCSS file or directory containing SCSS files to be compiled,'
                 + ' relative to the current working directory.',
-            '[outputPath]                '
+            ' [outputPath]                '
                 + 'Path to file or directory where CSS + sourcemap files will be stored,'
                 + ' relative to original file location (if not provided, css/ is used).'
         ],
         'configOptions': [
             `\n${bw}o Config options:${nc}`,
-            '-n, --dry-run                Don\'t actually compile the file(s),'
+            ' -n, --dry-run               Don\'t actually compile the file(s),'
                                         + ' just show if they will be processed.',
-            '-d, --include-dotfolders     Include dotfolders in file search.',
-            '-S, --no-source-maps         Prevent source maps from being generated.',
-            '-M, --no-minify              Disable minification of output CSS.',
-            '-R, --no-recursion           Disable recursive file searching.',
-            '-q, --quiet                  Suppress all logging except errors.'
+            ' -d, --include-dotfolders    Include dotfolders in file search.',
+            ' -S, --no-source-maps        Prevent source maps from being generated.',
+            ' -M, --no-minify             Disable minification of output CSS.',
+            ' -R, --no-recursion          Disable recursive file searching.',
+            ' -q, --quiet                 Suppress all logging except errors.'
         ],
         'infoCmds': [
             `\n${bw}o Info commands:${nc}`,
-            '-h, --help                   Display help screen.',
-            '-v, --version                Show version number.'
+            ' -h, --help                  Display help screen.',
+            ' -v, --version               Show version number.'
         ]
     };
     includeSections.forEach(section => { // print valid arg elems
-        helpSections[section]?.forEach(line => printHelpMsg(line)); });
+        helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)); });
 
-    function printHelpMsg(msg) { // wrap msg + indent 2nd+ lines (for --help screen)
+    function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
         const terminalWidth = process.stdout.columns || 80,
               lines = [], words = msg.match(/\S+|\s+/g),
-              indentation = 28, prefix = '|  ';
+              prefix = '| ';
 
         // Split msg into lines of appropriate lengths
         let currentLine = '';
         words.forEach(word => {
-            const lineLength = terminalWidth - ( lines.length == 0 ? 0 : indentation );
+            const lineLength = terminalWidth - ( lines.length == 0 ? 0 : indent );
             if (currentLine.length + prefix.length + word.length > lineLength) { // cap/store it
                 lines.push(lines.length == 0 ? currentLine : currentLine.trimStart());
                 currentLine = '';
@@ -194,7 +195,7 @@ function printHelpSections(includeSections = ['usage', 'pathArgs', 'configOption
         // Print formatted msg
         lines.forEach((line, index) => console.info(prefix + (
             index == 0 ? line // print 1st line unindented
-                : ' '.repeat(indentation) + line // print subsequent lines indented
+                : ' '.repeat(indent) + line // print subsequent lines indented
         )));
     }
 }
