@@ -2,6 +2,7 @@
 
 const pkgName = '@adamlui/minify.js',
       copyright = '© 2024 Adam Lui & contributors under the MIT license.',
+      cmdFormat = 'minify-js [inputPath] [outputPath] [options]',
       srcURL = 'https://code.minify-js.org/node.js',
       docURL = 'https://docs.minify-js.org/#-command-line-usage';
 
@@ -153,10 +154,7 @@ function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'fl
     const appPrefix = `\x1b[106m\x1b[30m ${pkgName.replace(/^@[^/]+\//, '')} ${nc} `; // bright teal bg + black fg
     const helpSections = {
         'header': [`\n├ ${ appPrefix + copyright}`, `${ appPrefix }Source: ${srcURL}`, `${ appPrefix }Doc: ${docURL}`],
-        'usage': [
-            `\n${bw}o Usage:${nc}`,
-            ` ${bw}»${nc} ${bg}minify-js [inputPath] [outputPath] [options]${nc}`
-        ],
+        'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}»${nc} ${bg + cmdFormat + nc}`],
         'pathArgs': [
             `\n${bw}o Path arguments:${nc}`,
             ' [inputPath]                 '

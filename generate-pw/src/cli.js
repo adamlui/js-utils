@@ -2,6 +2,7 @@
 
 const pkgName = 'generate-pw',
       copyright = '© 2024 Adam Lui & contributors under the MIT license.',
+      cmdFormat = 'generate-pw [options|commands]',
       srcURL = 'https://code.js-utils.com/generate-pw',
       docURL = 'https://docs.js-utils.com/generate-pw/#-command-line-usage';
 
@@ -105,10 +106,7 @@ function printHelpSections(includeSections = ['header', 'usage', 'paramOptions',
     const appPrefix = `\x1b[106m\x1b[30m ${pkgName} ${nc} `; // bright teal bg + black fg
     const helpSections = {
         'header': [`\n├ ${ appPrefix + copyright}`, `${ appPrefix }Source: ${srcURL}`, `${ appPrefix }Doc: ${docURL}`],
-        'usage': [
-            `\n${bw}o Usage:${nc}`,
-            ` ${bw}»${nc} ${bg}generate-pw [options|commands]${nc}`
-        ],
+        'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}»${nc} ${bg + cmdFormat + nc}`],
         'paramOptions': [
             `\n${bw}o Parameter options:${nc}`,
             ' --length=n                  Generate password(s) of n length.',

@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
 const pkgName = '@adamlui/scss-to-css',
-      srcURL = 'https://github.com/adamlui/scss-to-css/tree/main/node.js/src',
       copyright = '© 2024 Adam Lui & contributors under the MIT license.',
+      cmdFormat = 'scss-to-css [inputPath] [outputPath] [options]',
+      srcURL = 'https://github.com/adamlui/scss-to-css/tree/main/node.js/src',
       docURL = 'https://github.com/adamlui/scss-to-css/#-command-line-usage';
 
 // Import LIBS
@@ -143,10 +144,7 @@ function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'co
     const appPrefix = `\x1b[106m\x1b[30m ${pkgName.replace(/^@[^/]+\//, '')} ${nc} `; // bright teal bg + black fg
     const helpSections = {
         'header': [`\n├ ${ appPrefix + copyright }`, `${ appPrefix }Source: ${srcURL}`, `${ appPrefix }Doc: ${docURL}`],
-        'usage': [
-            `\n${bw}o Usage:${nc}`,
-            `${bw} »${nc} ${bg}scss-to-css [inputPath] [outputPath] [options]${nc}`
-        ],
+        'usage': [`\n${bw}o Usage:${nc}`, `${bw} »${nc} ${bg + cmdFormat + nc}`],
         'pathArgs': [
             `\n${bw}o Path arguments:${nc}`,
             ' [inputPath]                 '

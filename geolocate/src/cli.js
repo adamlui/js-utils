@@ -2,6 +2,7 @@
 
 const pkgName = '@adamlui/geolocate',
       copyright = '© 2024 Adam Lui under the MIT license.',
+      cmdFormat = 'geolocate [ip1] [ip2] [...] [options|commands]',
       srcURL = 'https://code.js-utils.com/geolocate',
       docURL = 'https://docs.js-utils.com/geolocate/#-command-line-usage';
 
@@ -101,10 +102,7 @@ const pkgName = '@adamlui/geolocate',
         const appPrefix = `\x1b[106m\x1b[30m ${pkgName.replace(/^@[^/]+\//, '')} ${nc} `; // bright teal bg + black fg
         const helpSections = {
             'header': [`\n├ ${ appPrefix + copyright}`, `${ appPrefix }Source: ${srcURL}`, `${ appPrefix }Doc: ${docURL}`],
-            'usage': [
-                `\n${bw}o Usage:${nc}`,
-                ` ${bw}»${nc} ${bg}geolocate [ip1] [ip2] [...] [options|commands]${nc}`
-            ],
+            'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}»${nc} ${bg + cmdFormat + nc}`],
             'configOptions': [
                 `\n${bw}o Config options:${nc}`,
                 ' -q, --quiet                 Suppress all logging except errors.'
