@@ -144,7 +144,7 @@ function printHelpSections(includeSections = ['usage', 'pathArgs', 'configOption
     const helpSections = {
         'usage': [
             `\n${bw}Usage:${nc}`,
-            ' scss-to-css [inputPath] [outputPath] [options]'
+            ` »${nc} scss-to-css [inputPath] [outputPath] [options]`
         ],
         'pathArgs': [
             `\n${bw}Path arguments:${nc}`,
