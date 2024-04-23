@@ -47,7 +47,7 @@
     "url": "https://github.minify-js.org/issues"
   },
   "dependencies": {
-    "@adamlui/minify.js": "^1.5.5"
+    "@adamlui/minify.js": "^1.5.6"
   },
   "funding": {
     "type": "github",
