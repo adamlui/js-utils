@@ -133,7 +133,7 @@ function printHelpSections(includeSections = ['header', 'usage', 'paramOptions',
 }
 
 function printHelpCmdAndDocURL() {
-    console.info(`\n${by}For more help, type 'generate-ip --help' or visit\n${ docURL + nc }`); }
+    console.info(`\nFor more help, type 'generate-ip --help' or visit\n${ bw + docURL + nc }`); }
 
 function copyToClipboard(data) {
     data = data.replace(/\s+$/, '').replace(/"/g, '""');

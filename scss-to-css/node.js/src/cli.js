@@ -200,6 +200,6 @@ function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'co
 }
 
 function printHelpCmdAndDocURL() {
-    console.info(`\n${by}For more help, type 'scss-to-css --help' or visit\n${ docURL + nc }`); }
+    console.info(`\nFor more help, type 'scss-to-css --help' or visit\n${ bw + docURL + nc }`); }
 
 function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }

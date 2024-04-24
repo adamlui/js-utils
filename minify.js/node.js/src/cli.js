@@ -214,6 +214,6 @@ function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'fl
 }
 
 function printHelpCmdAndDocURL() {
-    console.info(`\n${by}For more help, type 'minify-js --help' or visit\n${ docURL + nc }`); }
+    console.info(`\nFor more help, type 'minify.js --help' or visit\n${ bw + docURL + nc }`); }
 
 function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
