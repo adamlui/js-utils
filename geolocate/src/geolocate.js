@@ -33,7 +33,7 @@ async function geolocate(ips, options = {}) {
         const geoData = [];
         for (const ip of ips) {
             if (options.verbose) console.info(`geolocate() » Fetching geolocation data for ${ip}...`);
-            const response = await geoFetch(`http://ip-api.com/json/${ip}`);
+            const response = await fetchData(`http://ip-api.com/json/${ip}`);
             let { status, org, as, query, ...filteredData } = await response.json(); // eslint-disable-line no-unused-vars
             filteredData = { ip, ...filteredData }; geoData.push(filteredData);
         }
@@ -58,11 +58,11 @@ async function geolocate(ips, options = {}) {
 
 // Define INTERNAL functions
 
-let geoFetch;
+let fetchData;
 if (typeof fetch == 'function') // 2015+ browsers + Node.js v21+
-    geoFetch = fetch;
+    fetchData = fetch;
 else { try { // to polyfill for Node.js < v21
-    geoFetch = url => new Promise((resolve, reject) => {
+    fetchData = url => new Promise((resolve, reject) => {
         const protocol = url.match(/^([^:]+):\/\//)[1];
         if (!/^https?$/.test(protocol)) reject(new Error('Malformed URL.'));
         require(protocol).get(url, res => {
@@ -71,7 +71,7 @@ else { try { // to polyfill for Node.js < v21
             res.on('end', () => resolve({ json: () => JSON.parse(rawData) }));
         }).on('error', reject);
     });
-} catch (err) { geoFetch = () => Promise.reject(new Error('Environment not supported.')); }}
+} catch (err) { fetchData = () => Promise.reject(new Error('Environment not supported.')); }}
 
 function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
