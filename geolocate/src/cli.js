@@ -142,9 +142,6 @@ const pkgName = '@adamlui/geolocate',
         }
     }
 
-    function printHelpCmdAndDocURL() {
-        console.info(`\nFor more help, type 'geolocate --help' or visit\n${ bw + docURL + nc }`); }
-
     function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
 
     function copyToClipboard(data) {
