@@ -58,20 +58,22 @@ async function geolocate(ips, options = {}) {
 
 // Define INTERNAL functions
 
-let fetchData;
-if (typeof fetch == 'function') // 2015+ browsers + Node.js v21+
-    fetchData = fetch;
-else { try { // to polyfill for Node.js < v21
-    fetchData = url => new Promise((resolve, reject) => {
-        const protocol = url.match(/^([^:]+):\/\//)?.[1];
-        if (!/^https?$/.test(protocol)) reject(new Error('Invalid URL.'));
-        require(protocol).get(url, res => {
-            let rawData = '';
-            res.on('data', chunk => rawData += chunk);
-            res.on('end', () => resolve({ json: () => JSON.parse(rawData) }));
-        }).on('error', reject);
-    });
-} catch (err) { fetchData = () => Promise.reject(new Error('Environment not supported.')); }}
+function fetchData(url) {
+    if (typeof fetch == 'undefined') // polyfill for Node.js < v21
+        return new Promise((resolve, reject) => {
+            try { // to use http or https module
+                const protocol = url.match(/^([^:]+):\/\//)[1];
+                if (!/^https?$/.test(protocol)) reject(new Error('Invalid fetchData() URL.'));
+                require(protocol).get(url, res => {
+                    let rawData = '';
+                    res.on('data', chunk => rawData += chunk);
+                    res.on('end', () => resolve({ json: () => JSON.parse(rawData) }));
+                }).on('error', err => reject(new Error(err.message)));
+            } catch (err) { reject(new Error('Environment not supported.'));
+        }});
+    else // use fetch() from 2015+ browsers / Node.js v21+
+        return fetch(url);
+}
 
 function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
