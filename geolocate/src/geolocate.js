@@ -63,7 +63,7 @@ if (typeof fetch == 'function') // 2015+ browsers + Node.js v21+
     fetchData = fetch;
 else { try { // to polyfill for Node.js < v21
     fetchData = url => new Promise((resolve, reject) => {
-        const protocol = url.match(/^([^:]+):\/\//)[1];
+        const protocol = url.match(/^([^:]+):\/\//)?.[1];
         if (!/^https?$/.test(protocol)) reject(new Error('Invalid URL.'));
         require(protocol).get(url, res => {
             let rawData = '';
