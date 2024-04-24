@@ -63,7 +63,9 @@ if (typeof fetch == 'function') // 2015+ browsers + Node.js v21+
     geoFetch = fetch;
 else { try { // to polyfill for Node.js < v21
     geoFetch = url => new Promise((resolve, reject) => {
-        require('http').get(url, res => {
+        const protocol = url.match(/^([^:]+):\/\//)[1];
+        if (!/^https?$/.test(protocol)) reject(new Error('Malformed URL.'));
+        require(protocol).get(url, res => {
             let rawData = '';
             res.on('data', chunk => rawData += chunk);
             res.on('end', () => resolve({ json: () => JSON.parse(rawData) }));
