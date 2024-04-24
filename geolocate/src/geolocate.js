@@ -63,17 +63,14 @@ if (typeof fetch == 'function') // 2015+ browsers + Node.js v21+
     geoFetch = fetch;
 else { try { // to polyfill for Node.js < v21
     const http = require('http');
-    geofetch = function(url) {
-        return new Promise((resolve, reject) => {
-            http.get(url, res => {
-                let rawData = '';
-                res.on('data', chunk => { rawData += chunk; });
-                res.on('end', () => { resolve({  json: async () => JSON.parse(rawData) }); });
-            }).on('error', err => { reject(err); });
-    });}
-} catch (err) {
-    geoFetch = function() { return Promise.reject(new Error('Environment not supported.')); }}
-}
+    geoFetch = url => new Promise((resolve, reject) => {
+        http.get(url, res => {
+            let rawData = '';
+            res.on('data', chunk => { rawData += chunk; });
+            res.on('end', () => { resolve({  json: async () => JSON.parse(rawData) }); });
+        }).on('error', err => { reject(err); });
+    });
+} catch (err) { geoFetch = () => Promise.reject(new Error('Environment not supported.')); }}
 
 function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
