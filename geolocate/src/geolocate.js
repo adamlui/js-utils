@@ -66,9 +66,9 @@ else { try { // to polyfill for Node.js < v21
     geoFetch = url => new Promise((resolve, reject) => {
         http.get(url, res => {
             let rawData = '';
-            res.on('data', chunk => { rawData += chunk; });
-            res.on('end', () => { resolve({  json: async () => JSON.parse(rawData) }); });
-        }).on('error', err => { reject(err); });
+            res.on('data', chunk => rawData += chunk);
+            res.on('end', () => resolve({  json: async () => JSON.parse(rawData) }));
+        }).on('error', reject);
     });
 } catch (err) { geoFetch = () => Promise.reject(new Error('Environment not supported.')); }}
 
