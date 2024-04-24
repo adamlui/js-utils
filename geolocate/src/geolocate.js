@@ -40,7 +40,7 @@ async function geolocate(ips, options = {}) {
         if (options.verbose && (typeof require == 'undefined' || !/cli(?:\.min)?\.js$/.test(require.main.filename)))
             console.info('geolocate() » Success! Check returned array.');
         return geoData;
-    } catch (err) { console.error('geolocate() »', err); }
+    } catch (err) { console.error('geolocate() » ERROR:', err); }
 
     async function getOwnIP() {
         return ( // fetch in browser + Node.js 16+
