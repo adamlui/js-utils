@@ -52,7 +52,7 @@ process.argv.forEach(arg => {
         console.error(`\n${br}ERROR: Arg [${arg}] not recognized.${nc}`);
         console.info(`\n${by}Valid arguments are below.${nc}`);
         printHelpSections(['flags', 'paramOptions', 'infoCmds']);
-        printHelpCmdAndDocURL(); process.exit(1);
+        process.exit(1);
 }});
 
 // Show HELP screen if -h or --help passed
