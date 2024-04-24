@@ -62,9 +62,8 @@ let geoFetch;
 if (typeof fetch == 'function') // 2015+ browsers + Node.js v21+
     geoFetch = fetch;
 else { try { // to polyfill for Node.js < v21
-    const http = require('http');
     geoFetch = url => new Promise((resolve, reject) => {
-        http.get(url, res => {
+        require('http').get(url, res => {
             let rawData = '';
             res.on('data', chunk => rawData += chunk);
             res.on('end', () => resolve({  json: async () => JSON.parse(rawData) }));
