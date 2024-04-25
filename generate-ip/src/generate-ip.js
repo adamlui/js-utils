@@ -3,20 +3,6 @@
 // Documentation: https://docs.js-utils.com/generate-ip
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js
 
-// IMPORT secure crypto RNG
-let randomInt;
-try { // to use Node.js module
-    ({ randomInt } = require('crypto'));
-} catch (err) { // use browser API or JS method
-    const browserCrypto = window.crypto || window.msCrypto;
-    randomInt = (min, max) => {
-        const randomVal = browserCrypto?.getRandomValues(new Uint32Array(1))[0] / 0xFFFFFFFF || Math.random();
-        return Math.floor(randomVal * (max - min)) + min;
-    };
-}
-
-// Define APIs
-
 const ipv4 = {
 
     generate: function(options = {}) {
@@ -254,7 +240,16 @@ const ipv6 = {
     }
 };
 
-// Define INTERNAL validation function
+// Define INTERNAL functions
+
+function randomInt(min, max) {
+    if (typeof require == 'undefined') { // use browser crypto API || Math.random()
+        const browserCrypto = window.crypto || window.msCrypto,
+              randomVal = browserCrypto?.getRandomValues(new Uint32Array(1))[0] / 0xFFFFFFFF || Math.random();
+        return Math.floor(randomVal * (max - min)) + min;
+    } else // use Node.js crypto module
+        return require('crypto').randomInt(min, max);
+}
 
 function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
