@@ -11,8 +11,6 @@
   "info_copying": { "message": "Copying to clipboard" },
   "info_moreHelp": { "message": "For more help" },
   "info_visit": { "message": "visit" },
-  "info_or": { "message": "or" },
-  "info_type": { "message": "type" },
   "helpSection_usage": { "message": "Usage" },
   "helpSection_paramOptions": { "message": "Parameter options" },
   "helpSection_flags": { "message": "Boolean options" },
