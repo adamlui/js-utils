@@ -129,7 +129,7 @@ console.log(ips);
 
 ipv4.generate() » Generating IPv4 addresses...
 ipv4.generate() » IPv4 addresses generated!
-ipv4.generate() » Check returned array.
+ipv4.generate() » 194.84.176.172, 192.186.53.120, 50.191.111.87
 [ '194.84.176.172', '192.186.53.120', '50.191.111.87' ]
 */
 ```
@@ -192,7 +192,7 @@ console.log(ips);
 
 ipv6.generate() » Generating IPv6 addresses...
 ipv6.generate() » IPv6 addresses generated!
-ipv6.generate() » Check returned array.
+ipv6.generate() » 8218:19b9:7709:4282:65e1:7ee:319e:32ef, e940:754d:ae46:ae18:94dd:b43c:583:68c2, b570:b4f8:68f:62e2:99cb:ad0f:6237:9d51, 98a7:f4e5:2f4e:8a2d:56bb:dc28:f94a:46a8, ca59:590a:9b6c:ea25:94fa:37d6:9bac:7ff6
 [
   '8218:19b9:7709:4282:65e1:7ee:319e:32ef',
   'e940:754d:ae46:ae18:94dd:b43c:583:68c2',

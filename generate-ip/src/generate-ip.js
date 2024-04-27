@@ -35,12 +35,8 @@ const ipv4 = {
 
         // Log/return final result
         if (options.verbose) {
-            console.info(
-                `ipv4.generate() » IPv4 address${ options.qty > 1 ? 'es' : '' } generated!`);
-            if (options.qty == 1) console.info(
-                `ipv4.generate() » ${ipResult}`);
-            else if (typeof require == 'undefined' || !/cli(?:\.min)?\.js$/.test(require.main.filename)) console.info(
-                'ipv4.generate() » Check returned array.' );
+            console.info(`ipv4.generate() » IPv4 address${ options.qty > 1 ? 'es' : '' } generated!`);
+            console.info('ipv4.generate() » ' + ( options.qty == 1 ? ipResult : ipResult.join(', ')));
         }
         return ipResult;
     },
@@ -116,13 +112,12 @@ const ipv6 = {
             }
             ips.push(this.format(pieces.join(':'), { ...nonQtyOptions, verbose: false }));
         }
+        const ipResult = options.qty > 1 ? ips : ips[0];
 
         // Log/return final result
-        const ipResult = options.qty > 1 ? ips : ips[0];
         if (options.verbose) {
             console.info(`ipv6.generate() » IPv6 address${ options.qty > 1 ? 'es' : '' } generated!`);
-            console.info(options.qty == 1 ? `ipv6.generate() » ${ipResult}`
-                                          : 'ipv6.generate() » Check returned array.' );
+            console.info('ipv6.generate() » ' + ( options.qty == 1 ? ipResult : ipResult.join(', ')));
         }
         return ipResult;
     },
