@@ -98,7 +98,7 @@ else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
         strict: !!config.strictMode, verbose: !config.quietMode
     };
     const pwResult = generatePassword(funcOptions);
-    if (!config.quietMode) console.info('\nCopying to clipboard...');
+    printIfNotQuiet('\nCopying to clipboard...');
     copyToClipboard(Array.isArray(pwResult) ? pwResult.join('\n') : pwResult);
 }
 
@@ -162,6 +162,8 @@ function printHelpSections(includeSections = ['header', 'usage', 'paramOptions',
 
 function printHelpCmdAndDocURL() {
     console.info(`\nFor more help, type 'generate-pw --help' or visit\n${ bw + docURL + nc }`); }
+
+function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
 
 function copyToClipboard(data) {
     data = data.replace(/\s+$/m, '').replace(/"/g, '""');
