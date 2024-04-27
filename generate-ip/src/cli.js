@@ -39,12 +39,12 @@ const pkgName = 'generate-ip',
             try { // to return localized messages.json
                 const msgs = await resp.json(), flatMsgs = {};
                 for (const key in msgs)  // remove need to ref nested keys
-                    if (typeof msgs[key] === 'object' && msgs[key] !== null && 'message' in msgs[key])
+                    if (typeof msgs[key] == 'object' && 'message' in msgs[key])
                         flatMsgs[key] = msgs[key].message;
                 resolve(flatMsgs);
             } catch (err) { // if bad response
                 msgFetchTries++; if (msgFetchTries == 3) return resolve({}); // try up to 3X (original/region-stripped/EN) only
-                msgHref = langCode.includes('-') && msgFetchTries === 1 ? // if regional lang on 1st try...
+                msgHref = langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                     msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
                         : ( msgHostDir + 'en/messages.json' ); // else use default English messages
                 fetchData(msgHref).then(onLoad).catch(reject);
