@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui & beşdar di bin lîsansa MIT de" },
+  "prefix_error": { "message": "ÇEWTÎ" },
+  "prefix_globalVer": { "message": "Guhertoya gerdûnî" },
+  "prefix_localVer": { "message": "Guhertoya herêmî" },
+  "prefix_source": { "message": "Çavkanî" },
+  "error_noEqual": { "message": "&#39;=&#39; pêwîstî bi nirxek heye" },
+  "error_notRecognized": { "message": "nayê naskirin" },
+  "error_nonPositiveNum": { "message": "arguman tenê dikare&gt; 0 be" },
+  "error_invalidURL": { "message": "URL ya nederbasdar" },
+  "info_validArgs": { "message": "Argumanên derbasdar li jêr in" },
+  "info_copying": { "message": "Kopîkirina li ser clipboard" },
+  "info_moreHelp": { "message": "Ji bo bêtir alîkariyê" },
+  "info_visit": { "message": "سەرلێدان، سەردان، قسە لەگەڵ کردن، تووش بوون (بەڵا)، سزادان، سەردانی دەکات، پشکنین، گەڕان لە" },
+  "helpSection_usage": { "message": "RûpelkerName" },
+  "helpSection_paramOptions": { "message": "Vebijarkên Parameterê" },
+  "helpSection_flags": { "message": "Vebijarkên Boolean" },
+  "helpSection_infoCmds": { "message": "Fermanên agahdariyê" },
+  "optionDesc_qty": { "message": "n navnîşanên IP-ê çêbikin" },
+  "optionDesc_quiet": { "message": "Hemî têketinê ji bilî xeletiyan bişkînin" },
+  "optionDesc_help": { "message": "Dîmendera alîkariyê nîşan bide" },
+  "optionDesc_version": { "message": "IRQ" }
+}

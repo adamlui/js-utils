@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui & bidragydere under MIT-licensen" },
+  "prefix_error": { "message": "FEJL" },
+  "prefix_globalVer": { "message": "Global version" },
+  "prefix_localVer": { "message": "Lokal version" },
+  "prefix_source": { "message": "Kilde" },
+  "error_noEqual": { "message": "kræver '=' efterfulgt af en værdi" },
+  "error_notRecognized": { "message": "Ikke genkendt Ingen" },
+  "error_nonPositiveNum": { "message": "argument kan kun være > 0" },
+  "error_invalidURL": { "message": "Ugyldig URL" },
+  "info_validArgs": { "message": "Gyldige argumenter er nedenfor" },
+  "info_copying": { "message": "Kopierer til udklipsholder" },
+  "info_moreHelp": { "message": "Få mere hjælp" },
+  "info_visit": { "message": "besøg" },
+  "helpSection_usage": { "message": "Anvendelse" },
+  "helpSection_paramOptions": { "message": "Parameterindstillinger" },
+  "helpSection_flags": { "message": "Boolske muligheder" },
+  "helpSection_infoCmds": { "message": "INFO-kommandoer" },
+  "optionDesc_qty": { "message": "Generer n IP-adresse(r)" },
+  "optionDesc_quiet": { "message": "Undertrykke al logning undtagen fejl" },
+  "optionDesc_help": { "message": "Vis hjælpeskærm" },
+  "optionDesc_version": { "message": "Vis versionsnummer" }
+}

@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui & contributeurs sous licence MIT" },
+  "prefix_error": { "message": "ERREUR" },
+  "prefix_globalVer": { "message": "Version globale" },
+  "prefix_localVer": { "message": "Version locale" },
+  "prefix_source": { "message": "Source" },
+  "error_noEqual": { "message": "nécessite '=' suivi d'une valeur" },
+  "error_notRecognized": { "message": "Non-reconnu" },
+  "error_nonPositiveNum": { "message": "argument ne peut être > 0" },
+  "error_invalidURL": { "message": "URL Invalide" },
+  "info_validArgs": { "message": "Les arguments valides sont ci-dessous" },
+  "info_copying": { "message": "Copie vers le Presse-Papiers..." },
+  "info_moreHelp": { "message": "Pour plus d’aide" },
+  "info_visit": { "message": "visite" },
+  "helpSection_usage": { "message": "Usage" },
+  "helpSection_paramOptions": { "message": "Options de paramètres" },
+  "helpSection_flags": { "message": "Options:" },
+  "helpSection_infoCmds": { "message": "Commandes info" },
+  "optionDesc_qty": { "message": "Générer n adresse(s) IP" },
+  "optionDesc_quiet": { "message": "Supprimer tous les journaux sauf les erreurs" },
+  "optionDesc_help": { "message": "Affichage de l’aide" },
+  "optionDesc_version": { "message": "Affiche le numéro de la version" }
+}

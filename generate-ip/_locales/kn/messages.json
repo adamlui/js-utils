@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 ಆಡಮ್ ಲೂಯಿ ಮತ್ತು ಎಂಐಟಿ ಪರವಾನಗಿ ಅಡಿಯಲ್ಲಿ ಕೊಡುಗೆದಾರರು" },
+  "prefix_error": { "message": "ದೋಷ" },
+  "prefix_globalVer": { "message": "ಜಾಗತಿಕ ಆವೃತ್ತಿ" },
+  "prefix_localVer": { "message": "ಸ್ಥಳೀಯ ಆವೃತ್ತಿ" },
+  "prefix_source": { "message": "ಮೂಲ " },
+  "error_noEqual": { "message": "ಮೌಲ್ಯದ ನಂತರ '=' ಅಗತ್ಯವಿದೆ" },
+  "error_notRecognized": { "message": "ಗುರುತಿಸಲಾಗಿಲ್ಲ" },
+  "error_nonPositiveNum": { "message": "ಆರ್ಗ್ಯುಮೆಂಟ್ ಕೇವಲ > 0 ಆಗಿರಬಹುದು" },
+  "error_invalidURL": { "message": "ಅಮಾನ್ಯ URL" },
+  "info_validArgs": { "message": "ಮಾನ್ಯವಾದ ಆರ್ಗ್ಯುಮೆಂಟ್ ‌ ಗಳು ಕೆಳಗೆ ಇವೆ" },
+  "info_copying": { "message": "ಕ್ಲಿಪ್ ‌ ಬೋರ್ಡ್ ‌ ಗೆ ನಕಲಿಸಲಾಗುತ್ತಿದೆ" },
+  "info_moreHelp": { "message": "ಹೆಚ್ಚಿನ ಸಹಾಯಕ್ಕಾಗಿ" },
+  "info_visit": { "message": "ಭೇಟಿ" },
+  "helpSection_usage": { "message": "ಬಳಕೆ" },
+  "helpSection_paramOptions": { "message": "ಪ್ಯಾರಾಮೀಟರ್ ಆಯ್ಕೆಗಳು" },
+  "helpSection_flags": { "message": "ಬೂಲಿಯನ್ ಆಯ್ಕೆಗಳು" },
+  "helpSection_infoCmds": { "message": "ಮಾಹಿತಿ ಆಜ್ಞೆಗಳು" },
+  "optionDesc_qty": { "message": "N IP ವಿಳಾಸವನ್ನು ರಚಿಸಿ (ಗಳು)" },
+  "optionDesc_quiet": { "message": "ದೋಷಗಳನ್ನು ಹೊರತುಪಡಿಸಿ ಎಲ್ಲಾ ಲಾಗಿಂಗ್ ಅನ್ನು ನಿಗ್ರಹಿಸಿ" },
+  "optionDesc_help": { "message": "ಸಹಾಯ ಪರದೆಯನ್ನು ಪ್ರದರ್ಶಿಸಿ" },
+  "optionDesc_version": { "message": "à²®à²¾à²°à²¾à²à²à²¾à²° à²¬à²¿à²¡à³à²à²¡à³ à²¸à²à²à³à²¯à³" }
+}

@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui e collaboratori CON LICENZA MIT" },
+  "prefix_error": { "message": "ERRORE" },
+  "prefix_globalVer": { "message": "Versione globale" },
+  "prefix_localVer": { "message": "Versione locale" },
+  "prefix_source": { "message": "Origine" },
+  "error_noEqual": { "message": "richiede '=' seguito da un valore" },
+  "error_notRecognized": { "message": "non riconosciuti." },
+  "error_nonPositiveNum": { "message": "l'argomento può essere solo > 0" },
+  "error_invalidURL": { "message": "URL non valido" },
+  "info_validArgs": { "message": "Gli argomenti validi sono riportati di seguito" },
+  "info_copying": { "message": "Copia negli Appunti" },
+  "info_moreHelp": { "message": "Per ulteriore assistenza" },
+  "info_visit": { "message": "visita" },
+  "helpSection_usage": { "message": "Utilizzo" },
+  "helpSection_paramOptions": { "message": "Opzioni dei parametri" },
+  "helpSection_flags": { "message": "Opzioni booleane" },
+  "helpSection_infoCmds": { "message": "Comandi info" },
+  "optionDesc_qty": { "message": "Genera n indirizzi IP" },
+  "optionDesc_quiet": { "message": "Elimina tutte le registrazioni ad eccezione degli errori" },
+  "optionDesc_help": { "message": "Visualizza la schermata di aiuto" },
+  "optionDesc_version": { "message": "Mostra il numero di versione." }
+}

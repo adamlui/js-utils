@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui i col·laboradors sota la llicència del MIT" },
+  "prefix_error": { "message": "ERROR" },
+  "prefix_globalVer": { "message": "Versió global" },
+  "prefix_localVer": { "message": "Versió local" },
+  "prefix_source": { "message": "Font" },
+  "error_noEqual": { "message": "requereix '=' seguit d'un valor" },
+  "error_notRecognized": { "message": "no reconegut" },
+  "error_nonPositiveNum": { "message": "l'argument només pot ser > 0" },
+  "error_invalidURL": { "message": "Adreça URL no vàlida" },
+  "info_validArgs": { "message": "Els arguments vàlids són els següents" },
+  "info_copying": { "message": "S'està copiant al porta-retalls" },
+  "info_moreHelp": { "message": "Per obtenir més ajuda" },
+  "info_visit": { "message": "visita" },
+  "helpSection_usage": { "message": "Ús" },
+  "helpSection_paramOptions": { "message": "Opcions de paràmetres" },
+  "helpSection_flags": { "message": "Opcions booleanes" },
+  "helpSection_infoCmds": { "message": "Ordres d'informació" },
+  "optionDesc_qty": { "message": "Generar adreça o adreces IP" },
+  "optionDesc_quiet": { "message": "Suprimeix tot el registre, excepte els errors" },
+  "optionDesc_help": { "message": "Mostra la pantalla d'ajuda" },
+  "optionDesc_version": { "message": "Mostra el número de versió" }
+}

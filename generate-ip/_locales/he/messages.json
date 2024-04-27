@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 אדם לואי ותורמים תחת רישיון MIT" },
+  "prefix_error": { "message": "שגיאה" },
+  "prefix_globalVer": { "message": "גרסה גלובלית" },
+  "prefix_localVer": { "message": "הגרסה המקומית" },
+  "prefix_source": { "message": "מקור" },
+  "error_noEqual": { "message": "דורש '=' ולאחר מכן ערך" },
+  "error_notRecognized": { "message": "לא מזוהה" },
+  "error_nonPositiveNum": { "message": "הארגומנט יכול להיות רק > 0" },
+  "error_invalidURL": { "message": "כתובת לא תקפה" },
+  "info_validArgs": { "message": "להלן טיעונים תקפים" },
+  "info_copying": { "message": "מעתיק אל הלוח..." },
+  "info_moreHelp": { "message": "לקבלת עזרה נוספת" },
+  "info_visit": { "message": "בקר" },
+  "helpSection_usage": { "message": "שימוש" },
+  "helpSection_paramOptions": { "message": "אפשרויות פרמטר" },
+  "helpSection_flags": { "message": "אפשרויות בוליאניות" },
+  "helpSection_infoCmds": { "message": "פקודות מידע" },
+  "optionDesc_qty": { "message": "צור n כתובות IP" },
+  "optionDesc_quiet": { "message": "דיכוי כל רישומי הרישום למעט שגיאות" },
+  "optionDesc_help": { "message": "הצג מסך עזרה" },
+  "optionDesc_version": { "message": "גרסה" }
+}

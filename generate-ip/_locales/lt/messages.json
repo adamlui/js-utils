@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui ir bendraautoriai pagal MIT LICENCIJĄ" },
+  "prefix_error": { "message": "KLAIDA" },
+  "prefix_globalVer": { "message": "Visuotinė versija" },
+  "prefix_localVer": { "message": "Vietinė versija" },
+  "prefix_source": { "message": "Source" },
+  "error_noEqual": { "message": "reikia '=', po kurio eina reikšmė" },
+  "error_notRecognized": { "message": "neatpažintas" },
+  "error_nonPositiveNum": { "message": "argumentas gali būti tik > 0" },
+  "error_invalidURL": { "message": "Neteisingas URL" },
+  "info_validArgs": { "message": "Toliau pateikiami tinkami argumentai" },
+  "info_copying": { "message": "Kopijuojama į laikiną talpyklę" },
+  "info_moreHelp": { "message": "Daugiau pagalbos" },
+  "info_visit": { "message": "aplankyti" },
+  "helpSection_usage": { "message": "Naudojimasis" },
+  "helpSection_paramOptions": { "message": "Parametrų parinktys" },
+  "helpSection_flags": { "message": "Loginės parinktys" },
+  "helpSection_infoCmds": { "message": "Informacijos komandos" },
+  "optionDesc_qty": { "message": "Generuoti n IP adresą(-us)" },
+  "optionDesc_quiet": { "message": "Slėpti visus registravimus, išskyrus klaidas" },
+  "optionDesc_help": { "message": "Rodyti pagalbos ekraną" },
+  "optionDesc_version": { "message": "Versijos numeris" }
+}

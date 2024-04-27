@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui & mga kontribyutor sa ilalum sa MIT lisensya" },
+  "prefix_error": { "message": "Sayop" },
+  "prefix_globalVer": { "message": "Global nga bersyon" },
+  "prefix_localVer": { "message": "Lokal nga bersyon" },
+  "prefix_source": { "message": "Gigikanan" },
+  "error_noEqual": { "message": "nanginahanglan '=' gisundan sa usa ka bili" },
+  "error_notRecognized": { "message": "wala mailhi" },
+  "error_nonPositiveNum": { "message": "argumento lang ang pwede > 0" },
+  "error_invalidURL": { "message": "Dili balido nga URL" },
+  "info_validArgs": { "message": "Ang balido nga mga argumento anaa sa ubos" },
+  "info_copying": { "message": "Pagkopya sa clipboard" },
+  "info_moreHelp": { "message": "Alang sa dugang nga tabang" },
+  "info_visit": { "message": "duaw" },
+  "helpSection_usage": { "message": "Usage" },
+  "helpSection_paramOptions": { "message": "Mga kapilian sa parameter" },
+  "helpSection_flags": { "message": "Mga kapilian sa Boolean" },
+  "helpSection_infoCmds": { "message": "Mga mando sa info" },
+  "optionDesc_qty": { "message": "Genera n IP adresa(es)" },
+  "optionDesc_quiet": { "message": "Pugngan ang tanan nga pag-log gawas sa mga sayup" },
+  "optionDesc_help": { "message": "Ipakita ang screen sa tabang" },
+  "optionDesc_version": { "message": "Ipakita ang numero sa bersyon" }
+}

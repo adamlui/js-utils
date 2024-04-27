@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 آدم لوي والمساهمون بموجب ترخيص معهد ماساتشوستس للتكنولوجيا" },
+  "prefix_error": { "message": "خطأ" },
+  "prefix_globalVer": { "message": "الإصدار العالمي" },
+  "prefix_localVer": { "message": "الإصدار المحلي" },
+  "prefix_source": { "message": "Source" },
+  "error_noEqual": { "message": "يتطلب '=' متبوعًا بقيمة" },
+  "error_notRecognized": { "message": "غير معترف بها." },
+  "error_nonPositiveNum": { "message": "يمكن أن تكون الوسيطة > 0 فقط" },
+  "error_invalidURL": { "message": "الرابط غير صحيح" },
+  "info_validArgs": { "message": "الحجج الصالحة أدناه" },
+  "info_copying": { "message": "لصق من الحافظة... user on host" },
+  "info_moreHelp": { "message": "لمزيد من المساعدة" },
+  "info_visit": { "message": "قم بزيارة" },
+  "helpSection_usage": { "message": "الإستخدام" },
+  "helpSection_paramOptions": { "message": "خيارات المتغير" },
+  "helpSection_flags": { "message": "خيارات منطقية" },
+  "helpSection_infoCmds": { "message": "أوامر المعلومات" },
+  "optionDesc_qty": { "message": "إنشاء عنوان(عناوين) IP" },
+  "optionDesc_quiet": { "message": "قم بإيقاف جميع عمليات التسجيل باستثناء الأخطاء" },
+  "optionDesc_help": { "message": "عرض شاشة المساعدة" },
+  "optionDesc_version": { "message": "رقم الإصدار" }
+}

@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui i suradnici pod licencom MIT-A" },
+  "prefix_error": { "message": "POGREŠKA" },
+  "prefix_globalVer": { "message": "Globalna verzija" },
+  "prefix_localVer": { "message": "Lokalna verzija" },
+  "prefix_source": { "message": "Izvor" },
+  "error_noEqual": { "message": "zahtijeva '=' nakon čega slijedi vrijednost" },
+  "error_notRecognized": { "message": "Ne raspoznato" },
+  "error_nonPositiveNum": { "message": "argument može biti samo > 0" },
+  "error_invalidURL": { "message": "Neispravna URL adresa" },
+  "info_validArgs": { "message": "Ispod su valjani argumenti" },
+  "info_copying": { "message": "Kopiranje u međuspremnik..." },
+  "info_moreHelp": { "message": "Za dodatnu pomoć" },
+  "info_visit": { "message": "posjet" },
+  "helpSection_usage": { "message": "Uporaba" },
+  "helpSection_paramOptions": { "message": "Parametri opcija BLM" },
+  "helpSection_flags": { "message": "Booleove opcije" },
+  "helpSection_infoCmds": { "message": "Info naredbe" },
+  "optionDesc_qty": { "message": "Generiraj n IP adresa" },
+  "optionDesc_quiet": { "message": "Obustavi sve zapisivanje osim pogrešaka" },
+  "optionDesc_help": { "message": "Prikažite zaslon za pomoć" },
+  "optionDesc_version": { "message": "Verzioniranje softvera" }
+}

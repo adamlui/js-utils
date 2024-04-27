@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui & stuðlar undir MIT-lisensuni" },
+  "prefix_error": { "message": "BREK" },
+  "prefix_globalVer": { "message": "Globalt útgáva" },
+  "prefix_localVer": { "message": "Lokalu útgávan" },
+  "prefix_source": { "message": "Kelda:" },
+  "error_noEqual": { "message": "tað krevur \"=\" eftirfylgt av einum virði" },
+  "error_notRecognized": { "message": "ikki viðurkennd" },
+  "error_nonPositiveNum": { "message": "argument kann bert vera > 0" },
+  "error_invalidURL": { "message": "Ógildugt URL" },
+  "info_validArgs": { "message": "Góðu argumentini niðanfyri" },
+  "info_copying": { "message": "At koppa á klippborðið" },
+  "info_moreHelp": { "message": "Fyri at fáa meira hjálp" },
+  "info_visit": { "message": "Vitja" },
+  "helpSection_usage": { "message": "Brúka" },
+  "helpSection_paramOptions": { "message": "Parametrar valmøguleikar" },
+  "helpSection_flags": { "message": "Boolean valmøguleikar" },
+  "helpSection_infoCmds": { "message": "Upplýsingar boð" },
+  "optionDesc_qty": { "message": "IP-adressurat kanna" },
+  "optionDesc_quiet": { "message": "Undirskriva allar innmeldingar uttan feil" },
+  "optionDesc_help": { "message": "Vís hjálparskjá" },
+  "optionDesc_version": { "message": "Vís útgávu nr." }
+}

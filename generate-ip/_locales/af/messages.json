@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui & bydraers onder die MIT-lisensie" },
+  "prefix_error": { "message": "FOUT" },
+  "prefix_globalVer": { "message": "Globale weergawe" },
+  "prefix_localVer": { "message": "Plaaslike weergawe" },
+  "prefix_source": { "message": "Oorsprong" },
+  "error_noEqual": { "message": "vereis '=' gevolg deur 'n waarde" },
+  "error_notRecognized": { "message": "nie erken nie" },
+  "error_nonPositiveNum": { "message": "argument kan net wees > 0" },
+  "error_invalidURL": { "message": "Ongeldige URL" },
+  "info_validArgs": { "message": "Geldige argumente is onder" },
+  "info_copying": { "message": "Besig om te kopiëer na klipbord..." },
+  "info_moreHelp": { "message": "Vir meer hulp" },
+  "info_visit": { "message": "keiur" },
+  "helpSection_usage": { "message": "Gebruik" },
+  "helpSection_paramOptions": { "message": "Parameter opsies" },
+  "helpSection_flags": { "message": "Boolse opsies" },
+  "helpSection_infoCmds": { "message": "Inligtingopdragte" },
+  "optionDesc_qty": { "message": "Genereer n IP-adres(es)" },
+  "optionDesc_quiet": { "message": "Onderdruk alle aanmelding behalwe foute" },
+  "optionDesc_help": { "message": "Vertoon hulp skerm" },
+  "optionDesc_version": { "message": " Naam van die Vertoon" }
+}

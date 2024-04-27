@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui & συνεργάτες υπό την άδεια του MIT" },
+  "prefix_error": { "message": "ΣΦΑΛΜΑ" },
+  "prefix_globalVer": { "message": "Καθολική έκδοση" },
+  "prefix_localVer": { "message": "Τοπική έκδοση" },
+  "prefix_source": { "message": "Source" },
+  "error_noEqual": { "message": "απαιτεί '=' ακολουθούμενο από μια τιμή" },
+  "error_notRecognized": { "message": "που δεν αναγνωρίζονται" },
+  "error_nonPositiveNum": { "message": "το όρισμα μπορεί να είναι μόνο > 0" },
+  "error_invalidURL": { "message": "Μη έγκυρo URL" },
+  "info_validArgs": { "message": "Τα έγκυρα ορίσματα είναι παρακάτω" },
+  "info_copying": { "message": "Αντιγραφή στο πρόχειρο" },
+  "info_moreHelp": { "message": "Για περισσότερη βοήθεια:" },
+  "info_visit": { "message": "επίσκεψη" },
+  "helpSection_usage": { "message": "Χρήση" },
+  "helpSection_paramOptions": { "message": "Επιλογές παραμέτρων" },
+  "helpSection_flags": { "message": "Δυαδικές επιλογές" },
+  "helpSection_infoCmds": { "message": "Εντολές πληροφοριών" },
+  "optionDesc_qty": { "message": "Δημιουργία n διευθύνσεων IP" },
+  "optionDesc_quiet": { "message": "Καταργήστε όλες τις καταγραφές εκτός από τα σφάλματα" },
+  "optionDesc_help": { "message": "Εμφάνιση οθόνης βοήθειας" },
+  "optionDesc_version": { "message": "Αριθμός έκδοσης" }
+}

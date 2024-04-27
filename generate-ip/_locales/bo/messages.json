@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 ཨ་དམ་ལུའུ་དང་MITགི་ལག་ཁྱེར་འོག་གི་ལས་རོགས་" },
+  "prefix_error": { "message": "ནོར་འཁྲུལ།" },
+  "prefix_globalVer": { "message": "འཛམ་གླིང་གི་འགྲེལ་བཤད །" },
+  "prefix_localVer": { "message": "ས་གནས་ཀྱི་འགྲེལ་བཤད །" },
+  "prefix_source": { "message": "འབྱུང་ཁུངས །" },
+  "error_noEqual": { "message": "དགོས་མཁོ་=' རྗེས་སུ་འཇུག་པའི་གོང་ཚད་" },
+  "error_notRecognized": { "message": "ངོ་མི་ཤེས་པ" },
+  "error_nonPositiveNum": { "message": "གྲོས་བསྡུར་བྱེད་ནུས་པ་གཅིག་པུ་> 0" },
+  "error_invalidURL": { "message": "མ་འོས་པའི་དྲ་ཚིགས །" },
+  "info_validArgs": { "message": "ཕྱོགས་སྟོན ། གཙོ་ངོས ། \"རྩོམ་རིག\" རྩོམ་རིག \"" },
+  "info_copying": { "message": "སྒྲིག་འཇུག་བྱས་ཚད ། ཐེངས་10 ལས་ཉུང་བ ། ཐོན་རིམ་5.7.1 ནང་དུ་ཚོད་ལྟ་བྱས་" },
+  "info_moreHelp": { "message": "སྐྱབས་གྲོགས་ཀྱི་ཆེད་དུ་" },
+  "info_visit": { "message": "བལྟ།" },
+  "helpSection_usage": { "message": "བཀོལ་སྤྱོད །" },
+  "helpSection_paramOptions": { "message": "ཚད་འཇལ་བྱེད་ཀྱི་འདེམས་སྟངས" },
+  "helpSection_flags": { "message": "Boolean Options" },
+  "helpSection_infoCmds": { "message": "བརྡ་དོན་བཀའ་སློབ །" },
+  "optionDesc_qty": { "message": "IP Address(s) བཟོ་དགོས །" },
+  "optionDesc_quiet": { "message": "འཛོལ་བ་མ་གཏོགས་གཞན་གྱི་མིང་ཐོ་ཚང་མ་ཕྱིར་འབུད་བྱེད་པ" },
+  "optionDesc_help": { "message": "རོགས་རམ་བརྙན་རིས་མངོན་འཆར" },
+  "optionDesc_version": { "message": "ཤོག་ངོས་ཀྱི་གྲངས་ཀ་སྟོན་པ" }
+}

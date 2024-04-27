@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Адам Луи & MIT лицензиясы боюнча салым кошуучулар" },
+  "prefix_error": { "message": "Ката" },
+  "prefix_globalVer": { "message": "Глобалдык версия" },
+  "prefix_localVer": { "message": "Жергиликтүү версия" },
+  "prefix_source": { "message": "Булак" },
+  "error_noEqual": { "message": "талаптар '=' бир маани менен ээрчип" },
+  "error_notRecognized": { "message": "табылган жок" },
+  "error_nonPositiveNum": { "message": "аргумент гана болушу мүмкүн > 0" },
+  "error_invalidURL": { "message": "Туура эмес дарек" },
+  "info_validArgs": { "message": "Жарактуу аргументтер төмөндө келтирилген" },
+  "info_copying": { "message": "Алмашуу буферине көчүрүү" },
+  "info_moreHelp": { "message": "Көбүрөөк маалымат алуу үчүн" },
+  "info_visit": { "message": "иш сапары" },
+  "helpSection_usage": { "message": "Колдонулушу:" },
+  "helpSection_paramOptions": { "message": "Параметр параметрлери" },
+  "helpSection_flags": { "message": "Boolean параметрлери" },
+  "helpSection_infoCmds": { "message": "Маалымат буйруктары" },
+  "optionDesc_qty": { "message": "Н IP дарегин(даректерин) жаратуу" },
+  "optionDesc_quiet": { "message": "Каталардан башка бардык жазууларды басуу" },
+  "optionDesc_help": { "message": "Жардам экранын көрсөтүү" },
+  "optionDesc_version": { "message": "Версиянын номерин көрсөтүү" }
+}

@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui və MIT lisenziyası əsasında töhfə verənlər" },
+  "prefix_error": { "message": "XƏTA" },
+  "prefix_globalVer": { "message": "Qlobal versiya" },
+  "prefix_localVer": { "message": "Yerli versiya" },
+  "prefix_source": { "message": "Mənbə" },
+  "error_noEqual": { "message": "'=' sonra dəyər tələb edir" },
+  "error_notRecognized": { "message": "tanınmayıb" },
+  "error_nonPositiveNum": { "message": "arqument yalnız > 0 ola bilər" },
+  "error_invalidURL": { "message": "Yanlış URL" },
+  "info_validArgs": { "message": "Etibarlı arqumentlər aşağıda göstərilib" },
+  "info_copying": { "message": "Mübadilə buferinə kopyal" },
+  "info_moreHelp": { "message": "Daha çox yardım üçün" },
+  "info_visit": { "message": "ziyarət" },
+  "helpSection_usage": { "message": "İsmarış" },
+  "helpSection_paramOptions": { "message": "Parametr seçimləri" },
+  "helpSection_flags": { "message": "Buolean seçimləri" },
+  "helpSection_infoCmds": { "message": "Məlumat əmrləri" },
+  "optionDesc_qty": { "message": "N İP ünvan(lar) ı yaradın" },
+  "optionDesc_quiet": { "message": "Xətalardan başqa bütün girişləri bağlayın" },
+  "optionDesc_help": { "message": "Yardım ekranını göstər" },
+  "optionDesc_version": { "message": "Versiya nömrəsini göstər" }
+}

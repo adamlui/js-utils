@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui & avustajat MIT-lisenssillä" },
+  "prefix_error": { "message": "VIRHE" },
+  "prefix_globalVer": { "message": "Globaali versio" },
+  "prefix_localVer": { "message": "Paikallinen versio" },
+  "prefix_source": { "message": "Lähde" },
+  "error_noEqual": { "message": "vaatii '=', jota seuraa arvo" },
+  "error_notRecognized": { "message": "ei tunnistettu" },
+  "error_nonPositiveNum": { "message": "argumentti voi olla vain > 0" },
+  "error_invalidURL": { "message": "Virheellinen URL" },
+  "info_validArgs": { "message": "Kelvolliset argumentit ovat alla" },
+  "info_copying": { "message": "Kopioin leikepöydälle..." },
+  "info_moreHelp": { "message": "Saat lisäohjeita" },
+  "info_visit": { "message": "vieraile" },
+  "helpSection_usage": { "message": "Käyttö" },
+  "helpSection_paramOptions": { "message": "Parametrivaihtoehdot" },
+  "helpSection_flags": { "message": "Boolen vaihtoehdot" },
+  "helpSection_infoCmds": { "message": "Tietokomennot" },
+  "optionDesc_qty": { "message": "Luo n IP-osoitetta" },
+  "optionDesc_quiet": { "message": "Poista kaikki kirjaukset paitsi virheet" },
+  "optionDesc_help": { "message": "Näytä ohjenäyttö" },
+  "optionDesc_version": { "message": "Näyttää versionumeron" }
+}

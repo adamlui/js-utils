@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui & kaasautorid MIT litsentsi alusel" },
+  "prefix_error": { "message": "VIGA" },
+  "prefix_globalVer": { "message": "Globaalne versioon" },
+  "prefix_localVer": { "message": "Kohalik versioon" },
+  "prefix_source": { "message": "Allikas" },
+  "error_noEqual": { "message": "nõuab väärtust '=', millele järgneb väärtus" },
+  "error_notRecognized": { "message": "Tundmatu fail" },
+  "error_nonPositiveNum": { "message": "argument võib olla ainult > 0" },
+  "error_invalidURL": { "message": "Kehtetu URL" },
+  "info_validArgs": { "message": "Kehtivad argumendid on allpool" },
+  "info_copying": { "message": "Kopeerimine lõikepuhvrisse" },
+  "info_moreHelp": { "message": "Lisateabe saamiseks" },
+  "info_visit": { "message": "külaskäik" },
+  "helpSection_usage": { "message": "Kasutus" },
+  "helpSection_paramOptions": { "message": "Parameetri valikud" },
+  "helpSection_flags": { "message": "Tõeväärtuse valikud" },
+  "helpSection_infoCmds": { "message": "Teabekäsud" },
+  "optionDesc_qty": { "message": "Genereeri n IP-aadressi" },
+  "optionDesc_quiet": { "message": "Tühista kogu logimine, välja arvatud vead" },
+  "optionDesc_help": { "message": "Abi ekraani kuvamine" },
+  "optionDesc_version": { "message": "Näitab versiooni" }
+}

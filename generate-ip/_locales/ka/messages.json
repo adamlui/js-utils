@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 ადამ ლუი და MIT ლიცენზიის ფარგლებში შემომწირველები" },
+  "prefix_error": { "message": "შეცდომა" },
+  "prefix_globalVer": { "message": "Გლობალური ვერსია" },
+  "prefix_localVer": { "message": "Ლოკალური ვერსია" },
+  "prefix_source": { "message": "წყარო" },
+  "error_noEqual": { "message": "require '=', რომელსაც მოჰყვება მნიშვნელობა" },
+  "error_notRecognized": { "message": "ფაილის ტიპი ამოუცნობია" },
+  "error_nonPositiveNum": { "message": "არგუმენტი შეიძლება იყოს მხოლოდ > 0" },
+  "error_invalidURL": { "message": "არასწორი URL" },
+  "info_validArgs": { "message": "Სწორი არგუმენტები მოცემულია ქვემოთ" },
+  "info_copying": { "message": "Ბუფერში კოპირება" },
+  "info_moreHelp": { "message": "Დამატებითი დახმარებისთვის" },
+  "info_visit": { "message": "ვიზიტი" },
+  "helpSection_usage": { "message": "გამოყენება" },
+  "helpSection_paramOptions": { "message": "Პარამეტრების პარამეტრები" },
+  "helpSection_flags": { "message": "Ლოგიკური ვარიანტები" },
+  "helpSection_infoCmds": { "message": "Საინფორმაციო ბრძანებები" },
+  "optionDesc_qty": { "message": "N IP მისამართ(ებ) ის გენერირება" },
+  "optionDesc_quiet": { "message": "Ყველა ჟურნალის ჩახშობა, გარდა შეცდომებისა" },
+  "optionDesc_help": { "message": "Დახმარების ეკრანის ჩვენება" },
+  "optionDesc_version": { "message": "ვერსიის ნომერი" }
+}

@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Адам Луи және MIT лицензиясы бойынша үлескерлер" },
+  "prefix_error": { "message": "Қателік" },
+  "prefix_globalVer": { "message": "Жаһандық нұсқа" },
+  "prefix_localVer": { "message": "Жергілікті нұсқа" },
+  "prefix_source": { "message": "Бастапқы тіл" },
+  "error_noEqual": { "message": "талап етіледі '=' кейіннен мән" },
+  "error_notRecognized": { "message": "мойындалмады" },
+  "error_nonPositiveNum": { "message": "аргумент тек > 0 болуы мүмкін" },
+  "error_invalidURL": { "message": "Жарамсыз URL" },
+  "info_validArgs": { "message": "Жарамды дәлелдер төменде келтірілген" },
+  "info_copying": { "message": "Алмасу буферіндегіні орналастыруда..." },
+  "info_moreHelp": { "message": "Қосымша көмек алу үшін" },
+  "info_visit": { "message": "келу" },
+  "helpSection_usage": { "message": "ТолуыName" },
+  "helpSection_paramOptions": { "message": "Параметр опциялары" },
+  "helpSection_flags": { "message": "Boolean опциялары" },
+  "helpSection_infoCmds": { "message": "Ақпараттық командалар" },
+  "optionDesc_qty": { "message": "N IP мекенжайын(лар) жасау" },
+  "optionDesc_quiet": { "message": "Қателерден басқа барлық жүйеге кіруді болдырмау" },
+  "optionDesc_help": { "message": "Анықтама экранын көрсету" },
+  "optionDesc_version": { "message": "Нұсқасының нөмірі" }
+}

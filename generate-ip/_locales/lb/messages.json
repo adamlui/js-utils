@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui & Contributeuren ënner der MIT Lizenz" },
+  "prefix_error": { "message": "Feeler" },
+  "prefix_globalVer": { "message": "Globale Versioun" },
+  "prefix_localVer": { "message": "Lokal Versioun" },
+  "prefix_source": { "message": "Quell" },
+  "error_noEqual": { "message": "demande \"=\" suivi d'un valeur" },
+  "error_notRecognized": { "message": "net unerkannt" },
+  "error_nonPositiveNum": { "message": "argument can just be ass > 0" },
+  "error_invalidURL": { "message": "InvalidCA" },
+  "info_validArgs": { "message": "Gëlteg Argumenter sinn hei ënnendrënner" },
+  "info_copying": { "message": "Op Clipboard kopéieren" },
+  "info_moreHelp": { "message": "Fir méi Hëllef" },
+  "info_visit": { "message": "besicht" },
+  "helpSection_usage": { "message": "Benotzung" },
+  "helpSection_paramOptions": { "message": "Parameteroptiounen" },
+  "helpSection_flags": { "message": "Boolesche Optionen" },
+  "helpSection_infoCmds": { "message": "Infobefehlungen" },
+  "optionDesc_qty": { "message": "Generéiere n IP Adress(es)" },
+  "optionDesc_quiet": { "message": "Ënnerdréckt all Umeldung ausser Feeler" },
+  "optionDesc_help": { "message": "Hëllefsbildschierm uweisen" },
+  "optionDesc_version": { "message": "Versiounsnummer uweisen" }
+}

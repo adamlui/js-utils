@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui eta laguntzaileak MIT lizentziapean" },
+  "prefix_error": { "message": "errorea" },
+  "prefix_globalVer": { "message": "Bertsio globala" },
+  "prefix_localVer": { "message": "Bertsio lokala" },
+  "prefix_source": { "message": "Iturria" },
+  "error_noEqual": { "message": "&#39;=&#39; eta ondoren balio bat eskatzen du" },
+  "error_notRecognized": { "message": "EZ DA EZAGUTZEN" },
+  "error_nonPositiveNum": { "message": "argumentua &gt; 0 bakarrik izan daiteke" },
+  "error_invalidURL": { "message": "Baliogabeko URLa" },
+  "info_validArgs": { "message": "Baliozko argumentuak behean daude" },
+  "info_copying": { "message": "Arbelean kopiatzen" },
+  "info_moreHelp": { "message": "Laguntza gehiagorako" },
+  "info_visit": { "message": "Bisitatu" },
+  "helpSection_usage": { "message": "Erabilpena" },
+  "helpSection_paramOptions": { "message": "Parametro aukerak" },
+  "helpSection_flags": { "message": "Aukera boolearrak" },
+  "helpSection_infoCmds": { "message": "Info komandoak" },
+  "optionDesc_qty": { "message": "Sortu n IP helbide(k)" },
+  "optionDesc_quiet": { "message": "Ezabatu erregistro guztiak erroreak izan ezik" },
+  "optionDesc_help": { "message": "Bistaratu laguntza-pantaila" },
+  "optionDesc_version": { "message": "Bertsio zenbakia" }
+}

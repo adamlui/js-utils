@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 অ্যাডাম লুই এবং এমআইটি লাইসেন্সের অধীনে অবদানকারী" },
+  "prefix_error": { "message": "ত্রুটি" },
+  "prefix_globalVer": { "message": "গ্লোবাল সংস্করণ" },
+  "prefix_localVer": { "message": "স্থানীয় সংস্করণ" },
+  "prefix_source": { "message": "Source" },
+  "error_noEqual": { "message": "একটি মান অনুসরণ করে '=' প্রয়োজন" },
+  "error_notRecognized": { "message": "স্বীকৃত নয়" },
+  "error_nonPositiveNum": { "message": "যুক্তি শুধুমাত্র হতে পারে > 0" },
+  "error_invalidURL": { "message": "অবৈধ ইউ- আর- এল" },
+  "info_validArgs": { "message": "বৈধ আর্গুমেন্ট নিচে দেওয়া হল" },
+  "info_copying": { "message": "ক্লিপবোর্ডে অনুলিপি করা হচ্ছে" },
+  "info_moreHelp": { "message": "আরও সাহায্যের জন্য" },
+  "info_visit": { "message": "ভিজিট করুন" },
+  "helpSection_usage": { "message": "ব্যবহার" },
+  "helpSection_paramOptions": { "message": "প্যারামিটার বিকল্প" },
+  "helpSection_flags": { "message": "বুলিয়ান বিকল্প" },
+  "helpSection_infoCmds": { "message": "তথ্য কমান্ড" },
+  "optionDesc_qty": { "message": "এন আইপি অ্যাড্রেস(গুলি) তৈরি করুন" },
+  "optionDesc_quiet": { "message": "ত্রুটি ব্যতীত সমস্ত লগিং দমন করুন" },
+  "optionDesc_help": { "message": "সহায়তা স্ক্রিন প্রদর্শন করুন" },
+  "optionDesc_version": { "message": "বিক্রেতা সংখ্যা" }
+}

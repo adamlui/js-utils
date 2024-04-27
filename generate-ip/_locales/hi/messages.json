@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 एडम लुई और एमआईटी लाइसेंस के तहत योगदानकर्ता" },
+  "prefix_error": { "message": "त्रुटि" },
+  "prefix_globalVer": { "message": "ग्लोबल वर्ज़न" },
+  "prefix_localVer": { "message": "स्थानीय संस्करण" },
+  "prefix_source": { "message": "स्रोत" },
+  "error_noEqual": { "message": "एक मान के बाद '=' की आवश्यकता होती है" },
+  "error_notRecognized": { "message": "पहचाना नहीं गया" },
+  "error_nonPositiveNum": { "message": "तर्क केवल > 0 हो सकता है" },
+  "error_invalidURL": { "message": "अमान्य URL" },
+  "info_validArgs": { "message": "मान्य तर्क नीचे दिए गए हैं" },
+  "info_copying": { "message": "क्लिपबोर्ड से नक़ल किया जा रहा है... user on host" },
+  "info_moreHelp": { "message": "ज़्यादा मदद के लिए" },
+  "info_visit": { "message": "+++ " },
+  "helpSection_usage": { "message": "उपयोग" },
+  "helpSection_paramOptions": { "message": "पैरामीटर विकल्प" },
+  "helpSection_flags": { "message": "बूलियन विकल्प" },
+  "helpSection_infoCmds": { "message": "जानकारी कमांड" },
+  "optionDesc_qty": { "message": "N IP पता(पते) जनरेट करें" },
+  "optionDesc_quiet": { "message": "त्रुटियों को छोड़कर सभी लॉगिंग को दबाएं" },
+  "optionDesc_help": { "message": "सहायता स्क्रीन दिखाएँ" },
+  "optionDesc_version": { "message": "संस्करण संख्या" }
+}

@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui og meðhöfundar undir MIT-leyfi" },
+  "prefix_error": { "message": "VILLA" },
+  "prefix_globalVer": { "message": "Heildarútgáfa" },
+  "prefix_localVer": { "message": "Staðbundin útgáfa" },
+  "prefix_source": { "message": "Heimild" },
+  "error_noEqual": { "message": "krefst '=' og síðan gildis" },
+  "error_notRecognized": { "message": "ekki viðurkennt" },
+  "error_nonPositiveNum": { "message": "frumbreyta getur aðeins verið > 0" },
+  "error_invalidURL": { "message": "Ógild slóð" },
+  "info_validArgs": { "message": "Gild rök eru hér að neðan" },
+  "info_copying": { "message": "Afrita á klemmuspjald" },
+  "info_moreHelp": { "message": "Fyrir frekari aðstoð" },
+  "info_visit": { "message": "Heimsókn " },
+  "helpSection_usage": { "message": "Notkun" },
+  "helpSection_paramOptions": { "message": "Valkostir færibreytna" },
+  "helpSection_flags": { "message": "Boole-valkostir" },
+  "helpSection_infoCmds": { "message": "Upplýsingaskipanir" },
+  "optionDesc_qty": { "message": "Búa til n IP tölu (r)" },
+  "optionDesc_quiet": { "message": "Slökkva á öllum innskráningum nema villum" },
+  "optionDesc_help": { "message": "Birta hjálparskjá" },
+  "optionDesc_version": { "message": "Útgáfunúmer" }
+}

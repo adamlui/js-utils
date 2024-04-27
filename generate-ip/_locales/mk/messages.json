@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui и соработниците под лиценцата на МИТ" },
+  "prefix_error": { "message": "ГРЕШКА" },
+  "prefix_globalVer": { "message": "Глобална верзија" },
+  "prefix_localVer": { "message": "Локална верзија" },
+  "prefix_source": { "message": "Извор" },
+  "error_noEqual": { "message": "бара '=' проследено со вредност" },
+  "error_notRecognized": { "message": "не е препознаено" },
+  "error_nonPositiveNum": { "message": "аргументот може да биде само > 0" },
+  "error_invalidURL": { "message": "Невалидна URL" },
+  "info_validArgs": { "message": "Валидните аргументи се подолу" },
+  "info_copying": { "message": "Копирам на таблата со исечоци..." },
+  "info_moreHelp": { "message": "За повеќе помош" },
+  "info_visit": { "message": "Посета " },
+  "helpSection_usage": { "message": "Употреба" },
+  "helpSection_paramOptions": { "message": "Опции за параметри" },
+  "helpSection_flags": { "message": "Опции за була" },
+  "helpSection_infoCmds": { "message": "Информативни команди" },
+  "optionDesc_qty": { "message": "Генерирање n IP-адреса(и)" },
+  "optionDesc_quiet": { "message": "Потисни ги сите евиденции освен грешките" },
+  "optionDesc_help": { "message": "Прикажи екран за помош" },
+  "optionDesc_version": { "message": "Број на производител" }
+}

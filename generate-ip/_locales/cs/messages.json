@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui a přispěvatelé v rámci licence MIT" },
+  "prefix_error": { "message": "CHYBA" },
+  "prefix_globalVer": { "message": "Globální verze" },
+  "prefix_localVer": { "message": " - Místní verze" },
+  "prefix_source": { "message": "Zdroj" },
+  "error_noEqual": { "message": "vyžaduje '=' následované hodnotou" },
+  "error_notRecognized": { "message": "\"Nerozpoznáno\"" },
+  "error_nonPositiveNum": { "message": "argument může být pouze > 0" },
+  "error_invalidURL": { "message": "Neplatná adresa URL" },
+  "info_validArgs": { "message": "Platné argumenty jsou uvedeny níže" },
+  "info_copying": { "message": "Kopírování do schránky" },
+  "info_moreHelp": { "message": "Další pomoc" },
+  "info_visit": { "message": "Navštívit" },
+  "helpSection_usage": { "message": "Využití" },
+  "helpSection_paramOptions": { "message": "Možnosti parametrů" },
+  "helpSection_flags": { "message": "Booleovské možnosti" },
+  "helpSection_infoCmds": { "message": "Informační příkazy" },
+  "optionDesc_qty": { "message": "Vygenerovat n IP adres" },
+  "optionDesc_quiet": { "message": "Potlačit veškeré protokolování kromě chyb" },
+  "optionDesc_help": { "message": "Zobrazit obrazovku nápovědy" },
+  "optionDesc_version": { "message": "Zobrazí číslo verze" }
+}

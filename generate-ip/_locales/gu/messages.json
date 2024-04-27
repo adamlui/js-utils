@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 એડમ લુઇ અને MIT લાઇસન્સ હેઠળ ફાળો આપનારાઓ" },
+  "prefix_error": { "message": "ERROR" },
+  "prefix_globalVer": { "message": "વૈશ્વિક સંસ્કરણ" },
+  "prefix_localVer": { "message": "સ્થાનિક સંસ્કરણ" },
+  "prefix_source": { "message": "સ્રોત" },
+  "error_noEqual": { "message": "જરૂરી છે '=' મૂલ્ય દ્વારા અનુસરવામાં આવે છે" },
+  "error_notRecognized": { "message": "ઓળખી શકાયું નથી" },
+  "error_nonPositiveNum": { "message": "દલીલ ફક્ત > 0 હોઈ શકે છે" },
+  "error_invalidURL": { "message": "અયોગ્ય URL" },
+  "info_validArgs": { "message": "માન્ય દલીલો નીચે છે" },
+  "info_copying": { "message": "ક્લિપબોર્ડ પર કૉપિ કરી રહ્યું છે" },
+  "info_moreHelp": { "message": "વધુ મદદ માટે" },
+  "info_visit": { "message": "મુલાકાત" },
+  "helpSection_usage": { "message": "વપરાશ " },
+  "helpSection_paramOptions": { "message": "પરિમાણ વિકલ્પો" },
+  "helpSection_flags": { "message": "બુલિયન વિકલ્પો" },
+  "helpSection_infoCmds": { "message": "માહિતી આદેશો" },
+  "optionDesc_qty": { "message": "N IP સરનામું(ઓ) જનરેટ કરો" },
+  "optionDesc_quiet": { "message": "ભૂલો સિવાય તમામ લોગીંગને દબાવો" },
+  "optionDesc_help": { "message": "સહાય સ્ક્રીન પ્રદર્શિત કરો" },
+  "optionDesc_version": { "message": "આવૃત્તિ ક્રમાંક" }
+}

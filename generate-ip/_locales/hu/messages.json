@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui és közreműködők az MIT licenc alapján" },
+  "prefix_error": { "message": "HIBA" },
+  "prefix_globalVer": { "message": "Globális verzió" },
+  "prefix_localVer": { "message": "Helyi verzió" },
+  "prefix_source": { "message": "Forrás" },
+  "error_noEqual": { "message": "megköveteli, hogy '=', amelyet egy érték követ" },
+  "error_notRecognized": { "message": "nem felismerhető" },
+  "error_nonPositiveNum": { "message": "argumentum csak > 0 lehet" },
+  "error_invalidURL": { "message": "Hibás URL cím" },
+  "info_validArgs": { "message": "Az érvényes argumentumok alább találhatók" },
+  "info_copying": { "message": "Másolás a vágólapra" },
+  "info_moreHelp": { "message": "További segítségért" },
+  "info_visit": { "message": "látogatás" },
+  "helpSection_usage": { "message": "Felhasználás" },
+  "helpSection_paramOptions": { "message": "Paraméteropciók" },
+  "helpSection_flags": { "message": "Logikai opciók" },
+  "helpSection_infoCmds": { "message": "Információs parancsok" },
+  "optionDesc_qty": { "message": "N IP-cím(ek) generálása" },
+  "optionDesc_quiet": { "message": "Az összes naplózás letiltása a hibák kivételével" },
+  "optionDesc_help": { "message": "Súgó képernyő megjelenítése" },
+  "optionDesc_version": { "message": "kiírja a verziószámot" }
+}

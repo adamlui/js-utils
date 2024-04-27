@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui & Mitwirkende unter der MIT-Lizenz" },
+  "prefix_error": { "message": "ERROR" },
+  "prefix_globalVer": { "message": "GLOBALE FASSUNG" },
+  "prefix_localVer": { "message": "Lokale Version" },
+  "prefix_source": { "message": "Quelle" },
+  "error_noEqual": { "message": "erfordert '=' gefolgt von einem Wert" },
+  "error_notRecognized": { "message": "Nicht erkannt" },
+  "error_nonPositiveNum": { "message": "argument kann nur > 0 sein" },
+  "error_invalidURL": { "message": "Ungültige URL" },
+  "info_validArgs": { "message": "Gültige Argumente sind unten aufgeführt" },
+  "info_copying": { "message": "Kopiere in Zwischenablage" },
+  "info_moreHelp": { "message": "Für weitere Hilfe" },
+  "info_visit": { "message": "Besuch" },
+  "helpSection_usage": { "message": "Anwendung" },
+  "helpSection_paramOptions": { "message": "Parameteroptionen" },
+  "helpSection_flags": { "message": "Boolesche Optionen" },
+  "helpSection_infoCmds": { "message": "Info-Befehle" },
+  "optionDesc_qty": { "message": "Generiere n IP-Adresse(n)" },
+  "optionDesc_quiet": { "message": "Alle Protokolle mit Ausnahme von Fehlern unterdrücken" },
+  "optionDesc_help": { "message": "Hilfebildschirm anzeigen" },
+  "optionDesc_version": { "message": "Versionsnummer anzeigen" }
+}

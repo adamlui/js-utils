@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 MIT 라이선스에 따른 Adam Lui 및 기여자" },
+  "prefix_error": { "message": "오류" },
+  "prefix_globalVer": { "message": "글로벌 버전" },
+  "prefix_localVer": { "message": "로컬 버전" },
+  "prefix_source": { "message": "원천" },
+  "error_noEqual": { "message": "require '=' 뒤에 값이 옵니다" },
+  "error_notRecognized": { "message": "인식할 수 없는 파일" },
+  "error_nonPositiveNum": { "message": "인수는 > 0이어야 합니다" },
+  "error_invalidURL": { "message": "잘못된 주소" },
+  "info_validArgs": { "message": "유효한 인수는 다음과 같습니다." },
+  "info_copying": { "message": "클립보드로 복사하는 중..." },
+  "info_moreHelp": { "message": "더 많은 도움 요청" },
+  "info_visit": { "message": "방문" },
+  "helpSection_usage": { "message": "사용" },
+  "helpSection_paramOptions": { "message": "매개 변수 옵션" },
+  "helpSection_flags": { "message": "부울 옵션" },
+  "helpSection_infoCmds": { "message": "정보 명령" },
+  "optionDesc_qty": { "message": "N개의 IP 주소 생성" },
+  "optionDesc_quiet": { "message": "오류를 제외한 모든 로깅 억제" },
+  "optionDesc_help": { "message": "도움말 화면 표시" },
+  "optionDesc_version": { "message": "버전 넘버 보여주기 " }
+}

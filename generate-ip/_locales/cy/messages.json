@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui a chyfranwyr o dan drwydded MIT" },
+  "prefix_error": { "message": "GWALL" },
+  "prefix_globalVer": { "message": "Fersiwn eang" },
+  "prefix_localVer": { "message": "Fersiwn lleol" },
+  "prefix_source": { "message": "Ffynhonnell" },
+  "error_noEqual": { "message": "mae angen '=' i ddilyn gan werth" },
+  "error_notRecognized": { "message": "heb ei gydnabod" },
+  "error_nonPositiveNum": { "message": "gall fod yn 0 yn unig" },
+  "error_invalidURL": { "message": "URL annilys" },
+  "info_validArgs": { "message": "Mae ymresymiadau dilys isod" },
+  "info_copying": { "message": "Copïo i&apos; r gludfwrdd..." },
+  "info_moreHelp": { "message": "Am fwy o help" },
+  "info_visit": { "message": "ymweld" },
+  "helpSection_usage": { "message": "Defnydd" },
+  "helpSection_paramOptions": { "message": "Opsiynau paramedr" },
+  "helpSection_flags": { "message": "Opsiynau Boole" },
+  "helpSection_infoCmds": { "message": "Gorchmynion gwybodaeth" },
+  "optionDesc_qty": { "message": "Cynhyrchu cyfeiriad(au) IP n" },
+  "optionDesc_quiet": { "message": "Atal pob cofnod ac eithrio gwallau" },
+  "optionDesc_help": { "message": "Dangos y sgrin gymorth" },
+  "optionDesc_version": { "message": "Rhif fersiwn" }
+}

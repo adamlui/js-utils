@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui & kontribuantoj sub la MIT-licenco" },
+  "prefix_error": { "message": "ERARO" },
+  "prefix_globalVer": { "message": "Tutmonda versio" },
+  "prefix_localVer": { "message": "Loka versio" },
+  "prefix_source": { "message": "Origino" },
+  "error_noEqual": { "message": "postuli '=' sekvata de valoro" },
+  "error_notRecognized": { "message": "ne rekonita" },
+  "error_nonPositiveNum": { "message": "argumento povas esti nur > 0" },
+  "error_invalidURL": { "message": "Nevalida URL" },
+  "info_validArgs": { "message": "Validaj argumentoj estas sube" },
+  "info_copying": { "message": "Kopiante al interdeponejo..." },
+  "info_moreHelp": { "message": "Por pli da helpo" },
+  "info_visit": { "message": "viziti" },
+  "helpSection_usage": { "message": "Uzado" },
+  "helpSection_paramOptions": { "message": "Parametraj opcioj" },
+  "helpSection_flags": { "message": "Buleaj opcioj" },
+  "helpSection_infoCmds": { "message": "Informkomandoj" },
+  "optionDesc_qty": { "message": "Generi IP-adreson(j) n" },
+  "optionDesc_quiet": { "message": "Subpremi ĉiujn registradojn krom eraroj" },
+  "optionDesc_help": { "message": "Montri helpekranon" },
+  "optionDesc_version": { "message": "Nombro de Versio" }
+}

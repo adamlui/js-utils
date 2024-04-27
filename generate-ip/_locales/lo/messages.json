@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam Lui & ຜູ້ປະກອບສ່ວນພາຍໃຕ້ໃບອະນຸຍາດ MIT" },
+  "prefix_error": { "message": "ຂໍ້ຜິດພາດ" },
+  "prefix_globalVer": { "message": "ສະບັບທົ່ວໂລກ" },
+  "prefix_localVer": { "message": "ສະບັບທ້ອງຖິ່ນ" },
+  "prefix_source": { "message": "ແຫຼ່ງຂໍ້ມູນ" },
+  "error_noEqual": { "message": "ຕ້ອງການ '=' ຕິດຕາມດ້ວຍຄ່າ" },
+  "error_notRecognized": { "message": "ບໍ່ຮັບຮູ້" },
+  "error_nonPositiveNum": { "message": "ການໂຕ້ຖຽງສາມາດເປັນພຽງແຕ່ > 0" },
+  "error_invalidURL": { "message": "URL ບໍ່ຖືກຕ້ອງ" },
+  "info_validArgs": { "message": "ຂໍ້ຂັດແຍ່ງທີ່ຖືກຕ້ອງແມ່ນຂ້າງລຸ່ມນີ້" },
+  "info_copying": { "message": "ສໍາເນົາໄປທີ່ຄລິບບອດ" },
+  "info_moreHelp": { "message": "ສໍາ ລັບການຊ່ວຍເຫຼືອເພີ່ມເຕີມ" },
+  "info_visit": { "message": "ຢ້ຽມຢາມ" },
+  "helpSection_usage": { "message": "ການນຳໃຊ້" },
+  "helpSection_paramOptions": { "message": "ຕົວເລືອກພາລາມິເຕີ" },
+  "helpSection_flags": { "message": "ທາງເລືອກ Boolean" },
+  "helpSection_infoCmds": { "message": "ຄໍາສັ່ງ Info" },
+  "optionDesc_qty": { "message": "ສ້າງທີ່ຢູ່ IP(es)" },
+  "optionDesc_quiet": { "message": "ສະກັດກັ້ນການຕັດໄມ້ທັງໝົດ ຍົກເວັ້ນຂໍ້ຜິດພາດ" },
+  "optionDesc_help": { "message": "ສະແດງໜ້າຈໍຊ່ວຍເຫຼືອ" },
+  "optionDesc_version": { "message": "ໝາຍເລກຮຸ່ນ:" }
+}

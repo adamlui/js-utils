@@ -1,0 +1,23 @@
+{
+  "appCopyright": { "message": "© 2024 Adam LuiとMITライセンスの貢献者" },
+  "prefix_error": { "message": "エラー" },
+  "prefix_globalVer": { "message": "グローバルバージョン" },
+  "prefix_localVer": { "message": "ローカルバージョン" },
+  "prefix_source": { "message": "出典" },
+  "error_noEqual": { "message": "'='の後に値が続く必要があります" },
+  "error_notRecognized": { "message": "認識されていない" },
+  "error_nonPositiveNum": { "message": "引数は0以上にする必要があります" },
+  "error_invalidURL": { "message": "無効なURL" },
+  "info_validArgs": { "message": "有効な引数は次のとおりです" },
+  "info_copying": { "message": "クリップボードにコピーしています" },
+  "info_moreHelp": { "message": "ヘルプをもっと読む " },
+  "info_visit": { "message": "訪問" },
+  "helpSection_usage": { "message": "Usage" },
+  "helpSection_paramOptions": { "message": "パラメータオプション" },
+  "helpSection_flags": { "message": "Booleanオプション" },
+  "helpSection_infoCmds": { "message": "INFOコマンド" },
+  "optionDesc_qty": { "message": "N個のIPアドレスを生成する" },
+  "optionDesc_quiet": { "message": "エラーを除くすべてのロギングを抑制" },
+  "optionDesc_help": { "message": "ヘルプ画面を表示" },
+  "optionDesc_version": { "message": "バージョン番号" }
+}
