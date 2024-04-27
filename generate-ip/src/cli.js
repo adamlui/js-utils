@@ -113,7 +113,6 @@ const pkgName = 'generate-ip',
             printHelpCmdAndDocURL(); process.exit(1);
         }
         const ipResult = ipv4.generate({ qty: config.qty || 1, verbose: !config.quietMode });
-        if (config.qty > 1) console.info(`[ ${ipResult.join(', ')} ]`);
         printIfNotQuiet(`\n${ msgs.info_copying || 'Copying to clipboard' }...`);
         copyToClipboard(Array.isArray(ipResult) ? ipResult.join('\n') : ipResult);
     }
