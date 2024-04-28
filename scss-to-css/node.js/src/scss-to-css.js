@@ -13,7 +13,7 @@ const fs = require('fs'),
 
 function findSCSS(searchDir, options = {}) {
 
-    const docURL = 'https://docs.js-utils.com/scss-to-css/#findscsssearchdir-options',
+    const docURL = 'https://docs.js-utils.com/scss-to-css/node.js/#findscsssearchdir-options',
           exampleCall = 'findSCSS(\'assets/scss\', { verbose: false, dotFolders: true })';
 
     const defaultOptions = {
@@ -67,7 +67,7 @@ function findSCSS(searchDir, options = {}) {
 
 function compile(input, options = {}) {
 
-    const docURL = 'https://docs.js-utils.com/scss-to-css/#compileinput-options',
+    const docURL = 'https://docs.js-utils.com/scss-to-css/node.js/#compileinput-options',
           exampleCall = 'compile(\'assets/scss\', { recursive: false, minify: false })';
 
     const defaultOptions = {
