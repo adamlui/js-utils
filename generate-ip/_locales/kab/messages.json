@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Adam Lui & confrontations under the MIT License" },
   "prefix_error": { "message": "TUCCḌA:" },
   "prefix_globalVer": { "message": "Asebter n umaḍal" },

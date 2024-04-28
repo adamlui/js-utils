@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Adam Lui ir bendraautoriai pagal MIT LICENCIJĄ" },
   "prefix_error": { "message": "KLAIDA" },
   "prefix_globalVer": { "message": "Visuotinė versija" },

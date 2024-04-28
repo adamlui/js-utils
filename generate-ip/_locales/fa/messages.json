@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Adam Lui و همکاران تحت مجوز MIT" },
   "prefix_error": { "message": "خطا" },
   "prefix_globalVer": { "message": "نسخه جهانی" },

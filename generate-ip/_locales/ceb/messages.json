@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Adam Lui & mga kontribyutor sa ilalum sa MIT lisensya" },
   "prefix_error": { "message": "Sayop" },
   "prefix_globalVer": { "message": "Global nga bersyon" },

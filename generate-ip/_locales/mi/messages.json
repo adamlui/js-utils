@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Adam Lui & kaiwhiwhi i raro i te raihana MIT" },
   "prefix_error": { "message": "He" },
   "prefix_globalVer": { "message": "Te putanga o te ao" },

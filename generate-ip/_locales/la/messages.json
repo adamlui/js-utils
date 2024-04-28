@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 ADUM LUI & AC PRAESCRIPTIATIONES QUAE LICENSE" },
   "prefix_error": { "message": "erratum" },
   "prefix_globalVer": { "message": "Globosa version" },

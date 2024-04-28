@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Адам Луи и сътрудници под лиценза на МАСАЧУЗЕТСКИЯ ТЕХНОЛОГИЧЕН ИНСТИТУТ" },
   "prefix_error": { "message": "ГРЕШКА" },
   "prefix_globalVer": { "message": "Глобална версия" },

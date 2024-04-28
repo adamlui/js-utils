@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 ადამ ლუი და MIT ლიცენზიის ფარგლებში შემომწირველები" },
   "prefix_error": { "message": "შეცდომა" },
   "prefix_globalVer": { "message": "Გლობალური ვერსია" },

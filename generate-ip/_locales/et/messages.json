@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Adam Lui & kaasautorid MIT litsentsi alusel" },
   "prefix_error": { "message": "VIGA" },
   "prefix_globalVer": { "message": "Globaalne versioon" },

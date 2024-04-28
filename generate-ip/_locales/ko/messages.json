@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 MIT 라이선스에 따른 Adam Lui 및 기여자" },
   "prefix_error": { "message": "오류" },
   "prefix_globalVer": { "message": "글로벌 버전" },

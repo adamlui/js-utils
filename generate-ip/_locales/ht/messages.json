@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Adam Lui & kontribitè anba lisans MIT" },
   "prefix_error": { "message": "Erè" },
   "prefix_globalVer": { "message": "Vèsyon mondyal" },

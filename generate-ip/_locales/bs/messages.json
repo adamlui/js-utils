@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Adam Lui i saradnici pod MIT LICENCOM" },
   "prefix_error": { "message": "GREŠKA" },
   "prefix_globalVer": { "message": "Globalna verzija" },

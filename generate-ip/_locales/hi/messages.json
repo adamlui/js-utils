@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 एडम लुई और एमआईटी लाइसेंस के तहत योगदानकर्ता" },
   "prefix_error": { "message": "त्रुटि" },
   "prefix_globalVer": { "message": "ग्लोबल वर्ज़न" },

@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Adam Lui & អ្នករួមចំណែកក្រោមអាជ្ញាប័ណ្ណ MIT" },
   "prefix_error": { "message": "កំហុស" },
   "prefix_globalVer": { "message": "កំណែសកល" },

@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 አዳም ሉዊ & በ MIT ፈቃድ ስር አስተዋፅዖ አበርክተዋል" },
   "prefix_error": { "message": "ስህተት" },
   "prefix_globalVer": { "message": "ዓለም አቀፍ ስሪት" },

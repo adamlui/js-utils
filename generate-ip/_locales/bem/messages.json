@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Amanda Lui & Contributors Under MIT License" },
   "prefix_error": { "message": "Ulufyengo" },
   "prefix_globalVer": { "message": "Ukupilibula kwa mu calo conse" },

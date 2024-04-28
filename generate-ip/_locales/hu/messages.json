@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Adam Lui és közreműködők az MIT licenc alapján" },
   "prefix_error": { "message": "HIBA" },
   "prefix_globalVer": { "message": "Globális verzió" },

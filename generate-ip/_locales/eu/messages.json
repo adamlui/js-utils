@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Adam Lui eta laguntzaileak MIT lizentziapean" },
   "prefix_error": { "message": "errorea" },
   "prefix_globalVer": { "message": "Bertsio globala" },

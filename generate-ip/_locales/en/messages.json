@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Adam Lui & contributors under the MIT license" },
   "prefix_error": { "message": "ERROR" },
   "prefix_globalVer": { "message": "Global version" },

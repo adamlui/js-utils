@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Адам Луі і ўдзельнікі ліцэнзіі MIT" },
   "prefix_error": { "message": "ПАМЫЛКА" },
   "prefix_globalVer": { "message": "Глабальная версія" },

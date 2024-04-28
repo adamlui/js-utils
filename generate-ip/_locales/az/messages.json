@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Adam Lui və MIT lisenziyası əsasında töhfə verənlər" },
   "prefix_error": { "message": "XƏTA" },
   "prefix_globalVer": { "message": "Qlobal versiya" },

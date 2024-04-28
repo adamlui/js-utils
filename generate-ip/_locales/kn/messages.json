@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 ಆಡಮ್ ಲೂಯಿ ಮತ್ತು ಎಂಐಟಿ ಪರವಾನಗಿ ಅಡಿಯಲ್ಲಿ ಕೊಡುಗೆದಾರರು" },
   "prefix_error": { "message": "ದೋಷ" },
   "prefix_globalVer": { "message": "ಜಾಗತಿಕ ಆವೃತ್ತಿ" },

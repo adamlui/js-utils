@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 ཨ་དམ་ལུའུ་དང་MITགི་ལག་ཁྱེར་འོག་གི་ལས་རོགས་" },
   "prefix_error": { "message": "ནོར་འཁྲུལ།" },
   "prefix_globalVer": { "message": "འཛམ་གླིང་གི་འགྲེལ་བཤད །" },

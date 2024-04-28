@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Adam Lui og meðhöfundar undir MIT-leyfi" },
   "prefix_error": { "message": "VILLA" },
   "prefix_globalVer": { "message": "Heildarútgáfa" },

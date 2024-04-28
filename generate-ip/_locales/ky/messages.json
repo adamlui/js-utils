@@ -1,4 +1,5 @@
 {
+  "appName": { "message": "generate-ip" },
   "appCopyright": { "message": "© 2024 Адам Луи & MIT лицензиясы боюнча салым кошуучулар" },
   "prefix_error": { "message": "Ката" },
   "prefix_globalVer": { "message": "Глобалдык версия" },
