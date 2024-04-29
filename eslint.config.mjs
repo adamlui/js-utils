@@ -9,7 +9,7 @@ export default [
         rules: {
             'indent': 'off', 'no-unexpected-multiline': 'off', // allow whitespace anywhere
             'semi': ['error', 'always'], // enforce semicolons at end of statement
-            'quotes': ['error', 'single', { 'avoidEscape': true }], // enforce single quotes for string literals except to avoid escaping quotes
+            'quotes': ['error', 'single', { 'allowTemplateLiterals': true }], // enforce single quotes except backticks to avoid escaping quotes
             'key-spacing': ['error', { 'beforeColon': false, 'afterColon': true }], // enforce spacing in object properties
             'comma-dangle': ['error', 'never'], // enforce no trailing commas in arrays or objects
             'no-async-promise-executor': 'off', // allow promise executor functions to be async (to accomodate await lines)
