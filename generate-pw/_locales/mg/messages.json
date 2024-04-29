@@ -23,7 +23,7 @@
   "optionDesc_qty": { "message": "Mamorona tenimiafina n (s)" },
   "optionDesc_charset": { "message": "Tsy misy afa-tsy chars ao amin'ny tenimiafina(s)" },
   "optionDesc_exclude": { "message": "Aza ampidirina avy amin'ny teny fanalahidy ireo chars (s)" },
-  "optionDesc_includeNums": { "message": "Ekeo ao anaty tenimiafinany isa." },
+  "optionDesc_includeNums": { "message": "Ekeo ao anaty tenimiafinany isa" },
   "optionDesc_includeSymbols": { "message": "Ekeo ny famaha (s)" },
   "optionDesc_noLower": { "message": "Disallow smallcase litera in password(s)" },
   "optionDesc_noUpper": { "message": "Mamafa ireo taratasy lehibe amin'ny tenimiafina(s)" },

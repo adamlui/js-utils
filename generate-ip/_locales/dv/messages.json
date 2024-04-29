@@ -5,7 +5,7 @@
   "prefix_globalVer": { "message": "Global version" },
   "prefix_localVer": { "message": "Local version" },
   "prefix_source": { "message": "ސޯސް" },
-  "error_noEqual": { "message": "ބޭނުންވަނީ '=' އެއަށްފަހު ވެލިއުއެކެވެ." },
+  "error_noEqual": { "message": "ބޭނުންވަނީ '=' އެއަށްފަހު ވެލިއުއެކެވެ" },
   "error_notRecognized": { "message": "ޤަބޫލުނުކުރެވޭ" },
   "error_nonPositiveNum": { "message": "އާގިއުމެންޓަކީ 0 &gt; ކުރެވޭނީ" },
   "error_invalidURL": { "message": "ސައްހަ ނޫން ޔޫއާރްއެލް" },

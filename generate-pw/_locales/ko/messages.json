@@ -9,7 +9,7 @@
   "error_notRecognized": { "message": "인식할 수 없는 파일" },
   "error_nonPositiveNum": { "message": "인수는 > 0이어야 합니다" },
   "error_invalidURL": { "message": "잘못된 주소" },
-  "info_validArgs": { "message": "유효한 인수는 다음과 같습니다." },
+  "info_validArgs": { "message": "유효한 인수는 다음과 같습니다" },
   "info_copying": { "message": "클립보드로 복사하는 중" },
   "info_moreHelp": { "message": "더 많은 도움 요청" },
   "info_type": { "message": "유형" },

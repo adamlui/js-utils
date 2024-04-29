@@ -8,7 +8,7 @@
   "error_noEqual": { "message": "ifuna '=' ilandelwe lixabiso" },
   "error_notRecognized": { "message": "ayibonakali" },
   "error_nonPositiveNum": { "message": "impikiswano inokuba > 0 kuphela" },
-  "error_invalidURL": { "message": "Amagama efayile aceliweyo% 1 ayikhangeleki isebenza kum. Qinisekisa ukuba igama lefayile livalelwe kuchaphulo olu phindwe kabini." },
+  "error_invalidURL": { "message": "Amagama efayile aceliweyo% 1 ayikhangeleki isebenza kum. Qinisekisa ukuba igama lefayile livalelwe kuchaphulo olu phindwe kabini" },
   "info_validArgs": { "message": "Iimpikiswano ezichanekileyo zingezantsi" },
   "info_copying": { "message": "ikhuphela kwibhodi eqhotyoshwayo" },
   "info_moreHelp": { "message": "Ukuze ufumane uncedo olungakumbi" },

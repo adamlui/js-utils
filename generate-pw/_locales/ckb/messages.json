@@ -28,7 +28,7 @@
   "optionDesc_noLower": { "message": "وشەنامەی بێژە کردن: بێژە کردن و وشە پێوەندیدارەکان بە lowercase letter لە فۆرڤۆ lowercase letters (s" },
   "optionDesc_noUpper": { "message": "وشەنامەی بێژە کردن: بێژە کردن و وشە پێوەندیدارەکان بە Uppercercase پیتی لە فۆرڤۆ Uppercercase پی" },
   "optionDesc_noSimilar": { "message": "وشەنامەی بێژە کردن: بێژە کردن و وشە پێوەندیدارەکان بە similar characters لە فۆرڤۆ similar characters" },
-  "optionDesc_strict": { "message": "داواکردنی لانی کەم یەک کارەکتەر لە ھەر کارەکتەرێکی ڕێگەپێدراو لە وشەی تێپەڕ(ەکان)." },
+  "optionDesc_strict": { "message": "داواکردنی لانی کەم یەک کارەکتەر لە ھەر کارەکتەرێکی ڕێگەپێدراو لە وشەی تێپەڕ(ەکان)" },
   "optionDesc_quiet": { "message": "سڕینەوەی هەموو هەڵەکان جگە لە هەڵەکان" },
   "optionDesc_help": { "message": "پیشاندانی شاشەی یارمەتی" },
   "optionDesc_version": { "message": "ژمارەی وەشان پیشان بدە" }

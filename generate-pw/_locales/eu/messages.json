@@ -19,7 +19,7 @@
   "helpSection_paramOptions": { "message": "Parametro aukerak" },
   "helpSection_flags": { "message": "Aukera boolearrak" },
   "helpSection_infoCmds": { "message": "Info komandoak" },
-  "optionDesc_length": { "message": "Sortu n luzerako pasahitza(k)." },
+  "optionDesc_length": { "message": "Sortu n luzerako pasahitza(k)" },
   "optionDesc_qty": { "message": "Sortu n pasahitz" },
   "optionDesc_charset": { "message": "Sartu karaktereak pasahitzetan bakarrik" },
   "optionDesc_exclude": { "message": "Baztertu karaktereak pasahitzetatik" },

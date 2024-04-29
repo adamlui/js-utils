@@ -6,7 +6,7 @@
   "prefix_localVer": { "message": "Versione locale" },
   "prefix_source": { "message": "Origine" },
   "error_noEqual": { "message": "richiede '=' seguito da un valore" },
-  "error_notRecognized": { "message": "non riconosciuti." },
+  "error_notRecognized": { "message": "non riconosciuti" },
   "error_nonPositiveNum": { "message": "l'argomento può essere solo > 0" },
   "error_invalidURL": { "message": "URL non valido" },
   "info_validArgs": { "message": "Gli argomenti validi sono riportati di seguito" },
@@ -31,5 +31,5 @@
   "optionDesc_strict": { "message": "Richiedi almeno un carattere per ogni set di caratteri consentito nelle password" },
   "optionDesc_quiet": { "message": "Elimina tutte le registrazioni ad eccezione degli errori" },
   "optionDesc_help": { "message": "Visualizza la schermata di aiuto" },
-  "optionDesc_version": { "message": "Mostra il numero di versione." }
+  "optionDesc_version": { "message": "Mostra il numero di versione" }
 }

@@ -28,7 +28,7 @@
   "optionDesc_noLower": { "message": "حروف کوچک در گذرواژه(ها) مجاز نیست" },
   "optionDesc_noUpper": { "message": "حروف بزرگ در کلمه عبور ممنوع" },
   "optionDesc_noSimilar": { "message": "حذف کاراکترهای مشابه در گذرواژه(های)" },
-  "optionDesc_strict": { "message": "حداقل یک کاراکتر از هر نویسه مجاز در گذرواژه(های) مورد نیاز است." },
+  "optionDesc_strict": { "message": "حداقل یک کاراکتر از هر نویسه مجاز در گذرواژه(های) مورد نیاز است" },
   "optionDesc_quiet": { "message": "همه گزارش‌ها به جز خطاها را سرکوب کنید" },
   "optionDesc_help": { "message": "نمایش صفحه راهنما" },
   "optionDesc_version": { "message": "نمایش شماره نسخه" }

@@ -22,5 +22,5 @@
   "optionDesc_qty": { "message": "IP-adressurat kanna" },
   "optionDesc_quiet": { "message": "Undirskriva allar innmeldingar uttan feil" },
   "optionDesc_help": { "message": "Vís hjálparskjá" },
-  "optionDesc_version": { "message": "Vís útgávu nr." }
+  "optionDesc_version": { "message": "Vís útgávu nr" }
 }

@@ -31,5 +31,5 @@
   "optionDesc_strict": { "message": "Tað krevur minst eitt karakter av hvørjum loyvdum karakter, sum er settur í loyniorð(um)" },
   "optionDesc_quiet": { "message": "Undirskriva allar innmeldingar uttan feil" },
   "optionDesc_help": { "message": "Vís hjálparskjá" },
-  "optionDesc_version": { "message": "Vís útgávu nr." }
+  "optionDesc_version": { "message": "Vís útgávu nr" }
 }

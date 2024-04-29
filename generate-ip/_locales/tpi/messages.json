@@ -7,7 +7,7 @@
   "prefix_source": { "message": "Sos" },
   "error_noEqual": { "message": "ol i mas kisim \"=\" na bihain ol i mas kisim wanpela mak" },
   "error_notRecognized": { "message": "ol i no save" },
-  "error_nonPositiveNum": { "message": "i no gat wanpela samting i stap long dispela hap." },
+  "error_nonPositiveNum": { "message": "i no gat wanpela samting i stap long dispela hap" },
   "error_invalidURL": { "message": "Ol URL i no stret" },
   "info_validArgs": { "message": "Ol gutpela tok i stap daunbilo" },
   "info_copying": { "message": "Kopiim long Clipboard" },

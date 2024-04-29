@@ -4,7 +4,7 @@
   "prefix_error": { "message": "IKOSA" },
   "prefix_globalVer": { "message": "Verisiyo" },
   "prefix_localVer": { "message": "Verisiyo" },
-  "prefix_source": { "message": "1." },
+  "prefix_source": { "message": "1" },
   "error_noEqual": { "message": "ibikurikira>Ibikurikira > Igiciro" },
   "error_notRecognized": { "message": "oYA" },
   "error_nonPositiveNum": { "message": "ishobora gusanga ari 0" },

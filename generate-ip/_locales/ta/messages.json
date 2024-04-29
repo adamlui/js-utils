@@ -10,7 +10,7 @@
   "error_nonPositiveNum": { "message": "வாதம் > 0 ஆக மட்டுமே இருக்க முடியும்" },
   "error_invalidURL": { "message": "கோப்புப் பெயர் தவறு" },
   "info_validArgs": { "message": "செல்லுபடியாகும் வாதங்கள் கீழே உள்ளன" },
-  "info_copying": { "message": "பிடிப்புப்பலகைக்கு நகலாக்குகின்றது." },
+  "info_copying": { "message": "பிடிப்புப்பலகைக்கு நகலாக்குகின்றது" },
   "info_moreHelp": { "message": "மேலும் உதவிக்கு" },
   "info_type": { "message": "வகை" },
   "info_or": { "message": "அல்லது" },

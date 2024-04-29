@@ -7,7 +7,7 @@
   "prefix_source": { "message": "འབྱུང་ཁུངས།" },
   "error_noEqual": { "message": "གནས་གོང་ = གནས་གོང་གི་ཤུལ་ལས་ གནས་གོང་" },
   "error_notRecognized": { "message": "མ་ཤེས་པར་" },
-  "error_nonPositiveNum": { "message": "གདམ་ཁ་ ཁ་སྐོང་ཚུ་སྟོནམ་ཨིན།." },
+  "error_nonPositiveNum": { "message": "གདམ་ཁ་ ཁ་སྐོང་ཚུ་སྟོནམ་ཨིན།" },
   "error_invalidURL": { "message": "ནོར་འཁྲུལ་ཅན་གྱི་ཨུ་རེལ།" },
   "info_validArgs": { "message": "འོས་འབབ་ཅན་གྱི་རྩོད་གཞི་ཚུ་ འོག་ལུ་བཀོད་ཡོདཔ་ཨིན།" },
   "info_copying": { "message": "སྒྲིག་འཇུག་བྱས་ཚད། ཐེངས་ 3 ལས་ཉུང་བ། ཐོན་རིམ་" },

@@ -3,7 +3,7 @@
   "appCopyright": { "message": "© 2024 Adam Lui og bidragsytere under MIT-lisensen" },
   "prefix_error": { "message": "FEIL" },
   "prefix_globalVer": { "message": "Global versjon" },
-  "prefix_localVer": { "message": "Your local version." },
+  "prefix_localVer": { "message": "Your local version" },
   "prefix_source": { "message": "Source" },
   "error_noEqual": { "message": "krever &#39;=&#39; etterfulgt av en verdi" },
   "error_notRecognized": { "message": "Ikke gjenkjent" },

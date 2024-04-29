@@ -6,7 +6,7 @@
   "prefix_localVer": { "message": "الإصدار المحلي" },
   "prefix_source": { "message": "Source" },
   "error_noEqual": { "message": "يتطلب '=' متبوعًا بقيمة" },
-  "error_notRecognized": { "message": "غير معترف بها." },
+  "error_notRecognized": { "message": "غير معترف بها" },
   "error_nonPositiveNum": { "message": "يمكن أن تكون الوسيطة > 0 فقط" },
   "error_invalidURL": { "message": "الرابط غير صحيح" },
   "info_validArgs": { "message": "الحجج الصالحة أدناه" },

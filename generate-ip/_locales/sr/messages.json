@@ -22,5 +22,5 @@
   "optionDesc_qty": { "message": "Generišite n IP adresa" },
   "optionDesc_quiet": { "message": "Obustavi svu evidenciju osim grešaka" },
   "optionDesc_help": { "message": "Prikažite ekran za pomoć" },
-  "optionDesc_version": { "message": "Исписује број верзије." }
+  "optionDesc_version": { "message": "Исписује број верзије" }
 }
