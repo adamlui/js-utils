@@ -20,7 +20,7 @@ const nc = '\x1b[0m',    // no color
 
 // Load FLAG settings
 const config = {};
-const argRegex = {
+const reArgs = {
     'dryRun': /^--?(?:n|dry-?run)$/,
     'includeDotFolders': /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
     'noSourceMaps': /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?|so?u?rce?-?maps?=(?:false|0))$/,
@@ -32,7 +32,7 @@ const argRegex = {
 };
 process.argv.forEach(arg => {
     if (!arg.startsWith('-')) return;
-    const matchedFlag = Object.keys(argRegex).find(flag => argRegex[flag].test(arg));
+    const matchedFlag = Object.keys(reArgs).find(flag => reArgs[flag].test(arg));
     if (matchedFlag) config[matchedFlag] = true;
     else {
         console.error(`\n${br}ERROR: Arg [${arg}] not recognized.${nc}`);
@@ -42,10 +42,10 @@ process.argv.forEach(arg => {
 }});
 
 // Show HELP screen if -h or --help passed
-if (process.argv.some(arg => argRegex.help.test(arg))) printHelpSections();
+if (process.argv.some(arg => reArgs.help.test(arg))) printHelpSections();
 
 // Show VERSION number if -v or --version passed
-else if (process.argv.some(arg => argRegex.version.test(arg))) {
+else if (process.argv.some(arg => reArgs.version.test(arg))) {
     const globalVer = execSync(`npm view ${pkgName} version`).toString().trim() || 'none';
     let localVer, currentDir = process.cwd();
     while (currentDir != '/') {

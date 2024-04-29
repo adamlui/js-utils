@@ -55,16 +55,16 @@ const pkgName = 'generate-ip',
 
     // Load SETTINGS from args
     const config = {};
-    const argRegex = {
+    const reArgs = {
         paramOptions: { 'qty': /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
         flags: { 'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/ },
         infoCmds: { 'help': /^--?h(?:elp)?$/, 'version': /^--?ve?r?s?i?o?n?$/ }
     };
     process.argv.forEach(arg => {
         if (!arg.startsWith('-')) return;
-        const matchedParamOption = Object.keys(argRegex.paramOptions).find(option => argRegex.paramOptions[option].test(arg)),
-              matchedFlag = Object.keys(argRegex.flags).find(flag => argRegex.flags[flag].test(arg)),
-              matchedInfoCmd = Object.keys(argRegex.infoCmds).find(cmd => argRegex.infoCmds[cmd].test(arg));
+        const matchedParamOption = Object.keys(reArgs.paramOptions).find(option => reArgs.paramOptions[option].test(arg)),
+              matchedFlag = Object.keys(reArgs.flags).find(flag => reArgs.flags[flag].test(arg)),
+              matchedInfoCmd = Object.keys(reArgs.infoCmds).find(cmd => reArgs.infoCmds[cmd].test(arg));
         if (matchedFlag) config[matchedFlag] = true;
         else if (matchedParamOption) {
             if (!arg.includes('=')) {
@@ -84,10 +84,10 @@ const pkgName = 'generate-ip',
     }});
 
     // Show HELP screen if -h or --help passed
-    if (process.argv.some(arg => argRegex.infoCmds.help.test(arg))) printHelpSections();
+    if (process.argv.some(arg => reArgs.infoCmds.help.test(arg))) printHelpSections();
 
     // Show VERSION number if -v or --version passed
-    else if (process.argv.some(arg => argRegex.infoCmds.version.test(arg))) {
+    else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
         const globalVer = execSync(`npm view ${pkgName} version`).toString().trim() || 'none';
         let localVer, currentDir = process.cwd();
         while (currentDir != '/') {
