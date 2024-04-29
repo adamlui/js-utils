@@ -31,6 +31,7 @@ const pkgName = 'generate-ip',
     }
 
     // Define MESSAGES
+    let msgs = {};
     const msgsLoaded = new Promise((resolve, reject) => {
         const msgHostDir = 'https://raw.githubusercontent.com/adamlui/js-utils/main/generate-ip/_locales/',
               msgLocaleDir = ( langCode ? langCode.replace('-', '_') : 'en' ) + '/';
@@ -51,7 +52,7 @@ const pkgName = 'generate-ip',
                 fetchData(msgHref).then(onLoad).catch(reject);
             }
         }
-    }); let msgs = {}; try { msgs = await msgsLoaded; } catch (err) {}
+    }); try { msgs = await msgsLoaded; } catch (err) {}
 
     // Load SETTINGS from args
     const config = {};
