@@ -10,7 +10,7 @@
   "error_nonPositiveNum": { "message": "argumentul poate fi > 0" },
   "error_invalidURL": { "message": "URL invalid" },
   "info_validArgs": { "message": "Argumentele valide sunt mai jos" },
-  "info_copying": { "message": "Copiez în clipboard..." },
+  "info_copying": { "message": "Copiez în clipboard" },
   "info_moreHelp": { "message": "Pentru mai mult ajutor" },
   "info_type": { "message": "tip" },
   "info_or": { "message": "sau" },
