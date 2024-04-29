@@ -184,7 +184,10 @@ const pkgName = 'generate-ip',
     }
 
     function printHelpCmdAndDocURL() {
-        console.info(`\nFor more help, type 'generate-ip --help' or visit\n${ bw + docURL + nc }`); }
+        console.info(`\n${ msgs.info_moreHelp || 'For more help' },`
+            + ` ${ msgs.info_type || 'type' } 'generate-ip --help'`
+            + ` ${ msgs.info_or || 'or' } ${ msgs.info_visit || 'visit' }\n${ bw + docURL + nc }`
+    );}
 
     function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
 
