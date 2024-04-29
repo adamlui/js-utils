@@ -189,7 +189,6 @@ const pkgName = 'generate-ip',
     function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
 
     function copyToClipboard(data) {
-        data = data.replace(/\s+$/, '').replace(/"/g, '""');
         if (process.platform == 'darwin') // macOS
             execSync(`printf "${data}" | pbcopy`);
         else if (process.platform == 'linux')
