@@ -4,7 +4,7 @@ const pkgName = '@adamlui/minify.js',
       copyright = '© 2024 Adam Lui & contributors under the MIT license.',
       cmdFormat = 'minify-js [inputPath] [outputPath] [options]',
       srcURL = 'https://code.minify-js.org/node.js',
-      docURL = 'https://docs.minify-js.org/#-command-line-usage';
+      docURL = 'https://docs.minify-js.org/node.js/#-command-line-usage';
 
 // Import LIBS
 const minifyJS = require(__dirname.match(/src/) ? './minify' : './minify.min'),
