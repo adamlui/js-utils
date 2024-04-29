@@ -30,10 +30,7 @@ const argRegex = {
         'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
     },
     paramOptions: { 'comment': /^--?comments?(?:=.*|$)/ },
-    infoCmds: {
-        'help': /^--?h(?:elp)?$/,
-        'version': /^--?ve?r?s?i?o?n?$/
-    }
+    infoCmds: { 'help': /^--?h(?:elp)?$/,'version': /^--?ve?r?s?i?o?n?$/ }
 };
 process.argv.forEach(arg => {
     if (!arg.startsWith('-')) return;

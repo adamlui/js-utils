@@ -24,10 +24,7 @@ const pkgName = '@adamlui/geolocate',
     const config = {};
     const argRegex = {
         flags: { 'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/ },
-        infoCmds: {
-            'help': /^--?h(?:elp)?$/,
-            'version': /^--?ve?r?s?i?o?n?$/
-        }
+        infoCmds: { 'help': /^--?h(?:elp)?$/, 'version': /^--?ve?r?s?i?o?n?$/ }
     };
     process.argv.forEach(arg => {
         if (!arg.startsWith('-')) return;
