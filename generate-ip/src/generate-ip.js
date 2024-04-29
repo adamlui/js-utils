@@ -297,7 +297,10 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 }
 
 // EXPORT APIs
-const apiAliases = { ipv4: ['IPV4', 'IPv4', 'ipV4'], ipv6: ['IPV6', 'IPv6', 'ipV6'] };
+const apiAliases = {
+    ipv4: [ 'ipV4', 'IPv4', 'IPV4', 'Ipv4', 'IpV4', 'ip', 'IP', 'Ip'],
+    ipv6: [ 'ipV6', 'IPv6', 'IPV6', 'Ipv6', 'IpV6']
+};
 try { module.exports = { ipv4, ipv6 }; } catch (err) {} // for Node.js
 try { window.ipv4 = ipv4; window.ipv6 = ipv6; } catch (err) {} // for Greasemonkey
 for (const api in apiAliases) // init/export aliases
