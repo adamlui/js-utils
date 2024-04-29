@@ -217,8 +217,10 @@ const pkgName = 'generate-pw',
     }
 
     function printHelpCmdAndDocURL() {
-        console.info(`\n${ msgs.info_moreHelp || 'For more help' }, ${ msgs.info_type || 'type' } `
-            + `'generate-pw --help' or ${ msgs.info_visit || 'visit' }\n${ bw + docURL + nc }`); }
+        console.info(`\n${ msgs.info_moreHelp || 'For more help' },`
+            + ` ${ msgs.info_type || 'type' } 'generate-pw --help'`
+            + ` ${ msgs.info_or || 'or' } ${ msgs.info_visit || 'visit' }\n${ bw + docURL + nc }`
+    );}
 
     function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
 
