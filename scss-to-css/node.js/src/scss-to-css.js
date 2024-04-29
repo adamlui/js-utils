@@ -14,7 +14,7 @@ const fs = require('fs'),
 function findSCSS(searchDir, options = {}) {
 
     const docURL = 'https://docs.js-utils.com/scss-to-css/node.js/#findscsssearchdir-options',
-          exampleCall = 'findSCSS(\'assets/scss\', { verbose: false, dotFolders: true })';
+          exampleCall = `findSCSS('assets/scss', { verbose: false, dotFolders: true })`;
 
     const defaultOptions = {
         recursive: true,  // recursively search for nested files in searchDir passed
@@ -68,7 +68,7 @@ function findSCSS(searchDir, options = {}) {
 function compile(input, options = {}) {
 
     const docURL = 'https://docs.js-utils.com/scss-to-css/node.js/#compileinput-options',
-          exampleCall = 'compile(\'assets/scss\', { recursive: false, minify: false })';
+          exampleCall = `compile('assets/scss', { recursive: false, minify: false })`;
 
     const defaultOptions = {
         recursive: true,   // recursively search for nested files if dir path passed

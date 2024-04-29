@@ -14,7 +14,7 @@ const fs = require('fs'),
 function findJS(searchDir, options = {}) {
 
     const docURL = 'https://docs.minify-js.org/#findjssearchdir-options',
-          exampleCall = 'findJS(\'assets/js\', { verbose: false, dotFoldes: true })';
+          exampleCall = `findJS('assets/js', { verbose: false, dotFoldes: true })`;
 
     const defaultOptions = {
         recursive: true,   // recursively search for nested files in searchDir passed
@@ -71,7 +71,7 @@ function findJS(searchDir, options = {}) {
 function minify(input, options = {}) {
 
     const docURL = 'https://docs.minify-js.org/#minifyinput-options',
-          exampleCall = 'minify(\'assets/js\', { recursive: false, mangle: false })';
+          exampleCall = `minify('assets/js', { recursive: false, mangle: false })`;
 
     const defaultOptions = {
         recursive: true,   // recursively search for nested files if dir path passed

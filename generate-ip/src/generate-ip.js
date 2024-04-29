@@ -44,7 +44,7 @@ const ipv4 = {
     validate: function(address, options = {}) {
 
         const docURL = 'https://docs.js-utils.com/generate-ip/#ipv4validateaddress-options',
-              exampleCall = 'ipv4.validate(\'0.0.255.255\', { verbose: false })',
+              exampleCall = `ipv4.validate('0.0.255.255', { verbose: false })`,
               defaultOptions = { verbose: true /* enable logging */ };
 
         // Validate address as arg
@@ -125,7 +125,7 @@ const ipv6 = {
     format: function(ipv6address, options = {}) {
 
         const docURL = 'https://docs.js-utils.com/generate-ip/#ipv6formatipv6address-options',
-              exampleCall = 'ipv6.format(\'0d::ffff:192.1.56.10/96\', '
+              exampleCall = `ipv6.format('0d::ffff:192.1.56.10/96', `
                           + '{ leadingZeros: true, doubleColon: false })';
 
         const defaultOptions = {
@@ -196,7 +196,7 @@ const ipv6 = {
     validate: function(address, options = {}) {
 
         const docURL = 'https://docs.js-utils.com/generate-ip/#ipv6validateaddress-options',
-              exampleCall = 'ipv6.validate(\'0:0:0:0:0:ffff:192.1.56.10/96\', { verbose: false })',
+              exampleCall = `ipv6.validate('0:0:0:0:0:ffff:192.1.56.10/96', { verbose: false })`,
               defaultOptions = { verbose: true /* enable logging */ };
 
         // Validate address as arg

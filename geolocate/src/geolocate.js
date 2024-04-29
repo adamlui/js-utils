@@ -6,7 +6,7 @@
 async function geolocate(ips, options = {}) {
 
     const docURL = 'https://docs.js-utils.com/geolocate/#locateip',
-          exampleCall = 'geolocate(\'8.8.8.8\', { verbose: false })',
+          exampleCall = `geolocate('8.8.8.8', { verbose: false })`,
           defaultOptions = { verbose: true /* enable logging */ };
 
     // Init/validate IP(s)
