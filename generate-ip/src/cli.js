@@ -21,12 +21,13 @@ const pkgName = 'generate-ip',
           bw = '\x1b[1;97m'; // bright white
 
     // Load sys LANGUAGE
-    let langCode;
-    if (process.platform == 'win32')
-        langCode = execSync('(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' }).trim();
-    else { // mac/linux
+    let langCode = 'en';
+    if (process.platform == 'win32') {
+        try { langCode = execSync('(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' }).trim(); }
+        catch (err) {}
+    } else { // macOS/Linux
         const env = process.env;
-        langCode = (env.LANG || env.LANGUAGE || env.LC_ALL || env.LC_MESSAGES || env.LC_NAME)?.split('.')[0];
+        langCode = (env.LANG || env.LANGUAGE || env.LC_ALL || env.LC_MESSAGES || env.LC_NAME || 'en')?.split('.')[0];
     }
 
     // Define MESSAGES
