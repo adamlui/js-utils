@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "ናይ ሓቂ መወከሲታት ኣብ ታሕቲ ኣሎ" },
   "info_copying": { "message": "ናብ ክሊፕቦርድ ምምላስ" },
   "info_moreHelp": { "message": "ዝያዳ ሓገዝ" },
+  "info_type": { "message": "ዓይነት" },
+  "info_or": { "message": "ወይ ከኣ " },
   "info_visit": { "message": "ጎብንይ" },
   "helpSection_usage": { "message": "ኣጠቓቕማ" },
   "helpSection_paramOptions": { "message": "ኣማራጺታት ፓራሜትር" },

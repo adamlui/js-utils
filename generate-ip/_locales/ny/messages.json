@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Mfundo zomveka zili m 'munsimu" },
   "info_copying": { "message": "Kukopera kuti clipboard" },
   "info_moreHelp": { "message": "Kuti muthandizidwe kwambiri" },
+  "info_type": { "message": "Mtundu" },
+  "info_or": { "message": "kapena" },
   "info_visit": { "message": "ulendo" },
   "helpSection_usage": { "message": "Ntchito" },
   "helpSection_paramOptions": { "message": "Zosankha za Parameter" },

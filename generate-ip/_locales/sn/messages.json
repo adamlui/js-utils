@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Nharo dzakakodzera dziri pasi apa" },
   "info_copying": { "message": "Kutevedzera kuti clipboard" },
   "info_moreHelp": { "message": "Kuti uwane rumwe rubatsiro" },
+  "info_type": { "message": "mota" },
+  "info_or": { "message": "kana" },
   "info_visit": { "message": "kushanya" },
   "helpSection_usage": { "message": "Kushandiswa" },
   "helpSection_paramOptions": { "message": "Parameter zvokusarudza" },

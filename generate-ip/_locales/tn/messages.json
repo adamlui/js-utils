@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Dikganetsano tsa boammaaruri di fa tlase fano" },
   "info_copying": { "message": "Go kopolola go ya go clipboard" },
   "info_moreHelp": { "message": "Go bona thuso go ya pele" },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "GOBA" },
   "info_visit": { "message": "Ketelo" },
   "helpSection_usage": { "message": "Tiriso" },
   "helpSection_paramOptions": { "message": "Dipharametara tse o ka tlhophang mo go tsone" },

@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Giltiga argument finns nedan" },
   "info_copying": { "message": "Kopiera till klippbordet" },
   "info_moreHelp": { "message": "För mer hjälp" },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "eller" },
   "info_visit": { "message": "besök" },
   "helpSection_usage": { "message": "Användning" },
   "helpSection_paramOptions": { "message": "Parameteralternativ" },

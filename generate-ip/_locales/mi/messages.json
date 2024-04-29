@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Ko nga korero tika kei raro nei" },
   "info_copying": { "message": "Tārua ki te papapātuhi" },
   "info_moreHelp": { "message": "Mō ētahi atu āwhina" },
+  "info_type": { "message": "Momo" },
+  "info_or": { "message": "koina" },
   "info_visit": { "message": "haere" },
   "helpSection_usage": { "message": "Whakamahia" },
   "helpSection_paramOptions": { "message": "Kōwhiringa parameter" },

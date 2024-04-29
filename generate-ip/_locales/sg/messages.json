@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "A yeke wara atënë so ayeke na gbe ni" },
   "info_copying": { "message": "Gbu li ti mo na ndo ti clipboard ni" },
   "info_moreHelp": { "message": "Ti mû maboko na mo" },
+  "info_type": { "message": "mara ti zo" },
+  "info_or": { "message": "lani wala to bani" },
   "info_visit": { "message": "visit Mbi" },
   "helpSection_usage": { "message": "Use of ti vs. tu" },
   "helpSection_paramOptions": { "message": "Akpengba ye so mo lingbi ti sara" },

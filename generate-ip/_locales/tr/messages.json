@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Geçerli argümanlar aşağıdadır" },
   "info_copying": { "message": "Panoya kopyalanıyor..." },
   "info_moreHelp": { "message": "Daha fazla yardım için" },
+  "info_type": { "message": "türü" },
+  "info_or": { "message": "veya" },
   "info_visit": { "message": "ziyaret" },
   "helpSection_usage": { "message": "Kullanım" },
   "helpSection_paramOptions": { "message": "Parametre seçenekleri" },

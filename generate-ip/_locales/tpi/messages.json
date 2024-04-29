@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Ol gutpela tok i stap daunbilo" },
   "info_copying": { "message": "Kopiim long Clipboard" },
   "info_moreHelp": { "message": "Bilong helpim yu" },
+  "info_type": { "message": "-Kain" },
+  "info_or": { "message": "o" },
   "info_visit": { "message": "visitim" },
   "helpSection_usage": { "message": "Yusim" },
   "helpSection_paramOptions": { "message": "Parametres opsen" },

@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Geldige argumenten staan hieronder" },
   "info_copying": { "message": "Kopiëren naar klembord" },
   "info_moreHelp": { "message": "voor meer hulp." },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "of" },
   "info_visit": { "message": "bezoek" },
   "helpSection_usage": { "message": "Gebruik" },
   "helpSection_paramOptions": { "message": "Parameteropties" },

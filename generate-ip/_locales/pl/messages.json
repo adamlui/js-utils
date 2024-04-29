@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Poniżej znajdują się prawidłowe argumenty" },
   "info_copying": { "message": "Kopiowanie do schowka" },
   "info_moreHelp": { "message": ", aby otrzymali dalszą pomoc." },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "lub" },
   "info_visit": { "message": "wizyta" },
   "helpSection_usage": { "message": "Używanie" },
   "helpSection_paramOptions": { "message": "Opcje parametrów" },

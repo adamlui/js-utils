@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "చెల్లుబాటు అయ్యే వాదనలు క్రింద ఉన్నాయి" },
   "info_copying": { "message": "క్లిప్ ‌ బోర్డ్ ‌ కు కాపీ చేస్తోంది" },
   "info_moreHelp": { "message": "మరింత సహాయం కోసం" },
+  "info_type": { "message": "రకం" },
+  "info_or": { "message": "లేదా" },
   "info_visit": { "message": "సందర్శించు" },
   "helpSection_usage": { "message": "వినిమయం" },
   "helpSection_paramOptions": { "message": "పరామితి ఎంపికలు" },

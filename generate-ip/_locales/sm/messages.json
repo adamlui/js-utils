@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "O finauga aoga o loo i lalo" },
   "info_copying": { "message": "Kopi i le clipboard" },
   "info_moreHelp": { "message": "Mo nisi fesoasoani" },
+  "info_type": { "message": "Itu'aiga" },
+  "info_or": { "message": "o" },
   "info_visit": { "message": "asiasi" },
   "helpSection_usage": { "message": "Faʻaaogaina" },
   "helpSection_paramOptions": { "message": "Filifiliga Parameter" },

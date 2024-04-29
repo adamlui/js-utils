@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "ਵੈਧ ਆਰਗੂਮੈਂਟ ਹੇਠਾਂ ਦਿੱਤੇ ਗਏ ਹਨ" },
   "info_copying": { "message": "ਪ੍ਰੋਗਰਾਮ:" },
   "info_moreHelp": { "message": "ਹੋਰ ਮਦਦ ਲਈ" },
+  "info_type": { "message": "ਟਾਈਪ" },
+  "info_or": { "message": "ਜਾਂ" },
   "info_visit": { "message": "ਮੁਲਾਕਾਤ" },
   "helpSection_usage": { "message": "ਵਰਤੋਂ" },
   "helpSection_paramOptions": { "message": "ਪੈਰਾਮੀਟਰ ਵਿਕਲਪ" },

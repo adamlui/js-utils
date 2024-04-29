@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Dogry jedelleşmeler:" },
   "info_copying": { "message": "Klipbordda kopy etmek" },
   "info_moreHelp": { "message": "Köpräk kömek etmek üçin" },
+  "info_type": { "message": "Hil" },
+  "info_or": { "message": "R" },
   "info_visit": { "message": "barmak" },
   "helpSection_usage": { "message": "Uzaklyk" },
   "helpSection_paramOptions": { "message": "Parametr saýlamalary" },

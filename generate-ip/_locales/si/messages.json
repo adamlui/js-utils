@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "වලංගු තර්ක පහත දැක්වේ" },
   "info_copying": { "message": "ක්ලිප් පුවරුවට පිටපත් කරමින්" },
   "info_moreHelp": { "message": "තවත් උදව් සඳහා" },
+  "info_type": { "message": "ගූගල්" },
+  "info_or": { "message": "හෝ" },
   "info_visit": { "message": "සංචාරය" },
   "helpSection_usage": { "message": "භාවිතය" },
   "helpSection_paramOptions": { "message": "පරාමිති විකල්ප" },

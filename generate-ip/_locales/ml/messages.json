@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "സാധുവായ ആർഗ്യുമെന്റുകൾ ചുവടെയുണ്ട്" },
   "info_copying": { "message": "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തുന്നു" },
   "info_moreHelp": { "message": "കൂടുതൽ സഹായത്തിനായി" },
+  "info_type": { "message": "തരം" },
+  "info_or": { "message": "അല്ലെങ്കിൽ " },
   "info_visit": { "message": "VISIT" },
   "helpSection_usage": { "message": "ഉപയോഗം" },
   "helpSection_paramOptions": { "message": "പാരാമീറ്റർ ഓപ്ഷനുകൾ" },

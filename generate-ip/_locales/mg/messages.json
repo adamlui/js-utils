@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Ireo tondriky azo ekena etsy ambany" },
   "info_copying": { "message": "Mandika mankany amin'ny fanindri-taratasy" },
   "info_moreHelp": { "message": "Raha mila fanampiana bebe kokoa" },
+  "info_type": { "message": "Karazany" },
+  "info_or": { "message": "R" },
   "info_visit": { "message": "_shopify_visit" },
   "helpSection_usage": { "message": "Ny teny niverimberina:" },
   "helpSection_paramOptions": { "message": "Safidy momba ny marika" },

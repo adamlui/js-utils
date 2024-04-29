@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Нижче наведено дійсні аргументи" },
   "info_copying": { "message": "Копіювання до буфера" },
   "info_moreHelp": { "message": "Додаткова допомога" },
+  "info_type": { "message": "тип" },
+  "info_or": { "message": "або" },
   "info_visit": { "message": "візит" },
   "helpSection_usage": { "message": "Використання" },
   "helpSection_paramOptions": { "message": "Параметри параметрів" },

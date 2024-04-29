@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Hujah yang sah adalah di bawah" },
   "info_copying": { "message": "Menyalin ke klipbod..." },
   "info_moreHelp": { "message": "Untuk bantuan lanjut" },
+  "info_type": { "message": "jenis" },
+  "info_or": { "message": "atau" },
   "info_visit": { "message": "melanggani" },
   "helpSection_usage": { "message": "Penggunaan" },
   "helpSection_paramOptions": { "message": "Pilihan parameter" },

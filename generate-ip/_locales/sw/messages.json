@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Hoja halali ziko hapa chini" },
   "info_copying": { "message": "Kunakili kwenye ubao wa kunakili" },
   "info_moreHelp": { "message": "Kwa msaada zaidi" },
+  "info_type": { "message": "aina" },
+  "info_or": { "message": "au " },
   "info_visit": { "message": "Kutembelea" },
   "helpSection_usage": { "message": "[Usage]" },
   "helpSection_paramOptions": { "message": "Machaguo ya kigezo" },

@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "ʻOku ʻi lalo ʻa e ngaahi fakakikihi ʻoku kei ʻaonga" },
   "info_copying": { "message": "Hiki tatau ki he papafakamaʻú" },
   "info_moreHelp": { "message": "Ke maʻu ha tokoni lahi ange" },
+  "info_type": { "message": "taipeʻi" },
+  "info_or": { "message": "pe" },
   "info_visit": { "message": "ʻaʻahi" },
   "helpSection_usage": { "message": "Fakaʻaongaʻi" },
   "helpSection_paramOptions": { "message": "Parameter Options" },

@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Platné argumenty sú uvedené nižšie" },
   "info_copying": { "message": "Kopírujem do dočasnej schránky..." },
   "info_moreHelp": { "message": "Ak potrebujete ďalšiu pomoc" },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "alebo" },
   "info_visit": { "message": "navštevovať" },
   "helpSection_usage": { "message": "Využívanie" },
   "helpSection_paramOptions": { "message": "Možnosti parametrov" },

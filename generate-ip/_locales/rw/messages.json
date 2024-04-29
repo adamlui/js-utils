@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Impaka zemewe hano hasi" },
   "info_copying": { "message": "Kuri Ububikokoporora" },
   "info_moreHelp": { "message": "Ubufasha burenze ubwo" },
+  "info_type": { "message": "Ubwoko" },
+  "info_or": { "message": "(?'Ops' or _BAR_ and _BAR_, _BAR_ \\\\s+ )" },
   "info_visit": { "message": "gusura" },
   "helpSection_usage": { "message": "Ubutumwa" },
   "helpSection_paramOptions": { "message": "Amahitamo" },

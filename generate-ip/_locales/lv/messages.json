@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Derīgi argumenti ir zemāk" },
   "info_copying": { "message": "Notiek kopēšana starpliktuvē" },
   "info_moreHelp": { "message": "Lai saņemtu papildu palīdzību" },
+  "info_type": { "message": "tips" },
+  "info_or": { "message": "vai" },
   "info_visit": { "message": "Apmeklējums" },
   "helpSection_usage": { "message": "Lietojums" },
   "helpSection_paramOptions": { "message": "Parametru opcijas" },

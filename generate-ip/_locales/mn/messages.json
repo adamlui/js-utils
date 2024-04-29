@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Зөв аргументууд доор байна" },
   "info_copying": { "message": "Түр санах ой руу хуулах" },
   "info_moreHelp": { "message": "Нэмэлт тусламж" },
+  "info_type": { "message": "төрөл" },
+  "info_or": { "message": "эсвэл" },
   "info_visit": { "message": "Зочлох:" },
   "helpSection_usage": { "message": "Хэрэглээ" },
   "helpSection_paramOptions": { "message": "Параметерын сонголтууд" },

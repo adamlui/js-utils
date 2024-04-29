@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "باوري دلیلونه لاندې دي" },
   "info_copying": { "message": "کلیپ بورډ ته کاپي کول" },
   "info_moreHelp": { "message": "د نورې مرستې لپاره" },
+  "info_type": { "message": "ډول" },
+  "info_or": { "message": "یا" },
   "info_visit": { "message": "ليدنه" },
   "helpSection_usage": { "message": "کارونه" },
   "helpSection_paramOptions": { "message": "د پاراميټر اختیارونه" },
