@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Los argumentos válidos están a continuación" },
   "info_copying": { "message": "Copiar al portapapeles fue" },
   "info_moreHelp": { "message": "Para obtener más ayuda" },
+  "info_type": { "message": "tipo" },
+  "info_or": { "message": "or" },
   "info_visit": { "message": "visita" },
   "helpSection_usage": { "message": "Uso" },
   "helpSection_paramOptions": { "message": "Opciones de parámetros" },

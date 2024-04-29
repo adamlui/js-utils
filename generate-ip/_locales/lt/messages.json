@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Toliau pateikiami tinkami argumentai" },
   "info_copying": { "message": "Kopijuojama į laikiną talpyklę" },
   "info_moreHelp": { "message": "Daugiau pagalbos" },
+  "info_type": { "message": "Tipas" },
+  "info_or": { "message": "arba" },
   "info_visit": { "message": "aplankyti" },
   "helpSection_usage": { "message": "Naudojimasis" },
   "helpSection_paramOptions": { "message": "Parametrų parinktys" },

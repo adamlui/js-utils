@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Baliozko argumentuak behean daude" },
   "info_copying": { "message": "Arbelean kopiatzen" },
   "info_moreHelp": { "message": "Laguntza gehiagorako" },
+  "info_type": { "message": "mota" },
+  "info_or": { "message": "edo" },
   "info_visit": { "message": "Bisitatu" },
   "helpSection_usage": { "message": "Erabilpena" },
   "helpSection_paramOptions": { "message": "Parametro aukerak" },

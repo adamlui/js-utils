@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "ຂໍ້ຂັດແຍ່ງທີ່ຖືກຕ້ອງແມ່ນຂ້າງລຸ່ມນີ້" },
   "info_copying": { "message": "ສໍາເນົາໄປທີ່ຄລິບບອດ" },
   "info_moreHelp": { "message": "ສໍາ ລັບການຊ່ວຍເຫຼືອເພີ່ມເຕີມ" },
+  "info_type": { "message": "ປະເພດ" },
+  "info_or": { "message": "ຫຼື" },
   "info_visit": { "message": "ຢ້ຽມຢາມ" },
   "helpSection_usage": { "message": "ການນຳໃຊ້" },
   "helpSection_paramOptions": { "message": "ຕົວເລືອກພາລາມິເຕີ" },

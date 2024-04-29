@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Ispod su valjani argumenti" },
   "info_copying": { "message": "Kopiranje u međuspremnik..." },
   "info_moreHelp": { "message": "Za dodatnu pomoć" },
+  "info_type": { "message": "tip" },
+  "info_or": { "message": "ili" },
   "info_visit": { "message": "posjet" },
   "helpSection_usage": { "message": "Uporaba" },
   "helpSection_paramOptions": { "message": "Parametri opcija BLM" },

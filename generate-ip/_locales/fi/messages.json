@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Kelvolliset argumentit ovat alla" },
   "info_copying": { "message": "Kopioin leikepöydälle..." },
   "info_moreHelp": { "message": "Saat lisäohjeita" },
+  "info_type": { "message": "tyyppi" },
+  "info_or": { "message": "tai" },
   "info_visit": { "message": "vieraile" },
   "helpSection_usage": { "message": "Käyttö" },
   "helpSection_paramOptions": { "message": "Parametrivaihtoehdot" },

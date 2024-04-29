@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Gültige Argumente sind unten aufgeführt" },
   "info_copying": { "message": "Kopiere in Zwischenablage" },
   "info_moreHelp": { "message": "Für weitere Hilfe" },
+  "info_type": { "message": "Typ" },
+  "info_or": { "message": "oder" },
   "info_visit": { "message": "Besuch" },
   "helpSection_usage": { "message": "Anwendung" },
   "helpSection_paramOptions": { "message": "Parameteroptionen" },

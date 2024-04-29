@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "ޞައްޙަ ދަލީލުތައް ތިރީގައި މިވަނީ" },
   "info_copying": { "message": "ކްލިޕްބޯޑަށް ކޮޕީ ކުރުން" },
   "info_moreHelp": { "message": "އިތުރު އެހީއަށް" },
+  "info_type": { "message": "ވައްތަރު" },
+  "info_or": { "message": "ނުވަތަ" },
   "info_visit": { "message": "ޒިޔާރަތް ކުރުން" },
   "helpSection_usage": { "message": "ބޭނުންކުރުން" },
   "helpSection_paramOptions": { "message": "ޕެރަމިޓަރ އޮޕްޝަންސް" },

@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Argumen yang valid ada di bawah ini" },
   "info_copying": { "message": "Menyalin ke clipboard" },
   "info_moreHelp": { "message": "Untuk bantuan lebih lanjut" },
+  "info_type": { "message": "jenis" },
+  "info_or": { "message": "atau" },
   "info_visit": { "message": "Kunjungi" },
   "helpSection_usage": { "message": "Cara Pakai" },
   "helpSection_paramOptions": { "message": "Opsi parameter" },

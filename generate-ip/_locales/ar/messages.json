@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "الحجج الصالحة أدناه" },
   "info_copying": { "message": "لصق من الحافظة... user on host" },
   "info_moreHelp": { "message": "لمزيد من المساعدة" },
+  "info_type": { "message": "النوع" },
+  "info_or": { "message": "أو" },
   "info_visit": { "message": "قم بزيارة" },
   "helpSection_usage": { "message": "الإستخدام" },
   "helpSection_paramOptions": { "message": "خيارات المتغير" },

@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Վավեր փաստարկները ներկայացված են ստորև" },
   "info_copying": { "message": "Պատճենահանվում է շապիկի մեջ" },
   "info_moreHelp": { "message": "Լրացուցիչ օգնության համար" },
+  "info_type": { "message": "Տեսակ" },
+  "info_or": { "message": "  " },
   "info_visit": { "message": "այցելություն" },
   "helpSection_usage": { "message": "օգտագործում" },
   "helpSection_paramOptions": { "message": "Պարամետրի տարբերակներ" },

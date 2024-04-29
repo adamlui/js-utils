@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Isebtar i yellan ddaw-a sɛan aseɣwen ɣer" },
   "info_copying": { "message": "Asnulfu ɣer Clippboard" },
   "info_moreHelp": { "message": "I ugar n tallelt" },
+  "info_type": { "message": "anaw" },
+  "info_or": { "message": "neɣ" },
   "info_visit": { "message": "Rzu" },
   "helpSection_usage": { "message": "Aseqdec:" },
   "helpSection_paramOptions": { "message": "Iɣewwaṛen n uzegrir" },

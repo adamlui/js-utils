@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Góðu argumentini niðanfyri" },
   "info_copying": { "message": "At koppa á klippborðið" },
   "info_moreHelp": { "message": "Fyri at fáa meira hjálp" },
+  "info_type": { "message": "Typa" },
+  "info_or": { "message": "ella" },
   "info_visit": { "message": "Vitja" },
   "helpSection_usage": { "message": "Brúka" },
   "helpSection_paramOptions": { "message": "Parametrar valmøguleikar" },

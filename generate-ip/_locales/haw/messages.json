@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Aia ma lalo nā manaʻo kūpono" },
   "info_copying": { "message": "Ke kope nei i ka papa ʻokiʻoki" },
   "info_moreHelp": { "message": "No ke kōkua hou aku" },
+  "info_type": { "message": "Ke ‘Ano" },
+  "info_or": { "message": "a i ʻole" },
   "info_visit": { "message": "kipa" },
   "helpSection_usage": { "message": "Hoʻohana" },
   "helpSection_paramOptions": { "message": "Nā koho palena" },

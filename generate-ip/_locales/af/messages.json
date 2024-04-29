@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Geldige argumente is onder" },
   "info_copying": { "message": "Besig om te kopiëer na klipbord..." },
   "info_moreHelp": { "message": "Vir meer hulp" },
+  "info_type": { "message": "tipe" },
+  "info_or": { "message": "of" },
   "info_visit": { "message": "keiur" },
   "helpSection_usage": { "message": "Gebruik" },
   "helpSection_paramOptions": { "message": "Parameter opsies" },

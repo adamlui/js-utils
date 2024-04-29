@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Tha argamaidean dligheach gu h - ìosal" },
   "info_copying": { "message": "A 'dèanamh lethbhreac dhan stòr - bhòrd" },
   "info_moreHelp": { "message": "Airson tuilleadh cuideachaidh" },
+  "info_type": { "message": "Seòrsa" },
+  "info_or": { "message": "no" },
   "info_visit": { "message": "cuairt" },
   "helpSection_usage": { "message": "Cleachdadh" },
   "helpSection_paramOptions": { "message": "Roghainnean a 'pharaiméadair" },

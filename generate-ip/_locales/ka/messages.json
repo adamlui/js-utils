@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Სწორი არგუმენტები მოცემულია ქვემოთ" },
   "info_copying": { "message": "Ბუფერში კოპირება" },
   "info_moreHelp": { "message": "Დამატებითი დახმარებისთვის" },
+  "info_type": { "message": "ტიპი" },
+  "info_or": { "message": "ან" },
   "info_visit": { "message": "ვიზიტი" },
   "helpSection_usage": { "message": "გამოყენება" },
   "helpSection_paramOptions": { "message": "Პარამეტრების პარამეტრები" },

@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "मान्य तर्क नीचे दिए गए हैं" },
   "info_copying": { "message": "क्लिपबोर्ड से नक़ल किया जा रहा है... user on host" },
   "info_moreHelp": { "message": "ज़्यादा मदद के लिए" },
+  "info_type": { "message": "प्रकार" },
+  "info_or": { "message": "या" },
   "info_visit": { "message": "+++ " },
   "helpSection_usage": { "message": "उपयोग" },
   "helpSection_paramOptions": { "message": "पैरामीटर विकल्प" },

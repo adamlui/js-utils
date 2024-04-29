@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Gyldige argumenter er nedenfor" },
   "info_copying": { "message": "Kopierer til udklipsholder" },
   "info_moreHelp": { "message": "Få mere hjælp" },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "eller" },
   "info_visit": { "message": "besøg" },
   "helpSection_usage": { "message": "Anvendelse" },
   "helpSection_paramOptions": { "message": "Parameterindstillinger" },

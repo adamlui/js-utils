@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "آرگومان های معتبر در زیر آمده است" },
   "info_copying": { "message": "در حال کپی کردن در کلیپ بورد" },
   "info_moreHelp": { "message": "برای اطلاعات بیشتر بخوانید " },
+  "info_type": { "message": "نوع" },
+  "info_or": { "message": "یا" },
   "info_visit": { "message": "مشاهده" },
   "helpSection_usage": { "message": "کاربرد" },
   "helpSection_paramOptions": { "message": "گزینه های پارامتر" },

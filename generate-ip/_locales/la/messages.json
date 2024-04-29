@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "PRAESTUM CONSTATIONES QUAE QUA" },
   "info_copying": { "message": "Clipboard" },
   "info_moreHelp": { "message": "Auxilium more" },
+  "info_type": { "message": "Typus" },
+  "info_or": { "message": "aut" },
   "info_visit": { "message": "frequento" },
   "helpSection_usage": { "message": "consumptio" },
   "helpSection_paramOptions": { "message": "Exemplaria Parameter" },

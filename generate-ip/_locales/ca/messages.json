@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Els arguments vàlids són els següents" },
   "info_copying": { "message": "S'està copiant al porta-retalls" },
   "info_moreHelp": { "message": "Per obtenir més ajuda" },
+  "info_type": { "message": "tipus" },
+  "info_or": { "message": "o" },
   "info_visit": { "message": "visita" },
   "helpSection_usage": { "message": "Ús" },
   "helpSection_paramOptions": { "message": "Opcions de paràmetres" },

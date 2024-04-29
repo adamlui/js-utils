@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "ಮಾನ್ಯವಾದ ಆರ್ಗ್ಯುಮೆಂಟ್ ‌ ಗಳು ಕೆಳಗೆ ಇವೆ" },
   "info_copying": { "message": "ಕ್ಲಿಪ್ ‌ ಬೋರ್ಡ್ ‌ ಗೆ ನಕಲಿಸಲಾಗುತ್ತಿದೆ" },
   "info_moreHelp": { "message": "ಹೆಚ್ಚಿನ ಸಹಾಯಕ್ಕಾಗಿ" },
+  "info_type": { "message": "TYPE" },
+  "info_or": { "message": "ಅಥವಾ " },
   "info_visit": { "message": "ಭೇಟಿ" },
   "helpSection_usage": { "message": "ಬಳಕೆ" },
   "helpSection_paramOptions": { "message": "ಪ್ಯಾರಾಮೀಟರ್ ಆಯ್ಕೆಗಳು" },

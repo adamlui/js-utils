@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Mae ymresymiadau dilys isod" },
   "info_copying": { "message": "Copïo i&apos; r gludfwrdd..." },
   "info_moreHelp": { "message": "Am fwy o help" },
+  "info_type": { "message": "mâth" },
+  "info_or": { "message": "neu" },
   "info_visit": { "message": "ymweld" },
   "helpSection_usage": { "message": "Defnydd" },
   "helpSection_paramOptions": { "message": "Opsiynau paramedr" },

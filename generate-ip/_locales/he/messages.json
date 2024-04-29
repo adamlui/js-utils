@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "להלן טיעונים תקפים" },
   "info_copying": { "message": "מעתיק אל הלוח..." },
   "info_moreHelp": { "message": "לקבלת עזרה נוספת" },
+  "info_type": { "message": "סוג" },
+  "info_or": { "message": "או" },
   "info_visit": { "message": "בקר" },
   "helpSection_usage": { "message": "שימוש" },
   "helpSection_paramOptions": { "message": "אפשרויות פרמטר" },

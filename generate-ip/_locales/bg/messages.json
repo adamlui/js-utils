@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Валидните аргументи са по - долу" },
   "info_copying": { "message": "Копиране в клипборда" },
   "info_moreHelp": { "message": "За повече помощ" },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "или експресна поръчка с" },
   "info_visit": { "message": "посетете" },
   "helpSection_usage": { "message": "Използван" },
   "helpSection_paramOptions": { "message": "Опции за параметрите" },

@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Дапушчальныя аргументы ніжэй" },
   "info_copying": { "message": "Значэнне:" },
   "info_moreHelp": { "message": "Для атрымання дадатковай дапамогі" },
+  "info_type": { "message": "друкаваць" },
+  "info_or": { "message": "або" },
   "info_visit": { "message": "наведаць" },
   "helpSection_usage": { "message": "Выкарыстанне" },
   "helpSection_paramOptions": { "message": "Параметры параметраў" },

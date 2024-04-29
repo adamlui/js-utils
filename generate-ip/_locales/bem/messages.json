@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Fela Anikulapo Kuti - Fela Anikulapo Kuti" },
   "info_copying": { "message": "Kopololeni ku clipboard" },
   "info_moreHelp": { "message": "Ukwishibilapo nafimbi pa kwafwa" },
+  "info_type": { "message": "Umusango" },
+  "info_or": { "message": "nelyo" },
   "info_visit": { "message": "tandalila" },
   "helpSection_usage": { "message": "Usage" },
   "helpSection_paramOptions": { "message": "Ifya kusalululapo" },

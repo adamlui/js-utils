@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Valid arguments are below" },
   "info_copying": { "message": "Copying to clipboard" },
   "info_moreHelp": { "message": "For more help" },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "or" },
   "info_visit": { "message": "visit" },
   "helpSection_usage": { "message": "Usage" },
   "helpSection_paramOptions": { "message": "Parameter options" },

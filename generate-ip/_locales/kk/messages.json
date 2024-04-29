@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Жарамды дәлелдер төменде келтірілген" },
   "info_copying": { "message": "Алмасу буферіндегіні орналастыруда..." },
   "info_moreHelp": { "message": "Қосымша көмек алу үшін" },
+  "info_type": { "message": "түрі" },
+  "info_or": { "message": "немесе" },
   "info_visit": { "message": "келу" },
   "helpSection_usage": { "message": "ТолуыName" },
   "helpSection_paramOptions": { "message": "Параметр опциялары" },

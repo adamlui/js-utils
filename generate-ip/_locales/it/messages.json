@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Gli argomenti validi sono riportati di seguito" },
   "info_copying": { "message": "Copia negli Appunti" },
   "info_moreHelp": { "message": "Per ulteriore assistenza" },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "o" },
   "info_visit": { "message": "visita" },
   "helpSection_usage": { "message": "Utilizzo" },
   "helpSection_paramOptions": { "message": "Opzioni dei parametri" },

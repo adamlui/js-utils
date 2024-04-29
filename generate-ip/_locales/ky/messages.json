@@ -12,6 +12,8 @@
   "info_validArgs": { "message": "Жарактуу аргументтер төмөндө келтирилген" },
   "info_copying": { "message": "Алмашуу буферине көчүрүү" },
   "info_moreHelp": { "message": "Көбүрөөк маалымат алуу үчүн" },
+  "info_type": { "message": "тиби" },
+  "info_or": { "message": "ЖЕ:" },
   "info_visit": { "message": "иш сапары" },
   "helpSection_usage": { "message": "Колдонулушу:" },
   "helpSection_paramOptions": { "message": "Параметр параметрлери" },
