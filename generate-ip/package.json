@@ -1,6 +1,6 @@
 {
   "name": "generate-ip",
-  "version": "2.2.11",
+  "version": "2.2.12",
   "description": "Randomly generate, format, and validate IPv4/IPv6 addresses.",
   "author": {
     "name": "Adam Lui",
