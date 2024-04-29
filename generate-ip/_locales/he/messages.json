@@ -10,7 +10,7 @@
   "error_nonPositiveNum": { "message": "הארגומנט יכול להיות רק > 0" },
   "error_invalidURL": { "message": "כתובת לא תקפה" },
   "info_validArgs": { "message": "להלן טיעונים תקפים" },
-  "info_copying": { "message": "מעתיק אל הלוח..." },
+  "info_copying": { "message": "מעתיק אל הלוח" },
   "info_moreHelp": { "message": "לקבלת עזרה נוספת" },
   "info_type": { "message": "סוג" },
   "info_or": { "message": "או" },

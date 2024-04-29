@@ -10,7 +10,7 @@
   "error_nonPositiveNum": { "message": "аргумент тек > 0 болуы мүмкін" },
   "error_invalidURL": { "message": "Жарамсыз URL" },
   "info_validArgs": { "message": "Жарамды дәлелдер төменде келтірілген" },
-  "info_copying": { "message": "Алмасу буферіндегіні орналастыруда..." },
+  "info_copying": { "message": "Алмасу буферіндегіні орналастыруда" },
   "info_moreHelp": { "message": "Қосымша көмек алу үшін" },
   "info_type": { "message": "түрі" },
   "info_or": { "message": "немесе" },

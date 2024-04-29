@@ -10,7 +10,7 @@
   "error_nonPositiveNum": { "message": "аргументот може да биде само > 0" },
   "error_invalidURL": { "message": "Невалидна URL" },
   "info_validArgs": { "message": "Валидните аргументи се подолу" },
-  "info_copying": { "message": "Копирам на таблата со исечоци..." },
+  "info_copying": { "message": "Копирам на таблата со исечоци" },
   "info_moreHelp": { "message": "За повеќе помош" },
   "info_type": { "message": "Вид" },
   "info_or": { "message": "или " },

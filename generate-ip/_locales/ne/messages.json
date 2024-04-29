@@ -10,7 +10,7 @@
   "error_nonPositiveNum": { "message": "तर्क > 0 मात्र हुन सक्छ" },
   "error_invalidURL": { "message": "अवैध यू आर एल" },
   "info_validArgs": { "message": "मान्य तर्कहरू तल छन्" },
-  "info_copying": { "message": "क्लिपबोर्डमा प्रतिलिपि गर्दैछ..." },
+  "info_copying": { "message": "क्लिपबोर्डमा प्रतिलिपि गर्दैछ" },
   "info_moreHelp": { "message": "थप मद्दतको लागि" },
   "info_type": { "message": "प्रकार" },
   "info_or": { "message": "वा " },

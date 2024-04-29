@@ -10,7 +10,7 @@
   "error_nonPositiveNum": { "message": "impikiswano inokuba > 0 kuphela" },
   "error_invalidURL": { "message": "Amagama efayile aceliweyo% 1 ayikhangeleki isebenza kum. Qinisekisa ukuba igama lefayile livalelwe kuchaphulo olu phindwe kabini." },
   "info_validArgs": { "message": "Iimpikiswano ezichanekileyo zingezantsi" },
-  "info_copying": { "message": "ikhuphela kwibhodi eqhotyoshwayo..." },
+  "info_copying": { "message": "ikhuphela kwibhodi eqhotyoshwayo" },
   "info_moreHelp": { "message": "Ukuze ufumane uncedo olungakumbi" },
   "info_type": { "message": "Udidi" },
   "info_or": { "message": "okanye" },

@@ -10,7 +10,7 @@
   "error_nonPositiveNum": { "message": "argument može biti samo > 0" },
   "error_invalidURL": { "message": "Neispravna URL adresa" },
   "info_validArgs": { "message": "Ispod su valjani argumenti" },
-  "info_copying": { "message": "Kopiranje u međuspremnik..." },
+  "info_copying": { "message": "Kopiranje u međuspremnik" },
   "info_moreHelp": { "message": "Za dodatnu pomoć" },
   "info_type": { "message": "tip" },
   "info_or": { "message": "ili" },

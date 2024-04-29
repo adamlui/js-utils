@@ -10,7 +10,7 @@
   "error_nonPositiveNum": { "message": "đối số chỉ có thể là > 0" },
   "error_invalidURL": { "message": "URL không hợp lệ " },
   "info_validArgs": { "message": "Dưới đây là các đối số hợp lệ" },
-  "info_copying": { "message": "Đang chép vào bảng nháp..." },
+  "info_copying": { "message": "Đang chép vào bảng nháp" },
   "info_moreHelp": { "message": "Để được trợ giúp thêm" },
   "info_type": { "message": "kiểu" },
   "info_or": { "message": "hoặc" },

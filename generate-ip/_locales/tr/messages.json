@@ -10,7 +10,7 @@
   "error_nonPositiveNum": { "message": "argüman sadece > 0 olabilir" },
   "error_invalidURL": { "message": "Adres geçersiz" },
   "info_validArgs": { "message": "Geçerli argümanlar aşağıdadır" },
-  "info_copying": { "message": "Panoya kopyalanıyor..." },
+  "info_copying": { "message": "Panoya kopyalanıyor" },
   "info_moreHelp": { "message": "Daha fazla yardım için" },
   "info_type": { "message": "türü" },
   "info_or": { "message": "veya" },

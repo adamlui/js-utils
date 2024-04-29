@@ -10,7 +10,7 @@
   "error_nonPositiveNum": { "message": "argument je lahko samo > 0" },
   "error_invalidURL": { "message": "Neveljaven URL" },
   "info_validArgs": { "message": "Spodaj so veljavni argumenti" },
-  "info_copying": { "message": "Kopiranje v odlagališče..." },
+  "info_copying": { "message": "Kopiranje v odlagališče" },
   "info_moreHelp": { "message": "Za več pomoči" },
   "info_type": { "message": "vrsta" },
   "info_or": { "message": "ali" },
