@@ -9,6 +9,6 @@ updates:
       - img-to-webp/
       - minify.js/gulp/
       - minify.js/node.js/
-      - scss-to-css/
+      - scss-to-css/node.js/
     schedule:
       interval: daily
