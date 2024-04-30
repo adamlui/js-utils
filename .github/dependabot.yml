@@ -3,10 +3,10 @@ updates:
   - package-ecosystem: npm
     directories:
       - /
-      - img-to-webp/
       - generate-ip/
       - generate-pw/
       - geolocate/
+      - img-to-webp/
       - minify.js/gulp/
       - minify.js/node.js/
       - scss-to-css/
