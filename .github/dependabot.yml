@@ -1,41 +1,14 @@
 version: 2
 updates:
   - package-ecosystem: npm
-    directory: /
-    schedule:
-      interval: daily
-
-  - package-ecosystem: npm
-    directory: img-to-webp/
-    schedule:
-      interval: daily
-
-  - package-ecosystem: npm
-    directory: generate-ip/
-    schedule:
-      interval: daily
-
-  - package-ecosystem: npm
-    directory: generate-pw/
-    schedule:
-      interval: daily
-
-  - package-ecosystem: npm
-    directory: geolocate/
-    schedule:
-      interval: daily
-
-  - package-ecosystem: npm
-    directory: minify.js/gulp/
-    schedule:
-      interval: daily
-
-  - package-ecosystem: npm
-    directory: minify.js/node.js/
-    schedule:
-      interval: daily
-
-  - package-ecosystem: npm
-    directory: scss-to-css/
+    directories:
+      - /
+      - img-to-webp/
+      - generate-ip/
+      - generate-pw/
+      - geolocate/
+      - minify.js/gulp/
+      - minify.js/node.js/
+      - scss-to-css/
     schedule:
       interval: daily
