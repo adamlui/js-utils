@@ -31,5 +31,5 @@
   "optionDesc_strict": { "message": "ຮຽກຮ້ອງໃຫ້ມີຢ່າງໜ້ອຍໜຶ່ງຕົວອັກສອນຈາກແຕ່ລະຕົວອັກສອນທີ່ອະນຸຍາດໃນລະຫັດຜ່ານ" },
   "optionDesc_quiet": { "message": "ສະກັດກັ້ນການຕັດໄມ້ທັງໝົດ ຍົກເວັ້ນຂໍ້ຜິດພາດ" },
   "optionDesc_help": { "message": "ສະແດງໜ້າຈໍຊ່ວຍເຫຼືອ" },
-  "optionDesc_version": { "message": "ໝາຍເລກຮຸ່ນ:" }
+  "optionDesc_version": { "message": "ໝາຍເລກຮຸ່ນ" }
 }

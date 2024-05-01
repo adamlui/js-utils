@@ -8,7 +8,7 @@
   "error_notRecognized": { "message": "мойындалмады" },
   "error_invalidURL": { "message": "Жарамсыз URL" },
   "info_validArgs": { "message": "Жарамды дәлелдер төменде келтірілген" },
-  "info_copying": { "message": "Алмасу буферіндегіні орналастыруда..." },
+  "info_copying": { "message": "Алмасу буферіндегіні орналастыруда" },
   "info_moreHelp": { "message": "Қосымша көмек алу үшін" },
   "info_visit": { "message": "келу" },
   "geoLabel_country": { "message": "Ел" },

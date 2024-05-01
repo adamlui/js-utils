@@ -11,7 +11,7 @@
   "error_invalidURL": { "message": "无效网址" },
   "info_validArgs": { "message": "有效的参数如下" },
   "info_copying": { "message": "复制到剪贴板" },
-  "info_moreHelp": { "message": "需要更多帮助？" },
+  "info_moreHelp": { "message": "需要更多帮助" },
   "info_type": { "message": "类型" },
   "info_or": { "message": "或" },
   "info_visit": { "message": "参观" },

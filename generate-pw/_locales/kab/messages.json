@@ -1,7 +1,7 @@
 {
   "appName": { "message": "generate-pw" },
   "appCopyright": { "message": "© 2024 Adam Lui & confrontations under the MIT License" },
-  "prefix_error": { "message": "TUCCḌA:" },
+  "prefix_error": { "message": "TUCCḌA" },
   "prefix_globalVer": { "message": "Asebter n umaḍal" },
   "prefix_localVer": { "message": "Asebter amezwaru" },
   "prefix_source": { "message": "Aqbalu" },
@@ -15,7 +15,7 @@
   "info_type": { "message": "anaw" },
   "info_or": { "message": "neɣ" },
   "info_visit": { "message": "Rzu" },
-  "helpSection_usage": { "message": "Aseqdec:" },
+  "helpSection_usage": { "message": "Aseqdec" },
   "helpSection_paramOptions": { "message": "Iɣewwaṛen n uzegrir" },
   "helpSection_flags": { "message": "Iɣewwaṛen n Boolean" },
   "helpSection_infoCmds": { "message": "Iɣewwaṛen n isefka" },

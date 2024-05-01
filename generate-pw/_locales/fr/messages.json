@@ -17,7 +17,7 @@
   "info_visit": { "message": "visite" },
   "helpSection_usage": { "message": "Usage" },
   "helpSection_paramOptions": { "message": "Options de paramètres" },
-  "helpSection_flags": { "message": "Options:" },
+  "helpSection_flags": { "message": "Options" },
   "helpSection_infoCmds": { "message": "Commandes info" },
   "optionDesc_length": { "message": "Générer mot(s) de passe de n longueur" },
   "optionDesc_qty": { "message": "Générer n mot(s) de passe" },

@@ -8,7 +8,7 @@
   "error_notRecognized": { "message": "ਪਛਾਣਿਆ ਨਹੀਂ" },
   "error_invalidURL": { "message": "ਗਲਤ URL" },
   "info_validArgs": { "message": "ਵੈਧ ਆਰਗੂਮੈਂਟ ਹੇਠਾਂ ਦਿੱਤੇ ਗਏ ਹਨ" },
-  "info_copying": { "message": "ਪ੍ਰੋਗਰਾਮ:" },
+  "info_copying": { "message": "ਪ੍ਰੋਗਰਾਮ" },
   "info_moreHelp": { "message": "ਹੋਰ ਮਦਦ ਲਈ" },
   "info_visit": { "message": "ਮੁਲਾਕਾਤ" },
   "geoLabel_country": { "message": "ਦੇਸ਼" },

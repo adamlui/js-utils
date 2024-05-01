@@ -8,7 +8,7 @@
   "error_notRecognized": { "message": "tanınmamış" },
   "error_invalidURL": { "message": "Adres geçersiz" },
   "info_validArgs": { "message": "Geçerli argümanlar aşağıdadır" },
-  "info_copying": { "message": "Panoya kopyalanıyor..." },
+  "info_copying": { "message": "Panoya kopyalanıyor" },
   "info_moreHelp": { "message": "Daha fazla yardım için" },
   "info_visit": { "message": "ziyaret" },
   "geoLabel_country": { "message": "Ülke" },

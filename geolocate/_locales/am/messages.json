@@ -16,7 +16,7 @@
   "geoLabel_city": { "message": "ከተማ" },
   "geoLabel_zip": { "message": "የሰዓት ክልል" },
   "geoLabel_lat": { "message": "Latitude" },
-  "geoLabel_lon": { "message": "ኬንትሮስ:" },
+  "geoLabel_lon": { "message": "ኬንትሮስ" },
   "helpSection_usage": { "message": "መልዕክት" },
   "helpSection_configOptions": { "message": "አማራጮችን ያዋቅሩ" },
   "helpSection_infoCmds": { "message": "መረጃ ትዕዛዞች" },

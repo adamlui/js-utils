@@ -9,7 +9,7 @@
   "error_invalidURL": { "message": "Nieprawidłowy adres URL" },
   "info_validArgs": { "message": "Poniżej znajdują się prawidłowe argumenty" },
   "info_copying": { "message": "Kopiowanie do schowka" },
-  "info_moreHelp": { "message": ", aby otrzymali dalszą pomoc." },
+  "info_moreHelp": { "message": ", aby otrzymali dalszą pomoc" },
   "info_visit": { "message": "wizyta" },
   "geoLabel_country": { "message": "Kraj" },
   "geoLabel_region": { "message": "Region" },

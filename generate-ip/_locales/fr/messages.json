@@ -17,7 +17,7 @@
   "info_visit": { "message": "visite" },
   "helpSection_usage": { "message": "Usage" },
   "helpSection_paramOptions": { "message": "Options de paramètres" },
-  "helpSection_flags": { "message": "Options:" },
+  "helpSection_flags": { "message": "Options" },
   "helpSection_infoCmds": { "message": "Commandes info" },
   "optionDesc_qty": { "message": "Générer n adresse(s) IP" },
   "optionDesc_quiet": { "message": "Supprimer tous les journaux sauf les erreurs" },

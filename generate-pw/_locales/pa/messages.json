@@ -10,7 +10,7 @@
   "error_nonPositiveNum": { "message": "ਦਲੀਲ ਸਿਰਫ > 0 ਹੋ ਸਕਦੀ ਹੈ" },
   "error_invalidURL": { "message": "ਗਲਤ URL" },
   "info_validArgs": { "message": "ਵੈਧ ਆਰਗੂਮੈਂਟ ਹੇਠਾਂ ਦਿੱਤੇ ਗਏ ਹਨ" },
-  "info_copying": { "message": "ਪ੍ਰੋਗਰਾਮ:" },
+  "info_copying": { "message": "ਪ੍ਰੋਗਰਾਮ" },
   "info_moreHelp": { "message": "ਹੋਰ ਮਦਦ ਲਈ" },
   "info_type": { "message": "ਟਾਈਪ" },
   "info_or": { "message": "ਜਾਂ" },

@@ -22,5 +22,5 @@
   "optionDesc_qty": { "message": "ສ້າງທີ່ຢູ່ IP(es)" },
   "optionDesc_quiet": { "message": "ສະກັດກັ້ນການຕັດໄມ້ທັງໝົດ ຍົກເວັ້ນຂໍ້ຜິດພາດ" },
   "optionDesc_help": { "message": "ສະແດງໜ້າຈໍຊ່ວຍເຫຼືອ" },
-  "optionDesc_version": { "message": "ໝາຍເລກຮຸ່ນ:" }
+  "optionDesc_version": { "message": "ໝາຍເລກຮຸ່ນ" }
 }

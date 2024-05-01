@@ -8,7 +8,7 @@
   "error_notRecognized": { "message": "Non-reconnu" },
   "error_invalidURL": { "message": "URL Invalide" },
   "info_validArgs": { "message": "Les arguments valides sont ci-dessous" },
-  "info_copying": { "message": "Copie vers le Presse-Papiers..." },
+  "info_copying": { "message": "Copie vers le Presse-Papiers" },
   "info_moreHelp": { "message": "Pour plus d’aide" },
   "info_visit": { "message": "visite" },
   "geoLabel_country": { "message": "Pays" },

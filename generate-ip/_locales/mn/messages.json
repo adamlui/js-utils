@@ -14,7 +14,7 @@
   "info_moreHelp": { "message": "Нэмэлт тусламж" },
   "info_type": { "message": "төрөл" },
   "info_or": { "message": "эсвэл" },
-  "info_visit": { "message": "Зочлох:" },
+  "info_visit": { "message": "Зочлох" },
   "helpSection_usage": { "message": "Хэрэглээ" },
   "helpSection_paramOptions": { "message": "Параметерын сонголтууд" },
   "helpSection_flags": { "message": "Boolean хувилбарууд" },

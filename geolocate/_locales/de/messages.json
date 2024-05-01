@@ -18,7 +18,7 @@
   "geoLabel_lat": { "message": "Breitengrad" },
   "geoLabel_lon": { "message": "Längengrad" },
   "helpSection_usage": { "message": "Anwendung" },
-  "helpSection_configOptions": { "message": "Einstellungen bearbeiten:" },
+  "helpSection_configOptions": { "message": "Einstellungen bearbeiten" },
   "helpSection_infoCmds": { "message": "Info-Befehle" },
   "optionDesc_quiet": { "message": "Alle Protokolle mit Ausnahme von Fehlern unterdrücken" },
   "optionDesc_help": { "message": "Hilfebildschirm anzeigen" },

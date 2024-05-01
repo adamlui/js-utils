@@ -4,7 +4,7 @@
   "prefix_error": { "message": "BREK" },
   "prefix_globalVer": { "message": "Globalt útgáva" },
   "prefix_localVer": { "message": "Lokalu útgávan" },
-  "prefix_source": { "message": "Kelda:" },
+  "prefix_source": { "message": "Kelda" },
   "error_notRecognized": { "message": "ikki viðurkennd" },
   "error_invalidURL": { "message": "Ógildugt URL" },
   "info_validArgs": { "message": "Góðu argumentini niðanfyri" },
@@ -16,11 +16,11 @@
   "geoLabel_city": { "message": "Býur" },
   "geoLabel_zip": { "message": "Tíðarsvæði" },
   "geoLabel_lat": { "message": "Breiddømi" },
-  "geoLabel_lon": { "message": "Longdarstig:" },
+  "geoLabel_lon": { "message": "Longdarstig" },
   "helpSection_usage": { "message": "Brúka" },
   "helpSection_configOptions": { "message": "Set upp valmøguleikar" },
   "helpSection_infoCmds": { "message": "Upplýsingar boð" },
   "optionDesc_quiet": { "message": "Undirskriva allar innmeldingar uttan feil" },
   "optionDesc_help": { "message": "Vís hjálparskjá" },
-  "optionDesc_version": { "message": "Vís útgávu nr." }
+  "optionDesc_version": { "message": "Vís útgávu nr" }
 }

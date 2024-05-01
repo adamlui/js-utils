@@ -5,7 +5,7 @@
   "prefix_globalVer": { "message": "Versione globale" },
   "prefix_localVer": { "message": "Versione locale" },
   "prefix_source": { "message": "Origine" },
-  "error_notRecognized": { "message": "non riconosciuti." },
+  "error_notRecognized": { "message": "non riconosciuti" },
   "error_invalidURL": { "message": "URL non valido" },
   "info_validArgs": { "message": "Gli argomenti validi sono riportati di seguito" },
   "info_copying": { "message": "Copia negli Appunti" },
@@ -22,5 +22,5 @@
   "helpSection_infoCmds": { "message": "Comandi info" },
   "optionDesc_quiet": { "message": "Elimina tutte le registrazioni ad eccezione degli errori" },
   "optionDesc_help": { "message": "Visualizza la schermata di aiuto" },
-  "optionDesc_version": { "message": "Mostra il numero di versione." }
+  "optionDesc_version": { "message": "Mostra il numero di versione" }
 }

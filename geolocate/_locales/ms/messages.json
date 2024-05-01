@@ -8,7 +8,7 @@
   "error_notRecognized": { "message": "Tidak dikonsikan semula" },
   "error_invalidURL": { "message": "URL tidak sah" },
   "info_validArgs": { "message": "Hujah yang sah adalah di bawah" },
-  "info_copying": { "message": "Menyalin ke klipbod..." },
+  "info_copying": { "message": "Menyalin ke klipbod" },
   "info_moreHelp": { "message": "Untuk bantuan lanjut" },
   "info_visit": { "message": "melanggani" },
   "geoLabel_country": { "message": "Negara" },

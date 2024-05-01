@@ -8,7 +8,7 @@
   "error_notRecognized": { "message": "nerecunoscut" },
   "error_invalidURL": { "message": "URL invalid" },
   "info_validArgs": { "message": "Argumentele valide sunt mai jos" },
-  "info_copying": { "message": "Copiez în clipboard..." },
+  "info_copying": { "message": "Copiez în clipboard" },
   "info_moreHelp": { "message": "Pentru mai mult ajutor" },
   "info_visit": { "message": "a vizita" },
   "geoLabel_country": { "message": "Ţara" },

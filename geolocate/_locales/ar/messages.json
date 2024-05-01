@@ -5,7 +5,7 @@
   "prefix_globalVer": { "message": "الإصدار العالمي" },
   "prefix_localVer": { "message": "الإصدار المحلي" },
   "prefix_source": { "message": "Source" },
-  "error_notRecognized": { "message": "غير معترف بها." },
+  "error_notRecognized": { "message": "غير معترف بها" },
   "error_invalidURL": { "message": "الرابط غير صحيح" },
   "info_validArgs": { "message": "الحجج الصالحة أدناه" },
   "info_copying": { "message": "لصق من الحافظة... user on host" },

@@ -1,7 +1,7 @@
 {
   "appName": { "message": "geolocate" },
   "appCopyright": { "message": "© 2024 Adam Lui s ufus n MIT" },
-  "prefix_error": { "message": "TUCCḌA:" },
+  "prefix_error": { "message": "TUCCḌA" },
   "prefix_globalVer": { "message": "Asebter n umaḍal" },
   "prefix_localVer": { "message": "Asebter amezwaru" },
   "prefix_source": { "message": "Aqbalu" },
@@ -17,7 +17,7 @@
   "geoLabel_zip": { "message": "Iẓḍi usrig" },
   "geoLabel_lat": { "message": "Taggayt" },
   "geoLabel_lon": { "message": "Aɣezzif" },
-  "helpSection_usage": { "message": "Aseqdec:" },
+  "helpSection_usage": { "message": "Aseqdec" },
   "helpSection_configOptions": { "message": "Snifel isenfaren" },
   "helpSection_infoCmds": { "message": "Iɣewwaṛen n isefka" },
   "optionDesc_quiet": { "message": "Sizdeg akk tuccḍiwin anagar tuccḍiwin" },

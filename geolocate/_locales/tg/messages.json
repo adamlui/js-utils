@@ -8,7 +8,7 @@
   "error_notRecognized": { "message": "эътироф нашудааст" },
   "error_invalidURL": { "message": "URL- и нодуруст" },
   "info_validArgs": { "message": "Аргументҳои дуруст дар поён" },
-  "info_copying": { "message": "Нусха бардоштан дар буфери иваз..." },
+  "info_copying": { "message": "Нусха бардоштан дар буфери иваз" },
   "info_moreHelp": { "message": "Para sa karagdagang tul" },
   "info_visit": { "message": "pagbisita" },
   "geoLabel_country": { "message": "Кишвар" },

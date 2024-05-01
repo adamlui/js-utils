@@ -8,7 +8,7 @@
   "error_notRecognized": { "message": "Ne raspoznato" },
   "error_invalidURL": { "message": "Neispravna URL adresa" },
   "info_validArgs": { "message": "Ispod su valjani argumenti" },
-  "info_copying": { "message": "Kopiranje u međuspremnik..." },
+  "info_copying": { "message": "Kopiranje u međuspremnik" },
   "info_moreHelp": { "message": "Za dodatnu pomoć" },
   "info_visit": { "message": "posjet" },
   "geoLabel_country": { "message": "Država" },

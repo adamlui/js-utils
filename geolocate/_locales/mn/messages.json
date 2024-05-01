@@ -10,7 +10,7 @@
   "info_validArgs": { "message": "Зөв аргументууд доор байна" },
   "info_copying": { "message": "Түр санах ой руу хуулах" },
   "info_moreHelp": { "message": "Нэмэлт тусламж" },
-  "info_visit": { "message": "Зочлох:" },
+  "info_visit": { "message": "Зочлох" },
   "geoLabel_country": { "message": "Улс" },
   "geoLabel_region": { "message": "Бүс нутаг" },
   "geoLabel_city": { "message": "Хот, аймаг" },

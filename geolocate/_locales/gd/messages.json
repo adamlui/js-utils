@@ -16,7 +16,7 @@
   "geoLabel_city": { "message": "Baile mòr" },
   "geoLabel_zip": { "message": "Sòn - ama" },
   "geoLabel_lat": { "message": "Latitude" },
-  "geoLabel_lon": { "message": "Domhan-fhad:" },
+  "geoLabel_lon": { "message": "Domhan-fhad" },
   "helpSection_usage": { "message": "Cleachdadh" },
   "helpSection_configOptions": { "message": "Roghainnean rèiteachaidh" },
   "helpSection_infoCmds": { "message": "Àithnean fiosrachaidh" },

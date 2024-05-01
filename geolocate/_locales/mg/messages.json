@@ -1,7 +1,7 @@
 {
   "appName": { "message": "geolocate" },
   "appCopyright": { "message": "© 2024 Adam Lui eo ambany fahazoan-dàlana MIT" },
-  "prefix_error": { "message": "TSY FETEZANA:" },
+  "prefix_error": { "message": "TSY FETEZANA" },
   "prefix_globalVer": { "message": "Ny versiona faranydia" },
   "prefix_localVer": { "message": "Kinovan'ny toerana" },
   "prefix_source": { "message": "Loharano" },
@@ -17,7 +17,7 @@
   "geoLabel_zip": { "message": "Faritrora" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Longitude" },
-  "helpSection_usage": { "message": "Ny teny niverimberina:" },
+  "helpSection_usage": { "message": "Ny teny niverimberina" },
   "helpSection_configOptions": { "message": "Safidin'ny kirakira" },
   "helpSection_infoCmds": { "message": "Baikon'ny fampahalalana" },
   "optionDesc_quiet": { "message": "Hanafoana ny logging rehetra afa-tsy fahadisoana" },

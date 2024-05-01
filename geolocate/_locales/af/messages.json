@@ -8,7 +8,7 @@
   "error_notRecognized": { "message": "nie erken nie" },
   "error_invalidURL": { "message": "Ongeldige URL" },
   "info_validArgs": { "message": "Geldige argumente is onder" },
-  "info_copying": { "message": "Besig om te kopiëer na klipbord..." },
+  "info_copying": { "message": "Besig om te kopiëer na klipbord" },
   "info_moreHelp": { "message": "Vir meer hulp" },
   "info_visit": { "message": "keiur" },
   "geoLabel_country": { "message": "Land" },

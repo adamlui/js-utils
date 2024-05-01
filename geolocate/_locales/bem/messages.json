@@ -16,7 +16,7 @@
   "geoLabel_city": { "message": "Umusumba" },
   "geoLabel_zip": { "message": "Iwashita Zone" },
   "geoLabel_lat": { "message": "Latitude" },
-  "geoLabel_lon": { "message": "Mubutali:" },
+  "geoLabel_lon": { "message": "Mubutali" },
   "helpSection_usage": { "message": "Usage" },
   "helpSection_configOptions": { "message": "Config options" },
   "helpSection_infoCmds": { "message": "Ifyebo Fyabamo Lyonse" },

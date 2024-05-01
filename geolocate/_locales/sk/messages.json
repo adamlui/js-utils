@@ -8,7 +8,7 @@
   "error_notRecognized": { "message": "Kód nebol rozpoznaný" },
   "error_invalidURL": { "message": "Neplatná adresa URL" },
   "info_validArgs": { "message": "Platné argumenty sú uvedené nižšie" },
-  "info_copying": { "message": "Kopírujem do dočasnej schránky..." },
+  "info_copying": { "message": "Kopírujem do dočasnej schránky" },
   "info_moreHelp": { "message": "Ak potrebujete ďalšiu pomoc" },
   "info_visit": { "message": "navštevovať" },
   "geoLabel_country": { "message": "Country" },

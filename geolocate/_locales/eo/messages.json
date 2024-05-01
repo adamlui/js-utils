@@ -8,7 +8,7 @@
   "error_notRecognized": { "message": "ne rekonita" },
   "error_invalidURL": { "message": "Nevalida URL" },
   "info_validArgs": { "message": "Validaj argumentoj estas sube" },
-  "info_copying": { "message": "Kopiante al interdeponejo..." },
+  "info_copying": { "message": "Kopiante al interdeponejo" },
   "info_moreHelp": { "message": "Por pli da helpo" },
   "info_visit": { "message": "viziti" },
   "geoLabel_country": { "message": "Lando" },

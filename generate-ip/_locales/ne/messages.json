@@ -14,7 +14,7 @@
   "info_moreHelp": { "message": "थप मद्दतको लागि" },
   "info_type": { "message": "प्रकार" },
   "info_or": { "message": "वा " },
-  "info_visit": { "message": "भ्रमण गर्नुहोस्:" },
+  "info_visit": { "message": "भ्रमण गर्नुहोस्" },
   "helpSection_usage": { "message": "प्रयोग" },
   "helpSection_paramOptions": { "message": "प्यारामिटर विकल्पहरू" },
   "helpSection_flags": { "message": "बुलियन विकल्पहरू" },

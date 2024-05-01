@@ -9,7 +9,7 @@
   "error_invalidURL": { "message": "Ongeldige URL" },
   "info_validArgs": { "message": "Geldige argumenten staan hieronder" },
   "info_copying": { "message": "Kopiëren naar klembord" },
-  "info_moreHelp": { "message": "voor meer hulp." },
+  "info_moreHelp": { "message": "voor meer hulp" },
   "info_visit": { "message": "bezoek" },
   "geoLabel_country": { "message": "Land" },
   "geoLabel_region": { "message": "Regio" },

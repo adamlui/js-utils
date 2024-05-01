@@ -4,7 +4,7 @@
   "prefix_error": { "message": "BREK" },
   "prefix_globalVer": { "message": "Globalt útgáva" },
   "prefix_localVer": { "message": "Lokalu útgávan" },
-  "prefix_source": { "message": "Kelda:" },
+  "prefix_source": { "message": "Kelda" },
   "error_noEqual": { "message": "tað krevur \"=\" eftirfylgt av einum virði" },
   "error_notRecognized": { "message": "ikki viðurkennd" },
   "error_nonPositiveNum": { "message": "argument kann bert vera > 0" },

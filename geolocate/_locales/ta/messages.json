@@ -8,7 +8,7 @@
   "error_notRecognized": { "message": "அடையாளம் காணப்படவில்லை" },
   "error_invalidURL": { "message": "கோப்புப் பெயர் தவறு" },
   "info_validArgs": { "message": "செல்லுபடியாகும் வாதங்கள் கீழே உள்ளன" },
-  "info_copying": { "message": "பிடிப்புப்பலகைக்கு நகலாக்குகின்றது...." },
+  "info_copying": { "message": "பிடிப்புப்பலகைக்கு நகலாக்குகின்றது" },
   "info_moreHelp": { "message": "மேலும் உதவிக்கு" },
   "info_visit": { "message": "வீட்டுக்கு வருகை" },
   "geoLabel_country": { "message": "நாடு" },

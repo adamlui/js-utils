@@ -9,7 +9,7 @@
   "error_invalidURL": { "message": "Μη έγκυρo URL" },
   "info_validArgs": { "message": "Τα έγκυρα ορίσματα είναι παρακάτω" },
   "info_copying": { "message": "Αντιγραφή στο πρόχειρο" },
-  "info_moreHelp": { "message": "Για περισσότερη βοήθεια:" },
+  "info_moreHelp": { "message": "Για περισσότερη βοήθεια" },
   "info_visit": { "message": "επίσκεψη" },
   "geoLabel_country": { "message": "Χώρα" },
   "geoLabel_region": { "message": "Περιφέρεια" },

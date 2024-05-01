@@ -8,7 +8,7 @@
   "error_notRecognized": { "message": "לא מזוהה" },
   "error_invalidURL": { "message": "כתובת לא תקפה" },
   "info_validArgs": { "message": "להלן טיעונים תקפים" },
-  "info_copying": { "message": "מעתיק אל הלוח..." },
+  "info_copying": { "message": "מעתיק אל הלוח" },
   "info_moreHelp": { "message": "לקבלת עזרה נוספת" },
   "info_visit": { "message": "בקר" },
   "geoLabel_country": { "message": "‎מחוז" },
