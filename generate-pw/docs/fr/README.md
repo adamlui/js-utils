@@ -257,7 +257,7 @@ Lorsqu'il est installé [globalement](#-installation), **generate-pw** peut éga
 $ generate-pw
 ```
 
-**💡 Remarque :** Pour des raisons de sécurité, les mots de passe générés sont stockés dans le presse-papiers.
+<img src="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-pw/media/images/screenshots/cli/generate-pw-output.jpg">
 
 #
 

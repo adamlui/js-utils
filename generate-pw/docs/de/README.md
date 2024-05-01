@@ -257,7 +257,7 @@ Bei [globaler](#-installation) Installation kann **generate-pw** auch über die 
 $ generate-pw
 ```
 
-**💡 Hinweis:** Aus Sicherheitsgründen werden generierte Passwörter in der Zwischenablage gespeichert.
+<img src="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-pw/media/images/screenshots/cli/generate-pw-output.jpg">
 
 #
 

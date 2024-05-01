@@ -255,7 +255,7 @@ validateStrength() » Check returned object for score/recommendations.
 $ generate-pw
 ```
 
-**💡 দ্রষ্টব্য:** নিরাপত্তার কারণে, তৈরি করা পাসওয়ার্ড(গুলি) ক্লিপবোর্ডে সংরক্ষণ করা হয়।
+<img src="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-pw/media/images/screenshots/cli/generate-pw-output.jpg">
 
 #
 

@@ -253,7 +253,7 @@ validateStrength() » Check returned object for score/recommendations.
 $ generate-pw
 ```
 
-**💡注意:**出于安全原因，生成的密码存储在剪贴板中。
+<img src="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-pw/media/images/screenshots/cli/generate-pw-output.jpg">
 
 #
 
