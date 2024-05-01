@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "ប្រទេស" },
   "geoLabel_region": { "message": "តំបន់" },
   "geoLabel_city": { "message": "ទីក្រុង" },
-  "geoLabel_zip": { "message": "តំបន់ពេលវេលា@ label" },
+  "geoLabel_zip": { "message": "លេខកូដតំបន់" },
   "geoLabel_lat": { "message": "រយៈទទឹង" },
   "geoLabel_lon": { "message": "រយៈបណ្ដោយ" },
   "helpSection_usage": { "message": "ការប្រើប្រាស់" },
