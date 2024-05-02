@@ -3,6 +3,7 @@
 ### Fetch IP geolocation data from the CLI.
 
 <a href="https://www.npmjs.com/package/@adamlui/geolocate"><img height=31 src="https://img.shields.io/npm/dm/@adamlui/geolocate?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="#%EF%B8%8F-mit-license"><img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/geolocate-2.0.6"><img height=31 src="https://img.shields.io/badge/Latest_Build-2.0.6-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/@adamlui/geolocate?activeTab=code"><img height=31 src="https://img.shields.io/npm/unpacked-size/%40adamlui%2Fgeolocate?style=for-the-badge&logo=ebox&logoColor=white&labelColor=464646&color=blue"></a>
 <a href="https://github.com/adamlui/js-utils/blob/geolocate-2.0.6/geolocate/dist/geolocate.min.js"><img height=31 src="https://img.shields.io/github/size/adamlui/js-utils/geolocate/dist/geolocate.min.js?branch=geolocate-2.0.6&label=Minified%20Size&logo=databricks&logoColor=white&labelColor=464646&color=ff69b4&style=for-the-badge"></a>
