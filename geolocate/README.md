@@ -200,10 +200,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ### [🔒 generate-pw](../generate-pw) <a href="https://github.com/toolleeo/cli-apps#password-managers"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Randomly generate, strengthen, and validate cryptographically-secure passwords.
-<br>[Install](https://docs.js-utils.com/generate-pw/#-installation) /
-[Readme](https://docs.js-utils.com/generate-pw/#readme) /
-[API usage](https://docs.js-utils.com/generate-pw/#-api-usage) /
-[CLI usage](https://docs.js-utils.com/generate-pw/#-command-line-usage) /
+<br>[Install](https://docs.generatepw.org/#-installation) /
+[Readme](https://docs.generatepw.org/#readme) /
+[API usage](https://docs.generatepw.org/#-api-usage) /
+[CLI usage](https://docs.generatepw.org/#-command-line-usage) /
 [Discuss](https://github.js-utils.com/discussions)
 
 <br>
