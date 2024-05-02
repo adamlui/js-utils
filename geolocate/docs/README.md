@@ -103,7 +103,7 @@ const geo = require('@adamlui/geolocate');
 })();
 ```
 
-### <img height=17 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/tampermonkey-icon28.png"><img height=17.5 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/violentmonkey-icon100.png"> Greasemonkey
+### <img height=17 src="https://cdn.jsdelivr.net/gh/KudoAI/chatgpt.js/starters/media/images/icons/tampermonkey-icon28.png"><img height=17.5 src="https://cdn.jsdelivr.net/gh/KudoAI/chatgpt.js/starters/media/images/icons/violentmonkey-icon100.png"> Greasemonkey
 
 ```js
 ...
@@ -188,7 +188,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## 🛠️ Related utilities
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Randomly generate, format, and validate IPv4/IPv6 addresses.
 <br>[Install](https://docs.js-utils.com/generate-ip/#-installation) /
@@ -210,6 +210,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**More JavaScript utilities**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/home/white/icon32x27.png"><img height=13 src="https://media.js-utils.com/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**More JavaScript utilities**</a> /
 <a href="https://github.js-utils.com/discussions">Discuss</a> /
 <a href="#-geolocate">Back to top ↑</a>

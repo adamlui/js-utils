@@ -1,8 +1,8 @@
 <div align="right">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/white/icon32.svg">
-            <img height=14 src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/earth-icon/black/icon32.svg">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/docs/images/earth-icon/white/icon32.svg">
+            <img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/docs/images/earth-icon/black/icon32.svg">
         </picture>
         &nbsp;Deutsch |
         <a href="../..#readme">English</a> |
@@ -95,7 +95,7 @@ const pw = require('generate-pw');
 })();
 ```
 
-### <img height=17 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/tampermonkey-icon28.png"><img height=17.5 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/violentmonkey-icon100.png"> Greasemonkey
+### <img height=17 src="https://cdn.jsdelivr.net/gh/KudoAI/chatgpt.js/starters/media/images/icons/tampermonkey-icon28.png"><img height=17.5 src="https://cdn.jsdelivr.net/gh/KudoAI/chatgpt.js/starters/media/images/icons/violentmonkey-icon100.png"> Greasemonkey
 
 ```js
 ...
@@ -258,7 +258,7 @@ Bei [globaler](#-installation) Installation kann **generate-pw** auch über die 
 $ generate-pw
 ```
 
-<img src="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-pw/media/images/screenshots/cli/generate-pw-output.jpg">
+<img src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-pw/media/images/screenshots/cli/generate-pw-output.jpg">
 
 #
 
@@ -305,7 +305,7 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 ## 🛠️ Verwandte Dienstprogramme
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Generieren, formatieren und validieren Sie IPv4/IPv6-Adressen nach dem Zufallsprinzip.
 <br>[Installieren](https://docs.js-utils.com/generate-ip/#-installation) /
@@ -314,7 +314,7 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 [CLI-Nutzung](https://docs.js-utils.com/generate-ip/#-command-line-usage) /
 [Diskutieren](https://github.js-utils.com/discussions)
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > Rufen Sie IP-Geolocation-Daten von der CLI ab.
 <br>[Installieren](https://docs.js-utils.com/geolocate/#-installation) /
@@ -327,6 +327,6 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 <img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**Weitere JavaScript-Dienstprogramme**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/home/white/icon32x27.png"><img height=13 src="https://media.js-utils.com/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**Weitere JavaScript-Dienstprogramme**</a> /
 <a href="https://github.js-utils.com/discussions">Diskutieren</a> /
 <a href="#-generate-pw">Zurück nach oben ↑</a>

@@ -11,7 +11,7 @@ Essential JavaScript libraries/utilities for Node.js and the web
 
 <img height=10px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
-### <a href="../generate-ip"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> generate-ip</a> <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+### <a href="../generate-ip"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> generate-ip</a> <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Randomly generate, format, and validate IPv4/IPv6 addresses.
 <br>[Install](../generate-ip#-installation) /
@@ -29,7 +29,7 @@ Essential JavaScript libraries/utilities for Node.js and the web
 [CLI usage](../generate-pw#-command-line-usage) /
 [Discuss](https://github.js-utils.com/discussions)
 
-### <a href="../geolocate"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> geolocate</a>
+### <a href="../geolocate"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> geolocate</a>
 
 > Fetch IP geolocation data from the CLI.
 <br>[Install](../geolocate#-installation) /
@@ -41,7 +41,7 @@ Essential JavaScript libraries/utilities for Node.js and the web
 ### [🖼️ img-to-webp](../img-to-webp)
 
 > Recursively compress all images to WEBPs.
-<br>[Download](https://raw.githubusercontent.com/adamlui/js-utils/main/img-to-webp/img-to-webp.js) /
+<br>[Download](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
 [Discuss](https://github.js-utils.com/discussions)
 
 ### [</> minify.js](../minify.js) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
@@ -64,6 +64,6 @@ Essential JavaScript libraries/utilities for Node.js and the web
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/tag/white/icon16.svg"><img height=14 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/tag/dark-gray/icon16.svg"></picture> <a href="https://js-utils.com/releases">**Latest releases**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/tag/white/icon16.svg"><img height=14 src="https://media.js-utils.com/images/icons/tag/dark-gray/icon16.svg"></picture> <a href="https://js-utils.com/releases">**Latest releases**</a> /
 <a href="https://github.js-utils.com/discussions">Discuss</a> /
 <a href="#%EF%B8%8F-javascript-utilities">Back to top ↑</a>

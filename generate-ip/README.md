@@ -1,4 +1,4 @@
-# <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=32 src="https://raw.githubusercontent.com/adamlui/js-utils/main/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> generate-ip
+# <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=32 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> generate-ip
 
 ### Randomly generate, format, and validate IPv4/IPv6 addresses.
 
@@ -84,7 +84,7 @@ const { ipv4, ipv6 } = require('generate-ip');
 })();
 ```
 
-### <img height=17 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/tampermonkey-icon28.png"><img height=17.5 src="https://raw.githubusercontent.com/KudoAI/chatgpt.js/main/starters/media/images/icons/violentmonkey-icon100.png"> Greasemonkey
+### <img height=17 src="https://cdn.jsdelivr.net/gh/KudoAI/chatgpt.js/starters/media/images/icons/tampermonkey-icon28.png"><img height=17.5 src="https://cdn.jsdelivr.net/gh/KudoAI/chatgpt.js/starters/media/images/icons/violentmonkey-icon100.png"> Greasemonkey
 
 ```js
 ...
@@ -330,7 +330,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [CLI usage](https://docs.js-utils.com/generate-pw/#-command-line-usage) /
 [Discuss](https://github.js-utils.com/discussions)
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://raw.githubusercontent.com/adamlui/js-utils/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > Fetch IP geolocation data from the CLI.
 <br>[Install](https://docs.js-utils.com/geolocate/#-installation) /
@@ -343,6 +343,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**More JavaScript utilities**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/home/white/icon32x27.png"><img height=13 src="https://media.js-utils.com/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**More JavaScript utilities**</a> /
 <a href="https://github.js-utils.com/discussions">Discuss</a> /
 <a href="#-generate-ip">Back to top ↑</a>
