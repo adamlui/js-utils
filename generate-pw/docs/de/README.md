@@ -19,7 +19,7 @@
 
 ### Generieren, stärken und validieren Sie kryptografisch sichere Passwörter nach dem Zufallsprinzip.
 
-<a href="https://www.npmjs.com/package/generate-pw"><img height=31 src="https://img.shields.io/npm/dm/generate-pw?label=label=Herunterladungen&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://www.npmjs.com/package/generate-pw"><img height=31 src="https://img.shields.io/npm/dm/generate-pw?label=Herunterladungen&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-lizenz"><img height=31 src="https://img.shields.io/badge/Lizenz-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-1.5.7"><img height=31 src="https://img.shields.io/badge/Neueste_Version-1.5.7-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/generate-pw?activeTab=code"><img height=31 src="https://img.shields.io/npm/unpacked-size/generate-pw?label=Ausgepackte%20Gr%C3%B6%C3%9Fe&style=for-the-badge&logo=ebox&logoColor=white&labelColor=464646&color=blue"></a>
