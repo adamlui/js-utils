@@ -60,7 +60,7 @@ $ npm install generate-pw
 
 ## 🔌 導入 API
 
-### <img height=18 src="https://i.imgur.com/JIeAdsr.png"> Node.js
+### <img height=18 src="https://media.js-utils.com/images/icons/platforms/node.js/icon25x28.png"> Node.js
 
 #### ECMAScript*:
 
@@ -76,7 +76,7 @@ const pw = require('generate-pw');
 
 ###### _*需要 Node.js 版本 14 或更高版本_
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/JSEb19A.png"><img width=16 src="https://i.imgur.com/5VPxf9y.png"></picture> Web
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/platforms/web/light/icon25.png"><img width=16 src="https://media.js-utils.com/images/icons/platforms/web/dark/icon25.png"></picture> Web
 
 #### <>  腳本標籤:
 
