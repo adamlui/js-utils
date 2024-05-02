@@ -2,5 +2,5 @@
 
 minify-js src dist --comment=" \
 © 2024 Adam Lui & contributors under the MIT license.\n \
-Source: https://code.js-utils.com/generate-pw\n \
-Documentation: https://docs.js-utils.com/generate-pw"
+Source: https://code.generatepw.org\n \
+Documentation: https://docs.generatepw.org"
