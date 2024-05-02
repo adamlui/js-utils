@@ -7,7 +7,7 @@
     "email": "adam@kudoai.com",
     "url": "https://github.com/adamlui"
   },
-  "homepage": "https://js-utils.com/generate-pw",
+  "homepage": "https://generatepw.org",
   "license": "MIT",
   "main": "dist/generate-pw.min.js",
   "files": [
