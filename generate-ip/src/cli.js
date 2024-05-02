@@ -3,8 +3,8 @@
 const pkgName = 'generate-ip',
       copyright = '© 2024 Adam Lui & contributors under the MIT license.',
       cmdFormat = 'generate-ip [options|commands]',
-      srcURL = 'https://code.js-utils.com/generate-ip',
-      docURL = 'https://docs.js-utils.com/generate-ip/#-command-line-usage';
+      srcURL = 'https://code.generate-ip.org',
+      docURL = 'https://docs.generate-ip.org/#-command-line-usage';
 
 (async () => {
 

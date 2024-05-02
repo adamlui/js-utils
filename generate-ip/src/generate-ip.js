@@ -1,13 +1,13 @@
 // © 2024 Adam Lui & contributors under the MIT license.
-// Source: https://code.js-utils.com/generate-ip
-// Documentation: https://docs.js-utils.com/generate-ip
+// Source: https://code.generate-ip.org
+// Documentation: https://docs.generate-ip.org
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js
 
 const ipv4 = {
 
     generate: function(options = {}) {
 
-        const docURL = 'https://docs.js-utils.com/generate-ip/#ipv4generateoptions',
+        const docURL = 'https://docs.generate-ip.org/#ipv4generateoptions',
               exampleCall = 'ipv4.generate({ verbose: false, qty: 3 })';
 
         const defaultOptions = {
@@ -43,7 +43,7 @@ const ipv4 = {
 
     validate: function(address, options = {}) {
 
-        const docURL = 'https://docs.js-utils.com/generate-ip/#ipv4validateaddress-options',
+        const docURL = 'https://docs.generate-ip.org/#ipv4validateaddress-options',
               exampleCall = `ipv4.validate('0.0.255.255', { verbose: false })`,
               defaultOptions = { verbose: true /* enable logging */ };
 
@@ -81,7 +81,7 @@ const ipv6 = {
 
     generate: function(options = {}) {
 
-        const docURL = 'https://docs.js-utils.com/generate-ip/#ipv6generateoptions',
+        const docURL = 'https://docs.generate-ip.org/#ipv6generateoptions',
               exampleCall = 'ipv6.generate({ leadingZeros: true, qty: 5 })';
 
         const defaultOptions = {
@@ -124,7 +124,7 @@ const ipv6 = {
 
     format: function(ipv6address, options = {}) {
 
-        const docURL = 'https://docs.js-utils.com/generate-ip/#ipv6formatipv6address-options',
+        const docURL = 'https://docs.generate-ip.org/#ipv6formatipv6address-options',
               exampleCall = `ipv6.format('0d::ffff:192.1.56.10/96', `
                           + '{ leadingZeros: true, doubleColon: false })';
 
@@ -195,7 +195,7 @@ const ipv6 = {
 
     validate: function(address, options = {}) {
 
-        const docURL = 'https://docs.js-utils.com/generate-ip/#ipv6validateaddress-options',
+        const docURL = 'https://docs.generate-ip.org/#ipv6validateaddress-options',
               exampleCall = `ipv6.validate('0:0:0:0:0:ffff:192.1.56.10/96', { verbose: false })`,
               defaultOptions = { verbose: true /* enable logging */ };
 
