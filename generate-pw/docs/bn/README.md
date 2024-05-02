@@ -315,10 +315,10 @@ $ generate-pw
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > CLI থেকে আইপি জিওলোকেশন ডেটা আনুন।
-<br>[ইনস্টল করুন](https://docs.js-utils.com/geolocate/#-installation) /
-[রিডমি](https://docs.js-utils.com/geolocate/#readme) /
-[CLI ব্যবহার](https://docs.js-utils.com/geolocate/#-command-line-usage) /
-[API ব্যবহার](https://docs.js-utils.com/geolocate/#-api-usage) /
+<br>[ইনস্টল করুন](https://docs.geolocatejs.org/#-installation) /
+[রিডমি](https://docs.geolocatejs.org/#readme) /
+[CLI ব্যবহার](https://docs.geolocatejs.org/#-command-line-usage) /
+[API ব্যবহার](https://docs.geolocatejs.org/#-api-usage) /
 [আলোচনা করা](https://github.js-utils.com/discussions)
 
 <br>

@@ -313,10 +313,10 @@ $ generate-pw
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > 从 CLI 获取 IP 地理位置数据。
-<br>[安装](https://docs.js-utils.com/geolocate/#-installation) /
-[自述文件](https://docs.js-utils.com/geolocate/#readme) /
-[CLI 用法](https://docs.js-utils.com/geolocate/#-command-line-usage) /
-[API 使用](https://docs.js-utils.com/geolocate/#-api-usage) /
+<br>[安装](https://docs.geolocatejs.org/#-installation) /
+[自述文件](https://docs.geolocatejs.org/#readme) /
+[CLI 用法](https://docs.geolocatejs.org/#-command-line-usage) /
+[API 使用](https://docs.geolocatejs.org/#-api-usage) /
 [讨论](https://github.js-utils.com/discussions)
 
 <br>

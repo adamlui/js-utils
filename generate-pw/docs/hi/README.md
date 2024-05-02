@@ -313,10 +313,10 @@ $ generate-pw
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > सीएलआई से आईपी जियोलोकेशन डेटा प्राप्त करें।
-<br>[स्थापित करना](https://docs.js-utils.com/geolocate/#-installation) /
-[रीडमी](https://docs.js-utils.com/geolocate/#readme) /
-[सीएलआई उपयोग](https://docs.js-utils.com/geolocate/#-command-line-usage) /
-[एपीआई उपयोग](https://docs.js-utils.com/geolocate/#-api-usage) /
+<br>[स्थापित करना](https://docs.geolocatejs.org/#-installation) /
+[रीडमी](https://docs.geolocatejs.org/#readme) /
+[सीएलआई उपयोग](https://docs.geolocatejs.org/#-command-line-usage) /
+[एपीआई उपयोग](https://docs.geolocatejs.org/#-api-usage) /
 [चर्चा करना](https://github.js-utils.com/discussions)
 
 <br>

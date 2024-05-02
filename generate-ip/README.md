@@ -333,10 +333,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > Fetch IP geolocation data from the CLI.
-<br>[Install](https://docs.js-utils.com/geolocate/#-installation) /
-[Readme](https://docs.js-utils.com/geolocate/#readme) /
-[CLI usage](https://docs.js-utils.com/geolocate/#-command-line-usage) /
-[API usage](https://docs.js-utils.com/geolocate/#-api-usage) /
+<br>[Install](https://docs.geolocatejs.org/#-installation) /
+[Readme](https://docs.geolocatejs.org/#readme) /
+[CLI usage](https://docs.geolocatejs.org/#-command-line-usage) /
+[API usage](https://docs.geolocatejs.org/#-api-usage) /
 [Discuss](https://github.js-utils.com/discussions)
 
 <br>

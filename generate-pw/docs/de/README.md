@@ -317,10 +317,10 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > Rufen Sie IP-Geolocation-Daten von der CLI ab.
-<br>[Installieren](https://docs.js-utils.com/geolocate/#-installation) /
-[Liesmich](https://docs.js-utils.com/geolocate/#readme) /
-[CLI-Nutzung](https://docs.js-utils.com/geolocate/#-command-line-usage) /
-[API-Nutzung](https://docs.js-utils.com/geolocate/#-api-usage) /
+<br>[Installieren](https://docs.geolocatejs.org/#-installation) /
+[Liesmich](https://docs.geolocatejs.org/#readme) /
+[CLI-Nutzung](https://docs.geolocatejs.org/#-command-line-usage) /
+[API-Nutzung](https://docs.geolocatejs.org/#-api-usage) /
 [Diskutieren](https://github.js-utils.com/discussions)
 
 <br>

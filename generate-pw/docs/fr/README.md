@@ -317,10 +317,10 @@ LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMP
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > Récupérez les données de géolocalisation IP à partir de la CLI.
-<br>[Installer](https://docs.js-utils.com/geolocate/#-installation) /
-[Lisez-moi](https://docs.js-utils.com/geolocate/#readme) /
-[Utilisation de la CLI](https://docs.js-utils.com/geolocate/#-command-line-usage) /
-[Utilisation de l'API](https://docs.js-utils.com/geolocate/#-api-usage) /
+<br>[Installer](https://docs.geolocatejs.org/#-installation) /
+[Lisez-moi](https://docs.geolocatejs.org/#readme) /
+[Utilisation de la CLI](https://docs.geolocatejs.org/#-command-line-usage) /
+[Utilisation de l'API](https://docs.geolocatejs.org/#-api-usage) /
 [Discuter](https://github.js-utils.com/discussions)
 
 <br>
