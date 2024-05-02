@@ -3,8 +3,8 @@
 const pkgName = '@adamlui/geolocate',
       copyright = '© 2024 Adam Lui under the MIT license.',
       cmdFormat = 'geolocate [ip1] [ip2] [...] [options|commands]',
-      srcURL = 'https://code.js-utils.com/geolocate',
-      docURL = 'https://docs.js-utils.com/geolocate/#-command-line-usage';
+      srcURL = 'https://code.geolocatejs.org',
+      docURL = 'https://docs.geolocatejs.org/#-command-line-usage';
 
 (async () => {
 
