@@ -32,7 +32,7 @@
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:node.js/src/scss-to-css.js"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_scss-to-css%3Anode.js%2Fsrc%2Fscss-to-css.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=%E8%84%86%E5%BC%B1%E6%80%A7&color=gold"></a>
 <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=31 src="https://img.shields.io/badge/で言及-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## ⚡ インストール
 
@@ -56,7 +56,7 @@ $ npm install @adamlui/scss-to-css
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 💻 コマンドラインの使用法
 
@@ -147,7 +147,7 @@ $ scss-to-css input_folder output_folder
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 🔌 API の使用法
 
@@ -248,7 +248,7 @@ findSCSS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 🏛️ MIT ライセンス
 
@@ -262,7 +262,7 @@ findSCSS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 🛠️ 関連ユーティリティ
 
@@ -283,7 +283,7 @@ findSCSS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**その他の JavaScript ユーティリティ**</a> /
 <a href="https://github.com/adamlui/scss-to-css/discussions">話し合う</a> /

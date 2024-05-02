@@ -29,7 +29,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 💡 關於
 
@@ -56,7 +56,7 @@ $ npm install generate-pw
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 🔌 導入 API
 
@@ -109,7 +109,7 @@ const pw = require('generate-pw');
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 📋 API 使用
 
@@ -244,7 +244,7 @@ validateStrength() » Check returned object for score/recommendations.
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 💻 命令列使用
 
@@ -283,7 +283,7 @@ $ generate-pw
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 🏛️ MIT 许可证
 
@@ -297,7 +297,7 @@ $ generate-pw
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 🛠️ 相關實用程式
 
@@ -321,7 +321,7 @@ $ generate-pw
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**更多 JavaScript 實用程式**</a> /
 <a href="https://github.js-utils.com/discussions">討論</a> /

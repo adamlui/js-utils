@@ -29,7 +29,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 💡 À propos
 
@@ -40,7 +40,7 @@
 - **Prise en charge multi-environnements —** Utilisation dans Node.js ou dans le navigateur Web
 - **Ligne de commande utilisable —** Tapez simplement `generate-pw`, c'est tout
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## ⚡ Installation
 
@@ -58,7 +58,7 @@ $ npm install generate-pw
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 🔌 Importer l'API
 
@@ -111,7 +111,7 @@ const pw = require('generate-pw');
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 📋 Utilisation de l'API
 
@@ -248,7 +248,7 @@ Nom                   | Taper   | Description                                   
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 💻 Utilisation de la ligne de commande
 
@@ -287,7 +287,7 @@ Info commands:
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 🏛️ Licence MIT
 
@@ -301,7 +301,7 @@ LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMP
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 🛠️ Utilitaires associés
 
@@ -325,7 +325,7 @@ LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMP
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**Plus d'utilitaires JavaScript**</a> /
 <a href="https://github.js-utils.com/discussions">Discuter</a> /

@@ -29,7 +29,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 💡 About
 
@@ -40,7 +40,7 @@
 - **Multi-environment support —** Use in Node.js or the web browser
 - **Command line usable —** Just type `generate-pw`, that's it
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## ⚡ Installation
 
@@ -58,7 +58,7 @@ $ npm install generate-pw
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 🔌 Importing the API
 
@@ -111,7 +111,7 @@ const pw = require('generate-pw');
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 📋 API usage
 
@@ -248,7 +248,7 @@ Name                  | Type    | Description                                   
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 💻 Command line usage
 
@@ -288,7 +288,7 @@ Info commands:
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 🏛️ MIT License
 
@@ -302,7 +302,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 ## 🛠️ Related utilities
 
@@ -326,7 +326,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <br>
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/adamlui/js-utils/main/docs/images/aqua-separator.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/white/icon32x27.png"><img height=13 src="https://raw.githubusercontent.com/adamlui/js-utils/main/media/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**More JavaScript utilities**</a> /
 <a href="https://github.js-utils.com/discussions">Discuss</a> /
