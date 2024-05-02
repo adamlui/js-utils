@@ -308,10 +308,10 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Generieren, formatieren und validieren Sie IPv4/IPv6-Adressen nach dem Zufallsprinzip.
-<br>[Installieren](https://docs.js-utils.com/generate-ip/#-installation) /
-[Liesmich](https://docs.js-utils.com/generate-ip/#readme) /
-[API-Nutzung](https://docs.js-utils.com/generate-ip/#-api-usage) /
-[CLI-Nutzung](https://docs.js-utils.com/generate-ip/#-command-line-usage) /
+<br>[Installieren](https://docs.generate-ip.org/#-installation) /
+[Liesmich](https://docs.generate-ip.org/#readme) /
+[API-Nutzung](https://docs.generate-ip.org/#-api-usage) /
+[CLI-Nutzung](https://docs.generate-ip.org/#-command-line-usage) /
 [Diskutieren](https://github.js-utils.com/discussions)
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)

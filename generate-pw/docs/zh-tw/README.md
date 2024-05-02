@@ -304,10 +304,10 @@ $ generate-pw
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Randomly generate, format, and validate IPv4/I隨機產生、格式化和驗證 IPv4/IPv6 位址。Pv6 addresses.
-<br>[安裝](https://docs.js-utils.com/generate-ip/#-installation) /
-[自述文件](https://docs.js-utils.com/generate-ip/#readme) /
-[API 使用](https://docs.js-utils.com/generate-ip/#-api-usage) /
-[CLI 用法](https://docs.js-utils.com/generate-ip/#-command-line-usage) /
+<br>[安裝](https://docs.generate-ip.org/#-installation) /
+[自述文件](https://docs.generate-ip.org/#readme) /
+[API 使用](https://docs.generate-ip.org/#-api-usage) /
+[CLI 用法](https://docs.generate-ip.org/#-command-line-usage) /
 [討論](https://github.js-utils.com/discussions)
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)

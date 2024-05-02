@@ -191,10 +191,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Randomly generate, format, and validate IPv4/IPv6 addresses.
-<br>[Install](https://docs.js-utils.com/generate-ip/#-installation) /
-[Readme](https://docs.js-utils.com/generate-ip/#readme) /
-[API usage](https://docs.js-utils.com/generate-ip/#-api-usage) /
-[CLI usage](https://docs.js-utils.com/generate-ip/#-command-line-usage) /
+<br>[Install](https://docs.generate-ip.org/#-installation) /
+[Readme](https://docs.generate-ip.org/#readme) /
+[API usage](https://docs.generate-ip.org/#-api-usage) /
+[CLI usage](https://docs.generate-ip.org/#-command-line-usage) /
 [Discuss](https://github.js-utils.com/discussions)
 
 ### [🔒 generate-pw](../generate-pw) <a href="https://github.com/toolleeo/cli-apps#password-managers"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
