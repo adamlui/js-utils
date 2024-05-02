@@ -7,7 +7,7 @@
     "email": "adam@kudoai.com",
     "url": "https://github.com/adamlui"
   },
-  "homepage": "https://js-utils.com/geolocate",
+  "homepage": "https://geolocatejs.org",
   "license": "MIT",
   "main": "dist/geolocate.min.js",
   "files": [
