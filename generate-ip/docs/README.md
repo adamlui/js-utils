@@ -281,7 +281,7 @@ $ generate-ip
 
 Sample output:
 
-<img src="https://github.com/adamlui/js-utils/blob/main/generate-ip/media/images/sample-cli-output.jpg">
+<img src="https://media.generate-ip.org/images/screenshots/cli/generate-ip-cmd-output.jpg">
 
 📝 **Note:** To generate multiple IP addresses, pass `--qty=n` where `n` is the number of IPs to generate.
 
