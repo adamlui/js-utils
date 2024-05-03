@@ -276,10 +276,10 @@ findJS() » Check returned array.
 ### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > 将所有 SCSS 文件递归编译为缩小的 CSS。
-<br>[安装](https://github.com/adamlui/scss-to-css/#-installation) /
-[自述文件](https://github.com/adamlui/scss-to-css/#readme) /
-[CLI 用法](https://github.com/adamlui/scss-to-css/#-command-line-usage) /
-[API 用法](https://github.com/adamlui/scss-to-css/#-api-usage) /
+<br>[安装](https://node.scsstocss.org/#-installation) /
+[自述文件](https://node.scsstocss.org/#readme) /
+[CLI 用法](https://node.scsstocss.org/#-command-line-usage) /
+[API 用法](https://node.scsstocss.org/#-api-usage) /
 [讨论](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>

@@ -276,10 +276,10 @@ findJS() » Check returned array.
 ### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > सर्व SCSS फाईल्स संकुचित CSS मध्ये पुनरावृत्तीने संकलित करा.
-<br>[स्थापित करा](https://github.com/adamlui/scss-to-css/#-installation) /
-[मला वाचा](https://github.com/adamlui/scss-to-css/#readme) /
-[CLI वापर](https://github.com/adamlui/scss-to-css/#-command-line-usage) /
-[API वापर](https://github.com/adamlui/scss-to-css/#-api-usage) /
+<br>[स्थापित करा](https://node.scsstocss.org/#-installation) /
+[मला वाचा](https://node.scsstocss.org/#readme) /
+[CLI वापर](https://node.scsstocss.org/#-command-line-usage) /
+[API वापर](https://node.scsstocss.org/#-api-usage) /
 [चर्चा करा](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>

@@ -276,10 +276,10 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 ### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Recursively compile all SCSS files into minified CSS.
-<br>[Instalar](https://github.com/adamlui/scss-to-css/#-installation) /
-[Léame](https://github.com/adamlui/scss-to-css/#readme) /
-[Uso de CLI](https://github.com/adamlui/scss-to-css/#-command-line-usage) /
-[Uso de API](https://github.com/adamlui/scss-to-css/#-api-usage) /
+<br>[Instalar](https://node.scsstocss.org/#-installation) /
+[Léame](https://node.scsstocss.org/#readme) /
+[Uso de CLI](https://node.scsstocss.org/#-command-line-usage) /
+[Uso de API](https://node.scsstocss.org/#-api-usage) /
 [Conversar](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>

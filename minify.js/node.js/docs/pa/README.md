@@ -275,10 +275,10 @@ findJS() » Check returned array.
 ### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > ਸਾਰੀਆਂ SCSS ਫਾਈਲਾਂ ਨੂੰ ਬਾਰ ਬਾਰ ਮਿਨੀਫਾਈਡ CSS ਵਿੱਚ ਕੰਪਾਇਲ ਕਰੋ।
-<br>[ਇੰਸਟਾਲ ਕਰੋ](https://github.com/adamlui/scss-to-css/#-installation) /
-[ਪੜ੍ਹੋ](https://github.com/adamlui/scss-to-css/#readme) /
-[CLI ਦੀ ਵਰਤੋਂ](https://github.com/adamlui/scss-to-css/#-cli-usage) /
-[API ਦੀ ਵਰਤੋਂ](https://github.com/adamlui/scss-to-css/#-api-usage) /
+<br>[ਇੰਸਟਾਲ ਕਰੋ](https://node.scsstocss.org/#-installation) /
+[ਪੜ੍ਹੋ](https://node.scsstocss.org/#readme) /
+[CLI ਦੀ ਵਰਤੋਂ](https://node.scsstocss.org/#-cli-usage) /
+[API ਦੀ ਵਰਤੋਂ](https://node.scsstocss.org/#-api-usage) /
 [ਚਰਚਾ ਕਰੋ](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>
