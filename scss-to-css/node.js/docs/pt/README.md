@@ -266,7 +266,7 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU
 
 ## 🛠️ Utilitários relacionados
 
-### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
+### [🖼️ img-to-webp](https://imgtowebp.org)
 
 > Compacte recursivamente todas as imagens em WEBPs.
 <br>[Baixar](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /

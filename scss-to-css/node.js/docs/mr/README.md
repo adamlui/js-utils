@@ -266,7 +266,7 @@ findSCSS() » Check returned array.
 
 ## 🛠️ संबंधित उपयुक्तता
 
-### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
+### [🖼️ img-to-webp](https://imgtowebp.org)
 
 > सर्व प्रतिमा WEBP वर वारंवार संकुचित करा.
 <br>[डाउनलोड करा](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /

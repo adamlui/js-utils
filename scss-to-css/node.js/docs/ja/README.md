@@ -266,7 +266,7 @@ findSCSS() » Check returned array.
 
 ## 🛠️ 関連ユーティリティ
 
-### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
+### [🖼️ img-to-webp](https://imgtowebp.org)
 
 > すべての画像を再帰的に WEBP に圧縮します。
 <br>[ダウンロード](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /

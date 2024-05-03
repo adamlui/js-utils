@@ -266,7 +266,7 @@ findSCSS() » Check returned array.
 
 ## 🛠️ সম্পর্কিত ইউটিলিটি
 
-### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
+### [🖼️ img-to-webp](https://imgtowebp.org)
 
 > বারবার WEBP-তে সমস্ত ছবি সংকুচিত করুন।
 <br>[ডাউনলোড করুন](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /

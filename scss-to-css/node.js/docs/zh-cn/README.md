@@ -266,7 +266,7 @@ findSCSS() » Check returned array.
 
 ## 🛠️ 相关实用程序
 
-### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
+### [🖼️ img-to-webp](https://imgtowebp.org)
 
 > 递归地将所有图像压缩为 WEBP。
 <br>[下载](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /

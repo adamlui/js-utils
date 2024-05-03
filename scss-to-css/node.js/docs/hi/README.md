@@ -265,7 +265,7 @@ findSCSS() » Check returned array.
 
 ## 🛠️ संबंधित उपयोगिताएँ
 
-### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
+### [🖼️ img-to-webp](https://imgtowebp.org)
 
 > सभी छवियों को WEBPs पर पुनरावर्ती रूप से संपीड़ित करें।
 <br>[डाउनलोड करना](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /

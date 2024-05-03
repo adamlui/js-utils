@@ -266,7 +266,7 @@ DE SOFTWARE WORDT GELEVERD "AS IS", ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIE
 
 ## 🛠️ Gerelateerde hulpprogramma's
 
-### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
+### [🖼️ img-to-webp](https://imgtowebp.org)
 
 > Comprimeer alle afbeeldingen recursief naar WEBP's.
 <br>[Downloaden](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
