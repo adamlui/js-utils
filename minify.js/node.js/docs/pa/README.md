@@ -279,7 +279,7 @@ findJS() » Check returned array.
 [ਪੜ੍ਹੋ](https://node.scsstocss.org/#readme) /
 [CLI ਦੀ ਵਰਤੋਂ](https://node.scsstocss.org/#-cli-usage) /
 [API ਦੀ ਵਰਤੋਂ](https://node.scsstocss.org/#-api-usage) /
-[ਚਰਚਾ ਕਰੋ](https://github.com/adamlui/scss-to-css/discussions)
+[ਚਰਚਾ ਕਰੋ](https://github.scsstocss.org/discussions)
 
 <br>
 

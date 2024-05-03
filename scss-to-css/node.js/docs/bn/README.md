@@ -286,5 +286,5 @@ findSCSS() » Check returned array.
 <img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/home/white/icon32x27.png"><img height=13 src="https://media.js-utils.com/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**আরো জাভাস্ক্রিপ্ট ইউটিলিটি**</a> /
-<a href="https://github.com/adamlui/scss-to-css/discussions">আলোচনা করা</a> /
+<a href="https://github.scsstocss.org/discussions">আলোচনা করা</a> /
 <a href="#--scss-to-css">উপরে ফিরে যাও ↑</a>

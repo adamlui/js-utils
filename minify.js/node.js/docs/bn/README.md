@@ -282,7 +282,7 @@ findJS() » Check returned array.
 [রিডমি](https://node.scsstocss.org/#readme) /
 [CLI ব্যবহার](https://node.scsstocss.org/#-command-line-usage) /
 [API ব্যবহার](https://node.scsstocss.org/#-api-usage) /
-[আলোচনা করা](https://github.com/adamlui/scss-to-css/discussions)
+[আলোচনা করা](https://github.scsstocss.org/discussions)
 
 <br>
 

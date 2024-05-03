@@ -286,5 +286,5 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 <img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/home/white/icon32x27.png"><img height=13 src="https://media.js-utils.com/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**Weitere JavaScript-Dienstprogramme**</a> /
-<a href="https://github.com/adamlui/scss-to-css/discussions">Diskutieren</a> /
+<a href="https://github.scsstocss.org/discussions">Diskutieren</a> /
 <a href="#--scss-to-css">Zurück nach oben ↑</a>

@@ -280,7 +280,7 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 [Léame](https://node.scsstocss.org/#readme) /
 [Uso de CLI](https://node.scsstocss.org/#-command-line-usage) /
 [Uso de API](https://node.scsstocss.org/#-api-usage) /
-[Conversar](https://github.com/adamlui/scss-to-css/discussions)
+[Conversar](https://github.scsstocss.org/discussions)
 
 <br>
 

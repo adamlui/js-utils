@@ -280,7 +280,7 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 [Liesmich](https://node.scsstocss.org/#readme) /
 [CLI-Nutzung](https://node.scsstocss.org/#-command-line-usage) /
 [API-Nutzung](https://node.scsstocss.org/#-api-usage) /
-[Diskutieren](https://github.com/adamlui/scss-to-css/discussions)
+[Diskutieren](https://github.scsstocss.org/discussions)
 
 <br>
 

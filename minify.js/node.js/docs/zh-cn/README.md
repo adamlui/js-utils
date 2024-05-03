@@ -280,7 +280,7 @@ findJS() » Check returned array.
 [自述文件](https://node.scsstocss.org/#readme) /
 [CLI 用法](https://node.scsstocss.org/#-command-line-usage) /
 [API 用法](https://node.scsstocss.org/#-api-usage) /
-[讨论](https://github.com/adamlui/scss-to-css/discussions)
+[讨论](https://github.scsstocss.org/discussions)
 
 <br>
 

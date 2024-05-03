@@ -282,7 +282,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [Readme](https://node.scsstocss.org/#readme) /
 [CLI usage](https://node.scsstocss.org/#-command-line-usage) /
 [API usage](https://node.scsstocss.org/#-api-usage) /
-[Discuss](https://github.com/adamlui/scss-to-css/discussions)
+[Discuss](https://github.scsstocss.org/discussions)
 
 <br>
 

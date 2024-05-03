@@ -280,7 +280,7 @@ findJS() » Check returned array.
 [मला वाचा](https://node.scsstocss.org/#readme) /
 [CLI वापर](https://node.scsstocss.org/#-command-line-usage) /
 [API वापर](https://node.scsstocss.org/#-api-usage) /
-[चर्चा करा](https://github.com/adamlui/scss-to-css/discussions)
+[चर्चा करा](https://github.scsstocss.org/discussions)
 
 <br>
 

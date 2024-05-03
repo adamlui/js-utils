@@ -280,7 +280,7 @@ LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMP
 [Lisez-moi](https://node.scsstocss.org/#readme) /
 [Utilisation de la CLI](https://node.scsstocss.org/#-command-line-usage) /
 [Utilisation de l'API](https://node.scsstocss.org/#-api-usage) /
-[Discuter](https://github.com/adamlui/scss-to-css/discussions)
+[Discuter](https://github.scsstocss.org/discussions)
 
 <br>
 
