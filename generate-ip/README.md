@@ -1,6 +1,6 @@
 # <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=32 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> generate-ip
 
-### Randomly generate, format, and validate IPv4/IPv6 addresses.
+### Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.
 
 <a href="#%EF%B8%8F-mit-license"><img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/generate-ip-2.2.12"><img height=31 src="https://img.shields.io/badge/Latest_Build-2.2.12-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>

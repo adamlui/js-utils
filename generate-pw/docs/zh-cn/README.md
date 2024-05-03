@@ -303,7 +303,7 @@ $ generate-pw
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
-> 随机生成、格式化和验证 IPv4/IPv6 地址。
+> 随机生成、格式化和验证 IPv4 + IPv6 + MAC 地址。
 <br>[安装](https://docs.generate-ip.org/#-installation) /
 [自述文件](https://docs.generate-ip.org/#readme) /
 [API 使用](https://docs.generate-ip.org/#-api-usage) /

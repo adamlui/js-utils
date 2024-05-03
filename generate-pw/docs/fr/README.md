@@ -307,7 +307,7 @@ LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMP
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
-> Générez, formatez et validez de manière aléatoire des adresses IPv4/IPv6.
+> Générez, formatez et validez de manière aléatoire des adresses IPv4 + IPv6 + MAC.
 <br>[Installer](https://docs.generate-ip.org/#-installation) /
 [Lisez-moi](https://docs.generate-ip.org/#readme) /
 [Utilisation de l'API](https://docs.generate-ip.org/#-api-usage) /
