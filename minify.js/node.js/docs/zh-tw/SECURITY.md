@@ -19,6 +19,6 @@
 
 # 🛡️ 安全策略
 
-如果您發現漏洞，請打開[安全公告草案](https://github.com/adamlui/minify.js/security/advisories/new)。
+如果您發現漏洞，請打開[安全公告草案](https://github.minify-js.org/security/advisories/new)。
 
 也歡迎拉取請求，但出於安全原因，請發送電子郵件至 <adam@kudoai.com> 並等待回復後再公開。
