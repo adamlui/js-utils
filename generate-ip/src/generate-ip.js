@@ -105,7 +105,7 @@ const ipv6 = {
         else { // generate single IP
             const pieces = [], { qty, ...nonQtyOptions } = options; // eslint-disable-line no-unused-vars
             for (let i = 0; i < 8; i++) { // generate 8x 16-bit hex pieces
-                const hex = generateRandomHex(4); // generate 4-char hex piece
+                const hex = randomHex(4); // generate 4-char hex piece
                 pieces.push(hex);
             }
             ips.push(this.format(pieces.join(':'), { ...nonQtyOptions, verbose: false }));
@@ -244,7 +244,7 @@ function randomInt(min, max) {
         return require('crypto').randomInt(min, max);
 }
 
-function generateRandomHex(digits) {
+function randomHex(digits) {
     let hex = '';
     for (let i = 0; i < digits; i++)
         hex += randomInt(0, 16).toString(16);
