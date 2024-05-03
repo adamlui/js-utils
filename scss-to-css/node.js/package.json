@@ -7,7 +7,7 @@
     "email": "adam@kudoai.com",
     "url": "https://github.com/adamlui"
   },
-  "homepage": "https://github.com/adamlui/scss-to-css/#readme",
+  "homepage": "https://scsstocss.org",
   "license": "MIT",
   "main": "dist/scss-to-css.min.js",
   "files": [
