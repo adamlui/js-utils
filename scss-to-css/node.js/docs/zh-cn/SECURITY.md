@@ -23,6 +23,6 @@
 
 # 🛡️ 安全政策
 
-如果您发现漏洞，请打开[安全公告草案](https://github.com/adamlui/scss-to-css/security/advisories/new)。
+如果您发现漏洞，请打开[安全公告草案](https://github.scsstocss.org/security/advisories/new)。
 
 也欢迎拉取请求，但出于安全原因，请发送电子邮件至 <adam@kudoai.com> 并等待回复后再公开。

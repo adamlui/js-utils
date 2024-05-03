@@ -23,6 +23,6 @@
 
 # 🛡️ Politique de sécurité
 
-Si vous trouvez une vulnérabilité, veuillez ouvrir un [projet d'avis de sécurité](https://github.com/adamlui/scss-to-css/security/advisories/new).
+Si vous trouvez une vulnérabilité, veuillez ouvrir un [projet d'avis de sécurité](https://github.scsstocss.org/security/advisories/new).
 
 Les demandes de tirage sont également les bienvenues, mais pour des raisons de sécurité, envoyez un e-mail à <adam@kudoai.com> et attendez une réponse avant de la rendre publique.
