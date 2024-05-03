@@ -19,7 +19,7 @@
 **generate-ip** is a lightweight, easy-to-use library that allows you to randomly generate, format & validate IP address(es).
 
 - **No external dependencies —** Only built-in crypto methods used for secure randomization
-- **Multi-protocol support —** IPv4 + IPv6 addresses supported
+- **Multi-protocol support —** IPv4 + IPv6 + MAC addresses supported
 - **Multi-environment support —** Use in Node.js or the web browser
 - **Command line usable —** Just type `generate-ip`, that's it
 
@@ -56,13 +56,13 @@ $ npm install generate-ip
 #### ECMAScript*:
 
 ```js
-import { ipv4, ipv6 } from 'generate-ip';
+import { ipv4, ipv6, mac } from 'generate-ip';
 ```
 
 #### CommonJS:
 
 ```js
-const { ipv4, ipv6 } = require('generate-ip');
+const { ipv4, ipv6, mac } = require('generate-ip');
 ```
 
 ###### _*Node.js version 14 or higher required_
@@ -214,7 +214,6 @@ Name           | Type    | Description                          | Default Value
 
 #
 
-
 #### `ipv6.format(ipv6address[, options])`
 
 Formats an IPv6 address according to `options` passed, returning a string:
@@ -257,6 +256,69 @@ console.log(ipIsValid);
 
 ipv6.validate() » Validating 0:0:0:0:0:ffff:192.1.56.10/96...
 ipv6.validate() » IP is valid IPv6 address!
+true
+*/
+```
+
+Available options (passed as object properties):
+
+Name        | Type    | Description                       | Default Value
+------------|---------|-----------------------------------|---------------
+`verbose`   | Boolean | Show logging in console/terminal. | `true`
+
+#
+
+### `mac` methods
+
+💡 Use the `mac` methods to [**generate**](#macgenerateoptions) and [**validate**](#macvalidateaddress-options) MAC addresses.
+
+#
+
+#### `mac.generate([options])`
+
+Generates **one** MAC address if `qty` option is not given, returning a string:
+
+```js
+const macAddress = mac.generate();
+console.log(macAddress); // sample output: '1d:3a:af:21:b1:8c'
+```
+
+...or **multiple** MAC addresses if `qty` option is given, returning an array of strings:
+
+```js
+const macAddresses = mac.generate({ qty: 2 });
+console.log(macAddresses);
+
+/* sample output:
+
+mac.generate() » Generating MAC addresses...
+mac.generate() » MAC addresses generated!
+mac.generate() » 1d:3a:af:21:b1:8c, af:fb:6f:b6:1b:8a
+[ '1d:3a:af:21:b1:8c', 'af:fb:6f:b6:1b:8a' ]
+*/
+```
+
+Available options:
+
+Name           | Type    | Description                          | Default Value
+---------------|---------|--------------------------------------|---------------
+`verbose`      | Boolean | Show logging in console/terminal.    | `true`
+`qty`          | Integer | Number of IP addresses to generate.  | `1`
+
+#
+
+#### `mac.validate(address[, options])`
+
+Checks if given `address` is a valid MAC address:
+
+```js
+const addressIsValid = mac.validate('1d:3a:af:21:b1:8c');
+console.log(addressIsValid);
+
+/* outputs:
+
+mac.validate() » Validating 1d:3a:af:21:b1:8c...
+mac.validate() » Address is valid MAC address!
 true
 */
 ```

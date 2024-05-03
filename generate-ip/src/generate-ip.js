@@ -233,6 +233,73 @@ const ipv6 = {
     }
 };
 
+const mac = {
+
+    generate: function(options = {}) {
+        const docURL = 'https://docs.generate-ip.org/#macgenerateoptions',
+              exampleCall = 'mac.generate({ verbose: false, qty: 2 })';
+
+        const defaultOptions = {
+            verbose: true, // enable logging
+            qty: 1         // number of MAC addresses to generate
+        };
+
+        // Validate/init options
+        if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
+        options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
+
+        // Generate MAC address
+        if (options.verbose) console.info(
+            `mac.generate() » Generating MAC address${ options.qty > 1 ? 'es' : '' }...`);
+        const macAddresses = [];
+        if (options.qty > 1) // generate array of [qty] MAC address strings
+            for (let i = 0; i < options.qty; i++)
+                macAddresses.push(this.generate({ ...options, qty: 1, verbose: false }));
+        else { // generate single MAC address
+            const [prefix, suffix] = Array.from({ length: 2 }, () => {
+                const parts = [];
+                for (let i = 0; i < 3; i++) parts.push(randomHex(2));
+                return parts.join(':');
+            });
+            macAddresses.push(`${prefix}:${suffix}`);
+        }
+        const macResult = options.qty > 1 ? macAddresses : macAddresses[0];
+
+        // Log/return final result
+        if (options.verbose) {
+            console.info(`mac.generate() » MAC address${ options.qty > 1 ? 'es' : '' } generated!`);
+            console.info('mac.generate() » ' + ( options.qty == 1 ? macResult : macResult.join(', ')));
+        }
+        return macResult;
+    },
+
+    validate: function(address, options = {}) {
+        const docURL = 'https://docs.generate-ip.org/#macvalidateaddress-options',
+              exampleCall = `mac.validate('00:1A:2B:3C:4D:5E', { verbose: false })`,
+              defaultOptions = { verbose: true /* enable logging */ };
+
+        // Validate address as arg
+        if (typeof address != 'string') {
+            console.error('mac.validate() » ERROR: 1st arg <address> must be a string.');
+            console.info('mac.validate() » For more help, please visit ' + docURL);
+            return;
+        }
+
+        // Validate/init options
+        if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
+        options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
+
+        // Validate address as MAC address
+        if (options.verbose) console.info(`mac.validate() » Validating ${address}...`);
+        const isValidMAC = /^(?:[\dA-Fa-f]{2}[:-]){5}(?:[\dA-Fa-f]{2})$/.test(address);
+
+        // Log/return final result
+        if (options.verbose) console.info(
+            `mac.validate() » Address is ${isValidMAC ? '' : 'in'}valid MAC address!`);
+        return isValidMAC;
+    }
+};
+
 // Define INTERNAL functions
 
 function randomInt(min, max) {
@@ -304,10 +371,11 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 // EXPORT APIs
 const apiAliases = {
     ipv4: [ 'ipV4', 'IPv4', 'IPV4', 'Ipv4', 'IpV4', 'ip', 'IP', 'Ip'],
-    ipv6: [ 'ipV6', 'IPv6', 'IPV6', 'Ipv6', 'IpV6']
+    ipv6: [ 'ipV6', 'IPv6', 'IPV6', 'Ipv6', 'IpV6'],
+    mac: [ 'MAC', 'Mac', 'ethernet', 'Ethernet']
 };
-try { module.exports = { ipv4, ipv6 }; } catch (err) {} // for Node.js
-try { window.ipv4 = ipv4; window.ipv6 = ipv6; } catch (err) {} // for Greasemonkey
+try { module.exports = { ipv4, ipv6, mac }; } catch (err) {} // for Node.js
+try { window.ipv4 = ipv4; window.ipv6 = ipv6; window.mac = mac; } catch (err) {} // for Greasemonkey
 for (const api in apiAliases) // init/export aliases
     apiAliases[api].forEach(alias => {
         try { module.exports[alias] = module.exports[api]; } catch (err) {} // for Node.js
