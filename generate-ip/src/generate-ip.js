@@ -61,7 +61,7 @@ const ipv4 = {
         // Validate address as IPv4 address
         if (options.verbose) console.info(`ipv4.validate() » Validating ${address}...`);
         const segments = address.split('.');
-        const addressIsValid = !( // false if any dq condition matches
+        const isValidIPv4 = !( // false if any dq condition matches
                   segments.length != 4 // not 4-segments long
                || segments.some(segment => // segment invalid
                        !/^\d+$/.test(segment) // for being non-numeric
@@ -72,8 +72,8 @@ const ipv4 = {
 
         // Log/return final result
         if (options.verbose) console.info(
-            `ipv4.validate() » IP is ${addressIsValid ? '' : 'in'}valid IPv4 address!`);
-        return addressIsValid;
+            `ipv4.validate() » IP is ${isValidIPv4 ? '' : 'in'}valid IPv4 address!`);
+        return isValidIPv4;
     }
 };
 
@@ -213,7 +213,7 @@ const ipv6 = {
             `ipv6.validate() » Validating ${address}...`);
         const pieces = address.split(/::?/),
               lastPiece = pieces[pieces.length - 1];
-        const addressIsValid = !( // false if any dq condition matches
+        const isValidIPv6 = !( // false if any dq condition matches
                   address.includes('::') && address.split('::').length > 2 // 2+ '::'
                || /:{3,}/g.test(address) // 3+ consecutive ':'
                || pieces.length < 2 || pieces.length > 8 // 1 or 9+ hex pieces
@@ -228,8 +228,8 @@ const ipv6 = {
 
         // Log/return final result
         if (options.verbose) console.info(
-            `ipv6.validate() » IP is ${addressIsValid ? '' : 'in'}valid IPv6 address!`);
-        return addressIsValid;
+            `ipv6.validate() » IP is ${isValidIPv6 ? '' : 'in'}valid IPv6 address!`);
+        return isValidIPv6;
     }
 };
 
