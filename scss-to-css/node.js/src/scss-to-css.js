@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 // © 2024 Adam Lui & contributors under the MIT license.
-// Source: https://github.com/adamlui/scss-to-css/tree/main/node.js/src
-// Documentation: https://github.com/adamlui/scss-to-css/tree/main/node.js/docs
+// Source: https://code.scsstocss.org/node.js
+// Documentation: https://docs.scsstocss.org/node.js
 
 // Import LIBS
 const fs = require('fs'),
@@ -13,7 +13,7 @@ const fs = require('fs'),
 
 function findSCSS(searchDir, options = {}) {
 
-    const docURL = 'https://docs.js-utils.com/scss-to-css/node.js/#findscsssearchdir-options',
+    const docURL = 'https://docs.scsstocss.org/node.js/#findscsssearchdir-options',
           exampleCall = `findSCSS('assets/scss', { verbose: false, dotFolders: true })`;
 
     const defaultOptions = {
@@ -67,7 +67,7 @@ function findSCSS(searchDir, options = {}) {
 
 function compile(input, options = {}) {
 
-    const docURL = 'https://docs.js-utils.com/scss-to-css/node.js/#compileinput-options',
+    const docURL = 'https://docs.scsstocss.org/node.js/#compileinput-options',
           exampleCall = `compile('assets/scss', { recursive: false, minify: false })`;
 
     const defaultOptions = {
