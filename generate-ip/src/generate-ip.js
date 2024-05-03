@@ -72,7 +72,7 @@ const ipv4 = {
 
         // Log/return final result
         if (options.verbose) console.info(
-            `ipv4.validate() » IP is ${ !addressIsValid ? 'in' : '' }valid IPv4 address!`);
+            `ipv4.validate() » IP is ${addressIsValid ? '' : 'in'}valid IPv4 address!`);
         return addressIsValid;
     }
 };
@@ -228,7 +228,7 @@ const ipv6 = {
 
         // Log/return final result
         if (options.verbose) console.info(
-            `ipv6.validate() » IP is ${ !addressIsValid ? 'in' : '' }valid IPv6 address!`);
+            `ipv6.validate() » IP is ${addressIsValid ? '' : 'in'}valid IPv6 address!`);
         return addressIsValid;
     }
 };
