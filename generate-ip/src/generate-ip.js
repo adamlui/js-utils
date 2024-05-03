@@ -59,7 +59,7 @@ const ipv4 = {
         options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
 
         // Validate address as IPv4 address
-        if (options.verbose) console.info('ipv4.validate() » Validating IPv4 address...');
+        if (options.verbose) console.info(`ipv4.validate() » Validating ${address}...`);
         const segments = address.split('.');
         const addressIsValid = !( // false if any dq condition matches
                   segments.length != 4 // not 4-segments long
@@ -210,7 +210,7 @@ const ipv6 = {
 
         // Validate address as IPv6 address
         if (options.verbose) console.info(
-            'ipv6.validate() » Validating IPv6 address...');
+            `ipv6.validate() » Validating ${address}...`);
         const pieces = address.split(/::?/),
               lastPiece = pieces[pieces.length - 1];
         const addressIsValid = !( // false if any dq condition matches
