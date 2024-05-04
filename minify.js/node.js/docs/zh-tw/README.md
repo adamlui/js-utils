@@ -266,14 +266,14 @@ findJS() » Check returned array.
 
 ## 🛠️ 相關實用程式
 
-### [</> minify.js (Gulp)](https://gulp.minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?7b16322"></a>
+### [</> minify.js (Gulp)](https://gulp.minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
 
 > Gulp 外掛程式可遞歸地縮小所有 JavaScript 檔案。
 <br>[安裝](https://gulp.minify-js.org/#-installation) /
 [自述文件](https://gulp.minify-js.org/#readme) /
 [討論](https://github.minify-js.org/discussions)
 
-### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?7b16322"></a>
+### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
 
 > 將所有 SCSS 檔案遞歸編譯為縮小的 CSS。
 <br>[安裝](https://node.scsstocss.org/#-installation) /

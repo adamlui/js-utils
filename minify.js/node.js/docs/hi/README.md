@@ -268,14 +268,14 @@ findJS() » Check returned array.
 
 ## 🛠️ संबंधित उपयोगिताएँ
 
-### [</> minify.js (Gulp)](https://gulp.minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?7b16322"></a>
+### [</> minify.js (Gulp)](https://gulp.minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
 
 > सभी जावास्क्रिप्ट फ़ाइलों को पुनरावर्ती रूप से छोटा करने के लिए Gulp प्लग-इन।
 <br>[स्थापित करना](https://gulp.minify-js.org/#-installation) /
 [रीडमी](https://gulp.minify-js.org/#readme) /
 [चर्चा करना](https://github.minify-js.org/discussions)
 
-### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?7b16322"></a>
+### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
 
 > सभी SCSS फ़ाइलों को पुनरावर्ती रूप से लघु CSS में संकलित करें।
 <br>[स्थापित करना](https://node.scsstocss.org/#-installation) /
