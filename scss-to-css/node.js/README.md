@@ -275,7 +275,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <br>[Download](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
 [Discuss](https://github.js-utils.com/discussions)
 
-### [</> minify.js](https://minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?bdf2f44"></a>
+### [</> minify.js](https://minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?7b16322"></a>
 
 > Recursively minify all JavaScript files.
 <br>[Install](https://node.minify-js.org/#-installation) /

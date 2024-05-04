@@ -343,7 +343,7 @@ $ generate-ip
 
 Sample output:
 
-<img src="https://media.generate-ip.org/images/screenshots/cli/generate-ip-cmd-output.jpg?07367f4">
+<img src="https://media.generate-ip.org/images/screenshots/cli/generate-ip-cmd-output.png?7b16322">
 
 📝 **Note:** To generate multiple IP addresses, pass `--qty=n` where `n` is the number of IPs to generate.
 
@@ -383,7 +383,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## 🛠️ Related utilities
 
-### [🔒 generate-pw](../generate-pw) <a href="https://github.com/toolleeo/cli-apps#password-managers"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?bdf2f44"></a>
+### [🔒 generate-pw](../generate-pw) <a href="https://github.com/toolleeo/cli-apps#password-managers"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?7b16322"></a>
 
 > Randomly generate, strengthen, and validate cryptographically-secure passwords.
 <br>[Install](https://docs.generatepw.org/#-installation) /

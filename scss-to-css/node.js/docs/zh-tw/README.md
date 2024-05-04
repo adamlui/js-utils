@@ -272,7 +272,7 @@ findSCSS() » Check returned array.
 <br>[下載](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
 [討論](https://github.js-utils.com/discussions)
 
-### [</> minify.js](https://minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?bdf2f44"></a>
+### [</> minify.js](https://minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?7b16322"></a>
 
 > 遞歸地縮小所有 JavaScript 檔案。
 <br>[安裝](https://minify-js.org/docs/zh-tw#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%9D) /

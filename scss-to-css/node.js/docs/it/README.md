@@ -272,7 +272,7 @@ IL SOFTWARE VIENE FORNITO "COSÌ COM'È", SENZA GARANZIA DI ALCUN TIPO, ESPLICIT
 <br>[Scaricamento](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
 [Discutere](https://github.js-utils.com/discussions)
 
-### [</> minify.js](https://minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?bdf2f44"></a>
+### [</> minify.js](https://minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?7b16322"></a>
 
 > Minimizza ricorsivamente tutti i file JavaScript.
 <br>[Installare](https://node.minify-js.org/#-installation) /
