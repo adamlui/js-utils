@@ -84,7 +84,7 @@ const { ipv4, ipv6, mac } = require('generate-ip');
 })();
 ```
 
-### <img height=17 src="https://media.js-utils.com/images/icons/platforms/tampermonkey/icon28.png?4fd2fa7"><img height=17.5 src="https://cdn.jsdelivr.net/gh/KudoAI/chatgpt.js/starters/media/images/icons/violentmonkey-icon100.png"> Greasemonkey
+### <img height=17 src="https://media.js-utils.com/images/icons/platforms/tampermonkey/icon28.png?4fd2fa7"><img height=17.5 src="https://media.js-utils.com/images/icons/platforms/violentmonkey/icon25.png?2fe972c"> Greasemonkey
 
 ```js
 ...
