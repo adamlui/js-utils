@@ -11,7 +11,7 @@ Essential JavaScript libraries/utilities for Node.js and the web
 
 <img height=10px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
 
-### <a href="../generate-ip"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> generate-ip</a> <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+### <a href="../generate-ip"><picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png"></picture> generate-ip</a> <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.
 <br>[Install](../generate-ip#-installation) /

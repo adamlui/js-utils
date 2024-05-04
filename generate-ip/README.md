@@ -1,4 +1,4 @@
-# <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/white/icon55x49.png"><img height=32 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-ip/media/images/icons/node-graph/black/icon55x49.png"></picture> generate-ip
+# <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png"><img height=32 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png"></picture> generate-ip
 
 ### Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.
 
