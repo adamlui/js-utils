@@ -10,6 +10,7 @@ nc="\033[0m"    # no color
 br="\033[1;91m" # bright red
 by="\033[1;33m" # bright yellow
 bg="\033[1;92m" # bright green
+bw="\033[1;97m" # bright white
 
 # Validate version arg
 VERSION_TYPES=("major" "minor" "patch")
@@ -28,11 +29,11 @@ esac
 NEW_VERSION=$(printf "%s.%s.%s" "${SUBVERS[@]}")
 
 # Bump version in package.json + package-lock.json
-echo -e "${by}Bumping versions in package manifests...${nc}"
+echo -e "${by}Bumping versions in package manifests...${bw}"
 npm version --no-git-tag-version "$NEW_VERSION"
 
 # Bump versions in READMEs
-echo -e "${by}\nBumping versions in READMEs...${nc}"
+echo -e "${by}\nBumping versions in READMEs...${bw}"
 PACKAGE_NAME=$(node -pe "require('./package.json').name" | sed -e 's/^@[a-zA-Z0-9-]*\///' -e 's/^@//')
 sed_actions=(
     # Latest Build shield link
@@ -61,7 +62,7 @@ bash utils/build.sh
 echo -e "${by}\nUpdating jsDelivr URL for global messages w/ commit hash...${nc}"
 BUMP_HASH=$(git rev-parse HEAD)
 if sed -i -E "s|(cdn\.jsdelivr\.net\/gh\/[^/]+\/[^@/]+)[^/]*|\1@$BUMP_HASH|" dist/cli.min.js
-    then echo -e "\n$BUMP_HASH" ; fi
+    then echo -e "${bw}$BUMP_HASH${nc}" ; fi
 
 # Commit build to Git
 echo -e "${by}\nCommitting build to Git...\n${nc}"
