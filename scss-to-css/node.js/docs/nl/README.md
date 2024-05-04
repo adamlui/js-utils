@@ -285,6 +285,6 @@ DE SOFTWARE WORDT GELEVERD "AS IS", ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIE
 
 <img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/home/white/icon32x27.png"><img height=13 src="https://media.js-utils.com/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**Meer JavaScript-hulpprogramma's**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/home/white/icon32x27.png?e735b99"><img height=13 src="https://media.js-utils.com/images/icons/home/dark-gray/icon32x27.png?e735b99"></picture> <a href="https://js-utils.com">**Meer JavaScript-hulpprogramma's**</a> /
 <a href="https://github.scsstocss.org/discussions">Bespreken</a> /
 <a href="#--scss-to-css">Terug naar boven ↑</a>
