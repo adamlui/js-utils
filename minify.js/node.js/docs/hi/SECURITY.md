@@ -1,8 +1,8 @@
 <div align="right">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils/docs/images/earth-icon/white/icon32.svg">
-            <img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/docs/images/earth-icon/black/icon32.svg">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/earth/white/icon32.svg?7c33be0">
+            <img height=14 src="https://media.js-utils.com/images/icons/earth/black/icon32.svg?7c33be0">
         </picture>
         &nbsp;हिंदी |
         <a href="../SECURITY.md">English</a> |
