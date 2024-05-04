@@ -109,7 +109,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## 🛠️ Related utilities
 
-### [</> minify.js (Node.js)](https://node.minify-js.org/#readme) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?7b16322"></a>
+### [</> minify.js (Node.js)](https://node.minify-js.org/#readme) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
 
 > Recursively minify all JavaScript files.
 <br>[Install](https://node.minify-js.org/#-installation) /
@@ -118,7 +118,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [API usage](https://node.minify-js.org/#-api-usage) /
 [Discuss](https://github.minify-js.org/discussions)
 
-### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?7b16322"></a>
+### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
 
 > Recursively compile all SCSS files into minified CSS.
 <br>[Install](https://node.scsstocss.org/#-installation) /
