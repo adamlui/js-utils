@@ -47,7 +47,7 @@ $ geolocate [ip1] [ip2] [...]
 
 Sample output:
 
-<img src="https://media.geolocatejs.org/images/screenshots/cli-geolocate-8.8.8.8.jpg?dfeb7bc">
+<img src="https://media.geolocatejs.org/images/screenshots/cli/geolocate-8.8.8.8-cmd-output.jpg?820427f">
 
 **📝 Note:** If no IPv4 address is passed, your own one will be used.
 
