@@ -258,7 +258,7 @@ Lorsqu'il est installé [globalement](#-installation), **generate-pw** peut éga
 $ generate-pw
 ```
 
-<img src="https://media.generatepw.org/images/screenshots/cli/generate-pw-output.jpg">
+<img src="https://media.generatepw.org/images/screenshots/cli/generate-pw-output.jpg?256f650">
 
 #
 
