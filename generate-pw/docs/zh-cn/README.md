@@ -301,7 +301,7 @@ $ generate-pw
 
 ## 🛠️ 相关实用程序
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png?b4eb06e150f42eb3a9826f09038b5fd3412c7fd3"><img height=21 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png?b4eb06e150f42eb3a9826f09038b5fd3412c7fd3"></picture> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > 随机生成、格式化和验证 IPv4 + IPv6 + MAC 地址。
 <br>[安装](https://docs.generate-ip.org/#-installation) /

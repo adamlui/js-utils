@@ -301,7 +301,7 @@ $ generate-pw
 
 ## 🛠️ संबंधित उपयोगिताएँ
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png?b4eb06e150f42eb3a9826f09038b5fd3412c7fd3"><img height=21 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png?b4eb06e150f42eb3a9826f09038b5fd3412c7fd3"></picture> [generate-ip](https://js-utils.com/generate-ip) <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
 
 > IPv4 + IPv6 + MAC पतों को बेतरतीब ढंग से उत्पन्न, प्रारूपित और मान्य करें।
 <br>[स्थापित करना](https://docs.generate-ip.org/#-installation) /
