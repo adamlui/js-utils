@@ -68,7 +68,7 @@ const pkgName = 'generate-ip',
               matchedInfoCmd = Object.keys(reArgs.infoCmds).find(cmd => reArgs.infoCmds[cmd].test(arg));
         if (matchedFlag) config[matchedFlag] = true;
         else if (matchedParamOption) {
-            if (!arg.includes('=')) {
+            if (!/=.+/.test(arg)) {
                 console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: `
                     + `Arg [--${arg.replace(/-/g, '')}] `
                     + `${ msgs.error_noEqual || 'requires \'=\' followed by a value' }.${nc}`);
