@@ -125,9 +125,9 @@ else if (process.argv.some(arg => reArgs.version.test(arg))) {
         if (compileData?.length > 0) {
             const cssCntSuffix = compileData.length > 1 ? 's' : '';
             printIfNotQuiet(`\n${bg}Compilation complete!${nc}`);
-            printIfNotQuiet(`${compileData.length} CSS file${ cssCntSuffix }`
+            printIfNotQuiet(`${bw + compileData.length} CSS file${ cssCntSuffix }`
                 + ( !config.noSourceMaps ? ` + ${compileData.length} source map${ cssCntSuffix }` : '' )
-                + ' generated.');
+                + ' generated.' + nc);
         } else printIfNotQuiet(`${by}No SCSS files processed.${nc}`);
         if (failedPaths.length > 0) {
             printIfNotQuiet(`\n${br}`

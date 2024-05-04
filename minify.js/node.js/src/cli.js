@@ -134,7 +134,7 @@ else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
         if (minifyData?.length > 0) {
             printIfNotQuiet(`\n${bg}Minification complete!${nc}`);
             printIfNotQuiet(
-                `${minifyData.length} file${ minifyData.length > 1 ? 's' : '' } minified.`);
+                `${bw + minifyData.length} file${ minifyData.length > 1 ? 's' : '' } minified.${nc}`);
         } else printIfNotQuiet(`${by}No unminified JavaScript files processed.${nc}`);
         if (failedPaths.length > 0) {
             printIfNotQuiet(`\n${br}`
