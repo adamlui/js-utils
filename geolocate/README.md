@@ -1,4 +1,4 @@
-# <picture><source media="(prefers-color-scheme: dark)" srcset="https://github.com/adamlui/js-utils/blob/main/geolocate/media/images/icons/wire-globe/white/icon32.png"><img height=28 src="https://github.com/adamlui/js-utils/blob/main/geolocate/media/images/icons/wire-globe/black/icon32.png"></picture> geolocate
+# <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png"><img height=28 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png"></picture> geolocate
 
 ### Fetch IP geolocation data from the CLI.
 
