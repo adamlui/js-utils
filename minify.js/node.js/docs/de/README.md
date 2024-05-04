@@ -266,14 +266,14 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 ## 🛠️ Verwandte Dienstprogramme
 
-### [</> minify.js (Gulp)](https://gulp.minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+### [</> minify.js (Gulp)](https://gulp.minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?bdf2f44"></a>
 
 > Gulp-Plug-in zur rekursiven Minimierung aller JavaScript-Dateien.
 <br>[Installieren](https://gulp.minify-js.org/#-installation) /
 [Liesmich](https://gulp.minify-js.org/#readme) /
 [Diskutieren](https://github.minify-js.org/discussions)
 
-### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://awesome.re/mentioned-badge.svg"></a>
+### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?bdf2f44"></a>
 
 > Kompilieren Sie alle SCSS-Dateien rekursiv in minimiertes CSS.
 <br>[Installieren](https://node.scsstocss.org/#-installation) /
