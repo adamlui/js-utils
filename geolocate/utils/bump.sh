@@ -8,8 +8,8 @@
 # Init UI colors
 nc="\033[0m"    # no color
 br="\033[1;91m" # bright red
+by="\033[1;33m" # bright yellow
 bg="\033[1;92m" # bright green
-bw="\033[1;97m" # bright white
 
 # Validate version arg
 VERSION_TYPES=("major" "minor" "patch")
@@ -28,11 +28,11 @@ esac
 NEW_VERSION=$(printf "%s.%s.%s" "${SUBVERS[@]}")
 
 # Bump version in package.json + package-lock.json
-echo -e "${bw}Bumping versions in package manifests...${nc}"
+echo -e "${by}Bumping versions in package manifests...${nc}"
 npm version --no-git-tag-version "$NEW_VERSION"
 
 # Bump versions in READMEs
-echo -e "${bw}\nBumping versions in READMEs...${nc}"
+echo -e "${by}\nBumping versions in READMEs...${nc}"
 PACKAGE_NAME=$(node -pe "require('./package.json').name" | sed -e 's/^@[a-zA-Z0-9-]*\///' -e 's/^@//')
 sed_actions=(
     # Latest Build shield link
@@ -48,33 +48,33 @@ find . -name 'README.md' "${sed_actions[@]}"
 echo "v$NEW_VERSION"
 
 # Commit bumps to Git
-echo -e "${bw}\nCommitting bumps to Git...\n${nc}"
+echo -e "${by}\nCommitting bumps to Git...\n${nc}"
 find . -name "README.md" -exec git add {} +
 git add package*.json
 git commit -n -m "Bumped $PACKAGE_NAME versions to $NEW_VERSION"
 
 # Build minified JS to dist/
-echo -e "${bw}\nBuilding minified JS...\n${nc}"
+echo -e "${by}\nBuilding minified JS...\n${nc}"
 bash utils/build.sh
 
 # Update jsDelivr URL for global messages w/ commit hash
-echo -e "${bw}\nUpdating jsDelivr URL for global messages w/ commit hash...${nc}"
+echo -e "${by}\nUpdating jsDelivr URL for global messages w/ commit hash...${nc}"
 BUMP_HASH=$(git rev-parse HEAD)
 if sed -i -E "s|(cdn\.jsdelivr\.net\/gh\/[^/]+\/[^@/]+)[^/]*|\1@$BUMP_HASH|" dist/cli.min.js
     then echo -e "\n$BUMP_HASH" ; fi
 
 # Commit build to Git
-echo -e "${bw}\nCommitting build to Git...\n${nc}"
+echo -e "${by}\nCommitting build to Git...\n${nc}"
 git add ./dist/*.js
 git commit -n -m "Built $PACKAGE_NAME v$NEW_VERSION"
 
 # Push changes to GiHub
-echo -e "${bw}\nPushing to GitHub...\n${nc}"
+echo -e "${by}\nPushing to GitHub...\n${nc}"
 git push
 
 # Publish to NPM
 if [[ "$*" == *"--publish"* ]] ; then
-    echo -e "${bw}\nPublishing to npm...\n${nc}"
+    echo -e "${by}\nPublishing to npm...\n${nc}"
     npm publish ; fi
 
 # Print final summary
