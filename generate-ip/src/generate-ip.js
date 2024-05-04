@@ -313,8 +313,7 @@ function randomInt(min, max) {
 
 function randomHex(digits) {
     let hex = '';
-    for (let i = 0; i < digits; i++)
-        hex += randomInt(0, 16).toString(16);
+    for (let i = 0; i < digits; i++) hex += randomInt(0, 16).toString(16);
     return hex;
 }
 
