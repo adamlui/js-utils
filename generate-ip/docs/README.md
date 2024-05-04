@@ -3,9 +3,9 @@
 ### Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.
 
 <a href="#%EF%B8%8F-mit-license"><img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/generate-ip-2.3.0"><img height=31 src="https://img.shields.io/badge/Latest_Build-2.3.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/generate-ip-2.3.1"><img height=31 src="https://img.shields.io/badge/Latest_Build-2.3.1-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/generate-ip?activeTab=code"><img height=31 src="https://img.shields.io/npm/unpacked-size/generate-ip?style=for-the-badge&logo=ebox&logoColor=white&labelColor=464646&color=blue"></a>
-<a href="https://github.com/adamlui/js-utils/blob/generate-ip-2.3.0/generate-ip/dist/generate-ip.min.js"><img height=31 src="https://img.shields.io/github/size/adamlui/js-utils/generate-ip/dist/generate-ip.min.js?branch=generate-ip-2.3.0&label=Minified%20Size&logo=databricks&logoColor=white&labelColor=464646&color=ff69b4&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/blob/generate-ip-2.3.1/generate-ip/dist/generate-ip.min.js"><img height=31 src="https://img.shields.io/github/size/adamlui/js-utils/generate-ip/dist/generate-ip.min.js?branch=generate-ip-2.3.1&label=Minified%20Size&logo=databricks&logoColor=white&labelColor=464646&color=ff69b4&style=for-the-badge"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_js-utils:generate-ip/src/generate-ip.js"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_js-utils%3Agenerate-ip%2Fsrc%2Fgenerate-ip.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></a>
 <a href="https://github.com/toolleeo/cli-apps#networking"><img height=31 src="https://img.shields.io/badge/Mentioned_in-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.jsdelivr.com/package/npm/generate-ip?tab=stats"><img height=31 src="https://img.shields.io/jsdelivr/npm/hm/generate-ip?style=for-the-badge&logo=jsdelivr&logoColor=white&label=jsDelivr%20Hits&labelColor=464646&color=49c5d8"></a>
@@ -72,14 +72,14 @@ const { ipv4, ipv6, mac } = require('generate-ip');
 #### <> HTML script tag:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/generate-ip@2.3.0/dist/generate-ip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/generate-ip@2.3.1/dist/generate-ip.min.js"></script>
 ```
 
 #### ES6:
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-ip@2.3.0/dist/generate-ip.min.js');
+    await import('https://cdn.jsdelivr.net/npm/generate-ip@2.3.1/dist/generate-ip.min.js');
     // Your code here...
 })();
 ```
@@ -88,7 +88,7 @@ const { ipv4, ipv6, mac } = require('generate-ip');
 
 ```js
 ...
-// @require https://cdn.jsdelivr.net/npm/generate-ip@2.3.0/dist/generate-ip.min.js
+// @require https://cdn.jsdelivr.net/npm/generate-ip@2.3.1/dist/generate-ip.min.js
 // ==/UserScript==
 
 // Your code here...
@@ -96,7 +96,7 @@ const { ipv4, ipv6, mac } = require('generate-ip');
 
 <br>
 
-📝 **Note:** To always import the latest version (not recommended in production!) remove the `@2.3.0` version tag from the jsDelivr URL: `https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js`
+📝 **Note:** To always import the latest version (not recommended in production!) remove the `@2.3.1` version tag from the jsDelivr URL: `https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js`
 
 <br>
 
