@@ -11,7 +11,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## ⚡ Installation
 
@@ -35,7 +35,7 @@ $ npm install @adamlui/geolocate
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 💻 Command line usage
 
@@ -64,7 +64,7 @@ Info commands:
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🔌 Importing the API
 
@@ -119,7 +119,7 @@ const geo = require('@adamlui/geolocate');
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 📋 API usage
 
@@ -170,7 +170,7 @@ Name      | Type    | Description                       | Default Value
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🏛️ MIT License
 
@@ -184,7 +184,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🛠️ Related utilities
 
@@ -208,7 +208,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/home/white/icon32x27.png"><img height=13 src="https://media.js-utils.com/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**More JavaScript utilities**</a> /
 <a href="https://github.js-utils.com/discussions">Discuss</a> /

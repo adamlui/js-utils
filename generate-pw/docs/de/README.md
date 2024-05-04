@@ -29,7 +29,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 💡 Um
 
@@ -40,7 +40,7 @@
 - **Unterstützung für mehrere Umgebungen —** Verwendung in Node.js oder im Webbrowser
 - **Befehlszeile verwendbar —** Geben Sie einfach `generate-pw` ein, fertig
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## ⚡ Installation
 
@@ -58,7 +58,7 @@ $ npm install generate-pw
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🔌 Importieren der API
 
@@ -111,7 +111,7 @@ const pw = require('generate-pw');
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 📋 API-Nutzung
 
@@ -248,7 +248,7 @@ Name                  | Geben Sie       | ein Beschreibung                      
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 💻 Verwendung der Befehlszeile
 
@@ -287,7 +287,7 @@ Info-Befehle:
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🏛️ MIT-Lizenz
 
@@ -301,7 +301,7 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🛠️ Verwandte Dienstprogramme
 
@@ -325,7 +325,7 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/home/white/icon32x27.png"><img height=13 src="https://media.js-utils.com/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**Weitere JavaScript-Dienstprogramme**</a> /
 <a href="https://github.js-utils.com/discussions">Diskutieren</a> /

@@ -32,7 +32,7 @@
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:node.js/src/scss-to-css.js"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_scss-to-css%3Anode.js%2Fsrc%2Fscss-to-css.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></a>
 <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=31 src="https://img.shields.io/badge/Mentioned_in-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## ⚡ स्थापना
 
@@ -56,7 +56,7 @@ $ npm install @adamlui/scss-to-css
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 💻 कमांड लाइन वापर
 
@@ -147,7 +147,7 @@ $ scss-to-css input_folder output_folder
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🔌 API वापर
 
@@ -248,7 +248,7 @@ findSCSS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🏛️ MIT परवाना
 
@@ -262,7 +262,7 @@ findSCSS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🛠️ संबंधित उपयुक्तता
 
@@ -283,7 +283,7 @@ findSCSS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/home/white/icon32x27.png"><img height=13 src="https://media.js-utils.com/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**अधिक JavaScript उपयुक्तता**</a> /
 <a href="https://github.scsstocss.org/discussions">चर्चा करा</a> /

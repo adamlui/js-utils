@@ -33,7 +33,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## ⚡ स्थापना
 
@@ -57,7 +57,7 @@ $ npm install @adamlui/minify.js
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 💻 कमांड लाइन वापर
 
@@ -145,7 +145,7 @@ $ minify-js input_folder output_folder
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🔌 API वापर
 
@@ -248,7 +248,7 @@ findJS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🏛️ MIT परवाना
 
@@ -262,7 +262,7 @@ findJS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🛠️ संबंधित उपयुक्तता
 
@@ -284,7 +284,7 @@ findJS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png">
+<img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/home/white/icon32x27.png"><img height=13 src="https://media.js-utils.com/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://js-utils.com">**अधिक JavaScript उपयुक्तता**</a> /
 <a href="https://github.minify-js.org/discussions">चर्चा करा</a> /
