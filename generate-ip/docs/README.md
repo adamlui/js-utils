@@ -1,4 +1,4 @@
-# <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png?b4eb06e150f42eb3a9826f09038b5fd3412c7fd3"><img height=32 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png?b4eb06e150f42eb3a9826f09038b5fd3412c7fd3"></picture> generate-ip
+# <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png?b4eb06e"><img height=32 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png?b4eb06e"></picture> generate-ip
 
 ### Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.
 
@@ -343,7 +343,7 @@ $ generate-ip
 
 Sample output:
 
-<img src="https://media.generate-ip.org/images/screenshots/cli/generate-ip-cmd-output.jpg?07367f4c904279b74056966a53a3b3aad03314c9">
+<img src="https://media.generate-ip.org/images/screenshots/cli/generate-ip-cmd-output.jpg?07367f4">
 
 📝 **Note:** To generate multiple IP addresses, pass `--qty=n` where `n` is the number of IPs to generate.
 
