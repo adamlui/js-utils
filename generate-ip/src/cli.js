@@ -83,6 +83,11 @@ const pkgName = 'generate-ip',
             printHelpSections(['paramOptions', 'flags', 'infoCmds']);
             process.exit(1);
     }});
+    if (config.qty && (isNaN(config.qty) || config.qty < 1)) {
+        console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: [qty] `
+            + `${ msgs.error_nonPositiveNum || 'argument can only be > 0' }.${nc}`);
+        printHelpCmdAndDocURL(); process.exit(1);
+    }
 
     // Show HELP screen if -h or --help passed
     if (process.argv.some(arg => reArgs.infoCmds.help.test(arg))) printHelpSections();
@@ -106,11 +111,6 @@ const pkgName = 'generate-ip',
         console.info(`${ msgs.prefix_localVer || 'Local version' }: ${localVer}`);
 
     } else { // log/copy RESULT(S)
-        if (config.qty && (isNaN(config.qty) || config.qty < 1)) {
-            console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: [qty] `
-                + `${ msgs.error_nonPositiveNum || 'argument can only be > 0' }.${nc}`);
-            printHelpCmdAndDocURL(); process.exit(1);
-        }
         const ipResult = ipv4.generate({ qty: config.qty || 1, verbose: !config.quietMode });
         printIfNotQuiet(`\n${ msgs.info_copying || 'Copying to clipboard' }...`);
         copyToClipboard(Array.isArray(ipResult) ? ipResult.join('\n') : ipResult);

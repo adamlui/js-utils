@@ -97,6 +97,12 @@ const pkgName = 'generate-pw',
             printHelpSections(['paramOptions', 'flags', 'infoCmds']);
             process.exit(1);
     }});
+    for (const numArgType of ['length', 'qty'])
+        if (config[numArgType] && (isNaN(config[numArgType]) || config[numArgType] < 1)) {
+            console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: [${numArgType}] `
+                + `${ msgs.error_nonPositiveNum || 'argument can only be > 0' }.${nc}`);
+            printHelpCmdAndDocURL(); process.exit(1);
+        }
 
     // Show HELP screen if -h or --help passed
     if (process.argv.some(arg => reArgs.infoCmds.help.test(arg))) printHelpSections();
@@ -120,12 +126,6 @@ const pkgName = 'generate-pw',
         console.info(`${ msgs.prefix_localVer || 'Local version' }: ${localVer}`);
 
     } else { // run MAIN routine
-        for (const numArgType of ['length', 'qty'])
-            if (config[numArgType] && (isNaN(config[numArgType]) || config[numArgType] < 1)) {
-                console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: [${numArgType}] `
-                    + `${ msgs.error_nonPositiveNum || 'argument can only be > 0' }.${nc}`);
-                printHelpCmdAndDocURL(); process.exit(1);
-            }
         const funcOptions = {
             length: config.length || 8, qty: config.qty || 1,
             charset: config.charset, exclude: config.excludeChars,
