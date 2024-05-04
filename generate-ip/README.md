@@ -343,7 +343,7 @@ $ generate-ip
 
 Sample output:
 
-<img src="https://media.generate-ip.org/images/screenshots/cli/generate-ip-cmd-output.jpg">
+<img src="https://media.generate-ip.org/images/screenshots/cli/generate-ip-cmd-output.jpg?07367f4c904279b74056966a53a3b3aad03314c9">
 
 📝 **Note:** To generate multiple IP addresses, pass `--qty=n` where `n` is the number of IPs to generate.
 
