@@ -1,4 +1,4 @@
-# <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png"><img height=28 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png"></picture> geolocate
+# <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png?e735b99"><img height=28 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png?e735b99"></picture> geolocate
 
 ### Fetch IP geolocation data from the CLI.
 
@@ -47,7 +47,7 @@ $ geolocate [ip1] [ip2] [...]
 
 Sample output:
 
-<img src="https://media.geolocatejs.org/images/screenshots/cli-geolocate-8.8.8.8.jpg">
+<img src="https://media.geolocatejs.org/images/screenshots/cli-geolocate-8.8.8.8.jpg?dfeb7bc">
 
 **📝 Note:** If no IPv4 address is passed, your own one will be used.
 

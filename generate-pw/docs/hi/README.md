@@ -310,7 +310,7 @@ $ generate-pw
 [सीएलआई उपयोग](https://docs.generate-ip.org/#-command-line-usage) /
 [चर्चा करना](https://github.js-utils.com/discussions)
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png?e735b99"><img height=22 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png?e735b99"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > सीएलआई से आईपी जियोलोकेशन डेटा प्राप्त करें।
 <br>[स्थापित करना](https://docs.geolocatejs.org/#-installation) /

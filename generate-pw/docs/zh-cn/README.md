@@ -310,7 +310,7 @@ $ generate-pw
 [CLI 用法](https://docs.generate-ip.org/#-command-line-usage) /
 [讨论](https://github.js-utils.com/discussions)
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.com/geolocate)
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png?e735b99"><img height=22 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png?e735b99"></picture> [geolocate](https://js-utils.com/geolocate)
 
 > 从 CLI 获取 IP 地理位置数据。
 <br>[安装](https://docs.geolocatejs.org/#-installation) /
