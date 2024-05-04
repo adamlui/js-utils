@@ -1,4 +1,4 @@
-# <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png"><img height=32 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png"></picture> generate-ip
+# <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png?b4eb06e150f42eb3a9826f09038b5fd3412c7fd3"><img height=32 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png?b4eb06e150f42eb3a9826f09038b5fd3412c7fd3"></picture> generate-ip
 
 ### Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.
 
