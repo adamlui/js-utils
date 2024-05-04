@@ -62,7 +62,7 @@ $ npm install generate-pw
 
 ## 🔌 API আমদানি করা হচ্ছে
 
-### <img height=18 src="https://media.js-utils.com/images/icons/platforms/node.js/icon25x28.png"> Node.js
+### <img height=18 src="https://media.js-utils.com/images/icons/platforms/node.js/icon25x28.png?3e22bae"> Node.js
 
 #### ECMAScript*:
 
@@ -78,7 +78,7 @@ const pw = require('generate-pw');
 
 ###### _*Node.js সংস্করণ 14 বা উচ্চতর প্রয়োজন_
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/platforms/web/light/icon25.png"><img width=16 src="https://media.js-utils.com/images/icons/platforms/web/dark/icon25.png"></picture> Web
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/platforms/web/light/icon25.png?3e22bae"><img width=16 src="https://media.js-utils.com/images/icons/platforms/web/dark/icon25.png?3e22bae"></picture> Web
 
 #### <> HTML স্ক্রিপ্ট ট্যাগ:
 

@@ -70,7 +70,7 @@ Info commands:
 
 You can also import **geolocate** into your app to use its main API method.
 
-### <img height=18 src="https://media.js-utils.com/images/icons/platforms/node.js/icon25x28.png"> Node.js
+### <img height=18 src="https://media.js-utils.com/images/icons/platforms/node.js/icon25x28.png?3e22bae"> Node.js
 
 #### ECMAScript*:
 
@@ -86,7 +86,7 @@ const geo = require('@adamlui/geolocate');
 
 ###### _*Node.js version 14 or higher required_
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/platforms/web/light/icon25.png"><img width=16 src="https://media.js-utils.com/images/icons/platforms/web/dark/icon25.png"></picture> Web
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/platforms/web/light/icon25.png?3e22bae"><img width=16 src="https://media.js-utils.com/images/icons/platforms/web/dark/icon25.png?3e22bae"></picture> Web
 
 #### <> HTML script tag:
 
