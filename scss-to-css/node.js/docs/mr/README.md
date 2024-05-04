@@ -68,7 +68,7 @@ $ scss-to-css
 
 नमुना आउटपुट:
 
-<img src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css/node.js/media/images/screenshots/cli-scss-to-css-docs.png">
+<img src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@b74edea/node.js/media/images/screenshots/cli/scss-to-css-docs-cmd-output.png">
 
 **💡 टीप:** जोपर्यंत `-S` किंवा `--no-source-maps` पास होत नाही तोपर्यंत स्त्रोत नकाशे देखील डीफॉल्टनुसार तयार केले जातात.
 

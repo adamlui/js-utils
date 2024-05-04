@@ -68,7 +68,7 @@ $ scss-to-css
 
 範例輸出：
 
-<img src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css/node.js/media/images/screenshots/cli-scss-to-css-docs.png">
+<img src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@b74edea/node.js/media/images/screenshots/cli/scss-to-css-docs-cmd-output.png">
 
 **💡 筆記：**預設也會產生來源映射，除非傳遞 `-S` 或 `--no-source-maps`。
 

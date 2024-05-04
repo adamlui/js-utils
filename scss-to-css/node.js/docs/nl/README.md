@@ -68,7 +68,7 @@ $ scss-to-css
 
 Voorbeelduitvoer:
 
-<img src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css/node.js/media/images/screenshots/cli-scss-to-css-docs.png">
+<img src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@b74edea/node.js/media/images/screenshots/cli/scss-to-css-docs-cmd-output.png">
 
 **💡 Opmerking:** Bronkaarten worden ook standaard gegenereerd, tenzij `-S` of `--no-source-maps` wordt doorgegeven.
 
