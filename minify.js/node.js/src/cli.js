@@ -42,7 +42,7 @@ process.argv.forEach(arg => {
           matchedInfoCmd = Object.keys(reArgs.infoCmds).find(cmd => reArgs.infoCmds[cmd].test(arg));
     if (matchedFlag) config[matchedFlag] = true;
     else if (matchedParamOption) {
-        if (!arg.includes('=')) {
+        if (!/=.+/.test(arg)) {
             console.error(`\n${br}ERROR: Arg [--${arg.replace(/-/g, '')}] requires '=' followed by a value.${nc}`);
             printHelpCmdAndDocURL(); process.exit(1);
         }
