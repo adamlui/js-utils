@@ -128,19 +128,20 @@ $ minify-js input_folder output_folder
 
 ```
 布尔选项：
- -n, --dry-run               实际上并不缩小文件，只是显示它们是否会被处理。
- -d, --include-dotfolders    在文件搜索中包括点文件夹。
- -D, --include-dotfiles      在文件搜索中包含点文件。
- -R, --no-recursion          禁用递归文件搜索。
- -M, --no-mangle             禁用修改名称。
- -q, --quiet                 禁止除错误之外的所有日志记录。
+ -n, --dry-run                        实际上并不缩小文件，只是显示它们是否会被处理。
+ -d, --include-dotfolders             在文件搜索中包括点文件夹。
+ -D, --include-dotfiles               在文件搜索中包含点文件。
+ -R, --no-recursion                   禁用递归文件搜索。
+ -M, --no-mangle                      禁用修改名称。
+ -q, --quiet                          禁止除错误之外的所有日志记录。
 
 参数选项：
- --comment="comment"         在缩小的代码前面添加注释。 使用“\n”按行分隔。
+ --ignore-files="file1.js,file2.js"   要从缩小中排除的文件。
+ --comment="comment"                  在缩小的代码前面添加注释。 使用“\n”按行分隔。
 
 信息命令：
- -h, --help                  显示帮助屏幕。
- -v, --version               显示版本号。
+ -h, --help                           显示帮助屏幕。
+ -v, --version                        显示版本号。
 ```
 
 <br>

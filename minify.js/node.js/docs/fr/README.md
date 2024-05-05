@@ -128,19 +128,20 @@ $ minify-js dossier_entrée dossier_sortie
 
 ```
 Options booléennes:
- -n, --dry-run               Ne réduisez pas réellement le(s) fichier(s), indiquez simplement s'ils seront traités.
- -d, --include-dotfolders    Incluez les dossiers cachés dans la recherche de fichiers.
- -D, --include-dotfiles      Incluez les fichiers cachés dans la recherche de fichiers.
- -R, --no-recursion          Désactivez la recherche récursive de fichiers.
- -M, --no-mangle             Désactivez la modification des noms.
- -q, --quiet                 Supprime toute la journalisation, à l'exception des erreurs.
+ -n, --dry-run                        Ne réduisez pas réellement le(s) fichier(s), indiquez simplement s'ils seront traités.
+ -d, --include-dotfolders             Incluez les dossiers cachés dans la recherche de fichiers.
+ -D, --include-dotfiles               Incluez les fichiers cachés dans la recherche de fichiers.
+ -R, --no-recursion                   Désactivez la recherche récursive de fichiers.
+ -M, --no-mangle                      Désactivez la modification des noms.
+ -q, --quiet                          Supprime toute la journalisation, à l'exception des erreurs.
 
 Options des paramètres:
- --comment="commentaire"     Ajoutez un commentaire au code minifié. Séparez par ligne en utilisant '\n'.
+ --ignore-files="file1.js,file2.js"   Fichiers à exclure de la minification.
+ --comment="commentaire"              Ajoutez un commentaire au code minifié. Séparez par ligne en utilisant '\n'.
 
 Commandes d'informations:
- -h, --help                  Afficher l'écran d'aide.
- -v, --version               Afficher le numéro de version.
+ -h, --help                           Afficher l'écran d'aide.
+ -v, --version                        Afficher le numéro de version.
 ```
 
 <br>

@@ -128,19 +128,20 @@ $ minify-js carpeta_entrada carpeta_salida
 
 ```
 Opciones booleanas:
- -n, --dry-run               En realidad, no minimice los archivos, solo muestre si se procesarán.
- -d, --include-dotfolders    Incluya carpetas de puntos en la búsqueda de archivos.
- -D, --include-dotfiles      Incluya archivos de puntos en la búsqueda de archivos.
- -R, --no-recursion          Deshabilite la búsqueda recursiva de archivos.
- -M, --no-mangle             Disable mangling names.
- -q, --quiet                 Suprime todos los registros excepto los errores.
+ -n, --dry-run                        En realidad, no minimice los archivos, solo muestre si se procesarán.
+ -d, --include-dotfolders             Incluya carpetas de puntos en la búsqueda de archivos.
+ -D, --include-dotfiles               Incluya archivos de puntos en la búsqueda de archivos.
+ -R, --no-recursion                   Deshabilite la búsqueda recursiva de archivos.
+ -M, --no-mangle                      Disable mangling names.
+ -q, --quiet                          Suprime todos los registros excepto los errores.
 
 Opciones de parámetros:
- --comment="comentar"            Anteponer comentar al código minimizado. Separe por línea usando '\n'.
+ --ignore-files="file1.js,file2.js"   Archivos para excluir de la minificación.
+ --comment="comentar"                 Anteponer comentar al código minimizado. Separe por línea usando '\n'.
 
 Comandos de información:
- -h, --help                  Mostrar pantalla de ayuda.
- -v, --version               Mostrar número de versión.
+ -h, --help                           Mostrar pantalla de ayuda.
+ -v, --version                        Mostrar número de versión.
 ```
 
 <br>

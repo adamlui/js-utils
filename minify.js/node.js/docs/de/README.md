@@ -128,19 +128,20 @@ $ minify-js eingabeordner ausgabeordner
 
 ```
 Boolesche Optionen:
- -n, --dry-run               Minimieren Sie die Datei(en) nicht wirklich, sondern zeigen Sie nur an, ob sie verarbeitet werden.
- -d, --include-dotfolders    Beziehen Sie Punktordner in die Dateisuche ein.
- -D, --include-dotfiles      Beziehen Sie Punktdateien in die Dateisuche ein.
- -R, --no-recursion          Deaktivieren Sie die rekursive Dateisuche.
- -M, --no-mangle             Deaktivieren Sie das Verstümmeln von Namen.
- -q, --quiet                 Unterdrücken Sie alle Protokolle außer Fehlern.
+ -n, --dry-run                        Minimieren Sie die Datei(en) nicht wirklich, sondern zeigen Sie nur an, ob sie verarbeitet werden.
+ -d, --include-dotfolders             Beziehen Sie Punktordner in die Dateisuche ein.
+ -D, --include-dotfiles               Beziehen Sie Punktdateien in die Dateisuche ein.
+ -R, --no-recursion                   Deaktivieren Sie die rekursive Dateisuche.
+ -M, --no-mangle                      Deaktivieren Sie das Verstümmeln von Namen.
+ -q, --quiet                          Unterdrücken Sie alle Protokolle außer Fehlern.
 
 Parameteroptionen:
- --comment="kommentar"       Kommentar dem minimierten Code voranstellen. Mit „\n“ zeilenweise trennen.
+ --ignore-files="file1.js,file2.js"   Dateien, die von der Minimierung ausgeschlossen werden sollen.
+ --comment="kommentar"                Kommentar dem minimierten Code voranstellen. Mit „\n“ zeilenweise trennen.
 
 Info-Befehle:
- -h, --help                  Hilfebildschirm anzeigen.
- -v, --version               Versionsnummer anzeigen.
+ -h, --help                           Hilfebildschirm anzeigen.
+ -v, --version                        Versionsnummer anzeigen.
 ```
 
 <br>

@@ -29,7 +29,10 @@ const reArgs = {
         'noMangle': /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/,
         'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
     },
-    paramOptions: { 'comment': /^--?comments?(?:=.*|$)/ },
+    paramOptions: {
+        'ignoreFiles': /^--?(?:ignore|skip|exclude)(?:d?-?files?)?(?:=.*|$)/,
+        'comment': /^--?comments?(?:=.*|$)/
+    },
     infoCmds: { 'help': /^--?h(?:elp)?$/,'version': /^--?ve?r?s?i?o?n?$/ }
 };
 process.argv.forEach(arg => {
@@ -93,7 +96,8 @@ else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
 
     // Find all eligible JavaScript files or arg-passed file
     const unminnedJSfiles = inputArg.endsWith('.js') ? [inputPath]
-        : minifyJS.findJS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode });
+        : minifyJS.findJS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode,
+                                       ignoreFiles: config.ignoreFiles?.split(',') ?? [] });
 
     if (config.dryRun) { // -n or --dry-run passed
         if (unminnedJSfiles.length > 0) { // print files to be processed
@@ -154,35 +158,36 @@ function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'fl
         'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}» ${bg + cmdFormat + nc}`],
         'pathArgs': [
             `\n${bw}o Path arguments:${nc}`,
-            ' [inputPath]                 '
+            ' [inputPath]                         '
                 + 'Path to JS file or directory containing JS files to be minified,'
                 + ' relative to the current working directory.',
-            ' [outputPath]                '
+            ' [outputPath]                        '
                 + 'Path to file or directory where minified files will be stored,'
                 + ' relative to original file location (if not provided, min/ is used).'
         ],
         'flags': [
             `\n${bw}o Boolean options:${nc}`,
-            ' -n, --dry-run               Don\'t actually minify the file(s),'
-                                        + ' just show if they will be processed.',
-            ' -d, --include-dotfolders    Include dotfolders in file search.',
-            ' -D, --include-dotfiles      Include dotfiles in file search.',
-            ' -R, --no-recursion          Disable recursive file searching.',
-            ' -M, --no-mangle             Disable mangling names.',
-            ' -q, --quiet                 Suppress all logging except errors.'
+            ' -n, --dry-run                       Don\'t actually minify the file(s),'
+                                                + ' just show if they will be processed.',
+            ' -d, --include-dotfolders            Include dotfolders in file search.',
+            ' -D, --include-dotfiles              Include dotfiles in file search.',
+            ' -R, --no-recursion                  Disable recursive file searching.',
+            ' -M, --no-mangle                     Disable mangling names.',
+            ' -q, --quiet                         Suppress all logging except errors.'
         ],
         'paramOptions': [
             `\n${bw}o Parameter options:${nc}`,
-            '--comment="comment"          Prepend comment to minified code.'
+            '--ignore-files="file1.js,file2.js"   Files to exclude from minification.',
+            '--comment="comment"                  Prepend comment to minified code.'
         ],
         'infoCmds': [
             `\n${bw}o Info commands:${nc}`,
-            ' -h, --help                  Display help screen.',
-            ' -v, --version               Show version number.'
+            ' -h, --help                          Display help screen.',
+            ' -v, --version                       Show version number.'
         ]
     };
     includeSections.forEach(section => { // print valid arg elems
-        helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)); });
+        helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 37)); });
     console.info('\nFor more help, please visit: ' + bw + docURL + nc);
 
     function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines

@@ -128,21 +128,22 @@ $ minify-js input_folder output_folder
 
 ```
 Boolean options:
- -n, --dry-run               Don't actually minify the file(s), just show
-                             if they will be processed.
- -d, --include-dotfolders    Include dotfolders in file search.
- -D, --include-dotfiles      Include dotfiles in file search.
- -R, --no-recursion          Disable recursive file searching.
- -M, --no-mangle             Disable mangling names.
- -q, --quiet                 Suppress all logging except errors.
+ -n, --dry-run                        Don't actually minify the file(s),
+                                      just show if they will be processed.
+ -d, --include-dotfolders             Include dotfolders in file search.
+ -D, --include-dotfiles               Include dotfiles in file search.
+ -R, --no-recursion                   Disable recursive file searching.
+ -M, --no-mangle                      Disable mangling names.
+ -q, --quiet                          Suppress all logging except errors.
 
 Parameter options:
- --comment="comment"         Prepend comment to minified code. Separate
-                             by line using '\n'.
+ --ignore-files="file1.js,file2.js"   Files to exclude from minification.
+ --comment="comment"                  Prepend comment to minified code.
+                                      Separate by line using '\n'.
 
 Info commands:
- -h, --help                  Display help screen.
- -v, --version               Show version number.
+ -h, --help                           Display help screen.
+ -v, --version                        Show version number.
 ```
 
 <br>
