@@ -17,9 +17,10 @@ function findSCSS(searchDir, options = {}) {
           exampleCall = `findSCSS('assets/scss', { verbose: false, dotFolders: true })`;
 
     const defaultOptions = {
-        recursive: true,  // recursively search for nested files in searchDir passed
-        verbose: true,    // enable logging
-        dotFolders: false // include dotfolders in file search
+        recursive: true,   // recursively search for nested files in searchDir passed
+        verbose: true,     // enable logging
+        dotFolders: false, // include dotfolders in file search
+        ignoreFiles: []    // files to exclude from search results
     };
 
     // Validate searchDir
@@ -46,19 +47,23 @@ function findSCSS(searchDir, options = {}) {
         console.info('findSCSS() » Searching for SCSS files...');
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file);
-        if (fs.statSync(filePath).isDirectory() && file != 'node_modules'
-            && (options.dotFolders || !file.startsWith('.')) && options.recursive)
+        if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
+            && options.recursive // only proceed if recursion enabled
+            && (options.dotFolders || !file.startsWith('.'))) // exclude dotfolders if prohibited
                 scssFiles.push( // recursively find SCSS in eligible dir
                     ...findSCSS(filePath, { ...options, isRecursing: true }));
-        else if (file.endsWith('.scss')) // SCSS file found
-            scssFiles.push(filePath); // store it for returning
+        else if (file.endsWith('.scss') // SCSS file found
+            && !options.ignoreFiles.includes(file)) // exclude ignored files
+                scssFiles.push(filePath); // store eligible SCSS file for returning
+        else if (options.verbose && options.ignoreFiles.includes(file))
+            console.info(`findSCSS() » ** ${file} ignored due to [options.ignoreFiles]`);
     });
 
     // Log/return final result
     if (!options.isRecursing && options.verbose) {
-            console.info('findSCSS() » Search complete! '
-              + ( scssFiles.length == 0 ? 'No' : scssFiles.length )
-              + ` file${ scssFiles.length == 0 || scssFiles.length > 1 ? 's' : '' } found.`);
+        console.info('findSCSS() » Search complete! '
+          + ( scssFiles.length == 0 ? 'No' : scssFiles.length )
+          + ` file${ scssFiles.length == 0 || scssFiles.length > 1 ? 's' : '' } found.`);
         if (findSCSS.caller.name != 'compile' && !/cli(?:\.min)?\.js$/.test(require.main.filename))
             console.info('findSCSS() » Check returned array.');
     }
@@ -75,7 +80,8 @@ function compile(input, options = {}) {
         verbose: true,     // enable logging
         dotFolders: false, // include dotfolders in file search
         minify: true,      // minify output CSS
-        sourceMaps: true   // generate CSS source maps
+        sourceMaps: true,  // generate CSS source maps
+        ignoreFiles: []   // files to exclude from compilation
     };
 
     // Validate input
@@ -106,7 +112,7 @@ function compile(input, options = {}) {
             }
         } else { // dir path passed
             const compileResult = findSCSS(input, { recursive: options.recursive, verbose: options.verbose,
-                                                    dotFolders: options.dotFolders
+                                                    dotFolders: options.dotFolders, ignoreFiles: options.ignoreFiles
                 })?.map(scssPath => { // compile found SCSS files
                     if (options.verbose) console.info(`compile() » ** Compiling ${scssPath}...`); 
                     try { // to compile found file
@@ -151,7 +157,8 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
         .replace(/\n\s*/g, ' '); // condense to single line
     const strValidOptions = Object.keys(defaultOptions).join(', '),
           booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
-          integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]));
+          integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key])),
+          arrayOptions = Object.keys(defaultOptions).filter(key => Array.isArray(defaultOptions[key]));
 
     // Init log vars
     let logPrefix = 'validateOptions() » ';
@@ -185,6 +192,13 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) {
                 console.error(`${ logPrefix }ERROR: [${key}] option can only be an integer > 0.`);
+                printDocURL(); return false;
+            }
+        } else if (arrayOptions.includes(key)) {
+            if (typeof options[key] == 'string' && !options[key].includes(','))
+                options[key] = [options[key]]; // convert comma-less string to array
+            else if (!Array.isArray(options[key])) {
+                console.error(`${logPrefix}ERROR: [${key}] option can only be an array.`);
                 printDocURL(); return false;
             }
         }

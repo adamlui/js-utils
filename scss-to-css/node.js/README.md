@@ -208,13 +208,14 @@ scssToCSS.compile(inputDir, { minify: false });
 
 Available parameters (and their default settings) are:
 
-Name         | Desciption                                              | Default value
--------------|---------------------------------------------------------|---------------
-`recursive`  | Recursively search for nested files if dir path passed. | `true`
-`verbose`    | Show logging in console/terminal.                       | `true`
-`dotFolders` | Include dotfolders in file search.                      | `false`
-`minify`     | Minify output CSS.                                      | `true`
-`sourceMaps` | Generate CSS source maps.                               | `true`
+Name          | Type    | Desciption                                              | Default value
+--------------|---------|---------------------------------------------------------|---------------
+`recursive`   | Boolean | Recursively search for nested files if dir path passed. | `true`
+`verbose`     | Boolean | Show logging in console/terminal.                       | `true`
+`dotFolders`  | Boolean | Include dotfolders in file search.                      | `false`
+`minify`      | Boolean | Minify output CSS.                                      | `true`
+`sourceMaps`  | Boolean | Generate CSS source maps.                               | `true`
+`ignoreFiles` | Array   | Files (by name) to exclude from compilation.            | `[]`
 
 #
 
@@ -243,11 +244,12 @@ findSCSS() » Check returned array.
 
 Available parameters (and their default settings) are:
 
-Name         | Desciption                                               | Default value
--------------|----------------------------------------------------------|---------------
-`recursive`  | Recursively search for nested files in searchDir passed. | `true`
-`verbose`    | Show logging in console/terminal.                        | `true`
-`dotFolders` | Include dotfolders in file search.                       | `false`
+Name          | Type    | Desciption                                               | Default value
+--------------|---------|----------------------------------------------------------|---------------
+`recursive`   | Boolean | Recursively search for nested files in searchDir passed. | `true`
+`verbose`     | Boolean | Show logging in console/terminal.                        | `true`
+`dotFolders`  | Boolean | Include dotfolders in file search.                       | `false`
+`ignoreFiles` | Array   | Files (by name) to exclude from search results.          | `[]`
 
 <br>
 

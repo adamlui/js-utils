@@ -205,13 +205,14 @@ scssToCSS.compile(dirInput, { minify: false });
 
 I parametri disponibili (e le relative impostazioni predefinite) sono:
 
-Nome         | Descrizione                                                                       | Valore di default
--------------|-----------------------------------------------------------------------------------|-------------------
-`recursive`  | Cerca ricorsivamente i file nidificati se il percorso della direttorio è passato. | `true`
-`verbose`    | Mostra l'accesso nella console/terminale.                                         | `true`
-`dotFolders` | Includi cartelle punto nella ricerca di file.                                     | `false`
-`minify`     | Minimizza il CSS di output.                                                       | `true`
-`sourceMaps` | Genera mappe di origine CSS.                                                      | `true`
+Nome          | Tipo     | Descrizione                                                                       | Valore di default
+--------------|----------|-----------------------------------------------------------------------------------|-------------------
+`recursive`   | Booleano | Cerca ricorsivamente i file nidificati se il percorso della direttorio è passato. | `true`
+`verbose`     | Booleano | Mostra l'accesso nella console/terminale.                                         | `true`
+`dotFolders`  | Booleano | Includi cartelle punto nella ricerca di file.                                     | `false`
+`minify`      | Booleano | Minimizza il CSS di output.                                                       | `true`
+`sourceMaps`  | Booleano | Genera mappe di origine CSS.                                                      | `true`
+`ignoreFiles` | Vettore  | File (per nome) da escludere dalla compilazione.                                  | `[]`
 
 #
 
@@ -240,11 +241,12 @@ findSCSS() » Check returned array.
 
 I parametri disponibili (e le relative impostazioni predefinite) sono:
 
-Nome         | Descrizione                                                   | Valore di default
--------------|---------------------------------------------------------------|-------------------
-`recursive`  | Cerca ricorsivamente i file nidificati in dirRicerca passati. | `true`
-`verbose`    | Mostra l'accesso nella console/terminale.                     | `true`
-`dotFolders` | Includi cartelle punto nella ricerca di file.                 | `false`
+Nome          | Tipo     | Descrizione                                                   | Valore di default
+--------------|----------|---------------------------------------------------------------|-------------------
+`recursive`   | Booleano | Cerca ricorsivamente i file nidificati in dirRicerca passati. | `true`
+`verbose`     | Booleano | Mostra l'accesso nella console/terminale.                     | `true`
+`dotFolders`  | Booleano | Includi cartelle punto nella ricerca di file.                 | `false`
+`ignoreFiles` | Vettore  | File (per nome) da escludere dai risultati della ricerca.     | `[]`
 
 <br>
 

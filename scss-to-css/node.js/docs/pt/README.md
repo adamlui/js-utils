@@ -205,13 +205,14 @@ scssToCSS.compile(dirEntrada, { minify: false });
 
 Os parâmetros disponíveis (e suas configurações padrão) são:
 
-Nome         | Descrição                                                                             | Valor padrão
--------------|---------------------------------------------------------------------------------------|--------------
-`recursive`  | Pesquise recursivamente por arquivos aninhados se o caminho do diretório for passado. | `true`
-`verbose`    | Mostrar login no console/terminal.                                                    | `true`
-`dotFolders` | Incluir dotfolders na pesquisa de arquivos.                                           | `false`
-`minify`     | Minimizar CSS de saída.                                                               | `true`
-`sourceMaps` | Gerar mapas de origem CSS.                                                            | `true`
+Nome          | Tipo      | Descrição                                                                             | Valor padrão
+--------------|-----------|---------------------------------------------------------------------------------------|--------------
+`recursive`   | Boleano   | Pesquise recursivamente por arquivos aninhados se o caminho do diretório for passado. | `true`
+`verbose`     | Boleano   | Mostrar login no console/terminal.                                                    | `true`
+`dotFolders`  | Boleano   | Incluir dotfolders na pesquisa de arquivos.                                           | `false`
+`minify`      | Boleano   | Minimizar CSS de saída.                                                               | `true`
+`sourceMaps`  | Boleano   | Gerar mapas de origem CSS.                                                            | `true`
+`ignoreFiles` | Variedade | Arquivos (por nome) a serem excluídos da compilação.                                  | `[]`
 
 #
 
@@ -240,11 +241,12 @@ findSCSS() » Check returned array.
 
 Os parâmetros disponíveis (e suas configurações padrão) são:
 
-Nome         | Descrição                                                              | Valor padrão
--------------|------------------------------------------------------------------------|--------------
-`recursive`  | Pesquise recursivamente por arquivos aninhados em sesarchDir aprovado. | `true`
-`verbose`    | Mostrar login no console/terminal.                                     | `true`
-`dotFolders` | Incluir dotfolders na pesquisa de arquivos.                            | `false`
+Nome          | Tipo      | Descrição                                                              | Valor padrão
+--------------|-----------|------------------------------------------------------------------------|--------------
+`recursive`   | Boleano   | Pesquise recursivamente por arquivos aninhados em sesarchDir aprovado. | `true`
+`verbose`     | Boleano   | Mostrar login no console/terminal.                                     | `true`
+`dotFolders`  | Boleano   | Incluir dotfolders na pesquisa de arquivos.                            | `false`
+`ignoreFiles` | Variedade | Arquivos (por nome) a serem excluídos dos resultados da pesquisa.      | `[]`
 
 <br>
 

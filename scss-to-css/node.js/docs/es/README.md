@@ -205,13 +205,14 @@ scssToCSS.compile(dirEntrada, { minify: false });
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:
 
-Nombre       | Descripción                                                                | Valor por defecto
--------------|----------------------------------------------------------------------------|-------------------
-`recursive`  | Busque recursivamente archivos anidados si se pasa la ruta del directorio. | `true`
-`verbose`    | Mostrar registros en la consola/terminal.                                  | `true`
-`dotFolders` | Incluir carpetas de puntos en la búsqueda de archivos.                     | `false`
-`minify`     | Minimizar CSS de salida.                                                   | `true`
-`sourceMaps` | Generar mapas fuente CSS.                                                  | `true`
+Nombre        | Tipo      | Descripción                                                                | Valor por defecto
+--------------|-----------|----------------------------------------------------------------------------|-------------------
+`recursive`   | Booleano  | Busque recursivamente archivos anidados si se pasa la ruta del directorio. | `true`
+`verbose`     | Booleano  | Mostrar registros en la consola/terminal.                                  | `true`
+`dotFolders`  | Booleano  | Incluir carpetas de puntos en la búsqueda de archivos.                     | `false`
+`minify`      | Booleano  | Minimizar CSS de salida.                                                   | `true`
+`sourceMaps`  | Booleano  | Generar mapas fuente CSS.                                                  | `true`
+`ignoreFiles` | Formación | Archivos (por nombre) para excluir de la compilación.                      | `[]`
 
 #
 
@@ -240,11 +241,12 @@ findSCSS() » Check returned array.
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:
 
-Nombre       | Descripción                                                       | Valor por defecto
--------------|-------------------------------------------------------------------|-------------------
-`recursive`  | Se pasó la búsqueda recursiva de archivos anidados en sesarchDir. | `true`
-`verbose`    | Mostrar registros en la consola/terminal.                         | `true`
-`dotFolders` | Incluir carpetas de puntos en la búsqueda de archivos.            | `false`
+Nombre        | Tipo      | Descripción                                                       | Valor por defecto
+--------------|-----------|-------------------------------------------------------------------|-------------------
+`recursive`   | Booleano  | Se pasó la búsqueda recursiva de archivos anidados en sesarchDir. | `true`
+`verbose`     | Booleano  | Mostrar registros en la consola/terminal.                         | `true`
+`dotFolders`  | Booleano  | Incluir carpetas de puntos en la búsqueda de archivos.            | `false`
+`ignoreFiles` | Formación | Archivos (por nombre) para excluir de los resultados de búsqueda. | `[]`
 
 <br>
 

@@ -205,13 +205,14 @@ scssToCSS.compile(répEntrée, { minify: false });
 
 Les paramètres disponibles (et leurs paramètres par défaut) sont:
 
-Nom          | Description                                                                              | Valeur par défaut
--------------|------------------------------------------------------------------------------------------|-------------------
-`recursive`  | Rechercher récursivement les fichiers imbriqués si le chemin du répertoire est transmis. | `true`
-`verbose`    | Afficher la connexion dans la console/terminal.                                          | `true`
-`dotFolders` | Inclure les dossiers cachés dans la recherche de fichiers.                               | `false`
-`minify`     | Réduire la sortie CSS.                                                                   | `true`
-`sourceMaps` | Générer des cartes sources CSS.                                                          | `true`
+Nom           | Taper   | Description                                                                              | Valeur par défaut
+--------------|---------|------------------------------------------------------------------------------------------|-------------------
+`recursive`   | Booléen | Rechercher récursivement les fichiers imbriqués si le chemin du répertoire est transmis. | `true`
+`verbose`     | Booléen | Afficher la connexion dans la console/terminal.                                          | `true`
+`dotFolders`  | Booléen | Inclure les dossiers cachés dans la recherche de fichiers.                               | `false`
+`minify`      | Booléen | Réduire la sortie CSS.                                                                   | `true`
+`sourceMaps`  | Booléen | Générer des cartes sources CSS.                                                          | `true`
+`ignoreFiles` | Tableau | Fichiers (par nom) à exclure de la compilation.                                          | `[]`
 
 #
 
@@ -240,11 +241,12 @@ findSCSS() » Check returned array.
 
 Les paramètres disponibles (et leurs paramètres par défaut) sont:
 
-Nom          | Description                                                            | Valeur par défaut
--------------|------------------------------------------------------------------------|-------------------
-`recursive`  | Recherche récursive des fichiers imbriqués dans repRecherche transmis. | `true`
-`verbose`    | Afficher la connexion dans la console/terminal.                        | `true`
-`dotFolders` | Inclure les dossiers cachés dans la recherche de fichiers.             | `false`
+Nom           | Taper   | Description                                                            | Valeur par défaut
+--------------|---------|------------------------------------------------------------------------|-------------------
+`recursive`   | Booléen | Recherche récursive des fichiers imbriqués dans repRecherche transmis. | `true`
+`verbose`     | Booléen | Afficher la connexion dans la console/terminal.                        | `true`
+`dotFolders ` | Booléen | Inclure les dossiers cachés dans la recherche de fichiers.             | `false`
+`ignoreFiles` | Tableau | Fichiers (par nom) à exclure des résultats de recherche.               | `[]`
 
 <br>
 

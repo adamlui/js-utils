@@ -205,13 +205,14 @@ scssToCSS.compile(invoermap, { minify: false });
 
 Beschikbare parameters (en hun standaardinstellingen) zijn:
 
-Naam         | Beschrijving                                                         | Standaardwaarde
--------------|----------------------------------------------------------------------|-----------------
-`recursive`  | Zoek recursief naar geneste bestanden als het mappad is doorgegeven. | `true`
-`verbose`    | Toon inloggen op console/terminal.                                   | `true`
-`dotFolders` | Puntmappen opnemen in het zoeken naar bestanden.                     | `false`
-`minify`     | Verklein de uitvoer-CSS.                                             | `true`
-`sourceMaps` | Genereer CSS-bronkaarten.                                            | `true`
+Naam          | Type      | Beschrijving                                                         | Standaardwaarde
+--------------|-----------|----------------------------------------------------------------------|-----------------
+`recursive`   | Booleaans | Zoek recursief naar geneste bestanden als het mappad is doorgegeven. | `true`
+`verbose`     | Booleaans | Toon inloggen op console/terminal.                                   | `true`
+`dotFolders`  | Booleaans | Puntmappen opnemen in het zoeken naar bestanden.                     | `false`
+`minify`      | Booleaans | Verklein de uitvoer-CSS.                                             | `true`
+`sourceMaps`  | Booleaans | Genereer CSS-bronkaarten.                                            | `true`
+`ignoreFiles` | Array     | Bestanden (op naam) die moeten worden uitgesloten van compilatie.    | `[]`
 
 #
 
@@ -240,11 +241,12 @@ findSCSS() » Check returned array.
 
 Beschikbare parameters (en hun standaardinstellingen) zijn:
 
-Naam         | Beschrijving                                                    | Standaardwaarde
--------------|-----------------------------------------------------------------|-----------------
-`recursive`  | Recursief zoeken naar geneste bestanden in zoekMap is geslaagd. | `true`
-`verbose`    | Toon inloggen op console/terminal.                              | `true`
-`dotFolders` | Puntmappen opnemen in het zoeken naar bestanden.                | `false`
+Naam          | Type      | Beschrijving                                                          | Standaardwaarde
+--------------|-----------|-----------------------------------------------------------------------|-----------------
+`recursive`   | Booleaans | Recursief zoeken naar geneste bestanden in zoekMap is geslaagd.       | `true`
+`verbose`     | Booleaans | Toon inloggen op console/terminal.                                    | `true`
+`dotFolders`  | Booleaans | Puntmappen opnemen in het zoeken naar bestanden.                      | `false`
+`ignoreFiles` | Array     | Bestanden (op naam) die moeten worden uitgesloten van zoekresultaten. | `[]`
 
 <br>
 

@@ -205,13 +205,14 @@ scssToCSS.compile(eingangVer, { minify: false });
 
 Verfügbare Parameter (und ihre Standardeinstellungen) sind:
 
-Name         | Beschreibung                                                                           | Standardwert
--------------|----------------------------------------------------------------------------------------|--------------
-`recursive`  | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird. | `true`
-`verbose`    | Anmeldung in Konsole/Terminal anzeigen.                                                | `true`
-`dotFolders` | Beziehen Sie Punktordner in die Dateisuche ein.                                        | `false`
-`minify`     | Ausgabe-CSS minimieren.                                                                | `true`
-`sourceMaps` | Generieren Sie CSS-Quellkarten.                                                        | `true`
+Name          | Typ             | Beschreibung                                                                           | Standardwert
+--------------|-----------------|----------------------------------------------------------------------------------------|--------------
+`recursive`   | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird. | `true`
+`verbose`     | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                                | `true`
+`dotFolders`  | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                        | `false`
+`minify`      | Boolescher Wert | Ausgabe-CSS minimieren.                                                                | `true`
+`sourceMaps`  | Boolescher Wert | Generieren Sie CSS-Quellkarten.                                                        | `true`
+`ignoreFiles` | Array           | Dateien (nach Namen), die von der Kompilierung ausgeschlossen werden sollen.           | `[]`
 
 #
 
@@ -240,11 +241,12 @@ findSCSS() » Check returned array.
 
 Verfügbare Parameter (und ihre Standardeinstellungen) sind:
 
-Name         | Beschreibung                                                                 | Standardwert
--------------|------------------------------------------------------------------------------|--------------
-`recursive`  | Rekursive Suche nach verschachtelten Dateien im übergebenen suchverzeichnis. | `true`
-`verbose`    | Anmeldung in Konsole/Terminal anzeigen.                                      | `true`
-`dotFolders` | Beziehen Sie Punktordner in die Dateisuche ein.                              | `false`
+Name          | Typ             | Beschreibung                                                                    | Standardwert
+--------------|-----------------|---------------------------------------------------------------------------------|--------------
+`recursive`   | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien im übergebenen suchverzeichnis.    | `true`
+`verbose`     | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                         | `true`
+`dotFolders`  | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                 | `false`
+`ignoreFiles` | Array           | Dateien (nach Namen), die aus den Suchergebnissen ausgeschlossen werden sollen. | `[]`
 
 <br>
 
