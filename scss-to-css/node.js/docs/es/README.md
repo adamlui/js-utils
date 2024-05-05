@@ -132,17 +132,20 @@ $ scss-to-css carpeta_entrada carpeta_salida
 ### Opciones de línea de comando
 
 ```
-Opciones de configuración:
- -n, --dry-run               En realidad, no compile los archivos, solo muestre si se procesarán.
- -d, --include-dotfolders    Incluya carpetas de puntos en la búsqueda de archivos.
- -S, --no-source-maps        Evitar que se generen mapas de origen.
- -M, --no-minify             Deshabilite la minificación del CSS de salida.
- -R, --no-recursion          Deshabilite la búsqueda recursiva de archivos.
- -q, --quiet                 Suprime todos los registros excepto los errores.
+Opciones booleanas:
+ -n, --dry-run                            En realidad, no compile los archivos, solo muestre si se procesarán.
+ -d, --include-dotfolders                 Incluya carpetas de puntos en la búsqueda de archivos.
+ -S, --no-source-maps                     Evitar que se generen mapas de origen.
+ -M, --no-minify                          Deshabilite la minificación del CSS de salida.
+ -R, --no-recursion                       Deshabilite la búsqueda recursiva de archivos.
+ -q, --quiet                              Suprime todos los registros excepto los errores.
+
+Opciones de parámetros:
+ --ignore-files="file1.scss,file2.scss"   Archivos para excluir de la compilación.
 
 Comandos de información:
- -h, --help                  Muestra pantalla de ayuda.
- -v, --version               Mostrar número de versión.
+ -h, --help                               Muestra pantalla de ayuda.
+ -v, --version                            Mostrar número de versión.
 ```
 
 <br>

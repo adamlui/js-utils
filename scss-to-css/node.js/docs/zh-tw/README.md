@@ -132,17 +132,20 @@ $ scss-to-css input_folder output_folder
 ### 命令列選項
 
 ```
-配置選項：
- -n, --dry-run               實際上並不會縮小文件，只是顯示它們是否會被處理。
- -d, --include-dotfolders    在檔案搜尋中包含點資料夾。
- -S, --no-source-maps        防止產生來源映射。
- -M, --no-minify             禁用輸出 CSS 的縮小。
- -R, --no-recursion          停用遞歸檔案搜尋。
- -q, --quiet                 禁止錯誤以外的所有日誌記錄。
+布林選項：
+ -n, --dry-run                            實際上並不會縮小文件，只是顯示它們是否會被處理。
+ -d, --include-dotfolders                 在檔案搜尋中包含點資料夾。
+ -S, --no-source-maps                     防止產生來源映射。
+ -M, --no-minify                          禁用輸出 CSS 的縮小。
+ -R, --no-recursion                       停用遞歸檔案搜尋。
+ -q, --quiet                              禁止錯誤以外的所有日誌記錄。
+
+參數選項：
+ --ignore-files="file1.scss,file2.scss"   要從編譯中排除的檔案。
 
 訊息命令：
- -h, --help                  顯示幫助畫面。
- -v, --version               顯示版本號。
+ -h, --help                               顯示幫助畫面。
+ -v, --version                            顯示版本號。
 ```
 
 <br>

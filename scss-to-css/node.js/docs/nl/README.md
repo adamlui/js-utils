@@ -132,17 +132,20 @@ $ scss-to-css invoer_map uitvoer_map
 ### Commandoregelopties
 
 ```
-Configuratie-opties:
- -n, --dry-run               Compileer de bestanden niet daadwerkelijk, maar laat alleen zien of ze worden verwerkt.
- -d, --include-dotfolders    Puntmappen opnemen in het zoeken naar bestanden.
- -S, --no-source-maps        Voorkom dat bronkaarten worden gegenereerd.
- -M, --no-minify             Schakel verkleining van uitvoer-CSS uit.
- -R, --no-recursion          Schakel recursief zoeken naar bestanden uit.
- -q, --quiet                 Onderdruk alle logboekregistratie, behalve fouten.
+Booleaanse opties:
+ -n, --dry-run                            Compileer de bestanden niet daadwerkelijk, maar laat alleen zien of ze worden verwerkt.
+ -d, --include-dotfolders                 Puntmappen opnemen in het zoeken naar bestanden.
+ -S, --no-source-maps                     Voorkom dat bronkaarten worden gegenereerd.
+ -M, --no-minify                          Schakel verkleining van uitvoer-CSS uit.
+ -R, --no-recursion                       Schakel recursief zoeken naar bestanden uit.
+ -q, --quiet                              Onderdruk alle logboekregistratie, behalve fouten.
+
+Parameteropties:
+ --ignore-files="file1.scss,file2.scss"   Bestanden die moeten worden uitgesloten van compilatie.
 
 Info-opdrachten:
- -h, --help                  Helpscherm weergeven.
- -v, --version               Versienummer weergeven.
+ -h, --help                               Helpscherm weergeven.
+ -v, --version                            Versienummer weergeven.
 ```
 
 <br>

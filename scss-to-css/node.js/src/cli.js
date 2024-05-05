@@ -21,31 +21,44 @@ const nc = '\x1b[0m',    // no color
 // Load FLAG settings
 const config = {};
 const reArgs = {
-    'dryRun': /^--?(?:n|dry-?run)$/,
-    'includeDotFolders': /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
-    'noSourceMaps': /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?|so?u?rce?-?maps?=(?:false|0))$/,
-    'noRecursion': /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
-    'noMinify': /^--?(?:M|(?:disable|no)-?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/,
-    'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/,
-    'help': /^--?h(?:elp)?$/,
-    'version': /^--?ve?r?s?i?o?n?$/
+    flags: {
+        'dryRun': /^--?(?:n|dry-?run)$/,
+        'includeDotFolders': /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
+        'noSourceMaps': /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?|so?u?rce?-?maps?=(?:false|0))$/,
+        'noRecursion': /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
+        'noMinify': /^--?(?:M|(?:disable|no)-?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/,
+        'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
+    },
+    paramOptions: {
+        'ignoreFiles': /^--?(?:ignore|skip|exclude)(?:d?-?files?)?(?:=.*|$)/
+    },
+    infoCmds: { 'help': /^--?h(?:elp)?$/,'version': /^--?ve?r?s?i?o?n?$/ }
 };
 process.argv.forEach(arg => {
     if (!arg.startsWith('-')) return;
-    const matchedFlag = Object.keys(reArgs).find(flag => reArgs[flag].test(arg));
+    const matchedFlag = Object.keys(reArgs.flags).find(flag => reArgs.flags[flag].test(arg)),
+          matchedParamOption = Object.keys(reArgs.paramOptions).find(option => reArgs.paramOptions[option].test(arg)),
+          matchedInfoCmd = Object.keys(reArgs.infoCmds).find(cmd => reArgs.infoCmds[cmd].test(arg));
     if (matchedFlag) config[matchedFlag] = true;
-    else {
+    else if (matchedParamOption) {
+        if (!/=.+/.test(arg)) {
+            console.error(`\n${br}ERROR: Arg [--${arg.replace(/-/g, '')}] requires '=' followed by a value.${nc}`);
+            printHelpCmdAndDocURL(); process.exit(1);
+        }
+        const value = arg.split('=')[1];
+        config[matchedParamOption] = parseInt(value) || value;
+    } else if (!matchedInfoCmd) {
         console.error(`\n${br}ERROR: Arg [${arg}] not recognized.${nc}`);
         console.info(`\n${by}Valid arguments are below.${nc}`);
-        printHelpSections(['configOptions', 'infoCmds']);
+        printHelpSections(['flags', 'paramOptions', 'infoCmds']);
         process.exit(1);
 }});
 
 // Show HELP screen if -h or --help passed
-if (process.argv.some(arg => reArgs.help.test(arg))) printHelpSections();
+if (process.argv.some(arg => reArgs.infoCmds.help.test(arg))) printHelpSections();
 
 // Show VERSION number if -v or --version passed
-else if (process.argv.some(arg => reArgs.version.test(arg))) {
+else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
     const globalVer = execSync(`npm view ${pkgName} version`).toString().trim() || 'none';
     let localVer, currentDir = process.cwd();
     while (currentDir != '/') {
@@ -82,7 +95,8 @@ else if (process.argv.some(arg => reArgs.version.test(arg))) {
 
     // Find all eligible JavaScript files or arg-passed file
     const scssFiles = inputArg.endsWith('.scss') ? [inputPath]
-        : scssToCSS.findSCSS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode });
+        : scssToCSS.findSCSS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode,
+                                          ignoreFiles: (config.ignoreFiles?.split(',') ?? []).map(file => file.trim()) });
 
     if (config.dryRun) { // -n or --dry-run passed
         if (scssFiles.length > 0) { // print files to be processed
@@ -140,38 +154,42 @@ else if (process.argv.some(arg => reArgs.version.test(arg))) {
 
 // Define LOGGING functions
 
-function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'configOptions', 'infoCmds']) {
+function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
     const appPrefix = `\x1b[106m\x1b[30m ${pkgName.replace(/^@[^/]+\//, '')} ${nc} `; // bright teal bg + black fg
     const helpSections = {
         'header': [`\n├ ${ appPrefix + copyright }`, `${ appPrefix }Source: ${srcURL}`],
         'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}» ${bg + cmdFormat + nc}`],
         'pathArgs': [
             `\n${bw}o Path arguments:${nc}`,
-            ' [inputPath]                 '
+            ' [inputPath]                             '
                 + 'Path to SCSS file or directory containing SCSS files to be compiled,'
                 + ' relative to the current working directory.',
-            ' [outputPath]                '
+            ' [outputPath]                            '
                 + 'Path to file or directory where CSS + sourcemap files will be stored,'
                 + ' relative to original file location (if not provided, css/ is used).'
         ],
-        'configOptions': [
-            `\n${bw}o Config options:${nc}`,
-            ' -n, --dry-run               Don\'t actually compile the file(s),'
-                                        + ' just show if they will be processed.',
-            ' -d, --include-dotfolders    Include dotfolders in file search.',
-            ' -S, --no-source-maps        Prevent source maps from being generated.',
-            ' -M, --no-minify             Disable minification of output CSS.',
-            ' -R, --no-recursion          Disable recursive file searching.',
-            ' -q, --quiet                 Suppress all logging except errors.'
+        'flags': [
+            `\n${bw}o Boolean options:${nc}`,
+            ' -n, --dry-run                           Don\'t actually compile the file(s),'
+                                                    + ' just show if they will be processed.',
+            ' -d, --include-dotfolders                Include dotfolders in file search.',
+            ' -S, --no-source-maps                    Prevent source maps from being generated.',
+            ' -M, --no-minify                         Disable minification of output CSS.',
+            ' -R, --no-recursion                      Disable recursive file searching.',
+            ' -q, --quiet                             Suppress all logging except errors.'
+        ],
+        'paramOptions': [
+            `\n${bw}o Parameter options:${nc}`,
+            '--ignore-files="file1.scss,file2.scss"   Files to exclude from compilation.'
         ],
         'infoCmds': [
             `\n${bw}o Info commands:${nc}`,
-            ' -h, --help                  Display help screen.',
-            ' -v, --version               Show version number.'
+            ' -h, --help                              Display help screen.',
+            ' -v, --version                           Show version number.'
         ]
     };
     includeSections.forEach(section => { // print valid arg elems
-        helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)); });
+        helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 41)); });
     console.info('\nFor more help, please visit: ' + bw + docURL + nc);
 
     function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines

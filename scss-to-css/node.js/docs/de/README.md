@@ -132,17 +132,20 @@ $ scss-to-css eingabeordner ausgabeordner
 ### Befehlszeilenoptionen
 
 ```
-Konfigurationsoptionen:
- -n, --dry-run               Kompilieren Sie die Datei(en) nicht wirklich, sondern zeigen Sie nur an, ob sie verarbeitet werden.
- -d, --include-dotfolders    Beziehen Sie Punktordner in die Dateisuche ein.
- -S, --no-source-maps        Verhindern Sie, dass Quellkarten generiert werden.
- -M, --no-minify             Deaktivieren Sie die Minimierung des Ausgabe-CSS.
- -R, --no-recursion          Deaktivieren Sie die rekursive Dateisuche.
- -q, --quiet                 Unterdrücken Sie alle Protokolle außer Fehlern.
+Boolesche Optionen:
+ -n, --dry-run                            Kompilieren Sie die Datei(en) nicht wirklich, sondern zeigen Sie nur an, ob sie verarbeitet werden.
+ -d, --include-dotfolders                 Beziehen Sie Punktordner in die Dateisuche ein.
+ -S, --no-source-maps                     Verhindern Sie, dass Quellkarten generiert werden.
+ -M, --no-minify                          Deaktivieren Sie die Minimierung des Ausgabe-CSS.
+ -R, --no-recursion                       Deaktivieren Sie die rekursive Dateisuche.
+ -q, --quiet                              Unterdrücken Sie alle Protokolle außer Fehlern.
+
+Parameteroptionen:
+ --ignore-files="file1.scss,file2.scss"   Dateien, die von der Kompilierung ausgeschlossen werden sollen.
 
 Info-Befehle:
- -h, --help                  Hilfebildschirm anzeigen.
- -v, --version               Versionsnummer anzeigen.
+ -h, --help                               Hilfebildschirm anzeigen.
+ -v, --version                            Versionsnummer anzeigen.
 ```
 
 <br>
