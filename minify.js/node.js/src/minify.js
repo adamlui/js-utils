@@ -20,7 +20,8 @@ function findJS(searchDir, options = {}) {
         recursive: true,   // recursively search for nested files in searchDir passed
         verbose: true,     // enable logging
         dotFolders: false, // include dotfolders in file search
-        dotFiles: false    // include dotfiles in file search
+        dotFiles: false,   // include dotfiles in file search
+        ignoreFiles: []    // files to exclude from search results
     };
 
     // Validate searchDir
@@ -47,20 +48,26 @@ function findJS(searchDir, options = {}) {
         console.info('findJS() » Searching for unminified JS files...'); }
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file);
-        if (fs.statSync(filePath).isDirectory() && file != 'node_modules'
-            && (options.dotFolders || !file.startsWith('.')) && options.recursive)
-                jsFiles.push( // recursively find unminified JS in eligible dir
-                    ...findJS(filePath, { ...options, isRecursing: true }));
-        else if (/\.js(?<!\.min\.js)$/.test(file)
-            && (options.dotFiles || !file.startsWith('.')))
+        if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
+            && options.recursive // only proceed if recursion enabled
+            && (options.dotFolders || !file.startsWith('.'))) // exclude dotfolders if prohibited
+                {             const nextOptions = { ...options, isRecursing: true }; // Create a new options object with isRecursing set to true
+            jsFiles.push(
+                ...findJS(filePath, nextOptions) // Recursive call with updated options
+            ); }
+        else if (/\.js(?<!\.min\.js)$/.test(file) // minified JS file found
+            && (options.dotFiles || !file.startsWith('.')) // exclude dotfiles if prohibited
+            && !options.ignoreFiles.includes(file)) // exclude ignored files
                 jsFiles.push(filePath); // store eligible unminified JS file for returning
+        else if (options.verbose && options.ignoreFiles.includes(file))
+            console.info(`findJS() » ** ${file} ignored due to [options.ignoreFiles]`);
     });
 
     // Log/return final result
     if (!options.isRecursing && options.verbose) {
-            console.info('findJS() » Search complete! '
-              + ( jsFiles.length == 0 ? 'No' : jsFiles.length )
-              + ` file${ jsFiles.length == 0 || jsFiles.length > 1 ? 's' : '' } found.`);
+        console.info('findJS() » Search complete! '
+            + ( jsFiles.length == 0 ? 'No' : jsFiles.length )
+            + ` file${ jsFiles.length == 0 || jsFiles.length > 1 ? 's' : '' } found.`);
         if (findJS.caller.name != 'minify' && !process.argv.some(arg => arg.includes('gulp')) &&
             !/cli(?:\.min)?\.js$/.test(require.main.filename))
                 console.info('findJS() » Check returned array.');
@@ -78,6 +85,7 @@ function minify(input, options = {}) {
         verbose: true,     // enable logging
         dotFolders: false, // include dotfolders in file search
         dotFiles: false,   // include dotfiles in file search
+        ignoreFiles: [],   // files to exclude from minification
         mangle: true,      // shorten var names (typically to one character)
         comment: ''        // prepend comment to code
     };
@@ -108,7 +116,8 @@ function minify(input, options = {}) {
                      error: minifyResult.error };
         } else { // dir path passed
             const minifyResult = findJS(input, { recursive: options.recursive, verbose: options.verbose,
-                                                 dotFolders: options.dotFolders, dotFiles: options.dotFiles 
+                                                 dotFolders: options.dotFolders, dotFiles: options.dotFiles,
+                                                 ignoreFiles: options.ignoreFiles 
                 })?.map(jsPath => { // minify found JS files
                     if (options.verbose) console.info(`minify() » Minifying ${jsPath}...`);
                     const srcCode = fs.readFileSync(jsPath, 'utf8');
@@ -157,7 +166,8 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
         .replace(/\n\s*/g, ' '); // condense to single line
     const strValidOptions = Object.keys(defaultOptions).join(', '),
           booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
-          integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]));
+          integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key])),
+          arrayOptions = Object.keys(defaultOptions).filter(key => Array.isArray(defaultOptions[key]));
 
     // Init log vars
     let logPrefix = 'validateOptions() » ';
@@ -204,6 +214,13 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
             options[key] = parseInt(options[key], 10);
             if (isNaN(options[key]) || options[key] < 1) {
                 console.error(`${ logPrefix }ERROR: [${key}] option can only be an integer > 0.`);
+                printDocURL(); return false;
+            }
+        } else if (arrayOptions.includes(key)) {
+            if (typeof options[key] == 'string' && !options[key].includes(','))
+                options[key] = [options[key]]; // convert comma-less string to array
+            else if (!Array.isArray(options[key])) {
+                console.error(`${logPrefix}ERROR: [${key}] option can only be an array.`);
                 printDocURL(); return false;
             }
         }

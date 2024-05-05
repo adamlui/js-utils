@@ -203,14 +203,15 @@ minifyJS.minify(entrée, { dotFiles: true });
 
 Les paramètres disponibles (et leurs paramètres par défaut) sont:
 
-Nom          | Taper   | Description                                                                              | Valeur par défaut
--------------|---------|------------------------------------------------------------------------------------------|-------------------
-`recursive`  | Boolean | Rechercher récursivement les fichiers imbriqués si le chemin du répertoire est transmis. | `true`
-`verbose`    | Boolean | Afficher la connexion dans la console/terminal.                                          | `true`
-`dotFolders` | Boolean | Inclure les dossiers cachés dans la recherche de fichiers.                               | `false`
-`dotFiles`   | Boolean | Incluez les fichiers cachés dans la recherche de fichiers.                               | `false`
-`mangle`     | Boolean | Raccourcissez les noms de variables (généralement à un caractère).                       | `true`
-`comment`    | String  | Commentaire à ajouter au code minifié. Séparez par ligne en utilisant '\n'.              | `''`
+Nom           | Taper   | Description                                                                              | Valeur par défaut
+--------------|---------|------------------------------------------------------------------------------------------|-------------------
+`recursive`   | Boolean | Rechercher récursivement les fichiers imbriqués si le chemin du répertoire est transmis. | `true`
+`verbose`     | Boolean | Afficher la connexion dans la console/terminal.                                          | `true`
+`dotFolders`  | Boolean | Inclure les dossiers cachés dans la recherche de fichiers.                               | `false`
+`dotFiles`    | Boolean | Incluez les fichiers cachés dans la recherche de fichiers.                               | `false`
+`mangle`      | Boolean | Raccourcissez les noms de variables (généralement à un caractère).                       | `true`
+`ignoreFiles` | Tableau | Fichiers à exclure de la minification.                                                   | `[]`
+`comment`     | String  | Commentaire à ajouter au code minifié. Séparez par ligne en utilisant '\n'.              | `''`
 
 #
 
@@ -239,12 +240,13 @@ findJS() » Check returned array.
 
 Les paramètres disponibles (et leurs paramètres par défaut) sont:
 
-Nom          | Taper   | Description                                                           | Valeur par défaut
--------------|---------|-----------------------------------------------------------------------|-------------------
-`recursive`  | Boolean | Recherche récursive des fichiers imbriqués dans repRecherche réussie. | `true`
-`verbose`    | Boolean | Afficher la connexion dans la console/terminal.                       | `true`
-`dotFolders` | Boolean | Inclure les dossiers cachés dans la recherche de fichiers.            | `false`
-`dotFiles`   | Boolean | Incluez les fichiers cachés dans la recherche de fichiers.            | `false`
+Nom           | Taper   | Description                                                           | Valeur par défaut
+--------------|---------|-----------------------------------------------------------------------|-------------------
+`recursive`   | Boolean | Recherche récursive des fichiers imbriqués dans repRecherche réussie. | `true`
+`verbose`     | Boolean | Afficher la connexion dans la console/terminal.                       | `true`
+`dotFolders`  | Boolean | Inclure les dossiers cachés dans la recherche de fichiers.            | `false`
+`dotFiles`    | Boolean | Incluez les fichiers cachés dans la recherche de fichiers.            | `false`
+`ignoreFiles` | Tableau | Fichiers à exclure des résultats de recherche.                        | `[]`
 
 <br>
 

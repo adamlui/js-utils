@@ -203,14 +203,15 @@ minifyJS.minify(entrada, { dotFiles: true });
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:
 
-Nombre       | Tipo     | Descripción                                                                   | Valor por defecto
--------------|----------|-------------------------------------------------------------------------------|-------------------
-`recursive`  | Booleano | Busque recursivamente archivos anidados si se pasa la ruta del directorio.    | `true`
-`verbose`    | Booleano | Mostrar registros en la consola/terminal.                                     | `true`
-`dotFolders` | Booleano | Incluya carpetas de puntos en la búsqueda de archivos.                        | `false`
-`dotFiles`   | Booleano | Incluya archivos de puntos en la búsqueda de archivos.                        | `false`
-`mangle`     | Booleano | Acorte los nombres de las variables (normalmente a un carácter).              | `true`
-`comment`    | Cadena   | Comentario para anteponer al código minimizado. Separe por línea usando '\n'. | `''`
+Nombre        | Tipo      | Descripción                                                                   | Valor por defecto
+--------------|-----------|-------------------------------------------------------------------------------|-------------------
+`recursive`   | Booleano  | Busque recursivamente archivos anidados si se pasa la ruta del directorio.    | `true`
+`verbose`     | Booleano  | Mostrar registros en la consola/terminal.                                     | `true`
+`dotFolders`  | Booleano  | Incluya carpetas de puntos en la búsqueda de archivos.                        | `false`
+`dotFiles`    | Booleano  | Incluya archivos de puntos en la búsqueda de archivos.                        | `false`
+`mangle`      | Booleano  | Acorte los nombres de las variables (normalmente a un carácter).              | `true`
+`ignoreFiles` | Formación | Archivos para excluir de la minificación.                                     | `[]`
+`comment`     | Cadena    | Comentario para anteponer al código minimizado. Separe por línea usando '\n'. | `''`
 
 #
 
@@ -239,12 +240,13 @@ findJS() » Check returned array.
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:
 
-Nombre       | Tipo     | Descripción                                                      | Valor por defecto
--------------|----------|------------------------------------------------------------------|-------------------
-`recursive`  | Booleano | Se pasó la búsqueda recursiva de archivos anidados en searchDir. | `true`
-`verbose`    | Booleano | Mostrar registros en la consola/terminal.                        | `true`
-`dotFolders` | Booleano | Incluya carpetas de puntos en la búsqueda de archivos.           | `false`
-`dotFiles`   | Booleano | Incluya archivos de puntos en la búsqueda de archivos.           | `false`
+Nombre        | Tipo      | Descripción                                                      | Valor por defecto
+--------------|-----------|------------------------------------------------------------------|-------------------
+`recursive`   | Booleano  | Se pasó la búsqueda recursiva de archivos anidados en searchDir. | `true`
+`verbose`     | Booleano  | Mostrar registros en la consola/terminal.                        | `true`
+`dotFolders`  | Booleano  | Incluya carpetas de puntos en la búsqueda de archivos.           | `false`
+`dotFiles`    | Booleano  | Incluya archivos de puntos en la búsqueda de archivos.           | `false`
+`ignoreFiles` | Formación | Archivos para excluir de los resultados de búsqueda.             | `[]`
 
 <br>
 
