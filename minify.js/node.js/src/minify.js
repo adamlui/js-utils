@@ -51,10 +51,8 @@ function findJS(searchDir, options = {}) {
         if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
             && options.recursive // only proceed if recursion enabled
             && (options.dotFolders || !file.startsWith('.'))) // exclude dotfolders if prohibited
-                {             const nextOptions = { ...options, isRecursing: true }; // Create a new options object with isRecursing set to true
-            jsFiles.push(
-                ...findJS(filePath, nextOptions) // Recursive call with updated options
-            ); }
+                jsFiles.push( // recursively find unminified JS in eligible dir
+                    ...findJS(filePath, { ...options, isRecursing: true }));
         else if (/\.js(?<!\.min\.js)$/.test(file) // minified JS file found
             && (options.dotFiles || !file.startsWith('.')) // exclude dotfiles if prohibited
             && !options.ignoreFiles.includes(file)) // exclude ignored files
