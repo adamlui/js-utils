@@ -37,8 +37,8 @@ const reArgs = {
 };
 process.argv.forEach(arg => {
     if (!arg.startsWith('-')) return;
-    const matchedParamOption = Object.keys(reArgs.paramOptions).find(option => reArgs.paramOptions[option].test(arg)),
-          matchedFlag = Object.keys(reArgs.flags).find(flag => reArgs.flags[flag].test(arg)),
+    const matchedFlag = Object.keys(reArgs.flags).find(flag => reArgs.flags[flag].test(arg)),
+          matchedParamOption = Object.keys(reArgs.paramOptions).find(option => reArgs.paramOptions[option].test(arg)),
           matchedInfoCmd = Object.keys(reArgs.infoCmds).find(cmd => reArgs.infoCmds[cmd].test(arg));
     if (matchedFlag) config[matchedFlag] = true;
     else if (matchedParamOption) {
