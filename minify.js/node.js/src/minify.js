@@ -105,13 +105,13 @@ function minify(input, options = {}) {
     const minifyOptions = { mangle: options.mangle };
     if (fs.existsSync(input)) { // minify based on path arg
         if (input.endsWith('.js')) { // file path passed
-            if (options.verbose) console.info(`minify() » Minifying ${input}...`);
+            if (options.verbose) console.info(`minify() » ** Minifying ${input}...`);
             let minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions);
             if (options.comment) minifyResult.code = prependComment(minifyResult.code);
             if (minifyResult.error) console.error(`minify() » ERROR: ${minifyResult.error.message}`);
             else if (options.verbose && !process.argv.some(arg => arg.includes('gulp')) &&
                 !/cli(?:\.min)?\.js$/.test(require.main.filename))
-                    console.info('minify() » Minification complete. Check returned object.');
+                    console.info('minify() » Minification complete! Check returned object.');
             return { code: minifyResult.code, srcPath: path.resolve(process.cwd(), input),
                      error: minifyResult.error };
         } else { // dir path passed
@@ -119,7 +119,7 @@ function minify(input, options = {}) {
                                                  dotFolders: options.dotFolders, dotFiles: options.dotFiles,
                                                  ignoreFiles: options.ignoreFiles 
                 })?.map(jsPath => { // minify found JS files
-                    if (options.verbose) console.info(`minify() » Minifying ${jsPath}...`);
+                    if (options.verbose) console.info(`minify() » ** Minifying ${jsPath}...`);
                     const srcCode = fs.readFileSync(jsPath, 'utf8');
                     let minifyResult = uglifyJS.minify(srcCode, minifyOptions);
                     if (options.comment) minifyResult.code = prependComment(minifyResult.code);
@@ -128,7 +128,7 @@ function minify(input, options = {}) {
                 }).filter(data => !data.error); // filter out failed minifications
             if (options.verbose) { 
                 if (minifyResult.length > 0) console.info(
-                    'minify() » Minification complete. Check returned object.');
+                    'minify() » Minification complete! Check returned object.');
                 else console.info(
                     'minify() » No unminified JavaScript files processed.');
             }
@@ -136,12 +136,12 @@ function minify(input, options = {}) {
         }
     } else { // minify based on src code arg
         if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
-            console.info('minify() » Minifying passed source code...');
+            console.info('minify() » ** Minifying passed source code...');
         let minifyResult = uglifyJS.minify(input, minifyOptions);
         if (options.comment) minifyResult.code = prependComment(minifyResult.code);
         if (minifyResult.error) console.error(`minify() » ERROR: ${minifyResult.error.message}`);
         else if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
-            console.info('minify() » Minification complete. Check returned object.');
+            console.info('minify() » Minification complete! Check returned object.');
         return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error };
     }
 
