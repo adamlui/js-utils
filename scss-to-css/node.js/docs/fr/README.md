@@ -216,6 +216,7 @@ Nom           | Taper   | Description                                           
 `minify`      | Booléen | Réduire la sortie CSS.                                                                   | `true`
 `sourceMaps`  | Booléen | Générer des cartes sources CSS.                                                          | `true`
 `ignoreFiles` | Tableau | Fichiers (par nom) à exclure de la compilation.                                          | `[]`
+`comment`     | Chaîne  | Commentaire à ajouter au CSS compilé. Séparez par ligne en utilisant '\n'.               | `''`
 
 #
 

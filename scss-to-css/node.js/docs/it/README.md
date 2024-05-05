@@ -216,6 +216,7 @@ Nome          | Tipo     | Descrizione                                          
 `minify`      | Booleano | Minimizza il CSS di output.                                                       | `true`
 `sourceMaps`  | Booleano | Genera mappe di origine CSS.                                                      | `true`
 `ignoreFiles` | Vettore  | File (per nome) da escludere dalla compilazione.                                  | `[]`
+`comment`     | Stringa  | Commento da anteporre al CSS compilato. Separare per riga utilizzando '\n'.       | `''`
 
 #
 

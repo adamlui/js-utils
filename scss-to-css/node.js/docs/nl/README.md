@@ -208,14 +208,15 @@ scssToCSS.compile(invoermap, { minify: false });
 
 Beschikbare parameters (en hun standaardinstellingen) zijn:
 
-Naam          | Type      | Beschrijving                                                         | Standaardwaarde
---------------|-----------|----------------------------------------------------------------------|-----------------
-`recursive`   | Booleaans | Zoek recursief naar geneste bestanden als het mappad is doorgegeven. | `true`
-`verbose`     | Booleaans | Toon inloggen op console/terminal.                                   | `true`
-`dotFolders`  | Booleaans | Puntmappen opnemen in het zoeken naar bestanden.                     | `false`
-`minify`      | Booleaans | Verklein de uitvoer-CSS.                                             | `true`
-`sourceMaps`  | Booleaans | Genereer CSS-bronkaarten.                                            | `true`
-`ignoreFiles` | Array     | Bestanden (op naam) die moeten worden uitgesloten van compilatie.    | `[]`
+Naam          | Type       | Beschrijving                                                                     | Standaardwaarde
+--------------|------------|----------------------------------------------------------------------------------|-----------------
+`recursive`   | Booleaans  | Zoek recursief naar geneste bestanden als het mappad is doorgegeven.             | `true`
+`verbose`     | Booleaans  | Toon inloggen op console/terminal.                                               | `true`
+`dotFolders`  | Booleaans  | Puntmappen opnemen in het zoeken naar bestanden.                                 | `false`
+`minify`      | Booleaans  | Verklein de uitvoer-CSS.                                                         | `true`
+`sourceMaps`  | Booleaans  | Genereer CSS-bronkaarten.                                                        | `true`
+`ignoreFiles` | Array      | Bestanden (op naam) die moeten worden uitgesloten van compilatie.                | `[]`
+`comment`     | Tekenreeks | Commentaar om toe te voegen aan de gecompileerde CSS. Scheid per regel met '\n'. | `''`
 
 #
 

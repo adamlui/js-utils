@@ -216,6 +216,7 @@ Name          | Typ             | Beschreibung                                  
 `minify`      | Boolescher Wert | Ausgabe-CSS minimieren.                                                                | `true`
 `sourceMaps`  | Boolescher Wert | Generieren Sie CSS-Quellkarten.                                                        | `true`
 `ignoreFiles` | Array           | Dateien (nach Namen), die von der Kompilierung ausgeschlossen werden sollen.           | `[]`
+`comment`     | Zeichenfolge    | Kommentar, der dem kompilierten CSS vorangestellt wird. Mit „\n“ zeilenweise trennen.  | `''`
 
 #
 

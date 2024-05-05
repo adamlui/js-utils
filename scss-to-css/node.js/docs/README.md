@@ -212,14 +212,15 @@ scssToCSS.compile(inputDir, { minify: false });
 
 Available parameters (and their default settings) are:
 
-Name          | Type    | Desciption                                              | Default value
---------------|---------|---------------------------------------------------------|---------------
-`recursive`   | Boolean | Recursively search for nested files if dir path passed. | `true`
-`verbose`     | Boolean | Show logging in console/terminal.                       | `true`
-`dotFolders`  | Boolean | Include dotfolders in file search.                      | `false`
-`minify`      | Boolean | Minify output CSS.                                      | `true`
-`sourceMaps`  | Boolean | Generate CSS source maps.                               | `true`
-`ignoreFiles` | Array   | Files (by name) to exclude from compilation.            | `[]`
+Name          | Type    | Desciption                                                       | Default value
+--------------|---------|------------------------------------------------------------------|---------------
+`recursive`   | Boolean | Recursively search for nested files if dir path passed.          | `true`
+`verbose`     | Boolean | Show logging in console/terminal.                                | `true`
+`dotFolders`  | Boolean | Include dotfolders in file search.                               | `false`
+`minify`      | Boolean | Minify output CSS.                                               | `true`
+`sourceMaps`  | Boolean | Generate CSS source maps.                                        | `true`
+`ignoreFiles` | Array   | Files (by name) to exclude from compilation.                     | `[]`
+`comment`     | String  | Comment to prepend to compiled CSS. Separate by line using '\n'. | `''`
 
 #
 

@@ -216,6 +216,7 @@ Nome          | Tipo      | Descrição                                         
 `minify`      | Boleano   | Minimizar CSS de saída.                                                               | `true`
 `sourceMaps`  | Boleano   | Gerar mapas de origem CSS.                                                            | `true`
 `ignoreFiles` | Variedade | Arquivos (por nome) a serem excluídos da compilação.                                  | `[]`
+`comment`     | Corda     | Comentário para preceder o CSS compilado. Separe por linha usando '\n'.               | `''`
 
 #
 
