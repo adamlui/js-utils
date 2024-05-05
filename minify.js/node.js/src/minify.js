@@ -104,7 +104,7 @@ function minify(input, options = {}) {
     if (fs.existsSync(input)) { // minify based on path arg
         if (input.endsWith('.js')) { // file path passed
             if (options.verbose) console.info(`minify() » ** Minifying ${input}...`);
-            let minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions);
+            const minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions);
             if (options.comment) minifyResult.code = prependComment(minifyResult.code);
             if (minifyResult.error) console.error(`minify() » ERROR: ${minifyResult.error.message}`);
             else if (options.verbose && !process.argv.some(arg => arg.includes('gulp')) &&
@@ -119,7 +119,7 @@ function minify(input, options = {}) {
                 })?.map(jsPath => { // minify found JS files
                     if (options.verbose) console.info(`minify() » ** Minifying ${jsPath}...`);
                     const srcCode = fs.readFileSync(jsPath, 'utf8');
-                    let minifyResult = uglifyJS.minify(srcCode, minifyOptions);
+                    const minifyResult = uglifyJS.minify(srcCode, minifyOptions);
                     if (options.comment) minifyResult.code = prependComment(minifyResult.code);
                     if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
                     return { code: minifyResult.code, srcPath: jsPath, error: minifyResult.error };
@@ -135,7 +135,7 @@ function minify(input, options = {}) {
     } else { // minify based on src code arg
         if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
             console.info('minify() » ** Minifying passed source code...');
-        let minifyResult = uglifyJS.minify(input, minifyOptions);
+        const minifyResult = uglifyJS.minify(input, minifyOptions);
         if (options.comment) minifyResult.code = prependComment(minifyResult.code);
         if (minifyResult.error) console.error(`minify() » ERROR: ${minifyResult.error.message}`);
         else if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
