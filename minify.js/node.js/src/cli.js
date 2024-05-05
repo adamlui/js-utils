@@ -97,7 +97,7 @@ else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
     // Find all eligible JavaScript files or arg-passed file
     const unminnedJSfiles = inputArg.endsWith('.js') ? [inputPath]
         : minifyJS.findJS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode,
-                                       ignoreFiles: config.ignoreFiles?.split(',') ?? [] });
+                                       ignoreFiles: (config.ignoreFiles?.split(',') ?? []).map(file => file.trim()) });
 
     if (config.dryRun) { // -n or --dry-run passed
         if (unminnedJSfiles.length > 0) { // print files to be processed
