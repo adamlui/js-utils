@@ -61,7 +61,7 @@ bash utils/build.sh
 # Update jsDelivr URL for global messages w/ commit hash
 echo -e "${by}\nUpdating jsDelivr URL for global messages w/ commit hash...${nc}"
 BUMP_HASH=$(git rev-parse HEAD)
-if sed -i -E "s|(cdn\.jsdelivr\.net\/gh\/[^/]+\/[^@/]+)[^/]*|\1@$BUMP_HASH|" dist/cli.min.js
+if sed -i -E "s|(cdn\.jsdelivr\.net\/gh\/[^/]+\/[^@/]+)[^/]*|\1@$BUMP_HASH|g" dist/cli.min.js
     then echo -e "${bw}$BUMP_HASH${nc}"
     else echo "No jsDelivr URLs found in built files"
 fi
