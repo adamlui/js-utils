@@ -2,8 +2,8 @@
 
 # This script automates:
 # >>> bump versions in manifests + READMEs >>> commit bumps to Git
-# >>> build minified JS to dist/ >>> update jsDelivr URLs in cli.min.js >>> commit build to Git
-# >>> push changes to GitHub >>> publish to npm (optional)
+# >>> build minified JS to dist/ >>> update jsDelivr URLs for GH assets in cli.min.js
+# >>> commit build to Git >>> push all changes to GitHub >>> publish to npm (optional)
 
 # Init UI colors
 nc="\033[0m"    # no color
@@ -58,12 +58,12 @@ git commit -n -m "Bumped $PACKAGE_NAME versions to $NEW_VERSION"
 echo -e "${by}\nBuilding minified JS...\n${nc}"
 bash utils/build.sh
 
-# Update jsDelivr URL for global messages w/ commit hash
-echo -e "${by}\nUpdating jsDelivr URL for global messages w/ commit hash...${nc}"
+# Update jsDelivr URLs for GitHub assets w/ commit hash
+echo -e "${by}\nUpdating jsDelivr URLs for GitHub assets w/ commit hash...${nc}"
 BUMP_HASH=$(git rev-parse HEAD)
 if sed -i -E "s|(cdn\.jsdelivr\.net\/gh\/[^/]+\/[^@/]+)[^/]*|\1@$BUMP_HASH|g" dist/cli.min.js
     then echo -e "${bw}$BUMP_HASH${nc}"
-    else echo "No jsDelivr URLs found in built files"
+    else echo "No jsDelivr URLs for GH assets found in built files"
 fi
 
 # Commit build to Git
@@ -71,7 +71,7 @@ echo -e "${by}\nCommitting build to Git...\n${nc}"
 git add ./dist/*.js
 git commit -n -m "Built $PACKAGE_NAME v$NEW_VERSION"
 
-# Push changes to GiHub
+# Push all changes to GiHub
 echo -e "${by}\nPushing to GitHub...\n${nc}"
 git push
 
