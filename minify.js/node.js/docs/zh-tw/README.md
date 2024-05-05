@@ -210,7 +210,7 @@ minifyJS.minify(input, { dotFiles: true });
 `dotFolders`  | 布林值 | 在文件搜尋中包含點資料夾。                        | `false`
 `dotFiles`    | 布林值 | 在文件搜尋中包含點文件。                          | `false`
 `mangle`      | 布林值 | 縮短變數名稱（通常為一個字元）。                   | `true`
-`ignoreFiles` | 大批   | 要從縮小中排除的檔案。                            | `[]`
+`ignoreFiles` | 大批   | 要從縮小中排除的檔案（按名稱）。                   | `[]`
 `comment`     | 細繩   | 添加註釋以添加到縮小程式碼之前。 使用“\n”按行分隔。 | `''`
 
 #
@@ -246,7 +246,7 @@ findJS() » Check returned array.
 `verbose`     | 布林值 | 在控制台/終端機中顯示日誌記錄。          | `true`
 `dotFolders`  | 布林值 | 在文件搜尋中包含點資料夾。               | `false`
 `dotFiles`    | 布林值 | 在文件搜尋中包含點文件。                 | `false`
-`ignoreFiles` | 大批   | 要從搜尋結果中排除的文件。               | `[]`
+`ignoreFiles` | 大批   | 要從搜尋結果中排除的檔案（按名稱）。      | `[]`
 
 <br>
 

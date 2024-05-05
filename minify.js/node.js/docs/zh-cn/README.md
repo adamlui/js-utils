@@ -210,7 +210,7 @@ minifyJS.minify(input, { dotFiles: true });
 `dotFolders`  | 布尔值 | 在文件搜索中包括点文件夹。                      | `false`
 `dotFiles`    | 布尔值 | 在文件搜索中包含点文件。                        | `false`
 `mangle`      | 布尔值 | 缩短变量名称（通常为一个字符）。                 | `true`
-`ignoreFiles` | 大批   | 要从缩小中排除的文件。                          | `[]`
+`ignoreFiles` | 大批   | 要从缩小中排除的文件（按名称）。                 | `[]`
 `comment`     | 细绳   | 添加注释以添加到缩小代码之前。 使用“\n”按行分隔。 | `''`
 
 #
@@ -246,7 +246,7 @@ findJS() » Check returned array.
 `verbose`     | 布尔值 | 在控制台/终端中显示日志记录。           | `true`
 `dotFolders`  | 布尔值 | 在文件搜索中包括点文件夹。              | `false`
 `dotFiles`    | 布尔值 | 在文件搜索中包含点文件。                | `false`
-`ignoreFiles` | 大批   | 要从搜索结果中排除的文件。              | `[]`
+`ignoreFiles` | 大批   | 要从搜索结果中排除的文件（按名称）。     | `[]`
 
 <br>
 

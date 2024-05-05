@@ -210,7 +210,7 @@ Name          | Typ             | Beschreibung                                  
 `dotFolders`  | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                        | `false`
 `dotFiles`    | Boolescher Wert | Beziehen Sie Punktdateien in die Dateisuche ein.                                       | `false`
 `mangle`      | Boolescher Wert | Variablennamen kürzen (normalerweise auf ein Zeichen).                                 | `true`
-`ignoreFiles` | Array           | Dateien, die von der Minimierung ausgeschlossen werden sollen.                         | `[]`
+`ignoreFiles` | Array           | Dateien (nach Namen), die von der Minimierung ausgeschlossen werden sollen.            | `[]`
 `comment`     | Zeichenfolge    | Kommentar, der dem minimierten Code vorangestellt wird. Mit „\n“ zeilenweise trennen.  | `''`
 
 #
@@ -240,13 +240,13 @@ findJS() » Check returned array.
 
 Verfügbare Parameter (und ihre Standardeinstellungen) sind:
 
-Name          | Typ             | Beschreibung                                                           | Standardwert
---------------|-----------------|------------------------------------------------------------------------|--------------
-`recursive`   | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien im übergebenen searchDir. | `true`
-`verbose`     | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                | `true`
-`dotFolders`  | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                        | `false`
-`dotFiles`    | Boolescher Wert | Beziehen Sie Punktdateien in die Dateisuche ein.                       | `false`
-`ignoreFiles` | Array           | Dateien, die aus den Suchergebnissen ausgeschlossen werden sollen.     | `[]`
+Name          | Typ             | Beschreibung                                                                    | Standardwert
+--------------|-----------------|---------------------------------------------------------------------------------|--------------
+`recursive`   | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien im übergebenen searchDir.          | `true`
+`verbose`     | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                         | `true`
+`dotFolders`  | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                 | `false`
+`dotFiles`    | Boolescher Wert | Beziehen Sie Punktdateien in die Dateisuche ein.                                | `false`
+`ignoreFiles` | Array           | Dateien (nach Namen), die aus den Suchergebnissen ausgeschlossen werden sollen. | `[]`
 
 <br>
 

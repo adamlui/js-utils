@@ -210,7 +210,7 @@ Nom           | Taper   | Description                                           
 `dotFolders`  | Boolean | Inclure les dossiers cachés dans la recherche de fichiers.                               | `false`
 `dotFiles`    | Boolean | Incluez les fichiers cachés dans la recherche de fichiers.                               | `false`
 `mangle`      | Boolean | Raccourcissez les noms de variables (généralement à un caractère).                       | `true`
-`ignoreFiles` | Tableau | Fichiers à exclure de la minification.                                                   | `[]`
+`ignoreFiles` | Tableau | Fichiers (par nom) à exclure de la minification.                                         | `[]`
 `comment`     | String  | Commentaire à ajouter au code minifié. Séparez par ligne en utilisant '\n'.              | `''`
 
 #
@@ -246,7 +246,7 @@ Nom           | Taper   | Description                                           
 `verbose`     | Boolean | Afficher la connexion dans la console/terminal.                       | `true`
 `dotFolders`  | Boolean | Inclure les dossiers cachés dans la recherche de fichiers.            | `false`
 `dotFiles`    | Boolean | Incluez les fichiers cachés dans la recherche de fichiers.            | `false`
-`ignoreFiles` | Tableau | Fichiers à exclure des résultats de recherche.                        | `[]`
+`ignoreFiles` | Tableau | Fichiers (par nom) à exclure des résultats de recherche.              | `[]`
 
 <br>
 

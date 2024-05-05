@@ -212,7 +212,7 @@ Name          | Type    | Desciption                                            
 `dotFolders`  | Boolean | Include dotfolders in file search.                                | `false`
 `dotFiles`    | Boolean | Include dotfiles in file search.                                  | `false`
 `mangle`      | Boolean | Shorten variable names (typically to one character).              | `true`
-`ignoreFiles` | Array   | Files to exclude from minification.                               | `[]`
+`ignoreFiles` | Array   | Files (by name) to exclude from minification.                     | `[]`
 `comment`     | String  | Comment to prepend to minified code. Separate by line using '\n'. | `''`
 
 #
@@ -248,7 +248,7 @@ Name          | Type    | Desciption                                            
 `verbose`     | Boolean | Show logging in console/terminal.                        | `true`
 `dotFolders`  | Boolean | Include dotfolders in file search.                       | `false`
 `dotFiles`    | Boolean | Include dotfiles in file search.                         | `false`
-`ignoreFiles` | Array   | Files to exclude from search results.                    | `[]`
+`ignoreFiles` | Array   | Files (by name) to exclude from search results.          | `[]`
 
 <br>
 

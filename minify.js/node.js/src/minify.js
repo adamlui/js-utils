@@ -21,7 +21,7 @@ function findJS(searchDir, options = {}) {
         verbose: true,     // enable logging
         dotFolders: false, // include dotfolders in file search
         dotFiles: false,   // include dotfiles in file search
-        ignoreFiles: []    // files to exclude from search results
+        ignoreFiles: []    // Files (by name) to exclude from search results
     };
 
     // Validate searchDir
@@ -85,7 +85,7 @@ function minify(input, options = {}) {
         verbose: true,     // enable logging
         dotFolders: false, // include dotfolders in file search
         dotFiles: false,   // include dotfiles in file search
-        ignoreFiles: [],   // files to exclude from minification
+        ignoreFiles: [],   // Files (by name) to exclude from minification
         mangle: true,      // shorten var names (typically to one character)
         comment: ''        // prepend comment to code
     };
