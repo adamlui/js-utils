@@ -2,7 +2,7 @@
 
 # This script automates:
 # >>> bump versions in manifests + READMEs >>> commit bumps to Git
-# >>> build minified JS to dist/ >>> update jsDelivr URL in cli.min.js >>> commit build to Git
+# >>> build minified JS to dist/ >>> update jsDelivr URLs in cli.min.js >>> commit build to Git
 # >>> push changes to GitHub >>> publish to npm (optional)
 
 # Init UI colors
@@ -62,7 +62,9 @@ bash utils/build.sh
 echo -e "${by}\nUpdating jsDelivr URL for global messages w/ commit hash...${nc}"
 BUMP_HASH=$(git rev-parse HEAD)
 if sed -i -E "s|(cdn\.jsdelivr\.net\/gh\/[^/]+\/[^@/]+)[^/]*|\1@$BUMP_HASH|" dist/cli.min.js
-    then echo -e "${bw}$BUMP_HASH${nc}" ; fi
+    then echo -e "${bw}$BUMP_HASH${nc}"
+    else echo "No jsDelivr URLs found in built files"
+fi
 
 # Commit build to Git
 echo -e "${by}\nCommitting build to Git...\n${nc}"
