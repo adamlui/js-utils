@@ -93,11 +93,11 @@ function compile(input, options = {}) {
     const compileOptions = { style: options.minify ? 'compressed' : 'expanded', sourceMap: options.sourceMaps };
     if (fs.existsSync(input)) { // compile based on path arg
         if (input.endsWith('.scss')) { // file path passed
-            if (options.verbose) console.info(`compile() » Compiling ${input}...`);
+            if (options.verbose) console.info(`compile() » ** Compiling ${input}...`);
             try { // to compile file passed
                 const compileResult = sass.compile(input, compileOptions);
                 if (options.verbose && !/cli(?:\.min)?\.js$/.test(require.main.filename))
-                    console.info('compile() » Compilation complete. Check returned object.');
+                    console.info('compile() » Compilation complete! Check returned object.');
                 return { code: compileResult.css, srcMap: compileResult.sourceMap,
                          srcPath: path.resolve(process.cwd(), input), error: undefined };
             } catch (err) {
@@ -108,7 +108,7 @@ function compile(input, options = {}) {
             const compileResult = findSCSS(input, { recursive: options.recursive, verbose: options.verbose,
                                                     dotFolders: options.dotFolders
                 })?.map(scssPath => { // compile found SCSS files
-                    if (options.verbose) console.info(`compile() » Compiling ${scssPath}...`); 
+                    if (options.verbose) console.info(`compile() » ** Compiling ${scssPath}...`); 
                     try { // to compile found file
                         const compileResult = sass.compile(scssPath, compileOptions);
                         return { code: compileResult.css, srcMap: compileResult.sourceMap,
@@ -120,7 +120,7 @@ function compile(input, options = {}) {
                 }).filter(data => !data.error ); // filter out failed compilations
             if (options.verbose) { 
                 if (compileResult.length > 0) console.info(
-                    'compile() » Compilation complete. Check returned object.');
+                    'compile() » Compilation complete! Check returned object.');
                 else console.info(
                     'compile() » No SCSS files processed.');
             }
@@ -128,7 +128,7 @@ function compile(input, options = {}) {
         }
     } else { // compile based on src code arg
         if (options.verbose)
-            console.info('compile() » Compiling passed source code...');
+            console.info('compile() » ** Compiling passed source code...');
         try { // to compile passed src code
             const compileResult = sass.compileString(input, compileOptions);
             return { code: compileResult.css, srcMap: compileResult.sourceMap,
