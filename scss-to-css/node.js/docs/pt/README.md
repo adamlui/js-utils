@@ -142,7 +142,7 @@ Opções booleanas:
 
 Opções de parâmetros:
  --ignore-files="file1.scss,file2.scss"   Arquivos a serem excluídos da compilação.
- --comment="comment"                      Anexe o comentário ao CSS minificado. Separe por linha usando '\n'.
+ --comment="comment"                      Anexe o comentário ao CSS compilado. Separe por linha usando '\n'.
 
 Comandos de informação:
  -h, --help                               Exibir tela de ajuda.

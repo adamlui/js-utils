@@ -141,7 +141,7 @@ $ scss-to-css input_folder output_folder
 
 पैरामीटर विकल्प:
  --ignore-files="file1.scss,file2.scss"   संकलन से बाहर की जाने वाली फ़ाइलें।
- --comment="comment"                      लघु CSS में टिप्पणी जोड़ें। '\n' का उपयोग करके लाइन से अलग करें।
+ --comment="comment"                      संकलित CSS में टिप्पणी जोड़ें। '\n' का उपयोग करके लाइन से अलग करें।
 
 जानकारी आदेश:
  -h, --help                               सहायता स्क्रीन प्रदर्शित करें।

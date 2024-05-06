@@ -146,7 +146,7 @@ Boolean options:
 Parameter options:
  --ignore-files="file1.scss,file2.scss"   Files to exclude from
                                           compilation.
- --comment="comment"                      Prepend comment to minified CSS.
+ --comment="comment"                      Prepend comment to compiled CSS.
                                           Separate by line using '\n'.
 Info commands:
  -h, --help                  Display help screen.

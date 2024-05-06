@@ -142,7 +142,7 @@ Booleaanse opties:
 
 Parameteropties:
  --ignore-files="file1.scss,file2.scss"   Bestanden die moeten worden uitgesloten van compilatie.
- --comment="comment"                      Voeg commentaar toe aan verkleinde CSS. Scheid per regel met '\n'.
+ --comment="comment"                      Voeg commentaar toe aan de gecompileerde CSS. Scheid per regel met '\n'.
 
 Info-opdrachten:
  -h, --help                               Helpscherm weergeven.
