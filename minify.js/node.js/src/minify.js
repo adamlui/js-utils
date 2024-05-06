@@ -65,7 +65,7 @@ function findJS(searchDir, options = {}) {
     if (!options.isRecursing && options.verbose) {
         console.info('findJS() » Search complete! '
             + ( jsFiles.length == 0 ? 'No' : jsFiles.length )
-            + ` file${ jsFiles.length == 0 || jsFiles.length > 1 ? 's' : '' } found.`);
+            + ` file${ jsFiles.length == 1 ? '' : 's' } found.`);
         if (findJS.caller.name != 'minify' && !process.argv.some(arg => arg.includes('gulp')) &&
             !/cli(?:\.min)?\.js$/.test(require.main.filename))
                 console.info('findJS() » Check returned array.');
