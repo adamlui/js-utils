@@ -105,7 +105,7 @@ function minify(input, options = {}) {
         if (input.endsWith('.js')) { // file path passed
             if (options.verbose) console.info(`minify() » ** Minifying ${input}...`);
             const minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions);
-            if (options.comment) minifyResult.code = prependComment(minifyResult.code);
+            if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment);
             if (minifyResult.error) console.error(`minify() » ERROR: ${minifyResult.error.message}`);
             else if (options.verbose && !process.argv.some(arg => arg.includes('gulp')) &&
                 !/cli(?:\.min)?\.js$/.test(require.main.filename))
@@ -120,7 +120,7 @@ function minify(input, options = {}) {
                     if (options.verbose) console.info(`minify() » ** Minifying ${jsPath}...`);
                     const srcCode = fs.readFileSync(jsPath, 'utf8');
                     const minifyResult = uglifyJS.minify(srcCode, minifyOptions);
-                    if (options.comment) minifyResult.code = prependComment(minifyResult.code);
+                    if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment);
                     if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
                     return { code: minifyResult.code, srcPath: jsPath, error: minifyResult.error };
                 }).filter(data => !data.error); // filter out failed minifications
@@ -136,15 +136,15 @@ function minify(input, options = {}) {
         if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
             console.info('minify() » ** Minifying passed source code...');
         const minifyResult = uglifyJS.minify(input, minifyOptions);
-        if (options.comment) minifyResult.code = prependComment(minifyResult.code);
+        if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment);
         if (minifyResult.error) console.error(`minify() » ERROR: ${minifyResult.error.message}`);
         else if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
             console.info('minify() » Minification complete! Check returned object.');
         return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error };
     }
 
-    function prependComment(code) {
-        const commentBlock = options.comment.split('\n').map(line => ` * ${line}`).join('\n'),
+    function prependComment(code, comment) {
+        const commentBlock = comment.split('\n').map(line => ` * ${line}`).join('\n'),
               shebangIdx = code.indexOf('#!');
         if (shebangIdx >= 0) {
             const postShebangIdx = code.indexOf('\n', shebangIdx) + 1; // idx of 1st newline after shebang

@@ -103,7 +103,7 @@ function compile(input, options = {}) {
             if (options.verbose) console.info(`compile() » ** Compiling ${input}...`);
             try { // to compile file passed
                 const compileResult = sass.compile(input, compileOptions);
-                if (options.comment) compileResult.css = prependComment(compileResult.css);
+                if (options.comment) compileResult.css = prependComment(compileResult.css, options.comment);
                 if (options.verbose && !/cli(?:\.min)?\.js$/.test(require.main.filename))
                     console.info('compile() » Compilation complete! Check returned object.');
                 return { code: compileResult.css, srcMap: compileResult.sourceMap,
@@ -119,7 +119,7 @@ function compile(input, options = {}) {
                     if (options.verbose) console.info(`compile() » ** Compiling ${scssPath}...`); 
                     try { // to compile found file
                         const compileResult = sass.compile(scssPath, compileOptions);
-                        if (options.comment) compileResult.css = prependComment(compileResult.css);
+                        if (options.comment) compileResult.css = prependComment(compileResult.css, options.comment);
                         return { code: compileResult.css, srcMap: compileResult.sourceMap,
                                  srcPath: scssPath, error: undefined };
                     } catch (err) {
@@ -140,7 +140,7 @@ function compile(input, options = {}) {
             console.info('compile() » ** Compiling passed source code...');
         try { // to compile passed src code
             const compileResult = sass.compileString(input, compileOptions);
-            if (options.comment) compileResult.css = prependComment(compileResult.css);
+            if (options.comment) compileResult.css = prependComment(compileResult.css, options.comment);
             return { code: compileResult.css, srcMap: compileResult.sourceMap,
                      srcPath: undefined, error: undefined };
         } catch (err) {
@@ -149,8 +149,8 @@ function compile(input, options = {}) {
         }
     }
 
-    function prependComment(code) {
-        const commentBlock = options.comment.split('\n').map(line => ` * ${line}`).join('\n'),
+    function prependComment(code, comment) {
+        const commentBlock = comment.split('\n').map(line => ` * ${line}`).join('\n'),
               shebangIdx = code.indexOf('#!');
         if (shebangIdx >= 0) {
             const postShebangIdx = code.indexOf('\n', shebangIdx) + 1; // idx of 1st newline after shebang
