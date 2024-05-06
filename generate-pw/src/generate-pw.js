@@ -319,6 +319,22 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 }
 
 // EXPORT API functions
+const funcAliases = {
+    generatePassword: [
+        'generate', 'generatepassword', 'generatepw', 'generatePw', 'generatePW',
+        'Generate', 'Generatepassword', 'GeneratePassword', 'Generatepw', 'GeneratePw', 'GeneratePW'
+    ],
+    generatePasswords: [
+        'generatepasswords', 'generatepws', 'generatePws', 'generatePWs', 'generatePWS',
+        'Generatepasswords', 'GeneratePasswords', 'Generatepws', 'GeneratePws', 'GeneratePWs', 'GeneratePWS'
+    ],
+    strictify: [ 'Strictify' ],
+    validateStrength: [ 'validate', 'Validate', 'validatestrength', 'Validatestrength', 'ValidateStrength' ]
+};
 const apiFunctions = { generatePassword, generatePasswords, strictify, validateStrength };
 try { module.exports = { ...apiFunctions }; } catch (err) {} // for Node.js
 try { window.pw = { ...apiFunctions }; } catch (err) {} // for Greasemonkey
+for (const func in funcAliases) { // init/export aliases
+    try { funcAliases[func].forEach(alias => module.exports[alias] = module.exports[func]); } catch (err) {} // for Node.js
+    try { funcAliases[func].forEach(alias => window.pw[alias] = window.pw[func]); } catch (err) {} // for Greasemonkey
+}
