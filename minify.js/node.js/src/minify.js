@@ -85,7 +85,7 @@ function minify(input, options = {}) {
         dotFiles: false,   // include dotfiles in file search
         mangle: true,      // shorten var names (typically to one character)
         ignoreFiles: [],   // files (by name) to exclude from minification
-        comment: ''        // prepend comment to code
+        comment: ''        // prepend comment to minified code
     };
 
     // Validate input
