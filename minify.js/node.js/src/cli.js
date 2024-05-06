@@ -179,6 +179,7 @@ function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'fl
             `\n${bw}o Parameter options:${nc}`,
             '--ignore-files="file1.js,file2.js"   Files to exclude from minification.',
             '--comment="comment"                  Prepend comment to minified code.'
+                                               +  ' Separate by line using \'\\n\'.'
         ],
         'infoCmds': [
             `\n${bw}o Info commands:${nc}`,
