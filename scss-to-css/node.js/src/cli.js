@@ -30,7 +30,8 @@ const reArgs = {
         'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
     },
     paramOptions: {
-        'ignoreFiles': /^--?(?:ignore|skip|exclude)(?:d?-?files?)?(?:=.*|$)/
+        'ignoreFiles': /^--?(?:ignore|skip|exclude)(?:d?-?files?)?(?:=.*|$)/,
+        'comment': /^--?comments?(?:=.*|$)/
     },
     infoCmds: { 'help': /^--?h(?:elp)?$/,'version': /^--?ve?r?s?i?o?n?$/ }
 };
@@ -109,8 +110,9 @@ else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
         // Build array of compilation data
         const failedPaths = [];
         const compileData = scssFiles.map(scssPath => {
-            const compileResult = scssToCSS.compile(scssPath, {
-                minify: !config.noMinify, sourceMaps: !config.noSourceMaps, verbose: !config.quietMode });
+            const compileResult = scssToCSS.compile(scssPath, { verbose: !config.quietMode, minify: !config.noMinify,
+                                                                sourceMaps: !config.noSourceMaps,
+                                                                comment: config.comment?.replace(/\\n/g, '\n') });
             if (compileResult.error) failedPaths.push(scssPath);
             return compileResult;
         }).filter(data => !data.error ); // filter out failed compilations
@@ -180,7 +182,8 @@ function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'fl
         ],
         'paramOptions': [
             `\n${bw}o Parameter options:${nc}`,
-            '--ignore-files="file1.scss,file2.scss"   Files to exclude from compilation.'
+            '--ignore-files="file1.scss,file2.scss"   Files to exclude from compilation.',
+            '--comment="comment"                      Prepend comment to compiled CSS.'
         ],
         'infoCmds': [
             `\n${bw}o Info commands:${nc}`,

@@ -142,6 +142,7 @@ $ scss-to-css input_folder output_folder
 
 参数选项：
  --ignore-files="file1.scss,file2.scss"   要从编译中排除的文件。
+ --comment="comment"                      在缩小的 CSS 前面添加注释。 使用 '\n' 按行分隔。
 
 信息命令：
  -h, --help                               显示帮助屏幕。

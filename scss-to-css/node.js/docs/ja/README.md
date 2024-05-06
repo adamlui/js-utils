@@ -142,6 +142,7 @@ $ scss-to-css input_folder output_folder
 
 パラメータオプション:
  --ignore-files="file1.scss,file2.scss"   コンパイルから除外するファイル。
+ --comment="comment"                      縮小された CSS の先頭にコメントを追加します。'\n' を使用して行で区切ります。
 
 情報コマンド:
  -h, --help                               ヘルプ画面を表示します。

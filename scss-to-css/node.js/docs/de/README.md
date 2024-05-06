@@ -142,6 +142,7 @@ Boolesche Optionen:
 
 Parameteroptionen:
  --ignore-files="file1.scss,file2.scss"   Dateien, die von der Kompilierung ausgeschlossen werden sollen.
+ --comment="comment"                      Kommentar dem minimierten CSS voranstellen. Mit '\n' zeilenweise trennen.
 
 Info-Befehle:
  -h, --help                               Hilfebildschirm anzeigen.
