@@ -87,7 +87,7 @@ Name         | Type    | Desciption                                             
 `dotFolders` | Boolean | Include dotfolders in file search.                      | `false`
 `dotFiles`   | Boolean | Include dotfiles in file search.                        | `false`
 `mangle`     | Boolean | Shorten variable names (typically to one character).    | `true`
-`comment`    | String  | Comment to prepend to minified code.                    | `''`
+`comment`    | String  | Header comment to prepend to minified code.             | `''`
 
 <br>
 

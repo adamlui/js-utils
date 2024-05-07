@@ -142,7 +142,7 @@ $ scss-to-css input_folder output_folder
 
 参数选项：
  --ignore-files="file1.scss,file2.scss"   要从编译中排除的文件。
- --comment="comment"                      将注释添加到已编译的 CSS 前面。 使用 '\n' 按行分隔。
+ --comment="comment"                      将标头注释添加到已编译的 CSS 中。使用 '\n' 按行分隔。
 
 信息命令：
  -h, --help                               显示帮助屏幕。
@@ -209,15 +209,15 @@ scssToCSS.compile(inputDir, { minify: false });
 
 可用参数（及其默认设置）有：
 
-姓名          | 类型    | 描述                                               | 默认值
---------------|--------|----------------------------------------------------|--------
-`recursive`   | 布尔值 | 如果传递目录路径，则递归搜索嵌套文件。                 | `true`
-`verbose`     | 布尔值 | 在控制台/终端中显示日志记录。                         | `true`
-`dotFolders`  | 布尔值 | 在文件搜索中包括点文件夹。                            | `false`
-`minify`      | 布尔值 | 缩小输出 CSS。                                       | `true`
-`sourceMaps`  | 布尔值 | 生成 CSS 源映射。                                    | `true`
-`ignoreFiles` | 大批   | 要从编译中排除的文件（按名称）。                      | `[]`
-`comment`     | 字符串 | 添加注释以添加到已编译的 CSS 之前。 使用“\n”按行分隔。 | `''`
+姓名          | 类型    | 描述                                              | 默认值
+--------------|--------|---------------------------------------------------|--------
+`recursive`   | 布尔值 | 如果传递目录路径，则递归搜索嵌套文件。                | `true`
+`verbose`     | 布尔值 | 在控制台/终端中显示日志记录。                        | `true`
+`dotFolders`  | 布尔值 | 在文件搜索中包括点文件夹。                           | `false`
+`minify`      | 布尔值 | 缩小输出 CSS。                                      | `true`
+`sourceMaps`  | 布尔值 | 生成 CSS 源映射。                                   | `true`
+`ignoreFiles` | 大批   | 要从编译中排除的文件（按名称）。                     | `[]`
+`comment`     | 字符串 | 添加到已编译 CSS 前面的标头注释。使用 '\n' 按行分隔。 | `''`
 
 #
 

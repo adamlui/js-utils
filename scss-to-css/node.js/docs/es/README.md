@@ -142,7 +142,7 @@ Opciones booleanas:
 
 Opciones de parámetros:
  --ignore-files="file1.scss,file2.scss"   Archivos para excluir de la compilación.
- --comment="comment"                      Anteponer comentario al CSS compilado. Separe por línea usando '\n'.
+ --comment="comment"                      Anteponga el comentario del encabezado al CSS compilado. Separe por línea usando '\n'.
 
 Comandos de información:
  -h, --help                               Muestra pantalla de ayuda.
@@ -209,15 +209,15 @@ scssToCSS.compile(dirEntrada, { minify: false });
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:
 
-Nombre        | Tipo      | Descripción                                                                | Valor por defecto
---------------|-----------|----------------------------------------------------------------------------|-------------------
-`recursive`   | Booleano  | Busque recursivamente archivos anidados si se pasa la ruta del directorio. | `true`
-`verbose`     | Booleano  | Mostrar registros en la consola/terminal.                                  | `true`
-`dotFolders`  | Booleano  | Incluir carpetas de puntos en la búsqueda de archivos.                     | `false`
-`minify`      | Booleano  | Minimizar CSS de salida.                                                   | `true`
-`sourceMaps`  | Booleano  | Generar mapas fuente CSS.                                                  | `true`
-`ignoreFiles` | Formación | Archivos (por nombre) para excluir de la compilación.                      | `[]`
-`comment`     | Cadena    | Comentario para anteponer al CSS compilado. Separe por línea usando '\n'.  | `''`
+Nombre        | Tipo      | Descripción                                                                             | Valor por defecto
+--------------|-----------|-----------------------------------------------------------------------------------------|-------------------
+`recursive`   | Booleano  | Busque recursivamente archivos anidados si se pasa la ruta del directorio.              | `true`
+`verbose`     | Booleano  | Mostrar registros en la consola/terminal.                                               | `true`
+`dotFolders`  | Booleano  | Incluir carpetas de puntos en la búsqueda de archivos.                                  | `false`
+`minify`      | Booleano  | Minimizar CSS de salida.                                                                | `true`
+`sourceMaps`  | Booleano  | Generar mapas fuente CSS.                                                               | `true`
+`ignoreFiles` | Formación | Archivos (por nombre) para excluir de la compilación.                                   | `[]`
+`comment`     | Cadena    | Comentario de encabezado para anteponer al CSS compilado. Separe por línea usando '\n'. | `''`
 
 #
 

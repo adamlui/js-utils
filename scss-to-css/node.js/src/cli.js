@@ -183,7 +183,7 @@ function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'fl
         'paramOptions': [
             `\n${bw}o Parameter options:${nc}`,
             '--ignore-files="file1.scss,file2.scss"   Files to exclude from compilation.',
-            '--comment="comment"                      Prepend comment to compiled CSS.'
+            '--comment="comment"                      Prepend header comment to compiled CSS.'
                                                     + ' Separate by line using \'\\n\'.'
         ],
         'infoCmds': [

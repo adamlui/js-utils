@@ -142,7 +142,7 @@ $ scss-to-css input_folder output_folder
 
 參數選項：
  --ignore-files="file1.scss,file2.scss"   要從編譯中排除的檔案。
- --comment="comment"                      將註解新增到已編譯的 CSS 前面。 使用 '\n' 按行分隔。
+ --comment="comment"                      將標頭註釋新增到已編譯的 CSS 中。使用 '\n' 按行分隔。
 
 訊息命令：
  -h, --help                               顯示幫助畫面。
@@ -209,15 +209,15 @@ scssToCSS.compile(inputDir, { minify: false });
 
 可用的參數（及其預設設定）是：
 
-姓名          | 類型    | 描述                                               | 預設值
---------------|--------|----------------------------------------------------|--------
-`recursive`   | 布林值 | 如果傳遞目錄路徑，則遞歸搜尋巢狀檔案。                 | `true`
-`verbose`     | 布林值 | 在控制台/終端機中顯示日誌記錄。                       | `true`
-`dotFolders`  | 布林值 | 在檔案搜尋中包含點資料夾。                            | `false`
-`minify`      | 布林值 | 縮小輸出 CSS。                                       | `true`
-`sourceMaps`  | 布林值 | 產生 CSS 來源映射。                                  | `true`
-`ignoreFiles` | 大批   | 要從編譯中排除的檔案（按名稱）。                      | `[]`
-`comment`     | 字串   | 添加註釋以添加到已編譯的 CSS 之前。 使用“\n”按行分隔。 | `''`
+姓名          | 類型    | 描述                                              | 預設值
+--------------|--------|---------------------------------------------------|--------
+`recursive`   | 布林值 | 如果傳遞目錄路徑，則遞歸搜尋巢狀檔案。                | `true`
+`verbose`     | 布林值 | 在控制台/終端機中顯示日誌記錄。                      | `true`
+`dotFolders`  | 布林值 | 在檔案搜尋中包含點資料夾。                           | `false`
+`minify`      | 布林值 | 縮小輸出 CSS。                                      | `true`
+`sourceMaps`  | 布林值 | 產生 CSS 來源映射。                                 | `true`
+`ignoreFiles` | 大批   | 要從編譯中排除的檔案（按名稱）。                     | `[]`
+`comment`     | 字串   | 新增到已編譯 CSS 前面的標頭註解。使用 '\n' 按行分隔。 | `''`
 
 #
 

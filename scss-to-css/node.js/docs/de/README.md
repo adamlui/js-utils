@@ -142,7 +142,7 @@ Boolesche Optionen:
 
 Parameteroptionen:
  --ignore-files="file1.scss,file2.scss"   Dateien, die von der Kompilierung ausgeschlossen werden sollen.
- --comment="comment"                      Kommentar dem kompilierten CSS voranstellen. Mit '\n' zeilenweise trennen.
+ --comment="comment"                      Header-Kommentar dem kompilierten CSS voranstellen. Mit '\n' zeilenweise trennen.
 
 Info-Befehle:
  -h, --help                               Hilfebildschirm anzeigen.
@@ -209,15 +209,15 @@ scssToCSS.compile(eingangVer, { minify: false });
 
 Verfügbare Parameter (und ihre Standardeinstellungen) sind:
 
-Name          | Typ             | Beschreibung                                                                           | Standardwert
---------------|-----------------|----------------------------------------------------------------------------------------|--------------
-`recursive`   | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird. | `true`
-`verbose`     | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                                | `true`
-`dotFolders`  | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                        | `false`
-`minify`      | Boolescher Wert | Ausgabe-CSS minimieren.                                                                | `true`
-`sourceMaps`  | Boolescher Wert | Generieren Sie CSS-Quellkarten.                                                        | `true`
-`ignoreFiles` | Array           | Dateien (nach Namen), die von der Kompilierung ausgeschlossen werden sollen.           | `[]`
-`comment`     | Zeichenfolge    | Kommentar, der dem kompilierten CSS vorangestellt wird. Mit „\n“ zeilenweise trennen.  | `''`
+Name          | Typ             | Beschreibung                                                                                 | Standardwert
+--------------|-----------------|----------------------------------------------------------------------------------------------|--------------
+`recursive`   | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird.       | `true`
+`verbose`     | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                                      | `true`
+`dotFolders`  | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                              | `false`
+`minify`      | Boolescher Wert | Ausgabe-CSS minimieren.                                                                      | `true`
+`sourceMaps`  | Boolescher Wert | Generieren Sie CSS-Quellkarten.                                                              | `true`
+`ignoreFiles` | Array           | Dateien (nach Namen), die von der Kompilierung ausgeschlossen werden sollen.                 | `[]`
+`comment`     | Zeichenfolge    | Header-Kommentar, der dem kompilierten CSS vorangestellt wird. Mit '\n' zeilenweise trennen. | `''`
 
 #
 

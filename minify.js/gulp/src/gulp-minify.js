@@ -16,7 +16,7 @@ function minify(input, output, options = {}) {
         dotFolders: false, // include dotfolders in file search
         dotFiles: false,   // include dotfiles in file search
         mangle: true,      // shorten var names (typically to one character)
-        comment: ''        // prepend comment to code
+        comment: ''        // header comment to prepend to minified code
     };
     options = { ...defaultOptions, ...options };
 

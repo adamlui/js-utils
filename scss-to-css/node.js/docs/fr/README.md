@@ -142,7 +142,7 @@ Options booléennes:
 
 Options des paramètres:
  --ignore-files="file1.scss,file2.scss"   Fichiers à exclure de la compilation.
- --comment="comment"                      Ajoutez un commentaire au CSS compilé. Séparez par ligne en utilisant '\n'.
+ --comment="comment"                      Ajoutez le commentaire d’en-tête au CSS compilé. Séparez par ligne en utilisant '\n'.
 
 Commandes d'informations:
  -h, --help                               Afficher l'écran d'aide.
@@ -217,7 +217,7 @@ Nom           | Taper   | Description                                           
 `minify`      | Booléen | Réduire la sortie CSS.                                                                   | `true`
 `sourceMaps`  | Booléen | Générer des cartes sources CSS.                                                          | `true`
 `ignoreFiles` | Tableau | Fichiers (par nom) à exclure de la compilation.                                          | `[]`
-`comment`     | Chaîne  | Commentaire à ajouter au CSS compilé. Séparez par ligne en utilisant '\n'.               | `''`
+`comment`     | Chaîne  | Commentaire d’en-tête à ajouter au CSS compilé. Séparez par ligne en utilisant '\n'.     | `''`
 
 #
 

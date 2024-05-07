@@ -82,7 +82,7 @@ function compile(input, options = {}) {
         minify: true,      // minify output CSS
         sourceMaps: true,  // generate CSS source maps
         ignoreFiles: [],   // files to exclude from compilation
-        comment: ''        // prepend comment to compiled CSS
+        comment: ''        // header comment to prepend to compiled CSS
     };
 
     // Validate input
