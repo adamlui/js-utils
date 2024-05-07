@@ -62,7 +62,7 @@ bash utils/build.sh
 echo -e "${by}\nUpdating jsDelivr URLs for GitHub assets w/ commit hash...${nc}"
 BUMP_HASH=$(git rev-parse HEAD)
 OLD_FILE=$(<dist/cli.min.js)
-sed -i -E "s|(cdn\.jsdelivr\.net\/gh\/[^/]+\/[^@/]+)[^/]*|\1@$BUMP_HASH|g" dist/cli.min.js
+sed -i -E "s|(cdn\.jsdelivr\.net\/gh\/[^/]+\/[^@/\"']+)[^/\"']*|\1@$BUMP_HASH|g" dist/cli.min.js
 NEW_FILE=$(<dist/cli.min.js)
 if [[ "$OLD_FILE" != "$NEW_FILE" ]]
     then echo -e "${bw}$BUMP_HASH${nc}"
