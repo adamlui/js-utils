@@ -35,7 +35,7 @@ npm version --no-git-tag-version "$NEW_VERSION"
 # Bump versions in READMEs
 echo -e "${by}\nBumping versions in READMEs...${bw}"
 PACKAGE_NAME=$(node -pe "require('./package.json').name" | sed -e 's/^@[a-zA-Z0-9-]*\///' -e 's/^@//')
-sed_actions=(
+SED_ACTIONS=(
     # Latest Build shield link
     -exec sed -i -E "s|(tag/[^0-9]+)[0-9]+\.[0-9]+\.[0-9]+|\1$NEW_VERSION|g" {} +   
     # Latest Build shield src
@@ -45,7 +45,7 @@ sed_actions=(
     # jsDelivr ver tags in import section
     -exec sed -i -E "s|@([0-9]+\.[0-9]+\.[0-9]+)|@$NEW_VERSION|g" {} +
 )
-find . -name 'README.md' "${sed_actions[@]}"
+find . -name 'README.md' "${SED_ACTIONS[@]}"
 echo "v$NEW_VERSION"
 
 # Commit bumps to Git
