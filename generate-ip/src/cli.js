@@ -80,7 +80,7 @@ const pkgName = 'generate-ip',
             }
             const value = arg.split('=')[1];
             config[matchedParamOption] = parseInt(value) || value;
-        } else if (!matchedInfoCmd) {
+        } else if (!matchedInfoCmd && !/ipv4/.test(arg)) {
             console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: `
                 + `Arg [${arg}] ${ msgs.error_notRecognized || 'not recognized' }.${nc}`);
             console.info(`\n${ by + ( msgs.info_validArgs || 'Valid arguments are below' )}.${nc}`);

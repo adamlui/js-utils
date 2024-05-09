@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+require('child_process').spawnSync('node',
+    [require.resolve('generate-ip/dist/cli.min.js'), '--ipv6', ...process.argv.slice(2)],
+    { stdio: 'inherit' }
+);
