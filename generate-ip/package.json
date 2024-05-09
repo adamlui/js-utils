@@ -16,7 +16,13 @@
   ],
   "bin": {
     "generateip": "dist/cli.min.js",
-    "generate-ip": "dist/cli.min.js"
+    "generate-ip": "dist/cli.min.js",
+    "generateipv4": "dist/cli.min.js",
+    "generate-ipv4": "dist/cli.min.js",
+    "generateipv6": "dist/cli.min.js --ipv6",
+    "generate-ipv6": "dist/cli.min.js --ipv6",
+    "generatemac": "dist/cli.min.js --mac",
+    "generate-mac": "dist/cli.min.js --mac"
   },
   "directories": {
     "lib": "./dist",
