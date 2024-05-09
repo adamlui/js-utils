@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Būla opcijas" },
   "helpSection_infoCmds": { "message": "Informācijas komandas" },
   "optionDesc_qty": { "message": "Ģenerēt n IP adresi(-es)" },
+  "optionDesc_ipv6": { "message": "Ģenerēt IPv6 adresi" },
+  "optionDesc_mac": { "message": "Ģenerēt Mac adresi" },
   "optionDesc_quiet": { "message": "Aizliegt visu reģistrēšanu, izņemot kļūdas" },
   "optionDesc_help": { "message": "Parādīt palīdzības ekrānu" },
   "optionDesc_version": { "message": "Versijas numurs" }

@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boolen vaihtoehdot" },
   "helpSection_infoCmds": { "message": "Tietokomennot" },
   "optionDesc_qty": { "message": "Luo n IP-osoitetta" },
+  "optionDesc_ipv6": { "message": "Luo IPv6-osoite" },
+  "optionDesc_mac": { "message": "Luo MAC-osoite" },
   "optionDesc_quiet": { "message": "Poista kaikki kirjaukset paitsi virheet" },
   "optionDesc_help": { "message": "Näytä ohjenäyttö" },
   "optionDesc_version": { "message": "Näyttää versionumeron" }

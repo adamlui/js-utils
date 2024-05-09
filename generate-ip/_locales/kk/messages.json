@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boolean опциялары" },
   "helpSection_infoCmds": { "message": "Ақпараттық командалар" },
   "optionDesc_qty": { "message": "N IP мекенжайын(лар) жасау" },
+  "optionDesc_ipv6": { "message": "IPv6 мекенжайын жасау" },
+  "optionDesc_mac": { "message": "MAC мекенжайын жасау" },
   "optionDesc_quiet": { "message": "Қателерден басқа барлық жүйеге кіруді болдырмау" },
   "optionDesc_help": { "message": "Анықтама экранын көрсету" },
   "optionDesc_version": { "message": "Нұсқасының нөмірі" }

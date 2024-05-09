@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "هه ‌ ڵبژاردنه ‌ کانی بۆۆلین" },
   "helpSection_infoCmds": { "message": "فەرمانەکانی زانیاری" },
   "optionDesc_qty": { "message": "دروستکردنی ناونیشانی IP[دەستکاری]" },
+  "optionDesc_ipv6": { "message": "دروستکردنی ناونیشانی IPv6" },
+  "optionDesc_mac": { "message": "ناونیشانی MAC دروست بکە" },
   "optionDesc_quiet": { "message": "سڕینەوەی هەموو هەڵەکان جگە لە هەڵەکان" },
   "optionDesc_help": { "message": "پیشاندانی شاشەی یارمەتی" },
   "optionDesc_version": { "message": "ژمارەی وەشان پیشان بدە" }

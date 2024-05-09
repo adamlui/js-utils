@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Booleove opcije" },
   "helpSection_infoCmds": { "message": "Info naredbe" },
   "optionDesc_qty": { "message": "Generiraj n IP adresa" },
+  "optionDesc_ipv6": { "message": "Generiraj IPv6 adresu" },
+  "optionDesc_mac": { "message": "Generiraj Mac adresu" },
   "optionDesc_quiet": { "message": "Obustavi sve zapisivanje osim pogrešaka" },
   "optionDesc_help": { "message": "Prikažite zaslon za pomoć" },
   "optionDesc_version": { "message": "Verzioniranje softvera" }

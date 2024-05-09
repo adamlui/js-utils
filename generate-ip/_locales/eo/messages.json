@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Buleaj opcioj" },
   "helpSection_infoCmds": { "message": "Informkomandoj" },
   "optionDesc_qty": { "message": "Generi IP-adreson(j) n" },
+  "optionDesc_ipv6": { "message": "Generi IPv6-adreson" },
+  "optionDesc_mac": { "message": "Generi MAC- adreson" },
   "optionDesc_quiet": { "message": "Subpremi ĉiujn registradojn krom eraroj" },
   "optionDesc_help": { "message": "Montri helpekranon" },
   "optionDesc_version": { "message": "Nombro de Versio" }

@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Machaguo ya boolean" },
   "helpSection_infoCmds": { "message": "Amri za taarifa" },
   "optionDesc_qty": { "message": "Tengeneza anwani n za IP" },
+  "optionDesc_ipv6": { "message": "Tengeneza anwani ya IPv6" },
+  "optionDesc_mac": { "message": "Tengeneza anwani ya MAC" },
   "optionDesc_quiet": { "message": "Zima ukataji wote wa magogo isipokuwa hitilafu" },
   "optionDesc_help": { "message": "Onyesha skrini ya usaidizi" },
   "optionDesc_version": { "message": "Onyesha nambari ya toleo" }

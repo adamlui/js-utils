@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Opcion Boolean" },
   "helpSection_infoCmds": { "message": "Komandante di Informashon" },
   "optionDesc_qty": { "message": "Direccion IP(es)" },
+  "optionDesc_ipv6": { "message": "Direccion IPv6" },
+  "optionDesc_mac": { "message": "Gestion Direccion MAC" },
   "optionDesc_quiet": { "message": "Tur Kuliner di Kuliner Kuliner" },
   "optionDesc_help": { "message": "Foto di Help Screenshot" },
   "optionDesc_version": { "message": "Show Version Number" }

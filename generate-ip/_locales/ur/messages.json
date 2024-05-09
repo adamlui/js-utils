@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "بولین آپشنز" },
   "helpSection_infoCmds": { "message": "معلومات کے احکامات" },
   "optionDesc_qty": { "message": "N IP پتہ(پتے) جنریٹ کریں" },
+  "optionDesc_ipv6": { "message": "IPv6 پتہ جنریٹ کریں" },
+  "optionDesc_mac": { "message": "MAC ایڈریس جنریٹ کریں" },
   "optionDesc_quiet": { "message": "غلطیوں کے علاوہ تمام لاگنگ کو دبائیں" },
   "optionDesc_help": { "message": "مدد کی اسکرین ڈسپلے کریں" },
   "optionDesc_version": { "message": "ورژن نمبر دکھائیں" }

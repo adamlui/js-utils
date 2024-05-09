@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "ಬೂಲಿಯನ್ ಆಯ್ಕೆಗಳು" },
   "helpSection_infoCmds": { "message": "ಮಾಹಿತಿ ಆಜ್ಞೆಗಳು" },
   "optionDesc_qty": { "message": "N IP ವಿಳಾಸವನ್ನು ರಚಿಸಿ (ಗಳು)" },
+  "optionDesc_ipv6": { "message": "IPv6 ವಿಳಾಸವನ್ನು ರಚಿಸಿ" },
+  "optionDesc_mac": { "message": "MAC ವಿಳಾಸವನ್ನು ರಚಿಸಿ" },
   "optionDesc_quiet": { "message": "ದೋಷಗಳನ್ನು ಹೊರತುಪಡಿಸಿ ಎಲ್ಲಾ ಲಾಗಿಂಗ್ ಅನ್ನು ನಿಗ್ರಹಿಸಿ" },
   "optionDesc_help": { "message": "ಸಹಾಯ ಪರದೆಯನ್ನು ಪ್ರದರ್ಶಿಸಿ" },
   "optionDesc_version": { "message": "à²®à²¾à²°à²¾à²à²à²¾à²° à²¬à²¿à²¡à³à²à²¡à³ à²¸à²à²à³à²¯à³" }

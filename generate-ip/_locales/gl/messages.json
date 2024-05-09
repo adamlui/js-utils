@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Opcións booleanas" },
   "helpSection_infoCmds": { "message": "Comandos de información" },
   "optionDesc_qty": { "message": "Generar n dirección IP(es)" },
+  "optionDesc_ipv6": { "message": "Xerar o enderezo IPv6" },
+  "optionDesc_mac": { "message": "Xerar o enderezo MAC" },
   "optionDesc_quiet": { "message": "Suprimir todo o rexistro agás erros" },
   "optionDesc_help": { "message": "Mostrar a pantalla de axuda" },
   "optionDesc_version": { "message": "Número de versión" }

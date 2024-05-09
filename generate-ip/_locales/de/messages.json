@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boolesche Optionen" },
   "helpSection_infoCmds": { "message": "Info-Befehle" },
   "optionDesc_qty": { "message": "Generiere n IP-Adresse(n)" },
+  "optionDesc_ipv6": { "message": "IPv6-Adresse generieren" },
+  "optionDesc_mac": { "message": "MAC-Adresse generieren" },
   "optionDesc_quiet": { "message": "Alle Protokolle mit Ausnahme von Fehlern unterdrücken" },
   "optionDesc_help": { "message": "Hilfebildschirm anzeigen" },
   "optionDesc_version": { "message": "Versionsnummer anzeigen" }

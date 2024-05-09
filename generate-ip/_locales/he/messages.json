@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "אפשרויות בוליאניות" },
   "helpSection_infoCmds": { "message": "פקודות מידע" },
   "optionDesc_qty": { "message": "צור n כתובות IP" },
+  "optionDesc_ipv6": { "message": "יצירת כתובת IPv6" },
+  "optionDesc_mac": { "message": "יצירת כתובת MAC" },
   "optionDesc_quiet": { "message": "דיכוי כל רישומי הרישום למעט שגיאות" },
   "optionDesc_help": { "message": "הצג מסך עזרה" },
   "optionDesc_version": { "message": "גרסה" }

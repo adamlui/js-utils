@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Logikai opciók" },
   "helpSection_infoCmds": { "message": "Információs parancsok" },
   "optionDesc_qty": { "message": "N IP-cím(ek) generálása" },
+  "optionDesc_ipv6": { "message": "IPv6-cím létrehozása" },
+  "optionDesc_mac": { "message": "MAC-cím létrehozása" },
   "optionDesc_quiet": { "message": "Az összes naplózás letiltása a hibák kivételével" },
   "optionDesc_help": { "message": "Súgó képernyő megjelenítése" },
   "optionDesc_version": { "message": "kiírja a verziószámot" }

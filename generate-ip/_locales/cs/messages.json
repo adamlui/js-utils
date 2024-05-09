@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Booleovské možnosti" },
   "helpSection_infoCmds": { "message": "Informační příkazy" },
   "optionDesc_qty": { "message": "Vygenerovat n IP adres" },
+  "optionDesc_ipv6": { "message": "Generovat adresu IPv6" },
+  "optionDesc_mac": { "message": "Generovat Mac adresu" },
   "optionDesc_quiet": { "message": "Potlačit veškeré protokolování kromě chyb" },
   "optionDesc_help": { "message": "Zobrazit obrazovku nápovědy" },
   "optionDesc_version": { "message": "Zobrazí číslo verze" }

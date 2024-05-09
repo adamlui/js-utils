@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Booleska alternativ" },
   "helpSection_infoCmds": { "message": "INFO-kommandon" },
   "optionDesc_qty": { "message": "Generera n IP-adress(er)" },
+  "optionDesc_ipv6": { "message": "Generera IPv6-adress" },
+  "optionDesc_mac": { "message": "Generera MAC-adress" },
   "optionDesc_quiet": { "message": "Dölj all loggning utom fel" },
   "optionDesc_help": { "message": "Visa hjälpskärmen" },
   "optionDesc_version": { "message": "Visa versionsinformation" }

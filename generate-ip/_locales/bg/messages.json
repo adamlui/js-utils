@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Булеви опции" },
   "helpSection_infoCmds": { "message": "Команди за информация" },
   "optionDesc_qty": { "message": "Генериране на n IP адреса" },
+  "optionDesc_ipv6": { "message": "Генериране на IPv6 адрес" },
+  "optionDesc_mac": { "message": "Генериране на Mac адрес" },
   "optionDesc_quiet": { "message": "Потискане на всички записи, с изключение на грешките" },
   "optionDesc_help": { "message": "Показване на помощния екран" },
   "optionDesc_version": { "message": "Version Number" }

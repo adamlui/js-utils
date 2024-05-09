@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Mantiqiy variantlar" },
   "helpSection_infoCmds": { "message": "Ma&#39;lumot buyruqlari" },
   "optionDesc_qty": { "message": "n IP-manzil(lar)ni yarating" },
+  "optionDesc_ipv6": { "message": "IPv6 manzilini yarating" },
+  "optionDesc_mac": { "message": "MAC manzilini yarating" },
   "optionDesc_quiet": { "message": "Xatolardan tashqari barcha jurnallarni bostirish" },
   "optionDesc_help": { "message": "Yordam ekranini ko&#39;rsatish" },
   "optionDesc_version": { "message": "Boʻsh joy" }

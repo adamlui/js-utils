@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Xulashooyinka Boolean" },
   "helpSection_infoCmds": { "message": "Amarada Macluumaadka" },
   "optionDesc_qty": { "message": "Abuur n cinwaanka IP (es)" },
+  "optionDesc_ipv6": { "message": "Abuur cinwaanka IPv6" },
+  "optionDesc_mac": { "message": "Abuur cinwaanka MAC" },
   "optionDesc_quiet": { "message": "Xannib dhammaan gelitaanka marka laga reebo khaladaadka" },
   "optionDesc_help": { "message": "Muuji shaashadda caawinta" },
   "optionDesc_version": { "message": "Lambarka Nooca" }

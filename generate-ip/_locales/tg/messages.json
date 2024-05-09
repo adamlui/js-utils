@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Параметрҳои Boolean" },
   "helpSection_infoCmds": { "message": "Фармонҳои иттилоотӣ" },
   "optionDesc_qty": { "message": "Эҷод кардани суроғаи IP (ҳо)" },
+  "optionDesc_ipv6": { "message": "Эҷод кардани суроғаи IPv6" },
+  "optionDesc_mac": { "message": "Эҷод кардани адреси MAC" },
   "optionDesc_quiet": { "message": "Ғайри хатогӣ ҳамаи қайдкуниҳоро пахш кунед" },
   "optionDesc_help": { "message": "Намоиши экрани кӯмак" },
   "optionDesc_version": { "message": "Номер производителя" }

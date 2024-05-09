@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Pilihan boolean" },
   "helpSection_infoCmds": { "message": "Perintah maklumat" },
   "optionDesc_qty": { "message": "Jana n alamat IP" },
+  "optionDesc_ipv6": { "message": "Jana alamat IPv6" },
+  "optionDesc_mac": { "message": "Jana alamat Mac" },
   "optionDesc_quiet": { "message": "Sekat semua pembalakan kecuali ralat" },
   "optionDesc_help": { "message": "Papar skrin bantuan" },
   "optionDesc_version": { "message": "Nombor Versi" }

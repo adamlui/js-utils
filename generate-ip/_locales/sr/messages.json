@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Bulove opcije" },
   "helpSection_infoCmds": { "message": "Info komande" },
   "optionDesc_qty": { "message": "Generišite n IP adresa" },
+  "optionDesc_ipv6": { "message": "Generišite IPv6 adresu" },
+  "optionDesc_mac": { "message": "Generišite Mac adresu" },
   "optionDesc_quiet": { "message": "Obustavi svu evidenciju osim grešaka" },
   "optionDesc_help": { "message": "Prikažite ekran za pomoć" },
   "optionDesc_version": { "message": "Исписује број верзије" }

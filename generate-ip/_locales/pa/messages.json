@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "ਬੂਲੀਅਨ ਵਿਕਲਪ" },
   "helpSection_infoCmds": { "message": "ਜਾਣਕਾਰੀ ਕਮਾਂਡਾਂ" },
   "optionDesc_qty": { "message": "N IP ਐਡਰੈੱਸ ਤਿਆਰ ਕਰੋ (es)" },
+  "optionDesc_ipv6": { "message": "IPv6 ਐਡਰੈੱਸ ਤਿਆਰ ਕਰੋ" },
+  "optionDesc_mac": { "message": "MAC ਐਡਰੈੱਸ ਤਿਆਰ ਕਰੋ" },
   "optionDesc_quiet": { "message": "ਗਲਤੀਆਂ ਨੂੰ ਛੱਡ ਕੇ ਸਭ ਲਾਗਿੰਗ ਦਬਾਓ" },
   "optionDesc_help": { "message": "ਮੱਦਦ ਸਕਰੀਨ ਵੇਖੋ" },
   "optionDesc_version": { "message": "ਵਰਜਨ ਨੰਬਰ" }

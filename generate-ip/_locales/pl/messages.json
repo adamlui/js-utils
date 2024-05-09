@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Opcje logiczne" },
   "helpSection_infoCmds": { "message": "Polecenia informacyjne" },
   "optionDesc_qty": { "message": "Wygeneruj n adres(y) IP" },
+  "optionDesc_ipv6": { "message": "Wygeneruj adres IPv6" },
+  "optionDesc_mac": { "message": "Wygeneruj adres Mac" },
   "optionDesc_quiet": { "message": "Wyłącz wszystkie rejestrowanie z wyjątkiem błędów" },
   "optionDesc_help": { "message": "Wyświetl ekran pomocy" },
   "optionDesc_version": { "message": "Podaje numer wersji programu" }

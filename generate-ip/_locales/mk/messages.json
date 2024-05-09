@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Опции за була" },
   "helpSection_infoCmds": { "message": "Информативни команди" },
   "optionDesc_qty": { "message": "Генерирање n IP-адреса(и)" },
+  "optionDesc_ipv6": { "message": "Генерирање IPv6 адреса" },
+  "optionDesc_mac": { "message": "Генерирај MAC-адреса" },
   "optionDesc_quiet": { "message": "Потисни ги сите евиденции освен грешките" },
   "optionDesc_help": { "message": "Прикажи екран за помош" },
   "optionDesc_version": { "message": "Број на производител" }

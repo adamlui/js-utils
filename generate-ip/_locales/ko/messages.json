@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "부울 옵션" },
   "helpSection_infoCmds": { "message": "정보 명령" },
   "optionDesc_qty": { "message": "N개의 IP 주소 생성" },
+  "optionDesc_ipv6": { "message": "IPv6 주소 생성" },
+  "optionDesc_mac": { "message": "MAC 주소 생성" },
   "optionDesc_quiet": { "message": "오류를 제외한 모든 로깅 억제" },
   "optionDesc_help": { "message": "도움말 화면 표시" },
   "optionDesc_version": { "message": "버전 넘버 보여주기 " }

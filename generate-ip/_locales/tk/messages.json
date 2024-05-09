@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boolean Options" },
   "helpSection_infoCmds": { "message": "Öwrenme tabşyryklary" },
   "optionDesc_qty": { "message": "N IP-aýdasy (lar) ýaradylýar" },
+  "optionDesc_ipv6": { "message": "IPv6 adresini döret" },
+  "optionDesc_mac": { "message": "MAC adresini ýarat" },
   "optionDesc_quiet": { "message": "Ýalňyşlyklardan başga ähli ýalňyşlyklary ýok etmek" },
   "optionDesc_help": { "message": "Yardam ekrany görkez" },
   "optionDesc_version": { "message": "VERSION NUMBERI" }

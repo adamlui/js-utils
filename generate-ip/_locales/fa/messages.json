@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "گزینه های بولی" },
   "helpSection_infoCmds": { "message": "دستورات اطلاعات" },
   "optionDesc_qty": { "message": "ایجاد n آدرس IP" },
+  "optionDesc_ipv6": { "message": "آدرس IPv6 را ایجاد کنید" },
+  "optionDesc_mac": { "message": "آدرس MAC را ایجاد کنید" },
   "optionDesc_quiet": { "message": "همه گزارش‌ها به جز خطاها را سرکوب کنید" },
   "optionDesc_help": { "message": "نمایش صفحه راهنما" },
   "optionDesc_version": { "message": "نمایش شماره نسخه" }

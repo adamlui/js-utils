@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Opsiynau Boole" },
   "helpSection_infoCmds": { "message": "Gorchmynion gwybodaeth" },
   "optionDesc_qty": { "message": "Cynhyrchu cyfeiriad(au) IP n" },
+  "optionDesc_ipv6": { "message": "Creu cyfeiriad IPv6" },
+  "optionDesc_mac": { "message": "Creu cyfeiriad MAC" },
   "optionDesc_quiet": { "message": "Atal pob cofnod ac eithrio gwallau" },
   "optionDesc_help": { "message": "Dangos y sgrin gymorth" },
   "optionDesc_version": { "message": "Rhif fersiwn" }

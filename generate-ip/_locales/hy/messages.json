@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Բուլյան ընտրանքներ" },
   "helpSection_infoCmds": { "message": "Տեղեկությունների հրամաններ" },
   "optionDesc_qty": { "message": "Ստեղծել n IP հասցե(ներ)" },
+  "optionDesc_ipv6": { "message": "Ստեղծել IPv6 հասցե" },
+  "optionDesc_mac": { "message": "Ստեղծել MAC հասցե" },
   "optionDesc_quiet": { "message": "Սեղմեք բոլոր տեղեկամատյանները, բացի սխալներից" },
   "optionDesc_help": { "message": "Ցուցադրել օգնության էկրանը" },
   "optionDesc_version": { "message": "Ցույց տալ տարբերակի համարը" }

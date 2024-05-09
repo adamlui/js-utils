@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Opcions booleanes" },
   "helpSection_infoCmds": { "message": "Ordres d'informació" },
   "optionDesc_qty": { "message": "Generar adreça o adreces IP" },
+  "optionDesc_ipv6": { "message": "Generar adreça IPv6" },
+  "optionDesc_mac": { "message": "Genera l'adreça Mac" },
   "optionDesc_quiet": { "message": "Suprimeix tot el registre, excepte els errors" },
   "optionDesc_help": { "message": "Mostra la pantalla d'ajuda" },
   "optionDesc_version": { "message": "Mostra el número de versió" }

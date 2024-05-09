@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Ngaahi fili Boolean" },
   "helpSection_infoCmds": { "message": "ʻOku fekauʻi ʻe he fakamatala" },
   "optionDesc_qty": { "message": "Faʻufaʻu ha tuʻasila n IP (es)" },
+  "optionDesc_ipv6": { "message": "Faʻufaʻu ha tuʻasila IPv6" },
+  "optionDesc_mac": { "message": "Faʻufaʻu ha tuʻasila MAC" },
   "optionDesc_quiet": { "message": "Taʻofi ʻa e loka kotoa tuku kehe pe ʻa e ngaahi fehalaaki" },
   "optionDesc_help": { "message": "Fakaʻaliʻali ʻa e screen tokoní" },
   "optionDesc_version": { "message": "Fakaʻasi mai ʻa e fika ʻo e Version" }

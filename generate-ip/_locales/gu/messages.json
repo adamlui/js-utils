@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "બુલિયન વિકલ્પો" },
   "helpSection_infoCmds": { "message": "માહિતી આદેશો" },
   "optionDesc_qty": { "message": "N IP સરનામું(ઓ) જનરેટ કરો" },
+  "optionDesc_ipv6": { "message": "IPv6 સરનામું જનરેટ કરો" },
+  "optionDesc_mac": { "message": "MAC સરનામું જનરેટ કરો" },
   "optionDesc_quiet": { "message": "ભૂલો સિવાય તમામ લોગીંગને દબાવો" },
   "optionDesc_help": { "message": "સહાય સ્ક્રીન પ્રદર્શિત કરો" },
   "optionDesc_version": { "message": "આવૃત્તિ ક્રમાંક" }

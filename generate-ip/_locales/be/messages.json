@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Лагічныя параметры" },
   "helpSection_infoCmds": { "message": "Інфармацыйныя каманды" },
   "optionDesc_qty": { "message": "Стварыць п IP-адрас(ы)" },
+  "optionDesc_ipv6": { "message": "Стварыць адрас IPv6" },
+  "optionDesc_mac": { "message": "Стварыць MAC-адрас" },
   "optionDesc_quiet": { "message": "Спыніць усе журналы, акрамя памылак" },
   "optionDesc_help": { "message": "Экран даведкі для адлюстравання" },
   "optionDesc_version": { "message": "Наяўныя экраны" }

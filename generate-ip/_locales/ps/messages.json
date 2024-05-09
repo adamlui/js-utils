@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "هو- نه غوراوي" },
   "helpSection_infoCmds": { "message": "د معلوماتو امرونه" },
   "optionDesc_qty": { "message": "د n IP ادرس تولید کړئ (es)" },
+  "optionDesc_ipv6": { "message": "د IPv6 پته تولید کړئ" },
+  "optionDesc_mac": { "message": "د MAC پته تولید کړئ" },
   "optionDesc_quiet": { "message": "د تېروتنو پرته ټول ننوتل (logging) پټ کړئ" },
   "optionDesc_help": { "message": "د مرستې سکرین ښکاره کړئ" },
   "optionDesc_version": { "message": "د نسخې شمیره وښایاست" }

@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Kōwhiringa Boolean" },
   "helpSection_infoCmds": { "message": "Whakahau Info" },
   "optionDesc_qty": { "message": "Hanga n IP wāhitau(es)" },
+  "optionDesc_ipv6": { "message": "Whakanuia te wāhitau IPv6" },
+  "optionDesc_mac": { "message": "Whakanuia te wāhitau MAC" },
   "optionDesc_quiet": { "message": "Tautoko i te logging katoa engari hapa" },
   "optionDesc_help": { "message": "Whakaatuhia te mata awhina" },
   "optionDesc_version": { "message": "Whakaatuhia te tau putanga" }

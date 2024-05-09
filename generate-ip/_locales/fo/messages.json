@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boolean valmøguleikar" },
   "helpSection_infoCmds": { "message": "Upplýsingar boð" },
   "optionDesc_qty": { "message": "IP-adressurat kanna" },
+  "optionDesc_ipv6": { "message": "IPv6 adressur" },
+  "optionDesc_mac": { "message": "Generera MAC adressu" },
   "optionDesc_quiet": { "message": "Undirskriva allar innmeldingar uttan feil" },
   "optionDesc_help": { "message": "Vís hjálparskjá" },
   "optionDesc_version": { "message": "Vís útgávu nr" }

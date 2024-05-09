@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "বুলিয়ান বিকল্প" },
   "helpSection_infoCmds": { "message": "তথ্য কমান্ড" },
   "optionDesc_qty": { "message": "এন আইপি অ্যাড্রেস(গুলি) তৈরি করুন" },
+  "optionDesc_ipv6": { "message": "IPv6 ঠিকানা তৈরি করুন" },
+  "optionDesc_mac": { "message": "MAC ঠিকানা তৈরি করুন" },
   "optionDesc_quiet": { "message": "ত্রুটি ব্যতীত সমস্ত লগিং দমন করুন" },
   "optionDesc_help": { "message": "সহায়তা স্ক্রিন প্রদর্শন করুন" },
   "optionDesc_version": { "message": "বিক্রেতা সংখ্যা" }

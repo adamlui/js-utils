@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Aye so mo lingbi ti sara ti mû maboko na mo" },
   "helpSection_infoCmds": { "message": "Aye so afa so a yeke nzoni e sara" },
   "optionDesc_qty": { "message": "A yeke na lege ti kode ti kode ti kode ti kode ti kodoro ti kodoro ti Israël" },
+  "optionDesc_ipv6": { "message": "Adresse IPv6" },
+  "optionDesc_mac": { "message": "Adresse ti MAC" },
   "optionDesc_quiet": { "message": "A yeke kanga lege na azo kue ti sara ye na lege ni ape me a yeke gi na lege ni" },
   "optionDesc_help": { "message": "A yeke mû maboko na azo ti bâ ndo na ndo ti écr" },
   "optionDesc_version": { "message": "Nombre de la version" }

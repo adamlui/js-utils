@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "布尔选项" },
   "helpSection_infoCmds": { "message": "信息命令" },
   "optionDesc_qty": { "message": "生成 n 个 IP 地址" },
+  "optionDesc_ipv6": { "message": "生成 IPv6 地址" },
+  "optionDesc_mac": { "message": "生成 MAC 地址" },
   "optionDesc_quiet": { "message": "禁止所有日志记录，错误除外" },
   "optionDesc_help": { "message": "显示帮助屏幕" },
   "optionDesc_version": { "message": "显示版本号" }

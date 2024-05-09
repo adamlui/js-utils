@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "ជម្រើស ប៊ូលីន" },
   "helpSection_infoCmds": { "message": "ពាក្យបញ្ជាព័ត៌មាន" },
   "optionDesc_qty": { "message": "បង្កើតអាសយដ្ឋាន IP" },
+  "optionDesc_ipv6": { "message": "បង្កើតអាសយដ្ឋាន IPv6" },
+  "optionDesc_mac": { "message": "បង្កើតអាសយដ្ឋាន MAC" },
   "optionDesc_quiet": { "message": "បង្ក្រាបការកាប់ឈើទាំងអស់លើកលែងតែកំហុស" },
   "optionDesc_help": { "message": "បង្ហាញអេក្រង់ជំនួយ" },
   "optionDesc_version": { "message": "បង្ហាញលេខកំណែ" }

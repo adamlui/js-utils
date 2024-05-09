@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "UNIVERSITATIS OMNIBE" },
   "helpSection_infoCmds": { "message": "Info commandes" },
   "optionDesc_qty": { "message": "Generate n IP address(es)" },
+  "optionDesc_ipv6": { "message": "Forma IPv6" },
+  "optionDesc_mac": { "message": "Forma MAC" },
   "optionDesc_quiet": { "message": "Exemplar omnes logiciendi except error" },
   "optionDesc_help": { "message": "Pagina Auxilio" },
   "optionDesc_version": { "message": "neo number" }

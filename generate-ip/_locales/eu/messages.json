@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Aukera boolearrak" },
   "helpSection_infoCmds": { "message": "Info komandoak" },
   "optionDesc_qty": { "message": "Sortu n IP helbide(k)" },
+  "optionDesc_ipv6": { "message": "Sortu IPv6 helbidea" },
+  "optionDesc_mac": { "message": "Sortu MAC helbidea" },
   "optionDesc_quiet": { "message": "Ezabatu erregistro guztiak erroreak izan ezik" },
   "optionDesc_help": { "message": "Bistaratu laguntza-pantaila" },
   "optionDesc_version": { "message": "Bertsio zenbakia" }

@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "बुलियन विकल्पहरू" },
   "helpSection_infoCmds": { "message": "सूचना आदेशहरू" },
   "optionDesc_qty": { "message": "N IP ठेगाना(हरू) उत्पन्न गर्नुहोस्" },
+  "optionDesc_ipv6": { "message": "IPv6 ठेगाना उत्पन्न गर्नुहोस्" },
+  "optionDesc_mac": { "message": "MAC ठेगाना उत्पन्न गर्नुहोस्" },
   "optionDesc_quiet": { "message": "त्रुटिहरू बाहेक सबै लगिङलाई दबाउनुहोस्" },
   "optionDesc_help": { "message": "मद्दत स्क्रिन प्रदर्शन गर्नुहोस्" },
   "optionDesc_version": { "message": "à¤ªà¥à¤°à¤¦à¤°à¥à¤¶à¤¨à¤à¥ à¤¨à¤¾à¤®" }

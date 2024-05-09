@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boolean አማራጮች" },
   "helpSection_infoCmds": { "message": "መረጃ ትዕዛዞች" },
   "optionDesc_qty": { "message": "N የአይፒ አድራሻ(es) ያመነጩ" },
+  "optionDesc_ipv6": { "message": "IPv6 አድራሻ ያመነጩ" },
+  "optionDesc_mac": { "message": "የ MAC አድራሻን ያመነጩ" },
   "optionDesc_quiet": { "message": "ከስህተቶች በስተቀር ሁሉንም የመግቢያዎች መሙላት" },
   "optionDesc_help": { "message": "የእገዛ ማያ ገጽ አሳይ" },
   "optionDesc_version": { "message": "የስሪት ቁጥርን አሳይ" }

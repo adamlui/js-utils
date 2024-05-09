@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Ლოგიკური ვარიანტები" },
   "helpSection_infoCmds": { "message": "Საინფორმაციო ბრძანებები" },
   "optionDesc_qty": { "message": "N IP მისამართ(ებ) ის გენერირება" },
+  "optionDesc_ipv6": { "message": "IPv6 მისამართის გენერაცია" },
+  "optionDesc_mac": { "message": "MAC მისამართის გენერაცია" },
   "optionDesc_quiet": { "message": "Ყველა ჟურნალის ჩახშობა, გარდა შეცდომებისა" },
   "optionDesc_help": { "message": "Დახმარების ეკრანის ჩვენება" },
   "optionDesc_version": { "message": "ვერსიის ნომერი" }

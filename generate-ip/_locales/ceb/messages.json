@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Mga kapilian sa Boolean" },
   "helpSection_infoCmds": { "message": "Mga mando sa info" },
   "optionDesc_qty": { "message": "Genera n IP adresa(es)" },
+  "optionDesc_ipv6": { "message": "Paghimo IPv6 address" },
+  "optionDesc_mac": { "message": "Genera adresa MAC" },
   "optionDesc_quiet": { "message": "Pugngan ang tanan nga pag-log gawas sa mga sayup" },
   "optionDesc_help": { "message": "Ipakita ang screen sa tabang" },
   "optionDesc_version": { "message": "Ipakita ang numero sa bersyon" }

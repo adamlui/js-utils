@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Ifyo Mwingacita pa Kuti Mulesanga Ifya Kucita" },
   "helpSection_infoCmds": { "message": "Ifyebo Fyabamo Lyonse" },
   "optionDesc_qty": { "message": "Adresi ya IP(s)" },
+  "optionDesc_ipv6": { "message": "Shiba inu IPv6 adresi" },
+  "optionDesc_mac": { "message": "Adresi ya MAC" },
   "optionDesc_quiet": { "message": "Fela Anikulapo Kuti - Fela Anikulapo Kuti" },
   "optionDesc_help": { "message": "Lekisha Help Screen" },
   "optionDesc_version": { "message": "Tontonkanyeni pa nambala ya ciputulwa" }

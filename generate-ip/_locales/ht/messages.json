@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Opsyon Boolean" },
   "helpSection_infoCmds": { "message": "Kòmandman Enfòmasyon" },
   "optionDesc_qty": { "message": "Jenere yon adrès IP (yo)" },
+  "optionDesc_ipv6": { "message": "Jenere adrès IPv6" },
+  "optionDesc_mac": { "message": "Jenere adrès MAC" },
   "optionDesc_quiet": { "message": "Siprime tout antre eksepte erè" },
   "optionDesc_help": { "message": "Montre ekran èd" },
   "optionDesc_version": { "message": "Nimewo vèsyon" }

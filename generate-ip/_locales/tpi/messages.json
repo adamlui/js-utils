@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Ol Boolean opsen" },
   "helpSection_infoCmds": { "message": "Toksave" },
   "optionDesc_qty": { "message": "Toksave long adres IP(s)" },
+  "optionDesc_ipv6": { "message": "Toksave long adres IPv6" },
+  "optionDesc_mac": { "message": "Toksave long adres MAC" },
   "optionDesc_quiet": { "message": "Ol i save rausim olgeta tok i stap long en, tasol ol i no save mekim ol" },
   "optionDesc_help": { "message": "Painim piksa bilong helpim" },
   "optionDesc_version": { "message": "Tokim namba bilong Baibel" }

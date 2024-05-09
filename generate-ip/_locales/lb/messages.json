@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boolesche Optionen" },
   "helpSection_infoCmds": { "message": "Infobefehlungen" },
   "optionDesc_qty": { "message": "Generéiere n IP Adress(es)" },
+  "optionDesc_ipv6": { "message": "Generéiere IPv6 Adress" },
+  "optionDesc_mac": { "message": "MAC Adress generéieren" },
   "optionDesc_quiet": { "message": "Ënnerdréckt all Umeldung ausser Feeler" },
   "optionDesc_help": { "message": "Hëllefsbildschierm uweisen" },
   "optionDesc_version": { "message": "Versiounsnummer uweisen" }

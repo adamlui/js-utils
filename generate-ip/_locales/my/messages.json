@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boolean ရွေးစရာများ" },
   "helpSection_infoCmds": { "message": "သတင်းအချက်အလက်ဆိုင်ရာ ညွှန်ကြားချက်များ" },
   "optionDesc_qty": { "message": "N IP လိပ်စာကို Generate (es)" },
+  "optionDesc_ipv6": { "message": "IPv6 လိပ်စာ Generate" },
+  "optionDesc_mac": { "message": "MAC လိပ်စာ Generate" },
   "optionDesc_quiet": { "message": "အမှားအယွင်းများမှလွဲ ၍ လော့ဂ်အင်အားလုံးကိုဖိနှိပ်ပါ" },
   "optionDesc_help": { "message": "အကူအညီ မျက်နှာပြင်ကို ပြသပါ" },
   "optionDesc_version": { "message": "ဗားရှင်းနံပါတ်" }

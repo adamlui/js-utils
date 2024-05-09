@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boolean Options" },
   "helpSection_infoCmds": { "message": "བརྡ་དོན་བཀའ་སློབ །" },
   "optionDesc_qty": { "message": "IP Address(s) བཟོ་དགོས །" },
+  "optionDesc_ipv6": { "message": "IPv6 ཁ་བྱང་བཟོ །" },
+  "optionDesc_mac": { "message": "MAC ཁ་བྱང་བཟོ །" },
   "optionDesc_quiet": { "message": "འཛོལ་བ་མ་གཏོགས་གཞན་གྱི་མིང་ཐོ་ཚང་མ་ཕྱིར་འབུད་བྱེད་པ" },
   "optionDesc_help": { "message": "རོགས་རམ་བརྙན་རིས་མངོན་འཆར" },
   "optionDesc_version": { "message": "ཤོག་ངོས་ཀྱི་གྲངས་ཀ་སྟོན་པ" }

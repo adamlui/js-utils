@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Amahitamo" },
   "helpSection_infoCmds": { "message": "Amabwiriza" },
   "optionDesc_qty": { "message": "N AderesiS" },
+  "optionDesc_ipv6": { "message": "Aderesi" },
+  "optionDesc_mac": { "message": "Aderesi" },
   "optionDesc_quiet": { "message": "Byose Amakosa" },
   "optionDesc_help": { "message": "Ifashayobora Mugaragaza" },
   "optionDesc_version": { "message": "i Verisiyo Umubare" }

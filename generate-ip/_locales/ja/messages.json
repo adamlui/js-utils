@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Booleanオプション" },
   "helpSection_infoCmds": { "message": "INFOコマンド" },
   "optionDesc_qty": { "message": "N個のIPアドレスを生成する" },
+  "optionDesc_ipv6": { "message": "IPv 6アドレスを生成する" },
+  "optionDesc_mac": { "message": "MACアドレスを生成する" },
   "optionDesc_quiet": { "message": "エラーを除くすべてのロギングを抑制" },
   "optionDesc_help": { "message": "ヘルプ画面を表示" },
   "optionDesc_version": { "message": "バージョン番号" }

@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Zosankha za Boolean" },
   "helpSection_infoCmds": { "message": "ZOKHUDZ" },
   "optionDesc_qty": { "message": "Pangani adilesi ya IP (es)" },
+  "optionDesc_ipv6": { "message": "Pangani adilesi ya IPv6" },
+  "optionDesc_mac": { "message": "Pangani adilesi ya MAC" },
   "optionDesc_quiet": { "message": "Kupondereza mitengo yonse kupatula zolakwika" },
   "optionDesc_help": { "message": "Onetsani zenera lothandizira" },
   "optionDesc_version": { "message": "Onetsani nambala ya mtundu" }

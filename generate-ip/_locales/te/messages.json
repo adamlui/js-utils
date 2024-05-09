@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "బూలియన్ ఎంపికలు" },
   "helpSection_infoCmds": { "message": "సమాచార ఆదేశాలు" },
   "optionDesc_qty": { "message": "N IP చిరునామాను రూపొందించండి (లు)" },
+  "optionDesc_ipv6": { "message": "IPv6 చిరునామాను రూపొందించండి" },
+  "optionDesc_mac": { "message": "MAC చిరునామాను రూపొందించండి" },
   "optionDesc_quiet": { "message": "లోపాలు మినహా అన్ని లాగింగ్ ‌ లను అణచివేయండి" },
   "optionDesc_help": { "message": "సహాయక స్క్రీన్ ‌ ని ప్రదర్శించండి" },
   "optionDesc_version": { "message": "సంస్కరణ సంఖ్యను చూపించు" }

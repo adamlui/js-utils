@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boolean options" },
   "helpSection_infoCmds": { "message": "DITAELO TSA TSHEDIMOS" },
   "optionDesc_qty": { "message": "Generate n IP address(di)" },
+  "optionDesc_ipv6": { "message": "Tlhagisa aterese ya IPv6" },
+  "optionDesc_mac": { "message": "Tlhagisa aterese ya MAC" },
   "optionDesc_quiet": { "message": "Go emisa dikgogo tsotlhe kwantle ga diphoso" },
   "optionDesc_help": { "message": "SHOW HELP SCREEN" },
   "optionDesc_version": { "message": "SHOW VERSION NUMBER" }

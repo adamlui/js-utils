@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boolske muligheder" },
   "helpSection_infoCmds": { "message": "INFO-kommandoer" },
   "optionDesc_qty": { "message": "Generer n IP-adresse(r)" },
+  "optionDesc_ipv6": { "message": "Generer IPv6-adresse" },
+  "optionDesc_mac": { "message": "Generer MAC-adresse" },
   "optionDesc_quiet": { "message": "Undertrykke al logning undtagen fejl" },
   "optionDesc_help": { "message": "Vis hjælpeskærm" },
   "optionDesc_version": { "message": "Vis versionsnummer" }

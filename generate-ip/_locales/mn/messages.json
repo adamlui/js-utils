@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boolean хувилбарууд" },
   "helpSection_infoCmds": { "message": "Мэдээллийн командууд" },
   "optionDesc_qty": { "message": "N IP хаяг(es) үүсгэх" },
+  "optionDesc_ipv6": { "message": "IPv6 хаягийг үүсгэх" },
+  "optionDesc_mac": { "message": "MAC хаягийг үүсгэх" },
   "optionDesc_quiet": { "message": "Алдаанаас бусад бүх бүртгэлийг арилгах" },
   "optionDesc_help": { "message": "Тусламжийн дэлгэцийг харуулах" },
   "optionDesc_version": { "message": "Хувилбарын дугаар" }

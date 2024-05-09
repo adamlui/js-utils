@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Логические параметры" },
   "helpSection_infoCmds": { "message": "Информационные команды" },
   "optionDesc_qty": { "message": "Сгенерировать n IP-адресов" },
+  "optionDesc_ipv6": { "message": "Сгенерировать IPv6-адрес" },
+  "optionDesc_mac": { "message": "Сгенерировать MAC-адрес" },
   "optionDesc_quiet": { "message": "Подавление всех журналов, кроме ошибок" },
   "optionDesc_help": { "message": "Показать экран помощи" },
   "optionDesc_version": { "message": "Показать сведения о версии" }

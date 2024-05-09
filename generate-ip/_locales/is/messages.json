@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boole-valkostir" },
   "helpSection_infoCmds": { "message": "Upplýsingaskipanir" },
   "optionDesc_qty": { "message": "Búa til n IP tölu (r)" },
+  "optionDesc_ipv6": { "message": "Búa til IPv6 vistfang" },
+  "optionDesc_mac": { "message": "Búa til Mac vistfang" },
   "optionDesc_quiet": { "message": "Slökkva á öllum innskráningum nema villum" },
   "optionDesc_help": { "message": "Birta hjálparskjá" },
   "optionDesc_version": { "message": "Útgáfunúmer" }

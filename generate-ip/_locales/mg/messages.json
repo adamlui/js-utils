@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Safidy Boleanina" },
   "helpSection_infoCmds": { "message": "Baikon'ny fampahalalana" },
   "optionDesc_qty": { "message": "Hiteraka adiresy IP (es)" },
+  "optionDesc_ipv6": { "message": "Mamorona adiresy IPv6" },
+  "optionDesc_mac": { "message": "Mamorona adiresy MAC" },
   "optionDesc_quiet": { "message": "Hanafoana ny logging rehetra afa-tsy fahadisoana" },
   "optionDesc_help": { "message": "Asehoy ny efijerin'ny toro-làlana" },
   "optionDesc_version": { "message": "Asehoy ny isan'ny kinova" }

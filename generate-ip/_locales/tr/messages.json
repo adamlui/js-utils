@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boole seçenekleri" },
   "helpSection_infoCmds": { "message": "Bilgi komutları" },
   "optionDesc_qty": { "message": "IP adres(ler) i oluştur" },
+  "optionDesc_ipv6": { "message": "IPv6 adresi oluştur" },
+  "optionDesc_mac": { "message": "Mac adresi oluştur" },
   "optionDesc_quiet": { "message": "Hatalar hariç tüm günlükleri bastır" },
   "optionDesc_help": { "message": "Yardım ekranını görüntüle" },
   "optionDesc_version": { "message": "Versiyon Numarası " }

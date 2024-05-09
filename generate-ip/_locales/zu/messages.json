@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Izinketho ze-boolean" },
   "helpSection_infoCmds": { "message": "Imiyalo yemininingwane" },
   "optionDesc_qty": { "message": "Khiqiza amakheli e-IP" },
+  "optionDesc_ipv6": { "message": "Khiqiza ikheli le-IPv6" },
+  "optionDesc_mac": { "message": "Khiqiza ikheli le-MAC" },
   "optionDesc_quiet": { "message": "Cindezela konke ukungena ngemvume ngaphandle kwamaphutha" },
   "optionDesc_help": { "message": "Bonisa isikrini sosizo" },
   "optionDesc_version": { "message": "Veza inombolo yohlelo" }

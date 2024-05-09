@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Options" },
   "helpSection_infoCmds": { "message": "Commandes info" },
   "optionDesc_qty": { "message": "Générer n adresse(s) IP" },
+  "optionDesc_ipv6": { "message": "Générer une adresse IPv6" },
+  "optionDesc_mac": { "message": "Générer une adresse MAC" },
   "optionDesc_quiet": { "message": "Supprimer tous les journaux sauf les erreurs" },
   "optionDesc_help": { "message": "Affichage de l’aide" },
   "optionDesc_version": { "message": "Affiche le numéro de la version" }

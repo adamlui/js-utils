@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Filifiliga Boolean" },
   "helpSection_infoCmds": { "message": "Poloaiga Info" },
   "optionDesc_qty": { "message": "Fausia n IP tuatusi(es)" },
+  "optionDesc_ipv6": { "message": "Fausia IPv6 tuatusi" },
+  "optionDesc_mac": { "message": "Fausia le tuatusi MAC" },
   "optionDesc_quiet": { "message": "Suppress logging uma vagana ai mea sese" },
   "optionDesc_help": { "message": "Faaali atu le lau fesoasoani" },
   "optionDesc_version": { "message": "Faaali atu le numera o le lomiga" }

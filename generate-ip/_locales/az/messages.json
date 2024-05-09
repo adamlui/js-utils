@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Buolean seçimləri" },
   "helpSection_infoCmds": { "message": "Məlumat əmrləri" },
   "optionDesc_qty": { "message": "N İP ünvan(lar) ı yaradın" },
+  "optionDesc_ipv6": { "message": "IPv6 ünvanı yaradın" },
+  "optionDesc_mac": { "message": "Mac ünvanı yaradın" },
   "optionDesc_quiet": { "message": "Xətalardan başqa bütün girişləri bağlayın" },
   "optionDesc_help": { "message": "Yardım ekranını göstər" },
   "optionDesc_version": { "message": "Versiya nömrəsini göstər" }

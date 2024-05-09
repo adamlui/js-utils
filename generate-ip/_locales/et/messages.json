@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Tõeväärtuse valikud" },
   "helpSection_infoCmds": { "message": "Teabekäsud" },
   "optionDesc_qty": { "message": "Genereeri n IP-aadressi" },
+  "optionDesc_ipv6": { "message": "Genereeri IPv6 aadress" },
+  "optionDesc_mac": { "message": "Loo MAC-aadress" },
   "optionDesc_quiet": { "message": "Tühista kogu logimine, välja arvatud vead" },
   "optionDesc_help": { "message": "Abi ekraani kuvamine" },
   "optionDesc_version": { "message": "Näitab versiooni" }

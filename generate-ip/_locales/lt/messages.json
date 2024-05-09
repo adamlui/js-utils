@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Loginės parinktys" },
   "helpSection_infoCmds": { "message": "Informacijos komandos" },
   "optionDesc_qty": { "message": "Generuoti n IP adresą(-us)" },
+  "optionDesc_ipv6": { "message": "Generuoti IPv6 adresą" },
+  "optionDesc_mac": { "message": "Generuoti Mac adresą" },
   "optionDesc_quiet": { "message": "Slėpti visus registravimus, išskyrus klaidas" },
   "optionDesc_help": { "message": "Rodyti pagalbos ekraną" },
   "optionDesc_version": { "message": "Versijos numeris" }

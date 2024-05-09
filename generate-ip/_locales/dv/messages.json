@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boolean options" },
   "helpSection_infoCmds": { "message": "އިންފޯ ކޮމާންޑުތައް" },
   "optionDesc_qty": { "message": "ޖެނެރޭޓް އެން އައިޕީ އެޑްރެސް (އެސް)" },
+  "optionDesc_ipv6": { "message": "އައިޕީވީ6 އެޑްރެސް ޖެނެރޭޓްކުރުން" },
+  "optionDesc_mac": { "message": "މެކް އެޑްރެސް ޖެނެރޭޓްކުރުން" },
   "optionDesc_quiet": { "message": "ކުށްތައް ފިޔަވައި އެހެން ހުރިހާ ލޮގިންއެއް ހުއްޓުވާ" },
   "optionDesc_help": { "message": "ހެލްޕް ސްކްރީން ޑިސްޕްލޭ ކުރޭ" },
   "optionDesc_version": { "message": "ވާޝަން ނަންބަރު ދައްކާ" }

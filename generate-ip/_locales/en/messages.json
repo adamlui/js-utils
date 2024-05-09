@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boolean options" },
   "helpSection_infoCmds": { "message": "Info commands" },
   "optionDesc_qty": { "message": "Generate n IP address(es)" },
+  "optionDesc_ipv6": { "message": "Generate IPv6 address" },
+  "optionDesc_mac": { "message": "Generate MAC address" },
   "optionDesc_quiet": { "message": "Suppress all logging except errors" },
   "optionDesc_help": { "message": "Display help screen" },
   "optionDesc_version": { "message": "Show version number" }

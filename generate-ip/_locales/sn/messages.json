@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Boolean zvokusarudza" },
   "helpSection_infoCmds": { "message": "Info mirairo" },
   "optionDesc_qty": { "message": "Gadzira n IP kero(es)" },
+  "optionDesc_ipv6": { "message": "Gadzira IPv6 kero" },
+  "optionDesc_mac": { "message": "Gadzira MAC kero" },
   "optionDesc_quiet": { "message": "Dzvinyirira kutema matanda ese kunze kwekukanganisa" },
   "optionDesc_help": { "message": "Ratidza chidzitiro chekubatsira" },
   "optionDesc_version": { "message": "Ratidza nhamba yeshanduro" }

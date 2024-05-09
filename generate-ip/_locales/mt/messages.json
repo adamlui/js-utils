@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Għażliet boolean" },
   "helpSection_infoCmds": { "message": "Kmand tal-informazzjoni" },
   "optionDesc_qty": { "message": "Iġġenera n indirizz(i) IP" },
+  "optionDesc_ipv6": { "message": "Iġġenera l-indirizz IPv6" },
+  "optionDesc_mac": { "message": "Iġġenera l-indirizz MAC" },
   "optionDesc_quiet": { "message": "Waqqaf il-logging kollu ħlief l-iżbalji" },
   "optionDesc_help": { "message": "Uri l-iskrin tal-għajnuna" },
   "optionDesc_version": { "message": "Version Number" }

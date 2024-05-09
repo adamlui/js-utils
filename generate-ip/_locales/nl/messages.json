@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Booleaanse opties" },
   "helpSection_infoCmds": { "message": "Info commando 's" },
   "optionDesc_qty": { "message": "Genereer n IP-adres(sen)" },
+  "optionDesc_ipv6": { "message": "IPv6-adres genereren" },
+  "optionDesc_mac": { "message": "MAC-adres genereren" },
   "optionDesc_quiet": { "message": "Alle logboekregistraties onderdrukken, behalve fouten" },
   "optionDesc_help": { "message": "Hulpscherm weergeven" },
   "optionDesc_version": { "message": "Het versienummer tonen" }

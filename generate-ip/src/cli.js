@@ -153,8 +153,8 @@ const pkgName = 'generate-ip',
             ],
             'flags': [
                 `\n${bw}o ${ msgs.helpSection_flags || 'Boolean options' }:${nc}`,
-                ' -6, --ipv6                  Generate IPv6 address.',
-                ' -m, --mac                   Generate MAC address.',
+                ` -6, --ipv6                  ${ msgs.optionDesc_ipv6 || 'Generate IPv6 address' }.`,
+                ` -m, --mac                   ${ msgs.optionDesc_mac || 'Generate MAC address' }.`,
                 ` -q, --quiet                 ${ msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`
             ],
             'infoCmds': [

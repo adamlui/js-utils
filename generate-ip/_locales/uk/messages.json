@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Логічні параметри" },
   "helpSection_infoCmds": { "message": "Інформаційні команди" },
   "optionDesc_qty": { "message": "Створити n IP-адрес" },
+  "optionDesc_ipv6": { "message": "Створити адресу IPv6" },
+  "optionDesc_mac": { "message": "Створити MAC-адресу" },
   "optionDesc_quiet": { "message": "Придушити всі журнали, крім помилок" },
   "optionDesc_help": { "message": "Відобразити екран довідки" },
   "optionDesc_version": { "message": "Показати номер версії програми" }

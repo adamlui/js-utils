@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Opsi boolean" },
   "helpSection_infoCmds": { "message": "Perintah info" },
   "optionDesc_qty": { "message": "Hasilkan n alamat IP" },
+  "optionDesc_ipv6": { "message": "Buat alamat IPv6" },
+  "optionDesc_mac": { "message": "Buat alamat Mac" },
   "optionDesc_quiet": { "message": "Cegah semua pencatatan kecuali kesalahan" },
   "optionDesc_help": { "message": "Tampilkan layar bantuan" },
   "optionDesc_version": { "message": "Nomor Versi" }

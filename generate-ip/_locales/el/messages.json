@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Δυαδικές επιλογές" },
   "helpSection_infoCmds": { "message": "Εντολές πληροφοριών" },
   "optionDesc_qty": { "message": "Δημιουργία n διευθύνσεων IP" },
+  "optionDesc_ipv6": { "message": "Δημιουργία διεύθυνσης IPv6" },
+  "optionDesc_mac": { "message": "Δημιουργία διεύθυνσης Mac" },
   "optionDesc_quiet": { "message": "Καταργήστε όλες τις καταγραφές εκτός από τα σφάλματα" },
   "optionDesc_help": { "message": "Εμφάνιση οθόνης βοήθειας" },
   "optionDesc_version": { "message": "Αριθμός έκδοσης" }

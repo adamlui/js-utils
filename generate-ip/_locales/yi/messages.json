@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "בוליאַן אָפּציעס" },
   "helpSection_infoCmds": { "message": "אינפֿאָרמאַציע קאַמאַנדז" },
   "optionDesc_qty": { "message": "דזשענערייט n IP אַדרעס (עס)" },
+  "optionDesc_ipv6": { "message": "שאַפֿן IPv6 אַדרעס" },
+  "optionDesc_mac": { "message": "שאַפֿן MAC אַדרעס" },
   "optionDesc_quiet": { "message": "פאַרשטיקן אַלע לאָגינג אַחוץ ערראָרס" },
   "optionDesc_help": { "message": "ווייַז הילף פאַרשטעלן" },
   "optionDesc_version": { "message": "ווייַזן ווערסיע נומער" }

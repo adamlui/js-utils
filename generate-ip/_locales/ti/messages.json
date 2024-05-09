@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "ናይ ቡሊያን ኣማራጺታት" },
   "helpSection_infoCmds": { "message": "መምርሒታት ሓበሬታ" },
   "optionDesc_qty": { "message": "N IP ኣድራሻ(es) ኣማዕብል" },
+  "optionDesc_ipv6": { "message": "ኣድራሻ IPv6 ኣማዕብል" },
+  "optionDesc_mac": { "message": "ኣድራሻ MAC ኣማዕብል" },
   "optionDesc_quiet": { "message": "ጌጋታት እንተዘይኮይኑ ፡ ንዅሉ ምዝገባታት ኣጥፍእ" },
   "optionDesc_help": { "message": "ናይ ሓገዝ ስክሪን ኣርኢ" },
   "optionDesc_version": { "message": "ናይ ቅጅል ቁጽሪ ኣርኢ" }

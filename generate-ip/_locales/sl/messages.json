@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Logične možnosti" },
   "helpSection_infoCmds": { "message": "Info ukazi" },
   "optionDesc_qty": { "message": "Ustvari n naslovov IP" },
+  "optionDesc_ipv6": { "message": "Ustvari naslov IPv6" },
+  "optionDesc_mac": { "message": "Ustvari naslov Mac" },
   "optionDesc_quiet": { "message": "Prepreči vse beleženje, razen napak" },
   "optionDesc_help": { "message": "Prikaži zaslon za pomoč" },
   "optionDesc_version": { "message": "Prikaži številko različice" }

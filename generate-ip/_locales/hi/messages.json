@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "बूलियन विकल्प" },
   "helpSection_infoCmds": { "message": "जानकारी कमांड" },
   "optionDesc_qty": { "message": "N IP पता(पते) जनरेट करें" },
+  "optionDesc_ipv6": { "message": "IPv6 पता जनरेट करें" },
+  "optionDesc_mac": { "message": "MAC पता जनरेट करें" },
   "optionDesc_quiet": { "message": "त्रुटियों को छोड़कर सभी लॉगिंग को दबाएं" },
   "optionDesc_help": { "message": "सहायता स्क्रीन दिखाएँ" },
   "optionDesc_version": { "message": "संस्करण संख्या" }

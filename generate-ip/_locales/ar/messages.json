@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "خيارات منطقية" },
   "helpSection_infoCmds": { "message": "أوامر المعلومات" },
   "optionDesc_qty": { "message": "إنشاء عنوان(عناوين) IP" },
+  "optionDesc_ipv6": { "message": "إنشاء عنوان IPv6" },
+  "optionDesc_mac": { "message": "إنشاء عنوان MAC" },
   "optionDesc_quiet": { "message": "قم بإيقاف جميع عمليات التسجيل باستثناء الأخطاء" },
   "optionDesc_help": { "message": "عرض شاشة المساعدة" },
   "optionDesc_version": { "message": "رقم الإصدار" }

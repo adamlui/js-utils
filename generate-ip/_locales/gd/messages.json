@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Roghainnean Boole" },
   "helpSection_infoCmds": { "message": "Àithnean fiosrachaidh" },
   "optionDesc_qty": { "message": "Cuir a - steach seòladh IP (ean)" },
+  "optionDesc_ipv6": { "message": "Cruthaich seòladh IPv6" },
+  "optionDesc_mac": { "message": "Generate MAC address" },
   "optionDesc_quiet": { "message": "Cuir às do gach logadh ach a - mhàin mearachdan" },
   "optionDesc_help": { "message": "Seall sgrìn na cobhair" },
   "optionDesc_version": { "message": "Seall àireamh an tionndaidh" }

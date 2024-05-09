@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Nā koho Boolean" },
   "helpSection_infoCmds": { "message": "Nā kauoha ʻike" },
   "optionDesc_qty": { "message": "E hana i n IP address(es)" },
+  "optionDesc_ipv6": { "message": "E hana i ka helu IPv6" },
+  "optionDesc_mac": { "message": "E hana i ka helu MAC" },
   "optionDesc_quiet": { "message": "Kāohi i ka hoʻopaʻa inoa a pau koe nā hewa" },
   "optionDesc_help": { "message": "Hōʻike i ka pale kōkua" },
   "optionDesc_version": { "message": "Hōʻike i ka helu mana" }

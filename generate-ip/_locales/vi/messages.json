@@ -20,6 +20,8 @@
   "helpSection_flags": { "message": "Tùy chọn Boolean" },
   "helpSection_infoCmds": { "message": "Lệnh thông tin" },
   "optionDesc_qty": { "message": "Tạo n địa chỉ IP" },
+  "optionDesc_ipv6": { "message": "Tạo địa chỉ IPv6" },
+  "optionDesc_mac": { "message": "Tạo địa chỉ MAC" },
   "optionDesc_quiet": { "message": "Chặn tất cả ghi nhật ký ngoại trừ lỗi" },
   "optionDesc_help": { "message": "Hiển thị màn hình trợ giúp" },
   "optionDesc_version": { "message": "Số Phiên bản" }
