@@ -20,8 +20,8 @@ jobs:
         id: get-downloads
         run: |
           LC_NUMERIC=en_US # to insert commas
-          npm_packages=("@adamlui/geolocate" "@adamlui/minify.js" "@adamlui/scss-to-css" "generate-ip" "generate-pw" "gulp-minify.js")
-          jsd_packages=("@adamlui/geolocate" "generate-ip" "generate-pw")
+          npm_pkgs=("@adamlui/geolocate" "@adamlui/minify.js" "@adamlui/scss-to-css" "generate-ip" "generate-pw" "gulp-minify.js")
+          jsd_pkgs=("@adamlui/geolocate" "generate-ip" "generate-pw")
 
           expand_num() { # expand nums abbreviated w/ 'k' or 'm' suffix to integers
             local num=$(echo "$1" | tr '[:upper:]' '[:lower:]') # convert to lowercase
@@ -60,7 +60,7 @@ jobs:
           }
 
           # Fetch/sum download counts
-          for pkg in "${npm_packages[@]}" ; do
+          for pkg in "${npm_pkgs[@]}" ; do
             pkg_downloads=$(curl -s "https://img.shields.io/npm/dm/$pkg.svg" |
               sed -n 's/.*<title>downloads: \([0-9,.km]\+\).*<\/title>.*/\1/Ip')
             pkg_downloads=$(expand_num "$pkg_downloads")
@@ -69,7 +69,7 @@ jobs:
           done ; echo -e "\nTotal npm downloads: $total_downloads\n"
 
           # Fetch/sum jsDelivr hits
-          for pkg in "${jsd_packages[@]}" ; do
+          for pkg in "${jsd_pkgs[@]}" ; do
             pkg_hits=$(curl -s "https://img.shields.io/jsdelivr/npm/hm/$pkg.svg" |
               sed -n -E 's|.*<title>jsdelivr: ([0-9,.km]+).*</title>.*|\1|Ip')
             pkg_hits=$(expand_num "$pkg_hits")
