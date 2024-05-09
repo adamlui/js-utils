@@ -13,46 +13,46 @@ bg="\033[1;92m" # bright green
 bw="\033[1;97m" # bright white
 
 # Validate version arg
-VERSION_TYPES=("major" "minor" "patch")
-if [[ ! "${VERSION_TYPES[@]}" =~ "$1" ]] ; then
+version_types=("major" "minor" "patch")
+if [[ ! "${version_types[@]}" =~ "$1" ]] ; then
     echo "${br}Invalid version argument. Please specify 'major', 'minor', or 'patch'.${nc}"
     exit 1 ; fi
 
 # Determine new version to bump to
-OLD_VERSION=$(node -pe "require('./package.json').version")
-IFS='.' read -ra SUBVERS <<< "$OLD_VERSION" # split OLD_VERSION into SUBVERS array
-case $1 in # edit SUBVERS based on version type
-    "patch") SUBVERS[2]=$((SUBVERS[2] + 1)) ;;
-    "minor") SUBVERS[1]=$((SUBVERS[1] + 1)) ; SUBVERS[2]=0 ;;
-    "major") SUBVERS[0]=$((SUBVERS[0] + 1)) ; SUBVERS[1]=0 ; SUBVERS[2]=0 ;;
+old_version=$(node -pe "require('./package.json').version")
+IFS='.' read -ra subvers <<< "$old_version" # split old_version into subvers array
+case $1 in # edit subvers based on version type
+    "patch") subvers[2]=$((subvers[2] + 1)) ;;
+    "minor") subvers[1]=$((subvers[1] + 1)) ; subvers[2]=0 ;;
+    "major") subvers[0]=$((subvers[0] + 1)) ; subvers[1]=0 ; subvers[2]=0 ;;
 esac
-NEW_VERSION=$(printf "%s.%s.%s" "${SUBVERS[@]}")
+new_version=$(printf "%s.%s.%s" "${subvers[@]}")
 
 # Bump version in package.json + package-lock.json
 echo -e "${by}Bumping versions in package manifests...${bw}"
-npm version --no-git-tag-version "$NEW_VERSION"
+npm version --no-git-tag-version "$new_version"
 
 # Bump versions in READMEs
 echo -e "${by}\nBumping versions in READMEs...${bw}"
-PACKAGE_NAME=$(node -pe "require('./package.json').name" | sed -e 's/^@[a-zA-Z0-9-]*\///' -e 's/^@//')
-SED_ACTIONS=(
+pkg_name=$(node -pe "require('./package.json').name" | sed -e 's/^@[a-zA-Z0-9-]*\///' -e 's/^@//')
+sed_actions=(
     # Latest Build shield link
-    -exec sed -i -E "s|(tag/[^0-9]+)[0-9]+\.[0-9]+\.[0-9]+|\1$NEW_VERSION|g" {} +   
+    -exec sed -i -E "s|(tag/[^0-9]+)[0-9]+\.[0-9]+\.[0-9]+|\1$new_version|g" {} +   
     # Latest Build shield src
-    -exec sed -i -E "s|[0-9.]+(-.*logo=icinga)|$NEW_VERSION\1|" {} + 
+    -exec sed -i -E "s|[0-9.]+(-.*logo=icinga)|$new_version\1|" {} + 
     # Minified Size shield link/src
-    -exec sed -i -E "s|-[0-9]+\.[0-9]+\.[0-9]+([^.]\|$)|-$NEW_VERSION\1|g" {} +
+    -exec sed -i -E "s|-[0-9]+\.[0-9]+\.[0-9]+([^.]\|$)|-$new_version\1|g" {} +
     # jsDelivr ver tags in import section
-    -exec sed -i -E "s|@([0-9]+\.[0-9]+\.[0-9]+)|@$NEW_VERSION|g" {} +
+    -exec sed -i -E "s|@([0-9]+\.[0-9]+\.[0-9]+)|@$new_version|g" {} +
 )
-find . -name 'README.md' "${SED_ACTIONS[@]}"
-echo "v$NEW_VERSION"
+find . -name 'README.md' "${sed_actions[@]}"
+echo "v$new_version"
 
 # Commit bumps to Git
 echo -e "${by}\nCommitting bumps to Git...\n${nc}"
 find . -name "README.md" -exec git add {} +
 git add package*.json
-git commit -n -m "Bumped $PACKAGE_NAME versions to $NEW_VERSION"
+git commit -n -m "Bumped $pkg_name versions to $new_version"
 
 # Build minified JS to dist/
 echo -e "${by}\nBuilding minified JS...\n${nc}"
@@ -60,19 +60,19 @@ bash utils/build.sh
 
 # Update jsDelivr URLs for GitHub assets w/ commit hash
 echo -e "${by}\nUpdating jsDelivr URLs for GitHub assets w/ commit hash...${nc}"
-BUMP_HASH=$(git rev-parse HEAD)
-OLD_FILE=$(<dist/cli.min.js)
-sed -i -E "s|(cdn\.jsdelivr\.net\/gh\/[^/]+\/[^@/\"']+)[^/\"']*|\1@$BUMP_HASH|g" dist/cli.min.js
-NEW_FILE=$(<dist/cli.min.js)
-if [[ "$OLD_FILE" != "$NEW_FILE" ]]
-    then echo -e "${bw}$BUMP_HASH${nc}"
+bump_hash=$(git rev-parse HEAD)
+old_file=$(<dist/cli.min.js)
+sed -i -E "s|(cdn\.jsdelivr\.net\/gh\/[^/]+\/[^@/\"']+)[^/\"']*|\1@$bump_hash|g" dist/cli.min.js
+new_file=$(<dist/cli.min.js)
+if [[ "$old_file" != "$new_file" ]]
+    then echo -e "${bw}$bump_hash${nc}"
     else echo "No jsDelivr URLs for GH assets found in built files"
 fi
 
 # Commit build to Git
 echo -e "${by}\nCommitting build to Git...\n${nc}"
 git add ./dist/*.js
-git commit -n -m "Built $PACKAGE_NAME v$NEW_VERSION"
+git commit -n -m "Built $pkg_name v$new_version"
 
 # Push all changes to GiHub
 echo -e "${by}\nPushing to GitHub...\n${nc}"
@@ -84,6 +84,6 @@ if [[ "$*" == *"--publish"* ]] ; then
     npm publish ; fi
 
 # Print final summary
-echo -e "\n${bg}Successfully bumped to v$NEW_VERSION$(
+echo -e "\n${bg}Successfully bumped to v$new_version$(
     [[ "$*" == *"--publish"* ]] && echo ' and published to npm' || echo ''
 )!${nc}"
