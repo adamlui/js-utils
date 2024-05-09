@@ -21,7 +21,8 @@ jobs:
         run: |
           LC_NUMERIC=en_US # to insert commas
           npm_pkgs=("@adamlui/geolocate" "@adamlui/minify.js" "@adamlui/scss-to-css" "generate-ip" "generate-pw" "gulp-minify.js")
-          jsd_pkgs=("@adamlui/geolocate" "generate-ip" "generate-pw")
+          jsd_npm_pkgs=("@adamlui/geolocate" "generate-ip" "generate-pw")
+          jsd_gh_repos=("adamlui/js-utils" "adamlui/minify.js" "adamlui/scss-to-css")
 
           expand_num() { # expand nums abbreviated w/ 'k' or 'm' suffix to integers
             local num=$(echo "$1" | tr '[:upper:]' '[:lower:]') # convert to lowercase
@@ -59,22 +60,31 @@ jobs:
             echo "$formatted_num"
           }
 
-          # Fetch/sum download counts
+          # Fetch/sum npm download counts
           for pkg in "${npm_pkgs[@]}" ; do
             pkg_downloads=$(curl -s "https://img.shields.io/npm/dm/$pkg.svg" |
               sed -n 's/.*<title>downloads: \([0-9,.km]\+\).*<\/title>.*/\1/Ip')
             pkg_downloads=$(expand_num "$pkg_downloads")
-            echo "$pkg downloads: $pkg_downloads"
+            echo "$pkg npm downloads: $pkg_downloads"
             total_downloads=$((total_downloads + pkg_downloads))
           done ; echo -e "\nTotal npm downloads: $total_downloads\n"
 
-          # Fetch/sum jsDelivr hits
-          for pkg in "${jsd_pkgs[@]}" ; do
+          # Fetch/sum jsDelivr hits for npm pkgs
+          for pkg in "${jsd_npm_pkgs[@]}" ; do
             pkg_hits=$(curl -s "https://img.shields.io/jsdelivr/npm/hm/$pkg.svg" |
               sed -n -E 's|.*<title>jsdelivr: ([0-9,.km]+).*</title>.*|\1|Ip')
             pkg_hits=$(expand_num "$pkg_hits")
-            echo "$pkg jsDelivr hits: $pkg_hits"
+            echo "$pkg npm jsDelivr hits: $pkg_hits"
             total_hits=$((total_hits + pkg_hits))
+          done
+
+          # Fetch/sum jsDelivr hits for GH repos
+          for repo in "${jsd_gh_repos[@]}" ; do
+            repo_hits=$(curl -s "https://img.shields.io/jsdelivr/gh/hm/$repo.svg" |
+              sed -n -E 's|.*<title>jsdelivr: ([0-9,.km]+).*</title>.*|\1|Ip')
+            repo_hits=$(expand_num "$repo_hits")
+            echo "$repo GH jsDelivr hits: $repo_hits"
+            total_hits=$((total_hits + repo_hits))
           done ; echo -e "\nTotal jsDelivr hits: $total_hits\n"
 
           # Format totals
