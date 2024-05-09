@@ -269,14 +269,14 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 
 ## 🛠️ Utilidades relacionadas
 
-### [</> minify.js (Gulp)](https://gulp.minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
+### [</> minify.js (Gulp)](https://gulp.minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
 
 > Complemento Gulp para minimizar recursivamente todos los archivos JavaScript.
 <br>[Instalar](https://gulp.minify-js.org/#-installation) /
 [Léame](https://gulp.minify-js.org/#readme) /
 [Conversar](https://github.minify-js.org/discussions)
 
-### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
+### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
 
 > Recursively compile all SCSS files into minified CSS.
 <br>[Instalar](https://node.scsstocss.org/#-installation) /

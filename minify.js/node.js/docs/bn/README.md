@@ -271,14 +271,14 @@ findJS() » Check returned array.
 
 ## 🛠️ সম্পর্কিত ইউটিলিটি
 
-### [</> minify.js (Gulp)](https://gulp.minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
+### [</> minify.js (Gulp)](https://gulp.minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
 
 > সমস্ত জাভাস্ক্রিপ্ট ফাইলকে পুনরাবৃত্তভাবে ছোট করতে Gulp প্লাগ-ইন করুন।
 <br>[ইনস্টল করুন](https://gulp.minify-js.org/#-installation) /
 [রিডমি](https://gulp.minify-js.org/#readme) /
 [আলোচনা করা](https://github.minify-js.org/discussions)
 
-### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
+### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
 
 > পুনরাবৃত্তভাবে সমস্ত SCSS ফাইল মিনিফাইড CSS-এ কম্পাইল করুন।
 <br>[ইনস্টল করুন](https://node.scsstocss.org/#-installation) /

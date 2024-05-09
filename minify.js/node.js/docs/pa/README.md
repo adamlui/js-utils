@@ -268,14 +268,14 @@ findJS() » Check returned array.
 
 ## 🛠️ ਸੰਬੰਧਿਤ ਉਪਯੋਗਤਾਵਾਂ
 
-### [</> minify.js (Gulp)](https://gulp.minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
+### [</> minify.js (Gulp)](https://gulp.minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
 
 > Gulp ਪਲੱਗ-ਇਨ ਸਾਰੀਆਂ JavaScript ਫਾਈਲਾਂ ਨੂੰ ਮੁੜ ਤੋਂ ਘੱਟ ਕਰਨ ਲਈ।
 <br>[ਇੰਸਟਾਲ ਕਰੋ](https://gulp.minify-js.org/#-installation) /
 [ਪੜ੍ਹੋ](https://gulp.minify-js.org/#readme) /
 [ਚਰਚਾ ਕਰੋ](https://github.minify-js.org/discussions)
 
-### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
+### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
 
 > ਸਾਰੀਆਂ SCSS ਫਾਈਲਾਂ ਨੂੰ ਬਾਰ ਬਾਰ ਮਿਨੀਫਾਈਡ CSS ਵਿੱਚ ਕੰਪਾਇਲ ਕਰੋ।
 <br>[ਇੰਸਟਾਲ ਕਰੋ](https://node.scsstocss.org/#-installation) /

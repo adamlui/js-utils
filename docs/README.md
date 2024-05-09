@@ -20,7 +20,7 @@ Essential JavaScript libraries/utilities for Node.js and the web
 [CLI usage](../generate-ip#-command-line-usage) /
 [Discuss](https://github.js-utils.com/discussions)
 
-### [🔒 generate-pw](../generate-pw) <a href="https://github.com/toolleeo/cli-apps#password-managers"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?7b16322"></a>
+### [🔒 generate-pw](../generate-pw) &nbsp;<a href="https://github.com/toolleeo/cli-apps#password-managers"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?7b16322"></a>
 
 > Randomly generate, strengthen, and validate cryptographically-secure passwords.
 <br>[Install](../generate-pw#-installation) /
@@ -44,7 +44,7 @@ Essential JavaScript libraries/utilities for Node.js and the web
 <br>[Download](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
 [Discuss](https://github.js-utils.com/discussions)
 
-### [</> minify.js](../minify.js) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?7b16322"></a>
+### [</> minify.js](../minify.js) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?7b16322"></a>
 
 > Recursively minify all JavaScript files.
 <br>[Install](../minify.js/node.js#-installation) /
@@ -53,7 +53,7 @@ Essential JavaScript libraries/utilities for Node.js and the web
 [API usage](../minify.js/node.js#-api-usage) /
 [Discuss](https://github.js-utils.com/discussions)
 
-### [{ } scss-to-css](../scss-to-css/node.js) <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?7b16322"></a>
+### [{ } scss-to-css](../scss-to-css/node.js) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://media.js-utils.com/images/badges/awesome/badge.svg?7b16322"></a>
 
 > Recursively compile all SCSS files into minified CSS.
 <br>[Install](../scss-to-css/node.js/#-installation) /
