@@ -356,6 +356,8 @@ Parameter options:
  --qty=n                     Generate n IP address(es).
 
 Boolean options:
+ -6, --ipv6                  Generate IPv6 address.
+ -m, --mac                   Generate MAC address.
  -q, --quiet                 Suppress all logging except errors.
 
 Info commands:

@@ -9,7 +9,7 @@ const pkgName = 'generate-ip',
 (async () => {
 
     // Import LIBS
-    const { ipv4 } = require(__dirname.match(/src/) ? './generate-ip' : './generate-ip.min'),
+    const { ipv4, ipv6, mac } = require(__dirname.match(/src/) ? './generate-ip' : './generate-ip.min'),
           fs = require('fs'), path = require('path'),
           { execSync } = require('child_process'); // for --version cmd + cross-platform copying
 
@@ -58,7 +58,11 @@ const pkgName = 'generate-ip',
     const config = {};
     const reArgs = {
         paramOptions: { 'qty': /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
-        flags: { 'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/ },
+        flags: {
+            'ipv6mode': /^--?(?:ip)?v?6(?:-?mode)?$/,
+            'macMode': /^--?m(?:ac)?(?:-?mode)?$/,
+            'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
+        },
         infoCmds: { 'help': /^--?h(?:elp)?$/, 'version': /^--?ve?r?s?i?o?n?$/ }
     };
     process.argv.forEach(arg => {
@@ -111,7 +115,10 @@ const pkgName = 'generate-ip',
         console.info(`${ msgs.prefix_localVer || 'Local version' }: ${localVer}`);
 
     } else { // log/copy RESULT(S)
-        const ipResult = ipv4.generate({ qty: config.qty || 1, verbose: !config.quietMode });
+        const genOptions = { qty: config.qty || 1, verbose: !config.quietMode },
+              ipResult = config.ipv6mode ? ipv6.generate(genOptions)
+                        : config.macMode ? mac.generate(genOptions)
+                                         : ipv4.generate(genOptions);
         printIfNotQuiet(`\n${ msgs.info_copying || 'Copying to clipboard' }...`);
         copyToClipboard(Array.isArray(ipResult) ? ipResult.join('\n') : ipResult);
     }
@@ -146,6 +153,8 @@ const pkgName = 'generate-ip',
             ],
             'flags': [
                 `\n${bw}o ${ msgs.helpSection_flags || 'Boolean options' }:${nc}`,
+                ' -6, --ipv6                  Generate IPv6 address.',
+                ' -m, --mac                   Generate MAC address.',
                 ` -q, --quiet                 ${ msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`
             ],
             'infoCmds': [
