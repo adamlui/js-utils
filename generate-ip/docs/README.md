@@ -345,7 +345,7 @@ Sample output:
 
 <img src="https://media.generate-ip.org/images/screenshots/cli/generate-ip-cmd-output.png?7b16322">
 
-📝 **Note:** To generate other address types, use `generate-ipv6` or `generate-mac`.
+📝 **Note:** To generate other address types, type `generate-ipv6` or `generate-mac`
 
 #
 
