@@ -2,7 +2,7 @@
 
 const pkgName = 'generate-ip',
       copyright = '© 2024 Adam Lui & contributors under the MIT license.',
-      cmdFormat = 'generate-[ip|ipv4|mac] [options|commands]',
+      cmdFormat = 'generate-[ip|ipv6|mac] [options|commands]',
       srcURL = 'https://code.generate-ip.org',
       docURL = 'https://docs.generate-ip.org/#-command-line-usage';
 
