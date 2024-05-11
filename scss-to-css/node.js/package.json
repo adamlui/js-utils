@@ -54,7 +54,7 @@
     "url": "https://github.com/sponsors/adamlui"
   },
   "dependencies": {
-    "sass": "^1.77.0"
+    "sass": "^1.77.1"
   },
   "devDependencies": {
     "@adamlui/minify.js": "^1.6.1"
