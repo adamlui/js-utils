@@ -11,6 +11,7 @@
   "license": "MIT",
   "main": "dist/minify.min.js",
   "files": [
+    "dist",
     "docs/",
     "!docs/*/"
   ],
