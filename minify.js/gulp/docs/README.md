@@ -37,6 +37,8 @@ $ npm install gulp-minify.js
 
 <br>
 
+<a href="https://github.com/sponsors/adamlui"><img src="https://media.minify-js.org/images/banners/sponsor-$10/banner1660x260.png?d4290d8"></a>
+
 <img height=6px width="100%" src="https://media.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
 
 ## 💻 Usage
