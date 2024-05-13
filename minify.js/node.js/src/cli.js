@@ -33,7 +33,7 @@ const pkgName = '@adamlui/minify.js',
     // Define MESSAGES
     let msgs = {};
     const msgsLoaded = new Promise((resolve, reject) => {
-        const msgHostDir = 'https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/_locales/',
+        const msgHostDir = 'https://cdn.jsdelivr.net/gh/adamlui/minify.js/_locales/',
               msgLocaleDir = ( langCode ? langCode.replace('-', '_') : 'en' ) + '/';
         let msgHref = msgHostDir + msgLocaleDir + 'messages.json', msgFetchTries = 0;
         fetchData(msgHref).then(onLoad).catch(reject);
