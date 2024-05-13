@@ -57,6 +57,6 @@
     "sass": "^1.77.1"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^1.6.1"
+    "@adamlui/minify.js": "^1.6.3"
   }
 }
