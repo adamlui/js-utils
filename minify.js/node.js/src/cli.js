@@ -6,217 +6,280 @@ const pkgName = '@adamlui/minify.js',
       srcURL = 'https://code.minify-js.org/node.js',
       docURL = 'https://docs.minify-js.org/node.js/#-command-line-usage';
 
-// Import LIBS
-const minifyJS = require(__dirname.match(/src/) ? './minify' : './minify.min'),
-      fs = require('fs'), path = require('path'),
-      { execSync } = require('child_process'); // for --version cmd
+(async () => {
 
-// Init UI colors
-const nc = '\x1b[0m',    // no color
-      br = '\x1b[1;91m', // bright red
-      by = '\x1b[1;33m', // bright yellow
-      bg = '\x1b[1;92m', // bright green
-      bw = '\x1b[1;97m'; // bright white
+    // Import LIBS
+    const minifyJS = require(__dirname.match(/src/) ? './minify' : './minify.min'),
+          fs = require('fs'), path = require('path'),
+          { execSync } = require('child_process'); // for --version cmd
 
-// Load FLAG settings
-const config = {};
-const reArgs = {
-    flags: {
-        'dryRun': /^--?(?:n|dry-?run)$/,
-        'includeDotFolders': /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
-        'includeDotFiles': /^--?(?:df|D|(?:include-?)?dot-?files?=?(?:true|1)?)$/,
-        'noRecursion': /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
-        'noMangle': /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/,
-        'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
-    },
-    paramOptions: {
-        'ignoreFiles': /^--?(?:ignore|skip|exclude)(?:d?-?files?)?(?:=.*|$)/,
-        'comment': /^--?comments?(?:=.*|$)/
-    },
-    infoCmds: { 'help': /^--?h(?:elp)?$/,'version': /^--?ve?r?s?i?o?n?$/ }
-};
-process.argv.forEach(arg => {
-    if (!arg.startsWith('-')) return;
-    const matchedFlag = Object.keys(reArgs.flags).find(flag => reArgs.flags[flag].test(arg)),
-          matchedParamOption = Object.keys(reArgs.paramOptions).find(option => reArgs.paramOptions[option].test(arg)),
-          matchedInfoCmd = Object.keys(reArgs.infoCmds).find(cmd => reArgs.infoCmds[cmd].test(arg));
-    if (matchedFlag) config[matchedFlag] = true;
-    else if (matchedParamOption) {
-        if (!/=.+/.test(arg)) {
-            console.error(`\n${br}ERROR: Arg [--${arg.replace(/-/g, '')}] requires '=' followed by a value.${nc}`);
+    // Init UI COLORS
+    const nc = '\x1b[0m',    // no color
+          br = '\x1b[1;91m', // bright red
+          by = '\x1b[1;33m', // bright yellow
+          bg = '\x1b[1;92m', // bright green
+          bw = '\x1b[1;97m'; // bright white
+
+    // Load sys LANGUAGE
+    let langCode = 'en';
+    if (process.platform == 'win32') {
+        try { langCode = execSync('(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' }).trim(); }
+        catch (err) {}
+    } else { // macOS/Linux
+        const env = process.env;
+        langCode = (env.LANG || env.LANGUAGE || env.LC_ALL || env.LC_MESSAGES || env.LC_NAME || 'en')?.split('.')[0];
+    }
+
+    // Define MESSAGES
+    let msgs = {};
+    const msgsLoaded = new Promise((resolve, reject) => {
+        const msgHostDir = 'https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/_locales/',
+              msgLocaleDir = ( langCode ? langCode.replace('-', '_') : 'en' ) + '/';
+        let msgHref = msgHostDir + msgLocaleDir + 'messages.json', msgFetchTries = 0;
+        fetchData(msgHref).then(onLoad).catch(reject);
+        async function onLoad(resp) {
+            try { // to return localized messages.json
+                const msgs = await resp.json(), flatMsgs = {};
+                for (const key in msgs)  // remove need to ref nested keys
+                    if (typeof msgs[key] == 'object' && 'message' in msgs[key])
+                        flatMsgs[key] = msgs[key].message;
+                resolve(flatMsgs);
+            } catch (err) { // if bad response
+                msgFetchTries++; if (msgFetchTries == 3) return resolve({}); // try up to 3X (original/region-stripped/EN) only
+                msgHref = langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
+                    msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
+                        : ( msgHostDir + 'en/messages.json' ); // else use default English messages
+                fetchData(msgHref).then(onLoad).catch(reject);
+            }
+        }
+    }); try { msgs = await msgsLoaded; } catch (err) {}
+
+    // Load SETTINGS from args
+    const config = {};
+    const reArgs = {
+        flags: {
+            'dryRun': /^--?(?:n|dry-?run)$/,
+            'includeDotFolders': /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
+            'includeDotFiles': /^--?(?:df|D|(?:include-?)?dot-?files?=?(?:true|1)?)$/,
+            'noRecursion': /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
+            'noMangle': /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/,
+            'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
+        },
+        paramOptions: {
+            'ignoreFiles': /^--?(?:ignore|skip|exclude)(?:d?-?files?)?(?:=.*|$)/,
+            'comment': /^--?comments?(?:=.*|$)/
+        },
+        infoCmds: { 'help': /^--?h(?:elp)?$/,'version': /^--?ve?r?s?i?o?n?$/ }
+    };
+    process.argv.forEach(arg => {
+        if (!arg.startsWith('-')) return;
+        const matchedFlag = Object.keys(reArgs.flags).find(flag => reArgs.flags[flag].test(arg)),
+              matchedParamOption = Object.keys(reArgs.paramOptions).find(option => reArgs.paramOptions[option].test(arg)),
+              matchedInfoCmd = Object.keys(reArgs.infoCmds).find(cmd => reArgs.infoCmds[cmd].test(arg));
+        if (matchedFlag) config[matchedFlag] = true;
+        else if (matchedParamOption) {
+            if (!/=.+/.test(arg)) {
+                console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: `
+                    + `Arg [--${arg.replace(/-/g, '')}] `
+                    + `${ msgs.error_noEqual || 'requires \'=\' followed by a value' }.${nc}`);
+                printHelpCmdAndDocURL(); process.exit(1);
+            }
+            const value = arg.split('=')[1];
+            config[matchedParamOption] = parseInt(value) || value;
+        } else if (!matchedInfoCmd) {
+            console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: `
+                + `Arg [${arg}] ${ msgs.error_notRecognized || 'not recognized' }.${nc}`);
+            console.info(`\n${ by + ( msgs.info_validArgs || 'Valid arguments are below' )}.${nc}`);
+            printHelpSections(['flags', 'paramOptions', 'infoCmds']);
+            process.exit(1);
+    }});
+
+    // Show HELP screen if -h or --help passed
+    if (process.argv.some(arg => reArgs.infoCmds.help.test(arg))) printHelpSections();
+
+    // Show VERSION number if -v or --version passed
+    else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
+        const globalVer = execSync(`npm view ${pkgName} version`).toString().trim() || 'none';
+        let localVer, currentDir = process.cwd();
+        while (currentDir != '/') {
+            const localManifestPath = path.join(currentDir, 'package.json');
+            if (fs.existsSync(localManifestPath)) {
+                const localManifest = require(localManifestPath);
+                localVer = ( localManifest.dependencies?.[pkgName]
+                          || localManifest.devDependencies?.[pkgName]
+                )?.match(/(\d+\.\d+\.\d+)/)[0] || 'none';
+                break;
+            }
+            currentDir = path.dirname(currentDir);
+        }
+        console.info(`\n${ msgs.prefix_globalVer || 'Global version' }: ${globalVer}`);
+        console.info(`${ msgs.prefix_localVer || 'Local version' }: ${localVer}`);
+
+    } else { // run MAIN routine
+
+        // Init I/O args
+        const [inputArg = '', outputArg = ''] = ( // default to empty strings for error-less handling
+            process.argv.slice(2) // exclude executable and script paths
+                .filter(arg => !arg.startsWith('-')) // exclude flags
+                .map(arg => arg.replace(/^\/*/, '')) // clean leading slashes to avoid parsing system root
+        );
+
+        // Validate input arg (output arg can be anything)
+        const inputPath = path.resolve(process.cwd(), inputArg);
+        if (inputArg && !fs.existsSync(inputPath)) {
+            console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: `
+                + `${ msgs.error_firstArgNotExist || 'First argument can only be an existing file or directory' }.`
+                + `\n${inputPath} ${ msgs.error_doesNotExist || 'does not exist' }.${nc}`);
+            console.info(`\n${bg}${ msgs.info_exampleValidCmd || 'Example valid command' }: `
+                + `\n» minify-js . output.min.js${nc}`);
             printHelpCmdAndDocURL(); process.exit(1);
         }
-        const value = arg.split('=')[1];
-        config[matchedParamOption] = parseInt(value) || value;
-    } else if (!matchedInfoCmd) {
-        console.error(`\n${br}ERROR: Arg [${arg}] not recognized.${nc}`);
-        console.info(`\n${by}Valid arguments are below.${nc}`);
-        printHelpSections(['flags', 'paramOptions', 'infoCmds']);
-        process.exit(1);
-}});
 
-// Show HELP screen if -h or --help passed
-if (process.argv.some(arg => reArgs.infoCmds.help.test(arg))) printHelpSections();
+        // Find all eligible JavaScript files or arg-passed file
+        const unminnedJSfiles = inputArg.endsWith('.js') ? [inputPath]
+            : minifyJS.findJS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode,
+                                           ignoreFiles: (config.ignoreFiles?.split(',') ?? []).map(file => file.trim()) });
 
-// Show VERSION number if -v or --version passed
-else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
-    const globalVer = execSync(`npm view ${pkgName} version`).toString().trim() || 'none';
-    let localVer, currentDir = process.cwd();
-    while (currentDir != '/') {
-        const localManifestPath = path.join(currentDir, 'package.json');
-        if (fs.existsSync(localManifestPath)) {
-            const localManifest = require(localManifestPath);
-            localVer = ( localManifest.dependencies?.[pkgName]
-                      || localManifest.devDependencies?.[pkgName]
-            )?.match(/(\d+\.\d+\.\d+)/)[0] || 'none';
-            break;
-        }
-        currentDir = path.dirname(currentDir);
-    }
-    console.info(`\nGlobal version: ${globalVer}`);
-    console.info(`Local version: ${localVer}`);
+        if (config.dryRun) { // -n or --dry-run passed
+            if (unminnedJSfiles.length > 0) { // print files to be processed
+                console.info(`\n${by + ( msgs.info_filesToBeMinned || 'JS files to be minified' )}:${nc}`);
+                unminnedJSfiles.forEach(file => console.info(file));
+            } else console.info(`\n${by + ( msgs.info_noFilesWillBeMinned || 'No JS files will be minified' )}.${nc}`);
 
-} else { // run MAIN routine
+        } else { // actually minify JavaScript files
 
-    // Init I/O args
-    const [inputArg = '', outputArg = ''] = ( // default to empty strings for error-less handling
-        process.argv.slice(2) // exclude executable and script paths
-            .filter(arg => !arg.startsWith('-')) // exclude flags
-            .map(arg => arg.replace(/^\/*/, '')) // clean leading slashes to avoid parsing system root
-    );
+            // Build array of minification data
+            const failedPaths = [];
+            const minifyData = unminnedJSfiles.map(jsPath => {
+                const minifyResult = minifyJS.minify(jsPath, { verbose: !config.quietMode, mangle: !config.noMangle,
+                                                               comment: config.comment?.replace(/\\n/g, '\n') });
+                if (minifyResult.error) failedPaths.push(jsPath);
+                return minifyResult;
+            }).filter(minifyResult => !minifyResult.error); // filter out failed minifications
 
-    // Validate input arg (output arg can be anything)
-    const inputPath = path.resolve(process.cwd(), inputArg);
-    if (inputArg && !fs.existsSync(inputPath)) {
-        console.error(`\n${br}Error: First argument can only be an existing file or directory.`
-            + `\n${inputPath} does not exist.${nc}`
-            + `\n\n${bg}Example valid command: \n» minify-js . output.min.js${nc}`);
-        printHelpCmdAndDocURL(); process.exit(1);
-    }
+            // Write array data to files
+            minifyData?.forEach(({ code, srcPath }) => {
+                const outputDir = path.join(
+                    path.dirname(srcPath), // path of file to be minified
+                    ( /so?u?rce?$/.test(path.dirname(srcPath)) ? '../' : '' ) // + '../' if in if in *(src|source)/
+                  + ( outputArg.endsWith('.js') ? path.dirname(outputArg) // + path from file outputArg
+                                                : outputArg || 'min' ) // or path from folder outputArg or min/ if no outputArg passed
+                );
+                const outputFilename = (
+                    outputArg.endsWith('.js') && inputArg.endsWith('.js')
+                        ? path.basename(outputArg).replace(/(\.min)?\.js$/, '')
+                        : path.basename(srcPath, '.js')
+                ) + '.min.js';
+                const outputPath = path.join(outputDir, outputFilename);
+                if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+                fs.writeFileSync(outputPath, code, 'utf8');
+            });
 
-    // Find all eligible JavaScript files or arg-passed file
-    const unminnedJSfiles = inputArg.endsWith('.js') ? [inputPath]
-        : minifyJS.findJS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode,
-                                       ignoreFiles: (config.ignoreFiles?.split(',') ?? []).map(file => file.trim()) });
-
-    if (config.dryRun) { // -n or --dry-run passed
-        if (unminnedJSfiles.length > 0) { // print files to be processed
-            console.info(`\n${by}JS files to be minified:${nc}`);
-            unminnedJSfiles.forEach(file => console.info(file));
-        } else console.info(`${by}\nNo JS files will be minified.${nc}`);
-
-    } else { // actually minify JavaScript files
-
-        // Build array of minification data
-        const failedPaths = [];
-        const minifyData = unminnedJSfiles.map(jsPath => {
-            const minifyResult = minifyJS.minify(jsPath, { verbose: !config.quietMode, mangle: !config.noMangle,
-                                                           comment: config.comment?.replace(/\\n/g, '\n') });
-            if (minifyResult.error) failedPaths.push(jsPath);
-            return minifyResult;
-        }).filter(minifyResult => !minifyResult.error); // filter out failed minifications
-
-        // Write array data to files
-        minifyData?.forEach(({ code, srcPath }) => {
-            const outputDir = path.join(
-                path.dirname(srcPath), // path of file to be minified
-                ( /so?u?rce?$/.test(path.dirname(srcPath)) ? '../' : '' ) // + '../' if in if in *(src|source)/
-              + ( outputArg.endsWith('.js') ? path.dirname(outputArg) // + path from file outputArg
-                                            : outputArg || 'min' ) // or path from folder outputArg or min/ if no outputArg passed
-            );
-            const outputFilename = (
-                outputArg.endsWith('.js') && inputArg.endsWith('.js')
-                    ? path.basename(outputArg).replace(/(\.min)?\.js$/, '')
-                    : path.basename(srcPath, '.js')
-            ) + '.min.js';
-            const outputPath = path.join(outputDir, outputFilename);
-            if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-            fs.writeFileSync(outputPath, code, 'utf8');
-        });
-
-        // Print final summary
-        if (minifyData?.length > 0) {
-            printIfNotQuiet(`\n${bg}Minification complete!${nc}`);
-            printIfNotQuiet(
-                `${bw + minifyData.length} file${ minifyData.length > 1 ? 's' : '' } minified.${nc}`);
-        } else printIfNotQuiet(`${by}No unminified JavaScript files processed.${nc}`);
-        if (failedPaths.length > 0) {
-            printIfNotQuiet(`\n${br}`
-                + `${failedPaths.length} file${ failedPaths.length > 1 ? 's' : '' }`
-                + ` failed to minify:${nc}`);
-            failedPaths.forEach(path => printIfNotQuiet(path));
-        }
-    }
-}
-
-// Define LOGGING functions
-
-function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
-    const appPrefix = `\x1b[106m\x1b[30m ${pkgName.replace(/^@[^/]+\//, '')} ${nc} `; // bright teal bg + black fg
-    const helpSections = {
-        'header': [`\n├ ${ appPrefix + copyright}`, `${ appPrefix }Source: ${srcURL}`],
-        'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}» ${bg + cmdFormat + nc}`],
-        'pathArgs': [
-            `\n${bw}o Path arguments:${nc}`,
-            ' [inputPath]                         '
-                + 'Path to JS file or directory containing JS files to be minified,'
-                + ' relative to the current working directory.',
-            ' [outputPath]                        '
-                + 'Path to file or directory where minified files will be stored,'
-                + ' relative to original file location (if not provided, min/ is used).'
-        ],
-        'flags': [
-            `\n${bw}o Boolean options:${nc}`,
-            ' -n, --dry-run                       Don\'t actually minify the file(s),'
-                                                + ' just show if they will be processed.',
-            ' -d, --include-dotfolders            Include dotfolders in file search.',
-            ' -D, --include-dotfiles              Include dotfiles in file search.',
-            ' -R, --no-recursion                  Disable recursive file searching.',
-            ' -M, --no-mangle                     Disable mangling names.',
-            ' -q, --quiet                         Suppress all logging except errors.'
-        ],
-        'paramOptions': [
-            `\n${bw}o Parameter options:${nc}`,
-            '--ignore-files="file1.js,file2.js"   Files to exclude from minification.',
-            '--comment="comment"                  Prepend comment to minified code.'
-                                               +  ' Separate by line using \'\\n\'.'
-        ],
-        'infoCmds': [
-            `\n${bw}o Info commands:${nc}`,
-            ' -h, --help                          Display help screen.',
-            ' -v, --version                       Show version number.'
-        ]
-    };
-    includeSections.forEach(section => { // print valid arg elems
-        helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 37)); });
-    console.info('\nFor more help, please visit: ' + bw + docURL + nc);
-
-    function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
-        const terminalWidth = process.stdout.columns || 80,
-              lines = [], words = msg.match(/\S+|\s+/g),
-              prefix = '| ';
-
-        // Split msg into lines of appropriate lengths
-        let currentLine = '';
-        words.forEach(word => {
-            const lineLength = terminalWidth - ( lines.length == 0 ? 0 : indent );
-            if (currentLine.length + prefix.length + word.length > lineLength) { // cap/store it
-                lines.push(lines.length == 0 ? currentLine : currentLine.trimStart());
-                currentLine = '';
+            // Print final summary
+            if (minifyData?.length > 0) {
+                printIfNotQuiet(`\n${bg + ( msgs.info_minComplete || 'Minification complete' )}!${nc}`);
+                printIfNotQuiet(`${bw + minifyData.length} ${ msgs.info_file || 'file' }`
+                    + `${ minifyData.length > 1 ? 's' : '' } ${ msgs.info_minified || 'minified' }.${nc}`);
+            } else printIfNotQuiet(`${by + ( msgs.info_noFilesProcessed || 'No unminified JavaScript files processed' )}.${nc}`);
+            if (failedPaths.length > 0) {
+                printIfNotQuiet(`\n${br + failedPaths.length} ${ msgs.info_file || 'file' }`
+                    + `${ failedPaths.length > 1 ? 's' : '' } ${ msgs.info_failedToMinify || 'failed to minify' }:${nc}`);
+                failedPaths.forEach(path => printIfNotQuiet(path));
             }
-            currentLine += word;
-        });
-        lines.push(lines.length == 0 ? currentLine : currentLine.trimStart());
-
-        // Print formatted msg
-        lines.forEach((line, index) => console.info(prefix + (
-            index == 0 ? line // print 1st line unindented
-                : ' '.repeat(indent) + line // print subsequent lines indented
-        )));
+        }
     }
-}
 
-function printHelpCmdAndDocURL() {
-    console.info(`\nFor more help, type 'minify.js --help' or visit\n${ bw + docURL + nc }`); }
+    // Define FUNCTIONS
 
-function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
+    function fetchData(url) { // instead of fetch() to support Node.js < v21
+        return new Promise((resolve, reject) => {
+            const protocol = url.match(/^([^:]+):\/\//)[1];
+            if (!/^https?$/.test(protocol)) reject(new Error(`${ msgs.error_invalidURL || 'Invalid URL' }.`));
+            require(protocol).get(url, res => {
+                let rawData = '';
+                res.on('data', chunk => rawData += chunk);
+                res.on('end', () => resolve({ json: () => JSON.parse(rawData) }));
+            }).on('error', reject);
+    });}
+
+    function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
+        const appPrefix = `\x1b[106m\x1b[30m ${pkgName.replace(/^@[^/]+\//, '')} ${nc} `; // bright teal bg + black fg
+        const helpSections = {
+            'header': [
+                '\n├ ' + appPrefix + ( msgs.appCopyright || copyright ),
+                `${ appPrefix + ( msgs.prefix_source || 'Source' )}: ${srcURL}`
+            ],
+            'usage': [
+                `\n${bw}o ${ msgs.helpSection_usage || 'Usage' }:${nc}`,
+                ` ${bw}» ${bg + cmdFormat + nc}`
+            ],
+            'pathArgs': [
+                `\n${bw}o ${ msgs.helpSection_pathArgs || 'Path arguments' }:${nc}`,
+                ' [inputPath]                         '
+                    + `${ msgs.inputPathDesc_main || 'Path to JS file or directory containing JS files to be minified' }, `
+                    + `${ msgs.inputPathDesc_extra || 'relative to the current working directory' }.`,
+                ' [outputPath]                        '
+                    + `${ msgs.outputPathDesc_main || 'Path to file or directory where minified files will be stored' }, `
+                    + `${ msgs.outputPathDesc_extra || 'relative to original file location (if not provided, min/ is used)' }.`
+            ],
+            'flags': [
+                `\n${bw}o ${ msgs.helpSection_flags || 'Boolean options' }:${nc}`,
+                ' -n, --dry-run                       '
+                    + `${ msgs.optionDesc_dryRun || 'Don\'t actually minify the file(s), '
+                                                  + 'just show if they will be processed' }.`,
+                ` -d, --include-dotfolders            ${ msgs.optionDesc_dotfolders || 'Include dotfolders in file search' }.`,
+                ` -D, --include-dotfiles              ${ msgs.optionDesc_dotfiles || 'Include dotfiles in file search' }.`,
+                ` -R, --no-recursion                  ${ msgs.optionDesc_noRecursion || 'Disable recursive file searching' }.`,
+                ` -M, --no-mangle                     ${ msgs.optionDesc_noMangle || 'Disable mangling names' }.`,
+                ` -q, --quiet                         ${ msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`
+            ],
+            'paramOptions': [
+                `\n${bw}o ${ msgs.helpSection_paramOptions || 'Parameter options' }:${nc}`,
+                `--ignore-files="file1.js,file2.js"   ${ msgs.optionDesc_ignoreFiles || 'Files to exclude from minification' }.`,
+                `--comment="comment"                  ${ msgs.optionDesc_commentMain || 'Prepend comment to minified code' }.`
+                                                 +  ` ${ msgs.optionDesc_commentExtra || 'Separate by line using \'\\n\'' }.`
+            ],
+            'infoCmds': [
+                `\n${bw}o ${ msgs.helpSection_infoCmds || 'Info commands' }:${nc}`,
+                ` -h, --help                          ${ msgs.optionDesc_help || 'Display help screen.' }`,
+                ` -v, --version                       ${ msgs.optionDesc_version || 'Show version number' }.`
+            ]
+        };
+        includeSections.forEach(section => { // print valid arg elems
+            helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 37)); });
+        console.info(`\n${ msgs.info_moreHelp || 'For more help' }, ${ msgs.info_visit || 'visit' }: ${ bw + docURL + nc }`);
+
+        function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
+            const terminalWidth = process.stdout.columns || 80,
+                  lines = [], words = msg.match(/\S+|\s+/g),
+                  prefix = '| ';
+
+            // Split msg into lines of appropriate lengths
+            let currentLine = '';
+            words.forEach(word => {
+                const lineLength = terminalWidth - ( lines.length == 0 ? 0 : indent );
+                if (currentLine.length + prefix.length + word.length > lineLength) { // cap/store it
+                    lines.push(lines.length == 0 ? currentLine : currentLine.trimStart());
+                    currentLine = '';
+                }
+                currentLine += word;
+            });
+            lines.push(lines.length == 0 ? currentLine : currentLine.trimStart());
+
+            // Print formatted msg
+            lines.forEach((line, index) => console.info(prefix + (
+                index == 0 ? line // print 1st line unindented
+                    : ' '.repeat(indent) + line // print subsequent lines indented
+            )));
+        }
+    }
+
+    function printHelpCmdAndDocURL() {
+        console.info(`\n${ msgs.info_moreHelp || 'For more help' },`
+            + ` ${ msgs.info_type || 'type' } 'minify-js --help'`
+            + ` ${ msgs.info_or || 'or' } ${ msgs.info_visit || 'visit' }\n${ bw + docURL + nc }`
+    );}
+
+    function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg); }
+
+})();
