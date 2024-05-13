@@ -36,6 +36,8 @@ $ npm install @adamlui/geolocate
 
 <br>
 
+<a href="https://github.com/sponsors/adamlui"><img src="https://media.js-utils.com/images/banners/sponsor/$10/banner1660x260.png?09f5d64"></a>
+
 <img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
 ## 💻 Command line usage
