@@ -10,7 +10,7 @@
   "info_validArgs": { "message": "मान्य तर्क नीचे दिए गए हैं" },
   "info_copying": { "message": "क्लिपबोर्ड से नक़ल किया जा रहा है... user on host" },
   "info_moreHelp": { "message": "ज़्यादा मदद के लिए" },
-  "info_visit": { "message": "+++ " },
+  "info_visit": { "message": "मिलने जाना" },
   "geoLabel_country": { "message": "देश" },
   "geoLabel_region": { "message": "क्षेत्र" },
   "geoLabel_city": { "message": "" },

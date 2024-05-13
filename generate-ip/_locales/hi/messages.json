@@ -14,7 +14,7 @@
   "info_moreHelp": { "message": "ज़्यादा मदद के लिए" },
   "info_type": { "message": "प्रकार" },
   "info_or": { "message": "या" },
-  "info_visit": { "message": "+++ " },
+  "info_visit": { "message": "मिलने जाना" },
   "helpSection_usage": { "message": "उपयोग" },
   "helpSection_paramOptions": { "message": "पैरामीटर विकल्प" },
   "helpSection_flags": { "message": "बूलियन विकल्प" },
