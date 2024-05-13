@@ -54,7 +54,7 @@ const pkgName = '@adamlui/geolocate',
         }
     }); try { msgs = await msgsLoaded; } catch (err) {}
 
-    // Load SETTINGS from ARGS
+    // Load SETTINGS from args
     const config = {};
     const reArgs = {
         flags: { 'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/ },
