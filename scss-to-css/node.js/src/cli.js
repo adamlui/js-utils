@@ -121,6 +121,7 @@ else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
         }).filter(data => !data.error ); // filter out failed compilations
 
         // Write array data to files
+        printIfNotQuiet(`\nWriting to file${ compileData?.length > 1 ? 's' : '' }...`);
         compileData?.forEach(({ code, srcMap, srcPath }) => {
             const outputDir = path.join(
                 path.dirname(srcPath), // path of file to be minified
