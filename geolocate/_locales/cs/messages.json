@@ -3,7 +3,7 @@
   "appCopyright": { "message": "© 2024 Adam Lui pod licencí MIT" },
   "prefix_error": { "message": "CHYBA" },
   "prefix_globalVer": { "message": "Globální verze" },
-  "prefix_localVer": { "message": "- Místní verze" },
+  "prefix_localVer": { "message": "Místní verze" },
   "prefix_source": { "message": "Zdroj" },
   "error_notRecognized": { "message": "\"Nerozpoznáno\"" },
   "error_invalidURL": { "message": "Neplatná adresa URL" },
