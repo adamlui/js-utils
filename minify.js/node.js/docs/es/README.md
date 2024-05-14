@@ -139,7 +139,7 @@ Opciones booleanas:
 
 Opciones de parámetros:
  --ignore-files="file1.js,file2.js"   Archivos para excluir de la minificación.
- --comment="comentar"                 Anteponer comentar al código minimizado. Separe por línea usando '\n'.
+ --comment="comentar"                 Anteponga el comentario del encabezado al código minimizado. Separe por línea usando '\n'.
 
 Comandos de información:
  -h, --help                           Mostrar pantalla de ayuda.
@@ -206,15 +206,15 @@ minifyJS.minify(entrada, { dotFiles: true });
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:
 
-Nombre        | Tipo      | Descripción                                                                   | Valor por defecto
---------------|-----------|-------------------------------------------------------------------------------|-------------------
-`recursive`   | Booleano  | Busque recursivamente archivos anidados si se pasa la ruta del directorio.    | `true`
-`verbose`     | Booleano  | Mostrar registros en la consola/terminal.                                     | `true`
-`dotFolders`  | Booleano  | Incluya carpetas de puntos en la búsqueda de archivos.                        | `false`
-`dotFiles`    | Booleano  | Incluya archivos de puntos en la búsqueda de archivos.                        | `false`
-`mangle`      | Booleano  | Acorte los nombres de las variables (normalmente a un carácter).              | `true`
-`ignoreFiles` | Formación | Archivos (por nombre) para excluir de la minificación.                        | `[]`
-`comment`     | Cadena    | Comentario para anteponer al código minimizado. Separe por línea usando '\n'. | `''`
+Nombre        | Tipo      | Descripción                                                                                 | Valor por defecto
+--------------|-----------|---------------------------------------------------------------------------------------------|-------------------
+`recursive`   | Booleano  | Busque recursivamente archivos anidados si se pasa la ruta del directorio.                  | `true`
+`verbose`     | Booleano  | Mostrar registros en la consola/terminal.                                                   | `true`
+`dotFolders`  | Booleano  | Incluya carpetas de puntos en la búsqueda de archivos.                                      | `false`
+`dotFiles`    | Booleano  | Incluya archivos de puntos en la búsqueda de archivos.                                      | `false`
+`mangle`      | Booleano  | Acorte los nombres de las variables (normalmente a un carácter).                            | `true`
+`ignoreFiles` | Formación | Archivos (por nombre) para excluir de la minificación.                                      | `[]`
+`comment`     | Cadena    | Comentario de encabezado para anteponer al código minimizado. Separe por línea usando '\n'. | `''`
 
 #
 

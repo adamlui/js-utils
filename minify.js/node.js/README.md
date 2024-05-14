@@ -140,7 +140,7 @@ Boolean options:
 
 Parameter options:
  --ignore-files="file1.js,file2.js"   Files to exclude from minification.
- --comment="comment"                  Prepend comment to minified code.
+ --comment="comment"                  Prepend header comment to minified code.
                                       Separate by line using '\n'.
 
 Info commands:
@@ -208,15 +208,15 @@ minifyJS.minify(input, { dotFiles: true });
 
 Available parameters (and their default settings) are:
 
-Name          | Type    | Desciption                                                        | Default value
---------------|---------|-------------------------------------------------------------------|---------------
-`recursive`   | Boolean | Recursively search for nested files if dir path passed.           | `true`
-`verbose`     | Boolean | Show logging in console/terminal.                                 | `true`
-`dotFolders`  | Boolean | Include dotfolders in file search.                                | `false`
-`dotFiles`    | Boolean | Include dotfiles in file search.                                  | `false`
-`mangle`      | Boolean | Shorten variable names (typically to one character).              | `true`
-`ignoreFiles` | Array   | Files (by name) to exclude from minification.                     | `[]`
-`comment`     | String  | Comment to prepend to minified code. Separate by line using '\n'. | `''`
+Name          | Type    | Desciption                                                               | Default value
+--------------|---------|--------------------------------------------------------------------------|---------------
+`recursive`   | Boolean | Recursively search for nested files if dir path passed.                  | `true`
+`verbose`     | Boolean | Show logging in console/terminal.                                        | `true`
+`dotFolders`  | Boolean | Include dotfolders in file search.                                       | `false`
+`dotFiles`    | Boolean | Include dotfiles in file search.                                         | `false`
+`mangle`      | Boolean | Shorten variable names (typically to one character).                     | `true`
+`ignoreFiles` | Array   | Files (by name) to exclude from minification.                            | `[]`
+`comment`     | String  | Header comment to prepend to minified code. Separate by line using '\n'. | `''`
 
 #
 

@@ -139,7 +139,7 @@ Boolesche Optionen:
 
 Parameteroptionen:
  --ignore-files="file1.js,file2.js"   Dateien, die von der Minimierung ausgeschlossen werden sollen.
- --comment="kommentar"                Kommentar dem minimierten Code voranstellen. Mit „\n“ zeilenweise trennen.
+ --comment="kommentar"                Kopfzeilenkommentar dem minimierten Code voranstellen. Mit '\n' zeilenweise trennen.
 
 Info-Befehle:
  -h, --help                           Hilfebildschirm anzeigen.
@@ -206,15 +206,15 @@ minifyJS.minify(eingang, { dotFiles: true });
 
 Verfügbare Parameter (und ihre Standardeinstellungen) sind:
 
-Name          | Typ             | Beschreibung                                                                           | Standardwert
---------------|-----------------|----------------------------------------------------------------------------------------|--------------
-`recursive`   | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird. | `true`
-`verbose`     | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                                | `true`
-`dotFolders`  | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                        | `false`
-`dotFiles`    | Boolescher Wert | Beziehen Sie Punktdateien in die Dateisuche ein.                                       | `false`
-`mangle`      | Boolescher Wert | Variablennamen kürzen (normalerweise auf ein Zeichen).                                 | `true`
-`ignoreFiles` | Array           | Dateien (nach Namen), die von der Minimierung ausgeschlossen werden sollen.            | `[]`
-`comment`     | Zeichenfolge    | Kommentar, der dem minimierten Code vorangestellt wird. Mit „\n“ zeilenweise trennen.  | `''`
+Name          | Typ             | Beschreibung                                                                                 | Standardwert
+--------------|-----------------|----------------------------------------------------------------------------------------------|--------------
+`recursive`   | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird.       | `true`
+`verbose`     | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                                      | `true`
+`dotFolders`  | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                              | `false`
+`dotFiles`    | Boolescher Wert | Beziehen Sie Punktdateien in die Dateisuche ein.                                             | `false`
+`mangle`      | Boolescher Wert | Variablennamen kürzen (normalerweise auf ein Zeichen).                                       | `true`
+`ignoreFiles` | Array           | Dateien (nach Namen), die von der Minimierung ausgeschlossen werden sollen.                  | `[]`
+`comment`     | Zeichenfolge    | Header-Kommentar, der dem minimierten Code vorangestellt wird. Mit „\n“ zeilenweise trennen. | `''`
 
 #
 

@@ -236,7 +236,7 @@ const pkgName = '@adamlui/minify.js',
             'paramOptions': [
                 `\n${bw}o ${ msgs.helpSection_paramOptions || 'Parameter options' }:${nc}`,
                 `--ignore-files="file1.js,file2.js"   ${ msgs.optionDesc_ignoreFiles || 'Files to exclude from minification' }.`,
-                `--comment="comment"                  ${ msgs.optionDesc_commentMain || 'Prepend comment to minified code' }.`
+                `--comment="comment"                  ${ msgs.optionDesc_commentMain || 'Prepend header comment to minified code' }.`
                                                  +  ` ${ msgs.optionDesc_commentExtra || 'Separate by line using \'\\n\'' }.`
             ],
             'infoCmds': [

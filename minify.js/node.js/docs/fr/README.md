@@ -139,7 +139,7 @@ Options booléennes:
 
 Options des paramètres:
  --ignore-files="file1.js,file2.js"   Fichiers à exclure de la minification.
- --comment="commentaire"              Ajoutez un commentaire au code minifié. Séparez par ligne en utilisant '\n'.
+ --comment="commentaire"              Ajoutez le commentaire d’en-tête au code minifié. Séparez par ligne en utilisant '\n'.
 
 Commandes d'informations:
  -h, --help                           Afficher l'écran d'aide.
@@ -214,7 +214,7 @@ Nom           | Taper   | Description                                           
 `dotFiles`    | Boolean | Incluez les fichiers cachés dans la recherche de fichiers.                               | `false`
 `mangle`      | Boolean | Raccourcissez les noms de variables (généralement à un caractère).                       | `true`
 `ignoreFiles` | Tableau | Fichiers (par nom) à exclure de la minification.                                         | `[]`
-`comment`     | String  | Commentaire à ajouter au code minifié. Séparez par ligne en utilisant '\n'.              | `''`
+`comment`     | String  | Commentaire d’en-tête à ajouter au code minifié. Séparez par ligne en utilisant '\n'.    | `''`
 
 #
 
