@@ -5,7 +5,7 @@
   "prefix_globalVer": { "message": "Guhertoya gerdûnî" },
   "prefix_localVer": { "message": "Guhertoya herêmî" },
   "prefix_source": { "message": "Çavkanî" },
-  "error_noEqual": { "message": "&#39;=&#39; pêwîstî bi nirxek heye" },
+  "error_noEqual": { "message": "'=' pêwîstî bi nirxek heye" },
   "error_notRecognized": { "message": "nayê naskirin" },
   "error_nonPositiveNum": { "message": "arguman tenê dikare&gt; 0 be" },
   "error_invalidURL": { "message": "URL ya nederbasdar" },

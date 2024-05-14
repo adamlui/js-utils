@@ -5,7 +5,7 @@
   "prefix_globalVer": { "message": "เวอร์ชันส่วนกลาง" },
   "prefix_localVer": { "message": "เวอร์ชันในเครื่อง" },
   "prefix_source": { "message": "ภาษาต้นทาง" },
-  "error_noEqual": { "message": "require '=' ตามด้วยค่า" },
+  "error_noEqual": { "message": "ต้องใช้ '=' ตามด้วยค่า" },
   "error_notRecognized": { "message": "ไม่ได้รับการยอมรับ" },
   "error_nonPositiveNum": { "message": "อาร์กิวเมนต์สามารถเป็น > 0 เท่านั้น" },
   "error_invalidURL": { "message": "URL ไม่ถูกต้อง" },

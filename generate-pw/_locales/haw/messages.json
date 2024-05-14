@@ -5,7 +5,7 @@
   "prefix_globalVer": { "message": "Mana honua" },
   "prefix_localVer": { "message": "Mana kūloko" },
   "prefix_source": { "message": "Puna" },
-  "error_noEqual": { "message": "koi &#39;=&#39; a ukali ʻia e kahi waiwai" },
+  "error_noEqual": { "message": "koi '=' a ukali ʻia e kahi waiwai" },
   "error_notRecognized": { "message": "ʻike ʻole ʻia" },
   "error_nonPositiveNum": { "message": "hiki ke hoʻopaʻapaʻa &gt; 0 wale nō" },
   "error_invalidURL": { "message": "Hūnā hewa ʻole" },

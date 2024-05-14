@@ -5,7 +5,7 @@
   "prefix_globalVer": { "message": "Ընդհանուր տարբերակ" },
   "prefix_localVer": { "message": "Տեղական տարբերակ" },
   "prefix_source": { "message": "Ծագումը" },
-  "error_noEqual": { "message": "require '=',որին հաջորդում է արժեք" },
+  "error_noEqual": { "message": "պահանջում է '=', որին հաջորդում է արժեքը" },
   "error_notRecognized": { "message": "ճանաչված չէ" },
   "error_nonPositiveNum": { "message": "փաստարկը կարող է լինել միայն > 0" },
   "error_invalidURL": { "message": "Անվավեր URL" },

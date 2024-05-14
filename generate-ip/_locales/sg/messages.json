@@ -5,7 +5,7 @@
   "prefix_globalVer": { "message": "Mbeni ye so ayeke na yâ ti dunia kue" },
   "prefix_localVer": { "message": "A yeke na yâ ti Bible ti kodoro ni" },
   "prefix_source": { "message": "Mbengue Source" },
-  "error_noEqual": { "message": "a hunda ti tene a sara ye na lege ti mbeni ye so a hunda ti tene a sara ni" },
+  "error_noEqual": { "message": "kö ti '=' ti yé-kárã" },
   "error_notRecognized": { "message": "a hinga lo pëpe" },
   "error_nonPositiveNum": { "message": "tënë ni alingbi ti duti gi > 0" },
   "error_invalidURL": { "message": "URL so ayeke na lege ni ape" },

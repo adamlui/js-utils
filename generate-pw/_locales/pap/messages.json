@@ -5,7 +5,7 @@
   "prefix_globalVer": { "message": "Vershon Global" },
   "prefix_localVer": { "message": "Vershon lokal" },
   "prefix_source": { "message": "Fuente" },
-  "error_noEqual": { "message": "página principal >Ciencia> Siguiendo un valor Siguiendo un valor" },
+  "error_noEqual": { "message": "Rekeri '=' segui pa un balor" },
   "error_notRecognized": { "message": "no Reconocido" },
   "error_nonPositiveNum": { "message": "por Soledad > 0" },
   "error_invalidURL": { "message": "Invalididad URL" },

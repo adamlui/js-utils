@@ -5,7 +5,7 @@
   "prefix_globalVer": { "message": "Globālā versija" },
   "prefix_localVer": { "message": "Vietējā versija" },
   "prefix_source": { "message": "Avots" },
-  "error_noEqual": { "message": "nepieciešams \"=\", kam seko vērtība" },
+  "error_noEqual": { "message": "nepieciešams '=', kam seko vērtība" },
   "error_notRecognized": { "message": "Nav atpazīts" },
   "error_nonPositiveNum": { "message": "arguments var būt tikai > 0" },
   "error_invalidURL": { "message": "NederÄ«gs URI:% 1" },

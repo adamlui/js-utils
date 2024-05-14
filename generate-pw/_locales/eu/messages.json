@@ -5,7 +5,7 @@
   "prefix_globalVer": { "message": "Bertsio globala" },
   "prefix_localVer": { "message": "Bertsio lokala" },
   "prefix_source": { "message": "Iturria" },
-  "error_noEqual": { "message": "&#39;=&#39; eta ondoren balio bat eskatzen du" },
+  "error_noEqual": { "message": "'=' eta ondoren balio bat eskatzen du" },
   "error_notRecognized": { "message": "EZ DA EZAGUTZEN" },
   "error_nonPositiveNum": { "message": "argumentua &gt; 0 bakarrik izan daiteke" },
   "error_invalidURL": { "message": "Baliogabeko URLa" },

@@ -5,7 +5,7 @@
   "prefix_globalVer": { "message": "Global versjon" },
   "prefix_localVer": { "message": "Your local version" },
   "prefix_source": { "message": "Source" },
-  "error_noEqual": { "message": "krever &#39;=&#39; etterfulgt av en verdi" },
+  "error_noEqual": { "message": "krever '=' etterfulgt av en verdi" },
   "error_notRecognized": { "message": "Ikke gjenkjent" },
   "error_nonPositiveNum": { "message": "argumentet kan bare være &gt; 0" },
   "error_invalidURL": { "message": "Ugyldig URL" },

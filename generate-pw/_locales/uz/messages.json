@@ -5,7 +5,7 @@
   "prefix_globalVer": { "message": "Global versiya" },
   "prefix_localVer": { "message": "Mahalliy versiya" },
   "prefix_source": { "message": "Manba" },
-  "error_noEqual": { "message": "&quot;=&quot; dan keyin qiymatni talab qiladi" },
+  "error_noEqual": { "message": "'=' dan keyin qiymatni talab qiladi" },
   "error_notRecognized": { "message": "aniqlanmadi" },
   "error_nonPositiveNum": { "message": "argument faqat &gt; 0 bo&#39;lishi mumkin" },
   "error_invalidURL": { "message": "KDE qopchiq xizmati" },

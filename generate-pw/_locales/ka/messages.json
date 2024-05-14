@@ -5,7 +5,7 @@
   "prefix_globalVer": { "message": "Გლობალური ვერსია" },
   "prefix_localVer": { "message": "Ლოკალური ვერსია" },
   "prefix_source": { "message": "წყარო" },
-  "error_noEqual": { "message": "require '=', რომელსაც მოჰყვება მნიშვნელობა" },
+  "error_noEqual": { "message": "ಮೌಲ್ಯದ ನಂತರ '=' ಅಗತ್ಯವಿದೆ" },
   "error_notRecognized": { "message": "ფაილის ტიპი ამოუცნობია" },
   "error_nonPositiveNum": { "message": "არგუმენტი შეიძლება იყოს მხოლოდ > 0" },
   "error_invalidURL": { "message": "არასწორი URL" },
