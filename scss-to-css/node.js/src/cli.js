@@ -86,16 +86,19 @@ else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
     );
 
     // Validate input arg (output arg can be anything)
-    const inputPath = path.resolve(process.cwd(), inputArg);
+    let inputPath = path.resolve(process.cwd(), inputArg);
     if (inputArg && !fs.existsSync(inputPath)) {
-        console.error(`\n${br}Error: First argument can only be an existing file or directory.`
-            + `\n'${inputPath}' does not exist.${nc}`
-            + `\n\n${bg}Example valid command: \n» scss-to-css . output.min.css${nc}`);
-        printHelpCmdAndDocURL(); process.exit(1);
+        const scssInputPath = inputPath + '.scss'; // append '.scss' in case ommitted from intended filename
+        if (!fs.existsSync(scssInputPath)) {
+            console.error(`\n${br}Error: First argument can only be an existing file or directory.`
+                + `\n'${inputPath}' does not exist.${nc}`
+                + `\n\n${bg}Example valid command: \n» scss-to-css . output.min.css${nc}`);
+            printHelpCmdAndDocURL(); process.exit(1);
+        } else inputPath = scssInputPath;
     }
 
     // Find all eligible JavaScript files or arg-passed file
-    const scssFiles = inputArg.endsWith('.scss') ? [inputPath]
+    const scssFiles = inputPath.endsWith('.scss') ? [inputPath]
         : scssToCSS.findSCSS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode,
                                           ignoreFiles: (config.ignoreFiles?.split(',') ?? []).map(file => file.trim()) });
 

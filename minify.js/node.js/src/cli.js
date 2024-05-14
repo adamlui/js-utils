@@ -127,18 +127,21 @@ const pkgName = '@adamlui/minify.js',
         );
 
         // Validate input arg (output arg can be anything)
-        const inputPath = path.resolve(process.cwd(), inputArg);
+        let inputPath = path.resolve(process.cwd(), inputArg);
         if (inputArg && !fs.existsSync(inputPath)) {
-            console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: `
-                + `${ msgs.error_firstArgNotExist || 'First argument can only be an existing file or directory' }.`
-                + `\n${inputPath} ${ msgs.error_doesNotExist || 'does not exist' }.${nc}`);
-            console.info(`\n${bg}${ msgs.info_exampleValidCmd || 'Example valid command' }: `
-                + `\n» minify-js . output.min.js${nc}`);
-            printHelpCmdAndDocURL(); process.exit(1);
+            const jsInputPath = inputPath + '.js'; // append '.js' in case ommitted from intended filename
+            if (!fs.existsSync(jsInputPath)) {
+                console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: `
+                    + `${ msgs.error_firstArgNotExist || 'First argument can only be an existing file or directory' }.`
+                    + `\n${inputPath} ${ msgs.error_doesNotExist || 'does not exist' }.${nc}`);
+                console.info(`\n${bg}${ msgs.info_exampleValidCmd || 'Example valid command' }: `
+                    + `\n» minify-js . output.min.js${nc}`);
+                printHelpCmdAndDocURL(); process.exit(1);
+            } else inputPath = jsInputPath;
         }
 
         // Find all eligible JavaScript files or arg-passed file
-        const unminnedJSfiles = inputArg.endsWith('.js') ? [inputPath]
+        const unminnedJSfiles = inputPath.endsWith('.js') ? [inputPath]
             : minifyJS.findJS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode,
                                            ignoreFiles: (config.ignoreFiles?.split(',') ?? []).map(file => file.trim()) });
 
