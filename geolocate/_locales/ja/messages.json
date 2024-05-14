@@ -1,12 +1,12 @@
 {
   "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024 Adam Lui MITライセンス" },
+  "appCopyright": { "message": "© 2024 Adam Lui MIT ライセンス" },
   "prefix_error": { "message": "エラー" },
   "prefix_globalVer": { "message": "グローバルバージョン" },
   "prefix_localVer": { "message": "ローカルバージョン" },
   "prefix_source": { "message": "出典" },
   "error_notRecognized": { "message": "認識されていない" },
-  "error_invalidURL": { "message": "無効なURL" },
+  "error_invalidURL": { "message": "無効な URL" },
   "info_validArgs": { "message": "有効な引数は次のとおりです" },
   "info_copying": { "message": "クリップボードにコピーしています" },
   "info_moreHelp": { "message": "ヘルプをもっと読む" },
@@ -19,7 +19,7 @@
   "geoLabel_lon": { "message": "経度" },
   "helpSection_usage": { "message": "Usage" },
   "helpSection_configOptions": { "message": "構成オプション" },
-  "helpSection_infoCmds": { "message": "INFOコマンド" },
+  "helpSection_infoCmds": { "message": "INFO コマンド" },
   "optionDesc_quiet": { "message": "エラーを除くすべてのロギングを抑制" },
   "optionDesc_help": { "message": "ヘルプ画面を表示" },
   "optionDesc_version": { "message": "バージョン番号" }
