@@ -135,6 +135,7 @@ Boolesche Optionen:
  -D, --include-dotfiles               Beziehen Sie Punktdateien in die Dateisuche ein.
  -R, --no-recursion                   Deaktivieren Sie die rekursive Dateisuche.
  -M, --no-mangle                      Deaktivieren Sie das Verstümmeln von Namen.
+ -c, --copy                           Kopieren Sie minimierten Code in die Zwischenablage, anstatt ihn in eine Datei zu schreiben, wenn eine einzelne Quelldatei verarbeitet wird.
  -q, --quiet                          Unterdrücken Sie alle Protokolle außer Fehlern.
 
 Parameteroptionen:

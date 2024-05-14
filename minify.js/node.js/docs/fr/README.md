@@ -135,6 +135,7 @@ Options booléennes:
  -D, --include-dotfiles               Incluez les fichiers cachés dans la recherche de fichiers.
  -R, --no-recursion                   Désactivez la recherche récursive de fichiers.
  -M, --no-mangle                      Désactivez la modification des noms.
+ -c, --copy                           Copiez le code minifié dans le presse-papiers au lieu d'écrire dans un fichier si un fichier source unique est traité.
  -q, --quiet                          Supprime toute la journalisation, à l'exception des erreurs.
 
 Options des paramètres:

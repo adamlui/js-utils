@@ -135,6 +135,7 @@ $ minify-js input_folder output_folder
  -D, --include-dotfiles               在文件搜索中包含点文件。
  -R, --no-recursion                   禁用递归文件搜索。
  -M, --no-mangle                      禁用修改名称。
+ -c, --copy                           如果处理单个源文件，则将缩小的代码复制到剪贴板而不是写入文件。
  -q, --quiet                          禁止除错误之外的所有日志记录。
 
 参数选项：

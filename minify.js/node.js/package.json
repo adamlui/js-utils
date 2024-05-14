@@ -52,6 +52,7 @@
     "url": "https://github.minify-js.org/issues"
   },
   "dependencies": {
+    "node-clipboardy": "^1.0.3",
     "uglify-js": "^3.17.4"
   },
   "funding": {

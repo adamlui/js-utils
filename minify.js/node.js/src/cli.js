@@ -11,6 +11,7 @@ const pkgName = '@adamlui/minify.js',
     // Import LIBS
     const minifyJS = require(__dirname.match(/src/) ? './minify' : './minify.min'),
           fs = require('fs'), path = require('path'),
+          ncp = require('node-clipboardy'), // for --copy flag
           { execSync } = require('child_process'); // for --version cmd
 
     // Init UI COLORS
@@ -63,6 +64,7 @@ const pkgName = '@adamlui/minify.js',
             'includeDotFiles': /^--?(?:df|D|(?:include-?)?dot-?files?=?(?:true|1)?)$/,
             'noRecursion': /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
             'noMangle': /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/,
+            'copy': /^--?c(?:opy)?$/,
             'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
         },
         paramOptions: {
@@ -157,25 +159,7 @@ const pkgName = '@adamlui/minify.js',
                 return minifyResult;
             }).filter(minifyResult => !minifyResult.error); // filter out failed minifications
 
-            // Write array data to files
-            minifyData?.forEach(({ code, srcPath }) => {
-                const outputDir = path.join(
-                    path.dirname(srcPath), // path of file to be minified
-                    ( /so?u?rce?$/.test(path.dirname(srcPath)) ? '../' : '' ) // + '../' if in if in *(src|source)/
-                  + ( outputArg.endsWith('.js') ? path.dirname(outputArg) // + path from file outputArg
-                                                : outputArg || 'min' ) // or path from folder outputArg or min/ if no outputArg passed
-                );
-                const outputFilename = (
-                    outputArg.endsWith('.js') && inputArg.endsWith('.js')
-                        ? path.basename(outputArg).replace(/(\.min)?\.js$/, '')
-                        : path.basename(srcPath, '.js')
-                ) + '.min.js';
-                const outputPath = path.join(outputDir, outputFilename);
-                if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-                fs.writeFileSync(outputPath, code, 'utf8');
-            });
-
-            // Print final summary
+            // Print minification summary
             if (minifyData?.length > 0) {
                 printIfNotQuiet(`\n${bg + ( msgs.info_minComplete || 'Minification complete' )}!${nc}`);
                 printIfNotQuiet(`${bw + minifyData.length} ${ msgs.info_file || 'file' }`
@@ -185,6 +169,31 @@ const pkgName = '@adamlui/minify.js',
                 printIfNotQuiet(`\n${br + failedPaths.length} ${ msgs.info_file || 'file' }`
                     + `${ failedPaths.length > 1 ? 's' : '' } ${ msgs.info_failedToMinify || 'failed to minify' }:${nc}`);
                 failedPaths.forEach(path => printIfNotQuiet(path));
+            }
+            if (minifyData?.length == 0) return;
+
+            // Copy single result code to clipboard if --copy passed
+            if (config.copy && minifyData?.length == 1) {
+                printIfNotQuiet(`\n${ msgs.info_copying || 'Copying to clipboard' }...`);
+                ncp.writeSync(minifyData[0].code);
+
+            } else { // write array data to files
+                minifyData?.forEach(({ code, srcPath }) => {
+                    const outputDir = path.join(
+                        path.dirname(srcPath), // path of file to be minified
+                        ( /so?u?rce?$/.test(path.dirname(srcPath)) ? '../' : '' ) // + '../' if in if in *(src|source)/
+                      + ( outputArg.endsWith('.js') ? path.dirname(outputArg) // + path from file outputArg
+                                                    : outputArg || 'min' ) // or path from folder outputArg or min/ if no outputArg passed
+                    );
+                    const outputFilename = (
+                        outputArg.endsWith('.js') && inputArg.endsWith('.js')
+                            ? path.basename(outputArg).replace(/(\.min)?\.js$/, '')
+                            : path.basename(srcPath, '.js')
+                    ) + '.min.js';
+                    const outputPath = path.join(outputDir, outputFilename);
+                    if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+                    fs.writeFileSync(outputPath, code, 'utf8');
+                });
             }
         }
     }
@@ -231,6 +240,8 @@ const pkgName = '@adamlui/minify.js',
                 ` -D, --include-dotfiles              ${ msgs.optionDesc_dotfiles || 'Include dotfiles in file search' }.`,
                 ` -R, --no-recursion                  ${ msgs.optionDesc_noRecursion || 'Disable recursive file searching' }.`,
                 ` -M, --no-mangle                     ${ msgs.optionDesc_noMangle || 'Disable mangling names' }.`,
+                ` -c, --copy                          ${ msgs.optionDesc_copy || 'Copy minified code to clipboard instead of writing to file'
+                                                                               + ' if single source file is processed' }.`,
                 ` -q, --quiet                         ${ msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`
             ],
             'paramOptions': [
