@@ -33,9 +33,9 @@ const pkgName = '@adamlui/minify.js',
     // Define MESSAGES
     let msgs = {};
     const msgsLoaded = new Promise((resolve, reject) => {
-        const msgHostDir = 'https://cdn.jsdelivr.net/gh/adamlui/minify.js/_locales/',
+        const msgHostURL = 'https://cdn.jsdelivr.net/gh/adamlui/minify.js/_locales/',
               msgLocaleDir = ( langCode ? langCode.replace('-', '_') : 'en' ) + '/';
-        let msgHref = msgHostDir + msgLocaleDir + 'messages.json', msgFetchTries = 0;
+        let msgHref = msgHostURL + msgLocaleDir + 'messages.json', msgFetchTries = 0;
         fetchData(msgHref).then(onLoad).catch(reject);
         async function onLoad(resp) {
             try { // to return localized messages.json
@@ -48,7 +48,7 @@ const pkgName = '@adamlui/minify.js',
                 msgFetchTries++; if (msgFetchTries == 3) return resolve({}); // try up to 3X (original/region-stripped/EN) only
                 msgHref = langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                     msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
-                        : ( msgHostDir + 'en/messages.json' ); // else use default English messages
+                        : ( msgHostURL + 'en/messages.json' ); // else use default English messages
                 fetchData(msgHref).then(onLoad).catch(reject);
             }
         }
