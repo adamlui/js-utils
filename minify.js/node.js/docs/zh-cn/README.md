@@ -139,7 +139,7 @@ $ minify-js input_folder output_folder
 
 参数选项：
  --ignore-files="file1.js,file2.js"   要从缩小中排除的文件。
- --comment="comment"                  在缩小的代码前面添加注释。 使用“\n”按行分隔。
+ --comment="comment"                  在缩小的代码前面添加注释。 使用 '\n' 按行分隔。
 
 信息命令：
  -h, --help                           显示帮助屏幕。
@@ -214,7 +214,7 @@ minifyJS.minify(input, { dotFiles: true });
 `dotFiles`    | 布尔值 | 在文件搜索中包含点文件。                        | `false`
 `mangle`      | 布尔值 | 缩短变量名称（通常为一个字符）。                 | `true`
 `ignoreFiles` | 大批   | 要从缩小中排除的文件（按名称）。                 | `[]`
-`comment`     | 细绳   | 添加注释以添加到缩小代码之前。 使用“\n”按行分隔。 | `''`
+`comment`     | 细绳   | 添加注释以添加到缩小代码之前。 使用 '\n' 按行分隔。 | `''`
 
 #
 
