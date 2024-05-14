@@ -17,9 +17,9 @@
   "geoLabel_zip": { "message": "タイムゾーン" },
   "geoLabel_lat": { "message": "緯度" },
   "geoLabel_lon": { "message": "経度" },
-  "helpSection_usage": { "message": "Usage" },
+  "helpSection_usage": { "message": "使用法" },
   "helpSection_configOptions": { "message": "構成オプション" },
-  "helpSection_infoCmds": { "message": "INFO コマンド" },
+  "helpSection_infoCmds": { "message": "情報コマンド" },
   "optionDesc_quiet": { "message": "エラーを除くすべてのロギングを抑制" },
   "optionDesc_help": { "message": "ヘルプ画面を表示" },
   "optionDesc_version": { "message": "バージョン番号" }
