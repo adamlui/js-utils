@@ -91,8 +91,8 @@ else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
         const scssInputPath = inputPath + '.scss'; // append '.scss' in case ommitted from intended filename
         if (!fs.existsSync(scssInputPath)) {
             console.error(`\n${br}Error: First argument can only be an existing file or directory.`
-                + `\n'${inputPath}' does not exist.${nc}`
-                + `\n\n${bg}Example valid command: \n» scss-to-css . output.min.css${nc}`);
+                + `\n'${inputPath}' does not exist.${nc}`);
+            console.info(`\n${bg}Example valid command: \n» scss-to-css . output.min.css${nc}`);
             printHelpCmdAndDocURL(); process.exit(1);
         } else inputPath = scssInputPath;
     }
