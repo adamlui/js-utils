@@ -120,6 +120,22 @@ else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
             return compileResult;
         }).filter(data => !data.error ); // filter out failed compilations
 
+        // Print compilation summary
+        if (compileData?.length > 0) {
+            const cssCntSuffix = compileData.length > 1 ? 's' : '';
+            printIfNotQuiet(`\n${bg}Compilation complete!${nc}`);
+            printIfNotQuiet(`${bw + compileData.length} CSS file${ cssCntSuffix }`
+                + ( !config.noSourceMaps ? ` + ${compileData.length} source map${ cssCntSuffix }` : '' )
+                + ' generated.' + nc);
+        } else printIfNotQuiet(`\n${by}No SCSS files processed.${nc}`);
+        if (failedPaths.length > 0) {
+            printIfNotQuiet(`\n${br}`
+                + `${failedPaths.length} file${ failedPaths.length > 1 ? 's' : '' }`
+                + ` failed to compile:${nc}`);
+            failedPaths.forEach(path => printIfNotQuiet(path));
+        }
+        if (compileData?.length == 0) return;
+
         // Write array data to files
         printIfNotQuiet(`\nWriting to file${ compileData?.length > 1 ? 's' : '' }...`);
         compileData?.forEach(({ code, srcMap, srcPath }) => {
@@ -140,21 +156,6 @@ else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
             fs.writeFileSync(outputPath, code, 'utf8');
             if (!config.noSourceMaps) fs.writeFileSync(outputPath + '.map', JSON.stringify(srcMap), 'utf8');
         });
-
-        // Print final summary
-        if (compileData?.length > 0) {
-            const cssCntSuffix = compileData.length > 1 ? 's' : '';
-            printIfNotQuiet(`\n${bg}Compilation complete!${nc}`);
-            printIfNotQuiet(`${bw + compileData.length} CSS file${ cssCntSuffix }`
-                + ( !config.noSourceMaps ? ` + ${compileData.length} source map${ cssCntSuffix }` : '' )
-                + ' generated.' + nc);
-        } else printIfNotQuiet(`\n${by}No SCSS files processed.${nc}`);
-        if (failedPaths.length > 0) {
-            printIfNotQuiet(`\n${br}`
-                + `${failedPaths.length} file${ failedPaths.length > 1 ? 's' : '' }`
-                + ` failed to compile:${nc}`);
-            failedPaths.forEach(path => printIfNotQuiet(path));
-        }
     }
 }
 
