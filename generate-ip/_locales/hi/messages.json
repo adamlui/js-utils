@@ -10,7 +10,7 @@
   "error_nonPositiveNum": { "message": "तर्क केवल > 0 हो सकता है" },
   "error_invalidURL": { "message": "अमान्य URL" },
   "info_validArgs": { "message": "मान्य तर्क नीचे दिए गए हैं" },
-  "info_copying": { "message": "क्लिपबोर्ड से नक़ल किया जा रहा है... user on host" },
+  "info_copying": { "message": "क्लिपबोर्ड पर कॉपी किया जा रहा है" },
   "info_moreHelp": { "message": "ज़्यादा मदद के लिए" },
   "info_type": { "message": "प्रकार" },
   "info_or": { "message": "या" },
