@@ -140,6 +140,7 @@ $ scss-to-css input_folder output_folder
  -S, --no-source-maps                     ソース マップが生成されないようにします。
  -M, --no-minify                          出力 CSS の縮小を無効にします。
  -R, --no-recursion                       再帰的なファイル検索を無効にします。
+ -c, --copy                               単一のソース ファイルが処理される場合は、コンパイルされた CSS をファイルに書き込むのではなく、クリップボードにコピーします。
  -q, --quiet                              エラーを除くすべてのログを抑制します。
 
 パラメータオプション:

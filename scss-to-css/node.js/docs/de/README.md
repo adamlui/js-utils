@@ -140,6 +140,7 @@ Boolesche Optionen:
  -S, --no-source-maps                     Verhindern Sie, dass Quellkarten generiert werden.
  -M, --no-minify                          Deaktivieren Sie die Minimierung des Ausgabe-CSS.
  -R, --no-recursion                       Deaktivieren Sie die rekursive Dateisuche.
+ -c, --copy                               Kopieren Sie kompiliertes CSS in die Zwischenablage, anstatt in eine Datei zu schreiben, wenn eine einzelne Quelldatei verarbeitet wird.
  -q, --quiet                              Unterdrücken Sie alle Protokolle außer Fehlern.
 
 Parameteroptionen:

@@ -140,6 +140,7 @@ Opzioni booleane:
  -S, --no-source-maps                     Impedisce la generazione delle mappe di origine.
  -M, --no-minify                          Disabilita la minimizzazione dei CSS di output.
  -R, --no-recursion                       Disabilita la ricerca ricorsiva dei file.
+ -c, --copy                               Copia il CSS compilato negli appunti invece di scrivere nel file se viene elaborato un singolo file sorgente.
  -q, --quiet                              Elimina tutta la registrazione tranne gli errori.
 
 Opzioni dei parametri:

@@ -140,6 +140,7 @@ $ scss-to-css input_folder output_folder
  -S, --no-source-maps                     防止產生來源映射。
  -M, --no-minify                          禁用輸出 CSS 的縮小。
  -R, --no-recursion                       停用遞歸檔案搜尋。
+ -c, --copy                               如果處理單一原始文件，則將編譯後的 CSS 複製到剪貼簿，而不是寫入檔案。
  -q, --quiet                              禁止錯誤以外的所有日誌記錄。
 
 參數選項：

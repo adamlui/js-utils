@@ -9,6 +9,7 @@ const pkgName = '@adamlui/scss-to-css',
 // Import LIBS
 const scssToCSS = require(__dirname.match(/src/) ? './scss-to-css' : './scss-to-css.min'),
       fs = require('fs'), path = require('path'),
+      ncp = require('node-clipboardy'), // for --copy flag
       { execSync } = require('child_process'); // for --version cmd
 
 // Init UI colors
@@ -27,6 +28,7 @@ const reArgs = {
         'noSourceMaps': /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?|so?u?rce?-?maps?=(?:false|0))$/,
         'noRecursion': /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
         'noMinify': /^--?(?:M|(?:disable|no)-?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/,
+        'copy': /^--?c(?:opy)?$/,
         'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
     },
     paramOptions: {
@@ -136,26 +138,32 @@ else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
         }
         if (compileData?.length == 0) process.exit(0);
 
-        // Write array data to files
-        printIfNotQuiet(`\nWriting to file${ compileData?.length > 1 ? 's' : '' }...`);
-        compileData?.forEach(({ code, srcMap, srcPath }) => {
-            const outputDir = path.join(
-                path.dirname(srcPath), // path of file to be minified
-                /(?:src|s[ac]ss)$/.test(path.dirname(srcPath)) ? (
-                    '../' + ( outputArg || 'css' ) // + ../outputArg|css/ if in *(src|sass|scss)/
-                ) : outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
-                                               : outputArg || 'css' // or path from folder outputArg or css/ if no outputArg passed
-            );
-            const outputFilename = (
-                outputArg.endsWith('.css') && inputArg.endsWith('.scss')
-                    ? path.basename(outputArg).replace(/(\.min)?\.css$/, '')
-                    : path.basename(srcPath, '.scss')
-            ) + '.min.css';
-            const outputPath = path.join(outputDir, outputFilename);
-            if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-            fs.writeFileSync(outputPath, code, 'utf8');
-            if (!config.noSourceMaps) fs.writeFileSync(outputPath + '.map', JSON.stringify(srcMap), 'utf8');
-        });
+        // Copy single result code to clipboard if --copy passed
+        if (config.copy && compileData?.length == 1) {
+            printIfNotQuiet('\nCopying to clipboard...');
+            ncp.writeSync(compileData[0].code);
+
+        } else { // write array data to files
+            printIfNotQuiet(`\nWriting to file${ compileData?.length > 1 ? 's' : '' }...`);
+            compileData?.forEach(({ code, srcMap, srcPath }) => {
+                const outputDir = path.join(
+                    path.dirname(srcPath), // path of file to be minified
+                    /(?:src|s[ac]ss)$/.test(path.dirname(srcPath)) ? (
+                        '../' + ( outputArg || 'css' ) // + ../outputArg|css/ if in *(src|sass|scss)/
+                    ) : outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
+                                                   : outputArg || 'css' // or path from folder outputArg or css/ if no outputArg passed
+                );
+                const outputFilename = (
+                    outputArg.endsWith('.css') && inputArg.endsWith('.scss')
+                        ? path.basename(outputArg).replace(/(\.min)?\.css$/, '')
+                        : path.basename(srcPath, '.scss')
+                ) + '.min.css';
+                const outputPath = path.join(outputDir, outputFilename);
+                if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+                fs.writeFileSync(outputPath, code, 'utf8');
+                if (!config.noSourceMaps) fs.writeFileSync(outputPath + '.map', JSON.stringify(srcMap), 'utf8');
+            });
+        }
     }
 }
 
@@ -183,6 +191,8 @@ function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'fl
             ' -S, --no-source-maps                    Prevent source maps from being generated.',
             ' -M, --no-minify                         Disable minification of output CSS.',
             ' -R, --no-recursion                      Disable recursive file searching.',
+            ' -c, --copy                              Copy compiled CSS to clipboard instead of writing to file'
+                                                    + ' if single source file is processed.',
             ' -q, --quiet                             Suppress all logging except errors.'
         ],
         'paramOptions': [

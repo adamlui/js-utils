@@ -140,6 +140,7 @@ Booleaanse opties:
  -S, --no-source-maps                     Voorkom dat bronkaarten worden gegenereerd.
  -M, --no-minify                          Schakel verkleining van uitvoer-CSS uit.
  -R, --no-recursion                       Schakel recursief zoeken naar bestanden uit.
+ -c, --copy                               Kopieer gecompileerde CSS naar het klembord in plaats van naar een bestand te schrijven als er één bronbestand wordt verwerkt.
  -q, --quiet                              Onderdruk alle logboekregistratie, behalve fouten.
 
 Parameteropties:

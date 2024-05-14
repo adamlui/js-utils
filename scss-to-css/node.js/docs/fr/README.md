@@ -140,6 +140,7 @@ Options booléennes:
  -S, --no-source-maps                     Empêcher la génération de mappages sources.
  -M, --no-minify                          Désactivez la minification du CSS de sortie.
  -R, --no-recursion                       Désactivez la recherche récursive de fichiers.
+ -c, --copy                               Copiez le CSS compilé dans le presse-papiers au lieu d'écrire dans un fichier si un fichier source unique est traité.
  -q, --quiet                              Supprime toute la journalisation, à l'exception des erreurs.
 
 Options des paramètres:

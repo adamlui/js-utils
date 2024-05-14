@@ -140,6 +140,7 @@ Opciones booleanas:
  -S, --no-source-maps                     Evitar que se generen mapas de origen.
  -M, --no-minify                          Deshabilite la minificación del CSS de salida.
  -R, --no-recursion                       Deshabilite la búsqueda recursiva de archivos.
+ -c, --copy                               Copie CSS compilado al portapapeles en lugar de escribir en un archivo si se procesa un único archivo fuente.
  -q, --quiet                              Suprime todos los registros excepto los errores.
 
 Opciones de parámetros:
