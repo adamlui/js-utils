@@ -144,7 +144,7 @@ else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
             printIfNotQuiet(`${bw + compileData.length} CSS file${ cssCntSuffix }`
                 + ( !config.noSourceMaps ? ` + ${compileData.length} source map${ cssCntSuffix }` : '' )
                 + ' generated.' + nc);
-        } else printIfNotQuiet(`${by}No SCSS files processed.${nc}`);
+        } else printIfNotQuiet(`\n${by}No SCSS files processed.${nc}`);
         if (failedPaths.length > 0) {
             printIfNotQuiet(`\n${br}`
                 + `${failedPaths.length} file${ failedPaths.length > 1 ? 's' : '' }`

@@ -164,7 +164,7 @@ const pkgName = '@adamlui/minify.js',
                 printIfNotQuiet(`\n${bg + ( msgs.info_minComplete || 'Minification complete' )}!${nc}`);
                 printIfNotQuiet(`${bw + minifyData.length} ${ msgs.info_file || 'file' }`
                     + `${ minifyData.length > 1 ? 's' : '' } ${ msgs.info_minified || 'minified' }.${nc}`);
-            } else printIfNotQuiet(`${by + ( msgs.info_noFilesProcessed || 'No unminified JavaScript files processed' )}.${nc}`);
+            } else printIfNotQuiet(`\n${by + ( msgs.info_noFilesProcessed || 'No unminified JavaScript files processed' )}.${nc}`);
             if (failedPaths.length > 0) {
                 printIfNotQuiet(`\n${br + failedPaths.length} ${ msgs.info_file || 'file' }`
                     + `${ failedPaths.length > 1 ? 's' : '' } ${ msgs.info_failedToMinify || 'failed to minify' }:${nc}`);
