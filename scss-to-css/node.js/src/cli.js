@@ -134,7 +134,7 @@ else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
                 + ` failed to compile:${nc}`);
             failedPaths.forEach(path => printIfNotQuiet(path));
         }
-        if (compileData?.length == 0) return;
+        if (compileData?.length == 0) process.exit(0);
 
         // Write array data to files
         printIfNotQuiet(`\nWriting to file${ compileData?.length > 1 ? 's' : '' }...`);
