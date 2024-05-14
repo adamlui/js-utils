@@ -31,5 +31,5 @@
   "optionDesc_strict": { "message": "Vereis ten minste een karakter van elke toegelate karakter wat in wagwoord(s) gestel is" },
   "optionDesc_quiet": { "message": "Onderdruk alle aanmelding behalwe foute" },
   "optionDesc_help": { "message": "Vertoon hulp skerm" },
-  "optionDesc_version": { "message": " Naam van die Vertoon" }
+  "optionDesc_version": { "message": "Naam van die Vertoon" }
 }

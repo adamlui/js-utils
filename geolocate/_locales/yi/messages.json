@@ -13,7 +13,7 @@
   "info_visit": { "message": "באַזוכן" },
   "geoLabel_country": { "message": "לאנד" },
   "geoLabel_region": { "message": "ראיאן" },
-  "geoLabel_city": { "message": "שטאט " },
+  "geoLabel_city": { "message": "שטאט" },
   "geoLabel_zip": { "message": "צייַט זאָנע" },
   "geoLabel_lat": { "message": "ברייט" },
   "geoLabel_lon": { "message": "לענג" },

@@ -4,7 +4,7 @@
   "prefix_error": { "message": "ದೋಷ" },
   "prefix_globalVer": { "message": "ಜಾಗತಿಕ ಆವೃತ್ತಿ" },
   "prefix_localVer": { "message": "ಸ್ಥಳೀಯ ಆವೃತ್ತಿ" },
-  "prefix_source": { "message": "ಮೂಲ " },
+  "prefix_source": { "message": "ಮೂಲ" },
   "error_notRecognized": { "message": "ಗುರುತಿಸಲಾಗಿಲ್ಲ" },
   "error_invalidURL": { "message": "ಅಮಾನ್ಯ URL" },
   "info_validArgs": { "message": "ಮಾನ್ಯವಾದ ಆರ್ಗ್ಯುಮೆಂಟ್ ‌ ಗಳು ಕೆಳಗೆ ಇವೆ" },

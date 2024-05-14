@@ -24,5 +24,5 @@
   "optionDesc_mac": { "message": "Mac adresi oluştur" },
   "optionDesc_quiet": { "message": "Hatalar hariç tüm günlükleri bastır" },
   "optionDesc_help": { "message": "Yardım ekranını görüntüle" },
-  "optionDesc_version": { "message": "Versiyon Numarası " }
+  "optionDesc_version": { "message": "Versiyon Numarası" }
 }

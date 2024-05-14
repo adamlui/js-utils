@@ -17,7 +17,7 @@
   "geoLabel_zip": { "message": "zòn tan/zòn lè /zone de temps/fuseau horaire/décalage horaire" },
   "geoLabel_lat": { "message": "Latitid" },
   "geoLabel_lon": { "message": "Lonjitid" },
-  "helpSection_usage": { "message": "usage/itilize/itilizasyon/utilisation " },
+  "helpSection_usage": { "message": "usage/itilize/itilizasyon/utilisation" },
   "helpSection_configOptions": { "message": "Konfigire opsyon yo" },
   "helpSection_infoCmds": { "message": "Kòmandman Enfòmasyon" },
   "optionDesc_quiet": { "message": "Siprime tout antre eksepte erè" },

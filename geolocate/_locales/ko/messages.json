@@ -22,5 +22,5 @@
   "helpSection_infoCmds": { "message": "정보 명령" },
   "optionDesc_quiet": { "message": "오류를 제외한 모든 로깅 억제" },
   "optionDesc_help": { "message": "도움말 화면 표시" },
-  "optionDesc_version": { "message": "버전 넘버 보여주기 " }
+  "optionDesc_version": { "message": "버전 넘버 보여주기" }
 }

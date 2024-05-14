@@ -6,7 +6,7 @@
   "prefix_localVer": { "message": "Phiên bản địa phương" },
   "prefix_source": { "message": "Nguồn" },
   "error_notRecognized": { "message": "không được công nhận" },
-  "error_invalidURL": { "message": "URL không hợp lệ " },
+  "error_invalidURL": { "message": "URL không hợp lệ" },
   "info_validArgs": { "message": "Dưới đây là các đối số hợp lệ" },
   "info_copying": { "message": "Đang chép vào bảng nháp" },
   "info_moreHelp": { "message": "Để được trợ giúp thêm" },

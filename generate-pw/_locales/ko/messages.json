@@ -31,5 +31,5 @@
   "optionDesc_strict": { "message": "암호에 설정된 각 허용 문자에서 하나 이상의 문자 필요" },
   "optionDesc_quiet": { "message": "오류를 제외한 모든 로깅 억제" },
   "optionDesc_help": { "message": "도움말 화면 표시" },
-  "optionDesc_version": { "message": "버전 넘버 보여주기 " }
+  "optionDesc_version": { "message": "버전 넘버 보여주기" }
 }

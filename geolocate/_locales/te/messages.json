@@ -4,7 +4,7 @@
   "prefix_error": { "message": "దోషం" },
   "prefix_globalVer": { "message": "గ్లోబల్ వెర్షన్" },
   "prefix_localVer": { "message": "స్థానిక వెర్షన్" },
-  "prefix_source": { "message": " మూలం " },
+  "prefix_source": { "message": "మూలం" },
   "error_notRecognized": { "message": "గుర్తించబడలేదు" },
   "error_invalidURL": { "message": "చెల్లని URL" },
   "info_validArgs": { "message": "చెల్లుబాటు అయ్యే వాదనలు క్రింద ఉన్నాయి" },

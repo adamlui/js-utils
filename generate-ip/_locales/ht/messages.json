@@ -15,7 +15,7 @@
   "info_type": { "message": "kalite/lèt/tip/tipe" },
   "info_or": { "message": "oswa" },
   "info_visit": { "message": "vizite" },
-  "helpSection_usage": { "message": "usage/itilize/itilizasyon/utilisation " },
+  "helpSection_usage": { "message": "usage/itilize/itilizasyon/utilisation" },
   "helpSection_paramOptions": { "message": "Opsyon paramèt" },
   "helpSection_flags": { "message": "Opsyon Boolean" },
   "helpSection_infoCmds": { "message": "Kòmandman Enfòmasyon" },

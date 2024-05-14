@@ -24,5 +24,5 @@
   "optionDesc_mac": { "message": "Genereer MAC-adres" },
   "optionDesc_quiet": { "message": "Onderdruk alle aanmelding behalwe foute" },
   "optionDesc_help": { "message": "Vertoon hulp skerm" },
-  "optionDesc_version": { "message": " Naam van die Vertoon" }
+  "optionDesc_version": { "message": "Naam van die Vertoon" }
 }

@@ -31,5 +31,5 @@
   "optionDesc_strict": { "message": "Parola(lar) da izin verilen her karakter kümesinden en az bir karakter gerektirir" },
   "optionDesc_quiet": { "message": "Hatalar hariç tüm günlükleri bastır" },
   "optionDesc_help": { "message": "Yardım ekranını görüntüle" },
-  "optionDesc_version": { "message": "Versiyon Numarası " }
+  "optionDesc_version": { "message": "Versiyon Numarası" }
 }

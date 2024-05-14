@@ -10,7 +10,7 @@
   "info_validArgs": { "message": "Gild rök eru hér að neðan" },
   "info_copying": { "message": "Afrita á klemmuspjald" },
   "info_moreHelp": { "message": "Fyrir frekari aðstoð" },
-  "info_visit": { "message": "Heimsókn " },
+  "info_visit": { "message": "Heimsókn" },
   "geoLabel_country": { "message": "Country" },
   "geoLabel_region": { "message": "Kennitala" },
   "geoLabel_city": { "message": "City" },
