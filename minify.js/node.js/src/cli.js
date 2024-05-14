@@ -181,6 +181,7 @@ const pkgName = '@adamlui/minify.js',
                 ncp.writeSync(minifyData[0].code);
 
             } else { // write array data to files
+                printIfNotQuiet(`\nWriting to file${ minifyData?.length > 1 ? 's' : '' }...`);
                 minifyData?.forEach(({ code, srcPath }) => {
                     const outputDir = path.join(
                         path.dirname(srcPath), // path of file to be minified
