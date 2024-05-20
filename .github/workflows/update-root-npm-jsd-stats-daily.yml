@@ -100,8 +100,8 @@ jobs:
       - name: Update README shields
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
-          total_downloads=$(echo ${{ steps.get-stats.outputs.total_downloads }})
-          total_hits=$(echo ${{ steps.get-stats.outputs.total_hits }})
+          total_downloads="${{ steps.get-stats.outputs.total_downloads }}"
+          total_hits="${{ steps.get-stats.outputs.total_hits }}"
           if [ "$total_downloads" != "0" ]; then
             sed -i -E "s|(badge/Downloads-)[0-9.,km+]+|\1$total_downloads|Ig" docs/README.md ; fi
           if [ "$total_hits" != "0" ]; then
