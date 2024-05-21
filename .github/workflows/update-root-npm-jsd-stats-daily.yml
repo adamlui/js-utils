@@ -76,7 +76,7 @@ jobs:
             pkg_requests=$(expand_num "$pkg_requests")
             echo "$pkg npm jsDelivr hits: $pkg_requests"
             total_requests=$((total_requests + pkg_requests))
-          done
+          done ; echo -e "\nTotal monthly jsDelivr (npm) requests: $total_requests\n"
 
           # Fetch/sum jsDelivr hits for GH repos
           for repo in "${jsd_gh_repos[@]}" ; do
