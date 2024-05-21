@@ -68,14 +68,14 @@ jobs:
             pkg_downloads=$(expand_num "$pkg_downloads")
             echo "$pkg npm downloads: $pkg_downloads"
             total_downloads=$((total_downloads + pkg_downloads))
-          done ; echo -e "\nTotal npm downloads: $total_downloads\n"
+          done ; echo -e "\nTotal monthly npm downloads: $total_downloads\n"
 
           # Fetch/sum jsDelivr hits for npm pkgs
           for pkg in "${jsd_npm_pkgs[@]}" ; do
             pkg_requests=$(curl -s "https://img.shields.io/jsdelivr/npm/hm/$pkg.svg" |
               sed -n -E 's|.*<title>jsdelivr: ([0-9,.km]+).*</title>.*|\1|Ip')
             pkg_requests=$(expand_num "$pkg_requests")
-            echo "$pkg npm jsDelivr hits: $pkg_requests"
+            echo "$pkg jsDelivr (npm) hits: $pkg_requests"
             total_requests=$((total_requests + pkg_requests))
           done ; echo -e "\nTotal monthly jsDelivr (npm) requests: $total_requests\n"
 
@@ -84,9 +84,9 @@ jobs:
             repo_requests=$(curl -s "https://img.shields.io/jsdelivr/gh/hm/$repo.svg" |
               sed -n -E 's|.*<title>jsdelivr: ([0-9,.km]+).*</title>.*|\1|Ip')
             repo_requests=$(expand_num "$repo_requests")
-            echo "$repo GH jsDelivr hits: $repo_requests"
+            echo "$repo jsDelivr (GH) hits: $repo_requests"
             total_requests=$((total_requests + repo_requests))
-          done ; echo -e "\nTotal jsDelivr hits: $total_requests\n"
+          done ; echo -e "\nTotal monthly jsDelivr (GH) requests: $total_requests\n"
 
           # Format totals
           formatted_total_downloads=$(format_total "$total_downloads")
