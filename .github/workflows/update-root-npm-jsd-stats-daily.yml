@@ -1,4 +1,4 @@
-name: Update npm downloads + jsDelivr hits shields in root README
+name: Update npm downloads + jsDelivr requests shields in root README
 
 on:
   schedule:
@@ -16,7 +16,7 @@ jobs:
           repository: adamlui/js-utils
           path: adamlui/js-utils
       
-      - name: Fetch/sum npm/jsDelivr counts
+      - name: Fetch/sum npm download + jsDelivr request counts
         id: get-stats
         run: |
           LC_NUMERIC=en_US # to insert commas
