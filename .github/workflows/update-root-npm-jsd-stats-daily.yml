@@ -71,11 +71,11 @@ jobs:
 
           # Fetch/sum jsDelivr hits for npm pkgs
           for pkg in "${jsd_npm_pkgs[@]}" ; do
-            pkg_hits=$(curl -s "https://img.shields.io/jsdelivr/npm/hm/$pkg.svg" |
+            pkg_requests=$(curl -s "https://img.shields.io/jsdelivr/npm/hm/$pkg.svg" |
               sed -n -E 's|.*<title>jsdelivr: ([0-9,.km]+).*</title>.*|\1|Ip')
-            pkg_hits=$(expand_num "$pkg_hits")
-            echo "$pkg npm jsDelivr hits: $pkg_hits"
-            total_requests=$((total_requests + pkg_hits))
+            pkg_requests=$(expand_num "$pkg_requests")
+            echo "$pkg npm jsDelivr hits: $pkg_requests"
+            total_requests=$((total_requests + pkg_requests))
           done
 
           # Fetch/sum jsDelivr hits for GH repos
