@@ -75,37 +75,37 @@ jobs:
               sed -n -E 's|.*<title>jsdelivr: ([0-9,.km]+).*</title>.*|\1|Ip')
             pkg_hits=$(expand_num "$pkg_hits")
             echo "$pkg npm jsDelivr hits: $pkg_hits"
-            total_hits=$((total_hits + pkg_hits))
+            total_requests=$((total_requests + pkg_hits))
           done
 
           # Fetch/sum jsDelivr hits for GH repos
           for repo in "${jsd_gh_repos[@]}" ; do
-            repo_hits=$(curl -s "https://img.shields.io/jsdelivr/gh/hm/$repo.svg" |
+            repo_requests=$(curl -s "https://img.shields.io/jsdelivr/gh/hm/$repo.svg" |
               sed -n -E 's|.*<title>jsdelivr: ([0-9,.km]+).*</title>.*|\1|Ip')
-            repo_hits=$(expand_num "$repo_hits")
-            echo "$repo GH jsDelivr hits: $repo_hits"
-            total_hits=$((total_hits + repo_hits))
-          done ; echo -e "\nTotal jsDelivr hits: $total_hits\n"
+            repo_requests=$(expand_num "$repo_requests")
+            echo "$repo GH jsDelivr hits: $repo_requests"
+            total_requests=$((total_requests + repo_requests))
+          done ; echo -e "\nTotal jsDelivr hits: $total_requests\n"
 
           # Format totals
           formatted_total_downloads=$(format_total "$total_downloads")
           echo "Formatted total monthly npm downloads: $formatted_total_downloads"
-          formatted_total_hits=$(format_total "$total_hits")
-          echo "Formatted total monthly jsDelivr hits: $formatted_total_hits"
+          formatted_total_requests=$(format_total "$total_requests")
+          echo "Formatted total monthly jsDelivr hits: $formatted_total_requests"
 
           # Store for update step next
           echo "total_downloads=$formatted_total_downloads" >> $GITHUB_OUTPUT
-          echo "total_hits=$formatted_total_hits" >> $GITHUB_OUTPUT
+          echo "total_requests=$formatted_total_requests" >> $GITHUB_OUTPUT
       
       - name: Update README shields
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           total_downloads="${{ steps.get-stats.outputs.total_downloads }}"
-          total_hits="${{ steps.get-stats.outputs.total_hits }}"
+          total_requests="${{ steps.get-stats.outputs.total_requests }}"
           if [ "$total_downloads" != "0" ]; then
             sed -i -E "s|(badge/Downloads-)[0-9.,km+]+|\1$total_downloads|Ig" docs/README.md ; fi
-          if [ "$total_hits" != "0" ]; then
-            sed -i -E "s|(badge/jsDelivr_[^-]+-)[0-9.,km+]+|\1$total_hits|Ig" docs/README.md ; fi
+          if [ "$total_requests" != "0" ]; then
+            sed -i -E "s|(badge/jsDelivr_[^-]+-)[0-9.,km+]+|\1$total_requests|Ig" docs/README.md ; fi
 
       - name: Push to adamlui/js-utils
         uses: stefanzweifel/git-auto-commit-action@v4
