@@ -69,7 +69,7 @@ jobs:
             pkg_downloads=$(expand_num "$pkg_downloads")
             echo "$pkg npm downloads: $pkg_downloads"
             total_downloads=$((total_downloads + pkg_downloads))
-          done ; echo -e "\nTotal monthly npm downloads: $total_downloads\n"
+          done ; echo -e "\n-----\nTotal monthly npm downloads: $total_downloads\n-----\n"
 
           # Fetch/sum jsDelivr request counts for npm pkgs
           for pkg in "${jsd_npm_pkgs[@]}" ; do
@@ -78,7 +78,7 @@ jobs:
             pkg_requests=$(expand_num "$pkg_requests")
             echo "$pkg jsDelivr (npm) hits: $pkg_requests"
             total_pkg_requests=$((total_pkg_requests + pkg_requests))
-          done ; echo -e "\nTotal monthly jsDelivr (npm) requests: $total_pkg_requests\n"
+          done ; echo -e "\n-----\nTotal monthly jsDelivr (npm) requests: $total_pkg_requests\n-----\n"
 
           # Fetch/sum jsDelivr request counts for GH repos
           for repo in "${jsd_gh_repos[@]}" ; do
@@ -87,7 +87,7 @@ jobs:
             repo_requests=$(expand_num "$repo_requests")
             echo "$repo jsDelivr (GH) hits: $repo_requests"
             total_repo_requests=$((total_repo_requests + repo_requests))
-          done ; echo -e "\nTotal monthly jsDelivr (GH) requests: $total_repo_requests\n"
+          done ; echo -e "\n-----\nTotal monthly jsDelivr (GH) requests: $total_repo_requests\n-----\n"
 
           # Format totals
           formatted_total_downloads=$(format_total "$total_downloads")
