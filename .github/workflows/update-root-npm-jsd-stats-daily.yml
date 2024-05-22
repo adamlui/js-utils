@@ -100,14 +100,41 @@ jobs:
           echo "total_requests=$formatted_total_requests" >> $GITHUB_OUTPUT
       
       - name: Update README shields
+        id: update-stats
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
+
           total_downloads="${{ steps.get-stats.outputs.total_downloads }}"
           total_requests="${{ steps.get-stats.outputs.total_requests }}"
-          if [ "$total_downloads" != "0" ]; then
-            sed -i -E "s|(badge/Downloads-)[0-9.,km+]+|\1$total_downloads|Ig" docs/README.md ; fi
-          if [ "$total_requests" != "0" ]; then
-            sed -i -E "s|(badge/jsDelivr_[^-]+-)[0-9.,km+]+|\1$total_requests|Ig" docs/README.md ; fi
+          shields_updated=0
+
+          # Update npm shield
+          if [ "$total_downloads" != "0" ] ; then
+            old_readme=$(<docs/README.md)
+            sed -i -E "s|(badge/Downloads-)[0-9.,km+]+|\1$total_downloads|Ig" docs/README.md
+            new_readme=$(<docs/README.md)
+            if [ "$old_readme" != "$new_readme" ] ; then downloads_updated=true ; ((shields_updated++)) ; fi
+            if [ "$downloads_updated" = true ] ; then echo "npm shield updated to $total_downloads"
+            else echo "npm shield already up-to-date" ; fi
+          fi
+
+          # Update jsDelivr shield
+          if [ "$total_requests" != "0" ] ; then
+            old_readme=$(<docs/README.md)
+            sed -i -E "s|(badge/jsDelivr_[^-]+-)[0-9.,km+]+|\1$total_requests|Ig" docs/README.md
+            new_readme=$(<docs/README.md)
+            if [ "$old_readme" != "$new_readme" ] ; then requests_updated=true ; ((shields_updated++)) ; fi
+            if [ "$requests_updated" = true ] ; then echo "jsDelivr shield updated to $total_requests"
+            else echo "jsDelivr shield already up-to-date" ; fi
+          fi
+
+          # Define commit msg for push step next
+          commit_msg="Updated "
+          if [ "$downloads_updated" == "true" ] ; then commit_msg+="npm" ; fi
+          if [ "$shields_updated" -gt 1 ] ; then commit_msg+="/" ; fi
+          if [ "$requests_updated" == "true" ] ; then commit_msg+="jsDelivr" ; fi
+          commit_msg+=" shield counter" ; if [ "$shields_updated" -gt 1 ] ; then commit_msg+="s" ; fi
+          echo "commit_msg=$commit_msg" >> $GITHUB_OUTPUT
 
       - name: Push to adamlui/js-utils
         uses: stefanzweifel/git-auto-commit-action@v4
@@ -116,6 +143,6 @@ jobs:
           add_options: --all
           commit_user_email: auto-sync@kudoai.com
           commit_author: kudo-sync-bot <auto-sync@kudoai.com>
-          commit_message: Updated downloads/hits shield counters
+          commit_message: ${{ steps.update-stats.outputs.commit_msg }}
           file_pattern: docs/README.md
           repository: adamlui/js-utils
