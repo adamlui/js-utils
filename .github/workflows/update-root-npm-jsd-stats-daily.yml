@@ -2,7 +2,7 @@ name: Update npm downloads + jsDelivr requests shields in root README
 
 on:
   schedule:
-    - cron: "5 0 * * *" # every day 12:05a
+    - cron: "5 0 * * 0" # every Sunday 12:05a
 
 jobs:
   update-stats-shields:
