@@ -16,10 +16,11 @@ jobs:
           repository: adamlui/js-utils
           path: adamlui/js-utils
       
-      - name: Fetch/sum npm download + jsDelivr request counts
+      - name: Fetch/sum npm download + JSD request counts
         id: get-stats
         run: |
           LC_NUMERIC=en_US # to insert commas
+
           npm_pkgs=("@adamlui/geolocate" "@adamlui/minify.js" "@adamlui/scss-to-css"
                     "generate-ip" "generate-pw" "gulp-minify.js")
           jsd_npm_pkgs=("@adamlui/geolocate" "generate-ip" "generate-pw")
