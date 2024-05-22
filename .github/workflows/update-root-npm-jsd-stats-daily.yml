@@ -95,7 +95,7 @@ jobs:
           formatted_total_requests=$(format_total $((total_pkg_requests + total_repo_requests)))
           echo "Formatted total monthly jsDelivr requests: $formatted_total_requests"
 
-          # Store for update step next
+          # Expose as outputs for update step next
           echo "total_downloads=$formatted_total_downloads" >> $GITHUB_OUTPUT
           echo "total_requests=$formatted_total_requests" >> $GITHUB_OUTPUT
       
@@ -133,8 +133,10 @@ jobs:
           [ "$downloads_updated" == "true" ] && commit_msg+="npm"
           [ "$shields_updated" -gt 1 ]       && commit_msg+="/"
           [ "$requests_updated" == "true" ]  && commit_msg+="jsDelivr"
-          commit_msg+=" shield counter$([ "$shields_updated" -gt 1 ] && echo "s")"
-          echo "commit_msg=$commit_msg" >> $GITHUB_OUTPUT
+                                                commit_msg+=" shield counter$(
+                                                  [ "$shields_updated" -gt 1 ] && echo "s")"
+
+          echo "commit_msg=$commit_msg" >> $GITHUB_OUTPUT # expose as output
 
       - name: Push to adamlui/js-utils
         uses: stefanzweifel/git-auto-commit-action@v4
