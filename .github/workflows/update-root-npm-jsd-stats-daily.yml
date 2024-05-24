@@ -109,7 +109,8 @@ jobs:
           shields_updated=0
 
           # Update npm shield
-          if [ "$total_downloads" != "0" ] ; then
+          if [ "$total_downloads" == "0" ] ; then echo "Error getting total npm downloads"
+          else # perform update
             old_readme=$(<docs/README.md)
             sed -i -E "s|(badge/Downloads-)[0-9.,km+]+|\1$total_downloads|Ig" docs/README.md
             new_readme=$(<docs/README.md)
@@ -119,7 +120,8 @@ jobs:
           fi
 
           # Update jsDelivr shield
-          if [ "$total_requests" != "0" ] ; then
+          if [ "$total_requests" == "0" ] ; then echo "Error getting total jsDelivr requests"
+          else # perform update
             old_readme=$(<docs/README.md)
             sed -i -E "s|(badge/jsDelivr_[^-]+-)[0-9.,km+]+|\1$total_requests|Ig" docs/README.md
             new_readme=$(<docs/README.md)
