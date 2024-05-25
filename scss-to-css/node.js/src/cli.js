@@ -100,7 +100,7 @@ else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
     }
 
     // Find all eligible JavaScript files or arg-passed file
-    const scssFiles = inputPath.endsWith('.scss') ? [inputPath]
+    const scssFiles = inputPath.endsWith('.scss') && !fs.statSync(inputPath).isDirectory()) ? [inputPath]
         : scssToCSS.findSCSS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode,
                                           ignoreFiles: (config.ignoreFiles?.split(',') ?? []).map(file => file.trim()) });
 
