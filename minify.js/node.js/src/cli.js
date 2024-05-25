@@ -142,7 +142,7 @@ const pkgName = '@adamlui/minify.js',
         }
 
         // Find all eligible JavaScript files or arg-passed file
-        const unminnedJSfiles = (inputPath.endsWith('.js') && !fs.statSync(inputPath).isDirectory()) ? [inputPath]
+        const unminnedJSfiles = inputPath.endsWith('.js') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
             : minifyJS.findJS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode,
                                            ignoreFiles: (config.ignoreFiles?.split(',') ?? []).map(file => file.trim()) });
 
