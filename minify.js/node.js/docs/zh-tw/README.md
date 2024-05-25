@@ -69,7 +69,7 @@ $ npm install @adamlui/minify.js
 $ minify-js
 ```
 
-**💡 注意:** 透過 `-n` 或 `--dry-run` 來只查看將處理哪些檔案。
+**📝 注意:** 透過 `-n` 或 `--dry-run` 來只查看將處理哪些檔案。
 
 #
 
@@ -82,7 +82,7 @@ $ minify-js [input_path] [output_path]
 - `[input_path]`: 相對於目前工作目錄的 JS 檔案或包含要縮小的 JS 檔案的目錄的路徑。
 - `[output_path]`: 將儲存縮小檔案的檔案或目錄的路徑，相對於原始檔案位置（如果未提供，則使用 `min/`）。
 
-**💡 注意:** 如果传递文件夹，文件将被递归处理，除非传递 `-R` 或 `--no-recursion`。
+**📝 注意:** 如果传递文件夹，文件将被递归处理，除非传递 `-R` 或 `--no-recursion`。
 
 #
 

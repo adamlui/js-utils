@@ -69,7 +69,7 @@ La **commande globale** de base est:
 $ minify-js
 ```
 
-**💡 Remarque:** Passez `-n` ou `--dry-run` pour voir uniquement quels fichiers seront traités.
+**📝 Remarque:** Passez `-n` ou `--dry-run` pour voir uniquement quels fichiers seront traités.
 
 #
 
@@ -82,7 +82,7 @@ $ minify-js [chemin_entrée] [chemin_sortie]
 - `[chemin_entrée]`: Chemin d'accès au fichier JS ou au répertoire contenant les fichiers JS à réduire, par rapport au répertoire de travail actuel.
 - `[chemin_sortie]`: Chemin d'accès au fichier ou au répertoire où les fichiers minifiés seront stockés, par rapport à l'emplacement du fichier d'origine (s'il n'est pas fourni, `min/` est utilisé).
 
-**💡 Remarque:** Si des dossiers sont transmis, les fichiers seront traités de manière récursive à moins que `-R` ou `--no-recursion` soit transmis.
+**📝 Remarque:** Si des dossiers sont transmis, les fichiers seront traités de manière récursive à moins que `-R` ou `--no-recursion` soit transmis.
 
 #
 

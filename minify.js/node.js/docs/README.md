@@ -69,7 +69,7 @@ The basic **global command** is:
 $ minify-js
 ```
 
-**💡 Note:** Pass `-n` or `--dry-run` to only see what files will be processed.
+**📝 Note:** Pass `-n` or `--dry-run` to only see what files will be processed.
 
 #
 
@@ -82,7 +82,7 @@ $ minify-js [input_path] [output_path]
 - `[input_path]`: Path to JS file or directory containing JS files to be minified, relative to the current working directory.
 - `[output_path]`: Path to file or directory where minified files will be stored, relative to original file location (if not provided, `min/` is used).
 
-**💡 Note:** If folders are passed, files will be processed recursively unless `-R` or `--no-recursion` is passed.
+**📝 Note:** If folders are passed, files will be processed recursively unless `-R` or `--no-recursion` is passed.
 
 #
 

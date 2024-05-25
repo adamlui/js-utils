@@ -69,7 +69,7 @@ El **comando global** básico es:
 $ minify-js
 ```
 
-**💡 Nota:** Pase `-n` o `--dry-run` para ver solo qué archivos se procesarán.
+**📝 Nota:** Pase `-n` o `--dry-run` para ver solo qué archivos se procesarán.
 
 #
 
@@ -82,7 +82,7 @@ $ minify-js [ruta_entrada] [ruta_salida]
 - `[ruta_entrada]`: Ruta al archivo JS o al directorio que contiene los archivos JS que se van a minimizar, en relación con el directorio de trabajo actual.
 - `[ruta_salida]`: Ruta al archivo o directorio donde se almacenarán los archivos minimizados, en relación con la ubicación del archivo original (si no se proporciona, se utiliza `min/`).
 
-**💡 Nota:** Si se pasan carpetas, los archivos se procesarán de forma recursiva a menos que se pase `-R` o `--no-recursion`.
+**📝 Nota:** Si se pasan carpetas, los archivos se procesarán de forma recursiva a menos que se pase `-R` o `--no-recursion`.
 
 #
 

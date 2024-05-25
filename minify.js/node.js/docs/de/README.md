@@ -69,7 +69,7 @@ Der grundlegende **globale Befehl** lautet:
 $ minify-js
 ```
 
-**💡 Hinweis:** Übergeben Sie `-n` oder `--dry-run`, um nur zu sehen, welche Dateien verarbeitet werden.
+**📝 Hinweis:** Übergeben Sie `-n` oder `--dry-run`, um nur zu sehen, welche Dateien verarbeitet werden.
 
 #
 
@@ -82,7 +82,7 @@ $ minify-js [eingabepfad] [ausgabepfad]
 - `[eingabepfad]`: Pfad zur JS-Datei oder zum Verzeichnis, das die zu minimierenden JS-Dateien enthält, relativ zum aktuellen Arbeitsverzeichnis.
 - `[ausgabepfad]`: Pfad zur Datei oder zum Verzeichnis, in dem minimierte Dateien gespeichert werden, relativ zum ursprünglichen Dateispeicherort (falls nicht angegeben, wird `min/`` verwendet).
 
-**💡 Hinweis:** Wenn Ordner übergeben werden, werden Dateien rekursiv verarbeitet, es sei denn, `-R` oder `--no-recursion` wird übergeben.
+**📝 Hinweis:** Wenn Ordner übergeben werden, werden Dateien rekursiv verarbeitet, es sei denn, `-R` oder `--no-recursion` wird übergeben.
 
 #
 
