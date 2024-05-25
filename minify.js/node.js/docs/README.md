@@ -178,7 +178,7 @@ const minifyJS = require('@adamlui/minify.js');
 
 ### `minify(input[, options])`
 
-Minifies JavaScript code based on the string input supplied.
+💡 Minifies JavaScript code based on the string input supplied.
 
 If **source code** is passed, it is directly minified, then an object containing `srcPath` + `code` + `error` is returned:
 
@@ -226,7 +226,7 @@ Name          | Type    | Desciption                                            
 
 ### `findJS(searchDir[, options])`
 
-Searches for all unminified JavaScript files within the `searchDir` string passed (useful for discovering what files [`minify()`](#minifyinput-options) will process) and returns an array containing their filepaths.
+💡 Searches for all unminified JavaScript files within the `searchDir` string passed (useful for discovering what files [`minify()`](#minifyinput-options) will process) and returns an array containing their filepaths.
 
 Options are boolean, passed as object properties. For example:
 

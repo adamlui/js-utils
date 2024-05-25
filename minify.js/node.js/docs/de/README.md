@@ -174,7 +174,7 @@ const minifyJS = require('@adamlui/minify.js');
 
 ### `minify(eingang[, optionen])`
 
-Minimiert JavaScript-Code basierend auf der bereitgestellten Zeichenfolgeneingabe.
+💡 Minimiert JavaScript-Code basierend auf der bereitgestellten Zeichenfolgeneingabe.
 
 Wenn **Quellcode** übergeben wird, wird dieser direkt minimiert, dann wird ein Objekt zurückgegeben, das `srcPath` + `code` + `error` enthält:
 
@@ -222,7 +222,7 @@ Name          | Typ             | Beschreibung                                  
 
 ### `findJS(suchverzeichnis[, optionen])`
 
-Sucht nach allen nicht minimierten JavaScript-Dateien innerhalb der übergebenen Zeichenfolge `suchverzeichnis` (nützlich, um herauszufinden, welche Dateien [`minify()`](#minifyeingang-optionen) verarbeiten werden) und gibt ein Array mit ihren Dateipfaden zurück.
+💡 Sucht nach allen nicht minimierten JavaScript-Dateien innerhalb der übergebenen Zeichenfolge `suchverzeichnis` (nützlich, um herauszufinden, welche Dateien [`minify()`](#minifyeingang-optionen) verarbeiten werden) und gibt ein Array mit ihren Dateipfaden zurück.
 
 Optionen sind boolesche Werte und werden als Objekteigenschaften übergeben. Zum Beispiel:
 

@@ -174,7 +174,7 @@ const minifyJS = require('@adamlui/minify.js');
 
 ### `minify(input[, options])`
 
-根据提供的字符串输入缩小 JavaScript 代码。
+💡 根据提供的字符串输入缩小 JavaScript 代码。
 
 如果传入**源代码**，则直接缩小，然后返回一个包含 `srcPath` + `code` + `error` 的对象：
 
@@ -222,7 +222,7 @@ minifyJS.minify(input, { dotFiles: true });
 
 ### `findJS(searchDir[, options])`
 
-在传递的 `searchDir` 字符串中搜索所有未缩小的 JavaScript 文件（对于发现 [`minify()`](#minifyinput-options) 将处理哪些文件很有用）并返回包含其文件路径的数组。
+💡 在传递的 `searchDir` 字符串中搜索所有未缩小的 JavaScript 文件（对于发现 [`minify()`](#minifyinput-options) 将处理哪些文件很有用）并返回包含其文件路径的数组。
 
 选项是布尔值，作为对象属性传递。 例如：
 

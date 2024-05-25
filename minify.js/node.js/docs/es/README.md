@@ -174,7 +174,7 @@ const minifyJS = require('@adamlui/minify.js');
 
 ### `minify(entrada[, opciones])`
 
-Minimiza el código JavaScript según la entrada de cadena proporcionada.
+💡 Minimiza el código JavaScript según la entrada de cadena proporcionada.
 
 Si se pasa **código fuente**, se minimiza directamente, luego se devuelve un objeto que contiene `srcPath` + `code` + `error`:
 
@@ -222,7 +222,7 @@ Nombre        | Tipo      | Descripción                                        
 
 ### `findJS(dirBúsqueda[, opciones])`
 
-Busca todos los archivos JavaScript no minificados dentro de la cadena `searchDir` pasada (útil para descubrir qué archivos procesará [`minify()`](#minifyentrada-opciones)) y devuelve una matriz que contiene sus rutas de archivo.
+💡 Busca todos los archivos JavaScript no minificados dentro de la cadena `searchDir` pasada (útil para descubrir qué archivos procesará [`minify()`](#minifyentrada-opciones)) y devuelve una matriz que contiene sus rutas de archivo.
 
 Las opciones son booleanas y se pasan como propiedades del objeto. Por ejemplo:
 

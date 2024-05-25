@@ -174,7 +174,7 @@ const minifyJS = require('@adamlui/minify.js');
 
 ### `minify(entrée[, options])`
 
-Réduit le code JavaScript en fonction de l'entrée de chaîne fournie.
+💡 Réduit le code JavaScript en fonction de l'entrée de chaîne fournie.
 
 Si le **code source** est passé, il est directement minifié, puis un objet contenant `srcPath` + `code` + `error` est renvoyé:
 
@@ -222,7 +222,7 @@ Nom           | Taper   | Description                                           
 
 ### `findJS(repRecherche[, options])`
 
-Recherche tous les fichiers JavaScript non minifiés dans la chaîne `repRecherche` transmise (utile pour découvrir quels fichiers [`minify()`](#minifyentrée-options) traiteront) et renvoie un tableau contenant leurs chemins de fichiers.
+💡 Recherche tous les fichiers JavaScript non minifiés dans la chaîne `repRecherche` transmise (utile pour découvrir quels fichiers [`minify()`](#minifyentrée-options) traiteront) et renvoie un tableau contenant leurs chemins de fichiers.
 
 Les options sont booléennes, transmises en tant que propriétés d'objet. Par exemple:
 
