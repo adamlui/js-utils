@@ -136,6 +136,7 @@ Boolean options:
  -D, --include-dotfiles               Include dotfiles in file search.
  -R, --no-recursion                   Disable recursive file searching.
  -M, --no-mangle                      Disable mangling names.
+ -X, --no-filename-change             Disable changing file extension to .min.js
  -c, --copy                           Copy minified code to clipboard instead
                                       of writing to file if single source file
                                       is processed.

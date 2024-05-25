@@ -64,6 +64,7 @@ const pkgName = '@adamlui/minify.js',
             'includeDotFiles': /^--?(?:df|D|(?:include-?)?dot-?files?=?(?:true|1)?)$/,
             'noRecursion': /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
             'noMangle': /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/,
+            'noFilenameChange': /^--?(?:X|(?:disable|no)-?(?:file)?name-?change|(?:file)?name-?change=(?:false|0))$/,
             'copy': /^--?c(?:opy)?$/,
             'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
         },
@@ -193,7 +194,7 @@ const pkgName = '@adamlui/minify.js',
                         outputArg.endsWith('.js') && inputArg.endsWith('.js')
                             ? path.basename(outputArg).replace(/(\.min)?\.js$/, '')
                             : path.basename(srcPath, '.js')
-                    ) + '.min.js';
+                    ) + `${ config.noFilenameChange ? '' : '.min' }.js`;
                     const outputPath = path.join(outputDir, outputFilename);
                     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
                     fs.writeFileSync(outputPath, code, 'utf8');
@@ -244,6 +245,7 @@ const pkgName = '@adamlui/minify.js',
                 ` -D, --include-dotfiles              ${ msgs.optionDesc_dotfiles || 'Include dotfiles in file search' }.`,
                 ` -R, --no-recursion                  ${ msgs.optionDesc_noRecursion || 'Disable recursive file searching' }.`,
                 ` -M, --no-mangle                     ${ msgs.optionDesc_noMangle || 'Disable mangling names' }.`,
+                ` -X, --no-filename-change            ${ msgs.optionDesc_noFilenameChange || 'Disable changing file extension to .min.js' }`,
                 ` -c, --copy                          ${ msgs.optionDesc_copy || 'Copy minified code to clipboard instead of writing to file'
                                                                                + ' if single source file is processed' }.`,
                 ` -q, --quiet                         ${ msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`

@@ -135,6 +135,7 @@ Opciones booleanas:
  -D, --include-dotfiles               Incluya archivos de puntos en la búsqueda de archivos.
  -R, --no-recursion                   Deshabilite la búsqueda recursiva de archivos.
  -M, --no-mangle                      Disable mangling names.
+ -X, --no-filename-change             Deshabilite el cambio de extensión de archivo a .min.js
  -c, --copy                           Copie el código minimizado al portapapeles en lugar de escribirlo en un archivo si se procesa un único archivo fuente.
  -q, --quiet                          Suprime todos los registros excepto los errores.
 
