@@ -27,7 +27,7 @@
 
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css"><img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?label=Transfer%C3%AAncias&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-licen%C3%A7a-mit"><img height=31 src="https://img.shields.io/badge/Licença-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-1.10.0"><img height=31 src="https://img.shields.io/badge/Versão_Mais_Recente-1.10.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-1.10.1"><img height=31 src="https://img.shields.io/badge/Versão_Mais_Recente-1.10.1-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css?activeTab=code"><img height=31 src="https://img.shields.io/npm/unpacked-size/%40adamlui%2Fscss-to-css?label=Tamanho%20Descompactado&style=for-the-badge&logo=ebox&logoColor=white&color=blue&labelColor=464646"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:node.js/src/scss-to-css.js"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_scss-to-css%3Anode.js%2Fsrc%2Fscss-to-css.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilidades&color=gold"></a>
 <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=31 src="https://img.shields.io/badge/Mencionado_em-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
@@ -72,7 +72,7 @@ Exemplo de saída:
 
 <img src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@b74edea/node.js/media/images/screenshots/cli/scss-to-css-docs-cmd-output.png">
 
-**💡 Nota:** Os mapas de origem também são gerados por padrão, a menos que `-S` ou `--no-source-maps` sejam passados.
+**📝 Nota:** Os mapas de origem também são gerados por padrão, a menos que `-S` ou `--no-source-maps` sejam passados.
 
 #
 
@@ -85,7 +85,7 @@ $ scss-to-css [caminho_de_entrada] [caminho_de_saída]
 - `[caminho_de_entrada]`: Caminho para o arquivo SCSS ou diretório que contém os arquivos SCSS a serem compilados, relativo ao diretório de trabalho atual.
 - `[caminho_de_saída]`: Caminho para o arquivo ou diretório onde os arquivos de mapa de origem CSS + serão armazenados, relativo ao local do arquivo original (se não for fornecido, `css/` será usado).
 
-**💡 Nota:** Se as pastas forem passadas, os arquivos serão processados recursivamente, a menos que `-R` ou `--no-recursion` seja passado.
+**📝 Nota:** Se as pastas forem passadas, os arquivos serão processados recursivamente, a menos que `-R` ou `--no-recursion` seja passado.
 
 #
 
@@ -127,7 +127,7 @@ Especifique os diretórios **input e output** (saídas para `pasta_de_saída/`):
 $ scss-to-css pasta_de_entrada pasta_de_saída
 ```
 
-**💡 Nota:** O CSS de saída é reduzido, a menos que `-M` ou `--no-minify` seja passado.
+**📝 Nota:** O CSS de saída é reduzido, a menos que `-M` ou `--no-minify` seja passado.
 
 #
 

@@ -27,7 +27,7 @@
 
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css"><img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?label=T%C3%A9l%C3%A9chargements&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-licence-mit"><img height=31 src="https://img.shields.io/badge/Licence-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-1.10.0"><img height=31 src="https://img.shields.io/badge/Dernière_Version-1.10.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-1.10.1"><img height=31 src="https://img.shields.io/badge/Dernière_Version-1.10.1-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css?activeTab=code"><img height=31 src="https://img.shields.io/npm/unpacked-size/%40adamlui%2Fscss-to-css?label=Taille%20D%C3%A9ball%C3%A9e&style=for-the-badge&logo=ebox&logoColor=white&color=blue&labelColor=464646"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:node.js/src/scss-to-css.js"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_scss-to-css%3Anode.js%2Fsrc%2Fscss-to-css.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vuln%C3%A9rabilit%C3%A9s&color=gold"></a>
 <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=31 src="https://img.shields.io/badge/Mentionné_dans-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
@@ -72,7 +72,7 @@ Exemple de sortie:
 
 <img src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@b74edea/node.js/media/images/screenshots/cli/scss-to-css-docs-cmd-output.png">
 
-**💡 Remarque:** Les cartes sources sont également générées par défaut à moins que `-S` ou `--no-source-maps` ne soient transmis.
+**📝 Remarque:** Les cartes sources sont également générées par défaut à moins que `-S` ou `--no-source-maps` ne soient transmis.
 
 #
 
@@ -85,7 +85,7 @@ $ scss-to-css [chemin_entrée] [chemin_sortie]
 - `[chemin_entrée]`: Chemin d'accès au fichier SCSS ou au répertoire contenant les fichiers SCSS à compiler, par rapport au répertoire de travail actuel.
 - `[chemin_sortie]`: Chemin d'accès au fichier ou au répertoire où les fichiers de carte CSS + source seront stockés, par rapport à l'emplacement du fichier d'origine (s'il n'est pas fourni, `css/` est utilisé).
 
-**💡 Remarque:** Si des dossiers sont transmis, les fichiers seront traités de manière récursive à moins que `-R` ou `--no-recursion` soit transmis.
+**📝 Remarque:** Si des dossiers sont transmis, les fichiers seront traités de manière récursive à moins que `-R` ou `--no-recursion` soit transmis.
 
 #
 
@@ -127,7 +127,7 @@ Spécifiez les répertoires **saisir et sortir** (sorties vers `dossier_sortie/`
 $ scss-to-css dossier_entrée dossier_sortie
 ```
 
-**💡 Remarque:** Le CSS de sortie est réduit à moins que `-M` ou `--no-minify` soit transmis.
+**📝 Remarque:** Le CSS de sortie est réduit à moins que `-M` ou `--no-minify` soit transmis.
 
 #
 

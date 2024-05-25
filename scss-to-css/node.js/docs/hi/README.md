@@ -27,7 +27,7 @@
 
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css"><img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%B8%E0%A5%87%E0%A4%82%E0%A4%B8"><img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-1.10.0"><img height=31 src="https://img.shields.io/badge/Latest_Build-1.10.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-1.10.1"><img height=31 src="https://img.shields.io/badge/Latest_Build-1.10.1-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css?activeTab=code"><img height=31 src="https://img.shields.io/npm/unpacked-size/%40adamlui%2Fscss-to-css?style=for-the-badge&logo=ebox&logoColor=white&color=blue&labelColor=464646"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:node.js/src/scss-to-css.js"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_scss-to-css%3Anode.js%2Fsrc%2Fscss-to-css.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></a>
 <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=31 src="https://img.shields.io/badge/Mentioned_in-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
@@ -72,7 +72,7 @@ $ scss-to-css
 
 <img src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@b74edea/node.js/media/images/screenshots/cli/scss-to-css-docs-cmd-output.png">
 
-**💡 नोट:** स्रोत मानचित्र भी डिफ़ॉल्ट रूप से उत्पन्न होते हैं जब तक कि `-S` या `--no-source-maps` पारित नहीं हो जाता।
+**📝 नोट:** स्रोत मानचित्र भी डिफ़ॉल्ट रूप से उत्पन्न होते हैं जब तक कि `-S` या `--no-source-maps` पारित नहीं हो जाता।
 
 #
 
@@ -85,7 +85,7 @@ $ scss-to-css [input_path] [output_path]
 - `[input_path]`: वर्तमान कार्यशील निर्देशिका के सापेक्ष संकलित की जाने वाली एससीएसएस फ़ाइल या एससीएसएस फ़ाइलों वाली निर्देशिका का पथ।
 - `[output_path]`: फ़ाइल या निर्देशिका का पथ जहां CSS + स्रोत मानचित्र फ़ाइलें संग्रहीत की जाएंगी, मूल फ़ाइल स्थान के सापेक्ष (यदि प्रदान नहीं किया गया है, तो `css/` का उपयोग किया जाता है)।
 
-**💡 नोट:** यदि फ़ोल्डर्स पास हो गए हैं, तो फ़ाइलों को पुनरावर्ती रूप से संसाधित किया जाएगा जब तक कि `-R` या `-no-recursion` पास न हो जाए।
+**📝 नोट:** यदि फ़ोल्डर्स पास हो गए हैं, तो फ़ाइलों को पुनरावर्ती रूप से संसाधित किया जाएगा जब तक कि `-R` या `-no-recursion` पास न हो जाए।
 
 #
 
@@ -126,7 +126,7 @@ $ scss-to-css path/to/your/file.scss
 $ scss-to-css input_folder output_folder
 ```
 
-**💡 नोट:** आउटपुट CSS को तब तक छोटा किया जाता है जब तक `-M` या `--no-minify` पारित नहीं किया जाता है।
+**📝 नोट:** आउटपुट CSS को तब तक छोटा किया जाता है जब तक `-M` या `--no-minify` पारित नहीं किया जाता है।
 
 #
 

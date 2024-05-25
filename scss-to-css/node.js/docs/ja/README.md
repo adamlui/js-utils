@@ -27,7 +27,7 @@
 
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css"><img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge&label=%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89"></a>
 <a href="#%EF%B8%8F-mit-ライセンス"><img height=31 src="https://img.shields.io/badge/ライセンス-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-1.10.0"><img height=31 src="https://img.shields.io/badge/最新のビルド-1.10.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-1.10.1"><img height=31 src="https://img.shields.io/badge/最新のビルド-1.10.1-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css?activeTab=code"><img height=31 src="https://img.shields.io/npm/unpacked-size/%40adamlui%2Fscss-to-css?style=for-the-badge&logo=ebox&logoColor=white&color=blue&labelColor=464646&label=%E9%96%8B%E6%A2%B1%E5%BE%8C%E3%81%AE%E3%82%B5%E3%82%A4%E3%82%BA"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:node.js/src/scss-to-css.js"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_scss-to-css%3Anode.js%2Fsrc%2Fscss-to-css.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=%E8%84%86%E5%BC%B1%E6%80%A7&color=gold"></a>
 <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=31 src="https://img.shields.io/badge/で言及-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
@@ -72,7 +72,7 @@ $ scss-to-css
 
 <img src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@b74edea/node.js/media/images/screenshots/cli/scss-to-css-docs-cmd-output.png">
 
-**💡 注:** `-S` または `--no-source-maps` が渡されない限り、ソース マップもデフォルトで生成されます。
+**📝 注:** `-S` または `--no-source-maps` が渡されない限り、ソース マップもデフォルトで生成されます。
 
 #
 
@@ -85,7 +85,7 @@ $ scss-to-css [input_path] [output_path]
 - `[input_path]`: 現在の作業ディレクトリを基準とした、コンパイル対象の SCSS ファイルまたは SCSS ファイルを含むディレクトリへのパス。
 - `[output_path]`: CSS + ソース マップ ファイルが保存されるファイルまたはディレクトリへのパス (元のファイルの場所を基準とした相対パス) (指定しない場合は、`css/` が使用されます)。
 
-**💡 注:** フォルダーが渡された場合、`-R` または `--no-recursion` が渡されない限り、ファイルは再帰的に処理されます。
+**📝 注:** フォルダーが渡された場合、`-R` または `--no-recursion` が渡されない限り、ファイルは再帰的に処理されます。
 
 #
 
@@ -127,7 +127,7 @@ $ scss-to-css path/to/your/file.scss
 $ scss-to-css input_folder output_folder
 ```
 
-**💡 注:** 出力 CSS は、`-M` または `--no-minify` が渡されない限り縮小されます。
+**📝 注:** 出力 CSS は、`-M` または `--no-minify` が渡されない限り縮小されます。
 
 #
 

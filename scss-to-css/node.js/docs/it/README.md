@@ -27,7 +27,7 @@
 
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css"><img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?label=Scaricamenti&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-licenza-del-mit"><img height=31 src="https://img.shields.io/badge/Licenza-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-1.10.0"><img height=31 src="https://img.shields.io/badge/Ultima_Versione-1.10.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-1.10.1"><img height=31 src="https://img.shields.io/badge/Ultima_Versione-1.10.1-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css?activeTab=code"><img height=31 src="https://img.shields.io/npm/unpacked-size/%40adamlui%2Fscss-to-css?label=Dimensioni+Senza+Confezione&style=for-the-badge&logo=ebox&logoColor=white&color=blue&labelColor=464646"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:node.js/src/scss-to-css.js"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_scss-to-css%3Anode.js%2Fsrc%2Fscss-to-css.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilit%C3%A0&color=gold"></a>
 <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=31 src="https://img.shields.io/badge/Menzionato_in-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
@@ -72,7 +72,7 @@ Output di esempio:
 
 <img src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@b74edea/node.js/media/images/screenshots/cli/scss-to-css-docs-cmd-output.png">
 
-**💡 Nota:** Anche le mappe sorgente vengono generate per impostazione predefinita a meno che non venga passato `-S` o `--no-source-maps`.
+**📝 Nota:** Anche le mappe sorgente vengono generate per impostazione predefinita a meno che non venga passato `-S` o `--no-source-maps`.
 
 #
 
@@ -85,7 +85,7 @@ $ scss-to-css [percorso_input] [percorso_output]
 - `[percorso_input]`: Percorso del file SCSS o della direttorio contenente i file SCSS da compilare, relativo alla direttorio di lavoro corrente.
 - `[percorso_output]`: Percorso del file o della direttorio in cui verranno archiviati i file CSS + mappa sorgente, relativo alla posizione del file originale (se non fornito, viene utilizzato `css/`).
 
-**💡 Nota:** Se vengono passate cartelle, i file verranno elaborati in modo ricorsivo a meno che non venga passato `-R` o `--no-recursion`.
+**📝 Nota:** Se vengono passate cartelle, i file verranno elaborati in modo ricorsivo a meno che non venga passato `-R` o `--no-recursion`.
 
 #
 
@@ -127,7 +127,7 @@ Specifica entrambe le direttorio **input e output** (output in `cartella_output/
 $ scss-to-css cartella_input cartella_output
 ```
 
-**💡 Nota:** Il CSS di output viene minimizzato a meno che non venga passato `-M` o `--no-minify`.
+**📝 Nota:** Il CSS di output viene minimizzato a meno che non venga passato `-M` o `--no-minify`.
 
 #
 
