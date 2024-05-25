@@ -176,10 +176,13 @@ const pkgName = '@adamlui/minify.js',
             }
             if (minifyData?.length == 0) return;
 
-            // Copy single result code to clipboard if --copy passed
-            if (config.copy && minifyData?.length == 1) {
-                printIfNotQuiet(`\n${ msgs.info_copying || 'Copying to clipboard' }...`);
-                ncp.writeSync(minifyData[0].code);
+            // Log + copy single result code if --copy passed
+            if (minifyData?.length == 1) {
+                console.log(`\n${bw + minifyData[0].code + nc}`);
+                if (config.copy) {
+                    printIfNotQuiet(`\n${ msgs.info_copying || 'Copying to clipboard' }...`);
+                    ncp.writeSync(minifyData[0].code);
+                }
 
             } else { // write array data to files
                 printIfNotQuiet(`\nWriting to file${ minifyData?.length > 1 ? 's' : '' }...`);
