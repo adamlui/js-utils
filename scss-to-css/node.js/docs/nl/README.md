@@ -178,7 +178,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 ### `compile(invoer[, opties])`
 
-Compileert SCSS op basis van de opgegeven stringinvoer.
+💡 Compileert SCSS op basis van de opgegeven stringinvoer.
 
 Als **broncode** wordt doorgegeven, wordt deze direct gecompileerd, waarna een object met `srcPath` + `code` + `srcMap` + `error` wordt geretourneerd:
 
@@ -226,7 +226,7 @@ Naam          | Type       | Beschrijving                                       
 
 ### `findSCSS(zoekMap[, opties])`
 
-Zoekt naar alle SCSS-bestanden binnen de doorgegeven tekenreeks `zoekMap` (handig om te ontdekken welke bestanden [`compile()`](#compileinvoer-opties) zal verwerken) en retourneert een array met hun bestandspaden.
+💡 Zoekt naar alle SCSS-bestanden binnen de doorgegeven tekenreeks `zoekMap` (handig om te ontdekken welke bestanden [`compile()`](#compileinvoer-opties) zal verwerken) en retourneert een array met hun bestandspaden.
 
 Opties zijn Booleaans en worden doorgegeven als objecteigenschappen. Bijvoorbeeld:
 

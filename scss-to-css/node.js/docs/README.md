@@ -185,7 +185,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 ### `compile(input[, options])`
 
-Compiles SCSS based on the string input supplied.
+💡 Compiles SCSS based on the string input supplied.
 
 If **source code** is passed, it is directly compiled, then an object containing `srcPath` + `code` + `srcMap` + `error` is returned:
 
@@ -233,7 +233,7 @@ Name          | Type    | Desciption                                            
 
 ### `findSCSS(searchDir[, options])`
 
-Searches for all SCSS files within the `searchDir` string passed (useful for discovering what files [`compile()`](#compileinput-options) will process) and returns an array containing their filepaths.
+💡 Searches for all SCSS files within the `searchDir` string passed (useful for discovering what files [`compile()`](#compileinput-options) will process) and returns an array containing their filepaths.
 
 Options are boolean, passed as object properties. For example:
 

@@ -178,7 +178,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 ### `compile(input[, options])`
 
-指定された文字列入力に基づいて SCSS をコンパイルします。
+💡 指定された文字列入力に基づいて SCSS をコンパイルします。
 
 **ソース コード** が渡された場合、それは直接コンパイルされ、`srcPath` + `code` + `srcMap` + `error` を含むオブジェクトが返されます:
 
@@ -226,7 +226,7 @@ scssToCSS.compile(inputDir, { minify: false });
 
 ### `findSCSS(searchDir[, options])`
 
-渡された `searchDir` 文字列内のすべての SCSS ファイルを検索し ([`compile()`](#compileinput-options) が処理するファイルを見つけるのに役立ちます)、そのファイルパスを含む配列を返します。
+💡 渡された `searchDir` 文字列内のすべての SCSS ファイルを検索し ([`compile()`](#compileinput-options) が処理するファイルを見つけるのに役立ちます)、そのファイルパスを含む配列を返します。
 
 オプションはブール値であり、オブジェクトのプロパティとして渡されます。 例えば：
 

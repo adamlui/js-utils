@@ -178,7 +178,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 ### `compile(eingang[, optionen])`
 
-Kompiliert SCSS basierend auf der bereitgestellten Zeichenfolgeneingabe.
+💡 Kompiliert SCSS basierend auf der bereitgestellten Zeichenfolgeneingabe.
 
 Wenn **Quellcode** übergeben wird, wird dieser direkt kompiliert, dann wird ein Objekt zurückgegeben, das `srcPath` + `code` + `srcMap` + `error` enthält:
 
@@ -226,7 +226,7 @@ Name          | Typ             | Beschreibung                                  
 
 ### `findSCSS(suchverzeichnis[, optionen])`
 
-Sucht nach allen SCSS-Dateien innerhalb der übergebenen Zeichenfolge `suchverzeichnis` (nützlich, um herauszufinden, welche Dateien [`compile()`](#compileeingang-optionen) verarbeiten wird) und gibt ein Array mit ihren Dateipfaden zurück.
+💡 Sucht nach allen SCSS-Dateien innerhalb der übergebenen Zeichenfolge `suchverzeichnis` (nützlich, um herauszufinden, welche Dateien [`compile()`](#compileeingang-optionen) verarbeiten wird) und gibt ein Array mit ihren Dateipfaden zurück.
 
 Optionen sind boolesche Werte und werden als Objekteigenschaften übergeben. Zum Beispiel:
 

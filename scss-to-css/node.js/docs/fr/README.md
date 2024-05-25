@@ -178,7 +178,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 ### `compile(entrée[, options])`
 
-Compile SCSS en fonction de l'entrée de chaîne fournie.
+💡 Compile SCSS en fonction de l'entrée de chaîne fournie.
 
 Si le **code source** est passé, il est directement compilé, puis un objet contenant `srcPath` + `code` + `srcMap` + `error` est renvoyé:
 
@@ -226,7 +226,7 @@ Nom           | Taper   | Description                                           
 
 ### `findSCSS(repRecherche[, options])`
 
-Recherche tous les fichiers SCSS dans la chaîne `repRecherche` passée (utile pour découvrir quels fichiers [`compile()`](#compileentrée-options) traiteront) et renvoie un tableau contenant leurs chemins de fichiers.
+💡 Recherche tous les fichiers SCSS dans la chaîne `repRecherche` passée (utile pour découvrir quels fichiers [`compile()`](#compileentrée-options) traiteront) et renvoie un tableau contenant leurs chemins de fichiers.
 
 Les options sont booléennes, transmises en tant que propriétés d'objet. Par exemple:
 

@@ -178,7 +178,7 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 ### `compile(input[, options])`
 
-根据提供的字符串输入编译 SCSS。
+💡 根据提供的字符串输入编译 SCSS。
 
 如果传入**源代码**，则直接编译，然后返回一个包含 `srcPath` + `code` + `srcMap` + `error` 的对象：
 
@@ -226,7 +226,7 @@ scssToCSS.compile(inputDir, { minify: false });
 
 ### `findSCSS(searchDir[, options])`
 
-搜索传递的 `searchDir` 字符串中的所有 SCSS 文件（对于发现 [`compile()`](#compileinput-options) 将处理哪些文件很有用）并返回包含其文件路径的数组。
+💡 搜索传递的 `searchDir` 字符串中的所有 SCSS 文件（对于发现 [`compile()`](#compileinput-options) 将处理哪些文件很有用）并返回包含其文件路径的数组。
 
 选项是布尔值，作为对象属性传递。 例如：
 
