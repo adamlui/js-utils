@@ -99,10 +99,10 @@ jobs:
           done ; echo -e "\n-----\nTotal monthly jsDelivr (GH) requests: $total_repo_requests\n-----\n"
 
           # Format totals
-          formatted_total_clones=$(format_total "$total_clones")
-          echo "Formatted total monthly git clones: $formatted_total_clones"
           formatted_total_downloads=$(format_total "$total_downloads")
           echo "Formatted total monthly npm downloads: $formatted_total_downloads"
+          formatted_total_clones=$(format_total "$total_clones")
+          echo "Formatted total monthly git clones: $formatted_total_clones"
           formatted_total_requests=$(format_total $((total_pkg_requests + total_repo_requests)))
           echo "Formatted total monthly jsDelivr requests: $formatted_total_requests"
 
