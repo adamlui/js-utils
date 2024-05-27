@@ -5,7 +5,7 @@ on:
     - cron: "45 3 * * 1,3,5" # every Mon/Wed/Fri @ 3:45 AM
 
 jobs:
-  update-root-clones-npm-jsd-shields:
+  update-root-npm-clones-jsd-shields:
     runs-on: ubuntu-latest
     
     steps:
@@ -16,7 +16,7 @@ jobs:
           repository: adamlui/js-utils
           path: adamlui/js-utils
       
-      - name: Fetch/sum git clone + npm download + JSD request counts
+      - name: Fetch/sum git npm download + clone + JSD request counts
         id: get-stats
         run: |
           npm_pkgs=("@adamlui/geolocate" "@adamlui/minify.js" "@adamlui/scss-to-css"
@@ -60,6 +60,15 @@ jobs:
             echo "$formatted_num"
           }
 
+          # Fetch/sum npm download counts
+          for pkg in "${npm_pkgs[@]}" ; do
+            pkg_downloads=$(curl -s "https://img.shields.io/npm/dm/$pkg.svg" |
+              sed -n 's/.*<title>downloads: \([0-9,.km]\+\).*<\/title>.*/\1/Ip')
+            pkg_downloads=$(expand_num "$pkg_downloads")
+            echo "$pkg npm downloads: $pkg_downloads"
+            total_downloads=$((total_downloads + pkg_downloads))
+          done ; echo -e "\n-----\nTotal monthly npm downloads: $total_downloads\n-----\n"
+
           # Fetch/calculate git clone count
           biweekly_clones=$(curl -sSL \
             -H "Accept: application/vnd.github+json" \
@@ -70,15 +79,6 @@ jobs:
           total_clones=$((biweekly_clones * 2))
           echo "Biweekly git clones: $biweekly_clones"
           echo -e "\n-----\nTotal monthly git clones: $total_clones\n-----\n"
-
-          # Fetch/sum npm download counts
-          for pkg in "${npm_pkgs[@]}" ; do
-            pkg_downloads=$(curl -s "https://img.shields.io/npm/dm/$pkg.svg" |
-              sed -n 's/.*<title>downloads: \([0-9,.km]\+\).*<\/title>.*/\1/Ip')
-            pkg_downloads=$(expand_num "$pkg_downloads")
-            echo "$pkg npm downloads: $pkg_downloads"
-            total_downloads=$((total_downloads + pkg_downloads))
-          done ; echo -e "\n-----\nTotal monthly npm downloads: $total_downloads\n-----\n"
 
           # Fetch/sum jsDelivr request counts for npm pkgs
           for pkg in "${jsd_npm_pkgs[@]}" ; do
@@ -107,8 +107,8 @@ jobs:
           echo "Formatted total monthly jsDelivr requests: $formatted_total_requests"
 
           # Expose as outputs for update step next
-          echo "total_clones=$formatted_total_clones" >> $GITHUB_OUTPUT
           echo "total_downloads=$formatted_total_downloads" >> $GITHUB_OUTPUT
+          echo "total_clones=$formatted_total_clones" >> $GITHUB_OUTPUT
           echo "total_requests=$formatted_total_requests" >> $GITHUB_OUTPUT
       
       - name: Update README shields
@@ -119,6 +119,17 @@ jobs:
           total_clones="${{ steps.get-stats.outputs.total_clones }}"
           total_downloads="${{ steps.get-stats.outputs.total_downloads }}"
           total_requests="${{ steps.get-stats.outputs.total_requests }}"
+
+          # Update npm shield
+          if [ "$total_downloads" == "0" ] ; then echo "Error getting total npm downloads"
+          else # perform update
+            old_readme=$(<docs/README.md)
+            sed -i -E "s|(badge/Downloads-)[0-9.,km+]+|\1$total_downloads|Ig" docs/README.md
+            new_readme=$(<docs/README.md)
+            if [ "$old_readme" != "$new_readme" ] ; then downloads_updated=true ; fi
+            if [ "$downloads_updated" = true ] ; then echo "npm shield updated to $total_downloads"
+            else echo "npm shield already up-to-date" ; fi
+          fi
 
           # Update git clones shield
           if [ "$total_clones" == "0" ] ; then echo "Error getting total git clones"
@@ -131,17 +142,6 @@ jobs:
             done
             if [ "$clones_updated" = true ] ; then echo "Git clones shields updated to $total_clones"
             else echo "Git clones shields up-to-date already" ; fi
-          fi
-
-          # Update npm shield
-          if [ "$total_downloads" == "0" ] ; then echo "Error getting total npm downloads"
-          else # perform update
-            old_readme=$(<docs/README.md)
-            sed -i -E "s|(badge/Downloads-)[0-9.,km+]+|\1$total_downloads|Ig" docs/README.md
-            new_readme=$(<docs/README.md)
-            if [ "$old_readme" != "$new_readme" ] ; then downloads_updated=true ; fi
-            if [ "$downloads_updated" = true ] ; then echo "npm shield updated to $total_downloads"
-            else echo "npm shield already up-to-date" ; fi
           fi
 
           # Update jsDelivr shield
@@ -157,16 +157,16 @@ jobs:
 
           # Count shield types updated for commit msg
           shield_types_updated=0
-          [ "$clones_updated" = true ] && ((shield_types_updated+=1))
           [ "$downloads_updated" = true ] && ((shield_types_updated+=1))
+          [ "$clones_updated" = true ] && ((shield_types_updated+=1))
           [ "$requests_updated" = true ] && ((shield_types_updated+=1))
           if [ "$shield_types_updated" -gt 1 ] ; then multi_shield_types_updated=true ; fi
 
           # Define commit msg for push step next
           commit_msg="Updated "
-          [ "$clones_updated" = true ] && commit_msg+="clones"
-          if [ "$downloads_updated" = true ] ; then            
-             [ "$multi_shield_types_updated" = true ] && commit_msg+="/" ; commit_msg+="npm" ; fi
+          [ "$downloads_updated" = true ] && commit_msg+="npm"
+          if [ "$clones_updated" = true ] ; then            
+             [ "$multi_shield_types_updated" = true ] && commit_msg+="/" ; commit_msg+="clones" ; fi
           if [ "$requests_updated" = true ] ; then            
              [ "$multi_shield_types_updated" = true ] && commit_msg+="/" ; commit_msg+="jsDelivr" ; fi
           commit_msg+=" shield counter$([ "$multi_shield_types_updated" = true ] && echo "s")"
