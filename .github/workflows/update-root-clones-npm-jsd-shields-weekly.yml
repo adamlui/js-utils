@@ -155,9 +155,9 @@ jobs:
 
           # Count shield types updated for commit msg
           shield_types_updated=0
-          [ "$clones_updated" == "true" ] && ((shield_types_updated++))
-          [ "$downloads_updated" == "true" ] && ((shield_types_updated++))
-          [ "$requests_updated" == "true" ] && ((shield_types_updated++))
+          [ "$clones_updated" == "true" ] && ((shield_types_updated+=1))
+          [ "$downloads_updated" == "true" ] && ((shield_types_updated+=1))
+          [ "$requests_updated" == "true" ] && ((shield_types_updated+=1))
           if [ "$shield_types_updated" -gt 1 ] ; then multi_shield_types_updated=true ; fi
 
           # Define commit msg for push step next
