@@ -106,7 +106,6 @@ jobs:
 
           total_downloads="${{ steps.get-stats.outputs.total_downloads }}"
           total_requests="${{ steps.get-stats.outputs.total_requests }}"
-          shields_updated=0
 
           # Update npm shield
           if [ "$total_downloads" == "0" ] ; then echo "Error getting total npm downloads"
@@ -114,7 +113,7 @@ jobs:
             old_readme=$(<docs/README.md)
             sed -i -E "s|(badge/Downloads-)[0-9.,km+]+|\1$total_downloads|Ig" docs/README.md
             new_readme=$(<docs/README.md)
-            if [ "$old_readme" != "$new_readme" ] ; then downloads_updated=true ; ((shields_updated++)) ; fi
+            if [ "$old_readme" != "$new_readme" ] ; then downloads_updated=true ; fi
             if [ "$downloads_updated" = true ] ; then echo "npm shield updated to $total_downloads"
             else echo "npm shield already up-to-date" ; fi
           fi
@@ -125,17 +124,19 @@ jobs:
             old_readme=$(<docs/README.md)
             sed -i -E "s|(badge/jsDelivr_[^-]+-)[0-9.,km+]+|\1$total_requests|Ig" docs/README.md
             new_readme=$(<docs/README.md)
-            if [ "$old_readme" != "$new_readme" ] ; then requests_updated=true ; ((shields_updated++)) ; fi
+            if [ "$old_readme" != "$new_readme" ] ; then requests_updated=true ; fi
             if [ "$requests_updated" = true ] ; then echo "jsDelivr shield updated to $total_requests"
             else echo "jsDelivr shield already up-to-date" ; fi
           fi
 
           # Define commit msg for push step next
+          if [ "$downloads_updated" == "true" ] && [ "$requests_updated" == "true" ] ; then
+            multi_shield_types_updated=true ; fi
           commit_msg="Updated "
-          [ "$downloads_updated" == "true" ] && commit_msg+="npm"
-          [ "$shields_updated" -gt 1       ] && commit_msg+="/"
-          [ "$requests_updated" == "true"  ] && commit_msg+="jsDelivr"
-          commit_msg+=" shield counter$([ "$shields_updated" -gt 1 ] && echo "s")"
+          [ "$downloads_updated" == "true"          ] && commit_msg+="npm"
+          [ "$multi_shield_types_updated" == "true" ] && commit_msg+="/"
+          [ "$requests_updated" == "true"           ] && commit_msg+="jsDelivr"
+          commit_msg+=" shield counter$([ "$multi_shield_types_updated" == "true" ] && echo "s")"
           echo "commit_msg=$commit_msg" >> $GITHUB_OUTPUT # expose as output
 
       - name: Push to adamlui/js-utils
