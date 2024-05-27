@@ -1,8 +1,6 @@
 name: Update git clones shields in root README
 
-on:
-  schedule:
-    - cron: "45 1 * * *" # every day 1:45a
+on: workflow_dispatch
 
 jobs:
   update-root-git-clones-shield:

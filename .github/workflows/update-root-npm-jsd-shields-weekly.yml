@@ -1,8 +1,6 @@
 name: Update npm downloads + jsDelivr shields in root README
 
-on:
-  schedule:
-    - cron: "5 0 * * 0" # every Sunday 12:05a
+on: workflow_dispatch
 
 jobs:
   update-root-npm-jsd-shields:
