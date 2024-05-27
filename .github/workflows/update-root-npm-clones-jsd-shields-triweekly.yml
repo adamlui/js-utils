@@ -1,4 +1,4 @@
-name: Update clones/npm/jsDelivr shields in root README
+name: Update npm/clones/jsDelivr shields in root README
 
 on:
   schedule:
