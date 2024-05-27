@@ -98,6 +98,6 @@ jobs:
           add_options: --all
           commit_user_email: auto-sync@kudoai.com
           commit_author: kudo-sync-bot <auto-sync@kudoai.com>
-          commit_message: Updated git clones shield counter
+          commit_message: Updated git clones shield counter in root README
           file_pattern: "**/README.md"
           repository: adamlui/js-utils
