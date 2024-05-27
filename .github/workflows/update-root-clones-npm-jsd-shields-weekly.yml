@@ -162,11 +162,15 @@ jobs:
 
           # Define commit msg for push step next
           commit_msg="Updated "
-          [ "$clones_updated" == "true"             ] && commit_msg+="clones"
-          [ "$multi_shield_types_updated" == "true" ] && commit_msg+="/"
-          [ "$downloads_updated" == "true"          ] && commit_msg+="npm"
-          [ "$multi_shield_types_updated" == "true" ] && commit_msg+="/"
-          [ "$requests_updated" == "true"           ] && commit_msg+="jsDelivr"
+          [ "$clones_updated" == "true" ] && commit_msg+="clones"
+          if [ "$downloads_updated" == "true" ] ; then            
+             [ "$multi_shield_types_updated" == "true" ] && commit_msg+="/"
+             commit_msg+="npm"
+          fi
+          if [ "$requests_updated" == "true" ] ; then            
+             [ "$multi_shield_types_updated" == "true" ] && commit_msg+="/"
+             commit_msg+="jsDelivr"
+          fi
           commit_msg+=" shield counter$([ "$multi_shield_types_updated" == "true" ] && echo "s")"
           commit_msg+=" in root README"
           echo "commit_msg=$commit_msg" >> $GITHUB_OUTPUT # expose as output
