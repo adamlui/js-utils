@@ -116,8 +116,8 @@ jobs:
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
 
-          total_clones="${{ steps.get-stats.outputs.total_clones }}"
           total_downloads="${{ steps.get-stats.outputs.total_downloads }}"
+          total_clones="${{ steps.get-stats.outputs.total_clones }}"
           total_requests="${{ steps.get-stats.outputs.total_requests }}"
 
           # Update npm shield
