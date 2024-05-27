@@ -1,4 +1,4 @@
-name: Update git clones + npm downloads + jsDelivr shields in root README
+name: Update clones/npm/jsDelivr shields in root README
 
 on: workflow_dispatch
 
