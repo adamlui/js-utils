@@ -5,7 +5,7 @@ on:
     - cron: "45 1 * * *" # every day 1:45a
 
 jobs:
-  update-usercount-shields:
+  update-root-git-clones-shield:
     runs-on: ubuntu-latest
 
     steps:

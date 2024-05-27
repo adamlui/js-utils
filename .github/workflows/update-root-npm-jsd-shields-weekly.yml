@@ -1,11 +1,11 @@
-name: Update npm downloads + jsDelivr requests shields in root README
+name: Update npm downloads + jsDelivr shields in root README
 
 on:
   schedule:
     - cron: "5 0 * * 0" # every Sunday 12:05a
 
 jobs:
-  update-stats-shields:
+  update-root-npm-jsd-shields:
     runs-on: ubuntu-latest
     
     steps:
@@ -100,7 +100,7 @@ jobs:
           echo "total_requests=$formatted_total_requests" >> $GITHUB_OUTPUT
       
       - name: Update README shields
-        id: update-stats
+        id: update-shields
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
 
@@ -145,6 +145,6 @@ jobs:
           add_options: --all
           commit_user_email: auto-sync@kudoai.com
           commit_author: kudo-sync-bot <auto-sync@kudoai.com>
-          commit_message: ${{ steps.update-stats.outputs.commit_msg }}
+          commit_message: ${{ steps.update-shields.outputs.commit_msg }}
           file_pattern: docs/README.md
           repository: adamlui/js-utils
