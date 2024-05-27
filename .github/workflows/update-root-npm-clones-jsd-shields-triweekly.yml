@@ -16,7 +16,7 @@ jobs:
           repository: adamlui/js-utils
           path: adamlui/js-utils
       
-      - name: Fetch/sum git npm download + clone + JSD request counts
+      - name: Fetch/sum npm download + git clone + JSD request counts
         id: get-stats
         run: |
           npm_pkgs=("@adamlui/geolocate" "@adamlui/minify.js" "@adamlui/scss-to-css"
