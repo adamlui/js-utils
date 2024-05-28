@@ -166,7 +166,7 @@ jobs:
           commit_msg="Updated "
           [ "$downloads_updated" = true ] && commit_msg+="npm"
           if [ "$clones_updated" = true ] ; then            
-             [ "$multi_shield_types_updated" = true ] && commit_msg+="/" ; commit_msg+="clones" ; fi
+             [ "$downloads_updated" = true ] && commit_msg+="/" ; commit_msg+="clones" ; fi
           if [ "$requests_updated" = true ] ; then            
              [ "$multi_shield_types_updated" = true ] && commit_msg+="/" ; commit_msg+="jsDelivr" ; fi
           commit_msg+=" shield counter" ; [ "$multi_shield_types_updated" = true ] && commit_msg+="s"
