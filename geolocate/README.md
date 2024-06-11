@@ -78,7 +78,7 @@ You can also import **geolocate** into your app to use its main API method.
 #### ECMAScript*:
 
 ```js
-import * as geo from '@adamlui/geolocate';
+import geo from '@adamlui/geolocate';
 ```
 
 #### CommonJS:

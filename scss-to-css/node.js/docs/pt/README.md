@@ -163,7 +163,7 @@ Você também pode importar **scss-to-css** para seu aplicativo para usar seus m
 #### ECMAScript*:
 
 ```js
-import * as scssToCSS from '@adamlui/scss-to-css';
+import scssToCSS from '@adamlui/scss-to-css';
 ```
 
 ###### _*É necessário Node.js versão 14 ou superior_

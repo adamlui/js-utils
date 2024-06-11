@@ -159,7 +159,7 @@ ECMAScript मॉड्युल किंवा CommonJS मॉड्युल 
 #### ESM*:
 
 ```js
-import * as minifyJS from '@adamlui/minify.js';
+import minifyJS from '@adamlui/minify.js';
 ```
 
 #### CJS:

@@ -159,7 +159,7 @@ Sie können auch **minify.js** in Ihre App importieren, um deren API-Methoden zu
 #### ESM*:
 
 ```js
-import * as minifyJS from '@adamlui/minify.js';
+import minifyJS from '@adamlui/minify.js';
 ```
 
 #### CJS:

@@ -163,7 +163,7 @@ Vous pouvez également importer **scss-to-css** dans votre application pour util
 #### ECMAScript*:
 
 ```js
-import * as scssToCSS from '@adamlui/scss-to-css';
+import scssToCSS from '@adamlui/scss-to-css';
 ```
 
 #### CJS:

@@ -170,7 +170,7 @@ You can also import **scss-to-css** into your app to use its API methods, both a
 #### ECMAScript*:
 
 ```js
-import * as scssToCSS from '@adamlui/scss-to-css';
+import scssToCSS from '@adamlui/scss-to-css';
 ```
 
 #### CJS:

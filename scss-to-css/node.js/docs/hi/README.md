@@ -162,7 +162,7 @@ $ scss-to-css input_folder output_folder
 #### ECMAScript*:
 
 ```js
-import * as scssToCSS from '@adamlui/scss-to-css';
+import scssToCSS from '@adamlui/scss-to-css';
 ```
 
 #### CJS:

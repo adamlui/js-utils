@@ -159,7 +159,7 @@ Vous pouvez également importer **minify.js** dans votre application pour utilis
 #### ESM*:
 
 ```js
-import * as minifyJS from '@adamlui/minify.js';
+import minifyJS from '@adamlui/minify.js';
 ```
 
 #### CJS:

@@ -163,7 +163,7 @@ Sie können auch **scss-to-css** in Ihre App importieren, um deren API-Methoden 
 #### ECMAScript*:
 
 ```js
-import * as scssToCSS from '@adamlui/scss-to-css';
+import scssToCSS from '@adamlui/scss-to-css';
 ```
 
 #### CJS:
