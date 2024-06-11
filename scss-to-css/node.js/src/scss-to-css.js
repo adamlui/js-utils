@@ -60,7 +60,7 @@ function findSCSS(searchDir, options = {}) {
     });
 
     // Log/return final result
-    if (!options.isRecursing && options.verbose) {
+    if (options.verbose && !options.isRecursing) {
         console.info('findSCSS() » Search complete! '
             + ( scssFiles.length == 0 ? 'No' : scssFiles.length )
             + ` file${ scssFiles.length == 1 ? '' : 's' } found.`);
@@ -128,7 +128,7 @@ function compile(input, options = {}) {
                     }
                 }).filter(data => !data.error ); // filter out failed compilations
             if (options.verbose) { 
-                if (compileResult.length > 0) console.info(
+                if (compileResult.length > 0 && typeof window != 'undefined') console.info(
                     'compile() » Compilation complete! Check returned object.');
                 else console.info(
                     'compile() » No SCSS files processed.');
