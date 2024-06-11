@@ -37,7 +37,7 @@ async function geolocate(ips, options = {}) {
             let { status, org, as, query, ...filteredData } = await response.json(); // eslint-disable-line no-unused-vars
             filteredData = { ip, ...filteredData }; geoData.push(filteredData);
         }
-        if (options.verbose && (typeof require == 'undefined' || !/cli(?:\.min)?\.js$/.test(require.main.filename)))
+        if (options.verbose && typeof window != 'undefined')
             console.info('geolocate() » Success! Check returned array.');
         return geoData;
     } catch (err) { console.error('geolocate() » ERROR:', err.message); }

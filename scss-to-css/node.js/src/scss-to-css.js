@@ -64,7 +64,7 @@ function findSCSS(searchDir, options = {}) {
         console.info('findSCSS() » Search complete! '
             + ( scssFiles.length == 0 ? 'No' : scssFiles.length )
             + ` file${ scssFiles.length == 1 ? '' : 's' } found.`);
-        if (findSCSS.caller.name != 'compile' && !/cli(?:\.min)?\.js$/.test(require.main.filename))
+        if (findSCSS.caller.name != 'compile' && typeof window != 'undefined')
             console.info('findSCSS() » Check returned array.');
     }
     return options.isRecursing || scssFiles.length > 0 ? scssFiles : [];
@@ -104,7 +104,7 @@ function compile(input, options = {}) {
             try { // to compile file passed
                 const compileResult = sass.compile(input, compileOptions);
                 if (options.comment) compileResult.css = prependComment(compileResult.css, options.comment);
-                if (options.verbose && !/cli(?:\.min)?\.js$/.test(require.main.filename))
+                if (options.verbose && typeof window != 'undefined')
                     console.info('compile() » Compilation complete! Check returned object.');
                 return { code: compileResult.css, srcMap: compileResult.sourceMap,
                          srcPath: path.resolve(process.cwd(), input), error: undefined };

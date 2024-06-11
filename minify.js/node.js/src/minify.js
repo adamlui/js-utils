@@ -63,12 +63,11 @@ function findJS(searchDir, options = {}) {
 
     // Log/return final result
     if (!options.isRecursing && options.verbose) {
-        console.info('findJS() » Search complete! '
-            + ( jsFiles.length == 0 ? 'No' : jsFiles.length )
-            + ` file${ jsFiles.length == 1 ? '' : 's' } found.`);
-        if (findJS.caller.name != 'minify' && !process.argv.some(arg => arg.includes('gulp')) &&
-            !/cli(?:\.min)?\.js$/.test(require.main.filename))
-                console.info('findJS() » Check returned array.');
+            console.info('findJS() » Search complete! '
+                + ( jsFiles.length == 0 ? 'No' : jsFiles.length )
+                + ` file${ jsFiles.length == 1 ? '' : 's' } found.`);
+        if (findJS.caller.name != 'minify' && typeof window != 'undefined')
+            console.info('findJS() » Check returned array.');
     }
     return options.isRecursing || jsFiles.length > 0 ? jsFiles : [];
 }
@@ -107,9 +106,8 @@ function minify(input, options = {}) {
             const minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions);
             if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment);
             if (minifyResult.error) console.error(`minify() » ERROR: ${minifyResult.error.message}`);
-            else if (options.verbose && !process.argv.some(arg => arg.includes('gulp')) &&
-                !/cli(?:\.min)?\.js$/.test(require.main.filename))
-                    console.info('minify() » Minification complete! Check returned object.');
+            else if (typeof window != 'undefined')
+                console.info('minify() » Minification complete! Check returned object.');
             return { code: minifyResult.code, srcPath: path.resolve(process.cwd(), input),
                      error: minifyResult.error };
         } else { // dir path passed

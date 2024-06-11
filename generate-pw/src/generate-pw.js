@@ -84,10 +84,9 @@ function generatePassword(options = {}) {
 
         // Log/return final result
         if (options.verbose && !fromGeneratePasswords) {
-            console.info(
-                'generatePassword() » Password generated!');       
-            if (typeof require == 'undefined' || !/cli(?:\.min)?\.js$/.test(require.main.filename)) console.info(
-                'generatePassword() » Check returned string.');
+                console.info('generatePassword() » Password generated!');       
+            if (typeof window != 'undefined')
+                console.info('generatePassword() » Check returned string.');
         }
         return password;
     }
@@ -129,10 +128,11 @@ function generatePasswords(qty, options = {}) {
     for (let i = 0; i < qty; i++) passwords.push(generatePassword(options));
 
     // Log/return final result
-    if (options.verbose) console.info(
-        `generatePasswords() » Password${ qty > 1 ? 's' : '' } generated!`);
-    if (typeof require == 'undefined' || !/cli(?:\.min)?\.js$/.test(require.main.filename)) console.info(
-        'generatePasswords() » Check returned array.');
+    if (options.verbose) {
+            console.info(`generatePasswords() » Password${ qty > 1 ? 's' : '' } generated!`);
+        if (typeof window != 'undefined')
+            console.info('generatePasswords() » Check returned array.');
+    }
     return passwords;
 }
 
