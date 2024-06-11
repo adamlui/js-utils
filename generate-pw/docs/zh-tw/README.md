@@ -67,7 +67,7 @@ $ npm install generate-pw
 #### ECMAScript*:
 
 ```js
-import * as pw from 'generate-pw';
+import pw from 'generate-pw';
 ```
 
 #### CommonJS:
