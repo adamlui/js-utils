@@ -1,79 +1,221 @@
 #!/usr/bin/env node
 
-// Import libs
+// © 2023–2024 Adam Lui & contributors under the MIT license.
+// Source: https://code.minify-js.org/node.js
+// Documentation: https://docs.minify-js.org/node.js
+
+// Import LIBS
 const fs = require('fs'),
       path = require('path'),
       uglifyJS = require('uglify-js');
 
-// Init UI colors
-const nc = '\x1b[0m', // no color
-      br = '\x1b[1;91m', // bright red
-      by = '\x1b[1;33m', // bright yellow
-      bg = '\x1b[1;92m'; // bright green
+// Define API functions
 
-// Init I/O args
-const [inputArg = '', outputArg = ''] = ( // default to empty strings for error-less handling
-    process.argv.slice(2) // exclude executable and script path
-        .filter(arg => !arg.startsWith('-')) // exclude flags
-        .map(arg => arg.replace(/^\/*/, '')) // clean leading slashes to avoid parsing system root
-);
+function findJS(searchDir, options = {}) {
 
-// Validate input arg (output arg can be anything)
-const inputPath = path.resolve(__dirname, inputArg);
-if (inputArg && !fs.existsSync(inputPath)) {
-    console.error(`\n${br}Error: First arg must be an existing file or directory.`
-        + `\n${ inputPath } does not exist.${nc}`
-        + '\n\nExample valid command: \n>> minify-js . output.min.js');
-    process.exit(1);
+    const docURL = 'https://docs.minify-js.org/node.js/#findjssearchdir-options',
+          exampleCall = `findJS('assets/js', { verbose: false, dotFoldes: true })`;
+
+    const defaultOptions = {
+        recursive: true,   // recursively search for nested files in searchDir passed
+        verbose: true,     // enable logging
+        dotFolders: false, // include dotfolders in file search
+        dotFiles: false,   // include dotfiles in file search
+        ignoreFiles: []    // files (by name) to exclude from search results
+    };
+
+    // Validate searchDir
+    if (typeof searchDir != 'string') {
+            console.error('findJS() » ERROR: 1st arg <searchDir> must be a string.');
+            console.info('findJS() » For more help, please visit ' + docURL);
+            return;
+    } else { // verify searchDir path existence
+        const searchPath = path.resolve(process.cwd(), searchDir);
+        if (!fs.existsSync(searchPath)) {
+            console.error('findJS() » ERROR: 1st arg <searchDir> must be an existing directory.');
+            console.error(`findJS() » ${searchPath} does not exist.`);           
+            console.info('findJS() » For more help, please visit ' + docURL);
+            return;
+    }}
+
+    // Validate/init options
+    if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
+    options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
+
+    // Search for unminified JS
+    const dirFiles = fs.readdirSync(searchDir), jsFiles = [];
+    if (options.verbose && !options.isRecursing) {
+        console.info('findJS() » Searching for unminified JS files...'); }
+    dirFiles.forEach(file => {
+        const filePath = path.resolve(searchDir, file);
+        if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
+            && options.recursive // only proceed if recursion enabled
+            && (options.dotFolders || !file.startsWith('.'))) // exclude dotfolders if prohibited
+                jsFiles.push( // recursively find unminified JS in eligible dir
+                    ...findJS(filePath, { ...options, isRecursing: true }));
+        else if (/\.js(?<!\.min\.js)$/.test(file) // minified JS file found
+            && (options.dotFiles || !file.startsWith('.')) // exclude dotfiles if prohibited
+            && !options.ignoreFiles.includes(file)) // exclude ignored files
+                jsFiles.push(filePath); // store eligible unminified JS file for returning
+        else if (options.verbose && options.ignoreFiles.includes(file))
+            console.info(`findJS() » ** ${file} ignored due to [options.ignoreFiles]`);
+    });
+
+    // Log/return final result
+    if (options.verbose && !options.isRecursing) {
+            console.info('findJS() » Search complete! '
+                + ( jsFiles.length == 0 ? 'No' : jsFiles.length )
+                + ` file${ jsFiles.length == 1 ? '' : 's' } found.`);
+        if (findJS.caller.name != 'minify' && typeof window != 'undefined')
+            console.info('findJS() » Check returned array.');
+    }
+    return options.isRecursing || jsFiles.length > 0 ? jsFiles : [];
 }
 
-// Store flag settings
-const config = { 
-    includeDotFolders: process.argv.some(arg => /--?include-dot-?folders?/.test(arg)),
-    includeDotFiles: process.argv.some(arg => /--?include-dot-?files?/.test(arg))
+function minify(input, options = {}) {
+
+    const docURL = 'https://docs.minify-js.org/node.js/#minifyinput-options',
+          exampleCall = `minify('assets/js', { recursive: false, mangle: false })`;
+
+    const defaultOptions = {
+        recursive: true,   // recursively search for nested files if dir path passed
+        verbose: true,     // enable logging
+        dotFolders: false, // include dotfolders in file search
+        dotFiles: false,   // include dotfiles in file search
+        mangle: true,      // shorten var names (typically to one character)
+        ignoreFiles: [],   // files (by name) to exclude from minification
+        comment: ''        // header comment to prepend to minified code
+    };
+
+    // Validate input
+    if (typeof input != 'string') {
+        console.error('minify() » ERROR: 1st arg <input> must be a string.');
+        console.info('minify() » For more help, please visit ' + docURL);
+        return;
+    }
+
+    // Validate/init options
+    if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return;
+    options = { ...defaultOptions, ...options }; // merge validated options w/ missing default ones
+
+    // Minify JS based on input
+    const minifyOptions = { mangle: options.mangle ? { toplevel: false } : false };
+    if (fs.existsSync(input)) { // minify based on path arg
+        if (input.endsWith('.js')) { // file path passed
+            if (options.verbose) console.info(`minify() » ** Minifying ${input}...`);
+            const minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions);
+            if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment);
+            if (minifyResult.error) console.error(`minify() » ERROR: ${minifyResult.error.message}`);
+            else if (options.verbose && typeof window != 'undefined')
+                console.info('minify() » Minification complete! Check returned object.');
+            return { code: minifyResult.code, srcPath: path.resolve(process.cwd(), input),
+                     error: minifyResult.error };
+        } else { // dir path passed
+            const minifyResult = findJS(input, { recursive: options.recursive, verbose: options.verbose,
+                                                 dotFolders: options.dotFolders, dotFiles: options.dotFiles,
+                                                 ignoreFiles: options.ignoreFiles 
+                })?.map(jsPath => { // minify found JS files
+                    if (options.verbose) console.info(`minify() » ** Minifying ${jsPath}...`);
+                    const srcCode = fs.readFileSync(jsPath, 'utf8');
+                    const minifyResult = uglifyJS.minify(srcCode, minifyOptions);
+                    if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment);
+                    if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
+                    return { code: minifyResult.code, srcPath: jsPath, error: minifyResult.error };
+                }).filter(data => !data.error); // filter out failed minifications
+            if (options.verbose) { 
+                if (minifyResult.length > 0 && typeof window != 'undefined') console.info(
+                    'minify() » Minification complete! Check returned object.');
+                else console.info(
+                    'minify() » No unminified JavaScript files processed.');
+            }
+            return minifyResult;
+        }
+    } else { // minify based on src code arg
+        if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
+            console.info('minify() » ** Minifying passed source code...');
+        const minifyResult = uglifyJS.minify(input, minifyOptions);
+        if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment);
+        if (minifyResult.error) console.error(`minify() » ERROR: ${minifyResult.error.message}`);
+        else if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
+            console.info('minify() » Minification complete! Check returned object.');
+        return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error };
+    }
+
+    function prependComment(code, comment) {
+        const commentBlock = comment.split('\n').map(line => ` * ${line}`).join('\n'),
+              shebangIdx = code.indexOf('#!');
+        if (shebangIdx >= 0) {
+            const postShebangIdx = code.indexOf('\n', shebangIdx) + 1; // idx of 1st newline after shebang
+            return code.slice(0, postShebangIdx) + `/**\n${ commentBlock }\n */\n` + code.slice(postShebangIdx);
+        } else return `/**\n${ commentBlock }\n */\n${ code }`;
+    }
+}
+
+// Define INTERNAL validation function
+
+function validateOptions(options, defaultOptions, docURL, exampleCall) {
+
+    // Init option strings/types
+    const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
+        .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
+        .replace(/"/g, '\'') // replace double quotes w/ single quotes
+        .replace(/\n\s*/g, ' '); // condense to single line
+    const strValidOptions = Object.keys(defaultOptions).join(', '),
+          booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
+          integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key])),
+          arrayOptions = Object.keys(defaultOptions).filter(key => Array.isArray(defaultOptions[key]));
+
+    // Init log vars
+    let logPrefix = 'validateOptions() » ';
+    try { logPrefix = validateOptions.caller?.name + '() » '; } catch (err) {}
+    let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) + 1;
+    optionsPos += ['st','nd','rd'][optionsPos - 1] || 'th'; // append ordinal suffix
+
+    // Define print functions
+    const printValidOptions = () => {
+        console.info(`${ logPrefix }Valid options: [ ${strValidOptions} ]`);
+        console.info(`${ logPrefix }If omitted, default settings are: ${strDefaultOptions}`);
+    };
+    const printDocURL = () => {
+        console.info(`${ logPrefix }For more help, please visit ${docURL}`); };
+
+    // Validate options
+    if (typeof options != 'object') { // validate as obj
+        console.error(`${ logPrefix }ERROR: ${
+            optionsPos == '0th' ? '[O' : optionsPos + ' arg [o'}ptions] can only be an object of key/values.`);
+        console.info(`${ logPrefix }Example valid call: ${exampleCall}`);
+        printValidOptions(); printDocURL(); return false;
+    }
+    for (const key in options) { // validate each key
+        if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+            console.error(`${ logPrefix }ERROR: \`${key}\` is an invalid option.`);
+            printValidOptions(); printDocURL(); return false;
+        } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
+            console.error(`${ logPrefix }ERROR: [${key}] option can only be \`true\` or \`false\`.`);
+            printDocURL(); return false;
+        } else if (integerOptions.includes(key)) {
+            options[key] = parseInt(options[key], 10);
+            if (isNaN(options[key]) || options[key] < 1) {
+                console.error(`${ logPrefix }ERROR: [${key}] option can only be an integer > 0.`);
+                printDocURL(); return false;
+            }
+        } else if (arrayOptions.includes(key)) {
+            if (typeof options[key] == 'string' && !options[key].includes(','))
+                options[key] = [options[key]]; // convert comma-less string to array
+            else if (!Array.isArray(options[key])) {
+                console.error(`${logPrefix}ERROR: [${key}] option can only be an array.`);
+                printDocURL(); return false;
+            }
+        }
+    }
+    return true;
+}
+
+// EXPORT API functions
+const mjsAliases = {
+    minify: ['build', 'Build', 'compile', 'Compile', 'compress', 'Compress', 'Minify'],
+    findJS: ['find', 'Find', 'findjs', 'findJs', 'Findjs', 'FindJs', 'FindJS', 'search', 'Search']
 };
-
-// Recursively find all eligible JavaScript files or arg-passed file
-const jsFiles = [];
-if (inputArg.endsWith('.js')) jsFiles.push(inputPath);
-else (function findJSfiles(dir) {
-    const files = fs.readdirSync(dir);
-    files.forEach(file => {
-        const filePath = path.resolve(dir, file);
-        if (fs.statSync(filePath).isDirectory() && file != 'node_modules' &&
-            (config.includeDotFolders || !file.startsWith('.')))
-                findJSfiles(filePath); // recursively find unminified JS in eligible dir
-        else if (/\.js(?<!\.min\.js)$/.test(file) &&
-            (config.includeDotFiles || !file.startsWith('.')))
-                jsFiles.push(filePath); // store eligible unminified JS file for compilation
-    });
-})(inputPath);
-
-// Minify JavaScript files
-let minifiedCnt = 0;
-console.log(''); // line break before first log
-jsFiles.forEach(jsPath => {
-    console.info(`Minifying ${ jsPath }...`);
-    const outputDir = path.join(
-        path.dirname(jsPath), // path of file to be minified
-        /so?u?rce?$/.test(path.dirname(jsPath)) ? '../min' // + ../min/ if in *(src|source)/
-            : outputArg.endsWith('.js') ? path.dirname(outputArg) // or path from file output arg
-            : outputArg || 'min' // or path from folder output arg or min/ if no output arg passed
-    );
-    const outputFilename = (
-        outputArg.endsWith('.js') && inputArg.endsWith('.js')
-            ? path.basename(outputArg).replace(/(\.min)?\.js$/, '')
-            : path.basename(jsPath, '.js')
-    ) + '.min.js';
-    const outputPath = path.join(outputDir, outputFilename),
-          minifiedCode = uglifyJS.minify(fs.readFileSync(jsPath, 'utf8')).code;
-    if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-    fs.writeFileSync(outputPath, minifiedCode, 'utf8');
-    minifiedCnt++;
-});
-
-// Print final summary
-if (minifiedCnt) {
-    console.info(`\n${bg}Minification complete!${nc}`);
-    console.info(`${ minifiedCnt } file${ minifiedCnt > 1 ? 's' : '' } minified.`);
-} else console.info(`${by}No unminified JavaScript files found.${nc}`);
+module.exports = { minify, findJS };
+for (const func in mjsAliases) // init/export aliases
+    mjsAliases[func].forEach(alias => module.exports[alias] = module.exports[func]);
