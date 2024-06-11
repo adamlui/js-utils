@@ -119,10 +119,10 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 }
 
 // EXPORT API functions
-const funcAliases = { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] };
+const geoAliases = { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] };
 try { module.exports = { geolocate }; } catch (err) {} // for Node.js
 try { window.geo = { geolocate }; } catch (err) {} // for Greasemonkey
-for (const func in funcAliases) { // init/export aliases
-    try { funcAliases[func].forEach(alias => module.exports[alias] = module.exports[func]); } catch (err) {} // for Node.js
-    try { funcAliases[func].forEach(alias => window.geo[alias] = window.geo[func]); } catch (err) {} // for Greasemonkey
+for (const func in geoAliases) { // init/export aliases
+    try { geoAliases[func].forEach(alias => module.exports[alias] = module.exports[func]); } catch (err) {} // for Node.js
+    try { geoAliases[func].forEach(alias => window.geo[alias] = window.geo[func]); } catch (err) {} // for Greasemonkey
 }

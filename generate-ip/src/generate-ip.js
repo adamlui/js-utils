@@ -368,15 +368,15 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 }
 
 // EXPORT APIs
-const apiAliases = {
+const gipAliases = {
     ipv4: [ 'ipV4', 'IPv4', 'IPV4', 'Ipv4', 'IpV4', 'ip', 'IP', 'Ip'],
     ipv6: [ 'ipV6', 'IPv6', 'IPV6', 'Ipv6', 'IpV6'],
     mac: [ 'MAC', 'Mac', 'ethernet', 'Ethernet']
 };
 try { module.exports = { ipv4, ipv6, mac }; } catch (err) {} // for Node.js
 try { window.ipv4 = ipv4; window.ipv6 = ipv6; window.mac = mac; } catch (err) {} // for Greasemonkey
-for (const api in apiAliases) // init/export aliases
-    apiAliases[api].forEach(alias => {
+for (const api in gipAliases) // init/export aliases
+    gipAliases[api].forEach(alias => {
         try { module.exports[alias] = module.exports[api]; } catch (err) {} // for Node.js
         try { window[alias] = window[api]; } catch (err) {} // for Greasemonkey
     });

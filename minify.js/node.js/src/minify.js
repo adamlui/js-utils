@@ -214,10 +214,10 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 }
 
 // EXPORT API functions
-const funcAliases = {
+const mjsAliases = {
     minify: ['build', 'Build', 'compile', 'Compile', 'compress', 'Compress', 'Minify'],
     findJS: ['find', 'Find', 'findjs', 'findJs', 'Findjs', 'FindJs', 'FindJS', 'search', 'Search']
 };
 module.exports = { minify, findJS };
-for (const func in funcAliases) // init/export aliases
-    funcAliases[func].forEach(alias => module.exports[alias] = module.exports[func]);
+for (const func in mjsAliases) // init/export aliases
+    mjsAliases[func].forEach(alias => module.exports[alias] = module.exports[func]);
