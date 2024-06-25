@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Faritrora" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Longitude" },
+  "geoLabel_timeZone": { "message": "Faritrora" },
   "helpSection_usage": { "message": "Ny teny niverimberina" },
   "helpSection_configOptions": { "message": "Safidin'ny kirakira" },
   "helpSection_infoCmds": { "message": "Baikon'ny fampahalalana" },

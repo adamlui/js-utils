@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "เขตเวลา" },
   "geoLabel_lat": { "message": "ละติจูด" },
   "geoLabel_lon": { "message": "ลองจิจูด" },
+  "geoLabel_timeZone": { "message": "เขตเวลา" },
   "helpSection_usage": { "message": "การใช้งาน" },
   "helpSection_configOptions": { "message": "ตัวเลือกการกำหนดค่า" },
   "helpSection_infoCmds": { "message": "คำสั่งข้อมูล" },

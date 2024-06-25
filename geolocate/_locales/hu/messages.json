@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Időzóna" },
   "geoLabel_lat": { "message": "Földrajzi szélesség" },
   "geoLabel_lon": { "message": "Földrajzi hosszúság" },
+  "geoLabel_timeZone": { "message": "Időzóna" },
   "helpSection_usage": { "message": "Felhasználás" },
   "helpSection_configOptions": { "message": "Konfigurációs beállítások" },
   "helpSection_infoCmds": { "message": "Információs parancsok" },

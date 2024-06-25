@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Saat qurşağı" },
   "geoLabel_lat": { "message": "En dairəsi" },
   "geoLabel_lon": { "message": "Uzunluq" },
+  "geoLabel_timeZone": { "message": "Saat qurşağı" },
   "helpSection_usage": { "message": "İsmarış" },
   "helpSection_configOptions": { "message": "Seçimləri konfiqur" },
   "helpSection_infoCmds": { "message": "Məlumat əmrləri" },

@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Nthawi zone" },
   "geoLabel_lat": { "message": "Lumikizanani nafe" },
   "geoLabel_lon": { "message": "Longitude" },
+  "geoLabel_timeZone": { "message": "Nthawi zone" },
   "helpSection_usage": { "message": "Ntchito" },
   "helpSection_configOptions": { "message": "Konzani zosankha" },
   "helpSection_infoCmds": { "message": "ZOKHUDZ" },

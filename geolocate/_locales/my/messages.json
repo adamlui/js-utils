@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "အချိန်ဇုန်" },
   "geoLabel_lat": { "message": "လတၱီတြတ္" },
   "geoLabel_lon": { "message": "ေလာင္ဂ်ီက်ု" },
+  "geoLabel_timeZone": { "message": "အချိန်ဇုန်" },
   "helpSection_usage": { "message": "အသုံးပြုမှု့" },
   "helpSection_configOptions": { "message": "ရွေးချယ်စရာများကို စီစဉ်ပြင်ဆင်ပါ" },
   "helpSection_infoCmds": { "message": "သတင်းအချက်အလက်ဆိုင်ရာ ညွှန်ကြားချက်များ" },

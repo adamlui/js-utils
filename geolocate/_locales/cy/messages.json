@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Cylchfa amser" },
   "geoLabel_lat": { "message": "Lledred" },
   "geoLabel_lon": { "message": "Hydred" },
+  "geoLabel_timeZone": { "message": "Cylchfa amser" },
   "helpSection_usage": { "message": "Defnydd" },
   "helpSection_configOptions": { "message": "Opsiynau ffurfweddu" },
   "helpSection_infoCmds": { "message": "Gorchmynion gwybodaeth" },

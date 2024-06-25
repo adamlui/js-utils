@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Tímabelti" },
   "geoLabel_lat": { "message": "Breiddargráða" },
   "geoLabel_lon": { "message": "Lengdargráða" },
+  "geoLabel_timeZone": { "message": "Tímabelti" },
   "helpSection_usage": { "message": "Notkun" },
   "helpSection_configOptions": { "message": "Stilla valkosti" },
   "helpSection_infoCmds": { "message": "Upplýsingaskipanir" },

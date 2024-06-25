@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Ժամային գոտի" },
   "geoLabel_lat": { "message": "Երկարություն" },
   "geoLabel_lon": { "message": "Լայնություն" },
+  "geoLabel_timeZone": { "message": "Ժամային գոտի" },
   "helpSection_usage": { "message": "օգտագործում" },
   "helpSection_configOptions": { "message": "Կարգավորումների ընտրանքներ" },
   "helpSection_infoCmds": { "message": "Տեղեկությունների հրամաններ" },

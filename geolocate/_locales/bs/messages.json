@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Vremenska zona" },
   "geoLabel_lat": { "message": "Geografska širina" },
   "geoLabel_lon": { "message": "Geografska dužina" },
+  "geoLabel_timeZone": { "message": "Vremenska zona" },
   "helpSection_usage": { "message": "Upotreba" },
   "helpSection_configOptions": { "message": "Opcije konfiguracije" },
   "helpSection_infoCmds": { "message": "Komande za informacije" },

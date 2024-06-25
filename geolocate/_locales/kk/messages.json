@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Қалған уақыт@ label" },
   "geoLabel_lat": { "message": "Географиялық ендігі" },
   "geoLabel_lon": { "message": "Географиялық бойлығы" },
+  "geoLabel_timeZone": { "message": "Қалған уақыт@ label" },
   "helpSection_usage": { "message": "ТолуыName" },
   "helpSection_configOptions": { "message": "Параметрлерді теңшеу" },
   "helpSection_infoCmds": { "message": "Ақпараттық командалар" },

@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Żona tal-ħin" },
   "geoLabel_lat": { "message": "Latitudni" },
   "geoLabel_lon": { "message": "Lonġitudni" },
+  "geoLabel_timeZone": { "message": "Żona tal-ħin" },
   "helpSection_usage": { "message": "Użu" },
   "helpSection_configOptions": { "message": "Għażliet tal-konfigurazzjoni" },
   "helpSection_infoCmds": { "message": "Kmand tal-informazzjoni" },

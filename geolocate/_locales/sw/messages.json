@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Ukanda wa Saa" },
   "geoLabel_lat": { "message": "Latitudo" },
   "geoLabel_lon": { "message": "Longitudo" },
+  "geoLabel_timeZone": { "message": "Ukanda wa Saa" },
   "helpSection_usage": { "message": "[Usage]" },
   "helpSection_configOptions": { "message": "Sanidi machaguo" },
   "helpSection_infoCmds": { "message": "Amri za taarifa" },

@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "समय क्षेत्र@ label" },
   "geoLabel_lat": { "message": "अक्षांश" },
   "geoLabel_lon": { "message": "देशांतर" },
+  "geoLabel_timeZone": { "message": "समय क्षेत्र@ label" },
   "helpSection_usage": { "message": "उपयोग" },
   "helpSection_configOptions": { "message": "कॉन्फ़िगरेशन विकल्प" },
   "helpSection_infoCmds": { "message": "जानकारी कमांड" },

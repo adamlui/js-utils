@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Tydsone" },
   "geoLabel_lat": { "message": "Breedtegraad" },
   "geoLabel_lon": { "message": "Lengtegraad" },
+  "geoLabel_timeZone": { "message": "Tydsone" },
   "helpSection_usage": { "message": "Gebruik" },
   "helpSection_configOptions": { "message": "Konfigureer opsies" },
   "helpSection_infoCmds": { "message": "Inligtingopdragte" },

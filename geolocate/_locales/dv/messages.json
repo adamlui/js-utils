@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "ޓައިމް ޒޯން" },
   "geoLabel_lat": { "message": "ލެޓިޓިއުޑް" },
   "geoLabel_lon": { "message": "Longitude" },
+  "geoLabel_timeZone": { "message": "ޓައިމް ޒޯން" },
   "helpSection_usage": { "message": "ބޭނުންކުރުން" },
   "helpSection_configOptions": { "message": "Config options" },
   "helpSection_infoCmds": { "message": "އިންފޯ ކޮމާންޑުތައް" },

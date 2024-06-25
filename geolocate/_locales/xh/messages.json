@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Izowuni yexesha" },
   "geoLabel_lat": { "message": "Umgca owahlulayo" },
   "geoLabel_lon": { "message": "Ubude bomhlaba" },
+  "geoLabel_timeZone": { "message": "Izowuni yexesha" },
   "helpSection_usage": { "message": "Umyalezo" },
   "helpSection_configOptions": { "message": "Lungelelanisa izinto onokukhetha kuzo" },
   "helpSection_infoCmds": { "message": "Imiyalelo yenkcazelo" },

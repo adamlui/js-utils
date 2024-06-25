@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "დროის სარტყელი" },
   "geoLabel_lat": { "message": "განედი" },
   "geoLabel_lon": { "message": "გრძედი" },
+  "geoLabel_timeZone": { "message": "დროის სარტყელი" },
   "helpSection_usage": { "message": "გამოყენება" },
   "helpSection_configOptions": { "message": "Კონფიგურაციის პარამეტრები" },
   "helpSection_infoCmds": { "message": "Საინფორმაციო ბრძანებები" },

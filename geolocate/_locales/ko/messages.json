@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "시간대" },
   "geoLabel_lat": { "message": "위도" },
   "geoLabel_lon": { "message": "경도(입력무관)" },
+  "geoLabel_timeZone": { "message": "시간대" },
   "helpSection_usage": { "message": "사용" },
   "helpSection_configOptions": { "message": "설정 옵션" },
   "helpSection_infoCmds": { "message": "정보 명령" },

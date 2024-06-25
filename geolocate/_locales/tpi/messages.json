@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Tapun hap" },
   "geoLabel_lat": { "message": "Long sait bilong latitud" },
   "geoLabel_lon": { "message": "Kain lain igo antap long wol ol man i bin makim bilong save istap we tru" },
+  "geoLabel_timeZone": { "message": "Tapun hap" },
   "helpSection_usage": { "message": "Yusim" },
   "helpSection_configOptions": { "message": "Konfigim ol opsen" },
   "helpSection_infoCmds": { "message": "Toksave" },

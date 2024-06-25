@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "ເຂດເວລາ" },
   "geoLabel_lat": { "message": "ເສັ້ນແວງ" },
   "geoLabel_lon": { "message": "ຄວາມຍາວ" },
+  "geoLabel_timeZone": { "message": "ເຂດເວລາ" },
   "helpSection_usage": { "message": "ການນຳໃຊ້" },
   "helpSection_configOptions": { "message": "ຕົວເລືອກການຕັ້ງຄ່າ" },
   "helpSection_infoCmds": { "message": "ຄໍາສັ່ງ Info" },

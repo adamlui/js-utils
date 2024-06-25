@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Цагийн бүс" },
   "geoLabel_lat": { "message": "Өргөрөг" },
   "geoLabel_lon": { "message": "Уртраг" },
+  "geoLabel_timeZone": { "message": "Цагийн бүс" },
   "helpSection_usage": { "message": "Хэрэглээ" },
   "helpSection_configOptions": { "message": "Тохиргооны сонголтууд" },
   "helpSection_infoCmds": { "message": "Мэдээллийн командууд" },

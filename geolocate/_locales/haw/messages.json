@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Wahi manawa" },
   "geoLabel_lat": { "message": "Latitu" },
   "geoLabel_lon": { "message": "Longitude" },
+  "geoLabel_timeZone": { "message": "Wahi manawa" },
   "helpSection_usage": { "message": "Hoʻohana" },
   "helpSection_configOptions": { "message": "Nā koho hoʻonohonoho" },
   "helpSection_infoCmds": { "message": "Nā kauoha ʻike" },

@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Pop up an alert %d days before start of appointment" },
   "geoLabel_lat": { "message": "Hêlîpan" },
   "geoLabel_lon": { "message": "Hêlîlar" },
+  "geoLabel_timeZone": { "message": "Pop up an alert %d days before start of appointment" },
   "helpSection_usage": { "message": "RûpelkerName" },
   "helpSection_configOptions": { "message": "Vebijarkên mîhengê" },
   "helpSection_infoCmds": { "message": "Fermanên agahdariyê" },

@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Time zone" },
   "geoLabel_lat": { "message": "Latitud" },
   "geoLabel_lon": { "message": "Longhitud" },
+  "geoLabel_timeZone": { "message": "Time zone" },
   "helpSection_usage": { "message": "Usage" },
   "helpSection_configOptions": { "message": "Mga kapilian sa config" },
   "helpSection_infoCmds": { "message": "Mga mando sa info" },

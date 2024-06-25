@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "ናይ ግዜ ዞባ" },
   "geoLabel_lat": { "message": "ላቲንስ" },
   "geoLabel_lon": { "message": "ርዝመት" },
+  "geoLabel_timeZone": { "message": "ናይ ግዜ ዞባ" },
   "helpSection_usage": { "message": "ኣጠቓቕማ" },
   "helpSection_configOptions": { "message": "ኣማራጺታት ኣዳሊእካ" },
   "helpSection_infoCmds": { "message": "መምርሒታት ሓበሬታ" },

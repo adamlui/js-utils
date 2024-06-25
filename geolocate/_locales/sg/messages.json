@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Ngbonga zone" },
   "geoLabel_lat": { "message": "Latitude ti" },
   "geoLabel_lon": { "message": "Ngbene ye na ngoi ni so" },
+  "geoLabel_timeZone": { "message": "Ngbonga zone" },
   "helpSection_usage": { "message": "Use of ti vs. tu" },
   "helpSection_configOptions": { "message": "Akpengba ye so mo lingbi ti sara" },
   "helpSection_infoCmds": { "message": "Aye so afa so a yeke nzoni e sara" },

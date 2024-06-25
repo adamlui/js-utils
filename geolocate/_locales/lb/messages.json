@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Zäitzon" },
   "geoLabel_lat": { "message": "CAA -" },
   "geoLabel_lon": { "message": "Längt" },
+  "geoLabel_timeZone": { "message": "Zäitzon" },
   "helpSection_usage": { "message": "Benotzung" },
   "helpSection_configOptions": { "message": "Optiounen konfiguréieren" },
   "helpSection_infoCmds": { "message": "Infobefehlungen" },

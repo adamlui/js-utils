@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Aikavyöhyke" },
   "geoLabel_lat": { "message": "Leveysaste" },
   "geoLabel_lon": { "message": "Pituusaste" },
+  "geoLabel_timeZone": { "message": "Aikavyöhyke" },
   "helpSection_usage": { "message": "Käyttö" },
   "helpSection_configOptions": { "message": "Konfig. asetukset" },
   "helpSection_infoCmds": { "message": "Tietokomennot" },

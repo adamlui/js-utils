@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Kode y'iposita" },
   "geoLabel_lat": { "message": "Ubunini" },
   "geoLabel_lon": { "message": "Uburebure" },
+  "geoLabel_timeZone": { "message": "Igihe kya karere" },
   "helpSection_usage": { "message": "Ikoreshwa" },
   "helpSection_configOptions": { "message": "Hindura amahitamo" },
   "helpSection_infoCmds": { "message": "Amabwiriza" },

@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Zona horària" },
   "geoLabel_lat": { "message": "Latitud" },
   "geoLabel_lon": { "message": "Longitut" },
+  "geoLabel_timeZone": { "message": "Zona horària" },
   "helpSection_usage": { "message": "Ús" },
   "helpSection_configOptions": { "message": "Opcions de configuració" },
   "helpSection_infoCmds": { "message": "Ordres d'informació" },

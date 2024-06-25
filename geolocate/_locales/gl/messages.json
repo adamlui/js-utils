@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Fuso horario@ label" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Lonxitude" },
+  "geoLabel_timeZone": { "message": "Fuso horario@ label" },
   "helpSection_usage": { "message": "Uso" },
   "helpSection_configOptions": { "message": "Opcións de configuración" },
   "helpSection_infoCmds": { "message": "Comandos de información" },

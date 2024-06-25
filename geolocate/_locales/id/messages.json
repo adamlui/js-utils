@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Zona Waktu" },
   "geoLabel_lat": { "message": "Lintang" },
   "geoLabel_lon": { "message": "Bujur" },
+  "geoLabel_timeZone": { "message": "Zona Waktu" },
   "helpSection_usage": { "message": "Cara Pakai" },
   "helpSection_configOptions": { "message": "Opsi konfigurasi" },
   "helpSection_infoCmds": { "message": "Perintah info" },

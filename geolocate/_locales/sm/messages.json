@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Taimi sone" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Longitude" },
+  "geoLabel_timeZone": { "message": "Taimi sone" },
   "helpSection_usage": { "message": "Faʻaaogaina" },
   "helpSection_configOptions": { "message": "Filifiliga Config" },
   "helpSection_infoCmds": { "message": "Poloaiga Info" },

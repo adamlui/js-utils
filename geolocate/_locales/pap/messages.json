@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Zona di tempu" },
   "geoLabel_lat": { "message": "Latitud" },
   "geoLabel_lon": { "message": "Largura" },
+  "geoLabel_timeZone": { "message": "Zona di tempu" },
   "helpSection_usage": { "message": "Uso" },
   "helpSection_configOptions": { "message": "Opshon konfiská" },
   "helpSection_infoCmds": { "message": "Komandante di Informashon" },

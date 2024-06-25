@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "সময় অঞ্চল" },
   "geoLabel_lat": { "message": "অক্ষাংশ" },
   "geoLabel_lon": { "message": "দ্রাঘিমাংশ" },
+  "geoLabel_timeZone": { "message": "সময় অঞ্চল" },
   "helpSection_usage": { "message": "ব্যবহার" },
   "helpSection_configOptions": { "message": "কনফিগার অপশন" },
   "helpSection_infoCmds": { "message": "তথ্য কমান্ড" },

@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Time zone" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Longitude" },
+  "geoLabel_timeZone": { "message": "Time zone" },
   "helpSection_usage": { "message": "Tiriso" },
   "helpSection_configOptions": { "message": "Rulaganya dilo tse o ka tlhophang mo go" },
   "helpSection_infoCmds": { "message": "DITAELO TSA TSHEDIMOS" },

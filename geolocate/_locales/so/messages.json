@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Aagga Waqtiga" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Dhigaha" },
+  "geoLabel_timeZone": { "message": "Aagga Waqtiga" },
   "helpSection_usage": { "message": "Isticmaalka" },
   "helpSection_configOptions": { "message": "Habee ikhtiyaarrada" },
   "helpSection_infoCmds": { "message": "Amarada Macluumaadka" },

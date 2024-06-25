@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Tíðarsvæði" },
   "geoLabel_lat": { "message": "Breiddømi" },
   "geoLabel_lon": { "message": "Longdarstig" },
+  "geoLabel_timeZone": { "message": "Tíðarsvæði" },
   "helpSection_usage": { "message": "Brúka" },
   "helpSection_configOptions": { "message": "Set upp valmøguleikar" },
   "helpSection_infoCmds": { "message": "Upplýsingar boð" },

@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "时区" },
   "geoLabel_lat": { "message": "纬度" },
   "geoLabel_lon": { "message": "经度" },
+  "geoLabel_timeZone": { "message": "时区" },
   "helpSection_usage": { "message": "使用量" },
   "helpSection_configOptions": { "message": "配置选项" },
   "helpSection_infoCmds": { "message": "信息命令" },

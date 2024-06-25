@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Fus orar" },
   "geoLabel_lat": { "message": "Latitudine" },
   "geoLabel_lon": { "message": "Longitudine" },
+  "geoLabel_timeZone": { "message": "Fus orar" },
   "helpSection_usage": { "message": "Utilizare" },
   "helpSection_configOptions": { "message": "Opțiuni de configurare" },
   "helpSection_infoCmds": { "message": "Comenzi Info" },

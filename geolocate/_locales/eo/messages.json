@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "@ label" },
   "geoLabel_lat": { "message": "@ title: column Horoscope property" },
   "geoLabel_lon": { "message": "@ title: column Horoscope property" },
+  "geoLabel_timeZone": { "message": "@ label" },
   "helpSection_usage": { "message": "Uzado" },
   "helpSection_configOptions": { "message": "Agordopcioj" },
   "helpSection_infoCmds": { "message": "Informkomandoj" },

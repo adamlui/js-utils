@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Saat dilimi" },
   "geoLabel_lat": { "message": "Enlem" },
   "geoLabel_lon": { "message": "Boylam" },
+  "geoLabel_timeZone": { "message": "Saat dilimi" },
   "helpSection_usage": { "message": "Kullanım" },
   "helpSection_configOptions": { "message": "Yapılandırma Seçenekleri" },
   "helpSection_infoCmds": { "message": "Bilgi komutları" },

@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Tidssone" },
   "geoLabel_lat": { "message": "Breddegrad" },
   "geoLabel_lon": { "message": "Lengdegrad" },
+  "geoLabel_timeZone": { "message": "Tidssone" },
   "helpSection_usage": { "message": "Bruk" },
   "helpSection_configOptions": { "message": "Konfigurasjonsalternativer" },
   "helpSection_infoCmds": { "message": "Info kommandoer" },

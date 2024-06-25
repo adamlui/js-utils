@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Isikhathi" },
   "geoLabel_lat": { "message": "Ilathithudi" },
   "geoLabel_lon": { "message": "Ilongithudi" },
+  "geoLabel_timeZone": { "message": "Isikhathi" },
   "helpSection_usage": { "message": "Ukusetshenziswa" },
   "helpSection_configOptions": { "message": "Lungiselela ongakhetha kukho" },
   "helpSection_infoCmds": { "message": "Imiyalo yemininingwane" },

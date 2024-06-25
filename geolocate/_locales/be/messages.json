@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Час да@ label" },
   "geoLabel_lat": { "message": "Шырата" },
   "geoLabel_lon": { "message": "Даўгата" },
+  "geoLabel_timeZone": { "message": "Час да@ label" },
   "helpSection_usage": { "message": "Выкарыстанне" },
   "helpSection_configOptions": { "message": "Параметры канфігурацыі" },
   "helpSection_infoCmds": { "message": "Інфармацыйныя каманды" },

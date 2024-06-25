@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "צייַט זאָנע" },
   "geoLabel_lat": { "message": "ברייט" },
   "geoLabel_lon": { "message": "לענג" },
+  "geoLabel_timeZone": { "message": "צייַט זאָנע" },
   "helpSection_usage": { "message": "באַניץ" },
   "helpSection_configOptions": { "message": "Config אָפּציעס" },
   "helpSection_infoCmds": { "message": "אינפֿאָרמאַציע קאַמאַנדז" },

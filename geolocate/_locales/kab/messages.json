@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Iẓḍi usrig" },
   "geoLabel_lat": { "message": "Taggayt" },
   "geoLabel_lon": { "message": "Aɣezzif" },
+  "geoLabel_timeZone": { "message": "Iẓḍi usrig" },
   "helpSection_usage": { "message": "Aseqdec" },
   "helpSection_configOptions": { "message": "Snifel isenfaren" },
   "helpSection_infoCmds": { "message": "Iɣewwaṛen n isefka" },

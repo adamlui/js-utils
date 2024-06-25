@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Ajavöönd" },
   "geoLabel_lat": { "message": "Laiuskraad" },
   "geoLabel_lon": { "message": "Pikkuskraad" },
+  "geoLabel_timeZone": { "message": "Ajavöönd" },
   "helpSection_usage": { "message": "Kasutus" },
   "helpSection_configOptions": { "message": "Seadete valikud" },
   "helpSection_infoCmds": { "message": "Teabekäsud" },

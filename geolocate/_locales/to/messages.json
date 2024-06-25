@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Time Zone" },
   "geoLabel_lat": { "message": "Tauʻataina" },
   "geoLabel_lon": { "message": "Longitude" },
+  "geoLabel_timeZone": { "message": "Time Zone" },
   "helpSection_usage": { "message": "Fakaʻaongaʻi" },
   "helpSection_configOptions": { "message": "Config Options" },
   "helpSection_infoCmds": { "message": "ʻOku fekauʻi ʻe he fakamatala" },

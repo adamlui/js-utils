@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "ટાઈમ ઝોન" },
   "geoLabel_lat": { "message": "અક્ષાંશ" },
   "geoLabel_lon": { "message": "પૂWest, the direction" },
+  "geoLabel_timeZone": { "message": "ટાઈમ ઝોન" },
   "helpSection_usage": { "message": "વપરાશ" },
   "helpSection_configOptions": { "message": "રૂપરેખાંકન વિકલ્પો" },
   "helpSection_infoCmds": { "message": "માહિતી આદેશો" },

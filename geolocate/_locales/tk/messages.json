@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Wagtyň bölümi" },
   "geoLabel_lat": { "message": "Ulylyk" },
   "geoLabel_lon": { "message": "Uzaklyk" },
+  "geoLabel_timeZone": { "message": "Wagtyň bölümi" },
   "helpSection_usage": { "message": "Uzaklyk" },
   "helpSection_configOptions": { "message": "Seçimleri Konfigur et" },
   "helpSection_infoCmds": { "message": "Öwrenme tabşyryklary" },

@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Ordu-eremu" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Longitudea" },
+  "geoLabel_timeZone": { "message": "Ordu-eremu" },
   "helpSection_usage": { "message": "Erabilpena" },
   "helpSection_configOptions": { "message": "Konfigurazio aukerak" },
   "helpSection_infoCmds": { "message": "Info komandoak" },

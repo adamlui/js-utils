@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Убакыт зонасы" },
   "geoLabel_lat": { "message": "обширность" },
   "geoLabel_lon": { "message": "долгота" },
+  "geoLabel_timeZone": { "message": "Убакыт зонасы" },
   "helpSection_usage": { "message": "Колдонулушу" },
   "helpSection_configOptions": { "message": "Параметрлерди конфигурациял" },
   "helpSection_infoCmds": { "message": "Маалымат буйруктары" },

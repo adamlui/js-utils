@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Tijdzone" },
   "geoLabel_lat": { "message": "Breedtegraad" },
   "geoLabel_lon": { "message": "Lengtegraad (longtitude)" },
+  "geoLabel_timeZone": { "message": "Tijdzone" },
   "helpSection_usage": { "message": "Gebruik" },
   "helpSection_configOptions": { "message": "Config opties" },
   "helpSection_infoCmds": { "message": "Info commando 's" },

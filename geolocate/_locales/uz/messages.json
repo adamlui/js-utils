@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Vaqt mintaqasi" },
   "geoLabel_lat": { "message": "Kenglik" },
   "geoLabel_lon": { "message": "Uzoqlik" },
+  "geoLabel_timeZone": { "message": "Vaqt mintaqasi" },
   "helpSection_usage": { "message": "FoydalanilganVisible items on device information columns (enable_BAR_disable)" },
   "helpSection_configOptions": { "message": "Konfiguratsiya opsiyalari" },
   "helpSection_infoCmds": { "message": "Ma'lumot buyruqlari" },

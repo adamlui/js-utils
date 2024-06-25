@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "కాలాంశం" },
   "geoLabel_lat": { "message": "రేఖాంశం" },
   "geoLabel_lon": { "message": "రేఖాంశం" },
+  "geoLabel_timeZone": { "message": "కాలాంశం" },
   "helpSection_usage": { "message": "వినిమయం" },
   "helpSection_configOptions": { "message": "కాన్ఫిగర్ ఎంపికలు" },
   "helpSection_infoCmds": { "message": "సమాచార ఆదేశాలు" },

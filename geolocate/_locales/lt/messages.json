@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Laiko juosta" },
   "geoLabel_lat": { "message": "Platuma" },
   "geoLabel_lon": { "message": "Ilguma" },
+  "geoLabel_timeZone": { "message": "Laiko juosta" },
   "helpSection_usage": { "message": "Naudojimasis" },
   "helpSection_configOptions": { "message": "Konfigūracijos parinktys" },
   "helpSection_infoCmds": { "message": "Informacijos komandos" },

@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "លេខកូដតំបន់" },
   "geoLabel_lat": { "message": "រយៈទទឹង" },
   "geoLabel_lon": { "message": "រយៈបណ្ដោយ" },
+  "geoLabel_timeZone": { "message": "តំបន់​ពេលវេលា@ label" },
   "helpSection_usage": { "message": "ការប្រើប្រាស់" },
   "helpSection_configOptions": { "message": "ជម្រើសកំណត់រចនាសម្ព័ន្ធ" },
   "helpSection_infoCmds": { "message": "ពាក្យបញ្ជាព័ត៌មាន" },

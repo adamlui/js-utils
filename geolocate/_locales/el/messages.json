@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Ζώνη ώρας" },
   "geoLabel_lat": { "message": "Γεωγραφικό πλάτος" },
   "geoLabel_lon": { "message": "Γεωγραφικό μήκος" },
+  "geoLabel_timeZone": { "message": "Ζώνη ώρας" },
   "helpSection_usage": { "message": "Χρήση" },
   "helpSection_configOptions": { "message": "Επιλογές διαμόρφωσης" },
   "helpSection_infoCmds": { "message": "Εντολές πληροφοριών" },

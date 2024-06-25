@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Časové pásmo" },
   "geoLabel_lat": { "message": "Zemepisná šírka" },
   "geoLabel_lon": { "message": "Zemepisná dĺžka" },
+  "geoLabel_timeZone": { "message": "Časové pásmo" },
   "helpSection_usage": { "message": "Využívanie" },
   "helpSection_configOptions": { "message": "Možnosti konfigurácie" },
   "helpSection_infoCmds": { "message": "Informačné príkazy" },

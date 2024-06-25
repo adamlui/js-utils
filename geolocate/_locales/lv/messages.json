@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Laika josla" },
   "geoLabel_lat": { "message": "Ģeogrāfiskais platums" },
   "geoLabel_lon": { "message": "Ģeogrāfiskais garums" },
+  "geoLabel_timeZone": { "message": "Laika josla" },
   "helpSection_usage": { "message": "Lietojums" },
   "helpSection_configOptions": { "message": "Konfigurācijas opcijas" },
   "helpSection_infoCmds": { "message": "Informācijas komandas" },

@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Sòn - ama" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Domhan-fhad" },
+  "geoLabel_timeZone": { "message": "Sòn - ama" },
   "helpSection_usage": { "message": "Cleachdadh" },
   "helpSection_configOptions": { "message": "Roghainnean rèiteachaidh" },
   "helpSection_infoCmds": { "message": "Àithnean fiosrachaidh" },

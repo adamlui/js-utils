@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "مهال سيمه" },
   "geoLabel_lat": { "message": "عرض البلد" },
   "geoLabel_lon": { "message": "طول البلد" },
+  "geoLabel_timeZone": { "message": "مهال سيمه" },
   "helpSection_usage": { "message": "کارونه" },
   "helpSection_configOptions": { "message": "د ترتیب انتخابونه" },
   "helpSection_infoCmds": { "message": "د معلوماتو امرونه" },

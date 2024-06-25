@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "நேர வலயம்" },
   "geoLabel_lat": { "message": "நிலநேர்க்கோடு" },
   "geoLabel_lon": { "message": "நிலநிரைக்கோடு" },
+  "geoLabel_timeZone": { "message": "நேர வலயம்" },
   "helpSection_usage": { "message": "பயன்பாடு" },
   "helpSection_configOptions": { "message": "கட்டமைப்பு விருப்பங்கள்" },
   "helpSection_infoCmds": { "message": "தகவல் கட்டளைகள்" },

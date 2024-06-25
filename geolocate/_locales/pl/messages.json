@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Strefa czasowa" },
   "geoLabel_lat": { "message": "Szerokość geograficzna" },
   "geoLabel_lon": { "message": "Długość geograficzna" },
+  "geoLabel_timeZone": { "message": "Strefa czasowa" },
   "helpSection_usage": { "message": "Używanie" },
   "helpSection_configOptions": { "message": "Opcje konfiguracji" },
   "helpSection_infoCmds": { "message": "Polecenia informacyjne" },

@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "ಸಮಯ ವಲಯ" },
   "geoLabel_lat": { "message": "ಅಕ್ಷಾಂಶ" },
   "geoLabel_lon": { "message": "ರೇಖಾಂಶ" },
+  "geoLabel_timeZone": { "message": "ಸಮಯ ವಲಯ" },
   "helpSection_usage": { "message": "ಬಳಕೆ" },
   "helpSection_configOptions": { "message": "ಕಾನ್ಫಿಗರ್ ಆಯ್ಕೆಗಳು" },
   "helpSection_infoCmds": { "message": "ಮಾಹಿತಿ ಆಜ್ಞೆಗಳು" },

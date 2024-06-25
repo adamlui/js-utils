@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Tidszone" },
   "geoLabel_lat": { "message": "Breddegrad" },
   "geoLabel_lon": { "message": "Længdegrad" },
+  "geoLabel_timeZone": { "message": "Tidszone" },
   "helpSection_usage": { "message": "Anvendelse" },
   "helpSection_configOptions": { "message": "Config Options" },
   "helpSection_infoCmds": { "message": "INFO-kommandoer" },

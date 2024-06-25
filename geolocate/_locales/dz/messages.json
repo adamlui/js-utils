@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "དུས་ཚོད།" },
   "geoLabel_lat": { "message": "བྱང་ཚད།" },
   "geoLabel_lon": { "message": "ཚད་ཚུ།" },
+  "geoLabel_timeZone": { "message": "དུས་ཚོད།" },
   "helpSection_usage": { "message": "ལག་ལེན་འཐབ་ཐབས།" },
   "helpSection_configOptions": { "message": "སེལ་འཐུ་འབད།" },
   "helpSection_infoCmds": { "message": "བརྡ་དོན་གྱི་བཀའ་རྒྱ་" },

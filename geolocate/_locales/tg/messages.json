@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Вақт то@ label" },
   "geoLabel_lat": { "message": "Вусъат" },
   "geoLabel_lon": { "message": "Дарозӣ" },
+  "geoLabel_timeZone": { "message": "Вақт то@ label" },
   "helpSection_usage": { "message": "Истифодабарӣ" },
   "helpSection_configOptions": { "message": "Танзими имконот" },
   "helpSection_infoCmds": { "message": "Фармонҳои иттилоотӣ" },

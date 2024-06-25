@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "المنطقة الزمنية" },
   "geoLabel_lat": { "message": "خط العرض" },
   "geoLabel_lon": { "message": "خط الطول" },
+  "geoLabel_timeZone": { "message": "المنطقة الزمنية" },
   "helpSection_usage": { "message": "الإستخدام" },
   "helpSection_configOptions": { "message": "خيارات الإعداد" },
   "helpSection_infoCmds": { "message": "أوامر المعلومات" },

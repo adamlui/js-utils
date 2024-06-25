@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Tidszon" },
   "geoLabel_lat": { "message": "Latitud" },
   "geoLabel_lon": { "message": "Longitud" },
+  "geoLabel_timeZone": { "message": "Tidszon" },
   "helpSection_usage": { "message": "Användning" },
   "helpSection_configOptions": { "message": "Konfigurera alternativ" },
   "helpSection_infoCmds": { "message": "INFO-kommandon" },

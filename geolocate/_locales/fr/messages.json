@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Fuseau horaire" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Longitude" },
+  "geoLabel_timeZone": { "message": "Fuseau horaire" },
   "helpSection_usage": { "message": "Usage" },
   "helpSection_configOptions": { "message": "Options configuration" },
   "helpSection_infoCmds": { "message": "Commandes info" },

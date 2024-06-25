@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "වේලා කළාපය" },
   "geoLabel_lat": { "message": "අක්ෂාංශ" },
   "geoLabel_lon": { "message": "දේශාංශ" },
+  "geoLabel_timeZone": { "message": "වේලා කළාපය:" },
   "helpSection_usage": { "message": "භාවිතය" },
   "helpSection_configOptions": { "message": "විකල්ප සකසන්න" },
   "helpSection_infoCmds": { "message": "තොරතුරු විධාන" },

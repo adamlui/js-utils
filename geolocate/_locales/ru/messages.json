@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Часовой пояс" },
   "geoLabel_lat": { "message": "Широта" },
   "geoLabel_lon": { "message": "Долгота" },
+  "geoLabel_timeZone": { "message": "Часовой пояс" },
   "helpSection_usage": { "message": "Используется" },
   "helpSection_configOptions": { "message": "Параметры Конфигурации" },
   "helpSection_infoCmds": { "message": "Информационные команды" },

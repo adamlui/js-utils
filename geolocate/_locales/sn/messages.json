@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Nharaunda yenguva" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Longitude" },
+  "geoLabel_timeZone": { "message": "Nharaunda yenguva" },
   "helpSection_usage": { "message": "Kushandiswa" },
   "helpSection_configOptions": { "message": "Ronga zvingasarudzwa" },
   "helpSection_infoCmds": { "message": "Info mirairo" },

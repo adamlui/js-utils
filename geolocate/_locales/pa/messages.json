@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "ਸਮਾਂ ਖੇਤਰ" },
   "geoLabel_lat": { "message": "ਵਿਥਕਾਰ" },
   "geoLabel_lon": { "message": "à¨²à©°à¨¬à¨à¨¾à¨°( o)" },
+  "geoLabel_timeZone": { "message": "ਸਮਾਂ ਖੇਤਰ" },
   "helpSection_usage": { "message": "ਵਰਤੋਂ" },
   "helpSection_configOptions": { "message": "ਸੰਰਚਨਾ ਚੋਣਾਂ" },
   "helpSection_infoCmds": { "message": "ਜਾਣਕਾਰੀ ਕਮਾਂਡਾਂ" },

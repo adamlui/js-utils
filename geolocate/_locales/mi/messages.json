@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Wā rohe" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Ahopou" },
+  "geoLabel_timeZone": { "message": "Wā rohe" },
   "helpSection_usage": { "message": "Whakamahia" },
   "helpSection_configOptions": { "message": "Kōwhiringa whirihora" },
   "helpSection_infoCmds": { "message": "Whakahau Info" },

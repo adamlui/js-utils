@@ -17,6 +17,7 @@
   "geoLabel_zip": { "message": "Múi giờ" },
   "geoLabel_lat": { "message": "Vĩ độ" },
   "geoLabel_lon": { "message": "Kinh độ" },
+  "geoLabel_timeZone": { "message": "Múi giờ" },
   "helpSection_usage": { "message": "Công dụng" },
   "helpSection_configOptions": { "message": "Tùy chọn cấu hình" },
   "helpSection_infoCmds": { "message": "Lệnh thông tin" },
