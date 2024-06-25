@@ -17,7 +17,7 @@
   "geoLabel_zip": { "message": "Zip" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Longitude" },
-  "geoLabel_zip": { "message": "Time zone" },
+  "geoLabel_timeZone": { "message": "Time zone" },
   "helpSection_usage": { "message": "Usage" },
   "helpSection_configOptions": { "message": "Config options" },
   "helpSection_infoCmds": { "message": "Info commands" },
