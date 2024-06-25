@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Maa" },
   "geoLabel_region": { "message": "Maakunta" },
   "geoLabel_city": { "message": "Kaupunki" },
-  "geoLabel_zip": { "message": "Aikavyöhyke" },
+  "geoLabel_zip": { "message": "Postinumero" },
   "geoLabel_lat": { "message": "Leveysaste" },
   "geoLabel_lon": { "message": "Pituusaste" },
   "geoLabel_timeZone": { "message": "Aikavyöhyke" },

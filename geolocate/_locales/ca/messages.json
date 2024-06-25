@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "País" },
   "geoLabel_region": { "message": "Regió" },
   "geoLabel_city": { "message": "Ciutat" },
-  "geoLabel_zip": { "message": "Zona horària" },
+  "geoLabel_zip": { "message": "Codi postal" },
   "geoLabel_lat": { "message": "Latitud" },
   "geoLabel_lon": { "message": "Longitut" },
   "geoLabel_timeZone": { "message": "Zona horària" },

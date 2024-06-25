@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Valsts" },
   "geoLabel_region": { "message": "Novads" },
   "geoLabel_city": { "message": "Pilsēta" },
-  "geoLabel_zip": { "message": "Laika josla" },
+  "geoLabel_zip": { "message": "Pasta indekss" },
   "geoLabel_lat": { "message": "Ģeogrāfiskais platums" },
   "geoLabel_lon": { "message": "Ģeogrāfiskais garums" },
   "geoLabel_timeZone": { "message": "Laika josla" },

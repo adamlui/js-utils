@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Ţara" },
   "geoLabel_region": { "message": "Regiune" },
   "geoLabel_city": { "message": "Localitate" },
-  "geoLabel_zip": { "message": "Fus orar" },
+  "geoLabel_zip": { "message": "Cod poștal" },
   "geoLabel_lat": { "message": "Latitudine" },
   "geoLabel_lon": { "message": "Longitudine" },
   "geoLabel_timeZone": { "message": "Fus orar" },

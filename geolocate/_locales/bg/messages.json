@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Държава" },
   "geoLabel_region": { "message": "Област" },
   "geoLabel_city": { "message": "Град" },
-  "geoLabel_zip": { "message": "Часова зона" },
+  "geoLabel_zip": { "message": "Пощенски код" },
   "geoLabel_lat": { "message": "Географска ширина" },
   "geoLabel_lon": { "message": "Географска дължина" },
   "geoLabel_timeZone": { "message": "Часова зона" },

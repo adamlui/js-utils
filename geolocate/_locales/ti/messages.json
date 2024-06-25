@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "ሃገር" },
   "geoLabel_region": { "message": "ዞባ" },
   "geoLabel_city": { "message": "ከተማ" },
-  "geoLabel_zip": { "message": "ናይ ግዜ ዞባ" },
+  "geoLabel_zip": { "message": "ናይ ፖስታ ኮድ" },
   "geoLabel_lat": { "message": "ላቲንስ" },
   "geoLabel_lon": { "message": "ርዝመት" },
   "geoLabel_timeZone": { "message": "ናይ ግዜ ዞባ" },

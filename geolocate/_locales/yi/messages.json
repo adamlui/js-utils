@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "לאנד" },
   "geoLabel_region": { "message": "ראיאן" },
   "geoLabel_city": { "message": "שטאט" },
-  "geoLabel_zip": { "message": "צייַט זאָנע" },
+  "geoLabel_zip": { "message": "פּאָסטאַל קאָוד" },
   "geoLabel_lat": { "message": "ברייט" },
   "geoLabel_lon": { "message": "לענג" },
   "geoLabel_timeZone": { "message": "צייַט זאָנע" },

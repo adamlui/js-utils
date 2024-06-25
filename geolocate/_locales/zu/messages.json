@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Izwe" },
   "geoLabel_region": { "message": "Isifunda" },
   "geoLabel_city": { "message": "idolobha" },
-  "geoLabel_zip": { "message": "Isikhathi" },
+  "geoLabel_zip": { "message": "Ikhodi yeposi:" },
   "geoLabel_lat": { "message": "Ilathithudi" },
   "geoLabel_lon": { "message": "Ilongithudi" },
   "geoLabel_timeZone": { "message": "Isikhathi" },

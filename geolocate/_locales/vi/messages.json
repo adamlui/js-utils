@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Quốc gia" },
   "geoLabel_region": { "message": "Vùng" },
   "geoLabel_city": { "message": "Thành phố" },
-  "geoLabel_zip": { "message": "Múi giờ" },
+  "geoLabel_zip": { "message": "Mã bưu chính" },
   "geoLabel_lat": { "message": "Vĩ độ" },
   "geoLabel_lon": { "message": "Kinh độ" },
   "geoLabel_timeZone": { "message": "Múi giờ" },

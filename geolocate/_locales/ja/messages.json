@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "国名" },
   "geoLabel_region": { "message": "リージョン" },
   "geoLabel_city": { "message": "市" },
-  "geoLabel_zip": { "message": "タイムゾーン" },
+  "geoLabel_zip": { "message": "郵便番号" },
   "geoLabel_lat": { "message": "緯度" },
   "geoLabel_lon": { "message": "経度" },
   "geoLabel_timeZone": { "message": "タイムゾーン" },

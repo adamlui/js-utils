@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Кишвар" },
   "geoLabel_region": { "message": "Канорҳои экран" },
   "geoLabel_city": { "message": "Шаҳр" },
-  "geoLabel_zip": { "message": "Вақт то@ label" },
+  "geoLabel_zip": { "message": "ÐÐ¸ÒÐ´Ð¾ÑÐ¸ ÑÐ°Ò³Ð¸ÑÐ°Ò³Ð¾" },
   "geoLabel_lat": { "message": "Вусъат" },
   "geoLabel_lon": { "message": "Дарозӣ" },
   "geoLabel_timeZone": { "message": "Вақт то@ label" },

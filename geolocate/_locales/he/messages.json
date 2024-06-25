@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "‎מחוז" },
   "geoLabel_region": { "message": "מיקום" },
   "geoLabel_city": { "message": "עיר" },
-  "geoLabel_zip": { "message": "אזור זמן" },
+  "geoLabel_zip": { "message": "מיקוד" },
   "geoLabel_lat": { "message": "קו רוחב" },
   "geoLabel_lon": { "message": "קו אורך" },
   "geoLabel_timeZone": { "message": "אזור זמן" },

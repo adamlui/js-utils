@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "ประเทศ" },
   "geoLabel_region": { "message": "ภูมิภาค" },
   "geoLabel_city": { "message": "เมือง" },
-  "geoLabel_zip": { "message": "เขตเวลา" },
+  "geoLabel_zip": { "message": "รหัสไปรษณีย์" },
   "geoLabel_lat": { "message": "ละติจูด" },
   "geoLabel_lon": { "message": "ลองจิจูด" },
   "geoLabel_timeZone": { "message": "เขตเวลา" },

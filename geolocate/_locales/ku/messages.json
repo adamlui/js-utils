@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Welat" },
   "geoLabel_region": { "message": "Herêm" },
   "geoLabel_city": { "message": "Bajar" },
-  "geoLabel_zip": { "message": "Pop up an alert %d days before start of appointment" },
+  "geoLabel_zip": { "message": "Koda Postayê" },
   "geoLabel_lat": { "message": "Hêlîpan" },
   "geoLabel_lon": { "message": "Hêlîlar" },
   "geoLabel_timeZone": { "message": "Pop up an alert %d days before start of appointment" },

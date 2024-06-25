@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Pays" },
   "geoLabel_region": { "message": "Département" },
   "geoLabel_city": { "message": "Ville" },
-  "geoLabel_zip": { "message": "Fuseau horaire" },
+  "geoLabel_zip": { "message": "Code Postal" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Longitude" },
   "geoLabel_timeZone": { "message": "Fuseau horaire" },

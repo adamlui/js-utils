@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Firenena" },
   "geoLabel_region": { "message": "Faritra" },
   "geoLabel_city": { "message": "Tanàna" },
-  "geoLabel_zip": { "message": "Faritrora" },
+  "geoLabel_zip": { "message": "Mari-pamantarana amin'ny paositra" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Longitude" },
   "geoLabel_timeZone": { "message": "Faritrora" },

@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Država" },
   "geoLabel_region": { "message": "Regija" },
   "geoLabel_city": { "message": "Grad" },
-  "geoLabel_zip": { "message": "Vremenska zona" },
+  "geoLabel_zip": { "message": "Poštanski broj" },
   "geoLabel_lat": { "message": "Latituda (širina)" },
   "geoLabel_lon": { "message": "Longituda (dužina)" },
   "geoLabel_timeZone": { "message": "Vremenska zona" },

@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "ሀገር" },
   "geoLabel_region": { "message": "ክልል" },
   "geoLabel_city": { "message": "ከተማ" },
-  "geoLabel_zip": { "message": "የሰዓት ክልል" },
+  "geoLabel_zip": { "message": "የፖስታ ኮድ / Postal Code፣ " },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "ኬንትሮስ" },
   "geoLabel_timeZone": { "message": "የሰዓት ክልል" },

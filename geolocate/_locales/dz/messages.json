@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "རྒྱལ་ཁབ་" },
   "geoLabel_region": { "message": "ལུང་ཕྱོགས་" },
   "geoLabel_city": { "message": "ཁྲོམ་" },
-  "geoLabel_zip": { "message": "དུས་ཚོད།" },
+  "geoLabel_zip": { "message": "ཡིག་ཚང་ཀོཌི།" },
   "geoLabel_lat": { "message": "བྱང་ཚད།" },
   "geoLabel_lon": { "message": "ཚད་ཚུ།" },
   "geoLabel_timeZone": { "message": "དུས་ཚོད།" },

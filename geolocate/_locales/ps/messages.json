@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "هېواد" },
   "geoLabel_region": { "message": "سيمه" },
   "geoLabel_city": { "message": "City" },
-  "geoLabel_zip": { "message": "مهال سيمه" },
+  "geoLabel_zip": { "message": "پوست رمز" },
   "geoLabel_lat": { "message": "عرض البلد" },
   "geoLabel_lon": { "message": "طول البلد" },
   "geoLabel_timeZone": { "message": "مهال سيمه" },

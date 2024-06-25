@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "국가" },
   "geoLabel_region": { "message": "지역" },
   "geoLabel_city": { "message": "도시" },
-  "geoLabel_zip": { "message": "시간대" },
+  "geoLabel_zip": { "message": "우편 번호" },
   "geoLabel_lat": { "message": "위도" },
   "geoLabel_lon": { "message": "경도(입력무관)" },
   "geoLabel_timeZone": { "message": "시간대" },

@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Païs" },
   "geoLabel_region": { "message": "Region" },
   "geoLabel_city": { "message": "Siudat" },
-  "geoLabel_zip": { "message": "Zona di tempu" },
+  "geoLabel_zip": { "message": "Kódigo Postal" },
   "geoLabel_lat": { "message": "Latitud" },
   "geoLabel_lon": { "message": "Largura" },
   "geoLabel_timeZone": { "message": "Zona di tempu" },

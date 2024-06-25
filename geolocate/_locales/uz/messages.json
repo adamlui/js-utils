@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Davlat" },
   "geoLabel_region": { "message": "Maydon" },
   "geoLabel_city": { "message": "Tuman (shahar)" },
-  "geoLabel_zip": { "message": "Vaqt mintaqasi" },
+  "geoLabel_zip": { "message": "Pochta Indeksi" },
   "geoLabel_lat": { "message": "Kenglik" },
   "geoLabel_lon": { "message": "Uzoqlik" },
   "geoLabel_timeZone": { "message": "Vaqt mintaqasi" },

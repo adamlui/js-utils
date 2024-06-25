@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Lando" },
   "geoLabel_region": { "message": "Regiono" },
   "geoLabel_city": { "message": "Urbo" },
-  "geoLabel_zip": { "message": "@ label" },
+  "geoLabel_zip": { "message": "Poŝtkodo" },
   "geoLabel_lat": { "message": "@ title: column Horoscope property" },
   "geoLabel_lon": { "message": "@ title: column Horoscope property" },
   "geoLabel_timeZone": { "message": "@ label" },

@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Land" },
   "geoLabel_region": { "message": "Region" },
   "geoLabel_city": { "message": "By" },
-  "geoLabel_zip": { "message": "Tidszone" },
+  "geoLabel_zip": { "message": "Postnummer" },
   "geoLabel_lat": { "message": "Breddegrad" },
   "geoLabel_lon": { "message": "Længdegrad" },
   "geoLabel_timeZone": { "message": "Tidszone" },

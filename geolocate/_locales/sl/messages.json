@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Država" },
   "geoLabel_region": { "message": "Regija" },
   "geoLabel_city": { "message": "Kraj" },
-  "geoLabel_zip": { "message": "Časovni pas" },
+  "geoLabel_zip": { "message": "Poštna številka" },
   "geoLabel_lat": { "message": "Zemljepisna širina" },
   "geoLabel_lon": { "message": "Zemljepisna dolžina" },
   "geoLabel_timeZone": { "message": "Časovni pas" },

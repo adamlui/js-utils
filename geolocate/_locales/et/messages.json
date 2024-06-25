@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Riik" },
   "geoLabel_region": { "message": "Maakond" },
   "geoLabel_city": { "message": "Linn" },
-  "geoLabel_zip": { "message": "Ajavöönd" },
+  "geoLabel_zip": { "message": "Postiindeks" },
   "geoLabel_lat": { "message": "Laiuskraad" },
   "geoLabel_lon": { "message": "Pikkuskraad" },
   "geoLabel_timeZone": { "message": "Ajavöönd" },

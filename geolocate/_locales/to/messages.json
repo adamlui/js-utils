@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Fonua" },
   "geoLabel_region": { "message": "Vahefonua" },
   "geoLabel_city": { "message": "Kolo" },
-  "geoLabel_zip": { "message": "Time Zone" },
+  "geoLabel_zip": { "message": "Kouti Fakapōsiti ʻŌfi" },
   "geoLabel_lat": { "message": "Tauʻataina" },
   "geoLabel_lon": { "message": "Longitude" },
   "geoLabel_timeZone": { "message": "Time Zone" },

@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Land" },
   "geoLabel_region": { "message": "Øki" },
   "geoLabel_city": { "message": "Býur" },
-  "geoLabel_zip": { "message": "Tíðarsvæði" },
+  "geoLabel_zip": { "message": "Post nr." },
   "geoLabel_lat": { "message": "Breiddømi" },
   "geoLabel_lon": { "message": "Longdarstig" },
   "geoLabel_timeZone": { "message": "Tíðarsvæði" },

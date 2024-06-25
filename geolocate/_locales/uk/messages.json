@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Країна" },
   "geoLabel_region": { "message": "Ділянка" },
   "geoLabel_city": { "message": "Місто" },
-  "geoLabel_zip": { "message": "Часовий пояс" },
+  "geoLabel_zip": { "message": "Поштовий індекс" },
   "geoLabel_lat": { "message": "Широта" },
   "geoLabel_lon": { "message": "Довгота" },
   "geoLabel_timeZone": { "message": "Часовий пояс" },

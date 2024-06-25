@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "ದೇಶ" },
   "geoLabel_region": { "message": "ಪ್ರದೇಶ" },
   "geoLabel_city": { "message": "ನಗರ" },
-  "geoLabel_zip": { "message": "ಸಮಯ ವಲಯ" },
+  "geoLabel_zip": { "message": "ಪೋಸ್ಟಲ್ ಕೋಡ್" },
   "geoLabel_lat": { "message": "ಅಕ್ಷಾಂಶ" },
   "geoLabel_lon": { "message": "ರೇಖಾಂಶ" },
   "geoLabel_timeZone": { "message": "ಸಮಯ ವಲಯ" },

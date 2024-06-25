@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Улс" },
   "geoLabel_region": { "message": "Бүс нутаг" },
   "geoLabel_city": { "message": "Хот, аймаг" },
-  "geoLabel_zip": { "message": "Цагийн бүс" },
+  "geoLabel_zip": { "message": "Шуудангийн код" },
   "geoLabel_lat": { "message": "Өргөрөг" },
   "geoLabel_lon": { "message": "Уртраг" },
   "geoLabel_timeZone": { "message": "Цагийн бүс" },

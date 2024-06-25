@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Graun" },
   "geoLabel_region": { "message": "Ol hap" },
   "geoLabel_city": { "message": "Taun" },
-  "geoLabel_zip": { "message": "Tapun hap" },
+  "geoLabel_zip": { "message": "Kod bilong pos" },
   "geoLabel_lat": { "message": "Long sait bilong latitud" },
   "geoLabel_lon": { "message": "Kain lain igo antap long wol ol man i bin makim bilong save istap we tru" },
   "geoLabel_timeZone": { "message": "Tapun hap" },

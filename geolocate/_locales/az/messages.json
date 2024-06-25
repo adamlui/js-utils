@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Ölkə adı" },
   "geoLabel_region": { "message": "Səhər və Rayon (Region)" },
   "geoLabel_city": { "message": "Şəhər" },
-  "geoLabel_zip": { "message": "Saat qurşağı" },
+  "geoLabel_zip": { "message": "Poçt kodu" },
   "geoLabel_lat": { "message": "En dairəsi" },
   "geoLabel_lon": { "message": "Uzunluq" },
   "geoLabel_timeZone": { "message": "Saat qurşağı" },

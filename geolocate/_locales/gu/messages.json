@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "દેશ" },
   "geoLabel_region": { "message": "પ્રદેશ" },
   "geoLabel_city": { "message": "શહેર" },
-  "geoLabel_zip": { "message": "ટાઈમ ઝોન" },
+  "geoLabel_zip": { "message": "પોસ્ટલ કોડ" },
   "geoLabel_lat": { "message": "અક્ષાંશ" },
   "geoLabel_lon": { "message": "પૂWest, the direction" },
   "geoLabel_timeZone": { "message": "ટાઈમ ઝોન" },

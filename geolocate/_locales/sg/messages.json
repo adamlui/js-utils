@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Yângâ tî kodoro" },
   "geoLabel_region": { "message": "Yângâ tî kodoro" },
   "geoLabel_city": { "message": "Gbata ti gbata ni" },
-  "geoLabel_zip": { "message": "Ngbonga zone" },
+  "geoLabel_zip": { "message": "Code ti poste" },
   "geoLabel_lat": { "message": "Latitude ti" },
   "geoLabel_lon": { "message": "Ngbene ye na ngoi ni so" },
   "geoLabel_timeZone": { "message": "Ngbonga zone" },

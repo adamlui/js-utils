@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "රට" },
   "geoLabel_region": { "message": "කලාපය" },
   "geoLabel_city": { "message": "නගරය" },
-  "geoLabel_zip": { "message": "වේලා කළාපය" },
+  "geoLabel_zip": { "message": "තැපැල් සංෙක්තය:" },
   "geoLabel_lat": { "message": "අක්ෂාංශ" },
   "geoLabel_lon": { "message": "දේශාංශ" },
   "geoLabel_timeZone": { "message": "වේලා කළාපය:" },

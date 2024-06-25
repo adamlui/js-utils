@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Country" },
   "geoLabel_region": { "message": "Región" },
   "geoLabel_city": { "message": "Mesto" },
-  "geoLabel_zip": { "message": "Časové pásmo" },
+  "geoLabel_zip": { "message": "PACKETA - vratkový kód" },
   "geoLabel_lat": { "message": "Zemepisná šírka" },
   "geoLabel_lon": { "message": "Zemepisná dĺžka" },
   "geoLabel_timeZone": { "message": "Časové pásmo" },

@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Жолчонун саны" },
   "geoLabel_region": { "message": "Аймак ______________" },
   "geoLabel_city": { "message": "Шаар" },
-  "geoLabel_zip": { "message": "Убакыт зонасы" },
+  "geoLabel_zip": { "message": "Почта индекси" },
   "geoLabel_lat": { "message": "обширность" },
   "geoLabel_lon": { "message": "долгота" },
   "geoLabel_timeZone": { "message": "Убакыт зонасы" },

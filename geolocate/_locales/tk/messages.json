@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Ýurdy" },
   "geoLabel_region": { "message": "Bölge" },
   "geoLabel_city": { "message": "Şäheri" },
-  "geoLabel_zip": { "message": "Wagtyň bölümi" },
+  "geoLabel_zip": { "message": "Poşta kody" },
   "geoLabel_lat": { "message": "Ulylyk" },
   "geoLabel_lon": { "message": "Uzaklyk" },
   "geoLabel_timeZone": { "message": "Wagtyň bölümi" },

@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Natio" },
   "geoLabel_region": { "message": "Regio" },
   "geoLabel_city": { "message": "Urbs" },
-  "geoLabel_zip": { "message": "Time zone" },
+  "geoLabel_zip": { "message": "Numerus cursualis" },
   "geoLabel_lat": { "message": "Latitudo geographica" },
   "geoLabel_lon": { "message": "Longitudo" },
   "geoLabel_timeZone": { "message": "Time zone" },

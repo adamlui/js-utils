@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "I-Country" },
   "geoLabel_region": { "message": "Ummandla" },
   "geoLabel_city": { "message": "Isixeko" },
-  "geoLabel_zip": { "message": "Izowuni yexesha" },
+  "geoLabel_zip": { "message": "iKhowudi yePosi" },
   "geoLabel_lat": { "message": "Umgca owahlulayo" },
   "geoLabel_lon": { "message": "Ubude bomhlaba" },
   "geoLabel_timeZone": { "message": "Izowuni yexesha" },

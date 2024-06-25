@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "राही" },
   "geoLabel_region": { "message": "क्षेत्र" },
   "geoLabel_city": { "message": "सहर" },
-  "geoLabel_zip": { "message": "समय क्षेत्र" },
+  "geoLabel_zip": { "message": "हुलाकी संकेत" },
   "geoLabel_lat": { "message": "अक्षांश" },
   "geoLabel_lon": { "message": "देशान्तर" },
   "geoLabel_timeZone": { "message": "समय क्षेत्र" },

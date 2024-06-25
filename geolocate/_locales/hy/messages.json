@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Երկիր" },
   "geoLabel_region": { "message": "Մարզ" },
   "geoLabel_city": { "message": "Քաղաք" },
-  "geoLabel_zip": { "message": "Ժամային գոտի" },
+  "geoLabel_zip": { "message": "Փոստային ինդեքս" },
   "geoLabel_lat": { "message": "Երկարություն" },
   "geoLabel_lon": { "message": "Լայնություն" },
   "geoLabel_timeZone": { "message": "Ժամային գոտի" },

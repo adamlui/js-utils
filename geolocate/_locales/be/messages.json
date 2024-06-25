@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Краіна" },
   "geoLabel_region": { "message": "Ваяводства (Рэгіён)" },
   "geoLabel_city": { "message": "Горад" },
-  "geoLabel_zip": { "message": "Час да@ label" },
+  "geoLabel_zip": { "message": "Паштовы індэкс" },
   "geoLabel_lat": { "message": "Шырата" },
   "geoLabel_lon": { "message": "Даўгата" },
   "geoLabel_timeZone": { "message": "Час да@ label" },

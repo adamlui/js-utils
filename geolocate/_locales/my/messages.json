@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "နိုင်ငံ" },
   "geoLabel_region": { "message": "တိုင်းဒေသကြီး" },
   "geoLabel_city": { "message": "မြို့" },
-  "geoLabel_zip": { "message": "အချိန်ဇုန်" },
+  "geoLabel_zip": { "message": "စာပို့သေကၤတ" },
   "geoLabel_lat": { "message": "လတၱီတြတ္" },
   "geoLabel_lon": { "message": "ေလာင္ဂ်ီက်ု" },
   "geoLabel_timeZone": { "message": "အချိန်ဇုန်" },

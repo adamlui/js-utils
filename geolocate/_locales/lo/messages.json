@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "ປະເທດ" },
   "geoLabel_region": { "message": "ພູມມີພາກ" },
   "geoLabel_city": { "message": "ເມືອງ" },
-  "geoLabel_zip": { "message": "ເຂດເວລາ" },
+  "geoLabel_zip": { "message": "ລະຫັດໄປສະນີ" },
   "geoLabel_lat": { "message": "ເສັ້ນແວງ" },
   "geoLabel_lon": { "message": "ຄວາມຍາວ" },
   "geoLabel_timeZone": { "message": "ເຂດເວລາ" },

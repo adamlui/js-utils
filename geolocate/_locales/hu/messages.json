@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Country" },
   "geoLabel_region": { "message": "Megye" },
   "geoLabel_city": { "message": "City" },
-  "geoLabel_zip": { "message": "Időzóna" },
+  "geoLabel_zip": { "message": "Irányítószám" },
   "geoLabel_lat": { "message": "Földrajzi szélesség" },
   "geoLabel_lon": { "message": "Földrajzi hosszúság" },
   "geoLabel_timeZone": { "message": "Időzóna" },

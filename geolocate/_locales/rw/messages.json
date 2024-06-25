@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Igihugu" },
   "geoLabel_region": { "message": "Akarere" },
   "geoLabel_city": { "message": "Umujyi" },
-  "geoLabel_zip": { "message": "Kode y'iposita" },
+  "geoLabel_zip": { "message": "Kode y'Iposita" },
   "geoLabel_lat": { "message": "Ubunini" },
   "geoLabel_lon": { "message": "Uburebure" },
   "geoLabel_timeZone": { "message": "Igihe kya karere" },

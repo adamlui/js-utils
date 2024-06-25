@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Wadan" },
   "geoLabel_region": { "message": "Gobolka" },
   "geoLabel_city": { "message": "Magaalada" },
-  "geoLabel_zip": { "message": "Aagga Waqtiga" },
+  "geoLabel_zip": { "message": "Lambarka Boosta" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Dhigaha" },
   "geoLabel_timeZone": { "message": "Aagga Waqtiga" },

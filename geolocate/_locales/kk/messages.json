@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Ел" },
   "geoLabel_region": { "message": "KPilot- ÑÑÒ£ Ð°Ð´Ñ. ÐºÑÑÐ°Ð¿ÑÐ°ÑÑÐ½ ÒÐ°ÑÐ°Ñ Ð°ÑÐ½Ð°ÑÑÐ½ÑÒ£ Ð¿Ð°ÑÐ°Ð¼ÐµÑÑÐ»ÐµÑÑ" },
   "geoLabel_city": { "message": "Қала" },
-  "geoLabel_zip": { "message": "Қалған уақыт@ label" },
+  "geoLabel_zip": { "message": "Пошта индексі:" },
   "geoLabel_lat": { "message": "Географиялық ендігі" },
   "geoLabel_lon": { "message": "Географиялық бойлығы" },
   "geoLabel_timeZone": { "message": "Қалған уақыт@ label" },

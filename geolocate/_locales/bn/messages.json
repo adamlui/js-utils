@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "দেশ" },
   "geoLabel_region": { "message": "বিভাগ" },
   "geoLabel_city": { "message": "শহর" },
-  "geoLabel_zip": { "message": "সময় অঞ্চল" },
+  "geoLabel_zip": { "message": "পোস্টাল কোড" },
   "geoLabel_lat": { "message": "অক্ষাংশ" },
   "geoLabel_lon": { "message": "দ্রাঘিমাংশ" },
   "geoLabel_timeZone": { "message": "সময় অঞ্চল" },

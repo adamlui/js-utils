@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "ប្រទេស" },
   "geoLabel_region": { "message": "តំបន់" },
   "geoLabel_city": { "message": "ទីក្រុង" },
-  "geoLabel_zip": { "message": "លេខកូដតំបន់" },
+  "geoLabel_zip": { "message": "លេខ​កូដ​ ប្រៃ​ស​ណី​យ" },
   "geoLabel_lat": { "message": "រយៈទទឹង" },
   "geoLabel_lon": { "message": "រយៈបណ្ដោយ" },
   "geoLabel_timeZone": { "message": "តំបន់​ពេលវេលា@ label" },

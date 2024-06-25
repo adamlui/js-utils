@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "کشور" },
   "geoLabel_region": { "message": "منطقه" },
   "geoLabel_city": { "message": "شهر" },
-  "geoLabel_zip": { "message": "زمان منطقه" },
+  "geoLabel_zip": { "message": "کدپستی" },
   "geoLabel_lat": { "message": "عرض البلد" },
   "geoLabel_lon": { "message": "طول البلد" },
   "geoLabel_timeZone": { "message": "زمان منطقه" },

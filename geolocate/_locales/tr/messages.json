@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Ülke" },
   "geoLabel_region": { "message": "Bölge" },
   "geoLabel_city": { "message": "Şehir" },
-  "geoLabel_zip": { "message": "Saat dilimi" },
+  "geoLabel_zip": { "message": "Posta Kodu" },
   "geoLabel_lat": { "message": "Enlem" },
   "geoLabel_lon": { "message": "Boylam" },
   "geoLabel_timeZone": { "message": "Saat dilimi" },

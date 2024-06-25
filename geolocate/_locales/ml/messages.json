@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "കണ്‍ട്രി" },
   "geoLabel_region": { "message": "പ്രദേശം" },
   "geoLabel_city": { "message": "നഗരം" },
-  "geoLabel_zip": { "message": "സമയമേഖല" },
+  "geoLabel_zip": { "message": "തപാല്‍ കോഡ്:" },
   "geoLabel_lat": { "message": "& ലാറ്റിട്യൂഡ്" },
   "geoLabel_lon": { "message": "& à´²àµà´àµà´±àµà´±à´¿à´àµà´¯àµà´¡àµ" },
   "geoLabel_timeZone": { "message": "സമയമേഖല:" },

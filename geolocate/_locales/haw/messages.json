@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Kaumokuʻāina" },
   "geoLabel_region": { "message": "Māhele" },
   "geoLabel_city": { "message": "Kūlanakauhale" },
-  "geoLabel_zip": { "message": "Wahi manawa" },
+  "geoLabel_zip": { "message": "Helu leka" },
   "geoLabel_lat": { "message": "Latitu" },
   "geoLabel_lon": { "message": "Longitude" },
   "geoLabel_timeZone": { "message": "Wahi manawa" },

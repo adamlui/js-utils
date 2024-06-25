@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Negara" },
   "geoLabel_region": { "message": "Wilayah" },
   "geoLabel_city": { "message": "Kota" },
-  "geoLabel_zip": { "message": "Zona Waktu" },
+  "geoLabel_zip": { "message": "Kodepos" },
   "geoLabel_lat": { "message": "Lintang" },
   "geoLabel_lon": { "message": "Bujur" },
   "geoLabel_timeZone": { "message": "Zona Waktu" },

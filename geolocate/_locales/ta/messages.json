@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "நாடு" },
   "geoLabel_region": { "message": "à®à¯à®¯à¯à®µà®¤à®±à¯à®à¯à®±à®¿à®¯ à®à®²à®à¯à®à¯பகுதி" },
   "geoLabel_city": { "message": "நகரம்" },
-  "geoLabel_zip": { "message": "நேர வலயம்" },
+  "geoLabel_zip": { "message": "à®ªà®¿à®°à®¿à®µà®¿à®©à¯ à®¤à®²à¯à®ªà¯à®ªà¯" },
   "geoLabel_lat": { "message": "நிலநேர்க்கோடு" },
   "geoLabel_lon": { "message": "நிலநிரைக்கோடு" },
   "geoLabel_timeZone": { "message": "நேர வலயம்" },

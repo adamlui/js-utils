@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Peyi" },
   "geoLabel_region": { "message": "Rejyon" },
   "geoLabel_city": { "message": "Vil" },
-  "geoLabel_zip": { "message": "zòn tan/zòn lè /zone de temps/fuseau horaire/décalage horaire" },
+  "geoLabel_zip": { "message": "Kòd postal" },
   "geoLabel_lat": { "message": "Latitid" },
   "geoLabel_lon": { "message": "Lonjitid" },
   "geoLabel_timeZone": { "message": "zòn tan/zòn lè /zone de temps/fuseau horaire/décalage horaire" },

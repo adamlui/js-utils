@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Negara" },
   "geoLabel_region": { "message": "Wilayah" },
   "geoLabel_city": { "message": "Pendidik" },
-  "geoLabel_zip": { "message": "Zon waktu" },
+  "geoLabel_zip": { "message": "Poskod" },
   "geoLabel_lat": { "message": "Latitud" },
   "geoLabel_lon": { "message": "Longitud" },
   "geoLabel_timeZone": { "message": "Zon waktu" },

@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Dziko" },
   "geoLabel_region": { "message": "Chigawo" },
   "geoLabel_city": { "message": "Mzinda" },
-  "geoLabel_zip": { "message": "Nthawi zone" },
+  "geoLabel_zip": { "message": "Postal Code" },
   "geoLabel_lat": { "message": "Lumikizanani nafe" },
   "geoLabel_lon": { "message": "Longitude" },
   "geoLabel_timeZone": { "message": "Nthawi zone" },

@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Nchi" },
   "geoLabel_region": { "message": "Mkoa" },
   "geoLabel_city": { "message": "Jiji" },
-  "geoLabel_zip": { "message": "Ukanda wa Saa" },
+  "geoLabel_zip": { "message": "Msimbo wa Posta" },
   "geoLabel_lat": { "message": "Latitudo" },
   "geoLabel_lon": { "message": "Longitudo" },
   "geoLabel_timeZone": { "message": "Ukanda wa Saa" },

@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Страна" },
   "geoLabel_region": { "message": "Регион" },
   "geoLabel_city": { "message": "Город" },
-  "geoLabel_zip": { "message": "Часовой пояс" },
+  "geoLabel_zip": { "message": "Почтовый индекс" },
   "geoLabel_lat": { "message": "Широта" },
   "geoLabel_lon": { "message": "Долгота" },
   "geoLabel_timeZone": { "message": "Часовой пояс" },

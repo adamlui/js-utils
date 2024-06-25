@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Land" },
   "geoLabel_region": { "message": "Regioun" },
   "geoLabel_city": { "message": "Uertschaft" },
-  "geoLabel_zip": { "message": "Zäitzon" },
+  "geoLabel_zip": { "message": "Postcode" },
   "geoLabel_lat": { "message": "CAA -" },
   "geoLabel_lon": { "message": "Längt" },
   "geoLabel_timeZone": { "message": "Zäitzon" },

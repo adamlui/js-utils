@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "ਦੇਸ਼" },
   "geoLabel_region": { "message": "ਖੇਤਰ" },
   "geoLabel_city": { "message": "ਸ਼ਹਿਰ" },
-  "geoLabel_zip": { "message": "ਸਮਾਂ ਖੇਤਰ" },
+  "geoLabel_zip": { "message": "ਡਾਕ ਕੋਡ" },
   "geoLabel_lat": { "message": "ਵਿਥਕਾਰ" },
   "geoLabel_lon": { "message": "à¨²à©°à¨¬à¨à¨¾à¨°( o)" },
   "geoLabel_timeZone": { "message": "ਸਮਾਂ ਖੇਤਰ" },

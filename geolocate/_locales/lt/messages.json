@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Šalis" },
   "geoLabel_region": { "message": "Regionas" },
   "geoLabel_city": { "message": "Miestas" },
-  "geoLabel_zip": { "message": "Laiko juosta" },
+  "geoLabel_zip": { "message": "Pašto kodas" },
   "geoLabel_lat": { "message": "Platuma" },
   "geoLabel_lon": { "message": "Ilguma" },
   "geoLabel_timeZone": { "message": "Laiko juosta" },

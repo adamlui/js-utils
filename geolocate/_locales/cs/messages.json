@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Stát" },
   "geoLabel_region": { "message": "Region" },
   "geoLabel_city": { "message": "Město" },
-  "geoLabel_zip": { "message": "Časové pásmo" },
+  "geoLabel_zip": { "message": "PSČ" },
   "geoLabel_lat": { "message": "Zeměpisná šířka" },
   "geoLabel_lon": { "message": "Zeměpisná délka" },
   "geoLabel_timeZone": { "message": "Časové pásmo" },

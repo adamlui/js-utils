@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "ქვეყანა" },
   "geoLabel_region": { "message": "რეგიონი" },
   "geoLabel_city": { "message": "ქალაქი" },
-  "geoLabel_zip": { "message": "დროის სარტყელი" },
+  "geoLabel_zip": { "message": "საფოსტო კოდი" },
   "geoLabel_lat": { "message": "განედი" },
   "geoLabel_lon": { "message": "გრძედი" },
   "geoLabel_timeZone": { "message": "დროის სარტყელი" },

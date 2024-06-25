@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "" },
   "geoLabel_region": { "message": "Rohe" },
   "geoLabel_city": { "message": "Tāone" },
-  "geoLabel_zip": { "message": "Wā rohe" },
+  "geoLabel_zip": { "message": "Waehere pou" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Ahopou" },
   "geoLabel_timeZone": { "message": "Wā rohe" },

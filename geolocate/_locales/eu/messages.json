@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Herrialdea" },
   "geoLabel_region": { "message": "Eskualde" },
   "geoLabel_city": { "message": "Herria" },
-  "geoLabel_zip": { "message": "Ordu-eremu" },
+  "geoLabel_zip": { "message": "Posta-kodea" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Longitudea" },
   "geoLabel_timeZone": { "message": "Ordu-eremu" },

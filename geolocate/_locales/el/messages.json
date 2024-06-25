@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Χώρα" },
   "geoLabel_region": { "message": "Περιφέρεια" },
   "geoLabel_city": { "message": "Πόλη" },
-  "geoLabel_zip": { "message": "Ζώνη ώρας" },
+  "geoLabel_zip": { "message": "Ταχ. κώδικας" },
   "geoLabel_lat": { "message": "Γεωγραφικό πλάτος" },
   "geoLabel_lon": { "message": "Γεωγραφικό μήκος" },
   "geoLabel_timeZone": { "message": "Ζώνη ώρας" },

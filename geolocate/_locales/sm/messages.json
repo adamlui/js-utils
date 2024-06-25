@@ -14,7 +14,7 @@
   "geoLabel_country": { "message": "Atunuʻu" },
   "geoLabel_region": { "message": "Itumalo" },
   "geoLabel_city": { "message": "A'ai" },
-  "geoLabel_zip": { "message": "Taimi sone" },
+  "geoLabel_zip": { "message": "Tulafono o le meli" },
   "geoLabel_lat": { "message": "Latitude" },
   "geoLabel_lon": { "message": "Longitude" },
   "geoLabel_timeZone": { "message": "Taimi sone" },
