@@ -53,7 +53,7 @@
   },
   "dependencies": {
     "node-clipboardy": "^1.0.3",
-    "uglify-js": "^3.18.0"
+    "uglify-js": "^3.19.0"
   },
   "funding": {
     "type": "github",
