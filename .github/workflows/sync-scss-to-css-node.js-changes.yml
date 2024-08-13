@@ -61,22 +61,20 @@ jobs:
             ${{ github.workspace }}/adamlui/js-utils/scss-to-css/node.js/ \
             ${{ github.workspace }}/adamlui/scss-to-css/node.js/
 
-      - name: Push to adamlui/js-utils
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          push_options: --force
-          add_options: --all
-          commit_user_email: auto-sync@kudoai.com
-          commit_message: "${{ github.event.head_commit.message }} ↞ [auto-sync from `${{ steps.sync_readmes.outputs.sync_src }}`]"
-          file_pattern: "scss-to-css/node.js/**"
-          repository: adamlui/js-utils
+      - name: Push changes to adamlui/js-utils
+        run: |
+          cd ${{ github.workspace }}/adamlui/js-utils
+          git config --global user.name "kudo-sync-bot"
+          git config --global user.email "auto-sync@kudoai.com"
+          git add .
+          git commit -n -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `${{ steps.sync_readmes.outputs.sync_src }}`]" || true
+          git push
 
-      - name: Push to adamlui/scss-to-css
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          push_options: --force
-          add_options: --all
-          commit_user_email: auto-sync@kudoai.com
-          commit_message: "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/js-utils`]"
-          file_pattern: "node.js/**"
-          repository: adamlui/scss-to-css
+      - name: Push changes to adamlui/scss-to-css
+        run: |
+          cd ${{ github.workspace }}/adamlui/scss-to-css
+          git config --global user.name "kudo-sync-bot"
+          git config --global user.email "auto-sync@kudoai.com"
+          git add .
+          git commit -n -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/js-utils`]" || true
+          git push

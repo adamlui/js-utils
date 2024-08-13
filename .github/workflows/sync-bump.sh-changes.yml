@@ -43,12 +43,11 @@ jobs:
           sync_src=$(echo "$newest_file" | cut -d'/' -f2-3)
           echo "sync_src=$sync_src" >> $GITHUB_OUTPUT
 
-      - name: Push to adamlui/js-utils
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          push_options: --force
-          add_options: --all
-          commit_user_email: auto-sync@kudoai.com
-          commit_message: "${{ github.event.head_commit.message }} ↞ [auto-sync from `${{ steps.sync_changes.outputs.sync_src }}`]"
-          file_pattern: "**"
-          repository: adamlui/js-utils
+      - name: Push changes to adamlui/js-utils
+        run: |
+          cd ${{ github.workspace }}/adamlui/js-utils
+          git config --global user.name "kudo-sync-bot"
+          git config --global user.email "auto-sync@kudoai.com"
+          git add .
+          git commit -n -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `${{ steps.sync_changes.outputs.sync_src }}`]" || true
+          git push
