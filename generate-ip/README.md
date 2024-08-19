@@ -1,6 +1,10 @@
-# <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png?b4eb06e"><img height=32 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png?b4eb06e"></picture> generate-ip
+<div align="center">
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/logos/generate-ip/white-logo.png?7768152"><img width=700 src="https://media.generate-ip.org/images/logos/generate-ip/black-logo.png?7768152"></picture>
 
 ### Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.
+
+<br>
 
 <a href="#%EF%B8%8F-mit-license"><img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/generate-ip-2.4.3"><img height=31 src="https://img.shields.io/badge/Latest_Build-2.4.3-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
@@ -10,7 +14,7 @@
 <a href="https://github.com/toolleeo/cli-apps#networking"><img height=31 src="https://img.shields.io/badge/Mentioned_in-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.jsdelivr.com/package/npm/generate-ip?tab=stats"><img height=31 src="https://img.shields.io/jsdelivr/npm/hm/generate-ip?style=for-the-badge&logo=jsdelivr&logoColor=white&label=jsDelivr%20Hits&labelColor=464646&color=49c5d8"></a>
 
-<br>
+</div>
 
 <img height=6px width="100%" src="https://media.js-utils.com/images/separators/gradient-aqua.png?c0192d3">
 
