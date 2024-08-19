@@ -2,7 +2,7 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/logos/generate-ip/white-logo.png?7768152"><img width=700 src="https://media.generate-ip.org/images/logos/generate-ip/black-logo.png?7768152"></picture>
 
-### Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png?b4eb06e"><img width=23 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png?b4eb06e"></picture> &nbsp;Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.
 
 <br>
 
