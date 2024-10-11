@@ -9,9 +9,6 @@ jobs:
   build:
     if: (github.repository == 'adamlui/js-utils') && (github.event.commits[0].committer.username != 'kudo-sync-bot')
     runs-on: ubuntu-latest
-    env:
-      GIT_COMMITTER_NAME: kudo-sync-bot
-      GIT_COMMITTER_EMAIL: auto-sync@kudoai.com
 
     steps:
 
@@ -71,9 +68,16 @@ jobs:
           echo "$COMMIT_MSG" | sed 's/`/\`/g' >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
 
+      - name: Config committer
+        run: |
+          gpg --batch --import <(echo "${{ secrets.GPG_PRIVATE_KEY }}")
+          git config --global user.name "kudo-sync-bot"
+          git config --global user.email "auto-sync@kudoai.com"
+          git config --global user.signingkey  "${{ secrets.GPG_PRIVATE_ID }}"
+
       - name: Push changes to adamlui/js-utils
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from \`${{ steps.sync_readmes.outputs.sync_src }}\`]" || true
+          git commit -S -n -m "$ESCAPED_MSG ↞ [auto-sync from \`${{ steps.sync_readmes.outputs.sync_src }}\`]" || true
           git push

@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+
       - name: Checkout adamlui/js-utils
         uses: actions/checkout@v4
         with:
@@ -173,11 +174,16 @@ jobs:
           commit_msg+=" in root README"
           echo "commit_msg=$commit_msg" >> $GITHUB_OUTPUT # expose as output
 
+      - name: Config committer
+        run: |
+          gpg --batch --import <(echo "${{ secrets.GPG_PRIVATE_KEY }}")
+          git config --global user.name "kudo-sync-bot"
+          git config --global user.email "auto-sync@kudoai.com"
+          git config --global user.signingkey  "${{ secrets.GPG_PRIVATE_ID }}"
+
       - name: Push to adamlui/js-utils
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
-          git config --global user.name "kudo-sync-bot"
-          git config --global user.email "auto-sync@kudoai.com"
           git add .
-          git commit -n -m "${{ steps.update-shields.outputs.commit_msg }}" || true
+          git commit -S -n -m "${{ steps.update-shields.outputs.commit_msg }}" || true
           git push
