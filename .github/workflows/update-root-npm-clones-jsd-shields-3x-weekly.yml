@@ -184,7 +184,7 @@ jobs:
           git config --global user.email "auto-sync@kudoai.com"
           git config --global user.signingkey  "${{ secrets.GPG_PRIVATE_ID }}"
 
-      - name: Push to adamlui/js-utils
+      - name: Push changes to adamlui/js-utils
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           git add .

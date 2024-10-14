@@ -1,4 +1,4 @@
-name: Sync README.md between scss-to-css/node.js/ and scss-to-css/node.js/docs/, then scss-to-css/node.js/* to adamlui/scss-to-css/node.js/*
+name: Sync README.md between scss-to-css/node.js/ & scss-to-css/node.js/docs/, then scss-to-css/node.js/ to adamlui/scss-to-css/node.js/
 
 on:
   push:
@@ -29,7 +29,7 @@ jobs:
           repository: adamlui/scss-to-css
           path: adamlui/scss-to-css
 
-      - name: Sync README.md between scss-to-css/node.js/ and scss-to-css/node.js/docs
+      - name: Sync README.md between scss-to-css/node.js/ & scss-to-css/node.js/docs
         id: sync_readmes
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
@@ -58,7 +58,7 @@ jobs:
           # Store sync src for commit msg in self-push step
           echo "sync_src=$src_folder" >> $GITHUB_OUTPUT
 
-      - name: Sync scss-to-css/node.js/* to adamlui/scss-to-css/node.js/*
+      - name: Sync scss-to-css/node.js/ to adamlui/scss-to-css/node.js/
         run: |
           rsync -avhr --delete \
             ${{ github.workspace }}/adamlui/js-utils/scss-to-css/node.js/ \
