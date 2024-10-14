@@ -23,7 +23,6 @@ jobs:
           fetch-depth: 2
 
       - name: Sync changes between **/bump.sh
-        id: sync_changes
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
 
@@ -43,9 +42,9 @@ jobs:
                 cp -f "$newest_file" "$file"
           fi ; done ; fi
 
-          # Store sync src for commit msg in next step
+          # Expose sync src for commit msg in next step
           sync_src=$(echo "$newest_file" | cut -d'/' -f2-3)
-          echo "sync_src=$sync_src" >> $GITHUB_OUTPUT
+          echo "sync_src=$sync_src" >> $GITHUB_ENV
 
       - name: Escape backticks in commit msg
         env:
@@ -67,5 +66,5 @@ jobs:
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from \`${{ steps.sync_changes.outputs.sync_src }}\`]" || true
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from \`${{ env.sync_src }}\`]" || true
           git push

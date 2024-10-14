@@ -30,7 +30,6 @@ jobs:
           path: adamlui/minify.js
 
       - name: Sync README.md between minify.js/gulp/ & minify.js/gulp/docs
-        id: sync_readmes
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
 
@@ -55,8 +54,8 @@ jobs:
             fi
           fi
 
-          # Store sync src for commit msg in self-push step
-          echo "sync_src=$src_folder" >> $GITHUB_OUTPUT
+          # Expose sync src for commit msg in self-push step
+          echo "sync_src=$src_folder" >> $GITHUB_ENV
 
       - name: Sync minify.js/gulp/ to adamlui/minify.js/gulp/
         run: |
@@ -84,7 +83,7 @@ jobs:
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from \`${{ steps.sync_readmes.outputs.sync_src }}\`]" || true
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from \`${{ env.sync_src }}\`]" || true
           git push
 
       - name: Push changes to adamlui/minify.js

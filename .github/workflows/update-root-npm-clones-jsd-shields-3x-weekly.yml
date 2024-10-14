@@ -20,7 +20,6 @@ jobs:
           path: adamlui/js-utils
       
       - name: Fetch/sum npm download + git clone + JSD request counts
-        id: get-stats
         run: |
           npm_pkgs=("@adamlui/geolocate" "@adamlui/minify.js" "@adamlui/scss-to-css"
                     "generate-ip" "generate-pw" "gulp-minify.js")
@@ -109,19 +108,18 @@ jobs:
           formatted_total_requests=$(format_total $((total_pkg_requests + total_repo_requests)))
           echo "Formatted total monthly jsDelivr requests: $formatted_total_requests"
 
-          # Expose as outputs for update step next
-          echo "total_downloads=$formatted_total_downloads" >> $GITHUB_OUTPUT
-          echo "total_clones=$formatted_total_clones" >> $GITHUB_OUTPUT
-          echo "total_requests=$formatted_total_requests" >> $GITHUB_OUTPUT
+          # Expose totals for update step next
+          echo "total_downloads=$formatted_total_downloads" >> $GITHUB_ENV
+          echo "total_clones=$formatted_total_clones" >> $GITHUB_ENV
+          echo "total_requests=$formatted_total_requests" >> $GITHUB_ENV
       
       - name: Update README shields
-        id: update-shields
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
 
-          total_downloads="${{ steps.get-stats.outputs.total_downloads }}"
-          total_clones="${{ steps.get-stats.outputs.total_clones }}"
-          total_requests="${{ steps.get-stats.outputs.total_requests }}"
+          total_downloads="${{ env.total_downloads }}"
+          total_clones="${{ env.total_clones }}"
+          total_requests="${{ env.total_requests }}"
 
           # Update npm shield
           if [ "$total_downloads" == "0" ] ; then echo "Error getting total npm downloads"
@@ -174,7 +172,7 @@ jobs:
              [ "$multi_shield_types_updated" = true ] && commit_msg+="/" ; commit_msg+="jsDelivr" ; fi
           commit_msg+=" shield counter" ; [ "$multi_shield_types_updated" = true ] && commit_msg+="s"
           commit_msg+=" in root README"
-          echo "commit_msg=$commit_msg" >> $GITHUB_OUTPUT # expose as output
+          echo "commit_msg=$commit_msg" >> $GITHUB_ENV # expose for push step
 
       - name: Config committer
         run: |
@@ -188,5 +186,5 @@ jobs:
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           git add .
-          git commit -n -m "${{ steps.update-shields.outputs.commit_msg }}" || true
+          git commit -n -m "${{ env.commit_msg }}" || true
           git push

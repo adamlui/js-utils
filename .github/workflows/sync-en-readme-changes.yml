@@ -23,7 +23,6 @@ jobs:
           fetch-depth: 2
 
       - name: Sync README.md between <pkg>/ and <pkg>/docs
-        id: sync_readmes
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
 
@@ -59,8 +58,8 @@ jobs:
             fi
           done
 
-          # Store sync src for commit msg in next step
-          echo "sync_src=$src_folder" >> $GITHUB_OUTPUT
+          # Expose sync src for commit msg in next step
+          echo "sync_src=$src_folder" >> $GITHUB_ENV
 
       - name: Escape backticks in commit msg
         env:
@@ -82,5 +81,5 @@ jobs:
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from \`${{ steps.sync_readmes.outputs.sync_src }}\`]" || true
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from \`${{ env.sync_src }}\`]" || true
           git push
