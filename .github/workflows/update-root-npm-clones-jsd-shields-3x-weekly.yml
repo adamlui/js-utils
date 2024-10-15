@@ -2,7 +2,7 @@ name: Update npm/jsDelivr shields in root README
 
 on:
   schedule:
-    - cron: "45 3 * * 1,3,5" # every Mon/Wed/Fri @ 3:45 AM
+    - cron: "45 3 * * 5" # every Fri @ 3:45 AM
 
 jobs:
   update-root-npm-jsd-shields:
