@@ -55,7 +55,7 @@
   },
   "dependencies": {
     "node-clipboardy": "^1.0.3",
-    "sass": "^1.79.5"
+    "sass": "^1.79.6"
   },
   "devDependencies": {
     "@adamlui/minify.js": "^1.8.5"
