@@ -1,6 +1,6 @@
 # 🛠️ JavaScript utilities
 
-<img height=31 src="https://img.shields.io/badge/Downloads-4.1K/month-44cc11.svg?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img>
+<img height=31 src="https://img.shields.io/badge/Downloads-4K/month-44cc11.svg?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img>
 <a href="../LICENSE.md"><img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/commits/main"><img height=31 src="https://img.shields.io/github/commit-activity/m/adamlui/js-utils?label=Commits&logo=github&logoColor=white&labelColor=464646&color=blue&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/js-utils"><img height=31 src="https://img.shields.io/codefactor/grade/github/adamlui/js-utils?label=Code+Quality&logo=codefactor&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge"></a>
