@@ -9,6 +9,16 @@
   },
   "homepage": "https://scsstocss.org",
   "license": "MIT",
+  "funding": [
+    {
+      "type": "github",
+      "url": "http://github.com/sponsors/adamlui"
+    },
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/adamlui"
+    }
+  ],
   "main": "dist/scss-to-css.min.js",
   "files": [
     "docs/",
@@ -48,10 +58,6 @@
   ],
   "bugs": {
     "url": "https://github.com/adamlui/scss-to-css/issues"
-  },
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/adamlui"
   },
   "dependencies": {
     "node-clipboardy": "^1.0.3",
