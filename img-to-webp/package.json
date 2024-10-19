@@ -1,4 +1,14 @@
 {
+  "funding": [
+    {
+      "type": "github",
+      "url": "http://github.com/sponsors/adamlui"
+    },
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/adamlui"
+    }
+  ],
   "dependencies": {
     "imagemin": "^9.0.0",
     "imagemin-webp": "^8.0.0"

@@ -9,6 +9,16 @@
   },
   "homepage": "https://geolocatejs.org",
   "license": "MIT",
+  "funding": [
+    {
+      "type": "github",
+      "url": "http://github.com/sponsors/adamlui"
+    },
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/adamlui"
+    }
+  ],
   "main": "dist/geolocate.min.js",
   "files": [
     "docs/"
