@@ -9,6 +9,16 @@
   },
   "homepage": "https://minify-js.org",
   "license": "MIT",
+  "funding": [
+    {
+      "type": "github",
+      "url": "http://github.com/sponsors/adamlui"
+    },
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/adamlui"
+    }
+  ],
   "main": "dist/minify.min.js",
   "files": [
     "docs/",
@@ -54,9 +64,5 @@
   "dependencies": {
     "node-clipboardy": "^1.0.3",
     "uglify-js": "^3.19.3"
-  },
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/adamlui"
   }
 }

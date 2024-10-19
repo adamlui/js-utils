@@ -9,6 +9,16 @@
   },
   "homepage": "https://generate-ip.org",
   "license": "MIT",
+  "funding": [
+    {
+      "type": "github",
+      "url": "http://github.com/sponsors/adamlui"
+    },
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/adamlui"
+    }
+  ],
   "main": "dist/generate-ip.min.js",
   "files": [
     "docs"
@@ -46,10 +56,6 @@
   ],
   "bugs": {
     "url": "https://js-utils.com/issues"
-  },
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/adamlui"
   },
   "devDependencies": {
     "@adamlui/minify.js": "^1.8.5"
