@@ -21,10 +21,10 @@ jobs:
       
       - name: Fetch/sum npm download + git clone + JSD request counts
         run: |
-          npm_pkgs=("@adamlui/geolocate" "@adamlui/minify.js" "@adamlui/scss-to-css"
+          NPM_PKGS=("@adamlui/geolocate" "@adamlui/minify.js" "@adamlui/scss-to-css"
                     "generate-ip" "generate-pw" "gulp-minify.js")
-          jsd_npm_pkgs=("@adamlui/geolocate" "generate-ip" "generate-pw")
-          jsd_gh_repos=("adamlui/js-utils" "adamlui/minify.js" "adamlui/scss-to-css")
+          JSD_NPM_PKGS=("@adamlui/geolocate" "generate-ip" "generate-pw")
+          JSD_GH_REPOS=("adamlui/js-utils" "adamlui/minify.js" "adamlui/scss-to-css")
 
           expand_num() { # expand nums abbreviated w/ 'k' or 'm' suffix to integers
             local num=$(echo "$1" | tr '[:upper:]' '[:lower:]') # convert to lowercase
@@ -63,7 +63,7 @@ jobs:
           }
 
           # Fetch/sum npm download counts
-          for pkg in "${npm_pkgs[@]}" ; do
+          for pkg in "${NPM_PKGS[@]}" ; do
             pkg_downloads=$(curl -s "https://img.shields.io/npm/dm/$pkg.svg" |
               sed -n 's/.*<title>downloads: \([0-9,.km]\+\).*<\/title>.*/\1/Ip')
             pkg_downloads=$(expand_num "$pkg_downloads")
@@ -72,7 +72,7 @@ jobs:
           done ; echo -e "\n-----\nTotal monthly npm downloads: $total_downloads\n-----\n"
 
           # Fetch/sum jsDelivr request counts for npm pkgs
-          for pkg in "${jsd_npm_pkgs[@]}" ; do
+          for pkg in "${JSD_NPM_PKGS[@]}" ; do
             pkg_requests=$(curl -s "https://img.shields.io/jsdelivr/npm/hm/$pkg.svg" |
               sed -n -E 's|.*<title>jsdelivr: ([0-9,.km]+).*</title>.*|\1|Ip')
             pkg_requests=$(expand_num "$pkg_requests")
@@ -81,7 +81,7 @@ jobs:
           done ; echo -e "\n-----\nTotal monthly jsDelivr (npm) requests: $total_pkg_requests\n-----\n"
 
           # Fetch/sum jsDelivr request counts for GH repos
-          for repo in "${jsd_gh_repos[@]}" ; do
+          for repo in "${JSD_GH_REPOS[@]}" ; do
             repo_requests=$(curl -s "https://img.shields.io/jsdelivr/gh/hm/$repo.svg" |
               sed -n -E 's|.*<title>jsdelivr: ([0-9,.km]+).*</title>.*|\1|Ip')
             repo_requests=$(expand_num "$repo_requests")
@@ -96,35 +96,35 @@ jobs:
           echo "Formatted total monthly jsDelivr requests: $formatted_total_requests"
 
           # Expose totals for update step next
-          echo "total_downloads=$formatted_total_downloads" >> $GITHUB_ENV
-          echo "total_requests=$formatted_total_requests" >> $GITHUB_ENV
+          echo "TOTAL_DOWNLOADS=$formatted_total_downloads" >> $GITHUB_ENV
+          echo "TOTAL_REQUESTS=$formatted_total_requests" >> $GITHUB_ENV
       
       - name: Update README shields
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
 
-          total_downloads="${{ env.total_downloads }}"
-          total_requests="${{ env.total_requests }}"
+          TOTAL_DOWNLOADS="${{ env.TOTAL_DOWNLOADS }}"
+          TOTAL_REQUESTS="${{ env.TOTAL_REQUESTS }}"
 
           # Update npm shield
-          if [ "$total_downloads" == "0" ] ; then echo "Error getting total npm downloads"
+          if [ "$TOTAL_DOWNLOADS" == "0" ] ; then echo "Error getting total npm downloads"
           else # perform update
             old_readme=$(<docs/README.md)
-            sed -i -E "s|(badge/Downloads-)[0-9.,km+]+|\1$total_downloads|Ig" docs/README.md
+            sed -i -E "s|(badge/Downloads-)[0-9.,km+]+|\1$TOTAL_DOWNLOADS|Ig" docs/README.md
             new_readme=$(<docs/README.md)
             if [ "$old_readme" != "$new_readme" ] ; then downloads_updated=true ; fi
-            if [ "$downloads_updated" = true ] ; then echo "npm shield updated to $total_downloads"
+            if [ "$downloads_updated" = true ] ; then echo "npm shield updated to $TOTAL_DOWNLOADS"
             else echo "npm shield already up-to-date" ; fi
           fi
 
           # Update jsDelivr shield
-          if [ "$total_requests" == "0" ] ; then echo "Error getting total jsDelivr requests"
+          if [ "$TOTAL_REQUESTS" == "0" ] ; then echo "Error getting total jsDelivr requests"
           else # perform update
             old_readme=$(<docs/README.md)
-            sed -i -E "s|(badge/jsDelivr_[^-]+-)[0-9.,km+]+|\1$total_requests|Ig" docs/README.md
+            sed -i -E "s|(badge/jsDelivr_[^-]+-)[0-9.,km+]+|\1$TOTAL_REQUESTS|Ig" docs/README.md
             new_readme=$(<docs/README.md)
             if [ "$old_readme" != "$new_readme" ] ; then requests_updated=true ; fi
-            if [ "$requests_updated" = true ] ; then echo "jsDelivr shield updated to $total_requests"
+            if [ "$requests_updated" = true ] ; then echo "jsDelivr shield updated to $TOTAL_REQUESTS"
             else echo "jsDelivr shield already up-to-date" ; fi
           fi
 
@@ -141,13 +141,13 @@ jobs:
              [ "$multi_shield_types_updated" = true ] && commit_msg+="/" ; commit_msg+="jsDelivr" ; fi
           commit_msg+=" shield counter" ; [ "$multi_shield_types_updated" = true ] && commit_msg+="s"
           commit_msg+=" in root README"
-          echo "commit_msg=$commit_msg" >> $GITHUB_ENV # expose for push step
+          echo "COMMIT_MSG=$commit_msg" >> $GITHUB_ENV # expose for push step
 
           # Set Updated flag to check in subseuqent steps
-          if [ "$shield_types_updated" -gt 0 ] ; then echo "shields_updated=true" >> $GITHUB_ENV ; fi
+          if [ "$shield_types_updated" -gt 0 ] ; then echo "SHIELDS_UPDATED=true" >> $GITHUB_ENV ; fi
 
       - name: Config committer
-        if: env.shields_updated == 'true'
+        if: env.SHIELDS_UPDATED == 'true'
         run: |
           gpg --batch --import <(echo "${{ secrets.GPG_PRIVATE_KEY }}")
           git config --global commit.gpgsign true
@@ -156,9 +156,9 @@ jobs:
           git config --global user.signingkey "${{ secrets.GPG_PRIVATE_ID }}"
 
       - name: Push changes to adamlui/js-utils
-        if: env.shields_updated == 'true'
+        if: env.SHIELDS_UPDATED == 'true'
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           git add .
-          git commit -n -m "${{ env.commit_msg }}" || true
+          git commit -n -m "${{ env.COMMIT_MSG }}" || true
           git push

@@ -55,7 +55,7 @@ jobs:
           fi
 
           # Expose sync src for commit msg in self-push step
-          echo "sync_src=$src_folder" >> $GITHUB_ENV
+          echo "SYNC_SRC=$src_folder" >> $GITHUB_ENV
 
       - name: Sync minify.js/node.js/ to adamlui/minify.js/node.js/
         run: |
@@ -83,7 +83,7 @@ jobs:
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from \`${{ env.sync_src }}\`]" || true
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from \`${{ env.SYNC_SRC }}\`]" || true
           git push
 
       - name: Push changes to adamlui/minify.js
