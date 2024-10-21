@@ -2,7 +2,7 @@ name: Sync new releases to adamlui/<app-repo>
 
 on:
   release:
-    types: [published]
+    types: [released]
 
 jobs:
   sync-new-release:
