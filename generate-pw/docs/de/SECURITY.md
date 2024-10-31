@@ -1,8 +1,8 @@
 <div align="right">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/earth/white/icon32.svg?7c33be0">
-            <img height=14 src="https://media.js-utils.com/images/icons/earth/black/icon32.svg?7c33be0">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.org/images/icons/earth/white/icon32.svg?7c33be0">
+            <img height=14 src="https://media.js-utils.org/images/icons/earth/black/icon32.svg?7c33be0">
         </picture>
         &nbsp;Deutsch |
         <a href="../SECURITY.md">English</a> |
@@ -17,6 +17,6 @@
 
 # 🛡️ Sicherheitsrichtlinie
 
-Wenn Sie eine Schwachstelle finden, öffnen Sie bitte einen [Entwurf einer Sicherheitswarnung](https://github.js-utils.com/security/advisories/new).
+Wenn Sie eine Schwachstelle finden, öffnen Sie bitte einen [Entwurf einer Sicherheitswarnung](https://github.js-utils.org/security/advisories/new).
 
 Pull-Anfragen sind ebenfalls willkommen, aber aus Sicherheitsgründen senden Sie eine E-Mail an <adam@kudoai.com> und warten Sie auf eine Antwort, bevor Sie sie veröffentlichen.

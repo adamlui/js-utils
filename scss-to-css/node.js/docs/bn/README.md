@@ -280,7 +280,7 @@ findSCSS() » Check returned array.
 
 > বারবার WEBP-তে সমস্ত ছবি সংকুচিত করুন।
 <br>[ডাউনলোড করুন](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
-[আলোচনা করা](https://github.js-utils.com/discussions)
+[আলোচনা করা](https://github.js-utils.org/discussions)
 
 ### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.scsstocss.org/images/badges/awesome/badge.svg?52b67bc"></a>
 
@@ -289,12 +289,12 @@ findSCSS() » Check returned array.
 [রিডমি](https://minify-js.org/docs/bn#readme) /
 [CLI ব্যবহার](https://minify-js.org/docs/bn#-%E0%A6%95%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A1-%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%A8-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B9%E0%A6%BE%E0%A6%B0) /
 [API ব্যবহার](https://minify-js.org/docs/bn#-api-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B9%E0%A6%BE%E0%A6%B0) /
-[আলোচনা করা](https://github.js-utils.com/discussions)
+[আলোচনা করা](https://github.js-utils.org/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://media.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.scsstocss.org/images/icons/home/white/icon32x27.png?52b67bc"><img height=13 src="https://media.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?52b67bc"></picture> <a href="https://js-utils.com">**আরো জাভাস্ক্রিপ্ট ইউটিলিটি**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.scsstocss.org/images/icons/home/white/icon32x27.png?52b67bc"><img height=13 src="https://media.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?52b67bc"></picture> <a href="https://js-utils.org">**আরো জাভাস্ক্রিপ্ট ইউটিলিটি**</a> /
 <a href="https://github.scsstocss.org/discussions">আলোচনা করা</a> /
 <a href="#--scss-to-css">উপরে ফিরে যাও ↑</a>

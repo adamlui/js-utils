@@ -280,7 +280,7 @@ DE SOFTWARE WORDT GELEVERD "AS IS", ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIE
 
 > Comprimeer alle afbeeldingen recursief naar WEBP's.
 <br>[Downloaden](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
-[Bespreken](https://github.js-utils.com/discussions)
+[Bespreken](https://github.js-utils.org/discussions)
 
 ### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.scsstocss.org/images/badges/awesome/badge.svg?52b67bc"></a>
 
@@ -289,12 +289,12 @@ DE SOFTWARE WORDT GELEVERD "AS IS", ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIE
 [Leesmij](https://node.minify-js.org/#readme) /
 [CLI-gebruik](https://node.minify-js.org/#-command-line-usage) /
 [API-gebruik](https://node.minify-js.org/#-api-usage) /
-[Bespreken](https://github.js-utils.com/discussions)
+[Bespreken](https://github.js-utils.org/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://media.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.scsstocss.org/images/icons/home/white/icon32x27.png?52b67bc"><img height=13 src="https://media.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?52b67bc"></picture> <a href="https://js-utils.com">**Meer JavaScript-hulpprogramma's**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.scsstocss.org/images/icons/home/white/icon32x27.png?52b67bc"><img height=13 src="https://media.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?52b67bc"></picture> <a href="https://js-utils.org">**Meer JavaScript-hulpprogramma's**</a> /
 <a href="https://github.scsstocss.org/discussions">Bespreken</a> /
 <a href="#--scss-to-css">Terug naar boven ↑</a>

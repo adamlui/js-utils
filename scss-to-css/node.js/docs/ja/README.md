@@ -280,7 +280,7 @@ findSCSS() » Check returned array.
 
 > すべての画像を再帰的に WEBP に圧縮します。
 <br>[ダウンロード](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
-[話し合う](https://github.js-utils.com/discussions)
+[話し合う](https://github.js-utils.org/discussions)
 
 ### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.scsstocss.org/images/badges/awesome/badge.svg?52b67bc"></a>
 
@@ -289,12 +289,12 @@ findSCSS() » Check returned array.
 [お読みください](https://node.minify-js.org/#readme) /
 [CLI の使用法](https://node.minify-js.org/#-command-line-usage) /
 [API の使用法](https://node.minify-js.org/#-api-usage) /
-[話し合う](https://github.js-utils.com/discussions)
+[話し合う](https://github.js-utils.org/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://media.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.scsstocss.org/images/icons/home/white/icon32x27.png?52b67bc"><img height=13 src="https://media.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?52b67bc"></picture> <a href="https://js-utils.com">**その他の JavaScript ユーティリティ**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.scsstocss.org/images/icons/home/white/icon32x27.png?52b67bc"><img height=13 src="https://media.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?52b67bc"></picture> <a href="https://js-utils.org">**その他の JavaScript ユーティリティ**</a> /
 <a href="https://github.scsstocss.org/discussions">話し合う</a> /
 <a href="#--scss-to-css">トップに戻る ↑</a>

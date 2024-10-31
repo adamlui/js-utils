@@ -1,8 +1,8 @@
 <div align="right">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.com/images/icons/earth/white/icon32.svg?7c33be0">
-            <img height=14 src="https://media.js-utils.com/images/icons/earth/black/icon32.svg?7c33be0">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.org/images/icons/earth/white/icon32.svg?7c33be0">
+            <img height=14 src="https://media.js-utils.org/images/icons/earth/black/icon32.svg?7c33be0">
         </picture>
         &nbsp;繁體中文 |
         <a href="../SECURITY.md">English</a> |
@@ -17,6 +17,6 @@
 
 # 🛡️ 安全策略
 
-如果您發現漏洞，請打開[安全公告草案](https://github.js-utils.com/security/advisories/new)。
+如果您發現漏洞，請打開[安全公告草案](https://github.js-utils.org/security/advisories/new)。
 
 也歡迎拉取請求，但出於安全原因，請發送電子郵件至 <adam@kudoai.com> 並等待回復後再公開。

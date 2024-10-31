@@ -280,7 +280,7 @@ findSCSS() » Check returned array.
 
 > ਵਾਰ-ਵਾਰ ਸਾਰੀਆਂ ਤਸਵੀਰਾਂ ਨੂੰ WEBP ਵਿੱਚ ਸੰਕੁਚਿਤ ਕਰੋ।
 <br>[ਡਾਊਨਲੋਡ ਕਰੋ](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
-[ਚਰਚਾ ਕਰੋ](https://github.js-utils.com/discussions)
+[ਚਰਚਾ ਕਰੋ](https://github.js-utils.org/discussions)
 
 ### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.scsstocss.org/images/badges/awesome/badge.svg?52b67bc"></a>
 
@@ -289,12 +289,12 @@ findSCSS() » Check returned array.
 [ਪੜ੍ਹੋ](https://minify-js.org/docs/pa#readme) /
 [CLI ਦੀ ਵਰਤੋਂ](https://minify-js.org/docs/pa#-%E0%A8%95%E0%A8%AE%E0%A8%BE%E0%A8%82%E0%A8%A1-%E0%A8%B2%E0%A8%BE%E0%A8%88%E0%A8%A8-%E0%A8%A6%E0%A9%80-%E0%A8%B5%E0%A8%B0%E0%A8%A4%E0%A9%8B%E0%A8%82) /
 [API ਵਰਤੋਂ](https://minify-js.org/docs/pa#-api-%E0%A8%B5%E0%A8%B0%E0%A8%A4%E0%A9%8B%E0%A8%82) /
-[ਚਰਚਾ ਕਰੋ](https://github.js-utils.com/discussions)
+[ਚਰਚਾ ਕਰੋ](https://github.js-utils.org/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://media.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.scsstocss.org/images/icons/home/white/icon32x27.png?52b67bc"><img height=13 src="https://media.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?52b67bc"></picture> <a href="https://js-utils.com">**ਹੋਰ JavaScript ਉਪਯੋਗਤਾਵਾਂ**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.scsstocss.org/images/icons/home/white/icon32x27.png?52b67bc"><img height=13 src="https://media.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?52b67bc"></picture> <a href="https://js-utils.org">**ਹੋਰ JavaScript ਉਪਯੋਗਤਾਵਾਂ**</a> /
 <a href="https://github.scsstocss.org/discussions">ਚਰਚਾ ਕਰੋ</a> /
 <a href="#--scss-to-css">ਸਿਖਰ 'ਤੇ ਵਾਪਸ ਜਾਓ ↑</a>
