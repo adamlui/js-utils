@@ -12,3 +12,4 @@ updates:
       - scss-to-css/node.js/
     schedule:
       interval: daily
+    versioning-strategy: increase
