@@ -1,6 +1,6 @@
 import js from '@eslint/js'
 import globals from 'globals'
-import json from 'eslint-plugin-json'
+import json from '@eslint/json'
 
 export default [
     js.configs.recommended,
@@ -23,5 +23,8 @@ export default [
         }
     },
     { files: ['**/*.mjs'], languageOptions: { sourceType: 'module' }},
-    { files: ['**/*.json'], ...json.configs['recommended'] }
+    {
+        files: ['**/*.json'], ignores: ['**/package-lock.json'], language: 'json/json', ...json.configs.recommended,
+        rules: { 'no-irregular-whitespace': 'off' }
+    }
 ]
