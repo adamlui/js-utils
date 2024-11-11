@@ -1,9 +1,10 @@
 import js from '@eslint/js'
 import globals from 'globals'
 import json from '@eslint/json'
+import markdown from '@eslint/markdown'
 
 export default [
-    js.configs.recommended,
+    js.configs.recommended, ...markdown.configs.recommended,
     { ignores: ['**/*.min.js', '**/sandbox/*'] },
     {
         rules: {
@@ -25,6 +26,14 @@ export default [
     { files: ['**/*.mjs'], languageOptions: { sourceType: 'module' }},
     {
         files: ['**/*.json'], ignores: ['**/package-lock.json'], language: 'json/json', ...json.configs.recommended,
-        rules: { 'no-irregular-whitespace': 'off' }
+        rules: { 'no-irregular-whitespace': 'off' } // bypass bug https://github.com/eslint/json/issues/56
+    },
+    {
+        files: ['**/*.md'],
+        rules: {
+            'markdown/heading-increment': 'off', // allow headings to skip levels
+            'markdown/fenced-code-language': 'off', // allow code blocks w/ no language specified
+            'no-irregular-whitespace': 'off' // bypass bug https://github.com/eslint/markdown/issues/299
+        }
     }
 ]
