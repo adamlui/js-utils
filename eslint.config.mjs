@@ -4,9 +4,10 @@ import json from '@eslint/json'
 import markdown from '@eslint/markdown'
 
 export default [
-    js.configs.recommended, ...markdown.configs.recommended,
+    ...markdown.configs.recommended,
     { ignores: ['**/*.min.js', '**/sandbox/*'] },
     {
+        files: ['**/*.js', '**/*.mjs'], ...js.configs.recommended,
         rules: {
             'indent': 'off', 'no-unexpected-multiline': 'off', 'key-spacing': 'off', // allow whitespace anywhere
             'quotes': ['error', 'single', { 'allowTemplateLiterals': true }], // enforce single quotes except backticks to avoid escaping quotes
@@ -24,16 +25,12 @@ export default [
         }
     },
     { files: ['**/*.mjs'], languageOptions: { sourceType: 'module' }},
-    {
-        files: ['**/*.json'], ignores: ['**/package-lock.json'], language: 'json/json', ...json.configs.recommended,
-        rules: { 'no-irregular-whitespace': 'off' } // bypass bug https://github.com/eslint/json/issues/56
-    },
+    { files: ['**/*.json'], ignores: ['**/package-lock.json'], language: 'json/json', ...json.configs.recommended },
     {
         files: ['**/*.md'],
         rules: {
             'markdown/heading-increment': 'off', // allow headings to skip levels
-            'markdown/fenced-code-language': 'off', // allow code blocks w/ no language specified
-            'no-irregular-whitespace': 'off' // bypass bug https://github.com/eslint/markdown/issues/299
+            'markdown/fenced-code-language': 'off' // allow code blocks w/ no language specified
         }
     }
 ]
