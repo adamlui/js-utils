@@ -57,7 +57,7 @@
     "stylesheets"
   ],
   "bugs": {
-    "url": "https://github.com/adamlui/scss-to-css/issues"
+    "url": "https://support.scsstocss.org"
   },
   "dependencies": {
     "node-clipboardy": "^1.0.3",

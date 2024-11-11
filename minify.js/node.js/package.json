@@ -59,7 +59,7 @@
     "utils"
   ],
   "bugs": {
-    "url": "https://github.minify-js.org/issues"
+    "url": "https://support.minify-js.org"
   },
   "dependencies": {
     "node-clipboardy": "^1.0.3",

@@ -55,7 +55,7 @@
     "cli"
   ],
   "bugs": {
-    "url": "https://js-utils.org/issues"
+    "url": "https://support.generatepw.org"
   },
   "devDependencies": {
     "@adamlui/minify.js": "^1.8.5"

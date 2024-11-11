@@ -55,7 +55,7 @@
     "mac"
   ],
   "bugs": {
-    "url": "https://js-utils.org/issues"
+    "url": "https://support.generate-ip.org"
   },
   "devDependencies": {
     "@adamlui/minify.js": "^1.8.5"

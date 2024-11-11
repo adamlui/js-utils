@@ -53,7 +53,7 @@
     "cli"
   ],
   "bugs": {
-    "url": "https://github.com/adamlui/js-utils/issues"
+    "url": "https://support.geolocatejs.org"
   },
   "dependencies": {
     "generate-ip": "^2.4.3"

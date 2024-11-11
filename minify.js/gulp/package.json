@@ -53,7 +53,7 @@
     "gulpfriendly"
   ],
   "bugs": {
-    "url": "https://github.minify-js.org/issues"
+    "url": "https://support.minify-js.org"
   },
   "dependencies": {
     "@adamlui/minify.js": "^1.8.5"
