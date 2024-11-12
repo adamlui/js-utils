@@ -5,9 +5,9 @@ import markdown from '@eslint/markdown'
 import eslintPluginYml from 'eslint-plugin-yml'
 
 export default [
-    { ignores: ['**/*.min.js', '**/sandbox/*'] },
+    { ignores: ['**/sandbox/*'] },
     {
-        files: ['**/*.js', '**/*.mjs'], ...js.configs.recommended,
+        files: ['**/*.js', '**/*.mjs'], ignores: ['**/*.min.js'], ...js.configs.recommended,
         rules: {
             'indent': 'off', 'no-unexpected-multiline': 'off', 'key-spacing': 'off', // allow whitespace anywhere
             'quotes': ['error', 'single', { 'allowTemplateLiterals': true }], // enforce single quotes except backticks to avoid escaping quotes
