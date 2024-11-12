@@ -19,7 +19,7 @@ async function geolocate(ips, options = {}) {
             ipIsValid = require('generate-ip').ipv4.validate;
         } catch (err) { // use jsDelivr's latest copy of generate-ip
             await import('https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js');
-            ipIsValid = ipv4.validate; // eslint-disable-line no-undef
+            ipIsValid = ipv4.validate;
         }
         if (ipIsValid && !ipIsValid(ip, { verbose: false }))
             return console.error(`geolocate() » ERROR: ${ip} is not a valid IPv4 address.`);
