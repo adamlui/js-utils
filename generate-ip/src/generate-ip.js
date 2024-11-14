@@ -215,14 +215,14 @@ const ipv6 = {
               lastPiece = pieces[pieces.length - 1];
         const isValidIPv6 = !( // false if any dq condition matches
                   address.includes('::') && address.split('::').length > 2 // 2+ '::'
-               || /:{3,}/g.test(address) // 3+ consecutive ':'
+               || /:{3,}/.test(address) // 3+ consecutive ':'
                || pieces.length < 2 || pieces.length > 8 // 1 or 9+ hex pieces
                || pieces.some(piece => // hex piece invalid
-                      !/^[\dA-Fa-f]{1,4}$/.test(piece) // for not being 1-4 valid chars
+                      !/^[\da-f]{1,4}$/i.test(piece) // for not being 1-4 valid chars
                           && (piece != lastPiece // except last piece
                               || !ipv4.validate( // where IPv4-mapping appended invalid address
                                       lastPiece.replace( // determined by stripping valid length suffixes first
-                                          /\/(?:0|(?:[1-2]?\d)|32|96)$/, ''), { verbose: false }
+                                          /\/\d{1,2}$/, ''), { verbose: false }
                   )))
         );
 
@@ -291,7 +291,7 @@ const mac = {
 
         // Validate address as MAC address
         if (options.verbose) console.info(`mac.validate() » Validating ${address}...`);
-        const isValidMAC = /^(?:[\dA-Fa-f]{2}[:-]){5}(?:[\dA-Fa-f]{2})$/.test(address);
+        const isValidMAC = /^(?:[\da-f]{2}[:-]){5}[\da-f]{2}$/i.test(address);
 
         // Log/return final result
         if (options.verbose) console.info(
