@@ -222,7 +222,7 @@ const ipv6 = {
                           && (piece != lastPiece // except last piece
                               || !ipv4.validate( // where IPv4-mapping appended invalid address
                                       lastPiece.replace( // determined by stripping valid length suffixes first
-                                          /\/\d{1,2}$/, ''), { verbose: false }
+                                          /\/(?:12[0-8]|[1-9]?\d)$/, ''), { verbose: false }
                   )))
         );
 
