@@ -176,7 +176,7 @@ const ipv6 = {
         } else { // strip leading zeros
             if (options.verbose) console.info(
                 'ipv6.format() » Stripping leading zeros...');
-            formattedAddress = ipv6address.replace(/(^|(?<=:))0+(?!:)/g, '$1');
+            formattedAddress = ipv6address.replace(/(^|(?<=:))0+(?!:)/g, '$1'); // eslint-disable-line
         }
 
         // Log/return final result
