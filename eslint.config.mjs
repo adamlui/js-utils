@@ -11,7 +11,7 @@ export default [
         files: ['**/*.js', '**/*.mjs'], ignores: ['**/*.min.js'],
         languageOptions: {
             ecmaVersion: 'latest', sourceType: 'script',
-            globals: { ...globals.browser, ...globals.node, ipv4: 'readonly' }
+            globals: { ...globals.browser, ...globals.node }
         },
         plugins: { regexp },
         rules: {
