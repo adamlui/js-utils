@@ -3,6 +3,8 @@
 // Documentation: https://docs.geolocatejs.org/#-command-line-usage
 // Latest minified release: https://cdn.jsdelivr.net/npm/@adamlui/geolocate/dist/geolocate.min.js
 
+/* global ipv4 */
+
 async function geolocate(ips, options = {}) {
 
     const docURL = 'https://docs.geolocatejs.org/#locateips-options',
