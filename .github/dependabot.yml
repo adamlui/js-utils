@@ -10,6 +10,6 @@ updates:
       - minify.js/gulp/
       - minify.js/node.js/
       - scss-to-css/node.js/
+    versioning-strategy: increase
     schedule:
       interval: daily
-    versioning-strategy: increase
