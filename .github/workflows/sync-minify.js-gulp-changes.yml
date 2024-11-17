@@ -90,5 +90,5 @@ jobs:
         run: |
           cd ${{ github.workspace }}/adamlui/minify.js
           git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from adamlui/js-utils]" || true
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/js-utils]" || true
           git push
