@@ -81,5 +81,5 @@ jobs:
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from \`${{ env.SYNC_SRC }}\`]" || true
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from ${{ env.SYNC_SRC }}]" || true
           git push
