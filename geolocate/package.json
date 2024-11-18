@@ -56,7 +56,7 @@
     "url": "https://support.geolocatejs.org"
   },
   "dependencies": {
-    "generate-ip": "^2.4.3"
+    "generate-ip": "^2.4.4"
   },
   "devDependencies": {
     "@adamlui/minify.js": "^1.8.5"
