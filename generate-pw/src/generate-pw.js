@@ -48,7 +48,7 @@ function generatePassword(options = {}) {
         let pwCharset = options.charset?.toString() || ( // use passed [charset], or construct from options
             (options.numbers ? charsets.numbers : '')
               + (options.symbols ? charsets.symbols : '')
-              + (options.lowercase ? charsets.lower : '') 
+              + (options.lowercase ? charsets.lower : '')
               + (options.uppercase ? charsets.upper : '')
         );
         if (pwCharset == '') // all flags false + no charset passed
@@ -84,7 +84,7 @@ function generatePassword(options = {}) {
 
         // Log/return final result
         if (options.verbose && !fromGeneratePasswords) {
-                console.info('generatePassword() » Password generated!');       
+                console.info('generatePassword() » Password generated!');
             if (typeof window != 'undefined')
                 console.info('generatePassword() » Check returned string.');
         }
@@ -154,7 +154,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     if (!Array.isArray(requiredCharTypes)) // convert string to array
         requiredCharTypes = [requiredCharTypes];
     for (const charType of requiredCharTypes) {
-        if (!validCharTypes.includes(charType)) { 
+        if (!validCharTypes.includes(charType)) {
             console.error(`strictify() » ERROR: 2nd arg \`${charType}\` is an invalid character type.`);
             console.info(`strictify() » Valid character types: [ '${ validCharTypes.join('\', \'')}' ]`);
             console.info('strictify() » Pass one as a string or more as an array, or all types will be required.');

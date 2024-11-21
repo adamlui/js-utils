@@ -25,14 +25,14 @@ function findSCSS(searchDir, options = {}) {
 
     // Validate searchDir
     if (typeof searchDir != 'string') {
-            console.error('findSCSS() » ERROR: 1st arg <searchDir> must be a string.');     
+            console.error('findSCSS() » ERROR: 1st arg <searchDir> must be a string.');
             console.info('findSCSS() » For more help, please visit ' + docURL);
             return;
     } else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir);
         if (!fs.existsSync(searchPath)) {
             console.error('findSCSS() » ERROR: 1st arg <searchDir> must be an existing directory.');
-            console.error(`findSCSS() » ${searchPath} does not exist.`);     
+            console.error(`findSCSS() » ${searchPath} does not exist.`);
             console.info('findSCSS() » For more help, please visit ' + docURL);
             return;
     }}
@@ -116,7 +116,7 @@ function compile(input, options = {}) {
             const compileResult = findSCSS(input, { recursive: options.recursive, verbose: options.verbose,
                                                     dotFolders: options.dotFolders, ignoreFiles: options.ignoreFiles
                 })?.map(scssPath => { // compile found SCSS files
-                    if (options.verbose) console.info(`compile() » ** Compiling ${scssPath}...`); 
+                    if (options.verbose) console.info(`compile() » ** Compiling ${scssPath}...`);
                     try { // to compile found file
                         const compileResult = sass.compile(scssPath, compileOptions);
                         if (options.comment) compileResult.css = prependComment(compileResult.css, options.comment);
@@ -127,13 +127,13 @@ function compile(input, options = {}) {
                         return { code: undefined, srcMap: undefined, srcPath: undefined, error: err };
                     }
                 }).filter(data => !data.error ); // filter out failed compilations
-            if (options.verbose) { 
+            if (options.verbose) {
                 if (compileResult.length > 0 && typeof window != 'undefined') console.info(
                     'compile() » Compilation complete! Check returned object.');
                 else console.info(
                     'compile() » No SCSS files processed.');
             }
-            return compileResult;            
+            return compileResult;
         }
     } else { // compile based on src code arg
         if (options.verbose)

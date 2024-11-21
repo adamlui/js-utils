@@ -33,7 +33,7 @@ function findJS(searchDir, options = {}) {
         const searchPath = path.resolve(process.cwd(), searchDir);
         if (!fs.existsSync(searchPath)) {
             console.error('findJS() » ERROR: 1st arg <searchDir> must be an existing directory.');
-            console.error(`findJS() » ${searchPath} does not exist.`);           
+            console.error(`findJS() » ${searchPath} does not exist.`);
             console.info('findJS() » For more help, please visit ' + docURL);
             return;
     }}
@@ -113,7 +113,7 @@ function minify(input, options = {}) {
         } else { // dir path passed
             const minifyResult = findJS(input, { recursive: options.recursive, verbose: options.verbose,
                                                  dotFolders: options.dotFolders, dotFiles: options.dotFiles,
-                                                 ignoreFiles: options.ignoreFiles 
+                                                 ignoreFiles: options.ignoreFiles
                 })?.map(jsPath => { // minify found JS files
                     if (options.verbose) console.info(`minify() » ** Minifying ${jsPath}...`);
                     const srcCode = fs.readFileSync(jsPath, 'utf8');
@@ -122,7 +122,7 @@ function minify(input, options = {}) {
                     if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`);
                     return { code: minifyResult.code, srcPath: jsPath, error: minifyResult.error };
                 }).filter(data => !data.error); // filter out failed minifications
-            if (options.verbose) { 
+            if (options.verbose) {
                 if (minifyResult.length > 0 && typeof window != 'undefined') console.info(
                     'minify() » Minification complete! Check returned object.');
                 else console.info(

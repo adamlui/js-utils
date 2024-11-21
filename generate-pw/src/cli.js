@@ -228,7 +228,7 @@ const pkgName = 'generate-pw',
         data = data.replace(/"/g, '""');
         if (process.platform == 'darwin') // macOS
             execSync(`printf "${data}" | pbcopy`);
-        else if (process.platform == 'linux')   
+        else if (process.platform == 'linux')
             execSync(`printf "${data}" | xclip -selection clipboard`);
         else if (process.platform == 'win32')
             execSync(`Set-Clipboard -Value "${data}"`, { shell: 'powershell' });
