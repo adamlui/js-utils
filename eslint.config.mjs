@@ -19,6 +19,8 @@ export default [
             ...js.configs.recommended.rules, ...regexp.configs['flat/recommended'].rules,
             'indent': 'off', 'no-unexpected-multiline': 'off', 'key-spacing': 'off', // allow whitespace anywhere
             'js-styles/no-trailing-spaces': 'error', // ...except at ends of lines
+            'js-styles/max-len': ['error', { // limit lines to 120 chars
+                'code': 120, 'ignoreComments': true, 'ignoreStrings': true, 'ignoreRegExpLiterals': true }],
             'quotes': ['error', 'single', { 'allowTemplateLiterals': true }], // enforce single quotes except backticks to avoid escaping quotes
             'comma-dangle': ['error', 'never'], // enforce no trailing commas in arrays or objects
             'no-async-promise-executor': 'off', // allow promise executor functions to be async (to accomodate await lines)
