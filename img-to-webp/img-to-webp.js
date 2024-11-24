@@ -2,7 +2,7 @@
 
 /* ========================================================
 Script:       img-to-webp.js
-Version:      2024.4.15
+Version:      2024.11.24
 Description:  Compress all JPG/PNG images in a directory to WEBPs
 Author:       Adam Lui
 License:      MIT
@@ -30,12 +30,14 @@ Homepage:     https://js-utils.org/img-to-webp
           jpgFiles = glob.sync(path.join(inputDir, '**/*.{ jpg, jpeg }'), { nodir: true });
 
     // Process PNG images
-    const pngOptions = { extension: '.webp', qualityOptions: { lossless: true }, type: 'PNG' },
-        { compressedCount: compressedPNGCount, skippedCount: skippedPNGCount } = await processImages(pngFiles, pngOptions);
+    const pngOptions = { extension: '.webp', qualityOptions: { lossless: true }, type: 'PNG' }
+    const { compressedCount: compressedPNGCount, skippedCount: skippedPNGCount } = (
+        await processImages(pngFiles, pngOptions))
 
     // Process JPG images
-    const jpgOptions = { extension: '.webp', qualityOptions: { quality: 65 }, type: 'JPG' },
-        { compressedCount: compressedJPGCount, skippedCount: skippedJPGCount } = await processImages(jpgFiles, jpgOptions);
+    const jpgOptions = { extension: '.webp', qualityOptions: { quality: 65 }, type: 'JPG' }
+    const { compressedCount: compressedJPGCount, skippedCount: skippedJPGCount } = (
+        await processImages(jpgFiles, jpgOptions))
 
     // Final log
     console.log('\n-----------------------');

@@ -67,9 +67,10 @@ const pkgName = 'generate-ip',
     };
     process.argv.forEach(arg => {
         if (!arg.startsWith('-')) return;
-        const matchedParamOption = Object.keys(reArgs.paramOptions).find(option => reArgs.paramOptions[option].test(arg)),
-              matchedFlag = Object.keys(reArgs.flags).find(flag => reArgs.flags[flag].test(arg)),
-              matchedInfoCmd = Object.keys(reArgs.infoCmds).find(cmd => reArgs.infoCmds[cmd].test(arg));
+        const matchedParamOption = Object.keys(reArgs.paramOptions)
+            .find(option => reArgs.paramOptions[option].test(arg))
+        const matchedFlag = Object.keys(reArgs.flags).find(flag => reArgs.flags[flag].test(arg))
+        const matchedInfoCmd = Object.keys(reArgs.infoCmds).find(cmd => reArgs.infoCmds[cmd].test(arg));
         if (matchedFlag) config[matchedFlag] = true;
         else if (matchedParamOption) {
             if (!/=.+/.test(arg)) {
