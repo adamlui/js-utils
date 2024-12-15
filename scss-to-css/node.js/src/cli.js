@@ -138,13 +138,11 @@ else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
         }
         if (compileData?.length == 0) process.exit(0);
 
-        // Log + copy single result code if --copy passed
-        if (compileData?.length == 1) {
+        // Copy single result code to clipboard if --copy passed
+        if (config.copy && compileData?.length == 1) {
             console.log(`\n${bw + compileData[0].code + nc}`);
-            if (config.copy) {
-                printIfNotQuiet('\nCopying to clipboard...');
-                ncp.writeSync(compileData[0].code);
-            }
+            printIfNotQuiet('\nCopying to clipboard...');
+            ncp.writeSync(compileData[0].code);
 
         } else { // write array data to files
             printIfNotQuiet(`\nWriting to file${ compileData?.length > 1 ? 's' : '' }...`);
