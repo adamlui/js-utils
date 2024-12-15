@@ -39,10 +39,7 @@
     "bump:patch": "bash utils/bump.sh patch",
     "bump:minor": "bash utils/bump.sh minor",
     "bump:major": "bash utils/bump.sh major",
-    "prepublishOnly": "npm test",
-    "publish:patch": "bash utils/bump.sh patch --publish",
-    "publish:minor": "bash utils/bump.sh minor --publish",
-    "publish:major": "bash utils/bump.sh major --publish"
+    "prepublishOnly": "npm test"
   },
   "repository": {
     "type": "git",

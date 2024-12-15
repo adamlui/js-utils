@@ -78,11 +78,6 @@ git commit -n -m "Built $pkg_name v$new_ver"
 echo -e "${BY}\nPushing to GitHub...\n${NC}"
 git push
 
-# Publish to NPM
-if [[ "$*" == *"--publish"* ]] ; then
-    echo -e "${BY}\nPublishing to npm...\n${NC}"
-    npm publish ; fi
-
 # Print final summary
 echo -e "\n${BG}Successfully bumped to v$new_ver$(
     [[ "$*" == *"--publish"* ]] && echo ' and published to npm' || echo ''
