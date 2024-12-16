@@ -31,7 +31,7 @@ jobs:
           newest_file="" ; newest_timestamp=0
           for file in $files ; do
             timestamp=$(git log -1 --format="%ct" -- "$file")
-            if [[ $timestamp -gt $newest_timestamp ]] ; then
+            if (( $timestamp > $newest_timestamp )) ; then
               newest_file=$file ; newest_timestamp=$timestamp
           fi ; done
 

@@ -46,11 +46,11 @@ jobs:
 
             # Perform syncs of diff READMEs
             if [[ "$root_readme_content" != "$docs_readme_content" ]] ; then
-              if [[ $root_readme_modified -gt $docs_readme_modified ]] ; then
+              if (( $root_readme_modified > $docs_readme_modified )) ; then
                 cp -f "$root_readme" "$docs_readme"
                 echo "Copied $root_readme to $docs_readme"
                 src_folder="/${pkg_root#./}"
-              elif [[ $docs_readme_modified -gt $root_readme_modified ]] ; then
+              elif (( $docs_readme_modified > $root_readme_modified )) ; then
                 cp -f "$docs_readme" "$root_readme"
                 echo "Copied $docs_readme to $root_readme"
                 src_folder="/${pkg_root#./}/docs"
