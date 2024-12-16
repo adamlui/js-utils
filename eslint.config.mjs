@@ -33,7 +33,8 @@ export default [
             'no-empty': 'off', // allow empty blocks
             'no-inner-declarations': 'off', // allow function declarations anywhere
             'no-useless-escape': 'off', // allow all escape chars cause ESLint sucks at detecting truly useless ones
-            'no-unused-vars': ['error', { 'caughtErrors': 'none' }] // allow unused named args in catch blocks
+            'no-unused-vars': ['error', { 'caughtErrors': 'none' }], // allow unused named args in catch blocks
+            'import/no-unresolved': ['error', { commonjs: true }]
         }
     },
     { files: ['**/*.mjs'], languageOptions: { sourceType: 'module' }},
