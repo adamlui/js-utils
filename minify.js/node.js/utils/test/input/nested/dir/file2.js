@@ -213,10 +213,10 @@ const pkgName = '@adamlui/minify.js',
         return new Promise((resolve, reject) => {
             const protocol = url.match(/^([^:]+):\/\//)[1];
             if (!/^https?$/.test(protocol)) reject(new Error(`${ msgs.error_invalidURL || 'Invalid URL' }.`));
-            require(protocol).get(url, res => {
+            require(protocol).get(url, resp => {
                 let rawData = '';
-                res.on('data', chunk => rawData += chunk);
-                res.on('end', () => resolve({ json: () => JSON.parse(rawData) }));
+                resp.on('data', chunk => rawData += chunk);
+                resp.on('end', () => resolve({ json: () => JSON.parse(rawData) }));
             }).on('error', reject);
     });}
 
