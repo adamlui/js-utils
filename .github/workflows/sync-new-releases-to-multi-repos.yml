@@ -1,8 +1,6 @@
 name: Sync new releases to adamlui/<app-repo>
 
-on:
-  release:
-    types: [released]
+on: workflow_dispatch
 
 jobs:
   sync-new-release:
