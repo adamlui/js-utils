@@ -18,6 +18,10 @@ if [[ ! "${VER_TYPES[@]}" =~ "$1" ]] ; then
     echo "${BR}Invalid version argument. Please specify 'major', 'minor', or 'patch'.${NC}"
     exit 1 ; fi
 
+# PULL latest changes
+echo -e "${BY}Pulling latest changes from remote to sync local repository...${NC}\n"
+git pull || (echo -e "${BR}Merge failed, please resolve conflicts!${NC}" && exit 1)
+
 # Determine new version to bump to
 old_ver=$(node -pe "require('./package.json').version")
 IFS='.' read -ra subvers <<< "$old_ver" # split old_ver into subvers array

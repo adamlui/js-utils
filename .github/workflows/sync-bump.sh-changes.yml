@@ -65,6 +65,7 @@ jobs:
       - name: Push changes to adamlui/js-utils
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
+          git pull # again to sync w/ concurrent workflow updates
           git add .
           git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from ${{ env.SYNC_SRC }}]" || true
           git push
