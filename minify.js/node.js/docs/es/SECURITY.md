@@ -19,6 +19,4 @@
 
 # 🛡️ Politica de seguridad
 
-Si encuentra una vulnerabilidad, abra un [borrador de aviso de seguridad](https://github.minify-js.org/security/advisories/new).
-
-Las solicitudes de extracción también son bienvenidas, pero por razones de seguridad, envíe un correo electrónico a <adam@kudoai.com> y espere una respuesta antes de hacerla pública.
+Si encuentra una vulnerabilidad, siga las instrucciones de informe @ https://tidelift.com/security

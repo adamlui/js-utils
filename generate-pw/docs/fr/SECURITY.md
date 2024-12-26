@@ -17,6 +17,4 @@
 
 # 🛡️ Politique de sécurité
 
-Si vous trouvez une vulnérabilité, veuillez ouvrir un [projet d'avis de sécurité](https://github.js-utils.org/security/advisories/new).
-
-Les demandes de tirage sont également les bienvenues, mais pour des raisons de sécurité, envoyez un e-mail à <adam@kudoai.com> et attendez une réponse avant de la rendre publique.
+Si vous trouvez une vulnérabilité, veuillez suivre les instructions de signalement sur https://tidelift.com/security

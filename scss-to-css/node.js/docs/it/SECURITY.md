@@ -23,6 +23,4 @@
 
 # 🛡️ Politica di Sicurezza
 
-Se trovi una vulnerabilità, apri una [bozza di avviso di sicurezza](https://github.scsstocss.org/security/advisories/new).
-
-Anche le richieste di pull sono benvenute, ma per motivi di sicurezza, invia un'e-mail a <adam@kudoai.com> e attendi una risposta prima di renderla pubblica.
+Se trovi una vulnerabilità, segui le istruzioni per la segnalazione su https://tidelift.com/security

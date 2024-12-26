@@ -23,6 +23,4 @@
 
 # 🛡️ Veiligheidsbeleid
 
-Als u een kwetsbaarheid vindt, open dan een [ontwerpbeveiligingsadvies](https://github.scsstocss.org/security/advisories/new).
-
-Pull-verzoeken zijn ook welkom, maar stuur om veiligheidsredenen een e-mail naar <adam@kudoai.com> en wacht op een reactie voordat u deze openbaar maakt.
+Als u een kwetsbaarheid vindt, volg dan de meldingsinstructies @ https://tidelift.com/security

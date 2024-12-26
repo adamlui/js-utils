@@ -19,6 +19,4 @@
 
 # 🛡️ Sicherheitsrichtlinie
 
-Wenn Sie eine Schwachstelle finden, öffnen Sie bitte einen [Entwurf einer Sicherheitswarnung](https://github.minify-js.org/security/advisories/new).
-
-Pull-Anfragen sind ebenfalls willkommen, aber aus Sicherheitsgründen senden Sie eine E-Mail an <adam@kudoai.com> und warten Sie auf eine Antwort, bevor Sie sie veröffentlichen.
+Wenn Sie eine Schwachstelle finden, folgen Sie bitte den Anweisungen zum Melden @ https://tidelift.com/security
