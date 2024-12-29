@@ -8,9 +8,9 @@ import stylisticJS from '@stylistic/eslint-plugin-js'
 import yml from 'eslint-plugin-yml'
 
 export default [
-    { ignores: ['**/sandbox/*'] },
+    { ignores: ['**/sandbox/', '**/*.min.js', '**/package-lock.json'] },
     {
-        files: ['**/*.js', '**/*.mjs'], ignores: ['**/*.min.js'],
+        files: ['**/*.js', '**/*.mjs'],
         languageOptions: {
             ecmaVersion: 'latest', sourceType: 'script',
             globals: { ...globals.browser, ...globals.node }
@@ -40,7 +40,7 @@ export default [
         }
     },
     { files: ['**/*.mjs'], languageOptions: { sourceType: 'module' }},
-    { files: ['**/*.json'], ignores: ['**/package-lock.json'], language: 'json/json', ...json.configs.recommended },
+    { files: ['**/*.json'], language: 'json/json', ...json.configs.recommended },
     {
         files: ['**/*.md'], language: 'markdown/commonmark', plugins: { markdown },
         rules: {
