@@ -1,4 +1,4 @@
-// © 2024 Adam Lui under the MIT license.
+// © 2024–2025 Adam Lui under the MIT license.
 // Source: https://code.minify-js.org/gulp
 // Documentation: https://docs.minify-js.org/gulp
 

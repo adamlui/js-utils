@@ -1,6 +1,6 @@
 {
   "appName": { "message": "generate-ip" },
-  "appCopyright": { "message": "© 2024 Adam Lui & othandizira pansi pa chilolezo cha MIT" },
+  "appCopyright": { "message": "© 2024–2025 Adam Lui & othandizira pansi pa chilolezo cha MIT" },
   "prefix_error": { "message": "Mphulupulu" },
   "prefix_globalVer": { "message": "Baibulo lonse" },
   "prefix_localVer": { "message": "Baibulo m 'dera" },

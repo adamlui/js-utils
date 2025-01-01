@@ -1,6 +1,6 @@
 {
   "appName": { "message": "generate-pw" },
-  "appCopyright": { "message": "© 2024 劉展鵬 (Adam Lui) 和 MIT 許可證下的貢獻者" },
+  "appCopyright": { "message": "© 2024–2025 劉展鵬 (Adam Lui) 和 MIT 許可證下的貢獻者" },
   "prefix_error": { "message": "錯誤" },
   "prefix_globalVer": { "message": "全球版本" },
   "prefix_localVer": { "message": "本地版本" },

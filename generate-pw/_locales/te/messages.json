@@ -1,6 +1,6 @@
 {
   "appName": { "message": "generate-pw" },
-  "appCopyright": { "message": "© 2024 ఆడమ్ లూయి & MIT లైసెన్స్ కింద కంట్రిబ్యూటర్స్" },
+  "appCopyright": { "message": "© 2024–2025 ఆడమ్ లూయి & MIT లైసెన్స్ కింద కంట్రిబ్యూటర్స్" },
   "prefix_error": { "message": "దోషం" },
   "prefix_globalVer": { "message": "గ్లోబల్ వెర్షన్" },
   "prefix_localVer": { "message": "స్థానిక వెర్షన్" },

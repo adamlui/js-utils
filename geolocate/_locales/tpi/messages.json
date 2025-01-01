@@ -1,6 +1,6 @@
 {
   "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024 Adam Lui aninit long MIT lisens" },
+  "appCopyright": { "message": "© 2024–2025 Adam Lui aninit long MIT lisens" },
   "prefix_error": { "message": "Fout" },
   "prefix_globalVer": { "message": "Global version" },
   "prefix_localVer": { "message": "Ol tok bilong ples" },

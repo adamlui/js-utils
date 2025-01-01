@@ -1,4 +1,4 @@
-// © 2024 Adam Lui under the MIT license.
+// © 2024–2025 Adam Lui under the MIT license.
 // Source: https://code.geolocatejs.org
 // Documentation: https://docs.geolocatejs.org/#-command-line-usage
 // Latest minified release: https://cdn.jsdelivr.net/npm/@adamlui/geolocate/dist/geolocate.min.js

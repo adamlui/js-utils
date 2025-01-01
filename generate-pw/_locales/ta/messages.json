@@ -1,6 +1,6 @@
 {
   "appName": { "message": "generate-pw" },
-  "appCopyright": { "message": "© 2024 ஆடம் லூயி & எம்ஐடி உரிமத்தின் கீழ் பங்களிப்பாளர்கள்" },
+  "appCopyright": { "message": "© 2024–2025 ஆடம் லூயி & எம்ஐடி உரிமத்தின் கீழ் பங்களிப்பாளர்கள்" },
   "prefix_error": { "message": "பிழை" },
   "prefix_globalVer": { "message": "உலகளாவிய பதிப்பு" },
   "prefix_localVer": { "message": "உள்ளூர் பதிப்பு" },

@@ -1,6 +1,6 @@
 {
   "appName": { "message": "generate-pw" },
-  "appCopyright": { "message": "© 2024 Adam Lui un līdzstrādnieki saskaņā ar MIT licenci" },
+  "appCopyright": { "message": "© 2024–2025 Adam Lui un līdzstrādnieki saskaņā ar MIT licenci" },
   "prefix_error": { "message": "KĻŪDA" },
   "prefix_globalVer": { "message": "Globālā versija" },
   "prefix_localVer": { "message": "Vietējā versija" },

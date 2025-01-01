@@ -1,6 +1,6 @@
 {
   "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024 Adam Lui i raro i te raihana MIT" },
+  "appCopyright": { "message": "© 2024–2025 Adam Lui i raro i te raihana MIT" },
   "prefix_error": { "message": "He" },
   "prefix_globalVer": { "message": "Te putanga o te ao" },
   "prefix_localVer": { "message": "Ngā putanga ā-rohe" },

@@ -1,6 +1,6 @@
 {
   "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024 MIT лицензиясы боюнча Адам Луи" },
+  "appCopyright": { "message": "© 2024–2025 MIT лицензиясы боюнча Адам Луи" },
   "prefix_error": { "message": "Ката" },
   "prefix_globalVer": { "message": "Глобалдык версия" },
   "prefix_localVer": { "message": "Жергиликтүү версия" },

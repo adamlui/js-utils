@@ -1,6 +1,6 @@
 {
   "appName": { "message": "generate-pw" },
-  "appCopyright": { "message": "© 2024 Adam Lui va MIT litsenziyasi ostida ishtirokchilar" },
+  "appCopyright": { "message": "© 2024–2025 Adam Lui va MIT litsenziyasi ostida ishtirokchilar" },
   "prefix_error": { "message": "XATTO" },
   "prefix_globalVer": { "message": "Global versiya" },
   "prefix_localVer": { "message": "Mahalliy versiya" },

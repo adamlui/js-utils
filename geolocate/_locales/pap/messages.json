@@ -1,6 +1,6 @@
 {
   "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024 Adam Lui Con Mi Permiso" },
+  "appCopyright": { "message": "© 2024–2025 Adam Lui Con Mi Permiso" },
   "prefix_error": { "message": "ERROR" },
   "prefix_globalVer": { "message": "Vershon Global" },
   "prefix_localVer": { "message": "Vershon lokal" },

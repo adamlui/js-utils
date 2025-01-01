@@ -1,6 +1,6 @@
 {
   "appName": { "message": "generate-pw" },
-  "appCopyright": { "message": "© 2024 Adam Lui & contributors na gbe ti licence MIT" },
+  "appCopyright": { "message": "© 2024–2025 Adam Lui & contributors na gbe ti licence MIT" },
   "prefix_error": { "message": "ERROR Mbi" },
   "prefix_globalVer": { "message": "Mbeni ye so ayeke na yâ ti dunia kue" },
   "prefix_localVer": { "message": "A yeke na yâ ti Bible ti kodoro ni" },

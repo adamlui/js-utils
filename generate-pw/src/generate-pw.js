@@ -1,4 +1,4 @@
-// © 2024 Adam Lui & contributors under the MIT license.
+// © 2024–2025 Adam Lui & contributors under the MIT license.
 // Source: https://code.generatepw.org
 // Documentation: https://docs.generatepw.org
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js

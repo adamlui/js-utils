@@ -1,6 +1,6 @@
 {
   "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024 MIT લાઇસન્સ હેઠળ Adam Lui" },
+  "appCopyright": { "message": "© 2024–2025 MIT લાઇસન્સ હેઠળ Adam Lui" },
   "prefix_error": { "message": "ERROR" },
   "prefix_globalVer": { "message": "વૈશ્વિક સંસ્કરણ" },
   "prefix_localVer": { "message": "સ્થાનિક સંસ્કરણ" },
