@@ -262,7 +262,7 @@ Nome          | Tipo      | Descrição                                         
 
 ## 🏛️ Licença MIT
 
-**Direitos autorais © 2024–2025 [Adam Lui](https://github.com/adamlui) e colaboradores**
+**Direitos autorais © 2024 [Adam Lui](https://github.com/adamlui) e colaboradores**
 
 É concedida permissão, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e dos arquivos de documentação associados (o "Software"), para negociar o Software sem restrições, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar , publicar, distribuir, sublicenciar e/ou vender cópias do Software e permitir que as pessoas a quem o Software seja fornecido o façam, sujeito às seguintes condições:
 

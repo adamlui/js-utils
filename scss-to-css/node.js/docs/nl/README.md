@@ -262,7 +262,7 @@ Naam          | Type      | Beschrijving                                        
 
 ## 🏛️ MIT-licentie
 
-**Auteursrecht © 2024–2025 [Adam Lui](https://github.com/adamlui) en bijdragers**
+**Auteursrecht © 2024 [Adam Lui](https://github.com/adamlui) en bijdragers**
 
 Hierbij wordt gratis toestemming verleend aan elke persoon die een kopie van deze software en bijbehorende documentatiebestanden (de "Software") verkrijgt, om zonder beperking in de Software te handelen, inclusief maar niet beperkt tot de rechten om te gebruiken, kopiëren, wijzigen, samenvoegen publiceren, distribueren, in sublicentie geven en/of kopieën van de Software verkopen, en personen aan wie de Software wordt geleverd toestemming geven om dit te doen, met inachtneming van de volgende voorwaarden:
 
