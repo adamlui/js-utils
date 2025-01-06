@@ -1,8 +1,8 @@
 <div align="center">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://media.scsstocss.org/images/icons/earth/white/icon32.svg?52b67bc">
-            <img height=14 src="https://media.scsstocss.org/images/icons/earth/black/icon32.svg?52b67bc">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/earth/white/icon32.svg?52b67bc">
+            <img height=14 src="https://assets.scsstocss.org/images/icons/earth/black/icon32.svg?52b67bc">
         </picture>
         &nbsp;Deutsch |
         <a href="../..#readme">English</a> |
@@ -32,7 +32,7 @@
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:node.js/src/scss-to-css.js"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_scss-to-css%3Anode.js%2Fsrc%2Fscss-to-css.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Schwachstellen&color=gold"></a>
 <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=31 src="https://img.shields.io/badge/Erwähnt_in-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
-<img height=6px width="100%" src="https://media.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
 
 ## ⚡ Installation
 
@@ -56,9 +56,9 @@ $ npm install @adamlui/scss-to-css
 
 <br>
 
-<a href="https://github.com/sponsors/adamlui"><img src="https://media.scsstocss.org/images/banners/sponsor/$10/banner1660x260.png?2cba0ae"></a>
+<a href="https://github.com/sponsors/adamlui"><img src="https://assets.scsstocss.org/images/banners/sponsor/$10/banner1660x260.png?2cba0ae"></a>
 
-<img height=6px width="100%" src="https://media.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
 
 ## 💻 Verwendung der Befehlszeile
 
@@ -154,7 +154,7 @@ Info-Befehle:
 
 <br>
 
-<img height=6px width="100%" src="https://media.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
 
 ## 🔌 API-Nutzung
 
@@ -258,7 +258,7 @@ Name          | Typ             | Beschreibung                                  
 
 <br>
 
-<img height=6px width="100%" src="https://media.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
 
 ## 🏛️ MIT-Lizenz
 
@@ -272,7 +272,7 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 <br>
 
-<img height=6px width="100%" src="https://media.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
 
 ## 🛠️ Verwandte Dienstprogramme
 
@@ -282,7 +282,7 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 <br>[Herunterladen](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
 [Diskutieren](https://github.js-utils.org/discussions)
 
-### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.scsstocss.org/images/badges/awesome/badge.svg?52b67bc"></a>
+### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?52b67bc"></a>
 
 > Alle JavaScript-Dateien rekursiv verkleinern.
 <br>[Installieren](https://minify-js.org/docs/de#-installation) /
@@ -293,8 +293,8 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 <br>
 
-<img height=6px width="100%" src="https://media.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.scsstocss.org/images/icons/home/white/icon32x27.png?52b67bc"><img height=13 src="https://media.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?52b67bc"></picture> <a href="https://js-utils.org">**Weitere JavaScript-Dienstprogramme**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/home/white/icon32x27.png?52b67bc"><img height=13 src="https://assets.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?52b67bc"></picture> <a href="https://js-utils.org">**Weitere JavaScript-Dienstprogramme**</a> /
 <a href="https://github.scsstocss.org/discussions">Diskutieren</a> /
 <a href="#--scss-to-css">Zurück nach oben ↑</a>
