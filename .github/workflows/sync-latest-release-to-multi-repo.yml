@@ -1,4 +1,4 @@
-name: Sync latest release to adamlui/<app-repo>
+name: Sync latest minify.js + scss-to-css releases to adamlui/<app-repo>
 
 on:
   push:
