@@ -1,8 +1,8 @@
 <div align="right">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://media.minify-js.org/images/icons/earth/white/icon32.svg?d07ee82">
-            <img height=14 src="https://media.minify-js.org/images/icons/earth/black/icon32.svg?d07ee82">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/earth/white/icon32.svg?d07ee82">
+            <img height=14 src="https://assets.minify-js.org/images/icons/earth/black/icon32.svg?d07ee82">
         </picture>
         &nbsp;English |
         <a href="https://github.minify-js.org/tree/main/node.js/docs/zh-cn/#readme">简体中文</a> |
@@ -33,7 +33,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://media.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
 
 ## ⚡ Installation
 
@@ -57,9 +57,9 @@ $ npm install @adamlui/minify.js
 
 <br>
 
-<a href="https://github.com/sponsors/adamlui"><img src="https://media.minify-js.org/images/banners/sponsor/$10/banner1660x260.png?f6118ce"></a>
+<a href="https://github.com/sponsors/adamlui"><img src="https://assets.minify-js.org/images/banners/sponsor/$10/banner1660x260.png?f6118ce"></a>
 
-<img height=6px width="100%" src="https://media.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
 
 ## 💻 Command line usage
 
@@ -154,7 +154,7 @@ Info commands:
 
 <br>
 
-<img height=6px width="100%" src="https://media.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
 
 ## 🔌 API usage
 
@@ -259,7 +259,7 @@ Name          | Type    | Desciption                                            
 
 <br>
 
-<img height=6px width="100%" src="https://media.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
 
 ## 🏛️ MIT License
 
@@ -273,18 +273,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <br>
 
-<img height=6px width="100%" src="https://media.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
 
 ## 🛠️ Related utilities
 
-### [</> minify.js (Gulp)](https://gulp.minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
+### [</> minify.js (Gulp)](https://gulp.minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
 
 > Gulp plug-in to recursively minify all JavaScript files.
 <br>[Install](https://gulp.minify-js.org/#-installation) /
 [Readme](https://gulp.minify-js.org/#readme) /
 [Discuss](https://github.minify-js.org/discussions)
 
-### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://media.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
+### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
 
 > Recursively compile all SCSS files into minified CSS.
 <br>[Install](https://node.scsstocss.org/#-installation) /
@@ -295,8 +295,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <br>
 
-<img height=6px width="100%" src="https://media.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.minify-js.org/images/icons/home/white/icon32x27.png?d07ee82"><img height=13 src="https://media.minify-js.org/images/icons/home/dark-gray/icon32x27.png?d07ee82"></picture> <a href="https://js-utils.org">**More JavaScript utilities**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?d07ee82"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?d07ee82"></picture> <a href="https://js-utils.org">**More JavaScript utilities**</a> /
 <a href="https://github.minify-js.org/discussions">Discuss</a> /
 <a href="#-minifyjs">Back to top ↑</a>
