@@ -1,8 +1,8 @@
 <div align="center">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/earth/white/icon32.svg?52b67bc">
-            <img height=14 src="https://assets.scsstocss.org/images/icons/earth/black/icon32.svg?52b67bc">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://media.scsstocss.org/images/icons/earth/white/icon32.svg?52b67bc">
+            <img height=14 src="https://media.scsstocss.org/images/icons/earth/black/icon32.svg?52b67bc">
         </picture>
         &nbsp;繁體中文 |
         <a href="../..#readme">English</a> |
@@ -32,7 +32,7 @@
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:node.js/src/scss-to-css.js"><img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_scss-to-css%3Anode.js%2Fsrc%2Fscss-to-css.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=%E6%BC%8F%E6%B4%9E&color=gold"></a>
 <a href="https://github.com/toolleeo/cli-apps#conversion"><img height=31 src="https://img.shields.io/badge/中提到-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://media.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
 
 ## ⚡ 如何安裝
 
@@ -56,9 +56,9 @@ $ npm install @adamlui/scss-to-css
 
 <br>
 
-<a href="https://github.com/sponsors/adamlui"><img src="https://assets.scsstocss.org/images/banners/sponsor/$10/banner1660x260.png?2cba0ae"></a>
+<a href="https://github.com/sponsors/adamlui"><img src="https://media.scsstocss.org/images/banners/sponsor/$10/banner1660x260.png?2cba0ae"></a>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://media.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
 
 ## 💻 命令列使用
 
@@ -154,7 +154,7 @@ $ scss-to-css input_folder output_folder
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://media.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
 
 ## 🔌 API 使用
 
@@ -258,7 +258,7 @@ findSCSS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://media.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
 
 ## 🏛️ MIT 许可证
 
@@ -272,7 +272,7 @@ findSCSS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://media.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
 
 ## 🛠️ 相關實用程式
 
@@ -282,7 +282,7 @@ findSCSS() » Check returned array.
 <br>[下載](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
 [討論](https://github.js-utils.org/discussions)
 
-### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?52b67bc"></a>
+### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://media.scsstocss.org/images/badges/awesome/badge.svg?52b67bc"></a>
 
 > 遞歸地縮小所有 JavaScript 檔案。
 <br>[安裝](https://minify-js.org/docs/zh-tw#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%9D) /
@@ -293,8 +293,8 @@ findSCSS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://media.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/home/white/icon32x27.png?52b67bc"><img height=13 src="https://assets.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?52b67bc"></picture> <a href="https://js-utils.org">**更多 JavaScript 實用程式**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.scsstocss.org/images/icons/home/white/icon32x27.png?52b67bc"><img height=13 src="https://media.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?52b67bc"></picture> <a href="https://js-utils.org">**更多 JavaScript 實用程式**</a> /
 <a href="https://github.scsstocss.org/discussions">讨论</a> /
 <a href="#--scss-to-css">回到顶部 ↑</a>
