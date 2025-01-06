@@ -1,8 +1,8 @@
 <div align="right">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.org/images/icons/earth/white/icon32.svg?7c33be0">
-            <img height=14 src="https://media.js-utils.org/images/icons/earth/black/icon32.svg?7c33be0">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/earth/white/icon32.svg?7c33be0">
+            <img height=14 src="https://assets.js-utils.org/images/icons/earth/black/icon32.svg?7c33be0">
         </picture>
         &nbsp;বাংলা |
         <a href="../..#readme">English</a> |
@@ -29,7 +29,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
 
 ## 💡 সম্পর্কে
 
@@ -40,7 +40,7 @@
 - **মাল্টি-এনভায়রনমেন্ট সাপোর্ট —** Node.js বা ওয়েব ব্রাউজারে ব্যবহার করুন
 - **কমান্ড লাইন ব্যবহারযোগ্য —** শুধু টাইপ করুন `generate-pw`, এটাই
 
-<img height=6px width="100%" src="https://media.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
 
 ## ⚡ স্থাপন
 
@@ -58,13 +58,13 @@ $ npm install generate-pw
 
 <br>
 
-<a href="https://github.com/sponsors/adamlui"><img src="https://media.js-utils.org/images/banners/sponsor/$10/banner1660x260.png?09f5d64"></a>
+<a href="https://github.com/sponsors/adamlui"><img src="https://assets.js-utils.org/images/banners/sponsor/$10/banner1660x260.png?09f5d64"></a>
 
-<img height=6px width="100%" src="https://media.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🔌 API আমদানি করা হচ্ছে
 
-### <img height=18 src="https://media.js-utils.org/images/icons/platforms/node.js/icon25x28.png?3e22bae"> Node.js
+### <img height=18 src="https://assets.js-utils.org/images/icons/platforms/node.js/icon25x28.png?3e22bae"> Node.js
 
 #### ECMAScript*:
 
@@ -80,7 +80,7 @@ const pw = require('generate-pw');
 
 ###### _*Node.js সংস্করণ 14 বা উচ্চতর প্রয়োজন_
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.org/images/icons/platforms/web/light/icon25.png?3e22bae"><img width=16 src="https://media.js-utils.org/images/icons/platforms/web/dark/icon25.png?3e22bae"></picture> Web
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/platforms/web/light/icon25.png?3e22bae"><img width=16 src="https://assets.js-utils.org/images/icons/platforms/web/dark/icon25.png?3e22bae"></picture> Web
 
 #### <> HTML স্ক্রিপ্ট ট্যাগ:
 
@@ -97,7 +97,7 @@ const pw = require('generate-pw');
 })();
 ```
 
-### <img height=17 src="https://media.js-utils.org/images/icons/platforms/tampermonkey/icon28.png?4fd2fa7"><img height=17.5 src="https://media.js-utils.org/images/icons/platforms/violentmonkey/icon25.png?2fe972c"> Greasemonkey
+### <img height=17 src="https://assets.js-utils.org/images/icons/platforms/tampermonkey/icon28.png?4fd2fa7"><img height=17.5 src="https://assets.js-utils.org/images/icons/platforms/violentmonkey/icon25.png?2fe972c"> Greasemonkey
 
 ```js
 ...
@@ -113,7 +113,7 @@ const pw = require('generate-pw');
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
 
 ## 📋 API ব্যবহার
 
@@ -248,7 +248,7 @@ validateStrength() » Check returned object for score/recommendations.
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
 
 ## 💻 কমান্ড লাইন ব্যবহার
 
@@ -287,7 +287,7 @@ $ generate-pw
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🏛️ MIT লাইসেন্স
 
@@ -301,11 +301,11 @@ $ generate-pw
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🛠️ সম্পর্কিত ইউটিলিটি
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png?b4eb06e"><img height=21 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png?b4eb06e"></picture> [generate-ip](https://js-utils.org/generate-ip) &nbsp;<a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://media.js-utils.org/images/badges/awesome/badge.svg?7b16322"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png?b4eb06e"><img height=21 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png?b4eb06e"></picture> [generate-ip](https://js-utils.org/generate-ip) &nbsp;<a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?7b16322"></a>
 
 > এলোমেলোভাবে IPv4 + IPv6 + MAC ঠিকানাগুলি তৈরি করুন, বিন্যাস করুন এবং যাচাই করুন৷
 <br>[ইনস্টল করুন](https://docs.generate-ip.org/#-installation) /
@@ -314,7 +314,7 @@ $ generate-pw
 [CLI ব্যবহার](https://docs.generate-ip.org/#-command-line-usage) /
 [আলোচনা করা](https://github.js-utils.org/discussions)
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png?e735b99"><img height=22 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png?e735b99"></picture> [geolocate](https://js-utils.org/geolocate) &nbsp;<a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://media.js-utils.org/images/badges/awesome/badge.svg?7b16322"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png?e735b99"><img height=22 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png?e735b99"></picture> [geolocate](https://js-utils.org/geolocate) &nbsp;<a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?7b16322"></a>
 
 > CLI থেকে আইপি জিওলোকেশন ডেটা আনুন।
 <br>[ইনস্টল করুন](https://docs.geolocatejs.org/#-installation) /
@@ -325,8 +325,8 @@ $ generate-pw
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.org/images/icons/home/white/icon32x27.png?e735b99"><img height=13 src="https://media.js-utils.org/images/icons/home/dark-gray/icon32x27.png?e735b99"></picture> <a href="https://js-utils.org">**আরো জাভাস্ক্রিপ্ট ইউটিলিটি**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/home/white/icon32x27.png?e735b99"><img height=13 src="https://assets.js-utils.org/images/icons/home/dark-gray/icon32x27.png?e735b99"></picture> <a href="https://js-utils.org">**আরো জাভাস্ক্রিপ্ট ইউটিলিটি**</a> /
 <a href="https://github.js-utils.org/discussions">আলোচনা করা</a> /
 <a href="#-generate-pw">উপরে ফিরে যাও ↑</a>

@@ -1,8 +1,8 @@
 <div align="right">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.org/images/icons/earth/white/icon32.svg?7c33be0">
-            <img height=14 src="https://media.js-utils.org/images/icons/earth/black/icon32.svg?7c33be0">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/earth/white/icon32.svg?7c33be0">
+            <img height=14 src="https://assets.js-utils.org/images/icons/earth/black/icon32.svg?7c33be0">
         </picture>
         &nbsp;English |
         <a href="https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/zh-cn#readme">简体中文</a> |
@@ -29,7 +29,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
 
 ## 💡 About
 
@@ -40,7 +40,7 @@
 - **Multi-environment support —** Use in Node.js or the web browser
 - **Command line usable —** Just type `generate-pw`, that's it
 
-<img height=6px width="100%" src="https://media.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
 
 ## ⚡ Installation
 
@@ -58,13 +58,13 @@ $ npm install generate-pw
 
 <br>
 
-<a href="https://github.com/sponsors/adamlui"><img src="https://media.js-utils.org/images/banners/sponsor/$10/banner1660x260.png?09f5d64"></a>
+<a href="https://github.com/sponsors/adamlui"><img src="https://assets.js-utils.org/images/banners/sponsor/$10/banner1660x260.png?09f5d64"></a>
 
-<img height=6px width="100%" src="https://media.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🔌 Importing the API
 
-### <img height=18 src="https://media.js-utils.org/images/icons/platforms/node.js/icon25x28.png?3e22bae"> Node.js
+### <img height=18 src="https://assets.js-utils.org/images/icons/platforms/node.js/icon25x28.png?3e22bae"> Node.js
 
 #### ECMAScript*:
 
@@ -80,7 +80,7 @@ const pw = require('generate-pw');
 
 ###### _*Node.js version 14 or higher required_
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.org/images/icons/platforms/web/light/icon25.png?3e22bae"><img width=16 src="https://media.js-utils.org/images/icons/platforms/web/dark/icon25.png?3e22bae"></picture> Web
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/platforms/web/light/icon25.png?3e22bae"><img width=16 src="https://assets.js-utils.org/images/icons/platforms/web/dark/icon25.png?3e22bae"></picture> Web
 
 #### <> HTML script tag:
 
@@ -97,7 +97,7 @@ const pw = require('generate-pw');
 })();
 ```
 
-### <img height=17 src="https://media.js-utils.org/images/icons/platforms/tampermonkey/icon28.png?4fd2fa7"><img height=17.5 src="https://media.js-utils.org/images/icons/platforms/violentmonkey/icon25.png?2fe972c"> Greasemonkey
+### <img height=17 src="https://assets.js-utils.org/images/icons/platforms/tampermonkey/icon28.png?4fd2fa7"><img height=17.5 src="https://assets.js-utils.org/images/icons/platforms/violentmonkey/icon25.png?2fe972c"> Greasemonkey
 
 ```js
 ...
@@ -113,7 +113,7 @@ const pw = require('generate-pw');
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
 
 ## 📋 API usage
 
@@ -250,7 +250,7 @@ Name                  | Type    | Description                                   
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
 
 ## 💻 Command line usage
 
@@ -290,7 +290,7 @@ Info commands:
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🏛️ MIT License
 
@@ -304,11 +304,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
 
 ## 🛠️ Related utilities
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png?b4eb06e"><img height=21 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png?b4eb06e"></picture> [generate-ip](https://js-utils.org/generate-ip) &nbsp;<a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://media.js-utils.org/images/badges/awesome/badge.svg?7b16322"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png?b4eb06e"><img height=21 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png?b4eb06e"></picture> [generate-ip](https://js-utils.org/generate-ip) &nbsp;<a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?7b16322"></a>
 
 > Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.
 <br>[Install](https://docs.generate-ip.org/#-installation) /
@@ -317,7 +317,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [CLI usage](https://docs.generate-ip.org/#-command-line-usage) /
 [Discuss](https://github.js-utils.org/discussions)
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png?e735b99"><img height=22 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png?e735b99"></picture> [geolocate](https://js-utils.org/geolocate) &nbsp;<a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://media.js-utils.org/images/badges/awesome/badge.svg?7b16322"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png?e735b99"><img height=22 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png?e735b99"></picture> [geolocate](https://js-utils.org/geolocate) &nbsp;<a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?7b16322"></a>
 
 > Fetch IP geolocation data from the CLI.
 <br>[Install](https://docs.geolocatejs.org/#-installation) /
@@ -328,8 +328,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <br>
 
-<img height=6px width="100%" src="https://media.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?c0192d3">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.js-utils.org/images/icons/home/white/icon32x27.png?e735b99"><img height=13 src="https://media.js-utils.org/images/icons/home/dark-gray/icon32x27.png?e735b99"></picture> <a href="https://js-utils.org">**More JavaScript utilities**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/home/white/icon32x27.png?e735b99"><img height=13 src="https://assets.js-utils.org/images/icons/home/dark-gray/icon32x27.png?e735b99"></picture> <a href="https://js-utils.org">**More JavaScript utilities**</a> /
 <a href="https://github.js-utils.org/discussions">Discuss</a> /
 <a href="#-generate-pw">Back to top ↑</a>
