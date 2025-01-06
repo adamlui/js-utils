@@ -1,8 +1,8 @@
 <div align="center">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/earth/white/icon32.svg?52b67bc">
-            <img height=14 src="https://assets.scsstocss.org/images/icons/earth/black/icon32.svg?52b67bc">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/earth/white/icon32.svg?v=52b67bc">
+            <img height=14 src="https://assets.scsstocss.org/images/icons/earth/black/icon32.svg?v=52b67bc">
         </picture>
         &nbsp;Nederlands |
         <a href="../..#readme">English</a> |
@@ -38,7 +38,7 @@
 <a href="https://github.com/toolleeo/cli-apps#conversion">
     <img height=31 src="https://img.shields.io/badge/Vermeld_in-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
 
 ## ⚡ Installatie
 
@@ -62,9 +62,9 @@ $ npm install @adamlui/scss-to-css
 
 <br>
 
-<a href="https://github.com/sponsors/adamlui"><img src="https://assets.scsstocss.org/images/banners/sponsor/$10/banner1660x260.png?2cba0ae"></a>
+<a href="https://github.com/sponsors/adamlui"><img src="https://assets.scsstocss.org/images/banners/sponsor/$10/banner1660x260.png?v=2cba0ae"></a>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
 
 ## 💻 Gebruik van de opdrachtregel
 
@@ -160,7 +160,7 @@ Info-opdrachten:
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
 
 ## 🔌 API-gebruik
 
@@ -264,7 +264,7 @@ Naam          | Type      | Beschrijving                                        
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
 
 ## 🏛️ MIT-licentie
 
@@ -278,7 +278,7 @@ DE SOFTWARE WORDT GELEVERD "AS IS", ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIE
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
 
 ## 🛠️ Gerelateerde hulpprogramma's
 
@@ -288,7 +288,7 @@ DE SOFTWARE WORDT GELEVERD "AS IS", ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIE
 <br>[Downloaden](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
 [Bespreken](https://github.js-utils.org/discussions)
 
-### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?52b67bc"></a>
+### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?v=52b67bc"></a>
 
 > Verklein alle JavaScript-bestanden recursief.
 <br>[Installeren](https://node.minify-js.org/#-installation) /
@@ -299,8 +299,8 @@ DE SOFTWARE WORDT GELEVERD "AS IS", ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIE
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/home/white/icon32x27.png?52b67bc"><img height=13 src="https://assets.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?52b67bc"></picture> <a href="https://js-utils.org">**Meer JavaScript-hulpprogramma's**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/home/white/icon32x27.png?v=52b67bc"><img height=13 src="https://assets.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?v=52b67bc"></picture> <a href="https://js-utils.org">**Meer JavaScript-hulpprogramma's**</a> /
 <a href="https://github.scsstocss.org/discussions">Bespreken</a> /
 <a href="#--scss-to-css">Terug naar boven ↑</a>

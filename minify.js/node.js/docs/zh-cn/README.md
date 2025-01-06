@@ -1,8 +1,8 @@
 <div align="right">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/earth/white/icon32.svg?d07ee82">
-            <img height=14 src="https://assets.minify-js.org/images/icons/earth/black/icon32.svg?d07ee82">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/earth/white/icon32.svg?v=d07ee82">
+            <img height=14 src="https://assets.minify-js.org/images/icons/earth/black/icon32.svg?v=d07ee82">
         </picture>
         &nbsp;简体中文 |
         <a href="../..#readme">English</a> |
@@ -40,7 +40,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
 
 ## ⚡ 如何安装
 
@@ -64,9 +64,9 @@ $ npm install @adamlui/minify.js
 
 <br>
 
-<a href="https://github.com/sponsors/adamlui"><img src="https://assets.minify-js.org/images/banners/sponsor/$10/banner1660x260.png?f6118ce"></a>
+<a href="https://github.com/sponsors/adamlui"><img src="https://assets.minify-js.org/images/banners/sponsor/$10/banner1660x260.png?v=f6118ce"></a>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
 
 ## 💻 命令行使用
 
@@ -157,7 +157,7 @@ $ minify-js input_folder output_folder
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
 
 ## 🔌 API 使用
 
@@ -262,7 +262,7 @@ findJS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
 
 ## 🏛️ MIT 许可证
 
@@ -276,18 +276,18 @@ findJS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
 
 ## 🛠️ 相关实用程序
 
-### [</> minify.js (Gulp)](https://gulp.minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
+### [</> minify.js (Gulp)](https://gulp.minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=b78dcd3"></a>
 
 > Gulp 插件可递归地缩小所有 JavaScript 文件。
 <br>[安装](https://gulp.minify-js.org/#-installation) /
 [自述文件](https://gulp.minify-js.org/#readme) /
 [讨论](https://github.minify-js.org/discussions)
 
-### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?b78dcd3"></a>
+### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=b78dcd3"></a>
 
 > 将所有 SCSS 文件递归编译为缩小的 CSS。
 <br>[安装](https://node.scsstocss.org/#-installation) /
@@ -298,8 +298,8 @@ findJS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?d07ee82"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?d07ee82"></picture> <a href="https://js-utils.org">**更多 JavaScript 实用程序**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=d07ee82"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=d07ee82"></picture> <a href="https://js-utils.org">**更多 JavaScript 实用程序**</a> /
 <a href="https://github.minify-js.org/discussions">讨论</a> /
 <a href="#-minifyjs">回到顶部 ↑</a>

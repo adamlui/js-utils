@@ -2,8 +2,8 @@
     <td align="center" width=1000>
         <h6>
             <picture>
-                <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/earth/white/icon32.svg?52b67bc">
-                <img height=14 src="https://assets.scsstocss.org/images/icons/earth/black/icon32.svg?52b67bc">
+                <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/earth/white/icon32.svg?v=52b67bc">
+                <img height=14 src="https://assets.scsstocss.org/images/icons/earth/black/icon32.svg?v=52b67bc">
             </picture>
             &nbsp;English |
             <a href="https://github.com/adamlui/scss-to-css/tree/main/node.js/docs/zh-cn#readme">简体中文</a> |
@@ -40,7 +40,7 @@
 <a href="https://github.com/toolleeo/cli-apps#conversion">
     <img height=31 src="https://img.shields.io/badge/Mentioned_in-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
 
 ## ⚡ Installation
 
@@ -64,9 +64,9 @@ $ npm install @adamlui/scss-to-css
 
 <br>
 
-<a href="https://github.com/sponsors/adamlui"><img src="https://assets.scsstocss.org/images/banners/sponsor/$10/banner1660x260.png?2cba0ae"></a>
+<a href="https://github.com/sponsors/adamlui"><img src="https://assets.scsstocss.org/images/banners/sponsor/$10/banner1660x260.png?v=2cba0ae"></a>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
 
 ## 💻 Command line usage
 
@@ -167,7 +167,7 @@ Info commands:
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
 
 ## 🔌 API usage
 
@@ -271,7 +271,7 @@ Name          | Type    | Desciption                                            
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
 
 ## 🏛️ MIT License
 
@@ -285,7 +285,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
 
 ## 🛠️ Related utilities
 
@@ -295,7 +295,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <br>[Download](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
 [Discuss](https://github.js-utils.org/discussions)
 
-### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?52b67bc"></a>
+### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?v=52b67bc"></a>
 
 > Recursively minify all JavaScript files.
 <br>[Install](https://node.minify-js.org/#-installation) /
@@ -306,8 +306,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/home/white/icon32x27.png?52b67bc"><img height=13 src="https://assets.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?52b67bc"></picture> <a href="https://js-utils.org">**More JavaScript utilities**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/home/white/icon32x27.png?v=52b67bc"><img height=13 src="https://assets.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?v=52b67bc"></picture> <a href="https://js-utils.org">**More JavaScript utilities**</a> /
 <a href="https://github.scsstocss.org/discussions">Discuss</a> /
 <a href="#--scss-to-css">Back to top ↑</a>
