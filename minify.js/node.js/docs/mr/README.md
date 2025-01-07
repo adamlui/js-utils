@@ -40,7 +40,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 ## ⚡ स्थापना
 
@@ -66,7 +66,7 @@ $ npm install @adamlui/minify.js
 
 <a href="https://github.com/sponsors/adamlui"><img src="https://assets.minify-js.org/images/banners/sponsor/$10/banner1660x260.png?v=f6118ce"></a>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 ## 💻 कमांड लाइन वापर
 
@@ -157,7 +157,7 @@ $ minify-js input_folder output_folder
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 ## 🔌 API वापर
 
@@ -262,7 +262,7 @@ findJS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 ## 🏛️ MIT परवाना
 
@@ -276,7 +276,7 @@ findJS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 ## 🛠️ संबंधित उपयुक्तता
 
@@ -298,7 +298,7 @@ findJS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=d07ee82"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=d07ee82"></picture> <a href="https://js-utils.org">**अधिक JavaScript उपयुक्तता**</a> /
 <a href="https://github.minify-js.org/discussions">चर्चा करा</a> /

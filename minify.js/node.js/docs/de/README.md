@@ -40,7 +40,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 ## ⚡ Installation
 
@@ -66,7 +66,7 @@ $ npm install @adamlui/minify.js
 
 <a href="https://github.com/sponsors/adamlui"><img src="https://assets.minify-js.org/images/banners/sponsor/$10/banner1660x260.png?v=f6118ce"></a>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 ## 💻 Verwendung der Befehlszeile
 
@@ -157,7 +157,7 @@ Info-Befehle:
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 ## 🔌 API-Nutzung
 
@@ -262,7 +262,7 @@ Name          | Typ             | Beschreibung                                  
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 ## 🏛️ MIT-Lizenz
 
@@ -276,7 +276,7 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 ## 🛠️ Verwandte Dienstprogramme
 
@@ -298,7 +298,7 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/gradient-aqua.png?v=8b9ed02">
+<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=d07ee82"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=d07ee82"></picture> <a href="https://js-utils.org">**Weitere JavaScript-Dienstprogramme**</a> /
 <a href="https://github.minify-js.org/discussions">Diskutieren</a> /
