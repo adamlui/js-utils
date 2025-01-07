@@ -36,7 +36,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 💡 সম্পর্কে
 
@@ -47,7 +47,7 @@
 - **মাল্টি-এনভায়রনমেন্ট সাপোর্ট —** Node.js বা ওয়েব ব্রাউজারে ব্যবহার করুন
 - **কমান্ড লাইন ব্যবহারযোগ্য —** শুধু টাইপ করুন `generate-pw`, এটাই
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## ⚡ স্থাপন
 
@@ -67,7 +67,7 @@ $ npm install generate-pw
 
 <a href="https://github.com/sponsors/adamlui"><img src="https://assets.js-utils.org/images/banners/sponsor/$10/banner1660x260.png?v=09f5d64"></a>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 🔌 API আমদানি করা হচ্ছে
 
@@ -120,7 +120,7 @@ const pw = require('generate-pw');
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 📋 API ব্যবহার
 
@@ -255,7 +255,7 @@ validateStrength() » Check returned object for score/recommendations.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 💻 কমান্ড লাইন ব্যবহার
 
@@ -294,7 +294,7 @@ $ generate-pw
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 🏛️ MIT লাইসেন্স
 
@@ -308,7 +308,7 @@ $ generate-pw
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 🛠️ সম্পর্কিত ইউটিলিটি
 
@@ -332,7 +332,7 @@ $ generate-pw
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/home/white/icon32x27.png?v=e735b99"><img height=13 src="https://assets.js-utils.org/images/icons/home/dark-gray/icon32x27.png?v=e735b99"></picture> <a href="https://js-utils.org">**আরো জাভাস্ক্রিপ্ট ইউটিলিটি**</a> /
 <a href="https://github.js-utils.org/discussions">আলোচনা করা</a> /

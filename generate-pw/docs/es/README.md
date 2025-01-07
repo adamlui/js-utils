@@ -36,7 +36,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 💡 Acerca de
 
@@ -47,7 +47,7 @@
 - **Compatibilidad con múltiples entornos:** Uso en Node.js o el navegador web
 - **Línea de comando utilizable —** Simplemente escriba `generate-pw`, eso es todo
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## ⚡ Instalación
 
@@ -67,7 +67,7 @@ $ npm install generate-pw
 
 <a href="https://github.com/sponsors/adamlui"><img src="https://assets.js-utils.org/images/banners/sponsor/$10/banner1660x260.png?v=09f5d64"></a>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 🔌 Importando la API
 
@@ -120,7 +120,7 @@ const pw = require('generate-pw');
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 📋 Uso de API
 
@@ -257,7 +257,7 @@ Nombre                | Tipo     | Descripción                                 
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 💻 Uso de la línea de comando
 
@@ -296,7 +296,7 @@ Comandos de información:
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 🏛️ Licencia MIT
 
@@ -310,7 +310,7 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 🛠️ Utilidades relacionadas
 
@@ -334,7 +334,7 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/home/white/icon32x27.png?v=e735b99"><img height=13 src="https://assets.js-utils.org/images/icons/home/dark-gray/icon32x27.png?v=e735b99"></picture> <a href="https://js-utils.org">**Más utilidades de JavaScript**</a> /
 <a href="https://github.js-utils.org/discussions">Conversar</a> /

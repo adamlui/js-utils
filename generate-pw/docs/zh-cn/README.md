@@ -36,7 +36,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 💡 关于
 
@@ -65,7 +65,7 @@ $ npm install generate-pw
 
 <a href="https://github.com/sponsors/adamlui"><img src="https://assets.js-utils.org/images/banners/sponsor/$10/banner1660x260.png?v=09f5d64"></a>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 🔌 导入 API
 
@@ -118,7 +118,7 @@ const pw = require('generate-pw');
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 📋 API 使用
 
@@ -253,7 +253,7 @@ validateStrength() » Check returned object for score/recommendations.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 💻 命令行使用
 
@@ -292,7 +292,7 @@ $ generate-pw
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 🏛️ MIT 许可证
 
@@ -306,7 +306,7 @@ $ generate-pw
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 🛠️ 相关实用程序
 
@@ -330,7 +330,7 @@ $ generate-pw
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/home/white/icon32x27.png?v=e735b99"><img height=13 src="https://assets.js-utils.org/images/icons/home/dark-gray/icon32x27.png?v=e735b99"></picture> <a href="https://js-utils.org">**更多 JavaScript 实用程序**</a> /
 <a href="https://github.js-utils.org/discussions">讨论</a> /

@@ -14,7 +14,7 @@
 
 Essential JavaScript libraries/utilities for Node.js and the web
 
-<img height=10px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=10px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ### <a href="../generate-ip"><picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png?b4eb06e"><img height=21 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png?b4eb06e"></picture> generate-ip</a> <a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?v=7b16322"></a>
 
@@ -67,7 +67,7 @@ Essential JavaScript libraries/utilities for Node.js and the web
 [API usage](../scss-to-css/node.js/#-api-usage) /
 [Discuss](https://github.js-utils.org/discussions)
 
-<img height=6px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/tag/white/icon16.svg?v=7b16322"><img height=14 src="https://assets.js-utils.org/images/icons/tag/dark-gray/icon16.svg?v=7b16322"></picture> <a href="https://js-utils.org/releases">**Latest releases**</a> /
 <a href="https://github.js-utils.org/discussions">Discuss</a> /

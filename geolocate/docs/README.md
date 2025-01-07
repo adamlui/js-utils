@@ -19,7 +19,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## ⚡ Installation
 
@@ -45,7 +45,7 @@ $ npm install @adamlui/geolocate
 
 <a href="https://github.com/sponsors/adamlui"><img src="https://assets.js-utils.org/images/banners/sponsor/$10/banner1660x260.png?v=09f5d64"></a>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 💻 Command line usage
 
@@ -74,7 +74,7 @@ Info commands:
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 🔌 Importing the API
 
@@ -129,7 +129,7 @@ const geo = require('@adamlui/geolocate');
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 📋 API usage
 
@@ -180,7 +180,7 @@ Name      | Type    | Description                       | Default Value
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 🏛️ MIT License
 
@@ -194,7 +194,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 ## 🛠️ Related utilities
 
@@ -218,7 +218,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/gradient-aqua.png?v=c0192d3">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/home/white/icon32x27.png?v=e735b99"><img height=13 src="https://assets.js-utils.org/images/icons/home/dark-gray/icon32x27.png?v=e735b99"></picture> <a href="https://js-utils.org">**More JavaScript utilities**</a> /
 <a href="https://github.js-utils.org/discussions">Discuss</a> /
