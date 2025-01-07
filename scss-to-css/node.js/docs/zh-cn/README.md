@@ -38,7 +38,7 @@
 <a href="https://github.com/toolleeo/cli-apps#conversion">
     <img height=31 src="https://img.shields.io/badge/中提到-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
 
 ## ⚡ 如何安装
 
@@ -64,7 +64,7 @@ $ npm install @adamlui/scss-to-css
 
 <a href="https://github.com/sponsors/adamlui"><img src="https://assets.scsstocss.org/images/banners/sponsor/$10/banner1660x260.png?v=2cba0ae"></a>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
 
 ## 💻 命令行使用
 
@@ -160,7 +160,7 @@ $ scss-to-css input_folder output_folder
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
 
 ## 🔌 API 使用
 
@@ -264,7 +264,7 @@ findSCSS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
 
 ## 🏛️ MIT 许可证
 
@@ -278,7 +278,7 @@ findSCSS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
 
 ## 🛠️ 相关实用程序
 
@@ -299,7 +299,7 @@ findSCSS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/gradient-aqua.png?v=52b67bc">
+<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/home/white/icon32x27.png?v=52b67bc"><img height=13 src="https://assets.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?v=52b67bc"></picture> <a href="https://js-utils.org">**更多 JavaScript 实用程序**</a> /
 <a href="https://github.scsstocss.org/discussions">讨论</a> /
