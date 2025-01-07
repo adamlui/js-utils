@@ -139,6 +139,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=d07ee82"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=d07ee82"></picture> <a href="https://js-utils.org">**More JavaScript utilities**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://js-utils.org">**More JavaScript utilities**</a> /
 <a href="https://github.minify-js.org/discussions">Discuss</a> /
 <a href="#-minifyjs">Back to top ↑</a>
