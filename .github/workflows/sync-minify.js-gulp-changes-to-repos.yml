@@ -6,7 +6,7 @@ on:
     paths: [minify.js/gulp/**]
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   build:
