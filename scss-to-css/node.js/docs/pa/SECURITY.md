@@ -1,8 +1,8 @@
 <div align="center">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/earth/white/icon32.svg?v=52b67bc">
-            <img height=14 src="https://assets.scsstocss.org/images/icons/earth/black/icon32.svg?v=52b67bc">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/earth/white/icon32.svg?v=7e4a141">
+            <img height=14 src="https://assets.scsstocss.org/images/icons/earth/black/icon32.svg?v=7e4a141">
         </picture>
         &nbsp;ਪੰਜਾਬੀ |
         <a href="../SECURITY.md">English</a> |

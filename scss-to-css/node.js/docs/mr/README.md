@@ -1,8 +1,8 @@
 <div align="center">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/earth/white/icon32.svg?v=52b67bc">
-            <img height=14 src="https://assets.scsstocss.org/images/icons/earth/black/icon32.svg?v=52b67bc">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/earth/white/icon32.svg?v=7e4a141">
+            <img height=14 src="https://assets.scsstocss.org/images/icons/earth/black/icon32.svg?v=7e4a141">
         </picture>
         &nbsp;मराठी |
         <a href="../..#readme">English</a> |
@@ -288,7 +288,7 @@ findSCSS() » Check returned array.
 <br>[डाउनलोड करा](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
 [चर्चा करा](https://github.js-utils.org/discussions)
 
-### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?v=52b67bc"></a>
+### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?v=7e4a141"></a>
 
 > सर्व JavaScript फायली आवर्तीपणे लहान करा.
 <br>[स्थापित करा](https://minify-js.org/docs/mr#-%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BE%E0%A4%AA%E0%A4%A8%E0%A4%BE) /
@@ -301,6 +301,6 @@ findSCSS() » Check returned array.
 
 <img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/home/white/icon32x27.png?v=52b67bc"><img height=13 src="https://assets.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?v=52b67bc"></picture> <a href="https://js-utils.org">**अधिक JavaScript उपयुक्तता**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/home/white/icon32x27.png?v=7e4a141"><img height=13 src="https://assets.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?v=7e4a141"></picture> <a href="https://js-utils.org">**अधिक JavaScript उपयुक्तता**</a> /
 <a href="https://github.scsstocss.org/discussions">चर्चा करा</a> /
 <a href="#--scss-to-css">परत वर जा ↑</a>
