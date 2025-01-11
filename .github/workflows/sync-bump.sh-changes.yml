@@ -66,6 +66,7 @@ jobs:
           git config --global user.signingkey "${{ secrets.GPG_PRIVATE_ID }}"
 
       - name: Push changes to adamlui/js-utils
+        if: env.SYNC_SRC
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           git pull # again to sync w/ concurrent workflow updates
