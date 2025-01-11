@@ -4,6 +4,9 @@ on:
   push:
     tags: ["*minify", "*scss-to-css*"]
 
+permissions:
+  contents: read
+
 jobs:
   sync-latest-release:
     name: Sync latest release to adamlui/<app-repo>
