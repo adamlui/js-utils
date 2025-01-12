@@ -39,7 +39,6 @@ export default [
                 //                          + https://github.com/import-js/eslint-plugin-import/issues/3119 )
         }
     },
-    { files: ['**/*.mjs'], languageOptions: { sourceType: 'module' }},
     { files: ['**/*.json'], language: 'json/json', ...json.configs.recommended },
     {
         files: ['**/*.md'], language: 'markdown/commonmark', plugins: { markdown },
@@ -50,5 +49,6 @@ export default [
             'markdown/no-missing-label-refs': 'off' // allow missing label references
         }
     },
+    { files: ['**/*.mjs'], languageOptions: { sourceType: 'module' }},
     { files: ['**/*.yaml, **/*.yml'], ...yml.configs['flat/standard'][1] }
 ]
