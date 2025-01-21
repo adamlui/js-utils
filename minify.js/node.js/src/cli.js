@@ -276,14 +276,14 @@ const pkgName = '@adamlui/minify.js',
             // Split msg into lines of appropriate lengths
             let currentLine = '';
             words.forEach(word => {
-                const lineLength = terminalWidth - ( lines.length == 0 ? 0 : indent );
+                const lineLength = terminalWidth - ( !lines.length ? 0 : indent );
                 if (currentLine.length + prefix.length + word.length > lineLength) { // cap/store it
-                    lines.push(lines.length == 0 ? currentLine : currentLine.trimStart());
+                    lines.push(!lines.length ? currentLine : currentLine.trimStart());
                     currentLine = '';
                 }
                 currentLine += word;
             });
-            lines.push(lines.length == 0 ? currentLine : currentLine.trimStart());
+            lines.push(!lines.length ? currentLine : currentLine.trimStart());
 
             // Print formatted msg
             lines.forEach((line, index) => console.info(prefix + (
