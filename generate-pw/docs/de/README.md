@@ -36,7 +36,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=0d36e26">
 
 ## 💡 Um
 
@@ -47,7 +47,7 @@
 - **Unterstützung für mehrere Umgebungen —** Verwendung in Node.js oder im Webbrowser
 - **Befehlszeile verwendbar —** Geben Sie einfach `generate-pw` ein, fertig
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=0d36e26">
 
 ## ⚡ Installation
 
@@ -65,13 +65,13 @@ $ npm install generate-pw
 
 <br>
 
-<a href="https://github.com/sponsors/adamlui"><img src="https://assets.js-utils.org/images/banners/sponsor/$10/banner1660x260.png?v=09f5d64"></a>
+<a href="https://github.com/sponsors/adamlui"><img src="https://assets.js-utils.org/images/banners/sponsor/$10/banner1660x260.png?v=0d36e26"></a>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=0d36e26">
 
 ## 🔌 Importieren der API
 
-### <img height=18 src="https://assets.js-utils.org/images/icons/platforms/node.js/icon25x28.png?v=3e22bae"> Node.js
+### <img height=18 src="https://assets.js-utils.org/images/icons/platforms/node.js/icon25x28.png?v=0d36e26"> Node.js
 
 #### ECMAScript*:
 
@@ -87,7 +87,7 @@ const pw = require('generate-pw');
 
 ###### _*Node.js Version 14 oder höher erforderlich_
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/platforms/web/light/icon25.png?v=3e22bae"><img width=16 src="https://assets.js-utils.org/images/icons/platforms/web/dark/icon25.png?v=3e22bae"></picture> Web
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/platforms/web/light/icon25.png?v=0d36e26"><img width=16 src="https://assets.js-utils.org/images/icons/platforms/web/dark/icon25.png?v=0d36e26"></picture> Web
 
 #### <> HTML-Skript-Tag:
 
@@ -104,7 +104,7 @@ const pw = require('generate-pw');
 })();
 ```
 
-### <img height=17 src="https://assets.js-utils.org/images/icons/platforms/tampermonkey/icon28.png?v=4fd2fa7"><img height=17.5 src="https://assets.js-utils.org/images/icons/platforms/violentmonkey/icon25.png?v=2fe972c"> Greasemonkey
+### <img height=17 src="https://assets.js-utils.org/images/icons/platforms/tampermonkey/icon28.png?v=0d36e26"><img height=17.5 src="https://assets.js-utils.org/images/icons/platforms/violentmonkey/icon25.png?v=0d36e26"> Greasemonkey
 
 ```js
 ...
@@ -120,7 +120,7 @@ const pw = require('generate-pw');
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=0d36e26">
 
 ## 📋 API-Nutzung
 
@@ -257,7 +257,7 @@ Name                  | Geben Sie       | ein Beschreibung                      
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=0d36e26">
 
 ## 💻 Verwendung der Befehlszeile
 
@@ -267,7 +267,7 @@ Bei [globaler](#-installation) Installation kann **generate-pw** auch über die 
 $ generate-pw
 ```
 
-<img src="https://media.generatepw.org/images/screenshots/cli/generate-pw-cmd-output.png?7b16322">
+<img src="https://media.generatepw.org/images/screenshots/cli/generate-pw-cmd-output.png?0d36e26">
 
 #
 
@@ -296,7 +296,7 @@ Info-Befehle:
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=0d36e26">
 
 ## 🏛️ MIT-Lizenz
 
@@ -310,11 +310,11 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=0d36e26">
 
 ## 🛠️ Verwandte Dienstprogramme
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png?b4eb06e"><img height=21 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png?b4eb06e"></picture> [generate-ip](https://js-utils.org/generate-ip) &nbsp;<a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?v=7b16322"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png?b4eb06e"><img height=21 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png?b4eb06e"></picture> [generate-ip](https://js-utils.org/generate-ip) &nbsp;<a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?v=0d36e26"></a>
 
 > Generieren, formatieren und validieren Sie IPv4 + IPv6 + MAC-Adressen nach dem Zufallsprinzip.
 <br>[Installieren](https://docs.generate-ip.org/#-installation) /
@@ -323,7 +323,7 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 [CLI-Nutzung](https://docs.generate-ip.org/#-command-line-usage) /
 [Diskutieren](https://github.js-utils.org/discussions)
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png?e735b99"><img height=22 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png?e735b99"></picture> [geolocate](https://js-utils.org/geolocate) &nbsp;<a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?v=7b16322"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png?0d36e26"><img height=22 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png?0d36e26"></picture> [geolocate](https://js-utils.org/geolocate) &nbsp;<a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?v=0d36e26"></a>
 
 > Rufen Sie IP-Geolocation-Daten von der CLI ab.
 <br>[Installieren](https://docs.geolocatejs.org/#-installation) /
@@ -334,8 +334,8 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 <br>
 
-<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=52a3169">
+<img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=0d36e26">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/home/white/icon32x27.png?v=e735b99"><img height=13 src="https://assets.js-utils.org/images/icons/home/dark-gray/icon32x27.png?v=e735b99"></picture> <a href="https://js-utils.org">**Weitere JavaScript-Dienstprogramme**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/home/white/icon32x27.png?v=0d36e26"><img height=13 src="https://assets.js-utils.org/images/icons/home/dark-gray/icon32x27.png?v=0d36e26"></picture> <a href="https://js-utils.org">**Weitere JavaScript-Dienstprogramme**</a> /
 <a href="https://github.js-utils.org/discussions">Diskutieren</a> /
 <a href="#-generate-pw">Zurück nach oben ↑</a>
