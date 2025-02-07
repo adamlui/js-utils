@@ -1,9 +1,9 @@
-name: Sync README.md between scss-to-css/node.js/ & scss-to-css/node.js/docs/, then scss-to-css/node.js/ to adamlui/scss-to-css/node.js/
+name: Sync README.md between scss-to-css/node.js/ & scss-to-css/node.js/docs/, then scss-to-css/ to adamlui/scss-to-css
 
 on:
   push:
     branches: [main]
-    paths: [scss-to-css/node.js/**]
+    paths: [scss-to-css/**]
 
 permissions:
   contents: read
@@ -60,11 +60,11 @@ jobs:
           # Expose sync src for commit msg in self-push step
           echo "SYNC_SRC=$src_folder" >> $GITHUB_ENV
 
-      - name: Sync scss-to-css/node.js/ to adamlui/scss-to-css/node.js/
+      - name: Sync scss-to-css/ to adamlui/scss-to-css/
         run: |
-          rsync -avhr --delete \
-            ${{ github.workspace }}/adamlui/js-utils/scss-to-css/node.js/ \
-            ${{ github.workspace }}/adamlui/scss-to-css/node.js/
+          rsync -avhr --delete --filter='P /.*' \
+            ${{ github.workspace }}/adamlui/js-utils/scss-to-css/ \
+            ${{ github.workspace }}/adamlui/scss-to-css/
 
       - name: Escape backticks in commit msg
         env:
@@ -86,15 +86,13 @@ jobs:
         if: env.SYNC_SRC
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
-          git pull # again to sync w/ concurrent workflow updates
-          git add .
+          git pull && git add .
           git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from ${{ env.SYNC_SRC }}]" || true
           git push
 
       - name: Push changes to adamlui/scss-to-css
         run: |
           cd ${{ github.workspace }}/adamlui/scss-to-css
-          git pull # again to sync w/ concurrent workflow updates
-          git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/js-utils]" || true
+          git pull && git add .
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/scss-to-css]" || true
           git push
