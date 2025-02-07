@@ -1,9 +1,9 @@
-name: Sync README.md between minify.js/gulp/ & minify.js/gulp/docs/, then minify.js/gulp/ to adamlui/minify.js/gulp/
+name: Sync README.md between minify.js/<gulp|node.js>/ & minify.js/<gulp|node.js>/docs/, then minify.js/ to adamlui/minify.js
 
 on:
   push:
     branches: [main]
-    paths: [minify.js/gulp/**]
+    paths: [minify.js/**]
 
 permissions:
   contents: read
@@ -46,25 +46,45 @@ jobs:
 
           # Perform syncs of diff READMEs
           if [[ "$root_readme_content" != "$docs_readme_content" ]] ; then
+            echo "readme_updated=true" >> $GITHUB_ENV
             if (( $root_readme_modified > $docs_readme_modified )) ; then
               cp -f "$root_readme" "$docs_readme"
               echo "Copied $root_readme to $docs_readme"
-              src_folder="/minify.js/gulp"
             elif (( $docs_readme_modified > $root_readme_modified )) ; then
               cp -f "$docs_readme" "$root_readme"
               echo "Copied $docs_readme to $root_readme"
-              src_folder="/minify.js/gulp/docs"
             fi
           fi
 
-          # Expose sync src for commit msg in self-push step
-          echo "SYNC_SRC=$src_folder" >> $GITHUB_ENV
-
-      - name: Sync minify.js/gulp/ to adamlui/minify.js/gulp/
+      - name: Sync README.md between minify.js/node.js/ & minify.js/node.js/docs
         run: |
-          rsync -avhr --delete \
-            ${{ github.workspace }}/adamlui/js-utils/minify.js/gulp/ \
-            ${{ github.workspace }}/adamlui/minify.js/gulp/
+          cd ${{ github.workspace }}/adamlui/js-utils
+
+          # Init paths/content/mod timestamps
+          root_readme="./minify.js/node.js/README.md"
+          root_readme_content=$(git show HEAD:"$root_readme")
+          root_readme_modified=$(git log -1 --format="%ct" -- "$root_readme")
+          docs_readme="./minify.js/node.js/docs/README.md"
+          docs_readme_content=$(git show HEAD:"$docs_readme")
+          docs_readme_modified=$(git log -1 --format="%ct" -- "$docs_readme")
+
+          # Perform syncs of diff READMEs
+          if [[ "$root_readme_content" != "$docs_readme_content" ]] ; then
+            echo "readme_updated=true" >> $GITHUB_ENV
+            if (( $root_readme_modified > $docs_readme_modified )) ; then
+              cp -f "$root_readme" "$docs_readme"
+              echo "Copied $root_readme to $docs_readme"
+            elif (( $docs_readme_modified > $root_readme_modified )) ; then
+              cp -f "$docs_readme" "$root_readme"
+              echo "Copied $docs_readme to $root_readme"
+            fi
+          fi
+
+      - name: Sync minify.js/ to adamlui/minify.js/
+        run: |
+          rsync -avhr --delete --filter='P /.*' \
+            ${{ github.workspace }}/adamlui/js-utils/minify.js/ \
+            ${{ github.workspace }}/adamlui/minify.js/
 
       - name: Escape backticks in commit msg
         env:
@@ -73,7 +93,7 @@ jobs:
           echo "ESCAPED_MSG<<EOF" >> $GITHUB_ENV
           echo "$COMMIT_MSG" | sed 's/`/\`/g' >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
-
+      
       - name: Config committer
         run: |
           gpg --batch --import <(echo "${{ secrets.GPG_PRIVATE_KEY }}")
@@ -83,18 +103,16 @@ jobs:
           git config --global user.signingkey "${{ secrets.GPG_PRIVATE_ID }}"
 
       - name: Push changes to adamlui/js-utils
-        if: env.SYNC_SRC
+        if: env.readme_updated
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
-          git pull # again to sync w/ concurrent workflow updates
-          git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from ${{ env.SYNC_SRC }}]" || true
+          git pull ** git add .
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/minify.js]" || true
           git push
 
       - name: Push changes to adamlui/minify.js
         run: |
           cd ${{ github.workspace }}/adamlui/minify.js
-          git pull # again to sync w/ concurrent workflow updates
-          git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/js-utils]" || true
+          git pull ** git add .
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/minify.js]" || true
           git push
