@@ -1,6 +1,6 @@
 {
   "name": "@adamlui/scss-to-css",
-  "version": "1.10.24",
+  "version": "1.10.25",
   "description": "Recursively compile all SCSS files into minified CSS",
   "author": {
     "name": "Adam Lui",
@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "node-clipboardy": "^1.0.3",
-    "sass": "^1.84.0"
+    "sass": "^1.83.4"
   },
   "devDependencies": {
     "@adamlui/minify.js": "^1.8.5"
