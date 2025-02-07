@@ -32,7 +32,7 @@ jobs:
           # Init pkg paths
           PKG_ROOTS=($(find . -type d -name "docs" `# paths to docs/` \
             ! -path "*/node_modules/*" `# exclude node_modules` \
-            ! -path "*/minify.js|scss-to-css/*" `# exclude multi-platform pkgs w/ own sync scripts` \
+            ! -regex ".*\(minify.js\|scss-to-css\)/.*" `# exclude multi-platform pkgs w/ own sync scripts` \
             -exec dirname {} \; | # get parent dir of found docs/
             grep -Ev "^\.$")) # exclude repo root
 
