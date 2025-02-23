@@ -230,8 +230,8 @@ function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'fl
         lines.push(!lines.length ? currentLine : currentLine.trimStart());
 
         // Print formatted msg
-        lines.forEach((line, index) => console.info(prefix + (
-            index == 0 ? line // print 1st line unindented
+        lines.forEach((line, idx) => console.info(prefix + (
+            idx == 0 ? line // print 1st line unindented
                 : ' '.repeat(indent) + line // print subsequent lines indented
         )));
     }

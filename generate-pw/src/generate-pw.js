@@ -70,8 +70,8 @@ function generatePassword(options = {}) {
         if (options.verbose && !fromGeneratePasswords) console.info('generatePassword() » Generating password...');
         let password = '';
         for (let i = 0; i < options.length; i++) {
-            const randomIndex = randomInt(0, pwCharset.length);
-            password += pwCharset[randomIndex];
+            const randomIdx = randomInt(0, pwCharset.length);
+            password += pwCharset[randomIdx];
         }
 
         // Enforce strict mode if enabled
