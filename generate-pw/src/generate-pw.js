@@ -71,7 +71,7 @@ function generatePassword(options = {}) {
         let password = '';
         for (let i = 0; i < options.length; i++) {
             const randomIndex = randomInt(0, pwCharset.length);
-            password += pwCharset.charAt(randomIndex);
+            password += pwCharset[randomIndex];
         }
 
         // Enforce strict mode if enabled
@@ -171,7 +171,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     requiredCharTypes.forEach(charType => hasFlags[charType] = false);
     for (let i = 0; i < password.length; i++)
         for (const charType of requiredCharTypes)
-            if ((charsets[charType] || charsets[charType + 's']).includes(password.charAt(i))) {
+            if ((charsets[charType] || charsets[charType + 's']).includes(password[i])) {
                 hasFlags[charType] = true; untouchablePositions.push(i); }
 
     // Modify password if unstrict
@@ -187,7 +187,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
                 untouchablePositions.push(replacementPos); // track new replacement pos
                 const replacementCharSet = charsets[charType] || charsets[charType + 's'];
                 strictPW = strictPW.substring(0, replacementPos) // perform actual replacement
-                         + replacementCharSet.charAt(randomInt(0, replacementCharSet.length))
+                         + replacementCharSet[randomInt(0, replacementCharSet.length)]
                          + strictPW.substring(replacementPos + 1);
                 replacementCnt++;
     }}}
@@ -237,7 +237,7 @@ function validateStrength(password, options = {}) {
     if (password.length < strengthCriteria.minLength)
         recommendations.push(`Make it at least ${strengthCriteria.minLength} characters long.`);
     for (const charType of Object.keys(charCnts))
-        if (charCnts[charType] < strengthCriteria['min' + charType.charAt(0).toUpperCase() + charType.slice(1)])
+        if (charCnts[charType] < strengthCriteria['min' + charType[0].toUpperCase() + charType.slice(1)])
             recommendations.push('Include at least one ' + charType
                 + `${ ['upper', 'lower'].includes(charType) ? 'case letter' : '' }.`);
 
@@ -247,7 +247,7 @@ function validateStrength(password, options = {}) {
         password.length >= strengthCriteria.minLength) ? 20 : 0;
     for (const charType of Object.keys(charCnts))
         strengthScore += ( // +20 per char type included
-            charCnts[charType] >= strengthCriteria['min' + charType.charAt(0).toUpperCase() + charType.slice(1)]) ? 20 : 0;
+            charCnts[charType] >= strengthCriteria['min' + charType[0].toUpperCase() + charType.slice(1)]) ? 20 : 0;
 
     // Log/return final result
     if (options.verbose) {
