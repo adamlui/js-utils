@@ -20,7 +20,7 @@ if [[ ! "${VER_TYPES[@]}" =~ "$1" ]] ; then
 # PULL latest changes
 echo -e "${BY}Pulling latest changes from remote to sync local repository...${NC}\n"
 git pull || (echo -e "${BR}Merge failed, please resolve conflicts!${NC}" && exit 1)
-echo
+echo ''
 
 # Determine new version to bump to
 old_ver=$(node -pe "require('./package.json').version")
@@ -83,6 +83,4 @@ echo -e "${BY}\nPushing to GitHub...\n${NC}"
 git push
 
 # Print final summary
-echo -e "\n${BG}Successfully bumped to v$new_ver$(
-    [[ "$*" == *"--publish"* ]] && echo ' and published to npm'
-)!${NC}"
+echo -e "\n${BG}Successfully bumped to v$new_ver$([[ "$*" == *"--publish"* ]] && echo ' and published to npm')!${NC}"
