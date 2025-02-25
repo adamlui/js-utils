@@ -84,5 +84,5 @@ git push
 
 # Print final summary
 echo -e "\n${BG}Successfully bumped to v$new_ver$(
-    [[ "$*" == *"--publish"* ]] && echo ' and published to npm' || echo
+    [[ "$*" == *"--publish"* ]] && echo ' and published to npm'
 )!${NC}"
