@@ -2,7 +2,7 @@
 
 /* ========================================================
 Script:       img-to-webp.js
-Version:      2024.11.24
+Version:      2025.3.2
 Description:  Compress all JPG/PNG images in a directory to WEBPs
 Author:       Adam Lui
 License:      MIT
@@ -23,7 +23,7 @@ Homepage:     https://js-utils.org/img-to-webp
 
     // Check if `inputDir` exists
     try { await fs.access(inputDir); }
-    catch (err) { console.error(`Input directory '${inputDir}' not found.`); return; }
+    catch (err) { return console.error(`Input directory '${inputDir}' not found.`); }
 
     // Get all PNG/JPG files from `inputDir`
     const pngFiles = glob.sync(path.join(inputDir, '**/*.png'), { nodir: true }),
