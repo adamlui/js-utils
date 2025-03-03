@@ -13,19 +13,19 @@ Homepage:     https://js-utils.org/img-to-webp
 
     // Import libs
     const fs = require('fs').promises, path = require('path'), glob = require('glob'),
-         [imagemin, webp] = await Promise.all([import('imagemin'), import('imagemin-webp')]);
+         [imagemin, webp] = await Promise.all([import('imagemin'), import('imagemin-webp')])
 
     // Init config
     const inputDir = '../media/images',
-          overwriteExisting = false; // whether to overwrite existing WEBPs
+          overwriteExisting = false // whether to overwrite existing WEBPs
 
     // Check if `inputDir` exists
-    try { await fs.access(inputDir); }
-    catch (err) { return console.error(`Input directory '${inputDir}' not found.`); }
+    try { await fs.access(inputDir) }
+    catch (err) { return console.error(`Input directory '${inputDir}' not found.`) }
 
     // Get all PNG/JPG files from `inputDir`
     const pngFiles = glob.sync(path.join(inputDir, '**/*.png'), { nodir: true }),
-          jpgFiles = glob.sync(path.join(inputDir, '**/*.{ jpg, jpeg }'), { nodir: true });
+          jpgFiles = glob.sync(path.join(inputDir, '**/*.{ jpg, jpeg }'), { nodir: true })
 
     // Process PNG images
     const pngOptions = { extension: '.webp', qualityOptions: { lossless: true }, type: 'PNG' }
@@ -38,43 +38,43 @@ Homepage:     https://js-utils.org/img-to-webp
         await processImages(jpgFiles, jpgOptions))
 
     // Final log
-    console.log('\n-----------------------');
+    console.log('\n-----------------------')
     console.log('Total images detected:  '
-        + `${ pngFiles.length + jpgFiles.length } (${ pngFiles.length } PNG, ${ jpgFiles.length } JPG)`);
+        + `${ pngFiles.length + jpgFiles.length } (${ pngFiles.length } PNG, ${ jpgFiles.length } JPG)`)
     console.log('Images compressed:      '
-        + `${ compressedPNGCount + compressedJPGCount } (${ compressedPNGCount } PNG, ${ compressedJPGCount } JPG)`);
+        + `${ compressedPNGCount + compressedJPGCount } (${ compressedPNGCount } PNG, ${ compressedJPGCount } JPG)`)
     console.log('Images skipped:         '
-        + `${ skippedPNGCount + skippedJPGCount } (${ skippedPNGCount } PNG, ${ skippedJPGCount } JPG)`);
+        + `${ skippedPNGCount + skippedJPGCount } (${ skippedPNGCount } PNG, ${ skippedJPGCount } JPG)`)
 
     // Define FUNCTIONS
 
     async function fileExists(file) {
-        try { await fs.access(file); return true; }
-        catch (err) { return false; }
+        try { await fs.access(file) ; return true }
+        catch (err) { return false }
     }
 
     async function processImages(files, options) {
-        const { extension, qualityOptions, type } = options;
-        let compressedCount = 0, skippedCount = 0;
+        const { extension, qualityOptions, type } = options
+        let compressedCount = 0, skippedCount = 0
         await Promise.all(files.map(async (file) => {
-            const outputFileName = file.replace(/\.[^.]+$/, extension);
+            const outputFileName = file.replace(/\.[^.]+$/, extension)
 
             // Skip conversion if `overwriteExisting` is `false`
             if (!overwriteExisting && await fileExists(outputFileName)) {
-                console.log(`Skipping ${type} conversion: WebP image already exists for ${file}`);
-                skippedCount++; return;
+                console.log(`Skipping ${type} conversion: WebP image already exists for ${file}`)
+                skippedCount++ ; return
             }
 
             // Compress image, output WebP file
             await imagemin.default([file], {
                 destination: path.dirname(outputFileName),
                 plugins: [webp.default(qualityOptions)]
-            });
-            compressedCount++;
-            console.log(`${type} processed: ${file} => ${outputFileName}`);
+            })
+            compressedCount++
+            console.log(`${type} processed: ${file} => ${outputFileName}`)
 
-        }));
-        return { compressedCount, skippedCount };
+        }))
+        return { compressedCount, skippedCount }
     }
 
 })();
