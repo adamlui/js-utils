@@ -2,7 +2,7 @@
 
 /* ========================================================
 Script:       img-to-webp.js
-Version:      2025.3.2
+Version:      2025.3.2.1
 Description:  Compress all JPG/PNG images in a directory to WEBPs
 Author:       Adam Lui
 License:      MIT
@@ -12,9 +12,7 @@ Homepage:     https://js-utils.org/img-to-webp
 (async () => {
 
     // Import libs
-    const fs = require('fs').promises,
-          path = require('path'),
-          glob = require('glob'),
+    const fs = require('fs').promises, path = require('path'), glob = require('glob'),
          [imagemin, webp] = await Promise.all([import('imagemin'), import('imagemin-webp')]);
 
     // Init config
