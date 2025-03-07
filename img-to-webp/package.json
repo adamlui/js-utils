@@ -17,7 +17,7 @@
     }
   ],
   "dependencies": {
-    "imagemin": "^9.0.0",
+    "imagemin": "^9.0.1",
     "imagemin-webp": "^8.0.0"
   }
 }
