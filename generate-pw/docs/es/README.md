@@ -321,7 +321,7 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 [Léame](https://docs.generate-ip.org/#readme) /
 [Uso de API](https://docs.generate-ip.org/#-api-usage) /
 [Uso de CLI](https://docs.generate-ip.org/#-command-line-usage) /
-[Conversar](https://github.js-utils.org/discussions)
+[Conversar](https://github.com/adamlui/js-utils/discussions)
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png?0d36e26"><img height=22 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png?0d36e26"></picture> [geolocate](https://js-utils.org/geolocate) &nbsp;<a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?v=0d36e26"></a>
 
@@ -330,12 +330,12 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 [Léame](https://docs.geolocatejs.org/#readme) /
 [Uso de CLI](https://docs.geolocatejs.org/#-command-line-usage) /
 [Uso de API](https://docs.geolocatejs.org/#-api-usage) /
-[Conversar](https://github.js-utils.org/discussions)
+[Conversar](https://github.com/adamlui/js-utils/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=0d36e26">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/home/white/icon32x27.png?v=0d36e26"><img height=13 src="https://assets.js-utils.org/images/icons/home/dark-gray/icon32x27.png?v=0d36e26"></picture> <a href="https://js-utils.org">**Más utilidades de JavaScript**</a> /
-<a href="https://github.js-utils.org/discussions">Conversar</a> /
+<a href="https://github.com/adamlui/js-utils/discussions">Conversar</a> /
 <a href="#-generate-pw">Volver arriba ↑</a>

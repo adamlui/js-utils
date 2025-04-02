@@ -124,21 +124,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [Readme](https://node.minify-js.org/#readme) /
 [CLI usage](https://node.minify-js.org/#-command-line-usage) /
 [API usage](https://node.minify-js.org/#-api-usage) /
-[Discuss](https://github.minify-js.org/discussions)
+[Discuss](https://github.com/adamlui/minify.js/discussions)
 
-### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=b78dcd3"></a>
+### [{ } scss-to-css](https://scsstocss.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=b78dcd3"></a>
 
 > Recursively compile all SCSS files into minified CSS.
 <br>[Install](https://node.scsstocss.org/#-installation) /
 [Readme](https://node.scsstocss.org/#readme) /
 [CLI usage](https://node.scsstocss.org/#-command-line-usage) /
 [API usage](https://node.scsstocss.org/#-api-usage) /
-[Discuss](https://github.scsstocss.org/discussions)
+[Discuss](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://js-utils.org">**More JavaScript utilities**</a> /
-<a href="https://github.minify-js.org/discussions">Discuss</a> /
+<a href="https://github.com/adamlui/minify.js/discussions">Discuss</a> /
 <a href="#-minifyjs">Back to top ↑</a>

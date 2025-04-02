@@ -282,11 +282,11 @@ findSCSS() » Check returned array.
 
 ## 🛠️ 相關實用程式
 
-### [🖼️ img-to-webp](https://imgtowebp.org)
+### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
 
 > 遞歸地將所有影像壓縮為 WEBP。
 <br>[下載](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
-[討論](https://github.js-utils.org/discussions)
+[討論](https://github.com/adamlui/js-utils/discussions)
 
 ### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?v=7e4a141"></a>
 
@@ -295,12 +295,12 @@ findSCSS() » Check returned array.
 [自述文件](https://minify-js.org/docs/zh-tw#readme) /
 [CLI 用法](https://minify-js.org/docs/zh-tw#-%E5%91%BD%E4%BB%A4%E5%88%97%E4%BD%BF%E7%94%A8) /
 [API 使用](https://minify-js.org/docs/zh-tw#-api-%E4%BD%BF%E7%94%A8) /
-[討論](https://github.js-utils.org/discussions)
+[討論](https://github.com/adamlui/minify.js/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/home/white/icon32x27.png?v=7e4a141"><img height=13 src="https://assets.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?v=7e4a141"></picture> <a href="https://js-utils.org">**更多 JavaScript 實用程式**</a> /
-<a href="https://github.scsstocss.org/discussions">讨论</a> /
+<a href="https://github.com/adamlui/scss-to-css/discussions">讨论</a> /
 <a href="#--scss-to-css">回到顶部 ↑</a>

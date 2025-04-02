@@ -285,21 +285,21 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 > Complemento Gulp para minimizar recursivamente todos los archivos JavaScript.
 <br>[Instalar](https://gulp.minify-js.org/#-installation) /
 [Léame](https://gulp.minify-js.org/#readme) /
-[Conversar](https://github.minify-js.org/discussions)
+[Conversar](https://github.com/adamlui/minify.js/discussions)
 
-### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=63bbeed"></a>
+### [{ } scss-to-css](https://scsstocss.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=63bbeed"></a>
 
 > Recursively compile all SCSS files into minified CSS.
 <br>[Instalar](https://node.scsstocss.org/#-installation) /
 [Léame](https://node.scsstocss.org/#readme) /
 [Uso de CLI](https://node.scsstocss.org/#-command-line-usage) /
 [Uso de API](https://node.scsstocss.org/#-api-usage) /
-[Conversar](https://github.scsstocss.org/discussions)
+[Conversar](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://js-utils.org">**Más utilidades de JavaScript**</a> /
-<a href="https://github.minify-js.org/discussions">Conversar</a> /
+<a href="https://github.com/adamlui/minify.js/discussions">Conversar</a> /
 <a href="#-minifyjs">Volver arriba ↑</a>

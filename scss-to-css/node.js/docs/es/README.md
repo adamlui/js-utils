@@ -282,11 +282,11 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 
 ## 🛠️ Utilidades relacionadas
 
-### [🖼️ img-to-webp](https://imgtowebp.org)
+### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
 
 > Comprime recursivamente todas las imágenes a WEBP.
 <br>[Descargar](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
-[Conversar](https://github.js-utils.org/discussions)
+[Conversar](https://github.com/adamlui/js-utils/discussions)
 
 ### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?v=7e4a141"></a>
 
@@ -295,12 +295,12 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 [Léame](https://node.minify-js.org/#readme) /
 [Uso de CLI](https://node.minify-js.org/#-command-line-usage) /
 [Uso de API](https://node.minify-js.org/#-api-usage) /
-[Conversar](https://github.js-utils.org/discussions)
+[Conversar](https://github.com/adamlui/minify.js/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/home/white/icon32x27.png?v=7e4a141"><img height=13 src="https://assets.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?v=7e4a141"></picture> <a href="https://js-utils.org">**Más utilidades de JavaScript**</a> /
-<a href="https://github.scsstocss.org/discussions">Conversar</a> /
+<a href="https://github.com/adamlui/scss-to-css/discussions">Conversar</a> /
 <a href="#--scss-to-css">Volver arriba ↑</a>

@@ -285,21 +285,21 @@ findJS() » Check returned array.
 > Gulp 插件可递归地缩小所有 JavaScript 文件。
 <br>[安装](https://gulp.minify-js.org/#-installation) /
 [自述文件](https://gulp.minify-js.org/#readme) /
-[讨论](https://github.minify-js.org/discussions)
+[讨论](https://github.com/adamlui/minify.js/discussions)
 
-### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=63bbeed"></a>
+### [{ } scss-to-css](https://scsstocss.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=63bbeed"></a>
 
 > 将所有 SCSS 文件递归编译为缩小的 CSS。
 <br>[安装](https://node.scsstocss.org/#-installation) /
 [自述文件](https://node.scsstocss.org/#readme) /
 [CLI 用法](https://node.scsstocss.org/#-command-line-usage) /
 [API 用法](https://node.scsstocss.org/#-api-usage) /
-[讨论](https://github.scsstocss.org/discussions)
+[讨论](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://js-utils.org">**更多 JavaScript 实用程序**</a> /
-<a href="https://github.minify-js.org/discussions">讨论</a> /
+<a href="https://github.com/adamlui/minify.js/discussions">讨论</a> /
 <a href="#-minifyjs">回到顶部 ↑</a>

@@ -285,21 +285,21 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 > Gulp-Plug-in zur rekursiven Minimierung aller JavaScript-Dateien.
 <br>[Installieren](https://gulp.minify-js.org/#-installation) /
 [Liesmich](https://gulp.minify-js.org/#readme) /
-[Diskutieren](https://github.minify-js.org/discussions)
+[Diskutieren](https://github.com/adamlui/minify.js/discussions)
 
-### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=63bbeed"></a>
+### [{ } scss-to-css](https://scsstocss.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=63bbeed"></a>
 
 > Kompilieren Sie alle SCSS-Dateien rekursiv in minimiertes CSS.
 <br>[Installieren](https://node.scsstocss.org/#-installation) /
 [Liesmich](https://node.scsstocss.org/#readme) /
 [CLI-Nutzung](https://node.scsstocss.org/#-command-line-usage) /
 [API-Nutzung](https://node.scsstocss.org/#-api-usage) /
-[Diskutieren](https://github.scsstocss.org/discussions)
+[Diskutieren](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://js-utils.org">**Weitere JavaScript-Dienstprogramme**</a> /
-<a href="https://github.minify-js.org/discussions">Diskutieren</a> /
+<a href="https://github.com/adamlui/minify.js/discussions">Diskutieren</a> /
 <a href="#-minifyjs">Zurück nach oben ↑</a>

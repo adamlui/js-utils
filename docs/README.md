@@ -22,7 +22,7 @@ Essential JavaScript libraries/utilities for Node.js and the web
 [Readme](../generate-ip#readme) /
 [API usage](../generate-ip#-api-usage) /
 [CLI usage](../generate-ip#-command-line-usage) /
-[Discuss](https://github.js-utils.org/discussions)
+[Discuss](https://github.com/adamlui/js-utils/discussions)
 
 ### [🔒 generate-pw](../generate-pw) &nbsp;<a href="https://github.com/toolleeo/cli-apps#password-managers"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?v=0d36e26"></a>
 
@@ -31,7 +31,7 @@ Essential JavaScript libraries/utilities for Node.js and the web
 [Readme](../generate-pw#readme) /
 [API usage](../generate-pw#-api-usage) /
 [CLI usage](../generate-pw#-command-line-usage) /
-[Discuss](https://github.js-utils.org/discussions)
+[Discuss](https://github.com/adamlui/js-utils/discussions)
 
 ### <a href="../geolocate"><picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png?0d36e26"><img height=22 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png?0d36e26"></picture> geolocate</a>
 
@@ -40,13 +40,13 @@ Essential JavaScript libraries/utilities for Node.js and the web
 [Readme](../geolocate#readme) /
 [CLI usage](../geolocate#-command-line-usage) /
 [API usage](../geolocate#-api-usage) /
-[Discuss](https://github.js-utils.org/discussions)
+[Discuss](https://github.com/adamlui/js-utils/discussions)
 
 ### [🖼️ img-to-webp](../img-to-webp)
 
 > Recursively compress all images to WEBPs.
 <br>[Download](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
-[Discuss](https://github.js-utils.org/discussions)
+[Discuss](https://github.com/adamlui/js-utils/discussions)
 
 ### [</> minify.js](../minify.js) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?v=0d36e26"></a>
 
@@ -55,7 +55,7 @@ Essential JavaScript libraries/utilities for Node.js and the web
 [Readme](../minify.js/node.js#readme) /
 [CLI usage](../minify.js/node.js#-command-line-usage) /
 [API usage](../minify.js/node.js#-api-usage) /
-[Discuss](https://github.js-utils.org/discussions)
+[Discuss](https://github.com/adamlui/js-utils/discussions)
 
 ### [{ } scss-to-css](../scss-to-css/node.js) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?v=0d36e26"></a>
 
@@ -64,10 +64,10 @@ Essential JavaScript libraries/utilities for Node.js and the web
 [Readme](../scss-to-css/node.js/#readme) /
 [CLI usage](../scss-to-css/node.js/#-command-line-usage) /
 [API usage](../scss-to-css/node.js/#-api-usage) /
-[Discuss](https://github.js-utils.org/discussions)
+[Discuss](https://github.com/adamlui/js-utils/discussions)
 
 <img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/tag/white/icon16.svg?v=0d36e26"><img height=14 src="https://assets.js-utils.org/images/icons/tag/dark-gray/icon16.svg?v=0d36e26"></picture> <a href="https://js-utils.org/releases">**Latest releases**</a> /
-<a href="https://github.js-utils.org/discussions">Discuss</a> /
+<a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
 <a href="#%EF%B8%8F-javascript-utilities">Back to top ↑</a>

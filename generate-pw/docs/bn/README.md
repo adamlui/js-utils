@@ -319,7 +319,7 @@ $ generate-pw
 [রিডমি](https://docs.generate-ip.org/#readme) /
 [API ব্যবহার](https://docs.generate-ip.org/#-api-usage) /
 [CLI ব্যবহার](https://docs.generate-ip.org/#-command-line-usage) /
-[আলোচনা করা](https://github.js-utils.org/discussions)
+[আলোচনা করা](https://github.com/adamlui/js-utils/discussions)
 
 ### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png?0d36e26"><img height=22 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png?0d36e26"></picture> [geolocate](https://js-utils.org/geolocate) &nbsp;<a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?v=0d36e26"></a>
 
@@ -328,12 +328,12 @@ $ generate-pw
 [রিডমি](https://docs.geolocatejs.org/#readme) /
 [CLI ব্যবহার](https://docs.geolocatejs.org/#-command-line-usage) /
 [API ব্যবহার](https://docs.geolocatejs.org/#-api-usage) /
-[আলোচনা করা](https://github.js-utils.org/discussions)
+[আলোচনা করা](https://github.com/adamlui/js-utils/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=0d36e26">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/home/white/icon32x27.png?v=0d36e26"><img height=13 src="https://assets.js-utils.org/images/icons/home/dark-gray/icon32x27.png?v=0d36e26"></picture> <a href="https://js-utils.org">**আরো জাভাস্ক্রিপ্ট ইউটিলিটি**</a> /
-<a href="https://github.js-utils.org/discussions">আলোচনা করা</a> /
+<a href="https://github.com/adamlui/js-utils/discussions">আলোচনা করা</a> /
 <a href="#-generate-pw">উপরে ফিরে যাও ↑</a>

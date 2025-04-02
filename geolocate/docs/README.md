@@ -205,7 +205,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [Readme](https://docs.generate-ip.org/#readme) /
 [API usage](https://docs.generate-ip.org/#-api-usage) /
 [CLI usage](https://docs.generate-ip.org/#-command-line-usage) /
-[Discuss](https://github.js-utils.org/discussions)
+[Discuss](https://github.com/adamlui/js-utils/discussions)
 
 ### [🔒 generate-pw](../generate-pw) &nbsp;<a href="https://github.com/toolleeo/cli-apps#password-managers"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?v=0d36e26"></a>
 
@@ -214,12 +214,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [Readme](https://docs.generatepw.org/#readme) /
 [API usage](https://docs.generatepw.org/#-api-usage) /
 [CLI usage](https://docs.generatepw.org/#-command-line-usage) /
-[Discuss](https://github.js-utils.org/discussions)
+[Discuss](https://github.com/adamlui/js-utils/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png?v=0d36e26">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/home/white/icon32x27.png?v=0d36e26"><img height=13 src="https://assets.js-utils.org/images/icons/home/dark-gray/icon32x27.png?v=0d36e26"></picture> <a href="https://js-utils.org">**More JavaScript utilities**</a> /
-<a href="https://github.js-utils.org/discussions">Discuss</a> /
+<a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
 <a href="#-geolocate">Back to top ↑</a>

@@ -287,21 +287,21 @@ findJS() » Check returned array.
 > সমস্ত জাভাস্ক্রিপ্ট ফাইলকে পুনরাবৃত্তভাবে ছোট করতে Gulp প্লাগ-ইন করুন।
 <br>[ইনস্টল করুন](https://gulp.minify-js.org/#-installation) /
 [রিডমি](https://gulp.minify-js.org/#readme) /
-[আলোচনা করা](https://github.minify-js.org/discussions)
+[আলোচনা করা](https://github.com/adamlui/minify.js/discussions)
 
-### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=63bbeed"></a>
+### [{ } scss-to-css](https://scsstocss.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=63bbeed"></a>
 
 > পুনরাবৃত্তভাবে সমস্ত SCSS ফাইল মিনিফাইড CSS-এ কম্পাইল করুন।
 <br>[ইনস্টল করুন](https://node.scsstocss.org/#-installation) /
 [রিডমি](https://node.scsstocss.org/#readme) /
 [CLI ব্যবহার](https://node.scsstocss.org/#-command-line-usage) /
 [API ব্যবহার](https://node.scsstocss.org/#-api-usage) /
-[আলোচনা করা](https://github.scsstocss.org/discussions)
+[আলোচনা করা](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://js-utils.org">**আরো জাভাস্ক্রিপ্ট ইউটিলিটি**</a> /
-<a href="https://github.minify-js.org/discussions">আলোচনা করা</a> /
+<a href="https://github.com/adamlui/minify.js/discussions">আলোচনা করা</a> /
 <a href="#-minifyjs">উপরে ফিরে যাও ↑</a>

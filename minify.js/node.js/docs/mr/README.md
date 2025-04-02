@@ -285,21 +285,21 @@ findJS() » Check returned array.
 > Gulp प्लग-इन सर्व JavaScript फायली आवर्तीपणे लहान करण्यासाठी.
 <br>[स्थापित करा](https://gulp.minify-js.org/#-installation) /
 [मला वाचा](https://gulp.minify-js.org/#readme) /
-[चर्चा करा](https://github.minify-js.org/discussions)
+[चर्चा करा](https://github.com/adamlui/minify.js/discussions)
 
-### [{ } scss-to-css](https://github.com/adamlui/scss-to-css) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=63bbeed"></a>
+### [{ } scss-to-css](https://scsstocss.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=63bbeed"></a>
 
 > सर्व SCSS फाईल्स संकुचित CSS मध्ये पुनरावृत्तीने संकलित करा.
 <br>[स्थापित करा](https://node.scsstocss.org/#-installation) /
 [मला वाचा](https://node.scsstocss.org/#readme) /
 [CLI वापर](https://node.scsstocss.org/#-command-line-usage) /
 [API वापर](https://node.scsstocss.org/#-api-usage) /
-[चर्चा करा](https://github.scsstocss.org/discussions)
+[चर्चा करा](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>
 
 <img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://js-utils.org">**अधिक JavaScript उपयुक्तता**</a> /
-<a href="https://github.minify-js.org/discussions">चर्चा करा</a> /
+<a href="https://github.com/adamlui/minify.js/discussions">चर्चा करा</a> /
 <a href="#-minifyjs">परत वर जा ↑</a>
