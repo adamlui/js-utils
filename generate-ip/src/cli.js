@@ -11,7 +11,7 @@ const pkgName = 'generate-ip',
     // Import LIBS
     const { ipv4, ipv6, mac } = require(__dirname.match(/src/) ? './generate-ip' : './generate-ip.min'),
           fs = require('fs'), path = require('path'),
-          { execSync } = require('child_process') // for --version cmd + cross-platform copying
+          { execSync, execFileSync } = require('child_process') // for --version cmd + cross-platform copying
 
     // Init UI COLORS
     const nc = '\x1b[0m',    // no color
@@ -206,11 +206,11 @@ const pkgName = 'generate-ip',
 
     function copyToClipboard(data) {
         if (process.platform == 'darwin') // macOS
-            execSync(`printf "${data}" | pbcopy`)
+            execFileSync('pbcopy', [], { input: data })
         else if (process.platform == 'linux')
-            execSync(`printf "${data}" | xclip -selection clipboard`)
+            execFileSync('xclip', ['-selection', 'clipboard'], { input: data })
         else if (process.platform == 'win32')
-            execSync(`Set-Clipboard -Value "${data}"`, { shell: 'powershell' })
+            execFileSync('powershell', ['Set-Clipboard', '-Value', data])
     }
 
 })()
