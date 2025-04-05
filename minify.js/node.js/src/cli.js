@@ -4,7 +4,7 @@ const pkgName = '@adamlui/minify.js',
       copyright = '© 2024–2025 Adam Lui & contributors under the MIT license.',
       cmdFormat = 'minify-js [inputPath] [outputPath] [options]',
       srcURL = 'https://code.minify-js.org/node.js',
-      docURL = 'https://docs.minify-js.org/node.js/#-command-line-usage'
+      docURL = 'https://docs.minify-js.org/node.js/#-command-line-usage';
 
 (async () => {
 

@@ -4,7 +4,7 @@ const pkgName = 'generate-pw',
       copyright = '© 2024–2025 Adam Lui & contributors under the MIT license.',
       cmdFormat = 'generate-pw [options|commands]',
       srcURL = 'https://code.generatepw.org',
-      docURL = 'https://docs.generatepw.org/#-command-line-usage'
+      docURL = 'https://docs.generatepw.org/#-command-line-usage';
 
 (async () => {
 
