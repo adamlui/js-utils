@@ -88,8 +88,7 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
           booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean');
 
     // Init log vars
-    let logPrefix = 'validateOptions() » ';
-    try { logPrefix = validateOptions.caller?.name + '() » '; } catch (err) {}
+    const logPrefix = `${ validateOptions.caller?.name || 'validateOptions' }() » `
     let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) + 1;
     optionsPos += ['st','nd','rd'][optionsPos - 1] || 'th'; // append ordinal suffix
 
