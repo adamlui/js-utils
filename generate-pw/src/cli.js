@@ -230,12 +230,15 @@ const pkgName = 'generate-pw',
 
     function copyToClipboard(data) {
         data = data.replace(/"/g, '""')
-        if (process.platform == 'darwin') // macOS
-            execFileSync('pbcopy', [], { input: data })
-        else if (process.platform == 'linux')
-            execFileSync('xclip', ['-selection', 'clipboard'], { input: data })
-        else if (process.platform == 'win32')
-            execFileSync('powershell', ['Set-Clipboard', '-Value', data])
+        const osConfig = {
+            darwin: { binPath: '/usr/bin/pbcopy', args: [] },
+            linux: { binPath: '/usr/bin/xclip', args: ['-selection', 'clipboard'] },
+            win32: {
+                binPath: path.join(process.env.SYSTEMROOT, 'System32', 'WindowsPowerShell', 'v1.0', 'powershell.exe'),
+                args: ['-Command', 'Set-Clipboard -Value $input']
+            }
+        }
+        execFileSync(...Object.values(osConfig[process.platform]), { input: data })
     }
 
 })()
