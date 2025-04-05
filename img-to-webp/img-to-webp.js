@@ -2,7 +2,7 @@
 
 /* ========================================================
 Script:       img-to-webp.js
-Version:      2025.3.2.2
+Version:      2025.4.5
 Description:  Compress all JPG/PNG images in a directory to WEBPs
 Author:       Adam Lui
 License:      MIT
@@ -77,4 +77,4 @@ Homepage:     https://js-utils.org/img-to-webp
         return { compressedCount, skippedCount }
     }
 
-})();
+})()
