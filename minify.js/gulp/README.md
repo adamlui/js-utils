@@ -1,4 +1,4 @@
-# </> minify.js <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/platforms/gulp/white/icon50x30.svg?v=010e809"><img height=25 src="https://assets.minify-js.org/images/icons/platforms/gulp/red/icon50x30.svg?v=010e809"></picture>
+# </> minify.js <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/platforms/gulp/white/icon50x30.svg?v=c100aeb"><img height=25 src="https://assets.minify-js.org/images/icons/platforms/gulp/red/icon50x30.svg?v=c100aeb"></picture>
 
 ### Recursively minify all JavaScript files.
 
