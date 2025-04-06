@@ -4,7 +4,8 @@ const pkgName = 'generate-pw',
       copyright = '© 2024–2025 Adam Lui & contributors under the MIT license.',
       cmdFormat = 'generate-pw [options|commands]',
       srcURL = 'https://code.generatepw.org',
-      docURL = 'https://docs.generatepw.org/#-command-line-usage';
+      docURL = 'https://docs.generatepw.org/#-command-line-usage',
+      latestLocaleCommitHash = '3560750';
 
 (async () => {
 
@@ -33,8 +34,9 @@ const pkgName = 'generate-pw',
     // Define MESSAGES
     let msgs = {}
     const msgsLoaded = new Promise((resolve, reject) => {
-        const msgHostURL = 'https://cdn.jsdelivr.net/gh/adamlui/js-utils/generate-pw/_locales/',
-              msgLocaleDir = ( langCode ? langCode.replace('-', '_') : 'en' ) + '/'
+        const msgHostURL = `https://cdn.jsdelivr.net/gh/adamlui/js-utils@${
+                            latestLocaleCommitHash}/${pkgName}/_locales/`
+        const msgLocaleDir = ( langCode ? langCode.replace('-', '_') : 'en' ) + '/'
         let msgHref = msgHostURL + msgLocaleDir + 'messages.json', msgFetchTries = 0
         fetchData(msgHref).then(onLoad).catch(reject)
         async function onLoad(resp) {

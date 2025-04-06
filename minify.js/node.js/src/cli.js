@@ -4,7 +4,8 @@ const pkgName = '@adamlui/minify.js',
       copyright = '© 2024–2025 Adam Lui & contributors under the MIT license.',
       cmdFormat = 'minify-js [inputPath] [outputPath] [options]',
       srcURL = 'https://code.minify-js.org/node.js',
-      docURL = 'https://docs.minify-js.org/node.js/#-command-line-usage';
+      docURL = 'https://docs.minify-js.org/node.js/#-command-line-usage',
+      latestLocaleCommitHash = '55480ff';
 
 (async () => {
 
@@ -34,7 +35,7 @@ const pkgName = '@adamlui/minify.js',
     // Define MESSAGES
     let msgs = {}
     const msgsLoaded = new Promise((resolve, reject) => {
-        const msgHostURL = 'https://cdn.jsdelivr.net/gh/adamlui/minify.js/_locales/',
+        const msgHostURL = `https://cdn.jsdelivr.net/gh/adamlui/minify.js@${latestLocaleCommitHash}/_locales/`,
               msgLocaleDir = ( langCode ? langCode.replace('-', '_') : 'en' ) + '/'
         let msgHref = msgHostURL + msgLocaleDir + 'messages.json', msgFetchTries = 0
         fetchData(msgHref).then(onLoad).catch(reject)

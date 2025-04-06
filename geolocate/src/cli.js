@@ -4,7 +4,8 @@ const pkgName = '@adamlui/geolocate',
       copyright = '© 2024–2025 Adam Lui under the MIT license.',
       cmdFormat = 'geolocate [ip1] [ip2] [...] [options|commands]',
       srcURL = 'https://code.geolocatejs.org',
-      docURL = 'https://docs.geolocatejs.org/#-command-line-usage';
+      docURL = 'https://docs.geolocatejs.org/#-command-line-usage',
+      latestLocaleCommitHash = '3560750';
 
 (async () => {
 
@@ -33,7 +34,7 @@ const pkgName = '@adamlui/geolocate',
     // Define MESSAGES
     let msgs = {}
     const msgsLoaded = new Promise((resolve, reject) => {
-        const msgHostURL = 'https://cdn.jsdelivr.net/gh/adamlui/js-utils/geolocate/_locales/',
+        const msgHostURL = `https://cdn.jsdelivr.net/gh/adamlui/js-utils@${latestLocaleCommitHash}/geolocate/_locales/`,
               msgLocaleDir = ( langCode ? langCode.replace('-', '_') : 'en' ) + '/'
         let msgHref = msgHostURL + msgLocaleDir + 'messages.json', msgFetchTries = 0
         fetchData(msgHref).then(onLoad).catch(reject)
