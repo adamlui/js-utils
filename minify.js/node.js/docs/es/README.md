@@ -25,8 +25,8 @@
     <img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fminify.js?label=Descargas&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-licencia-mit">
     <img height=31 src="https://img.shields.io/badge/Licencia-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/minify.js/releases/tag/node-v1.8.5">
-    <img height=31 src="https://img.shields.io/badge/Última_Compilación-1.8.5-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/minify.js/releases/tag/node-v1.8.6">
+    <img height=31 src="https://img.shields.io/badge/Última_Compilación-1.8.6-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/@adamlui/minify.js?activeTab=code">
     <img height=31 src="https://img.shields.io/npm/unpacked-size/%40adamlui%2Fminify.js?label=Tama%C3%B1o%20Desempaquetado&style=for-the-badge&logo=ebox&logoColor=white&labelColor=464646&color=blue"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_minify.js:node.js/src/minify.js">
