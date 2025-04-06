@@ -25,7 +25,7 @@ const pkgName = '@adamlui/minify.js',
     let langCode = 'en'
     if (process.platform == 'win32') {
         try { langCode = execSync('(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' }).trim() }
-        catch (err) {}
+        catch (err) { printIfNotQuiet('Error loading system language:', err) }
     } else { // macOS/Linux
         const env = process.env
         langCode = (env.LANG || env.LANGUAGE || env.LC_ALL || env.LC_MESSAGES || env.LC_NAME || 'en')?.split('.')[0]
@@ -54,7 +54,7 @@ const pkgName = '@adamlui/minify.js',
             }
         }
     })
-    try { msgs = await msgsLoaded } catch (err) {}
+    try { msgs = await msgsLoaded } catch (err) { printIfNotQuiet('Error fetching messages:', err) }
 
     // Load SETTINGS from args
     const config = {}
