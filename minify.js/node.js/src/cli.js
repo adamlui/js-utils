@@ -296,9 +296,9 @@ const pkgName = '@adamlui/minify.js',
     }
 
     function printHelpCmdAndDocURL() {
-        console.info(`\n${ msgs.info_moreHelp || 'For more help' },`
-            + ` ${ msgs.info_type || 'type' } 'minify-js --help'`
-            + ` ${ msgs.info_or || 'or' } ${ msgs.info_visit || 'visit' }\n${ bw + docURL + nc }`
+        console.info(`\n${ msgs.info_moreHelp || 'For more help' }, ${
+            msgs.info_type || 'type' } minify-js --help' ${ msgs.info_or || 'or' } ${
+            msgs.info_visit || 'visit' }\n${ bw + docURL + nc }`
         )
     }
 
