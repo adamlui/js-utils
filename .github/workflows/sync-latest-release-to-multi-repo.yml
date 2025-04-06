@@ -2,7 +2,7 @@ name: Sync latest minify.js + scss-to-css releases to adamlui/<app-repo>
 
 on:
   push:
-    tags: ["*minify", "*scss-to-css*"]
+    tags: ["*minify*", "*scss-to-css*"]
 
 permissions:
   contents: read
