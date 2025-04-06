@@ -36,7 +36,7 @@ const pkgName = 'generate-pw',
     const msgsLoaded = new Promise((resolve, reject) => {
         const msgHostURL = `https://cdn.jsdelivr.net/gh/adamlui/js-utils@${
                             latestLocaleCommitHash}/${pkgName}/_locales/`
-        const msgLocaleDir = ( langCode ? langCode.replace('-', '_') : 'en' ) + '/'
+        const msgLocaleDir = `${ langCode ? langCode.replace('-', '_') : 'en' }/`
         let msgHref = msgHostURL + msgLocaleDir + 'messages.json', msgFetchTries = 0
         fetchData(msgHref).then(onLoad).catch(reject)
         async function onLoad(resp) {

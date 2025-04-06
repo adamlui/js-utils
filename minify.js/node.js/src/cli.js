@@ -36,7 +36,7 @@ const pkgName = '@adamlui/minify.js',
     let msgs = {}
     const msgsLoaded = new Promise((resolve, reject) => {
         const msgHostURL = `https://cdn.jsdelivr.net/gh/adamlui/minify.js@${latestLocaleCommitHash}/_locales/`,
-              msgLocaleDir = ( langCode ? langCode.replace('-', '_') : 'en' ) + '/'
+              msgLocaleDir = `${ langCode ? langCode.replace('-', '_') : 'en' }/`
         let msgHref = msgHostURL + msgLocaleDir + 'messages.json', msgFetchTries = 0
         fetchData(msgHref).then(onLoad).catch(reject)
         async function onLoad(resp) {
