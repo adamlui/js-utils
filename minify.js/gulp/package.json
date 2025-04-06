@@ -52,6 +52,6 @@
     "url": "https://support.minify-js.org"
   },
   "dependencies": {
-    "@adamlui/minify.js": "^1.8.5"
+    "@adamlui/minify.js": "^1.8.6"
   }
 }
