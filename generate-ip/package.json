@@ -54,6 +54,6 @@
     "url": "https://support.generate-ip.org"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^1.8.5"
+    "@adamlui/minify.js": "^1.8.6"
   }
 }
