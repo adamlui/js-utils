@@ -28,7 +28,7 @@
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css">
     <img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?label=Scaricamenti&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-licenza-del-mit">
-    <img height=31 src="https://img.shields.io/badge/Licenza-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+    <img height=31 src="https://img.shields.io/badge/Licenza-MIT-fc4f2d.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-1.10.32">
     <img height=31 src="https://img.shields.io/badge/Ultima_Versione-1.10.32-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css?activeTab=code">

@@ -3,7 +3,7 @@
 ### Recursively minify all JavaScript files.
 
 <a href="#%EF%B8%8F-mit-license">
-    <img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+    <img height=31 src="https://img.shields.io/badge/License-MIT-fc4f2d.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/minify.js/releases/tag/gulp-v1.0.12">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.12-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/gulp-minify.js?activeTab=code">

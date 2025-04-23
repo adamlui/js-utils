@@ -22,7 +22,7 @@
 <a href="https://www.npmjs.com/package/generate-pw">
     <img height=31 src="https://img.shields.io/npm/dm/generate-pw?label=Descargas&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-licencia-mit">
-    <img height=31 src="https://img.shields.io/badge/Licencia-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+    <img height=31 src="https://img.shields.io/badge/Licencia-MIT-fc4f2d.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-1.5.12">
     <img height=31 src="https://img.shields.io/badge/Ultima_Versión-1.5.12-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/generate-pw?activeTab=code">
