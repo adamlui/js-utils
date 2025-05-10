@@ -10,14 +10,10 @@
   "homepage": "https://scsstocss.org",
   "license": "MIT",
   "funding": [
-    {
-      "type": "github",
-      "url": "http://github.com/sponsors/adamlui"
-    },
-    {
-      "type": "ko-fi",
-      "url": "https://ko-fi.com/adamlui"
-    }
+    { "type": "cashapp", "url": "https://cash.app/$AdamLui" },
+    { "type": "github", "url": "http://github.com/sponsors/adamlui" },
+    { "type": "ko-fi", "url": "https://ko-fi.com/adamlui" },
+    { "type": "paypal", "url": "https://paypal.me/adamlui" }
   ],
   "main": "dist/scss-to-css.min.js",
   "files": [
