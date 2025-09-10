@@ -111,9 +111,9 @@ jobs:
           # Update npm shield
           if [ "$TOTAL_DOWNLOADS" == "0" ] ; then echo "Error getting total npm downloads"
           else # perform update
-            old_readme=$(<docs/README.md)
-            sed -i -E "s|(badge/Downloads-)[0-9.,km+]+|\1$TOTAL_DOWNLOADS|Ig" docs/README.md
-            new_readme=$(<docs/README.md)
+            old_readme=$(<README.md)
+            sed -i -E "s|(badge/Downloads-)[0-9.,km+]+|\1$TOTAL_DOWNLOADS|Ig" README.md
+            new_readme=$(<README.md)
             if [ "$old_readme" != "$new_readme" ] ; then downloads_updated=true ; fi
             if [ "$downloads_updated" = true ] ; then echo "npm shield updated to $TOTAL_DOWNLOADS"
             else echo "npm shield already up-to-date" ; fi
@@ -122,9 +122,9 @@ jobs:
           # Update jsDelivr shield
           if [ "$TOTAL_REQUESTS" == "0" ] ; then echo "Error getting total jsDelivr requests"
           else # perform update
-            old_readme=$(<docs/README.md)
-            sed -i -E "s|(badge/jsDelivr_[^-]+-)[0-9.,km+]+|\1$TOTAL_REQUESTS|Ig" docs/README.md
-            new_readme=$(<docs/README.md)
+            old_readme=$(<README.md)
+            sed -i -E "s|(badge/jsDelivr_[^-]+-)[0-9.,km+]+|\1$TOTAL_REQUESTS|Ig" README.md
+            new_readme=$(<README.md)
             if [ "$old_readme" != "$new_readme" ] ; then requests_updated=true ; fi
             if [ "$requests_updated" = true ] ; then echo "jsDelivr shield updated to $TOTAL_REQUESTS"
             else echo "jsDelivr shield already up-to-date" ; fi
