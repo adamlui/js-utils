@@ -20,6 +20,7 @@ jobs:
       - name: Checkout adamlui/js-utils
         uses: actions/checkout@v5
         with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
           path: adamlui/js-utils
           fetch-depth: 2
 
