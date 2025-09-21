@@ -29,8 +29,8 @@
     <img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?label=Descargas&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-licencia-mit">
     <img height=31 src="https://img.shields.io/badge/Licencia-MIT-fc4f2d.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-1.10.39">
-    <img height=31 src="https://img.shields.io/badge/Última_Compilación-1.10.39-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-1.10.40">
+    <img height=31 src="https://img.shields.io/badge/Última_Compilación-1.10.40-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css?activeTab=code">
     <img height=31 src="https://img.shields.io/npm/unpacked-size/%40adamlui%2Fscss-to-css?label=Tama%C3%B1o%20Desempaquetado&style=for-the-badge&logo=ebox&logoColor=white&color=blue&labelColor=464646"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:node.js/src/scss-to-css.js">
