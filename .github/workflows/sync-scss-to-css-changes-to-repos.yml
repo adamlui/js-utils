@@ -89,7 +89,7 @@ jobs:
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           git pull && git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from ${{ env.SYNC_SRC }}]" || true
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from $SYNC_SRC]" || true
           git push
 
       - name: Push changes to adamlui/scss-to-css
