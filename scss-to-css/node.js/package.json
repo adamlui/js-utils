@@ -1,6 +1,6 @@
 {
   "name": "@adamlui/scss-to-css",
-  "version": "1.10.40",
+  "version": "1.10.41",
   "description": "Recursively compile all SCSS files into minified CSS",
   "author": {
     "name": "Adam Lui",
