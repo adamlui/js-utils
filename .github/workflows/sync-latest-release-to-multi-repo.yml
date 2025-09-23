@@ -11,6 +11,8 @@ jobs:
   sync-latest-release:
     name: Sync latest release to adamlui/<app-repo>
     runs-on: ubuntu-latest
+    env:
+      REPO_SYNC_PAT: ${{ secrets.REPO_SYNC_PAT }}
     steps:
       - name: Sync latest release to adamlui/<app-repo>
         run: |
@@ -58,7 +60,7 @@ jobs:
             printf '{"tag_name": "%s","name": "%s","body": "%s"}' \
               "$TARGET_RELEASE_TAG_NAME" "$RELEASE_TITLE" "$RELEASE_NOTES")
           create_release_response=$(
-            curl -s -S -X POST -H "Authorization: token ${{ secrets.REPO_SYNC_PAT }}" \
+            curl -s -S -X POST -H "Authorization: token $REPO_SYNC_PAT" \
                  -H "Content-Type: application/json" -d "$create_release_payload" "$create_release_url")
 
           # Upload assets to new release
@@ -69,7 +71,7 @@ jobs:
             filename=$(basename "$url")
             echo "Uploading $filename..."
             curl -s -S --data-binary @"$filename" \
-                 -H "Authorization: token ${{ secrets.REPO_SYNC_PAT }}" \
+                 -H "Authorization: token $REPO_SYNC_PAT" \
                  -H "Content-Type: application/octet-stream" \
                  "$upload_url?name=$filename" \
                    > /dev/null 2>&1 # hide verbosity
