@@ -127,7 +127,7 @@ const pkgName = '@adamlui/geolocate',
 
         // Copy to clipboard
         printIfNotQuiet(`\n${ msgs.info_copying || 'Copying to clipboard' }...`)
-        copyToClipboard(JSON.stringify(geoResults, null, 2))
+        copyToClipboard(JSON.stringify(geoResults, undefined, 2))
     }
 
     // Define FUNCTIONS

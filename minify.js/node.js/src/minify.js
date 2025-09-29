@@ -156,7 +156,7 @@ function minify(input, options = {}) {
 function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Init option strings/types
-    const strDefaultOptions = JSON.stringify(defaultOptions, null, 2)
+    const strDefaultOptions = JSON.stringify(defaultOptions, undefined, 2)
         .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
         .replace(/"/g, '\'') // replace double quotes w/ single quotes
         .replace(/\n\s*/g, ' ') // condense to single line
