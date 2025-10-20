@@ -65,7 +65,7 @@ function findSCSS(searchDir, options = {}) {
         if (findSCSS.caller.name != 'compile' && typeof window != 'undefined')
             console.info('findSCSS() » Check returned array.')
     }
-    return options.isRecursing || scssFiles.length > 0 ? scssFiles : []
+    return options.isRecursing || scssFiles.length ? scssFiles : []
 }
 
 function compile(input, options = {}) {
@@ -126,7 +126,7 @@ function compile(input, options = {}) {
                     }
                 }).filter(data => !data.error ) // filter out failed compilations
             if (options.verbose) {
-                if (compileResult.length > 0 && typeof window != 'undefined') console.info(
+                if (compileResult.length && typeof window != 'undefined') console.info(
                     'compile() » Compilation complete! Check returned object.')
                 else console.info(
                     'compile() » No SCSS files processed.')

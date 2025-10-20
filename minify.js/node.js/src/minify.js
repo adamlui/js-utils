@@ -67,7 +67,7 @@ function findJS(searchDir, options = {}) {
         if (findJS.caller.name != 'minify' && typeof window != 'undefined')
             console.info('findJS() » Check returned array.')
     }
-    return options.isRecursing || jsFiles.length > 0 ? jsFiles : []
+    return options.isRecursing || jsFiles.length ? jsFiles : []
 }
 
 function minify(input, options = {}) {
@@ -121,7 +121,7 @@ function minify(input, options = {}) {
                     return { code: minifyResult.code, srcPath: jsPath, error: minifyResult.error }
                 }).filter(data => !data.error) // filter out failed minifications
             if (options.verbose) {
-                if (minifyResult.length > 0 && typeof window != 'undefined') console.info(
+                if (minifyResult.length && typeof window != 'undefined') console.info(
                     'minify() » Minification complete! Check returned object.')
                 else console.info(
                     'minify() » No unminified JavaScript files processed.')

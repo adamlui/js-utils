@@ -110,7 +110,7 @@
             })
 
         if (config.dryRun) { // -n or --dry-run passed
-            if (scssFiles.length > 0) { // print files to be processed
+            if (scssFiles.length) { // print files to be processed
                 console.info(`\n${by}SCSS files to be compiled:${nc}`)
                 scssFiles.forEach(file => console.info(file))
             } else console.info(`${by}\nNo SCSS files will be compiled.${nc}`)
@@ -129,14 +129,14 @@
             }).filter(data => !data.error ) // filter out failed compilations
 
             // Print compilation summary
-            if (compileData?.length > 0) {
+            if (compileData?.length) {
                 const cssCntSuffix = compileData.length > 1 ? 's' : ''
                 printIfNotQuiet(`\n${bg}Compilation complete!${nc}`)
                 printIfNotQuiet(`${bw + compileData.length} CSS file${ cssCntSuffix }`
                     + ( !config.noSourceMaps ? ` + ${compileData.length} source map${ cssCntSuffix }` : '' )
                     + ' generated.' + nc)
             } else printIfNotQuiet(`\n${by}No SCSS files processed.${nc}`)
-            if (failedPaths.length > 0) {
+            if (failedPaths.length) {
                 printIfNotQuiet(`\n${br}`
                     + `${failedPaths.length} file${ failedPaths.length > 1 ? 's' : '' }`
                     + ` failed to compile:${nc}`)
