@@ -8,6 +8,7 @@ const pkgName = '@adamlui/minify.js',
       latestLocaleCommitHash = '55480ff';
 
 (async () => {
+    'use strict'
 
     // Import LIBS
     const minifyJS = require(__dirname.match(/src/) ? './minify' : './minify.min'),

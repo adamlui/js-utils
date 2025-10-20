@@ -8,6 +8,7 @@ const pkgName = 'generate-ip',
       latestLocaleCommitHash = '3560750';
 
 (async () => {
+    'use strict'
 
     // Import LIBS
     const { ipv4, ipv6, mac } = require(__dirname.match(/src/) ? './generate-ip' : './generate-ip.min'),

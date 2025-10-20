@@ -8,6 +8,7 @@ const pkgName = '@adamlui/geolocate',
       latestLocaleCommitHash = '3560750';
 
 (async () => {
+    'use strict'
 
     // Import LIBS
     const geo = require(__dirname.match(/src/) ? './geolocate' : './geolocate.min'),

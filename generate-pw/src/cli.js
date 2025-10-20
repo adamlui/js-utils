@@ -8,6 +8,7 @@ const pkgName = 'generate-pw',
       latestLocaleCommitHash = '3560750';
 
 (async () => {
+    'use strict'
 
     // Import LIBS
     const { generatePassword } = require(__dirname.match(/src/) ? './generate-pw' : './generate-pw.min'),
