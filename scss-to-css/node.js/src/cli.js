@@ -104,8 +104,10 @@
 
         // Find all eligible JavaScript files or arg-passed file
         const scssFiles = inputPath.endsWith('.scss') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
-            : scssToCSS.findSCSS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode,
-                                            ignoreFiles: (config.ignoreFiles?.split(',') ?? []).map(file => file.trim()) })
+            : scssToCSS.findSCSS(inputPath, {
+                recursive: !config.noRecursion, verbose: !config.quietMode,
+                ignoreFiles: (config.ignoreFiles?.split(',') ?? []).map(file => file.trim())
+            })
 
         if (config.dryRun) { // -n or --dry-run passed
             if (scssFiles.length > 0) { // print files to be processed
@@ -156,7 +158,7 @@
                         /(?:src|s[ac]ss)$/.test(path.dirname(srcPath)) ? (
                             '../' + ( outputArg || 'css' ) // + ../outputArg|css/ if in *(src|sass|scss)/
                         ) : outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
-                                                    : outputArg || 'css' // or path from folder outputArg or css/ if no outputArg passed
+                          : outputArg || 'css' // or path from folder outputArg or css/ if no outputArg passed
                     )
                     const outputFilename = (
                         outputArg.endsWith('.css') && inputArg.endsWith('.scss')

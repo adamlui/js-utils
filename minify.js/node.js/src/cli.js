@@ -26,8 +26,10 @@ const pkgName = '@adamlui/minify.js',
     // Load sys LANGUAGE
     let langCode = 'en'
     if (process.platform == 'win32') {
-        try { langCode = execSync('(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' }).trim() }
-        catch (err) { printIfNotQuiet(`Error loading system language: ${err}`) }
+        try {
+            langCode = execSync('(Get-Culture).TwoLetterISOLanguageName',
+                { shell: 'powershell', encoding: 'utf-8' }).trim()
+        } catch (err) { printIfNotQuiet(`Error loading system language: ${err}`) }
     } else { // macOS/Linux
         const env = process.env
         langCode = (env.LANG || env.LANGUAGE || env.LC_ALL || env.LC_MESSAGES || env.LC_NAME || 'en')?.split('.')[0]
@@ -48,7 +50,7 @@ const pkgName = '@adamlui/minify.js',
                         flatMsgs[key] = msgs[key].message
                 resolve(flatMsgs)
             } catch (err) { // if bad response
-                msgFetchTries++ ; if (msgFetchTries == 3) return resolve({}) // try up to 3X (original/region-stripped/EN) only
+                msgFetchTries++ ; if (msgFetchTries == 3) return resolve({}) // try original/region-stripped/EN only
                 msgHref = langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                     msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
                         : ( msgHostURL + 'en/messages.json' ) // else use default English messages
@@ -147,8 +149,10 @@ const pkgName = '@adamlui/minify.js',
 
         // Find all eligible JavaScript files or arg-passed file
         const unminnedJSfiles = inputPath.endsWith('.js') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
-            : minifyJS.findJS(inputPath, { recursive: !config.noRecursion, verbose: !config.quietMode,
-                                           ignoreFiles: (config.ignoreFiles?.split(',') ?? []).map(file => file.trim()) })
+            : minifyJS.findJS(inputPath, {
+                recursive: !config.noRecursion, verbose: !config.quietMode,
+                ignoreFiles: (config.ignoreFiles?.split(',') ?? []).map(file => file.trim())
+            })
 
         if (config.dryRun) { // -n or --dry-run passed
             if (unminnedJSfiles.length > 0) { // print files to be processed
@@ -172,10 +176,13 @@ const pkgName = '@adamlui/minify.js',
                 printIfNotQuiet(`\n${bg + ( msgs.info_minComplete || 'Minification complete' )}!${nc}`)
                 printIfNotQuiet(`${bw + minifyData.length} ${ msgs.info_file || 'file' }`
                     + `${ minifyData.length > 1 ? 's' : '' } ${ msgs.info_minified || 'minified' }.${nc}`)
-            } else printIfNotQuiet(`\n${by + ( msgs.info_noFilesProcessed || 'No unminified JavaScript files processed' )}.${nc}`)
+            } else printIfNotQuiet(
+                `\n${by + ( msgs.info_noFilesProcessed || 'No unminified JavaScript files processed' )}.${nc}`)
             if (failedPaths.length > 0) {
-                printIfNotQuiet(`\n${br + failedPaths.length} ${ msgs.info_file || 'file' }`
-                    + `${ failedPaths.length > 1 ? 's' : '' } ${ msgs.info_failedToMinify || 'failed to minify' }:${nc}`)
+                printIfNotQuiet(
+                    `\n${br + failedPaths.length} ${ msgs.info_file || 'file' }`
+                    + `${ failedPaths.length > 1 ? 's' : '' } ${ msgs.info_failedToMinify || 'failed to minify' }:${nc}`
+                )
                 failedPaths.forEach(path => printIfNotQuiet(path))
             }
             if (minifyData?.length == 0) return
@@ -187,13 +194,14 @@ const pkgName = '@adamlui/minify.js',
                 ncp.writeSync(minifyData[0].code)
 
             } else { // write array data to files
-                printIfNotQuiet(`\n${ msgs.info_writing || 'Writing to file' }${ minifyData?.length > 1 ? 's' : '' }...`)
+                printIfNotQuiet(
+                    `\n${ msgs.info_writing || 'Writing to file' }${ minifyData?.length > 1 ? 's' : '' }...`)
                 minifyData?.forEach(({ code, srcPath }) => {
                     const outputDir = path.join(
                         path.dirname(srcPath), // path of file to be minified
                         ( /so?u?rce?$/.test(path.dirname(srcPath)) ? '../' : '' ) // + '../' if in if in *(src|source)/
                       + ( outputArg.endsWith('.js') ? path.dirname(outputArg) // + path from file outputArg
-                                                    : outputArg || 'min' ) // or path from folder outputArg or min/ if no outputArg passed
+                            : outputArg || 'min' ) // or path from folder outputArg or min/ if no outputArg passed
                     )
                     const outputFilename = (
                         outputArg.endsWith('.js') && inputArg.endsWith('.js')
@@ -270,7 +278,8 @@ const pkgName = '@adamlui/minify.js',
         }
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 37)))
-        console.info(`\n${ msgs.info_moreHelp || 'For more help' }, ${ msgs.info_visit || 'visit' }: ${ bw + docURL + nc }`)
+        console.info(
+            `\n${ msgs.info_moreHelp || 'For more help' }, ${ msgs.info_visit || 'visit' }: ${ bw + docURL + nc }`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,

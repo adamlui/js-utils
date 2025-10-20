@@ -41,10 +41,11 @@ function generatePassword(options = {}) {
         return generatePasswords(qty, nonQtyOptions)
 
     } else { // generate/return single password
-        const fromGeneratePasswords = generatePassword.caller?.name == 'generatePasswords' // flag to avoid repetitive logs
+        const fromGeneratePasswords = generatePassword.caller?.name == 'generatePasswords' // to avoid repetitive logs
 
         // Init password's char set
-        if (options.verbose && !fromGeneratePasswords) console.info('generatePassword() » Initializing character set...')
+        if (options.verbose && !fromGeneratePasswords)
+            console.info('generatePassword() » Initializing character set...')
         let pwCharset = options.charset?.toString() || ( // use passed [charset], or construct from options
             (options.numbers ? charsets.numbers : '')
               + (options.symbols ? charsets.symbols : '')
@@ -56,13 +57,15 @@ function generatePassword(options = {}) {
 
         // Exclude passed `exclude` chars
         if (options.exclude) {
-            if (options.verbose && !fromGeneratePasswords) console.info('generatePassword() » Removing excluded characters...')
+            if (options.verbose && !fromGeneratePasswords)
+                console.info('generatePassword() » Removing excluded characters...')
             pwCharset = pwCharset.replace(new RegExp(`[${options.exclude}]`, 'g'), '')
         }
 
         // Exclude similar chars if `excludeSimilarChars` is `true`
         if (options.excludeSimilarChars) {
-            if (options.verbose && !fromGeneratePasswords) console.info('generatePassword() » Excluding similar characters...')
+            if (options.verbose && !fromGeneratePasswords)
+                console.info('generatePassword() » Excluding similar characters...')
             pwCharset = pwCharset.replace(/[o0Oil1|]/g, '')
         }
 
@@ -77,8 +80,9 @@ function generatePassword(options = {}) {
         // Enforce strict mode if enabled
         if (options.strict) {
             if (options.verbose && !fromGeneratePasswords) console.info('generatePassword() » Enforcing strict mode...')
-            const charTypes = ['number', 'symbol', 'lower', 'upper'],
-                  requiredCharTypes = charTypes.filter(charType => options[charType + 's'] || options[charType + 'case'])
+            const charTypes = ['number', 'symbol', 'lower', 'upper']
+            const requiredCharTypes = charTypes
+                .filter(charType => options[`${charType}s`] || options[`${charType}case`])
             password = strictify(password, requiredCharTypes)
         }
 

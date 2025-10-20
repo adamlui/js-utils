@@ -25,8 +25,10 @@ const pkgName = '@adamlui/geolocate',
     // Load sys LANGUAGE
     let langCode = 'en'
     if (process.platform == 'win32') {
-        try { langCode = execSync('(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' }).trim() }
-        catch (err) { printIfNotQuiet(`Error loading system language: ${err}`) }
+        try {
+            langCode = execSync('(Get-Culture).TwoLetterISOLanguageName',
+                { shell: 'powershell', encoding: 'utf-8' }).trim()
+        } catch (err) { printIfNotQuiet(`Error loading system language: ${err}`) }
     } else { // macOS/Linux
         const env = process.env
         langCode = (env.LANG || env.LANGUAGE || env.LC_ALL || env.LC_MESSAGES || env.LC_NAME || 'en')?.split('.')[0]
@@ -47,7 +49,7 @@ const pkgName = '@adamlui/geolocate',
                         flatMsgs[key] = msgs[key].message
                 resolve(flatMsgs)
             } catch (err) { // if bad response
-                msgFetchTries++ ; if (msgFetchTries == 3) return resolve({}) // try up to 3X (original/region-stripped/EN) only
+                msgFetchTries++ ; if (msgFetchTries == 3) return resolve({}) // try original/region-stripped/EN only
                 msgHref = langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                     msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
                         : ( msgHostURL + 'en/messages.json' ) // else use default English messages
@@ -167,7 +169,8 @@ const pkgName = '@adamlui/geolocate',
         }
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)))
-        console.info(`\n${ msgs.info_moreHelp || 'For more help' }, ${ msgs.info_visit || 'visit' }: ${ bw + docURL + nc }`)
+        console.info(
+            `\n${ msgs.info_moreHelp || 'For more help' }, ${ msgs.info_visit || 'visit' }: ${ bw + docURL + nc }`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
