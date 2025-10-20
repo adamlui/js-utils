@@ -1,4 +1,4 @@
-name: Sync changes between **/bump.sh
+name: Sync changes to **/bump.sh
 
 on:
   push:
@@ -38,7 +38,7 @@ jobs:
           repository: adamlui/scss-to-css
           path: adamlui/scss-to-css
 
-      - name: Sync changes between **/bump.sh
+      - name: Sync changes to **/bump.sh
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
 
