@@ -4,7 +4,7 @@
     'use strict'
 
     const pkgName = '@adamlui/scss-to-css',
-          copyright = '© 2024 Adam Lui & contributors under the MIT license.',
+          copyright = '© 2024–2025 Adam Lui & contributors under the MIT license.',
           cmdFormat = 'scss-to-css [inputPath] [outputPath] [options]',
           srcURL = 'https://code.scsstocss.org/node.js',
           docURL = 'https://docs.scsstocss.org/node.js/#-command-line-usage'
