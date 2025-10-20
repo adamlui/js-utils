@@ -24,6 +24,20 @@ jobs:
           path: adamlui/js-utils
           fetch-depth: 2
 
+      - name: Checkout adamlui/minify.js
+        uses: actions/checkout@v5.0.0
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/minify.js
+          path: adamlui/minify.js
+
+      - name: Checkout adamlui/scss-to-css
+        uses: actions/checkout@v5.0.0
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/scss-to-css
+          path: adamlui/scss-to-css
+
       - name: Sync changes between **/bump.sh
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
@@ -47,6 +61,18 @@ jobs:
           # Expose sync src for commit msg in next step
           sync_src=$(echo "$newest_file" | cut -d'/' -f2-3)
           echo "SYNC_SRC=$sync_src" >> $GITHUB_ENV
+
+      - name: Sync minify.js/ to adamlui/minify.js/
+        run: |
+          rsync -avhr --delete --filter='P /.*' \
+            ${{ github.workspace }}/adamlui/js-utils/minify.js/ \
+            ${{ github.workspace }}/adamlui/minify.js/
+
+      - name: Sync scss-to-css/ to adamlui/scss-to-css/
+        run: |
+          rsync -avhr --delete --filter='P /.*' \
+            ${{ github.workspace }}/adamlui/js-utils/scss-to-css/ \
+            ${{ github.workspace }}/adamlui/scss-to-css/
 
       - name: Escape backticks in commit msg
         env:
@@ -74,4 +100,18 @@ jobs:
           git pull # again to sync w/ concurrent workflow updates
           git add .
           git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from $SYNC_SRC]" || true
+          git push
+
+      - name: Push changes to adamlui/minify.js
+        run: |
+          cd ${{ github.workspace }}/adamlui/minify.js
+          git pull && git add .
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/minify.js]" || true
+          git push
+
+      - name: Push changes to adamlui/scss-to-css
+        run: |
+          cd ${{ github.workspace }}/adamlui/scss-to-css
+          git pull && git add .
+          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/scss-to-css]" || true
           git push
