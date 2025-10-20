@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 // © 2024 Adam Lui & contributors under the MIT license.
 // Source: https://code.scsstocss.org/node.js
 // Documentation: https://docs.scsstocss.org/node.js
