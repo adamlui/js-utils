@@ -69,7 +69,7 @@ sed -i -E "s|(cdn\.jsdelivr\.net\/gh\/[^/]+\/[^@/\"']+)[^/\"']*|\1@$BUMP_HASH|g"
 new_file=$(<dist/cli.min.js)
 if [[ "$old_file" != "$new_file" ]]
     then echo -e "${BW}$BUMP_HASH${NC}"
-    else echo "No jsDelivr URLs for GH assets found in built files"
+    else echo "No jsDelivr URLs for GH assets found in built files."
 fi
 
 # Commit build to Git
