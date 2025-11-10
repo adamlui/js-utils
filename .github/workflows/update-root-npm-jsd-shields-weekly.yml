@@ -66,8 +66,8 @@ jobs:
 
           # Fetch/sum npm download counts
           for pkg in "${NPM_PKGS[@]}" ; do
-            pkg_downloads=$(curl -s "https://img.shields.io/npm/dm/$pkg.svg" |
-              sed -n 's/.*<title>downloads: \([0-9,.km]\+\).*<\/title>.*/\1/Ip')
+            pkg_downloads=$(curl -s "https://api.npmjs.org/downloads/point/last-month/$pkg" |
+              sed -n 's/.*"downloads":\([0-9]*\).*/\1/p')
             pkg_downloads=$(expand_num "$pkg_downloads")
             echo "$pkg npm downloads: $pkg_downloads"
             total_downloads=$((total_downloads + pkg_downloads))
