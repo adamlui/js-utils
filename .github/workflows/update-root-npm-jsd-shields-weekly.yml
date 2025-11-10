@@ -3,6 +3,7 @@ name: Update npm/jsDelivr shields in root README
 on:
   schedule:
     - cron: "45 3 * * 5" # every Fri @ 3:45 AM
+  workflow_dispatch:
 
 permissions:
   contents: read
