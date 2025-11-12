@@ -374,7 +374,6 @@ Recursively minify all JavaScript files
 [link-codefactor]: https://www.codefactor.io/repository/github/adamlui/scss-to-css
 [link-sonar]: https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:node.js/src/scss-to-css.js
 [link-awesome]: https://github.com/toolleeo/cli-apps#conversion
-[link-author]: https://github.com/adamlui
 [link-img-to-webp]: https://github.com/adamlui/js-utils/tree/main/img-to-webp
 [link-img-download]: https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js
 [link-img-discuss]: https://github.com/adamlui/js-utils/discussions
