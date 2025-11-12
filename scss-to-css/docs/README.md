@@ -1,281 +1,389 @@
-# { } scss-to-css
+<!-- 
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                               SCSS-TO-CSS                                        ║
+║              Recursively compile all SCSS files into minified CSS                ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
 
-### Recursively compile all SCSS files into minified CSS.
+Author: Adam Lui
+License: MIT
+Repository: https://github.com/adamlui/scss-to-css
+-->
 
-<a href="https://www.npmjs.com/package/@adamlui/scss-to-css">
-    <img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="#%EF%B8%8F-mit-license">
-    <img height=31 src="https://img.shields.io/badge/License-MIT-fc4f2d.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://www.codefactor.io/repository/github/adamlui/scss-to-css">
-    <img height=31 src="https://img.shields.io/codefactor/grade/github/adamlui/scss-to-css?label=Code+Quality&logo=codefactor&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge"></a>
-<a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:node.js/src/scss-to-css.js">
-    <img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_scss-to-css%3Anode.js%2Fsrc%2Fscss-to-css.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></a>
-<a href="https://github.com/toolleeo/cli-apps#conversion">
-    <img height=31 src="https://img.shields.io/badge/Mentioned_in-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<div align="center">
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
+<!-- ═══════════════════════════════════════════════════════════════════════════════
+     HERO SECTION
+     ═══════════════════════════════════════════════════════════════════════════════ -->
+
+<h1>{ } scss-to-css</h1>
+
+**Recursively compile all SCSS files into minified CSS**
+
+<br>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════════
+     BADGES
+     ═══════════════════════════════════════════════════════════════════════════════ -->
+
+[![npm][badge-npm]][link-npm]
+[![License][badge-license]][link-license]
+[![CodeFactor][badge-codefactor]][link-codefactor]
+[![Vulnerabilities][badge-sonar]][link-sonar]
+[![Awesome][badge-awesome]][link-awesome]
+
+<br>
+
+<img 
+  src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141" 
+  width="100%" 
+  height="6"
+/>
+
+</div>
 
 ## ⚡ Installation
 
-As a **global utility**:
+**Global utility:**
 
-```
-$ npm install -g @adamlui/scss-to-css
-```
-
-As a **dev dependency** (e.g. for build scripts), from your project root:
-
-```
-$ npm install -D @adamlui/scss-to-css
+```bash
+npm install -g @adamlui/scss-to-css
 ```
 
-As a **runtime dependency** (e.g. for on-the-fly compilation), from your project root:
+**Dev dependency** (for build scripts):
 
-```
-$ npm install @adamlui/scss-to-css
-```
-
-<br>
-
-<a href="https://github.com/sponsors/adamlui"><img src="https://assets.scsstocss.org/images/banners/sponsor/$10/banner1660x260.png?2cba0ae"></a>
-
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
-
-## 💻 Command line usage
-
-The basic **global command** is:
-
-```
-$ scss-to-css
+```bash
+npm install -D @adamlui/scss-to-css
 ```
 
-Sample output:
+**Runtime dependency** (for on-the-fly compilation):
 
-<img src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@b74edea/node.js/media/images/screenshots/cli/scss-to-css-docs-cmd-output.png">
-
-**📝 Note:** Source maps are also generated by default unless `-S` or `--no-source-maps` is passed.
-
-#
-
-To specify **input/output** paths:
-   
-```
-$ scss-to-css [input_path] [output_path]
+```bash
+npm install @adamlui/scss-to-css
 ```
 
-- `[input_path]`: Path to SCSS file or directory containing SCSS files to be compiled, relative to the current working directory.
-- `[output_path]`: Path to file or directory where CSS + source map files will be stored, relative to original file location (if not provided, `css/` is used).
+<div align="center">
 
-**📝 Note:** If folders are passed, files will be processed recursively unless `-R` or `--no-recursion` is passed.
+<a href="https://github.com/sponsors/adamlui">
+  <img 
+    src="https://assets.scsstocss.org/images/banners/sponsor/$10/banner1660x260.png?2cba0ae" 
+    alt="Sponsor"
+    width="100%"
+  />
+</a>
 
-#
+<img 
+  src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141" 
+  width="100%" 
+  height="6"
+/>
 
-To use as a **package script**, in your project's `package.json`:
+</div>
+
+## 💻 Command Line Usage
+
+### Basic Command
+
+```bash
+scss-to-css
+```
+
+**Output example:**
+
+<img 
+  src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@b74edea/node.js/media/images/screenshots/cli/scss-to-css-docs-cmd-output.png" 
+  alt="CLI Output"
+/>
+
+> [!NOTE]  
+> Source maps are generated by default unless `-S` or `--no-source-maps` is passed
+
+### Specify Input/Output Paths
+
+```bash
+scss-to-css [input_path] [output_path]
+```
+
+| Parameter       | Description                                                                      |
+| --------------- | -------------------------------------------------------------------------------- |
+| `[input_path]`  | Path to SCSS file or directory (relative to current working directory)          |
+| `[output_path]` | Output path for CSS + source maps (defaults to `css/` if not provided)          |
+
+> [!NOTE]  
+> Files are processed recursively by default unless `-R` or `--no-recursion` is passed.
+
+Add to your `package.json`:
 
 ```json
+{
   "scripts": {
-    "build:css": "<scss-to-css-cmd>"
-  },
+    "build:css": "scss-to-css [options]"
+  }
+}
 ```
 
-Replace `<scss-to-css-cmd>` with `scss-to-css` + optional args. Then, `npm run build:css` can be used to run the command.
+Then run:
 
-#
-
-### Example commands
-
-Compile all SCSS files in the **current directory** (outputs to `css/`):
-
-```
-$ scss-to-css
+```bash
+npm run build:css
 ```
 
-Compile all SCSS files in a **specific directory** (outputs to `path/to/your/directory/css/`):
+---
 
-```
-$ scss-to-css path/to/your/directory
-```
+## 📋 Example Commands
 
-Compile a **specific file** (outputs to `path/to/your/css/file.min.css`):
+<table>
+  <tr>
+    <td width="50%">
+      
+**Current directory** (outputs to `css/`):
 
-```
-$ scss-to-css path/to/your/file.scss
-```
-
-Specify both **input and output** directories (outputs to `output_folder/`):
-
-```
-$ scss-to-css input_folder output_folder
+```bash
+scss-to-css
 ```
 
-**📝 Note:** Output CSS is minified unless `-M` or `--no-minify` is passed.
+**Specific directory:**
 
-#
-
-### Command line options
-
-```
-Boolean options:
- -n, --dry-run                            Don't actually compile the file(s), just show if they will be processed.
- -d, --include-dotfolders                 Include dotfolders in file search.
- -S, --no-source-maps                     Prevent source maps from being generated.
- -M, --no-minify                          Disable minification of output CSS.
- -R, --no-recursion                       Disable recursive file searching.
- -c, --copy                               Copy compiled CSS to clipboard instead of writing to file if single source file is processed.
- -q, --quiet                              Suppress all logging except errors.
-
-Parameter options:
- --ignore-files="file1.scss,file2.scss"   Files to exclude from compilation.
- --comment="comment"                      Prepend header comment to compiled CSS. Separate by line using '\n'.
-
-Info commands:
- -h, --help                               Display help screen.
- -v, --version                            Show version number.
+```bash
+scss-to-css path/to/your/directory
 ```
 
-<br>
+</td>
+    <td width="50%">
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
+**Specific file:**
 
-## 🔌 API usage
+```bash
+scss-to-css path/to/your/file.scss
+```
 
-You can also import **scss-to-css** into your app to use its API methods, both as an ECMAScript module or a CommonJS module.
+**Custom output:**
 
-#### ECMAScript*:
+```bash
+scss-to-css input_folder output_folder
+```
+
+</td>
+  </tr>
+</table>
+
+> **Note:** Output CSS is minified unless `-M` or `--no-minify` is passed.
+
+---
+
+## 🎛️ Command Line Options
+
+### Boolean Options
+
+| Option                    | Description                                                     |
+| ------------------------- | --------------------------------------------------------------- |
+| `-n, --dry-run`           | Don't compile, just show which files will be processed          |
+| `-d, --include-dotfolders`| Include dotfolders in file search                               |
+| `-S, --no-source-maps`    | Prevent source map generation                                   |
+| `-M, --no-minify`         | Disable CSS minification                                        |
+| `-R, --no-recursion`      | Disable recursive file searching                                |
+| `-c, --copy`              | Copy to clipboard instead of writing to file (single file only) |
+| `-q, --quiet`             | Suppress all logging except errors                              |
+
+### Parameter Options
+
+| Option                                        | Description                                                  |
+| --------------------------------------------- | ------------------------------------------------------------ |
+| `--ignore-files="file1.scss,file2.scss"`      | Files to exclude from compilation                            |
+| `--comment="Your comment"`                    | Prepend header comment to CSS (use `\n` for line breaks)     |
+
+### Info Commands
+
+| Command          | Description               |
+| ---------------- | ------------------------- |
+| `-h, --help`     | Display help screen       |
+| `-v, --version`  | Show version number       |
+
+---
+
+<div align="center">
+
+<img 
+  src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141" 
+  width="100%" 
+  height="6"
+/>
+
+</div>
+
+## 🔌 API Usage
+
+Import **scss-to-css** into your app as ESM or CommonJS:
+
+**ESM** (Node.js 14+):
 
 ```js
 import * as scssToCSS from '@adamlui/scss-to-css';
 ```
 
-#### CJS:
+**CommonJS:**
 
 ```js
 const scssToCSS = require('@adamlui/scss-to-css');
 ```
 
-###### _*Node.js version 14 or higher required_
-
-#
+---
 
 ### `compile(input[, options])`
 
 💡 Compiles SCSS based on the string input supplied.
 
-If **source code** is passed, it is directly compiled, then an object containing `srcPath` + `code` + `srcMap` + `error` is returned:
+#### Source Code Input
 
 ```js
-const srcCode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
-      compileResult = scssToCSS.compile(srcCode);
+const srcCode = 'h1 { font-size: 40px; code { font-face: Roboto Mono }}';
+const result = scssToCSS.compile(srcCode);
 
-console.log(compileResult.error); // outputs runtime error, or `undefined` if no error
-console.log(compileResult.code);  // outputs minified CSS: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
+console.log(result.error); // undefined if no error
+console.log(result.code);  // 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
 
-If a **file path** is passed, the file's code is loaded then compiled to CSS, returning an object like above.
+#### File Path Input
 
-If a **directory path** is passed, SCSS files are searched for (recursively by default), each one's code is loaded then compiled, then an array of objects containing `srcPath` + `code` + `srcMap` + `error` is returned:
+Returns object containing `srcPath` + `code` + `srcMap` + `error`.
+
+#### Directory Path Input
+
+Searches for SCSS files recursively and returns array of result objects:
 
 ```js
-// Outputs paths to SCSS files in working directory + all nested directories
-const compileResults = scssToCSS.compile('.');
-compileResults.forEach(result => console.log(result.srcPath));
-
-// Outputs compiled CSS from 2nd SCSS file if found, or `undefined` if not found
-console.log(compileResults[1].code);
+const results = scssToCSS.compile('.');
+results.forEach(result => console.log(result.srcPath));
+console.log(results[1].code); // Compiled CSS from 2nd file
 ```
 
-Options are boolean, passed as object properties. For example:
+#### Options
 
 ```js
-// Returns array of data objects where `.code` contains unminified CSS
+// Example: Return unminified CSS
 scssToCSS.compile(inputDir, { minify: false });
 ```
 
-Available parameters (and their default settings) are:
+| Option        | Type    | Description                                          | Default |
+| ------------- | ------- | ---------------------------------------------------- | ------- |
+| `recursive`   | Boolean | Recursively search for nested files                  | `true`  |
+| `verbose`     | Boolean | Show logging in console/terminal                     | `true`  |
+| `dotFolders`  | Boolean | Include dotfolders in file search                    | `false` |
+| `minify`      | Boolean | Minify output CSS                                    | `true`  |
+| `sourceMaps`  | Boolean | Generate CSS source maps                             | `true`  |
+| `ignoreFiles` | Array   | Files (by name) to exclude from compilation          | `[]`    |
+| `comment`     | String  | Header comment to prepend (use `\n` for line breaks) | `''`    |
 
-Name          | Type    | Desciption                                                              | Default value
---------------|---------|-------------------------------------------------------------------------|---------------
-`recursive`   | Boolean | Recursively search for nested files if dir path passed.                 | `true`
-`verbose`     | Boolean | Show logging in console/terminal.                                       | `true`
-`dotFolders`  | Boolean | Include dotfolders in file search.                                      | `false`
-`minify`      | Boolean | Minify output CSS.                                                      | `true`
-`sourceMaps`  | Boolean | Generate CSS source maps.                                               | `true`
-`ignoreFiles` | Array   | Files (by name) to exclude from compilation.                            | `[]`
-`comment`     | String  | Header comment to prepend to compiled CSS. Separate by line using '\n'. | `''`
-
-#
+---
 
 ### `findSCSS(searchDir[, options])`
 
-💡 Searches for all SCSS files within the `searchDir` string passed (useful for discovering what files [`compile()`](#compileinput-options) will process) and returns an array containing their filepaths.
-
-Options are boolean, passed as object properties. For example:
+💡 Searches for all SCSS files within `searchDir` and returns an array of filepaths.
 
 ```js
-// Search for SCSS files in exactly assets/scss
-const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
-console.log(searchResults);
+const results = scssToCSS.findSCSS('assets/scss', { recursive: false });
+console.log(results);
 
-/* sample output:
-
-findSCSS() » Searching for SCSS files...
-findSCSS() » Search complete! 2 files found.
-findSCSS() » Check returned array.
+/* Output:
 [
-  'E:\\js\\utils\\scss-to-css\assets\\scss\\foo.scss',
-  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.scss'
+  'E:\\js\\utils\\scss-to-css\\assets\\scss\\foo.scss',
+  'E:\\js\\utils\\scss-to-css\\assets\\scss\\bar.scss'
 ]
 */
 ```
 
-Available parameters (and their default settings) are:
+#### Options
 
-Name          | Type    | Desciption                                               | Default value
---------------|---------|----------------------------------------------------------|---------------
-`recursive`   | Boolean | Recursively search for nested files in searchDir passed. | `true`
-`verbose`     | Boolean | Show logging in console/terminal.                        | `true`
-`dotFolders`  | Boolean | Include dotfolders in file search.                       | `false`
-`ignoreFiles` | Array   | Files (by name) to exclude from search results.          | `[]`
+| Option        | Type    | Description                                 | Default |
+| ------------- | ------- | ------------------------------------------- | ------- |
+| `recursive`   | Boolean | Recursively search for nested files         | `true`  |
+| `verbose`     | Boolean | Show logging in console/terminal            | `true`  |
+| `dotFolders`  | Boolean | Include dotfolders in file search           | `false` |
+| `ignoreFiles` | Array   | Files (by name) to exclude from results     | `[]`    |
+
+<div align="center">
+
+</div>
+
+<div align="center">
+
+</div>
+
+## 🛠️ Related Utilities
+
+<table>
+  <tr>
+    <td width="50%">
+
+### [🖼️ img-to-webp][link-img-to-webp]
+
+Recursively compress all images to WEBPs
+
+[Download][link-img-download] • [Discuss][link-img-discuss]
+
+</td>
+    <td width="50%">
+
+### [</> minify.js][link-minify] [![Awesome][badge-awesome-small]][link-minify-awesome]
+
+Recursively minify all JavaScript files
+
+[Install][link-minify-install] • [Readme][link-minify-readme] • [CLI][link-minify-cli] • [API][link-minify-api] • [Discuss][link-minify-discuss]
+
+</td>
+  </tr>
+</table>
+
+---
+
+<div align="center">
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
+<picture>
+  <source 
+    media="(prefers-color-scheme: dark)" 
+    srcset="https://assets.scsstocss.org/images/icons/home/white/icon32x27.png?v=7e4a141"
+  />
+  <img 
+    src="https://assets.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?v=7e4a141" 
+    height="13"
+  />
+</picture>
 
-## 🏛️ MIT License
+[**More JavaScript utilities**][link-js-utils] • [Discuss][link-discuss] • [Back to top ↑](#--scss-to-css)
 
-**Copyright © 2024 [Adam Lui](https://github.com/adamlui) & contributors .**
+</div>
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+<!-- ═══════════════════════════════════════════════════════════════════════════════
+     BADGE DEFINITIONS
+     ═══════════════════════════════════════════════════════════════════════════════ -->
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+[badge-npm]: https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge
+[badge-license]: https://img.shields.io/badge/License-MIT-fc4f2d.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge
+[badge-codefactor]: https://img.shields.io/codefactor/grade/github/adamlui/scss-to-css?label=Code+Quality&logo=codefactor&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge
+[badge-sonar]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_scss-to-css%3Anode.js%2Fsrc%2Fscss-to-css.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold
+[badge-awesome]: https://img.shields.io/badge/Mentioned_in-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge
+[badge-awesome-small]: https://assets.scsstocss.org/images/badges/awesome/badge.svg?v=7e4a141
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+<!-- ═══════════════════════════════════════════════════════════════════════════════
+     LINK DEFINITIONS
+     ═══════════════════════════════════════════════════════════════════════════════ -->
 
-<br>
-
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
-
-## 🛠️ Related utilities
-
-### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
-
-> Recursively compress all images to WEBPs.
-<br>[Download](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
-[Discuss](https://github.com/adamlui/js-utils/discussions)
-
-### [</> minify.js](https://minify-js.org) <a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?v=7e4a141"></a>
-
-> Recursively minify all JavaScript files.
-<br>[Install](https://node.minify-js.org/#-installation) /
-[Readme](https://node.minify-js.org/#readme) /
-[CLI usage](https://node.minify-js.org/#-command-line-usage) /
-[API usage](https://node.minify-js.org/#-api-usage) /
-[Discuss](https://github.com/adamlui/scss-to-css/discussions)
-
-<br>
-
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/home/white/icon32x27.png?v=7e4a141"><img height=13 src="https://assets.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?v=7e4a141"></picture> <a href="https://js-utils.org">**More JavaScript utilities**</a> /
-<a href="https://github.com/adamlui/scss-to-css/discussions">Discuss</a> /
-<a href="#--scss-to-css">Back to top ↑</a>
+[link-npm]: https://www.npmjs.com/package/@adamlui/scss-to-css
+[link-license]: #%EF%B8%8F-mit-license
+[link-codefactor]: https://www.codefactor.io/repository/github/adamlui/scss-to-css
+[link-sonar]: https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:node.js/src/scss-to-css.js
+[link-awesome]: https://github.com/toolleeo/cli-apps#conversion
+[link-author]: https://github.com/adamlui
+[link-img-to-webp]: https://github.com/adamlui/js-utils/tree/main/img-to-webp
+[link-img-download]: https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js
+[link-img-discuss]: https://github.com/adamlui/js-utils/discussions
+[link-minify]: https://minify-js.org
+[link-minify-awesome]: https://github.com/toolleeo/cli-apps#programming
+[link-minify-install]: https://node.minify-js.org/#-installation
+[link-minify-readme]: https://node.minify-js.org/#readme
+[link-minify-cli]: https://node.minify-js.org/#-command-line-usage
+[link-minify-api]: https://node.minify-js.org/#-api-usage
+[link-minify-discuss]: https://github.com/adamlui/scss-to-css/discussions
+[link-js-utils]: https://js-utils.org
+[link-discuss]: https://github.com/adamlui/scss-to-css/discussions
