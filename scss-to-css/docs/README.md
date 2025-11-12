@@ -350,7 +350,7 @@ Recursively minify all JavaScript files
   />
 </picture>
 
-[**More JavaScript utilities**][link-js-utils] • [Discuss][link-discuss] • [Back to top ↑](#--scss-to-css)
+[**More JavaScript utilities**][link-js-utils] • [Discuss][link-discuss] • [Back to top ↑](#--scss-to-css) <!-- eslint-disable-line -- https://github.com/eslint/markdown/issues/582 -->
 
 </div>
 
