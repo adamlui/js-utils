@@ -18,21 +18,21 @@ jobs:
     steps:
 
       - name: Checkout adamlui/js-utils
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v5.0.1
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
           path: adamlui/js-utils
           fetch-depth: 2
 
       - name: Checkout adamlui/minify.js
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v5.0.1
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
           repository: adamlui/minify.js
           path: adamlui/minify.js
 
       - name: Checkout adamlui/scss-to-css
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v5.0.1
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
           repository: adamlui/scss-to-css
