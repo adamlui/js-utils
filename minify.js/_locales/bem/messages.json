@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Amashina ya Bantu Abashakwata Amaka" },
   "optionDesc_noFilenameChange": { "message": "Ukulele File Extension to.min.js" },
   "optionDesc_copy": { "message": "Kopololeni amabula ya pa kompyuta ukucila ukulemba amabula ya pa kompyuta nga ca kuti mwabelenga fye amabula ya pa kompyuta" },
+  "optionDesc_cloneFolders": { "message": "Reserve file file file file file in output directory" },
   "optionDesc_quiet": { "message": "Fela Anikulapo Kuti - Fela Anikulapo Kuti" },
   "optionDesc_ignoreFiles": { "message": "Files for Ukulele Tabs Ukulele Tabs" },
   "optionDesc_commentMain": { "message": "Ukulele Tabs Comments to Ukulele Tabs" },

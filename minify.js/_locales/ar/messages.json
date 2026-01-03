@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "تعطيل أسماء التشويش" },
   "optionDesc_noFilenameChange": { "message": "تعطيل تغيير امتداد الملف إلى .min.js" },
   "optionDesc_copy": { "message": "انسخ الرمز المصغر إلى الحافظة بدلاً من الكتابة إلى الملف إذا تمت معالجة ملف مصدر واحد" },
+  "optionDesc_cloneFolders": { "message": "الحفاظ على بنية المجلد في دليل الإخراج" },
   "optionDesc_quiet": { "message": "قم بإيقاف جميع عمليات التسجيل باستثناء الأخطاء" },
   "optionDesc_ignoreFiles": { "message": "الملفات المراد استبعادها من التصغير" },
   "optionDesc_commentMain": { "message": "إعداد تعليق الرأس إلى الرمز المصغر" },

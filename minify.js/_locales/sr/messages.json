@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Onemogućite imena mangiranja" },
   "optionDesc_noFilenameChange": { "message": "Onemogućite promenu ekstenzije datoteke u .min.js" },
   "optionDesc_copy": { "message": "Kopirajte umanjeni kôd u ostavu umesto pisanja u datoteku ako se obrađuje datoteka sa jednim izvorom" },
+  "optionDesc_cloneFolders": { "message": "Sačuvajte strukturu fascikli u izlaznom direktorijumu" },
   "optionDesc_quiet": { "message": "Obustavi svu evidenciju osim grešaka" },
   "optionDesc_ignoreFiles": { "message": "Datoteke za isključivanje iz minifikacije" },
   "optionDesc_commentMain": { "message": "Prependirajte komentar zaglavlja na umanjeni kôd" },

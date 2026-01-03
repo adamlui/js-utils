@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Მანაქანის სახელების გამორთვა" },
   "optionDesc_noFilenameChange": { "message": "Გამორთეთ ფაილის გაფართოების შეცვლა .min.js-ზე" },
   "optionDesc_copy": { "message": "Გადააკოპირეთ მინიფიცირებული კოდი გაცვლის ბუფერში და არა ჩაწერეთ ფაილში, თუ ერთი საწყისი ფაილი მუშავდება" },
+  "optionDesc_cloneFolders": { "message": "Საქაღალდის სტრუქტურის გამოტანის საქაღალდეში შენარჩუნება" },
   "optionDesc_quiet": { "message": "Ყველა ჟურნალის ჩახშობა, გარდა შეცდომებისა" },
   "optionDesc_ignoreFiles": { "message": "Მინიფიკაციიდან გამოსარიცხი ფაილები" },
   "optionDesc_commentMain": { "message": "Სათაურის წინასწარი კომენტარი დაურთეთ მინიფიცირებულ კოდს" },

@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Manqrinq adlarını deaktiv et" },
   "optionDesc_noFilenameChange": { "message": "Fayl uzantısının .min.js-ə dəyişdirilməsini deaktiv edin" },
   "optionDesc_copy": { "message": "Tək mənbə faylı işlənərsə, fayla yazmaq əvəzinə, minimuma endirilmiş kodu mübadilə buferinə kopyalayın" },
+  "optionDesc_cloneFolders": { "message": "Çıxış kataloqunda qovluq strukturunu qoruyun" },
   "optionDesc_quiet": { "message": "Xətalardan başqa bütün girişləri bağlayın" },
   "optionDesc_ignoreFiles": { "message": "Minimallaşdırmanı istisna etmək üçün fayllar" },
   "optionDesc_commentMain": { "message": "Minimum kod üçün başlıq şərhi hazırlayın" },

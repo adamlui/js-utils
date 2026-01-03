@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Keela manglingunimed" },
   "optionDesc_noFilenameChange": { "message": "Keela faililaiendi muutmine laiendiks .min.js" },
   "optionDesc_copy": { "message": "Kopeeri minifitseeritud kood lõikelauale, selle asemel et kirjutada faili, kui töödeldakse ühte lähtefaili" },
+  "optionDesc_cloneFolders": { "message": "Säilita kaustastruktuur väljundkataloogis" },
   "optionDesc_quiet": { "message": "Tühista kogu logimine, välja arvatud vead" },
   "optionDesc_ignoreFiles": { "message": "Failid, mida minimeerimisest välja jätta" },
   "optionDesc_commentMain": { "message": "Lisa päise kommentaar eelnevalt minimeeritud koodile" },

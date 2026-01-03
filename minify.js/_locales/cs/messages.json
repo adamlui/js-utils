@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Zakázat mandlování názvů" },
   "optionDesc_noFilenameChange": { "message": "Zakázat změnu přípony souboru .min.js" },
   "optionDesc_copy": { "message": "Zkopírujte zmenšený kód do schránky namísto zápisu do souboru, pokud je zpracován jeden zdrojový soubor" },
+  "optionDesc_cloneFolders": { "message": "Zachovat strukturu složky ve výstupním adresáři" },
   "optionDesc_quiet": { "message": "Potlačit veškeré protokolování kromě chyb" },
   "optionDesc_ignoreFiles": { "message": "Soubory, které chcete vyloučit z minifikace" },
   "optionDesc_commentMain": { "message": "Předložit komentář záhlaví ke zmenšenému kódu" },

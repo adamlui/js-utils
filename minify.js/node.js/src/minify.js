@@ -64,7 +64,7 @@ function findJS(searchDir, options = {}) {
             console.info('findJS() » Search complete! '
                 + ( jsFiles.length == 0 ? 'No' : jsFiles.length )
                 + ` file${ jsFiles.length == 1 ? '' : 's' } found.`)
-        if (findJS.caller.name != 'minify' && typeof window != 'undefined')
+        if (findJS.caller?.name != 'minify' && typeof window != 'undefined')
             console.info('findJS() » Check returned array.')
     }
     return options.isRecursing || jsFiles.length ? jsFiles : []
@@ -76,13 +76,14 @@ function minify(input, options = {}) {
           exampleCall = `minify('assets/js', { recursive: false, mangle: false })`
 
     const defaultOptions = {
-        recursive: true,   // recursively search for nested files if dir path passed
-        verbose: true,     // enable logging
-        dotFolders: false, // include dotfolders in file search
-        dotFiles: false,   // include dotfiles in file search
-        mangle: true,      // shorten var names (typically to one character)
-        ignoreFiles: [],   // files (by name) to exclude from minification
-        comment: ''        // header comment to prepend to minified code
+        recursive: true,     // recursively search for nested files if dir path passed
+        verbose: true,       // enable logging
+        dotFolders: false,   // include dotfolders in file search
+        dotFiles: false,     // include dotfiles in file search
+        mangle: true,        // shorten var names (typically to one character)
+        cloneFolders: false, // preserve folder structure in output dir
+        ignoreFiles: [],     // files (by name) to exclude from minification
+        comment: ''          // header comment to prepend to minified code
     }
 
     // Validate input
@@ -114,11 +115,13 @@ function minify(input, options = {}) {
                                                  ignoreFiles: options.ignoreFiles
                 })?.map(jsPath => { // minify found JS files
                     if (options.verbose) console.info(`minify() » ** Minifying ${jsPath}...`)
-                    const srcCode = fs.readFileSync(jsPath, 'utf8')
-                    const minifyResult = uglifyJS.minify(srcCode, minifyOptions)
+                    const srcCode = fs.readFileSync(jsPath, 'utf8'),
+                          minifyResult = uglifyJS.minify(srcCode, minifyOptions)
+                    let relPath
                     if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
                     if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`)
-                    return { code: minifyResult.code, srcPath: jsPath, error: minifyResult.error }
+                    if (options.cloneFolders) relPath = path.relative(path.resolve(process.cwd(), input), jsPath)
+                    return { code: minifyResult.code, srcPath: jsPath, relPath, error: minifyResult.error }
                 }).filter(data => !data.error) // filter out failed minifications
             if (options.verbose) {
                 if (minifyResult.length && typeof window != 'undefined') console.info(

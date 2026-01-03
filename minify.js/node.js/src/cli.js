@@ -70,6 +70,7 @@ const pkgName = '@adamlui/minify.js',
             'noRecursion': /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
             'noMangle': /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/,
             'noFilenameChange': /^--?(?:X|(?:disable|no)-?(?:file)?name-?change|(?:file)?name-?change=(?:false|0))$/,
+            'cloneFolders': /^--?(?:C|clone-?folders?=?(?:true|1)?)$/,
             'copy': /^--?c(?:opy)?$/,
             'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
         },
@@ -163,13 +164,25 @@ const pkgName = '@adamlui/minify.js',
         } else { // actually minify JavaScript files
 
             // Build array of minification data
-            const failedPaths = []
-            const minifyData = unminnedJSfiles.map(jsPath => {
-                const minifyResult = minifyJS.minify(jsPath, { verbose: !config.quietMode, mangle: !config.noMangle,
-                                                               comment: config.comment?.replace(/\\n/g, '\n') })
-                if (minifyResult.error) failedPaths.push(jsPath)
-                return minifyResult
-            }).filter(minifyResult => !minifyResult.error) // filter out failed minifications
+            const failedPaths = [] ; let minifyData = []
+            if (config.cloneFolders && fs.statSync(inputPath).isDirectory()) {
+                const minifyResult = minifyJS.minify(inputPath, {
+                    verbose: !config.quietMode, mangle: !config.noMangle,
+                    comment: config.comment?.replace(/\\n/g, '\n'), cloneFolders: true, recursive: !config.noRecursion,
+                    dotFolders: !!config.includeDotFolders, dotFiles: !!config.includeDotFiles,
+                    ignoreFiles: config.ignoreFiles ? config.ignoreFiles.split(',').map(file => file.trim()) : []
+                })
+                if (Array.isArray(minifyResult)) minifyData = minifyResult
+                else if (minifyResult && minifyResult.error) failedPaths.push(inputPath)
+                else if (minifyResult) minifyData = [minifyResult]
+            } else minifyData = unminnedJSfiles.map(jsPath => {
+                    const minifyResult = minifyJS.minify(jsPath, {
+                        verbose: !config.quietMode, mangle: !config.noMangle,
+                        comment: config.comment?.replace(/\\n/g, '\n')
+                    })
+                    if (minifyResult.error) failedPaths.push(jsPath)
+                    return minifyResult
+                }).filter(minifyResult => !minifyResult.error)
 
             // Print minification summary
             if (minifyData?.length) {
@@ -196,21 +209,30 @@ const pkgName = '@adamlui/minify.js',
             } else { // write array data to files
                 printIfNotQuiet(
                     `\n${ msgs.info_writing || 'Writing to file' }${ minifyData?.length > 1 ? 's' : '' }...`)
-                minifyData?.forEach(({ code, srcPath }) => {
-                    const outputDir = path.join(
-                        path.dirname(srcPath), // path of file to be minified
-                        ( /so?u?rce?$/.test(path.dirname(srcPath)) ? '../' : '' ) // + '../' if in if in *(src|source)/
-                      + ( outputArg.endsWith('.js') ? path.dirname(outputArg) // + path from file outputArg
-                            : outputArg || 'min' ) // or path from folder outputArg or min/ if no outputArg passed
-                    )
-                    const outputFilename = (
-                        outputArg.endsWith('.js') && inputArg.endsWith('.js')
-                            ? path.basename(outputArg).replace(/(\.min)?\.js$/, '')
-                            : path.basename(srcPath, '.js')
-                    ) + `${ config.noFilenameChange ? '' : '.min' }.js`
+                minifyData?.forEach(({ code, srcPath, relPath }) => {
+                    let outputDir, outputFilename
+                    if (config.cloneFolders && relPath && outputArg) { // preserve folder structure
+                        const outputPath = path.resolve(process.cwd(), outputArg),
+                              relativeDir = path.dirname(relPath)
+                        outputDir = relativeDir != '.' ? path.join(outputPath, relativeDir) : outputPath
+                        outputFilename = path.basename(srcPath, '.js') + `${ config.noFilenameChange ? '' : '.min' }.js`
+                    } else {
+                        outputDir = path.join(
+                            path.dirname(srcPath), // path of file to be minified
+                            ( /so?u?rce?$/.test(path.dirname(srcPath)) ? '../' : '' ) // + '../' if in if in *(src|source)/
+                          + ( outputArg.endsWith('.js') ? path.dirname(outputArg) // + path from file outputArg
+                                : outputArg || 'min' ) // or path from folder outputArg or min/ if no outputArg passed
+                        )
+                        outputFilename = (
+                            outputArg.endsWith('.js') && inputArg.endsWith('.js')
+                                ? path.basename(outputArg).replace(/(\.min)?\.js$/, '')
+                                : path.basename(srcPath, '.js')
+                        ) + `${ config.noFilenameChange ? '' : '.min' }.js`
+                    }
                     const outputPath = path.join(outputDir, outputFilename)
                     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true })
                     fs.writeFileSync(outputPath, code, 'utf8')
+                    printIfNotQuiet(`  ${bg}✓${nc} ${path.relative(process.cwd(), outputPath)}`)
                 })
             }
         }
@@ -262,6 +284,7 @@ const pkgName = '@adamlui/minify.js',
                 ` -X, --no-filename-change            ${ msgs.optionDesc_noFilenameChange || 'Disable changing file extension to .min.js' }`,
                 ` -c, --copy                          ${ msgs.optionDesc_copy || 'Copy minified code to clipboard instead of writing to file'
                                                                                + ' if single source file is processed' }.`,
+                ` -C, --clone-folders                 ${ msgs.optionDesc_cloneFolders || 'Preserve folder structure in output directory' }.`,
                 ` -q, --quiet                         ${ msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`
             ],
             'paramOptions': [

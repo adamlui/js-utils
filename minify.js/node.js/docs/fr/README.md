@@ -144,6 +144,7 @@ Options booléennes:
  -M, --no-mangle                      Désactivez la modification des noms.
  -X, --no-filename-change             Désactivez la modification de l'extension de fichier en .min.js
  -c, --copy                           Copiez le code minifié dans le presse-papiers au lieu d'écrire dans un fichier si un fichier source unique est traité.
+ -C, --clone-folders                  Conserver la structure des dossiers dans le répertoire de sortie.
  -q, --quiet                          Supprime toute la journalisation, à l'exception des erreurs.
 
 Options des paramètres:
@@ -215,15 +216,16 @@ minifyJS.minify(entrée, { dotFiles: true });
 
 Les paramètres disponibles (et leurs paramètres par défaut) sont:
 
-Nom           | Taper   | Description                                                                              | Valeur par défaut
---------------|---------|------------------------------------------------------------------------------------------|-------------------
-`recursive`   | Boolean | Rechercher récursivement les fichiers imbriqués si le chemin du répertoire est transmis. | `true`
-`verbose`     | Boolean | Afficher la connexion dans la console/terminal.                                          | `true`
-`dotFolders`  | Boolean | Inclure les dossiers cachés dans la recherche de fichiers.                               | `false`
-`dotFiles`    | Boolean | Incluez les fichiers cachés dans la recherche de fichiers.                               | `false`
-`mangle`      | Boolean | Raccourcissez les noms de variables (généralement à un caractère).                       | `true`
-`ignoreFiles` | Tableau | Fichiers (par nom) à exclure de la minification.                                         | `[]`
-`comment`     | String  | Commentaire d’en-tête à ajouter au code minifié. Séparez par ligne en utilisant '\n'.    | `''`
+Nom            | Taper   | Description                                                                              | Valeur par défaut
+---------------|---------|------------------------------------------------------------------------------------------|-------------------
+`recursive`    | Boolean | Rechercher récursivement les fichiers imbriqués si le chemin du répertoire est transmis. | `true`
+`verbose`      | Boolean | Afficher la connexion dans la console/terminal.                                          | `true`
+`dotFolders`   | Boolean | Inclure les dossiers cachés dans la recherche de fichiers.                               | `false`
+`dotFiles`     | Boolean | Incluez les fichiers cachés dans la recherche de fichiers.                               | `false`
+`mangle`       | Boolean | Raccourcissez les noms de variables (généralement à un caractère).                       | `true`
+`cloneFolders` | Boolean | Conserver la structure des dossiers dans le répertoire de sortie.                        | `false`
+`ignoreFiles`  | Tableau | Fichiers (par nom) à exclure de la minification.                                         | `[]`
+`comment`      | String  | Commentaire d’en-tête à ajouter au code minifié. Séparez par ligne en utilisant '\n'.    | `''`
 
 #
 

@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Mangling ысымдарын өчүрүү" },
   "optionDesc_noFilenameChange": { "message": ".min.js файл узартуусун өчүрүү" },
   "optionDesc_copy": { "message": "Undo-type" },
+  "optionDesc_cloneFolders": { "message": "Папканын структурасын чыгаруу каталогунда сактоо" },
   "optionDesc_quiet": { "message": "Каталардан башка бардык жазууларды басуу" },
   "optionDesc_ignoreFiles": { "message": "Кичирейтүүдөн четтетиле турган файлдар" },
   "optionDesc_commentMain": { "message": "Башкы комментарийди минималдаштырылган кодго даярдоо" },

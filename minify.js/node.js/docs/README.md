@@ -147,6 +147,7 @@ Boolean options:
  -c, --copy                           Copy minified code to clipboard instead
                                       of writing to file if single source file
                                       is processed.
+ -C, --clone-folders                  Preserve folder structure in output directory.
  -q, --quiet                          Suppress all logging except errors.
 
 Parameter options:
@@ -219,15 +220,16 @@ minifyJS.minify(input, { dotFiles: true });
 
 Available parameters (and their default settings) are:
 
-Name          | Type    | Desciption                                                               | Default value
---------------|---------|--------------------------------------------------------------------------|---------------
-`recursive`   | Boolean | Recursively search for nested files if dir path passed.                  | `true`
-`verbose`     | Boolean | Show logging in console/terminal.                                        | `true`
-`dotFolders`  | Boolean | Include dotfolders in file search.                                       | `false`
-`dotFiles`    | Boolean | Include dotfiles in file search.                                         | `false`
-`mangle`      | Boolean | Shorten variable names (typically to one character).                     | `true`
-`ignoreFiles` | Array   | Files (by name) to exclude from minification.                            | `[]`
-`comment`     | String  | Header comment to prepend to minified code. Separate by line using '\n'. | `''`
+Name           | Type    | Desciption                                                               | Default value
+---------------|---------|--------------------------------------------------------------------------|---------------
+`recursive`    | Boolean | Recursively search for nested files if dir path passed.                  | `true`
+`verbose`      | Boolean | Show logging in console/terminal.                                        | `true`
+`dotFolders`   | Boolean | Include dotfolders in file search.                                       | `false`
+`dotFiles`     | Boolean | Include dotfiles in file search.                                         | `false`
+`mangle`       | Boolean | Shorten variable names (typically to one character).                     | `true`
+`cloneFolders` | Boolean | Preserve folder structure in output directory.                           | `false`
+`ignoreFiles`  | Array   | Files (by name) to exclude from minification.                            | `[]`
+`comment`      | String  | Header comment to prepend to minified code. Separate by line using '\n'. | `''`
 
 #
 

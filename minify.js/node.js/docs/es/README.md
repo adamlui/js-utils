@@ -144,6 +144,7 @@ Opciones booleanas:
  -M, --no-mangle                      Disable mangling names.
  -X, --no-filename-change             Deshabilite el cambio de extensión de archivo a .min.js
  -c, --copy                           Copie el código minimizado al portapapeles en lugar de escribirlo en un archivo si se procesa un único archivo fuente.
+ -C, --clone-folders                  Conservar la estructura de carpetas en el directorio de salida.
  -q, --quiet                          Suprime todos los registros excepto los errores.
 
 Opciones de parámetros:
@@ -215,15 +216,16 @@ minifyJS.minify(entrada, { dotFiles: true });
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:
 
-Nombre        | Tipo      | Descripción                                                                                 | Valor por defecto
---------------|-----------|---------------------------------------------------------------------------------------------|-------------------
-`recursive`   | Booleano  | Busque recursivamente archivos anidados si se pasa la ruta del directorio.                  | `true`
-`verbose`     | Booleano  | Mostrar registros en la consola/terminal.                                                   | `true`
-`dotFolders`  | Booleano  | Incluya carpetas de puntos en la búsqueda de archivos.                                      | `false`
-`dotFiles`    | Booleano  | Incluya archivos de puntos en la búsqueda de archivos.                                      | `false`
-`mangle`      | Booleano  | Acorte los nombres de las variables (normalmente a un carácter).                            | `true`
-`ignoreFiles` | Formación | Archivos (por nombre) para excluir de la minificación.                                      | `[]`
-`comment`     | Cadena    | Comentario de encabezado para anteponer al código minimizado. Separe por línea usando '\n'. | `''`
+Nombre         | Tipo      | Descripción                                                                                 | Valor por defecto
+---------------|-----------|---------------------------------------------------------------------------------------------|-------------------
+`recursive`    | Booleano  | Busque recursivamente archivos anidados si se pasa la ruta del directorio.                  | `true`
+`verbose`      | Booleano  | Mostrar registros en la consola/terminal.                                                   | `true`
+`dotFolders`   | Booleano  | Incluya carpetas de puntos en la búsqueda de archivos.                                      | `false`
+`dotFiles`     | Booleano  | Incluya archivos de puntos en la búsqueda de archivos.                                      | `false`
+`mangle`       | Booleano  | Acorte los nombres de las variables (normalmente a un carácter).                            | `true`
+`cloneFolders` | Booleano  | Conservar la estructura de carpetas en el directorio de salida.                             | `false`
+`ignoreFiles`  | Formación | Archivos (por nombre) para excluir de la minificación.                                      | `[]`
+`comment`      | Cadena    | Comentario de encabezado para anteponer al código minimizado. Separe por línea usando '\n'. | `''`
 
 #
 

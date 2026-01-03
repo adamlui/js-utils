@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Išjungti vardų keitimą" },
   "optionDesc_noFilenameChange": { "message": "Išjungti failo plėtinio keitimą į .min.js" },
   "optionDesc_copy": { "message": "Nukopijuokite sumažintą kodą į iškarpinę, o ne rašykite į failą, jei apdorojamas vieno šaltinio failas" },
+  "optionDesc_cloneFolders": { "message": "Išsaugoti aplanko struktūrą išvesties aplanke" },
   "optionDesc_quiet": { "message": "Slėpti visus registravimus, išskyrus klaidas" },
   "optionDesc_ignoreFiles": { "message": "Failai, kuriuos reikia pašalinti iš sumažinimo" },
   "optionDesc_commentMain": { "message": "Iš anksto pridėti antraštės komentarą prie sumažinto kodo" },

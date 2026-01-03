@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Onemogoči imena mangiranja" },
   "optionDesc_noFilenameChange": { "message": "Onemogoči spreminjanje končnice datoteke v .min.js" },
   "optionDesc_copy": { "message": "Kopirajte pomanjšano kodo v odložišče namesto pisanja v datoteko, če se obdeluje ena sama izvorna datoteka" },
+  "optionDesc_cloneFolders": { "message": "Ohrani strukturo map v izhodni mapi" },
   "optionDesc_quiet": { "message": "Prepreči vse beleženje, razen napak" },
   "optionDesc_ignoreFiles": { "message": "Datoteke za izključitev iz minifikacije" },
   "optionDesc_commentMain": { "message": "Predhodno dodaj komentar glave k pomanjšani kodi" },

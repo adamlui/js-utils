@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Malebligi mistraktajn nomojn" },
   "optionDesc_noFilenameChange": { "message": "Malŝalti ŝanĝantan dosieretendaĵon al .min.js" },
   "optionDesc_copy": { "message": "Kopii minifikitan kodon al poŝo anstataŭ skribi dosieron se ununura fontodosiero estas prilaborita" },
+  "optionDesc_cloneFolders": { "message": "Konservi dosierujan strukturon en eliga dosierujo" },
   "optionDesc_quiet": { "message": "Subpremi ĉiujn registradojn krom eraroj" },
   "optionDesc_ignoreFiles": { "message": "Dosieroj por ekskludi de minifikado" },
   "optionDesc_commentMain": { "message": "@ info: whatsthis" },

@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Vô hiệu hóa tên lộn xộn" },
   "optionDesc_noFilenameChange": { "message": "Vô hiệu hóa thay đổi phần mở rộng tệp thành .min.js" },
   "optionDesc_copy": { "message": "Sao chép mã rút gọn vào khay nhớ tạm thay vì ghi vào tệp nếu tệp nguồn duy nhất được xử lý" },
+  "optionDesc_cloneFolders": { "message": "Bảo tồn cấu trúc thư mục trong thư mục đầu ra" },
   "optionDesc_quiet": { "message": "Chặn tất cả ghi nhật ký ngoại trừ lỗi" },
   "optionDesc_ignoreFiles": { "message": "Các tệp cần loại trừ khỏi quá trình thu nhỏ" },
   "optionDesc_commentMain": { "message": "Gửi trước nhận xét tiêu đề cho mã đã rút gọn" },

@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Nyahdayakan nama mangling" },
   "optionDesc_noFilenameChange": { "message": "Lumpuhkan perubahan sambungan fail ke .min.js" },
   "optionDesc_copy": { "message": "Salin kod minified ke papan klip dan bukannya menulis ke fail jika fail sumber tunggal diproses" },
+  "optionDesc_cloneFolders": { "message": "Kekalkan struktur folder dalam direktori output" },
   "optionDesc_quiet": { "message": "Sekat semua pembalakan kecuali ralat" },
   "optionDesc_ignoreFiles": { "message": "Fail untuk dikecualikan daripada minifikasi" },
   "optionDesc_commentMain": { "message": "Komen pengepala bergantung kepada kod minified" },

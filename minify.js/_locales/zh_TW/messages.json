@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "停用修飾名稱" },
   "optionDesc_noFilenameChange": { "message": "停用將檔案副檔名變更為 .min.js" },
   "optionDesc_copy": { "message": "如果處理單一來源檔案，請將縮小的代碼複製到剪貼簿，而不是寫入檔案" },
+  "optionDesc_cloneFolders": { "message": "保留輸出目錄中的資料夾結構" },
   "optionDesc_quiet": { "message": "禁止所有日誌記錄，錯誤除外" },
   "optionDesc_ignoreFiles": { "message": "要排除在縮小範圍之外的檔案" },
   "optionDesc_commentMain": { "message": "在縮小的代碼前加上標題註釋" },

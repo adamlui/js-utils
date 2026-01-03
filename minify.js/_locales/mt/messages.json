@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Itfi l-ismijiet li ma jidhrux" },
   "optionDesc_noFilenameChange": { "message": "Iddiżattiva l-estensjoni tal-fajl li qed jinbidel għal .min.js" },
   "optionDesc_copy": { "message": "Ikkopja l-kodiċi minimizzat għall-klipbord minflok tikteb biex tiffajlja jekk jiġi pproċessat fajl b' sors wieħed" },
+  "optionDesc_cloneFolders": { "message": "Ippreserva l-istruttura tal-folder fid-direttorju tal-output" },
   "optionDesc_quiet": { "message": "Waqqaf il-logging kollu ħlief l-iżbalji" },
   "optionDesc_ignoreFiles": { "message": "Fajls li għandhom jiġu esklużi mill-minifikazzjoni" },
   "optionDesc_commentMain": { "message": "Ipprepara l-kumment tal-intestatura għall-kodiċi minifikat" },

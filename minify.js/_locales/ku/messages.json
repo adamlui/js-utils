@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Navên manglingê neçalak bikin" },
   "optionDesc_noFilenameChange": { "message": "Guhertina dirêjkirina pelê bo .min.js neçalak bike" },
   "optionDesc_copy": { "message": "Heke pelê çavkaniyek yekane were pêvajo kirin, li şûna ku hûn li pelê binivîsin, koda piçûkkirî li klîpboardê kopî bikin" },
+  "optionDesc_cloneFolders": { "message": "Avahiya peldankê di peldanka derketinê de biparêze" },
   "optionDesc_quiet": { "message": "Hemî têketinê ji bilî xeletiyan bişkînin" },
   "optionDesc_ignoreFiles": { "message": "Pelên ku ji kêmbûnê têne derxistin" },
   "optionDesc_commentMain": { "message": "Şîroveya sernivîsê li koda kêmkirî amade bike" },

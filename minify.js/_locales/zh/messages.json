@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "禁用修饰名称" },
   "optionDesc_noFilenameChange": { "message": "禁止将文件扩展名更改为 .min.js" },
   "optionDesc_copy": { "message": "如果处理单个源文件，则将缩小的代码复制到剪贴板而不是写入文件" },
+  "optionDesc_cloneFolders": { "message": "保留输出目录中的文件夹结构" },
   "optionDesc_quiet": { "message": "禁止所有日志记录，错误除外" },
   "optionDesc_ignoreFiles": { "message": "从缩小中排除的文件" },
   "optionDesc_commentMain": { "message": "将页眉注释前置到缩小的代码" },

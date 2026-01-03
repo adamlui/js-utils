@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Kuremadza mangling mazita" },
   "optionDesc_noFilenameChange": { "message": "Kurega kuchinja faira chiwedzerwa kuti .min.js" },
   "optionDesc_copy": { "message": "Copy minified code to clipboard instead of writing to file if single source file is processed" },
+  "optionDesc_cloneFolders": { "message": "Kuchengetedza forodha mamiriro ari goho Directory" },
   "optionDesc_quiet": { "message": "Dzvinyirira kutema matanda ese kunze kwekukanganisa" },
   "optionDesc_ignoreFiles": { "message": "Mafaira ekuti asabatanidzwe kubva mukucherechedzwa" },
   "optionDesc_commentMain": { "message": "Prepend header kutaura kuti minified remitemo" },

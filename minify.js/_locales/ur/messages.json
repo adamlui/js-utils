@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "مینگلنگ ناموں کو غیر فعال کریں" },
   "optionDesc_noFilenameChange": { "message": "فائل کی توسیع کو .min.js میں تبدیل کرنا غیر فعال کریں" },
   "optionDesc_copy": { "message": "اگر واحد ماخذ فائل پر کارروائی کی جاتی ہے تو فائل میں لکھنے کے بجائے چھوٹے کوڈ کو کلپ بورڈ میں کاپی کریں" },
+  "optionDesc_cloneFolders": { "message": "آؤٹ پٹ ڈائرکٹری میں فولڈر کا ڈھانچہ محفوظ رکھیں" },
   "optionDesc_quiet": { "message": "غلطیوں کے علاوہ تمام لاگنگ کو دبائیں" },
   "optionDesc_ignoreFiles": { "message": "فائلیں جنہیں منیفیکیشن سے خارج کرنا ہے" },
   "optionDesc_commentMain": { "message": "ہیڈر کے تبصرے کو چھوٹے کوڈ میں پیش کریں" },

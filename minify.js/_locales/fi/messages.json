@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Poista mangling-nimet käytöstä" },
   "optionDesc_noFilenameChange": { "message": "Poista tiedostopäätteen muuttaminen muotoon .min.js" },
   "optionDesc_copy": { "message": "Kopioi pienennetty koodi leikepöydälle sen sijaan, että kirjoittaisit tiedostoon, jos käsitellään yksittäistä lähdetiedostoa" },
+  "optionDesc_cloneFolders": { "message": "Säilytä kansiorakenne lähtöhakemistossa" },
   "optionDesc_quiet": { "message": "Poista kaikki kirjaukset paitsi virheet" },
   "optionDesc_ignoreFiles": { "message": "Minifikaatiosta poistettavat tiedostot" },
   "optionDesc_commentMain": { "message": "Lisää otsikon kommentti pienennettyyn koodiin" },

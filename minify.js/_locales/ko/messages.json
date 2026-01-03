@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "맹글링 이름 비활성화" },
   "optionDesc_noFilenameChange": { "message": ".min.js 파일 확장자 변경 비활성화" },
   "optionDesc_copy": { "message": "단일 소스 파일이 처리되는 경우 파일에 쓰는 대신 축소된 코드를 클립보드에 복사" },
+  "optionDesc_cloneFolders": { "message": "출력 디렉토리에 폴더 구조 유지" },
   "optionDesc_quiet": { "message": "오류를 제외한 모든 로깅 억제" },
   "optionDesc_ignoreFiles": { "message": "축소에서 제외할 파일" },
   "optionDesc_commentMain": { "message": "축소된 코드에 머리글 주석 추가" },

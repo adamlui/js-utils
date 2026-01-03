@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "דיסייבאַל מאַנגלינג נעמען" },
   "optionDesc_noFilenameChange": { "message": "השבת את שינוי סיומת הקובץ ל-.min.js." },
   "optionDesc_copy": { "message": "קאָפּי מיניפיעד קאָד צו קליפּבאָרד אַנשטאָט פון שרייבן צו טעקע אויב איין מקור טעקע איז פּראַסעסט" },
+  "optionDesc_cloneFolders": { "message": "באַוואָרן טעקע סטרוקטור אין רעזולטאַט דירעקטאָרי" },
   "optionDesc_quiet": { "message": "פאַרשטיקן אַלע לאָגינג אַחוץ ערראָרס" },
   "optionDesc_ignoreFiles": { "message": "טעקעס צו ויסשליסן פון מיניפיקאַטיאָן" },
   "optionDesc_commentMain": { "message": "פּרעפּענד כעדער באַמערקונג צו מינאַפייד קאָד" },

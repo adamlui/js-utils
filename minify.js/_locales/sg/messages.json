@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "A yeke wara iri ti azo so ayeke na yâ ti mbeni kete kete kete kete kete kete" },
   "optionDesc_noFilenameChange": { "message": "Kangbi ni Kangbi ni Kangbi ni.min.js" },
   "optionDesc_copy": { "message": "A yeke wara kode so a leke ni na yâ ti clipboard ahon ti sû ni na yâ ti mbeni oko oko oko oko oko oko oko oko oko oko oko oko oko oko oko oko oko oko" },
+  "optionDesc_cloneFolders": { "message": "A yeke wara ni na yâ ti mbeni mbeti so a sû na mbeti" },
   "optionDesc_quiet": { "message": "A yeke kanga lege na azo kue ti sara ye na lege ni ape me a yeke gi na lege ni" },
   "optionDesc_ignoreFiles": { "message": "A yeke na lege ti a-article so a sû na mbeti ti a-article so a sû na mbeti ti" },
   "optionDesc_commentMain": { "message": "Prepend header comment na minzi kode" },

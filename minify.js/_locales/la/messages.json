@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Nunc igitur nomine" },
   "optionDesc_noFilenameChange": { "message": "Modum a .min.js fenestrare a .min.js" },
   "optionDesc_copy": { "message": "Codex minibus ad clipboard fa tsy logiciendum, antere ad file, si unum fichier est." },
+  "optionDesc_cloneFolders": { "message": "Librarum tabularium in output Directorye" },
   "optionDesc_quiet": { "message": "Exemplar omnes logiciendi except error" },
   "optionDesc_ignoreFiles": { "message": "Files ad excludere animo minificatione" },
   "optionDesc_commentMain": { "message": "Descripendio a codecit minibus header commentary" },

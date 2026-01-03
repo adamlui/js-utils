@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Ғайрифаъол кардани номҳои mangling" },
   "optionDesc_noFilenameChange": { "message": "Тағйири густариши файлро ба .min.js ғайрифаъол созед" },
   "optionDesc_copy": { "message": "Нусхабардории коди миниётурашуда ба силули мухобиротӣ ба ҷои навиштан ба файл, агар файли ягонаи сарчашма коркард шуда бошад" },
+  "optionDesc_cloneFolders": { "message": "Нигоҳ доштани сохтори папка дар феҳристи барориш" },
   "optionDesc_quiet": { "message": "Ғайри хатогӣ ҳамаи қайдкуниҳоро пахш кунед" },
   "optionDesc_ignoreFiles": { "message": "Файлҳо барои истисно кардан аз минимализатсия" },
   "optionDesc_commentMain": { "message": "Name" },

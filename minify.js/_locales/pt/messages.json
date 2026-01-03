@@ -38,6 +38,7 @@
   "optionDesc_noMangle": { "message": "Desativar nomes mutilados" },
   "optionDesc_noFilenameChange": { "message": "Desativar a alteração da extensão do ficheiro para .min.js" },
   "optionDesc_copy": { "message": "Copie o código minificado para a área de transferência em vez de gravar no arquivo se um único arquivo de origem for processado" },
+  "optionDesc_cloneFolders": { "message": "Preservar a estrutura de pastas no diretório de saída" },
   "optionDesc_quiet": { "message": "Suprimir todos os registos, exceto erros" },
   "optionDesc_ignoreFiles": { "message": "Arquivos a serem excluídos da minificação" },
   "optionDesc_commentMain": { "message": "Anexar comentário de cabeçalho ao código minificado" },
