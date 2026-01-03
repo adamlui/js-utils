@@ -1,6 +1,6 @@
 {
   "name": "@adamlui/minify.js",
-  "version": "1.8.6",
+  "version": "1.9.0",
   "description": "Recursively minify all JavaScript files",
   "author": {
     "name": "Adam Lui",
@@ -10,10 +10,22 @@
   "homepage": "https://minify-js.org",
   "license": "MIT",
   "funding": [
-    { "type": "cashapp", "url": "https://cash.app/$AdamLui" },
-    { "type": "github", "url": "http://github.com/sponsors/adamlui" },
-    { "type": "ko-fi", "url": "https://ko-fi.com/adamlui" },
-    { "type": "paypal", "url": "https://paypal.me/adamlui" }
+    {
+      "type": "cashapp",
+      "url": "https://cash.app/$AdamLui"
+    },
+    {
+      "type": "github",
+      "url": "http://github.com/sponsors/adamlui"
+    },
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/adamlui"
+    },
+    {
+      "type": "paypal",
+      "url": "https://paypal.me/adamlui"
+    }
   ],
   "main": "dist/minify.min.js",
   "files": [
