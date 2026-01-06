@@ -181,6 +181,7 @@ scss-to-css input_folder output_folder
 | `-S, --no-source-maps`    | Prevent source map generation                                   |
 | `-M, --no-minify`         | Disable CSS minification                                        |
 | `-R, --no-recursion`      | Disable recursive file searching                                |
+| `-C, --clone-folders`     | Preserve folder structure in output directory                   |
 | `-c, --copy`              | Copy to clipboard instead of writing to file (single file only) |
 | `-q, --quiet`             | Suppress all logging except errors                              |
 
@@ -263,15 +264,16 @@ console.log(results[1].code); // Compiled CSS from 2nd file
 scssToCSS.compile(inputDir, { minify: false });
 ```
 
-| Option        | Type    | Description                                          | Default |
-| ------------- | ------- | ---------------------------------------------------- | ------- |
-| `recursive`   | Boolean | Recursively search for nested files                  | `true`  |
-| `verbose`     | Boolean | Show logging in console/terminal                     | `true`  |
-| `dotFolders`  | Boolean | Include dotfolders in file search                    | `false` |
-| `minify`      | Boolean | Minify output CSS                                    | `true`  |
-| `sourceMaps`  | Boolean | Generate CSS source maps                             | `true`  |
-| `ignoreFiles` | Array   | Files (by name) to exclude from compilation          | `[]`    |
-| `comment`     | String  | Header comment to prepend (use `\n` for line breaks) | `''`    |
+| Option         | Type    | Description                                          | Default |
+| -------------- | ------- | ---------------------------------------------------- | ------- |
+| `recursive`    | Boolean | Recursively search for nested files                  | `true`  |
+| `verbose`      | Boolean | Show logging in console/terminal                     | `true`  |
+| `dotFolders`   | Boolean | Include dotfolders in file search                    | `false` |
+| `minify`       | Boolean | Minify output CSS                                    | `true`  |
+| `sourceMaps`   | Boolean | Generate CSS source maps                             | `true`  |
+| `cloneFolders` | Boolean | Preserve folder structure in output dir              | `false` |
+| `ignoreFiles`  | Array   | Files (by name) to exclude from compilation          | `[]`    |
+| `comment`      | String  | Header comment to prepend (use `\n` for line breaks) | `''`    |
 
 ---
 
