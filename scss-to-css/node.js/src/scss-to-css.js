@@ -95,7 +95,11 @@ function compile(input, options = {}) {
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
     // Compile SCSS based on input
-    const compileOptions = { style: options.minify ? 'compressed' : 'expanded', sourceMap: options.sourceMaps }
+    const compileOptions = {
+        style: options.minify ? 'compressed' : 'expanded',
+        sourceMap: options.sourceMaps,
+        charset: false // prevent UTF-8 BOM in output
+    }
     if (fs.existsSync(input)) { // compile based on path arg
         if (input.endsWith('.scss')) { // file path passed
             if (options.verbose) console.info(`compile() » ** Compiling ${input}...`)
