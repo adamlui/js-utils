@@ -1,6 +1,6 @@
 {
   "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024 ʻAtama Lui & tokoni ʻi he laiseni MIT" },
+  "appCopyright": { "message": "© 2024–2026 ʻAtama Lui & tokoni ʻi he laiseni MIT" },
   "prefix_error": { "message": "FEHALAAKI" },
   "prefix_globalVer": { "message": "Version fakamāmani lahí" },
   "prefix_localVer": { "message": "Version fakalotofonua" },

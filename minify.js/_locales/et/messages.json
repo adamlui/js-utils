@@ -1,6 +1,6 @@
 {
   "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024 Adam Lui & kaasautorid MIT litsentsi alusel" },
+  "appCopyright": { "message": "© 2024–2026 Adam Lui & kaasautorid MIT litsentsi alusel" },
   "prefix_error": { "message": "VIGA" },
   "prefix_globalVer": { "message": "Globaalne versioon" },
   "prefix_localVer": { "message": "Kohalik versioon" },

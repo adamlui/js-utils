@@ -1,6 +1,6 @@
 {
   "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024 Adam Lui u kontributuri taħt il-liċenzja MIT" },
+  "appCopyright": { "message": "© 2024–2026 Adam Lui u kontributuri taħt il-liċenzja MIT" },
   "prefix_error": { "message": "ŻBALL" },
   "prefix_globalVer": { "message": "Verżjoni globali" },
   "prefix_localVer": { "message": "Verżjoni lokali" },

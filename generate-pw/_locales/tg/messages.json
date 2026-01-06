@@ -1,6 +1,6 @@
 {
   "appName": { "message": "generate-pw" },
-  "appCopyright": { "message": "© 2024–2025 Одам Lui & саҳмгузорон дар доираи иҷозатномаи MIT" },
+  "appCopyright": { "message": "© 2024–2026 Одам Lui & саҳмгузорон дар доираи иҷозатномаи MIT" },
   "prefix_error": { "message": "ХАТОГӢ" },
   "prefix_globalVer": { "message": "Версияи умумӣ" },
   "prefix_localVer": { "message": "Версияи локалӣ" },

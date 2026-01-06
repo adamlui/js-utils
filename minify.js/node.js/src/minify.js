@@ -1,4 +1,4 @@
-// © 2023–2025 Adam Lui & contributors under the MIT license.
+// © 2023–2026 Adam Lui & contributors under the MIT license.
 // Source: https://code.minify-js.org/node.js
 // Documentation: https://docs.minify-js.org/node.js
 

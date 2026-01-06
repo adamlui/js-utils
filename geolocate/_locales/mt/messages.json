@@ -1,6 +1,6 @@
 {
   "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2025 Adam Lui taħt il-liċenzja MIT" },
+  "appCopyright": { "message": "© 2024–2026 Adam Lui taħt il-liċenzja MIT" },
   "prefix_error": { "message": "ŻBALL" },
   "prefix_globalVer": { "message": "Verżjoni globali" },
   "prefix_localVer": { "message": "Verżjoni lokali" },

@@ -1,6 +1,6 @@
 {
   "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024 אדם לואי ותורמים תחת רישיון MIT" },
+  "appCopyright": { "message": "© 2024–2026 אדם לואי ותורמים תחת רישיון MIT" },
   "prefix_error": { "message": "שגיאה" },
   "prefix_globalVer": { "message": "גרסה גלובלית" },
   "prefix_localVer": { "message": "הגרסה המקומית" },

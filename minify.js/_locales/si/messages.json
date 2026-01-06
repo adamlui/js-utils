@@ -1,6 +1,6 @@
 {
   "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024 ඇඩම් ලුයි සහ MIT බලපත් ‍ රය යටතේ දායකයින්" },
+  "appCopyright": { "message": "© 2024–2026 ඇඩම් ලුයි සහ MIT බලපත් ‍ රය යටතේ දායකයින්" },
   "prefix_error": { "message": "දෝෂය" },
   "prefix_globalVer": { "message": "ගෝලීය අනුවාදය" },
   "prefix_localVer": { "message": "දේශීය අනුවාදය" },

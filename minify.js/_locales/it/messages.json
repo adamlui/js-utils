@@ -1,6 +1,6 @@
 {
   "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024 Adam Lui e collaboratori CON LICENZA MIT" },
+  "appCopyright": { "message": "© 2024–2026 Adam Lui e collaboratori CON LICENZA MIT" },
   "prefix_error": { "message": "ERRORE" },
   "prefix_globalVer": { "message": "Versione globale" },
   "prefix_localVer": { "message": "Versione locale" },

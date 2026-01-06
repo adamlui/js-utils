@@ -1,6 +1,6 @@
 {
   "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2025 ადამ ლუი MIT ლიცენზიით" },
+  "appCopyright": { "message": "© 2024–2026 ადამ ლუი MIT ლიცენზიით" },
   "prefix_error": { "message": "შეცდომა" },
   "prefix_globalVer": { "message": "Გლობალური ვერსია" },
   "prefix_localVer": { "message": "Ლოკალური ვერსია" },

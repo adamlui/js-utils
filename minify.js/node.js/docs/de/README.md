@@ -270,7 +270,7 @@ Name          | Typ             | Beschreibung                                  
 
 ## 🏛️ MIT-Lizenz
 
-**Urheberrechte © 2023–2025 [Adam Lui](https://github.com/adamlui) und Mitwirkende**
+**Urheberrechte © 2023–2026 [Adam Lui](https://github.com/adamlui) und Mitwirkende**
 
 Hiermit wird jeder Person, die eine Kopie dieser Software und der zugehörigen Dokumentationsdateien (die „Software“) erhält, kostenlos die Erlaubnis erteilt, mit der Software ohne Einschränkung zu handeln, einschließlich und ohne Einschränkung der Rechte zur Nutzung, zum Kopieren, Ändern und Zusammenführen , Kopien der Software zu veröffentlichen, zu verteilen, unterzulizenzieren und/oder zu verkaufen und Personen, denen die Software zur Verfügung gestellt wird, dies zu gestatten, vorbehaltlich der folgenden Bedingungen:
 

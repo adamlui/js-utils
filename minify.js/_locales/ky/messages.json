@@ -1,6 +1,6 @@
 {
   "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024 Адам Луи & MIT лицензиясы боюнча салым кошуучулар" },
+  "appCopyright": { "message": "© 2024–2026 Адам Луи & MIT лицензиясы боюнча салым кошуучулар" },
   "prefix_error": { "message": "Ката" },
   "prefix_globalVer": { "message": "Глобалдык версия" },
   "prefix_localVer": { "message": "Жергиликтүү версия" },

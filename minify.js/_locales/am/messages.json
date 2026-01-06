@@ -1,6 +1,6 @@
 {
   "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024 አዳም ሉዊ & በ MIT ፈቃድ ስር አስተዋፅዖ አበርክተዋል" },
+  "appCopyright": { "message": "© 2024–2026 አዳም ሉዊ & በ MIT ፈቃድ ስር አስተዋፅዖ አበርክተዋል" },
   "prefix_error": { "message": "ስህተት" },
   "prefix_globalVer": { "message": "ዓለም አቀፍ ስሪት" },
   "prefix_localVer": { "message": "አካባቢያዊ ስሪት" },

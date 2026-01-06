@@ -1,6 +1,6 @@
 {
   "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024 ადამ ლუი და MIT ლიცენზიის ფარგლებში შემომწირველები" },
+  "appCopyright": { "message": "© 2024–2026 ადამ ლუი და MIT ლიცენზიის ფარგლებში შემომწირველები" },
   "prefix_error": { "message": "შეცდომა" },
   "prefix_globalVer": { "message": "Გლობალური ვერსია" },
   "prefix_localVer": { "message": "Ლოკალური ვერსია" },

@@ -1,6 +1,6 @@
 {
   "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2025 Adam Lui ພາຍໃຕ້ໃບອະນຸຍາດ MIT" },
+  "appCopyright": { "message": "© 2024–2026 Adam Lui ພາຍໃຕ້ໃບອະນຸຍາດ MIT" },
   "prefix_error": { "message": "ຂໍ້ຜິດພາດ" },
   "prefix_globalVer": { "message": "ສະບັບທົ່ວໂລກ" },
   "prefix_localVer": { "message": "ສະບັບທ້ອງຖິ່ນ" },

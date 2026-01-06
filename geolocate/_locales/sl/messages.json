@@ -1,6 +1,6 @@
 {
   "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2025 Adam Lui pod licenco MIT" },
+  "appCopyright": { "message": "© 2024–2026 Adam Lui pod licenco MIT" },
   "prefix_error": { "message": "NAPAKA" },
   "prefix_globalVer": { "message": "Globalna različica" },
   "prefix_localVer": { "message": "Lokalna različica" },

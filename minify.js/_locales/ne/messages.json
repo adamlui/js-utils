@@ -1,6 +1,6 @@
 {
   "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024 एडम लुई र एमआईटी इजाजतपत्र अन्तर्गत योगदानकर्ताहरू" },
+  "appCopyright": { "message": "© 2024–2026 एडम लुई र एमआईटी इजाजतपत्र अन्तर्गत योगदानकर्ताहरू" },
   "prefix_error": { "message": "त्रुटि" },
   "prefix_globalVer": { "message": "विश्वव्यापी संस्करण" },
   "prefix_localVer": { "message": "स्थानीय संस्करण" },

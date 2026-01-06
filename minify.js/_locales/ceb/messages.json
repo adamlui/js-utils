@@ -1,6 +1,6 @@
 {
   "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024 Adam Lui & mga kontribyutor sa ilalum sa MIT lisensya" },
+  "appCopyright": { "message": "© 2024–2026 Adam Lui & mga kontribyutor sa ilalum sa MIT lisensya" },
   "prefix_error": { "message": "Sayop" },
   "prefix_globalVer": { "message": "Global nga bersyon" },
   "prefix_localVer": { "message": "Lokal nga bersyon" },

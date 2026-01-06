@@ -1,6 +1,6 @@
 {
   "appName": { "message": "generate-pw" },
-  "appCopyright": { "message": "© 2024–2025 Adam Lui と MIT ライセンスの貢献者" },
+  "appCopyright": { "message": "© 2024–2026 Adam Lui と MIT ライセンスの貢献者" },
   "prefix_error": { "message": "エラー" },
   "prefix_globalVer": { "message": "グローバルバージョン" },
   "prefix_localVer": { "message": "ローカルバージョン" },

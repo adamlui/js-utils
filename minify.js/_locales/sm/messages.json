@@ -1,6 +1,6 @@
 {
   "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024 Adam Lui & saofaga i lalo o le laisene MIT" },
+  "appCopyright": { "message": "© 2024–2026 Adam Lui & saofaga i lalo o le laisene MIT" },
   "prefix_error": { "message": "Mea sese" },
   "prefix_globalVer": { "message": "Faaliliuga a le Lalolagi" },
   "prefix_localVer": { "message": "Faaliliuga i le lotoifale" },

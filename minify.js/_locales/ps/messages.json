@@ -1,6 +1,6 @@
 {
   "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024 آدم لوی او د MIT جواز لاندې برخه اخیستونکي" },
+  "appCopyright": { "message": "© 2024–2026 آدم لوی او د MIT جواز لاندې برخه اخیستونکي" },
   "prefix_error": { "message": "خطا" },
   "prefix_globalVer": { "message": "نړیواله نسخه" },
   "prefix_localVer": { "message": "ځايي نسخه" },

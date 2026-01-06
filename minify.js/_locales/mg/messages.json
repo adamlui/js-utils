@@ -1,6 +1,6 @@
 {
   "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024 Adam Lui & mpandray anjara eo ambany lisansa MIT" },
+  "appCopyright": { "message": "© 2024–2026 Adam Lui & mpandray anjara eo ambany lisansa MIT" },
   "prefix_error": { "message": "TSY FETEZANA" },
   "prefix_globalVer": { "message": "Ny versiona faranydia" },
   "prefix_localVer": { "message": "Kinovan'ny toerana" },

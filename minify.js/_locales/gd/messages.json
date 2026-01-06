@@ -1,6 +1,6 @@
 {
   "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024 Adam Lui & luchd - tabhartais fo chead MIT" },
+  "appCopyright": { "message": "© 2024–2026 Adam Lui & luchd - tabhartais fo chead MIT" },
   "prefix_error": { "message": "MEARACHD" },
   "prefix_globalVer": { "message": "Global version" },
   "prefix_localVer": { "message": "An tionndadh ionadail" },
