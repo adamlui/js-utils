@@ -5,7 +5,7 @@ const pkgName = '@adamlui/minify.js',
       cmdFormat = 'minify-js [inputPath] [outputPath] [options]',
       srcURL = 'https://code.minify-js.org/node.js',
       docURL = 'https://docs.minify-js.org/node.js/#-command-line-usage',
-      latestLocaleCommitHash = 'b84f3d2'
+      latestLocaleCommitHash = 'b9884c6'
 
 ;(async () => {
     'use strict'
