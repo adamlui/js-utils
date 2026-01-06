@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Deaktiver ændring af filtypenavn til .min.js" },
   "optionDesc_copy": { "message": "Kopier minificeret kode til udklipsholderen i stedet for at skrive til fil, hvis enkelt kildefil behandles" },
   "optionDesc_cloneFolders": { "message": "Bevar mappestrukturen i outputmappen" },
+  "optionDesc_noRewriteImports": { "message": "Deaktiver opdatering af importstier fra .js til .min.js" },
   "optionDesc_quiet": { "message": "Undertrykke al logning undtagen fejl" },
   "optionDesc_ignoreFiles": { "message": "Filer, der skal udelukkes fra minificering" },
   "optionDesc_commentMain": { "message": "Forudindsæt header-kommentar til minificeret kode" },

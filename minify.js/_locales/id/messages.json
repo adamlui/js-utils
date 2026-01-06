@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Nonaktifkan perubahan ekstensi file ke .min.js" },
   "optionDesc_copy": { "message": "Salin kode yang diperkecil ke clipboard alih - alih menulis ke file jika file sumber tunggal diproses" },
   "optionDesc_cloneFolders": { "message": "Pertahankan struktur folder dalam direktori output" },
+  "optionDesc_noRewriteImports": { "message": "Nonaktifkan pembaruan jalur impor dari .js ke .min.js" },
   "optionDesc_quiet": { "message": "Cegah semua pencatatan kecuali kesalahan" },
   "optionDesc_ignoreFiles": { "message": "File untuk dikecualikan dari minifikasi" },
   "optionDesc_commentMain": { "message": "Komentar header prepend ke kode minified" },

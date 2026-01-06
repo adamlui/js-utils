@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": ".min.js मा फाइल विस्तार परिवर्तन गर्न अक्षम गर्नुहोस्" },
   "optionDesc_copy": { "message": "यदि एकल स्रोत फाइल प्रशोधन गरिएको छ भने फाइलमा लेख्नुको सट्टा क्लिपबोर्डमा मिनीफाइड कोड प्रतिलिपि गर्नुहोस्" },
   "optionDesc_cloneFolders": { "message": "निर्गत डाइरेक्टरीमा फोल्डर संरचना संरक्षण गर्नुहोस्" },
+  "optionDesc_noRewriteImports": { "message": ".js बाट .min.js सम्म आयात मार्गहरू अद्यावधिक गर्न अक्षम पार्नुहोस्" },
   "optionDesc_quiet": { "message": "त्रुटिहरू बाहेक सबै लगिङलाई दबाउनुहोस्" },
   "optionDesc_ignoreFiles": { "message": "मिनिफिकेसनबाट बहिष्कृत गर्नुपर्ने फाइलहरू" },
   "optionDesc_commentMain": { "message": "सानो कोडमा हेडर टिप्पणी पठाउनुहोस्" },

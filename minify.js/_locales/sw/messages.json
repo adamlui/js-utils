@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Lemaza kubadilisha kiendelezi cha faili kuwa .min.js" },
   "optionDesc_copy": { "message": "Nakili msimbo wa minified kwenye ubao wa kunakili badala ya kuandika kwenye faili ikiwa faili moja ya chanzo inashughulikiwa" },
   "optionDesc_cloneFolders": { "message": "Hifadhi muundo wa folda katika saraka ya pato" },
+  "optionDesc_noRewriteImports": { "message": "Lemaza kusasisha njia za kuagiza kutoka .js hadi .min.js" },
   "optionDesc_quiet": { "message": "Zima ukataji wote wa magogo isipokuwa hitilafu" },
   "optionDesc_ignoreFiles": { "message": "Mafaili ya kujiondoa kwenye uchanganuzi" },
   "optionDesc_commentMain": { "message": "Andaa maoni ya kichwa kwenye msimbo uliopunguzwa" },

@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Broyt at broyta skráarútbygging til .min.js" },
   "optionDesc_copy": { "message": "Kopiera minifiseraða kóða til klipbrett ístaðin fyri at skriva til fílu, um einastandandi keldurfíla verður viðgjørd" },
   "optionDesc_cloneFolders": { "message": "Goym faldara struktur í útflutningsmyndatólinum" },
+  "optionDesc_noRewriteImports": { "message": "Sløkk innflutningsleiðini frá .js til .min.js" },
   "optionDesc_quiet": { "message": "Undirskriva allar innmeldingar uttan feil" },
   "optionDesc_ignoreFiles": { "message": "Fílar at útiloka frá minifisering" },
   "optionDesc_commentMain": { "message": "Fyrri at skriva yvirskrift til minifiseraða kóða" },

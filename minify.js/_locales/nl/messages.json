@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Schakel het wijzigen van de bestandsextensie naar .min.js uit" },
   "optionDesc_copy": { "message": "Kopieer geminimaliseerde code naar klembord in plaats van naar bestand te schrijven als één bronbestand wordt verwerkt" },
   "optionDesc_cloneFolders": { "message": "Behoud mapstructuur in uitvoermap" },
+  "optionDesc_noRewriteImports": { "message": "Bijwerken van importpaden van .js naar .min.js uitschakelen" },
   "optionDesc_quiet": { "message": "Alle logboekregistraties onderdrukken, behalve fouten" },
   "optionDesc_ignoreFiles": { "message": "Bestanden om uit te sluiten van verkleining" },
   "optionDesc_commentMain": { "message": "Headeropmerking vooraf laten gaan aan geminimaliseerde code" },

@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": ".min.js এ ফাইল এক্সটেনশান পরিবর্তন করা অক্ষম করুন" },
   "optionDesc_copy": { "message": "একক উত্স ফাইল প্রক্রিয়া করা হলে ফাইলে লেখার পরিবর্তে মিনিফাইড কোডটি ক্লিপবোর্ডে অনুলিপি করুন" },
   "optionDesc_cloneFolders": { "message": "আউটপুট ডিরেক্টরিতে ফোল্ডারের কাঠামো সংরক্ষণ করুন" },
+  "optionDesc_noRewriteImports": { "message": ".js থেকে .min.js এ আমদানি পাথ আপডেট করা অক্ষম করুন" },
   "optionDesc_quiet": { "message": "ত্রুটি ব্যতীত সমস্ত লগিং দমন করুন" },
   "optionDesc_ignoreFiles": { "message": "মিনিফিকেশন থেকে বাদ দেওয়া ফাইলগুলি" },
   "optionDesc_commentMain": { "message": "মিনিফাইড কোডে হেডার মন্তব্য প্রিপেইড করুন" },

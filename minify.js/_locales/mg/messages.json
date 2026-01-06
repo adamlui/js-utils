@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Miala ny fanovana ny extension'ny rakitra mankany amin'ny .min.js" },
   "optionDesc_copy": { "message": "Mandika kaody madinika any anaty fanindri-taratasy fa tsy manoratra amin'ny rakitra raha toa ka voakirakira ilay raki-daza tokana" },
   "optionDesc_cloneFolders": { "message": "Mitahiry ny firafitry ny laha-tahiry ao amin'ny lahatahiry output" },
+  "optionDesc_noRewriteImports": { "message": "Foano ny fanavaozana ny sori-dàlan'ny import avy amin'ny .js mankany amin'ny .min.js" },
   "optionDesc_quiet": { "message": "Hanafoana ny logging rehetra afa-tsy fahadisoana" },
   "optionDesc_ignoreFiles": { "message": "Ny rakitra azo alefa avy amin'ny minification" },
   "optionDesc_commentMain": { "message": "Manomàna fanehoan-kevitry ny loham-pejy amin'ny kaody voamarina" },

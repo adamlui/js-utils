@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Fayl kengaytmasini .min.js ga o‘zgartirishni o‘chirib qo‘ying" },
   "optionDesc_copy": { "message": "Bitta manba fayli qayta ishlansa, faylga yozish oʻrniga kichiklashtirilgan kodni vaqtinchalik xotiraga nusxalash" },
   "optionDesc_cloneFolders": { "message": "Chiqish katalogida papka tuzilishini saqlang" },
+  "optionDesc_noRewriteImports": { "message": ".js dan .min.js ga import yo'llarini yangilashni o'chirib qo'yish" },
   "optionDesc_quiet": { "message": "Xatolardan tashqari barcha jurnallarni bostirish" },
   "optionDesc_ignoreFiles": { "message": "Kichiklashtirishdan istisno qilinadigan fayllar" },
   "optionDesc_commentMain": { "message": "Kichiklashtirilgan kodga sarlavha izohini qo'shing" },

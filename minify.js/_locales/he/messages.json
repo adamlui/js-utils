@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "השבת שינוי סיומת קובץ ל -min.js." },
   "optionDesc_copy": { "message": "העתק קוד ממוזער ללוח במקום לכתוב לקובץ אם קובץ מקור יחיד מעובד" },
   "optionDesc_cloneFolders": { "message": "שמור את מבנה התיקיות בספריית הפלט" },
+  "optionDesc_noRewriteImports": { "message": "השבת את עדכון הנתיבים המיובאים מ -.js ל -min.js." },
   "optionDesc_quiet": { "message": "דיכוי כל רישומי הרישום למעט שגיאות" },
   "optionDesc_ignoreFiles": { "message": "קבצים שלא ייכללו במיניפיקציה" },
   "optionDesc_commentMain": { "message": "ערוך הערת כותרת לקוד ממוזער" },

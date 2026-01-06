@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": ".min.js файл кеңейтімін өзгертуді өшіру" },
   "optionDesc_copy": { "message": "Жалғыз бастапқы файл өңделсе, файлға жазудың орнына, миниатюралық кодты алпауытқа көшіріңіз" },
   "optionDesc_cloneFolders": { "message": "Шығыс каталогында қалта құрылымын сақтау" },
+  "optionDesc_noRewriteImports": { "message": ".js-тен .min.js-ке импорт жолдарын жаңартуды өшіру" },
   "optionDesc_quiet": { "message": "Қателерден басқа барлық жүйеге кіруді болдырмау" },
   "optionDesc_ignoreFiles": { "message": "Минимализациядан шығарылатын файлдар" },
   "optionDesc_commentMain": { "message": "Тақырып түсініктемесін минималды кодқа дайындаңыз" },

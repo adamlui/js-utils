@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Disable suia faila faalauteleina i.min.js" },
   "optionDesc_copy": { "message": "Kopi minified code i clipboard nai lo le tusitusi e faila pe afai o le tasi punaoa faila o loo faagasolo" },
   "optionDesc_cloneFolders": { "message": "Puipuiga faila fausaga i le galuega faatino faatonuga" },
+  "optionDesc_noRewriteImports": { "message": "Le mafai ona faʻafouina auala faʻaulufale mai mai mai .js i .min.js" },
   "optionDesc_quiet": { "message": "Suppress logging uma vagana ai mea sese" },
   "optionDesc_ignoreFiles": { "message": "Faʻamaumauga e faʻateʻaina ai le minification" },
   "optionDesc_commentMain": { "message": "Sauniga ulutala faamatalaga i minified code" },

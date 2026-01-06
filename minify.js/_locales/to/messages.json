@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Toʻo ʻa e liliu ʻo e faile ki he .min.js" },
   "optionDesc_copy": { "message": "Hiki tatau e kouti minified ki he Papafakamaʻu kae ʻikai ko e tohi ki he faile kapau ʻoku fai ha faile maʻuʻanga tokoni ʻe taha" },
   "optionDesc_cloneFolders": { "message": "Preserve folder structure in output directory" },
+  "optionDesc_noRewriteImports": { "message": "Fakata'e'aonga'i 'a e fakafo'ou 'o e ngaahi hala 'o e hū mai mei he .js ki he .min.js" },
   "optionDesc_quiet": { "message": "Taʻofi ʻa e loka kotoa tuku kehe pe ʻa e ngaahi fehalaaki" },
   "optionDesc_ignoreFiles": { "message": "Ngaahi faile ke ʻoua naʻa fakakau mei he minification" },
   "optionDesc_commentMain": { "message": "Prepend e fakamatala ki he kouti minified" },

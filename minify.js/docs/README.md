@@ -122,6 +122,7 @@ Boolean options:
  -R, --no-recursion                   Disable recursive file searching.
  -M, --no-mangle                      Disable mangling names.
  -X, --no-filename-change             Disable changing file extension to .min.js
+ -I, --no-rewrite-imports             Disable updating import paths from .js to .min.js
  -c, --copy                           Copy minified code to clipboard instead of writing to file if single source file is processed.
  -C, --clone-folders                  Preserve folder structure in output directory.
  -q, --quiet                          Suppress all logging except errors.
@@ -195,16 +196,17 @@ minifyJS.minify(input, { dotFiles: true });
 
 Available parameters (and their default settings) are:
 
-Name           | Type    | Desciption                                                               | Default value
----------------|---------|--------------------------------------------------------------------------|---------------
-`recursive`    | Boolean | Recursively search for nested files if dir path passed.                  | `true`
-`verbose`      | Boolean | Show logging in console/terminal.                                        | `true`
-`dotFolders`   | Boolean | Include dotfolders in file search.                                       | `false`
-`dotFiles`     | Boolean | Include dotfiles in file search.                                         | `false`
-`mangle`       | Boolean | Shorten variable names (typically to one character).                     | `true`
-`cloneFolders` | Boolean | Preserve folder structure in output directory.                           | `false`
-`ignoreFiles`  | Array   | Files (by name) to exclude from minification.                            | `[]`
-`comment`      | String  | Header comment to prepend to minified code. Separate by line using '\n'. | `''`
+Name             | Type    | Desciption                                                               | Default value
+-----------------|---------|--------------------------------------------------------------------------|---------------
+`recursive`      | Boolean | Recursively search for nested files if dir path passed.                  | `true`
+`verbose`        | Boolean | Show logging in console/terminal.                                        | `true`
+`dotFolders`     | Boolean | Include dotfolders in file search.                                       | `false`
+`dotFiles`       | Boolean | Include dotfiles in file search.                                         | `false`
+`mangle`         | Boolean | Shorten variable names (typically to one character).                     | `true`
+`rewriteImports` | Boolean | Update import paths from .js to .min.js                                  | `true`
+`cloneFolders`   | Boolean | Preserve folder structure in output directory.                           | `false`
+`ignoreFiles`    | Array   | Files (by name) to exclude from minification.                            | `[]`
+`comment`        | String  | Header comment to prepend to minified code. Separate by line using '\n'. | `''`
 
 #
 

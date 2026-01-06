@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": ".min.js ਲਈ ਫਾਇਲ ਐਕਸਟੈਂਸ਼ਨ ਬਦਲਣਾ ਆਯੋਗ" },
   "optionDesc_copy": { "message": "ਫਾਈਲ ਵਿੱਚ ਲਿਖਣ ਦੀ ਬਜਾਏ ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਮਿਨੀਫਾਈਡ ਕੋਡ ਦੀ ਨਕਲ ਕਰੋ ਜੇ ਸਿੰਗਲ ਸਰੋਤ ਫਾਈਲ ਤੇ ਕਾਰਵਾਈ ਕੀਤੀ ਜਾਂਦੀ ਹੈ" },
   "optionDesc_cloneFolders": { "message": "ਆਉਟਪੁੱਟ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਫੋਲਡਰ ਢਾਂਚਾ ਸੰਭਾਲੋ" },
+  "optionDesc_noRewriteImports": { "message": ".js ਤੋਂ .min.js ਤੱਕ ਇੰਪੋਰਟ ਮਾਰਗ ਅੱਪਡੇਟ ਕਰਨਾ ਆਯੋਗ" },
   "optionDesc_quiet": { "message": "Suppress all logging except errors" },
   "optionDesc_ignoreFiles": { "message": "Files to exclude from minification" },
   "optionDesc_commentMain": { "message": "ਸਿਰਲੇਖ ਟਿੱਪਣੀ ਨੂੰ ਮਿਨੀਫਾਈਡ ਕੋਡ ਵਿੱਚ ਤਿਆਰ ਕਰੋ" },

@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Andikape chanje ekstansyon dosye nan .min.js" },
   "optionDesc_copy": { "message": "Kopi kòd minifye nan clipboard olye pou yo ekri nan dosye si se dosye sous sèl trete" },
   "optionDesc_cloneFolders": { "message": "Prezève estrikti katab nan anyè pwodiksyon an" },
+  "optionDesc_noRewriteImports": { "message": "Anpeche aktyalizasyon chemen enpòte soti nan .js rive nan .min.js" },
   "optionDesc_quiet": { "message": "Siprime tout antre eksepte erè" },
   "optionDesc_ignoreFiles": { "message": "Fichye pou eskli nan minifikasyon" },
   "optionDesc_commentMain": { "message": "Prepand kòmantè header nan kòd minifye" },

@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Disabilita la modifica dell'estensione del file in .min.js" },
   "optionDesc_copy": { "message": "Copia il codice minimizzato negli appunti invece di scriverlo sul file se viene elaborato un singolo file di origine" },
   "optionDesc_cloneFolders": { "message": "Mantieni la struttura delle cartelle nella directory di output" },
+  "optionDesc_noRewriteImports": { "message": "Disabilita l'aggiornamento dei percorsi di importazione da .js a .min.js" },
   "optionDesc_quiet": { "message": "Elimina tutte le registrazioni ad eccezione degli errori" },
   "optionDesc_ignoreFiles": { "message": "File da escludere dalla minimizzazione" },
   "optionDesc_commentMain": { "message": "Preponi il commento dell'intestazione al codice minimizzato" },

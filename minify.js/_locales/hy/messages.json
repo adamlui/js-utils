@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Անջատել փոփոխվող ֆայլի ընդլայնումը .min.js- ին" },
   "optionDesc_copy": { "message": "Պատճենեք փոքրացված կոդը ֆայլի համար գրելու փոխարեն, եթե մշակվում է մեկ աղբյուրի ֆայլ" },
   "optionDesc_cloneFolders": { "message": "Պահպանել թղթապանակի կառուցվածքը ելքային գրացուցակում" },
+  "optionDesc_noRewriteImports": { "message": "Անջատել ներմուծման ուղիների թարմացումը .js - ից դեպի .min.js" },
   "optionDesc_quiet": { "message": "Սեղմեք բոլոր տեղեկամատյանները, բացի սխալներից" },
   "optionDesc_ignoreFiles": { "message": "Նվազեցումը բացառող ֆայլեր" },
   "optionDesc_commentMain": { "message": "Նախապես վերնագրի մեկնաբանությունը տեղադրեք մանրացված կոդի վրա" },

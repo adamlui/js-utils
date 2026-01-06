@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "ፋይል ምስፍሕፋሕ ናብ .min.js ቀይር" },
   "optionDesc_copy": { "message": "ሓደ ምንጪ ፋይል ምስ ዚሰርሕ ፡ ኣብ ክንዲ ዚጽሕፍ ፡ ናብ ክሊፕቦርድ እተቐርጸ ኮድ ቅዳሕ" },
   "optionDesc_cloneFolders": { "message": "ኣብ ኣቃውማ ውፅኢት ዘሎ ቅርጺ ኣቃውማ ኣቃውማ" },
+  "optionDesc_noRewriteImports": { "message": "ካብ .js to .min.js ናይ ምእታው መገድታት ምምላእ" },
   "optionDesc_quiet": { "message": "ጌጋታት እንተዘይኮይኑ ፡ ንዅሉ ምዝገባታት ኣጥፍእ" },
   "optionDesc_ignoreFiles": { "message": "ካብ ምጥፋእ ክስረዙ ዝኽእሉ ፋይላት" },
   "optionDesc_commentMain": { "message": "ናብ ዝተሓተ ኮድ ናይ ርእሲ ርእይቶ ኣዳልዩ" },

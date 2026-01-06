@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": ".min.js ته د دوتنې شاتاړی بدلول غیر فعال کړئ" },
   "optionDesc_copy": { "message": "که چیرې د واحد سرچینې فایل پروسس شي نو فایل ته د لیکلو پرځای یې لږ کوډ کلیپ بورډ ته کاپي کړئ" },
   "optionDesc_cloneFolders": { "message": "د وتۍ دوسیې کې د پوښۍ جوړښت خوندي کول" },
+  "optionDesc_noRewriteImports": { "message": "د .js څخه .min.js ته د وارداتو لارې تازه کول غیر فعال کړئ" },
   "optionDesc_quiet": { "message": "د تېروتنو پرته ټول ننوتل (logging) پټ کړئ" },
   "optionDesc_ignoreFiles": { "message": "د تصفیې څخه د لرې کولو فایلونه" },
   "optionDesc_commentMain": { "message": "د سرلیک څرګندون کم شوي کوډ ته چمتو کړئ" },

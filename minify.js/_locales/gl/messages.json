@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Desactivar o cambio de extensión de ficheiro a .min.js" },
   "optionDesc_copy": { "message": "Copiar o código minificado no portarretallos no canto de escribir no ficheiro se se procesa o ficheiro de orixe única" },
   "optionDesc_cloneFolders": { "message": "Conservar a estrutura de cartafoles no cartafol de saída" },
+  "optionDesc_noRewriteImports": { "message": "Desactivar actualizar rutas de importación de .js a .min.js" },
   "optionDesc_quiet": { "message": "Suprimir todo o rexistro agás erros" },
   "optionDesc_ignoreFiles": { "message": "Ficheiros para excluír da minificación" },
   "optionDesc_commentMain": { "message": "Engadir o comentario da cabeceira ao código minificado" },

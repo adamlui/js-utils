@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Адключыць змяненне пашырэння файла ў .min.js" },
   "optionDesc_copy": { "message": "Скапіруйце minified код у буфер абмену замест запісу ў файл, калі адзін зыходны файл апрацаваны" },
   "optionDesc_cloneFolders": { "message": "Захоўваць структуру тэчак у каталогу вываду" },
+  "optionDesc_noRewriteImports": { "message": "Адключыць абнаўленне шляхоў імпарту з .js на .min.js" },
   "optionDesc_quiet": { "message": "Спыніць усе журналы, акрамя памылак" },
   "optionDesc_ignoreFiles": { "message": "Файлы, якія трэба выключыць з мінімізацыі" },
   "optionDesc_commentMain": { "message": "Падрыхтаваць каментар загалоўка да мінімальнага кода" },

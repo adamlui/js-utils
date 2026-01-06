@@ -39,6 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Deaktiveer die verandering van lêer uitbreiding na .min.js" },
   "optionDesc_copy": { "message": "Kopieer geminificeerde kode na knipbord in plaas daarvan om na lêer te skryf as enkelbronlêer verwerk word" },
   "optionDesc_cloneFolders": { "message": "Bewaar gidsstruktuur in afvoer gids" },
+  "optionDesc_noRewriteImports": { "message": "Deaktiveer opdatering van invoerpaaie van .js na .min.js" },
   "optionDesc_quiet": { "message": "Onderdruk alle aanmelding behalwe foute" },
   "optionDesc_ignoreFiles": { "message": "Lêers om van minifikasie uit te sluit" },
   "optionDesc_commentMain": { "message": "Voorkeur kop kommentaar na geminificeerde kode" },

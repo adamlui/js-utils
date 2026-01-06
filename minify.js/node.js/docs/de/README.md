@@ -142,7 +142,8 @@ Boolesche Optionen:
  -D, --include-dotfiles               Beziehen Sie Punktdateien in die Dateisuche ein.
  -R, --no-recursion                   Deaktivieren Sie die rekursive Dateisuche.
  -M, --no-mangle                      Deaktivieren Sie das Verstümmeln von Namen.
- -X, --no-filename-change             Deaktivieren Sie die Änderung der Dateierweiterung in .min.js
+ -X, --no-filename-change             Deaktivieren Sie die Änderung der Dateierweiterung in .min.js.
+ -I, --no-rewrite-imports             Aktualisierung der Importpfade von .js auf .min.js deaktivieren.
  -c, --copy                           Kopieren Sie minimierten Code in die Zwischenablage, anstatt ihn in eine Datei zu schreiben, wenn eine einzelne Quelldatei verarbeitet wird.
  -C, --clone-folders                  Die Ordnerstruktur im Ausgabeverzeichnis beibehalten.
  -q, --quiet                          Unterdrücken Sie alle Protokolle außer Fehlern.
@@ -216,16 +217,17 @@ minifyJS.minify(eingang, { dotFiles: true });
 
 Verfügbare Parameter (und ihre Standardeinstellungen) sind:
 
-Name           | Typ             | Beschreibung                                                                                 | Standardwert
----------------|-----------------|----------------------------------------------------------------------------------------------|--------------
-`recursive`    | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird.       | `true`
-`verbose`      | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                                      | `true`
-`dotFolders`   | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                              | `false`
-`dotFiles`     | Boolescher Wert | Beziehen Sie Punktdateien in die Dateisuche ein.                                             | `false`
-`mangle`       | Boolescher Wert | Variablennamen kürzen (normalerweise auf ein Zeichen).                                       | `true`
-`cloneFolders` | Boolescher Wert | Die Ordnerstruktur im Ausgabeverzeichnis beibehalten.                                        | `false`
-`ignoreFiles`  | Array           | Dateien (nach Namen), die von der Minimierung ausgeschlossen werden sollen.                  | `[]`
-`comment`      | Zeichenfolge    | Header-Kommentar, der dem minimierten Code vorangestellt wird. Mit „\n“ zeilenweise trennen. | `''`
+Name             | Typ             | Beschreibung                                                                                 | Standardwert
+-----------------|-----------------|----------------------------------------------------------------------------------------------|--------------
+`recursive`      | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird.       | `true`
+`verbose`        | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                                      | `true`
+`dotFolders`     | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                              | `false`
+`dotFiles`       | Boolescher Wert | Beziehen Sie Punktdateien in die Dateisuche ein.                                             | `false`
+`mangle`         | Boolescher Wert | Variablennamen kürzen (normalerweise auf ein Zeichen).                                       | `true`
+`rewriteImports` | Boolescher Wert | Importpfade von .js auf .min.js aktualisieren.                                               | `true`
+`cloneFolders`   | Boolescher Wert | Die Ordnerstruktur im Ausgabeverzeichnis beibehalten.                                        | `false`
+`ignoreFiles`    | Array           | Dateien (nach Namen), die von der Minimierung ausgeschlossen werden sollen.                  | `[]`
+`comment`        | Zeichenfolge    | Header-Kommentar, der dem minimierten Code vorangestellt wird. Mit „\n“ zeilenweise trennen. | `''`
 
 #
 

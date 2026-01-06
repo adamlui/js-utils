@@ -76,14 +76,15 @@ function minify(input, options = {}) {
           exampleCall = `minify('assets/js', { recursive: false, mangle: false })`
 
     const defaultOptions = {
-        recursive: true,     // recursively search for nested files if dir path passed
-        verbose: true,       // enable logging
-        dotFolders: false,   // include dotfolders in file search
-        dotFiles: false,     // include dotfiles in file search
-        mangle: true,        // shorten var names (typically to one character)
-        cloneFolders: false, // preserve folder structure in output dir
-        ignoreFiles: [],     // files (by name) to exclude from minification
-        comment: ''          // header comment to prepend to minified code
+        recursive: true,      // recursively search for nested files if dir path passed
+        verbose: true,        // enable logging
+        dotFolders: false,    // include dotfolders in file search
+        dotFiles: false,      // include dotfiles in file search
+        mangle: true,         // shorten var names (typically to one character)
+        rewriteImports: true, // update import paths from .js to .min.js
+        cloneFolders: false,  // preserve folder structure in output dir
+        ignoreFiles: [],      // files (by name) to exclude from minification
+        comment: ''           // header comment to prepend to minified code
     }
 
     // Validate input
@@ -129,6 +130,21 @@ function minify(input, options = {}) {
                 else console.info(
                     'minify() » No unminified JavaScript files processed.')
             }
+
+            // Rewrite import paths if enabled and multiple files processed
+            if (options.rewriteImports && minifyResult && minifyResult.length > 1) {
+                if (options.verbose) console.info('minify() » ** Rewriting import paths...')
+                const minifiedFiles = minifyResult.map(file => path.basename(file.srcPath, '.js'))
+                minifyResult.forEach(minifiedFile => minifiedFiles.forEach(filename => {
+                    const reMatch = new RegExp(`(\\./?)?\\b${filename}\\.js(['"])`, 'g'),
+                          before = minifiedFile.code
+                    minifiedFile.code = minifiedFile.code.replace(reMatch, `$1${filename}.min.js$2`)
+                    if (before != minifiedFile.code && options.verbose)
+                        console.info(`minify() » Updated ${filename}.js in ${path.basename(minifiedFile.srcPath)}`)
+                }))
+                if (options.verbose) console.info('minify() » Import paths rewritten.')
+            }
+
             return minifyResult
         }
     } else { // minify based on src code arg
