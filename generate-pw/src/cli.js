@@ -5,9 +5,9 @@ const pkgName = 'generate-pw',
       cmdFormat = 'generate-pw [options|commands]',
       srcURL = 'https://code.generatepw.org',
       docURL = 'https://docs.generatepw.org/#-command-line-usage',
-      latestLocaleCommitHash = '3560750';
+      latestLocaleCommitHash = 'cc58ad6'
 
-(async () => {
+;(async () => {
     'use strict'
 
     // Import LIBS

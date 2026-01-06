@@ -5,9 +5,9 @@ const pkgName = 'generate-ip',
       cmdFormat = 'generate-[ip|ipv6|mac] [options|commands]',
       srcURL = 'https://code.generate-ip.org',
       docURL = 'https://docs.generate-ip.org/#-command-line-usage',
-      latestLocaleCommitHash = '3560750';
+      latestLocaleCommitHash = 'cc58ad6'
 
-(async () => {
+;(async () => {
     'use strict'
 
     // Import LIBS

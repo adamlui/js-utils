@@ -5,9 +5,9 @@ const pkgName = '@adamlui/geolocate',
       cmdFormat = 'geolocate [ip1] [ip2] [...] [options|commands]',
       srcURL = 'https://code.geolocatejs.org',
       docURL = 'https://docs.geolocatejs.org/#-command-line-usage',
-      latestLocaleCommitHash = '3560750';
+      latestLocaleCommitHash = 'cc58ad6'
 
-(async () => {
+;(async () => {
     'use strict'
 
     // Import LIBS
