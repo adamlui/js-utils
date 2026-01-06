@@ -146,6 +146,7 @@ Options booléennes:
  -S, --no-source-maps                     Empêcher la génération de mappages sources.
  -M, --no-minify                          Désactivez la minification du CSS de sortie.
  -R, --no-recursion                       Désactivez la recherche récursive de fichiers.
+ -C, --clone-folders                      Conserver la structure des dossiers dans le répertoire de sortie.
  -c, --copy                               Copiez le CSS compilé dans le presse-papiers au lieu d'écrire dans un fichier si un fichier source unique est traité.
  -q, --quiet                              Supprime toute la journalisation, à l'exception des erreurs.
 
@@ -218,15 +219,16 @@ scssToCSS.compile(répEntrée, { minify: false });
 
 Les paramètres disponibles (et leurs paramètres par défaut) sont:
 
-Nom           | Taper   | Description                                                                              | Valeur par défaut
---------------|---------|------------------------------------------------------------------------------------------|-------------------
-`recursive`   | Booléen | Rechercher récursivement les fichiers imbriqués si le chemin du répertoire est transmis. | `true`
-`verbose`     | Booléen | Afficher la connexion dans la console/terminal.                                          | `true`
-`dotFolders`  | Booléen | Inclure les dossiers cachés dans la recherche de fichiers.                               | `false`
-`minify`      | Booléen | Réduire la sortie CSS.                                                                   | `true`
-`sourceMaps`  | Booléen | Générer des cartes sources CSS.                                                          | `true`
-`ignoreFiles` | Tableau | Fichiers (par nom) à exclure de la compilation.                                          | `[]`
-`comment`     | Chaîne  | Commentaire d’en-tête à ajouter au CSS compilé. Séparez par ligne en utilisant '\n'.     | `''`
+Nom            | Taper   | Description                                                                              | Valeur par défaut
+---------------|---------|------------------------------------------------------------------------------------------|-------------------
+`recursive`    | Booléen | Rechercher récursivement les fichiers imbriqués si le chemin du répertoire est transmis. | `true`
+`verbose`      | Booléen | Afficher la connexion dans la console/terminal.                                          | `true`
+`dotFolders`   | Booléen | Inclure les dossiers cachés dans la recherche de fichiers.                               | `false`
+`minify`       | Booléen | Réduire la sortie CSS.                                                                   | `true`
+`sourceMaps`   | Booléen | Générer des cartes sources CSS.                                                          | `true`
+`cloneFolders` | Booléen | Conserver la structure des dossiers dans le répertoire de sortie.                        | `false`
+`ignoreFiles`  | Tableau | Fichiers (par nom) à exclure de la compilation.                                          | `[]`
+`comment`      | Chaîne  | Commentaire d’en-tête à ajouter au CSS compilé. Séparez par ligne en utilisant '\n'.     | `''`
 
 #
 

@@ -146,6 +146,7 @@ Opzioni booleane:
  -S, --no-source-maps                     Impedisce la generazione delle mappe di origine.
  -M, --no-minify                          Disabilita la minimizzazione dei CSS di output.
  -R, --no-recursion                       Disabilita la ricerca ricorsiva dei file.
+ -C, --clone-folders                      Mantieni la struttura delle cartelle nella directory di output.
  -c, --copy                               Copia il CSS compilato negli appunti invece di scrivere nel file se viene elaborato un singolo file sorgente.
  -q, --quiet                              Elimina tutta la registrazione tranne gli errori.
 
@@ -218,15 +219,16 @@ scssToCSS.compile(dirInput, { minify: false });
 
 I parametri disponibili (e le relative impostazioni predefinite) sono:
 
-Nome          | Tipo     | Descrizione                                                                                   | Valore di default
---------------|----------|---------------------------------------------------------------------------------*-------------|-------------------
-`recursive`   | Booleano | Cerca ricorsivamente i file nidificati se il percorso della direttorio è passato.             | `true`
-`verbose`     | Booleano | Mostra l'accesso nella console/terminale.                                                     | `true`
-`dotFolders`  | Booleano | Includi cartelle punto nella ricerca di file.                                                 | `false`
-`minify`      | Booleano | Minimizza il CSS di output.                                                                   | `true`
-`sourceMaps`  | Booleano | Genera mappe di origine CSS.                                                                  | `true`
-`ignoreFiles` | Vettore  | File (per nome) da escludere dalla compilazione.                                              | `[]`
-`comment`     | Stringa  | Commento dell'intestazione da anteporre al CSS compilato. Separare per riga utilizzando '\n'. | `''`
+Nome           | Tipo     | Descrizione                                                                                   | Valore di default
+---------------|----------|---------------------------------------------------------------------------------*-------------|-------------------
+`recursive`    | Booleano | Cerca ricorsivamente i file nidificati se il percorso della direttorio è passato.             | `true`
+`verbose`      | Booleano | Mostra l'accesso nella console/terminale.                                                     | `true`
+`dotFolders`   | Booleano | Includi cartelle punto nella ricerca di file.                                                 | `false`
+`minify`       | Booleano | Minimizza il CSS di output.                                                                   | `true`
+`sourceMaps`   | Booleano | Genera mappe di origine CSS.                                                                  | `true`
+`cloneFolders` | Booleano | Mantieni la struttura delle cartelle nella directory di output.                               | `false`
+`ignoreFiles`  | Vettore  | File (per nome) da escludere dalla compilazione.                                              | `[]`
+`comment`      | Stringa  | Commento dell'intestazione da anteporre al CSS compilato. Separare per riga utilizzando '\n'. | `''`
 
 #
 

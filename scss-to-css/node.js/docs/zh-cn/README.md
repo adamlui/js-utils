@@ -146,6 +146,7 @@ $ scss-to-css input_folder output_folder
  -S, --no-source-maps                     防止生成源映射。
  -M, --no-minify                          禁用输出 CSS 的缩小。
  -R, --no-recursion                       禁用递归文件搜索。
+ -C, --clone-folders                      在输出目录中保留文件夹结构。
  -c, --copy                               如果处理单个源文件，则将编译后的 CSS 复制到剪贴板，而不是写入文件。
  -q, --quiet                              禁止除错误之外的所有日志记录。
 
@@ -218,15 +219,16 @@ scssToCSS.compile(inputDir, { minify: false });
 
 可用参数（及其默认设置）有：
 
-姓名          | 类型    | 描述                                              | 默认值
---------------|--------|---------------------------------------------------|--------
-`recursive`   | 布尔值 | 如果传递目录路径，则递归搜索嵌套文件。                | `true`
-`verbose`     | 布尔值 | 在控制台/终端中显示日志记录。                        | `true`
-`dotFolders`  | 布尔值 | 在文件搜索中包括点文件夹。                           | `false`
-`minify`      | 布尔值 | 缩小输出 CSS。                                      | `true`
-`sourceMaps`  | 布尔值 | 生成 CSS 源映射。                                   | `true`
-`ignoreFiles` | 大批   | 要从编译中排除的文件（按名称）。                     | `[]`
-`comment`     | 字符串 | 添加到已编译 CSS 前面的标头注释。使用 '\n' 按行分隔。 | `''`
+姓名           | 类型    | 描述                                              | 默认值
+---------------|--------|---------------------------------------------------|--------
+`recursive`    | 布尔值 | 如果传递目录路径，则递归搜索嵌套文件。                | `true`
+`verbose`      | 布尔值 | 在控制台/终端中显示日志记录。                        | `true`
+`dotFolders`   | 布尔值 | 在文件搜索中包括点文件夹。                           | `false`
+`minify`       | 布尔值 | 缩小输出 CSS。                                      | `true`
+`sourceMaps`   | 布尔值 | 生成 CSS 源映射。                                   | `true`
+`cloneFolders` | 布尔值 | 在输出目录中保留文件夹结构。                         | `false`
+`ignoreFiles`  | 大批   | 要从编译中排除的文件（按名称）。                     | `[]`
+`comment`      | 字符串 | 添加到已编译 CSS 前面的标头注释。使用 '\n' 按行分隔。 | `''`
 
 #
 

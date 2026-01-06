@@ -146,6 +146,7 @@ $ scss-to-css input_folder output_folder
  -S, --no-source-maps                     防止產生來源映射。
  -M, --no-minify                          禁用輸出 CSS 的縮小。
  -R, --no-recursion                       停用遞歸檔案搜尋。
+ -C, --clone-folders                      保留輸出目錄中的資料夾結構。
  -c, --copy                               如果處理單一原始文件，則將編譯後的 CSS 複製到剪貼簿，而不是寫入檔案。
  -q, --quiet                              禁止錯誤以外的所有日誌記錄。
 
@@ -218,15 +219,16 @@ scssToCSS.compile(inputDir, { minify: false });
 
 可用的參數（及其預設設定）是：
 
-姓名          | 類型    | 描述                                              | 預設值
---------------|--------|---------------------------------------------------|--------
-`recursive`   | 布林值 | 如果傳遞目錄路徑，則遞歸搜尋巢狀檔案。                | `true`
-`verbose`     | 布林值 | 在控制台/終端機中顯示日誌記錄。                      | `true`
-`dotFolders`  | 布林值 | 在檔案搜尋中包含點資料夾。                           | `false`
-`minify`      | 布林值 | 縮小輸出 CSS。                                      | `true`
-`sourceMaps`  | 布林值 | 產生 CSS 來源映射。                                 | `true`
-`ignoreFiles` | 大批   | 要從編譯中排除的檔案（按名稱）。                     | `[]`
-`comment`     | 字串   | 新增到已編譯 CSS 前面的標頭註解。使用 '\n' 按行分隔。 | `''`
+姓名           | 類型    | 描述                                              | 預設值
+---------------|--------|---------------------------------------------------|--------
+`recursive`    | 布林值 | 如果傳遞目錄路徑，則遞歸搜尋巢狀檔案。                | `true`
+`verbose`      | 布林值 | 在控制台/終端機中顯示日誌記錄。                      | `true`
+`dotFolders`   | 布林值 | 在檔案搜尋中包含點資料夾。                           | `false`
+`minify`       | 布林值 | 縮小輸出 CSS。                                      | `true`
+`sourceMaps`   | 布林值 | 產生 CSS 來源映射。                                 | `true`
+`cloneFolders` | 布林值 | 保留輸出目錄中的資料夾結構。                         | `false`
+`ignoreFiles`  | 大批   | 要從編譯中排除的檔案（按名稱）。                     | `[]`
+`comment`      | 字串   | 新增到已編譯 CSS 前面的標頭註解。使用 '\n' 按行分隔。 | `''`
 
 #
 

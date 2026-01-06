@@ -146,6 +146,7 @@ Boolesche Optionen:
  -S, --no-source-maps                     Verhindern Sie, dass Quellkarten generiert werden.
  -M, --no-minify                          Deaktivieren Sie die Minimierung des Ausgabe-CSS.
  -R, --no-recursion                       Deaktivieren Sie die rekursive Dateisuche.
+ -C, --clone-folders                      Ordnerstruktur im Ausgabeverzeichnis beibehalten.
  -c, --copy                               Kopieren Sie kompiliertes CSS in die Zwischenablage, anstatt in eine Datei zu schreiben, wenn eine einzelne Quelldatei verarbeitet wird.
  -q, --quiet                              Unterdrücken Sie alle Protokolle außer Fehlern.
 
@@ -218,15 +219,16 @@ scssToCSS.compile(eingangVer, { minify: false });
 
 Verfügbare Parameter (und ihre Standardeinstellungen) sind:
 
-Name          | Typ             | Beschreibung                                                                                 | Standardwert
---------------|-----------------|----------------------------------------------------------------------------------------------|--------------
-`recursive`   | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird.       | `true`
-`verbose`     | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                                      | `true`
-`dotFolders`  | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                              | `false`
-`minify`      | Boolescher Wert | Ausgabe-CSS minimieren.                                                                      | `true`
-`sourceMaps`  | Boolescher Wert | Generieren Sie CSS-Quellkarten.                                                              | `true`
-`ignoreFiles` | Array           | Dateien (nach Namen), die von der Kompilierung ausgeschlossen werden sollen.                 | `[]`
-`comment`     | Zeichenfolge    | Header-Kommentar, der dem kompilierten CSS vorangestellt wird. Mit '\n' zeilenweise trennen. | `''`
+Name           | Typ             | Beschreibung                                                                                 | Standardwert
+---------------|-----------------|----------------------------------------------------------------------------------------------|--------------
+`recursive`    | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird.       | `true`
+`verbose`      | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                                      | `true`
+`dotFolders`   | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                              | `false`
+`minify`       | Boolescher Wert | Ausgabe-CSS minimieren.                                                                      | `true`
+`sourceMaps`   | Boolescher Wert | Generieren Sie CSS-Quellkarten.                                                              | `true`
+`cloneFolders` | Boolescher Wert | Ordnerstruktur im Ausgabeverzeichnis beibehalten.                                            | `false`
+`ignoreFiles`  | Array           | Dateien (nach Namen), die von der Kompilierung ausgeschlossen werden sollen.                 | `[]`
+`comment`      | Zeichenfolge    | Header-Kommentar, der dem kompilierten CSS vorangestellt wird. Mit '\n' zeilenweise trennen. | `''`
 
 #
 

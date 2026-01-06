@@ -146,6 +146,7 @@ Booleaanse opties:
  -S, --no-source-maps                     Voorkom dat bronkaarten worden gegenereerd.
  -M, --no-minify                          Schakel verkleining van uitvoer-CSS uit.
  -R, --no-recursion                       Schakel recursief zoeken naar bestanden uit.
+ -C, --clone-folders                      Behoud de mapstructuur in de uitvoermap.
  -c, --copy                               Kopieer gecompileerde CSS naar het klembord in plaats van naar een bestand te schrijven als er één bronbestand wordt verwerkt.
  -q, --quiet                              Onderdruk alle logboekregistratie, behalve fouten.
 
@@ -218,15 +219,16 @@ scssToCSS.compile(invoermap, { minify: false });
 
 Beschikbare parameters (en hun standaardinstellingen) zijn:
 
-Naam          | Type       | Beschrijving                                                                                 | Standaardwaarde
---------------|------------|----------------------------------------------------------------------------------------------|-----------------
-`recursive`   | Booleaans  | Zoek recursief naar geneste bestanden als het mappad is doorgegeven.                         | `true`
-`verbose`     | Booleaans  | Toon inloggen op console/terminal.                                                           | `true`
-`dotFolders`  | Booleaans  | Puntmappen opnemen in het zoeken naar bestanden.                                             | `false`
-`minify`      | Booleaans  | Verklein de uitvoer-CSS.                                                                     | `true`
-`sourceMaps`  | Booleaans  | Genereer CSS-bronkaarten.                                                                    | `true`
-`ignoreFiles` | Array      | Bestanden (op naam) die moeten worden uitgesloten van compilatie.                            | `[]`
-`comment`     | Tekenreeks | Kopopmerking die vóór de gecompileerde CSS moet worden geplaatst. Scheid per regel met '\n'. | `''`
+Naam           | Type       | Beschrijving                                                                                 | Standaardwaarde
+---------------|------------|----------------------------------------------------------------------------------------------|-----------------
+`recursive`    | Booleaans  | Zoek recursief naar geneste bestanden als het mappad is doorgegeven.                         | `true`
+`verbose`      | Booleaans  | Toon inloggen op console/terminal.                                                           | `true`
+`dotFolders`   | Booleaans  | Puntmappen opnemen in het zoeken naar bestanden.                                             | `false`
+`minify`       | Booleaans  | Verklein de uitvoer-CSS.                                                                     | `true`
+`sourceMaps`   | Booleaans  | Genereer CSS-bronkaarten.                                                                    | `true`
+`cloneFolders` | Booleaans  | Behoud de mapstructuur in de uitvoermap.                                                     | `false`
+`ignoreFiles`  | Array      | Bestanden (op naam) die moeten worden uitgesloten van compilatie.                            | `[]`
+`comment`      | Tekenreeks | Kopopmerking die vóór de gecompileerde CSS moet worden geplaatst. Scheid per regel met '\n'. | `''`
 
 #
 

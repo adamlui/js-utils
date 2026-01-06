@@ -149,6 +149,7 @@ Boolean options:
  -S, --no-source-maps        Prevent source maps from being generated.
  -M, --no-minify             Disable minification of output CSS.
  -R, --no-recursion          Disable recursive file searching.
+ -C, --clone-folders         Preserve folder structure in output directory
  -c, --copy                  Copy compiled CSS to clipboard instead of
                              writing to file if single source file is
                              processed.
@@ -225,15 +226,16 @@ scssToCSS.compile(inputDir, { minify: false });
 
 Available parameters (and their default settings) are:
 
-Name          | Type    | Desciption                                                              | Default value
---------------|---------|-------------------------------------------------------------------------|---------------
-`recursive`   | Boolean | Recursively search for nested files if dir path passed.                 | `true`
-`verbose`     | Boolean | Show logging in console/terminal.                                       | `true`
-`dotFolders`  | Boolean | Include dotfolders in file search.                                      | `false`
-`minify`      | Boolean | Minify output CSS.                                                      | `true`
-`sourceMaps`  | Boolean | Generate CSS source maps.                                               | `true`
-`ignoreFiles` | Array   | Files (by name) to exclude from compilation.                            | `[]`
-`comment`     | String  | Header comment to prepend to compiled CSS. Separate by line using '\n'. | `''`
+Name           | Type    | Desciption                                                              | Default value
+---------------|---------|-------------------------------------------------------------------------|---------------
+`recursive`    | Boolean | Recursively search for nested files if dir path passed.                 | `true`
+`verbose`      | Boolean | Show logging in console/terminal.                                       | `true`
+`dotFolders`   | Boolean | Include dotfolders in file search.                                      | `false`
+`minify`       | Boolean | Minify output CSS.                                                      | `true`
+`sourceMaps`   | Boolean | Generate CSS source maps.                                               | `true`
+`cloneFolders` | Boolean | Preserve folder structure in output dir                                 | `false`
+`ignoreFiles`  | Array   | Files (by name) to exclude from compilation.                            | `[]`
+`comment`      | String  | Header comment to prepend to compiled CSS. Separate by line using '\n'. | `''`
 
 #
 

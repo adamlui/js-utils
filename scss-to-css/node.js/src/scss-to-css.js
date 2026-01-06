@@ -74,13 +74,14 @@ function compile(input, options = {}) {
           exampleCall = `compile('assets/scss', { recursive: false, minify: false })`
 
     const defaultOptions = {
-        recursive: true,   // recursively search for nested files if dir path passed
-        verbose: true,     // enable logging
-        dotFolders: false, // include dotfolders in file search
-        minify: true,      // minify output CSS
-        sourceMaps: true,  // generate CSS source maps
-        ignoreFiles: [],   // files to exclude from compilation
-        comment: ''        // header comment to prepend to compiled CSS
+        recursive: true,     // recursively search for nested files if dir path passed
+        verbose: true,       // enable logging
+        dotFolders: false,   // include dotfolders in file search
+        minify: true,        // minify output CSS
+        sourceMaps: true,    // generate CSS source maps
+        cloneFolders: false, // preserve folder structure in output dir
+        ignoreFiles: [],     // files to exclude from compilation
+        comment: ''          // header comment to prepend to compiled CSS
     }
 
     // Validate input
@@ -121,9 +122,11 @@ function compile(input, options = {}) {
                     if (options.verbose) console.info(`compile() » ** Compiling ${scssPath}...`)
                     try { // to compile found file
                         const compileResult = sass.compile(scssPath, compileOptions)
+                        let relPath
+                        if (options.cloneFolders) relPath = path.relative(path.resolve(process.cwd(), input), scssPath)
                         if (options.comment) compileResult.css = prependComment(compileResult.css, options.comment)
                         return { code: compileResult.css, srcMap: compileResult.sourceMap,
-                                 srcPath: scssPath, error: undefined }
+                                 srcPath: scssPath, relPath, error: undefined }
                     } catch (err) {
                         console.error(`\ncompile() » ERROR: ${err.message}\n`)
                         return { code: undefined, srcMap: undefined, srcPath: undefined, error: err }
