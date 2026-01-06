@@ -38,11 +38,11 @@ const pkgName = '@adamlui/minify.js',
     // Define MESSAGES
     let msgs = {}
     const msgsLoaded = new Promise((resolve, reject) => {
-        const msgHostURL = `https://cdn.jsdelivr.net/gh/adamlui/minify.js@${latestLocaleCommitHash}/_locales/`,
+        const msgHostDir = `https://cdn.jsdelivr.net/gh/adamlui/minify.js@${latestLocaleCommitHash}/_locales/`,
               msgLocaleDir = `${ langCode ? langCode.replace('-', '_') : 'en' }/`
-        let msgHref = msgHostURL + msgLocaleDir + 'messages.json', msgFetchTries = 0
-        fetchData(msgHref).then(onLoad).catch(reject)
-        async function onLoad(resp) {
+        let msgHref = msgHostDir + msgLocaleDir + 'messages.json', msgFetchTries = 0
+        fetchData(msgHref).then(handleMsgs).catch(reject)
+        async function handleMsgs(resp) {
             try { // to return localized messages.json
                 const msgs = await resp.json(), flatMsgs = {}
                 for (const key in msgs)  // remove need to ref nested keys
@@ -53,8 +53,8 @@ const pkgName = '@adamlui/minify.js',
                 msgFetchTries++ ; if (msgFetchTries == 3) return resolve({}) // try original/region-stripped/EN only
                 msgHref = langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                     msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
-                        : ( msgHostURL + 'en/messages.json' ) // else use default English messages
-                fetchData(msgHref).then(onLoad).catch(reject)
+                        : ( msgHostDir + 'en/messages.json' ) // else use default English messages
+                fetchData(msgHref).then(handleMsgs).catch(reject)
             }
         }
     })
