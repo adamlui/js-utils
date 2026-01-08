@@ -114,18 +114,18 @@ const pkgName = '@adamlui/geolocate',
 
         // Log single result
         if (!config.quietMode && geoResults.length == 1) {
-            console.info(`\nIP: ${bw + geoResults[0].ip + nc}`)
-            console.info(`${ msgs.geoLabel_country || 'Country' }: ${bw + geoResults[0].country + nc}`)
-            console.info(`${ msgs.geoLabel_region || 'Region' }: ${bw + geoResults[0].regionName + nc}`)
-            console.info(`${ msgs.geoLabel_city || 'City' }: ${bw + geoResults[0].city + nc}`)
-            console.info(`${ msgs.geoLabel_zip || 'Zip' }: ${bw + geoResults[0].zip + nc}`)
-            console.info(`${ msgs.geoLabel_lat || 'Latitude' }: ${bw + geoResults[0].lat + nc}`)
-            console.info(`${ msgs.geoLabel_lon || 'Longitude' }: ${bw + geoResults[0].lon + nc}`)
-            console.info(`${ msgs.geoLabel_timeZone || 'Time zone' }: ${bw + geoResults[0].timezone
+            console.info(`\nIP: ${bw}${geoResults[0].ip}${nc}`)
+            console.info(`${ msgs.geoLabel_country || 'Country' }: ${bw}${geoResults[0].country}${nc}}`)
+            console.info(`${ msgs.geoLabel_region || 'Region' }: ${bw}${geoResults[0].regionName}${nc}}`)
+            console.info(`${ msgs.geoLabel_city || 'City' }: ${bw}${geoResults[0].city}${nc}}`)
+            console.info(`${ msgs.geoLabel_zip || 'Zip' }: ${bw}${geoResults[0].zip}${nc}}`)
+            console.info(`${ msgs.geoLabel_lat || 'Latitude' }: ${bw}${geoResults[0].lat}${nc}}`)
+            console.info(`${ msgs.geoLabel_lon || 'Longitude' }: ${bw}${geoResults[0].lon}${nc}}`)
+            console.info(`${ msgs.geoLabel_timeZone || 'Time zone' }: ${bw}${geoResults[0].timezone
                 .replace(/_/g, ' ') // insert spaces
                 .replace(/\//g, ' / ') // pad slashes
-                    + nc}`)
-            console.info(`ISP: ${bw + geoResults[0].isp + nc}`)
+            }${nc}`)
+            console.info(`ISP: ${bw}${geoResults[0].isp}${nc}}`)
         }
 
         // Copy to clipboard
@@ -150,12 +150,12 @@ const pkgName = '@adamlui/geolocate',
         const appPrefix = `\x1b[106m\x1b[30m ${pkgName.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
         const helpSections = {
             'header': [
-                '\n├ ' + appPrefix + ( msgs.appCopyright || copyright ),
-                `${ appPrefix + ( msgs.prefix_source || 'Source' )}: ${srcURL}`
+                `\n├ ${appPrefix}${ msgs.appCopyright || copyright }`,
+                `${appPrefix}${ msgs.prefix_source || 'Source' }: ${srcURL}`
             ],
             'usage': [
                 `\n${bw}o ${ msgs.helpSection_usage || 'Usage' }:${nc}`,
-                ` ${bw}» ${bg + cmdFormat + nc}`
+                ` ${bw}» ${bg}${cmdFormat}${nc}`
             ],
             'configOptions': [
                 `\n${bw}o ${ msgs.helpSection_configOptions || 'Config options' }:${nc}`,
@@ -170,7 +170,7 @@ const pkgName = '@adamlui/geolocate',
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)))
         console.info(
-            `\n${ msgs.info_moreHelp || 'For more help' }, ${ msgs.info_visit || 'visit' }: ${ bw + docURL + nc }`)
+            `\n${ msgs.info_moreHelp || 'For more help' }, ${ msgs.info_visit || 'visit' }: ${bw}${docURL}${nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,

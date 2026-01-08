@@ -204,7 +204,7 @@ const pkgName = '@adamlui/minify.js',
 
             // Copy single result code to clipboard if --copy passed
             if (config.copy && minifyData?.length == 1) {
-                console.log(`\n${bw + minifyData[0].code + nc}`)
+                console.log(`\n${bw}${minifyData[0].code}${nc}`)
                 printIfNotQuiet(`\n${ msgs.info_copying || 'Copying to clipboard' }...`)
                 ncp.writeSync(minifyData[0].code)
 
@@ -258,12 +258,12 @@ const pkgName = '@adamlui/minify.js',
         const appPrefix = `\x1b[106m\x1b[30m ${pkgName.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
         const helpSections = {
             'header': [
-                '\n├ ' + appPrefix + ( msgs.appCopyright || copyright ),
-                `${ appPrefix + ( msgs.prefix_source || 'Source' )}: ${srcURL}`
+                `\n├ ${appPrefix}${ msgs.appCopyright || copyright }`,
+                `${appPrefix}${ msgs.prefix_source || 'Source' }: ${srcURL}`
             ],
             'usage': [
                 `\n${bw}o ${ msgs.helpSection_usage || 'Usage' }:${nc}`,
-                ` ${bw}» ${bg + cmdFormat + nc}`
+                ` ${bw}» ${bg}${cmdFormat}${nc}`
             ],
             'pathArgs': [
                 `\n${bw}o ${ msgs.helpSection_pathArgs || 'Path arguments' }:${nc}`,
@@ -305,7 +305,7 @@ const pkgName = '@adamlui/minify.js',
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 37)))
         console.info(
-            `\n${ msgs.info_moreHelp || 'For more help' }, ${ msgs.info_visit || 'visit' }: ${ bw + docURL + nc }`)
+            `\n${ msgs.info_moreHelp || 'For more help' }, ${ msgs.info_visit || 'visit' }: ${bw}${docURL}${nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
@@ -335,7 +335,7 @@ const pkgName = '@adamlui/minify.js',
     function printHelpCmdAndDocURL() {
         console.info(`\n${ msgs.info_moreHelp || 'For more help' }, ${
             msgs.info_type || 'type' } minify-js --help' ${ msgs.info_or || 'or' } ${
-            msgs.info_visit || 'visit' }\n${ bw + docURL + nc }`
+            msgs.info_visit || 'visit' }\n${bw}${docURL}${nc}`
         )
     }
 

@@ -72,9 +72,8 @@
             const localManifestPath = path.join(currentDir, 'package.json')
             if (fs.existsSync(localManifestPath)) {
                 const localManifest = require(localManifestPath)
-                localVer = ( localManifest.dependencies?.[pkgName]
-                        || localManifest.devDependencies?.[pkgName]
-                )?.match(/(\d+\.\d+\.\d+)/)[0] || 'none'
+                localVer = ( localManifest.dependencies?.[pkgName] || localManifest.devDependencies?.[pkgName])
+                    ?.match(/(\d+\.\d+\.\d+)/)[0] || 'none'
                 break
             }
             currentDir = path.dirname(currentDir)
@@ -143,9 +142,9 @@
             if (compileData?.length) {
                 const cssCntSuffix = compileData.length > 1 ? 's' : ''
                 printIfNotQuiet(`\n${bg}Compilation complete!${nc}`)
-                printIfNotQuiet(`${bw + compileData.length} CSS file${ cssCntSuffix }`
-                    + ( !config.noSourceMaps ? ` + ${compileData.length} source map${ cssCntSuffix }` : '' )
-                    + ' generated.' + nc)
+                printIfNotQuiet(`${bw}${compileData.length} CSS file${cssCntSuffix}`
+                    + ( !config.noSourceMaps ? ` + ${compileData.length} source map${cssCntSuffix}` : '' )
+                    + ` generated.${nc}`)
             } else printIfNotQuiet(`\n${by}No SCSS files processed.${nc}`)
             if (failedPaths.length) {
                 printIfNotQuiet(`\n${br}`
@@ -157,7 +156,7 @@
 
             // Copy single result code to clipboard if --copy passed
             if (config.copy && compileData?.length == 1) {
-                console.log(`\n${bw + compileData[0].code + nc}`)
+                console.log(`\n${bw}${compileData[0].code}${nc}`)
                 printIfNotQuiet('\nCopying to clipboard...')
                 ncp.writeSync(compileData[0].code)
 
@@ -200,8 +199,8 @@
     function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
         const appPrefix = `\x1b[106m\x1b[30m ${pkgName.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
         const helpSections = {
-            'header': [`\n├ ${ appPrefix + copyright }`, `${ appPrefix }Source: ${srcURL}`],
-            'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}» ${bg + cmdFormat + nc}`],
+            'header': [`\n├ ${appPrefix}${copyright}`, `${appPrefix}Source: ${srcURL}`],
+            'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}» ${bg}${cmdFormat}${nc}`],
             'pathArgs': [
                 `\n${bw}o Path arguments:${nc}`,
                 ' [inputPath]                             '
@@ -238,12 +237,13 @@
         }
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 41)))
-        console.info('\nFor more help, please visit: ' + bw + docURL + nc)
+        console.info(`\nFor more help, please visit: ${bw}${docURL}${nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
-                lines = [], words = msg.match(/\S+|\s+/g),
-                prefix = '| '
+                  lines = [],
+                  words = msg.match(/\S+|\s+/g),
+                  prefix = '| '
 
             // Split msg into lines of appropriate lengths
             let currentLine = ''
@@ -258,7 +258,7 @@
             lines.push(!lines.length ? currentLine : currentLine.trimStart())
 
             // Print formatted msg
-            lines.forEach((line, idx) => console.info(prefix + (
+            lines.forEach((line, idx) => console.info(prefix +(
                 idx == 0 ? line // print 1st line unindented
                     : ' '.repeat(indent) + line // print subsequent lines indented
             )))
@@ -266,7 +266,7 @@
     }
 
     function printHelpCmdAndDocURL() {
-        console.info(`\nFor more help, type 'scss-to-css --help' or visit\n${ bw + docURL + nc }`) }
+        console.info(`\nFor more help, type 'scss-to-css --help' or visit\n${bw}${docURL}${nc}`) }
 
     function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg) }
 })()

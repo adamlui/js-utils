@@ -164,12 +164,12 @@ const pkgName = 'generate-pw',
         const appPrefix = `\x1b[106m\x1b[30m ${pkgName} ${nc} ` // bright teal bg + black fg
         const helpSections = {
             'header': [
-                '\n├ ' + appPrefix + ( msgs.appCopyright || copyright ),
-                `${ appPrefix + ( msgs.prefix_source || 'Source' )}: ${srcURL}`
+                `\n├ ${appPrefix}${ msgs.appCopyright || copyright }`,
+                `${appPrefix}${ msgs.prefix_source || 'Source' }: ${srcURL}`
             ],
             'usage': [
                 `\n${bw}o ${ msgs.helpSection_usage || 'Usage' }:${nc}`,
-                ` ${bw}» ${bg + cmdFormat + nc}`
+                ` ${bw}» ${bg}${cmdFormat}${nc}`
             ],
             'paramOptions': [
                 `\n${bw}o ${ msgs.helpSection_paramOptions || 'Parameter options' }:${nc}`,
@@ -198,7 +198,7 @@ const pkgName = 'generate-pw',
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)))
         console.info(
-            `\n${ msgs.info_moreHelp || 'For more help' }, ${ msgs.info_visit || 'visit' }: ${ bw + docURL + nc }`)
+            `\n${ msgs.info_moreHelp || 'For more help' }, ${ msgs.info_visit || 'visit' }: ${bw}${docURL}${nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
@@ -228,7 +228,7 @@ const pkgName = 'generate-pw',
     function printHelpCmdAndDocURL() {
         console.info(`\n${ msgs.info_moreHelp || 'For more help' }, ${
             msgs.info_type || 'type' } generate-pw --help' ${ msgs.info_or || 'or' } ${
-            msgs.info_visit || 'visit' }\n${ bw + docURL + nc }`
+            msgs.info_visit || 'visit' }\n${bw}${docURL}${nc}`
         )
     }
 
