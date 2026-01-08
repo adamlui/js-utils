@@ -174,9 +174,10 @@ const pkgName = '@adamlui/minify.js',
                     rewriteImports: !config.noRewriteImports,
                     ignoreFiles: config.ignoreFiles ? config.ignoreFiles.split(',').map(file => file.trim()) : []
                 })
-                if (Array.isArray(minifyResult)) minifyData = minifyResult
-                else if (minifyResult && minifyResult.error) failedPaths.push(inputPath)
-                else if (minifyResult) minifyData = [minifyResult]
+                if (minifyResult) {
+                    if (minifyResult.error) failedPaths.push(inputPath)
+                    else minifyData = [].concat(minifyResult)
+                }
             } else minifyData = unminnedJSfiles.map(jsPath => {
                     const minifyResult = minifyJS.minify(jsPath, {
                         verbose: !config.quietMode, mangle: !config.noMangle,

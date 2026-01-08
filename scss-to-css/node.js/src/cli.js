@@ -127,8 +127,10 @@
                     ignoreFiles: config.ignoreFiles ? config.ignoreFiles.split(',').map(file => file.trim()) : []
                 })
                 if (Array.isArray(compileResult)) compileData = compileResult
-                else if (compileResult && compileResult.error) failedPaths.push(inputPath)
-                else if (compileResult) compileData = [compileResult]
+                if (compileResult) {
+                    if (compileResult.error) failedPaths.push(inputPath)
+                    else compileData = [].concat(compileResult)
+                }
             } else compileData = scssFiles.map(scssPath => {
                     const compileResult = scssToCSS.compile(scssPath, {
                         verbose: !config.quietMode, minify: !config.noMinify, sourceMaps: !config.noSourceMaps,
