@@ -1,6 +1,6 @@
 {
   "name": "generate-pw",
-  "version": "1.5.12",
+  "version": "1.5.13",
   "description": "Randomly generate, strengthen, and validate cryptographically-secure passwords.",
   "author": {
     "name": "Adam Lui",
@@ -10,10 +10,22 @@
   "homepage": "https://generatepw.org",
   "license": "MIT",
   "funding": [
-    { "type": "cashapp", "url": "https://cash.app/$AdamLui" },
-    { "type": "github", "url": "http://github.com/sponsors/adamlui" },
-    { "type": "ko-fi", "url": "https://ko-fi.com/adamlui" },
-    { "type": "paypal", "url": "https://paypal.me/adamlui" }
+    {
+      "type": "cashapp",
+      "url": "https://cash.app/$AdamLui"
+    },
+    {
+      "type": "github",
+      "url": "http://github.com/sponsors/adamlui"
+    },
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/adamlui"
+    },
+    {
+      "type": "paypal",
+      "url": "https://paypal.me/adamlui"
+    }
   ],
   "main": "dist/generate-pw.min.js",
   "files": [
