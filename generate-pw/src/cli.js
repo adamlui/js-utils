@@ -122,9 +122,9 @@ const pkgName = 'generate-pw',
             const localManifestPath = path.join(currentDir, 'package.json')
             if (fs.existsSync(localManifestPath)) {
                 const localManifest = require(localManifestPath)
-                localVer = ( localManifest.dependencies?.[pkgName]
-                          || localManifest.devDependencies?.[pkgName]
-                )?.match(/^[~^>=]?\d+\.\d+\.\d+$/)?.[0] || 'none'
+                localVer = (localManifest.dependencies?.[pkgName]
+                         || localManifest.devDependencies?.[pkgName])
+                    ?.match(/^[~^>=]?\d+\.\d+\.\d+$/)?.[1] || 'none'
                 break
             }
             currentDir = path.dirname(currentDir)
