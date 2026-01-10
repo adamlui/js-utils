@@ -73,7 +73,7 @@
             if (fs.existsSync(localManifestPath)) {
                 const localManifest = require(localManifestPath)
                 localVer = ( localManifest.dependencies?.[pkgName] || localManifest.devDependencies?.[pkgName])
-                    ?.match(/(\d+\.\d+\.\d+)/)[0] || 'none'
+                    ?.match(/^[~^>=]?\d+\.\d+\.\d+$/)[0] || 'none'
                 break
             }
             currentDir = path.dirname(currentDir)
