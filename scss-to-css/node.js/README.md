@@ -149,7 +149,7 @@ Boolean options:
  -S, --no-source-maps        Prevent source maps from being generated.
  -M, --no-minify             Disable minification of output CSS.
  -R, --no-recursion          Disable recursive file searching.
- -C, --clone-folders         Preserve folder structure in output directory
+ -C, --clone-folders         Preserve folder structure in output directory.
  -c, --copy                  Copy compiled CSS to clipboard instead of
                              writing to file if single source file is
                              processed.
