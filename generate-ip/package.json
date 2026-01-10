@@ -1,6 +1,6 @@
 {
   "name": "generate-ip",
-  "version": "2.4.5",
+  "version": "2.4.6",
   "description": "Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.",
   "author": {
     "name": "Adam Lui",
@@ -10,10 +10,22 @@
   "homepage": "https://generate-ip.org",
   "license": "MIT",
   "funding": [
-    { "type": "cashapp", "url": "https://cash.app/$AdamLui" },
-    { "type": "github", "url": "http://github.com/sponsors/adamlui" },
-    { "type": "ko-fi", "url": "https://ko-fi.com/adamlui" },
-    { "type": "paypal", "url": "https://paypal.me/adamlui" }
+    {
+      "type": "cashapp",
+      "url": "https://cash.app/$AdamLui"
+    },
+    {
+      "type": "github",
+      "url": "http://github.com/sponsors/adamlui"
+    },
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/adamlui"
+    },
+    {
+      "type": "paypal",
+      "url": "https://paypal.me/adamlui"
+    }
   ],
   "main": "dist/generate-ip.min.js",
   "files": [
