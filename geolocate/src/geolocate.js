@@ -13,7 +13,7 @@ async function geolocate(ips, options = {}) {
 
     // Init/validate IP(s)
     ips = Array.isArray(ips) ? ips : [ips] // normalize to array
-    ips[0] = ips[0] || await getOwnIP() // fill own IP if none passed
+    ips[0] ||= await getOwnIP() // fill own IP if none passed
     for (const ip of ips) {
         if (options.verbose) console.info(`geolocate() » Validating ${ip}...`)
         let ipIsValid
