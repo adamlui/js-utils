@@ -4,13 +4,12 @@ on:
   push:
     tags: [generate-pw*]
 
-permissions:
-  contents: read
-  id-token: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - uses: actions/checkout@v6.0.1
       - uses: actions/setup-node@v6.1.0

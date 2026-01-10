@@ -4,13 +4,12 @@ on:
   push:
     tags: ["*minify*", "*scss-to-css*"]
 
-permissions:
-  contents: read
-
 jobs:
   sync-latest-release:
     name: Sync latest release to adamlui/<app-repo>
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     env:
       REPO_SYNC_PAT: ${{ secrets.REPO_SYNC_PAT }}
     steps:
