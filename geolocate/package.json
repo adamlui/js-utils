@@ -60,9 +60,9 @@
     "url": "https://support.geolocatejs.org"
   },
   "dependencies": {
-    "generate-ip": "^2.4.5"
+    "generate-ip": "^2.4.6"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^1.8.6"
+    "@adamlui/minify.js": "^1.10.0"
   }
 }
