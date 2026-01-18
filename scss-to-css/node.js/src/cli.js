@@ -146,7 +146,7 @@
                 const cssCntSuffix = compileData.length > 1 ? 's' : ''
                 printIfNotQuiet(`\n${bg}Compilation complete!${nc}`)
                 printIfNotQuiet(`${bw}${compileData.length} CSS file${cssCntSuffix}`
-                    + ( !config.noSourceMaps ? ` + ${compileData.length} source map${cssCntSuffix}` : '' )
+                    +( !config.noSourceMaps ? ` + ${compileData.length} source map${cssCntSuffix}` : '' )
                     + ` generated.${nc}`)
             } else printIfNotQuiet(`\n${by}No SCSS files processed.${nc}`)
             if (failedPaths.length) {
@@ -176,7 +176,7 @@
                         outputDir = path.join(
                         path.dirname(srcPath), // path of file to be minified
                             /(?:src|s[ac]ss)$/.test(path.dirname(srcPath)) ? (
-                                '../' + ( outputArg || 'css' ) // + ../outputArg|css/ if in *(src|sass|scss)/
+                                '../' +( outputArg || 'css' ) // + ../outputArg|css/ if in *(src|sass|scss)/
                             ) : outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
                               : outputArg || 'css' // or path from folder outputArg or css/ if no outputArg passed
                         )

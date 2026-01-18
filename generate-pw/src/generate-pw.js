@@ -48,9 +48,9 @@ function generatePassword(options = {}) {
             console.info('generatePassword() » Initializing character set...')
         let pwCharset = options.charset?.toString() || ( // use passed [charset], or construct from options
             (options.numbers ? charsets.numbers : '')
-              + (options.symbols ? charsets.symbols : '')
-              + (options.lowercase ? charsets.lower : '')
-              + (options.uppercase ? charsets.upper : '')
+              +(options.symbols ? charsets.symbols : '')
+              +(options.lowercase ? charsets.lower : '')
+              +(options.uppercase ? charsets.upper : '')
         )
         if (pwCharset == '') // all flags false + no charset passed
             pwCharset = charsets.lower + charsets.upper // default to upper + lower

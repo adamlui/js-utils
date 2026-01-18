@@ -71,9 +71,9 @@ const pkgName = '@adamlui/geolocate',
               matchedInfoCmd = Object.keys(reArgs.infoCmds).find(cmd => reArgs.infoCmds[cmd].test(arg))
         if (matchedFlag) config[matchedFlag] = true
         else if (!matchedInfoCmd) {
-            console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: `
+            console.error(`\n${ br +( msgs.prefix_error || 'ERROR' )}: `
                 + `Arg [${arg}] ${ msgs.error_notRecognized || 'not recognized' }.${nc}`)
-            console.info(`\n${ by + ( msgs.info_validArgs || 'Valid arguments are below' )}.${nc}`)
+            console.info(`\n${ by +( msgs.info_validArgs || 'Valid arguments are below' )}.${nc}`)
             printHelpSections(['configOptions', 'infoCmds'])
             process.exit(1)
     }})
@@ -190,7 +190,7 @@ const pkgName = '@adamlui/geolocate',
             lines.push(!lines.length ? currentLine : currentLine.trimStart())
 
             // Print formatted msg
-            lines.forEach((line, idx) => console.info(prefix + (
+            lines.forEach((line, idx) => console.info(prefix +(
                 idx == 0 ? line // print 1st line unindented
                     : ' '.repeat(indent) + line // print subsequent lines indented
             )))

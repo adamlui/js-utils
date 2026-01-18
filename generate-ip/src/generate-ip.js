@@ -36,7 +36,7 @@ const ipv4 = {
         // Log/return final result
         if (options.verbose) {
             console.info(`ipv4.generate() » IPv4 address${ options.qty > 1 ? 'es' : '' } generated!`)
-            console.info('ipv4.generate() » ' + ( options.qty == 1 ? ipResult : ipResult.join(', ')))
+            console.info('ipv4.generate() » ' +( options.qty == 1 ? ipResult : ipResult.join(', ')))
         }
         return ipResult
     },
@@ -115,7 +115,7 @@ const ipv6 = {
         // Log/return final result
         if (options.verbose) {
             console.info(`ipv6.generate() » IPv6 address${ options.qty > 1 ? 'es' : '' } generated!`)
-            console.info('ipv6.generate() » ' + ( options.qty == 1 ? ipResult : ipResult.join(', ')))
+            console.info('ipv6.generate() » ' +( options.qty == 1 ? ipResult : ipResult.join(', ')))
         }
         return ipResult
     },
@@ -268,7 +268,7 @@ const mac = {
         // Log/return final result
         if (options.verbose) {
             console.info(`mac.generate() » MAC address${ options.qty > 1 ? 'es' : '' } generated!`)
-            console.info('mac.generate() » ' + ( options.qty == 1 ? macResult : macResult.join(', ')))
+            console.info('mac.generate() » ' +( options.qty == 1 ? macResult : macResult.join(', ')))
         }
         return macResult
     },

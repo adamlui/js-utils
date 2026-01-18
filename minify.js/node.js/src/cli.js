@@ -90,7 +90,7 @@ const pkgName = '@adamlui/minify.js',
         if (matchedFlag) config[matchedFlag] = true
         else if (matchedParamOption) {
             if (!/=.+/.test(arg)) {
-                console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: `
+                console.error(`\n${ br +( msgs.prefix_error || 'ERROR' )}: `
                     + `Arg [--${arg.replace(/-/g, '')}] `
                     + `${ msgs.error_noEqual || 'requires \'=\' followed by a value' }.${nc}`)
                 printHelpCmdAndDocURL() ; process.exit(1)
@@ -98,9 +98,9 @@ const pkgName = '@adamlui/minify.js',
             const value = arg.split('=')[1]
             config[matchedParamOption] = parseInt(value) || value
         } else if (!matchedInfoCmd) {
-            console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: `
+            console.error(`\n${ br +( msgs.prefix_error || 'ERROR' )}: `
                 + `Arg [${arg}] ${ msgs.error_notRecognized || 'not recognized' }.${nc}`)
-            console.info(`\n${ by + ( msgs.info_validArgs || 'Valid arguments are below' )}.${nc}`)
+            console.info(`\n${ by +( msgs.info_validArgs || 'Valid arguments are below' )}.${nc}`)
             printHelpSections(['flags', 'paramOptions', 'infoCmds'])
             process.exit(1)
     }})
@@ -140,7 +140,7 @@ const pkgName = '@adamlui/minify.js',
         if (inputArg && !fs.existsSync(inputPath)) {
             const jsInputPath = inputPath + '.js' // append '.js' in case ommitted from intended filename
             if (!fs.existsSync(jsInputPath)) {
-                console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: `
+                console.error(`\n${ br +( msgs.prefix_error || 'ERROR' )}: `
                     + `${ msgs.error_firstArgNotExist || 'First argument can only be an existing file or directory' }.`
                     + `\n${inputPath} ${ msgs.error_doesNotExist || 'does not exist' }.${nc}`)
                 console.info(`\n${bg}${ msgs.info_exampleValidCmd || 'Example valid command' }: `
@@ -158,9 +158,9 @@ const pkgName = '@adamlui/minify.js',
 
         if (config.dryRun) { // -n or --dry-run passed
             if (unminnedJSfiles.length) { // print files to be processed
-                console.info(`\n${by + ( msgs.info_filesToBeMinned || 'JS files to be minified' )}:${nc}`)
+                console.info(`\n${by +( msgs.info_filesToBeMinned || 'JS files to be minified' )}:${nc}`)
                 unminnedJSfiles.forEach(file => console.info(file))
-            } else console.info(`\n${by + ( msgs.info_noFilesWillBeMinned || 'No JS files will be minified' )}.${nc}`)
+            } else console.info(`\n${by +( msgs.info_noFilesWillBeMinned || 'No JS files will be minified' )}.${nc}`)
 
         } else { // actually minify JavaScript files
 
@@ -189,11 +189,11 @@ const pkgName = '@adamlui/minify.js',
 
             // Print minification summary
             if (minifyData?.length) {
-                printIfNotQuiet(`\n${bg + ( msgs.info_minComplete || 'Minification complete' )}!${nc}`)
+                printIfNotQuiet(`\n${bg +( msgs.info_minComplete || 'Minification complete' )}!${nc}`)
                 printIfNotQuiet(`${bw + minifyData.length} ${ msgs.info_file || 'file' }`
                     + `${ minifyData.length > 1 ? 's' : '' } ${ msgs.info_minified || 'minified' }.${nc}`)
             } else printIfNotQuiet(
-                `\n${by + ( msgs.info_noFilesProcessed || 'No unminified JavaScript files processed' )}.${nc}`)
+                `\n${by +( msgs.info_noFilesProcessed || 'No unminified JavaScript files processed' )}.${nc}`)
             if (failedPaths.length) {
                 printIfNotQuiet(
                     `\n${br + failedPaths.length} ${ msgs.info_file || 'file' }`
@@ -223,7 +223,7 @@ const pkgName = '@adamlui/minify.js',
                         outputDir = path.join(
                             path.dirname(srcPath), // path of file to be minified
                             ( /so?u?rce?$/.test(path.dirname(srcPath)) ? '../' : '' ) // + '../' if in if in *(src|source)/
-                          + ( outputArg.endsWith('.js') ? path.dirname(outputArg) // + path from file outputArg
+                          +( outputArg.endsWith('.js') ? path.dirname(outputArg) // + path from file outputArg
                                 : outputArg || 'min' ) // or path from folder outputArg or min/ if no outputArg passed
                         )
                         outputFilename = (
@@ -326,7 +326,7 @@ const pkgName = '@adamlui/minify.js',
             lines.push(!lines.length ? currentLine : currentLine.trimStart())
 
             // Print formatted msg
-            lines.forEach((line, idx) => console.info(prefix + (
+            lines.forEach((line, idx) => console.info(prefix +(
                 idx == 0 ? line // print 1st line unindented
                     : ' '.repeat(indent) + line // print subsequent lines indented
             )))

@@ -90,7 +90,7 @@ const pkgName = 'generate-pw',
         if (matchedFlag) config[matchedFlag] = true
         else if (matchedParamOption) {
             if (!/=.+/.test(arg)) {
-                console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: `
+                console.error(`\n${ br +( msgs.prefix_error || 'ERROR' )}: `
                     + `Arg [--${arg.replace(/-/g, '')}] `
                     + `${ msgs.error_noEqual || 'requires \'=\' followed by a value' }.${nc}`)
                 printHelpCmdAndDocURL() ; process.exit(1)
@@ -98,15 +98,15 @@ const pkgName = 'generate-pw',
             const value = arg.split('=')[1]
             config[matchedParamOption] = parseInt(value) || value
         } else if (!matchedInfoCmd) {
-            console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: `
+            console.error(`\n${ br +( msgs.prefix_error || 'ERROR' )}: `
                 + `Arg [${arg}] ${ msgs.error_notRecognized || 'not recognized' }.${nc}`)
-            console.info(`\n${ by + ( msgs.info_validArgs || 'Valid arguments are below' )}.${nc}`)
+            console.info(`\n${ by +( msgs.info_validArgs || 'Valid arguments are below' )}.${nc}`)
             printHelpSections(['paramOptions', 'flags', 'infoCmds'])
             process.exit(1)
     }})
     for (const numArgType of ['length', 'qty'])
         if (config[numArgType] && (isNaN(config[numArgType]) || config[numArgType] < 1)) {
-            console.error(`\n${ br + ( msgs.prefix_error || 'ERROR' )}: [${numArgType}] `
+            console.error(`\n${ br +( msgs.prefix_error || 'ERROR' )}: [${numArgType}] `
                 + `${ msgs.error_nonPositiveNum || 'argument can only be > 0' }.${nc}`)
             printHelpCmdAndDocURL() ; process.exit(1)
         }
@@ -218,7 +218,7 @@ const pkgName = 'generate-pw',
             lines.push(!lines.length ? currentLine : currentLine.trimStart())
 
             // Print formatted msg
-            lines.forEach((line, idx) => console.info(prefix + (
+            lines.forEach((line, idx) => console.info(prefix +(
                 idx == 0 ? line // print 1st line unindented
                     : ' '.repeat(indent) + line // print subsequent lines indented
             )))
