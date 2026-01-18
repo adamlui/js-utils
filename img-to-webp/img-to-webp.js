@@ -43,9 +43,9 @@ Homepage:     https://js-utils.org/img-to-webp
     console.log('Total images detected:  '
         + `${ pngFiles.length + jpgFiles.length } (${ pngFiles.length } PNG, ${ jpgFiles.length } JPG)`)
     console.log('Images compressed:      '
-        + `${ compressedPNGCount + compressedJPGCount } (${ compressedPNGCount } PNG, ${ compressedJPGCount } JPG)`)
+        + `${ compressedPNGCount + compressedJPGCount } (${compressedPNGCount} PNG, ${compressedJPGCount} JPG)`)
     console.log('Images skipped:         '
-        + `${ skippedPNGCount + skippedJPGCount } (${ skippedPNGCount } PNG, ${ skippedJPGCount } JPG)`)
+        + `${ skippedPNGCount + skippedJPGCount } (${skippedPNGCount} PNG, ${skippedJPGCount} JPG)`)
 
     // Define FUNCTIONS
 

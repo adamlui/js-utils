@@ -159,8 +159,8 @@ function compile(input, options = {}) {
               shebangIdx = code.indexOf('#!')
         if (shebangIdx >= 0) {
             const postShebangIdx = code.indexOf('\n', shebangIdx) + 1 // idx of 1st newline after shebang
-            return code.slice(0, postShebangIdx) + `/**\n${ commentBlock }\n */\n` + code.slice(postShebangIdx)
-        } else return `/**\n${ commentBlock }\n */\n${ code }`
+            return code.slice(0, postShebangIdx) + `/**\n${commentBlock}\n */\n` + code.slice(postShebangIdx)
+        } else return `/**\n${commentBlock}\n */\n${code}`
     }
 }
 
@@ -185,30 +185,30 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Define print functions
     const printValidOptions = () => {
-        console.info(`${ logPrefix }Valid options: [ ${strValidOptions} ]`)
-        console.info(`${ logPrefix }If omitted, default settings are: ${strDefaultOptions}`)
+        console.info(`${logPrefix}Valid options: [ ${strValidOptions} ]`)
+        console.info(`${logPrefix}If omitted, default settings are: ${strDefaultOptions}`)
     }
     const printDocURL = () => {
-        console.info(`${ logPrefix }For more help, please visit ${docURL}`) }
+        console.info(`${logPrefix}For more help, please visit ${docURL}`) }
 
     // Validate options
     if (typeof options != 'object') { // validate as obj
-        console.error(`${ logPrefix }ERROR: ${
+        console.error(`${logPrefix}ERROR: ${
             optionsPos == '0th' ? '[O' : optionsPos + ' arg [o'}ptions] can only be an object of key/values.`)
-        console.info(`${ logPrefix }Example valid call: ${exampleCall}`)
+        console.info(`${logPrefix}Example valid call: ${exampleCall}`)
         printValidOptions() ; printDocURL() ; return false
     }
     for (const key in options) { // validate each key
         if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
-            console.error(`${ logPrefix }ERROR: \`${key}\` is an invalid option.`)
+            console.error(`${logPrefix}ERROR: \`${key}\` is an invalid option.`)
             printValidOptions() ; printDocURL() ; return false
         } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
-            console.error(`${ logPrefix }ERROR: [${key}] option can only be \`true\` or \`false\`.`)
+            console.error(`${logPrefix}ERROR: [${key}] option can only be \`true\` or \`false\`.`)
             printDocURL() ; return false
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10)
             if (isNaN(options[key]) || options[key] < 1) {
-                console.error(`${ logPrefix }ERROR: [${key}] option can only be an integer > 0.`)
+                console.error(`${logPrefix}ERROR: [${key}] option can only be an integer > 0.`)
                 printDocURL() ; return false
             }
         } else if (arrayOptions.includes(key)) {
