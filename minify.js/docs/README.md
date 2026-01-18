@@ -66,7 +66,7 @@ $ minify-js [input_path] [output_path]
 ```
 
 - `[input_path]`: Path to JS file or directory containing JS files to be minified, relative to the current working directory.
-- `[output_path]`: Path to file or directory where minified files will be stored, relative to original file location (if not provided, `min/` is used).
+- `[output_path]`: Path to file or directory where minified files will be stored, relative to input root (if not provided, `min/` is used).
 
 **📝 Note:** If folders are passed, files will be processed recursively unless `-R` or `--no-recursion` is passed.
 
@@ -92,13 +92,13 @@ Minify all JavaScript files in the **current directory** (outputs to `min/`):
 $ minify-js
 ```
 
-Minify all JavaScript files in a **specific directory** (outputs to `path/to/your/directory/min/`):
+Minify all JavaScript files in a **specific directory** (outputs to `min/path/to/your/directory/`):
 
 ```
 $ minify-js path/to/your/directory
 ```
 
-Minify a **specific file** (outputs to `path/to/your/min/file.min.js`):
+Minify a **specific file** (outputs to `min/path/to/your/file.min.js`):
 
 ```
 $ minify-js path/to/your/file.js
@@ -124,7 +124,7 @@ Boolean options:
  -X, --no-filename-change             Disable changing file extension to .min.js
  -i, --rewrite-imports                Update import paths from .js to .min.js
  -c, --copy                           Copy minified code to clipboard instead of writing to file if single source file is processed.
- -C, --clone-folders                  Preserve folder structure in output directory.
+ -r, --relative-output                Output files relative to each source file instead of to input root.
  -q, --quiet                          Suppress all logging except errors.
 
 Parameter options:
@@ -204,7 +204,7 @@ Name             | Type    | Desciption                                         
 `dotFiles`       | Boolean | Include dotfiles in file search.                                         | `false`
 `mangle`         | Boolean | Shorten variable names (typically to one character).                     | `true`
 `rewriteImports` | Boolean | Update import paths from .js to .min.js                                  | `false`
-`cloneFolders`   | Boolean | Preserve folder structure in output directory.                           | `false`
+`relativeOutput` | Boolean | Output files relative to each source file instead of to input root.      | `false`
 `ignores`        | Array   | Files/dirs to exclude from minification.                                 | `[]`
 `comment`        | String  | Header comment to prepend to minified code. Separate by line using '\n'. | `''`
 
