@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": ".min.js වෙත ගොනු දිගුව වෙනස් කිරීම අක් ‍ රීය කරන්න" },
   "optionDesc_copy": { "message": "තනි මූලාශ් ‍ ර ගොනුව සැකසූ විට ගොනුව ලිවීම වෙනුවට කුඩා කේතය ක්ලිප් පුවරුවට පිටපත් කරන්න" },
   "optionDesc_cloneFolders": { "message": "ප් ‍ රතිදාන බහලුමේ බහලුම් ව් ‍ යුහය සුරකින්න" },
-  "optionDesc_noRewriteImports": { "message": ".js සිට .min.js දක්වා ආනයන මාර්ග යාවත්කාලීන කිරීම අක් ‍ රීය කරන්න" },
+  "optionDesc_rewriteImports": { "message": ".js සිට .min.js වෙත ආයාත මාර්ග යාවත්කාලීන කරන්න" },
   "optionDesc_quiet": { "message": "සියලු පිවිසුම් යටපත් කරන්න දෝෂ හැර" },
   "optionDesc_ignores": { "message": "Minification වලින් බැහැර කිරීමට ගොනු/බහලුම්" },
   "optionDesc_commentMain": { "message": "ශීර්ෂක අදහස් minified code වෙත යොමු කරන්න" },

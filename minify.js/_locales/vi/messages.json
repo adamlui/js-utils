@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Vô hiệu hóa thay đổi phần mở rộng tệp thành .min.js" },
   "optionDesc_copy": { "message": "Sao chép mã rút gọn vào khay nhớ tạm thay vì ghi vào tệp nếu tệp nguồn duy nhất được xử lý" },
   "optionDesc_cloneFolders": { "message": "Bảo tồn cấu trúc thư mục trong thư mục đầu ra" },
-  "optionDesc_noRewriteImports": { "message": "Vô hiệu hóa cập nhật đường dẫn nhập từ .js sang .min.js" },
+  "optionDesc_rewriteImports": { "message": "Cập nhật đường dẫn nhập từ .js sang .min.js" },
   "optionDesc_quiet": { "message": "Chặn tất cả ghi nhật ký ngoại trừ lỗi" },
   "optionDesc_ignores": { "message": "Các tệp/thư mục để loại trừ khỏi thu nhỏ" },
   "optionDesc_commentMain": { "message": "Gửi trước nhận xét tiêu đề cho mã đã rút gọn" },

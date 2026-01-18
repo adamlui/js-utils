@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Отключить изменение расширения файла на .min.js" },
   "optionDesc_copy": { "message": "Скопируйте уменьшенный код в буфер обмена вместо записи в файл, если обрабатывается один исходный файл" },
   "optionDesc_cloneFolders": { "message": "Сохранить структуру папок в выходном каталоге" },
-  "optionDesc_noRewriteImports": { "message": "Отключить обновление путей импорта из .js в .min.js" },
+  "optionDesc_rewriteImports": { "message": "Обновление путей импорта из .js в .min.js" },
   "optionDesc_quiet": { "message": "Подавление всех журналов, кроме ошибок" },
   "optionDesc_ignores": { "message": "Файлы/каталоги для исключения из минификации" },
   "optionDesc_commentMain": { "message": "Добавить комментарий заголовка к минифицированному коду" },

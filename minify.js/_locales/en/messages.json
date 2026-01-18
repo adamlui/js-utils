@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Disable changing file extension to .min.js" },
   "optionDesc_copy": { "message": "Copy minified code to clipboard instead of writing to file if single source file is processed" },
   "optionDesc_cloneFolders": { "message": "Preserve folder structure in output directory" },
-  "optionDesc_noRewriteImports": { "message": "Disable updating import paths from .js to .min.js" },
+  "optionDesc_rewriteImports": { "message": "Update import paths from .js to .min.js" },
   "optionDesc_quiet": { "message": "Suppress all logging except errors" },
   "optionDesc_ignores": { "message": "Files/directories to exclude from minification" },
   "optionDesc_commentMain": { "message": "Prepend header comment to minified code" },

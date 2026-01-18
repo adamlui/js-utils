@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Deaktiver endring av filtype til .min.js" },
   "optionDesc_copy": { "message": "Kopier forminsket kode til utklippstavlen i stedet for å skrive til filen hvis en enkelt kildefil behandles" },
   "optionDesc_cloneFolders": { "message": "Bevar mappestrukturen i utdatakatalogen" },
-  "optionDesc_noRewriteImports": { "message": "Deaktiver oppdatering av importstier fra .js til .min.js" },
+  "optionDesc_rewriteImports": { "message": "Oppdater importstier fra .js til .min.js" },
   "optionDesc_quiet": { "message": "Suppress all logging except errors" },
   "optionDesc_ignores": { "message": "Filer/kataloger som skal ekskluderes fra minifisering" },
   "optionDesc_commentMain": { "message": "Legg topptekstkommentar til forminsket kode" },

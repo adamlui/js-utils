@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "I-disable ang pagbag-o sa extension sa file sa .min.js" },
   "optionDesc_copy": { "message": "Kopyaha ang minified code sa clipboard imbis nga magsulat aron mag-file kung giproseso ang usa ka file nga gigikanan" },
   "optionDesc_cloneFolders": { "message": "Ipreserba ang istraktura sa folder sa direktoryo sa output" },
-  "optionDesc_noRewriteImports": { "message": "I-disable ang pag-update sa mga agianan sa pag-import gikan sa .js ngadto sa .min.js" },
+  "optionDesc_rewriteImports": { "message": "Pag-update sa mga agianan sa pag-import gikan sa .js ngadto sa .min.js" },
   "optionDesc_quiet": { "message": "Pugngan ang tanan nga pag-log gawas sa mga sayup" },
   "optionDesc_ignores": { "message": "Mga file/direktoryo nga dili iapil sa minification" },
   "optionDesc_commentMain": { "message": "Pag-andam sa komentaryo sa header sa minified code" },

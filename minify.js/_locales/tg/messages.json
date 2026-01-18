@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Тағйири густариши файлро ба .min.js ғайрифаъол созед" },
   "optionDesc_copy": { "message": "Нусхабардории коди миниётурашуда ба силули мухобиротӣ ба ҷои навиштан ба файл, агар файли ягонаи сарчашма коркард шуда бошад" },
   "optionDesc_cloneFolders": { "message": "Нигоҳ доштани сохтори папка дар феҳристи барориш" },
-  "optionDesc_noRewriteImports": { "message": "Paganahin ang pag-update ng mga path ng pag-import mula sa .js sa .min.js" },
+  "optionDesc_rewriteImports": { "message": "I-update ang mga pag-import ng mga path mula sa .js sa .min.js" },
   "optionDesc_quiet": { "message": "Ғайри хатогӣ ҳамаи қайдкуниҳоро пахш кунед" },
   "optionDesc_ignores": { "message": "Файлҳо/феҳристҳо барои истисно кардан аз минимализатсия" },
   "optionDesc_commentMain": { "message": "Name" },

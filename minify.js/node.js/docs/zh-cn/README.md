@@ -142,8 +142,8 @@ $ minify-js input_folder output_folder
  -D, --include-dotfiles               在文件搜索中包含点文件。
  -R, --no-recursion                   禁用递归文件搜索。
  -M, --no-mangle                      禁用修改名称。
- -X, --no-filename-change             禁止将文件扩展名更改为 .min.js。
- -I, --no-rewrite-imports             禁用将导入路径从 .js 更新为 .min.js 的功能。
+ -X, --no-filename-change             禁止将文件扩展名更改为 .min.js
+ -i, --rewrite-imports                将导入路径从 .js 更新为 .min.js
  -c, --copy                           如果处理单个源文件，则将缩小的代码复制到剪贴板而不是写入文件。
  -C, --clone-folders                  在输出目录中保留文件夹结构。
  -q, --quiet                          禁止除错误之外的所有日志记录。
@@ -224,7 +224,7 @@ minifyJS.minify(input, { dotFiles: true });
 `dotFolders`     | 布尔值 | 在文件搜索中包括点文件夹。                       | `false`
 `dotFiles`       | 布尔值 | 在文件搜索中包含点文件。                         | `false`
 `mangle`         | 布尔值 | 缩短变量名称（通常为一个字符）。                  | `true`
-`rewriteImports` | 布尔值 | 将导入路径从 .js 更新为 .min.js。                | `true`
+`rewriteImports` | 布尔值 | 将导入路径从 .js 更新为 .min.js                  | `false`
 `cloneFolders`   | 布尔值 | 在输出目录中保留文件夹结构。                      | `false`
 `ignores`        | 大批   | 要从压缩过程中排除的文件/目录。                   | `[]`
 `comment`        | 细绳   | 添加到缩小代码之前的标头注释。使用 '\n' 按行分隔。 | `''`

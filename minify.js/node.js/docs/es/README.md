@@ -142,8 +142,8 @@ Opciones booleanas:
  -D, --include-dotfiles               Incluya archivos de puntos en la búsqueda de archivos.
  -R, --no-recursion                   Deshabilite la búsqueda recursiva de archivos.
  -M, --no-mangle                      Disable mangling names.
- -X, --no-filename-change             Deshabilite el cambio de extensión de archivo a .min.js.
- -I, --no-rewrite-imports             Deshabilitar la actualización de las rutas de importación de .js a .min.js.
+ -X, --no-filename-change             Deshabilite el cambio de extensión de archivo a .min.js
+ -i, --rewrite-imports                Actualizar las rutas de importación de .js a .min.js
  -c, --copy                           Copie el código minimizado al portapapeles en lugar de escribirlo en un archivo si se procesa un único archivo fuente.
  -C, --clone-folders                  Conservar la estructura de carpetas en el directorio de salida.
  -q, --quiet                          Suprime todos los registros excepto los errores.
@@ -224,7 +224,7 @@ Nombre           | Tipo      | Descripción                                     
 `dotFolders`     | Booleano  | Incluya carpetas de puntos en la búsqueda de archivos.                                      | `false`
 `dotFiles`       | Booleano  | Incluya archivos de puntos en la búsqueda de archivos.                                      | `false`
 `mangle`         | Booleano  | Acorte los nombres de las variables (normalmente a un carácter).                            | `true`
-`rewriteImports` | Booleano  | Actualizar las rutas de importación de .js a .min.js.                                       | `true`
+`rewriteImports` | Booleano  | Actualizar las rutas de importación de .js a .min.js                                        | `false`
 `cloneFolders`   | Booleano  | Conservar la estructura de carpetas en el directorio de salida.                             | `false`
 `ignores`        | Formación | Archivos/directorios que se excluirán del proceso de minificación.                          | `[]`
 `comment`        | Cadena    | Comentario de encabezado para anteponer al código minimizado. Separe por línea usando '\n'. | `''`

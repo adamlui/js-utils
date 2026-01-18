@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Hoʻopau i ka hoʻololi ʻana i ka hoʻonui ʻana i ka faila iā .min.js" },
   "optionDesc_copy": { "message": "E kope i ka code liʻiliʻi i ka clipboard ma kahi o ke kākau ʻana i ka faila inā hoʻoili ʻia ka faila kumu hoʻokahi" },
   "optionDesc_cloneFolders": { "message": "E mālama i ka hoʻonohonoho waihona ma ka papa kuhikuhi hoʻopuka" },
-  "optionDesc_noRewriteImports": { "message": "E hoʻopau i ka hoʻohou ʻana i nā ala lawe mai mai .js a i .min.js" },
+  "optionDesc_rewriteImports": { "message": "Hoʻohou i nā ala lawe mai mai .js a i .min.js" },
   "optionDesc_quiet": { "message": "Kāohi i ka hoʻopaʻa inoa a pau koe nā hewa" },
   "optionDesc_ignores": { "message": "Nā faila/papa kuhikuhi e kāpae ʻia mai ka minification" },
   "optionDesc_commentMain": { "message": "E hoʻomākaukau i ka manaʻo poʻomanaʻo i ke code liʻiliʻi" },

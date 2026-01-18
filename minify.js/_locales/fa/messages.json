@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "تغییر پسوند فایل به .min.js را غیرفعال کنید" },
   "optionDesc_copy": { "message": "اگر فایل منبع واحد پردازش می شود، به جای نوشتن در فایل، کد کوچک شده را در کلیپ بورد کپی کنید" },
   "optionDesc_cloneFolders": { "message": "ساختار پوشه را در دایرکتوری خروجی حفظ کنید" },
-  "optionDesc_noRewriteImports": { "message": "غیرفعال کردن به‌روزرسانی مسیرهای واردات از .js به .min.js" },
+  "optionDesc_rewriteImports": { "message": "به‌روزرسانی مسیرهای واردات از .js به .min.js" },
   "optionDesc_quiet": { "message": "همه گزارشها به جز خطاها را سرکوب کنید" },
   "optionDesc_ignores": { "message": "فایل‌ها/دایرکتوری‌هایی که باید از فشرده‌سازی مستثنی شوند" },
   "optionDesc_commentMain": { "message": "نظر سرصفحه را به کد کوچک شده اضافه کنید" },

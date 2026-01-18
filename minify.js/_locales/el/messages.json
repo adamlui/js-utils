@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Απενεργοποίηση αλλαγής επέκτασης αρχείου σε .min.js" },
   "optionDesc_copy": { "message": "Αντιγραφή ελαχιστοποιημένου κώδικα στο πρόχειρο αντί για εγγραφή σε αρχείο εάν γίνεται επεξεργασία μεμονωμένου πηγαίου αρχείου" },
   "optionDesc_cloneFolders": { "message": "Διατήρηση δομής φακέλου στον κατάλογο εξόδου" },
-  "optionDesc_noRewriteImports": { "message": "Απενεργοποίηση ενημέρωσης διαδρομών εισαγωγής από .js σε .min.js" },
+  "optionDesc_rewriteImports": { "message": "Ενημέρωση διαδρομών εισαγωγής από .js σε .min.js" },
   "optionDesc_quiet": { "message": "Καταργήστε όλες τις καταγραφές εκτός από τα σφάλματα" },
   "optionDesc_ignores": { "message": "Αρχεία/κατάλογοι για εξαίρεση από την ελαχιστοποίηση" },
   "optionDesc_commentMain": { "message": "Προετοιμασία σχολίου κεφαλίδας σε ελαχιστοποιημένο κώδικα" },

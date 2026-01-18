@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Onemogući promjenu ekstenzije datoteke u .min.js" },
   "optionDesc_copy": { "message": "Kopirajte umanjeni kôd u međuspremnik umjesto pisanja u datoteku ako se obrađuje pojedinačna izvorna datoteka" },
   "optionDesc_cloneFolders": { "message": "Sačuvaj strukturu direktorija u izlaznom direktoriju" },
-  "optionDesc_noRewriteImports": { "message": "Onemogući ažuriranje putanja uvoza iz .js u .min.js" },
+  "optionDesc_rewriteImports": { "message": "Ažurirajte putanje uvoza iz .js u .min.js" },
   "optionDesc_quiet": { "message": "Zatvorite sve evidencije osim grešaka" },
   "optionDesc_ignores": { "message": "Datoteke/direktoriji za isključivanje iz minifikacije" },
   "optionDesc_commentMain": { "message": "Prependiraj komentar zaglavlja na umanjeni kôd" },

@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Poista tiedostopäätteen muuttaminen muotoon .min.js" },
   "optionDesc_copy": { "message": "Kopioi pienennetty koodi leikepöydälle sen sijaan, että kirjoittaisit tiedostoon, jos käsitellään yksittäistä lähdetiedostoa" },
   "optionDesc_cloneFolders": { "message": "Säilytä kansiorakenne lähtöhakemistossa" },
-  "optionDesc_noRewriteImports": { "message": "Poista käytöstä tuontipolkujen päivittäminen .js: stä .min.js: ään" },
+  "optionDesc_rewriteImports": { "message": "Päivitä tuontipolut .js: stä .min.js: ään" },
   "optionDesc_quiet": { "message": "Poista kaikki kirjaukset paitsi virheet" },
   "optionDesc_ignores": { "message": "Minifikaatiosta suljettavat tiedostot/hakemistot" },
   "optionDesc_commentMain": { "message": "Lisää otsikon kommentti pienennettyyn koodiin" },

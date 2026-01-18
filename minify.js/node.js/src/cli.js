@@ -70,7 +70,7 @@ const pkgName = '@adamlui/minify.js',
             'noRecursion': /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
             'noMangle': /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/,
             'noFilenameChange': /^--?(?:X|(?:disable|no)-?(?:file)?name-?change|(?:file)?name-?change=(?:false|0))$/,
-            'noRewriteImports': /^--?(?:I|(?:disable|no)-?rewrite-?imports|rewrite-?imports=(?:false|0))$/,
+            'rewriteImports': /^--?(?:i|rewrite-?imports?=?(?:true|1)?)$/,
             'cloneFolders': /^--?(?:C|clone-?folders?=?(?:true|1)?)$/,
             'copy': /^--?c(?:opy)?$/,
             'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
@@ -171,7 +171,7 @@ const pkgName = '@adamlui/minify.js',
                     verbose: !config.quietMode, mangle: !config.noMangle,
                     comment: config.comment?.replace(/\\n/g, '\n'), cloneFolders: true, recursive: !config.noRecursion,
                     dotFolders: !!config.includeDotFolders, dotFiles: !!config.includeDotFiles,
-                    rewriteImports: !config.noRewriteImports,
+                    rewriteImports: config.rewriteImports,
                     ignores: config.ignores ? config.ignores.split(',').map(item => item.trim()) : []
                 })
                 if (minifyResult) {
@@ -285,7 +285,7 @@ const pkgName = '@adamlui/minify.js',
                 ` -R, --no-recursion                  ${ msgs.optionDesc_noRecursion || 'Disable recursive file searching' }.`,
                 ` -M, --no-mangle                     ${ msgs.optionDesc_noMangle || 'Disable mangling names' }.`,
                 ` -X, --no-filename-change            ${ msgs.optionDesc_noFilenameChange || 'Disable changing file extension to .min.js' }`,
-                ` -I, --no-rewrite-imports            ${ msgs.optionDesc_noRewriteImports || 'Disable updating import paths from .js to .min.js' }.`,
+                ` -i, --rewrite-imports               ${ msgs.optionDesc_rewriteImports || 'Update import paths from .js to .min.js' }.`,
                 ` -c, --copy                          ${ msgs.optionDesc_copy || 'Copy minified code to clipboard instead of writing to file'
                                                                                + ' if single source file is processed' }.`,
                 ` -C, --clone-folders                 ${ msgs.optionDesc_cloneFolders || 'Preserve folder structure in output directory' }.`,

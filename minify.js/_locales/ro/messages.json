@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Dezactivați modificarea extensiei fișierului la .min.js" },
   "optionDesc_copy": { "message": "Copiați codul minificat în clipboard în loc să scrieți în fișier dacă este procesat un singur fișier sursă" },
   "optionDesc_cloneFolders": { "message": "Păstrați structura dosarului în directorul de ieșire" },
-  "optionDesc_noRewriteImports": { "message": "Dezactivați actualizarea căilor de import de la .js la .min.js" },
+  "optionDesc_rewriteImports": { "message": "Actualizați căile de import de la .js la .min.js" },
   "optionDesc_quiet": { "message": "Suprimați toate înregistrările, cu excepția erorilor" },
   "optionDesc_ignores": { "message": "Fișiere/directoare de exclus de la minimizare" },
   "optionDesc_commentMain": { "message": "Prependați comentariul antetului la codul minimizat" },

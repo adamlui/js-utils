@@ -79,15 +79,15 @@ function minify(input, options = {}) {
           exampleCall = `minify('assets/js', { recursive: false, mangle: false })`
 
     const defaultOptions = {
-        recursive: true,      // recursively search for nested files if dir path passed
-        verbose: true,        // enable logging
-        dotFolders: false,    // include dotfolders in file search
-        dotFiles: false,      // include dotfiles in file search
-        mangle: true,         // shorten var names (typically to one character)
-        rewriteImports: true, // update import paths from .js to .min.js
-        cloneFolders: false,  // preserve folder structure in output dir
-        ignores: [],          // files/dirs to exclude from minification
-        comment: ''           // header comment to prepend to minified code
+        recursive: true,       // recursively search for nested files if dir path passed
+        verbose: true,         // enable logging
+        dotFolders: false,     // include dotfolders in file search
+        dotFiles: false,       // include dotfiles in file search
+        mangle: true,          // shorten var names (typically to one character)
+        rewriteImports: false, // update import paths from .js to .min.js
+        cloneFolders: false,   // preserve folder structure in output dir
+        ignores: [],           // files/dirs to exclude from minification
+        comment: ''            // header comment to prepend to minified code
     }
 
     // Validate input

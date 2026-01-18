@@ -144,7 +144,7 @@ Boolean options:
  -R, --no-recursion                   Disable recursive file searching.
  -M, --no-mangle                      Disable mangling names.
  -X, --no-filename-change             Disable changing file extension to .min.js
- -I, --no-rewrite-imports             Disable updating import paths from .js to .min.js
+ -i, --rewrite-imports                Update import paths from .js to .min.js
  -c, --copy                           Copy minified code to clipboard instead
                                       of writing to file if single source file
                                       is processed.
@@ -228,7 +228,7 @@ Name             | Type    | Desciption                                         
 `dotFolders`     | Boolean | Include dotfolders in file search.                                       | `false`
 `dotFiles`       | Boolean | Include dotfiles in file search.                                         | `false`
 `mangle`         | Boolean | Shorten variable names (typically to one character).                     | `true`
-`rewriteImports` | Boolean | Update import paths from .js to .min.js                                  | `true`
+`rewriteImports` | Boolean | Update import paths from .js to .min.js                                  | `false`
 `cloneFolders`   | Boolean | Preserve folder structure in output directory.                           | `false`
 `ignores`        | Array   | Files/dirs to exclude from minification.                                 | `[]`
 `comment`        | String  | Header comment to prepend to minified code. Separate by line using '\n'. | `''`

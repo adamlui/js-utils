@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Kulepheretsa kusintha kwa fayilo ku .min.js" },
   "optionDesc_copy": { "message": "Koperani kachidindo minified kuti clipboard m 'malo kulemba file ngati limodzi gwero wapamwamba ndi kukonzedwa" },
   "optionDesc_cloneFolders": { "message": "Sungani dongosolo chikwatu mu linanena bungwe chikwatu" },
-  "optionDesc_noRewriteImports": { "message": "Kulepheretsa kusintha njira zoyendera kuchokera ku .js kupita ku .min.js" },
+  "optionDesc_rewriteImports": { "message": "Sinthani njira zoyendera kuchokera ku .js kupita ku .min.js" },
   "optionDesc_quiet": { "message": "Suppress all logging except errors" },
   "optionDesc_ignores": { "message": "Mafayilo/ma directories kuti asachotsedwe ku minification" },
   "optionDesc_commentMain": { "message": "Prepend mutu ndemanga kuti minified kachidindo" },

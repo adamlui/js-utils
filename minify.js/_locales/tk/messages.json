@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Faýlyň uzynlygyny .min.js-de üýtget" },
   "optionDesc_copy": { "message": "Eger bir esbap faýly işlenýän bolsa, onda faýly ýazmakdan gaýdyp, kiçigöwünli kody klipbordda nusgalamak" },
   "optionDesc_cloneFolders": { "message": "Çykyş katalogynda kagyzyň gurluşygyny sakla" },
-  "optionDesc_noRewriteImports": { "message": ".js-den .min.js-e äkidilýän ýollary üýtget" },
+  "optionDesc_rewriteImports": { "message": ".js-den .min.js-e import ýollaryny täzeden günle" },
   "optionDesc_quiet": { "message": "Ýalňyşlyklardan başga ähli ýalňyşlyklary ýok etmek" },
   "optionDesc_ignores": { "message": "Minifikasyýadan çykarylan faýllar/direktoriýalar" },
   "optionDesc_commentMain": { "message": "Minified code üçin baştutanlyk pikirini taýýarlaň" },

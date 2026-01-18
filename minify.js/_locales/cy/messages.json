@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Analluogi newid estyniad ffeil i .min.js" },
   "optionDesc_copy": { "message": "Copïo cod mân i'r clipfwrdd yn lle ysgrifennu i ffeil os yw ffeil ffynhonnell sengl yn cael ei phrosesu" },
   "optionDesc_cloneFolders": { "message": "Cadw strwythur plygell yn y cyfeiriadur allbwn" },
-  "optionDesc_noRewriteImports": { "message": "Analluogi diweddaru llwybrau mewnforio o .js i .min.js" },
+  "optionDesc_rewriteImports": { "message": "Diweddaru llwybrau mewnforio o .js i .min.js" },
   "optionDesc_quiet": { "message": "Atal pob cofnod ac eithrio gwallau" },
   "optionDesc_ignores": { "message": "Ffeiliau/cyfeiriaduron i'w heithrio o minification" },
   "optionDesc_commentMain": { "message": "Rhagosod sylw pennyn i god mân" },

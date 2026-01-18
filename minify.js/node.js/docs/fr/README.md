@@ -142,8 +142,8 @@ Options booléennes:
  -D, --include-dotfiles               Incluez les fichiers cachés dans la recherche de fichiers.
  -R, --no-recursion                   Désactivez la recherche récursive de fichiers.
  -M, --no-mangle                      Désactivez la modification des noms.
- -X, --no-filename-change             Désactivez la modification de l'extension de fichier en .min.js.
- -I, --no-rewrite-imports             Désactiver la mise à jour des chemins d'importation de .js à .min.js.
+ -X, --no-filename-change             Désactivez la modification de l'extension de fichier en .min.js
+ -i, --rewrite-imports                Mettre à jour les chemins d'importation de .js à .min.js
  -c, --copy                           Copiez le code minifié dans le presse-papiers au lieu d'écrire dans un fichier si un fichier source unique est traité.
  -C, --clone-folders                  Conserver la structure des dossiers dans le répertoire de sortie.
  -q, --quiet                          Supprime toute la journalisation, à l'exception des erreurs.
@@ -224,7 +224,7 @@ Nom              | Taper   | Description                                        
 `dotFolders`     | Boolean | Inclure les dossiers cachés dans la recherche de fichiers.                               | `false`
 `dotFiles`       | Boolean | Incluez les fichiers cachés dans la recherche de fichiers.                               | `false`
 `mangle`         | Boolean | Raccourcissez les noms de variables (généralement à un caractère).                       | `true`
-`rewriteImports` | Boolean | Mettre à jour les chemins d'importation de .js à .min.js.                                | `true`
+`rewriteImports` | Boolean | Mettre à jour les chemins d'importation de .js à .min.js                                 | `false`
 `cloneFolders`   | Boolean | Conserver la structure des dossiers dans le répertoire de sortie.                        | `false`
 `ignores`        | Tableau | Fichiers/répertoires à exclure de la minification.                                       | `[]`
 `comment`        | String  | Commentaire d’en-tête à ajouter au code minifié. Séparez par ligne en utilisant '\n'.    | `''`

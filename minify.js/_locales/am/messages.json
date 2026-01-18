@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "ፋይል ቅጥያ ወደ .min.js መቀየር ያሰናክሉ" },
   "optionDesc_copy": { "message": "ነጠላ ምንጭ ፋይል ከተሰራ ፋይል ለማስገባት ከመጻፍ ይልቅ ወደ ክሊፕቦርድ የተቀናጀ ኮድ ይቅዱ" },
   "optionDesc_cloneFolders": { "message": "የውጤት ማውጫ ውስጥ አቃፊ መዋቅር ጠብቅ" },
-  "optionDesc_noRewriteImports": { "message": "ከ .js ወደ .min.js የማስመጣት መንገዶችን ማዘመን ያሰናክሉ" },
+  "optionDesc_rewriteImports": { "message": "ከ .js ወደ .min.js የማስመጣት መንገዶችን ያዘምኑ" },
   "optionDesc_quiet": { "message": "ከስህተቶች በስተቀር ሁሉንም የመግቢያዎች መሙላት" },
   "optionDesc_ignores": { "message": "የማዕድን ማውጫ/ማውጫዎች" },
   "optionDesc_commentMain": { "message": "ለማዕድን ኮድ የርዕስ አስተያየት ያዘጋጁ" },

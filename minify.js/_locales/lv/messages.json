@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Atspējot faila paplašinājuma maiņu uz .min.js" },
   "optionDesc_copy": { "message": "Kopējiet samazināto kodu starpliktuvē, nevis rakstiet failā, ja tiek apstrādāts viena avota fails" },
   "optionDesc_cloneFolders": { "message": "Saglabāt mapju struktūru izvades direktorijā" },
-  "optionDesc_noRewriteImports": { "message": "Atspējojiet importēšanas ceļu atjaunināšanu no .js uz .min.js" },
+  "optionDesc_rewriteImports": { "message": "Atjauniniet importēšanas ceļus no .js uz .min.js" },
   "optionDesc_quiet": { "message": "Aizliegt visu reģistrēšanu, izņemot kļūdas" },
   "optionDesc_ignores": { "message": "Faili/direktorijas, kas jāizslēdz no minimizēšanas" },
   "optionDesc_commentMain": { "message": "Pievienojiet galvenes komentāru samazinātajam kodam" },

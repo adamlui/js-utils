@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Cuir à comas leudachadh an fhaidhle gu .min.js" },
   "optionDesc_copy": { "message": "Dèan lethbhreac dhen chòd mhionaideach air an stòr - bhòrd an àite a bhith a 'sgrìobhadh dhan fhaidhle ma thèid am faidhle tùsail singilte a phròiseasadh" },
   "optionDesc_cloneFolders": { "message": "Glèidh structar a 'phasgain sa phasgan toraidh" },
-  "optionDesc_noRewriteImports": { "message": "Cuir à comas ùrachadh nan slighean ion - phortachaidh bho .js gu .min.js" },
+  "optionDesc_rewriteImports": { "message": "Ùraich slighean in - mhalairt bho .js gu .min.js" },
   "optionDesc_quiet": { "message": "Cuir às do gach logadh ach a - mhàin mearachdan" },
   "optionDesc_ignores": { "message": "Faidhlichean/pasganan airson an dùnadh a - mach à minification" },
   "optionDesc_commentMain": { "message": "Prepend beachd header gu còd mionaichte" },

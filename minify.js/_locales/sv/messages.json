@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Inaktivera ändring av filtillägg till .min.js" },
   "optionDesc_copy": { "message": "Kopiera minifierad kod till urklipp istället för att skriva till fil om en enda källfil bearbetas" },
   "optionDesc_cloneFolders": { "message": "Bevara mappstrukturen i utdatakatalogen" },
-  "optionDesc_noRewriteImports": { "message": "Inaktivera uppdatering av importvägar från .js till .min.js" },
+  "optionDesc_rewriteImports": { "message": "Uppdatera importvägar från .js till .min.js" },
   "optionDesc_quiet": { "message": "Dölj all loggning utom fel" },
   "optionDesc_ignores": { "message": "Filer/kataloger att utesluta från minifiering" },
   "optionDesc_commentMain": { "message": "Förbered rubrikkommentar till minifierad kod" },

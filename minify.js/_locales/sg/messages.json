@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Kangbi ni Kangbi ni Kangbi ni.min.js" },
   "optionDesc_copy": { "message": "A yeke wara kode so a leke ni na yâ ti clipboard ahon ti sû ni na yâ ti mbeni oko oko oko oko oko oko oko oko oko oko oko oko oko oko oko oko oko oko" },
   "optionDesc_cloneFolders": { "message": "A yeke wara ni na yâ ti mbeni mbeti so a sû na mbeti" },
-  "optionDesc_noRewriteImports": { "message": "A yeke zi lege ti importation na.js ti gue na.min.js" },
+  "optionDesc_rewriteImports": { "message": "Na yâ ti article so, a yeke wara tënë ti fango tënë na ndo ti Internet." },
   "optionDesc_quiet": { "message": "A yeke kanga lege na azo kue ti sara ye na lege ni ape me a yeke gi na lege ni" },
   "optionDesc_ignores": { "message": "A-file/a-directory ti kanga lege na minification" },
   "optionDesc_commentMain": { "message": "Prepend header comment na minzi kode" },

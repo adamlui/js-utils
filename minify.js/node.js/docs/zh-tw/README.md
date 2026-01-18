@@ -143,6 +143,7 @@ $ minify-js input_folder output_folder
  -R, --no-recursion                   禁用遞歸文件搜尋。
  -M, --no-mangle                      禁用修改名稱。
  -X, --no-filename-change             禁止將檔案副檔名更改為 .min.js
+ -i, --rewrite-imports                將導入路徑從 .js 更新為 .min.js
  -c, --copy                           如果處理單一來源文件，則將縮小的程式碼複製到剪貼簿而不是寫入文件。
  -C, --clone-folders                  保留輸出目錄中的資料夾結構。
  -q, --quiet                          禁止除錯誤之外的所有日誌記錄。
@@ -223,7 +224,7 @@ minifyJS.minify(input, { dotFiles: true });
 `dotFolders`     | 布林值 | 在文件搜尋中包含點資料夾。                         | `false`
 `dotFiles`       | 布林值 | 在文件搜尋中包含點文件。                           | `false`
 `mangle`         | 布林值 | 縮短變數名稱（通常為一個字元）。                    | `true`
-`rewriteImports` | 布林值 | 將導入路徑從 .js 更新為 .min.js。                  | `true`
+`rewriteImports` | 布林值 | 將導入路徑從 .js 更新為 .min.js                    | `false`
 `cloneFolders`   | 布林值 | 保留輸出目錄中的資料夾結構。                        | `false`
 `ignores`        | 大批   | 要排除在壓縮之外的檔案/目錄。                       | `[]`
 `comment`        | 細繩   | 加入到縮小程式碼之前的標頭註解。使用 '\n' 按行分隔。 | `''`

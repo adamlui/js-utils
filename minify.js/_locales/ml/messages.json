@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": ".min.js ലേക്ക് ഫയൽ എക്സ്റ്റൻഷൻ മാറ്റുന്നത് അപ്രാപ്തമാക്കുക" },
   "optionDesc_copy": { "message": "ഒരൊറ്റ ഉറവിട ഫയൽ പ്രോസസ്സ് ചെയ്യുകയാണെങ്കിൽ ഫയലിലേക്ക് എഴുതുന്നതിനുപകരം മിനിഫൈഡ് കോഡ് ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തുക" },
   "optionDesc_cloneFolders": { "message": "ഔട്ട്പുട്ട് ഡയറക്ടറിയിൽ ഫോൾഡർ ഘടന സംരക്ഷിക്കുക" },
-  "optionDesc_noRewriteImports": { "message": ".js മുതൽ .min.js വരെയുള്ള ഇറക്കുമതി പാതകൾ അപ്‌ഡേറ്റ് ചെയ്യുന്നത് അപ്രാപ്തമാക്കുക" },
+  "optionDesc_rewriteImports": { "message": ".js-ൽ നിന്ന് .min.js ലേക്ക് ഇറക്കുമതി പാതകൾ അപ്‌ഡേറ്റ് ചെയ്യുക" },
   "optionDesc_quiet": { "message": "പിശകുകൾ ഒഴികെ എല്ലാ ലോഗിംഗും അടിച്ചമർത്തുക" },
   "optionDesc_ignores": { "message": "മിനിഫിക്കേഷനിൽ നിന്ന് ഒഴിവാക്കേണ്ട ഫയലുകൾ/ഡയറക്ടറികൾ" },
   "optionDesc_commentMain": { "message": "മിനിഫൈഡ് കോഡിലേക്ക് ഹെഡർ അഭിപ്രായം മുൻകൂട്ടി തയ്യാറാക്കുക" },

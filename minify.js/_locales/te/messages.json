@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": ".min.jsకు ఫైల్ పొడిగింపును మార్చడాన్ని నిలిపివేయండి" },
   "optionDesc_copy": { "message": "సింగిల్ సోర్స్ ఫైల్ ప్రాసెస్ చేయబడితే ఫైల్ ‌ కు రాయడానికి బదులుగా మినిఫైడ్ కోడ్ ‌ ను క్లిప్ ‌ బోర్డ్ ‌ కు కాపీ చేయండి" },
   "optionDesc_cloneFolders": { "message": "అవుట్ ‌ పుట్ డైరెక్టరీలో ఫోల్డర్ నిర్మాణాన్ని భద్రపరచండి" },
-  "optionDesc_noRewriteImports": { "message": ".js నుండి .min.js వరకు దిగుమతి మార్గాలను అప్ ‌ డేట్ చేయడం నిలిపివేయండి" },
+  "optionDesc_rewriteImports": { "message": ".js నుండి .min.js వరకు దిగుమతి మార్గాలను అప్ ‌ డేట్ చేయండి" },
   "optionDesc_quiet": { "message": "లోపాలు మినహా అన్ని లాగింగ్ ‌ లను అణచివేయండి" },
   "optionDesc_ignores": { "message": "మినిఫికేషన్ నుండి మినహాయించాల్సిన ఫైల్స్/డైరెక్టరీలు" },
   "optionDesc_commentMain": { "message": "మినిఫైడ్ కోడ్ ‌ కు హెడర్ వ్యాఖ్యను సిద్ధం చేయండి" },

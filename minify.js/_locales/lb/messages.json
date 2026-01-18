@@ -39,7 +39,7 @@
   "optionDesc_noFilenameChange": { "message": "Dateiverlängerung zu .min.js deaktivieren" },
   "optionDesc_copy": { "message": "Kopéiert minifizéiert Code op Clipboard anstatt op Datei ze schreiwen wann eng Quell Datei veraarbecht gëtt" },
   "optionDesc_cloneFolders": { "message": "Ordnerstruktur am Ausgabverzeechnes späicheren" },
-  "optionDesc_noRewriteImports": { "message": "Aktualiséiert d'Importweeër vun .js op .min.js" },
+  "optionDesc_rewriteImports": { "message": "Aktualiséiert Importweeër vu .js op .min.js" },
   "optionDesc_quiet": { "message": "Ënnerdréckt all Umeldung ausser Feeler" },
   "optionDesc_ignores": { "message": "Dateien/Verzeechnes aus der Minifikatioun auszeschléissen" },
   "optionDesc_commentMain": { "message": "Prevent Header Kommentar zu Minified Code" },
