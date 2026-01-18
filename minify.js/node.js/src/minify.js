@@ -114,19 +114,16 @@ function minify(input, options = {}) {
             return { code: minifyResult.code, srcPath: path.resolve(process.cwd(), input),
                      error: minifyResult.error }
         } else { // dir path passed
-            const minifyResult = findJS(input, { recursive: options.recursive, verbose: options.verbose,
-                                                 dotFolders: options.dotFolders, dotFiles: options.dotFiles,
-                                                 ignores: options.ignores
-                })?.map(jsPath => { // minify found JS files
-                    if (options.verbose) console.info(`minify() » ** Minifying ${jsPath}...`)
-                    const srcCode = fs.readFileSync(jsPath, 'utf8'),
-                          minifyResult = uglifyJS.minify(srcCode, minifyOptions)
-                    let relPath
-                    if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
-                    if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`)
-                    if (options.cloneFolders) relPath = path.relative(path.resolve(process.cwd(), input), jsPath)
-                    return { code: minifyResult.code, srcPath: jsPath, relPath, error: minifyResult.error }
-                }).filter(data => !data.error) // filter out failed minifications
+            const minifyResult = findJS(input, options)?.map(jsPath => { // minify found JS files
+                if (options.verbose) console.info(`minify() » ** Minifying ${jsPath}...`)
+                const srcCode = fs.readFileSync(jsPath, 'utf8'),
+                      minifyResult = uglifyJS.minify(srcCode, minifyOptions)
+                let relPath
+                if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
+                if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`)
+                if (options.cloneFolders) relPath = path.relative(path.resolve(process.cwd(), input), jsPath)
+                return { code: minifyResult.code, srcPath: jsPath, relPath, error: minifyResult.error }
+            }).filter(data => !data.error) // filter out failed minifications
             if (options.verbose) {
                 if (minifyResult.length && typeof window != 'undefined') console.info(
                     'minify() » Minification complete! Check returned object.')
@@ -206,10 +203,9 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
         printValidOptions() ; printDocURL() ; return false
     }
     for (const key in options) { // validate each key
-        if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
-            console.error(`${ logPrefix }ERROR: \`${key}\` is an invalid option.`)
-            printValidOptions() ; printDocURL() ; return false
-        } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
+        if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key))
+            continue // to next key due to unused option
+        else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
             console.error(`${ logPrefix }ERROR: [${key}] option can only be \`true\` or \`false\`.`)
             printDocURL() ; return false
         } else if (integerOptions.includes(key)) {
