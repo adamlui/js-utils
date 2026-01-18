@@ -171,7 +171,7 @@ const pkgName = '@adamlui/minify.js',
                     verbose: !config.quietMode, mangle: !config.noMangle,
                     comment: config.comment?.replace(/\\n/g, '\n'), cloneFolders: true, recursive: !config.noRecursion,
                     dotFolders: !!config.includeDotFolders, dotFiles: !!config.includeDotFiles,
-                    rewriteImports: config.rewriteImports,
+                    rewriteImports: !!config.rewriteImports,
                     ignores: config.ignores ? config.ignores.split(',').map(item => item.trim()) : []
                 })
                 if (minifyResult) {
