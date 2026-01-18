@@ -168,7 +168,7 @@ const pkgName = '@adamlui/minify.js',
             const failedPaths = [] ; let minifyData = []
             if (!config.relativeOutput && fs.statSync(inputPath).isDirectory()) {
                 const minifyResult = minifyJS.minify(inputPath, {
-                    verbose: !config.quietMode, mangle: !config.noMangle,
+                    verbose: false, mangle: !config.noMangle,
                     comment: config.comment?.replace(/\\n/g, '\n'), relativeOutput: false,
                     recursive: !config.noRecursion, dotFolders: !!config.includeDotFolders,
                     dotFiles: !!config.includeDotFiles, rewriteImports: !!config.rewriteImports,
