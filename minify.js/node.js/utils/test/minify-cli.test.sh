@@ -37,7 +37,7 @@ file2_actual=$(< "$minifyjs_root/$output_arg/nested/dir/file2.min.js")
 
 # Cleanup generated files/folders
 echo "> Cleaning up generated files/folders..."
-rm -rf "$minifyjs_root/${output_arg%%/*}"
+rm -rf "${minifyjs_root:?}/${output_arg%%/*}"
 
 # Print test results
 if [ "$file1_actual" = "$file1_expected" ] && [ "$file2_actual" = "$file2_expected" ] ; then
