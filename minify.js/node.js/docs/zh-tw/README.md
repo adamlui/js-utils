@@ -87,7 +87,7 @@ $ minify-js [input_path] [output_path]
 ```
 
 - `[input_path]`: 相對於目前工作目錄的 JS 檔案或包含要縮小的 JS 檔案的目錄的路徑。
-- `[output_path]`: 將儲存縮小檔案的檔案或目錄的路徑，相對於原始檔案位置（如果未提供，則使用 `min/`）。
+- `[output_path]`: 儲存壓縮後檔案的檔案或目錄路徑，相對於輸入檔案的根目錄（如果未提供，則使用 `min/`）。
 
 **📝 注意:** 如果传递文件夹，文件将被递归处理，除非传递 `-R` 或 `--no-recursion`。
 
@@ -113,13 +113,13 @@ $ minify-js [input_path] [output_path]
 $ minify-js
 ```
 
-縮小**特定目錄**中的所有 JavaScript 檔案（輸出到 `path/to/your/directory/min/`）：
+縮小**特定目錄**中的所有 JavaScript 檔案（輸出到 `min/path/to/your/directory/`）：
 
 ```
 $ minify-js path/to/your/directory
 ```
 
-縮小**特定檔案**（輸出到 `path/to/your/min/file.min.js`）：
+縮小**特定檔案**（輸出到 `min/path/to/your/file.min.js`）：
 
 ```
 $ minify-js path/to/your/file.js
@@ -145,7 +145,7 @@ $ minify-js input_folder output_folder
  -X, --no-filename-change             禁止將檔案副檔名更改為 .min.js
  -i, --rewrite-imports                將導入路徑從 .js 更新為 .min.js
  -c, --copy                           如果處理單一來源文件，則將縮小的程式碼複製到剪貼簿而不是寫入文件。
- -C, --clone-folders                  保留輸出目錄中的資料夾結構。
+ -r, --relative-output                輸出檔案相對於每個來源檔案的路徑，而不是相對於輸入檔案的根目錄。
  -q, --quiet                          禁止除錯誤之外的所有日誌記錄。
 
 參數選項：
@@ -217,17 +217,17 @@ minifyJS.minify(input, { dotFiles: true });
 
 可用的參數（及其預設設定）是：
 
-姓名             | 類型   | 描述                                             | 預設值
------------------|-------|--------------------------------------------------|--------
-`recursive`      | 布林值 | 如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。              | `true`
-`verbose`        | 布林值 | 在控制台/終端機中顯示日誌記錄。                    | `true`
-`dotFolders`     | 布林值 | 在文件搜尋中包含點資料夾。                         | `false`
-`dotFiles`       | 布林值 | 在文件搜尋中包含點文件。                           | `false`
-`mangle`         | 布林值 | 縮短變數名稱（通常為一個字元）。                    | `true`
-`rewriteImports` | 布林值 | 將導入路徑從 .js 更新為 .min.js                    | `false`
-`cloneFolders`   | 布林值 | 保留輸出目錄中的資料夾結構。                        | `false`
-`ignores`        | 大批   | 要排除在壓縮之外的檔案/目錄。                       | `[]`
-`comment`        | 細繩   | 加入到縮小程式碼之前的標頭註解。使用 '\n' 按行分隔。 | `''`
+姓名             | 類型   | 描述                                                       | 預設值
+-----------------|-------|------------------------------------------------------------|--------
+`recursive`      | 布林值 | 如果傳遞目錄路徑，則遞歸搜尋嵌套檔案。                        | `true`
+`verbose`        | 布林值 | 在控制台/終端機中顯示日誌記錄。                              | `true`
+`dotFolders`     | 布林值 | 在文件搜尋中包含點資料夾。                                   | `false`
+`dotFiles`       | 布林值 | 在文件搜尋中包含點文件。                                     | `false`
+`mangle`         | 布林值 | 縮短變數名稱（通常為一個字元）。                              | `true`
+`rewriteImports` | 布林值 | 將導入路徑從 .js 更新為 .min.js                              | `false`
+`relativeOutput` | 布林值 | 輸出檔案相對於每個來源檔案的路徑，而不是相對於輸入檔案的根目錄。 | `false`
+`ignores`        | 大批   | 要排除在壓縮之外的檔案/目錄。                                 | `[]`
+`comment`        | 細繩   | 加入到縮小程式碼之前的標頭註解。使用 '\n' 按行分隔。            | `''`
 
 #
 

@@ -87,7 +87,7 @@ $ minify-js [ruta_entrada] [ruta_salida]
 ```
 
 - `[ruta_entrada]`: Ruta al archivo JS o al directorio que contiene los archivos JS que se van a minimizar, en relación con el directorio de trabajo actual.
-- `[ruta_salida]`: Ruta al archivo o directorio donde se almacenarán los archivos minimizados, en relación con la ubicación del archivo original (si no se proporciona, se utiliza `min/`).
+- `[ruta_salida]`: Ruta al archivo o directorio donde se almacenarán los archivos minificados, relativa a la carpeta raíz de entrada (si no se especifica, se usa `min/`).
 
 **📝 Nota:** Si se pasan carpetas, los archivos se procesarán de forma recursiva a menos que se pase `-R` o `--no-recursion`.
 
@@ -113,13 +113,13 @@ Minimice todos los archivos JavaScript en el **directorio actual** (salidas a `m
 $ minify-js
 ```
 
-Minimice todos los archivos JavaScript en un **directorio específico** (salidas a `ruta/a/su/directorio/min/`):
+Minimice todos los archivos JavaScript en un **directorio específico** (salidas a `min/ruta/a/su/directorio/`):
 
 ```
 $ minify-js ruta/a/su/directorio
 ```
 
-Minimice un **archivo específico** (salidas a `ruta/a/su/min/archivo.min.js`):
+Minimice un **archivo específico** (salidas a `min/ruta/a/su/archivo.min.js`):
 
 ```
 $ minify-js ruta/a/su/archivo.js
@@ -145,7 +145,7 @@ Opciones booleanas:
  -X, --no-filename-change             Deshabilite el cambio de extensión de archivo a .min.js
  -i, --rewrite-imports                Actualizar las rutas de importación de .js a .min.js
  -c, --copy                           Copie el código minimizado al portapapeles en lugar de escribirlo en un archivo si se procesa un único archivo fuente.
- -C, --clone-folders                  Conservar la estructura de carpetas en el directorio de salida.
+ -r, --relative-output                Los archivos de salida se generan en relación con cada archivo de origen en lugar de con la carpeta raíz de entrada.
  -q, --quiet                          Suprime todos los registros excepto los errores.
 
 Opciones de parámetros:
@@ -217,17 +217,17 @@ minifyJS.minify(entrada, { dotFiles: true });
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:
 
-Nombre           | Tipo      | Descripción                                                                                 | Valor por defecto
------------------|-----------|---------------------------------------------------------------------------------------------|-------------------
-`recursive`      | Booleano  | Busque recursivamente archivos anidados si se pasa la ruta del directorio.                  | `true`
-`verbose`        | Booleano  | Mostrar registros en la consola/terminal.                                                   | `true`
-`dotFolders`     | Booleano  | Incluya carpetas de puntos en la búsqueda de archivos.                                      | `false`
-`dotFiles`       | Booleano  | Incluya archivos de puntos en la búsqueda de archivos.                                      | `false`
-`mangle`         | Booleano  | Acorte los nombres de las variables (normalmente a un carácter).                            | `true`
-`rewriteImports` | Booleano  | Actualizar las rutas de importación de .js a .min.js                                        | `false`
-`cloneFolders`   | Booleano  | Conservar la estructura de carpetas en el directorio de salida.                             | `false`
-`ignores`        | Formación | Archivos/directorios que se excluirán del proceso de minificación.                          | `[]`
-`comment`        | Cadena    | Comentario de encabezado para anteponer al código minimizado. Separe por línea usando '\n'. | `''`
+Nombre           | Tipo      | Descripción                                                                                                          | Valor por defecto
+-----------------|-----------|----------------------------------------------------------------------------------------------------------------------|-------------------
+`recursive`      | Booleano  | Busque recursivamente archivos anidados si se pasa la ruta del directorio.                                           | `true`
+`verbose`        | Booleano  | Mostrar registros en la consola/terminal.                                                                            | `true`
+`dotFolders`     | Booleano  | Incluya carpetas de puntos en la búsqueda de archivos.                                                               | `false`
+`dotFiles`       | Booleano  | Incluya archivos de puntos en la búsqueda de archivos.                                                               | `false`
+`mangle`         | Booleano  | Acorte los nombres de las variables (normalmente a un carácter).                                                     | `true`
+`rewriteImports` | Booleano  | Actualizar las rutas de importación de .js a .min.js                                                                 | `false`
+`relativeOutput` | Booleano  | Los archivos de salida se generan en relación con cada archivo de origen en lugar de con la carpeta raíz de entrada. | `false`
+`ignores`        | Formación | Archivos/directorios que se excluirán del proceso de minificación.                                                   | `[]`
+`comment`        | Cadena    | Comentario de encabezado para anteponer al código minimizado. Separe por línea usando '\n'.                          | `''`
 
 #
 

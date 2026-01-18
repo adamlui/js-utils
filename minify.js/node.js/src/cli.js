@@ -71,7 +71,7 @@ const pkgName = '@adamlui/minify.js',
             'noMangle': /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/,
             'noFilenameChange': /^--?(?:X|(?:disable|no)-?(?:file)?name-?change|(?:file)?name-?change=(?:false|0))$/,
             'rewriteImports': /^--?(?:i|rewrite-?imports?=?(?:true|1)?)$/,
-            'cloneFolders': /^--?(?:C|clone-?folders?=?(?:true|1)?)$/,
+            'relativeOutput': /^--?(?:r|relative-?output?=?(?:true|1)?)$/,
             'copy': /^--?c(?:opy)?$/,
             'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
         },
@@ -166,12 +166,12 @@ const pkgName = '@adamlui/minify.js',
 
             // Build array of minification data
             const failedPaths = [] ; let minifyData = []
-            if (config.cloneFolders && fs.statSync(inputPath).isDirectory()) {
+            if (!config.relativeOutput && fs.statSync(inputPath).isDirectory()) {
                 const minifyResult = minifyJS.minify(inputPath, {
                     verbose: !config.quietMode, mangle: !config.noMangle,
-                    comment: config.comment?.replace(/\\n/g, '\n'), cloneFolders: true, recursive: !config.noRecursion,
-                    dotFolders: !!config.includeDotFolders, dotFiles: !!config.includeDotFiles,
-                    rewriteImports: !!config.rewriteImports,
+                    comment: config.comment?.replace(/\\n/g, '\n'), relativeOutput: false,
+                    recursive: !config.noRecursion, dotFolders: !!config.includeDotFolders,
+                    dotFiles: !!config.includeDotFiles, rewriteImports: !!config.rewriteImports,
                     ignores: config.ignores ? config.ignores.split(',').map(item => item.trim()) : []
                 })
                 if (minifyResult) {
@@ -214,17 +214,16 @@ const pkgName = '@adamlui/minify.js',
                     `\n${ msgs.info_writing || 'Writing to file' }${ minifyData?.length > 1 ? 's' : '' }...`)
                 minifyData?.forEach(({ code, srcPath, relPath }) => {
                     let outputDir, outputFilename
-                    if (config.cloneFolders && relPath && outputArg) { // preserve folder structure
-                        const outputPath = path.resolve(process.cwd(), outputArg),
+                    if (!config.relativeOutput && relPath) { // preserve folder structure
+                        const outputPath = path.resolve(process.cwd(), outputArg || 'min'),
                               relativeDir = path.dirname(relPath)
                         outputDir = relativeDir != '.' ? path.join(outputPath, relativeDir) : outputPath
                         outputFilename = path.basename(srcPath, '.js') + `${ config.noFilenameChange ? '' : '.min' }.js`
                     } else {
                         outputDir = path.join(
                             path.dirname(srcPath), // path of file to be minified
-                            ( /so?u?rce?$/.test(path.dirname(srcPath)) ? '../' : '' ) // + '../' if in if in *(src|source)/
-                          +( outputArg.endsWith('.js') ? path.dirname(outputArg) // + path from file outputArg
-                                : outputArg || 'min' ) // or path from folder outputArg or min/ if no outputArg passed
+                            outputArg.endsWith('.js') ? path.dirname(outputArg) // + path from file outputArg
+                                : outputArg || 'min' // or path from folder outputArg or min/ if no outputArg passed
                         )
                         outputFilename = (
                             outputArg.endsWith('.js') && inputArg.endsWith('.js')
@@ -288,7 +287,7 @@ const pkgName = '@adamlui/minify.js',
                 ` -i, --rewrite-imports               ${ msgs.optionDesc_rewriteImports || 'Update import paths from .js to .min.js' }.`,
                 ` -c, --copy                          ${ msgs.optionDesc_copy || 'Copy minified code to clipboard instead of writing to file'
                                                                                + ' if single source file is processed' }.`,
-                ` -C, --clone-folders                 ${ msgs.optionDesc_cloneFolders || 'Preserve folder structure in output directory' }.`,
+                ` -r, --relative-output               ${ msgs.optionDesc_relativeOutput || 'Output files relative to each source file instead of to input root' }.`,
                 ` -q, --quiet                         ${ msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`
             ],
             'paramOptions': [

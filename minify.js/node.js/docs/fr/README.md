@@ -87,7 +87,7 @@ $ minify-js [chemin_entrée] [chemin_sortie]
 ```
 
 - `[chemin_entrée]`: Chemin d'accès au fichier JS ou au répertoire contenant les fichiers JS à réduire, par rapport au répertoire de travail actuel.
-- `[chemin_sortie]`: Chemin d'accès au fichier ou au répertoire où les fichiers minifiés seront stockés, par rapport à l'emplacement du fichier d'origine (s'il n'est pas fourni, `min/` est utilisé).
+- `[chemin_sortie]`: Chemin d'accès au fichier ou au répertoire où seront stockés les fichiers minifiés, relatif au répertoire source (si non spécifié, le répertoire `min/` est utilisé).
 
 **📝 Remarque:** Si des dossiers sont transmis, les fichiers seront traités de manière récursive à moins que `-R` ou `--no-recursion` soit transmis.
 
@@ -113,13 +113,13 @@ Réduisez tous les fichiers JavaScript dans le **répertoire actuel** (sorties v
 $ minify-js
 ```
 
-Réduisez tous les fichiers JavaScript dans un **répertoire spécifique** (sorties vers `chemin/vers/votre/répertoire/min/`):
+Réduisez tous les fichiers JavaScript dans un **répertoire spécifique** (sorties vers `min/chemin/vers/votre/répertoire/`):
 
 ```
 $ minify-js chemin/vers/votre/répertoire
 ```
 
-Réduire un **fichier spécifique** (sorties vers `chemin/vers/votre/min/fichier.min.js`):
+Réduire un **fichier spécifique** (sorties vers `min/chemin/vers/votre/fichier.min.js`):
 
 ```
 $ minify-js chemin/vers/votre/fichier.js
@@ -145,7 +145,7 @@ Options booléennes:
  -X, --no-filename-change             Désactivez la modification de l'extension de fichier en .min.js
  -i, --rewrite-imports                Mettre à jour les chemins d'importation de .js à .min.js
  -c, --copy                           Copiez le code minifié dans le presse-papiers au lieu d'écrire dans un fichier si un fichier source unique est traité.
- -C, --clone-folders                  Conserver la structure des dossiers dans le répertoire de sortie.
+ -r, --relative-output                Les fichiers de sortie sont créés par rapport à chaque fichier source, et non par rapport au répertoire source principal.
  -q, --quiet                          Supprime toute la journalisation, à l'exception des erreurs.
 
 Options des paramètres:
@@ -217,17 +217,17 @@ minifyJS.minify(entrée, { dotFiles: true });
 
 Les paramètres disponibles (et leurs paramètres par défaut) sont:
 
-Nom              | Taper   | Description                                                                              | Valeur par défaut
------------------|---------|------------------------------------------------------------------------------------------|-------------------
-`recursive`      | Boolean | Rechercher récursivement les fichiers imbriqués si le chemin du répertoire est transmis. | `true`
-`verbose`        | Boolean | Afficher la connexion dans la console/terminal.                                          | `true`
-`dotFolders`     | Boolean | Inclure les dossiers cachés dans la recherche de fichiers.                               | `false`
-`dotFiles`       | Boolean | Incluez les fichiers cachés dans la recherche de fichiers.                               | `false`
-`mangle`         | Boolean | Raccourcissez les noms de variables (généralement à un caractère).                       | `true`
-`rewriteImports` | Boolean | Mettre à jour les chemins d'importation de .js à .min.js                                 | `false`
-`cloneFolders`   | Boolean | Conserver la structure des dossiers dans le répertoire de sortie.                        | `false`
-`ignores`        | Tableau | Fichiers/répertoires à exclure de la minification.                                       | `[]`
-`comment`        | String  | Commentaire d’en-tête à ajouter au code minifié. Séparez par ligne en utilisant '\n'.    | `''`
+Nom              | Taper   | Description                                                                                                               | Valeur par défaut
+-----------------|---------|---------------------------------------------------------------------------------------------------------------------------|-------------------
+`recursive`      | Boolean | Rechercher récursivement les fichiers imbriqués si le chemin du répertoire est transmis.                                  | `true`
+`verbose`        | Boolean | Afficher la connexion dans la console/terminal.                                                                           | `true`
+`dotFolders`     | Boolean | Inclure les dossiers cachés dans la recherche de fichiers.                                                                | `false`
+`dotFiles`       | Boolean | Incluez les fichiers cachés dans la recherche de fichiers.                                                                | `false`
+`mangle`         | Boolean | Raccourcissez les noms de variables (généralement à un caractère).                                                        | `true`
+`rewriteImports` | Boolean | Mettre à jour les chemins d'importation de .js à .min.js                                                                  | `false`
+`relativeOutput` | Boolean | Les fichiers de sortie sont créés par rapport à chaque fichier source, et non par rapport au répertoire source principal. | `false`
+`ignores`        | Tableau | Fichiers/répertoires à exclure de la minification.                                                                        | `[]`
+`comment`        | String  | Commentaire d’en-tête à ajouter au code minifié. Séparez par ligne en utilisant '\n'.                                     | `''`
 
 #
 

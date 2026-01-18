@@ -85,7 +85,7 @@ function minify(input, options = {}) {
         dotFiles: false,       // include dotfiles in file search
         mangle: true,          // shorten var names (typically to one character)
         rewriteImports: false, // update import paths from .js to .min.js
-        cloneFolders: false,   // preserve folder structure in output dir
+        relativeOutput: false, // output files relative to each source file instead of to input root
         ignores: [],           // files/dirs to exclude from minification
         comment: ''            // header comment to prepend to minified code
     }
@@ -121,7 +121,7 @@ function minify(input, options = {}) {
                 let relPath
                 if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
                 if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`)
-                if (options.cloneFolders) relPath = path.relative(path.resolve(process.cwd(), input), jsPath)
+                if (!options.relativeOutput) relPath = path.relative(path.resolve(process.cwd(), input), jsPath)
                 return { code: minifyResult.code, srcPath: jsPath, relPath, error: minifyResult.error }
             }).filter(data => !data.error) // filter out failed minifications
             if (options.verbose) {

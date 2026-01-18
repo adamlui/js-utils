@@ -87,7 +87,7 @@ $ minify-js [eingabepfad] [ausgabepfad]
 ```
 
 - `[eingabepfad]`: Pfad zur JS-Datei oder zum Verzeichnis, das die zu minimierenden JS-Dateien enthält, relativ zum aktuellen Arbeitsverzeichnis.
-- `[ausgabepfad]`: Pfad zur Datei oder zum Verzeichnis, in dem minimierte Dateien gespeichert werden, relativ zum ursprünglichen Dateispeicherort (falls nicht angegeben, wird `min/`` verwendet).
+- `[ausgabepfad]`: Pfad zur Datei oder zum Verzeichnis, in dem die minimierten Dateien gespeichert werden sollen, relativ zum Eingabeverzeichnis (falls nicht angegeben, wird „min/“ verwendet).
 
 **📝 Hinweis:** Wenn Ordner übergeben werden, werden Dateien rekursiv verarbeitet, es sei denn, `-R` oder `--no-recursion` wird übergeben.
 
@@ -113,13 +113,13 @@ Minimieren Sie alle JavaScript-Dateien im **aktuellen Verzeichnis** (Ausgaben in
 $ minify-js
 ```
 
-Minimieren Sie alle JavaScript-Dateien in einem **bestimmten Verzeichnis** (Ausgaben in `pfad/zu/ihrem/verzeichnis/min/`):
+Minimieren Sie alle JavaScript-Dateien in einem **bestimmten Verzeichnis** (Ausgaben in `min/pfad/zu/ihrem/verzeichnis/min/`):
 
 ```
 $ minify-js pfad/zu/ihrem/verzeichnis
 ```
 
-Minimieren Sie eine **bestimmte Datei** (Ausgaben an `pfad/zu/ihrem/min/datei.min.js`):
+Minimieren Sie eine **bestimmte Datei** (Ausgaben an `min/pfad/zu/ihrem/min/datei.min.js`):
 
 ```
 $ minify-js pfad/zu/ihrem/datei.js
@@ -145,7 +145,7 @@ Boolesche Optionen:
  -X, --no-filename-change             Deaktivieren Sie die Änderung der Dateierweiterung in .min.js
  -i, --rewrite-imports                Aktualisieren Sie die Importpfade von .js auf .min.js
  -c, --copy                           Kopieren Sie minimierten Code in die Zwischenablage, anstatt ihn in eine Datei zu schreiben, wenn eine einzelne Quelldatei verarbeitet wird.
- -C, --clone-folders                  Die Ordnerstruktur im Ausgabeverzeichnis beibehalten.
+ -r, --relative-output                Die Ausgabedateien werden relativ zu jeder Quelldatei anstatt zum Eingabeverzeichnis gespeichert.
  -q, --quiet                          Unterdrücken Sie alle Protokolle außer Fehlern.
 
 Parameteroptionen:
@@ -217,17 +217,17 @@ minifyJS.minify(eingang, { dotFiles: true });
 
 Verfügbare Parameter (und ihre Standardeinstellungen) sind:
 
-Name             | Typ             | Beschreibung                                                                                 | Standardwert
------------------|-----------------|----------------------------------------------------------------------------------------------|--------------
-`recursive`      | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird.       | `true`
-`verbose`        | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                                      | `true`
-`dotFolders`     | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                              | `false`
-`dotFiles`       | Boolescher Wert | Beziehen Sie Punktdateien in die Dateisuche ein.                                             | `false`
-`mangle`         | Boolescher Wert | Variablennamen kürzen (normalerweise auf ein Zeichen).                                       | `true`
-`rewriteImports` | Boolescher Wert | Importpfade von .js auf .min.js aktualisieren.                                               | `false`
-`cloneFolders`   | Boolescher Wert | Die Ordnerstruktur im Ausgabeverzeichnis beibehalten.                                        | `false`
-`ignores`        | Array           | Dateien/Verzeichnisse, die von der Minimierung ausgeschlossen werden sollen.                 | `[]`
-`comment`        | Zeichenfolge    | Header-Kommentar, der dem minimierten Code vorangestellt wird. Mit „\n“ zeilenweise trennen. | `''`
+Name             | Typ             | Beschreibung                                                                                      | Standardwert
+-----------------|-----------------|------------------------------------------------------------------------------------------------ ---|--------------
+`recursive`      | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird.            | `true`
+`verbose`        | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                                           | `true`
+`dotFolders`     | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                                   | `false`
+`dotFiles`       | Boolescher Wert | Beziehen Sie Punktdateien in die Dateisuche ein.                                                  | `false`
+`mangle`         | Boolescher Wert | Variablennamen kürzen (normalerweise auf ein Zeichen).                                            | `true`
+`rewriteImports` | Boolescher Wert | Importpfade von .js auf .min.js aktualisieren.                                                    | `false`
+`relativeOutput` | Boolescher Wert | Die Ausgabedateien werden relativ zu jeder Quelldatei anstatt zum Eingabeverzeichnis gespeichert. | `false`
+`ignores`        | Array           | Dateien/Verzeichnisse, die von der Minimierung ausgeschlossen werden sollen.                      | `[]`
+`comment`        | Zeichenfolge    | Header-Kommentar, der dem minimierten Code vorangestellt wird. Mit „\n“ zeilenweise trennen.      | `''`
 
 #
 
