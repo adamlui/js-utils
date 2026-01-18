@@ -29,16 +29,15 @@ node "$minifyjs_root/src/cli.js" "$input_arg" "$output_arg"
 
 # Compare generated files to expected output
 echo -e "\n> Comparing generated files to expected output..."
-input_dir="$(dirname "$0")/input"
 expected_output_dir="$(dirname "$0")/expected_output"
-file1_expected=$(< "$expected_output_dir/$output_arg/file1.min.js")
-file2_expected=$(< "$expected_output_dir/nested/dir/$output_arg/file2.min.js")
-file1_actual=$(< "$input_dir/$output_arg/file1.min.js")
-file2_actual=$(< "$input_dir/nested/dir/$output_arg/file2.min.js")
+file1_expected=$(< "$expected_output_dir/min/file1.min.js")
+file2_expected=$(< "$expected_output_dir/min/nested/dir/file2.min.js")
+file1_actual=$(< "$minifyjs_root/$output_arg/file1.min.js")
+file2_actual=$(< "$minifyjs_root/$output_arg/nested/dir/file2.min.js")
 
 # Cleanup generated files/folders
 echo "> Cleaning up generated files/folders..."
-rm -rf "${input_dir:?}/${output_arg%%/*}" "${input_dir:?}/nested/dir/${output_arg%%/*}"
+rm -rf "$minifyjs_root/${output_arg%%/*}"
 
 # Print test results
 if [ "$file1_actual" = "$file1_expected" ] && [ "$file2_actual" = "$file2_expected" ] ; then
