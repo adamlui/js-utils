@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Go dira gore maina a gago a se ka a dirisiwa" },
   "optionDesc_noFilenameChange": { "message": "Kgoreletsa go fetola katoloso ya faele go ya go .min.js" },
   "optionDesc_copy": { "message": "Khopi ya khoutu ya minified go clipboard mo boemong jwa go kwalela faele faele ya motswedi o le mongwe e berekisiwa" },
-  "optionDesc_cloneFolders": { "message": "Boloka sebopego sa difaele mo lenaaneng la dikumo" },
+  "optionDesc_relativeOutput": { "message": "Difaele tsa dikumo tse di amanang le faele nngwe le nngwe ya motswedi mo boemong jwa go tsenya modi" },
   "optionDesc_rewriteImports": { "message": "Ntshwafatsa ditsela tsa go romela dilo kwa ntle go tswa go .js go ya go .min.js" },
   "optionDesc_quiet": { "message": "Go emisa dikgogo tsotlhe kwantle ga diphoso" },
   "optionDesc_ignores": { "message": "Difaele/dikwadiso tse di tshwanelang go sa akarediwe mo menining" },

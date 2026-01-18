@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Mangling အမည်များကိုပိတ်ပါ" },
   "optionDesc_noFilenameChange": { "message": ".min.js သို့ ဖိုင် extension ပြောင်းခြင်းကို ပိတ်ပါ" },
   "optionDesc_copy": { "message": "တစ်ခုတည်းသော အရင်းအမြစ်ဖိုင်ကို လုပ်ဆောင်နေပါက ဖိုင်ရေးမည့်အစား အသေးစားကုဒ်ကို ကလစ်ဘုတ်သို့ မိတ္တူကူးပါ" },
-  "optionDesc_cloneFolders": { "message": "Output Directory ထဲက ဖိုင်တွဲဖွဲ့စည်းပုံကို ထိန်းသိမ်းပါ" },
+  "optionDesc_relativeOutput": { "message": "အမြစ်ထည့်သွင်းမည့်အစား ရင်းမြစ်ဖိုင်တစ်ခုချင်းစီနှင့် ဆက်စပ်သော ဖိုင်များကို ထုတ်ယူပါ" },
   "optionDesc_rewriteImports": { "message": ".js မှ .min.js သို့သွင်းကုန်လမ်းကြောင်းများကို အပ်ဒိတ်လုပ်ပါ" },
   "optionDesc_quiet": { "message": "အမှားအယွင်းများမှလွဲ ၍ လော့ဂ်အင်အားလုံးကိုဖိနှိပ်ပါ" },
   "optionDesc_ignores": { "message": "Minification မှဖယ်ထုတ်ရန်ဖိုင်များ/directory များ" },

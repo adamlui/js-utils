@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "ປິດການໃຊ້ງານຊື່ການກັ່ນຕອງ" },
   "optionDesc_noFilenameChange": { "message": "ປິດການໃຊ້ງານການປ່ຽນສ່ວນຂະຫຍາຍໄຟລ໌ເປັນ .min.js" },
   "optionDesc_copy": { "message": "ສໍາ ເນົາລະຫັດ minified ກັບ clipboard ແທນທີ່ຈະຂຽນໄປຫາເອກະສານຖ້າເອກະສານແຫຼ່ງດຽວຖືກປະມວນຜົນ" },
-  "optionDesc_cloneFolders": { "message": "ປົກປັກຮັກສາໂຄງສ້າງໂຟນເດີໃນດັດສະນີຜົນຜະລິດ" },
+  "optionDesc_relativeOutput": { "message": "ໄຟລ໌ຜົນຜະລິດທີ່ກ່ຽວຂ້ອງກັບແຕ່ລະໄຟລ໌ແຫຼ່ງແທນທີ່ຈະໃສ່ຮາກ" },
   "optionDesc_rewriteImports": { "message": "ປັບປຸງເສັ້ນທາງ ນໍາ ເຂົ້າຈາກ .js ເຖິງ .min.js" },
   "optionDesc_quiet": { "message": "ສະກັດກັ້ນການຕັດໄມ້ທັງໝົດ ຍົກເວັ້ນຂໍ້ຜິດພາດ" },
   "optionDesc_ignores": { "message": "ໄຟລ໌/ໄດເລກະທໍລີທີ່ຈະຍົກເວັ້ນຈາກ minification" },

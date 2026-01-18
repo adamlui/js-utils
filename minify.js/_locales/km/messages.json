@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "មិនអនុញ្ញាតឲ្យមានឈ្មោះបោកបញ្ឆោត" },
   "optionDesc_noFilenameChange": { "message": "បិទការផ្លាស់ប្តូរកន្ទុយឯកសារទៅ .min.js" },
   "optionDesc_copy": { "message": "ចម្លង កូដ តូច ទៅ ក្ដារ តម្បៀត ខ្ទាស់ ជំនួស ឲ្យ ការ សរសេរ ទៅ ឯកសារ ប្រសិន បើ ឯកសារ ប្រភព តែ មួយ ត្រូវ បាន ដំណើរការ" },
-  "optionDesc_cloneFolders": { "message": "រក្សា រចនាសម្ព័ន្ធ ថត នៅ ក្នុង ថត លទ្ធផល" },
+  "optionDesc_relativeOutput": { "message": "ឯកសារ លទ្ធផល ទាក់ទង នឹង ឯកសារ ប្រភព នីមួយៗ ជំនួស ឲ្យ ការ បញ្ចូល root" },
   "optionDesc_rewriteImports": { "message": "អាប់ដេតផ្លូវនាំចូលពី .js ទៅ .min.js" },
   "optionDesc_quiet": { "message": "បង្ក្រាបការកាប់ឈើទាំងអស់លើកលែងតែកំហុស" },
   "optionDesc_ignores": { "message": "ឯកសារ/ដាយរិចតូរីដែលត្រូវដកចេញពី minification" },

@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Манглинг атауларын өшіру" },
   "optionDesc_noFilenameChange": { "message": ".min.js файл кеңейтімін өзгертуді өшіру" },
   "optionDesc_copy": { "message": "Жалғыз бастапқы файл өңделсе, файлға жазудың орнына, миниатюралық кодты алпауытқа көшіріңіз" },
-  "optionDesc_cloneFolders": { "message": "Шығыс каталогында қалта құрылымын сақтау" },
+  "optionDesc_relativeOutput": { "message": "Кіріс түбіріне емес, әр бастапқы файлға қатысты шығыс файлдары" },
   "optionDesc_rewriteImports": { "message": "Импорт жолдарын .js-тен .min.js-ке жаңарту" },
   "optionDesc_quiet": { "message": "Қателерден басқа барлық жүйеге кіруді болдырмау" },
   "optionDesc_ignores": { "message": "Минимализациядан шығаратын файлдар/каталогтар" },

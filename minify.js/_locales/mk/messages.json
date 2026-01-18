@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Оневозможи менување имиња" },
   "optionDesc_noFilenameChange": { "message": "Оневозможете промена на наставката на датотеката во .min.js" },
   "optionDesc_copy": { "message": "Копирајте го минимизираниот код на таблата со исечоци наместо да пишувате во датотека ако се обработува една изворна датотека" },
-  "optionDesc_cloneFolders": { "message": "Зачувај ја структурата на папките во излезниот директориум" },
+  "optionDesc_relativeOutput": { "message": "Излезни датотеки во однос на секоја изворна датотека наместо на влезен корен" },
   "optionDesc_rewriteImports": { "message": "Ажурирајте ги патеките за увоз од .js во .min.js" },
   "optionDesc_quiet": { "message": "Потисни ги сите евиденции освен грешките" },
   "optionDesc_ignores": { "message": "Датотеки/директориуми што треба да се исклучат од минификацијата" },

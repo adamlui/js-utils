@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Afvirkja slöngunöfn" },
   "optionDesc_noFilenameChange": { "message": "Afvirkja breytingu á skráarendingu til .min.js" },
   "optionDesc_copy": { "message": "Afritaðu minified kóða á klemmuspjald í stað þess að skrifa til að skrá ef unnið er úr einni frumskrá" },
-  "optionDesc_cloneFolders": { "message": "Varðveita möppuuppbyggingu í úttaksmöppu" },
+  "optionDesc_relativeOutput": { "message": "Úttaksskrár tengdar hverri frumskrá í stað inntaksrótar" },
   "optionDesc_rewriteImports": { "message": "Uppfærðu innflutningsleiðir frá .js til .min.js" },
   "optionDesc_quiet": { "message": "Slökkva á öllum innskráningum nema villum" },
   "optionDesc_ignores": { "message": "Skrár/möppur til að útiloka frá námuvinnslu" },

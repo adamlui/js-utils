@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "名前の変更を無効にする" },
   "optionDesc_noFilenameChange": { "message": "ファイル拡張子を.min.jsに変更することを無効にする" },
   "optionDesc_copy": { "message": "単一のソースファイルが処理された場合、ファイルに書き込むのではなく、縮小されたコードをクリップボードにコピーする" },
-  "optionDesc_cloneFolders": { "message": "出力ディレクトリのフォルダ構造を保持する" },
+  "optionDesc_relativeOutput": { "message": "ルートを入力するのではなく、各ソースファイルに関連する出力ファイル" },
   "optionDesc_rewriteImports": { "message": ".jsから.min.jsへのインポートパスを更新する" },
   "optionDesc_quiet": { "message": "エラーを除くすべてのロギングを抑制" },
   "optionDesc_ignores": { "message": "縮小から除外するファイル/ディレクトリ" },

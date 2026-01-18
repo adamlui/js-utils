@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Parçalama adlarını devre dışı bırak" },
   "optionDesc_noFilenameChange": { "message": "Dosya uzantısını .min.js olarak değiştirmeyi devre dışı bırak" },
   "optionDesc_copy": { "message": "Tek kaynak dosya işlenirse dosyaya yazmak yerine küçültülmüş kodu panoya kopyalayın" },
-  "optionDesc_cloneFolders": { "message": "Çıktı dizinindeki klasör yapısını koru" },
+  "optionDesc_relativeOutput": { "message": "Giriş kökü yerine her kaynak dosyaya göre çıktı dosyaları" },
   "optionDesc_rewriteImports": { "message": ".js dosyasındaki içe aktarma yollarını .min.js olarak güncelleyin" },
   "optionDesc_quiet": { "message": "Hatalar hariç tüm günlükleri bastır" },
   "optionDesc_ignores": { "message": "Minifikasyondan hariç tutulacak dosyalar/dizinler" },

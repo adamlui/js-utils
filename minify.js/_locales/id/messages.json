@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Nonaktifkan nama mangling" },
   "optionDesc_noFilenameChange": { "message": "Nonaktifkan perubahan ekstensi file ke .min.js" },
   "optionDesc_copy": { "message": "Salin kode yang diperkecil ke clipboard alih - alih menulis ke file jika file sumber tunggal diproses" },
-  "optionDesc_cloneFolders": { "message": "Pertahankan struktur folder dalam direktori output" },
+  "optionDesc_relativeOutput": { "message": "File output relatif terhadap setiap file sumber, bukan ke root input" },
   "optionDesc_rewriteImports": { "message": "Perbarui jalur impor dari .js ke .min.js" },
   "optionDesc_quiet": { "message": "Cegah semua pencatatan kecuali kesalahan" },
   "optionDesc_ignores": { "message": "File/direktori untuk dikecualikan dari minifikasi" },

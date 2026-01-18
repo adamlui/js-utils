@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Nomlarni o'zgartirishni o'chirib qo'ying" },
   "optionDesc_noFilenameChange": { "message": "Fayl kengaytmasini .min.js ga o‘zgartirishni o‘chirib qo‘ying" },
   "optionDesc_copy": { "message": "Bitta manba fayli qayta ishlansa, faylga yozish oʻrniga kichiklashtirilgan kodni vaqtinchalik xotiraga nusxalash" },
-  "optionDesc_cloneFolders": { "message": "Chiqish katalogida papka tuzilishini saqlang" },
+  "optionDesc_relativeOutput": { "message": "Root fayliga emas, balki har bir manba fayliga nisbatan fayllarni chiqarish" },
   "optionDesc_rewriteImports": { "message": ".js dan .min.js ga import yo'llarini yangilang" },
   "optionDesc_quiet": { "message": "Xatolardan tashqari barcha jurnallarni bostirish" },
   "optionDesc_ignores": { "message": "Minififikatsiyadan chiqarib tashlanadigan fayllar/kataloglar" },

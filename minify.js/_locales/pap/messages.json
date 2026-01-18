@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Mal Di Testa Nombres" },
   "optionDesc_noFilenameChange": { "message": "Cambio de Archivo Extension a .min.js" },
   "optionDesc_copy": { "message": "Copiar Codigo Minificado Para Clipboard Enbes De Escribir Un Archivo Si Fuera Un Solo Fuente" },
-  "optionDesc_cloneFolders": { "message": "Preservá e struktura di e folder den e Direktorio di Produkshon" },
+  "optionDesc_relativeOutput": { "message": "Documenti simili a Archivo de Fuente enbes de Ingreso" },
   "optionDesc_rewriteImports": { "message": "Importacion de camiones .JS a .min.JS" },
   "optionDesc_quiet": { "message": "Tur Kuliner di Kuliner Kuliner" },
   "optionDesc_ignores": { "message": "Archivio/Archivio di Stato di Meno" },

@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "ማንጋሊንግ ስሞችን ያሰናክሉ" },
   "optionDesc_noFilenameChange": { "message": "ፋይል ቅጥያ ወደ .min.js መቀየር ያሰናክሉ" },
   "optionDesc_copy": { "message": "ነጠላ ምንጭ ፋይል ከተሰራ ፋይል ለማስገባት ከመጻፍ ይልቅ ወደ ክሊፕቦርድ የተቀናጀ ኮድ ይቅዱ" },
-  "optionDesc_cloneFolders": { "message": "የውጤት ማውጫ ውስጥ አቃፊ መዋቅር ጠብቅ" },
+  "optionDesc_relativeOutput": { "message": "የግቤት ሥር ይልቅ እያንዳንዱ ምንጭ ፋይል አንጻራዊ የውጤት ፋይሎች" },
   "optionDesc_rewriteImports": { "message": "ከ .js ወደ .min.js የማስመጣት መንገዶችን ያዘምኑ" },
   "optionDesc_quiet": { "message": "ከስህተቶች በስተቀር ሁሉንም የመግቢያዎች መሙላት" },
   "optionDesc_ignores": { "message": "የማዕድን ማውጫ/ማውጫዎች" },

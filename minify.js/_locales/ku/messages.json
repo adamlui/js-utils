@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Navên manglingê neçalak bikin" },
   "optionDesc_noFilenameChange": { "message": "Guhertina dirêjkirina pelê bo .min.js neçalak bike" },
   "optionDesc_copy": { "message": "Heke pelê çavkaniyek yekane were pêvajo kirin, li şûna ku hûn li pelê binivîsin, koda piçûkkirî li klîpboardê kopî bikin" },
-  "optionDesc_cloneFolders": { "message": "Avahiya peldankê di peldanka derketinê de biparêze" },
+  "optionDesc_relativeOutput": { "message": "Pelên têkildarî her pelê çavkaniyê derxe li şûna ku bi rootê têxe" },
   "optionDesc_rewriteImports": { "message": "Rêyên importkirinê ji .js bo .min.js nûve bike" },
   "optionDesc_quiet": { "message": "Hemî têketinê ji bilî xeletiyan bişkînin" },
   "optionDesc_ignores": { "message": "Pel/pelrêçên ku ji minîfîkasyonê werin derxistin" },

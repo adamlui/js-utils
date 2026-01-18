@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "મેંગલિંગ નામો અક્ષમ કરો" },
   "optionDesc_noFilenameChange": { "message": ".min.js માં ફાઇલ એક્સ્ટેંશન બદલવાનું અક્ષમ કરો" },
   "optionDesc_copy": { "message": "જો સિંગલ સોર્સ ફાઇલ પર પ્રક્રિયા કરવામાં આવે તો ફાઇલ પર લખવાને બદલે ક્લિપબોર્ડ પર મિનિફાઇડ કોડની નકલ કરો" },
-  "optionDesc_cloneFolders": { "message": "આઉટપુટ ડિરેક્ટરીમાં ફોલ્ડર સ્ટ્રક્ચર સાચવો" },
+  "optionDesc_relativeOutput": { "message": "ઇનપુટ રુટને બદલે દરેક સ્રોત ફાઇલની સંબંધિત આઉટપુટ ફાઇલો" },
   "optionDesc_rewriteImports": { "message": ".js થી .min.js સુધી આયાત પાથ અપડેટ કરો" },
   "optionDesc_quiet": { "message": "ભૂલો સિવાય તમામ લોગીંગને દબાવો" },
   "optionDesc_ignores": { "message": "મિનિફિકેશનમાંથી બાકાત રાખવા માટેની ફાઇલો/ડિરેક્ટરીઓ" },

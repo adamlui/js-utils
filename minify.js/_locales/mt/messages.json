@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Itfi l-ismijiet li ma jidhrux" },
   "optionDesc_noFilenameChange": { "message": "Iddiżattiva l-estensjoni tal-fajl li qed jinbidel għal .min.js" },
   "optionDesc_copy": { "message": "Ikkopja l-kodiċi minimizzat għall-klipbord minflok tikteb biex tiffajlja jekk jiġi pproċessat fajl b' sors wieħed" },
-  "optionDesc_cloneFolders": { "message": "Ippreserva l-istruttura tal-folder fid-direttorju tal-output" },
+  "optionDesc_relativeOutput": { "message": "Il-fajls tal-output meta mqabbla ma' kull fajl tas-sors minflok mal-għeruq tal-input" },
   "optionDesc_rewriteImports": { "message": "Aġġorna l-mogħdijiet tal-importazzjoni minn .js għal .min.js" },
   "optionDesc_quiet": { "message": "Waqqaf il-logging kollu ħlief l-iżbalji" },
   "optionDesc_ignores": { "message": "Fajls/direttorji biex teskludi mill-minifikazzjoni" },

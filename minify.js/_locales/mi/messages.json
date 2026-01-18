@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Te whakakore i nga ingoa mangling" },
   "optionDesc_noFilenameChange": { "message": "Whakakorea te whakawhitinga kōnae ki .min.js" },
   "optionDesc_copy": { "message": "Tārua waehere minified ki clipboard kaua ki te tuhi ki te kōnae mēnā ka tukatukahia he kōnae pūtake kotahi" },
-  "optionDesc_cloneFolders": { "message": "Te hanganga kōpaki tiaki i roto i te aratohu putanga" },
+  "optionDesc_relativeOutput": { "message": "Nga konae whakaputa e pa ana ki ia konae puna kaua ki te pakiaka whakauru" },
   "optionDesc_rewriteImports": { "message": "Whakahoutia nga huarahi kawemai mai i .js ki .min.js" },
   "optionDesc_quiet": { "message": "Tautoko i te logging katoa engari hapa" },
   "optionDesc_ignores": { "message": "Kōnae/kaiwhakahaere ki te whakakore i te minification" },

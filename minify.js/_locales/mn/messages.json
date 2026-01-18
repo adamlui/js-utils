@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Гаргах нэрийг идэвхгүй болгох" },
   "optionDesc_noFilenameChange": { "message": "Файлын өргөтгөлийг .min.js болгон өөрчлөхийг идэвхгүй болгох" },
   "optionDesc_copy": { "message": "Нэг эх файл боловсруулагдсан тохиолдолд файл руу бичихийн оронд жижиг кодыг хуулах" },
-  "optionDesc_cloneFolders": { "message": "Гаралтын лавлах доторх хавтасны бүтцийг хадгалах" },
+  "optionDesc_relativeOutput": { "message": "Оруулахын оронд эх файл бүртэй холбоотой гаралтын файлууд" },
   "optionDesc_rewriteImports": { "message": "Импортын замуудыг .js-ээс .min.js руу шинэчлэх" },
   "optionDesc_quiet": { "message": "Алдаанаас бусад бүх бүртгэлийг арилгах" },
   "optionDesc_ignores": { "message": "Суурилуулалтаас хасах файл/сан" },

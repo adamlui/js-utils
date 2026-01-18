@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Desgaitu izenak nahastea" },
   "optionDesc_noFilenameChange": { "message": "Desgaitu fitxategi-luzapena .min.js-era aldatzea" },
   "optionDesc_copy": { "message": "Kopiatu txikitutako kodea arbelean fitxategian idatzi ordez iturburu-fitxategi bakarra prozesatzen bada" },
-  "optionDesc_cloneFolders": { "message": "Mantendu karpeta-egitura irteerako direktorioan" },
+  "optionDesc_relativeOutput": { "message": "Irteerako fitxategiak iturburu-fitxategi bakoitzari dagozkionak, erro-fitxategira sartu beharrean" },
   "optionDesc_rewriteImports": { "message": "Eguneratu inportazio-bideak .js-tik .min.js-ra" },
   "optionDesc_quiet": { "message": "Ezabatu erregistro guztiak erroreak izan ezik" },
   "optionDesc_ignores": { "message": "Txikitzetik kanpo utzi beharreko fitxategiak/direktorioak" },

@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "At sløkkja nøvnini" },
   "optionDesc_noFilenameChange": { "message": "Broyt at broyta skráarútbygging til .min.js" },
   "optionDesc_copy": { "message": "Kopiera minifiseraða kóða til klipbrett ístaðin fyri at skriva til fílu, um einastandandi keldurfíla verður viðgjørd" },
-  "optionDesc_cloneFolders": { "message": "Goym faldara struktur í útflutningsmyndatólinum" },
+  "optionDesc_relativeOutput": { "message": "Útgangsfílar í mun til hvørja keldurfílu ístaðin fyri innleggsrót" },
   "optionDesc_rewriteImports": { "message": "Uppdatera innflytingarleiðir frá .js til .min.js" },
   "optionDesc_quiet": { "message": "Undirskriva allar innmeldingar uttan feil" },
   "optionDesc_ignores": { "message": "Fílar/leiðbeiningar at útiloka frá minification" },

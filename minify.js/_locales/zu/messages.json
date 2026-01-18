@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Vala amagama ahlabayo" },
   "optionDesc_noFilenameChange": { "message": "Vala ukushintsha isandiso sefayela sibe .min.js" },
   "optionDesc_copy": { "message": "Kopisha ikhodi encishisiwe ebhodini lokunamathisela esikhundleni sokubhalela ifayela uma ifayela lomthombo owodwa liphroseswa" },
-  "optionDesc_cloneFolders": { "message": "Londoloza isakhiwo sefolda ohlwini lokukhipha" },
+  "optionDesc_relativeOutput": { "message": "Amafayela okukhipha ahlobene nefayela ngalinye lomthombo esikhundleni sokufaka impande" },
   "optionDesc_rewriteImports": { "message": "Buyekeza izindlela zokungenisa kusuka ku-.js kuya ku-.min.js" },
   "optionDesc_quiet": { "message": "Cindezela konke ukungena ngemvume ngaphandle kwamaphutha" },
   "optionDesc_ignores": { "message": "Amafayela/izinkomba ukuze ungabandakanyi ekunciphiseni" },

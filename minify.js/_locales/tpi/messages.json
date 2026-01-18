@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Ol nem bilong ol man i no gat nem" },
   "optionDesc_noFilenameChange": { "message": "Disable senisim file extension long.min.js" },
   "optionDesc_copy": { "message": "Kopiim liklik kod long clipboard long ples bilong raitim long file sapos wanpela source file i wok long kamap" },
-  "optionDesc_cloneFolders": { "message": "Save long ol samting ol i bin wokim long ol samting ol i bin wokim" },
+  "optionDesc_relativeOutput": { "message": "Ol i save kisim ol dispela samting long olgeta hap bilong graun, na ol i no save kisim ol dispela samting long olgeta hap bilong graun." },
   "optionDesc_rewriteImports": { "message": "Ol rot bilong kisim bek ol samting long .js i go long .min.js" },
   "optionDesc_quiet": { "message": "Olgeta tok i no stret, tasol ol tok i no stret" },
   "optionDesc_ignores": { "message": "Ol fail/direktori bilong rausim long minification" },

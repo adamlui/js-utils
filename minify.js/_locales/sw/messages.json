@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Lemaza majina ya mikoko" },
   "optionDesc_noFilenameChange": { "message": "Lemaza kubadilisha kiendelezi cha faili kuwa .min.js" },
   "optionDesc_copy": { "message": "Nakili msimbo wa minified kwenye ubao wa kunakili badala ya kuandika kwenye faili ikiwa faili moja ya chanzo inashughulikiwa" },
-  "optionDesc_cloneFolders": { "message": "Hifadhi muundo wa folda katika saraka ya pato" },
+  "optionDesc_relativeOutput": { "message": "Faili za pato zinazohusiana na kila faili ya chanzo badala ya kuingiza mizizi" },
   "optionDesc_rewriteImports": { "message": "Sasisha njia za kuagiza kutoka .js hadi .min.js" },
   "optionDesc_quiet": { "message": "Zima ukataji wote wa magogo isipokuwa hitilafu" },
   "optionDesc_ignores": { "message": "Faili/saraka za kuwatenga kutoka kwenye uchanganuzi" },

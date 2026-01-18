@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Mangelnde Namen deaktivieren" },
   "optionDesc_noFilenameChange": { "message": "Ändern der Dateierweiterung in .min.js deaktivieren" },
   "optionDesc_copy": { "message": "Kopieren Sie minimierten Code in die Zwischenablage, anstatt in die Datei zu schreiben, wenn eine einzelne Quelldatei verarbeitet wird" },
-  "optionDesc_cloneFolders": { "message": "Ordnerstruktur im Ausgabeverzeichnis beibehalten" },
+  "optionDesc_relativeOutput": { "message": "Ausgabedateien relativ zu jeder Quelldatei statt zum Eingabestammverzeichnis" },
   "optionDesc_rewriteImports": { "message": "Importpfade von .js auf .min.js aktualisieren" },
   "optionDesc_quiet": { "message": "Alle Protokolle mit Ausnahme von Fehlern unterdrücken" },
   "optionDesc_ignores": { "message": "Dateien/Verzeichnisse, die von der Minifizierung ausgeschlossen werden sollen" },

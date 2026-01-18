@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Deaktiveer mangling name" },
   "optionDesc_noFilenameChange": { "message": "Deaktiveer die verandering van lêer uitbreiding na .min.js" },
   "optionDesc_copy": { "message": "Kopieer geminificeerde kode na knipbord in plaas daarvan om na lêer te skryf as enkelbronlêer verwerk word" },
-  "optionDesc_cloneFolders": { "message": "Bewaar gidsstruktuur in afvoer gids" },
+  "optionDesc_relativeOutput": { "message": "Uitset lêers relatief tot elke bron lêer in plaas van insette wortel" },
   "optionDesc_rewriteImports": { "message": "Dateer invoerpaaie van .js na .min.js op" },
   "optionDesc_quiet": { "message": "Onderdruk alle aanmelding behalwe foute" },
   "optionDesc_ignores": { "message": "Lêers/gidse om van minifikasie uit te sluit" },

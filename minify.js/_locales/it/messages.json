@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Disabilita nomi di mangling" },
   "optionDesc_noFilenameChange": { "message": "Disabilita la modifica dell'estensione del file in .min.js" },
   "optionDesc_copy": { "message": "Copia il codice minimizzato negli appunti invece di scriverlo sul file se viene elaborato un singolo file di origine" },
-  "optionDesc_cloneFolders": { "message": "Mantieni la struttura delle cartelle nella directory di output" },
+  "optionDesc_relativeOutput": { "message": "File di output relativi a ciascun file di origine anziché alla radice di input" },
   "optionDesc_rewriteImports": { "message": "Aggiorna i percorsi di importazione da .js a .min.js" },
   "optionDesc_quiet": { "message": "Elimina tutte le registrazioni ad eccezione degli errori" },
   "optionDesc_ignores": { "message": "File/directory da escludere dalla minimizzazione" },

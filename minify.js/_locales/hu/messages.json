@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Nevek összevonásának letiltása" },
   "optionDesc_noFilenameChange": { "message": "Fájlkiterjesztés módosításának letiltása .min.js fájlra" },
   "optionDesc_copy": { "message": "Minifikált kód másolása a vágólapra ahelyett, hogy fájlba írna, ha egyetlen forrásfájl feldolgozásra kerül" },
-  "optionDesc_cloneFolders": { "message": "Mappastruktúra megőrzése a kimeneti könyvtárban" },
+  "optionDesc_relativeOutput": { "message": "Kimeneti fájlok az egyes forrásfájlokhoz viszonyítva, nem pedig a bemeneti gyökérhez" },
   "optionDesc_rewriteImports": { "message": "Importálási útvonalak frissítése .js fájlból .min.js fájlba" },
   "optionDesc_quiet": { "message": "Az összes naplózás letiltása a hibák kivételével" },
   "optionDesc_ignores": { "message": "Minifikációból kizárandó fájlok/könyvtárak" },

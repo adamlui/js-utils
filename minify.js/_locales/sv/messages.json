@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Inaktivera manglingnamn" },
   "optionDesc_noFilenameChange": { "message": "Inaktivera ändring av filtillägg till .min.js" },
   "optionDesc_copy": { "message": "Kopiera minifierad kod till urklipp istället för att skriva till fil om en enda källfil bearbetas" },
-  "optionDesc_cloneFolders": { "message": "Bevara mappstrukturen i utdatakatalogen" },
+  "optionDesc_relativeOutput": { "message": "Utdatafiler i förhållande till varje källfil istället för att mata in rot" },
   "optionDesc_rewriteImports": { "message": "Uppdatera importvägar från .js till .min.js" },
   "optionDesc_quiet": { "message": "Dölj all loggning utom fel" },
   "optionDesc_ignores": { "message": "Filer/kataloger att utesluta från minifiering" },

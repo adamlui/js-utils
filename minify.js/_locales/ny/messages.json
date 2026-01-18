@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Disable mangling names" },
   "optionDesc_noFilenameChange": { "message": "Kulepheretsa kusintha kwa fayilo ku .min.js" },
   "optionDesc_copy": { "message": "Koperani kachidindo minified kuti clipboard m 'malo kulemba file ngati limodzi gwero wapamwamba ndi kukonzedwa" },
-  "optionDesc_cloneFolders": { "message": "Sungani dongosolo chikwatu mu linanena bungwe chikwatu" },
+  "optionDesc_relativeOutput": { "message": "Linanena bungwe owona wachibale aliyense gwero wapamwamba m 'malo kulowetsa muzu" },
   "optionDesc_rewriteImports": { "message": "Sinthani njira zoyendera kuchokera ku .js kupita ku .min.js" },
   "optionDesc_quiet": { "message": "Suppress all logging except errors" },
   "optionDesc_ignores": { "message": "Mafayilo/ma directories kuti asachotsedwe ku minification" },

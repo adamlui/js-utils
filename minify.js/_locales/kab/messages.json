@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Snifel ismawen n tmaziɣt" },
   "optionDesc_noFilenameChange": { "message": "Kkes asenfaṛ n ufaylu i .min.js" },
   "optionDesc_copy": { "message": "Kkes aɣbalu yettwafernen ɣer tkarḍa n uḍebsi wala tira ɣer ufaylu ma yella yettwaseqdec ufaylu n udiwenni kan" },
-  "optionDesc_cloneFolders": { "message": "Ḥrez asenfaṛ n ufaylu deg ufaylu n ufaylu n ufaylu" },
+  "optionDesc_relativeOutput": { "message": "Asebded n yifuyla i yal afaylu n uɣbalu n uɣbalu wala ad yekcem aẓar" },
   "optionDesc_rewriteImports": { "message": "Asebded iberdan seg .js ar .min.js" },
   "optionDesc_quiet": { "message": "Sizdeg akk tuccḍiwin anagar tuccḍiwin" },
   "optionDesc_ignores": { "message": "Ifuyla/isefka akken ad yettwakkes seg uẓeṭṭa" },

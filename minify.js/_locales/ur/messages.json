@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "مینگلنگ ناموں کو غیر فعال کریں" },
   "optionDesc_noFilenameChange": { "message": "فائل کی توسیع کو .min.js میں تبدیل کرنا غیر فعال کریں" },
   "optionDesc_copy": { "message": "اگر واحد ماخذ فائل پر کارروائی کی جاتی ہے تو فائل میں لکھنے کے بجائے چھوٹے کوڈ کو کلپ بورڈ میں کاپی کریں" },
-  "optionDesc_cloneFolders": { "message": "آؤٹ پٹ ڈائرکٹری میں فولڈر کا ڈھانچہ محفوظ رکھیں" },
+  "optionDesc_relativeOutput": { "message": "ان پٹ روٹ کے بجائے ہر سورس فائل سے متعلق آؤٹ پٹ فائلیں" },
   "optionDesc_rewriteImports": { "message": ".js سے .min.js تک درآمد کے راستے اپ ڈیٹ کریں" },
   "optionDesc_quiet": { "message": "غلطیوں کے علاوہ تمام لاگنگ کو دبائیں" },
   "optionDesc_ignores": { "message": "فائلوں/ڈائریکٹریز کو چھوٹی کرنے سے خارج کرنا" },

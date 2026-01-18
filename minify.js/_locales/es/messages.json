@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Desactivar nombres de manipulación" },
   "optionDesc_noFilenameChange": { "message": "Desactivar el cambio de extensión de archivo a .min.js" },
   "optionDesc_copy": { "message": "Copie el código minificado en el portapapeles en lugar de escribir en el archivo si se procesa un solo archivo fuente" },
-  "optionDesc_cloneFolders": { "message": "Conservar la estructura de carpetas en el directorio de salida" },
+  "optionDesc_relativeOutput": { "message": "Archivos de salida relativos a cada archivo de origen en lugar de a la raíz de entrada" },
   "optionDesc_rewriteImports": { "message": "Actualizar rutas de importación de .js a .min.js" },
   "optionDesc_quiet": { "message": "Suprimir todos los registros excepto los errores" },
   "optionDesc_ignores": { "message": "Archivos/directorios a excluir de la minificación" },

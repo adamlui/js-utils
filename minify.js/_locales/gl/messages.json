@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Desactivar os nomes de mangle" },
   "optionDesc_noFilenameChange": { "message": "Desactivar o cambio de extensión de ficheiro a .min.js" },
   "optionDesc_copy": { "message": "Copiar o código minificado no portarretallos no canto de escribir no ficheiro se se procesa o ficheiro de orixe única" },
-  "optionDesc_cloneFolders": { "message": "Conservar a estrutura de cartafoles no cartafol de saída" },
+  "optionDesc_relativeOutput": { "message": "Saír ficheiros en relación a cada ficheiro de orixe en lugar de introducir a raíz" },
   "optionDesc_rewriteImports": { "message": "Actualizar importar rutas de .js a .min.js" },
   "optionDesc_quiet": { "message": "Suprimir todo o rexistro agás erros" },
   "optionDesc_ignores": { "message": "Ficheiros/directorios para excluír da minificación" },

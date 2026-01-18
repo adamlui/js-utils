@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Non mangonmen ki enfim" },
   "optionDesc_noFilenameChange": { "message": "Andikape chanje ekstansyon dosye nan .min.js" },
   "optionDesc_copy": { "message": "Kopi kòd minifye nan clipboard olye pou yo ekri nan dosye si se dosye sous sèl trete" },
-  "optionDesc_cloneFolders": { "message": "Prezève estrikti katab nan anyè pwodiksyon an" },
+  "optionDesc_relativeOutput": { "message": "Dosye Sòti relatif a chak dosye sous olye pou yo rasin opinyon" },
   "optionDesc_rewriteImports": { "message": "Mizajou chemen enpòte soti nan .js rive nan .min.js" },
   "optionDesc_quiet": { "message": "Siprime tout antre eksepte erè" },
   "optionDesc_ignores": { "message": "Dosye/repèrtwar pou eskli nan minifikasyon" },

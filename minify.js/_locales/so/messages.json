@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Disable magacyada mangling" },
   "optionDesc_noFilenameChange": { "message": "Disable badalo kordhinta file in .min.js" },
   "optionDesc_copy": { "message": "Nuqul code minified in clipboard halkii qoraal si ay u soo gudbiyaan haddii file il keli ah laga baaraandego" },
-  "optionDesc_cloneFolders": { "message": "Hayso qaab-dhismeedka folder in buugga wax soo saarka" },
+  "optionDesc_relativeOutput": { "message": "Faylasha Output qaraabo ah file il kasta halkii si ay u soo geliyaan xididka" },
   "optionDesc_rewriteImports": { "message": "Cusbooneysii dariiqyada soo dejinta laga bilaabo .js ilaa .min.js" },
   "optionDesc_quiet": { "message": "Xannib dhammaan gelitaanka marka laga reebo khaladaadka" },
   "optionDesc_ignores": { "message": "Faylasha/tilmaamayaasha si looga fogaado minification" },

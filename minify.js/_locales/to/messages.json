@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Toʻo mangling hingoa" },
   "optionDesc_noFilenameChange": { "message": "Toʻo ʻa e liliu ʻo e faile ki he .min.js" },
   "optionDesc_copy": { "message": "Hiki tatau e kouti minified ki he Papafakamaʻu kae ʻikai ko e tohi ki he faile kapau ʻoku fai ha faile maʻuʻanga tokoni ʻe taha" },
-  "optionDesc_cloneFolders": { "message": "Tauhi 'a e fokotu'utu'u 'o e folder 'i he tohi fakahinohino 'o e output" },
+  "optionDesc_relativeOutput": { "message": "Ngaahi faile output 'oku fekau'aki mo e faile ma'u'anga fakamatala takitaha kae 'ikai ko e input root" },
   "optionDesc_rewriteImports": { "message": "Fakafo'ou 'a e ngaahi hala 'o e hū mai mei he .js ki he .min.js" },
   "optionDesc_quiet": { "message": "Taʻofi ʻa e loka kotoa tuku kehe pe ʻa e ngaahi fehalaaki" },
   "optionDesc_ignores": { "message": "Ngaahi faile/ngaahi tohi fakahinohino ke tuku ki tu'a mei he minification" },

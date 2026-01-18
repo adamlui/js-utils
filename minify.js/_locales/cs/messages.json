@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Zakázat mandlování názvů" },
   "optionDesc_noFilenameChange": { "message": "Zakázat změnu přípony souboru .min.js" },
   "optionDesc_copy": { "message": "Zkopírujte zmenšený kód do schránky namísto zápisu do souboru, pokud je zpracován jeden zdrojový soubor" },
-  "optionDesc_cloneFolders": { "message": "Zachovat strukturu složky ve výstupním adresáři" },
+  "optionDesc_relativeOutput": { "message": "Výstupní soubory související s každým zdrojovým souborem namísto vstupu kořenového adresáře" },
   "optionDesc_rewriteImports": { "message": "Aktualizovat cesty importu z .js na .min.js" },
   "optionDesc_quiet": { "message": "Potlačit veškeré protokolování kromě chyb" },
   "optionDesc_ignores": { "message": "Soubory/adresáře, které chcete vyloučit z minifikace" },

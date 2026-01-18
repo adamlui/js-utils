@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "Nyahdayakan nama mangling" },
   "optionDesc_noFilenameChange": { "message": "Lumpuhkan perubahan sambungan fail ke .min.js" },
   "optionDesc_copy": { "message": "Salin kod minified ke papan klip dan bukannya menulis ke fail jika fail sumber tunggal diproses" },
-  "optionDesc_cloneFolders": { "message": "Kekalkan struktur folder dalam direktori output" },
+  "optionDesc_relativeOutput": { "message": "Fail output relatif kepada setiap fail sumber dan bukannya kepada akar input" },
   "optionDesc_rewriteImports": { "message": "Kemas kini laluan import dari .js ke .min.js" },
   "optionDesc_quiet": { "message": "Sekat semua pembalakan kecuali ralat" },
   "optionDesc_ignores": { "message": "Fail/direktori untuk dikecualikan daripada minifikasi" },

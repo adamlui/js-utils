@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "I-disable ang mga ngalan sa mangling" },
   "optionDesc_noFilenameChange": { "message": "I-disable ang pagbag-o sa extension sa file sa .min.js" },
   "optionDesc_copy": { "message": "Kopyaha ang minified code sa clipboard imbis nga magsulat aron mag-file kung giproseso ang usa ka file nga gigikanan" },
-  "optionDesc_cloneFolders": { "message": "Ipreserba ang istraktura sa folder sa direktoryo sa output" },
+  "optionDesc_relativeOutput": { "message": "Output files nga may kalabutan sa matag tinubdan file sa baylo nga sa input gamut" },
   "optionDesc_rewriteImports": { "message": "Pag-update sa mga agianan sa pag-import gikan sa .js ngadto sa .min.js" },
   "optionDesc_quiet": { "message": "Pugngan ang tanan nga pag-log gawas sa mga sayup" },
   "optionDesc_ignores": { "message": "Mga file/direktoryo nga dili iapil sa minification" },

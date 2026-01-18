@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "मैंगलिंग नाम अक्षम करें" },
   "optionDesc_noFilenameChange": { "message": "फ़ाइल एक्सटेंशन को .min.js में बदलना अक्षम करें" },
   "optionDesc_copy": { "message": "यदि एकल स्रोत फ़ाइल संसाधित की जाती है तो फ़ाइल को लिखने के बजाय क्लिपबोर्ड पर मिनीफ़ाइड कोड कॉपी करें" },
-  "optionDesc_cloneFolders": { "message": "आउटपुट निर्देशिका में फ़ोल्डर संरचना को संरक्षित करें" },
+  "optionDesc_relativeOutput": { "message": "इनपुट रूट के बजाय प्रत्येक स्रोत फ़ाइल के सापेक्ष आउटपुट फ़ाइलें" },
   "optionDesc_rewriteImports": { "message": ".js से .min.js तक इम्पोर्ट पाथ अपडेट करें" },
   "optionDesc_quiet": { "message": "त्रुटियों को छोड़कर सभी लॉगिंग को दबाएं" },
   "optionDesc_ignores": { "message": "फ़ाइलें/निर्देशिकाएँ जिन्हें मिनिफ़िकेशन से बाहर रखा जाना है" },

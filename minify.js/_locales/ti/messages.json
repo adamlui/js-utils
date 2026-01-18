@@ -38,7 +38,7 @@
   "optionDesc_noMangle": { "message": "ስማት ማንግሊንግ ኣጥፍእ" },
   "optionDesc_noFilenameChange": { "message": "ፋይል ምስፍሕፋሕ ናብ .min.js ቀይር" },
   "optionDesc_copy": { "message": "ሓደ ምንጪ ፋይል ምስ ዚሰርሕ ፡ ኣብ ክንዲ ዚጽሕፍ ፡ ናብ ክሊፕቦርድ እተቐርጸ ኮድ ቅዳሕ" },
-  "optionDesc_cloneFolders": { "message": "ኣብ ኣቃውማ ውፅኢት ዘሎ ቅርጺ ኣቃውማ ኣቃውማ" },
+  "optionDesc_relativeOutput": { "message": "ናይ ምውጻእ ፋይላት ምስ ነፍሲ ወከፍ ምንጪ ፋይል ኣብ ክንዲ ናብ ሱር ምእታው" },
   "optionDesc_rewriteImports": { "message": "ካብ .js ናብ .min.js ናይ ምእታው መገድታት ዝሕደስ" },
   "optionDesc_quiet": { "message": "ጌጋታት እንተዘይኮይኑ ፡ ንዅሉ ምዝገባታት ኣጥፍእ" },
   "optionDesc_ignores": { "message": "ፋይላት/ዳይሬክቶረራት ካብ ምጉዳል ክስረዙ" },
