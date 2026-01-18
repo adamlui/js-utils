@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Зачувај ја структурата на папките во излезниот директориум" },
   "optionDesc_noRewriteImports": { "message": "Оневозможете ажурирање на патеките за увоз од .js до .min.js" },
   "optionDesc_quiet": { "message": "Потисни ги сите евиденции освен грешките" },
-  "optionDesc_ignoreFiles": { "message": "Датотеки што треба да се исклучат од минификацијата" },
+  "optionDesc_ignores": { "message": "Датотеки/директориуми што треба да се исклучат од минификацијата" },
   "optionDesc_commentMain": { "message": "Препуштете го коментарот на заглавието на минимизиран код" },
   "optionDesc_commentExtra": { "message": "Одделете по ред со „\\n“" },
   "optionDesc_help": { "message": "Прикажи екран за помош" },

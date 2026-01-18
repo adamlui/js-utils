@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "ኣብ ኣቃውማ ውፅኢት ዘሎ ቅርጺ ኣቃውማ ኣቃውማ" },
   "optionDesc_noRewriteImports": { "message": "ካብ .js to .min.js ናይ ምእታው መገድታት ምምላእ" },
   "optionDesc_quiet": { "message": "ጌጋታት እንተዘይኮይኑ ፡ ንዅሉ ምዝገባታት ኣጥፍእ" },
-  "optionDesc_ignoreFiles": { "message": "ካብ ምጥፋእ ክስረዙ ዝኽእሉ ፋይላት" },
+  "optionDesc_ignores": { "message": "ፋይላት/ዳይሬክቶረራት ካብ ምጉዳል ክስረዙ" },
   "optionDesc_commentMain": { "message": "ናብ ዝተሓተ ኮድ ናይ ርእሲ ርእይቶ ኣዳልዩ" },
   "optionDesc_commentExtra": { "message": "'\\n' ብምጥቃም ብመስመር ተፈልዩ" },
   "optionDesc_help": { "message": "ናይ ሓገዝ ስክሪን ኣርኢ" },

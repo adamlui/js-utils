@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Chiqish katalogida papka tuzilishini saqlang" },
   "optionDesc_noRewriteImports": { "message": ".js dan .min.js ga import yo'llarini yangilashni o'chirib qo'yish" },
   "optionDesc_quiet": { "message": "Xatolardan tashqari barcha jurnallarni bostirish" },
-  "optionDesc_ignoreFiles": { "message": "Kichiklashtirishdan istisno qilinadigan fayllar" },
+  "optionDesc_ignores": { "message": "Minififikatsiyadan chiqarib tashlanadigan fayllar/kataloglar" },
   "optionDesc_commentMain": { "message": "Kichiklashtirilgan kodga sarlavha izohini qo'shing" },
   "optionDesc_commentExtra": { "message": "“\\n” yordamida qator boʻyicha ajrating" },
   "optionDesc_help": { "message": "Yordam ekranini ko'rsatish" },

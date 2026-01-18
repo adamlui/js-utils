@@ -148,7 +148,7 @@ $ minify-js input_folder output_folder
  -q, --quiet                          禁止除錯誤之外的所有日誌記錄。
 
 參數選項：
- --ignore-files="file1.js,file2.js"   要從縮小中排除的檔案。
+ --ignores="dir/,file1.js,file2.js"   要排除在壓縮之外的檔案/目錄。
  --comment="comment"                  將標題註解新增到縮小的程式碼中。使用 '\n' 按行分隔。
 
 訊息命令：
@@ -225,7 +225,7 @@ minifyJS.minify(input, { dotFiles: true });
 `mangle`         | 布林值 | 縮短變數名稱（通常為一個字元）。                    | `true`
 `rewriteImports` | 布林值 | 將導入路徑從 .js 更新為 .min.js。                  | `true`
 `cloneFolders`   | 布林值 | 保留輸出目錄中的資料夾結構。                        | `false`
-`ignoreFiles`    | 大批   | 要從縮小中排除的檔案（按名稱）。                    | `[]`
+`ignores`        | 大批   | 要排除在壓縮之外的檔案/目錄。                       | `[]`
 `comment`        | 細繩   | 加入到縮小程式碼之前的標頭註解。使用 '\n' 按行分隔。 | `''`
 
 #
@@ -261,7 +261,7 @@ findJS() » Check returned array.
 `verbose`     | 布林值 | 在控制台/終端機中顯示日誌記錄。          | `true`
 `dotFolders`  | 布林值 | 在文件搜尋中包含點資料夾。               | `false`
 `dotFiles`    | 布林值 | 在文件搜尋中包含點文件。                 | `false`
-`ignoreFiles` | 大批   | 要從搜尋結果中排除的檔案（按名稱）。      | `[]`
+`ignores`     | 大批   | 要排除在壓縮之外的檔案/目錄。            | `[]`
 
 <br>
 

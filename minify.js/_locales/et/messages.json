@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Säilita kaustastruktuur väljundkataloogis" },
   "optionDesc_noRewriteImports": { "message": "Keela imporditeede värskendamine .js-lt .min.js-le" },
   "optionDesc_quiet": { "message": "Tühista kogu logimine, välja arvatud vead" },
-  "optionDesc_ignoreFiles": { "message": "Failid, mida minimeerimisest välja jätta" },
+  "optionDesc_ignores": { "message": "Failid/kataloogid, mida minimeerimisest välja jätta" },
   "optionDesc_commentMain": { "message": "Lisa päise kommentaar eelnevalt minimeeritud koodile" },
   "optionDesc_commentExtra": { "message": "Eralda reaga, kasutades '\\n'" },
   "optionDesc_help": { "message": "Abi ekraani kuvamine" },

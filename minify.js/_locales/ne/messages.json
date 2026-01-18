@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "निर्गत डाइरेक्टरीमा फोल्डर संरचना संरक्षण गर्नुहोस्" },
   "optionDesc_noRewriteImports": { "message": ".js बाट .min.js सम्म आयात मार्गहरू अद्यावधिक गर्न अक्षम पार्नुहोस्" },
   "optionDesc_quiet": { "message": "त्रुटिहरू बाहेक सबै लगिङलाई दबाउनुहोस्" },
-  "optionDesc_ignoreFiles": { "message": "मिनिफिकेसनबाट बहिष्कृत गर्नुपर्ने फाइलहरू" },
+  "optionDesc_ignores": { "message": "फाइलहरू/डाइरेक्टरीहरू minification बाट बहिष्कृत गर्न" },
   "optionDesc_commentMain": { "message": "सानो कोडमा हेडर टिप्पणी पठाउनुहोस्" },
   "optionDesc_commentExtra": { "message": "'\\n'प्रयोग गरेर लाइन अनुसार छुट्याउनुहोस्" },
   "optionDesc_help": { "message": "मद्दत स्क्रिन प्रदर्शन गर्नुहोस्" },

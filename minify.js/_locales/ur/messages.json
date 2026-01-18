@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "آؤٹ پٹ ڈائرکٹری میں فولڈر کا ڈھانچہ محفوظ رکھیں" },
   "optionDesc_noRewriteImports": { "message": ".js سے .min.js تک درآمد کے راستے اپ ڈیٹ کرنا غیر فعال کریں" },
   "optionDesc_quiet": { "message": "غلطیوں کے علاوہ تمام لاگنگ کو دبائیں" },
-  "optionDesc_ignoreFiles": { "message": "فائلیں جنہیں منیفیکیشن سے خارج کرنا ہے" },
+  "optionDesc_ignores": { "message": "فائلوں/ڈائریکٹریز کو چھوٹی کرنے سے خارج کرنا" },
   "optionDesc_commentMain": { "message": "ہیڈر کے تبصرے کو چھوٹے کوڈ میں پیش کریں" },
   "optionDesc_commentExtra": { "message": "'\\n 'کا استعمال کرتے ہوئے لائن کے لحاظ سے الگ کریں" },
   "optionDesc_help": { "message": "مدد کی اسکرین ڈسپلے کریں" },

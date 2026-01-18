@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Çykyş katalogynda kagyzyň gurluşygyny sakla" },
   "optionDesc_noRewriteImports": { "message": ".js-den .min.js-e äkidilýän ýollary üýtget" },
   "optionDesc_quiet": { "message": "Ýalňyşlyklardan başga ähli ýalňyşlyklary ýok etmek" },
-  "optionDesc_ignoreFiles": { "message": "Minifikasiýadan çykarylan faýllar" },
+  "optionDesc_ignores": { "message": "Minifikasyýadan çykarylan faýllar/direktoriýalar" },
   "optionDesc_commentMain": { "message": "Minified code üçin baştutanlyk pikirini taýýarlaň" },
   "optionDesc_commentExtra": { "message": "'\\n' sözi bilen hatyň arasyndaky aýrylyşmak" },
   "optionDesc_help": { "message": "Yardam ekrany görkez" },

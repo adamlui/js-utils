@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "پاشه ‌ كه ‌ وتكردنی پێكه ‌اته ‌ ی بوخچه ‌ كه ‌ له ‌ فه ‌ رمان" },
   "optionDesc_noRewriteImports": { "message": "ڕاستاندنی .js گۆکردنەکان" },
   "optionDesc_quiet": { "message": "هەموو تۆمارکردنێک سەرکوت بکە جگە لە هەڵەکان" },
-  "optionDesc_ignoreFiles": { "message": "فایلەکان بۆ دەرکردن لە بچووککردنەوە" },
+  "optionDesc_ignores": { "message": "دەستپێک/پەڕە نەگۆڕەکان" },
   "optionDesc_commentMain": { "message": "زیادکردنی هاوپۆل بۆ Minified Code" },
   "optionDesc_commentExtra": { "message": "بە بەکارهێنانی '\\n' بە دێڕ جیا بکەرەوە." },
   "optionDesc_help": { "message": "شاشەی یارمەتی پیشان بدە" },

@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "ປົກປັກຮັກສາໂຄງສ້າງໂຟນເດີໃນດັດສະນີຜົນຜະລິດ" },
   "optionDesc_noRewriteImports": { "message": "ປິດໃຊ້ງານການອັບເດດເສັ້ນທາງນໍາເຂົ້າຈາກ .js ເຖິງ .min.js" },
   "optionDesc_quiet": { "message": "ສະກັດກັ້ນການຕັດໄມ້ທັງໝົດ ຍົກເວັ້ນຂໍ້ຜິດພາດ" },
-  "optionDesc_ignoreFiles": { "message": "ໄຟລ໌ທີ່ຈະຍົກເວັ້ນຈາກ minification" },
+  "optionDesc_ignores": { "message": "ໄຟລ໌/ໄດເລກະທໍລີທີ່ຈະຍົກເວັ້ນຈາກ minification" },
   "optionDesc_commentMain": { "message": "Prepend header ອອກຄໍາເຫັນເປັນລະຫັດ minified" },
   "optionDesc_commentExtra": { "message": "ແຍກຕ່າງຫາກຕາມເສັ້ນໂດຍໃຊ້ '\\n'" },
   "optionDesc_help": { "message": "ສະແດງໜ້າຈໍຊ່ວຍເຫຼືອ" },

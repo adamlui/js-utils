@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "รักษาโครงสร้างโฟลเดอร์ในไดเรกทอรีเอาต์พุต" },
   "optionDesc_noRewriteImports": { "message": "ปิดใช้งานการอัปเดตเส้นทางการนำเข้าจาก .js เป็น .min.js" },
   "optionDesc_quiet": { "message": "ระงับการบันทึกทั้งหมดยกเว้นข้อผิดพลาด" },
-  "optionDesc_ignoreFiles": { "message": "ไฟล์ที่จะแยกออกจากการย่อ" },
+  "optionDesc_ignores": { "message": "ไฟล์/ไดเรกทอรีที่จะแยกออกจากการย่อ" },
   "optionDesc_commentMain": { "message": "แสดงความคิดเห็นส่วนหัวล่วงหน้าไปยังรหัสย่อ" },
   "optionDesc_commentExtra": { "message": "แยกตามบรรทัดโดยใช้ '\\n'" },
   "optionDesc_help": { "message": "หน้าจอวิธีใช้การแสดงผล" },

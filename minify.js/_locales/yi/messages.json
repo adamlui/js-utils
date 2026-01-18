@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "באַוואָרן טעקע סטרוקטור אין רעזולטאַט דירעקטאָרי" },
   "optionDesc_noRewriteImports": { "message": "דיאַקטיווירן דעם אַפּדייט פון אימפּאָרט פּאַטס פֿון .js צו .min.js" },
   "optionDesc_quiet": { "message": "פאַרשטיקן אַלע לאָגינג אַחוץ ערראָרס" },
-  "optionDesc_ignoreFiles": { "message": "טעקעס צו ויסשליסן פון מיניפיקאַטיאָן" },
+  "optionDesc_ignores": { "message": "טעקעס/דירעקטאָריעס צו אויסשליסן פון מיניפיקאַציע" },
   "optionDesc_commentMain": { "message": "פּרעפּענד כעדער באַמערקונג צו מינאַפייד קאָד" },
   "optionDesc_commentExtra": { "message": "באַזונדער דורך שורה ניצן '\\n'" },
   "optionDesc_help": { "message": "ווייַז הילף פאַרשטעלן" },

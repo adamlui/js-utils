@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Konservi dosierujan strukturon en eliga dosierujo" },
   "optionDesc_noRewriteImports": { "message": "Malŝalti ĝisdatigon de importvojoj de .js al .min.js" },
   "optionDesc_quiet": { "message": "Subpremi ĉiujn registradojn krom eraroj" },
-  "optionDesc_ignoreFiles": { "message": "Dosieroj por ekskludi de minifikado" },
+  "optionDesc_ignores": { "message": "Dosieroj/adresaroj por ekskludi de minifikado" },
   "optionDesc_commentMain": { "message": "@ info: whatsthis" },
   "optionDesc_commentExtra": { "message": "Apartigi per linio uzante '\\n'" },
   "optionDesc_help": { "message": "Montri helpekranon" },

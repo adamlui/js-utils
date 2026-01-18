@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Mitahiry ny firafitry ny laha-tahiry ao amin'ny lahatahiry output" },
   "optionDesc_noRewriteImports": { "message": "Foano ny fanavaozana ny sori-dàlan'ny import avy amin'ny .js mankany amin'ny .min.js" },
   "optionDesc_quiet": { "message": "Hanafoana ny logging rehetra afa-tsy fahadisoana" },
-  "optionDesc_ignoreFiles": { "message": "Ny rakitra azo alefa avy amin'ny minification" },
+  "optionDesc_ignores": { "message": "Ny rakitra/lahatahiry azo esorina avy amin'ny fanalehibiazana" },
   "optionDesc_commentMain": { "message": "Manomàna fanehoan-kevitry ny loham-pejy amin'ny kaody voamarina" },
   "optionDesc_commentExtra": { "message": "Vahao amin'ny tsipika amin'ny alalan'ny '\\n'" },
   "optionDesc_help": { "message": "Asehoy ny efijerin'ny toro-làlana" },

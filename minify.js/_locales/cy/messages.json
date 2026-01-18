@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Cadw strwythur plygell yn y cyfeiriadur allbwn" },
   "optionDesc_noRewriteImports": { "message": "Analluogi diweddaru llwybrau mewnforio o .js i .min.js" },
   "optionDesc_quiet": { "message": "Atal pob cofnod ac eithrio gwallau" },
-  "optionDesc_ignoreFiles": { "message": "Ffeiliau i'w heithrio o minification" },
+  "optionDesc_ignores": { "message": "Ffeiliau/cyfeiriaduron i'w heithrio o minification" },
   "optionDesc_commentMain": { "message": "Rhagosod sylw pennyn i god mân" },
   "optionDesc_commentExtra": { "message": "Ar wahân yn ôl llinell gan ddefnyddio '\\n '" },
   "optionDesc_help": { "message": "Dangos y sgrin gymorth" },

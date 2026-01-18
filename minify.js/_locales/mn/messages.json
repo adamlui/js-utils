@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Гаралтын лавлах доторх хавтасны бүтцийг хадгалах" },
   "optionDesc_noRewriteImports": { "message": "Импортын замуудыг .js -аас .min.js хүртэл шинэчлэхийг идэвхгүй болгох" },
   "optionDesc_quiet": { "message": "Алдаанаас бусад бүх бүртгэлийг арилгах" },
-  "optionDesc_ignoreFiles": { "message": "Суурилуулалтаас хасах файлууд" },
+  "optionDesc_ignores": { "message": "Суурилуулалтаас хасах файл/сан" },
   "optionDesc_commentMain": { "message": "Зөвшөөрөгдсөн код руу толгой гарчгийг бэлтгэх" },
   "optionDesc_commentExtra": { "message": "'\\n' ашиглан мөрөөр тусгаарлана" },
   "optionDesc_help": { "message": "Тусламжийн дэлгэцийг харуулах" },

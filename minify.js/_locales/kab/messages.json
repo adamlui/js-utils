@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Ḥrez asenfaṛ n ufaylu deg ufaylu n ufaylu n ufaylu" },
   "optionDesc_noRewriteImports": { "message": "Snifel iberdan n usenqed seg .js ar .min.js" },
   "optionDesc_quiet": { "message": "Sizdeg akk tuccḍiwin anagar tuccḍiwin" },
-  "optionDesc_ignoreFiles": { "message": "Isebtar i yellan ddaw-a sɛan aseɣwen ɣer Minification" },
+  "optionDesc_ignores": { "message": "Ifuyla/isefka akken ad yettwakkes seg uẓeṭṭa" },
   "optionDesc_commentMain": { "message": "Aheggi amagrad amezwaru i uḍris n uḍebsi" },
   "optionDesc_commentExtra": { "message": "Tags relatifs à '\\n'" },
   "optionDesc_help": { "message": "Sken allen n tallelt" },

@@ -149,7 +149,7 @@ Boolesche Optionen:
  -q, --quiet                          Unterdrücken Sie alle Protokolle außer Fehlern.
 
 Parameteroptionen:
- --ignore-files="file1.js,file2.js"   Dateien, die von der Minimierung ausgeschlossen werden sollen.
+ --ignores="dir/,file1.js,file2.js"   Dateien/Verzeichnisse, die von der Minimierung ausgeschlossen werden sollen.
  --comment="kommentar"                Kopfzeilenkommentar dem minimierten Code voranstellen. Mit '\n' zeilenweise trennen.
 
 Info-Befehle:
@@ -226,7 +226,7 @@ Name             | Typ             | Beschreibung                               
 `mangle`         | Boolescher Wert | Variablennamen kürzen (normalerweise auf ein Zeichen).                                       | `true`
 `rewriteImports` | Boolescher Wert | Importpfade von .js auf .min.js aktualisieren.                                               | `true`
 `cloneFolders`   | Boolescher Wert | Die Ordnerstruktur im Ausgabeverzeichnis beibehalten.                                        | `false`
-`ignoreFiles`    | Array           | Dateien (nach Namen), die von der Minimierung ausgeschlossen werden sollen.                  | `[]`
+`ignores`        | Array           | Dateien/Verzeichnisse, die von der Minimierung ausgeschlossen werden sollen.                 | `[]`
 `comment`        | Zeichenfolge    | Header-Kommentar, der dem minimierten Code vorangestellt wird. Mit „\n“ zeilenweise trennen. | `''`
 
 #
@@ -262,7 +262,7 @@ Name          | Typ             | Beschreibung                                  
 `verbose`     | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                         | `true`
 `dotFolders`  | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                 | `false`
 `dotFiles`    | Boolescher Wert | Beziehen Sie Punktdateien in die Dateisuche ein.                                | `false`
-`ignoreFiles` | Array           | Dateien (nach Namen), die aus den Suchergebnissen ausgeschlossen werden sollen. | `[]`
+`ignores`     | Array           | Dateien/Verzeichnisse, die von der Minimierung ausgeschlossen werden sollen.    | `[]`
 
 <br>
 

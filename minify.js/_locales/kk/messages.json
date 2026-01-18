@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Шығыс каталогында қалта құрылымын сақтау" },
   "optionDesc_noRewriteImports": { "message": ".js-тен .min.js-ке импорт жолдарын жаңартуды өшіру" },
   "optionDesc_quiet": { "message": "Қателерден басқа барлық жүйеге кіруді болдырмау" },
-  "optionDesc_ignoreFiles": { "message": "Минимализациядан шығарылатын файлдар" },
+  "optionDesc_ignores": { "message": "Минимализациядан шығаратын файлдар/каталогтар" },
   "optionDesc_commentMain": { "message": "Тақырып түсініктемесін минималды кодқа дайындаңыз" },
   "optionDesc_commentExtra": { "message": "'\\n' көмегімен сызық бойынша бөлу" },
   "optionDesc_help": { "message": "Анықтама экранын көрсету" },

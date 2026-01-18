@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Ububiko Imiterere in Ibisohoka bushyinguro" },
   "optionDesc_noRewriteImports": { "message": "Kuzana Inzira Bivuye Kuri min.js" },
   "optionDesc_quiet": { "message": "Kuraho ibiti byose usibye amakosa" },
-  "optionDesc_ignoreFiles": { "message": "Amadosiye yo gukuramo minisiteri" },
+  "optionDesc_ignores": { "message": "Ububiko bw' amaderese Kuri Bivuye" },
   "optionDesc_commentMain": { "message": "Umutwempangano Icyo wongeraho Kuri Inyandikoporogaramu" },
   "optionDesc_commentExtra": { "message": "Tandukanya umurongo ukoresheje '\\n'" },
   "optionDesc_help": { "message": "Erekana ubufasha bwa ecran" },

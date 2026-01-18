@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "ಔಟ್‌ಪುಟ್ ಡೈರೆಕ್ಟರಿಯಲ್ಲಿ ಫೋಲ್ಡರ್ ರಚನೆಯನ್ನು ಸಂರಕ್ಷಿಸಿ" },
   "optionDesc_noRewriteImports": { "message": ".js ನಿಂದ .min.js ಗೆ ಆಮದು ಮಾರ್ಗಗಳನ್ನು ನವೀಕರಿಸುವುದನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ" },
   "optionDesc_quiet": { "message": "ದೋಷಗಳನ್ನು ಹೊರತುಪಡಿಸಿ ಎಲ್ಲಾ ಲಾಗಿಂಗ್ ಅನ್ನು ನಿಗ್ರಹಿಸಿ" },
-  "optionDesc_ignoreFiles": { "message": "ಗಣಿಗಾರಿಕೆಯಿಂದ ಹೊರಗಿಡಬೇಕಾದ ಫೈಲ್ ಗಳು" },
+  "optionDesc_ignores": { "message": "ಗಣಿಗಾರಿಕೆಯಿಂದ ಹೊರಗಿಡಲು ಫೈಲ್‌ಗಳು/ಡೈರೆಕ್ಟರಿಗಳು" },
   "optionDesc_commentMain": { "message": "ಮಿನಿಫೈಡ್ ಕೋಡ್ ‌ ಗೆ ಹೆಡರ್ ಕಾಮೆಂಟ್ ಅನ್ನು ಸಿದ್ಧಪಡಿಸಿ" },
   "optionDesc_commentExtra": { "message": "'\\n' ಬಳಸಿ ಸಾಲಿನ ಪ್ರಕಾರ ಪ್ರತ್ಯೇಕಿಸಿ" },
   "optionDesc_help": { "message": "ಸಹಾಯ ಪರದೆಯನ್ನು ಪ್ರದರ್ಶಿಸಿ" },

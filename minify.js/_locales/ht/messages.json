@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Prezève estrikti katab nan anyè pwodiksyon an" },
   "optionDesc_noRewriteImports": { "message": "Anpeche aktyalizasyon chemen enpòte soti nan .js rive nan .min.js" },
   "optionDesc_quiet": { "message": "Siprime tout antre eksepte erè" },
-  "optionDesc_ignoreFiles": { "message": "Fichye pou eskli nan minifikasyon" },
+  "optionDesc_ignores": { "message": "Dosye/repèrtwar pou eskli nan minifikasyon" },
   "optionDesc_commentMain": { "message": "Prepand kòmantè header nan kòd minifye" },
   "optionDesc_commentExtra": { "message": "Separe pa liy lè l sèvi avèk '\\n'" },
   "optionDesc_help": { "message": "Montre ekran èd" },

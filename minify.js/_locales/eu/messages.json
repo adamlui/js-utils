@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Mantendu karpeta-egitura irteerako direktorioan" },
   "optionDesc_noRewriteImports": { "message": "Desgaitu .js-tik .min.js-ra inportatzeko bideak eguneratzea" },
   "optionDesc_quiet": { "message": "Ezabatu erregistro guztiak erroreak izan ezik" },
-  "optionDesc_ignoreFiles": { "message": "Minifikaziotik baztertzeko fitxategiak" },
+  "optionDesc_ignores": { "message": "Txikitzetik kanpo utzi beharreko fitxategiak/direktorioak" },
   "optionDesc_commentMain": { "message": "Erantsi goiburuko iruzkina txikitutako kodeari" },
   "optionDesc_commentExtra": { "message": "Bereizi lerroka '\\n' erabiliz" },
   "optionDesc_help": { "message": "Bistaratu laguntza-pantaila" },

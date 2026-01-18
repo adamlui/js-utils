@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Bevar mappestrukturen i utdatakatalogen" },
   "optionDesc_noRewriteImports": { "message": "Deaktiver oppdatering av importstier fra .js til .min.js" },
   "optionDesc_quiet": { "message": "Suppress all logging except errors" },
-  "optionDesc_ignoreFiles": { "message": "Files to exclude from minification" },
+  "optionDesc_ignores": { "message": "Filer/kataloger som skal ekskluderes fra minifisering" },
   "optionDesc_commentMain": { "message": "Legg topptekstkommentar til forminsket kode" },
   "optionDesc_commentExtra": { "message": "Separate by line using '\\n'" },
   "optionDesc_help": { "message": "Display help screen" },

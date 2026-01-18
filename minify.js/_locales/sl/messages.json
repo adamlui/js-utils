@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Ohrani strukturo map v izhodni mapi" },
   "optionDesc_noRewriteImports": { "message": "Onemogoči posodabljanje poti uvoza iz .js v .min.js" },
   "optionDesc_quiet": { "message": "Prepreči vse beleženje, razen napak" },
-  "optionDesc_ignoreFiles": { "message": "Datoteke za izključitev iz minifikacije" },
+  "optionDesc_ignores": { "message": "Datoteke/imeniki za izključitev iz minifikacije" },
   "optionDesc_commentMain": { "message": "Predhodno dodaj komentar glave k pomanjšani kodi" },
   "optionDesc_commentExtra": { "message": "Ločeno z vrstico z uporabo »\\n«" },
   "optionDesc_help": { "message": "Prikaži zaslon za pomoč" },

@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Išsaugoti aplanko struktūrą išvesties aplanke" },
   "optionDesc_noRewriteImports": { "message": "Išjungti importavimo kelių atnaujinimą iš .js į .min.js" },
   "optionDesc_quiet": { "message": "Slėpti visus registravimus, išskyrus klaidas" },
-  "optionDesc_ignoreFiles": { "message": "Failai, kuriuos reikia pašalinti iš sumažinimo" },
+  "optionDesc_ignores": { "message": "Failai/katalogai, kuriuos reikia pašalinti iš sumažinimo" },
   "optionDesc_commentMain": { "message": "Iš anksto pridėti antraštės komentarą prie sumažinto kodo" },
   "optionDesc_commentExtra": { "message": "Atskirti eilute naudojant '\\n'" },
   "optionDesc_help": { "message": "Rodyti pagalbos ekraną" },

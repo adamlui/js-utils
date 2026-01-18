@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "ཐོན་སྐྱེད་ཡིག་སྣོད་ནང་ཡིག་སྣོད་བཟོ་རྣམ་བསྲུང་བ" },
   "optionDesc_noRewriteImports": { "message": ".js ནས་.min.js ནང་འདྲེན་ལམ་གྱི་དུས་རྒྱུན་གསར་བཅོས་བྱེད་ནུས་པ" },
   "optionDesc_quiet": { "message": "འཛོལ་བ་མ་གཏོགས་གཞན་གྱི་མིང་ཐོ་ཚང་མ་ཕྱིར་འབུད་བྱེད་པ" },
-  "optionDesc_ignoreFiles": { "message": "ཡིག་ཆ་རྣམས་ཉུང་དུ་གཏོང་རྒྱུར་བཀག་འགོག་བྱེད་པ །" },
+  "optionDesc_ignores": { "message": "ཡིག་ཆ །/ཡིག་ཆ །" },
   "optionDesc_commentMain": { "message": "མདུན་ངོས་ཀྱི་དཔྱད་མཆན་སྒྲིག་འཇུག་བྱས་ཚད ། ས་ཡ 1 + ཐོན་རིམ་5.7.1 ནང་དུ་ཚོད་ལྟ་བྱས་ཟིན ། ཟླ 3 སྔོན་" },
   "optionDesc_commentExtra": { "message": "\"N\" ལག་ལེན་འཐབ་སྟེ་གྲལ་རིམ་སོ་སོར་དབྱེ་དགོས །" },
   "optionDesc_help": { "message": "རོགས་རམ་བརྙན་རིས་མངོན་འཆར" },

@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "আউটপুট ডিরেক্টরিতে ফোল্ডারের কাঠামো সংরক্ষণ করুন" },
   "optionDesc_noRewriteImports": { "message": ".js থেকে .min.js এ আমদানি পাথ আপডেট করা অক্ষম করুন" },
   "optionDesc_quiet": { "message": "ত্রুটি ব্যতীত সমস্ত লগিং দমন করুন" },
-  "optionDesc_ignoreFiles": { "message": "মিনিফিকেশন থেকে বাদ দেওয়া ফাইলগুলি" },
+  "optionDesc_ignores": { "message": "মিনিফিকেশন থেকে বাদ দেওয়ার জন্য ফাইল/ডিরেক্টরি" },
   "optionDesc_commentMain": { "message": "মিনিফাইড কোডে হেডার মন্তব্য প্রিপেইড করুন" },
   "optionDesc_commentExtra": { "message": "'\\n' ব্যবহার করে লাইন দ্বারা পৃথক করুন" },
   "optionDesc_help": { "message": "সহায়তা স্ক্রিন প্রদর্শন করুন" },

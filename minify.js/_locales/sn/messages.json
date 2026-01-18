@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Kuchengetedza forodha mamiriro ari goho Directory" },
   "optionDesc_noRewriteImports": { "message": "Kurega updating imupota nzira kubva .js kuti .min.js" },
   "optionDesc_quiet": { "message": "Dzvinyirira kutema matanda ese kunze kwekukanganisa" },
-  "optionDesc_ignoreFiles": { "message": "Mafaira ekuti asabatanidzwe kubva mukucherechedzwa" },
+  "optionDesc_ignores": { "message": "Mafaira/madhairekitori ekubvisa kubva mukuderedza" },
   "optionDesc_commentMain": { "message": "Prepend header kutaura kuti minified remitemo" },
   "optionDesc_commentExtra": { "message": "Paradzanisa nemutsara uchishandisa '\\n'" },
   "optionDesc_help": { "message": "Ratidza chidzitiro chekubatsira" },

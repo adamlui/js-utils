@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Te hanganga kōpaki tiaki i roto i te aratohu putanga" },
   "optionDesc_noRewriteImports": { "message": "Whakakorea te whakahou i nga huarahi kawemai mai i .js ki .min.js" },
   "optionDesc_quiet": { "message": "Tautoko i te logging katoa engari hapa" },
-  "optionDesc_ignoreFiles": { "message": "Kōnae ki te whakakore i te minification" },
+  "optionDesc_ignores": { "message": "Kōnae/kaiwhakahaere ki te whakakore i te minification" },
   "optionDesc_commentMain": { "message": "Whakaritehia nga korero matua ki te waehere minified" },
   "optionDesc_commentExtra": { "message": "Te wehewehe i te raina ma te whakamahi i te '\\n'" },
   "optionDesc_help": { "message": "Whakaatuhia te mata awhina" },

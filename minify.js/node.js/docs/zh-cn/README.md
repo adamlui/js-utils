@@ -149,7 +149,7 @@ $ minify-js input_folder output_folder
  -q, --quiet                          禁止除错误之外的所有日志记录。
 
 参数选项：
- --ignore-files="file1.js,file2.js"   要从缩小中排除的文件。
+ --ignores="dir/,file1.js,file2.js"   要从压缩过程中排除的文件/目录。
  --comment="comment"                  将标题注释添加到缩小的代码中。使用 '\n' 按行分隔。
 
 信息命令：
@@ -226,7 +226,7 @@ minifyJS.minify(input, { dotFiles: true });
 `mangle`         | 布尔值 | 缩短变量名称（通常为一个字符）。                  | `true`
 `rewriteImports` | 布尔值 | 将导入路径从 .js 更新为 .min.js。                | `true`
 `cloneFolders`   | 布尔值 | 在输出目录中保留文件夹结构。                      | `false`
-`ignoreFiles`    | 大批   | 要从缩小中排除的文件（按名称）。                  | `[]`
+`ignores`        | 大批   | 要从压缩过程中排除的文件/目录。                   | `[]`
 `comment`        | 细绳   | 添加到缩小代码之前的标头注释。使用 '\n' 按行分隔。 | `''`
 
 #
@@ -262,7 +262,7 @@ findJS() » Check returned array.
 `verbose`     | 布尔值 | 在控制台/终端中显示日志记录。           | `true`
 `dotFolders`  | 布尔值 | 在文件搜索中包括点文件夹。              | `false`
 `dotFiles`    | 布尔值 | 在文件搜索中包含点文件。                | `false`
-`ignoreFiles` | 大批   | 要从搜索结果中排除的文件（按名称）。     | `[]`
+`ignores`     | 大批   | 要从压缩过程中排除的文件/目录。         | `[]`
 
 <br>
 

@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Conservar a estrutura de cartafoles no cartafol de saída" },
   "optionDesc_noRewriteImports": { "message": "Desactivar actualizar rutas de importación de .js a .min.js" },
   "optionDesc_quiet": { "message": "Suprimir todo o rexistro agás erros" },
-  "optionDesc_ignoreFiles": { "message": "Ficheiros para excluír da minificación" },
+  "optionDesc_ignores": { "message": "Ficheiros/directorios para excluír da minificación" },
   "optionDesc_commentMain": { "message": "Engadir o comentario da cabeceira ao código minificado" },
   "optionDesc_commentExtra": { "message": "Separar por liña usando '\\n'" },
   "optionDesc_help": { "message": "Mostrar a pantalla de axuda" },

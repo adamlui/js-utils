@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Bảo tồn cấu trúc thư mục trong thư mục đầu ra" },
   "optionDesc_noRewriteImports": { "message": "Vô hiệu hóa cập nhật đường dẫn nhập từ .js sang .min.js" },
   "optionDesc_quiet": { "message": "Chặn tất cả ghi nhật ký ngoại trừ lỗi" },
-  "optionDesc_ignoreFiles": { "message": "Các tệp cần loại trừ khỏi quá trình thu nhỏ" },
+  "optionDesc_ignores": { "message": "Các tệp/thư mục để loại trừ khỏi thu nhỏ" },
   "optionDesc_commentMain": { "message": "Gửi trước nhận xét tiêu đề cho mã đã rút gọn" },
   "optionDesc_commentExtra": { "message": "Phân tách bằng dòng sử dụng '\\n'" },
   "optionDesc_help": { "message": "Hiển thị màn hình trợ giúp" },

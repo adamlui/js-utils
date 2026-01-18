@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Hayso qaab-dhismeedka folder in buugga wax soo saarka" },
   "optionDesc_noRewriteImports": { "message": "Disable cusbooneysiinta dariiqyada soo dejinta laga bilaabo .js ilaa .min.js" },
   "optionDesc_quiet": { "message": "Xannib dhammaan gelitaanka marka laga reebo khaladaadka" },
-  "optionDesc_ignoreFiles": { "message": "Files in laga saaro minification" },
+  "optionDesc_ignores": { "message": "Faylasha/tilmaamayaasha si looga fogaado minification" },
   "optionDesc_commentMain": { "message": "Diyaarso faallo header ah oo ku saabsan koodhka minified" },
   "optionDesc_commentExtra": { "message": "Kala sooc khadka adoo adeegsanaya '\\n'" },
   "optionDesc_help": { "message": "Muuji shaashadda caawinta" },

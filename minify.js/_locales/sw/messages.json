@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Hifadhi muundo wa folda katika saraka ya pato" },
   "optionDesc_noRewriteImports": { "message": "Lemaza kusasisha njia za kuagiza kutoka .js hadi .min.js" },
   "optionDesc_quiet": { "message": "Zima ukataji wote wa magogo isipokuwa hitilafu" },
-  "optionDesc_ignoreFiles": { "message": "Mafaili ya kujiondoa kwenye uchanganuzi" },
+  "optionDesc_ignores": { "message": "Faili/saraka za kuwatenga kutoka kwenye uchanganuzi" },
   "optionDesc_commentMain": { "message": "Andaa maoni ya kichwa kwenye msimbo uliopunguzwa" },
   "optionDesc_commentExtra": { "message": "Tenganisha kwa mstari kwa kutumia '\\n'" },
   "optionDesc_help": { "message": "Onyesha skrini ya usaidizi" },

@@ -76,7 +76,7 @@ const pkgName = '@adamlui/minify.js',
             'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
         },
         paramOptions: {
-            'ignoreFiles': /^--?(?:ignore|skip|exclude)(?:d?-?files?)?(?:=.*|$)/,
+            'ignores': /^--?ignores?(?:=.*|$)/,
             'comment': /^--?comments?(?:=.*|$)/
         },
         infoCmds: { 'help': /^--?h(?:elp)?$/,'version': /^--?ve?r?s?i?o?n?$/ }
@@ -153,7 +153,7 @@ const pkgName = '@adamlui/minify.js',
         const unminnedJSfiles = inputPath.endsWith('.js') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
             : minifyJS.findJS(inputPath, {
                 recursive: !config.noRecursion, verbose: !config.quietMode,
-                ignoreFiles: (config.ignoreFiles?.split(',') ?? []).map(file => file.trim())
+                ignores: (config.ignores?.split(',') ?? []).map(item => item.trim())
             })
 
         if (config.dryRun) { // -n or --dry-run passed
@@ -172,7 +172,7 @@ const pkgName = '@adamlui/minify.js',
                     comment: config.comment?.replace(/\\n/g, '\n'), cloneFolders: true, recursive: !config.noRecursion,
                     dotFolders: !!config.includeDotFolders, dotFiles: !!config.includeDotFiles,
                     rewriteImports: !config.noRewriteImports,
-                    ignoreFiles: config.ignoreFiles ? config.ignoreFiles.split(',').map(file => file.trim()) : []
+                    ignores: config.ignores ? config.ignores.split(',').map(item => item.trim()) : []
                 })
                 if (minifyResult) {
                     if (minifyResult.error) failedPaths.push(inputPath)
@@ -293,7 +293,7 @@ const pkgName = '@adamlui/minify.js',
             ],
             'paramOptions': [
                 `\n${bw}o ${ msgs.helpSection_paramOptions || 'Parameter options' }:${nc}`,
-                `--ignore-files="file1.js,file2.js"   ${ msgs.optionDesc_ignoreFiles || 'Files to exclude from minification' }.`,
+                `--ignores="dir/,file1.js,file2.js"   ${ msgs.optionDesc_ignores || 'Files/directories to exclude from minification' }.`,
                 `--comment="comment"                  ${ msgs.optionDesc_commentMain || 'Prepend header comment to minified code' }.`
                                                  +  ` ${ msgs.optionDesc_commentExtra || 'Separate by line using \'\\n\'' }.`
             ],

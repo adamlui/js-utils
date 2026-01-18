@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Bevara mappstrukturen i utdatakatalogen" },
   "optionDesc_noRewriteImports": { "message": "Inaktivera uppdatering av importvägar från .js till .min.js" },
   "optionDesc_quiet": { "message": "Dölj all loggning utom fel" },
-  "optionDesc_ignoreFiles": { "message": "Filer att utesluta från minifiering" },
+  "optionDesc_ignores": { "message": "Filer/kataloger att utesluta från minifiering" },
   "optionDesc_commentMain": { "message": "Förbered rubrikkommentar till minifierad kod" },
   "optionDesc_commentExtra": { "message": "Separera med rad med '\\n'" },
   "optionDesc_help": { "message": "Visa hjälpskärmen" },

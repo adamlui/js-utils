@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "ഔട്ട്പുട്ട് ഡയറക്ടറിയിൽ ഫോൾഡർ ഘടന സംരക്ഷിക്കുക" },
   "optionDesc_noRewriteImports": { "message": ".js മുതൽ .min.js വരെയുള്ള ഇറക്കുമതി പാതകൾ അപ്‌ഡേറ്റ് ചെയ്യുന്നത് അപ്രാപ്തമാക്കുക" },
   "optionDesc_quiet": { "message": "പിശകുകൾ ഒഴികെ എല്ലാ ലോഗിംഗും അടിച്ചമർത്തുക" },
-  "optionDesc_ignoreFiles": { "message": "മിനിഫിക്കേഷനിൽ നിന്ന് ഒഴിവാക്കേണ്ട ഫയലുകൾ" },
+  "optionDesc_ignores": { "message": "മിനിഫിക്കേഷനിൽ നിന്ന് ഒഴിവാക്കേണ്ട ഫയലുകൾ/ഡയറക്ടറികൾ" },
   "optionDesc_commentMain": { "message": "മിനിഫൈഡ് കോഡിലേക്ക് ഹെഡർ അഭിപ്രായം മുൻകൂട്ടി തയ്യാറാക്കുക" },
   "optionDesc_commentExtra": { "message": "'\\n' ഉപയോഗിച്ച് ലൈൻ അനുസരിച്ച് വേർതിരിക്കുക" },
   "optionDesc_help": { "message": "സഹായ സ്ക്രീൻ പ്രദർശിപ്പിക്കുക" },

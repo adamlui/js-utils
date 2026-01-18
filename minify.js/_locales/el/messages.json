@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Διατήρηση δομής φακέλου στον κατάλογο εξόδου" },
   "optionDesc_noRewriteImports": { "message": "Απενεργοποίηση ενημέρωσης διαδρομών εισαγωγής από .js σε .min.js" },
   "optionDesc_quiet": { "message": "Καταργήστε όλες τις καταγραφές εκτός από τα σφάλματα" },
-  "optionDesc_ignoreFiles": { "message": "Αρχεία προς εξαίρεση από την ελαχιστοποίηση" },
+  "optionDesc_ignores": { "message": "Αρχεία/κατάλογοι για εξαίρεση από την ελαχιστοποίηση" },
   "optionDesc_commentMain": { "message": "Προετοιμασία σχολίου κεφαλίδας σε ελαχιστοποιημένο κώδικα" },
   "optionDesc_commentExtra": { "message": "Διαχωρίστε με βάση τη γραμμή χρησιμοποιώντας το '\\n'" },
   "optionDesc_help": { "message": "Εμφάνιση οθόνης βοήθειας" },

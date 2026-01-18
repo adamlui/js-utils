@@ -149,7 +149,7 @@ Opciones booleanas:
  -q, --quiet                          Suprime todos los registros excepto los errores.
 
 Opciones de parámetros:
- --ignore-files="file1.js,file2.js"   Archivos para excluir de la minificación.
+ --ignores="dir/,file1.js,file2.js"   Archivos/directorios que se excluirán del proceso de minificación.
  --comment="comentar"                 Anteponga el comentario del encabezado al código minimizado. Separe por línea usando '\n'.
 
 Comandos de información:
@@ -226,7 +226,7 @@ Nombre           | Tipo      | Descripción                                     
 `mangle`         | Booleano  | Acorte los nombres de las variables (normalmente a un carácter).                            | `true`
 `rewriteImports` | Booleano  | Actualizar las rutas de importación de .js a .min.js.                                       | `true`
 `cloneFolders`   | Booleano  | Conservar la estructura de carpetas en el directorio de salida.                             | `false`
-`ignoreFiles`    | Formación | Archivos (por nombre) para excluir de la minificación.                                      | `[]`
+`ignores`        | Formación | Archivos/directorios que se excluirán del proceso de minificación.                          | `[]`
 `comment`        | Cadena    | Comentario de encabezado para anteponer al código minimizado. Separe por línea usando '\n'. | `''`
 
 #
@@ -256,13 +256,13 @@ findJS() » Check returned array.
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:
 
-Nombre        | Tipo      | Descripción                                                       | Valor por defecto
---------------|-----------|-------------------------------------------------------------------|-------------------
-`recursive`   | Booleano  | Se pasó la búsqueda recursiva de archivos anidados en searchDir.  | `true`
-`verbose`     | Booleano  | Mostrar registros en la consola/terminal.                         | `true`
-`dotFolders`  | Booleano  | Incluya carpetas de puntos en la búsqueda de archivos.            | `false`
-`dotFiles`    | Booleano  | Incluya archivos de puntos en la búsqueda de archivos.            | `false`
-`ignoreFiles` | Formación | Archivos (por nombre) para excluir de los resultados de búsqueda. | `[]`
+Nombre        | Tipo      | Descripción                                                        | Valor por defecto
+--------------|-----------|--------------------------------------------------------------------|-------------------
+`recursive`   | Booleano  | Se pasó la búsqueda recursiva de archivos anidados en searchDir.   | `true`
+`verbose`     | Booleano  | Mostrar registros en la consola/terminal.                          | `true`
+`dotFolders`  | Booleano  | Incluya carpetas de puntos en la búsqueda de archivos.             | `false`
+`dotFiles`    | Booleano  | Incluya archivos de puntos en la búsqueda de archivos.             | `false`
+`ignores`     | Formación | Archivos/directorios que se excluirán del proceso de minificación. | `[]`
 
 <br>
 

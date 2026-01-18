@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Zachovať štruktúru priečinkov vo výstupnom priečinku" },
   "optionDesc_noRewriteImports": { "message": "Zakázať aktualizáciu ciest importu z .js na .min.js" },
   "optionDesc_quiet": { "message": "Potlačiť všetky protokoly okrem chýb" },
-  "optionDesc_ignoreFiles": { "message": "Súbory, ktoré sa majú vylúčiť z minifikácie" },
+  "optionDesc_ignores": { "message": "Súbory/adresáre, ktoré sa majú vylúčiť z minifikácie" },
   "optionDesc_commentMain": { "message": "Predložiť komentár hlavičky k minifikovanému kódu" },
   "optionDesc_commentExtra": { "message": "Oddeľte riadkom pomocou '\\n'" },
   "optionDesc_help": { "message": "Zobraziť obrazovku pomocníka" },

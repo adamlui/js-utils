@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Запазване на структурата на папките в изходната директория" },
   "optionDesc_noRewriteImports": { "message": "Деактивиране на актуализирането на пътищата за импортиране от .js до .min.js" },
   "optionDesc_quiet": { "message": "Потискане на всички записи, с изключение на грешките" },
-  "optionDesc_ignoreFiles": { "message": "Файлове за изключване от минимизиране" },
+  "optionDesc_ignores": { "message": "Файлове/директории за изключване от минимизиране" },
   "optionDesc_commentMain": { "message": "Предварително добавяне на коментар в хедъра към минимизиран код" },
   "optionDesc_commentExtra": { "message": "Разделете по ред, като използвате '\\n'" },
   "optionDesc_help": { "message": "Показване на помощния екран" },

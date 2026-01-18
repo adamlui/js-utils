@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Säilytä kansiorakenne lähtöhakemistossa" },
   "optionDesc_noRewriteImports": { "message": "Poista käytöstä tuontipolkujen päivittäminen .js: stä .min.js: ään" },
   "optionDesc_quiet": { "message": "Poista kaikki kirjaukset paitsi virheet" },
-  "optionDesc_ignoreFiles": { "message": "Minifikaatiosta poistettavat tiedostot" },
+  "optionDesc_ignores": { "message": "Minifikaatiosta suljettavat tiedostot/hakemistot" },
   "optionDesc_commentMain": { "message": "Lisää otsikon kommentti pienennettyyn koodiin" },
   "optionDesc_commentExtra": { "message": "Erota rivillä käyttämällä '\\n'" },
   "optionDesc_help": { "message": "Näytä ohjenäyttö" },

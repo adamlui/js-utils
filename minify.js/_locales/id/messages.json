@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Pertahankan struktur folder dalam direktori output" },
   "optionDesc_noRewriteImports": { "message": "Nonaktifkan pembaruan jalur impor dari .js ke .min.js" },
   "optionDesc_quiet": { "message": "Cegah semua pencatatan kecuali kesalahan" },
-  "optionDesc_ignoreFiles": { "message": "File untuk dikecualikan dari minifikasi" },
+  "optionDesc_ignores": { "message": "File/direktori untuk dikecualikan dari minifikasi" },
   "optionDesc_commentMain": { "message": "Komentar header prepend ke kode minified" },
   "optionDesc_commentExtra": { "message": "Pisahkan berdasarkan baris menggunakan '\\n '" },
   "optionDesc_help": { "message": "Tampilkan layar bantuan" },

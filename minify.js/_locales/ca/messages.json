@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Conservar l'estructura de carpetes al directori de sortida" },
   "optionDesc_noRewriteImports": { "message": "Desactiva l'actualització dels camins d'importació de .js a .min.js" },
   "optionDesc_quiet": { "message": "Suprimeix tot el registre, excepte els errors" },
-  "optionDesc_ignoreFiles": { "message": "Fitxers a excloure de la minificació" },
+  "optionDesc_ignores": { "message": "Fitxers/directoris a excloure de la minificació" },
   "optionDesc_commentMain": { "message": "Afegeix el comentari de la capçalera al codi minificat" },
   "optionDesc_commentExtra": { "message": "Separar per línia mitjançant '\\n'" },
   "optionDesc_help": { "message": "Mostra la pantalla d'ajuda" },

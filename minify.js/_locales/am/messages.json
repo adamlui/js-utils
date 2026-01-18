@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "የውጤት ማውጫ ውስጥ አቃፊ መዋቅር ጠብቅ" },
   "optionDesc_noRewriteImports": { "message": "ከ .js ወደ .min.js የማስመጣት መንገዶችን ማዘመን ያሰናክሉ" },
   "optionDesc_quiet": { "message": "ከስህተቶች በስተቀር ሁሉንም የመግቢያዎች መሙላት" },
-  "optionDesc_ignoreFiles": { "message": "የማዕድን ማውጫዎችን ለማስወገድ ፋይሎች" },
+  "optionDesc_ignores": { "message": "የማዕድን ማውጫ/ማውጫዎች" },
   "optionDesc_commentMain": { "message": "ለማዕድን ኮድ የርዕስ አስተያየት ያዘጋጁ" },
   "optionDesc_commentExtra": { "message": "'\\n' በመጠቀም መስመር በመለያየት" },
   "optionDesc_help": { "message": "የእገዛ ማያ ገጽ አሳይ" },

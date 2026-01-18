@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Save long ol samting ol i bin wokim long ol samting ol i bin wokim" },
   "optionDesc_noRewriteImports": { "message": "Disable the updating import path from .js to .min.js" },
   "optionDesc_quiet": { "message": "Olgeta tok i no stret, tasol ol tok i no stret" },
-  "optionDesc_ignoreFiles": { "message": "Ol fail bilong rausim long minification" },
+  "optionDesc_ignores": { "message": "Ol fail/direktori bilong rausim long minification" },
   "optionDesc_commentMain": { "message": "Prepare Header Comment to Minified Code" },
   "optionDesc_commentExtra": { "message": "Tok bilong en i stap long dispela hap na i stap long dispela hap" },
   "optionDesc_help": { "message": "Painim piksa bilong helpim" },

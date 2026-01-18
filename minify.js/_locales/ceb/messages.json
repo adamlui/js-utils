@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Ipreserba ang istraktura sa folder sa direktoryo sa output" },
   "optionDesc_noRewriteImports": { "message": "I-disable ang pag-update sa mga agianan sa pag-import gikan sa .js ngadto sa .min.js" },
   "optionDesc_quiet": { "message": "Pugngan ang tanan nga pag-log gawas sa mga sayup" },
-  "optionDesc_ignoreFiles": { "message": "Mga file nga dili iapil gikan sa minification" },
+  "optionDesc_ignores": { "message": "Mga file/direktoryo nga dili iapil sa minification" },
   "optionDesc_commentMain": { "message": "Pag-andam sa komentaryo sa header sa minified code" },
   "optionDesc_commentExtra": { "message": "Pagbulag pinaagi sa linya gamit ang '\\n'" },
   "optionDesc_help": { "message": "Ipakita ang screen sa tabang" },

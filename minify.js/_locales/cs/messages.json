@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Zachovat strukturu složky ve výstupním adresáři" },
   "optionDesc_noRewriteImports": { "message": "Zakázat aktualizaci cest importu z .js na .min.js" },
   "optionDesc_quiet": { "message": "Potlačit veškeré protokolování kromě chyb" },
-  "optionDesc_ignoreFiles": { "message": "Soubory, které chcete vyloučit z minifikace" },
+  "optionDesc_ignores": { "message": "Soubory/adresáře, které chcete vyloučit z minifikace" },
   "optionDesc_commentMain": { "message": "Předložit komentář záhlaví ke zmenšenému kódu" },
   "optionDesc_commentExtra": { "message": "Oddělit čárou pomocí '\\n'" },
   "optionDesc_help": { "message": "Zobrazit obrazovku nápovědy" },

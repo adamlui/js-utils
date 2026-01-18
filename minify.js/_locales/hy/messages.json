@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Պահպանել թղթապանակի կառուցվածքը ելքային գրացուցակում" },
   "optionDesc_noRewriteImports": { "message": "Անջատել ներմուծման ուղիների թարմացումը .js - ից դեպի .min.js" },
   "optionDesc_quiet": { "message": "Սեղմեք բոլոր տեղեկամատյանները, բացի սխալներից" },
-  "optionDesc_ignoreFiles": { "message": "Նվազեցումը բացառող ֆայլեր" },
+  "optionDesc_ignores": { "message": "Նվազեցումը բացառող ֆայլեր/գրացուցակներ" },
   "optionDesc_commentMain": { "message": "Նախապես վերնագրի մեկնաբանությունը տեղադրեք մանրացված կոդի վրա" },
   "optionDesc_commentExtra": { "message": "Առանձնացրեք տող առ տող ՝ օգտագործելով '\\n'" },
   "optionDesc_help": { "message": "Ցուցադրել օգնության էկրանը" },

@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Varðveita möppuuppbyggingu í úttaksmöppu" },
   "optionDesc_noRewriteImports": { "message": "Slökkva á uppfærslu innflutningsleiða frá .js til .min.js" },
   "optionDesc_quiet": { "message": "Slökkva á öllum innskráningum nema villum" },
-  "optionDesc_ignoreFiles": { "message": "Skrár sem á að útiloka frá námuvinnslu" },
+  "optionDesc_ignores": { "message": "Skrár/möppur til að útiloka frá námuvinnslu" },
   "optionDesc_commentMain": { "message": "Prepend athugasemd haus til minified kóða" },
   "optionDesc_commentExtra": { "message": "Aðskiljið með línu með '\\n'" },
   "optionDesc_help": { "message": "Birta hjálparskjá" },

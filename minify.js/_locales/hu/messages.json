@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Mappastruktúra megőrzése a kimeneti könyvtárban" },
   "optionDesc_noRewriteImports": { "message": "Importálási útvonalak frissítésének letiltása a .js fájlból a .min.js fájlba" },
   "optionDesc_quiet": { "message": "Az összes naplózás letiltása a hibák kivételével" },
-  "optionDesc_ignoreFiles": { "message": "Minifikációból kizárandó fájlok" },
+  "optionDesc_ignores": { "message": "Minifikációból kizárandó fájlok/könyvtárak" },
   "optionDesc_commentMain": { "message": "Fejléc megjegyzés előkészítése tömörített kódra" },
   "optionDesc_commentExtra": { "message": "Elválasztás vonallal a '\\n' használatával" },
   "optionDesc_help": { "message": "Súgó képernyő megjelenítése" },

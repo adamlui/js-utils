@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Librarum tabularium in output Directorye" },
   "optionDesc_noRewriteImports": { "message": "Auxilium importatione ad .js to .min.js" },
   "optionDesc_quiet": { "message": "Exemplar omnes logiciendi except error" },
-  "optionDesc_ignoreFiles": { "message": "Files ad excludere animo minificatione" },
+  "optionDesc_ignores": { "message": "File/directory to excludeludeatio from minificationum" },
   "optionDesc_commentMain": { "message": "Descripendio a codecit minibus header commentary" },
   "optionDesc_commentExtra": { "message": "Separate per line usque 'n'" },
   "optionDesc_help": { "message": "Pagina Auxilio" },

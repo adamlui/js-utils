@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "வெளியீட்டு கோப்பகத்தில் கோப்புறை கட்டமைப்பைப் பாதுகாக்கவும்" },
   "optionDesc_noRewriteImports": { "message": ".js இலிருந்து .min.js வரை இறக்குமதி பாதைகளைப் புதுப்பிப்பதை முடக்கவும்" },
   "optionDesc_quiet": { "message": "பிழைகளைத் தவிர அனைத்து பதிவுகளையும் ஒடுக்கவும்" },
-  "optionDesc_ignoreFiles": { "message": "சிற்றுண்டியிலிருந்து விலக்க வேண்டிய கோப்புகள்" },
+  "optionDesc_ignores": { "message": "சிற்றுருவிலிருந்து விலக்க வேண்டிய கோப்புகள்/கோப்பகங்கள்" },
   "optionDesc_commentMain": { "message": "மினிஃபைட் குறியீட்டிற்கு தலைப்பு கருத்துரைகளை முன்கூட்டியே தயாரிக்கவும்" },
   "optionDesc_commentExtra": { "message": "'\\n' ஐப் பயன்படுத்தி வரிசையாகப் பிரிக்கவும்" },
   "optionDesc_help": { "message": "உதவித் திரையைக் காண்பி" },

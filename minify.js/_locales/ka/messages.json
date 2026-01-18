@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Საქაღალდის სტრუქტურის გამოტანის საქაღალდეში შენარჩუნება" },
   "optionDesc_noRewriteImports": { "message": ".js-დან .min.js-ზე იმპორტის ბილიკების განახლების გამორთვა" },
   "optionDesc_quiet": { "message": "Ყველა ჟურნალის ჩახშობა, გარდა შეცდომებისა" },
-  "optionDesc_ignoreFiles": { "message": "Მინიფიკაციიდან გამოსარიცხი ფაილები" },
+  "optionDesc_ignores": { "message": "Მინიფიკაციიდან გამოსარიცხი ფაილები/საქაღალდეები" },
   "optionDesc_commentMain": { "message": "Სათაურის წინასწარი კომენტარი დაურთეთ მინიფიცირებულ კოდს" },
   "optionDesc_commentExtra": { "message": "Გამოყავით ხაზი '\\n' -ის გამოყენებით" },
   "optionDesc_help": { "message": "Დახმარების ეკრანის ჩვენება" },

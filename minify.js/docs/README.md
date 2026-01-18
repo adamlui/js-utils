@@ -128,7 +128,7 @@ Boolean options:
  -q, --quiet                          Suppress all logging except errors.
 
 Parameter options:
- --ignore-files="file1.js,file2.js"   Files to exclude from minification.
+ --ignores="dir/,file1.js,file2.js"   Files/directories to exclude from minification.
  --comment="comment"                  Prepend header comment to minified code. Separate by line using '\n'.
 
 Info commands:
@@ -205,7 +205,7 @@ Name             | Type    | Desciption                                         
 `mangle`         | Boolean | Shorten variable names (typically to one character).                     | `true`
 `rewriteImports` | Boolean | Update import paths from .js to .min.js                                  | `true`
 `cloneFolders`   | Boolean | Preserve folder structure in output directory.                           | `false`
-`ignoreFiles`    | Array   | Files (by name) to exclude from minification.                            | `[]`
+`ignores`        | Array   | Files/dirs to exclude from minification.                                 | `[]`
 `comment`        | String  | Header comment to prepend to minified code. Separate by line using '\n'. | `''`
 
 #
@@ -241,7 +241,7 @@ Name          | Type    | Desciption                                            
 `verbose`     | Boolean | Show logging in console/terminal.                        | `true`
 `dotFolders`  | Boolean | Include dotfolders in file search.                       | `false`
 `dotFiles`    | Boolean | Include dotfiles in file search.                         | `false`
-`ignoreFiles` | Array   | Files (by name) to exclude from search results.          | `[]`
+`ignores`     | Array   | Files/dirs to exclude from search results.               | `[]`
 
 <br>
 

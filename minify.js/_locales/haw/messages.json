@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "E mālama i ka hoʻonohonoho waihona ma ka papa kuhikuhi hoʻopuka" },
   "optionDesc_noRewriteImports": { "message": "E hoʻopau i ka hoʻohou ʻana i nā ala lawe mai mai .js a i .min.js" },
   "optionDesc_quiet": { "message": "Kāohi i ka hoʻopaʻa inoa a pau koe nā hewa" },
-  "optionDesc_ignoreFiles": { "message": "ʻO nā faila e kāpae ʻia mai ka hōʻemi ʻana" },
+  "optionDesc_ignores": { "message": "Nā faila/papa kuhikuhi e kāpae ʻia mai ka minification" },
   "optionDesc_commentMain": { "message": "E hoʻomākaukau i ka manaʻo poʻomanaʻo i ke code liʻiliʻi" },
   "optionDesc_commentExtra": { "message": "E hoʻokaʻawale i ka laina me ka '\\n'" },
   "optionDesc_help": { "message": "Hōʻike i ka pale kōkua" },

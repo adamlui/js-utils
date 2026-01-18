@@ -149,7 +149,7 @@ Options booléennes:
  -q, --quiet                          Supprime toute la journalisation, à l'exception des erreurs.
 
 Options des paramètres:
- --ignore-files="file1.js,file2.js"   Fichiers à exclure de la minification.
+ --ignores="dir/,file1.js,file2.js"   Fichiers/répertoires à exclure de la minification.
  --comment="commentaire"              Ajoutez le commentaire d’en-tête au code minifié. Séparez par ligne en utilisant '\n'.
 
 Commandes d'informations:
@@ -226,7 +226,7 @@ Nom              | Taper   | Description                                        
 `mangle`         | Boolean | Raccourcissez les noms de variables (généralement à un caractère).                       | `true`
 `rewriteImports` | Boolean | Mettre à jour les chemins d'importation de .js à .min.js.                                | `true`
 `cloneFolders`   | Boolean | Conserver la structure des dossiers dans le répertoire de sortie.                        | `false`
-`ignoreFiles`    | Tableau | Fichiers (par nom) à exclure de la minification.                                         | `[]`
+`ignores`        | Tableau | Fichiers/répertoires à exclure de la minification.                                       | `[]`
 `comment`        | String  | Commentaire d’en-tête à ajouter au code minifié. Séparez par ligne en utilisant '\n'.    | `''`
 
 #
@@ -262,7 +262,7 @@ Nom           | Taper   | Description                                           
 `verbose`     | Boolean | Afficher la connexion dans la console/terminal.                       | `true`
 `dotFolders`  | Boolean | Inclure les dossiers cachés dans la recherche de fichiers.            | `false`
 `dotFiles`    | Boolean | Incluez les fichiers cachés dans la recherche de fichiers.            | `false`
-`ignoreFiles` | Tableau | Fichiers (par nom) à exclure des résultats de recherche.              | `[]`
+`ignores`     | Tableau | Fichiers/répertoires à exclure de la minification.                    | `[]`
 
 <br>
 

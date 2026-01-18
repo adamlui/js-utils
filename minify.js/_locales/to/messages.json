@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Tauhi 'a e fokotu'utu'u 'o e folder 'i he tohi fakahinohino 'o e output" },
   "optionDesc_noRewriteImports": { "message": "Fakata'e'aonga'i 'a e fakafo'ou 'o e ngaahi hala 'o e hū mai mei he .js ki he .min.js" },
   "optionDesc_quiet": { "message": "Taʻofi ʻa e loka kotoa tuku kehe pe ʻa e ngaahi fehalaaki" },
-  "optionDesc_ignoreFiles": { "message": "Ngaahi faile ke ʻoua naʻa fakakau mei he minification" },
+  "optionDesc_ignores": { "message": "Files/directories to exclude from minification" },
   "optionDesc_commentMain": { "message": "Prepend e fakamatala ki he kouti minified" },
   "optionDesc_commentExtra": { "message": "Fakamavahevaheʻi ʻaki e laine ʻo fakaʻaongaʻi ʻa e ʻ \\n ʻ" },
   "optionDesc_help": { "message": "Fakaʻaliʻali ʻa e screen tokoní" },

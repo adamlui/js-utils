@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "출력 디렉토리에 폴더 구조 유지" },
   "optionDesc_noRewriteImports": { "message": ".js에서 .min.js로 가져오기 경로 업데이트 비활성화" },
   "optionDesc_quiet": { "message": "오류를 제외한 모든 로깅 억제" },
-  "optionDesc_ignoreFiles": { "message": "축소에서 제외할 파일" },
+  "optionDesc_ignores": { "message": "축소에서 제외할 파일/디렉터리" },
   "optionDesc_commentMain": { "message": "축소된 코드에 머리글 주석 추가" },
   "optionDesc_commentExtra": { "message": "'\\n' 을 사용하여 라인으로 구분" },
   "optionDesc_help": { "message": "도움말 화면 표시" },

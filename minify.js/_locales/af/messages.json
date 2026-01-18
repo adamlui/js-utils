@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Bewaar gidsstruktuur in afvoer gids" },
   "optionDesc_noRewriteImports": { "message": "Deaktiveer opdatering van invoerpaaie van .js na .min.js" },
   "optionDesc_quiet": { "message": "Onderdruk alle aanmelding behalwe foute" },
-  "optionDesc_ignoreFiles": { "message": "Lêers om van minifikasie uit te sluit" },
+  "optionDesc_ignores": { "message": "Lêers/gidse om van minifikasie uit te sluit" },
   "optionDesc_commentMain": { "message": "Voorkeur kop kommentaar na geminificeerde kode" },
   "optionDesc_commentExtra": { "message": "Afsonderlik deur lyn met behulp van '\\n'" },
   "optionDesc_help": { "message": "Vertoon hulp skerm" },

@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "އައުޓްޕުޓް ޑައިރެކްޓަރީގައި ފޯލްޑަރ ސްޓްރަކްޗަރ ރައްކާތެރިކުރުން" },
   "optionDesc_noRewriteImports": { "message": ".js އިން .min.js އަށް އިމްޕޯޓް މަގުތައް އަޕްޑޭޓްކުރުން ޑިސެބަލްކުރުން" },
   "optionDesc_quiet": { "message": "އެރަރސް ފިޔަވައި ހުރިހާ ލޮގިންގ އެއް ދަމަހައްޓާށެވެ" },
-  "optionDesc_ignoreFiles": { "message": "މިނިފިކޭޝަން އިން ބާކީ ކުރަން ޖެހޭ ފައިލްތައް" },
+  "optionDesc_ignores": { "message": "މިނިފިކޭޝަން އިން ބާކީ ކުރުމަށް ފައިލް/ޑައިރެކްޓަރީތައް" },
   "optionDesc_commentMain": { "message": "މިނިފައިޑް ކޯޑަށް ހެޑަރ ކޮމެންޓް ޕްރީޕެންޑް ކުރުން" },
   "optionDesc_commentExtra": { "message": "'\\n' ބޭނުންކޮށްގެން ލައިނުން ވަކިކުރުން" },
   "optionDesc_help": { "message": "ޑިސްޕްލޭ ހެލްޕް ސްކްރީން" },

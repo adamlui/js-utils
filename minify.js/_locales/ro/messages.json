@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Păstrați structura dosarului în directorul de ieșire" },
   "optionDesc_noRewriteImports": { "message": "Dezactivați actualizarea căilor de import de la .js la .min.js" },
   "optionDesc_quiet": { "message": "Suprimați toate înregistrările, cu excepția erorilor" },
-  "optionDesc_ignoreFiles": { "message": "Fișiere de exclus de la minimizare" },
+  "optionDesc_ignores": { "message": "Fișiere/directoare de exclus de la minimizare" },
   "optionDesc_commentMain": { "message": "Prependați comentariul antetului la codul minimizat" },
   "optionDesc_commentExtra": { "message": "Separați prin linie folosind '\\n'" },
   "optionDesc_help": { "message": "Afișați ecranul de ajutor" },

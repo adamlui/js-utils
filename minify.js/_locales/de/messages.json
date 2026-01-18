@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Ordnerstruktur im Ausgabeverzeichnis beibehalten" },
   "optionDesc_noRewriteImports": { "message": "Aktualisieren von Importpfaden von .js auf .min.js deaktivieren" },
   "optionDesc_quiet": { "message": "Alle Protokolle mit Ausnahme von Fehlern unterdrücken" },
-  "optionDesc_ignoreFiles": { "message": "Von der Minifizierung auszuschließende Dateien" },
+  "optionDesc_ignores": { "message": "Dateien/Verzeichnisse, die von der Minifizierung ausgeschlossen werden sollen" },
   "optionDesc_commentMain": { "message": "Header-Kommentar vor dem minimierten Code einfügen" },
   "optionDesc_commentExtra": { "message": "Zeilenweise trennen mit '\\n'" },
   "optionDesc_help": { "message": "Hilfebildschirm anzeigen" },

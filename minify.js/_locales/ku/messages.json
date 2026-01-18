@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Avahiya peldankê di peldanka derketinê de biparêze" },
   "optionDesc_noRewriteImports": { "message": "Nûvekirina rêyên importkirinê ji .js bo .min.js neçalak bike" },
   "optionDesc_quiet": { "message": "Hemî têketinê ji bilî xeletiyan bişkînin" },
-  "optionDesc_ignoreFiles": { "message": "Pelên ku ji kêmbûnê têne derxistin" },
+  "optionDesc_ignores": { "message": "Pel/pelrêçên ku ji minîfîkasyonê werin derxistin" },
   "optionDesc_commentMain": { "message": "Şîroveya sernivîsê li koda kêmkirî amade bike" },
   "optionDesc_commentExtra": { "message": "Bi rêzê veqetînin bi bikaranîna '\\n'" },
   "optionDesc_help": { "message": "Dîmendera alîkariyê nîşan bide" },

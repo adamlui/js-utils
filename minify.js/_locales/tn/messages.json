@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Boloka sebopego sa difaele mo lenaaneng la dikumo" },
   "optionDesc_noRewriteImports": { "message": "Go dira gore go nne le diphetogo mo ditseleng tsa thekontle go tswa go .js go ya go .min.js" },
   "optionDesc_quiet": { "message": "Go emisa dikgogo tsotlhe kwantle ga diphoso" },
-  "optionDesc_ignoreFiles": { "message": "Difaele tse di tshwanelang go sa akarediwe mo menining" },
+  "optionDesc_ignores": { "message": "Difaele/dikwadiso tse di tshwanelang go sa akarediwe mo menining" },
   "optionDesc_commentMain": { "message": "REPAPEND HEADER COMMIED CODE" },
   "optionDesc_commentExtra": { "message": "Kgaoganya ka mola o dirisa '\\n'" },
   "optionDesc_help": { "message": "SHOW HELP SCREEN" },

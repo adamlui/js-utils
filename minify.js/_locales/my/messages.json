@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Output Directory ထဲက ဖိုင်တွဲဖွဲ့စည်းပုံကို ထိန်းသိမ်းပါ" },
   "optionDesc_noRewriteImports": { "message": ".js မှ .min.js သို့သွင်းကုန်လမ်းကြောင်းများကို အပ်ဒိတ်လုပ်ခြင်းကို ပိတ်ပါ" },
   "optionDesc_quiet": { "message": "အမှားအယွင်းများမှလွဲ ၍ လော့ဂ်အင်အားလုံးကိုဖိနှိပ်ပါ" },
-  "optionDesc_ignoreFiles": { "message": "Minification မှဖယ်ထုတ်ရန်ဖိုင်များ" },
+  "optionDesc_ignores": { "message": "Minification မှဖယ်ထုတ်ရန်ဖိုင်များ/directory များ" },
   "optionDesc_commentMain": { "message": "ခေါင်းစီးမှတ်ချက်ကို အသေးစားကုဒ်သို့ ပြင်ဆင်ပါ" },
   "optionDesc_commentExtra": { "message": "'\\n' ကို အသုံးပြု ၍ လိုင်းဖြင့်ခွဲပါ" },
   "optionDesc_help": { "message": "အကူအညီ မျက်နှာပြင်ကို ပြသပါ" },

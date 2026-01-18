@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Нигоҳ доштани сохтори папка дар феҳристи барориш" },
   "optionDesc_noRewriteImports": { "message": "Paganahin ang pag-update ng mga path ng pag-import mula sa .js sa .min.js" },
   "optionDesc_quiet": { "message": "Ғайри хатогӣ ҳамаи қайдкуниҳоро пахш кунед" },
-  "optionDesc_ignoreFiles": { "message": "Файлҳо барои истисно кардан аз минимализатсия" },
+  "optionDesc_ignores": { "message": "Файлҳо/феҳристҳо барои истисно кардан аз минимализатсия" },
   "optionDesc_commentMain": { "message": "Name" },
   "optionDesc_commentExtra": { "message": "Ҷудо кардан аз рӯи хат бо истифодаи '\\n'" },
   "optionDesc_help": { "message": "Намоиши экрани кӯмак" },

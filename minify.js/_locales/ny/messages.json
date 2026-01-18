@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Sungani dongosolo chikwatu mu linanena bungwe chikwatu" },
   "optionDesc_noRewriteImports": { "message": "Kulepheretsa kusintha njira zoyendera kuchokera ku .js kupita ku .min.js" },
   "optionDesc_quiet": { "message": "Suppress all logging except errors" },
-  "optionDesc_ignoreFiles": { "message": "Files to exclude from minification" },
+  "optionDesc_ignores": { "message": "Mafayilo/ma directories kuti asachotsedwe ku minification" },
   "optionDesc_commentMain": { "message": "Prepend mutu ndemanga kuti minified kachidindo" },
   "optionDesc_commentExtra": { "message": "Separate by line using '\\n'" },
   "optionDesc_help": { "message": "Display help screen" },

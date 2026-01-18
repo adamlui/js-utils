@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "ساختار پوشه را در دایرکتوری خروجی حفظ کنید" },
   "optionDesc_noRewriteImports": { "message": "غیرفعال کردن به‌روزرسانی مسیرهای واردات از .js به .min.js" },
   "optionDesc_quiet": { "message": "همه گزارشها به جز خطاها را سرکوب کنید" },
-  "optionDesc_ignoreFiles": { "message": "فشرده سازی جاوا" },
+  "optionDesc_ignores": { "message": "فایل‌ها/دایرکتوری‌هایی که باید از فشرده‌سازی مستثنی شوند" },
   "optionDesc_commentMain": { "message": "نظر سرصفحه را به کد کوچک شده اضافه کنید" },
   "optionDesc_commentExtra": { "message": "جدا کردن با خط با استفاده از  '\\n'" },
   "optionDesc_help": { "message": "نمایش صفحه راهنما" },

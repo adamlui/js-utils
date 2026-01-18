@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "ਆਉਟਪੁੱਟ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਫੋਲਡਰ ਢਾਂਚਾ ਸੰਭਾਲੋ" },
   "optionDesc_noRewriteImports": { "message": ".js ਤੋਂ .min.js ਤੱਕ ਇੰਪੋਰਟ ਮਾਰਗ ਅੱਪਡੇਟ ਕਰਨਾ ਆਯੋਗ" },
   "optionDesc_quiet": { "message": "Suppress all logging except errors" },
-  "optionDesc_ignoreFiles": { "message": "Files to exclude from minification" },
+  "optionDesc_ignores": { "message": "ਮਿਨੀਫਿਕੇਸ਼ਨ ਤੋਂ ਬਾਹਰ ਰੱਖਣ ਲਈ ਫਾਇਲਾਂ/ਡਾਇਰੈਕਟਰੀਆਂ" },
   "optionDesc_commentMain": { "message": "ਸਿਰਲੇਖ ਟਿੱਪਣੀ ਨੂੰ ਮਿਨੀਫਾਈਡ ਕੋਡ ਵਿੱਚ ਤਿਆਰ ਕਰੋ" },
   "optionDesc_commentExtra": { "message": "Separate by line using '\\n'" },
   "optionDesc_help": { "message": "Display help screen" },

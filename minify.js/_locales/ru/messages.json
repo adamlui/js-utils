@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Сохранить структуру папок в выходном каталоге" },
   "optionDesc_noRewriteImports": { "message": "Отключить обновление путей импорта из .js в .min.js" },
   "optionDesc_quiet": { "message": "Подавление всех журналов, кроме ошибок" },
-  "optionDesc_ignoreFiles": { "message": "Файлы для исключения из минификации" },
+  "optionDesc_ignores": { "message": "Файлы/каталоги для исключения из минификации" },
   "optionDesc_commentMain": { "message": "Добавить комментарий заголовка к минифицированному коду" },
   "optionDesc_commentExtra": { "message": "Разделяйте строкой с помощью '\\n'" },
   "optionDesc_help": { "message": "Показать экран помощи" },

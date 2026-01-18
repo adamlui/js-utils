@@ -19,7 +19,7 @@ function findJS(searchDir, options = {}) {
         verbose: true,     // enable logging
         dotFolders: false, // include dotfolders in file search
         dotFiles: false,   // include dotfiles in file search
-        ignoreFiles: []    // files (by name) to exclude from search results
+        ignores: []        // files/dirs to exclude from search results
     }
 
     // Validate searchDir
@@ -46,17 +46,20 @@ function findJS(searchDir, options = {}) {
         console.info('findJS() » Searching for unminified JS files...') }
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file)
-        if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
+        const shouldIgnore = options.ignores.some(pattern =>
+            pattern.endsWith('/') ? filePath.split(path.sep).some(part => part == pattern.replace(/\/$/, ''))
+          : file == pattern
+        )
+        if (shouldIgnore) {
+            if (options.verbose) console.info(`findJS() » ** ${file} ignored`)
+        } else if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
             && options.recursive // only proceed if recursion enabled
             && (options.dotFolders || !file.startsWith('.'))) // exclude dotfolders if prohibited
                 jsFiles.push( // recursively find unminified JS in eligible dir
                     ...findJS(filePath, { ...options, isRecursing: true }))
         else if (/\.js(?<!\.min\.js)$/.test(file) // minified JS file found
-            && (options.dotFiles || !file.startsWith('.')) // exclude dotfiles if prohibited
-            && !options.ignoreFiles.includes(file)) // exclude ignored files
+            && (options.dotFiles || !file.startsWith('.'))) // exclude dotfiles if prohibited
                 jsFiles.push(filePath) // store eligible unminified JS file for returning
-        else if (options.verbose && options.ignoreFiles.includes(file))
-            console.info(`findJS() » ** ${file} ignored due to [options.ignoreFiles]`)
     })
 
     // Log/return final result
@@ -83,7 +86,7 @@ function minify(input, options = {}) {
         mangle: true,         // shorten var names (typically to one character)
         rewriteImports: true, // update import paths from .js to .min.js
         cloneFolders: false,  // preserve folder structure in output dir
-        ignoreFiles: [],      // files (by name) to exclude from minification
+        ignores: [],          // files/dirs to exclude from minification
         comment: ''           // header comment to prepend to minified code
     }
 
@@ -113,7 +116,7 @@ function minify(input, options = {}) {
         } else { // dir path passed
             const minifyResult = findJS(input, { recursive: options.recursive, verbose: options.verbose,
                                                  dotFolders: options.dotFolders, dotFiles: options.dotFiles,
-                                                 ignoreFiles: options.ignoreFiles
+                                                 ignores: options.ignores
                 })?.map(jsPath => { // minify found JS files
                     if (options.verbose) console.info(`minify() » ** Minifying ${jsPath}...`)
                     const srcCode = fs.readFileSync(jsPath, 'utf8'),

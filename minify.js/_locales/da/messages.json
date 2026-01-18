@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Bevar mappestrukturen i outputmappen" },
   "optionDesc_noRewriteImports": { "message": "Deaktiver opdatering af importstier fra .js til .min.js" },
   "optionDesc_quiet": { "message": "Undertrykke al logning undtagen fejl" },
-  "optionDesc_ignoreFiles": { "message": "Filer, der skal udelukkes fra minificering" },
+  "optionDesc_ignores": { "message": "Filer/kataloger, der skal udelukkes fra minificering" },
   "optionDesc_commentMain": { "message": "Forudindsæt header-kommentar til minificeret kode" },
   "optionDesc_commentExtra": { "message": "Adskil med linje ved hjælp af '\\n'" },
   "optionDesc_help": { "message": "Vis hjælpeskærm" },

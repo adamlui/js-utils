@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Behoud mapstructuur in uitvoermap" },
   "optionDesc_noRewriteImports": { "message": "Bijwerken van importpaden van .js naar .min.js uitschakelen" },
   "optionDesc_quiet": { "message": "Alle logboekregistraties onderdrukken, behalve fouten" },
-  "optionDesc_ignoreFiles": { "message": "Bestanden om uit te sluiten van verkleining" },
+  "optionDesc_ignores": { "message": "Uit te sluiten bestanden/mappen van verkleining" },
   "optionDesc_commentMain": { "message": "Headeropmerking vooraf laten gaan aan geminimaliseerde code" },
   "optionDesc_commentExtra": { "message": "Scheid per regel met behulp van '\\n'" },
   "optionDesc_help": { "message": "Hulpscherm weergeven" },

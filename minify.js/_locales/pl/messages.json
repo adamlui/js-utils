@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Zachowaj strukturę folderów w katalogu wyjściowym" },
   "optionDesc_noRewriteImports": { "message": "Wyłącz aktualizację ścieżek importu z .js na .min.js" },
   "optionDesc_quiet": { "message": "Wyłącz wszystkie rejestrowanie z wyjątkiem błędów" },
-  "optionDesc_ignoreFiles": { "message": "Pliki do wykluczenia z minifikacji" },
+  "optionDesc_ignores": { "message": "Pliki/katalogi do wykluczenia z minifikacji" },
   "optionDesc_commentMain": { "message": "Przedrostek komentarza nagłówka do minifikowanego kodu" },
   "optionDesc_commentExtra": { "message": "Oddziel wierszem za pomocą '\\n'" },
   "optionDesc_help": { "message": "Wyświetl ekran pomocy" },

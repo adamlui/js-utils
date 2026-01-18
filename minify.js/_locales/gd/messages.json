@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Glèidh structar a 'phasgain sa phasgan toraidh" },
   "optionDesc_noRewriteImports": { "message": "Cuir à comas ùrachadh nan slighean ion - phortachaidh bho .js gu .min.js" },
   "optionDesc_quiet": { "message": "Cuir às do gach logadh ach a - mhàin mearachdan" },
-  "optionDesc_ignoreFiles": { "message": "Faidhlichean a thèid a dhùnadh a - mach às a 'mhèinneadh" },
+  "optionDesc_ignores": { "message": "Faidhlichean/pasganan airson an dùnadh a - mach à minification" },
   "optionDesc_commentMain": { "message": "Prepend beachd header gu còd mionaichte" },
   "optionDesc_commentExtra": { "message": "Air a sgaradh a - rèir loidhne le '\\n'" },
   "optionDesc_help": { "message": "Seall sgrìn na cobhair" },

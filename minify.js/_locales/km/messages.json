@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "រក្សា រចនាសម្ព័ន្ធ ថត នៅ ក្នុង ថត លទ្ធផល" },
   "optionDesc_noRewriteImports": { "message": "បិទលទ្ធភាពការអាប់ដេតផ្លូវនាំចូលពី .js ទៅ .min.js" },
   "optionDesc_quiet": { "message": "បង្ក្រាបការកាប់ឈើទាំងអស់លើកលែងតែកំហុស" },
-  "optionDesc_ignoreFiles": { "message": "ឯកសារដែលត្រូវដកចេញពី minification" },
+  "optionDesc_ignores": { "message": "ឯកសារ/ដាយរិចតូរីដែលត្រូវដកចេញពី minification" },
   "optionDesc_commentMain": { "message": "ទុកមតិយោបល់បឋមកថាជាមុនទៅលេខកូដដែលបានបង្រួម" },
   "optionDesc_commentExtra": { "message": "បំបែកតាមបន្ទាត់ដោយប្រើ '\\n'" },
   "optionDesc_help": { "message": "បង្ហាញអេក្រង់ជំនួយ" },

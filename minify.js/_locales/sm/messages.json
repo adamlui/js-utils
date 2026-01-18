@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Puipuiga faila fausaga i le galuega faatino faatonuga" },
   "optionDesc_noRewriteImports": { "message": "Le mafai ona faʻafouina auala faʻaulufale mai mai mai .js i .min.js" },
   "optionDesc_quiet": { "message": "Suppress logging uma vagana ai mea sese" },
-  "optionDesc_ignoreFiles": { "message": "Faʻamaumauga e faʻateʻaina ai le minification" },
+  "optionDesc_ignores": { "message": "Files/faatonuga e faʻateʻaina mai le minification" },
   "optionDesc_commentMain": { "message": "Sauniga ulutala faamatalaga i minified code" },
   "optionDesc_commentExtra": { "message": "Eseese i le laina e faaaoga ai le '\\n'" },
   "optionDesc_help": { "message": "Faaali atu le lau fesoasoani" },

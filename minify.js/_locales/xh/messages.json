@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Gcina ubume besiqulathi seefayili kulawulo lwemveliso" },
   "optionDesc_noRewriteImports": { "message": "Vala ukuhlaziya iindlela zokungenisa ukusuka kwi-.js ukuya ku-.min.js" },
   "optionDesc_quiet": { "message": "Cima konke ukungena ngaphandle kweempazamo" },
-  "optionDesc_ignoreFiles": { "message": "Iifayile ezingabandakanywa ekunciphiseni" },
+  "optionDesc_ignores": { "message": "Iifayile/izalathisi zokungafaki kwisicatshulwa" },
   "optionDesc_commentMain": { "message": "Lungisa amagqabantshintshi entloko kwikhowudi encitshisiweyo" },
   "optionDesc_commentExtra": { "message": "Yahlula ngomgca usebenzisa '\\n'" },
   "optionDesc_help": { "message": "Bonisa isikrini soncedo" },

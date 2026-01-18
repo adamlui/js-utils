@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Çıxış kataloqunda qovluq strukturunu qoruyun" },
   "optionDesc_noRewriteImports": { "message": ".js-dən .min.js-ə qədər idxal yollarının yenilənməsini deaktiv edin" },
   "optionDesc_quiet": { "message": "Xətalardan başqa bütün girişləri bağlayın" },
-  "optionDesc_ignoreFiles": { "message": "Minimallaşdırmanı istisna etmək üçün fayllar" },
+  "optionDesc_ignores": { "message": "Minimallaşdırmanı istisna etmək üçün fayllar/kataloqlar" },
   "optionDesc_commentMain": { "message": "Minimum kod üçün başlıq şərhi hazırlayın" },
   "optionDesc_commentExtra": { "message": "'\\n' sətrindən istifadə edərək ayırın" },
   "optionDesc_help": { "message": "Yardım ekranını göstər" },

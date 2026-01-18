@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "Preservar a estrutura de pastas no diretório de saída" },
   "optionDesc_noRewriteImports": { "message": "Desativar a atualização de caminhos de importação de .js para .min.js" },
   "optionDesc_quiet": { "message": "Suprimir todos os registos, exceto erros" },
-  "optionDesc_ignoreFiles": { "message": "Arquivos a serem excluídos da minificação" },
+  "optionDesc_ignores": { "message": "Arquivos/diretórios a excluir da minificação" },
   "optionDesc_commentMain": { "message": "Anexar comentário de cabeçalho ao código minificado" },
   "optionDesc_commentExtra": { "message": "Separar por linha utilizando '\\n'" },
   "optionDesc_help": { "message": "Mostrar ecrã de ajuda" },

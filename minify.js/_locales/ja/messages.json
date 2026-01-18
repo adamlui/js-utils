@@ -41,7 +41,7 @@
   "optionDesc_cloneFolders": { "message": "出力ディレクトリのフォルダ構造を保持する" },
   "optionDesc_noRewriteImports": { "message": ".jsから.min.jsへのインポートパスの更新を無効にする" },
   "optionDesc_quiet": { "message": "エラーを除くすべてのロギングを抑制" },
-  "optionDesc_ignoreFiles": { "message": "縮小から除外するファイル" },
+  "optionDesc_ignores": { "message": "縮小から除外するファイル/ディレクトリ" },
   "optionDesc_commentMain": { "message": "縮小されたコードにヘッダーコメントを追加" },
   "optionDesc_commentExtra": { "message": "'\\n' を使用して行で区切ります" },
   "optionDesc_help": { "message": "ヘルプ画面を表示" },
