@@ -5,7 +5,7 @@ const pkgName = 'generate-ip',
       cmdFormat = 'generate-[ip|ipv6|mac] [options|commands]',
       srcURL = 'https://code.generate-ip.org',
       docURL = 'https://docs.generate-ip.org/#-command-line-usage',
-      latestLocaleCommitHash = 'cc58ad6'
+      latestLocaleCommitHash = '0e30af1'
 
 ;(async () => {
     'use strict'

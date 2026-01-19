@@ -5,7 +5,7 @@ const pkgName = '@adamlui/geolocate',
       cmdFormat = 'geolocate [ip1] [ip2] [...] [options|commands]',
       srcURL = 'https://code.geolocatejs.org',
       docURL = 'https://docs.geolocatejs.org/#-command-line-usage',
-      latestLocaleCommitHash = 'cc58ad6'
+      latestLocaleCommitHash = '0e30af1'
 
 ;(async () => {
     'use strict'
