@@ -62,6 +62,6 @@
     "url": "https://support.generatepw.org"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^1.10.0"
+    "@adamlui/minify.js": "^2.0.0"
   }
 }
