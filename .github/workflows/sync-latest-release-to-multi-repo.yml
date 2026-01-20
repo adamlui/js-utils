@@ -78,8 +78,12 @@ jobs:
             update_release_payload=$(
               printf '{"name": "%s","body": "%s"}' \
                 "$RELEASE_TITLE" "$RELEASE_NOTES")
-            curl -s -S -X PATCH -H "Authorization: token $REPO_SYNC_PAT" \
-                 -H "Content-Type: application/json" -d "$update_release_payload" "$update_release_url" > /dev/null
+            patch_response=$(curl -s -S -X PATCH -H "Authorization: token $REPO_SYNC_PAT" \
+                 -H "Content-Type: application/json" -d "$update_release_payload" "$update_release_url")
+            if echo "$patch_response" | grep -q '"message"'; then
+                echo "ERROR: Failed to update release: $patch_response"
+                exit 1
+            fi
             release_get_response=$(curl -s -S -H "Authorization: token $REPO_SYNC_PAT" \
               "https://api.github.com/repos/adamlui/$release_app_name/releases/tags/$TARGET_RELEASE_TAG_NAME")
             upload_url=$(echo "$release_get_response" | sed -nE 's|.*"upload_url": "(.*)".*|\1|p' | sed 's|{.*}||')
