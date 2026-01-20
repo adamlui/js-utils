@@ -62,6 +62,6 @@ Essential JavaScript libraries/utilities for Node.js and the web
 
 <img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/tag/white/icon16.svg?v=0d36e26"><img height=14 src="https://assets.js-utils.org/images/icons/tag/dark-gray/icon16.svg?v=0d36e26"></picture> <a href="https://js-utils.org/releases">**Latest releases**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/tag/white/icon16.svg?v=0d36e26"><img height=14 src="https://assets.js-utils.org/images/icons/tag/dark-gray/icon16.svg?v=0d36e26"></picture> <a href="https://github.com/adamlui/js-utils/releases">**Latest releases**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
 <a href="#%EF%B8%8F-javascript-utilities">Back to top ↑</a>
