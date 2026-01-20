@@ -2,5 +2,5 @@
 
 node src/cli src dist --comment=" \
 © 2023–2026 Adam Lui & contributors under the MIT license.\n \
-Source: https://code.minify-js.org/node.js\n \
-Documentation: https://docs.minify-js.org/node.js"
+Source: https://github.com/adamlui/minify.js/tree/main/node.js/src\n \
+Documentation: https://github.com/adamlui/minify.js/tree/main/node.js/docs"

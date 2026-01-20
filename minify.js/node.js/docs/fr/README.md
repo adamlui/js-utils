@@ -5,15 +5,15 @@
             <img height=14 src="https://assets.minify-js.org/images/icons/earth/black/icon32.svg?v=ad67551">
         </picture>
         &nbsp;Français |
-        <a href="http://github.minify-js.org/tree/main/node.js/#readme">English</a> |
-        <a href="http://github.minify-js.org/tree/main/node.js/docs/zh-cn/#readme">简体中文</a> |
-        <a href="http://github.minify-js.org/tree/main/node.js/docs/zh-tw/#readme">繁體中文</a> |
-        <a href="http://github.minify-js.org/tree/main/node.js/docs/hi/#readme">हिंदी</a> |
-        <a href="http://github.minify-js.org/tree/main/node.js/docs/bn/#readme">বাংলা</a> |
-        <a href="http://github.minify-js.org/tree/main/node.js/docs/mr/#readme">मराठी</a> |
-        <a href="http://github.minify-js.org/tree/main/node.js/docs/pa/#readme">ਪੰਜਾਬੀ</a> |
-        <a href="http://github.minify-js.org/tree/main/node.js/docs/de/#readme">Deutsch</a> |
-        <a href="http://github.minify-js.org/tree/main/node.js/docs/es/#readme">Español</a>
+        <a href="../../#readme">English</a> |
+        <a href="../zh-cn/#readme">简体中文</a> |
+        <a href="../zh-tw/#readme">繁體中文</a> |
+        <a href="../hi/#readme">हिंदी</a> |
+        <a href="../bn/#readme">বাংলা</a> |
+        <a href="../mr/#readme">मराठी</a> |
+        <a href="../pa/#readme">ਪੰਜਾਬੀ</a> |
+        <a href="../de/#readme">Deutsch</a> |
+        <a href="../es/#readme">Español</a>
     </h6>
 </div>
 
@@ -33,7 +33,7 @@
     <img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_minify.js%3Anode.js%2Fsrc%2Fminify.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vuln%C3%A9rabilit%C3%A9s&color=gold"></a>
 <a href="https://github.com/toolleeo/cli-apps#programming">
     <img height=31 src="https://img.shields.io/badge/Mentionné_dans-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://minify-js.org">
+<a href="https://github.com/adamlui/minify.js">
     <img height=31 src="https://img.shields.io/badge/web-minify--js.org-lightgrey?logo=dribbble&logoColor=white&labelColor=464646&style=for-the-badge&label=Toile"></a>
 
 <img src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@3d56890/node.js/media/images/screenshots/cli/minify-js-docs-cmd-output.png">
@@ -284,11 +284,11 @@ LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMP
 
 ## 🛠️ Utilitaires associés
 
-### [</> minify.js (Gulp)](https://gulp.minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=63bbeed"></a>
+### [</> minify.js (Gulp)](https://github.com/adamlui/minify.js/tree/main/gulp/) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=63bbeed"></a>
 
 > Plug-in Gulp pour réduire de manière récursive tous les fichiers JavaScript.
-<br>[Installer](https://gulp.minify-js.org/#-installation) /
-[Lisez-moi](https://gulp.minify-js.org/#readme) /
+<br>[Installer](https://github.com/adamlui/minify.js/tree/main/gulp/#-installation) /
+[Lisez-moi](https://github.com/adamlui/minify.js/tree/main/gulp/#readme) /
 [Discuter](https://github.com/adamlui/minify.js/discussions)
 
 ### [{ } scss-to-css](https://scsstocss.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=63bbeed"></a>

@@ -12,7 +12,7 @@
     <img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_minify.js%3Agulp%2Fsrc%2Fgulp-minify.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></a>
 <a href="https://github.com/toolleeo/cli-apps#programming">
     <img height=31 src="https://img.shields.io/badge/Mentioned_in-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://minify-js.org">
+<a href="https://github.com/adamlui/minify.js">
     <img height=31 src="https://img.shields.io/badge/web-minify--js.org-lightgrey?logo=dribbble&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
 <br>
@@ -117,13 +117,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## 🛠️ Related utilities
 
-### [</> minify.js (Node.js)](https://node.minify-js.org/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=b78dcd3"></a>
+### [</> minify.js (Node.js)](https://github.com/adamlui/minify.js/tree/main/node.js/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=b78dcd3"></a>
 
 > Recursively minify all JavaScript files.
-<br>[Install](https://node.minify-js.org/#-installation) /
-[Readme](https://node.minify-js.org/#readme) /
-[CLI usage](https://node.minify-js.org/#-command-line-usage) /
-[API usage](https://node.minify-js.org/#-api-usage) /
+<br>[Install](https://github.com/adamlui/minify.js/tree/main/node.js/#-installation) /
+[Readme](https://github.com/adamlui/minify.js/tree/main/node.js/#readme) /
+[CLI usage](https://github.com/adamlui/minify.js/tree/main/node.js/#-command-line-usage) /
+[API usage](https://github.com/adamlui/minify.js/tree/main/node.js/#-api-usage) /
 [Discuss](https://github.com/adamlui/minify.js/discussions)
 
 ### [{ } scss-to-css](https://scsstocss.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=b78dcd3"></a>

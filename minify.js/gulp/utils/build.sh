@@ -2,5 +2,5 @@
 
 minify-js src dist --comment=" \
 © 2024–2026 Adam Lui under the MIT license.\n \
-Source: https://code.minify-js.org/gulp\n \
-Documentation: https://docs.minify-js.org/gulp"
+Source: https://github.com/adamlui/minify.js/tree/main/gulp/src\n \
+Documentation: https://github.com/adamlui/minify.js/tree/main/gulp/docs"

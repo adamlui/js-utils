@@ -7,7 +7,7 @@
     "email": "adam@kudoai.com",
     "url": "https://github.com/adamlui"
   },
-  "homepage": "https://minify-js.org",
+  "homepage": "https://github.com/adamlui/minify.js",
   "license": "MIT",
   "funding": [
     {
@@ -64,7 +64,7 @@
     "utils"
   ],
   "bugs": {
-    "url": "https://support.minify-js.org"
+    "url": "https://github.com/adamlui/minify.js/issues"
   },
   "dependencies": {
     "node-clipboardy": "^1.0.3",

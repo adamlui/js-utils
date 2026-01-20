@@ -1,6 +1,6 @@
 // © 2023–2026 Adam Lui & contributors under the MIT license.
-// Source: https://code.minify-js.org/node.js
-// Documentation: https://docs.minify-js.org/node.js
+// Source: https://github.com/adamlui/minify.js/tree/main/node.js/src
+// Documentation: https://github.com/adamlui/minify.js/tree/main/node.js/docs
 
 // Import LIBS
 const fs = require('fs'),
@@ -11,7 +11,7 @@ const fs = require('fs'),
 
 function findJS(searchDir, options = {}) {
 
-    const docURL = 'https://docs.minify-js.org/node.js/#findjssearchdir-options',
+    const docURL = 'https://github.com/adamlui/minify.js/tree/main/node.js/docs/#findjssearchdir-options',
           exampleCall = `findJS('assets/js', { verbose: false, dotFoldes: true })`,
           logPrefix = 'findJS() » '
 
@@ -77,7 +77,7 @@ function findJS(searchDir, options = {}) {
 
 function minify(input, options = {}) {
 
-    const docURL = 'https://docs.minify-js.org/node.js/#minifyinput-options',
+    const docURL = 'https://github.com/adamlui/minify.js/tree/main/node.js/docs/#minifyinput-options',
           exampleCall = `minify('assets/js', { recursive: false, mangle: false })`,
           logPrefix = 'minify() » '
 

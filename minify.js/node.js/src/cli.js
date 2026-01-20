@@ -3,8 +3,8 @@
 const pkgName = '@adamlui/minify.js',
       copyright = '© 2024–2026 Adam Lui & contributors under the MIT license.',
       cmdFormat = 'minify-js [inputPath] [outputPath] [options]',
-      srcURL = 'https://code.minify-js.org/node.js',
-      docURL = 'https://docs.minify-js.org/node.js/#-command-line-usage',
+      srcURL = 'https://github.com/adamlui/minify.js/tree/main/node.js/src',
+      docURL = 'https://github.com/adamlui/minify.js/tree/main/node.js/docs/#-command-line-usage',
       latestLocaleCommitHash = '589eb64'
 
 ;(async () => {
