@@ -109,6 +109,7 @@ function minify(input, options = {}) {
     try {
         const fd = fs.openSync(input, fs.constants.O_RDONLY),
               stats = fs.fstatSync(fd)
+
         if (stats.isFile()) {
             if (!/\.[cm]?jsx?$/i.test(input)) {
                 const err = new Error(`minify() » ERROR: ${input} is not a JavaScript file (.js, .mjs, .cjs, .jsx)`)
@@ -127,6 +128,7 @@ function minify(input, options = {}) {
                 console.info('minify() » Minification complete! Check returned object.')
             return { code: minifyResult.code, srcPath: path.resolve(process.cwd(), input),
                      error: minifyResult.error }
+
         } else { // dir path passed
             fs.closeSync(fd)
             const minifyResult = findJS(input, options)?.map(jsPath => { // minify found JS files
@@ -162,6 +164,7 @@ function minify(input, options = {}) {
 
             return minifyResult
         }
+
     } catch (err) {
         if (err.code == 'ENOENT') { // minify based on src code arg
             if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
