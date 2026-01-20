@@ -42,7 +42,7 @@ jobs:
           
           if echo "$release_check_resp" | grep -q '"id"'; then
             RELEASE_EXISTS=true
-            TARGET_RELEASE_ID=$(echo "$release_check_resp" | sed -nE 's|.*"id": ([0-9]+).*|\1|p')
+            TARGET_RELEASE_ID=$(echo "$release_check_resp" | grep -o '"id":[[:space:]]*[0-9]\+' | head -1 | grep -o '[0-9]\+')
             echo "Release exists @ adamlui/$release_app_name (ID: $TARGET_RELEASE_ID). Will update..."
           else
             RELEASE_EXISTS=false
