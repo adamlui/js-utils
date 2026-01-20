@@ -24,13 +24,6 @@ jobs:
           RELEASE_NOTES=$(echo "$this_release" | sed -nE 's/.*"body": "(.*)".*/\1/p')
           release_app_name=$(echo "$RELEASE_TITLE" | sed -E 's|^ *|| ; s| [(v].*||')
 
-          created_at=$(echo "$this_release" | grep -o '"created_at": "[^"]*"' | cut -d'"' -f4)
-          updated_at=$(echo "$this_release" | grep -o '"updated_at": "[^"]*"' | cut -d'"' -f4)
-          created_epoch=$(date -d "$created_at" +%s)
-          updated_epoch=$(date -d "$updated_at" +%s)
-          if [ $((updated_epoch - created_epoch)) -lt 120 ] ; then
-              echo "Release was auto-synced recently. Exiting..." ; exit 0 ; fi
-
           # Process notes
           RELEASE_NOTES=$(echo "$RELEASE_NOTES" | \
             sed 's|📃|:page_with_curl:|g; s|🚀|:rocket:|g; s|🧠|:brain:|g' | \
