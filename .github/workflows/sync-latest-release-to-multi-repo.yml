@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Sync latest release to adamlui/<app-repo>
         run: |
+          echo "DEBUG: github.actor = ${{ github.actor }}"
+
           # Get release title/tag/notes
           RELEASE_TITLE="${{ github.event.release.name }}"
           release_tag_name="${{ github.event.release.tag_name }}"
