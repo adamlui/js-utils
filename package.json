@@ -1,17 +1,40 @@
 {
-  "author": {
-    "name": "Adam Lui",
-    "email": "adam@kudoai.com",
-    "url": "https://github.com/adamlui"
+  "name": "@adamlui/js-utils",
+  "description": "Essential JavaScript utilities",
+  "keywords": [
+    "javascript",
+    "utilities",
+    "cli",
+    "api"
+  ],
+  "homepage": "https://github.com/adamlui/js-utils",
+  "bugs": {
+    "url": "https://github.com/adamlui/js-utils/issues",
+    "email": "adam@kudoai.com"
   },
-  "homepage": "https://www.js-utils.org",
   "license": "MIT",
   "funding": [
-    { "type": "cashapp", "url": "https://cash.app/$AdamLui" },
-    { "type": "github", "url": "http://github.com/sponsors/adamlui" },
-    { "type": "ko-fi", "url": "https://ko-fi.com/adamlui" },
-    { "type": "paypal", "url": "https://paypal.me/adamlui" }
+    {
+      "type": "cashapp",
+      "url": "https://cash.app/$AdamLui"
+    },
+    {
+      "type": "github",
+      "url": "http://github.com/sponsors/adamlui"
+    },
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/adamlui"
+    },
+    {
+      "type": "paypal",
+      "url": "https://paypal.me/adamlui"
+    }
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamlui/js-utils.git"
+  },
   "scripts": {
     "prepare": "husky",
     "lint": "eslint . --cache",
