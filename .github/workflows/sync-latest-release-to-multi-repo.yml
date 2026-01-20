@@ -3,6 +3,8 @@ name: Sync latest minify.js + scss-to-css releases to adamlui/<app-repo>
 on:
   push:
     tags: ["*minify*", "*scss-to-css*"]
+  release:
+    types: [published, edited]
 
 jobs:
   sync-latest-release:
@@ -42,7 +44,12 @@ jobs:
                                -H "X-GitHub-Api-Version: 2022-11-28" \
                                https://api.github.com/repos/adamlui/$release_app_name/releases/tags/$TARGET_RELEASE_TAG_NAME)
           if (( "$response_code" == 200 )) ; then
-            echo "Release already exists @ adamlui/$release_app_name. Exiting..." ; exit 0 ; fi
+            RELEASE_EXISTS=true
+            echo "Release exists @ adamlui/$release_app_name. Will update..."
+          else
+            RELEASE_EXISTS=false
+            echo "Release doesn't exist. Will create..."
+          fi
 
           # Download assets
           download_urls=$(echo "$latest_release" | grep -o '"browser_download_url": ".*"' | cut -d '"' -f 4)
@@ -51,17 +58,32 @@ jobs:
             curl -LOs "$url"
           done
 
-          # Publish new release
-          echo "Publishing new release..."
+          # Publish new or update existing release
+          echo "Publishing release..."
           RELEASE_NOTES+="\n\n###### _Auto-synced from https://github.com/adamlui/js-utils/releases" # prevent ping pong
           RELEASE_NOTES+=" by [kudo-sync-bot](https://github.com/kudo-sync-bot)_"
-          create_release_url="https://api.github.com/repos/adamlui/$release_app_name/releases"
-          create_release_payload=$(
-            printf '{"tag_name": "%s","name": "%s","body": "%s"}' \
-              "$TARGET_RELEASE_TAG_NAME" "$RELEASE_TITLE" "$RELEASE_NOTES")
-          create_release_response=$(
-            curl -s -S -X POST -H "Authorization: token $REPO_SYNC_PAT" \
-                 -H "Content-Type: application/json" -d "$create_release_payload" "$create_release_url")
+          
+          if [ "$RELEASE_EXISTS" = false ] ; then
+            # CREATE new release
+            echo "Creating new release..."
+            create_release_url="https://api.github.com/repos/adamlui/$release_app_name/releases"
+            create_release_payload=$(
+              printf '{"tag_name": "%s","name": "%s","body": "%s"}' \
+                "$TARGET_RELEASE_TAG_NAME" "$RELEASE_TITLE" "$RELEASE_NOTES")
+            create_release_response=$(
+              curl -s -S -X POST -H "Authorization: token $REPO_SYNC_PAT" \
+                   -H "Content-Type: application/json" -d "$create_release_payload" "$create_release_url")
+          else
+            # UPDATE existing release
+            echo "Updating existing release..."
+            update_release_url="https://api.github.com/repos/adamlui/$release_app_name/releases/tags/$TARGET_RELEASE_TAG_NAME"
+            update_release_payload=$(
+              printf '{"name": "%s","body": "%s"}' \
+                "$RELEASE_TITLE" "$RELEASE_NOTES")
+            create_release_response=$(
+              curl -s -S -X PATCH -H "Authorization: token $REPO_SYNC_PAT" \
+                   -H "Content-Type: application/json" -d "$update_release_payload" "$update_release_url")
+          fi
 
           # Upload assets to new release
           echo "Uploading assets to new release..."
