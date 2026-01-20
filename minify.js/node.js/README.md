@@ -5,15 +5,15 @@
             <img height=14 src="https://assets.minify-js.org/images/icons/earth/black/icon32.svg?v=ad67551">
         </picture>
         &nbsp;English |
-        <a href="./zh-cn/#readme">简体中文</a> |
-        <a href="./zh-tw/#readme">繁體中文</a> |
-        <a href="./hi/#readme">हिंदी</a> |
-        <a href="./bn/#readme">বাংলা</a> |
-        <a href="./mr/#readme">मराठी</a> |
-        <a href="./pa/#readme">ਪੰਜਾਬੀ</a> |
-        <a href="./de/#readme">Deutsch</a> |
-        <a href="./es/#readme">Español</a> |
-        <a href="./fr/#readme">Français</a>
+        <a href="./docs/zh-cn/#readme">简体中文</a> |
+        <a href="./docs/zh-tw/#readme">繁體中文</a> |
+        <a href="./docs/hi/#readme">हिंदी</a> |
+        <a href="./docs/bn/#readme">বাংলা</a> |
+        <a href="./docs/mr/#readme">मराठी</a> |
+        <a href="./docs/pa/#readme">ਪੰਜਾਬੀ</a> |
+        <a href="./docs/de/#readme">Deutsch</a> |
+        <a href="./docs/es/#readme">Español</a> |
+        <a href="./docs/fr/#readme">Français</a>
     </h6>
 </div>
 
