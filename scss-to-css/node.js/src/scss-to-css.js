@@ -12,7 +12,8 @@ const fs = require('fs'),
 function findSCSS(searchDir, options = {}) {
 
     const docURL = 'https://docs.scsstocss.org/node.js/#findscsssearchdir-options',
-          exampleCall = `findSCSS('assets/scss', { verbose: false, dotFolders: true })`
+          exampleCall = `findSCSS('assets/scss', { verbose: false, dotFolders: true })`,
+          logPrefix = 'findSCSS() » '
 
     const defaultOptions = {
         recursive: true,   // recursively search for nested files in searchDir passed
@@ -23,17 +24,18 @@ function findSCSS(searchDir, options = {}) {
 
     // Validate searchDir
     if (typeof searchDir != 'string') {
-            console.error('findSCSS() » ERROR: 1st arg <searchDir> must be a string.')
-            console.info('findSCSS() » For more help, please visit ' + docURL)
+            console.error(`${logPrefix}ERROR: 1st arg <searchDir> must be a string.`)
+            console.info(`${logPrefix}For more help, please visit ${docURL}`)
             return
     } else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir)
         if (!fs.existsSync(searchPath)) {
-            console.error('findSCSS() » ERROR: 1st arg <searchDir> must be an existing directory.')
-            console.error(`findSCSS() » ${searchPath} does not exist.`)
-            console.info('findSCSS() » For more help, please visit ' + docURL)
+            console.error(`${logPrefix}ERROR: 1st arg <searchDir> must be an existing directory.`)
+            console.error(`${logPrefix}${searchPath} does not exist.`)
+            console.info(`${logPrefix}For more help, please visit ${docURL}`)
             return
-    }}
+        }
+    }
 
     // Validate/init options
     if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
@@ -42,7 +44,7 @@ function findSCSS(searchDir, options = {}) {
     // Search for SCSS
     const dirFiles = fs.readdirSync(searchDir), scssFiles = []
     if (options.verbose && !options.isRecursing)
-        console.info('findSCSS() » Searching for SCSS files...')
+        console.info(`${logPrefix}Searching for SCSS files...`)
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file)
         if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
@@ -54,15 +56,15 @@ function findSCSS(searchDir, options = {}) {
             && !options.ignoreFiles.includes(file)) // exclude ignored files
                 scssFiles.push(filePath) // store eligible SCSS file for returning
         else if (options.verbose && options.ignoreFiles.includes(file))
-            console.info(`findSCSS() » ** ${file} ignored due to [options.ignoreFiles]`)
+            console.info(`${logPrefix}** ${file} ignored due to [options.ignoreFiles]`)
     })
 
     // Log/return final result
     if (options.verbose && !options.isRecursing) {
-        console.info('findSCSS() » Search complete! '
+        console.info(`${logPrefix}Search complete! `
             + `${ scssFiles.length || 'No' } file${ scssFiles.length == 1 ? '' : 's' } found.`)
         if (findSCSS.caller?.name != 'compile' && typeof window != 'undefined')
-            console.info('findSCSS() » Check returned array.')
+            console.info(`${logPrefix}Check returned array.`)
     }
     return options.isRecursing || scssFiles.length ? scssFiles : []
 }
@@ -70,7 +72,8 @@ function findSCSS(searchDir, options = {}) {
 function compile(input, options = {}) {
 
     const docURL = 'https://docs.scsstocss.org/node.js/#compileinput-options',
-          exampleCall = `compile('assets/scss', { recursive: false, minify: false })`
+          exampleCall = `compile('assets/scss', { recursive: false, minify: false })`,
+          logPrefix = 'compile() » '
 
     const defaultOptions = {
         recursive: true,     // recursively search for nested files if dir path passed
@@ -85,8 +88,8 @@ function compile(input, options = {}) {
 
     // Validate input
     if (typeof input != 'string') {
-        console.error('compile() » ERROR: 1st arg <input> must be a string.')
-        console.info('compile() » For more help, please visit ' + docURL)
+        console.error(`${logPrefix}ERROR: 1st arg <input> must be a string.`)
+        console.info(`${logPrefix}For more help, please visit ${docURL}`)
         return
     }
 
@@ -102,23 +105,23 @@ function compile(input, options = {}) {
     }
     if (fs.existsSync(input)) { // compile based on path arg
         if (input.endsWith('.scss')) { // file path passed
-            if (options.verbose) console.info(`compile() » ** Compiling ${input}...`)
+            if (options.verbose) console.info(`${logPrefix}** Compiling ${input}...`)
             try { // to compile file passed
                 const compileResult = sass.compile(input, compileOptions)
                 if (options.comment) compileResult.css = prependComment(compileResult.css, options.comment)
                 if (options.verbose && typeof window != 'undefined')
-                    console.info('compile() » Compilation complete! Check returned object.')
+                    console.info(`${logPrefix}Compilation complete! Check returned object.`)
                 return { code: compileResult.css, srcMap: compileResult.sourceMap,
                          srcPath: path.resolve(process.cwd(), input), error: undefined }
             } catch (err) {
-                console.error(`\ncompile() » ERROR: ${err.message}\n`)
+                console.error(`\n${logPrefix}ERROR: ${err.message}\n`)
                 return { code: undefined, srcMap: undefined, srcPath: undefined, error: err }
             }
         } else { // dir path passed
             const compileResult = findSCSS(input, { recursive: options.recursive, verbose: options.verbose,
                                                     dotFolders: options.dotFolders, ignoreFiles: options.ignoreFiles
                 })?.map(scssPath => { // compile found SCSS files
-                    if (options.verbose) console.info(`compile() » ** Compiling ${scssPath}...`)
+                    if (options.verbose) console.info(`${logPrefix}** Compiling ${scssPath}...`)
                     try { // to compile found file
                         const compileResult = sass.compile(scssPath, compileOptions)
                         let relPath
@@ -127,28 +130,28 @@ function compile(input, options = {}) {
                         return { code: compileResult.css, srcMap: compileResult.sourceMap,
                                  srcPath: scssPath, relPath, error: undefined }
                     } catch (err) {
-                        console.error(`\ncompile() » ERROR: ${err.message}\n`)
+                        console.error(`\n${logPrefix}ERROR: ${err.message}\n`)
                         return { code: undefined, srcMap: undefined, srcPath: undefined, error: err }
                     }
                 }).filter(data => !data.error ) // filter out failed compilations
             if (options.verbose) {
                 if (compileResult.length && typeof window != 'undefined') console.info(
-                    'compile() » Compilation complete! Check returned object.')
+                    `${logPrefix}Compilation complete! Check returned object.`)
                 else console.info(
-                    'compile() » No SCSS files processed.')
+                    `${logPrefix}No SCSS files processed.`)
             }
             return compileResult
         }
     } else { // compile based on src code arg
         if (options.verbose)
-            console.info('compile() » ** Compiling passed source code...')
+            console.info(`${logPrefix}** Compiling passed source code...`)
         try { // to compile passed src code
             const compileResult = sass.compileString(input, compileOptions)
             if (options.comment) compileResult.css = prependComment(compileResult.css, options.comment)
             return { code: compileResult.css, srcMap: compileResult.sourceMap,
                      srcPath: undefined, error: undefined }
         } catch (err) {
-            console.error(`\ncompile() » ERROR: ${err.message}\n`)
+            console.error(`\n${logPrefix}ERROR: ${err.message}\n`)
             return { code: undefined, srcMap: undefined, srcPath: undefined, error: err }
         }
     }
@@ -157,7 +160,7 @@ function compile(input, options = {}) {
         const commentBlock = comment.split('\n').map(line => ` * ${line}`).join('\n'),
               shebangIdx = code.indexOf('#!')
         if (shebangIdx >= 0) {
-            const postShebangIdx = code.indexOf('\n', shebangIdx) + 1 // idx of 1st newline after shebang
+            const postShebangIdx = code.indexOf('\n', shebangIdx) +1 // idx of 1st newline after shebang
             return code.slice(0, postShebangIdx) + `/**\n${commentBlock}\n */\n` + code.slice(postShebangIdx)
         } else return `/**\n${commentBlock}\n */\n${code}`
     }

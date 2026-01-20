@@ -8,7 +8,8 @@ const ipv4 = {
     generate: function(options = {}) {
 
         const docURL = 'https://docs.generate-ip.org/#ipv4generateoptions',
-              exampleCall = 'ipv4.generate({ verbose: false, qty: 3 })'
+              exampleCall = 'ipv4.generate({ verbose: false, qty: 3 })',
+              logPrefix = 'ipv4.generate() » '
 
         const defaultOptions = {
             verbose: true, // enable logging
@@ -20,8 +21,7 @@ const ipv4 = {
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Generate IPv4 address(es)
-        if (options.verbose) console.info(
-            `ipv4.generate() » Generating IPv4 address${ options.qty > 1 ? 'es' : '' }...`)
+        if (options.verbose) console.info(`${logPrefix}Generating IPv4 address${ options.qty > 1 ? 'es' : '' }...`)
         const ips = []
         if (options.qty > 1) // generate array of [qty] IP strings
             for (let i = 0 ; i < options.qty ; i++)
@@ -35,8 +35,8 @@ const ipv4 = {
 
         // Log/return final result
         if (options.verbose) {
-            console.info(`ipv4.generate() » IPv4 address${ options.qty > 1 ? 'es' : '' } generated!`)
-            console.info('ipv4.generate() » ' +( options.qty == 1 ? ipResult : ipResult.join(', ')))
+            console.info(`${logPrefix}IPv4 address${ options.qty > 1 ? 'es' : '' } generated!`)
+            console.info(`${logPrefix}${ options.qty == 1 ? ipResult : ipResult.join(', ')}`)
         }
         return ipResult
     },
@@ -45,12 +45,13 @@ const ipv4 = {
 
         const docURL = 'https://docs.generate-ip.org/#ipv4validateaddress-options',
               exampleCall = `ipv4.validate('0.0.255.255', { verbose: false })`,
-              defaultOptions = { verbose: true /* enable logging */ }
+              defaultOptions = { verbose: true /* enable logging */ },
+              logPrefix = 'ipv4.validate() » '
 
         // Validate address as arg
         if (typeof address != 'string') {
-            console.error('ipv4.validate() » ERROR: 1st arg <address> must be a string.')
-            console.info('ipv4.validate() » For more help, please visit ' + docURL)
+            console.error(`${logPrefix}ERROR: 1st arg <address> must be a string.`)
+            console.info(`${logPrefix}For more help, please visit ${docURL}`)
             return
         }
 
@@ -59,7 +60,7 @@ const ipv4 = {
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Validate address as IPv4 address
-        if (options.verbose) console.info(`ipv4.validate() » Validating ${address}...`)
+        if (options.verbose) console.info(`${logPrefix}Validating ${address}...`)
         const segments = address.split('.')
         const isValidIPv4 = !( // false if any dq condition matches
                   segments.length != 4 // not 4-segments long
@@ -71,8 +72,7 @@ const ipv4 = {
         )
 
         // Log/return final result
-        if (options.verbose) console.info(
-            `ipv4.validate() » IP is ${isValidIPv4 ? '' : 'in'}valid IPv4 address!`)
+        if (options.verbose) console.info(`${logPrefix}IP is ${isValidIPv4 ? '' : 'in'}valid IPv4 address!`)
         return isValidIPv4
     }
 }
@@ -82,7 +82,8 @@ const ipv6 = {
     generate: function(options = {}) {
 
         const docURL = 'https://docs.generate-ip.org/#ipv6generateoptions',
-              exampleCall = 'ipv6.generate({ leadingZeros: true, qty: 5 })'
+              exampleCall = 'ipv6.generate({ leadingZeros: true, qty: 5 })',
+              logPrefix = 'ipv6.generate() » '
 
         const defaultOptions = {
             verbose: true,       // enable logging
@@ -96,8 +97,8 @@ const ipv6 = {
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Generate IPv6 address(es)
-        if (options.verbose) console.info(
-            `ipv6.generate() » Generating IPv6 address${ options.qty > 1 ? 'es' : '' }...`)
+        if (options.verbose)
+            console.info(`${logPrefix}Generating IPv6 address${ options.qty > 1 ? 'es' : '' }...`)
         const ips = []
         if (options.qty > 1) // generate array of [qty] IP strings
             for (let i = 0 ; i < options.qty ; i++)
@@ -114,8 +115,8 @@ const ipv6 = {
 
         // Log/return final result
         if (options.verbose) {
-            console.info(`ipv6.generate() » IPv6 address${ options.qty > 1 ? 'es' : '' } generated!`)
-            console.info('ipv6.generate() » ' +( options.qty == 1 ? ipResult : ipResult.join(', ')))
+            console.info(`${logPrefix}IPv6 address${ options.qty > 1 ? 'es' : '' } generated!`)
+            console.info(`${logPrefix}${ options.qty == 1 ? ipResult : ipResult.join(', ')}`)
         }
         return ipResult
     },
@@ -123,8 +124,8 @@ const ipv6 = {
     format: function(ipv6address, options = {}) {
 
         const docURL = 'https://docs.generate-ip.org/#ipv6formatipv6address-options',
-              exampleCall = `ipv6.format('0d::ffff:192.1.56.10/96', `
-                          + '{ leadingZeros: true, doubleColon: false })'
+              exampleCall = `ipv6.format('0d::ffff:192.1.56.10/96', { leadingZeros: true, doubleColon: false })`,
+              logPrefix = 'ipv6.format() » '
 
         const defaultOptions = {
             verbose: true,       // enable logging
@@ -134,13 +135,13 @@ const ipv6 = {
 
         // Validate address
         if (typeof ipv6address != 'string') {
-            console.error('ipv6.format() » ERROR: 1st arg <ipv6address> must be a string.')
-            console.info('ipv6.format() » For more help, please visit ' + docURL)
+            console.error(`${logPrefix}ERROR: 1st arg <ipv6address> must be a string.`)
+            console.info(`${logPrefix}For more help, please visit ${docURL}`)
             return
         }
         if (!this.validate(ipv6address, { verbose: false})) {
-            console.error(`ipv6.format() » ERROR:  ${ipv6address} is not a valid IPv6 address.`)
-            console.info('ipv6.format() » For more help, please visit ' + docURL)
+            console.error(`${logPrefix}ERROR:  ${ipv6address} is not a valid IPv6 address.`)
+            console.info(`${logPrefix}For more help, please visit ${docURL}`)
             return
         }
 
@@ -153,12 +154,10 @@ const ipv6 = {
 
         // Handle double colons
         if (options.doubleColon) { // replace zero series w/ '::'
-            if (options.verbose) console.info(
-                'ipv6.format() » Replacing zero series w/ \'::\'...')
+            if (options.verbose) console.info(`${logPrefix}Replacing zero series w/ '::'...`)
             formattedAddress = formattedAddress.replace(/:(?:0+:)+/, '::')
         } else { // expand '::' into zero series
-            if (options.verbose) console.info(
-                'ipv6.format() » Expanding \'::\' into zero series...')
+            if (options.verbose) console.info(`${logPrefix}Expanding '::' into zero series...`)
             const totalPieces = formattedAddress.split(':').filter(Boolean).length,
                   zeroSegment = options.leadingZeros ? '0000' : '0',
                   zeroSeries = Array(8 - totalPieces).fill(zeroSegment).join(':')
@@ -167,26 +166,21 @@ const ipv6 = {
 
         // Handle leading zeros
         if (options.leadingZeros) { // add leading zeros
-            if (options.verbose) console.info(
-                'ipv6.format() » Adding leading zeros...')
+            if (options.verbose) console.info(`${logPrefix}Adding leading zeros...`)
             const pieces = formattedAddress.split(':')
             for (let i = 0 ; i < pieces.length ; i++)
                 while (pieces[i].length < 4) pieces[i] = '0' + pieces[i]
             formattedAddress = pieces.join(':')
         } else { // strip leading zeros
-            if (options.verbose) console.info(
-                'ipv6.format() » Stripping leading zeros...')
+            if (options.verbose) console.info(`${logPrefix}Stripping leading zeros...`)
             formattedAddress = ipv6address.replace(/(^|(?<=:))0+(?!:)/g, '$1') // eslint-disable-line
         }
 
         // Log/return final result
         if (options.verbose) {
-            if (formattedAddress != ipv6address) console.info(
-                'ipv6.format() » IP formatted successfully!')
-            else console.info(
-                'ipv6.format() » IP already formatted to specs.')
-            console.info(
-                `ipv6.format() » ${formattedAddress}`)
+            if (formattedAddress != ipv6address) console.info(`${logPrefix}IP formatted successfully!`)
+            else console.info(`${logPrefix}IP already formatted to specs.`)
+            console.info(`${logPrefix}${formattedAddress}`)
         }
         return formattedAddress
     },
@@ -195,12 +189,13 @@ const ipv6 = {
 
         const docURL = 'https://docs.generate-ip.org/#ipv6validateaddress-options',
               exampleCall = `ipv6.validate('0:0:0:0:0:ffff:192.1.56.10/96', { verbose: false })`,
-              defaultOptions = { verbose: true /* enable logging */ }
+              defaultOptions = { verbose: true /* enable logging */ },
+              logPrefix = 'ipv6.validate() » '
 
         // Validate address as arg
         if (typeof address != 'string') {
-            console.error('ipv6.validate() » ERROR: 1st arg <address> must be a string.')
-            console.info('ipv6.validate() » For more help, please visit ' + docURL)
+            console.error(`${logPrefix}ERROR: 1st arg <address> must be a string.`)
+            console.info(`${logPrefix}For more help, please visit ${docURL}`)
             return
         }
 
@@ -209,8 +204,7 @@ const ipv6 = {
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Validate address as IPv6 address
-        if (options.verbose) console.info(
-            `ipv6.validate() » Validating ${address}...`)
+        if (options.verbose) console.info(`${logPrefix}Validating ${address}...`)
         const pieces = address.split(/::?/),
               lastPiece = pieces[pieces.length - 1]
         const isValidIPv6 = !( // false if any dq condition matches
@@ -227,8 +221,7 @@ const ipv6 = {
         )
 
         // Log/return final result
-        if (options.verbose) console.info(
-            `ipv6.validate() » IP is ${isValidIPv6 ? '' : 'in'}valid IPv6 address!`)
+        if (options.verbose) console.info(`${logPrefix}IP is ${isValidIPv6 ? '' : 'in'}valid IPv6 address!`)
         return isValidIPv6
     }
 }
@@ -237,7 +230,8 @@ const mac = {
 
     generate: function(options = {}) {
         const docURL = 'https://docs.generate-ip.org/#macgenerateoptions',
-              exampleCall = 'mac.generate({ verbose: false, qty: 2 })'
+              exampleCall = 'mac.generate({ verbose: false, qty: 2 })',
+              logPrefix = 'mac.generate() » '
 
         const defaultOptions = {
             verbose: true, // enable logging
@@ -249,8 +243,7 @@ const mac = {
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Generate MAC address
-        if (options.verbose) console.info(
-            `mac.generate() » Generating MAC address${ options.qty > 1 ? 'es' : '' }...`)
+        if (options.verbose) console.info(`${logPrefix}Generating MAC address${ options.qty > 1 ? 'es' : '' }...`)
         const macAddresses = []
         if (options.qty > 1) // generate array of [qty] MAC address strings
             for (let i = 0 ; i < options.qty ; i++)
@@ -267,8 +260,8 @@ const mac = {
 
         // Log/return final result
         if (options.verbose) {
-            console.info(`mac.generate() » MAC address${ options.qty > 1 ? 'es' : '' } generated!`)
-            console.info('mac.generate() » ' +( options.qty == 1 ? macResult : macResult.join(', ')))
+            console.info(`${logPrefix}MAC address${ options.qty > 1 ? 'es' : '' } generated!`)
+            console.info(`${logPrefix}${ options.qty == 1 ? macResult : macResult.join(', ')}`)
         }
         return macResult
     },
@@ -276,12 +269,13 @@ const mac = {
     validate: function(address, options = {}) {
         const docURL = 'https://docs.generate-ip.org/#macvalidateaddress-options',
               exampleCall = `mac.validate('00:1A:2B:3C:4D:5E', { verbose: false })`,
-              defaultOptions = { verbose: true /* enable logging */ }
+              defaultOptions = { verbose: true /* enable logging */ },
+              logPrefix = 'mac.validate() » '
 
         // Validate address as arg
         if (typeof address != 'string') {
-            console.error('mac.validate() » ERROR: 1st arg <address> must be a string.')
-            console.info('mac.validate() » For more help, please visit ' + docURL)
+            console.error(`${logPrefix}ERROR: 1st arg <address> must be a string.`)
+            console.info(`${logPrefix}For more help, please visit ${docURL}`)
             return
         }
 
@@ -290,12 +284,11 @@ const mac = {
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Validate address as MAC address
-        if (options.verbose) console.info(`mac.validate() » Validating ${address}...`)
+        if (options.verbose) console.info(`${logPrefix}Validating ${address}...`)
         const isValidMAC = /^(?:[\da-f]{2}[:-]){5}[\da-f]{2}$/i.test(address)
 
         // Log/return final result
-        if (options.verbose) console.info(
-            `mac.validate() » Address is ${isValidMAC ? '' : 'in'}valid MAC address!`)
+        if (options.verbose) console.info(`${logPrefix}Address is ${isValidMAC ? '' : 'in'}valid MAC address!`)
         return isValidMAC
     }
 }

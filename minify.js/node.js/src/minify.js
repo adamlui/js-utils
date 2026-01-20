@@ -12,7 +12,8 @@ const fs = require('fs'),
 function findJS(searchDir, options = {}) {
 
     const docURL = 'https://docs.minify-js.org/node.js/#findjssearchdir-options',
-          exampleCall = `findJS('assets/js', { verbose: false, dotFoldes: true })`
+          exampleCall = `findJS('assets/js', { verbose: false, dotFoldes: true })`,
+          logPrefix = 'findJS() » '
 
     const defaultOptions = {
         recursive: true,   // recursively search for nested files in searchDir passed
@@ -24,15 +25,15 @@ function findJS(searchDir, options = {}) {
 
     // Validate searchDir
     if (typeof searchDir != 'string') {
-            console.error('findJS() » ERROR: 1st arg <searchDir> must be a string.')
-            console.info('findJS() » For more help, please visit ' + docURL)
+            console.error(`${logPrefix}ERROR: 1st arg <searchDir> must be a string.`)
+            console.info(`${logPrefix}For more help, please visit ${docURL}`)
             return
     } else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir)
         if (!fs.existsSync(searchPath)) {
-            console.error('findJS() » ERROR: 1st arg <searchDir> must be an existing directory.')
-            console.error(`findJS() » ${searchPath} does not exist.`)
-            console.info('findJS() » For more help, please visit ' + docURL)
+            console.error(`${logPrefix}ERROR: 1st arg <searchDir> must be an existing directory.`)
+            console.error(`${logPrefix}${searchPath} does not exist.`)
+            console.info(`${logPrefix}For more help, please visit ${docURL}`)
             return
         }
     }
@@ -45,7 +46,7 @@ function findJS(searchDir, options = {}) {
     // Search for unminified JS
     const dirFiles = fs.readdirSync(searchDir), jsFiles = []
     if (options.verbose && !options.isRecursing) {
-        console.info('findJS() » Searching for unminified JS files...') }
+        console.info(`${logPrefix}Searching for unminified JS files...`) }
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file)
         const shouldIgnore = options.ignores.some(pattern =>
@@ -53,7 +54,7 @@ function findJS(searchDir, options = {}) {
           : file == pattern
         )
         if (shouldIgnore) {
-            if (options.verbose) console.info(`findJS() » ** ${file} ignored`)
+            if (options.verbose) console.info(`${logPrefix}** ${file} ignored`)
         } else if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
             && options.recursive // only proceed if recursion enabled
             && (options.dotFolders || !file.startsWith('.'))) // exclude dotfolders if prohibited
@@ -66,10 +67,10 @@ function findJS(searchDir, options = {}) {
 
     // Log/return final result
     if (options.verbose && !options.isRecursing) {
-            console.info('findJS() » Search complete! '
+            console.info(`${logPrefix}Search complete! `
                 + `${ jsFiles.length || 'No' } file${ jsFiles.length == 1 ? '' : 's' } found.`)
         if (findJS.caller?.name != 'minify' && typeof window != 'undefined')
-            console.info('findJS() » Check returned array.')
+            console.info(`${logPrefix}Check returned array.`)
     }
     return options.isRecursing || jsFiles.length ? jsFiles : []
 }
@@ -77,7 +78,8 @@ function findJS(searchDir, options = {}) {
 function minify(input, options = {}) {
 
     const docURL = 'https://docs.minify-js.org/node.js/#minifyinput-options',
-          exampleCall = `minify('assets/js', { recursive: false, mangle: false })`
+          exampleCall = `minify('assets/js', { recursive: false, mangle: false })`,
+          logPrefix = 'minify() » '
 
     const defaultOptions = {
         recursive: true,       // recursively search for nested files if dir path passed
@@ -93,8 +95,8 @@ function minify(input, options = {}) {
 
     // Validate input
     if (typeof input != 'string') {
-        console.error('minify() » ERROR: 1st arg <input> must be a string.')
-        console.info('minify() » For more help, please visit ' + docURL)
+        console.error(`${logPrefix}ERROR: 1st arg <input> must be a string.`)
+        console.info(`${logPrefix}For more help, please visit ${docURL}`)
         return
     }
 
@@ -111,54 +113,54 @@ function minify(input, options = {}) {
 
         if (stats.isFile()) {
             if (!/\.[cm]?jsx?$/i.test(input)) {
-                const err = new Error(`minify() » ERROR: ${input} is not a JavaScript file (.js, .mjs, .cjs, .jsx)`)
+                const err = new Error(`${logPrefix}ERROR: ${input} is not a JavaScript file (.js, .mjs, .cjs, .jsx)`)
                 console.error(err.message)
                 fs.closeSync(fd)
                 return { code: '', srcPath: path.resolve(process.cwd(), input), error: err }
             }
-            if (options.verbose) console.info(`minify() » ** Minifying ${input}...`)
+            if (options.verbose) console.info(`${logPrefix}** Minifying ${input}...`)
             const buffer = Buffer.alloc(stats.size)
             fs.readSync(fd, buffer, 0, stats.size, 0)
             fs.closeSync(fd)
             const minifyResult = uglifyJS.minify(buffer.toString('utf8'), minifyOptions)
             if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
-            if (minifyResult.error) console.error(`minify() » ERROR: ${minifyResult.error.message}`)
+            if (minifyResult.error) console.error(`${logPrefix}ERROR: ${minifyResult.error.message}`)
             else if (options.verbose && typeof window != 'undefined')
-                console.info('minify() » Minification complete! Check returned object.')
+                console.info(`${logPrefix}Minification complete! Check returned object.`)
             return { code: minifyResult.code, srcPath: path.resolve(process.cwd(), input),
                      error: minifyResult.error }
 
         } else { // dir path passed
             fs.closeSync(fd)
             const minifyResult = findJS(input, options)?.map(jsPath => { // minify found JS files
-                if (options.verbose) console.info(`minify() » ** Minifying ${jsPath}...`)
+                if (options.verbose) console.info(`${logPrefix}** Minifying ${jsPath}...`)
                 const srcCode = fs.readFileSync(jsPath, 'utf8'),
                       minifyResult = uglifyJS.minify(srcCode, minifyOptions)
                 let relPath
                 if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
-                if (minifyResult.error) console.error(`minify() » ERROR: ${ minifyResult.error.message }`)
+                if (minifyResult.error) console.error(`${logPrefix}ERROR: ${ minifyResult.error.message }`)
                 if (!options.relativeOutput) relPath = path.relative(path.resolve(process.cwd(), input), jsPath)
                 return { code: minifyResult.code, srcPath: jsPath, relPath, error: minifyResult.error }
             }).filter(data => !data.error) // filter out failed minifications
             if (options.verbose) {
                 if (minifyResult.length && typeof window != 'undefined') console.info(
-                    'minify() » Minification complete! Check returned object.')
+                    `${logPrefix}Minification complete! Check returned object.`)
                 else console.info(
-                    'minify() » No unminified JavaScript files processed.')
+                    `${logPrefix}No unminified JavaScript files processed.`)
             }
 
             // Rewrite import paths if enabled and multiple files processed
             if (options.rewriteImports && minifyResult && minifyResult.length > 1) {
-                if (options.verbose) console.info('minify() » ** Rewriting import paths...')
+                if (options.verbose) console.info(`${logPrefix}** Rewriting import paths...`)
                 const minifiedFiles = minifyResult.map(file => path.basename(file.srcPath, '.js'))
                 minifyResult.forEach(minifiedFile => minifiedFiles.forEach(filename => {
                     const reMatch = new RegExp(`(\\./?)?\\b${filename}\\.js(['"])`, 'g'),
                           before = minifiedFile.code
                     minifiedFile.code = minifiedFile.code.replace(reMatch, `$1${filename}.min.js$2`)
                     if (before != minifiedFile.code && options.verbose)
-                        console.info(`minify() » Updated ${filename}.js in ${path.basename(minifiedFile.srcPath)}`)
+                        console.info(`${logPrefix}Updated ${filename}.js in ${path.basename(minifiedFile.srcPath)}`)
                 }))
-                if (options.verbose) console.info('minify() » Import paths rewritten.')
+                if (options.verbose) console.info(`${logPrefix}Import paths rewritten.`)
             }
 
             return minifyResult
@@ -167,12 +169,12 @@ function minify(input, options = {}) {
     } catch (err) {
         if (err.code == 'ENOENT') { // minify based on src code arg
             if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
-                console.info('minify() » ** Minifying passed source code...')
+                console.info(`${logPrefix}** Minifying passed source code...`)
             const minifyResult = uglifyJS.minify(input, minifyOptions)
             if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
-            if (minifyResult.error) console.error(`minify() » ERROR: ${minifyResult.error.message}`)
+            if (minifyResult.error) console.error(`${logPrefix}ERROR: ${minifyResult.error.message}`)
             else if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
-                console.info('minify() » Minification complete! Check returned object.')
+                console.info(`${logPrefix}Minification complete! Check returned object.`)
             return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error }
         }
         throw err
@@ -182,7 +184,7 @@ function minify(input, options = {}) {
         const commentBlock = comment.split('\n').map(line => ` * ${line}`).join('\n'),
               shebangIdx = code.indexOf('#!')
         if (shebangIdx >= 0) {
-            const postShebangIdx = code.indexOf('\n', shebangIdx) + 1 // idx of 1st newline after shebang
+            const postShebangIdx = code.indexOf('\n', shebangIdx) +1 // idx of 1st newline after shebang
             return code.slice(0, postShebangIdx) + `/**\n${commentBlock}\n */\n` + code.slice(postShebangIdx)
         } else return `/**\n${commentBlock}\n */\n${code}`
     }
