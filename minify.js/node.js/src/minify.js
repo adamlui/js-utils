@@ -5,7 +5,7 @@
 // Import LIBS
 const fs = require('fs'),
       path = require('path'),
-      uglifyJS = require('uglify-js');
+      uglifyJS = require('uglify-js')
 
 // Define API functions
 
@@ -34,7 +34,8 @@ function findJS(searchDir, options = {}) {
             console.error(`findJS() » ${searchPath} does not exist.`)
             console.info('findJS() » For more help, please visit ' + docURL)
             return
-    }}
+        }
+    }
 
     // Validate/init options
     if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
