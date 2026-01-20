@@ -24,6 +24,9 @@ jobs:
           RELEASE_NOTES=$(echo "$this_release" | sed -nE 's/.*"body": "(.*)".*/\1/p')
           release_app_name=$(echo "$RELEASE_TITLE" | sed -E 's|^ *|| ; s| [(v].*||')
 
+          if [[ "$RELEASE_NOTES" == *"Auto-synced from"* ]] ; then
+              echo "Release already auto-synced. Exiting..." ; exit 0 ; fi
+
           # Process notes
           RELEASE_NOTES=$(echo "$RELEASE_NOTES" | \
             sed 's|📃|:page_with_curl:|g; s|🚀|:rocket:|g; s|🧠|:brain:|g' | \
