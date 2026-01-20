@@ -312,28 +312,11 @@ console.log(results);
 
 ## 🛠️ Related Utilities
 
-<table>
-  <tr>
-    <td width="50%">
-
-### [🖼️ img-to-webp][link-img-to-webp]
-
-Recursively compress all images to WEBPs
-
-[Download][link-img-download] • [Discuss][link-img-discuss]
-
-</td>
-    <td width="50%">
-
 ### [</> minify.js][link-minify] [![Awesome][badge-awesome-small]][link-minify-awesome]
 
 Recursively minify all JavaScript files
 
 [Install][link-minify-install] • [Readme][link-minify-readme] • [CLI][link-minify-cli] • [API][link-minify-api] • [Discuss][link-minify-discuss]
-
-</td>
-  </tr>
-</table>
 
 ---
 
@@ -376,9 +359,6 @@ Recursively minify all JavaScript files
 [link-codefactor]: https://www.codefactor.io/repository/github/adamlui/scss-to-css
 [link-sonar]: https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:node.js/src/scss-to-css.js
 [link-awesome]: https://github.com/toolleeo/cli-apps#conversion
-[link-img-to-webp]: https://github.com/adamlui/js-utils/tree/main/img-to-webp
-[link-img-download]: https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js
-[link-img-discuss]: https://github.com/adamlui/js-utils/discussions
 [link-minify]: https://minify-js.org
 [link-minify-awesome]: https://github.com/toolleeo/cli-apps#programming
 [link-minify-install]: https://node.minify-js.org/#-installation

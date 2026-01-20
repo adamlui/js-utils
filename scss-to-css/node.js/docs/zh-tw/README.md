@@ -284,12 +284,6 @@ findSCSS() » Check returned array.
 
 ## 🛠️ 相關實用程式
 
-### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
-
-> 遞歸地將所有影像壓縮為 WEBP。
-<br>[下載](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
-[討論](https://github.com/adamlui/js-utils/discussions)
-
 ### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?v=7e4a141"></a>
 
 > 遞歸地縮小所有 JavaScript 檔案。

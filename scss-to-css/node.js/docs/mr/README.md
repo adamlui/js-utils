@@ -284,12 +284,6 @@ findSCSS() » Check returned array.
 
 ## 🛠️ संबंधित उपयुक्तता
 
-### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
-
-> सर्व प्रतिमा WEBP वर वारंवार संकुचित करा.
-<br>[डाउनलोड करा](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
-[चर्चा करा](https://github.com/adamlui/js-utils/discussions)
-
 ### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?v=7e4a141"></a>
 
 > सर्व JavaScript फायली आवर्तीपणे लहान करा.
