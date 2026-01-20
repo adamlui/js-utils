@@ -1,7 +1,8 @@
 name: Sync latest minify.js + scss-to-css releases to adamlui/<app-repo>
 
 on:
-  push:
+  release:
+    types: [published, edited, released]
 
 jobs:
   sync-latest-release:
