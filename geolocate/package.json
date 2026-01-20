@@ -7,7 +7,7 @@
     "email": "adam@kudoai.com",
     "url": "https://github.com/adamlui"
   },
-  "homepage": "https://geolocatejs.org",
+  "homepage": "https://github.com/adamlui/js-utils",
   "license": "MIT",
   "funding": [
     {
@@ -57,7 +57,7 @@
     "cli"
   ],
   "bugs": {
-    "url": "https://support.geolocatejs.org"
+    "url": "https://github.com/adamlui/js-utils/issues"
   },
   "dependencies": {
     "generate-ip": "^2.4.6"

@@ -7,7 +7,7 @@
     "email": "adam@kudoai.com",
     "url": "https://github.com/adamlui"
   },
-  "homepage": "https://generate-ip.org",
+  "homepage": "https://github.com/adamlui/js-utils",
   "license": "MIT",
   "funding": [
     {
@@ -59,7 +59,7 @@
     "mac"
   ],
   "bugs": {
-    "url": "https://support.generate-ip.org"
+    "url": "https://github.com/adamlui/js-utils/issues"
   },
   "devDependencies": {
     "@adamlui/minify.js": "^2.1.0"

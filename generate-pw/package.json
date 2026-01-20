@@ -7,7 +7,7 @@
     "email": "adam@kudoai.com",
     "url": "https://github.com/adamlui"
   },
-  "homepage": "https://generatepw.org",
+  "homepage": "https://github.com/adamlui/js-utils",
   "license": "MIT",
   "funding": [
     {
@@ -59,7 +59,7 @@
     "cli"
   ],
   "bugs": {
-    "url": "https://support.generatepw.org"
+    "url": "https://github.com/adamlui/js-utils/issues"
   },
   "devDependencies": {
     "@adamlui/minify.js": "^2.0.0"
