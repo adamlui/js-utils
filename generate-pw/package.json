@@ -62,6 +62,6 @@
     "url": "https://github.com/adamlui/js-utils/issues"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^2.0.0"
+    "@adamlui/minify.js": "^2.1.0"
   }
 }
