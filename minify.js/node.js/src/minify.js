@@ -107,14 +107,20 @@ function minify(input, options = {}) {
     // Minify JS based on input
     const minifyOptions = { mangle: options.mangle ? { toplevel: false } : false }
     try {
-        if (fs.statSync(input).isFile()) {
+        const fd = fs.openSync(input, fs.constants.O_RDONLY),
+              stats = fs.fstatSync(fd)
+        if (stats.isFile()) {
             if (!/\.[cm]?jsx?$/i.test(input)) {
                 const err = new Error(`minify() » ERROR: ${input} is not a JavaScript file (.js, .mjs, .cjs, .jsx)`)
                 console.error(err.message)
-                return { code: '', srcPath: path.resolve(process.cwd(), input), err }
+                fs.closeSync(fd)
+                return { code: '', srcPath: path.resolve(process.cwd(), input), error: err }
             }
             if (options.verbose) console.info(`minify() » ** Minifying ${input}...`)
-            const minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions)
+            const buffer = Buffer.alloc(stats.size)
+            fs.readSync(fd, buffer, 0, stats.size, 0)
+            fs.closeSync(fd)
+            const minifyResult = uglifyJS.minify(buffer.toString('utf8'), minifyOptions)
             if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
             if (minifyResult.error) console.error(`minify() » ERROR: ${minifyResult.error.message}`)
             else if (options.verbose && typeof window != 'undefined')
@@ -122,6 +128,7 @@ function minify(input, options = {}) {
             return { code: minifyResult.code, srcPath: path.resolve(process.cwd(), input),
                      error: minifyResult.error }
         } else { // dir path passed
+            fs.closeSync(fd)
             const minifyResult = findJS(input, options)?.map(jsPath => { // minify found JS files
                 if (options.verbose) console.info(`minify() » ** Minifying ${jsPath}...`)
                 const srcCode = fs.readFileSync(jsPath, 'utf8'),
