@@ -53,7 +53,8 @@ jobs:
 
           # Publish new release
           echo "Publishing new release..."
-          RELEASE_NOTES+="\n\n###### _Auto-synced from https://github.com/adamlui/js-utils/releases_" # prevent ping pong
+          RELEASE_NOTES+="\n\n###### _Auto-synced from https://github.com/adamlui/js-utils/releases" # prevent ping pong
+          RELEASE_NOTES+=" by [kudo-sync-bot](https://github.com/kudo-sync-bot)_"
           create_release_url="https://api.github.com/repos/adamlui/$release_app_name/releases"
           create_release_payload=$(
             printf '{"tag_name": "%s","name": "%s","body": "%s"}' \
