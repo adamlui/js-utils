@@ -106,8 +106,13 @@ function minify(input, options = {}) {
 
     // Minify JS based on input
     const minifyOptions = { mangle: options.mangle ? { toplevel: false } : false }
-    if (fs.existsSync(input)) { // minify based on path arg
-        if (fs.statSync(input).isFile()) { // file path passed
+    try {
+        if (fs.statSync(input).isFile()) {
+            if (!/\.[cm]?jsx?$/i.test(input)) {
+                const err = new Error(`minify() » ERROR: ${input} is not a JavaScript file (.js, .mjs, .cjs, .jsx)`)
+                console.error(err.message)
+                return { code: '', srcPath: path.resolve(process.cwd(), input), err }
+            }
             if (options.verbose) console.info(`minify() » ** Minifying ${input}...`)
             const minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions)
             if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
@@ -150,15 +155,18 @@ function minify(input, options = {}) {
 
             return minifyResult
         }
-    } else { // minify based on src code arg
-        if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
-            console.info('minify() » ** Minifying passed source code...')
-        const minifyResult = uglifyJS.minify(input, minifyOptions)
-        if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
-        if (minifyResult.error) console.error(`minify() » ERROR: ${minifyResult.error.message}`)
-        else if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
-            console.info('minify() » Minification complete! Check returned object.')
-        return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error }
+    } catch (err) {
+        if (err.code == 'ENOENT') { // minify based on src code arg
+            if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
+                console.info('minify() » ** Minifying passed source code...')
+            const minifyResult = uglifyJS.minify(input, minifyOptions)
+            if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
+            if (minifyResult.error) console.error(`minify() » ERROR: ${minifyResult.error.message}`)
+            else if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
+                console.info('minify() » Minification complete! Check returned object.')
+            return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error }
+        }
+        throw err
     }
 
     function prependComment(code, comment) {
