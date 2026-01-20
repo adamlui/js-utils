@@ -106,7 +106,7 @@ function minify(input, options = {}) {
     // Minify JS based on input
     const minifyOptions = { mangle: options.mangle ? { toplevel: false } : false }
     if (fs.existsSync(input)) { // minify based on path arg
-        if (input.endsWith('.js')) { // file path passed
+        if (fs.statSync(input).isFile()) { // file path passed
             if (options.verbose) console.info(`minify() » ** Minifying ${input}...`)
             const minifyResult = uglifyJS.minify(fs.readFileSync(input, 'utf8'), minifyOptions)
             if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
