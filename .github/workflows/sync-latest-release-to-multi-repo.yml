@@ -53,7 +53,8 @@ jobs:
           fi
 
           # Download assets
-          download_urls=$(echo "$latest_release" | grep -o '"browser_download_url": ".*"' | cut -d '"' -f 4)
+          this_release=$(curl -s https://api.github.com/repos/adamlui/js-utils/releases/tags/$release_tag_name)
+          download_urls=$(echo "$this_release" | grep -o '"browser_download_url": ".*"' | cut -d '"' -f 4)
           for url in $download_urls; do
             echo -e "Downloading $(basename "$url")..."
             curl -LOs "$url"
