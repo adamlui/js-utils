@@ -5,7 +5,6 @@ import json from '@eslint/json'
 import markdown from '@eslint/markdown'
 import regexp from 'eslint-plugin-regexp'
 import stylisticJS from '@stylistic/eslint-plugin'
-import yml from 'eslint-plugin-yml'
 
 export default [
     { ignores: ['**/sandbox/', '**/*.min.js', '**/package-lock.json'] },
@@ -53,6 +52,5 @@ export default [
             'markdown/no-missing-link-fragments': 'off' // until https://github.com/eslint/markdown/issues/430 fixed
         }
     },
-    { files: ['**/*.mjs'], languageOptions: { sourceType: 'module' }},
-    { files: ['**/*.{yaml,yml}'], ...yml.configs['flat/standard'][1] }
+    { files: ['**/*.mjs'], languageOptions: { sourceType: 'module' }}
 ]

@@ -1,6 +1,6 @@
 {
   "name": "@adamlui/geolocate",
-  "version": "2.0.12",
+  "version": "2.0.13",
   "description": "Fetch IP geolocation data from the CLI.",
   "author": {
     "name": "Adam Lui",
@@ -63,6 +63,6 @@
     "generate-ip": "^2.4.6"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^2.0.0"
+    "@adamlui/minify.js": "^2.1.0"
   }
 }

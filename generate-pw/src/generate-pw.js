@@ -16,7 +16,8 @@ const charsets = {
 function generatePassword(options = {}) {
 
     const docURL = 'https://docs.generatepw.org/#generatepasswordoptions',
-          exampleCall = 'generatePassword({ verbose: false, numbers: true })'
+          exampleCall = 'generatePassword({ verbose: false, numbers: true })',
+          logPrefix = 'generatePassword() » '
 
     const defaultOptions = {
         verbose: true,              // enable logging
@@ -45,7 +46,7 @@ function generatePassword(options = {}) {
 
         // Init password's char set
         if (options.verbose && !fromGeneratePasswords)
-            console.info('generatePassword() » Initializing character set...')
+            console.info(`${logPrefix}Initializing character set...`)
         let pwCharset = options.charset?.toString() || ( // use passed [charset], or construct from options
             (options.numbers ? charsets.numbers : '')
               +(options.symbols ? charsets.symbols : '')
@@ -58,19 +59,19 @@ function generatePassword(options = {}) {
         // Exclude passed `exclude` chars
         if (options.exclude) {
             if (options.verbose && !fromGeneratePasswords)
-                console.info('generatePassword() » Removing excluded characters...')
+                console.info(`${logPrefix}Removing excluded characters...`)
             pwCharset = pwCharset.replace(new RegExp(`[${options.exclude}]`, 'g'), '')
         }
 
         // Exclude similar chars if `excludeSimilarChars` is `true`
         if (options.excludeSimilarChars) {
             if (options.verbose && !fromGeneratePasswords)
-                console.info('generatePassword() » Excluding similar characters...')
+                console.info(`${logPrefix}Excluding similar characters...`)
             pwCharset = pwCharset.replace(/[o0Oil1|]/g, '')
         }
 
         // Generate unstrict password
-        if (options.verbose && !fromGeneratePasswords) console.info('generatePassword() » Generating password...')
+        if (options.verbose && !fromGeneratePasswords) console.info(`${logPrefix}Generating password...`)
         let password = ''
         for (let i = 0 ; i < options.length ; i++) {
             const randomIdx = randomInt(0, pwCharset.length)
@@ -79,7 +80,7 @@ function generatePassword(options = {}) {
 
         // Enforce strict mode if enabled
         if (options.strict) {
-            if (options.verbose && !fromGeneratePasswords) console.info('generatePassword() » Enforcing strict mode...')
+            if (options.verbose && !fromGeneratePasswords) console.info(`${logPrefix}Enforcing strict mode...`)
             const charTypes = ['number', 'symbol', 'lower', 'upper']
             const requiredCharTypes = charTypes
                 .filter(charType => options[`${charType}s`] || options[`${charType}case`])
@@ -88,9 +89,8 @@ function generatePassword(options = {}) {
 
         // Log/return final result
         if (options.verbose && !fromGeneratePasswords) {
-                console.info('generatePassword() » Password generated!')
-            if (typeof window != 'undefined')
-                console.info('generatePassword() » Check returned string.')
+            console.info(`${logPrefix}Password generated!`)
+            if (typeof window != 'undefined') console.info(`${logPrefix}Check returned string.`)
         }
         return password
     }
@@ -99,7 +99,8 @@ function generatePassword(options = {}) {
 function generatePasswords(qty, options = {}) {
 
     const docURL = 'https://docs.generatepw.org/#generatepasswordsqty-options',
-          exampleCall = 'generatePasswords(3, { verbose: false, symbols: true })'
+          exampleCall = 'generatePasswords(3, { verbose: false, symbols: true })',
+          logPrefix = 'generatePasswords() » '
 
     const defaultOptions = {
         verbose: true,              // enable logging
@@ -117,8 +118,8 @@ function generatePasswords(qty, options = {}) {
     // Validate qty
     qty = parseInt(qty, 10)
     if (isNaN(qty) || qty < 1) {
-        console.error('generatePasswords() » ERROR: 1st arg <qty> can only be an integer > 0.')
-        console.info('generatePasswords() » For more help, please visit ' + docURL)
+        console.error(`${logPrefix}ERROR: 1st arg <qty> can only be an integer > 0.`)
+        console.info(`${logPrefix}For more help, please visit ${docURL}`)
         return
     }
 
@@ -127,15 +128,14 @@ function generatePasswords(qty, options = {}) {
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
     // Generate passwords
-    if (options.verbose) console.info(`generatePasswords() » Generating password${ qty > 1 ? 's' : '' }...`)
+    if (options.verbose) console.info(`${logPrefix}Generating password${ qty > 1 ? 's' : '' }...`)
     const passwords = []
     for (let i = 0 ; i < qty ; i++) passwords.push(generatePassword(options))
 
     // Log/return final result
     if (options.verbose) {
-            console.info(`generatePasswords() » Password${ qty > 1 ? 's' : '' } generated!`)
-        if (typeof window != 'undefined')
-            console.info('generatePasswords() » Check returned array.')
+        console.info(`${logPrefix}Password${ qty > 1 ? 's' : '' } generated!`)
+        if (typeof window != 'undefined') console.info(`${logPrefix}Check returned array.`)
     }
     return passwords
 }
@@ -144,12 +144,13 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
 
     const docURL = 'https://docs.generatepw.org/#strictifypassword-requiredchartypes-options',
           exampleCall = `strictify('pa55word', ['symbol', 'upper'], { verbose: false })`,
-          defaultOptions = { verbose: true /* enable logging */ }
+          defaultOptions = { verbose: true /* enable logging */ },
+          logPrefix = 'strictify() » '
 
     // Validate password
     if (typeof password != 'string') {
-        console.error('strictify() » ERROR: 1st arg <password> must be a string.')
-        console.info('strictify() » For more help, please visit ' + docURL)
+        console.error(`${logPrefix}ERROR: 1st arg <password> must be a string.`)
+        console.info(`${logPrefix}For more help, please visit ${docURL}`)
         return
     }
 
@@ -159,10 +160,10 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
         requiredCharTypes = [requiredCharTypes]
     for (const charType of requiredCharTypes) {
         if (!validCharTypes.includes(charType)) {
-            console.error(`strictify() » ERROR: 2nd arg \`${charType}\` is an invalid character type.`)
-            console.info(`strictify() » Valid character types: [ '${ validCharTypes.join('\', \'')}' ]`)
-            console.info('strictify() » Pass one as a string or more as an array, or all types will be required.')
-            console.info('strictify() » For more help, please visit ' + docURL)
+            console.error(`${logPrefix}ERROR: 2nd arg \`${charType}\` is an invalid character type.`)
+            console.info(`${logPrefix}Valid character types: [ '${ validCharTypes.join('\', \'')}' ]`)
+            console.info(`${logPrefix}Pass one as a string or more as an array, or all types will be required.`)
+            console.info(`${logPrefix}For more help, please visit ${docURL}`)
             return
     }}
 
@@ -179,7 +180,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
                 hasFlags[charType] = true ; untouchablePositions.push(i) }
 
     // Modify password if unstrict
-    if (options.verbose) console.info('strictify() » Strictifying password...')
+    if (options.verbose) console.info(`${logPrefix}Strictifying password...`)
     const maxReplacements = Math.min(password.length, requiredCharTypes.length)
     let replacementCnt = 0, strictPW = password
     for (const charType of requiredCharTypes) {
@@ -199,11 +200,11 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     // Log/return final result
     if (options.verbose) {
         if (replacementCnt > 0) {
-            console.info('strictify() » Password is now strict!')
-            console.info('strictify() » Check returned string.')
+            console.info(`${logPrefix}Password is now strict!`)
+            console.info(`${logPrefix}Check returned string.`)
         } else {
-            console.info(`strictify() » Password already includes ${requiredCharTypes.join(' + ')} characters!`)
-            console.info('strictify() » No modifications made.')
+            console.info(`${logPrefix}Password already includes ${requiredCharTypes.join(' + ')} characters!`)
+            console.info(`${logPrefix}No modifications made.`)
         }
     }
     return strictPW
@@ -214,12 +215,13 @@ function validateStrength(password, options = {}) {
     const docURL = 'https://docs.generatepw.org/#validatestrengthpassword-options',
           exampleCall = `validateStrength('pa55word', { verbose: false })`,
           strengthCriteria = { minLength: 8, minLower: 1, minUpper: 1, minNumber: 1, minSymbol: 1 },
-          defaultOptions = { verbose: true /* enable logging */ }
+          defaultOptions = { verbose: true /* enable logging */ },
+          logPrefix = 'validateStrength() » '
 
     // Validate password
     if (typeof password != 'string') {
-        console.error('validateStrength() » ERROR: 1st arg <password> must be a string.')
-        console.info('validateStrength() » For more help, please visit ' + docURL)
+        console.error(`${logPrefix}ERROR: 1st arg <password> must be a string.`)
+        console.info(`${logPrefix}For more help, please visit ${docURL}`)
         return
     }
 
@@ -227,7 +229,7 @@ function validateStrength(password, options = {}) {
     if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
-    if (options.verbose) console.info('validateStrength() » Validating password strength...')
+    if (options.verbose) console.info(`${logPrefix}Validating password strength...`)
 
     // Count occurrences of each char type
     const charCnts = { 'lower': 0, 'upper': 0, 'number': 0, 'symbol': 0 }
@@ -255,8 +257,8 @@ function validateStrength(password, options = {}) {
 
     // Log/return final result
     if (options.verbose) {
-        console.info('validateStrength() » Password strength validated!')
-        console.info('validateStrength() » Check returned object for score/recommendations.')
+        console.info(`${logPrefix}Password strength validated!`)
+        console.info(`${logPrefix}Check returned object for score/recommendations.`)
     }
     return { strengthScore, recommendations, isGood: strengthScore >= 80 }
 }

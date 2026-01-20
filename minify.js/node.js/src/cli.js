@@ -76,7 +76,7 @@ const pkgName = '@adamlui/minify.js',
             'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
         },
         paramOptions: {
-            'ignores': /^--?ignores?(?:=.*|$)/,
+            'ignores': /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/,
             'comment': /^--?comments?(?:=.*|$)/
         },
         infoCmds: { 'help': /^--?h(?:elp)?$/,'version': /^--?ve?r?s?i?o?n?$/ }

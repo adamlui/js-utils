@@ -9,13 +9,14 @@ async function geolocate(ips, options = {}) {
 
     const docURL = 'https://docs.geolocatejs.org/#locateips-options',
           exampleCall = `geolocate('8.8.8.8', { verbose: false })`,
-          defaultOptions = { verbose: true /* enable logging */ }
+          defaultOptions = { verbose: true /* enable logging */ },
+          logPrefix = 'geolocate() » '
 
     // Init/validate IP(s)
     ips = Array.isArray(ips) ? ips : [ips] // normalize to array
     ips[0] ||= await getOwnIP() // fill own IP if none passed
     for (const ip of ips) {
-        if (options.verbose) console.info(`geolocate() » Validating ${ip}...`)
+        if (options.verbose) console.info(`${logPrefix}Validating ${ip}...`)
         let ipIsValid
         try { // to use Node.js generate-ip for validation
             ipIsValid = require('generate-ip').ipv4.validate
@@ -24,7 +25,7 @@ async function geolocate(ips, options = {}) {
             ipIsValid = ipv4.validate
         }
         if (ipIsValid && !ipIsValid(ip, { verbose: false }))
-            return console.error(`geolocate() » ERROR: ${ip} is not a valid IPv4 address.`)
+            return console.error(`${logPrefix}ERROR: ${ip} is not a valid IPv4 address.`)
     }
 
     // Validate/init options
@@ -34,15 +35,15 @@ async function geolocate(ips, options = {}) {
     try { // to fetch/get/return geolocation data
         const geoData = []
         for (const ip of ips) {
-            if (options.verbose) console.info(`geolocate() » Fetching geolocation data for ${ip}...`)
+            if (options.verbose) console.info(`${logPrefix}Fetching geolocation data for ${ip}...`)
             const response = await fetchData(`http://ip-api.com/json/${ip}`)
             let { status, org, as, query, ...filteredData } = await response.json() // eslint-disable-line no-unused-vars
             filteredData = { ip, ...filteredData } ; geoData.push(filteredData)
         }
         if (options.verbose && typeof window != 'undefined')
-            console.info('geolocate() » Success! Check returned array.')
+            console.info('${logPrefix}Success! Check returned array.')
         return geoData
-    } catch (err) { console.error('geolocate() » ERROR:', err.message) }
+    } catch (err) { console.error(`${logPrefix}ERROR:`, err.message) }
 
     async function getOwnIP() {
         return ( // fetch in browser + Node.js 16+
@@ -52,8 +53,8 @@ async function geolocate(ips, options = {}) {
                 const { exec } = require('child_process'),
                       { promisify } = require('util'), execAsync = promisify(exec),
                       { stdout, stderr } = await execAsync('curl -s ifconfig.me')
-                return stderr ? console.error('geolocate() »', stderr) : stdout.trim()
-            } catch (err) { console.error('geolocate() »', err) }
+                return stderr ? console.error(logPrefix, stderr) : stdout.trim()
+            } catch (err) { console.error(logPrefix, err) }
         }))
     }
 }

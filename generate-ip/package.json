@@ -1,6 +1,6 @@
 {
   "name": "generate-ip",
-  "version": "2.4.6",
+  "version": "2.4.7",
   "description": "Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.",
   "author": {
     "name": "Adam Lui",
@@ -62,6 +62,6 @@
     "url": "https://support.generate-ip.org"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^2.0.0"
+    "@adamlui/minify.js": "^2.1.0"
   }
 }

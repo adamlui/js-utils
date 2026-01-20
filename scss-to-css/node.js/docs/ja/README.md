@@ -284,12 +284,6 @@ findSCSS() » Check returned array.
 
 ## 🛠️ 関連ユーティリティ
 
-### [🖼️ img-to-webp](https://github.com/adamlui/js-utils/tree/main/img-to-webp)
-
-> すべての画像を再帰的に WEBP に圧縮します。
-<br>[ダウンロード](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
-[話し合う](https://github.com/adamlui/js-utils/discussions)
-
 ### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?v=7e4a141"></a>
 
 > すべての JavaScript ファイルを再帰的に縮小します。

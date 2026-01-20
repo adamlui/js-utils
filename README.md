@@ -42,12 +42,6 @@ Essential JavaScript libraries/utilities for Node.js and the web
 [API usage](../geolocate#-api-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
-### [🖼️ img-to-webp](../img-to-webp)
-
-> Recursively compress all images to WEBPs.
-<br>[Download](https://cdn.jsdelivr.net/gh/adamlui/js-utils/img-to-webp/img-to-webp.js) /
-[Discuss](https://github.com/adamlui/js-utils/discussions)
-
 ### [</> minify.js](../minify.js) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?v=0d36e26"></a>
 
 > Recursively minify all JavaScript files.
