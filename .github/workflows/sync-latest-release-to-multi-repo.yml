@@ -15,10 +15,11 @@ jobs:
     steps:
       - name: Sync latest release to adamlui/<app-repo>
         run: |
-          # Get latest release title/tag/notes
+          # Get release title/tag/notes
           RELEASE_TITLE="${{ github.event.release.name }}"
           release_tag_name="${{ github.event.release.tag_name }}"
-          RELEASE_NOTES="${{ github.event.release.body }}"
+          this_release=$(curl -s https://api.github.com/repos/adamlui/js-utils/releases/tags/$release_tag_name)
+          RELEASE_NOTES=$(echo "$this_release" | sed -nE 's/.*"body": "(.*)".*/\1/p')
           release_app_name=$(echo "$RELEASE_TITLE" | sed -E 's|^ *|| ; s| [(v].*||')
           RELEASE_NOTES=$(echo "$RELEASE_NOTES" | \
             sed 's|📃|:page_with_curl:|g; s|🚀|:rocket:|g; s|🧠|:brain:|g' | \
