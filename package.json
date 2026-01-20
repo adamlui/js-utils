@@ -1,11 +1,12 @@
 {
   "name": "@adamlui/js-utils",
   "description": "Essential JavaScript utilities",
+  "author": "Adam Lui <adam@kudoai.com> (https://github.com/adamlui)",
   "keywords": [
-    "javascript",
-    "utilities",
+    "api",
     "cli",
-    "api"
+    "javascript",
+    "utilities"
   ],
   "homepage": "https://github.com/adamlui/js-utils",
   "bugs": {
