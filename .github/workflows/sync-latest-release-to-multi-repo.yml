@@ -37,12 +37,13 @@ jobs:
 
           # Check for release existence in target repo
           TARGET_RELEASE_TAG_NAME=$(echo $release_tag_name | sed -E 's|.*-([^-]+)-([0-9.]+)|\1-v\2|')
-          response_code=$(curl -L -s -o /dev/null -w "%{http_code}" \
-                               -H "X-GitHub-Api-Version: 2022-11-28" \
-                               https://api.github.com/repos/adamlui/$release_app_name/releases/tags/$TARGET_RELEASE_TAG_NAME)
-          if (( "$response_code" == 200 )) ; then
+          release_check_resp=$(curl -s -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/adamlui/$release_app_name/releases/tags/$TARGET_RELEASE_TAG_NAME)
+          
+          if echo "$release_check_resp" | grep -q '"id"'; then
             RELEASE_EXISTS=true
-            echo "Release exists @ adamlui/$release_app_name. Will update..."
+            TARGET_RELEASE_ID=$(echo "$release_check_resp" | sed -nE 's|.*"id": ([0-9]+).*|\1|p')
+            echo "Release exists @ adamlui/$release_app_name (ID: $TARGET_RELEASE_ID). Will update..."
           else
             RELEASE_EXISTS=false
             echo "Release doesn't exist. Will create..."
@@ -74,7 +75,7 @@ jobs:
           else
             # UPDATE existing release
             echo "Updating existing release..."
-            update_release_url="https://api.github.com/repos/adamlui/$release_app_name/releases/tags/$TARGET_RELEASE_TAG_NAME"
+            update_release_url="https://api.github.com/repos/adamlui/$release_app_name/releases/$TARGET_RELEASE_ID"
             update_release_payload=$(
               printf '{"name": "%s","body": "%s"}' \
                 "$RELEASE_TITLE" "$RELEASE_NOTES")
