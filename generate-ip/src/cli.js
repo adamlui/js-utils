@@ -26,9 +26,9 @@ const pkgName = 'generate-ip',
     let langCode = 'en'
     if (process.platform == 'win32') {
         try {
-            langCode = execSync('(Get-Culture).TwoLetterISOLanguageName',
-                { shell: 'powershell', encoding: 'utf-8' }).trim()
-        } catch (err) { console.error(`ERROR loading system language: ${err.message}`) }
+            langCode = execSync('(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' })
+                .trim()
+        } catch (err) { console.error('ERROR loading system language:', err.message) }
     } else { // macOS/Linux
         const env = process.env
         langCode = (env.LANG || env.LANGUAGE || env.LC_ALL || env.LC_MESSAGES || env.LC_NAME || 'en')?.split('.')[0]
@@ -53,7 +53,7 @@ const pkgName = 'generate-ip',
                 msgFetchTries++ ; if (msgFetchTries == 3) return resolve({}) // try original/region-stripped/EN only
                 msgHref = langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                     msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
-                        : ( msgHostDir + 'en/messages.json' ) // else use default English messages
+                        : `${msgHostDir}en/messages.json` // else use default English messages
                 fetchData(msgHref).then(handleMsgs).catch(reject)
             }
         }
@@ -62,7 +62,7 @@ const pkgName = 'generate-ip',
 
     // Load SETTINGS from args
     const config = {}
-    const reArgs = {
+    const regex = {
         paramOptions: { 'qty': /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
         flags: {
             'ipv6mode': /^--?(?:ip)?v?6(?:-?mode)?$/,
@@ -73,10 +73,9 @@ const pkgName = 'generate-ip',
     }
     process.argv.forEach(arg => {
         if (!arg.startsWith('-')) return
-        const matchedParamOption = Object.keys(reArgs.paramOptions)
-            .find(option => reArgs.paramOptions[option].test(arg))
-        const matchedFlag = Object.keys(reArgs.flags).find(flag => reArgs.flags[flag].test(arg))
-        const matchedInfoCmd = Object.keys(reArgs.infoCmds).find(cmd => reArgs.infoCmds[cmd].test(arg))
+        const matchedParamOption = Object.keys(regex.paramOptions).find(option => regex.paramOptions[option].test(arg)),
+              matchedFlag = Object.keys(regex.flags).find(flag => regex.flags[flag].test(arg)),
+              matchedInfoCmd = Object.keys(regex.infoCmds).find(cmd => regex.infoCmds[cmd].test(arg))
         if (matchedFlag) config[matchedFlag] = true
         else if (matchedParamOption) {
             if (!/=.+/.test(arg)) {
@@ -85,15 +84,16 @@ const pkgName = 'generate-ip',
                     + `${ msgs.error_noEqual || 'requires \'=\' followed by a value' }.${nc}`)
                 printHelpCmdAndDocURL() ; process.exit(1)
             }
-            const value = arg.split('=')[1]
-            config[matchedParamOption] = parseInt(value) || value
+            const val = arg.split('=')[1]
+            config[matchedParamOption] = parseInt(val) || val
         } else if (!matchedInfoCmd && !/ipv4/.test(arg)) {
             console.error(`\n${ br +( msgs.prefix_error || 'ERROR' )}: `
                 + `Arg [${arg}] ${ msgs.error_notRecognized || 'not recognized' }.${nc}`)
             console.info(`\n${ by +( msgs.info_validArgs || 'Valid arguments are below' )}.${nc}`)
             printHelpSections(['paramOptions', 'flags', 'infoCmds'])
             process.exit(1)
-    }})
+        }
+    })
     if (config.qty && (isNaN(config.qty) || config.qty < 1)) {
         console.error(`\n${ br +( msgs.prefix_error || 'ERROR' )}: [qty] `
             + `${ msgs.error_nonPositiveNum || 'argument can only be > 0' }.${nc}`)
@@ -101,10 +101,10 @@ const pkgName = 'generate-ip',
     }
 
     // Show HELP screen if -h or --help passed
-    if (process.argv.some(arg => reArgs.infoCmds.help.test(arg))) printHelpSections()
+    if (process.argv.some(arg => regex.infoCmds.help.test(arg))) printHelpSections()
 
     // Show VERSION number if -v or --version passed
-    else if (process.argv.some(arg => reArgs.infoCmds.version.test(arg))) {
+    else if (process.argv.some(arg => regex.infoCmds.version.test(arg))) {
         const globalVer = execSync(`npm view ${pkgName} version`).toString().trim() || 'none'
         let localVer, currentDir = process.cwd()
         while (currentDir != '/') {
@@ -112,8 +112,8 @@ const pkgName = 'generate-ip',
             if (fs.existsSync(localManifestPath)) {
                 const localManifest = require(localManifestPath)
                 localVer = (localManifest.dependencies?.[pkgName]
-                         || localManifest.devDependencies?.[pkgName])
-                    ?.match(/^[~^>=]?\d+\.\d+\.\d+$/)?.[1] || 'none'
+                         || localManifest.devDependencies?.[pkgName]
+                )?.match(/^[~^>=]?\d+\.\d+\.\d+$/)?.[1] || 'none'
                 break
             }
             currentDir = path.dirname(currentDir)
@@ -122,9 +122,9 @@ const pkgName = 'generate-ip',
         console.info(`${ msgs.prefix_localVer || 'Local version' }: ${localVer}`)
 
     } else { // log/copy RESULT(S)
-        const genOptions = { qty: config.qty || 1, verbose: !config.quietMode },
-              ipResult = config.ipv6mode ? ipv6.generate(genOptions)
-                        : config.macMode ? mac.generate(genOptions)
+        const genOptions = { qty: config.qty || 1, verbose: !config.quietMode }
+        const ipResult = config.ipv6mode ? ipv6.generate(genOptions)
+                       : config.macMode  ?  mac.generate(genOptions)
                                          : ipv4.generate(genOptions)
         printIfNotQuiet(`\n${ msgs.info_copying || 'Copying to clipboard' }...`)
         copyToClipboard(Array.isArray(ipResult) ? ipResult.join('\n') : ipResult)
