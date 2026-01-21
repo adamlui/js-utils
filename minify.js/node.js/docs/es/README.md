@@ -168,7 +168,7 @@ También puede importar **minify.js** a su aplicación para usar sus métodos AP
 #### ESM*:
 
 ```js
-import minifyJS from '@adamlui/minify.js';
+import minifyJS from '@adamlui/minify.js'
 ```
 
 #### CJS:

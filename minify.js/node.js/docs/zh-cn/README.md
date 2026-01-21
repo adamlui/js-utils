@@ -168,7 +168,7 @@ $ minify-js input_folder output_folder
 #### ESM*:
 
 ```js
-import minifyJS from '@adamlui/minify.js';
+import minifyJS from '@adamlui/minify.js'
 ```
 
 #### CJS:
