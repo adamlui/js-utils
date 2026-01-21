@@ -178,7 +178,7 @@ import scssToCSS from '@adamlui/scss-to-css';
 #### CJS:
 
 ```js
-const scssToCSS = require('@adamlui/scss-to-css');
+const scssToCSS = require('@adamlui/scss-to-css')
 ```
 
 ###### _*Node.js versie 14 of hoger vereist_
@@ -193,10 +193,10 @@ Als **broncode** wordt doorgegeven, wordt deze direct gecompileerd, waarna een o
 
 ```js
 const broncode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
-      resultaatCompileren = scssToCSS.compile(broncode);
+      resultaatCompileren = scssToCSS.compile(broncode)
 
-console.log(resultaatCompileren.error); // geeft een runtimefout weer, of `undefined` als er geen fout is
-console.log(resultaatCompileren.code);  // voert verkleinde CSS uit: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
+console.log(resultaatCompileren.error) // geeft een runtimefout weer, of `undefined` als er geen fout is
+console.log(resultaatCompileren.code)  // voert verkleinde CSS uit: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
 
 Als een **bestandspad** wordt doorgegeven, wordt de code van het bestand geladen en vervolgens gecompileerd naar CSS, waarbij een object zoals hierboven wordt geretourneerd.
@@ -205,18 +205,18 @@ Als een **mappad** wordt doorgegeven, wordt er naar SCSS-bestanden gezocht (stan
 
 ```js
 // Voert paden uit naar SCSS-bestanden in de werkmap + alle geneste mappen
-const resultatenCompileren = scssToCSS.compile('.');
-resultatenCompileren.forEach(resultaat => console.log(resultaat.srcPath));
+const resultatenCompileren = scssToCSS.compile('.')
+resultatenCompileren.forEach(resultaat => console.log(resultaat.srcPath))
 
 // Voert gecompileerde CSS uit het tweede SCSS-bestand uit als dit wordt gevonden, of `undefined` als het niet wordt gevonden
-console.log(resultatenCompileren[1].code);
+console.log(resultatenCompileren[1].code)
 ```
 
 Opties zijn Booleaans en worden doorgegeven als objecteigenschappen. Bijvoorbeeld:
 
 ```js
 // Retourneert een reeks gegevensobjecten waarin `.code` niet-verkleinde CSS bevat
-scssToCSS.compile(invoermap, { minify: false });
+scssToCSS.compile(invoermap, { minify: false })
 ```
 
 Beschikbare parameters (en hun standaardinstellingen) zijn:
@@ -242,8 +242,8 @@ Opties zijn Booleaans en worden doorgegeven als objecteigenschappen. Bijvoorbeel
 
 ```js
 // Zoek naar SCSS-bestanden in precies assets/scss
-const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
-console.log(searchResults);
+const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false })
+console.log(searchResults)
 
 /* voorbeelduitvoer:
 

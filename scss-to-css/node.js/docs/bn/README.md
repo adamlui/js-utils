@@ -178,7 +178,7 @@ import scssToCSS from '@adamlui/scss-to-css';
 #### CJS:
 
 ```js
-const scssToCSS = require('@adamlui/scss-to-css');
+const scssToCSS = require('@adamlui/scss-to-css')
 ```
 
 ###### _*Node.js সংস্করণ 14 বা উচ্চতর প্রয়োজন_
@@ -193,10 +193,10 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 ```js
 const srcCode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
-      compileResult = scssToCSS.compile(srcCode);
+      compileResult = scssToCSS.compile(srcCode)
 
-console.log(compileResult.error); // আউটপুট রানটাইম ত্রুটি, বা `undefined` যদি কোনো ত্রুটি না থাকে
-console.log(compileResult.code);  // আউটপুট মিনিফাইড CSS: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
+console.log(compileResult.error) // আউটপুট রানটাইম ত্রুটি, বা `undefined` যদি কোনো ত্রুটি না থাকে
+console.log(compileResult.code)  // আউটপুট মিনিফাইড CSS: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
 
 যদি একটি **ফাইল পাথ** পাস করা হয়, তাহলে ফাইলের কোডটি লোড হয় তারপর CSS-এ কম্পাইল করা হয়, উপরের মত একটি বস্তু ফিরিয়ে দেয়।
@@ -205,18 +205,18 @@ console.log(compileResult.code);  // আউটপুট মিনিফাইড
 
 ```js
 // কর্মরত ডিরেক্টরি + সমস্ত নেস্টেড ডিরেক্টরিতে SCSS ফাইলের পাথ আউটপুট করে
-const compileResults = scssToCSS.compile('.');
-compileResults.forEach(result => console.log(result.srcPath));
+const compileResults = scssToCSS.compile('.')
+compileResults.forEach(result => console.log(result.srcPath))
 
 // পাওয়া গেলে দ্বিতীয় SCSS ফাইল থেকে CSS কম্পাইল করা আউটপুট, বা না পাওয়া গেলে `undefined`
-console.log(compileResults[1].code);
+console.log(compileResults[1].code)
 ```
 
 বিকল্পগুলি হল বুলিয়ান, অবজেক্টের বৈশিষ্ট্য হিসাবে পাস করা হয়েছে৷ উদাহরণ স্বরূপ:
 
 ```js
 // ডেটা অবজেক্টের অ্যারে প্রদান করে যেখানে `.কোড` অমিনিফাইড CSS কোড
-scssToCSS.compile(inputDir, { minify: false });
+scssToCSS.compile(inputDir, { minify: false })
 ```
 
 উপলব্ধ প্যারামিটার (এবং তাদের ডিফল্ট সেটিংস) হল:
@@ -242,8 +242,8 @@ scssToCSS.compile(inputDir, { minify: false });
 
 ```js
 // ঠিক assets/scss-এ SCSS ফাইল অনুসন্ধান করুন
-const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
-console.log(searchResults);
+const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false })
+console.log(searchResults)
 
 /* নমুনা আউটপুট:
 

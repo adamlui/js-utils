@@ -174,7 +174,7 @@ import minifyJS from '@adamlui/minify.js';
 #### CJS:
 
 ```js
-const minifyJS = require('@adamlui/minify.js');
+const minifyJS = require('@adamlui/minify.js')
 ```
 
 ###### _*Node.js version 14 ou supérieure requise_
@@ -189,10 +189,10 @@ Si le **code source** est passé, il est directement minifié, puis un objet con
 
 ```js
 const codeSrc = 'function add(first, second) { return first + second; }',
-      résultatMinifier = minifyJS.minify(codeSrc);
+      résultatMinifier = minifyJS.minify(codeSrc)
 
-console.log(résultatMinifier.error); // génère une erreur d'exécution, ou `undefined` si aucune erreur
-console.log(résultatMinifier.code);  // sorties JS minifiées: 'function add(n,d){return n+d}'
+console.log(résultatMinifier.error) // génère une erreur d'exécution, ou `undefined` si aucune erreur
+console.log(résultatMinifier.code)  // sorties JS minifiées: 'function add(n,d){return n+d}'
 ```
 
 Si un **chemin de fichier** est transmis, le code du fichier est chargé puis réduit, renvoyant un objet comme ci-dessus.
@@ -201,18 +201,18 @@ Si un **chemin de répertoire** est passé, les fichiers JavaScript sont recherc
 
 ```js
 // Affiche les chemins d'accès aux fichiers JS sources dans le répertoire de travail + tous les répertoires imbriqués
-const résultatsMinifier = minifyJS.minify('.');
-résultatsMinifier.forEach(résultat => console.log(résultat.srcPath));
+const résultatsMinifier = minifyJS.minify('.')
+résultatsMinifier.forEach(résultat => console.log(résultat.srcPath))
 
 // Produit le code minifié du 2ème fichier JS s'il est trouvé, ou `undefined` s'il n'est pas trouvé
-console.log(résultatsMinifier[1].code);
+console.log(résultatsMinifier[1].code)
 ```
 
 Les options sont booléennes, transmises en tant que propriétés d'objet. Par exemple:
 
 ```js
 // Renvoie un tableau d'objets de données où les fichiers de points sont également traités si `entrée` est un chemin
-minifyJS.minify(entrée, { dotFiles: true });
+minifyJS.minify(entrée, { dotFiles: true })
 ```
 
 Les paramètres disponibles (et leurs paramètres par défaut) sont:
@@ -239,8 +239,8 @@ Les options sont booléennes, transmises en tant que propriétés d'objet. Par e
 
 ```js
 // Rechercher des fichiers JS non minifiés dans exactement assets/js
-const resultatsRecherche = minifyJS.findJS('assets/js', { recursive: false });
-console.log(resultatsRecherche);
+const resultatsRecherche = minifyJS.findJS('assets/js', { recursive: false })
+console.log(resultatsRecherche)
 
 /* sample output:
 

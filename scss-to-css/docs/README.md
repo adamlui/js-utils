@@ -224,7 +224,7 @@ import * as scssToCSS from '@adamlui/scss-to-css';
 **CommonJS:**
 
 ```js
-const scssToCSS = require('@adamlui/scss-to-css');
+const scssToCSS = require('@adamlui/scss-to-css')
 ```
 
 ---
@@ -237,10 +237,10 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 ```js
 const srcCode = 'h1 { font-size: 40px; code { font-face: Roboto Mono }}';
-const result = scssToCSS.compile(srcCode);
+const result = scssToCSS.compile(srcCode)
 
-console.log(result.error); // undefined if no error
-console.log(result.code);  // 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
+console.log(result.error) // undefined if no error
+console.log(result.code)  // 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
 
 #### File Path Input
@@ -252,16 +252,16 @@ Returns object containing `srcPath` + `code` + `srcMap` + `error`.
 Searches for SCSS files recursively and returns array of result objects:
 
 ```js
-const results = scssToCSS.compile('.');
-results.forEach(result => console.log(result.srcPath));
-console.log(results[1].code); // Compiled CSS from 2nd file
+const results = scssToCSS.compile('.')
+results.forEach(result => console.log(result.srcPath))
+console.log(results[1].code) // Compiled CSS from 2nd file
 ```
 
 #### Options
 
 ```js
 // Example: Return unminified CSS
-scssToCSS.compile(inputDir, { minify: false });
+scssToCSS.compile(inputDir, { minify: false })
 ```
 
 | Option         | Type    | Description                                          | Default |
@@ -282,8 +282,8 @@ scssToCSS.compile(inputDir, { minify: false });
 💡 Searches for all SCSS files within `searchDir` and returns an array of filepaths.
 
 ```js
-const results = scssToCSS.findSCSS('assets/scss', { recursive: false });
-console.log(results);
+const results = scssToCSS.findSCSS('assets/scss', { recursive: false })
+console.log(results)
 
 /* Output:
 [

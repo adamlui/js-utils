@@ -178,7 +178,7 @@ import scssToCSS from '@adamlui/scss-to-css';
 #### CJS:
 
 ```js
-const scssToCSS = require('@adamlui/scss-to-css');
+const scssToCSS = require('@adamlui/scss-to-css')
 ```
 
 ###### _*Node.js バージョン 14 以降が必要_
@@ -193,10 +193,10 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 ```js
 const srcCode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
-      compileResult = scssToCSS.compile(srcCode);
+      compileResult = scssToCSS.compile(srcCode)
 
-console.log(compileResult.error); // 実行時エラーを出力するか、エラーがない場合は `undefined` を出力します
-console.log(compileResult.code);  // 縮小されたCSSを出力します: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
+console.log(compileResult.error) // 実行時エラーを出力するか、エラーがない場合は `undefined` を出力します
+console.log(compileResult.code)  // 縮小されたCSSを出力します: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
 
 **ファイル パス**が渡された場合、ファイルのコードがロードされて CSS にコンパイルされ、上記のようなオブジェクトが返されます。
@@ -205,18 +205,18 @@ console.log(compileResult.code);  // 縮小されたCSSを出力します: 'h1{f
 
 ```js
 // 作業ディレクトリ + ネストされたすべてのディレクトリ内の SCSS ファイルへのパスを出力します
-const compileResults = scssToCSS.compile('.');
-compileResults.forEach(result => console.log(result.srcPath));
+const compileResults = scssToCSS.compile('.')
+compileResults.forEach(result => console.log(result.srcPath))
 
 // 見つかった場合は 2 番目の SCSS ファイルからコンパイルされた CSS を出力し、見つからなかった場合は `undefined` を出力します
-console.log(compileResults[1].code);
+console.log(compileResults[1].code)
 ```
 
 オプションはブール値であり、オブジェクトのプロパティとして渡されます。 例えば：
 
 ```js
 // `.code` に縮小されていない CSS が含まれるデータ オブジェクトの配列を返します
-scssToCSS.compile(inputDir, { minify: false });
+scssToCSS.compile(inputDir, { minify: false })
 ```
 
 利用可能なパラメータ (およびそのデフォルト設定) は次のとおりです:
@@ -242,8 +242,8 @@ scssToCSS.compile(inputDir, { minify: false });
 
 ```js
 // 正確に assets/scss で SCSS ファイルを検索します
-const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
-console.log(searchResults);
+const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false })
+console.log(searchResults)
 
 /* サンプル出力:
 

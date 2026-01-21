@@ -84,7 +84,7 @@ import pw from 'generate-pw';
 #### CommonJS:
 
 ```js
-const pw = require('generate-pw');
+const pw = require('generate-pw')
 ```
 
 ###### _*Node.js version 14 or higher required_
@@ -101,9 +101,9 @@ const pw = require('generate-pw');
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.5.14/dist/generate-pw.min.js');
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.5.14/dist/generate-pw.min.js')
     // Your code here...
-})();
+})()
 ```
 
 ### <img height=17 src="https://assets.js-utils.org/images/icons/platforms/tampermonkey/icon28.png?v=0d36e26"><img height=17.5 src="https://assets.js-utils.org/images/icons/platforms/violentmonkey/icon25.png?v=0d36e26"> Greasemonkey
@@ -131,15 +131,15 @@ const pw = require('generate-pw');
 Generates **one** password if `qty` option is not given, returning a string:
 
 ```js
-const password = pw.generatePassword({ length: 11, numbers: true });
-console.log(password); // sample output: 'bAsZm3mq6Qn'
+const password = pw.generatePassword({ length: 11, numbers: true })
+console.log(password) // sample output: 'bAsZm3mq6Qn'
 ```
 
 ...or **multiple** passwords if `qty` option is given, returning an array of strings:
 
 ```js
-const passwords = pw.generatePassword({ qty: 5, length: 8, symbols: true });
-console.log(passwords);
+const passwords = pw.generatePassword({ qty: 5, length: 8, symbols: true })
+console.log(passwords)
 
 /* sample output:
 
@@ -161,8 +161,8 @@ See: [Available options](#available-options-for-generate-functions)
 Generates **multiple** passwords based on `qty` given, returning an array of strings:
 
 ```js
-const passwords = pw.generatePasswords(5, { length: 3, uppercase: false });
-console.log(passwords);
+const passwords = pw.generatePasswords(5, { length: 3, uppercase: false })
+console.log(passwords)
 
 /* sample output:
 
@@ -184,8 +184,8 @@ See: [Available options](#available-options-for-generate-functions)
 Modifies `password` given to use at least one character of each `requiredCharTypes` element passed, returning a string:
 
 ```js
-const strictPW = pw.strictify('abcdef', ['numbers', 'symbols']);
-console.log(strictPW); // sample output: 'a!c2ef'
+const strictPW = pw.strictify('abcdef', ['numbers', 'symbols'])
+console.log(strictPW) // sample output: 'a!c2ef'
 ```
 
 **💡 Note:** If no `requiredCharTypes` array is passed, all available types will be required.
@@ -210,8 +210,8 @@ Validates the strength of a password, returning an object containing:
 Example:
 
 ```js
-const pwStrength = pw.validateStrength('Aa?idsE');
-console.log(pwStrength);
+const pwStrength = pw.validateStrength('Aa?idsE')
+console.log(pwStrength)
 
 /* outputs:
 

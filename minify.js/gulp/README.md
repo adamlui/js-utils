@@ -53,12 +53,12 @@ Use `minify()` w/ **input/output args** in your `gulpfile.js`:
 
 ```js
 const gulp = require('gulp'),
-      minify = require('gulp-minify.js');
+      minify = require('gulp-minify.js')
 
 gulp.task('minify', cb => {
-    minify('src', 'dist');
-    cb();
-});
+    minify('src', 'dist')
+    cb()
+})
 ```
 
 #
@@ -67,14 +67,14 @@ Use `minify()` w/ **no args**, as part of a stream's transformations in your `gu
 ```js
 const gulp = require('gulp'),
       minify = require('gulp-minify.js'),
-      rename = require('gulp-rename');
+      rename = require('gulp-rename')
 
 gulp.task('minify', () => {    
     return gulp.src('src/**/*.js')
         .pipe(minify()) // use minify() arglessly as a stream transformation
         .pipe(rename({ suffix: '.min' })) // change suffix of minified file
-        .pipe(gulp.dest('dist')); // save minified files to the 'dist' directory
-});
+        .pipe(gulp.dest('dist')) // save minified files to the 'dist' directory
+})
 ```
 
 #

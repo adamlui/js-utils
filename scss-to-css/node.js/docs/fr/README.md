@@ -178,7 +178,7 @@ import scssToCSS from '@adamlui/scss-to-css';
 #### CJS:
 
 ```js
-const scssToCSS = require('@adamlui/scss-to-css');
+const scssToCSS = require('@adamlui/scss-to-css')
 ```
 
 ###### _*Node.js version 14 ou supérieure requise_
@@ -193,10 +193,10 @@ Si le **code source** est passé, il est directement compilé, puis un objet con
 
 ```js
 const codeSrc = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
-      résultatCompilation = scssToCSS.compile(codeSrc);
+      résultatCompilation = scssToCSS.compile(codeSrc)
 
-console.log(résultatCompilation.error); // génère une erreur d'exécution, ou `undefined` si aucune erreur
-console.log(résultatCompilation.code);  // génère du CSS minifié: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
+console.log(résultatCompilation.error) // génère une erreur d'exécution, ou `undefined` si aucune erreur
+console.log(résultatCompilation.code)  // génère du CSS minifié: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
 
 Si un **chemin de fichier** est transmis, le code du fichier est chargé puis compilé en CSS, renvoyant un objet comme ci-dessus.
@@ -205,18 +205,18 @@ Si un **chemin de répertoire** est passé, les fichiers SCSS sont recherchés (
 
 ```js
 // Affiche les chemins d'accès aux fichiers SCSS dans le répertoire de travail + tous les répertoires imbriqués
-const résultatsCompilation = scssToCSS.compile('.');
-résultatsCompilation.forEach(résultat => console.log(résultat.srcPath));
+const résultatsCompilation = scssToCSS.compile('.')
+résultatsCompilation.forEach(résultat => console.log(résultat.srcPath))
 
 // Sorties CSS compilées à partir du 2ème fichier SCSS s'il est trouvé, ou `undefined` s'il n'est pas trouvé
-console.log(résultatsCompilation[1].code);
+console.log(résultatsCompilation[1].code)
 ```
 
 Les options sont booléennes, transmises en tant que propriétés d'objet. Par exemple:
 
 ```js
 // Renvoie un tableau d'objets de données où `.code` contient du CSS non minifié
-scssToCSS.compile(répEntrée, { minify: false });
+scssToCSS.compile(répEntrée, { minify: false })
 ```
 
 Les paramètres disponibles (et leurs paramètres par défaut) sont:
@@ -242,8 +242,8 @@ Les options sont booléennes, transmises en tant que propriétés d'objet. Par e
 
 ```js
 // Recherche des fichiers SCSS exactement dans assets/scss
-const resultatsRecherche = scssToCSS.findSCSS('assets/scss', { recursive: false });
-console.log(resultatsRecherche);
+const resultatsRecherche = scssToCSS.findSCSS('assets/scss', { recursive: false })
+console.log(resultatsRecherche)
 
 /* exemple de sortie:
 

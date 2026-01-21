@@ -174,7 +174,7 @@ import minifyJS from '@adamlui/minify.js';
 #### CJS:
 
 ```js
-const minifyJS = require('@adamlui/minify.js');
+const minifyJS = require('@adamlui/minify.js')
 ```
 
 ###### _*Se requiere Node.js versión 14 o superior_
@@ -189,10 +189,10 @@ Si se pasa **código fuente**, se minimiza directamente, luego se devuelve un ob
 
 ```js
 const códigoFuente = 'function add(first, second) { return first + second; }',
-      minificarResultado = minifyJS.minify(códigoFuente);
+      minificarResultado = minifyJS.minify(códigoFuente)
 
-console.log(minificarResultado.error); // genera un error de tiempo de ejecución, o `undefined` si no hay error
-console.log(minificarResultado.code);  // salidas JS minimizadas: 'function add(n,d){return n+d}'
+console.log(minificarResultado.error) // genera un error de tiempo de ejecución, o `undefined` si no hay error
+console.log(minificarResultado.code)  // salidas JS minimizadas: 'function add(n,d){return n+d}'
 ```
 
 Si se pasa una **ruta de archivo**, el código del archivo se carga y luego se minimiza, devolviendo un objeto como el anterior.
@@ -201,18 +201,18 @@ Si se pasa una **ruta de directorio**, se buscan archivos JavaScript (de forma r
 
 ```js
 // Genera rutas a los archivos JS de origen en el directorio de trabajo + todos los directorios anidados
-const minificarResultados = minifyJS.minify('.');
-minificarResultados.forEach(resultado => console.log(resultado.srcPath));
+const minificarResultados = minifyJS.minify('.')
+minificarResultados.forEach(resultado => console.log(resultado.srcPath))
 
 // Genera código minimizado del segundo archivo JS si se encuentra, o `undefined` si no se encuentra
-console.log(minificarResultados[1].code);
+console.log(minificarResultados[1].code)
 ```
 
 Las opciones son booleanas y se pasan como propiedades del objeto. Por ejemplo:
 
 ```js
 // Devuelve una matriz de objetos de datos donde también se procesan archivos de puntos si `entrada` es una ruta
-minifyJS.minify(entrada, { dotFiles: true });
+minifyJS.minify(entrada, { dotFiles: true })
 ```
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:
@@ -239,8 +239,8 @@ Las opciones son booleanas y se pasan como propiedades del objeto. Por ejemplo:
 
 ```js
 // Busque archivos JS no minificados exactamente en assets/js
-const resultadosBúsqueda = minifyJS.findJS('assets/js', { recursive: false });
-console.log(resultadosBúsqueda);
+const resultadosBúsqueda = minifyJS.findJS('assets/js', { recursive: false })
+console.log(resultadosBúsqueda)
 
 /* salida de muestra:
 

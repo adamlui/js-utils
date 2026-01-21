@@ -84,7 +84,7 @@ import pw from 'generate-pw';
 #### CommonJS:
 
 ```js
-const pw = require('generate-pw');
+const pw = require('generate-pw')
 ```
 
 ###### _*Node.js Version 14 oder höher erforderlich_
@@ -101,9 +101,9 @@ const pw = require('generate-pw');
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.5.14/dist/generate-pw.min.js');
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.5.14/dist/generate-pw.min.js')
     // Ihr Code hier...
-})();
+})()
 ```
 
 ### <img height=17 src="https://assets.js-utils.org/images/icons/platforms/tampermonkey/icon28.png?v=0d36e26"><img height=17.5 src="https://assets.js-utils.org/images/icons/platforms/violentmonkey/icon25.png?v=0d36e26"> Greasemonkey
@@ -131,15 +131,15 @@ const pw = require('generate-pw');
 Erzeugt **ein** Passwort, wenn die Option `qty` nicht angegeben ist, und gibt eine Zeichenfolge zurück:
 
 ```js
-const passwort = pw.generatePassword({ length: 11, numbers: true });
-console.log(passwort); // beispielausgabe: 'bAsZm3mq6Qn'
+const passwort = pw.generatePassword({ length: 11, numbers: true })
+console.log(passwort) // beispielausgabe: 'bAsZm3mq6Qn'
 ```
 
 ...oder **mehrere** Passwörter, wenn die Option `qty` angegeben ist, was ein Array von Zeichenfolgen zurückgibt:
 
 ```js
-const passwörter = pw.generatePassword({ qty: 5, length: 8, symbols: true });
-console.log(passwörter);
+const passwörter = pw.generatePassword({ qty: 5, length: 8, symbols: true })
+console.log(passwörter)
 
 /* beispielausgabe:
 
@@ -161,8 +161,8 @@ Siehe: [Verfügbare Optionen](#verfügbare-optionen-für-generate-funktionen)
 Erzeugt **mehrere** Passwörter basierend auf der angegebenen `qty` und gibt ein Array von Zeichenfolgen zurück:
 
 ```js
-const passwörter = pw.generatePasswords(5, { length: 3, uppercase: false });
-console.log(passwörter);
+const passwörter = pw.generatePasswords(5, { length: 3, uppercase: false })
+console.log(passwörter)
 
 /* beispielausgabe:
 
@@ -184,8 +184,8 @@ Siehe: [Verfügbare Optionen](#verfügbare-optionen-für-generate-funktionen)
 Ändert das angegebene `passwort`, um mindestens ein Zeichen jedes übergebenen `erfZeichentypen`-Elements zu verwenden, und gibt eine Zeichenfolge zurück:
 
 ```js
-const striktPW = pw.strictify('abcdef', ['numbers', 'symbols']);
-console.log(striktPW); // beispielausgabe: 'a!c2ef'
+const striktPW = pw.strictify('abcdef', ['numbers', 'symbols'])
+console.log(striktPW) // beispielausgabe: 'a!c2ef'
 ```
 
 **💡 Hinweis:** Wenn kein Array `erfZeichentypen` übergeben wird, sind alle verfügbaren Typen erforderlich.
@@ -210,8 +210,8 @@ Validiert die Stärke eines Passworts und gibt ein Objekt zurück, das Folgendes
 Beispiel:
 
 ```js
-const pwStärke = pw.validateStrength('Aa?idsE');
-console.log(pwStärke);
+const pwStärke = pw.validateStrength('Aa?idsE')
+console.log(pwStärke)
 
 /* ausgaben:
 

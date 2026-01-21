@@ -180,7 +180,7 @@ import scssToCSS from '@adamlui/scss-to-css';
 #### CJS:
 
 ```js
-const scssToCSS = require('@adamlui/scss-to-css');
+const scssToCSS = require('@adamlui/scss-to-css')
 ```
 
 #
@@ -193,10 +193,10 @@ Se **código fonte** for passado, ele será compilado diretamente, então um obj
 
 ```js
 const códigoFnt = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
-      compilarResultado = scssToCSS.compile(códigoFnt);
+      compilarResultado = scssToCSS.compile(códigoFnt)
 
-console.log(compilarResultado.error); // gera erro de tempo de execução ou `undefined` se não houver erro
-console.log(compilarResultado.code);  // gera CSS minificado: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
+console.log(compilarResultado.error) // gera erro de tempo de execução ou `undefined` se não houver erro
+console.log(compilarResultado.code)  // gera CSS minificado: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
 
 Se um **caminho do arquivo** for passado, o código do arquivo é carregado e então compilado em CSS, retornando um objeto como acima.
@@ -205,18 +205,18 @@ Se um **caminho de diretório** for passado, os arquivos SCSS serão procurados 
 
 ```js
 // Gera caminhos para arquivos SCSS no diretório de trabalho + todos os diretórios aninhados
-const compilarResultados = scssToCSS.compile('.');
-compilarResultados.forEach(resultado => console.log(resultado.srcPath));
+const compilarResultados = scssToCSS.compile('.')
+compilarResultados.forEach(resultado => console.log(resultado.srcPath))
 
 // Produz CSS compilado do segundo arquivo SCSS, se encontrado, ou `undefined` se não for encontrado
-console.log(compilarResultados[1].code);
+console.log(compilarResultados[1].code)
 ```
 
 As opções são booleanas, passadas como propriedades do objeto. Por exemplo:
 
 ```js
 // Retorna uma matriz de objetos de dados onde `.code` contém CSS não minificado
-scssToCSS.compile(dirEntrada, { minify: false });
+scssToCSS.compile(dirEntrada, { minify: false })
 ```
 
 Os parâmetros disponíveis (e suas configurações padrão) são:
@@ -242,8 +242,8 @@ As opções são booleanas, passadas como propriedades do objeto. Por exemplo:
 
 ```js
 // Procure por arquivos SCSS exatamente em assets/scss
-const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
-console.log(searchResults);
+const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false })
+console.log(searchResults)
 
 /* saída de exemplo:
 

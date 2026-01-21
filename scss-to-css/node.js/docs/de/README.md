@@ -178,7 +178,7 @@ import scssToCSS from '@adamlui/scss-to-css';
 #### CJS:
 
 ```js
-const scssToCSS = require('@adamlui/scss-to-css');
+const scssToCSS = require('@adamlui/scss-to-css')
 ```
 
 ###### _*Node.js Version 14 oder höher erforderlich_
@@ -193,10 +193,10 @@ Wenn **Quellcode** übergeben wird, wird dieser direkt kompiliert, dann wird ein
 
 ```js
 const quellcode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
-      kompEbnis = scssToCSS.compile(quellcode);
+      kompEbnis = scssToCSS.compile(quellcode)
 
-console.log(kompEbnis.error); // gibt einen Laufzeitfehler oder `undefined` aus, wenn kein Fehler vorliegt
-console.log(kompEbnis.code);  // gibt minimiertes CSS aus: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
+console.log(kompEbnis.error) // gibt einen Laufzeitfehler oder `undefined` aus, wenn kein Fehler vorliegt
+console.log(kompEbnis.code)  // gibt minimiertes CSS aus: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
 
 Wenn ein **Dateipfad** übergeben wird, wird der Code der Datei geladen und dann in CSS kompiliert, wodurch ein Objekt wie oben zurückgegeben wird.
@@ -205,18 +205,18 @@ Wenn ein **Verzeichnispfad** übergeben wird, wird nach SCSS-Dateien gesucht (st
 
 ```js
 // Gibt Pfade zu SCSS-Dateien im Arbeitsverzeichnis + allen verschachtelten Verzeichnissen aus
-const kompEbnisse = scssToCSS.compile('.');
-kompEbnisse.forEach(ergebnis => console.log(ergebnis.srcPath));
+const kompEbnisse = scssToCSS.compile('.')
+kompEbnisse.forEach(ergebnis => console.log(ergebnis.srcPath))
 
 // Gibt kompiliertes CSS aus der zweiten SCSS-Datei aus, wenn es gefunden wird, oder `undefined`, wenn es nicht gefunden wird
-console.log(kompEbnisse[1].code);
+console.log(kompEbnisse[1].code)
 ```
 
 Optionen sind boolesche Werte und werden als Objekteigenschaften übergeben. Zum Beispiel:
 
 ```js
 // Gibt ein Array von Datenobjekten zurück, wobei `.code` nicht minimiertes CSS enthält
-scssToCSS.compile(eingangVer, { minify: false });
+scssToCSS.compile(eingangVer, { minify: false })
 ```
 
 Verfügbare Parameter (und ihre Standardeinstellungen) sind:
@@ -242,8 +242,8 @@ Optionen sind boolesche Werte und werden als Objekteigenschaften übergeben. Zum
 
 ```js
 // Suche nach SCSS-Dateien genau in assets/scss
-const suchergEbnisse = scssToCSS.findSCSS('assets/scss', { recursive: false });
-console.log(suchergEbnisse);
+const suchergEbnisse = scssToCSS.findSCSS('assets/scss', { recursive: false })
+console.log(suchergEbnisse)
 
 /* beispielausgabe:
 

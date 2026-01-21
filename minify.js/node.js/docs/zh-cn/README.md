@@ -174,7 +174,7 @@ import minifyJS from '@adamlui/minify.js';
 #### CJS:
 
 ```js
-const minifyJS = require('@adamlui/minify.js');
+const minifyJS = require('@adamlui/minify.js')
 ```
 
 ###### _*需要 Node.js 版本 14 或更高版本_
@@ -189,10 +189,10 @@ const minifyJS = require('@adamlui/minify.js');
 
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
-      minifyResult = minifyJS.minify(srcCode);
+      minifyResult = minifyJS.minify(srcCode)
 
-console.log(minifyResult.error); // 输出运行时错误，如果没有错误则输出 `undefined`
-console.log(minifyResult.code);  // 输出缩小的 JS：'function add(n,d){return n+d}'
+console.log(minifyResult.error) // 输出运行时错误，如果没有错误则输出 `undefined`
+console.log(minifyResult.code)  // 输出缩小的 JS：'function add(n,d){return n+d}'
 ```
 
 如果传递了**文件路径**，则加载文件的代码然后缩小，返回一个像上面一样的对象。
@@ -201,18 +201,18 @@ console.log(minifyResult.code);  // 输出缩小的 JS：'function add(n,d){retu
 
 ```js
 // 输出工作目录+所有嵌套目录下 JS 文件的源路径
-const minifyResults = minifyJS.minify('.');
-minifyResults.forEach(result => console.log(result.srcPath));
+const minifyResults = minifyJS.minify('.')
+minifyResults.forEach(result => console.log(result.srcPath))
 
 // 如果找到，则输出第二个 JS 文件的精简代码，如果未找到，则输出 `undefined`
-console.log(minifyResults[1].code);
+console.log(minifyResults[1].code)
 ```
 
 选项是布尔值，作为对象属性传递。 例如：
 
 ```js
 // 返回数据对象数组，如果 `input` 是路径，则也会处理点文件
-minifyJS.minify(input, { dotFiles: true });
+minifyJS.minify(input, { dotFiles: true })
 ```
 
 可用参数（及其默认设置）有：
@@ -239,8 +239,8 @@ minifyJS.minify(input, { dotFiles: true });
 
 ```js
 // 在 assets/js 中搜索未缩小的 JavaScript 文件
-const searchResults = minifyJS.findJS('assets/js', { recursive: false });
-console.log(searchResults);
+const searchResults = minifyJS.findJS('assets/js', { recursive: false })
+console.log(searchResults)
 
 /* 示例输出：
 

@@ -178,7 +178,7 @@ import scssToCSS from '@adamlui/scss-to-css';
 #### CJS:
 
 ```js
-const scssToCSS = require('@adamlui/scss-to-css');
+const scssToCSS = require('@adamlui/scss-to-css')
 ```
 
 ###### _*Se requiere Node.js versión 14 o superior_
@@ -193,10 +193,10 @@ Si se pasa **código fuente**, se compila directamente, luego se devuelve un obj
 
 ```js
 const códigoFuente = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
-      compilarResultado = scssToCSS.compile(códigoFuente);
+      compilarResultado = scssToCSS.compile(códigoFuente)
 
-console.log(compilarResultado.error); // genera un error de tiempo de ejecución, o `undefined` si no hay error
-console.log(compilarResultado.code);  // genera CSS minimizado: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
+console.log(compilarResultado.error) // genera un error de tiempo de ejecución, o `undefined` si no hay error
+console.log(compilarResultado.code)  // genera CSS minimizado: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
 
 Si se pasa una **ruta de archivo**, el código del archivo se carga y luego se compila en CSS, devolviendo un objeto como el anterior.
@@ -205,18 +205,18 @@ Si se pasa una **ruta de directorio**, se buscan los archivos SCSS (de forma rec
 
 ```js
 // Genera rutas a archivos SCSS en el directorio de trabajo + todos los directorios anidados
-const compilarResultados = scssToCSS.compile('.');
-compilarResultados.forEach(resultado => console.log(resultado.srcPath));
+const compilarResultados = scssToCSS.compile('.')
+compilarResultados.forEach(resultado => console.log(resultado.srcPath))
 
 // Genera CSS compilado desde el segundo archivo SCSS si se encuentra, o `undefined` si no se encuentra
-console.log(compilarResultados[1].code);
+console.log(compilarResultados[1].code)
 ```
 
 Las opciones son booleanas y se pasan como propiedades del objeto. Por ejemplo:
 
 ```js
 // Devuelve una matriz de objetos de datos donde `.code` contiene CSS no minificado
-scssToCSS.compile(dirEntrada, { minify: false });
+scssToCSS.compile(dirEntrada, { minify: false })
 ```
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:
@@ -242,8 +242,8 @@ Las opciones son booleanas y se pasan como propiedades del objeto. Por ejemplo:
 
 ```js
 // Busca archivos SCSS exactamente en assets/scss
-const resultadosBúsqueda = scssToCSS.findSCSS('assets/scss', { recursive: false });
-console.log(resultadosBúsqueda);
+const resultadosBúsqueda = scssToCSS.findSCSS('assets/scss', { recursive: false })
+console.log(resultadosBúsqueda)
 
 /* salida de muestra:
 

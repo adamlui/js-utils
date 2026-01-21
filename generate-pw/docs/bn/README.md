@@ -84,7 +84,7 @@ import pw from 'generate-pw';
 #### CommonJS:
 
 ```js
-const pw = require('generate-pw');
+const pw = require('generate-pw')
 ```
 
 ###### _*Node.js সংস্করণ 14 বা উচ্চতর প্রয়োজন_
@@ -101,9 +101,9 @@ const pw = require('generate-pw');
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.5.14/dist/generate-pw.min.js');
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.5.14/dist/generate-pw.min.js')
     // আপনার কোড এখানে...
-})();
+})()
 ```
 
 ### <img height=17 src="https://assets.js-utils.org/images/icons/platforms/tampermonkey/icon28.png?v=0d36e26"><img height=17.5 src="https://assets.js-utils.org/images/icons/platforms/violentmonkey/icon25.png?v=0d36e26"> Greasemonkey
@@ -131,15 +131,15 @@ const pw = require('generate-pw');
 **এক** পাসওয়ার্ড জেনারেট করে যদি `qty` বিকল্প না দেওয়া হয়, একটি স্ট্রিং ফেরত দেয়:
 
 ```js
-const password = pw.generatePassword({ length: 11, numbers: true });
-console.log(password); // নমুনা আউটপুট: 'bAsZm3mq6Qn'
+const password = pw.generatePassword({ length: 11, numbers: true })
+console.log(password) // নমুনা আউটপুট: 'bAsZm3mq6Qn'
 ```
 
 ...অথবা **একাধিক** পাসওয়ার্ড যদি `qty` বিকল্প দেওয়া হয়, স্ট্রিংগুলির একটি অ্যারে প্রদান করে:
 
 ```js
-const passwords = pw.generatePassword({ qty: 5, length: 8, symbols: true });
-console.log(passwords);
+const passwords = pw.generatePassword({ qty: 5, length: 8, symbols: true })
+console.log(passwords)
 /* নমুনা আউটপুট:
 
 generatePassword() » Generating passwords...
@@ -160,8 +160,8 @@ generatePassword() » Check returned array.
 প্রদত্ত পরিমাণের উপর ভিত্তি করে **একাধিক** পাসওয়ার্ড তৈরি করে, স্ট্রিংগুলির একটি অ্যারে ফিরিয়ে দেয়:
 
 ```js
-const passwords = pw.generatePasswords(5, { length: 3, uppercase: false });
-console.log(passwords);
+const passwords = pw.generatePasswords(5, { length: 3, uppercase: false })
+console.log(passwords)
 /* নমুনা আউটপুট:
 
 generatePasswords() » Generating passwords...
@@ -182,8 +182,8 @@ generatePasswords() » Check returned array.
 পাস করা প্রতিটি `requiredCharTypes` উপাদানের অন্তত একটি অক্ষর ব্যবহার করার জন্য দেওয়া `password` পরিবর্তন করে, একটি স্ট্রিং ফিরিয়ে দেয়:
 
 ```js
-const strictPW = pw.strictify('abcdef', ['numbers', 'symbols']);
-console.log(strictPW); // নমুনা আউটপুট: 'a!c2ef'
+const strictPW = pw.strictify('abcdef', ['numbers', 'symbols'])
+console.log(strictPW) // নমুনা আউটপুট: 'a!c2ef'
 ```
 
 **💡 দ্রষ্টব্য:** যদি কোন `requiredCharTypes` অ্যারে পাস না হয়, তাহলে উপলব্ধ সব ধরনের প্রয়োজন হবে।
@@ -208,8 +208,8 @@ console.log(strictPW); // নমুনা আউটপুট: 'a!c2ef'
 উদাহরণ:
 
 ```js
-const pwStrength = pw.validateStrength('Aa?idsE');
-console.log(pwStrength);
+const pwStrength = pw.validateStrength('Aa?idsE')
+console.log(pwStrength)
 
 /* আউটপুট:
 

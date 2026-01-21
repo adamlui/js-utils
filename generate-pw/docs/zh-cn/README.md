@@ -82,7 +82,7 @@ import pw from 'generate-pw';
 #### CommonJS:
 
 ```js
-const pw = require('generate-pw');
+const pw = require('generate-pw')
 ```
 
 ###### _*需要 Node.js 版本 14 或更高版本_
@@ -99,9 +99,9 @@ const pw = require('generate-pw');
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.5.14/dist/generate-pw.min.js');
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.5.14/dist/generate-pw.min.js')
     // 你的代码在这里...
-})();
+})()
 ```
 
 ### <img height=17 src="https://assets.js-utils.org/images/icons/platforms/tampermonkey/icon28.png?v=0d36e26"><img height=17.5 src="https://assets.js-utils.org/images/icons/platforms/violentmonkey/icon25.png?v=0d36e26"> Greasemonkey
@@ -129,15 +129,15 @@ const pw = require('generate-pw');
 如果未给出 `qty` 选项，则生成**一个**密码，并返回一个字符串：
 
 ```js
-const password = pw.generatePassword({ length: 11, numbers: true });
-console.log(password); // 示例输出：'bAsZm3mq6Qn'
+const password = pw.generatePassword({ length: 11, numbers: true })
+console.log(password) // 示例输出：'bAsZm3mq6Qn'
 ```
 
 ...或 **多个** 密码（如果给出了 `qty` 选项），返回一个字符串数组：
 
 ```js
-const passwords = pw.generatePassword({ qty: 5, length: 8, symbols: true });
-console.log(passwords);
+const passwords = pw.generatePassword({ qty: 5, length: 8, symbols: true })
+console.log(passwords)
 /* 示例输出：
 
 generatePassword() » Generating passwords...
@@ -158,8 +158,8 @@ generatePassword() » Check returned array.
 根据给定的 `qty` 生成**多个**密码，返回字符串数组：
 
 ```js
-const passwords = pw.generatePasswords(5, { length: 3, uppercase: false });
-console.log(passwords);
+const passwords = pw.generatePasswords(5, { length: 3, uppercase: false })
+console.log(passwords)
 /* 示例输出：
 
 generatePasswords() » Generating passwords...
@@ -180,8 +180,8 @@ generatePasswords() » Check returned array.
 修改指定的 `password`，以使用传递的每个 `requiredCharTypes` 元素中的至少一个字符，返回一个字符串：
 
 ```js
-const strictPW = pw.strictify('abcdef', ['numbers', 'symbols']);
-console.log(strictPW); // 示例输出：'a!c2ef'
+const strictPW = pw.strictify('abcdef', ['numbers', 'symbols'])
+console.log(strictPW) // 示例输出：'a!c2ef'
 ```
 
 **💡注意:**如果没有传递 `requiredCharTypes` 数组，则所有可用类型都将是必需的。
@@ -206,8 +206,8 @@ console.log(strictPW); // 示例输出：'a!c2ef'
 Example:
 
 ```js
-const pwStrength = pw.validateStrength('Aa?idsE');
-console.log(pwStrength);
+const pwStrength = pw.validateStrength('Aa?idsE')
+console.log(pwStrength)
 
 /* 输出：
 

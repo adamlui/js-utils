@@ -178,7 +178,7 @@ import scssToCSS from '@adamlui/scss-to-css';
 #### CJS:
 
 ```js
-const scssToCSS = require('@adamlui/scss-to-css');
+const scssToCSS = require('@adamlui/scss-to-css')
 ```
 
 ###### _*Node.js ਸੰਸਕਰਣ 14 ਜਾਂ ਉੱਚ ਲੋੜੀਂਦਾ_
@@ -193,10 +193,10 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 ```js
 const srcCode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
-      compileResult = scssToCSS.compile(srcCode);
+      compileResult = scssToCSS.compile(srcCode)
 
-console.log(compileResult.error); // ਰਨਟਾਈਮ ਗਲਤੀ ਨੂੰ ਆਉਟਪੁੱਟ ਕਰਦਾ ਹੈ, ਜਾਂ ਜੇਕਰ ਕੋਈ ਗਲਤੀ ਨਹੀਂ ਹੈ ਤਾਂ `undefined`
-console.log(compileResult.code);  // ਆਉਟਪੁੱਟ ਘੱਟ CSS: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
+console.log(compileResult.error) // ਰਨਟਾਈਮ ਗਲਤੀ ਨੂੰ ਆਉਟਪੁੱਟ ਕਰਦਾ ਹੈ, ਜਾਂ ਜੇਕਰ ਕੋਈ ਗਲਤੀ ਨਹੀਂ ਹੈ ਤਾਂ `undefined`
+console.log(compileResult.code)  // ਆਉਟਪੁੱਟ ਘੱਟ CSS: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
 
 ਜੇਕਰ ਇੱਕ **ਫਾਈਲ ਮਾਰਗ** ਪਾਸ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਤਾਂ ਫਾਈਲ ਦਾ ਕੋਡ ਲੋਡ ਕੀਤਾ ਜਾਂਦਾ ਹੈ ਅਤੇ ਫਿਰ CSS ਵਿੱਚ ਕੰਪਾਇਲ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਉਪਰੋਕਤ ਵਰਗਾ ਇੱਕ ਵਸਤੂ ਵਾਪਸ ਕਰਦਾ ਹੈ।
@@ -205,18 +205,18 @@ console.log(compileResult.code);  // ਆਉਟਪੁੱਟ ਘੱਟ CSS: 'h1{fo
 
 ```js
 // ਵਰਕਿੰਗ ਡਾਇਰੈਕਟਰੀ + ਸਾਰੀਆਂ ਨੇਸਟਡ ਡਾਇਰੈਕਟਰੀਆਂ ਵਿੱਚ SCSS ਫਾਈਲਾਂ ਦੇ ਮਾਰਗਾਂ ਨੂੰ ਆਉਟਪੁੱਟ ਕਰਦਾ ਹੈ
-const compileResults = scssToCSS.compile('.');
-compileResults.forEach(result => console.log(result.srcPath));
+const compileResults = scssToCSS.compile('.')
+compileResults.forEach(result => console.log(result.srcPath))
 
 // ਜੇਕਰ ਲੱਭੀ ਤਾਂ ਦੂਜੀ SCSS ਫਾਈਲ ਤੋਂ CSS ਕੰਪਾਇਲ ਕੀਤੀ ਆਉਟਪੁੱਟ, ਜਾਂ `undefined` ਜੇ ਨਹੀਂ ਮਿਲੀ ਤਾਂ
-console.log(compileResults[1].code);
+console.log(compileResults[1].code)
 ```
 
 ਵਿਕਲਪ ਬੂਲੀਅਨ ਹਨ, ਆਬਜੈਕਟ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਵਜੋਂ ਪਾਸ ਕੀਤੇ ਗਏ ਹਨ। ਉਦਾਹਰਣ ਲਈ:
 
 ```js
 // ਡਾਟਾ ਵਸਤੂਆਂ ਦੀ ਐਰੇ ਵਾਪਸ ਕਰਦਾ ਹੈ ਜਿੱਥੇ `.code` ਵਿੱਚ ਅਣਮਿੱਥੇ CSS ਸ਼ਾਮਲ ਹੁੰਦਾ ਹੈ
-scssToCSS.compile(inputDir, { minify: false });
+scssToCSS.compile(inputDir, { minify: false })
 ```
 
 ਉਪਲਬਧ ਪੈਰਾਮੀਟਰ (ਅਤੇ ਉਹਨਾਂ ਦੀਆਂ ਡਿਫੌਲਟ ਸੈਟਿੰਗਾਂ) ਹਨ:
@@ -242,8 +242,8 @@ scssToCSS.compile(inputDir, { minify: false });
 
 ```js
 // SCSS ਫਾਈਲਾਂ ਲਈ ਬਿਲਕੁਲ assets/scss ਵਿੱਚ ਖੋਜ ਕਰੋ
-const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
-console.log(searchResults);
+const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false })
+console.log(searchResults)
 
 /* ਨਮੂਨਾ ਆਉਟਪੁੱਟ:
 

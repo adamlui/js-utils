@@ -84,7 +84,7 @@ import pw from 'generate-pw';
 #### CommonJS:
 
 ```js
-const pw = require('generate-pw');
+const pw = require('generate-pw')
 ```
 
 ###### _*Se requiere Node.js versión 14 o superior_
@@ -101,9 +101,9 @@ const pw = require('generate-pw');
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.5.14/dist/generate-pw.min.js');
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.5.14/dist/generate-pw.min.js')
     // Tu código aquí...
-})();
+})()
 ```
 
 ### <img height=17 src="https://assets.js-utils.org/images/icons/platforms/tampermonkey/icon28.png?v=0d36e26"><img height=17.5 src="https://assets.js-utils.org/images/icons/platforms/violentmonkey/icon25.png?v=0d36e26"> Greasemonkey
@@ -131,15 +131,15 @@ const pw = require('generate-pw');
 Genera **una** contraseña si no se proporciona la opción `qty` y devuelve una cadena:
 
 ```js
-const contraseña = pw.generatePassword({ length: 11, numbers: true });
-console.log(contraseña); // salida de muestra: 'bAsZm3mq6Qn'
+const contraseña = pw.generatePassword({ length: 11, numbers: true })
+console.log(contraseña) // salida de muestra: 'bAsZm3mq6Qn'
 ```
 
 ...o **múltiples** contraseñas si se proporciona la opción `qty`, devolviendo una matriz de cadenas:
 
 ```js
-const contraseñas = pw.generatePassword({ qty: 5, length: 8, symbols: true });
-console.log(contraseñas);
+const contraseñas = pw.generatePassword({ qty: 5, length: 8, symbols: true })
+console.log(contraseñas)
 
 /* salida de muestra:
 
@@ -161,8 +161,8 @@ Ver: [Opciones disponibles](#opciones-disponibles-para-funciones-generate)
 Genera **múltiples** contraseñas basadas en la `qty` dada y devuelve una matriz de cadenas:
 
 ```js
-const contraseñas = pw.generatePasswords(5, { length: 3, uppercase: false });
-console.log(contraseñas);
+const contraseñas = pw.generatePasswords(5, { length: 3, uppercase: false })
+console.log(contraseñas)
 
 /* salida de muestra:
 
@@ -184,8 +184,8 @@ Ver: [Opciones disponibles](#opciones-disponibles-para-funciones-generate)
 Modifica la `contraseña` dada para usar al menos un carácter de cada elemento `requiredCharTypes` pasado, devolviendo una cadena:
 
 ```js
-const strictPW = pw.strictify('abcdef', ['numbers', 'symbols']);
-console.log(strictPW); // sample output: 'a!c2ef'
+const strictPW = pw.strictify('abcdef', ['numbers', 'symbols'])
+console.log(strictPW) // sample output: 'a!c2ef'
 ```
 
 **💡 Nota:** Si no se pasa ninguna matriz `tiposCarRequeridos`, se requerirán todos los tipos disponibles.
@@ -210,8 +210,8 @@ Valida la seguridad de una contraseña y devuelve un objeto que contiene:
 Ejemplo:
 
 ```js
-const fortalezaPW = pw.validateStrength('Aa?idsE');
-console.log(fortalezaPW);
+const fortalezaPW = pw.validateStrength('Aa?idsE')
+console.log(fortalezaPW)
 
 /* salidas:
 

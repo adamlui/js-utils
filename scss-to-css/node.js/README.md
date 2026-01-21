@@ -185,7 +185,7 @@ import scssToCSS from '@adamlui/scss-to-css';
 #### CJS:
 
 ```js
-const scssToCSS = require('@adamlui/scss-to-css');
+const scssToCSS = require('@adamlui/scss-to-css')
 ```
 
 ###### _*Node.js version 14 or higher required_
@@ -200,10 +200,10 @@ If **source code** is passed, it is directly compiled, then an object containing
 
 ```js
 const srcCode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
-      compileResult = scssToCSS.compile(srcCode);
+      compileResult = scssToCSS.compile(srcCode)
 
-console.log(compileResult.error); // outputs runtime error, or `undefined` if no error
-console.log(compileResult.code);  // outputs minified CSS: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
+console.log(compileResult.error) // outputs runtime error, or `undefined` if no error
+console.log(compileResult.code)  // outputs minified CSS: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
 
 If a **file path** is passed, the file's code is loaded then compiled to CSS, returning an object like above.
@@ -212,18 +212,18 @@ If a **directory path** is passed, SCSS files are searched for (recursively by d
 
 ```js
 // Outputs paths to SCSS files in working directory + all nested directories
-const compileResults = scssToCSS.compile('.');
-compileResults.forEach(result => console.log(result.srcPath));
+const compileResults = scssToCSS.compile('.')
+compileResults.forEach(result => console.log(result.srcPath))
 
 // Outputs compiled CSS from 2nd SCSS file if found, or `undefined` if not found
-console.log(compileResults[1].code);
+console.log(compileResults[1].code)
 ```
 
 Options are boolean, passed as object properties. For example:
 
 ```js
 // Returns array of data objects where `.code` contains unminified CSS
-scssToCSS.compile(inputDir, { minify: false });
+scssToCSS.compile(inputDir, { minify: false })
 ```
 
 Available parameters (and their default settings) are:
@@ -249,8 +249,8 @@ Options are boolean, passed as object properties. For example:
 
 ```js
 // Search for SCSS files in exactly assets/scss
-const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
-console.log(searchResults);
+const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false })
+console.log(searchResults)
 
 /* sample output:
 

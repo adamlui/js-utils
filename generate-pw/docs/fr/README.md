@@ -84,7 +84,7 @@ import pw from 'generate-pw';
 #### CommonJS:
 
 ```js
-const pw = require('generate-pw');
+const pw = require('generate-pw')
 ```
 
 ###### _*Node.js version 14 ou supérieure requise_
@@ -101,9 +101,9 @@ const pw = require('generate-pw');
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.5.14/dist/generate-pw.min.js');
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.5.14/dist/generate-pw.min.js')
     // Votre code ici...
-})();
+})()
 ```
 
 ### <img height=17 src="https://assets.js-utils.org/images/icons/platforms/tampermonkey/icon28.png?v=0d36e26"><img height=17.5 src="https://assets.js-utils.org/images/icons/platforms/violentmonkey/icon25.png?v=0d36e26"> Greasemonkey
@@ -131,15 +131,15 @@ const pw = require('generate-pw');
 Génère **un** mot de passe si l'option `qty` n'est pas donnée, renvoyant une chaîne:
 
 ```js
-const motDePasse = pw.generatePassword({ length: 11, numbers: true });
-console.log(motDePasse); // exemple de sortie: 'bAsZm3mq6Qn'
+const motDePasse = pw.generatePassword({ length: 11, numbers: true })
+console.log(motDePasse) // exemple de sortie: 'bAsZm3mq6Qn'
 ```
 
 ...ou **plusieurs** mots de passe si l'option `qty` est donnée, renvoyant un tableau de chaînes:
 
 ```js
-const motsDePasse = pw.generatePassword({ qty: 5, length: 8, symbols: true });
-console.log(motsDePasse);
+const motsDePasse = pw.generatePassword({ qty: 5, length: 8, symbols: true })
+console.log(motsDePasse)
 
 /* exemple de sortie:
 
@@ -161,8 +161,8 @@ Voir: [Options disponibles](#options-disponibles-pour-les-fonctions-generate)
 Génère **plusieurs** mots de passe en fonction de la `qty` donnée, renvoyant un tableau de chaînes:
 
 ```js
-const motsDePasse = pw.generatePasswords(5, { length: 3, uppercase: false });
-console.log(motsDePasse);
+const motsDePasse = pw.generatePasswords(5, { length: 3, uppercase: false })
+console.log(motsDePasse)
 
 /* exemple de sortie:
 
@@ -184,8 +184,8 @@ Voir: [Options disponibles](#options-disponibles-pour-les-fonctions-generate)
 Modifie le `motDePasse` donné pour utiliser au moins un caractère de chaque élément `typesCarRequis` passé, renvoyant une chaîne:
 
 ```js
-const mdpStrict = pw.strictify('abcdef', ['numbers', 'symbols']);
-console.log(mdpStrict); // exemple de sortie: 'a!c2ef'
+const mdpStrict = pw.strictify('abcdef', ['numbers', 'symbols'])
+console.log(mdpStrict) // exemple de sortie: 'a!c2ef'
 ```
 
 **💡 Remarque:** Si aucun tableau `typesCarRequis` n'est transmis, tous les types disponibles seront requis.
@@ -210,8 +210,8 @@ Valide la force d'un mot de passe, en renvoyant un objet contenant:
 Exemple:
 
 ```js
-const fiabilitéMDP = pw.validateStrength('Aa?idsE');
-console.log(fiabilitéMDP);
+const fiabilitéMDP = pw.validateStrength('Aa?idsE')
+console.log(fiabilitéMDP)
 
 /* sorties:
 

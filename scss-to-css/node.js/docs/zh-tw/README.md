@@ -178,7 +178,7 @@ import scssToCSS from '@adamlui/scss-to-css';
 #### CJS:
 
 ```js
-const scssToCSS = require('@adamlui/scss-to-css');
+const scssToCSS = require('@adamlui/scss-to-css')
 ```
 
 ###### _*需要 Node.js 版本 14 或更高版本_
@@ -193,10 +193,10 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 ```js
 const srcCode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
-      compileResult = scssToCSS.compile(srcCode);
+      compileResult = scssToCSS.compile(srcCode)
 
-console.log(compileResult.error); // 輸出運行時錯誤，如果沒有錯誤則輸出 `undefined`
-console.log(compileResult.code);  // 輸出縮小的 CSS: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
+console.log(compileResult.error) // 輸出運行時錯誤，如果沒有錯誤則輸出 `undefined`
+console.log(compileResult.code)  // 輸出縮小的 CSS: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
 
 如果傳遞了 **檔案路徑**，則檔案的程式碼將被加載，然後編譯為 CSS，傳回一個像上面一樣的物件。
@@ -205,18 +205,18 @@ console.log(compileResult.code);  // 輸出縮小的 CSS: 'h1{font-size:40px}h1 
 
 ```js
 // 輸出工作目錄 + 所有巢狀目錄中 SCSS 檔案的路徑
-const compileResults = scssToCSS.compile('.');
-compileResults.forEach(result => console.log(result.srcPath));
+const compileResults = scssToCSS.compile('.')
+compileResults.forEach(result => console.log(result.srcPath))
 
 // 如果找到，則輸出從第二個 SCSS 檔案編譯的 CSS，如果未找到，則輸出 `undefined`
-console.log(compileResults[1].code);
+console.log(compileResults[1].code)
 ```
 
 選項是布林值，作為物件屬性傳遞。 例如：
 
 ```js
 // 傳回資料物件數組，其中 `.code` 包含未縮小的 CSS
-scssToCSS.compile(inputDir, { minify: false });
+scssToCSS.compile(inputDir, { minify: false })
 ```
 
 可用的參數（及其預設設定）是：
@@ -242,8 +242,8 @@ scssToCSS.compile(inputDir, { minify: false });
 
 ```js
 // 在 assets/scss 中搜尋 SCSS 檔案
-const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
-console.log(searchResults);
+const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false })
+console.log(searchResults)
 
 /* 範例輸出：
 

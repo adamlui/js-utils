@@ -174,7 +174,7 @@ import minifyJS from '@adamlui/minify.js';
 #### CJS:
 
 ```js
-const minifyJS = require('@adamlui/minify.js');
+const minifyJS = require('@adamlui/minify.js')
 ```
 
 ###### _*Node.js Version 14 oder höher erforderlich_
@@ -189,10 +189,10 @@ Wenn **Quellcode** übergeben wird, wird dieser direkt minimiert, dann wird ein 
 
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
-      minErgebnis = minifyJS.minify(srcCode);
+      minErgebnis = minifyJS.minify(srcCode)
 
-console.log(minErgebnis.error); // gibt einen Laufzeitfehler oder `undefined` aus, wenn kein Fehler vorliegt
-console.log(minErgebnis.code);  // gibt minimiertes JS aus: 'function add(n,d){return n+d}'
+console.log(minErgebnis.error) // gibt einen Laufzeitfehler oder `undefined` aus, wenn kein Fehler vorliegt
+console.log(minErgebnis.code)  // gibt minimiertes JS aus: 'function add(n,d){return n+d}'
 ```
 
 Wenn ein **Dateipfad** übergeben wird, wird der Code der Datei geladen und dann minimiert, wodurch ein Objekt wie oben zurückgegeben wird.
@@ -201,18 +201,18 @@ Wenn ein **Verzeichnispfad** übergeben wird, wird nach JavaScript-Dateien gesuc
 
 ```js
 // Gibt Pfade zu Quell-JS-Dateien im Arbeitsverzeichnis + allen verschachtelten Verzeichnissen aus
-const minErgebnisse = minifyJS.minify('.');
-minErgebnisse.forEach(ergebnis => console.log(ergebnis.srcPath));
+const minErgebnisse = minifyJS.minify('.')
+minErgebnisse.forEach(ergebnis => console.log(ergebnis.srcPath))
 
 // Gibt minimierten Code der zweiten JS-Datei aus, wenn er gefunden wird, oder `undefined`, wenn er nicht gefunden wird
-console.log(minErgebnisse[1].code);
+console.log(minErgebnisse[1].code)
 ```
 
 Optionen sind boolesche Werte und werden als Objekteigenschaften übergeben. Zum Beispiel:
 
 ```js
 // Gibt ein Array von Datenobjekten zurück, in denen auch Punktdateien verarbeitet werden, wenn `eingang` ein Pfad ist
-minifyJS.minify(eingang, { dotFiles: true });
+minifyJS.minify(eingang, { dotFiles: true })
 ```
 
 Verfügbare Parameter (und ihre Standardeinstellungen) sind:
@@ -239,8 +239,8 @@ Optionen sind boolesche Werte und werden als Objekteigenschaften übergeben. Zum
 
 ```js
 // Suche nach nicht minimierten JS-Dateien genau in assets/js
-const suchergEbnisse = minifyJS.findJS('assets/js', { recursive: false });
-console.log(suchergEbnisse);
+const suchergEbnisse = minifyJS.findJS('assets/js', { recursive: false })
+console.log(suchergEbnisse)
 
 /* Beispielausgabe:
 

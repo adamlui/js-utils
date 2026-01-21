@@ -174,7 +174,7 @@ import minifyJS from '@adamlui/minify.js';
 #### CJS:
 
 ```js
-const minifyJS = require('@adamlui/minify.js');
+const minifyJS = require('@adamlui/minify.js')
 ```
 
 ###### _*需要 Node.js 版本 14 或更高版本_
@@ -189,10 +189,10 @@ const minifyJS = require('@adamlui/minify.js');
 
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
-      minifyResult = minifyJS.minify(srcCode);
+      minifyResult = minifyJS.minify(srcCode)
 
-console.log(minifyResult.error); // 輸出運行時錯誤，如果沒有錯誤則輸出 `undefined`
-console.log(minifyResult.code);  // 輸出縮小的 JS：'function add(n,d){return n+d}'
+console.log(minifyResult.error) // 輸出運行時錯誤，如果沒有錯誤則輸出 `undefined`
+console.log(minifyResult.code)  // 輸出縮小的 JS：'function add(n,d){return n+d}'
 ```
 
 如果傳遞了**檔案路徑**，則載入檔案的程式碼然後縮小，傳回一個像上面一樣的物件。
@@ -201,18 +201,18 @@ console.log(minifyResult.code);  // 輸出縮小的 JS：'function add(n,d){retu
 
 ```js
 // 輸出工作目錄+所有巢狀目錄下 JS 檔案的來源路徑
-const minifyResults = minifyJS.minify('.');
-minifyResults.forEach(result => console.log(result.srcPath));
+const minifyResults = minifyJS.minify('.')
+minifyResults.forEach(result => console.log(result.srcPath))
 
 // 如果找到，則輸出第二個 JS 檔案的精簡程式碼，如果未找到，則輸出 `undefined`
-console.log(minifyResults[1].code);
+console.log(minifyResults[1].code)
 ```
 
 選項是布林值，作為物件屬性傳遞。 例如：
 
 ```js
 // 傳回資料物件數組，如果 `input` 是路徑，則也會處理點文件
-minifyJS.minify(input, { dotFiles: true });
+minifyJS.minify(input, { dotFiles: true })
 ```
 
 可用的參數（及其預設設定）是：
@@ -239,8 +239,8 @@ minifyJS.minify(input, { dotFiles: true });
 
 ```js
 // 在 assets/js 中搜尋未縮小的 JavaScript 檔案
-const searchResults = minifyJS.findJS('assets/js', { recursive: false });
-console.log(searchResults);
+const searchResults = minifyJS.findJS('assets/js', { recursive: false })
+console.log(searchResults)
 
 /* 範例輸出：
 

@@ -178,7 +178,7 @@ import scssToCSS from '@adamlui/scss-to-css';
 #### CJS:
 
 ```js
-const scssToCSS = require('@adamlui/scss-to-css');
+const scssToCSS = require('@adamlui/scss-to-css')
 ```
 
 ###### _*Node.js आवृत्ती 14 किंवा उच्च आवश्यक_
@@ -193,10 +193,10 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 ```js
 const srcCode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
-      compileResult = scssToCSS.compile(srcCode);
+      compileResult = scssToCSS.compile(srcCode)
 
-console.log(compileResult.error); // रनटाइम त्रुटी आउटपुट करते, किंवा त्रुटी नसल्यास `undefined`
-console.log(compileResult.code);  // आउटपुट minified CSS: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
+console.log(compileResult.error) // रनटाइम त्रुटी आउटपुट करते, किंवा त्रुटी नसल्यास `undefined`
+console.log(compileResult.code)  // आउटपुट minified CSS: 'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
 
 जर **फाइल पथ** पास झाला असेल, तर फाइलचा कोड लोड केला जातो आणि नंतर CSS वर संकलित केला जातो, वरीलप्रमाणे ऑब्जेक्ट परत करतो.
@@ -205,18 +205,18 @@ console.log(compileResult.code);  // आउटपुट minified CSS: 'h1{font-s
 
 ```js
 // वर्किंग डिरेक्टरी + सर्व नेस्टेड डिरेक्टरीमध्ये SCSS फाइल्सचे मार्ग आउटपुट करते
-const compileResults = scssToCSS.compile('.');
-compileResults.forEach(result => console.log(result.srcPath));
+const compileResults = scssToCSS.compile('.')
+compileResults.forEach(result => console.log(result.srcPath))
 
 // आढळल्यास दुसऱ्या SCSS फाईलमधून CSS संकलित केलेले आउटपुट, किंवा न आढळल्यास `undefined`
-console.log(compileResults[1].code);
+console.log(compileResults[1].code)
 ```
 
 पर्याय बुलियन आहेत, ऑब्जेक्ट गुणधर्म म्हणून पास केले जातात. उदाहरणार्थ:
 
 ```js
 // डेटा ऑब्जेक्ट्सचा ॲरे देते जेथे `.code` मध्ये अनमिनिफाइड CSS आहे
-scssToCSS.compile(inputDir, { minify: false });
+scssToCSS.compile(inputDir, { minify: false })
 ```
 
 उपलब्ध पॅरामीटर्स (आणि त्यांची डीफॉल्ट सेटिंग्ज) आहेत:
@@ -242,8 +242,8 @@ scssToCSS.compile(inputDir, { minify: false });
 
 ```js
 // SCSS फाईल्स नक्की assets/scss मध्ये शोधा
-const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
-console.log(searchResults);
+const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false })
+console.log(searchResults)
 
 /* नमुना आउटपुट:
 

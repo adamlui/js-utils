@@ -176,7 +176,7 @@ import minifyJS from '@adamlui/minify.js';
 #### CJS:
 
 ```js
-const minifyJS = require('@adamlui/minify.js');
+const minifyJS = require('@adamlui/minify.js')
 ```
 
 ###### _*Node.js সংস্করণ 14 বা উচ্চতর প্রয়োজন_
@@ -191,10 +191,10 @@ const minifyJS = require('@adamlui/minify.js');
 
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
-      minifyResult = minifyJS.minify(srcCode);
+      minifyResult = minifyJS.minify(srcCode)
 
-console.log(minifyResult.error); // আউটপুট রানটাইম ত্রুটি, বা `undefined` যদি কোনো ত্রুটি না থাকে
-console.log(minifyResult.code);  // আউটপুট ছোট JS: 'function add(n,d){return n+d}'
+console.log(minifyResult.error) // আউটপুট রানটাইম ত্রুটি, বা `undefined` যদি কোনো ত্রুটি না থাকে
+console.log(minifyResult.code)  // আউটপুট ছোট JS: 'function add(n,d){return n+d}'
 ```
 
 যদি একটি **ফাইল পাথ** পাস করা হয়, তাহলে ফাইলের কোড লোড হয় তারপর ছোট করা হয়, উপরের মত একটি বস্তু ফেরত দেয়।
@@ -203,18 +203,18 @@ console.log(minifyResult.code);  // আউটপুট ছোট JS: 'function a
 
 ```js
 // ওয়ার্কিং ডিরেক্টরি + সমস্ত নেস্টেড ডিরেক্টরিতে জাভাস্ক্রিপ্ট ফাইলগুলির উত্সের পাথগুলি আউটপুট করে
-const minifyResults = minifyJS.minify('.');
-minifyResults.forEach(result => console.log(result.srcPath));
+const minifyResults = minifyJS.minify('.')
+minifyResults.forEach(result => console.log(result.srcPath))
 
 // পাওয়া গেলে 2য় JS ফাইলের মিনিফাইড কোড আউটপুট করে, অথবা না পাওয়া গেলে `undefined`
-console.log(minifyResults[1].code);
+console.log(minifyResults[1].code)
 ```
 
 বিকল্পগুলি হল বুলিয়ান, অবজেক্টের বৈশিষ্ট্য হিসাবে পাস করা হয়েছে৷ উদাহরণ স্বরূপ:
 
 ```js
 // ডেটা অবজেক্টের অ্যারে প্রদান করে যেখানে ডটফাইলগুলিও প্রক্রিয়া করা হয় যদি `input` একটি পাথ হয়
-minifyJS.minify(input, { dotFiles: true });
+minifyJS.minify(input, { dotFiles: true })
 ```
 
 উপলব্ধ প্যারামিটার (এবং তাদের ডিফল্ট সেটিংস) হল:
@@ -241,8 +241,8 @@ minifyJS.minify(input, { dotFiles: true });
 
 ```js
 // অবিন্যস্ত জাভাস্ক্রিপ্ট ফাইলের জন্য ঠিক assets/js-এ অনুসন্ধান করুন
-const searchResults = minifyJS.findJS('assets/js', { recursive: false });
-console.log(searchResults);
+const searchResults = minifyJS.findJS('assets/js', { recursive: false })
+console.log(searchResults)
 
 /* নমুনা আউটপুট:
 

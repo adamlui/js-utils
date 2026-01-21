@@ -178,7 +178,7 @@ import minifyJS from '@adamlui/minify.js';
 #### CJS:
 
 ```js
-const minifyJS = require('@adamlui/minify.js');
+const minifyJS = require('@adamlui/minify.js')
 ```
 
 ###### _*Node.js version 14 or higher required_
@@ -193,10 +193,10 @@ If **source code** is passed, it is directly minified, then an object containing
 
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
-      minifyResult = minifyJS.minify(srcCode);
+      minifyResult = minifyJS.minify(srcCode)
 
-console.log(minifyResult.error); // outputs runtime error, or `undefined` if no error
-console.log(minifyResult.code);  // outputs minified JS: 'function add(n,d){return n+d}'
+console.log(minifyResult.error) // outputs runtime error, or `undefined` if no error
+console.log(minifyResult.code)  // outputs minified JS: 'function add(n,d){return n+d}'
 ```
 
 If a **file path** is passed, the file's code is loaded then minified, returning an object like above.
@@ -205,18 +205,18 @@ If a **directory path** is passed, JavaScript files are searched for (recursivel
 
 ```js
 // Outputs paths to source JS files in working directory + all nested directories
-const minifyResults = minifyJS.minify('.');
-minifyResults.forEach(result => console.log(result.srcPath));
+const minifyResults = minifyJS.minify('.')
+minifyResults.forEach(result => console.log(result.srcPath))
 
 // Outputs minified code of 2nd JS file if found, or `undefined` if not found
-console.log(minifyResults[1].code);
+console.log(minifyResults[1].code)
 ```
 
 Options are boolean, passed as object properties. For example:
 
 ```js
 // Returns array of data objects where dotfiles are also processed if `input` is a path
-minifyJS.minify(input, { dotFiles: true });
+minifyJS.minify(input, { dotFiles: true })
 ```
 
 Available parameters (and their default settings) are:
@@ -243,8 +243,8 @@ Options are boolean, passed as object properties. For example:
 
 ```js
 // Search for unminified JS files in exactly assets/js
-const searchResults = minifyJS.findJS('assets/js', { recursive: false });
-console.log(searchResults);
+const searchResults = minifyJS.findJS('assets/js', { recursive: false })
+console.log(searchResults)
 
 /* sample output:
 

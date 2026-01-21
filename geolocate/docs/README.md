@@ -93,7 +93,7 @@ import geo from '@adamlui/geolocate';
 #### CommonJS:
 
 ```js
-const geo = require('@adamlui/geolocate');
+const geo = require('@adamlui/geolocate')
 ```
 
 ###### _*Node.js version 14 or higher required_
@@ -110,9 +110,9 @@ const geo = require('@adamlui/geolocate');
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/@adamlui/geolocate@2.0.13/dist/geolocate.min.js');
+    await import('https://cdn.jsdelivr.net/npm/@adamlui/geolocate@2.0.13/dist/geolocate.min.js')
     // Your code here...
-})();
+})()
 ```
 
 ### <img height=17 src="https://assets.js-utils.org/images/icons/platforms/tampermonkey/icon28.png?v=0d36e26"><img height=17.5 src="https://assets.js-utils.org/images/icons/platforms/violentmonkey/icon25.png?v=0d36e26"> Greasemonkey
@@ -142,18 +142,18 @@ const geo = require('@adamlui/geolocate');
 Example:
 
 ```js
-const geo = require('@adamlui/geolocate');
+const geo = require('@adamlui/geolocate')
 
 // Using await syntax
 (async () => {
-    const location = await geo.locate('8.8.8.8');
-    console.log(location);
-})();
+    const location = await geo.locate('8.8.8.8')
+    console.log(location)
+})()
 
 // Using .then() syntax
 geo.locate('8.8.8.8').then(location => {
-    console.log(location);
-});
+    console.log(location)
+})
 
 /* outputs:
 [{

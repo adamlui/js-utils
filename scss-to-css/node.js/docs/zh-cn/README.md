@@ -178,7 +178,7 @@ import scssToCSS from '@adamlui/scss-to-css';
 #### CJS:
 
 ```js
-const scssToCSS = require('@adamlui/scss-to-css');
+const scssToCSS = require('@adamlui/scss-to-css')
 ```
 
 ###### _*需要 Node.js 版本 14 或更高版本_
@@ -193,10 +193,10 @@ const scssToCSS = require('@adamlui/scss-to-css');
 
 ```js
 const srcCode = 'h1 { font-size: 40px ; code { font-face: Roboto Mono }}',
-      compileResult = scssToCSS.compile(srcCode);
+      compileResult = scssToCSS.compile(srcCode)
 
-console.log(compileResult.error); // 输出运行时错误，如果没有错误则输出 `undefined`
-console.log(compileResult.code);  // 输出缩小的 CSS：'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
+console.log(compileResult.error) // 输出运行时错误，如果没有错误则输出 `undefined`
+console.log(compileResult.code)  // 输出缩小的 CSS：'h1{font-size:40px}h1 code{font-face:Roboto Mono}'
 ```
 
 如果传递了 **文件路径**，则文件的代码将被加载，然后编译为 CSS，返回一个像上面一样的对象。
@@ -205,18 +205,18 @@ console.log(compileResult.code);  // 输出缩小的 CSS：'h1{font-size:40px}h1
 
 ```js
 // 输出工作目录 + 所有嵌套目录中 SCSS 文件的路径
-const compileResults = scssToCSS.compile('.');
-compileResults.forEach(result => console.log(result.srcPath));
+const compileResults = scssToCSS.compile('.')
+compileResults.forEach(result => console.log(result.srcPath))
 
 // 如果找到，则输出从第二个 SCSS 文件编译的 CSCS，如果未找到，则输出 `undefined`
-console.log(compileResults[1].code);
+console.log(compileResults[1].code)
 ```
 
 选项是布尔值，作为对象属性传递。 例如：
 
 ```js
 // 返回数据对象数组，其中 `.code` 包含未缩小的 CSS
-scssToCSS.compile(inputDir, { minify: false });
+scssToCSS.compile(inputDir, { minify: false })
 ```
 
 可用参数（及其默认设置）有：
@@ -242,8 +242,8 @@ scssToCSS.compile(inputDir, { minify: false });
 
 ```js
 // 在 assets/scss 中搜索 SCSS 文件
-const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false });
-console.log(searchResults);
+const searchResults = scssToCSS.findSCSS('assets/scss', { recursive: false })
+console.log(searchResults)
 
 /* 示例输出：
 

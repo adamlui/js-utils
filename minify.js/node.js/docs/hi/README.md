@@ -176,7 +176,7 @@ import minifyJS from '@adamlui/minify.js';
 #### CJS:
 
 ```js
-const minifyJS = require('@adamlui/minify.js');
+const minifyJS = require('@adamlui/minify.js')
 ```
 
 ###### _*Node.js संस्करण 14 या उच्चतर आवश्यक_
@@ -191,10 +191,10 @@ const minifyJS = require('@adamlui/minify.js');
 
 ```js
 const srcCode = 'function add(first, second) { return first + second; }',
-      minifyResult = minifyJS.minify(srcCode);
+      minifyResult = minifyJS.minify(srcCode)
 
-console.log(minifyResult.error); // यदि कोई त्रुटि नहीं है तो रनटाइम त्रुटि, या `undefined` आउटपुट करता है
-console.log(minifyResult.code);  // आउटपुट छोटा जावास्क्रिप्ट: 'function add(n,d){return n+d}'
+console.log(minifyResult.error) // यदि कोई त्रुटि नहीं है तो रनटाइम त्रुटि, या `undefined` आउटपुट करता है
+console.log(minifyResult.code)  // आउटपुट छोटा जावास्क्रिप्ट: 'function add(n,d){return n+d}'
 ```
 
 यदि **फ़ाइल पथ** पास हो जाता है, तो फ़ाइल का कोड लोड किया जाता है और फिर छोटा किया जाता है, जिससे ऊपर जैसा ऑब्जेक्ट वापस आ जाता है।
@@ -203,18 +203,18 @@ console.log(minifyResult.code);  // आउटपुट छोटा जावा
 
 ```js
 // कार्यशील निर्देशिका + सभी नेस्टेड निर्देशिकाओं में जावास्क्रिप्ट फ़ाइलों के स्रोत पथ को आउटपुट करता है
-const minifyResults = minifyJS.minify('.');
-minifyResults.forEach(result => console.log(result.srcPath));
+const minifyResults = minifyJS.minify('.')
+minifyResults.forEach(result => console.log(result.srcPath))
 
 // यदि पाया जाता है तो दूसरी जावास्क्रिप्ट फ़ाइल का छोटा कोड आउटपुट करता है, या नहीं मिलने पर `undefined`
-console.log(minifyResults[1].code);
+console.log(minifyResults[1].code)
 ```
 
 विकल्प बूलियन हैं, ऑब्जेक्ट गुणों के रूप में पारित किए गए हैं। उदाहरण के लिए:
 
 ```js
 // डेटा ऑब्जेक्ट की सरणी लौटाता है जहां `input` एक पथ होने पर डॉटफ़ाइलें भी संसाधित की जाती हैं
-minifyJS.minify(input, { dotFiles: true });
+minifyJS.minify(input, { dotFiles: true })
 ```
 
 उपलब्ध पैरामीटर (और उनकी डिफ़ॉल्ट सेटिंग्स) हैं:
@@ -241,8 +241,8 @@ minifyJS.minify(input, { dotFiles: true });
 
 ```js
 // बिल्कुल assets/js में असंबद्ध जावास्क्रिप्ट फ़ाइलों की खोज करें
-const searchResults = minifyJS.findJS('assets/js', { recursive: false });
-console.log(searchResults);
+const searchResults = minifyJS.findJS('assets/js', { recursive: false })
+console.log(searchResults)
 
 /* नमूना आउटपुट:
 

@@ -82,7 +82,7 @@ import pw from 'generate-pw';
 #### CommonJS:
 
 ```js
-const pw = require('generate-pw');
+const pw = require('generate-pw')
 ```
 
 ###### _*Node.js संस्करण 14 या उच्चतर आवश्यक_
@@ -99,9 +99,9 @@ const pw = require('generate-pw');
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.5.14/dist/generate-pw.min.js');
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@1.5.14/dist/generate-pw.min.js')
     // आपका कोड यहाँ...
-})();
+})()
 ```
 
 ### <img height=17 src="https://assets.js-utils.org/images/icons/platforms/tampermonkey/icon28.png?v=0d36e26"><img height=17.5 src="https://assets.js-utils.org/images/icons/platforms/violentmonkey/icon25.png?v=0d36e26"> Greasemonkey
@@ -129,15 +129,15 @@ const pw = require('generate-pw');
 यदि `qty` विकल्प नहीं दिया गया है तो **एक** पासवर्ड जेनरेट करता है, एक स्ट्रिंग लौटाता है:
 
 ```js
-const password = pw.generatePassword({ length: 11, numbers: true });
-console.log(password); // नमूना आउटपुट: 'bAsZm3mq6Qn'
+const password = pw.generatePassword({ length: 11, numbers: true })
+console.log(password) // नमूना आउटपुट: 'bAsZm3mq6Qn'
 ```
 
 ...या **एकाधिक** पासवर्ड यदि `qty` विकल्प दिया गया है, तो स्ट्रिंग्स की एक सरणी लौटाएं:
 
 ```js
-const passwords = pw.generatePassword({ qty: 5, length: 8, symbols: true });
-console.log(passwords);
+const passwords = pw.generatePassword({ qty: 5, length: 8, symbols: true })
+console.log(passwords)
 /* नमूना आउटपुट:
 
 generatePassword() » Generating passwords...
@@ -158,8 +158,8 @@ generatePassword() » Check returned array.
 दिए गए `qty` के आधार पर **एकाधिक** पासवर्ड उत्पन्न करता है, स्ट्रिंग की एक सरणी लौटाता है:
 
 ```js
-const passwords = pw.generatePasswords(5, { length: 3, uppercase: false });
-console.log(passwords);
+const passwords = pw.generatePasswords(5, { length: 3, uppercase: false })
+console.log(passwords)
 /* नमूना आउटपुट:
 
 generatePasswords() » Generating passwords...
@@ -180,8 +180,8 @@ generatePasswords() » Check returned array.
 प्रत्येक `requiredCharTypes` तत्व के कम से कम एक वर्ण का उपयोग करने के लिए दिए गए `password` को संशोधित करता है, एक स्ट्रिंग लौटाता है:
 
 ```js
-const strictPW = pw.strictify('abcdef', ['numbers', 'symbols']);
-console.log(strictPW); // नमूना आउटपुट: 'a!c2ef'
+const strictPW = pw.strictify('abcdef', ['numbers', 'symbols'])
+console.log(strictPW) // नमूना आउटपुट: 'a!c2ef'
 ```
 
 **💡 नोट:** यदि कोई `requiredCharTypes` सरणी पारित नहीं की गई है, तो सभी उपलब्ध प्रकारों की आवश्यकता होगी।
@@ -206,8 +206,8 @@ console.log(strictPW); // नमूना आउटपुट: 'a!c2ef'
 उदाहरण:
 
 ```js
-const pwStrength = pw.validateStrength('Aa?idsE');
-console.log(pwStrength);
+const pwStrength = pw.validateStrength('Aa?idsE')
+console.log(pwStrength)
 
 /* आउटपुट:
 

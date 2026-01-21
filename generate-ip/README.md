@@ -77,7 +77,7 @@ import { ipv4, ipv6, mac } from 'generate-ip';
 #### CommonJS:
 
 ```js
-const { ipv4, ipv6, mac } = require('generate-ip');
+const { ipv4, ipv6, mac } = require('generate-ip')
 ```
 
 ###### _*Node.js version 14 or higher required_
@@ -94,9 +94,9 @@ const { ipv4, ipv6, mac } = require('generate-ip');
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-ip@2.4.7/dist/generate-ip.min.js');
+    await import('https://cdn.jsdelivr.net/npm/generate-ip@2.4.7/dist/generate-ip.min.js')
     // Your code here...
-})();
+})()
 ```
 
 ### <img height=17 src="https://assets.js-utils.org/images/icons/platforms/tampermonkey/icon28.png?v=0d36e26"><img height=17.5 src="https://assets.js-utils.org/images/icons/platforms/violentmonkey/icon25.png?v=0d36e26"> Greasemonkey
@@ -130,15 +130,15 @@ const { ipv4, ipv6, mac } = require('generate-ip');
 Generates **one** IPv4 address if `qty` option is not given, returning a string:
 
 ```js
-const ip = ipv4.generate();
-console.log(ip); // sample output: '36.42.224.208'
+const ip = ipv4.generate()
+console.log(ip) // sample output: '36.42.224.208'
 ```
 
 ...or **multiple** IPv4 addresses if `qty` option is given, returning an array of strings:
 
 ```js
-const ips = ipv4.generate({ qty: 3 });
-console.log(ips);
+const ips = ipv4.generate({ qty: 3 })
+console.log(ips)
 
 /* sample output:
 
@@ -163,8 +163,8 @@ Name        | Type    | Description                         | Default Value
 Checks if given `address` is a valid IPv4 address:
 
 ```js
-const ipIsValid = ipv4.validate('36.42.224.208');
-console.log(ipIsValid);
+const ipIsValid = ipv4.validate('36.42.224.208')
+console.log(ipIsValid)
 
 /* outputs:
 
@@ -193,15 +193,15 @@ Name        | Type    | Description                       | Default Value
 Generates **one** IPv6 address if `qty` option is not given, returning a string:
 
 ```js
-const ip = ipv6.generate();
-console.log(ip); // sample output: '1379:6748:810c:5e16:b6c9:ae2:939f:8f2a'
+const ip = ipv6.generate()
+console.log(ip) // sample output: '1379:6748:810c:5e16:b6c9:ae2:939f:8f2a'
 ```
 
 ...or **multiple** IPv6 addresses if `qty` option is given, returning an array of strings:
 
 ```js
-const ips = ipv4.generate({ qty: 5 });
-console.log(ips);
+const ips = ipv4.generate({ qty: 5 })
+console.log(ips)
 
 /* sample output:
 
@@ -235,9 +235,9 @@ Formats an IPv6 address according to `options` passed, returning a string:
 
 ```js
 const ipv6address = '0d::ffff:192.1.56.10/96',
-      formattedAddress = ipv6.format(ipv6address, { leadingZeros: true, doubleColon: false });
+      formattedAddress = ipv6.format(ipv6address, { leadingZeros: true, doubleColon: false })
 
-console.log(formattedAddress);
+console.log(formattedAddress)
 
 /* outputs:
 
@@ -264,8 +264,8 @@ Name           | Type    | Description                          | Default Value
 Checks if given `address` is a valid IPv6 address:
 
 ```js
-const ipIsValid = ipv6.validate('0:0:0:0:0:ffff:192.1.56.10/96');
-console.log(ipIsValid);
+const ipIsValid = ipv6.validate('0:0:0:0:0:ffff:192.1.56.10/96')
+console.log(ipIsValid)
 
 /* outputs:
 
@@ -294,15 +294,15 @@ Name        | Type    | Description                       | Default Value
 Generates **one** MAC address if `qty` option is not given, returning a string:
 
 ```js
-const macAddress = mac.generate();
-console.log(macAddress); // sample output: '1d:3a:af:21:b1:8c'
+const macAddress = mac.generate()
+console.log(macAddress) // sample output: '1d:3a:af:21:b1:8c'
 ```
 
 ...or **multiple** MAC addresses if `qty` option is given, returning an array of strings:
 
 ```js
-const macAddresses = mac.generate({ qty: 2 });
-console.log(macAddresses);
+const macAddresses = mac.generate({ qty: 2 })
+console.log(macAddresses)
 
 /* sample output:
 
@@ -327,8 +327,8 @@ Name           | Type    | Description                          | Default Value
 Checks if given `address` is a valid MAC address:
 
 ```js
-const addressIsValid = mac.validate('1d:3a:af:21:b1:8c');
-console.log(addressIsValid);
+const addressIsValid = mac.validate('1d:3a:af:21:b1:8c')
+console.log(addressIsValid)
 
 /* outputs:
 
