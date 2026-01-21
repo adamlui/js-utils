@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 <div align="center">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/logos/generate-ip/white-logo.png?7768152"><img width=700 src="https://media.generate-ip.org/images/logos/generate-ip/black-logo.png?7768152"></picture>
@@ -422,4 +424,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/home/white/icon32x27.png?v=0d36e26"><img height=13 src="https://assets.js-utils.org/images/icons/home/dark-gray/icon32x27.png?v=0d36e26"></picture> <a href="https://js-utils.org">**More JavaScript utilities**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
-<a href="#-generate-ip">Back to top ↑</a>
+<a href="#top">Back to top ↑</a>

@@ -17,6 +17,8 @@
     </h6>
 </div>
 
+<a id="top"></a>
+
 # </> minify.js
 
 ### Verklein alle JavaScript-bestanden recursief.
@@ -304,4 +306,4 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://js-utils.org">**Weitere JavaScript-Dienstprogramme**</a> /
 <a href="https://github.com/adamlui/minify.js/discussions">Diskutieren</a> /
-<a href="#-minifyjs">Zurück nach oben ↑</a>
+<a href="#top">Zurück nach oben ↑</a>

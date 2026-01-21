@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 <div align="center">
     <h6>
         <picture>
@@ -299,4 +301,4 @@ findSCSS() » Check returned array.
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/home/white/icon32x27.png?v=7e4a141"><img height=13 src="https://assets.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?v=7e4a141"></picture> <a href="https://js-utils.org">**その他の JavaScript ユーティリティ**</a> /
 <a href="https://github.com/adamlui/scss-to-css/discussions">話し合う</a> /
-<a href="#--scss-to-css">トップに戻る ↑</a>
+<a href="#top">トップに戻る ↑</a>

@@ -17,6 +17,8 @@
     </h6>
 </div>
 
+<a id="top"></a>
+
 # </> minify.js
 
 ### সব জাভাস্ক্রিপ্ট ফাইল পুনরাবৃত্তিমূলকভাবে ছোট করুন।
@@ -306,4 +308,4 @@ findJS() » Check returned array.
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://js-utils.org">**আরো জাভাস্ক্রিপ্ট ইউটিলিটি**</a> /
 <a href="https://github.com/adamlui/minify.js/discussions">আলোচনা করা</a> /
-<a href="#-minifyjs">উপরে ফিরে যাও ↑</a>
+<a href="#top">উপরে ফিরে যাও ↑</a>

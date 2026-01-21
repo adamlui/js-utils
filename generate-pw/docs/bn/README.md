@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 <div align="right">
     <h6>
         <picture>
@@ -336,4 +338,4 @@ $ generate-pw
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/home/white/icon32x27.png?v=0d36e26"><img height=13 src="https://assets.js-utils.org/images/icons/home/dark-gray/icon32x27.png?v=0d36e26"></picture> <a href="https://js-utils.org">**আরো জাভাস্ক্রিপ্ট ইউটিলিটি**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">আলোচনা করা</a> /
-<a href="#-generate-pw">উপরে ফিরে যাও ↑</a>
+<a href="#top">উপরে ফিরে যাও ↑</a>

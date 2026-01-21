@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 # <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png?0d36e26"><img height=28 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png?0d36e26"></picture> geolocate
 
 ### Fetch IP geolocation data from the CLI.
@@ -222,4 +224,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/home/white/icon32x27.png?v=0d36e26"><img height=13 src="https://assets.js-utils.org/images/icons/home/dark-gray/icon32x27.png?v=0d36e26"></picture> <a href="https://js-utils.org">**More JavaScript utilities**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
-<a href="#-geolocate">Back to top ↑</a>
+<a href="#top">Back to top ↑</a>

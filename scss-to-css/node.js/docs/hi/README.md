@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 <div align="center">
     <h6>
         <picture>
@@ -298,4 +300,4 @@ findSCSS() » Check returned array.
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/home/white/icon32x27.png?v=7e4a141"><img height=13 src="https://assets.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?v=7e4a141"></picture> <a href="https://js-utils.org">**अधिक जावास्क्रिप्ट उपयोगिताएँ**</a> /
 <a href="https://github.com/adamlui/scss-to-css/discussions">चर्चा करना</a> /
-<a href="#--scss-to-css">वापस शीर्ष पर ↑</a>
+<a href="#top">वापस शीर्ष पर ↑</a>

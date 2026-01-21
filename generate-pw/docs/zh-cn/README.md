@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 <div align="right">
     <h6>
         <picture>
@@ -334,4 +336,4 @@ $ generate-pw
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/home/white/icon32x27.png?v=0d36e26"><img height=13 src="https://assets.js-utils.org/images/icons/home/dark-gray/icon32x27.png?v=0d36e26"></picture> <a href="https://js-utils.org">**更多 JavaScript 实用程序**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">讨论</a> /
-<a href="#-generate-pw">回到顶部 ↑</a>
+<a href="#top">回到顶部 ↑</a>

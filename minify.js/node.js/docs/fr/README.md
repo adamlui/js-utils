@@ -17,6 +17,8 @@
     </h6>
 </div>
 
+<a id="top"></a>
+
 # </> minify.js
 
 ### Réduisez de manière récursive tous les fichiers JavaScript.
@@ -304,4 +306,4 @@ LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMP
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://js-utils.org">**Plus d'utilitaires JavaScript**</a> /
 <a href="https://github.com/adamlui/minify.js/discussions">Discuter</a> /
-<a href="#-minifyjs">Retour au sommet ↑</a>
+<a href="#top">Retour au sommet ↑</a>

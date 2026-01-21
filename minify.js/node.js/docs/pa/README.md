@@ -17,6 +17,8 @@
     </h6>
 </div>
 
+<a id="top"></a>
+
 # </> minify.js
 
 ### ਸਾਰੀਆਂ JavaScript ਫਾਈਲਾਂ ਨੂੰ ਆਵਰਤੀ ਤੌਰ 'ਤੇ ਛੋਟਾ ਕਰੋ।
@@ -303,4 +305,4 @@ findJS() » Check returned array.
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://js-utils.org">**ਹੋਰ JavaScript ਉਪਯੋਗਤਾਵਾਂ**</a> /
 <a href="https://github.com/adamlui/minify.js/discussions">ਚਰਚਾ ਕਰੋ</a> /
-<a href="#-minifyjs">ਸਿਖਰ 'ਤੇ ਵਾਪਸ ਜਾਓ ↑</a>
+<a href="#top">ਸਿਖਰ 'ਤੇ ਵਾਪਸ ਜਾਓ ↑</a>

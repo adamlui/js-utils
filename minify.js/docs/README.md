@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 # </> minify.js
 
 ### Recursively minify all JavaScript files.
@@ -276,4 +278,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://js-utils.org">**More JavaScript utilities**</a> /
 <a href="https://github.com/adamlui/minify.js/discussions">Discuss</a> /
-<a href="#-minifyjs">Back to top ↑</a>
+<a href="#top">Back to top ↑</a>

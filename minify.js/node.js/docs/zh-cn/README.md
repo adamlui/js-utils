@@ -17,6 +17,8 @@
     </h6>
 </div>
 
+<a id="top"></a>
+
 # </> minify.js
 
 ### 递归地缩小所有 JavaScript 文件。
@@ -304,4 +306,4 @@ findJS() » Check returned array.
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://js-utils.org">**更多 JavaScript 实用程序**</a> /
 <a href="https://github.com/adamlui/minify.js/discussions">讨论</a> /
-<a href="#-minifyjs">回到顶部 ↑</a>
+<a href="#top">回到顶部 ↑</a>

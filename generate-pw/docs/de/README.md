@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 <div align="right">
     <h6>
         <picture>
@@ -338,4 +340,4 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/home/white/icon32x27.png?v=0d36e26"><img height=13 src="https://assets.js-utils.org/images/icons/home/dark-gray/icon32x27.png?v=0d36e26"></picture> <a href="https://js-utils.org">**Weitere JavaScript-Dienstprogramme**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Diskutieren</a> /
-<a href="#-generate-pw">Zurück nach oben ↑</a>
+<a href="#top">Zurück nach oben ↑</a>

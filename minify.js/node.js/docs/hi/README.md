@@ -17,6 +17,8 @@
     </h6>
 </div>
 
+<a id="top"></a>
+
 # </> minify.js
 
 ### सभी जावास्क्रिप्ट फ़ाइलों को पुनरावर्ती रूप से छोटा करें।
@@ -306,4 +308,4 @@ findJS() » Check returned array.
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://js-utils.org">**अधिक जावास्क्रिप्ट उपयोगिताएँ**</a> /
 <a href="https://github.com/adamlui/minify.js/discussions">चर्चा करना</a> /
-<a href="#-minifyjs">वापस शीर्ष पर ↑</a>
+<a href="#top">वापस शीर्ष पर ↑</a>
