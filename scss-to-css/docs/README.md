@@ -347,7 +347,7 @@ Recursively minify all JavaScript files
 [badge-license]: https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge
 [badge-codefactor]: https://img.shields.io/codefactor/grade/github/adamlui/scss-to-css?label=Code+Quality&logo=codefactor&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge
 [badge-sonar]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_scss-to-css%3Anode.js%2Fsrc%2Fscss-to-css.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold
-[badge-awesome]: https://img.shields.io/badge/Mentioned_in-Awesome-c4a2bd?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge
+[badge-awesome]: https://img.shields.io/badge/Mentioned_in-Awesome-ff69b4?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge
 [badge-awesome-small]: https://assets.scsstocss.org/images/badges/awesome/badge.svg?v=7e4a141
 
 <!-- ═══════════════════════════════════════════════════════════════════════════════
