@@ -147,7 +147,7 @@ You can also import **minify.js** into your app to use its API methods, both as 
 #### ESM*:
 
 ```js
-import * as minifyJS from '@adamlui/minify.js'
+import minifyJS from '@adamlui/minify.js'
 ```
 
 #### CJS:
