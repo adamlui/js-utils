@@ -194,11 +194,11 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     optionsPos += ['st','nd','rd'][optionsPos - 1] || 'th' // append ordinal suffix
 
     // Define print functions
-    const printValidOptions = () => {
+    function printValidOptions() {
         console.info(`${logPrefix}Valid options: [ ${strValidOptions} ]`)
         console.info(`${logPrefix}If omitted, default settings are: ${strDefaultOptions}`)
     }
-    const printDocURL = () => {
+    function printDocURL() {
         console.info(`${logPrefix}For more help, please visit ${docURL}`) }
 
     // Validate options
