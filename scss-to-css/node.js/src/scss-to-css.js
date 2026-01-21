@@ -144,8 +144,9 @@ function compile(input, options = {}) {
             }).filter(data => !data.error ) // filter out failed compilations
             if (options.verbose) {
                 if (compileResult.length && typeof window != 'undefined')
-                     console.info(`${logPrefix}Compilation complete! Check returned object.`)
-                else console.info(`${logPrefix}No SCSS files processed.`)
+                    console.info(`${logPrefix}Compilation complete! Check returned object.`)
+                else
+                    console.info(`${logPrefix}No SCSS files processed.`)
             }
             return compileResult
         }
