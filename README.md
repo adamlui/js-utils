@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 # 🛠️ JavaScript utilities
 
 <a href="#">
@@ -64,4 +66,4 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/tag/white/icon16.svg?v=0d36e26"><img height=14 src="https://assets.js-utils.org/images/icons/tag/dark-gray/icon16.svg?v=0d36e26"></picture> <a href="https://github.com/adamlui/js-utils/releases">**Latest releases**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
-<a href="#%EF%B8%8F-javascript-utilities">Back to top ↑</a>
+<a href="#top">Back to top ↑</a>
