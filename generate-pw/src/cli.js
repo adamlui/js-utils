@@ -147,6 +147,19 @@ const pkgName = 'generate-pw',
 
     // Define FUNCTIONS
 
+    function copyToClipboard(data) {
+        data = data.replace(/"/g, '""')
+        const osConfig = {
+            darwin: { binPath: '/usr/bin/pbcopy', args: [] },
+            linux: { binPath: '/usr/bin/xclip', args: ['-selection', 'clipboard'] },
+            win32: {
+                binPath: path.join(process.env.SYSTEMROOT, 'System32', 'WindowsPowerShell', 'v1.0', 'powershell.exe'),
+                args: ['-Command', 'Set-Clipboard -Value $input']
+            }
+        }
+        execFileSync(...Object.values(osConfig[process.platform]), { input: data })
+    }
+
     function fetchData(url) { // instead of fetch() to support Node.js < v21
         return new Promise((resolve, reject) => {
             const protocol = url.match(/^([^:]+):\/\//)[1]
@@ -157,6 +170,13 @@ const pkgName = 'generate-pw',
                 resp.on('end', () => resolve({ json: () => JSON.parse(rawData) }))
             }).on('error', reject)
         })
+    }
+
+    function printHelpCmdAndDocURL() {
+        console.info(`\n${ msgs.info_moreHelp || 'For more help' }, ${
+            msgs.info_type || 'type' } generate-pw --help' ${ msgs.info_or || 'or' } ${
+            msgs.info_visit || 'visit' }\n${bw}${docURL}${nc}`
+        )
     }
 
     function printHelpSections(includeSections = ['header', 'usage', 'paramOptions', 'flags', 'infoCmds']) {
@@ -224,26 +244,6 @@ const pkgName = 'generate-pw',
         }
     }
 
-    function printHelpCmdAndDocURL() {
-        console.info(`\n${ msgs.info_moreHelp || 'For more help' }, ${
-            msgs.info_type || 'type' } generate-pw --help' ${ msgs.info_or || 'or' } ${
-            msgs.info_visit || 'visit' }\n${bw}${docURL}${nc}`
-        )
-    }
-
     function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg) }
-
-    function copyToClipboard(data) {
-        data = data.replace(/"/g, '""')
-        const osConfig = {
-            darwin: { binPath: '/usr/bin/pbcopy', args: [] },
-            linux: { binPath: '/usr/bin/xclip', args: ['-selection', 'clipboard'] },
-            win32: {
-                binPath: path.join(process.env.SYSTEMROOT, 'System32', 'WindowsPowerShell', 'v1.0', 'powershell.exe'),
-                args: ['-Command', 'Set-Clipboard -Value $input']
-            }
-        }
-        execFileSync(...Object.values(osConfig[process.platform]), { input: data })
-    }
 
 })()

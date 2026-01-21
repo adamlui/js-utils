@@ -253,6 +253,13 @@ const pkgName = '@adamlui/minify.js',
         })
     }
 
+    function printHelpCmdAndDocURL() {
+        console.info(`\n${ msgs.info_moreHelp || 'For more help' }, ${
+            msgs.info_type || 'type' } minify-js --help' ${ msgs.info_or || 'or' } ${
+            msgs.info_visit || 'visit' }\n${bw}${docURL}${nc}`
+        )
+    }
+
     function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
         const appPrefix = `\x1b[106m\x1b[30m ${pkgName.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
         const helpSections = {
@@ -329,13 +336,6 @@ const pkgName = '@adamlui/minify.js',
                     : ' '.repeat(indent) + line // print subsequent lines indented
             )))
         }
-    }
-
-    function printHelpCmdAndDocURL() {
-        console.info(`\n${ msgs.info_moreHelp || 'For more help' }, ${
-            msgs.info_type || 'type' } minify-js --help' ${ msgs.info_or || 'or' } ${
-            msgs.info_visit || 'visit' }\n${bw}${docURL}${nc}`
-        )
     }
 
     function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg) }

@@ -135,6 +135,19 @@ const pkgName = '@adamlui/geolocate',
 
     // Define FUNCTIONS
 
+    function copyToClipboard(data) {
+        data = data.replace(/"/g, '""')
+        const osConfig = {
+            darwin: { binPath: '/usr/bin/pbcopy', args: [] },
+            linux: { binPath: '/usr/bin/xclip', args: ['-selection', 'clipboard'] },
+            win32: {
+                binPath: path.join(process.env.SYSTEMROOT, 'System32', 'WindowsPowerShell', 'v1.0', 'powershell.exe'),
+                args: ['-Command', 'Set-Clipboard -Value $input']
+            }
+        }
+        execFileSync(...Object.values(osConfig[process.platform]), { input: data })
+    }
+
     function fetchData(url) { // instead of fetch() to support Node.js < v21
         return new Promise((resolve, reject) => {
             const protocol = url.match(/^([^:]+):\/\//)[1]
@@ -198,18 +211,5 @@ const pkgName = '@adamlui/geolocate',
     }
 
     function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg) }
-
-    function copyToClipboard(data) {
-        data = data.replace(/"/g, '""')
-        const osConfig = {
-            darwin: { binPath: '/usr/bin/pbcopy', args: [] },
-            linux: { binPath: '/usr/bin/xclip', args: ['-selection', 'clipboard'] },
-            win32: {
-                binPath: path.join(process.env.SYSTEMROOT, 'System32', 'WindowsPowerShell', 'v1.0', 'powershell.exe'),
-                args: ['-Command', 'Set-Clipboard -Value $input']
-            }
-        }
-        execFileSync(...Object.values(osConfig[process.platform]), { input: data })
-    }
 
 })()
