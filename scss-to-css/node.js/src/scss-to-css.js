@@ -40,7 +40,7 @@ function findSCSS(searchDir, options = {}) {
     // Validate/init options
     if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
-    if (options.ignoreFiles) options.ignores = options.ignoreFiles // for backwards compatibility
+    if (options.ignoreFiles) options.ignores = [...(options.ignores ?? []), ...options.ignoreFiles] // for bw compat
 
     // Search for SCSS
     const dirFiles = fs.readdirSync(searchDir), scssFiles = []
@@ -100,7 +100,7 @@ function compile(input, options = {}) {
     // Validate/init options
     if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
-    if (options.ignoreFiles) options.ignores = options.ignoreFiles // for backwards compatibility
+    if (options.ignoreFiles) options.ignores = [...(options.ignores ?? []), ...options.ignoreFiles] // for bw compat
 
     // Compile SCSS based on input
     const compileOptions = {
