@@ -60,7 +60,7 @@
     "url": "https://github.com/adamlui/js-utils/issues"
   },
   "dependencies": {
-    "generate-ip": "^2.4.6"
+    "generate-ip": "^2.4.7"
   },
   "devDependencies": {
     "@adamlui/minify.js": "^2.1.0"
