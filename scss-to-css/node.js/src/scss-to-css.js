@@ -56,9 +56,9 @@ function findSCSS(searchDir, options = {}) {
             if (options.verbose) console.info(`${logPrefix}** ${file} ignored`)
         } else if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
             && options.recursive // only proceed if recursion enabled
-            && (options.dotFolders || !file.startsWith('.'))) // exclude dotfolders if prohibited
-                scssFiles.push( // recursively find SCSS in eligible dir
-                    ...findSCSS(filePath, { ...options, isRecursing: true }))
+            && (options.dotFolders || !file.startsWith('.')) // exclude dotfolders if prohibited
+        ) scssFiles.push( // recursively find SCSS in eligible dir
+            ...findSCSS(filePath, { ...options, isRecursing: true }))
         else if (file.endsWith('.scss')) // SCSS file found
             scssFiles.push(filePath) // store eligible SCSS file for returning
     })
@@ -116,8 +116,10 @@ function compile(input, options = {}) {
                 if (options.comment) compileResult.css = prependComment(compileResult.css, options.comment)
                 if (options.verbose && typeof window != 'undefined')
                     console.info(`${logPrefix}Compilation complete! Check returned object.`)
-                return { code: compileResult.css, srcMap: compileResult.sourceMap,
-                         srcPath: path.resolve(process.cwd(), input), error: undefined }
+                return {
+                    code: compileResult.css, srcMap: compileResult.sourceMap,
+                    srcPath: path.resolve(process.cwd(), input), error: undefined
+                }
             } catch (err) {
                 console.error(`\n${logPrefix}ERROR: ${err.message}\n`)
                 return { code: undefined, srcMap: undefined, srcPath: undefined, error: err }
@@ -156,8 +158,7 @@ function compile(input, options = {}) {
         try { // to compile passed src code
             const compileResult = sass.compileString(input, compileOptions)
             if (options.comment) compileResult.css = prependComment(compileResult.css, options.comment)
-            return { code: compileResult.css, srcMap: compileResult.sourceMap,
-                     srcPath: undefined, error: undefined }
+            return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: undefined, error: undefined }
         } catch (err) {
             console.error(`\n${logPrefix}ERROR: ${err.message}\n`)
             return { code: undefined, srcMap: undefined, srcPath: undefined, error: err }
@@ -170,7 +171,8 @@ function compile(input, options = {}) {
         if (shebangIdx >= 0) {
             const postShebangIdx = code.indexOf('\n', shebangIdx) +1 // idx of 1st newline after shebang
             return code.slice(0, postShebangIdx) + `/**\n${commentBlock}\n */\n` + code.slice(postShebangIdx)
-        } else return `/**\n${commentBlock}\n */\n${code}`
+        } else
+            return `/**\n${commentBlock}\n */\n${code}`
     }
 }
 

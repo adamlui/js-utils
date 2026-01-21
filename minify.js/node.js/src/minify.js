@@ -57,12 +57,12 @@ function findJS(searchDir, options = {}) {
             if (options.verbose) console.info(`${logPrefix}** ${file} ignored`)
         } else if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
             && options.recursive // only proceed if recursion enabled
-            && (options.dotFolders || !file.startsWith('.'))) // exclude dotfolders if prohibited
-                jsFiles.push( // recursively find unminified JS in eligible dir
-                    ...findJS(filePath, { ...options, isRecursing: true }))
+            && (options.dotFolders || !file.startsWith('.')) // exclude dotfolders if prohibited
+        ) jsFiles.push( // recursively find unminified JS in eligible dir
+            ...findJS(filePath, { ...options, isRecursing: true }))
         else if (/\.js(?<!\.min\.js)$/.test(file) // minified JS file found
-            && (options.dotFiles || !file.startsWith('.'))) // exclude dotfiles if prohibited
-                jsFiles.push(filePath) // store eligible unminified JS file for returning
+            && (options.dotFiles || !file.startsWith('.')) // exclude dotfiles if prohibited
+        ) jsFiles.push(filePath) // store eligible unminified JS file for returning
     })
 
     // Log/return final result
@@ -127,8 +127,7 @@ function minify(input, options = {}) {
             if (minifyResult.error) console.error(`${logPrefix}ERROR: ${minifyResult.error.message}`)
             else if (options.verbose && typeof window != 'undefined')
                 console.info(`${logPrefix}Minification complete! Check returned object.`)
-            return { code: minifyResult.code, srcPath: path.resolve(process.cwd(), input),
-                     error: minifyResult.error }
+            return { code: minifyResult.code, srcPath: path.resolve(process.cwd(), input), error: minifyResult.error }
 
         } else { // dir path passed
             fs.closeSync(fd)
@@ -143,10 +142,10 @@ function minify(input, options = {}) {
                 return { code: minifyResult.code, srcPath: jsPath, relPath, error: minifyResult.error }
             }).filter(data => !data.error) // filter out failed minifications
             if (options.verbose) {
-                if (minifyResult.length && typeof window != 'undefined') console.info(
-                    `${logPrefix}Minification complete! Check returned object.`)
-                else console.info(
-                    `${logPrefix}No unminified JavaScript files processed.`)
+                if (minifyResult.length && typeof window != 'undefined')
+                    console.info(`${logPrefix}Minification complete! Check returned object.`)
+                else
+                    console.info(`${logPrefix}No unminified JavaScript files processed.`)
             }
 
             // Rewrite import paths if enabled and multiple files processed
