@@ -185,7 +185,8 @@ function minify(input, options = {}) {
         if (shebangIdx >= 0) {
             const postShebangIdx = code.indexOf('\n', shebangIdx) +1 // idx of 1st newline after shebang
             return code.slice(0, postShebangIdx) + `/**\n${commentBlock}\n */\n` + code.slice(postShebangIdx)
-        } else return `/**\n${commentBlock}\n */\n${code}`
+        } else
+            return `/**\n${commentBlock}\n */\n${code}`
     }
 }
 
