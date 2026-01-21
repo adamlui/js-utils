@@ -158,7 +158,7 @@ Boolean options:
  -q, --quiet                 Suppress all logging except errors.
 
 Parameter options:
- --ignore-files="file1.scss,file2.scss"   Files to exclude from
+ --ignores="dir/,file1.scss,file2.scss"   Files/directories to exclude from
                                           compilation.
  --comment="comment"                      Prepend header comment to
                                           compiled CSS. Separate by
@@ -235,8 +235,8 @@ Name           | Type    | Desciption                                           
 `dotFolders`   | Boolean | Include dotfolders in file search.                                      | `false`
 `minify`       | Boolean | Minify output CSS.                                                      | `true`
 `sourceMaps`   | Boolean | Generate CSS source maps.                                               | `true`
-`cloneFolders` | Boolean | Preserve folder structure in output dir                                 | `false`
-`ignoreFiles`  | Array   | Files (by name) to exclude from compilation.                            | `[]`
+`cloneFolders` | Boolean | Preserve folder structure in output dir.                                | `false`
+`ignores`      | Array   | Files/dirs to exclude from compilation.                                 | `[]`
 `comment`      | String  | Header comment to prepend to compiled CSS. Separate by line using '\n'. | `''`
 
 #
@@ -271,7 +271,7 @@ Name          | Type    | Desciption                                            
 `recursive`   | Boolean | Recursively search for nested files in searchDir passed. | `true`
 `verbose`     | Boolean | Show logging in console/terminal.                        | `true`
 `dotFolders`  | Boolean | Include dotfolders in file search.                       | `false`
-`ignoreFiles` | Array   | Files (by name) to exclude from search results.          | `[]`
+`ignores`     | Array   | Files/dirs to exclude from search results.               | `[]`
 
 <br>
 

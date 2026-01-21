@@ -271,7 +271,7 @@ scssToCSS.compile(inputDir, { minify: false });
 | `dotFolders`   | Boolean | Include dotfolders in file search                    | `false` |
 | `minify`       | Boolean | Minify output CSS                                    | `true`  |
 | `sourceMaps`   | Boolean | Generate CSS source maps                             | `true`  |
-| `cloneFolders` | Boolean | Preserve folder structure in output dir              | `false` |
+| `cloneFolders` | Boolean | Preserve folder structure in output dir.             | `false` |
 | `ignoreFiles`  | Array   | Files (by name) to exclude from compilation          | `[]`    |
 | `comment`      | String  | Header comment to prepend (use `\n` for line breaks) | `''`    |
 

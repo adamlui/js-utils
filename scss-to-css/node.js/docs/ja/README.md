@@ -153,7 +153,7 @@ $ scss-to-css input_folder output_folder
  -q, --quiet                              エラーを除くすべてのログを抑制します。
 
 パラメータオプション:
- --ignore-files="file1.scss,file2.scss"   コンパイルから除外するファイル。
+ --ignores="dir/,file1.scss,file2.scss"   コンパイルから除外するファイル／ディレクトリ。
  --comment="comment"                      コンパイルされた CSS の先頭にヘッダー コメントを追加します。'\n' を使用して行で区切ります。
 
 情報コマンド:
@@ -229,7 +229,7 @@ scssToCSS.compile(inputDir, { minify: false });
 `minify`       | ブール値 | 出力 CSS を縮小します。                                                            | `true`
 `sourceMaps`   | ブール値 | CSS ソースマップを生成します。                                                      | `true`
 `cloneFolders` | ブール値 | 出力ディレクトリにフォルダ構造を保持する。                                           | `false`
-`ignoreFiles`  | 配列     | コンパイルから除外するファイル (名前別)。                                            | `[]`
+`ignores`      | 配列     | コンパイルから除外するファイル／ディレクトリ。                                       | `[]`
 `comment`      | 文字列   | コンパイルされた CSS の先頭に追加するヘッダー コメント。'\n' を使用して行で区切ります。 | `''`
 
 #
@@ -264,7 +264,7 @@ findSCSS() » Check returned array.
 `recursive`   | ブール値 | 渡された searchDir 内のネストされたファイルを再帰的に検索します。 | `true`
 `verbose`     | ブール値 | コンソール/ターミナルにログを表示します。                        | `true`
 `dotFolders`  | ブール値 | ファイル検索にドットフォルダーを含めます。                       | `false`
-`ignoreFiles` | 配列     | 検索結果から除外するファイル (名前順)。                         | `[]`
+`ignores`     | 配列     | 検索結果から除外するファイル／ディレクトリ。                     | `[]`
 
 <br>
 

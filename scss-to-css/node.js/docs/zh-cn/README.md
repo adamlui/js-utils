@@ -153,7 +153,7 @@ $ scss-to-css input_folder output_folder
  -q, --quiet                              禁止除错误之外的所有日志记录。
 
 参数选项：
- --ignore-files="file1.scss,file2.scss"   要从编译中排除的文件。
+ --ignores="dir/,file1.scss,file2.scss"   要从编译中排除的文件/目录。
  --comment="comment"                      将标头注释添加到已编译的 CSS 中。使用 '\n' 按行分隔。
 
 信息命令：
@@ -229,7 +229,7 @@ scssToCSS.compile(inputDir, { minify: false });
 `minify`       | 布尔值 | 缩小输出 CSS。                                      | `true`
 `sourceMaps`   | 布尔值 | 生成 CSS 源映射。                                   | `true`
 `cloneFolders` | 布尔值 | 在输出目录中保留文件夹结构。                         | `false`
-`ignoreFiles`  | 大批   | 要从编译中排除的文件（按名称）。                     | `[]`
+`ignores`      | 大批   | 要从编译中排除的文件/目录。                         | `[]`
 `comment`      | 字符串 | 添加到已编译 CSS 前面的标头注释。使用 '\n' 按行分隔。 | `''`
 
 #
@@ -264,7 +264,7 @@ findSCSS() » Check returned array.
 `recursive`   | 布尔值 | 递归搜索传递的 searchDir 中的嵌套文件。  | `true`
 `verbose`     | 布尔值 | 在控制台/终端中显示日志记录。            | `true`
 `dotFolders`  | 布尔值 | 在文件搜索中包括点文件夹。               | `false`
-`ignoreFiles` | 大批   | 要从搜索结果中排除的文件（按名称）。      | `[]`
+`ignores`     | 大批   | 要从搜索结果中排除的文件/目录。          | `[]`
 
 <br>
 

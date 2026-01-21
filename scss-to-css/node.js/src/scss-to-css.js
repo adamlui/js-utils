@@ -19,7 +19,7 @@ function findSCSS(searchDir, options = {}) {
         recursive: true,   // recursively search for nested files in searchDir passed
         verbose: true,     // enable logging
         dotFolders: false, // include dotfolders in file search
-        ignoreFiles: []    // files to exclude from search results
+        ignores: []        // files/dirs to exclude from search results
     }
 
     // Validate searchDir
@@ -40,6 +40,7 @@ function findSCSS(searchDir, options = {}) {
     // Validate/init options
     if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
+    if (options.ignoreFiles) options.ignores = options.ignoreFiles // for backwards compatibility
 
     // Search for SCSS
     const dirFiles = fs.readdirSync(searchDir), scssFiles = []
@@ -47,16 +48,19 @@ function findSCSS(searchDir, options = {}) {
         console.info(`${logPrefix}Searching for SCSS files...`)
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file)
-        if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
+        const shouldIgnore = options.ignores.some(pattern =>
+            pattern.endsWith('/') ? filePath.split(path.sep).some(part => part == pattern.replace(/\/$/, ''))
+          : file == pattern
+        )
+        if (shouldIgnore) {
+            if (options.verbose) console.info(`${logPrefix}** ${file} ignored`)
+        } else if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
             && options.recursive // only proceed if recursion enabled
             && (options.dotFolders || !file.startsWith('.'))) // exclude dotfolders if prohibited
                 scssFiles.push( // recursively find SCSS in eligible dir
                     ...findSCSS(filePath, { ...options, isRecursing: true }))
-        else if (file.endsWith('.scss') // SCSS file found
-            && !options.ignoreFiles.includes(file)) // exclude ignored files
-                scssFiles.push(filePath) // store eligible SCSS file for returning
-        else if (options.verbose && options.ignoreFiles.includes(file))
-            console.info(`${logPrefix}** ${file} ignored due to [options.ignoreFiles]`)
+        else if (file.endsWith('.scss')) // SCSS file found
+            scssFiles.push(filePath) // store eligible SCSS file for returning
     })
 
     // Log/return final result
@@ -82,7 +86,7 @@ function compile(input, options = {}) {
         minify: true,        // minify output CSS
         sourceMaps: true,    // generate CSS source maps
         cloneFolders: false, // preserve folder structure in output dir
-        ignoreFiles: [],     // files to exclude from compilation
+        ignores: [],         // files/dirs to exclude from compilation
         comment: ''          // header comment to prepend to compiled CSS
     }
 
@@ -96,6 +100,7 @@ function compile(input, options = {}) {
     // Validate/init options
     if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
+    if (options.ignoreFiles) options.ignores = options.ignoreFiles // for backwards compatibility
 
     // Compile SCSS based on input
     const compileOptions = {
@@ -118,27 +123,29 @@ function compile(input, options = {}) {
                 return { code: undefined, srcMap: undefined, srcPath: undefined, error: err }
             }
         } else { // dir path passed
-            const compileResult = findSCSS(input, { recursive: options.recursive, verbose: options.verbose,
-                                                    dotFolders: options.dotFolders, ignoreFiles: options.ignoreFiles
-                })?.map(scssPath => { // compile found SCSS files
-                    if (options.verbose) console.info(`${logPrefix}** Compiling ${scssPath}...`)
-                    try { // to compile found file
-                        const compileResult = sass.compile(scssPath, compileOptions)
-                        let relPath
-                        if (options.cloneFolders) relPath = path.relative(path.resolve(process.cwd(), input), scssPath)
-                        if (options.comment) compileResult.css = prependComment(compileResult.css, options.comment)
-                        return { code: compileResult.css, srcMap: compileResult.sourceMap,
-                                 srcPath: scssPath, relPath, error: undefined }
-                    } catch (err) {
-                        console.error(`\n${logPrefix}ERROR: ${err.message}\n`)
-                        return { code: undefined, srcMap: undefined, srcPath: undefined, error: err }
+            const compileResult = findSCSS(input, {
+                recursive: options.recursive, verbose: options.verbose, dotFolders: options.dotFolders,
+                ignores: options.ignores
+            })?.map(scssPath => { // compile found SCSS files
+                if (options.verbose) console.info(`${logPrefix}** Compiling ${scssPath}...`)
+                try { // to compile found file
+                    const compileResult = sass.compile(scssPath, compileOptions)
+                    let relPath
+                    if (options.cloneFolders) relPath = path.relative(path.resolve(process.cwd(), input), scssPath)
+                    if (options.comment) compileResult.css = prependComment(compileResult.css, options.comment)
+                    return {
+                        code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: scssPath, relPath,
+                        error: undefined
                     }
-                }).filter(data => !data.error ) // filter out failed compilations
+                } catch (err) {
+                    console.error(`\n${logPrefix}ERROR: ${err.message}\n`)
+                    return { code: undefined, srcMap: undefined, srcPath: undefined, error: err }
+                }
+            }).filter(data => !data.error ) // filter out failed compilations
             if (options.verbose) {
-                if (compileResult.length && typeof window != 'undefined') console.info(
-                    `${logPrefix}Compilation complete! Check returned object.`)
-                else console.info(
-                    `${logPrefix}No SCSS files processed.`)
+                if (compileResult.length && typeof window != 'undefined')
+                     console.info(`${logPrefix}Compilation complete! Check returned object.`)
+                else console.info(`${logPrefix}No SCSS files processed.`)
             }
             return compileResult
         }

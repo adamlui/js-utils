@@ -153,7 +153,7 @@ Opciones booleanas:
  -q, --quiet                              Suprime todos los registros excepto los errores.
 
 Opciones de parámetros:
- --ignore-files="file1.scss,file2.scss"   Archivos para excluir de la compilación.
+ --ignores="dir/,file1.scss,file2.scss"   Archivos/directorios que se excluirán de la compilación.
  --comment="comment"                      Anteponga el comentario del encabezado al CSS compilado. Separe por línea usando '\n'.
 
 Comandos de información:
@@ -229,7 +229,7 @@ Nombre         | Tipo      | Descripción                                       
 `minify`       | Booleano  | Minimizar CSS de salida.                                                                | `true`
 `sourceMaps`   | Booleano  | Generar mapas fuente CSS.                                                               | `true`
 `cloneFolders` | Booleano  | Conservar la estructura de carpetas en el directorio de salida.                         | `false`
-`ignoreFiles`  | Formación | Archivos (por nombre) para excluir de la compilación.                                   | `[]`
+`ignores`      | Formación | Archivos/directorios que se excluirán de la compilación.                                | `[]`
 `comment`      | Cadena    | Comentario de encabezado para anteponer al CSS compilado. Separe por línea usando '\n'. | `''`
 
 #
@@ -259,12 +259,12 @@ findSCSS() » Check returned array.
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:
 
-Nombre        | Tipo      | Descripción                                                       | Valor por defecto
---------------|-----------|-------------------------------------------------------------------|-------------------
-`recursive`   | Booleano  | Se pasó la búsqueda recursiva de archivos anidados en sesarchDir. | `true`
-`verbose`     | Booleano  | Mostrar registros en la consola/terminal.                         | `true`
-`dotFolders`  | Booleano  | Incluir carpetas de puntos en la búsqueda de archivos.            | `false`
-`ignoreFiles` | Formación | Archivos (por nombre) para excluir de los resultados de búsqueda. | `[]`
+Nombre        | Tipo      | Descripción                                                             | Valor por defecto
+--------------|-----------|-------------------------------------------------------------------------|-------------------
+`recursive`   | Booleano  | Se pasó la búsqueda recursiva de archivos anidados en sesarchDir.       | `true`
+`verbose`     | Booleano  | Mostrar registros en la consola/terminal.                               | `true`
+`dotFolders`  | Booleano  | Incluir carpetas de puntos en la búsqueda de archivos.                  | `false`
+`ignores`     | Formación | Archivos/directorios que se excluirán de los resultados de la búsqueda. | `[]`
 
 <br>
 

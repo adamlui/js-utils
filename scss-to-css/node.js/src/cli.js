@@ -36,7 +36,7 @@
             'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
         },
         paramOptions: {
-            'ignoreFiles': /^--?(?:ignore|skip|exclude)(?:d?-?files?)?(?:=.*|$)/,
+            'ignores': /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/,
             'comment': /^--?comments?(?:=.*|$)/
         },
         infoCmds: { 'help': /^--?h(?:elp)?$/,'version': /^--?ve?r?s?i?o?n?$/ }
@@ -107,7 +107,7 @@
         const scssFiles = inputPath.endsWith('.scss') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
             : scssToCSS.findSCSS(inputPath, {
                 recursive: !config.noRecursion, verbose: !config.quietMode,
-                ignoreFiles: (config.ignoreFiles?.split(',') ?? []).map(file => file.trim())
+                ignores: (config.ignores?.split(',') ?? []).map(item => item.trim())
             })
 
         if (config.dryRun) { // -n or --dry-run passed
@@ -125,7 +125,7 @@
                     verbose: !config.quietMode, minify: !config.noMinify,
                     comment: config.comment?.replace(/\\n/g, '\n'), cloneFolders: true, recursive: !config.noRecursion,
                     dotFolders: !!config.includeDotFolders, sourceMaps: !config.noSourceMaps,
-                    ignoreFiles: config.ignoreFiles ? config.ignoreFiles.split(',').map(file => file.trim()) : []
+                    ignores: config.ignores ? config.ignores.split(',').map(item => item.trim()) : []
                 })
                 if (Array.isArray(compileResult)) compileData = compileResult
                 if (compileResult) {
@@ -228,7 +228,7 @@
             ],
             'paramOptions': [
                 `\n${bw}o Parameter options:${nc}`,
-                '--ignore-files="file1.scss,file2.scss"   Files to exclude from compilation.',
+                '--ignores="dir/,file1.scss,file2.scss"   Files/directories to exclude from compilation.',
                 '--comment="comment"                      Prepend header comment to compiled CSS.'
                                                         + ' Separate by line using \'\\n\'.'
             ],

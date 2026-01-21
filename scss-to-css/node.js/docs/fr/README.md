@@ -153,7 +153,7 @@ Options booléennes:
  -q, --quiet                              Supprime toute la journalisation, à l'exception des erreurs.
 
 Options des paramètres:
- --ignore-files="file1.scss,file2.scss"   Fichiers à exclure de la compilation.
+ --ignores="dir/,file1.scss,file2.scss"   Fichiers/répertoires à exclure de la compilation.
  --comment="comment"                      Ajoutez le commentaire d’en-tête au CSS compilé. Séparez par ligne en utilisant '\n'.
 
 Commandes d'informations:
@@ -229,7 +229,7 @@ Nom            | Taper   | Description                                          
 `minify`       | Booléen | Réduire la sortie CSS.                                                                   | `true`
 `sourceMaps`   | Booléen | Générer des cartes sources CSS.                                                          | `true`
 `cloneFolders` | Booléen | Conserver la structure des dossiers dans le répertoire de sortie.                        | `false`
-`ignoreFiles`  | Tableau | Fichiers (par nom) à exclure de la compilation.                                          | `[]`
+`ignores`      | Tableau | Fichiers/répertoires à exclure de la compilation.                                        | `[]`
 `comment`      | Chaîne  | Commentaire d’en-tête à ajouter au CSS compilé. Séparez par ligne en utilisant '\n'.     | `''`
 
 #
@@ -264,7 +264,7 @@ Nom           | Taper   | Description                                           
 `recursive`   | Booléen | Recherche récursive des fichiers imbriqués dans repRecherche transmis. | `true`
 `verbose`     | Booléen | Afficher la connexion dans la console/terminal.                        | `true`
 `dotFolders ` | Booléen | Inclure les dossiers cachés dans la recherche de fichiers.             | `false`
-`ignoreFiles` | Tableau | Fichiers (par nom) à exclure des résultats de recherche.               | `[]`
+`ignores`     | Tableau | Fichiers/répertoires à exclure des résultats de recherche.             | `[]`
 
 <br>
 

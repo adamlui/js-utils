@@ -153,7 +153,7 @@ Boolesche Optionen:
  -q, --quiet                              Unterdrücken Sie alle Protokolle außer Fehlern.
 
 Parameteroptionen:
- --ignore-files="file1.scss,file2.scss"   Dateien, die von der Kompilierung ausgeschlossen werden sollen.
+ --ignores="dir/,file1.scss,file2.scss"   Dateien/Verzeichnisse, die von der Kompilierung ausgeschlossen werden sollen.
  --comment="comment"                      Header-Kommentar dem kompilierten CSS voranstellen. Mit '\n' zeilenweise trennen.
 
 Info-Befehle:
@@ -229,7 +229,7 @@ Name           | Typ             | Beschreibung                                 
 `minify`       | Boolescher Wert | Ausgabe-CSS minimieren.                                                                      | `true`
 `sourceMaps`   | Boolescher Wert | Generieren Sie CSS-Quellkarten.                                                              | `true`
 `cloneFolders` | Boolescher Wert | Ordnerstruktur im Ausgabeverzeichnis beibehalten.                                            | `false`
-`ignoreFiles`  | Array           | Dateien (nach Namen), die von der Kompilierung ausgeschlossen werden sollen.                 | `[]`
+`ignores`      | Array           | Dateien/Verzeichnisse, die von der Kompilierung ausgeschlossen werden sollen.                | `[]`
 `comment`      | Zeichenfolge    | Header-Kommentar, der dem kompilierten CSS vorangestellt wird. Mit '\n' zeilenweise trennen. | `''`
 
 #
@@ -259,12 +259,12 @@ findSCSS() » Check returned array.
 
 Verfügbare Parameter (und ihre Standardeinstellungen) sind:
 
-Name          | Typ             | Beschreibung                                                                    | Standardwert
---------------|-----------------|---------------------------------------------------------------------------------|--------------
-`recursive`   | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien im übergebenen suchverzeichnis.    | `true`
-`verbose`     | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                         | `true`
-`dotFolders`  | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                 | `false`
-`ignoreFiles` | Array           | Dateien (nach Namen), die aus den Suchergebnissen ausgeschlossen werden sollen. | `[]`
+Name          | Typ             | Beschreibung                                                                     | Standardwert
+--------------|-----------------|----------------------------------------------------------------------------------|--------------
+`recursive`   | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien im übergebenen suchverzeichnis.     | `true`
+`verbose`     | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                          | `true`
+`dotFolders`  | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                  | `false`
+`ignores`     | Array           | Dateien/Verzeichnisse, die von den Suchergebnissen ausgeschlossen werden sollen. | `[]`
 
 <br>
 

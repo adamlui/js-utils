@@ -153,7 +153,7 @@ Opzioni booleane:
  -q, --quiet                              Elimina tutta la registrazione tranne gli errori.
 
 Opzioni dei parametri:
- --ignore-files="file1.scss,file2.scss"   File da escludere dalla compilazione.
+ --ignores="dir/,file1.scss,file2.scss"   File/cartelle da escludere dalla compilazione.
  --comment="comment"                      Anteponi il commento dell'intestazione al CSS compilato. Separare per riga utilizzando '\n'.
 
 Comandi informativi:
@@ -229,7 +229,7 @@ Nome           | Tipo     | Descrizione                                         
 `minify`       | Booleano | Minimizza il CSS di output.                                                                   | `true`
 `sourceMaps`   | Booleano | Genera mappe di origine CSS.                                                                  | `true`
 `cloneFolders` | Booleano | Mantieni la struttura delle cartelle nella directory di output.                               | `false`
-`ignoreFiles`  | Vettore  | File (per nome) da escludere dalla compilazione.                                              | `[]`
+`ignores`      | Vettore  | File/cartelle da escludere dalla compilazione.                                                | `[]`
 `comment`      | Stringa  | Commento dell'intestazione da anteporre al CSS compilato. Separare per riga utilizzando '\n'. | `''`
 
 #
@@ -264,7 +264,7 @@ Nome          | Tipo     | Descrizione                                          
 `recursive`   | Booleano | Cerca ricorsivamente i file nidificati in dirRicerca passati. | `true`
 `verbose`     | Booleano | Mostra l'accesso nella console/terminale.                     | `true`
 `dotFolders`  | Booleano | Includi cartelle punto nella ricerca di file.                 | `false`
-`ignoreFiles` | Vettore  | File (per nome) da escludere dai risultati della ricerca.     | `[]`
+`ignores`     | Vettore  | File/cartelle da escludere dai risultati della ricerca.       | `[]`
 
 <br>
 

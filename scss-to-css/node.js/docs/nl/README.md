@@ -153,7 +153,7 @@ Booleaanse opties:
  -q, --quiet                              Onderdruk alle logboekregistratie, behalve fouten.
 
 Parameteropties:
- --ignore-files="file1.scss,file2.scss"   Bestanden die moeten worden uitgesloten van compilatie.
+ --ignores="dir/,file1.scss,file2.scss"   Bestanden/mappen die moeten worden uitgesloten van de compilatie.
  --comment="comment"                      Voeg headercommentaar toe aan gecompileerde CSS. Scheid per regel met '\n'.
 
 Info-opdrachten:
@@ -229,7 +229,7 @@ Naam           | Type       | Beschrijving                                      
 `minify`       | Booleaans  | Verklein de uitvoer-CSS.                                                                     | `true`
 `sourceMaps`   | Booleaans  | Genereer CSS-bronkaarten.                                                                    | `true`
 `cloneFolders` | Booleaans  | Behoud de mapstructuur in de uitvoermap.                                                     | `false`
-`ignoreFiles`  | Array      | Bestanden (op naam) die moeten worden uitgesloten van compilatie.                            | `[]`
+`ignores`      | Array      | Bestanden/mappen die moeten worden uitgesloten van de compilatie.                            | `[]`
 `comment`      | Tekenreeks | Kopopmerking die vóór de gecompileerde CSS moet worden geplaatst. Scheid per regel met '\n'. | `''`
 
 #
@@ -264,7 +264,7 @@ Naam          | Type      | Beschrijving                                        
 `recursive`   | Booleaans | Recursief zoeken naar geneste bestanden in zoekMap is geslaagd.       | `true`
 `verbose`     | Booleaans | Toon inloggen op console/terminal.                                    | `true`
 `dotFolders`  | Booleaans | Puntmappen opnemen in het zoeken naar bestanden.                      | `false`
-`ignoreFiles` | Array     | Bestanden (op naam) die moeten worden uitgesloten van zoekresultaten. | `[]`
+`ignores`     | Array     | Bestanden/mappen die moeten worden uitgesloten van de zoekresultaten. | `[]`
 
 <br>
 

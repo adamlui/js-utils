@@ -153,7 +153,7 @@ Opções booleanas:
  -q, --quiet                              Suprima todos os registros, exceto erros.
 
 Opções de parâmetros:
- --ignore-files="file1.scss,file2.scss"   Arquivos a serem excluídos da compilação.
+ --ignores="dir/,file1.scss,file2.scss"   Ficheiros/diretórios a eliminar da compilação.
  --comment="comment"                      Anexe o comentário do cabeçalho ao CSS compilado. Separe por linha usando '\n'.
 
 Comandos de informação:
@@ -229,7 +229,7 @@ Nome           | Tipo      | Descrição                                        
 `minify`       | Boleano   | Minimizar CSS de saída.                                                               | `true`
 `sourceMaps`   | Boleano   | Gerar mapas de origem CSS.                                                            | `true`
 `cloneFolders` | Boleano   | Preservar a estrutura de pastas no diretório de saída                                 | `false`
-`ignoreFiles`  | Variedade | Arquivos (por nome) a serem excluídos da compilação.                                  | `[]`
+`ignores`      | Variedade | Ficheiros/diretórios a eliminar da compilação.                                        | `[]`
 `comment`      | Corda     | Comentário de cabeçalho a ser anexado ao CSS compilado. Separe por linha usando '\n'. | `''`
 
 #
@@ -264,7 +264,7 @@ Nome          | Tipo      | Descrição                                         
 `recursive`   | Boleano   | Pesquise recursivamente por arquivos aninhados em sesarchDir aprovado. | `true`
 `verbose`     | Boleano   | Mostrar login no console/terminal.                                     | `true`
 `dotFolders`  | Boleano   | Incluir dotfolders na pesquisa de arquivos.                            | `false`
-`ignoreFiles` | Variedade | Arquivos (por nome) a serem excluídos dos resultados da pesquisa.      | `[]`
+`ignores`     | Variedade | Ficheiros/diretórios a eliminar dos resultados da pesquisa.            | `[]`
 
 <br>
 
