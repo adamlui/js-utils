@@ -24,7 +24,10 @@
             'ignores': /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/,
             'comment': /^--?comments?(?:=.*|$)/
         },
-        infoCmds: { 'help': /^--?h(?:elp)?$/, 'version': /^--?ve?r?s?i?o?n?$/ },
+        infoCmds: {
+            'help': /^--?h(?:elp)?$/,
+            'version': /^--?ve?r?s?i?o?n?$/
+        },
         version: /^[~^>=]?\d+\.\d+\.\d+$/
     }
 

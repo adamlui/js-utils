@@ -14,7 +14,10 @@
             'macMode': /^--?m(?:ac)?(?:-?mode)?$/,
             'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
         },
-        infoCmds: { 'help': /^--?h(?:elp)?$/, 'version': /^--?ve?r?s?i?o?n?$/ },
+        infoCmds: {
+            'help': /^--?h(?:elp)?$/,
+            'version': /^--?ve?r?s?i?o?n?$/
+        },
         version: /^[~^>=]?\d+\.\d+\.\d+$/
     }
 
