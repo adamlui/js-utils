@@ -155,7 +155,8 @@
         // Find all eligible JavaScript files or arg-passed file
         const unminnedJSfiles = inputPath.endsWith('.js') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
             : minifyJS.findJS(inputPath, {
-                recursive: !app.config.noRecursion, verbose: !app.config.quietMode,
+                recursive: !app.config.noRecursion,
+                verbose: !app.config.quietMode,
                 ignores: (app.config.ignores?.split(',') ?? []).map(ignore => ignore.trim())
             })
 
@@ -172,10 +173,14 @@
             const failedPaths = [] ; let minifyData = []
             if (!app.config.relativeOutput && fs.statSync(inputPath).isDirectory()) {
                 const minifyResult = minifyJS.minify(inputPath, {
-                    verbose: false, mangle: !app.config.noMangle,
-                    comment: app.config.comment?.replace(/\\n/g, '\n'), relativeOutput: false,
-                    recursive: !app.config.noRecursion, dotFolders: !!app.config.includeDotFolders,
-                    dotFiles: !!app.config.includeDotFiles, rewriteImports: !!app.config.rewriteImports,
+                    verbose: false,
+                    mangle: !app.config.noMangle,
+                    comment: app.config.comment?.replace(/\\n/g, '\n'),
+                    relativeOutput: false,
+                    recursive: !app.config.noRecursion,
+                    dotFolders: !!app.config.includeDotFolders,
+                    dotFiles: !!app.config.includeDotFiles,
+                    rewriteImports: !!app.config.rewriteImports,
                     ignores: app.config.ignores ? app.config.ignores.split(',').map(ignore => ignore.trim()) : []
                 })
                 if (minifyResult) {
@@ -184,7 +189,8 @@
                 }
             } else minifyData = unminnedJSfiles.map(jsPath => {
                 const minifyResult = minifyJS.minify(jsPath, {
-                    verbose: !app.config.quietMode, mangle: !app.config.noMangle,
+                    verbose: !app.config.quietMode,
+                    mangle: !app.config.noMangle,
                     comment: app.config.comment?.replace(/\\n/g, '\n')
                 })
                 if (minifyResult.error) failedPaths.push(jsPath)

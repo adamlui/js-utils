@@ -111,7 +111,8 @@
         // Find all eligible JavaScript files or arg-passed file
         const scssFiles = inputPath.endsWith('.scss') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
             : scssToCSS.findSCSS(inputPath, {
-                recursive: !app.config.noRecursion, verbose: !app.config.quietMode,
+                recursive: !app.config.noRecursion,
+                verbose: !app.config.quietMode,
                 ignores: (app.config.ignores?.split(',') ?? []).map(ignore => ignore.trim())
             })
 
@@ -128,9 +129,12 @@
             const failedPaths = [] ; let compileData = []
             if (!app.config.relativeOutput && fs.statSync(inputPath).isDirectory()) {
                 const compileResult = scssToCSS.compile(inputPath, {
-                    verbose: !app.config.quietMode, minify: !app.config.noMinify,
-                    comment: app.config.comment?.replace(/\\n/g, '\n'), relativeOutput: false,
-                    recursive: !app.config.noRecursion, dotFolders: !!app.config.includeDotFolders,
+                    verbose: !app.config.quietMode,
+                    minify: !app.config.noMinify,
+                    comment: app.config.comment?.replace(/\\n/g, '\n'),
+                    relativeOutput: false,
+                    recursive: !app.config.noRecursion,
+                    dotFolders: !!app.config.includeDotFolders,
                     sourceMaps: !app.config.noSourceMaps,
                     ignores: app.config.ignores ? app.config.ignores.split(',').map(ignore => ignore.trim()) : []
                 })
@@ -141,8 +145,10 @@
                 }
             } else compileData = scssFiles.map(scssPath => {
                 const compileResult = scssToCSS.compile(scssPath, {
-                    verbose: !app.config.quietMode, minify: !app.config.noMinify,
-                    sourceMaps: !app.config.noSourceMaps, comment: app.config.comment?.replace(/\\n/g, '\n')
+                    verbose: !app.config.quietMode,
+                    minify: !app.config.noMinify,
+                    sourceMaps: !app.config.noSourceMaps,
+                    comment: app.config.comment?.replace(/\\n/g, '\n')
                 })
                 if (compileResult.error) failedPaths.push(scssPath)
                 return compileResult
