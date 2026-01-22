@@ -11,7 +11,7 @@
     // Import LIBS
     const { execSync, execFileSync } = require('child_process'), // for --version cmd + cross-platform copying
           fs = require('fs'),
-          geo = require(`./geolocate${ env.devMode ? '' : '.min' }.js`),
+          geo = require(`./${app.name.split('/').reverse()[0]}${ env.devMode ? '' : '.min' }.js`),
           path = require('path')
 
     // Init UI COLORS
