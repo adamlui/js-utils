@@ -7,11 +7,13 @@ const fs = require('fs'),
       path = require('path'),
       uglifyJS = require('uglify-js')
 
+globalThis.app = require(path.join(__dirname, `${ __dirname.match(/src/) ? '../' : '' }app.json`))
+
 // Define API functions
 
 function findJS(searchDir, options = {}) {
 
-    const docURL = 'https://github.com/adamlui/minify.js/tree/main/node.js/docs/#findjssearchdir-options',
+    const docURL = `${app.urls.docs}/#findjssearchdir-options`,
           exampleCall = `findJS('assets/js', { verbose: false, dotFoldes: true })`,
           logPrefix = 'findJS() » '
 
@@ -77,7 +79,7 @@ function findJS(searchDir, options = {}) {
 
 function minify(input, options = {}) {
 
-    const docURL = 'https://github.com/adamlui/minify.js/tree/main/node.js/docs/#minifyinput-options',
+    const docURL = `${app.urls.docs}/#minifyinput-options`,
           exampleCall = `minify('assets/js', { recursive: false, mangle: false })`,
           logPrefix = 'minify() » '
 

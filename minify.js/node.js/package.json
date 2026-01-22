@@ -30,6 +30,7 @@
   "main": "dist/minify.min.js",
   "files": [
     "docs/",
+    "app.json",
     "!docs/*/"
   ],
   "bin": {

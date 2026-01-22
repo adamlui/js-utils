@@ -1,0 +1,14 @@
+{
+  "name": "@adamlui/minify.js",
+  "copyright": "© 2024–2026 Adam Lui & contributors under the MIT license.",
+  "cmdFormat": "minify-js [inputPath] [outputPath] [options]",
+  "urls": {
+    "docs": "https://github.com/adamlui/minify.js/tree/main/node.js/docs",
+    "github": "https://github.com/adamlui/minify.js",
+    "jsdelivr": "https://cdn.jsdelivr.net/gh/adamlui/minify.js",
+    "src": "https://github.com/adamlui/minify.js/tree/main/node.js/src"
+  },
+  "commitHashes": {
+    "locales": "589eb64"
+  }
+}
