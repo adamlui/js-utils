@@ -168,7 +168,7 @@
                     + ` failed to compile:${nc}`)
                 failedPaths.forEach(path => printIfNotQuiet(path))
             }
-            if (compileData?.length == 0) process.exit(0)
+            if (!compileData?.length) process.exit(0)
 
             // Copy single result code to clipboard if --copy passed
             if (app.config.copy && compileData?.length == 1) {

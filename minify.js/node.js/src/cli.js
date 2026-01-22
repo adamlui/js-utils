@@ -212,7 +212,7 @@
                 )
                 failedPaths.forEach(path => printIfNotQuiet(path))
             }
-            if (minifyData?.length == 0) return
+            if (!minifyData?.length) return
 
             // Copy single result code to clipboard if --copy passed
             if (app.config.copy && minifyData?.length == 1) {
