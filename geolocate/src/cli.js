@@ -8,7 +8,8 @@
     globalThis.app = require(`${ env.devMode ? '..' : '.' }/app.json`)
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
     app.regex = {
-        flags: { 'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/ },
+        flags: {
+            'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/ },
         infoCmds: {
             'help': /^--?h(?:elp)?$/,
             'version': /^--?ve?r?s?i?o?n?$/

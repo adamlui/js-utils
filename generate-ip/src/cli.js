@@ -8,7 +8,8 @@
     globalThis.app = require(`${ env.devMode ? '..' : '.' }/app.json`)
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
     app.regex = {
-        paramOptions: { 'qty': /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
+        paramOptions: {
+            'qty': /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
         flags: {
             'ipv6mode': /^--?(?:ip)?v?6(?:-?mode)?$/,
             'macMode': /^--?m(?:ac)?(?:-?mode)?$/,
