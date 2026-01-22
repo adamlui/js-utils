@@ -213,7 +213,12 @@
     function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
         const appPrefix = `\x1b[106m\x1b[30m ${app.name.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
         const helpSections = {
-            header: [`\n├ ${appPrefix}${app.copyright}`, `${appPrefix}Source: ${app.urls.src}`],
+            header: [
+                `\n├ ${appPrefix}© ${
+                    app.creationYear}–${new Date().getFullYear()} ${
+                    app.author} under the ${app.license} license.`,
+                `${appPrefix}Source: ${app.urls.src}`
+            ],
             usage: [`\n${bw}o Usage:${nc}`, ` ${bw}» ${bg}${app.cmdFormat}${nc}`],
             pathArgs: [
                 `\n${bw}o Path arguments:${nc}`,

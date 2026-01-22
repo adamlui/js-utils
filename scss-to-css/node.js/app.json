@@ -1,6 +1,8 @@
 {
   "name": "@adamlui/scss-to-css",
-  "copyright": "© 2024–2026 Adam Lui & contributors under the MIT license.",
+  "author": "Adam Lui & contributors",
+  "license": "MIT",
+  "creationYear": 2024,
   "cmdFormat": "scss-to-css [inputPath] [outputPath] [options]",
   "urls": {
     "docs": "https://github.com/adamlui/scss-to-css/tree/main/node.js/docs",
