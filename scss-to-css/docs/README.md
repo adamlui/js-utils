@@ -174,16 +174,16 @@ scss-to-css input_folder output_folder
 
 ### Boolean Options
 
-| Option                    | Description                                                     |
-| ------------------------- | --------------------------------------------------------------- |
-| `-n, --dry-run`           | Don't compile, just show which files will be processed          |
-| `-d, --include-dotfolders`| Include dotfolders in file search                               |
-| `-S, --no-source-maps`    | Prevent source map generation                                   |
-| `-M, --no-minify`         | Disable CSS minification                                        |
-| `-R, --no-recursion`      | Disable recursive file searching                                |
-| `-C, --clone-folders`     | Preserve folder structure in output directory                   |
-| `-c, --copy`              | Copy to clipboard instead of writing to file (single file only) |
-| `-q, --quiet`             | Suppress all logging except errors                              |
+| Option                    | Description                                                        |
+| ------------------------- | ------------------------------------------------------------------ |
+| `-n, --dry-run`           | Don't compile, just show which files will be processed             |
+| `-d, --include-dotfolders`| Include dotfolders in file search                                  |
+| `-S, --no-source-maps`    | Prevent source map generation                                      |
+| `-M, --no-minify`         | Disable CSS minification                                           |
+| `-R, --no-recursion`      | Disable recursive file searching                                   |
+| `-r, --relative-output`   | Output files relative to each source file instead of to input root |
+| `-c, --copy`              | Copy to clipboard instead of writing to file (single file only)    |
+| `-q, --quiet`             | Suppress all logging except errors                                 |
 
 ### Parameter Options
 
@@ -264,16 +264,16 @@ console.log(results[1].code) // Compiled CSS from 2nd file
 scssToCSS.compile(inputDir, { minify: false })
 ```
 
-| Option         | Type    | Description                                          | Default |
-| -------------- | ------- | ---------------------------------------------------- | ------- |
-| `recursive`    | Boolean | Recursively search for nested files                  | `true`  |
-| `verbose`      | Boolean | Show logging in console/terminal                     | `true`  |
-| `dotFolders`   | Boolean | Include dotfolders in file search                    | `false` |
-| `minify`       | Boolean | Minify output CSS                                    | `true`  |
-| `sourceMaps`   | Boolean | Generate CSS source maps                             | `true`  |
-| `cloneFolders` | Boolean | Preserve folder structure in output dir.             | `false` |
-| `ignoreFiles`  | Array   | Files (by name) to exclude from compilation          | `[]`    |
-| `comment`      | String  | Header comment to prepend (use `\n` for line breaks) | `''`    |
+| Option           | Type    | Description                                                        | Default |
+| ---------------- | ------- | ------------------------------------------------------------------ | ------- |
+| `recursive`      | Boolean | Recursively search for nested files                                | `true`  |
+| `verbose`        | Boolean | Show logging in console/terminal                                   | `true`  |
+| `dotFolders`     | Boolean | Include dotfolders in file search                                  | `false` |
+| `minify`         | Boolean | Minify output CSS                                                  | `true`  |
+| `sourceMaps`     | Boolean | Generate CSS source maps                                           | `true`  |
+| `relativeOutput` | Boolean | Output files relative to each source file instead of to input root | `false` |
+| `ignoreFiles`    | Array   | FIles/directories to exclude from compilation                      | `[]`    |
+| `comment`        | String  | Header comment to prepend (use `\n` for line breaks)               | `''`    |
 
 ---
 

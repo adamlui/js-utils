@@ -91,7 +91,7 @@ $ scss-to-css [eingabepfad] [ausgabepfad]
 ```
 
 - `[eingabepfad]`: Pfad zur SCSS-Datei oder zum Verzeichnis, das die zu kompilierenden SCSS-Dateien enthält, relativ zum aktuellen Arbeitsverzeichnis.
-- `[ausgabepfad]`: Pfad zur Datei oder zum Verzeichnis, in dem CSS- und Quellzuordnungsdateien gespeichert werden, relativ zum ursprünglichen Dateispeicherort (falls nicht angegeben, wird `css/` verwendet).
+- `[ausgabepfad]`: Pfad zur Datei oder zum Verzeichnis, in dem die CSS- und Source-Map-Dateien gespeichert werden (relativ zum Eingabeverzeichnis). Falls nicht angegeben, wird `css/` verwendet.
 
 **📝 Hinweis:** Wenn Ordner übergeben werden, werden Dateien rekursiv verarbeitet, es sei denn, `-R` oder `--no-recursion` wird übergeben.
 
@@ -117,13 +117,13 @@ Kompilieren Sie alle SCSS-Dateien im **aktuellen Verzeichnis** (Ausgaben nach `c
 $ scss-to-css
 ```
 
-Kompilieren Sie alle SCSS-Dateien in einem **bestimmten Verzeichnis** (Ausgaben in `pfad/zu/ihrem/verzeichnis/css/`):
+Kompilieren Sie alle SCSS-Dateien in einem **bestimmten Verzeichnis** (Ausgaben in `css/pfad/zu/ihrem/verzeichnis/`):
 
 ```
 $ scss-to-css pfad/zu/ihrem/verzeichnis
 ```
 
-Kompilieren Sie eine **spezifische Datei** (Ausgaben in `pfad/zu/ihrem/css/datei.min.css`):
+Kompilieren Sie eine **spezifische Datei** (Ausgaben in `css/pfad/zu/ihrem/datei.min.css`):
 
 ```
 $ scss-to-css pfad/zu/ihrem/datei.scss
@@ -148,7 +148,7 @@ Boolesche Optionen:
  -S, --no-source-maps                     Verhindern Sie, dass Quellkarten generiert werden.
  -M, --no-minify                          Deaktivieren Sie die Minimierung des Ausgabe-CSS.
  -R, --no-recursion                       Deaktivieren Sie die rekursive Dateisuche.
- -C, --clone-folders                      Ordnerstruktur im Ausgabeverzeichnis beibehalten.
+ -r, --relative-output                    Ausgabedateien werden relativ zu jeder Quelldatei anstatt zum Eingabeverzeichnis erstellt.
  -c, --copy                               Kopieren Sie kompiliertes CSS in die Zwischenablage, anstatt in eine Datei zu schreiben, wenn eine einzelne Quelldatei verarbeitet wird.
  -q, --quiet                              Unterdrücken Sie alle Protokolle außer Fehlern.
 
@@ -221,16 +221,16 @@ scssToCSS.compile(eingangVer, { minify: false })
 
 Verfügbare Parameter (und ihre Standardeinstellungen) sind:
 
-Name           | Typ             | Beschreibung                                                                                 | Standardwert
----------------|-----------------|----------------------------------------------------------------------------------------------|--------------
-`recursive`    | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird.       | `true`
-`verbose`      | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                                      | `true`
-`dotFolders`   | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                              | `false`
-`minify`       | Boolescher Wert | Ausgabe-CSS minimieren.                                                                      | `true`
-`sourceMaps`   | Boolescher Wert | Generieren Sie CSS-Quellkarten.                                                              | `true`
-`cloneFolders` | Boolescher Wert | Ordnerstruktur im Ausgabeverzeichnis beibehalten.                                            | `false`
-`ignores`      | Array           | Dateien/Verzeichnisse, die von der Kompilierung ausgeschlossen werden sollen.                | `[]`
-`comment`      | Zeichenfolge    | Header-Kommentar, der dem kompilierten CSS vorangestellt wird. Mit '\n' zeilenweise trennen. | `''`
+Name             | Typ             | Beschreibung                                                                                 | Standardwert
+-----------------|-----------------|----------------------------------------------------------------------------------------------|--------------
+`recursive`      | Boolescher Wert | Rekursive Suche nach verschachtelten Dateien, wenn der Verzeichnispfad übergeben wird.       | `true`
+`verbose`        | Boolescher Wert | Anmeldung in Konsole/Terminal anzeigen.                                                      | `true`
+`dotFolders`     | Boolescher Wert | Beziehen Sie Punktordner in die Dateisuche ein.                                              | `false`
+`minify`         | Boolescher Wert | Ausgabe-CSS minimieren.                                                                      | `true`
+`sourceMaps`     | Boolescher Wert | Generieren Sie CSS-Quellkarten.                                                              | `true`
+`relativeOutput` | Boolescher Wert | Ausgabedateien werden relativ zu jeder Quelldatei anstatt zum Eingabeverzeichnis erstellt.   | `false`
+`ignores`        | Array           | Dateien/Verzeichnisse, die von der Kompilierung ausgeschlossen werden sollen.                | `[]`
+`comment`        | Zeichenfolge    | Header-Kommentar, der dem kompilierten CSS vorangestellt wird. Mit '\n' zeilenweise trennen. | `''`
 
 #
 

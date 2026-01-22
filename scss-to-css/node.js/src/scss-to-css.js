@@ -80,14 +80,14 @@ function compile(input, options = {}) {
           logPrefix = 'compile() » '
 
     const defaultOptions = {
-        recursive: true,     // recursively search for nested files if dir path passed
-        verbose: true,       // enable logging
-        dotFolders: false,   // include dotfolders in file search
-        minify: true,        // minify output CSS
-        sourceMaps: true,    // generate CSS source maps
-        cloneFolders: false, // preserve folder structure in output dir
-        ignores: [],         // files/dirs to exclude from compilation
-        comment: ''          // header comment to prepend to compiled CSS
+        recursive: true,       // recursively search for nested files if dir path passed
+        verbose: true,         // enable logging
+        dotFolders: false,     // include dotfolders in file search
+        minify: true,          // minify output CSS
+        sourceMaps: true,      // generate CSS source maps
+        relativeOutput: false, // output files relative to each source file instead of to input root
+        ignores: [],           // files/dirs to exclude from compilation
+        comment: ''            // header comment to prepend to compiled CSS
     }
 
     // Validate input
@@ -130,7 +130,7 @@ function compile(input, options = {}) {
                 try { // to compile found file
                     const compileResult = sass.compile(scssPath, compileOptions)
                     let relPath
-                    if (options.cloneFolders) relPath = path.relative(path.resolve(process.cwd(), input), scssPath)
+                    if (!options.relativeOutput) relPath = path.relative(path.resolve(process.cwd(), input), scssPath)
                     if (options.comment) compileResult.css = prependComment(compileResult.css, options.comment)
                     return {
                         code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: scssPath, relPath,

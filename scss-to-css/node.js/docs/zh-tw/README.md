@@ -91,7 +91,7 @@ $ scss-to-css [input_path] [output_path]
 ```
 
 - `[input_path]`: SCSS 檔案或包含要編譯的 SCSS 檔案的目錄的路徑，相對於目前工作目錄。
-- `[output_path]`: 將儲存 CSS + 來源對應檔案的檔案或目錄的路徑，相對於原始檔案位置（如果未提供，則使用 `css/`）。
+- `[output_path]`：CSS 檔案和來源對應檔案將儲存在此檔案或目錄中的路徑，相對於輸入根目錄（如果未提供，則使用 `css/`）。
 
 **📝 注意:** 如果傳遞資料夾，檔案將被遞歸處理，除非傳遞 `-R` 或 `--no-recursion`。
 
@@ -117,13 +117,13 @@ $ scss-to-css [input_path] [output_path]
 $ scss-to-css
 ```
 
-編譯 **特定目錄** 中的所有 SCSS 檔案（輸出到 `path/to/your/directory/css/`）：
+編譯 **特定目錄** 中的所有 SCSS 檔案（輸出到 `css/path/to/your/directory/`）：
 
 ```
 $ scss-to-css path/to/your/directory
 ```
 
-編譯一個**特定檔案**（輸出到 `path/to/your/css/file.min.css`）：
+編譯一個**特定檔案**（輸出到 `css/path/to/your/file.min.css`）：
 
 ```
 $ scss-to-css path/to/your/file.scss
@@ -148,7 +148,7 @@ $ scss-to-css input_folder output_folder
  -S, --no-source-maps                     防止產生來源映射。
  -M, --no-minify                          禁用輸出 CSS 的縮小。
  -R, --no-recursion                       停用遞歸檔案搜尋。
- -C, --clone-folders                      保留輸出目錄中的資料夾結構。
+ -r, --relative-output                    輸出檔案相對於每個來源檔案的位置，而不是相對於輸入根目錄的位置。
  -c, --copy                               如果處理單一原始文件，則將編譯後的 CSS 複製到剪貼簿，而不是寫入檔案。
  -q, --quiet                              禁止錯誤以外的所有日誌記錄。
 
@@ -221,16 +221,16 @@ scssToCSS.compile(inputDir, { minify: false })
 
 可用的參數（及其預設設定）是：
 
-姓名           | 類型    | 描述                                              | 預設值
----------------|--------|---------------------------------------------------|--------
-`recursive`    | 布林值 | 如果傳遞目錄路徑，則遞歸搜尋巢狀檔案。                | `true`
-`verbose`      | 布林值 | 在控制台/終端機中顯示日誌記錄。                      | `true`
-`dotFolders`   | 布林值 | 在檔案搜尋中包含點資料夾。                           | `false`
-`minify`       | 布林值 | 縮小輸出 CSS。                                      | `true`
-`sourceMaps`   | 布林值 | 產生 CSS 來源映射。                                 | `true`
-`cloneFolders` | 布林值 | 保留輸出目錄中的資料夾結構。                         | `false`
-`ignores`      | 大批   | 要從編譯中排除的檔案/目錄。                          | `[]`
-`comment`      | 字串   | 新增到已編譯 CSS 前面的標頭註解。使用 '\n' 按行分隔。 | `''`
+姓名             | 類型    | 描述                                                        | 預設值
+-----------------|--------|-------------------------------------------------------------|--------
+`recursive`      | 布林值 | 如果傳遞目錄路徑，則遞歸搜尋巢狀檔案。                          | `true`
+`verbose`        | 布林值 | 在控制台/終端機中顯示日誌記錄。                                | `true`
+`dotFolders`     | 布林值 | 在檔案搜尋中包含點資料夾。                                     | `false`
+`minify`         | 布林值 | 縮小輸出 CSS。                                               | `true`
+`sourceMaps`     | 布林值 | 產生 CSS 來源映射。                                          | `true`
+`relativeOutput` | 布林值 | 輸出檔案相對於每個來源檔案的位置，而不是相對於輸入根目錄的位置。 | `false`
+`ignores`        | 大批   | 要從編譯中排除的檔案/目錄。                                   | `[]`
+`comment`        | 字串   | 新增到已編譯 CSS 前面的標頭註解。使用 '\n' 按行分隔。           | `''`
 
 #
 

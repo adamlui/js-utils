@@ -93,7 +93,7 @@ $ scss-to-css [input_path] [output_path]
 ```
 
 - `[input_path]`: Path to SCSS file or directory containing SCSS files to be compiled, relative to the current working directory.
-- `[output_path]`: Path to file or directory where CSS + source map files will be stored, relative to original file location (if not provided, `css/` is used).
+- `[output_path]`: Path to file or directory where CSS + source map files will be stored, relative to input root (if not provided, `css/` is used).
 
 **📝 Note:** If folders are passed, files will be processed recursively unless `-R` or `--no-recursion` is passed.
 
@@ -119,13 +119,13 @@ Compile all SCSS files in the **current directory** (outputs to `css/`):
 $ scss-to-css
 ```
 
-Compile all SCSS files in a **specific directory** (outputs to `path/to/your/directory/css/`):
+Compile all SCSS files in a **specific directory** (outputs to `css/path/to/your/directory/`):
 
 ```
 $ scss-to-css path/to/your/directory
 ```
 
-Compile a **specific file** (outputs to `path/to/your/css/file.min.css`):
+Compile a **specific file** (outputs to `css/path/to/your/file.min.css`):
 
 ```
 $ scss-to-css path/to/your/file.scss
@@ -151,7 +151,7 @@ Boolean options:
  -S, --no-source-maps        Prevent source maps from being generated.
  -M, --no-minify             Disable minification of output CSS.
  -R, --no-recursion          Disable recursive file searching.
- -C, --clone-folders         Preserve folder structure in output directory.
+ -r, --relative-output       Output files relative to each source file instead of to input root.
  -c, --copy                  Copy compiled CSS to clipboard instead of
                              writing to file if single source file is
                              processed.
@@ -228,16 +228,16 @@ scssToCSS.compile(inputDir, { minify: false })
 
 Available parameters (and their default settings) are:
 
-Name           | Type    | Desciption                                                              | Default value
----------------|---------|-------------------------------------------------------------------------|---------------
-`recursive`    | Boolean | Recursively search for nested files if dir path passed.                 | `true`
-`verbose`      | Boolean | Show logging in console/terminal.                                       | `true`
-`dotFolders`   | Boolean | Include dotfolders in file search.                                      | `false`
-`minify`       | Boolean | Minify output CSS.                                                      | `true`
-`sourceMaps`   | Boolean | Generate CSS source maps.                                               | `true`
-`cloneFolders` | Boolean | Preserve folder structure in output dir.                                | `false`
-`ignores`      | Array   | Files/dirs to exclude from compilation.                                 | `[]`
-`comment`      | String  | Header comment to prepend to compiled CSS. Separate by line using '\n'. | `''`
+Name             | Type    | Desciption                                                              | Default value
+-----------------|---------|-------------------------------------------------------------------------|---------------
+`recursive`      | Boolean | Recursively search for nested files if dir path passed.                 | `true`
+`verbose`        | Boolean | Show logging in console/terminal.                                       | `true`
+`dotFolders`     | Boolean | Include dotfolders in file search.                                      | `false`
+`minify`         | Boolean | Minify output CSS.                                                      | `true`
+`sourceMaps`     | Boolean | Generate CSS source maps.                                               | `true`
+`relativeOutput` | Boolean | Output files relative to each source file instead of to input root.     | `false`
+`ignores`        | Array   | Files/dirs to exclude from compilation.                                 | `[]`
+`comment`        | String  | Header comment to prepend to compiled CSS. Separate by line using '\n'. | `''`
 
 #
 

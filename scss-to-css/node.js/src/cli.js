@@ -31,7 +31,7 @@
             'noSourceMaps': /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?|so?u?rce?-?maps?=(?:false|0))$/,
             'noRecursion': /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
             'noMinify': /^--?(?:M|(?:disable|no)-?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/,
-            'cloneFolders': /^--?(?:C|clone-?folders?=?(?:true|1)?)$/,
+            'relativeOutput': /^--?(?:r|relative-?output?=?(?:true|1)?)$/,
             'copy': /^--?c(?:opy)?$/,
             'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
         },
@@ -120,11 +120,12 @@
 
             // Build array of compilation data
             const failedPaths = [] ; let compileData = []
-            if (config.cloneFolders && fs.statSync(inputPath).isDirectory()) {
+            if (!config.relativeOutput && fs.statSync(inputPath).isDirectory()) {
                 const compileResult = scssToCSS.compile(inputPath, {
                     verbose: !config.quietMode, minify: !config.noMinify,
-                    comment: config.comment?.replace(/\\n/g, '\n'), cloneFolders: true, recursive: !config.noRecursion,
-                    dotFolders: !!config.includeDotFolders, sourceMaps: !config.noSourceMaps,
+                    comment: config.comment?.replace(/\\n/g, '\n'), relativeOutput: false,
+                    recursive: !config.noRecursion, dotFolders: !!config.includeDotFolders,
+                    sourceMaps: !config.noSourceMaps,
                     ignores: config.ignores ? config.ignores.split(',').map(item => item.trim()) : []
                 })
                 if (Array.isArray(compileResult)) compileData = compileResult
@@ -167,18 +168,16 @@
                 printIfNotQuiet(`\nWriting to file${ compileData?.length > 1 ? 's' : '' }...`)
                 compileData?.forEach(({ code, srcMap, srcPath, relPath }) => {
                     let outputDir, outputFilename
-                    if (config.cloneFolders && relPath && outputArg) { // preserve folder structure
-                        const outputPath = path.resolve(process.cwd(), outputArg),
+                    if (!config.relativeOutput && relPath) { // preserve folder structure
+                        const outputPath = path.resolve(process.cwd(), outputArg || 'css'),
                               relativeDir = path.dirname(relPath)
                         outputDir = relativeDir != '.' ? path.join(outputPath, relativeDir) : outputPath
                         outputFilename = path.basename(srcPath, '.scss') + `${ config.noMinify ? '' : '.min' }.css`
                     } else {
                         outputDir = path.join(
-                        path.dirname(srcPath), // path of file to be minified
-                            /(?:src|s[ac]ss)$/.test(path.dirname(srcPath)) ? (
-                                '../' +( outputArg || 'css' ) // + ../outputArg|css/ if in *(src|sass|scss)/
-                            ) : outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
-                              : outputArg || 'css' // or path from folder outputArg or css/ if no outputArg passed
+                            path.dirname(srcPath), // path of file to be minified
+                            outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
+                                : outputArg || 'css' // or path from folder outputArg or css/ if no outputArg passed
                         )
                         outputFilename = (
                             outputArg.endsWith('.css') && inputArg.endsWith('.scss')
@@ -211,7 +210,7 @@
                     + ' relative to the current working directory.',
                 ' [outputPath]                            '
                     + 'Path to file or directory where CSS + sourcemap files will be stored,'
-                    + ' relative to original file location (if not provided, css/ is used).'
+                    + ' relative to input root (if not provided, css/ is used).'
             ],
             'flags': [
                 `\n${bw}o Boolean options:${nc}`,
@@ -221,7 +220,7 @@
                 ' -S, --no-source-maps                    Prevent source maps from being generated.',
                 ' -M, --no-minify                         Disable minification of output CSS.',
                 ' -R, --no-recursion                      Disable recursive file searching.',
-                ' -C, --clone-folders                     Preserve folder structure in output directory.',
+                ' -r, --relative-output                   Output files relative to each source file instead of to input root.',
                 ' -c, --copy                              Copy compiled CSS to clipboard instead of writing to file'
                                                         + ' if single source file is processed.',
                 ' -q, --quiet                             Suppress all logging except errors.'

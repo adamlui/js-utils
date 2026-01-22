@@ -91,7 +91,7 @@ $ scss-to-css [chemin_entrée] [chemin_sortie]
 ```
 
 - `[chemin_entrée]`: Chemin d'accès au fichier SCSS ou au répertoire contenant les fichiers SCSS à compiler, par rapport au répertoire de travail actuel.
-- `[chemin_sortie]`: Chemin d'accès au fichier ou au répertoire où les fichiers de carte CSS + source seront stockés, par rapport à l'emplacement du fichier d'origine (s'il n'est pas fourni, `css/` est utilisé).
+- `[chemin_sortie]`: Chemin d'accès au fichier ou au répertoire où seront stockés les fichiers CSS et les fichiers de mappage source, par rapport au répertoire racine d'entrée (si non spécifié, le répertoire `css/` est utilisé).
 
 **📝 Remarque:** Si des dossiers sont transmis, les fichiers seront traités de manière récursive à moins que `-R` ou `--no-recursion` soit transmis.
 
@@ -117,13 +117,13 @@ Compilez tous les fichiers SCSS dans le **répertoire actuel** (sorties vers `cs
 $ scss-to-css
 ```
 
-Compilez tous les fichiers SCSS dans un **répertoire spécifique** (sorties vers `chemin/vers/votre/répertoire/css/`):
+Compilez tous les fichiers SCSS dans un **répertoire spécifique** (sorties vers `css/chemin/vers/votre/répertoire/`):
 
 ```
 $ scss-to-css chemin/vers/votre/répertoire
 ```
 
-Compilez un **fichier spécifique** (sorties vers `chemin/vers/votre/css/fichier.min.css`):
+Compilez un **fichier spécifique** (sorties vers `css/chemin/vers/votre/fichier.min.css`):
 
 ```
 $ scss-to-css chemin/vers/votre/fichier.scss
@@ -148,7 +148,7 @@ Options booléennes:
  -S, --no-source-maps                     Empêcher la génération de mappages sources.
  -M, --no-minify                          Désactivez la minification du CSS de sortie.
  -R, --no-recursion                       Désactivez la recherche récursive de fichiers.
- -C, --clone-folders                      Conserver la structure des dossiers dans le répertoire de sortie.
+ -r, --relative-output                    Les fichiers de sortie sont générés par rapport à chaque fichier source, et non par rapport au répertoire racine d'entrée.
  -c, --copy                               Copiez le CSS compilé dans le presse-papiers au lieu d'écrire dans un fichier si un fichier source unique est traité.
  -q, --quiet                              Supprime toute la journalisation, à l'exception des erreurs.
 
@@ -221,16 +221,16 @@ scssToCSS.compile(répEntrée, { minify: false })
 
 Les paramètres disponibles (et leurs paramètres par défaut) sont:
 
-Nom            | Taper   | Description                                                                              | Valeur par défaut
----------------|---------|------------------------------------------------------------------------------------------|-------------------
-`recursive`    | Booléen | Rechercher récursivement les fichiers imbriqués si le chemin du répertoire est transmis. | `true`
-`verbose`      | Booléen | Afficher la connexion dans la console/terminal.                                          | `true`
-`dotFolders`   | Booléen | Inclure les dossiers cachés dans la recherche de fichiers.                               | `false`
-`minify`       | Booléen | Réduire la sortie CSS.                                                                   | `true`
-`sourceMaps`   | Booléen | Générer des cartes sources CSS.                                                          | `true`
-`cloneFolders` | Booléen | Conserver la structure des dossiers dans le répertoire de sortie.                        | `false`
-`ignores`      | Tableau | Fichiers/répertoires à exclure de la compilation.                                        | `[]`
-`comment`      | Chaîne  | Commentaire d’en-tête à ajouter au CSS compilé. Séparez par ligne en utilisant '\n'.     | `''`
+Nom              | Taper   | Description                                                                                                                | Valeur par défaut
+-----------------|---------|----------------------------------------------------------------------------------------------------------------------------|-------------------
+`recursive`      | Booléen | Rechercher récursivement les fichiers imbriqués si le chemin du répertoire est transmis.                                   | `true`
+`verbose`        | Booléen | Afficher la connexion dans la console/terminal.                                                                            | `true`
+`dotFolders`     | Booléen | Inclure les dossiers cachés dans la recherche de fichiers.                                                                 | `false`
+`minify`         | Booléen | Réduire la sortie CSS.                                                                                                     | `true`
+`sourceMaps`     | Booléen | Générer des cartes sources CSS.                                                                                            | `true`
+`relativeOutput` | Booléen | Les fichiers de sortie sont générés par rapport à chaque fichier source, et non par rapport au répertoire racine d'entrée. | `false`
+`ignores`        | Tableau | Fichiers/répertoires à exclure de la compilation.                                                                          | `[]`
+`comment`        | Chaîne  | Commentaire d’en-tête à ajouter au CSS compilé. Séparez par ligne en utilisant '\n'.                                       | `''`
 
 #
 

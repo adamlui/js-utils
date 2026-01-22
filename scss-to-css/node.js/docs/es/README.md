@@ -91,7 +91,7 @@ $ scss-to-css [ruta_de_entrada] [ruta_de_salida]
 ```
 
 - `[ruta_de_entrada]`: Ruta al archivo SCSS o al directorio que contiene los archivos SCSS que se van a compilar, en relación con el directorio de trabajo actual.
-- `[ruta_de_salida]`: Ruta al archivo o directorio donde se almacenarán los archivos CSS y de mapas fuente, en relación con la ubicación del archivo original (si no se proporciona, se utiliza `css/`).
+- `[ruta_de_salida]`: Ruta al archivo o directorio donde se almacenarán los archivos CSS y de mapa de origen, en relación con el directorio raíz de entrada (si no se especifica, se utiliza `css/`).
 
 **📝 Nota:** Si se pasan carpetas, los archivos se procesarán de forma recursiva a menos que se pase `-R` o `--no-recursion`.
 
@@ -117,13 +117,13 @@ Compile todos los archivos SCSS en el **directorio actual** (salidas a `css/`):
 $ scss-to-css
 ```
 
-Compile todos los archivos SCSS en un **directorio específico** (salidas a `ruta/a/su/directorio/css/`):
+Compile todos los archivos SCSS en un **directorio específico** (salidas a `css/ruta/a/su/directorio/`):
 
 ```
 $ scss-to-css ruta/a/su/directorio
 ```
 
-Compile un **archivo específico** (salida a `ruta/a/su/css/archivo.min.css`):
+Compile un **archivo específico** (salida a `css/ruta/a/su/archivo.min.css`):
 
 ```
 $ scss-to-css ruta/a/su/archivo.scss
@@ -148,7 +148,7 @@ Opciones booleanas:
  -S, --no-source-maps                     Evitar que se generen mapas de origen.
  -M, --no-minify                          Deshabilite la minificación del CSS de salida.
  -R, --no-recursion                       Deshabilite la búsqueda recursiva de archivos.
- -C, --clone-folders                      Conservar la estructura de carpetas en el directorio de salida.
+ -r, --relative-output                    Los archivos de salida se generan en relación con cada archivo de origen en lugar de con el directorio raíz de entrada.
  -c, --copy                               Copie CSS compilado al portapapeles en lugar de escribir en un archivo si se procesa un único archivo fuente.
  -q, --quiet                              Suprime todos los registros excepto los errores.
 
@@ -221,16 +221,16 @@ scssToCSS.compile(dirEntrada, { minify: false })
 
 Los parámetros disponibles (y sus configuraciones predeterminadas) son:
 
-Nombre         | Tipo      | Descripción                                                                             | Valor por defecto
----------------|-----------|-----------------------------------------------------------------------------------------|-------------------
-`recursive`    | Booleano  | Busque recursivamente archivos anidados si se pasa la ruta del directorio.              | `true`
-`verbose`      | Booleano  | Mostrar registros en la consola/terminal.                                               | `true`
-`dotFolders`   | Booleano  | Incluir carpetas de puntos en la búsqueda de archivos.                                  | `false`
-`minify`       | Booleano  | Minimizar CSS de salida.                                                                | `true`
-`sourceMaps`   | Booleano  | Generar mapas fuente CSS.                                                               | `true`
-`cloneFolders` | Booleano  | Conservar la estructura de carpetas en el directorio de salida.                         | `false`
-`ignores`      | Formación | Archivos/directorios que se excluirán de la compilación.                                | `[]`
-`comment`      | Cadena    | Comentario de encabezado para anteponer al CSS compilado. Separe por línea usando '\n'. | `''`
+Nombre           | Tipo      | Descripción                                                                                                             | Valor por defecto
+-----------------|-----------|-------------------------------------------------------------------------------------------------------------------------|-------------------
+`recursive`      | Booleano  | Busque recursivamente archivos anidados si se pasa la ruta del directorio.                                              | `true`
+`verbose`        | Booleano  | Mostrar registros en la consola/terminal.                                                                               | `true`
+`dotFolders`     | Booleano  | Incluir carpetas de puntos en la búsqueda de archivos.                                                                  | `false`
+`minify`         | Booleano  | Minimizar CSS de salida.                                                                                                | `true`
+`sourceMaps`     | Booleano  | Generar mapas fuente CSS.                                                                                               | `true`
+`relativeOutput` | Booleano  | Los archivos de salida se generan en relación con cada archivo de origen en lugar de con el directorio raíz de entrada. | `false`
+`ignores`        | Formación | Archivos/directorios que se excluirán de la compilación.                                                                | `[]`
+`comment`        | Cadena    | Comentario de encabezado para anteponer al CSS compilado. Separe por línea usando '\n'.                                 | `''`
 
 #
 

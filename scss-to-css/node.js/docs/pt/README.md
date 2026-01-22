@@ -91,7 +91,7 @@ $ scss-to-css [caminho_de_entrada] [caminho_de_saída]
 ```
 
 - `[caminho_de_entrada]`: Caminho para o arquivo SCSS ou diretório que contém os arquivos SCSS a serem compilados, relativo ao diretório de trabalho atual.
-- `[caminho_de_saída]`: Caminho para o arquivo ou diretório onde os arquivos de mapa de origem CSS + serão armazenados, relativo ao local do arquivo original (se não for fornecido, `css/` será usado).
+- `[caminho_de_saída]`: Caminho para o ficheiro ou directório onde serão armazenados os ficheiros CSS e de mapa de origem, relativo à raiz de entrada (caso não seja fornecido, será utilizado `css/`).
 
 **📝 Nota:** Se as pastas forem passadas, os arquivos serão processados recursivamente, a menos que `-R` ou `--no-recursion` seja passado.
 
@@ -117,13 +117,13 @@ Compile todos os arquivos SCSS no **diretório atual** (saída para `css/`):
 $ scss-to-css
 ```
 
-Compile todos os arquivos SCSS em um **diretório específico** (saída para `caminho/para/seu/diretório/css/`):
+Compile todos os arquivos SCSS em um **diretório específico** (saída para `css/caminho/para/seu/diretório/`):
 
 ```
 $ scss-to-css caminho/para/seu/diretório
 ```
 
-Compile um **arquivo específico** (saída para `caminho/para/seu/css/arquivo.min.css`):
+Compile um **arquivo específico** (saída para `css/caminho/para/seu/arquivo.min.css`):
 
 ```
 $ scss-to-css caminho/para/seu/arquivo.scss
@@ -148,7 +148,7 @@ Opções booleanas:
  -S, --no-source-maps                     Impedir que mapas de origem sejam gerados.
  -M, --no-minify                          Desative a minificação do CSS de saída.
  -R, --no-recursion                       Desative a pesquisa recursiva de arquivos.
- -C, --clone-folders                      Preservar a estrutura de pastas no diretório de saída.
+ -r, --relative-output                    Os ficheiros de saída são relativos a cada ficheiro de origem, em vez de serem armazenados na raiz de entrada.
  -c, --copy                               Copie o CSS compilado para a área de transferência em vez de gravar no arquivo se um único arquivo de origem for processado.
  -q, --quiet                              Suprima todos os registros, exceto erros.
 
@@ -221,16 +221,16 @@ scssToCSS.compile(dirEntrada, { minify: false })
 
 Os parâmetros disponíveis (e suas configurações padrão) são:
 
-Nome           | Tipo      | Descrição                                                                             | Valor padrão
----------------|-----------|---------------------------------------------------------------------------------------|--------------
-`recursive`    | Boleano   | Pesquise recursivamente por arquivos aninhados se o caminho do diretório for passado. | `true`
-`verbose`      | Boleano   | Mostrar login no console/terminal.                                                    | `true`
-`dotFolders`   | Boleano   | Incluir dotfolders na pesquisa de arquivos.                                           | `false`
-`minify`       | Boleano   | Minimizar CSS de saída.                                                               | `true`
-`sourceMaps`   | Boleano   | Gerar mapas de origem CSS.                                                            | `true`
-`cloneFolders` | Boleano   | Preservar a estrutura de pastas no diretório de saída                                 | `false`
-`ignores`      | Variedade | Ficheiros/diretórios a eliminar da compilação.                                        | `[]`
-`comment`      | Corda     | Comentário de cabeçalho a ser anexado ao CSS compilado. Separe por linha usando '\n'. | `''`
+Nome             | Tipo      | Descrição                                                                                                      | Valor padrão
+-----------------|-----------|----------------------------------------------------------------------------------------------------------------|--------------
+`recursive`      | Boleano   | Pesquise recursivamente por arquivos aninhados se o caminho do diretório for passado.                          | `true`
+`verbose`        | Boleano   | Mostrar login no console/terminal.                                                                             | `true`
+`dotFolders`     | Boleano   | Incluir dotfolders na pesquisa de arquivos.                                                                    | `false`
+`minify`         | Boleano   | Minimizar CSS de saída.                                                                                        | `true`
+`sourceMaps`     | Boleano   | Gerar mapas de origem CSS.                                                                                     | `true`
+`relativeOutput` | Boleano   | Os ficheiros de saída são relativos a cada ficheiro de origem, em vez de serem armazenados na raiz de entrada. | `false`
+`ignores`        | Variedade | Ficheiros/diretórios a eliminar da compilação.                                                                 | `[]`
+`comment`        | Corda     | Comentário de cabeçalho a ser anexado ao CSS compilado. Separe por linha usando '\n'.                          | `''`
 
 #
 
