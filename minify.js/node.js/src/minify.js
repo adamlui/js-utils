@@ -7,7 +7,7 @@ const fs = require('fs'),
       path = require('path'),
       uglifyJS = require('uglify-js')
 
-globalThis.app = require(path.join(__dirname, `${ __dirname.match(/src/) ? '../' : '' }app.json`))
+globalThis.app = require(`${ __dirname.match(/src/) ? '..' : '.' }/app.json`)
 
 // Define API functions
 
