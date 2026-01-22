@@ -109,7 +109,7 @@ function compile(input, options = {}) {
         charset: false // prevent UTF-8 BOM in output
     }
     if (fs.existsSync(input)) { // compile based on path arg
-        if (input.endsWith('.scss')) { // file path passed
+        if (input.endsWith('.scss') && fs.statSync(input).isFile()) { // file path passed
             if (options.verbose) console.info(`${logPrefix}** Compiling ${input}...`)
             try { // to compile file passed
                 const compileResult = sass.compile(input, compileOptions)
