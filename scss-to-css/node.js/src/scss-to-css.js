@@ -125,10 +125,7 @@ function compile(input, options = {}) {
                 return { code: undefined, srcMap: undefined, srcPath: undefined, error: err }
             }
         } else { // dir path passed
-            const compileResult = findSCSS(input, {
-                recursive: options.recursive, verbose: options.verbose, dotFolders: options.dotFolders,
-                ignores: options.ignores
-            })?.map(scssPath => { // compile found SCSS files
+            const compileResult = findSCSS(input, options)?.map(scssPath => { // compile found SCSS files
                 if (options.verbose) console.info(`${logPrefix}** Compiling ${scssPath}...`)
                 try { // to compile found file
                     const compileResult = sass.compile(scssPath, compileOptions)
@@ -212,8 +209,7 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     }
     for (const key in options) { // validate each key
         if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
-            console.error(`${logPrefix}ERROR: \`${key}\` is an invalid option.`)
-            printValidOptions() ; printDocURL() ; return false
+            continue // to next key due to unused option
         } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
             console.error(`${logPrefix}ERROR: [${key}] option can only be \`true\` or \`false\`.`)
             printDocURL() ; return false
