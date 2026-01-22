@@ -3,7 +3,10 @@
 (async () => {
     'use strict'
 
+    // Init DATA
     globalThis.env = { langCode: 'en', devMode: __dirname.match(/src/) }
+    globalThis.app = require(`${ env.devMode ? '..' : '.' }/app.json`)
+    app.config = {} ; app.urls.docs += '/#-command-line-usage'
 
     // Import LIBS
     const { execSync } = require('child_process'), // for --version cmd
@@ -11,10 +14,6 @@
           minifyJS = require(`./minify${ env.devMode ? '' : '.min' }.js`),
           ncp = require('node-clipboardy'), // for --copy flag
           path = require('path')
-
-    // Init APP data
-    globalThis.app = require(`${ env.devMode ? '..' : '.' }/app.json`)
-    app.config = {} ; app.urls.docs += '/#-command-line-usage'
 
     // Init UI COLORS
     const nc = '\x1b[0m',    // no color
@@ -24,13 +23,13 @@
           bw = '\x1b[1;97m'  // bright white
 
     // Init sys LANGUAGE
-    if (process.platform == 'win32') {
+    if (process.platform == 'win32')
         try {
             env.langCode = execSync(
                 '(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' }
             ).trim()
         } catch (err) { console.error('ERROR loading system language:', err.message) }
-    } else { // macOS/Linux
+    else { // macOS/Linux
         const pe = process.env
         env.langCode = (pe.LANG || pe.LANGUAGE || pe.LC_ALL || pe.LC_MESSAGES || pe.LC_NAME || 'en')?.split('.')[0]
     }

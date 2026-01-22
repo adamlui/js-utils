@@ -3,7 +3,10 @@
 (() => {
     'use strict'
 
+    // Init DATA
     globalThis.env = { devMode: __dirname.match(/src/) }
+    globalThis.app = require(`${ env.devMode ? '..' : '.' }/app.json`)
+    app.config = {} ; app.urls.docs += '/#-command-line-usage'
 
     // Import LIBS
     const { execSync } = require('child_process'), // for --version cmd
@@ -11,10 +14,6 @@
           ncp = require('node-clipboardy'), // for --copy flag
           path = require('path'),
           scssToCSS = require(`./scss-to-css${ env.devMode ? '' : '.min' }.js`)
-
-    // Init APP data
-    globalThis.app = require(`${ env.devMode ? '..' : '.' }/app.json`)
-    app.config = {} ; app.urls.docs += '/#-command-line-usage'
 
     // Init UI colors
     const nc = '\x1b[0m',    // no color
