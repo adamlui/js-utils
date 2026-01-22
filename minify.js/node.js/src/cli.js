@@ -26,8 +26,9 @@
     // Init sys LANGUAGE
     if (process.platform == 'win32') {
         try {
-            env.langCode = execSync('(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' })
-                .trim()
+            env.langCode = execSync(
+                '(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' }
+            ).trim()
         } catch (err) { console.error('ERROR loading system language:', err.message) }
     } else { // macOS/Linux
         const pe = process.env
