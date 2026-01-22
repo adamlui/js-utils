@@ -3,14 +3,16 @@
 (async () => {
     'use strict'
 
+    globalThis.env = { langCode: 'en', devMode: __dirname.match(/src/) }
+
     // Import LIBS
     const { execSync, execFileSync } = require('child_process'), // for --version cmd + cross-platform copying
           fs = require('fs'),
-          { generatePassword } = require(`./generate-pw${ __dirname.match(/src/) ? '' : '.min' }.js`),
+          { generatePassword } = require(`./generate-pw${ env.devMode ? '' : '.min' }.js`),
           path = require('path')
 
     // Init APP data
-    globalThis.app = require(`${ __dirname.match(/src/) ? '..' : '.' }/app.json`)
+    globalThis.app = require(`${ env.devMode ? '..' : '.' }/app.json`)
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
 
     // Init UI COLORS
@@ -21,7 +23,6 @@
           bw = '\x1b[1;97m'  // bright white
 
     // Init sys LANGUAGE
-    globalThis.env = { langCode: 'en' }
     if (process.platform == 'win32') {
         try {
             env.langCode = execSync('(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' })
