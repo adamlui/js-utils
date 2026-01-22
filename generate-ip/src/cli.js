@@ -94,7 +94,7 @@
         } else if (!matchedInfoCmd && !/ipv4/.test(arg)) {
             console.error(`\n${ br +( app.msgs.prefix_error || 'ERROR' )}: `
                 + `Arg [${arg}] ${ app.msgs.error_notRecognized || 'not recognized' }.${nc}`)
-            console.info(`\n${ by +( app.msgs.info_validArgs || 'Valid arguments are below' )}.${nc}`)
+            console.info(`\n${by}${ app.msgs.info_validArgs || 'Valid arguments are below' }.${nc}`)
             printHelpSections(['paramOptions', 'flags', 'infoCmds'])
             process.exit(1)
         }

@@ -103,7 +103,7 @@
         } else if (!matchedInfoCmd) {
             console.error(`\n${ br +( app.msgs.prefix_error || 'ERROR' )}: `
                 + `Arg [${arg}] ${ app.msgs.error_notRecognized || 'not recognized' }.${nc}`)
-            console.info(`\n${ by +( app.msgs.info_validArgs || 'Valid arguments are below' )}.${nc}`)
+            console.info(`\n${by}${ app.msgs.info_validArgs || 'Valid arguments are below' }.${nc}`)
             printHelpSections(['flags', 'paramOptions', 'infoCmds'])
             process.exit(1)
         }
@@ -161,10 +161,10 @@
 
         if (app.config.dryRun) { // -n or --dry-run passed
             if (unminnedJSfiles.length) { // print files to be processed
-                console.info(`\n${by +( app.msgs.info_filesToBeMinned || 'JS files to be minified' )}:${nc}`)
+                console.info(`\n${by}${ app.msgs.info_filesToBeMinned || 'JS files to be minified' }:${nc}`)
                 unminnedJSfiles.forEach(file => console.info(file))
             } else // no files found
-                console.info(`\n${by +( app.msgs.info_noFilesWillBeMinned || 'No JS files will be minified' )}.${nc}`)
+                console.info(`\n${by}${ app.msgs.info_noFilesWillBeMinned || 'No JS files will be minified' }.${nc}`)
 
         } else { // actually minify JavaScript files
 
@@ -197,11 +197,12 @@
                 printIfNotQuiet(`${bw + minifyData.length} ${ app.msgs.info_file || 'file' }`
                     + `${ minifyData.length > 1 ? 's' : '' } ${ app.msgs.info_minified || 'minified' }.${nc}`)
             } else printIfNotQuiet(
-                `\n${by +( app.msgs.info_noFilesProcessed || 'No unminified JavaScript files processed' )}.${nc}`)
+                `\n${by}${ app.msgs.info_noFilesProcessed || 'No unminified JavaScript files processed' }.${nc}`)
             if (failedPaths.length) {
                 printIfNotQuiet(
                     `\n${br + failedPaths.length} ${ app.msgs.info_file || 'file' }`
-                    + `${ failedPaths.length > 1 ? 's' : '' } ${ app.msgs.info_failedToMinify || 'failed to minify' }:${nc}`
+                    + `${ failedPaths.length > 1 ? 's' : '' } ${
+                            app.msgs.info_failedToMinify || 'failed to minify' }:${nc}`
                 )
                 failedPaths.forEach(path => printIfNotQuiet(path))
             }
