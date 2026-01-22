@@ -31,8 +31,8 @@
     <img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge&label=%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89"></a>
 <a href="#%EF%B8%8F-mit-ライセンス">
     <img height=31 src="https://img.shields.io/badge/ライセンス-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-1.12.0">
-    <img height=31 src="https://img.shields.io/badge/最新のビルド-1.12.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-2.0.0">
+    <img height=31 src="https://img.shields.io/badge/最新のビルド-2.0.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css?activeTab=code">
     <img height=31 src="https://img.shields.io/npm/unpacked-size/%40adamlui%2Fscss-to-css?style=for-the-badge&logo=ebox&logoColor=white&color=blue&labelColor=464646&label=%E9%96%8B%E6%A2%B1%E5%BE%8C%E3%81%AE%E3%82%B5%E3%82%A4%E3%82%BA"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:node.js/src/scss-to-css.js">
