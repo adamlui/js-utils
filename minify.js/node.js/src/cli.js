@@ -99,7 +99,8 @@
             console.info(`\n${ by +( app.msgs.info_validArgs || 'Valid arguments are below' )}.${nc}`)
             printHelpSections(['flags', 'paramOptions', 'infoCmds'])
             process.exit(1)
-    }})
+        }
+    })
 
     // Show HELP screen if -h or --help passed
     if (process.argv.some(arg => regex.infoCmds.help.test(arg))) printHelpSections()
