@@ -4,8 +4,9 @@
   "cmdFormat": "minify-js [inputPath] [outputPath] [options]",
   "urls": {
     "docs": "https://github.com/adamlui/minify.js/tree/main/node.js/docs",
-    "home": "https://github.com/adamlui/minify.js",
+    "github": "https://github.com/adamlui/minify.js",
     "jsdelivr": "https://cdn.jsdelivr.net/gh/adamlui/minify.js",
+    "npm": "https://www.npmjs.com/package/@adamlui/minify.js",
     "src": "https://github.com/adamlui/minify.js/tree/main/node.js/src"
   },
   "commitHashes": {
