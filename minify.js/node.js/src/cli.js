@@ -11,7 +11,7 @@
           path = require('path')
 
     // Init APP data
-    globalThis.app = require(path.join(__dirname, `${ __dirname.match(/src/) ? '../' : '' }app.json`))
+    globalThis.app = require(`${ __dirname.match(/src/) ? '..' : '.' }/app.json`)
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
 
     // Init UI COLORS
