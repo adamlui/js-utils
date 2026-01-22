@@ -4,11 +4,11 @@
     'use strict'
 
     // Import LIBS
-    const minifyJS = require(__dirname.match(/src/) ? './minify' : './minify.min'),
+    const { execSync } = require('child_process'), // for --version cmd
           fs = require('fs'),
-          path = require('path'),
+          minifyJS = require(`./minify${ !__dirname.match(/src/) ? '.min' : '' }`),
           ncp = require('node-clipboardy'), // for --copy flag
-          { execSync } = require('child_process') // for --version cmd
+          path = require('path')
 
     // Init APP data
     globalThis.app = require(path.join(__dirname, `${ __dirname.match(/src/) ? '../' : '' }app.json`))

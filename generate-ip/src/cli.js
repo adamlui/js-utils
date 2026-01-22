@@ -11,16 +11,17 @@ const pkgName = 'generate-ip',
     'use strict'
 
     // Import LIBS
-    const { ipv4, ipv6, mac } = require(__dirname.match(/src/) ? './generate-ip' : './generate-ip.min'),
-          fs = require('fs'), path = require('path'),
-          { execSync, execFileSync } = require('child_process') // for --version cmd + cross-platform copying
+    const { execSync, execFileSync } = require('child_process'), // for --version cmd + cross-platform copying
+          fs = require('fs'),
+          { ipv4, ipv6, mac } = require(`./generate-ip${ !__dirname.match(/src/) ? '.min' : '' }`),
+          path = require('path')
 
     // Init UI COLORS
     const nc = '\x1b[0m',    // no color
           br = '\x1b[1;91m', // bright red
           by = '\x1b[1;33m', // bright yellow
           bg = '\x1b[1;92m', // bright green
-          bw = '\x1b[1;97m' // bright white
+          bw = '\x1b[1;97m'  // bright white
 
     // Load sys LANGUAGE
     let langCode = 'en'
