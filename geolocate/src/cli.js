@@ -3,8 +3,16 @@
 (async () => {
     'use strict'
 
-    // Init DATA
     globalThis.env = { langCode: 'en', devMode: __dirname.match(/src/) }
+
+    // Import LIBS
+    const { execSync } = require('child_process'), // for --version cmd
+          fs = require('fs'),
+          geo = require(`./geolocate${ env.devMode ? '' : '.min' }.js`),
+          ncp = require('node-clipboardy'),
+          path = require('path')
+
+    // Init APP data
     globalThis.app = require(`${ env.devMode ? '..' : '.' }/app.json`)
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
     app.regex = {
@@ -16,13 +24,6 @@
         },
         version: /^[~^>=]?\d+\.\d+\.\d+$/
     }
-
-    // Import LIBS
-    const { execSync } = require('child_process'), // for --version cmd
-          fs = require('fs'),
-          geo = require(`./${app.name.split('/')[1]}${ env.devMode ? '' : '.min' }.js`),
-          ncp = require('node-clipboardy'),
-          path = require('path')
 
     // Init UI COLORS
     const nc = '\x1b[0m',    // no color

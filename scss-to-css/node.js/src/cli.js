@@ -3,8 +3,16 @@
 (() => {
     'use strict'
 
-    // Init DATA
     globalThis.env = { devMode: __dirname.match(/src/) }
+
+    // Import LIBS
+    const { execSync } = require('child_process'), // for --version cmd
+          fs = require('fs'),
+          ncp = require('node-clipboardy'), // for --copy flag
+          path = require('path'),
+          scssToCSS = require(`./scss-to-css${ env.devMode ? '' : '.min' }.js`)
+
+    // Init APP data
     globalThis.app = require(`${ env.devMode ? '..' : '.' }/app.json`)
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
     app.regex = {
@@ -28,13 +36,6 @@
         },
         version: /^[~^>=]?\d+\.\d+\.\d+$/
     }
-
-    // Import LIBS
-    const { execSync } = require('child_process'), // for --version cmd
-          fs = require('fs'),
-          ncp = require('node-clipboardy'), // for --copy flag
-          path = require('path'),
-          scssToCSS = require(`./${app.name.split('/')[1]}${ env.devMode ? '' : '.min' }.js`)
 
     // Init UI colors
     const nc = '\x1b[0m',    // no color
