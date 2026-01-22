@@ -6,9 +6,9 @@
     globalThis.env = { devMode: __dirname.match(/src/) }
 
     // Import LIBS
-    const { execSync } = require('child_process'), // for --version cmd
+    const { execSync } = require('child_process'),
           fs = require('fs'),
-          ncp = require('node-clipboardy'), // for --copy flag
+          ncp = require('node-clipboardy'),
           path = require('path'),
           scssToCSS = require(`./scss-to-css${ env.devMode ? '' : '.min' }.js`)
 

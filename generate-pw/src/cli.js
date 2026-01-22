@@ -6,7 +6,7 @@
     globalThis.env = { langCode: 'en', devMode: __dirname.match(/src/) }
 
     // Import LIBS
-    const { execSync } = require('child_process'), // for --version cmd
+    const { execSync } = require('child_process'),
           fs = require('fs'),
           { generatePassword } = require(`./generate-pw${ env.devMode ? '' : '.min' }.js`),
           ncp = require('node-clipboardy'),
