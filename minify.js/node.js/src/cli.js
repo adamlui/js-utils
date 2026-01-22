@@ -183,13 +183,13 @@
                     else minifyData = [].concat(minifyResult)
                 }
             } else minifyData = unminnedJSfiles.map(jsPath => {
-                    const minifyResult = minifyJS.minify(jsPath, {
-                        verbose: !app.config.quietMode, mangle: !app.config.noMangle,
-                        comment: app.config.comment?.replace(/\\n/g, '\n')
-                    })
-                    if (minifyResult.error) failedPaths.push(jsPath)
-                    return minifyResult
-                }).filter(minifyResult => !minifyResult.error)
+                const minifyResult = minifyJS.minify(jsPath, {
+                    verbose: !app.config.quietMode, mangle: !app.config.noMangle,
+                    comment: app.config.comment?.replace(/\\n/g, '\n')
+                })
+                if (minifyResult.error) failedPaths.push(jsPath)
+                return minifyResult
+            }).filter(minifyResult => !minifyResult.error)
 
             // Print minification summary
             if (minifyData?.length) {
@@ -232,7 +232,7 @@
                         outputFilename = `${
                             outputArg.endsWith('.js') && inputArg.endsWith('.js')
                                 ? path.basename(outputArg).replace(/(\.min)?\.js$/, '')
-                                : path.basename(srcPath, '.js')
+                                    : path.basename(srcPath, '.js')
                         }${ app.config.noFilenameChange ? '' : '.min' }.js`
                     }
                     const outputPath = path.join(outputDir, outputFilename)

@@ -140,13 +140,13 @@
                     else compileData = [].concat(compileResult)
                 }
             } else compileData = scssFiles.map(scssPath => {
-                    const compileResult = scssToCSS.compile(scssPath, {
-                        verbose: !app.config.quietMode, minify: !app.config.noMinify,
-                        sourceMaps: !app.config.noSourceMaps, comment: app.config.comment?.replace(/\\n/g, '\n')
-                    })
-                    if (compileResult.error) failedPaths.push(scssPath)
-                    return compileResult
-                }).filter(compileResult => !compileResult.error)
+                const compileResult = scssToCSS.compile(scssPath, {
+                    verbose: !app.config.quietMode, minify: !app.config.noMinify,
+                    sourceMaps: !app.config.noSourceMaps, comment: app.config.comment?.replace(/\\n/g, '\n')
+                })
+                if (compileResult.error) failedPaths.push(scssPath)
+                return compileResult
+            }).filter(compileResult => !compileResult.error)
 
             // Print compilation summary
             if (compileData?.length) {
@@ -188,7 +188,7 @@
                         outputFilename = `${
                             outputArg.endsWith('.css') && inputArg.endsWith('.scss')
                                 ? path.basename(outputArg).replace(/(\.min)?\.css$/, '')
-                                : path.basename(srcPath, '.scss')
+                                    : path.basename(srcPath, '.scss')
                          }.min.css`
                     }
                     const outputPath = path.join(outputDir, outputFilename)
