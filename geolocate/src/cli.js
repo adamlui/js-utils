@@ -18,9 +18,10 @@
     }
 
     // Import LIBS
-    const { execSync, execFileSync } = require('child_process'), // for --version cmd + cross-platform copying
+    const { execSync } = require('child_process'), // for --version cmd
           fs = require('fs'),
           geo = require(`./${app.name.split('/')[1]}${ env.devMode ? '' : '.min' }.js`),
+          ncp = require('node-clipboardy'),
           path = require('path')
 
     // Init UI COLORS
@@ -134,23 +135,10 @@
 
         // Copy to clipboard
         printIfNotQuiet(`\n${ app.msgs.info_copying || 'Copying to clipboard' }...`)
-        copyToClipboard(JSON.stringify(geoResults, undefined, 2))
+        ncp.writeSync(JSON.stringify(geoResults, undefined, 2))
     }
 
     // Define FUNCTIONS
-
-    function copyToClipboard(data) {
-        data = data.replace(/"/g, '""')
-        const osConfig = {
-            darwin: { binPath: '/usr/bin/pbcopy', args: [] },
-            linux: { binPath: '/usr/bin/xclip', args: ['-selection', 'clipboard'] },
-            win32: {
-                binPath: path.join(process.env.SYSTEMROOT, 'System32', 'WindowsPowerShell', 'v1.0', 'powershell.exe'),
-                args: ['-Command', 'Set-Clipboard -Value $input']
-            }
-        }
-        execFileSync(...Object.values(osConfig[process.platform]), { input: data })
-    }
 
     function fetchData(url) { // instead of fetch() to support Node.js < v21
         return new Promise((resolve, reject) => {
