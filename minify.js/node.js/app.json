@@ -4,7 +4,7 @@
   "cmdFormat": "minify-js [inputPath] [outputPath] [options]",
   "urls": {
     "docs": "https://github.com/adamlui/minify.js/tree/main/node.js/docs",
-    "github": "https://github.com/adamlui/minify.js",
+    "home": "https://github.com/adamlui/minify.js",
     "jsdelivr": "https://cdn.jsdelivr.net/gh/adamlui/minify.js",
     "src": "https://github.com/adamlui/minify.js/tree/main/node.js/src"
   },
