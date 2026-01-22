@@ -3,15 +3,12 @@
 // Documentation: https://docs.generatepw.org
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js
 
-// Init CHARACTER SETS
 const charsets = {
     lower: 'abcdefghijklmnopqrstuvwxyz',
     upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
     numbers: '0123456789',
     symbols: '!@#$%^&*()-_=+[]{}/\\|;:\'",.<>?'
 }
-
-// Define API functions
 
 function generatePassword(options = {}) {
 
@@ -263,8 +260,6 @@ function validateStrength(password, options = {}) {
     return { strengthScore, recommendations, isGood: strengthScore >= 80 }
 }
 
-// Define INTERNAL functions
-
 function randomInt(min, max) {
     if (typeof require == 'undefined') { // use browser crypto API || Math.random()
         const browserCrypto = window.crypto || window.msCrypto,
@@ -323,7 +318,6 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     return true
 }
 
-// EXPORT API functions
 const gpwAliases = {
     generatePassword: [
         'generate', 'generatepassword', 'generatepw', 'generatePw', 'generatePW',

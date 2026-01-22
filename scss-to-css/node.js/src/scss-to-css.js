@@ -2,14 +2,11 @@
 // Source: https://github.com/adamlui/scss-to-css/tree/main/node.js/src
 // Documentation: https://github.com/adamlui/scss-to-css/tree/main/node.js/docs
 
-// Import LIBS
 const fs = require('fs'),
       path = require('path'),
       sass = require('sass')
 
 globalThis.app = require(`${ __dirname.match(/src/) ? '..' : '.' }/app.json`)
-
-// Define API functions
 
 function findSCSS(searchDir, options = {}) {
 
@@ -175,8 +172,6 @@ function compile(input, options = {}) {
     }
 }
 
-// Define INTERNAL validation function
-
 function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Init option strings/types
@@ -233,7 +228,6 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     return true
 }
 
-// EXPORT API functions
 const stcAliases = {
     compile: ['build', 'Build', 'Compile', 'compress', 'Compress', 'minify', 'Minify'],
     findSCSS: ['find', 'Find', 'findscss', 'findScss', 'Findscss', 'FindScss', 'FindSCSS', 'search', 'Search']

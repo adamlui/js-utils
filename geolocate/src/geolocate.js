@@ -59,8 +59,6 @@ async function geolocate(ips, options = {}) {
     }
 }
 
-// Define INTERNAL functions
-
 function fetchData(url) {
     if (typeof fetch == 'undefined') // polyfill for Node.js < v21
         return new Promise((resolve, reject) => {
@@ -120,7 +118,6 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     return true
 }
 
-// EXPORT API functions
 const geoAliases = { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] }
 try { module.exports = { geolocate }} catch (err) {} // for Node.js
 try { window.geo = { geolocate }} catch (err) {} // for Greasemonkey

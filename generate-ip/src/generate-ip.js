@@ -293,8 +293,6 @@ const mac = {
     }
 }
 
-// Define INTERNAL functions
-
 function randomInt(min, max) {
     if (typeof require == 'undefined') { // use browser crypto API || Math.random()
         const browserCrypto = window.crypto || window.msCrypto,
@@ -359,7 +357,6 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     return true
 }
 
-// EXPORT APIs
 const gipAliases = {
     ipv4: [ 'ipV4', 'IPv4', 'IPV4', 'Ipv4', 'IpV4', 'ip', 'IP', 'Ip'],
     ipv6: [ 'ipV6', 'IPv6', 'IPV6', 'Ipv6', 'IpV6'],
