@@ -6,10 +6,10 @@
     globalThis.env = { langCode: 'en', devMode: __dirname.match(/src/) }
 
     // Import LIBS
-    const { execSync } = require('child_process'),
+    const clipboardy = require('node-clipboardy'),
+          { execSync } = require('child_process'),
           fs = require('fs'),
           minifyJS = require(`./minify${ env.devMode ? '' : '.min' }.js`),
-          ncp = require('node-clipboardy'),
           path = require('path')
 
     // Init APP data
@@ -156,7 +156,7 @@
         const unminnedJSfiles = inputPath.endsWith('.js') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
             : minifyJS.findJS(inputPath, {
                 recursive: !app.config.noRecursion, verbose: !app.config.quietMode,
-                ignores: (app.config.ignores?.split(',') ?? []).map(item => item.trim())
+                ignores: (app.config.ignores?.split(',') ?? []).map(ignore => ignore.trim())
             })
 
         if (app.config.dryRun) { // -n or --dry-run passed
@@ -176,7 +176,7 @@
                     comment: app.config.comment?.replace(/\\n/g, '\n'), relativeOutput: false,
                     recursive: !app.config.noRecursion, dotFolders: !!app.config.includeDotFolders,
                     dotFiles: !!app.config.includeDotFiles, rewriteImports: !!app.config.rewriteImports,
-                    ignores: app.config.ignores ? app.config.ignores.split(',').map(item => item.trim()) : []
+                    ignores: app.config.ignores ? app.config.ignores.split(',').map(ignore => ignore.trim()) : []
                 })
                 if (minifyResult) {
                     if (minifyResult.error) failedPaths.push(inputPath)
@@ -211,7 +211,7 @@
             if (app.config.copy && minifyData?.length == 1) {
                 console.log(`\n${bw}${minifyData[0].code}${nc}`)
                 printIfNotQuiet(`\n${ app.msgs.info_copying || 'Copying to clipboard' }...`)
-                ncp.writeSync(minifyData[0].code)
+                clipboardy.writeSync(minifyData[0].code)
 
             } else { // write array data to files
                 printIfNotQuiet(

@@ -6,10 +6,10 @@
     globalThis.env = { langCode: 'en', devMode: __dirname.match(/src/) }
 
     // Import LIBS
-    const { execSync } = require('child_process'),
+    const clipboardy = require('node-clipboardy'),
+          { execSync } = require('child_process'),
           fs = require('fs'),
           geo = require(`./geolocate${ env.devMode ? '' : '.min' }.js`),
-          ncp = require('node-clipboardy'),
           path = require('path')
 
     // Init APP data
@@ -136,7 +136,7 @@
 
         // Copy to clipboard
         printIfNotQuiet(`\n${ app.msgs.info_copying || 'Copying to clipboard' }...`)
-        ncp.writeSync(JSON.stringify(geoResults, undefined, 2))
+        clipboardy.writeSync(JSON.stringify(geoResults, undefined, 2))
     }
 
     // Define FUNCTIONS

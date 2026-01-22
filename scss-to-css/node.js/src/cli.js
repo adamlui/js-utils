@@ -6,9 +6,9 @@
     globalThis.env = { devMode: __dirname.match(/src/) }
 
     // Import LIBS
-    const { execSync } = require('child_process'),
+    const clipboardy = require('node-clipboardy'),
+          { execSync } = require('child_process'),
           fs = require('fs'),
-          ncp = require('node-clipboardy'),
           path = require('path'),
           scssToCSS = require(`./scss-to-css${ env.devMode ? '' : '.min' }.js`)
 
@@ -112,7 +112,7 @@
         const scssFiles = inputPath.endsWith('.scss') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
             : scssToCSS.findSCSS(inputPath, {
                 recursive: !app.config.noRecursion, verbose: !app.config.quietMode,
-                ignores: (app.config.ignores?.split(',') ?? []).map(item => item.trim())
+                ignores: (app.config.ignores?.split(',') ?? []).map(ignore => ignore.trim())
             })
 
         if (app.config.dryRun) { // -n or --dry-run passed
@@ -132,7 +132,7 @@
                     comment: app.config.comment?.replace(/\\n/g, '\n'), relativeOutput: false,
                     recursive: !app.config.noRecursion, dotFolders: !!app.config.includeDotFolders,
                     sourceMaps: !app.config.noSourceMaps,
-                    ignores: app.config.ignores ? app.config.ignores.split(',').map(item => item.trim()) : []
+                    ignores: app.config.ignores ? app.config.ignores.split(',').map(ignore => ignore.trim()) : []
                 })
                 if (Array.isArray(compileResult)) compileData = compileResult
                 if (compileResult) {
@@ -168,7 +168,7 @@
             if (app.config.copy && compileData?.length == 1) {
                 console.log(`\n${bw}${compileData[0].code}${nc}`)
                 printIfNotQuiet('\nCopying to clipboard...')
-                ncp.writeSync(compileData[0].code)
+                clipboardy.writeSync(compileData[0].code)
 
             } else { // write array data to files
                 printIfNotQuiet(`\nWriting to file${ compileData?.length > 1 ? 's' : '' }...`)

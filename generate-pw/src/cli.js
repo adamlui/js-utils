@@ -6,10 +6,10 @@
     globalThis.env = { langCode: 'en', devMode: __dirname.match(/src/) }
 
     // Import LIBS
-    const { execSync } = require('child_process'),
+    const clipboardy = require('node-clipboardy'),
+          { execSync } = require('child_process'),
           fs = require('fs'),
           { generatePassword } = require(`./generate-pw${ env.devMode ? '' : '.min' }.js`),
-          ncp = require('node-clipboardy'),
           path = require('path')
 
     // Init APP data
@@ -147,7 +147,7 @@
         }
         const pwResult = generatePassword(funcOptions)
         printIfNotQuiet(`\n${ app.msgs.info_copying || 'Copying to clipboard' }...`)
-        ncp.writeSync(Array.isArray(pwResult) ? pwResult.join('\n') : pwResult)
+        clipboardy.writeSync(Array.isArray(pwResult) ? pwResult.join('\n') : pwResult)
     }
 
     // Define FUNCTIONS

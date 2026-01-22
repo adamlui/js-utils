@@ -6,10 +6,10 @@
     globalThis.env = { langCode: 'en', devMode: __dirname.match(/src/) }
 
     // Import LIBS
-    const { execSync } = require('child_process'),
+    const clipboardy = require('node-clipboardy'),
+          { execSync } = require('child_process'),
           fs = require('fs'),
           { ipv4, ipv6, mac } = require(`./generate-ip${ env.devMode ? '' : '.min' }.js`),
-          ncp = require('node-clipboardy'),
           path = require('path')
 
     // Init APP data
@@ -132,7 +132,7 @@
                        : app.config.macMode  ?  mac.generate(genOptions)
                                              : ipv4.generate(genOptions)
         printIfNotQuiet(`\n${ app.msgs.info_copying || 'Copying to clipboard' }...`)
-        ncp.writeSync(Array.isArray(ipResult) ? ipResult.join('\n') : ipResult)
+        clipboardy.writeSync(Array.isArray(ipResult) ? ipResult.join('\n') : ipResult)
     }
 
     // Define FUNCTIONS
