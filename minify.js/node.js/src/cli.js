@@ -21,7 +21,7 @@
           bg = '\x1b[1;92m', // bright green
           bw = '\x1b[1;97m'  // bright white
 
-    // Load sys LANGUAGE
+    // Init sys LANGUAGE
     globalThis.env = { langCode: 'en' }
     if (process.platform == 'win32') {
         try {
@@ -33,7 +33,7 @@
         env.langCode = (pe.LANG || pe.LANGUAGE || pe.LC_ALL || pe.LC_MESSAGES || pe.LC_NAME || 'en')?.split('.')[0]
     }
 
-    // Define MESSAGES
+    // Load MESSAGES
     try {
         app.msgs = await new Promise((resolve, reject) => {
             const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`,
