@@ -7,7 +7,7 @@
     "email": "adam@kudoai.com",
     "url": "https://github.com/adamlui"
   },
-  "homepage": "https://scsstocss.org",
+  "homepage": "https://github.com/adamlui/scss-to-css",
   "license": "MIT",
   "funding": [
     {
@@ -61,7 +61,7 @@
     "stylesheets"
   ],
   "bugs": {
-    "url": "https://support.scsstocss.org"
+    "url": "https://github.com/adamlui/scss-to-css/issues"
   },
   "dependencies": {
     "node-clipboardy": "^1.0.3",

@@ -6,8 +6,8 @@
     const pkgName = '@adamlui/scss-to-css',
           copyright = '© 2024–2026 Adam Lui & contributors under the MIT license.',
           cmdFormat = 'scss-to-css [inputPath] [outputPath] [options]',
-          srcURL = 'https://code.scsstocss.org/node.js',
-          docURL = 'https://docs.scsstocss.org/node.js/#-command-line-usage'
+          srcURL = 'https://github.com/adamlui/scss-to-css/tree/main/node.js/src',
+          docURL = 'https://github.com/adamlui/scss-to-css/tree/main/node.js/#-command-line-usage'
 
     // Import LIBS
     const scssToCSS = require(__dirname.match(/src/) ? './scss-to-css' : './scss-to-css.min'),
