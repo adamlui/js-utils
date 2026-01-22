@@ -7,6 +7,11 @@
     globalThis.env = { langCode: 'en', devMode: __dirname.match(/src/) }
     globalThis.app = require(`${ env.devMode ? '..' : '.' }/app.json`)
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
+    app.regex = {
+        flags: { 'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/ },
+        infoCmds: { 'help': /^--?h(?:elp)?$/, 'version': /^--?ve?r?s?i?o?n?$/ },
+        version: /^[~^>=]?\d+\.\d+\.\d+$/
+    }
 
     // Import LIBS
     const { execSync, execFileSync } = require('child_process'), // for --version cmd + cross-platform copying
@@ -59,14 +64,10 @@
     } catch (err) { app.msgs = {} ; console.error('ERROR fetching messages:', err.message) }
 
     // Load SETTINGS from args
-    const regex = {
-        flags: { 'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/ },
-        infoCmds: { 'help': /^--?h(?:elp)?$/, 'version': /^--?ve?r?s?i?o?n?$/ }
-    }
     process.argv.forEach(arg => {
         if (!arg.startsWith('-')) return
-        const matchedFlag = Object.keys(regex.flags).find(flag => regex.flags[flag].test(arg)),
-              matchedInfoCmd = Object.keys(regex.infoCmds).find(cmd => regex.infoCmds[cmd].test(arg))
+        const matchedFlag = Object.keys(app.regex.flags).find(flag => app.regex.flags[flag].test(arg)),
+              matchedInfoCmd = Object.keys(app.regex.infoCmds).find(cmd => app.regex.infoCmds[cmd].test(arg))
         if (matchedFlag) app.config[matchedFlag] = true
         else if (!matchedInfoCmd) {
             console.error(`\n${ br +( app.msgs.prefix_error || 'ERROR' )}: `
@@ -78,10 +79,10 @@
     })
 
     // Show HELP screen if -h or --help passed
-    if (process.argv.some(arg => regex.infoCmds.help.test(arg))) printHelpSections()
+    if (process.argv.some(arg => app.regex.infoCmds.help.test(arg))) printHelpSections()
 
     // Show VERSION number if -v or --version passed
-    else if (process.argv.some(arg => regex.infoCmds.version.test(arg))) {
+    else if (process.argv.some(arg => app.regex.infoCmds.version.test(arg))) {
         const globalVer = execSync(`npm view ${JSON.stringify(app.name)} version`).toString().trim() || 'none'
         let localVer, currentDir = process.cwd()
         while (currentDir != '/') {

@@ -7,6 +7,16 @@
     globalThis.env = { langCode: 'en', devMode: __dirname.match(/src/) }
     globalThis.app = require(`${ env.devMode ? '..' : '.' }/app.json`)
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
+    app.regex = {
+        paramOptions: { 'qty': /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
+        flags: {
+            'ipv6mode': /^--?(?:ip)?v?6(?:-?mode)?$/,
+            'macMode': /^--?m(?:ac)?(?:-?mode)?$/,
+            'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
+        },
+        infoCmds: { 'help': /^--?h(?:elp)?$/, 'version': /^--?ve?r?s?i?o?n?$/ },
+        version: /^[~^>=]?\d+\.\d+\.\d+$/
+    }
 
     // Import LIBS
     const { execSync, execFileSync } = require('child_process'), // for --version cmd + cross-platform copying
@@ -59,20 +69,12 @@
     } catch (err) { app.msgs = {} ; console.error('ERROR fetching messages:', err.message) }
 
     // Load SETTINGS from args
-    const regex = {
-        paramOptions: { 'qty': /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
-        flags: {
-            'ipv6mode': /^--?(?:ip)?v?6(?:-?mode)?$/,
-            'macMode': /^--?m(?:ac)?(?:-?mode)?$/,
-            'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
-        },
-        infoCmds: { 'help': /^--?h(?:elp)?$/, 'version': /^--?ve?r?s?i?o?n?$/ }
-    }
     process.argv.forEach(arg => {
         if (!arg.startsWith('-')) return
-        const matchedParamOption = Object.keys(regex.paramOptions).find(option => regex.paramOptions[option].test(arg)),
-              matchedFlag = Object.keys(regex.flags).find(flag => regex.flags[flag].test(arg)),
-              matchedInfoCmd = Object.keys(regex.infoCmds).find(cmd => regex.infoCmds[cmd].test(arg))
+        const matchedParamOption = Object.keys(app.regex.paramOptions)
+            .find(option => app.regex.paramOptions[option].test(arg))
+        const matchedFlag = Object.keys(app.regex.flags).find(flag => app.regex.flags[flag].test(arg))
+        const matchedInfoCmd = Object.keys(app.regex.infoCmds).find(cmd => app.regex.infoCmds[cmd].test(arg))
         if (matchedFlag) app.config[matchedFlag] = true
         else if (matchedParamOption) {
             if (!/=.+/.test(arg)) {
@@ -98,10 +100,10 @@
     }
 
     // Show HELP screen if -h or --help passed
-    if (process.argv.some(arg => regex.infoCmds.help.test(arg))) printHelpSections()
+    if (process.argv.some(arg => app.regex.infoCmds.help.test(arg))) printHelpSections()
 
     // Show VERSION number if -v or --version passed
-    else if (process.argv.some(arg => regex.infoCmds.version.test(arg))) {
+    else if (process.argv.some(arg => app.regex.infoCmds.version.test(arg))) {
         const globalVer = execSync(`npm view ${JSON.stringify(app.name)} version`).toString().trim() || 'none'
         let localVer, currentDir = process.cwd()
         while (currentDir != '/') {
@@ -110,7 +112,7 @@
                 const localManifest = require(localManifestPath)
                 localVer = (localManifest.dependencies?.[app.name]
                          || localManifest.devDependencies?.[app.name]
-                )?.match(/^[~^>=]?\d+\.\d+\.\d+$/)?.[1] || 'none'
+                )?.match(app.regex.version)?.[1] || 'none'
                 break
             }
             currentDir = path.dirname(currentDir)
@@ -190,7 +192,9 @@
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)))
         console.info(
-            `\n${ app.msgs.info_moreHelp || 'For more help' }, ${ app.msgs.info_visit || 'visit' }: ${bw}${app.urls.docs}${nc}`)
+            `\n${ app.msgs.info_moreHelp || 'For more help' }, ${
+                  app.msgs.info_visit || 'visit' }: ${bw}${app.urls.docs}${nc}`
+        )
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
