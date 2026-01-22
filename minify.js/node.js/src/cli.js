@@ -34,29 +34,29 @@
     }
 
     // Define MESSAGES
-    const msgsLoaded = new Promise((resolve, reject) => {
-        const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`,
-              msgLocaleDir = `${ env.langCode ? env.langCode.replace('-', '_') : 'en' }/`
-        let msgHref = msgHostDir + msgLocaleDir + 'messages.json', msgFetchTries = 0
-        fetchData(msgHref).then(handleMsgs).catch(reject)
-        async function handleMsgs(resp) {
-            try { // to return localized messages.json
-                const msgs = await resp.json(), flatMsgs = {}
-                for (const key in msgs)  // remove need to ref nested keys
-                    if (typeof msgs[key] == 'object' && 'message' in msgs[key])
-                        flatMsgs[key] = msgs[key].message
-                resolve(flatMsgs)
-            } catch (err) { // if bad response
-                msgFetchTries++ ; if (msgFetchTries == 3) return resolve({}) // try original/region-stripped/EN only
-                msgHref = env.langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
-                    msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
-                        : `${msgHostDir}en/messages.json` // else use default English messages
-                fetchData(msgHref).then(handleMsgs).catch(reject)
+    try {
+        app.msgs = await new Promise((resolve, reject) => {
+            const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`,
+                  msgLocaleDir = `${ env.langCode ? env.langCode.replace('-', '_') : 'en' }/`
+            let msgHref = msgHostDir + msgLocaleDir + 'messages.json', msgFetchTries = 0
+            fetchData(msgHref).then(handleMsgs).catch(reject)
+            async function handleMsgs(resp) {
+                try { // to return localized messages.json
+                    const msgs = await resp.json(), flatMsgs = {}
+                    for (const key in msgs)  // remove need to ref nested keys
+                        if (typeof msgs[key] == 'object' && 'message' in msgs[key])
+                            flatMsgs[key] = msgs[key].message
+                    resolve(flatMsgs)
+                } catch (err) { // if bad response
+                    msgFetchTries++ ; if (msgFetchTries == 3) return resolve({}) // try original/region-stripped/EN only
+                    msgHref = env.langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
+                        msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
+                            : `${msgHostDir}en/messages.json` // else use default English messages
+                    fetchData(msgHref).then(handleMsgs).catch(reject)
+                }
             }
-        }
-    })
-    try { app.msgs = await msgsLoaded }
-    catch (err) { app.msgs = {} ; console.error('ERROR fetching messages:', err.message) }
+        })
+    } catch (err) { app.msgs = {} ; console.error('ERROR fetching messages:', err.message) }
 
     // Load SETTINGS from args
     const regex = {
