@@ -208,9 +208,9 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
         printValidOptions() ; printDocURL() ; return false
     }
     for (const key in options) { // validate each key
-        if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+        if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key))
             continue // to next key due to unused option
-        } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
+        else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
             console.error(`${logPrefix}ERROR: [${key}] option can only be \`true\` or \`false\`.`)
             printDocURL() ; return false
         } else if (integerOptions.includes(key)) {
