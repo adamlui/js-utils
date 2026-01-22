@@ -11,9 +11,10 @@
 
     // Import LIBS
     const scssToCSS = require(__dirname.match(/src/) ? './scss-to-css' : './scss-to-css.min'),
-        fs = require('fs'), path = require('path'),
-        ncp = require('node-clipboardy'), // for --copy flag
-        { execSync } = require('child_process') // for --version cmd
+          fs = require('fs'),
+          path = require('path'),
+          ncp = require('node-clipboardy'), // for --copy flag
+          { execSync } = require('child_process') // for --version cmd
 
     // Init UI colors
     const nc = '\x1b[0m',    // no color
@@ -73,8 +74,8 @@
             if (fs.existsSync(localManifestPath)) {
                 const localManifest = require(localManifestPath)
                 localVer = (localManifest.dependencies?.[pkgName]
-                         || localManifest.devDependencies?.[pkgName])
-                    ?.match(/^[~^>=]?\d+\.\d+\.\d+$/)[1] || 'none'
+                         || localManifest.devDependencies?.[pkgName]
+                )?.match(/^[~^>=]?\d+\.\d+\.\d+$/)[1] || 'none'
                 break
             }
             currentDir = path.dirname(currentDir)
@@ -114,7 +115,8 @@
             if (scssFiles.length) { // print files to be processed
                 console.info(`\n${by}SCSS files to be compiled:${nc}`)
                 scssFiles.forEach(file => console.info(file))
-            } else console.info(`${by}\nNo SCSS files will be compiled.${nc}`)
+            } else // no files found
+                console.info(`${by}\nNo SCSS files will be compiled.${nc}`)
 
         } else { // actually compile SCSS files
 
@@ -179,11 +181,11 @@
                             outputArg.endsWith('.css') ? path.dirname(outputArg) // or path from file output arg
                                 : outputArg || 'css' // or path from folder outputArg or css/ if no outputArg passed
                         )
-                        outputFilename = (
+                        outputFilename = `${
                             outputArg.endsWith('.css') && inputArg.endsWith('.scss')
                                 ? path.basename(outputArg).replace(/(\.min)?\.css$/, '')
                                 : path.basename(srcPath, '.scss')
-                        ) + '.min.css'
+                         }.min.css`
                     }
                     const outputPath = path.join(outputDir, outputFilename)
                     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true })

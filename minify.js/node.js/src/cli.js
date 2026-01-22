@@ -12,7 +12,8 @@ const pkgName = '@adamlui/minify.js',
 
     // Import LIBS
     const minifyJS = require(__dirname.match(/src/) ? './minify' : './minify.min'),
-          fs = require('fs'), path = require('path'),
+          fs = require('fs'),
+          path = require('path'),
           ncp = require('node-clipboardy'), // for --copy flag
           { execSync } = require('child_process') // for --version cmd
 
@@ -159,7 +160,8 @@ const pkgName = '@adamlui/minify.js',
             if (unminnedJSfiles.length) { // print files to be processed
                 console.info(`\n${by +( msgs.info_filesToBeMinned || 'JS files to be minified' )}:${nc}`)
                 unminnedJSfiles.forEach(file => console.info(file))
-            } else console.info(`\n${by +( msgs.info_noFilesWillBeMinned || 'No JS files will be minified' )}.${nc}`)
+            } else // no files found
+                console.info(`\n${by +( msgs.info_noFilesWillBeMinned || 'No JS files will be minified' )}.${nc}`)
 
         } else { // actually minify JavaScript files
 
@@ -224,11 +226,11 @@ const pkgName = '@adamlui/minify.js',
                             outputArg.endsWith('.js') ? path.dirname(outputArg) // + path from file outputArg
                                 : outputArg || 'min' // or path from folder outputArg or min/ if no outputArg passed
                         )
-                        outputFilename = (
+                        outputFilename = `${
                             outputArg.endsWith('.js') && inputArg.endsWith('.js')
                                 ? path.basename(outputArg).replace(/(\.min)?\.js$/, '')
                                 : path.basename(srcPath, '.js')
-                        ) + `${ config.noFilenameChange ? '' : '.min' }.js`
+                        }${ config.noFilenameChange ? '' : '.min' }.js`
                     }
                     const outputPath = path.join(outputDir, outputFilename)
                     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true })
