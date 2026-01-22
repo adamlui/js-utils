@@ -14,7 +14,7 @@
           fs = require('fs'),
           ncp = require('node-clipboardy'), // for --copy flag
           path = require('path'),
-          scssToCSS = require(`./scss-to-css${ !__dirname.match(/src/) ? '.min' : '' }`)
+          scssToCSS = require(`./scss-to-css${ __dirname.match(/src/) ? '' : '.min' }.js`)
 
     // Init UI colors
     const nc = '\x1b[0m',    // no color

@@ -13,7 +13,7 @@ const pkgName = 'generate-ip',
     // Import LIBS
     const { execSync, execFileSync } = require('child_process'), // for --version cmd + cross-platform copying
           fs = require('fs'),
-          { ipv4, ipv6, mac } = require(`./generate-ip${ !__dirname.match(/src/) ? '.min' : '' }`),
+          { ipv4, ipv6, mac } = require(`./generate-ip${ __dirname.match(/src/) ? '' : '.min' }.js`),
           path = require('path')
 
     // Init UI COLORS

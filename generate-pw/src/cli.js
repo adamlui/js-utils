@@ -13,7 +13,7 @@ const pkgName = 'generate-pw',
     // Import LIBS
     const { execSync, execFileSync } = require('child_process'), // for --version cmd + cross-platform copying
           fs = require('fs'),
-          { generatePassword } = require(`./generate-pw${ !__dirname.match(/src/) ? '.min' : '' }`),
+          { generatePassword } = require(`./generate-pw${ __dirname.match(/src/) ? '' : '.min' }.js`),
           path = require('path')
 
     // Init UI COLORS

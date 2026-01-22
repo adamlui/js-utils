@@ -6,7 +6,7 @@
     // Import LIBS
     const { execSync } = require('child_process'), // for --version cmd
           fs = require('fs'),
-          minifyJS = require(`./minify${ !__dirname.match(/src/) ? '.min' : '' }`),
+          minifyJS = require(`./minify${ __dirname.match(/src/) ? '' : '.min' }.js`),
           ncp = require('node-clipboardy'), // for --copy flag
           path = require('path')
 
