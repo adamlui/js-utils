@@ -7,11 +7,13 @@ const fs = require('fs'),
       path = require('path'),
       sass = require('sass')
 
+globalThis.app = require(`${ __dirname.match(/src/) ? '..' : '.' }/app.json`)
+
 // Define API functions
 
 function findSCSS(searchDir, options = {}) {
 
-    const docURL = 'https://github.com/adamlui/scss-to-css/tree/main/node.js/#findscsssearchdir-options',
+    const docURL = `${app.urls.docs}/#findscsssearchdir-options`,
           exampleCall = `findSCSS('assets/scss', { verbose: false, dotFolders: true })`,
           logPrefix = 'findSCSS() » '
 
@@ -75,7 +77,7 @@ function findSCSS(searchDir, options = {}) {
 
 function compile(input, options = {}) {
 
-    const docURL = 'https://github.com/adamlui/scss-to-css/tree/main/node.js/#compileinput-options',
+    const docURL = `${app.urls.docs}/#compileinput-options`,
           exampleCall = `compile('assets/scss', { recursive: false, minify: false })`,
           logPrefix = 'compile() » '
 
