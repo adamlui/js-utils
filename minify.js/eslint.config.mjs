@@ -10,7 +10,9 @@ export default [
     { ignores: ['**/sandbox/', '**/package-lock.json', '**/*.min.js'] },
     {
         files: ['**/*.{js,mjs}'],
-        languageOptions: { ecmaVersion: 'latest', sourceType: 'script', globals: { ...globals.node, app: 'writable' }},
+        languageOptions: {
+            ecmaVersion: 'latest', sourceType: 'script', globals: { ...globals.node, app: 'writable', env: 'writable' }
+        },
         plugins: { 'import': importPlugin, 'js-styles': stylisticJS, regexp },
         rules: {
             ...js.configs.recommended.rules,

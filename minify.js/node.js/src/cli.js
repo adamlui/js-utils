@@ -22,21 +22,21 @@
           bw = '\x1b[1;97m'  // bright white
 
     // Load sys LANGUAGE
-    let langCode = 'en'
+    globalThis.env = { langCode: 'en' }
     if (process.platform == 'win32') {
         try {
-            langCode = execSync('(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' })
+            env.langCode = execSync('(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' })
                 .trim()
         } catch (err) { console.error('ERROR loading system language:', err.message) }
     } else { // macOS/Linux
-        const env = process.env
-        langCode = (env.LANG || env.LANGUAGE || env.LC_ALL || env.LC_MESSAGES || env.LC_NAME || 'en')?.split('.')[0]
+        const pe = process.env
+        env.langCode = (pe.LANG || pe.LANGUAGE || pe.LC_ALL || pe.LC_MESSAGES || pe.LC_NAME || 'en')?.split('.')[0]
     }
 
     // Define MESSAGES
     const msgsLoaded = new Promise((resolve, reject) => {
         const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`,
-              msgLocaleDir = `${ langCode ? langCode.replace('-', '_') : 'en' }/`
+              msgLocaleDir = `${ env.langCode ? env.langCode.replace('-', '_') : 'en' }/`
         let msgHref = msgHostDir + msgLocaleDir + 'messages.json', msgFetchTries = 0
         fetchData(msgHref).then(handleMsgs).catch(reject)
         async function handleMsgs(resp) {
@@ -48,7 +48,7 @@
                 resolve(flatMsgs)
             } catch (err) { // if bad response
                 msgFetchTries++ ; if (msgFetchTries == 3) return resolve({}) // try original/region-stripped/EN only
-                msgHref = langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
+                msgHref = env.langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                     msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
                         : `${msgHostDir}en/messages.json` // else use default English messages
                 fetchData(msgHref).then(handleMsgs).catch(reject)
