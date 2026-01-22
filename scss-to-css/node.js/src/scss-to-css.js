@@ -128,9 +128,9 @@ function compile(input, options = {}) {
             const compileResult = findSCSS(input, options)?.map(scssPath => { // compile found SCSS files
                 if (options.verbose) console.info(`${logPrefix}** Compiling ${scssPath}...`)
                 try { // to compile found file
-                    const compileResult = sass.compile(scssPath, compileOptions)
-                    let relPath
-                    if (!options.relativeOutput) relPath = path.relative(path.resolve(process.cwd(), input), scssPath)
+                    const compileResult = sass.compile(scssPath, compileOptions),
+                          relPath = options.relativeOutput ? undefined
+                                  : path.relative(path.resolve(process.cwd(), input), scssPath)
                     if (options.comment) compileResult.css = prependComment(compileResult.css, options.comment)
                     return {
                         code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: scssPath, relPath,

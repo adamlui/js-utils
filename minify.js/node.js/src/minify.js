@@ -134,11 +134,11 @@ function minify(input, options = {}) {
             const minifyResult = findJS(input, options)?.map(jsPath => { // minify found JS files
                 if (options.verbose) console.info(`${logPrefix}** Minifying ${jsPath}...`)
                 const srcCode = fs.readFileSync(jsPath, 'utf8'),
-                      minifyResult = uglifyJS.minify(srcCode, minifyOptions)
-                let relPath
+                      minifyResult = uglifyJS.minify(srcCode, minifyOptions),
+                      relPath = options.relativeOutput ? undefined
+                              : path.relative(path.resolve(process.cwd(), input), jsPath)
                 if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
                 if (minifyResult.error) console.error(`${logPrefix}ERROR: ${ minifyResult.error.message }`)
-                if (!options.relativeOutput) relPath = path.relative(path.resolve(process.cwd(), input), jsPath)
                 return { code: minifyResult.code, srcPath: jsPath, relPath, error: minifyResult.error }
             }).filter(data => !data.error) // filter out failed minifications
             if (options.verbose) {
