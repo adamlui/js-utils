@@ -17,10 +17,10 @@
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
     app.regex = {
         flags: {
-            'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/ },
+            quietMode: /^--?q(?:uiet)?(?:-?mode)?$/ },
         infoCmds: {
-            'help': /^--?h(?:elp)?$/,
-            'version': /^--?ve?r?s?i?o?n?$/
+            help: /^--?h(?:elp)?$/,
+            version: /^--?ve?r?s?i?o?n?$/
         },
         version: /^[~^>=]?\d+\.\d+\.\d+$/
     }
@@ -155,19 +155,19 @@
     function printHelpSections(includeSections = ['header', 'usage', 'configOptions', 'infoCmds']) {
         const appPrefix = `\x1b[106m\x1b[30m ${app.name.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
         const helpSections = {
-            'header': [
+            header: [
                 `\n├ ${appPrefix}${ app.msgs.appCopyright || app.copyright }`,
                 `${appPrefix}${ app.msgs.prefix_source || 'Source' }: ${app.urls.src}`
             ],
-            'usage': [
+            usage: [
                 `\n${bw}o ${ app.msgs.helpSection_usage || 'Usage' }:${nc}`,
                 ` ${bw}» ${bg}${app.cmdFormat}${nc}`
             ],
-            'configOptions': [
+            configOptions: [
                 `\n${bw}o ${ app.msgs.helpSection_configOptions || 'Config options' }:${nc}`,
                 ` -q, --quiet                 ${ app.msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`
             ],
-            'infoCmds': [
+            infoCmds: [
                 `\n${bw}o ${ app.msgs.helpSection_infoCmds || 'Info commands' }:${nc}`,
                 ` -h, --help                  ${ app.msgs.optionDesc_help || 'Display help screen.' }`,
                 ` -v, --version               ${ app.msgs.optionDesc_version || 'Show version number' }.`

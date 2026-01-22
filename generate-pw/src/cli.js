@@ -17,24 +17,24 @@
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
     app.regex = {
         paramOptions: {
-            'length': /^--?length(?:=.*|$)/,
-            'qty': /^--?qu?a?n?ti?t?y(?:=.*|$)/,
-            'charset': /^--?charse?t?(?:=.*|$)/,
-            'excludeChars': /^--?exclude(?:=.*|$)/
+            length: /^--?length(?:=.*|$)/,
+            qty: /^--?qu?a?n?ti?t?y(?:=.*|$)/,
+            charset: /^--?charse?t?(?:=.*|$)/,
+            excludeChars: /^--?exclude(?:=.*|$)/
         },
         flags: {
-            'includeNums': /^--?(?:n|(?:include-?)?num(?:ber)?s?=?(?:true|1)?)$/,
-            'includeSymbols': /^--?(?:y|(?:include-?)?symbols?=?(?:true|1)?)$/,
-            'excludeLowerChars': /^--?(?:L|(?:exclude|disable|no)-?lower-?(?:case)?|lower-?(?:case)?=(?:false|0))$/,
-            'excludeUpperChars': /^--?(?:U|(?:exclude|disable|no)-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/,
-            'excludeSimilarChars':
+            includeNums: /^--?(?:n|(?:include-?)?num(?:ber)?s?=?(?:true|1)?)$/,
+            includeSymbols: /^--?(?:y|(?:include-?)?symbols?=?(?:true|1)?)$/,
+            excludeLowerChars: /^--?(?:L|(?:exclude|disable|no)-?lower-?(?:case)?|lower-?(?:case)?=(?:false|0))$/,
+            excludeUpperChars: /^--?(?:U|(?:exclude|disable|no)-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/,
+            excludeSimilarChars:
                 /^--?(?:S|(?:exclude|disable|no)-?similar-?(?:char(?:acter)?s?)?|similar-?(?:char(?:acter)?s?)?=(?:false|0))$/,
-            'strictMode': /^--?s(?:trict)?(?:-?mode)?$/,
-            'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
+            strictMode: /^--?s(?:trict)?(?:-?mode)?$/,
+            quietMode: /^--?q(?:uiet)?(?:-?mode)?$/
         },
         infoCmds: {
-            'help': /^--?h(?:elp)?$/,
-            'version': /^--?ve?r?s?i?o?n?$/
+            help: /^--?h(?:elp)?$/,
+            version: /^--?ve?r?s?i?o?n?$/
         },
         version: /^[~^>=]?\d+\.\d+\.\d+$/
     }
@@ -174,22 +174,22 @@
     function printHelpSections(includeSections = ['header', 'usage', 'paramOptions', 'flags', 'infoCmds']) {
         const appPrefix = `\x1b[106m\x1b[30m ${app.name} ${nc} ` // bright teal bg + black fg
         const helpSections = {
-            'header': [
+            header: [
                 `\n├ ${appPrefix}${ app.msgs.appCopyright || app.copyright }`,
                 `${appPrefix}${ app.msgs.prefix_source || 'Source' }: ${app.urls.src}`
             ],
-            'usage': [
+            usage: [
                 `\n${bw}o ${ app.msgs.helpSection_usage || 'Usage' }:${nc}`,
                 ` ${bw}» ${bg}${app.cmdFormat}${nc}`
             ],
-            'paramOptions': [
+            paramOptions: [
                 `\n${bw}o ${ app.msgs.helpSection_paramOptions || 'Parameter options' }:${nc}`,
                 ` --length=n                  ${ app.msgs.optionDesc_length || 'Generate password(s) of n length' }.`,
                 ` --qty=n                     ${ app.msgs.optionDesc_qty || 'Generate n password(s)' }.`,
                 ` --charset=chars             ${ app.msgs.optionDesc_charset || 'Only include chars in password(s)' }.`,
                 ` --exclude=chars             ${ app.msgs.optionDesc_exclude || 'Exclude chars from password(s)' }.`
             ],
-            'flags': [
+            flags: [
                 `\n${bw}o ${ app.msgs.helpSection_flags || 'Boolean options' }:${nc}`,
                 ` -n, --include-numbers       ${ app.msgs.optionDesc_includeNums || 'Allow numbers in password(s)' }.`,
                 ` -y, --include-symbols       ${ app.msgs.optionDesc_includeSymbols || 'Allow symbols in password(s)' }.`,
@@ -200,7 +200,7 @@
                                                                          + 'allowed character set in password(s)' }.`,
                 ` -q, --quiet                 ${ app.msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`
             ],
-            'infoCmds': [
+            infoCmds: [
                 `\n${bw}o ${ app.msgs.helpSection_infoCmds || 'Info commands' }:${nc}`,
                 ` -h, --help                  ${ app.msgs.optionDesc_help || 'Display help screen.' }`,
                 ` -v, --version               ${ app.msgs.optionDesc_version || 'Show version number' }.`

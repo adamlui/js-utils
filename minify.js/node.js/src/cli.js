@@ -17,24 +17,24 @@
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
     app.regex = {
         flags: {
-            'dryRun': /^--?(?:n|dry-?run)$/,
-            'includeDotFolders': /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
-            'includeDotFiles': /^--?(?:df|D|(?:include-?)?dot-?files?=?(?:true|1)?)$/,
-            'noRecursion': /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
-            'noMangle': /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/,
-            'noFilenameChange': /^--?(?:X|(?:disable|no)-?(?:file)?name-?change|(?:file)?name-?change=(?:false|0))$/,
-            'rewriteImports': /^--?(?:i|rewrite-?imports?=?(?:true|1)?)$/,
-            'relativeOutput': /^--?(?:r|relative-?output?=?(?:true|1)?)$/,
-            'copy': /^--?c(?:opy)?$/,
-            'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
+            dryRun: /^--?(?:n|dry-?run)$/,
+            includeDotFolders: /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
+            includeDotFiles: /^--?(?:df|D|(?:include-?)?dot-?files?=?(?:true|1)?)$/,
+            noRecursion: /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
+            noMangle: /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/,
+            noFilenameChange: /^--?(?:X|(?:disable|no)-?(?:file)?name-?change|(?:file)?name-?change=(?:false|0))$/,
+            rewriteImports: /^--?(?:i|rewrite-?imports?=?(?:true|1)?)$/,
+            relativeOutput: /^--?(?:r|relative-?output?=?(?:true|1)?)$/,
+            copy: /^--?c(?:opy)?$/,
+            quietMode: /^--?q(?:uiet)?(?:-?mode)?$/
         },
         paramOptions: {
-            'ignores': /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/,
-            'comment': /^--?comments?(?:=.*|$)/
+            ignores: /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/,
+            comment: /^--?comments?(?:=.*|$)/
         },
         infoCmds: {
-            'help': /^--?h(?:elp)?$/,
-            'version': /^--?ve?r?s?i?o?n?$/
+            help: /^--?h(?:elp)?$/,
+            version: /^--?ve?r?s?i?o?n?$/
         },
         version: /^[~^>=]?\d+\.\d+\.\d+$/
     }
@@ -275,15 +275,15 @@
     function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
         const appPrefix = `\x1b[106m\x1b[30m ${app.name.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
         const helpSections = {
-            'header': [
+            header: [
                 `\n├ ${appPrefix}${ app.msgs.appCopyright || app.copyright }`,
                 `${appPrefix}${ app.msgs.prefix_source || 'Source' }: ${app.urls.src}`
             ],
-            'usage': [
+            usage: [
                 `\n${bw}o ${ app.msgs.helpSection_usage || 'Usage' }:${nc}`,
                 ` ${bw}» ${bg}${app.cmdFormat}${nc}`
             ],
-            'pathArgs': [
+            pathArgs: [
                 `\n${bw}o ${ app.msgs.helpSection_pathArgs || 'Path arguments' }:${nc}`,
                 ' [inputPath]                         '
                     + `${ app.msgs.inputPathDesc_main || 'Path to JS file or directory containing JS files to be minified' }, `
@@ -292,7 +292,7 @@
                     + `${ app.msgs.outputPathDesc_main || 'Path to file or directory where minified files will be stored' }, `
                     + `${ app.msgs.outputPathDesc_extra || 'relative to original file location (if not provided, min/ is used)' }.`
             ],
-            'flags': [
+            flags: [
                 `\n${bw}o ${ app.msgs.helpSection_flags || 'Boolean options' }:${nc}`,
                 ' -n, --dry-run                       '
                     + `${ app.msgs.optionDesc_dryRun || 'Don\'t actually minify the file(s), '
@@ -308,13 +308,13 @@
                 ` -r, --relative-output               ${ app.msgs.optionDesc_relativeOutput || 'Output files relative to each source file instead of to input root' }.`,
                 ` -q, --quiet                         ${ app.msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`
             ],
-            'paramOptions': [
+            paramOptions: [
                 `\n${bw}o ${ app.msgs.helpSection_paramOptions || 'Parameter options' }:${nc}`,
                 `--ignores="dir/,file1.js,file2.js"   ${ app.msgs.optionDesc_ignores || 'Files/directories to exclude from minification' }.`,
                 `--comment="comment"                  ${ app.msgs.optionDesc_commentMain || 'Prepend header comment to minified code' }.`
                                                  +  ` ${ app.msgs.optionDesc_commentExtra || 'Separate by line using \'\\n\'' }.`
             ],
-            'infoCmds': [
+            infoCmds: [
                 `\n${bw}o ${ app.msgs.helpSection_infoCmds || 'Info commands' }:${nc}`,
                 ` -h, --help                          ${ app.msgs.optionDesc_help || 'Display help screen.' }`,
                 ` -v, --version                       ${ app.msgs.optionDesc_version || 'Show version number' }.`

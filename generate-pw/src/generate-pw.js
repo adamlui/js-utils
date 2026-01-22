@@ -232,7 +232,7 @@ function validateStrength(password, options = {}) {
     if (options.verbose) console.info(`${logPrefix}Validating password strength...`)
 
     // Count occurrences of each char type
-    const charCnts = { 'lower': 0, 'upper': 0, 'number': 0, 'symbol': 0 }
+    const charCnts = { lower: 0, upper: 0, number: 0, symbol: 0 }
     for (const char of password)
         for (const charType of Object.keys(charCnts))
             if ((charsets[charType] || charsets[charType + 's']).includes(char))

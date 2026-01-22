@@ -17,22 +17,22 @@
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
     app.regex = {
         flags: {
-            'dryRun': /^--?(?:n|dry-?run)$/,
-            'includeDotFolders': /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
-            'noSourceMaps': /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?|so?u?rce?-?maps?=(?:false|0))$/,
-            'noRecursion': /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
-            'noMinify': /^--?(?:M|(?:disable|no)-?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/,
-            'relativeOutput': /^--?(?:r|relative-?output?=?(?:true|1)?)$/,
-            'copy': /^--?c(?:opy)?$/,
-            'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
+            dryRun: /^--?(?:n|dry-?run)$/,
+            includeDotFolders: /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
+            noSourceMaps: /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?|so?u?rce?-?maps?=(?:false|0))$/,
+            noRecursion: /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
+            noMinify: /^--?(?:M|(?:disable|no)-?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/,
+            relativeOutput: /^--?(?:r|relative-?output?=?(?:true|1)?)$/,
+            copy: /^--?c(?:opy)?$/,
+            quietMode: /^--?q(?:uiet)?(?:-?mode)?$/
         },
         paramOptions: {
-            'ignores': /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/,
-            'comment': /^--?comments?(?:=.*|$)/
+            ignores: /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/,
+            comment: /^--?comments?(?:=.*|$)/
         },
         infoCmds: {
-            'help': /^--?h(?:elp)?$/,
-            'version': /^--?ve?r?s?i?o?n?$/
+            help: /^--?h(?:elp)?$/,
+            version: /^--?ve?r?s?i?o?n?$/
         },
         version: /^[~^>=]?\d+\.\d+\.\d+$/
     }
@@ -213,9 +213,9 @@
     function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
         const appPrefix = `\x1b[106m\x1b[30m ${app.name.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
         const helpSections = {
-            'header': [`\n├ ${appPrefix}${app.copyright}`, `${appPrefix}Source: ${app.urls.src}`],
-            'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}» ${bg}${app.cmdFormat}${nc}`],
-            'pathArgs': [
+            header: [`\n├ ${appPrefix}${app.copyright}`, `${appPrefix}Source: ${app.urls.src}`],
+            usage: [`\n${bw}o Usage:${nc}`, ` ${bw}» ${bg}${app.cmdFormat}${nc}`],
+            pathArgs: [
                 `\n${bw}o Path arguments:${nc}`,
                 ' [inputPath]                             '
                     + 'Path to SCSS file or directory containing SCSS files to be compiled,'
@@ -224,7 +224,7 @@
                     + 'Path to file or directory where CSS + sourcemap files will be stored,'
                     + ' relative to input root (if not provided, css/ is used).'
             ],
-            'flags': [
+            flags: [
                 `\n${bw}o Boolean options:${nc}`,
                 ' -n, --dry-run                           Don\'t actually compile the file(s),'
                                                         + ' just show if they will be processed.',
@@ -237,13 +237,13 @@
                                                         + ' if single source file is processed.',
                 ' -q, --quiet                             Suppress all logging except errors.'
             ],
-            'paramOptions': [
+            paramOptions: [
                 `\n${bw}o Parameter options:${nc}`,
                 '--ignores="dir/,file1.scss,file2.scss"   Files/directories to exclude from compilation.',
                 '--comment="comment"                      Prepend header comment to compiled CSS.'
                                                         + ' Separate by line using \'\\n\'.'
             ],
-            'infoCmds': [
+            infoCmds: [
                 `\n${bw}o Info commands:${nc}`,
                 ' -h, --help                              Display help screen.',
                 ' -v, --version                           Show version number.'

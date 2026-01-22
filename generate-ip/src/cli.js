@@ -17,15 +17,15 @@
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
     app.regex = {
         paramOptions: {
-            'qty': /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
+            qty: /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
         flags: {
-            'ipv6mode': /^--?(?:ip)?v?6(?:-?mode)?$/,
-            'macMode': /^--?m(?:ac)?(?:-?mode)?$/,
-            'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/
+            ipv6mode: /^--?(?:ip)?v?6(?:-?mode)?$/,
+            macMode: /^--?m(?:ac)?(?:-?mode)?$/,
+            quietMode: /^--?q(?:uiet)?(?:-?mode)?$/
         },
         infoCmds: {
-            'help': /^--?h(?:elp)?$/,
-            'version': /^--?ve?r?s?i?o?n?$/
+            help: /^--?h(?:elp)?$/,
+            version: /^--?ve?r?s?i?o?n?$/
         },
         version: /^[~^>=]?\d+\.\d+\.\d+$/
     }
@@ -159,25 +159,25 @@
     function printHelpSections(includeSections = ['header', 'usage', 'paramOptions', 'flags', 'infoCmds']) {
         const appPrefix = `\x1b[106m\x1b[30m ${app.name} ${nc} ` // bright teal bg + black fg
         const helpSections = {
-            'header': [
+            header: [
                 `\n├ ${appPrefix}${ app.msgs.appCopyright || app.copyright }`,
                 `${appPrefix}${ app.msgs.prefix_source || 'Source' }: ${app.urls.src}`
             ],
-            'usage': [
+            usage: [
                 `\n${bw}o ${ app.msgs.helpSection_usage || 'Usage' }:${nc}`,
                 ` ${bw}» ${bg}${app.cmdFormat}${nc}`
             ],
-            'paramOptions': [
+            paramOptions: [
                 `\n${bw}o ${ app.msgs.helpSection_paramOptions || 'Parameter options' }:${nc}`,
                 ` --qty=n                     ${ app.msgs.optionDesc_qty || 'Generate n IP address(es)' }.`
             ],
-            'flags': [
+            flags: [
                 `\n${bw}o ${ app.msgs.helpSection_flags || 'Boolean options' }:${nc}`,
                 ` -6, --ipv6                  ${ app.msgs.optionDesc_ipv6 || 'Generate IPv6 address' }.`,
                 ` -m, --mac                   ${ app.msgs.optionDesc_mac || 'Generate MAC address' }.`,
                 ` -q, --quiet                 ${ app.msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`
             ],
-            'infoCmds': [
+            infoCmds: [
                 `\n${bw}o ${ app.msgs.helpSection_infoCmds || 'Info commands' }:${nc}`,
                 ` -h, --help                  ${ app.msgs.optionDesc_help || 'Display help screen.' }`,
                 ` -v, --version               ${ app.msgs.optionDesc_version || 'Show version number' }.`
