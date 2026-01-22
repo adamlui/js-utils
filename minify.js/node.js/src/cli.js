@@ -12,7 +12,7 @@
 
     // Init APP data
     globalThis.app = require(path.join(__dirname, `${ __dirname.match(/src/) ? '../' : '' }app.json`))
-    app.config = {} ; app.urls.docs += '#-command-line-usage'
+    app.config = {} ; app.urls.docs += '/#-command-line-usage'
 
     // Init UI COLORS
     const nc = '\x1b[0m',    // no color
