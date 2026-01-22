@@ -84,7 +84,7 @@ const pkgName = '@adamlui/geolocate',
 
     // Show VERSION number if -v or --version passed
     else if (process.argv.some(arg => regex.infoCmds.version.test(arg))) {
-        const globalVer = execSync(`npm view ${pkgName} version`).toString().trim() || 'none'
+        const globalVer = execSync(`npm view ${JSON.stringify(pkgName)} version`).toString().trim() || 'none'
         let localVer, currentDir = process.cwd()
         while (currentDir != '/') {
             const localManifestPath = path.join(currentDir, 'package.json')
