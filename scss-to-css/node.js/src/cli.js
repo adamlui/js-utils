@@ -3,18 +3,16 @@
 (() => {
     'use strict'
 
-    const pkgName = '@adamlui/scss-to-css',
-          copyright = '© 2024–2026 Adam Lui & contributors under the MIT license.',
-          cmdFormat = 'scss-to-css [inputPath] [outputPath] [options]',
-          srcURL = 'https://github.com/adamlui/scss-to-css/tree/main/node.js/src',
-          docURL = 'https://github.com/adamlui/scss-to-css/tree/main/node.js/#-command-line-usage'
-
     // Import LIBS
     const { execSync } = require('child_process'), // for --version cmd
           fs = require('fs'),
           ncp = require('node-clipboardy'), // for --copy flag
           path = require('path'),
           scssToCSS = require(`./scss-to-css${ __dirname.match(/src/) ? '' : '.min' }.js`)
+
+    // Init APP data
+    globalThis.app = require(`${ __dirname.match(/src/) ? '..' : '.' }/app.json`)
+    app.config = {} ; app.urls.docs += '/#-command-line-usage'
 
     // Init UI colors
     const nc = '\x1b[0m',    // no color
@@ -24,7 +22,6 @@
           bw = '\x1b[1;97m'  // bright white
 
     // Load FLAG settings
-    const config = {}
     const regex = {
         flags: {
             'dryRun': /^--?(?:n|dry-?run)$/,
@@ -47,14 +44,14 @@
         const matchedFlag = Object.keys(regex.flags).find(flag => regex.flags[flag].test(arg)),
             matchedParamOption = Object.keys(regex.paramOptions).find(option => regex.paramOptions[option].test(arg)),
             matchedInfoCmd = Object.keys(regex.infoCmds).find(cmd => regex.infoCmds[cmd].test(arg))
-        if (matchedFlag) config[matchedFlag] = true
+        if (matchedFlag) app.config[matchedFlag] = true
         else if (matchedParamOption) {
             if (!/=.+/.test(arg)) {
                 console.error(`\n${br}ERROR: Arg [--${arg.replace(/-/g, '')}] requires '=' followed by a value.${nc}`)
                 printHelpCmdAndDocURL() ; process.exit(1)
             }
             const val = arg.split('=')[1]
-            config[matchedParamOption] = parseInt(val) || val
+            app.config[matchedParamOption] = parseInt(val) || val
         } else if (!matchedInfoCmd) {
             console.error(`\n${br}ERROR: Arg [${arg}] not recognized.${nc}`)
             console.info(`\n${by}Valid arguments are below.${nc}`)
@@ -68,14 +65,14 @@
 
     // Show VERSION number if -v or --version passed
     else if (process.argv.some(arg => regex.infoCmds.version.test(arg))) {
-        const globalVer = execSync(`npm view ${JSON.stringify(pkgName)} version`).toString().trim() || 'none'
+        const globalVer = execSync(`npm view ${JSON.stringify(app.name)} version`).toString().trim() || 'none'
         let localVer, currentDir = process.cwd()
         while (currentDir != '/') {
             const localManifestPath = path.join(currentDir, 'package.json')
             if (fs.existsSync(localManifestPath)) {
                 const localManifest = require(localManifestPath)
-                localVer = (localManifest.dependencies?.[pkgName]
-                         || localManifest.devDependencies?.[pkgName]
+                localVer = (localManifest.dependencies?.[app.name]
+                         || localManifest.devDependencies?.[app.name]
                 )?.match(/^[~^>=]?\d+\.\d+\.\d+$/)[1] || 'none'
                 break
             }
@@ -108,11 +105,11 @@
         // Find all eligible JavaScript files or arg-passed file
         const scssFiles = inputPath.endsWith('.scss') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
             : scssToCSS.findSCSS(inputPath, {
-                recursive: !config.noRecursion, verbose: !config.quietMode,
-                ignores: (config.ignores?.split(',') ?? []).map(item => item.trim())
+                recursive: !app.config.noRecursion, verbose: !app.config.quietMode,
+                ignores: (app.config.ignores?.split(',') ?? []).map(item => item.trim())
             })
 
-        if (config.dryRun) { // -n or --dry-run passed
+        if (app.config.dryRun) { // -n or --dry-run passed
             if (scssFiles.length) { // print files to be processed
                 console.info(`\n${by}SCSS files to be compiled:${nc}`)
                 scssFiles.forEach(file => console.info(file))
@@ -123,13 +120,13 @@
 
             // Build array of compilation data
             const failedPaths = [] ; let compileData = []
-            if (!config.relativeOutput && fs.statSync(inputPath).isDirectory()) {
+            if (!app.config.relativeOutput && fs.statSync(inputPath).isDirectory()) {
                 const compileResult = scssToCSS.compile(inputPath, {
-                    verbose: !config.quietMode, minify: !config.noMinify,
-                    comment: config.comment?.replace(/\\n/g, '\n'), relativeOutput: false,
-                    recursive: !config.noRecursion, dotFolders: !!config.includeDotFolders,
-                    sourceMaps: !config.noSourceMaps,
-                    ignores: config.ignores ? config.ignores.split(',').map(item => item.trim()) : []
+                    verbose: !app.config.quietMode, minify: !app.config.noMinify,
+                    comment: app.config.comment?.replace(/\\n/g, '\n'), relativeOutput: false,
+                    recursive: !app.config.noRecursion, dotFolders: !!app.config.includeDotFolders,
+                    sourceMaps: !app.config.noSourceMaps,
+                    ignores: app.config.ignores ? app.config.ignores.split(',').map(item => item.trim()) : []
                 })
                 if (Array.isArray(compileResult)) compileData = compileResult
                 if (compileResult) {
@@ -138,8 +135,8 @@
                 }
             } else compileData = scssFiles.map(scssPath => {
                     const compileResult = scssToCSS.compile(scssPath, {
-                        verbose: !config.quietMode, minify: !config.noMinify, sourceMaps: !config.noSourceMaps,
-                        comment: config.comment?.replace(/\\n/g, '\n')
+                        verbose: !app.config.quietMode, minify: !app.config.noMinify,
+                        sourceMaps: !app.config.noSourceMaps, comment: app.config.comment?.replace(/\\n/g, '\n')
                     })
                     if (compileResult.error) failedPaths.push(scssPath)
                     return compileResult
@@ -150,7 +147,7 @@
                 const cssCntSuffix = compileData.length > 1 ? 's' : ''
                 printIfNotQuiet(`\n${bg}Compilation complete!${nc}`)
                 printIfNotQuiet(`${bw}${compileData.length} CSS file${cssCntSuffix}`
-                    +( !config.noSourceMaps ? ` + ${compileData.length} source map${cssCntSuffix}` : '' )
+                    +( !app.config.noSourceMaps ? ` + ${compileData.length} source map${cssCntSuffix}` : '' )
                     + ` generated.${nc}`)
             } else printIfNotQuiet(`\n${by}No SCSS files processed.${nc}`)
             if (failedPaths.length) {
@@ -162,7 +159,7 @@
             if (compileData?.length == 0) process.exit(0)
 
             // Copy single result code to clipboard if --copy passed
-            if (config.copy && compileData?.length == 1) {
+            if (app.config.copy && compileData?.length == 1) {
                 console.log(`\n${bw}${compileData[0].code}${nc}`)
                 printIfNotQuiet('\nCopying to clipboard...')
                 ncp.writeSync(compileData[0].code)
@@ -171,11 +168,11 @@
                 printIfNotQuiet(`\nWriting to file${ compileData?.length > 1 ? 's' : '' }...`)
                 compileData?.forEach(({ code, srcMap, srcPath, relPath }) => {
                     let outputDir, outputFilename
-                    if (!config.relativeOutput && relPath) { // preserve folder structure
+                    if (!app.config.relativeOutput && relPath) { // preserve folder structure
                         const outputPath = path.resolve(process.cwd(), outputArg || 'css'),
                               relativeDir = path.dirname(relPath)
                         outputDir = relativeDir != '.' ? path.join(outputPath, relativeDir) : outputPath
-                        outputFilename = path.basename(srcPath, '.scss') + `${ config.noMinify ? '' : '.min' }.css`
+                        outputFilename = path.basename(srcPath, '.scss') + `${ app.config.noMinify ? '' : '.min' }.css`
                     } else {
                         outputDir = path.join(
                             path.dirname(srcPath), // path of file to be minified
@@ -192,7 +189,7 @@
                     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true })
                     fs.writeFileSync(outputPath, code, 'utf8')
                     printIfNotQuiet(`  ${bg}✓${nc} ${path.relative(process.cwd(), outputPath)}`)
-                    if (!config.noSourceMaps) fs.writeFileSync(outputPath + '.map', JSON.stringify(srcMap), 'utf8')
+                    if (!app.config.noSourceMaps) fs.writeFileSync(outputPath + '.map', JSON.stringify(srcMap), 'utf8')
                     printIfNotQuiet(`  ${bg}✓${nc} ${path.relative(process.cwd(), outputPath)}`)
                 })
             }
@@ -202,10 +199,10 @@
     // Define LOGGING functions
 
     function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
-        const appPrefix = `\x1b[106m\x1b[30m ${pkgName.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
+        const appPrefix = `\x1b[106m\x1b[30m ${app.name.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
         const helpSections = {
-            'header': [`\n├ ${appPrefix}${copyright}`, `${appPrefix}Source: ${srcURL}`],
-            'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}» ${bg}${cmdFormat}${nc}`],
+            'header': [`\n├ ${appPrefix}${app.copyright}`, `${appPrefix}Source: ${app.urls.src}`],
+            'usage': [`\n${bw}o Usage:${nc}`, ` ${bw}» ${bg}${app.cmdFormat}${nc}`],
             'pathArgs': [
                 `\n${bw}o Path arguments:${nc}`,
                 ' [inputPath]                             '
@@ -242,7 +239,7 @@
         }
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 41)))
-        console.info(`\nFor more help, please visit: ${bw}${docURL}${nc}`)
+        console.info(`\nFor more help, please visit: ${bw}${app.urls.docs}${nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
@@ -271,7 +268,7 @@
     }
 
     function printHelpCmdAndDocURL() {
-        console.info(`\nFor more help, type 'scss-to-css --help' or visit\n${bw}${docURL}${nc}`) }
+        console.info(`\nFor more help, type 'scss-to-css --help' or visit\n${bw}${app.urls.docs}${nc}`) }
 
-    function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg) }
+    function printIfNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) }
 })()

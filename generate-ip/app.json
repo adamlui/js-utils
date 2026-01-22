@@ -1,0 +1,15 @@
+{
+  "name": "generate-ip",
+  "copyright": "© 2024–2026 Adam Lui & contributors under the MIT license.",
+  "cmdFormat": "generate-[ip|ipv6|mac] [options|commands]",
+  "urls": {
+    "docs": "https://github.com/adamlui/js-utils/tree/main/generate-ip/docs",
+    "github": "https://github.com/adamlui/js-utils",
+    "jsdelivr": "https://cdn.jsdelivr.net/gh/adamlui/js-utils",
+    "npm": "https://www.npmjs.com/package/generate-ip",
+    "src": "https://github.com/adamlui/js-utils/tree/main/generate-ip/src"
+  },
+  "commitHashes": {
+    "locales": "0e30af1"
+  }
+}

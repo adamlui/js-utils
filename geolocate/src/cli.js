@@ -1,13 +1,6 @@
 #!/usr/bin/env node
 
-const pkgName = '@adamlui/geolocate',
-      copyright = '© 2024–2026 Adam Lui under the MIT license.',
-      cmdFormat = 'geolocate [ip1] [ip2] [...] [options|commands]',
-      srcURL = 'https://code.geolocatejs.org',
-      docURL = 'https://docs.geolocatejs.org/#-command-line-usage',
-      latestLocaleCommitHash = '0e30af1'
-
-;(async () => {
+(async () => {
     'use strict'
 
     // Import LIBS
@@ -15,6 +8,10 @@ const pkgName = '@adamlui/geolocate',
           fs = require('fs'),
           geo = require(`./geolocate${ __dirname.match(/src/) ? '' : '.min' }.js`),
           path = require('path')
+
+    // Init APP data
+    globalThis.app = require(`${ __dirname.match(/src/) ? '..' : '.' }/app.json`)
+    app.config = {} ; app.urls.docs += '/#-command-line-usage'
 
     // Init UI COLORS
     const nc = '\x1b[0m',    // no color
@@ -27,8 +24,9 @@ const pkgName = '@adamlui/geolocate',
     globalThis.env = { langCode: 'en' }
     if (process.platform == 'win32') {
         try {
-            env.langCode = execSync('(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' })
-                .trim()
+            env.langCode = execSync(
+                '(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' }
+            ).trim()
         } catch (err) { console.error('ERROR loading system language:', err.message) }
     } else { // macOS/Linux
         const pe = process.env
@@ -36,9 +34,8 @@ const pkgName = '@adamlui/geolocate',
     }
 
     // Define MESSAGES
-    let msgs = {}
     const msgsLoaded = new Promise((resolve, reject) => {
-        const msgHostDir = `https://cdn.jsdelivr.net/gh/adamlui/js-utils@${latestLocaleCommitHash}/geolocate/_locales/`,
+        const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/geolocate/_locales/`,
               msgLocaleDir = `${ env.langCode ? env.langCode.replace('-', '_') : 'en' }/`
         let msgHref = msgHostDir + msgLocaleDir + 'messages.json', msgFetchTries = 0
         fetchData(msgHref).then(handleMsgs).catch(reject)
@@ -58,10 +55,10 @@ const pkgName = '@adamlui/geolocate',
             }
         }
     })
-    try { msgs = await msgsLoaded } catch (err) { console.error(`ERROR fetching messages: ${err.message}`) }
+    try { app.msgs = await msgsLoaded }
+    catch (err) { app.msgs = {} ; console.error('ERROR fetching messages:', err.message) }
 
     // Load SETTINGS from args
-    const config = {}
     const regex = {
         flags: { 'quietMode': /^--?q(?:uiet)?(?:-?mode)?$/ },
         infoCmds: { 'help': /^--?h(?:elp)?$/, 'version': /^--?ve?r?s?i?o?n?$/ }
@@ -70,35 +67,36 @@ const pkgName = '@adamlui/geolocate',
         if (!arg.startsWith('-')) return
         const matchedFlag = Object.keys(regex.flags).find(flag => regex.flags[flag].test(arg)),
               matchedInfoCmd = Object.keys(regex.infoCmds).find(cmd => regex.infoCmds[cmd].test(arg))
-        if (matchedFlag) config[matchedFlag] = true
+        if (matchedFlag) app.config[matchedFlag] = true
         else if (!matchedInfoCmd) {
-            console.error(`\n${ br +( msgs.prefix_error || 'ERROR' )}: `
-                + `Arg [${arg}] ${ msgs.error_notRecognized || 'not recognized' }.${nc}`)
-            console.info(`\n${ by +( msgs.info_validArgs || 'Valid arguments are below' )}.${nc}`)
+            console.error(`\n${ br +( app.msgs.prefix_error || 'ERROR' )}: `
+                + `Arg [${arg}] ${ app.msgs.error_notRecognized || 'not recognized' }.${nc}`)
+            console.info(`\n${ by +( app.msgs.info_validArgs || 'Valid arguments are below' )}.${nc}`)
             printHelpSections(['configOptions', 'infoCmds'])
             process.exit(1)
-    }})
+        }
+    })
 
     // Show HELP screen if -h or --help passed
     if (process.argv.some(arg => regex.infoCmds.help.test(arg))) printHelpSections()
 
     // Show VERSION number if -v or --version passed
     else if (process.argv.some(arg => regex.infoCmds.version.test(arg))) {
-        const globalVer = execSync(`npm view ${JSON.stringify(pkgName)} version`).toString().trim() || 'none'
+        const globalVer = execSync(`npm view ${JSON.stringify(app.name)} version`).toString().trim() || 'none'
         let localVer, currentDir = process.cwd()
         while (currentDir != '/') {
             const localManifestPath = path.join(currentDir, 'package.json')
             if (fs.existsSync(localManifestPath)) {
                 const localManifest = require(localManifestPath)
-                localVer = (localManifest.dependencies?.[pkgName]
-                         || localManifest.devDependencies?.[pkgName]
+                localVer = (localManifest.dependencies?.[app.name]
+                         || localManifest.devDependencies?.[app.name]
                 )?.match(/^[~^>=]?\d+\.\d+\.\d+$/)?.[1] || 'none'
                 break
             }
             currentDir = path.dirname(currentDir)
         }
-        console.info(`\n${ msgs.prefix_globalVer || 'Global version' }: ${globalVer}`)
-        console.info(`${ msgs.prefix_localVer || 'Local version' }: ${localVer}`)
+        console.info(`\n${ app.msgs.prefix_globalVer || 'Global version' }: ${globalVer}`)
+        console.info(`${ app.msgs.prefix_localVer || 'Local version' }: ${localVer}`)
 
     } else { // run MAIN routine
 
@@ -110,19 +108,19 @@ const pkgName = '@adamlui/geolocate',
         }
 
         // Fetch/store geolocation data
-        const geoResults = await geo.locate(validIPs, { verbose: !config.quietMode })
+        const geoResults = await geo.locate(validIPs, { verbose: !app.config.quietMode })
         if (!geoResults) process.exit(1)
 
         // Log single result
-        if (!config.quietMode && geoResults.length == 1) {
+        if (!app.config.quietMode && geoResults.length == 1) {
             console.info(`\nIP: ${bw}${geoResults[0].ip}${nc}`)
-            console.info(`${ msgs.geoLabel_country || 'Country' }: ${bw}${geoResults[0].country}${nc}}`)
-            console.info(`${ msgs.geoLabel_region || 'Region' }: ${bw}${geoResults[0].regionName}${nc}}`)
-            console.info(`${ msgs.geoLabel_city || 'City' }: ${bw}${geoResults[0].city}${nc}}`)
-            console.info(`${ msgs.geoLabel_zip || 'Zip' }: ${bw}${geoResults[0].zip}${nc}}`)
-            console.info(`${ msgs.geoLabel_lat || 'Latitude' }: ${bw}${geoResults[0].lat}${nc}}`)
-            console.info(`${ msgs.geoLabel_lon || 'Longitude' }: ${bw}${geoResults[0].lon}${nc}}`)
-            console.info(`${ msgs.geoLabel_timeZone || 'Time zone' }: ${bw}${geoResults[0].timezone
+            console.info(`${ app.msgs.geoLabel_country || 'Country' }: ${bw}${geoResults[0].country}${nc}}`)
+            console.info(`${ app.msgs.geoLabel_region || 'Region' }: ${bw}${geoResults[0].regionName}${nc}}`)
+            console.info(`${ app.msgs.geoLabel_city || 'City' }: ${bw}${geoResults[0].city}${nc}}`)
+            console.info(`${ app.msgs.geoLabel_zip || 'Zip' }: ${bw}${geoResults[0].zip}${nc}}`)
+            console.info(`${ app.msgs.geoLabel_lat || 'Latitude' }: ${bw}${geoResults[0].lat}${nc}}`)
+            console.info(`${ app.msgs.geoLabel_lon || 'Longitude' }: ${bw}${geoResults[0].lon}${nc}}`)
+            console.info(`${ app.msgs.geoLabel_timeZone || 'Time zone' }: ${bw}${geoResults[0].timezone
                 .replace(/_/g, ' ') // insert spaces
                 .replace(/\//g, ' / ') // pad slashes
             }${nc}`)
@@ -130,7 +128,7 @@ const pkgName = '@adamlui/geolocate',
         }
 
         // Copy to clipboard
-        printIfNotQuiet(`\n${ msgs.info_copying || 'Copying to clipboard' }...`)
+        printIfNotQuiet(`\n${ app.msgs.info_copying || 'Copying to clipboard' }...`)
         copyToClipboard(JSON.stringify(geoResults, undefined, 2))
     }
 
@@ -152,7 +150,7 @@ const pkgName = '@adamlui/geolocate',
     function fetchData(url) { // instead of fetch() to support Node.js < v21
         return new Promise((resolve, reject) => {
             const protocol = url.match(/^([^:]+):\/\//)[1]
-            if (!/^https?$/.test(protocol)) reject(new Error(`${ msgs.error_invalidURL || 'Invalid URL' }.`))
+            if (!/^https?$/.test(protocol)) reject(new Error(`${ app.msgs.error_invalidURL || 'Invalid URL' }.`))
             require(protocol).get(url, resp => {
                 let rawData = ''
                 resp.on('data', chunk => rawData += chunk)
@@ -161,30 +159,32 @@ const pkgName = '@adamlui/geolocate',
     })}
 
     function printHelpSections(includeSections = ['header', 'usage', 'configOptions', 'infoCmds']) {
-        const appPrefix = `\x1b[106m\x1b[30m ${pkgName.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
+        const appPrefix = `\x1b[106m\x1b[30m ${app.name.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
         const helpSections = {
             'header': [
-                `\n├ ${appPrefix}${ msgs.appCopyright || copyright }`,
-                `${appPrefix}${ msgs.prefix_source || 'Source' }: ${srcURL}`
+                `\n├ ${appPrefix}${ app.msgs.appCopyright || app.copyright }`,
+                `${appPrefix}${ app.msgs.prefix_source || 'Source' }: ${app.urls.src}`
             ],
             'usage': [
-                `\n${bw}o ${ msgs.helpSection_usage || 'Usage' }:${nc}`,
-                ` ${bw}» ${bg}${cmdFormat}${nc}`
+                `\n${bw}o ${ app.msgs.helpSection_usage || 'Usage' }:${nc}`,
+                ` ${bw}» ${bg}${app.cmdFormat}${nc}`
             ],
             'configOptions': [
-                `\n${bw}o ${ msgs.helpSection_configOptions || 'Config options' }:${nc}`,
-                ` -q, --quiet                 ${ msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`
+                `\n${bw}o ${ app.msgs.helpSection_configOptions || 'Config options' }:${nc}`,
+                ` -q, --quiet                 ${ app.msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`
             ],
             'infoCmds': [
-                `\n${bw}o ${ msgs.helpSection_infoCmds || 'Info commands' }:${nc}`,
-                ` -h, --help                  ${ msgs.optionDesc_help || 'Display help screen.' }`,
-                ` -v, --version               ${ msgs.optionDesc_version || 'Show version number' }.`
+                `\n${bw}o ${ app.msgs.helpSection_infoCmds || 'Info commands' }:${nc}`,
+                ` -h, --help                  ${ app.msgs.optionDesc_help || 'Display help screen.' }`,
+                ` -v, --version               ${ app.msgs.optionDesc_version || 'Show version number' }.`
             ]
         }
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)))
         console.info(
-            `\n${ msgs.info_moreHelp || 'For more help' }, ${ msgs.info_visit || 'visit' }: ${bw}${docURL}${nc}`)
+            `\n${ app.msgs.info_moreHelp || 'For more help' }, ${
+                  app.msgs.info_visit || 'visit' }: ${bw}${app.urls.docs}${nc}`
+        )
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
@@ -211,6 +211,6 @@ const pkgName = '@adamlui/geolocate',
         }
     }
 
-    function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg) }
+    function printIfNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) }
 
 })()

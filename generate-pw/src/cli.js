@@ -1,13 +1,6 @@
 #!/usr/bin/env node
 
-const pkgName = 'generate-pw',
-      copyright = '© 2024–2026 Adam Lui & contributors under the MIT license.',
-      cmdFormat = 'generate-pw [options|commands]',
-      srcURL = 'https://code.generatepw.org',
-      docURL = 'https://docs.generatepw.org/#-command-line-usage',
-      latestLocaleCommitHash = '0e30af1'
-
-;(async () => {
+(async () => {
     'use strict'
 
     // Import LIBS
@@ -15,6 +8,10 @@ const pkgName = 'generate-pw',
           fs = require('fs'),
           { generatePassword } = require(`./generate-pw${ __dirname.match(/src/) ? '' : '.min' }.js`),
           path = require('path')
+
+    // Init APP data
+    globalThis.app = require(`${ __dirname.match(/src/) ? '..' : '.' }/app.json`)
+    app.config = {} ; app.urls.docs += '/#-command-line-usage'
 
     // Init UI COLORS
     const nc = '\x1b[0m',    // no color
@@ -36,11 +33,9 @@ const pkgName = 'generate-pw',
     }
 
     // Define MESSAGES
-    let msgs = {}
     const msgsLoaded = new Promise((resolve, reject) => {
-        const msgHostDir = `https://cdn.jsdelivr.net/gh/adamlui/js-utils@${
-                            latestLocaleCommitHash}/${pkgName}/_locales/`
-        const msgLocaleDir = `${ env.langCode ? env.langCode.replace('-', '_') : 'en' }/`
+        const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/${app.name}/_locales/`,
+              msgLocaleDir = `${ env.langCode ? env.langCode.replace('-', '_') : 'en' }/`
         let msgHref = msgHostDir + msgLocaleDir + 'messages.json', msgFetchTries = 0
         fetchData(msgHref).then(handleMsgs).catch(reject)
         async function handleMsgs(resp) {
@@ -59,10 +54,10 @@ const pkgName = 'generate-pw',
             }
         }
     })
-    try { msgs = await msgsLoaded } catch (err) { console.error(`ERROR fetching messages: ${err.message}`) }
+    try { app.msgs = await msgsLoaded }
+    catch (err) { app.msgs = {} ; console.error('ERROR fetching messages:', err.message) }
 
     // Load SETTINGS from args
-    const config = {}
     const regex = {
         paramOptions: {
             'length': /^--?length(?:=.*|$)/,
@@ -87,27 +82,28 @@ const pkgName = 'generate-pw',
         const matchedParamOption = Object.keys(regex.paramOptions).find(option => regex.paramOptions[option].test(arg)),
               matchedFlag = Object.keys(regex.flags).find(flag => regex.flags[flag].test(arg)),
               matchedInfoCmd = Object.keys(regex.infoCmds).find(cmd => regex.infoCmds[cmd].test(arg))
-        if (matchedFlag) config[matchedFlag] = true
+        if (matchedFlag) app.config[matchedFlag] = true
         else if (matchedParamOption) {
             if (!/=.+/.test(arg)) {
-                console.error(`\n${ br +( msgs.prefix_error || 'ERROR' )}: `
+                console.error(`\n${ br +( app.msgs.prefix_error || 'ERROR' )}: `
                     + `Arg [--${arg.replace(/-/g, '')}] `
-                    + `${ msgs.error_noEqual || 'requires \'=\' followed by a value' }.${nc}`)
+                    + `${ app.msgs.error_noEqual || 'requires \'=\' followed by a value' }.${nc}`)
                 printHelpCmdAndDocURL() ; process.exit(1)
             }
             const val = arg.split('=')[1]
-            config[matchedParamOption] = parseInt(val) || val
+            app.config[matchedParamOption] = parseInt(val) || val
         } else if (!matchedInfoCmd) {
-            console.error(`\n${ br +( msgs.prefix_error || 'ERROR' )}: `
-                + `Arg [${arg}] ${ msgs.error_notRecognized || 'not recognized' }.${nc}`)
-            console.info(`\n${ by +( msgs.info_validArgs || 'Valid arguments are below' )}.${nc}`)
+            console.error(`\n${ br +( app.msgs.prefix_error || 'ERROR' )}: `
+                + `Arg [${arg}] ${ app.msgs.error_notRecognized || 'not recognized' }.${nc}`)
+            console.info(`\n${ by +( app.msgs.info_validArgs || 'Valid arguments are below' )}.${nc}`)
             printHelpSections(['paramOptions', 'flags', 'infoCmds'])
             process.exit(1)
-    }})
+        }
+    })
     for (const numArgType of ['length', 'qty'])
-        if (config[numArgType] && (isNaN(config[numArgType]) || config[numArgType] < 1)) {
-            console.error(`\n${ br +( msgs.prefix_error || 'ERROR' )}: [${numArgType}] `
-                + `${ msgs.error_nonPositiveNum || 'argument can only be > 0' }.${nc}`)
+        if (app.config[numArgType] && (isNaN(app.config[numArgType]) || app.config[numArgType] < 1)) {
+            console.error(`\n${ br +( app.msgs.prefix_error || 'ERROR' )}: [${numArgType}] `
+                + `${ app.msgs.error_nonPositiveNum || 'argument can only be > 0' }.${nc}`)
             printHelpCmdAndDocURL() ; process.exit(1)
         }
 
@@ -116,33 +112,33 @@ const pkgName = 'generate-pw',
 
     // Show VERSION number if -v or --version passed
     else if (process.argv.some(arg => regex.infoCmds.version.test(arg))) {
-        const globalVer = execSync(`npm view ${JSON.stringify(pkgName)} version`).toString().trim() || 'none'
+        const globalVer = execSync(`npm view ${JSON.stringify(app.name)} version`).toString().trim() || 'none'
         let localVer, currentDir = process.cwd()
         while (currentDir != '/') {
             const localManifestPath = path.join(currentDir, 'package.json')
             if (fs.existsSync(localManifestPath)) {
                 const localManifest = require(localManifestPath)
-                localVer = (localManifest.dependencies?.[pkgName]
-                         || localManifest.devDependencies?.[pkgName]
+                localVer = (localManifest.dependencies?.[app.name]
+                         || localManifest.devDependencies?.[app.name]
                 )?.match(/^[~^>=]?\d+\.\d+\.\d+$/)?.[1] || 'none'
                 break
             }
             currentDir = path.dirname(currentDir)
         }
-        console.info(`\n${ msgs.prefix_globalVer || 'Global version' }: ${globalVer}`)
-        console.info(`${ msgs.prefix_localVer || 'Local version' }: ${localVer}`)
+        console.info(`\n${ app.msgs.prefix_globalVer || 'Global version' }: ${globalVer}`)
+        console.info(`${ app.msgs.prefix_localVer || 'Local version' }: ${localVer}`)
 
     } else { // run MAIN routine
         const funcOptions = {
-            length: config.length || 8, qty: config.qty || 1,
-            charset: config.charset, exclude: config.excludeChars,
-            numbers: !!config.includeNums, symbols: !!config.includeSymbols,
-            lowercase: !config.excludeLowerChars, uppercase: !config.excludeUpperChars,
-            excludeSimilarChars: !!config.excludeSimilarChars,
-            strict: !!config.strictMode, verbose: !config.quietMode
+            length: app.config.length || 8, qty: app.config.qty || 1,
+            charset: app.config.charset, exclude: app.config.excludeChars,
+            numbers: !!app.config.includeNums, symbols: !!app.config.includeSymbols,
+            lowercase: !app.config.excludeLowerChars, uppercase: !app.config.excludeUpperChars,
+            excludeSimilarChars: !!app.config.excludeSimilarChars,
+            strict: !!app.config.strictMode, verbose: !app.config.quietMode
         }
         const pwResult = generatePassword(funcOptions)
-        printIfNotQuiet(`\n${ msgs.info_copying || 'Copying to clipboard' }...`)
+        printIfNotQuiet(`\n${ app.msgs.info_copying || 'Copying to clipboard' }...`)
         copyToClipboard(Array.isArray(pwResult) ? pwResult.join('\n') : pwResult)
     }
 
@@ -164,7 +160,7 @@ const pkgName = 'generate-pw',
     function fetchData(url) { // instead of fetch() to support Node.js < v21
         return new Promise((resolve, reject) => {
             const protocol = url.match(/^([^:]+):\/\//)[1]
-            if (!/^https?$/.test(protocol)) reject(new Error(`${ msgs.error_invalidURL || 'Invalid URL' }.`))
+            if (!/^https?$/.test(protocol)) reject(new Error(`${ app.msgs.error_invalidURL || 'Invalid URL' }.`))
             require(protocol).get(url, resp => {
                 let rawData = ''
                 resp.on('data', chunk => rawData += chunk)
@@ -174,51 +170,53 @@ const pkgName = 'generate-pw',
     }
 
     function printHelpCmdAndDocURL() {
-        console.info(`\n${ msgs.info_moreHelp || 'For more help' }, ${
-            msgs.info_type || 'type' } generate-pw --help' ${ msgs.info_or || 'or' } ${
-            msgs.info_visit || 'visit' }\n${bw}${docURL}${nc}`
+        console.info(`\n${ app.msgs.info_moreHelp || 'For more help' }, ${
+            app.msgs.info_type || 'type' } generate-pw --help' ${ app.msgs.info_or || 'or' } ${
+            app.msgs.info_visit || 'visit' }\n${bw}${app.urls.docs}${nc}`
         )
     }
 
     function printHelpSections(includeSections = ['header', 'usage', 'paramOptions', 'flags', 'infoCmds']) {
-        const appPrefix = `\x1b[106m\x1b[30m ${pkgName} ${nc} ` // bright teal bg + black fg
+        const appPrefix = `\x1b[106m\x1b[30m ${app.name} ${nc} ` // bright teal bg + black fg
         const helpSections = {
             'header': [
-                `\n├ ${appPrefix}${ msgs.appCopyright || copyright }`,
-                `${appPrefix}${ msgs.prefix_source || 'Source' }: ${srcURL}`
+                `\n├ ${appPrefix}${ app.msgs.appCopyright || app.copyright }`,
+                `${appPrefix}${ app.msgs.prefix_source || 'Source' }: ${app.urls.src}`
             ],
             'usage': [
-                `\n${bw}o ${ msgs.helpSection_usage || 'Usage' }:${nc}`,
-                ` ${bw}» ${bg}${cmdFormat}${nc}`
+                `\n${bw}o ${ app.msgs.helpSection_usage || 'Usage' }:${nc}`,
+                ` ${bw}» ${bg}${app.cmdFormat}${nc}`
             ],
             'paramOptions': [
-                `\n${bw}o ${ msgs.helpSection_paramOptions || 'Parameter options' }:${nc}`,
-                ` --length=n                  ${ msgs.optionDesc_length || 'Generate password(s) of n length' }.`,
-                ` --qty=n                     ${ msgs.optionDesc_qty || 'Generate n password(s)' }.`,
-                ` --charset=chars             ${ msgs.optionDesc_charset || 'Only include chars in password(s)' }.`,
-                ` --exclude=chars             ${ msgs.optionDesc_exclude || 'Exclude chars from password(s)' }.`
+                `\n${bw}o ${ app.msgs.helpSection_paramOptions || 'Parameter options' }:${nc}`,
+                ` --length=n                  ${ app.msgs.optionDesc_length || 'Generate password(s) of n length' }.`,
+                ` --qty=n                     ${ app.msgs.optionDesc_qty || 'Generate n password(s)' }.`,
+                ` --charset=chars             ${ app.msgs.optionDesc_charset || 'Only include chars in password(s)' }.`,
+                ` --exclude=chars             ${ app.msgs.optionDesc_exclude || 'Exclude chars from password(s)' }.`
             ],
             'flags': [
-                `\n${bw}o ${ msgs.helpSection_flags || 'Boolean options' }:${nc}`,
-                ` -n, --include-numbers       ${ msgs.optionDesc_includeNums || 'Allow numbers in password(s)' }.`,
-                ` -y, --include-symbols       ${ msgs.optionDesc_includeSymbols || 'Allow symbols in password(s)' }.`,
-                ` -L, --no-lowercase          ${ msgs.optionDesc_noLower || 'Disallow lowercase letters in password(s)' }.`,
-                ` -U, --no-uppercase          ${ msgs.optionDesc_noUpper || 'Disallow uppercase letters in password(s)' }.`,
-                ` -S, --no-similar            ${ msgs.optionDesc_noSimilar || 'Exclude similar characters in password(s)' }.`,
-                ` -s, --strict                ${ msgs.optionDesc_strict || 'Require at least one character from each'
+                `\n${bw}o ${ app.msgs.helpSection_flags || 'Boolean options' }:${nc}`,
+                ` -n, --include-numbers       ${ app.msgs.optionDesc_includeNums || 'Allow numbers in password(s)' }.`,
+                ` -y, --include-symbols       ${ app.msgs.optionDesc_includeSymbols || 'Allow symbols in password(s)' }.`,
+                ` -L, --no-lowercase          ${ app.msgs.optionDesc_noLower || 'Disallow lowercase letters in password(s)' }.`,
+                ` -U, --no-uppercase          ${ app.msgs.optionDesc_noUpper || 'Disallow uppercase letters in password(s)' }.`,
+                ` -S, --no-similar            ${ app.msgs.optionDesc_noSimilar || 'Exclude similar characters in password(s)' }.`,
+                ` -s, --strict                ${ app.msgs.optionDesc_strict || 'Require at least one character from each'
                                                                          + 'allowed character set in password(s)' }.`,
-                ` -q, --quiet                 ${ msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`
+                ` -q, --quiet                 ${ app.msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`
             ],
             'infoCmds': [
-                `\n${bw}o ${ msgs.helpSection_infoCmds || 'Info commands' }:${nc}`,
-                ` -h, --help                  ${ msgs.optionDesc_help || 'Display help screen.' }`,
-                ` -v, --version               ${ msgs.optionDesc_version || 'Show version number' }.`
+                `\n${bw}o ${ app.msgs.helpSection_infoCmds || 'Info commands' }:${nc}`,
+                ` -h, --help                  ${ app.msgs.optionDesc_help || 'Display help screen.' }`,
+                ` -v, --version               ${ app.msgs.optionDesc_version || 'Show version number' }.`
             ]
         }
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)))
         console.info(
-            `\n${ msgs.info_moreHelp || 'For more help' }, ${ msgs.info_visit || 'visit' }: ${bw}${docURL}${nc}`)
+            `\n${ app.msgs.info_moreHelp || 'For more help' }, ${
+                  app.msgs.info_visit || 'visit' }: ${bw}${app.urls.docs}${nc}`
+        )
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
@@ -245,6 +243,6 @@ const pkgName = 'generate-pw',
         }
     }
 
-    function printIfNotQuiet(msg) { if (!config.quietMode) console.info(msg) }
+    function printIfNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) }
 
 })()
