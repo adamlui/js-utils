@@ -59,10 +59,9 @@
     }
 
     // Load MESSAGES
-    try {
-        const localMsgs = require(`${ env.devMode ? '../_locales/en' : '.' }/messages.json`)
-        if (env.sysLang.startsWith('en')) app.msgs = flattenMsgs(localMsgs)
-        else { // fetch from jsDelivr
+    app.msgs = flattenMsgs(require(`${ env.devMode ? '../_locales/en' : '.' }/messages.json`))
+    if (!env.sysLang.startsWith('en'))
+        try { // to fetch from jsDelivr
             const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`,
                   msgLocaleDir = `${ env.sysLang ? env.sysLang.replace('-', '_') : 'en' }/`
             let msgHref = `${msgHostDir}${msgLocaleDir}messages.json`, msgFetchTries = 0
@@ -70,14 +69,12 @@
                 try { // to return localized messages.json
                     app.msgs = flattenMsgs(await (await fetchData(msgHref)).json()) ; break
                 } catch (err) { // if bad response
-                    msgFetchTries++ ; if (msgFetchTries == 3) { // fallback to local msgs
-                        app.msgs = flattenMsgs(localMsgs) ; break }
+                    msgFetchTries++ ; if (msgFetchTries == 3) break // try original/region-stripped/EN only
                     msgHref = env.sysLang.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                         msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
                             : `${msgHostDir}en/messages.json` // else use default English messages
                 }
-        }
-    } catch (err) { app.msgs = {} ; console.error('ERROR loading messages:', err.message) }
+        } catch (err) { console.error('ERROR loading messages:', err.message) }
 
     // Load SETTINGS from args
     process.argv.forEach(arg => {
