@@ -14,7 +14,7 @@
           path = require('path')
 
     // Init APP data
-    globalThis.app = require(`../${ env.devMode ? '../' : '' }app.json`)
+    globalThis.app = require(`../${ env.devMode ? '../' : 'data/' }app.json`)
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
     app.regex = {
         paramOptions: {
@@ -51,7 +51,8 @@
     }
 
     // Load MESSAGES
-    app.msgs = data.flatten(require(`${ env.devMode ? '../../_locales/en' : '.' }/messages.json`), { type: 'message' })
+    app.msgs = data.flatten(
+        require(`${ env.devMode ? '../../_locales/en' : './data' }/messages.json`), { type: 'message' })
     if (!env.sysLang.startsWith('en'))
         try { // to fetch from jsDelivr
             const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/${app.name}/_locales/`,
