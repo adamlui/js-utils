@@ -14,7 +14,7 @@
 
     // Init APP data
     globalThis.app = require(`../${ env.devMode ? '../' : 'data/' }app.json`)
-    app.config = {} ; app.urls.docs += '/#-command-line-usage'
+    app.urls.docs += '/#-command-line-usage'
     app.regex = {
         flags: {
             dryRun: /^--?(?:n|dry-?run)$/,
@@ -45,6 +45,7 @@
           bw = '\x1b[1;97m'  // bright white
 
     // Load SETTINGS from args
+    app.config = {}
     process.argv.forEach(arg => {
         if (!arg.startsWith('-')) return
         const matchedParamOption = Object.keys(app.regex.paramOptions)
