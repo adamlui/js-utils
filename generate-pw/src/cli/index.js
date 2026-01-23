@@ -10,13 +10,13 @@
         { execSync } = require('child_process'),
           fs = require('fs'),
         { generatePassword } = require(`../generate-pw${ env.devMode ? '' : '.min' }.js`),
-          language = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
+        { getMsgs, getSysLang } = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
           path = require('path')
 
     // Init APP data
     globalThis.app = require(`../${ env.devMode ? '../' : 'data/' }app.json`)
     app.urls.docs += '/#-command-line-usage'
-    app.msgs = await language.getMsgs(language.getSysLang())
+    app.msgs = await getMsgs(getSysLang())
     app.regex = {
         paramOptions: {
             length: /^--?length(?:=.*|$)/,

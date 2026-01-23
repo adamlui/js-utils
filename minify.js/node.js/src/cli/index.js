@@ -9,14 +9,14 @@
     const clipboardy = require('node-clipboardy'),
         { execSync } = require('child_process'),
           fs = require('fs'),
-          language = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
+        { getMsgs, getSysLang } = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
           minifyJS = require(`../minify${ env.devMode ? '' : '.min' }.js`),
           path = require('path')
 
     // Init APP data
     globalThis.app = require(`../${ env.devMode ? '../' : 'data/' }app.json`)
     app.urls.docs += '/#-command-line-usage'
-    app.msgs = await language.getMsgs(language.getSysLang())
+    app.msgs = await getMsgs(getSysLang())
     app.regex = {
         flags: {
             dryRun: /^--?(?:n|dry-?run)$/,
