@@ -33,7 +33,7 @@
     "docs/"
   ],
   "bin": {
-    "geolocate": "dist/cli.min.js"
+    "geolocate": "dist/cli/index.min.js"
   },
   "directories": {
     "lib": "./dist",

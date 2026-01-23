@@ -34,8 +34,8 @@
     "!docs/*/"
   ],
   "bin": {
-    "scsstocss": "dist/cli.min.js",
-    "scss-to-css": "dist/cli.min.js"
+    "scsstocss": "dist/cli/index.min.js",
+    "scss-to-css": "dist/cli/index.min.js"
   },
   "directories": {
     "lib": "./dist",

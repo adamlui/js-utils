@@ -34,8 +34,8 @@
     "!docs/*/"
   ],
   "bin": {
-    "generatepw": "dist/cli.min.js",
-    "generate-pw": "dist/cli.min.js"
+    "generatepw": "dist/cli/index.min.js",
+    "generate-pw": "dist/cli/index.min.js"
   },
   "directories": {
     "lib": "./dist",
