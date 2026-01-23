@@ -14,7 +14,7 @@
           path = require('path')
 
     // Init APP data
-    globalThis.app = require(`../${ env.devMode ? '../' : 'data/' }app.json`)
+    globalThis.app = require(`../${ env.devMode ? '../' : './data/' }app.json`)
     app.urls.docs += '/#-command-line-usage' ; app.msgs = await getMsgs(getSysLang())
     app.regex = {
         flags: {

@@ -13,7 +13,7 @@
           scssToCSS = require(`../scss-to-css${ env.devMode ? '' : '.min' }.js`)
 
     // Init APP data
-    globalThis.app = require(`../${ env.devMode ? '../' : 'data/' }app.json`)
+    globalThis.app = require(`../${ env.devMode ? '../' : './data/' }app.json`)
     app.urls.docs += '/#-command-line-usage'
     app.regex = {
         flags: {
