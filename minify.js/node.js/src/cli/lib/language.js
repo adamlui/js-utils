@@ -2,19 +2,19 @@ module.exports = {
     async getMsgs(langCode = 'en') {
         const data = require(`./data${ env.devMode ? '' : '.min' }.js`)
         let msgs = data.flatten(
-            require(`../../../${ env.devMode ? '../_locales/en/' : 'data/' }messages.json`), { type: 'message' })
+            require(`../../../${ env.devMode ? '../_locales/en/' : 'data/' }messages.json`), { key: 'message' })
         if (!langCode.startsWith('en')) { // fetch non-English msgs from jsDelivr
-            const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`,
+            const msgHostURL = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`,
                   msgLocaleDir = `${ langCode ? langCode.replace('-', '_') : 'en' }/`
-            let msgHref = `${msgHostDir}${msgLocaleDir}messages.json`, msgFetchTries = 0
+            let msgHref = `${msgHostURL}${msgLocaleDir}messages.json`, msgFetchTries = 0
             while (msgFetchTries < 3)
                 try {
-                    msgs = data.flatten(await (await data.fetch(msgHref)).json(), { type: 'message' }) ; break
+                    msgs = data.flatten(await (await data.fetch(msgHref)).json(), { key: 'message' }) ; break
                 } catch (err) { // if bad response
                     msgFetchTries++ ; if (msgFetchTries == 3) break // try original/region-stripped/EN only
                     msgHref = langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                         msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
-                            : `${msgHostDir}en/messages.json` // else use default English messages
+                            : `${msgHostURL}en/messages.json` // else use default English messages
                 }
         }
         return msgs
