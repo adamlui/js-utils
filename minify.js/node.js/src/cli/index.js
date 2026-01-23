@@ -48,7 +48,8 @@
           bw = '\x1b[1;97m'  // bright white
 
     // Init LANGUAGE props
-    env.sysLang = language.getSysLang() ; app.msgs = await language.getMsgs()
+    env.sysLang = language.getSysLang()
+    app.msgs = await language.getMsgs()
 
     // Load SETTINGS from args
     process.argv.forEach(arg => {
