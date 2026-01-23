@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script automates...
+# This script automates:
 # >>> bump versions in manifests + READMEs >>> commit bumps to Git
 # >>> build minified JS to dist/ >>> update jsDelivr URLs for GH assets in cli.min.js
 # >>> commit build to Git >>> push all changes to GitHub >>> publish to npm (optional)
