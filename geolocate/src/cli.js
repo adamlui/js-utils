@@ -46,7 +46,7 @@
 
     // Load MESSAGES
     try {
-        const localMsgs = require(`${ env.devMode ? '..' : '.' }/_locales/en/messages.json`)
+        const localMsgs = require(`${ env.devMode ? '../_locales/en' : '.' }/messages.json`)
         if (env.sysLang.startsWith('en')) app.msgs = flattenMsgs(localMsgs)
         else { // fetch from jsDelivr
             const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/${app.name.split('/')[1]}/_locales/`,
