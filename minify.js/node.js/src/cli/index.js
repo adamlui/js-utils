@@ -3,7 +3,7 @@
 (async () => {
     'use strict'
 
-    globalThis.env = { sysLang: 'en', devMode: __dirname.match(/[\\/]src/) }
+    globalThis.env = { devMode: __dirname.match(/[\\/]src/) }
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
@@ -16,6 +16,7 @@
     // Init APP data
     globalThis.app = require(`../${ env.devMode ? '../' : 'data/' }app.json`)
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
+    app.msgs = await language.getMsgs(language.getSysLang())
     app.regex = {
         flags: {
             dryRun: /^--?(?:n|dry-?run)$/,
@@ -46,10 +47,6 @@
           by = '\x1b[1;33m', // bright yellow
           bg = '\x1b[1;92m', // bright green
           bw = '\x1b[1;97m'  // bright white
-
-    // Init LANGUAGE props
-    env.sysLang = language.getSysLang()
-    app.msgs = await language.getMsgs()
 
     // Load SETTINGS from args
     process.argv.forEach(arg => {
