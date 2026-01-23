@@ -1,8 +1,6 @@
-const data = require(`./data${ env.devMode ? '' : '.min' }.js`),
-    { execSync } = require('child_process')
-
 module.exports = {
     async initMsgs() {
+        const data = require(`./data${ env.devMode ? '' : '.min' }.js`)
         app.msgs = data.flatten(
             require(`../../../${ env.devMode ? '../_locales/en/' : 'data/' }messages.json`), { type: 'message' })
         if (!env.sysLang.startsWith('en'))
@@ -25,7 +23,7 @@ module.exports = {
     initSysLang() {
         if (process.platform == 'win32')
             try {
-                env.sysLang = execSync(
+                env.sysLang = require('child_process').execSync(
                     '(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' }
                 ).trim()
             } catch (err) { console.error('ERROR loading system language:', err.message) }
