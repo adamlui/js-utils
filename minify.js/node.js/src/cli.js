@@ -253,10 +253,10 @@
         })
     }
 
-    function flattenMsgs(msgs) { // eliminate need to ref nested keys
+    function flattenMsgs(json) { // eliminate need to ref nested keys
         const flatMsgs = {}
-        for (const key in msgs) flatMsgs[key] =
-            typeof msgs[key] == 'object' && 'message' in msgs[key] ? msgs[key].message : msgs[key]
+        for (const key in json) flatMsgs[key] =
+            typeof json[key] == 'object' && 'message' in json[key] ? json[key].message : json[key]
         return flatMsgs
     }
 
