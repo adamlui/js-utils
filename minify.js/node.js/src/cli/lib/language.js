@@ -31,7 +31,7 @@ module.exports = {
             }
         else { // macOS/Linux
             const pe = process.env, lang = pe.LANG || pe.LANGUAGE || pe.LC_ALL || pe.LC_MESSAGES || pe.LC_NAME
-            return lang ? lang.split('.')[0] : 'en'
+            return lang?.split('.')?.[0] ?? 'en'
         }
     }
 }
