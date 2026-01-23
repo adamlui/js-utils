@@ -3,7 +3,7 @@
 (() => {
     'use strict'
 
-    globalThis.env = { devMode: __dirname.match(/src/) }
+    globalThis.env = { devMode: __dirname.match(/[\\/]src[\\/]/) }
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),

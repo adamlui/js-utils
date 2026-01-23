@@ -6,7 +6,7 @@ const fs = require('fs'),
       path = require('path'),
       uglifyJS = require('uglify-js')
 
-globalThis.app = require(`${ __dirname.match(/src/) ? '../' : 'data/' }app.json`)
+globalThis.app = require(`${ __dirname.match(/[\\/]src[\\/]/) ? '../' : 'data/' }app.json`)
 
 function findJS(searchDir, options = {}) {
 
