@@ -153,7 +153,7 @@
         }
 
         // Find all eligible JavaScript files or arg-passed file
-        const unminnedJSfiles = inputPath.endsWith('.js') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
+        const ogJSfiles = inputPath.endsWith('.js') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
             : minifyJS.findJS(inputPath, {
                 recursive: !app.config.noRecursion,
                 verbose: !app.config.quietMode,
@@ -161,9 +161,9 @@
             })
 
         if (app.config.dryRun) { // -n or --dry-run passed
-            if (unminnedJSfiles.length) { // print files to be processed
+            if (ogJSfiles.length) { // print files to be processed
                 console.info(`\n${by}${ app.msgs.info_filesToBeMinned || 'JS files to be minified' }:${nc}`)
-                unminnedJSfiles.forEach(file => console.info(file))
+                ogJSfiles.forEach(file => console.info(file))
             } else // no files found
                 console.info(`\n${by}${ app.msgs.info_noFilesWillBeMinned || 'No JS files will be minified' }.${nc}`)
 
@@ -187,7 +187,7 @@
                     if (minifyResult.error) failedPaths.push(inputPath)
                     else minifyData = [].concat(minifyResult)
                 }
-            } else minifyData = unminnedJSfiles.map(jsPath => {
+            } else minifyData = ogJSfiles.map(jsPath => {
                 const minifyResult = minifyJS.minify(jsPath, {
                     verbose: !app.config.quietMode,
                     mangle: !app.config.noMangle,
