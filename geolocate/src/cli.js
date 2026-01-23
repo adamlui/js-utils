@@ -51,7 +51,7 @@
         else { // fetch from jsDelivr
             const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/${app.name.split('/')[1]}/_locales/`,
                   msgLocaleDir = `${ env.sysLang ? env.sysLang.replace('-', '_') : 'en' }/`
-            let msgHref = msgHostDir + msgLocaleDir + 'messages.json', msgFetchTries = 0
+            let msgHref = `${msgHostDir}${msgLocaleDir}messages.json`, msgFetchTries = 0
             while (msgFetchTries < 3)
                 try { // to return localized messages.json
                     app.msgs = flattenMsgs(await (await fetchData(msgHref)).json()) ; break
