@@ -172,14 +172,14 @@
     }
 
     function printHelpSections(includeSections = ['header', 'usage', 'paramOptions', 'flags', 'infoCmds']) {
-        const appPrefix = `\x1b[106m\x1b[30m ${app.name} ${nc} ` // bright teal bg + black fg
+        app.prefix = `\x1b[106m\x1b[30m ${app.name} ${nc} ` // bright teal bg + black fg
         const helpSections = {
             header: [
-                `\n├ ${appPrefix}${ app.msgs.appCopyright || `© ${
+                `\n├ ${app.prefix}${ app.msgs.appCopyright || `© ${
                     app.creationYear}–${new Date().getFullYear()} ${
                     app.author} under the ${app.license} license.`
                 }`,
-                `${appPrefix}${ app.msgs.prefix_source || 'Source' }: ${app.urls.src}`
+                `${app.prefix}${ app.msgs.prefix_source || 'Source' }: ${app.urls.src}`
             ],
             usage: [
                 `\n${bw}o ${ app.msgs.helpSection_usage || 'Usage' }:${nc}`,

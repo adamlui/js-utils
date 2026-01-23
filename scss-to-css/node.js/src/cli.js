@@ -211,13 +211,13 @@
     // Define LOGGING functions
 
     function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
-        const appPrefix = `\x1b[106m\x1b[30m ${app.name.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
+        app.prefix = `\x1b[106m\x1b[30m ${app.name.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
         const helpSections = {
             header: [
-                `\n├ ${appPrefix}© ${
+                `\n├ ${app.prefix}© ${
                     app.creationYear}–${new Date().getFullYear()} ${
                     app.author} under the ${app.license} license.`,
-                `${appPrefix}Source: ${app.urls.src}`
+                `${app.prefix}Source: ${app.urls.src}`
             ],
             usage: [`\n${bw}o Usage:${nc}`, ` ${bw}» ${bg}${app.cmdFormat}${nc}`],
             pathArgs: [
