@@ -7,6 +7,7 @@
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
+          data = require(`./lib/data${ env.devMode ? '' : '.min' }.js`),
         { execSync } = require('child_process'),
           fs = require('fs'),
           minifyJS = require(`./minify${ env.devMode ? '' : '.min' }.js`),
@@ -59,14 +60,14 @@
     }
 
     // Load MESSAGES
-    app.msgs = flattenMsgs(require(`${ env.devMode ? '../_locales/en' : '.' }/messages.json`))
+    app.msgs = data.flatten(require(`${ env.devMode ? '../../_locales/en' : '.' }/messages.json`), { type: 'message' })
     if (!env.sysLang.startsWith('en'))
         try { // to fetch from jsDelivr
             const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`,
                   msgLocaleDir = `${ env.sysLang ? env.sysLang.replace('-', '_') : 'en' }/`
             let msgHref = `${msgHostDir}${msgLocaleDir}messages.json`, msgFetchTries = 0
             while (msgFetchTries < 3)
-                try { app.msgs = flattenMsgs(await (await fetchData(msgHref)).json()) ; break }
+                try { app.msgs = data.flatten(await (await data.fetch(msgHref)).json(), { type: 'message' }) ; break }
                 catch (err) { // if bad response
                     msgFetchTries++ ; if (msgFetchTries == 3) break // try original/region-stripped/EN only
                     msgHref = env.sysLang.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
@@ -240,25 +241,6 @@
     }
 
     // Define FUNCTIONS
-
-    function fetchData(url) { // instead of fetch() to support Node.js < v21
-        return new Promise((resolve, reject) => {
-            const protocol = url.match(/^([^:]+):\/\//)[1]
-            if (!/^https?$/.test(protocol)) reject(new Error(`${app.msgs.error_invalidURL}.`))
-            require(protocol).get(url, resp => {
-                let rawData = ''
-                resp.on('data', chunk => rawData += chunk)
-                resp.on('end', () => resolve({ json: () => JSON.parse(rawData) }))
-            }).on('error', reject)
-        })
-    }
-
-    function flattenMsgs(json) { // eliminate need to ref nested keys
-        const flatMsgs = {}
-        for (const key in json) flatMsgs[key] =
-            typeof json[key] == 'object' && 'message' in json[key] ? json[key].message : json[key]
-        return flatMsgs
-    }
 
     function printHelpCmdAndDocURL() {
         console.info(`\n${app.msgs.info_moreHelp}, ${
