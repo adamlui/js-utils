@@ -25,7 +25,7 @@ fi
 output_arg="output/min"
 
 # Run minify.js CLI
-node "$minifyjs_root/src/cli/index.js" "$input_arg" "$output_arg"
+node "$minifyjs_root/src/cli" "$input_arg" "$output_arg"
 
 # Compare generated files to expected output
 echo -e "\n> Comparing generated files to expected output..."
