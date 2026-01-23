@@ -332,8 +332,8 @@ const gpwAliases = {
 }
 const gpwFuncs = { generatePassword, generatePasswords, strictify, validateStrength }
 try { module.exports = { ...gpwFuncs }} catch (err) {} // for Node.js
-try { window.pw = { ...gpwFuncs }} catch (err) {} // for Greasemonkey
+try { window.pw = { ...gpwFuncs }} catch (err) {} // for browsers
 for (const func in gpwAliases) { // init/export aliases
     try { gpwAliases[func].forEach(alias => module.exports[alias] = module.exports[func]) } catch (err) {} // for Node.js
-    try { gpwAliases[func].forEach(alias => window.pw[alias] = window.pw[func]) } catch (err) {} // for Greasemonkey
+    try { gpwAliases[func].forEach(alias => window.pw[alias] = window.pw[func]) } catch (err) {} // for browsers
 }

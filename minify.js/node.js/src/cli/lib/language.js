@@ -11,7 +11,7 @@ module.exports = {
                 try {
                     msgs = data.flatten(await (await data.fetch(msgHref)).json(), { key: 'message' }) ; break
                 } catch (err) { // if bad response
-                    msgFetchTries++ ; if (msgFetchTries == 3) break // try original/region-stripped/EN only
+                    msgFetchTries++ ; if (msgFetchTries == 3) break // try 3X (original/region-stripped/EN) only
                     msgHref = langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                         msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
                             : `${msgHostURL}en/messages.json` // else use default English messages

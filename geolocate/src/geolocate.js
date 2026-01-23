@@ -120,8 +120,8 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
 const geoAliases = { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] }
 try { module.exports = { geolocate }} catch (err) {} // for Node.js
-try { window.geo = { geolocate }} catch (err) {} // for Greasemonkey
+try { window.geo = { geolocate }} catch (err) {} // for browsers
 for (const func in geoAliases) { // init/export aliases
     try { geoAliases[func].forEach(alias => module.exports[alias] = module.exports[func]) } catch (err) {} // for Node.js
-    try { geoAliases[func].forEach(alias => window.geo[alias] = window.geo[func]) } catch (err) {} // for Greasemonkey
+    try { geoAliases[func].forEach(alias => window.geo[alias] = window.geo[func]) } catch (err) {} // for browsers
 }

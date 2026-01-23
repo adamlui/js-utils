@@ -1,6 +1,6 @@
 // © 2024–2026 Adam Lui & contributors under the MIT license.
-// Source: https://code.generate-ip.org
-// Documentation: https://docs.generate-ip.org
+// Source: https://github.com/adamlui/js-utils/tree/main/generate-ip/src
+// Documentation: https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js
 
 const ipv4 = {
@@ -189,7 +189,7 @@ const ipv6 = {
 
         const docURL = 'https://docs.generate-ip.org/#ipv6validateaddress-options',
               exampleCall = `ipv6.validate('0:0:0:0:0:ffff:192.1.56.10/96', { verbose: false })`,
-              defaultOptions = { verbose: true /* enable logging */ },
+              defaultOptions = { verbose: true }, // enable logging
               logPrefix = 'ipv6.validate() » '
 
         // Validate address as arg
@@ -363,9 +363,9 @@ const gipAliases = {
     mac: [ 'MAC', 'Mac', 'ethernet', 'Ethernet']
 }
 try { module.exports = { ipv4, ipv6, mac }} catch (err) {} // for Node.js
-try { window.ipv4 = ipv4 ; window.ipv6 = ipv6 ; window.mac = mac } catch (err) {} // for Greasemonkey
+try { window.ipv4 = ipv4 ; window.ipv6 = ipv6 ; window.mac = mac } catch (err) {} // for browsers
 for (const api in gipAliases) // init/export aliases
     gipAliases[api].forEach(alias => {
         try { module.exports[alias] = module.exports[api] } catch (err) {} // for Node.js
-        try { window[alias] = window[api] } catch (err) {} // for Greasemonkey
+        try { window[alias] = window[api] } catch (err) {} // for browsers
     });
