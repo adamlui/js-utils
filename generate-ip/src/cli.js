@@ -51,28 +51,24 @@
 
     // Load MESSAGES
     try {
-        app.msgs = await new Promise((resolve, reject) => {
+        const localMsgs = require(`${ env.devMode ? '..' : '.' }/_locales/en/messages.json`)
+        if (env.sysLang.startsWith('en')) app.msgs = flattenMsgs(localMsgs)
+        else { // fetch from jsDelivr
             const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/${app.name}/_locales/`,
                   msgLocaleDir = `${ env.sysLang ? env.sysLang.replace('-', '_') : 'en' }/`
             let msgHref = msgHostDir + msgLocaleDir + 'messages.json', msgFetchTries = 0
-            fetchData(msgHref).then(handleMsgs).catch(reject)
-            async function handleMsgs(resp) {
+            while (msgFetchTries < 3)
                 try { // to return localized messages.json
-                    const msgs = await resp.json(), flatMsgs = {}
-                    for (const key in msgs)  // remove need to ref nested keys
-                        if (typeof msgs[key] == 'object' && 'message' in msgs[key])
-                            flatMsgs[key] = msgs[key].message
-                    resolve(flatMsgs)
+                    app.msgs = flattenMsgs(await (await fetchData(msgHref)).json()) ; break
                 } catch (err) { // if bad response
-                    msgFetchTries++ ; if (msgFetchTries == 3) return resolve({}) // try original/region-stripped/EN only
+                    msgFetchTries++ ; if (msgFetchTries == 3) { // fallback to local msgs
+                        app.msgs = flattenMsgs(localMsgs) ; break }
                     msgHref = env.sysLang.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                         msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
                             : `${msgHostDir}en/messages.json` // else use default English messages
-                    fetchData(msgHref).then(handleMsgs).catch(reject)
                 }
-            }
-        })
-    } catch (err) { app.msgs = {} ; console.error('ERROR fetching messages:', err.message) }
+        }
+    } catch (err) { app.msgs = {} ; console.error('ERROR loading messages:', err.message) }
 
     // Load SETTINGS from args
     process.argv.forEach(arg => {
@@ -84,24 +80,21 @@
         if (matchedFlag) app.config[matchedFlag] = true
         else if (matchedParamOption) {
             if (!/=.+/.test(arg)) {
-                console.error(`\n${ br +( app.msgs.prefix_error || 'ERROR' )}: `
-                    + `Arg [--${arg.replace(/-/g, '')}] `
-                    + `${ app.msgs.error_noEqual || 'requires \'=\' followed by a value' }.${nc}`)
+                console.error(
+                    `\n${br}${app.msgs.prefix_error}: Arg [--${arg.replace(/-/g, '')}] ${app.msgs.error_noEqual}.${nc}`)
                 printHelpCmdAndDocURL() ; process.exit(1)
             }
             const val = arg.split('=')[1]
             app.config[matchedParamOption] = parseInt(val) || val
         } else if (!matchedInfoCmd && !/ipv4/.test(arg)) {
-            console.error(`\n${ br +( app.msgs.prefix_error || 'ERROR' )}: `
-                + `Arg [${arg}] ${ app.msgs.error_notRecognized || 'not recognized' }.${nc}`)
-            console.info(`\n${by}${ app.msgs.info_validArgs || 'Valid arguments are below' }.${nc}`)
+            console.error(`\n${br}${app.msgs.prefix_error}: Arg [${arg}] ${app.msgs.error_notRecognized}.${nc}`)
+            console.info(`\n${by}${app.msgs.info_validArgs}.${nc}`)
             printHelpSections(['paramOptions', 'flags', 'infoCmds'])
             process.exit(1)
         }
     })
     if (app.config.qty && (isNaN(app.config.qty) || app.config.qty < 1)) {
-        console.error(`\n${ br +( app.msgs.prefix_error || 'ERROR' )}: [qty] `
-            + `${ app.msgs.error_nonPositiveNum || 'argument can only be > 0' }.${nc}`)
+        console.error(`\n${br}${app.msgs.prefix_error}: [qty] ${app.msgs.error_nonPositiveNum}.${nc}`)
         printHelpCmdAndDocURL() ; process.exit(1)
     }
 
@@ -123,15 +116,15 @@
             }
             currentDir = path.dirname(currentDir)
         }
-        console.info(`\n${ app.msgs.prefix_globalVer || 'Global version' }: ${globalVer}`)
-        console.info(`${ app.msgs.prefix_localVer || 'Local version' }: ${localVer}`)
+        console.info(`\n${app.msgs.prefix_globalVer}: ${globalVer}`)
+        console.info(`${app.msgs.prefix_localVer}: ${localVer}`)
 
     } else { // log/copy RESULT(S)
         const genOptions = { qty: app.config.qty || 1, verbose: !app.config.quietMode }
         const ipResult = app.config.ipv6mode ? ipv6.generate(genOptions)
                        : app.config.macMode  ?  mac.generate(genOptions)
                                              : ipv4.generate(genOptions)
-        printIfNotQuiet(`\n${ app.msgs.info_copying || 'Copying to clipboard' }...`)
+        printIfNotQuiet(`\n${app.msgs.info_copying}...`)
         clipboardy.writeSync(Array.isArray(ipResult) ? ipResult.join('\n') : ipResult)
     }
 
@@ -140,7 +133,7 @@
     function fetchData(url) { // instead of fetch() to support Node.js < v21
         return new Promise((resolve, reject) => {
             const protocol = url.match(/^([^:]+):\/\//)[1]
-            if (!/^https?$/.test(protocol)) reject(new Error(`${ app.msgs.error_invalidURL || 'Invalid URL' }.`))
+            if (!/^https?$/.test(protocol)) reject(new Error(`${app.msgs.error_invalidURL}.`))
             require(protocol).get(url, resp => {
                 let rawData = ''
                 resp.on('data', chunk => rawData += chunk)
@@ -149,9 +142,16 @@
         })
     }
 
+    function flattenMsgs(msgs) { // eliminate need to ref nested keys
+        const flatMsgs = {}
+        for (const key in msgs) flatMsgs[key] =
+            typeof msgs[key] == 'object' && 'message' in msgs[key] ? msgs[key].message : msgs[key]
+        return flatMsgs
+    }
+
     function printHelpCmdAndDocURL() {
-        console.info(`\n${ app.msgs.info_moreHelp || 'For more help' }, ${
-            app.msgs.info_type || 'type' } generate-ip --help' ${ app.msgs.info_or || 'or' } ${
+        console.info(`\n${app.msgs.info_moreHelp}, ${
+            app.msgs.info_type || 'type' } generate-ip --help' ${app.msgs.info_or} ${
             app.msgs.info_visit || 'visit' }\n${bw}${app.urls.docs}${nc}`
         )
     }
@@ -164,34 +164,31 @@
                     app.creationYear}–${new Date().getFullYear()} ${
                     app.author} under the ${app.license} license.`
                 }`,
-                `${app.prefix}${ app.msgs.prefix_source || 'Source' }: ${app.urls.src}`
+                `${app.prefix}${app.msgs.prefix_source}: ${app.urls.src}`
             ],
             usage: [
-                `\n${bw}o ${ app.msgs.helpSection_usage || 'Usage' }:${nc}`,
+                `\n${bw}o ${app.msgs.helpSection_usage}:${nc}`,
                 ` ${bw}» ${bg}${app.cmdFormat}${nc}`
             ],
             paramOptions: [
-                `\n${bw}o ${ app.msgs.helpSection_paramOptions || 'Parameter options' }:${nc}`,
-                ` --qty=n                     ${ app.msgs.optionDesc_qty || 'Generate n IP address(es)' }.`
+                `\n${bw}o ${app.msgs.helpSection_paramOptions}:${nc}`,
+                ` --qty=n                     ${app.msgs.optionDesc_qty}.`
             ],
             flags: [
-                `\n${bw}o ${ app.msgs.helpSection_flags || 'Boolean options' }:${nc}`,
-                ` -6, --ipv6                  ${ app.msgs.optionDesc_ipv6 || 'Generate IPv6 address' }.`,
-                ` -m, --mac                   ${ app.msgs.optionDesc_mac || 'Generate MAC address' }.`,
-                ` -q, --quiet                 ${ app.msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`
+                `\n${bw}o ${app.msgs.helpSection_flags}:${nc}`,
+                ` -6, --ipv6                  ${app.msgs.optionDesc_ipv6}.`,
+                ` -m, --mac                   ${app.msgs.optionDesc_mac}.`,
+                ` -q, --quiet                 ${app.msgs.optionDesc_quiet}.`
             ],
             infoCmds: [
-                `\n${bw}o ${ app.msgs.helpSection_infoCmds || 'Info commands' }:${nc}`,
-                ` -h, --help                  ${ app.msgs.optionDesc_help || 'Display help screen.' }`,
-                ` -v, --version               ${ app.msgs.optionDesc_version || 'Show version number' }.`
+                `\n${bw}o ${app.msgs.helpSection_infoCmds}:${nc}`,
+                ` -h, --help                  ${app.msgs.optionDesc_help}`,
+                ` -v, --version               ${app.msgs.optionDesc_version}.`
             ]
         }
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)))
-        console.info(
-            `\n${ app.msgs.info_moreHelp || 'For more help' }, ${
-                  app.msgs.info_visit || 'visit' }: ${bw}${app.urls.docs}${nc}`
-        )
+        console.info(`\n${app.msgs.info_moreHelp}, ${app.msgs.info_visit}: ${bw}${app.urls.docs}${nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,

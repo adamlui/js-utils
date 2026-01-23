@@ -29,7 +29,9 @@
   ],
   "main": "dist/geolocate.min.js",
   "files": [
-    "docs/"
+    "_locales/en/",
+    "docs/",
+    "app.json"
   ],
   "bin": {
     "geolocate": "dist/cli.min.js"

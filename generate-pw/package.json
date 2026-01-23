@@ -29,8 +29,10 @@
   ],
   "main": "dist/generate-pw.min.js",
   "files": [
+    "_locales/en/",
     "docs/",
-    "!docs/*/"
+    "!docs/*/",
+    "app.json"
   ],
   "bin": {
     "generatepw": "dist/cli.min.js",

@@ -60,28 +60,24 @@
 
     // Load MESSAGES
     try {
-        app.msgs = await new Promise((resolve, reject) => {
+        const localMsgs = require(`${ env.devMode ? '..' : '.' }/_locales/en/messages.json`)
+        if (env.sysLang.startsWith('en')) app.msgs = flattenMsgs(localMsgs)
+        else { // fetch from jsDelivr
             const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`,
                   msgLocaleDir = `${ env.sysLang ? env.sysLang.replace('-', '_') : 'en' }/`
             let msgHref = msgHostDir + msgLocaleDir + 'messages.json', msgFetchTries = 0
-            fetchData(msgHref).then(handleMsgs).catch(reject)
-            async function handleMsgs(resp) {
+            while (msgFetchTries < 3)
                 try { // to return localized messages.json
-                    const msgs = await resp.json(), flatMsgs = {}
-                    for (const key in msgs)  // remove need to ref nested keys
-                        if (typeof msgs[key] == 'object' && 'message' in msgs[key])
-                            flatMsgs[key] = msgs[key].message
-                    resolve(flatMsgs)
+                    app.msgs = flattenMsgs(await (await fetchData(msgHref)).json()) ; break
                 } catch (err) { // if bad response
-                    msgFetchTries++ ; if (msgFetchTries == 3) return resolve({}) // try original/region-stripped/EN only
+                    msgFetchTries++ ; if (msgFetchTries == 3) { // fallback to local msgs
+                        app.msgs = flattenMsgs(localMsgs) ; break }
                     msgHref = env.sysLang.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                         msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
                             : `${msgHostDir}en/messages.json` // else use default English messages
-                    fetchData(msgHref).then(handleMsgs).catch(reject)
                 }
-            }
-        })
-    } catch (err) { app.msgs = {} ; console.error('ERROR fetching messages:', err.message) }
+        }
+    } catch (err) { app.msgs = {} ; console.error('ERROR loading messages:', err.message) }
 
     // Load SETTINGS from args
     process.argv.forEach(arg => {
@@ -93,18 +89,16 @@
         if (matchedFlag) app.config[matchedFlag] = true
         else if (matchedParamOption) {
             if (!/=.+/.test(arg)) {
-                console.error(`\n${ br +( app.msgs.prefix_error || 'ERROR' )}: `
-                    + `Arg [--${arg.replace(/-/g, '')}] `
-                    + `${ app.msgs.error_noEqual || 'requires \'=\' followed by a value' }.${nc}`)
+                console.error(
+                    `\n${br}${app.msgs.prefix_error}: Arg [--${arg.replace(/-/g, '')}] ${app.msgs.error_noEqual}.${nc}`)
                 printHelpCmdAndDocURL() ; process.exit(1)
             }
             const val = arg.split('=')[1]
             app.config[matchedParamOption] = parseInt(val) || val
         } else if (!matchedInfoCmd) {
-            console.error(`\n${ br +( app.msgs.prefix_error || 'ERROR' )}: `
-                + `Arg [${arg}] ${ app.msgs.error_notRecognized || 'not recognized' }.${nc}`)
-            console.info(`\n${by}${ app.msgs.info_validArgs || 'Valid arguments are below' }.${nc}`)
-            printHelpSections(['flags', 'paramOptions', 'infoCmds'])
+            console.error(`\n${br}${app.msgs.prefix_error}: Arg [${arg}] ${app.msgs.error_notRecognized}.${nc}`)
+            console.info(`\n${by}${app.msgs.info_validArgs}.${nc}`)
+            printHelpSections(['paramOptions', 'flags', 'infoCmds'])
             process.exit(1)
         }
     })
@@ -127,8 +121,8 @@
             }
             currentDir = path.dirname(currentDir)
         }
-        console.info(`\n${ app.msgs.prefix_globalVer || 'Global version' }: ${globalVer}`)
-        console.info(`${ app.msgs.prefix_localVer || 'Local version' }: ${localVer}`)
+        console.info(`\n${app.msgs.prefix_globalVer}: ${globalVer}`)
+        console.info(`${app.msgs.prefix_localVer}: ${localVer}`)
 
     } else { // run MAIN routine
 
@@ -143,10 +137,10 @@
         if (inputArg && !fs.existsSync(inputPath)) {
             const jsInputPath = inputPath + '.js' // append '.js' in case ommitted from intended filename
             if (!fs.existsSync(jsInputPath)) {
-                console.error(`\n${ br +( app.msgs.prefix_error || 'ERROR' )}: `
-                    + `${ app.msgs.error_firstArgNotExist || 'First argument can only be an existing file or directory' }.`
-                    + `\n${inputPath} ${ app.msgs.error_doesNotExist || 'does not exist' }.${nc}`)
-                console.info(`\n${bg}${ app.msgs.info_exampleValidCmd || 'Example valid command' }: `
+                console.error(`\n${br}${app.msgs.prefix_error}: `
+                    + `${app.msgs.error_firstArgNotExist}.`
+                    + `\n${inputPath} ${app.msgs.error_doesNotExist}.${nc}`)
+                console.info(`\n${bg}${app.msgs.info_exampleValidCmd}: `
                     + `\n» minify-js . output.min.js${nc}`)
                 printHelpCmdAndDocURL() ; process.exit(1)
             } else inputPath = jsInputPath
@@ -162,10 +156,10 @@
 
         if (app.config.dryRun) { // -n or --dry-run passed
             if (ogJSfiles.length) { // print files to be processed
-                console.info(`\n${by}${ app.msgs.info_filesToBeMinned || 'JS files to be minified' }:${nc}`)
+                console.info(`\n${by}${app.msgs.info_filesToBeMinned}:${nc}`)
                 ogJSfiles.forEach(file => console.info(file))
             } else // no files found
-                console.info(`\n${by}${ app.msgs.info_noFilesWillBeMinned || 'No JS files will be minified' }.${nc}`)
+                console.info(`\n${by}${app.msgs.info_noFilesWillBeMinned}.${nc}`)
 
         } else { // actually minify JavaScript files
 
@@ -199,16 +193,15 @@
 
             // Print minification summary
             if (minifyData?.length) {
-                printIfNotQuiet(`\n${bg +( app.msgs.info_minComplete || 'Minification complete' )}!${nc}`)
-                printIfNotQuiet(`${bw + minifyData.length} ${ app.msgs.info_file || 'file' }`
-                    + `${ minifyData.length > 1 ? 's' : '' } ${ app.msgs.info_minified || 'minified' }.${nc}`)
+                printIfNotQuiet(`\n${bg}${app.msgs.info_minComplete}!${nc}`)
+                printIfNotQuiet(`${bw + minifyData.length} ${app.msgs.info_file}`
+                    + `${ minifyData.length > 1 ? 's' : '' } ${app.msgs.info_minified}.${nc}`)
             } else printIfNotQuiet(
-                `\n${by}${ app.msgs.info_noFilesProcessed || 'No unminified JavaScript files processed' }.${nc}`)
+                `\n${by}${app.msgs.info_noFilesProcessed}.${nc}`)
             if (failedPaths.length) {
                 printIfNotQuiet(
-                    `\n${br + failedPaths.length} ${ app.msgs.info_file || 'file' }`
-                    + `${ failedPaths.length > 1 ? 's' : '' } ${
-                            app.msgs.info_failedToMinify || 'failed to minify' }:${nc}`
+                    `\n${br + failedPaths.length} ${app.msgs.info_file}`
+                    + `${ failedPaths.length > 1 ? 's' : '' } ${app.msgs.info_failedToMinify}:${nc}`
                 )
                 failedPaths.forEach(path => printIfNotQuiet(path))
             }
@@ -217,12 +210,11 @@
             // Copy single result code to clipboard if --copy passed
             if (app.config.copy && minifyData?.length == 1) {
                 console.log(`\n${bw}${minifyData[0].code}${nc}`)
-                printIfNotQuiet(`\n${ app.msgs.info_copying || 'Copying to clipboard' }...`)
+                printIfNotQuiet(`\n${app.msgs.info_copying}...`)
                 clipboardy.writeSync(minifyData[0].code)
 
             } else { // write array data to files
-                printIfNotQuiet(
-                    `\n${ app.msgs.info_writing || 'Writing to file' }${ minifyData?.length > 1 ? 's' : '' }...`)
+                printIfNotQuiet(`\n${app.msgs.info_writing}${ minifyData?.length > 1 ? 's' : '' }...`)
                 minifyData?.forEach(({ code, srcPath, relPath }) => {
                     let outputDir, outputFilename
                     if (!app.config.relativeOutput && relPath) { // preserve folder structure
@@ -256,7 +248,7 @@
     function fetchData(url) { // instead of fetch() to support Node.js < v21
         return new Promise((resolve, reject) => {
             const protocol = url.match(/^([^:]+):\/\//)[1]
-            if (!/^https?$/.test(protocol)) reject(new Error(`${ app.msgs.error_invalidURL || 'Invalid URL' }.`))
+            if (!/^https?$/.test(protocol)) reject(new Error(`${app.msgs.error_invalidURL}.`))
             require(protocol).get(url, resp => {
                 let rawData = ''
                 resp.on('data', chunk => rawData += chunk)
@@ -265,9 +257,16 @@
         })
     }
 
+    function flattenMsgs(msgs) { // eliminate need to ref nested keys
+        const flatMsgs = {}
+        for (const key in msgs) flatMsgs[key] =
+            typeof msgs[key] == 'object' && 'message' in msgs[key] ? msgs[key].message : msgs[key]
+        return flatMsgs
+    }
+
     function printHelpCmdAndDocURL() {
-        console.info(`\n${ app.msgs.info_moreHelp || 'For more help' }, ${
-            app.msgs.info_type || 'type' } minify-js --help' ${ app.msgs.info_or || 'or' } ${
+        console.info(`\n${app.msgs.info_moreHelp}, ${
+            app.msgs.info_type || 'type' } minify-js --help' ${app.msgs.info_or} ${
             app.msgs.info_visit || 'visit' }\n${bw}${app.urls.docs}${nc}`
         )
     }
@@ -280,53 +279,50 @@
                     app.creationYear}–${new Date().getFullYear()} ${
                     app.author} under the ${app.license} license.`
                 }`,
-                `${app.prefix}${ app.msgs.prefix_source || 'Source' }: ${app.urls.src}`
+                `${app.prefix}${app.msgs.prefix_source}: ${app.urls.src}`
             ],
             usage: [
-                `\n${bw}o ${ app.msgs.helpSection_usage || 'Usage' }:${nc}`,
+                `\n${bw}o ${app.msgs.helpSection_usage}:${nc}`,
                 ` ${bw}» ${bg}${app.cmdFormat}${nc}`
             ],
             pathArgs: [
-                `\n${bw}o ${ app.msgs.helpSection_pathArgs || 'Path arguments' }:${nc}`,
+                `\n${bw}o ${app.msgs.helpSection_pathArgs}:${nc}`,
                 ' [inputPath]                         '
-                    + `${ app.msgs.inputPathDesc_main || 'Path to JS file or directory containing JS files to be minified' }, `
-                    + `${ app.msgs.inputPathDesc_extra || 'relative to the current working directory' }.`,
+                    + `${app.msgs.inputPathDesc_main}, `
+                    + `${app.msgs.inputPathDesc_extra}.`,
                 ' [outputPath]                        '
-                    + `${ app.msgs.outputPathDesc_main || 'Path to file or directory where minified files will be stored' }, `
-                    + `${ app.msgs.outputPathDesc_extra || 'relative to original file location (if not provided, min/ is used)' }.`
+                    + `${app.msgs.outputPathDesc_main}, `
+                    + `${app.msgs.outputPathDesc_extra}.`
             ],
             flags: [
-                `\n${bw}o ${ app.msgs.helpSection_flags || 'Boolean options' }:${nc}`,
-                ' -n, --dry-run                       '
-                    + `${ app.msgs.optionDesc_dryRun || 'Don\'t actually minify the file(s), '
-                                                  + 'just show if they will be processed' }.`,
-                ` -d, --include-dotfolders            ${ app.msgs.optionDesc_dotfolders || 'Include dotfolders in file search' }.`,
-                ` -D, --include-dotfiles              ${ app.msgs.optionDesc_dotfiles || 'Include dotfiles in file search' }.`,
-                ` -R, --no-recursion                  ${ app.msgs.optionDesc_noRecursion || 'Disable recursive file searching' }.`,
-                ` -M, --no-mangle                     ${ app.msgs.optionDesc_noMangle || 'Disable mangling names' }.`,
-                ` -X, --no-filename-change            ${ app.msgs.optionDesc_noFilenameChange || 'Disable changing file extension to .min.js' }`,
-                ` -i, --rewrite-imports               ${ app.msgs.optionDesc_rewriteImports || 'Update import paths from .js to .min.js' }.`,
-                ` -c, --copy                          ${ app.msgs.optionDesc_copy || 'Copy minified code to clipboard instead of writing to file'
-                                                                               + ' if single source file is processed' }.`,
-                ` -r, --relative-output               ${ app.msgs.optionDesc_relativeOutput || 'Output files relative to each source file instead of to input root' }.`,
-                ` -q, --quiet                         ${ app.msgs.optionDesc_quiet || 'Suppress all logging except errors' }.`
+                `\n${bw}o ${app.msgs.helpSection_flags}:${nc}`,
+                ` -n, --dry-run                       ${app.msgs.optionDesc_dryRun}.`,
+                ` -d, --include-dotfolders            ${app.msgs.optionDesc_dotfolders}.`,
+                ` -D, --include-dotfiles              ${app.msgs.optionDesc_dotfiles}.`,
+                ` -R, --no-recursion                  ${app.msgs.optionDesc_noRecursion}.`,
+                ` -M, --no-mangle                     ${app.msgs.optionDesc_noMangle}.`,
+                ` -X, --no-filename-change            ${app.msgs.optionDesc_noFilenameChange}`,
+                ` -i, --rewrite-imports               ${app.msgs.optionDesc_rewriteImports}.`,
+                ` -c, --copy                          ${app.msgs.optionDesc_copy}.`,
+                ` -r, --relative-output               ${app.msgs.optionDesc_relativeOutput}.`,
+                ` -q, --quiet                         ${app.msgs.optionDesc_quiet}.`
             ],
             paramOptions: [
-                `\n${bw}o ${ app.msgs.helpSection_paramOptions || 'Parameter options' }:${nc}`,
-                `--ignores="dir/,file1.js,file2.js"   ${ app.msgs.optionDesc_ignores || 'Files/directories to exclude from minification' }.`,
-                `--comment="comment"                  ${ app.msgs.optionDesc_commentMain || 'Prepend header comment to minified code' }.`
-                                                 +  ` ${ app.msgs.optionDesc_commentExtra || 'Separate by line using \'\\n\'' }.`
+                `\n${bw}o ${app.msgs.helpSection_paramOptions}:${nc}`,
+                `--ignores="dir/,file1.js,file2.js"   ${app.msgs.optionDesc_ignores}.`,
+                `--comment="comment"                  ${app.msgs.optionDesc_commentMain}.`
+                                                 +  ` ${app.msgs.optionDesc_commentExtra}.`
             ],
             infoCmds: [
-                `\n${bw}o ${ app.msgs.helpSection_infoCmds || 'Info commands' }:${nc}`,
-                ` -h, --help                          ${ app.msgs.optionDesc_help || 'Display help screen.' }`,
-                ` -v, --version                       ${ app.msgs.optionDesc_version || 'Show version number' }.`
+                `\n${bw}o ${app.msgs.helpSection_infoCmds}:${nc}`,
+                ` -h, --help                          ${app.msgs.optionDesc_help}`,
+                ` -v, --version                       ${app.msgs.optionDesc_version}.`
             ]
         }
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 37)))
         console.info(
-            `\n${ app.msgs.info_moreHelp || 'For more help' }, ${ app.msgs.info_visit || 'visit' }: ${bw}${app.urls.docs}${nc}`)
+            `\n${app.msgs.info_moreHelp}, ${app.msgs.info_visit}: ${bw}${app.urls.docs}${nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,

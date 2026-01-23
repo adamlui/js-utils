@@ -29,7 +29,9 @@
   ],
   "main": "dist/generate-ip.min.js",
   "files": [
-    "docs"
+    "_locales/en",
+    "docs",
+    "app.json"
   ],
   "directories": {
     "bin": "./bin",
