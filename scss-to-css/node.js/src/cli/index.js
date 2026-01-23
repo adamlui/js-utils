@@ -10,7 +10,7 @@
         { execSync } = require('child_process'),
           fs = require('fs'),
           path = require('path'),
-          scssToCSS = require(`./scss-to-css${ env.devMode ? '' : '.min' }.js`)
+          scssToCSS = require(`../scss-to-css${ env.devMode ? '' : '.min' }.js`)
 
     // Init APP data
     globalThis.app = require(`../${ env.devMode ? '../' : 'data/' }app.json`)
