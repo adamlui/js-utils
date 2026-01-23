@@ -1,7 +1,7 @@
 module.exports = {
-    async initMsgs() {
+    async getMsgs() {
         const data = require(`./data${ env.devMode ? '' : '.min' }.js`)
-        app.msgs = data.flatten(
+        let msgs = data.flatten(
             require(`../../../${ env.devMode ? '../_locales/en/' : 'data/' }messages.json`), { type: 'message' })
         if (!env.sysLang.startsWith('en')) { // fetch non-English msgs from jsDelivr
             const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`,
@@ -9,7 +9,7 @@ module.exports = {
             let msgHref = `${msgHostDir}${msgLocaleDir}messages.json`, msgFetchTries = 0
             while (msgFetchTries < 3)
                 try {
-                    app.msgs = data.flatten(await (await data.fetch(msgHref)).json(), { type: 'message' }) ; break
+                    msgs = data.flatten(await (await data.fetch(msgHref)).json(), { type: 'message' }) ; break
                 } catch (err) { // if bad response
                     msgFetchTries++ ; if (msgFetchTries == 3) break // try original/region-stripped/EN only
                     msgHref = env.sysLang.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
@@ -17,6 +17,7 @@ module.exports = {
                             : `${msgHostDir}en/messages.json` // else use default English messages
                 }
         }
+        return msgs
     },
 
     getSysLang() {
