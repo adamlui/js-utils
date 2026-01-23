@@ -1,5 +1,5 @@
 module.exports = {
-    async getMsgs(langCode = env.sysLang) {
+    async getMsgs(langCode = 'en') {
         const data = require(`./data${ env.devMode ? '' : '.min' }.js`)
         let msgs = data.flatten(
             require(`../../../${ env.devMode ? '../_locales/en/' : 'data/' }messages.json`), { type: 'message' })
