@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp app.json dist/
+rm -rf dist/* && mkdir -p dist/data/ && cp app.json dist/data/
 
 minify-js src dist --comment=" \
 © 2024 Adam Lui & contributors under the MIT license.\n \
