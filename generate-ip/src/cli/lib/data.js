@@ -12,8 +12,10 @@ module.exports = {
     },
 
     flatten(json, { key = 'message' } = {}) { // eliminate need to ref nested keys
-        const flatObj = {} ; for (const jsonKey in json) flatObj[jsonKey] =
-            typeof json[jsonKey] == 'object' && key in json[jsonKey] ? json[jsonKey][key] : json[jsonKey]
+        const flatObj = {}
+        for (const jsonKey in json) flatObj[jsonKey] =
+            typeof json[jsonKey] == 'object' && key in json[jsonKey] ? json[jsonKey][key]
+                                                                     : json[jsonKey]
         return flatObj
     }
 }
