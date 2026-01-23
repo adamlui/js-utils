@@ -226,9 +226,8 @@
         const helpSections = {
             header: [
                 `\n├ ${app.prefix}${ app.msgs.appCopyright || `© ${
-                    app.creationYear}–${new Date().getFullYear()} ${
-                    app.author} under the ${app.license} license.`
-                }`,
+                       app.copyrightYear} ${app.author} under the ${app.license} license`
+                }.`,
                 `${app.prefix}${app.msgs.prefix_source}: ${app.urls.src}`
             ],
             usage: [

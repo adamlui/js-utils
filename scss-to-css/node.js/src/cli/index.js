@@ -215,9 +215,7 @@
         app.prefix = `\x1b[106m\x1b[30m ${app.name.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
         const helpSections = {
             header: [
-                `\n├ ${app.prefix}© ${
-                    app.creationYear}–${new Date().getFullYear()} ${
-                    app.author} under the ${app.license} license.`,
+                `\n├ ${app.prefix}© ${app.copyrightYear} ${app.author} under the ${app.license} license.`,
                 `${app.prefix}Source: ${app.urls.src}`
             ],
             usage: [`\n${bw}o Usage:${nc}`, ` ${bw}» ${bg}${app.cmdFormat}${nc}`],

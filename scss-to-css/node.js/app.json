@@ -2,7 +2,7 @@
   "name": "@adamlui/scss-to-css",
   "author": "Adam Lui & contributors",
   "license": "MIT",
-  "creationYear": 2024,
+  "copyrightYear": "2024–2026",
   "cmdFormat": "scss-to-css [inputPath] [outputPath] [options]",
   "urls": {
     "docs": "https://github.com/adamlui/scss-to-css/tree/main/node.js/docs",
