@@ -3,21 +3,20 @@ module.exports = {
         const data = require(`./data${ env.devMode ? '' : '.min' }.js`)
         app.msgs = data.flatten(
             require(`../../../${ env.devMode ? '../_locales/en/' : 'data/' }messages.json`), { type: 'message' })
-        if (!env.sysLang.startsWith('en'))
-            try { // to fetch from jsDelivr
-                const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`,
-                      msgLocaleDir = `${ env.sysLang ? env.sysLang.replace('-', '_') : 'en' }/`
-                let msgHref = `${msgHostDir}${msgLocaleDir}messages.json`, msgFetchTries = 0
-                while (msgFetchTries < 3)
-                    try {
-                        app.msgs = data.flatten(await (await data.fetch(msgHref)).json(), { type: 'message' }) ; break
-                    } catch (err) { // if bad response
-                        msgFetchTries++ ; if (msgFetchTries == 3) break // try original/region-stripped/EN only
-                        msgHref = env.sysLang.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
-                            msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
-                                : `${msgHostDir}en/messages.json` // else use default English messages
-                    }
-            } catch (err) { console.error('ERROR loading messages:', err.message) }
+        if (!env.sysLang.startsWith('en')) { // fetch non-English msgs from jsDelivr
+            const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`,
+                  msgLocaleDir = `${ env.sysLang ? env.sysLang.replace('-', '_') : 'en' }/`
+            let msgHref = `${msgHostDir}${msgLocaleDir}messages.json`, msgFetchTries = 0
+            while (msgFetchTries < 3)
+                try {
+                    app.msgs = data.flatten(await (await data.fetch(msgHref)).json(), { type: 'message' }) ; break
+                } catch (err) { // if bad response
+                    msgFetchTries++ ; if (msgFetchTries == 3) break // try original/region-stripped/EN only
+                    msgHref = env.sysLang.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
+                        msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
+                            : `${msgHostDir}en/messages.json` // else use default English messages
+                }
+        }
     },
 
     initSysLang() {
