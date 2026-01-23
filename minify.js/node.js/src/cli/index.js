@@ -244,9 +244,9 @@
     // Define FUNCTIONS
 
     function printHelpCmdAndDocURL() {
-        console.info(`\n${app.msgs.info_moreHelp}, ${
-            app.msgs.info_type || 'type' } minify-js --help' ${app.msgs.info_or} ${
-            app.msgs.info_visit || 'visit' }\n${bw}${app.urls.docs}${nc}`
+        console.info(`\n${
+            app.msgs.info_moreHelp}, ${app.msgs.info_type} ${app.name.split('/')[1]} --help' ${
+            app.msgs.info_or} ${app.msgs.info_visit}\n${bw}${app.urls.docs}${nc}`
         )
     }
 

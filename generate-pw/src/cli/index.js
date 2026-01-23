@@ -144,9 +144,9 @@
     // Define FUNCTIONS
 
     function printHelpCmdAndDocURL() {
-        console.info(`\n${app.msgs.info_moreHelp}, ${
-            app.msgs.info_type || 'type' } generate-pw --help' ${app.msgs.info_or} ${
-            app.msgs.info_visit || 'visit' }\n${bw}${app.urls.docs}${nc}`
+        console.info(`\n${
+            app.msgs.info_moreHelp}, ${app.msgs.info_type} ${app.name} --help' ${
+            app.msgs.info_or} ${app.msgs.info_visit}\n${bw}${app.urls.docs}${nc}`
         )
     }
 
