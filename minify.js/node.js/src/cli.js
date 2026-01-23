@@ -3,7 +3,7 @@
 (async () => {
     'use strict'
 
-    globalThis.env = { langCode: 'en', devMode: __dirname.match(/src/) }
+    globalThis.env = { sysLang: 'en', devMode: __dirname.match(/src/) }
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
@@ -49,20 +49,20 @@
     // Init sys LANGUAGE
     if (process.platform == 'win32')
         try {
-            env.langCode = execSync(
+            env.sysLang = execSync(
                 '(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' }
             ).trim()
         } catch (err) { console.error('ERROR loading system language:', err.message) }
     else { // macOS/Linux
         const pe = process.env
-        env.langCode = (pe.LANG || pe.LANGUAGE || pe.LC_ALL || pe.LC_MESSAGES || pe.LC_NAME || 'en')?.split('.')[0]
+        env.sysLang = (pe.LANG || pe.LANGUAGE || pe.LC_ALL || pe.LC_MESSAGES || pe.LC_NAME || 'en')?.split('.')[0]
     }
 
     // Load MESSAGES
     try {
         app.msgs = await new Promise((resolve, reject) => {
             const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`,
-                  msgLocaleDir = `${ env.langCode ? env.langCode.replace('-', '_') : 'en' }/`
+                  msgLocaleDir = `${ env.sysLang ? env.sysLang.replace('-', '_') : 'en' }/`
             let msgHref = msgHostDir + msgLocaleDir + 'messages.json', msgFetchTries = 0
             fetchData(msgHref).then(handleMsgs).catch(reject)
             async function handleMsgs(resp) {
@@ -74,7 +74,7 @@
                     resolve(flatMsgs)
                 } catch (err) { // if bad response
                     msgFetchTries++ ; if (msgFetchTries == 3) return resolve({}) // try original/region-stripped/EN only
-                    msgHref = env.langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
+                    msgHref = env.sysLang.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                         msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
                             : `${msgHostDir}en/messages.json` // else use default English messages
                     fetchData(msgHref).then(handleMsgs).catch(reject)
