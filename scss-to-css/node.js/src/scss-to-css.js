@@ -6,7 +6,7 @@ const fs = require('fs'),
       path = require('path'),
       sass = require('sass')
 
-globalThis.app = require(`../${ __dirname.match(/[\\/]src[\\/]/) ? '../' : 'data/' }app.json`)
+globalThis.app = require(`../${ __dirname.match(/[\\/]src/) ? '../' : 'data/' }app.json`)
 
 function findSCSS(searchDir, options = {}) {
 
