@@ -7,7 +7,7 @@
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
-          { execSync } = require('child_process'),
+        { execSync } = require('child_process'),
           fs = require('fs'),
           geo = require(`./geolocate${ env.devMode ? '' : '.min' }.js`),
           path = require('path')

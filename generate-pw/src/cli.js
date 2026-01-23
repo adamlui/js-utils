@@ -7,9 +7,9 @@
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
-          { execSync } = require('child_process'),
+        { execSync } = require('child_process'),
           fs = require('fs'),
-          { generatePassword } = require(`./generate-pw${ env.devMode ? '' : '.min' }.js`),
+        { generatePassword } = require(`./generate-pw${ env.devMode ? '' : '.min' }.js`),
           path = require('path')
 
     // Init APP data

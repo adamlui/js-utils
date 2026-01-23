@@ -7,9 +7,9 @@
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
-          { execSync } = require('child_process'),
+        { execSync } = require('child_process'),
           fs = require('fs'),
-          { ipv4, ipv6, mac } = require(`./generate-ip${ env.devMode ? '' : '.min' }.js`),
+        { ipv4, ipv6, mac } = require(`./generate-ip${ env.devMode ? '' : '.min' }.js`),
           path = require('path')
 
     // Init APP data

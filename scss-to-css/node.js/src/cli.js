@@ -7,7 +7,7 @@
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
-          { execSync } = require('child_process'),
+        { execSync } = require('child_process'),
           fs = require('fs'),
           path = require('path'),
           scssToCSS = require(`./scss-to-css${ env.devMode ? '' : '.min' }.js`)

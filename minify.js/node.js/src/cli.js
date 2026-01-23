@@ -7,7 +7,7 @@
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
-          { execSync } = require('child_process'),
+        { execSync } = require('child_process'),
           fs = require('fs'),
           minifyJS = require(`./minify${ env.devMode ? '' : '.min' }.js`),
           path = require('path')
@@ -109,10 +109,10 @@
         }
     })
 
-    // Show HELP screen if -h or --help passed
+    // Show HELP screen if --?<h|help> passed
     if (process.argv.some(arg => app.regex.infoCmds.help.test(arg))) printHelpSections()
 
-    // Show VERSION number if -v or --version passed
+    // Show VERSION number if --?<v|version> passed
     else if (process.argv.some(arg => app.regex.infoCmds.version.test(arg))) {
         const globalVer = execSync(`npm view ${JSON.stringify(app.name)} version`).toString().trim() || 'none'
         let localVer, currentDir = process.cwd()
