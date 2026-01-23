@@ -15,8 +15,7 @@
 
     // Init APP data
     globalThis.app = require(`../${ env.devMode ? '../' : 'data/' }app.json`)
-    app.urls.docs += '/#-command-line-usage'
-    app.msgs = await getMsgs(getSysLang())
+    app.urls.docs += '/#-command-line-usage' ; app.msgs = await getMsgs(getSysLang())
     app.regex = {
         flags: {
             dryRun: /^--?(?:n|dry-?run)$/,
