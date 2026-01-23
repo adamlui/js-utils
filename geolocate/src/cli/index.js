@@ -10,20 +10,15 @@
           data = require(`./lib/data${ env.devMode ? '' : '.min' }.js`),
         { execSync } = require('child_process'),
           fs = require('fs'),
-        { ipv4, ipv6, mac } = require(`./generate-ip${ env.devMode ? '' : '.min' }.js`),
+          geo = require(`./geolocate${ env.devMode ? '' : '.min' }.js`),
           path = require('path')
 
     // Init APP data
-    globalThis.app = require(`${ env.devMode ? '..' : '.' }/app.json`)
+    globalThis.app = require(`../${ env.devMode ? '../' : '' }app.json`)
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
     app.regex = {
-        paramOptions: {
-            qty: /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
         flags: {
-            ipv6mode: /^--?(?:ip)?v?6(?:-?mode)?$/,
-            macMode: /^--?m(?:ac)?(?:-?mode)?$/,
-            quietMode: /^--?q(?:uiet)?(?:-?mode)?$/
-        },
+            quietMode: /^--?q(?:uiet)?(?:-?mode)?$/ },
         infoCmds: {
             help: /^--?h(?:elp)?$/,
             version: /^--?ve?r?s?i?o?n?$/
@@ -51,10 +46,10 @@
     }
 
     // Load MESSAGES
-    app.msgs = data.flatten(require(`${ env.devMode ? '../_locales/en' : '.' }/messages.json`), { type: 'message' })
+    app.msgs = data.flatten(require(`${ env.devMode ? '../../_locales/en' : '.' }/messages.json`), { type: 'message' })
     if (!env.sysLang.startsWith('en'))
         try { // to fetch from jsDelivr
-            const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/${app.name}/_locales/`,
+            const msgHostDir = `${app.urls.jsdelivr}@${app.commitHashes.locales}/${app.name.split('/')[1]}/_locales/`,
                   msgLocaleDir = `${ env.sysLang ? env.sysLang.replace('-', '_') : 'en' }/`
             let msgHref = `${msgHostDir}${msgLocaleDir}messages.json`, msgFetchTries = 0
             while (msgFetchTries < 3)
@@ -70,30 +65,16 @@
     // Load SETTINGS from args
     process.argv.forEach(arg => {
         if (!arg.startsWith('-')) return
-        const matchedParamOption = Object.keys(app.regex.paramOptions)
-            .find(option => app.regex.paramOptions[option].test(arg))
-        const matchedFlag = Object.keys(app.regex.flags).find(flag => app.regex.flags[flag].test(arg))
-        const matchedInfoCmd = Object.keys(app.regex.infoCmds).find(cmd => app.regex.infoCmds[cmd].test(arg))
+        const matchedFlag = Object.keys(app.regex.flags).find(flag => app.regex.flags[flag].test(arg)),
+              matchedInfoCmd = Object.keys(app.regex.infoCmds).find(cmd => app.regex.infoCmds[cmd].test(arg))
         if (matchedFlag) app.config[matchedFlag] = true
-        else if (matchedParamOption) {
-            if (!/=.+/.test(arg)) {
-                console.error(
-                    `\n${br}${app.msgs.prefix_error}: Arg [--${arg.replace(/-/g, '')}] ${app.msgs.error_noEqual}.${nc}`)
-                printHelpCmdAndDocURL() ; process.exit(1)
-            }
-            const val = arg.split('=')[1]
-            app.config[matchedParamOption] = parseInt(val) || val
-        } else if (!matchedInfoCmd && !/ipv4/.test(arg)) {
+        else if (!matchedInfoCmd) {
             console.error(`\n${br}${app.msgs.prefix_error}: Arg [${arg}] ${app.msgs.error_notRecognized}.${nc}`)
             console.info(`\n${by}${app.msgs.info_validArgs}.${nc}`)
-            printHelpSections(['paramOptions', 'flags', 'infoCmds'])
+            printHelpSections(['paramOptions', 'infoCmds'])
             process.exit(1)
         }
     })
-    if (app.config.qty && (isNaN(app.config.qty) || app.config.qty < 1)) {
-        console.error(`\n${br}${app.msgs.prefix_error}: [qty] ${app.msgs.error_nonPositiveNum}.${nc}`)
-        printHelpCmdAndDocURL() ; process.exit(1)
-    }
 
     // Show HELP screen if --?<h|help> passed
     if (process.argv.some(arg => app.regex.infoCmds.help.test(arg))) printHelpSections()
@@ -108,7 +89,7 @@
                 const localManifest = require(localManifestPath)
                 localVer = (localManifest.dependencies?.[app.name]
                          || localManifest.devDependencies?.[app.name]
-                )?.match(app.regex.version)?.[1] || 'none'
+                )?.match(/^[~^>=]?\d+\.\d+\.\d+$/)?.[1] || 'none'
                 break
             }
             currentDir = path.dirname(currentDir)
@@ -116,26 +97,44 @@
         console.info(`\n${app.msgs.prefix_globalVer}: ${globalVer}`)
         console.info(`${app.msgs.prefix_localVer}: ${localVer}`)
 
-    } else { // log/copy RESULT(S)
-        const genOptions = { qty: app.config.qty || 1, verbose: !app.config.quietMode }
-        const ipResult = app.config.ipv6mode ? ipv6.generate(genOptions)
-                       : app.config.macMode  ?  mac.generate(genOptions)
-                                             : ipv4.generate(genOptions)
+    } else { // run MAIN routine
+
+        // Load IP arg(s) into [validIPs]
+        const args = process.argv.slice(2), validIPs = []
+        for (const arg of args) if (!arg.startsWith('-')) {
+            const ip = arg.replace(/[[\]]/g, '') // strip surrounding '[]' in case copied from docs
+            validIPs.push(ip)
+        }
+
+        // Fetch/store geolocation data
+        const geoResults = await geo.locate(validIPs, { verbose: !app.config.quietMode })
+        if (!geoResults) process.exit(1)
+
+        // Log single result
+        if (!app.config.quietMode && geoResults.length == 1) {
+            console.info(`\nIP: ${bw}${geoResults[0].ip}${nc}`)
+            console.info(`${app.msgs.geoLabel_country}: ${bw}${geoResults[0].country}${nc}}`)
+            console.info(`${app.msgs.geoLabel_region}: ${bw}${geoResults[0].regionName}${nc}}`)
+            console.info(`${app.msgs.geoLabel_city}: ${bw}${geoResults[0].city}${nc}}`)
+            console.info(`${app.msgs.geoLabel_zip}: ${bw}${geoResults[0].zip}${nc}}`)
+            console.info(`${app.msgs.geoLabel_lat}: ${bw}${geoResults[0].lat}${nc}}`)
+            console.info(`${app.msgs.geoLabel_lon}: ${bw}${geoResults[0].lon}${nc}}`)
+            console.info(`${app.msgs.geoLabel_timeZone}: ${bw}${geoResults[0].timezone
+                .replace(/_/g, ' ') // insert spaces
+                .replace(/\//g, ' / ') // pad slashes
+            }${nc}`)
+            console.info(`ISP: ${bw}${geoResults[0].isp}${nc}}`)
+        }
+
+        // Copy to clipboard
         printIfNotQuiet(`\n${app.msgs.info_copying}...`)
-        clipboardy.writeSync(Array.isArray(ipResult) ? ipResult.join('\n') : ipResult)
+        clipboardy.writeSync(JSON.stringify(geoResults, undefined, 2))
     }
 
     // Define FUNCTIONS
 
-    function printHelpCmdAndDocURL() {
-        console.info(`\n${app.msgs.info_moreHelp}, ${
-            app.msgs.info_type || 'type' } generate-ip --help' ${app.msgs.info_or} ${
-            app.msgs.info_visit || 'visit' }\n${bw}${app.urls.docs}${nc}`
-        )
-    }
-
-    function printHelpSections(includeSections = ['header', 'usage', 'paramOptions', 'flags', 'infoCmds']) {
-        app.prefix = `\x1b[106m\x1b[30m ${app.name} ${nc} ` // bright teal bg + black fg
+    function printHelpSections(includeSections = ['header', 'usage', 'configOptions', 'infoCmds']) {
+        app.prefix = `\x1b[106m\x1b[30m ${app.name.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
         const helpSections = {
             header: [
                 `\n├ ${app.prefix}${ app.msgs.appCopyright || `© ${
@@ -148,14 +147,8 @@
                 `\n${bw}o ${app.msgs.helpSection_usage}:${nc}`,
                 ` ${bw}» ${bg}${app.cmdFormat}${nc}`
             ],
-            paramOptions: [
-                `\n${bw}o ${app.msgs.helpSection_paramOptions}:${nc}`,
-                ` --qty=n                     ${app.msgs.optionDesc_qty}.`
-            ],
-            flags: [
-                `\n${bw}o ${app.msgs.helpSection_flags}:${nc}`,
-                ` -6, --ipv6                  ${app.msgs.optionDesc_ipv6}.`,
-                ` -m, --mac                   ${app.msgs.optionDesc_mac}.`,
+            configOptions: [
+                `\n${bw}o ${app.msgs.helpSection_configOptions}:${nc}`,
                 ` -q, --quiet                 ${app.msgs.optionDesc_quiet}.`
             ],
             infoCmds: [

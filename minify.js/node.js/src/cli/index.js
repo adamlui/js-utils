@@ -14,7 +14,7 @@
           path = require('path')
 
     // Init APP data
-    globalThis.app = require(`${ env.devMode ? '..' : '.' }/app.json`)
+    globalThis.app = require(`../${ env.devMode ? '../' : '' }app.json`)
     app.config = {} ; app.urls.docs += '/#-command-line-usage'
     app.regex = {
         flags: {
