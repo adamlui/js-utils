@@ -66,9 +66,8 @@
                   msgLocaleDir = `${ env.sysLang ? env.sysLang.replace('-', '_') : 'en' }/`
             let msgHref = `${msgHostDir}${msgLocaleDir}messages.json`, msgFetchTries = 0
             while (msgFetchTries < 3)
-                try { // to return localized messages.json
-                    app.msgs = flattenMsgs(await (await fetchData(msgHref)).json()) ; break
-                } catch (err) { // if bad response
+                try { app.msgs = flattenMsgs(await (await fetchData(msgHref)).json()) ; break }
+                catch (err) { // if bad response
                     msgFetchTries++ ; if (msgFetchTries == 3) break // try original/region-stripped/EN only
                     msgHref = env.sysLang.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                         msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
