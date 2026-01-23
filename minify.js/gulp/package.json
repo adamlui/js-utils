@@ -29,6 +29,7 @@
   ],
   "main": "dist/gulp-minify.min.js",
   "files": [
+    "dist/",
     "docs/"
   ],
   "directories": {

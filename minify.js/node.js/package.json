@@ -29,10 +29,9 @@
   ],
   "main": "dist/minify.min.js",
   "files": [
-    "_locales/en/",
+    "dist/",
     "docs/",
-    "!docs/*/",
-    "app.json"
+    "!docs/*/"
   ],
   "bin": {
     "minifyjs": "dist/cli.min.js",

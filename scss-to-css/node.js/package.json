@@ -29,6 +29,7 @@
   ],
   "main": "dist/scss-to-css.min.js",
   "files": [
+    "dist/",
     "docs/",
     "!docs/*/"
   ],
