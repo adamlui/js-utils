@@ -19,16 +19,19 @@ module.exports = {
         }
     },
 
-    initSysLang() {
+    getSysLang() {
         if (process.platform == 'win32')
             try {
-                env.sysLang = require('child_process').execSync(
+                return require('child_process').execSync(
                     '(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' }
                 ).trim()
-            } catch (err) { console.error('ERROR loading system language:', err.message) }
+            } catch (err) {
+                console.error('ERROR loading system language:', err.message)
+                return 'en'
+            }
         else { // macOS/Linux
-            const pe = process.env
-            env.sysLang = (pe.LANG || pe.LANGUAGE || pe.LC_ALL || pe.LC_MESSAGES || pe.LC_NAME || 'en')?.split('.')[0]
+            const pe = process.env, lang = pe.LANG || pe.LANGUAGE || pe.LC_ALL || pe.LC_MESSAGES || pe.LC_NAME
+            return lang ? lang.split('.')[0] : 'en'
         }
     }
 }
