@@ -74,7 +74,7 @@ fi
 
 # Commit build to Git
 echo -e "${BY}\nCommitting build to Git...\n${NC}"
-git add ./dist/*.js
+git add ./dist
 git commit -n -m "Built $pkg_name v$new_ver"
 
 # Push all changes to GiHub
