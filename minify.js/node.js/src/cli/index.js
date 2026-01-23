@@ -169,7 +169,7 @@
                 `\n${by}${app.msgs.info_noFilesProcessed}.${nc}`)
             if (failedPaths.length) {
                 printIfNotQuiet(
-                    `\n${br + failedPaths.length} ${app.msgs.info_file}`
+                    `\n${br}${failedPaths.length} ${app.msgs.info_file}`
                     + `${ failedPaths.length > 1 ? 's' : '' } ${app.msgs.info_failedToMinify}:${nc}`
                 )
                 failedPaths.forEach(path => printIfNotQuiet(path))
