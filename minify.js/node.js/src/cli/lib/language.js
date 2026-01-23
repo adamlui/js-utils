@@ -1,7 +1,7 @@
 module.exports = {
     async getMsgs(langCode = 'en') {
         const data = require(`./data${ env.devMode ? '' : '.min' }.js`)
-        let msgs = data.flatten(
+        let msgs = data.flatten( // local ones
             require(`../../${ env.devMode ? '../../_locales/en/' : 'data/' }messages.json`), { key: 'message' })
         if (!langCode.startsWith('en')) { // fetch non-English msgs from jsDelivr
             const msgHostURL = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`,
