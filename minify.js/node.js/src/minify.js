@@ -66,8 +66,8 @@ function findJS(searchDir, options = {}) {
 
     // Log/return final result
     if (options.verbose && !options.isRecursing) {
-            console.info(`${logPrefix}Search complete! `
-                + `${ jsFiles.length || 'No' } file${ jsFiles.length == 1 ? '' : 's' } found.`)
+        console.info(`${logPrefix}Search complete! `
+            + `${ jsFiles.length || 'No' } file${ jsFiles.length == 1 ? '' : 's' } found.`)
         if (findJS.caller?.name != 'minify' && typeof window != 'undefined')
             console.info(`${logPrefix}Check returned array.`)
     }
