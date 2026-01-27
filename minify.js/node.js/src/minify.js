@@ -223,7 +223,7 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     }
     for (const key in options) { // validate each key
         if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key))
-            continue // to next key due to unused option
+            continue // to next key due to unrecognized option
         else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
             console.error(`${logPrefix}ERROR: [${key}] option can only be \`true\` or \`false\`.`)
             printDocURL() ; return false
