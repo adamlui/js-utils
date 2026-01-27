@@ -190,7 +190,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
                 const replacementCharSet = charsets[charType] || charsets[charType + 's']
                 strictPW = strictPW.substring(0, replacementPos) // perform actual replacement
                          + replacementCharSet[randomInt(0, replacementCharSet.length)]
-                         + strictPW.substring(replacementPos + 1)
+                         + strictPW.substring(replacementPos +1)
                 replacementCnt++
     }}}
 
@@ -282,8 +282,8 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Init log vars
     const logPrefix = `${ validateOptions.caller?.name || 'validateOptions' }() » `
-    let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) + 1
-    optionsPos += ['st','nd','rd'][optionsPos - 1] || 'th' // append ordinal suffix
+    let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) +1
+    optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
 
     // Define print functions
     function printValidOptions() {

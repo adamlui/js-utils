@@ -206,7 +206,7 @@ const ipv6 = {
         // Validate address as IPv6 address
         if (options.verbose) console.info(`${logPrefix}Validating ${address}...`)
         const pieces = address.split(/::?/),
-              lastPiece = pieces[pieces.length - 1]
+              lastPiece = pieces[pieces.length -1]
         const isValidIPv6 = !( // false if any dq condition matches
                   address.includes('::') && address.split('::').length > 2 // 2+ '::'
                || /:{3,}/.test(address) // 3+ consecutive ':'
@@ -321,8 +321,8 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Init log vars
     const logPrefix = `${ validateOptions.caller?.name || 'validateOptions' }() » `
-    let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) + 1
-    optionsPos += ['st','nd','rd'][optionsPos - 1] || 'th' // append ordinal suffix
+    let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) +1
+    optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
 
     // Define print functions
     function printValidOptions() {

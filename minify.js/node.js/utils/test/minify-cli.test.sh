@@ -19,7 +19,7 @@ if [ "$relative_path" = "utils/test" ] ; then input_arg="input"
 elif [ "$relative_path" = "." ] ; then input_arg="utils/test/input"
 else
     levels_up=$(echo "$relative_path" | tr '/' '\n' | wc -l)
-    parent_dirs=$(printf "../%.0s" $(seq 1 $((levels_up - 1))))
+    parent_dirs=$(printf "../%.0s" $(seq 1 $((levels_up -1))))
     input_arg="$parent_dirs/utils/test/input"
 fi
 output_arg="output/min"
