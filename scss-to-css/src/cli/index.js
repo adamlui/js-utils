@@ -291,7 +291,9 @@
 
     function printHelpCmdAndDocURL() {
         console.info(
-            `\nFor more help, type 'scss-to-css --help' or visit\n${app.colors.bw}${app.urls.docs}${app.colors.nc}`)
+            `\nFor more help, type 'scss-to-css --help' or visit\n${
+            app.colors.bw}${app.urls.docs}${app.colors.nc}`
+        )
     }
 
     function printIfNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) }

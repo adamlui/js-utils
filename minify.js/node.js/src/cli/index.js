@@ -220,7 +220,8 @@
     function printHelpCmdAndDocURL() {
         console.info(`\n${
             app.msgs.info_moreHelp}, ${app.msgs.info_type} ${app.name.split('/')[1]} --help' ${
-            app.msgs.info_or} ${app.msgs.info_visit}\n${app.colors.bw}${app.urls.docs}${app.colors.nc}`
+            app.msgs.info_or} ${app.msgs.info_visit}\n${
+            app.colors.bw}${app.urls.docs}${app.colors.nc}`
         )
     }
 
