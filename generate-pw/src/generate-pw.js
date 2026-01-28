@@ -3,6 +3,21 @@
 // Documentation: https://docs.generatepw.org
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js
 
+// Init APP data
+globalThis.app = require(`${ __dirname.match(/[\\/]src/) ? '../' : './data/' }app.json`)
+app.aliases = {
+    generatePassword: [
+        'generate', 'generatepassword', 'generatepw', 'generatePw', 'generatePW',
+        'Generate', 'Generatepassword', 'GeneratePassword', 'Generatepw', 'GeneratePw', 'GeneratePW'
+    ],
+    generatePasswords: [
+        'generatepasswords', 'generatepws', 'generatePws', 'generatePWs', 'generatePWS',
+        'Generatepasswords', 'GeneratePasswords', 'Generatepws', 'GeneratePws', 'GeneratePWs', 'GeneratePWS'
+    ],
+    strictify: [ 'Strictify' ],
+    validateStrength: [ 'validate', 'Validate', 'validatestrength', 'Validatestrength', 'ValidateStrength' ]
+}
+
 const charsets = {
     lower: 'abcdefghijklmnopqrstuvwxyz',
     upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
@@ -318,22 +333,10 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     return true
 }
 
-const gpwAliases = {
-    generatePassword: [
-        'generate', 'generatepassword', 'generatepw', 'generatePw', 'generatePW',
-        'Generate', 'Generatepassword', 'GeneratePassword', 'Generatepw', 'GeneratePw', 'GeneratePW'
-    ],
-    generatePasswords: [
-        'generatepasswords', 'generatepws', 'generatePws', 'generatePWs', 'generatePWS',
-        'Generatepasswords', 'GeneratePasswords', 'Generatepws', 'GeneratePws', 'GeneratePWs', 'GeneratePWS'
-    ],
-    strictify: [ 'Strictify' ],
-    validateStrength: [ 'validate', 'Validate', 'validatestrength', 'Validatestrength', 'ValidateStrength' ]
-}
-const gpwFuncs = { generatePassword, generatePasswords, strictify, validateStrength }
-try { module.exports = { ...gpwFuncs }} catch (err) {} // for Node.js
-try { window.pw = { ...gpwFuncs }} catch (err) {} // for browsers
-for (const func in gpwAliases) { // init/export aliases
-    try { gpwAliases[func].forEach(alias => module.exports[alias] = module.exports[func]) } catch (err) {} // for Node.js
-    try { gpwAliases[func].forEach(alias => window.pw[alias] = window.pw[func]) } catch (err) {} // for browsers
+app.funcs = { generatePassword, generatePasswords, strictify, validateStrength }
+try { module.exports = { ...app.funcs }} catch (err) {} // for Node.js
+try { window.pw = { ...app.funcs }} catch (err) {} // for browsers
+for (const fn in app.aliases) { // export aliases
+    try { app.aliases[fn].forEach(alias => module.exports[alias] = module.exports[fn]) } catch (err) {} // for Node.js
+    try { app.aliases[fn].forEach(alias => window.pw[alias] = window.pw[fn]) } catch (err) {} // for browsers
 }

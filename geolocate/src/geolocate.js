@@ -5,6 +5,10 @@
 
 /* global ipv4 */
 
+// Init APP data
+globalThis.app = require(`${ __dirname.match(/[\\/]src/) ? '../' : './data/' }app.json`)
+app.aliases = { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] }
+
 async function geolocate(ips, options = {}) {
 
     const docURL = 'https://docs.geolocatejs.org/#locateips-options',
@@ -118,10 +122,9 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     return true
 }
 
-const geoAliases = { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] }
 try { module.exports = { geolocate }} catch (err) {} // for Node.js
 try { window.geo = { geolocate }} catch (err) {} // for browsers
-for (const func in geoAliases) { // init/export aliases
-    try { geoAliases[func].forEach(alias => module.exports[alias] = module.exports[func]) } catch (err) {} // for Node.js
-    try { geoAliases[func].forEach(alias => window.geo[alias] = window.geo[func]) } catch (err) {} // for browsers
+for (const fn in app.aliases) { // export aliases
+    try { app.aliases[fn].forEach(alias => module.exports[alias] = module.exports[fn]) } catch (err) {} // for Node.js
+    try { app.aliases[fn].forEach(alias => window.geo[alias] = window.geo[fn]) } catch (err) {} // for browsers
 }

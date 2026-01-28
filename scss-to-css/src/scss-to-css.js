@@ -2,11 +2,17 @@
 // Source: https://github.com/adamlui/scss-to-css/tree/main/src
 // Documentation: https://github.com/adamlui/scss-to-css/tree/main/docs
 
+// Import LIBS
 const fs = require('fs'),
       path = require('path'),
       sass = require('sass')
 
+// Init APP data
 globalThis.app = require(`${ __dirname.match(/[\\/]src/) ? '../' : './data/' }app.json`)
+app.aliases = {
+    compile: ['build', 'Build', 'Compile', 'compress', 'Compress', 'minify', 'Minify'],
+    findSCSS: ['find', 'Find', 'findscss', 'findScss', 'Findscss', 'FindScss', 'FindSCSS', 'search', 'Search']
+}
 
 function findSCSS(searchDir, options = {}) {
 
@@ -228,10 +234,6 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     return true
 }
 
-const stcAliases = {
-    compile: ['build', 'Build', 'Compile', 'compress', 'Compress', 'minify', 'Minify'],
-    findSCSS: ['find', 'Find', 'findscss', 'findScss', 'Findscss', 'FindScss', 'FindSCSS', 'search', 'Search']
-}
 module.exports = { compile, findSCSS }
-for (const func in stcAliases) // init/export aliases
-    stcAliases[func].forEach(alias => module.exports[alias] = module.exports[func]);
+for (const fn in app.aliases) // export aliases
+    app.aliases[fn].forEach(alias => module.exports[alias] = module.exports[fn]);

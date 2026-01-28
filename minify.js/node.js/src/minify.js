@@ -2,11 +2,17 @@
 // Source: https://github.com/adamlui/minify.js/tree/main/node.js/src
 // Documentation: https://github.com/adamlui/minify.js/tree/main/node.js/docs
 
+// Import LIBS
 const fs = require('fs'),
       path = require('path'),
       uglifyJS = require('uglify-js')
 
+// Init APP data
 globalThis.app = require(`${ __dirname.match(/[\\/]src/) ? '../' : './data/' }app.json`)
+app.aliases = {
+    minify: ['build', 'Build', 'compile', 'Compile', 'compress', 'Compress', 'Minify'],
+    findJS: ['find', 'Find', 'findjs', 'findJs', 'Findjs', 'FindJs', 'FindJS', 'search', 'Search']
+}
 
 function findJS(searchDir, options = {}) {
 
@@ -251,10 +257,6 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     return true
 }
 
-const mjsAliases = {
-    minify: ['build', 'Build', 'compile', 'Compile', 'compress', 'Compress', 'Minify'],
-    findJS: ['find', 'Find', 'findjs', 'findJs', 'Findjs', 'FindJs', 'FindJS', 'search', 'Search']
-}
 module.exports = { minify, findJS }
-for (const func in mjsAliases) // init/export aliases
-    mjsAliases[func].forEach(alias => module.exports[alias] = module.exports[func]);
+for (const fn in app.aliases) // export aliases
+    app.aliases[fn].forEach(alias => module.exports[alias] = module.exports[fn]);
