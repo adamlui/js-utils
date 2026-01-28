@@ -169,14 +169,16 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     const validCharTypes = ['number', 'symbol', 'lower', 'upper']
     if (!Array.isArray(requiredCharTypes)) // convert string to array
         requiredCharTypes = [requiredCharTypes]
-    for (const charType of requiredCharTypes) {
+    for (const charType of requiredCharTypes)
         if (!validCharTypes.includes(charType)) {
             console.error(`${logPrefix}ERROR: 2nd arg \`${charType}\` is an invalid character type.`)
-            console.info(`${logPrefix}Valid character types: [ '${ validCharTypes.join('\', \'')}' ]`)
-            console.info(`${logPrefix}Pass one as a string or more as an array, or all types will be required.`)
-            console.info(`${logPrefix}For more help, please visit ${docURL}`)
+            console.info([
+                `${logPrefix}Valid character types: [ '${validCharTypes.join(`', '`)}' ]`,
+                `${logPrefix}Pass one as a string or more as an array, or all types will be required.`,
+                `${logPrefix}For more help, please visit ${docURL}`
+            ].join('\n'))
             return
-    }}
+        }
 
     // Validate/init options
     if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
