@@ -52,7 +52,8 @@
             const val = arg.split('=')[1]
             app.config[matchedParamOption] = parseInt(val) || val
         } else if (!matchedInfoCmd && !/ipv4/.test(arg)) {
-            console.error(`\n${colors.br}${app.msgs.prefix_error}: Arg [${arg}] ${app.msgs.error_notRecognized}.${colors.nc}`)
+            console.error(
+                `\n${colors.br}${app.msgs.prefix_error}: Arg [${arg}] ${app.msgs.error_notRecognized}.${colors.nc}`)
             console.info(`\n${colors.by}${app.msgs.info_validArgs}.${colors.nc}`)
             printHelpSections(['paramOptions', 'flags', 'infoCmds'])
             process.exit(1)
