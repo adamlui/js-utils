@@ -3,8 +3,6 @@
 // Documentation: https://docs.geolocatejs.org/#-command-line-usage
 // Latest minified release: https://cdn.jsdelivr.net/npm/@adamlui/geolocate/dist/geolocate.min.js
 
-/* global ipv4 */
-
 globalThis.app = { aliases: { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] }}
 
 async function geolocate(ips, options = {}) {
@@ -24,7 +22,7 @@ async function geolocate(ips, options = {}) {
             ipIsValid = require('generate-ip').ipv4.validate
         } catch (err) { // use jsDelivr's latest copy of generate-ip
             await import('https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js')
-            ipIsValid = ipv4.validate
+            ipIsValid = window.ipv4.validate
         }
         if (ipIsValid && !ipIsValid(ip, { verbose: false }))
             return console.error(`${logPrefix}ERROR: ${ip} is not a valid IPv4 address.`)
