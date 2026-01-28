@@ -71,8 +71,7 @@
             }
             currentDir = path.dirname(currentDir)
         }
-        console.info(`\n${app.msgs.prefix_globalVer}: ${globalVer}`)
-        console.info(`${app.msgs.prefix_localVer}: ${localVer}`)
+        console.info(`\n${app.msgs.prefix_globalVer}: ${globalVer}`, `\n${app.msgs.prefix_localVer}: ${localVer}`)
 
     } else { // run MAIN routine
 
@@ -89,18 +88,19 @@
 
         // Log single result
         if (!app.config.quietMode && geoResults.length == 1) {
-            console.info(`\nIP: ${colors.bw}${geoResults[0].ip}${colors.nc}`)
-            console.info(`${app.msgs.geoLabel_country}: ${colors.bw}${geoResults[0].country}${colors.nc}}`)
-            console.info(`${app.msgs.geoLabel_region}: ${colors.bw}${geoResults[0].regionName}${colors.nc}}`)
-            console.info(`${app.msgs.geoLabel_city}: ${colors.bw}${geoResults[0].city}${colors.nc}}`)
-            console.info(`${app.msgs.geoLabel_zip}: ${colors.bw}${geoResults[0].zip}${colors.nc}}`)
-            console.info(`${app.msgs.geoLabel_lat}: ${colors.bw}${geoResults[0].lat}${colors.nc}}`)
-            console.info(`${app.msgs.geoLabel_lon}: ${colors.bw}${geoResults[0].lon}${colors.nc}}`)
-            console.info(`${app.msgs.geoLabel_timeZone}: ${colors.bw}${geoResults[0].timezone
-                .replace(/_/g, ' ') // insert spaces
-                .replace(/\//g, ' / ') // pad slashes
-            }${colors.nc}`)
-            console.info(`ISP: ${colors.bw}${geoResults[0].isp}${colors.nc}}`)
+            const data = geoResults[0]
+            console.info([
+                `\nIP: ${colors.bw}${data.ip}${colors.nc}`,
+                `${app.msgs.geoLabel_country}: ${colors.bw}${data.country}${colors.nc}`,
+                `${app.msgs.geoLabel_region}: ${colors.bw}${data.regionName}${colors.nc}`,
+                `${app.msgs.geoLabel_city}: ${colors.bw}${data.city}${colors.nc}`,
+                `${app.msgs.geoLabel_zip}: ${colors.bw}${data.zip}${colors.nc}`,
+                `${app.msgs.geoLabel_lat}: ${colors.bw}${data.lat}${colors.nc}`,
+                `${app.msgs.geoLabel_lon}: ${colors.bw}${data.lon}${colors.nc}`,
+                `${app.msgs.geoLabel_timeZone}: ${
+                    colors.bw}${data.timezone.replace(/_/g, ' ').replace(/\//g, ' / ')}${colors.nc}`,
+                `ISP: ${colors.bw}${data.isp}${colors.nc}`
+            ].join('\n'))
         }
 
         // Copy to clipboard

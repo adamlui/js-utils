@@ -90,8 +90,7 @@
             }
             currentDir = path.dirname(currentDir)
         }
-        console.info(`\n${app.msgs.prefix_globalVer}: ${globalVer}`)
-        console.info(`${app.msgs.prefix_localVer}: ${localVer}`)
+        console.info(`\n${app.msgs.prefix_globalVer}: ${globalVer}`, `\n${app.msgs.prefix_localVer}: ${localVer}`)
 
     } else { // log/copy RESULT(S)
         const genOptions = { qty: app.config.qty || 1, verbose: !app.config.quietMode },
