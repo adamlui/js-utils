@@ -1,0 +1,17 @@
+{
+  "name": "@adamlui/geolocate",
+  "author": "Adam Lui & contributors",
+  "license": "MIT",
+  "copyrightYear": "2024–2026",
+  "cmdFormat": "geolocate [ip1] [ip2] [...] [options|commands]",
+  "urls": {
+    "docs": "https://github.com/adamlui/js-utils/tree/main/geolocate/docs",
+    "github": "https://github.com/adamlui/js-utils",
+    "jsdelivr": "https://cdn.jsdelivr.net/gh/adamlui/js-utils",
+    "npm": "https://www.npmjs.com/package/@adamlui/geolocate",
+    "src": "https://github.com/adamlui/js-utils/tree/main/geolocate/src"
+  },
+  "commitHashes": {
+    "locales": "0e30af1"
+  }
+}
