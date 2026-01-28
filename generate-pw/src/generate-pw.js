@@ -5,12 +5,6 @@
 
 // Init APP data
 globalThis.app = require(`${ __dirname.match(/[\\/]src/) ? '../' : './data/' }app.json`)
-app.charsets = {
-    lower: 'abcdefghijklmnopqrstuvwxyz',
-    upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
-    numbers: '0123456789',
-    symbols: '!@#$%^&*()-_=+[]{}/\\|;:\'",.<>?'
-}
 app.aliases = {
     generatePassword: [
         'generate', 'generatepassword', 'generatepw', 'generatePw', 'generatePW',
@@ -22,6 +16,12 @@ app.aliases = {
     ],
     strictify: [ 'Strictify' ],
     validateStrength: [ 'validate', 'Validate', 'validatestrength', 'Validatestrength', 'ValidateStrength' ]
+}
+app.charsets = {
+    lower: 'abcdefghijklmnopqrstuvwxyz',
+    upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+    numbers: '0123456789',
+    symbols: '!@#$%^&*()-_=+[]{}/\\|;:\'",.<>?'
 }
 
 function generatePassword(options = {}) {
