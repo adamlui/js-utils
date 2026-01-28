@@ -101,6 +101,4 @@
         clipboardy.writeSync([].concat(ipResult).join('\n'))
     }
 
-    // Define FUNCTIONS
-
 })()
