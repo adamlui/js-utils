@@ -48,7 +48,7 @@
         bg: '\x1b[1;92m', // bright green
         bw: '\x1b[1;97m', // bright white
         blk: '\x1b[30m',  // black
-        btBG: '\x1b[106m' // bright teal background
+        btBG: '\x1b[106m' // bright teal bg
     }
 
     // Load SETTINGS from args
