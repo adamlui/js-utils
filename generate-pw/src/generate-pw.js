@@ -334,9 +334,9 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     return true
 }
 
-app.funcs = { generatePassword, generatePasswords, strictify, validateStrength }
-try { module.exports = { ...app.funcs }} catch (err) {} // for Node.js
-try { window.pw = { ...app.funcs }} catch (err) {} // for browsers
+app.exports = { generatePassword, generatePasswords, strictify, validateStrength }
+try { module.exports = { ...app.exports }} catch (err) {} // for Node.js
+try { window.pw = { ...app.exports }} catch (err) {} // for browsers
 for (const fn in app.aliases) { // export aliases
     try { app.aliases[fn].forEach(alias => module.exports[alias] = module.exports[fn]) } catch (err) {} // for Node.js
     try { app.aliases[fn].forEach(alias => window.pw[alias] = window.pw[fn]) } catch (err) {} // for browsers
