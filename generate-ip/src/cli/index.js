@@ -11,7 +11,8 @@
           fs = require('fs'),
         { getMsgs, getSysLang } = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
         { ipv4, ipv6, mac } = require(`../generate-ip${ env.devMode ? '' : '.min' }.js`),
-          path = require('path')
+          path = require('path'),
+          print = require(`./lib/print${ env.devMode ? '' : '.min' }.js`)
 
     // Init APP data
     globalThis.app = require(`../${ env.devMode ? '../' : './data/' }app.json`)
@@ -53,7 +54,7 @@
             if (!/=.+/.test(arg)) {
                 console.error(`\n${app.colors.br}${app.msgs.prefix_error}: Arg [--${
                     arg.replace(/-/g, '')}] ${app.msgs.error_noEqual}.${app.colors.nc}`)
-                printHelpCmdAndDocURL() ; process.exit(1)
+                print.helpCmdAndDocURL() ; process.exit(1)
             }
             const val = arg.split('=')[1]
             app.config[matchedParamOption] = parseInt(val) || val
@@ -61,18 +62,18 @@
             console.error(`\n${app.colors.br}${app.msgs.prefix_error}: Arg [${
                 arg}] ${app.msgs.error_notRecognized}.${app.colors.nc}`)
             console.info(`\n${app.colors.by}${app.msgs.info_validArgs}.${app.colors.nc}`)
-            printHelpSections(['paramOptions', 'flags', 'infoCmds'])
+            print.helpSections(['paramOptions', 'flags', 'infoCmds'])
             process.exit(1)
         }
     })
     if (app.config.qty && (isNaN(app.config.qty) || app.config.qty < 1)) {
         console.error(
             `\n${app.colors.br}${app.msgs.prefix_error}: [qty] ${app.msgs.error_nonPositiveNum}.${app.colors.nc}`)
-        printHelpCmdAndDocURL() ; process.exit(1)
+        print.helpCmdAndDocURL() ; process.exit(1)
     }
 
     // Show HELP screen if --?<h|help> passed
-    if (process.argv.some(arg => app.regex.infoCmds.help.test(arg))) printHelpSections()
+    if (process.argv.some(arg => app.regex.infoCmds.help.test(arg))) print.helpSections()
 
     // Show VERSION number if --?<v|version> passed
     else if (process.argv.some(arg => app.regex.infoCmds.version.test(arg))) {
@@ -96,79 +97,10 @@
               ipResult = app.config.ipv6mode ? ipv6.generate(genOptions)
                        : app.config.macMode  ?  mac.generate(genOptions)
                                              : ipv4.generate(genOptions)
-        printIfNotQuiet(`\n${app.msgs.info_copying}...`)
+        print.ifNotQuiet(`\n${app.msgs.info_copying}...`)
         clipboardy.writeSync([].concat(ipResult).join('\n'))
     }
 
     // Define FUNCTIONS
-
-    function printHelpCmdAndDocURL() {
-        console.info(`\n${
-            app.msgs.info_moreHelp}, ${app.msgs.info_type} ${app.name} --help' ${
-            app.msgs.info_or} ${app.msgs.info_visit}\n${
-            app.colors.bw}${app.urls.docs}${app.colors.nc}`
-        )
-    }
-
-    function printHelpSections(includeSections = ['header', 'usage', 'paramOptions', 'flags', 'infoCmds']) {
-        app.prefix = `${app.colors.tlBG}${app.colors.blk}\x1b[30m ${app.name} ${app.colors.nc} `
-        const helpSections = {
-            header: [
-                `\n├ ${app.prefix}${ app.msgs.appCopyright || `© ${
-                       app.copyrightYear} ${app.author} under the ${app.license} license`
-                }.`,
-                `${app.prefix}${app.msgs.prefix_source}: ${app.urls.src}`
-            ],
-            usage: [
-                `\n${app.colors.bw}o ${app.msgs.helpSection_usage}:${app.colors.nc}`,
-                ` ${app.colors.bw}» ${app.colors.bg}${app.cmdFormat}${app.colors.nc}`
-            ],
-            paramOptions: [
-                `\n${app.colors.bw}o ${app.msgs.helpSection_paramOptions}:${app.colors.nc}`,
-                ` --qty=n                     ${app.msgs.optionDesc_qty}.`
-            ],
-            flags: [
-                `\n${app.colors.bw}o ${app.msgs.helpSection_flags}:${app.colors.nc}`,
-                ` -6, --ipv6                  ${app.msgs.optionDesc_ipv6}.`,
-                ` -m, --mac                   ${app.msgs.optionDesc_mac}.`,
-                ` -q, --quiet                 ${app.msgs.optionDesc_quiet}.`
-            ],
-            infoCmds: [
-                `\n${app.colors.bw}o ${app.msgs.helpSection_infoCmds}:${app.colors.nc}`,
-                ` -h, --help                  ${app.msgs.optionDesc_help}`,
-                ` -v, --version               ${app.msgs.optionDesc_version}.`
-            ]
-        }
-        includeSections.forEach(section => // print valid arg elems
-            helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)))
-        console.info(
-            `\n${app.msgs.info_moreHelp}, ${app.msgs.info_visit}: ${app.colors.bw}${app.urls.docs}${app.colors.nc}`)
-
-        function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
-            const terminalWidth = process.stdout.columns || 80,
-                  lines = [], words = msg.match(/\S+|\s+/g),
-                  prefix = '| '
-
-            // Split msg into lines of appropriate lengths
-            let currentLine = ''
-            words.forEach(word => {
-                const lineLength = terminalWidth - ( !lines.length ? 0 : indent )
-                if (currentLine.length + prefix.length + word.length > lineLength) { // cap/store it
-                    lines.push(!lines.length ? currentLine : currentLine.trimStart())
-                    currentLine = ''
-                }
-                currentLine += word
-            })
-            lines.push(!lines.length ? currentLine : currentLine.trimStart())
-
-            // Print formatted msg
-            lines.forEach((line, idx) => console.info(prefix +(
-                idx == 0 ? line // print 1st line unindented
-                    : ' '.repeat(indent) + line // print subsequent lines indented
-            )))
-        }
-    }
-
-    function printIfNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) }
 
 })()
