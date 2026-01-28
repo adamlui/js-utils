@@ -91,8 +91,7 @@
             }
             currentDir = path.dirname(currentDir)
         }
-        console.info(`\nGlobal version: ${globalVer}`)
-        console.info(`Local version: ${localVer}`)
+        console.info(`\n${app.msgs.prefix_globalVer}: ${globalVer}`, `\n${app.msgs.prefix_localVer}: ${localVer}`)
 
     } else { // run MAIN routine
 
