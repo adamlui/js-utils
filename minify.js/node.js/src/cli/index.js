@@ -16,6 +16,15 @@
     // Init APP data
     globalThis.app = require(`../${ env.devMode ? '../' : './data/' }app.json`)
     app.urls.docs += '/#-command-line-usage' ; app.msgs = await getMsgs(getSysLang())
+    app.colors = {
+        nc: '\x1b[0m',    // no color
+        br: '\x1b[1;91m', // bright red
+        by: '\x1b[1;33m', // bright yellow
+        bg: '\x1b[1;92m', // bright green
+        bw: '\x1b[1;97m', // bright white
+        blk: '\x1b[30m',  // black
+        tlBG: '\x1b[106m' // bright teal bg
+    }
     app.regex = {
         flags: {
             dryRun: /^--?(?:n|dry-?run)$/,
@@ -40,17 +49,6 @@
         version: /^[~^>=]?\d+\.\d+\.\d+$/
     }
 
-    // Init UI COLORS
-    const colors = {
-        nc: '\x1b[0m',    // no color
-        br: '\x1b[1;91m', // bright red
-        by: '\x1b[1;33m', // bright yellow
-        bg: '\x1b[1;92m', // bright green
-        bw: '\x1b[1;97m', // bright white
-        blk: '\x1b[30m',  // black
-        btBG: '\x1b[106m' // bright teal bg
-    }
-
     // Load SETTINGS from args
     app.config = {}
     process.argv.forEach(arg => {
@@ -62,16 +60,16 @@
         if (matchedFlag) app.config[matchedFlag] = true
         else if (matchedParamOption) {
             if (!/=.+/.test(arg)) {
-                console.error(`\n${colors.br}${
-                    app.msgs.prefix_error}: Arg [--${arg.replace(/-/g, '')}] ${app.msgs.error_noEqual}.${colors.nc}`)
+                console.error(`\n${app.colors.br}${app.msgs.prefix_error}: Arg [--${
+                    arg.replace(/-/g, '')}] ${app.msgs.error_noEqual}.${app.colors.nc}`)
                 printHelpCmdAndDocURL() ; process.exit(1)
             }
             const val = arg.split('=')[1]
             app.config[matchedParamOption] = parseInt(val) || val
         } else if (!matchedInfoCmd) {
-            console.error(
-                `\n${colors.br}${app.msgs.prefix_error}: Arg [${arg}] ${app.msgs.error_notRecognized}.${colors.nc}`)
-            console.info(`\n${colors.by}${app.msgs.info_validArgs}.${colors.nc}`)
+            console.error(`\n${app.colors.br}${app.msgs.prefix_error}: Arg [${
+                arg}] ${app.msgs.error_notRecognized}.${app.colors.nc}`)
+            console.info(`\n${app.colors.by}${app.msgs.info_validArgs}.${app.colors.nc}`)
             printHelpSections(['paramOptions', 'flags', 'infoCmds'])
             process.exit(1)
         }
@@ -95,7 +93,7 @@
             }
             currentDir = path.dirname(currentDir)
         }
-        console.info(`\n${app.msgs.prefix_globalVer}: ${globalVer}`, `\n${app.msgs.prefix_localVer}: ${localVer}`)
+        console.info(`\n${app.msgs.prefix_globalVer}: ${globalVer}\n${app.msgs.prefix_localVer}: ${localVer}`)
 
     } else { // run MAIN routine
 
@@ -110,11 +108,11 @@
         if (inputArg && !fs.existsSync(inputPath)) {
             const jsInputPath = inputPath + '.js' // append '.js' in case ommitted from intended filename
             if (!fs.existsSync(jsInputPath)) {
-                console.error(`\n${colors.br}${app.msgs.prefix_error}: `
+                console.error(`\n${app.colors.br}${app.msgs.prefix_error}: `
                     + `${app.msgs.error_firstArgNotExist}.`
-                    + `\n${inputPath} ${app.msgs.error_doesNotExist}.${colors.nc}`)
-                console.info(`\n${colors.bg}${app.msgs.info_exampleValidCmd}: `
-                    + `\n» minify-js . output.min.js${colors.nc}`)
+                    + `\n${inputPath} ${app.msgs.error_doesNotExist}.${app.colors.nc}`)
+                console.info(`\n${app.colors.bg}${app.msgs.info_exampleValidCmd}: `
+                    + `\n» minify-js . output.min.js${app.colors.nc}`)
                 printHelpCmdAndDocURL() ; process.exit(1)
             } else inputPath = jsInputPath
         }
@@ -129,10 +127,10 @@
 
         if (app.config.dryRun) { // -n or --dry-run passed
             if (ogJSfiles.length) { // print files to be processed
-                console.info(`\n${colors.by}${app.msgs.info_filesToBeMinned}:${colors.nc}`)
+                console.info(`\n${app.colors.by}${app.msgs.info_filesToBeMinned}:${app.colors.nc}`)
                 ogJSfiles.forEach(file => console.info(file))
             } else // no files found
-                console.info(`\n${colors.by}${app.msgs.info_noFilesWillBeMinned}.${colors.nc}`)
+                console.info(`\n${app.colors.by}${app.msgs.info_noFilesWillBeMinned}.${app.colors.nc}`)
 
         } else { // actually minify JavaScript files
 
@@ -166,15 +164,15 @@
 
             // Print minification summary
             if (minifyData?.length) {
-                printIfNotQuiet(`\n${colors.bg}${app.msgs.info_minComplete}!${colors.nc}`)
-                printIfNotQuiet(`${colors.bw}${minifyData.length} ${app.msgs.info_file}`
-                    + `${ minifyData.length > 1 ? 's' : '' } ${app.msgs.info_minified}.${colors.nc}`)
+                printIfNotQuiet(`\n${app.colors.bg}${app.msgs.info_minComplete}!${app.colors.nc}`)
+                printIfNotQuiet(`${app.colors.bw}${minifyData.length} ${app.msgs.info_file}`
+                    + `${ minifyData.length > 1 ? 's' : '' } ${app.msgs.info_minified}.${app.colors.nc}`)
             } else printIfNotQuiet(
-                `\n${colors.by}${app.msgs.info_noFilesProcessed}.${colors.nc}`)
+                `\n${app.colors.by}${app.msgs.info_noFilesProcessed}.${app.colors.nc}`)
             if (failedPaths.length) {
                 printIfNotQuiet(
-                    `\n${colors.br}${failedPaths.length} ${app.msgs.info_file}`
-                    + `${ failedPaths.length > 1 ? 's' : '' } ${app.msgs.info_failedToMinify}:${colors.nc}`
+                    `\n${app.colors.br}${failedPaths.length} ${app.msgs.info_file}`
+                    + `${ failedPaths.length > 1 ? 's' : '' } ${app.msgs.info_failedToMinify}:${app.colors.nc}`
                 )
                 failedPaths.forEach(path => printIfNotQuiet(path))
             }
@@ -182,7 +180,7 @@
 
             // Copy single result code to clipboard if --copy passed
             if (app.config.copy && minifyData?.length == 1) {
-                console.log(`\n${colors.bw}${minifyData[0].code}${colors.nc}`)
+                console.log(`\n${app.colors.bw}${minifyData[0].code}${app.colors.nc}`)
                 printIfNotQuiet(`\n${app.msgs.info_copying}...`)
                 clipboardy.writeSync(minifyData[0].code)
 
@@ -211,7 +209,7 @@
                     const outputPath = path.join(outputDir, outputFilename)
                     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true })
                     fs.writeFileSync(outputPath, code, 'utf8')
-                    printIfNotQuiet(`  ${colors.bg}✓${colors.nc} ${path.relative(process.cwd(), outputPath)}`)
+                    printIfNotQuiet(`  ${app.colors.bg}✓${app.colors.nc} ${path.relative(process.cwd(), outputPath)}`)
                 })
             }
         }
@@ -222,12 +220,12 @@
     function printHelpCmdAndDocURL() {
         console.info(`\n${
             app.msgs.info_moreHelp}, ${app.msgs.info_type} ${app.name.split('/')[1]} --help' ${
-            app.msgs.info_or} ${app.msgs.info_visit}\n${colors.bw}${app.urls.docs}${colors.nc}`
+            app.msgs.info_or} ${app.msgs.info_visit}\n${app.colors.bw}${app.urls.docs}${app.colors.nc}`
         )
     }
 
     function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
-        app.prefix = `${colors.btBG}${colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${colors.nc} `
+        app.prefix = `${app.colors.tlBG}${app.colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${app.colors.nc} `
         const helpSections = {
             header: [
                 `\n├ ${app.prefix}${ app.msgs.appCopyright || `© ${
@@ -236,11 +234,11 @@
                 `${app.prefix}${app.msgs.prefix_source}: ${app.urls.src}`
             ],
             usage: [
-                `\n${colors.bw}o ${app.msgs.helpSection_usage}:${colors.nc}`,
-                ` ${colors.bw}» ${colors.bg}${app.cmdFormat}${colors.nc}`
+                `\n${app.colors.bw}o ${app.msgs.helpSection_usage}:${app.colors.nc}`,
+                ` ${app.colors.bw}» ${app.colors.bg}${app.cmdFormat}${app.colors.nc}`
             ],
             pathArgs: [
-                `\n${colors.bw}o ${app.msgs.helpSection_pathArgs}:${colors.nc}`,
+                `\n${app.colors.bw}o ${app.msgs.helpSection_pathArgs}:${app.colors.nc}`,
                 ' [inputPath]                         '
                     + `${app.msgs.inputPathDesc_main}, `
                     + `${app.msgs.inputPathDesc_extra}.`,
@@ -249,7 +247,7 @@
                     + `${app.msgs.outputPathDesc_extra}.`
             ],
             flags: [
-                `\n${colors.bw}o ${app.msgs.helpSection_flags}:${colors.nc}`,
+                `\n${app.colors.bw}o ${app.msgs.helpSection_flags}:${app.colors.nc}`,
                 ` -n, --dry-run                       ${app.msgs.optionDesc_dryRun}.`,
                 ` -d, --include-dotfolders            ${app.msgs.optionDesc_dotfolders}.`,
                 ` -D, --include-dotfiles              ${app.msgs.optionDesc_dotfiles}.`,
@@ -262,13 +260,13 @@
                 ` -q, --quiet                         ${app.msgs.optionDesc_quiet}.`
             ],
             paramOptions: [
-                `\n${colors.bw}o ${app.msgs.helpSection_paramOptions}:${colors.nc}`,
+                `\n${app.colors.bw}o ${app.msgs.helpSection_paramOptions}:${app.colors.nc}`,
                 `--ignores="dir/,file1.js,file2.js"   ${app.msgs.optionDesc_ignores}.`,
                 `--comment="comment"                  ${app.msgs.optionDesc_commentMain}.`
                                                  +  ` ${app.msgs.optionDesc_commentExtra}.`
             ],
             infoCmds: [
-                `\n${colors.bw}o ${app.msgs.helpSection_infoCmds}:${colors.nc}`,
+                `\n${app.colors.bw}o ${app.msgs.helpSection_infoCmds}:${app.colors.nc}`,
                 ` -h, --help                          ${app.msgs.optionDesc_help}`,
                 ` -v, --version                       ${app.msgs.optionDesc_version}.`
             ]
@@ -276,7 +274,7 @@
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 37)))
         console.info(
-            `\n${app.msgs.info_moreHelp}, ${app.msgs.info_visit}: ${colors.bw}${app.urls.docs}${colors.nc}`)
+            `\n${app.msgs.info_moreHelp}, ${app.msgs.info_visit}: ${app.colors.bw}${app.urls.docs}${app.colors.nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,

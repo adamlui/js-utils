@@ -15,6 +15,15 @@
     // Init APP data
     globalThis.app = require(`../${ env.devMode ? '../' : './data/' }app.json`)
     app.urls.docs += '/#-command-line-usage'
+    app.colors = {
+        nc: '\x1b[0m',    // no color
+        br: '\x1b[1;91m', // bright red
+        by: '\x1b[1;33m', // bright yellow
+        bg: '\x1b[1;92m', // bright green
+        bw: '\x1b[1;97m', // bright white
+        blk: '\x1b[30m',  // black
+        tlBG: '\x1b[106m' // bright teal bg
+    }
     app.regex = {
         flags: {
             dryRun: /^--?(?:n|dry-?run)$/,
@@ -37,17 +46,6 @@
         version: /^[~^>=]?\d+\.\d+\.\d+$/
     }
 
-    // Init UI colors
-    const colors = {
-        nc: '\x1b[0m',    // no color
-        br: '\x1b[1;91m', // bright red
-        by: '\x1b[1;33m', // bright yellow
-        bg: '\x1b[1;92m', // bright green
-        bw: '\x1b[1;97m', // bright white
-        blk: '\x1b[30m',  // black
-        btBG: '\x1b[106m' // bright teal bg
-    }
-
     // Load SETTINGS from args
     app.config = {}
     process.argv.forEach(arg => {
@@ -59,15 +57,15 @@
         if (matchedFlag) app.config[matchedFlag] = true
         else if (matchedParamOption) {
             if (!/=.+/.test(arg)) {
-                console.error(`\n${
-                    colors.br}ERROR: Arg [--${arg.replace(/-/g, '')}] requires '=' followed by a value.${colors.nc}`)
+                console.error(`\n${app.colors.br}ERROR: Arg [--${
+                    arg.replace(/-/g, '')}] requires '=' followed by a value.${app.colors.nc}`)
                 printHelpCmdAndDocURL() ; process.exit(1)
             }
             const val = arg.split('=')[1]
             app.config[matchedParamOption] = parseInt(val) || val
         } else if (!matchedInfoCmd) {
-            console.error(`\n${colors.br}ERROR: Arg [${arg}] not recognized.${colors.nc}`)
-            console.info(`\n${colors.by}Valid arguments are below.${colors.nc}`)
+            console.error(`\n${app.colors.br}ERROR: Arg [${arg}] not recognized.${app.colors.nc}`)
+            console.info(`\n${app.colors.by}Valid arguments are below.${app.colors.nc}`)
             printHelpSections(['flags', 'paramOptions', 'infoCmds'])
             process.exit(1)
         }
@@ -91,7 +89,7 @@
             }
             currentDir = path.dirname(currentDir)
         }
-        console.info(`\n${app.msgs.prefix_globalVer}: ${globalVer}`, `\n${app.msgs.prefix_localVer}: ${localVer}`)
+        console.info(`\nGlobal version: ${globalVer}\nLocal version: ${localVer}`)
 
     } else { // run MAIN routine
 
@@ -106,9 +104,10 @@
         if (inputArg && !fs.existsSync(inputPath)) {
             const scssInputPath = inputPath + '.scss' // append '.scss' in case ommitted from intended filename
             if (!fs.existsSync(scssInputPath)) {
-                console.error(`\n${colors.br}Error: First argument can only be an existing file or directory.`
-                    + `\n'${inputPath}' does not exist.${colors.nc}`)
-                console.info(`\n${colors.bg}Example valid command: \n» scss-to-css . output.min.css${colors.nc}`)
+                console.error(`\n${app.colors.br}Error: First argument can only be an existing file or directory.`,
+                    `\n'${inputPath}' does not exist.${app.colors.nc}`)
+                console.info(
+                    `\n${app.colors.bg}Example valid command: \n» scss-to-css . output.min.css${app.colors.nc}`)
                 printHelpCmdAndDocURL() ; process.exit(1)
             } else inputPath = scssInputPath
         }
@@ -123,10 +122,10 @@
 
         if (app.config.dryRun) { // -n or --dry-run passed
             if (scssFiles.length) { // print files to be processed
-                console.info(`\n${colors.by}SCSS files to be compiled:${colors.nc}`)
+                console.info(`\n${app.colors.by}SCSS files to be compiled:${app.colors.nc}`)
                 scssFiles.forEach(file => console.info(file))
             } else // no files found
-                console.info(`${colors.by}\nNo SCSS files will be compiled.${colors.nc}`)
+                console.info(`${app.colors.by}\nNo SCSS files will be compiled.${app.colors.nc}`)
 
         } else { // actually compile SCSS files
 
@@ -162,22 +161,22 @@
             // Print compilation summary
             if (compileData?.length) {
                 const cssCntSuffix = compileData.length > 1 ? 's' : ''
-                printIfNotQuiet(`\n${colors.bg}Compilation complete!${colors.nc}`)
-                printIfNotQuiet(`${colors.bw}${compileData.length} CSS file${cssCntSuffix}`
+                printIfNotQuiet(`\n${app.colors.bg}Compilation complete!${app.colors.nc}`)
+                printIfNotQuiet(`${app.colors.bw}${compileData.length} CSS file${cssCntSuffix}`
                     +( !app.config.noSourceMaps ? ` + ${compileData.length} source map${cssCntSuffix}` : '' )
-                    + ` generated.${colors.nc}`)
-            } else printIfNotQuiet(`\n${colors.by}No SCSS files processed.${colors.nc}`)
+                    + ` generated.${app.colors.nc}`)
+            } else printIfNotQuiet(`\n${app.colors.by}No SCSS files processed.${app.colors.nc}`)
             if (failedPaths.length) {
-                printIfNotQuiet(`\n${colors.br}`
+                printIfNotQuiet(`\n${app.colors.br}`
                     + `${failedPaths.length} file${ failedPaths.length > 1 ? 's' : '' }`
-                    + ` failed to compile:${colors.nc}`)
+                    + ` failed to compile:${app.colors.nc}`)
                 failedPaths.forEach(path => printIfNotQuiet(path))
             }
             if (!compileData?.length) return
 
             // Copy single result code to clipboard if --copy passed
             if (app.config.copy && compileData?.length == 1) {
-                console.log(`\n${colors.bw}${compileData[0].code}${colors.nc}`)
+                console.log(`\n${app.colors.bw}${compileData[0].code}${app.colors.nc}`)
                 printIfNotQuiet('\nCopying to clipboard...')
                 clipboardy.writeSync(compileData[0].code)
 
@@ -205,9 +204,9 @@
                     const outputPath = path.join(outputDir, outputFilename)
                     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true })
                     fs.writeFileSync(outputPath, code, 'utf8')
-                    printIfNotQuiet(`  ${colors.bg}✓${colors.nc} ${path.relative(process.cwd(), outputPath)}`)
+                    printIfNotQuiet(`  ${app.colors.bg}✓${app.colors.nc} ${path.relative(process.cwd(), outputPath)}`)
                     if (!app.config.noSourceMaps) fs.writeFileSync(outputPath + '.map', JSON.stringify(srcMap), 'utf8')
-                    printIfNotQuiet(`  ${colors.bg}✓${colors.nc} ${path.relative(process.cwd(), outputPath)}`)
+                    printIfNotQuiet(`  ${app.colors.bg}✓${app.colors.nc} ${path.relative(process.cwd(), outputPath)}`)
                 })
             }
         }
@@ -216,15 +215,18 @@
     // Define LOGGING functions
 
     function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
-        app.prefix = `${colors.btBG}${colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${colors.nc} `
+        app.prefix = `${app.colors.tlBG}${app.colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${app.colors.nc} `
         const helpSections = {
             header: [
                 `\n├ ${app.prefix}© ${app.copyrightYear} ${app.author} under the ${app.license} license.`,
                 `${app.prefix}Source: ${app.urls.src}`
             ],
-            usage: [`\n${colors.bw}o Usage:${colors.nc}`, ` ${colors.bw}» ${colors.bg}${app.cmdFormat}${colors.nc}`],
+            usage: [
+                `\n${app.colors.bw}o Usage:${app.colors.nc}`,
+                ` ${app.colors.bw}» ${app.colors.bg}${app.cmdFormat}${app.colors.nc}`
+            ],
             pathArgs: [
-                `\n${colors.bw}o Path arguments:${colors.nc}`,
+                `\n${app.colors.bw}o Path arguments:${app.colors.nc}`,
                 ' [inputPath]                             '
                     + 'Path to SCSS file or directory containing SCSS files to be compiled,'
                     + ' relative to the current working directory.',
@@ -233,7 +235,7 @@
                     + ' relative to input root (if not provided, css/ is used).'
             ],
             flags: [
-                `\n${colors.bw}o Boolean options:${colors.nc}`,
+                `\n${app.colors.bw}o Boolean options:${app.colors.nc}`,
                 ' -n, --dry-run                           Don\'t actually compile the file(s),'
                                                         + ' just show if they will be processed.',
                 ' -d, --include-dotfolders                Include dotfolders in file search.',
@@ -246,20 +248,20 @@
                 ' -q, --quiet                             Suppress all logging except errors.'
             ],
             paramOptions: [
-                `\n${colors.bw}o Parameter options:${colors.nc}`,
+                `\n${app.colors.bw}o Parameter options:${app.colors.nc}`,
                 '--ignores="dir/,file1.scss,file2.scss"   Files/directories to exclude from compilation.',
                 '--comment="comment"                      Prepend header comment to compiled CSS.'
                                                         + ' Separate by line using \'\\n\'.'
             ],
             infoCmds: [
-                `\n${colors.bw}o Info commands:${colors.nc}`,
+                `\n${app.colors.bw}o Info commands:${app.colors.nc}`,
                 ' -h, --help                              Display help screen.',
                 ' -v, --version                           Show version number.'
             ]
         }
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 41)))
-        console.info(`\nFor more help, please visit: ${colors.bw}${app.urls.docs}${colors.nc}`)
+        console.info(`\nFor more help, please visit: ${app.colors.bw}${app.urls.docs}${app.colors.nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
@@ -288,7 +290,9 @@
     }
 
     function printHelpCmdAndDocURL() {
-        console.info(`\nFor more help, type 'scss-to-css --help' or visit\n${colors.bw}${app.urls.docs}${colors.nc}`) }
+        console.info(
+            `\nFor more help, type 'scss-to-css --help' or visit\n${app.colors.bw}${app.urls.docs}${app.colors.nc}`)
+    }
 
     function printIfNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) }
 })()
