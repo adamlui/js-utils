@@ -5,6 +5,12 @@
 
 // Init APP data
 globalThis.app = require(`${ __dirname.match(/[\\/]src/) ? '../' : './data/' }app.json`)
+app.charsets = {
+    lower: 'abcdefghijklmnopqrstuvwxyz',
+    upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+    numbers: '0123456789',
+    symbols: '!@#$%^&*()-_=+[]{}/\\|;:\'",.<>?'
+}
 app.aliases = {
     generatePassword: [
         'generate', 'generatepassword', 'generatepw', 'generatePw', 'generatePW',
@@ -16,13 +22,6 @@ app.aliases = {
     ],
     strictify: [ 'Strictify' ],
     validateStrength: [ 'validate', 'Validate', 'validatestrength', 'Validatestrength', 'ValidateStrength' ]
-}
-
-const charsets = {
-    lower: 'abcdefghijklmnopqrstuvwxyz',
-    upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
-    numbers: '0123456789',
-    symbols: '!@#$%^&*()-_=+[]{}/\\|;:\'",.<>?'
 }
 
 function generatePassword(options = {}) {
@@ -60,13 +59,13 @@ function generatePassword(options = {}) {
         if (options.verbose && !fromGeneratePasswords)
             console.info(`${logPrefix}Initializing character set...`)
         let pwCharset = options.charset?.toString() || ( // use passed [charset], or construct from options
-            (options.numbers ? charsets.numbers : '')
-              +(options.symbols ? charsets.symbols : '')
-              +(options.lowercase ? charsets.lower : '')
-              +(options.uppercase ? charsets.upper : '')
+            (options.numbers ? app.charsets.numbers : '')
+              +(options.symbols ? app.charsets.symbols : '')
+              +(options.lowercase ? app.charsets.lower : '')
+              +(options.uppercase ? app.charsets.upper : '')
         )
         if (pwCharset == '') // all flags false + no charset passed
-            pwCharset = charsets.lower + charsets.upper // default to upper + lower
+            pwCharset = app.charsets.lower + app.charsets.upper // default to upper + lower
 
         // Exclude passed `exclude` chars
         if (options.exclude) {
@@ -188,7 +187,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     requiredCharTypes.forEach(charType => hasFlags[charType] = false)
     for (let i = 0 ; i < password.length ; i++)
         for (const charType of requiredCharTypes)
-            if ((charsets[charType] || charsets[charType + 's']).includes(password[i])) {
+            if ((app.charsets[charType] || app.charsets[charType + 's']).includes(password[i])) {
                 hasFlags[charType] = true ; untouchablePositions.push(i) }
 
     // Modify password if unstrict
@@ -202,7 +201,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
                 do replacementPos = randomInt(0, password.length) // pick random pos
                 while (untouchablePositions.includes(replacementPos)) // check if pos already replaced
                 untouchablePositions.push(replacementPos) // track new replacement pos
-                const replacementCharSet = charsets[charType] || charsets[charType + 's']
+                const replacementCharSet = app.charsets[charType] || app.charsets[charType + 's']
                 strictPW = strictPW.substring(0, replacementPos) // perform actual replacement
                          + replacementCharSet[randomInt(0, replacementCharSet.length)]
                          + strictPW.substring(replacementPos +1)
@@ -247,7 +246,7 @@ function validateStrength(password, options = {}) {
     const charCnts = { lower: 0, upper: 0, number: 0, symbol: 0 }
     for (const char of password)
         for (const charType of Object.keys(charCnts))
-            if ((charsets[charType] || charsets[charType + 's']).includes(char))
+            if ((app.charsets[charType] || app.charsets[charType + 's']).includes(char))
                 charCnts[charType]++
 
     // Check criteria + add recommendations
