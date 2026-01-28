@@ -38,7 +38,15 @@
     }
 
     // Init UI colors
-    const colors = { nc: '\x1b[0m', br: '\x1b[1;91m', by: '\x1b[1;33m', bg: '\x1b[1;92m', bw: '\x1b[1;97m' }
+    const colors = {
+        nc: '\x1b[0m',    // no color
+        br: '\x1b[1;91m', // bright red
+        by: '\x1b[1;33m', // bright yellow
+        bg: '\x1b[1;92m', // bright green
+        bw: '\x1b[1;97m', // bright white
+        blk: '\x1b[30m',  // black
+        btBG: '\x1b[106m' // bright teal background
+    }
 
     // Load SETTINGS from args
     app.config = {}
@@ -209,7 +217,7 @@
     // Define LOGGING functions
 
     function printHelpSections(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
-        app.prefix = `\x1b[106m\x1b[30m ${app.name.replace(/^@[^/]+\//, '')} ${colors.nc} ` // bright teal bg + black fg
+        app.prefix = `${colors.btBG}${colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${colors.nc} `
         const helpSections = {
             header: [
                 `\n├ ${app.prefix}© ${app.copyrightYear} ${app.author} under the ${app.license} license.`,
