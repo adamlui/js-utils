@@ -160,7 +160,7 @@
             // Print minification summary
             if (minifyData?.length) {
                 printIfNotQuiet(`\n${colors.bg}${app.msgs.info_minComplete}!${colors.nc}`)
-                printIfNotQuiet(`${bw + minifyData.length} ${app.msgs.info_file}`
+                printIfNotQuiet(`${colors.bw}${minifyData.length} ${app.msgs.info_file}`
                     + `${ minifyData.length > 1 ? 's' : '' } ${app.msgs.info_minified}.${colors.nc}`)
             } else printIfNotQuiet(
                 `\n${colors.by}${app.msgs.info_noFilesProcessed}.${colors.nc}`)
@@ -187,7 +187,8 @@
                         const outputPath = path.resolve(process.cwd(), outputArg || 'min'),
                               relativeDir = path.dirname(relPath)
                         outputDir = relativeDir != '.' ? path.join(outputPath, relativeDir) : outputPath
-                        outputFilename = path.basename(srcPath, '.js') + `${ app.config.noFilenameChange ? '' : '.min' }.js`
+                        outputFilename = path.basename(srcPath, '.js')
+                                       + `${ app.config.noFilenameChange ? '' : '.min' }.js`
                     } else {
                         outputDir = path.join(
                             path.dirname(srcPath), // path of file to be minified
