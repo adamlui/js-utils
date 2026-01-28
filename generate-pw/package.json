@@ -63,7 +63,7 @@
     "url": "https://github.com/adamlui/js-utils/issues"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^2.1.0"
+    "@adamlui/minify.js": "^2.1.3"
   },
   "dependencies": {
     "node-clipboardy": "^1.0.3"
