@@ -4,5 +4,5 @@ rm -rf dist/* && mkdir -p dist/data/ && cp app.json _locales/en/messages.json di
 
 minify-js src dist --comment=" \
 © 2024–2026 Adam Lui under the MIT license.\n \
-Source: https://code.geolocatejs.org\n \
-Documentation: https://docs.geolocatejs.org"
+Source: https://github.com/adamlui/js-utils/tree/main/geolocate/src\n \
+Documentation: github.com/adamlui/js-utils/tree/main/geolocate/docs"

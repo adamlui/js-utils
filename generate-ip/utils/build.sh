@@ -4,5 +4,5 @@ rm -rf dist/* && mkdir -p dist/data/ && cp app.json _locales/en/messages.json di
 
 minify-js src dist --comment=" \
 © 2024–2026 Adam Lui & contributors under the MIT license.\n \
-Source: https://code.generate-ip.org\n \
-Documentation: https://docs.generate-ip.org"
+Source: https://github.com/adamlui/js-utils/tree/main/generate-ip/src\n \
+Documentation: https://github.com/adamlui/js-utils/tree/main/generate-ip/docs"
