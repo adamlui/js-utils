@@ -3,7 +3,6 @@
 // Documentation: https://docs.generatepw.org
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js
 
-// Init APP data
 globalThis.app = {
     aliases: {
         generatePassword: [
