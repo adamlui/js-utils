@@ -5,9 +5,9 @@
 
 globalThis.app = {
     aliases: {
-        ipv4: [ 'ipV4', 'IPv4', 'IPV4', 'Ipv4', 'IpV4', 'ip', 'IP', 'Ip'],
-        ipv6: [ 'ipV6', 'IPv6', 'IPV6', 'Ipv6', 'IpV6'],
-        mac: [ 'MAC', 'Mac', 'ethernet', 'Ethernet']
+        ipv4: ['ipV4', 'IPv4', 'IPV4', 'Ipv4', 'IpV4', 'ip', 'IP', 'Ip'],
+        ipv6: ['ipV6', 'IPv6', 'IPV6', 'Ipv6', 'IpV6'],
+        mac: ['MAC', 'Mac', 'ethernet', 'Ethernet']
     }
 }
 

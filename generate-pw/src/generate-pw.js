@@ -13,8 +13,8 @@ globalThis.app = {
             'generatepasswords', 'generatepws', 'generatePws', 'generatePWs', 'generatePWS',
             'Generatepasswords', 'GeneratePasswords', 'Generatepws', 'GeneratePws', 'GeneratePWs', 'GeneratePWS'
         ],
-        strictify: [ 'Strictify' ],
-        validateStrength: [ 'validate', 'Validate', 'validatestrength', 'Validatestrength', 'ValidateStrength' ]
+        strictify: ['Strictify'],
+        validateStrength: ['validate', 'Validate', 'validatestrength', 'Validatestrength', 'ValidateStrength']
     },
     charsets: {
         lower: 'abcdefghijklmnopqrstuvwxyz',
@@ -173,7 +173,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
         if (!validCharTypes.includes(charType)) {
             console.error(`${logPrefix}ERROR: 2nd arg \`${charType}\` is an invalid character type.`)
             console.info([
-                `${logPrefix}Valid character types: [ '${validCharTypes.join(`', '`)}' ]`,
+                `${logPrefix}Valid character types: ['${validCharTypes.join(`', '`)}']`,
                 `${logPrefix}Pass one as a string or more as an array, or all types will be required.`,
                 `${logPrefix}For more help, please visit ${docURL}`
             ].join('\n'))
