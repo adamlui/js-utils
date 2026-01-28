@@ -4,11 +4,12 @@
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js
 
 // Init APP data
-globalThis.app = require(`${ __dirname.match(/[\\/]src/) ? '../' : './data/' }app.json`)
-app.aliases = {
-    ipv4: [ 'ipV4', 'IPv4', 'IPV4', 'Ipv4', 'IpV4', 'ip', 'IP', 'Ip'],
-    ipv6: [ 'ipV6', 'IPv6', 'IPV6', 'Ipv6', 'IpV6'],
-    mac: [ 'MAC', 'Mac', 'ethernet', 'Ethernet']
+globalThis.app = {
+    aliases: {
+        ipv4: [ 'ipV4', 'IPv4', 'IPV4', 'Ipv4', 'IpV4', 'ip', 'IP', 'Ip'],
+        ipv6: [ 'ipV6', 'IPv6', 'IPV6', 'Ipv6', 'IpV6'],
+        mac: [ 'MAC', 'Mac', 'ethernet', 'Ethernet']
+    }
 }
 
 const ipv4 = {

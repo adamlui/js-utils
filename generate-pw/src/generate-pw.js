@@ -4,24 +4,25 @@
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js
 
 // Init APP data
-globalThis.app = require(`${ __dirname.match(/[\\/]src/) ? '../' : './data/' }app.json`)
-app.aliases = {
-    generatePassword: [
-        'generate', 'generatepassword', 'generatepw', 'generatePw', 'generatePW',
-        'Generate', 'Generatepassword', 'GeneratePassword', 'Generatepw', 'GeneratePw', 'GeneratePW'
-    ],
-    generatePasswords: [
-        'generatepasswords', 'generatepws', 'generatePws', 'generatePWs', 'generatePWS',
-        'Generatepasswords', 'GeneratePasswords', 'Generatepws', 'GeneratePws', 'GeneratePWs', 'GeneratePWS'
-    ],
-    strictify: [ 'Strictify' ],
-    validateStrength: [ 'validate', 'Validate', 'validatestrength', 'Validatestrength', 'ValidateStrength' ]
-}
-app.charsets = {
-    lower: 'abcdefghijklmnopqrstuvwxyz',
-    upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
-    numbers: '0123456789',
-    symbols: '!@#$%^&*()-_=+[]{}/\\|;:\'",.<>?'
+globalThis.app = {
+    aliases: {
+        generatePassword: [
+            'generate', 'generatepassword', 'generatepw', 'generatePw', 'generatePW',
+            'Generate', 'Generatepassword', 'GeneratePassword', 'Generatepw', 'GeneratePw', 'GeneratePW'
+        ],
+        generatePasswords: [
+            'generatepasswords', 'generatepws', 'generatePws', 'generatePWs', 'generatePWS',
+            'Generatepasswords', 'GeneratePasswords', 'Generatepws', 'GeneratePws', 'GeneratePWs', 'GeneratePWS'
+        ],
+        strictify: [ 'Strictify' ],
+        validateStrength: [ 'validate', 'Validate', 'validatestrength', 'Validatestrength', 'ValidateStrength' ]
+    },
+    charsets: {
+        lower: 'abcdefghijklmnopqrstuvwxyz',
+        upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+        numbers: '0123456789',
+        symbols: '!@#$%^&*()-_=+[]{}/\\|;:\'",.<>?'
+    }
 }
 
 function generatePassword(options = {}) {

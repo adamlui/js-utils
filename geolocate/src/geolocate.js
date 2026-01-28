@@ -5,9 +5,7 @@
 
 /* global ipv4 */
 
-// Init APP data
-globalThis.app = require(`${ __dirname.match(/[\\/]src/) ? '../' : './data/' }app.json`)
-app.aliases = { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] }
+globalThis.app = { aliases: { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] }}
 
 async function geolocate(ips, options = {}) {
 
