@@ -3,7 +3,6 @@
 // Documentation: https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js
 
-// Init APP data
 globalThis.app = {
     aliases: {
         ipv4: [ 'ipV4', 'IPv4', 'IPV4', 'Ipv4', 'IpV4', 'ip', 'IP', 'Ip'],
@@ -14,7 +13,7 @@ globalThis.app = {
 
 const ipv4 = {
 
-    generate: function(options = {}) {
+    generate(options = {}) {
 
         const docURL = 'https://docs.generate-ip.org/#ipv4generateoptions',
               exampleCall = 'ipv4.generate({ verbose: false, qty: 3 })',
@@ -37,7 +36,7 @@ const ipv4 = {
                 ips.push(this.generate({ ...options, qty: 1, verbose: false }))
         else { // generate single IP
             const segments = []
-            for (let i = 0 ; i < 4 ; i++) segments.push(randomInt(0, 256))
+            for (let i = 0 ; i < 4 ; i++) segments.push(random.int(0, 256))
             ips.push(segments.join('.'))
         }
         const ipResult = options.qty > 1 ? ips : ips[0]
@@ -50,7 +49,7 @@ const ipv4 = {
         return ipResult
     },
 
-    validate: function(address, options = {}) {
+    validate(address, options = {}) {
 
         const docURL = 'https://docs.generate-ip.org/#ipv4validateaddress-options',
               exampleCall = `ipv4.validate('0.0.255.255', { verbose: false })`,
@@ -88,7 +87,7 @@ const ipv4 = {
 
 const ipv6 = {
 
-    generate: function(options = {}) {
+    generate(options = {}) {
 
         const docURL = 'https://docs.generate-ip.org/#ipv6generateoptions',
               exampleCall = 'ipv6.generate({ leadingZeros: true, qty: 5 })',
@@ -114,10 +113,7 @@ const ipv6 = {
                 ips.push(this.generate({ ...options, qty: 1, verbose: false }))
         else { // generate single IP
             const pieces = [], { qty, ...nonQtyOptions } = options // eslint-disable-line no-unused-vars
-            for (let i = 0 ; i < 8 ; i++) { // generate 8x 16-bit hex pieces
-                const hex = randomHex(4) // generate 4-char hex piece
-                pieces.push(hex)
-            }
+            for (let i = 0 ; i < 8 ; i++) pieces.push(random.hex(4)) // generate 8x 16-bit hex pieces
             ips.push(this.format(pieces.join(':'), { ...nonQtyOptions, verbose: false }))
         }
         const ipResult = options.qty > 1 ? ips : ips[0]
@@ -130,7 +126,7 @@ const ipv6 = {
         return ipResult
     },
 
-    format: function(ipv6address, options = {}) {
+    format(ipv6address, options = {}) {
 
         const docURL = 'https://docs.generate-ip.org/#ipv6formatipv6address-options',
               exampleCall = `ipv6.format('0d::ffff:192.1.56.10/96', { leadingZeros: true, doubleColon: false })`,
@@ -194,7 +190,7 @@ const ipv6 = {
         return formattedAddress
     },
 
-    validate: function(address, options = {}) {
+    validate(address, options = {}) {
 
         const docURL = 'https://docs.generate-ip.org/#ipv6validateaddress-options',
               exampleCall = `ipv6.validate('0:0:0:0:0:ffff:192.1.56.10/96', { verbose: false })`,
@@ -237,7 +233,7 @@ const ipv6 = {
 
 const mac = {
 
-    generate: function(options = {}) {
+    generate(options = {}) {
         const docURL = 'https://docs.generate-ip.org/#macgenerateoptions',
               exampleCall = 'mac.generate({ verbose: false, qty: 2 })',
               logPrefix = 'mac.generate() » '
@@ -260,7 +256,7 @@ const mac = {
         else { // generate single MAC address
             const [prefix, suffix] = Array.from({ length: 2 }, () => {
                 const parts = []
-                for (let i = 0 ; i < 3 ; i++) parts.push(randomHex(2))
+                for (let i = 0 ; i < 3 ; i++) parts.push(random.hex(2))
                 return parts.join(':')
             })
             macAddresses.push(`${prefix}:${suffix}`)
@@ -275,7 +271,7 @@ const mac = {
         return macResult
     },
 
-    validate: function(address, options = {}) {
+    validate(address, options = {}) {
         const docURL = 'https://docs.generate-ip.org/#macvalidateaddress-options',
               exampleCall = `mac.validate('00:1A:2B:3C:4D:5E', { verbose: false })`,
               defaultOptions = { verbose: true /* enable logging */ },
@@ -302,19 +298,21 @@ const mac = {
     }
 }
 
-function randomInt(min, max) {
-    if (typeof require == 'undefined') { // use browser crypto API || Math.random()
-        const browserCrypto = window.crypto || window.msCrypto,
-              randomVal = browserCrypto?.getRandomValues(new Uint32Array(1))[0] / 0xFFFFFFFF || Math.random()
-        return Math.floor(randomVal * (max - min)) + min
-    } else // use Node.js crypto module
-        return require('crypto').randomInt(min, max)
-}
+const random = {
+    int(min, max) {
+        if (typeof require == 'undefined') { // use browser crypto API || Math.random()
+            const browserCrypto = window.crypto || window.msCrypto,
+                  randomVal = browserCrypto?.getRandomValues(new Uint32Array(1))[0] / 0xFFFFFFFF || Math.random()
+            return Math.floor(randomVal * (max - min)) + min
+        } else // use Node.js crypto module
+            return require('crypto').randomInt(min, max)
+    },
 
-function randomHex(digits) {
-    let hex = ''
-    for (let i = 0 ; i < digits ; i++) hex += randomInt(0, 16).toString(16)
-    return hex
+    hex(digits) {
+        let hex = ''
+        for (let i = 0 ; i < digits ; i++) hex += random.int(0, 16).toString(16)
+        return hex
+    }
 }
 
 function validateOptions(options, defaultOptions, docURL, exampleCall) {
