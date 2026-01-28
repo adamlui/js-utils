@@ -9,7 +9,7 @@
     const clipboardy = require('node-clipboardy'),
         { execSync } = require('child_process'),
           fs = require('fs'),
-          geo = require(`./geolocate${ env.devMode ? '' : '.min' }.js`),
+          geo = require(`../geolocate${ env.devMode ? '' : '.min' }.js`),
         { getMsgs, getSysLang } = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
           path = require('path')
 
