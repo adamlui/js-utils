@@ -94,8 +94,8 @@
         console.info(`${app.msgs.prefix_localVer}: ${localVer}`)
 
     } else { // log/copy RESULT(S)
-        const genOptions = { qty: app.config.qty || 1, verbose: !app.config.quietMode }
-        const ipResult = app.config.ipv6mode ? ipv6.generate(genOptions)
+        const genOptions = { qty: app.config.qty || 1, verbose: !app.config.quietMode },
+              ipResult = app.config.ipv6mode ? ipv6.generate(genOptions)
                        : app.config.macMode  ?  mac.generate(genOptions)
                                              : ipv4.generate(genOptions)
         printIfNotQuiet(`\n${app.msgs.info_copying}...`)
