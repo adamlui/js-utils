@@ -27,11 +27,7 @@
     }
 
     // Init UI COLORS
-    const nc = '\x1b[0m',    // no color
-          br = '\x1b[1;91m', // bright red
-          by = '\x1b[1;33m', // bright yellow
-          bg = '\x1b[1;92m', // bright green
-          bw = '\x1b[1;97m'  // bright white
+    const colors = { nc: '\x1b[0m', br: '\x1b[1;91m', by: '\x1b[1;33m', bg: '\x1b[1;92m', bw: '\x1b[1;97m' }
 
     // Load SETTINGS from args
     app.config = {}
@@ -41,8 +37,9 @@
               matchedInfoCmd = Object.keys(app.regex.infoCmds).find(cmd => app.regex.infoCmds[cmd].test(arg))
         if (matchedFlag) app.config[matchedFlag] = true
         else if (!matchedInfoCmd) {
-            console.error(`\n${br}${app.msgs.prefix_error}: Arg [${arg}] ${app.msgs.error_notRecognized}.${nc}`)
-            console.info(`\n${by}${app.msgs.info_validArgs}.${nc}`)
+            console.error(
+                `\n${colors.br}${app.msgs.prefix_error}: Arg [${arg}] ${app.msgs.error_notRecognized}.${colors.nc}`)
+            console.info(`\n${colors.by}${app.msgs.info_validArgs}.${colors.nc}`)
             printHelpSections(['paramOptions', 'infoCmds'])
             process.exit(1)
         }
@@ -84,18 +81,18 @@
 
         // Log single result
         if (!app.config.quietMode && geoResults.length == 1) {
-            console.info(`\nIP: ${bw}${geoResults[0].ip}${nc}`)
-            console.info(`${app.msgs.geoLabel_country}: ${bw}${geoResults[0].country}${nc}}`)
-            console.info(`${app.msgs.geoLabel_region}: ${bw}${geoResults[0].regionName}${nc}}`)
-            console.info(`${app.msgs.geoLabel_city}: ${bw}${geoResults[0].city}${nc}}`)
-            console.info(`${app.msgs.geoLabel_zip}: ${bw}${geoResults[0].zip}${nc}}`)
-            console.info(`${app.msgs.geoLabel_lat}: ${bw}${geoResults[0].lat}${nc}}`)
-            console.info(`${app.msgs.geoLabel_lon}: ${bw}${geoResults[0].lon}${nc}}`)
-            console.info(`${app.msgs.geoLabel_timeZone}: ${bw}${geoResults[0].timezone
+            console.info(`\nIP: ${colors.bw}${geoResults[0].ip}${colors.nc}`)
+            console.info(`${app.msgs.geoLabel_country}: ${colors.bw}${geoResults[0].country}${colors.nc}}`)
+            console.info(`${app.msgs.geoLabel_region}: ${colors.bw}${geoResults[0].regionName}${colors.nc}}`)
+            console.info(`${app.msgs.geoLabel_city}: ${colors.bw}${geoResults[0].city}${colors.nc}}`)
+            console.info(`${app.msgs.geoLabel_zip}: ${colors.bw}${geoResults[0].zip}${colors.nc}}`)
+            console.info(`${app.msgs.geoLabel_lat}: ${colors.bw}${geoResults[0].lat}${colors.nc}}`)
+            console.info(`${app.msgs.geoLabel_lon}: ${colors.bw}${geoResults[0].lon}${colors.nc}}`)
+            console.info(`${app.msgs.geoLabel_timeZone}: ${colors.bw}${geoResults[0].timezone
                 .replace(/_/g, ' ') // insert spaces
                 .replace(/\//g, ' / ') // pad slashes
-            }${nc}`)
-            console.info(`ISP: ${bw}${geoResults[0].isp}${nc}}`)
+            }${colors.nc}`)
+            console.info(`ISP: ${colors.bw}${geoResults[0].isp}${colors.nc}}`)
         }
 
         // Copy to clipboard
@@ -106,7 +103,7 @@
     // Define FUNCTIONS
 
     function printHelpSections(includeSections = ['header', 'usage', 'configOptions', 'infoCmds']) {
-        app.prefix = `\x1b[106m\x1b[30m ${app.name.replace(/^@[^/]+\//, '')} ${nc} ` // bright teal bg + black fg
+        app.prefix = `\x1b[106m\x1b[30m ${app.name.replace(/^@[^/]+\//, '')} ${colors.nc} ` // bright teal bg + black fg
         const helpSections = {
             header: [
                 `\n├ ${app.prefix}${ app.msgs.appCopyright || `© ${
@@ -115,22 +112,22 @@
                 `${app.prefix}${app.msgs.prefix_source}: ${app.urls.src}`
             ],
             usage: [
-                `\n${bw}o ${app.msgs.helpSection_usage}:${nc}`,
-                ` ${bw}» ${bg}${app.cmdFormat}${nc}`
+                `\n${colors.bw}o ${app.msgs.helpSection_usage}:${colors.nc}`,
+                ` ${colors.bw}» ${colors.bg}${app.cmdFormat}${colors.nc}`
             ],
             configOptions: [
-                `\n${bw}o ${app.msgs.helpSection_configOptions}:${nc}`,
+                `\n${colors.bw}o ${app.msgs.helpSection_configOptions}:${colors.nc}`,
                 ` -q, --quiet                 ${app.msgs.optionDesc_quiet}.`
             ],
             infoCmds: [
-                `\n${bw}o ${app.msgs.helpSection_infoCmds}:${nc}`,
+                `\n${colors.bw}o ${app.msgs.helpSection_infoCmds}:${colors.nc}`,
                 ` -h, --help                  ${app.msgs.optionDesc_help}`,
                 ` -v, --version               ${app.msgs.optionDesc_version}.`
             ]
         }
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)))
-        console.info(`\n${app.msgs.info_moreHelp}, ${app.msgs.info_visit}: ${bw}${app.urls.docs}${nc}`)
+        console.info(`\n${app.msgs.info_moreHelp}, ${app.msgs.info_visit}: ${colors.bw}${app.urls.docs}${colors.nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,

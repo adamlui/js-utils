@@ -41,11 +41,7 @@
     }
 
     // Init UI COLORS
-    const nc = '\x1b[0m',    // no color
-          br = '\x1b[1;91m', // bright red
-          by = '\x1b[1;33m', // bright yellow
-          bg = '\x1b[1;92m', // bright green
-          bw = '\x1b[1;97m'  // bright white
+    const colors = { nc: '\x1b[0m', br: '\x1b[1;91m', by: '\x1b[1;33m', bg: '\x1b[1;92m', bw: '\x1b[1;97m' }
 
     // Load SETTINGS from args
     app.config = {}
@@ -58,22 +54,23 @@
         if (matchedFlag) app.config[matchedFlag] = true
         else if (matchedParamOption) {
             if (!/=.+/.test(arg)) {
-                console.error(
-                    `\n${br}${app.msgs.prefix_error}: Arg [--${arg.replace(/-/g, '')}] ${app.msgs.error_noEqual}.${nc}`)
+                console.error(`\n${colors.br}${
+                    app.msgs.prefix_error}: Arg [--${arg.replace(/-/g, '')}] ${app.msgs.error_noEqual}.${colors.nc}`)
                 printHelpCmdAndDocURL() ; process.exit(1)
             }
             const val = arg.split('=')[1]
             app.config[matchedParamOption] = parseInt(val) || val
         } else if (!matchedInfoCmd) {
-            console.error(`\n${br}${app.msgs.prefix_error}: Arg [${arg}] ${app.msgs.error_notRecognized}.${nc}`)
-            console.info(`\n${by}${app.msgs.info_validArgs}.${nc}`)
+            console.error(
+                `\n${colors.br}${app.msgs.prefix_error}: Arg [${arg}] ${app.msgs.error_notRecognized}.${colors.nc}`)
+            console.info(`\n${colors.by}${app.msgs.info_validArgs}.${colors.nc}`)
             printHelpSections(['paramOptions', 'flags', 'infoCmds'])
             process.exit(1)
         }
     })
     for (const numArgType of ['length', 'qty'])
         if (app.config[numArgType] && (isNaN(app.config[numArgType]) || app.config[numArgType] < 1)) {
-            console.error(`\n${br}${app.msgs.prefix_error}: [${numArgType}] ${app.msgs.error_nonPositiveNum}.${nc}`)
+            console.error(`\n${colors.br}${app.msgs.prefix_error}: [${numArgType}] ${app.msgs.error_nonPositiveNum}.${colors.nc}`)
             printHelpCmdAndDocURL() ; process.exit(1)
         }
 
@@ -117,12 +114,12 @@
     function printHelpCmdAndDocURL() {
         console.info(`\n${
             app.msgs.info_moreHelp}, ${app.msgs.info_type} ${app.name} --help' ${
-            app.msgs.info_or} ${app.msgs.info_visit}\n${bw}${app.urls.docs}${nc}`
+            app.msgs.info_or} ${app.msgs.info_visit}\n${colors.bw}${app.urls.docs}${colors.nc}`
         )
     }
 
     function printHelpSections(includeSections = ['header', 'usage', 'paramOptions', 'flags', 'infoCmds']) {
-        app.prefix = `\x1b[106m\x1b[30m ${app.name} ${nc} ` // bright teal bg + black fg
+        app.prefix = `\x1b[106m\x1b[30m ${app.name} ${colors.nc} ` // bright teal bg + black fg
         const helpSections = {
             header: [
                 `\n├ ${app.prefix}${ app.msgs.appCopyright || `© ${
@@ -131,18 +128,18 @@
                 `${app.prefix}${app.msgs.prefix_source}: ${app.urls.src}`
             ],
             usage: [
-                `\n${bw}o ${app.msgs.helpSection_usage}:${nc}`,
-                ` ${bw}» ${bg}${app.cmdFormat}${nc}`
+                `\n${colors.bw}o ${app.msgs.helpSection_usage}:${colors.nc}`,
+                ` ${colors.bw}» ${colors.bg}${app.cmdFormat}${colors.nc}`
             ],
             paramOptions: [
-                `\n${bw}o ${app.msgs.helpSection_paramOptions}:${nc}`,
+                `\n${colors.bw}o ${app.msgs.helpSection_paramOptions}:${colors.nc}`,
                 ` --length=n                  ${app.msgs.optionDesc_length}.`,
                 ` --qty=n                     ${app.msgs.optionDesc_qty}.`,
                 ` --charset=chars             ${app.msgs.optionDesc_charset}.`,
                 ` --exclude=chars             ${app.msgs.optionDesc_exclude}.`
             ],
             flags: [
-                `\n${bw}o ${app.msgs.helpSection_flags}:${nc}`,
+                `\n${colors.bw}o ${app.msgs.helpSection_flags}:${colors.nc}`,
                 ` -n, --include-numbers       ${app.msgs.optionDesc_includeNums}.`,
                 ` -y, --include-symbols       ${app.msgs.optionDesc_includeSymbols}.`,
                 ` -L, --no-lowercase          ${app.msgs.optionDesc_noLower}.`,
@@ -152,14 +149,14 @@
                 ` -q, --quiet                 ${app.msgs.optionDesc_quiet}.`
             ],
             infoCmds: [
-                `\n${bw}o ${app.msgs.helpSection_infoCmds}:${nc}`,
+                `\n${colors.bw}o ${app.msgs.helpSection_infoCmds}:${colors.nc}`,
                 ` -h, --help                  ${app.msgs.optionDesc_help}`,
                 ` -v, --version               ${app.msgs.optionDesc_version}.`
             ]
         }
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)))
-        console.info(`\n${app.msgs.info_moreHelp}, ${app.msgs.info_visit}: ${bw}${app.urls.docs}${nc}`)
+        console.info(`\n${app.msgs.info_moreHelp}, ${app.msgs.info_visit}: ${colors.bw}${app.urls.docs}${colors.nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
