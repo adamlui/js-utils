@@ -53,13 +53,13 @@
 [API usage](minify.js/node.js#-api-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
-### [{ } scss-to-css](scss-to-css/node.js) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?v=0d36e26"></a>
+### [{ } scss-to-css](scss-to-css) &nbsp;<a href="https://github.com/toolleeo/cli-apps#conversion"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?v=0d36e26"></a>
 
 > Recursively compile all SCSS files into minified CSS.
-<br>[Install](scss-to-css/node.js/#-installation) /
-[Readme](scss-to-css/node.js/#readme) /
-[CLI usage](scss-to-css/node.js/#-command-line-usage) /
-[API usage](scss-to-css/node.js/#-api-usage) /
+<br>[Install](scss-to-css/#-installation) /
+[Readme](scss-to-css/#readme) /
+[CLI usage](scss-to-css/#-command-line-usage) /
+[API usage](scss-to-css/#-api-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
 <img height=6px width="100%" src="https://assets.js-utils.org/images/separators/aqua-gradient.png">

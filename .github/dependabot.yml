@@ -14,7 +14,7 @@ updates:
       - geolocate/
       - minify.js/gulp/
       - minify.js/node.js/
-      - scss-to-css/node.js/
+      - scss-to-css/
     schedule:
       interval: daily
     groups:

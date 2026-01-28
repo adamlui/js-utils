@@ -1,3 +1,26 @@
+<div align="center">
+    <h6>
+        <picture>
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/earth/white/icon32.svg?v=7e4a141">
+            <img height=14 src="https://assets.scsstocss.org/images/icons/earth/black/icon32.svg?v=7e4a141">
+        </picture>
+        &nbsp;English |
+        <a href="zh-cn/LICENSE.md">简体中文</a> |
+        <a href="zh-tw/LICENSE.md">繁體中文</a> |
+        <a href="ja/LICENSE.md">日本語</a> |
+        <a href="hi/LICENSE.md">हिंदी</a> |
+        <a href="bn/LICENSE.md">বাংলা</a> |
+        <a href="mr/LICENSE.md">मराठी</a> |
+        <a href="pa/LICENSE.md">ਪੰਜਾਬੀ</a> |
+        <a href="de/LICENSE.md">Deutsch</a> |
+        <a href="es/LICENSE.md">Español</a> |
+        <a href="fr/LICENSE.md">Français</a> |
+        <a href="it/LICENSE.md">Italiano</a> |
+        <a href="nl/LICENSE.md">Nederlands</a> |
+        <a href="pt/LICENSE.md">Português</a>
+    </h6>
+</div>
+
 # 🏛️ MIT License
 
 **Copyright © 2024 [Adam Lui](https://github.com/adamlui) & contributors**
