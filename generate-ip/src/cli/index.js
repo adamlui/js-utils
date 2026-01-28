@@ -94,7 +94,7 @@
                        : app.config.macMode  ?  mac.generate(genOptions)
                                              : ipv4.generate(genOptions)
         printIfNotQuiet(`\n${app.msgs.info_copying}...`)
-        clipboardy.writeSync(Array.isArray(ipResult) ? ipResult.join('\n') : ipResult)
+        clipboardy.writeSync([].concat(ipResult).join('\n'))
     }
 
     // Define FUNCTIONS

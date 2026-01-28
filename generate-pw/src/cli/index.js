@@ -109,7 +109,7 @@
         }
         const pwResult = generatePassword(funcOptions)
         printIfNotQuiet(`\n${app.msgs.info_copying}...`)
-        clipboardy.writeSync(Array.isArray(pwResult) ? pwResult.join('\n') : pwResult)
+        clipboardy.writeSync([].concat(pwResult).join('\n'))
     }
 
     // Define FUNCTIONS
