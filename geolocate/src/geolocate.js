@@ -70,8 +70,8 @@ function fetchData(url) {
                     resp.on('data', chunk => rawData += chunk)
                     resp.on('end', () => resolve({ json: () => JSON.parse(rawData) }))
                 }).on('error', err => reject(new Error(err.message)))
-            } catch (err) { reject(new Error('Environment not supported.'))
-        }})
+            } catch (err) { reject(new Error('Environment not supported.')) }
+        })
     else // use fetch() from 2015+ browsers / Node.js v21+
         return fetch(url)
 }
