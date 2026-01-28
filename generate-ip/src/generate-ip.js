@@ -365,8 +365,9 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     return true
 }
 
-try { module.exports = { ipv4, ipv6, mac }} catch (err) {} // for Node.js
-try { window.ipv4 = ipv4 ; window.ipv6 = ipv6 ; window.mac = mac } catch (err) {} // for browsers
+app.funcs = { ipv4, ipv6, mac }
+try { module.exports = { ...app.funcs }} catch (err) {} // for Node.js
+try { Object.assign(window, app.funcs) } catch (err) {} // for browsers
 for (const api in app.aliases) // export aliases
     app.aliases[api].forEach(alias => {
         try { module.exports[alias] = module.exports[api] } catch (err) {} // for Node.js
