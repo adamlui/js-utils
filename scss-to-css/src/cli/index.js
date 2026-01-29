@@ -66,14 +66,14 @@
         } else if (!matchedInfoCmd) {
             console.error(`\n${app.colors.br}ERROR: Arg [${arg}] not recognized.${app.colors.nc}`)
             console.info(`\n${app.colors.by}Valid arguments are below.${app.colors.nc}`)
-            print.helpSections(['flags', 'paramOptions', 'infoCmds'])
+            print.help(['flags', 'paramOptions', 'infoCmds'])
             process.exit(1)
         }
     })
 
     // Show HELP screen if --?<h|help> passed
     if (process.argv.some(arg => app.regex.infoCmds.help.test(arg)))
-        print.helpSections()
+        print.help()
 
     // Show VERSION number if --?<v|version> passed
     else if (process.argv.some(arg => app.regex.infoCmds.version.test(arg)))

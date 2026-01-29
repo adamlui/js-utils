@@ -1,5 +1,5 @@
 module.exports = {
-    helpSections(includeSections = ['header', 'usage', 'configOptions', 'infoCmds']) {
+    help(includeSections = ['header', 'usage', 'configOptions', 'infoCmds']) {
         app.prefix = `${app.colors.tlBG}${app.colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${app.colors.nc} `
         const helpSections = {
             header: [

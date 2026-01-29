@@ -7,7 +7,7 @@ module.exports = {
         )
     },
 
-    helpSections(includeSections = ['header', 'usage', 'paramOptions', 'flags', 'infoCmds']) {
+    help(includeSections = ['header', 'usage', 'paramOptions', 'flags', 'infoCmds']) {
         app.prefix = `${app.colors.tlBG}${app.colors.blk}\x1b[30m ${app.name} ${app.colors.nc} `
         const helpSections = {
             header: [

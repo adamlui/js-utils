@@ -70,14 +70,14 @@
             console.error(`\n${app.colors.br}${app.msgs.prefix_error}: Arg [${
                 arg}] ${app.msgs.error_notRecognized}.${app.colors.nc}`)
             console.info(`\n${app.colors.by}${app.msgs.info_validArgs}.${app.colors.nc}`)
-            print.helpSections(['paramOptions', 'flags', 'infoCmds'])
+            print.help(['paramOptions', 'flags', 'infoCmds'])
             process.exit(1)
         }
     })
 
     // Show HELP screen if --?<h|help> passed
     if (process.argv.some(arg => app.regex.infoCmds.help.test(arg)))
-        print.helpSections()
+        print.help()
 
     // Show VERSION number if --?<v|version> passed
     else if (process.argv.some(arg => app.regex.infoCmds.version.test(arg)))
