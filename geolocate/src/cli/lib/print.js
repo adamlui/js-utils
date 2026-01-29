@@ -52,5 +52,24 @@ module.exports = {
         }
     },
 
-    ifNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) }
+    ifNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) },
+
+    version() {
+        const path = require('path')
+        const globalVer = require('child_process')
+            .execSync(`npm view ${JSON.stringify(app.name)} version`).toString().trim() || 'none'
+        let localVer, currentDir = process.cwd()
+        while (currentDir != '/') {
+            const localManifestPath = path.join(currentDir, 'package.json')
+            if (require('fs').existsSync(localManifestPath)) {
+                const localManifest = require(localManifestPath)
+                localVer = (localManifest.dependencies?.[app.name]
+                         || localManifest.devDependencies?.[app.name]
+                )?.match(/^[~^>=]?\d+\.\d+\.\d+$/)?.[1] || 'none'
+                break
+            }
+            currentDir = path.dirname(currentDir)
+        }
+        console.info(`\n${app.msgs.prefix_globalVer}: ${globalVer}\n${app.msgs.prefix_localVer}: ${localVer}`)
+    }
 }

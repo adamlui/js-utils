@@ -7,7 +7,6 @@
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
-        { execSync } = require('child_process'),
           fs = require('fs'),
           path = require('path'),
           print = require(`./lib/print${ env.devMode ? '' : '.min' }.js`),
@@ -23,7 +22,7 @@
         bg: '\x1b[1;92m', // bright green
         bw: '\x1b[1;97m', // bright white
         blk: '\x1b[30m',  // black
-        tlBG: '\x1b[106m' // bright teal bg
+        tlBG: '\x1b[106m' // teal bg
     }
     app.regex = {
         flags: {
@@ -73,26 +72,14 @@
     })
 
     // Show HELP screen if --?<h|help> passed
-    if (process.argv.some(arg => app.regex.infoCmds.help.test(arg))) print.helpSections()
+    if (process.argv.some(arg => app.regex.infoCmds.help.test(arg)))
+        print.helpSections()
 
     // Show VERSION number if --?<v|version> passed
-    else if (process.argv.some(arg => app.regex.infoCmds.version.test(arg))) {
-        const globalVer = execSync(`npm view ${JSON.stringify(app.name)} version`).toString().trim() || 'none'
-        let localVer, currentDir = process.cwd()
-        while (currentDir != '/') {
-            const localManifestPath = path.join(currentDir, 'package.json')
-            if (fs.existsSync(localManifestPath)) {
-                const localManifest = require(localManifestPath)
-                localVer = (localManifest.dependencies?.[app.name]
-                         || localManifest.devDependencies?.[app.name]
-                )?.match(/^[~^>=]?\d+\.\d+\.\d+$/)[1] || 'none'
-                break
-            }
-            currentDir = path.dirname(currentDir)
-        }
-        console.info(`\nGlobal version: ${globalVer}\nLocal version: ${localVer}`)
+    else if (process.argv.some(arg => app.regex.infoCmds.version.test(arg)))
+        print.version()
 
-    } else { // run MAIN routine
+    else { // run MAIN routine
 
         // Init I/O args
         const [inputArg = '', outputArg = ''] = // default to empty strings for error-less handling
