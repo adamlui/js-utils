@@ -1,9 +1,9 @@
 // © 2024–2026 Adam Lui & contributors under the MIT license.
-// Source: https://code.generatepw.org
-// Documentation: https://docs.generatepw.org
+// Source: https://github.com/adamlui/js-utils/tree/main/generate-pw/src
+// Documentation: https://github.com/adamlui/js-utils/tree/main/generate-pw/docs
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js
 
-globalThis.app = {
+Object.assign(globalThis.app ??= {}, {
     aliases: {
         generatePassword: [
             'generate', 'generatepassword', 'generatepw', 'generatePw', 'generatePW',
@@ -21,12 +21,13 @@ globalThis.app = {
         upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
         numbers: '0123456789',
         symbols: '!@#$%^&*()-_=+[]{}/\\|;:\'",.<>?'
-    }
-}
+    },
+    urls: { docs: 'https://github.com/adamlui/js-utils/tree/main/generate-pw/docs' }
+})
 
 function generatePassword(options = {}) {
 
-    const docURL = 'https://docs.generatepw.org/#generatepasswordoptions',
+    const docURL = `${app.urls.docs}/#generatepasswordoptions`,
           exampleCall = 'generatePassword({ verbose: false, numbers: true })',
           logPrefix = 'generatePassword() » '
 
@@ -109,7 +110,7 @@ function generatePassword(options = {}) {
 
 function generatePasswords(qty, options = {}) {
 
-    const docURL = 'https://docs.generatepw.org/#generatepasswordsqty-options',
+    const docURL = `${app.urls.docs}/#generatepasswordsqty-options`,
           exampleCall = 'generatePasswords(3, { verbose: false, symbols: true })',
           logPrefix = 'generatePasswords() » '
 
@@ -153,7 +154,7 @@ function generatePasswords(qty, options = {}) {
 
 function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', 'upper'], options = {}) {
 
-    const docURL = 'https://docs.generatepw.org/#strictifypassword-requiredchartypes-options',
+    const docURL = `${app.urls.docs}/#strictifypassword-requiredchartypes-options`,
           exampleCall = `strictify('pa55word', ['symbol', 'upper'], { verbose: false })`,
           defaultOptions = { verbose: true /* enable logging */ },
           logPrefix = 'strictify() » '
@@ -224,7 +225,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
 
 function validateStrength(password, options = {}) {
 
-    const docURL = 'https://docs.generatepw.org/#validatestrengthpassword-options',
+    const docURL = `${app.urls.docs}/#validatestrengthpassword-options`,
           exampleCall = `validateStrength('pa55word', { verbose: false })`,
           strengthCriteria = { minLength: 8, minLower: 1, minUpper: 1, minNumber: 1, minSymbol: 1 },
           defaultOptions = { verbose: true /* enable logging */ },

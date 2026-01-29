@@ -3,11 +3,14 @@
 // Documentation: https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-command-line-usage
 // Latest minified release: https://cdn.jsdelivr.net/npm/@adamlui/geolocate/dist/geolocate.min.js
 
-globalThis.app = { aliases: { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] }}
+Object.assign(globalThis.app ??= {}, {
+    aliases: { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] },
+    urls: { docs: 'https://github.com/adamlui/js-utils/tree/main/geolocate/docs' }
+})
 
 async function geolocate(ips, options = {}) {
 
-    const docURL = 'https://docs.geolocatejs.org/#locateips-options',
+    const docURL = `${app.urls.docs}/#locateips-options`,
           exampleCall = `geolocate('8.8.8.8', { verbose: false })`,
           defaultOptions = { verbose: true /* enable logging */ },
           logPrefix = 'geolocate() » '
