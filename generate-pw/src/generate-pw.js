@@ -167,8 +167,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
 
     // Validate requiredCharTypes
     const validCharTypes = ['number', 'symbol', 'lower', 'upper']
-    if (!Array.isArray(requiredCharTypes)) // convert string to array
-        requiredCharTypes = [requiredCharTypes]
+    requiredCharTypes = [].concat(requiredCharTypes) // normalize to array
     for (const charType of requiredCharTypes)
         if (!validCharTypes.includes(charType)) {
             console.error(`${logPrefix}ERROR: 2nd arg \`${charType}\` is an invalid character type.`)
