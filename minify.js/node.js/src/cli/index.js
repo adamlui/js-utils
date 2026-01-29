@@ -14,7 +14,7 @@
           print = require(`./lib/print${ env.devMode ? '' : '.min' }.js`)
 
     // Init APP data
-    globalThis.app = require(`../${ env.devMode ? '../' : './data/' }app.json`)
+    Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`))
     app.urls.docs += '/#-command-line-usage' ; app.msgs = await getMsgs(getSysLang())
     app.colors = {
         nc: '\x1b[0m',    // no color
