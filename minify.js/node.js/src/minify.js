@@ -218,14 +218,6 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
     let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) +1
     optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
 
-    // Define print functions
-    function printValidOptions() {
-        console.info(`${logPrefix}Valid options: [ ${strValidOptions} ]`)
-        console.info(`${logPrefix}If omitted, default settings are: ${strDefaultOptions}`)
-    }
-    function printDocURL() {
-        console.info(`${logPrefix}For more help, please visit ${docURL}`) }
-
     // Validate options
     if (typeof options != 'object') { // validate as obj
         console.error(`${logPrefix}ERROR: ${
@@ -254,6 +246,15 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
             }
         }
     }
+
+    function printDocURL() {
+        console.info(`${logPrefix}For more help, please visit ${docURL}`) }
+
+    function printValidOptions() {
+        console.info(`${logPrefix}Valid options: [ ${strValidOptions} ]`)
+        console.info(`${logPrefix}If omitted, default settings are: ${strDefaultOptions}`)
+    }
+
     return true
 }
 
