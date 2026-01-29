@@ -8,7 +8,7 @@ const fs = require('fs'),
       sass = require('sass')
 
 // Init APP data
-Object.assign(globalThis.app ??= {}, require(`../${ __dirname.match(/[\\/]src/) ? '../' : './data/' }app.json`))
+Object.assign(globalThis.app ??= {}, require(`${ __dirname.match(/[\\/]src/) ? '../' : './data/' }app.json`))
 app.aliases = {
     compile: ['build', 'Build', 'Compile', 'compress', 'Compress', 'minify', 'Minify'],
     findSCSS: ['find', 'Find', 'findscss', 'findScss', 'Findscss', 'FindScss', 'FindSCSS', 'search', 'Search']
