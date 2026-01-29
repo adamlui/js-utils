@@ -36,9 +36,9 @@ async function geolocate(ips, options = {}) {
         const geoData = []
         for (const ip of ips) {
             if (options.verbose) console.info(`${logPrefix}Fetching geolocation data for ${ip}...`)
-            const resp = await fetchData(`http://ip-api.com/json/${ip}`)
-            let { status, org, as, query, ...filteredData } = await resp.json() // eslint-disable-line no-unused-vars
-            filteredData = { ip, ...filteredData } ; geoData.push(filteredData)
+            const resp = await fetchData(`http://ip-api.com/json/${ip}`),
+                { status, org, as, query, ...filteredData } = await resp.json() // eslint-disable-line no-unused-vars
+            geoData.push({ ip, ...filteredData })
         }
         if (options.verbose && typeof window != 'undefined')
             console.info(`${logPrefix}Success!`, 'Check returned array.')
