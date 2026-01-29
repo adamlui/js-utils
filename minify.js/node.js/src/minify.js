@@ -8,7 +8,7 @@ const fs = require('fs'),
       uglifyJS = require('uglify-js')
 
 // Init APP data
-globalThis.app = require(`${ __dirname.match(/[\\/]src/) ? '../' : './data/' }app.json`)
+Object.assign(globalThis.app ??= {}, require(`../${ __dirname.match(/[\\/]src/) ? '../' : './data/' }app.json`))
 app.aliases = {
     minify: ['build', 'Build', 'compile', 'Compile', 'compress', 'Compress', 'Minify'],
     findJS: ['find', 'Find', 'findjs', 'findJs', 'Findjs', 'FindJs', 'FindJS', 'search', 'Search']
