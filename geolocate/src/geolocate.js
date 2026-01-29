@@ -1,6 +1,6 @@
 // © 2024–2026 Adam Lui under the MIT license.
-// Source: https://code.geolocatejs.org
-// Documentation: https://docs.geolocatejs.org/#-command-line-usage
+// Source: https://github.com/adamlui/js-utils/tree/main/geolocate/src
+// Documentation: https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-command-line-usage
 // Latest minified release: https://cdn.jsdelivr.net/npm/@adamlui/geolocate/dist/geolocate.min.js
 
 globalThis.app = { aliases: { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] }}
@@ -25,7 +25,7 @@ async function geolocate(ips, options = {}) {
             ipIsValid = window.ipv4.validate
         }
         if (ipIsValid && !ipIsValid(ip, { verbose: false }))
-            return console.error(`${logPrefix}ERROR: ${ip} is not a valid IPv4 address.`)
+            return console.error(`${logPrefix}ERROR:`, `${ip} is not a valid IPv4 address.`)
     }
 
     // Validate/init options
@@ -36,27 +36,15 @@ async function geolocate(ips, options = {}) {
         const geoData = []
         for (const ip of ips) {
             if (options.verbose) console.info(`${logPrefix}Fetching geolocation data for ${ip}...`)
-            const response = await fetchData(`http://ip-api.com/json/${ip}`)
-            let { status, org, as, query, ...filteredData } = await response.json() // eslint-disable-line no-unused-vars
+            const resp = await fetchData(`http://ip-api.com/json/${ip}`)
+            let { status, org, as, query, ...filteredData } = await resp.json() // eslint-disable-line no-unused-vars
             filteredData = { ip, ...filteredData } ; geoData.push(filteredData)
         }
         if (options.verbose && typeof window != 'undefined')
-            console.info('${logPrefix}Success! Check returned array.')
+            console.info(`${logPrefix}Success!`, 'Check returned array.')
         return geoData
-    } catch (err) { console.error(`${logPrefix}ERROR:`, err.message) }
-
-    async function getOwnIP() {
-        return ( // fetch in browser + Node.js 16+
-            fetch('https://ifconfig.me/ip').then(response => response.text()).catch(() =>
-            fetch('http://ip-api.com/json/').then(response => response.json()).then(data => data.query))
-        .catch(async () => { try { // if failed, exec curl in Node.js <16
-                const { exec } = require('child_process'),
-                      { promisify } = require('util'), execAsync = promisify(exec),
-                      { stdout, stderr } = await execAsync('curl -s ifconfig.me')
-                return stderr ? console.error(logPrefix, stderr) : stdout.trim()
-            } catch (err) { console.error(logPrefix, err) }
-        }))
-    }
+    } catch (err) {
+            console.error(`${logPrefix}ERROR:`, err.message) }
 }
 
 function fetchData(url) {
@@ -74,6 +62,22 @@ function fetchData(url) {
         })
     else // use fetch() from 2015+ browsers / Node.js v21+
         return fetch(url)
+}
+
+async function getOwnIP() {
+    const logPrefix = 'getOwnIP() » '
+    return ( // fetch in browser + Node.js 16+
+        fetch('https://ifconfig.me/ip').then(resp => resp.text()).catch(() =>
+            fetch('http://ip-api.com/json/').then(resp => resp.json()).then(data => data.query))
+                .catch(async () => {
+                    try { // to exec curl in Node.js <16
+                        const { exec } = require('child_process'),
+                              { promisify } = require('util'), execAsync = promisify(exec),
+                              { stdout, stderr } = await execAsync('curl -s ifconfig.me')
+                        return stderr ? console.error(`${logPrefix}ERROR:`, stderr) : stdout.trim()
+                    } catch (err) { console.error(`${logPrefix}ERROR:`, err.message) }
+                })
+    )
 }
 
 function validateOptions(options, defaultOptions, docURL, exampleCall) {
@@ -101,17 +105,17 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Validate options
     if (typeof options != 'object') { // validate as obj
-        console.error(`${logPrefix}ERROR: ${
-            optionsPos == '0th' ? '[O' : optionsPos + ' arg [o'}ptions] can only be an object of key/values.`)
-        console.info(`${logPrefix}Example valid call: ${exampleCall}`)
+        console.error(`${logPrefix}ERROR:`,
+            `${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/values.`)
+        console.info(`${logPrefix}Example valid call:`, exampleCall)
         printValidOptions() ; printDocURL() ; return false
     }
     for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
-            console.error(`${logPrefix}ERROR: \`${key}\` is an invalid option.`)
+            console.error(`${logPrefix}ERROR:`, `\`${key}\` is an invalid option.`)
             printValidOptions() ; printDocURL() ; return false
         } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
-            console.error(`${logPrefix}ERROR: [${key}] option can only be \`true\` or \`false\`.`)
+            console.error(`${logPrefix}ERROR:`, `[${key}] option can only be \`true\` or \`false\`.`)
             printDocURL() ; return false
         }
     }
