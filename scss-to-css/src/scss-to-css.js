@@ -186,19 +186,22 @@ function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
         optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
         log.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
         log.info('Example valid call:', exampleCall)
-        log.validOptions(defaultOptions) ; log.helpURL(helpURL) ; return false
+        log.validOptions(defaultOptions) ; log.helpURL(helpURL)
+        return false
     }
     for (const key in options) { // validate each key
         if (key == 'isRecursing' || !Object.prototype.hasOwnProperty.call(defaultOptions, key))
             continue // to next key
         else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
             log.error(`[${key}] option can only be \`true\` or \`false\`.`)
-            log.helpURL(helpURL) ; return false
+            log.helpURL(helpURL)
+            return false
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10)
             if (isNaN(options[key]) || options[key] < 1) {
                 log.error(`[${key}] option can only be an integer > 0.`)
-                log.helpURL(helpURL) ; return false
+                log.helpURL(helpURL)
+                return false
             }
         }
     }
