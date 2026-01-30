@@ -8,8 +8,8 @@ module.exports = {
             `${app.msgs.geoLabel_zip}: ${app.colors.bw}${data.zip}${app.colors.nc}`,
             `${app.msgs.geoLabel_lat}: ${app.colors.bw}${data.lat}${app.colors.nc}`,
             `${app.msgs.geoLabel_lon}: ${app.colors.bw}${data.lon}${app.colors.nc}`,
-            `${app.msgs.geoLabel_timeZone}: ${app.colors.bw}${data.timezone.replace(/_/g, ' ')
-                .replace(/\//g, ' / ')}${app.colors.nc}`,
+            `${app.msgs.geoLabel_timeZone}: ${
+                app.colors.bw}${data.timezone.replace(/_/g, ' ').replace(/\//g, ' / ')}${app.colors.nc}`,
             `ISP: ${app.colors.bw}${data.isp}${app.colors.nc}`
         ].join('\n'))
     },
