@@ -71,21 +71,8 @@
         if (!geoResults) process.exit(1)
 
         // Log single result
-        if (!app.config.quietMode && geoResults.length == 1) {
-            const data = geoResults[0]
-            console.info([
-                `\nIP: ${app.colors.bw}${data.ip}${app.colors.nc}`,
-                `${app.msgs.geoLabel_country}: ${app.colors.bw}${data.country}${app.colors.nc}`,
-                `${app.msgs.geoLabel_region}: ${app.colors.bw}${data.regionName}${app.colors.nc}`,
-                `${app.msgs.geoLabel_city}: ${app.colors.bw}${data.city}${app.colors.nc}`,
-                `${app.msgs.geoLabel_zip}: ${app.colors.bw}${data.zip}${app.colors.nc}`,
-                `${app.msgs.geoLabel_lat}: ${app.colors.bw}${data.lat}${app.colors.nc}`,
-                `${app.msgs.geoLabel_lon}: ${app.colors.bw}${data.lon}${app.colors.nc}`,
-                `${app.msgs.geoLabel_timeZone}: ${app.colors.bw}${data.timezone.replace(/_/g, ' ')
-                    .replace(/\//g, ' / ')}${app.colors.nc}`,
-                `ISP: ${app.colors.bw}${data.isp}${app.colors.nc}`
-            ].join('\n'))
-        }
+        if (!app.config.quietMode && geoResults.length == 1)
+            print.geoData(geoResults[0])
 
         // Copy to clipboard
         print.ifNotQuiet(`\n${app.msgs.info_copying}...`)

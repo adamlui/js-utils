@@ -1,4 +1,19 @@
 module.exports = {
+    geoData(data) {
+        console.info([
+            `\nIP: ${app.colors.bw}${data.ip}${app.colors.nc}`,
+            `${app.msgs.geoLabel_country}: ${app.colors.bw}${data.country}${app.colors.nc}`,
+            `${app.msgs.geoLabel_region}: ${app.colors.bw}${data.regionName}${app.colors.nc}`,
+            `${app.msgs.geoLabel_city}: ${app.colors.bw}${data.city}${app.colors.nc}`,
+            `${app.msgs.geoLabel_zip}: ${app.colors.bw}${data.zip}${app.colors.nc}`,
+            `${app.msgs.geoLabel_lat}: ${app.colors.bw}${data.lat}${app.colors.nc}`,
+            `${app.msgs.geoLabel_lon}: ${app.colors.bw}${data.lon}${app.colors.nc}`,
+            `${app.msgs.geoLabel_timeZone}: ${app.colors.bw}${data.timezone.replace(/_/g, ' ')
+                .replace(/\//g, ' / ')}${app.colors.nc}`,
+            `ISP: ${app.colors.bw}${data.isp}${app.colors.nc}`
+        ].join('\n'))
+    },
+
     help(includeSections = ['header', 'usage', 'configOptions', 'infoCmds']) {
         app.prefix = `${app.colors.tlBG}${app.colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${app.colors.nc} `
         const helpSections = {
