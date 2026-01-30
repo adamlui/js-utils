@@ -16,7 +16,7 @@ app.aliases = {
 
 function findSCSS(searchDir, options = {}) {
 
-    const docURL = `${app.urls.docs}/#findscsssearchdir-options`,
+    const docURL = 'https://github.com/adamlui/scss-to-css/tree/main/docs/#findscsssearchdir-options',
           exampleCall = `findSCSS('assets/scss', { verbose: false, dotFolders: true })`
 
     const defaultOptions = {
@@ -79,7 +79,7 @@ function findSCSS(searchDir, options = {}) {
 
 function compile(input, options = {}) {
 
-    const docURL = `${app.urls.docs}/#compileinput-options`,
+    const docURL = 'https://github.com/adamlui/scss-to-css/tree/main/docs/#compileinput-options',
           exampleCall = `compile('assets/scss', { recursive: false, minify: false })`
 
     const defaultOptions = {

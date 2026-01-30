@@ -5,13 +5,12 @@
 
 Object.assign(globalThis.app ??= {}, {
     name: 'geolocate',
-    aliases: { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] },
-    urls: { ...(app.urls || {}), docs: 'https://github.com/adamlui/js-utils/tree/main/geolocate/docs' }
+    aliases: { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] }
 })
 
 async function geolocate(ips, options = {}) {
 
-    const docURL = `${app.urls.docs}/#locateips-options`,
+    const docURL = 'https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-command-line-usage/#locateips-options',
           exampleCall = `geolocate('8.8.8.8', { verbose: false })`,
           defaultOptions = { verbose: true /* enable logging */ }
 

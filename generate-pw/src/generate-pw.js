@@ -22,13 +22,12 @@ Object.assign(globalThis.app ??= {}, {
         upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
         numbers: '0123456789',
         symbols: '!@#$%^&*()-_=+[]{}/\\|;:\'",.<>?'
-    },
-    urls: { ...(app.urls || {}), docs: 'https://github.com/adamlui/js-utils/tree/main/generate-pw/docs' }
+    }
 })
 
 function generatePassword(options = {}) {
 
-    const docURL = `${app.urls.docs}/#generatepasswordoptions`,
+    const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/#generatepasswordoptions',
           exampleCall = 'generatePassword({ verbose: false, numbers: true })'
 
     const defaultOptions = {
@@ -112,7 +111,7 @@ function generatePassword(options = {}) {
 
 function generatePasswords(qty, options = {}) {
 
-    const docURL = `${app.urls.docs}/#generatepasswordsqty-options`,
+    const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/#generatepasswordsqty-options',
           exampleCall = 'generatePasswords(3, { verbose: false, symbols: true })'
 
     const defaultOptions = {
@@ -156,7 +155,7 @@ function generatePasswords(qty, options = {}) {
 
 function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', 'upper'], options = {}) {
 
-    const docURL = `${app.urls.docs}/#strictifypassword-requiredchartypes-options`,
+    const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/#strictifypassword-requiredchartypes-options',
           exampleCall = `strictify('pa55word', ['symbol', 'upper'], { verbose: false })`,
           defaultOptions = { verbose: true /* enable logging */ }
 
@@ -227,7 +226,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
 
 function validateStrength(password, options = {}) {
 
-    const docURL = `${app.urls.docs}/#validatestrengthpassword-options`,
+    const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/#validatestrengthpassword-options',
           exampleCall = `validateStrength('pa55word', { verbose: false })`,
           strengthCriteria = { minLength: 8, minLower: 1, minUpper: 1, minNumber: 1, minSymbol: 1 },
           defaultOptions = { verbose: true /* enable logging */ }

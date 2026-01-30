@@ -9,15 +9,14 @@ Object.assign(globalThis.app ??= {}, {
         ipv4: ['ipV4', 'IPv4', 'IPV4', 'Ipv4', 'IpV4', 'ip', 'IP', 'Ip'],
         ipv6: ['ipV6', 'IPv6', 'IPV6', 'Ipv6', 'IpV6'],
         mac: ['MAC', 'Mac', 'ethernet', 'Ethernet']
-    },
-    urls: { ...(app.urls || {}), docs: 'https://github.com/adamlui/js-utils/tree/main/generate-ip/docs' }
+    }
 })
 
 const ipv4 = {
 
     generate(options = {}) {
 
-        const docURL = `${app.urls.docs}/#ipv4generateoptions`,
+        const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#ipv4generateoptions',
               exampleCall = 'ipv4.generate({ verbose: false, qty: 3 })'
 
         const defaultOptions = {
@@ -54,7 +53,7 @@ const ipv4 = {
 
     validate(address, options = {}) {
 
-        const docURL = `${app.urls.docs}/#ipv4validateaddress-options`,
+        const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#ipv4validateaddress-options',
               exampleCall = `ipv4.validate('0.0.255.255', { verbose: false })`,
               defaultOptions = { verbose: true /* enable logging */ }
 
@@ -92,7 +91,7 @@ const ipv6 = {
 
     generate(options = {}) {
 
-        const docURL = `${app.urls.docs}/#ipv6generateoptions`,
+        const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#ipv6generateoptions',
               exampleCall = 'ipv6.generate({ leadingZeros: true, qty: 5 })'
 
         const defaultOptions = {
@@ -132,7 +131,7 @@ const ipv6 = {
 
     format(ipv6address, options = {}) {
 
-        const docURL = `${app.urls.docs}/#ipv6formatipv6address-options`,
+        const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#ipv6formatipv6address-options',
               exampleCall = `ipv6.format('0d::ffff:192.1.56.10/96', { leadingZeros: true, doubleColon: false })`
 
         const defaultOptions = {
@@ -195,7 +194,7 @@ const ipv6 = {
 
     validate(address, options = {}) {
 
-        const docURL = `${app.urls.docs}/#ipv6validateaddress-options`,
+        const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#ipv6validateaddress-options',
               exampleCall = `ipv6.validate('0:0:0:0:0:ffff:192.1.56.10/96', { verbose: false })`,
               defaultOptions = { verbose: true } // enable logging
 
@@ -237,7 +236,7 @@ const ipv6 = {
 const mac = {
 
     generate(options = {}) {
-        const docURL = `${app.urls.docs}/#macgenerateoptions`,
+        const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#macgenerateoptions',
               exampleCall = 'mac.generate({ verbose: false, qty: 2 })'
 
         const defaultOptions = {
@@ -276,7 +275,7 @@ const mac = {
     },
 
     validate(address, options = {}) {
-        const docURL = `${app.urls.docs}/#macvalidateaddress-options`,
+        const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#macvalidateaddress-options',
               exampleCall = `mac.validate('00:1A:2B:3C:4D:5E', { verbose: false })`,
               defaultOptions = { verbose: true /* enable logging */ }
 

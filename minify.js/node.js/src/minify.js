@@ -16,7 +16,7 @@ app.aliases = {
 
 function findJS(searchDir, options = {}) {
 
-    const docURL = `${app.urls.docs}/#findjssearchdir-options`,
+    const docURL = 'https://github.com/adamlui/minify.js/tree/main/node.js/docs/#findjssearchdir-options',
           exampleCall = `findJS('assets/js', { verbose: false, dotFoldes: true })`
 
     const defaultOptions = {
@@ -81,7 +81,7 @@ function findJS(searchDir, options = {}) {
 
 function minify(input, options = {}) {
 
-    const docURL = `${app.urls.docs}/#minifyinput-options`,
+    const docURL = 'https://github.com/adamlui/minify.js/tree/main/node.js/docs/#minifyinput-options',
           exampleCall = `minify('assets/js', { recursive: false, mangle: false })`
 
     const defaultOptions = {
