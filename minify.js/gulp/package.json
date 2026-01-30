@@ -60,7 +60,7 @@
   "bugs": {
     "url": "https://github.com/adamlui/minify.js/issues"
   },
-  "dependencies": {
-    "@adamlui/minify.js": "^2.1.3"
+  "devDependencies": {
+    "@adamlui/minify.js": "^2.1.4"
   }
 }
