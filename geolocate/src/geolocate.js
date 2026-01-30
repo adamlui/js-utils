@@ -10,7 +10,7 @@ Object.assign(globalThis.app ??= {}, {
 
 async function geolocate(ips, options = {}) {
 
-    const docURL = 'https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-command-line-usage/#locateips-options',
+    const docURL = 'https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#locateips-options',
           exampleCall = `geolocate('8.8.8.8', { verbose: false })`,
           defaultOptions = { verbose: true /* enable logging */ }
 
