@@ -27,7 +27,7 @@ const ipv4 = {
         log.prefix = 'ipv4.generate()'
 
         // Validate/init options
-        if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
+        if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Generate IPv4 address(es)
@@ -66,7 +66,7 @@ const ipv4 = {
         }
 
         // Validate/init options
-        if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
+        if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Validate address as IPv4 address
@@ -104,7 +104,7 @@ const ipv6 = {
         log.prefix = 'ipv6.generate()'
 
         // Validate/init options
-        if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
+        if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Generate IPv6 address(es)
@@ -153,7 +153,7 @@ const ipv6 = {
         }
 
         // Validate/init options
-        if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
+        if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Init formattedAddress
@@ -207,7 +207,7 @@ const ipv6 = {
         }
 
         // Validate/init options
-        if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
+        if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Validate address as IPv6 address
@@ -247,7 +247,7 @@ const mac = {
         log.prefix = 'mac.generate()'
 
         // Validate/init options
-        if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
+        if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Generate MAC address
@@ -288,7 +288,7 @@ const mac = {
         }
 
         // Validate/init options
-        if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
+        if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Validate address as MAC address
@@ -301,7 +301,7 @@ const mac = {
     }
 }
 
-function validateOptions(options, defaultOptions, docURL, exampleCall) {
+function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
 
     // Init option strings/types
     const booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
@@ -313,20 +313,20 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
         optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
         log.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
         log.info('Example valid call:', exampleCall)
-        log.validOptions(defaultOptions) ; log.helpURL(docURL) ; return false
+        log.validOptions(defaultOptions) ; log.helpURL(helpURL) ; return false
     }
     for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             log.error(`\`${key}\` is an invalid option.`)
-            log.validOptions(defaultOptions) ; log.helpURL(docURL) ; return false
+            log.validOptions(defaultOptions) ; log.helpURL(helpURL) ; return false
         } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
             log.error(`[${key}] option can only be \`true\` or \`false\`.`)
-            log.helpURL(docURL) ; return false
+            log.helpURL(helpURL) ; return false
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10)
             if (isNaN(options[key]) || options[key] < 1) {
                 log.error(`[${key}] option can only be an integer > 0.`)
-                log.helpURL(docURL) ; return false
+                log.helpURL(helpURL) ; return false
             }
         }
     }

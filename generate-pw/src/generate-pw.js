@@ -47,7 +47,7 @@ function generatePassword(options = {}) {
     log.prefix = 'generatePassword()'
 
     // Validate/init options
-    if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
+    if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
     if (options.qty > 1) { // generate/return array of [qty] password strings
@@ -137,7 +137,7 @@ function generatePasswords(qty, options = {}) {
     }
 
     // Validate/init options
-    if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
+    if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
     // Generate passwords
@@ -182,7 +182,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
         }
 
     // Validate/init options
-    if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
+    if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
     // Init mod flags + untouchable positions
@@ -240,7 +240,7 @@ function validateStrength(password, options = {}) {
     }
 
     // Validate/init options
-    if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
+    if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
     if (options.verbose) log.info('Validating password strength...')
@@ -285,7 +285,7 @@ function randomInt(min, max) {
         return require('crypto').randomInt(min, max)
 }
 
-function validateOptions(options, defaultOptions, docURL, exampleCall) {
+function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
 
     // Init option strings/types
     const booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
@@ -297,20 +297,20 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
         optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
         log.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
         log.info('Example valid call:', exampleCall)
-        log.validOptions(defaultOptions) ; log.helpURL(docURL) ; return false
+        log.validOptions(defaultOptions) ; log.helpURL(helpURL) ; return false
     }
     for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
             log.error(`\`${key}\` is an invalid option.`)
-            log.validOptions(defaultOptions) ; log.helpURL(docURL) ; return false
+            log.validOptions(defaultOptions) ; log.helpURL(helpURL) ; return false
         } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
             log.error(`[${key}] option can only be \`true\` or \`false\`.`)
-            log.helpURL(docURL) ; return false
+            log.helpURL(helpURL) ; return false
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10)
             if (isNaN(options[key]) || options[key] < 1) {
                 log.error(`[${key}] option can only be an integer > 0.`)
-                log.helpURL(docURL) ; return false
+                log.helpURL(helpURL) ; return false
             }
         }
     }
