@@ -117,7 +117,7 @@ function minify(input, options = {}) {
 
         if (stats.isFile()) {
             if (!/\.[cm]?jsx?$/i.test(input)) {
-                const err = new Error(`${log.prefix}ERROR: ${input} is not a JavaScript file (.js, .mjs, .cjs, .jsx)`)
+                const err = new Error(`${input} is not a JavaScript file (.js, .mjs, .cjs, .jsx)`)
                 log.error(err.message)
                 fs.closeSync(fd)
                 return { code: '', srcPath: path.resolve(process.cwd(), input), error: err }
