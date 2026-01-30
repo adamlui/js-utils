@@ -9,11 +9,13 @@
     const clipboardy = require('node-clipboardy'),
         { getMsgs, getSysLang } = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
         { ipv4, ipv6, mac } = require(`../generate-ip${ env.devMode ? '' : '.min' }.js`),
-          print = require(`./lib/print${ env.devMode ? '' : '.min' }.js`)
+          print = require(`./lib/print${ env.devMode ? '' : '.min' }.js`),
+          settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
 
     // Init APP data
     Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`))
-    app.urls.docs += '/#-command-line-usage' ; app.msgs = await getMsgs(getSysLang())
+    app.urls.docs += '/#-command-line-usage'
+    app.msgs = await getMsgs(getSysLang())
     app.colors = {
         nc: '\x1b[0m',    // no color
         br: '\x1b[1;91m', // bright red
@@ -23,60 +25,17 @@
         blk: '\x1b[30m',  // black
         tlBG: '\x1b[106m' // teal bg
     }
-    app.regex = {
-        paramOptions: {
-            qty: /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
-        flags: {
-            ipv6mode: /^--?(?:ip)?v?6(?:-?mode)?$/,
-            macMode: /^--?m(?:ac)?(?:-?mode)?$/,
-            quietMode: /^--?q(?:uiet)?(?:-?mode)?$/
-        },
-        infoCmds: {
-            help: /^--?h(?:elp)?$/,
-            version: /^--?ve?r?s?i?o?n?$/
-        },
-        version: /^[~^>=]?\d+\.\d+\.\d+$/
-    }
-
-    // Load SETTINGS from args
-    app.config = {}
-    process.argv.forEach(arg => {
-        if (!arg.startsWith('-')) return
-        const matchedParamOption = Object.keys(app.regex.paramOptions)
-            .find(option => app.regex.paramOptions[option].test(arg))
-        const matchedFlag = Object.keys(app.regex.flags).find(flag => app.regex.flags[flag].test(arg))
-        const matchedInfoCmd = Object.keys(app.regex.infoCmds).find(cmd => app.regex.infoCmds[cmd].test(arg))
-        if (matchedFlag) app.config[matchedFlag] = true
-        else if (matchedParamOption) {
-            if (!/=.+/.test(arg)) {
-                print.error(`Arg [--${arg.replace(/-/g, '')}] ${app.msgs.error_noEqual}.`)
-                print.helpCmdAndDocURL()
-                process.exit(1)
-            }
-            const val = arg.split('=')[1]
-            app.config[matchedParamOption] = parseInt(val) || val
-        } else if (!matchedInfoCmd && !/ipv4/.test(arg)) {
-            print.error(`Arg [${arg}] ${app.msgs.error_notRecognized}.`)
-            print.info(`${app.msgs.info_validArgs}.`)
-            print.help(['paramOptions', 'flags', 'infoCmds'])
-            process.exit(1)
-        }
-    })
-    if (app.config.qty && (isNaN(app.config.qty) || app.config.qty < 1)) {
-        print.error(`[qty] ${app.msgs.error_nonPositiveNum}.`)
-        print.helpCmdAndDocURL()
-        process.exit(1)
-    }
 
     // Show HELP screen if --?<h|help> passed
-    if (process.argv.some(arg => app.regex.infoCmds.help.test(arg)))
+    if (process.argv.some(arg => settings.controls.help.regex.test(arg)))
         print.help()
 
     // Show VERSION number if --?<v|version> passed
-    else if (process.argv.some(arg => app.regex.infoCmds.version.test(arg)))
+    else if (process.argv.some(arg => settings.controls.version.regex.test(arg)))
         print.version()
 
     else { // log/copy RESULT(S)
+        settings.load()
         const genOptions = { qty: app.config.qty || 1, verbose: !app.config.quietMode },
               ipResult = app.config.ipv6mode ? ipv6.generate(genOptions)
                        : app.config.macMode  ?  mac.generate(genOptions)

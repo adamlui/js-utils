@@ -10,7 +10,8 @@
           fs = require('fs'),
           path = require('path'),
           print = require(`./lib/print${ env.devMode ? '' : '.min' }.js`),
-          scssToCSS = require(`../scss-to-css${ env.devMode ? '' : '.min' }.js`)
+          scssToCSS = require(`../scss-to-css${ env.devMode ? '' : '.min' }.js`),
+          settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
 
     // Init APP data
     Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`))
@@ -24,61 +25,17 @@
         blk: '\x1b[30m',  // black
         tlBG: '\x1b[106m' // teal bg
     }
-    app.regex = {
-        flags: {
-            dryRun: /^--?(?:n|dry-?run)$/,
-            includeDotFolders: /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/,
-            noSourceMaps: /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?|so?u?rce?-?maps?=(?:false|0))$/,
-            noRecursion: /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/,
-            noMinify: /^--?(?:M|(?:disable|no)-?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/,
-            relativeOutput: /^--?(?:r|relative-?output?=?(?:true|1)?)$/,
-            copy: /^--?c(?:opy)?$/,
-            quietMode: /^--?q(?:uiet)?(?:-?mode)?$/
-        },
-        paramOptions: {
-            ignores: /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/,
-            comment: /^--?comments?(?:=.*|$)/
-        },
-        infoCmds: {
-            help: /^--?h(?:elp)?$/,
-            version: /^--?ve?r?s?i?o?n?$/
-        },
-        version: /^[~^>=]?\d+\.\d+\.\d+$/
-    }
-
-    // Load SETTINGS from args
-    app.config = {}
-    process.argv.forEach(arg => {
-        if (!arg.startsWith('-')) return
-        const matchedParamOption = Object.keys(app.regex.paramOptions)
-            .find(option => app.regex.paramOptions[option].test(arg))
-        const matchedFlag = Object.keys(app.regex.flags).find(flag => app.regex.flags[flag].test(arg))
-        const matchedInfoCmd = Object.keys(app.regex.infoCmds).find(cmd => app.regex.infoCmds[cmd].test(arg))
-        if (matchedFlag) app.config[matchedFlag] = true
-        else if (matchedParamOption) {
-            if (!/=.+/.test(arg)) {
-                print.error(`Arg [--${arg.replace(/-/g, '')}] requires '=' followed by a value.`)
-                print.helpCmdAndDocURL() ; process.exit(1)
-            }
-            const val = arg.split('=')[1]
-            app.config[matchedParamOption] = parseInt(val) || val
-        } else if (!matchedInfoCmd) {
-            print.error(`Arg [${arg}] not recognized.`)
-            print.info(`Valid arguments are below.`)
-            print.help(['flags', 'paramOptions', 'infoCmds'])
-            process.exit(1)
-        }
-    })
 
     // Show HELP screen if --?<h|help> passed
-    if (process.argv.some(arg => app.regex.infoCmds.help.test(arg)))
+    if (process.argv.some(arg => settings.controls.help.regex.test(arg)))
         print.help()
 
     // Show VERSION number if --?<v|version> passed
-    else if (process.argv.some(arg => app.regex.infoCmds.version.test(arg)))
+    if (process.argv.some(arg => settings.controls.version.regex.test(arg)))
         print.version()
 
     else { // run MAIN routine
+        settings.load()
 
         // Init I/O args
         const [inputArg = '', outputArg = ''] = // default to empty strings for error-less handling

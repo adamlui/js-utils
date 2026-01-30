@@ -1,6 +1,9 @@
 module.exports = {
+
     data(msg) { console.log(`\n${app.colors.bw}${msg}${app.colors.nc}`) },
     error(...args) { console.error(`\n${app.colors.br}${app.msgs.prefix_error}:`, ...args, app.colors.nc) },
+    errorAndExit(...args) { this.error(...args) ; this.helpCmdAndDocURL() ; process.exit(1) },
+    ifNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) },
     info(msg) { console.info(`\n${app.colors.by}${msg}${app.colors.nc}`) },
     success(msg) { console.log(`\n${app.colors.bg}${msg}${app.colors.nc}`) },
 
@@ -88,8 +91,6 @@ module.exports = {
                 app.colors.bw}${app.urls.docs}${app.colors.nc}`
         )
     },
-
-    ifNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) },
 
     version() {
         const path = require('path')
