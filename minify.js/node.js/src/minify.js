@@ -211,7 +211,7 @@ function validateOptions(options, defaultOptions, docURL, exampleCall) {
         let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) +1
         optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
         log.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
-        log.info(`Example valid call: ${exampleCall}`)
+        log.info('Example valid call:', exampleCall)
         log.validOptions(defaultOptions) ; log.helpURL(docURL) ; return false
     }
     for (const key in options) { // validate each key
@@ -237,7 +237,7 @@ const log = {
     prefix: app.name,
 
     error(...args) { console.error(`${this.prefix} » ERROR:`, ...args) },
-    helpURL(url = app.urls?.docs) { this.info(`For more help, please visit ${url}`) },
+    helpURL(url = app.urls?.docs) { this.info('For more help, please visit', url) },
     info(...args) { console.info(`${this.prefix} »`, ...args) },
 
     validOptions(options) {
@@ -246,7 +246,7 @@ const log = {
             .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
             .replace(/"/g, '\'') // replace double quotes w/ single quotes
             .replace(/\n\s*/g, ' ') // condense to single line
-        this.info(`Valid options: [ ${strValidOptions} ]`)
+        this.info(`Valid options: [${strValidOptions}]`)
         this.info(`If omitted, default settings are: ${strDefaultOptions}`)
     }
 }
