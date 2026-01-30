@@ -10,7 +10,7 @@ Object.assign(globalThis.app ??= {}, {
         ipv6: ['ipV6', 'IPv6', 'IPV6', 'Ipv6', 'IpV6'],
         mac: ['MAC', 'Mac', 'ethernet', 'Ethernet']
     },
-    urls: { docs: 'https://github.com/adamlui/js-utils/tree/main/generate-ip/docs' }
+    urls: { ...(app.urls || {}), docs: 'https://github.com/adamlui/js-utils/tree/main/generate-ip/docs' }
 })
 
 const ipv4 = {

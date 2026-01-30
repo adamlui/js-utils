@@ -23,7 +23,7 @@ Object.assign(globalThis.app ??= {}, {
         numbers: '0123456789',
         symbols: '!@#$%^&*()-_=+[]{}/\\|;:\'",.<>?'
     },
-    urls: { docs: 'https://github.com/adamlui/js-utils/tree/main/generate-pw/docs' }
+    urls: { ...(app.urls || {}), docs: 'https://github.com/adamlui/js-utils/tree/main/generate-pw/docs' }
 })
 
 function generatePassword(options = {}) {

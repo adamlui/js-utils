@@ -6,7 +6,7 @@
 Object.assign(globalThis.app ??= {}, {
     name: 'geolocate',
     aliases: { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] },
-    urls: { docs: 'https://github.com/adamlui/js-utils/tree/main/geolocate/docs' }
+    urls: { ...(app.urls || {}), docs: 'https://github.com/adamlui/js-utils/tree/main/geolocate/docs' }
 })
 
 async function geolocate(ips, options = {}) {
