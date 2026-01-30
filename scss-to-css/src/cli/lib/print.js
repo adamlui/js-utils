@@ -1,25 +1,35 @@
 module.exports = {
 
-    data(msg) { console.log(`\n${app.colors.bw}${msg}${app.colors.nc}`) },
-    error(...args) { console.error(`\n${app.colors.br}ERROR:`, ...args, app.colors.nc) },
+    colors: {
+        nc: '\x1b[0m',    // no color
+        br: '\x1b[1;91m', // bright red
+        by: '\x1b[1;33m', // bright yellow
+        bg: '\x1b[1;92m', // bright green
+        bw: '\x1b[1;97m', // bright white
+        blk: '\x1b[30m',  // black
+        tlBG: '\x1b[106m' // teal bg
+    },
+
+    data(msg) { console.log(`\n${this.colors.bw}${msg}${this.colors.nc}`) },
+    error(...args) { console.error(`\n${this.colors.br}ERROR:`, ...args, this.colors.nc) },
     errorAndExit(...args) { this.error(...args) ; this.helpCmdAndDocURL() ; process.exit(1) },
     ifNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) },
-    info(msg) { console.info(`\n${app.colors.by}${msg}${app.colors.nc}`) },
-    success(msg) { console.log(`\n${app.colors.bg}${msg}${app.colors.nc}`) },
+    info(msg) { console.info(`\n${this.colors.by}${msg}${this.colors.nc}`) },
+    success(msg) { console.log(`\n${this.colors.bg}${msg}${this.colors.nc}`) },
 
     help(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
-        app.prefix = `${app.colors.tlBG}${app.colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${app.colors.nc} `
+        app.prefix = `${this.colors.tlBG}${this.colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${this.colors.nc} `
         const helpSections = {
             header: [
                 `\n├ ${app.prefix}© ${app.copyrightYear} ${app.author} under the ${app.license} license.`,
                 `${app.prefix}Source: ${app.urls.src}`
             ],
             usage: [
-                `\n${app.colors.bw}o Usage:${app.colors.nc}`,
-                ` ${app.colors.bw}» ${app.colors.bg}${app.cmdFormat}${app.colors.nc}`
+                `\n${this.colors.bw}o Usage:${this.colors.nc}`,
+                ` ${this.colors.bw}» ${this.colors.bg}${app.cmdFormat}${this.colors.nc}`
             ],
             pathArgs: [
-                `\n${app.colors.bw}o Path arguments:${app.colors.nc}`,
+                `\n${this.colors.bw}o Path arguments:${this.colors.nc}`,
                 ' [inputPath]                             '
                     + 'Path to SCSS file or directory containing SCSS files to be compiled,'
                     + ' relative to the current working directory.',
@@ -28,7 +38,7 @@ module.exports = {
                     + ' relative to input root (if not provided, css/ is used).'
             ],
             flags: [
-                `\n${app.colors.bw}o Boolean options:${app.colors.nc}`,
+                `\n${this.colors.bw}o Boolean options:${this.colors.nc}`,
                 ' -n, --dry-run                           Don\'t actually compile the file(s),'
                                                         + ' just show if they will be processed.',
                 ' -d, --include-dotfolders                Include dotfolders in file search.',
@@ -41,20 +51,20 @@ module.exports = {
                 ' -q, --quiet                             Suppress all logging except errors.'
             ],
             paramOptions: [
-                `\n${app.colors.bw}o Parameter options:${app.colors.nc}`,
+                `\n${this.colors.bw}o Parameter options:${this.colors.nc}`,
                 '--ignores="dir/,file1.scss,file2.scss"   Files/directories to exclude from compilation.',
                 '--comment="comment"                      Prepend header comment to compiled CSS.'
                                                         + ' Separate by line using \'\\n\'.'
             ],
             infoCmds: [
-                `\n${app.colors.bw}o Info commands:${app.colors.nc}`,
+                `\n${this.colors.bw}o Info commands:${this.colors.nc}`,
                 ' -h, --help                              Display help screen.',
                 ' -v, --version                           Show version number.'
             ]
         }
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 41)))
-        console.info(`\nFor more help, please visit: ${app.colors.bw}${app.urls.docs}${app.colors.nc}`)
+        console.info(`\nFor more help, please visit: ${this.colors.bw}${app.urls.docs}${this.colors.nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
@@ -85,7 +95,7 @@ module.exports = {
     helpCmdAndDocURL() {
         console.info(
             `\nFor more help, type 'scss-to-css --help' or visit\n${
-                app.colors.bw}${app.urls.docs}${app.colors.nc}`
+                this.colors.bw}${app.urls.docs}${this.colors.nc}`
         )
     },
 

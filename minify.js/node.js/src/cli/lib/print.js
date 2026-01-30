@@ -1,14 +1,24 @@
 module.exports = {
 
-    data(msg) { console.log(`\n${app.colors.bw}${msg}${app.colors.nc}`) },
-    error(...args) { console.error(`\n${app.colors.br}${app.msgs.prefix_error}:`, ...args, app.colors.nc) },
+    colors: {
+        nc: '\x1b[0m',    // no color
+        br: '\x1b[1;91m', // bright red
+        by: '\x1b[1;33m', // bright yellow
+        bg: '\x1b[1;92m', // bright green
+        bw: '\x1b[1;97m', // bright white
+        blk: '\x1b[30m',  // black
+        tlBG: '\x1b[106m' // teal bg
+    },
+
+    data(msg) { console.log(`\n${this.colors.bw}${msg}${this.colors.nc}`) },
+    error(...args) { console.error(`\n${this.colors.br}${app.msgs.prefix_error}:`, ...args, this.colors.nc) },
     errorAndExit(...args) { this.error(...args) ; this.helpCmdAndDocURL() ; process.exit(1) },
     ifNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) },
-    info(msg) { console.info(`\n${app.colors.by}${msg}${app.colors.nc}`) },
-    success(msg) { console.log(`\n${app.colors.bg}${msg}${app.colors.nc}`) },
+    info(msg) { console.info(`\n${this.colors.by}${msg}${this.colors.nc}`) },
+    success(msg) { console.log(`\n${this.colors.bg}${msg}${this.colors.nc}`) },
 
     help(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
-        app.prefix = `${app.colors.tlBG}${app.colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${app.colors.nc} `
+        app.prefix = `${this.colors.tlBG}${this.colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${this.colors.nc} `
         const helpSections = {
             header: [
                 `\n├ ${app.prefix}${ app.msgs.appCopyright || `© ${
@@ -17,11 +27,11 @@ module.exports = {
                 `${app.prefix}${app.msgs.prefix_source}: ${app.urls.src}`
             ],
             usage: [
-                `\n${app.colors.bw}o ${app.msgs.helpSection_usage}:${app.colors.nc}`,
-                ` ${app.colors.bw}» ${app.colors.bg}${app.cmdFormat}${app.colors.nc}`
+                `\n${this.colors.bw}o ${app.msgs.helpSection_usage}:${this.colors.nc}`,
+                ` ${this.colors.bw}» ${this.colors.bg}${app.cmdFormat}${this.colors.nc}`
             ],
             pathArgs: [
-                `\n${app.colors.bw}o ${app.msgs.helpSection_pathArgs}:${app.colors.nc}`,
+                `\n${this.colors.bw}o ${app.msgs.helpSection_pathArgs}:${this.colors.nc}`,
                 ' [inputPath]                         '
                     + `${app.msgs.inputPathDesc_main}, `
                     + `${app.msgs.inputPathDesc_extra}.`,
@@ -30,7 +40,7 @@ module.exports = {
                     + `${app.msgs.outputPathDesc_extra}.`
             ],
             flags: [
-                `\n${app.colors.bw}o ${app.msgs.helpSection_flags}:${app.colors.nc}`,
+                `\n${this.colors.bw}o ${app.msgs.helpSection_flags}:${this.colors.nc}`,
                 ` -n, --dry-run                       ${app.msgs.optionDesc_dryRun}.`,
                 ` -d, --include-dotfolders            ${app.msgs.optionDesc_dotfolders}.`,
                 ` -D, --include-dotfiles              ${app.msgs.optionDesc_dotfiles}.`,
@@ -43,13 +53,13 @@ module.exports = {
                 ` -q, --quiet                         ${app.msgs.optionDesc_quiet}.`
             ],
             paramOptions: [
-                `\n${app.colors.bw}o ${app.msgs.helpSection_paramOptions}:${app.colors.nc}`,
+                `\n${this.colors.bw}o ${app.msgs.helpSection_paramOptions}:${this.colors.nc}`,
                 `--ignores="dir/,file1.js,file2.js"   ${app.msgs.optionDesc_ignores}.`,
                 `--comment="comment"                  ${app.msgs.optionDesc_commentMain}.`
                                                  +  ` ${app.msgs.optionDesc_commentExtra}.`
             ],
             infoCmds: [
-                `\n${app.colors.bw}o ${app.msgs.helpSection_infoCmds}:${app.colors.nc}`,
+                `\n${this.colors.bw}o ${app.msgs.helpSection_infoCmds}:${this.colors.nc}`,
                 ` -h, --help                          ${app.msgs.optionDesc_help}`,
                 ` -v, --version                       ${app.msgs.optionDesc_version}.`
             ]
@@ -57,7 +67,7 @@ module.exports = {
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 37)))
         console.info(
-            `\n${app.msgs.info_moreHelp}, ${app.msgs.info_visit}: ${app.colors.bw}${app.urls.docs}${app.colors.nc}`)
+            `\n${app.msgs.info_moreHelp}, ${app.msgs.info_visit}: ${this.colors.bw}${app.urls.docs}${this.colors.nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
@@ -88,7 +98,7 @@ module.exports = {
         console.info(`\n${
             app.msgs.info_moreHelp}, ${app.msgs.info_type} ${app.name.split('/')[1]} --help' ${
                 app.msgs.info_or} ${app.msgs.info_visit}\n${
-                app.colors.bw}${app.urls.docs}${app.colors.nc}`
+                this.colors.bw}${app.urls.docs}${this.colors.nc}`
         )
     },
 

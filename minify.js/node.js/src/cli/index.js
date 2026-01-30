@@ -18,22 +18,13 @@
     Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`))
     app.urls.docs += '/#-command-line-usage'
     app.msgs = await getMsgs(getSysLang())
-    app.colors = {
-        nc: '\x1b[0m',    // no color
-        br: '\x1b[1;91m', // bright red
-        by: '\x1b[1;33m', // bright yellow
-        bg: '\x1b[1;92m', // bright green
-        bw: '\x1b[1;97m', // bright white
-        blk: '\x1b[30m',  // black
-        tlBG: '\x1b[106m' // teal bg
-    }
 
     // Show HELP screen if --?<h|help> passed
     if (process.argv.some(arg => settings.controls.help.regex.test(arg)))
         print.help()
 
     // Show VERSION number if --?<v|version> passed
-    if (process.argv.some(arg => settings.controls.version.regex.test(arg)))
+    else if (process.argv.some(arg => settings.controls.version.regex.test(arg)))
         print.version()
 
     else { // run MAIN routine
@@ -149,7 +140,8 @@
                     const outputPath = path.join(outputDir, outputFilename)
                     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true })
                     fs.writeFileSync(outputPath, code, 'utf8')
-                    print.ifNotQuiet(`  ${app.colors.bg}✓${app.colors.nc} ${path.relative(process.cwd(), outputPath)}`)
+                    print.ifNotQuiet(
+                        `  ${print.colors.bg}✓${print.colors.nc} ${path.relative(process.cwd(), outputPath)}`)
                 })
             }
         }

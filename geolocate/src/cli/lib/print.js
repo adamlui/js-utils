@@ -1,29 +1,39 @@
 module.exports = {
 
-    data(msg) { console.log(`\n${app.colors.bw}${msg}${app.colors.nc}`) },
-    error(...args) { console.error(`\n${app.colors.br}${app.msgs.prefix_error}:`, ...args, app.colors.nc) },
+    colors: {
+        nc: '\x1b[0m',    // no color
+        br: '\x1b[1;91m', // bright red
+        by: '\x1b[1;33m', // bright yellow
+        bg: '\x1b[1;92m', // bright green
+        bw: '\x1b[1;97m', // bright white
+        blk: '\x1b[30m',  // black
+        tlBG: '\x1b[106m' // teal bg
+    },
+
+    data(msg) { console.log(`\n${this.colors.bw}${msg}${this.colors.nc}`) },
+    error(...args) { console.error(`\n${this.colors.br}${app.msgs.prefix_error}:`, ...args, this.colors.nc) },
     errorAndExit(...args) { this.error(...args) ; this.helpCmdAndDocURL() ; process.exit(1) },
     ifNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) },
-    info(msg) { console.info(`\n${app.colors.by}${msg}${app.colors.nc}`) },
-    success(msg) { console.log(`\n${app.colors.bg}${msg}${app.colors.nc}`) },
+    info(msg) { console.info(`\n${this.colors.by}${msg}${this.colors.nc}`) },
+    success(msg) { console.log(`\n${this.colors.bg}${msg}${this.colors.nc}`) },
 
     geoData(data) {
         console.info([
-            `\nIP: ${app.colors.bw}${data.ip}${app.colors.nc}`,
-            `${app.msgs.geoLabel_country}: ${app.colors.bw}${data.country}${app.colors.nc}`,
-            `${app.msgs.geoLabel_region}: ${app.colors.bw}${data.regionName}${app.colors.nc}`,
-            `${app.msgs.geoLabel_city}: ${app.colors.bw}${data.city}${app.colors.nc}`,
-            `${app.msgs.geoLabel_zip}: ${app.colors.bw}${data.zip}${app.colors.nc}`,
-            `${app.msgs.geoLabel_lat}: ${app.colors.bw}${data.lat}${app.colors.nc}`,
-            `${app.msgs.geoLabel_lon}: ${app.colors.bw}${data.lon}${app.colors.nc}`,
+            `\nIP: ${this.colors.bw}${data.ip}${this.colors.nc}`,
+            `${app.msgs.geoLabel_country}: ${this.colors.bw}${data.country}${this.colors.nc}`,
+            `${app.msgs.geoLabel_region}: ${this.colors.bw}${data.regionName}${this.colors.nc}`,
+            `${app.msgs.geoLabel_city}: ${this.colors.bw}${data.city}${this.colors.nc}`,
+            `${app.msgs.geoLabel_zip}: ${this.colors.bw}${data.zip}${this.colors.nc}`,
+            `${app.msgs.geoLabel_lat}: ${this.colors.bw}${data.lat}${this.colors.nc}`,
+            `${app.msgs.geoLabel_lon}: ${this.colors.bw}${data.lon}${this.colors.nc}`,
             `${app.msgs.geoLabel_timeZone}: ${
-                app.colors.bw}${data.timezone.replace(/_/g, ' ').replace(/\//g, ' / ')}${app.colors.nc}`,
-            `ISP: ${app.colors.bw}${data.isp}${app.colors.nc}`
+                this.colors.bw}${data.timezone.replace(/_/g, ' ').replace(/\//g, ' / ')}${this.colors.nc}`,
+            `ISP: ${this.colors.bw}${data.isp}${this.colors.nc}`
         ].join('\n'))
     },
 
     help(includeSections = ['header', 'usage', 'configOptions', 'infoCmds']) {
-        app.prefix = `${app.colors.tlBG}${app.colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${app.colors.nc} `
+        app.prefix = `${this.colors.tlBG}${this.colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${this.colors.nc} `
         const helpSections = {
             header: [
                 `\n├ ${app.prefix}${ app.msgs.appCopyright || `© ${
@@ -32,15 +42,15 @@ module.exports = {
                 `${app.prefix}${app.msgs.prefix_source}: ${app.urls.src}`
             ],
             usage: [
-                `\n${app.colors.bw}o ${app.msgs.helpSection_usage}:${app.colors.nc}`,
-                ` ${app.colors.bw}» ${app.colors.bg}${app.cmdFormat}${app.colors.nc}`
+                `\n${this.colors.bw}o ${app.msgs.helpSection_usage}:${this.colors.nc}`,
+                ` ${this.colors.bw}» ${this.colors.bg}${app.cmdFormat}${this.colors.nc}`
             ],
             configOptions: [
-                `\n${app.colors.bw}o ${app.msgs.helpSection_configOptions}:${app.colors.nc}`,
+                `\n${this.colors.bw}o ${app.msgs.helpSection_configOptions}:${this.colors.nc}`,
                 ` -q, --quiet                 ${app.msgs.optionDesc_quiet}.`
             ],
             infoCmds: [
-                `\n${app.colors.bw}o ${app.msgs.helpSection_infoCmds}:${app.colors.nc}`,
+                `\n${this.colors.bw}o ${app.msgs.helpSection_infoCmds}:${this.colors.nc}`,
                 ` -h, --help                  ${app.msgs.optionDesc_help}`,
                 ` -v, --version               ${app.msgs.optionDesc_version}.`
             ]
@@ -48,7 +58,7 @@ module.exports = {
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)))
         console.info(
-            `\n${app.msgs.info_moreHelp}, ${app.msgs.info_visit}: ${app.colors.bw}${app.urls.docs}${app.colors.nc}`)
+            `\n${app.msgs.info_moreHelp}, ${app.msgs.info_visit}: ${this.colors.bw}${app.urls.docs}${this.colors.nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,

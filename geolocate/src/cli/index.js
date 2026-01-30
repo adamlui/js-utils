@@ -16,15 +16,6 @@
     Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`))
     app.urls.docs += '/#-command-line-usage'
     app.msgs = await getMsgs(getSysLang())
-    app.colors = {
-        nc: '\x1b[0m',    // no color
-        br: '\x1b[1;91m', // bright red
-        by: '\x1b[1;33m', // bright yellow
-        bg: '\x1b[1;92m', // bright green
-        bw: '\x1b[1;97m', // bright white
-        blk: '\x1b[30m',  // black
-        tlBG: '\x1b[106m' // teal bg
-    }
 
     // Show HELP screen if --?<h|help> passed
     if (process.argv.some(arg => settings.controls.help.regex.test(arg)))
