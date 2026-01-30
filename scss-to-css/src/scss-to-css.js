@@ -168,13 +168,10 @@ function compile(input, options = {}) {
 }
 
 function prependComment(code, comment) {
-    const commentBlock = comment.split('\n').map(line => ` * ${line}`).join('\n'),
-          shebangIdx = code.indexOf('#!')
-    if (shebangIdx >= 0) {
-        const postShebangIdx = code.indexOf('\n', shebangIdx) +1 // idx of 1st newline after shebang
-        return code.slice(0, postShebangIdx) + `/**\n${commentBlock}\n */\n` + code.slice(postShebangIdx)
-    } else
-        return `/**\n${commentBlock}\n */\n${code}`
+    const shebangMatch = code.match(/^#!.*\n/)
+    let shebang = ''
+    if (shebangMatch) { shebang = shebangMatch[0] ; code = code.slice(shebang.length) }
+    return `${shebang}/**\n${comment.split('\n').map(line => ` * ${line}`).join('\n')}\n */\n${code}`
 }
 
 function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
