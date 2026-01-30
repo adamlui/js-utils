@@ -74,7 +74,7 @@
     "sass": "^1.97.3"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^2.1.2",
+    "@adamlui/minify.js": "^2.1.4",
     "@eslint/json": "^1.0.0",
     "@eslint/markdown": "^7.5.1",
     "@stylistic/eslint-plugin": "^5.7.1",
