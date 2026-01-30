@@ -60,16 +60,14 @@
         if (matchedFlag) app.config[matchedFlag] = true
         else if (matchedParamOption) {
             if (!/=.+/.test(arg)) {
-                console.error(`\n${app.colors.br}${app.msgs.prefix_error}: Arg [--${
-                    arg.replace(/-/g, '')}] ${app.msgs.error_noEqual}.${app.colors.nc}`)
+                print.error(`Arg [--${arg.replace(/-/g, '')}] ${app.msgs.error_noEqual}.`)
                 print.helpCmdAndDocURL() ; process.exit(1)
             }
             const val = arg.split('=')[1]
             app.config[matchedParamOption] = parseInt(val) || val
         } else if (!matchedInfoCmd) {
-            console.error(`\n${app.colors.br}${app.msgs.prefix_error}: Arg [${
-                arg}] ${app.msgs.error_notRecognized}.${app.colors.nc}`)
-            console.info(`\n${app.colors.by}${app.msgs.info_validArgs}.${app.colors.nc}`)
+            print.error(`Arg [${arg}] ${app.msgs.error_notRecognized}.`)
+            print.info(`${app.msgs.info_validArgs}.`)
             print.help(['paramOptions', 'flags', 'infoCmds'])
             process.exit(1)
         }
@@ -96,12 +94,10 @@
         if (inputArg && !fs.existsSync(inputPath)) {
             const jsInputPath = inputPath + '.js' // append '.js' in case ommitted from intended filename
             if (!fs.existsSync(jsInputPath)) {
-                console.error(`\n${app.colors.br}${app.msgs.prefix_error}: `
-                    + `${app.msgs.error_firstArgNotExist}.`
-                    + `\n${inputPath} ${app.msgs.error_doesNotExist}.${app.colors.nc}`)
-                console.info(`\n${app.colors.bg}${app.msgs.info_exampleValidCmd}: `
-                    + `\n» minify-js . output.min.js${app.colors.nc}`)
-                print.helpCmdAndDocURL() ; process.exit(1)
+                print.error(`${app.msgs.error_firstArgNotExist}.\n${inputPath} ${app.msgs.error_doesNotExist}.`)
+                print.success(`${app.msgs.info_exampleValidCmd}: \n» minify-js . output.min.js`)
+                print.helpCmdAndDocURL()
+                process.exit(1)
             } else inputPath = jsInputPath
         }
 
@@ -115,10 +111,10 @@
 
         if (app.config.dryRun) { // -n or --dry-run passed
             if (ogJSfiles.length) { // print files to be processed
-                console.info(`\n${app.colors.by}${app.msgs.info_filesToBeMinned}:${app.colors.nc}`)
+                print.info(`${app.msgs.info_filesToBeMinned}:`)
                 ogJSfiles.forEach(file => console.info(file))
             } else // no files found
-                console.info(`\n${app.colors.by}${app.msgs.info_noFilesWillBeMinned}.${app.colors.nc}`)
+                print.info(`${app.msgs.info_noFilesWillBeMinned}.`)
 
         } else { // actually minify JavaScript files
 
@@ -151,24 +147,24 @@
             }).filter(minifyResult => !minifyResult.error)
 
             // Print minification summary
-            if (minifyData?.length) {
-                print.ifNotQuiet(`\n${app.colors.bg}${app.msgs.info_minComplete}!${app.colors.nc}`)
-                print.ifNotQuiet(`${app.colors.bw}${minifyData.length} ${app.msgs.info_file}`
-                    + `${ minifyData.length > 1 ? 's' : '' } ${app.msgs.info_minified}.${app.colors.nc}`)
-            } else print.ifNotQuiet(
-                `\n${app.colors.by}${app.msgs.info_noFilesProcessed}.${app.colors.nc}`)
-            if (failedPaths.length) {
-                print.ifNotQuiet(
-                    `\n${app.colors.br}${failedPaths.length} ${app.msgs.info_file}`
-                    + `${ failedPaths.length > 1 ? 's' : '' } ${app.msgs.info_failedToMinify}:${app.colors.nc}`
-                )
-                failedPaths.forEach(path => print.ifNotQuiet(path))
+            if (!app.config.quietMode) {
+                if (minifyData?.length) {
+                    print.success(`${app.msgs.info_minComplete}!`)
+                    print.data(`${minifyData.length} ${app.msgs.info_file}`
+                        + `${ minifyData.length == 1 ? '' : 's' } ${app.msgs.info_minified}.`)
+                } else
+                    console.info(`${app.msgs.info_noFilesProcessed}.`)
+                if (failedPaths.length) {
+                    print.error(`${failedPaths.length} ${app.msgs.info_file}`
+                        + `${ failedPaths.length == 1 ? '' : 's' } ${app.msgs.info_failedToMinify}:`)
+                    failedPaths.forEach(path => console.info(path))
+                }
             }
             if (!minifyData?.length) return
 
             // Copy single result code to clipboard if --copy passed
             if (app.config.copy && minifyData?.length == 1) {
-                console.log(`\n${app.colors.bw}${minifyData[0].code}${app.colors.nc}`)
+                print.data(minifyData[0].code)
                 print.ifNotQuiet(`\n${app.msgs.info_copying}...`)
                 clipboardy.writeSync(minifyData[0].code)
 

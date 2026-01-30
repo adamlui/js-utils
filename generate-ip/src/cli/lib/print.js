@@ -1,4 +1,9 @@
 module.exports = {
+    data(msg) { console.log(`\n${app.colors.bw}${msg}${app.colors.nc}`) },
+    error(...args) { console.error(`\n${app.colors.br}${app.msgs.prefix_error}:`, ...args, app.colors.nc) },
+    info(msg) { console.info(`\n${app.colors.by}${msg}${app.colors.nc}`) },
+    success(msg) { console.log(`\n${app.colors.bg}${msg}${app.colors.nc}`) },
+
     help(includeSections = ['header', 'usage', 'paramOptions', 'flags', 'infoCmds']) {
         app.prefix = `${app.colors.tlBG}${app.colors.blk}\x1b[30m ${app.name} ${app.colors.nc} `
         const helpSections = {

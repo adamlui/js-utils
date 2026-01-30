@@ -49,24 +49,23 @@
         if (matchedFlag) app.config[matchedFlag] = true
         else if (matchedParamOption) {
             if (!/=.+/.test(arg)) {
-                console.error(`\n${app.colors.br}${app.msgs.prefix_error}: Arg [--${
-                    arg.replace(/-/g, '')}] ${app.msgs.error_noEqual}.${app.colors.nc}`)
-                print.helpCmdAndDocURL() ; process.exit(1)
+                print.error(`Arg [--${arg.replace(/-/g, '')}] ${app.msgs.error_noEqual}.`)
+                print.helpCmdAndDocURL()
+                process.exit(1)
             }
             const val = arg.split('=')[1]
             app.config[matchedParamOption] = parseInt(val) || val
         } else if (!matchedInfoCmd && !/ipv4/.test(arg)) {
-            console.error(`\n${app.colors.br}${app.msgs.prefix_error}: Arg [${
-                arg}] ${app.msgs.error_notRecognized}.${app.colors.nc}`)
-            console.info(`\n${app.colors.by}${app.msgs.info_validArgs}.${app.colors.nc}`)
+            print.error(`Arg [${arg}] ${app.msgs.error_notRecognized}.`)
+            print.info(`${app.msgs.info_validArgs}.`)
             print.help(['paramOptions', 'flags', 'infoCmds'])
             process.exit(1)
         }
     })
     if (app.config.qty && (isNaN(app.config.qty) || app.config.qty < 1)) {
-        console.error(
-            `\n${app.colors.br}${app.msgs.prefix_error}: [qty] ${app.msgs.error_nonPositiveNum}.${app.colors.nc}`)
-        print.helpCmdAndDocURL() ; process.exit(1)
+        print.error(`[qty] ${app.msgs.error_nonPositiveNum}.`)
+        print.helpCmdAndDocURL()
+        process.exit(1)
     }
 
     // Show HELP screen if --?<h|help> passed

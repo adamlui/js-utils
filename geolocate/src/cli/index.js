@@ -41,9 +41,8 @@
               matchedInfoCmd = Object.keys(app.regex.infoCmds).find(cmd => app.regex.infoCmds[cmd].test(arg))
         if (matchedFlag) app.config[matchedFlag] = true
         else if (!matchedInfoCmd) {
-            console.error(`\n${app.colors.br}${app.msgs.prefix_error}: Arg [${
-                arg}] ${app.msgs.error_notRecognized}.${app.colors.nc}`)
-            console.info(`\n${app.colors.by}${app.msgs.info_validArgs}.${app.colors.nc}`)
+            print.error(`Arg [${arg}] ${app.msgs.error_notRecognized}.`)
+            print.info(`${app.msgs.info_validArgs}.`)
             print.help(['paramOptions', 'infoCmds'])
             process.exit(1)
         }

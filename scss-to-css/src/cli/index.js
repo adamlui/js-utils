@@ -57,15 +57,14 @@
         if (matchedFlag) app.config[matchedFlag] = true
         else if (matchedParamOption) {
             if (!/=.+/.test(arg)) {
-                console.error(`\n${app.colors.br}ERROR: Arg [--${
-                    arg.replace(/-/g, '')}] requires '=' followed by a value.${app.colors.nc}`)
+                print.error(`Arg [--${arg.replace(/-/g, '')}] requires '=' followed by a value.`)
                 print.helpCmdAndDocURL() ; process.exit(1)
             }
             const val = arg.split('=')[1]
             app.config[matchedParamOption] = parseInt(val) || val
         } else if (!matchedInfoCmd) {
-            console.error(`\n${app.colors.br}ERROR: Arg [${arg}] not recognized.${app.colors.nc}`)
-            console.info(`\n${app.colors.by}Valid arguments are below.${app.colors.nc}`)
+            print.error(`Arg [${arg}] not recognized.`)
+            print.info(`Valid arguments are below.`)
             print.help(['flags', 'paramOptions', 'infoCmds'])
             process.exit(1)
         }
@@ -92,11 +91,11 @@
         if (inputArg && !fs.existsSync(inputPath)) {
             const scssInputPath = inputPath + '.scss' // append '.scss' in case ommitted from intended filename
             if (!fs.existsSync(scssInputPath)) {
-                console.error(`\n${app.colors.br}Error: First argument can only be an existing file or directory.`,
-                    `\n'${inputPath}' does not exist.${app.colors.nc}`)
-                console.info(
-                    `\n${app.colors.bg}Example valid command: \n» scss-to-css . output.min.css${app.colors.nc}`)
-                print.helpCmdAndDocURL() ; process.exit(1)
+                print.error('First argument can only be an existing file or directory.',
+                    `\n'${inputPath}' does not exist.`)
+                print.success(`Example valid command: \n» scss-to-css . output.min.css`)
+                print.helpCmdAndDocURL()
+                process.exit(1)
             } else inputPath = scssInputPath
         }
 
@@ -110,10 +109,10 @@
 
         if (app.config.dryRun) { // -n or --dry-run passed
             if (scssFiles.length) { // print files to be processed
-                console.info(`\n${app.colors.by}SCSS files to be compiled:${app.colors.nc}`)
+                print.info('SCSS files to be compiled:')
                 scssFiles.forEach(file => console.info(file))
             } else // no files found
-                console.info(`${app.colors.by}\nNo SCSS files will be compiled.${app.colors.nc}`)
+                print.info('\nNo SCSS files will be compiled.')
 
         } else { // actually compile SCSS files
 
@@ -164,7 +163,7 @@
 
             // Copy single result code to clipboard if --copy passed
             if (app.config.copy && compileData?.length == 1) {
-                console.log(`\n${app.colors.bw}${compileData[0].code}${app.colors.nc}`)
+                print.data(compileData[0].code)
                 print.ifNotQuiet('\nCopying to clipboard...')
                 clipboardy.writeSync(compileData[0].code)
 
