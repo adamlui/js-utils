@@ -1,12 +1,4 @@
 module.exports = {
-    helpCmdAndDocURL() {
-        console.info(`\n${
-            app.msgs.info_moreHelp}, ${app.msgs.info_type} ${app.name.split('/')[1]} --help' ${
-                app.msgs.info_or} ${app.msgs.info_visit}\n${
-                app.colors.bw}${app.urls.docs}${app.colors.nc}`
-        )
-    },
-
     help(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
         app.prefix = `${app.colors.tlBG}${app.colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${app.colors.nc} `
         const helpSections = {
@@ -82,6 +74,14 @@ module.exports = {
                     : ' '.repeat(indent) + line // print subsequent lines indented
             )))
         }
+    },
+
+    helpCmdAndDocURL() {
+        console.info(`\n${
+            app.msgs.info_moreHelp}, ${app.msgs.info_type} ${app.name.split('/')[1]} --help' ${
+                app.msgs.info_or} ${app.msgs.info_visit}\n${
+                app.colors.bw}${app.urls.docs}${app.colors.nc}`
+        )
     },
 
     ifNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) },
