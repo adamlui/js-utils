@@ -4,6 +4,7 @@
 // Latest minified release: https://cdn.jsdelivr.net/npm/@adamlui/geolocate/dist/geolocate.min.js
 
 Object.assign(globalThis.app ??= {}, {
+    name: 'geolocate',
     aliases: { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] },
     urls: { docs: 'https://github.com/adamlui/js-utils/tree/main/geolocate/docs' }
 })
@@ -12,14 +13,15 @@ async function geolocate(ips, options = {}) {
 
     const docURL = `${app.urls.docs}/#locateips-options`,
           exampleCall = `geolocate('8.8.8.8', { verbose: false })`,
-          defaultOptions = { verbose: true /* enable logging */ },
-          logPrefix = 'geolocate() » '
+          defaultOptions = { verbose: true /* enable logging */ }
+
+    log.prefix = 'geolocate()'
 
     // Init/validate IP(s)
     ips = [].concat(ips) // normalize to array
     ips[0] ||= await getOwnIP() // fill own IP if none passed
     for (const ip of ips) {
-        if (options.verbose) console.info(`${logPrefix}Validating ${ip}...`)
+        if (options.verbose) log.info(`Validating ${ip}...`)
         let ipIsValid
         try { // to use Node.js generate-ip for validation
             ipIsValid = require('generate-ip').ipv4.validate
@@ -28,7 +30,7 @@ async function geolocate(ips, options = {}) {
             ipIsValid = window.ipv4.validate
         }
         if (ipIsValid && !ipIsValid(ip, { verbose: false }))
-            return console.error(`${logPrefix}ERROR:`, `${ip} is not a valid IPv4 address.`)
+            return log.error(`${ip} is not a valid IPv4 address.`)
     }
 
     // Validate/init options
@@ -38,16 +40,16 @@ async function geolocate(ips, options = {}) {
     try { // to fetch/get/return geolocation data
         const geoData = []
         for (const ip of ips) {
-            if (options.verbose) console.info(`${logPrefix}Fetching geolocation data for ${ip}...`)
+            if (options.verbose) log.info(`Fetching geolocation data for ${ip}...`)
             const resp = await fetchData(`http://ip-api.com/json/${ip}`),
                 { status, org, as, query, ...filteredData } = await resp.json() // eslint-disable-line no-unused-vars
             geoData.push({ ip, ...filteredData })
         }
         if (options.verbose && typeof window != 'undefined')
-            console.info(`${logPrefix}Success!`, 'Check returned array.')
+            log.info('Success!', 'Check returned array.')
         return geoData
     } catch (err) {
-            console.error(`${logPrefix}ERROR:`, err.message) }
+            log.error(err.message) }
 }
 
 function fetchData(url) {
@@ -68,7 +70,6 @@ function fetchData(url) {
 }
 
 async function getOwnIP() {
-    const logPrefix = 'getOwnIP() » '
     return ( // fetch in browser + Node.js 16+
         fetch('https://ifconfig.me/ip').then(resp => resp.text()).catch(() =>
             fetch('http://ip-api.com/json/').then(resp => resp.json()).then(data => data.query))
@@ -77,8 +78,8 @@ async function getOwnIP() {
                         const { exec } = require('child_process'),
                               { promisify } = require('util'), execAsync = promisify(exec),
                               { stdout, stderr } = await execAsync('curl -s ifconfig.me')
-                        return stderr ? console.error(`${logPrefix}ERROR:`, stderr) : stdout.trim()
-                    } catch (err) { console.error(`${logPrefix}ERROR:`, err.message) }
+                        return stderr ? log.error(stderr) : stdout.trim()
+                    } catch (err) { log.error(err.message) }
                 })
     )
 }
@@ -86,44 +87,52 @@ async function getOwnIP() {
 function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Init option strings/types
-    const strDefaultOptions = JSON.stringify(defaultOptions, undefined, 2)
-        .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
-        .replace(/"/g, '\'') // replace double quotes w/ single quotes
-        .replace(/\n\s*/g, ' ') // condense to single line
-    const strValidOptions = Object.keys(defaultOptions).join(', '),
-          booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean')
-
-    // Init log vars
-    const logPrefix = `${ validateOptions.caller?.name || 'validateOptions' }() » `
-    let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) +1
-    optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
+    const booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
+          integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]))
 
     // Validate options
     if (typeof options != 'object') { // validate as obj
-        console.error(`${logPrefix}ERROR:`,
-            `${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/values.`)
-        console.info(`${logPrefix}Example valid call:`, exampleCall)
-        printValidOptions() ; printDocURL() ; return false
+        let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) +1
+        optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
+        log.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
+        log.info(`Example valid call: ${exampleCall}`)
+        log.validOptions(defaultOptions) ; log.helpURL(docURL) ; return false
     }
     for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
-            console.error(`${logPrefix}ERROR:`, `\`${key}\` is an invalid option.`)
-            printValidOptions() ; printDocURL() ; return false
+            log.error(`\`${key}\` is an invalid option.`)
+            log.validOptions(defaultOptions) ; log.helpURL(docURL) ; return false
         } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
-            console.error(`${logPrefix}ERROR:`, `[${key}] option can only be \`true\` or \`false\`.`)
-            printDocURL() ; return false
+            log.error(`[${key}] option can only be \`true\` or \`false\`.`)
+            log.helpURL(docURL) ; return false
+        } else if (integerOptions.includes(key)) {
+            options[key] = parseInt(options[key], 10)
+            if (isNaN(options[key]) || options[key] < 1) {
+                log.error(`[${key}] option can only be an integer > 0.`)
+                log.helpURL(docURL) ; return false
+            }
         }
     }
 
-    function printDocURL() {
-        console.info(`${logPrefix}For more help, please visit ${docURL}`) }
-
-    function printValidOptions() {
-        console.info(`${logPrefix}Valid options: [ ${strValidOptions} ]`)
-        console.info(`${logPrefix}If omitted, default settings are: ${strDefaultOptions}`)
-    }
-
     return true
+}
+
+const log = {
+    prefix: app.name,
+
+    error(...args) { console.error(`${this.prefix} » ERROR:`, ...args) },
+    helpURL(url = app.urls?.docs) { this.info(`For more help, please visit ${url}`) },
+    info(...args) { console.info(`${this.prefix} »`, ...args) },
+
+    validOptions(options) {
+        const strValidOptions = Object.keys(options).join(', ')
+        const strDefaultOptions = JSON.stringify(options, undefined, 2)
+            .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
+            .replace(/"/g, '\'') // replace double quotes w/ single quotes
+            .replace(/\n\s*/g, ' ') // condense to single line
+        this.info(`Valid options: [ ${strValidOptions} ]`)
+        this.info(`If omitted, default settings are: ${strDefaultOptions}`)
+    }
 }
 
 try { module.exports = { geolocate }} catch (err) {} // for Node.js

@@ -17,8 +17,7 @@ app.aliases = {
 function findSCSS(searchDir, options = {}) {
 
     const docURL = `${app.urls.docs}/#findscsssearchdir-options`,
-          exampleCall = `findSCSS('assets/scss', { verbose: false, dotFolders: true })`,
-          logPrefix = 'findSCSS() » '
+          exampleCall = `findSCSS('assets/scss', { verbose: false, dotFolders: true })`
 
     const defaultOptions = {
         recursive: true,   // recursively search for nested files in searchDir passed
@@ -27,18 +26,18 @@ function findSCSS(searchDir, options = {}) {
         ignores: []        // files/dirs to exclude from search results
     }
 
+    log.prefix = 'findSCSS()'
+
     // Validate searchDir
     if (typeof searchDir != 'string') {
-            console.error(`${logPrefix}ERROR: 1st arg <searchDir> must be a string.`)
-            console.info(`${logPrefix}For more help, please visit ${docURL}`)
-            return
+            log.error('1st arg <searchDir> must be a string.')
+            return log.helpURL(docURL)
     } else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir)
         if (!fs.existsSync(searchPath)) {
-            console.error(`${logPrefix}ERROR: 1st arg <searchDir> must be an existing directory.`)
-            console.error(`${logPrefix}${searchPath} does not exist.`)
-            console.info(`${logPrefix}For more help, please visit ${docURL}`)
-            return
+            log.error('1st arg <searchDir> must be an existing directory.')
+            log.error(`${searchPath} does not exist.`)
+            return log.helpURL(docURL)
         }
     }
 
@@ -50,7 +49,7 @@ function findSCSS(searchDir, options = {}) {
     // Search for SCSS
     const dirFiles = fs.readdirSync(searchDir), scssFiles = []
     if (options.verbose && !options.isRecursing)
-        console.info(`${logPrefix}Searching for SCSS files...`)
+        log.info('Searching for SCSS files...')
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file)
         const shouldIgnore = options.ignores.some(pattern =>
@@ -58,7 +57,7 @@ function findSCSS(searchDir, options = {}) {
           : file == pattern
         )
         if (shouldIgnore) {
-            if (options.verbose) console.info(`${logPrefix}** ${file} ignored`)
+            if (options.verbose) log.info(`** ${file} ignored`)
         } else if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
             && options.recursive // only proceed if recursion enabled
             && (options.dotFolders || !file.startsWith('.')) // exclude dotfolders if prohibited
@@ -68,12 +67,12 @@ function findSCSS(searchDir, options = {}) {
             scssFiles.push(filePath) // store eligible SCSS file for returning
     })
 
-    // Log/return final result
+    // Log/return final results
     if (options.verbose && !options.isRecursing) {
-        console.info(`${logPrefix}Search complete! `
-            + `${ scssFiles.length || 'No' } file${ scssFiles.length == 1 ? '' : 's' } found.`)
+        log.info('Search complete!',
+            `${ scssFiles.length || 'No' } file${ scssFiles.length == 1 ? '' : 's' } found.`)
         if (findSCSS.caller?.name != 'compile' && typeof window != 'undefined')
-            console.info(`${logPrefix}Check returned array.`)
+            log.info('Check returned array.')
     }
     return options.isRecursing || scssFiles.length ? scssFiles : []
 }
@@ -81,8 +80,7 @@ function findSCSS(searchDir, options = {}) {
 function compile(input, options = {}) {
 
     const docURL = `${app.urls.docs}/#compileinput-options`,
-          exampleCall = `compile('assets/scss', { recursive: false, minify: false })`,
-          logPrefix = 'compile() » '
+          exampleCall = `compile('assets/scss', { recursive: false, minify: false })`
 
     const defaultOptions = {
         recursive: true,       // recursively search for nested files if dir path passed
@@ -95,11 +93,12 @@ function compile(input, options = {}) {
         comment: ''            // header comment to prepend to compiled CSS
     }
 
+    log.prefix = 'compile()'
+
     // Validate input
     if (typeof input != 'string') {
-        console.error(`${logPrefix}ERROR: 1st arg <input> must be a string.`)
-        console.info(`${logPrefix}For more help, please visit ${docURL}`)
-        return
+        log.error('1st arg <input> must be a string.')
+        return log.helpURL(docURL)
     }
 
     // Validate/init options
@@ -115,23 +114,23 @@ function compile(input, options = {}) {
     }
     if (fs.existsSync(input)) { // compile based on path arg
         if (input.endsWith('.scss') && fs.statSync(input).isFile()) { // file path passed
-            if (options.verbose) console.info(`${logPrefix}** Compiling ${input}...`)
+            if (options.verbose) log.info(`** Compiling ${input}...`)
             try { // to compile file passed
                 const compileResult = sass.compile(input, compileOptions)
                 if (options.comment) compileResult.css = prependComment(compileResult.css, options.comment)
                 if (options.verbose && typeof window != 'undefined')
-                    console.info(`${logPrefix}Compilation complete! Check returned object.`)
+                    log.info('Compilation complete! Check returned object.')
                 return {
                     code: compileResult.css, srcMap: compileResult.sourceMap,
                     srcPath: path.resolve(process.cwd(), input), error: undefined
                 }
             } catch (err) {
-                console.error(`\n${logPrefix}ERROR: ${err.message}\n`)
+                log.error(err.message)
                 return { code: undefined, srcMap: undefined, srcPath: undefined, error: err }
             }
         } else { // dir path passed
             const compileResult = findSCSS(input, options)?.map(scssPath => { // compile found SCSS files
-                if (options.verbose) console.info(`${logPrefix}** Compiling ${scssPath}...`)
+                if (options.verbose) log.info(`** Compiling ${scssPath}...`)
                 try { // to compile found file
                     const compileResult = sass.compile(scssPath, compileOptions),
                           relPath = options.relativeOutput ? undefined
@@ -142,97 +141,91 @@ function compile(input, options = {}) {
                         error: undefined
                     }
                 } catch (err) {
-                    console.error(`\n${logPrefix}ERROR: ${err.message}\n`)
+                    log.error(err.message)
                     return { code: undefined, srcMap: undefined, srcPath: undefined, error: err }
                 }
             }).filter(data => !data.error ) // filter out failed compilations
             if (options.verbose) {
                 if (compileResult.length && typeof window != 'undefined')
-                    console.info(`${logPrefix}Compilation complete! Check returned object.`)
+                    log.info('Compilation complete! Check returned object.')
                 else
-                    console.info(`${logPrefix}No SCSS files processed.`)
+                    log.info('No SCSS files processed.')
             }
             return compileResult
         }
     } else { // compile based on src code arg
         if (options.verbose)
-            console.info(`${logPrefix}** Compiling passed source code...`)
+            log.info('** Compiling passed source code...')
         try { // to compile passed src code
             const compileResult = sass.compileString(input, compileOptions)
             if (options.comment) compileResult.css = prependComment(compileResult.css, options.comment)
             return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: undefined, error: undefined }
         } catch (err) {
-            console.error(`\n${logPrefix}ERROR: ${err.message}\n`)
+            log.error(err.message)
             return { code: undefined, srcMap: undefined, srcPath: undefined, error: err }
         }
     }
+}
 
-    function prependComment(code, comment) {
-        const commentBlock = comment.split('\n').map(line => ` * ${line}`).join('\n'),
-              shebangIdx = code.indexOf('#!')
-        if (shebangIdx >= 0) {
-            const postShebangIdx = code.indexOf('\n', shebangIdx) +1 // idx of 1st newline after shebang
-            return code.slice(0, postShebangIdx) + `/**\n${commentBlock}\n */\n` + code.slice(postShebangIdx)
-        } else
-            return `/**\n${commentBlock}\n */\n${code}`
-    }
+function prependComment(code, comment) {
+    const commentBlock = comment.split('\n').map(line => ` * ${line}`).join('\n'),
+          shebangIdx = code.indexOf('#!')
+    if (shebangIdx >= 0) {
+        const postShebangIdx = code.indexOf('\n', shebangIdx) +1 // idx of 1st newline after shebang
+        return code.slice(0, postShebangIdx) + `/**\n${commentBlock}\n */\n` + code.slice(postShebangIdx)
+    } else
+        return `/**\n${commentBlock}\n */\n${code}`
 }
 
 function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Init option strings/types
-    const strDefaultOptions = JSON.stringify(defaultOptions, undefined, 2)
-        .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
-        .replace(/"/g, '\'') // replace double quotes w/ single quotes
-        .replace(/\n\s*/g, ' ') // condense to single line
-    const strValidOptions = Object.keys(defaultOptions).join(', '),
-          booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
-          integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key])),
-          arrayOptions = Object.keys(defaultOptions).filter(key => Array.isArray(defaultOptions[key]))
-
-    // Init log vars
-    const logPrefix = `${ validateOptions.caller?.name || 'validateOptions' }() » `
-    let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) +1
-    optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
+    const booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
+          integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]))
 
     // Validate options
     if (typeof options != 'object') { // validate as obj
-        console.error(`${logPrefix}ERROR: ${
-            optionsPos == '0th' ? '[O' : optionsPos + ' arg [o'}ptions] can only be an object of key/values.`)
-        console.info(`${logPrefix}Example valid call: ${exampleCall}`)
-        printValidOptions() ; printDocURL() ; return false
+        let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) +1
+        optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
+        log.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
+        log.info(`Example valid call: ${exampleCall}`)
+        log.validOptions(defaultOptions) ; log.helpURL(docURL) ; return false
     }
     for (const key in options) { // validate each key
-        if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key))
-            continue // to next key due to unrecognized option
-        else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
-            console.error(`${logPrefix}ERROR: [${key}] option can only be \`true\` or \`false\`.`)
-            printDocURL() ; return false
+        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+            log.error(`\`${key}\` is an invalid option.`)
+            log.validOptions(defaultOptions) ; log.helpURL(docURL) ; return false
+        } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
+            log.error(`[${key}] option can only be \`true\` or \`false\`.`)
+            log.helpURL(docURL) ; return false
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10)
             if (isNaN(options[key]) || options[key] < 1) {
-                console.error(`${logPrefix}ERROR: [${key}] option can only be an integer > 0.`)
-                printDocURL() ; return false
-            }
-        } else if (arrayOptions.includes(key)) {
-            if (typeof options[key] == 'string' && !options[key].includes(','))
-                options[key] = [options[key]] // convert comma-less string to array
-            else if (!Array.isArray(options[key])) {
-                console.error(`${logPrefix}ERROR: [${key}] option can only be an array.`)
-                printDocURL() ; return false
+                log.error(`[${key}] option can only be an integer > 0.`)
+                log.helpURL(docURL) ; return false
             }
         }
     }
 
-    function printDocURL() {
-        console.info(`${logPrefix}For more help, please visit ${docURL}`) }
-
-    function printValidOptions() {
-        console.info(`${logPrefix}Valid options: [ ${strValidOptions} ]`)
-        console.info(`${logPrefix}If omitted, default settings are: ${strDefaultOptions}`)
-    }
-
     return true
+}
+
+const log = {
+    prefix: app.name,
+
+    error(...args) { console.error(`${this.prefix} » ERROR:`, ...args) },
+    helpURL(url = app.urls?.docs) { this.info(`For more help, please visit ${url}`) },
+    info(...args) { console.info(`${this.prefix} »`, ...args) },
+
+    validOptions(options) {
+        const strValidOptions = Object.keys(options).join(', ')
+        const strDefaultOptions = JSON.stringify(options, undefined, 2)
+            .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
+            .replace(/"/g, '\'') // replace double quotes w/ single quotes
+            .replace(/\n\s*/g, ' ') // condense to single line
+        this.info(`Valid options: [ ${strValidOptions} ]`)
+        this.info(`If omitted, default settings are: ${strDefaultOptions}`)
+    }
 }
 
 module.exports = { compile, findSCSS }

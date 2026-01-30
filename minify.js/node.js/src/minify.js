@@ -17,8 +17,7 @@ app.aliases = {
 function findJS(searchDir, options = {}) {
 
     const docURL = `${app.urls.docs}/#findjssearchdir-options`,
-          exampleCall = `findJS('assets/js', { verbose: false, dotFoldes: true })`,
-          logPrefix = 'findJS() » '
+          exampleCall = `findJS('assets/js', { verbose: false, dotFoldes: true })`
 
     const defaultOptions = {
         recursive: true,   // recursively search for nested files in searchDir passed
@@ -28,18 +27,18 @@ function findJS(searchDir, options = {}) {
         ignores: []        // files/dirs to exclude from search results
     }
 
+    log.prefix = 'findJS()'
+
     // Validate searchDir
     if (typeof searchDir != 'string') {
-            console.error(`${logPrefix}ERROR: 1st arg <searchDir> must be a string.`)
-            console.info(`${logPrefix}For more help, please visit ${docURL}`)
-            return
+            log.error('1st arg <searchDir> must be a string.')
+            return log.helpURL(docURL)
     } else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir)
         if (!fs.existsSync(searchPath)) {
-            console.error(`${logPrefix}ERROR: 1st arg <searchDir> must be an existing directory.`)
-            console.error(`${logPrefix}${searchPath} does not exist.`)
-            console.info(`${logPrefix}For more help, please visit ${docURL}`)
-            return
+            log.error('1st arg <searchDir> must be an existing directory.')
+            log.error(`${searchPath} does not exist.`)
+            return log.helpURL(docURL)
         }
     }
 
@@ -50,8 +49,8 @@ function findJS(searchDir, options = {}) {
 
     // Search for unminified JS
     const dirFiles = fs.readdirSync(searchDir), jsFiles = []
-    if (options.verbose && !options.isRecursing) {
-        console.info(`${logPrefix}Searching for unminified JS files...`) }
+    if (options.verbose && !options.isRecursing)
+        log.info('Searching for unminified JS files...')
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file)
         const shouldIgnore = options.ignores.some(pattern =>
@@ -59,7 +58,7 @@ function findJS(searchDir, options = {}) {
           : file == pattern
         )
         if (shouldIgnore) {
-            if (options.verbose) console.info(`${logPrefix}** ${file} ignored`)
+            if (options.verbose) log.info(`** ${file} ignored`)
         } else if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
             && options.recursive // only proceed if recursion enabled
             && (options.dotFolders || !file.startsWith('.')) // exclude dotfolders if prohibited
@@ -72,10 +71,10 @@ function findJS(searchDir, options = {}) {
 
     // Log/return final result
     if (options.verbose && !options.isRecursing) {
-        console.info(`${logPrefix}Search complete! `
+        log.info('Search complete!',
             + `${ jsFiles.length || 'No' } file${ jsFiles.length == 1 ? '' : 's' } found.`)
         if (findJS.caller?.name != 'minify' && typeof window != 'undefined')
-            console.info(`${logPrefix}Check returned array.`)
+            log.info('Check returned array.')
     }
     return options.isRecursing || jsFiles.length ? jsFiles : []
 }
@@ -83,8 +82,7 @@ function findJS(searchDir, options = {}) {
 function minify(input, options = {}) {
 
     const docURL = `${app.urls.docs}/#minifyinput-options`,
-          exampleCall = `minify('assets/js', { recursive: false, mangle: false })`,
-          logPrefix = 'minify() » '
+          exampleCall = `minify('assets/js', { recursive: false, mangle: false })`
 
     const defaultOptions = {
         recursive: true,       // recursively search for nested files if dir path passed
@@ -98,11 +96,12 @@ function minify(input, options = {}) {
         comment: ''            // header comment to prepend to minified code
     }
 
+    log.prefix = 'minify()'
+
     // Validate input
     if (typeof input != 'string') {
-        console.error(`${logPrefix}ERROR: 1st arg <input> must be a string.`)
-        console.info(`${logPrefix}For more help, please visit ${docURL}`)
-        return
+        log.error('1st arg <input> must be a string.')
+        return log.helpURL(docURL)
     }
 
     // Validate/init options
@@ -118,53 +117,53 @@ function minify(input, options = {}) {
 
         if (stats.isFile()) {
             if (!/\.[cm]?jsx?$/i.test(input)) {
-                const err = new Error(`${logPrefix}ERROR: ${input} is not a JavaScript file (.js, .mjs, .cjs, .jsx)`)
-                console.error(err.message)
+                const err = new Error(`${log.prefix}ERROR: ${input} is not a JavaScript file (.js, .mjs, .cjs, .jsx)`)
+                log.error(err.message)
                 fs.closeSync(fd)
                 return { code: '', srcPath: path.resolve(process.cwd(), input), error: err }
             }
-            if (options.verbose) console.info(`${logPrefix}** Minifying ${input}...`)
+            if (options.verbose) log.info(`** Minifying ${input}...`)
             const buffer = Buffer.alloc(stats.size)
             fs.readSync(fd, buffer, 0, stats.size, 0)
             fs.closeSync(fd)
             const minifyResult = uglifyJS.minify(buffer.toString('utf8'), minifyOptions)
             if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
-            if (minifyResult.error) console.error(`${logPrefix}ERROR: ${minifyResult.error.message}`)
+            if (minifyResult.error) log.error(minifyResult.error.message)
             else if (options.verbose && typeof window != 'undefined')
-                console.info(`${logPrefix}Minification complete! Check returned object.`)
+                log.info('Minification complete! Check returned object.')
             return { code: minifyResult.code, srcPath: path.resolve(process.cwd(), input), error: minifyResult.error }
 
         } else { // dir path passed
             fs.closeSync(fd)
             const minifyResult = findJS(input, options)?.map(jsPath => { // minify found JS files
-                if (options.verbose) console.info(`${logPrefix}** Minifying ${jsPath}...`)
+                if (options.verbose) log.info(`** Minifying ${jsPath}...`)
                 const srcCode = fs.readFileSync(jsPath, 'utf8'),
                       minifyResult = uglifyJS.minify(srcCode, minifyOptions),
                       relPath = options.relativeOutput ? undefined
                               : path.relative(path.resolve(process.cwd(), input), jsPath)
                 if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
-                if (minifyResult.error) console.error(`${logPrefix}ERROR: ${ minifyResult.error.message }`)
+                if (minifyResult.error) log.error(minifyResult.error.message)
                 return { code: minifyResult.code, srcPath: jsPath, relPath, error: minifyResult.error }
             }).filter(data => !data.error) // filter out failed minifications
             if (options.verbose) {
                 if (minifyResult.length && typeof window != 'undefined')
-                    console.info(`${logPrefix}Minification complete! Check returned object.`)
+                    log.info('Minification complete! Check returned object.')
                 else
-                    console.info(`${logPrefix}No unminified JavaScript files processed.`)
+                    log.info('No unminified JavaScript files processed.')
             }
 
             // Rewrite import paths if enabled and multiple files processed
             if (options.rewriteImports && minifyResult && minifyResult.length > 1) {
-                if (options.verbose) console.info(`${logPrefix}** Rewriting import paths...`)
+                if (options.verbose) log.info('** Rewriting import paths...')
                 const minifiedFiles = minifyResult.map(file => path.basename(file.srcPath, '.js'))
                 minifyResult.forEach(minifiedFile => minifiedFiles.forEach(filename => {
                     const reMatch = new RegExp(`(\\./?)?\\b${filename}\\.js(['"])`, 'g'),
                           before = minifiedFile.code
                     minifiedFile.code = minifiedFile.code.replace(reMatch, `$1${filename}.min.js$2`)
                     if (before != minifiedFile.code && options.verbose)
-                        console.info(`${logPrefix}Updated ${filename}.js in ${path.basename(minifiedFile.srcPath)}`)
+                        log.info(`Updated ${filename}.js in ${path.basename(minifiedFile.srcPath)}`)
                 }))
-                if (options.verbose) console.info(`${logPrefix}Import paths rewritten.`)
+                if (options.verbose) log.info('Import paths rewritten.')
             }
 
             return minifyResult
@@ -173,89 +172,83 @@ function minify(input, options = {}) {
     } catch (err) {
         if (err.code == 'ENOENT') { // minify based on src code arg
             if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
-                console.info(`${logPrefix}** Minifying passed source code...`)
+                log.info('** Minifying passed source code...')
             const minifyResult = uglifyJS.minify(input, minifyOptions)
             if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
-            if (minifyResult.error) console.error(`${logPrefix}ERROR: ${minifyResult.error.message}`)
+            if (minifyResult.error) log.error(minifyResult.error.message)
             else if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
-                console.info(`${logPrefix}Minification complete! Check returned object.`)
+                log.info('Minification complete! Check returned object.')
             return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error }
         }
         throw err
     }
+}
 
-    function prependComment(code, comment) {
-        const commentBlock = comment.split('\n').map(line => ` * ${line}`).join('\n'),
-              shebangIdx = code.indexOf('#!')
-        if (shebangIdx >= 0) {
-            const postShebangIdx = code.indexOf('\n', shebangIdx) +1, // idx of 1st newline after shebang
-                  afterShebang = code.slice(postShebangIdx)
-            if (/^\s*\/\*\*/.test(afterShebang)) // block comment already follows shebang
-                 return code.slice(0, postShebangIdx) // prepend inside it instead
-                    + afterShebang.replace(/^\s*\/\*\*/, `/**\n${commentBlock}`)
-            else return code.slice(0, postShebangIdx)
-                    + `/**\n${commentBlock}\n */\n`
-                    + afterShebang
-        } else
-            return `/**\n${commentBlock}\n */\n${code}`
-    }
+function prependComment(code, comment) {
+    const commentBlock = comment.split('\n').map(line => ` * ${line}`).join('\n'),
+          shebangIdx = code.indexOf('#!')
+    if (shebangIdx >= 0) {
+        const postShebangIdx = code.indexOf('\n', shebangIdx) +1, // idx of 1st newline after shebang
+              afterShebang = code.slice(postShebangIdx)
+        if (/^\s*\/\*\*/.test(afterShebang)) // block comment already follows shebang
+            return code.slice(0, postShebangIdx) // prepend inside it instead
+                + afterShebang.replace(/^\s*\/\*\*/, `/**\n${commentBlock}`)
+        else return code.slice(0, postShebangIdx)
+                + `/**\n${commentBlock}\n */\n`
+                + afterShebang
+    } else
+        return `/**\n${commentBlock}\n */\n${code}`
 }
 
 function validateOptions(options, defaultOptions, docURL, exampleCall) {
 
     // Init option strings/types
-    const strDefaultOptions = JSON.stringify(defaultOptions, undefined, 2)
-        .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
-        .replace(/"/g, '\'') // replace double quotes w/ single quotes
-        .replace(/\n\s*/g, ' ') // condense to single line
-    const strValidOptions = Object.keys(defaultOptions).join(', '),
-          booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
-          integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key])),
-          arrayOptions = Object.keys(defaultOptions).filter(key => Array.isArray(defaultOptions[key]))
-
-    // Init log vars
-    const logPrefix = `${ validateOptions.caller?.name || 'validateOptions' }() » `
-    let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) +1
-    optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
+    const booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
+          integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]))
 
     // Validate options
     if (typeof options != 'object') { // validate as obj
-        console.error(`${logPrefix}ERROR: ${
-            optionsPos == '0th' ? '[O' : optionsPos + ' arg [o'}ptions] can only be an object of key/values.`)
-        console.info(`${logPrefix}Example valid call: ${exampleCall}`)
-        printValidOptions() ; printDocURL() ; return false
+        let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) +1
+        optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
+        log.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
+        log.info(`Example valid call: ${exampleCall}`)
+        log.validOptions(defaultOptions) ; log.helpURL(docURL) ; return false
     }
     for (const key in options) { // validate each key
-        if (key != 'isRecursing' && !Object.prototype.hasOwnProperty.call(defaultOptions, key))
-            continue // to next key due to unrecognized option
-        else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
-            console.error(`${logPrefix}ERROR: [${key}] option can only be \`true\` or \`false\`.`)
-            printDocURL() ; return false
+        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+            log.error(`\`${key}\` is an invalid option.`)
+            log.validOptions(defaultOptions) ; log.helpURL(docURL) ; return false
+        } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
+            log.error(`[${key}] option can only be \`true\` or \`false\`.`)
+            log.helpURL(docURL) ; return false
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10)
             if (isNaN(options[key]) || options[key] < 1) {
-                console.error(`${logPrefix}ERROR: [${key}] option can only be an integer > 0.`)
-                printDocURL() ; return false
-            }
-        } else if (arrayOptions.includes(key)) {
-            if (typeof options[key] == 'string' && !options[key].includes(','))
-                options[key] = [options[key]] // convert comma-less string to array
-            else if (!Array.isArray(options[key])) {
-                console.error(`${logPrefix}ERROR: [${key}] option can only be an array.`)
-                printDocURL() ; return false
+                log.error(`[${key}] option can only be an integer > 0.`)
+                log.helpURL(docURL) ; return false
             }
         }
     }
 
-    function printDocURL() {
-        console.info(`${logPrefix}For more help, please visit ${docURL}`) }
-
-    function printValidOptions() {
-        console.info(`${logPrefix}Valid options: [ ${strValidOptions} ]`)
-        console.info(`${logPrefix}If omitted, default settings are: ${strDefaultOptions}`)
-    }
-
     return true
+}
+
+const log = {
+    prefix: app.name,
+
+    error(...args) { console.error(`${this.prefix} » ERROR:`, ...args) },
+    helpURL(url = app.urls?.docs) { this.info(`For more help, please visit ${url}`) },
+    info(...args) { console.info(`${this.prefix} »`, ...args) },
+
+    validOptions(options) {
+        const strValidOptions = Object.keys(options).join(', ')
+        const strDefaultOptions = JSON.stringify(options, undefined, 2)
+            .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
+            .replace(/"/g, '\'') // replace double quotes w/ single quotes
+            .replace(/\n\s*/g, ' ') // condense to single line
+        this.info(`Valid options: [ ${strValidOptions} ]`)
+        this.info(`If omitted, default settings are: ${strDefaultOptions}`)
+    }
 }
 
 module.exports = { minify, findJS }

@@ -4,6 +4,7 @@
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js
 
 Object.assign(globalThis.app ??= {}, {
+    name: 'generate-ip',
     aliases: {
         ipv4: ['ipV4', 'IPv4', 'IPV4', 'Ipv4', 'IpV4', 'ip', 'IP', 'Ip'],
         ipv6: ['ipV6', 'IPv6', 'IPV6', 'Ipv6', 'IpV6'],
@@ -17,20 +18,21 @@ const ipv4 = {
     generate(options = {}) {
 
         const docURL = `${app.urls.docs}/#ipv4generateoptions`,
-              exampleCall = 'ipv4.generate({ verbose: false, qty: 3 })',
-              logPrefix = 'ipv4.generate() » '
+              exampleCall = 'ipv4.generate({ verbose: false, qty: 3 })'
 
         const defaultOptions = {
             verbose: true, // enable logging
             qty: 1         // number of IP addresses to generate
         }
 
+        log.prefix = 'ipv4.generate()'
+
         // Validate/init options
         if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Generate IPv4 address(es)
-        if (options.verbose) console.info(`${logPrefix}Generating IPv4 address${ options.qty > 1 ? 'es' : '' }...`)
+        if (options.verbose) log.info(`Generating IPv4 address${ options.qty > 1 ? 'es' : '' }...`)
         const ips = []
         if (options.qty > 1) // generate array of [qty] IP strings
             for (let i = 0 ; i < options.qty ; i++)
@@ -44,8 +46,8 @@ const ipv4 = {
 
         // Log/return final result
         if (options.verbose) {
-            console.info(`${logPrefix}IPv4 address${ options.qty > 1 ? 'es' : '' } generated!`)
-            console.info(`${logPrefix}${ options.qty == 1 ? ipResult : ipResult.join(', ')}`)
+            log.info(`IPv4 address${ options.qty > 1 ? 'es' : '' } generated!`)
+            log.info(options.qty == 1 ? ipResult : ipResult.join(', '))
         }
         return ipResult
     },
@@ -54,14 +56,14 @@ const ipv4 = {
 
         const docURL = `${app.urls.docs}/#ipv4validateaddress-options`,
               exampleCall = `ipv4.validate('0.0.255.255', { verbose: false })`,
-              defaultOptions = { verbose: true /* enable logging */ },
-              logPrefix = 'ipv4.validate() » '
+              defaultOptions = { verbose: true /* enable logging */ }
+
+        log.prefix = 'ipv4.validate()'
 
         // Validate address as arg
         if (typeof address != 'string') {
-            console.error(`${logPrefix}ERROR: 1st arg <address> must be a string.`)
-            console.info(`${logPrefix}For more help, please visit ${docURL}`)
-            return
+            log.error('1st arg <address> must be a string.')
+            return log.helpURL(docURL)
         }
 
         // Validate/init options
@@ -69,7 +71,7 @@ const ipv4 = {
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Validate address as IPv4 address
-        if (options.verbose) console.info(`${logPrefix}Validating ${address}...`)
+        if (options.verbose) log.info(`Validating ${address}...`)
         const segments = address.split('.')
         const isValidIPv4 = !( // false if any dq condition matches
                   segments.length != 4 // not 4-segments long
@@ -81,7 +83,7 @@ const ipv4 = {
         )
 
         // Log/return final result
-        if (options.verbose) console.info(`${logPrefix}IP is ${isValidIPv4 ? '' : 'in'}valid IPv4 address!`)
+        if (options.verbose) log.info(`IP is ${ isValidIPv4 ? '' : 'in' }valid IPv4 address!`)
         return isValidIPv4
     }
 }
@@ -91,8 +93,7 @@ const ipv6 = {
     generate(options = {}) {
 
         const docURL = `${app.urls.docs}/#ipv6generateoptions`,
-              exampleCall = 'ipv6.generate({ leadingZeros: true, qty: 5 })',
-              logPrefix = 'ipv6.generate() » '
+              exampleCall = 'ipv6.generate({ leadingZeros: true, qty: 5 })'
 
         const defaultOptions = {
             verbose: true,       // enable logging
@@ -101,13 +102,15 @@ const ipv6 = {
             doubleColon: true    // replace series of zeros w/ '::'
         }
 
+        log.prefix = 'ipv6.generate()'
+
         // Validate/init options
         if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Generate IPv6 address(es)
         if (options.verbose)
-            console.info(`${logPrefix}Generating IPv6 address${ options.qty > 1 ? 'es' : '' }...`)
+            log.info(`Generating IPv6 address${ options.qty > 1 ? 'es' : '' }...`)
         const ips = []
         if (options.qty > 1) // generate array of [qty] IP strings
             for (let i = 0 ; i < options.qty ; i++)
@@ -121,8 +124,8 @@ const ipv6 = {
 
         // Log/return final result
         if (options.verbose) {
-            console.info(`${logPrefix}IPv6 address${ options.qty > 1 ? 'es' : '' } generated!`)
-            console.info(`${logPrefix}${ options.qty == 1 ? ipResult : ipResult.join(', ')}`)
+            log.info(`IPv6 address${ options.qty > 1 ? 'es' : '' } generated!`)
+            log.info(options.qty == 1 ? ipResult : ipResult.join(', '))
         }
         return ipResult
     },
@@ -130,8 +133,7 @@ const ipv6 = {
     format(ipv6address, options = {}) {
 
         const docURL = `${app.urls.docs}/#ipv6formatipv6address-options`,
-              exampleCall = `ipv6.format('0d::ffff:192.1.56.10/96', { leadingZeros: true, doubleColon: false })`,
-              logPrefix = 'ipv6.format() » '
+              exampleCall = `ipv6.format('0d::ffff:192.1.56.10/96', { leadingZeros: true, doubleColon: false })`
 
         const defaultOptions = {
             verbose: true,       // enable logging
@@ -139,16 +141,16 @@ const ipv6 = {
             doubleColon: true    // replace series of zeros w/ '::'
         }
 
+        log.prefix = 'ipv6.format()'
+
         // Validate address
         if (typeof ipv6address != 'string') {
-            console.error(`${logPrefix}ERROR: 1st arg <ipv6address> must be a string.`)
-            console.info(`${logPrefix}For more help, please visit ${docURL}`)
-            return
+            log.error('1st arg <ipv6address> must be a string.')
+            return log.helpURL(docURL)
         }
         if (!this.validate(ipv6address, { verbose: false})) {
-            console.error(`${logPrefix}ERROR:  ${ipv6address} is not a valid IPv6 address.`)
-            console.info(`${logPrefix}For more help, please visit ${docURL}`)
-            return
+            log.error(`${ipv6address} is not a valid IPv6 address.`)
+            return log.helpURL(docURL)
         }
 
         // Validate/init options
@@ -160,10 +162,10 @@ const ipv6 = {
 
         // Handle double colons
         if (options.doubleColon) { // replace zero series w/ '::'
-            if (options.verbose) console.info(`${logPrefix}Replacing zero series w/ '::'...`)
+            if (options.verbose) log.info(`Replacing zero series w/ '::'...`)
             formattedAddress = formattedAddress.replace(/:(?:0+:)+/, '::')
         } else { // expand '::' into zero series
-            if (options.verbose) console.info(`${logPrefix}Expanding '::' into zero series...`)
+            if (options.verbose) log.info(`Expanding '::' into zero series...`)
             const totalPieces = formattedAddress.split(':').filter(Boolean).length,
                   zeroSegment = options.leadingZeros ? '0000' : '0',
                   zeroSeries = Array(8 - totalPieces).fill(zeroSegment).join(':')
@@ -172,21 +174,21 @@ const ipv6 = {
 
         // Handle leading zeros
         if (options.leadingZeros) { // add leading zeros
-            if (options.verbose) console.info(`${logPrefix}Adding leading zeros...`)
+            if (options.verbose) log.info('Adding leading zeros...')
             const pieces = formattedAddress.split(':')
             for (let i = 0 ; i < pieces.length ; i++)
                 while (pieces[i].length < 4) pieces[i] = '0' + pieces[i]
             formattedAddress = pieces.join(':')
         } else { // strip leading zeros
-            if (options.verbose) console.info(`${logPrefix}Stripping leading zeros...`)
+            if (options.verbose) log.info('Stripping leading zeros...')
             formattedAddress = ipv6address.replace(/(^|(?<=:))0+(?!:)/g, '$1') // eslint-disable-line
         }
 
         // Log/return final result
         if (options.verbose) {
-            if (formattedAddress != ipv6address) console.info(`${logPrefix}IP formatted successfully!`)
-            else console.info(`${logPrefix}IP already formatted to specs.`)
-            console.info(`${logPrefix}${formattedAddress}`)
+            if (formattedAddress != ipv6address) log.info('IP formatted successfully!')
+            else log.info('IP already formatted to specs.')
+            log.info(formattedAddress)
         }
         return formattedAddress
     },
@@ -195,14 +197,14 @@ const ipv6 = {
 
         const docURL = `${app.urls.docs}/#ipv6validateaddress-options`,
               exampleCall = `ipv6.validate('0:0:0:0:0:ffff:192.1.56.10/96', { verbose: false })`,
-              defaultOptions = { verbose: true }, // enable logging
-              logPrefix = 'ipv6.validate() » '
+              defaultOptions = { verbose: true } // enable logging
+
+        log.prefix = 'ipv6.validate()'
 
         // Validate address as arg
         if (typeof address != 'string') {
-            console.error(`${logPrefix}ERROR: 1st arg <address> must be a string.`)
-            console.info(`${logPrefix}For more help, please visit ${docURL}`)
-            return
+            log.error('1st arg <address> must be a string.')
+            return log.helpURL(docURL)
         }
 
         // Validate/init options
@@ -210,7 +212,7 @@ const ipv6 = {
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Validate address as IPv6 address
-        if (options.verbose) console.info(`${logPrefix}Validating ${address}...`)
+        if (options.verbose) log.info(`Validating ${address}...`)
         const pieces = address.split(/::?/),
               lastPiece = pieces[pieces.length -1]
         const isValidIPv6 = !( // false if any dq condition matches
@@ -227,7 +229,7 @@ const ipv6 = {
         )
 
         // Log/return final result
-        if (options.verbose) console.info(`${logPrefix}IP is ${isValidIPv6 ? '' : 'in'}valid IPv6 address!`)
+        if (options.verbose) log.info(`IP is ${ isValidIPv6 ? '' : 'in' }valid IPv6 address!`)
         return isValidIPv6
     }
 }
@@ -236,20 +238,21 @@ const mac = {
 
     generate(options = {}) {
         const docURL = `${app.urls.docs}/#macgenerateoptions`,
-              exampleCall = 'mac.generate({ verbose: false, qty: 2 })',
-              logPrefix = 'mac.generate() » '
+              exampleCall = 'mac.generate({ verbose: false, qty: 2 })'
 
         const defaultOptions = {
             verbose: true, // enable logging
             qty: 1         // number of MAC addresses to generate
         }
 
+        log.prefix = 'mac.generate()'
+
         // Validate/init options
         if (!validateOptions(options, defaultOptions, docURL, exampleCall)) return
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Generate MAC address
-        if (options.verbose) console.info(`${logPrefix}Generating MAC address${ options.qty > 1 ? 'es' : '' }...`)
+        if (options.verbose) log.info(`Generating MAC address${ options.qty > 1 ? 'es' : '' }...`)
         const macAddresses = []
         if (options.qty > 1) // generate array of [qty] MAC address strings
             for (let i = 0 ; i < options.qty ; i++)
@@ -266,8 +269,8 @@ const mac = {
 
         // Log/return final result
         if (options.verbose) {
-            console.info(`${logPrefix}MAC address${ options.qty > 1 ? 'es' : '' } generated!`)
-            console.info(`${logPrefix}${ options.qty == 1 ? macResult : macResult.join(', ')}`)
+            log.info(`MAC address${ options.qty > 1 ? 'es' : '' } generated!`)
+            log.info(options.qty == 1 ? macResult : macResult.join(', '))
         }
         return macResult
     },
@@ -275,14 +278,14 @@ const mac = {
     validate(address, options = {}) {
         const docURL = `${app.urls.docs}/#macvalidateaddress-options`,
               exampleCall = `mac.validate('00:1A:2B:3C:4D:5E', { verbose: false })`,
-              defaultOptions = { verbose: true /* enable logging */ },
-              logPrefix = 'mac.validate() » '
+              defaultOptions = { verbose: true /* enable logging */ }
+
+        log.prefix = 'mac.validate()'
 
         // Validate address as arg
         if (typeof address != 'string') {
-            console.error(`${logPrefix}ERROR: 1st arg <address> must be a string.`)
-            console.info(`${logPrefix}For more help, please visit ${docURL}`)
-            return
+            log.error('1st arg <address> must be a string.')
+            return log.helpURL(docURL)
         }
 
         // Validate/init options
@@ -290,13 +293,46 @@ const mac = {
         options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
         // Validate address as MAC address
-        if (options.verbose) console.info(`${logPrefix}Validating ${address}...`)
+        if (options.verbose) log.info(`Validating ${address}...`)
         const isValidMAC = /^(?:[\da-f]{2}[:-]){5}[\da-f]{2}$/i.test(address)
 
         // Log/return final result
-        if (options.verbose) console.info(`${logPrefix}Address is ${isValidMAC ? '' : 'in'}valid MAC address!`)
+        if (options.verbose) log.info(`Address is ${isValidMAC ? '' : 'in'}valid MAC address!`)
         return isValidMAC
     }
+}
+
+function validateOptions(options, defaultOptions, docURL, exampleCall) {
+
+    // Init option strings/types
+    const booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
+          integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]))
+
+    // Validate options
+    if (typeof options != 'object') { // validate as obj
+        let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) +1
+        optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
+        log.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
+        log.info(`Example valid call: ${exampleCall}`)
+        log.validOptions(defaultOptions) ; log.helpURL(docURL) ; return false
+    }
+    for (const key in options) { // validate each key
+        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
+            log.error(`\`${key}\` is an invalid option.`)
+            log.validOptions(defaultOptions) ; log.helpURL(docURL) ; return false
+        } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
+            log.error(`[${key}] option can only be \`true\` or \`false\`.`)
+            log.helpURL(docURL) ; return false
+        } else if (integerOptions.includes(key)) {
+            options[key] = parseInt(options[key], 10)
+            if (isNaN(options[key]) || options[key] < 1) {
+                log.error(`[${key}] option can only be an integer > 0.`)
+                log.helpURL(docURL) ; return false
+            }
+        }
+    }
+
+    return true
 }
 
 const random = {
@@ -316,54 +352,22 @@ const random = {
     }
 }
 
-function validateOptions(options, defaultOptions, docURL, exampleCall) {
+const log = {
+    prefix: app.name,
 
-    // Init option strings/types
-    const strDefaultOptions = JSON.stringify(defaultOptions, undefined, 2)
-        .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
-        .replace(/"/g, '\'') // replace double quotes w/ single quotes
-        .replace(/\n\s*/g, ' ') // condense to single line
-    const strValidOptions = Object.keys(defaultOptions).join(', '),
-          booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
-          integerOptions = Object.keys(defaultOptions).filter(key => Number.isInteger(defaultOptions[key]))
+    error(...args) { console.error(`${this.prefix} » ERROR:`, ...args) },
+    helpURL(url = app.urls?.docs) { this.info(`For more help, please visit ${url}`) },
+    info(...args) { console.info(`${this.prefix} »`, ...args) },
 
-    // Init log vars
-    const logPrefix = `${ validateOptions.caller?.name || 'validateOptions' }() » `
-    let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) +1
-    optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
-
-    // Validate options
-    if (typeof options != 'object') { // validate as obj
-        console.error(`${logPrefix}ERROR: ${
-            optionsPos == '0th' ? '[O' : optionsPos + ' arg [o'}ptions] can only be an object of key/values.`)
-        console.info(`${logPrefix}Example valid call: ${exampleCall}`)
-        printValidOptions() ; printDocURL() ; return false
+    validOptions(options) {
+        const strValidOptions = Object.keys(options).join(', ')
+        const strDefaultOptions = JSON.stringify(options, undefined, 2)
+            .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
+            .replace(/"/g, '\'') // replace double quotes w/ single quotes
+            .replace(/\n\s*/g, ' ') // condense to single line
+        this.info(`Valid options: [ ${strValidOptions} ]`)
+        this.info(`If omitted, default settings are: ${strDefaultOptions}`)
     }
-    for (const key in options) { // validate each key
-        if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
-            console.error(`${logPrefix}ERROR: \`${key}\` is an invalid option.`)
-            printValidOptions() ; printDocURL() ; return false
-        } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
-            console.error(`${logPrefix}ERROR: [${key}] option can only be \`true\` or \`false\`.`)
-            printDocURL() ; return false
-        } else if (integerOptions.includes(key)) {
-            options[key] = parseInt(options[key], 10)
-            if (isNaN(options[key]) || options[key] < 1) {
-                console.error(`${logPrefix}ERROR: [${key}] option can only be an integer > 0.`)
-                printDocURL() ; return false
-            }
-        }
-    }
-
-    function printDocURL() {
-        console.info(`${logPrefix}For more help, please visit ${docURL}`) }
-
-    function printValidOptions() {
-        console.info(`${logPrefix}Valid options: [ ${strValidOptions} ]`)
-        console.info(`${logPrefix}If omitted, default settings are: ${strDefaultOptions}`)
-    }
-
-    return true
 }
 
 app.exports = { ipv4, ipv6, mac }
