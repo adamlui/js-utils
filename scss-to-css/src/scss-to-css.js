@@ -171,8 +171,14 @@ function prependComment(code, comment) {
     const commentBlock = comment.split('\n').map(line => ` * ${line}`).join('\n'),
           shebangIdx = code.indexOf('#!')
     if (shebangIdx >= 0) {
-        const postShebangIdx = code.indexOf('\n', shebangIdx) +1 // idx of 1st newline after shebang
-        return code.slice(0, postShebangIdx) + `/**\n${commentBlock}\n */\n` + code.slice(postShebangIdx)
+        const postShebangIdx = code.indexOf('\n', shebangIdx) +1, // idx of 1st newline after shebang
+              afterShebang = code.slice(postShebangIdx)
+        if (/^\s*\/\*\*/.test(afterShebang)) // block comment already follows shebang
+            return code.slice(0, postShebangIdx) // prepend inside it instead
+                + afterShebang.replace(/^\s*\/\*\*/, `/**\n${commentBlock}`)
+        else return code.slice(0, postShebangIdx)
+                + `/**\n${commentBlock}\n */\n`
+                + afterShebang
     } else
         return `/**\n${commentBlock}\n */\n${code}`
 }
