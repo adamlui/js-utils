@@ -61,10 +61,10 @@
     "url": "https://github.com/adamlui/js-utils/issues"
   },
   "dependencies": {
-    "generate-ip": "^2.4.8",
     "node-clipboardy": "^1.0.3"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^2.1.4"
+    "@adamlui/minify.js": "^2.1.4",
+    "generate-ip": "^2.4.9"
   }
 }
