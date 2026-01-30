@@ -70,8 +70,8 @@ function fetchData(url) {
 
 async function getOwnIP() {
     return ( // fetch in browser + Node.js 16+
-        fetch('https://ifconfig.me/ip').then(resp => resp.text()).catch(() =>
-            fetch('http://ip-api.com/json/').then(resp => resp.json()).then(data => data.query))
+        fetchData('https://ifconfig.me/ip').then(resp => resp.text()).catch(() =>
+            fetchData('http://ip-api.com/json/').then(resp => resp.json()).then(data => data.query))
                 .catch(async () => {
                     try { // to exec curl in Node.js <16
                         const { exec } = require('child_process'),
