@@ -59,7 +59,7 @@ git commit -n -m "Bumped $pkg_name versions to $new_ver"
 
 # Build minified JS to dist/
 echo -e "${BY}\nBuilding minified JS...\n${NC}"
-bash utils/build.sh
+node utils/build
 
 # Update jsDelivr URLs for GitHub assets w/ commit hash
 echo -e "${BY}\nUpdating jsDelivr URLs for GitHub assets w/ commit hash...${NC}"

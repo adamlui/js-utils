@@ -47,7 +47,7 @@
     "lint:all": "eslint .",
     "lint:fix": "eslint . --fix --cache",
     "lint:fix-all": "eslint . --fix",
-    "build": "bash utils/build.sh",
+    "build": "node utils/build",
     "bump:patch": "bash utils/bump.sh patch",
     "bump:minor": "bash utils/bump.sh minor",
     "bump:major": "bash utils/bump.sh major"
