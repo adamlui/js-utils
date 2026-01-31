@@ -151,11 +151,40 @@ Options booléennes:
 Options des paramètres:
  --ignores="dir/,file1.js,file2.js"   Fichiers/répertoires à exclure de la minification.
  --comment="commentaire"              Ajoutez le commentaire d’en-tête au code minifié. Séparez par ligne en utilisant '\n'.
+ --config="path/to/file"              Charger le fichier de configuration personnalisé.
 
-Commandes d'informations:
+Commandes:
+     --init                           Créer un fichier de configuration (à la racine du projet).
  -h, --help                           Afficher l'écran d'aide.
  -v, --version                        Afficher le numéro de version.
 ```
+
+#
+
+### Fichier de configuration
+
+**minify.js** peut être personnalisé à l'aide d'un fichier `minify.config.mjs` ou `minify.config.js` placé à la racine de votre projet.
+
+Exemple de valeurs par défaut:
+
+```js
+export default {
+    dryRun: false,            // Ne pas minifier les fichiers, afficher uniquement ceux qui seront traités
+    includeDotFolders: false, // Inclure les dossiers cachés dans la recherche de fichiers
+    includeDotFiles: false,   // Inclure les fichiers cachés dans la recherche de fichiers
+    noRecursion: false,       // Désactiver la recherche récursive de fichiers
+    noMangle: false,          // Désactiver l'obfuscation des noms
+    noFilenameChange: false,  // Désactiver le changement d'extension de fichier en .min.js
+    rewriteImports: false,    // Mettre à jour les chemins d'importation de .js vers .min.js
+    copy: false,              // Copier le code minifié dans le presse-papiers au lieu de l'écrire dans un fichier si un seul fichier est traité
+    relativeOutput: false,    // Générer les fichiers de sortie par rapport à chaque fichier source au lieu de la racine d'entrée
+    quietMode: false,         // Supprimer tous les messages de journalisation sauf les erreurs
+    ignores: '',              // Fichiers/dossiers à exclure de la minification
+    comment: ''               // Commentaire d'en-tête à ajouter au code minifié
+}
+```
+
+💡 Exécutez `minify-js init` pour générer un modèle de fichier `minify.config.mjs` à la racine de votre projet.
 
 <br>
 
@@ -188,7 +217,7 @@ const minifyJS = require('@adamlui/minify.js')
 Si le **code source** est passé, il est directement minifié, puis un objet contenant `srcPath` + `code` + `error` est renvoyé:
 
 ```js
-const codeSrc = 'function add(first, second) { return first + second; }',
+const codeSrc = 'function add(first, second) { return first + second }',
       résultatMinifier = minifyJS.minify(codeSrc)
 
 console.log(résultatMinifier.error) // génère une erreur d'exécution, ou `undefined` si aucune erreur

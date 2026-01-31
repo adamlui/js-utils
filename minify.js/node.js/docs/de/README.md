@@ -151,11 +151,40 @@ Boolesche Optionen:
 Parameteroptionen:
  --ignores="dir/,file1.js,file2.js"   Dateien/Verzeichnisse, die von der Minimierung ausgeschlossen werden sollen.
  --comment="kommentar"                Kopfzeilenkommentar dem minimierten Code voranstellen. Mit '\n' zeilenweise trennen.
+ --config="path/to/file"              Benutzerdefinierte Konfigurationsdatei laden.
 
-Info-Befehle:
+Befehle:
+     --init                           Konfigurationsdatei erstellen (im Projektstammverzeichnis).
  -h, --help                           Hilfebildschirm anzeigen.
  -v, --version                        Versionsnummer anzeigen.
 ```
+
+#
+
+### Konfigurationsdatei
+
+**minify.js** kann mithilfe einer Datei namens `minify.config.mjs` oder `minify.config.js` im Projektstammverzeichnis angepasst werden.
+
+Beispiel für Standardeinstellungen:
+
+```js
+export default {
+    dryRun: false,            // Die Datei(en) nicht tatsächlich minimieren, sondern nur anzeigen, ob sie verarbeitet werden
+    includeDotFolders: false, // Punktordner in die Dateisuche einbeziehen
+    includeDotFiles: false,   // Punktdateien in die Dateisuche einbeziehen
+    noRecursion: false,       // Rekursive Dateisuche deaktivieren
+    noMangle: false,          // Namensverschleierung deaktivieren
+    noFilenameChange: false,  // Ändern der Dateierweiterung in .min.js deaktivieren
+    rewriteImports: false,    // Importpfade von .js in .min.js aktualisieren
+    copy: false,              // Minimierten Code in die Zwischenablage kopieren, anstatt in eine Datei zu schreiben (bei Verarbeitung einer einzelnen Datei)
+    relativeOutput: false,    // Ausgabedateien relativ zur jeweiligen Quelldatei ausgeben, anstatt zum Eingabestammverzeichnis
+    quietMode: false,         // Alle Protokollmeldungen außer Fehlern unterdrücken
+    ignores: '',              // Zu minimierende Dateien/Verzeichnisse ausschließen
+    comment: ''               // Kopfzeilenkommentar, der dem minimierten Code vorangestellt wird
+}
+```
+
+💡 Führen Sie `minify-js init` aus, um eine Vorlage für die `minify.config.mjs` in Ihrem Projektstammverzeichnis zu erstellen.
 
 <br>
 
@@ -188,7 +217,7 @@ const minifyJS = require('@adamlui/minify.js')
 Wenn **Quellcode** übergeben wird, wird dieser direkt minimiert, dann wird ein Objekt zurückgegeben, das `srcPath` + `code` + `error` enthält:
 
 ```js
-const srcCode = 'function add(first, second) { return first + second; }',
+const srcCode = 'function add(first, second) { return first + second }',
       minErgebnis = minifyJS.minify(srcCode)
 
 console.log(minErgebnis.error) // gibt einen Laufzeitfehler oder `undefined` aus, wenn kein Fehler vorliegt

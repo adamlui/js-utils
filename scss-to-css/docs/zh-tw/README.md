@@ -155,11 +155,38 @@ $ scss-to-css input_folder output_folder
 參數選項：
  --ignores="dir/,file1.scss,file2.scss"   要從編譯中排除的檔案/目錄。
  --comment="comment"                      將標頭註釋新增到已編譯的 CSS 中。使用 '\n' 按行分隔。
+ --config="path/to/file"                  Load custom config file.
 
 訊息命令：
+ -i, --init                               Create config file (in project root).
  -h, --help                               顯示幫助畫面。
  -v, --version                            顯示版本號。
 ```
+
+#
+
+### Configuration file
+
+**scss-to-css** can be customized using a `scss-to-css.config.mjs` or `scss-to-css.config.js` placed in your project root.
+
+Example defaults:
+
+```js
+export default {
+    dryRun: false, // 並非實際壓縮文件，僅顯示是否會處理它們
+    includeDotFolders: false, // 在檔案搜尋中包含點資料夾
+    noSourceMaps: false, // 阻止產生來源映射
+    noMinify: false, // 停用輸出 CSS 的壓縮
+    noRecursion: false, // 停用遞迴文件搜索
+    relativeOutput: false, // 輸出文件相對於每個來源文件，而不是相對於輸入根目錄
+    copy: false, // 如果只處理一個文件，則將編譯的 CSS 複製到剪貼簿而不是寫入文件
+    quietMo​​de: false, // 禁止記錄錯誤以外的所有日誌
+    ignores: '', // 要從壓縮中排除的檔案/目錄
+    comment: '' // 要加入壓縮後程式碼前面的頭部註釋
+}
+```
+
+💡 Run `scss-to-css init` to generate a template `scss-to-css.config.mjs` in your project root.
 
 <br>
 
@@ -172,7 +199,7 @@ $ scss-to-css input_folder output_folder
 #### ECMAScript*:
 
 ```js
-import scssToCSS from '@adamlui/scss-to-css';
+import scssToCSS from '@adamlui/scss-to-css'
 ```
 
 #### CJS:

@@ -155,11 +155,40 @@ Parameter options:
  --ignores="dir/,file1.js,file2.js"   Files/directories to exclude from minification.
  --comment="comment"                  Prepend header comment to minified code.
                                       Separate by line using '\n'.
+ --config="path/to/file"              Load custom config file.
 
-Info commands:
+Commands:
+     --init                           Create config file (in project root).
  -h, --help                           Display help screen.
  -v, --version                        Show version number.
 ```
+
+#
+
+### Configuration file
+
+**minify.js** can be customized using a `minify.config.mjs` or `minify.config.js` placed in your project root.
+
+Example defaults:
+
+```js
+export default {
+    dryRun: false,            // don't actually minify the file(s), just show if they will be processed
+    includeDotFolders: false, // include dotfolders in file search
+    includeDotFiles: false,   // include dotfiles in file search
+    noRecursion: false,       // disable recursive file searching
+    noMangle: false,          // disable mangling names
+    noFilenameChange: false,  // disable changing file extension to .min.js
+    rewriteImports: false,    // update import paths from .js to .min.js
+    copy: false,              // copy minified code to clipboard instead of write to file if single file processed
+    relativeOutput: false,    // output files relative to each src file instead of to input root
+    quietMode: false,         // suppress all logging except errors
+    ignores: '',              // files/dirs to exclude from minification
+    comment: ''               // header comment to prepend to minified code
+}
+```
+
+💡 Run `minify-js init` to generate a template `minify.config.mjs` in your project root.
 
 <br>
 
@@ -192,7 +221,7 @@ const minifyJS = require('@adamlui/minify.js')
 If **source code** is passed, it is directly minified, then an object containing `srcPath` + `code` + `error` is returned:
 
 ```js
-const srcCode = 'function add(first, second) { return first + second; }',
+const srcCode = 'function add(first, second) { return first + second }',
       minifyResult = minifyJS.minify(srcCode)
 
 console.log(minifyResult.error) // outputs runtime error, or `undefined` if no error

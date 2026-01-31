@@ -78,7 +78,7 @@ $ npm install generate-pw
 #### ECMAScript*:
 
 ```js
-import pw from 'generate-pw';
+import pw from 'generate-pw'
 ```
 
 #### CommonJS:
@@ -281,6 +281,7 @@ Opciones de parámetros:
  --qty=n                     Generar n contraseña(s).
  --charset=cars              Incluya únicamente cars en la(s) contraseña(s).
  --exclude=cars              Excluir cars de la(s) contraseña(s).
+ --config="path/to/file"     Cargar archivo de configuración personalizado.
 
 Opciones booleanas:
  -n, --include-numbers       Permitir números en contraseña(s).
@@ -291,10 +292,35 @@ Opciones booleanas:
  -s, --strict                Requiere al menos un carácter de cada carácter permitido establecido en la(s) contraseña(s).
  -q, --quiet                 Suprime todos los registros excepto los errores.
 
-Comandos de información:
+Comandos:
+ -i, --init                  Crear archivo de configuración (en la raíz del proyecto).
  -h, --help                  Mostrar pantalla de ayuda.
  -v, --version               Mostrar número de versión.
 ```
+
+#
+
+**generate-pw** se puede personalizar mediante un archivo `generate-pw.config.mjs` o `generate-pw.config.js` ubicado en la raíz de su proyecto.
+
+Ejemplo de configuración predeterminada:
+
+```js
+export default {
+    length: 8,                  // longitud de las contraseñas a generar
+    qty: 1,                     // cantidad de contraseñas a generar
+    charset: '',                // incluir solo los caracteres especificados en las contraseñas
+    exclude: '',                // excluir los caracteres especificados de las contraseñas
+    includeNums: false,         // permitir números en las contraseñas
+    includeSymbols: false,      // permitir símbolos en las contraseñas
+    excludeLowerChars: false,   // no permitir letras minúsculas en las contraseñas
+    excludeUpperChars: false,   // no permitir letras mayúsculas en las contraseñas
+    excludeSimilarChars: false, // excluir caracteres similares en las contraseñas
+    strictMode: false,          // requerir al menos un carácter de cada conjunto de caracteres permitido en las contraseñas
+    quietMode: false,           // suprimir todos los registros excepto los errores
+}
+```
+
+💡 Ejecute `generate-pw init` para generar una plantilla de `generate-pw.config.mjs` en la raíz de su proyecto.
 
 <br>
 

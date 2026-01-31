@@ -155,11 +155,38 @@ Opções booleanas:
 Opções de parâmetros:
  --ignores="dir/,file1.scss,file2.scss"   Ficheiros/diretórios a eliminar da compilação.
  --comment="comment"                      Anexe o comentário do cabeçalho ao CSS compilado. Separe por linha usando '\n'.
+ --config="path/to/file"                  Carregar ficheiro de configuração personalizado.
 
-Comandos de informação:
+Comandos:
+ -i, --init                               Criar ficheiro de configuração (na raiz do projeto).
  -h, --help                               Exibir tela de ajuda.
  -v, --version                            Mostrar número da versão.
 ```
+
+#
+
+### Ficheiro de configuração
+
+O **scss-to-css** pode ser personalizado utilizando um ficheiro `scss-to-css.config.mjs` ou `scss-to-css.config.js` localizado na raiz do seu projeto.
+
+Exemplos de valores padrão:
+
+```js
+export default {
+    dryRun: false, // não minificar os ficheiros, apenas mostrar se serão processados
+    includeDotFolders: false, // incluir pastas com ponto na pesquisa de ficheiros
+    noSourceMaps: false, // impedir a geração de mapas de origem
+    noMinify: false, // desativar a minificação do CSS de saída
+    noRecursion: false, // desativar a pesquisa recursiva de ficheiros
+    relativeOutput: false, // ficheiros de saída relativos a cada ficheiro de origem em vez da raiz de entrada
+    copy: false, // copiar o CSS compilado para a área de transferência em vez de escrever para um ficheiro se apenas um ficheiro for processado
+    quietMode: false, // suprimir todos os registos, exceto erros
+    ignores: '', // ficheiros/directorias a apagar da minificação
+    comment: '' // comentário de cabeçalho a adicionar ao código minificado
+}
+```
+
+💡 Execute `scss-to-css init` para gerar um modelo `scss-to-css.config.mjs` na raiz do seu projeto.
 
 <br>
 
@@ -172,7 +199,7 @@ Você também pode importar **scss-to-css** para seu aplicativo para usar seus m
 #### ECMAScript*:
 
 ```js
-import scssToCSS from '@adamlui/scss-to-css';
+import scssToCSS from '@adamlui/scss-to-css'
 ```
 
 ###### _*É necessário Node.js versão 14 ou superior_

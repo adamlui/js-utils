@@ -1,23 +1,28 @@
 module.exports = {
 
     colors: {
-        nc: '\x1b[0m',    // no color
-        br: '\x1b[1;91m', // bright red
-        by: '\x1b[1;33m', // bright yellow
-        bg: '\x1b[1;92m', // bright green
-        bw: '\x1b[1;97m', // bright white
-        blk: '\x1b[30m',  // black
-        tlBG: '\x1b[106m' // teal bg
+        nc: '\x1b[0m',        // no color
+        br: '\x1b[1;91m',     // bright red
+        by: '\x1b[1;33m',     // bright yellow
+        bo: '\x1b[38;5;214m', // bright orange
+        bg: '\x1b[1;92m',     // bright green
+        bw: '\x1b[1;97m',     // bright white
+        blk: '\x1b[30m',      // black
+        tlBG: '\x1b[106m'     // teal bg
     },
 
+    config() { this.info(`\nExample valid config file: ${app.urls.config}`) },
+    configAndExit(...args) { this.error(...args) ; this.config() ; process.exit(1) },
     data(msg) { console.log(`\n${this.colors.bw}${msg}${this.colors.nc}`) },
     error(...args) { console.error(`\n${this.colors.br}ERROR:`, ...args, this.colors.nc) },
     errorAndExit(...args) { this.error(...args) ; this.helpCmdAndDocURL() ; process.exit(1) },
     ifNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) },
     info(msg) { console.info(`\n${this.colors.by}${msg}${this.colors.nc}`) },
+    tip(msg) { console.info(`${this.colors.by}TIP: ${msg}${this.colors.nc}`) },
     success(msg) { console.log(`\n${this.colors.bg}${msg}${this.colors.nc}`) },
+    warn(...args) { console.warn(`\n${this.colors.bo}WARNING:`, ...args, this.colors.nc) },
 
-    help(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'paramOptions', 'infoCmds']) {
+    help(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'params', 'cmds']) {
         app.prefix = `${this.colors.tlBG}${this.colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${this.colors.nc} `
         const helpSections = {
             header: [
@@ -50,14 +55,16 @@ module.exports = {
                                                         + ' if single source file is processed.',
                 ' -q, --quiet                             Suppress all logging except errors.'
             ],
-            paramOptions: [
+            params: [
                 `\n${this.colors.bw}o Parameter options:${this.colors.nc}`,
                 '--ignores="dir/,file1.scss,file2.scss"   Files/directories to exclude from compilation.',
                 '--comment="comment"                      Prepend header comment to compiled CSS.'
-                                                        + ' Separate by line using \'\\n\'.'
+                                                        + ' Separate by line using \'\\n\'.',
+                ' --config="path/to/file"                 Load custom config file.'
             ],
-            infoCmds: [
-                `\n${this.colors.bw}o Info commands:${this.colors.nc}`,
+            cmds: [
+                `\n${this.colors.bw}o Commands:${this.colors.nc}`,
+                ' -i, --init                              Create config file (in project root).',
                 ' -h, --help                              Display help screen.',
                 ' -v, --version                           Show version number.'
             ]
@@ -68,9 +75,8 @@ module.exports = {
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
-                  lines = [],
                   words = msg.match(/\S+|\s+/g),
-                  prefix = '| '
+                  lines = [], prefix = '| '
 
             // Split msg into lines of appropriate lengths
             let currentLine = ''

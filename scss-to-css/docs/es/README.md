@@ -155,11 +155,38 @@ Opciones booleanas:
 Opciones de parámetros:
  --ignores="dir/,file1.scss,file2.scss"   Archivos/directorios que se excluirán de la compilación.
  --comment="comment"                      Anteponga el comentario del encabezado al CSS compilado. Separe por línea usando '\n'.
+ --config="path/to/file"                  Cargar archivo de configuración personalizado.
 
-Comandos de información:
+Comandos:
+ -i, --init                               Crear archivo de configuración (en la raíz del proyecto).
  -h, --help                               Muestra pantalla de ayuda.
  -v, --version                            Mostrar número de versión.
 ```
+
+#
+
+### Archivo de configuración
+
+**scss-to-css** se puede personalizar mediante un archivo `scss-to-css.config.mjs` o `scss-to-css.config.js` ubicado en la raíz de su proyecto.
+
+Ejemplo de configuración predeterminada:
+
+```js
+export default {
+    dryRun: false,            // No minifica los archivos, solo muestra si se procesarán.
+    includeDotFolders: false, // Incluye las carpetas ocultas en la búsqueda de archivos.
+    noSourceMaps: false,      // Impide la generación de mapas de origen.
+    noMinify: false,          // Deshabilita la minificación del CSS de salida.
+    noRecursion: false,       // Deshabilita la búsqueda recursiva de archivos.
+    relativeOutput: false,    // Genera los archivos de salida en relación con cada archivo de origen en lugar de la raíz de entrada.
+    copy: false,              // Copia el CSS compilado al portapapeles en lugar de escribirlo en un archivo si se procesa un solo archivo.
+    quietMode: false,         // Suprime todos los registros excepto los errores.
+    ignores: '',              // Archivos/directorios que se excluirán de la minificación.
+    comment: ''               // Comentario de encabezado que se antepondrá al código minificado.
+}
+```
+
+💡 Ejecute `scss-to-css init` para generar una plantilla de `scss-to-css.config.mjs` en la raíz de su proyecto.
 
 <br>
 
@@ -172,7 +199,7 @@ También puede importar **scss-to-css** a su aplicación para usar sus métodos 
 #### ECMAScript*:
 
 ```js
-import scssToCSS from '@adamlui/scss-to-css';
+import scssToCSS from '@adamlui/scss-to-css'
 ```
 
 #### CJS:

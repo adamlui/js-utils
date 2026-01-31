@@ -155,11 +155,38 @@ Boolesche Optionen:
 Parameteroptionen:
  --ignores="dir/,file1.scss,file2.scss"   Dateien/Verzeichnisse, die von der Kompilierung ausgeschlossen werden sollen.
  --comment="comment"                      Header-Kommentar dem kompilierten CSS voranstellen. Mit '\n' zeilenweise trennen.
+ --config="path/to/file"                  Benutzerdefinierte Konfigurationsdatei laden.
 
-Info-Befehle:
+Befehle:
+ -i, --init                               Konfigurationsdatei erstellen (im Projektstammverzeichnis).
  -h, --help                               Hilfebildschirm anzeigen.
  -v, --version                            Versionsnummer anzeigen.
 ```
+
+#
+
+### Konfigurationsdatei
+
+**scss-to-css** kann mithilfe einer Datei namens `scss-to-css.config.mjs` oder `scss-to-css.config.js` im Projektstammverzeichnis angepasst werden.
+
+Beispiel für Standardeinstellungen:
+
+```js
+export default {
+    dryRun: false,            // Die Dateien nicht tatsächlich minimieren, sondern nur anzeigen, ob sie verarbeitet werden
+    includeDotFolders: false, // Punktordner in die Dateisuche einbeziehen
+    noSourceMaps: false,      // Die Generierung von Source Maps verhindern
+    noMinify: false,          // Die Minimierung des ausgegebenen CSS deaktivieren
+    noRecursion: false,       // Die rekursive Dateisuche deaktivieren
+    relativeOutput: false,    // Ausgabedateien relativ zu jeder Quelldatei anstatt zum Eingabestammverzeichnis ausgeben
+    copy: false,              // Kompiliertes CSS in die Zwischenablage kopieren, anstatt in eine Datei zu schreiben, wenn nur eine Datei verarbeitet wird
+    quietMode: false,         // Alle Protokollmeldungen außer Fehlern unterdrücken
+    ignores: '',              // Dateien/Verzeichnisse, die von der Minimierung ausgeschlossen werden sollen
+    comment: ''               // Kopfzeilenkommentar, der dem minimierten Code vorangestellt wird
+}
+```
+
+💡 Führen Sie `scss-to-css init` aus, um eine Vorlage für die `scss-to-css.config.mjs` in Ihrem Projektstammverzeichnis zu erstellen.
 
 <br>
 
@@ -172,7 +199,7 @@ Sie können auch **scss-to-css** in Ihre App importieren, um deren API-Methoden 
 #### ECMAScript*:
 
 ```js
-import scssToCSS from '@adamlui/scss-to-css';
+import scssToCSS from '@adamlui/scss-to-css'
 ```
 
 #### CJS:

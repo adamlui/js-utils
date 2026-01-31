@@ -155,11 +155,38 @@ Booleaanse opties:
 Parameteropties:
  --ignores="dir/,file1.scss,file2.scss"   Bestanden/mappen die moeten worden uitgesloten van de compilatie.
  --comment="comment"                      Voeg headercommentaar toe aan gecompileerde CSS. Scheid per regel met '\n'.
+ --config="path/to/file"                  Laad een aangepast configuratiebestand.
 
-Info-opdrachten:
+Commando's:
+ -i, --init                               Maak een configuratiebestand aan (in de projectmap).
  -h, --help                               Helpscherm weergeven.
  -v, --version                            Versienummer weergeven.
 ```
+
+#
+
+### Configuratiebestand
+
+**scss-to-css** kan worden aangepast met behulp van een `scss-to-css.config.mjs` of `scss-to-css.config.js` bestand in de hoofdmap van je project.
+
+Voorbeeld van standaardinstellingen:
+
+```js
+export default {
+    dryRun: false,            // verwerk de bestanden niet daadwerkelijk, maar laat alleen zien welke bestanden verwerkt zouden worden
+    includeDotFolders: false, // neem verborgen mappen (mappen die met een punt beginnen) mee in de bestandszoekopdracht
+    noSourceMaps: false,      // voorkom het genereren van source maps
+    noMinify: false,          // schakel het minimaliseren van de uitvoer-CSS uit
+    noRecursion: false,       // schakel recursief zoeken naar bestanden uit
+    relativeOutput: false,    // sla de uitvoerbestanden op ten opzichte van elk bronbestand in plaats van ten opzichte van de invoermap
+    copy: false,              // kopieer de gecompileerde CSS naar het klembord in plaats van naar een bestand te schrijven als er slechts één bestand wordt verwerkt
+    quietMode: false,         // onderdruk alle logberichten behalve fouten
+    ignores: '',              // bestanden/mappen die moeten worden uitgesloten van minimalisatie
+    comment: ''               // headercommentaar dat aan de geminimaliseerde code moet worden toegevoegd
+}
+```
+
+💡 Voer `scss-to-css init` uit om een ​​sjabloon voor `scss-to-css.config.mjs` te genereren in de hoofdmap van je project.
 
 <br>
 
@@ -172,7 +199,7 @@ U kunt ook **scss-naar-css** in uw app importeren om de API-methoden ervan te ge
 #### ECMAScript*:
 
 ```js
-import scssToCSS from '@adamlui/scss-to-css';
+import scssToCSS from '@adamlui/scss-to-css'
 ```
 
 #### CJS:

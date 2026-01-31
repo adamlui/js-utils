@@ -78,7 +78,7 @@ $ npm install generate-pw
 #### ECMAScript*:
 
 ```js
-import pw from 'generate-pw';
+import pw from 'generate-pw'
 ```
 
 #### CommonJS:
@@ -281,6 +281,7 @@ Parameteroptionen:
  --qty=n                     Generieren Sie n Passwörter.
  --charset=zeich             Passwörter dürfen nur zeich enthalten.
  --exclude=zeich             Schließen Sie zeich aus Passwörtern aus.
+ --config="path/to/file"     Benutzerdefinierte Konfigurationsdatei laden.
 
 Boolesche Optionen:
  -n, --include-numbers       Zahlen in Passwörtern zulassen.
@@ -291,10 +292,37 @@ Boolesche Optionen:
  -s, --strict                Erfordern mindestens ein Zeichen aus jedem zulässigen Zeichensatz in Passwörtern.
  -q, --quiet                 Unterdrücken Sie alle Protokolle außer Fehlern.
 
-Info-Befehle:
+Befehle:
+ -i, --init                  Konfigurationsdatei erstellen (im Projektstammverzeichnis).
  -h, --help                  Hilfebildschirm anzeigen.
  -v, --version               Versionsnummer anzeigen.
 ```
+
+#
+
+### Konfigurationsdatei
+
+**generate-pw** kann mithilfe einer Datei namens `generate-pw.config.mjs` oder `generate-pw.config.js` im Projektstammverzeichnis angepasst werden.
+
+Beispiel für Standardeinstellungen:
+
+```js
+export default {
+    length: 8,                  // Länge der zu generierenden Passwörter
+    qty: 1,                     // Anzahl der zu generierenden Passwörter
+    charset: '',                // Nur die angegebenen Zeichen in den Passwörtern verwenden
+    exclude: '',                // Die angegebenen Zeichen von den Passwörtern ausschließen
+    includeNums: false,         // Zahlen in den Passwörtern zulassen
+    includeSymbols: false,      // Symbole in den Passwörtern zulassen
+    excludeLowerChars: false,   // Kleinbuchstaben in den Passwörtern ausschließen
+    excludeUpperChars: false,   // Großbuchstaben in den Passwörtern ausschließen
+    excludeSimilarChars: false, // Ähnliche Zeichen in den Passwörtern ausschließen
+    strictMode: false,          // Mindestens ein Zeichen aus jedem erlaubten Zeichensatz in den Passwörtern erforderlich
+    quietMode: false,           // Alle Protokollmeldungen außer Fehlern unterdrücken
+}
+```
+
+💡 Führen Sie `generate-pw init` aus, um eine Vorlage für die `generate-pw.config.mjs` in Ihrem Projektstammverzeichnis zu erstellen.
 
 <br>
 

@@ -155,11 +155,38 @@ Opzioni booleane:
 Opzioni dei parametri:
  --ignores="dir/,file1.scss,file2.scss"   File/cartelle da escludere dalla compilazione.
  --comment="comment"                      Anteponi il commento dell'intestazione al CSS compilato. Separare per riga utilizzando '\n'.
+ --config="path/to/file"                  Carica il file di configurazione personalizzato.
 
-Comandi informativi:
+Comandi:
+ -i, --init                               Crea un file di configurazione (nella directory principale del progetto).
  -h, --help                               Visualizza la schermata di aiuto.
  -v, --version                            Mostra il numero di versione.
 ```
+
+#
+
+### File di configurazione
+
+**scss-to-css** può essere personalizzato utilizzando un file `scss-to-css.config.mjs` o `scss-to-css.config.js` posizionato nella directory principale del progetto.
+
+Esempio di impostazioni predefinite:
+
+```js
+export default {
+    dryRun: false,            // non minimizzare effettivamente i file, mostra solo se verranno elaborati
+    includeDotFolders: false, // includi le cartelle nascoste nella ricerca dei file
+    noSourceMaps: false,      // impedisci la generazione delle source map
+    noMinify: false,          // disabilita la minimizzazione del CSS di output
+    noRecursion: false,       // disabilita la ricerca ricorsiva dei file
+    relativeOutput: false,    // salva i file di output in relazione a ciascun file sorgente anziché alla directory radice di input
+    copy: false,              // copia il CSS compilato negli appunti anziché scriverlo su file se viene elaborato un singolo file
+    quietMode: false,         // sopprimi tutti i log tranne gli errori
+    ignores: '',              // file/directory da escludere dalla minimizzazione
+    comment: ''               // commento di intestazione da aggiungere al codice minimizzato
+}
+```
+
+💡 Esegui `scss-to-css init` per generare un modello di file `scss-to-css.config.mjs` nella directory principale del progetto.
 
 <br>
 
@@ -172,7 +199,7 @@ Puoi anche importare **scss-to-css** nella tua app per utilizzare i suoi metodi 
 #### ECMAScript*:
 
 ```js
-import scssToCSS from '@adamlui/scss-to-css';
+import scssToCSS from '@adamlui/scss-to-css'
 ```
 
 #### CJS:

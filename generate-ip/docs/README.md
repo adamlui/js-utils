@@ -71,7 +71,7 @@ $ npm install generate-ip
 #### ECMAScript*:
 
 ```js
-import { ipv4, ipv6, mac } from 'generate-ip';
+import { ipv4, ipv6, mac } from 'generate-ip'
 ```
 
 #### CommonJS:
@@ -369,16 +369,37 @@ Sample output:
 ```
 Parameter options:
  --qty=n                     Generate n IP address(es).
+ --config="path/to/file"     Load custom config file.
 
 Boolean options:
  -6, --ipv6                  Generate IPv6 address.
  -m, --mac                   Generate MAC address.
  -q, --quiet                 Suppress all logging except errors.
 
-Info commands:
+Commands:
+ -i, --init                  Create config file (in project root).
  -h, --help                  Display help screen.
  -v, --version               Show version number.
 ```
+
+#
+
+### Configuration file
+
+**generate-ip** can be customized using `generate-ip.config.mjs` or `generate-ip.config.js` placed in your project root.
+
+Example defaults:
+
+```js
+export default {
+    qty: 5,          // # of IPs to generate
+    ipv6mode: false, // Generate IPv6 address(es)
+    macMode: false,  // Generate MAC address(es)
+    quietMode: true  // Suppress all logging except errors
+}
+```
+
+💡 Use the `--init` command to generate a template `generate-ip.config.mjs` in your project root.
 
 <br>
 

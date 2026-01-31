@@ -76,7 +76,7 @@ $ npm install generate-pw
 #### ECMAScript*:
 
 ```js
-import pw from 'generate-pw';
+import pw from 'generate-pw'
 ```
 
 #### CommonJS:
@@ -277,6 +277,7 @@ $ generate-pw
  --qty=n                     生成 n 个密码。
  --charset=chars             密码中仅包含 chars。
  --exclude=chars             从密码中排除 chars。
+ --config="path/to/file"     加载自定义配置文件。
 
 布尔选项：
  -n, --include-numbers       允许密码中包含数字。
@@ -287,10 +288,37 @@ $ generate-pw
  -s, --strict                要求密码中每个允许的字符集中至少有一个字符。
  -q, --quiet                 禁止除错误之外的所有日志记录。
 
-信息命令：
+命令：
+ -i, --init                  创建配置文件（位于项目根目录）。
  -h, --help                  显示帮助屏幕。
  -v, --version               显示版本号。
 ```
+
+#
+
+### 配置文件
+
+您可以通过在项目根目录放置 `generate-pw.config.mjs` 或 `generate-pw.config.js` 文件来自定义 **generate-pw** 的配置。
+
+默认配置示例：
+
+```js
+export default {
+    length: 8,                  // 生成密码的长度
+    qty: 1,                     // 生成密码的数量
+    charset: '',                // 密码中仅包含指定的字符
+    exclude: '',                // 密码中排除指定的字符
+    includeNums: false,         // 密码中允许包含数字
+    includeSymbols: false,      // 密码中允许包含符号
+    excludeLowerChars: false,   // 密码中不允许包含小写字母
+    excludeUpperChars: false,   // 密码中不允许包含大写字母
+    excludeSimilarChars: false, // 密码中排除相似字符
+    strictMode: false,          // 密码中必须包含每个允许字符集中的至少一个字符
+    quietMo​​de: false,           // 除了错误信息外，抑制所有日志输出
+}
+```
+
+💡 运行 `generate-pw init` 即可在项目根目录生成一个 `generate-pw.config.mjs` 模板文件。
 
 <br>
 

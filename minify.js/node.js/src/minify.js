@@ -8,7 +8,7 @@ const fs = require('fs'),
       uglifyJS = require('uglify-js')
 
 // Init APP data
-Object.assign(globalThis.app ??= {}, require(`${ __dirname.match(/[\\/]src/) ? '../' : './data/' }app.json`))
+Object.assign(globalThis.app ??= {}, require(`${ /[\\/]src(?:[\\/]|$)/i.test(__dirname) ? '../' : './data/' }app.json`))
 app.aliases = {
     minify: ['build', 'Build', 'compile', 'Compile', 'compress', 'Compress', 'Minify'],
     findJS: ['find', 'Find', 'findjs', 'findJs', 'Findjs', 'FindJs', 'FindJS', 'search', 'Search']
@@ -31,8 +31,8 @@ function findJS(searchDir, options = {}) {
 
     // Validate searchDir
     if (typeof searchDir != 'string') {
-            log.error('1st arg <searchDir> must be a string.')
-            return log.helpURL(docURL)
+        log.error('1st arg <searchDir> must be a string.')
+        return log.helpURL(docURL)
     } else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir)
         if (!fs.existsSync(searchPath)) {
@@ -127,8 +127,10 @@ function minify(input, options = {}) {
             fs.readSync(fd, buffer, 0, stats.size, 0)
             fs.closeSync(fd)
             const minifyResult = uglifyJS.minify(buffer.toString('utf8'), minifyOptions)
-            if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
-            if (minifyResult.error) log.error(minifyResult.error.message)
+            if (options.comment)
+                minifyResult.code = prependComment(minifyResult.code, options.comment)
+            if (minifyResult.error)
+                log.error(minifyResult.error.message)
             else if (options.verbose && typeof window != 'undefined')
                 log.info('Minification complete! Check returned object.')
             return { code: minifyResult.code, srcPath: path.resolve(process.cwd(), input), error: minifyResult.error }
@@ -141,8 +143,10 @@ function minify(input, options = {}) {
                       minifyResult = uglifyJS.minify(srcCode, minifyOptions),
                       relPath = options.relativeOutput ? undefined
                               : path.relative(path.resolve(process.cwd(), input), jsPath)
-                if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
-                if (minifyResult.error) log.error(minifyResult.error.message)
+                if (options.comment)
+                    minifyResult.code = prependComment(minifyResult.code, options.comment)
+                if (minifyResult.error)
+                    log.error(minifyResult.error.message)
                 return { code: minifyResult.code, srcPath: jsPath, relPath, error: minifyResult.error }
             }).filter(data => !data.error) // filter out failed minifications
             if (options.verbose) {
@@ -174,8 +178,10 @@ function minify(input, options = {}) {
             if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
                 log.info('** Minifying passed source code...')
             const minifyResult = uglifyJS.minify(input, minifyOptions)
-            if (options.comment) minifyResult.code = prependComment(minifyResult.code, options.comment)
-            if (minifyResult.error) log.error(minifyResult.error.message)
+            if (options.comment)
+                minifyResult.code = prependComment(minifyResult.code, options.comment)
+            if (minifyResult.error)
+                log.error(minifyResult.error.message)
             else if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
                 log.info('Minification complete! Check returned object.')
             return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error }

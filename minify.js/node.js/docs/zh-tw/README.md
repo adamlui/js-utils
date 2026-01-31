@@ -151,11 +151,40 @@ $ minify-js input_folder output_folder
 參數選項：
  --ignores="dir/,file1.js,file2.js"   要排除在壓縮之外的檔案/目錄。
  --comment="comment"                  將標題註解新增到縮小的程式碼中。使用 '\n' 按行分隔。
+ --config="path/to/file"              Load custom config file.
 
 訊息命令：
+     --init                           Create config file (in project root).
  -h, --help                           顯示幫助畫面。
  -v, --version                        顯示版本號。
 ```
+
+#
+
+### Configuration file
+
+**minify.js** can be customized using a `minify.config.mjs` or `minify.config.js` placed in your project root.
+
+Example defaults:
+
+```js
+export default {
+    dryRun: false, // 並非實際壓縮文件，僅顯示是否會處理它們
+    includeDotFolders: false, // 將點資料夾包含在檔案搜尋中
+    includeDotFiles: false, // 將點檔案包含在檔案搜尋中
+    noRecursion: false, // 停用遞迴文件搜索
+    noMangle: false, // 停用名稱修飾
+    noFilenameChange: false, // 停用將檔案副檔名變更為 .min.js
+    rewriteImports: false, // 將導入路徑從 .js 更新為 .min.js
+    copy: false, // 如果只處理一個文件，則將壓縮後的程式碼複製到剪貼簿而不是寫入文件
+    relativeOutput: false, // 輸出檔案相對於每個來源檔案而不是輸入根目錄
+    quietMo​​de: false, // 禁止記錄錯誤以外的所有日誌
+    ignores: '', // 要從壓縮中排除的檔案/目錄
+    comment: '' // 要加入壓縮後程式碼前面的頭部註釋
+}
+```
+
+💡 Run `minify-js init` to generate a template `minify.config.mjs` in your project root.
 
 <br>
 
@@ -188,7 +217,7 @@ const minifyJS = require('@adamlui/minify.js')
 如果傳入**原始碼**，則直接縮小，然後傳回一個包含 `srcPath` + `code` + `error` 的物件：
 
 ```js
-const srcCode = 'function add(first, second) { return first + second; }',
+const srcCode = 'function add(first, second) { return first + second }',
       minifyResult = minifyJS.minify(srcCode)
 
 console.log(minifyResult.error) // 輸出運行時錯誤，如果沒有錯誤則輸出 `undefined`

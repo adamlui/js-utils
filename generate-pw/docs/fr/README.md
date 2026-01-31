@@ -78,7 +78,7 @@ $ npm install generate-pw
 #### ECMAScript*:
 
 ```js
-import pw from 'generate-pw';
+import pw from 'generate-pw'
 ```
 
 #### CommonJS:
@@ -281,6 +281,7 @@ Options des paramètres:
  --qty=n                     Générez n mot(s) de passe.
  --charset=cars              Incluez uniquement des cars dans les mots de passe.
  --exclude=cars              Exclure les cars des mots de passe.
+ --config="path/to/file"     Charger le fichier de configuration personnalisé.
 
 Options booléennes:
  -n, --include-numbers       Autoriser les chiffres dans les mots de passe.
@@ -291,10 +292,37 @@ Options booléennes:
  -s, --strict                Exiger au moins un caractère de chaque jeu de caractères autorisé dans le(s) mot(s) de passe.
  -q, --quiet                 Supprime toute la journalisation, à l'exception des erreurs.
 
-Info commands:
+Commandes:
+ -i, --init                  Créer un fichier de configuration (à la racine du projet).
  -h, --help                  Afficher l'écran d'aide.
  -v, --version               Afficher le numéro de version.
 ```
+
+#
+
+### Fichier de configuration
+
+**generate-pw** peut être personnalisé à l'aide d'un fichier `generate-pw.config.mjs` ou `generate-pw.config.js` placé à la racine de votre projet.
+
+Exemple de valeurs par défaut:
+
+```js
+export default {
+    length: 8,                  // longueur des mots de passe à générer
+    qty: 1,                     // nombre de mots de passe à générer
+    charset: '',                // inclure uniquement les caractères spécifiés dans les mots de passe
+    exclude: '',                // exclure les caractères spécifiés des mots de passe
+    includeNums: false,         // autoriser les chiffres dans les mots de passe
+    includeSymbols: false,      // autoriser les symboles dans les mots de passe
+    excludeLowerChars: false,   // interdire les minuscules dans les mots de passe
+    excludeUpperChars: false,   // interdire les majuscules dans les mots de passe
+    excludeSimilarChars: false, // exclure les caractères similaires dans les mots de passe
+    strictMode: false,          // exiger au moins un caractère de chaque ensemble de caractères autorisé dans les mots de passe
+    quietMode: false,           // supprimer tous les messages de journalisation sauf les erreurs
+}
+```
+
+💡 Exécutez `generate-pw init` pour générer un modèle de fichier `generate-pw.config.mjs` à la racine de votre projet.
 
 <br>
 

@@ -66,13 +66,33 @@ Sample output:
 ### Command line options
 
 ```
+Parameter options:
+ --config="path/to/file"     Load custom config file.
+
 Boolean options:
  -q, --quiet                 Suppress all logging except errors.
 
-Info commands:
+Commands:
+ -i, --init                  Create config file (in project root).
  -h, --help                  Display help screen.
  -v, --version               Show version number.
 ```
+
+#
+
+### Configuration file
+
+**generate-ip** can be customized using a `geolocate.config.mjs` or `geolocate.config.js` placed in your project root.
+
+Example defaults:
+
+```js
+export default {
+    quietMode: false // suppress all logging except errors
+}
+```
+
+💡 Run `geolocate init` to generate a template `geolocate.config.mjs` in your project root.
 
 <br>
 
@@ -87,7 +107,7 @@ You can also import **geolocate** into your app to use its main API method.
 #### ECMAScript*:
 
 ```js
-import geo from '@adamlui/geolocate';
+import geo from '@adamlui/geolocate'
 ```
 
 #### CommonJS:

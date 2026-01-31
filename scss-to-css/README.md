@@ -163,10 +163,38 @@ Parameter options:
  --comment="comment"                      Prepend header comment to
                                           compiled CSS. Separate by
                                           line using '\n'.
-Info commands:
+ --config="path/to/file"                  Load custom config file.
+
+Commands:
+ -i, --init                  Create config file (in project root).
  -h, --help                  Display help screen.
  -v, --version               Show version number.
 ```
+
+#
+
+### Configuration file
+
+**scss-to-css** can be customized using a `scss-to-css.config.mjs` or `scss-to-css.config.js` placed in your project root.
+
+Example defaults:
+
+```js
+export default {
+    dryRun: false,            // don't actually minify the file(s), just show if they will be processed
+    includeDotFolders: false, // include dotfolders in file search
+    noSourceMaps: false,      // prevent source maps from being generated
+    noMinify: false,          // disable minification of output CSS
+    noRecursion: false,       // disable recursive file searching
+    relativeOutput: false,    // output files relative to each src file instead of to input root
+    copy: false,              // copy compiled CSS to clipboard instead of write to file if single file processed
+    quietMode: false,         // suppress all logging except errors
+    ignores: '',              // files/dirs to exclude from minification
+    comment: ''               // header comment to prepend to minified code
+}
+```
+
+💡 Run `scss-to-css init` to generate a template `scss-to-css.config.mjs` in your project root.
 
 <br>
 
@@ -179,7 +207,7 @@ You can also import **scss-to-css** into your app to use its API methods, both a
 #### ECMAScript*:
 
 ```js
-import scssToCSS from '@adamlui/scss-to-css';
+import scssToCSS from '@adamlui/scss-to-css'
 ```
 
 #### CJS:

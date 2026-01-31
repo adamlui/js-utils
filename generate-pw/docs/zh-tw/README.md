@@ -76,7 +76,7 @@ $ npm install generate-pw
 #### ECMAScript*:
 
 ```js
-import pw from 'generate-pw';
+import pw from 'generate-pw'
 ```
 
 #### CommonJS:
@@ -277,6 +277,7 @@ $ generate-pw
  --qty=n                     產生 n 個密碼。
  --charset=chars             密碼中僅包含 chars。
  --exclude=chars             從密碼中排除 chars。
+ --config="path/to/file"     Load custom config file.
 
 布林選項：
  -n, --include-numbers       允許密碼中包含數字。
@@ -288,9 +289,36 @@ $ generate-pw
  -q, --quiet                 禁止除錯誤之外的所有日誌記錄。
 
 訊息命令：
+ -i, --init                  Create config file (in project root).
  -h, --help                  顯示幫助畫面。
  -v, --version               顯示版本號。
 ```
+
+#
+
+### Configuration file
+
+**generate-pw** can be customized using a `generate-pw.config.mjs` or `generate-pw.config.js` placed in your project root.
+
+Example defaults:
+
+```js
+export default {
+    length: 8, // 產生的密碼長度
+    qty: 1, // 產生的密碼數量
+    charset: '', // 密碼中只包含字符
+    exclude: '', // 密碼中排除字符
+    includeNums: false, // 密碼中允許包含數字
+    includeSymbols: false, // 密碼中允許包含符號
+    excludeLowerChars: false, // 密碼中不允許包含小寫字母
+    excludeUpperChars: false, // 密碼中不允許包含大寫字母
+    excludeSimilarChars: false, // 密碼中排除相似字符
+    strictMode: false, // 密碼中至少包含每個允許字符集中的一個字符
+    quietMo​​de: false, // 禁止記錄除錯誤訊息以外的所有日誌
+}
+```
+
+💡 Run `generate-pw init` to generate a template `generate-pw.config.mjs` in your project root.
 
 <br>
 

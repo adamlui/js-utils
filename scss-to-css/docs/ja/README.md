@@ -152,14 +152,41 @@ $ scss-to-css input_folder output_folder
  -c, --copy                               単一のソース ファイルが処理される場合は、コンパイルされた CSS をファイルに書き込むのではなく、クリップボードにコピーします。
  -q, --quiet                              エラーを除くすべてのログを抑制します。
 
-パラメータオプション:
+パラメータオプション：
  --ignores="dir/,file1.scss,file2.scss"   コンパイルから除外するファイル／ディレクトリ。
  --comment="comment"                      コンパイルされた CSS の先頭にヘッダー コメントを追加します。'\n' を使用して行で区切ります。
+ --config="path/to/file"                  カスタム設定ファイルを読み込む。
 
-情報コマンド:
+コマンド：
+ -i, --init                               設定ファイルを作成する（プロジェクトルートに作成されます）。
  -h, --help                               ヘルプ画面を表示します。
  -v, --version                            バージョン番号を表示します。
 ```
+
+#
+
+### 設定ファイル
+
+**scss-to-css** は、プロジェクトルートに配置された `scss-to-css.config.mjs` または `scss-to-css.config.js` ファイルを使用してカスタマイズできます。
+
+デフォルト設定例：
+
+```js
+export default {
+    dryRun: false,            // ファイルを実際に圧縮せず、処理対象となるファイルのみを表示します
+    includeDotFolders: false, // ファイル検索時にドットフォルダを含めます
+    noSourceMaps: false,      // ソースマップの生成を無効にします
+    noMinify: false,          // 出力CSSの圧縮を無効にします
+    noRecursion: false,       // 再帰的なファイル検索を無効にします
+    relativeOutput: false,    // 出力ファイルを入力ルートではなく、各ソースファイルからの相対パスで出力します
+    copy: false,              // 単一ファイル処理の場合、コンパイルされたCSSをファイルに書き込まずにクリップボードにコピーします
+    quietMo​​de: false,         // エラー以外のすべてのログ出力を抑制します
+    ignores: '',              // 圧縮から除外するファイル/ディレクトリ
+    comment: ''               // 圧縮されたコードの先頭に追加するヘッダーコメント
+}
+```
+
+💡 プロジェクトルートにテンプレートとなる `scss-to-css.config.mjs` ファイルを生成するには、`scss-to-css init` コマンドを実行してください。
 
 <br>
 
@@ -172,7 +199,7 @@ $ scss-to-css input_folder output_folder
 #### ECMAScript*:
 
 ```js
-import scssToCSS from '@adamlui/scss-to-css';
+import scssToCSS from '@adamlui/scss-to-css'
 ```
 
 #### CJS:

@@ -78,7 +78,7 @@ $ npm install generate-pw
 #### ECMAScript*:
 
 ```js
-import pw from 'generate-pw';
+import pw from 'generate-pw'
 ```
 
 #### CommonJS:
@@ -281,6 +281,7 @@ Parameter options:
  --qty=n                     Generate n password(s).
  --charset=chars             Only include chars in password(s).
  --exclude=chars             Exclude chars from password(s).
+ --config="path/to/file"     Load custom config file.
 
 Boolean options:
  -n, --include-numbers       Allow numbers in password(s).
@@ -292,10 +293,37 @@ Boolean options:
                              allowed character set in password(s).
  -q, --quiet                 Suppress all logging except errors.
 
-Info commands:
+Commands:
+ -i, --init                  Create config file (in project root).
  -h, --help                  Display help screen.
  -v, --version               Show version number.
 ```
+
+#
+
+### Configuration file
+
+**generate-pw** can be customized using a `generate-pw.config.mjs` or `generate-pw.config.js` placed in your project root.
+
+Example defaults:
+
+```js
+export default {
+    length: 8,                  // length of passwords to generate
+    qty: 1,                     // # of passwords to generate
+    charset: '',                // only include chars in password(s)
+    exclude: '',                // exclude chars from password(s)
+    includeNums: false,         // allow numbers in password(s)
+    includeSymbols: false,      // allow symbols in password(s)
+    excludeLowerChars: false,   // disallow lowercase letters in password(s)
+    excludeUpperChars: false,   // disallow uppercase letters in password(s)
+    excludeSimilarChars: false, // exclude similar chars in password(s)
+    strictMode: false,          // require 1+ char from each allowed charset in password(s)
+    quietMode: false,           // suppress all logging except errors
+}
+```
+
+💡 Run `generate-pw init` to generate a template `generate-pw.config.mjs` in your project root.
 
 <br>
 

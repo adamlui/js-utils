@@ -151,11 +151,40 @@ $ minify-js input_folder output_folder
 参数选项：
  --ignores="dir/,file1.js,file2.js"   要从压缩过程中排除的文件/目录。
  --comment="comment"                  将标题注释添加到缩小的代码中。使用 '\n' 按行分隔。
+ --config="path/to/file"              加载自定义配置文件。
 
-信息命令：
+命令：
+     --init                           创建配置文件（位于项目根目录）。
  -h, --help                           显示帮助屏幕。
  -v, --version                        显示版本号。
 ```
+
+#
+
+### 配置文件
+
+您可以通过在项目根目录放置 `minify.config.mjs` 或 `minify.config.js` 文件来自定义 **minify.js** 的配置。
+
+默认配置示例：
+
+```js
+export default {
+    dryRun: false,            // 不实际压缩文件，只显示哪些文件将被处理
+    includeDotFolders: false, // 在文件搜索中包含隐藏文件夹
+    includeDotFiles: false,   // 在文件搜索中包含隐藏文件
+    noRecursion: false,       // 禁用递归文件搜索
+    noMangle: false,          // 禁用名称混淆
+    noFilenameChange: false,  // 禁用将文件扩展名更改为 .min.js
+    rewriteImports: false,    // 将导入路径从 .js 更新为 .min.js
+    copy: false,              // 如果只处理单个文件，则将压缩后的代码复制到剪贴板而不是写入文件
+    relativeOutput: false,    // 输出文件相对于每个源文件，而不是相对于输入根目录
+    quietMo​​de: false,         // 禁止除错误之外的所有日志输出
+    ignores: '',              // 要从压缩中排除的文件/目录
+    comment: ''               // 要添加到压缩代码开头的注释
+}
+```
+
+💡 运行 `minify-js init` 即可在项目根目录生成一个 `minify.config.mjs` 模板文件。
 
 <br>
 
@@ -188,7 +217,7 @@ const minifyJS = require('@adamlui/minify.js')
 如果传入**源代码**，则直接缩小，然后返回一个包含 `srcPath` + `code` + `error` 的对象：
 
 ```js
-const srcCode = 'function add(first, second) { return first + second; }',
+const srcCode = 'function add(first, second) { return first + second }',
       minifyResult = minifyJS.minify(srcCode)
 
 console.log(minifyResult.error) // 输出运行时错误，如果没有错误则输出 `undefined`
