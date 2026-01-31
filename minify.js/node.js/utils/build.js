@@ -11,6 +11,7 @@ globalThis.app = require('../app.json')
 // Copy APP data
 fs.rmSync('dist', { recursive: true, force: true })
 fs.mkdirSync('dist/data', { recursive: true })
+fs.copyFileSync('_locales/en/messages.json', 'dist/data/messages.json')
 fs.copyFileSync('app.json', 'dist/data/app.json')
 fs.copyFileSync('minify.config.mjs', 'dist/data/minify.config.mjs')
 
