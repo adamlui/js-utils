@@ -9,7 +9,7 @@
  */
 
 export default {
-    qty: 3,          // # of IPs to generate
+    qty: 1,          // # of IPs to generate
     ipv6mode: false, // generate IPv6 address(es)
     macMode: false,  // generate MAC address(es)
     quietMode: false // suppress all logging except errors
