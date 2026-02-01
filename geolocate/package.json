@@ -41,6 +41,9 @@
   },
   "scripts": {
     "build": "node utils/build",
+    "build:js": "node utils/build --js",
+    "build:data": "node utils/build --data",
+    "build:json": "npm run build:data",
     "debug": "node src/cli --debug",
     "translate": "py utils/translate-en-messages.py",
     "bump:patch": "bash utils/bump.sh patch",
