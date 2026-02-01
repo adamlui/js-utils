@@ -8,7 +8,7 @@
   "prefix_localVer": { "message": "Ol tok bilong ples" },
   "prefix_source": { "message": "Sos" },
   "error_notRecognized": { "message": "ol i no save" },
-  "error_nonPositiveNum": { "message": "i no gat wanpela samting i stap long dispela hap." },
+  "error_nonPositiveNum": { "message": "i no gat wanpela samting i stap long dispela hap" },
   "error_invalidURL": { "message": "Ol URL i no stret" },
   "error_invalidConfigFile": { "message": "Ol i mas salim wanpela samting i go long narapela hap" },
   "error_configFileNotFound": { "message": "I no gat wanpela samting i stap long dispela hap" },

@@ -31,7 +31,7 @@
   "info_failedToMinify": { "message": "მინიმიზაციის შეცდომა" },
   "info_moreHelp": { "message": "Დამატებითი დახმარებისთვის" },
   "info_type": { "message": "ტიპი" },
-  "info_or": { "message": "ან " },
+  "info_or": { "message": "ან" },
   "info_visit": { "message": "ვიზიტი" },
   "info_configFileCreated": { "message": "Კონფიგურაციის ფაილი შექმნილია" },
   "tip_editToSetDefaults": { "message": "Ჩაასწორეთ ეს ფაილი ნაგულისხმევის მოსარგებად" },

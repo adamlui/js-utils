@@ -38,7 +38,7 @@
   "tip_cliArgsPrioritized": { "message": "CLI གྲོས་བསྡུར་གྱིས་གོང་གི་རྩ་བ་རྣམས་རྒྱུན་དུ་འགོག་པར་བྱེད །" },
   "helpSection_usage": { "message": "བཀོལ་སྤྱོད །" },
   "helpSection_pathArgs": { "message": "ལམ་གྱི་རྩོད་གཞི །" },
-  "helpSection_flags": { "message": "Boolean Options" },
+  "helpSection_flags": { "message": "བུ་ལིན་གདམ་ཁ།" },
   "helpSection_params": { "message": "ཚད་འཇལ་བྱེད་ཀྱི་འདེམས་སྟངས" },
   "helpSection_cmds": { "message": "བརྡ་དོན་བཀའ་སློབ །" },
   "inputPathDesc_main": { "message": "JavaScript ཡིག་སྣོད་དང་ཡིག་སྣོད་ནང་JavaScript ཡིག་སྣོད་ཡོད་པའི་ལམ་" },

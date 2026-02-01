@@ -28,7 +28,7 @@
   "tip_cliArgsPrioritized": { "message": "DINTLHAGANYO TSA CLI KA METLHA DI FETOLA MAEMO" },
   "helpSection_usage": { "message": "Tiriso" },
   "helpSection_params": { "message": "Dipharametara tse o ka tlhophang mo go tsone" },
-  "helpSection_flags": { "message": "Boolean options" },
+  "helpSection_flags": { "message": "Ditlhopho tsa Boolean" },
   "helpSection_cmds": { "message": "DITAELO TSA TSHEDIMOS" },
   "optionDesc_length": { "message": "Generate password(di) of n length" },
   "optionDesc_qty": { "message": "Generate n password(di)" },

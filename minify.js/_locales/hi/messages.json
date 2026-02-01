@@ -31,7 +31,7 @@
   "info_failedToMinify": { "message": "छोटा नहीं किया जा सका" },
   "info_moreHelp": { "message": "ज़्यादा मदद के लिए" },
   "info_type": { "message": "प्रकार" },
-  "info_or": { "message": "या " },
+  "info_or": { "message": "या" },
   "info_visit": { "message": "मिलने जाना" },
   "info_configFileCreated": { "message": "कॉन्फ़िग फ़ाइल बनाई गई" },
   "tip_editToSetDefaults": { "message": "डिफ़ॉल्ट को कस्टमाइज़ करने के लिए इस फ़ाइल में बदलाव करें" },

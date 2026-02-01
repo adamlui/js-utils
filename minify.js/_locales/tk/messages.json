@@ -38,7 +38,7 @@
   "tip_cliArgsPrioritized": { "message": "CLI jedelleri hemişe bu gymmatlary äsgermezlik edýär" },
   "helpSection_usage": { "message": "Uzaklyk" },
   "helpSection_pathArgs": { "message": "Dawalaşmak ýoly" },
-  "helpSection_flags": { "message": "Boolean Options" },
+  "helpSection_flags": { "message": "Mantıksal Seçenekler" },
   "helpSection_params": { "message": "Parametr saýlamalary" },
   "helpSection_cmds": { "message": "Öwrenme tabşyryklary" },
   "inputPathDesc_main": { "message": "JavaScript faýlyna ýa-da javascript faýlyna ýol" },

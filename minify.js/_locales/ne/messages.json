@@ -31,7 +31,7 @@
   "info_failedToMinify": { "message": "न्यूनतम गर्न असफल भयो" },
   "info_moreHelp": { "message": "थप मद्दतको लागि" },
   "info_type": { "message": "प्रकार" },
-  "info_or": { "message": "वा " },
+  "info_or": { "message": "वा" },
   "info_visit": { "message": "भ्रमण गर्नुहोस्" },
   "info_configFileCreated": { "message": "कन्फिग फाइल सिर्जना गरियो" },
   "tip_editToSetDefaults": { "message": "पूर्वनिर्धारितहरू अनुकूलन गर्न यो फाइल सम्पादन गर्नुहोस्" },

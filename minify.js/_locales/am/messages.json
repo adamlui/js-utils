@@ -31,7 +31,7 @@
   "info_failedToMinify": { "message": "መቀነስ አልተቻለም" },
   "info_moreHelp": { "message": "ለተጨማሪ እገዛ" },
   "info_type": { "message": "ዓይነት" },
-  "info_or": { "message": "ወይም " },
+  "info_or": { "message": "ወይም" },
   "info_visit": { "message": "ጉብኝት" },
   "info_configFileCreated": { "message": "ፋይል ተፈጥሯል ያዋቅሩ" },
   "tip_editToSetDefaults": { "message": "ጉድለቶችን ለማበጀት ይህንን ፋይል ያርትዑ" },

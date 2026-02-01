@@ -8,7 +8,7 @@
   "prefix_localVer": { "message": "ས་གནས་ཀྱི་འགྱུར་ཁུངས།" },
   "prefix_source": { "message": "འབྱུང་ཁུངས།" },
   "error_notRecognized": { "message": "མ་ཤེས་པར་" },
-  "error_nonPositiveNum": { "message": "གདམ་ཁ་ ཁ་སྐོང་ཚུ་སྟོནམ་ཨིན།." },
+  "error_nonPositiveNum": { "message": "གདམ་ཁ་ ཁ་སྐོང་ཚུ་སྟོནམ་ཨིན།" },
   "error_invalidURL": { "message": "ནོར་འཁྲུལ་ཅན་གྱི་ཨུ་རེལ།" },
   "error_invalidConfigFile": { "message": "གཞི་སྒྲིག་ཡིག་སྣོད་ནང་ ཅ་ཆས་ཅིག་ཕྱིར་ཚོང་འབད་དགོཔ་ཨིན།" },
   "error_configFileNotFound": { "message": "སྒྲིག་འཇུག་བྱས་ཚད། ཐེངས་ 3 ལས་ཉུང་བ། ཐོན་" },

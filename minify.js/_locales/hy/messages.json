@@ -31,7 +31,7 @@
   "info_failedToMinify": { "message": "ձախողվեց փոքրացնել" },
   "info_moreHelp": { "message": "Լրացուցիչ օգնության համար" },
   "info_type": { "message": "տեսակ" },
-  "info_or": { "message": "  " },
+  "info_or": { "message": "" },
   "info_visit": { "message": "այցելություն" },
   "info_configFileCreated": { "message": "Ստեղծվել է կոնֆիգուրացիոն ֆայլ" },
   "tip_editToSetDefaults": { "message": "Փոփոխեք այս ֆայլը ՝ կանխադրված ֆայլերը հարմարեցնելու համար" },

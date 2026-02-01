@@ -28,7 +28,7 @@
   "tip_cliArgsPrioritized": { "message": "CLI jedelleri hemişe bu gymmatlary äsgermezlik edýär" },
   "helpSection_usage": { "message": "Uzaklyk" },
   "helpSection_params": { "message": "Parametr saýlamalary" },
-  "helpSection_flags": { "message": "Boolean Options" },
+  "helpSection_flags": { "message": "Mantıksal Seçenekler" },
   "helpSection_cmds": { "message": "Öwrenme tabşyryklary" },
   "optionDesc_qty": { "message": "N IP-aýdasy (lar) ýaradylýar" },
   "optionDesc_config": { "message": "Özgür konfigurasy faýly ýükle" },

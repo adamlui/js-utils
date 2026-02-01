@@ -38,7 +38,7 @@
   "tip_cliArgsPrioritized": { "message": "DINTLHAGANYO TSA CLI KA METLHA DI FETOLA MAEMO" },
   "helpSection_usage": { "message": "Tiriso" },
   "helpSection_pathArgs": { "message": "DIKGANG TSA PATH" },
-  "helpSection_flags": { "message": "Boolean options" },
+  "helpSection_flags": { "message": "Ditlhopho tsa Boolean" },
   "helpSection_params": { "message": "Dipharametara tse o ka tlhophang mo go tsone" },
   "helpSection_cmds": { "message": "DITAELO TSA TSHEDIMOS" },
   "inputPathDesc_main": { "message": "Path to JavaScript file or directory with JavaScript files to be minified" },

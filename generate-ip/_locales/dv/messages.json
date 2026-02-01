@@ -28,7 +28,7 @@
   "tip_cliArgsPrioritized": { "message": "ސީއެލްއައި އަރގިއުމެންޓްތަކުން އަބަދުވެސް މި ވެލިއުތައް އޯވަރރައިޑް ކުރެއެވެ" },
   "helpSection_usage": { "message": "ބޭނުންކުރުން" },
   "helpSection_params": { "message": "ޕެރަމިޓަރ އޮޕްޝަންސް" },
-  "helpSection_flags": { "message": "Boolean options" },
+  "helpSection_flags": { "message": "ބޫލިއަން އޮޕްޝަންސް" },
   "helpSection_cmds": { "message": "އިންފޯ ކޮމާންޑުތައް" },
   "optionDesc_qty": { "message": "ޖެނެރޭޓް އެން އައިޕީ އެޑްރެސް (އެސް)" },
   "optionDesc_config": { "message": "ކަސްޓަމް ކޮންފިގް ފައިލް ލޯޑް ކުރާށެވެ" },

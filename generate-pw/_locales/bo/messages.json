@@ -28,7 +28,7 @@
   "tip_cliArgsPrioritized": { "message": "CLI གྲོས་བསྡུར་གྱིས་གོང་གི་རྩ་བ་རྣམས་རྒྱུན་དུ་འགོག་པར་བྱེད །" },
   "helpSection_usage": { "message": "བཀོལ་སྤྱོད །" },
   "helpSection_params": { "message": "ཚད་འཇལ་བྱེད་ཀྱི་འདེམས་སྟངས" },
-  "helpSection_flags": { "message": "Boolean Options" },
+  "helpSection_flags": { "message": "བུ་ལིན་གདམ་ཁ།" },
   "helpSection_cmds": { "message": "བརྡ་དོན་བཀའ་སློབ །" },
   "optionDesc_length": { "message": "N གི་རིང་ཐུང་གི་གསང་ཚིག་(s) བཟོ་དགོས །" },
   "optionDesc_qty": { "message": "Password (s) བཟོ་བཅོས །" },

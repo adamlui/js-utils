@@ -38,7 +38,7 @@
   "tip_cliArgsPrioritized": { "message": "CLI-argumenter overstyrer alltid disse verdiene" },
   "helpSection_usage": { "message": "Usage" },
   "helpSection_pathArgs": { "message": "Path arguments" },
-  "helpSection_flags": { "message": "Boolean options" },
+  "helpSection_flags": { "message": "Boolske alternativer" },
   "helpSection_params": { "message": "Parameter options" },
   "helpSection_cmds": { "message": "Commands" },
   "inputPathDesc_main": { "message": "Path to JavaScript file or directory containing JavaScript files to be minified" },
