@@ -9,12 +9,14 @@ module.exports = {
                   localeDir = `${ langCode ? langCode.replace('-', '_') : 'en' }/`
             let msgHref = `${msgHostURL}${localeDir}messages.json`, msgFetchTries = 0
             while (msgFetchTries < 3)
-                try { msgs = data.flatten(await (await data.fetch(msgHref)).json(), { key: 'message' }) ; break }
-                catch (err) { // if bad response
-                    msgFetchTries++ ; if (msgFetchTries == 3) break // try 3X (original/region-stripped/EN) only
+                try {
+                    msgs = data.flatten(await (await data.fetch(msgHref)).json(), { key: 'message' })
+                    break
+                } catch (err) { // retry up to 2X (region-stripped + EN)
+                    msgFetchTries++ ; if (msgFetchTries > 2) break
                     msgHref = langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                         msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
-                            : `${msgHostURL}en/messages.json` // else use default English messages
+                            : `${msgHostURL}en/messages.json` // else use default EN msgs
                 }
         }
         return msgs

@@ -3,7 +3,8 @@ module.exports = {
     fetch(url) { // to support Node.js < v21
         return typeof fetch == 'undefined' ? new Promise((resolve, reject) => { // using https?.get()
             const protocol = url.match(/^([^:]+):\/\//)[1]
-            if (!/^https?$/.test(protocol)) reject(new Error(`${app.msgs.error_invalidURL}.`))
+            if (!/^https?$/.test(protocol))
+                reject(new Error(`${app.msgs.error_invalidURL}.`))
             require(protocol).get(url, resp => {
                 let rawData = ''
                 resp.on('data', chunk => rawData += chunk)
