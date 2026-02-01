@@ -11,8 +11,8 @@
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
           fs = require('fs'),
-          path = require('path'),
           log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
+          path = require('path'),
           scssToCSS = require(`../scss-to-css${ env.devMode ? '' : '.min' }.js`),
           settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
 
