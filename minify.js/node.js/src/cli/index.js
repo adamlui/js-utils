@@ -20,7 +20,7 @@
     // Init APP data
     Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`))
     log.debug(app.urls.docs += '/#-command-line-usage')
-    log.debug(app.msgs = await getMsgs(env.debugMode ? 'es' : getSysLang()))
+    log.debug(app.msgs = await getMsgs(env.debugMode ? 'es' : getSysLang())) // use Spanish in --debug mode to test JSD
 
     // Exec CMD arg if passed
     for (const arg of process.argv.slice(2)) {
