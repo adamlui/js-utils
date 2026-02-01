@@ -102,8 +102,8 @@
             } else
                 console.info(`${app.msgs.info_noFilesProcessed}.`)
             if (failedPaths.length) {
-                log.error(`${failedPaths.length} ${app.msgs.info_file}`
-                    + `${ failedPaths.length == 1 ? '' : 's' } ${app.msgs.info_failedToMinify}:`)
+                log.error(`${failedPaths.length} ${app.msgs.info_file}${ failedPaths.length == 1 ? '' : 's' }`,
+                    `${app.msgs.info_failedToMinify}:`)
                 failedPaths.forEach(path => console.info(path))
             }
         }
