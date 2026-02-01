@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Gyldige argumenter er nedenfor" },
   "info_copying": { "message": "Kopierer til udklipsholder" },
   "info_moreHelp": { "message": "Få mere hjælp" },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "eller" },
   "info_visit": { "message": "besøg" },
   "info_configFileCreated": { "message": "Konfigurationsfil oprettet" },
   "tip_editToSetDefaults": { "message": "Rediger denne fil for at tilpasse standardindstillinger" },

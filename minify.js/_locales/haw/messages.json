@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "ʻAʻohe faila JavaScript i hoʻopau ʻole ʻia" },
   "info_failedToMinify": { "message": "ʻaʻole i hoʻoemi" },
   "info_moreHelp": { "message": "No ke kōkua hou aku" },
+  "info_type": { "message": "Ke ‘Ano" },
+  "info_or": { "message": "a i ʻole" },
   "info_visit": { "message": "kipa" },
   "info_configFileCreated": { "message": "Ua hana ʻia ka faila config" },
   "tip_editToSetDefaults": { "message": "Hoʻoponopono i kēia faila e hoʻopilikino i nā paʻamau" },

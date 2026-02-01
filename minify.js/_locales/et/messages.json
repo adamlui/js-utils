@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Minimeerimata JavaScripti faile ei töödeldud" },
   "info_failedToMinify": { "message": "minimeerimine nurjus" },
   "info_moreHelp": { "message": "Lisateabe saamiseks" },
+  "info_type": { "message": "tüüp" },
+  "info_or": { "message": "või" },
   "info_visit": { "message": "külaskäik" },
   "info_configFileCreated": { "message": "Konfiguratsioonifail on loodud" },
   "tip_editToSetDefaults": { "message": "Redigeeri seda faili vaikeväärtuste kohandamiseks" },

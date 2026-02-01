@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "درست دلائل ذیل میں ہیں" },
   "info_copying": { "message": "کلپ بورڈ پر کاپی ہو رہی ہے" },
   "info_moreHelp": { "message": "مزید مدد کے لیے" },
+  "info_type": { "message": "نوعیت" },
+  "info_or": { "message": "یا" },
   "info_visit": { "message": "ملاحظہ کریں" },
   "info_configFileCreated": { "message": "کنفیگ فائل بن گئی" },
   "tip_editToSetDefaults": { "message": "ڈیفالٹس کو حسب ضرورت بنانے کے لیے اس فائل میں ترمیم کریں" },

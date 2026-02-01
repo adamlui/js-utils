@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Нақтыланбаған JavaScript файлдары өңделмеген" },
   "info_failedToMinify": { "message": "кішірейту сәтсіз аяқталды" },
   "info_moreHelp": { "message": "Қосымша көмек алу үшін" },
+  "info_type": { "message": "түрі" },
+  "info_or": { "message": "немесе" },
   "info_visit": { "message": "келу" },
   "info_configFileCreated": { "message": "Файлды конфигурациялау" },
   "tip_editToSetDefaults": { "message": "Әдепкі мәндерді теңшеу үшін осы файлды өңдеңіз" },

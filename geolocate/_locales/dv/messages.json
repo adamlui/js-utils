@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "ޞައްޙަ ދަލީލުތައް ތިރީގައި މިވަނީ" },
   "info_copying": { "message": "ކްލިޕްބޯޑަށް ކޮޕީ ކުރުން" },
   "info_moreHelp": { "message": "އިތުރު އެހީއަށް" },
+  "info_type": { "message": "ވައްތަރު" },
+  "info_or": { "message": "ނުވަތަ" },
   "info_visit": { "message": "ޒިޔާރަތް ކުރުން" },
   "info_configFileCreated": { "message": "ކޮންފިގް ފައިލް އުފެދިއްޖެއެވެ" },
   "tip_editToSetDefaults": { "message": "ޑިފޯލްޓްތައް ކަސްޓަމައިޒް ކުރުމަށް މި ފައިލް އެޑިޓް ކުރާށެވެ" },

@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "No unminified JavaScript files processed" },
   "info_failedToMinify": { "message": "failed to minify" },
   "info_moreHelp": { "message": "For more help" },
+  "info_type": { "message": "ਟਾਈਪ" },
+  "info_or": { "message": "ਜਾਂ" },
   "info_visit": { "message": "visit" },
   "info_configFileCreated": { "message": "ਸੰਰਚਨਾ ਫਾਇਲ ਬਣਾਈ ਗਈ" },
   "tip_editToSetDefaults": { "message": "ਡਿਫਾਲਟ ਨੂੰ ਅਨੁਕੂਲਿਤ ਕਰਨ ਲਈ ਇਹ ਫਾਇਲ ਸੋਧੋ" },

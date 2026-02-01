@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "L-ebda fajl JavaScript mhux imminat ipproċessat" },
   "info_failedToMinify": { "message": "ma rnexxilniex nimminifikaw" },
   "info_moreHelp": { "message": "Għal aktar għajnuna" },
+  "info_type": { "message": "Tip" },
+  "info_or": { "message": "jew" },
   "info_visit": { "message": "Żjara" },
   "info_configFileCreated": { "message": "Il-fajl tal-konfigurazzjoni nħoloq" },
   "tip_editToSetDefaults": { "message": "Editja dan il-fajl biex tippersonalizza l-faċilitajiet standard" },

@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Дапушчальныя аргументы ніжэй" },
   "info_copying": { "message": "Значэнне" },
   "info_moreHelp": { "message": "Для атрымання дадатковай дапамогі" },
+  "info_type": { "message": "друкаваць" },
+  "info_or": { "message": "або" },
   "info_visit": { "message": "наведаць" },
   "info_configFileCreated": { "message": "Створаны файл канфігурацыі" },
   "tip_editToSetDefaults": { "message": "Рэдагаваць гэты файл, каб наладзіць па змаўчанні" },

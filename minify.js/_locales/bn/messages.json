@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "কোন অসমাপ্ত জাভাস্ক্রিপ্ট ফাইল প্রক্রিয়া করা হয়নি" },
   "info_failedToMinify": { "message": "ন্যূনতম করতে ব্যর্থ হয়েছে" },
   "info_moreHelp": { "message": "আরও সাহায্যের জন্য" },
+  "info_type": { "message": "" },
+  "info_or": { "message": "অথবা" },
   "info_visit": { "message": "ভিজিট করুন" },
   "info_configFileCreated": { "message": "কনফিগ ফাইল তৈরি করা হয়েছে" },
   "tip_editToSetDefaults": { "message": "ডিফল্টগুলি কাস্টমাইজ করতে এই ফাইলটি সম্পাদনা করুন" },

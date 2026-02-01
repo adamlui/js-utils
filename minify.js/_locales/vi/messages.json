@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Không có tệp JavaScript chưa được xử lý nào được xử lý" },
   "info_failedToMinify": { "message": "không thể thu nhỏ" },
   "info_moreHelp": { "message": "Để được trợ giúp thêm" },
+  "info_type": { "message": "kiểu" },
+  "info_or": { "message": "hoặc" },
   "info_visit": { "message": "tham quan" },
   "info_configFileCreated": { "message": "Đã tạo tệp cấu hình" },
   "tip_editToSetDefaults": { "message": "Chỉnh sửa tệp này để tùy chỉnh mặc định" },

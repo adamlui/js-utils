@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Допустимые аргументы ниже" },
   "info_copying": { "message": "Копирование в буфер обмена" },
   "info_moreHelp": { "message": "Для получения дополнительной помощи читать" },
+  "info_type": { "message": "кожи" },
+  "info_or": { "message": "или" },
   "info_visit": { "message": "посещать" },
   "info_configFileCreated": { "message": "Конфигурационный файл создан" },
   "tip_editToSetDefaults": { "message": "Отредактируйте этот файл, чтобы настроить параметры по умолчанию" },

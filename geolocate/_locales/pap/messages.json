@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Argumentonan valido ta" },
   "info_copying": { "message": "Copiando a Clipboard" },
   "info_moreHelp": { "message": "Pa mas ayudo" },
+  "info_type": { "message": "tipo" },
+  "info_or": { "message": "òf" },
   "info_visit": { "message": "bishitá" },
   "info_configFileCreated": { "message": "Archivo Creado" },
   "tip_editToSetDefaults": { "message": "Escriba su comentario sobre Les Defaultes" },

@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Gild rök eru hér að neðan" },
   "info_copying": { "message": "Afrita á klemmuspjald" },
   "info_moreHelp": { "message": "Fyrir frekari aðstoð" },
+  "info_type": { "message": "Tegund" },
+  "info_or": { "message": "eða" },
   "info_visit": { "message": "Heimsókn" },
   "info_configFileCreated": { "message": "Stillingaskrá búin til" },
   "tip_editToSetDefaults": { "message": "Breyttu þessari skrá til að sérsníða sjálfgefin gildi" },

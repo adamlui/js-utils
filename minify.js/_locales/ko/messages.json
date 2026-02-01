@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "처리되지 않은 자바스크립트 파일이 없습니다" },
   "info_failedToMinify": { "message": "축소 실패" },
   "info_moreHelp": { "message": "더 많은 도움 요청" },
+  "info_type": { "message": "유형" },
+  "info_or": { "message": "또는" },
   "info_visit": { "message": "방문" },
   "info_configFileCreated": { "message": "구성 파일 생성됨" },
   "tip_editToSetDefaults": { "message": "기본값을 사용자 지정하려면 이 파일을 편집하세요" },

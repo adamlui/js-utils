@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "A yeke sara kua na a-fichier ti JavaScript so a leke ni pëpe" },
   "info_failedToMinify": { "message": "a yeke nzoni e zia lege ti sarango ye ti e" },
   "info_moreHelp": { "message": "Ti mû maboko na mo" },
+  "info_type": { "message": "mara ti zo" },
+  "info_or": { "message": "lani wala to bani" },
   "info_visit": { "message": "visit Mbi" },
   "info_configFileCreated": { "message": "Faïl so a leke ni" },
   "tip_editToSetDefaults": { "message": "Gbian faïl so ti leke ambeni ye so ayeke na lege ni ape" },

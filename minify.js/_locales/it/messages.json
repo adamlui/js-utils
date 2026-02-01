@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Nessun file JavaScript non minificato elaborato" },
   "info_failedToMinify": { "message": "non è riuscito a minimizzare" },
   "info_moreHelp": { "message": "Per ulteriore assistenza" },
+  "info_type": { "message": "tipo" },
+  "info_or": { "message": "oppure" },
   "info_visit": { "message": "visita" },
   "info_configFileCreated": { "message": "Nessun file config creato" },
   "tip_editToSetDefaults": { "message": "Modifica questo file per personalizzare le impostazioni predefinite" },

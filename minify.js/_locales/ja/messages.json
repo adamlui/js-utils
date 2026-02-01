@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "未縮小の JavaScript ファイルは処理されませんでした" },
   "info_failedToMinify": { "message": "縮小に失敗しました" },
   "info_moreHelp": { "message": "ヘルプをもっと読む" },
+  "info_type": { "message": "種別" },
+  "info_or": { "message": "または" },
   "info_visit": { "message": "訪問" },
   "info_configFileCreated": { "message": "構成ファイルが作成されました" },
   "tip_editToSetDefaults": { "message": "デフォルトをカスタマイズするには、このファイルを編集してください" },

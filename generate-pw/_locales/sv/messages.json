@@ -21,7 +21,7 @@
   "info_validArgs": { "message": "Giltiga argument finns nedan" },
   "info_copying": { "message": "Kopiera till klippbordet" },
   "info_moreHelp": { "message": "För mer hjälp" },
-  "info_type": { "message": "type" },
+  "info_type": { "message": "typ" },
   "info_or": { "message": "eller" },
   "info_visit": { "message": "besök" },
   "info_configFileCreated": { "message": "Konfigurationsfil skapad" },

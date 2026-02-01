@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "செல்லுபடியாகும் வாதங்கள் கீழே உள்ளன" },
   "info_copying": { "message": "பிடிப்புப்பலகைக்கு நகலாக்குகின்றது" },
   "info_moreHelp": { "message": "மேலும் உதவிக்கு" },
+  "info_type": { "message": "வகை" },
+  "info_or": { "message": "அல்லது" },
   "info_visit": { "message": "வீட்டுக்கு வருகை" },
   "info_configFileCreated": { "message": "கட்டமைப்பு கோப்பு உருவாக்கப்பட்டது" },
   "tip_editToSetDefaults": { "message": "இயல்புநிலையைத் தனிப்பயனாக்க இந்தக் கோப்பைத் திருத்தவும்" },

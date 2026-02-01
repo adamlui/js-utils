@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "އަންމިނިފައިޑް ޖާވާސްކްރިޕްޓް ފައިލްތައް ޕްރޮސެސް ނުކުރެވެއެވެ" },
   "info_failedToMinify": { "message": "މިނިފައި ކުރަން ނާކާމިޔާބުވިއެވެ" },
   "info_moreHelp": { "message": "އިތުރު އެހީތެރިކަމަށްޓަކައެވެ" },
+  "info_type": { "message": "ވައްތަރު" },
+  "info_or": { "message": "ނުވަތަ" },
   "info_visit": { "message": "ޒިޔާރަތްކުރުން" },
   "info_configFileCreated": { "message": "ކޮންފިގް ފައިލް އުފެދިއްޖެއެވެ" },
   "tip_editToSetDefaults": { "message": "ޑިފޯލްޓްތައް ކަސްޓަމައިޒް ކުރުމަށް މި ފައިލް އެޑިޓް ކުރާށެވެ" },

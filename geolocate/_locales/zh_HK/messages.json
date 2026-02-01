@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "有效的引數如下" },
   "info_copying": { "message": "正在複製到剪貼簿" },
   "info_moreHelp": { "message": "如需更多協助" },
+  "info_type": { "message": "類型" },
+  "info_or": { "message": "或" },
   "info_visit": { "message": "造訪" },
   "info_configFileCreated": { "message": "已建立組態檔案" },
   "tip_editToSetDefaults": { "message": "編輯此檔案以自訂預設值" },

@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "No unminified JavaScript files processed" },
   "info_failedToMinify": { "message": "failed to minify" },
   "info_moreHelp": { "message": "For more help" },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "or" },
   "info_visit": { "message": "visit" },
   "info_configFileCreated": { "message": "Config file created" },
   "tip_editToSetDefaults": { "message": "Edit this file to customize defaults" },

@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "သတ်မှတ်မထားသော JavaScript ဖိုင်များကို လုပ်ဆောင်မထားပါ" },
   "info_failedToMinify": { "message": "အသေးစားပြုလုပ်ရန် မအောင်မြင်ပါ" },
   "info_moreHelp": { "message": "နောက်ထပ်အကူအညီအတွက်" },
+  "info_type": { "message": "အမျိုးအစား" },
+  "info_or": { "message": "သို့မဟုတ်" },
   "info_visit": { "message": "အလည်အပတ်သွားပါသလား ။" },
   "info_configFileCreated": { "message": "ဖန်တီးထားသောဖိုင်ကိုစီစဉ်ပါ" },
   "tip_editToSetDefaults": { "message": "ပုံသေသတ်မှတ်ချက်များကို စိတ်ကြိုက်ပြုပြင်ရန် ဤဖိုင်ကို တည်းဖြတ်ပါ" },

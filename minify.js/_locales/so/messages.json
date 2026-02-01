@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Ma jiro faylasha JavaScript ee aan la maareynin" },
   "info_failedToMinify": { "message": "ku guuldareystay in la yareeyo" },
   "info_moreHelp": { "message": "Caawimaad dheeraad ah" },
+  "info_type": { "message": "nooca" },
+  "info_or": { "message": "ama" },
   "info_visit": { "message": "Booqo" },
   "info_configFileCreated": { "message": "Qalabaynta faylka la abuuray" },
   "tip_editToSetDefaults": { "message": "Wax ka beddel faylkan si aad u habeyso cilladaha" },

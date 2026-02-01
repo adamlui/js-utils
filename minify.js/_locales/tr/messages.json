@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Küçültülmemiş JavaScript dosyası işlenmedi" },
   "info_failedToMinify": { "message": "küçültme başarısız" },
   "info_moreHelp": { "message": "Daha fazla yardım için" },
+  "info_type": { "message": "türü" },
+  "info_or": { "message": "veya" },
   "info_visit": { "message": "ziyaret" },
   "info_configFileCreated": { "message": "Yapılandırma dosyası oluşturuldu" },
   "tip_editToSetDefaults": { "message": "Varsayılanları özelleştirmek için bu dosyayı düzenleyin" },

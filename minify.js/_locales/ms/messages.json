@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Tiada fail JavaScript yang tidak dimuktamadkan diproses" },
   "info_failedToMinify": { "message": "gagal untuk minify" },
   "info_moreHelp": { "message": "Untuk bantuan lanjut" },
+  "info_type": { "message": "jenis" },
+  "info_or": { "message": "atau" },
   "info_visit": { "message": "melanggani" },
   "info_configFileCreated": { "message": "fail konfig dicipta" },
   "tip_editToSetDefaults": { "message": "Edit fail ini untuk menyesuaikan lalai" },

@@ -21,7 +21,7 @@
   "info_validArgs": { "message": "Platné argumenty sú uvedené nižšie" },
   "info_copying": { "message": "Kopírujem do dočasnej schránky" },
   "info_moreHelp": { "message": "Ak potrebujete ďalšiu pomoc" },
-  "info_type": { "message": "type" },
+  "info_type": { "message": "Typ" },
   "info_or": { "message": "alebo" },
   "info_visit": { "message": "navštevovať" },
   "info_configFileCreated": { "message": "Konfiguračný súbor bol vytvorený" },

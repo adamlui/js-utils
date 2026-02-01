@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "גילטיק אַרגומענטן זענען אונטן" },
   "info_copying": { "message": "קאַפּיינג צו קליפּבאָרד" },
   "info_moreHelp": { "message": "פֿאַר מער הילף" },
+  "info_type": { "message": "טיפּ" },
+  "info_or": { "message": "אדער" },
   "info_visit": { "message": "באַזוכן" },
   "info_configFileCreated": { "message": "קאָנפיגוראַציע טעקע באשאפן" },
   "tip_editToSetDefaults": { "message": "רעדאַקטירן דעם טעקע צו קאַסטאַמייזן דיפאָלטס" },

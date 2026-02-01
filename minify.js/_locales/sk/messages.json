@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Žiadne nespracované nezmenené súbory JavaScript" },
   "info_failedToMinify": { "message": "sa nepodarilo minifikovať" },
   "info_moreHelp": { "message": "Ak potrebujete ďalšiu pomoc" },
+  "info_type": { "message": "Typ" },
+  "info_or": { "message": "alebo" },
   "info_visit": { "message": "navštevovať" },
   "info_configFileCreated": { "message": "Konfiguračný súbor bol vytvorený" },
   "tip_editToSetDefaults": { "message": "Upraviť tento súbor na prispôsobenie predvolených nastavení" },

@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "NAME OF TRANSLATORS" },
   "info_failedToMinify": { "message": "අවම කිරීමට අසමත් විය" },
   "info_moreHelp": { "message": "තවත් උදව් සඳහා" },
+  "info_type": { "message": "ගූගල්" },
+  "info_or": { "message": "හෝ" },
   "info_visit": { "message": "සංචාරය" },
   "info_configFileCreated": { "message": "සැකසූ ගොනුව සකසන්න" },
   "tip_editToSetDefaults": { "message": "පෙරනිමි රිසිකරණය කිරීමට මෙම ගොනුව සංස්කරණය කරන්න" },

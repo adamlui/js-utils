@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Kaore he konae JavaScript kua tukatukahia" },
   "info_failedToMinify": { "message": "kaore i taea te whakaiti" },
   "info_moreHelp": { "message": "Mō ētahi atu āwhina" },
+  "info_type": { "message": "Momo" },
+  "info_or": { "message": "koina" },
   "info_visit": { "message": "haere" },
   "info_configFileCreated": { "message": "Kōnae Config hanga" },
   "tip_editToSetDefaults": { "message": "Whakatika tenei kōnae ki te whakarite hapa" },

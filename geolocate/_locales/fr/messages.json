@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Les arguments valides sont ci-dessous" },
   "info_copying": { "message": "Copie vers le Presse-Papiers" },
   "info_moreHelp": { "message": "Pour plus d’aide" },
+  "info_type": { "message": "taper" },
+  "info_or": { "message": "ou" },
   "info_visit": { "message": "visite" },
   "info_configFileCreated": { "message": "Fichier de configuration créé" },
   "tip_editToSetDefaults": { "message": "Modifiez ce fichier pour personnaliser les valeurs par défaut" },

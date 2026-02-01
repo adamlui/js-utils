@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "అన్ ‌ మినిఫైడ్ జావాస్క్రిప్ట్ ఫైల్ ‌ లు ప్రాసెస్ చేయబడలేదు" },
   "info_failedToMinify": { "message": "మినిఫై చేయడంలో విఫలమైంది" },
   "info_moreHelp": { "message": "మరింత సహాయం కోసం" },
+  "info_type": { "message": "రకం" },
+  "info_or": { "message": "లేదా" },
   "info_visit": { "message": "సందర్శించు" },
   "info_configFileCreated": { "message": "కాన్ఫిగర్ ఫైల్ సృష్టించబడింది" },
   "tip_editToSetDefaults": { "message": "డిఫాల్ట్ ‌ లను అనుకూలీకరించడానికి ఈ ఫైల్ ‌ ను సవరించండి" },

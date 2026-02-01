@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Geen niet-geminimaliseerde JavaScript-bestanden verwerkt" },
   "info_failedToMinify": { "message": "kon niet verkleinen" },
   "info_moreHelp": { "message": "voor meer hulp" },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "of" },
   "info_visit": { "message": "bezoek" },
   "info_configFileCreated": { "message": "Configuratiebestand aangemaakt" },
   "tip_editToSetDefaults": { "message": "Bewerk dit bestand om de standaardinstellingen aan te passen" },

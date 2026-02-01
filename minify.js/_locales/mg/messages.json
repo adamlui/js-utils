@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Tsy misy rakitry ny JavaScript tsy misy farany" },
   "info_failedToMinify": { "message": "tsy nahomby ny fandefasany ny tenany" },
   "info_moreHelp": { "message": "Raha mila fanampiana bebe kokoa" },
+  "info_type": { "message": "Karazany" },
+  "info_or": { "message": "R" },
   "info_visit": { "message": "_shopify_visit" },
   "info_configFileCreated": { "message": "Voaforona ilay raki-kirakira" },
   "tip_editToSetDefaults": { "message": "Manova io rakitra io hamolavolana ny sanda tsotra" },

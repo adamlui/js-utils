@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "No s'han processat fitxers JavaScript sense minificar" },
   "info_failedToMinify": { "message": "no s'ha pogut minificar" },
   "info_moreHelp": { "message": "Per obtenir més ajuda" },
+  "info_type": { "message": "tipus" },
+  "info_or": { "message": "o" },
   "info_visit": { "message": "visita" },
   "info_configFileCreated": { "message": "Fitxer de configuració creat" },
   "tip_editToSetDefaults": { "message": "Edita aquest fitxer per personalitzar els valors predeterminats" },

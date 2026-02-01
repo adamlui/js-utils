@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Жарактуу аргументтер төмөндө келтирилген" },
   "info_copying": { "message": "Алмашуу буферине көчүрүү" },
   "info_moreHelp": { "message": "Көбүрөөк маалымат алуу үчүн" },
+  "info_type": { "message": "тиби" },
+  "info_or": { "message": "же" },
   "info_visit": { "message": "иш сапары" },
   "info_configFileCreated": { "message": "Файлды конфигурациялоо" },
   "tip_editToSetDefaults": { "message": "Undo-type" },

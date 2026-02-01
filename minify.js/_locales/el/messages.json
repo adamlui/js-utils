@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Δεν γίνεται επεξεργασία μη ελαχιστοποιημένων αρχείων JavaScript" },
   "info_failedToMinify": { "message": "απέτυχε η ελαχιστοποίηση" },
   "info_moreHelp": { "message": "Για περισσότερη βοήθεια" },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "ή" },
   "info_visit": { "message": "επίσκεψη" },
   "info_configFileCreated": { "message": "Δημιουργήθηκε αρχείο διαμόρφωσης" },
   "tip_editToSetDefaults": { "message": "Επεξεργαστείτε αυτό το αρχείο για να προσαρμόσετε τις προεπιλογές" },

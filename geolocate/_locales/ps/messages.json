@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "باوري دلیلونه لاندې دي" },
   "info_copying": { "message": "کلیپ بورډ ته کاپي کول" },
   "info_moreHelp": { "message": "د نورې مرستې لپاره" },
+  "info_type": { "message": "ډول" },
+  "info_or": { "message": "یا" },
   "info_visit": { "message": "ليدنه" },
   "info_configFileCreated": { "message": "د تنظیم فایل جوړ شو" },
   "tip_editToSetDefaults": { "message": "دا دوتنه د تلوالې دوديزولو لپاره سمول" },

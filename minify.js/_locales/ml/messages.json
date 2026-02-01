@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "അൺമിനിഫൈഡ് ജാവാസ്ക്രിപ്റ്റ് ഫയലുകളൊന്നും പ്രോസസ്സ് ചെയ്തിട്ടില്ല" },
   "info_failedToMinify": { "message": "ചെറുതാക്കുന്നതിൽ പരാജയപ്പെട്ടു" },
   "info_moreHelp": { "message": "കൂടുതൽ സഹായത്തിനായി" },
+  "info_type": { "message": "തരം" },
+  "info_or": { "message": "അല്ലെങ്കില്‍" },
   "info_visit": { "message": "VISIT" },
   "info_configFileCreated": { "message": "കോൺഫിഗർ ഫയൽ സൃഷ്ടിച്ചു" },
   "tip_editToSetDefaults": { "message": "സ്ഥിരസ്ഥിതികൾ ഇച്ഛാനുസൃതമാക്കാൻ ഈ ഫയൽ എഡിറ്റുചെയ്യുക" },

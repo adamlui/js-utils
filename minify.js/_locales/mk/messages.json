@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Нема обработени неминифицирани JavaScript датотеки" },
   "info_failedToMinify": { "message": "не успеа да се минимизира" },
   "info_moreHelp": { "message": "За повеќе помош" },
+  "info_type": { "message": "Вид" },
+  "info_or": { "message": "или " },
   "info_visit": { "message": "Посета" },
   "info_configFileCreated": { "message": "Датотеката за конфигурација е создадена" },
   "tip_editToSetDefaults": { "message": "Уредете ја оваа датотека за да ги прилагодите стандардните вредности" },

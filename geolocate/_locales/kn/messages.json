@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "ಮಾನ್ಯವಾದ ಆರ್ಗ್ಯುಮೆಂಟ್ ‌ ಗಳು ಕೆಳಗೆ ಇವೆ" },
   "info_copying": { "message": "ಕ್ಲಿಪ್ ‌ ಬೋರ್ಡ್ ‌ ಗೆ ನಕಲಿಸಲಾಗುತ್ತಿದೆ" },
   "info_moreHelp": { "message": "ಹೆಚ್ಚಿನ ಸಹಾಯಕ್ಕಾಗಿ" },
+  "info_type": { "message": "ಪ್ರಕಾರ" },
+  "info_or": { "message": "ಅಥ" },
   "info_visit": { "message": "ಭೇಟಿ" },
   "info_configFileCreated": { "message": "ಕಾನ್ಫಿಗರ್ ಫೈಲ್ ರಚಿಸಲಾಗಿದೆ" },
   "tip_editToSetDefaults": { "message": "ಡೀಫಾಲ್ಟ್‌ಗಳನ್ನು ಕಸ್ಟಮೈಸ್ ಮಾಡಲು ಈ ಫೈಲ್ ಅನ್ನು ಸಂಪಾದಿಸಿ" },

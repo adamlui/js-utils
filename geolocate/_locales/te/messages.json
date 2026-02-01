@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "చెల్లుబాటు అయ్యే వాదనలు క్రింద ఉన్నాయి" },
   "info_copying": { "message": "క్లిప్ ‌ బోర్డ్ ‌ కు కాపీ చేస్తోంది" },
   "info_moreHelp": { "message": "మరింత సహాయం కోసం" },
+  "info_type": { "message": "రకం" },
+  "info_or": { "message": "లేదా" },
   "info_visit": { "message": "సందర్శించు" },
   "info_configFileCreated": { "message": "కాన్ఫిగర్ ఫైల్ సృష్టించబడింది" },
   "tip_editToSetDefaults": { "message": "డిఫాల్ట్ ‌ లను అనుకూలీకరించడానికి ఈ ఫైల్ ‌ ను సవరించండి" },

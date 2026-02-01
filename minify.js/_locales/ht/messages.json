@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Pa gen okenn dosye JavaScript ki pa modifye trete" },
   "info_failedToMinify": { "message": "pa t 'kapab minifye/échec de" },
   "info_moreHelp": { "message": "Pou plis èd/Pour plus d '" },
+  "info_type": { "message": "kalite/lèt/tip/tipe" },
+  "info_or": { "message": "oswa" },
   "info_visit": { "message": "vizite" },
   "info_configFileCreated": { "message": "Konfigire dosye ki te kreye" },
   "tip_editToSetDefaults": { "message": "Modifye dosye sa a pou Customize defo yo" },

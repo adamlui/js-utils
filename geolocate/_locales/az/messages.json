@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Etibarlı arqumentlər aşağıda göstərilib" },
   "info_copying": { "message": "Mübadilə buferinə kopyal" },
   "info_moreHelp": { "message": "Daha çox yardım üçün" },
+  "info_type": { "message": "növ" },
+  "info_or": { "message": "və ya" },
   "info_visit": { "message": "ziyarət" },
   "info_configFileCreated": { "message": "Faylı konfiqurasiya edin" },
   "tip_editToSetDefaults": { "message": "Standartları fərdiləşdirmək üçün bu faylı redaktə edin" },

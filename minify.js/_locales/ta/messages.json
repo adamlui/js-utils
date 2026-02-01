@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "பதிவு செய்யப்படாத ஜாவாஸ்கிரிப்ட் கோப்புகள் எதுவும் செயலாக்கப்படவில்லை" },
   "info_failedToMinify": { "message": "மினிஃபை செய்யத் தவறிவிட்டது" },
   "info_moreHelp": { "message": "மேலும் உதவிக்கு" },
+  "info_type": { "message": "வகை" },
+  "info_or": { "message": "அல்லது" },
   "info_visit": { "message": "வீட்டுக்கு வருகை" },
   "info_configFileCreated": { "message": "கட்டமைப்பு கோப்பு உருவாக்கப்பட்டது" },
   "tip_editToSetDefaults": { "message": "இயல்புநிலையைத் தனிப்பயனாக்க இந்தக் கோப்பைத் திருத்தவும்" },

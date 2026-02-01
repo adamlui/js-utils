@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Neapdorota jokių neapdorotų „JavaScript“ failų" },
   "info_failedToMinify": { "message": "nepavyko sumažinti" },
   "info_moreHelp": { "message": "Daugiau pagalbos" },
+  "info_type": { "message": "tipas" },
+  "info_or": { "message": "arba" },
   "info_visit": { "message": "aplankyti" },
   "info_configFileCreated": { "message": "Konfigūracijos failas sukurtas" },
   "tip_editToSetDefaults": { "message": "Redaguokite šį failą, kad pritaikytumėte numatytuosius nustatymus" },

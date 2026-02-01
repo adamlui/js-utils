@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Tidak ada file JavaScript yang belum diproses" },
   "info_failedToMinify": { "message": "gagal memperkecil" },
   "info_moreHelp": { "message": "Untuk bantuan lebih lanjut" },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "atau" },
   "info_visit": { "message": "Kunjungi" },
   "info_configFileCreated": { "message": "File konfigurasi dibuat" },
   "tip_editToSetDefaults": { "message": "Edit file ini untuk menyesuaikan default" },

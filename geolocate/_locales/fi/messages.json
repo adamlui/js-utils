@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Kelvolliset argumentit ovat alla" },
   "info_copying": { "message": "Kopioin leikepöydälle" },
   "info_moreHelp": { "message": "Saat lisäohjeita" },
+  "info_type": { "message": "tyyppi" },
+  "info_or": { "message": "vai" },
   "info_visit": { "message": "vieraile" },
   "info_configFileCreated": { "message": "Konfigurointitiedosto luotu" },
   "tip_editToSetDefaults": { "message": "Muokkaa tätä tiedostoa mukauttaaksesi oletuksia" },

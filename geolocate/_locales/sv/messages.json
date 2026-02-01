@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Giltiga argument finns nedan" },
   "info_copying": { "message": "Kopiera till klippbordet" },
   "info_moreHelp": { "message": "För mer hjälp" },
+  "info_type": { "message": "form" },
+  "info_or": { "message": "xx" },
   "info_visit": { "message": "besök" },
   "info_configFileCreated": { "message": "Konfigurationsfil skapad" },
   "tip_editToSetDefaults": { "message": "Redigera den här filen för att anpassa standardinställningar" },

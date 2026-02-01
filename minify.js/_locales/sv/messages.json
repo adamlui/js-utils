@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Inga ominifierade JavaScript-filer behandlade" },
   "info_failedToMinify": { "message": "misslyckades med att förminska" },
   "info_moreHelp": { "message": "För mer hjälp" },
+  "info_type": { "message": "form" },
+  "info_or": { "message": "xx" },
   "info_visit": { "message": "besök" },
   "info_configFileCreated": { "message": "Konfigurationsfil skapad" },
   "tip_editToSetDefaults": { "message": "Redigera den här filen för att anpassa standardinställningar" },

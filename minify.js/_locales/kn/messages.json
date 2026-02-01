@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "ಯಾವುದೇ ಅನ್ ಮಿನಿಫೈಡ್ ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಫೈಲ್ ಗಳನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗಿಲ್ಲ" },
   "info_failedToMinify": { "message": "ಮಿನಿಫೈ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ" },
   "info_moreHelp": { "message": "ಹೆಚ್ಚಿನ ಸಹಾಯಕ್ಕಾಗಿ" },
+  "info_type": { "message": "ಪ್ರಕಾರ" },
+  "info_or": { "message": "ಅಥ" },
   "info_visit": { "message": "ಭೇಟಿ" },
   "info_configFileCreated": { "message": "ಕಾನ್ಫಿಗರ್ ಫೈಲ್ ರಚಿಸಲಾಗಿದೆ" },
   "tip_editToSetDefaults": { "message": "ಡೀಫಾಲ್ಟ್‌ಗಳನ್ನು ಕಸ್ಟಮೈಸ್ ಮಾಡಲು ಈ ಫೈಲ್ ಅನ್ನು ಸಂಪಾದಿಸಿ" },

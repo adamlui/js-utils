@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Ongar ómineraðar JavaScript-fílar viðgjørdar" },
   "info_failedToMinify": { "message": "tað er ikki so lætt at fáa" },
   "info_moreHelp": { "message": "Fyri at fáa meira hjálp" },
+  "info_type": { "message": "Typa" },
+  "info_or": { "message": "ella" },
   "info_visit": { "message": "Vitja" },
   "info_configFileCreated": { "message": "Set upp fílu, sum er skapt" },
   "tip_editToSetDefaults": { "message": "Rætta hesa fílu fyri at tillaga feilir" },

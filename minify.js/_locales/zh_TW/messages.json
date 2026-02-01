@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "未處理未縮小的 JavaScript 檔案" },
   "info_failedToMinify": { "message": "無法縮小" },
   "info_moreHelp": { "message": "如需更多協助" },
+  "info_type": { "message": "種類" },
+  "info_or": { "message": "或" },
   "info_visit": { "message": "造訪" },
   "info_configFileCreated": { "message": "已建立組態檔案" },
   "tip_editToSetDefaults": { "message": "編輯此檔案以自訂預設值" },

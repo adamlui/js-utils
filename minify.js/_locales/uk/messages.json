@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Не оброблено немініфікованих файлів JavaScript" },
   "info_failedToMinify": { "message": "не вдалося мінімізувати" },
   "info_moreHelp": { "message": "Додаткова допомога" },
+  "info_type": { "message": "тип" },
+  "info_or": { "message": "або" },
   "info_visit": { "message": "візит" },
   "info_configFileCreated": { "message": "Файл налаштувань створено" },
   "tip_editToSetDefaults": { "message": "Відредагуйте цей файл, щоб налаштувати параметри за замовчуванням" },

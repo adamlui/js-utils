@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Non se procesaron ficheiros JavaScript non minificados" },
   "info_failedToMinify": { "message": "non se puido minificar" },
   "info_moreHelp": { "message": "Para máis axuda" },
+  "info_type": { "message": "tipo" },
+  "info_or": { "message": "ou" },
   "info_visit": { "message": "visita" },
   "info_configFileCreated": { "message": "Ficheiro de configuración creado" },
   "tip_editToSetDefaults": { "message": "Editar este ficheiro para personalizar os predeterminados" },

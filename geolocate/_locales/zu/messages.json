@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Izimpikiswano ezivumelekile zingezansi" },
   "info_copying": { "message": "Ukukopela ebhodini lokunamathisela" },
   "info_moreHelp": { "message": "Ukuze uthole usizo olwengeziwe" },
+  "info_type": { "message": "INHLOBO" },
+  "info_or": { "message": "noma" },
   "info_visit": { "message": "bayete" },
   "info_configFileCreated": { "message": "Lungiselela ifayela elakhiwe" },
   "tip_editToSetDefaults": { "message": "Hlela leli fayela ukuze uqoke okuzenzakalelayo" },

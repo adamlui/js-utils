@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Nincs feldolgozva nem ellenőrzött JavaScript-fájl" },
   "info_failedToMinify": { "message": "nem sikerült kicsinyíteni" },
   "info_moreHelp": { "message": "További segítségért" },
+  "info_type": { "message": "típus:" },
+  "info_or": { "message": "vagy" },
   "info_visit": { "message": "látogatás" },
   "info_configFileCreated": { "message": "Konfigurációs fájl létrehozva" },
   "tip_editToSetDefaults": { "message": "Szerkessze ezt a fájlt az alapértelmezett értékek testreszabásához" },

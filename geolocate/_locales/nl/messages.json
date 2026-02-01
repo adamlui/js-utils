@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Geldige argumenten staan hieronder" },
   "info_copying": { "message": "Kopiëren naar klembord" },
   "info_moreHelp": { "message": "voor meer hulp" },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "of" },
   "info_visit": { "message": "bezoek" },
   "info_configFileCreated": { "message": "Configuratiebestand aangemaakt" },
   "tip_editToSetDefaults": { "message": "Bewerk dit bestand om de standaardinstellingen aan te passen" },

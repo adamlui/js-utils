@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Minimoimattomia JavaScript-tiedostoja ei käsitelty" },
   "info_failedToMinify": { "message": "minimointi epäonnistui" },
   "info_moreHelp": { "message": "Saat lisäohjeita" },
+  "info_type": { "message": "tyyppi" },
+  "info_or": { "message": "vai" },
   "info_visit": { "message": "vieraile" },
   "info_configFileCreated": { "message": "Konfigurointitiedosto luotu" },
   "tip_editToSetDefaults": { "message": "Muokkaa tätä tiedostoa mukauttaaksesi oletuksia" },

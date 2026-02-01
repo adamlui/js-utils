@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "No unminified JavaScript mafaira kupatsanurwa" },
   "info_failedToMinify": { "message": "yakundikana kuderedza" },
   "info_moreHelp": { "message": "Kuti uwane rumwe rubatsiro" },
+  "info_type": { "message": "mota" },
+  "info_or": { "message": "kana" },
   "info_visit": { "message": "kushanya" },
   "info_configFileCreated": { "message": "Gadzirisa faira rakagadzirwa" },
   "tip_editToSetDefaults": { "message": "Gadzirisa faira iri kuti rigadzirise zvikanganiso" },

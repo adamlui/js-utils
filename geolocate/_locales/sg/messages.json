@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "A yeke wara atënë so ayeke na gbe ni" },
   "info_copying": { "message": "Gbu li ti mo na ndo ti clipboard ni" },
   "info_moreHelp": { "message": "Ti mû maboko na mo" },
+  "info_type": { "message": "mara ti zo" },
+  "info_or": { "message": "lani wala to bani" },
   "info_visit": { "message": "visit Mbi" },
   "info_configFileCreated": { "message": "Faïl so a leke ni" },
   "tip_editToSetDefaults": { "message": "Gbian faïl so ti leke ambeni ye so ayeke na lege ni ape" },

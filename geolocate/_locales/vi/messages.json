@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Dưới đây là các đối số hợp lệ" },
   "info_copying": { "message": "Đang chép vào bảng nháp" },
   "info_moreHelp": { "message": "Để được trợ giúp thêm" },
+  "info_type": { "message": "kiểu" },
+  "info_or": { "message": "hoặc" },
   "info_visit": { "message": "tham quan" },
   "info_configFileCreated": { "message": "Đã tạo tệp cấu hình" },
   "tip_editToSetDefaults": { "message": "Chỉnh sửa tệp này để tùy chỉnh mặc định" },

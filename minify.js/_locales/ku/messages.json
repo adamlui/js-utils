@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Tu pelên JavaScript-ê yên yekbûyî nehatin pêvajo kirin" },
   "info_failedToMinify": { "message": "nekarî kêm bike" },
   "info_moreHelp": { "message": "Ji bo bêtir alîkariyê" },
+  "info_type": { "message": "جۆر، چاپ دەکات، وێنە، نموونە، نووسین، چەشن، ئاست، چین، شێوە، پۆل، ڕێباز، بابەت\n[پزیشکی]: 1-نیشانە، دروشم، مۆر، تییپ 2-نموونەیەکی ئاسایی تێکڕا، بابەت 3-(لە نەخۆشیدا) نیشانەکانی جیاکەرەوەی تا، نەخۆشی.. ھتد یەک\n[زەویزانی]: نموونە، نقومی دەکات\n[ئامار]: تەرز، تیپ، شێواز، جۆر، چەشن\n[رۆژنامەوانی]: جۆر\n[ھونەر]: نموونە، تەرز\n[کۆمپیوتەر]: جۆر، چاپکردن" },
+  "info_or": { "message": "an" },
   "info_visit": { "message": "سەرلێدان، سەردان، قسە لەگەڵ کردن، تووش بوون (بەڵا)، سزادان، سەردانی دەکات، پشکنین، گەڕان لە" },
   "info_configFileCreated": { "message": "Pelê mîhengê hat afirandin" },
   "tip_editToSetDefaults": { "message": "Ji bo xwerûkirina mîhengan vê pelê biguherîne" },

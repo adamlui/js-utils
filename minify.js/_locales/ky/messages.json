@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Иштелип чыккан JavaScript файлдары жок" },
   "info_failedToMinify": { "message": "кичирейтүү ишке ашкан жок" },
   "info_moreHelp": { "message": "Көбүрөөк маалымат алуу үчүн" },
+  "info_type": { "message": "тиби" },
+  "info_or": { "message": "же" },
   "info_visit": { "message": "иш сапары" },
   "info_configFileCreated": { "message": "Файлды конфигурациялоо" },
   "tip_editToSetDefaults": { "message": "Undo-type" },

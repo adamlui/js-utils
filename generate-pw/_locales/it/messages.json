@@ -21,7 +21,7 @@
   "info_validArgs": { "message": "Gli argomenti validi sono riportati di seguito" },
   "info_copying": { "message": "Copia negli Appunti" },
   "info_moreHelp": { "message": "Per ulteriore assistenza" },
-  "info_type": { "message": "type" },
+  "info_type": { "message": "tipa" },
   "info_or": { "message": "o" },
   "info_visit": { "message": "visita" },
   "info_configFileCreated": { "message": "Nessun file config creato" },

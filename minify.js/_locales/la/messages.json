@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "No unminified JavaScript file" },
   "info_failedToMinify": { "message": "in minify" },
   "info_moreHelp": { "message": "Auxilium more" },
+  "info_type": { "message": "Typus" },
+  "info_or": { "message": "aut" },
   "info_visit": { "message": "frequento" },
   "info_configFileCreated": { "message": "Tabula Configuendi Creatio" },
   "tip_editToSetDefaults": { "message": "Mutare the file to customize defaults" },

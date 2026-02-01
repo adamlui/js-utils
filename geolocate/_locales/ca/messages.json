@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Els arguments vàlids són els següents" },
   "info_copying": { "message": "S'està copiant al porta-retalls" },
   "info_moreHelp": { "message": "Per obtenir més ajuda" },
+  "info_type": { "message": "tipus" },
+  "info_or": { "message": "o" },
   "info_visit": { "message": "visita" },
   "info_configFileCreated": { "message": "Fitxer de configuració creat" },
   "tip_editToSetDefaults": { "message": "Edita aquest fitxer per personalitzar els valors predeterminats" },

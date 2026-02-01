@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Platné argumenty jsou uvedeny níže" },
   "info_copying": { "message": "Kopírování do schránky" },
   "info_moreHelp": { "message": "Další pomoc" },
+  "info_type": { "message": "typ" },
+  "info_or": { "message": "nebo" },
   "info_visit": { "message": "Navštívit" },
   "info_configFileCreated": { "message": "Konfigurační soubor byl vytvořen" },
   "tip_editToSetDefaults": { "message": "Upravit tento soubor pro přizpůsobení výchozích hodnot" },

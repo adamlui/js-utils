@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "未处理任何未缩小的 JavaScript 文件" },
   "info_failedToMinify": { "message": "压缩失败" },
   "info_moreHelp": { "message": "需要更多帮助" },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "或" },
   "info_visit": { "message": "参观" },
   "info_configFileCreated": { "message": "配置文件已创建" },
   "tip_editToSetDefaults": { "message": "编辑此文件以自定义默认值" },

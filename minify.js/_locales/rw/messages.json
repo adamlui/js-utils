@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Nta dosiye ya JavaScript idahwitse yatunganijwe" },
   "info_failedToMinify": { "message": "yananiwe kugabanya" },
   "info_moreHelp": { "message": "Kubindi bisobanuro" },
+  "info_type": { "message": "Ubwoko" },
+  "info_or": { "message": "(?'Ops' or _BAR_ and _BAR_, _BAR_ \\\\s+ )" },
   "info_visit": { "message": "gusura" },
   "info_configFileCreated": { "message": "IDOSIYE Byaremwe" },
   "tip_editToSetDefaults": { "message": "Iyi IDOSIYE Kuri Kunoza Mburabuzi" },

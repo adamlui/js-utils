@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Derīgi argumenti ir zemāk" },
   "info_copying": { "message": "Notiek kopēšana starpliktuvē" },
   "info_moreHelp": { "message": "Lai saņemtu papildu palīdzību" },
+  "info_type": { "message": "tips" },
+  "info_or": { "message": "vai" },
   "info_visit": { "message": "Apmeklējums" },
   "info_configFileCreated": { "message": "Konfigurācijas fails izveidots" },
   "tip_editToSetDefaults": { "message": "Rediģējiet šo failu, lai pielāgotu noklusējuma iestatījumus" },

@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "I no gat ol JavaScript fail ol i bin stretim" },
   "info_failedToMinify": { "message": "i no gat wanpela samting i stap long en" },
   "info_moreHelp": { "message": "Bilong helpim yu" },
+  "info_type": { "message": "-Kain" },
+  "info_or": { "message": "o" },
   "info_visit": { "message": "visitim" },
   "info_configFileCreated": { "message": "Konfigim wanpela fail ol i bin wokim" },
   "tip_editToSetDefaults": { "message": "Edit this file to customise default" },

@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "هیچ فایل جاوا اسکریپت unminified پردازش نشده است" },
   "info_failedToMinify": { "message": "نتوانست به حداقل برسد" },
   "info_moreHelp": { "message": "برای اطلاعات بیشتر بخوانید" },
+  "info_type": { "message": "نوع" },
+  "info_or": { "message": "یا" },
   "info_visit": { "message": "مشاهده" },
   "info_configFileCreated": { "message": "فایل پیکربندی ایجاد شد" },
   "tip_editToSetDefaults": { "message": "برای سفارشی‌سازی پیش‌فرض‌ها، این فایل را ویرایش کنید" },

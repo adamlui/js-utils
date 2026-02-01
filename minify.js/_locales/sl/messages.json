@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Ni obdelanih nepojasnjenih datotek JavaScript" },
   "info_failedToMinify": { "message": "pomanjšanja ni bilo mogoče" },
   "info_moreHelp": { "message": "Za več pomoči" },
+  "info_type": { "message": "vrsta" },
+  "info_or": { "message": "ali" },
   "info_visit": { "message": "med obiskom" },
   "info_configFileCreated": { "message": "Konfiguracijska datoteka je ustvarjena" },
   "tip_editToSetDefaults": { "message": "Uredite to datoteko, da prilagodite privzete nastavitve" },

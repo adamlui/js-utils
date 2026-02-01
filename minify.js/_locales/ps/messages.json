@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "د جاواسکرېپټ بې معنی دوتنې نه دي پروسس شوي" },
   "info_failedToMinify": { "message": "په کمولو کې پاتې راغلی" },
   "info_moreHelp": { "message": "د نورې مرستې لپاره" },
+  "info_type": { "message": "ډول" },
+  "info_or": { "message": "یا" },
   "info_visit": { "message": "ليدنه" },
   "info_configFileCreated": { "message": "د تنظیم فایل جوړ شو" },
   "tip_editToSetDefaults": { "message": "دا دوتنه د تلوالې دوديزولو لپاره سمول" },

@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "לא עובדו קובצי JavaScript שלא סופקו" },
   "info_failedToMinify": { "message": "המינימום נכשל" },
   "info_moreHelp": { "message": "לקבלת עזרה נוספת" },
+  "info_type": { "message": "סוג" },
+  "info_or": { "message": "או" },
   "info_visit": { "message": "בקר" },
   "info_configFileCreated": { "message": "נוצר קובץ תצורה" },
   "tip_editToSetDefaults": { "message": "ערוך קובץ זה כדי להתאים אישית את ברירות המחדל" },

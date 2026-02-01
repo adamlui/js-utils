@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "קיין אַנמינאַפייד דזשאַוואַסקריפּט טעקעס פּראַסעסט" },
   "info_failedToMinify": { "message": "ניט אַנדערש צו פאַרמינערן" },
   "info_moreHelp": { "message": "פֿאַר מער הילף" },
+  "info_type": { "message": "טיפּ" },
+  "info_or": { "message": "אדער" },
   "info_visit": { "message": "באַזוכן" },
   "info_configFileCreated": { "message": "קאָנפיגוראַציע טעקע באשאפן" },
   "tip_editToSetDefaults": { "message": "רעדאַקטירן דעם טעקע צו קאַסטאַמייזן דיפאָלטס" },

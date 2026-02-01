@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Ulac ifuyla JavaScript ur nettwaseqdac ara" },
   "info_failedToMinify": { "message": "ur yezmir ara ad yeḥrez" },
   "info_moreHelp": { "message": "I ugar n tallelt" },
+  "info_type": { "message": "anaw" },
+  "info_or": { "message": "neɣ" },
   "info_visit": { "message": "Rzu" },
   "info_configFileCreated": { "message": "Afaylu yettwaxelqen" },
   "tip_editToSetDefaults": { "message": "Snifel afaylu-a akken ad tbeddleḍ tuccḍa" },

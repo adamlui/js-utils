@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Nav apstrādātu neminētu JavaScript failu" },
   "info_failedToMinify": { "message": "neizdevās samazināt" },
   "info_moreHelp": { "message": "Lai saņemtu papildu palīdzību" },
+  "info_type": { "message": "tips" },
+  "info_or": { "message": "vai" },
   "info_visit": { "message": "Apmeklējums" },
   "info_configFileCreated": { "message": "Konfigurācijas fails izveidots" },
   "tip_editToSetDefaults": { "message": "Rediģējiet šo failu, lai pielāgotu noklusējuma iestatījumus" },

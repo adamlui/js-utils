@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Brak przetworzonych niezminifikowanych plików JavaScript" },
   "info_failedToMinify": { "message": "nie udało się zminimalizować" },
   "info_moreHelp": { "message": ", aby otrzymali dalszą pomoc" },
+  "info_type": { "message": "Typ" },
+  "info_or": { "message": "albo" },
   "info_visit": { "message": "wizyta" },
   "info_configFileCreated": { "message": "Utworzono plik konfiguracyjny" },
   "tip_editToSetDefaults": { "message": "Edytuj ten plik, aby dostosować ustawienia domyślne" },

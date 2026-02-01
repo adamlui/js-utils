@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Geçerli argümanlar aşağıdadır" },
   "info_copying": { "message": "Panoya kopyalanıyor" },
   "info_moreHelp": { "message": "Daha fazla yardım için" },
+  "info_type": { "message": "türü" },
+  "info_or": { "message": "veya" },
   "info_visit": { "message": "ziyaret" },
   "info_configFileCreated": { "message": "Yapılandırma dosyası oluşturuldu" },
   "tip_editToSetDefaults": { "message": "Varsayılanları özelleştirmek için bu dosyayı düzenleyin" },

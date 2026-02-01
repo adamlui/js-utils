@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Dəqiqləşdirilməmiş JavaScript faylları işlənməyib" },
   "info_failedToMinify": { "message": "minimuma endirmək mümkün olmadı" },
   "info_moreHelp": { "message": "Daha çox yardım üçün" },
+  "info_type": { "message": "növ" },
+  "info_or": { "message": "və ya" },
   "info_visit": { "message": "ziyarət" },
   "info_configFileCreated": { "message": "Faylı konfiqurasiya edin" },
   "tip_editToSetDefaults": { "message": "Standartları fərdiləşdirmək üçün bu faylı redaktə edin" },

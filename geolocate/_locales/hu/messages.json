@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Az érvényes argumentumok alább találhatók" },
   "info_copying": { "message": "Másolás a vágólapra" },
   "info_moreHelp": { "message": "További segítségért" },
+  "info_type": { "message": "típus:" },
+  "info_or": { "message": "vagy" },
   "info_visit": { "message": "látogatás" },
   "info_configFileCreated": { "message": "Konfigurációs fájl létrehozva" },
   "tip_editToSetDefaults": { "message": "Szerkessze ezt a fájlt az alapértelmezett értékek testreszabásához" },

@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Dogry jedelleşmeler" },
   "info_copying": { "message": "Klipbordda kopy etmek" },
   "info_moreHelp": { "message": "Köpräk kömek etmek üçin" },
+  "info_type": { "message": "Hil" },
+  "info_or": { "message": "R" },
   "info_visit": { "message": "barmak" },
   "info_configFileCreated": { "message": "Ýaradylan faýly konfigur et" },
   "tip_editToSetDefaults": { "message": "Bu faýly düzedişler üçin düzediş et" },

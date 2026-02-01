@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Argumentos válidos están a continuación" },
   "info_copying": { "message": "Copiando para o portarretallos" },
   "info_moreHelp": { "message": "Para máis axuda" },
+  "info_type": { "message": "tipo" },
+  "info_or": { "message": "ou" },
   "info_visit": { "message": "visita" },
   "info_configFileCreated": { "message": "Ficheiro de configuración creado" },
   "tip_editToSetDefaults": { "message": "Editar este ficheiro para personalizar os predeterminados" },

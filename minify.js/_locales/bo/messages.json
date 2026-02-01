@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "JavaScript ཡིག་ཆ་མ་རྫོགས་པ་གང་ཡང་མ་བཀོད །" },
   "info_failedToMinify": { "message": "ཆུང་ཆུང་ཞིག་ཡིན་འདོད་ན །" },
   "info_moreHelp": { "message": "སྐྱབས་གྲོགས་ཀྱི་ཆེད་དུ་" },
+  "info_type": { "message": "རིགས་དབྱེ་" },
+  "info_or": { "message": "ཡང་ན་" },
   "info_visit": { "message": "བལྟ།" },
   "info_configFileCreated": { "message": "སྒྲིག་འཇུག་བྱས་ཚད ། ཐེངས་10 ལས་ཉུང་བ ། ཐོན་རིམ་5.7.1" },
   "tip_editToSetDefaults": { "message": "ཡིག་ཆ་འདི་རང་སོ་སོར་བཟོ་བཅོས་བྱེད་པ" },

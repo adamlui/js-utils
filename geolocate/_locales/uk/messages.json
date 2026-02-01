@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Нижче наведено дійсні аргументи" },
   "info_copying": { "message": "Копіювання до буфера" },
   "info_moreHelp": { "message": "Додаткова допомога" },
+  "info_type": { "message": "тип" },
+  "info_or": { "message": "або" },
   "info_visit": { "message": "візит" },
   "info_configFileCreated": { "message": "Файл налаштувань створено" },
   "tip_editToSetDefaults": { "message": "Відредагуйте цей файл, щоб налаштувати параметри за замовчуванням" },

@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "No file Unminified JavaScript file" },
   "info_failedToMinify": { "message": "fela Anikulapo Kuti Minify" },
   "info_moreHelp": { "message": "Ukwishibilapo nafimbi pa kwafwa" },
+  "info_type": { "message": "Umusango" },
+  "info_or": { "message": "nelyo" },
   "info_visit": { "message": "tandalila" },
   "info_configFileCreated": { "message": "Config file Created" },
   "tip_editToSetDefaults": { "message": "Sangeni iyi file pa kuti mulepanga ifilubo" },

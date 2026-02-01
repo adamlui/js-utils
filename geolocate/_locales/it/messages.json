@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Gli argomenti validi sono riportati di seguito" },
   "info_copying": { "message": "Copia negli Appunti" },
   "info_moreHelp": { "message": "Per ulteriore assistenza" },
+  "info_type": { "message": "tipo" },
+  "info_or": { "message": "oppure" },
   "info_visit": { "message": "visita" },
   "info_configFileCreated": { "message": "Nessun file config creato" },
   "tip_editToSetDefaults": { "message": "Modifica questo file per personalizzare le impostazioni predefinite" },

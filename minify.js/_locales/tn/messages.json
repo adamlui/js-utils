@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Ga go na difaele dipe tsa JavaScript tse di rarabolotsweng" },
   "info_failedToMinify": { "message": "a retelelwa go minify" },
   "info_moreHelp": { "message": "Go bona thuso go ya pele" },
+  "info_type": { "message": "Mofuta" },
+  "info_or": { "message": "GOBA" },
   "info_visit": { "message": "Ketelo" },
   "info_configFileCreated": { "message": "Config file created" },
   "tip_editToSetDefaults": { "message": "Rulaganya faele eno gore o dire dilo tse di sa tlwaelegang ka namana" },

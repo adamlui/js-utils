@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Ang balido nga mga argumento anaa sa ubos" },
   "info_copying": { "message": "Pagkopya sa clipboard" },
   "info_moreHelp": { "message": "Alang sa dugang nga tabang" },
+  "info_type": { "message": "Matang" },
+  "info_or": { "message": "o" },
   "info_visit": { "message": "duaw" },
   "info_configFileCreated": { "message": "Gihimo ang file sa config" },
   "tip_editToSetDefaults": { "message": "I-edit kini nga file aron ipasadya ang mga default" },

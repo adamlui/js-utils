@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Geen onminified JavaScript-lêers verwerk nie" },
   "info_failedToMinify": { "message": "misluk om te minifiseer" },
   "info_moreHelp": { "message": "Vir meer hulp" },
+  "info_type": { "message": "tipe" },
+  "info_or": { "message": "of" },
   "info_visit": { "message": "keiur" },
   "info_configFileCreated": { "message": "Konfigureer lêer geskep" },
   "tip_editToSetDefaults": { "message": "Redigeer hierdie lêer om verstek aan te pas" },

@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Ni phroseswyd unrhyw ffeiliau Javascript heb eu trefnu" },
   "info_failedToMinify": { "message": "methwyd minimeiddio" },
   "info_moreHelp": { "message": "Am fwy o help" },
+  "info_type": { "message": "mâth" },
+  "info_or": { "message": "neu" },
   "info_visit": { "message": "ymweld" },
   "info_configFileCreated": { "message": "Crëwyd y ffeil cyfluniad" },
   "tip_editToSetDefaults": { "message": "Golygu 'r ffeil yma i gyfaddasu rhagosodiadau" },

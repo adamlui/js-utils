@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "ዘይተዳለወ ጃቫስክሪፕት ፋይላት ኣይተሰርሐን" },
   "info_failedToMinify": { "message": "ክነጽጎ ኣይከኣለን ።" },
   "info_moreHelp": { "message": "ዝያዳ ሓገዝ" },
+  "info_type": { "message": "ዓይነት" },
+  "info_or": { "message": "ወይ ከኣ " },
   "info_visit": { "message": "ጎብንይ" },
   "info_configFileCreated": { "message": "ፋይል ተፈጢሩ" },
   "tip_editToSetDefaults": { "message": "ጉድለታት ንምምዝጋብ ነዚ ፋይል ኣዐሪ" },

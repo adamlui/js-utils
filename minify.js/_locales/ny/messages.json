@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "No unminified JavaScript files processed" },
   "info_failedToMinify": { "message": "failed to minify" },
   "info_moreHelp": { "message": "For more help" },
+  "info_type": { "message": "Mtundu" },
+  "info_or": { "message": "kapena" },
   "info_visit": { "message": "visit" },
   "info_configFileCreated": { "message": "Konzani fayilo yopangidwa" },
   "tip_editToSetDefaults": { "message": "Sinthani fayiloyi kuti musinthe zolakwika" },

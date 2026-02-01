@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Baliozko argumentuak behean daude" },
   "info_copying": { "message": "Arbelean kopiatzen" },
   "info_moreHelp": { "message": "Laguntza gehiagorako" },
+  "info_type": { "message": "mota" },
+  "info_or": { "message": "edo" },
   "info_visit": { "message": "Bisitatu" },
   "info_configFileCreated": { "message": "Konfigurazio fitxategia sortu da" },
   "tip_editToSetDefaults": { "message": "Editatu fitxategi hau lehenetsitako balioak pertsonalizatzeko" },

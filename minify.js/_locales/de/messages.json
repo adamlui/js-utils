@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Keine nicht minimierten JavaScript-Dateien verarbeitet" },
   "info_failedToMinify": { "message": "konnte nicht minimiert werden" },
   "info_moreHelp": { "message": "Für weitere Hilfe" },
+  "info_type": { "message": "Typ" },
+  "info_or": { "message": "oder" },
   "info_visit": { "message": "Besuch" },
   "info_configFileCreated": { "message": "Konfigurationsdatei erstellt" },
   "tip_editToSetDefaults": { "message": "Bearbeiten Sie diese Datei, um die Standardeinstellungen anzupassen" },

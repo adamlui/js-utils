@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "To'g'ri dalillar quyida keltirilgan" },
   "info_copying": { "message": "Buferga nusxalanmoqda" },
   "info_moreHelp": { "message": "Ko'proq yordam uchun" },
+  "info_type": { "message": "tur" },
+  "info_or": { "message": "yoki" },
   "info_visit": { "message": "tashrif buyuring" },
   "info_configFileCreated": { "message": "Konfiguratsiya fayli yaratildi" },
   "tip_editToSetDefaults": { "message": "Standart sozlamalarni sozlash uchun ushbu faylni tahrirlang" },

@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Kichiklashtirilmagan JavaScript fayllari qayta ishlanmadi" },
   "info_failedToMinify": { "message": "kichiklashtira olmadi" },
   "info_moreHelp": { "message": "Ko'proq yordam uchun" },
+  "info_type": { "message": "tur" },
+  "info_or": { "message": "yoki" },
   "info_visit": { "message": "tashrif buyuring" },
   "info_configFileCreated": { "message": "Konfiguratsiya fayli yaratildi" },
   "tip_editToSetDefaults": { "message": "Standart sozlamalarni sozlash uchun ushbu faylni tahrirlang" },

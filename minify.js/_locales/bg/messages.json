@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Няма обработени непроменени JavaScript файлове" },
   "info_failedToMinify": { "message": "неуспешно минимизиране" },
   "info_moreHelp": { "message": "За повече помощ" },
+  "info_type": { "message": "тип" },
+  "info_or": { "message": "или" },
   "info_visit": { "message": "посетете" },
   "info_configFileCreated": { "message": "Конфигуриране на създаден файл" },
   "tip_editToSetDefaults": { "message": "Редактирайте този файл, за да персонализирате настройките по подразбиране" },

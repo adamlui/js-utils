@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "لا توجد ملفات جافا سكريبت غير محدودة تمت معالجتها" },
   "info_failedToMinify": { "message": "فشل التصغير" },
   "info_moreHelp": { "message": "لمزيد من المساعدة" },
+  "info_type": { "message": "نوع المقاول" },
+  "info_or": { "message": "أو" },
   "info_visit": { "message": "قم بزيارة" },
   "info_configFileCreated": { "message": "تم إنشاء ملف التكوين" },
   "tip_editToSetDefaults": { "message": "تعديل هذا الملف لتخصيص الإعدادات الافتراضية" },

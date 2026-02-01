@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Gëlteg Argumenter sinn hei ënnendrënner" },
   "info_copying": { "message": "Op Clipboard kopéieren" },
   "info_moreHelp": { "message": "Fir méi Hëllef" },
+  "info_type": { "message": "Typ" },
+  "info_or": { "message": "oder" },
   "info_visit": { "message": "besicht" },
   "info_configFileCreated": { "message": "Datei konfiguréieren" },
   "tip_editToSetDefaults": { "message": "Änneren dës Datei fir Standarden unzepassen" },

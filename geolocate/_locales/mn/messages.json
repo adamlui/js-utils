@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Зөв аргументууд доор байна" },
   "info_copying": { "message": "Түр санах ой руу хуулах" },
   "info_moreHelp": { "message": "Нэмэлт тусламж" },
+  "info_type": { "message": "Судалгааны хэлбэр" },
+  "info_or": { "message": "эсвэл" },
   "info_visit": { "message": "Зочлох" },
   "info_configFileCreated": { "message": "Үүсгэсэн тохиргооны файл" },
   "tip_editToSetDefaults": { "message": "Өгөгдмөлийг өөрчлөхийн тулд энэ файлыг засах" },

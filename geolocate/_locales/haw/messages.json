@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Aia ma lalo nā manaʻo kūpono" },
   "info_copying": { "message": "Ke kope nei i ka papa ʻokiʻoki" },
   "info_moreHelp": { "message": "No ke kōkua hou aku" },
+  "info_type": { "message": "Ke ‘Ano" },
+  "info_or": { "message": "a i ʻole" },
   "info_visit": { "message": "kipa" },
   "info_configFileCreated": { "message": "Ua hana ʻia ka faila config" },
   "tip_editToSetDefaults": { "message": "Hoʻoponopono i kēia faila e hoʻopilikino i nā paʻamau" },

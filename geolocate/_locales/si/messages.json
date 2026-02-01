@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "වලංගු තර්ක පහත දැක්වේ" },
   "info_copying": { "message": "ක්ලිප් පුවරුවට පිටපත් කරමින්" },
   "info_moreHelp": { "message": "තවත් උදව් සඳහා" },
+  "info_type": { "message": "ගූගල්" },
+  "info_or": { "message": "හෝ" },
   "info_visit": { "message": "සංචාරය" },
   "info_configFileCreated": { "message": "සැකසූ ගොනුව සකසන්න" },
   "tip_editToSetDefaults": { "message": "පෙරනිමි රිසිකරණය කිරීමට මෙම ගොනුව සංස්කරණය කරන්න" },

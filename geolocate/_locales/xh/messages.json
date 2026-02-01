@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Iimpikiswano ezichanekileyo zingezantsi" },
   "info_copying": { "message": "ikhuphela kwibhodi eqhotyoshwayo" },
   "info_moreHelp": { "message": "Ukuze ufumane uncedo olungakumbi" },
+  "info_type": { "message": "Udidi" },
+  "info_or": { "message": "okanye" },
   "info_visit": { "message": "" },
   "info_configFileCreated": { "message": "Lungisa ifayile eyenziweyo" },
   "tip_editToSetDefaults": { "message": "Lungisa le fayile ukuze ulungiselele ukungagqibekanga" },

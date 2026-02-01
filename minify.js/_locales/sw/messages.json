@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Hakuna faili za JavaScript zisizoshughulikiwa" },
   "info_failedToMinify": { "message": "imeshindwa kupunguza" },
   "info_moreHelp": { "message": "Kwa msaada zaidi" },
+  "info_type": { "message": "aina" },
+  "info_or": { "message": "au " },
   "info_visit": { "message": "Kutembelea" },
   "info_configFileCreated": { "message": "Sanidi faili iliyoundwa" },
   "tip_editToSetDefaults": { "message": "Hariri faili hili ili ubadilishe chaguo-msingi" },

@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "الحجج الصالحة أدناه" },
   "info_copying": { "message": "لصق من الحافظة... user on host" },
   "info_moreHelp": { "message": "لمزيد من المساعدة" },
+  "info_type": { "message": "نوع المقاول" },
+  "info_or": { "message": "أو" },
   "info_visit": { "message": "قم بزيارة" },
   "info_configFileCreated": { "message": "تم إنشاء ملف التكوين" },
   "tip_editToSetDefaults": { "message": "تعديل هذا الملف لتخصيص الإعدادات الافتراضية" },

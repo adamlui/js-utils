@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Keng onminifizéiert JavaScript-Dateien veraarbecht" },
   "info_failedToMinify": { "message": "minifizéierung feelgeschloen" },
   "info_moreHelp": { "message": "Fir méi Hëllef" },
+  "info_type": { "message": "Typ" },
+  "info_or": { "message": "oder" },
   "info_visit": { "message": "besicht" },
   "info_configFileCreated": { "message": "Datei konfiguréieren" },
   "tip_editToSetDefaults": { "message": "Änneren dës Datei fir Standarden unzepassen" },

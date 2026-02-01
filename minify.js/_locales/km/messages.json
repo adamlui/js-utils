@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "គ្មាន ឯកសារ JavaScript ដែល មិន បាន ដំណើរការ" },
   "info_failedToMinify": { "message": "បរាជ័យក្នុងការបង្រួមជាអប្បបរមា" },
   "info_moreHelp": { "message": "សម្រាប់ជំនួយបន្ថែម" },
+  "info_type": { "message": "ប្រភេទ" },
+  "info_or": { "message": "ឬ" },
   "info_visit": { "message": "ទស្សនា៖" },
   "info_configFileCreated": { "message": "បានបង្កើតឯកសារកំណត់រចនាសម្ព័ន្ធ" },
   "tip_editToSetDefaults": { "message": "កែសម្រួលឯកសារនេះដើម្បីប្ដូរលំនាំដើមតាមបំណង" },

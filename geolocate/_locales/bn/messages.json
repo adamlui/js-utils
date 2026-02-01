@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "বৈধ আর্গুমেন্ট নিচে দেওয়া হল" },
   "info_copying": { "message": "ক্লিপবোর্ডে অনুলিপি করা হচ্ছে" },
   "info_moreHelp": { "message": "আরও সাহায্যের জন্য" },
+  "info_type": { "message": "" },
+  "info_or": { "message": "অথবা" },
   "info_visit": { "message": "ভিজিট করুন" },
   "info_configFileCreated": { "message": "কনফিগ ফাইল তৈরি করা হয়েছে" },
   "tip_editToSetDefaults": { "message": "ডিফল্টগুলি কাস্টমাইজ করতে এই ফাইলটি সম্পাদনা করুন" },

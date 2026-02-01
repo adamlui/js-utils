@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "འོས་འབབ་ཅན་གྱི་རྩོད་གཞི་ཚུ་ འོག་ལུ་བཀོད་ཡོདཔ་ཨིན།" },
   "info_copying": { "message": "སྒྲིག་འཇུག་བྱས་ཚད། ཐེངས་ 3 ལས་ཉུང་བ། ཐོན་རིམ་" },
   "info_moreHelp": { "message": "ཆ་རོགས་འབད་ནིའི་དོན་ལུ་" },
+  "info_type": { "message": "རིགས་" },
+  "info_or": { "message": "ཡང་ན།" },
   "info_visit": { "message": "ལྟ་བཤལཔ་" },
   "info_configFileCreated": { "message": "གཞི་སྒྲིག་ཡིག་སྣོད་ཅིག་བཟོ་ཡོདཔ་ཨིན།" },
   "tip_editToSetDefaults": { "message": "འདི་བཟུམ་གྱི་ཡིག་སྣོད་ཚུ་ རང་ལུགས་སྒྲིག་ནི་གི་དོན་ལུ་ བསྒྱུར་བཅོས་འབད་" },

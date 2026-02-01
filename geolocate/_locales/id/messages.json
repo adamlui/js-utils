@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Argumen yang valid ada di bawah ini" },
   "info_copying": { "message": "Menyalin ke clipboard" },
   "info_moreHelp": { "message": "Untuk bantuan lebih lanjut" },
+  "info_type": { "message": "type" },
+  "info_or": { "message": "atau" },
   "info_visit": { "message": "Kunjungi" },
   "info_configFileCreated": { "message": "File konfigurasi dibuat" },
   "tip_editToSetDefaults": { "message": "Edit file ini untuk menyesuaikan default" },

@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Ez da gutxitu gabeko JavaScript fitxategirik prozesatu" },
   "info_failedToMinify": { "message": "huts egin du txikitu" },
   "info_moreHelp": { "message": "Laguntza gehiagorako" },
+  "info_type": { "message": "mota" },
+  "info_or": { "message": "edo" },
   "info_visit": { "message": "Bisitatu" },
   "info_configFileCreated": { "message": "Konfigurazio fitxategia sortu da" },
   "tip_editToSetDefaults": { "message": "Editatu fitxategi hau lehenetsitako balioak pertsonalizatzeko" },

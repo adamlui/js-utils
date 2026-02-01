@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Ol gutpela tok i stap daunbilo" },
   "info_copying": { "message": "Kopiim long Clipboard" },
   "info_moreHelp": { "message": "Bilong helpim yu" },
+  "info_type": { "message": "-Kain" },
+  "info_or": { "message": "o" },
   "info_visit": { "message": "visitim" },
   "info_configFileCreated": { "message": "Konfigim wanpela fail ol i bin wokim" },
   "tip_editToSetDefaults": { "message": "Edit this file to customise default" },

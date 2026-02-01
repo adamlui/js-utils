@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Aucun fichier JavaScript non minifié traité" },
   "info_failedToMinify": { "message": "échec de la minification" },
   "info_moreHelp": { "message": "Pour plus d’aide" },
+  "info_type": { "message": "taper" },
+  "info_or": { "message": "ou" },
   "info_visit": { "message": "visite" },
   "info_configFileCreated": { "message": "Fichier de configuration créé" },
   "tip_editToSetDefaults": { "message": "Modifiez ce fichier pour personnaliser les valeurs par défaut" },

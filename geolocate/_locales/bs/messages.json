@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Važeći argumenti su ispod" },
   "info_copying": { "message": "Kopiranje u međuspremnik" },
   "info_moreHelp": { "message": "Za dodatnu pomoć" },
+  "info_type": { "message": "tip" },
+  "info_or": { "message": "ili" },
   "info_visit": { "message": "Posjeti" },
   "info_configFileCreated": { "message": "Konfiguracijska datoteka je kreirana" },
   "tip_editToSetDefaults": { "message": "Uredite ovu datoteku da biste prilagodili zadane postavke" },

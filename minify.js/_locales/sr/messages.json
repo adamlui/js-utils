@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Nema obrađenih nesminiranih JavaScript datoteka" },
   "info_failedToMinify": { "message": "umanjenje nije uspelo" },
   "info_moreHelp": { "message": "Za dodatnu pomoć" },
+  "info_type": { "message": "vrsta" },
+  "info_or": { "message": "или" },
   "info_visit": { "message": "poseta" },
   "info_configFileCreated": { "message": "Konfiguraciona datoteka je kreirana" },
   "tip_editToSetDefaults": { "message": "Izmenite ovu datoteku da biste prilagodili podrazumevana podešavanja" },

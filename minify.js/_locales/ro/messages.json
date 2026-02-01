@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "Nu au fost procesate fișiere JavaScript neminificate" },
   "info_failedToMinify": { "message": "nu a reușit să minimizeze" },
   "info_moreHelp": { "message": "Pentru mai mult ajutor" },
+  "info_type": { "message": "type (tip)" },
+  "info_or": { "message": "sau" },
   "info_visit": { "message": "a vizita" },
   "info_configFileCreated": { "message": "Fișier de configurare creat" },
   "tip_editToSetDefaults": { "message": "Editați acest fișier pentru a personaliza valorile implicite" },

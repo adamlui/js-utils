@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "Agiman ki valab yo anba a" },
   "info_copying": { "message": "Kopi nan tablo" },
   "info_moreHelp": { "message": "Pou plis èd/Pour plus d '" },
+  "info_type": { "message": "kalite/lèt/tip/tipe" },
+  "info_or": { "message": "oswa" },
   "info_visit": { "message": "vizite" },
   "info_configFileCreated": { "message": "Konfigire dosye ki te kreye" },
   "tip_editToSetDefaults": { "message": "Modifye dosye sa a pou Customize defo yo" },

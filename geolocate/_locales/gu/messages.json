@@ -20,6 +20,8 @@
   "info_validArgs": { "message": "માન્ય દલીલો નીચે છે" },
   "info_copying": { "message": "ક્લિપબોર્ડ પર કૉપિ કરી રહ્યું છે" },
   "info_moreHelp": { "message": "વધુ મદદ માટે" },
+  "info_type": { "message": "પ્રકાર" },
+  "info_or": { "message": "અથવા" },
   "info_visit": { "message": "મુલાકાત" },
   "info_configFileCreated": { "message": "રૂપરેખાંકન ફાઇલ બનાવવામાં આવી" },
   "tip_editToSetDefaults": { "message": "ડિફોલ્ટ્સને કસ્ટમાઇઝ કરવા માટે આ ફાઇલને સંપાદિત કરો" },

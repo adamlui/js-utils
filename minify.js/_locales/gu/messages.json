@@ -31,6 +31,8 @@
   "info_noFilesProcessed": { "message": "કોઈ અનમિનિફાઇડ જાવાસ્ક્રિપ્ટ ફાઇલો પર પ્રક્રિયા કરવામાં આવી નથી" },
   "info_failedToMinify": { "message": "ઘટાડવામાં નિષ્ફળ" },
   "info_moreHelp": { "message": "વધુ મદદ માટે" },
+  "info_type": { "message": "પ્રકાર" },
+  "info_or": { "message": "અથવા" },
   "info_visit": { "message": "મુલાકાત" },
   "info_configFileCreated": { "message": "રૂપરેખાંકન ફાઇલ બનાવવામાં આવી" },
   "tip_editToSetDefaults": { "message": "ડિફોલ્ટ્સને કસ્ટમાઇઝ કરવા માટે આ ફાઇલને સંપાદિત કરો" },
