@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Template file not found at" },
   "warn_configFileExists": { "message": "Config file already exists" },
   "info_exampleValidConfigFile": { "message": "Example valid config file" },
-  "info_validArgs": { "message": "Gëlteg Argumenter sinn hei ënnendrënner" },
   "info_copying": { "message": "Op Clipboard kopéieren" },
   "info_moreHelp": { "message": "Fir méi Hëllef" },
   "info_type": { "message": "Typ" },

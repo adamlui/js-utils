@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "在以下位置未找到模板文件：" },
   "warn_configFileExists": { "message": "配置文件已存在" },
   "info_exampleValidConfigFile": { "message": "有效配置文件示例" },
-  "info_validArgs": { "message": "有效的参数如下" },
   "info_copying": { "message": "复制到剪贴板" },
   "info_moreHelp": { "message": "需要更多帮助" },
   "info_type": { "message": "类型" },

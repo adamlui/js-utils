@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Il-fajl mudell ma nstabx fi" },
   "warn_configFileExists": { "message": "Il-fajl tal-konfigurazzjoni diġà jeżisti" },
   "info_exampleValidConfigFile": { "message": "Eżempju ta' fajl validu tal-konfig" },
-  "info_validArgs": { "message": "L-argumenti validi huma hawn taħt" },
   "info_copying": { "message": "Kif tikkopja għall-klipbord" },
   "info_moreHelp": { "message": "Għal aktar għajnuna" },
   "info_type": { "message": "Tip" },

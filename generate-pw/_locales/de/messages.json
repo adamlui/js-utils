@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Vorlagendatei nicht gefunden unter" },
   "warn_configFileExists": { "message": "Die Konfigurationsdatei ist bereits vorhanden" },
   "info_exampleValidConfigFile": { "message": "Beispiel gültige Konfigurationsdatei" },
-  "info_validArgs": { "message": "Gültige Argumente sind unten aufgeführt" },
   "info_copying": { "message": "Kopiere in Zwischenablage" },
   "info_moreHelp": { "message": "Für weitere Hilfe" },
   "info_type": { "message": "Typ" },

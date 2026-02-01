@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Ol i no painim wanpela hap bilong dispela hap" },
   "warn_configFileExists": { "message": "Konfigim fail i stap pinis" },
   "info_exampleValidConfigFile": { "message": "Wanpela gutpela piksa bilong dispela fail" },
-  "info_validArgs": { "message": "Ol gutpela tok i stap daunbilo" },
   "info_copying": { "message": "Kopiim long Clipboard" },
   "info_moreHelp": { "message": "Bilong helpim yu" },
   "info_type": { "message": "-Kain" },

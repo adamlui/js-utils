@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Sniðmyndafíla ikki funnin á" },
   "warn_configFileExists": { "message": "Set upp fílu, sum longu er til" },
   "info_exampleValidConfigFile": { "message": "Dømi góð konfiguratiónsfíla" },
-  "info_validArgs": { "message": "Góðu argumentini niðanfyri" },
   "info_copying": { "message": "At koppa á klippborðið" },
   "info_moreHelp": { "message": "Fyri at fáa meira hjálp" },
   "info_type": { "message": "Typa" },

@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Sjabloonbestand niet gevonden op" },
   "warn_configFileExists": { "message": "Configuratiebestand bestaat al" },
   "info_exampleValidConfigFile": { "message": "Voorbeeld geldig configuratiebestand" },
-  "info_validArgs": { "message": "Geldige argumenten staan hieronder" },
   "info_copying": { "message": "Kopiëren naar klembord" },
   "info_moreHelp": { "message": "voor meer hulp" },
   "info_type": { "message": "type" },

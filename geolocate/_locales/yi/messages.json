@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "טעמפּלאַט טעקע נישט געפֿונען ביי" },
   "warn_configFileExists": { "message": "קאָנפיגוראַציע טעקע עקזיסטירט שוין" },
   "info_exampleValidConfigFile": { "message": "בייַשפּיל גילטיק קאָנפיג טעקע" },
-  "info_validArgs": { "message": "גילטיק אַרגומענטן זענען אונטן" },
   "info_copying": { "message": "קאַפּיינג צו קליפּבאָרד" },
   "info_moreHelp": { "message": "פֿאַר מער הילף" },
   "info_type": { "message": "טיפּ" },

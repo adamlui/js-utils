@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Archive for No Found" },
   "warn_configFileExists": { "message": "Archivo ya existe" },
   "info_exampleValidConfigFile": { "message": "Documente similare cu Config File" },
-  "info_validArgs": { "message": "Argumentonan valido ta" },
   "info_copying": { "message": "Copiando a Clipboard" },
   "info_moreHelp": { "message": "Pa mas ayudo" },
   "info_type": { "message": "tipo" },

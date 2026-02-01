@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "에서 템플릿 파일을 찾을 수 없음" },
   "warn_configFileExists": { "message": "구성 파일이 이미 존재합니다" },
   "info_exampleValidConfigFile": { "message": "유효한 구성 파일의 예" },
-  "info_validArgs": { "message": "유효한 인수는 다음과 같습니다" },
   "info_copying": { "message": "클립보드로 복사하는 중" },
   "info_moreHelp": { "message": "더 많은 도움 요청" },
   "info_type": { "message": "유형" },

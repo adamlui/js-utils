@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Arquivo de modelo não encontrado" },
   "warn_configFileExists": { "message": "O ficheiro de configuração já existe" },
   "info_exampleValidConfigFile": { "message": "Exemplo de ficheiro de configuração válido" },
-  "info_validArgs": { "message": "Os argumentos válidos estão abaixo" },
   "info_copying": { "message": "A copiar para a área de transferência" },
   "info_moreHelp": { "message": "Para obter mais ajuda" },
   "info_type": { "message": "tipo" },

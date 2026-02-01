@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "File modello non trovato in" },
   "warn_configFileExists": { "message": "Il file di configurazione esiste già" },
   "info_exampleValidConfigFile": { "message": "Esempio di file di configurazione valido" },
-  "info_validArgs": { "message": "Gli argomenti validi sono riportati di seguito" },
   "info_copying": { "message": "Copia negli Appunti" },
   "info_moreHelp": { "message": "Per ulteriore assistenza" },
   "info_type": { "message": "tipo" },

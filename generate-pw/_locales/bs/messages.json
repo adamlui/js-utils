@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Datoteka šablona nije pronađena na" },
   "warn_configFileExists": { "message": "Konfiguracijska datoteka već postoji" },
   "info_exampleValidConfigFile": { "message": "Primjer važeće konfiguracijske datoteke" },
-  "info_validArgs": { "message": "Važeći argumenti su ispod" },
   "info_copying": { "message": "Kopiranje u međuspremnik" },
   "info_moreHelp": { "message": "Za dodatnu pomoć" },
   "info_type": { "message": "naselja" },

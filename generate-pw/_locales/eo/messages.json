@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Ŝablondosiero ne trovita ĉe" },
   "warn_configFileExists": { "message": "Agordodosiero jam ekzistas" },
   "info_exampleValidConfigFile": { "message": "Ekzempla valida agordodosiero" },
-  "info_validArgs": { "message": "Validaj argumentoj estas sube" },
   "info_copying": { "message": "Kopiante al interdeponejo" },
   "info_moreHelp": { "message": "Por pli da helpo" },
   "info_type": { "message": "tipo" },

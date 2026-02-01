@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Soubor šablony nebyl nalezen v" },
   "warn_configFileExists": { "message": "Konfigurační soubor již existuje" },
   "info_exampleValidConfigFile": { "message": "Příklad platného konfiguračního souboru" },
-  "info_validArgs": { "message": "Platné argumenty jsou uvedeny níže" },
   "info_copying": { "message": "Kopírování do schránky" },
   "info_moreHelp": { "message": "Další pomoc" },
   "info_type": { "message": "typ" },

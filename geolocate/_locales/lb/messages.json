@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Schablounendatei net fonnt bei" },
   "warn_configFileExists": { "message": "Datei konfiguréieren existéiert schonn" },
   "info_exampleValidConfigFile": { "message": "Beispill valabel Konfiguratiounsdatei" },
-  "info_validArgs": { "message": "Gëlteg Argumenter sinn hei ënnendrënner" },
   "info_copying": { "message": "Op Clipboard kopéieren" },
   "info_moreHelp": { "message": "Fir méi Hëllef" },
   "info_type": { "message": "Typ" },

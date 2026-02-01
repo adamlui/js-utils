@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Veidnes fails nav atrasts šeit" },
   "warn_configFileExists": { "message": "Konfigurācijas fails jau pastāv" },
   "info_exampleValidConfigFile": { "message": "Derīga konfigurācijas faila piemērs" },
-  "info_validArgs": { "message": "Derīgi argumenti ir zemāk" },
   "info_copying": { "message": "Notiek kopēšana starpliktuvē" },
   "info_moreHelp": { "message": "Lai saņemtu papildu palīdzību" },
   "info_type": { "message": "tips" },

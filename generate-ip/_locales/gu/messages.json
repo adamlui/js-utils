@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "ટેમ્પલેટ ફાઇલ અહીં મળી નથી" },
   "warn_configFileExists": { "message": "રૂપરેખાંકન ફાઇલ પહેલાથી જ અસ્તિત્વમાં છે" },
   "info_exampleValidConfigFile": { "message": "ઉદાહરણ માન્ય રૂપરેખાંકન ફાઇલ" },
-  "info_validArgs": { "message": "માન્ય દલીલો નીચે છે" },
   "info_copying": { "message": "ક્લિપબોર્ડ પર કૉપિ કરી રહ્યું છે" },
   "info_moreHelp": { "message": "વધુ મદદ માટે" },
   "info_type": { "message": "પ્રકાર" },

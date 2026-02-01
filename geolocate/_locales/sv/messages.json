@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Mallfilen hittades inte på" },
   "warn_configFileExists": { "message": "Konfigurationsfilen finns redan" },
   "info_exampleValidConfigFile": { "message": "Exempel på giltig konfigurationsfil" },
-  "info_validArgs": { "message": "Giltiga argument finns nedan" },
   "info_copying": { "message": "Kopiera till klippbordet" },
   "info_moreHelp": { "message": "För mer hjälp" },
   "info_type": { "message": "form" },

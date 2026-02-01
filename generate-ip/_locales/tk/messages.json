@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Şablon faýly tapylmady" },
   "warn_configFileExists": { "message": "Faýly öňden konfigurat et" },
   "info_exampleValidConfigFile": { "message": "Mysal geçerli konfigurasiýa faýly" },
-  "info_validArgs": { "message": "Dogry jedelleşmeler" },
   "info_copying": { "message": "Klipbordda kopy etmek" },
   "info_moreHelp": { "message": "Köpräk kömek etmek üçin" },
   "info_type": { "message": "Hil" },

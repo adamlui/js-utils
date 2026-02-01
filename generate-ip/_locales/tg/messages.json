@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Файли қолиб дар ёфт нашуд" },
   "warn_configFileExists": { "message": "Батанзимдарории файл аллакай вуҷуд дорад" },
   "info_exampleValidConfigFile": { "message": "Намунаи файли конфигуратсияи дуруст" },
-  "info_validArgs": { "message": "Аргументҳои дуруст дар поён" },
   "info_copying": { "message": "Нусха бардоштан дар буфери иваз" },
   "info_moreHelp": { "message": "Para sa karagdagang tul" },
   "info_type": { "message": "Намуд" },

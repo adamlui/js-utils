@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Nie znaleziono pliku szablonu w" },
   "warn_configFileExists": { "message": "Plik konfiguracyjny już istnieje" },
   "info_exampleValidConfigFile": { "message": "Przykład prawidłowego pliku konfiguracyjnego" },
-  "info_validArgs": { "message": "Poniżej znajdują się prawidłowe argumenty" },
   "info_copying": { "message": "Kopiowanie do schowka" },
   "info_moreHelp": { "message": ", aby otrzymali dalszą pomoc" },
   "info_type": { "message": "Typ" },

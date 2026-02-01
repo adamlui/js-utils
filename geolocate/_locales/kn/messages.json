@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "ಟೆಂಪ್ಲೇಟ್ ಫೈಲ್ ಇಲ್ಲಿ ಕಂಡುಬಂದಿಲ್ಲ" },
   "warn_configFileExists": { "message": "ಕಾನ್ಫಿಗರ್ ಫೈಲ್ ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ" },
   "info_exampleValidConfigFile": { "message": "ಉದಾಹರಣೆ ಮಾನ್ಯ ಕಾನ್ಫಿಗರೇಶನ್ ಫೈಲ್" },
-  "info_validArgs": { "message": "ಮಾನ್ಯವಾದ ಆರ್ಗ್ಯುಮೆಂಟ್ ‌ ಗಳು ಕೆಳಗೆ ಇವೆ" },
   "info_copying": { "message": "ಕ್ಲಿಪ್ ‌ ಬೋರ್ಡ್ ‌ ಗೆ ನಕಲಿಸಲಾಗುತ್ತಿದೆ" },
   "info_moreHelp": { "message": "ಹೆಚ್ಚಿನ ಸಹಾಯಕ್ಕಾಗಿ" },
   "info_type": { "message": "ಪ್ರಕಾರ" },

@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Pelê şablonê li vir nehat dîtin" },
   "warn_configFileExists": { "message": "Pelê mîhengkirinê jixwe heye" },
   "info_exampleValidConfigFile": { "message": "Nimûneya pelê mîhengê ya derbasdar" },
-  "info_validArgs": { "message": "Argumanên derbasdar li jêr in" },
   "info_copying": { "message": "Kopîkirina li ser clipboard" },
   "info_moreHelp": { "message": "Ji bo bêtir alîkariyê" },
   "info_type": { "message": "جۆر، چاپ دەکات، وێنە، نموونە، نووسین، چەشن، ئاست، چین، شێوە، پۆل، ڕێباز، بابەت\n[پزیشکی]: 1-نیشانە، دروشم، مۆر، تییپ 2-نموونەیەکی ئاسایی تێکڕا، بابەت 3-(لە نەخۆشیدا) نیشانەکانی جیاکەرەوەی تا، نەخۆشی.. ھتد یەک\n[زەویزانی]: نموونە، نقومی دەکات\n[ئامار]: تەرز، تیپ، شێواز، جۆر، چەشن\n[رۆژنامەوانی]: جۆر\n[ھونەر]: نموونە، تەرز\n[کۆمپیوتەر]: جۆر، چاپکردن" },

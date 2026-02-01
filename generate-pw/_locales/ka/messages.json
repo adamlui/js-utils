@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Შაბლონის ფაილი ვერ მოიძებნა" },
   "warn_configFileExists": { "message": "Კონფიგურაციის ფაილი უკვე არსებობს" },
   "info_exampleValidConfigFile": { "message": "Კონფიგურაციის სწორი ფაილის მაგალითი" },
-  "info_validArgs": { "message": "Სწორი არგუმენტები მოცემულია ქვემოთ" },
   "info_copying": { "message": "Ბუფერში კოპირება" },
   "info_moreHelp": { "message": "Დამატებითი დახმარებისთვის" },
   "info_type": { "message": "ტიპი" },

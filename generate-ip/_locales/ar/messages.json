@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "لم يتم العثور على ملف القالب في" },
   "warn_configFileExists": { "message": "ملف التكوين موجود بالفعل" },
   "info_exampleValidConfigFile": { "message": "مثال على ملف تكوين صالح" },
-  "info_validArgs": { "message": "الحجج الصالحة أدناه" },
   "info_copying": { "message": "لصق من الحافظة... user on host" },
   "info_moreHelp": { "message": "لمزيد من المساعدة" },
   "info_type": { "message": "النوع" },

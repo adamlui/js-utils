@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Template file no find at" },
   "warn_configFileExists": { "message": "Config file kale" },
   "info_exampleValidConfigFile": { "message": "Ifilangililo fya fipe fya fipe fya fipe" },
-  "info_validArgs": { "message": "Fela Anikulapo Kuti - Fela Anikulapo Kuti" },
   "info_copying": { "message": "Kopololeni ku clipboard" },
   "info_moreHelp": { "message": "Ukwishibilapo nafimbi pa kwafwa" },
   "info_type": { "message": "Umusango" },

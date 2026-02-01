@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Үлгі файлы табылмады" },
   "warn_configFileExists": { "message": "Файлды баптау бұрыннан бар" },
   "info_exampleValidConfigFile": { "message": "Мысал жарамды конфигурация файлы" },
-  "info_validArgs": { "message": "Жарамды дәлелдер төменде келтірілген" },
   "info_copying": { "message": "Алмасу буферіндегіні орналастыруда" },
   "info_moreHelp": { "message": "Қосымша көмек алу үшін" },
   "info_type": { "message": "түрі" },

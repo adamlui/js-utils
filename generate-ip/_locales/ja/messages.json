@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "テンプレートファイルが見つかりません" },
   "warn_configFileExists": { "message": "構成ファイルは既に存在します" },
   "info_exampleValidConfigFile": { "message": "有効な設定ファイルの例" },
-  "info_validArgs": { "message": "有効な引数は次のとおりです" },
   "info_copying": { "message": "クリップボードにコピーしています" },
   "info_moreHelp": { "message": "ヘルプをもっと読む" },
   "info_type": { "message": "入力" },

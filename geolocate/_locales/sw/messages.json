@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Faili ya kiolezo haipatikani" },
   "warn_configFileExists": { "message": "Sanidi faili tayari lipo" },
   "info_exampleValidConfigFile": { "message": "Mfano faili halali ya usanidi" },
-  "info_validArgs": { "message": "Hoja halali ziko hapa chini" },
   "info_copying": { "message": "Kunakili kwenye ubao wa kunakili" },
   "info_moreHelp": { "message": "Kwa msaada zaidi" },
   "info_type": { "message": "aina" },

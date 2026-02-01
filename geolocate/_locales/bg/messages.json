@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Файлът с шаблони не е намерен в" },
   "warn_configFileExists": { "message": "Файлът за конфигуриране вече съществува" },
   "info_exampleValidConfigFile": { "message": "Примерен валиден конфигурационен файл" },
-  "info_validArgs": { "message": "Валидните аргументи са по - долу" },
   "info_copying": { "message": "Копиране в клипборда" },
   "info_moreHelp": { "message": "За повече помощ" },
   "info_type": { "message": "тип" },

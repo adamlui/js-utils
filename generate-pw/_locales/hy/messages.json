@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Կաղապարի ֆայլը չի գտնվել" },
   "warn_configFileExists": { "message": "Կոնֆիգ ֆայլն արդեն գոյություն ունի" },
   "info_exampleValidConfigFile": { "message": "Վավեր կոնֆիգուրացիոն ֆայլի օրինակ" },
-  "info_validArgs": { "message": "Վավեր փաստարկները ներկայացված են ստորև" },
   "info_copying": { "message": "Պատճենահանվում է շապիկի մեջ" },
   "info_moreHelp": { "message": "Լրացուցիչ օգնության համար" },
   "info_type": { "message": "Տեսակ" },

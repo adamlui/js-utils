@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Không tìm thấy tệp mẫu tại" },
   "warn_configFileExists": { "message": "Tệp cấu hình đã tồn tại" },
   "info_exampleValidConfigFile": { "message": "Ví dụ về tệp cấu hình hợp lệ" },
-  "info_validArgs": { "message": "Dưới đây là các đối số hợp lệ" },
   "info_copying": { "message": "Đang chép vào bảng nháp" },
   "info_moreHelp": { "message": "Để được trợ giúp thêm" },
   "info_type": { "message": "kiểu" },

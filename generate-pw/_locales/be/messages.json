@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Файл шаблону не знойдзены на" },
   "warn_configFileExists": { "message": "Файл канфігурацыі ўжо існуе" },
   "info_exampleValidConfigFile": { "message": "Дапушчальны прыклад файла канфігурацыі" },
-  "info_validArgs": { "message": "Дапушчальныя аргументы ніжэй" },
   "info_copying": { "message": "Значэнне" },
   "info_moreHelp": { "message": "Для атрымання дадатковай дапамогі" },
   "info_type": { "message": "друкаваць" },

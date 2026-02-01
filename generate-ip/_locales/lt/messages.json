@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Šablono failas nerastas" },
   "warn_configFileExists": { "message": "Konfigūracijos failas jau yra" },
   "info_exampleValidConfigFile": { "message": "VALID konfigūracijos failo pavyzdys" },
-  "info_validArgs": { "message": "Toliau pateikiami tinkami argumentai" },
   "info_copying": { "message": "Kopijuojama į laikiną talpyklę" },
   "info_moreHelp": { "message": "Daugiau pagalbos" },
   "info_type": { "message": "Tipas" },

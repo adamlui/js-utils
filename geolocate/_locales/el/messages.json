@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Το αρχείο προτύπου δεν βρέθηκε στο" },
   "warn_configFileExists": { "message": "Το αρχείο διαμόρφωσης υπάρχει ήδη" },
   "info_exampleValidConfigFile": { "message": "Παράδειγμα έγκυρου αρχείου διαμόρφωσης" },
-  "info_validArgs": { "message": "Τα έγκυρα ορίσματα είναι παρακάτω" },
   "info_copying": { "message": "Αντιγραφή στο πρόχειρο" },
   "info_moreHelp": { "message": "Για περισσότερη βοήθεια" },
   "info_type": { "message": ". " },

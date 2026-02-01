@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Ifayela lethempulethi alitholakali ku-" },
   "warn_configFileExists": { "message": "Lungisa ifayela selivele likhona" },
   "info_exampleValidConfigFile": { "message": "Isibonelo sefayela elivumelekile lokumisa" },
-  "info_validArgs": { "message": "Izimpikiswano ezivumelekile zingezansi" },
   "info_copying": { "message": "Ukukopela ebhodini lokunamathisela" },
   "info_moreHelp": { "message": "Ukuze uthole usizo olwengeziwe" },
   "info_type": { "message": "INHLOBO" },

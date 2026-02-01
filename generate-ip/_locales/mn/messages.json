@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Загварын файл олдсонгүй" },
   "warn_configFileExists": { "message": "Тохиргооны файл аль хэдийн байна" },
   "info_exampleValidConfigFile": { "message": "Хүчинтэй тохиргооны файлын жишээ" },
-  "info_validArgs": { "message": "Зөв аргументууд доор байна" },
   "info_copying": { "message": "Түр санах ой руу хуулах" },
   "info_moreHelp": { "message": "Нэмэлт тусламж" },
   "info_type": { "message": "төрөл" },

@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "వద్ద టెంప్లేట్ ఫైల్ కనుగొనబడలేదు" },
   "warn_configFileExists": { "message": "కాన్ఫిగరేషన్ ఫైల్ ఇప్పటికే ఉంది" },
   "info_exampleValidConfigFile": { "message": "ఉదాహరణ చెల్లుబాటు అయ్యే కాన్ఫిగరేషన్ ఫైల్" },
-  "info_validArgs": { "message": "చెల్లుబాటు అయ్యే వాదనలు క్రింద ఉన్నాయి" },
   "info_copying": { "message": "క్లిప్ ‌ బోర్డ్ ‌ కు కాపీ చేస్తోంది" },
   "info_moreHelp": { "message": "మరింత సహాయం కోసం" },
   "info_type": { "message": "రకం" },

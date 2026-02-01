@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Şablon faylı bu ünvanda tapılmadı" },
   "warn_configFileExists": { "message": "Faylı konfiqurasiya edin artıq" },
   "info_exampleValidConfigFile": { "message": "Nümunə üçün etibarlı konfiqurasiya faylı" },
-  "info_validArgs": { "message": "Etibarlı arqumentlər aşağıda göstərilib" },
   "info_copying": { "message": "Mübadilə buferinə kopyal" },
   "info_moreHelp": { "message": "Daha çox yardım üçün" },
   "info_type": { "message": "növ" },

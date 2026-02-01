@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Skabelonfilen blev ikke fundet på" },
   "warn_configFileExists": { "message": "Konfigurationsfilen findes allerede" },
   "info_exampleValidConfigFile": { "message": "Eksempel på gyldig konfigurationsfil" },
-  "info_validArgs": { "message": "Gyldige argumenter er nedenfor" },
   "info_copying": { "message": "Kopierer til udklipsholder" },
   "info_moreHelp": { "message": "Få mere hjælp" },
   "info_type": { "message": "type" },

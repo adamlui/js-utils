@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Mallifaili ei leitud asukohas" },
   "warn_configFileExists": { "message": "Konfiguratsioonifail on juba olemas" },
   "info_exampleValidConfigFile": { "message": "Kehtiva konfiguratsioonifaili näide" },
-  "info_validArgs": { "message": "Kehtivad argumendid on allpool" },
   "info_copying": { "message": "Kopeerimine lõikepuhvrisse" },
   "info_moreHelp": { "message": "Lisateabe saamiseks" },
   "info_type": { "message": "tüüp" },

@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "टेम्प्लेट फाइल यहाँ फेला परेन" },
   "warn_configFileExists": { "message": "कन्फिग फाइल पहिले नै अवस्थित छ" },
   "info_exampleValidConfigFile": { "message": "उदाहरण मान्य कन्फिग फाइल" },
-  "info_validArgs": { "message": "मान्य तर्कहरू तल छन्" },
   "info_copying": { "message": "क्लिपबोर्डमा प्रतिलिपि गर्दैछ" },
   "info_moreHelp": { "message": "थप मद्दतको लागि" },
   "info_type": { "message": "प्रकार" },

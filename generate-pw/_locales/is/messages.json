@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Sniðmát fannst ekki á" },
   "warn_configFileExists": { "message": "Stillingaskrá er þegar til" },
   "info_exampleValidConfigFile": { "message": "Dæmi um gilda uppsetningarskrá" },
-  "info_validArgs": { "message": "Gild rök eru hér að neðan" },
   "info_copying": { "message": "Afrita á klemmuspjald" },
   "info_moreHelp": { "message": "Fyrir frekari aðstoð" },
   "info_type": { "message": "Tegund" },

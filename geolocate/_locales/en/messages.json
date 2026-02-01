@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Template file not found at" },
   "warn_configFileExists": { "message": "Config file already exists" },
   "info_exampleValidConfigFile": { "message": "Example valid config file" },
-  "info_validArgs": { "message": "Valid arguments are below" },
   "info_copying": { "message": "Copying to clipboard" },
   "info_moreHelp": { "message": "For more help" },
   "info_type": { "message": "type" },

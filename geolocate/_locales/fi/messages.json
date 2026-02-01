@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Mallitiedostoa ei löydy osoitteesta" },
   "warn_configFileExists": { "message": "Konfigurointitiedosto on jo olemassa" },
   "info_exampleValidConfigFile": { "message": "Esimerkki kelvollisesta asetustiedostosta" },
-  "info_validArgs": { "message": "Kelvolliset argumentit ovat alla" },
   "info_copying": { "message": "Kopioin leikepöydälle" },
   "info_moreHelp": { "message": "Saat lisäohjeita" },
   "info_type": { "message": "tyyppi" },

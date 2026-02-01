@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Txantiloi fitxategia ez da aurkitu hemen" },
   "warn_configFileExists": { "message": "Konfigurazio fitxategia dagoeneko existitzen da" },
   "info_exampleValidConfigFile": { "message": "Konfigurazio fitxategi baliodunaren adibidea" },
-  "info_validArgs": { "message": "Baliozko argumentuak behean daude" },
   "info_copying": { "message": "Arbelean kopiatzen" },
   "info_moreHelp": { "message": "Laguntza gehiagorako" },
   "info_type": { "message": "mota" },

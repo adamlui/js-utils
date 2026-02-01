@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "සැකිලි ගොනුව සොයාගත නොහැකි විය" },
   "warn_configFileExists": { "message": "සැකසුම් ගොනුව දැනටමත් පවතී" },
   "info_exampleValidConfigFile": { "message": "නිදසුන වලංගු වින් ‍ යාස ගොනුව" },
-  "info_validArgs": { "message": "වලංගු තර්ක පහත දැක්වේ" },
   "info_copying": { "message": "ක්ලිප් පුවරුවට පිටපත් කරමින්" },
   "info_moreHelp": { "message": "තවත් උදව් සඳහා" },
   "info_type": { "message": "ගූගල්" },

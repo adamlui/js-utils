@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Kōnae tauira e kore e kitea i roto i" },
   "warn_configFileExists": { "message": "Kei te wātea te kōnae Config" },
   "info_exampleValidConfigFile": { "message": "Tauira kōnae config whaimana" },
-  "info_validArgs": { "message": "Ko nga korero tika kei raro nei" },
   "info_copying": { "message": "Tārua ki te papapātuhi" },
   "info_moreHelp": { "message": "Mō ētahi atu āwhina" },
   "info_type": { "message": "Momo" },

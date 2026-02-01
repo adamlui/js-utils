@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Andoza fayli topilmadi" },
   "warn_configFileExists": { "message": "Konfiguratsiya fayli allaqachon mavjud" },
   "info_exampleValidConfigFile": { "message": "Misol uchun amal qiluvchi konfiguratsiya fayli" },
-  "info_validArgs": { "message": "To'g'ri dalillar quyida keltirilgan" },
   "info_copying": { "message": "Buferga nusxalanmoqda" },
   "info_moreHelp": { "message": "Ko'proq yordam uchun" },
   "info_type": { "message": "tur" },

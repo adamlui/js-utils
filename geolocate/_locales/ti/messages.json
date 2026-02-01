@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "ናይ ናሙና ፋይል ኣይተረኽበን ።" },
   "warn_configFileExists": { "message": "ፋይል ቀዲሙ ኣሎ" },
   "info_exampleValidConfigFile": { "message": "ኣብነት እሙን ናይ ውጥን ፋይል" },
-  "info_validArgs": { "message": "ናይ ሓቂ መወከሲታት ኣብ ታሕቲ ኣሎ" },
   "info_copying": { "message": "ናብ ክሊፕቦርድ ምምላስ" },
   "info_moreHelp": { "message": "ዝያዳ ሓገዝ" },
   "info_type": { "message": "ዓይነት" },

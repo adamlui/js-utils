@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "နမူနာဖိုင်ကို မတွေ့ပါ" },
   "warn_configFileExists": { "message": "Config ဖိုင်ရှိပြီးသား" },
   "info_exampleValidConfigFile": { "message": "ဥပမာ မှန်ကန်သော config ဖိုင်" },
-  "info_validArgs": { "message": "အကျုံးဝင်သော အငြင်းပွားမှုများမှာ အောက်ပါတို့ ဖြစ်ပါသည်" },
   "info_copying": { "message": "ကလစ်ဘုတ်သို့ ကူးယူနေသည်" },
   "info_moreHelp": { "message": "နောက်ထပ်အကူအညီအတွက်" },
   "info_type": { "message": "အမျိုးအစား" },

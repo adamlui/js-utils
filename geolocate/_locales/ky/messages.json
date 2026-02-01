@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Шаблон файлы табылган жок" },
   "warn_configFileExists": { "message": "Файлды конфигурациялоо мурунтан эле бар" },
   "info_exampleValidConfigFile": { "message": "Үлгү жарактуу конфигурация файлы" },
-  "info_validArgs": { "message": "Жарактуу аргументтер төмөндө келтирилген" },
   "info_copying": { "message": "Алмашуу буферине көчүрүү" },
   "info_moreHelp": { "message": "Көбүрөөк маалымат алуу үчүн" },
   "info_type": { "message": "тиби" },

@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "ޓެމްޕްލޭޓް ފައިލް ނުފެނެއެވެ" },
   "warn_configFileExists": { "message": "ކޮންފިގް ފައިލް މިހާރުވެސް އެބަހުއްޓެވެ" },
   "info_exampleValidConfigFile": { "message": "މިސާލު ސައްހަ ކޮންފިގް ފައިލް" },
-  "info_validArgs": { "message": "ޞައްޙަ ދަލީލުތައް ތިރީގައި މިވަނީ" },
   "info_copying": { "message": "ކްލިޕްބޯޑަށް ކޮޕީ ކުރުން" },
   "info_moreHelp": { "message": "އިތުރު އެހީއަށް" },
   "info_type": { "message": "ވައްތަރު" },

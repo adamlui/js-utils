@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Шаблон не знайдено" },
   "warn_configFileExists": { "message": "Файл конфігурації вже існує" },
   "info_exampleValidConfigFile": { "message": "Приклад дійсного файлу конфігурації" },
-  "info_validArgs": { "message": "Нижче наведено дійсні аргументи" },
   "info_copying": { "message": "Копіювання до буфера" },
   "info_moreHelp": { "message": "Додаткова допомога" },
   "info_type": { "message": "тип" },

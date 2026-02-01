@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "ཡིག་སྣོད་འཚོལ་མི་ཐུབ །" },
   "warn_configFileExists": { "message": "སྒྲིག་འཇུག་བྱས་ཚད ། ཐེངས་10 ལས་ཉུང་བ ། ཐོན་རིམ་5.7.1 ནང་དུ་" },
   "info_exampleValidConfigFile": { "message": "དཔེར་ན ： སྒྲིག་འཇུག་བྱས་ཚད ། ཐེངས་བཅུ་གཉིས་པ །" },
-  "info_validArgs": { "message": "ཕྱོགས་སྟོན ། གཙོ་ངོས ། \"རྩོམ་རིག\" རྩོམ་རིག \"" },
   "info_copying": { "message": "སྒྲིག་འཇུག་བྱས་ཚད ། ཐེངས་10 ལས་ཉུང་བ ། ཐོན་རིམ་5.7.1 ནང་དུ་ཚོད་ལྟ་བྱས་" },
   "info_moreHelp": { "message": "སྐྱབས་གྲོགས་ཀྱི་ཆེད་དུ་" },
   "info_type": { "message": "རིགས་དབྱེ་" },

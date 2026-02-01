@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "فایل الگو در اینجا یافت نشد" },
   "warn_configFileExists": { "message": "فایل پیکربندی از قبل وجود دارد" },
   "info_exampleValidConfigFile": { "message": "نمونه فایل پیکربندی معتبر" },
-  "info_validArgs": { "message": "آرگومان های معتبر در زیر آمده است" },
   "info_copying": { "message": "در حال کپی کردن در کلیپ بورد" },
   "info_moreHelp": { "message": "برای اطلاعات بیشتر بخوانید" },
   "info_type": { "message": "نوع" },

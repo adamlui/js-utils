@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Şablon Dosyası Bulunamadı" },
   "warn_configFileExists": { "message": "Yapılandırma dosyası zaten var" },
   "info_exampleValidConfigFile": { "message": "Örnek geçerli yapılandırma dosyası" },
-  "info_validArgs": { "message": "Geçerli argümanlar aşağıdadır" },
   "info_copying": { "message": "Panoya kopyalanıyor" },
   "info_moreHelp": { "message": "Daha fazla yardım için" },
   "info_type": { "message": "türü" },

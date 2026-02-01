@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Datoteke predloge ni mogoče najti na" },
   "warn_configFileExists": { "message": "Konfiguracijska datoteka že obstaja" },
   "info_exampleValidConfigFile": { "message": "Primer veljavne konfiguracijske datoteke" },
-  "info_validArgs": { "message": "Spodaj so veljavni argumenti" },
   "info_copying": { "message": "Kopiranje v odlagališče" },
   "info_moreHelp": { "message": "Za več pomoči" },
   "info_type": { "message": "vrsta" },

@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "IDOSIYE OYA Byabonetse ku" },
   "warn_configFileExists": { "message": "IDOSIYE" },
   "info_exampleValidConfigFile": { "message": "Urugero Byemewe IDOSIYE" },
-  "info_validArgs": { "message": "Impaka zemewe ziri hepfo" },
   "info_copying": { "message": "Kwandukura kuri clip clip" },
   "info_moreHelp": { "message": "Kubindi bisobanuro" },
   "info_type": { "message": "andika" },

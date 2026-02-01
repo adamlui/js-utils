@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "A sablonfájl nem található itt" },
   "warn_configFileExists": { "message": "A konfigurációs fájl már létezik" },
   "info_exampleValidConfigFile": { "message": "Példa érvényes konfigurációs fájlra" },
-  "info_validArgs": { "message": "Az érvényes argumentumok alább találhatók" },
   "info_copying": { "message": "Másolás a vágólapra" },
   "info_moreHelp": { "message": "További segítségért" },
   "info_type": { "message": "típus:" },

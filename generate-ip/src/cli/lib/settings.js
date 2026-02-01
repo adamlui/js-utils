@@ -18,13 +18,13 @@ module.exports = {
     },
 
     initConfigFile() {
-        const filename = 'generate-ip.config.mjs',
+        const filename = 'generate-pw.config.mjs',
               targetPath = path.resolve(process.cwd(), filename)
         if (fs.existsSync(targetPath))
             return log.warn(`${app.msgs.warn_configFileExists}:`, targetPath)
         const srcPath = path.resolve(__dirname, `../../${ env.devMode ? '../' : './data/' }${filename}`)
         if (!fs.existsSync(srcPath)) {
-            log.error(`${app.msgs.templateNotFound}:`, srcPath)
+            log.error(`${app.msgs.error_templateNotFound}:`, srcPath)
             process.exit(1)
         }
         fs.copyFileSync(srcPath, targetPath)

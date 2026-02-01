@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Désolé Aucun résultat trouvé" },
   "warn_configFileExists": { "message": "Faïl so ayeke dä awe" },
   "info_exampleValidConfigFile": { "message": "Tapande ti faïl so ayeke na lege ni" },
-  "info_validArgs": { "message": "A yeke wara atënë so ayeke na gbe ni" },
   "info_copying": { "message": "Gbu li ti mo na ndo ti clipboard ni" },
   "info_moreHelp": { "message": "Ti mû maboko na mo" },
   "info_type": { "message": "mara ti zo" },

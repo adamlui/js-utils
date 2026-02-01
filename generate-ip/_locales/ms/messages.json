@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Fail templat tidak ditemui di" },
   "warn_configFileExists": { "message": "Fail konfigurasi sudah wujud" },
   "info_exampleValidConfigFile": { "message": "Contoh fail konfigurasi yang sah" },
-  "info_validArgs": { "message": "Hujah yang sah adalah di bawah" },
   "info_copying": { "message": "Menyalin ke klipbod" },
   "info_moreHelp": { "message": "Untuk bantuan lanjut" },
   "info_type": { "message": "jenis" },

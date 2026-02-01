@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Dosye modèl pa jwenn nan" },
   "warn_configFileExists": { "message": "Config dosye deja egziste" },
   "info_exampleValidConfigFile": { "message": "Egzanp dosye konfigirasyon ki valab" },
-  "info_validArgs": { "message": "Agiman ki valab yo anba a" },
   "info_copying": { "message": "Kopi nan tablo" },
   "info_moreHelp": { "message": "Pou plis èd/Pour plus d '" },
   "info_type": { "message": "kalite/lèt/tip/tipe" },

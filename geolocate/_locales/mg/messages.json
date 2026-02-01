@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Tsy hita ao anatin'ny lasitra ilay raki-daza" },
   "warn_configFileExists": { "message": "Efa misy ilay raki-kirakira" },
   "info_exampleValidConfigFile": { "message": "Ohatra ny raki-kirakira azo ekena" },
-  "info_validArgs": { "message": "Ireo tondriky azo ekena etsy ambany" },
   "info_copying": { "message": "Mandika mankany amin'ny fanindri-taratasy" },
   "info_moreHelp": { "message": "Raha mila fanampiana bebe kokoa" },
   "info_type": { "message": "Karazany" },

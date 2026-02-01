@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "'ਤੇ ਟੈਂਪਲੇਟ ਫਾਇਲ ਨਹੀਂ ਲੱਭੀ" },
   "warn_configFileExists": { "message": "ਸੰਰਚਨਾ ਫਾਇਲ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ" },
   "info_exampleValidConfigFile": { "message": "ਉਦਾਹਰਨ ਵੈਧ ਸੰਰਚਨਾ ਫਾਇਲ" },
-  "info_validArgs": { "message": "ਵੈਧ ਆਰਗੂਮੈਂਟ ਹੇਠਾਂ ਦਿੱਤੇ ਗਏ ਹਨ" },
   "info_copying": { "message": "ਪ੍ਰੋਗਰਾਮ" },
   "info_moreHelp": { "message": "ਹੋਰ ਮਦਦ ਲਈ" },
   "info_type": { "message": "ਟਾਈਪ" },

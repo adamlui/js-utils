@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "টেম্পলেট ফাইল এ পাওয়া যায় নি" },
   "warn_configFileExists": { "message": "কনফিগ ফাইল ইতিমধ্যে বিদ্যমান" },
   "info_exampleValidConfigFile": { "message": "উদাহরণ বৈধ কনফিগ ফাইল" },
-  "info_validArgs": { "message": "বৈধ আর্গুমেন্ট নিচে দেওয়া হল" },
   "info_copying": { "message": "ক্লিপবোর্ডে অনুলিপি করা হচ্ছে" },
   "info_moreHelp": { "message": "আরও সাহায্যের জন্য" },
   "info_type": { "message": "" },

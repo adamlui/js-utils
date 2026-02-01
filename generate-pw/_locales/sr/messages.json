@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Datoteka šablona nije pronađena na" },
   "warn_configFileExists": { "message": "Konfiguraciona datoteka već postoji" },
   "info_exampleValidConfigFile": { "message": "Primer važeće konfiguracione datoteke" },
-  "info_validArgs": { "message": "Važeći argumenti su ispod" },
   "info_copying": { "message": "Kopiranje u ostavu" },
   "info_moreHelp": { "message": "Za dodatnu pomoć" },
   "info_type": { "message": "vrsta" },

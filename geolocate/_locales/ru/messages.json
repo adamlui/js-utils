@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Файл шаблона не найден в" },
   "warn_configFileExists": { "message": "Конфигурационный файл уже существует" },
   "info_exampleValidConfigFile": { "message": "Пример допустимого файла конфигурации" },
-  "info_validArgs": { "message": "Допустимые аргументы ниже" },
   "info_copying": { "message": "Копирование в буфер обмена" },
   "info_moreHelp": { "message": "Для получения дополнительной помощи читать" },
   "info_type": { "message": "кожи" },

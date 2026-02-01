@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "ٹیمپلیٹ فائل یہاں نہیں ملی" },
   "warn_configFileExists": { "message": "کنفیگ فائل پہلے سے موجود ہے" },
   "info_exampleValidConfigFile": { "message": "مثال کے طور پر درست کنفیگ فائل" },
-  "info_validArgs": { "message": "درست دلائل ذیل میں ہیں" },
   "info_copying": { "message": "کلپ بورڈ پر کاپی ہو رہی ہے" },
   "info_moreHelp": { "message": "مزید مدد کے لیے" },
   "info_type": { "message": "نوعیت" },

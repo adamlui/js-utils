@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "ʻAʻole i loaʻa ka faila template ma" },
   "warn_configFileExists": { "message": "Ua loaʻa mua ka faila hoʻonohonoho" },
   "info_exampleValidConfigFile": { "message": "Laʻana o ka faila hoʻonohonoho kūpono" },
-  "info_validArgs": { "message": "Aia ma lalo nā manaʻo kūpono" },
   "info_copying": { "message": "Ke kope nei i ka papa ʻokiʻoki" },
   "info_moreHelp": { "message": "No ke kōkua hou aku" },
   "info_type": { "message": "Ke ‘Ano" },

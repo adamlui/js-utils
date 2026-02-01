@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Ifayile yethempleyithi ayifumaneki kwi" },
   "warn_configFileExists": { "message": "Lungisa ifayile sele ikhona" },
   "info_exampleValidConfigFile": { "message": "Umzekelo wefayile echanileyo yokuqwalasela" },
-  "info_validArgs": { "message": "Iimpikiswano ezichanekileyo zingezantsi" },
   "info_copying": { "message": "ikhuphela kwibhodi eqhotyoshwayo" },
   "info_moreHelp": { "message": "Ukuze ufumane uncedo olungakumbi" },
   "info_type": { "message": "Udidi" },

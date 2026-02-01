@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Súbor šablóny sa nenašiel v" },
   "warn_configFileExists": { "message": "Konfiguračný súbor už existuje" },
   "info_exampleValidConfigFile": { "message": "Príklad platného konfiguračného súboru" },
-  "info_validArgs": { "message": "Platné argumenty sú uvedené nižšie" },
   "info_copying": { "message": "Kopírujem do dočasnej schránky" },
   "info_moreHelp": { "message": "Ak potrebujete ďalšiu pomoc" },
   "info_type": { "message": "Typ" },

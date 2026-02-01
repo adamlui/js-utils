@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "ടെംപ്ലേറ്റ് ഫയൽ ഇവിടെ കണ്ടെത്തിയില്ല" },
   "warn_configFileExists": { "message": "കോൺഫിഗർ ഫയൽ ഇതിനകം നിലവിലുണ്ട്" },
   "info_exampleValidConfigFile": { "message": "സാധുവായ കോൺഫിഗറേഷൻ ഫയൽ ഉദാഹരണം" },
-  "info_validArgs": { "message": "സാധുവായ ആർഗ്യുമെന്റുകൾ ചുവടെയുണ്ട്" },
   "info_copying": { "message": "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തുന്നു" },
   "info_moreHelp": { "message": "കൂടുതൽ സഹായത്തിനായി" },
   "info_type": { "message": "തരം" },

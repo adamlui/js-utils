@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Malfilen ble ikke funnet på" },
   "warn_configFileExists": { "message": "Konfigurasjonsfilen finnes allerede" },
   "info_exampleValidConfigFile": { "message": "Eksempel på gyldig konfigurasjonsfil" },
-  "info_validArgs": { "message": "Gyldige argumenter er nedenfor" },
   "info_copying": { "message": "Kopierer til utklippstavlen" },
   "info_moreHelp": { "message": "For mer hjelp" },
   "info_type": { "message": "type" },

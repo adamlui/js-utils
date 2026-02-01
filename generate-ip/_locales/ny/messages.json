@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Fayilo ya template sinapezeke pa" },
   "warn_configFileExists": { "message": "Konzani fayilo yomwe ilipo kale" },
   "info_exampleValidConfigFile": { "message": "Chitsanzo chovomerezeka cha fayilo ya config" },
-  "info_validArgs": { "message": "Mfundo zomveka zili m 'munsimu" },
   "info_copying": { "message": "Kukopera kuti clipboard" },
   "info_moreHelp": { "message": "Kuti muthandizidwe kwambiri" },
   "info_type": { "message": "Mtundu" },

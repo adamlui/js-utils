@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Template file non est" },
   "warn_configFileExists": { "message": "Tabula Configuendi sunt" },
   "info_exampleValidConfigFile": { "message": "Exemplaria valid configuendum" },
-  "info_validArgs": { "message": "PRAESTUM CONSTATIONES QUAE QUA" },
   "info_copying": { "message": "Clipboard" },
   "info_moreHelp": { "message": "Auxilium more" },
   "info_type": { "message": "Typus" },

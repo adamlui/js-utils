@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "Afaylu n lemtel ur yettwafen ara deg" },
   "warn_configFileExists": { "message": "Afaylu uffir yella yakan" },
   "info_exampleValidConfigFile": { "message": "Amedya n ufaylu yettwaxedmen" },
-  "info_validArgs": { "message": "Isebtar i yellan ddaw-a sɛan aseɣwen ɣer" },
   "info_copying": { "message": "Asnulfu ɣer Clippboard" },
   "info_moreHelp": { "message": "I ugar n tallelt" },
   "info_type": { "message": "anaw" },

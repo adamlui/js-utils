@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Archivo de plantilla no encontrado en" },
   "warn_configFileExists": { "message": "El archivo de configuración ya existe" },
   "info_exampleValidConfigFile": { "message": "Ejemplo de archivo de configuración válido" },
-  "info_validArgs": { "message": "Los argumentos válidos están a continuación" },
   "info_copying": { "message": "Copiar al portapapeles fue" },
   "info_moreHelp": { "message": "Para obtener más ayuda" },
   "info_type": { "message": "tipo" },

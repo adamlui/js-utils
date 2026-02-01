@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "ไม่พบไฟล์เทมเพลตที่" },
   "warn_configFileExists": { "message": "มีไฟล์การกำหนดค่าอยู่แล้ว" },
   "info_exampleValidConfigFile": { "message": "ตัวอย่างไฟล์การกำหนดค่าที่ถูกต้อง" },
-  "info_validArgs": { "message": "อาร์กิวเมนต์ที่ถูกต้องอยู่ด้านล่าง" },
   "info_copying": { "message": "กำลังคัดลอกไปยังคลิปบอร์ด" },
   "info_moreHelp": { "message": "หากต้องการความช่วยเหลือเพิ่มเติม" },
   "info_type": { "message": "ประเภท" },

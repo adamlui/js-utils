@@ -7,7 +7,6 @@
   "prefix_source": { "message": "Source" },
   "error_notRecognized": { "message": "not recognized" },
   "error_invalidURL": { "message": "Invalid URL" },
-  "info_validArgs": { "message": "Valid arguments are below" },
   "info_copying": { "message": "Copying to clipboard" },
   "info_moreHelp": { "message": "For more help" },
   "info_visit": { "message": "visit" },

@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "קובץ התבנית לא נמצא ב -" },
   "warn_configFileExists": { "message": "קובץ התצורה כבר קיים" },
   "info_exampleValidConfigFile": { "message": "דוגמה לקובץ תצורה חוקי" },
-  "info_validArgs": { "message": "להלן טיעונים תקפים" },
   "info_copying": { "message": "מעתיק אל הלוח" },
   "info_moreHelp": { "message": "לקבלת עזרה נוספת" },
   "info_type": { "message": "סוג" },

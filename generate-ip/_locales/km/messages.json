@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "រកមិនឃើញឯកសារគំរូនៅ" },
   "warn_configFileExists": { "message": "ឯកសារកំណត់រចនាសម្ព័ន្ធមានរួចហើយ" },
   "info_exampleValidConfigFile": { "message": "ឯកសារកំណត់រចនាសម្ព័ន្ធត្រឹមត្រូវឧទាហរណ៍" },
-  "info_validArgs": { "message": "អាគុយម៉ង់ ត្រឹមត្រូវ ខាងក្រោម" },
   "info_copying": { "message": "កំពុងបិទភ្ជាប់ពីក្ដារតម្បៀតខ្ទាស់" },
   "info_moreHelp": { "message": "សម្រាប់ជំនួយបន្ថែម" },
   "info_type": { "message": "ប្រភេទ" },

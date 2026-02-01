@@ -17,7 +17,6 @@
   "error_templateNotFound": { "message": "د کوندې دوتنه ونه موندل شوه" },
   "warn_configFileExists": { "message": "د سازونې دوتنه د مخکې نه شتون لري" },
   "info_exampleValidConfigFile": { "message": "د اعتبار وړ ترتیب فایل مثال" },
-  "info_validArgs": { "message": "باوري دلیلونه لاندې دي" },
   "info_copying": { "message": "کلیپ بورډ ته کاپي کول" },
   "info_moreHelp": { "message": "د نورې مرستې لپاره" },
   "info_type": { "message": "ډول" },

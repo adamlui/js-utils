@@ -18,7 +18,6 @@
   "error_templateNotFound": { "message": "Sjabloonlêer nie gevind by" },
   "warn_configFileExists": { "message": "Konfigureer lêer bestaan reeds" },
   "info_exampleValidConfigFile": { "message": "Voorbeeld geldige konfigurasielêer" },
-  "info_validArgs": { "message": "Geldige argumente is onder" },
   "info_copying": { "message": "Besig om te kopiëer na klipbord" },
   "info_moreHelp": { "message": "Vir meer hulp" },
   "info_type": { "message": "tipe" },
