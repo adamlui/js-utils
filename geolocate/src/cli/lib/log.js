@@ -98,8 +98,9 @@ module.exports = {
     },
 
     helpCmdAndDocURL() {
-        console.info(
-            `\nFor more help, type 'scss-to-css --help' or visit\n${
+        console.info(`\n${
+            app.msgs.info_moreHelp}, ${app.msgs.info_type} ${app.name} --help' ${
+                app.msgs.info_or} ${app.msgs.info_visit}\n${
                 this.colors.bw}${app.urls.docs}${this.colors.nc}`
         )
     },
