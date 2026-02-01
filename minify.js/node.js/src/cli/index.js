@@ -121,7 +121,7 @@
                 let outputDir, outputFilename
                 if (!app.config.relativeOutput && relPath) { // preserve folder structure
                     const outputPath = path.resolve(process.cwd(), outputArg || 'min'),
-                            relativeDir = path.dirname(relPath)
+                          relativeDir = path.dirname(relPath)
                     outputDir = relativeDir != '.' ? path.join(outputPath, relativeDir) : outputPath
                     outputFilename = path.basename(srcPath, '.js')
                                     + `${ app.config.noFilenameChange ? '' : '.min' }.js`
