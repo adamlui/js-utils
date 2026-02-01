@@ -3,7 +3,10 @@
 (() => {
     'use strict'
 
-    globalThis.env = { devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname) }
+    globalThis.env = {
+        debugMode: process.argv.slice(2).some(arg => /^--?debug(?:-?mode)?$/.test(arg)),
+        devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname)
+    }
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
@@ -15,7 +18,7 @@
 
     // Init APP data
     Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`))
-    app.urls.docs += '/#-command-line-usage'
+    log.debug(app.urls.docs += '/#-command-line-usage')
 
     // Exec CMD arg if passed
     for (const arg of process.argv.slice(2)) {

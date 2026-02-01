@@ -81,10 +81,10 @@ module.exports = {
 
         // Load from CLI args
         process.argv.slice(2).forEach(arg => {
-            if (!arg.startsWith('-')) return
+            if (!arg.startsWith('-') || /^--?(?:config|debug)/.test(arg)) return
             const ctrlKey = ctrlKeys.find(key => this.controls[key]?.regex?.test(arg))
             if (!ctrlKey) log.errorAndExit(`[${arg}] ${app.msgs.error_notRecognized}.`)
-            if (ctrlKey == 'config' || ctrlKey.type == 'cmd') return
+            else if (ctrlKey.type == 'cmd') return
             app.config[ctrlKey] = this.controls[ctrlKey].type == 'param' ? arg.split('=')[1] : true
         })
 
