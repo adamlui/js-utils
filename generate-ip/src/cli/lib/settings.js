@@ -21,16 +21,16 @@ module.exports = {
         const filename = 'generate-ip.config.mjs',
               targetPath = path.resolve(process.cwd(), filename)
         if (fs.existsSync(targetPath))
-            return log.warn('Config file already exists:', targetPath)
+            return log.warn(`${app.msgs.warn_configFileExists}:`, targetPath)
         const srcPath = path.resolve(__dirname, `../../${ env.devMode ? '../' : './data/' }${filename}`)
         if (!fs.existsSync(srcPath)) {
-            log.error('Template file not found at:', srcPath)
+            log.error(`${app.msgs.templateNotFound}:`, srcPath)
             process.exit(1)
         }
         fs.copyFileSync(srcPath, targetPath)
-        log.success(`Config file created: ${targetPath}\n`)
-        log.tip('Edit this file to customize defaults.')
-        log.tip('CLI arguments always override these values.')
+        log.success(`${app.msgs.info_configFileCreated}: ${targetPath}\n`)
+        log.tip(`${app.msgs.tip_editToSetDefaults}.`)
+        log.tip(`${app.msgs.tip_cliArgsPrioritized}.`)
     },
 
     load(ctrlKeys = Object.keys(this.controls)) {
@@ -40,11 +40,11 @@ module.exports = {
         const configArg = process.argv.slice(2).find(arg => this.controls.config.regex.test(arg))
         if (configArg) {
             if (!/=/.test(configArg))
-                log.errorAndExit(`[${configArg}] must include =path`)
+                log.errorAndExit(`[${configArg}] ${app.msgs.error_mustIncludePath}`)
             const inputPath = configArg.split('=')[1]
             configPath = path.isAbsolute(inputPath) ? inputPath : path.resolve(process.cwd(), inputPath)
             if (!fs.existsSync(configPath))
-                log.configAndExit('Config file not found:', configPath)
+                log.configAndExit(`${app.msgs.error_configFileNotFound}:`, configPath)
         } else // auto-discover .config.[cm]?js file
             for (const ext of ['mjs', 'cjs', 'js']) {
                 const autoPath = path.resolve(process.cwd(), `generate-ip.config.${ext}`)
@@ -54,16 +54,16 @@ module.exports = {
             try { // to load config file
                 const mod = require(configPath), fileConfig = mod?.default ?? mod
                 if (!fileConfig || typeof fileConfig != 'object')
-                    log.configAndExit('Config file must export an object.')
+                    log.configAndExit(`${app.msgs.error_invalidConfigFile}.`)
                 Object.assign(app.config, fileConfig)
             } catch (err) {
-                log.configAndExit('Failed to load config file:', configPath, `\n${err.message}`) }
+                log.configAndExit(`${app.msgs.error_failedToLoadConfigFile}:`, configPath, `\n${err.message}`) }
 
         // Load from CLI args
         process.argv.slice(2).forEach(arg => {
             if (!arg.startsWith('-') || /^--?(?:config|debug)/.test(arg)) return
             const ctrlKey = ctrlKeys.find(key => this.controls[key]?.regex?.test(arg))
-            if (!ctrlKey) log.errorAndExit(`[${arg}] not recognized.`)
+            if (!ctrlKey) log.errorAndExit(`[${arg}] ${app.msgs.error_notRecognized}.`)
             else if (ctrlKey.type == 'cmd') return
             app.config[ctrlKey] = this.controls[ctrlKey].type == 'param' ? arg.split('=')[1] : true
         })
@@ -74,7 +74,7 @@ module.exports = {
             if (ctrl.parser) {
                 const parsed = ctrl.parser(app.config[key])
                 if (isNaN(parsed) || parsed < 1)
-                    log.errorAndExit(`[${key}] argument can only be > 0.`)
+                    log.errorAndExit(`[${key}] ${app.msgs.error_nonPositiveNum}.`)
                 app.config[key] = parsed
             }
         })
