@@ -99,7 +99,7 @@ module.exports = {
 
     helpCmdAndDocURL() {
         console.info(`\n${
-            app.msgs.info_moreHelp}, ${app.msgs.info_type} ${app.name} --help' ${
+            app.msgs.info_moreHelp}, ${app.msgs.info_type} ${app.name.split('/')[1]} --help' ${
                 app.msgs.info_or} ${app.msgs.info_visit}\n${
                 this.colors.bw}${app.urls.docs}${this.colors.nc}`
         )
