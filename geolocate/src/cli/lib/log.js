@@ -97,6 +97,13 @@ module.exports = {
         }
     },
 
+    helpCmdAndDocURL() {
+        console.info(
+            `\nFor more help, type 'scss-to-css --help' or visit\n${
+                this.colors.bw}${app.urls.docs}${this.colors.nc}`
+        )
+    },
+
     version() {
         const path = require('path')
         const globalVer = require('child_process')
