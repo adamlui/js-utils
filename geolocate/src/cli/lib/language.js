@@ -1,4 +1,5 @@
 module.exports = {
+
     async getMsgs(langCode = 'en') {
         const data = require(`./data${ env.devMode ? '' : '.min' }.js`)
         let msgs = data.flatten( // local ones
