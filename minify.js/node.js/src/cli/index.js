@@ -123,8 +123,7 @@
                     const outputPath = path.resolve(process.cwd(), outputArg || 'min'),
                           relativeDir = path.dirname(relPath)
                     outputDir = relativeDir != '.' ? path.join(outputPath, relativeDir) : outputPath
-                    outputFilename = path.basename(srcPath, '.js')
-                                    + `${ app.config.noFilenameChange ? '' : '.min' }.js`
+                    outputFilename = `${path.basename(srcPath, '.js')}${ app.config.noFilenameChange ? '' : '.min' }.js`
                 } else {
                     outputDir = path.join(
                         path.dirname(srcPath), // path of file to be minified
