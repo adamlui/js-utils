@@ -1,6 +1,6 @@
 module.exports = {
-    fetch(url) { // instead of fetch() to support Node.js < v21
-        return new Promise((resolve, reject) => {
+    fetch(url) { // to support Node.js < v21
+        return typeof fetch == 'undefined' ? new Promise((resolve, reject) => { // using https? pkg
             const protocol = url.match(/^([^:]+):\/\//)[1]
             if (!/^https?$/.test(protocol)) reject(new Error(`${app.msgs.error_invalidURL}.`))
             require(protocol).get(url, resp => {
@@ -8,7 +8,7 @@ module.exports = {
                 resp.on('data', chunk => rawData += chunk)
                 resp.on('end', () => resolve({ json: () => JSON.parse(rawData) }))
             }).on('error', reject)
-        })
+        }) : fetch(url) // using Node.js fetch()
     },
 
     flatten(json, { key = 'message' } = {}) { // eliminate need to ref nested keys
