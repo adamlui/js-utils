@@ -15,6 +15,6 @@ fs.copyFileSync('app.json', 'dist/data/app.json')
 fs.copyFileSync('scss-to-css.config.mjs', 'dist/data/scss-to-css.config.mjs')
 
 // Minify JS
-const headerComment = `© ${app.copyrightYear} ${app.author} under the ${app.license} license.\\n`
-                    + `Source: ${app.urls.src}\\nDocumentation: ${app.urls.docs}`
-execSync(`npx minify-js src dist --comment="${headerComment}"`, { stdio: 'inherit' })
+app.headerComment = `© ${app.copyrightYear} ${app.author} under the ${app.license} license.\\n`
+                  + `Source: ${app.urls.src}\\nDocumentation: ${app.urls.docs}`
+execSync(`npx minify-js src dist --comment="${app.headerComment}"`, { stdio: 'inherit' })
