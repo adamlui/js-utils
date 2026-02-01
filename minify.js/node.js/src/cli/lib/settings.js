@@ -42,11 +42,11 @@ module.exports = {
     },
 
     initConfigFile() {
-        const filename = 'generate-ip.config.mjs',
-              targetPath = path.resolve(process.cwd(), filename)
+        const configFilename = 'generate-ip.config.mjs',
+              targetPath = path.resolve(process.cwd(), configFilename)
         if (fs.existsSync(targetPath))
             return log.warn(`${app.msgs.warn_configFileExists}:`, targetPath)
-        const srcPath = path.resolve(__dirname, `../../${ env.devMode ? '../' : './data/' }${filename}`)
+        const srcPath = path.resolve(__dirname, `../../${ env.devMode ? '../' : './data/' }${configFilename}`)
         if (!fs.existsSync(srcPath)) {
             log.error(`${app.msgs.error_templateNotFound}:`, srcPath)
             process.exit(1)
@@ -62,7 +62,7 @@ module.exports = {
         // Load from config file
         let configPath = null
         const configArg = process.argv.slice(2).find(arg => this.controls.config.regex.test(arg))
-        if (configArg) {
+        if (configArg) { // resolve path then validate
             if (!/=/.test(configArg))
                 log.errorAndExit(`[${configArg}] ${app.msgs.error_mustIncludePath}`)
             const inputPath = configArg.split('=')[1]
