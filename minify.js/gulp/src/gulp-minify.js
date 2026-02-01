@@ -56,7 +56,7 @@ function minify(input, output, options = {}) {
         const outputDir = path.join(
             path.dirname(srcPath), // path of file to be minified
             ( /so?u?rce?$/.test(path.dirname(srcPath)) ? '../' : '' ) // + '../' if in if in *(src|source)/
-          +( output.endsWith('.js') ? path.dirname(output) // + path from file output
+           +( output.endsWith('.js') ? path.dirname(output) // + path from file output
                                      : output || 'min' ) // or path from folder output or min/ if no output passed
         )
         const outputFilename = (
