@@ -5,9 +5,9 @@ module.exports = {
         let msgs = data.flatten( // local ones
             require(`../${ env.devMode ? '../../_locales/en/' : 'data/' }messages.json`), { key: 'message' })
         if (!langCode.startsWith('en')) { // fetch non-English msgs from jsDelivr
-            const msgHostURL = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`,
-                  localeDir = `${ langCode ? langCode.replace('-', '_') : 'en' }/`
-            let msgHref = `${msgHostURL}${localeDir}messages.json`, msgFetchTries = 0
+            const msgHostURL = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`
+            let msgHref = `${msgHostURL}${langCode.replace('-', '_')}/messages.json`,
+                msgFetchTries = 0
             while (msgFetchTries < 3)
                 try {
                     msgs = data.flatten(await (await data.fetch(msgHref)).json(), { key: 'message' })
