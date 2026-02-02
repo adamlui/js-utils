@@ -91,6 +91,7 @@ module.exports = {
             if (ctrl.mode) { // set val as app.config.mode string
                 const modeName = ctrlKey.match(/^(.+)mode$/i)?.[1]?.toLowerCase()
                 if (modeName) app.config.mode = modeName
+
             } else { // parse/validate remaining args
                 const parser = ctrl.parser
                 if (parser) {
