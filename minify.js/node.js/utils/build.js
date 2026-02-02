@@ -3,7 +3,7 @@
 // Copies JSON + minifies JS to dist/
 
 // NOTE: Pass --data to copy data only
-// NOTE: Pass --js to minify JS only
+// NOTE: Pass --<js|minify> to minify JS only
 
 const { execSync } = require('child_process'),
         fs = require('fs'),
@@ -12,7 +12,7 @@ const { execSync } = require('child_process'),
 globalThis.app = require('../app.json')
 app.config = {
     dataOnly: args.some(arg => /^--?data$/.test(arg)),
-    jsOnly: args.some(arg => /^--?js$/.test(arg))
+    jsOnly: args.some(arg => /^--?(?:js|minify)$/.test(arg))
 }
 
 // Copy APP data
