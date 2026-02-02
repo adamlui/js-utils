@@ -17,7 +17,6 @@ module.exports = {
             // Discover project _locales
             const localesDir = path.resolve(process.cwd(), '_locales')
             if (!fs.existsSync(localesDir)) return ['en']
-
             const locales = fs.readdirSync(localesDir, { withFileTypes: true })
                 .filter(entry => entry.isDirectory())
                 .map(entry => entry.name)
