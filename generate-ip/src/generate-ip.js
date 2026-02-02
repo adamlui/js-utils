@@ -116,7 +116,8 @@ const ipv6 = {
                 ips.push(this.generate({ ...options, qty: 1, verbose: false }))
         else { // generate single IP
             const pieces = [], { qty, ...nonQtyOptions } = options // eslint-disable-line no-unused-vars
-            for (let i = 0 ; i < 8 ; i++) pieces.push(random.hex(4)) // generate 8x 16-bit hex pieces
+            for (let i = 0 ; i < 8 ; i++) // generate 8x 16-bit hex pieces
+                pieces.push(random.hex(4))
             ips.push(this.format(pieces.join(':'), { ...nonQtyOptions, verbose: false }))
         }
         const ipResult = options.qty > 1 ? ips : ips[0]
