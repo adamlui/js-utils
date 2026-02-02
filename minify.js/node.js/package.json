@@ -47,7 +47,7 @@
     "build": "node utils/build",
     "build:js": "node utils/build --js",
     "build:data": "node utils/build --data",
-    "build:json": "npm run build:data",
+    "build:json": "node utils/build --json",
     "debug": "node src/cli --debug",
     "bump:patch": "bash utils/bump.sh patch",
     "bump:minor": "bash utils/bump.sh minor",
