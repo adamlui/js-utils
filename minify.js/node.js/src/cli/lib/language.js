@@ -1,5 +1,48 @@
 module.exports = {
 
+
+    generateRandomLang({ includes = [], excludes = [] } = {}) {
+
+        const fs = require('fs'),
+              log = require(`./log${ env.devMode ? '' : '.min' }.js`),
+              path = require('path')
+
+        let locales = includes.length ? includes : (() => {
+
+            // Read cache if found
+            const cacheDir = path.join(__dirname, '..', '.cache'),
+                  localeCache = path.join(cacheDir, 'locales.json')
+            if (fs.existsSync(localeCache))
+                try { return JSON.parse(fs.readFileSync(localeCache, 'utf8')) } catch {}
+
+            // Discover project _locales
+            const localesDir = path.resolve(process.cwd(), '_locales')
+            if (!fs.existsSync(localesDir)) return ['en']
+
+            const locales = fs.readdirSync(localesDir, { withFileTypes: true })
+                .filter(entry => entry.isDirectory())
+                .map(entry => entry.name)
+                .filter(name => /^[a-z]{2}(?:_[A-Z]{2})?$/.test(name))
+
+            // Cache result
+            fs.mkdirSync(cacheDir, { recursive: true })
+            fs.writeFileSync(localeCache, JSON.stringify(locales, null, 2))
+
+            return locales
+        })()
+
+        // Filter out excludes
+        const excludeSet = new Set(excludes)
+        locales = locales.filter(locale => !excludeSet.has(locale))
+
+        // Get random language
+        let randomLang = 'en'
+        if (locales.length)
+            randomLang = locales[Math.floor(Math.random() * locales.length)]
+        log.debug(`\nRandom language:  ${randomLang}\n`)
+
+        return randomLang
+    },
     async getMsgs(langCode = 'en') {
         const data = require(`./data${ env.devMode ? '' : '.min' }.js`)
         let msgs = data.flatten( // local ones

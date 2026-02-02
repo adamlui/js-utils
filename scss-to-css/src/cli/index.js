@@ -12,15 +12,15 @@
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
           fs = require('fs'),
-        { getMsgs, getSysLang } = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
+        { generateRandomLang, getMsgs, getSysLang } = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
           log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
           path = require('path'),
           scssToCSS = require(`../scss-to-css${ env.devMode ? '' : '.min' }.js`),
           settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
 
     // Init APP data
-    log.debug(Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`)))
-    app.msgs = await getMsgs(env.debugMode ? 'es' : getSysLang()) // --debug in Spanish to test jsDelivr
+    Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`))
+    log.debug(app.msgs = await getMsgs(env.debugMode ? generateRandomLang({ excludes: ['en'] }) : getSysLang()))
     app.urls.docs += '/#-command-line-usage'
 
     // Exec CMD arg if passed
@@ -143,7 +143,7 @@
                     }.min.css`
                 }
                 const outputPath = path.join(outputDir, outputFilename)
-                if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true })
+                fs.mkdirSync(outputDir, { recursive: true })
                 fs.writeFileSync(outputPath, code, 'utf8')
                 log.ifNotQuiet(
                     `  ${log.colors.bg}✓${log.colors.nc} ${path.relative(process.cwd(), outputPath)}`)
