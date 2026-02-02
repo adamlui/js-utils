@@ -175,14 +175,15 @@ function minify(input, options = {}) {
 
     } catch (err) {
         if (err.code == 'ENOENT') { // minify based on src code arg
-            if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
+            const isGulpEnv = process.argv.some(arg => arg.includes('gulp'))
+            if (options.verbose && !isGulpEnv)
                 log.info('** Minifying passed source code...')
             const minifyResult = uglifyJS.minify(input, minifyOptions)
             if (options.comment)
                 minifyResult.code = prependComment(minifyResult.code, options.comment)
             if (minifyResult.error)
                 log.error(minifyResult.error.message)
-            else if (options.verbose && !process.argv.some(arg => arg.includes('gulp')))
+            else if (options.verbose && !isGulpEnv)
                 log.info('Minification complete! Check returned object.')
             return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error }
         }

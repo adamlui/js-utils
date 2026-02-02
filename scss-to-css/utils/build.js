@@ -6,9 +6,9 @@
 // NOTE: Pass --data to copy data only
 // NOTE: Pass --json to copy JSON only
 
-const { execSync } = require('child_process'),
-        fs = require('fs'),
-        args = process.argv.slice(2)
+const args = process.argv.slice(2),
+    { execSync } = require('child_process'),
+      fs = require('fs')
 
 globalThis.app = require('../app.json')
 app.config = {

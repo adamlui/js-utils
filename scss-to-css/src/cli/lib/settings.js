@@ -54,10 +54,11 @@ module.exports = {
     },
 
     load(ctrlKeys = Object.keys(this.controls)) {
+        const args = process.argv.slice(2)
 
         // Load from config file
         let configPath = null
-        const configArg = process.argv.slice(2).find(arg => this.controls.config.regex.test(arg))
+        const configArg = args.find(arg => this.controls.config.regex.test(arg))
         if (configArg) { // resolve input path, then validate
             if (!/=/.test(configArg))
                 log.errorAndExit(`[${configArg}] ${app.msgs.error_mustIncludePath}`)
@@ -80,7 +81,7 @@ module.exports = {
                 log.configAndExit(`${app.msgs.error_failedToLoadConfigFile}:`, configPath, `\n${err.message}`) }
 
         // Load from CLI args
-        process.argv.slice(2).forEach(arg => {
+        args.forEach(arg => {
             if (/^[^-]|--?(?:config|debug)/.test(arg)) return
 
             const ctrlKey = ctrlKeys.find(key => this.controls[key]?.regex?.test(arg))

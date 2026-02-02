@@ -3,8 +3,9 @@
 (async () => {
     'use strict'
 
+    const args = process.argv.slice(2)
     globalThis.env = {
-        debugMode: process.argv.slice(2).some(arg => /^--?debug(?:-?mode)?$/.test(arg)),
+        debugMode: args.some(arg => /^--?debug(?:-?mode)?$/.test(arg)),
         devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname)
     }
 
@@ -22,7 +23,7 @@
 
     // Process ARGS
     const validIPs = []
-    for (const arg of process.argv.slice(2)) {
+    for (const arg of args) {
         const isInitCmd = settings.controls.init.regex.test(arg)
         if (isInitCmd) return settings.initConfigFile()
         else if (settings.controls.help.regex.test(arg)) return log.help()

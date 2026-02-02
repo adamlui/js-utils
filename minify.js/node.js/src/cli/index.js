@@ -3,8 +3,9 @@
 (async () => {
     'use strict'
 
+    const args = process.argv.slice(2)
     globalThis.env = {
-        debugMode: process.argv.slice(2).some(arg => /^--?debug(?:-?mode)?$/.test(arg)),
+        debugMode: args.some(arg => /^--?debug(?:-?mode)?$/.test(arg)),
         devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname)
     }
 
@@ -23,7 +24,7 @@
     app.urls.docs += '/#-command-line-usage'
 
     // Exec CMD arg if passed
-    for (const arg of process.argv.slice(2)) {
+    for (const arg of args) {
         if (settings.controls.init.regex.test(arg)) return settings.initConfigFile()
         else if (settings.controls.help.regex.test(arg)) return log.help()
         else if (settings.controls.version.regex.test(arg)) return log.version()
@@ -31,7 +32,7 @@
 
     // Init I/O args
     const [inputArg = '', outputArg = ''] = // default to empty strings for error-less handling
-        process.argv.slice(2) // exclude executable and script paths
+        args // exclude executable and script paths
             .filter(arg => !arg.startsWith('-')) // exclude flags
             .map(arg => arg.replace(/^\/*/, '')) // clean leading slashes to avoid parsing system root
 
