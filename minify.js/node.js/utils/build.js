@@ -19,11 +19,13 @@ app.config = {
 
 // Copy APP data
 if (!app.config.jsOnly) {
+    const dataOutDir = 'dist/data',
+          filenames = { appData: 'app.json', msgs: 'messages.json', config: 'minify.config.mjs' }
     fs.rmSync('dist', { recursive: true, force: true })
-    fs.mkdirSync('dist/data', { recursive: true })
-    fs.copyFileSync('../_locales/en/messages.json', 'dist/data/messages.json')
-    fs.copyFileSync('app.json', 'dist/data/app.json')
-    if (!app.config.jsonOnly) fs.copyFileSync('minify.config.mjs', 'dist/data/minify.config.mjs')
+    fs.mkdirSync(dataOutDir, { recursive: true })
+    fs.copyFileSync(`../_locales/en/${filenames.msgs}`, `${dataOutDir}/${filenames.msgs}`)
+    fs.copyFileSync(filenames.appData, `${dataOutDir}/${filenames.appData}`)
+    if (!app.config.jsonOnly) fs.copyFileSync(filenames.config, `${dataOutDir}/${filenames.config}`)
 }
 
 // Minify JS
