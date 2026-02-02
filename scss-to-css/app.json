@@ -11,5 +11,8 @@
     "jsdelivr": "https://cdn.jsdelivr.net/gh/adamlui/scss-to-css",
     "npm": "https://www.npmjs.com/package/@adamlui/scss-to-css",
     "src": "https://github.com/adamlui/scss-to-css/tree/main/src"
+  },
+  "commitHashes": {
+    "locales": "a978ccb"
   }
 }

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-(() => {
+(async () => {
     'use strict'
 
     globalThis.env = {
@@ -11,6 +11,7 @@
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
           fs = require('fs'),
+        { getMsgs, getSysLang } = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
           log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
           path = require('path'),
           scssToCSS = require(`../scss-to-css${ env.devMode ? '' : '.min' }.js`),
@@ -19,6 +20,7 @@
     // Init APP data
     Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`))
     log.debug(app.urls.docs += '/#-command-line-usage')
+    log.debug(app.msgs = await getMsgs(env.debugMode ? 'es' : getSysLang())) // use Spanish in --debug mode to test JSD
 
     // Exec CMD arg if passed
     for (const arg of process.argv.slice(2)) {
@@ -38,15 +40,14 @@
     if (inputArg && !fs.existsSync(inputPath)) {
         const scssInputPath = inputPath + '.scss' // append '.scss' in case ommitted from intended filename
         if (!fs.existsSync(scssInputPath)) {
-            log.error('First argument can only be an existing file or directory.',
-                `\n'${inputPath}' does not exist.`)
-            log.success(`Example valid command: \n» scss-to-css . output.min.css`)
+            log.error(`${app.msgs.error_firstArgNotExist}.\n${inputPath} ${app.msgs.error_doesNotExist}.`)
+            log.success(`${app.msgs.info_exampleValidCmd}: \n» scss-to-css . output.min.css`)
             log.helpCmdAndDocURL()
             process.exit(1)
         } else inputPath = scssInputPath
     }
 
-    // Find all eligible JavaScript files or arg-passed file
+    // Find all eligible SCSS files or arg-passed file
     settings.load()
     const scssFiles = inputPath.endsWith('.scss') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
         : scssToCSS.findSCSS(inputPath, {
@@ -57,10 +58,10 @@
 
     if (app.config.dryRun) { // -n or --dry-run passed
         if (scssFiles.length) { // print files to be processed
-            log.info('SCSS files to be compiled:')
+            log.info(`${app.msgs.info_scssFilesToBeCompiled}:`)
             scssFiles.forEach(file => console.info(file))
         } else // no files found
-            log.info('\nNo SCSS files will be compiled.')
+            log.info(`\n${app.msgs.info_noSCSSfilesWillBeCompiled}.`)
 
     } else { // actually compile SCSS files
 
@@ -94,36 +95,40 @@
         }).filter(compileResult => !compileResult.error)
 
         // Print compilation summary
-        if (compileData?.length) {
-            const cssCntSuffix = compileData.length > 1 ? 's' : ''
-            log.ifNotQuiet(`\n${log.colors.bg}Compilation complete!${log.colors.nc}`)
-            log.ifNotQuiet(`${log.colors.bw}${compileData.length} CSS file${cssCntSuffix}`
-                +( !app.config.noSourceMaps ? ` + ${compileData.length} source map${cssCntSuffix}` : '' )
-                + ` generated.${log.colors.nc}`)
-        } else log.ifNotQuiet(`\n${log.colors.by}No SCSS files processed.${log.colors.nc}`)
-        if (failedPaths.length) {
-            log.ifNotQuiet(`\n${log.colors.br}`
-                + `${failedPaths.length} file${ failedPaths.length > 1 ? 's' : '' }`
-                + ` failed to compile:${log.colors.nc}`)
-            failedPaths.forEach(path => log.ifNotQuiet(path))
+        if (!app.config.quietMode) {
+            const compiledCnt = compileData.length,
+                  cssCntSuffix = compiledCnt == 1 ? '' : 's'
+            if (compiledCnt) {
+                log.success(`${app.msgs.info_compilationComplete}!`)
+                log.data(`${compiledCnt} CSS ${app.msgs.info_file}${cssCntSuffix}${
+                    !app.config.noSourceMaps ? ` + ${compiledCnt} ${app.msgs.info_srcMap}${cssCntSuffix}`
+                        : '' } ${app.msgs.info_generated}.`
+                )
+            } else
+                console.info(`${app.msgs.info_noSCSSfilesProcessed}.`)
+            if (failedPaths.length) {
+                log.error(`${failedPaths.length} ${app.msgs.info_file}${ failedPaths.length == 1 ? '' : 's' }`,
+                    `${app.msgs.info_failedToCompile}:`)
+                failedPaths.forEach(path => log.ifNotQuiet(path))
+            }
         }
         if (!compileData?.length) return
 
         // Copy single result code to clipboard if --copy passed
         if (app.config.copy && compileData?.length == 1) {
             log.data(compileData[0].code)
-            log.ifNotQuiet('\nCopying to clipboard...')
+            log.ifNotQuiet(`\n${app.msgs.info_copying}...`)
             clipboardy.writeSync(compileData[0].code)
 
         } else { // write array data to files
-            log.ifNotQuiet(`\nWriting to file${ compileData?.length > 1 ? 's' : '' }...`)
+            log.ifNotQuiet(`\n${app.msgs.info_writing}${ compileData?.length > 1 ? 's' : '' }...`)
             compileData?.forEach(({ code, srcMap, srcPath, relPath }) => {
                 let outputDir, outputFilename
                 if (!app.config.relativeOutput && relPath) { // preserve folder structure
                     const outputPath = path.resolve(process.cwd(), outputArg || 'css'),
-                            relativeDir = path.dirname(relPath)
+                          relativeDir = path.dirname(relPath)
                     outputDir = relativeDir != '.' ? path.join(outputPath, relativeDir) : outputPath
-                    outputFilename = path.basename(srcPath, '.scss') + `${ app.config.noMinify ? '' : '.min' }.css`
+                    outputFilename = `${path.basename(srcPath, '.scss')}${ app.config.noMinify ? '' : '.min' }.css`
                 } else {
                     outputDir = path.join(
                         path.dirname(srcPath), // path of file to be minified
@@ -134,14 +139,14 @@
                         outputArg.endsWith('.css') && inputArg.endsWith('.scss')
                             ? path.basename(outputArg).replace(/(\.min)?\.css$/, '')
                                 : path.basename(srcPath, '.scss')
-                        }.min.css`
+                    }.min.css`
                 }
                 const outputPath = path.join(outputDir, outputFilename)
                 if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true })
                 fs.writeFileSync(outputPath, code, 'utf8')
                 log.ifNotQuiet(
                     `  ${log.colors.bg}✓${log.colors.nc} ${path.relative(process.cwd(), outputPath)}`)
-                if (!app.config.noSourceMaps) fs.writeFileSync(outputPath + '.map', JSON.stringify(srcMap), 'utf8')
+                if (!app.config.noSourceMaps) fs.writeFileSync(`${outputPath}.map`, JSON.stringify(srcMap), 'utf8')
                 log.ifNotQuiet(
                     `  ${log.colors.bg}✓${log.colors.nc} ${path.relative(process.cwd(), outputPath)}`)
             })

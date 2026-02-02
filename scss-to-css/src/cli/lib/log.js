@@ -11,68 +11,66 @@ module.exports = {
         tlBG: '\x1b[106m'     // teal bg
     },
 
-    config() { this.info(`\nExample valid config file: ${app.urls.config}`) },
+    config() { this.info(`\n${app.msgs.info_exampleValidConfigFile}: ${app.urls.config}`) },
     configAndExit(...args) { this.error(...args) ; this.config() ; process.exit(1) },
     data(msg) { console.log(`\n${this.colors.bw}${msg}${this.colors.nc}`) },
     debug(msg) { if (env.debugMode) console.log(msg) },
-    error(...args) { console.error(`\n${this.colors.br}ERROR:`, ...args, this.colors.nc) },
+    error(...args) { console.error(`\n${this.colors.br}${app.msgs.prefix_error}:`, ...args, this.colors.nc) },
     errorAndExit(...args) { this.error(...args) ; this.helpCmdAndDocURL() ; process.exit(1) },
     ifNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) },
     info(msg) { console.info(`\n${this.colors.by}${msg}${this.colors.nc}`) },
-    tip(msg) { console.info(`${this.colors.by}TIP: ${msg}${this.colors.nc}`) },
+    tip(msg) { console.info(`${this.colors.by}${app.msgs.prefix_tip}: ${msg}${this.colors.nc}`) },
     success(msg) { console.log(`\n${this.colors.bg}${msg}${this.colors.nc}`) },
-    warn(...args) { console.warn(`\n${this.colors.bo}WARNING:`, ...args, this.colors.nc) },
+    warn(...args) { console.warn(`\n${this.colors.bo}${app.msgs.prefix_warning}:`, ...args, this.colors.nc) },
 
     help(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'params', 'cmds']) {
         app.prefix = `${this.colors.tlBG}${this.colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${this.colors.nc} `
         const helpSections = {
             header: [
-                `\n├ ${app.prefix}© ${app.copyrightYear} ${app.author} under the ${app.license} license.`,
-                `${app.prefix}Source: ${app.urls.src}`
+                `\n├ ${app.prefix}${ app.msgs.appCopyright || `© ${app.copyrightYear} ${
+                       app.author} under the ${app.license} license` }.`,
+                `${app.prefix}${app.msgs.prefix_source}: ${app.urls.src}`
             ],
             usage: [
-                `\n${this.colors.bw}o Usage:${this.colors.nc}`,
+                `\n${this.colors.bw}o ${app.msgs.helpSection_usage}:${this.colors.nc}`,
                 ` ${this.colors.bw}» ${this.colors.bg}${app.cmdFormat}${this.colors.nc}`
             ],
             pathArgs: [
-                `\n${this.colors.bw}o Path arguments:${this.colors.nc}`,
-                ' [inputPath]                             '
-                    + 'Path to SCSS file or directory containing SCSS files to be compiled,'
-                    + ' relative to the current working directory.',
-                ' [outputPath]                            '
-                    + 'Path to file or directory where CSS + sourcemap files will be stored,'
-                    + ' relative to input root (if not provided, css/ is used).'
+                `\n${this.colors.bw}o ${app.msgs.helpSection_pathArgs}:${this.colors.nc}`,
+                ` [inputPath]                             ${app.msgs.inputPathDesc_main}, ${
+                                                            app.msgs.inputPathDesc_extra}.`,
+                ` [outputPath]                            ${app.msgs.outputPathDesc_main}, ${
+                                                            app.msgs.outputPathDesc_extra}`
             ],
             flags: [
-                `\n${this.colors.bw}o Boolean options:${this.colors.nc}`,
-                ' -n, --dry-run                           Don\'t actually compile the file(s),'
-                                                        + ' just show if they will be processed.',
-                ' -d, --include-dotfolders                Include dotfolders in file search.',
-                ' -S, --no-source-maps                    Prevent source maps from being generated.',
-                ' -M, --no-minify                         Disable minification of output CSS.',
-                ' -R, --no-recursion                      Disable recursive file searching.',
-                ' -r, --relative-output                   Output files relative to each source file instead of to input root.',
-                ' -c, --copy                              Copy compiled CSS to clipboard instead of writing to file'
-                                                        + ' if single source file is processed.',
-                ' -q, --quiet                             Suppress all logging except errors.'
+                `\n${this.colors.bw}o ${app.msgs.helpSection_flags}:${this.colors.nc}`,
+                ` -n, --dry-run                           ${app.msgs.optionDesc_dryRun}.`,
+                ` -d, --include-dotfolders                ${app.msgs.optionDesc_dotfolders}.`,
+                ` -S, --no-source-maps                    ${app.msgs.optionDesc_noSourceMaps}.`,
+                ` -M, --no-minify                         ${app.msgs.optionDesc_noMinify}.`,
+                ` -R, --no-recursion                      ${app.msgs.optionDesc_noRecursion}.`,
+                ` -r, --relative-output                   ${app.msgs.optionDesc_relativeOutput}.`,
+                ` -c, --copy                              ${app.msgs.optionDesc_copy}.`,
+                ` -q, --quiet                             ${app.msgs.optionDesc_quiet}.`
             ],
             params: [
-                `\n${this.colors.bw}o Parameter options:${this.colors.nc}`,
-                '--ignores="dir/,file1.scss,file2.scss"   Files/directories to exclude from compilation.',
-                '--comment="comment"                      Prepend header comment to compiled CSS.'
-                                                        + ' Separate by line using \'\\n\'.',
-                ' --config="path/to/file"                 Load custom config file.'
+                `\n${this.colors.bw}o ${app.msgs.helpSection_params}:${this.colors.nc}`,
+                `--ignores="dir/,file1.scss,file2.scss"   ${app.msgs.optionDesc_ignores}.`,
+                `--comment="comment"                      ${app.msgs.optionDesc_commentMain}. ${
+                                                            app.msgs.optionDesc_commentExtra}.`,
+                ` --config="path/to/file"                 ${app.msgs.optionDesc_config}.`
             ],
             cmds: [
-                `\n${this.colors.bw}o Commands:${this.colors.nc}`,
-                ' -i, --init                              Create config file (in project root).',
-                ' -h, --help                              Display help screen.',
-                ' -v, --version                           Show version number.'
+                `\n${this.colors.bw}o ${app.msgs.helpSection_cmds}:${this.colors.nc}`,
+                ` -i, --init                              ${app.msgs.optionDesc_init}.`,
+                ` -h, --help                              ${app.msgs.optionDesc_help}.`,
+                ` -v, --version                           ${app.msgs.optionDesc_version}.`
             ]
         }
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 41)))
-        console.info(`\nFor more help, please visit: ${this.colors.bw}${app.urls.docs}${this.colors.nc}`)
+        console.info(
+            `\n${app.msgs.info_moreHelp}, ${app.msgs.info_visit}: ${this.colors.bw}${app.urls.docs}${this.colors.nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
@@ -100,8 +98,9 @@ module.exports = {
     },
 
     helpCmdAndDocURL() {
-        console.info(
-            `\nFor more help, type 'scss-to-css --help' or visit\n${
+        console.info(`\n${
+            app.msgs.info_moreHelp}, ${app.msgs.info_type} ${app.name.split('/')[1]} --help' ${
+                app.msgs.info_or} ${app.msgs.info_visit}\n${
                 this.colors.bw}${app.urls.docs}${this.colors.nc}`
         )
     },
@@ -122,6 +121,6 @@ module.exports = {
             }
             currentDir = path.dirname(currentDir)
         }
-        console.info(`\nGlobal version: ${globalVer}\nLocal version: ${localVer}`)
+        console.info(`\n${app.msgs.prefix_globalVer}: ${globalVer}\n${app.msgs.prefix_localVer}: ${localVer}`)
     }
 }
