@@ -18,7 +18,7 @@ module.exports = {
     },
 
     initConfigFile() {
-        const configFilename = 'generate-pw.config.mjs',
+        const configFilename = 'generate-ip.config.mjs',
               targetPath = path.resolve(process.cwd(), configFilename)
         if (fs.existsSync(targetPath))
             return log.warn(`${app.msgs.warn_configFileExists}:`, targetPath)
