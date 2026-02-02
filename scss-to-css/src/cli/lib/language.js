@@ -16,7 +16,7 @@ module.exports = {
                     msgFetchTries++ ; if (msgFetchTries > 2) break
                     msgHref = langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                         msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
-                            : `${msgHostURL}en/messages.json` // else use default EN msgs
+                            : `${msgHostURL}en/messages.json` // else use EN msgs
                 }
         }
         return msgs
