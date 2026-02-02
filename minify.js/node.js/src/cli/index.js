@@ -138,7 +138,7 @@
                     }${ app.config.noFilenameChange ? '' : '.min' }.js`
                 }
                 const outputPath = path.join(outputDir, outputFilename)
-                if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true })
+                fs.mkdirSync(outputDir, { recursive: true })
                 fs.writeFileSync(outputPath, code, 'utf8')
                 log.ifNotQuiet(
                     `  ${log.colors.bg}✓${log.colors.nc} ${path.relative(process.cwd(), outputPath)}`)
