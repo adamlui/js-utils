@@ -9,8 +9,8 @@ module.exports = {
     controls: {
         qty: { type: 'param', regex: /^--?qu?a?n?ti?t?y(?:=.*|$)/, parser: val => parseInt(val, 10) },
         config: { type: 'param', regex: /^--?config(?:=.*|$)/ },
-        ipv6mode: { type: 'flag', regex: /^--?(?:ip)?v?6(?:-?mode)?$/ },
-        macMode: { type: 'flag', regex: /^--?m(?:ac)?(?:-?mode)?$/ },
+        ipv6mode: { type: 'flag', mode: true, regex: /^--?(?:ip)?v?6(?:-?mode)?$/ },
+        macMode: { type: 'flag', mode: true,regex: /^--?m(?:ac)?(?:-?mode)?$/ },
         quietMode: { type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
         init: { type: 'cmd', regex: /^-{0,2}i(?:nit)?$/ },
         help: { type: 'cmd', regex: /^--?h(?:elp)?$/ },
@@ -65,18 +65,21 @@ module.exports = {
 
             const ctrlKey = ctrlKeys.find(key => this.controls[key]?.regex?.test(arg))
             if (!ctrlKey) log.errorAndExit(`[${arg}] ${app.msgs.error_notRecognized}.`)
-            if (this.controls[ctrlKey].type == 'cmd') return
-            let ctrlKeyVal = this.controls[ctrlKey].type == 'param' ? arg.split('=')[1] : true
+            const ctrl = this.controls[ctrlKey] ; if (ctrl.type == 'cmd') return
+            let ctrlKeyVal = ctrl.type == 'param' ? arg.split('=')[1]?.trim() : true
 
-            // Parse/validate vals
-            const parser = this.controls[ctrlKey].parser
-            if (parser) { // parse val first
-                ctrlKeyVal = parser(ctrlKeyVal)
-                if (isNaN(ctrlKeyVal) || ctrlKeyVal < 1)
-                    log.errorAndExit(`[${ctrlKey}] ${app.msgs.error_nonPositiveNum}.`)
+            if (ctrl.mode) { // set val as app.config.mode string
+                const match = ctrlKey.match(/^(.+)mode$/i)
+                if (match?.[1]) app.config.mode = match[1].toLowerCase()
+            } else { // parse/validate remaining args
+                const parser = ctrl.parser
+                if (parser) {
+                    ctrlKeyVal = parser(ctrlKeyVal)
+                    if (isNaN(ctrlKeyVal) || ctrlKeyVal < 1)
+                        log.errorAndExit(`[${ctrlKey}] ${app.msgs.error_nonPositiveNum}.`)
+                }
+                app.config[ctrlKey] = ctrlKeyVal
             }
-
-            app.config[ctrlKey] = ctrlKeyVal
         })
 
         return app.config
