@@ -29,10 +29,9 @@
 
     // Log/copy random IP(s)
     settings.load()
-    const genOptions = { qty: app.config.qty, verbose: !app.config.quietMode },
-          ipResult = app.config.ipv6mode ? ipv6.generate(genOptions)
-                   : app.config.macMode  ?  mac.generate(genOptions)
-                                         : ipv4.generate(genOptions)
+    const genMode = app.config.ipv6mode ? 'ipv6' : app.config.macMode ? 'mac' : 'ipv4',
+          genOptions = { qty: app.config.qty, verbose: !app.config.quietMode },
+          ipResult = { ipv4, ipv6, mac }[genMode].generate(genOptions)
     log.ifNotQuiet(`\n${app.msgs.info_copying}...`)
     clipboardy.writeSync([].concat(ipResult).join('\n'))
 
