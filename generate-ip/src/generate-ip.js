@@ -378,6 +378,6 @@ try { module.exports = { ...app.exports }} catch (err) {} // for Node.js
 try { Object.assign(window, app.exports) } catch (err) {} // for browsers
 for (const api in app.aliases) // export aliases
     app.aliases[api].forEach(alias => {
-        try { module.exports[alias] = module.exports[api] } catch (err) {} // for Node.js
-        try { window[alias] = window[api] } catch (err) {} // for browsers
+        try { module.exports[alias] ??= module.exports[api] } catch (err) {} // for Node.js
+        try { window[alias] ??= window[api] } catch (err) {} // for browsers
     });

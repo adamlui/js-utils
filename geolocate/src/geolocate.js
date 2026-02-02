@@ -141,6 +141,6 @@ const log = {
 try { module.exports = { geolocate }} catch (err) {} // for Node.js
 try { window.geo = { geolocate }} catch (err) {} // for browsers
 for (const fn in app.aliases) { // export aliases
-    try { app.aliases[fn].forEach(alias => module.exports[alias] = module.exports[fn]) } catch (err) {} // for Node.js
-    try { app.aliases[fn].forEach(alias => window.geo[alias] = window.geo[fn]) } catch (err) {} // for browsers
+    try { app.aliases[fn].forEach(alias => module.exports[alias] ??= module.exports[fn]) } catch (err) {} // for Node.js
+    try { app.aliases[fn].forEach(alias => window.geo[alias] ??= window.geo[fn]) } catch (err) {} // for browsers
 }

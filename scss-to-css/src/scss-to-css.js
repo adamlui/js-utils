@@ -232,4 +232,4 @@ const log = {
 
 module.exports = { compile, findSCSS }
 for (const fn in app.aliases) // export aliases
-    app.aliases[fn].forEach(alias => module.exports[alias] = module.exports[fn]);
+    app.aliases[fn].forEach(alias => module.exports[alias] ??= module.exports[fn]);
