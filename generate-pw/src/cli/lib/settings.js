@@ -27,12 +27,11 @@ module.exports = {
         version: { type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
     },
 
-    initConfigFile() {
-        const configFilename = 'generate-pw.config.mjs',
-              targetPath = path.resolve(process.cwd(), configFilename)
+    initConfigFile({ filename = 'generate-pw.config.mjs' } = {}) {
+        const targetPath = path.resolve(process.cwd(), filename)
         if (fs.existsSync(targetPath))
             return log.warn(`${app.msgs.warn_configFileExists}:`, targetPath)
-        const srcPath = path.resolve(__dirname, `../../${ env.devMode ? '../' : './data/' }${configFilename}`)
+        const srcPath = path.resolve(__dirname, `../../${ env.devMode ? '../' : './data/' }${filename}`)
         if (!fs.existsSync(srcPath)) {
             log.error(`${app.msgs.error_templateNotFound}:`, srcPath)
             process.exit(1)
