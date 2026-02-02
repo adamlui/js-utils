@@ -62,7 +62,7 @@ module.exports = {
         // Load from config file
         let configPath = null
         const configArg = process.argv.slice(2).find(arg => this.controls.config.regex.test(arg))
-        if (configArg) { // resolve path then validate
+        if (configArg) { // resolve input path, then validate
             if (!/=/.test(configArg))
                 log.errorAndExit(`[${configArg}] ${app.msgs.error_mustIncludePath}`)
             const inputPath = configArg.split('=')[1]
@@ -86,21 +86,21 @@ module.exports = {
         // Load from CLI args
         process.argv.slice(2).forEach(arg => {
             if (!arg.startsWith('-') || /^--?(?:config|debug)/.test(arg)) return
+
             const ctrlKey = ctrlKeys.find(key => this.controls[key]?.regex?.test(arg))
             if (!ctrlKey) log.errorAndExit(`[${arg}] ${app.msgs.error_notRecognized}.`)
-            else if (ctrlKey.type == 'cmd') return
-            app.config[ctrlKey] = this.controls[ctrlKey].type == 'param' ? arg.split('=')[1] : true
-        })
+            if (this.controls[ctrlKey].type == 'cmd') return
+            let ctrlKeyVal = this.controls[ctrlKey].type == 'param' ? arg.split('=')[1] : true
 
-        // Parse/validate options
-        Object.keys(app.config).forEach(key => {
-            const ctrl = this.controls[key] ; if (!ctrl) return
-            if (ctrl.parser) {
-                const parsed = ctrl.parser(app.config[key])
-                if (isNaN(parsed) || parsed < 1)
-                    log.errorAndExit(`[${key}] ${app.msgs.error_nonPositiveNum}.`)
-                app.config[key] = parsed
+            // Parse/validate vals
+            const parser = this.controls[ctrlKey].parser
+            if (parser) { // parse val first
+                ctrlKeyVal = parser(ctrlKeyVal)
+                if (isNaN(ctrlKeyVal) || ctrlKeyVal < 1)
+                    log.errorAndExit(`[${ctrlKey}] ${app.msgs.error_nonPositiveNum}.`)
             }
+
+            app.config[ctrlKey] = ctrlKeyVal
         })
 
         return app.config
