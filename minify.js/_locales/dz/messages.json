@@ -57,7 +57,7 @@
   "optionDesc_quiet": { "message": "འཛོལ་བ་མ་གཏོགས་ གཞན་ག་ནི་ཡང་མ་འབད།" },
   "optionDesc_ignores": { "message": "ཡིག་སྣོད་/ཡིག་སྣོད་ཚུ་ Minification ལས་ཕྱིར་འབུད་འབད་" },
   "optionDesc_commentMain": { "message": "དཔྱད་བརྗོད་ཀྱི་ཨེབ་གནང།" },
-  "optionDesc_commentExtra": { "message": "འོག་གི་ཤོག་ལེབ་ཚུ་ \"N\" ལུ་འབྲེལ་མཐུད་འབད་ཨིན" },
+  "optionDesc_commentExtra": { "message": "འོག་གི་ཤོག་ལེབ་ཚུ་ '\\n' ལུ་འབྲེལ་མཐུད་འབད་ཨིན" },
   "optionDesc_config": { "message": "རང་ལུགས་སྒྲིག་གཞི་ཡིག་སྣོད་འདི་ལོཌ་འབད།" },
   "optionDesc_init": { "message": "Config file བཟོ་ (project rootནང་ལུ་)" },
   "optionDesc_help": { "message": "གྲོགས་རམ་གི་མཐོང་སྣོད་སྟོན་" },

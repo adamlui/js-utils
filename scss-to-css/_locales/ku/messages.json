@@ -8,7 +8,7 @@
   "prefix_localVer": { "message": "Versiyona herêmî" },
   "prefix_source": { "message": "Çavkanî" },
   "error_notRecognized": { "message": "nayê naskirin" },
-  "error_nonPositiveNum": { "message": "arguman tenê dikare &gt; 0 be" },
+  "error_nonPositiveNum": { "message": "arguman tenê dikare > 0 be" },
   "error_invalidURL": { "message": "URL ya nederbasdar" },
   "error_invalidConfigFile": { "message": "Pelê mîhengkirinê divê tiştekî hinarde bike" },
   "error_configFileNotFound": { "message": "Pelê mîhengkirinê nehat dîtin" },

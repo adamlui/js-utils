@@ -1,7 +1,7 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024 -2026 Adam Lui & kontributor di bawah lisensi MIT" },
-  "prefix_error": { "message": "ERROR" },
+  "prefix_error": { "message": "KESALAHAN" },
   "prefix_tip": { "message": "Tips" },
   "prefix_warning": { "message": "PERINGATAN" },
   "prefix_globalVer": { "message": "Versi global" },

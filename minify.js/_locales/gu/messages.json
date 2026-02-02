@@ -1,7 +1,7 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 એડમ લુઇ અને MIT લાઇસન્સ હેઠળ ફાળો આપનારાઓ" },
-  "prefix_error": { "message": "ERROR" },
+  "prefix_error": { "message": "ભૂલ" },
   "prefix_tip": { "message": "ટિપ" },
   "prefix_warning": { "message": "ચેતવણી" },
   "prefix_globalVer": { "message": "વૈશ્વિક સંસ્કરણ" },

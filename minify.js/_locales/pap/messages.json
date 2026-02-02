@@ -1,8 +1,8 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & Contributor" },
-  "prefix_error": { "message": "ERROR" },
-  "prefix_tip": { "message": "TIP" },
+  "prefix_error": { "message": "EROR" },
+  "prefix_tip": { "message": "TEP" },
   "prefix_warning": { "message": "Atvertensha" },
   "prefix_globalVer": { "message": "Vershon Global" },
   "prefix_localVer": { "message": "Vershon lokal" },

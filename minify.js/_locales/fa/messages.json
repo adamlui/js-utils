@@ -3,7 +3,7 @@
   "appCopyright": { "message": "© 2024–2026 Adam Lui و همکاران تحت مجوز MIT" },
   "prefix_error": { "message": "خطا" },
   "prefix_tip": { "message": "نکته" },
-  "prefix_warning": { "message": "WARNING" },
+  "prefix_warning": { "message": "هشدار" },
   "prefix_globalVer": { "message": "نسخه جهانی" },
   "prefix_localVer": { "message": "نسخه محلی" },
   "prefix_source": { "message": "منبع" },

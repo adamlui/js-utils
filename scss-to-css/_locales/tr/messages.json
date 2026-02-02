@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Örnek geçerli komut" },
   "info_scssFilesToBeCompiled": { "message": "Derlenecek SCSS dosyaları" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Hiçbir SCSS dosyası derlenmeyecek" },
-  "info_copying": { "message": "Panoya kopyalanıyor..." },
+  "info_copying": { "message": "Panoya kopyalanıyor" },
   "info_writing": { "message": "Dosyaya yazılıyor" },
   "info_compilationComplete": { "message": "Derleme tamamlandı" },
   "info_file": { "message": "dosya" },

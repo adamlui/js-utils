@@ -31,7 +31,7 @@
   "info_noSCSSfilesProcessed": { "message": "কোনও SCSS ফাইল প্রক্রিয়া করা হয়নি" },
   "info_failedToCompile": { "message": "কম্পাইল করতে ব্যর্থ হয়েছে" },
   "info_moreHelp": { "message": "আরও সাহায্যের জন্য" },
-  "info_type": { "message": "" },
+  "info_type": { "message": "আদর্শ" },
   "info_or": { "message": "অথবা" },
   "info_visit": { "message": "ভিজিট করুন" },
   "info_configFileCreated": { "message": "কনফিগ ফাইল তৈরি করা হয়েছে" },

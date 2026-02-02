@@ -41,7 +41,7 @@
   "helpSection_pathArgs": { "message": "Agiman Chemen" },
   "helpSection_flags": { "message": "Opsyon Boolean" },
   "helpSection_params": { "message": "Opsyon paramèt" },
-  "helpSection_cmds": { "message": "lòd." },
+  "helpSection_cmds": { "message": "lòd" },
   "inputPathDesc_main": { "message": "Chemen nan dosye SCSS oswa anyè ki gen dosye SCSS yo dwe konpile" },
   "inputPathDesc_extra": { "message": "relatif nan anyè k ap travay aktyèl la/relatif a anyè" },
   "outputPathDesc_main": { "message": "Chemen nan dosye oswa anyè kote CSS + dosye sourcemap yo pral estoke" },

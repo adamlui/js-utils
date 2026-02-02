@@ -8,7 +8,7 @@
   "prefix_localVer": { "message": "לאקאלע ווערסיע" },
   "prefix_source": { "message": "מקור" },
   "error_notRecognized": { "message": "נישט דערקענט" },
-  "error_nonPositiveNum": { "message": "אַרגומענט קען נאָר זײַן &gt; 0" },
+  "error_nonPositiveNum": { "message": "אַרגומענט קען נאָר זײַן > 0" },
   "error_invalidURL": { "message": "אומגילטיק URL" },
   "error_invalidConfigFile": { "message": "קאָנפיג טעקע מוז עקספּאָרטירן אַן אָביעקט" },
   "error_configFileNotFound": { "message": "קאָנפיגוראַציע טעקע נישט געפֿונען" },

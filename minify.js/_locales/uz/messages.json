@@ -8,7 +8,7 @@
   "prefix_localVer": { "message": "Mahalliy versiya" },
   "prefix_source": { "message": "Manba" },
   "error_notRecognized": { "message": "aniqlanmadi" },
-  "error_nonPositiveNum": { "message": "argument faqat &gt; 0 bo'lishi mumkin" },
+  "error_nonPositiveNum": { "message": "argument faqat > 0 bo'lishi mumkin" },
   "error_invalidURL": { "message": "KDE qopchiq xizmati" },
   "error_invalidConfigFile": { "message": "Konfiguratsiya fayli obyektni eksport qilishi kerak" },
   "error_configFileNotFound": { "message": "Konfiguratsiya fayli topilmadi" },

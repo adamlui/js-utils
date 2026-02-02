@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Exemplu de comandă validă" },
   "info_scssFilesToBeCompiled": { "message": "Fișiere SCSS de compilat" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Nu vor fi compilate fișiere SCSS" },
-  "info_copying": { "message": "Copiez în clipboard..." },
+  "info_copying": { "message": "Copiez în clipboard" },
   "info_writing": { "message": "Scriere în fișier" },
   "info_compilationComplete": { "message": "Compilare finalizată" },
   "info_file": { "message": "fișier" },

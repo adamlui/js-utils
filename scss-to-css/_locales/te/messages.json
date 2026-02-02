@@ -41,7 +41,7 @@
   "helpSection_pathArgs": { "message": "పాత్ ఆర్గ్యుమెంట్ ‌ లు" },
   "helpSection_flags": { "message": "బూలియన్ ఎంపికలు" },
   "helpSection_params": { "message": "పరామితి ఎంపికలు" },
-  "helpSection_cmds": { "message": "command for..." },
+  "helpSection_cmds": { "message": "command for" },
   "inputPathDesc_main": { "message": "SCSS ఫైల్ ‌ కు మార్గం లేదా SCSS ఫైల్ ‌ లను కలిగి ఉన్న డైరెక్టరీ కంపైల్ చేయాలి" },
   "inputPathDesc_extra": { "message": "ప్రస్తుత వర్కింగ్ డైరెక్టరీకి సంబంధించి" },
   "outputPathDesc_main": { "message": "CSS + సోర్స్ మ్యాప్ ఫైల్స్ నిల్వ చేయబడే ఫైల్ లేదా డైరెక్టరీకి మార్గం" },

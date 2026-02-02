@@ -6,7 +6,7 @@
   "prefix_warning": { "message": "تحذير" },
   "prefix_globalVer": { "message": "الإصدار العالمي" },
   "prefix_localVer": { "message": "النسخة المحلية" },
-  "prefix_source": { "message": "Source" },
+  "prefix_source": { "message": "مصدر" },
   "error_notRecognized": { "message": "غير معترف بها" },
   "error_nonPositiveNum": { "message": "يمكن أن تكون الوسيطة > 0 فقط" },
   "error_invalidURL": { "message": "الرابط غير صحيح" },

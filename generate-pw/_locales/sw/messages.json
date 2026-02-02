@@ -1,7 +1,7 @@
 {
   "appName": { "message": "generate-pw" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui na wachangiaji chini ya leseni ya Mit" },
-  "prefix_error": { "message": "ERROR" },
+  "prefix_error": { "message": "KOSA" },
   "prefix_tip": { "message": "Kidokezo" },
   "prefix_warning": { "message": "ONYO" },
   "prefix_globalVer": { "message": "Toleo la kimataifa" },
@@ -26,7 +26,7 @@
   "info_configFileCreated": { "message": "Sanidi faili iliyoundwa" },
   "tip_editToSetDefaults": { "message": "Hariri faili hili ili ubadilishe chaguo-msingi" },
   "tip_cliArgsPrioritized": { "message": "Hoja za CLI kila wakati zinabatilisha maadili haya" },
-  "helpSection_usage": { "message": "[Usage]" },
+  "helpSection_usage": { "message": "Matumizi" },
   "helpSection_params": { "message": "Machaguo ya kigezo" },
   "helpSection_flags": { "message": "Machaguo ya boolean" },
   "helpSection_cmds": { "message": "Amri za taarifa" },

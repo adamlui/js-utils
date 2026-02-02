@@ -9,7 +9,7 @@
   "prefix_source": { "message": "Iturria" },
   "error_noEqual": { "message": "'=' eta ondoren balio bat eskatzen du" },
   "error_notRecognized": { "message": "EZ DA EZAGUTZEN" },
-  "error_nonPositiveNum": { "message": "argumentua &gt; 0 bakarrik izan daiteke" },
+  "error_nonPositiveNum": { "message": "argumentua > 0 bakarrik izan daiteke" },
   "error_invalidURL": { "message": "Baliogabeko URLa" },
   "error_invalidConfigFile": { "message": "Konfigurazio fitxategiak objektu bat esportatu behar du" },
   "error_configFileNotFound": { "message": "Konfigurazio fitxategia ez da aurkitu" },

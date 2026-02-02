@@ -6,7 +6,7 @@
   "prefix_warning": { "message": "ĮSPĖJIMAS" },
   "prefix_globalVer": { "message": "Visuotinė versija" },
   "prefix_localVer": { "message": "Vietinė versija" },
-  "prefix_source": { "message": "Source" },
+  "prefix_source": { "message": "Šaltinis" },
   "error_noEqual": { "message": "reikia '=', po kurio eina reikšmė" },
   "error_notRecognized": { "message": "neatpažintas" },
   "error_nonPositiveNum": { "message": "argumentas gali būti tik > 0" },

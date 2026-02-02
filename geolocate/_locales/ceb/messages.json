@@ -28,7 +28,7 @@
   "geoLabel_country": { "message": "Nasud?" },
   "geoLabel_region": { "message": "Rehiyon" },
   "geoLabel_city": { "message": "Siyudad" },
-  "geoLabel_zip": { "message": "" },
+  "geoLabel_zip": { "message": "Zip" },
   "geoLabel_lat": { "message": "Latitud" },
   "geoLabel_lon": { "message": "Longhitud" },
   "geoLabel_timeZone": { "message": "Time zone" },

@@ -9,7 +9,7 @@
   "prefix_source": { "message": "Fuente" },
   "error_notRecognized": { "message": "No reconocido" },
   "error_nonPositiveNum": { "message": "argumento solo puede ser > 0" },
-  "error_invalidURL": { "message": "Invalid URL" },
+  "error_invalidURL": { "message": "URL no válida" },
   "error_invalidConfigFile": { "message": "El archivo de configuración debe exportar un objeto" },
   "error_configFileNotFound": { "message": "Archivo de configuración no encontrado" },
   "error_failedToLoadConfigFile": { "message": "Error al cargar el archivo de configuración de la exposición" },

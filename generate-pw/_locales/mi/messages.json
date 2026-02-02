@@ -29,7 +29,7 @@
   "helpSection_usage": { "message": "Whakamahia" },
   "helpSection_params": { "message": "Kōwhiringa parameter" },
   "helpSection_flags": { "message": "Kōwhiringa Boolean" },
-  "helpSection_cmds": { "message": "Whakahau Info" },
+  "helpSection_cmds": { "message": "Ngā Whakahau" },
   "optionDesc_length": { "message": "Hanga kupuhipa(s) o te roa n" },
   "optionDesc_qty": { "message": "Hanga n kupuhipa(s)" },
   "optionDesc_config": { "message": "Uta kōnae whirihoranga ritenga" },

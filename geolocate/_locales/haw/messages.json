@@ -8,7 +8,7 @@
   "prefix_localVer": { "message": "Mana kūloko" },
   "prefix_source": { "message": "Puna" },
   "error_notRecognized": { "message": "ʻike ʻole ʻia" },
-  "error_nonPositiveNum": { "message": "hiki ke &gt; 0 wale nō ka hoʻopaʻapaʻa" },
+  "error_nonPositiveNum": { "message": "hiki ke > 0 wale nō ka hoʻopaʻapaʻa" },
   "error_invalidURL": { "message": "Hūnā hewa ʻole" },
   "error_invalidConfigFile": { "message": "Pono ka faila hoʻonohonoho e hoʻokuʻu aku i kahi mea" },
   "error_configFileNotFound": { "message": "ʻAʻole i loaʻa ka faila hoʻonohonoho" },

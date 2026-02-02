@@ -9,7 +9,7 @@
   "prefix_source": { "message": "מקור" },
   "error_noEqual": { "message": "ריקווייערז '=' נאכגעגאנגען דורך אַ ווערט" },
   "error_notRecognized": { "message": "נישט דערקענט" },
-  "error_nonPositiveNum": { "message": "אַרגומענט קען נאָר זיין&gt; 0" },
+  "error_nonPositiveNum": { "message": "אַרגומענט קען נאָר זיין> 0" },
   "error_invalidURL": { "message": "אומגילטיק URL" },
   "error_invalidConfigFile": { "message": "קאָנפיג טעקע מוז עקספּאָרטירן אַן אָביעקט" },
   "error_configFileNotFound": { "message": "קאָנפיגוראַציע טעקע נישט געפֿונען" },

@@ -9,7 +9,7 @@
   "prefix_source": { "message": "Puna" },
   "error_noEqual": { "message": "koi '=' a ukali ʻia e kahi waiwai" },
   "error_notRecognized": { "message": "ʻike ʻole ʻia" },
-  "error_nonPositiveNum": { "message": "hiki ke hoʻopaʻapaʻa &gt; 0 wale nō" },
+  "error_nonPositiveNum": { "message": "hiki ke hoʻopaʻapaʻa > 0 wale nō" },
   "error_invalidURL": { "message": "Hūnā hewa ʻole" },
   "error_invalidConfigFile": { "message": "Pono ka faila hoʻonohonoho e hoʻokuʻu aku i kahi mea" },
   "error_configFileNotFound": { "message": "ʻAʻole i loaʻa ka faila hoʻonohonoho" },

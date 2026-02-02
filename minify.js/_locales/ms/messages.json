@@ -2,7 +2,7 @@
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & penyumbang di bawah LESEN MIT" },
   "prefix_error": { "message": "RALAT" },
-  "prefix_tip": { "message": "TIP" },
+  "prefix_tip": { "message": "PETUA" },
   "prefix_warning": { "message": "AMARAN" },
   "prefix_globalVer": { "message": "Versi global" },
   "prefix_localVer": { "message": "Versi tempatan" },
