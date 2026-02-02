@@ -191,9 +191,9 @@ function minify(input, options = {}) {
 }
 
 function prependComment(code, comment) {
-    const shebangMatch = code.match(/^#!.*\n/)
-    let shebang = ''
-    if (shebangMatch) { shebang = shebangMatch[0] ; code = code.slice(shebang.length) }
+    let shebang = '' ; const shebangMatch = code.match(/^#!.*\n/)
+    if (shebangMatch) { // slice shebang from code to memory
+        shebang = shebangMatch[0] ; code = code.slice(shebang.length) }
     return `${shebang}/**\n${comment.split('\n').map(line => ` * ${line}`).join('\n')}\n */\n${code}`
 }
 
