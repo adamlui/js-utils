@@ -27,8 +27,7 @@ module.exports = {
         app.prefix = `${this.colors.tlBG}${this.colors.blk} ${app.name.replace(/^@[^/]+\//, '')} ${this.colors.nc} `
         const helpSections = {
             header: [
-                `\n├ ${app.prefix}${ app.msgs.appCopyright || `© ${app.copyrightYear} ${
-                       app.author} under the ${app.license} license` }.`,
+                `\n├ ${app.prefix}${app.msgs.appCopyright}.`,
                 `${app.prefix}${app.msgs.prefix_source}: ${app.urls.src}`
             ],
             usage: [
