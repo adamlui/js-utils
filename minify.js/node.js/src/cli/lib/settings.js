@@ -42,7 +42,7 @@ module.exports = {
     },
 
     initConfigFile() {
-        const configFilename = 'generate-ip.config.mjs',
+        const configFilename = 'minify.config.mjs',
               targetPath = path.resolve(process.cwd(), configFilename)
         if (fs.existsSync(targetPath))
             return log.warn(`${app.msgs.warn_configFileExists}:`, targetPath)
@@ -70,8 +70,8 @@ module.exports = {
             if (!fs.existsSync(configPath))
                 log.configAndExit(`${app.msgs.error_configFileNotFound}:`, configPath)
         } else // auto-discover .config.[cm]?js file
-            for (const ext of ['cjs', 'mjs', 'js']) {
-                const autoPath = path.resolve(process.cwd(), `generate-ip.config.${ext}`)
+            for (const ext of ['mjs', 'cjs', 'js']) {
+                const autoPath = path.resolve(process.cwd(), `minify.config.${ext}`)
                 if (fs.existsSync(autoPath)) { configPath = autoPath ; break }
             }
         if (configPath)
@@ -89,18 +89,21 @@ module.exports = {
 
             const ctrlKey = ctrlKeys.find(key => this.controls[key]?.regex?.test(arg))
             if (!ctrlKey) log.errorAndExit(`[${arg}] ${app.msgs.error_notRecognized}.`)
-            if (this.controls[ctrlKey].type == 'cmd') return
-            let ctrlKeyVal = this.controls[ctrlKey].type == 'param' ? arg.split('=')[1] : true
+            const ctrl = this.controls[ctrlKey] ; if (ctrl.type == 'cmd') return
+            let ctrlKeyVal = ctrl.type == 'param' ? arg.split('=')[1]?.trim() : true
 
-            // Parse/validate vals
-            const parser = this.controls[ctrlKey].parser
-            if (parser) { // parse val first
-                ctrlKeyVal = parser(ctrlKeyVal)
-                if (isNaN(ctrlKeyVal) || ctrlKeyVal < 1)
-                    log.errorAndExit(`[${ctrlKey}] ${app.msgs.error_nonPositiveNum}.`)
+            if (ctrl.mode) { // set val as app.config.mode string
+                const match = ctrlKey.match(/^(.+)mode$/i)
+                if (match?.[1]) app.config.mode = match[1].toLowerCase()
+            } else { // parse/validate remaining args
+                const parser = ctrl.parser
+                if (parser) {
+                    ctrlKeyVal = parser(ctrlKeyVal)
+                    if (isNaN(ctrlKeyVal) || ctrlKeyVal < 1)
+                        log.errorAndExit(`[${ctrlKey}] ${app.msgs.error_nonPositiveNum}.`)
+                }
+                app.config[ctrlKey] = ctrlKeyVal
             }
-
-            app.config[ctrlKey] = ctrlKeyVal
         })
 
         return app.config
