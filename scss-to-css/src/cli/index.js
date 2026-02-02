@@ -18,9 +18,9 @@
           settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
 
     // Init APP data
-    Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`))
-    log.debug(app.urls.docs += '/#-command-line-usage')
-    log.debug(app.msgs = await getMsgs(env.debugMode ? 'es' : getSysLang())) // use Spanish in --debug mode to test JSD
+    log.debug(Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`)))
+    app.msgs = await getMsgs(env.debugMode ? 'es' : getSysLang()) // --debug in Spanish to test jsDelivr
+    app.urls.docs += '/#-command-line-usage'
 
     // Exec CMD arg if passed
     for (const arg of process.argv.slice(2)) {
