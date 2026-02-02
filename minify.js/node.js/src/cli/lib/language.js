@@ -13,7 +13,7 @@ module.exports = {
             const cacheDir = path.join(__dirname, '..', '.cache'),
                   localeCache = path.join(cacheDir, 'locales.json')
             if (fs.existsSync(localeCache))
-                try { return JSON.parse(fs.readFileSync(localeCache, 'utf8')) } catch {}
+                try { return JSON.parse(fs.readFileSync(localeCache, 'utf8')) } catch (err) {}
 
             // Discover project _locales
             const localesDir = path.resolve(process.cwd(), '_locales')
