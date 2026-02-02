@@ -37,7 +37,7 @@ module.exports = {
             type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
     },
 
-    initConfigFile({ filename = 'scss-to-css.config.mjs' } = {}) {
+    initConfigFile(filename = 'scss-to-css.config.mjs') {
         const targetPath = path.resolve(process.cwd(), filename)
         if (fs.existsSync(targetPath))
             return log.warn(`${app.msgs.warn_configFileExists}:`, targetPath)

@@ -17,7 +17,7 @@ module.exports = {
         version: { type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
     },
 
-    initConfigFile({ filename = 'generate-ip.config.mjs' } = {}) {
+    initConfigFile(filename = 'generate-ip.config.mjs') {
         const targetPath = path.resolve(process.cwd(), filename)
         if (fs.existsSync(targetPath))
             return log.warn(`${app.msgs.warn_configFileExists}:`, targetPath)
