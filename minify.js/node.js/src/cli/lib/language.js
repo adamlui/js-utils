@@ -21,8 +21,7 @@ module.exports = {
             const localesDir = path.resolve(process.cwd(), '_locales')
             if (!fs.existsSync(localesDir)) return ['en']
             const locales = fs.readdirSync(localesDir, { withFileTypes: true })
-                .filter(entry => entry.isDirectory())
-                .map(entry => entry.name)
+                .filter(entry => entry.isDirectory()).map(entry => entry.name)
                 .filter(name => /^[a-z]{2}(?:_[A-Z]{2})?$/.test(name))
 
             // Cache result
@@ -55,7 +54,7 @@ module.exports = {
             let msgHref = `${msgHostURL}${langCode.replace('-', '_')}/messages.json`,
                 msgFetchTries = 0
             while (msgFetchTries < 3)
-                try {
+                try { // fetch msgs
                     msgs = data.flatten(await (await data.fetch(msgHref)).json(), { key: 'message' })
                     break
                 } catch (err) { // retry up to 2X (region-stripped + EN)
