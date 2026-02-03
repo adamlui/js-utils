@@ -67,7 +67,7 @@ module.exports = {
                 log.configURLandExit(`${app.msgs.error_configFileNotFound}:`, configPath)
         } else // auto-discover .config.[cm]?js file
             for (const ext of ['mjs', 'cjs', 'js']) {
-                const autoPath = path.resolve(process.cwd(), `${this.configFilename.replace(/\.[^.]+$/, '')}.${ext}`)
+                const autoPath = path.resolve(process.cwd(), this.configFilename.replace(/\.[^.]+$/, `.${ext}`))
                 if (fs.existsSync(autoPath)) { configPath = autoPath ; break }
             }
         if (configPath)
