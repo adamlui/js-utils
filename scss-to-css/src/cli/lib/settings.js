@@ -37,16 +37,27 @@ module.exports = {
             type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
     },
 
-    initConfigFile(filename = 'scss-to-css.config.mjs') {
+    async initConfigFile(filename = 'scss-to-css.config.mjs') {
+
         const targetPath = path.resolve(process.cwd(), filename)
         if (fs.existsSync(targetPath))
             return log.warn(`${app.msgs.warn_configFileExists}:`, targetPath)
         const srcPath = path.resolve(__dirname, `../../${ env.devMode ? '../' : './data/' }${filename}`)
-        if (!fs.existsSync(srcPath)) {
-            log.error(`${app.msgs.error_templateNotFound}:`, srcPath)
-            process.exit(1)
+
+        if (fs.existsSync(srcPath)) // use found template
+            fs.copyFileSync(srcPath, targetPath)
+
+        else { // use jsDelivr copy
+            const jsdURL = `${app.urls.jsdelivr}/${filename}`
+            log.data(`${app.msgs.info_fetchingRemoteConfigFrom} ${jsdURL}...`)
+            try {
+                const resp = await require(`./data${ env.devMode ? '' : '.min' }.js`).fetch(jsdURL)
+                if (resp.ok) fs.writeFileSync(targetPath, await resp.text(), 'utf8')
+                else return log.warn(`${app.msgs.warn_remoteConfigNotFound}: ${jsdURL} (${resp.status})`)
+            } catch (err) {
+                return log.warn(`${app.msgs.warn_remoteConfigFailed}: ${jsdURL} ${err.message}`) }
         }
-        fs.copyFileSync(srcPath, targetPath)
+
         log.success(`${app.msgs.info_configFileCreated}: ${targetPath}\n`)
         log.tip(`${app.msgs.tip_editToSetDefaults}.`)
         log.tip(`${app.msgs.tip_cliArgsPrioritized}.`)
