@@ -25,8 +25,6 @@ module.exports = {
 
             // Cache result
             fs.mkdirSync(cacheDir, { recursive: true })
-            const gitignorePath = path.join(cacheDir, '.gitignore')
-            if (!fs.existsSync(gitignorePath)) data.atomicWrite(gitignorePath, '*\n')
             data.atomicWrite(localeCache, JSON.stringify(locales, null, 2))
 
             return locales
