@@ -145,11 +145,9 @@
                 const outputPath = path.join(outputDir, outputFilename)
                 fs.mkdirSync(outputDir, { recursive: true })
                 fs.writeFileSync(outputPath, code, 'utf8')
-                log.ifNotQuiet(
-                    `  ${log.colors.bg}✓${log.colors.nc} ${path.relative(process.cwd(), outputPath)}`)
+                log.ifNotQuiet(`  ${log.colors.bg}✓${log.colors.nc} ${path.relative(process.cwd(), outputPath)}`)
                 if (!app.config.noSourceMaps) fs.writeFileSync(`${outputPath}.map`, JSON.stringify(srcMap), 'utf8')
-                log.ifNotQuiet(
-                    `  ${log.colors.bg}✓${log.colors.nc} ${path.relative(process.cwd(), outputPath)}`)
+                log.ifNotQuiet(`  ${log.colors.bg}✓${log.colors.nc} ${path.relative(process.cwd(), outputPath)}`)
             })
         }
     }
