@@ -24,8 +24,10 @@ module.exports = {
                 .filter(name => /^[a-z]{2}(?:_[A-Z]{2})?$/.test(name))
 
             // Cache result
+            const tmpCache = `${localeCache}.tmp`
             fs.mkdirSync(cacheDir, { recursive: true })
-            fs.writeFileSync(localeCache, JSON.stringify(locales, null, 2))
+            fs.writeFileSync(tmpCache, JSON.stringify(locales, null, 2))
+            fs.renameSync(tmpCache, localeCache)
 
             return locales
         })()
