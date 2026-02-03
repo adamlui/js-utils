@@ -10,7 +10,7 @@ module.exports = {
         qty: { type: 'param', regex: /^--?qu?a?n?ti?t?y(?:=.*|$)/, parser: val => parseInt(val, 10) },
         config: { type: 'param', regex: /^--?config(?:=.*|$)/ },
         ipv6mode: { type: 'flag', mode: true, regex: /^--?(?:ip)?v?6(?:-?mode)?$/ },
-        macMode: { type: 'flag', mode: true,regex: /^--?m(?:ac)?(?:-?mode)?$/ },
+        macMode: { type: 'flag', mode: true, regex: /^--?m(?:ac)?(?:-?mode)?$/ },
         quietMode: { type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
         init: { type: 'cmd', regex: /^-{0,2}i(?:nit)?$/ },
         help: { type: 'cmd', regex: /^--?h(?:elp)?$/ },
