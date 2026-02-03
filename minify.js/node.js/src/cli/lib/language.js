@@ -43,8 +43,8 @@ module.exports = {
         return randomLang
     },
     async getMsgs(langCode = 'en') {
-
         const data = require(`./data${ env.devMode ? '' : '.min' }.js`)
+
         let msgs = data.flatten( // local ones
             require(`../../${ env.devMode ? '../../_locales/en/' : 'data/' }messages.json`), { key: 'message' })
 
