@@ -5,6 +5,7 @@ const fs = require('fs'),
 ;(globalThis.app ??= {}).config = {}
 
 module.exports = {
+    configFilename: 'generate-pw.config.mjs',
 
     controls: {
         length: { type: 'param', regex: /^--?length(?:=.*|$)/ },
@@ -27,7 +28,7 @@ module.exports = {
         version: { type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
     },
 
-    async initConfigFile(filename = 'generate-pw.config.mjs') {
+    async initConfigFile(filename = this.configFilename) {
 
         const targetPath = path.resolve(process.cwd(), filename)
         if (fs.existsSync(targetPath))

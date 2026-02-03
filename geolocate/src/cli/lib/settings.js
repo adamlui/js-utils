@@ -5,6 +5,7 @@ const fs = require('fs'),
 ;(globalThis.app ??= {}).config = {}
 
 module.exports = {
+    configFilename: 'geolocate.config.mjs',
 
     controls: {
         config: { type: 'param', regex: /^--?config(?:=.*|$)/ },
@@ -14,7 +15,7 @@ module.exports = {
         version: { type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
     },
 
-    async initConfigFile(filename = 'geolocate.config.mjs') {
+    async initConfigFile(filename = this.configFilename) {
 
         const targetPath = path.resolve(process.cwd(), filename)
         if (fs.existsSync(targetPath))

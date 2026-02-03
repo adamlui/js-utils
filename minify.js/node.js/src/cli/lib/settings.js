@@ -5,6 +5,7 @@ const fs = require('fs'),
 ;(globalThis.app ??= {}).config = {}
 
 module.exports = {
+    configFilename: 'minify.config.mjs',
 
     controls: {
         dryRun: {
@@ -41,7 +42,7 @@ module.exports = {
             type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
     },
 
-    async initConfigFile(filename = 'minify.config.mjs') {
+    async initConfigFile(filename = this.configFilename) {
 
         const targetPath = path.resolve(process.cwd(), filename)
         if (fs.existsSync(targetPath))

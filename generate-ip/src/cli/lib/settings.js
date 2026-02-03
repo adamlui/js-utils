@@ -5,6 +5,7 @@ const fs = require('fs'),
 ;(globalThis.app ??= {}).config = {}
 
 module.exports = {
+    configFilename: 'generate-ip.config.mjs',
 
     controls: {
         qty: { type: 'param', regex: /^--?qu?a?n?ti?t?y(?:=.*|$)/, parser: val => parseInt(val, 10) },
@@ -17,7 +18,7 @@ module.exports = {
         version: { type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
     },
 
-    async initConfigFile(filename = 'generate-ip.config.mjs') {
+    async initConfigFile(filename = this.configFilename) {
 
         const targetPath = path.resolve(process.cwd(), filename)
         if (fs.existsSync(targetPath))
