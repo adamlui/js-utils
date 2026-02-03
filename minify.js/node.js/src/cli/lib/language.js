@@ -42,6 +42,7 @@ module.exports = {
 
         return randomLang
     },
+
     async getMsgs(langCode = 'en') {
         const data = require(`./data${ env.devMode ? '' : '.min' }.js`)
 

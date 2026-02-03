@@ -64,7 +64,7 @@ module.exports = {
             const inputPath = configArg.split('=')[1]
             configPath = path.isAbsolute(inputPath) ? inputPath : path.resolve(process.cwd(), inputPath)
             if (!fs.existsSync(configPath))
-                log.configAndExit(`${app.msgs.error_configFileNotFound}:`, configPath)
+                log.configURLandExit(`${app.msgs.error_configFileNotFound}:`, configPath)
         } else // auto-discover .config.[cm]?js file
             for (const ext of ['mjs', 'cjs', 'js']) {
                 const autoPath = path.resolve(process.cwd(), `${this.configFilename.replace(/\.[^.]+$/, '')}.${ext}`)
@@ -74,10 +74,10 @@ module.exports = {
             try { // to load config file
                 const mod = require(configPath), fileConfig = mod?.default ?? mod
                 if (!fileConfig || typeof fileConfig != 'object')
-                    log.configAndExit(`${app.msgs.error_invalidConfigFile}.`)
+                    log.configURLandExit(`${app.msgs.error_invalidConfigFile}.`)
                 Object.assign(app.config, fileConfig)
             } catch (err) {
-                log.configAndExit(`${app.msgs.error_failedToLoadConfigFile}:`, configPath, `\n${err.message}`) }
+                log.configURLandExit(`${app.msgs.error_failedToLoadConfigFile}:`, configPath, `\n${err.message}`) }
 
         // Load from CLI args
         args.forEach(arg => {

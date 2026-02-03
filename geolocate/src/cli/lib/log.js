@@ -11,8 +11,8 @@ module.exports = {
         tlBG: '\x1b[106m'     // teal bg
     },
 
-    config() { this.info(`\n${app.msgs.info_exampleValidConfigFile}: ${app.urls.config}`) },
-    configAndExit(...args) { this.error(...args) ; this.config() ; process.exit(1) },
+    configURL() { this.info(`\n${app.msgs.info_exampleValidConfigFile}: ${app.urls.config}`) },
+    configURLandExit(...args) { this.error(...args) ; this.configURL() ; process.exit(1) },
     data(msg) { console.log(`\n${this.colors.bw}${msg}${this.colors.nc}`) },
     debug(msg) { if (env.debugMode) console.log(msg) },
     error(...args) { console.error(`\n${this.colors.br}${app.msgs.prefix_error}:`, ...args, this.colors.nc) },
