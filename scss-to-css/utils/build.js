@@ -17,7 +17,7 @@ app.config = {
     jsonOnly: args.some(arg => /^--?json$/.test(arg))
 }
 
-// Copy APP data
+// Copy data
 if (!app.config.jsOnly) {
     const dataOutDir = 'dist/data',
           filenames = { appData: 'app.json', msgs: 'messages.json', config: 'scss-to-css.config.mjs' }

@@ -15,7 +15,7 @@ module.exports = {
             if (fs.existsSync(localeCache))
                 try { return JSON.parse(fs.readFileSync(localeCache, 'utf8')) } catch (err) {}
 
-            // Discover project _locales
+            // Discover pkg _locales
             const localesDir = path.resolve(process.cwd(), '_locales')
             if (!fs.existsSync(localesDir)) return ['en']
             const locales = fs.readdirSync(localesDir, { withFileTypes: true })
