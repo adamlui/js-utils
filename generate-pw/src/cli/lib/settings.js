@@ -5,6 +5,7 @@ const fs = require('fs'),
 ;(globalThis.app ??= {}).config = {}
 
 module.exports = {
+    configFilename: 'generate-pw.config.mjs',
 
     controls: {
         length: { type: 'param', regex: /^--?length(?:=.*|$)/ },
@@ -27,7 +28,7 @@ module.exports = {
         version: { type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
     },
 
-    initConfigFile(filename = 'generate-pw.config.mjs') {
+    initConfigFile(filename = this.configFilename) {
         const targetPath = path.resolve(process.cwd(), filename)
         if (fs.existsSync(targetPath))
             return log.warn(`${app.msgs.warn_configFileExists}:`, targetPath)
@@ -57,7 +58,7 @@ module.exports = {
                 log.configAndExit(`${app.msgs.error_configFileNotFound}:`, configPath)
         } else // auto-discover .config.[cm]?js file
             for (const ext of ['mjs', 'cjs', 'js']) {
-                const autoPath = path.resolve(process.cwd(), `generate-pw.config.${ext}`)
+                const autoPath = path.resolve(process.cwd(), `${this.configFilename.replace(/\.[^.]+$/, '')}.${ext}`)
                 if (fs.existsSync(autoPath)) { configPath = autoPath ; break }
             }
         if (configPath)
