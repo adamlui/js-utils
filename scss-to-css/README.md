@@ -27,7 +27,7 @@
 
 # { } scss-to-css
 
-### Recursively compile all SCSS files into minified CSS.
+### Recursively compile all SCSS files into minified CSS
 
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css">
     <img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
