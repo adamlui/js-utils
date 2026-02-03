@@ -21,7 +21,7 @@
 
 # </> minify.js
 
-### Recursively minify all JavaScript files.
+### Recursively minify all JavaScript files
 
 <a href="https://www.npmjs.com/package/@adamlui/minify.js">
     <img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fminify.js?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
