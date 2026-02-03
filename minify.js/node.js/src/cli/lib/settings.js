@@ -57,8 +57,7 @@ module.exports = {
         log.tip(`${app.msgs.tip_cliArgsPrioritized}.`)
     },
 
-    load(ctrlKeys = Object.keys(this.controls)) {
-        const args = process.argv.slice(2)
+    load({ args = process.argv.slice(2), ctrlKeys = Object.keys(this.controls) } = {}) {
 
         // Load from config file
         let configPath = null
