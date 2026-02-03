@@ -64,7 +64,7 @@
         } else // no files found
             log.info(`${app.msgs.info_noFilesWillBeMinned}.`)
 
-    } else { // actually minify JavaScript files
+    } else { // actually minify JS files
 
         // Build array of minification data
         const failedPaths = [] ; let minifyData = []
