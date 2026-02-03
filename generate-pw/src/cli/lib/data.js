@@ -1,5 +1,14 @@
 module.exports = {
 
+    atomicWrite(filePath, data, encoding = 'utf8') { // to prevent TOCTOU
+        const path = require('path'),
+              fs = require('fs'),
+              dir = path.dirname(filePath),
+              tmpPath = path.join(dir, `.${path.basename(filePath)}.tmp`)
+        fs.writeFileSync(tmpPath, data, encoding)
+        fs.renameSync(tmpPath, filePath)
+    },
+
     fetch(url) { // to support Node.js < v21
         return typeof fetch == 'undefined' ? new Promise((resolve, reject) => { // using https?.get()
             const protocol = url.match(/^([^:]+):\/\//)[1]

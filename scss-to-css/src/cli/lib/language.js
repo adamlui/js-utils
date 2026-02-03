@@ -1,3 +1,5 @@
+const data = require(`./data${ env.devMode ? '' : '.min' }.js`)
+
 module.exports = {
 
     generateRandomLang({ includes = [], excludes = [] } = {}) {
@@ -23,10 +25,10 @@ module.exports = {
                 .filter(name => /^[a-z]{2}(?:_[A-Z]{2})?$/.test(name))
 
             // Cache result
-            const tmpCache = `${localeCache}.tmp`
             fs.mkdirSync(cacheDir, { recursive: true })
-            fs.writeFileSync(tmpCache, JSON.stringify(locales, null, 2))
-            fs.renameSync(tmpCache, localeCache)
+            const gitignorePath = path.join(cacheDir, '.gitignore')
+            if (!fs.existsSync(gitignorePath)) data.atomicWrite(gitignorePath, '*\n')
+            data.atomicWrite(localeCache, JSON.stringify(locales, null, 2))
 
             return locales
         })()
@@ -45,7 +47,6 @@ module.exports = {
     },
 
     async getMsgs(langCode = 'en') {
-        const data = require(`./data${ env.devMode ? '' : '.min' }.js`)
 
         let msgs = data.flatten( // local ones
             require(`../${ env.devMode ? '../../_locales/en/' : 'data/' }messages.json`), { key: 'message' })
