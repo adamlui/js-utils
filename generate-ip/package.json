@@ -71,6 +71,6 @@
     "node-clipboardy": "^1.0.3"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^2.1.4"
+    "@adamlui/minify.js": "^2.2.0"
   }
 }
