@@ -9,6 +9,8 @@
  */
 
 export default {
+
+    // Boolean options
     dryRun: false,            // don't actually minify the file(s), just show if they will be processed
     includeDotFolders: false, // include dotfolders in file search
     includeDotFiles: false,   // include dotfiles in file search
@@ -19,6 +21,8 @@ export default {
     copy: false,              // copy minified code to clipboard instead of write to file if single file processed
     relativeOutput: false,    // output files relative to each src file instead of to input root
     quietMode: false,         // suppress all logging except errors
+
+    // String params
     ignores: '',              // files/dirs to exclude from minification
     comment: ''               // header comment to prepend to minified code
 }

@@ -9,10 +9,16 @@
  */
 
 export default {
+
+    // Integer params
     length: 8,                  // length of passwords to generate
     qty: 1,                     // # of passwords to generate
+
+    // String params
     charset: '',                // only include chars in password(s)
     exclude: '',                // exclude chars from password(s)
+
+    // Boolean options
     includeNums: false,         // allow numbers in password(s)
     includeSymbols: false,      // allow symbols in password(s)
     excludeLowerChars: false,   // disallow lowercase letters in password(s)
