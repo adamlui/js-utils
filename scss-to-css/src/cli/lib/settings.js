@@ -5,7 +5,6 @@ const fs = require('fs'),
 ;(globalThis.app ??= {}).config = {}
 
 module.exports = {
-    configFilename: 'scss-to-css.config.mjs',
 
     controls: {
         dryRun: {
@@ -38,7 +37,7 @@ module.exports = {
             type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
     },
 
-    initConfigFile(filename = this.configFilename) {
+    initConfigFile(filename = 'scss-to-css.config.mjs') {
         const targetPath = path.resolve(process.cwd(), filename)
         if (fs.existsSync(targetPath))
             return log.warn(`${app.msgs.warn_configFileExists}:`, targetPath)
