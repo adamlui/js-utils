@@ -5,6 +5,7 @@
   "copyrightYear": "2024–2026",
   "cmdFormat": "minify-js [inputPath] [outputPath] [options]",
   "urls": {
+    "config": "https://github.com/adamlui/minify.js/blob/main/node.js/minify.config.mjs",
     "docs": "https://github.com/adamlui/minify.js/tree/main/node.js/docs",
     "github": "https://github.com/adamlui/minify.js",
     "jsdelivr": "https://cdn.jsdelivr.net/gh/adamlui/minify.js",
@@ -12,6 +13,6 @@
     "src": "https://github.com/adamlui/minify.js/tree/main/node.js/src"
   },
   "commitHashes": {
-    "locales": "589eb64"
+    "locales": "e0df8e9"
   }
 }
