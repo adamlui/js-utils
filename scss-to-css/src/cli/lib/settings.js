@@ -88,11 +88,10 @@ module.exports = {
             const ctrl = this.controls[ctrlKey] ; if (ctrl.type == 'cmd') return
             let ctrlKeyVal = ctrl.type == 'param' ? arg.split('=')[1]?.trim() : true
 
-            if (ctrl.mode) { // set mode name as app.config.mode string
-                const modeName = /^(.+)mode$/i.exec(ctrlKey)?.[1]?.toLowerCase()
-                if (modeName) app.config.mode = modeName
+            if (ctrl.mode) // set app.config.mode to mode name
+                app.config.mode = ctrlKey.replace(/mode$/i, '').toLowerCase()
 
-            } else { // init flag/param app.config[ctrlKey] val
+            else { // init flag/param app.config[ctrlKey] val
                 const parser = ctrl.parser
                 if (parser) {
                     ctrlKeyVal = parser(ctrlKeyVal)
