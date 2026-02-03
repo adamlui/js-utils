@@ -96,7 +96,7 @@ module.exports = {
                 const modeName = /^(.+)mode$/i.exec(ctrlKey)?.[1]?.toLowerCase()
                 if (modeName) app.config.mode = modeName
 
-            } else { // init param/flag app.config[key] val
+            } else { // init flag/param app.config[ctrlKey] val
                 const parser = ctrl.parser
                 if (parser) {
                     ctrlKeyVal = parser(ctrlKeyVal)
