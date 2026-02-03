@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "د سازونې دوتنه ونه موندل شوه" },
   "error_failedToLoadConfigFile": { "message": "د سازونې دوتنې په لېښلو کې پاتې راغی" },
   "error_mustIncludePath": { "message": "باید شامل وي =لاره" },
-  "error_templateNotFound": { "message": "د کوندې دوتنه ونه موندل شوه" },
   "warn_configFileExists": { "message": "د سازونې دوتنه د مخکې نه شتون لري" },
   "info_exampleValidConfigFile": { "message": "د اعتبار وړ ترتیب فایل مثال" },
   "info_copying": { "message": "کلیپ بورډ ته کاپي کول" },

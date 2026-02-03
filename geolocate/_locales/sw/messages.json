@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Sanidi faili haipatikani" },
   "error_failedToLoadConfigFile": { "message": "Imeshindwa kupakia faili la usanidi" },
   "error_mustIncludePath": { "message": "lazima ijumuishe =PATH" },
-  "error_templateNotFound": { "message": "Faili ya kiolezo haipatikani" },
   "warn_configFileExists": { "message": "Sanidi faili tayari lipo" },
   "info_exampleValidConfigFile": { "message": "Mfano faili halali ya usanidi" },
   "info_copying": { "message": "Kunakili kwenye ubao wa kunakili" },

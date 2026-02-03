@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "קאָנפיגוראַציע טעקע נישט געפֿונען" },
   "error_failedToLoadConfigFile": { "message": "נישט געלונגען צו לאָדן קאָנפיג טעקע" },
   "error_mustIncludePath": { "message": "מוז ארייננעמען =path" },
-  "error_templateNotFound": { "message": "טעמפּלאַט טעקע נישט געפֿונען ביי" },
   "warn_configFileExists": { "message": "קאָנפיגוראַציע טעקע עקזיסטירט שוין" },
   "info_exampleValidConfigFile": { "message": "בייַשפּיל גילטיק קאָנפיג טעקע" },
   "info_copying": { "message": "קאַפּיינג צו קליפּבאָרד" },

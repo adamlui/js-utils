@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Afaylu ur yettwafen ara" },
   "error_failedToLoadConfigFile": { "message": "Ur yeddi ara ad yettwakkes ufaylu yettwakkes" },
   "error_mustIncludePath": { "message": "yessefk ad tqedceḍ =Abrid" },
-  "error_templateNotFound": { "message": "Afaylu n lemtel ur yettwafen ara deg" },
   "warn_configFileExists": { "message": "Afaylu uffir yella yakan" },
   "info_exampleValidConfigFile": { "message": "Amedya n ufaylu yettwaxedmen" },
   "info_copying": { "message": "Asnulfu ɣer Clippboard" },

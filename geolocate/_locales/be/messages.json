@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Файл канфігурацыі не знойдзены" },
   "error_failedToLoadConfigFile": { "message": "Немагчыма загрузіць файл канфігурацыі" },
   "error_mustIncludePath": { "message": "павінна ўключаць =шлях" },
-  "error_templateNotFound": { "message": "Файл шаблону не знойдзены на" },
   "warn_configFileExists": { "message": "Файл канфігурацыі ўжо існуе" },
   "info_exampleValidConfigFile": { "message": "Дапушчальны прыклад файла канфігурацыі" },
   "info_copying": { "message": "Значэнне" },

@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Konfigurační soubor nenalezen" },
   "error_failedToLoadConfigFile": { "message": "Načtení konfiguračního souboru se nezdařilo" },
   "error_mustIncludePath": { "message": "musí obsahovat =cesta" },
-  "error_templateNotFound": { "message": "Soubor šablony nebyl nalezen v" },
   "warn_configFileExists": { "message": "Konfigurační soubor již existuje" },
   "info_exampleValidConfigFile": { "message": "Příklad platného konfiguračního souboru" },
   "info_copying": { "message": "Kopírování do schránky" },

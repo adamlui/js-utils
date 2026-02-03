@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "कन्फिग फाइल फेला परेन" },
   "error_failedToLoadConfigFile": { "message": "कन्फिग फाइल लोड गर्न असफल भयो" },
   "error_mustIncludePath": { "message": "समावेश गर्नु पर्छ =PATH" },
-  "error_templateNotFound": { "message": "टेम्प्लेट फाइल यहाँ फेला परेन" },
   "warn_configFileExists": { "message": "कन्फिग फाइल पहिले नै अवस्थित छ" },
   "info_exampleValidConfigFile": { "message": "उदाहरण मान्य कन्फिग फाइल" },
   "info_copying": { "message": "क्लिपबोर्डमा प्रतिलिपि गर्दैछ" },

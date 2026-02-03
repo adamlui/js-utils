@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Δεν βρέθηκε το αρχείο Config" },
   "error_failedToLoadConfigFile": { "message": "Αποτυχία φόρτωσης αρχείου διαμόρφωσης" },
   "error_mustIncludePath": { "message": "πρέπει να περιλαμβάνει =διαδρομή" },
-  "error_templateNotFound": { "message": "Το αρχείο προτύπου δεν βρέθηκε στο" },
   "warn_configFileExists": { "message": "Το αρχείο διαμόρφωσης υπάρχει ήδη" },
   "info_exampleValidConfigFile": { "message": "Παράδειγμα έγκυρου αρχείου διαμόρφωσης" },
   "info_copying": { "message": "Αντιγραφή στο πρόχειρο" },

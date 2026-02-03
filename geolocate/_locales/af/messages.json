@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Konfigureer lêer nie gevind nie" },
   "error_failedToLoadConfigFile": { "message": "Kon nie konfigurasielêer laai nie" },
   "error_mustIncludePath": { "message": "moet insluit =pad" },
-  "error_templateNotFound": { "message": "Sjabloonlêer nie gevind by" },
   "warn_configFileExists": { "message": "Konfigureer lêer bestaan reeds" },
   "info_exampleValidConfigFile": { "message": "Voorbeeld geldige konfigurasielêer" },
   "info_copying": { "message": "Besig om te kopiëer na klipbord" },

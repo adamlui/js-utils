@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Датотеката за конфигурација не е пронајдена" },
   "error_failedToLoadConfigFile": { "message": "Не успеа да се вчита конфигурациската датотека" },
   "error_mustIncludePath": { "message": "мора да вклучува =патека" },
-  "error_templateNotFound": { "message": "Датотеката со шаблони не е пронајдена на" },
   "warn_configFileExists": { "message": "Датотеката за конфигурација веќе постои" },
   "info_exampleValidConfigFile": { "message": "Пример важечка конфигурациска датотека" },
   "info_copying": { "message": "Копирам на таблата со исечоци" },

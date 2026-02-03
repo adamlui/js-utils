@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Konfigurācijas fails nav atrasts" },
   "error_failedToLoadConfigFile": { "message": "Neizdevās ielādēt konfigurācijas failu" },
   "error_mustIncludePath": { "message": "jāietver =ceļš" },
-  "error_templateNotFound": { "message": "Veidnes fails nav atrasts šeit" },
   "warn_configFileExists": { "message": "Konfigurācijas fails jau pastāv" },
   "info_exampleValidConfigFile": { "message": "Derīga konfigurācijas faila piemērs" },
   "info_copying": { "message": "Notiek kopēšana starpliktuvē" },

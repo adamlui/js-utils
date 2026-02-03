@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "A wara mbeni zo ti kua oko pëpe" },
   "error_failedToLoadConfigFile": { "message": "A yeke na lege ni pëpe ti tene mo zia lê ti mo na ndo ti mbeni ye" },
   "error_mustIncludePath": { "message": "a lingbi ti tene so a yeke na lege ni pëpe" },
-  "error_templateNotFound": { "message": "Désolé Aucun résultat trouvé" },
   "warn_configFileExists": { "message": "Faïl so ayeke dä awe" },
   "info_exampleValidConfigFile": { "message": "Tapande ti faïl so ayeke na lege ni" },
   "info_copying": { "message": "Gbu li ti mo na ndo ti clipboard ni" },

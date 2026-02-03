@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "ਸੰਰਚਨਾ ਫਾਇਲ ਨਹੀਂ ਲੱਭੀ" },
   "error_failedToLoadConfigFile": { "message": "ਸੰਰਚਨਾ ਫਾਇਲ ਲੋਡ ਕਰਨ ਲਈ ਫੇਲ੍ਹ" },
   "error_mustIncludePath": { "message": "must include =ਰਸਤਾ ਸ਼ਾਮਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ" },
-  "error_templateNotFound": { "message": "'ਤੇ ਟੈਂਪਲੇਟ ਫਾਇਲ ਨਹੀਂ ਲੱਭੀ" },
   "warn_configFileExists": { "message": "ਸੰਰਚਨਾ ਫਾਇਲ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ" },
   "info_exampleValidConfigFile": { "message": "ਉਦਾਹਰਨ ਵੈਧ ਸੰਰਚਨਾ ਫਾਇਲ" },
   "info_copying": { "message": "ਪ੍ਰੋਗਰਾਮ" },

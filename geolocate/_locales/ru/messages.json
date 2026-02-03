@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Файл конфигурации% s не найден" },
   "error_failedToLoadConfigFile": { "message": "Не удалось загрузить файл конфигурации" },
   "error_mustIncludePath": { "message": "must include =path" },
-  "error_templateNotFound": { "message": "Файл шаблона не найден в" },
   "warn_configFileExists": { "message": "Конфигурационный файл уже существует" },
   "info_exampleValidConfigFile": { "message": "Пример допустимого файла конфигурации" },
   "info_copying": { "message": "Копирование в буфер обмена" },

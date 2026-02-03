@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "קובץ התצורה לא נמצא" },
   "error_failedToLoadConfigFile": { "message": "טעינת קובץ התצורה נכשלה" },
   "error_mustIncludePath": { "message": "חייב לכלול =PATH" },
-  "error_templateNotFound": { "message": "קובץ התבנית לא נמצא ב -" },
   "warn_configFileExists": { "message": "קובץ התצורה כבר קיים" },
   "info_exampleValidConfigFile": { "message": "דוגמה לקובץ תצורה חוקי" },
   "info_copying": { "message": "מעתיק אל הלוח" },

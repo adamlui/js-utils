@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "構成ファイルが見つかりません" },
   "error_failedToLoadConfigFile": { "message": "設定ファイルの読み込みに失敗しました" },
   "error_mustIncludePath": { "message": "必ず含める必要がある = パス" },
-  "error_templateNotFound": { "message": "テンプレートファイルが見つかりません" },
   "warn_configFileExists": { "message": "構成ファイルは既に存在します" },
   "info_exampleValidConfigFile": { "message": "有効な設定ファイルの例" },
   "info_copying": { "message": "クリップボードにコピーしています" },

@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "ಕಾನ್ಫಿಗರ್ ಫೈಲ್ ಕಂಡುಬಂದಿಲ್ಲ" },
   "error_failedToLoadConfigFile": { "message": "ಕಾನ್ಫಿಗರ್ ಫೈಲ್ ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ" },
   "error_mustIncludePath": { "message": "ಒಳಗೊಂಡಿರಬೇಕು =ಮಾರ್ಗ" },
-  "error_templateNotFound": { "message": "ಟೆಂಪ್ಲೇಟ್ ಫೈಲ್ ಇಲ್ಲಿ ಕಂಡುಬಂದಿಲ್ಲ" },
   "warn_configFileExists": { "message": "ಕಾನ್ಫಿಗರ್ ಫೈಲ್ ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ" },
   "info_exampleValidConfigFile": { "message": "ಉದಾಹರಣೆ ಮಾನ್ಯ ಕಾನ್ಫಿಗರೇಶನ್ ಫೈಲ್" },
   "info_copying": { "message": "ಕ್ಲಿಪ್ ‌ ಬೋರ್ಡ್ ‌ ಗೆ ನಕಲಿಸಲಾಗುತ್ತಿದೆ" },

@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "A konfigurációs fájl nem található" },
   "error_failedToLoadConfigFile": { "message": "Konfigurációs fájl betöltése sikertelen" },
   "error_mustIncludePath": { "message": "must include =elérési út" },
-  "error_templateNotFound": { "message": "A sablonfájl nem található itt" },
   "warn_configFileExists": { "message": "A konfigurációs fájl már létezik" },
   "info_exampleValidConfigFile": { "message": "Példa érvényes konfigurációs fájlra" },
   "info_copying": { "message": "Másolás a vágólapra" },

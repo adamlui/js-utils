@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Config ֆայլը չի գտնվել" },
   "error_failedToLoadConfigFile": { "message": "Չհաջողվեց բեռնել կոնֆիգուրացիոն ֆայլը" },
   "error_mustIncludePath": { "message": "must include =path" },
-  "error_templateNotFound": { "message": "Կաղապարի ֆայլը չի գտնվել" },
   "warn_configFileExists": { "message": "Կոնֆիգ ֆայլն արդեն գոյություն ունի" },
   "info_exampleValidConfigFile": { "message": "Վավեր կոնֆիգուրացիոն ֆայլի օրինակ" },
   "info_copying": { "message": "Պատճենահանվում է շապիկի մեջ" },

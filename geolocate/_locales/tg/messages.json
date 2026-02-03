@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Танзимоти файл ёфт нашуд" },
   "error_failedToLoadConfigFile": { "message": "Файли конфигуратсия пурбор карда нашуд" },
   "error_mustIncludePath": { "message": "бояд дар бар гирад =PATH" },
-  "error_templateNotFound": { "message": "Файли қолиб дар ёфт нашуд" },
   "warn_configFileExists": { "message": "Батанзимдарории файл аллакай вуҷуд дорад" },
   "info_exampleValidConfigFile": { "message": "Намунаи файли конфигуратсияи дуруст" },
   "info_copying": { "message": "Нусха бардоштан дар буфери иваз" },

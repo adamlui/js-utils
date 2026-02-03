@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "File di configurazione non trovato" },
   "error_failedToLoadConfigFile": { "message": "Impossibile caricare il file di configurazione" },
   "error_mustIncludePath": { "message": "deve includere =percorso" },
-  "error_templateNotFound": { "message": "File modello non trovato in" },
   "warn_configFileExists": { "message": "Il file di configurazione esiste già" },
   "info_exampleValidConfigFile": { "message": "Esempio di file di configurazione valido" },
   "info_copying": { "message": "Copia negli Appunti" },

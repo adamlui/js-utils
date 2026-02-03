@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Archive for No Found" },
   "error_failedToLoadConfigFile": { "message": "No Cargo Config Archive" },
   "error_mustIncludePath": { "message": "contenido =Camino" },
-  "error_templateNotFound": { "message": "Archive for No Found" },
   "warn_configFileExists": { "message": "Archivo ya existe" },
   "info_exampleValidConfigFile": { "message": "Documente similare cu Config File" },
   "info_copying": { "message": "Copiando a Clipboard" },

@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Stillingaskrá fannst ekki" },
   "error_failedToLoadConfigFile": { "message": "Ekki tókst að hlaða inn stillingaskrá" },
   "error_mustIncludePath": { "message": "verður að innihalda =path" },
-  "error_templateNotFound": { "message": "Sniðmát fannst ekki á" },
   "warn_configFileExists": { "message": "Stillingaskrá er þegar til" },
   "info_exampleValidConfigFile": { "message": "Dæmi um gilda uppsetningarskrá" },
   "info_copying": { "message": "Afrita á klemmuspjald" },

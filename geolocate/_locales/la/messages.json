@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Tabula Configuendi non est" },
   "error_failedToLoadConfigFile": { "message": "Failed to upload, config file" },
   "error_mustIncludePath": { "message": "coniutere =path" },
-  "error_templateNotFound": { "message": "Template file non est" },
   "warn_configFileExists": { "message": "Tabula Configuendi sunt" },
   "info_exampleValidConfigFile": { "message": "Exemplaria valid configuendum" },
   "info_copying": { "message": "Clipboard" },

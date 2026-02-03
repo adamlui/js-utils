@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Konzani fayilo yomwe sinapezeke" },
   "error_failedToLoadConfigFile": { "message": "Kulephera kutsegula fayilo ya config" },
   "error_mustIncludePath": { "message": "ayenera kuphatikizapo =njira" },
-  "error_templateNotFound": { "message": "Fayilo ya template sinapezeke pa" },
   "warn_configFileExists": { "message": "Konzani fayilo yomwe ilipo kale" },
   "info_exampleValidConfigFile": { "message": "Chitsanzo chovomerezeka cha fayilo ya config" },
   "info_copying": { "message": "Kukopera kuti clipboard" },

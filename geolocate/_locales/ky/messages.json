@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Файлды конфигурациялоо табылган жок" },
   "error_failedToLoadConfigFile": { "message": "Конфигурация файлын жүктөө ишке ашпады" },
   "error_mustIncludePath": { "message": "жол =жолду камтышы керек" },
-  "error_templateNotFound": { "message": "Шаблон файлы табылган жок" },
   "warn_configFileExists": { "message": "Файлды конфигурациялоо мурунтан эле бар" },
   "info_exampleValidConfigFile": { "message": "Үлгү жарактуу конфигурация файлы" },
   "info_copying": { "message": "Алмашуу буферине көчүрүү" },

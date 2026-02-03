@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Config file not found" },
   "error_failedToLoadConfigFile": { "message": "Failed to load config file" },
   "error_mustIncludePath": { "message": "must include =path" },
-  "error_templateNotFound": { "message": "Template file not found at" },
   "warn_configFileExists": { "message": "Config file already exists" },
   "info_exampleValidConfigFile": { "message": "Example valid config file" },
   "error_firstArgNotExist": { "message": "First argument can only be an existing file or directory" },

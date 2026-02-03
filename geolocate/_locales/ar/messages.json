@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "لم يتم العثور على ملف التكوين" },
   "error_failedToLoadConfigFile": { "message": "فشل تحميل ملف التكوين" },
   "error_mustIncludePath": { "message": "يجب أن تتضمن =مسار" },
-  "error_templateNotFound": { "message": "لم يتم العثور على ملف القالب في" },
   "warn_configFileExists": { "message": "ملف التكوين موجود بالفعل" },
   "info_exampleValidConfigFile": { "message": "مثال على ملف تكوين صالح" },
   "info_copying": { "message": "لصق من الحافظة... user on host" },

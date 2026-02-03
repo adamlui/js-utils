@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "پەڕگەی ڕێکخستن نەدۆزرایەوە" },
   "error_failedToLoadConfigFile": { "message": "شکستی هێنا لە بارکردنی پەڕگەی ڕێکخستن" },
   "error_mustIncludePath": { "message": "پێویستە_ماڵپه ڕی سانا" },
-  "error_templateNotFound": { "message": "پەڕگەی داڕێژە نەدۆزرایەوە لە" },
   "warn_configFileExists": { "message": "پەڕگەی ڕێکخستن پێشتر بوونی هەیە" },
   "info_exampleValidConfigFile": { "message": "نموونەی پەڕگەی ڕێکخستنێکی دروست" },
   "info_copying": { "message": "کۆپی کردن بۆ تەختەی ڤیدیۆ" },

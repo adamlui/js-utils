@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "კონფიგურაციის ფაილი ვერ ვიპოვე" },
   "error_failedToLoadConfigFile": { "message": "კონფიგურაციის ფაილის ჩატვირთვის შეცდომა: %s" },
   "error_mustIncludePath": { "message": "must include =ბილიკი" },
-  "error_templateNotFound": { "message": "Შაბლონის ფაილი ვერ მოიძებნა" },
   "warn_configFileExists": { "message": "Კონფიგურაციის ფაილი უკვე არსებობს" },
   "info_exampleValidConfigFile": { "message": "Კონფიგურაციის სწორი ფაილის მაგალითი" },
   "info_copying": { "message": "Ბუფერში კოპირება" },

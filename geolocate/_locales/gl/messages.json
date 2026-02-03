@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Non se atopou o ficheiro de configuración" },
   "error_failedToLoadConfigFile": { "message": "Non foi posíbel cargar o ficheiro de configuración" },
   "error_mustIncludePath": { "message": "debe incluír =sendero" },
-  "error_templateNotFound": { "message": "Ficheiro de modelo non atopado en" },
   "warn_configFileExists": { "message": "Xa existe o ficheiro de configuración" },
   "info_exampleValidConfigFile": { "message": "Exemplo de ficheiro de configuración válido" },
   "info_copying": { "message": "Copiando para o portarretallos" },

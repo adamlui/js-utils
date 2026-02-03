@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "File konfigurasi tidak ditemukan" },
   "error_failedToLoadConfigFile": { "message": "Gagal memuat file konfigurasi" },
   "error_mustIncludePath": { "message": "harus menyertakan =path" },
-  "error_templateNotFound": { "message": "File templat tidak ditemukan di" },
   "warn_configFileExists": { "message": "File konfigurasi sudah ada" },
   "info_exampleValidConfigFile": { "message": "Contoh file konfigurasi yang valid" },
   "info_copying": { "message": "Menyalin ke clipboard" },

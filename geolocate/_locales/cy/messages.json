@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Ni chanfuwyd y ffeil cyfluniad" },
   "error_failedToLoadConfigFile": { "message": "Methu llwytho ffeil cyfluniad" },
   "error_mustIncludePath": { "message": "rhaid cynnwys =llwybr" },
-  "error_templateNotFound": { "message": "Ni chanfuwyd y ffeil templed wrth" },
   "warn_configFileExists": { "message": "Ffeil cyfluniad yn bodoli'n barod" },
   "info_exampleValidConfigFile": { "message": "Enghraifft o ffeil cyfluniad dilys" },
   "info_copying": { "message": "Copïo i&apos; r gludfwrdd" },

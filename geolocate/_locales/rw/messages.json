@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "IDOSIYE OYA Byabonetse" },
   "error_failedToLoadConfigFile": { "message": "Kuri Ibirimo IDOSIYE" },
   "error_mustIncludePath": { "message": "gushyiramo =Inzira" },
-  "error_templateNotFound": { "message": "IDOSIYE OYA Byabonetse ku" },
   "warn_configFileExists": { "message": "IDOSIYE" },
   "info_exampleValidConfigFile": { "message": "Urugero Byemewe IDOSIYE" },
   "info_copying": { "message": "Kwandukura kuri clip clip" },

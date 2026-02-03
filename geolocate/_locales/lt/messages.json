@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Konfigūracijos failas nerastas" },
   "error_failedToLoadConfigFile": { "message": "Nepavyko įkelti konfigūracijos failo" },
   "error_mustIncludePath": { "message": "turi būti =kelias" },
-  "error_templateNotFound": { "message": "Šablono failas nerastas" },
   "warn_configFileExists": { "message": "Konfigūracijos failas jau yra" },
   "info_exampleValidConfigFile": { "message": "VALID konfigūracijos failo pavyzdys" },
   "info_copying": { "message": "Kopijuojama į laikiną talpyklę" },

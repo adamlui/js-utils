@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Тохируулах файл олдсонгүй" },
   "error_failedToLoadConfigFile": { "message": "Тохиргооны файлыг ачаалж чадсангүй" },
   "error_mustIncludePath": { "message": "оруулах ёстой =зам" },
-  "error_templateNotFound": { "message": "Загварын файл олдсонгүй" },
   "warn_configFileExists": { "message": "Тохиргооны файл аль хэдийн байна" },
   "info_exampleValidConfigFile": { "message": "Хүчинтэй тохиргооны файлын жишээ" },
   "info_copying": { "message": "Түр санах ой руу хуулах" },

@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Config dosye pa jwenn" },
   "error_failedToLoadConfigFile": { "message": "Pa t chaje dosye konfig" },
   "error_mustIncludePath": { "message": "dwe gen ladan =chemen" },
-  "error_templateNotFound": { "message": "Dosye modèl pa jwenn nan" },
   "warn_configFileExists": { "message": "Config dosye deja egziste" },
   "info_exampleValidConfigFile": { "message": "Egzanp dosye konfigirasyon ki valab" },
   "info_copying": { "message": "Kopi nan tablo" },

@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Файлды конфигурациялау табылмады" },
   "error_failedToLoadConfigFile": { "message": "Конфигурация файлын жүктеу сәтсіз аяқталды" },
   "error_mustIncludePath": { "message": "=жолды қамтуы керек" },
-  "error_templateNotFound": { "message": "Үлгі файлы табылмады" },
   "warn_configFileExists": { "message": "Файлды баптау бұрыннан бар" },
   "info_exampleValidConfigFile": { "message": "Мысал жарамды конфигурация файлы" },
   "info_copying": { "message": "Алмасу буферіндегіні орналастыруда" },

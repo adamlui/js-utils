@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "සැකසුම් ගොනුව හමු නොවිණි" },
   "error_failedToLoadConfigFile": { "message": "සැකසුම් ගොනුව පූරණය කිරීම අසාර්ථක විය" },
   "error_mustIncludePath": { "message": "පථය =path" },
-  "error_templateNotFound": { "message": "සැකිලි ගොනුව සොයාගත නොහැකි විය" },
   "warn_configFileExists": { "message": "සැකසුම් ගොනුව දැනටමත් පවතී" },
   "info_exampleValidConfigFile": { "message": "නිදසුන වලංගු වින් ‍ යාස ගොනුව" },
   "info_copying": { "message": "ක්ලිප් පුවරුවට පිටපත් කරමින්" },

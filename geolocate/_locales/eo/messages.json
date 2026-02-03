@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Agordodosiero ne trovita" },
   "error_failedToLoadConfigFile": { "message": "Fiaskis ŝargi agordodosieron" },
   "error_mustIncludePath": { "message": "devas inkluzivi =vojo" },
-  "error_templateNotFound": { "message": "Ŝablondosiero ne trovita ĉe" },
   "warn_configFileExists": { "message": "Agordodosiero jam ekzistas" },
   "info_exampleValidConfigFile": { "message": "Ekzempla valida agordodosiero" },
   "info_copying": { "message": "Kopiante al interdeponejo" },

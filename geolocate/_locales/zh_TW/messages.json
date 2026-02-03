@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "未找到配置文件" },
   "error_failedToLoadConfigFile": { "message": "無法載入配置檔案" },
   "error_mustIncludePath": { "message": "必須包含 =path" },
-  "error_templateNotFound": { "message": "在以下位置未找到模板文件：" },
   "warn_configFileExists": { "message": "配置文件已存在" },
   "info_exampleValidConfigFile": { "message": "有效配置文件示例" },
   "info_copying": { "message": "正在複製到剪貼簿" },

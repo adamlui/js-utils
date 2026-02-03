@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Konfiguračný súbor sa nenašiel" },
   "error_failedToLoadConfigFile": { "message": "Nepodarilo sa načítať konfiguračný súbor" },
   "error_mustIncludePath": { "message": "musí obsahovať =cesta" },
-  "error_templateNotFound": { "message": "Súbor šablóny sa nenašiel v" },
   "warn_configFileExists": { "message": "Konfiguračný súbor už existuje" },
   "info_exampleValidConfigFile": { "message": "Príklad platného konfiguračného súboru" },
   "info_copying": { "message": "Kopírujem do dočasnej schránky" },

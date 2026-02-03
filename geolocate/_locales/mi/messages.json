@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Kōnae Config e kore e kitea" },
   "error_failedToLoadConfigFile": { "message": "Kaore i taea te utaina i te konae whirihora" },
   "error_mustIncludePath": { "message": "me whakauru =ara" },
-  "error_templateNotFound": { "message": "Kōnae tauira e kore e kitea i roto i" },
   "warn_configFileExists": { "message": "Kei te wātea te kōnae Config" },
   "info_exampleValidConfigFile": { "message": "Tauira kōnae config whaimana" },
   "info_copying": { "message": "Tārua ki te papapātuhi" },

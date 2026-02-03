@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "ፋይል አልተገኘም ያዋቅሩ" },
   "error_failedToLoadConfigFile": { "message": "የተዋቀረ ፋይልን መጫን አልተሳካም" },
   "error_mustIncludePath": { "message": "ማካተት አለበት =መንገድ" },
-  "error_templateNotFound": { "message": "አብነት ፋይል ላይ አልተገኘም" },
   "warn_configFileExists": { "message": "ፋይል አስቀድሞ አለ ያዋቅሩ" },
   "info_exampleValidConfigFile": { "message": "ምሳሌ ትክክለኛ የውቅረት ፋይል" },
   "info_copying": { "message": "ወደ ክሊፕቦርድ መቅዳት" },

@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "فایل کانفیگ پیدا نشد" },
   "error_failedToLoadConfigFile": { "message": "فایل پیکربندی بارگیری نشد" },
   "error_mustIncludePath": { "message": "باید شامل =path باشد" },
-  "error_templateNotFound": { "message": "فایل الگو در اینجا یافت نشد" },
   "warn_configFileExists": { "message": "فایل پیکربندی از قبل وجود دارد" },
   "info_exampleValidConfigFile": { "message": "نمونه فایل پیکربندی معتبر" },
   "info_copying": { "message": "در حال کپی کردن در کلیپ بورد" },

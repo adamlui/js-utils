@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "configuratiebestand '%s' niet gevonden" },
   "error_failedToLoadConfigFile": { "message": "Kon configuratiebestand niet laden" },
   "error_mustIncludePath": { "message": "moet =pad bevatten" },
-  "error_templateNotFound": { "message": "Sjabloonbestand niet gevonden op" },
   "warn_configFileExists": { "message": "Configuratiebestand bestaat al" },
   "info_exampleValidConfigFile": { "message": "Voorbeeld geldig configuratiebestand" },
   "info_copying": { "message": "Kopiëren naar klembord" },

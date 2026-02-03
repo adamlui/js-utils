@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "ບໍ່ພົບໄຟລ໌ການຕັ້ງຄ່າ" },
   "error_failedToLoadConfigFile": { "message": "ລົ້ມເຫຼວໃນການໂຫຼດໄຟລ໌ຕັ້ງຄ່າ" },
   "error_mustIncludePath": { "message": "ຕ້ອງລວມ =ເສັ້ນທາງ" },
-  "error_templateNotFound": { "message": "ໄຟລ໌ແມ່ແບບບໍ່ພົບທີ່" },
   "warn_configFileExists": { "message": "ໄຟລ໌ການຕັ້ງຄ່າມີຢູ່ແລ້ວ" },
   "info_exampleValidConfigFile": { "message": "ຕົວຢ່າງເອກະສານ config ທີ່ຖືກຕ້ອງ" },
   "info_copying": { "message": "ສໍາເນົາໄປທີ່ຄລິບບອດ" },

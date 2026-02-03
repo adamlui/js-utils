@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Fail konfigurasi tidak ditemui" },
   "error_failedToLoadConfigFile": { "message": "Gagal memuat fail konfig %s" },
   "error_mustIncludePath": { "message": "mesti sertakan =laluan" },
-  "error_templateNotFound": { "message": "Fail templat tidak ditemui di" },
   "warn_configFileExists": { "message": "Fail konfigurasi sudah wujud" },
   "info_exampleValidConfigFile": { "message": "Contoh fail konfigurasi yang sah" },
   "info_copying": { "message": "Menyalin ke klipbod" },

@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Le fichier de configuration est introuvable" },
   "error_failedToLoadConfigFile": { "message": "Échec du chargement du fichier de configuration" },
   "error_mustIncludePath": { "message": "doit inclure =chemin" },
-  "error_templateNotFound": { "message": "Fichier modèle introuvable à" },
   "warn_configFileExists": { "message": "Le fichier de configuration existe déjà" },
   "info_exampleValidConfigFile": { "message": "Exemple de fichier de configuration valide" },
   "info_copying": { "message": "Copie vers le Presse-Papiers" },

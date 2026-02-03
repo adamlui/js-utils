@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "ʻAʻole i loaʻa ka faila hoʻonohonoho" },
   "error_failedToLoadConfigFile": { "message": "ʻAʻole i hiki ke hoʻouka i ka faila hoʻonohonoho" },
   "error_mustIncludePath": { "message": "pono e hoʻokomo i ka =ala" },
-  "error_templateNotFound": { "message": "ʻAʻole i loaʻa ka faila template ma" },
   "warn_configFileExists": { "message": "Ua loaʻa mua ka faila hoʻonohonoho" },
   "info_exampleValidConfigFile": { "message": "Laʻana o ka faila hoʻonohonoho kūpono" },
   "info_copying": { "message": "Ke kope nei i ka papa ʻokiʻoki" },

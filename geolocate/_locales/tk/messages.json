@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Hiç bir faýl tapylmady" },
   "error_failedToLoadConfigFile": { "message": "Konfigurasy faýlyň ýüklenmegi başarmady" },
   "error_mustIncludePath": { "message": "ýolbaşçylyk maslahatynyň (Ýolbaşçylykmaslahaty" },
-  "error_templateNotFound": { "message": "Şablon faýly tapylmady" },
   "warn_configFileExists": { "message": "Faýly öňden konfigurat et" },
   "info_exampleValidConfigFile": { "message": "Mysal geçerli konfigurasiýa faýly" },
   "info_copying": { "message": "Klipbordda kopy etmek" },

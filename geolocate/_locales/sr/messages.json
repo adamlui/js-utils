@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Konfiguraciona datoteka nije pronađena" },
   "error_failedToLoadConfigFile": { "message": "Učitavanje konfiguracione datoteke nije uspelo" },
   "error_mustIncludePath": { "message": "mora da sadrži =putanju" },
-  "error_templateNotFound": { "message": "Datoteka šablona nije pronađena na" },
   "warn_configFileExists": { "message": "Konfiguraciona datoteka već postoji" },
   "info_exampleValidConfigFile": { "message": "Primer važeće konfiguracione datoteke" },
   "info_copying": { "message": "Kopiranje u ostavu" },

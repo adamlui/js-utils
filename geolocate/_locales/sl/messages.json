@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Konfiguracijske datoteke ni mogoče najti" },
   "error_failedToLoadConfigFile": { "message": "Konfiguracijske datoteke ni bilo mogoče naložiti" },
   "error_mustIncludePath": { "message": "mora vsebovati =pot" },
-  "error_templateNotFound": { "message": "Datoteke predloge ni mogoče najti na" },
   "warn_configFileExists": { "message": "Konfiguracijska datoteka že obstaja" },
   "info_exampleValidConfigFile": { "message": "Primer veljavne konfiguracijske datoteke" },
   "info_copying": { "message": "Kopiranje v odlagališče" },

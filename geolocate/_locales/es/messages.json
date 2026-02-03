@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Archivo de configuración no encontrado" },
   "error_failedToLoadConfigFile": { "message": "Error al cargar el archivo de configuración de la exposición" },
   "error_mustIncludePath": { "message": "must include =path" },
-  "error_templateNotFound": { "message": "Archivo de plantilla no encontrado en" },
   "warn_configFileExists": { "message": "El archivo de configuración ya existe" },
   "info_exampleValidConfigFile": { "message": "Ejemplo de archivo de configuración válido" },
   "info_copying": { "message": "Copiar al portapapeles fue" },

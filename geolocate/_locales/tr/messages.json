@@ -14,7 +14,6 @@
   "error_configFileNotFound": { "message": "Yapılandırma dosyası bulunamadı" },
   "error_failedToLoadConfigFile": { "message": "Yapılandırma dosyası yüklenemedi" },
   "error_mustIncludePath": { "message": "içermelidir =yol" },
-  "error_templateNotFound": { "message": "Şablon Dosyası Bulunamadı" },
   "warn_configFileExists": { "message": "Yapılandırma dosyası zaten var" },
   "info_exampleValidConfigFile": { "message": "Örnek geçerli yapılandırma dosyası" },
   "info_copying": { "message": "Panoya kopyalanıyor" },
