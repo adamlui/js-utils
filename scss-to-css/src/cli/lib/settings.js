@@ -53,10 +53,8 @@ module.exports = {
             log.data(`${app.msgs.info_fetchingRemoteConfigFrom} ${jsdURL}...`)
             try {
                 const resp = await require(`./data${ env.devMode ? '' : '.min' }.js`).fetch(jsdURL)
-                if (resp.ok)
-                    require(`./data${ env.devMode ? '' : '.min' }.js`).atomicWrite(targetPath, await resp.text())
-                else
-                    return log.warn(`${app.msgs.warn_remoteConfigNotFound}: ${jsdURL} (${resp.status})`)
+                if (resp.ok) fs.writeFileSync(targetPath, await resp.text(), 'utf8')
+                else return log.warn(`${app.msgs.warn_remoteConfigNotFound}: ${jsdURL} (${resp.status})`)
             } catch (err) {
                 return log.warn(`${app.msgs.warn_remoteConfigFailed}: ${jsdURL} ${err.message}`) }
         }
