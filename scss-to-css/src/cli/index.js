@@ -20,7 +20,7 @@
 
     // Init APP data
     Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`))
-    log.debug(app.msgs = await getMsgs(env.debugMode ? generateRandomLang({ excludes: ['en'] }) : getSysLang()))
+    app.msgs = await getMsgs(env.debugMode ? generateRandomLang({ excludes: ['en'] }) : getSysLang())
     app.urls.docs += '/#-command-line-usage'
 
     // Exec CMD arg if passed
