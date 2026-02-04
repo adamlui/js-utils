@@ -110,7 +110,7 @@ module.exports = {
                 app.config[ctrlKey] = ctrlKeyVal
             }
         })
-console.log(app.config)
+
         return app.config
     }
 }
