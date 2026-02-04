@@ -310,7 +310,7 @@ Example defaults:
 
 ```js
 export default {
-    length: 8,                  // 產生的密碼長度
+    length: 12,                 // 產生的密碼長度
     qty: 1,                     // 產生的密碼數量
     strength: '',               // <'weak'|'basic'|'strong'> 應用強度預設
     charset: '',                // 密碼中只包含字符

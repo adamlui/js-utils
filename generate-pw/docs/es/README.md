@@ -312,7 +312,7 @@ Ejemplo de configuración predeterminada:
 
 ```js
 export default {
-    length: 8,                  // longitud de la(s) contraseña(s) a generar
+    length: 12,                 // longitud de la(s) contraseña(s) a generar
     qty: 1,                     // cantidad de contraseñas a generar
     strength: '',               // <'weak'|'basic'|'strong'> aplicar ajuste preestablecido de intensidad
     charset: '',                // incluir solo los caracteres especificados en la(s) contraseña(s)

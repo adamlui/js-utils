@@ -314,7 +314,7 @@ Exemple de valeurs par défaut:
 
 ```js
 export default {
-    length: 8,                  // longueur des mots de passe à générer
+    length: 12,                 // longueur des mots de passe à générer
     qty: 1,                     // nombre de mots de passe à générer
     strength: '',               // <'weak'|'basic'|'strong'> appliquer le niveau de sécurité prédéfini
     charset: '',                // inclure uniquement les caractères spécifiés dans le(s) mot(s) de passe

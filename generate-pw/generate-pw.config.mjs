@@ -11,7 +11,7 @@
 export default {
 
     // Size params
-    length: 8,                 // length of passwords to generate
+    length: 12,                 // length of passwords to generate
     qty: 1,                     // # of passwords to generate
 
     // Generator options

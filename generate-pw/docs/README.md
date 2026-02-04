@@ -315,7 +315,7 @@ Example defaults:
 
 ```js
 export default {
-    length: 8,                  // length of passwords to generate
+    length: 12,                 // length of passwords to generate
     qty: 1,                     // # of passwords to generate
     strength: '',               // <'weak'|'basic'|'strong'> apply strength preset
     charset: '',                // only include chars in password(s)

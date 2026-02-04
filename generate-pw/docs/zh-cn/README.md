@@ -310,7 +310,7 @@ $ generate-pw
 
 ```js
 export default {
-    length: 8,                  // 生成密码的长度
+    length: 12,                 // 生成密码的长度
     qty: 1,                     // 生成密码的数量
     strength: '',               // <'weak'|'basic'|'strong'> 应用强度预设
     charset: '',                // 密码中仅包含指定的字符

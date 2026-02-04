@@ -40,7 +40,7 @@ function generatePassword(options = {}) {
 
     const defaultOptions = {
         verbose: true,              // enable logging
-        length: 8,                  // length of password
+        length: 12,                 // length of password
         qty: 1,                     // number of passwords to generate
         strength: '',               // <'weak'|'basic'|'strong'> apply strength preset
         charset: '',                // characters to include
@@ -138,7 +138,7 @@ function generatePasswords(qty, options = {}) {
 
     const defaultOptions = {
         verbose: true,              // enable logging
-        length: 8,                  // length of password
+        length: 12,                 // length of password
         strength: '',               // <'weak'|'basic'|'strong'> apply strength preset
         charset: '',                // characters to include
         exclude: '',                // characters to exclude
@@ -257,7 +257,7 @@ function validateStrength(password, options = {}) {
 
     const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/#validatestrengthpassword-options',
           exampleCall = `validateStrength('pa55word', { verbose: false })`,
-          strengthCriteria = { minLength: 8, minLower: 1, minUpper: 1, minNumber: 1, minSymbol: 1 },
+          strengthCriteria = { minlength: 12, minLower: 1, minUpper: 1, minNumber: 1, minSymbol: 1 },
           defaultOptions = { verbose: true /* enable logging */ }
 
     log.prefix = 'validateStrength()'

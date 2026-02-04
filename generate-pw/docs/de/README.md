@@ -314,7 +314,7 @@ Beispiel für Standardeinstellungen:
 
 ```js
 export default {
-    length: 8,                  // Länge der zu generierenden Passwörter
+    length: 12,                 // Länge der zu generierenden Passwörter
     qty: 1,                     // Anzahl der zu generierenden Passwörter
     strength: '',               // <'weak'|'basic'|'strong'> Stärke-Voreinstellung anwenden
     charset: '',                // Nur die angegebenen Zeichen in den Passwörtern verwenden
