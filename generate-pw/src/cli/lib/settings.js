@@ -13,22 +13,16 @@ module.exports = {
         charset: { type: 'param', regex: /^--?charse?t?(?:=.*|$)/ },
         excludeChars: { type: 'param', regex:/^--?exclude(?:=.*|$)/ },
         config: { type: 'param', regex: /^--?config(?:=.*|$)/ },
-        includeNums: { type: 'flag', defaultVal: false, regex: /^--?(?:n|(?:include-?)?num(?:ber)?s?=?(?:true|1)?)$/ },
-        includeSymbols: { type: 'flag', defaultVal: false, regex: /^--?(?:y|(?:include-?)?symbols?=?(?:true|1)?)$/ },
+        includeNums: { type: 'flag', regex: /^--?(?:n|(?:include-?)?num(?:ber)?s?=?(?:true|1)?)$/ },
+        includeSymbols: { type: 'flag', regex: /^--?(?:y|(?:include-?)?symbols?=?(?:true|1)?)$/ },
         excludeLowerChars: {
-            type: 'flag', defaultVal: false,
-            regex: /^--?(?:L|(?:exclude|disable|no)-?lower-?(?:case)?|lower-?(?:case)?=(?:false|0))$/
-        },
+            type: 'flag', regex: /^--?(?:L|(?:exclude|disable|no)-?lower-?(?:case)?|lower-?(?:case)?=(?:false|0))$/},
         excludeUpperChars: {
-            type: 'flag', defaultVal: false,
-            regex: /^--?(?:U|(?:exclude|disable|no)-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/
-        },
+            type: 'flag', regex: /^--?(?:U|(?:exclude|disable|no)-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/},
         excludeSimilarChars: {
-            type: 'flag', defaultVal: false,
-            regex: /^--?(?:S|(?:exclude|disable|no)-?similar-?(?:char(?:acter)?s?)?|similar-?(?:char(?:acter)?s?)?=(?:false|0))$/
-        },
-        strictMode: { type: 'flag', defaultVal: false, regex: /^--?s(?:trict)?(?:-?mode)?$/ },
-        quietMode: { type: 'flag', defaultVal: false, regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
+            type: 'flag', regex: /^--?(?:S|(?:exclude|disable|no)-?similar-?(?:char(?:acter)?s?)?|similar-?(?:char(?:acter)?s?)?=(?:false|0))$/},
+        strictMode: { type: 'flag', regex: /^--?s(?:trict)?(?:-?mode)?$/ },
+        quietMode: { type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
         init: { type: 'cmd', regex: /^-{0,2}i(?:nit)?$/ },
         help: { type: 'cmd', regex: /^--?h(?:elp)?$/ },
         version: { type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
@@ -66,7 +60,7 @@ module.exports = {
 
         // Init defaults
         ctrlKeys.forEach(key => {
-            const ctrl = this.controls[key] ; if (ctrl.type == 'cmd' || ctrl.mode) return
+            const ctrl = this.controls[key] ; if (ctrl.type != 'param' || ctrl.mode) return
             app.config[key] ??= ctrl.defaultVal ?? ''
         })
 

@@ -9,25 +9,25 @@ module.exports = {
 
     controls: {
         dryRun: {
-            type: 'flag', defaultVal: false, regex: /^--?(?:n|dry-?run)$/ },
+            type: 'flag', regex: /^--?(?:n|dry-?run)$/ },
         includeDotFolders: {
-            type: 'flag', defaultVal: false, regex: /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/ },
+            type: 'flag', regex: /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/ },
         includeDotFiles: {
-            type: 'flag', defaultVal: false, regex: /^--?(?:df|D|(?:include-?)?dot-?files?=?(?:true|1)?)$/ },
+            type: 'flag', regex: /^--?(?:df|D|(?:include-?)?dot-?files?=?(?:true|1)?)$/ },
         noRecursion: {
-            type: 'flag', defaultVal: false, regex: /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/ },
+            type: 'flag', regex: /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/ },
         noMangle: {
-            type: 'flag', defaultVal: false, regex: /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/ },
+            type: 'flag', regex: /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/ },
         noFilenameChange: {
-            type: 'flag', defaultVal: false, regex: /^--?(?:X|(?:disable|no)-?(?:file)?name-?change|(?:file)?name-?change=(?:false|0))$/ },
+            type: 'flag', regex: /^--?(?:X|(?:disable|no)-?(?:file)?name-?change|(?:file)?name-?change=(?:false|0))$/ },
         rewriteImports: {
-            type: 'flag', defaultVal: false, regex: /^--?(?:i|rewrite-?imports?=?(?:true|1)?)$/ },
+            type: 'flag', regex: /^--?(?:i|rewrite-?imports?=?(?:true|1)?)$/ },
         relativeOutput: {
-            type: 'flag', defaultVal: false, regex: /^--?(?:r|relative-?output?=?(?:true|1)?)$/ },
+            type: 'flag', regex: /^--?(?:r|relative-?output?=?(?:true|1)?)$/ },
         copy: {
-            type: 'flag', defaultVal: false, regex: /^--?c(?:opy)?$/ },
+            type: 'flag', regex: /^--?c(?:opy)?$/ },
         quietMode: {
-            type: 'flag', defaultVal: false, regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
+            type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
         ignores: {
             type: 'param', regex: /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/ },
         comment: {
@@ -74,7 +74,7 @@ module.exports = {
 
         // Init defaults
         ctrlKeys.forEach(key => {
-            const ctrl = this.controls[key] ; if (ctrl.type == 'cmd' || ctrl.mode) return
+            const ctrl = this.controls[key] ; if (ctrl.type != 'param' || ctrl.mode) return
             app.config[key] ??= ctrl.defaultVal ?? ''
         })
 

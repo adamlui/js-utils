@@ -9,7 +9,7 @@ module.exports = {
 
     controls: {
         config: { type: 'param', regex: /^--?config(?:=.*|$)/ },
-        quietMode: { type: 'flag', defaultVal: false, regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
+        quietMode: { type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
         init: { type: 'cmd', regex: /^-{0,2}i(?:nit)?$/ },
         help: { type: 'cmd', regex: /^--?h(?:elp)?$/ },
         version: { type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
@@ -47,7 +47,7 @@ module.exports = {
 
         // Init defaults
         ctrlKeys.forEach(key => {
-            const ctrl = this.controls[key] ; if (ctrl.type == 'cmd' || ctrl.mode) return
+            const ctrl = this.controls[key] ; if (ctrl.type != 'param' || ctrl.mode) return
             app.config[key] ??= ctrl.defaultVal ?? ''
         })
 
