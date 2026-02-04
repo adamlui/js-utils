@@ -241,7 +241,8 @@ validateStrength() » Check returned object for score/recommendations.
 ----------------------|-------|--------------------------------------------------|--------
 `verbose`             | 布尔值 | 在控制台/终端中显示日志记录。                      | `true`
 `length`              | 整数   | 密码的长度。                                     | `8`
-`qty`*                | 整数   | 要生成的密码数量。                                | `1`
+`qty`                 | 整数   | 要生成的密码数量。                                | `1`
+`strength`            | 字符串 | `<'weak'\|'basic'\|'strong'>` 应用强度预设。      | `''`
 `charset`             | 字符串 | 密码中包含的字符。                                | `''`
 `exclude`             | 字符串 | 要从密码中排除的字符。                            | `''`
 `numbers`             | 布尔值 | 允许密码中包含数字。                              | `false`
@@ -280,6 +281,9 @@ $ generate-pw
  --config="path/to/file"     加载自定义配置文件。
 
 布尔选项：
+ -w, --weak                  生成弱密码。
+ -b, --basic                 生成基本强度密码。
+ -t, --strong                生成强密码。
  -n, --include-numbers       允许密码中包含数字。
  -y, --include-symbols       允许密码中包含符号。
  -L, --no-lowercase          密码中不允许使用小写字母。
@@ -306,6 +310,7 @@ $ generate-pw
 export default {
     length: 8,                  // 生成密码的长度
     qty: 1,                     // 生成密码的数量
+    strength: '',               // <'weak'|'basic'|'strong'> 应用强度预设
     charset: '',                // 密码中仅包含指定的字符
     exclude: '',                // 密码中排除指定的字符
     includeNums: false,         // 密码中允许包含数字

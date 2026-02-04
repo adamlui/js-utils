@@ -245,7 +245,8 @@ Name                  | Type    | Description                                   
 ----------------------|---------|--------------------------------------------------------------------------------|---------------
 `verbose`             | Boolean | Show logging in console/terminal.                                              | `true`
 `length`              | Integer | Length of password(s).                                                         | `8`
-`qty`*                | Integer | Number of passwords to generate.                                               | `1`
+`qty`                 | Integer | Number of passwords to generate.                                               | `1`
+`strength`            | String  | `<'weak'\|'basic'\|'strong'>` Apply strength preset.                           | `''`
 `charset`             | String  | Characters to include in password(s).                                          | `''`
 `exclude`             | String  | Characters to exclude from password(s).                                        | `''`
 `numbers`             | Boolean | Allow numbers in password(s).                                                  | `false`
@@ -284,6 +285,9 @@ Parameter options:
  --config="path/to/file"     Load custom config file.
 
 Boolean options:
+ -w, --weak                  Generate weak password(s).
+ -b, --basic                 Generate basic strength password(s).
+ -t, --strong                Generate strong password(s).
  -n, --include-numbers       Allow numbers in password(s).
  -y, --include-symbols       Allow symbols in password(s).
  -L, --no-lowercase          Disallow lowercase letters in password(s).
@@ -311,6 +315,7 @@ Example defaults:
 export default {
     length: 8,                  // length of passwords to generate
     qty: 1,                     // # of passwords to generate
+    strength: '',               // <'weak'|'basic'|'strong'> apply strength preset
     charset: '',                // only include chars in password(s)
     exclude: '',                // exclude chars from password(s)
     includeNums: false,         // allow numbers in password(s)

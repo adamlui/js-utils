@@ -245,7 +245,8 @@ Name                  | Geben Sie       | ein Beschreibung                      
 ----------------------|-----------------|-----------------------------------------------------------------------------------|--------------
 `verbose`             | Boolescher Wert | Protokolle in Konsole/Terminal anzeigen.                                          | `true`
 `length`              | Ganze Zahl      | Länge des/der Passwort(s).                                                        | `8`
-`qty`*                | Ganze Zahl      | Anzahl der zu generierenden Passwörter.                                           | `1`
+`qty`                 | Ganze Zahl      | Anzahl der zu generierenden Passwörter.                                           | `1`
+`strength`            | Zeichenfolge    | `<'weak'\|'basic'\|'strong'>` Stärke-Voreinstellung anwenden.                     | `''`
 `charset`             | Zeichenfolge    | In Passwörter aufzunehmende Zeichen.                                              | `''`
 `exclude`             | Zeichenfolge    | Von Passwörtern auszuschließende Zeichen.                                         | `''`
 `numbers`             | Boolescher Wert | Zahlen in Passwörtern zulassen.                                                   | `false`
@@ -284,6 +285,9 @@ Parameteroptionen:
  --config="path/to/file"     Benutzerdefinierte Konfigurationsdatei laden.
 
 Boolesche Optionen:
+ -w, --weak                  Schwache(s) Passwort(e) generieren.
+ -b, --basic                 Passwörter mit mittlerer Stärke generieren.
+ -t, --strong                Starke Passwörter generieren.
  -n, --include-numbers       Zahlen in Passwörtern zulassen.
  -y, --include-symbols       Erlaube Symbole in Passwörtern.
  -L, --no-lowercase          Kleinbuchstaben in Passwörtern nicht zulassen.
@@ -310,6 +314,7 @@ Beispiel für Standardeinstellungen:
 export default {
     length: 8,                  // Länge der zu generierenden Passwörter
     qty: 1,                     // Anzahl der zu generierenden Passwörter
+    strength: '',               // <'weak'|'basic'|'strong'> Stärke-Voreinstellung anwenden
     charset: '',                // Nur die angegebenen Zeichen in den Passwörtern verwenden
     exclude: '',                // Die angegebenen Zeichen von den Passwörtern ausschließen
     includeNums: false,         // Zahlen in den Passwörtern zulassen

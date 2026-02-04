@@ -10,6 +10,9 @@ module.exports = {
     controls: {
         length: { type: 'param', defaultVal: 8, regex: /^--?length(?:=.*|$)/ },
         qty: { type: 'param', defaultVal: 1, regex: /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
+        weak: { type: 'flag', mode: true, regex: /^--?weak$/ },
+        basic: { type: 'flag',  mode: true, regex: /^--?basic$/ },
+        strong: { type: 'flag', mode: true, regex: /^--?strong$/ },
         charset: { type: 'param', regex: /^--?charse?t?(?:=.*|$)/ },
         excludeChars: { type: 'param', regex:/^--?exclude(?:=.*|$)/ },
         config: { type: 'param', regex: /^--?config(?:=.*|$)/ },

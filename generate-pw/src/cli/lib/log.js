@@ -44,6 +44,9 @@ module.exports = {
             ],
             flags: [
                 `\n${this.colors.bw}o ${app.msgs.helpSection_flags}:${this.colors.nc}`,
+                ` -w, --weak                  ${app.msgs.optionDesc_weak}.`,
+                ` -b, --basic                 ${app.msgs.optionDesc_basic}.`,
+                ` -t, --strong                ${app.msgs.optionDesc_strong}.`,
                 ` -n, --include-numbers       ${app.msgs.optionDesc_includeNums}.`,
                 ` -y, --include-symbols       ${app.msgs.optionDesc_includeSymbols}.`,
                 ` -L, --no-lowercase          ${app.msgs.optionDesc_noLower}.`,

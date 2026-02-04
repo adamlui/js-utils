@@ -22,6 +22,11 @@ Object.assign(globalThis.app ??= {}, {
         upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
         numbers: '0123456789',
         symbols: '!@#$%^&*()-_=+[]{}/\\|;:\'",.<>?'
+    },
+    strengthPresets: {
+        weak:   { length: 6,  lowercase: true, uppercase: false, numbers: false, symbols: false },
+        basic:  { length: 8,  lowercase: true, uppercase: true,  numbers: true,  symbols: false },
+        strong: { length: 12, lowercase: true, uppercase: true,  numbers: true,  symbols: true  }
     }
 })
 
@@ -34,6 +39,7 @@ function generatePassword(options = {}) {
         verbose: true,              // enable logging
         length: 8,                  // length of password
         qty: 1,                     // number of passwords to generate
+        strength: '',               // <'weak'|'basic'|'strong'> apply strength preset
         charset: '',                // characters to include
         exclude: '',                // characters to exclude
         numbers: false,             // include numberChars
@@ -49,6 +55,11 @@ function generatePassword(options = {}) {
     // Validate/init options
     if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
+
+    if (options.strength) { // apply strength preset
+        const strengthPreset = app.strengthPresets[options.strength.toLowerCase()]
+        if (strengthPreset) options = { ...options, ...strengthPreset }
+    }
 
     if (options.qty > 1) { // generate/return array of [qty] password strings
         const { qty, ...nonQtyOptions } = options
@@ -117,6 +128,7 @@ function generatePasswords(qty, options = {}) {
     const defaultOptions = {
         verbose: true,              // enable logging
         length: 8,                  // length of password
+        strength: '',               // <'weak'|'basic'|'strong'> apply strength preset
         charset: '',                // characters to include
         exclude: '',                // characters to exclude
         numbers: false,             // include numberChars
@@ -139,6 +151,11 @@ function generatePasswords(qty, options = {}) {
     // Validate/init options
     if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
+
+    if (options.strength) { // apply strength preset
+        const strengthPreset = app.strengthPresets[options.strength.toLowerCase()]
+        if (strengthPreset) options = { ...options, ...strengthPreset }
+    }
 
     // Generate passwords
     if (options.verbose) log.info(`Generating password${ qty > 1 ? 's' : '' }...`)
@@ -298,6 +315,12 @@ function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
         log.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
         log.info('Example valid call:', exampleCall)
         log.validOptions(defaultOptions) ; log.helpURL(helpURL)
+        return false
+    }
+    const validStrengths = ['weak', 'basic', 'strong']
+    if ('strength' in options && options.strength && !validStrengths.includes(options.strength.toLowerCase())) {
+        log.error(`[strength] must be one of: ${validStrengths.join(', ')}`)
+        log.helpURL(helpURL)
         return false
     }
     for (const key in options) { // validate each key

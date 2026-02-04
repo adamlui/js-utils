@@ -245,7 +245,8 @@ Nombre                | Tipo     | Descripción                                 
 ----------------------|----------|----------------------------------------------------------------------------------------------|---------------
 `verbose`             | Booleano | Mostrar registros en la consola/terminal.                                                    | `true`
 `length`              | Entero   | Longitud de la(s) contraseña(s).                                                             | `8`
-`qty`*                | Entero   | Número de contraseñas a generar.                                                             | `1`
+`qty`                 | Entero   | Número de contraseñas a generar.                                                             | `1`
+`strength`            | Cadena   | `<'weak'\|'basic'\|'strong'>` Aplicar ajuste preestablecido de intensidad.                   | `''`
 `charset`             | Cadena   | Caracteres a incluir en la(s) contraseña(s).                                                 | `''`
 `exclude`             | Cadena   | Caracteres para excluir de la(s) contraseña(s).                                              | `''`
 `numbers`             | Booleano | Permitir números en contraseña(s).                                                           | `false`
@@ -284,6 +285,9 @@ Opciones de parámetros:
  --config="path/to/file"     Cargar archivo de configuración personalizado.
 
 Opciones booleanas:
+ -w, --weak                  Generar contraseña(s) débil(es).
+ -b, --basic                 Generar contraseña(s) de intensidad básica.
+ -t, --strong                Generar contraseña(s) fuerte(s).
  -n, --include-numbers       Permitir números en contraseña(s).
  -y, --include-symbols       Permitir símbolos en la(s) contraseña(s).
  -L, --no-lowercase          No permitir letras minúsculas en la(s) contraseña(s).
@@ -308,6 +312,7 @@ Ejemplo de configuración predeterminada:
 export default {
     length: 8,                  // longitud de las contraseñas a generar
     qty: 1,                     // cantidad de contraseñas a generar
+    strength: '',               // <'weak'|'basic'|'strong'> aplicar ajuste preestablecido de intensidad
     charset: '',                // incluir solo los caracteres especificados en las contraseñas
     exclude: '',                // excluir los caracteres especificados de las contraseñas
     includeNums: false,         // permitir números en las contraseñas

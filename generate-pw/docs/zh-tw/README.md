@@ -241,7 +241,8 @@ validateStrength() » Check returned object for score/recommendations.
 ----------------------|--------|-------------------------------------------------|---------
 `verbose`             | 布林值 | 在控制台/終端機中顯示日誌記錄。                    | `true`
 `length`              | 整數   | 密碼的長度。                                     | `8`
-`qty`*                | 整數   | 要產生的密碼數量。                                | `1`
+`qty`                 | 整數   | 要產生的密碼數量。                                | `1`
+`strength`            | 字串   | `<'weak'\|'basic'\|'strong'>` 應用強度預設。      | `''`
 `charset`             | 字串   | 密碼中包含的字元。                                | `''`
 `exclude`             | 字串   | 要從密碼中排除的字元。                            | `''`
 `numbers`             | 布林值 | 允許密碼中包含數字。                              | `false`
@@ -277,9 +278,12 @@ $ generate-pw
  --qty=n                     產生 n 個密碼。
  --charset=chars             密碼中僅包含 chars。
  --exclude=chars             從密碼中排除 chars。
- --config="path/to/file"     Load custom config file.
+ --config="path/to/file"     載入自訂設定檔。
 
 布林選項：
+ -w, --weak                  產生弱密碼。
+ -b, --basic                 產生基本強度密碼。
+ -t, --strong                產生強密碼。
  -n, --include-numbers       允許密碼中包含數字。
  -y, --include-symbols       允許密碼中包含符號。
  -L, --no-lowercase          密碼中不允許使用小寫字母。
@@ -306,6 +310,7 @@ Example defaults:
 export default {
     length: 8, // 產生的密碼長度
     qty: 1, // 產生的密碼數量
+    strength: '',               // <'weak'|'basic'|'strong'> 應用強度預設
     charset: '', // 密碼中只包含字符
     exclude: '', // 密碼中排除字符
     includeNums: false, // 密碼中允許包含數字

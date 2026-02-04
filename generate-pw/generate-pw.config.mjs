@@ -18,6 +18,7 @@ export default {
     qty: 1,                     // # of passwords to generate
 
     // Generator options
+    strength: '',               // <'weak'|'basic'|'strong'> apply strength preset
     includeNums: false,         // allow numbers in password(s)
     includeSymbols: false,      // allow symbols in password(s)
     excludeLowerChars: false,   // disallow lowercase letters in password(s)

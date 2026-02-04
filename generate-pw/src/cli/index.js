@@ -33,6 +33,7 @@
     const genOptions = {
         length: app.config.length,
         qty: app.config.qty,
+        strength: app.config.mode,
         charset: app.config.charset,
         exclude: app.config.excludeChars,
         numbers: app.config.includeNums,

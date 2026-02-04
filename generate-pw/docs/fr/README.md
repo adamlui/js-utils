@@ -245,7 +245,8 @@ Nom                   | Taper   | Description                                   
 ----------------------|---------|-----------------------------------------------------------------------------------------------|-------------------
 `verbose`             | Booléen | Afficher les journaux dans la console/terminal.                                               | `true`
 `length`              | Entier  | Longueur du ou des mots de passe.                                                             | `8`
-`qty`*                | Entier  | Nombre de mots de passe à générer.                                                            | `1`
+`qty`                 | Entier  | Nombre de mots de passe à générer.                                                            | `1`
+`strength`            | Chaîne  | `<'weak'\|'basic'\|'strong'>` Appliquer le niveau de sécurité prédéfini.                      | `''`
 `charset`             | Chaîne  | Caractères à inclure dans le(s) mot(s) de passe.                                              | `''`
 `exclude`             | Chaîne  | Caractères à exclure du(des) mot(s) de passe.                                                 | `''`
 `numbers`             | Booléen | Autoriser les chiffres dans les mots de passe.                                                | `false`
@@ -284,6 +285,9 @@ Options des paramètres:
  --config="path/to/file"     Charger le fichier de configuration personnalisé.
 
 Options booléennes:
+ -w, --weak                  Générer des mots de passe faibles.
+ -b, --basic                 Générer des mots de passe de sécurité moyenne.
+ -t, --strong                Générer des mots de passe forts.
  -n, --include-numbers       Autoriser les chiffres dans les mots de passe.
  -y, --include-symbols       Autoriser les symboles dans les mots de passe.
  -L, --no-lowercase          Interdire les lettres minuscules dans les mots de passe.
@@ -310,6 +314,7 @@ Exemple de valeurs par défaut:
 export default {
     length: 8,                  // longueur des mots de passe à générer
     qty: 1,                     // nombre de mots de passe à générer
+    strength: '',               // <'weak'|'basic'|'strong'> appliquer le niveau de sécurité prédéfini
     charset: '',                // inclure uniquement les caractères spécifiés dans les mots de passe
     exclude: '',                // exclure les caractères spécifiés des mots de passe
     includeNums: false,         // autoriser les chiffres dans les mots de passe
