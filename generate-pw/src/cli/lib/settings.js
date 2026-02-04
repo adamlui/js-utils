@@ -23,7 +23,7 @@ module.exports = {
         excludeUpperChars: {
             type: 'flag', regex: /^--?(?:U|(?:exclude|disable|no)-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/},
         similarChars: { type: 'flag', regex: /^--?(?:s|(?:include-?)?similar-?chars?=?(?:true|1)?)$/ },
-        unstrict: { type: 'flag', regex: /^--?S|(?:un-?strict)?(?:-?mode)?$/ },
+        unstrict: { type: 'flag', regex: /^--?(?:S|(?:un-?strict)?(?:-?mode)?)$/ },
         entropy: { type: 'flag', regex: /^--?e(?:ntropy)?$/ },
         quietMode: { type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
         init: { type: 'cmd', regex: /^-{0,2}i(?:nit)?$/ },
