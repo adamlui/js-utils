@@ -19,11 +19,11 @@ module.exports = {
         noMinify: {
             type: 'flag', regex: /^--?(?:M|(?:disable|no)-?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/ },
         relativeOutput: {
-            type: 'param', regex: /^--?(?:r|relative-?output?=?(?:true|1)?)$/ },
+            type: 'flag', regex: /^--?(?:r|relative-?output?=?(?:true|1)?)$/ },
         copy: {
-            type: 'param', regex: /^--?c(?:opy)?$/ },
+            type: 'flag', regex: /^--?c(?:opy)?$/ },
         quietMode: {
-            type: 'param', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
+            type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
         ignores: {
             type: 'param', regex: /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/ },
         comment: {

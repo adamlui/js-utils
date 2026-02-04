@@ -21,13 +21,13 @@ module.exports = {
         noFilenameChange: {
             type: 'flag', regex: /^--?(?:X|(?:disable|no)-?(?:file)?name-?change|(?:file)?name-?change=(?:false|0))$/ },
         rewriteImports: {
-            type: 'param', regex: /^--?(?:i|rewrite-?imports?=?(?:true|1)?)$/ },
+            type: 'flag', regex: /^--?(?:i|rewrite-?imports?=?(?:true|1)?)$/ },
         relativeOutput: {
-            type: 'param', regex: /^--?(?:r|relative-?output?=?(?:true|1)?)$/ },
+            type: 'flag', regex: /^--?(?:r|relative-?output?=?(?:true|1)?)$/ },
         copy: {
-            type: 'param', regex: /^--?c(?:opy)?$/ },
+            type: 'flag', regex: /^--?c(?:opy)?$/ },
         quietMode: {
-            type: 'param', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
+            type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
         ignores: {
             type: 'param', regex: /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/ },
         comment: {
