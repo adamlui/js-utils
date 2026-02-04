@@ -109,7 +109,7 @@ module.exports = {
             .execSync(`npm view ${JSON.stringify(app.name)} version`).toString().trim() || 'none'
         let localVer = 'none'
 
-        try { // to set localVer from dependent package.json devDependencies
+        try { // to set localVer from node_modules package.json
             const localPkgPath = require('path').resolve(process.cwd(), 'node_modules', app.name, 'package.json')
             if (require('fs').existsSync(localPkgPath)) localVer = require(localPkgPath).version || 'none'
         } catch (err) {
