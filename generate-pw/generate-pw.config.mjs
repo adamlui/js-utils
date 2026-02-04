@@ -17,15 +17,13 @@ export default {
     length: 8,                  // length of passwords to generate
     qty: 1,                     // # of passwords to generate
 
-    // Output flags
+    // Generator options
     includeNums: false,         // allow numbers in password(s)
     includeSymbols: false,      // allow symbols in password(s)
     excludeLowerChars: false,   // disallow lowercase letters in password(s)
     excludeUpperChars: false,   // disallow uppercase letters in password(s)
     excludeSimilarChars: false, // exclude similar chars in password(s)
     strictMode: false,          // require 1+ char from each allowed charset in password(s)
-
-    // Char params
     charset: '',                // only include chars in password(s)
     exclude: ''                 // exclude chars from password(s)
 }
