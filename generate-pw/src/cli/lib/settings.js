@@ -8,8 +8,8 @@ module.exports = {
     configFilename: 'generate-pw.config.mjs',
 
     controls: {
-        length: { type: 'param', defaultVal: 12, regex: /^--?length(?:=.*|$)/ },
-        qty: { type: 'param', defaultVal: 1, regex: /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
+        length: { type: 'param', defaultVal: 12, regex: /^--?length(?:=.*|$)/, parser: val => parseInt(val, 10) },
+        qty: { type: 'param', defaultVal: 1, regex: /^--?qu?a?n?ti?t?y(?:=.*|$)/, parser: val => parseInt(val, 10) },
         weak: { type: 'flag', mode: true, regex: /^--?weak$/ },
         basic: { type: 'flag',  mode: true, regex: /^--?basic$/ },
         strong: { type: 'flag', mode: true, regex: /^--?strong$/ },
