@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "No permetis les lletres minúscules en les contrasenyes" },
   "optionDesc_noUpper": { "message": "No permetis les lletres majúscules en les contrasenyes" },
   "optionDesc_similarChars": { "message": "Inclou caràcters similars a la contrasenya" },
-  "optionDesc_strict": { "message": "Requereix com a mínim un caràcter de cada caràcter permès establert en la contrasenya o contrasenyes" },
+  "optionDesc_unstrict": { "message": "No requereixis com a mínim un caràcter de cada caràcter permès establert en la contrasenya o contrasenyes" },
   "optionDesc_entropy": { "message": "Calcular/registrar l'entropia estimada" },
   "optionDesc_quiet": { "message": "Suprimeix tot el registre, excepte els errors" },
   "optionDesc_help": { "message": "Mostra la pantalla d'ajuda" },

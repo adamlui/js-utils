@@ -190,7 +190,7 @@ console.log(mdpStrict) // exemple de sortie: 'a!c2ef'
 
 **💡 Remarque:** Si aucun tableau `typesCarRequis` n'est transmis, tous les types disponibles seront requis.
 
-Les `typesCarRequis` disponibles sont: `['number', 'symbol', 'lower', 'upper']`
+Les `typesCarRequis` disponibles sont: `['numbers', 'symbols', 'lower', 'upper']`
 
 Options disponibles (passées en propriétés d'objet):
 
@@ -254,7 +254,7 @@ Nom                   | Taper   | Description                                   
 `lowercase`           | Booléen | Autoriser les lettres minuscules dans le(s) mot(s) de passe.                                    | `true`
 `uppercase`           | Booléen | Autoriser les lettres majuscules dans le(s) mot(s) de passe.                                    | `true`
 `similarChars`        | Booléen | Inclure des caractères similaires (par exemple o, 0, O, i, l, 1, |) dans le(s) mot(s) de passe. | `false`
-`strict`              | Booléen | Exiger au moins un caractère de chaque jeu de caractères autorisé dans le(s) mot(s) de passe.   | `false`
+`strict`              | Booléen | Exiger au moins un caractère de chaque jeu de caractères autorisé dans le(s) mot(s) de passe.   | `true`
 `entropy`             | Booléen | Calculer/enregistrer l'entropie estimée.                                                        | `false`
 
 ##### _*Uniquement disponible dans [`generatePassword([options])`](#generatepasswordoptions) puisque [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) prend un argument `qty`_
@@ -293,8 +293,8 @@ Options booléennes:
  -Y, --no-symbols            Interdire les symboles dans le(s) mot(s) de passe.
  -L, --no-lowercase          Interdire les lettres minuscules dans le(s) mot(s) de passe.
  -U, --no-uppercase          Interdire les lettres majuscules dans le(s) mot(s) de passe.
- -r, --similar-chars         Inclure des caractères similaires dans le(s) mot(s) de passe.
- -s, --strict                Exiger au moins un caractère de chaque jeu de caractères autorisé dans le(s) mot(s) de passe.
+ -s, --similar-chars         Inclure des caractères similaires dans le(s) mot(s) de passe.
+ -S, --unstrict              Ne pas exiger au moins un caractère de chaque ensemble de caractères autorisés dans le(s) mot(s) de passe.
  -e, --entropy               Calculer/enregistrer l'entropie estimée.
  -q, --quiet                 Supprime toute la journalisation, à l'exception des erreurs.
 
@@ -323,9 +323,9 @@ export default {
     excludeSymbols: false,      // interdire les symboles dans le(s) mot(s) de passe
     excludeLowerChars: false,   // interdire les minuscules dans le(s) mot(s) de passe
     excludeUpperChars: false,   // interdire les majuscules dans le(s) mot(s) de passe
-    similarChars: false,        // Inclure des caractères similaires dans le(s) mot(s) de passe
-    strictMode: false,          // exiger au moins un caractère de chaque ensemble de caractères autorisé dans le(s) mot(s) de passe
-    entropy: false,             // Calculer/enregistrer l'entropie estimée
+    similarChars: false,        // inclure des caractères similaires dans le(s) mot(s) de passe
+    unstrict: false,            // ne pas exiger au moins un caractère de chaque ensemble de caractères autorisés dans le(s) mot(s) de passe
+    entropy: false,             // calculer/enregistrer l'entropie estimée
     quietMode: false            // supprimer tous les messages de journalisation sauf les erreurs
 }
 ```

@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "ບໍ່ອະນຸຍາດຕົວອັກສອນນ້ອຍໃນລະຫັດຜ່ານ" },
   "optionDesc_noUpper": { "message": "ປະຕິເສດຕົວອັກສອນຕົວອັກສອນໃຫຍ່ໃນລະຫັດຜ່ານ" },
   "optionDesc_similarChars": { "message": "ລວມຕົວອັກສອນທີ່ຄ້າຍຄືກັນໃນລະຫັດຜ່ານ (s)" },
-  "optionDesc_strict": { "message": "ຮຽກຮ້ອງໃຫ້ມີຢ່າງໜ້ອຍໜຶ່ງຕົວອັກສອນຈາກແຕ່ລະຕົວອັກສອນທີ່ອະນຸຍາດໃນລະຫັດຜ່ານ" },
+  "optionDesc_unstrict": { "message": "ບໍ່ ຈໍາ ເປັນຕ້ອງມີຢ່າງ ຫນ້ອຍ ຫນຶ່ງ ຕົວອັກສອນຈາກແຕ່ລະຕົວອັກສອນທີ່ອະນຸຍາດໃນລະຫັດຜ່ານ (s)" },
   "optionDesc_entropy": { "message": "ການຄິດໄລ່/log ຄາດຄະເນ entropy" },
   "optionDesc_quiet": { "message": "ສະກັດກັ້ນການຕັດໄມ້ທັງໝົດ ຍົກເວັ້ນຂໍ້ຜິດພາດ" },
   "optionDesc_help": { "message": "ສະແດງໜ້າຈໍຊ່ວຍເຫຼືອ" },

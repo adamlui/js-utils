@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Ungavumeli oonobumba abancinci kwi-password(ii)" },
   "optionDesc_noUpper": { "message": "Ungavumeli oonobumba abakhulu kwi-password(ii)" },
   "optionDesc_similarChars": { "message": "Faka oonobumba abafanayo kwiphasiwedi" },
-  "optionDesc_strict": { "message": "Kufuneka ubuncinane unobumba omnye kunobumba ngamnye ovumelekileyo osetwe kwiphasiwedi(iiphasiwedi)" },
+  "optionDesc_unstrict": { "message": "Akufuneki ubuncinane unobumba omnye kunobumba ngamnye ovumelekileyo osetwe kwiphasiwedi(iiphasiwedi)" },
   "optionDesc_entropy": { "message": "Bala/urekhode uqikelelo lwe-entropy" },
   "optionDesc_quiet": { "message": "Cima konke ukungena ngaphandle kweempazamo" },
   "optionDesc_help": { "message": "Bonisa isikrini soncedo" },

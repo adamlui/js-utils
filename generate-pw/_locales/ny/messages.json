@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Sungunulani zilembo zazing 'ono mu mawu achinsinsi(s)" },
   "optionDesc_noUpper": { "message": "Sakanizani zilembo zapamwamba mu mawu achinsinsi(s)" },
   "optionDesc_similarChars": { "message": "Phatikizani zilembo zofanana mu mawu achinsinsi(s)" },
-  "optionDesc_strict": { "message": "Pemphani khalidwe limodzi kuchokera ku khalidwe lirilonse lololedwa lomwe limayikidwa mu mawu achinsinsi(s)" },
+  "optionDesc_unstrict": { "message": "Musati amafuna osachepera munthu mmodzi aliyense amaloledwa khalidwe anapereka achinsinsi(s)" },
   "optionDesc_entropy": { "message": "Werengani/log kuyerekezera entropy" },
   "optionDesc_quiet": { "message": "Kupondereza mitengo yonse kupatula zolakwika" },
   "optionDesc_help": { "message": "Onetsani zenera lothandizira" },

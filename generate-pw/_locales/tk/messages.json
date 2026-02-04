@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Şifre (lar) dakiçijik harplary goýuň" },
   "optionDesc_noUpper": { "message": "Şifre (lar) da uly harplary aýyr" },
   "optionDesc_similarChars": { "message": "Parol (lar) dameňzeş harplary goýuň" },
-  "optionDesc_strict": { "message": "Parol (lar) da goýlan her bir rugsatly harpdan iň az bir harp gerek" },
+  "optionDesc_unstrict": { "message": "Her bir harpdan iň az bir harp gerek däl" },
   "optionDesc_entropy": { "message": "Kalkülýotaryň/logyň hasaplanýan entropiýasy" },
   "optionDesc_quiet": { "message": "Ýalňyşlyklardan başga ähli ýalňyşlyklary ýok etmek" },
   "optionDesc_help": { "message": "Yardam ekrany görkez" },

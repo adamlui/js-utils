@@ -51,8 +51,8 @@ module.exports = {
                 ` -Y, --no-symbols            ${app.msgs.optionDesc_excludeSymbols}.`,
                 ` -L, --no-lowercase          ${app.msgs.optionDesc_noLower}.`,
                 ` -U, --no-uppercase          ${app.msgs.optionDesc_noUpper}.`,
-                ` -S, --similar-chars         ${app.msgs.optionDesc_similarChars}.`,
-                ` -s, --strict                ${app.msgs.optionDesc_strict}.`,
+                ` -s, --similar-chars         ${app.msgs.optionDesc_similarChars}.`,
+                ` -S, --unstrict              ${app.msgs.optionDesc_unstrict}.`,
                 ` -e, --entropy               ${app.msgs.optionDesc_entropy}.`,
                 ` -q, --quiet                 ${app.msgs.optionDesc_quiet}.`
             ],

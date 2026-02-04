@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "ʻAʻole ʻae i nā leka liʻiliʻi ma ka ʻōlelo huna" },
   "optionDesc_noUpper": { "message": "ʻAʻole ʻae i nā leka nui ma ka ʻōlelo huna" },
   "optionDesc_similarChars": { "message": "E hoʻokomo i nā huapalapala like i loko o nā ʻōlelo huna" },
-  "optionDesc_strict": { "message": "E koi i hoʻokahi huaʻōlelo mai kēlā me kēia ʻano huaʻōlelo i ʻae ʻia i loko o ka ʻōlelo huna" },
+  "optionDesc_unstrict": { "message": "Mai koi aku i hoʻokahi huapalapala mai kēlā me kēia hoʻonohonoho huapalapala i ʻae ʻia i loko o ka(nā) ʻōlelo huna" },
   "optionDesc_entropy": { "message": "E helu/e hoʻopaʻa inoa i ka entropy i manaʻo ʻia" },
   "optionDesc_quiet": { "message": "Kāohi i ka hoʻopaʻa inoa a pau koe nā hewa" },
   "optionDesc_help": { "message": "Hōʻike i ka pale kōkua" },

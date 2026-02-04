@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "No permitir letras minúsculas en la (s) contraseña(s)" },
   "optionDesc_noUpper": { "message": "No permitir letras mayúsculas en la (s) contraseña(s)" },
   "optionDesc_similarChars": { "message": "Incluir caracteres similares en la (s) contraseña(s)" },
-  "optionDesc_strict": { "message": "Requerir al menos un carácter de cada conjunto de caracteres permitido en la (s) contraseña(s)" },
+  "optionDesc_unstrict": { "message": "No requiera al menos un carácter de cada carácter permitido establecido en la (s) contraseña(s)" },
   "optionDesc_entropy": { "message": "Calcular/registrar la entropía estimada" },
   "optionDesc_quiet": { "message": "Suprimir todos los registros excepto los errores" },
   "optionDesc_help": { "message": "Mostrar pantalla de ayuda" },

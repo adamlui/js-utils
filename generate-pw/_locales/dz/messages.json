@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "འོག་གི་ཡིག་འབྲུ་ཚུ་ Password (s) ནང་སེལ་འཐུ་འབད།" },
   "optionDesc_noUpper": { "message": "Password (s) ནང་གི་Uppercase letters འདི་སེལ་འཐུ་འབད།" },
   "optionDesc_similarChars": { "message": "Password (s) ནང་འདྲ་མཉམ་གི་ཡིག་འབྲུ་ཚུ་བཙུགས་དགོ།" },
-  "optionDesc_strict": { "message": "ཁྱོད་ཀྱིས་ Password (s) ནང་བཀོད་ཡོད་པའི་ Password (s) ནང་བཀོད་ཡོད་པའི་ Password (s) ཚུ་ནང་ལས་ཉུང་ཤོས་ཅིག་ དགོཔ་ཨིན།" },
+  "optionDesc_unstrict": { "message": "ཁྱོད་ཀྱིས་ Password (s) ནང་བཀོད་ཡོད་པའི་ Password (s) ནང་བཀོད་ཡོད་པའི་ Password (s) ཚུ་ནང་ལས་ཉུང་ཤོས་ཅིག་མ་དགོ་" },
   "optionDesc_entropy": { "message": "Calculate/log estimated entropy" },
   "optionDesc_quiet": { "message": "འཛོལ་བ་མ་གཏོགས་ གཞན་ག་ནི་ཡང་མ་འབད།" },
   "optionDesc_help": { "message": "གྲོགས་རམ་གི་མཐོང་སྣོད་སྟོན་" },

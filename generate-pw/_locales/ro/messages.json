@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Nu permiteți litere mici în parolă(parole)" },
   "optionDesc_noUpper": { "message": "Nu permiteți scrierea cu majuscule în parolă(parole)" },
   "optionDesc_similarChars": { "message": "Include caractere similare în parole" },
-  "optionDesc_strict": { "message": "Necesită cel puțin un caracter din fiecare caracter permis setat în parole" },
+  "optionDesc_unstrict": { "message": "Nu necesită cel puțin un caracter din fiecare caracter permis setat în parole" },
   "optionDesc_entropy": { "message": "Calculați/înregistrați entropia estimată" },
   "optionDesc_quiet": { "message": "Suprimați toate înregistrările, cu excepția erorilor" },
   "optionDesc_help": { "message": "Afișați ecranul de ajutor" },

@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Zabranite mala slova u lozinkama" },
   "optionDesc_noUpper": { "message": "Zabranite velika slova u lozinkama" },
   "optionDesc_similarChars": { "message": "Uključite slične znakove u lozinke" },
-  "optionDesc_strict": { "message": "Potreban je najmanje jedan znak iz svakog dozvoljenog skupa znakova u lozinkama" },
+  "optionDesc_unstrict": { "message": "Ne zahtevajte najmanje jedan znak od svakog dozvoljenog znaka postavljenog u lozinkama" },
   "optionDesc_entropy": { "message": "Izračunajte/zabeležite procenjenu entropiju" },
   "optionDesc_quiet": { "message": "Obustavi svu evidenciju osim grešaka" },
   "optionDesc_help": { "message": "Prikažite ekran za pomoć" },

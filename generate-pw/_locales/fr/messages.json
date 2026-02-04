@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Interdire les lettres minuscules dans le (s) mot(s) de passe" },
   "optionDesc_noUpper": { "message": "Interdire les lettres majuscules dans le (s) mot(s) de passe" },
   "optionDesc_similarChars": { "message": "Inclure des caractères similaires dans le (s) mot(s) de passe" },
-  "optionDesc_strict": { "message": "Exiger au moins un caractère de chaque jeu de caractères autorisé dans le (s) mot(s) de passe" },
+  "optionDesc_unstrict": { "message": "Ne nécessite pas au moins un caractère de chaque jeu de caractères autorisé dans le (s) mot(s) de passe" },
   "optionDesc_entropy": { "message": "Calculer/enregistrer l'entropie estimée" },
   "optionDesc_quiet": { "message": "Supprimer tous les journaux sauf les erreurs" },
   "optionDesc_help": { "message": "Affichage de l’aide" },

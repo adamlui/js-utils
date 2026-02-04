@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Zakázat malá písmena v heslech" },
   "optionDesc_noUpper": { "message": "Zakázat velká písmena v heslech" },
   "optionDesc_similarChars": { "message": "Zahrnout podobné znaky do hesla(hesel)" },
-  "optionDesc_strict": { "message": "Vyžadovat alespoň jeden znak z každé povolené sady znaků v heslech" },
+  "optionDesc_unstrict": { "message": "Nevyžadovat alespoň jeden znak z každého povoleného znaku nastaveného v heslech" },
   "optionDesc_entropy": { "message": "Vypočítat/zaznamenat odhadovanou entropii" },
   "optionDesc_quiet": { "message": "Potlačit veškeré protokolování kromě chyb" },
   "optionDesc_help": { "message": "Zobrazit obrazovku nápovědy" },

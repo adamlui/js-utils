@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Di şîfre(an) de tîpên piçûk nehêlin" },
   "optionDesc_noUpper": { "message": "Di şîfre(an) de tîpên mezin nehêlin" },
   "optionDesc_similarChars": { "message": "Tîpên wekhev di şîfre(an) de bi kar bîne" },
-  "optionDesc_strict": { "message": "Ji her karakterek destûrkirî ya di şîfre(an) de herî kêm karakterek hewce bike" },
+  "optionDesc_unstrict": { "message": "Ji her komek karakterên destûrdayî di şîfre(an) de herî kêm yek karakter ne hewce bike" },
   "optionDesc_entropy": { "message": "Entropiya texmînkirî hesab bike/tomar bike" },
   "optionDesc_quiet": { "message": "Hemî têketinê ji bilî xeletiyan bişkînin" },
   "optionDesc_help": { "message": "Dîmendera alîkariyê nîşan bide" },

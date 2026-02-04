@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Avnokta smærri bókstavir í loyniorð(um)" },
   "optionDesc_noUpper": { "message": "Loyvi uppskriftir í loyniorð(um)" },
   "optionDesc_similarChars": { "message": "Skriva líknandi persónar í loyniorð(s)" },
-  "optionDesc_strict": { "message": "Tað krevur minst eitt karakter av hvørjum loyvdum karakter, sum er settur í loyniorð(um)" },
+  "optionDesc_unstrict": { "message": "Tað krevur ikki minst eitt karakter av hvørjum loyvum, sum er settur í loyniorð(um)" },
   "optionDesc_entropy": { "message": "Rokning/log mettur entropi" },
   "optionDesc_quiet": { "message": "Undirskriva allar innmeldingar uttan feil" },
   "optionDesc_help": { "message": "Vís hjálparskjá" },

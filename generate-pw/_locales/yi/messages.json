@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "ניט לאָזן קליין אותיות אין פּאַראָל (s)" },
   "optionDesc_noUpper": { "message": "ניט דערלויבן הויכע אותיות אין פּאַראָל (s)" },
   "optionDesc_similarChars": { "message": "אַרייננעמען ענלעכע אותיות אין פּאַראָל(ן)" },
-  "optionDesc_strict": { "message": "דאַרפן בייַ מינדסטער איין כאַראַקטער פון יעדער ערלויבט כאַראַקטער שטעלן אין פּאַראָל (s)" },
+  "optionDesc_unstrict": { "message": "נישט פארלאנגען לפחות איין אות פון יעדן ערלויבטן אות סעט אין פאסווארט(ן)" },
   "optionDesc_entropy": { "message": "רעכענען/לאָגירן געשאצטע ענטראָפּיע" },
   "optionDesc_quiet": { "message": "פאַרשטיקן אַלע לאָגינג אַחוץ ערראָרס" },
   "optionDesc_help": { "message": "ווייַז הילף פאַרשטעלן" },

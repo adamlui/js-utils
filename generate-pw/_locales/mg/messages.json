@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Disallow smallcase litera in password(s)" },
   "optionDesc_noUpper": { "message": "Mamafa ireo taratasy lehibe amin'ny tenimiafina(s)" },
   "optionDesc_similarChars": { "message": "Ampidiro ao amin'ny tenimiafinany marika mitovy" },
-  "optionDesc_strict": { "message": "Tsy maintsy endri-tsoratra iray farafahakeliny avy amin'ny endri-tsoratra azo ekena tsirairay faritana amin'ny tenimiafina" },
+  "optionDesc_unstrict": { "message": "Tsy mitaky endri-tsoratra iray farafahakeliny avy amin'ny marika ekena tsirairay faritana amin'ny tenimiafina" },
   "optionDesc_entropy": { "message": "Kajy/vatan-kazo vinavinaina entropy" },
   "optionDesc_quiet": { "message": "Hanafoana ny logging rehetra afa-tsy fahadisoana" },
   "optionDesc_help": { "message": "Asehoy ny efijerin'ny toro-làlana" },

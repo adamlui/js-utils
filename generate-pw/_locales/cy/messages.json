@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Analluogi llythrennau bach yn y cyfrinair(nau)" },
   "optionDesc_noUpper": { "message": "Analluogi prif lythrennau mewn cyfrinair(iau)" },
   "optionDesc_similarChars": { "message": "Cynnwys nodau tebyg yn y cyfrinair(nau)" },
-  "optionDesc_strict": { "message": "Ei gwneud yn ofynnol i o leiaf un nod o bob nod a ganiateir gael ei osod yn y cyfrinair(iau)" },
+  "optionDesc_unstrict": { "message": "Peidiwch â gofyn am o leiaf un nod o bob nod a ganiateir a osodir mewn cyfrinair(au)" },
   "optionDesc_entropy": { "message": "Cyfrifo/cofnodi entropi amcangyfrifedig" },
   "optionDesc_quiet": { "message": "Atal pob cofnod ac eithrio gwallau" },
   "optionDesc_help": { "message": "Dangos y sgrin gymorth" },

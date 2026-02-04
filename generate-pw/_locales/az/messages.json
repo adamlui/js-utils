@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Kiçik hərfləri parol(lar) da boşaldın" },
   "optionDesc_noUpper": { "message": "Böyük hərfləri parol(lar) da boşaldın" },
   "optionDesc_similarChars": { "message": "Oxşar simvolları parol(lar) a daxil edin" },
-  "optionDesc_strict": { "message": "Parol(lar) da göstərilən hər icazə verilən simvoldan ən azı bir simvol tələb edin" },
+  "optionDesc_unstrict": { "message": "Parol(lar) da göstərilən hər icazə verilən simvoldan ən azı bir simvol tələb etməyin" },
   "optionDesc_entropy": { "message": "Təxmini entropiyanı hesablayın/daxil olun" },
   "optionDesc_quiet": { "message": "Xətalardan başqa bütün girişləri bağlayın" },
   "optionDesc_help": { "message": "Yardım ekranını göstər" },

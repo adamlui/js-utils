@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Kleinbuchstaben in Passwörtern nicht zulassen" },
   "optionDesc_noUpper": { "message": "Großbuchstaben in Kennwort(en) nicht zulassen" },
   "optionDesc_similarChars": { "message": "Fügen Sie ähnliche Zeichen in das/die Passwort(e) ein" },
-  "optionDesc_strict": { "message": "Erfordert mindestens ein Zeichen aus jedem erlaubten Zeichensatz in Passwort(en)" },
+  "optionDesc_unstrict": { "message": "Benötigen Sie nicht mindestens ein Zeichen aus jedem erlaubten Zeichensatz in Kennwort(en)" },
   "optionDesc_entropy": { "message": "Geschätzte Entropie berechnen/protokollieren" },
   "optionDesc_quiet": { "message": "Alle Protokolle mit Ausnahme von Fehlern unterdrücken" },
   "optionDesc_help": { "message": "Hilfebildschirm anzeigen" },

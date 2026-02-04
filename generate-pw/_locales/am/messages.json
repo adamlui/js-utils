@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "የይለፍ ቃል(ዎች) ውስጥ ዝቅተኛ ፊደላትን ያስወግዱ" },
   "optionDesc_noUpper": { "message": "የይለፍ ቃል(ዎች) ውስጥ የላይኛው ፊደላትን ያስወግዱ" },
   "optionDesc_similarChars": { "message": "የይለፍ ቃል(ዎች) ውስጥ ተመሳሳይ ቁምፊዎች ያካትቱ" },
-  "optionDesc_strict": { "message": "የይለፍ ቃል(ቶች) ውስጥ ከተቀመጠው እያንዳንዱ የተፈቀደ ቁምፊ ቢያንስ አንድ ቁምፊ ይጠይቁ" },
+  "optionDesc_unstrict": { "message": "የይለፍ ቃል(ዎች) ውስጥ ከተቀመጠው እያንዳንዱ የተፈቀደ ቁምፊ ቢያንስ አንድ ቁምፊ አይጠይቁ" },
   "optionDesc_entropy": { "message": "ማስላት/ሎግ ግምታዊ entropy" },
   "optionDesc_quiet": { "message": "ከስህተቶች በስተቀር ሁሉንም የመግቢያዎች መሙላት" },
   "optionDesc_help": { "message": "የእገዛ ማያ ገጽ አሳይ" },

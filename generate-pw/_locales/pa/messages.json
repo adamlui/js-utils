@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "ਪਾਸਵਰਡ ਵਿੱਚ ਛੋਟੇ ਅੱਖਰ ਮਨਜ਼ੂਰ ਨਾ ਕਰੋ" },
   "optionDesc_noUpper": { "message": "ਪਾਸਵਰਡ ਵਿੱਚ ਅੱਪਰਕੇਜ਼ ਅੱਖਰ ਮਨਜ਼ੂਰ ਨਹੀਂ" },
   "optionDesc_similarChars": { "message": "ਪਾਸਵਰਡ ਵਿੱਚ ਮਿਲਦੇ-ਜੁਲਦੇ ਅੱਖਰ ਸ਼ਾਮਲ" },
-  "optionDesc_strict": { "message": "ਪਾਸਵਰਡ ਵਿੱਚ ਹਰੇਕ ਮਨਜ਼ੂਰ ਅੱਖਰ ਸੈੱਟ ਤੋਂ ਘੱਟੋ-ਘੱਟ ਇੱਕ ਅੱਖਰ ਦੀ ਲੋੜ ਹੈ" },
+  "optionDesc_unstrict": { "message": "ਪਾਸਵਰਡ ਵਿੱਚ ਹਰੇਕ ਮਨਜ਼ੂਰ ਅੱਖਰ ਸੈੱਟ ਤੋਂ ਘੱਟੋ-ਘੱਟ ਇੱਕ ਅੱਖਰ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ" },
   "optionDesc_entropy": { "message": "ਗਣਨਾ/ਲਾਗ ਅਨੁਮਾਨਿਤ ਐਨਟ੍ਰੌਪੀ" },
   "optionDesc_quiet": { "message": "ਗਲਤੀਆਂ ਨੂੰ ਛੱਡ ਕੇ ਸਭ ਲਾਗਿੰਗ ਦਬਾਓ" },
   "optionDesc_help": { "message": "ਮੱਦਦ ਸਕਰੀਨ ਵੇਖੋ" },

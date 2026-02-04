@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Usiruhusu herufi ndogo katika nenosiri" },
   "optionDesc_noUpper": { "message": "Usiruhusu herufi kubwa katika nenosiri" },
   "optionDesc_similarChars": { "message": "Jumuisha herufi zinazofanana katika nenosiri" },
-  "optionDesc_strict": { "message": "Inahitaji angalau herufi moja kutoka kwa kila herufi inayoruhusiwa iliyowekwa kwenye nenosiri" },
+  "optionDesc_unstrict": { "message": "Usihitaji angalau herufi moja kutoka kwa kila herufi inayoruhusiwa iliyowekwa kwenye nenosiri" },
   "optionDesc_entropy": { "message": "Hesabu/kumbukumbu ya makadirio ya entropy" },
   "optionDesc_quiet": { "message": "Zima ukataji wote wa magogo isipokuwa hitilafu" },
   "optionDesc_help": { "message": "Onyesha skrini ya usaidizi" },

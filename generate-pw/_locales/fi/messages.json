@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Kiellä pienet kirjaimet salasanoissa" },
   "optionDesc_noUpper": { "message": "Estä isot kirjaimet salasanoissa" },
   "optionDesc_similarChars": { "message": "Sisällytä samanlaiset merkit salasanoihin" },
-  "optionDesc_strict": { "message": "Vaadi vähintään yksi merkki jokaisesta salasanoissa asetetusta sallitusta merkistä" },
+  "optionDesc_unstrict": { "message": "Älä vaadi vähintään yhtä merkkiä jokaisesta salasanoissa asetetusta sallitusta merkistä" },
   "optionDesc_entropy": { "message": "Laske/kirjaa arvioitu entropia" },
   "optionDesc_quiet": { "message": "Poista kaikki kirjaukset paitsi virheet" },
   "optionDesc_help": { "message": "Näytä ohjenäyttö" },

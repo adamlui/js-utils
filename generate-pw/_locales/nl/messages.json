@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Kleine letters in wachtwoord(en) niet toestaan" },
   "optionDesc_noUpper": { "message": "Hoofdletters in wachtwoord(en) niet toestaan" },
   "optionDesc_similarChars": { "message": "Vergelijkbare tekens opnemen in wachtwoord(en)" },
-  "optionDesc_strict": { "message": "Vereisen ten minste één teken van elke toegestane tekenset in wachtwoord(en)" },
+  "optionDesc_unstrict": { "message": "Vereist niet ten minste één teken van elke toegestane tekenset in wachtwoord(en)" },
   "optionDesc_entropy": { "message": "Bereken/log geschatte entropie" },
   "optionDesc_quiet": { "message": "Alle logboekregistraties onderdrukken, behalve fouten" },
   "optionDesc_help": { "message": "Hulpscherm weergeven" },

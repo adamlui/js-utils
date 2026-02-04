@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Dzivisa mabhii maduku mu password(s)" },
   "optionDesc_noUpper": { "message": "Dzivisa mabhii makuru mu password(s)" },
   "optionDesc_similarChars": { "message": "Sanganisira zvakafanana mavara ari pasiwedhi(s)" },
-  "optionDesc_strict": { "message": "Zvinoda kanenge unhu mumwe nomumwe anobvumirwa unhu wakaiswa pasiwedhi(s)" },
+  "optionDesc_unstrict": { "message": "Regai zvinoda kanenge unhu mumwe nomumwe anobvumirwa unhu wakaiswa pasiwedhi(s)" },
   "optionDesc_entropy": { "message": "Kukarukureta/danda inofungidzirwa entropy" },
   "optionDesc_quiet": { "message": "Dzvinyirira kutema matanda ese kunze kwekukanganisa" },
   "optionDesc_help": { "message": "Ratidza chidzitiro chekubatsira" },

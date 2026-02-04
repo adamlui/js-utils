@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Faʻasaʻolotoina lalo o mataitusi i le upu faataga(s)" },
   "optionDesc_noUpper": { "message": "Faʻaumatia tusi pito i luga i le upu faataga(s)" },
   "optionDesc_similarChars": { "message": "Faʻaaofia tutusa mataitusi i upu faataga(s)" },
-  "optionDesc_strict": { "message": "Manaomia le itiiti ifo ma le tasi uiga mai tagata uma faatagaina ua faatulaga i le upu faataga(s)" },
+  "optionDesc_unstrict": { "message": "Aua le manaomia le itiiti ifo ma le tasi uiga mai tagata uma faatagaina ua faatulaga i le upu faataga(s)" },
   "optionDesc_entropy": { "message": "Fuafuaina/log fuafuaina entropy" },
   "optionDesc_quiet": { "message": "Suppress logging uma vagana ai mea sese" },
   "optionDesc_help": { "message": "Faaali atu le lau fesoasoani" },

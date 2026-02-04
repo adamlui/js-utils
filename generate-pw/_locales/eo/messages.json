@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Nuligi minusklajn literojn en pasvorto(j)" },
   "optionDesc_noUpper": { "message": "Nuligi majusklajn literojn en pasvorto(j)" },
   "optionDesc_similarChars": { "message": "Inkludi similajn signojn en pasvorto(j)" },
-  "optionDesc_strict": { "message": "Postuli almenaŭ unu signon de ĉiu permesita signaro en pasvorto(j)" },
+  "optionDesc_unstrict": { "message": "Ne postuli almenaŭ unu signon de ĉiu permesita signaro en pasvorto(j)" },
   "optionDesc_entropy": { "message": "Kalkuli/registradi laŭtaksan entropion" },
   "optionDesc_quiet": { "message": "Subpremi ĉiujn registradojn krom eraroj" },
   "optionDesc_help": { "message": "Montri helpekranon" },

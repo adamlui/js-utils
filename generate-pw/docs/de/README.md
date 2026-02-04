@@ -190,7 +190,7 @@ console.log(striktPW) // beispielausgabe: 'a!c2ef'
 
 **💡 Hinweis:** Wenn kein Array `erfZeichentypen` übergeben wird, sind alle verfügbaren Typen erforderlich.
 
-Verfügbare `erfZeichentypen` sind: `['number', 'symbol', 'lower', 'upper']`
+Verfügbare `erfZeichentypen` sind: `['numbers', 'symbols', 'lower', 'upper']`
 
 Verfügbare Optionen (als Objekteigenschaften übergeben):
 
@@ -254,7 +254,7 @@ Name                  | Geben Sie       | ein Beschreibung                      
 `lowercase`           | Boolescher Wert | Erlauben Sie Kleinbuchstaben in Passwörtern.                                      | `true`
 `uppercase`           | Boolescher Wert | Erlauben Sie Großbuchstaben in Passwörtern.                                       | `true`
 `similarChars`        | Boolescher Wert | Verwenden Sie ähnliche Zeichen (z. B. o, 0, O, i, l, 1, |) in den Passwörtern.    | `false`
-`strict`              | Boolescher Wert | Erfordern mindestens ein Zeichen aus jedem zulässigen Zeichensatz in Passwörtern. | `false`
+`strict`              | Boolescher Wert | Erfordern mindestens ein Zeichen aus jedem zulässigen Zeichensatz in Passwörtern. | `true`
 `entropy`             | Boolescher Wert | Berechnen/protokollieren Sie die geschätzte Entropie.                             | `false`
 
 ##### _*Nur verfügbar in [`generatePassword([optionen])`](#generatepasswordoptionen), da [`generatePasswords(qty[, optionen])`](#generatepasswordsqty-optionen) ein `qty`-Argument annimmt_
@@ -293,8 +293,8 @@ Boolesche Optionen:
  -Y, --no-symbols            Verwenden Sie keine Sonderzeichen in den Passwörtern.
  -L, --no-lowercase          Kleinbuchstaben in Passwörtern nicht zulassen.
  -U, --no-uppercase          Großbuchstaben in Passwörtern nicht zulassen.
- -r, --similar-chars         Verwenden Sie ähnliche Zeichen in den Passwörtern.
- -s, --strict                Erfordern mindestens ein Zeichen aus jedem zulässigen Zeichensatz in Passwörtern.
+ -s, --similar-chars         Verwenden Sie ähnliche Zeichen in den Passwörtern.
+ -S, --unstrict              Es ist nicht erforderlich, dass Passwörter mindestens ein Zeichen aus jedem zulässigen Zeichensatz enthalten.
  -e, --entropy               Berechnen/protokollieren Sie die geschätzte Entropie.
  -q, --quiet                 Unterdrücken Sie alle Protokolle außer Fehlern.
 
@@ -324,7 +324,7 @@ export default {
     excludeLowerChars: false,   // Sonderzeichen in Passwörtern sind nicht erlaubt
     excludeUpperChars: false,   // Großbuchstaben in den Passwörtern ausschließen
     similarChars: false,        // Verwenden Sie ähnliche Zeichen in den Passwörtern
-    strictMode: false,          // Mindestens ein Zeichen aus jedem erlaubten Zeichensatz in den Passwörtern erforderlich
+    unstrict: false,            // Es ist nicht erforderlich, dass Passwörter mindestens ein Zeichen aus jedem zulässigen Zeichensatz enthalten
     entropy: false,             // Geschätzte Entropie berechnen/protokollieren
     quietMode: false            // Alle Protokollmeldungen außer Fehlern unterdrücken
 }

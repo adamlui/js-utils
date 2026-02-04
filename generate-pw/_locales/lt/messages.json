@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Neleisti slaptažodžio(-ių) mažųjų raidžių" },
   "optionDesc_noUpper": { "message": "Neleisti slaptažodžio(-ių) didžiųjų raidžių" },
   "optionDesc_similarChars": { "message": "Įtraukite panašius simbolius į slaptažodį(-us)" },
-  "optionDesc_strict": { "message": "Reikalauti bent vieno simbolio iš kiekvieno leidžiamo simbolių rinkinio slaptažodyje(-iuose)" },
+  "optionDesc_unstrict": { "message": "Nereikalaukite bent vieno simbolio iš kiekvieno leidžiamo simbolių rinkinio slaptažodyje(-iuose)" },
   "optionDesc_entropy": { "message": "Apskaičiuoti/registruoti apskaičiuotąją entropiją" },
   "optionDesc_quiet": { "message": "Slėpti visus registravimus, išskyrus klaidas" },
   "optionDesc_help": { "message": "Rodyti pagalbos ekraną" },

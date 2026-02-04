@@ -41,7 +41,7 @@
         lowercase: !app.config.excludeLowerChars,
         uppercase: !app.config.excludeUpperChars,
         similarChars: app.config.similarChars,
-        strict: app.config.strictMode,
+        strict: !app.config.unstrict,
         entropy: app.config.entropy,
         verbose: !app.config.quietMode
     }

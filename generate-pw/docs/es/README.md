@@ -254,7 +254,7 @@ Nombre                | Tipo     | Descripción                                 
 `lowercase`           | Booleano | Permitir letras minúsculas en la(s) contraseña(s).                                           | `true`
 `uppercase`           | Booleano | Permitir letras mayúsculas en la(s) contraseña(s).                                           | `true`
 `similarChars`        | Booleano | Incluya caracteres similares (por ejemplo, o, 0, O, i, l, 1, |) en la(s) contraseña(s).      | `false`
-`strict`              | Booleano | Requiere al menos un carácter de cada carácter permitido establecido en la(s) contraseña(s). | `false`
+`strict`              | Booleano | Requiere al menos un carácter de cada carácter permitido establecido en la(s) contraseña(s). | `true`
 `entropy`             | Booleano | Calcular/registrar la entropía estimada.                                                     | `false`
 
 ##### _*Solo disponible en [`generatePassword([opciones])`](#generatepasswordopciones) ya que [`generatePasswords(qty[, opciones])`](#generatepasswordsqty-opciones) toma un argumento `qty`_
@@ -293,8 +293,8 @@ Opciones booleanas:
  -Y, --no-symbols            PermitNo permita símbolos en la(s) contraseña(s).
  -L, --no-lowercase          No permitir letras minúsculas en la(s) contraseña(s).
  -U, --no-uppercase          No permitir letras mayúsculas en la(s) contraseña(s).
- -r, --similar-chars         Incluya caracteres similares en la(s) contraseña(s).
- -s, --strict                Requiere al menos un carácter de cada carácter permitido establecido en la(s) contraseña(s).
+ -s, --similar-chars         Incluya caracteres similares en la(s) contraseña(s).
+ -S, --unstrict              No se requiere al menos un carácter de cada conjunto de caracteres permitidos en la(s) contraseña(s).
  -e, --entropy               Calcular/registrar la entropía estimada.
  -q, --quiet                 Suprime todos los registros excepto los errores.
 
@@ -322,7 +322,7 @@ export default {
     excludeLowerChars: false,   // no permitir letras minúsculas en la(s) contraseña(s)
     excludeUpperChars: false,   // no permitir letras mayúsculas en la(s) contraseña(s)
     similarChars: false,        // incluya caracteres similares en la(s) contraseña(s)
-    strictMode: false,          // requerir al menos un carácter de cada conjunto de caracteres permitido en la(s) contraseña(s)
+    unstrict: false,            // no se requiere un carácter o más de cada conjunto de caracteres permitidos en la(s) contraseña(s)
     entropy: false,             // calcular/registrar la entropía estimada
     quietMode: false            // suprimir todos los registros excepto los errores
 }

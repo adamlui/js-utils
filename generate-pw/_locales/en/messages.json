@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Disallow lowercase letters in password(s)" },
   "optionDesc_noUpper": { "message": "Disallow uppercase letters in password(s)" },
   "optionDesc_similarChars": { "message": "Include similar characters in password(s)" },
-  "optionDesc_strict": { "message": "Require at least one character from each allowed character set in password(s)" },
+  "optionDesc_unstrict": { "message": "Don't require at least one character from each allowed character set in password(s)" },
   "optionDesc_entropy": { "message": "Calculate/log estimated entropy" },
   "optionDesc_quiet": { "message": "Suppress all logging except errors" },
   "optionDesc_help": { "message": "Display help screen" },

@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Ontken kleinletters in wagwoord(s)" },
   "optionDesc_noUpper": { "message": "Verlaat hoofletters in wagwoord(s)" },
   "optionDesc_similarChars": { "message": "Sluit soortgelyke karakters in wagwoord(s) in" },
-  "optionDesc_strict": { "message": "Vereis ten minste een karakter van elke toegelate karakter wat in wagwoord(s) gestel is" },
+  "optionDesc_unstrict": { "message": "Vereis nie ten minste een karakter van elke toegelate karakter wat in wagwoord(s) gestel is nie" },
   "optionDesc_entropy": { "message": "Bereken/log beraamde entropie" },
   "optionDesc_quiet": { "message": "Onderdruk alle aanmelding behalwe foute" },
   "optionDesc_help": { "message": "Vertoon hulp skerm" },

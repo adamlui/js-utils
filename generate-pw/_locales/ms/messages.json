@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Jangan benarkan huruf kecil dalam kata laluan" },
   "optionDesc_noUpper": { "message": "Tidak membenarkan huruf besar dalam kata laluan" },
   "optionDesc_similarChars": { "message": "Sertakan aksara yang serupa dalam kata laluan" },
-  "optionDesc_strict": { "message": "Memerlukan sekurang-kurangnya satu aksara daripada setiap set aksara yang dibenarkan dalam kata laluan" },
+  "optionDesc_unstrict": { "message": "Tidak memerlukan sekurang-kurangnya satu aksara daripada setiap set aksara yang dibenarkan dalam kata laluan" },
   "optionDesc_entropy": { "message": "Kira/log anggaran entropi" },
   "optionDesc_quiet": { "message": "Sekat semua pembalakan kecuali ralat" },
   "optionDesc_help": { "message": "Papar skrin bantuan" },

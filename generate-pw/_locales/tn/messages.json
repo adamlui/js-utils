@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Go se letle ditlhaka tse dinnye mo sephuthelwaneng (di)" },
   "optionDesc_noUpper": { "message": "Go se letlelele ditlhaka tse dikgolo mo sephuthelwaneng (di)" },
   "optionDesc_similarChars": { "message": "Go akaretsa ditlhaka tse di tshwanang mo sephuthelwaneng (di)" },
-  "optionDesc_strict": { "message": "O tlhoka bobotlana sekwalwa se le sengwe go tswa mo sekwalelong sengwe le sengwe se se letleletsweng se se tlhomilweng mo khunololeng (di)" },
+  "optionDesc_unstrict": { "message": "Ga ke batle bobotlana tlhaka e le nngwe go tswa mo tlhakeng nngwe le nngwe e e letleletsweng e e leng mo sephuthelwaneng (di)" },
   "optionDesc_entropy": { "message": "Calculate/log estimated entropy" },
   "optionDesc_quiet": { "message": "Go emisa dikgogo tsotlhe kwantle ga diphoso" },
   "optionDesc_help": { "message": "Bontsha sekerini sa thuso" },

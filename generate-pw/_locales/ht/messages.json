@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Diminye lèt miniskil nan modpas(yo)" },
   "optionDesc_noUpper": { "message": "Retire lèt majiskil nan modpas(yo)" },
   "optionDesc_similarChars": { "message": "Mete karaktè menm jan an nan modpas(yo)" },
-  "optionDesc_strict": { "message": "Mande omwen yon karaktè nan chak karaktè pèmèt mete nan modpas(yo)" },
+  "optionDesc_unstrict": { "message": "Pa mande pou omwen yon karaktè nan chak karaktè pèmèt mete nan modpas(yo)" },
   "optionDesc_entropy": { "message": "Kalkile/Log estime entropi" },
   "optionDesc_quiet": { "message": "Siprime tout antre eksepte erè" },
   "optionDesc_help": { "message": "Montre ekran èd" },

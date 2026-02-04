@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "A yeke wara a-letteré so ayeke na yâ ti pasalet (s)" },
   "optionDesc_noUpper": { "message": "Gbu li ti mo na yâ ti atënë ti pasa (s)" },
   "optionDesc_similarChars": { "message": "A yeke wara a-image so ayeke tongana ti so na yâ ti mot clé (s)" },
-  "optionDesc_strict": { "message": "A hunda ti tene a sara tënë ti mbeni tënë so ayeke na yâ ti mbeti ti yanga ti kodoro ni" },
+  "optionDesc_unstrict": { "message": "A hunda pëpe ti tene a zia na yâ ti mot clé (s) mbeni kete tënë ti yanga ti kodoro oko oko" },
   "optionDesc_entropy": { "message": "A yeke bâ so a yeke kota ye ti tene azo ti Israël asara ye alingbi na andia ti ala." },
   "optionDesc_quiet": { "message": "A yeke kanga lege na azo kue ti sara ye na lege ni ape me a yeke gi na lege ni" },
   "optionDesc_help": { "message": "A yeke mû maboko na azo ti bâ ndo na ndo ti écr" },

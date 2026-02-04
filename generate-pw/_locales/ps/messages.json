@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "کوچني توري په پاسورډونو کې نه ورکول" },
   "optionDesc_noUpper": { "message": "په پاسورډونو کې لوی توري مه پریږدي" },
   "optionDesc_similarChars": { "message": "په پاسورډونو کې ورته کرکټرونه شامل کړئ" },
-  "optionDesc_strict": { "message": "په پاسورډ(ونو) کې د هر مجاز کرکټر ترتیب څخه لږترلږه یو کرکټر ته اړتیا لري" },
+  "optionDesc_unstrict": { "message": "په پاسورډ(ونو) کې د هر مجاز کرکټر ترتیب څخه لږترلږه یو کرکټر ته اړتیا نلري" },
   "optionDesc_entropy": { "message": "د ننوتلو اټکل شوی محاسبه/لاګ" },
   "optionDesc_quiet": { "message": "د تېروتنو پرته ټول ننوتل (logging) پټ کړئ" },
   "optionDesc_help": { "message": "د مرستې سکرین ښکاره کړئ" },

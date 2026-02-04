@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Ez baimendu minuskulak pasahitzetan" },
   "optionDesc_noUpper": { "message": "Ez baimendu maiuskulak pasahitzetan" },
   "optionDesc_similarChars": { "message": "Sartu antzeko karaktereak pasahitzetan" },
-  "optionDesc_strict": { "message": "Eskatu pasahitzetan baimendutako karaktere multzo bakoitzeko karaktere bat gutxienez" },
+  "optionDesc_unstrict": { "message": "Ez eskatu gutxienez karaktere multzo bakoitzetik karaktere bat pasahitzetan" },
   "optionDesc_entropy": { "message": "Kalkulatu/erregistratu estimatutako entropia" },
   "optionDesc_quiet": { "message": "Ezabatu erregistro guztiak erroreak izan ezik" },
   "optionDesc_help": { "message": "Bistaratu laguntza-pantaila" },

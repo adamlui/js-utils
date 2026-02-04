@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Whakakorea nga reta iti i roto i te kupuhipa(s)" },
   "optionDesc_noUpper": { "message": "Whakakorea nga reta o runga i te kupuhipa(s)" },
   "optionDesc_similarChars": { "message": "Whakauruhia nga tohu rite ki te kupuhipa(s)" },
-  "optionDesc_strict": { "message": "E hiahia ana koe i te iti rawa kotahi pūāhua i ia pūāhua whakaaetia whakaturia i roto i te kupuhipa(s)" },
+  "optionDesc_unstrict": { "message": "Kaua e hiahia i te iti rawa kotahi pūāhua i ia pūāhua whakaaetia whakaturia i roto i te kupuhipa(s)" },
   "optionDesc_entropy": { "message": "Te tātai/log tātai entropy" },
   "optionDesc_quiet": { "message": "Tautoko i te logging katoa engari hapa" },
   "optionDesc_help": { "message": "Whakaatuhia te mata awhina" },

@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Keela parooli(de) s väiketähed" },
   "optionDesc_noUpper": { "message": "Keela parooli(de) s suurtähed" },
   "optionDesc_similarChars": { "message": "Kaasa sarnased tähemärgid parooli(de) sse" },
-  "optionDesc_strict": { "message": "Nõuab vähemalt ühte tähemärki igast paroolis(paroolides) määratud lubatud tähemärgist" },
+  "optionDesc_unstrict": { "message": "Ei nõua vähemalt ühte tähemärki igast paroolis(paroolides) määratud lubatud tähemärgist" },
   "optionDesc_entropy": { "message": "Arvuta/logi hinnanguline entroopia" },
   "optionDesc_quiet": { "message": "Tühista kogu logimine, välja arvatud vead" },
   "optionDesc_help": { "message": "Abi ekraani kuvamine" },

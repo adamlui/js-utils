@@ -190,7 +190,7 @@ console.log(strictPW) // sample output: 'a!c2ef'
 
 **💡 Note:** If no `requiredCharTypes` array is passed, all available types will be required.
 
-Available `requiredCharTypes` are: `['number', 'symbol', 'lower', 'upper']`
+Available `requiredCharTypes` are: `['numbers', 'symbols', 'lower', 'upper']`
 
 Available options (passed as object properties):
 
@@ -254,7 +254,7 @@ Name                  | Type    | Description                                   
 `lowercase`           | Boolean | Allow lowercase letters in password(s).                                        | `true`
 `uppercase`           | Boolean | Allow uppercase letters in password(s).                                        | `true`
 `similarChars`        | Boolean | Include similar characters (e.g. o,0,O,i,l,1,\|) in password(s).               | `false`
-`strict`              | Boolean | Require at least one character from each allowed character set in password(s). | `false`
+`strict`              | Boolean | Require at least one character from each allowed character set in password(s). | `true`
 `entropy`             | Boolean | Calculate/log estimated entropy.                                               | `false`
 
 ##### _*Only available in [`generatePassword([options])`](#generatepasswordoptions) since [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) takes a `qty` argument_
@@ -294,8 +294,8 @@ Boolean options:
  -L, --no-lowercase          Disallow lowercase letters in password(s).
  -U, --no-uppercase          Disallow uppercase letters in password(s).
  -S, --similar-chars         Include similar characters in password(s).
- -s, --strict                Require at least one character from each
-                             allowed character set in password(s).
+ -S, --unstrict              Don't require at least one character from
+                             each allowed character set in password(s).
  -e, --entropy               Calculate/log estimated entropy.
  -q, --quiet                 Suppress all logging except errors.
 
@@ -325,7 +325,7 @@ export default {
     excludeLowerChars: false,   // disallow lowercase letters in password(s)
     excludeUpperChars: false,   // disallow uppercase letters in password(s)
     similarChars: false,        // include similar chars in password(s)
-    strictMode: false,          // require 1+ char from each allowed charset in password(s)
+    unstrict: false,            // don't require 1+ char from each allowed charset in password(s)
     entropy: false,             // calculate/log estimated entropy
     quietMode: false            // suppress all logging except errors
 }

@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Nie zezwalaj na małe litery w haśle(ach)" },
   "optionDesc_noUpper": { "message": "Nie zezwalaj na wielkie litery w haśle(ach)" },
   "optionDesc_similarChars": { "message": "Uwzględnij podobne znaki w haśle(ach)" },
-  "optionDesc_strict": { "message": "Wymagaj co najmniej jednego znaku z każdego dozwolonego zestawu znaków w haśle(ach)" },
+  "optionDesc_unstrict": { "message": "Nie wymagaj co najmniej jednego znaku z każdego dozwolonego zestawu znaków w haśle(ach)" },
   "optionDesc_entropy": { "message": "Oblicz/zarejestruj szacunkową entropię" },
   "optionDesc_quiet": { "message": "Wyłącz wszystkie rejestrowanie z wyjątkiem błędów" },
   "optionDesc_help": { "message": "Wyświetl ekran pomocy" },

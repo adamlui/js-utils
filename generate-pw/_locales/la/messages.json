@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Duplicare infarcta in password(s)" },
   "optionDesc_noUpper": { "message": "Duplicare uppercase literaes in password(s)" },
   "optionDesc_similarChars": { "message": "Similique similiter in password(s)" },
-  "optionDesc_strict": { "message": "Le parva un una characteris de per per perficit characterum set in password(s)" },
+  "optionDesc_unstrict": { "message": "Nulla necessitate least uno uno characteris per per per peroribus set in password(s)" },
   "optionDesc_entropy": { "message": "Calculare/log اټکل indropy" },
   "optionDesc_quiet": { "message": "Exemplar omnes logiciendi except error" },
   "optionDesc_help": { "message": "Pagina Auxilio" },

@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Ekki leyfa lágstafi í lykilorðieða -orðum" },
   "optionDesc_noUpper": { "message": "Ekki leyfa hástafi í lykilorðieða -orðum" },
   "optionDesc_similarChars": { "message": "Vertu með svipaða stafi í lykilorðieða -orðum" },
-  "optionDesc_strict": { "message": "Krefjast að minnsta kosti eins stafs úr hverjum leyfðum staf sem stilltur er í lykilorði eða -orðum" },
+  "optionDesc_unstrict": { "message": "Ekki krefjast að minnsta kosti eins stafs úr hverjum leyfðum staf sem stilltur er í lykilorði eða -orðum" },
   "optionDesc_entropy": { "message": "Reikna/log áætlað entropy" },
   "optionDesc_quiet": { "message": "Slökkva á öllum innskráningum nema villum" },
   "optionDesc_help": { "message": "Birta hjálparskjá" },

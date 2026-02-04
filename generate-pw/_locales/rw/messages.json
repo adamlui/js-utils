@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Emera inyuguti nto mu ijambo ryibanga" },
   "optionDesc_noUpper": { "message": "Emera inyuguti nkuru mu ijambo ryibanga" },
   "optionDesc_similarChars": { "message": "Inyuguti in Ijambobanga(S)" },
-  "optionDesc_strict": { "message": "Saba byibuze inyuguti imwe kuri buri nyuguti yemerewe gushyirwaho ijambo ryibanga" },
+  "optionDesc_unstrict": { "message": "Ntukeneye nibura inyuguti imwe kuva kuri buri nyuguti ishyizweho muri ijambobanga(S)" },
   "optionDesc_entropy": { "message": "/LOG Byagereranyijwe" },
   "optionDesc_quiet": { "message": "Kuraho ibiti byose usibye amakosa" },
   "optionDesc_help": { "message": "Erekana ubufasha bwa ecran" },

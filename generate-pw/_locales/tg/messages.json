@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Рад кардани ҳарфи ночиз дар гузарвожа(ҳо)" },
   "optionDesc_noUpper": { "message": "Рад кардани ҳарфи болоӣ дар гузарвожа(ҳо)" },
   "optionDesc_similarChars": { "message": "Дохил кардани аломатҳои шабеҳ дар гузарвожа(ҳо)" },
-  "optionDesc_strict": { "message": "Kinakailangan ng hindi bababa sa isang character mula sa bawat pinapayagang character na set sa password(mga)" },
+  "optionDesc_unstrict": { "message": "Hindi kailangan ng hindi bababa sa isang character mula sa bawat pinapayagang character na set sa password(mga)" },
   "optionDesc_entropy": { "message": "Ҳисоб кардани антропияи тахминӣ/сабти рӯйдодҳо" },
   "optionDesc_quiet": { "message": "Ғайри хатогӣ ҳамаи қайдкуниҳоро пахш кунед" },
   "optionDesc_help": { "message": "Намоиши экрани кӯмак" },

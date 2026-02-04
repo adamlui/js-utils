@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Lista firme (Firme) na Password(s)" },
   "optionDesc_noUpper": { "message": "Lista firme \"Firme\" Firme \"na Password(s)" },
   "optionDesc_similarChars": { "message": "Documente similare cu Password(s)" },
-  "optionDesc_strict": { "message": "Mester tin por lo menos 1 caracteristica di cada caracter permiti poni den e password(nan)" },
+  "optionDesc_unstrict": { "message": "No ta rekerí por lo ménos 1 karakter di kada karakter pèrmití den e kódigo di suèldu (nan)." },
   "optionDesc_entropy": { "message": "Entropia Estimada/Entropia Estimada" },
   "optionDesc_quiet": { "message": "Tur Kuliner di Kuliner Kuliner" },
   "optionDesc_help": { "message": "Foto di Help Screenshot" },

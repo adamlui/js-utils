@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Tillåt inte små bokstäver i lösenord" },
   "optionDesc_noUpper": { "message": "Tillåt inte stora bokstäver i lösenord" },
   "optionDesc_similarChars": { "message": "Inkludera liknande tecken i lösenord" },
-  "optionDesc_strict": { "message": "Kräv minst ett tecken från varje tillåten teckenuppsättning i lösenord" },
+  "optionDesc_unstrict": { "message": "Kräv inte minst ett tecken från varje tillåten teckenuppsättning i lösenord" },
   "optionDesc_entropy": { "message": "Beräkna/logga uppskattad entropi" },
   "optionDesc_quiet": { "message": "Dölj all loggning utom fel" },
   "optionDesc_help": { "message": "Visa hjälpskärmen" },

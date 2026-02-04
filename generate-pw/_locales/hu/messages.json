@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Kisbetű (k) tiltása a jelszó(k) ban" },
   "optionDesc_noUpper": { "message": "Nagybetűk letiltása a jelszó(k) ban" },
   "optionDesc_similarChars": { "message": "Hasonló karakterek szerepeltetése a jelszó(k) ban" },
-  "optionDesc_strict": { "message": "A jelszó(jelszavak) minden megengedett karakterkészletéből legalább egy karaktert kérjen" },
+  "optionDesc_unstrict": { "message": "Ne követeljen meg legalább egy karaktert a jelszó(jelszavak) minden megengedett karakterkészletéből" },
   "optionDesc_entropy": { "message": "Becsült entrópia kiszámítása/naplózása" },
   "optionDesc_quiet": { "message": "Az összes naplózás letiltása a hibák kivételével" },
   "optionDesc_help": { "message": "Súgó képernyő megjelenítése" },

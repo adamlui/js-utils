@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "عدم السماح بالحروف الصغيرة في كلمة(كلمات) المرور" },
   "optionDesc_noUpper": { "message": "عدم السماح بالحروف الكبيرة في كلمة(كلمات) المرور" },
   "optionDesc_similarChars": { "message": "تضمين أحرف مماثلة في كلمة(كلمات) المرور" },
-  "optionDesc_strict": { "message": "يتطلب حرفًا واحدًا على الأقل من كل حرف مسموح به في كلمة(كلمات) المرور" },
+  "optionDesc_unstrict": { "message": "لا تتطلب حرفًا واحدًا على الأقل من كل حرف مسموح به في كلمة(كلمات) المرور" },
   "optionDesc_entropy": { "message": "حساب/تسجيل الإنتروبيا المقدرة" },
   "optionDesc_quiet": { "message": "قم بإيقاف جميع عمليات التسجيل باستثناء الأخطاء" },
   "optionDesc_help": { "message": "عرض شاشة المساعدة" },

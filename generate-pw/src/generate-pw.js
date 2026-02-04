@@ -25,11 +25,17 @@ Object.assign(globalThis.app ??= {}, {
     },
     strengthPresets: {
         weak: {
-            length: 6,  lowercase: true, uppercase: false, numbers: false, symbols: false, similarChars: true },
+            length: 6,  lowercase: true, uppercase: false, numbers: false, symbols: false,
+            similarChars: true, strict: false
+        },
         basic: {
-            length: 8,  lowercase: true, uppercase: true,  numbers: true,  symbols: false, similarChars: true },
+            length: 8,  lowercase: true, uppercase: true,  numbers: true,  symbols: false,
+            similarChars: true, strict: false
+        },
         strong: {
-            length: 12, lowercase: true, uppercase: true,  numbers: true,  symbols: true, similarChars: false }
+            length: 12, lowercase: true, uppercase: true,  numbers: true,  symbols: true,
+            similarChars: false, strict: true
+        }
     }
 })
 
@@ -50,7 +56,7 @@ function generatePassword(options = {}) {
         lowercase: true,            // include lowercase letters
         uppercase: true,            // include uppercase letters
         similarChars: false,        // include similar chars (e.g. o,0,O,i,l,1,|)
-        strict: false,              // require at least one char from each enabled set
+        strict: true,               // require at least one char from each enabled set
         entropy: false              // calculate/log estimated entropy (bits)
     }
 
@@ -109,9 +115,8 @@ function generatePassword(options = {}) {
         // Enforce strict mode if enabled
         if (options.strict) {
             if (options.verbose && !fromGeneratePasswords) log.info('Enforcing strict mode...')
-            const charTypes = ['number', 'symbol', 'lower', 'upper']
-            const requiredCharTypes = charTypes
-                .filter(charType => options[`${charType}s`] || options[`${charType}case`])
+            const charTypes = ['numbers', 'symbols', 'lower', 'upper'],
+                  requiredCharTypes = charTypes.filter(charType => options[charType] || options[`${charType}case`])
             password = strictify(password, requiredCharTypes)
         }
 
@@ -147,7 +152,7 @@ function generatePasswords(qty, options = {}) {
         lowercase: true,            // include lowercase letters
         uppercase: true,            // include uppercase letters
         similarChars: false,        // include similar chars (e.g. o,0,O,i,l,1,|)
-        strict: false,              // require at least one char from each enabled set
+        strict: true,               // require at least one char from each enabled set
         entropy: false              // calculate/log estimated entropy (bits)
     }
 
@@ -182,7 +187,7 @@ function generatePasswords(qty, options = {}) {
     return passwords
 }
 
-function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', 'upper'], options = {}) {
+function strictify(password, requiredCharTypes = ['numbers', 'symbols', 'lower', 'upper'], options = {}) {
 
     const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/#strictifypassword-requiredchartypes-options',
           exampleCall = `strictify('pa55word', ['symbol', 'upper'], { verbose: false })`,
@@ -197,7 +202,7 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     }
 
     // Validate requiredCharTypes
-    const validCharTypes = ['number', 'symbol', 'lower', 'upper']
+    const validCharTypes = ['numbers', 'symbols', 'lower', 'upper']
     requiredCharTypes = [].concat(requiredCharTypes) // normalize to array
     for (const charType of requiredCharTypes)
         if (!validCharTypes.includes(charType)) {
@@ -217,28 +222,27 @@ function strictify(password, requiredCharTypes = ['number', 'symbol', 'lower', '
     // Init mod flags + untouchable positions
     const hasFlags = {}, untouchablePositions = []
     requiredCharTypes.forEach(charType => hasFlags[charType] = false)
-    for (let i = 0 ; i < password.length ; i++)
-        for (const charType of requiredCharTypes)
-            if ((app.charsets[charType] || app.charsets[charType + 's']).includes(password[i])) {
-                hasFlags[charType] = true ; untouchablePositions.push(i) }
+    for (let i = 0 ; i < password.length ; i++) for (const charType of requiredCharTypes)
+        if (!hasFlags[charType] && app.charsets[charType].includes(password[i])) {
+            hasFlags[charType] = true ; untouchablePositions.push(i) }
 
     // Modify password if unstrict
     if (options.verbose) log.info(`Strictifying password...`)
     const maxReplacements = Math.min(password.length, requiredCharTypes.length)
     let replacementCnt = 0, strictPW = password
     for (const charType of requiredCharTypes) {
-        if (replacementCnt < maxReplacements) {
-            if (!hasFlags[charType]) {
-                let replacementPos
-                do replacementPos = randomInt(0, password.length) // pick random pos
-                while (untouchablePositions.includes(replacementPos)) // check if pos already replaced
-                untouchablePositions.push(replacementPos) // track new replacement pos
-                const replacementCharSet = app.charsets[charType] || app.charsets[charType + 's']
-                strictPW = strictPW.substring(0, replacementPos) // perform actual replacement
-                         + replacementCharSet[randomInt(0, replacementCharSet.length)]
-                         + strictPW.substring(replacementPos +1)
-                replacementCnt++
-    }}}
+        if (replacementCnt < maxReplacements && !hasFlags[charType]) {
+            let replacementPos
+            do replacementPos = randomInt(0, password.length) // pick random pos
+            while (untouchablePositions.includes(replacementPos)) // check if pos already replaced
+            untouchablePositions.push(replacementPos) // track new replacement pos
+            const replacementCharSet = app.charsets[charType] || app.charsets[charType + 's']
+            strictPW = strictPW.substring(0, replacementPos) // perform actual replacement
+                     + replacementCharSet[randomInt(0, replacementCharSet.length)]
+                     + strictPW.substring(replacementPos +1)
+            replacementCnt++
+        }
+    }
 
     // Log/return final result
     if (options.verbose) {
@@ -309,7 +313,7 @@ function randomInt(min, max) {
     if (typeof require == 'undefined') { // use browser crypto API || Math.random()
         const browserCrypto = window.crypto || window.msCrypto,
               randomVal = browserCrypto?.getRandomValues(new Uint32Array(1))[0] / 0xFFFFFFFF || Math.random()
-        return Math.floor(randomVal * (max - min)) + min
+        return Math.floor(randomVal *( max - min )) + min
     } else // use Node.js crypto module
         return require('crypto').randomInt(min, max)
 }

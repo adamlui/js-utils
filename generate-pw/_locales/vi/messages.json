@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Không cho phép chữ thường trong (các) mật khẩu" },
   "optionDesc_noUpper": { "message": "Không cho phép chữ hoa trong (các) mật khẩu" },
   "optionDesc_similarChars": { "message": "Bao gồm các ký tự tương tự trong (các) mật khẩu" },
-  "optionDesc_strict": { "message": "Yêu cầu ít nhất một ký tự từ mỗi bộ ký tự được phép trong (các) mật khẩu" },
+  "optionDesc_unstrict": { "message": "Không yêu cầu ít nhất một ký tự từ mỗi bộ ký tự được phép trong mật khẩu" },
   "optionDesc_entropy": { "message": "Tính toán/ghi nhật ký entropy ước tính" },
   "optionDesc_quiet": { "message": "Chặn tất cả ghi nhật ký ngoại trừ lỗi" },
   "optionDesc_help": { "message": "Hiển thị màn hình trợ giúp" },

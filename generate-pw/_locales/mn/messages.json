@@ -45,7 +45,7 @@
   "optionDesc_noLower": { "message": "Жижиг үсгүүдийг нууц үгээр задлах" },
   "optionDesc_noUpper": { "message": "Том үсгүүдийг нууцүгрүү задлах" },
   "optionDesc_similarChars": { "message": "Ижил төстэй тэмдэгтүүдийг нууц үгэнд оруулна уу" },
-  "optionDesc_strict": { "message": "Зөвшөөрөгдөх тэмдэгтийн нууц үг бүрээс дор хаяж нэг тэмдэгтийг шаардана" },
+  "optionDesc_unstrict": { "message": "Зөвшөөрөгдсөн тэмдэгт бүрээс дор хаяж нэг тэмдэгт шаардагдана" },
   "optionDesc_entropy": { "message": "Тооцоолох/нэвтрэх тооцоолсон бичилт" },
   "optionDesc_quiet": { "message": "Алдаанаас бусад бүх бүртгэлийг арилгах" },
   "optionDesc_help": { "message": "Тусламжийн дэлгэцийг харуулах" },
