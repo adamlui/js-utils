@@ -97,7 +97,7 @@ module.exports = {
             } catch (err) {
                 log.configURLandExit(`${app.msgs.error_failedToLoadConfigFile}:`, configPath, `\n${err.message}`) }
 
-        // Load from CLI args
+        // Load from CLI args (overriding config file)
         args.forEach(arg => {
             if (/^[^-]|--?(?:config|debug)/.test(arg)) return
 

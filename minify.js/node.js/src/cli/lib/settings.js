@@ -54,7 +54,7 @@ module.exports = {
 
         else { // use jsDelivr copy
             const data = require(`./data${ env.devMode ? '' : '.min' }.js`),
-                  jsdURL = `${app.urls.jsdelivr}/node.js/${filename}`
+                  jsdURL = `${app.urls.jsdelivr}/generate-pw/${filename}`
             log.data(`${app.msgs.info_fetchingRemoteConfigFrom} ${jsdURL}...`)
             try {
                 const resp = await data.fetch(jsdURL)
@@ -101,7 +101,7 @@ module.exports = {
             } catch (err) {
                 log.configURLandExit(`${app.msgs.error_failedToLoadConfigFile}:`, configPath, `\n${err.message}`) }
 
-        // Load from CLI args
+        // Load from CLI args (overriding config file)
         args.forEach(arg => {
             if (/^[^-]|--?(?:config|debug)/.test(arg)) return
 
