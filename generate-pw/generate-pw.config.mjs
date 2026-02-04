@@ -10,10 +10,6 @@
 
 export default {
 
-    // Info options
-    entropy: false,             // calculate/log estimated entropy
-    quietMode: false,           // suppress all logging except errors
-
     // Size params
     length: 8,                  // length of passwords to generate
     qty: 1,                     // # of passwords to generate
@@ -27,5 +23,9 @@ export default {
     excludeSimilarChars: false, // exclude similar chars in password(s)
     strictMode: false,          // require 1+ char from each allowed charset in password(s)
     charset: '',                // only include chars in password(s)
-    exclude: ''                 // exclude chars from password(s)
+    exclude: '',                // exclude chars from password(s)
+
+    // Info options
+    entropy: false,             // calculate/log estimated entropy
+    quietMode: false            // suppress all logging except errors
 }
