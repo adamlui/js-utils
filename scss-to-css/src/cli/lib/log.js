@@ -79,7 +79,7 @@ module.exports = {
             // Split msg into lines of appropriate lengths
             let currentLine = ''
             words.forEach(word => {
-                const lineLength = terminalWidth - ( !lines.length ? 0 : indent )
+                const lineLength = terminalWidth -( !lines.length ? 0 : indent )
                 if (currentLine.length + prefix.length + word.length > lineLength) { // cap/store it
                     lines.push(!lines.length ? currentLine : currentLine.trimStart())
                     currentLine = ''

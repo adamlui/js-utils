@@ -76,10 +76,10 @@ function generatePassword(options = {}) {
         if (options.verbose && !fromGeneratePasswords)
             log.info('Initializing character set...')
         let pwCharset = options.charset?.toString() || ( // use passed [charset], or construct from options
-            (options.numbers ? app.charsets.numbers : '')
-              +(options.symbols ? app.charsets.symbols : '')
-              +(options.lowercase ? app.charsets.lower : '')
-              +(options.uppercase ? app.charsets.upper : '')
+            ( options.numbers ? app.charsets.numbers : '' )
+           +( options.symbols ? app.charsets.symbols : '' )
+           +( options.lowercase ? app.charsets.lower : '' )
+           +( options.uppercase ? app.charsets.upper : '' )
         )
         if (pwCharset == '') // all flags false + no charset passed
             pwCharset = app.charsets.lower + app.charsets.upper // default to upper + lower
