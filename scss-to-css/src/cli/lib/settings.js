@@ -39,6 +39,7 @@ module.exports = {
     },
 
     async initConfigFile(filename = this.configFilename) {
+        const data = require(`./data${ env.devMode ? '' : '.min' }.js`)
 
         const targetPath = path.resolve(process.cwd(), filename)
         if (fs.existsSync(targetPath))
@@ -52,11 +53,9 @@ module.exports = {
             const jsdURL = `${app.urls.jsdelivr}/${filename}`
             log.data(`${app.msgs.info_fetchingRemoteConfigFrom} ${jsdURL}...`)
             try {
-                const resp = await require(`./data${ env.devMode ? '' : '.min' }.js`).fetch(jsdURL)
-                if (resp.ok)
-                    require(`./data${ env.devMode ? '' : '.min' }.js`).atomicWrite(targetPath, await resp.text())
-                else
-                    return log.warn(`${app.msgs.warn_remoteConfigNotFound}: ${jsdURL} (${resp.status})`)
+                const resp = await data.fetch(jsdURL)
+                if (resp.ok) data.atomicWrite(targetPath, await resp.text())
+                else return log.warn(`${app.msgs.warn_remoteConfigNotFound}: ${jsdURL} (${resp.status})`)
             } catch (err) {
                 return log.warn(`${app.msgs.warn_remoteConfigFailed}: ${jsdURL} ${err.message}`) }
         }
