@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Uewerkuer Bréiwer am Passwuert(en) ofsetzen" },
   "optionDesc_noSimilar": { "message": "Ähnlech Zeechen am Passwuert(en) auszeschléissen" },
   "optionDesc_strict": { "message": "Fuerderen op d'mannst ee Charakter aus all erlaabt Charakter a Passwuert(en) gesat" },
+  "optionDesc_entropy": { "message": "Entropie berechnen/log berechnen" },
   "optionDesc_quiet": { "message": "Ënnerdréckt all Umeldung ausser Feeler" },
   "optionDesc_help": { "message": "Hëllefsbildschierm uweisen" },
   "optionDesc_init": { "message": "Konfiguratiounsdatei erstellen (am Projetroot)" },

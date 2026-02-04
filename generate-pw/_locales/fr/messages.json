@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Interdire les lettres majuscules dans le (s) mot(s) de passe" },
   "optionDesc_noSimilar": { "message": "Exclure des caractères similaires dans le (s) mot(s) de passe" },
   "optionDesc_strict": { "message": "Exiger au moins un caractère de chaque jeu de caractères autorisé dans le (s) mot(s) de passe" },
+  "optionDesc_entropy": { "message": "Calculer/enregistrer l'entropie estimée" },
   "optionDesc_quiet": { "message": "Supprimer tous les journaux sauf les erreurs" },
   "optionDesc_help": { "message": "Affichage de l’aide" },
   "optionDesc_init": { "message": "Créer un fichier de configuration (dans la racine du projet)" },

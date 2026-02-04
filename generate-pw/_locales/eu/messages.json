@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Ez baimendu maiuskulak pasahitzetan" },
   "optionDesc_noSimilar": { "message": "Baztertu antzeko karaktereak pasahitzetan" },
   "optionDesc_strict": { "message": "Eskatu pasahitzetan baimendutako karaktere multzo bakoitzeko karaktere bat gutxienez" },
+  "optionDesc_entropy": { "message": "Kalkulatu/erregistratu estimatutako entropia" },
   "optionDesc_quiet": { "message": "Ezabatu erregistro guztiak erroreak izan ezik" },
   "optionDesc_help": { "message": "Bistaratu laguntza-pantaila" },
   "optionDesc_init": { "message": "Konfigurazio fitxategia sortu (proiektuaren erroan)" },

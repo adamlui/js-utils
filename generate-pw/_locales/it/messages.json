@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Non consentire lettere maiuscole nelle password" },
   "optionDesc_noSimilar": { "message": "Escludi caratteri simili nelle password" },
   "optionDesc_strict": { "message": "Richiedi almeno un carattere per ogni set di caratteri consentito nelle password" },
+  "optionDesc_entropy": { "message": "Calcola/registra l'entropia stimata" },
   "optionDesc_quiet": { "message": "Elimina tutte le registrazioni ad eccezione degli errori" },
   "optionDesc_help": { "message": "Visualizza la schermata di aiuto" },
   "optionDesc_init": { "message": "Crea file di configurazione (nella radice del progetto)" },

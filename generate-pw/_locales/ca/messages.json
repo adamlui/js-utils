@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "No permetis les lletres majúscules en les contrasenyes" },
   "optionDesc_noSimilar": { "message": "Exclou caràcters similars en les contrasenyes" },
   "optionDesc_strict": { "message": "Requereix com a mínim un caràcter de cada caràcter permès establert en la contrasenya o contrasenyes" },
+  "optionDesc_entropy": { "message": "Calcular/registrar l'entropia estimada" },
   "optionDesc_quiet": { "message": "Suprimeix tot el registre, excepte els errors" },
   "optionDesc_help": { "message": "Mostra la pantalla d'ajuda" },
   "optionDesc_init": { "message": "Crea un fitxer de configuració (a l'arrel del projecte)" },

@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Lista firme \"Firme\" Firme \"na Password(s)" },
   "optionDesc_noSimilar": { "message": "Documente similare cu Password(s)" },
   "optionDesc_strict": { "message": "Mester tin por lo menos 1 caracteristica di cada caracter permiti poni den e password(nan)" },
+  "optionDesc_entropy": { "message": "Entropia Estimada/Entropia Estimada" },
   "optionDesc_quiet": { "message": "Tur Kuliner di Kuliner Kuliner" },
   "optionDesc_help": { "message": "Foto di Help Screenshot" },
   "optionDesc_init": { "message": "Crear un archivo config (in proyecto root)" },

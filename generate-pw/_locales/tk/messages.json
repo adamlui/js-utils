@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Şifre (lar) da uly harplary aýyr" },
   "optionDesc_noSimilar": { "message": "Parol (lar) da meňzeşharplary äsgermezlik ediň" },
   "optionDesc_strict": { "message": "Parol (lar) da goýlan her bir rugsatly harpdan iň az bir harp gerek" },
+  "optionDesc_entropy": { "message": "Kalkülýotaryň/logyň hasaplanýan entropiýasy" },
   "optionDesc_quiet": { "message": "Ýalňyşlyklardan başga ähli ýalňyşlyklary ýok etmek" },
   "optionDesc_help": { "message": "Yardam ekrany görkez" },
   "optionDesc_init": { "message": "Konfigurasy faýlyny ýarat (projektiň köki bilen)" },

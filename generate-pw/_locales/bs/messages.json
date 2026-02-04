@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Zabranite velika slova u lozinkama" },
   "optionDesc_noSimilar": { "message": "Isključite slične znakove u lozinkama" },
   "optionDesc_strict": { "message": "Zahtijevajte najmanje jedan znak od svakog dozvoljenog znaka postavljenog u lozinkama" },
+  "optionDesc_entropy": { "message": "Izračunajte/zabilježite procijenjenu entropiju" },
   "optionDesc_quiet": { "message": "Zatvorite sve evidencije osim grešaka" },
   "optionDesc_help": { "message": "Prikaži ekran za pomoć" },
   "optionDesc_init": { "message": "Kreirajte konfiguracijsku datoteku (u korijenu projekta)" },

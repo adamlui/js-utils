@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Ka saar warqadaha uppercase ereyada sirta ah(yada)" },
   "optionDesc_noSimilar": { "message": "Ka fogow astaamaha la midka ah ereyada sirta ah(yada)" },
   "optionDesc_strict": { "message": "Baahida ugu yaraan hal dabeecad oo ka mid ah dabeecad kasta oo la oggol yahay oo lagu dejiyay erayga sirta ah(yada)" },
+  "optionDesc_entropy": { "message": "Xisaabi/log lagu qiyaasay entropy" },
   "optionDesc_quiet": { "message": "Xannib dhammaan gelitaanka marka laga reebo khaladaadka" },
   "optionDesc_help": { "message": "Muuji shaashadda caawinta" },
   "optionDesc_init": { "message": "Samee faylka qaabeynta (ee xididka mashruuca)" },

@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "אל תאפשר אותיות גדולות בסיסמה(ות)" },
   "optionDesc_noSimilar": { "message": "אל תכלול תווים דומים בסיסמאות" },
   "optionDesc_strict": { "message": "יש לדרוש לפחות תו אחד מכל תו מורשה המוגדר בסיסמה(ים)" },
+  "optionDesc_entropy": { "message": "חשב/התחבר לאנטרופיה המשוערת" },
   "optionDesc_quiet": { "message": "דיכוי כל רישומי הרישום למעט שגיאות" },
   "optionDesc_help": { "message": "הצג מסך עזרה" },
   "optionDesc_init": { "message": "צור קובץ תצורה (בשורש הפרויקט)" },

@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Том үсгүүдийг нууцүгрүү задлах" },
   "optionDesc_noSimilar": { "message": "Ижил төстэй тэмдэгтүүдийг нууц үгэнд оруулах" },
   "optionDesc_strict": { "message": "Зөвшөөрөгдөх тэмдэгтийн нууц үг бүрээс дор хаяж нэг тэмдэгтийг шаардана" },
+  "optionDesc_entropy": { "message": "Тооцоолох/нэвтрэх тооцоолсон бичилт" },
   "optionDesc_quiet": { "message": "Алдаанаас бусад бүх бүртгэлийг арилгах" },
   "optionDesc_help": { "message": "Тусламжийн дэлгэцийг харуулах" },
   "optionDesc_init": { "message": "Тохиргооны файл үүсгэх (төслийн эхэнд)" },

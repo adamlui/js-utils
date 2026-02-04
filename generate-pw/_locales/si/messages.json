@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "මුරපද(ය) තුළ උඩුකුරු අකුරු ප් ‍ රතික්ෂේප කරන්න" },
   "optionDesc_noSimilar": { "message": "මුරපද(ය) තුළ සමාන අක්ෂර බැහැර කරන්න" },
   "optionDesc_strict": { "message": "මුරපදයේ(ය) සකසා ඇති එක් එක් අවසර ලත් අක්ෂර වලින් අවම වශයෙන් එක් අක්ෂරයක් අවශ් ‍ ය වේ" },
+  "optionDesc_entropy": { "message": "ගණනය/ලඝු-සටහන ඇස්තමේන්තුගත entropy" },
   "optionDesc_quiet": { "message": "සියලු පිවිසුම් යටපත් කරන්න දෝෂ හැර" },
   "optionDesc_help": { "message": "සහාය තිරය පෙන්වන්න" },
   "optionDesc_init": { "message": "සැකසුම් ගොනුව සාදන්න (ව් ‍ යාපෘති මූලය තුළ)" },

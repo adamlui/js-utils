@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Böyük hərfləri parol(lar) da boşaldın" },
   "optionDesc_noSimilar": { "message": "Parol(lar) dakı oxşar simvolları istisna edin" },
   "optionDesc_strict": { "message": "Parol(lar) da göstərilən hər icazə verilən simvoldan ən azı bir simvol tələb edin" },
+  "optionDesc_entropy": { "message": "Təxmini entropiyanı hesablayın/daxil olun" },
   "optionDesc_quiet": { "message": "Xətalardan başqa bütün girişləri bağlayın" },
   "optionDesc_help": { "message": "Yardım ekranını göstər" },
   "optionDesc_init": { "message": "Konfiqurasiya faylı yaradın (layihə kökündə)" },

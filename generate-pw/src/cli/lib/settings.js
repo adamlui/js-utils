@@ -25,6 +25,7 @@ module.exports = {
         excludeSimilarChars: {
             type: 'flag', regex: /^--?(?:S|(?:exclude|disable|no)-?similar-?(?:char(?:acter)?s?)?|similar-?(?:char(?:acter)?s?)?=(?:false|0))$/},
         strictMode: { type: 'flag', regex: /^--?s(?:trict)?(?:-?mode)?$/ },
+        entropy: { type: 'flag', regex: /^--?entropy$/ },
         quietMode: { type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
         init: { type: 'cmd', regex: /^-{0,2}i(?:nit)?$/ },
         help: { type: 'cmd', regex: /^--?h(?:elp)?$/ },

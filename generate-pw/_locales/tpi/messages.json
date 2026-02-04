@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "No ken larim ol bikpela pas i stap long pasword (s)" },
   "optionDesc_noSimilar": { "message": "Pasword (s) i wankain olsem pasword (s)" },
   "optionDesc_strict": { "message": "Yu mas kisim wanpela karakter long olgeta pasword (s) i stap long pasword(s)" },
+  "optionDesc_entropy": { "message": "Model: Entropia/Entropia" },
   "optionDesc_quiet": { "message": "Ol i save rausim olgeta tok i stap long en, tasol ol i no save mekim ol" },
   "optionDesc_help": { "message": "Painim piksa bilong helpim" },
   "optionDesc_init": { "message": "Kirap konfig file (long projek root)" },

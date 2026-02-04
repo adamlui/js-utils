@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "禁止在密码中使用大写字母" },
   "optionDesc_noSimilar": { "message": "在密码中排除相似字符" },
   "optionDesc_strict": { "message": "密码中每个允许的字符集至少需要一个字符" },
+  "optionDesc_entropy": { "message": "计算/记录估计熵" },
   "optionDesc_quiet": { "message": "禁止所有日志记录，错误除外" },
   "optionDesc_help": { "message": "显示帮助屏幕" },
   "optionDesc_init": { "message": "创建配置文件（在项目根目录中）" },

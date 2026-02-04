@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "پاس ورڈ(زبانیں) میں بڑے حروف کی اجازت نہ دیں" },
   "optionDesc_noSimilar": { "message": "پاس ورڈ(پاس ورڈز) میں ملتے جلتے کریکٹرز کو خارج کریں" },
   "optionDesc_strict": { "message": "پاس ورڈ (الفاظ) میں سیٹ کردہ ہر اجازت یافتہ کریکٹر میں سے کم از کم ایک کریکٹر کا تقاضا کریں" },
+  "optionDesc_entropy": { "message": "تخمینہ شدہ اینٹروپی کا حساب لگائیں/لاگ ان کریں" },
   "optionDesc_quiet": { "message": "غلطیوں کے علاوہ تمام لاگنگ کو دبائیں" },
   "optionDesc_help": { "message": "مدد کی اسکرین ڈسپلے کریں" },
   "optionDesc_init": { "message": "کنفیگ فائل بنائیں (پروجیکٹ روٹ میں)" },

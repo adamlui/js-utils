@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "ਪਾਸਵਰਡ ਵਿੱਚ ਅੱਪਰਕੇਜ਼ ਅੱਖਰ ਮਨਜ਼ੂਰ ਨਹੀਂ" },
   "optionDesc_noSimilar": { "message": "ਪਾਸਵਰਡ ਵਿੱਚ ਮਿਲਦੇ-ਜੁਲਦੇ ਅੱਖਰ ਛੱਡੋ" },
   "optionDesc_strict": { "message": "ਪਾਸਵਰਡ ਵਿੱਚ ਹਰੇਕ ਮਨਜ਼ੂਰ ਅੱਖਰ ਸੈੱਟ ਤੋਂ ਘੱਟੋ-ਘੱਟ ਇੱਕ ਅੱਖਰ ਦੀ ਲੋੜ ਹੈ" },
+  "optionDesc_entropy": { "message": "ਗਣਨਾ/ਲਾਗ ਅਨੁਮਾਨਿਤ ਐਨਟ੍ਰੌਪੀ" },
   "optionDesc_quiet": { "message": "ਗਲਤੀਆਂ ਨੂੰ ਛੱਡ ਕੇ ਸਭ ਲਾਗਿੰਗ ਦਬਾਓ" },
   "optionDesc_help": { "message": "ਮੱਦਦ ਸਕਰੀਨ ਵੇਖੋ" },
   "optionDesc_init": { "message": "ਸੰਰਚਨਾ ਫਾਇਲ ਬਣਾਓ (ਪਰੋਜੈਕਟ ਰੂਟ ਵਿੱਚ)" },

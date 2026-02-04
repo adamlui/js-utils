@@ -255,6 +255,7 @@ Name                  | Geben Sie       | ein Beschreibung                      
 `uppercase`           | Boolescher Wert | Erlauben Sie Großbuchstaben in Passwörtern.                                       | `true`
 `excludeSimilarChars` | Boolescher Wert | Schließen Sie ähnliche Zeichen (z. B. o,0,O,i,l,1,\|) in Passwörtern aus.         | `false`
 `strict`              | Boolescher Wert | Erfordern mindestens ein Zeichen aus jedem zulässigen Zeichensatz in Passwörtern. | `false`
+`entropy`             | Boolescher Wert | Berechnen/protokollieren Sie die geschätzte Entropie.                             | `false`
 
 ##### _*Nur verfügbar in [`generatePassword([optionen])`](#generatepasswordoptionen), da [`generatePasswords(qty[, optionen])`](#generatepasswordsqty-optionen) ein `qty`-Argument annimmt_
 
@@ -294,6 +295,7 @@ Boolesche Optionen:
  -U, --no-uppercase          Großbuchstaben in Passwörtern nicht zulassen.
  -S, --no-similar            Schließen Sie ähnliche Zeichen in Passwörtern aus.
  -s, --strict                Erfordern mindestens ein Zeichen aus jedem zulässigen Zeichensatz in Passwörtern.
+ -e, --entropy               Berechnen/protokollieren Sie die geschätzte Entropie.
  -q, --quiet                 Unterdrücken Sie alle Protokolle außer Fehlern.
 
 Befehle:
@@ -323,7 +325,8 @@ export default {
     excludeUpperChars: false,   // Großbuchstaben in den Passwörtern ausschließen
     excludeSimilarChars: false, // Ähnliche Zeichen in den Passwörtern ausschließen
     strictMode: false,          // Mindestens ein Zeichen aus jedem erlaubten Zeichensatz in den Passwörtern erforderlich
-    quietMode: false,           // Alle Protokollmeldungen außer Fehlern unterdrücken
+    entropy: false,             // Geschätzte Entropie berechnen/protokollieren
+    quietMode: false            // Alle Protokollmeldungen außer Fehlern unterdrücken
 }
 ```
 

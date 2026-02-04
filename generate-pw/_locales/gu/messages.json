@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "પાસવર્ડ(ઓ) માં મોટા અક્ષરોને મંજૂરી ન આપો" },
   "optionDesc_noSimilar": { "message": "પાસવર્ડ(ઓ) માં સમાન અક્ષરોને બાકાત કરો" },
   "optionDesc_strict": { "message": "પાસવર્ડ(ઓ) માં સેટ કરેલ દરેક માન્ય અક્ષરમાંથી ઓછામાં ઓછું એક અક્ષર આવશ્યક છે" },
+  "optionDesc_entropy": { "message": "અંદાજિત એન્ટ્રોપીની ગણતરી/લૉગ" },
   "optionDesc_quiet": { "message": "ભૂલો સિવાય તમામ લોગીંગને દબાવો" },
   "optionDesc_help": { "message": "સહાય સ્ક્રીન પ્રદર્શિત કરો" },
   "optionDesc_init": { "message": "રૂપરેખાંકન ફાઇલ બનાવો (પ્રોજેક્ટ રુટમાં)" },

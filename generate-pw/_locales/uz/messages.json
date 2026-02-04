@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Parol(lar)da bosh harflardan foydalanishga ruxsat bermaslik" },
   "optionDesc_noSimilar": { "message": "Parol(lar)dagi oʻxshash belgilarni chiqarib tashlash" },
   "optionDesc_strict": { "message": "Parol(lar)da ruxsat etilgan har bir belgidan kamida bitta belgi talab qiling" },
+  "optionDesc_entropy": { "message": "Bashoratli entropiyani hisoblang/jurnalga yozing" },
   "optionDesc_quiet": { "message": "Xatolardan tashqari barcha jurnallarni bostirish" },
   "optionDesc_help": { "message": "Yordam ekranini ko'rsatish" },
   "optionDesc_init": { "message": "Konfiguratsiya faylini yarating (loyiha ildizida)" },

@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Disallow uppercase letters in password(s)" },
   "optionDesc_noSimilar": { "message": "Exclude similar characters in password(s)" },
   "optionDesc_strict": { "message": "Require at least one character from each allowed character set in password(s)" },
+  "optionDesc_entropy": { "message": "Calculate/log estimated entropy" },
   "optionDesc_quiet": { "message": "Suppress all logging except errors" },
   "optionDesc_help": { "message": "Display help screen" },
   "optionDesc_init": { "message": "Create config file (in project root)" },

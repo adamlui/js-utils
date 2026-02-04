@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "パスワードで大文字を使用できません" },
   "optionDesc_noSimilar": { "message": "パスワードに類似する文字を除外する" },
   "optionDesc_strict": { "message": "パスワードで許可されている各文字セットから少なくとも1文字を必要とします" },
+  "optionDesc_entropy": { "message": "推定エントロピーの計算/記録" },
   "optionDesc_quiet": { "message": "エラーを除くすべてのロギングを抑制" },
   "optionDesc_help": { "message": "ヘルプ画面を表示" },
   "optionDesc_init": { "message": "構成ファイルを作成する（プロジェクトルート内）" },

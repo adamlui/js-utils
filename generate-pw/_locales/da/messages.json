@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Tillad ikke store bogstaver i adgangskode( r)" },
   "optionDesc_noSimilar": { "message": "Udeluk lignende tegn i adgangskode( r)" },
   "optionDesc_strict": { "message": "Kræv mindst ét tegn fra hvert tilladt tegnsæt i adgangskode(r)" },
+  "optionDesc_entropy": { "message": "Beregn/logg estimeret entropi" },
   "optionDesc_quiet": { "message": "Undertrykke al logning undtagen fejl" },
   "optionDesc_help": { "message": "Vis hjælpeskærm" },
   "optionDesc_init": { "message": "Opret konfigurationsfil (i projektroden)" },

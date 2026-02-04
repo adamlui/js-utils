@@ -50,7 +50,8 @@ function generatePassword(options = {}) {
         lowercase: true,            // include lowercase letters
         uppercase: true,            // include uppercase letters
         excludeSimilarChars: false, // exclude similar chars (e.g. o,0,O,i,l,1,|)
-        strict: false               // require at least one char from each enabled set
+        strict: false,              // require at least one char from each enabled set
+        entropy: false              // calculate/log estimated entropy (bits)
     }
 
     log.prefix = 'generatePassword()'
@@ -114,11 +115,18 @@ function generatePassword(options = {}) {
             password = strictify(password, requiredCharTypes)
         }
 
-        // Log/return final result
-        if (options.verbose && !fromGeneratePasswords) {
-            log.info('Password generated!')
-            if (typeof window != 'undefined') log.info('Check returned string.')
+        if (options.verbose) { // log password/entropy
+            if (!fromGeneratePasswords) {
+                log.info('Password generated!')
+                if (typeof window != 'undefined') log.info('Check returned string.')
+            }
+            if (options.entropy) {
+                const usedCharsetLength = pwCharset.length,
+                      entropyBits = usedCharsetLength < 2 ? 0 : Math.log2(usedCharsetLength ** password.length)
+                log.info(`Estimated entropy: ${entropyBits.toFixed(2)} bits (charset length: ${usedCharsetLength})`)
+            }
         }
+
         return password
     }
 }
@@ -139,7 +147,8 @@ function generatePasswords(qty, options = {}) {
         lowercase: true,            // include lowercase letters
         uppercase: true,            // include uppercase letters
         excludeSimilarChars: false, // exclude similar chars (e.g. o,0,O,i,l,1,|)
-        strict: false               // require at least one char from each enabled set
+        strict: false,              // require at least one char from each enabled set
+        entropy: false              // calculate/log estimated entropy (bits)
     }
 
     log.prefix = 'generatePasswords()'

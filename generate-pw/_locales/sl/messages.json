@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Prepoved velikih črk v geslih" },
   "optionDesc_noSimilar": { "message": "Izključite podobne znake v geslih" },
   "optionDesc_strict": { "message": "Zahtevajte vsaj en znak iz vsakega dovoljenega nabora znakov v geslih" },
+  "optionDesc_entropy": { "message": "Izračunaj/zabeleži ocenjeno entropijo" },
   "optionDesc_quiet": { "message": "Prepreči vse beleženje, razen napak" },
   "optionDesc_help": { "message": "Prikaži zaslon za pomoč" },
   "optionDesc_init": { "message": "Ustvari konfiguracijsko datoteko (v korenu projekta)" },

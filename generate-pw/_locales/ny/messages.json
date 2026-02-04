@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Sakanizani zilembo zapamwamba mu mawu achinsinsi(s)" },
   "optionDesc_noSimilar": { "message": "Chotsani zilembo zofanana mu mawu achinsinsi(s)" },
   "optionDesc_strict": { "message": "Pemphani khalidwe limodzi kuchokera ku khalidwe lirilonse lololedwa lomwe limayikidwa mu mawu achinsinsi(s)" },
+  "optionDesc_entropy": { "message": "Werengani/log kuyerekezera entropy" },
   "optionDesc_quiet": { "message": "Kupondereza mitengo yonse kupatula zolakwika" },
   "optionDesc_help": { "message": "Onetsani zenera lothandizira" },
   "optionDesc_init": { "message": "Pangani fayilo ya config (muzu wa polojekiti)" },

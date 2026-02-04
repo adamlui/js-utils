@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Larang huruf besar dalam kata sandi" },
   "optionDesc_noSimilar": { "message": "Kecualikan karakter serupa dalam kata sandi" },
   "optionDesc_strict": { "message": "Memerlukan setidaknya satu karakter dari setiap set karakter yang diizinkan dalam kata sandi" },
+  "optionDesc_entropy": { "message": "Hitung/catat estimasi entropi" },
   "optionDesc_quiet": { "message": "Cegah semua pencatatan kecuali kesalahan" },
   "optionDesc_help": { "message": "Tampilkan layar bantuan" },
   "optionDesc_init": { "message": "Buat file konfigurasi (di root proyek)" },

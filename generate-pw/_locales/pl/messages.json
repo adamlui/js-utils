@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Nie zezwalaj na wielkie litery w haśle(ach)" },
   "optionDesc_noSimilar": { "message": "Wyklucz podobne znaki w haśle(ach)" },
   "optionDesc_strict": { "message": "Wymagaj co najmniej jednego znaku z każdego dozwolonego zestawu znaków w haśle(ach)" },
+  "optionDesc_entropy": { "message": "Oblicz/zarejestruj szacunkową entropię" },
   "optionDesc_quiet": { "message": "Wyłącz wszystkie rejestrowanie z wyjątkiem błędów" },
   "optionDesc_help": { "message": "Wyświetl ekran pomocy" },
   "optionDesc_init": { "message": "Utwórz plik konfiguracyjny (w katalogu głównym projektu)" },

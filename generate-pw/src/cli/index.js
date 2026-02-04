@@ -42,6 +42,7 @@
         uppercase: !app.config.excludeUpperChars,
         excludeSimilarChars: app.config.excludeSimilarChars,
         strict: app.config.strictMode,
+        entropy: app.config.entropy,
         verbose: !app.config.quietMode
     }
     log.ifNotQuiet(`\n${app.msgs.info_copying}...`)

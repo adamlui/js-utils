@@ -255,6 +255,7 @@ Nombre                | Tipo     | Descripción                                 
 `uppercase`           | Booleano | Permitir letras mayúsculas en la(s) contraseña(s).                                           | `true`
 `excludeSimilarChars` | Booleano | Excluya caracteres similares (por ejemplo, o,0,O,i,l,1,\|) en la(s) contraseña(s).           | `false`
 `strict`              | Booleano | Requiere al menos un carácter de cada carácter permitido establecido en la(s) contraseña(s). | `false`
+`entropy`             | Booleano | Calcular/registrar la entropía estimada.                                                     | `false`
 
 ##### _*Solo disponible en [`generatePassword([opciones])`](#generatepasswordopciones) ya que [`generatePasswords(qty[, opciones])`](#generatepasswordsqty-opciones) toma un argumento `qty`_
 
@@ -294,6 +295,7 @@ Opciones booleanas:
  -U, --no-uppercase          No permitir letras mayúsculas en la(s) contraseña(s).
  -S, --no-similar            Excluya caracteres similares en la(s) contraseña(s).
  -s, --strict                Requiere al menos un carácter de cada carácter permitido establecido en la(s) contraseña(s).
+ -e, --entropy               Calcular/registrar la entropía estimada.
  -q, --quiet                 Suprime todos los registros excepto los errores.
 
 Comandos:
@@ -321,7 +323,8 @@ export default {
     excludeUpperChars: false,   // no permitir letras mayúsculas en las contraseñas
     excludeSimilarChars: false, // excluir caracteres similares en las contraseñas
     strictMode: false,          // requerir al menos un carácter de cada conjunto de caracteres permitido en las contraseñas
-    quietMode: false,           // suprimir todos los registros excepto los errores
+    entropy: false,             // calcular/registrar la entropía estimada
+    quietMode: false            // suprimir todos los registros excepto los errores
 }
 ```
 

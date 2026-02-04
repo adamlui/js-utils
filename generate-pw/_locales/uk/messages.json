@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Заборонити великі літери в паролях" },
   "optionDesc_noSimilar": { "message": "Виключити подібні символи в паролях" },
   "optionDesc_strict": { "message": "Потрібен принаймні один символ з кожного дозволеного символу, встановленого в паролі" },
+  "optionDesc_entropy": { "message": "Розрахунок/реєстрація розрахункової ентропії" },
   "optionDesc_quiet": { "message": "Придушити всі журнали, крім помилок" },
   "optionDesc_help": { "message": "Відобразити екран довідки" },
   "optionDesc_init": { "message": "Створити файл конфігурації (в корені проекту)" },

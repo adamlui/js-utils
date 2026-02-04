@@ -53,6 +53,7 @@ module.exports = {
                 ` -U, --no-uppercase          ${app.msgs.optionDesc_noUpper}.`,
                 ` -S, --no-similar            ${app.msgs.optionDesc_noSimilar}.`,
                 ` -s, --strict                ${app.msgs.optionDesc_strict}.`,
+                ` -e, --entropy               ${app.msgs.optionDesc_entropy}.`,
                 ` -q, --quiet                 ${app.msgs.optionDesc_quiet}.`
             ],
             cmds: [

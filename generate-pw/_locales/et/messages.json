@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Keela parooli(de) s suurtähed" },
   "optionDesc_noSimilar": { "message": "Jäta sarnased tähemärgid parooli(de) st välja" },
   "optionDesc_strict": { "message": "Nõuab vähemalt ühte tähemärki igast paroolis(paroolides) määratud lubatud tähemärgist" },
+  "optionDesc_entropy": { "message": "Arvuta/logi hinnanguline entroopia" },
   "optionDesc_quiet": { "message": "Tühista kogu logimine, välja arvatud vead" },
   "optionDesc_help": { "message": "Abi ekraani kuvamine" },
   "optionDesc_init": { "message": "Loo konfiguratsioonifail (projekti juurfailis)" },

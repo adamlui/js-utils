@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "비밀번호에 대문자 사용 금지" },
   "optionDesc_noSimilar": { "message": "비밀번호에서 유사한 문자 제외" },
   "optionDesc_strict": { "message": "암호에 설정된 각 허용 문자에서 하나 이상의 문자 필요" },
+  "optionDesc_entropy": { "message": "추정 엔트로피 계산/기록" },
   "optionDesc_quiet": { "message": "오류를 제외한 모든 로깅 억제" },
   "optionDesc_help": { "message": "도움말 화면 표시" },
   "optionDesc_init": { "message": "구성 파일 만들기 (프로젝트 루트)" },

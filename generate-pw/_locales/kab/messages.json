@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Sfeḍ tabratt n ufeggag deg wawal uffir(s)" },
   "optionDesc_noSimilar": { "message": "Sfeḍ isebtaren am wiyaḍ deg wawal uffir(s)" },
   "optionDesc_strict": { "message": "Suter xerṣum yiwen n uḍris seg yal amagrad yettwafernen deg wawal n tbaḍnit(s)" },
+  "optionDesc_entropy": { "message": "Asekles/Asekles yettwaktilen" },
   "optionDesc_quiet": { "message": "Sizdeg akk tuccḍiwin anagar tuccḍiwin" },
   "optionDesc_help": { "message": "Sken allen n tallelt" },
   "optionDesc_init": { "message": "Snulfu afaylu n usebter (deg uẓar n usebter)" },

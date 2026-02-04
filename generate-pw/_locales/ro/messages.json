@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Nu permiteți scrierea cu majuscule în parolă(parole)" },
   "optionDesc_noSimilar": { "message": "Excludeți caracterele similare din parolă(parole)" },
   "optionDesc_strict": { "message": "Necesită cel puțin un caracter din fiecare caracter permis setat în parole" },
+  "optionDesc_entropy": { "message": "Calculați/înregistrați entropia estimată" },
   "optionDesc_quiet": { "message": "Suprimați toate înregistrările, cu excepția erorilor" },
   "optionDesc_help": { "message": "Afișați ecranul de ajutor" },
   "optionDesc_init": { "message": "Creați fișierul de configurare (în rădăcina proiectului)" },

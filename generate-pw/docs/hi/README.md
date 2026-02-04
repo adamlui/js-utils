@@ -251,6 +251,7 @@ validateStrength() » Check returned object for score/recommendations.
 `uppercase`           | बूलियन | पासवर्ड में बड़े अक्षरों को अनुमति दें।                                | `true`
 `excludeSimilarChars` | बूलियन | पासवर्ड में समान अक्षर (उदा. o,0,O,i,l,1,\|) हटा दें।               | `false`
 `strict`              | बूलियन | पासवर्ड में प्रत्येक अनुमत वर्ण सेट से कम से कम एक वर्ण की आवश्यकता है। | `false`
+`entropy`             | बूलियन | अनुमानित एन्ट्रॉपी की गणना करें/लॉग करें।                             | `false`
 
 ##### _*केवल [`generatePassword([options])`](#generatepasswordoptions) में उपलब्ध है क्योंकि [`generatePasswords(qty[, option])`](#generatepasswordsqty-options) एक `qty` तर्क लेता है_
 
@@ -290,6 +291,7 @@ $ generate-pw
  -U, --no-uppercase          पासवर्ड में बड़े अक्षरों को अनुमति न दें।
  -S, --no-similar            पासवर्ड में समान वर्णों को बाहर निकालें।
  -s, --strict                पासवर्ड में सेट किए गए प्रत्येक अनुमत वर्ण में से कम से कम एक वर्ण की आवश्यकता है।
+ -e, --entropy               अनुमानित एन्ट्रॉपी की गणना करें/लॉग करें।
  -q, --quiet                 त्रुटियों को छोड़कर सभी लॉगिंग को रोकें।
 
 कमांड:
@@ -319,7 +321,8 @@ export default {
     excludeUpperChars: false,   // पासवर्ड में बड़े अक्षर की अनुमति न दें
     excludeSimilarChars: false, // पासवर्ड में मिलते-जुलते कैरेक्टर को हटा दें
     strictMode: false,          // पासवर्ड में हर अनुमत कैरेक्टर सेट से 1+ कैरेक्टर ज़रूरी है
-    quietMode: false,           // एरर को छोड़कर सभी लॉगिंग को बंद करें
+    entropy: false,             // अनुमानित एन्ट्रॉपी की गणना करें/लॉग करें
+    quietMode: false            // एरर को छोड़कर सभी लॉगिंग को बंद करें
 }
 ```
 

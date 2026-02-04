@@ -251,6 +251,7 @@ validateStrength() » Check returned object for score/recommendations.
 `uppercase`           | 布林值 | 密碼中允許使用大寫字母。                          | `true`
 `excludeSimilarChars` | 布林值 | 排除密碼中的相似字元（例如 o、0、O、i、l、1、\|）。 | `false`
 `strict`              | 布林值 | 要求密碼中每個允許的字元集中至少有一個字元。        | `false`
+`entropy`             | 布林值 | 計算/對數估計熵。                                 | `false`
 
 ##### _*只在 [`generatePassword([options])`](#generatepasswordoptions) 中可用，因為 [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) 採用 `qty` 參數_
 
@@ -290,6 +291,7 @@ $ generate-pw
  -U, --no-uppercase          密碼中不允許使用大寫字母。
  -S, --no-similar            排除密碼中的相似字元。
  -s, --strict                要求密碼中每個允許的字元集中至少有一個字元。
+ -e, --entropy               計算/對數估計熵。
  -q, --quiet                 禁止除錯誤之外的所有日誌記錄。
 
 訊息命令：
@@ -308,18 +310,19 @@ Example defaults:
 
 ```js
 export default {
-    length: 8, // 產生的密碼長度
-    qty: 1, // 產生的密碼數量
+    length: 8,                  // 產生的密碼長度
+    qty: 1,                     // 產生的密碼數量
     strength: '',               // <'weak'|'basic'|'strong'> 應用強度預設
-    charset: '', // 密碼中只包含字符
-    exclude: '', // 密碼中排除字符
-    includeNums: false, // 密碼中允許包含數字
-    includeSymbols: false, // 密碼中允許包含符號
-    excludeLowerChars: false, // 密碼中不允許包含小寫字母
-    excludeUpperChars: false, // 密碼中不允許包含大寫字母
+    charset: '',                // 密碼中只包含字符
+    exclude: '',                // 密碼中排除字符
+    includeNums: false,         // 密碼中允許包含數字
+    includeSymbols: false,      // 密碼中允許包含符號
+    excludeLowerChars: false,   // 密碼中不允許包含小寫字母
+    excludeUpperChars: false,   // 密碼中不允許包含大寫字母
     excludeSimilarChars: false, // 密碼中排除相似字符
-    strictMode: false, // 密碼中至少包含每個允許字符集中的一個字符
-    quietMo​​de: false, // 禁止記錄除錯誤訊息以外的所有日誌
+    strictMode: false,          // 密碼中至少包含每個允許字符集中的一個字符
+    entropy: false,             // 計算/對數估計熵
+    quietMo​​de: false            // 禁止記錄除錯誤訊息以外的所有日誌
 }
 ```
 

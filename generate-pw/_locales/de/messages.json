@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Großbuchstaben in Kennwort(en) nicht zulassen" },
   "optionDesc_noSimilar": { "message": "Ähnliche Zeichen in Kennwort(en) ausschließen" },
   "optionDesc_strict": { "message": "Erfordert mindestens ein Zeichen aus jedem erlaubten Zeichensatz in Passwort(en)" },
+  "optionDesc_entropy": { "message": "Geschätzte Entropie berechnen/protokollieren" },
   "optionDesc_quiet": { "message": "Alle Protokolle mit Ausnahme von Fehlern unterdrücken" },
   "optionDesc_help": { "message": "Hilfebildschirm anzeigen" },
   "optionDesc_init": { "message": "Konfigurationsdatei erstellen (im Projektstammverzeichnis)" },

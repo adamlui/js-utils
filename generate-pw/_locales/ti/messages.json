@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "ኣብ ናይ ቃል-ምስጢር(ታት) ናይ ላዕሊ ፊደላት ኣወግድ" },
   "optionDesc_noSimilar": { "message": "ተመሳሳሊ ፊደላት ኣብ ናይ ቃል-ምስጢር(ታት) ኣወግድ" },
   "optionDesc_strict": { "message": "ኣብ ቃል-ምስጢር(ታት) ዝተቐመጡ ነፍሲ ወከፍ ዝተፈቕደ ቁምፊ ብውሕዱ ሓደ ቁምፊ የድልዮም" },
+  "optionDesc_entropy": { "message": "ሕሳብ/ሎግ ዝተገመተ ኢንትሮፒ" },
   "optionDesc_quiet": { "message": "ጌጋታት እንተዘይኮይኑ ፡ ንዅሉ ምዝገባታት ኣጥፍእ" },
   "optionDesc_help": { "message": "ናይ ሓገዝ ስክሪን ኣርኢ" },
   "optionDesc_init": { "message": "ናይ ውህደት ፋይል ፍጠር (ኣብ ናይ ፕሮጀክት ሱር)" },

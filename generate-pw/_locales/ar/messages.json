@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "عدم السماح بالحروف الكبيرة في كلمة(كلمات) المرور" },
   "optionDesc_noSimilar": { "message": "استبعاد الأحرف المماثلة في كلمة(كلمات) المرور" },
   "optionDesc_strict": { "message": "يتطلب حرفًا واحدًا على الأقل من كل حرف مسموح به في كلمة(كلمات) المرور" },
+  "optionDesc_entropy": { "message": "حساب/تسجيل الإنتروبيا المقدرة" },
   "optionDesc_quiet": { "message": "قم بإيقاف جميع عمليات التسجيل باستثناء الأخطاء" },
   "optionDesc_help": { "message": "عرض شاشة المساعدة" },
   "optionDesc_init": { "message": "إنشاء ملف تكوين (في جذر المشروع)" },

@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Nuligi majusklajn literojn en pasvorto(j)" },
   "optionDesc_noSimilar": { "message": "Ekskludi similajn signojn en pasvorto(j)" },
   "optionDesc_strict": { "message": "Postuli almenaŭ unu signon de ĉiu permesita signaro en pasvorto(j)" },
+  "optionDesc_entropy": { "message": "Kalkuli/registradi laŭtaksan entropion" },
   "optionDesc_quiet": { "message": "Subpremi ĉiujn registradojn krom eraroj" },
   "optionDesc_help": { "message": "Montri helpekranon" },
   "optionDesc_init": { "message": "Krei agordodosieron (en projekta radiko)" },

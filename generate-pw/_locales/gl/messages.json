@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Disallow letras maiúsculas en contraseña(s)" },
   "optionDesc_noSimilar": { "message": "Excluír caracteres similares no (s) contrasinal(s)" },
   "optionDesc_strict": { "message": "Require polo menos un carácter de cada carácter permitido establecido no contrasinal(s)" },
+  "optionDesc_entropy": { "message": "Calcular/logar a entropia estimada" },
   "optionDesc_quiet": { "message": "Suprimir todo o rexistro agás erros" },
   "optionDesc_help": { "message": "Mostrar a pantalla de axuda" },
   "optionDesc_init": { "message": "Crear un ficheiro de configuración (na raíz do proxecto)" },

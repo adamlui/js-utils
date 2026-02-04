@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Verlaat hoofletters in wagwoord(s)" },
   "optionDesc_noSimilar": { "message": "Sluit soortgelyke karakters in wagwoord(s) uit" },
   "optionDesc_strict": { "message": "Vereis ten minste een karakter van elke toegelate karakter wat in wagwoord(s) gestel is" },
+  "optionDesc_entropy": { "message": "Bereken/log beraamde entropie" },
   "optionDesc_quiet": { "message": "Onderdruk alle aanmelding behalwe foute" },
   "optionDesc_help": { "message": "Vertoon hulp skerm" },
   "optionDesc_init": { "message": "Skep konfigurasielêer (in projekwortel)" },

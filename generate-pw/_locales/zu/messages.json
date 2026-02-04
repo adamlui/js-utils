@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Ungavumeli izinhlamvu ezinkulu kwiphasiwedi" },
   "optionDesc_noSimilar": { "message": "Ungafaki izinhlamvu ezifanayo kuphasiwedi" },
   "optionDesc_strict": { "message": "Dinga okungenani uhlamvu olulodwa ohlamvwini ngalunye oluvunyelwe olusethwe kuphasiwedi(iphasiwedi)" },
+  "optionDesc_entropy": { "message": "Bala/i-log i-entropy elinganiselwe" },
   "optionDesc_quiet": { "message": "Cindezela konke ukungena ngemvume ngaphandle kwamaphutha" },
   "optionDesc_help": { "message": "Bonisa isikrini sosizo" },
   "optionDesc_init": { "message": "Yakha ifayela lokuhlela (empandeni yephrojekthi)" },

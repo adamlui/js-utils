@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Ekki leyfa hástafi í lykilorðieða -orðum" },
   "optionDesc_noSimilar": { "message": "Útiloka svipaða stafi í lykilorði/-orðum" },
   "optionDesc_strict": { "message": "Krefjast að minnsta kosti eins stafs úr hverjum leyfðum staf sem stilltur er í lykilorði eða -orðum" },
+  "optionDesc_entropy": { "message": "Reikna/log áætlað entropy" },
   "optionDesc_quiet": { "message": "Slökkva á öllum innskráningum nema villum" },
   "optionDesc_help": { "message": "Birta hjálparskjá" },
   "optionDesc_init": { "message": "Búa til stillingarskrá (í frumtexta verkefnis)" },

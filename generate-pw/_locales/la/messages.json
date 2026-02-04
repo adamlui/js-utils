@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Duplicare uppercase literaes in password(s)" },
   "optionDesc_noSimilar": { "message": "Exludeum similar characters in password(s)" },
   "optionDesc_strict": { "message": "Le parva un una characteris de per per perficit characterum set in password(s)" },
+  "optionDesc_entropy": { "message": "Calculare/log اټکل indropy" },
   "optionDesc_quiet": { "message": "Exemplar omnes logiciendi except error" },
   "optionDesc_help": { "message": "Pagina Auxilio" },
   "optionDesc_init": { "message": "Create config file (in project root)" },

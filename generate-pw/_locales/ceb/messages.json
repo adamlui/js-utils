@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "I-disable ang mga letra sa uppercase sa (mga) password" },
   "optionDesc_noSimilar": { "message": "Iapil ang susama nga mga karakter sa (mga) password" },
   "optionDesc_strict": { "message": "Gikinahanglan ang labing menos usa ka karakter gikan sa matag gitugotan nga karakter nga gitakda sa (mga) password" },
+  "optionDesc_entropy": { "message": "Pagkalkula/log gibanabana nga entropy" },
   "optionDesc_quiet": { "message": "Pugngan ang tanan nga pag-log gawas sa mga sayup" },
   "optionDesc_help": { "message": "Ipakita ang screen sa tabang" },
   "optionDesc_init": { "message": "Paghimo file sa config (sa root sa proyekto)" },

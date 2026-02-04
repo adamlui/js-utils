@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Emera inyuguti nkuru mu ijambo ryibanga" },
   "optionDesc_noSimilar": { "message": "Kuramo inyuguti zisa mu ijambo ryibanga" },
   "optionDesc_strict": { "message": "Saba byibuze inyuguti imwe kuri buri nyuguti yemerewe gushyirwaho ijambo ryibanga" },
+  "optionDesc_entropy": { "message": "/LOG Byagereranyijwe" },
   "optionDesc_quiet": { "message": "Kuraho ibiti byose usibye amakosa" },
   "optionDesc_help": { "message": "Erekana ubufasha bwa ecran" },
   "optionDesc_init": { "message": "IDOSIYE in Umushinga Imizi" },

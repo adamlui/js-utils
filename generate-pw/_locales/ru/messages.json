@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Запретить использование прописных букв в паролях" },
   "optionDesc_noSimilar": { "message": "Исключить похожие символы в паролях" },
   "optionDesc_strict": { "message": "Требуется хотя бы один символ из каждого разрешенного набора символов в пароле(-ах)" },
+  "optionDesc_entropy": { "message": "Расчет/регистрация расчетной энтропии" },
   "optionDesc_quiet": { "message": "Подавление всех журналов, кроме ошибок" },
   "optionDesc_help": { "message": "Показать экран помощи" },
   "optionDesc_init": { "message": "Создание файла конфигурации (в корне проекта)" },

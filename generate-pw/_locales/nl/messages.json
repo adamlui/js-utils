@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Hoofdletters in wachtwoord(en) niet toestaan" },
   "optionDesc_noSimilar": { "message": "Sluit vergelijkbare tekens uit in wachtwoord(en)" },
   "optionDesc_strict": { "message": "Vereisen ten minste één teken van elke toegestane tekenset in wachtwoord(en)" },
+  "optionDesc_entropy": { "message": "Bereken/log geschatte entropie" },
   "optionDesc_quiet": { "message": "Alle logboekregistraties onderdrukken, behalve fouten" },
   "optionDesc_help": { "message": "Hulpscherm weergeven" },
   "optionDesc_init": { "message": "Configuratiebestand aanmaken (in projecthoofdmap)" },

@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Retire lèt majiskil nan modpas(yo)" },
   "optionDesc_noSimilar": { "message": "Ekskli karaktè menm jan an nan modpas(yo)" },
   "optionDesc_strict": { "message": "Mande omwen yon karaktè nan chak karaktè pèmèt mete nan modpas(yo)" },
+  "optionDesc_entropy": { "message": "Kalkile/Log estime entropi" },
   "optionDesc_quiet": { "message": "Siprime tout antre eksepte erè" },
   "optionDesc_help": { "message": "Montre ekran èd" },
   "optionDesc_init": { "message": "Kreye dosye config (nan rasin pwojè)" },

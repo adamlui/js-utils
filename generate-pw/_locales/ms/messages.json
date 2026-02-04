@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Tidak membenarkan huruf besar dalam kata laluan" },
   "optionDesc_noSimilar": { "message": "Kecualikan aksara serupa dalam kata laluan" },
   "optionDesc_strict": { "message": "Memerlukan sekurang-kurangnya satu aksara daripada setiap set aksara yang dibenarkan dalam kata laluan" },
+  "optionDesc_entropy": { "message": "Kira/log anggaran entropi" },
   "optionDesc_quiet": { "message": "Sekat semua pembalakan kecuali ralat" },
   "optionDesc_help": { "message": "Papar skrin bantuan" },
   "optionDesc_init": { "message": "Cipta fail konfigurasi (dalam akar projek)" },

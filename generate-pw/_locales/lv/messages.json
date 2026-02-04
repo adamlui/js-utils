@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Parolē(-ēs) neatļaut lielos burtus" },
   "optionDesc_noSimilar": { "message": "Izslēgt līdzīgas rakstzīmes parolē(-ēs)" },
   "optionDesc_strict": { "message": "Pieprasiet vismaz vienu rakstzīmi no katras parolē(-ēs) atļautās rakstzīmju kopas" },
+  "optionDesc_entropy": { "message": "Aprēķināt/reģistrēt novērtēto entropiju" },
   "optionDesc_quiet": { "message": "Aizliegt visu reģistrēšanu, izņemot kļūdas" },
   "optionDesc_help": { "message": "Parādīt palīdzības ekrānu" },
   "optionDesc_init": { "message": "Izveidot konfigurācijas failu (projekta saknē)" },

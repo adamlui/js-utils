@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Neleisti slaptažodžio(-ių) didžiųjų raidžių" },
   "optionDesc_noSimilar": { "message": "Slaptažodyje(-iuose) neįtraukti panašių simbolių" },
   "optionDesc_strict": { "message": "Reikalauti bent vieno simbolio iš kiekvieno leidžiamo simbolių rinkinio slaptažodyje(-iuose)" },
+  "optionDesc_entropy": { "message": "Apskaičiuoti/registruoti apskaičiuotąją entropiją" },
   "optionDesc_quiet": { "message": "Slėpti visus registravimus, išskyrus klaidas" },
   "optionDesc_help": { "message": "Rodyti pagalbos ekraną" },
   "optionDesc_init": { "message": "Sukurti konfigūracijos failą (projekto šaknyje)" },

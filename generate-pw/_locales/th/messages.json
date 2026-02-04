@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "ไม่อนุญาตให้ใช้ตัวอักษรพิมพ์ใหญ่ในรหัสผ่าน" },
   "optionDesc_noSimilar": { "message": "ยกเว้นอักขระที่คล้ายกันในรหัสผ่าน" },
   "optionDesc_strict": { "message": "ต้องมีอักขระอย่างน้อยหนึ่งตัวจากแต่ละชุดอักขระที่อนุญาตในรหัสผ่าน" },
+  "optionDesc_entropy": { "message": "คำนวณ/บันทึกเอ็นโทรปีโดยประมาณ" },
   "optionDesc_quiet": { "message": "ระงับการบันทึกทั้งหมดยกเว้นข้อผิดพลาด" },
   "optionDesc_help": { "message": "หน้าจอวิธีใช้การแสดงผล" },
   "optionDesc_init": { "message": "สร้างไฟล์การกำหนดค่า (ในรูทโครงการ)" },

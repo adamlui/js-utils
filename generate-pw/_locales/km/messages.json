@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "មិន អនុញ្ញាត តួអក្សរ ធំ ក្នុង ពាក្យ សម្ងាត់" },
   "optionDesc_noSimilar": { "message": "មិនរាប់បញ្ចូលតួអក្សរស្រដៀងគ្នានៅក្នុងពាក្យសម្ងាត់" },
   "optionDesc_strict": { "message": "ទាមទារយ៉ាងហោចណាស់តួអក្សរមួយពីតួអក្សរដែលបានអនុញ្ញាតនីមួយៗដែលបានកំណត់នៅក្នុងពាក្យសម្ងាត់" },
+  "optionDesc_entropy": { "message": "គណនា/កំណត់ហេតុប៉ាន់ស្មាន Entropy" },
   "optionDesc_quiet": { "message": "បង្ក្រាបការកាប់ឈើទាំងអស់លើកលែងតែកំហុស" },
   "optionDesc_help": { "message": "បង្ហាញអេក្រង់ជំនួយ" },
   "optionDesc_init": { "message": "បង្កើត ឯកសារ កំណត់ រចនា សម្ព័ន្ធ (នៅ ក្នុង root គម្រោង)" },

@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "ປະຕິເສດຕົວອັກສອນຕົວອັກສອນໃຫຍ່ໃນລະຫັດຜ່ານ" },
   "optionDesc_noSimilar": { "message": "ຍົກເວັ້ນຕົວອັກສອນທີ່ຄ້າຍຄືກັນໃນລະຫັດຜ່ານ" },
   "optionDesc_strict": { "message": "ຮຽກຮ້ອງໃຫ້ມີຢ່າງໜ້ອຍໜຶ່ງຕົວອັກສອນຈາກແຕ່ລະຕົວອັກສອນທີ່ອະນຸຍາດໃນລະຫັດຜ່ານ" },
+  "optionDesc_entropy": { "message": "ການຄິດໄລ່/log ຄາດຄະເນ entropy" },
   "optionDesc_quiet": { "message": "ສະກັດກັ້ນການຕັດໄມ້ທັງໝົດ ຍົກເວັ້ນຂໍ້ຜິດພາດ" },
   "optionDesc_help": { "message": "ສະແດງໜ້າຈໍຊ່ວຍເຫຼືອ" },
   "optionDesc_init": { "message": "ສ້າງໄຟລ໌ config (ໃນຮາກໂຄງການ)" },

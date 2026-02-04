@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Neħħi l-ittri kbar fil-password(s)" },
   "optionDesc_noSimilar": { "message": "Eskludi karattri simili fil-password(s)" },
   "optionDesc_strict": { "message": "Teħtieġ mill-inqas karattru wieħed minn kull karattru permess issettjat fil-password(s)" },
+  "optionDesc_entropy": { "message": "Ikkalkula/irreġistra l-entropija stmata" },
   "optionDesc_quiet": { "message": "Waqqaf il-logging kollu ħlief l-iżbalji" },
   "optionDesc_help": { "message": "Uri l-iskrin tal-għajnuna" },
   "optionDesc_init": { "message": "Oħloq fajl tal-konfig (fl-għeruq tal-proġett)" },

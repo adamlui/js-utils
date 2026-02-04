@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "Cuir a - mach litrichean mòra ann am facal - faire(ean)" },
   "optionDesc_noSimilar": { "message": "Cuir caractaran co - chosmhail a - mach ann am facal - faire(ean)" },
   "optionDesc_strict": { "message": "Feumaidh e co - dhiù aon charactar bho gach caractar ceadaichte a tha air a shuidheachadh ann am facal - faire(ean)" },
+  "optionDesc_entropy": { "message": "Calculate/log estimated entropy" },
   "optionDesc_quiet": { "message": "Cuir às do gach logadh ach a - mhàin mearachdan" },
   "optionDesc_help": { "message": "Seall sgrìn na cobhair" },
   "optionDesc_init": { "message": "Cruthaich faidhle rèiteachaidh (ann am freumh a 'phròiseict)" },

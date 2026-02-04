@@ -253,6 +253,7 @@ validateStrength() » Check returned object for score/recommendations.
 `uppercase`           | বুলিয়ান  | পাসওয়ার্ডে বড় হাতের অক্ষরের অনুমতি দিন।                                   | `true`
 `excludeSimilarChars` | বুলিয়ান  | পাসওয়ার্ডে অনুরূপ অক্ষর (যেমন o,0,O,i,l,1,\|) বাদ দিন।                    | `false`
 `strict`              | বুলিয়ান  | পাসওয়ার্ডে সেট করা প্রতিটি অনুমোদিত অক্ষর থেকে কমপক্ষে একটি অক্ষর প্রয়োজন। | `false`
+`entropy`             | Boolean | অনুমানকৃত এনট্রপি গণনা করুন/লগ করুন।                                    | `false`
 
 ##### _*শুধুমাত্র [`generatePassword([options])`](#generatepasswordoptions) এ উপলব্ধ যেহেতু [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) একটি `qty` আর্গুমেন্ট নেয়_
 
@@ -292,6 +293,7 @@ $ generate-pw
  -U, --no-uppercase          পাসওয়ার্ড(গুলি) এ বড় হাতের অক্ষর অনুমোদন না করুন।
  -S, --no-similar            Exপাসওয়ার্ডে অনুরূপ অক্ষরগুলি বাদ দিন।
  -s, --strict                পাসওয়ার্ডে সেট করা প্রতিটি অনুমোদিত অক্ষর থেকে কমপক্ষে একটি অক্ষর প্রয়োজন।
+ -e, --entropy               অনুমানকৃত এনট্রপি গণনা করুন/লগ করুন।
  -q, --quiet                 ত্রুটি ছাড়া সব লগিং দমন করুন।
 
 কমান্ডসমূহ:
@@ -321,7 +323,8 @@ export default {
     excludeUpperChars: false,   // পাসওয়ার্ডে বড় হাতের অক্ষর ব্যবহারের অনুমতি দেবেন না
     excludeSimilarChars: false, // পাসওয়ার্ডে দেখতে একই রকম অক্ষর বাদ দিন
     strictMode: false,          // পাসওয়ার্ডে প্রতিটি অনুমোদিত অক্ষর সেট থেকে কমপক্ষে একটি অক্ষর থাকা আবশ্যক
-    quietMode: false,           // ত্রুটি ছাড়া অন্য সব লগিং বন্ধ রাখুন
+    entropy: false,             // আনুমানিক এনট্রপি গণনা/লগ করুন
+    quietMode: false            // ত্রুটি ছাড়া অন্য সব লগিং বন্ধ রাখুন
 }
 ```
 

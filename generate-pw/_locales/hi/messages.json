@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "पासवर्ड में अपरकेस अक्षरों को नामंज़ूर करें" },
   "optionDesc_noSimilar": { "message": "पासवर्ड में मिलते - जुलते कैरेक्टर शामिल न करें" },
   "optionDesc_strict": { "message": "पासवर्ड(ओं) में सेट किए गए प्रत्येक अनुमत वर्ण में से कम से कम एक वर्ण की आवश्यकता होती है" },
+  "optionDesc_entropy": { "message": "अनुमानित एंट्रॉपी की गणना/लॉग करें" },
   "optionDesc_quiet": { "message": "त्रुटियों को छोड़कर सभी लॉगिंग को दबाएं" },
   "optionDesc_help": { "message": "सहायता स्क्रीन दिखाएँ" },
   "optionDesc_init": { "message": "कॉन्फ़िगरेशन फ़ाइल बनाएँ (प्रोजेक्ट रूट में)" },

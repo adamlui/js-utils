@@ -251,6 +251,7 @@ validateStrength() » Check returned object for score/recommendations.
 `uppercase`           | 布尔值 | 密码中允许使用大写字母。                          | `true`
 `excludeSimilarChars` | 布尔值 | 排除密码中的相似字符（例如 o、0、O、i、l、1、\|）。 | `false`
 `strict`              | 布尔值 | 要求密码中每个允许的字符集中至少有一个字符。        | `false`
+`entropy`             | 布尔值 | 计算/记录估计熵。                                 | `false`
 
 ##### _*仅在 [`generatePassword([options])`](#generatepasswordoptions) 中可用，因为 [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) 采用 `qty` 参数_
 
@@ -290,6 +291,7 @@ $ generate-pw
  -U, --no-uppercase          密码中不允许使用大写字母。
  -S, --no-similar            排除密码中的相似字符。
  -s, --strict                要求密码中每个允许的字符集中至少有一个字符。
+ -e, --entropy               计算/记录估计熵。
  -q, --quiet                 禁止除错误之外的所有日志记录。
 
 命令：
@@ -319,7 +321,8 @@ export default {
     excludeUpperChars: false,   // 密码中不允许包含大写字母
     excludeSimilarChars: false, // 密码中排除相似字符
     strictMode: false,          // 密码中必须包含每个允许字符集中的至少一个字符
-    quietMo​​de: false,           // 除了错误信息外，抑制所有日志输出
+    entropy: false,             // 计算/记录估计熵
+    quietMo​​de: false            // 除了错误信息外，抑制所有日志输出
 }
 ```
 

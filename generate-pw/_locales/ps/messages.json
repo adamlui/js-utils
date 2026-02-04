@@ -46,6 +46,7 @@
   "optionDesc_noUpper": { "message": "په پاسورډونو کې لوی توري مه پریږدي" },
   "optionDesc_noSimilar": { "message": "په پاسورډونو کې ورته کرکټرونه خارج کړئ" },
   "optionDesc_strict": { "message": "په پاسورډ(ونو) کې د هر مجاز کرکټر ترتیب څخه لږترلږه یو کرکټر ته اړتیا لري" },
+  "optionDesc_entropy": { "message": "د ننوتلو اټکل شوی محاسبه/لاګ" },
   "optionDesc_quiet": { "message": "د تېروتنو پرته ټول ننوتل (logging) پټ کړئ" },
   "optionDesc_help": { "message": "د مرستې سکرین ښکاره کړئ" },
   "optionDesc_init": { "message": "(د پروژې په ریښه کې) سازونې دوتنه جوړه کړئ" },
