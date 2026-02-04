@@ -31,8 +31,8 @@
     // Copy random PASSWORD(s)
     settings.load()
     const genOptions = {
-        length: app.config.length,
-        qty: app.config.qty,
+        length: app.config.length || 8,
+        qty: app.config.qty || 1,
         charset: app.config.charset,
         exclude: app.config.excludeChars,
         numbers: !!app.config.includeNums,
