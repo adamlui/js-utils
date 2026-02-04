@@ -6,7 +6,6 @@ module.exports = {
     generateRandomLang({ includes = [], excludes = [] } = {}) {
 
         const fs = require('fs'),
-              log = require(`./log${ env.devMode ? '' : '.min' }.js`),
               path = require('path')
 
         let locales = includes.length ? includes : (() => {
