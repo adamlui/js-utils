@@ -249,7 +249,7 @@ validateStrength() » Check returned object for score/recommendations.
 `symbols`             | 布林值 | 允許密碼中包含符號。                              | `false`
 `lowercase`           | 布林值 | 密碼中允許使用小寫字母。                          | `true`
 `uppercase`           | 布林值 | 密碼中允許使用大寫字母。                          | `true`
-`excludeSimilarChars` | 布林值 | 排除密碼中的相似字元（例如 o、0、O、i、l、1、\|）。 | `false`
+`similarChars`        | 布林值 | 密碼中應包含相似字元（例如 o、0、O、i、l、1、\|）。 | `false`
 `strict`              | 布林值 | 要求密碼中每個允許的字元集中至少有一個字元。        | `false`
 `entropy`             | 布林值 | 計算/對數估計熵。                                 | `false`
 
@@ -285,11 +285,11 @@ $ generate-pw
  -w, --weak                  產生弱密碼。
  -b, --basic                 產生基本強度密碼。
  -t, --strong                產生強密碼。
- -n, --include-numbers       允許密碼中包含數字。
- -y, --include-symbols       允許密碼中包含符號。
+ -N, --no-numbers            密碼中不得包含數字。
+ -Y, --no-symbols            密碼中不得包含符號。
  -L, --no-lowercase          密碼中不允許使用小寫字母。
  -U, --no-uppercase          密碼中不允許使用大寫字母。
- -S, --no-similar            排除密碼中的相似字元。
+ -r, --similar-chars         密碼中應包含相似字元。
  -s, --strict                要求密碼中每個允許的字元集中至少有一個字元。
  -e, --entropy               計算/對數估計熵。
  -q, --quiet                 禁止除錯誤之外的所有日誌記錄。
@@ -315,11 +315,11 @@ export default {
     strength: '',               // <'weak'|'basic'|'strong'> 應用強度預設
     charset: '',                // 密碼中只包含字符
     exclude: '',                // 密碼中排除字符
-    includeNums: false,         // 密碼中允許包含數字
-    includeSymbols: false,      // 密碼中允許包含符號
+    excludeNums: false,         // 密碼中不得包含數字
+    excludeSymbols: false,      // 密碼中不得包含符號
     excludeLowerChars: false,   // 密碼中不允許包含小寫字母
     excludeUpperChars: false,   // 密碼中不允許包含大寫字母
-    excludeSimilarChars: false, // 密碼中排除相似字符
+    similarChars: false,        // 密碼中應包含相似字元
     strictMode: false,          // 密碼中至少包含每個允許字符集中的一個字符
     entropy: false,             // 計算/對數估計熵
     quietMo​​de: false            // 禁止記錄除錯誤訊息以外的所有日誌

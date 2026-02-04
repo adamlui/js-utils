@@ -249,7 +249,7 @@ validateStrength() » Check returned object for score/recommendations.
 `symbols`             | 布尔值 | 允许密码中包含符号。                              | `false`
 `lowercase`           | 布尔值 | 密码中允许使用小写字母。                          | `true`
 `uppercase`           | 布尔值 | 密码中允许使用大写字母。                          | `true`
-`excludeSimilarChars` | 布尔值 | 排除密码中的相似字符（例如 o、0、O、i、l、1、\|）。 | `false`
+`similarChars`        | 布尔值 | 密码中包含相似字符（例如 o、0、O、i、l、1、|）。    | `false`
 `strict`              | 布尔值 | 要求密码中每个允许的字符集中至少有一个字符。        | `false`
 `entropy`             | 布尔值 | 计算/记录估计熵。                                 | `false`
 
@@ -285,11 +285,11 @@ $ generate-pw
  -w, --weak                  生成弱密码。
  -b, --basic                 生成基本强度密码。
  -t, --strong                生成强密码。
- -n, --include-numbers       允许密码中包含数字。
- -y, --include-symbols       允许密码中包含符号。
+ -N, --no-numbers            密码中不允许包含数字。
+ -Y, --no-symbols            密码中不允许包含符号。
  -L, --no-lowercase          密码中不允许使用小写字母。
  -U, --no-uppercase          密码中不允许使用大写字母。
- -S, --no-similar            排除密码中的相似字符。
+ -r, --similar-chars         密码中包含相似字符。
  -s, --strict                要求密码中每个允许的字符集中至少有一个字符。
  -e, --entropy               计算/记录估计熵。
  -q, --quiet                 禁止除错误之外的所有日志记录。
@@ -315,11 +315,11 @@ export default {
     strength: '',               // <'weak'|'basic'|'strong'> 应用强度预设
     charset: '',                // 密码中仅包含指定的字符
     exclude: '',                // 密码中排除指定的字符
-    includeNums: false,         // 密码中允许包含数字
-    includeSymbols: false,      // 密码中允许包含符号
+    excludeNums: false,         // 密码中不允许包含数字
+    excludeSymbols: false,      // 密码中不允许包含符号
     excludeLowerChars: false,   // 密码中不允许包含小写字母
     excludeUpperChars: false,   // 密码中不允许包含大写字母
-    excludeSimilarChars: false, // 密码中排除相似字符
+    similarChars: false,        // 密码中包含相似字符
     strictMode: false,          // 密码中必须包含每个允许字符集中的至少一个字符
     entropy: false,             // 计算/记录估计熵
     quietMo​​de: false            // 除了错误信息外，抑制所有日志输出

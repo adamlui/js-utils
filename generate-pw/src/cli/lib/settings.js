@@ -8,7 +8,7 @@ module.exports = {
     configFilename: 'generate-pw.config.mjs',
 
     controls: {
-        length: { type: 'param', defaultVal: 8, regex: /^--?length(?:=.*|$)/ },
+        length: { type: 'param', defaultVal: 12, regex: /^--?length(?:=.*|$)/ },
         qty: { type: 'param', defaultVal: 1, regex: /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
         weak: { type: 'flag', mode: true, regex: /^--?weak$/ },
         basic: { type: 'flag',  mode: true, regex: /^--?basic$/ },
@@ -16,14 +16,13 @@ module.exports = {
         charset: { type: 'param', regex: /^--?charse?t?(?:=.*|$)/ },
         excludeChars: { type: 'param', regex:/^--?exclude(?:=.*|$)/ },
         config: { type: 'param', regex: /^--?config(?:=.*|$)/ },
-        includeNums: { type: 'flag', regex: /^--?(?:n|(?:include-?)?num(?:ber)?s?=?(?:true|1)?)$/ },
-        includeSymbols: { type: 'flag', regex: /^--?(?:y|(?:include-?)?symbols?=?(?:true|1)?)$/ },
+        excludeNums: { type: 'flag', regex: /^--?(?:N|(?:exclude|disable|no)-?num(?:ber)?s?=?(?:true|1)?)$/ },
+        excludeSymbols: { type: 'flag', regex: /^--?(?:Y|(?:exclude|disable|no)-?symbols?=?(?:true|1)?)$/ },
         excludeLowerChars: {
             type: 'flag', regex: /^--?(?:L|(?:exclude|disable|no)-?lower-?(?:case)?|lower-?(?:case)?=(?:false|0))$/},
         excludeUpperChars: {
             type: 'flag', regex: /^--?(?:U|(?:exclude|disable|no)-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/},
-        excludeSimilarChars: {
-            type: 'flag', regex: /^--?(?:S|(?:exclude|disable|no)-?similar-?(?:char(?:acter)?s?)?|similar-?(?:char(?:acter)?s?)?=(?:false|0))$/},
+        similarChars: { type: 'flag', regex: /^--?(?:r|(?:include-?)?similar-?chars?=?(?:true|1)?)$/ },
         strictMode: { type: 'flag', regex: /^--?s(?:trict)?(?:-?mode)?$/ },
         entropy: { type: 'flag', regex: /^--?entropy$/ },
         quietMode: { type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },

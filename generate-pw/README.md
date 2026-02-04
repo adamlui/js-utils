@@ -253,7 +253,7 @@ Name                  | Type    | Description                                   
 `symbols`             | Boolean | Allow symbols in password(s).                                                  | `false`
 `lowercase`           | Boolean | Allow lowercase letters in password(s).                                        | `true`
 `uppercase`           | Boolean | Allow uppercase letters in password(s).                                        | `true`
-`excludeSimilarChars` | Boolean | Exclude similar characters (e.g. o,0,O,i,l,1,\|) in password(s).               | `false`
+`similarChars`        | Boolean | Include similar characters (e.g. o,0,O,i,l,1,\|) in password(s).               | `false`
 `strict`              | Boolean | Require at least one character from each allowed character set in password(s). | `false`
 `entropy`             | Boolean | Calculate/log estimated entropy.                                               | `false`
 
@@ -289,11 +289,11 @@ Boolean options:
  -w, --weak                  Generate weak password(s).
  -b, --basic                 Generate basic strength password(s).
  -t, --strong                Generate strong password(s).
- -n, --include-numbers       Allow numbers in password(s).
- -y, --include-symbols       Allow symbols in password(s).
+ -N, --no-numbers            Disallow numbers in password(s).
+ -Y, --no-symbols            Disallow symbols in password(s).
  -L, --no-lowercase          Disallow lowercase letters in password(s).
  -U, --no-uppercase          Disallow uppercase letters in password(s).
- -S, --no-similar            Exclude similar characters in password(s).
+ -S, --similar-chars         Include similar characters in password(s).
  -s, --strict                Require at least one character from each
                              allowed character set in password(s).
  -e, --entropy               Calculate/log estimated entropy.
@@ -320,11 +320,11 @@ export default {
     strength: '',               // <'weak'|'basic'|'strong'> apply strength preset
     charset: '',                // only include chars in password(s)
     exclude: '',                // exclude chars from password(s)
-    includeNums: false,         // allow numbers in password(s)
-    includeSymbols: false,      // allow symbols in password(s)
+    excludeNums: false,         // disallow numbers in password(s)
+    excludeSymbols: false,      // disallow symbols in password(s)
     excludeLowerChars: false,   // disallow lowercase letters in password(s)
     excludeUpperChars: false,   // disallow uppercase letters in password(s)
-    excludeSimilarChars: false, // exclude similar chars in password(s)
+    similarChars: false,        // include similar chars in password(s)
     strictMode: false,          // require 1+ char from each allowed charset in password(s)
     entropy: false,             // calculate/log estimated entropy
     quietMode: false            // suppress all logging except errors

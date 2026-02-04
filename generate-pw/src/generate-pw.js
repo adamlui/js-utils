@@ -25,11 +25,11 @@ Object.assign(globalThis.app ??= {}, {
     },
     strengthPresets: {
         weak: {
-            length: 6,  lowercase: true, uppercase: false, numbers: false, symbols: false, excludeSimilarChars: false },
+            length: 6,  lowercase: true, uppercase: false, numbers: false, symbols: false, similarChars: true },
         basic: {
-            length: 8,  lowercase: true, uppercase: true,  numbers: true,  symbols: false, excludeSimilarChars: false },
+            length: 8,  lowercase: true, uppercase: true,  numbers: true,  symbols: false, similarChars: true },
         strong: {
-            length: 12, lowercase: true, uppercase: true,  numbers: true,  symbols: true, excludeSimilarChars: true }
+            length: 12, lowercase: true, uppercase: true,  numbers: true,  symbols: true, similarChars: false }
     }
 })
 
@@ -45,11 +45,11 @@ function generatePassword(options = {}) {
         strength: '',               // <'weak'|'basic'|'strong'> apply strength preset
         charset: '',                // characters to include
         exclude: '',                // characters to exclude
-        numbers: false,             // include numberChars
-        symbols: false,             // include symbolChars
+        numbers: true,              // include numberChars
+        symbols: true,              // include symbolChars
         lowercase: true,            // include lowercase letters
         uppercase: true,            // include uppercase letters
-        excludeSimilarChars: false, // exclude similar chars (e.g. o,0,O,i,l,1,|)
+        similarChars: false,        // include similar chars (e.g. o,0,O,i,l,1,|)
         strict: false,              // require at least one char from each enabled set
         entropy: false              // calculate/log estimated entropy (bits)
     }
@@ -91,8 +91,8 @@ function generatePassword(options = {}) {
             pwCharset = pwCharset.replace(new RegExp(`[${options.exclude}]`, 'g'), '')
         }
 
-        // Exclude similar chars if `excludeSimilarChars` is `true`
-        if (options.excludeSimilarChars) {
+        // include similar chars if `similarChars` is `true`
+        if (!options.similarChars) {
             if (options.verbose && !fromGeneratePasswords)
                 log.info('Excluding similar characters...')
             pwCharset = pwCharset.replace(/[o0Oil1|]/g, '')
@@ -142,11 +142,11 @@ function generatePasswords(qty, options = {}) {
         strength: '',               // <'weak'|'basic'|'strong'> apply strength preset
         charset: '',                // characters to include
         exclude: '',                // characters to exclude
-        numbers: false,             // include numberChars
-        symbols: false,             // include symbolChars
+        numbers: true,              // include numberChars
+        symbols: true,              // include symbolChars
         lowercase: true,            // include lowercase letters
         uppercase: true,            // include uppercase letters
-        excludeSimilarChars: false, // exclude similar chars (e.g. o,0,O,i,l,1,|)
+        similarChars: false,        // include similar chars (e.g. o,0,O,i,l,1,|)
         strict: false,              // require at least one char from each enabled set
         entropy: false              // calculate/log estimated entropy (bits)
     }

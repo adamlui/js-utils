@@ -11,16 +11,16 @@
 export default {
 
     // Size params
-    length: 8,                  // length of passwords to generate
+    length: 8,                 // length of passwords to generate
     qty: 1,                     // # of passwords to generate
 
     // Generator options
     strength: '',               // <'weak'|'basic'|'strong'> apply strength preset
-    includeNums: false,         // allow numbers in password(s)
-    includeSymbols: false,      // allow symbols in password(s)
+    excludeNums: false,         // disallow numbers in password(s)
+    excludeSymbols: false,      // disallow symbols in password(s)
     excludeLowerChars: false,   // disallow lowercase letters in password(s)
     excludeUpperChars: false,   // disallow uppercase letters in password(s)
-    excludeSimilarChars: false, // exclude similar chars in password(s)
+    similarChars: false,        // include similar chars (e.g. o,0,O,i,l,1,\|) in password(s)
     strictMode: false,          // require 1+ char from each allowed charset in password(s)
     charset: '',                // only include chars in password(s)
     exclude: '',                // exclude chars from password(s)

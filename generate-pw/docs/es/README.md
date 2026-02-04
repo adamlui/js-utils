@@ -253,7 +253,7 @@ Nombre                | Tipo     | Descripción                                 
 `symbols`             | Booleano | Permitir símbolos en la(s) contraseña(s).                                                    | `false`
 `lowercase`           | Booleano | Permitir letras minúsculas en la(s) contraseña(s).                                           | `true`
 `uppercase`           | Booleano | Permitir letras mayúsculas en la(s) contraseña(s).                                           | `true`
-`excludeSimilarChars` | Booleano | Excluya caracteres similares (por ejemplo, o,0,O,i,l,1,\|) en la(s) contraseña(s).           | `false`
+`similarChars`        | Booleano | Incluya caracteres similares (por ejemplo, o, 0, O, i, l, 1, |) en la(s) contraseña(s).      | `false`
 `strict`              | Booleano | Requiere al menos un carácter de cada carácter permitido establecido en la(s) contraseña(s). | `false`
 `entropy`             | Booleano | Calcular/registrar la entropía estimada.                                                     | `false`
 
@@ -289,11 +289,11 @@ Opciones booleanas:
  -w, --weak                  Generar contraseña(s) débil(es).
  -b, --basic                 Generar contraseña(s) de intensidad básica.
  -t, --strong                Generar contraseña(s) fuerte(s).
- -n, --include-numbers       Permitir números en contraseña(s).
- -y, --include-symbols       Permitir símbolos en la(s) contraseña(s).
+ -N, --no-numbers            No permita números en la(s) contraseña(s).
+ -Y, --no-symbols            PermitNo permita símbolos en la(s) contraseña(s).
  -L, --no-lowercase          No permitir letras minúsculas en la(s) contraseña(s).
  -U, --no-uppercase          No permitir letras mayúsculas en la(s) contraseña(s).
- -S, --no-similar            Excluya caracteres similares en la(s) contraseña(s).
+ -r, --similar-chars         Incluya caracteres similares en la(s) contraseña(s).
  -s, --strict                Requiere al menos un carácter de cada carácter permitido establecido en la(s) contraseña(s).
  -e, --entropy               Calcular/registrar la entropía estimada.
  -q, --quiet                 Suprime todos los registros excepto los errores.
@@ -312,17 +312,17 @@ Ejemplo de configuración predeterminada:
 
 ```js
 export default {
-    length: 8,                  // longitud de las contraseñas a generar
+    length: 8,                  // longitud de la(s) contraseña(s) a generar
     qty: 1,                     // cantidad de contraseñas a generar
     strength: '',               // <'weak'|'basic'|'strong'> aplicar ajuste preestablecido de intensidad
-    charset: '',                // incluir solo los caracteres especificados en las contraseñas
-    exclude: '',                // excluir los caracteres especificados de las contraseñas
-    includeNums: false,         // permitir números en las contraseñas
-    includeSymbols: false,      // permitir símbolos en las contraseñas
-    excludeLowerChars: false,   // no permitir letras minúsculas en las contraseñas
-    excludeUpperChars: false,   // no permitir letras mayúsculas en las contraseñas
-    excludeSimilarChars: false, // excluir caracteres similares en las contraseñas
-    strictMode: false,          // requerir al menos un carácter de cada conjunto de caracteres permitido en las contraseñas
+    charset: '',                // incluir solo los caracteres especificados en la(s) contraseña(s)
+    exclude: '',                // excluir los caracteres especificados de la(s) contraseña(s)
+    excludeNums: false,         // permitir números en la(s) contraseña(s)
+    excludeSymbols: false,      // permitir símbolos en la(s) contraseña(s)
+    excludeLowerChars: false,   // no permitir letras minúsculas en la(s) contraseña(s)
+    excludeUpperChars: false,   // no permitir letras mayúsculas en la(s) contraseña(s)
+    similarChars: false,        // incluya caracteres similares en la(s) contraseña(s)
+    strictMode: false,          // requerir al menos un carácter de cada conjunto de caracteres permitido en la(s) contraseña(s)
     entropy: false,             // calcular/registrar la entropía estimada
     quietMode: false            // suprimir todos los registros excepto los errores
 }

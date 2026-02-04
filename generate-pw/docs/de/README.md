@@ -253,7 +253,7 @@ Name                  | Geben Sie       | ein Beschreibung                      
 `symbols`             | Boolescher Wert | Erlaube Symbole in Passwörtern.                                                   | `false`
 `lowercase`           | Boolescher Wert | Erlauben Sie Kleinbuchstaben in Passwörtern.                                      | `true`
 `uppercase`           | Boolescher Wert | Erlauben Sie Großbuchstaben in Passwörtern.                                       | `true`
-`excludeSimilarChars` | Boolescher Wert | Schließen Sie ähnliche Zeichen (z. B. o,0,O,i,l,1,\|) in Passwörtern aus.         | `false`
+`similarChars`        | Boolescher Wert | Verwenden Sie ähnliche Zeichen (z. B. o, 0, O, i, l, 1, |) in den Passwörtern.    | `false`
 `strict`              | Boolescher Wert | Erfordern mindestens ein Zeichen aus jedem zulässigen Zeichensatz in Passwörtern. | `false`
 `entropy`             | Boolescher Wert | Berechnen/protokollieren Sie die geschätzte Entropie.                             | `false`
 
@@ -289,11 +289,11 @@ Boolesche Optionen:
  -w, --weak                  Schwache(s) Passwort(e) generieren.
  -b, --basic                 Passwörter mit mittlerer Stärke generieren.
  -t, --strong                Starke Passwörter generieren.
- -n, --include-numbers       Zahlen in Passwörtern zulassen.
- -y, --include-symbols       Erlaube Symbole in Passwörtern.
+ -N, --no-numbers            Verwenden Sie keine Zahlen in den Passwörtern.
+ -Y, --no-symbols            Verwenden Sie keine Sonderzeichen in den Passwörtern.
  -L, --no-lowercase          Kleinbuchstaben in Passwörtern nicht zulassen.
  -U, --no-uppercase          Großbuchstaben in Passwörtern nicht zulassen.
- -S, --no-similar            Schließen Sie ähnliche Zeichen in Passwörtern aus.
+ -r, --similar-chars         Verwenden Sie ähnliche Zeichen in den Passwörtern.
  -s, --strict                Erfordern mindestens ein Zeichen aus jedem zulässigen Zeichensatz in Passwörtern.
  -e, --entropy               Berechnen/protokollieren Sie die geschätzte Entropie.
  -q, --quiet                 Unterdrücken Sie alle Protokolle außer Fehlern.
@@ -319,11 +319,11 @@ export default {
     strength: '',               // <'weak'|'basic'|'strong'> Stärke-Voreinstellung anwenden
     charset: '',                // Nur die angegebenen Zeichen in den Passwörtern verwenden
     exclude: '',                // Die angegebenen Zeichen von den Passwörtern ausschließen
-    includeNums: false,         // Zahlen in den Passwörtern zulassen
-    includeSymbols: false,      // Symbole in den Passwörtern zulassen
-    excludeLowerChars: false,   // Kleinbuchstaben in den Passwörtern ausschließen
+    excludeNums: false,         // Zahlen in Passwörtern sind nicht erlaubt
+    excludeSymbols: false,      // Symbole in den Passwörtern zulassen
+    excludeLowerChars: false,   // Sonderzeichen in Passwörtern sind nicht erlaubt
     excludeUpperChars: false,   // Großbuchstaben in den Passwörtern ausschließen
-    excludeSimilarChars: false, // Ähnliche Zeichen in den Passwörtern ausschließen
+    similarChars: false,        // Verwenden Sie ähnliche Zeichen in den Passwörtern
     strictMode: false,          // Mindestens ein Zeichen aus jedem erlaubten Zeichensatz in den Passwörtern erforderlich
     entropy: false,             // Geschätzte Entropie berechnen/protokollieren
     quietMode: false            // Alle Protokollmeldungen außer Fehlern unterdrücken

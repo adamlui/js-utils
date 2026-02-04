@@ -150,7 +150,7 @@ generatePassword() » Check returned array.
 */
 ```
 
-**💡 Remarque:** Si aucune option n'est transmise, les mots de passe comporteront 8 caractères, composés de lettres majuscules et minuscules.
+**💡 Remarque:** Si aucune option n'est transmise, le(s) mot(s) de passe comporteront 8 caractères, composés de lettres majuscules et minuscules.
 
 Voir: [Options disponibles](#options-disponibles-pour-les-fonctions-generate)
 
@@ -241,21 +241,21 @@ Nom       | Taper   | Description                                     | Valeur p
 
 N'importe lequel d'entre eux peut être passé dans l'objet options pour chaque fonction `generate*()`:
 
-Nom                   | Taper   | Description                                                                                   | Valeur par défaut
-----------------------|---------|-----------------------------------------------------------------------------------------------|-------------------
-`verbose`             | Booléen | Afficher les journaux dans la console/terminal.                                               | `true`
-`length`              | Entier  | Longueur du ou des mots de passe.                                                             | `8`
-`qty`                 | Entier  | Nombre de mots de passe à générer.                                                            | `1`
-`strength`            | Chaîne  | `<'weak'\|'basic'\|'strong'>` Appliquer le niveau de sécurité prédéfini.                      | `''`
-`charset`             | Chaîne  | Caractères à inclure dans le(s) mot(s) de passe.                                              | `''`
-`exclude`             | Chaîne  | Caractères à exclure du(des) mot(s) de passe.                                                 | `''`
-`numbers`             | Booléen | Autoriser les chiffres dans les mots de passe.                                                | `false`
-`symbols`             | Booléen | Autoriser les symboles dans les mots de passe.                                                | `false`
-`lowercase`           | Booléen | Autoriser les lettres minuscules dans les mots de passe.                                      | `true`
-`uppercase`           | Booléen | Autoriser les lettres majuscules dans les mots de passe.                                      | `true`
-`excludeSimilarChars` | Booléen | Exclure les personnages similaires (e.g. o,0,O,i,l,1,\|) dans le(s) mot(s) de passe.          | `false`
-`strict`              | Booléen | Exiger au moins un caractère de chaque jeu de caractères autorisé dans le(s) mot(s) de passe. | `false`
-`entropy`             | Booléen | Calculer/enregistrer l'entropie estimée.                                                      | `false`
+Nom                   | Taper   | Description                                                                                     | Valeur par défaut
+----------------------|---------|-------------------------------------------------------------------------------------------------|-------------------
+`verbose`             | Booléen | Afficher les journaux dans la console/terminal.                                                 | `true`
+`length`              | Entier  | Longueur du ou des mots de passe.                                                               | `8`
+`qty`                 | Entier  | Nombre de mots de passe à générer.                                                              | `1`
+`strength`            | Chaîne  | `<'weak'\|'basic'\|'strong'>` Appliquer le niveau de sécurité prédéfini.                        | `''`
+`charset`             | Chaîne  | Caractères à inclure dans le(s) mot(s) de passe.                                                | `''`
+`exclude`             | Chaîne  | Caractères à exclure du(des) mot(s) de passe.                                                   | `''`
+`numbers`             | Booléen | Autoriser les chiffres dans le(s) mot(s) de passe.                                              | `false`
+`symbols`             | Booléen | Autoriser les symboles dans le(s) mot(s) de passe.                                              | `false`
+`lowercase`           | Booléen | Autoriser les lettres minuscules dans le(s) mot(s) de passe.                                    | `true`
+`uppercase`           | Booléen | Autoriser les lettres majuscules dans le(s) mot(s) de passe.                                    | `true`
+`similarChars`        | Booléen | Inclure des caractères similaires (par exemple o, 0, O, i, l, 1, |) dans le(s) mot(s) de passe. | `false`
+`strict`              | Booléen | Exiger au moins un caractère de chaque jeu de caractères autorisé dans le(s) mot(s) de passe.   | `false`
+`entropy`             | Booléen | Calculer/enregistrer l'entropie estimée.                                                        | `false`
 
 ##### _*Uniquement disponible dans [`generatePassword([options])`](#generatepasswordoptions) puisque [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) prend un argument `qty`_
 
@@ -281,7 +281,7 @@ $ generate-pw
 Options des paramètres:
  --length=n                  Générez un ou plusieurs mots de passe de longueur n.
  --qty=n                     Générez n mot(s) de passe.
- --charset=cars              Incluez uniquement des cars dans les mots de passe.
+ --charset=cars              Incluez uniquement des cars dans le(s) mot(s) de passe.
  --exclude=cars              Exclure les cars des mots de passe.
  --config="path/to/file"     Charger le fichier de configuration personnalisé.
 
@@ -289,11 +289,11 @@ Options booléennes:
  -w, --weak                  Générer des mots de passe faibles.
  -b, --basic                 Générer des mots de passe de sécurité moyenne.
  -t, --strong                Générer des mots de passe forts.
- -n, --include-numbers       Autoriser les chiffres dans les mots de passe.
- -y, --include-symbols       Autoriser les symboles dans les mots de passe.
- -L, --no-lowercase          Interdire les lettres minuscules dans les mots de passe.
- -U, --no-uppercase          Interdire les lettres majuscules dans les mots de passe.
- -S, --no-similar            Excluez les caractères similaires dans les mots de passe.
+ -N, --no-numbers            Interdire les chiffres dans le(s) mot(s) de passe.
+ -Y, --no-symbols            Interdire les symboles dans le(s) mot(s) de passe.
+ -L, --no-lowercase          Interdire les lettres minuscules dans le(s) mot(s) de passe.
+ -U, --no-uppercase          Interdire les lettres majuscules dans le(s) mot(s) de passe.
+ -r, --similar-chars         Inclure des caractères similaires dans le(s) mot(s) de passe.
  -s, --strict                Exiger au moins un caractère de chaque jeu de caractères autorisé dans le(s) mot(s) de passe.
  -e, --entropy               Calculer/enregistrer l'entropie estimée.
  -q, --quiet                 Supprime toute la journalisation, à l'exception des erreurs.
@@ -317,14 +317,14 @@ export default {
     length: 8,                  // longueur des mots de passe à générer
     qty: 1,                     // nombre de mots de passe à générer
     strength: '',               // <'weak'|'basic'|'strong'> appliquer le niveau de sécurité prédéfini
-    charset: '',                // inclure uniquement les caractères spécifiés dans les mots de passe
+    charset: '',                // inclure uniquement les caractères spécifiés dans le(s) mot(s) de passe
     exclude: '',                // exclure les caractères spécifiés des mots de passe
-    includeNums: false,         // autoriser les chiffres dans les mots de passe
-    includeSymbols: false,      // autoriser les symboles dans les mots de passe
-    excludeLowerChars: false,   // interdire les minuscules dans les mots de passe
-    excludeUpperChars: false,   // interdire les majuscules dans les mots de passe
-    excludeSimilarChars: false, // exclure les caractères similaires dans les mots de passe
-    strictMode: false,          // exiger au moins un caractère de chaque ensemble de caractères autorisé dans les mots de passe
+    excludeNums: false,         // interdire les chiffres dans le(s) mot(s) de passe
+    excludeSymbols: false,      // interdire les symboles dans le(s) mot(s) de passe
+    excludeLowerChars: false,   // interdire les minuscules dans le(s) mot(s) de passe
+    excludeUpperChars: false,   // interdire les majuscules dans le(s) mot(s) de passe
+    similarChars: false,        // Inclure des caractères similaires dans le(s) mot(s) de passe
+    strictMode: false,          // exiger au moins un caractère de chaque ensemble de caractères autorisé dans le(s) mot(s) de passe
     entropy: false,             // Calculer/enregistrer l'entropie estimée
     quietMode: false            // supprimer tous les messages de journalisation sauf les erreurs
 }
