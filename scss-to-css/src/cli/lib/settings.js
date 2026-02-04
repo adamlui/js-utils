@@ -70,8 +70,8 @@ module.exports = {
 
         // Init defaults
         ctrlKeys.forEach(key => {
-            const ctrl = this.controls[key] ; if (ctrl.type != 'param' || ctrl.mode) return
-            app.config[key] ??= ctrl.defaultVal ?? ''
+            const ctrl = this.controls[key] ; if (ctrl.mode || ctrl.type == 'cmd') return
+            app.config[key] ??= ctrl.defaultVal ?? (ctrl.type == 'flag' ? false : '')
         })
 
         // Load from config file
