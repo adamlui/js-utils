@@ -32,5 +32,5 @@ if (!app.config.jsOnly) {
 if (!app.config.dataOnly) {
     app.headerComment = `© ${app.copyrightYear} ${app.author} under the ${app.license} license.\\n`
                       + `Source: ${app.urls.src}\\nDocumentation: ${app.urls.docs}`
-    execSync(`npx minify-js src dist --no-mangle --comment="${app.headerComment}"`, { stdio: 'inherit' })
+    execSync(`npx minify-js src dist --comment="${app.headerComment}"`, { stdio: 'inherit' })
 }
