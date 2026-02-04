@@ -75,7 +75,7 @@
                 comment: app.config.comment?.replace(/\\n/g, '\n'),
                 relativeOutput: false,
                 recursive: !app.config.noRecursion,
-                dotFolders: !!app.config.includeDotFolders,
+                dotFolders: app.config.includeDotFolders,
                 sourceMaps: !app.config.noSourceMaps,
                 ignores: app.config.ignores ? app.config.ignores.split(',').map(ignore => ignore.trim()) : []
             })

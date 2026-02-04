@@ -9,21 +9,21 @@ module.exports = {
 
     controls: {
         dryRun: {
-            type: 'flag', regex: /^--?(?:n|dry-?run)$/ },
+            type: 'flag', defaultVal: false, regex: /^--?(?:n|dry-?run)$/ },
         includeDotFolders: {
-            type: 'flag', regex: /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/ },
+            type: 'flag', defaultVal: false, regex: /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/ },
         noSourceMaps: {
-            type: 'flag', regex: /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?|so?u?rce?-?maps?=(?:false|0))$/ },
+            type: 'flag', defaultVal: false, regex: /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?|so?u?rce?-?maps?=(?:false|0))$/ },
         noRecursion: {
-            type: 'flag', regex: /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/ },
+            type: 'flag', defaultVal: false, regex: /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/ },
         noMinify: {
-            type: 'flag', regex: /^--?(?:M|(?:disable|no)-?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/ },
+            type: 'flag', defaultVal: false, regex: /^--?(?:M|(?:disable|no)-?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/ },
         relativeOutput: {
-            type: 'flag', regex: /^--?(?:r|relative-?output?=?(?:true|1)?)$/ },
+            type: 'flag', defaultVal: false, regex: /^--?(?:r|relative-?output?=?(?:true|1)?)$/ },
         copy: {
-            type: 'flag', regex: /^--?c(?:opy)?$/ },
+            type: 'flag', defaultVal: false, regex: /^--?c(?:opy)?$/ },
         quietMode: {
-            type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
+            type: 'flag', defaultVal: false, regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
         ignores: {
             type: 'param', regex: /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/ },
         comment: {
@@ -67,6 +67,12 @@ module.exports = {
     },
 
     load({ args = process.argv.slice(2), ctrlKeys = Object.keys(this.controls) } = {}) {
+
+        // Init defaults
+        ctrlKeys.forEach(key => {
+            const ctrl = this.controls[key] ; if (ctrl.type == 'cmd' || ctrl.mode) return
+            app.config[key] ??= ctrl.defaultVal ?? ''
+        })
 
         // Load from config file
         let configPath = null

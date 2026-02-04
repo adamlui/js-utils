@@ -8,11 +8,11 @@ module.exports = {
     configFilename: 'generate-ip.config.mjs',
 
     controls: {
-        qty: { type: 'param', regex: /^--?qu?a?n?ti?t?y(?:=.*|$)/, parser: val => parseInt(val, 10) },
+        qty: { type: 'param', defaultVal: 1, regex: /^--?qu?a?n?ti?t?y(?:=.*|$)/, parser: val => parseInt(val, 10) },
         config: { type: 'param', regex: /^--?config(?:=.*|$)/ },
         ipv6mode: { type: 'flag', mode: true, regex: /^--?(?:ip)?v?6(?:-?mode)?$/ },
         macMode: { type: 'flag', mode: true, regex: /^--?m(?:ac)?(?:-?mode)?$/ },
-        quietMode: { type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
+        quietMode: { type: 'flag', defaultVal: false, regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
         init: { type: 'cmd', regex: /^-{0,2}i(?:nit)?$/ },
         help: { type: 'cmd', regex: /^--?h(?:elp)?$/ },
         version: { type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
@@ -47,6 +47,12 @@ module.exports = {
     },
 
     load({ args = process.argv.slice(2), ctrlKeys = Object.keys(this.controls) } = {}) {
+
+        // Init defaults
+        ctrlKeys.forEach(key => {
+            const ctrl = this.controls[key] ; if (ctrl.type == 'cmd' || ctrl.mode) return
+            app.config[key] ??= ctrl.defaultVal ?? ''
+        })
 
         // Load from config file
         let configPath = null

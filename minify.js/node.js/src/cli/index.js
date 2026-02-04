@@ -75,9 +75,9 @@
                 comment: app.config.comment?.replace(/\\n/g, '\n'),
                 relativeOutput: false,
                 recursive: !app.config.noRecursion,
-                dotFolders: !!app.config.includeDotFolders,
-                dotFiles: !!app.config.includeDotFiles,
-                rewriteImports: !!app.config.rewriteImports,
+                dotFolders: app.config.includeDotFolders,
+                dotFiles: app.config.includeDotFiles,
+                rewriteImports: app.config.rewriteImports,
                 ignores: app.config.ignores ? app.config.ignores.split(',').map(ignore => ignore.trim()) : []
             })
             if (minifyResult) {
