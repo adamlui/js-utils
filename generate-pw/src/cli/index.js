@@ -45,7 +45,7 @@
         entropy: app.config.entropy,
         verbose: !app.config.quietMode
     }
-    log.ifNotQuiet(`\n${app.msgs.info_copying}...`)
     clipboardy.writeSync([].concat(generatePassword(genOptions)).join('\n'))
+    log.ifNotQuiet(`\n${app.msgs.info_copying}...`)
 
 })()
