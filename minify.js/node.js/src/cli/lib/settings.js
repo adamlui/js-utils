@@ -43,7 +43,6 @@ module.exports = {
     },
 
     async initConfigFile(filename = this.configFilename) {
-        const data = require(`./data${ env.devMode ? '' : '.min' }.js`)
 
         const targetPath = path.resolve(process.cwd(), filename)
         if (fs.existsSync(targetPath))
@@ -54,7 +53,8 @@ module.exports = {
             fs.copyFileSync(srcPath, targetPath)
 
         else { // use jsDelivr copy
-            const jsdURL = `${app.urls.jsdelivr}/node.js/${filename}`
+            const data = require(`./data${ env.devMode ? '' : '.min' }.js`),
+                  jsdURL = `${app.urls.jsdelivr}/node.js/${filename}`
             log.data(`${app.msgs.info_fetchingRemoteConfigFrom} ${jsdURL}...`)
             try {
                 const resp = await data.fetch(jsdURL)
