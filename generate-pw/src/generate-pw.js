@@ -24,9 +24,12 @@ Object.assign(globalThis.app ??= {}, {
         symbols: '!@#$%^&*()-_=+[]{}/\\|;:\'",.<>?'
     },
     strengthPresets: {
-        weak:   { length: 6,  lowercase: true, uppercase: false, numbers: false, symbols: false },
-        basic:  { length: 8,  lowercase: true, uppercase: true,  numbers: true,  symbols: false },
-        strong: { length: 12, lowercase: true, uppercase: true,  numbers: true,  symbols: true  }
+        weak: {
+            length: 6,  lowercase: true, uppercase: false, numbers: false, symbols: false, excludeSimilarChars: false },
+        basic: {
+            length: 8,  lowercase: true, uppercase: true,  numbers: true,  symbols: false, excludeSimilarChars: false },
+        strong: {
+            length: 12, lowercase: true, uppercase: true,  numbers: true,  symbols: true, excludeSimilarChars: true }
     }
 })
 
