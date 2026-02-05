@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Konfiqurasiya faylı bir obyekti ixrac etməlidir" },
   "error_configFileNotFound": { "message": "Fayl tapılmadı" },
   "error_failedToLoadConfigFile": { "message": "Konfiqurasiya faylı yüklənmədi" },
+  "error_failedToFetchGlobalVer": { "message": "Qlobal versiyanı əldə etmək alınmadı" },
   "error_mustIncludePath": { "message": "=yol daxil edilməlidir" },
   "warn_configFileExists": { "message": "Faylı konfiqurasiya edin artıq" },
   "info_exampleValidConfigFile": { "message": "Nümunə üçün etibarlı konfiqurasiya faylı" },

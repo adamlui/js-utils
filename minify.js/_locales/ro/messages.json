@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Fișierul de configurare trebuie să exporte un obiect" },
   "error_configFileNotFound": { "message": "„Fișierul de configurare nu a fost găsit”" },
   "error_failedToLoadConfigFile": { "message": "Încărcarea fișierului de configurare a eșuat" },
+  "error_failedToFetchGlobalVer": { "message": "Versiunea globală nu a putut fi preluată" },
   "error_mustIncludePath": { "message": "trebuie să includă =cale" },
   "warn_configFileExists": { "message": "Fișierul de configurare există deja" },
   "info_exampleValidConfigFile": { "message": "Exemplu de fișier de configurare valid" },

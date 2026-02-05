@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "གཞི་སྒྲིག་ཡིག་སྣོད་ནང་ ཅ་ཆས་ཅིག་ཕྱིར་ཚོང་འབད་དགོཔ་ཨིན།" },
   "error_configFileNotFound": { "message": "སྒྲིག་འཇུག་བྱས་ཚད། ཐེངས་ 3 ལས་ཉུང་བ། ཐོན་" },
   "error_failedToLoadConfigFile": { "message": "སྒྲིག་འཇུག་བྱས་ཚད། ཐེངས་ 3 ལས་ཉུང་བ། ཐོན་རིམ་" },
+  "error_failedToFetchGlobalVer": { "message": "འཛམ་གླིང་གི་འགྱུར་བཤདཔ་འཚོལ་མ་ཚུགས།" },
   "error_mustIncludePath": { "message": "འགྲུལ་སྐྱོད་ =འགྲུལ་སྐྱོད་" },
   "warn_configFileExists": { "message": "སེལ་འཐུ་འབད་ཡོད་པའི་ཡིག་སྣོད་ཚུ་ སེལ་འཐུ་འབད།" },
   "info_exampleValidConfigFile": { "message": "དཔེ་སྒྲོམ་བདེན་པའི་སྒྲིག་གཞི་ཡིག་སྣོད་" },

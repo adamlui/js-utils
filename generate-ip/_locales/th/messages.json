@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "ไฟล์การกำหนดค่าต้องส่งออกออบเจ็กต์" },
   "error_configFileNotFound": { "message": "ไม่พบไฟล์การกำหนดค่า" },
   "error_failedToLoadConfigFile": { "message": "โหลดไฟล์การกำหนดค่าไม่สำเร็จ" },
+  "error_failedToFetchGlobalVer": { "message": "เรียกข้อมูลเวอร์ชันส่วนกลางไม่สำเร็จ" },
   "error_mustIncludePath": { "message": "ต้องมี = เส้นทาง" },
   "warn_configFileExists": { "message": "มีไฟล์การกำหนดค่าอยู่แล้ว" },
   "info_exampleValidConfigFile": { "message": "ตัวอย่างไฟล์การกำหนดค่าที่ถูกต้อง" },

@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Konfiguracijska datoteka mora izvoziti predmet" },
   "error_configFileNotFound": { "message": "Konfiguracijske datoteke ni mogoče najti" },
   "error_failedToLoadConfigFile": { "message": "Konfiguracijske datoteke ni bilo mogoče naložiti" },
+  "error_failedToFetchGlobalVer": { "message": "Globalne različice ni bilo mogoče pridobiti" },
   "error_mustIncludePath": { "message": "mora vsebovati =pot" },
   "warn_configFileExists": { "message": "Konfiguracijska datoteka že obstaja" },
   "info_exampleValidConfigFile": { "message": "Primer veljavne konfiguracijske datoteke" },

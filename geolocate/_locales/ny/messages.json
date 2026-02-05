@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Konzani fayilo iyenera kutumiza chinthu" },
   "error_configFileNotFound": { "message": "Konzani fayilo yomwe sinapezeke" },
   "error_failedToLoadConfigFile": { "message": "Kulephera kutsegula fayilo ya config" },
+  "error_failedToFetchGlobalVer": { "message": "Analephera kutenga Baibulo lonse" },
   "error_mustIncludePath": { "message": "ayenera kuphatikizapo =njira" },
   "warn_configFileExists": { "message": "Konzani fayilo yomwe ilipo kale" },
   "info_exampleValidConfigFile": { "message": "Chitsanzo chovomerezeka cha fayilo ya config" },

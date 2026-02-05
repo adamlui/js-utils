@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "కాన్ఫిగర్ ఫైల్ తప్పనిసరిగా ఒక వస్తువును ఎగుమతి చేయాలి" },
   "error_configFileNotFound": { "message": "కాన్ఫిగరేషన్ ఫైల్ కనుగొనబడలేదు" },
   "error_failedToLoadConfigFile": { "message": "కాన్ఫిగరేషన్ ఫైల్ ‌ ను లోడ్ చేయడంలో విఫలమైంది" },
+  "error_failedToFetchGlobalVer": { "message": "గ్లోబల్ వెర్షన్ ‌ ను పొందడంలో విఫలమైంది" },
   "error_mustIncludePath": { "message": "తప్పనిసరిగా కలిగి ఉండాలి =మార్గం" },
   "warn_configFileExists": { "message": "కాన్ఫిగరేషన్ ఫైల్ ఇప్పటికే ఉంది" },
   "info_exampleValidConfigFile": { "message": "ఉదాహరణ చెల్లుబాటు అయ్యే కాన్ఫిగరేషన్ ఫైల్" },

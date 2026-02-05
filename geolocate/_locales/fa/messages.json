@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "فایل پیکربندی باید یک شیء را اکسپورت کند" },
   "error_configFileNotFound": { "message": "فایل کانفیگ پیدا نشد" },
   "error_failedToLoadConfigFile": { "message": "فایل پیکربندی بارگیری نشد" },
+  "error_failedToFetchGlobalVer": { "message": "دریافت نسخه جهانی ناموفق بود" },
   "error_mustIncludePath": { "message": "باید شامل =path باشد" },
   "warn_configFileExists": { "message": "فایل پیکربندی از قبل وجود دارد" },
   "info_exampleValidConfigFile": { "message": "نمونه فایل پیکربندی معتبر" },

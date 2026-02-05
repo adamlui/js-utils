@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Agorddosiero devas eksporti objekton" },
   "error_configFileNotFound": { "message": "Agordodosiero ne trovita" },
   "error_failedToLoadConfigFile": { "message": "Fiaskis ŝargi agordodosieron" },
+  "error_failedToFetchGlobalVer": { "message": "@ info: whatsthis" },
   "error_mustIncludePath": { "message": "devas inkluzivi =vojo" },
   "warn_configFileExists": { "message": "Agordodosiero jam ekzistas" },
   "info_exampleValidConfigFile": { "message": "Ekzempla valida agordodosiero" },

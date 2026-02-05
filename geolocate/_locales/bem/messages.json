@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Fela Anikulapo Kuti Fela Anikulapo Kuti" },
   "error_configFileNotFound": { "message": "Config file taisangilwe" },
   "error_failedToLoadConfigFile": { "message": "Fela Anikulapo Kuti Config file" },
+  "error_failedToFetchGlobalVer": { "message": "Fela Anikulapo Kuti Global Version" },
   "error_mustIncludePath": { "message": "fela Anikulapo Kuti =path" },
   "warn_configFileExists": { "message": "Config file kale" },
   "info_exampleValidConfigFile": { "message": "Ifilangililo fya fipe fya fipe fya fipe" },

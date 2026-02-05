@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Konfiguraciona datoteka mora da izveze objekat" },
   "error_configFileNotFound": { "message": "Konfiguraciona datoteka nije pronađena" },
   "error_failedToLoadConfigFile": { "message": "Učitavanje konfiguracione datoteke nije uspelo" },
+  "error_failedToFetchGlobalVer": { "message": "Preuzimanje globalne verzije nije uspelo" },
   "error_mustIncludePath": { "message": "mora da sadrži =putanju" },
   "warn_configFileExists": { "message": "Konfiguraciona datoteka već postoji" },
   "info_exampleValidConfigFile": { "message": "Primer važeće konfiguracione datoteke" },

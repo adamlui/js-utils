@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Konfigurazio fitxategiak objektu bat esportatu behar du" },
   "error_configFileNotFound": { "message": "Konfigurazio fitxategia ez da aurkitu" },
   "error_failedToLoadConfigFile": { "message": "Konfigurazio fitxategia kargatzea huts egin da" },
+  "error_failedToFetchGlobalVer": { "message": "Huts egin da bertsio globala lortzean" },
   "error_mustIncludePath": { "message": "=bidea barne hartu behar du" },
   "warn_configFileExists": { "message": "Konfigurazio fitxategia dagoeneko existitzen da" },
   "info_exampleValidConfigFile": { "message": "Konfigurazio fitxategi baliodunaren adibidea" },

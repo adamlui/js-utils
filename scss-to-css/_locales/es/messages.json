@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "El archivo de configuración debe exportar un objeto" },
   "error_configFileNotFound": { "message": "Archivo de configuración no encontrado" },
   "error_failedToLoadConfigFile": { "message": "Error al cargar el archivo de configuración de la exposición" },
+  "error_failedToFetchGlobalVer": { "message": "Error al obtener la versión global" },
   "error_mustIncludePath": { "message": "must include =path" },
   "warn_configFileExists": { "message": "El archivo de configuración ya existe" },
   "info_exampleValidConfigFile": { "message": "Ejemplo de archivo de configuración válido" },

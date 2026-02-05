@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Il-fajl tal-konfigurazzjoni għandu jesporta oġġett" },
   "error_configFileNotFound": { "message": "Il-fajl tal-konfigurazzjoni ma nstabx" },
   "error_failedToLoadConfigFile": { "message": "Ma rnexxilux itella' l-fajl tal-konfig" },
+  "error_failedToFetchGlobalVer": { "message": "Ma rnexxilniex niksbu l-verżjoni globali" },
   "error_mustIncludePath": { "message": "irid jinkludi =mogħdija" },
   "warn_configFileExists": { "message": "Il-fajl tal-konfigurazzjoni diġà jeżisti" },
   "info_exampleValidConfigFile": { "message": "Eżempju ta' fajl validu tal-konfig" },

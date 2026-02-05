@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "ކޮންފިގް ފައިލް އިން އެއްޗެއް އެކްސްޕޯޓް ކުރަން ޖެހެއެވެ" },
   "error_configFileNotFound": { "message": "ކޮންފިގް ފައިލް ނުފެނެއެވެ" },
   "error_failedToLoadConfigFile": { "message": "ކޮންފިގް ފައިލް ލޯޑް ނުކުރެވުނެވެ" },
+  "error_failedToFetchGlobalVer": { "message": "ގްލޯބަލް ވާޝަން ގެނައުމަށް ނާކާމިޔާބުވިއެވެ" },
   "error_mustIncludePath": { "message": "ހިމަނަންވާނީ =މަގު" },
   "warn_configFileExists": { "message": "ކޮންފިގް ފައިލް މިހާރުވެސް އެބަހުއްޓެވެ" },
   "info_exampleValidConfigFile": { "message": "މިސާލު ސައްހަ ކޮންފިގް ފައިލް" },

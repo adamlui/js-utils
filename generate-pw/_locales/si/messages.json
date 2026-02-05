@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "වින් ‍ යාස ගොනුව වස්තුවක් අපනයනය කළ යුතුය" },
   "error_configFileNotFound": { "message": "සැකසුම් ගොනුව හමු නොවිණි" },
   "error_failedToLoadConfigFile": { "message": "සැකසුම් ගොනුව පූරණය කිරීම අසාර්ථක විය" },
+  "error_failedToFetchGlobalVer": { "message": "ගෝලීය අනුවාදය ලබා ගැනීමට අසමත් විය" },
   "error_mustIncludePath": { "message": "පථය =path" },
   "warn_configFileExists": { "message": "සැකසුම් ගොනුව දැනටමත් පවතී" },
   "info_exampleValidConfigFile": { "message": "නිදසුන වලංගු වින් ‍ යාස ගොනුව" },

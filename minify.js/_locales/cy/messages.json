@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Rhaid i'r ffeil cyfluniad allforio gwrthrych" },
   "error_configFileNotFound": { "message": "Ni chanfuwyd y ffeil cyfluniad" },
   "error_failedToLoadConfigFile": { "message": "Methu llwytho ffeil cyfluniad" },
+  "error_failedToFetchGlobalVer": { "message": "Methwyd cyrchu'r fersiwn eang" },
   "error_mustIncludePath": { "message": "rhaid cynnwys =llwybr" },
   "warn_configFileExists": { "message": "Ffeil cyfluniad yn bodoli'n barod" },
   "info_exampleValidConfigFile": { "message": "Enghraifft o ffeil cyfluniad dilys" },

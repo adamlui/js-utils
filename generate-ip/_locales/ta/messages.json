@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "கட்டமைப்பு கோப்பு ஒரு பொருளை ஏற்றுமதி செய்ய வேண்டும்" },
   "error_configFileNotFound": { "message": "கட்டமைப்பு கோப்பு காணப்படவில்லை" },
   "error_failedToLoadConfigFile": { "message": "உள்ளமைவு கோப்பை ஏற்ற முடியவில்லை" },
+  "error_failedToFetchGlobalVer": { "message": "உலகளாவிய பதிப்பைப் பெற முடியவில்லை" },
   "error_mustIncludePath": { "message": "கட்டாயம் சேர்க்க வேண்டும் =பாதை" },
   "warn_configFileExists": { "message": "கட்டமைப்பு கோப்பு ஏற்கனவே உள்ளது" },
   "info_exampleValidConfigFile": { "message": "எடுத்துக்காட்டு செல்லுபடியாகும் உள்ளமைவு கோப்பு" },

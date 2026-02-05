@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Датотеката за конфигурација мора да извезе објект" },
   "error_configFileNotFound": { "message": "Датотеката за конфигурација не е пронајдена" },
   "error_failedToLoadConfigFile": { "message": "Не успеа да се вчита конфигурациската датотека" },
+  "error_failedToFetchGlobalVer": { "message": "Не успеа да се преземе глобалната верзија" },
   "error_mustIncludePath": { "message": "мора да вклучува =патека" },
   "warn_configFileExists": { "message": "Датотеката за конфигурација веќе постои" },
   "info_exampleValidConfigFile": { "message": "Пример важечка конфигурациска датотека" },

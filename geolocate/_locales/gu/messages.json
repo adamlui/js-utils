@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "રૂપરેખાંકન ફાઇલને ઑબ્જેક્ટ નિકાસ કરવી આવશ્યક છે" },
   "error_configFileNotFound": { "message": "રૂપરેખાંકન ફાઇલ મળી નથી" },
   "error_failedToLoadConfigFile": { "message": "રૂપરેખાંકન ફાઇલ લોડ કરવામાં નિષ્ફળ" },
+  "error_failedToFetchGlobalVer": { "message": "વૈશ્વિક સંસ્કરણ મેળવવામાં નિષ્ફળ" },
   "error_mustIncludePath": { "message": "સમાવેશ કરવો જ જોઇએ =PATH" },
   "warn_configFileExists": { "message": "રૂપરેખાંકન ફાઇલ પહેલાથી જ અસ્તિત્વમાં છે" },
   "info_exampleValidConfigFile": { "message": "ઉદાહરણ માન્ય રૂપરેખાંકન ફાઇલ" },

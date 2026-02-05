@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "A lingbi a fa mbeni ye so ayeke na yâ ti mbeni mbeti so a sû na mbeti" },
   "error_configFileNotFound": { "message": "A wara mbeni zo ti kua oko pëpe" },
   "error_failedToLoadConfigFile": { "message": "A yeke na lege ni pëpe ti tene mo zia lê ti mo na ndo ti mbeni ye" },
+  "error_failedToFetchGlobalVer": { "message": "A yeke na lege ni pëpe ti wara mbeni ye so ayeke na yâ ti dunia kue" },
   "error_mustIncludePath": { "message": "a lingbi ti tene so a yeke na lege ni pëpe" },
   "warn_configFileExists": { "message": "Faïl so ayeke dä awe" },
   "info_exampleValidConfigFile": { "message": "Tapande ti faïl so ayeke na lege ni" },

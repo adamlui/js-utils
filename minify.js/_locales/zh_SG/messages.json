@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "配置文件必须导出对象" },
   "error_configFileNotFound": { "message": "未找到配置文件" },
   "error_failedToLoadConfigFile": { "message": "加载配置文件失败" },
+  "error_failedToFetchGlobalVer": { "message": "获取全局版本失败" },
   "error_mustIncludePath": { "message": "必须包含=路径" },
   "warn_configFileExists": { "message": "配置文件已存在" },
   "info_exampleValidConfigFile": { "message": "有效配置文件示例" },

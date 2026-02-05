@@ -4,19 +4,18 @@ module.exports = {
     getVer(type = 'any') { // or <'global'|'local'>
         log.prefix = 'pkg.getVer()'
         let pkgVer
-        if (['any', 'global'].includes(type)) // get global ver
-            try {
+        if (['any', 'global'].includes(type))
+            try { // get global ver
                 pkgVer = require('child_process').execSync(
                     `npm view ${JSON.stringify(cli.name)} version`
                 ).toString().trim() }
-            catch (err) { log.warn(`Failed to fetch global version: ${err.message}`) }
+            catch (err) { log.debug(`${cli.msgs.error_failedToFetchGlobalVer}: ${err.message}`) }
         if (type == 'any' && !pkgVer || type == 'local')
             try { // get local ver
-                const localManifestPath =require('path').resolve(
+                const localManifestPath = require('path').resolve(
                     process.cwd(), 'node_modules', cli.name, 'package.json')
-                if (require('fs').existsSync(localManifestPath))
-                    pkgVer = require(localManifestPath).version
-            } catch (err) { log.warn(`${cli.msgs.error_readingLocalPkgVer}:`, err.message) }
+                pkgVer = require(localManifestPath).version
+            } catch (err) { log.debug(`${cli.msgs.error_readingLocalPkgVer}: ${err.message}`) }
         return pkgVer
     }
 }

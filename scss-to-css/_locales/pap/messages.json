@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Archivo para Exportar un Objeto" },
   "error_configFileNotFound": { "message": "Archive for No Found" },
   "error_failedToLoadConfigFile": { "message": "No Cargo Config Archive" },
+  "error_failedToFetchGlobalVer": { "message": "No Te Creas Tan Importante Version Global" },
   "error_mustIncludePath": { "message": "contenido =Camino" },
   "warn_configFileExists": { "message": "Archivo ya existe" },
   "info_exampleValidConfigFile": { "message": "Documente similare cu Config File" },

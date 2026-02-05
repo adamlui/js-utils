@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Dosye Config dwe ekspòte yon objè" },
   "error_configFileNotFound": { "message": "Config dosye pa jwenn" },
   "error_failedToLoadConfigFile": { "message": "Pa t chaje dosye konfig" },
+  "error_failedToFetchGlobalVer": { "message": "Li pa t rive jwenn vèsyon mondyal la" },
   "error_mustIncludePath": { "message": "dwe gen ladan =chemen" },
   "warn_configFileExists": { "message": "Config dosye deja egziste" },
   "info_exampleValidConfigFile": { "message": "Egzanp dosye konfigirasyon ki valab" },

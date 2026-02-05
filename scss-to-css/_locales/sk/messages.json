@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Konfiguračný súbor musí exportovať objekt" },
   "error_configFileNotFound": { "message": "Konfiguračný súbor sa nenašiel" },
   "error_failedToLoadConfigFile": { "message": "Nepodarilo sa načítať konfiguračný súbor" },
+  "error_failedToFetchGlobalVer": { "message": "Nepodarilo sa načítať globálnu verziu" },
   "error_mustIncludePath": { "message": "musí obsahovať =cesta" },
   "warn_configFileExists": { "message": "Konfiguračný súbor už existuje" },
   "info_exampleValidConfigFile": { "message": "Príklad platného konfiguračného súboru" },

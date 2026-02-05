@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Konfigurācijas failam ir jāeksportē objekts" },
   "error_configFileNotFound": { "message": "Konfigurācijas fails nav atrasts" },
   "error_failedToLoadConfigFile": { "message": "Neizdevās ielādēt konfigurācijas failu" },
+  "error_failedToFetchGlobalVer": { "message": "Neizdevās iegūt globālo versiju" },
   "error_mustIncludePath": { "message": "jāietver =ceļš" },
   "warn_configFileExists": { "message": "Konfigurācijas fails jau pastāv" },
   "info_exampleValidConfigFile": { "message": "Derīga konfigurācijas faila piemērs" },

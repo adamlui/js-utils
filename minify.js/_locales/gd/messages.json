@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Feumaidh am faidhle rèiteachaidh nì a thoirt a - mach" },
   "error_configFileNotFound": { "message": "Cha deach am faidhle rèiteachaidh a lorg" },
   "error_failedToLoadConfigFile": { "message": "Dh'fhàillig le luchdadh an fhaidhle cumraíochta" },
+  "error_failedToFetchGlobalVer": { "message": "Dh'fhàillig le togail an tionndaidh choitcheann" },
   "error_mustIncludePath": { "message": "feumaidh gu bheil an t - slighe" },
   "warn_configFileExists": { "message": "Tha am faidhle rèiteachaidh ann mar - thà" },
   "info_exampleValidConfigFile": { "message": "Faidhle rèiteachaidh dligheach mar eisimpleir" },

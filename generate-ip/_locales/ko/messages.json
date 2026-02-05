@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "구성 파일은 개체를 내보내야 합니다" },
   "error_configFileNotFound": { "message": "구성 파일을 찾을 수 없습니다" },
   "error_failedToLoadConfigFile": { "message": "구성 파일을 로드하지 못했습니다" },
+  "error_failedToFetchGlobalVer": { "message": "글로벌 버전을 가져오지 못했습니다" },
   "error_mustIncludePath": { "message": "반드시 =path를 포함해야 합니다" },
   "warn_configFileExists": { "message": "구성 파일이 이미 존재합니다" },
   "info_exampleValidConfigFile": { "message": "유효한 구성 파일의 예" },

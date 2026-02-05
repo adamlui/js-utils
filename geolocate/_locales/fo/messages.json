@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Skipa fílu skal útflyta eitt objekt" },
   "error_configFileNotFound": { "message": "Finna fílu ikki funnin" },
   "error_failedToLoadConfigFile": { "message": "Miseydnaðist at lata upp konfiguratiónsfíla" },
+  "error_failedToFetchGlobalVer": { "message": "Tað eydnaðist ikki at fáa eina heildarútgávu" },
   "error_mustIncludePath": { "message": "vegur =vegur" },
   "warn_configFileExists": { "message": "Set upp fílu, sum longu er til" },
   "info_exampleValidConfigFile": { "message": "Dømi góð konfiguratiónsfíla" },

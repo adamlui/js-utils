@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Файлды конфигурациялоо объектти экспорттошу керек" },
   "error_configFileNotFound": { "message": "Файлды конфигурациялоо табылган жок" },
   "error_failedToLoadConfigFile": { "message": "Конфигурация файлын жүктөө ишке ашпады" },
+  "error_failedToFetchGlobalVer": { "message": "Дүйнөлүк нускасын алуу ишке ашпады" },
   "error_mustIncludePath": { "message": "жол =жолду камтышы керек" },
   "warn_configFileExists": { "message": "Файлды конфигурациялоо мурунтан эле бар" },
   "info_exampleValidConfigFile": { "message": "Үлгү жарактуу конфигурация файлы" },

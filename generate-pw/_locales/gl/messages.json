@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "O ficheiro de configuración debe exportar un obxecto" },
   "error_configFileNotFound": { "message": "Non se atopou o ficheiro de configuración" },
   "error_failedToLoadConfigFile": { "message": "Non foi posíbel cargar o ficheiro de configuración" },
+  "error_failedToFetchGlobalVer": { "message": "Fallou a obtención da versión global" },
   "error_mustIncludePath": { "message": "debe incluír =sendero" },
   "warn_configFileExists": { "message": "Xa existe o ficheiro de configuración" },
   "info_exampleValidConfigFile": { "message": "Exemplo de ficheiro de configuración válido" },

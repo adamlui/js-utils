@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "File konfigurasi harus mengekspor objek" },
   "error_configFileNotFound": { "message": "File konfigurasi tidak ditemukan" },
   "error_failedToLoadConfigFile": { "message": "Gagal memuat file konfigurasi" },
+  "error_failedToFetchGlobalVer": { "message": "Gagal mengambil versi global" },
   "error_mustIncludePath": { "message": "harus menyertakan =path" },
   "warn_configFileExists": { "message": "File konfigurasi sudah ada" },
   "info_exampleValidConfigFile": { "message": "Contoh file konfigurasi yang valid" },

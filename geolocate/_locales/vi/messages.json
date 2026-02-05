@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Tệp cấu hình phải xuất một đối tượng" },
   "error_configFileNotFound": { "message": "Không tìm thấy tệp cấu hình" },
   "error_failedToLoadConfigFile": { "message": "Không thể tải tệp cấu hình" },
+  "error_failedToFetchGlobalVer": { "message": "Không thể tìm nạp phiên bản toàn cầu" },
   "error_mustIncludePath": { "message": "phải bao gồm =PATH" },
   "warn_configFileExists": { "message": "Tệp cấu hình đã tồn tại" },
   "info_exampleValidConfigFile": { "message": "Ví dụ về tệp cấu hình hợp lệ" },

@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Файл канфігурацыі павінен экспартаваць аб 'ект" },
   "error_configFileNotFound": { "message": "Файл канфігурацыі не знойдзены" },
   "error_failedToLoadConfigFile": { "message": "Немагчыма загрузіць файл канфігурацыі" },
+  "error_failedToFetchGlobalVer": { "message": "Немагчыма атрымаць глабальную версію" },
   "error_mustIncludePath": { "message": "павінна ўключаць =шлях" },
   "warn_configFileExists": { "message": "Файл канфігурацыі ўжо існуе" },
   "info_exampleValidConfigFile": { "message": "Дапушчальны прыклад файла канфігурацыі" },

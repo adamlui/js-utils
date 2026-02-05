@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "कन्फिग फाइलले वस्तु निर्यात गर्नुपर्दछ" },
   "error_configFileNotFound": { "message": "कन्फिग फाइल फेला परेन" },
   "error_failedToLoadConfigFile": { "message": "कन्फिग फाइल लोड गर्न असफल भयो" },
+  "error_failedToFetchGlobalVer": { "message": "विश्वव्यापी संस्करण प्राप्त गर्न असफल भयो" },
   "error_mustIncludePath": { "message": "समावेश गर्नु पर्छ =PATH" },
   "warn_configFileExists": { "message": "कन्फिग फाइल पहिले नै अवस्थित छ" },
   "info_exampleValidConfigFile": { "message": "उदाहरण मान्य कन्फिग फाइल" },

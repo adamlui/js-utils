@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "კონფიგურაციის ფაილმა უნდა ექსპორტირება მოახდინოს ობიექტზე" },
   "error_configFileNotFound": { "message": "კონფიგურაციის ფაილი ვერ ვიპოვე" },
   "error_failedToLoadConfigFile": { "message": "კონფიგურაციის ფაილის ჩატვირთვის შეცდომა: %s" },
+  "error_failedToFetchGlobalVer": { "message": "Გლობალური ვერსიის გამოთხოვის შეცდომა" },
   "error_mustIncludePath": { "message": "უნდა შეიცავდეს =path-ს" },
   "warn_configFileExists": { "message": "კონფიგურაციის ფაილი უკვე არსებობს" },
   "info_exampleValidConfigFile": { "message": "ვალიდური კონფიგურაციის ფაილის მაგალითი" },

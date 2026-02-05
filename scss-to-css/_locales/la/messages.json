@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Forma Configuendi ad export an object" },
   "error_configFileNotFound": { "message": "Tabula Configuendi non est" },
   "error_failedToLoadConfigFile": { "message": "Failed to upload, config file" },
+  "error_failedToFetchGlobalVer": { "message": "Non potest imaginum versione global" },
   "error_mustIncludePath": { "message": "coniutere =path" },
   "warn_configFileExists": { "message": "Tabula Configuendi sunt" },
   "info_exampleValidConfigFile": { "message": "Exemplaria valid configuendum" },

@@ -9,7 +9,7 @@ module.exports = {
                 pkgVer = require('child_process').execSync(
                     `npm view ${JSON.stringify(cli.name)} version`
                 ).toString().trim() }
-            catch (err) { log.warn(`Failed to fetch global version: ${err.message}`) }
+            catch (err) { log.warn(`${cli.msgs.error_failedToFetchGlobalVer}: ${err.message}`) }
         if (type == 'any' && !pkgVer || type == 'local')
             try { // get local ver
                 const localManifestPath =require('path').resolve(

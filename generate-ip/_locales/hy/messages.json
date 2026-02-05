@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Config ֆայլը պետք է արտահանի օբյեկտ" },
   "error_configFileNotFound": { "message": "Config ֆայլը չի գտնվել" },
   "error_failedToLoadConfigFile": { "message": "Չհաջողվեց բեռնել կոնֆիգուրացիոն ֆայլը" },
+  "error_failedToFetchGlobalVer": { "message": "Չհաջողվեց ստանալ գլոբալ տարբերակը" },
   "error_mustIncludePath": { "message": "must include =path" },
   "warn_configFileExists": { "message": "Կոնֆիգ ֆայլն արդեն գոյություն ունի" },
   "info_exampleValidConfigFile": { "message": "Վավեր կոնֆիգուրացիոն ֆայլի օրինակ" },

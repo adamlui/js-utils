@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Konfigurationsfilen måste exportera ett objekt" },
   "error_configFileNotFound": { "message": "Konfigurationsfilen hittades inte" },
   "error_failedToLoadConfigFile": { "message": "Det gick inte att ladda konfigurationsfilen" },
+  "error_failedToFetchGlobalVer": { "message": "Det gick inte att hämta global version" },
   "error_mustIncludePath": { "message": "måste inkludera =sökväg" },
   "warn_configFileExists": { "message": "Konfigurationsfilen finns redan" },
   "info_exampleValidConfigFile": { "message": "Exempel på giltig konfigurationsfil" },

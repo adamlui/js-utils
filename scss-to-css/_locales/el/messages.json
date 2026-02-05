@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Το αρχείο διαμόρφωσης πρέπει να εξάγει ένα αντικείμενο" },
   "error_configFileNotFound": { "message": "Δεν βρέθηκε το αρχείο Config" },
   "error_failedToLoadConfigFile": { "message": "Αποτυχία φόρτωσης αρχείου διαμόρφωσης" },
+  "error_failedToFetchGlobalVer": { "message": "Αποτυχία λήψης καθολικής έκδοσης" },
   "error_mustIncludePath": { "message": "πρέπει να περιλαμβάνει =διαδρομή" },
   "warn_configFileExists": { "message": "Το αρχείο διαμόρφωσης υπάρχει ήδη" },
   "info_exampleValidConfigFile": { "message": "Παράδειγμα έγκυρου αρχείου διαμόρφωσης" },

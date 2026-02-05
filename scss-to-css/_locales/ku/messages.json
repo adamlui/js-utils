@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Pelê mîhengkirinê divê tiştekî hinarde bike" },
   "error_configFileNotFound": { "message": "Pelê mîhengkirinê nehat dîtin" },
   "error_failedToLoadConfigFile": { "message": "Pelê mîhengkirinê nehat barkirin" },
+  "error_failedToFetchGlobalVer": { "message": "Wergirtina guhertoya gerdûnî neserket" },
   "error_mustIncludePath": { "message": "divê =path tê de hebe" },
   "warn_configFileExists": { "message": "Pelê mîhengkirinê jixwe heye" },
   "info_exampleValidConfigFile": { "message": "Nimûneya pelê mîhengê ya derbasdar" },

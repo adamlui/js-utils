@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Конфигурационният файл трябва да експортира обект" },
   "error_configFileNotFound": { "message": "Файлът за конфигуриране не е намерен" },
   "error_failedToLoadConfigFile": { "message": "Неуспешно зареждане на конфигурационния файл" },
+  "error_failedToFetchGlobalVer": { "message": "Неуспешно извличане на глобалната версия" },
   "error_mustIncludePath": { "message": "трябва да включва =път" },
   "warn_configFileExists": { "message": "Файлът за конфигуриране вече съществува" },
   "info_exampleValidConfigFile": { "message": "Примерен валиден конфигурационен файл" },

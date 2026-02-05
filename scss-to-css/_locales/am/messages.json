@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Config ፋይል አንድ ነገር ወደ ውጭ መላክ አለበት" },
   "error_configFileNotFound": { "message": "ፋይል አልተገኘም ያዋቅሩ" },
   "error_failedToLoadConfigFile": { "message": "የተዋቀረ ፋይልን መጫን አልተሳካም" },
+  "error_failedToFetchGlobalVer": { "message": "ዓለም አቀፍ ስሪት ለማምጣት አልተሳካም" },
   "error_mustIncludePath": { "message": "ማካተት አለበት =መንገድ" },
   "warn_configFileExists": { "message": "ፋይል አስቀድሞ አለ ያዋቅሩ" },
   "info_exampleValidConfigFile": { "message": "ምሳሌ ትክክለኛ የውቅረት ፋይል" },

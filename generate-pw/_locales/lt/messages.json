@@ -14,6 +14,7 @@
   "error_invalidConfigFile": { "message": "Konfigūracijos failas turi eksportuoti objektą" },
   "error_configFileNotFound": { "message": "Konfigūracijos failas nerastas" },
   "error_failedToLoadConfigFile": { "message": "Nepavyko įkelti konfigūracijos failo" },
+  "error_failedToFetchGlobalVer": { "message": "Nepavyko gauti visuotinės versijos" },
   "error_mustIncludePath": { "message": "turi būti =kelias" },
   "warn_configFileExists": { "message": "Konfigūracijos failas jau yra" },
   "info_exampleValidConfigFile": { "message": "VALID konfigūracijos failo pavyzdys" },
