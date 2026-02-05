@@ -6,7 +6,7 @@ const fs = require('fs'),
       path = require('path'),
       uglifyJS = require('uglify-js')
 
-Object.assign(globalThis.api ??= {}, require(`${ /[\\/]src(?:[\\/]|$)/i.test(__dirname) ? '../' : './data/' }cli.json`))
+Object.assign(globalThis.api ??= {}, require(`${ /[\\/]src(?:[\\/]|$)/i.test(__dirname) ? '../' : './data/' }package-data.json`))
 api.aliases = {
     minify: ['build', 'Build', 'compile', 'Compile', 'compress', 'Compress', 'Minify'],
     findJS: ['find', 'Find', 'findjs', 'findJs', 'Findjs', 'FindJs', 'FindJS', 'search', 'Search']
