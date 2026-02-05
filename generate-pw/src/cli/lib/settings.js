@@ -10,12 +10,12 @@ module.exports = {
     controls: {
         length: { type: 'param', defaultVal: 12, regex: /^--?length(?:=.*|$)/, parser: val => parseInt(val, 10) },
         qty: { type: 'param', defaultVal: 1, regex: /^--?qu?a?n?ti?t?y(?:=.*|$)/, parser: val => parseInt(val, 10) },
-        weak: { type: 'flag', mode: true, regex: /^--?weak$/ },
-        basic: { type: 'flag',  mode: true, regex: /^--?basic$/ },
-        strong: { type: 'flag', mode: true, regex: /^--?strong$/ },
         charset: { type: 'param', regex: /^--?charse?t?(?:=.*|$)/ },
         excludeChars: { type: 'param', regex:/^--?exclude(?:=.*|$)/ },
         config: { type: 'param', regex: /^--?config(?:=.*|$)/ },
+        weak: { type: 'flag', mode: true, regex: /^--?weak$/ },
+        basic: { type: 'flag',  mode: true, regex: /^--?basic$/ },
+        strong: { type: 'flag', mode: true, regex: /^--?strong$/ },
         excludeNums: { type: 'flag', regex: /^--?(?:N|(?:exclude|disable|no)-?num(?:ber)?s?=?(?:true|1)?)$/ },
         excludeSymbols: { type: 'flag', regex: /^--?(?:Y|(?:exclude|disable|no)-?symbols?=?(?:true|1)?)$/ },
         excludeLowerChars: {
