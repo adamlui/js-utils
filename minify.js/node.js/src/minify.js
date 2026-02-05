@@ -232,10 +232,10 @@ function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
 }
 
 const log = {
-    prefix: app.name,
+    prefix: api.name,
 
     error(...args) { console.error(`${this.prefix} » ERROR:`, ...args) },
-    helpURL(url = app.urls?.docs) { this.info('For more help, please visit', url) },
+    helpURL(url = api.urls?.docs) { this.info('For more help, please visit', url) },
     info(...args) { console.info(`${this.prefix} »`, ...args) },
 
     validOptions(options) {
