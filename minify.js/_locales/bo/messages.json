@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "རིམ་སྒྲིག་ཡིག་ཆ་བཟོས་ཟིན།" },
   "info_fetchingRemoteConfigFrom": { "message": "ཐག་རིང་གི་སྒྲིག་ཡིག་ཆ་ནས་ཐོབ་པ །" },
   "warn_remoteConfigNotFound": { "message": "སྒྲིག་འཇུག་བྱས་ཚད ། ཐེངས་10 ལས་ཉུང་བ ། ཐོན་རིམ་5.7.1 ནང་དུ་ཚོད་ལྟ་བྱས་" },
-  "warn_remoteConfigFailed": { "message": "སྒྲིག་འཇུག་བྱས་ཚད ། ཐེངས་10 ལས་ཉུང་བ ། ཐོན་རིམ་5.7.1 ནང་དུ་ཚོད་ལྟ་བྱས་" },
+  "warn_remoteConfigFailed": { "message": "Remote Config File འཚོལ་རྒྱུ་མ་ཐུབ་པ" },
   "tip_editToSetDefaults": { "message": "ཡིག་ཆ་འདི་རང་སོ་སོར་བཟོ་བཅོས་བྱེད་པ" },
   "tip_cliArgsPrioritized": { "message": "CLI གྲོས་བསྡུར་གྱིས་གོང་གི་རྩ་བ་རྣམས་རྒྱུན་དུ་འགོག་པར་བྱེད །" },
   "helpSection_usage": { "message": "བཀོལ་སྤྱོད །" },

@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Stillingaskrá búin til" },
   "info_fetchingRemoteConfigFrom": { "message": "Sæki fjarstillingarskrá frá" },
   "warn_remoteConfigNotFound": { "message": "Fjarstýrð stillingaskrá fannst ekki" },
-  "warn_remoteConfigFailed": { "message": "Fjarstýrð stillingaskrá fannst ekki" },
+  "warn_remoteConfigFailed": { "message": "Ekki tókst að sækja fjarstillingarskrá" },
   "tip_editToSetDefaults": { "message": "Breyttu þessari skrá til að sérsníða sjálfgefin gildi" },
   "tip_cliArgsPrioritized": { "message": "CLI rök hníga alltaf að þessum gildum" },
   "helpSection_usage": { "message": "Notkun" },

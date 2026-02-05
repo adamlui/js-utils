@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Config file created" },
   "info_fetchingRemoteConfigFrom": { "message": "Fetching remote config file from" },
   "warn_remoteConfigNotFound": { "message": "Remote config file not found" },
-  "warn_remoteConfigFailed": { "message": "Remote config file not found" },
+  "warn_remoteConfigFailed": { "message": "Failed to fetch remote config file" },
   "tip_editToSetDefaults": { "message": "Edit this file to customize defaults" },
   "tip_cliArgsPrioritized": { "message": "CLI arguments always override these values" },
   "helpSection_usage": { "message": "Usage" },

@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Ýaradylan faýly konfigur et" },
   "info_fetchingRemoteConfigFrom": { "message": "Uzakdan konfigurasiýa faýlyny al" },
   "warn_remoteConfigNotFound": { "message": "Uzakdan konfigurasiýa faýly tapylmady" },
-  "warn_remoteConfigFailed": { "message": "Uzakdan konfigurasiýa faýly tapylmady" },
+  "warn_remoteConfigFailed": { "message": "Uzakdan konfigurasiýa faýly alynmady" },
   "tip_editToSetDefaults": { "message": "Bu faýly düzedişler üçin düzediş et" },
   "tip_cliArgsPrioritized": { "message": "CLI jedelleri hemişe bu gymmatlary äsgermezlik edýär" },
   "helpSection_usage": { "message": "Uzaklyk" },

@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "कॉन्फ़िग फ़ाइल बनाई गई" },
   "info_fetchingRemoteConfigFrom": { "message": "से रिमोट कॉन्फ़िगरेशन फ़ाइल ला रहा है" },
   "warn_remoteConfigNotFound": { "message": "रिमोट कॉन्फ़िगरेशन फ़ाइल नहीं मिली" },
-  "warn_remoteConfigFailed": { "message": "रिमोट कॉन्फ़िगरेशन फ़ाइल नहीं मिली" },
+  "warn_remoteConfigFailed": { "message": "रिमोट कॉन्फ़िगरेशन फ़ाइल लाने में विफल" },
   "tip_editToSetDefaults": { "message": "डिफ़ॉल्ट को कस्टमाइज़ करने के लिए इस फ़ाइल में बदलाव करें" },
   "tip_cliArgsPrioritized": { "message": "सीएलआई तर्क हमेशा इन मूल्यों को ओवरराइड करते हैं" },
   "helpSection_usage": { "message": "उपयोग" },

@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Lungiselela ifayela elakhiwe" },
   "info_fetchingRemoteConfigFrom": { "message": "Ilanda ifayela lokulungisa elikude kusuka" },
   "warn_remoteConfigNotFound": { "message": "Ifayela lokulungisa kude alitholakali" },
-  "warn_remoteConfigFailed": { "message": "Ifayela lokulungisa kude alitholakali" },
+  "warn_remoteConfigFailed": { "message": "Yehlulekile ukulanda ifayela lokumisa elikude" },
   "tip_editToSetDefaults": { "message": "Hlela leli fayela ukuze uqoke okuzenzakalelayo" },
   "tip_cliArgsPrioritized": { "message": "Izimpikiswano ze-CLI zihlala zichitha lezi zindinganiso" },
   "helpSection_usage": { "message": "Ukusetshenziswa" },

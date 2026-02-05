@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Конфигуриране на създаден файл" },
   "info_fetchingRemoteConfigFrom": { "message": "Извличане на отдалечен конфигурационен файл от" },
   "warn_remoteConfigNotFound": { "message": "Отдалеченият конфигурационен файл не е намерен" },
-  "warn_remoteConfigFailed": { "message": "Отдалеченият конфигурационен файл не е намерен" },
+  "warn_remoteConfigFailed": { "message": "Неуспешно извличане на отдалечен конфигурационен файл" },
   "tip_editToSetDefaults": { "message": "Редактирайте този файл, за да персонализирате настройките по подразбиране" },
   "tip_cliArgsPrioritized": { "message": "CLI аргументите винаги заменят тези стойности" },
   "helpSection_usage": { "message": "Използван" },

@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Gihimo ang file sa config" },
   "info_fetchingRemoteConfigFrom": { "message": "Pagkuha sa hilit nga config file gikan sa" },
   "warn_remoteConfigNotFound": { "message": "Wala nakit-an ang hilit nga file sa config" },
-  "warn_remoteConfigFailed": { "message": "Wala nakit-an ang hilit nga file sa config" },
+  "warn_remoteConfigFailed": { "message": "Napakyas sa pagkuha sa hilit nga config file" },
   "tip_editToSetDefaults": { "message": "I-edit kini nga file aron ipasadya ang mga default" },
   "tip_cliArgsPrioritized": { "message": "Ang mga argumento sa CLI kanunay nga nag-override sa kini nga mga kantidad" },
   "helpSection_usage": { "message": "Usage" },

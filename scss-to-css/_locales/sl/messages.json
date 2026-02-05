@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Konfiguracijska datoteka je ustvarjena" },
   "info_fetchingRemoteConfigFrom": { "message": "Pridobivanje oddaljene konfiguracijske datoteke iz" },
   "warn_remoteConfigNotFound": { "message": "Oddaljene konfiguracijske datoteke ni mogoče najti" },
-  "warn_remoteConfigFailed": { "message": "Oddaljene konfiguracijske datoteke ni mogoče najti" },
+  "warn_remoteConfigFailed": { "message": "Oddaljene konfiguracijske datoteke ni bilo mogoče pridobiti" },
   "tip_editToSetDefaults": { "message": "Uredite to datoteko, da prilagodite privzete nastavitve" },
   "tip_cliArgsPrioritized": { "message": "Argumenti CLI vedno preglasijo te vrednosti" },
   "helpSection_usage": { "message": "Raba" },

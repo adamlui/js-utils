@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Файл налаштувань створено" },
   "info_fetchingRemoteConfigFrom": { "message": "Отримання віддаленого файлу налаштувань з" },
   "warn_remoteConfigNotFound": { "message": "Файл віддаленої конфігурації не знайдено" },
-  "warn_remoteConfigFailed": { "message": "Файл віддаленої конфігурації не знайдено" },
+  "warn_remoteConfigFailed": { "message": "Не вдалося отримати файл віддаленої конфігурації" },
   "tip_editToSetDefaults": { "message": "Відредагуйте цей файл, щоб налаштувати параметри за замовчуванням" },
   "tip_cliArgsPrioritized": { "message": "Аргументи CLI завжди перевизначають ці значення" },
   "helpSection_usage": { "message": "Використання" },

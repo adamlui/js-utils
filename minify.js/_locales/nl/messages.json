@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Configuratiebestand aangemaakt" },
   "info_fetchingRemoteConfigFrom": { "message": "Ophalen van extern configuratiebestand van" },
   "warn_remoteConfigNotFound": { "message": "Configuratiebestand op afstand niet gevonden" },
-  "warn_remoteConfigFailed": { "message": "Configuratiebestand op afstand niet gevonden" },
+  "warn_remoteConfigFailed": { "message": "Kon configuratiebestand op afstand niet ophalen" },
   "tip_editToSetDefaults": { "message": "Bewerk dit bestand om de standaardinstellingen aan te passen" },
   "tip_cliArgsPrioritized": { "message": "CLI-argumenten overschrijven altijd deze waarden" },
   "helpSection_usage": { "message": "Gebruik" },

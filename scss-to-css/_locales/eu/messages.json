@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Konfigurazio fitxategia sortu da" },
   "info_fetchingRemoteConfigFrom": { "message": "Urruneko konfigurazio fitxategia hemendik eskuratzen" },
   "warn_remoteConfigNotFound": { "message": "Ez da urruneko konfigurazio fitxategia aurkitu" },
-  "warn_remoteConfigFailed": { "message": "Ez da urruneko konfigurazio fitxategia aurkitu" },
+  "warn_remoteConfigFailed": { "message": "Ezin izan da urruneko konfigurazio fitxategia eskuratu" },
   "tip_editToSetDefaults": { "message": "Editatu fitxategi hau lehenetsitako balioak pertsonalizatzeko" },
   "tip_cliArgsPrioritized": { "message": "CLI argumentuek beti gainidazten dituzte balio hauek" },
   "helpSection_usage": { "message": "Erabilpena" },

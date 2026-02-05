@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Konfigim wanpela fail ol i bin wokim" },
   "info_fetchingRemoteConfigFrom": { "message": "Kisim Remote Config File" },
   "warn_remoteConfigNotFound": { "message": "Ol i no painim wanpela hap bilong dispela hap" },
-  "warn_remoteConfigFailed": { "message": "Ol i no painim wanpela hap bilong dispela hap" },
+  "warn_remoteConfigFailed": { "message": "I no gat rot long painim wanpela remote config file" },
   "tip_editToSetDefaults": { "message": "Edit this file to customise default" },
   "tip_cliArgsPrioritized": { "message": "Ol tok bilong CLI i save daunim ol dispela mak" },
   "helpSection_usage": { "message": "Yusim" },

@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "File konfigurasi dibuat" },
   "info_fetchingRemoteConfigFrom": { "message": "Mengambil file konfigurasi jarak jauh dari" },
   "warn_remoteConfigNotFound": { "message": "File konfigurasi jarak jauh tidak ditemukan" },
-  "warn_remoteConfigFailed": { "message": "File konfigurasi jarak jauh tidak ditemukan" },
+  "warn_remoteConfigFailed": { "message": "Gagal mengambil file konfigurasi jarak jauh" },
   "tip_editToSetDefaults": { "message": "Edit file ini untuk menyesuaikan default" },
   "tip_cliArgsPrioritized": { "message": "Argumen CLI selalu mengesampingkan nilai - nilai ini" },
   "helpSection_usage": { "message": "Cara Pakai" },

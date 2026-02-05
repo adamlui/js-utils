@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Set upp fílu, sum er skapt" },
   "info_fetchingRemoteConfigFrom": { "message": "Fáa fjarskipað konfiguratiónsfíli frá" },
   "warn_remoteConfigNotFound": { "message": "Fjarskiftisfíla ikki funnin" },
-  "warn_remoteConfigFailed": { "message": "Fjarskiftisfíla ikki funnin" },
+  "warn_remoteConfigFailed": { "message": "Miseydnaðist at fáa fjarskiftis konfiguratiónsfílu" },
   "tip_editToSetDefaults": { "message": "Rætta hesa fílu fyri at tillaga feilir" },
   "tip_cliArgsPrioritized": { "message": "CLI argumentir altíð ignorera hesi virðir" },
   "helpSection_usage": { "message": "Brúka" },

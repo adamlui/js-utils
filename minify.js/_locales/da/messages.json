@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Konfigurationsfil oprettet" },
   "info_fetchingRemoteConfigFrom": { "message": "Henter fjernkonfigurationsfil fra" },
   "warn_remoteConfigNotFound": { "message": "Fjernkonfigurationsfil ikke fundet" },
-  "warn_remoteConfigFailed": { "message": "Fjernkonfigurationsfil ikke fundet" },
+  "warn_remoteConfigFailed": { "message": "Kunne ikke hente fjernkonfigurationsfil" },
   "tip_editToSetDefaults": { "message": "Rediger denne fil for at tilpasse standardindstillinger" },
   "tip_cliArgsPrioritized": { "message": "CLI-argumenter tilsidesætter altid disse værdier" },
   "helpSection_usage": { "message": "Anvendelse" },

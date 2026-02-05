@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Sanidi faili iliyoundwa" },
   "info_fetchingRemoteConfigFrom": { "message": "Inakusanya faili ya usanidi wa mbali kutoka" },
   "warn_remoteConfigNotFound": { "message": "Faili la usanidi wa mbali halijapatikana" },
-  "warn_remoteConfigFailed": { "message": "Faili la usanidi wa mbali halijapatikana" },
+  "warn_remoteConfigFailed": { "message": "Imeshindwa kupata faili ya usanidi wa mbali" },
   "tip_editToSetDefaults": { "message": "Hariri faili hili ili ubadilishe chaguo-msingi" },
   "tip_cliArgsPrioritized": { "message": "Hoja za CLI kila wakati zinabatilisha maadili haya" },
   "helpSection_usage": { "message": "Matumizi" },

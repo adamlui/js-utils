@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "ဖန်တီးထားသောဖိုင်ကိုစီစဉ်ပါ" },
   "info_fetchingRemoteConfigFrom": { "message": "အဝေးမှ config ဖိုင်ကို ရယူနေသည်" },
   "warn_remoteConfigNotFound": { "message": "အဝေးမှ config ဖိုင်ကိုရှာမတွေ့ပါ" },
-  "warn_remoteConfigFailed": { "message": "အဝေးမှ config ဖိုင်ကိုရှာမတွေ့ပါ" },
+  "warn_remoteConfigFailed": { "message": "အဝေးထိန်း config ဖိုင်ကို ရယူရန် မအောင်မြင်ပါ" },
   "tip_editToSetDefaults": { "message": "ပုံသေသတ်မှတ်ချက်များကို စိတ်ကြိုက်ပြုပြင်ရန် ဤဖိုင်ကို တည်းဖြတ်ပါ" },
   "tip_cliArgsPrioritized": { "message": "CLI အငြင်းပွားမှုသည် ဤတန်ဖိုးများကို အမြဲတမ်း ပယ်ဖျက်သည်" },
   "helpSection_usage": { "message": "အသုံးပြုမှု့" },

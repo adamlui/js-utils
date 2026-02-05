@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Chaidh am faidhle rèiteachaidh a chruthachadh" },
   "info_fetchingRemoteConfigFrom": { "message": "A 'faighinn faidhle cianalais rèiteachaidh o" },
   "warn_remoteConfigNotFound": { "message": "Cha deach am faidhle cumraíochta iomallach a lorg" },
-  "warn_remoteConfigFailed": { "message": "Cha deach am faidhle cumraíochta iomallach a lorg" },
+  "warn_remoteConfigFailed": { "message": "Dh'fhàillig le togail an fhaidhle cumraíochta iomallach" },
   "tip_editToSetDefaults": { "message": "Deasaich am faidhle seo gus na roghainnean bunaiteach a ghnàthachadh" },
   "tip_cliArgsPrioritized": { "message": "Tha argamaidean CLI an - còmhnaidh a 'dol thairis air na luachan sin" },
   "helpSection_usage": { "message": "Cleachdadh" },

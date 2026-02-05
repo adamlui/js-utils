@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "فایل پیکربندی ایجاد شد" },
   "info_fetchingRemoteConfigFrom": { "message": "دریافت فایل پیکربندی از راه دور" },
   "warn_remoteConfigNotFound": { "message": "فایل پیکربندی ریموت پیدا نشد" },
-  "warn_remoteConfigFailed": { "message": "فایل پیکربندی ریموت پیدا نشد" },
+  "warn_remoteConfigFailed": { "message": "دریافت فایل پیکربندی از راه دور ناموفق بود" },
   "tip_editToSetDefaults": { "message": "برای سفارشی‌سازی پیش‌فرض‌ها، این فایل را ویرایش کنید" },
   "tip_cliArgsPrioritized": { "message": "آرگومان‌های CLI همیشه این مقادیر را لغو می‌کنند" },
   "helpSection_usage": { "message": "کاربرد" },

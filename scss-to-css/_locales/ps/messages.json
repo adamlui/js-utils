@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "د تنظیم فایل جوړ شو" },
   "info_fetchingRemoteConfigFrom": { "message": "څخه د لرې سازونې دوتنې په لېښلو سره" },
   "warn_remoteConfigNotFound": { "message": "لر سازونې دوتنه ونه موندل شوه" },
-  "warn_remoteConfigFailed": { "message": "لر سازونې دوتنه ونه موندل شوه" },
+  "warn_remoteConfigFailed": { "message": "د لرې سازونې دوتنې په راوستلو کې پاتې راغی" },
   "tip_editToSetDefaults": { "message": "دا دوتنه د تلوالې دوديزولو لپاره سمول" },
   "tip_cliArgsPrioritized": { "message": "د CLI دلیلونه تل دا ارزښتونه له پامه غورځوي" },
   "helpSection_usage": { "message": "کارونه" },

@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "રૂપરેખાંકન ફાઇલ બનાવવામાં આવી" },
   "info_fetchingRemoteConfigFrom": { "message": "માંથી દૂરસ્થ રૂપરેખાંકન ફાઇલ લાવી રહ્યા છીએ" },
   "warn_remoteConfigNotFound": { "message": "દૂરસ્થ રૂપરેખાંકન ફાઇલ મળી નથી" },
-  "warn_remoteConfigFailed": { "message": "દૂરસ્થ રૂપરેખાંકન ફાઇલ મળી નથી" },
+  "warn_remoteConfigFailed": { "message": "દૂરસ્થ રૂપરેખાંકન ફાઇલને મેળવવામાં નિષ્ફળતા" },
   "tip_editToSetDefaults": { "message": "ડિફોલ્ટ્સને કસ્ટમાઇઝ કરવા માટે આ ફાઇલને સંપાદિત કરો" },
   "tip_cliArgsPrioritized": { "message": "CLI દલીલો હંમેશા આ મૂલ્યોને ઓવરરાઇડ કરે છે" },
   "helpSection_usage": { "message": "વપરાશ" },

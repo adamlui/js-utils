@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Utworzono plik konfiguracyjny" },
   "info_fetchingRemoteConfigFrom": { "message": "Pobieranie zdalnego pliku konfiguracyjnego z" },
   "warn_remoteConfigNotFound": { "message": "Nie znaleziono zdalnego pliku konfiguracyjnego" },
-  "warn_remoteConfigFailed": { "message": "Nie znaleziono zdalnego pliku konfiguracyjnego" },
+  "warn_remoteConfigFailed": { "message": "Nie udało się pobrać zdalnego pliku konfiguracyjnego" },
   "tip_editToSetDefaults": { "message": "Edytuj ten plik, aby dostosować ustawienia domyślne" },
   "tip_cliArgsPrioritized": { "message": "Argumenty CLI zawsze zastępują te wartości" },
   "helpSection_usage": { "message": "Używanie" },

@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Datei konfiguréieren" },
   "info_fetchingRemoteConfigFrom": { "message": "Fang Fernkonfiguratiounsdatei aus" },
   "warn_remoteConfigNotFound": { "message": "Distanzkonfiguratiounsdatei net fonnt" },
-  "warn_remoteConfigFailed": { "message": "Distanzkonfiguratiounsdatei net fonnt" },
+  "warn_remoteConfigFailed": { "message": "Konnt d'Fernconfiguratiounsdatei net fannen" },
   "tip_editToSetDefaults": { "message": "Änneren dës Datei fir Standarden unzepassen" },
   "tip_cliArgsPrioritized": { "message": "CLI Argumenter iwwerschreiden ëmmer dës Wäerter" },
   "helpSection_usage": { "message": "Benotzung" },

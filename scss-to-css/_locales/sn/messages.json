@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Gadzirisa faira rakagadzirwa" },
   "info_fetchingRemoteConfigFrom": { "message": "Kutora kure config faira kubva" },
   "warn_remoteConfigNotFound": { "message": "Faira rekugadzirisa riri kure harina kuwanikwa" },
-  "warn_remoteConfigFailed": { "message": "Faira rekugadzirisa riri kure harina kuwanikwa" },
+  "warn_remoteConfigFailed": { "message": "Akakundikana kutora faira rekugadzirisa riri kure" },
   "tip_editToSetDefaults": { "message": "Gadzirisa faira iri kuti rigadzirise zvikanganiso" },
   "tip_cliArgsPrioritized": { "message": "Makakatanwa eCLI anogara achikurira tsika idzi" },
   "helpSection_usage": { "message": "Kushandiswa" },

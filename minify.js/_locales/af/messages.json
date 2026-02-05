@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Konfigureer lêer geskep" },
   "info_fetchingRemoteConfigFrom": { "message": "Haal afgeleë konfigurasielêer van" },
   "warn_remoteConfigNotFound": { "message": "Afgeleë konfigurasielêer nie gevind nie" },
-  "warn_remoteConfigFailed": { "message": "Afgeleë konfigurasielêer nie gevind nie" },
+  "warn_remoteConfigFailed": { "message": "Kon nie afgeleë konfigurasielêer gaan haal nie" },
   "tip_editToSetDefaults": { "message": "Redigeer hierdie lêer om verstek aan te pas" },
   "tip_cliArgsPrioritized": { "message": "CLI argumente ignoreer altyd hierdie waardes" },
   "helpSection_usage": { "message": "Gebruik" },

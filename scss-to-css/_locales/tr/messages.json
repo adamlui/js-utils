@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Yapılandırma dosyası oluşturuldu" },
   "info_fetchingRemoteConfigFrom": { "message": "Uzaktan yapılandırma dosyası şuradan alınıyor:" },
   "warn_remoteConfigNotFound": { "message": "Uzak yapılandırma dosyası bulunamadı" },
-  "warn_remoteConfigFailed": { "message": "Uzak yapılandırma dosyası bulunamadı" },
+  "warn_remoteConfigFailed": { "message": "Uzak yapılandırma dosyası alınamadı" },
   "tip_editToSetDefaults": { "message": "Varsayılanları özelleştirmek için bu dosyayı düzenleyin" },
   "tip_cliArgsPrioritized": { "message": "CLI argümanları her zaman bu değerleri geçersiz kılar" },
   "helpSection_usage": { "message": "Kullanım" },

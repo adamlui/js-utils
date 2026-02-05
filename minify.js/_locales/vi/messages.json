@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Đã tạo tệp cấu hình" },
   "info_fetchingRemoteConfigFrom": { "message": "Đang tìm nạp tệp cấu hình từ xa từ" },
   "warn_remoteConfigNotFound": { "message": "Không tìm thấy tệp cấu hình từ xa" },
-  "warn_remoteConfigFailed": { "message": "Không tìm thấy tệp cấu hình từ xa" },
+  "warn_remoteConfigFailed": { "message": "Không thể tìm nạp tệp cấu hình từ xa" },
   "tip_editToSetDefaults": { "message": "Chỉnh sửa tệp này để tùy chỉnh mặc định" },
   "tip_cliArgsPrioritized": { "message": "Các đối số CLI luôn ghi đè các giá trị này" },
   "helpSection_usage": { "message": "Công dụng" },

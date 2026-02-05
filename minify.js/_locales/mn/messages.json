@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Үүсгэсэн тохиргооны файл" },
   "info_fetchingRemoteConfigFrom": { "message": "-с зайнаас тохируулгын файлыг татаж авах" },
   "warn_remoteConfigNotFound": { "message": "Алсын тохиргооны файл олдсонгүй" },
-  "warn_remoteConfigFailed": { "message": "Алсын тохиргооны файл олдсонгүй" },
+  "warn_remoteConfigFailed": { "message": "Алсын тохиргооны файлыг авч чадсангүй" },
   "tip_editToSetDefaults": { "message": "Өгөгдмөлийг өөрчлөхийн тулд энэ файлыг засах" },
   "tip_cliArgsPrioritized": { "message": "CLI аргументууд нь үргэлж эдгээр утгуудыг хэтрүүлэн хэрэглэдэг" },
   "helpSection_usage": { "message": "Хэрэглээ" },

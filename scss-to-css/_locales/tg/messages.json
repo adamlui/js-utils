@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Батанзимдарории файли эҷодшуда" },
   "info_fetchingRemoteConfigFrom": { "message": "Кушодани файли конфигуратсияи дурдаст аз" },
   "warn_remoteConfigNotFound": { "message": "Файли конфигуратсияи дурдаст ёфт нашуд" },
-  "warn_remoteConfigFailed": { "message": "Файли конфигуратсияи дурдаст ёфт нашуд" },
+  "warn_remoteConfigFailed": { "message": "Файли конфигуратсияи дурдаст гирифта нашуд" },
   "tip_editToSetDefaults": { "message": "I-edit ang file na ito upang i-customize ang mga default" },
   "tip_cliArgsPrioritized": { "message": "Аргументҳои CLI ҳамеша ин арзишҳоро бартарӣ медиҳанд" },
   "helpSection_usage": { "message": "Истифодабарӣ" },

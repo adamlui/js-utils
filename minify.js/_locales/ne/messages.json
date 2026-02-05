@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "कन्फिग फाइल सिर्जना गरियो" },
   "info_fetchingRemoteConfigFrom": { "message": "यसबाट टाढाको कन्फिग फाइल तान्दै" },
   "warn_remoteConfigNotFound": { "message": "टाढाको कन्फिग फाइल फेला परेन" },
-  "warn_remoteConfigFailed": { "message": "टाढाको कन्फिग फाइल फेला परेन" },
+  "warn_remoteConfigFailed": { "message": "टाढाको कन्फिग फाइल तान्न असफल भयो" },
   "tip_editToSetDefaults": { "message": "पूर्वनिर्धारितहरू अनुकूलन गर्न यो फाइल सम्पादन गर्नुहोस्" },
   "tip_cliArgsPrioritized": { "message": "CLI तर्कहरूले सधैं यी मानहरूलाई ओभरराइड गर्दछ" },
   "helpSection_usage": { "message": "प्रयोग" },

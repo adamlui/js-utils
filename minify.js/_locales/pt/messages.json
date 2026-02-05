@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Ficheiro de configuração criado" },
   "info_fetchingRemoteConfigFrom": { "message": "A obter o ficheiro de configuração remota de" },
   "warn_remoteConfigNotFound": { "message": "Arquivo de configuração remoto não encontrado" },
-  "warn_remoteConfigFailed": { "message": "Arquivo de configuração remoto não encontrado" },
+  "warn_remoteConfigFailed": { "message": "Falha ao obter o ficheiro de configuração remoto" },
   "tip_editToSetDefaults": { "message": "Edite este ficheiro para personalizar os padrões" },
   "tip_cliArgsPrioritized": { "message": "Os argumentos CLI sempre substituem esses valores" },
   "helpSection_usage": { "message": "Uso" },

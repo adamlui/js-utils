@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "נוצר קובץ תצורה" },
   "info_fetchingRemoteConfigFrom": { "message": "מאחזר קובץ תצורה מרחוק מ -" },
   "warn_remoteConfigNotFound": { "message": "קובץ התצורה מרחוק לא נמצא" },
-  "warn_remoteConfigFailed": { "message": "קובץ התצורה מרחוק לא נמצא" },
+  "warn_remoteConfigFailed": { "message": "טעינת קובץ התצורה מרחוק נכשלה" },
   "tip_editToSetDefaults": { "message": "ערוך קובץ זה כדי להתאים אישית את ברירות המחדל" },
   "tip_cliArgsPrioritized": { "message": "ארגומנטים של CLI תמיד גוברים על ערכים אלה" },
   "helpSection_usage": { "message": "שימוש" },

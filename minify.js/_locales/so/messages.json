@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Qalabaynta faylka la abuuray" },
   "info_fetchingRemoteConfigFrom": { "message": "Fetching faylka qaabeynta fog ka" },
   "warn_remoteConfigNotFound": { "message": "Faylka qaabeynta fog lama helin" },
-  "warn_remoteConfigFailed": { "message": "Faylka qaabeynta fog lama helin" },
+  "warn_remoteConfigFailed": { "message": "Ku guuldareystay inuu soo qaado faylka qaabeynta fog" },
   "tip_editToSetDefaults": { "message": "Wax ka beddel faylkan si aad u habeyso cilladaha" },
   "tip_cliArgsPrioritized": { "message": "Doodda CLI had iyo jeer waxay dhaaftaa qiyamkan" },
   "helpSection_usage": { "message": "Isticmaalka" },

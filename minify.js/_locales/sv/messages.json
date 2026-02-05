@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Konfigurationsfil skapad" },
   "info_fetchingRemoteConfigFrom": { "message": "Hämtar fjärrkonfigurationsfil från" },
   "warn_remoteConfigNotFound": { "message": "Fjärrkonfigurationsfil hittades inte" },
-  "warn_remoteConfigFailed": { "message": "Fjärrkonfigurationsfil hittades inte" },
+  "warn_remoteConfigFailed": { "message": "Kunde inte hämta fjärrkonfigurationsfil" },
   "tip_editToSetDefaults": { "message": "Redigera den här filen för att anpassa standardinställningar" },
   "tip_cliArgsPrioritized": { "message": "CLI-argument åsidosätter alltid dessa värden" },
   "helpSection_usage": { "message": "Användning" },

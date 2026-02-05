@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "ፋይል ተፈጢሩ" },
   "info_fetchingRemoteConfigFrom": { "message": "ናይ ርሑቕ ኣቀማምጣ ፋይል ካብ" },
   "warn_remoteConfigNotFound": { "message": "ናይ ርሑቕ ውህደት ፋይል ኣይተረኽበን ።" },
-  "warn_remoteConfigFailed": { "message": "ናይ ርሑቕ ውህደት ፋይል ኣይተረኽበን ።" },
+  "warn_remoteConfigFailed": { "message": "ናይ ርሑቕ ውህደት ፋይል ክትሕዝ ኣይከኣለትን" },
   "tip_editToSetDefaults": { "message": "ጉድለታት ንምምዝጋብ ነዚ ፋይል ኣዐሪ" },
   "tip_cliArgsPrioritized": { "message": "እቲ ክርክር ነዚ እሴታት እዚ ወትሩ ይሓልፎ" },
   "helpSection_usage": { "message": "ኣጠቓቕማ" },

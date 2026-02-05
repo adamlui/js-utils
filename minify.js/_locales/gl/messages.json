@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Ficheiro de configuración creado" },
   "info_fetchingRemoteConfigFrom": { "message": "A obter o ficheiro de configuración remota desde" },
   "warn_remoteConfigNotFound": { "message": "Non se atopou o ficheiro de configuración remota" },
-  "warn_remoteConfigFailed": { "message": "Non se atopou o ficheiro de configuración remota" },
+  "warn_remoteConfigFailed": { "message": "Non foi posíbel obter o ficheiro de configuración remota" },
   "tip_editToSetDefaults": { "message": "Editar este ficheiro para personalizar os predeterminados" },
   "tip_cliArgsPrioritized": { "message": "Os argumentos CLI sempre anulan estes valores" },
   "helpSection_usage": { "message": "Uso" },

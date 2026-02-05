@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Konfigire dosye ki te kreye" },
   "info_fetchingRemoteConfigFrom": { "message": "Fetching aleka konfig dosye soti nan" },
   "warn_remoteConfigNotFound": { "message": "Dosye konfig adistans pa jwenn" },
-  "warn_remoteConfigFailed": { "message": "Dosye konfig adistans pa jwenn" },
+  "warn_remoteConfigFailed": { "message": "Pa t 'jwenn dosye konfigirasyon aleka" },
   "tip_editToSetDefaults": { "message": "Modifye dosye sa a pou Customize defo yo" },
   "tip_cliArgsPrioritized": { "message": "Agiman CLI toujou pase sou valè sa yo" },
   "helpSection_usage": { "message": "usage/itilize/itilizasyon/utilisation" },

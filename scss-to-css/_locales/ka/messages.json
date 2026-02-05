@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "კონფიგურაციის ფაილი შეიქმნა" },
   "info_fetchingRemoteConfigFrom": { "message": "დისტანციური კონფიგურაციის ფაილის მოძიება" },
   "warn_remoteConfigNotFound": { "message": "დისტანციური კონფიგურაციის ფაილი ვერ მოიძებნა" },
-  "warn_remoteConfigFailed": { "message": "დისტანციური კონფიგურაციის ფაილი ვერ მოიძებნა" },
+  "warn_remoteConfigFailed": { "message": "Დაშორებული კონფიგურაციის ფაილის გამოთხოვის შეცდომა" },
   "tip_editToSetDefaults": { "message": "ნაგულისხმევი პარამეტრების დასაყენებლად, შეცვალეთ ეს ფაილი" },
   "tip_cliArgsPrioritized": { "message": "CLI არგუმენტები ყოველთვის უპირატესობას ანიჭებს ამ მნიშვნელობებს" },
   "helpSection_usage": { "message": "გამოყენება" },

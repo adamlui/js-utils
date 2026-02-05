@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "ކޮންފިގް ފައިލް އުފެދިއްޖެއެވެ" },
   "info_fetchingRemoteConfigFrom": { "message": "އިން ރިމޯޓް ކޮންފިގް ފައިލް ގެނައުން" },
   "warn_remoteConfigNotFound": { "message": "ރިމޯޓް ކޮންފިގް ފައިލް ނުފެނެއެވެ" },
-  "warn_remoteConfigFailed": { "message": "ރިމޯޓް ކޮންފިގް ފައިލް ނުފެނެއެވެ" },
+  "warn_remoteConfigFailed": { "message": "ރިމޯޓް ކޮންފިގް ފައިލް ގެނައުމަށް ނާކާމިޔާބުވިއެވެ" },
   "tip_editToSetDefaults": { "message": "ޑިފޯލްޓްތައް ކަސްޓަމައިޒް ކުރުމަށް މި ފައިލް އެޑިޓް ކުރާށެވެ" },
   "tip_cliArgsPrioritized": { "message": "ސީއެލްއައި އަރގިއުމެންޓްތަކުން އަބަދުވެސް މި ވެލިއުތައް އޯވަރރައިޑް ކުރެއެވެ" },
   "helpSection_usage": { "message": "ބޭނުންކުރުން" },

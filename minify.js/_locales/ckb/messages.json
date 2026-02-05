@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "په ‌ ڕگه ‌ دروستكراوه ‌" },
   "info_fetchingRemoteConfigFrom": { "message": "ڕاستاندنی remote گۆکردنەکان" },
   "warn_remoteConfigNotFound": { "message": "پەڕگەی ڕێکخستن لە دوورەوە نەدۆزرایەوە" },
-  "warn_remoteConfigFailed": { "message": "پەڕگەی ڕێکخستن لە دوورەوە نەدۆزرایەوە" },
+  "warn_remoteConfigFailed": { "message": "شکستی هێنا لە دۆزینەوەی پەڕگەی ڕێکخستنی دوور" },
   "tip_editToSetDefaults": { "message": "دەستکاریی ئەم پەڕگەیە بکە بۆ دەستکاریکردنی پێشێلکارییەکان" },
   "tip_cliArgsPrioritized": { "message": "قاسملوو هەمیشە ئەو بەهایانە" },
   "helpSection_usage": { "message": "بەکارهێنان" },

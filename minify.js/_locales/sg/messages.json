@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Faïl so a leke ni" },
   "info_fetchingRemoteConfigFrom": { "message": "Disable alert for Mbeni" },
   "warn_remoteConfigNotFound": { "message": "Désolé Aucun résultat trouvé" },
-  "warn_remoteConfigFailed": { "message": "Désolé Aucun résultat trouvé" },
+  "warn_remoteConfigFailed": { "message": "Disable alert for Mbeni" },
   "tip_editToSetDefaults": { "message": "Gbian faïl so ti leke ambeni ye so ayeke na lege ni ape" },
   "tip_cliArgsPrioritized": { "message": "A yeke lakue na lege ti atënë ti CLI si a yeke hon ndo ti aye so ayeke na yâ ti Bible" },
   "helpSection_usage": { "message": "Use of ti vs. tu" },

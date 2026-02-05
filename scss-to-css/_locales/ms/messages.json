@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "fail konfig dicipta" },
   "info_fetchingRemoteConfigFrom": { "message": "Mengambil fail konfigurasi jauh daripada" },
   "warn_remoteConfigNotFound": { "message": "Fail konfigurasi jauh tidak ditemui" },
-  "warn_remoteConfigFailed": { "message": "Fail konfigurasi jauh tidak ditemui" },
+  "warn_remoteConfigFailed": { "message": "Gagal mendapatkan fail konfigurasi jauh" },
   "tip_editToSetDefaults": { "message": "Edit fail ini untuk menyesuaikan lalai" },
   "tip_cliArgsPrioritized": { "message": "Argumen CLI sentiasa mengatasi nilai-nilai ini" },
   "helpSection_usage": { "message": "Penggunaan" },

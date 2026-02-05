@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "配置文件已创建" },
   "info_fetchingRemoteConfigFrom": { "message": "正在从中获取远程配置文件" },
   "warn_remoteConfigNotFound": { "message": "未找到远程配置文件" },
-  "warn_remoteConfigFailed": { "message": "未找到远程配置文件" },
+  "warn_remoteConfigFailed": { "message": "获取远程配置文件失败" },
   "tip_editToSetDefaults": { "message": "编辑此文件以自定义默认值" },
   "tip_cliArgsPrioritized": { "message": "CLI参数始终覆盖这些值" },
   "helpSection_usage": { "message": "使用量" },

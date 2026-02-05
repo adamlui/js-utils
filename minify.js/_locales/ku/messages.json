@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Pelê mîhengê hat afirandin" },
   "info_fetchingRemoteConfigFrom": { "message": "Pelê mîhengkirina dûr ji tê wergirtin" },
   "warn_remoteConfigNotFound": { "message": "Pelê mîhengkirina dûr nehat dîtin" },
-  "warn_remoteConfigFailed": { "message": "Pelê mîhengkirina dûr nehat dîtin" },
+  "warn_remoteConfigFailed": { "message": "Pelê mîhengkirina dûr nehat wergirtin" },
   "tip_editToSetDefaults": { "message": "Ji bo xwerûkirina mîhengan vê pelê biguherîne" },
   "tip_cliArgsPrioritized": { "message": "Argumanên CLI her gav van nirxan derbas dikin" },
   "helpSection_usage": { "message": "RûpelkerName" },

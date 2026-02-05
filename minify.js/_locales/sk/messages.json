@@ -36,7 +36,7 @@
   "info_configFileCreated": { "message": "Konfiguračný súbor bol vytvorený" },
   "info_fetchingRemoteConfigFrom": { "message": "Načítava sa vzdialený konfiguračný súbor z" },
   "warn_remoteConfigNotFound": { "message": "Vzdialený konfiguračný súbor sa nenašiel" },
-  "warn_remoteConfigFailed": { "message": "Vzdialený konfiguračný súbor sa nenašiel" },
+  "warn_remoteConfigFailed": { "message": "Nepodarilo sa načítať vzdialený konfiguračný súbor" },
   "tip_editToSetDefaults": { "message": "Upraviť tento súbor na prispôsobenie predvolených nastavení" },
   "tip_cliArgsPrioritized": { "message": "Argumenty CLI vždy prepíšu tieto hodnoty" },
   "helpSection_usage": { "message": "Využívanie" },

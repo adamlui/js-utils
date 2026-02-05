@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Konfigurationsdatei erstellt" },
   "info_fetchingRemoteConfigFrom": { "message": "Remote-Konfigurationsdatei wird abgerufen von" },
   "warn_remoteConfigNotFound": { "message": "Remote-Konfigurationsdatei nicht gefunden" },
-  "warn_remoteConfigFailed": { "message": "Remote-Konfigurationsdatei nicht gefunden" },
+  "warn_remoteConfigFailed": { "message": "Fehler beim Abrufen der Remote-Konfigurationsdatei" },
   "tip_editToSetDefaults": { "message": "Bearbeiten Sie diese Datei, um die Standardeinstellungen anzupassen" },
   "tip_cliArgsPrioritized": { "message": "CLI-Argumente überschreiben diese Werte immer" },
   "helpSection_usage": { "message": "Verwendung" },

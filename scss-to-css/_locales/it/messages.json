@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Nessun file config creato" },
   "info_fetchingRemoteConfigFrom": { "message": "Recupero del file di configurazione remoto da" },
   "warn_remoteConfigNotFound": { "message": "File di configurazione remoto non trovato" },
-  "warn_remoteConfigFailed": { "message": "File di configurazione remoto non trovato" },
+  "warn_remoteConfigFailed": { "message": "Impossibile recuperare il file di configurazione remoto" },
   "tip_editToSetDefaults": { "message": "Modifica questo file per personalizzare le impostazioni predefinite" },
   "tip_cliArgsPrioritized": { "message": "Gli argomenti CLI sovrascrivono sempre questi valori" },
   "helpSection_usage": { "message": "Utilizzo" },

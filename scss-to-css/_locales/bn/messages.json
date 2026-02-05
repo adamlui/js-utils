@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "কনফিগ ফাইল তৈরি করা হয়েছে" },
   "info_fetchingRemoteConfigFrom": { "message": "থেকে দূরবর্তী কনফিগ ফাইল আনয়ন করা হচ্ছে" },
   "warn_remoteConfigNotFound": { "message": "রিমোট কনফিগ ফাইল পাওয়া যায়নি" },
-  "warn_remoteConfigFailed": { "message": "রিমোট কনফিগ ফাইল পাওয়া যায়নি" },
+  "warn_remoteConfigFailed": { "message": "রিমোট কনফিগ ফাইল আনতে ব্যর্থ হয়েছে" },
   "tip_editToSetDefaults": { "message": "ডিফল্টগুলি কাস্টমাইজ করতে এই ফাইলটি সম্পাদনা করুন" },
   "tip_cliArgsPrioritized": { "message": "CLI আর্গুমেন্টগুলি সর্বদা এই মানগুলিকে ওভাররাইড করে" },
   "helpSection_usage": { "message": "ব্যবহার" },

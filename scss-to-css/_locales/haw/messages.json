@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Ua hana ʻia ka faila config" },
   "info_fetchingRemoteConfigFrom": { "message": "Ke kiʻi nei i ka faila hoʻonohonoho mamao mai" },
   "warn_remoteConfigNotFound": { "message": "ʻAʻole i loaʻa ka faila hoʻonohonoho mamao" },
-  "warn_remoteConfigFailed": { "message": "ʻAʻole i loaʻa ka faila hoʻonohonoho mamao" },
+  "warn_remoteConfigFailed": { "message": "ʻAʻole i hiki ke kiʻi i ka faila hoʻonohonoho mamao" },
   "tip_editToSetDefaults": { "message": "Hoʻoponopono i kēia faila e hoʻopilikino i nā paʻamau" },
   "tip_cliArgsPrioritized": { "message": "Hoʻopau mau nā hoʻopaʻapaʻa CLI i kēia mau waiwai" },
   "helpSection_usage": { "message": "Hoʻohana" },

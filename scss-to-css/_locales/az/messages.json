@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Faylı konfiqurasiya edin" },
   "info_fetchingRemoteConfigFrom": { "message": "Uzaqdan konfiqurasiya faylı əldə edilir" },
   "warn_remoteConfigNotFound": { "message": "Uzaqdan konfiqurasiya faylı tapılmadı" },
-  "warn_remoteConfigFailed": { "message": "Uzaqdan konfiqurasiya faylı tapılmadı" },
+  "warn_remoteConfigFailed": { "message": "Uzaqdan konfiqurasiya faylı alına bilmədi" },
   "tip_editToSetDefaults": { "message": "Standartları fərdiləşdirmək üçün bu faylı redaktə edin" },
   "tip_cliArgsPrioritized": { "message": "CLI arqumentləri həmişə bu dəyərləri üstələyir" },
   "helpSection_usage": { "message": "İsmarış" },

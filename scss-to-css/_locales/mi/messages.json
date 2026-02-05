@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "Kōnae Config hanga" },
   "info_fetchingRemoteConfigFrom": { "message": "Whakawhiti i te konae whakatakotoranga mamao mai i" },
   "warn_remoteConfigNotFound": { "message": "Ko te konae whakatakotoranga mamao kaore i kitea" },
-  "warn_remoteConfigFailed": { "message": "Ko te konae whakatakotoranga mamao kaore i kitea" },
+  "warn_remoteConfigFailed": { "message": "Kaore i taea te tango i te konae whirihoranga mamao" },
   "tip_editToSetDefaults": { "message": "Whakatika tenei kōnae ki te whakarite hapa" },
   "tip_cliArgsPrioritized": { "message": "Ko nga korero a te CLI e pa ana ki enei uara i nga wa katoa" },
   "helpSection_usage": { "message": "Whakamahia" },

@@ -37,7 +37,7 @@
   "info_configFileCreated": { "message": "קאָנפיגוראַציע טעקע באשאפן" },
   "info_fetchingRemoteConfigFrom": { "message": "נעמט ארויס א ווייטער קאנפיגאציע טעקע פון" },
   "warn_remoteConfigNotFound": { "message": "ווייַט קאָנפיג טעקע נישט געפֿונען" },
-  "warn_remoteConfigFailed": { "message": "ווייַט קאָנפיג טעקע נישט געפֿונען" },
+  "warn_remoteConfigFailed": { "message": "נישט געקענט ברענגען די ווייטערע קאנפיגאציע טעקע" },
   "tip_editToSetDefaults": { "message": "רעדאַקטירן דעם טעקע צו קאַסטאַמייזן דיפאָלטס" },
   "tip_cliArgsPrioritized": { "message": "CLI אַרגומענטן איבערשרייַבן שטענדיק די ווערטן" },
   "helpSection_usage": { "message": "באַניץ" },
