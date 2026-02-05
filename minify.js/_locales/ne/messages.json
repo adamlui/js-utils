@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "विश्वव्यापी संस्करण" },
   "prefix_localVer": { "message": "स्थानीय संस्करण" },
   "prefix_source": { "message": "स्रोत" },
+  "error_readingLocalPkgVer": { "message": "स्थानीय प्याकेज संस्करण पढ्दा त्रुटि" },
   "error_notRecognized": { "message": "पहिचान नगरिएको" },
   "error_nonPositiveNum": { "message": "तर्क > 0 मात्र हुन सक्छ" },
   "error_invalidURL": { "message": "अवैध यू आर एल" },

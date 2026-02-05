@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Heildarútgáfa" },
   "prefix_localVer": { "message": "Staðbundin útgáfa" },
   "prefix_source": { "message": "Heimild" },
+  "error_readingLocalPkgVer": { "message": "Villa við að lesa staðbundna pakkaútgáfu" },
   "error_notRecognized": { "message": "ekki viðurkennt" },
   "error_nonPositiveNum": { "message": "frumbreyta getur aðeins verið > 0" },
   "error_invalidURL": { "message": "Ógild slóð" },

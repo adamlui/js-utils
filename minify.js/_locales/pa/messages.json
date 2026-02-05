@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "ਗਲੋਬਲ ਵਰਜ਼ਨ" },
   "prefix_localVer": { "message": "ਸਥਾਨਕ ਵਰਜਨ" },
   "prefix_source": { "message": "ਸਰੋਤ" },
+  "error_readingLocalPkgVer": { "message": "ਲੋਕਲ ਪੈਕੇਜ ਵਰਜਨ ਪੜ੍ਹਨ ਦੌਰਾਨ ਗਲਤੀ" },
   "error_notRecognized": { "message": "ਪਛਾਣਿਆ ਨਹੀਂ ਗਿਆ" },
   "error_nonPositiveNum": { "message": "ਦਲੀਲ ਸਿਰਫ > 0 ਹੋ ਸਕਦੀ ਹੈ" },
   "error_invalidURL": { "message": "ਅਵੈਧ URL" },

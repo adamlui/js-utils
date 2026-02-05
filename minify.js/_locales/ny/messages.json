@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Mtundu wapadziko lonse lapansi" },
   "prefix_localVer": { "message": "Mtundu wakomweko" },
   "prefix_source": { "message": "Chitsime" },
+  "error_readingLocalPkgVer": { "message": "Kulakwitsa kuwerenga phukusi la m 'deralo" },
   "error_notRecognized": { "message": "sizikudziwika" },
   "error_nonPositiveNum": { "message": "kutsutsana kungakhale kokha > 0" },
   "error_invalidURL": { "message": "URL yolakwika" },

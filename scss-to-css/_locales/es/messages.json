@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Versión global" },
   "prefix_localVer": { "message": "Versión Local" },
   "prefix_source": { "message": "Fuente" },
+  "error_readingLocalPkgVer": { "message": "Error al leer la versión local del paquete" },
   "error_notRecognized": { "message": "No reconocido" },
   "error_nonPositiveNum": { "message": "argumento solo puede ser > 0" },
   "error_invalidURL": { "message": "URL no válida" },

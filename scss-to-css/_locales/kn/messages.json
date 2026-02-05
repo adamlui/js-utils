@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "ಜಾಗತಿಕ ಆವೃತ್ತಿ" },
   "prefix_localVer": { "message": "ಸ್ಥಳೀಯ ಆವೃತ್ತಿ" },
   "prefix_source": { "message": "ಮೂಲ" },
+  "error_readingLocalPkgVer": { "message": "ಸ್ಥಳೀಯ ಪ್ಯಾಕೇಜ್ ಆವೃತ್ತಿಯನ್ನು ಓದುವಲ್ಲಿ ದೋಷ" },
   "error_notRecognized": { "message": "ಗುರುತಿಸಲಾಗಿಲ್ಲ" },
   "error_nonPositiveNum": { "message": "ಆರ್ಗ್ಯುಮೆಂಟ್ ಕೇವಲ > 0 ಆಗಿರಬಹುದು" },
   "error_invalidURL": { "message": "Url ಸರಿಯಾಗಿಲ್ಲ" },

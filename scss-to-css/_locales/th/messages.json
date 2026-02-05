@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "เวอร์ชันส่วนกลาง" },
   "prefix_localVer": { "message": "เวอร์ชันในเครื่อง" },
   "prefix_source": { "message": "ที่มา" },
+  "error_readingLocalPkgVer": { "message": "เกิดข้อผิดพลาดในการอ่านเวอร์ชันแพคเก" },
   "error_notRecognized": { "message": "ไม่ได้รับการยอมรับ" },
   "error_nonPositiveNum": { "message": "อาร์กิวเมนต์สามารถเป็น > 0 เท่านั้น" },
   "error_invalidURL": { "message": "URL ไม่ถูกต้อง" },

@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Global versiya" },
   "prefix_localVer": { "message": "Mahalliy versiya" },
   "prefix_source": { "message": "Manba" },
+  "error_readingLocalPkgVer": { "message": "Mahalliy paket versiyasini o'qishda xatolik yuz berdi" },
   "error_notRecognized": { "message": "aniqlanmadi" },
   "error_nonPositiveNum": { "message": "argument faqat > 0 bo'lishi mumkin" },
   "error_invalidURL": { "message": "KDE qopchiq xizmati" },

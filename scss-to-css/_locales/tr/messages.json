@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Genel sürüm" },
   "prefix_localVer": { "message": "Yerel sürüm" },
   "prefix_source": { "message": "Kaynak" },
+  "error_readingLocalPkgVer": { "message": "Yerel paket sürümü okunurken hata oluştu" },
   "error_notRecognized": { "message": "tanınmamış" },
   "error_nonPositiveNum": { "message": "argüman sadece > 0 olabilir" },
   "error_invalidURL": { "message": "Adres geçersiz" },

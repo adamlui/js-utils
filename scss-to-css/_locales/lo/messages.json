@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "ສະບັບທົ່ວໂລກ" },
   "prefix_localVer": { "message": "ສະບັບທ້ອງຖິ່ນ" },
   "prefix_source": { "message": "ແຫຼ່ງຂໍ້ມູນ" },
+  "error_readingLocalPkgVer": { "message": "ຜິດພາດໃນການອ່ານລຸ້ນແພັກເກັດໃນທ້ອງຖິ່ນ" },
   "error_notRecognized": { "message": "ບໍ່ຮັບຮູ້" },
   "error_nonPositiveNum": { "message": "ການໂຕ້ຖຽງສາມາດເປັນພຽງແຕ່ > 0" },
   "error_invalidURL": { "message": "URL ບໍ່ຖືກຕ້ອງ" },

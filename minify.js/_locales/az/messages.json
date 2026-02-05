@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Qlobal versiya" },
   "prefix_localVer": { "message": "Yerli versiya" },
   "prefix_source": { "message": "Mənbə" },
+  "error_readingLocalPkgVer": { "message": "Yerli paket versiyasını oxuyarkən xəta baş verdi" },
   "error_notRecognized": { "message": "tanınmayıb" },
   "error_nonPositiveNum": { "message": "arqument yalnız > 0 ola bilər" },
   "error_invalidURL": { "message": "Yanlış URL" },

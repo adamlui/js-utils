@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Visuotinė versija" },
   "prefix_localVer": { "message": "Vietinė versija" },
   "prefix_source": { "message": "Šaltinis" },
+  "error_readingLocalPkgVer": { "message": "Klaida skaitant vietinio paketo versiją" },
   "error_notRecognized": { "message": "neatpažintas" },
   "error_nonPositiveNum": { "message": "argumentas gali būti tik > 0" },
   "error_invalidURL": { "message": "Neteisingas URL" },

@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Shanduro yepasi rose" },
   "prefix_localVer": { "message": "Shanduro yemunharaunda" },
   "prefix_source": { "message": "Kunobva" },
+  "error_readingLocalPkgVer": { "message": "Kanganiso pakuverenga vhezheni yepakeji yemuno" },
   "error_notRecognized": { "message": "haizivikanwe" },
   "error_nonPositiveNum": { "message": "nharo kunogona chete > 0" },
   "error_invalidURL": { "message": "URL isiriyo" },

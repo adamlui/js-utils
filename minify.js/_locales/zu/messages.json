@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Uhlobo lomhlaba wonke" },
   "prefix_localVer": { "message": "Uhlobo lwendawo" },
   "prefix_source": { "message": "SourceForge" },
+  "error_readingLocalPkgVer": { "message": "Iphutha ekufundeni uhlelo lwephakeji lendawo" },
   "error_notRecognized": { "message": "akuqashelwa" },
   "error_nonPositiveNum": { "message": "impikiswano ingaba > 0 kuphela" },
   "error_invalidURL": { "message": "I-URL engavumelekile" },

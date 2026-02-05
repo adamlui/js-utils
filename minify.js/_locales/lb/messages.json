@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Globale Versioun" },
   "prefix_localVer": { "message": "Lokal Versioun" },
   "prefix_source": { "message": "Quell" },
+  "error_readingLocalPkgVer": { "message": "Feeler beim Liesen vun der lokaler Paketeversioun" },
   "error_notRecognized": { "message": "net unerkannt" },
   "error_nonPositiveNum": { "message": "argument can just be ass > 0" },
   "error_invalidURL": { "message": "InvalidCA" },

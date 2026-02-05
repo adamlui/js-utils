@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "గ్లోబల్ వెర్షన్" },
   "prefix_localVer": { "message": "స్థానిక వెర్షన్" },
   "prefix_source": { "message": "మూలం" },
+  "error_readingLocalPkgVer": { "message": "స్థానిక ప్యాకేజీ సంస్కరణను చదవడంలో లోపం" },
   "error_notRecognized": { "message": "గుర్తించబడలేదు" },
   "error_nonPositiveNum": { "message": "ఆర్గ్యుమెంట్ > 0 మాత్రమే ఉంటుంది" },
   "error_invalidURL": { "message": "చెల్లని URL" },

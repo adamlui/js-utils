@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Globale weergawe" },
   "prefix_localVer": { "message": "Plaaslike weergawe" },
   "prefix_source": { "message": "Oorsprong" },
+  "error_readingLocalPkgVer": { "message": "Fout met lees van plaaslike pakketweergawe" },
   "error_notRecognized": { "message": "nie erken nie" },
   "error_nonPositiveNum": { "message": "argument kan net wees > 0" },
   "error_invalidURL": { "message": "Ongeldige URL" },

@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "גרסה גלובלית" },
   "prefix_localVer": { "message": "הגרסה המקומית" },
   "prefix_source": { "message": "מקור" },
+  "error_readingLocalPkgVer": { "message": "שגיאה בקריאת גרסת החבילה המקומית" },
   "error_notRecognized": { "message": "לא מזוהה" },
   "error_nonPositiveNum": { "message": "הארגומנט יכול להיות רק > 0" },
   "error_invalidURL": { "message": "כתובת לא תקפה" },

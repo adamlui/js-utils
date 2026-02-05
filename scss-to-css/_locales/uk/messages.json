@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Глобальна версія" },
   "prefix_localVer": { "message": "Локальна версія" },
   "prefix_source": { "message": "Джерело" },
+  "error_readingLocalPkgVer": { "message": "Помилка читання версії локального пакета" },
   "error_notRecognized": { "message": "не розпізнаний" },
   "error_nonPositiveNum": { "message": "аргумент може бути лише > 0" },
   "error_invalidURL": { "message": "Недійсна URL-адреса" },

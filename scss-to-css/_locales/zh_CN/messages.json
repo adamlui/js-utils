@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "全局版本" },
   "prefix_localVer": { "message": "本地版本" },
   "prefix_source": { "message": "人员来源" },
+  "error_readingLocalPkgVer": { "message": "读取本地包版本时出错" },
   "error_notRecognized": { "message": "未识别出" },
   "error_nonPositiveNum": { "message": "参数只能大于0" },
   "error_invalidURL": { "message": "网址无效" },

@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Globális verzió" },
   "prefix_localVer": { "message": "Helyi verzió" },
   "prefix_source": { "message": "Forrás" },
+  "error_readingLocalPkgVer": { "message": "Hiba a helyi csomagverzió olvasásakor" },
   "error_notRecognized": { "message": "nem felismerhető" },
   "error_nonPositiveNum": { "message": "argumentum csak > 0 lehet" },
   "error_invalidURL": { "message": "Hibás URL cím" },

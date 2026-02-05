@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "ကမ္ဘာလုံးဆိုင်ရာဗားရှင်း" },
   "prefix_localVer": { "message": "ပြည်တွင်းဗားရှင်း" },
   "prefix_source": { "message": "အရင်းအမြစ်" },
+  "error_readingLocalPkgVer": { "message": "ဒေသတွင်း အထုပ်ဗားရှင်းကို ဖတ်ရှုရာတွင် ချို့ယွင်းချက်ရှိသည်" },
   "error_notRecognized": { "message": "အသိအမှတ်မပြုပါ" },
   "error_nonPositiveNum": { "message": "0 ကိုသာ အသံုးျပဳႏိုင္ပါသည္ ။" },
   "error_invalidURL": { "message": "URL မမှန်ကန်ပါ" },

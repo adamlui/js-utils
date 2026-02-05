@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "وەشانی جیهانی" },
   "prefix_localVer": { "message": "ڤێرژنی ناوخۆیی" },
   "prefix_source": { "message": "سەرچاوە" },
+  "error_readingLocalPkgVer": { "message": "هەڵە لە خوێندنەوەی پاکێجی ناوخۆیی" },
   "error_notRecognized": { "message": "نەناسراوە" },
   "error_nonPositiveNum": { "message": "دەتوانن باشتر بێژەی بکەن ؟ یا بە زاراوەیەکی تر ؟ بێژە کردنی λ0" },
   "error_invalidURL": { "message": "URLی نەگونجاو" },

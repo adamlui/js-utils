@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "গ্লোবাল সংস্করণ" },
   "prefix_localVer": { "message": "স্থানীয় সংস্করণ" },
   "prefix_source": { "message": "উত্স" },
+  "error_readingLocalPkgVer": { "message": "স্থানীয় প্যাকেজ সংস্করণ পড়তে ত্রুটি" },
   "error_notRecognized": { "message": "স্বীকৃত নয়" },
   "error_nonPositiveNum": { "message": "যুক্তি শুধুমাত্র হতে পারে > 0" },
   "error_invalidURL": { "message": "অবৈধ ইউ- আর- এল" },

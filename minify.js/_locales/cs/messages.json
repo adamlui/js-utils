@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Globální verze" },
   "prefix_localVer": { "message": "Místní verze" },
   "prefix_source": { "message": "Zdroj" },
+  "error_readingLocalPkgVer": { "message": "Chyba při čtení místní verze balíčku" },
   "error_notRecognized": { "message": "\"Nerozpoznáno\"" },
   "error_nonPositiveNum": { "message": "argument může být pouze > 0" },
   "error_invalidURL": { "message": "Neplatná adresa URL" },

@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Phiên bản toàn cầu" },
   "prefix_localVer": { "message": "Phiên bản địa phương" },
   "prefix_source": { "message": "Bản gốc" },
+  "error_readingLocalPkgVer": { "message": "Lỗi khi đọc phiên bản gói cục bộ" },
   "error_notRecognized": { "message": "không được công nhận" },
   "error_nonPositiveNum": { "message": "đối số chỉ có thể là > 0" },
   "error_invalidURL": { "message": "URL không hợp lệ" },

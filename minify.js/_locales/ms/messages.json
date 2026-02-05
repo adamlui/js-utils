@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Versi global" },
   "prefix_localVer": { "message": "Versi tempatan" },
   "prefix_source": { "message": "Sumber" },
+  "error_readingLocalPkgVer": { "message": "Ralat membaca versi pakej tempatan" },
   "error_notRecognized": { "message": "Tidak dikonsikan semula" },
   "error_nonPositiveNum": { "message": "argumen hanya boleh > 0" },
   "error_invalidURL": { "message": "URL tidak sah" },

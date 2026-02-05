@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Дэлхийн хувилбар" },
   "prefix_localVer": { "message": "Дотоод хувилбар" },
   "prefix_source": { "message": "Эх сурвалж" },
+  "error_readingLocalPkgVer": { "message": "Орон нутгийн багцын хувилбарыг уншихад алдаа гарлаа" },
   "error_notRecognized": { "message": "тодорхойгүй" },
   "error_nonPositiveNum": { "message": "аргумент нь зөвхөн > 0 байж болно" },
   "error_invalidURL": { "message": "Хүчингүй URL" },

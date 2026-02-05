@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "កំណែសកល" },
   "prefix_localVer": { "message": "កំណែ មូលដ្ឋាន" },
   "prefix_source": { "message": "ប្រភព" },
+  "error_readingLocalPkgVer": { "message": "កំហុស ក្នុង ការ អាន កំណែ កញ្ចប់ មូលដ្ឋាន" },
   "error_notRecognized": { "message": "មិនត្រឹមត្រូវ" },
   "error_nonPositiveNum": { "message": "អាគុយម៉ង់អាចមានតែ > 0" },
   "error_invalidURL": { "message": "URL មិនត្រឹមត្រូវ" },

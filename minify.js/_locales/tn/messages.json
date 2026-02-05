@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Mofuta wa lefatshe lotlhe" },
   "prefix_localVer": { "message": "Mofuta wa selegae" },
   "prefix_source": { "message": "Motswedi" },
+  "error_readingLocalPkgVer": { "message": "Phoso fa o bala mofuta wa pakana ya mo lefelong la lona" },
   "error_notRecognized": { "message": "ga a itsiwe" },
   "error_nonPositiveNum": { "message": "ngangisano e ka nna > 0 fela" },
   "error_invalidURL": { "message": "URL e e sa siamang" },

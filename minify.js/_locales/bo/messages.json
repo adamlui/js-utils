@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "འཛམ་གླིང་གི་འགྲེལ་བཤད །" },
   "prefix_localVer": { "message": "ས་གནས་ཀྱི་འགྲེལ་བཤད །" },
   "prefix_source": { "message": "འབྱུང་ཁུངས །" },
+  "error_readingLocalPkgVer": { "message": "ས་གནས་ཀྱི་སྦྲེལ་མཐུད ། ཀློག་རྒྱུ་ནོར་འཁྲུལ་བྱུང་འདུག" },
   "error_notRecognized": { "message": "ངོ་མི་ཤེས་པ" },
   "error_nonPositiveNum": { "message": "གྲོས་བསྡུར་བྱེད་ནུས་པ་གཅིག་པུ་> 0" },
   "error_invalidURL": { "message": "མ་འོས་པའི་དྲ་ཚིགས །" },

@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Версияи умумӣ" },
   "prefix_localVer": { "message": "Версияи локалӣ" },
   "prefix_source": { "message": "Манбаъ" },
+  "error_readingLocalPkgVer": { "message": "Хатогӣ дар хондани версияи бастаи локалӣ" },
   "error_notRecognized": { "message": "эътироф нашудааст" },
   "error_nonPositiveNum": { "message": "argument can be only > 0" },
   "error_invalidURL": { "message": "URL- и нодуруст" },

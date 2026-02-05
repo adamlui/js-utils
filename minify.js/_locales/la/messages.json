@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Globosa version" },
   "prefix_localVer": { "message": "Familia Localis" },
   "prefix_source": { "message": "Fons" },
+  "error_readingLocalPkgVer": { "message": "Version fenestrare pergere pergere" },
   "error_notRecognized": { "message": "nullus homo" },
   "error_nonPositiveNum": { "message": "argument can only be > 0" },
   "error_invalidURL": { "message": "Invalidum URL" },

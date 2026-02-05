@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "ആഗോള പതിപ്പ്" },
   "prefix_localVer": { "message": "പ്രാദേശിക പതിപ്പ്" },
   "prefix_source": { "message": "ഉറവിടം" },
+  "error_readingLocalPkgVer": { "message": "ലോക്കൽ പാക്കേജ് പതിപ്പ് വായിക്കുന്നതിൽ പിശക്" },
   "error_notRecognized": { "message": "തിരിച്ചറിഞ്ഞിട്ടില്ല" },
   "error_nonPositiveNum": { "message": "ആർഗ്യുമെന്റിന് > 0 മാത്രമേ ആകാൻ കഴിയൂ" },
   "error_invalidURL": { "message": "തെറ്റായ സ്ക്രിപ്റ്റ് നിര്‍ദ്ദേശം" },

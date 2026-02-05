@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Globale versie" },
   "prefix_localVer": { "message": "Lokale casusversie" },
   "prefix_source": { "message": "Bron" },
+  "error_readingLocalPkgVer": { "message": "Fout bij het lezen van lokale pakketversie" },
   "error_notRecognized": { "message": "Niet herkend" },
   "error_nonPositiveNum": { "message": "argument kan alleen > 0 zijn" },
   "error_invalidURL": { "message": "Ongeldige URL" },

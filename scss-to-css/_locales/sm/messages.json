@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Faaliliuga a le Lalolagi" },
   "prefix_localVer": { "message": "Faaliliuga i le lotoifale" },
   "prefix_source": { "message": "Mafu'aga" },
+  "error_readingLocalPkgVer": { "message": "Faitau sese le lomiga afifi i le lotoifale" },
   "error_notRecognized": { "message": "e le o iloa" },
   "error_nonPositiveNum": { "message": "finauga e mafai ona na o > 0" },
   "error_invalidURL": { "message": "URL Invalid" },

@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Globalna verzija" },
   "prefix_localVer": { "message": "Lokalna verzija" },
   "prefix_source": { "message": "Izvor" },
+  "error_readingLocalPkgVer": { "message": "Pogreška pri čitanju verzije lokalnog paketa" },
   "error_notRecognized": { "message": "Ne raspoznato" },
   "error_nonPositiveNum": { "message": "argument može biti samo > 0" },
   "error_invalidURL": { "message": "Neispravna URL adresa" },

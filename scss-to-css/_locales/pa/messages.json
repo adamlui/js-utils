@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "ਗਲੋਬਲ ਵਰਜਨ" },
   "prefix_localVer": { "message": "ਲੋਕਲ ਵਰਜਨ" },
   "prefix_source": { "message": "Fonte" },
+  "error_readingLocalPkgVer": { "message": "ਲੋਕਲ ਪੈਕੇਜ ਵਰਜਨ ਪੜ੍ਹਨ ਦੌਰਾਨ ਗਲਤੀ" },
   "error_notRecognized": { "message": "ਪਛਾਣਿਆ ਨਹੀਂ" },
   "error_nonPositiveNum": { "message": "ਦਲੀਲ ਸਿਰਫ > 0 ਹੋ ਸਕਦੀ ਹੈ" },
   "error_invalidURL": { "message": "ਗਲਤ URL" },

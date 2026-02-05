@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Globaali versio" },
   "prefix_localVer": { "message": "Paikallinen versio" },
   "prefix_source": { "message": "Lähde" },
+  "error_readingLocalPkgVer": { "message": "Virhe paikallisen paketin version lukemisessa" },
   "error_notRecognized": { "message": "ei tunnistettu" },
   "error_nonPositiveNum": { "message": "argumentti voi olla vain > 0" },
   "error_invalidURL": { "message": "Virheellinen URL" },

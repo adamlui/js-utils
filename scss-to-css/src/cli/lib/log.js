@@ -113,7 +113,7 @@ module.exports = {
             const localPkgPath = require('path').resolve(process.cwd(), 'node_modules', app.name, 'package.json')
             if (require('fs').existsSync(localPkgPath)) localVer = require(localPkgPath).version || 'none'
         } catch (err) {
-            this.error('Error reading local package version:', err.message) }
+            this.error(`${app.msgs.error_readingLocalPkgVer}:`, err.message) }
 
         console.info(`\n${app.msgs.prefix_globalVer}: ${globalVer}\n${app.msgs.prefix_localVer}: ${localVer}`)
     }

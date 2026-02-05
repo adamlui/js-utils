@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "ग्लोबल वर्ज़न" },
   "prefix_localVer": { "message": "स्थानीय संस्करण" },
   "prefix_source": { "message": "स्रोत" },
+  "error_readingLocalPkgVer": { "message": "पैकेज का लोकल वर्ज़न पढ़ने में गड़बड़ी हुई" },
   "error_notRecognized": { "message": "पहचाना नहीं गया" },
   "error_nonPositiveNum": { "message": "तर्क केवल > 0 हो सकता है" },
   "error_invalidURL": { "message": "अमान्य URL" },

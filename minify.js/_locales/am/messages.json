@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "ዓለም አቀፍ ስሪት" },
   "prefix_localVer": { "message": "አካባቢያዊ ስሪት" },
   "prefix_source": { "message": "ምንጭ" },
+  "error_readingLocalPkgVer": { "message": "የአካባቢ ጥቅል ስሪት ማንበብ ስህተት" },
   "error_notRecognized": { "message": "እውቅና አልተሰጠውም" },
   "error_nonPositiveNum": { "message": "ክርክር ብቻ ሊሆን ይችላል > 0" },
   "error_invalidURL": { "message": "ልክ ያልሆነ ዩአርኤል" },

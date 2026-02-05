@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Nooca Caalamiga ah" },
   "prefix_localVer": { "message": "Nooca maxalliga ah" },
   "prefix_source": { "message": "Isha" },
+  "error_readingLocalPkgVer": { "message": "Khalad akhrinta nooca xirmada maxalliga ah" },
   "error_notRecognized": { "message": "aan la aqoonsaneyn" },
   "error_nonPositiveNum": { "message": "doodu waxay noqon kartaa oo kaliya > 0" },
   "error_invalidURL": { "message": "Mareeg aan sax ahayn" },

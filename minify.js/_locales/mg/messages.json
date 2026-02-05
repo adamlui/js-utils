@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Ny versiona faranydia" },
   "prefix_localVer": { "message": "Kinovan'ny toerana" },
   "prefix_source": { "message": "Loharano" },
+  "error_readingLocalPkgVer": { "message": "Nisy olana teo am-pamakiana ny kinovan'ny fonosana an-toerana" },
   "error_notRecognized": { "message": "tsy fantatra" },
   "error_nonPositiveNum": { "message": "tsy misy fotoana… Tohiny" },
   "error_invalidURL": { "message": "URL diso" },

@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "ގްލޯބަލް ވާޝަން" },
   "prefix_localVer": { "message": "ލޯކަލް ވާޝަން" },
   "prefix_source": { "message": "ސޯސް" },
+  "error_readingLocalPkgVer": { "message": "ލޯކަލް ޕެކޭޖް ވަރޝަން ކިޔުމުގައި ގޯހެއް" },
   "error_notRecognized": { "message": "ދެނެގަނެވިފައެއް ނުވެއެވެ" },
   "error_nonPositiveNum": { "message": "އަރގިއުމެންޓް ވާނީ ހަމައެކަނި > 0 އަށެވެ" },
   "error_invalidURL": { "message": "ސައްހަ ނޫން ޔޫ.އާރ.އެލް" },

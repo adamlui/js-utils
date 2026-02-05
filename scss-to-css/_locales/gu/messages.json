@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "વૈશ્વિક સંસ્કરણ" },
   "prefix_localVer": { "message": "સ્થાનિક સંસ્કરણ" },
   "prefix_source": { "message": "સ્ત્રોત" },
+  "error_readingLocalPkgVer": { "message": "સ્થાનિક પેકેજ સંસ્કરણ વાંચવામાં ભૂલ" },
   "error_notRecognized": { "message": "ઓળખી શકાયું નથી" },
   "error_nonPositiveNum": { "message": "દલીલ ફક્ત > 0 હોઈ શકે છે" },
   "error_invalidURL": { "message": "અયોગ્ય URL" },

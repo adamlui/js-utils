@@ -7,6 +7,7 @@
   "prefix_globalVer": { "message": "Global versjon" },
   "prefix_localVer": { "message": "Your local version" },
   "prefix_source": { "message": "Kilde" },
+  "error_readingLocalPkgVer": { "message": "Feil ved lesing av lokal pakkeversjon" },
   "error_notRecognized": { "message": "Ikke gjenkjent" },
   "error_nonPositiveNum": { "message": "argumentet kan bare være > 0" },
   "error_invalidURL": { "message": "Ugyldig URL" },
