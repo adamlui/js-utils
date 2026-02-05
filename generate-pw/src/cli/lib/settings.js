@@ -13,9 +13,9 @@ module.exports = {
         charset: { type: 'param', regex: /^--?charse?t?(?:=.*|$)/ },
         excludeChars: { type: 'param', regex:/^--?exclude(?:=.*|$)/ },
         config: { type: 'param', regex: /^--?config(?:=.*|$)/ },
-        weak: { type: 'flag', mode: true, regex: /^--?weak$/ },
-        basic: { type: 'flag',  mode: true, regex: /^--?basic$/ },
-        strong: { type: 'flag', mode: true, regex: /^--?strong$/ },
+        weak: { type: 'flag', mode: true, regex: /^--?(?:w|weak)$/ },
+        basic: { type: 'flag',  mode: true, regex: /^--?(?:b|basic)$/ },
+        strong: { type: 'flag', mode: true, regex: /^--?(?:t|strong)$/ },
         excludeNums: { type: 'flag', regex: /^--?(?:N|(?:exclude|disable|no)-?num(?:ber)?s?=?(?:true|1)?)$/ },
         excludeSymbols: { type: 'flag', regex: /^--?(?:Y|(?:exclude|disable|no)-?symbols?=?(?:true|1)?)$/ },
         excludeLowerChars: {
