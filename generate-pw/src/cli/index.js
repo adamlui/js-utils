@@ -17,16 +17,16 @@
           log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
           settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
 
-    // Init APP data
-    Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`))
+    // Init CLI data
+    Object.assign(globalThis.cli ??= {}, require(`../${ env.devMode ? '../' : './data/' }package-data.json`))
     env.sysLang = env.debugMode ? generateRandomLang({ excludes: ['en'] }) : getSysLang()
-    app.msgs = await getMsgs(env.sysLang)
-    app.urls.docs += '/#-command-line-usage'
-    if (!(env.sysLang).startsWith('en')){ // localize app.urls.docs
-        app.docLocale = env.sysLang.replace('_', '-').toLowerCase()
-        app.docLocales = await github.getDirContents({ path: 'generate-pw/docs', type: 'dir' })
-        if (app.docLocales.includes(app.docLocale))
-            app.urls.docs = app.urls.docs.replace(/\/#.*$/g, `/${app.docLocale}#readme`)
+    cli.msgs = await getMsgs(env.sysLang)
+    cli.urls.docs += '/#-command-line-usage'
+    if (!(env.sysLang).startsWith('en')){ // localize cli.urls.docs
+        cli.docLocale = env.sysLang.replace('_', '-').toLowerCase()
+        cli.docLocales = await github.getDirContents({ path: 'generate-pw/docs', type: 'dir' })
+        if (cli.docLocales.includes(cli.docLocale))
+            cli.urls.docs = cli.urls.docs.replace(/\/#.*$/g, `/${cli.docLocale}#readme`)
     }
 
     // Exec CMD arg if passed
@@ -39,21 +39,21 @@
     // Copy random PASSWORD(s)
     settings.load()
     const genOptions = {
-        length: app.config.length,
-        qty: app.config.qty,
-        strength: app.config.mode,
-        charset: app.config.charset,
-        exclude: app.config.excludeChars,
-        numbers: !app.config.excludeNums,
-        symbols: !app.config.excludeSymbols,
-        lowercase: !app.config.excludeLowerChars,
-        uppercase: !app.config.excludeUpperChars,
-        similarChars: app.config.similarChars,
-        strict: !app.config.unstrict,
-        entropy: app.config.entropy,
-        verbose: !app.config.quietMode
+        length: cli.config.length,
+        qty: cli.config.qty,
+        strength: cli.config.mode,
+        charset: cli.config.charset,
+        exclude: cli.config.excludeChars,
+        numbers: !cli.config.excludeNums,
+        symbols: !cli.config.excludeSymbols,
+        lowercase: !cli.config.excludeLowerChars,
+        uppercase: !cli.config.excludeUpperChars,
+        similarChars: cli.config.similarChars,
+        strict: !cli.config.unstrict,
+        entropy: cli.config.entropy,
+        verbose: !cli.config.quietMode
     }
     clipboardy.writeSync([].concat(generatePassword(genOptions)).join('\n'))
-    log.ifNotQuiet(`\n${app.msgs.info_copyingToClip}...`)
+    log.ifNotQuiet(`\n${cli.msgs.info_copyingToClip}...`)
 
 })()

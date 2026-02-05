@@ -10,27 +10,27 @@ const args = process.argv.slice(2),
     { execSync } = require('child_process'),
       fs = require('fs')
 
-globalThis.app = require('../app.json')
-app.config = {
+globalThis.cli = require('../package-data.json')
+cli.config = {
     dataOnly: args.some(arg => /^--?data$/.test(arg)),
     jsOnly: args.some(arg => /^--?(?:js|minify)$/.test(arg)),
     jsonOnly: args.some(arg => /^--?json$/.test(arg))
 }
 
 // Copy data
-if (!app.config.jsOnly) {
+if (!cli.config.jsOnly) {
     const dataOutDir = 'dist/data',
-          filenames = { appData: 'app.json', msgs: 'messages.json', config: 'scss-to-css.config.mjs' }
+          filenames = { appData: 'package-data.json', msgs: 'messages.json', config: 'scss-to-css.config.mjs' }
     fs.rmSync('dist', { recursive: true, force: true })
     fs.mkdirSync(dataOutDir, { recursive: true })
     fs.copyFileSync(`_locales/en/${filenames.msgs}`, `${dataOutDir}/${filenames.msgs}`)
     fs.copyFileSync(filenames.appData, `${dataOutDir}/${filenames.appData}`)
-    if (!app.config.jsonOnly) fs.copyFileSync(filenames.config, `${dataOutDir}/${filenames.config}`)
+    if (!cli.config.jsonOnly) fs.copyFileSync(filenames.config, `${dataOutDir}/${filenames.config}`)
 }
 
 // Minify JS
-if (!app.config.dataOnly) {
-    app.headerComment = `© ${app.copyrightYear} ${app.author} under the ${app.license} license.\\n`
-                      + `Source: ${app.urls.src}\\nDocumentation: ${app.urls.docs}`
-    execSync(`npx minify-js src dist --comment="${app.headerComment}"`, { stdio: 'inherit' })
+if (!cli.config.dataOnly) {
+    cli.headerComment = `© ${cli.copyrightYear} ${cli.author} under the ${cli.license} license.\\n`
+                      + `Source: ${cli.urls.src}\\nDocumentation: ${cli.urls.docs}`
+    execSync(`npx minify-js src dist --comment="${cli.headerComment}"`, { stdio: 'inherit' })
 }

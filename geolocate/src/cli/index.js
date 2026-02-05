@@ -16,11 +16,11 @@
           log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
           settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
 
-    // Init APP data
-    Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`))
+    // Init CLI data
+    Object.assign(globalThis.cli ??= {}, require(`../${ env.devMode ? '../' : './data/' }package-data.json`))
     env.sysLang = env.debugMode ? generateRandomLang({ excludes: ['en'] }) : getSysLang()
-    app.msgs = await getMsgs(env.sysLang)
-    app.urls.docs += '/#-command-line-usage'
+    cli.msgs = await getMsgs(env.sysLang)
+    cli.urls.docs += '/#-command-line-usage'
 
     // Process ARGS
     const validIPs = []
@@ -35,10 +35,10 @@
 
     // Log/copy GEO result(s)
     settings.load()
-    const geoResults = await geo.locate(validIPs, { verbose: !app.config.quietMode })
+    const geoResults = await geo.locate(validIPs, { verbose: !cli.config.quietMode })
     if (!geoResults) process.exit(1)
-    if (!app.config.quietMode && geoResults.length == 1) log.geoData(geoResults[0])
-    log.ifNotQuiet(`\n${app.msgs.info_copyingToClip}...`)
+    if (!cli.config.quietMode && geoResults.length == 1) log.geoData(geoResults[0])
+    log.ifNotQuiet(`\n${cli.msgs.info_copyingToClip}...`)
     clipboardy.writeSync(JSON.stringify(geoResults, null, 2))
 
 })()

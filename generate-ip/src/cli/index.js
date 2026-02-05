@@ -16,11 +16,11 @@
           log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
           settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
 
-    // Init APP data
-    Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`))
+    // Init CLI data
+    Object.assign(globalThis.cli ??= {}, require(`../${ env.devMode ? '../' : './data/' }package-data.json`))
     env.sysLang = env.debugMode ? generateRandomLang({ excludes: ['en'] }) : getSysLang()
-    app.msgs = await getMsgs(env.sysLang)
-    app.urls.docs += '/#-command-line-usage'
+    cli.msgs = await getMsgs(env.sysLang)
+    cli.urls.docs += '/#-command-line-usage'
 
     // Exec CMD arg if passed
     for (const arg of args) {
@@ -31,9 +31,9 @@
 
     // Log/copy random IP(s)
     settings.load()
-    const genOptions = { qty: app.config.qty, verbose: !app.config.quietMode },
-          ipResult = { ipv4, ipv6, mac }[app.config.mode || 'ipv4'].generate(genOptions)
-    log.ifNotQuiet(`\n${app.msgs.info_copyingToClip}...`)
+    const genOptions = { qty: cli.config.qty, verbose: !cli.config.quietMode },
+          ipResult = { ipv4, ipv6, mac }[cli.config.mode || 'ipv4'].generate(genOptions)
+    log.ifNotQuiet(`\n${cli.msgs.info_copyingToClip}...`)
     clipboardy.writeSync([].concat(ipResult).join('\n'))
 
 })()

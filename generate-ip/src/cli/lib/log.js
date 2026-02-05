@@ -11,53 +11,53 @@ module.exports = {
         tlBG: '\x1b[106m'     // teal bg
     },
 
-    configURL() { this.info(`\n${app.msgs.info_exampleValidConfigFile}: ${app.urls.config}`) },
+    configURL() { this.info(`\n${cli.msgs.info_exampleValidConfigFile}: ${cli.urls.config}`) },
     configURLandExit(...args) { this.error(...args) ; this.configURL() ; process.exit(1) },
     data(msg) { console.log(`\n${this.colors.bw}${msg}${this.colors.nc}`) },
     debug(msg) { if (env.debugMode) console.log(`${this.prefix} » ${msg}`) },
     error(...args) {
-        console.error(`\n${this.colors.br}${this.prefix} » ${app.msgs.prefix_error}:`, ...args, this.colors.nc) },
+        console.error(`\n${this.colors.br}${this.prefix} » ${cli.msgs.prefix_error}:`, ...args, this.colors.nc) },
     errorAndExit(...args) { this.error(...args) ; this.helpCmdAndDocURL() ; process.exit(1) },
-    ifNotQuiet(msg) { if (!app.config.quietMode) console.info(msg) },
+    ifNotQuiet(msg) { if (!cli.config.quietMode) console.info(msg) },
     info(msg) { console.info(`\n${this.colors.by}${msg}${this.colors.nc}`) },
-    tip(msg) { console.info(`${this.colors.by}${app.msgs.prefix_tip}: ${msg}${this.colors.nc}`) },
+    tip(msg) { console.info(`${this.colors.by}${cli.msgs.prefix_tip}: ${msg}${this.colors.nc}`) },
     success(msg) { console.log(`\n${this.colors.bg}${msg}${this.colors.nc}`) },
     warn(...args) {
-        console.warn(`\n${this.colors.bo}${this.prefix}${app.msgs.prefix_warning}:`, ...args, this.colors.nc) },
+        console.warn(`\n${this.colors.bo}${this.prefix}${cli.msgs.prefix_warning}:`, ...args, this.colors.nc) },
 
     help(includeSections = ['header', 'usage', 'params', 'flags', 'cmds']) {
-        app.prefix = `${this.colors.tlBG}${this.colors.blk}\x1b[30m ${app.name} ${this.colors.nc} `
+        cli.prefix = `${this.colors.tlBG}${this.colors.blk}\x1b[30m ${cli.name} ${this.colors.nc} `
         const helpSections = {
             header: [
-                `\n├ ${app.prefix}${app.msgs.appCopyright}.`,
-                `${app.prefix}${app.msgs.prefix_source}: ${app.urls.src}`
+                `\n├ ${cli.prefix}${cli.msgs.appCopyright}.`,
+                `${cli.prefix}${cli.msgs.prefix_source}: ${cli.urls.src}`
             ],
             usage: [
-                `\n${this.colors.bw}o ${app.msgs.helpSection_usage}:${this.colors.nc}`,
-                ` ${this.colors.bw}» ${this.colors.bg}${app.cmdFormat}${this.colors.nc}`
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_usage}:${this.colors.nc}`,
+                ` ${this.colors.bw}» ${this.colors.bg}${cli.cmdFormat}${this.colors.nc}`
             ],
             params: [
-                `\n${this.colors.bw}o ${app.msgs.helpSection_params}:${this.colors.nc}`,
-                ` --qty=n                     ${app.msgs.optionDesc_qty}.`,
-                ` --config="path/to/file"     ${app.msgs.optionDesc_config}.`
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_params}:${this.colors.nc}`,
+                ` --qty=n                     ${cli.msgs.optionDesc_qty}.`,
+                ` --config="path/to/file"     ${cli.msgs.optionDesc_config}.`
             ],
             flags: [
-                `\n${this.colors.bw}o ${app.msgs.helpSection_flags}:${this.colors.nc}`,
-                ` -6, --ipv6                  ${app.msgs.optionDesc_ipv6}.`,
-                ` -m, --mac                   ${app.msgs.optionDesc_mac}.`,
-                ` -q, --quiet                 ${app.msgs.optionDesc_quiet}.`
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_flags}:${this.colors.nc}`,
+                ` -6, --ipv6                  ${cli.msgs.optionDesc_ipv6}.`,
+                ` -m, --mac                   ${cli.msgs.optionDesc_mac}.`,
+                ` -q, --quiet                 ${cli.msgs.optionDesc_quiet}.`
             ],
             cmds: [
-                `\n${this.colors.bw}o ${app.msgs.helpSection_cmds}:${this.colors.nc}`,
-                ` -i, --init                  ${app.msgs.optionDesc_init}.`,
-                ` -h, --help                  ${app.msgs.optionDesc_help}.`,
-                ` -v, --version               ${app.msgs.optionDesc_version}.`
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_cmds}:${this.colors.nc}`,
+                ` -i, --init                  ${cli.msgs.optionDesc_init}.`,
+                ` -h, --help                  ${cli.msgs.optionDesc_help}.`,
+                ` -v, --version               ${cli.msgs.optionDesc_version}.`
             ]
         }
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 29)))
         console.info(
-            `\n${app.msgs.info_moreHelp}, ${app.msgs.info_visit}: ${this.colors.bw}${app.urls.docs}${this.colors.nc}`)
+            `\n${cli.msgs.info_moreHelp}, ${cli.msgs.info_visit}: ${this.colors.bw}${cli.urls.docs}${this.colors.nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
@@ -86,23 +86,23 @@ module.exports = {
 
     helpCmdAndDocURL() {
         console.info(`\n${
-            app.msgs.info_moreHelp}, ${app.msgs.info_type} ${app.name} --help' ${
-                app.msgs.info_or} ${app.msgs.info_visit}\n${
-                this.colors.bw}${app.urls.docs}${this.colors.nc}`
+            cli.msgs.info_moreHelp}, ${cli.msgs.info_type} ${cli.name} --help' ${
+                cli.msgs.info_or} ${cli.msgs.info_visit}\n${
+                this.colors.bw}${cli.urls.docs}${this.colors.nc}`
         )
     },
 
     version() {
         const globalVer = require('child_process')
-            .execSync(`npm view ${JSON.stringify(app.name)} version`).toString().trim() || 'none'
+            .execSync(`npm view ${JSON.stringify(cli.name)} version`).toString().trim() || 'none'
         let localVer = 'none'
 
         try { // to set localVer from node_modules package.json
-            const localPkgPath = require('path').resolve(process.cwd(), 'node_modules', app.name, 'package.json')
+            const localPkgPath = require('path').resolve(process.cwd(), 'node_modules', cli.name, 'package.json')
             if (require('fs').existsSync(localPkgPath)) localVer = require(localPkgPath).version || 'none'
         } catch (err) {
-            this.error(`${app.msgs.error_readingLocalPkgVer}:`, err.message) }
+            this.error(`${cli.msgs.error_readingLocalPkgVer}:`, err.message) }
 
-        console.info(`\n${app.msgs.prefix_globalVer}: ${globalVer}\n${app.msgs.prefix_localVer}: ${localVer}`)
+        console.info(`\n${cli.msgs.prefix_globalVer}: ${globalVer}\n${cli.msgs.prefix_localVer}: ${localVer}`)
     }
 }

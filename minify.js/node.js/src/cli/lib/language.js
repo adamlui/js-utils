@@ -50,7 +50,7 @@ module.exports = {
             require(`../../${ env.devMode ? '../../_locales/en/' : 'data/' }messages.json`))
 
         if (!langCode.startsWith('en')) { // fetch non-English msgs from jsDelivr
-            const msgHostURL = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`
+            const msgHostURL = `${cli.urls.jsdelivr}@${cli.commitHashes.locales}/_locales/`
             let msgHref = `${msgHostURL}${langCode.replace('-', '_')}/messages.json`
             while ((this.msgFetchesTried ||= 0) < 3)
                 try { // fetch remote msgs
