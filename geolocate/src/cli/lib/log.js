@@ -33,7 +33,7 @@ module.exports = {
             `${app.msgs.geoLabel_lat}: ${this.colors.bw}${data.lat}${this.colors.nc}`,
             `${app.msgs.geoLabel_lon}: ${this.colors.bw}${data.lon}${this.colors.nc}`,
             `${app.msgs.geoLabel_timeZone}: ${
-                    this.colors.bw}${data.timezone.replace(/_/g, ' ').replace(/\//g, ' / ')}${this.colors.nc}`,
+                this.colors.bw}${data.timezone.replace(/_/g, ' ').replace(/\//g, ' / ')}${this.colors.nc}`,
             `ISP: ${this.colors.bw}${data.isp}${this.colors.nc}`
         ].join('\n'))
     },
