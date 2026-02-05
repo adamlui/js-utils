@@ -23,9 +23,13 @@
     Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`))
     env.sysLang = env.debugMode ? generateRandomLang({ excludes: ['en'] }) : getSysLang()
     app.msgs = await getMsgs(env.sysLang)
-    app.docLocales = await github.getDirContents({ path: 'docs', type: 'dir' })
-    app.docLocale = env.sysLang.replace('_', '-').toLowerCase()
-    app.urls.docs += app.docLocales.includes(app.docLocale) ? `/${app.docLocale}#readme` : '/#-command-line-usage'
+    app.urls.docs += '/#-command-line-usage'
+    if (!(env.sysLang).startsWith('en')){ // localize app.urls.docs
+        app.docLocale = env.sysLang.replace('_', '-').toLowerCase()
+        app.docLocales = await github.getDirContents({ path: 'docs', type: 'dir' })
+        if (app.docLocales.includes(app.docLocale))
+            app.urls.docs = app.urls.docs.replace(/\/#.*$/g, `/${app.docLocale}#readme`)
+    }
 
     // Exec CMD arg if passed
     for (const arg of args) {
