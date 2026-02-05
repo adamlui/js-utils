@@ -69,7 +69,7 @@
     "node-clipboardy": "^1.0.3"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^2.2.0",
+    "@adamlui/minify.js": "^2.2.1",
     "generate-ip": "^2.5.0"
   }
 }
