@@ -22,10 +22,10 @@ module.exports = {
             type: 'flag', regex: /^--?(?:X|(?:disable|no)-?(?:file)?name-?change|(?:file)?name-?change=(?:false|0))$/ },
         rewriteImports: {
             type: 'flag', regex: /^--?(?:i|rewrite-?imports?=?(?:true|1)?)$/ },
-        relativeOutput: {
-            type: 'flag', regex: /^--?(?:r|relative-?output?=?(?:true|1)?)$/ },
         copy: {
             type: 'flag', regex: /^--?c(?:opy)?$/ },
+        relativeOutput: {
+            type: 'flag', regex: /^--?(?:r|relative-?output?=?(?:true|1)?)$/ },
         quietMode: {
             type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
         ignores: {
