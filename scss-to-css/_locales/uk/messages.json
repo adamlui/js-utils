@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Приклад дійсної команди" },
   "info_scssFilesToBeCompiled": { "message": "Файли SCSS, що підлягають компіляції" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Файли SCSS не будуть скомпільовані" },
-  "info_copying": { "message": "Копіювання до буфера" },
+  "info_copyingToClip": { "message": "Копіювання до буфера" },
   "info_writing": { "message": "Запис у файл" },
   "info_compilationComplete": { "message": "Компіляцію завершено" },
   "info_file": { "message": "File" },

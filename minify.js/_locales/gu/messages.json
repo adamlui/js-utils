@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ઉદાહરણ માન્ય આદેશ" },
   "info_filesToBeMinned": { "message": "જાવાસ્ક્રિપ્ટ ફાઇલોને મિનિફાઇડ કરવાની છે" },
   "info_noFilesWillBeMinned": { "message": "કોઈ જાવાસ્ક્રિપ્ટ ફાઇલોને મિનિફાઇડ કરવામાં આવશે નહીં" },
-  "info_copying": { "message": "ક્લિપબોર્ડ પર કૉપિ કરી રહ્યું છે" },
+  "info_copyingToClip": { "message": "ક્લિપબોર્ડ પર કૉપિ કરી રહ્યું છે" },
   "info_writing": { "message": "ફાઇલ પર લખી રહ્યા છીએ" },
   "info_minComplete": { "message": "મિનિફિકેશન પૂર્ણ થયું" },
   "info_file": { "message": "ફાઇલ" },

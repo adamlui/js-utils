@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Urugero Byemewe Komandi:" },
   "info_scssFilesToBeCompiled": { "message": "Idosiye Kuri" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Idosiye" },
-  "info_copying": { "message": "Kuri Ububikokoporora" },
+  "info_copyingToClip": { "message": "Kuri Ububikokoporora" },
   "info_writing": { "message": "Kuri IDOSIYE" },
   "info_compilationComplete": { "message": "Byuzuye" },
   "info_file": { "message": "IDOSIYE" },

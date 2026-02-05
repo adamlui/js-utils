@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Faataitaiga poloaiga aoga" },
   "info_scssFilesToBeCompiled": { "message": "SCSS faila e tatau ona aoina" },
   "info_noSCSSfilesWillBeCompiled": { "message": "E leai se faila SCSS o le a aoina" },
-  "info_copying": { "message": "Kopi i le clipboard" },
+  "info_copyingToClip": { "message": "Kopi i le clipboard" },
   "info_writing": { "message": "Tusi e faila" },
   "info_compilationComplete": { "message": "Faʻamaumauga atoa" },
   "info_file": { "message": "faila" },

@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "უნდა შეიცავდეს =path-ს" },
   "warn_configFileExists": { "message": "კონფიგურაციის ფაილი უკვე არსებობს" },
   "info_exampleValidConfigFile": { "message": "ვალიდური კონფიგურაციის ფაილის მაგალითი" },
-  "info_copying": { "message": "კოპირება ბუფერში" },
+  "info_copyingToClip": { "message": "კოპირება ბუფერში" },
   "info_moreHelp": { "message": "დამატებითი დახმარებისთვის" },
   "info_type": { "message": "ტიპი" },
   "info_or": { "message": "ან" },

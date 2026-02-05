@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Gorchymyn dilys enghreifftiol" },
   "info_scssFilesToBeCompiled": { "message": "Ffeiliau SCSS i'w llunio" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Ni fydd unrhyw ffeiliau SCSS yn cael eu llunio" },
-  "info_copying": { "message": "Copïo i&apos; r gludfwrdd" },
+  "info_copyingToClip": { "message": "Copïo i&apos; r gludfwrdd" },
   "info_writing": { "message": "Ysgrifennu i ffeil" },
   "info_compilationComplete": { "message": "Cwblhawyd y casgliad" },
   "info_file": { "message": "ffeil" },

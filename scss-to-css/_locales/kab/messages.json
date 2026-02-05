@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Amedya n usaḍuf iṣeḥḥan" },
   "info_scssFilesToBeCompiled": { "message": "Isebtar i yellan ddaw-a sɛan aseɣwen ɣer CSS" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Ulac isefka SCSS ara yettwakelsen" },
-  "info_copying": { "message": "Asnulfu ɣer Clippboard" },
+  "info_copyingToClip": { "message": "Asnulfu ɣer Clippboard" },
   "info_writing": { "message": "Tira i ufaylu" },
   "info_compilationComplete": { "message": "Asebded yekfa" },
   "info_file": { "message": "afaylu" },

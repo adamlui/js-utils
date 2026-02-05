@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "有效命令示例" },
   "info_scssFilesToBeCompiled": { "message": "要編譯的SCSS檔案" },
   "info_noSCSSfilesWillBeCompiled": { "message": "不會編譯任何SCSS檔案" },
-  "info_copying": { "message": "正在複製到剪貼簿" },
+  "info_copyingToClip": { "message": "正在複製到剪貼簿" },
   "info_writing": { "message": "正在寫入檔案" },
   "info_compilationComplete": { "message": "編譯完成" },
   "info_file": { "message": "檔案" },

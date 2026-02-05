@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Egzanp lòd ki valab" },
   "info_scssFilesToBeCompiled": { "message": "Dosye SCSS yo dwe konpile" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Pa gen dosye SCSS yo pral konpile" },
-  "info_copying": { "message": "Kopi nan tablo" },
+  "info_copyingToClip": { "message": "Kopi nan tablo" },
   "info_writing": { "message": "Ekri nan dosye" },
   "info_compilationComplete": { "message": "Konpilasyon konplè" },
   "info_file": { "message": "dosye/ranpli/lim /fil/fichier/les documents/documents/dossier/le dossier/déclaration/soumettre/ classification/classeur/limer/lime/ficher/ soumettre/mettre dans le dossier/se souiller/trompeur/marcher/se présenter candidat/envoyer/ envoyer/déposer" },

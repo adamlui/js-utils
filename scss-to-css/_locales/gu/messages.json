@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ઉદાહરણ માન્ય આદેશ" },
   "info_scssFilesToBeCompiled": { "message": "કમ્પાઇલ કરવાની SCSS ફાઇલો" },
   "info_noSCSSfilesWillBeCompiled": { "message": "કોઈ SCSS ફાઇલો કમ્પાઇલ કરવામાં આવશે નહીં" },
-  "info_copying": { "message": "ક્લિપબોર્ડ પર કૉપિ કરી રહ્યું છે" },
+  "info_copyingToClip": { "message": "ક્લિપબોર્ડ પર કૉપિ કરી રહ્યું છે" },
   "info_writing": { "message": "ફાઇલ પર લખી રહ્યા છીએ" },
   "info_compilationComplete": { "message": "સંકલન પૂર્ણ" },
   "info_file": { "message": "ફાઇલ" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Kauoha kūpono hoʻohālike" },
   "info_scssFilesToBeCompiled": { "message": "Nā faila SCSS e hōʻuluʻulu ʻia" },
   "info_noSCSSfilesWillBeCompiled": { "message": "ʻAʻole e hōʻuluʻulu ʻia nā faila SCSS" },
-  "info_copying": { "message": "Ke kope nei i ka papa hoʻopaʻa" },
+  "info_copyingToClip": { "message": "Ke kope nei i ka papa hoʻopaʻa" },
   "info_writing": { "message": "Ke kākau ʻana i ka faila" },
   "info_compilationComplete": { "message": "Ua pau ka hōʻuluʻulu ʻana" },
   "info_file": { "message": "faila" },

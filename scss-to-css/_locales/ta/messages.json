@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "எடுத்துக்காட்டு செல்லுபடியாகும் கட்டளை" },
   "info_scssFilesToBeCompiled": { "message": "SCSS கோப்புகள் தொகுக்கப்பட வேண்டும்" },
   "info_noSCSSfilesWillBeCompiled": { "message": "SCSS கோப்புகள் எதுவும் தொகுக்கப்படாது" },
-  "info_copying": { "message": "பிடிப்புப்பலகைக்கு நகலாக்குகின்றது" },
+  "info_copyingToClip": { "message": "பிடிப்புப்பலகைக்கு நகலாக்குகின்றது" },
   "info_writing": { "message": "கோப்பிற்கு எழுதுகிறது" },
   "info_compilationComplete": { "message": "தொகுப்பு முடிந்தது" },
   "info_file": { "message": "கோப்பு" },

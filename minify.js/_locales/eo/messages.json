@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Ekzemplo de valida komando" },
   "info_filesToBeMinned": { "message": "Ĝavoskriptdosieroj minifikendaj" },
   "info_noFilesWillBeMinned": { "message": "Neniu JavaScript-dosieroj estos minifikitaj" },
-  "info_copying": { "message": "Kopiante al interdeponejo" },
+  "info_copyingToClip": { "message": "Kopiante al interdeponejo" },
   "info_writing": { "message": "Skribi al dosiero" },
   "info_minComplete": { "message": "Minifikado kompleta" },
   "info_file": { "message": "dosiero" },

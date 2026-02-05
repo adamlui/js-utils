@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "شامل ہونا ضروری ہے =PATH" },
   "warn_configFileExists": { "message": "کنفیگ فائل پہلے سے موجود ہے" },
   "info_exampleValidConfigFile": { "message": "مثال کے طور پر درست کنفیگ فائل" },
-  "info_copying": { "message": "کلپ بورڈ پر کاپی ہو رہی ہے" },
+  "info_copyingToClip": { "message": "کلپ بورڈ پر کاپی ہو رہی ہے" },
   "info_moreHelp": { "message": "مزید مدد کے لیے" },
   "info_type": { "message": "نوعیت" },
   "info_or": { "message": "یا" },

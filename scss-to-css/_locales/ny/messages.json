@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Chitsanzo chomveka lamulo" },
   "info_scssFilesToBeCompiled": { "message": "SCSS owona kuti analemba" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Palibe mafayilo a SCSS omwe adzasonkhanitsidwe" },
-  "info_copying": { "message": "Kukopera kuti clipboard" },
+  "info_copyingToClip": { "message": "Kukopera kuti clipboard" },
   "info_writing": { "message": "Kulemba fayilo" },
   "info_compilationComplete": { "message": "Compilation wathunthu" },
   "info_file": { "message": "fayilo" },

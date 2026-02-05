@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "उदाहरण मान्य कमांड" },
   "info_scssFilesToBeCompiled": { "message": "संकलित की जाने वाली SCSS फ़ाइलें" },
   "info_noSCSSfilesWillBeCompiled": { "message": "कोई SCSS फ़ाइल कम्पाइल नहीं की जाएगी" },
-  "info_copying": { "message": "क्लिपबोर्ड से नक़ल किया जा रहा है... user on host" },
+  "info_copyingToClip": { "message": "क्लिपबोर्ड से नक़ल किया जा रहा है... user on host" },
   "info_writing": { "message": "फ़ाइल में लिखा जा रहा है" },
   "info_compilationComplete": { "message": "संकलन पूरा हुआ" },
   "info_file": { "message": "फ़ाइल" },

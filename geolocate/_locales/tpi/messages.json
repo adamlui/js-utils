@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "em i mas i go = em i mas i go" },
   "warn_configFileExists": { "message": "Konfigim fail i stap pinis" },
   "info_exampleValidConfigFile": { "message": "Wanpela gutpela piksa bilong dispela fail" },
-  "info_copying": { "message": "Kopiim long Clipboard" },
+  "info_copyingToClip": { "message": "Kopiim long Clipboard" },
   "info_moreHelp": { "message": "Bilong helpim yu" },
   "info_type": { "message": "-Kain" },
   "info_or": { "message": "o" },

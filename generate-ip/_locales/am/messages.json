@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "ማካተት አለበት =መንገድ" },
   "warn_configFileExists": { "message": "ፋይል አስቀድሞ አለ ያዋቅሩ" },
   "info_exampleValidConfigFile": { "message": "ምሳሌ ትክክለኛ የውቅረት ፋይል" },
-  "info_copying": { "message": "ወደ ክሊፕቦርድ መቅዳት" },
+  "info_copyingToClip": { "message": "ወደ ክሊፕቦርድ መቅዳት" },
   "info_moreHelp": { "message": "ለተጨማሪ እገዛ" },
   "info_type": { "message": "ዓይነት" },
   "info_or": { "message": "ወይም" },

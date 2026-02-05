@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "waa in ay ku jiraan =waddo" },
   "warn_configFileExists": { "message": "Faylka Config ayaa hore u jiray" },
   "info_exampleValidConfigFile": { "message": "Tusaalaha faylka qaabeynta ansax ah" },
-  "info_copying": { "message": "Nuqul ka mid ah clipboard" },
+  "info_copyingToClip": { "message": "Nuqul ka mid ah clipboard" },
   "info_moreHelp": { "message": "Caawimaad dheeraad ah" },
   "info_type": { "message": "nooca" },
   "info_or": { "message": "ama" },

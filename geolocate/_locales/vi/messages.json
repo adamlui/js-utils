@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "phải bao gồm =PATH" },
   "warn_configFileExists": { "message": "Tệp cấu hình đã tồn tại" },
   "info_exampleValidConfigFile": { "message": "Ví dụ về tệp cấu hình hợp lệ" },
-  "info_copying": { "message": "Đang chép vào bảng nháp" },
+  "info_copyingToClip": { "message": "Đang chép vào bảng nháp" },
   "info_moreHelp": { "message": "Để được trợ giúp thêm" },
   "info_type": { "message": "kiểu" },
   "info_or": { "message": "hoặc" },

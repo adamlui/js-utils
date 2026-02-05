@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Dæmi um gilda skipun" },
   "info_scssFilesToBeCompiled": { "message": "SCSS skrár sem á að setja saman" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Engar SCSS skrár verða teknar saman" },
-  "info_copying": { "message": "Afrita á klemmuspjald" },
+  "info_copyingToClip": { "message": "Afrita á klemmuspjald" },
   "info_writing": { "message": "Skrifa til að skrá" },
   "info_compilationComplete": { "message": "Samantekt lokið" },
   "info_file": { "message": "ósatt" },

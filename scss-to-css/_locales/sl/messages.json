@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Primer veljavnega ukaza" },
   "info_scssFilesToBeCompiled": { "message": "Datoteke SCSS, ki jih je treba prevesti" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Nobena datoteka SCSS ne bo prevedena" },
-  "info_copying": { "message": "Kopiranje v odlagališče" },
+  "info_copyingToClip": { "message": "Kopiranje v odlagališče" },
   "info_writing": { "message": "Pisanje v datoteko" },
   "info_compilationComplete": { "message": "Kompilacija je končana" },
   "info_file": { "message": "datoteka" },

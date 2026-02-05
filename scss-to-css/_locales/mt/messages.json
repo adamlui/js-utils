@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Eżempju ta' kmand validu" },
   "info_scssFilesToBeCompiled": { "message": "Fajls SCSS li għandhom jiġu kkompilati" },
   "info_noSCSSfilesWillBeCompiled": { "message": "L-ebda fajl SCSS mhux se jiġi kkompilat" },
-  "info_copying": { "message": "Kif tikkopja għall-klipbord" },
+  "info_copyingToClip": { "message": "Kif tikkopja għall-klipbord" },
   "info_writing": { "message": "Kif tikteb fil-fajl" },
   "info_compilationComplete": { "message": "Il-kompilazzjoni tlestiet" },
   "info_file": { "message": "Fajl" },

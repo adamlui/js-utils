@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Nimûneya fermana derbasdar" },
   "info_scssFilesToBeCompiled": { "message": "Pelên SCSS-ê yên ku werin berhevkirin" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Tu pelên SCSS nayên berhevkirin" },
-  "info_copying": { "message": "Kopîkirin bo panoyê" },
+  "info_copyingToClip": { "message": "Kopîkirin bo panoyê" },
   "info_writing": { "message": "Nivîsandina li pelê" },
   "info_compilationComplete": { "message": "Berhevkirin qediya" },
   "info_file": { "message": "pel" },

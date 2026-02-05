@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "rhaid cynnwys =llwybr" },
   "warn_configFileExists": { "message": "Ffeil cyfluniad yn bodoli'n barod" },
   "info_exampleValidConfigFile": { "message": "Enghraifft o ffeil cyfluniad dilys" },
-  "info_copying": { "message": "Copïo i&apos; r gludfwrdd" },
+  "info_copyingToClip": { "message": "Copïo i&apos; r gludfwrdd" },
   "info_moreHelp": { "message": "Am fwy o help" },
   "info_type": { "message": "mâth" },
   "info_or": { "message": "neu" },

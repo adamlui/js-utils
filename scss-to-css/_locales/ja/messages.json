@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "有効なコマンドの例" },
   "info_scssFilesToBeCompiled": { "message": "コンパイルされるSCSSファイル" },
   "info_noSCSSfilesWillBeCompiled": { "message": "SCSSファイルはコンパイルされません" },
-  "info_copying": { "message": "クリップボードにコピーしています" },
+  "info_copyingToClip": { "message": "クリップボードにコピーしています" },
   "info_writing": { "message": "ファイルに書き込んでいます" },
   "info_compilationComplete": { "message": "コンパイル完了" },
   "info_file": { "message": "ファイル" },

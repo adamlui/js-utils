@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Хүчинтэй командын жишээ" },
   "info_scssFilesToBeCompiled": { "message": "SCSS файлуудыг эмхлэнэ" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Ямар ч SCSS файлыг эмхэтгэхгүй" },
-  "info_copying": { "message": "Түр санах ой руу хуулах" },
+  "info_copyingToClip": { "message": "Түр санах ой руу хуулах" },
   "info_writing": { "message": "Файлд бичих" },
   "info_compilationComplete": { "message": "Бүртгэл дууссан" },
   "info_file": { "message": " " },

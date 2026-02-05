@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "유효한 명령의 예" },
   "info_filesToBeMinned": { "message": "축소할 JavaScript 파일" },
   "info_noFilesWillBeMinned": { "message": "축소될 자바스크립트 파일이 없습니다" },
-  "info_copying": { "message": "클립보드로 복사하는 중" },
+  "info_copyingToClip": { "message": "클립보드로 복사하는 중" },
   "info_writing": { "message": "파일에 쓰기" },
   "info_minComplete": { "message": "축소 완료" },
   "info_file": { "message": "파일" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Příklad platného příkazu" },
   "info_scssFilesToBeCompiled": { "message": "Soubory SCSS ke kompilaci" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Nebudou kompilovány žádné soubory SCSS" },
-  "info_copying": { "message": "Kopírování do schránky" },
+  "info_copyingToClip": { "message": "Kopírování do schránky" },
   "info_writing": { "message": "Zápis do souboru" },
   "info_compilationComplete": { "message": "Kompilace dokončena" },
   "info_file": { "message": "soubor" },

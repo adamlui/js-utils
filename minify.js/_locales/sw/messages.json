@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Mfano amri halali" },
   "info_filesToBeMinned": { "message": "Mafaili ya JavaScript yatakayopunguzwa" },
   "info_noFilesWillBeMinned": { "message": "Hakuna faili za JavaScript zitakazopunguzwa" },
-  "info_copying": { "message": "Kunakili kwenye ubao wa kunakili" },
+  "info_copyingToClip": { "message": "Kunakili kwenye ubao wa kunakili" },
   "info_writing": { "message": "Kuandika kwenye faili" },
   "info_minComplete": { "message": "Uainishaji umekamilika" },
   "info_file": { "message": "Faili" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Ehempel di comando valido" },
   "info_scssFilesToBeCompiled": { "message": "Archive for Scion to Be Collected" },
   "info_noSCSSfilesWillBeCompiled": { "message": "No CSS Archive" },
-  "info_copying": { "message": "Copiando a Clipboard" },
+  "info_copyingToClip": { "message": "Copiando a Clipboard" },
   "info_writing": { "message": "Escriba un archivo" },
   "info_compilationComplete": { "message": "Compilacion Completo" },
   "info_file": { "message": "archivo" },

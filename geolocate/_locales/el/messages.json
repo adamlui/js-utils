@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "πρέπει να περιλαμβάνει =διαδρομή" },
   "warn_configFileExists": { "message": "Το αρχείο διαμόρφωσης υπάρχει ήδη" },
   "info_exampleValidConfigFile": { "message": "Παράδειγμα έγκυρου αρχείου διαμόρφωσης" },
-  "info_copying": { "message": "Αντιγραφή στο πρόχειρο" },
+  "info_copyingToClip": { "message": "Αντιγραφή στο πρόχειρο" },
   "info_moreHelp": { "message": "Για περισσότερη βοήθεια" },
   "info_type": { "message": "τύπος" },
   "info_or": { "message": "ή" },

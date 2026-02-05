@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Mbeni tapande ti commandement so ayeke na lege ni" },
   "info_scssFilesToBeCompiled": { "message": "A yeke wara a-fichier ti SCSS so a lingbi a bungbi ni" },
   "info_noSCSSfilesWillBeCompiled": { "message": "A yeke wara pëpe a-fichier ti SCSS" },
-  "info_copying": { "message": "Gbu li ti mo na ndo ti clipboard ni" },
+  "info_copyingToClip": { "message": "Gbu li ti mo na ndo ti clipboard ni" },
   "info_writing": { "message": "Ti sû mbeti ti faïl" },
   "info_compilationComplete": { "message": "A yeke bungbi ni kue" },
   "info_file": { "message": "faïl (faïl" },

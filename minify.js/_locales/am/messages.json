@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ምሳሌ ትክክለኛ ትዕዛዝ" },
   "info_filesToBeMinned": { "message": "ጃቫስክሪፕት ፋይሎች እንዲቀንስ" },
   "info_noFilesWillBeMinned": { "message": "ምንም የጃቫስክሪፕት ፋይሎች አይቀነሱም" },
-  "info_copying": { "message": "ወደ ክሊፕቦርድ መቅዳት" },
+  "info_copyingToClip": { "message": "ወደ ክሊፕቦርድ መቅዳት" },
   "info_writing": { "message": "ወደ ፋይል መጻፍ" },
   "info_minComplete": { "message": "የማዕድን ማጠናቀቂያ ሙሉ" },
   "info_file": { "message": "/ፋይል (_F)" },

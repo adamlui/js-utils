@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Приклад дійсної команди" },
   "info_filesToBeMinned": { "message": "Файли JavaScript, які потрібно мінімізувати" },
   "info_noFilesWillBeMinned": { "message": "Файли JavaScript не будуть мінімізовані" },
-  "info_copying": { "message": "Копіювання до буфера" },
+  "info_copyingToClip": { "message": "Копіювання до буфера" },
   "info_writing": { "message": "Запис у файл" },
   "info_minComplete": { "message": "Мініфікацію завершено" },
   "info_file": { "message": "файл" },

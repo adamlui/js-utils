@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Esimerkki kelvollisesta komennosta" },
   "info_scssFilesToBeCompiled": { "message": "Koottavat SCSS-tiedostot" },
   "info_noSCSSfilesWillBeCompiled": { "message": "SCSS-tiedostoja ei käännetä" },
-  "info_copying": { "message": "Kopioin leikepöydälle" },
+  "info_copyingToClip": { "message": "Kopioin leikepöydälle" },
   "info_writing": { "message": "Kirjoitetaan tiedostoon" },
   "info_compilationComplete": { "message": "Kokoaminen valmis" },
   "info_file": { "message": "tiedosto" },

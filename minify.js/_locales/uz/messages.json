@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "To'g'ri buyruq misoli" },
   "info_filesToBeMinned": { "message": "JavaScript fayllari kichiklashtiriladi" },
   "info_noFilesWillBeMinned": { "message": "Hech qanday JavaScript fayli kichiklashtirilmaydi" },
-  "info_copying": { "message": "Buferga nusxalanmoqda" },
+  "info_copyingToClip": { "message": "Buferga nusxalanmoqda" },
   "info_writing": { "message": "Faylga yozish" },
   "info_minComplete": { "message": "Kichkinalashtirish tugallandi" },
   "info_file": { "message": "fayl" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Misol uchun amal qiluvchi buyruq" },
   "info_scssFilesToBeCompiled": { "message": "Kompilyatsiya qilinadigan SCSS fayllari" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Hech qanday SCSS fayllari kompilyatsiya qilinmaydi" },
-  "info_copying": { "message": "Buferga nusxalash" },
+  "info_copyingToClip": { "message": "Buferga nusxalash" },
   "info_writing": { "message": "Faylga yozish" },
   "info_compilationComplete": { "message": "Kompilyatsiya yakunlandi" },
   "info_file": { "message": "fayl" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Baliozko komandoaren adibidea" },
   "info_scssFilesToBeCompiled": { "message": "Konpilatu beharreko SCSS fitxategiak" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Ez da SCSS fitxategirik konpilatuko" },
-  "info_copying": { "message": "Arbelean kopiatzen" },
+  "info_copyingToClip": { "message": "Arbelean kopiatzen" },
   "info_writing": { "message": "Fitxategian idaztea" },
   "info_compilationComplete": { "message": "Konpilazioa osatu da" },
   "info_file": { "message": "fitxategia" },

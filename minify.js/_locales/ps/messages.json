@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "د اعتبار وړ کمانډ مثال" },
   "info_filesToBeMinned": { "message": "د جاواسکرېپټ دوتنې باید دقیقې شي" },
   "info_noFilesWillBeMinned": { "message": "د جاواسکرېپټ دوتنې به ونه منل شي" },
-  "info_copying": { "message": "کلیپ بورډ ته کاپي کول" },
+  "info_copyingToClip": { "message": "کلیپ بورډ ته کاپي کول" },
   "info_writing": { "message": "فایل کې لیکل" },
   "info_minComplete": { "message": "تعدیل بشپړ شو" },
   "info_file": { "message": "فایل" },

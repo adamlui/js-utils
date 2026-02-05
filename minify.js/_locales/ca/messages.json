@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Exemple d'ordre vàlida" },
   "info_filesToBeMinned": { "message": "Fitxers JavaScript que s'han de minificar" },
   "info_noFilesWillBeMinned": { "message": "No es minimitzaran els fitxers JavaScript" },
-  "info_copying": { "message": "S'està copiant al porta-retalls" },
+  "info_copyingToClip": { "message": "S'està copiant al porta-retalls" },
   "info_writing": { "message": "S'està escrivint al fitxer" },
   "info_minComplete": { "message": "S'ha completat la minificació" },
   "info_file": { "message": "arxiu" },

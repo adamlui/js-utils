@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Mfano amri halali" },
   "info_scssFilesToBeCompiled": { "message": "Faili za SCSS zitakazokusanywa" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Hakuna faili za SCSS zitakazokusanywa" },
-  "info_copying": { "message": "Kunakili kwenye ubao wa kunakili" },
+  "info_copyingToClip": { "message": "Kunakili kwenye ubao wa kunakili" },
   "info_writing": { "message": "Kuandika kwenye faili" },
   "info_compilationComplete": { "message": "Ukusanyaji umekamilika" },
   "info_file": { "message": "Faili" },

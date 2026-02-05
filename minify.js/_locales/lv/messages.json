@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Piemērs: derīga komanda" },
   "info_filesToBeMinned": { "message": "Javascript faili, kas jāmin" },
   "info_noFilesWillBeMinned": { "message": "Neviens JavaScript fails netiks samazināts" },
-  "info_copying": { "message": "Notiek kopēšana starpliktuvē" },
+  "info_copyingToClip": { "message": "Notiek kopēšana starpliktuvē" },
   "info_writing": { "message": "Rakstīšana failā" },
   "info_minComplete": { "message": "Minimizēšana pabeigta" },
   "info_file": { "message": "falšs" },

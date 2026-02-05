@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "مثال دستور معتبر" },
   "info_scssFilesToBeCompiled": { "message": "فایل‌های SCSS که باید کامپایل شوند" },
   "info_noSCSSfilesWillBeCompiled": { "message": "هیچ فایل SCSS کامپایل نخواهد شد" },
-  "info_copying": { "message": "کپی کردن در کلیپ بورد" },
+  "info_copyingToClip": { "message": "کپی کردن در کلیپ بورد" },
   "info_writing": { "message": "نوشتن در فایل" },
   "info_compilationComplete": { "message": "تدوین کامل شد" },
   "info_file": { "message": "فایل" },

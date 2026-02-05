@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "နမူနာ မှန်ကန်သော ညွှန်ကြားချက်" },
   "info_scssFilesToBeCompiled": { "message": "စုဆောင်းရမည့် SQL ဖိုင်များ" },
   "info_noSCSSfilesWillBeCompiled": { "message": "CSS ဖိုင်များကိုစုစည်းထားမည်မဟုတ်ပါ" },
-  "info_copying": { "message": "ကလစ်ဘုတ်သို့ ကူးယူနေသည်" },
+  "info_copyingToClip": { "message": "ကလစ်ဘုတ်သို့ ကူးယူနေသည်" },
   "info_writing": { "message": "ဖိုင်သို့ရိုက်ယူခြင်း" },
   "info_compilationComplete": { "message": "စုစည်းမှု ပြီးစီးပါပြီ" },
   "info_file": { "message": "ဖိုင်" },

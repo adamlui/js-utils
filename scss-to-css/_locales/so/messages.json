@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Tusaalaha amarka ansax ah" },
   "info_scssFilesToBeCompiled": { "message": "Faylasha SCSS si loo soo ururiyo" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Faylasha SCSS lama soo ururin doono" },
-  "info_copying": { "message": "Nuqul ka mid ah clipboard" },
+  "info_copyingToClip": { "message": "Nuqul ka mid ah clipboard" },
   "info_writing": { "message": "Qorista faylka" },
   "info_compilationComplete": { "message": "Isku-darka oo dhameystiran" },
   "info_file": { "message": "Faylka" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Muenzaniso murairo unoshanda" },
   "info_filesToBeMinned": { "message": "JavaScript mafaira kuti minified" },
   "info_noFilesWillBeMinned": { "message": "Hapana maJavaScript mafaira achazoderedzwa" },
-  "info_copying": { "message": "Kutevedzera kuti clipboard" },
+  "info_copyingToClip": { "message": "Kutevedzera kuti clipboard" },
   "info_writing": { "message": "Kunyorera kufaira" },
   "info_minComplete": { "message": "Kucheneswa kwakakwana" },
   "info_file": { "message": "faira" },

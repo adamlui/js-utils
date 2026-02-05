@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "בייַשפּיל גילטיק באַפֿעל" },
   "info_filesToBeMinned": { "message": "דזשאַוואַסקריפּט טעקעס צו זיין מינאַפייד" },
   "info_noFilesWillBeMinned": { "message": "קיין דזשאַוואַסקריפּט טעקעס וועט זיין מיניפיעד" },
-  "info_copying": { "message": "קאַפּיינג צו קליפּבאָרד" },
+  "info_copyingToClip": { "message": "קאַפּיינג צו קליפּבאָרד" },
   "info_writing": { "message": "שרייבן צו טעקע" },
   "info_minComplete": { "message": "מיניפיקאַטיאָן גאַנץ" },
   "info_file": { "message": "טעקעס" },

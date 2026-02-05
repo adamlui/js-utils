@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "དཔེ་སྒྲོམ་བདེན་པའི་བཀའ་རྒྱ་" },
   "info_scssFilesToBeCompiled": { "message": "འཚུབ་/འཚུབས་/འཚུབ་" },
   "info_noSCSSfilesWillBeCompiled": { "message": "SCSSཡིག་སྣོད་ཚུ་བསྡུ་མི་ཚུགས།" },
-  "info_copying": { "message": "སྒྲིག་འཇུག་བྱས་ཚད། ཐེངས་ 3 ལས་ཉུང་བ། ཐོན་རིམ་" },
+  "info_copyingToClip": { "message": "སྒྲིག་འཇུག་བྱས་ཚད། ཐེངས་ 3 ལས་ཉུང་བ། ཐོན་རིམ་" },
   "info_writing": { "message": "ཡིག་སྣོད་ནང་བྲིས་" },
   "info_compilationComplete": { "message": "སྒྲིག་འཇུག་བྱས་ཚད། ཐེངས་ 3 ལས་ཉུང་བ" },
   "info_file": { "message": "ཡིག་སྣོད་" },

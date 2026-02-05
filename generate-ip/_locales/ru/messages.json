@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "must include =path" },
   "warn_configFileExists": { "message": "Конфигурационный файл уже существует" },
   "info_exampleValidConfigFile": { "message": "Пример допустимого файла конфигурации" },
-  "info_copying": { "message": "Копирование в буфер обмена" },
+  "info_copyingToClip": { "message": "Копирование в буфер обмена" },
   "info_moreHelp": { "message": "Для получения дополнительной помощи читать" },
   "info_type": { "message": "Тип" },
   "info_or": { "message": "или" },

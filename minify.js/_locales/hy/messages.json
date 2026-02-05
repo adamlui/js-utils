@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Վավեր հրահանգի օրինակ" },
   "info_filesToBeMinned": { "message": "Նվազեցման ենթակա JavaScript ֆայլեր" },
   "info_noFilesWillBeMinned": { "message": "JavaScript ֆայլեր չեն minified" },
-  "info_copying": { "message": "Պատճենահանվում է շապիկի մեջ" },
+  "info_copyingToClip": { "message": "Պատճենահանվում է շապիկի մեջ" },
   "info_writing": { "message": "Գրվում է ֆայլի համար" },
   "info_minComplete": { "message": "Նվազեցումն ավարտված է" },
   "info_file": { "message": "Գրառում" },

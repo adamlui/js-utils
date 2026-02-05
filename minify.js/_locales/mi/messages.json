@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Tauira whakahau whaimana" },
   "info_filesToBeMinned": { "message": "Ko nga konae JavaScript hei whakaiti" },
   "info_noFilesWillBeMinned": { "message": "Kaore he konae JavaScript e whakaitihia" },
-  "info_copying": { "message": "Tārua ki te papapātuhi" },
+  "info_copyingToClip": { "message": "Tārua ki te papapātuhi" },
   "info_writing": { "message": "Tuhia ki te kōnae" },
   "info_minComplete": { "message": "Te whakaoti i te Minification" },
   "info_file": { "message": "TE KONAE" },

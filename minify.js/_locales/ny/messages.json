@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Chitsanzo cha lamulo lovomerezeka" },
   "info_filesToBeMinned": { "message": "Mafayilo a JavaScript omwe ayenera kusinthidwa" },
   "info_noFilesWillBeMinned": { "message": "Palibe mafayilo a JavaScript omwe adzasinthidwa" },
-  "info_copying": { "message": "Kukopera ku bolodibodi" },
+  "info_copyingToClip": { "message": "Kukopera ku bolodibodi" },
   "info_writing": { "message": "Kulemba fayilo" },
   "info_minComplete": { "message": "Kusinthasintha kwatha" },
   "info_file": { "message": "fayilo" },

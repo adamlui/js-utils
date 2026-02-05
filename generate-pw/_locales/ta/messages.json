@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "கட்டாயம் சேர்க்க வேண்டும் =பாதை" },
   "warn_configFileExists": { "message": "கட்டமைப்பு கோப்பு ஏற்கனவே உள்ளது" },
   "info_exampleValidConfigFile": { "message": "எடுத்துக்காட்டு செல்லுபடியாகும் உள்ளமைவு கோப்பு" },
-  "info_copying": { "message": "பிடிப்புப்பலகைக்கு நகலாக்குகின்றது" },
+  "info_copyingToClip": { "message": "பிடிப்புப்பலகைக்கு நகலாக்குகின்றது" },
   "info_moreHelp": { "message": "மேலும் உதவிக்கு" },
   "info_type": { "message": "வகை" },
   "info_or": { "message": "அல்லது" },

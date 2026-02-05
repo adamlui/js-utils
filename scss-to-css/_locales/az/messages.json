@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Nümunə üçün etibarlı əmr" },
   "info_scssFilesToBeCompiled": { "message": "SCSS faylları tərtib ediləcək" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Heç bir SCSS faylı tərtib edilməyəcək" },
-  "info_copying": { "message": "Mübadilə buferinə kopyal" },
+  "info_copyingToClip": { "message": "Mübadilə buferinə kopyal" },
   "info_writing": { "message": "Fayla yazmaq" },
   "info_compilationComplete": { "message": "Kompilyasiya tamamlandı" },
   "info_file": { "message": "Fayl" },

@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "ayenera kuphatikizapo =njira" },
   "warn_configFileExists": { "message": "Konzani fayilo yomwe ilipo kale" },
   "info_exampleValidConfigFile": { "message": "Chitsanzo chovomerezeka cha fayilo ya config" },
-  "info_copying": { "message": "Kukopera kuti clipboard" },
+  "info_copyingToClip": { "message": "Kukopera kuti clipboard" },
   "info_moreHelp": { "message": "Kuti muthandizidwe kwambiri" },
   "info_type": { "message": "Mtundu" },
   "info_or": { "message": "kapena" },

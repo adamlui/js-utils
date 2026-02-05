@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ตัวอย่างคำสั่งที่ถูกต้อง" },
   "info_scssFilesToBeCompiled": { "message": "ไฟล์ SCSS ที่จะคอมไพล์" },
   "info_noSCSSfilesWillBeCompiled": { "message": "จะไม่มีการคอมไพล์ไฟล์ SCSS" },
-  "info_copying": { "message": "กำลังคัดลอกไปยังคลิปบอร์ด" },
+  "info_copyingToClip": { "message": "กำลังคัดลอกไปยังคลิปบอร์ด" },
   "info_writing": { "message": "กำลังเขียนไปยังไฟล์" },
   "info_compilationComplete": { "message": "การคอมไพล์เสร็จสมบูรณ์" },
   "info_file": { "message": "ไฟล์" },

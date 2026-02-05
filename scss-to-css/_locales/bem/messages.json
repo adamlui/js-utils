@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Icilangililo ca Mafunde Ayacindama" },
   "info_scssFilesToBeCompiled": { "message": "Amafayilo a SCS kuti apangidwe" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Fela Kuti No SCS files will be compile" },
-  "info_copying": { "message": "Kopololeni ku clipboard" },
+  "info_copyingToClip": { "message": "Kopololeni ku clipboard" },
   "info_writing": { "message": "Ukulemba pa file" },
   "info_compilationComplete": { "message": "Ukupitila mu kupwililika" },
   "info_file": { "message": "file" },

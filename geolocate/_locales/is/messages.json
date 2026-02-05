@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "verður að innihalda =path" },
   "warn_configFileExists": { "message": "Stillingaskrá er þegar til" },
   "info_exampleValidConfigFile": { "message": "Dæmi um gilda uppsetningarskrá" },
-  "info_copying": { "message": "Afrita á klemmuspjald" },
+  "info_copyingToClip": { "message": "Afrita á klemmuspjald" },
   "info_moreHelp": { "message": "Fyrir frekari aðstoð" },
   "info_type": { "message": "Tegund" },
   "info_or": { "message": "eða" },

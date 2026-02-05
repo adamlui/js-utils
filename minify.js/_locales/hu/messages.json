@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Példa érvényes parancsra" },
   "info_filesToBeMinned": { "message": "Minimalizálandó JavaScript-fájlok" },
   "info_noFilesWillBeMinned": { "message": "A JavaScript-fájlok nem lesznek kicsinyítve" },
-  "info_copying": { "message": "Másolás a vágólapra" },
+  "info_copyingToClip": { "message": "Másolás a vágólapra" },
   "info_writing": { "message": "Írás fájlba" },
   "info_minComplete": { "message": "Minifikáció befejezve" },
   "info_file": { "message": "fájl" },

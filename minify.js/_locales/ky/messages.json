@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Үлгү жарактуу буйрук" },
   "info_filesToBeMinned": { "message": "JavaScript файлдары минималдаштырылат" },
   "info_noFilesWillBeMinned": { "message": "Эч кандай JavaScript файлдары минималдаштырылбайт" },
-  "info_copying": { "message": "Алмашуу буферине көчүрүү" },
+  "info_copyingToClip": { "message": "Алмашуу буферине көчүрүү" },
   "info_writing": { "message": "Файлга жазуу" },
   "info_minComplete": { "message": "Минималдаштыруу аяктады" },
   "info_file": { "message": "файл" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Wanpela gutpela eksampel" },
   "info_scssFilesToBeCompiled": { "message": "Ol fail bilong SCSS i mas bungim" },
   "info_noSCSSfilesWillBeCompiled": { "message": "No SCSS Files Bai Kamap" },
-  "info_copying": { "message": "Kopiim long Clipboard" },
+  "info_copyingToClip": { "message": "Kopiim long Clipboard" },
   "info_writing": { "message": "Kirap long fail" },
   "info_compilationComplete": { "message": "Ol i wokim olgeta samting" },
   "info_file": { "message": "fail" },

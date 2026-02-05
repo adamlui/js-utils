@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "must include =path" },
   "warn_configFileExists": { "message": "Config file already exists" },
   "info_exampleValidConfigFile": { "message": "Example valid config file" },
-  "info_copying": { "message": "Copying to clipboard" },
+  "info_copyingToClip": { "message": "Copying to clipboard" },
   "info_moreHelp": { "message": "For more help" },
   "info_type": { "message": "type" },
   "info_or": { "message": "or" },

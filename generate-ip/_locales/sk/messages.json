@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "musí obsahovať =cesta" },
   "warn_configFileExists": { "message": "Konfiguračný súbor už existuje" },
   "info_exampleValidConfigFile": { "message": "Príklad platného konfiguračného súboru" },
-  "info_copying": { "message": "Kopírujem do dočasnej schránky" },
+  "info_copyingToClip": { "message": "Kopírujem do dočasnej schránky" },
   "info_moreHelp": { "message": "Ak potrebujete ďalšiu pomoc" },
   "info_type": { "message": "Typ" },
   "info_or": { "message": "alebo" },

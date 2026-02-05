@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Example valid command" },
   "info_filesToBeMinned": { "message": "JS files to be minified" },
   "info_noFilesWillBeMinned": { "message": "No JS files will be minified" },
-  "info_copying": { "message": "Copying to clipboard" },
+  "info_copyingToClip": { "message": "Copying to clipboard" },
   "info_writing": { "message": "Writing to file" },
   "info_minComplete": { "message": "Minification complete" },
   "info_file": { "message": "file" },

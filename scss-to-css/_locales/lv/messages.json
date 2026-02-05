@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Piemērs: derīga komanda" },
   "info_scssFilesToBeCompiled": { "message": "Sastādāmie SCSS faili" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Neviens SCSS fails netiks kompilēts" },
-  "info_copying": { "message": "Notiek kopēšana starpliktuvē" },
+  "info_copyingToClip": { "message": "Notiek kopēšana starpliktuvē" },
   "info_writing": { "message": "Rakstīšana failā" },
   "info_compilationComplete": { "message": "Kompilēšana pabeigta" },
   "info_file": { "message": "falšs" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Dæmi um gilda skipun" },
   "info_filesToBeMinned": { "message": "JavaScript skrár sem á að smána" },
   "info_noFilesWillBeMinned": { "message": "Engum JavaScript skrám verður eytt" },
-  "info_copying": { "message": "Afrita á klemmuspjald" },
+  "info_copyingToClip": { "message": "Afrita á klemmuspjald" },
   "info_writing": { "message": "Skrifa til að skrá" },
   "info_minComplete": { "message": "Minjun lokið" },
   "info_file": { "message": "ósatt" },

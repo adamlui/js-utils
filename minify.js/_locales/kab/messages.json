@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Amedya n usaḍuf iṣeḥḥan" },
   "info_filesToBeMinned": { "message": "Isebtar i yellan ddaw-a sɛan aseɣwen ɣer JavaScript" },
   "info_noFilesWillBeMinned": { "message": "Ulac ifuyla JavaScript ara yettwakksen" },
-  "info_copying": { "message": "Asnulfu ɣer Clippboard" },
+  "info_copyingToClip": { "message": "Asnulfu ɣer Clippboard" },
   "info_writing": { "message": "Tira i ufaylu" },
   "info_minComplete": { "message": "Asfaylu yekfa" },
   "info_file": { "message": "afaylu" },

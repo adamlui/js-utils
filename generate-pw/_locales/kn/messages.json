@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "ಒಳಗೊಂಡಿರಬೇಕು =ಮಾರ್ಗ" },
   "warn_configFileExists": { "message": "ಕಾನ್ಫಿಗರ್ ಫೈಲ್ ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ" },
   "info_exampleValidConfigFile": { "message": "ಉದಾಹರಣೆ ಮಾನ್ಯ ಕಾನ್ಫಿಗರೇಶನ್ ಫೈಲ್" },
-  "info_copying": { "message": "ಕ್ಲಿಪ್ ‌ ಬೋರ್ಡ್ ‌ ಗೆ ನಕಲಿಸಲಾಗುತ್ತಿದೆ" },
+  "info_copyingToClip": { "message": "ಕ್ಲಿಪ್ ‌ ಬೋರ್ಡ್ ‌ ಗೆ ನಕಲಿಸಲಾಗುತ್ತಿದೆ" },
   "info_moreHelp": { "message": "ಹೆಚ್ಚಿನ ಸಹಾಯಕ್ಕಾಗಿ" },
   "info_type": { "message": "ಪ್ರಕಾರ" },
   "info_or": { "message": "ಅಥವಾ" },

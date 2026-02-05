@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "בייַשפּיל גילטיק באַפֿעל" },
   "info_scssFilesToBeCompiled": { "message": "SCSS טעקעס צו ווערן קאמפיילט" },
   "info_noSCSSfilesWillBeCompiled": { "message": "קיין SCSS טעקעס וועלן נישט ווערן קאמפיילד" },
-  "info_copying": { "message": "קאפירן צום קליפּבאָרד" },
+  "info_copyingToClip": { "message": "קאפירן צום קליפּבאָרד" },
   "info_writing": { "message": "שרייבן צו א טעקע" },
   "info_compilationComplete": { "message": "קאָמפּילאַציע פֿאַרטיק" },
   "info_file": { "message": "טעקעס" },

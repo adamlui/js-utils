@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "חייב לכלול =PATH" },
   "warn_configFileExists": { "message": "קובץ התצורה כבר קיים" },
   "info_exampleValidConfigFile": { "message": "דוגמה לקובץ תצורה חוקי" },
-  "info_copying": { "message": "מעתיק אל הלוח" },
+  "info_copyingToClip": { "message": "מעתיק אל הלוח" },
   "info_moreHelp": { "message": "לקבלת עזרה נוספת" },
   "info_type": { "message": "סוג" },
   "info_or": { "message": "או" },

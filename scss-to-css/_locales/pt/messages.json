@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Exemplo de comando válido" },
   "info_scssFilesToBeCompiled": { "message": "Arquivos SCSS a serem compilados" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Nenhum ficheiro SCSS será compilado" },
-  "info_copying": { "message": "A copiar para a área de transferência" },
+  "info_copyingToClip": { "message": "A copiar para a área de transferência" },
   "info_writing": { "message": "A gravar em ficheiro" },
   "info_compilationComplete": { "message": "Compilação concluída" },
   "info_file": { "message": "arquivo" },

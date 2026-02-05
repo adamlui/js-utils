@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Прыклад сапраўднай каманды" },
   "info_filesToBeMinned": { "message": "Файлы JavaScript, якія будуць зведзены да мінімуму" },
   "info_noFilesWillBeMinned": { "message": "Ніякія файлы JavaScript не будуць зведзены да мінімуму" },
-  "info_copying": { "message": "Значэнне" },
+  "info_copyingToClip": { "message": "Значэнне" },
   "info_writing": { "message": "Запіс у файл" },
   "info_minComplete": { "message": "Мінімізацыя завершана" },
   "info_file": { "message": "файл" },

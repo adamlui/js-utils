@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Ejemplo de comando válido" },
   "info_scssFilesToBeCompiled": { "message": "Archivos SCSS a compilar" },
   "info_noSCSSfilesWillBeCompiled": { "message": "No se compilarán archivos SCSS" },
-  "info_copying": { "message": "Copiar al portapapeles fue" },
+  "info_copyingToClip": { "message": "Copiar al portapapeles fue" },
   "info_writing": { "message": "Cómo escribir en un archivo" },
   "info_compilationComplete": { "message": "Compilación completa" },
   "info_file": { "message": "be situated" },

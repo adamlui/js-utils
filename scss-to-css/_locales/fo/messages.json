@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Dømi um gildið boð" },
   "info_scssFilesToBeCompiled": { "message": "SCSS-fílar at savna" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Ongar SCSS-fílar verða savnaðar" },
-  "info_copying": { "message": "At koppa á klippborðið" },
+  "info_copyingToClip": { "message": "At koppa á klippborðið" },
   "info_writing": { "message": "Skriva til fílu" },
   "info_compilationComplete": { "message": "Samanseting fullførd" },
   "info_file": { "message": "Fíla" },

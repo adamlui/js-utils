@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "must include =elérési út" },
   "warn_configFileExists": { "message": "A konfigurációs fájl már létezik" },
   "info_exampleValidConfigFile": { "message": "Példa érvényes konfigurációs fájlra" },
-  "info_copying": { "message": "Másolás a vágólapra" },
+  "info_copyingToClip": { "message": "Másolás a vágólapra" },
   "info_moreHelp": { "message": "További segítségért" },
   "info_type": { "message": "típus:" },
   "info_or": { "message": "vagy" },

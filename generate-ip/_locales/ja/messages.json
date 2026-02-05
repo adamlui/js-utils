@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "必ず含める必要がある = パス" },
   "warn_configFileExists": { "message": "構成ファイルは既に存在します" },
   "info_exampleValidConfigFile": { "message": "有効な設定ファイルの例" },
-  "info_copying": { "message": "クリップボードにコピーしています" },
+  "info_copyingToClip": { "message": "クリップボードにコピーしています" },
   "info_moreHelp": { "message": "ヘルプをもっと読む" },
   "info_type": { "message": "入力" },
   "info_or": { "message": "または" },

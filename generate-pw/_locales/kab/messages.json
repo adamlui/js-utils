@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "yessefk ad tqedceḍ =Abrid" },
   "warn_configFileExists": { "message": "Afaylu uffir yella yakan" },
   "info_exampleValidConfigFile": { "message": "Amedya n ufaylu yettwaxedmen" },
-  "info_copying": { "message": "Asnulfu ɣer Clippboard" },
+  "info_copyingToClip": { "message": "Asnulfu ɣer Clippboard" },
   "info_moreHelp": { "message": "I ugar n tallelt" },
   "info_type": { "message": "anaw" },
   "info_or": { "message": "neɣ" },

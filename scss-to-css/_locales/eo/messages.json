@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Ekzemplo de valida komando" },
   "info_scssFilesToBeCompiled": { "message": "Kompilendaj SCSS-dosieroj" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Neniu SCSS-dosiero estos kompilita" },
-  "info_copying": { "message": "Kopiante al interdeponejo" },
+  "info_copyingToClip": { "message": "Kopiante al interdeponejo" },
   "info_writing": { "message": "Skribi al dosiero" },
   "info_compilationComplete": { "message": "Kompilo kompletigita" },
   "info_file": { "message": "dosiero" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Tusaalaha amarka ansax ah" },
   "info_filesToBeMinned": { "message": "Faylasha JavaScript si loo yareeyo" },
   "info_noFilesWillBeMinned": { "message": "Ma jiro faylasha JavaScript la yareyn doono" },
-  "info_copying": { "message": "Nuqul ka mid ah clipboard" },
+  "info_copyingToClip": { "message": "Nuqul ka mid ah clipboard" },
   "info_writing": { "message": "Qorista faylka" },
   "info_minComplete": { "message": "Dhammaystirka macdanta" },
   "info_file": { "message": "Faylka" },

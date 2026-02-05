@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Exemple de commande valide" },
   "info_filesToBeMinned": { "message": "Fichiers JavaScript à minifier" },
   "info_noFilesWillBeMinned": { "message": "Aucun fichier JavaScript ne sera minifié" },
-  "info_copying": { "message": "Copie vers le Presse-Papiers" },
+  "info_copyingToClip": { "message": "Copie vers le Presse-Papiers" },
   "info_writing": { "message": "Écriture dans le fichier" },
   "info_minComplete": { "message": "Minification terminée" },
   "info_file": { "message": "fichier" },

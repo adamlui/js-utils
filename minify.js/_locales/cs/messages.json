@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Příklad platného příkazu" },
   "info_filesToBeMinned": { "message": "Soubory JavaScript, které mají být zmenšeny" },
   "info_noFilesWillBeMinned": { "message": "Žádné soubory JavaScriptu nebudou zmenšeny" },
-  "info_copying": { "message": "Kopírování do schránky" },
+  "info_copyingToClip": { "message": "Kopírování do schránky" },
   "info_writing": { "message": "Zápis do souboru" },
   "info_minComplete": { "message": "Minifikace dokončena" },
   "info_file": { "message": "soubor" },

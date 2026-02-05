@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "mesti sertakan =laluan" },
   "warn_configFileExists": { "message": "Fail konfigurasi sudah wujud" },
   "info_exampleValidConfigFile": { "message": "Contoh fail konfigurasi yang sah" },
-  "info_copying": { "message": "Menyalin ke klipbod" },
+  "info_copyingToClip": { "message": "Menyalin ke klipbod" },
   "info_moreHelp": { "message": "Untuk bantuan lanjut" },
   "info_type": { "message": "jenis" },
   "info_or": { "message": "atau" },

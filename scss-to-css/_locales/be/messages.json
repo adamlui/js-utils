@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Прыклад сапраўднай каманды" },
   "info_scssFilesToBeCompiled": { "message": "Файлы SCSS, якія трэба скампіляваць" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Файлы SCSS не будуць скампіляваныя" },
-  "info_copying": { "message": "Значэнне:" },
+  "info_copyingToClip": { "message": "Значэнне:" },
   "info_writing": { "message": " Запіс у файл" },
   "info_compilationComplete": { "message": "Кампіляцыя завершана" },
   "info_file": { "message": "файл" },

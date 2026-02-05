@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "ต้องมี = เส้นทาง" },
   "warn_configFileExists": { "message": "มีไฟล์การกำหนดค่าอยู่แล้ว" },
   "info_exampleValidConfigFile": { "message": "ตัวอย่างไฟล์การกำหนดค่าที่ถูกต้อง" },
-  "info_copying": { "message": "กำลังคัดลอกไปยังคลิปบอร์ด" },
+  "info_copyingToClip": { "message": "กำลังคัดลอกไปยังคลิปบอร์ด" },
   "info_moreHelp": { "message": "หากต้องการความช่วยเหลือเพิ่มเติม" },
   "info_type": { "message": "ประเภท" },
   "info_or": { "message": "หรือ" },

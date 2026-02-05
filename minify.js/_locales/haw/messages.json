@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Laʻana kauoha kūpono" },
   "info_filesToBeMinned": { "message": "E hoʻemi ʻia nā faila JavaScript" },
   "info_noFilesWillBeMinned": { "message": "ʻAʻohe faila JavaScript e hōʻemi ʻia" },
-  "info_copying": { "message": "Ke kope nei i ka papa ʻokiʻoki" },
+  "info_copyingToClip": { "message": "Ke kope nei i ka papa ʻokiʻoki" },
   "info_writing": { "message": "Kākau ana i ka waihona" },
   "info_minComplete": { "message": "Hoʻopau ʻia ka liʻiliʻi" },
   "info_file": { "message": "waihona" },

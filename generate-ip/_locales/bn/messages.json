@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "অবশ্যই অন্তর্ভুক্ত করতে হবে =PATH" },
   "warn_configFileExists": { "message": "কনফিগ ফাইল ইতিমধ্যে বিদ্যমান" },
   "info_exampleValidConfigFile": { "message": "উদাহরণ বৈধ কনফিগ ফাইল" },
-  "info_copying": { "message": "ক্লিপবোর্ডে অনুলিপি করা হচ্ছে" },
+  "info_copyingToClip": { "message": "ক্লিপবোর্ডে অনুলিপি করা হচ্ছে" },
   "info_moreHelp": { "message": "আরও সাহায্যের জন্য" },
   "info_type": { "message": "আদর্শ" },
   "info_or": { "message": "অথবা" },

@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "መገዲ =መገዲ" },
   "warn_configFileExists": { "message": "ፋይል ቀዲሙ ኣሎ" },
   "info_exampleValidConfigFile": { "message": "ኣብነት እሙን ናይ ውጥን ፋይል" },
-  "info_copying": { "message": "ናብ ክሊፕቦርድ ምምላስ" },
+  "info_copyingToClip": { "message": "ናብ ክሊፕቦርድ ምምላስ" },
   "info_moreHelp": { "message": "ዝያዳ ሓገዝ" },
   "info_type": { "message": "ዓይነት" },
   "info_or": { "message": "ወይ ከኣ" },

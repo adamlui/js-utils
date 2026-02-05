@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Voorbeeld geldige opdrag" },
   "info_scssFilesToBeCompiled": { "message": "SCS-lêers wat saamgestel moet word" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Geen SCSS-lêers sal saamgestel word nie" },
-  "info_copying": { "message": "Besig om te kopiëer na klipbord" },
+  "info_copyingToClip": { "message": "Besig om te kopiëer na klipbord" },
   "info_writing": { "message": "Skryf na lêer" },
   "info_compilationComplete": { "message": "Kompilasie voltooi" },
   "info_file": { "message": "lêer" },

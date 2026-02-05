@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Ehemplo balido sugo" },
   "info_filesToBeMinned": { "message": "Mga file sa javascript aron maminusan" },
   "info_noFilesWillBeMinned": { "message": "Wala 'y mga file sa JavaScript ang maminusan" },
-  "info_copying": { "message": "Pagkopya sa clipboard" },
+  "info_copyingToClip": { "message": "Pagkopya sa clipboard" },
   "info_writing": { "message": "Pagsulat sa file" },
   "info_minComplete": { "message": "Pagkompleto sa minification" },
   "info_file": { "message": "tagohipos" },

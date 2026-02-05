@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "moet insluit =pad" },
   "warn_configFileExists": { "message": "Konfigureer lêer bestaan reeds" },
   "info_exampleValidConfigFile": { "message": "Voorbeeld geldige konfigurasielêer" },
-  "info_copying": { "message": "Besig om te kopiëer na klipbord" },
+  "info_copyingToClip": { "message": "Besig om te kopiëer na klipbord" },
   "info_moreHelp": { "message": "Vir meer hulp" },
   "info_type": { "message": "tipe" },
   "info_or": { "message": "of" },

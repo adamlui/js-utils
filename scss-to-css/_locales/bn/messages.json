@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "উদাহরণ বৈধ কমান্ড" },
   "info_scssFilesToBeCompiled": { "message": "এসসিএসএস ফাইল কম্পাইল করা হবে" },
   "info_noSCSSfilesWillBeCompiled": { "message": "কোনও SCSS ফাইল কম্পাইল করা হবে না" },
-  "info_copying": { "message": "ক্লিপবোর্ডে অনুলিপি করা হচ্ছে" },
+  "info_copyingToClip": { "message": "ক্লিপবোর্ডে অনুলিপি করা হচ্ছে" },
   "info_writing": { "message": "ফাইলে লেখা হচ্ছে" },
   "info_compilationComplete": { "message": "সংকলন সম্পন্ন হয়েছে" },
   "info_file": { "message": "ফাইল" },

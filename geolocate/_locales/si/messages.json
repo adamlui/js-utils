@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "පථය =path" },
   "warn_configFileExists": { "message": "සැකසුම් ගොනුව දැනටමත් පවතී" },
   "info_exampleValidConfigFile": { "message": "නිදසුන වලංගු වින් ‍ යාස ගොනුව" },
-  "info_copying": { "message": "ක්ලිප් පුවරුවට පිටපත් කරමින්" },
+  "info_copyingToClip": { "message": "ක්ලිප් පුවරුවට පිටපත් කරමින්" },
   "info_moreHelp": { "message": "තවත් උදව් සඳහා" },
   "info_type": { "message": "ගූගල්" },
   "info_or": { "message": "හෝ" },

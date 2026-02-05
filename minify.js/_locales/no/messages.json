@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Eksempel på gyldig kommando" },
   "info_filesToBeMinned": { "message": "JavaScript-filer som skal minimeres" },
   "info_noFilesWillBeMinned": { "message": "Ingen JavaScript-filer vil bli minimert" },
-  "info_copying": { "message": "Kopierer til utklippstavlen" },
+  "info_copyingToClip": { "message": "Kopierer til utklippstavlen" },
   "info_writing": { "message": "Skriver til fil" },
   "info_minComplete": { "message": "Minifikasjon fullført" },
   "info_file": { "message": "fil" },

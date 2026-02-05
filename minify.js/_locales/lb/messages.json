@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Beispill valabel Kommando" },
   "info_filesToBeMinned": { "message": "Javascript-Dateien sollen minifizéiert ginn" },
   "info_noFilesWillBeMinned": { "message": "Keng JavaScript-Dateien ginn minifizéiert" },
-  "info_copying": { "message": "Op Clipboard kopéieren" },
+  "info_copyingToClip": { "message": "Op Clipboard kopéieren" },
   "info_writing": { "message": "Zu Datei schreiben" },
   "info_minComplete": { "message": "Minifikatioun komplett" },
   "info_file": { "message": "Fichier" },

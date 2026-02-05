@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "उदाहरण मान्य कमांड" },
   "info_filesToBeMinned": { "message": "जावास्क्रिप्ट फ़ाइलों को छोटा किया जाना है" },
   "info_noFilesWillBeMinned": { "message": "किसी भी जावास्क्रिप्ट फ़ाइल को छोटा नहीं किया जाएगा" },
-  "info_copying": { "message": "क्लिपबोर्ड पर कॉपी किया जा रहा है" },
+  "info_copyingToClip": { "message": "क्लिपबोर्ड पर कॉपी किया जा रहा है" },
   "info_writing": { "message": "फ़ाइल में लिखा जा रहा है" },
   "info_minComplete": { "message": "मिनिफ़िकेशन पूरा हुआ" },
   "info_file": { "message": "फ़ाइल" },

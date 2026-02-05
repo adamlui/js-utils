@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Пример за важечка команда" },
   "info_scssFilesToBeCompiled": { "message": "SCSS датотеки што треба да се состават" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Нема да се компајлираат SCSS датотеки" },
-  "info_copying": { "message": "Копирам на таблата со исечоци" },
+  "info_copyingToClip": { "message": "Копирам на таблата со исечоци" },
   "info_writing": { "message": "Се запишува во датотека" },
   "info_compilationComplete": { "message": "Составувањето е завршено" },
   "info_file": { "message": "датотека" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "މިސާލު ސައްހަ ކޮމާންޑެއް" },
   "info_filesToBeMinned": { "message": "ޖާވާސްކްރިޕްޓް ފައިލްތައް މިނިފައި ކުރަން" },
   "info_noFilesWillBeMinned": { "message": "އެއްވެސް ޖާވާސްކްރިޕްޓް ފައިލެއް މިނިފައި ނުކުރެވޭނެއެވެ" },
-  "info_copying": { "message": "ކްލިޕްބޯޑަށް ކޮޕީކުރުން" },
+  "info_copyingToClip": { "message": "ކްލިޕްބޯޑަށް ކޮޕީކުރުން" },
   "info_writing": { "message": "ފައިލަށް ލިޔުއްވުމެވެ" },
   "info_minComplete": { "message": "މިނިފިކޭޝަން ނިމިއްޖެ" },
   "info_file": { "message": "ފައިލް" },

@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "باید شامل =path باشد" },
   "warn_configFileExists": { "message": "فایل پیکربندی از قبل وجود دارد" },
   "info_exampleValidConfigFile": { "message": "نمونه فایل پیکربندی معتبر" },
-  "info_copying": { "message": "در حال کپی کردن در کلیپ بورد" },
+  "info_copyingToClip": { "message": "در حال کپی کردن در کلیپ بورد" },
   "info_moreHelp": { "message": "برای اطلاعات بیشتر بخوانید" },
   "info_type": { "message": "نوع" },
   "info_or": { "message": "یا" },

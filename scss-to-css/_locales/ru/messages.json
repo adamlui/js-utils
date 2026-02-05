@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Пример допустимой команды" },
   "info_scssFilesToBeCompiled": { "message": "Файлы SCSS для компиляции" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Файлы SCSS не будут скомпилированы" },
-  "info_copying": { "message": "Копирование в буфер обмена" },
+  "info_copyingToClip": { "message": "Копирование в буфер обмена" },
   "info_writing": { "message": "Запись в файл" },
   "info_compilationComplete": { "message": "Компиляция завершена" },
   "info_file": { "message": "файл" },

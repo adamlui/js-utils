@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "må inkludere =sti" },
   "warn_configFileExists": { "message": "Konfigurasjonsfilen finnes allerede" },
   "info_exampleValidConfigFile": { "message": "Eksempel på gyldig konfigurasjonsfil" },
-  "info_copying": { "message": "Kopierer til utklippstavlen" },
+  "info_copyingToClip": { "message": "Kopierer til utklippstavlen" },
   "info_moreHelp": { "message": "For mer hjelp" },
   "info_type": { "message": "type" },
   "info_or": { "message": "eller" },

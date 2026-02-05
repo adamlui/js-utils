@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Esimerkki kelvollisesta komennosta" },
   "info_filesToBeMinned": { "message": "Minimoitavat JavaScript-tiedostot" },
   "info_noFilesWillBeMinned": { "message": "JavaScript-tiedostoja ei pienennetä" },
-  "info_copying": { "message": "Kopioin leikepöydälle" },
+  "info_copyingToClip": { "message": "Kopioin leikepöydälle" },
   "info_writing": { "message": "Kirjoitetaan tiedostoon" },
   "info_minComplete": { "message": "Minimointi valmis" },
   "info_file": { "message": "tiedosto" },

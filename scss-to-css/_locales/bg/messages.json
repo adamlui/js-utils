@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Примерна валидна команда" },
   "info_scssFilesToBeCompiled": { "message": "SCSS файлове за компилиране" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Няма да се компилират SCSS файлове" },
-  "info_copying": { "message": "Копиране в клипборда" },
+  "info_copyingToClip": { "message": "Копиране в клипборда" },
   "info_writing": { "message": "Запис във файл" },
   "info_compilationComplete": { "message": "Компилацията е завършена" },
   "info_file": { "message": "\"файлIncompatible database driver' s \"\"% 1\"\" version: found version% 2, expected version% 3.% 1.% 2% 1.% 2\"" },

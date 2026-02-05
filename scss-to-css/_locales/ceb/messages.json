@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Ehemplo balido sugo" },
   "info_scssFilesToBeCompiled": { "message": "Mga file sa SCSS nga pagatigumon" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Wala 'y mga file sa SCSS ang mahugpong" },
-  "info_copying": { "message": "Pagkopya sa clipboard" },
+  "info_copyingToClip": { "message": "Pagkopya sa clipboard" },
   "info_writing": { "message": "Pagsulat sa file" },
   "info_compilationComplete": { "message": "Kompletoha ang kompilasyon" },
   "info_file": { "message": "tagohipos" },

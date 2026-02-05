@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Tauira whakahau whaimana" },
   "info_scssFilesToBeCompiled": { "message": "Ko nga konae SCSS hei kohikohi" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Kaore he konae SCSS ka kohikohia" },
-  "info_copying": { "message": "Tārua ki te papapātuhi" },
+  "info_copyingToClip": { "message": "Tārua ki te papapātuhi" },
   "info_writing": { "message": "Tuhia ki te kōnae" },
   "info_compilationComplete": { "message": "Te whakakotahitanga kua oti" },
   "info_file": { "message": "TE KONAE" },

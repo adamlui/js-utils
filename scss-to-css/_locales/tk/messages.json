@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Mysal üçin geçerli tabşyryk" },
   "info_scssFilesToBeCompiled": { "message": "SCSS faýllary ýygnanyşdyrylýar" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Hiç bir SCSS faýly ýygnanyşmaz" },
-  "info_copying": { "message": "Klipbordda kopy etmek" },
+  "info_copyingToClip": { "message": "Klipbordda kopy etmek" },
   "info_writing": { "message": "Faýlyň ýazylmagy" },
   "info_compilationComplete": { "message": "Ýüklenme tamamlanýar" },
   "info_file": { "message": "FAÝL" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "דוגמה לפקודה חוקית" },
   "info_scssFilesToBeCompiled": { "message": "קבצי SCSS שיש לקמפל" },
   "info_noSCSSfilesWillBeCompiled": { "message": "לא יקובצו קבצי SCSS" },
-  "info_copying": { "message": "מעתיק אל הלוח" },
+  "info_copyingToClip": { "message": "מעתיק אל הלוח" },
   "info_writing": { "message": "כתיבה לקובץ" },
   "info_compilationComplete": { "message": "האיסוף הושלם" },
   "info_file": { "message": "תמונה" },

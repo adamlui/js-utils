@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "must mat =path" },
   "warn_configFileExists": { "message": "Datei konfiguréieren existéiert schonn" },
   "info_exampleValidConfigFile": { "message": "Beispill valabel Konfiguratiounsdatei" },
-  "info_copying": { "message": "Op Clipboard kopéieren" },
+  "info_copyingToClip": { "message": "Op Clipboard kopéieren" },
   "info_moreHelp": { "message": "Fir méi Hëllef" },
   "info_type": { "message": "Typ" },
   "info_or": { "message": "oder" },

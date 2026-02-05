@@ -46,6 +46,6 @@
         verbose: !app.config.quietMode
     }
     clipboardy.writeSync([].concat(generatePassword(genOptions)).join('\n'))
-    log.ifNotQuiet(`\n${app.msgs.info_copying}...`)
+    log.ifNotQuiet(`\n${app.msgs.info_copyingToClip}...`)
 
 })()

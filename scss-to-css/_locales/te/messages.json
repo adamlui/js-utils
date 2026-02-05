@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ఉదాహరణ చెల్లుబాటు అయ్యే ఆదేశం" },
   "info_scssFilesToBeCompiled": { "message": "SCSS ఫైల్ ‌ లను కంపైల్ చేయాలి" },
   "info_noSCSSfilesWillBeCompiled": { "message": "SCSS ఫైల్ ‌ లు కంపైల్ చేయబడవు" },
-  "info_copying": { "message": "క్లిప్ ‌ బోర్డ్ ‌ కు కాపీ చేస్తోంది" },
+  "info_copyingToClip": { "message": "క్లిప్ ‌ బోర్డ్ ‌ కు కాపీ చేస్తోంది" },
   "info_writing": { "message": "ఫైల్ ‌ కు రాయడం" },
   "info_compilationComplete": { "message": "సంకలనం పూర్తయింది" },
   "info_file": { "message": "దస్త్రం" },

@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "dwe gen ladan =chemen" },
   "warn_configFileExists": { "message": "Config dosye deja egziste" },
   "info_exampleValidConfigFile": { "message": "Egzanp dosye konfigirasyon ki valab" },
-  "info_copying": { "message": "Kopi nan tablo" },
+  "info_copyingToClip": { "message": "Kopi nan tablo" },
   "info_moreHelp": { "message": "Pou plis èd/Pour plus d '" },
   "info_type": { "message": "kalite/lèt/tip/tipe" },
   "info_or": { "message": "oswa" },

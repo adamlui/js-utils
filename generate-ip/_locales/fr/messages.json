@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "doit inclure =chemin" },
   "warn_configFileExists": { "message": "Le fichier de configuration existe déjà" },
   "info_exampleValidConfigFile": { "message": "Exemple de fichier de configuration valide" },
-  "info_copying": { "message": "Copie vers le Presse-Papiers" },
+  "info_copyingToClip": { "message": "Copie vers le Presse-Papiers" },
   "info_moreHelp": { "message": "Pour plus d’aide" },
   "info_type": { "message": "taper" },
   "info_or": { "message": "ou" },

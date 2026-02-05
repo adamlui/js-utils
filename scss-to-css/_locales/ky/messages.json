@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Үлгү жарактуу буйрук" },
   "info_scssFilesToBeCompiled": { "message": "Түзүлө турган SCSS файлдары" },
   "info_noSCSSfilesWillBeCompiled": { "message": "SCSS файлдары түзүлбөйт" },
-  "info_copying": { "message": "Алмашуу буферине көчүрүү" },
+  "info_copyingToClip": { "message": "Алмашуу буферине көчүрүү" },
   "info_writing": { "message": "Файлга жазуу" },
   "info_compilationComplete": { "message": "Компиляция аяктады" },
   "info_file": { "message": "файл" },

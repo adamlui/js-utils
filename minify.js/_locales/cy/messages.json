@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Gorchymyn dilys enghreifftiol" },
   "info_filesToBeMinned": { "message": "Ffeiliau Javascript i'w minimeiddio" },
   "info_noFilesWillBeMinned": { "message": "Ni fydd ffeiliau javascript yn cael eu minimeiddio" },
-  "info_copying": { "message": "Copïo i&apos; r gludfwrdd" },
+  "info_copyingToClip": { "message": "Copïo i&apos; r gludfwrdd" },
   "info_writing": { "message": "Ysgrifennu i ffeil" },
   "info_minComplete": { "message": "Cwblhawyd y miniad" },
   "info_file": { "message": "ffeil" },

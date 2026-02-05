@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Baiko mety ohatra" },
   "info_scssFilesToBeCompiled": { "message": "Ireo rakitra SCSS tsy maintsy fenoina" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Tsy hisy rakitry ny SCSS ho atambatra" },
-  "info_copying": { "message": "Mandika mankany amin'ny fanindri-taratasy" },
+  "info_copyingToClip": { "message": "Mandika mankany amin'ny fanindri-taratasy" },
   "info_writing": { "message": "Mandraikitra amin'ny rakitra" },
   "info_compilationComplete": { "message": "Feno ilay efitrano" },
   "info_file": { "message": "rakitra" },

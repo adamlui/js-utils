@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "उदाहरण मान्य आदेश" },
   "info_filesToBeMinned": { "message": "जाभास्क्रिप्ट फाइलहरू मिनिफाइ गर्ने" },
   "info_noFilesWillBeMinned": { "message": "कुनै पनि जाभास्क्रिप्ट फाइलहरू मिनिफाइ गरिने छैन" },
-  "info_copying": { "message": "क्लिपबोर्डमा प्रतिलिपि गर्दैछ" },
+  "info_copyingToClip": { "message": "क्लिपबोर्डमा प्रतिलिपि गर्दैछ" },
   "info_writing": { "message": "फाइलमा लेख्दै" },
   "info_minComplete": { "message": "न्यूनतमकरण पूरा भयो" },
   "info_file": { "message": "फाइल" },

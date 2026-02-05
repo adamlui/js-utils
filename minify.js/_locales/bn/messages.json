@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "উদাহরণ বৈধ কমান্ড" },
   "info_filesToBeMinned": { "message": "জাভাস্ক্রিপ্ট ফাইলগুলিকে ন্যূনতম করা হবে" },
   "info_noFilesWillBeMinned": { "message": "কোনও জাভাস্ক্রিপ্ট ফাইল ন্যূনতম করা হবে না" },
-  "info_copying": { "message": "ক্লিপবোর্ডে অনুলিপি করা হচ্ছে" },
+  "info_copyingToClip": { "message": "ক্লিপবোর্ডে অনুলিপি করা হচ্ছে" },
   "info_writing": { "message": "ফাইলে লেখা হচ্ছে" },
   "info_minComplete": { "message": "ন্যূনতমকরণ সম্পন্ন হয়েছে" },
   "info_file": { "message": "ফাইল" },

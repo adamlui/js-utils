@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Фармони дурусти мисол" },
   "info_filesToBeMinned": { "message": "Файлҳои JavaScript миниётуравӣ мешаванд" },
   "info_noFilesWillBeMinned": { "message": "Ягон файли JavaScript миниётуравӣ намешавад" },
-  "info_copying": { "message": "Нусха бардоштан дар буфери иваз" },
+  "info_copyingToClip": { "message": "Нусха бардоштан дар буфери иваз" },
   "info_writing": { "message": "Сабткунӣ ба файл" },
   "info_minComplete": { "message": "Миниатюра ба анҷом расид" },
   "info_file": { "message": "файл" },

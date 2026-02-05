@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "coniutere =path" },
   "warn_configFileExists": { "message": "Tabula Configuendi sunt" },
   "info_exampleValidConfigFile": { "message": "Exemplaria valid configuendum" },
-  "info_copying": { "message": "Clipboard" },
+  "info_copyingToClip": { "message": "Clipboard" },
   "info_moreHelp": { "message": "Auxilium more" },
   "info_type": { "message": "Typus" },
   "info_or": { "message": "aut" },

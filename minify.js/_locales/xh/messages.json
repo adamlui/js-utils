@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Umzekelo womyalelo osebenzayo" },
   "info_filesToBeMinned": { "message": "Iifayile zeJavaScript eziza kuncitshiswa" },
   "info_noFilesWillBeMinned": { "message": "Azikho iifayile zeJavaScript eziza kuncitshiswa" },
-  "info_copying": { "message": "ikhuphela kwibhodi eqhotyoshwayo" },
+  "info_copyingToClip": { "message": "ikhuphela kwibhodi eqhotyoshwayo" },
   "info_writing": { "message": "Ukubhalela kwifayile" },
   "info_minComplete": { "message": "Ukunciphisa kugqityiwe" },
   "info_file": { "message": "Incompatible database driver&apos; s \"% 1\" version: found version% 2, expected version% 3.% 1.% 2% 1.% 2" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Isibonelo somyalo ovumelekile" },
   "info_scssFilesToBeCompiled": { "message": "Amafayela e-SCSS azoqoqwa" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Awekho amafayela e-SCSS azoqoqwa" },
-  "info_copying": { "message": "Ukukopela ebhodini lokunamathisela" },
+  "info_copyingToClip": { "message": "Ukukopela ebhodini lokunamathisela" },
   "info_writing": { "message": "Ukubhalela ifayela" },
   "info_compilationComplete": { "message": "Ukuqoqwa kuqediwe" },
   "info_file": { "message": "IFAYELA" },

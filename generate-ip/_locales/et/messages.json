@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "peab sisaldama =rada" },
   "warn_configFileExists": { "message": "Konfiguratsioonifail on juba olemas" },
   "info_exampleValidConfigFile": { "message": "Kehtiva konfiguratsioonifaili näide" },
-  "info_copying": { "message": "Kopeerimine lõikepuhvrisse" },
+  "info_copyingToClip": { "message": "Kopeerimine lõikepuhvrisse" },
   "info_moreHelp": { "message": "Lisateabe saamiseks" },
   "info_type": { "message": "tüüp" },
   "info_or": { "message": "või" },

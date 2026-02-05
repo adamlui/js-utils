@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ಉದಾಹರಣೆ ಮಾನ್ಯ ಆಜ್ಞೆ" },
   "info_filesToBeMinned": { "message": "ಕಡಿಮೆ ಮಾಡಬೇಕಾದ ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಫೈಲ್ ಗಳು" },
   "info_noFilesWillBeMinned": { "message": "ಯಾವುದೇ ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಫೈಲ್ ಗಳನ್ನು ಕಡಿಮೆ ಮಾಡಲಾಗುವುದಿಲ್ಲ" },
-  "info_copying": { "message": "ಕ್ಲಿಪ್ ‌ ಬೋರ್ಡ್ ‌ ಗೆ ನಕಲಿಸಲಾಗುತ್ತಿದೆ" },
+  "info_copyingToClip": { "message": "ಕ್ಲಿಪ್ ‌ ಬೋರ್ಡ್ ‌ ಗೆ ನಕಲಿಸಲಾಗುತ್ತಿದೆ" },
   "info_writing": { "message": "ಫೈಲ್ ‌ ಗೆ ಬರೆಯಲಾಗುತ್ತಿದೆ" },
   "info_minComplete": { "message": "ಗಣಿಗಾರಿಕೆ ಪೂರ್ಣಗೊಂಡಿದೆ" },
   "info_file": { "message": "FILE" },

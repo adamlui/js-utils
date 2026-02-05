@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "feumaidh gu bheil an t - slighe" },
   "warn_configFileExists": { "message": "Tha am faidhle rèiteachaidh ann mar - thà" },
   "info_exampleValidConfigFile": { "message": "Faidhle rèiteachaidh dligheach mar eisimpleir" },
-  "info_copying": { "message": "A 'dèanamh lethbhreac dhan stòr - bhòrd" },
+  "info_copyingToClip": { "message": "A 'dèanamh lethbhreac dhan stòr - bhòrd" },
   "info_moreHelp": { "message": "Airson tuilleadh cuideachaidh" },
   "info_type": { "message": "Seòrsa" },
   "info_or": { "message": "no" },

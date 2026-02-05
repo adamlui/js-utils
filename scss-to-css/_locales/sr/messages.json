@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Primer važeće komande" },
   "info_scssFilesToBeCompiled": { "message": "SCSS datoteke koje treba sastaviti" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Nijedna SCSS datoteka neće biti kompajlirana" },
-  "info_copying": { "message": "Kopiranje u ostavu" },
+  "info_copyingToClip": { "message": "Kopiranje u ostavu" },
   "info_writing": { "message": "Pisanje u datoteku" },
   "info_compilationComplete": { "message": "Kompilacija je završena" },
   "info_file": { "message": "датотека" },

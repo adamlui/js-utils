@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "有效命令示例" },
   "info_filesToBeMinned": { "message": "要缩小的 JS 文件" },
   "info_noFilesWillBeMinned": { "message": "没有 JS 文件将被缩小" },
-  "info_copying": { "message": "复制到剪贴板" },
+  "info_copyingToClip": { "message": "复制到剪贴板" },
   "info_writing": { "message": "正在写入文件" },
   "info_minComplete": { "message": "缩小完成" },
   "info_file": { "message": "文件" },

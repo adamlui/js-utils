@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Mînak fermana derbasdar" },
   "info_filesToBeMinned": { "message": "Pelên JavaScriptê yên ku bêne kêm kirin" },
   "info_noFilesWillBeMinned": { "message": "Tu pelên JavaScriptê nayên kêmkirin" },
-  "info_copying": { "message": "Kopîkirina li ser clipboard" },
+  "info_copyingToClip": { "message": "Kopîkirina li ser clipboard" },
   "info_writing": { "message": "Nivîsandina pelê" },
   "info_minComplete": { "message": "Kêmkirin qediya" },
   "info_file": { "message": "pel" },

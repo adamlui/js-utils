@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Umzekelo womyalelo osebenzayo" },
   "info_scssFilesToBeCompiled": { "message": "Iifayile ze-SCSS eziza kuqulunqwa" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Azikho iifayile ze-SCSS eziza kuqulunqwa" },
-  "info_copying": { "message": "ikhuphela kwibhodi eqhotyoshwayo" },
+  "info_copyingToClip": { "message": "ikhuphela kwibhodi eqhotyoshwayo" },
   "info_writing": { "message": "Ukubhalela kwifayile" },
   "info_compilationComplete": { "message": "Ukuqokelela kugqityiwe" },
   "info_file": { "message": "Incompatible database driver&apos; s \"% 1\" version: found version% 2, expected version% 3.% 1.% 2% 1.% 2" },

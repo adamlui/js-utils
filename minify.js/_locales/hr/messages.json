@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Primjer valjane naredbe" },
   "info_filesToBeMinned": { "message": "JavaScript datoteke za umanjenje" },
   "info_noFilesWillBeMinned": { "message": "Nijedna JavaScript datoteka neće biti umanjena" },
-  "info_copying": { "message": "Kopiranje u međuspremnik" },
+  "info_copyingToClip": { "message": "Kopiranje u međuspremnik" },
   "info_writing": { "message": "Pisanje u datoteku" },
   "info_minComplete": { "message": "Minifikacija je dovršena" },
   "info_file": { "message": "arhiva" },

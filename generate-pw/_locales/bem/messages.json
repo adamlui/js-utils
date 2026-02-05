@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "fela Anikulapo Kuti =path" },
   "warn_configFileExists": { "message": "Config file kale" },
   "info_exampleValidConfigFile": { "message": "Ifilangililo fya fipe fya fipe fya fipe" },
-  "info_copying": { "message": "Kopololeni ku clipboard" },
+  "info_copyingToClip": { "message": "Kopololeni ku clipboard" },
   "info_moreHelp": { "message": "Ukwishibilapo nafimbi pa kwafwa" },
   "info_type": { "message": "Umusango" },
   "info_or": { "message": "nelyo" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Παράδειγμα έγκυρης εντολής" },
   "info_scssFilesToBeCompiled": { "message": "Αρχεία SCSS προς μεταγλώττιση" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Δεν θα μεταγλωττιστούν αρχεία SCSS" },
-  "info_copying": { "message": "Αντιγραφή στο πρόχειρο" },
+  "info_copyingToClip": { "message": "Αντιγραφή στο πρόχειρο" },
   "info_writing": { "message": "Εγγραφή σε αρχείο" },
   "info_compilationComplete": { "message": "Η συλλογή ολοκληρώθηκε" },
   "info_file": { "message": "αρχείο" },

@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "e tatau ona aofia ai =ala" },
   "warn_configFileExists": { "message": "Config faila ua uma ona i ai" },
   "info_exampleValidConfigFile": { "message": "Faataitaiga aloaia config faila" },
-  "info_copying": { "message": "Kopi i le clipboard" },
+  "info_copyingToClip": { "message": "Kopi i le clipboard" },
   "info_moreHelp": { "message": "Mo nisi fesoasoani" },
   "info_type": { "message": "Itu'aiga" },
   "info_or": { "message": "o" },

@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "a lingbi ti tene so a yeke na lege ni pëpe" },
   "warn_configFileExists": { "message": "Faïl so ayeke dä awe" },
   "info_exampleValidConfigFile": { "message": "Tapande ti faïl so ayeke na lege ni" },
-  "info_copying": { "message": "Gbu li ti mo na ndo ti clipboard ni" },
+  "info_copyingToClip": { "message": "Gbu li ti mo na ndo ti clipboard ni" },
   "info_moreHelp": { "message": "Ti mû maboko na mo" },
   "info_type": { "message": "mara ti zo" },
   "info_or": { "message": "lani wala to bani" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Exemplaria valid commandus" },
   "info_scssFilesToBeCompiled": { "message": "SCSS files ad compositum" },
   "info_noSCSSfilesWillBeCompiled": { "message": "No SCSS files compositum" },
-  "info_copying": { "message": "Clipboard" },
+  "info_copyingToClip": { "message": "Clipboard" },
   "info_writing": { "message": "Epistola ad file" },
   "info_compilationComplete": { "message": "Compilationis complete" },
   "info_file": { "message": "Tabula" },

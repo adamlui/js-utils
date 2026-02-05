@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ਉਦਾਹਰਨ ਵੈਧ ਕਮਾਂਡ" },
   "info_scssFilesToBeCompiled": { "message": "SCSS ਫਾਇਲਾਂ ਕੰਪਾਇਲ ਕੀਤੀਆਂ ਜਾਣ" },
   "info_noSCSSfilesWillBeCompiled": { "message": "ਕੋਈ SCSS ਫਾਈਲਾਂ ਕੰਪਾਇਲ ਨਹੀਂ ਕੀਤੀਆਂ ਜਾਣਗੀਆਂ" },
-  "info_copying": { "message": "ਪ੍ਰੋਗਰਾਮ:" },
+  "info_copyingToClip": { "message": "ਪ੍ਰੋਗਰਾਮ:" },
   "info_writing": { "message": "ਫਾਇਲ ਵਿੱਚ ਲਿਖਿਆ ਜਾ ਰਿਹਾ ਹੈ" },
   "info_compilationComplete": { "message": "ਸੰਕਲਨ ਮੁਕੰਮਲ" },
   "info_file": { "message": "ਟਾਇਟਲ" },

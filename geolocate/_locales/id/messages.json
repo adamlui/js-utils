@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "harus menyertakan =path" },
   "warn_configFileExists": { "message": "File konfigurasi sudah ada" },
   "info_exampleValidConfigFile": { "message": "Contoh file konfigurasi yang valid" },
-  "info_copying": { "message": "Menyalin ke clipboard" },
+  "info_copyingToClip": { "message": "Menyalin ke clipboard" },
   "info_moreHelp": { "message": "Untuk bantuan lebih lanjut" },
   "info_type": { "message": "type" },
   "info_or": { "message": "atau" },

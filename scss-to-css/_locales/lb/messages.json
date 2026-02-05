@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Beispill valabel Kommando" },
   "info_scssFilesToBeCompiled": { "message": "SCSS-Dateien zu kompilieren" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Keng SCSS-Dateien ginn zesummegesat" },
-  "info_copying": { "message": "Op Clipboard kopéieren" },
+  "info_copyingToClip": { "message": "Op Clipboard kopéieren" },
   "info_writing": { "message": "Zu Datei schreiben" },
   "info_compilationComplete": { "message": "Kompiléierung komplett" },
   "info_file": { "message": "Fichier" },

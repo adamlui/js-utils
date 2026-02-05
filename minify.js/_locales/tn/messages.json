@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Sekao sa taelo e e amogelesegang" },
   "info_filesToBeMinned": { "message": "Difaele tsa JavaScript tse di tshwanelang go minwa" },
   "info_noFilesWillBeMinned": { "message": "Ga go na difaele dipe tsa JavaScript tse di tlileng go minwa" },
-  "info_copying": { "message": "Go kopolola go ya go clipboard" },
+  "info_copyingToClip": { "message": "Go kopolola go ya go clipboard" },
   "info_writing": { "message": "Go kwalela faele" },
   "info_minComplete": { "message": "Go dira gore go nne le selekanyo se se kwa" },
   "info_file": { "message": "faele" },

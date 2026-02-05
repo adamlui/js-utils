@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "contenido =Camino" },
   "warn_configFileExists": { "message": "Archivo ya existe" },
   "info_exampleValidConfigFile": { "message": "Documente similare cu Config File" },
-  "info_copying": { "message": "Copiando a Clipboard" },
+  "info_copyingToClip": { "message": "Copiando a Clipboard" },
   "info_moreHelp": { "message": "Pa mas ayudo" },
   "info_type": { "message": "tipo" },
   "info_or": { "message": "òf" },

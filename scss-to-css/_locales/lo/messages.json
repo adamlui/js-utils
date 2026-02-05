@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ຕົວຢ່າງ ຄໍາ ສັ່ງທີ່ຖືກຕ້ອງ" },
   "info_scssFilesToBeCompiled": { "message": "ເອກະສານ SCSS ທີ່ຈະລວບລວມ" },
   "info_noSCSSfilesWillBeCompiled": { "message": "ບໍ່ມີເອກະສານ SCSS ຈະຖືກລວບລວມ" },
-  "info_copying": { "message": "ສໍາເນົາໄປທີ່ຄລິບບອດ" },
+  "info_copyingToClip": { "message": "ສໍາເນົາໄປທີ່ຄລິບບອດ" },
   "info_writing": { "message": "ຂຽນໄປຫາເອກະສານ" },
   "info_compilationComplete": { "message": "ການຄັດລອກສຳເລັດແລ້ວ" },
   "info_file": { "message": "file" },

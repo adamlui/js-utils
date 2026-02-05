@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Példa érvényes parancsra" },
   "info_scssFilesToBeCompiled": { "message": "Összeállítandó SCSS-fájlok" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Nem lesz SCSS fájl összeállítva" },
-  "info_copying": { "message": "Másolás a vágólapra" },
+  "info_copyingToClip": { "message": "Másolás a vágólapra" },
   "info_writing": { "message": "Írás fájlba" },
   "info_compilationComplete": { "message": "Összeállítás kész" },
   "info_file": { "message": "fájl" },

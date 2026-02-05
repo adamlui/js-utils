@@ -118,7 +118,7 @@
         // Copy single result code to clipboard if --copy passed
         if (app.config.copy && compileData?.length == 1) {
             log.data(compileData[0].code)
-            log.ifNotQuiet(`\n${app.msgs.info_copying}...`)
+            log.ifNotQuiet(`\n${app.msgs.info_copyingToClip}...`)
             clipboardy.writeSync(compileData[0].code)
 
         } else { // write array data to files

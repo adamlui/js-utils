@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Пример допустимой команды" },
   "info_filesToBeMinned": { "message": "Файлы JavaScript, которые необходимо минимизировать" },
   "info_noFilesWillBeMinned": { "message": "Файлы JavaScript не будут минимизированы" },
-  "info_copying": { "message": "Копирование в буфер обмена" },
+  "info_copyingToClip": { "message": "Копирование в буфер обмена" },
   "info_writing": { "message": "Запись в файл" },
   "info_minComplete": { "message": "Минификация завершена" },
   "info_file": { "message": "файл" },

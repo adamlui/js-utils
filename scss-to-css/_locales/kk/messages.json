@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Мысалдың жарамды пәрмені" },
   "info_scssFilesToBeCompiled": { "message": "Құрастырылатын SCSS файлдары" },
   "info_noSCSSfilesWillBeCompiled": { "message": "SCSS файлдары құрастырылмайды" },
-  "info_copying": { "message": "Алмасу буферіндегіні орналастыруда" },
+  "info_copyingToClip": { "message": "Алмасу буферіндегіні орналастыруда" },
   "info_writing": { "message": "Файлға жазу" },
   "info_compilationComplete": { "message": "Компиляция аяқталды" },
   "info_file": { "message": "файл" },

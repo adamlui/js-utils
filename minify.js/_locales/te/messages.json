@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ఉదాహరణ చెల్లుబాటు అయ్యే ఆదేశం" },
   "info_filesToBeMinned": { "message": "చిన్నదిగా చేయవలసిన జావాస్క్రిప్ట్ ఫైల్స్" },
   "info_noFilesWillBeMinned": { "message": "జావాస్క్రిప్ట్ ఫైల్స్ ఏవీ మినిఫై చేయబడవు" },
-  "info_copying": { "message": "క్లిప్ ‌ బోర్డ్ ‌ కు కాపీ చేస్తోంది" },
+  "info_copyingToClip": { "message": "క్లిప్ ‌ బోర్డ్ ‌ కు కాపీ చేస్తోంది" },
   "info_writing": { "message": "ఫైల్ ‌ కు రాయడం" },
   "info_minComplete": { "message": "మినిఫికేషన్ పూర్తయింది" },
   "info_file": { "message": "దస్త్రం" },

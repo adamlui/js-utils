@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Dømi um gildið boð" },
   "info_filesToBeMinned": { "message": "Javascript-fílar, sum skulu verða minifiseraðir" },
   "info_noFilesWillBeMinned": { "message": "Eingin JavaScript-fíla verður minifiserað" },
-  "info_copying": { "message": "At koppa á klippborðið" },
+  "info_copyingToClip": { "message": "At koppa á klippborðið" },
   "info_writing": { "message": "Skriva til fílu" },
   "info_minComplete": { "message": "Minifisering fullførd" },
   "info_file": { "message": "Fíla" },

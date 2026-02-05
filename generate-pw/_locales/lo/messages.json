@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "ຕ້ອງລວມ =ເສັ້ນທາງ" },
   "warn_configFileExists": { "message": "ໄຟລ໌ການຕັ້ງຄ່າມີຢູ່ແລ້ວ" },
   "info_exampleValidConfigFile": { "message": "ຕົວຢ່າງເອກະສານ config ທີ່ຖືກຕ້ອງ" },
-  "info_copying": { "message": "ສໍາເນົາໄປທີ່ຄລິບບອດ" },
+  "info_copyingToClip": { "message": "ສໍາເນົາໄປທີ່ຄລິບບອດ" },
   "info_moreHelp": { "message": "ສໍາ ລັບການຊ່ວຍເຫຼືອເພີ່ມເຕີມ" },
   "info_type": { "message": "ປະເພດ" },
   "info_or": { "message": "ຫຼື" },

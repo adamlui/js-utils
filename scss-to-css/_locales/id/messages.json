@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Contoh perintah yang valid" },
   "info_scssFilesToBeCompiled": { "message": "Berkas SCSS yang akan dikompilasi" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Tidak ada file SCSS yang akan dikompilasi" },
-  "info_copying": { "message": "Menyalin ke clipboard" },
+  "info_copyingToClip": { "message": "Menyalin ke clipboard" },
   "info_writing": { "message": "Menulis ke file" },
   "info_compilationComplete": { "message": "Kompilasi selesai" },
   "info_file": { "message": "mengajukan" },

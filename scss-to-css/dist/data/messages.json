@@ -21,7 +21,7 @@
   "info_exampleValidCmd": { "message": "Example valid command" },
   "info_scssFilesToBeCompiled": { "message": "SCSS files to be compiled" },
   "info_noSCSSfilesWillBeCompiled": { "message": "No SCSS files will be compiled" },
-  "info_copying": { "message": "Copying to clipboard" },
+  "info_copyingToClip": { "message": "Copying to clipboard" },
   "info_writing": { "message": "Writing to file" },
   "info_compilationComplete": { "message": "Compilation complete" },
   "info_file": { "message": "file" },

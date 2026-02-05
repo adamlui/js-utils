@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "နမူနာ မှန်ကန်သော ညွှန်ကြားချက်" },
   "info_filesToBeMinned": { "message": "Minified လုပ်ရမည့် JavaScript ဖိုင်များ" },
   "info_noFilesWillBeMinned": { "message": "JavaScript ဖိုင်များကိုအသေးစိတ်ပြုလုပ်မည်မဟုတ်ပါ" },
-  "info_copying": { "message": "ကလစ်ဘုတ်သို့ ကူးယူနေသည်" },
+  "info_copyingToClip": { "message": "ကလစ်ဘုတ်သို့ ကူးယူနေသည်" },
   "info_writing": { "message": "ဖိုင်သို့ရိုက်ယူခြင်း" },
   "info_minComplete": { "message": "Minification ပြီးစီးပါပြီ" },
   "info_file": { "message": "ဖိုင်" },

@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "gushyiramo =Inzira" },
   "warn_configFileExists": { "message": "IDOSIYE" },
   "info_exampleValidConfigFile": { "message": "Urugero Byemewe IDOSIYE" },
-  "info_copying": { "message": "Kwandukura kuri clip clip" },
+  "info_copyingToClip": { "message": "Kwandukura kuri clip clip" },
   "info_moreHelp": { "message": "Kubindi bisobanuro" },
   "info_type": { "message": "andika" },
   "info_or": { "message": "cyangwa" },

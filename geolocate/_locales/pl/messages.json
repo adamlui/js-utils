@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "must include =ścieżka" },
   "warn_configFileExists": { "message": "Plik konfiguracyjny już istnieje" },
   "info_exampleValidConfigFile": { "message": "Przykład prawidłowego pliku konfiguracyjnego" },
-  "info_copying": { "message": "Kopiowanie do schowka" },
+  "info_copyingToClip": { "message": "Kopiowanie do schowka" },
   "info_moreHelp": { "message": ", aby otrzymali dalszą pomoc" },
   "info_type": { "message": "Typ" },
   "info_or": { "message": "albo" },

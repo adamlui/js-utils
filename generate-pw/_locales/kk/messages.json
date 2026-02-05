@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "=жолды қамтуы керек" },
   "warn_configFileExists": { "message": "Файлды баптау бұрыннан бар" },
   "info_exampleValidConfigFile": { "message": "Мысал жарамды конфигурация файлы" },
-  "info_copying": { "message": "Алмасу буферіндегіні орналастыруда" },
+  "info_copyingToClip": { "message": "Алмасу буферіндегіні орналастыруда" },
   "info_moreHelp": { "message": "Қосымша көмек алу үшін" },
   "info_type": { "message": "түрі" },
   "info_or": { "message": "немесе" },

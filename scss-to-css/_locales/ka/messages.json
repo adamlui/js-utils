@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Მოქმედი ბრძანების მაგალითი" },
   "info_scssFilesToBeCompiled": { "message": "Შესადგენი SCSS ფაილები" },
   "info_noSCSSfilesWillBeCompiled": { "message": "SCSS ფაილი არ იქნება შედგენილი" },
-  "info_copying": { "message": "კოპირება ბუფერში" },
+  "info_copyingToClip": { "message": "კოპირება ბუფერში" },
   "info_writing": { "message": "Ფაილში ჩაწერა" },
   "info_compilationComplete": { "message": "Კომპილაცია დასრულებულია" },
   "info_file": { "message": "ფაილი" },

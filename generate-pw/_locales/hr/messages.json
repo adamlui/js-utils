@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "mora sadržavati =putanju" },
   "warn_configFileExists": { "message": "Konfiguracijska datoteka već postoji" },
   "info_exampleValidConfigFile": { "message": "Primjer valjane konfiguracijske datoteke" },
-  "info_copying": { "message": "Kopiranje u međuspremnik" },
+  "info_copyingToClip": { "message": "Kopiranje u međuspremnik" },
   "info_moreHelp": { "message": "Za dodatnu pomoć" },
   "info_type": { "message": "tip" },
   "info_or": { "message": "ili" },

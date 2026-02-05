@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Comando válido de exemplo" },
   "info_filesToBeMinned": { "message": "Ficheiros JavaScript a minificar" },
   "info_noFilesWillBeMinned": { "message": "Non se minificarán ficheiros JavaScript" },
-  "info_copying": { "message": "Copiando para o portarretallos" },
+  "info_copyingToClip": { "message": "Copiando para o portarretallos" },
   "info_writing": { "message": "A escribir no ficheiro" },
   "info_minComplete": { "message": "Minificación completa" },
   "info_file": { "message": "FicheiroIncompatible database driver&apos; s \"% 1\" version: found version% 2, expected version% 3.% 1.% 2% 1.% 2" },

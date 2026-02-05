@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Ví dụ lệnh hợp lệ" },
   "info_scssFilesToBeCompiled": { "message": "Các tệp SCSS sẽ được biên soạn" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Sẽ không có tệp SCSS nào được biên soạn" },
-  "info_copying": { "message": "Đang chép vào bảng nháp" },
+  "info_copyingToClip": { "message": "Đang chép vào bảng nháp" },
   "info_writing": { "message": "Ghi vào tệp" },
   "info_compilationComplete": { "message": "Hoàn tất biên dịch" },
   "info_file": { "message": "file" },

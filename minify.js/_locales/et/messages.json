@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Kehtiva käsu näide" },
   "info_filesToBeMinned": { "message": "Minimeeritavad JavaScripti failid" },
   "info_noFilesWillBeMinned": { "message": "Ühtegi JavaScripti faili ei minimeerita" },
-  "info_copying": { "message": "Kopeerimine lõikepuhvrisse" },
+  "info_copyingToClip": { "message": "Kopeerimine lõikepuhvrisse" },
   "info_writing": { "message": "Faili kirjutamine" },
   "info_minComplete": { "message": "Minimeerimine lõpetatud" },
   "info_file": { "message": "kaust" },

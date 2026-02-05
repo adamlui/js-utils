@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ตัวอย่างคำสั่งที่ถูกต้อง" },
   "info_filesToBeMinned": { "message": "ไฟล์จาวาสคริปต์ที่จะถูกย่อ" },
   "info_noFilesWillBeMinned": { "message": "ไม่มีไฟล์ JavaScript จะถูกทำให้เล็กลง" },
-  "info_copying": { "message": "กำลังคัดลอกไปยังคลิปบอร์ด" },
+  "info_copyingToClip": { "message": "กำลังคัดลอกไปยังคลิปบอร์ด" },
   "info_writing": { "message": "กำลังเขียนไปยังไฟล์" },
   "info_minComplete": { "message": "การย่อเสร็จสมบูรณ์" },
   "info_file": { "message": "ไฟล์" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Mar eisimpleir àithne dhligheach" },
   "info_scssFilesToBeCompiled": { "message": "Sgrìobhainnean a dh 'fheumar a chur ri chèile" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Cha tèid faidhle CSSS sam bith a chur ri chèile" },
-  "info_copying": { "message": "A 'dèanamh lethbhreac dhan stòr - bhòrd" },
+  "info_copyingToClip": { "message": "A 'dèanamh lethbhreac dhan stòr - bhòrd" },
   "info_writing": { "message": "A 'sgrìobhadh gu faidhle" },
   "info_compilationComplete": { "message": "Chaidh an cur ri chèile a chrìochnachadh" },
   "info_file": { "message": "faidhle" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "د اعتبار وړ کمانډ مثال" },
   "info_scssFilesToBeCompiled": { "message": "د SCSS فایلونه باید ترتیب شي" },
   "info_noSCSSfilesWillBeCompiled": { "message": "د SCSS فایلونه به نه ترکیب کیږي" },
-  "info_copying": { "message": "کلیپ بورډ ته کاپي کول" },
+  "info_copyingToClip": { "message": "کلیپ بورډ ته کاپي کول" },
   "info_writing": { "message": "فایل کې لیکل" },
   "info_compilationComplete": { "message": "انحراف بشپړ شو" },
   "info_file": { "message": "فایل" },

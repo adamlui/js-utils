@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Exemplu de comandă validă" },
   "info_filesToBeMinned": { "message": "Fișiere JavaScript de minimizat" },
   "info_noFilesWillBeMinned": { "message": "Niciun fișier JavaScript nu va fi minimizat" },
-  "info_copying": { "message": "Copiez în clipboard" },
+  "info_copyingToClip": { "message": "Copiez în clipboard" },
   "info_writing": { "message": "Scriere în fișier" },
   "info_minComplete": { "message": "Minificare finalizată" },
   "info_file": { "message": "fișier" },

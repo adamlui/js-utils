@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "유효한 명령의 예" },
   "info_scssFilesToBeCompiled": { "message": "컴파일할 SCSS 파일" },
   "info_noSCSSfilesWillBeCompiled": { "message": "SCSS 파일이 컴파일되지 않습니다" },
-  "info_copying": { "message": "클립보드로 복사하는 중" },
+  "info_copyingToClip": { "message": "클립보드로 복사하는 중" },
   "info_writing": { "message": "파일에 쓰기" },
   "info_compilationComplete": { "message": "컴파일 완료" },
   "info_file": { "message": "파일" },

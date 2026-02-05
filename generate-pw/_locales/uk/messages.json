@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "must include =path" },
   "warn_configFileExists": { "message": "Файл конфігурації вже існує" },
   "info_exampleValidConfigFile": { "message": "Приклад дійсного файлу конфігурації" },
-  "info_copying": { "message": "Копіювання до буфера" },
+  "info_copyingToClip": { "message": "Копіювання до буфера" },
   "info_moreHelp": { "message": "Додаткова допомога" },
   "info_type": { "message": "тип" },
   "info_or": { "message": "або" },

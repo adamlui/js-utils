@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Faataitaiga poloaiga aoga" },
   "info_filesToBeMinned": { "message": "JavaScript faila e tatau ona minified" },
   "info_noFilesWillBeMinned": { "message": "E leai se faila JavaScript o le a minified" },
-  "info_copying": { "message": "Kopi i le clipboard" },
+  "info_copyingToClip": { "message": "Kopi i le clipboard" },
   "info_writing": { "message": "Tusi e faila" },
   "info_minComplete": { "message": "Faatumuina o le Minification" },
   "info_file": { "message": "faila" },

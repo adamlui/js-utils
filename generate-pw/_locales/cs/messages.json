@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "musí obsahovat =cesta" },
   "warn_configFileExists": { "message": "Konfigurační soubor již existuje" },
   "info_exampleValidConfigFile": { "message": "Příklad platného konfiguračního souboru" },
-  "info_copying": { "message": "Kopírování do schránky" },
+  "info_copyingToClip": { "message": "Kopírování do schránky" },
   "info_moreHelp": { "message": "Další pomoc" },
   "info_type": { "message": "typ" },
   "info_or": { "message": "nebo" },

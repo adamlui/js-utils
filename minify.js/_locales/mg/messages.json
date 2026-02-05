@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Baiko mety ohatra" },
   "info_filesToBeMinned": { "message": "Rakitra JavaScript tokony hotanterahina" },
   "info_noFilesWillBeMinned": { "message": "Tsy misy rakitry ny JavaScript hohamarinina" },
-  "info_copying": { "message": "Mandika mankany amin'ny fanindri-taratasy" },
+  "info_copyingToClip": { "message": "Mandika mankany amin'ny fanindri-taratasy" },
   "info_writing": { "message": "Mandraikitra amin'ny rakitra" },
   "info_minComplete": { "message": "Fanamafisana vita" },
   "info_file": { "message": "rakitra" },

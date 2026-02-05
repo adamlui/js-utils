@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "સમાવેશ કરવો જ જોઇએ =PATH" },
   "warn_configFileExists": { "message": "રૂપરેખાંકન ફાઇલ પહેલાથી જ અસ્તિત્વમાં છે" },
   "info_exampleValidConfigFile": { "message": "ઉદાહરણ માન્ય રૂપરેખાંકન ફાઇલ" },
-  "info_copying": { "message": "ક્લિપબોર્ડ પર કૉપિ કરી રહ્યું છે" },
+  "info_copyingToClip": { "message": "ક્લિપબોર્ડ પર કૉપિ કરી રહ્યું છે" },
   "info_moreHelp": { "message": "વધુ મદદ માટે" },
   "info_type": { "message": "પ્રકાર" },
   "info_or": { "message": "અથવા" },

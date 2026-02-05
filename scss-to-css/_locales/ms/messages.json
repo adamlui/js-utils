@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Contoh perintah yang sah" },
   "info_scssFilesToBeCompiled": { "message": "Fail SCSS yang akan disusun" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Tiada fail SCSS akan disusun" },
-  "info_copying": { "message": "Menyalin ke klipbod" },
+  "info_copyingToClip": { "message": "Menyalin ke klipbod" },
   "info_writing": { "message": "Menulis ke fail" },
   "info_compilationComplete": { "message": "Penyusunan selesai" },
   "info_file": { "message": "fail" },

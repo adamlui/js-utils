@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "e tshwanetse go akaretsa = tsela" },
   "warn_configFileExists": { "message": "Faele ya Config e setse e le teng" },
   "info_exampleValidConfigFile": { "message": "Sekao sa faele e e amogelesegang ya" },
-  "info_copying": { "message": "Go kopolola go ya go clipboard" },
+  "info_copyingToClip": { "message": "Go kopolola go ya go clipboard" },
   "info_moreHelp": { "message": "Go bona thuso go ya pele" },
   "info_type": { "message": "mofuta" },
   "info_or": { "message": "kgotsa" },

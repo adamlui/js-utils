@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "оруулах ёстой =зам" },
   "warn_configFileExists": { "message": "Тохиргооны файл аль хэдийн байна" },
   "info_exampleValidConfigFile": { "message": "Хүчинтэй тохиргооны файлын жишээ" },
-  "info_copying": { "message": "Түр санах ой руу хуулах" },
+  "info_copyingToClip": { "message": "Түр санах ой руу хуулах" },
   "info_moreHelp": { "message": "Нэмэлт тусламж" },
   "info_type": { "message": "Судалгааны хэлбэр" },
   "info_or": { "message": "эсвэл" },

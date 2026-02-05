@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Contoh perintah yang sah" },
   "info_filesToBeMinned": { "message": "Fail JavaScript untuk diminifikasikan" },
   "info_noFilesWillBeMinned": { "message": "Tiada fail JavaScript akan diminifikasikan" },
-  "info_copying": { "message": "Menyalin ke klipbod" },
+  "info_copyingToClip": { "message": "Menyalin ke klipbod" },
   "info_writing": { "message": "Menulis ke fail" },
   "info_minComplete": { "message": "Pengurangan selesai" },
   "info_file": { "message": "fail" },

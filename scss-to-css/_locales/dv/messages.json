@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "މިސާލު ސައްހަ ކޮމާންޑެއް" },
   "info_scssFilesToBeCompiled": { "message": "ކޮމްޕައިލް ކުރަންޖެހޭ އެސްސީއެސްއެސް ފައިލްތައް" },
   "info_noSCSSfilesWillBeCompiled": { "message": "އެއްވެސް އެސްސީއެސްއެސް ފައިލެއް ކޮމްޕައިލް ނުކުރެވޭނެއެވެ" },
-  "info_copying": { "message": "ކްލިޕްބޯޑަށް ކޮޕީކުރުން" },
+  "info_copyingToClip": { "message": "ކްލިޕްބޯޑަށް ކޮޕީކުރުން" },
   "info_writing": { "message": "ފައިލަށް ލިޔުއްވުމެވެ" },
   "info_compilationComplete": { "message": "ކޮމްޕައިލް ކުރުން ނިމިއްޖެއެވެ" },
   "info_file": { "message": "ފައިލް" },

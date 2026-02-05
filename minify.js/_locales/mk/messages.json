@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Пример за важечка команда" },
   "info_filesToBeMinned": { "message": "Датотеки со JavaScript што треба да се минимизираат" },
   "info_noFilesWillBeMinned": { "message": "Нема да се минимизираат датотеки со JavaScript" },
-  "info_copying": { "message": "Копирам на таблата со исечоци" },
+  "info_copyingToClip": { "message": "Копирам на таблата со исечоци" },
   "info_writing": { "message": "Се запишува во датотека" },
   "info_minComplete": { "message": "Минификацијата е завршена" },
   "info_file": { "message": "датотека" },

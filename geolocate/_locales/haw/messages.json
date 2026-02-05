@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "pono e hoʻokomo i ka =ala" },
   "warn_configFileExists": { "message": "Ua loaʻa mua ka faila hoʻonohonoho" },
   "info_exampleValidConfigFile": { "message": "Laʻana o ka faila hoʻonohonoho kūpono" },
-  "info_copying": { "message": "Ke kope nei i ka papa ʻokiʻoki" },
+  "info_copyingToClip": { "message": "Ke kope nei i ka papa ʻokiʻoki" },
   "info_moreHelp": { "message": "No ke kōkua hou aku" },
   "info_type": { "message": "Ke ‘Ano" },
   "info_or": { "message": "a i ʻole" },

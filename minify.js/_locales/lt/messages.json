@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "VALID komandos pavyzdys" },
   "info_filesToBeMinned": { "message": "Mažintini „JavaScript“ failai" },
   "info_noFilesWillBeMinned": { "message": "Jokie „JavaScript“ failai nebus sumažinti" },
-  "info_copying": { "message": "Kopijuojama į laikiną talpyklę" },
+  "info_copyingToClip": { "message": "Kopijuojama į laikiną talpyklę" },
   "info_writing": { "message": "Rašoma į failą" },
   "info_minComplete": { "message": "Sumažinimas baigtas" },
   "info_file": { "message": "Failas" },

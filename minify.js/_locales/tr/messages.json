@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Örnek geçerli komut" },
   "info_filesToBeMinned": { "message": "Küçültülecek JavaScript dosyaları" },
   "info_noFilesWillBeMinned": { "message": "Hiçbir JavaScript dosyası küçültülmeyecek" },
-  "info_copying": { "message": "Panoya kopyalanıyor" },
+  "info_copyingToClip": { "message": "Panoya kopyalanıyor" },
   "info_writing": { "message": "Dosyaya yazılıyor" },
   "info_minComplete": { "message": "Minifikasyon tamamlandı" },
   "info_file": { "message": "dosya" },

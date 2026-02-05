@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "трябва да включва =път" },
   "warn_configFileExists": { "message": "Файлът за конфигуриране вече съществува" },
   "info_exampleValidConfigFile": { "message": "Примерен валиден конфигурационен файл" },
-  "info_copying": { "message": "Копиране в клипборда" },
+  "info_copyingToClip": { "message": "Копиране в клипборда" },
   "info_moreHelp": { "message": "За повече помощ" },
   "info_type": { "message": "тип" },
   "info_or": { "message": "или" },

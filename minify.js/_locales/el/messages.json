@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Παράδειγμα έγκυρης εντολής" },
   "info_filesToBeMinned": { "message": "Αρχεία JavaScript προς ελαχιστοποίηση" },
   "info_noFilesWillBeMinned": { "message": "Κανένα αρχείο JavaScript δεν θα ελαχιστοποιηθεί" },
-  "info_copying": { "message": "Αντιγραφή στο πρόχειρο" },
+  "info_copyingToClip": { "message": "Αντιγραφή στο πρόχειρο" },
   "info_writing": { "message": "Εγγραφή σε αρχείο" },
   "info_minComplete": { "message": "Η ελαχιστοποίηση ολοκληρώθηκε" },
   "info_file": { "message": "αρχείο" },

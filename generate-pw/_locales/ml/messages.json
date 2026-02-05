@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "ഇതിൽ ഉൾപ്പെടണം =പാത്ത്" },
   "warn_configFileExists": { "message": "കോൺഫിഗർ ഫയൽ ഇതിനകം നിലവിലുണ്ട്" },
   "info_exampleValidConfigFile": { "message": "സാധുവായ കോൺഫിഗറേഷൻ ഫയൽ ഉദാഹരണം" },
-  "info_copying": { "message": "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തുന്നു" },
+  "info_copyingToClip": { "message": "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തുന്നു" },
   "info_moreHelp": { "message": "കൂടുതൽ സഹായത്തിനായി" },
   "info_type": { "message": "തരം" },
   "info_or": { "message": "അല്ലെങ്കിൽ" },

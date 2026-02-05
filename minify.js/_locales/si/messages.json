@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "නිදසුන වලංගු විධානය" },
   "info_filesToBeMinned": { "message": "කුඩා කළ යුතු ජාවාස්ක් ‍ රිප්ට් ගොනු" },
   "info_noFilesWillBeMinned": { "message": "කිසිදු ජාවාස්ක් ‍ රිප්ට් ගොනුවක් කුඩා නොකරනු ඇත" },
-  "info_copying": { "message": "ක්ලිප් පුවරුවට පිටපත් කරමින්" },
+  "info_copyingToClip": { "message": "ක්ලිප් පුවරුවට පිටපත් කරමින්" },
   "info_writing": { "message": "ගොනුවට ලියමින්" },
   "info_minComplete": { "message": "අවමකරණය සම්පූර්ණයි" },
   "info_file": { "message": "FILE" },

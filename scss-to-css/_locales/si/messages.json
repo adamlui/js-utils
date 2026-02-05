@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "නිදසුන වලංගු විධානය" },
   "info_scssFilesToBeCompiled": { "message": "එකතු කළ යුතු SSL ගොනු" },
   "info_noSCSSfilesWillBeCompiled": { "message": "කිසිදු SSL ගොනු එකතු කරනු ඇත" },
-  "info_copying": { "message": "ක්ලිප් පුවරුවට පිටපත් කරමින්" },
+  "info_copyingToClip": { "message": "ක්ලිප් පුවරුවට පිටපත් කරමින්" },
   "info_writing": { "message": "ගොනුවට ලියමින්" },
   "info_compilationComplete": { "message": "සම්පාදනය සම්පූර්ණයි" },
   "info_file": { "message": "FILE" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "有効なコマンドの例" },
   "info_filesToBeMinned": { "message": "縮小される JS ファイル" },
   "info_noFilesWillBeMinned": { "message": "JS ファイルは縮小されません" },
-  "info_copying": { "message": "クリップボードにコピーしています" },
+  "info_copyingToClip": { "message": "クリップボードにコピーしています" },
   "info_writing": { "message": "ファイルに書き込んでいます" },
   "info_minComplete": { "message": "縮小が完了しました" },
   "info_file": { "message": "ファイル" },

@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "=bidea barne hartu behar du" },
   "warn_configFileExists": { "message": "Konfigurazio fitxategia dagoeneko existitzen da" },
   "info_exampleValidConfigFile": { "message": "Konfigurazio fitxategi baliodunaren adibidea" },
-  "info_copying": { "message": "Arbelean kopiatzen" },
+  "info_copyingToClip": { "message": "Arbelean kopiatzen" },
   "info_moreHelp": { "message": "Laguntza gehiagorako" },
   "info_type": { "message": "mota" },
   "info_or": { "message": "edo" },

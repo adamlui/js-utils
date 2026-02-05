@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Muenzaniso murairo unoshanda" },
   "info_scssFilesToBeCompiled": { "message": "SCSS mafaira kuunganidzwa" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Hapana mafaira eSCSS achaunganidzwa" },
-  "info_copying": { "message": "Kutevedzera kuti clipboard" },
+  "info_copyingToClip": { "message": "Kutevedzera kuti clipboard" },
   "info_writing": { "message": "Kunyorera kufaira" },
   "info_compilationComplete": { "message": "Kuunganidzwa kwakakwana" },
   "info_file": { "message": "faira" },

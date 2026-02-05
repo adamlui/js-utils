@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Վավեր հրահանգի օրինակ" },
   "info_scssFilesToBeCompiled": { "message": "Կազմվելիք SCSS ֆայլեր" },
   "info_noSCSSfilesWillBeCompiled": { "message": "SCSS ֆայլեր չեն կազմվի" },
-  "info_copying": { "message": "Պատճենահանվում է շապիկի մեջ" },
+  "info_copyingToClip": { "message": "Պատճենահանվում է շապիկի մեջ" },
   "info_writing": { "message": "Գրվում է ֆայլի համար" },
   "info_compilationComplete": { "message": "Կազմումն ավարտված է" },
   "info_file": { "message": "Գրառում" },

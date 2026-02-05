@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "དཔེར་ན ། བཀའ་སློབ །" },
   "info_filesToBeMinned": { "message": "JavaScript ཡིག་ཆ་ཉུང་དུ་གཏོང་དགོས །" },
   "info_noFilesWillBeMinned": { "message": "JavaScript ཡིག་ཆ་ཉུང་དུ་གཏོང་མི་ཐུབ །" },
-  "info_copying": { "message": "བཤུད་སྒྲོམ་ནང་འདྲ་ཕབ་བྱེད་པ།" },
+  "info_copyingToClip": { "message": "བཤུད་སྒྲོམ་ནང་འདྲ་ཕབ་བྱེད་པ།" },
   "info_writing": { "message": "ཡིག་ཆ་ལ་བྲིས་པ །" },
   "info_minComplete": { "message": "ཆུང་ཆུང་བཟོ་བཅོས །" },
   "info_file": { "message": "ཡིག་ཆ།" },

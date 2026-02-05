@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Comando válido de exemplo" },
   "info_scssFilesToBeCompiled": { "message": "Ficheiros SCSS a compilar" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Non se compilarán ficheiros SCSS" },
-  "info_copying": { "message": "Copiando para o portarretallos" },
+  "info_copyingToClip": { "message": "Copiando para o portarretallos" },
   "info_writing": { "message": "A escribir no ficheiro" },
   "info_compilationComplete": { "message": "Compilación completa" },
   "info_file": { "message": "FicheiroIncompatible database driver&apos; s \"% 1\" version: found version% 2, expected version% 3.% 1.% 2% 1.% 2" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Wanpela gutpela eksampel" },
   "info_filesToBeMinned": { "message": "Javascript files to be minified Tok Inglis" },
   "info_noFilesWillBeMinned": { "message": "No JavaScript files will be minified" },
-  "info_copying": { "message": "Kopiim long Clipboard" },
+  "info_copyingToClip": { "message": "Kopiim long Clipboard" },
   "info_writing": { "message": "Kirap long fail" },
   "info_minComplete": { "message": "Ol i pinisim wok bilong daunim ol samting" },
   "info_file": { "message": "fail" },

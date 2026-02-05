@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ምሳሌ ትክክለኛ ትዕዛዝ" },
   "info_scssFilesToBeCompiled": { "message": "SCSS ፋይሎች ለመሰብሰብ" },
   "info_noSCSSfilesWillBeCompiled": { "message": "ምንም SCSS ፋይሎች አይሰበሰቡም" },
-  "info_copying": { "message": "ወደ ክሊፕቦርድ መቅዳት" },
+  "info_copyingToClip": { "message": "ወደ ክሊፕቦርድ መቅዳት" },
   "info_writing": { "message": "ወደ ፋይል መጻፍ" },
   "info_compilationComplete": { "message": "ውህደቱ የተሟላ" },
   "info_file": { "message": "/ፋይል (_F)" },

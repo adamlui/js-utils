@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "kumele kufake =indlela" },
   "warn_configFileExists": { "message": "Lungisa ifayela selivele likhona" },
   "info_exampleValidConfigFile": { "message": "Isibonelo sefayela elivumelekile lokumisa" },
-  "info_copying": { "message": "Ukukopela ebhodini lokunamathisela" },
+  "info_copyingToClip": { "message": "Ukukopela ebhodini lokunamathisela" },
   "info_moreHelp": { "message": "Ukuze uthole usizo olwengeziwe" },
   "info_type": { "message": "INHLOBO" },
   "info_or": { "message": "noma" },

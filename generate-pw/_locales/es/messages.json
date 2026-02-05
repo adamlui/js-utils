@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "must include =path" },
   "warn_configFileExists": { "message": "El archivo de configuración ya existe" },
   "info_exampleValidConfigFile": { "message": "Ejemplo de archivo de configuración válido" },
-  "info_copying": { "message": "Copiar al portapapeles fue" },
+  "info_copyingToClip": { "message": "Copiar al portapapeles fue" },
   "info_moreHelp": { "message": "Para obtener más ayuda" },
   "info_type": { "message": "tipo" },
   "info_or": { "message": "or" },

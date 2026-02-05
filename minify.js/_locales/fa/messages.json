@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "نمونه فرمان معتبر" },
   "info_filesToBeMinned": { "message": "فایل های جاوا اسکریپت کوچک می شوند" },
   "info_noFilesWillBeMinned": { "message": "هیچ فایل جاوا اسکریپتی کوچک نمی شود" },
-  "info_copying": { "message": "در حال کپی کردن در کلیپ بورد" },
+  "info_copyingToClip": { "message": "در حال کپی کردن در کلیپ بورد" },
   "info_writing": { "message": "نوشتن در پرونده" },
   "info_minComplete": { "message": "کوچک سازی کامل شد" },
   "info_file": { "message": "فایل" },

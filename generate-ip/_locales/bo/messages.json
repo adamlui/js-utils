@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "ཕྱོགས་སྟོན་་་་གཙོ་ངོས ། \"རྩོམ་རིག\"" },
   "warn_configFileExists": { "message": "རིམ་སྒྲིག་ཡིག་ཆ་སྔོན་ནས་ཡོད།" },
   "info_exampleValidConfigFile": { "message": "དཔེར་ན ： སྒྲིག་འཇུག་བྱས་ཚད ། ཐེངས་བཅུ་གཉིས་པ །" },
-  "info_copying": { "message": "བཤུད་སྒྲོམ་ནང་འདྲ་ཕབ་བྱེད་པ།" },
+  "info_copyingToClip": { "message": "བཤུད་སྒྲོམ་ནང་འདྲ་ཕབ་བྱེད་པ།" },
   "info_moreHelp": { "message": "སྐྱབས་གྲོགས་ཀྱི་ཆེད་དུ་" },
   "info_type": { "message": "རིགས་དབྱེ་" },
   "info_or": { "message": "ཡང་ན་" },

@@ -32,7 +32,7 @@
     settings.load()
     const genOptions = { qty: app.config.qty, verbose: !app.config.quietMode },
           ipResult = { ipv4, ipv6, mac }[app.config.mode || 'ipv4'].generate(genOptions)
-    log.ifNotQuiet(`\n${app.msgs.info_copying}...`)
+    log.ifNotQuiet(`\n${app.msgs.info_copyingToClip}...`)
     clipboardy.writeSync([].concat(ipResult).join('\n'))
 
 })()

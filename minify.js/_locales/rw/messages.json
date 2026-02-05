@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Urugero rwemewe" },
   "info_filesToBeMinned": { "message": "Idosiye ya JavaScript igomba kugabanywa" },
   "info_noFilesWillBeMinned": { "message": "Nta dosiye ya JavaScript izagabanywa" },
-  "info_copying": { "message": "Kuri Ububikokoporora" },
+  "info_copyingToClip": { "message": "Kuri Ububikokoporora" },
   "info_writing": { "message": "Kuri IDOSIYE" },
   "info_minComplete": { "message": "Kugabanuka byuzuye" },
   "info_file": { "message": "dosiye" },

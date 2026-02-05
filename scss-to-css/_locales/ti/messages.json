@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ኣብነት እሙን ትእዛዝ" },
   "info_scssFilesToBeCompiled": { "message": "SCSS ፋይላት ክእከቡ" },
   "info_noSCSSfilesWillBeCompiled": { "message": "ዝኾነ ናይ SCSS ፋይላት ኣይእከብን" },
-  "info_copying": { "message": "ናብ ክሊፕቦርድ ምምላስ" },
+  "info_copyingToClip": { "message": "ናብ ክሊፕቦርድ ምምላስ" },
   "info_writing": { "message": "ናብ ፋይል ምጽሓፍ" },
   "info_compilationComplete": { "message": "ምሉእ ውህደት" },
   "info_file": { "message": "መዝገብ" },

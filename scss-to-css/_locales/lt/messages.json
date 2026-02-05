@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "VALID komandos pavyzdys" },
   "info_scssFilesToBeCompiled": { "message": "Kompiliuojami SCSS failai" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Nebus sukompiliuota jokių SCSS failų" },
-  "info_copying": { "message": "Kopijuojama į laikiną talpyklę" },
+  "info_copyingToClip": { "message": "Kopijuojama į laikiną talpyklę" },
   "info_writing": { "message": "Rašoma į failą" },
   "info_compilationComplete": { "message": "Kompiliavimas baigtas" },
   "info_file": { "message": "Failas" },

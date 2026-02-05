@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "me whakauru =ara" },
   "warn_configFileExists": { "message": "Kei te wātea te kōnae Config" },
   "info_exampleValidConfigFile": { "message": "Tauira kōnae config whaimana" },
-  "info_copying": { "message": "Tārua ki te papapātuhi" },
+  "info_copyingToClip": { "message": "Tārua ki te papapātuhi" },
   "info_moreHelp": { "message": "Mō ētahi atu āwhina" },
   "info_type": { "message": "Momo" },
   "info_or": { "message": "koina" },

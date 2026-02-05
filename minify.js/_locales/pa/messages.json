@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ਵੈਧ ਕਮਾਂਡ ਦੀ ਉਦਾਹਰਣ" },
   "info_filesToBeMinned": { "message": "JavaScript ਫਾਈਲਾਂ ਨੂੰ ਛੋਟਾ ਕਰਨਾ ਹੈ" },
   "info_noFilesWillBeMinned": { "message": "ਕੋਈ ਵੀ JavaScript ਫਾਈਲਾਂ ਨੂੰ ਛੋਟਾ ਨਹੀਂ ਕੀਤਾ ਜਾਵੇਗਾ।" },
-  "info_copying": { "message": "ਪ੍ਰੋਗਰਾਮ" },
+  "info_copyingToClip": { "message": "ਪ੍ਰੋਗਰਾਮ" },
   "info_writing": { "message": "ਫਾਇਲ ਵਿੱਚ ਲਿਖਿਆ ਜਾ ਰਿਹਾ ਹੈ" },
   "info_minComplete": { "message": "ਛੋਟਾ ਕਰਨਾ ਪੂਰਾ ਹੋਇਆ" },
   "info_file": { "message": "ਫਾਈਲ" },

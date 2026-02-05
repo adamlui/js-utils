@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Voorbeeld geldige opdrag" },
   "info_filesToBeMinned": { "message": "JavaScript-lêers wat geminimaliseer moet word" },
   "info_noFilesWillBeMinned": { "message": "Geen JavaScript-lêers sal geminimaliseer word nie" },
-  "info_copying": { "message": "Besig om te kopiëer na klipbord" },
+  "info_copyingToClip": { "message": "Besig om te kopiëer na klipbord" },
   "info_writing": { "message": "Skryf na lêer" },
   "info_minComplete": { "message": "Minifikasie voltooi" },
   "info_file": { "message": "lêer" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "مثال على أمر صالح" },
   "info_scssFilesToBeCompiled": { "message": "ملفات SCSS التي سيتم تجميعها" },
   "info_noSCSSfilesWillBeCompiled": { "message": "لن يتم تجميع أي ملفات SCSS" },
-  "info_copying": { "message": "لصق من الحافظة... user on host" },
+  "info_copyingToClip": { "message": "لصق من الحافظة... user on host" },
   "info_writing": { "message": "الكتابة إلى الملف" },
   "info_compilationComplete": { "message": "اكتمل التجميع" },
   "info_file": { "message": "file" },

@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ឧទាហរណ៍ ពាក្យ បញ្ជា ត្រឹមត្រូវ" },
   "info_scssFilesToBeCompiled": { "message": "ឯកសារ SCSS ដែល ត្រូវ ចងក្រង" },
   "info_noSCSSfilesWillBeCompiled": { "message": "គ្មាន ឯកសារ SCSS នឹង ត្រូវ បាន ចងក្រង ទេ" },
-  "info_copying": { "message": "កំពុង​បិទ​ភ្ជាប់​ពី​ក្ដារ​តម្បៀត​ខ្ទាស់" },
+  "info_copyingToClip": { "message": "កំពុង​បិទ​ភ្ជាប់​ពី​ក្ដារ​តម្បៀត​ខ្ទាស់" },
   "info_writing": { "message": "កំពុង សរសេរ ទៅ កាន់ ឯកសារ" },
   "info_compilationComplete": { "message": "ការ ចងក្រង បាន បញ្ចប់" },
   "info_file": { "message": "ឯកសារ" },

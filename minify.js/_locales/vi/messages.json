@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Ví dụ lệnh hợp lệ" },
   "info_filesToBeMinned": { "message": "Các tệp JavaScript sẽ được thu nhỏ" },
   "info_noFilesWillBeMinned": { "message": "Không có tệp JavaScript nào sẽ được thu nhỏ" },
-  "info_copying": { "message": "Đang chép vào bảng nháp" },
+  "info_copyingToClip": { "message": "Đang chép vào bảng nháp" },
   "info_writing": { "message": "Ghi vào tệp" },
   "info_minComplete": { "message": "Hoàn tất thu nhỏ" },
   "info_file": { "message": "file" },

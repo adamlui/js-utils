@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Mar eisimpleir àithne dhligheach" },
   "info_filesToBeMinned": { "message": "Faidhlichean JavaScript ri mion - sgrùdadh" },
   "info_noFilesWillBeMinned": { "message": "Cha tèid faidhle javascript sam bith a mhion - chlàradh" },
-  "info_copying": { "message": "A 'dèanamh lethbhreac dhan stòr - bhòrd" },
+  "info_copyingToClip": { "message": "A 'dèanamh lethbhreac dhan stòr - bhòrd" },
   "info_writing": { "message": "A 'sgrìobhadh gu faidhle" },
   "info_minComplete": { "message": "Chaidh a 'mhèinneadh a chrìochnachadh" },
   "info_file": { "message": "faidhle" },

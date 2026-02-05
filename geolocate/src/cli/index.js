@@ -37,7 +37,7 @@
     const geoResults = await geo.locate(validIPs, { verbose: !app.config.quietMode })
     if (!geoResults) process.exit(1)
     if (!app.config.quietMode && geoResults.length == 1) log.geoData(geoResults[0])
-    log.ifNotQuiet(`\n${app.msgs.info_copying}...`)
+    log.ifNotQuiet(`\n${app.msgs.info_copyingToClip}...`)
     clipboardy.writeSync(JSON.stringify(geoResults, undefined, 2))
 
 })()

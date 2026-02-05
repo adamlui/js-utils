@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "=yol daxil edilməlidir" },
   "warn_configFileExists": { "message": "Faylı konfiqurasiya edin artıq" },
   "info_exampleValidConfigFile": { "message": "Nümunə üçün etibarlı konfiqurasiya faylı" },
-  "info_copying": { "message": "Mübadilə buferinə kopyal" },
+  "info_copyingToClip": { "message": "Mübadilə buferinə kopyal" },
   "info_moreHelp": { "message": "Daha çox yardım üçün" },
   "info_type": { "message": "növ" },
   "info_or": { "message": "və ya" },

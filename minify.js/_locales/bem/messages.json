@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Icilangililo ca Mafunde Ayacindama" },
   "info_filesToBeMinned": { "message": "JavaScript file Ukulele Tabs" },
   "info_noFilesWillBeMinned": { "message": "Takwakabe amafayilo ya JavaScript ayacepa" },
-  "info_copying": { "message": "Kopololeni ku clipboard" },
+  "info_copyingToClip": { "message": "Kopololeni ku clipboard" },
   "info_writing": { "message": "Ukulemba pa file" },
   "info_minComplete": { "message": "Ukufina kwapwililika" },
   "info_file": { "message": "file" },

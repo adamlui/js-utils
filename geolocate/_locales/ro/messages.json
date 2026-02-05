@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "trebuie să includă =cale" },
   "warn_configFileExists": { "message": "Fișierul de configurare există deja" },
   "info_exampleValidConfigFile": { "message": "Exemplu de fișier de configurare valid" },
-  "info_copying": { "message": "Copiez în clipboard" },
+  "info_copyingToClip": { "message": "Copiez în clipboard" },
   "info_moreHelp": { "message": "Pentru mai mult ajutor" },
   "info_type": { "message": "type (tip)" },
   "info_or": { "message": "sau" },

@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "бояд дар бар гирад =PATH" },
   "warn_configFileExists": { "message": "Батанзимдарории файл аллакай вуҷуд дорад" },
   "info_exampleValidConfigFile": { "message": "Намунаи файли конфигуратсияи дуруст" },
-  "info_copying": { "message": "Нусха бардоштан дар буфери иваз" },
+  "info_copyingToClip": { "message": "Нусха бардоштан дар буфери иваз" },
   "info_moreHelp": { "message": "Para sa karagdagang tul" },
   "info_type": { "message": "Намуд" },
   "info_or": { "message": "ё" },

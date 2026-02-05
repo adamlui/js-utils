@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ឧទាហរណ៍ ពាក្យ បញ្ជា ត្រឹមត្រូវ" },
   "info_filesToBeMinned": { "message": "ឯកសារ JavaScript ដែល ត្រូវ បាន បង្រួម អប្បបរមា" },
   "info_noFilesWillBeMinned": { "message": "គ្មាន ឯកសារ JavaScript នឹង ត្រូវ បាន បង្រួម អប្បបរមា ទេ" },
-  "info_copying": { "message": "ចម្លងទៅក្ដារតម្បៀតខ្ទាស់" },
+  "info_copyingToClip": { "message": "ចម្លងទៅក្ដារតម្បៀតខ្ទាស់" },
   "info_writing": { "message": "កំពុង សរសេរ ទៅ កាន់ ឯកសារ" },
   "info_minComplete": { "message": "ការបង្រួមអប្បបរមាបានបញ្ចប់" },
   "info_file": { "message": "ឯកសារ" },

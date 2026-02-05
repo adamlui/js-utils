@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "must include =nzira" },
   "warn_configFileExists": { "message": "Gadzirisa faira ratovapo" },
   "info_exampleValidConfigFile": { "message": "Muenzaniso unoshanda config file" },
-  "info_copying": { "message": "Kutevedzera kuti clipboard" },
+  "info_copyingToClip": { "message": "Kutevedzera kuti clipboard" },
   "info_moreHelp": { "message": "Kuti uwane rumwe rubatsiro" },
   "info_type": { "message": "mota" },
   "info_or": { "message": "kana" },

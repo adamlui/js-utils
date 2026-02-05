@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "സാധുവായ കമാൻഡ് ഉദാഹരണം" },
   "info_filesToBeMinned": { "message": "മിനിഫൈ ചെയ്യേണ്ട ജാവാസ്ക്രിപ്റ്റ് ഫയലുകൾ" },
   "info_noFilesWillBeMinned": { "message": "ജാവാസ്ക്രിപ്റ്റ് ഫയലുകളൊന്നും മിനിഫൈ ചെയ്യില്ല" },
-  "info_copying": { "message": "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തുന്നു" },
+  "info_copyingToClip": { "message": "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തുന്നു" },
   "info_writing": { "message": "ഫയലിലേക്ക് എഴുതുന്നു" },
   "info_minComplete": { "message": "മിനിഫിക്കേഷൻ പൂർത്തിയായി" },
   "info_file": { "message": "ഫയല്‍" },

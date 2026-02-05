@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Eksempel på gyldig kommando" },
   "info_scssFilesToBeCompiled": { "message": "SCSS-filer som skal kompileres" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Ingen SCSS-filer vil bli kompilert" },
-  "info_copying": { "message": "Kopierer til utklippstavlen" },
+  "info_copyingToClip": { "message": "Kopierer til utklippstavlen" },
   "info_writing": { "message": "Skriver til fil" },
   "info_compilationComplete": { "message": "Samlingen er fullført" },
   "info_file": { "message": "fil" },

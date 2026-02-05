@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Мысалдың жарамды пәрмені" },
   "info_filesToBeMinned": { "message": "Минималданатын JavaScript файлдары" },
   "info_noFilesWillBeMinned": { "message": "Ешқандай JavaScript файлдары минималдандырылмайды" },
-  "info_copying": { "message": "Алмасу буферіндегіні орналастыруда" },
+  "info_copyingToClip": { "message": "Алмасу буферіндегіні орналастыруда" },
   "info_writing": { "message": "Файлға жазу" },
   "info_minComplete": { "message": "Минимализация аяқталды" },
   "info_file": { "message": "файл" },

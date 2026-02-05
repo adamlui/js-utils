@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ኣብነት እሙን ትእዛዝ" },
   "info_filesToBeMinned": { "message": "ጃቫስክሪፕት ፋይላት ክቐርቡ" },
   "info_noFilesWillBeMinned": { "message": "ጃቫስክሪፕት ፋይላት ኣይውሕድን" },
-  "info_copying": { "message": "ናብ ክሊፕቦርድ ምምላስ" },
+  "info_copyingToClip": { "message": "ናብ ክሊፕቦርድ ምምላስ" },
   "info_writing": { "message": "ናብ ፋይል ምጽሓፍ" },
   "info_minComplete": { "message": "ምጉዳል ተማልአ" },
   "info_file": { "message": "መዝገብ" },

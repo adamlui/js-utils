@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Przykład prawidłowego polecenia" },
   "info_scssFilesToBeCompiled": { "message": "Pliki SCSS do skompilowania" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Nie zostaną skompilowane żadne pliki SCSS" },
-  "info_copying": { "message": "Kopiowanie do schowka" },
+  "info_copyingToClip": { "message": "Kopiowanie do schowka" },
   "info_writing": { "message": "Zapis do pliku" },
   "info_compilationComplete": { "message": "Kompilacja zakończona" },
   "info_file": { "message": "plik" },

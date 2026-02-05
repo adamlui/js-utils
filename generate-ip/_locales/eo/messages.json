@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "devas inkluzivi =vojo" },
   "warn_configFileExists": { "message": "Agordodosiero jam ekzistas" },
   "info_exampleValidConfigFile": { "message": "Ekzempla valida agordodosiero" },
-  "info_copying": { "message": "Kopiante al interdeponejo" },
+  "info_copyingToClip": { "message": "Kopiante al interdeponejo" },
   "info_moreHelp": { "message": "Por pli da helpo" },
   "info_type": { "message": "tipo" },
   "info_or": { "message": "aŭ" },

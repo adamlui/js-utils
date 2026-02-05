@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "مثال على أمر صالح" },
   "info_filesToBeMinned": { "message": "يجب تصغير ملفات جافا سكريبت" },
   "info_noFilesWillBeMinned": { "message": "لن يتم تصغير أي ملفات جافا سكريبت" },
-  "info_copying": { "message": "لصق من الحافظة... user on host" },
+  "info_copyingToClip": { "message": "لصق من الحافظة... user on host" },
   "info_writing": { "message": "الكتابة إلى ملف" },
   "info_minComplete": { "message": "اكتمل التصغير" },
   "info_file": { "message": "file" },

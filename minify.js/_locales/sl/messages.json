@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Primer veljavnega ukaza" },
   "info_filesToBeMinned": { "message": "Datoteke JavaScript, ki jih je treba pomanjšati" },
   "info_noFilesWillBeMinned": { "message": "Nobena datoteka JavaScript ne bo pomanjšana" },
-  "info_copying": { "message": "Kopiranje v odlagališče" },
+  "info_copyingToClip": { "message": "Kopiranje v odlagališče" },
   "info_writing": { "message": "Pisanje v datoteko" },
   "info_minComplete": { "message": "Minifikacija je končana" },
   "info_file": { "message": "datoteka" },

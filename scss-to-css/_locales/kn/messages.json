@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "ಉದಾಹರಣೆ ಮಾನ್ಯ ಆಜ್ಞೆ" },
   "info_scssFilesToBeCompiled": { "message": "ಸಂಕಲಿಸಬೇಕಾದ SCSS ಫೈಲ್‌ಗಳು" },
   "info_noSCSSfilesWillBeCompiled": { "message": "ಯಾವುದೇ SCSS ಫೈಲ್‌ಗಳನ್ನು ಕಂಪೈಲ್ ಮಾಡಲಾಗುವುದಿಲ್ಲ" },
-  "info_copying": { "message": "ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗುತ್ತಿದೆ" },
+  "info_copyingToClip": { "message": "ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗುತ್ತಿದೆ" },
   "info_writing": { "message": "ಫೈಲ್‌ಗೆ ಬರೆಯಲಾಗುತ್ತಿದೆ" },
   "info_compilationComplete": { "message": "ಸಂಕಲನ ಪೂರ್ಣಗೊಂಡಿದೆ" },
   "info_file": { "message": "FILE" },

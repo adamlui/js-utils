@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Voorbeeld geldig commando" },
   "info_scssFilesToBeCompiled": { "message": "Te compileren SCSS-bestanden" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Er worden geen SCSS-bestanden gecompileerd" },
-  "info_copying": { "message": "Kopiëren naar klembord" },
+  "info_copyingToClip": { "message": "Kopiëren naar klembord" },
   "info_writing": { "message": "Schrijven naar bestand" },
   "info_compilationComplete": { "message": "Compilatie voltooid" },
   "info_file": { "message": "bestand" },

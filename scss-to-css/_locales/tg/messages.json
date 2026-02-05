@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Фармони дурусти мисол" },
   "info_scssFilesToBeCompiled": { "message": "Файлҳои SCSS барои ҷамъоварӣ" },
   "info_noSCSSfilesWillBeCompiled": { "message": "Ягон файли SCSS ҷамъ карда намешавад" },
-  "info_copying": { "message": "Нусха бардоштан дар буфери иваз" },
+  "info_copyingToClip": { "message": "Нусха бардоштан дар буфери иваз" },
   "info_writing": { "message": "Сабткунӣ ба файл" },
   "info_compilationComplete": { "message": "Компилятсия ба итмом расид" },
   "info_file": { "message": "файл" },

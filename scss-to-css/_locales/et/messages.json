@@ -22,7 +22,7 @@
   "info_exampleValidCmd": { "message": "Kehtiva käsu näide" },
   "info_scssFilesToBeCompiled": { "message": "Kompileeritavad SCSS-failid" },
   "info_noSCSSfilesWillBeCompiled": { "message": "SCSS-faile ei kompileerita" },
-  "info_copying": { "message": "Kopeerimine lõikepuhvrisse" },
+  "info_copyingToClip": { "message": "Kopeerimine lõikepuhvrisse" },
   "info_writing": { "message": "Faili kirjutamine" },
   "info_compilationComplete": { "message": "Kompileerimine lõpetatud" },
   "info_file": { "message": "fail" },

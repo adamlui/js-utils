@@ -17,7 +17,7 @@
   "error_mustIncludePath": { "message": "muss =Pfad enthalen" },
   "warn_configFileExists": { "message": "D'Konfiguratiounsdatei gëtt et schonn" },
   "info_exampleValidConfigFile": { "message": "Example valid config file" },
-  "info_copying": { "message": "An d'Zwëschespäicher kopéieren" },
+  "info_copyingToClip": { "message": "An d'Zwëschespäicher kopéieren" },
   "info_moreHelp": { "message": "Fir méi Hëllef" },
   "info_type": { "message": "tippen" },
   "info_or": { "message": "oder" },
