@@ -54,7 +54,7 @@ module.exports = {
             let msgHref = `${msgHostURL}${langCode.replace('-', '_')}/messages.json`
             while ((this.msgFetchesTried ||= 0) < 3)
                 try { // fetch remote msgs
-                        msgs = data.flatten(await (await data.fetch(msgHref)).json())
+                    msgs = data.flatten(await (await data.fetch(msgHref)).json())
                     this.msgFetchesTried = 0 ; break
                 } catch (err) { // retry up to 2X (region-stripped + EN)
                     this.msgFetchesTried++ ; if (this.msgFetchesTried >= 3) break
