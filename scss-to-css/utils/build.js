@@ -20,11 +20,11 @@ cli.config = {
 // Copy data
 if (!cli.config.jsOnly) {
     const dataOutDir = 'dist/data',
-          filenames = { appData: 'package-data.json', msgs: 'messages.json', config: 'scss-to-css.config.mjs' }
+          filenames = { pkgData: 'package-data.json', msgs: 'messages.json', config: 'scss-to-css.config.mjs' }
     fs.rmSync('dist', { recursive: true, force: true })
     fs.mkdirSync(dataOutDir, { recursive: true })
     fs.copyFileSync(`_locales/en/${filenames.msgs}`, `${dataOutDir}/${filenames.msgs}`)
-    fs.copyFileSync(filenames.appData, `${dataOutDir}/${filenames.appData}`)
+    fs.copyFileSync(filenames.pkgData, `${dataOutDir}/${filenames.pkgData}`)
     if (!cli.config.jsonOnly) fs.copyFileSync(filenames.config, `${dataOutDir}/${filenames.config}`)
 }
 
