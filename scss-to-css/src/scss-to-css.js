@@ -219,7 +219,7 @@ const log = {
 
     validOptions(options) {
         const strValidOptions = Object.keys(options).join(', ')
-        const strDefaultOptions = JSON.stringify(options, undefined, 2)
+        const strDefaultOptions = JSON.stringify(options, null, 2)
             .replace(/"([^"]+)":/g, '$1:') // strip quotes from keys
             .replace(/"/g, '\'') // replace double quotes w/ single quotes
             .replace(/\n\s*/g, ' ') // condense to single line
