@@ -46,9 +46,6 @@ module.exports = {
     async getMsgs(langCode = 'en') {
         log.prefix = 'getMsgs()'
 
-        if (env.debugMode) // use random lang to test jsDelivr
-            langCode = module.exports.generateRandomLang({ excludes: ['en'] })
-
         let msgs = data.flatten( // local ones
             require(`../../${ env.devMode ? '../../_locales/en/' : 'data/' }messages.json`))
 
@@ -57,9 +54,7 @@ module.exports = {
             let msgHref = `${msgHostURL}${langCode.replace('-', '_')}/messages.json`
             while ((this.msgFetchesTried ||= 0) < 3)
                 try { // fetch remote msgs
-                    log.debug(`${JSON.stringify(
-                        msgs = data.flatten(await (await data.fetch(msgHref)).json()
-                    ), null, 2)}\n`)
+                        msgs = data.flatten(await (await data.fetch(msgHref)).json())
                     this.msgFetchesTried = 0 ; break
                 } catch (err) { // retry up to 2X (region-stripped + EN)
                     this.msgFetchesTried++ ; if (this.msgFetchesTried >= 3) break
