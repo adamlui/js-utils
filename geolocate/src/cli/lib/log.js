@@ -51,7 +51,6 @@ module.exports = {
             ],
             params: [
                 `\n${this.colors.bw}o ${app.msgs.helpSection_params}:${this.colors.nc}`,
-                ` --qty=n                     ${app.msgs.optionDesc_qty}.`,
                 ` --config="path/to/file"     ${app.msgs.optionDesc_config}.`
             ],
             flags: [
