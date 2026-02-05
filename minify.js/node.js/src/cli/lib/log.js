@@ -107,16 +107,10 @@ module.exports = {
     },
 
     version() {
-        const globalVer = require('child_process')
-            .execSync(`npm view ${JSON.stringify(cli.name)} version`).toString().trim() || 'none'
-        let localVer = 'none'
-
-        try { // to set localVer from node_modules package.json
-            const localPkgPath = require('path').resolve(process.cwd(), 'node_modules', cli.name, 'package.json')
-            if (require('fs').existsSync(localPkgPath)) localVer = require(localPkgPath).version || 'none'
-        } catch (err) {
-            this.error(`${cli.msgs.error_readingLocalPkgVer}:`, err.message) }
-
-        console.info(`\n${cli.msgs.prefix_globalVer}: ${globalVer}\n${cli.msgs.prefix_localVer}: ${localVer}`)
+        const { getVer } = require(`./pkg${ env.devMode ? '' : '.min' }.js`)
+        console.info(`\n${
+            cli.msgs.prefix_globalVer}: ${ getVer('global') || 'none' }\n${
+             cli.msgs.prefix_localVer}: ${ getVer('local')  || 'none' }`
+        )
     }
 }
