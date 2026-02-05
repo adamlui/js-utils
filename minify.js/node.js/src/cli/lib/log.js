@@ -23,7 +23,7 @@ module.exports = {
     tip(msg) { console.info(`${this.colors.by}${cli.msgs.prefix_tip}: ${msg}${this.colors.nc}`) },
     success(msg) { console.log(`\n${this.colors.bg}${msg}${this.colors.nc}`) },
     warn(...args) {
-        console.warn(`\n${this.colors.bo}${this.prefix}${cli.msgs.prefix_warning}:`, ...args, this.colors.nc) },
+        console.warn(`\n${this.colors.bo}${this.prefix} » ${cli.msgs.prefix_warning}:`, ...args, this.colors.nc) },
 
     help(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'params', 'cmds']) {
         cli.prefix = `${this.colors.tlBG}${this.colors.blk} ${cli.name.replace(/^@[^/]+\//, '')} ${this.colors.nc} `
