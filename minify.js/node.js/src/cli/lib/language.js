@@ -54,16 +54,16 @@ module.exports = {
 
         if (!langCode.startsWith('en')) { // fetch non-English msgs from jsDelivr
             const msgHostURL = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`
-            let msgHref = `${msgHostURL}${langCode.replace('-', '_')}/messages.json`,
-                msgFetchTries = 0
-            while (msgFetchTries < 3)
-                try { // fetch msgs
+            let msgHref = `${msgHostURL}${langCode.replace('-', '_')}/messages.json`
+            while ((this.msgFetchTries ||= 0) < 3)
+                try { // fetch remote msgs
                     log.debug(`${JSON.stringify(
-                        msgs = data.flatten(await (await data.fetch(msgHref)).json()), undefined, 2)}\n`)
-                    break
+                        msgs = data.flatten(await (await data.fetch(msgHref)).json()
+                    ), null, 2)}\n`)
+                    this.msgFetchTries = 0 ; break
                 } catch (err) { // retry up to 2X (region-stripped + EN)
-                    msgFetchTries++ ; if (msgFetchTries > 2) break
-                    log.debug(msgHref = langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
+                    this.msgFetchTries++ ; if (this.msgFetchTries >= 3) break
+                    log.debug(msgHref = langCode.includes('-') && this.msgFetchTries == 1 ? // if regional lang on 1st try...
                         msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
                             : `${msgHostURL}en/messages.json` // else use EN msgs
                     )
