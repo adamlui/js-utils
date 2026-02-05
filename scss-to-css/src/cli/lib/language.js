@@ -59,9 +59,10 @@ module.exports = {
                     break
                 } catch (err) { // retry up to 2X (region-stripped + EN)
                     msgFetchTries++ ; if (msgFetchTries > 2) break
-                    msgHref = langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
+                    log.debug(msgHref = langCode.includes('-') && msgFetchTries == 1 ? // if regional lang on 1st try...
                         msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
                             : `${msgHostURL}en/messages.json` // else use EN msgs
+                    )
                 }
         }
 
