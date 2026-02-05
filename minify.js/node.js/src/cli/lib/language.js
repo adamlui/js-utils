@@ -4,6 +4,7 @@ const data = require(`./data${ env.devMode ? '' : '.min' }.js`),
 module.exports = {
 
     generateRandomLang({ includes = [], excludes = [] } = {}) {
+        log.prefix = 'generateRandomLang()'
         const fs = require('fs'),
               path = require('path')
 
@@ -37,17 +38,19 @@ module.exports = {
         let randomLang = 'en'
         if (locales.length)
             randomLang = locales[Math.floor(Math.random() * locales.length)]
-        log.debug(`\nRandom language:  ${randomLang}\n`)
+        log.debug(`Random language:  ${randomLang}\n`)
 
         return randomLang
     },
 
     async getMsgs(langCode = 'en') {
+        log.prefix = 'getMsgs()'
+
         if (env.debugMode) // use random lang to test jsDelivr
             langCode = module.exports.generateRandomLang({ excludes: ['en'] })
 
         let msgs = data.flatten( // local ones
-            require(`../../${ env.devMode ? '../../_locales/en/' : 'data/' }messages.json`), { key: 'message' })
+            require(`../../${ env.devMode ? '../../_locales/en/' : 'data/' }messages.json`))
 
         if (!langCode.startsWith('en')) { // fetch non-English msgs from jsDelivr
             const msgHostURL = `${app.urls.jsdelivr}@${app.commitHashes.locales}/_locales/`
@@ -55,7 +58,8 @@ module.exports = {
                 msgFetchTries = 0
             while (msgFetchTries < 3)
                 try { // fetch msgs
-                    log.debug(msgs = data.flatten(await (await data.fetch(msgHref)).json(), { key: 'message' }))
+                    log.debug(`${JSON.stringify(
+                        msgs = data.flatten(await (await data.fetch(msgHref)).json()), undefined, 2)}\n`)
                     break
                 } catch (err) { // retry up to 2X (region-stripped + EN)
                     msgFetchTries++ ; if (msgFetchTries > 2) break
@@ -70,6 +74,7 @@ module.exports = {
     },
 
     getSysLang() {
+        log.prefix = 'getSysLang()'
         if (process.platform == 'win32')
             try {
                 return require('child_process').execSync(
