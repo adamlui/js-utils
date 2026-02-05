@@ -74,11 +74,11 @@ module.exports = {
         // Init defaults
         ctrlKeys.forEach(key => {
             const ctrl = this.controls[key] ; if (ctrl.mode || ctrl.type == 'cmd') return
-            app.config[key] ??= ctrl.defaultVal ?? (ctrl.type == 'flag' ? false : '')
+            app.config[key] ??= ctrl.defaultVal ?? ( ctrl.type == 'flag' ? false : '' )
         })
 
         // Load from config file
-        let configPath = null
+        let configPath
         const configArg = args.find(arg => this.controls.config.regex.test(arg))
         if (configArg) { // resolve input path, then validate
             if (!/=/.test(configArg))
