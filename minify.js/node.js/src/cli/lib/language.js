@@ -3,9 +3,7 @@ const data = require(`./data${ env.devMode ? '' : '.min' }.js`),
 
 module.exports = {
 
-
     generateRandomLang({ includes = [], excludes = [] } = {}) {
-
         const fs = require('fs'),
               path = require('path')
 
