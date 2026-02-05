@@ -12,7 +12,7 @@
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
           fs = require('fs'),
-        { generateRandomLang, getMsgs, getSysLang } = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
+        { getMsgs, getSysLang } = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
           log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
           minifyJS = require(`../minify${ env.devMode ? '' : '.min' }.js`),
           path = require('path'),
@@ -20,8 +20,7 @@
 
     // Init APP data
     Object.assign(globalThis.app ??= {}, require(`../${ env.devMode ? '../' : './data/' }app.json`))
-    app.msgs = await getMsgs(env.debugMode ? generateRandomLang({ excludes: ['en'] }) : getSysLang())
-    app.urls.docs += '/#-command-line-usage'
+    app.msgs = await getMsgs(getSysLang()) ; app.urls.docs += '/#-command-line-usage'
 
     // Exec CMD arg if passed
     for (const arg of args) {
