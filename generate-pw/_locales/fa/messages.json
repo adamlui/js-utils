@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "نسخه محلی" },
   "prefix_source": { "message": "منبع" },
   "error_readingLocalPkgVer": { "message": "خطا در خواندن نسخه بسته محلی" },
-  "error_noEqual": { "message": "به '=' و سپس یک مقدار نیاز دارد" },
   "error_notRecognized": { "message": "شناخته نشده است" },
   "error_nonPositiveNum": { "message": "آرگومان فقط می تواند > 0 باشد" },
   "error_invalidURL": { "message": "URL نامعتبر است" },

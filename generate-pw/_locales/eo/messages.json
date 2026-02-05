@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "Loka versio" },
   "prefix_source": { "message": "Origino" },
   "error_readingLocalPkgVer": { "message": "Eraro dum legado de loka pakaĵa versio" },
-  "error_noEqual": { "message": "postuli '=' sekvata de valoro" },
   "error_notRecognized": { "message": "ne rekonita" },
   "error_nonPositiveNum": { "message": "argumento povas esti nur > 0" },
   "error_invalidURL": { "message": "Nevalida URL" },

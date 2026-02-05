@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "Ýurduň terjimesi" },
   "prefix_source": { "message": "Çeşme" },
   "error_readingLocalPkgVer": { "message": "Ýerli paket nusgasyny okamakda ýalňyşlyk" },
-  "error_noEqual": { "message": "talaplar '=' bir gymmat bilen yzygiderli yzygiderli" },
   "error_notRecognized": { "message": "alymady" },
   "error_nonPositiveNum": { "message": "mysal üçin, 1 sany diňe 1 sany bilen deňeşdirilýär" },
   "error_invalidURL": { "message": "Ýalan URL" },

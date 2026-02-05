@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "Τοπική έκδοση" },
   "prefix_source": { "message": "Πηγή" },
   "error_readingLocalPkgVer": { "message": "Σφάλμα κατά την ανάγνωση της τοπικής έκδοσης πακέτου" },
-  "error_noEqual": { "message": "απαιτεί '=' ακολουθούμενο από μια τιμή" },
   "error_notRecognized": { "message": "που δεν αναγνωρίζονται" },
   "error_nonPositiveNum": { "message": "το όρισμα μπορεί να είναι μόνο > 0" },
   "error_invalidURL": { "message": "Μη έγκυρo URL" },

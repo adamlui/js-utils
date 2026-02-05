@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "ናይ ከባቢ ቅጅል" },
   "prefix_source": { "message": "ምንጪ" },
   "error_readingLocalPkgVer": { "message": "ናይ ከባቢ ፓኬጅ ቅጅል ምንባብ ጌጋ" },
-  "error_noEqual": { "message": "'=' ብዋጋ ተጀሚሩ" },
   "error_notRecognized": { "message": "ኣይተፈልጠን ።" },
   "error_nonPositiveNum": { "message": "እቲ ክርክር > 0 ጥራይ እዩ ክኸውን ዝኽእል" },
   "error_invalidURL": { "message": "ዘይቕቡል URL" },

@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "Mana kūloko" },
   "prefix_source": { "message": "Puna" },
   "error_readingLocalPkgVer": { "message": "He hewa i ka heluhelu ʻana i ka mana pūʻolo kūloko" },
-  "error_noEqual": { "message": "koi '=' a ukali ʻia e kahi waiwai" },
   "error_notRecognized": { "message": "ʻike ʻole ʻia" },
   "error_nonPositiveNum": { "message": "hiki ke hoʻopaʻapaʻa > 0 wale nō" },
   "error_invalidURL": { "message": "Hūnā hewa ʻole" },

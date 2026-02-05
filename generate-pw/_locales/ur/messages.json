@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "مقامی ورژن" },
   "prefix_source": { "message": "ماخذ" },
   "error_readingLocalPkgVer": { "message": "مقامی پیکج ورژن پڑھنے میں خرابی" },
-  "error_noEqual": { "message": "'=' کی ضرورت ہوتی ہے جس کے بعد ایک قدر ہوتی ہے" },
   "error_notRecognized": { "message": "پہچانا نہیں گیا" },
   "error_nonPositiveNum": { "message": "دلیل صرف > 0 ہو سکتی ہے" },
   "error_invalidURL": { "message": "غلط URL" },

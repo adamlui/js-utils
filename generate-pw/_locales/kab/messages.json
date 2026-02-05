@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "Asebter amezwaru" },
   "prefix_source": { "message": "Aqbalu" },
   "error_readingLocalPkgVer": { "message": "Tuccḍa taɣuri n uḍebsi amezwaru" },
-  "error_noEqual": { "message": "Ad d-yili '=' yemgerraden s yidis" },
   "error_notRecognized": { "message": "ur yettwassnen ara" },
   "error_nonPositiveNum": { "message": "izmir Izmir > 0" },
   "error_invalidURL": { "message": "URL mačči d tarameγtut" },

@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "Локальная версия" },
   "prefix_source": { "message": "Источник" },
   "error_readingLocalPkgVer": { "message": "Ошибка при чтении версии локального пакета" },
-  "error_noEqual": { "message": "требует '=', за которым следует значение" },
   "error_notRecognized": { "message": "неидентифицированный" },
   "error_nonPositiveNum": { "message": "аргумент может быть только > 0" },
   "error_invalidURL": { "message": "Неверный URL" },

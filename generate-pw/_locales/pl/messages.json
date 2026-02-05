@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "Wersja lokalna" },
   "prefix_source": { "message": "Źródło" },
   "error_readingLocalPkgVer": { "message": "Błąd podczas odczytu lokalnej wersji pakietu" },
-  "error_noEqual": { "message": "wymaga '=', po którym następuje wartość" },
   "error_notRecognized": { "message": "nierozpoznane" },
   "error_nonPositiveNum": { "message": "argument może być tylko > 0" },
   "error_invalidURL": { "message": "Nieprawidłowy adres URL" },

@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "Lokal nga bersyon" },
   "prefix_source": { "message": "Gigikanan" },
   "error_readingLocalPkgVer": { "message": "Sayup sa pagbasa sa lokal nga bersyon sa pakete" },
-  "error_noEqual": { "message": "nanginahanglan '=' gisundan sa usa ka bili" },
   "error_notRecognized": { "message": "wala mailhi" },
   "error_nonPositiveNum": { "message": "argumento lang ang pwede > 0" },
   "error_invalidURL": { "message": "Dili balido nga URL" },

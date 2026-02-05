@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "Phiên bản địa phương" },
   "prefix_source": { "message": "Nguồn" },
   "error_readingLocalPkgVer": { "message": "Lỗi khi đọc phiên bản gói cục bộ" },
-  "error_noEqual": { "message": "require '=' theo sau là một giá trị" },
   "error_notRecognized": { "message": "không được công nhận" },
   "error_nonPositiveNum": { "message": "đối số chỉ có thể là > 0" },
   "error_invalidURL": { "message": "URL không hợp lệ" },

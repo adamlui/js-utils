@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "Lokal versjon" },
   "prefix_source": { "message": "Kilde" },
   "error_readingLocalPkgVer": { "message": "Feil ved lesing av lokal pakkeversjon" },
-  "error_noEqual": { "message": "krever '=' etterfulgt av en verdi" },
   "error_notRecognized": { "message": "Ikke gjenkjent" },
   "error_nonPositiveNum": { "message": "argumentet kan bare være > 0" },
   "error_invalidURL": { "message": "Ugyldig URL" },

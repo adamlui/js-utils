@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "本地版本" },
   "prefix_source": { "message": "來源" },
   "error_readingLocalPkgVer": { "message": "讀取本機套件版本時發生錯誤" },
-  "error_noEqual": { "message": "需要 '=' 後跟值" },
   "error_notRecognized": { "message": "無法識別" },
   "error_nonPositiveNum": { "message": "引數只能大於0" },
   "error_invalidURL": { "message": "無效的網址" },

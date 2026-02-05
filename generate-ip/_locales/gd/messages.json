@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "An tionndadh ionadail" },
   "prefix_source": { "message": "Stòr" },
   "error_readingLocalPkgVer": { "message": "Mearachd a 'leughadh dreach ionadail a' phacaid" },
-  "error_noEqual": { "message": "tha feum air '=' a 'leantainn le luach" },
   "error_notRecognized": { "message": "gun aithneachadh" },
   "error_nonPositiveNum": { "message": "chan urrainn dha a bhith ach 0" },
   "error_invalidURL": { "message": "URL neo-dhligheach" },

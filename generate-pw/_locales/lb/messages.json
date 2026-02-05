@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "Lokal Versioun" },
   "prefix_source": { "message": "Quell" },
   "error_readingLocalPkgVer": { "message": "Feeler beim Liesen vun der lokaler Paketeversioun" },
-  "error_noEqual": { "message": "demande '=' suivi d'un valeur" },
   "error_notRecognized": { "message": "net unerkannt" },
   "error_nonPositiveNum": { "message": "D'Argument kann nëmme méi wéi 0 sinn" },
   "error_invalidURL": { "message": "InvalidCA" },

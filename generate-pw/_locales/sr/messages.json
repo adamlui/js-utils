@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "Lokalna verzija" },
   "prefix_source": { "message": "Izvor" },
   "error_readingLocalPkgVer": { "message": "Greška pri čitanju verzije lokalnog paketa" },
-  "error_noEqual": { "message": "zahteva '=' nakon čega sledi vrednost" },
   "error_notRecognized": { "message": "nije prepoznato" },
   "error_nonPositiveNum": { "message": "argument može biti samo > 0" },
   "error_invalidURL": { "message": "Pogrešan URL" },

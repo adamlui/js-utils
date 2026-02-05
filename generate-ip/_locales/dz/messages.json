@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "ས་གནས་ཀྱི་འགྱུར་ཁུངས།" },
   "prefix_source": { "message": "འབྱུང་ཁུངས།" },
   "error_readingLocalPkgVer": { "message": "ས་གནས་ཀྱི་པེ་ཅིན། གསར་འགྱུར་བཀླག་ནི་ལུ་འཛོལ་བ་" },
-  "error_noEqual": { "message": "གནས་གོང་ '=' གནས་གོང་གི་ཤུལ་ལས་ གནས་གོང་" },
   "error_notRecognized": { "message": "མ་ཤེས་པར་" },
   "error_nonPositiveNum": { "message": "གདམ་ཁ་ ཁ་སྐོང་ཚུ་སྟོནམ་ཨིན།" },
   "error_invalidURL": { "message": "ནོར་འཁྲུལ་ཅན་གྱི་ཨུ་རེལ།" },

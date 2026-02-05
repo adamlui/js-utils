@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "A yeke na yâ ti Bible ti kodoro ni" },
   "prefix_source": { "message": "Mbengue Source" },
   "error_readingLocalPkgVer": { "message": "Mbeni ye so ayeke na lege ni ape ayeke so a yeke diko ni na yâ ti ambeti" },
-  "error_noEqual": { "message": "Kö ti '=' ti yé-kárã" },
   "error_notRecognized": { "message": "a hinga lo pëpe" },
   "error_nonPositiveNum": { "message": "tënë ni alingbi ti duti gi > 0" },
   "error_invalidURL": { "message": "URL so ayeke na lege ni ape" },

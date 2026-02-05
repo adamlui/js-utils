@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "ځايي نسخه" },
   "prefix_source": { "message": "سرچينه" },
   "error_readingLocalPkgVer": { "message": "د ځایی بنډل نسخې په لوستلو کې تېروتنه" },
-  "error_noEqual": { "message": "اړتیا لري '=' د یو ارزښت سره تعقیب کیږي" },
   "error_notRecognized": { "message": "پیژندل شوی نه دی" },
   "error_nonPositiveNum": { "message": "استدلال یوازې > 0 کیدی شي" },
   "error_invalidURL": { "message": "URL ناسم" },

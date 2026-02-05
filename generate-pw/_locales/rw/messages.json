@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "Imiterere yaho" },
   "prefix_source": { "message": "Inkomoko" },
   "error_readingLocalPkgVer": { "message": "Porogaramu Verisiyo" },
-  "error_noEqual": { "message": "bisaba '=' bikurikirwa nagaciro" },
   "error_notRecognized": { "message": "ntibimenyekana" },
   "error_nonPositiveNum": { "message": "impaka zirashobora gusa > 0" },
   "error_invalidURL": { "message": "URL itemewe" },

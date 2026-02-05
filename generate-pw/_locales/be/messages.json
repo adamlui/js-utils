@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "Мясцовая версія" },
   "prefix_source": { "message": "Крыніца" },
   "error_readingLocalPkgVer": { "message": "Памылка чытання версіі лакальнага пакета" },
-  "error_noEqual": { "message": "патрабуе '=' з наступным значэннем" },
   "error_notRecognized": { "message": "Не прызнана" },
   "error_nonPositiveNum": { "message": "аргумент можа быць толькі > 0" },
   "error_invalidURL": { "message": "& Месцазнаходжанне" },

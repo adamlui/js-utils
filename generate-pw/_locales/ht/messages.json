@@ -8,7 +8,6 @@
   "prefix_localVer": { "message": "Vèsyon lokal" },
   "prefix_source": { "message": "Sous" },
   "error_readingLocalPkgVer": { "message": "Erè lekti vèsyon pakè lokal yo" },
-  "error_noEqual": { "message": "mande '=' ki te swiv pa yon valè" },
   "error_notRecognized": { "message": "pa rekonèt/pa rekonèt" },
   "error_nonPositiveNum": { "message": "agiman ka sèlman > 0" },
   "error_invalidURL": { "message": "URL ki pa valab" },
