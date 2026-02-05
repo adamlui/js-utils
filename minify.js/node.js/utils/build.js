@@ -10,7 +10,7 @@ const args = process.argv.slice(2),
     { execSync } = require('child_process'),
       fs = require('fs')
 
-globalThis.cli = require('../package-data.json')
+globalThis.cli = require('../cli.json')
 cli.config = {
     dataOnly: args.some(arg => /^--?data$/.test(arg)),
     jsOnly: args.some(arg => /^--?(?:js|minify)$/.test(arg)),
@@ -20,7 +20,7 @@ cli.config = {
 // Copy data
 if (!cli.config.jsOnly) {
     const dataOutDir = 'dist/data',
-          filenames = { pkgData: 'package-data.json', msgs: 'messages.json', config: 'minify.config.mjs' }
+          filenames = { pkgData: 'cli.json', msgs: 'messages.json', config: 'minify.config.mjs' }
     fs.rmSync('dist', { recursive: true, force: true })
     fs.mkdirSync(dataOutDir, { recursive: true })
     fs.copyFileSync(`../_locales/en/${filenames.msgs}`, `${dataOutDir}/${filenames.msgs}`)
