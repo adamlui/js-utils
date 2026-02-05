@@ -2,14 +2,12 @@
 // Source: https://github.com/adamlui/scss-to-css/tree/main/src
 // Documentation: https://github.com/adamlui/scss-to-css/tree/main/docs
 
-// Import LIBS
 const fs = require('fs'),
       path = require('path'),
       sass = require('sass')
 
-// Init APP data
-Object.assign(globalThis.app ??= {}, require(`${ /[\\/]src(?:[\\/]|$)/i.test(__dirname) ? '../' : './data/' }app.json`))
-app.aliases = {
+Object.assign(globalThis.api ??= {}, require(`${ /[\\/]src(?:[\\/]|$)/i.test(__dirname) ? '../' : './data/' }app.json`))
+api.aliases = {
     compile: ['build', 'Build', 'Compile', 'compress', 'Compress', 'minify', 'Minify'],
     findSCSS: ['find', 'Find', 'findscss', 'findScss', 'Findscss', 'FindScss', 'FindSCSS', 'search', 'Search']
 }
@@ -231,5 +229,5 @@ const log = {
 }
 
 module.exports = { compile, findSCSS }
-for (const fn in app.aliases) // export aliases
-    app.aliases[fn].forEach(alias => module.exports[alias] ??= module.exports[fn]);
+for (const fn in api.aliases) // export aliases
+    api.aliases[fn].forEach(alias => module.exports[alias] ??= module.exports[fn]);

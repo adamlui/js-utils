@@ -3,7 +3,7 @@
 // Documentation: https://github.com/adamlui/js-utils/tree/main/generate-ip/docs
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js
 
-Object.assign(globalThis.app ??= {}, {
+Object.assign(globalThis.api ??= {}, {
     name: 'generate-ip',
     aliases: {
         ipv4: ['ipV4', 'IPv4', 'IPV4', 'Ipv4', 'IpV4', 'ip', 'IP', 'Ip'],
@@ -357,10 +357,10 @@ const random = {
 }
 
 const log = {
-    prefix: app.name,
+    prefix: api.name,
 
     error(...args) { console.error(`${this.prefix} » ERROR:`, ...args) },
-    helpURL(url = app.urls?.docs) { this.info('For more help, please visit', url) },
+    helpURL(url = api.urls?.docs) { this.info('For more help, please visit', url) },
     info(...args) { console.info(`${this.prefix} »`, ...args) },
 
     validOptions(options) {
@@ -374,11 +374,11 @@ const log = {
     }
 }
 
-app.exports = { ipv4, ipv6, mac }
-try { module.exports = { ...app.exports }} catch (err) {} // for Node.js
-try { Object.assign(window, app.exports) } catch (err) {} // for browsers
-for (const api in app.aliases) // export aliases
-    app.aliases[api].forEach(alias => {
-        try { module.exports[alias] ??= module.exports[api] } catch (err) {} // for Node.js
-        try { window[alias] ??= window[api] } catch (err) {} // for browsers
+api.exports = { ipv4, ipv6, mac }
+try { module.exports = { ...api.exports }} catch (err) {} // for Node.js
+try { Object.assign(window, api.exports) } catch (err) {} // for browsers
+for (const ipAPI in api.aliases) // export aliases
+    api.aliases[ipAPI].forEach(alias => {
+        try { module.exports[alias] ??= module.exports[ipAPI] } catch (err) {} // for Node.js
+        try { window[alias] ??= window[ipAPI] } catch (err) {} // for browsers
     });

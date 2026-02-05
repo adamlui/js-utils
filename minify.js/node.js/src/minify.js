@@ -2,14 +2,12 @@
 // Source: https://github.com/adamlui/minify.js/tree/main/node.js/src
 // Documentation: https://github.com/adamlui/minify.js/tree/main/node.js/docs
 
-// Import LIBS
 const fs = require('fs'),
       path = require('path'),
       uglifyJS = require('uglify-js')
 
-// Init APP data
-Object.assign(globalThis.app ??= {}, require(`${ /[\\/]src(?:[\\/]|$)/i.test(__dirname) ? '../' : './data/' }app.json`))
-app.aliases = {
+Object.assign(globalThis.api ??= {}, require(`${ /[\\/]src(?:[\\/]|$)/i.test(__dirname) ? '../' : './data/' }app.json`))
+api.aliases = {
     minify: ['build', 'Build', 'compile', 'Compile', 'compress', 'Compress', 'Minify'],
     findJS: ['find', 'Find', 'findjs', 'findJs', 'Findjs', 'FindJs', 'FindJS', 'search', 'Search']
 }
@@ -252,5 +250,5 @@ const log = {
 }
 
 module.exports = { minify, findJS }
-for (const fn in app.aliases) // export aliases
-    app.aliases[fn].forEach(alias => module.exports[alias] ??= module.exports[fn]);
+for (const fn in api.aliases) // export aliases
+    api.aliases[fn].forEach(alias => module.exports[alias] ??= module.exports[fn]);

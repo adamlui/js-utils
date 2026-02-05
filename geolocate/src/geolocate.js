@@ -3,7 +3,7 @@
 // Documentation: https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-command-line-usage
 // Latest minified release: https://cdn.jsdelivr.net/npm/@adamlui/geolocate/dist/geolocate.min.js
 
-Object.assign(globalThis.app ??= {}, {
+Object.assign(globalThis.api ??= {}, {
     name: 'geolocate',
     aliases: { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] }
 })
@@ -121,10 +121,10 @@ function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
 }
 
 const log = {
-    prefix: app.name,
+    prefix: api.name,
 
     error(...args) { console.error(`${this.prefix} » ERROR:`, ...args) },
-    helpURL(url = app.urls?.docs) { this.info('For more help, please visit', url) },
+    helpURL(url = api.urls?.docs) { this.info('For more help, please visit', url) },
     info(...args) { console.info(`${this.prefix} »`, ...args) },
 
     validOptions(options) {
@@ -140,7 +140,7 @@ const log = {
 
 try { module.exports = { geolocate }} catch (err) {} // for Node.js
 try { window.geo = { geolocate }} catch (err) {} // for browsers
-for (const fn in app.aliases) { // export aliases
-    try { app.aliases[fn].forEach(alias => module.exports[alias] ??= module.exports[fn]) } catch (err) {} // for Node.js
-    try { app.aliases[fn].forEach(alias => window.geo[alias] ??= window.geo[fn]) } catch (err) {} // for browsers
+for (const fn in api.aliases) { // export aliases
+    try { api.aliases[fn].forEach(alias => module.exports[alias] ??= module.exports[fn]) } catch (err) {} // for Node.js
+    try { api.aliases[fn].forEach(alias => window.geo[alias] ??= window.geo[fn]) } catch (err) {} // for browsers
 }

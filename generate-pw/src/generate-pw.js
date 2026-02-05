@@ -3,7 +3,7 @@
 // Documentation: https://github.com/adamlui/js-utils/tree/main/generate-pw/docs
 // Latest minified release: https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js
 
-Object.assign(globalThis.app ??= {}, {
+Object.assign(globalThis.api ??= {}, {
     name: 'generate-pw',
     aliases: {
         generatePassword: [
@@ -67,7 +67,7 @@ function generatePassword(options = {}) {
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
     if (options.strength) { // apply strength preset
-        const strengthPreset = app.strengthPresets[options.strength.toLowerCase()]
+        const strengthPreset = api.strengthPresets[options.strength.toLowerCase()]
         if (strengthPreset) options = { ...options, ...strengthPreset }
     }
 
@@ -82,13 +82,13 @@ function generatePassword(options = {}) {
         if (options.verbose && !fromGeneratePasswords)
             log.info('Initializing character set...')
         let pwCharset = options.charset?.toString() || ( // use passed [charset], or construct from options
-            ( options.numbers ? app.charsets.numbers : '' )
-           +( options.symbols ? app.charsets.symbols : '' )
-           +( options.lowercase ? app.charsets.lower : '' )
-           +( options.uppercase ? app.charsets.upper : '' )
+            ( options.numbers ? api.charsets.numbers : '' )
+           +( options.symbols ? api.charsets.symbols : '' )
+           +( options.lowercase ? api.charsets.lower : '' )
+           +( options.uppercase ? api.charsets.upper : '' )
         )
         if (pwCharset == '') // all flags false + no charset passed
-            pwCharset = app.charsets.lower + app.charsets.upper // default to upper + lower
+            pwCharset = api.charsets.lower + api.charsets.upper // default to upper + lower
 
         // Exclude passed `exclude` chars
         if (options.exclude) {
@@ -170,7 +170,7 @@ function generatePasswords(qty, options = {}) {
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
     if (options.strength) { // apply strength preset
-        const strengthPreset = app.strengthPresets[options.strength.toLowerCase()]
+        const strengthPreset = api.strengthPresets[options.strength.toLowerCase()]
         if (strengthPreset) options = { ...options, ...strengthPreset }
     }
 
@@ -223,7 +223,7 @@ function strictify(password, requiredCharTypes = ['numbers', 'symbols', 'lower',
     const hasFlags = {}, untouchablePositions = []
     requiredCharTypes.forEach(charType => hasFlags[charType] = false)
     for (let i = 0 ; i < password.length ; i++) for (const charType of requiredCharTypes)
-        if (!hasFlags[charType] && app.charsets[charType].includes(password[i])) {
+        if (!hasFlags[charType] && api.charsets[charType].includes(password[i])) {
             hasFlags[charType] = true ; untouchablePositions.push(i) }
 
     // Modify password if unstrict
@@ -236,7 +236,7 @@ function strictify(password, requiredCharTypes = ['numbers', 'symbols', 'lower',
             do replacementPos = randomInt(0, password.length) // pick random pos
             while (untouchablePositions.includes(replacementPos)) // check if pos already replaced
             untouchablePositions.push(replacementPos) // track new replacement pos
-            const replacementCharSet = app.charsets[charType] || app.charsets[charType + 's']
+            const replacementCharSet = api.charsets[charType] || api.charsets[charType + 's']
             strictPW = strictPW.substring(0, replacementPos) // perform actual replacement
                      + replacementCharSet[randomInt(0, replacementCharSet.length)]
                      + strictPW.substring(replacementPos +1)
@@ -281,7 +281,7 @@ function validateStrength(password, options = {}) {
     // Count occurrences of each char type
     const charCnts = { lower: 0, upper: 0, number: 0, symbol: 0 }
     for (const char of password) for (const charType of Object.keys(charCnts))
-        if ((app.charsets[charType] || app.charsets[charType + 's']).includes(char))
+        if ((api.charsets[charType] || api.charsets[charType + 's']).includes(char))
             charCnts[charType]++
 
     // Check criteria + add recommendations
@@ -362,10 +362,10 @@ function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
 }
 
 const log = {
-    prefix: app.name,
+    prefix: api.name,
 
     error(...args) { console.error(`${this.prefix} » ERROR:`, ...args) },
-    helpURL(url = app.urls?.docs) { this.info('For more help, please visit', url) },
+    helpURL(url = api.urls?.docs) { this.info('For more help, please visit', url) },
     info(...args) { console.info(`${this.prefix} »`, ...args) },
 
     validOptions(options) {
@@ -379,10 +379,10 @@ const log = {
     }
 }
 
-app.exports = { generatePassword, generatePasswords, strictify, validateStrength }
-try { module.exports = { ...app.exports }} catch (err) {} // for Node.js
-try { window.pw = { ...app.exports }} catch (err) {} // for browsers
-for (const fn in app.aliases) { // export aliases
-    try { app.aliases[fn].forEach(alias => module.exports[alias] ??= module.exports[fn]) } catch (err) {} // for Node.js
-    try { app.aliases[fn].forEach(alias => window.pw[alias] ??= window.pw[fn]) } catch (err) {} // for browsers
+api.exports = { generatePassword, generatePasswords, strictify, validateStrength }
+try { module.exports = { ...api.exports }} catch (err) {} // for Node.js
+try { window.pw = { ...api.exports }} catch (err) {} // for browsers
+for (const fn in api.aliases) { // export aliases
+    try { api.aliases[fn].forEach(alias => module.exports[alias] ??= module.exports[fn]) } catch (err) {} // for Node.js
+    try { api.aliases[fn].forEach(alias => window.pw[alias] ??= window.pw[fn]) } catch (err) {} // for browsers
 }
