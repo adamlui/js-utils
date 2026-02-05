@@ -43,7 +43,8 @@ module.exports = {
     },
 
     async getMsgs(langCode = 'en') {
-        if (env.debugMode) langCode = module.exports.generateRandomLang({ excludes: ['en'] })
+        if (env.debugMode) // use random lang to test jsDelivr
+            langCode = module.exports.generateRandomLang({ excludes: ['en'] })
 
         let msgs = data.flatten( // local ones
             require(`../../${ env.devMode ? '../_locales/en/' : 'data/' }messages.json`), { key: 'message' })
