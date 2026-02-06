@@ -20,7 +20,7 @@ module.exports = {
             if (!fs.existsSync(localesDir)) return ['en']
             const locales = fs.readdirSync(localesDir, { withFileTypes: true })
                 .filter(entry => entry.isDirectory()).map(entry => entry.name)
-                .filter(name => /^\w{2}[-_]?\w{0,2}$/i.test(name))
+                .filter(name => /^\w{2}[-_]?\w{0,2}$/.test(name))
 
             // Cache result
             fs.mkdirSync(cacheDir, { recursive: true })
