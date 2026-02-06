@@ -16,7 +16,6 @@
           github = require(`./lib/github${ env.devMode ? '' : '.min' }.js`),
           log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
           path = require('path'),
-          pkg = require(`./lib/pkg${ env.devMode ? '' : '.min' }.js`),
           scssToCSS = require(`../scss-to-css${ env.devMode ? '' : '.min' }.js`),
           settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
 
@@ -31,7 +30,6 @@
         if (cli.docLocales.includes(cli.docLocale))
             cli.urls.docs = cli.urls.docs.replace(/\/#.*$/g, `/${cli.docLocale}#readme`)
     }
-    cli.version = {} ; ['global', 'local'].forEach(verType => cli.version[verType] = pkg.getVer(verType) || 'none')
 
     // Exec CMD arg if passed
     for (const arg of args) {
