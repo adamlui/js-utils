@@ -28,7 +28,7 @@
         cli.docLocale = env.sysLang.replace('_', '-').toLowerCase()
         cli.docLocales = await github.getDirContents({ path: 'node.js/docs', type: 'dir' })
         if (cli.docLocales.includes(cli.docLocale))
-            cli.urls.docs = cli.urls.docs.replace(/\/#.*$/g, `/${cli.docLocale}#readme`)
+            cli.urls.docs = cli.urls.docs.replace(/\/[^/]+$/g, `/${cli.docLocale}#readme`)
     }
 
     // Exec CMD arg if passed
