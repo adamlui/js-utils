@@ -10,7 +10,7 @@ module.exports = {
         const failedPaths = [] ; let compileData = []
         if (!cli.config.relativeOutput && fs.statSync(inputPath).isDirectory()) {
             const compileResult = compile(inputPath, {
-                verbose: !cli.config.quietMode,
+                verbose: false,
                 minify: !cli.config.noMinify,
                 comment: cli.config.comment?.replace(/\\n/g, '\n'),
                 relativeOutput: false,
