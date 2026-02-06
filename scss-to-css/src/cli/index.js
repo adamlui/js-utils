@@ -64,7 +64,7 @@
             ignores: (cli.config.ignores?.split(',') ?? []).map(ignore => ignore.trim())
         })
 
-    // Print or compile files
+    // Print/compile files
     if (cli.config.dryRun) {
         if (srcFiles.length) {
             log.info(`${cli.msgs.info_scssFilesToBeCompiled}:`)
