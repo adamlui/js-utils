@@ -43,7 +43,7 @@ module.exports = {
 
         if (fs.existsSync(paths.target)) // use existing config file
             return log.warn(`${cli.msgs.warn_configFileExists}:`, paths.target)
-        if (fs.existsSync(paths.src = path.resolve(__dirname, `../../${ env.devMode ? '../' : './data/' }${filename}`)))
+        if (fs.existsSync(paths.src = path.resolve(__dirname, `../../${ env.devMode ? '../' : 'data/' }${filename}`)))
             fs.copyFileSync(paths.src, paths.target) // use found template
 
         else { // use jsDelivr copy
