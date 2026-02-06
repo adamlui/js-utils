@@ -11,12 +11,12 @@
 
     // Import LIBS
     const compile = require(`./lib/compile${ env.devMode ? '' : '.min' }.js`),
+        { findSCSS } = require(`../scss-to-css${ env.devMode ? '' : '.min' }.js`),
           fs = require('fs'),
         { generateRandomLang, getMsgs, getSysLang } = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
           github = require(`./lib/github${ env.devMode ? '' : '.min' }.js`),
           log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
           path = require('path'),
-        { findSCSS } = require(`../scss-to-css${ env.devMode ? '' : '.min' }.js`),
           settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
 
     // Init CLI data
