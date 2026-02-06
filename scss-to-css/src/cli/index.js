@@ -64,14 +64,14 @@
             ignores: (cli.config.ignores?.split(',') ?? []).map(ignore => ignore.trim())
         })
 
-    if (cli.config.dryRun) { // --?<n|dry-run> passed
-        if (scssFiles.length) { // print files to be processed
+    // Print or compile files
+    if (cli.config.dryRun) {
+        if (scssFiles.length) {
             log.info(`${cli.msgs.info_scssFilesToBeCompiled}:`)
             scssFiles.forEach(file => console.info(file))
         } else // no files found
             log.info(`\n${cli.msgs.info_noSCSSfilesWillBeCompiled}.`)
-
-    } else // actually compile SCSS files
+    } else
         compile.scss({ scssFiles, inputPath, inputArg, outputArg })
 
 })()

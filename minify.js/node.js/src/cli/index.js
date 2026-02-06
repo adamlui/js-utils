@@ -64,14 +64,14 @@
             ignores: (cli.config.ignores?.split(',') ?? []).map(ignore => ignore.trim())
         })
 
-    if (cli.config.dryRun) { // --?<n|dry-run> passed
-        if (srcJSfiles.length) { // print files to be processed
+    // Print or minify files
+    if (cli.config.dryRun) {
+        if (srcJSfiles.length) {
             log.info(`${cli.msgs.info_filesToBeMinned}:`)
             srcJSfiles.forEach(file => console.info(file))
         } else // no files found
             log.info(`${cli.msgs.info_noFilesWillBeMinned}.`)
-
-    } else // actually minify JS files
+    } else
         compile.js({ srcJSfiles, inputPath, inputArg, outputArg })
 
 })()
