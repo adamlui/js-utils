@@ -18,8 +18,7 @@
 
     // Init CLI data
     Object.assign(globalThis.cli ??= {}, require(`../${ env.devMode ? '../' : 'data/' }package-data.json`))
-    env.sysLang = env.debugMode ? generateRandomLang({ excludes: ['en'] }) : getSysLang()
-    cli.msgs = await getMsgs(env.sysLang)
+    cli.msgs = await getMsgs(env.sysLang = env.debugMode ? generateRandomLang({ excludes: ['en'] }) : getSysLang())
     cli.urls.docs += '/#-command-line-usage'
 
     // Process ARGS
