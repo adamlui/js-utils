@@ -14,6 +14,7 @@
           geo = require(`../geolocate${ env.devMode ? '' : '.min' }.js`),
         { generateRandomLang, getMsgs, getSysLang } = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
           log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
+          pkg = require(`./lib/pkg${ env.devMode ? '' : '.min' }.js`),
           settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
 
     // Init CLI data
@@ -21,6 +22,7 @@
     env.sysLang = env.debugMode ? generateRandomLang({ excludes: ['en'] }) : getSysLang()
     cli.msgs = await getMsgs(env.sysLang)
     cli.urls.docs += '/#-command-line-usage'
+    cli.version = {} ; ['global', 'local'].forEach(verType => cli.version[verType] = pkg.getVer(verType) || 'none')
 
     // Process ARGS
     const validIPs = []
