@@ -15,7 +15,7 @@
         { generateRandomLang, getMsgs, getSysLang } = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
           github = require(`./lib/github${ env.devMode ? '' : '.min' }.js`),
           log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
-          minifyJS = require(`../minify${ env.devMode ? '' : '.min' }.js`),
+        { findJS } = require(`../minify${ env.devMode ? '' : '.min' }.js`),
           path = require('path'),
           settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
 
@@ -58,7 +58,7 @@
     // Find all eligible JavaScript files or arg-passed file
     settings.load()
     const srcJSfiles = inputPath.endsWith('.js') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
-        : minifyJS.findJS(inputPath, {
+        : findJS(inputPath, {
             recursive: !cli.config.noRecursion,
             verbose: !cli.config.quietMode,
             ignores: (cli.config.ignores?.split(',') ?? []).map(ignore => ignore.trim())
