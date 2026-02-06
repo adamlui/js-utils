@@ -2,7 +2,6 @@ const log = require(`./log${ env.devMode ? '' : '.min' }.js`)
 
 module.exports = {
     getVer(type = 'any') { // or <'global'|'local'>
-        log.prefix = 'pkg.getVer()'
         let pkgVer
         if (['any', 'global'].includes(type))
             try { // get global ver

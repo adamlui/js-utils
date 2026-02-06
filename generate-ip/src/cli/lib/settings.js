@@ -19,8 +19,6 @@ module.exports = {
     },
 
     async initConfigFile(filename = this.configFilename) {
-        log.prefix = 'initConfigFile()'
-
         const targetPath = path.resolve(process.cwd(), filename)
         if (fs.existsSync(targetPath))
             return log.warn(`${cli.msgs.warn_configFileExists}:`, targetPath)
@@ -50,7 +48,6 @@ module.exports = {
     },
 
     load({ args = process.argv.slice(2), ctrlKeys = Object.keys(this.controls) } = {}) {
-        log.prefix = 'settings.load()'
 
         // Init defaults
         ctrlKeys.forEach(key => {

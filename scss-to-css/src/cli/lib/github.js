@@ -2,7 +2,6 @@ const log = require(`./log${ env.devMode ? '' : '.min' }.js`)
 
 module.exports = {
     async getDirContents({ owner = 'adamlui', repo = 'scss-to-css', path = '/', type = 'all' }) {
-        log.prefix = 'github.getDirContents()'
         try {
             const resp = await require(`./data${ env.devMode ? '' : '.min' }.js`)
                 .fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`)

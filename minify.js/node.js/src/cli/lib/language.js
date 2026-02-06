@@ -4,7 +4,6 @@ const data = require(`./data${ env.devMode ? '' : '.min' }.js`),
 module.exports = {
 
     generateRandomLang({ includes = [], excludes = [] } = {}) {
-        log.prefix = 'generateRandomLang()'
         const fs = require('fs'),
               path = require('path')
 
@@ -44,8 +43,6 @@ module.exports = {
     },
 
     async getMsgs(langCode = 'en') {
-        log.prefix = 'getMsgs()'
-
         let msgs = data.flatten( // local ones
             require(`../../${ env.devMode ? '../../_locales/en/' : 'data/' }messages.json`))
 
@@ -69,7 +66,6 @@ module.exports = {
     },
 
     getSysLang() {
-        log.prefix = 'getSysLang()'
         if (process.platform == 'win32')
             try {
                 return require('child_process').execSync(

@@ -14,16 +14,14 @@ module.exports = {
     configURL() { this.info(`\n${cli.msgs.info_exampleValidConfigFile}: ${cli.urls.config}`) },
     configURLandExit(...args) { this.error(...args) ; this.configURL() ; process.exit(1) },
     data(msg) { console.log(`\n${this.colors.bw}${msg}${this.colors.nc}`) },
-    debug(msg) { if (env.debugMode) console.log(`${this.prefix} » ${msg}`) },
-    error(...args) {
-        console.error(`\n${this.colors.br}${this.prefix} » ${cli.msgs.prefix_error}:`, ...args, this.colors.nc) },
+    debug(msg) { if (env.debugMode) console.log(msg) },
+    error(...args) { console.error(`\n${this.colors.br}${cli.msgs.prefix_error}:`, ...args, this.colors.nc) },
     errorAndExit(...args) { this.error(...args) ; this.helpCmdAndDocURL() ; process.exit(1) },
     ifNotQuiet(msg) { if (!cli.config.quietMode) console.info(msg) },
     info(msg) { console.info(`\n${this.colors.by}${msg}${this.colors.nc}`) },
     tip(msg) { console.info(`${this.colors.by}${cli.msgs.prefix_tip}: ${msg}${this.colors.nc}`) },
     success(msg) { console.log(`\n${this.colors.bg}${msg}${this.colors.nc}`) },
-    warn(...args) {
-        console.warn(`\n${this.colors.bo}${this.prefix} » ${cli.msgs.prefix_warning}:`, ...args, this.colors.nc) },
+    warn(...args) { console.warn(`\n${this.colors.bo}${cli.msgs.prefix_warning}:`, ...args, this.colors.nc) },
 
     help(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'params', 'cmds']) {
         cli.prefix = `${this.colors.tlBG}${this.colors.blk} ${cli.name.replace(/^@[^/]+\//, '')} ${this.colors.nc} `
