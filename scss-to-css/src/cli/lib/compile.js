@@ -1,7 +1,7 @@
 const log = require(`./log${ env.devMode ? '' : '.min' }.js`)
 
 module.exports = {
-    scss({ scssFiles, inputPath, inputArg, outputArg }) {
+    scss({ srcFiles, inputPath, inputArg, outputArg }) {
         const { compile } = require(`../../scss-to-css${ env.devMode ? '' : '.min' }.js`),
                 fs = require('fs'),
                 path = require('path')
@@ -23,7 +23,7 @@ module.exports = {
                 if (compileResult.error) failedPaths.push(inputPath)
                 else compileData = [].concat(compileResult)
             }
-        } else compileData = scssFiles.map(scssPath => {
+        } else compileData = srcFiles.map(scssPath => {
             const compileResult = compile(scssPath, {
                 verbose: !cli.config.quietMode,
                 minify: !cli.config.noMinify,

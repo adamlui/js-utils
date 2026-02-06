@@ -57,7 +57,7 @@
 
     // Find all eligible SCSS files or arg-passed file
     settings.load()
-    const scssFiles = inputPath.endsWith('.scss') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
+    const srcFiles = inputPath.endsWith('.scss') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
         : findSCSS(inputPath, {
             recursive: !cli.config.noRecursion,
             verbose: !cli.config.quietMode,
@@ -66,12 +66,12 @@
 
     // Print or compile files
     if (cli.config.dryRun) {
-        if (scssFiles.length) {
+        if (srcFiles.length) {
             log.info(`${cli.msgs.info_scssFilesToBeCompiled}:`)
-            scssFiles.forEach(file => console.info(file))
+            srcFiles.forEach(file => console.info(file))
         } else // no files found
             log.info(`\n${cli.msgs.info_noSCSSfilesWillBeCompiled}.`)
     } else
-        compile.scss({ scssFiles, inputPath, inputArg, outputArg })
+        compile.scss({ srcFiles, inputPath, inputArg, outputArg })
 
 })()

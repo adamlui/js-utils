@@ -1,7 +1,7 @@
 const log = require(`./log${ env.devMode ? '' : '.min' }.js`)
 
 module.exports = {
-    js({ srcJSfiles, inputPath, inputArg, outputArg }) {
+    js({ srcFiles, inputPath, inputArg, outputArg }) {
         const { minify } = require(`../../minify${ env.devMode ? '' : '.min' }.js`),
                 fs = require('fs'),
                 path = require('path')
@@ -24,7 +24,7 @@ module.exports = {
                 if (minifyResult.error) failedPaths.push(inputPath)
                 else minifyData = [].concat(minifyResult)
             }
-        } else minifyData = srcJSfiles.map(jsPath => {
+        } else minifyData = srcFiles.map(jsPath => {
             const minifyResult = minify(jsPath, {
                 verbose: !cli.config.quietMode,
                 mangle: !cli.config.noMangle,

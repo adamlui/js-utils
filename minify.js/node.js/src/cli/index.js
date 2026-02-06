@@ -57,21 +57,21 @@
 
     // Find all eligible JavaScript files or arg-passed file
     settings.load()
-    const srcJSfiles = inputPath.endsWith('.js') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
+    const srcFiles = inputPath.endsWith('.js') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
         : findJS(inputPath, {
             recursive: !cli.config.noRecursion,
             verbose: !cli.config.quietMode,
             ignores: (cli.config.ignores?.split(',') ?? []).map(ignore => ignore.trim())
         })
 
-    // Print or minify files
+    // Print or compile files
     if (cli.config.dryRun) {
-        if (srcJSfiles.length) {
+        if (srcFiles.length) {
             log.info(`${cli.msgs.info_filesToBeMinned}:`)
-            srcJSfiles.forEach(file => console.info(file))
+            srcFiles.forEach(file => console.info(file))
         } else // no files found
             log.info(`${cli.msgs.info_noFilesWillBeMinned}.`)
     } else
-        compile.js({ srcJSfiles, inputPath, inputArg, outputArg })
+        compile.js({ srcFiles, inputPath, inputArg, outputArg })
 
 })()
