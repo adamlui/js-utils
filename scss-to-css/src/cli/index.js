@@ -3,11 +3,11 @@
 (async () => {
     'use strict'
 
-    const args = process.argv.slice(2)
     globalThis.env = {
-        debugMode: args.some(arg => /^--?debug(?:-?mode)?$/.test(arg)),
+        args: process.argv.slice(2),
         devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname)
     }
+    env.debugMode = env.args.some(arg => /^--?debug(?:-?mode)?$/.test(arg))
 
     // Import LIBS
     const compile = require(`./lib/compile${ env.devMode ? '' : '.min' }.js`),
@@ -31,7 +31,7 @@
     }
 
     // Exec CMD arg if passed
-    for (const arg of args) {
+    for (const arg of env.args) {
         if (settings.controls.init.regex.test(arg)) return settings.initConfigFile()
         else if (settings.controls.help.regex.test(arg)) return log.help()
         else if (settings.controls.version.regex.test(arg)) return log.version()
@@ -39,7 +39,7 @@
 
     // Init I/O args
     const [inputArg = '', outputArg = ''] = // default to empty strings for error-less handling
-        args // exclude executable and script paths
+        env.args // exclude executable and script paths
             .filter(arg => !arg.startsWith('-')) // exclude flags
             .map(arg => arg.replace(/^\/*/, '')) // clean leading slashes to avoid parsing system root
 

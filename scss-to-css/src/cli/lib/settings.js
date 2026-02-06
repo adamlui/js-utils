@@ -66,7 +66,7 @@ module.exports = {
         log.tip(`${cli.msgs.tip_cliArgsPrioritized}.`)
     },
 
-    load({ args = process.argv.slice(2), ctrlKeys = Object.keys(this.controls) } = {}) {
+    load({ ctrlKeys = Object.keys(this.controls) } = {}) {
 
         // Init defaults
         ctrlKeys.forEach(key => {
@@ -76,7 +76,7 @@ module.exports = {
 
         // Load from config file
         let configPath
-        const configArg = args.find(arg => this.controls.config.regex.test(arg))
+        const configArg = env.args.find(arg => this.controls.config.regex.test(arg))
         if (configArg) { // resolve input path, then validate
             if (!/=/.test(configArg))
                 log.errorAndExit(`[${configArg}] ${cli.msgs.error_mustIncludePath}`)
@@ -99,7 +99,7 @@ module.exports = {
                 log.configURLandExit(`${cli.msgs.error_failedToLoadConfigFile}:`, configPath, `\n${err.message}`) }
 
         // Load from CLI args (overriding config file)
-        args.forEach(arg => {
+        env.args.forEach(arg => {
             if (/^[^-]|--?(?:config|debug)/.test(arg)) return
 
             const ctrlKey = ctrlKeys.find(key => this.controls[key]?.regex?.test(arg))

@@ -3,11 +3,11 @@
 (async () => {
     'use strict'
 
-    const args = process.argv.slice(2)
     globalThis.env = {
-        debugMode: args.some(arg => /^--?debug(?:-?mode)?$/.test(arg)),
+        args: process.argv.slice(2),
         devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname)
     }
+    env.debugMode = env.args.some(arg => /^--?debug(?:-?mode)?$/.test(arg))
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
@@ -23,7 +23,7 @@
 
     // Process ARGS
     const validIPs = []
-    for (const arg of args) {
+    for (const arg of env.args) {
         const isInitCmd = settings.controls.init.regex.test(arg)
         if (isInitCmd) return settings.initConfigFile()
         else if (settings.controls.help.regex.test(arg)) return log.help()

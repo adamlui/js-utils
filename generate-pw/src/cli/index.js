@@ -3,11 +3,11 @@
 (async () => {
     'use strict'
 
-    const args = process.argv.slice(2)
     globalThis.env = {
-        debugMode: args.some(arg => /^--?debug(?:-?mode)?$/.test(arg)),
+        args: process.argv.slice(2),
         devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname)
     }
+    env.debugMode = env.args.some(arg => /^--?debug(?:-?mode)?$/.test(arg))
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
@@ -29,7 +29,7 @@
     }
 
     // Exec CMD arg if passed
-    for (const arg of args) {
+    for (const arg of env.args) {
         if (settings.controls.init.regex.test(arg)) return settings.initConfigFile()
         else if (settings.controls.help.regex.test(arg)) return log.help()
         else if (settings.controls.version.regex.test(arg)) return log.version()
