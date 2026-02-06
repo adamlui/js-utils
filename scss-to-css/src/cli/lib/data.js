@@ -1,8 +1,8 @@
 module.exports = {
 
     atomicWrite(filePath, data, encoding = 'utf8') { // to prevent TOCTOU
-        const path = require('path'),
-              fs = require('fs'),
+        const fs = require('fs'),
+              path = require('path'),
               tmpPath = path.join(path.dirname(filePath), `.${path.basename(filePath)}.tmp`)
         fs.writeFileSync(tmpPath, data, encoding) ; fs.renameSync(tmpPath, filePath)
     },
