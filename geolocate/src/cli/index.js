@@ -29,8 +29,8 @@
         if (isInitCmd) return settings.initConfigFile()
         else if (settings.controls.help.regex.test(arg)) return log.help()
         else if (settings.controls.version.regex.test(arg)) return log.version()
-        else if (!arg.startsWith('-') && !isInitCmd) // load IPs from leading-dash-less arg(s)
-            validIPs.push(arg.replace(/[[\]]/g, '')) // strip '[]' in case copied from docs
+        else if (!arg.startsWith('-') && !isInitCmd) // load IP from leading-dash-less arg
+            validIPs.push(arg.replace(/[[\]]/g, '')) // strip outer '[]' in case copied from docs
     }
 
     // Log/copy GEO result(s)
