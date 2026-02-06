@@ -30,7 +30,7 @@ module.exports = {
             const data = require(`./data${ env.devMode ? '' : '.min' }.js`),
                   pkg = require(`./pkg${ env.devMode ? '' : '.min' }.js`),
                   pkgName = cli.name.split('/')[1],
-                  pkgVer = pkg.getVer('global') || 'latest',
+                  pkgVer = pkg.getVer('local') || 'latest',
                   jsdURL = `${cli.urls.jsdelivr}@${pkgName}-${pkgVer}/${pkgName}/${filename}`
 
             log.data(`${cli.msgs.info_fetchingRemoteConfigFrom} ${jsdURL}...`)
