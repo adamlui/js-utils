@@ -70,7 +70,7 @@ module.exports = {
         log.tip(`${cli.msgs.tip_cliArgsPrioritized}.`)
     },
 
-    load({ ctrlKeys = Object.keys(this.controls) } = {}) {
+    load(ctrlKeys = Object.keys(this.controls)) {
 
         // Init defaults
         ctrlKeys.forEach(key => {
