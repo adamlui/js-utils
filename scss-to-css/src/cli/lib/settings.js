@@ -39,13 +39,12 @@ module.exports = {
     },
 
     async initConfigFile(filename = this.configFilename) {
-        const targetPath = path.resolve(process.cwd(), filename)
-        if (fs.existsSync(targetPath))
-            return log.warn(`${cli.msgs.warn_configFileExists}:`, targetPath)
-        const srcPath = path.resolve(__dirname, `../../${ env.devMode ? '../' : './data/' }${filename}`)
+        const paths = { target: path.resolve(process.cwd(), filename) }
 
-        if (fs.existsSync(srcPath)) // use found template
-            fs.copyFileSync(srcPath, targetPath)
+        if (fs.existsSync(paths.target)) // use existing config file
+            return log.warn(`${cli.msgs.warn_configFileExists}:`, paths.target)
+        if (fs.existsSync(paths.src = path.resolve(__dirname, `../../${ env.devMode ? '../' : './data/' }${filename}`)))
+            fs.copyFileSync(paths.src, paths.target) // use found template
 
         else { // use jsDelivr copy
             const data = require(`./data${ env.devMode ? '' : '.min' }.js`),
@@ -56,13 +55,13 @@ module.exports = {
             log.data(`${cli.msgs.info_fetchingRemoteConfigFrom} ${jsdURL}...`)
             try {
                 const resp = await data.fetch(jsdURL)
-                if (resp.ok) data.atomicWrite(targetPath, await resp.text())
+                if (resp.ok) data.atomicWrite(paths.target, await resp.text())
                 else return log.warn(`${cli.msgs.warn_remoteConfigNotFound}: ${jsdURL} (${resp.status})`)
             } catch (err) {
                 return log.warn(`${cli.msgs.warn_remoteConfigFailed}: ${jsdURL} ${err.message}`) }
         }
 
-        log.success(`${cli.msgs.info_configFileCreated}: ${targetPath}\n`)
+        log.success(`${cli.msgs.info_configFileCreated}: ${paths.target}\n`)
         log.tip(`${cli.msgs.tip_editToSetDefaults}.`)
         log.tip(`${cli.msgs.tip_cliArgsPrioritized}.`)
     },
