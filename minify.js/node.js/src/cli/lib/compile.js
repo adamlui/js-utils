@@ -2,9 +2,9 @@ const log = require(`./log${ env.devMode ? '' : '.min' }.js`)
 
 module.exports = {
     js({ srcFiles, inputPath, inputArg, outputArg }) {
-        const { minify } = require(`../../minify${ env.devMode ? '' : '.min' }.js`),
-                fs = require('fs'),
-                path = require('path')
+        const fs = require('fs'),
+            { minify } = require(`../../minify${ env.devMode ? '' : '.min' }.js`),
+              path = require('path')
 
         // Build array of minification data
         const failedPaths = [] ; let minifyData = []
