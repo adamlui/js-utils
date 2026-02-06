@@ -51,7 +51,10 @@ module.exports = {
 
         else { // use jsDelivr copy
             const data = require(`./data${ env.devMode ? '' : '.min' }.js`),
-                  jsdURL = `${cli.urls.jsdelivr}/${filename}`
+                  pkg = require(`./pkg${ env.devMode ? '' : '.min' }.js`),
+                  pkgVer = pkg.getVer('global') || 'latest',
+                  jsdURL = `${cli.urls.jsdelivr}@v${pkgVer}/${filename}`
+
             log.data(`${cli.msgs.info_fetchingRemoteConfigFrom} ${jsdURL}...`)
             try {
                 const resp = await data.fetch(jsdURL)
