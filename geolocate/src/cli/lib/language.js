@@ -77,7 +77,9 @@ module.exports = {
             }
         else { // macOS/Linux
             const pe = process.env
-            return (pe.LANG || pe.LANGUAGE || pe.LC_ALL || pe.LC_MESSAGES || pe.LC_NAME || 'en').split('.')[0]
+            return (pe.LANG || pe.LANGUAGE || pe.LC_ALL || pe.LC_MESSAGES || pe.LC_NAME || 'en')
+                .split('.')[0] // strip encoding e.g. .UTF-8
+                .split('_')[0] // strip region
         }
     }
 }
