@@ -153,7 +153,7 @@ Opzioni booleane:
  -q, --quiet                              Elimina tutta la registrazione tranne gli errori.
 
 Opzioni dei parametri:
- --ignores="dir/,file1.scss,file2.scss"   File/cartelle da escludere dalla compilazione.
+ --ignores="dir/,file1.scss,file2.sass"   File/cartelle da escludere dalla compilazione.
  --comment="comment"                      Anteponi il commento dell'intestazione al CSS compilato. Separare per riga utilizzando '\n'.
  --ui-lang="code"                         Codice ISO 639-1 della lingua in cui visualizzare l'interfaccia utente.
  --config="path/to/file"                  Carica il file di configurazione personalizzato.
@@ -280,7 +280,7 @@ findSCSS() » Search complete! 2 files found.
 findSCSS() » Check returned array.
 [
   'E:\\js\\utils\\scss-to-css\assets\\scss\\foo.scss',
-  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.scss'
+  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.sass'
 ]
 */
 ```

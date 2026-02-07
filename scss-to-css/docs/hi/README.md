@@ -152,7 +152,7 @@ $ scss-to-css input_folder output_folder
  -q, --quiet                              त्रुटियों को छोड़कर सभी लॉगिंग को रोकें।
 
 पैरामीटर विकल्प:
- --ignores="dir/,file1.scss,file2.scss"   कंपाइलेशन से बाहर रखे जाने वाली फ़ाइलें/डायरेक्टरी।
+ --ignores="dir/,file1.scss,file2.sass"   कंपाइलेशन से बाहर रखे जाने वाली फ़ाइलें/डायरेक्टरी।
  --comment="comment"                      संकलित CSS में हेडर टिप्पणी जोड़ें। '\n' का उपयोग करके लाइन से अलग करें।
  --ui-lang="code"                         UI दिखाने के लिए भाषा का ISO 639-1 कोड।
  --config="path/to/file"                  कस्टम कॉन्फ़िग फ़ाइल लोड करें।
@@ -279,7 +279,7 @@ findSCSS() » Search complete! 2 files found.
 findSCSS() » Check returned array.
 [
   'E:\\js\\utils\\scss-to-css\assets\\scss\\foo.scss',
-  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.scss'
+  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.sass'
 ]
 */
 ```

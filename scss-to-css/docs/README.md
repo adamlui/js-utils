@@ -158,7 +158,7 @@ Boolean options:
  -q, --quiet                 Suppress all logging except errors.
 
 Parameter options:
- --ignores="dir/,file1.scss,file2.scss"   Files/directories to exclude from
+ --ignores="dir/,file1.scss,file2.sass"   Files/directories to exclude from
                                           compilation.
  --comment="comment"                      Prepend header comment to
                                           compiled CSS. Separate by
@@ -288,7 +288,7 @@ findSCSS() » Search complete! 2 files found.
 findSCSS() » Check returned array.
 [
   'E:\\js\\utils\\scss-to-css\assets\\scss\\foo.scss',
-  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.scss'
+  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.sass'
 ]
 */
 ```

@@ -153,7 +153,7 @@ $ scss-to-css input_folder output_folder
  -q, --quiet                              ত্রুটি ছাড়া সব লগিং দমন করুন।
 
 প্যারামিটার অপশনসমূহ:
- --ignores="dir/,file1.scss,file2.scss"   কম্পাইলেশন থেকে বাদ দেওয়ার জন্য ফাইল/ডিরেক্টরি।
+ --ignores="dir/,file1.scss,file2.sass"   কম্পাইলেশন থেকে বাদ দেওয়ার জন্য ফাইল/ডিরেক্টরি।
  --comment="comment"                      কম্পাইল করা CSS-এ হেডার কমেন্ট প্রিপেন্ড করুন। '\n' ব্যবহার করে লাইন দ্বারা আলাদা করুন।
  --ui-lang="code"                         UI প্রদর্শনের জন্য ISO 639-1 ভাষার কোড।
  --config="path/to/file"                  কাস্টম কনফিগারেশন ফাইল লোড করুন।
@@ -280,7 +280,7 @@ findSCSS() » Search complete! 2 files found.
 findSCSS() » Check returned array.
 [
   'E:\\js\\utils\\scss-to-css\assets\\scss\\foo.scss',
-  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.scss'
+  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.sass'
 ]
 */
 ```

@@ -153,7 +153,7 @@ $ scss-to-css input_folder output_folder
  -q, --quiet                              エラーを除くすべてのログを抑制します。
 
 パラメータオプション：
- --ignores="dir/,file1.scss,file2.scss"   コンパイルから除外するファイル／ディレクトリ。
+ --ignores="dir/,file1.scss,file2.sass"   コンパイルから除外するファイル／ディレクトリ。
  --comment="comment"                      コンパイルされた CSS の先頭にヘッダー コメントを追加します。'\n' を使用して行で区切ります。
  --ui-lang="code"                         UI を表示する言語の ISO 639-1 コード。
  --config="path/to/file"                  カスタム設定ファイルを読み込む。
@@ -280,7 +280,7 @@ findSCSS() » Search complete! 2 files found.
 findSCSS() » Check returned array.
 [
   'E:\\js\\utils\\scss-to-css\assets\\scss\\foo.scss',
-  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.scss'
+  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.sass'
 ]
 */
 ```

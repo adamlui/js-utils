@@ -153,7 +153,7 @@ $ scss-to-css input_folder output_folder
  -q, --quiet                              त्रुटी वगळता सर्व लॉगिंग दाबा.
 
 पॅरामीटर पर्याय:
- --ignores="dir/,file1.scss,file2.scss"   संकलनातून वगळायच्या फाइल्स/डिरेक्टरीज.
+ --ignores="dir/,file1.scss,file2.sass"   संकलनातून वगळायच्या फाइल्स/डिरेक्टरीज.
  --comment="comment"                      संकलित CSS वर शीर्षलेख टिप्पणी प्रीपेंड करा. '\n' वापरून ओळीनुसार विभक्त करा.
  --ui-lang="code"                         UI प्रदर्शित करण्यासाठी ISO 639-1 भाषेचा कोड.
  --config="path/to/file"                  सानुकूल कॉन्फिगरेशन फाइल लोड करा.
@@ -279,7 +279,7 @@ findSCSS() » Search complete! 2 files found.
 findSCSS() » Check returned array.
 [
   'E:\\js\\utils\\scss-to-css\assets\\scss\\foo.scss',
-  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.scss'
+  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.sass'
 ]
 */
 ```

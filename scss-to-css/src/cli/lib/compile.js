@@ -68,7 +68,8 @@ module.exports = {
                     const outputPath = path.resolve(process.cwd(), outputArg || 'css'),
                           relativeDir = path.dirname(relPath)
                     outputDir = relativeDir != '.' ? path.join(outputPath, relativeDir) : outputPath
-                    outputFilename = `${path.basename(srcPath, '.scss')}${ cli.config.noMinify ? '' : '.min' }.css`
+                    outputFilename =
+                        `${path.basename(srcPath, path.extname(srcPath))}${ cli.config.noMinify ? '' : '.min' }.css`
                 } else {
                     outputDir = path.join(
                         path.dirname(srcPath), // path of file to be minified
@@ -76,9 +77,9 @@ module.exports = {
                             : outputArg || 'css' // or path from folder outputArg or css/ if no outputArg passed
                     )
                     outputFilename = `${
-                        outputArg.endsWith('.css') && inputArg.endsWith('.scss')
+                        outputArg.endsWith('.css') && /s[ac]ss$/.test(inputArg)
                             ? path.basename(outputArg).replace(/(\.min)?\.css$/, '')
-                                : path.basename(srcPath, '.scss')
+                                : path.basename(srcPath, path.extname(srcPath))
                     }.min.css`
                 }                const outputPath = path.join(outputDir, outputFilename)
                 fs.mkdirSync(outputDir, { recursive: true })

@@ -55,7 +55,7 @@ module.exports = {
             ],
             params: [
                 `\n${this.colors.bw}o ${cli.msgs.helpSection_params}:${this.colors.nc}`,
-                `--ignores="dir/,file1.scss,file2.scss"   ${cli.msgs.optionDesc_ignores}.`,
+                `--ignores="dir/,file1.scss,file2.sass"   ${cli.msgs.optionDesc_ignores}.`,
                 `--comment="comment"                      ${cli.msgs.optionDesc_commentMain}. ${
                                                             cli.msgs.optionDesc_commentExtra}.`,
                 ` --ui-lang="code"                        ${cli.msgs.optionDesc_uiLang}.`,

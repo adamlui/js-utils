@@ -153,7 +153,7 @@ Booleaanse opties:
  -q, --quiet                              Onderdruk alle logboekregistratie, behalve fouten.
 
 Parameteropties:
- --ignores="dir/,file1.scss,file2.scss"   Bestanden/mappen die moeten worden uitgesloten van de compilatie.
+ --ignores="dir/,file1.scss,file2.sass"   Bestanden/mappen die moeten worden uitgesloten van de compilatie.
  --comment="comment"                      Voeg headercommentaar toe aan gecompileerde CSS. Scheid per regel met '\n'.
  --ui-lang="code"                         ISO 639-1-code voor de taal waarin de gebruikersinterface moet worden weergegeven.
  --config="path/to/file"                  Laad een aangepast configuratiebestand.
@@ -280,7 +280,7 @@ findSCSS() » Search complete! 2 files found.
 findSCSS() » Check returned array.
 [
   'E:\\js\\utils\\scss-to-css\assets\\scss\\foo.scss',
-  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.scss'
+  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.sass'
 ]
 */
 ```

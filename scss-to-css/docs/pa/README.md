@@ -153,7 +153,7 @@ $ scss-to-css input_folder output_folder
  -q, --quiet                              ਗਲਤੀਆਂ ਨੂੰ ਛੱਡ ਕੇ ਸਾਰੇ ਲੌਗਿੰਗ ਨੂੰ ਦਬਾਓ।
 
 ਪੈਰਾਮੀਟਰ ਵਿਕਲਪ:
- --ignores="dir/,file1.scss,file2.scss"   ਸੰਕਲਨ ਤੋਂ ਬਾਹਰ ਰੱਖਣ ਲਈ ਫਾਈਲਾਂ/ਡਾਇਰੈਕਟਰ।
+ --ignores="dir/,file1.scss,file2.sass"   ਸੰਕਲਨ ਤੋਂ ਬਾਹਰ ਰੱਖਣ ਲਈ ਫਾਈਲਾਂ/ਡਾਇਰੈਕਟਰ।
  --comment="comment"                      ਕੰਪਾਇਲ ਕੀਤੇ CSS ਲਈ ਸਿਰਲੇਖ ਟਿੱਪਣੀ ਨੂੰ ਅੱਗੇ ਰੱਖੋ। '\n' ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਲਾਈਨ ਦੁਆਰਾ ਵੱਖ ਕਰੋ।
  --ui-lang="code"                         UI ਪ੍ਰਦਰਸ਼ਿਤ ਕਰਨ ਲਈ ISO 639-1 ਭਾਸ਼ਾ ਕੋਡ।
  --config="path/to/file"                  ਕਸਟਮ ਕੌਂਫਿਗ ਫਾਈਲ ਲੋਡ ਕਰੋ।
@@ -280,7 +280,7 @@ findSCSS() » Search complete! 2 files found.
 findSCSS() » Check returned array.
 [
   'E:\\js\\utils\\scss-to-css\assets\\scss\\foo.scss',
-  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.scss'
+  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.sass'
 ]
 */
 ```

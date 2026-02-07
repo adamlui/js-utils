@@ -153,7 +153,7 @@ Opções booleanas:
  -q, --quiet                              Suprima todos os registros, exceto erros.
 
 Opções de parâmetros:
- --ignores="dir/,file1.scss,file2.scss"   Ficheiros/diretórios a eliminar da compilação.
+ --ignores="dir/,file1.scss,file2.sass"   Ficheiros/diretórios a eliminar da compilação.
  --comment="comment"                      Anexe o comentário do cabeçalho ao CSS compilado. Separe por linha usando '\n'.
  --ui-lang="code"                         Código ISO 639-1 do idioma para visualizar a interface do utilizador.
  --config="path/to/file"                  Carregar ficheiro de configuração personalizado.
@@ -280,7 +280,7 @@ findSCSS() » Search complete! 2 files found.
 findSCSS() » Check returned array.
 [
   'E:\\js\\utils\\scss-to-css\assets\\scss\\foo.scss',
-  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.scss'
+  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.sass'
 ]
 */
 ```

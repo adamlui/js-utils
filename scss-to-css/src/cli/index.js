@@ -57,9 +57,9 @@
         } else inputPath = scssInputPath
     }
 
-    // Find all eligible SCSS files or arg-passed file
+    // Find all eligible source files or arg-passed file
     settings.load()
-    const srcFiles = inputPath.endsWith('.scss') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
+    const srcFiles = /s[ac]ss$/.test(inputPath) && !fs.statSync(inputPath).isDirectory() ? [inputPath]
         : findSCSS(inputPath, {
             recursive: !cli.config.noRecursion,
             verbose: !cli.config.quietMode,

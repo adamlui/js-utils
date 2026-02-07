@@ -153,7 +153,7 @@ Options booléennes:
  -q, --quiet                              Supprime toute la journalisation, à l'exception des erreurs.
 
 Options des paramètres:
- --ignores="dir/,file1.scss,file2.scss"   Fichiers/répertoires à exclure de la compilation.
+ --ignores="dir/,file1.scss,file2.sass"   Fichiers/répertoires à exclure de la compilation.
  --comment="comment"                      Ajoutez le commentaire d’en-tête au CSS compilé. Séparez par ligne en utilisant '\n'.
  --ui-lang="code"                         Code ISO 639-1 de la langue dans laquelle afficher l'interface utilisateur.
  --config="path/to/file"                  Charger le fichier de configuration personnalisé.
@@ -280,7 +280,7 @@ findSCSS() » Search complete! 2 files found.
 findSCSS() » Check returned array.
 [
   'E:\\js\\utils\\scss-to-css\assets\\scss\\foo.scss',
-  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.scss'
+  'E:\\js\\utils\\scss-to-css\assets\\scss\\bar.sass'
 ]
 */
 ```

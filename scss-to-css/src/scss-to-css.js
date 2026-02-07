@@ -44,10 +44,10 @@ function findSCSS(searchDir, options = {}) {
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
     if (options.ignoreFiles) options.ignores = [...options.ignores, ...options.ignoreFiles] // for bw compat
 
-    // Search for SCSS
+    // Search for files
     const dirFiles = fs.readdirSync(searchDir), scssFiles = []
     if (options.verbose && !options.isRecursing)
-        log.info('Searching for SCSS files...')
+        log.info('Searching for files...')
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file)
         const shouldIgnore = options.ignores.some(pattern =>
@@ -59,10 +59,10 @@ function findSCSS(searchDir, options = {}) {
         } else if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
             && options.recursive // only proceed if recursion enabled
             && (options.dotFolders || !file.startsWith('.')) // exclude dotfolders if prohibited
-        ) scssFiles.push( // recursively find SCSS in eligible dir
+        ) scssFiles.push( // recursively find files in eligible dir
             ...findSCSS(filePath, { ...options, isRecursing: true }))
-        else if (file.endsWith('.scss')) // SCSS file found
-            scssFiles.push(filePath) // store eligible SCSS file for returning
+        else if (/s[ac]ss$/.test(file)) // .s[ac]ss file found
+            scssFiles.push(filePath) // store for returning
     })
 
     // Log/return final results
@@ -111,7 +111,7 @@ function compile(input, options = {}) {
         charset: false // prevent UTF-8 BOM in output
     }
     if (fs.existsSync(input)) { // compile based on path arg
-        if (input.endsWith('.scss') && fs.statSync(input).isFile()) { // file path passed
+        if (/s[ac]ss$/.test(input) && fs.statSync(input).isFile()) { // file path passed
             if (options.verbose) log.info(`** Compiling ${input}...`)
             try { // to compile file passed
                 const compileResult = sass.compile(input, compileOptions)
