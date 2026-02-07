@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Options" },
   "helpSection_params": { "message": "Options de paramètres" },
   "helpSection_cmds": { "message": "Commandes info" },
+  "optionDesc_uiLang": { "message": "Code de langue ISO 639-1 pour afficher l'interface utilisateur dans" },
   "inputPathDesc_main": { "message": "Chemin d'accès au fichier JavaScript ou au répertoire contenant les fichiers JavaScript à minifier" },
   "inputPathDesc_extra": { "message": "par rapport au répertoire de travail actuel" },
   "outputPathDesc_main": { "message": "Chemin d'accès au fichier ou au répertoire où les fichiers minifiés seront stockés" },

@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Лагічныя параметры" },
   "helpSection_params": { "message": "Параметры параметраў" },
   "helpSection_cmds": { "message": "ÐÐ°Ð¼Ð°Ð½Ð´Ñ" },
+  "optionDesc_uiLang": { "message": "Код мовы ISO 639-1 для адлюстравання карыстацкага інтэрфейсу ў" },
   "inputPathDesc_main": { "message": "Шлях да файла SCSS або каталога, які змяшчае файлы SCSS, якія трэба скампіляваць" },
   "inputPathDesc_extra": { "message": "адносна бягучага працоўнага каталога" },
   "outputPathDesc_main": { "message": "Шлях да файла або каталога, дзе будуць захоўвацца файлы CSS +" },

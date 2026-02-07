@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "पैरामीटर विकल्प" },
   "helpSection_flags": { "message": "बूलियन विकल्प" },
   "helpSection_cmds": { "message": "जानकारी कमांड" },
+  "optionDesc_uiLang": { "message": "यूआई प्रदर्शित करने के लिए भाषा का आईएसओ 639 -1 कोड" },
   "optionDesc_length": { "message": "N लंबाई का पासवर्ड जेनरेट करें" },
   "optionDesc_qty": { "message": "N पासवर्ड जनरेट करें" },
   "optionDesc_config": { "message": "कस्टम कॉन्फ़िगरेशन फ़ाइल लोड करें" },

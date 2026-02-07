@@ -155,6 +155,7 @@ $ scss-to-css input_folder output_folder
 參數選項：
  --ignores="dir/,file1.scss,file2.scss"   要從編譯中排除的檔案/目錄。
  --comment="comment"                      將標頭註釋新增到已編譯的 CSS 中。使用 '\n' 按行分隔。
+ --ui-lang="code"                         用於顯示使用者介面的語言的 ISO 639-1 代碼。
  --config="path/to/file"                  Load custom config file.
 
 訊息命令：

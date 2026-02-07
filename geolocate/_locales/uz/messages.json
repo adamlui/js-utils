@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Konfiguratsiya opsiyalari" },
   "helpSection_flags": { "message": "Konfiguratsiya parametrlari" },
   "helpSection_cmds": { "message": "Ma'lumot buyruqlari" },
+  "optionDesc_uiLang": { "message": "UI ni ko'rsatish uchun ISO 639-1 til kodi" },
   "optionDesc_config": { "message": "Maxsus konfiguratsiya faylini yuklash" },
   "optionDesc_quiet": { "message": "Xatolardan tashqari barcha jurnallarni bostirish" },
   "optionDesc_init": { "message": "Konfiguratsiya faylini yarating (loyiha ildizida)" },

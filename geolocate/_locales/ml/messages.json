@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "പാരാമീറ്റർ ഓപ്ഷനുകൾ" },
   "helpSection_flags": { "message": "കോൺഫിഗർ ഓപ്ഷനുകൾ" },
   "helpSection_cmds": { "message": "വിവര കമാന്‍ഡുകള്‍" },
+  "optionDesc_uiLang": { "message": "യുഐ പ്രദർശിപ്പിക്കുന്നതിനുള്ള ISO 639-1 ഭാഷാ കോഡ്" },
   "optionDesc_config": { "message": "ഇഷ്ടാനുസൃത കോൺഫിഗറേഷൻ ഫയൽ ലോഡ് ചെയ്യുക" },
   "optionDesc_quiet": { "message": "പിശകുകൾ ഒഴികെ എല്ലാ ലോഗിംഗും അടിച്ചമർത്തുക" },
   "optionDesc_init": { "message": "കോൺഫിഗർ ഫയൽ സൃഷ്ടിക്കുക (പ്രോജക്റ്റ് റൂട്ടിൽ)" },

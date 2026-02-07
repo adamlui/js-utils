@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "부울 옵션" },
   "helpSection_params": { "message": "매개 변수 옵션" },
   "helpSection_cmds": { "message": "명령어" },
+  "optionDesc_uiLang": { "message": "UI를 표시할 언어의 ISO 639-1 코드" },
   "inputPathDesc_main": { "message": "컴파일할 SCSS 파일이 포함된 SCSS 파일 또는 디렉토리의 경로" },
   "inputPathDesc_extra": { "message": "현재 작업 디렉토리를 기준으로 함" },
   "outputPathDesc_main": { "message": "CSS + 소스맵 파일이 저장될 파일 또는 디렉터리 경로" },

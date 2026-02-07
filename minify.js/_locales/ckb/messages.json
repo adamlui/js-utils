@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "هه  ڵبژاردنه  کانی بۆۆلین" },
   "helpSection_params": { "message": "هەڵبژاردنی پارامەتری" },
   "helpSection_cmds": { "message": "فەرمانەکانی زانیاری" },
+  "optionDesc_uiLang": { "message": "ئایزۆ 639-1 کۆدی زمان بۆ پیشاندانی UI" },
   "inputPathDesc_main": { "message": "پەڕگەی جاڤاسکریپت یان پەڕگەی جاڤاسکریپت کە پەڕگەی جاڤاسکریپتی تێدایە" },
   "inputPathDesc_extra": { "message": "به ڕێوه به رایه تی ئێستای كاروباری" },
   "outputPathDesc_main": { "message": "پەڕگە یان ئەو شوێنەی کە پەڕگە پاشەکەوتکراوەکان هەڵدەگیرێن" },

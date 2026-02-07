@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Exemplaria Parameter" },
   "helpSection_flags": { "message": "UNIVERSITATIS OMNIBE" },
   "helpSection_cmds": { "message": "Info commandes" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 Code of linguae ad exponibus UI in" },
   "optionDesc_length": { "message": "Generatione password(s) of n length" },
   "optionDesc_qty": { "message": "Generatione n password(s)" },
   "optionDesc_config": { "message": "Mutare configuendum" },

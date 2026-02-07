@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "خيارات المعلمة" },
   "helpSection_flags": { "message": "خيارات الإعداد" },
   "helpSection_cmds": { "message": "أوامر المعلومات" },
+  "optionDesc_uiLang": { "message": "رمز لغة ISO 639-1 لعرض واجهة المستخدم في" },
   "optionDesc_config": { "message": "تحميل ملف التكوين المخصص" },
   "optionDesc_quiet": { "message": "قم بإيقاف جميع عمليات التسجيل باستثناء الأخطاء" },
   "optionDesc_init": { "message": "إنشاء ملف تكوين (في جذر المشروع)" },

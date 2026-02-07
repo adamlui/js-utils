@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "ಬೂಲಿಯನ್ ಆಯ್ಕೆಗಳು" },
   "helpSection_params": { "message": "ಪ್ಯಾರಾಮೀಟರ್ ಆಯ್ಕೆಗಳು" },
   "helpSection_cmds": { "message": "ಮಾಹಿತಿ ಆಜ್ಞೆಗಳು" },
+  "optionDesc_uiLang": { "message": "UI ಅನ್ನು ಪ್ರದರ್ಶಿಸಲು ISO 639-1 ಭಾಷೆಯ ಸಂಕೇತ" },
   "inputPathDesc_main": { "message": "ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಫೈಲ್ ಗೆ ಮಾರ್ಗ ಅಥವಾ ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಫೈಲ್ ಗಳನ್ನು ಒಳಗೊಂಡಿರುವ ಡೈರೆಕ್ಟರಿಯನ್ನು ಚಿಕ್ಕದಾಗಿಸಬೇಕು" },
   "inputPathDesc_extra": { "message": "ಪ್ರಸ್ತುತ ವರ್ಕಿಂಗ್ ಡೈರೆಕ್ಟರಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ" },
   "outputPathDesc_main": { "message": "ಫೈಲ್ ಗೆ ಮಾರ್ಗ ಅಥವಾ ಚಿಕ್ಕದಾದ ಫೈಲ್ ಗಳನ್ನು ಸಂಗ್ರಹಿಸುವ ಡೈರೆಕ್ಟರಿ" },

@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Boolean параметрлери" },
   "helpSection_params": { "message": "Параметр параметрлери" },
   "helpSection_cmds": { "message": "Маалымат буйруктары" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 тил коду UI көрсөтүү үчүн" },
   "inputPathDesc_main": { "message": "JavaScript файлына же каталогуна JavaScript файлдарын камтыган жол minified болот" },
   "inputPathDesc_extra": { "message": "учурдагы иштөө каталогуна карата" },
   "outputPathDesc_main": { "message": "Файлга же каталогго өтүү жолу, анда минификацияланган файлдар сакталат" },

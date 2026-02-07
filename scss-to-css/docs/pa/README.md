@@ -155,6 +155,7 @@ $ scss-to-css input_folder output_folder
 ਪੈਰਾਮੀਟਰ ਵਿਕਲਪ:
  --ignores="dir/,file1.scss,file2.scss"   ਸੰਕਲਨ ਤੋਂ ਬਾਹਰ ਰੱਖਣ ਲਈ ਫਾਈਲਾਂ/ਡਾਇਰੈਕਟਰ।
  --comment="comment"                      ਕੰਪਾਇਲ ਕੀਤੇ CSS ਲਈ ਸਿਰਲੇਖ ਟਿੱਪਣੀ ਨੂੰ ਅੱਗੇ ਰੱਖੋ। '\n' ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਲਾਈਨ ਦੁਆਰਾ ਵੱਖ ਕਰੋ।
+ --ui-lang="code"                         UI ਪ੍ਰਦਰਸ਼ਿਤ ਕਰਨ ਲਈ ISO 639-1 ਭਾਸ਼ਾ ਕੋਡ।
  --config="path/to/file"                  ਕਸਟਮ ਕੌਂਫਿਗ ਫਾਈਲ ਲੋਡ ਕਰੋ।
 
 ਕਮਾਂਡ:

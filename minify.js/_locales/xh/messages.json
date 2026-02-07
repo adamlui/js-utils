@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Izinto onokuzikhetha ze-boolean" },
   "helpSection_params": { "message": "Iiparamitha onokukhetha kuzo" },
   "helpSection_cmds": { "message": "Imiyalelo yenkcazelo" },
+  "optionDesc_uiLang": { "message": "Ikhowudi yolwimi ye-ISO 639-1 yokubonisa i-UI" },
   "inputPathDesc_main": { "message": "Indlela eya kwifayile yeJavaScript okanye kulawulo oluneefayile zeJavaScript eziza kulungiswa" },
   "inputPathDesc_extra": { "message": "ngokunxulumene neefayili zokusebenza ezikhoyo ngoku" },
   "outputPathDesc_main": { "message": "Indlela eya kwifayile okanye kulawulo apho iifayile ezincitshisiweyo ziza kugcinwa khona" },

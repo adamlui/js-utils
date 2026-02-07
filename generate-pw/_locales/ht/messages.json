@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Opsyon paramèt" },
   "helpSection_flags": { "message": "Opsyon Boolean" },
   "helpSection_cmds": { "message": "Kòmandman Enfòmasyon" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kòd langaj pou montre UI nan" },
   "optionDesc_length": { "message": "Jenere modpas(yo) longè n" },
   "optionDesc_qty": { "message": "Jenere yon modpas(yo)" },
   "optionDesc_config": { "message": "Chaj dosye konfigirasyon koutim" },

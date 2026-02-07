@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "የፓራሜትር አማራጮች" },
   "helpSection_flags": { "message": "Boolean አማራጮች" },
   "helpSection_cmds": { "message": "መረጃ ትዕዛዞች" },
+  "optionDesc_uiLang": { "message": "የ ISO 639-1 የቋንቋ ኮድ UI ን በ ውስጥ ለማሳየት" },
   "optionDesc_qty": { "message": "N የአይፒ አድራሻ(es) ያመነጩ" },
   "optionDesc_config": { "message": "ብጁ ውቅር ፋይል ጫን" },
   "optionDesc_ipv6": { "message": "IPv6 አድራሻ ያመነጩ" },

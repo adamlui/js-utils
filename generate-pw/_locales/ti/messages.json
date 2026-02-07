@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "ኣማራጺታት ፓራሜትር" },
   "helpSection_flags": { "message": "ናይ ቡሊያን ኣማራጺታት" },
   "helpSection_cmds": { "message": "መምርሒታት ሓበሬታ" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 ኮድ ቋንቋ ኣብ" },
   "optionDesc_length": { "message": "ናይ N ርዝመት ናይ ቃል-ምስጢር(ታት) ምፍጣር" },
   "optionDesc_qty": { "message": "ናይ ቃል-ምስጢር(ታት) ምፍጣር" },
   "optionDesc_config": { "message": "ብውልቂ እተዳለወ ፋይል ኣንብር" },

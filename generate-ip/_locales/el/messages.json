@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Επιλογές παραμέτρων" },
   "helpSection_flags": { "message": "Δυαδικές επιλογές" },
   "helpSection_cmds": { "message": "Εντολές πληροφοριών" },
+  "optionDesc_uiLang": { "message": "Κωδικός γλώσσας ISO 639-1 για εμφάνιση διεπαφής χρήστη σε" },
   "optionDesc_qty": { "message": "Δημιουργία n διευθύνσεων IP" },
   "optionDesc_config": { "message": "Φόρτωση προσαρμοσμένου αρχείου διαμόρφωσης" },
   "optionDesc_ipv6": { "message": "Δημιουργία διεύθυνσης IPv6" },

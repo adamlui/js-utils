@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Zosankha za Parameter" },
   "helpSection_flags": { "message": "Zosankha za Boolean" },
   "helpSection_cmds": { "message": "ZOKHUDZ" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 malamulo chilankhulo kusonyeza UI mu" },
   "optionDesc_qty": { "message": "Pangani adilesi ya IP (es)" },
   "optionDesc_config": { "message": "Katundu mwambo config wapamwamba" },
   "optionDesc_ipv6": { "message": "Pangani adilesi ya IPv6" },

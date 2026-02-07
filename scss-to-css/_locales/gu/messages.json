@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "બુલિયન વિકલ્પો" },
   "helpSection_params": { "message": "પરિમાણ વિકલ્પો" },
   "helpSection_cmds": { "message": "આદેશોcommand for" },
+  "optionDesc_uiLang": { "message": "UI પ્રદર્શિત કરવા માટે ISO 639-1 કોડ ઓફ લેંગ્વેજ" },
   "inputPathDesc_main": { "message": "સંકલિત કરવા માટે SCSS ફાઇલો ધરાવતી SCSS ફાઇલ અથવા ડિરેક્ટરીનો પાથ" },
   "inputPathDesc_extra": { "message": "વર્તમાન કાર્યકારી ડિરેક્ટરી સંબંધિત" },
   "outputPathDesc_main": { "message": "ફાઇલ અથવા ડિરેક્ટરીનો પાથ જ્યાં CSS + સ્રોતમેપ ફાઇલો સંગ્રહિત કરવામાં આવશે" },

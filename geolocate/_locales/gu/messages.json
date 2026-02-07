@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "પરિમાણ વિકલ્પો" },
   "helpSection_flags": { "message": "રૂપરેખાંકન વિકલ્પો" },
   "helpSection_cmds": { "message": "માહિતી આદેશો" },
+  "optionDesc_uiLang": { "message": "UI પ્રદર્શિત કરવા માટે ISO 639-1 કોડ ઓફ લેંગ્વેજ" },
   "optionDesc_config": { "message": "કસ્ટમ રૂપરેખાંકન ફાઇલ લોડ કરો" },
   "optionDesc_quiet": { "message": "ભૂલો સિવાય તમામ લોગીંગને દબાવો" },
   "optionDesc_init": { "message": "રૂપરેખાંકન ફાઇલ બનાવો (પ્રોજેક્ટ રુટમાં)" },

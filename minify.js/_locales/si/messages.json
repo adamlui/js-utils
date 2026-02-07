@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "බූලියන් විකල්ප" },
   "helpSection_params": { "message": "පරාමිති විකල්ප" },
   "helpSection_cmds": { "message": "තොරතුරු විධාන" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 භාෂා කේතය ප්රදර්ශනය කිරීමට UI" },
   "inputPathDesc_main": { "message": "Name" },
   "inputPathDesc_extra": { "message": "වර්තමානයේ ක් රියාත්මක වන කළමනාකරණ ක් රමවේදය" },
   "outputPathDesc_main": { "message": "කුඩා කළ ගොනු ගබඩා කළ හැකි ගොනුවකට හෝ බහලුමකට මාර් ‍ ගය" },

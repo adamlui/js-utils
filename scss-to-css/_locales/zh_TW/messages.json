@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "布林選項" },
   "helpSection_params": { "message": "參數選項" },
   "helpSection_cmds": { "message": "命令" },
+  "optionDesc_uiLang": { "message": "用於顯示UI的語言ISO 639-1代碼" },
   "inputPathDesc_main": { "message": "包含要編譯的SCSS檔案的SCSS檔案或目錄路徑" },
   "inputPathDesc_extra": { "message": "相對於當前工作目錄" },
   "outputPathDesc_main": { "message": "存放CSS + sourcemap檔案的檔案或目錄路徑" },

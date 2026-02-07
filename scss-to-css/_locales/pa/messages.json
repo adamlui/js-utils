@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "ਬੂਲੀਅਨ ਵਿਕਲਪ" },
   "helpSection_params": { "message": "ਪੈਰਾਮੀਟਰ ਵਿਕਲਪ" },
   "helpSection_cmds": { "message": "ਕਮਾਂਡਾ" },
+  "optionDesc_uiLang": { "message": "ਵਿੱਚ UI ਵੇਖਾਉਣ ਲਈ ਭਾਸ਼ਾ ਦਾ ISO 639-1 ਕੋਡ" },
   "inputPathDesc_main": { "message": "ਕੰਪਾਇਲ ਕਰਨ ਲਈ SCSS ਫਾਇਲ ਜਾਂ ਡਾਇਰੈਕਟਰੀ ਲਈ ਮਾਰਗ" },
   "inputPathDesc_extra": { "message": "ਮੌਜੂਦਾ ਵਰਕਿੰਗ ਡਾਇਰੈਕਟਰੀ ਦੇ ਸੰਬੰਧ ਵਿੱਚ" },
   "outputPathDesc_main": { "message": "ਫਾਇਲ ਜਾਂ ਡਾਇਰੈਕਟਰੀ ਲਈ ਮਾਰਗ, ਜਿੱਥੇ CSS + ਸਰੋਤ-ਮੈਪ ਫਾਇਲਾਂ ਸੰਭਾਲੀਆਂ ਜਾਣਗੀਆਂ" },

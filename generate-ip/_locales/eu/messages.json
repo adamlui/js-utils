@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parametro aukerak" },
   "helpSection_flags": { "message": "Aukera boolearrak" },
   "helpSection_cmds": { "message": "Info komandoak" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 UI bistaratzeko hizkuntzaren kodea" },
   "optionDesc_qty": { "message": "Sortu n IP helbide(k)" },
   "optionDesc_config": { "message": "Kargatu konfigurazio fitxategi pertsonalizatua" },
   "optionDesc_ipv6": { "message": "Sortu IPv6 helbidea" },

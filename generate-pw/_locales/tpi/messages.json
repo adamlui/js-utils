@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parametres opsen" },
   "helpSection_flags": { "message": "Ol Boolean opsen" },
   "helpSection_cmds": { "message": "Toksave" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kod bilong tokples bilong soim UI long" },
   "optionDesc_length": { "message": "Pasword (s) bilong n long" },
   "optionDesc_qty": { "message": "Wokim wanpela paspas (s)" },
   "optionDesc_config": { "message": "Load custom config file" },

@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Opcje logiczne:" },
   "helpSection_params": { "message": "Opcje parametrów" },
   "helpSection_cmds": { "message": "Polecenia" },
+  "optionDesc_uiLang": { "message": "Kod języka ISO 639-1 do wyświetlania interfejsu użytkownika w" },
   "inputPathDesc_main": { "message": "Ścieżka do pliku SCSS lub katalogu zawierającego pliki SCSS do skompilowania" },
   "inputPathDesc_extra": { "message": "do bieżącego katalogu roboczego" },
   "outputPathDesc_main": { "message": "Ścieżka do pliku lub katalogu, w którym będą przechowywane pliki CSS + sourcemap" },

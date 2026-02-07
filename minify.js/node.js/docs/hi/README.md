@@ -151,6 +151,7 @@ $ minify-js input_folder output_folder
 पैरामीटर विकल्प:
  --ignores="dir/,file1.js,file2.js"   लघुकरण से बाहर की जाने वाली फ़ाइलें।
  --comment="comment"                  लघु कोड में हेडर टिप्पणी जोड़ें। '\n' का उपयोग करके लाइन से अलग करें।
+ --ui-lang="code"                     UI दिखाने के लिए भाषा का ISO 639-1 कोड।
  --config="path/to/file"              कस्टम कॉन्फ़िग फ़ाइल लोड करें।
 
 कमांड:

@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Opciones booleanas" },
   "helpSection_params": { "message": "Opciones de parámetros" },
   "helpSection_cmds": { "message": "Comandos" },
+  "optionDesc_uiLang": { "message": "Código de idioma ISO 639-1 para mostrar la interfaz de usuario en" },
   "inputPathDesc_main": { "message": "Ruta al archivo SCSS o directorio que contiene archivos SCSS a compilar" },
   "inputPathDesc_extra": { "message": "en relación con el directorio de trabajo actual" },
   "outputPathDesc_main": { "message": "Ruta al archivo o directorio donde se almacenarán los archivos CSS + mapa fuente" },

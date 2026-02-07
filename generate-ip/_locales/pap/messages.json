@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Opcion Parámetro" },
   "helpSection_flags": { "message": "Opcion Boolean" },
   "helpSection_cmds": { "message": "Komandante di Informashon" },
+  "optionDesc_uiLang": { "message": "Documente similare cu ISO 639-1 Code of Language" },
   "optionDesc_qty": { "message": "Direccion IP(es)" },
   "optionDesc_config": { "message": "Cargo Custom Config Archivo" },
   "optionDesc_ipv6": { "message": "Direccion IPv6" },

@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Amahitamo" },
   "helpSection_params": { "message": "Amahitamo" },
   "helpSection_cmds": { "message": "Amabwiriza" },
+  "optionDesc_uiLang": { "message": "ISO 6391 Code of Language image in image" },
   "inputPathDesc_main": { "message": "Kuri IDOSIYE Cyangwa bushyinguro Idosiye Kuri" },
   "inputPathDesc_extra": { "message": "kuri i KIGEZWEHO bushyinguro" },
   "outputPathDesc_main": { "message": "Kuri IDOSIYE Cyangwa bushyinguro Idosiye" },

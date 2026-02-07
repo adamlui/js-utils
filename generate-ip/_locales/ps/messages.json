@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "د پاراميټر اختیارونه" },
   "helpSection_flags": { "message": "هو- نه غوراوي" },
   "helpSection_cmds": { "message": "د معلوماتو امرونه" },
+  "optionDesc_uiLang": { "message": "په کې د UI ښودلو لپاره د ISO 639-1 د ژبې کوډ" },
   "optionDesc_qty": { "message": "د n IP ادرس تولید کړئ (es)" },
   "optionDesc_config": { "message": "دوديزه سازونې دوتنه لېښل" },
   "optionDesc_ipv6": { "message": "د IPv6 پته تولید کړئ" },

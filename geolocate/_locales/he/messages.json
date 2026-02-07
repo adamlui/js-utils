@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "אפשרויות פרמטר" },
   "helpSection_flags": { "message": "הגדר אופציות" },
   "helpSection_cmds": { "message": "פקודות מידע" },
+  "optionDesc_uiLang": { "message": "קוד שפה ISO 639 -1 להצגה בממשק המשתמש" },
   "optionDesc_config": { "message": "טעינת קובץ תצורה מותאם אישית" },
   "optionDesc_quiet": { "message": "דיכוי כל רישומי הרישום למעט שגיאות" },
   "optionDesc_init": { "message": "צור קובץ תצורה (בשורש הפרויקט)" },

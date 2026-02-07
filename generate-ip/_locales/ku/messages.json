@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Vebijarkên Parameterê" },
   "helpSection_flags": { "message": "Vebijarkên Boolean" },
   "helpSection_cmds": { "message": "Fermanên agahdariyê" },
+  "optionDesc_uiLang": { "message": "Koda ISO 639-1 ya zimanê ji bo nîşandana UI-ê" },
   "optionDesc_qty": { "message": "n navnîşanên IP-ê çêbikin" },
   "optionDesc_config": { "message": "Pelê mîhengkirina xwerû bar bike" },
   "optionDesc_ipv6": { "message": "Navnîşana IPv6 çêbikin" },

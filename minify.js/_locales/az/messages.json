@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Buolean seçimləri" },
   "helpSection_params": { "message": "Parametr seçimləri" },
   "helpSection_cmds": { "message": "Məlumat əmrləri" },
+  "optionDesc_uiLang": { "message": "İSO 639-1-də UI-nı göstərmək üçün dilin kodu" },
   "inputPathDesc_main": { "message": "Dəqiqləşdiriləcək JavaScript faylları olan JavaScript faylına və ya kataloquna gedən yol" },
   "inputPathDesc_extra": { "message": "cari iş kataloquna nisbətən" },
   "outputPathDesc_main": { "message": "Minimum faylların saxlanılacağı fayl və ya kataloqa gedən yol" },

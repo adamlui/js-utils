@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "پیرامیٹر کے اختیارات" },
   "helpSection_flags": { "message": "بولین آپشنز" },
   "helpSection_cmds": { "message": "معلومات کے احکامات" },
+  "optionDesc_uiLang": { "message": "UI ظاہر کرنے کے لیے ISO 639-1 زبان کا کوڈ" },
   "optionDesc_qty": { "message": "N IP پتہ(پتے) جنریٹ کریں" },
   "optionDesc_config": { "message": "کسٹم کنفیگ فائل لوڈ کریں" },
   "optionDesc_ipv6": { "message": "IPv6 پتہ جنریٹ کریں" },

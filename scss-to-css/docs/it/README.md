@@ -155,6 +155,7 @@ Opzioni booleane:
 Opzioni dei parametri:
  --ignores="dir/,file1.scss,file2.scss"   File/cartelle da escludere dalla compilazione.
  --comment="comment"                      Anteponi il commento dell'intestazione al CSS compilato. Separare per riga utilizzando '\n'.
+ --ui-lang="code"                         Codice ISO 639-1 della lingua in cui visualizzare l'interfaccia utente.
  --config="path/to/file"                  Carica il file di configurazione personalizzato.
 
 Comandi:

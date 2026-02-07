@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Għażliet boolean" },
   "helpSection_params": { "message": "Għażliet tal-parametri" },
   "helpSection_cmds": { "message": "Kmand" },
+  "optionDesc_uiLang": { "message": "Kodiċi tal-lingwa ISO 639-1 biex turi l-UI fi" },
   "inputPathDesc_main": { "message": "Path għal fajl SCSS jew direttorju li fih fajls SCSS li għandhom jiġu kkompilati" },
   "inputPathDesc_extra": { "message": "meta mqabbel mad-direttorju tax-xogħol attwali" },
   "outputPathDesc_main": { "message": "Mogħdija għall-fajl jew direttorju fejn se jinħażnu l-fajls tal-mappa sors CSS +" },

@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Safidy momba ny marika" },
   "helpSection_flags": { "message": "Safidin'ny kirakira" },
   "helpSection_cmds": { "message": "Baikon'ny fampahalalana" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 fehezan-dalàna ny fiteny mba haneho UI in" },
   "optionDesc_config": { "message": "Maka ilay raki-kirakira safidy" },
   "optionDesc_quiet": { "message": "Hanafoana ny logging rehetra afa-tsy fahadisoana" },
   "optionDesc_init": { "message": "Mamorona raki-kirakira (ao amin'ny fototry ny tetikasa)" },

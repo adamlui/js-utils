@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "خيارات منطقية" },
   "helpSection_params": { "message": "خيارات المتغير" },
   "helpSection_cmds": { "message": "أوامر المعلومات" },
+  "optionDesc_uiLang": { "message": "رمز لغة ISO 639-1 لعرض واجهة المستخدم في" },
   "inputPathDesc_main": { "message": "المسار إلى ملف أو دليل جافا سكريبت الذي يحتوي على ملفات جافا سكريبت المراد تصغيرها" },
   "inputPathDesc_extra": { "message": "نسبة إلى دليل العمل الحالي" },
   "outputPathDesc_main": { "message": "المسار إلى الملف أو الدليل حيث سيتم تخزين الملفات المصغرة" },

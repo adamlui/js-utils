@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Опции за параметрите" },
   "helpSection_flags": { "message": "Булеви опции" },
   "helpSection_cmds": { "message": "Команди за информация" },
+  "optionDesc_uiLang": { "message": "ISO 639 -1 код на езика за показване на потребителския интерфейс в" },
   "optionDesc_length": { "message": "Генериране на парола(и) с дължина n" },
   "optionDesc_qty": { "message": "Генериране на n парола(и)" },
   "optionDesc_config": { "message": "Зареждане на персонализиран конфигурационен файл" },

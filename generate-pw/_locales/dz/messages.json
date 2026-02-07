@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "ཚད་འཇལ་ནིའི་ གདམ་ཁ་" },
   "helpSection_flags": { "message": "Boolean གདམ་ཁ་" },
   "helpSection_cmds": { "message": "བརྡ་དོན་གྱི་བཀའ་རྒྱ་" },
+  "optionDesc_uiLang": { "message": "ཨའི་ཟ་ཨོ་༦༣༩-༡ གི་སྐད་ཡིག་གི་ལྡེ་མིག་འདི་ ཨའི་ཟ་ཨོ་༦༣༩-༡ ལུ་སྟོན་" },
   "optionDesc_length": { "message": "Password (s) འདི་ N གི་རིང་ཚད་ལས་འབྱུང་འོང་།" },
   "optionDesc_qty": { "message": "Password (s) བཟོ་འབད།" },
   "optionDesc_config": { "message": "རང་ལུགས་སྒྲིག་གཞི་ཡིག་སྣོད་འདི་ལོཌ་འབད།" },

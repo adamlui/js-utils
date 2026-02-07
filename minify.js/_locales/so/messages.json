@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Xulashooyinka Boolean" },
   "helpSection_params": { "message": "Fursadaha Parameter" },
   "helpSection_cmds": { "message": "Amarada Macluumaadka" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 code luqadda si ay u muujiyaan UI in" },
   "inputPathDesc_main": { "message": "Jidka faylka JavaScript ama tusaha oo ay ku jiraan faylasha JavaScript si loo yareeyo" },
   "inputPathDesc_extra": { "message": "previous article Ra 'iisul Wasaare Khayre Oo Maanta La Kulmay Wafdi Ka Socda Galmudug" },
   "outputPathDesc_main": { "message": "Jidka faylka ama tusaha halkaas oo faylasha la qoday lagu kaydin doono" },

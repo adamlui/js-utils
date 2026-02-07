@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "ಪ್ಯಾರಾಮೀಟರ್ ಆಯ್ಕೆಗಳು" },
   "helpSection_flags": { "message": "ಬೂಲಿಯನ್ ಆಯ್ಕೆಗಳು" },
   "helpSection_cmds": { "message": "ಮಾಹಿತಿ ಆಜ್ಞೆಗಳು" },
+  "optionDesc_uiLang": { "message": "UI ಅನ್ನು ಪ್ರದರ್ಶಿಸಲು ISO 639-1 ಭಾಷೆಯ ಸಂಕೇತ" },
   "optionDesc_length": { "message": "N ಉದ್ದದ ಪಾಸ್ ‌ ವರ್ಡ್(ಗಳನ್ನು) ರಚಿಸಿ" },
   "optionDesc_qty": { "message": "ಎನ್ ಪಾಸ್ ‌ ವರ್ಡ್(ಗಳನ್ನು) ರಚಿಸಿ" },
   "optionDesc_config": { "message": "ಕಸ್ಟಮ್ ಕಾನ್ಫಿಗರೇಶನ್ ಫೈಲ್ ಅನ್ನು ಲೋಡ್ ಮಾಡಿ" },

@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Boolske alternativer" },
   "helpSection_params": { "message": "Parameteralternativer" },
   "helpSection_cmds": { "message": "Kommandoer" },
+  "optionDesc_uiLang": { "message": "ISO 639-1-kode for språk som skal vises brukergrensesnitt i" },
   "inputPathDesc_main": { "message": "Sti til JavaScript-fil eller katalog som inneholder JavaScript-filer som skal minimeres" },
   "inputPathDesc_extra": { "message": "i forhold til gjeldende arbeidsmappe" },
   "outputPathDesc_main": { "message": "Sti til fil eller katalog der minifiserte filer skal lagres" },

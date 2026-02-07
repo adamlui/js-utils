@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parametri BLM opreacij" },
   "helpSection_flags": { "message": "Logične možnosti" },
   "helpSection_cmds": { "message": "Info ukazi" },
+  "optionDesc_uiLang": { "message": "Koda jezika ISO 639-1 za prikaz uporabniškega vmesnika v" },
   "optionDesc_length": { "message": "Ustvari gesla dolžine n" },
   "optionDesc_qty": { "message": "Ustvari n gesel" },
   "optionDesc_config": { "message": "Naloži konfiguracijsko datoteko po meri" },

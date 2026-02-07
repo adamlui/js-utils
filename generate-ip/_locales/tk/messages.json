@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parametr saýlamalary" },
   "helpSection_flags": { "message": "Mantıksal Seçenekler" },
   "helpSection_cmds": { "message": "Öwrenme tabşyryklary" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 dil kodyny görkezmek üçin" },
   "optionDesc_qty": { "message": "N IP-aýdasy (lar) ýaradylýar" },
   "optionDesc_config": { "message": "Özgür konfigurasy faýly ýükle" },
   "optionDesc_ipv6": { "message": "IPv6 adresini döret" },

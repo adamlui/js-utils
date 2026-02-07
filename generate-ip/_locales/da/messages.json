@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parameterindstillinger" },
   "helpSection_flags": { "message": "Boolske muligheder" },
   "helpSection_cmds": { "message": "INFO-kommandoer" },
+  "optionDesc_uiLang": { "message": "ISO 639-1-kode for sprog til visning af brugergrænseflade i" },
   "optionDesc_qty": { "message": "Generer n IP-adresse(r)" },
   "optionDesc_config": { "message": "Indlæs brugerdefineret konfigurationsfil" },
   "optionDesc_ipv6": { "message": "Generer IPv6-adresse" },

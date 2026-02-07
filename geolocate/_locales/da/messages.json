@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Parameterindstillinger" },
   "helpSection_flags": { "message": "Konfigurationsindstillinger" },
   "helpSection_cmds": { "message": "INFO-kommandoer" },
+  "optionDesc_uiLang": { "message": "ISO 639-1-kode for sprog til visning af brugergrænseflade i" },
   "optionDesc_config": { "message": "Indlæs brugerdefineret konfigurationsfil" },
   "optionDesc_quiet": { "message": "Undertrykke al logning undtagen fejl" },
   "optionDesc_init": { "message": "Opret konfigurationsfil (i projektroden)" },

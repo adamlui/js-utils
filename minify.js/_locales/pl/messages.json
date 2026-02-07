@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Opcje logiczne" },
   "helpSection_params": { "message": "Opcje parametrów" },
   "helpSection_cmds": { "message": "Polecenia informacyjne" },
+  "optionDesc_uiLang": { "message": "Kod języka ISO 639-1 do wyświetlania interfejsu użytkownika w" },
   "inputPathDesc_main": { "message": "Ścieżka do pliku JavaScript lub katalogu zawierającego pliki JavaScript do zminimalizowania" },
   "inputPathDesc_extra": { "message": "do bieżącego katalogu roboczego" },
   "outputPathDesc_main": { "message": "Ścieżka do pliku lub katalogu, w którym będą przechowywane zminimalizowane pliki" },

@@ -9,6 +9,7 @@ module.exports = {
 
     controls: {
         qty: { type: 'param', defaultVal: 1, regex: /^--?qu?a?n?ti?t?y(?:=.*|$)/, parser: val => parseInt(val, 10) },
+        uiLang: { type: 'param', regex: /^--?ui-?lang(?:=.*|$)/ },
         config: { type: 'param', regex: /^--?config(?:=.*|$)/ },
         ipv6mode: { type: 'flag', mode: true, regex: /^--?(?:ip)?v?6(?:-?mode)?$/ },
         macMode: { type: 'flag', mode: true, regex: /^--?m(?:ac)?(?:-?mode)?$/ },

@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "פּאַראַמעטער אָפּציעס" },
   "helpSection_flags": { "message": "בוליאַן אָפּציעס" },
   "helpSection_cmds": { "message": "אינפֿאָרמאַציע קאַמאַנדז" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 קאָד פֿון שפּראַך צו ווײַזן באַניצער־אינטערפֿייס אין" },
   "optionDesc_length": { "message": "דזשענערייט פּאַראָל (s) פון n לענג" },
   "optionDesc_qty": { "message": "שאַפֿן אַ פּאַראָל (s)" },
   "optionDesc_config": { "message": "לאָדן אייגענע קאָנפיג טעקע" },

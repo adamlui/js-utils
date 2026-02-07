@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Opcions booleanes" },
   "helpSection_params": { "message": "Opcions de paràmetres" },
   "helpSection_cmds": { "message": "Ordres d'informació" },
+  "optionDesc_uiLang": { "message": "Codi de llengua ISO 639-1 per mostrar la interfície d'usuari" },
   "inputPathDesc_main": { "message": "Ruta al fitxer JavaScript o directori que conté fitxers JavaScript que s'han de minificar" },
   "inputPathDesc_extra": { "message": "en relació amb el directori de treball actual" },
   "outputPathDesc_main": { "message": "Ruta al fitxer o directori on s'emmagatzemaran els fitxers minificats" },

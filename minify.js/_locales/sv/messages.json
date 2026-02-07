@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Booleska alternativ" },
   "helpSection_params": { "message": "Parameteralternativ" },
   "helpSection_cmds": { "message": "INFO-kommandon" },
+  "optionDesc_uiLang": { "message": "ISO 639-1-kod för språk för att visa användargränssnitt i" },
   "inputPathDesc_main": { "message": "Sökväg till JavaScript-fil eller katalog som innehåller JavaScript-filer som ska förminskas" },
   "inputPathDesc_extra": { "message": "i förhållande till den aktuella arbetskatalogen" },
   "outputPathDesc_main": { "message": "Sökväg till fil eller katalog där minifierade filer kommer att lagras" },

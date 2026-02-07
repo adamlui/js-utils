@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Loginės parinktys" },
   "helpSection_params": { "message": "Parametrų parinktys" },
   "helpSection_cmds": { "message": "Informacijos komandos" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kalbos kodas, skirtas vartotojo sąsajai rodyti" },
   "inputPathDesc_main": { "message": "Kelias į „JavaScript“ failą arba katalogą, kuriame yra mažintinų „JavaScript“ failų" },
   "inputPathDesc_extra": { "message": "dabartinio darbinio katalogo atžvilgiu" },
   "outputPathDesc_main": { "message": "Kelias iki failo ar katalogo, kuriame bus saugomi miniatiūriniai failai" },

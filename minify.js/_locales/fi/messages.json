@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Boolen vaihtoehdot" },
   "helpSection_params": { "message": "Parametrivaihtoehdot" },
   "helpSection_cmds": { "message": "Tietokomennot" },
+  "optionDesc_uiLang": { "message": "Iso 639-1 -kielikoodi käyttöliittymän näyttämiseksi" },
   "inputPathDesc_main": { "message": "Polku JavaScript-tiedostoon tai hakemistoon, joka sisältää pienennettäviä JavaScript-tiedostoja" },
   "inputPathDesc_extra": { "message": "suhteessa nykyiseen työhakemistoon" },
   "outputPathDesc_main": { "message": "Polku tiedostoon tai hakemistoon, johon pienennetyt tiedostot tallennetaan" },

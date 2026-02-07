@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "የፓራሜትር አማራጮች" },
   "helpSection_flags": { "message": "Boolean አማራጮች" },
   "helpSection_cmds": { "message": "መረጃ ትዕዛዞች" },
+  "optionDesc_uiLang": { "message": "የ ISO 639-1 የቋንቋ ኮድ UI ን በ ውስጥ ለማሳየት" },
   "optionDesc_length": { "message": "N ርዝመት የይለፍ ቃል(ዎች) ይፍጠሩ" },
   "optionDesc_qty": { "message": "N የይለፍ ቃል(ዎች) ይፍጠሩ" },
   "optionDesc_config": { "message": "ብጁ ውቅር ፋይል ጫን" },

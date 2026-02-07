@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Boolesche Optionen" },
   "helpSection_params": { "message": "Parameteroptiounen" },
   "helpSection_cmds": { "message": "Infobefehlungen" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 Code der Sprache um UI an zu zeigen" },
   "inputPathDesc_main": { "message": "Route zu JavaScript-Datei oder Verzeichnis, der JavaScript-Dateien enthält, um minifiziert zu werden" },
   "inputPathDesc_extra": { "message": "zum aktuellen Jobcenter" },
   "outputPathDesc_main": { "message": "Route zu Datei oder Verzeichnis, wo minifizierte Dateien gespeichert werden" },

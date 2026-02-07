@@ -57,6 +57,7 @@ module.exports = {
                 `--ignores="dir/,file1.js,file2.js"   ${cli.msgs.optionDesc_ignores}.`,
                 `--comment="comment"                  ${cli.msgs.optionDesc_commentMain}.`
                                                  +  ` ${cli.msgs.optionDesc_commentExtra}.`,
+                ` --ui-lang="code"                    ${cli.msgs.optionDesc_uiLang}.`,
                 ` --config="path/to/file"             ${cli.msgs.optionDesc_config}.`
             ],
             cmds: [

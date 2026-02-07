@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Boole seçenekleri" },
   "helpSection_params": { "message": "Parametre seçenekleri" },
   "helpSection_cmds": { "message": "Bilgi komutları" },
+  "optionDesc_uiLang": { "message": "ISO 639 -1 kullanıcı arayüzünü görüntülemek için dil kodu" },
   "inputPathDesc_main": { "message": "Küçültülecek JavaScript dosyalarını içeren JavaScript dosyasının veya dizininin yolu" },
   "inputPathDesc_extra": { "message": "mevcut çalışma dizinine göre" },
   "outputPathDesc_main": { "message": "Küçültülmüş dosyaların depolanacağı dosya veya dizin yolu" },

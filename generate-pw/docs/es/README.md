@@ -283,6 +283,7 @@ Opciones de parámetros:
  --qty=n                     Generar n contraseña(s).
  --charset=cars              Incluya únicamente cars en la(s) contraseña(s).
  --exclude=cars              Excluir cars de la(s) contraseña(s).
+ --ui-lang="code"            Código ISO 639-1 de idioma para mostrar la interfaz de usuario.
  --config="path/to/file"     Cargar archivo de configuración personalizado.
 
 Opciones booleanas:

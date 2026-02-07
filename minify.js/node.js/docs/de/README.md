@@ -151,6 +151,7 @@ Boolesche Optionen:
 Parameteroptionen:
  --ignores="dir/,file1.js,file2.js"   Dateien/Verzeichnisse, die von der Minimierung ausgeschlossen werden sollen.
  --comment="kommentar"                Kopfzeilenkommentar dem minimierten Code voranstellen. Mit '\n' zeilenweise trennen.
+ --ui-lang="code"                     ISO 639-1-Code der Sprache, in der die Benutzeroberfläche angezeigt werden soll.
  --config="path/to/file"              Benutzerdefinierte Konfigurationsdatei laden.
 
 Befehle:

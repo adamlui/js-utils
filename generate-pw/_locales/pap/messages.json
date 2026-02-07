@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Opcion Parámetro" },
   "helpSection_flags": { "message": "Opcion Boolean" },
   "helpSection_cmds": { "message": "Komandante di Informashon" },
+  "optionDesc_uiLang": { "message": "Documente similare cu ISO 639-1 Code of Language" },
   "optionDesc_length": { "message": "Generando Password(s) of N Largo" },
   "optionDesc_qty": { "message": "Generando Un Password(s)" },
   "optionDesc_config": { "message": "Cargo Custom Config Archivo" },

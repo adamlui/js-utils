@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parametre seçenekleri" },
   "helpSection_flags": { "message": "Boole seçenekleri" },
   "helpSection_cmds": { "message": "Bilgi komutları" },
+  "optionDesc_uiLang": { "message": "ISO 639 -1 kullanıcı arayüzünü görüntülemek için dil kodu" },
   "optionDesc_qty": { "message": "IP adres(ler) i oluştur" },
   "optionDesc_config": { "message": "Özel yapılandırma dosyası yükle" },
   "optionDesc_ipv6": { "message": "IPv6 adresi oluştur" },

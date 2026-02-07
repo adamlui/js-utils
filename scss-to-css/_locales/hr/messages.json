@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Booleove opcije" },
   "helpSection_params": { "message": "Parametri opcija BLM" },
   "helpSection_cmds": { "message": "Naredbe" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kod jezika za prikaz korisničkog sučelja u" },
   "inputPathDesc_main": { "message": "Putanja do SCSS datoteke ili direktorija koji sadrži SCSS datoteke koje treba prevesti" },
   "inputPathDesc_extra": { "message": "u odnosu na trenutni radni direktorij" },
   "outputPathDesc_main": { "message": "Put do datoteke ili direktorija u kojem će se pohranjivati CSS + sourcemap datoteke" },

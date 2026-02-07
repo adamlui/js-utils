@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Zosankha za Boolean" },
   "helpSection_params": { "message": "Zosankha za magawo" },
   "helpSection_cmds": { "message": "Malamulo" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 malamulo chilankhulo kusonyeza UI mu" },
   "inputPathDesc_main": { "message": "Njira yopita ku fayilo ya JavaScript kapena chikwatu chokhala ndi mafayilo a JavaScript kuti asinthidwe" },
   "inputPathDesc_extra": { "message": "poyerekeza ndi chikwatu chogwirira ntchito chomwe chilipo pano" },
   "outputPathDesc_main": { "message": "Njira yopita ku fayilo kapena chikwatu komwe mafayilo osinthidwa adzasungidwa" },

@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Aye so mo lingbi ti sara ti mû maboko na mo" },
   "helpSection_params": { "message": "Akpengba ye so mo lingbi ti sara" },
   "helpSection_cmds": { "message": "Aye so afa so a yeke nzoni e sara" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 code ti yanga ti kodoro ti fa UI na" },
   "inputPathDesc_main": { "message": "Lege ti faïl ti JavaScript wala ti faïl ti faïl ti JavaScript so a lingbi a fâ ni" },
   "inputPathDesc_extra": { "message": "a yeke na lege ti a-directeur ti kua so ayeke dä laso" },
   "outputPathDesc_main": { "message": "Lege ti faïl wala ti faïl so a yeke bata ni" },

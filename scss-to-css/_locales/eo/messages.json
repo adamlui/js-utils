@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Buleaj opcioj" },
   "helpSection_params": { "message": "Parametraj opcioj" },
   "helpSection_cmds": { "message": "Komando" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kodo de lingvo por elmontri UI en" },
   "inputPathDesc_main": { "message": "Pado al SCSS-dosiero aŭ adresaro enhavanta SCSS-dosierojn por esti kompilita" },
   "inputPathDesc_extra": { "message": "relativa al la aktuala labordosierujo" },
   "outputPathDesc_main": { "message": "Vojo al dosiero aŭ dosierujo kie CSS + fontomapaj dosieroj estos konservitaj" },

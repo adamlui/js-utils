@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Roghainnean Boole" },
   "helpSection_params": { "message": "Roghainnean a 'pharaiméadair" },
   "helpSection_cmds": { "message": "Àithnean fiosrachaidh" },
+  "optionDesc_uiLang": { "message": "ISO 639 -1 Code of Language gus UI a thaisbeanadh ann an UI" },
   "inputPathDesc_main": { "message": "Slighe gu faidhle JavaScript no pasgan anns a bheil faidhlichean JavaScript ri mion - sgrùdadh" },
   "inputPathDesc_extra": { "message": "an Stiùireadh Obrach a th 'ann an - diugh" },
   "outputPathDesc_main": { "message": "An t - slighe gu faidhle no pasgan far an tèid faidhlichean beaga a stòradh" },

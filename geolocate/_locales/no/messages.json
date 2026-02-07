@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Konfigurasjonsalternativer" },
   "helpSection_flags": { "message": "Konfigurasjonsalternativer" },
   "helpSection_cmds": { "message": "Info kommandoer" },
+  "optionDesc_uiLang": { "message": "ISO 639-1-kode for språk som skal vises brukergrensesnitt i" },
   "optionDesc_config": { "message": "Last inn tilpasset konfigurasjonsfil" },
   "optionDesc_quiet": { "message": "Undertrykk all logging unntatt feil" },
   "optionDesc_init": { "message": "Opprett konfigurasjonsfil (i prosjektroten)" },

@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Safidy Boleanina" },
   "helpSection_params": { "message": "Safidy momba ny marika" },
   "helpSection_cmds": { "message": "Baikon'ny fampahalalana" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 fehezan-dalàna ny fiteny mba haneho UI in" },
   "inputPathDesc_main": { "message": "Ny sori-dàlana mankany amin'ny rakitry ny JavaScript na laha-tahiry misy ny rakitry ny JavaScript tokony hotanterahina" },
   "inputPathDesc_extra": { "message": "raha oharina amin'ny laha-tahiry momba ny asa amin'izao fotoana izao" },
   "outputPathDesc_main": { "message": "Ny sori-dàlana mankany amin'ilay rakitra na laha-tahiry hitahirizana rakitra" },

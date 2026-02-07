@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Booleovské možnosti" },
   "helpSection_params": { "message": "Možnosti parametrů" },
   "helpSection_cmds": { "message": "Informační příkazy" },
+  "optionDesc_uiLang": { "message": "Kód jazyka ISO 639-1 pro zobrazení uživatelského rozhraní" },
   "inputPathDesc_main": { "message": "Cesta k souboru JavaScript nebo adresáři obsahujícímu soubory JavaScript, které mají být zmenšeny" },
   "inputPathDesc_extra": { "message": "vzhledem k aktuálnímu pracovnímu adresáři" },
   "outputPathDesc_main": { "message": "Cesta k souboru nebo adresáři, kde budou uloženy zmenšené soubory" },

@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Dipharametara tse o ka tlhophang mo go tsone" },
   "helpSection_flags": { "message": "Ditlhopho tsa Boolean" },
   "helpSection_cmds": { "message": "Ditaelo" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 code of language to display UI in" },
   "optionDesc_length": { "message": "Generate password(di) of n length" },
   "optionDesc_qty": { "message": "Generate n password(di)" },
   "optionDesc_config": { "message": "Laisa faele ya thulaganyo e e tlwaelegileng" },

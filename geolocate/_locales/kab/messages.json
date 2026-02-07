@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Iɣewwaṛen n uzegrir" },
   "helpSection_flags": { "message": "Snifel isenfaren" },
   "helpSection_cmds": { "message": "Iɣewwaṛen n isefka" },
+  "optionDesc_uiLang": { "message": "Tutlayt ISO 639-1 i wakken ad d-tban deg" },
   "optionDesc_config": { "message": "Sers afaylu n uγewwaṛ yettwakelsen" },
   "optionDesc_quiet": { "message": "Sizdeg akk tuccḍiwin anagar tuccḍiwin" },
   "optionDesc_init": { "message": "Snulfu afaylu n usebter (deg uẓar n usebter)" },

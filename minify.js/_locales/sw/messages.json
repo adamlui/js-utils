@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Machaguo ya boolean" },
   "helpSection_params": { "message": "Machaguo ya kigezo" },
   "helpSection_cmds": { "message": "Amri za taarifa" },
+  "optionDesc_uiLang": { "message": "Msimbo wa lugha wa ISO 639-1 kuonyesha UI katika" },
   "inputPathDesc_main": { "message": "Njia ya faili au saraka ya JavaScript iliyo na faili za JavaScript zinazoweza kupunguzwa" },
   "inputPathDesc_extra": { "message": "kuhusiana na saraka ya sasa ya kazi" },
   "outputPathDesc_main": { "message": "Nenda kwenye faili au saraka ambapo faili zilizopunguzwa zitahifadhiwa" },

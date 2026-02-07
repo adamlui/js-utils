@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Ifya kusalululapo" },
   "helpSection_flags": { "message": "Ifyakusalapo ifyakupanga" },
   "helpSection_cmds": { "message": "Ifyebo Fyabamo Lyonse" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 Code of Language Ukulele Tabs in Ukulele Tabs" },
   "optionDesc_config": { "message": "Landa failo iya mipangilwe iyalinga" },
   "optionDesc_quiet": { "message": "Fela Anikulapo Kuti - Fela Anikulapo Kuti" },
   "optionDesc_init": { "message": "Panga failo iya mipangilwe (mu mushila wa mulimo)" },

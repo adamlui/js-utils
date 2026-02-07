@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Параметерын сонголтууд" },
   "helpSection_flags": { "message": "Boolean хувилбарууд" },
   "helpSection_cmds": { "message": "Мэдээллийн командууд" },
+  "optionDesc_uiLang": { "message": "UI-ийг харуулахын тулд ISO 639-1 хэлний код" },
   "optionDesc_qty": { "message": "N IP хаяг(es) үүсгэх" },
   "optionDesc_config": { "message": "Тохируулсан тохиргооны файлыг ачаалах" },
   "optionDesc_ipv6": { "message": "IPv6 хаягийг үүсгэх" },

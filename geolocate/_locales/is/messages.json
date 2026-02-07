@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Valkostir færibreytna" },
   "helpSection_flags": { "message": "Stilla valkosti" },
   "helpSection_cmds": { "message": "Upplýsingaskipanir" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kóði tungumáls til að sýna notendaviðmót í" },
   "optionDesc_config": { "message": "Hlaða inn sérsniðinni stilliskrá" },
   "optionDesc_quiet": { "message": "Slökkva á öllum innskráningum nema villum" },
   "optionDesc_init": { "message": "Búa til stillingarskrá (í frumtexta verkefnis)" },

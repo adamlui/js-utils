@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "बूलियन विकल्प" },
   "helpSection_params": { "message": "पैरामीटर विकल्प" },
   "helpSection_cmds": { "message": "कमांडः (C)" },
+  "optionDesc_uiLang": { "message": "यूआई प्रदर्शित करने के लिए भाषा का आईएसओ 639 -1 कोड" },
   "inputPathDesc_main": { "message": "SCSS फ़ाइल या SCSS फ़ाइलों वाली निर्देशिका का पथ संकलित किया जाना है" },
   "inputPathDesc_extra": { "message": "वर्तमान कार्य निर्देशिका के सापेक्ष" },
   "outputPathDesc_main": { "message": "फ़ाइल या निर्देशिका का पथ जहां CSS + सोर्समैप फ़ाइलें संग्रहीत की जाएंगी" },

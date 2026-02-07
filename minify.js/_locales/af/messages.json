@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Boolse opsies" },
   "helpSection_params": { "message": "Parameter opsies" },
   "helpSection_cmds": { "message": "Inligtingopdragte" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kode van taal te vertoon UI in" },
   "inputPathDesc_main": { "message": "Pad na JavaScript-lêer of gids wat JavaScript-lêers bevat wat geminifiseer moet word" },
   "inputPathDesc_extra": { "message": "huidige werkende gids" },
   "outputPathDesc_main": { "message": "Pad na lêer of gids waar verkleinde lêers gestoor sal word" },

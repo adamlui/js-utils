@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Iɣewwaṛen n uzegrir" },
   "helpSection_flags": { "message": "Iɣewwaṛen n Boolean" },
   "helpSection_cmds": { "message": "Iɣewwaṛen n isefka" },
+  "optionDesc_uiLang": { "message": "Tutlayt ISO 639-1 i wakken ad d-tban deg" },
   "optionDesc_qty": { "message": "Snulfu tansa n IP (es)" },
   "optionDesc_config": { "message": "Sers afaylu n uγewwaṛ yettwakelsen" },
   "optionDesc_ipv6": { "message": "Snulfu tansa IPv6" },

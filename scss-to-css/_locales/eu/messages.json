@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Aukera boolearrak" },
   "helpSection_params": { "message": "Parametroen aukerak" },
   "helpSection_cmds": { "message": "Aginduak" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 UI bistaratzeko hizkuntzaren kodea" },
   "inputPathDesc_main": { "message": "Konpilatu beharreko SCSS fitxategiak dituen SCSS fitxategirako edo direktorioaren bidea" },
   "inputPathDesc_extra": { "message": "uneko lan-direktorioarekiko erlatiboa" },
   "outputPathDesc_main": { "message": "CSS + iturri-mapa fitxategiak gordeko diren fitxategi edo direktoriorako bidea" },

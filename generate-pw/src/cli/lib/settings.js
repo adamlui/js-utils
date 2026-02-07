@@ -12,6 +12,7 @@ module.exports = {
         qty: { type: 'param', defaultVal: 1, regex: /^--?qu?a?n?ti?t?y(?:=.*|$)/, parser: val => parseInt(val, 10) },
         charset: { type: 'param', regex: /^--?charse?t?(?:=.*|$)/ },
         excludeChars: { type: 'param', regex:/^--?exclude(?:=.*|$)/ },
+        uiLang: { type: 'param', regex: /^--?ui-?lang(?:=.*|$)/ },
         config: { type: 'param', regex: /^--?config(?:=.*|$)/ },
         weak: { type: 'flag', mode: true, regex: /^--?(?:w|weak)$/ },
         basic: { type: 'flag',  mode: true, regex: /^--?(?:b|basic)$/ },

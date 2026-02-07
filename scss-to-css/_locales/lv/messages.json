@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Būla opcijas" },
   "helpSection_params": { "message": "Parametru opcijas" },
   "helpSection_cmds": { "message": "Komandas" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 valodas kods, lai parādītu UI" },
   "inputPathDesc_main": { "message": "Ceļš uz SCSS failu vai direktoriju, kas satur kompilējamos SCSS failus" },
   "inputPathDesc_extra": { "message": "attiecībā pret pašreizējo darba direktoriju" },
   "outputPathDesc_main": { "message": "Ceļš uz failu vai direktoriju, kurā tiks glabāti CSS + sourcemap faili" },

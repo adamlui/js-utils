@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Mantiqiy variantlar" },
   "helpSection_params": { "message": "Parametr variantlari" },
   "helpSection_cmds": { "message": "Ma'lumot buyruqlari" },
+  "optionDesc_uiLang": { "message": "UI ni ko'rsatish uchun ISO 639-1 til kodi" },
   "inputPathDesc_main": { "message": "JavaScript fayliga yoki JavaScript fayllarini o'z ichiga olgan katalogga yo'l kichiklashtiriladi" },
   "inputPathDesc_extra": { "message": "joriy ishchi katalogga nisbatan" },
   "outputPathDesc_main": { "message": "Kichkinalashtirilgan fayllar saqlanadigan fayl yoki katalogga yo'l" },

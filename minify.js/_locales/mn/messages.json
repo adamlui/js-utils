@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Boolean хувилбарууд" },
   "helpSection_params": { "message": "Параметерын сонголтууд" },
   "helpSection_cmds": { "message": "Мэдээллийн командууд" },
+  "optionDesc_uiLang": { "message": "UI-ийг харуулахын тулд ISO 639-1 хэлний код" },
   "inputPathDesc_main": { "message": "Жаваскрипт файл эсвэл JavaScript файл бүхий лавлах зам" },
   "inputPathDesc_extra": { "message": "одоогийн ажлын лавлахтай хамааралтай" },
   "outputPathDesc_main": { "message": "Хасагдсан файл хадгалах файл эсвэл лавлах зам" },

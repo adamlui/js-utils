@@ -151,6 +151,7 @@ Opciones booleanas:
 Opciones de parámetros:
  --ignores="dir/,file1.js,file2.js"   Archivos/directorios que se excluirán del proceso de minificación.
  --comment="comentar"                 Anteponga el comentario del encabezado al código minimizado. Separe por línea usando '\n'.
+ --ui-lang="code"                     Código ISO 639-1 de idioma para mostrar la interfaz de usuario.
  --config="path/to/file"              Cargar archivo de configuración personalizado.
 
 Comandos:

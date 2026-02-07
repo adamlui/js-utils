@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Mga kapilian sa parameter" },
   "helpSection_flags": { "message": "Mga kapilian sa Boolean" },
   "helpSection_cmds": { "message": "Mga mando sa info" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 nga kodigo sa sinultian aron ipakita ang UI sa" },
   "optionDesc_length": { "message": "Generate password(s) sa n gitas-on" },
   "optionDesc_qty": { "message": "Genera n password(s)" },
   "optionDesc_config": { "message": "I-load ang custom config file" },

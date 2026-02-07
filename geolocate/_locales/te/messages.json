@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "కాన్ఫిగర్ ఎంపికలు" },
   "helpSection_flags": { "message": "కాన్ఫిగర్ ఎంపికలు" },
   "helpSection_cmds": { "message": "సమాచార ఆదేశాలు" },
+  "optionDesc_uiLang": { "message": "UIని ప్రదర్శించడానికి ISO 639-1 భాషా కోడ్" },
   "optionDesc_config": { "message": "అనుకూల కాన్ఫిగరేషన్ ఫైల్ ‌ ను లోడ్ చేయండి" },
   "optionDesc_quiet": { "message": "లోపాలు మినహా అన్ని లాగింగ్ ‌ లను అణచివేయండి" },
   "optionDesc_init": { "message": "ఆకృతీకరణ ఫైల్ ‌ ను సృష్టించండి (ప్రాజెక్ట్ రూట్ ‌ లో)" },

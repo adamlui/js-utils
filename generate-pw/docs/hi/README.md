@@ -279,6 +279,7 @@ $ generate-pw
  --qty=n                     n पासवर्ड उत्पन्न करें।
  --charset=chars             पासवर्ड में केवल chars शामिल करें।
  --exclude=chars             पासवर्ड से chars को बाहर निकालें।
+ --ui-lang="code"            UI दिखाने के लिए भाषा का ISO 639-1 कोड।
  --config="path/to/file"     कस्टम कॉन्फ़िग फ़ाइल लोड करें।
 
 बूलियन विकल्प:

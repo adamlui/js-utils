@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Mga kapilian sa parameter" },
   "helpSection_flags": { "message": "Mga kapilian sa config" },
   "helpSection_cmds": { "message": "Mga mando sa info" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 nga kodigo sa sinultian aron ipakita ang UI sa" },
   "optionDesc_config": { "message": "I-load ang custom config file" },
   "optionDesc_quiet": { "message": "Pugngan ang tanan nga pag-log gawas sa mga sayup" },
   "optionDesc_init": { "message": "Paghimo file sa config (sa root sa proyekto)" },

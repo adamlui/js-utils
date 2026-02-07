@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "参数选项" },
   "helpSection_flags": { "message": "布尔选项" },
   "helpSection_cmds": { "message": "信息命令" },
+  "optionDesc_uiLang": { "message": "用于显示UI的语言的ISO 639-1代码" },
   "optionDesc_length": { "message": "生成 n 个长度的密码" },
   "optionDesc_qty": { "message": "生成 n 个密码" },
   "optionDesc_config": { "message": "加载自定义配置文件" },

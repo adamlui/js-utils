@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "විකල්ප සකසන්න" },
   "helpSection_flags": { "message": "විකල්ප සකසන්න" },
   "helpSection_cmds": { "message": "තොරතුරු විධාන" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 භාෂා කේතය ප්රදර්ශනය කිරීමට UI" },
   "optionDesc_config": { "message": "අභිරුචි සැකසුම් ගොනුව පූරණය කරන්න" },
   "optionDesc_quiet": { "message": "සියලු පිවිසුම් යටපත් කරන්න දෝෂ හැර" },
   "optionDesc_init": { "message": "සැකසුම් ගොනුව සාදන්න (ව් ‍ යාපෘති මූලය තුළ)" },

@@ -155,6 +155,7 @@ Options booléennes:
 Options des paramètres:
  --ignores="dir/,file1.scss,file2.scss"   Fichiers/répertoires à exclure de la compilation.
  --comment="comment"                      Ajoutez le commentaire d’en-tête au CSS compilé. Séparez par ligne en utilisant '\n'.
+ --ui-lang="code"                         Code ISO 639-1 de la langue dans laquelle afficher l'interface utilisateur.
  --config="path/to/file"                  Charger le fichier de configuration personnalisé.
 
 Commandes:

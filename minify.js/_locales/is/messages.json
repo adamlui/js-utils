@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Boole-valkostir" },
   "helpSection_params": { "message": "Valkostir færibreytna" },
   "helpSection_cmds": { "message": "Upplýsingaskipanir" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kóði tungumáls til að sýna notendaviðmót í" },
   "inputPathDesc_main": { "message": "Slóð að JavaScript skrá eða möppu sem inniheldur JavaScript skrár sem á að smána" },
   "inputPathDesc_extra": { "message": "miðað við núverandi vinnumöppu" },
   "outputPathDesc_main": { "message": "Slóð að skrá eða möppu þar sem minified skrár verða geymdar" },

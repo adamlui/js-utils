@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Config אָפּציעס" },
   "helpSection_flags": { "message": "קאָנפיגוראַציע אָפּציעס" },
   "helpSection_cmds": { "message": "אינפֿאָרמאַציע קאַמאַנדז" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 קאָד פֿון שפּראַך צו ווײַזן באַניצער־אינטערפֿייס אין" },
   "optionDesc_config": { "message": "לאָדן אייגענע קאָנפיג טעקע" },
   "optionDesc_quiet": { "message": "פאַרשטיקן אַלע לאָגינג אַחוץ ערראָרס" },
   "optionDesc_init": { "message": "שאַפֿן קאָנפֿיג טעקע (אין פּראָיעקט וואָרצל)" },

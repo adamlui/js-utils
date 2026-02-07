@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Ol Boolean opsen" },
   "helpSection_params": { "message": "Parametres opsen" },
   "helpSection_cmds": { "message": "Toksave" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kod bilong tokples bilong soim UI long" },
   "inputPathDesc_main": { "message": "Rot i go long JavaScript file o directory i gat JavaScript files long minified" },
   "inputPathDesc_extra": { "message": "ol i save yusim ol dispela samting long mekim wok bilong God" },
   "outputPathDesc_main": { "message": "Rot i go long file o directory we minified files bai stap" },

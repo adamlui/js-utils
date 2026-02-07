@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Параметрҳои Boolean" },
   "helpSection_params": { "message": "Параметрҳо" },
   "helpSection_cmds": { "message": "Фармонҳо" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 рамзи забон барои намоиши UI дар" },
   "inputPathDesc_main": { "message": "Роҳча ба файли SCSS ё феҳристи дорои файлҳои SCSS, ки бояд тартиб дода шаванд" },
   "inputPathDesc_extra": { "message": "относительно текущего каталога" },
   "outputPathDesc_main": { "message": "Роҳча ба файл ё феҳрист, ки дар он файлҳои сарчашмаи харитаи CSS + нигоҳ дошта мешаванд" },

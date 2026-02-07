@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Pilihan boolean" },
   "helpSection_params": { "message": "Pilihan parameter" },
   "helpSection_cmds": { "message": "Perintah maklumat" },
+  "optionDesc_uiLang": { "message": "Kod bahasa ISO 639-1 untuk memaparkan UI" },
   "inputPathDesc_main": { "message": "Laluan ke fail JavaScript atau direktori yang mengandungi fail JavaScript untuk diminifikasikan" },
   "inputPathDesc_extra": { "message": "relatif kepada direktori kerja semasa" },
   "outputPathDesc_main": { "message": "Laluan ke fail atau direktori di mana fail minified akan disimpan" },

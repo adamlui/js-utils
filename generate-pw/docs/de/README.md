@@ -283,6 +283,7 @@ Parameteroptionen:
  --qty=n                     Generieren Sie n Passwörter.
  --charset=zeich             Passwörter dürfen nur zeich enthalten.
  --exclude=zeich             Schließen Sie zeich aus Passwörtern aus.
+ --ui-lang="code"            ISO 639-1-Code der Sprache, in der die Benutzeroberfläche angezeigt werden soll.
  --config="path/to/file"     Benutzerdefinierte Konfigurationsdatei laden.
 
 Boolesche Optionen:

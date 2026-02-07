@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Parameter opsies" },
   "helpSection_flags": { "message": "Konfigureer opsies" },
   "helpSection_cmds": { "message": "Inligtingopdragte" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kode van taal te vertoon UI in" },
   "optionDesc_config": { "message": "Laai persoonlike konfigurasielêer" },
   "optionDesc_quiet": { "message": "Onderdruk alle aanmelding behalwe foute" },
   "optionDesc_init": { "message": "Skep konfigurasielêer (in projekwortel)" },

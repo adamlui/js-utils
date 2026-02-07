@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Iiparamitha onokukhetha kuzo" },
   "helpSection_flags": { "message": "Izinto onokuzikhetha ze-boolean" },
   "helpSection_cmds": { "message": "Imiyalelo yenkcazelo" },
+  "optionDesc_uiLang": { "message": "Ikhowudi yolwimi ye-ISO 639-1 yokubonisa i-UI" },
   "optionDesc_length": { "message": "Yenza i (i) phasiwedi enobude obungathethekiyo" },
   "optionDesc_qty": { "message": "Yenza iphasiwedi(iiphasiwedi)" },
   "optionDesc_config": { "message": "Faka ifayile yokumisela ekhethekileyo" },

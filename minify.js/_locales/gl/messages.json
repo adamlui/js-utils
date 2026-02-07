@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Opcións booleanas" },
   "helpSection_params": { "message": "Opcións de parámetro" },
   "helpSection_cmds": { "message": "Comandos de información" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 código de idioma para mostrar UI en" },
   "inputPathDesc_main": { "message": "Camiño ao ficheiro ou directorio JavaScript que contén ficheiros JavaScript a minificar" },
   "inputPathDesc_extra": { "message": "relativo ao directorio de traballo actual" },
   "outputPathDesc_main": { "message": "Camiño ao ficheiro ou directorio onde se almacenarán os ficheiros minificados" },

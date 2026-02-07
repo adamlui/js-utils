@@ -151,6 +151,7 @@ Options booléennes:
 Options des paramètres:
  --ignores="dir/,file1.js,file2.js"   Fichiers/répertoires à exclure de la minification.
  --comment="commentaire"              Ajoutez le commentaire d’en-tête au code minifié. Séparez par ligne en utilisant '\n'.
+ --ui-lang="code"                     Code ISO 639-1 de la langue dans laquelle afficher l'interface utilisateur.
  --config="path/to/file"              Charger le fichier de configuration personnalisé.
 
 Commandes:

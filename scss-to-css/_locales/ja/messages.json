@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Booleanオプション" },
   "helpSection_params": { "message": "パラメータオプション" },
   "helpSection_cmds": { "message": "コマンド" },
+  "optionDesc_uiLang": { "message": "UIを表示する言語のISO 639 -1コード" },
   "inputPathDesc_main": { "message": "コンパイルされるSCSSファイルまたはSCSSファイルを含むディレクトリへのパス" },
   "inputPathDesc_extra": { "message": "現在の作業ディレクトリと相対的に" },
   "outputPathDesc_main": { "message": "CSS +ソースマップファイルが保存されるファイルまたはディレクトリへのパス" },

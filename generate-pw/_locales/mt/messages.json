@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Għażliet tal-parametri" },
   "helpSection_flags": { "message": "Għażliet boolean" },
   "helpSection_cmds": { "message": "Kmand tal-informazzjoni" },
+  "optionDesc_uiLang": { "message": "Kodiċi tal-lingwa ISO 639-1 biex turi l-UI fi" },
   "optionDesc_length": { "message": "Iġġenera password(s) ta' tul n" },
   "optionDesc_qty": { "message": "Iġġenera n password(s)" },
   "optionDesc_config": { "message": "Tella' fajl tal-konfig personalizzat" },

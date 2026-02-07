@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Safidy momba ny marika" },
   "helpSection_flags": { "message": "Safidy Boleanina" },
   "helpSection_cmds": { "message": "Baikon'ny fampahalalana" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 fehezan-dalàna ny fiteny mba haneho UI in" },
   "optionDesc_length": { "message": "_Avereno soratana ireo teny fanalahidy" },
   "optionDesc_qty": { "message": "Mamorona tenimiafina n (s)" },
   "optionDesc_config": { "message": "Maka ilay raki-kirakira safidy" },

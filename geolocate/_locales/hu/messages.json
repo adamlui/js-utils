@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Paraméteropciók" },
   "helpSection_flags": { "message": "Konfigurációs beállítások" },
   "helpSection_cmds": { "message": "Információs parancsok" },
+  "optionDesc_uiLang": { "message": "A felhasználói felület megjelenítéséhez használt nyelv ISO 639-1 kódja" },
   "optionDesc_config": { "message": "Egyéni konfigurációs fájl betöltése" },
   "optionDesc_quiet": { "message": "Az összes naplózás letiltása a hibák kivételével" },
   "optionDesc_init": { "message": "Konfigurációs fájl létrehozása (a projekt gyökerében)" },

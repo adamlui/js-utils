@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Nā koho palena" },
   "helpSection_flags": { "message": "Nā koho Boolean" },
   "helpSection_cmds": { "message": "Nā kauoha ʻike" },
+  "optionDesc_uiLang": { "message": "ʻO ke code ʻōlelo ISO 639-1 e hōʻike i ka UI ma" },
   "optionDesc_qty": { "message": "E hana i n IP address(es)" },
   "optionDesc_config": { "message": "E hoʻouka i ka faila hoʻonohonoho maʻamau" },
   "optionDesc_ipv6": { "message": "E hana i ka helu IPv6" },

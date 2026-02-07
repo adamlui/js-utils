@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "گزینه های پارامتر" },
   "helpSection_flags": { "message": "گزینه های بولی" },
   "helpSection_cmds": { "message": "دستورات اطلاعات" },
+  "optionDesc_uiLang": { "message": "کد زبان ISO 639-1 برای نمایش رابط کاربری" },
   "optionDesc_qty": { "message": "ایجاد n آدرس IP" },
   "optionDesc_config": { "message": "بارگذاری فایل پیکربندی سفارشی" },
   "optionDesc_ipv6": { "message": "آدرس IPv6 را ایجاد کنید" },

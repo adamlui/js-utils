@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Hindura amahitamo" },
   "helpSection_flags": { "message": "Amahitamo" },
   "helpSection_cmds": { "message": "Amabwiriza" },
+  "optionDesc_uiLang": { "message": "ISO 6391 Code of Language image in image" },
   "optionDesc_config": { "message": "Kunoza IDOSIYE" },
   "optionDesc_quiet": { "message": "Kuraho ibiti byose usibye amakosa" },
   "optionDesc_init": { "message": "IDOSIYE in Umushinga Imizi" },

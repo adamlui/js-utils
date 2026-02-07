@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Параметрҳо" },
   "helpSection_flags": { "message": "Параметрҳои Boolean" },
   "helpSection_cmds": { "message": "Фармонҳои иттилоотӣ" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 рамзи забон барои намоиши UI дар" },
   "optionDesc_qty": { "message": "Эҷод кардани суроғаи IP (ҳо)" },
   "optionDesc_config": { "message": "Боркунии файли танзимоти фармоишӣ" },
   "optionDesc_ipv6": { "message": "Эҷод кардани суроғаи IPv6" },

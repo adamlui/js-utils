@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "བུ་ལིན་གདམ་ཁ།" },
   "helpSection_params": { "message": "ཚད་འཇལ་བྱེད་ཀྱི་འདེམས་སྟངས" },
   "helpSection_cmds": { "message": "བརྡ་དོན་བཀའ་སློབ །" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 སྐད་ཡིག་གི་ཁ་བྱང་།" },
   "inputPathDesc_main": { "message": "JavaScript ཡིག་སྣོད་དང་ཡིག་སྣོད་ནང་JavaScript ཡིག་སྣོད་ཡོད་པའི་ལམ་" },
   "inputPathDesc_extra": { "message": "ད་ལྟའི་དྲ་གནས ། དྲ་གནས་གཙོ་ངོས ། >" },
   "outputPathDesc_main": { "message": "ཡིག་ཆ་ཆུང་ཆུང་གསོག་འཇོག་བྱེད་པའི་ཡིག་ཆ་དང་ཡིག་ཆའི་ལམ་" },

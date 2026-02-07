@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "布尔选项" },
   "helpSection_params": { "message": "参数选项" },
   "helpSection_cmds": { "message": "命令" },
+  "optionDesc_uiLang": { "message": "用于显示UI的语言的ISO 639-1代码" },
   "inputPathDesc_main": { "message": "包含要编译的SCSS文件的SCSS文件或目录的路径" },
   "inputPathDesc_extra": { "message": "相对于当前工作目录" },
   "outputPathDesc_main": { "message": "将存储CSS +源映射文件的文件或目录的路径" },

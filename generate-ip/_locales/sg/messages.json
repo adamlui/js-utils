@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Akpengba ye so mo lingbi ti sara" },
   "helpSection_flags": { "message": "Aye so mo lingbi ti sara ti mû maboko na mo" },
   "helpSection_cmds": { "message": "Aye so afa so a yeke nzoni e sara" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 code ti yanga ti kodoro ti fa UI na" },
   "optionDesc_qty": { "message": "A yeke na lege ti kode ti kode ti kode ti kode ti kodoro ti kodoro ti Israël" },
   "optionDesc_config": { "message": "Load Custom config faïl" },
   "optionDesc_ipv6": { "message": "Adresse IPv6" },

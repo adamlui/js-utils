@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Opcións de parámetro" },
   "helpSection_flags": { "message": "Opcións de configuración" },
   "helpSection_cmds": { "message": "Comandos de información" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 código de idioma para mostrar UI en" },
   "optionDesc_config": { "message": "Cargar un ficheiro de configuración personalizado" },
   "optionDesc_quiet": { "message": "Suprimir todo o rexistro agás erros" },
   "optionDesc_init": { "message": "Crear un ficheiro de configuración (na raíz do proxecto)" },

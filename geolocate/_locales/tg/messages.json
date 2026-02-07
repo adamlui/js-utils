@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Танзими имконот" },
   "helpSection_flags": { "message": "Танзими имконот" },
   "helpSection_cmds": { "message": "Фармонҳои иттилоотӣ" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 рамзи забон барои намоиши UI дар" },
   "optionDesc_config": { "message": "Боркунии файли танзимоти фармоишӣ" },
   "optionDesc_quiet": { "message": "Ғайри хатогӣ ҳамаи қайдкуниҳоро пахш кунед" },
   "optionDesc_init": { "message": "Эҷод кардани файли конфигуратсия (дар решаи лоиҳа)" },

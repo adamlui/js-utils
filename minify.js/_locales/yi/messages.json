@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "בוליאַן אָפּציעס" },
   "helpSection_params": { "message": "פּאַראַמעטער אָפּציעס" },
   "helpSection_cmds": { "message": "אינפֿאָרמאַציע קאַמאַנדז" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 קאָד פֿון שפּראַך צו ווײַזן באַניצער־אינטערפֿייס אין" },
   "inputPathDesc_main": { "message": "וועג צו דזשאַוואַסקריפּט טעקע אָדער וועגווייַזער מיט דזשאַוואַסקריפּט טעקעס צו זיין מיניפיעד" },
   "inputPathDesc_extra": { "message": "קאָרעוו צו די קראַנט אַרבעט וועגווייַזער" },
   "outputPathDesc_main": { "message": "וועג צו טעקע אָדער וועגווייַזער ווו מיניפיעד טעקעס וועט זיין סטאָרד" },

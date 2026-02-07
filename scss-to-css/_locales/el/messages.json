@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Δυαδικές επιλογές" },
   "helpSection_params": { "message": "Επιλογές παραμέτρων" },
   "helpSection_cmds": { "message": "Εντολές" },
+  "optionDesc_uiLang": { "message": "Κωδικός γλώσσας ISO 639-1 για εμφάνιση διεπαφής χρήστη σε" },
   "inputPathDesc_main": { "message": "Διαδρομή προς αρχείο ή κατάλογο SCSS που περιέχει αρχεία SCSS προς μεταγλώττιση" },
   "inputPathDesc_extra": { "message": "σε σχέση με τον τρέχοντα κατάλογο εργασίας" },
   "outputPathDesc_main": { "message": "Διαδρομή προς το αρχείο ή τον κατάλογο όπου θα αποθηκεύονται τα αρχεία CSS + sourcemap" },

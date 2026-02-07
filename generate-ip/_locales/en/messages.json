@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parameter options" },
   "helpSection_flags": { "message": "Boolean options" },
   "helpSection_cmds": { "message": "Commands" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 code of language to display UI in" },
   "optionDesc_qty": { "message": "Generate n IP address(es)" },
   "optionDesc_config": { "message": "Load custom config file" },
   "optionDesc_ipv6": { "message": "Generate IPv6 address" },

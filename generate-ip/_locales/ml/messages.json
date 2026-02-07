@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "പാരാമീറ്റർ ഓപ്ഷനുകൾ" },
   "helpSection_flags": { "message": "ബൂളിയൻ ഓപ്ഷനുകൾ" },
   "helpSection_cmds": { "message": "വിവര കമാന്‍ഡുകള്‍" },
+  "optionDesc_uiLang": { "message": "യുഐ പ്രദർശിപ്പിക്കുന്നതിനുള്ള ISO 639-1 ഭാഷാ കോഡ്" },
   "optionDesc_qty": { "message": "N IP വിലാസം(ങ്ങൾ) ജനറേറ്റ് ചെയ്യുക" },
   "optionDesc_config": { "message": "ഇഷ്ടാനുസൃത കോൺഫിഗറേഷൻ ഫയൽ ലോഡ് ചെയ്യുക" },
   "optionDesc_ipv6": { "message": "IPv6 വിലാസം സൃഷ്ടിക്കുക" },

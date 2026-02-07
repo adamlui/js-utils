@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parametri opcija BLM" },
   "helpSection_flags": { "message": "Booleove opcije" },
   "helpSection_cmds": { "message": "Info naredbe" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kod jezika za prikaz korisničkog sučelja u" },
   "optionDesc_qty": { "message": "Generiraj n IP adresa" },
   "optionDesc_config": { "message": "Učitaj prilagođenu konfiguracijsku datoteku" },
   "optionDesc_ipv6": { "message": "Generiraj IPv6 adresu" },

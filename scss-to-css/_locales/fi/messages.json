@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Boolen vaihtoehdot" },
   "helpSection_params": { "message": "Parametrivaihtoehdot" },
   "helpSection_cmds": { "message": "Komennot" },
+  "optionDesc_uiLang": { "message": "Iso 639-1 -kielikoodi käyttöliittymän näyttämiseksi" },
   "inputPathDesc_main": { "message": "Polku SCSS-tiedostoon tai hakemistoon, joka sisältää käännettävät SCSS-tiedostot" },
   "inputPathDesc_extra": { "message": "suhteessa nykyiseen työhakemistoon" },
   "outputPathDesc_main": { "message": "Polku tiedostoon tai hakemistoon, johon CSS + sourcemap-tiedostot tallennetaan" },

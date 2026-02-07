@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Opsyon paramèt" },
   "helpSection_flags": { "message": "Opsyon Boolean" },
   "helpSection_cmds": { "message": "Kòmandman Enfòmasyon" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kòd langaj pou montre UI nan" },
   "optionDesc_qty": { "message": "Jenere yon adrès IP (yo)" },
   "optionDesc_config": { "message": "Chaj dosye konfigirasyon koutim" },
   "optionDesc_ipv6": { "message": "Jenere adrès IPv6" },

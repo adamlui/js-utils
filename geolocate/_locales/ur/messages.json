@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "کنفیگ کے اختیارات" },
   "helpSection_flags": { "message": "کنفیگ کے اختیارات" },
   "helpSection_cmds": { "message": "معلومات کے احکامات" },
+  "optionDesc_uiLang": { "message": "UI ظاہر کرنے کے لیے ISO 639-1 زبان کا کوڈ" },
   "optionDesc_config": { "message": "کسٹم کنفیگ فائل لوڈ کریں" },
   "optionDesc_quiet": { "message": "غلطیوں کے علاوہ تمام لاگنگ کو دبائیں" },
   "optionDesc_init": { "message": "کنفیگ فائل بنائیں (پروجیکٹ روٹ میں)" },

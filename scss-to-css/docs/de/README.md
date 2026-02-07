@@ -155,6 +155,7 @@ Boolesche Optionen:
 Parameteroptionen:
  --ignores="dir/,file1.scss,file2.scss"   Dateien/Verzeichnisse, die von der Kompilierung ausgeschlossen werden sollen.
  --comment="comment"                      Header-Kommentar dem kompilierten CSS voranstellen. Mit '\n' zeilenweise trennen.
+ --ui-lang="code"                         ISO 639-1-Code der Sprache, in der die Benutzeroberfläche angezeigt werden soll.
  --config="path/to/file"                  Benutzerdefinierte Konfigurationsdatei laden.
 
 Befehle:

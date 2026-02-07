@@ -155,6 +155,7 @@ Parameter options:
  --ignores="dir/,file1.js,file2.js"   Files/directories to exclude from minification.
  --comment="comment"                  Prepend header comment to minified code.
                                       Separate by line using '\n'.
+ --ui-lang="code"                     ISO 639-1 code of language to display UI in.
  --config="path/to/file"              Load custom config file.
 
 Commands:

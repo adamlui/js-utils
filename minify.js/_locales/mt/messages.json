@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Għażliet boolean" },
   "helpSection_params": { "message": "Għażliet tal-parametri" },
   "helpSection_cmds": { "message": "Kmand tal-informazzjoni" },
+  "optionDesc_uiLang": { "message": "Kodiċi tal-lingwa ISO 639-1 biex turi l-UI fi" },
   "inputPathDesc_main": { "message": "Il-mogħdija għall-fajl jew id-direttorju JavaScript li fih il-fajls JavaScript li għandhom jiġu mminifikati" },
   "inputPathDesc_extra": { "message": "meta mqabbel mad-direttorju tax-xogħol attwali" },
   "outputPathDesc_main": { "message": "Il-mogħdija għall-fajl jew id-direttorju fejn se jinħażnu l-fajls minifikati" },

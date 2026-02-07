@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Parametri opcija BLM" },
   "helpSection_flags": { "message": "Opcije konfiguracije" },
   "helpSection_cmds": { "message": "Info naredbe" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kod jezika za prikaz korisničkog sučelja u" },
   "optionDesc_config": { "message": "Učitaj prilagođenu konfiguracijsku datoteku" },
   "optionDesc_quiet": { "message": "Obustavi sve zapisivanje osim pogrešaka" },
   "optionDesc_init": { "message": "Kreirajte konfiguracijsku datoteku (u korijenu projekta)" },

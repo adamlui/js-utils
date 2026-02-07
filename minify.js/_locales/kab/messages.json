@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Iɣewwaṛen n Boolean" },
   "helpSection_params": { "message": "Iɣewwaṛen n uzegrir" },
   "helpSection_cmds": { "message": "Iɣewwaṛen n isefka" },
+  "optionDesc_uiLang": { "message": "Tutlayt ISO 639-1 i wakken ad d-tban deg" },
   "inputPathDesc_main": { "message": "Abrid ɣer ufaylu JavaScript neɣ afaylu n tbaḍnit yesɛan isefka JavaScript i ilaq ad yettwakksen" },
   "inputPathDesc_extra": { "message": "relatif à la recherche d 'un plan cul" },
   "outputPathDesc_main": { "message": "Abrid ɣer ufaylu neɣ aɣbalu anida ara yettwasekles yifuyla yettwasekles" },

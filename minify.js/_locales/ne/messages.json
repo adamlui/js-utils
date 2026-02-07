@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "बुलियन विकल्पहरू" },
   "helpSection_params": { "message": "प्यारामिटर विकल्पहरू" },
   "helpSection_cmds": { "message": "सूचना आदेशहरू" },
+  "optionDesc_uiLang": { "message": "UI प्रदर्शन गर्न भाषाको ISO 639 -1 कोड" },
   "inputPathDesc_main": { "message": "जाभास्क्रिप्ट फाइल वा जाभास्क्रिप्ट फाइलहरू समावेश गर्ने डाइरेक्टरीको बाटोलाई सानो बनाइनेछ" },
   "inputPathDesc_extra": { "message": "हालको कार्य डाइरेक्टरीको सापेक्ष" },
   "outputPathDesc_main": { "message": "फाइल वा डाइरेक्टरीको बाटो जहाँ साना फाइलहरू भण्डारण गरिनेछ" },

@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parametru opcijas" },
   "helpSection_flags": { "message": "Būla opcijas" },
   "helpSection_cmds": { "message": "Informācijas komandas" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 valodas kods, lai parādītu UI" },
   "optionDesc_length": { "message": "Ģenerējiet n garu (-as) paroli(-es)" },
   "optionDesc_qty": { "message": "Ģenerēt n paroli(-es)" },
   "optionDesc_config": { "message": "Ielādēt pielāgotu konfigurācijas failu" },

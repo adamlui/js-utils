@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Izinto onokuzikhetha ze-boolean" },
   "helpSection_params": { "message": "Iiparamitha onokukhetha kuzo" },
   "helpSection_cmds": { "message": "Amagqa_bantshintshi" },
+  "optionDesc_uiLang": { "message": "Ikhowudi yolwimi ye-ISO 639-1 yokubonisa i-UI" },
   "inputPathDesc_main": { "message": "Indlela eya kwifayile ye-SCSS okanye kulawulo oluneefayile ze-SCSS eziza kuqulunqwa" },
   "inputPathDesc_extra": { "message": "ngokunxulumene neefayili zokusebenza ezikhoyo ngoku" },
   "outputPathDesc_main": { "message": "Indlela eya kwifayile okanye kulawulo apho iifayile zeCSS + sourcemap ziza kugcinwa khona" },

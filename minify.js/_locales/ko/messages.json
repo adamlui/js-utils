@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "부울 옵션" },
   "helpSection_params": { "message": "매개 변수 옵션" },
   "helpSection_cmds": { "message": "정보 명령" },
+  "optionDesc_uiLang": { "message": "UI를 표시할 언어의 ISO 639-1 코드" },
   "inputPathDesc_main": { "message": "축소할 JavaScript 파일이 포함된 JavaScript 파일 또는 디렉토리의 경로" },
   "inputPathDesc_extra": { "message": "현재 작업 디렉토리를 기준으로 함" },
   "outputPathDesc_main": { "message": "축소된 파일이 저장될 파일 또는 디렉터리 경로" },

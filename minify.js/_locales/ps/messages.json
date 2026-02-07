@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "هو- نه غوراوي" },
   "helpSection_params": { "message": "د پاراميټر اختیارونه" },
   "helpSection_cmds": { "message": "د معلوماتو امرونه" },
+  "optionDesc_uiLang": { "message": "په کې د UI ښودلو لپاره د ISO 639-1 د ژبې کوډ" },
   "inputPathDesc_main": { "message": "د جاواسکرېپټ دوتنې یا ډایرکټري ته لاره چې د جاواسکرېپټ دوتنې پکې شاملې وي" },
   "inputPathDesc_extra": { "message": "د اوسني کاري لارښود سره تړاو لري" },
   "outputPathDesc_main": { "message": "د فایل یا لارښود لپاره لاره چیرې چې کوچنۍ دوتنې به زیرمه شي" },

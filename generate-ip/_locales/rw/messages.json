@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Amahitamo ya Parameter" },
   "helpSection_flags": { "message": "Amahitamo ya Boolean" },
   "helpSection_cmds": { "message": "Amabwiriza" },
+  "optionDesc_uiLang": { "message": "ISO 6391 Code of Language image in image" },
   "optionDesc_qty": { "message": "Kora aderesi ya IP n" },
   "optionDesc_config": { "message": "Kunoza IDOSIYE" },
   "optionDesc_ipv6": { "message": "Kora aderesi ya IPv6" },

@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "පරාමිති විකල්ප" },
   "helpSection_flags": { "message": "බූලියන් විකල්ප" },
   "helpSection_cmds": { "message": "තොරතුරු විධාන" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 භාෂා කේතය ප්රදර්ශනය කිරීමට UI" },
   "optionDesc_qty": { "message": "N IP ලිපිනය ජනනය කරන්න (es)" },
   "optionDesc_config": { "message": "අභිරුචි සැකසුම් ගොනුව පූරණය කරන්න" },
   "optionDesc_ipv6": { "message": "IPv6 ලිපිනය ජනනය කරන්න" },

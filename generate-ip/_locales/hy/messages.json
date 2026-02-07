@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Պարամետրի տարբերակներ" },
   "helpSection_flags": { "message": "Բուլյան ընտրանքներ" },
   "helpSection_cmds": { "message": "Տեղեկությունների հրամաններ" },
+  "optionDesc_uiLang": { "message": "ISO 639 -1 լեզվի կոդը UI - ում ցուցադրելու համար" },
   "optionDesc_qty": { "message": "Ստեղծել n IP հասցե(ներ)" },
   "optionDesc_config": { "message": "Բեռնել անհատականացված կոնֆիգուրացիոն ֆայլը" },
   "optionDesc_ipv6": { "message": "Ստեղծել IPv6 հասցե" },

@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Għażliet tal-parametri" },
   "helpSection_flags": { "message": "Għażliet boolean" },
   "helpSection_cmds": { "message": "Kmand tal-informazzjoni" },
+  "optionDesc_uiLang": { "message": "Kodiċi tal-lingwa ISO 639-1 biex turi l-UI fi" },
   "optionDesc_qty": { "message": "Iġġenera n indirizz(i) IP" },
   "optionDesc_config": { "message": "Tella' fajl tal-konfig personalizzat" },
   "optionDesc_ipv6": { "message": "Iġġenera l-indirizz IPv6" },

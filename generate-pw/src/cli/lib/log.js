@@ -40,6 +40,7 @@ module.exports = {
                 ` --qty=n                     ${cli.msgs.optionDesc_qty}.`,
                 ` --charset=chars             ${cli.msgs.optionDesc_charset}.`,
                 ` --exclude=chars             ${cli.msgs.optionDesc_exclude}.`,
+                ` --ui-lang="code"            ${cli.msgs.optionDesc_uiLang}.`,
                 ` --config="path/to/file"     ${cli.msgs.optionDesc_config}.`
             ],
             flags: [

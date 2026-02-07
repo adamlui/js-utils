@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "बुलियन विकल्पहरू" },
   "helpSection_params": { "message": "प्यारामिटर विकल्पहरू" },
   "helpSection_cmds": { "message": "आदेशहरू" },
+  "optionDesc_uiLang": { "message": "UI प्रदर्शन गर्न भाषाको ISO 639 -1 कोड" },
   "inputPathDesc_main": { "message": "कम्पाइल गर्नुपर्ने SCSS फाइल वा SCSS फाइलहरू भएको निर्देशिकाको मार्ग" },
   "inputPathDesc_extra": { "message": "हालको काम गर्ने निर्देशिकाको सापेक्षमा" },
   "outputPathDesc_main": { "message": "फाइल वा डाइरेक्टरीको बाटो जहाँ CSS + सोर्सम्याप फाइलहरू भण्डारण गरिनेछ" },

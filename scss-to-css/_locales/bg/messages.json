@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Булеви опции" },
   "helpSection_params": { "message": "Опции за параметрите" },
   "helpSection_cmds": { "message": "?љ?????&#176;??????" },
+  "optionDesc_uiLang": { "message": "ISO 639 -1 код на езика за показване на потребителския интерфейс в" },
   "inputPathDesc_main": { "message": "Път до SCSS файл или директория, съдържаща SCSS файлове, които трябва да бъдат компилирани" },
   "inputPathDesc_extra": { "message": "спрямо текущата работна директория" },
   "outputPathDesc_main": { "message": "Път до файл или директория, където ще се съхраняват CSS + sourcemap файлове" },

@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "אפשרויות בוליאניות" },
   "helpSection_params": { "message": "אפשרויות פרמטר" },
   "helpSection_cmds": { "message": "פקודות מידע" },
+  "optionDesc_uiLang": { "message": "קוד שפה ISO 639 -1 להצגה בממשק המשתמש" },
   "inputPathDesc_main": { "message": "נתיב לקובץ JavaScript או לספריה המכילים קבצי JavaScript שיש למזער" },
   "inputPathDesc_extra": { "message": "ביחס לספריית העבודה הנוכחית" },
   "outputPathDesc_main": { "message": "נתיב לקובץ או לספריה שבהם יאוחסנו קבצים מוקטנים" },

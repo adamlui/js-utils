@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Boolean ရွေးစရာများ" },
   "helpSection_params": { "message": "အကန့်အသတ်ရွေးချယ်စရာများ" },
   "helpSection_cmds": { "message": "သတင်းအချက်အလက်ဆိုင်ရာ ညွှန်ကြားချက်များ" },
+  "optionDesc_uiLang": { "message": "ISO ကို 639-1 ဘာသာစကားကုဒ် UI ကိုပြသရန်" },
   "inputPathDesc_main": { "message": "Minified လုပ်ရန် JavaScript ဖိုင်များပါဝင်သော JavaScript ဖိုင် သို့မဟုတ် directory သို့ လမ်းကြောင်း" },
   "inputPathDesc_extra": { "message": "လက်ရှိအလုပ်အကိုင်ညွှန်ကြားမှု ဦး စီးဌာန" },
   "outputPathDesc_main": { "message": "အသေးစားဖိုင်များကို သိမ်းဆည်းထားမည့် ဖိုင် သို့မဟုတ် လမ်းညွှန်ဆီ လမ်းကြောင်း" },

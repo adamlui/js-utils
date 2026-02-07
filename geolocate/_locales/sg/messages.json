@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Akpengba ye so mo lingbi ti sara" },
   "helpSection_flags": { "message": "Akpengba ye so mo lingbi ti sara" },
   "helpSection_cmds": { "message": "Aye so afa so a yeke nzoni e sara" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 code ti yanga ti kodoro ti fa UI na" },
   "optionDesc_config": { "message": "Load Custom config faïl" },
   "optionDesc_quiet": { "message": "A yeke kanga lege na azo kue ti sara ye na lege ni ape me a yeke gi na lege ni" },
   "optionDesc_init": { "message": "Create config file (na yâ ti projet root)" },

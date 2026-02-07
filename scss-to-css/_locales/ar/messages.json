@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "خيارات منطقية" },
   "helpSection_params": { "message": "خيارات المعلمة" },
   "helpSection_cmds": { "message": "ﺮﻣﺍﻭﺃ" },
+  "optionDesc_uiLang": { "message": "رمز لغة ISO 639-1 لعرض واجهة المستخدم في" },
   "inputPathDesc_main": { "message": "المسار إلى ملف أو دليل SCSS يحتوي على ملفات SCSS المراد تجميعها" },
   "inputPathDesc_extra": { "message": "بالنسبة لدليل العمل الحالي" },
   "outputPathDesc_main": { "message": "المسار إلى ملف أو دليل حيث سيتم تخزين ملفات CSS + sourcemap" },

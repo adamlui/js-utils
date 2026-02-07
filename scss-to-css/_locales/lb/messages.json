@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Boolesche Optionen" },
   "helpSection_params": { "message": "Parameteroptiounen" },
   "helpSection_cmds": { "message": "Befehler" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 Code der Sprache um UI an zu zeigen" },
   "inputPathDesc_main": { "message": "Weg zu SCSS Datei oder Verzeechnes mat SCSS Dateien ze kompiléieren" },
   "inputPathDesc_extra": { "message": "zum aktuellen Jobcenter" },
   "outputPathDesc_main": { "message": "Wee op Datei oder Verzeechnes wou CSS + Sourcemap Dateien gespäichert ginn" },

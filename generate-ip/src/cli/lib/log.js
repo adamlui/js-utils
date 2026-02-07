@@ -37,6 +37,7 @@ module.exports = {
             params: [
                 `\n${this.colors.bw}o ${cli.msgs.helpSection_params}:${this.colors.nc}`,
                 ` --qty=n                     ${cli.msgs.optionDesc_qty}.`,
+                ` --ui-lang="code"            ${cli.msgs.optionDesc_uiLang}.`,
                 ` --config="path/to/file"     ${cli.msgs.optionDesc_config}.`
             ],
             flags: [

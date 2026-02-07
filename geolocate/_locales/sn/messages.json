@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Ronga zvingasarudzwa" },
   "helpSection_flags": { "message": "Ronga zvingasarudzwa" },
   "helpSection_cmds": { "message": "Info mirairo" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 remutauro kuratidza UI muna" },
   "optionDesc_config": { "message": "Load custom config file" },
   "optionDesc_quiet": { "message": "Dzvinyirira kutema matanda ese kunze kwekukanganisa" },
   "optionDesc_init": { "message": "Create config file (in project root)" },

@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Valkostir færibreytna" },
   "helpSection_flags": { "message": "Boole-valkostir" },
   "helpSection_cmds": { "message": "Upplýsingaskipanir" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kóði tungumáls til að sýna notendaviðmót í" },
   "optionDesc_qty": { "message": "Búa til n IP tölu (r)" },
   "optionDesc_config": { "message": "Hlaða inn sérsniðinni stilliskrá" },
   "optionDesc_ipv6": { "message": "Búa til IPv6 vistfang" },

@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parameetri valikud" },
   "helpSection_flags": { "message": "Tõeväärtuse valikud" },
   "helpSection_cmds": { "message": "Teabekäsud" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 keelekood kasutajaliidese kuvamiseks" },
   "optionDesc_qty": { "message": "Genereeri n IP-aadressi" },
   "optionDesc_config": { "message": "Laadi kohandatud konfiguratsioonifail" },
   "optionDesc_ipv6": { "message": "Genereeri IPv6 aadress" },

@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Ifyo Mwingacita pa Kuti Mulesanga Ifya Kucita" },
   "helpSection_params": { "message": "Ifya kusalululapo" },
   "helpSection_cmds": { "message": "Ifyebo Fyabamo Lyonse" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 Code of Language Ukulele Tabs in Ukulele Tabs" },
   "inputPathDesc_main": { "message": "Fela Anikulapo Kuti JavaScript file or directory containing JavaScript files to be minified" },
   "inputPathDesc_extra": { "message": "about Mulya Wulandari" },
   "outputPathDesc_main": { "message": "Fela Anikulapo Kuti or Fela Anikulapo Kuti Files" },

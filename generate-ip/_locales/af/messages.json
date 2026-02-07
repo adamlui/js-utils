@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parameter opsies" },
   "helpSection_flags": { "message": "Boolse opsies" },
   "helpSection_cmds": { "message": "Inligtingopdragte" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kode van taal te vertoon UI in" },
   "optionDesc_qty": { "message": "Genereer n IP-adres(es)" },
   "optionDesc_config": { "message": "Laai persoonlike konfigurasielêer" },
   "optionDesc_ipv6": { "message": "Genereer IPv6-adres" },

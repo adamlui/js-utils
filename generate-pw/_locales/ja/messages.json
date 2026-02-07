@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "パラメータオプション" },
   "helpSection_flags": { "message": "ブール値のオプション" },
   "helpSection_cmds": { "message": "情報コマンド" },
+  "optionDesc_uiLang": { "message": "UIを表示する言語のISO 639 -1コード" },
   "optionDesc_length": { "message": "N の長さのパスワードを生成する" },
   "optionDesc_qty": { "message": "N 個のパスワードを生成する" },
   "optionDesc_config": { "message": "カスタム構成ファイルを読み込む" },

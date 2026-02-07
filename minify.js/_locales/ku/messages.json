@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Vebijarkên Boolean" },
   "helpSection_params": { "message": "Vebijarkên Parameterê" },
   "helpSection_cmds": { "message": "Fermanên agahdariyê" },
+  "optionDesc_uiLang": { "message": "Koda ISO 639-1 ya zimanê ji bo nîşandana UI-ê" },
   "inputPathDesc_main": { "message": "Rêya berbi pel an pelrêça JavaScriptê ya ku pelên JavaScriptê dihewîne ku werin kêm kirin" },
   "inputPathDesc_extra": { "message": "li gorî pelrêça xebatê ya heyî" },
   "outputPathDesc_main": { "message": "Rêya pelê an pelrêça ku pelên piçûkkirî dê lê werin hilanîn" },

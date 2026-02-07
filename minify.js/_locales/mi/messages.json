@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Kōwhiringa Boolean" },
   "helpSection_params": { "message": "Kōwhiringa parameter" },
   "helpSection_cmds": { "message": "Ngā Whakahau" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 waehere reo ki te whakaatu UI i roto i" },
   "inputPathDesc_main": { "message": "Te ara ki te kōnae JavaScript ranei aratohu kei roto i ngā kōnae JavaScript ki te kia minified" },
   "inputPathDesc_extra": { "message": "e pā ana ki te aratohu mahi o nāianei" },
   "outputPathDesc_main": { "message": "He ara ki te kōnae, ki te aratohu ranei ka rokiroki ngā kōnae minified" },

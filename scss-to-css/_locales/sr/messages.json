@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Bulove opcije" },
   "helpSection_params": { "message": "Opcije parametara BLM" },
   "helpSection_cmds": { "message": "Komande" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kôd jezika za prikaz korisničkog interfejsa u" },
   "inputPathDesc_main": { "message": "Putanja do SCSS datoteke ili direktorijuma koji sadrži SCSS datoteke koje treba kompajlirati" },
   "inputPathDesc_extra": { "message": "u odnosu na trenutni radni direktorijum" },
   "outputPathDesc_main": { "message": "Putanja do datoteke ili direktorijuma gde će se čuvati CSS + sourcemap datoteke" },

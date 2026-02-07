@@ -155,6 +155,7 @@ Booleaanse opties:
 Parameteropties:
  --ignores="dir/,file1.scss,file2.scss"   Bestanden/mappen die moeten worden uitgesloten van de compilatie.
  --comment="comment"                      Voeg headercommentaar toe aan gecompileerde CSS. Scheid per regel met '\n'.
+ --ui-lang="code"                         ISO 639-1-code voor de taal waarin de gebruikersinterface moet worden weergegeven.
  --config="path/to/file"                  Laad een aangepast configuratiebestand.
 
 Commando's:

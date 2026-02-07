@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Opciones de parámetros" },
   "helpSection_flags": { "message": "Opciones booleanas" },
   "helpSection_cmds": { "message": "Comandos de información" },
+  "optionDesc_uiLang": { "message": "Código de idioma ISO 639-1 para mostrar la interfaz de usuario en" },
   "optionDesc_length": { "message": "Generar contraseña(s) de longitud n" },
   "optionDesc_qty": { "message": "Generar n contraseña(s)" },
   "optionDesc_config": { "message": "Cargar archivo de configuración personalizado" },

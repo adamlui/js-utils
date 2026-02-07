@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Boolse opsies" },
   "helpSection_params": { "message": "Parameter opsies" },
   "helpSection_cmds": { "message": "Kommentaar" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kode van taal te vertoon UI in" },
   "inputPathDesc_main": { "message": "Pad na SCSS-lêer of gids wat SCSS-lêers bevat wat saamgestel moet word" },
   "inputPathDesc_extra": { "message": "huidige werkende gids" },
   "outputPathDesc_main": { "message": "Pad na lêer of gids waar CSS + sourcemap lêers gestoor sal word" },

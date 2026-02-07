@@ -151,6 +151,7 @@ $ minify-js input_folder output_folder
 参数选项：
  --ignores="dir/,file1.js,file2.js"   要从压缩过程中排除的文件/目录。
  --comment="comment"                  将标题注释添加到缩小的代码中。使用 '\n' 按行分隔。
+ --ui-lang="code"                     用于显示用户界面的语言的 ISO 639-1 代码。
  --config="path/to/file"              加载自定义配置文件。
 
 命令：

@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Opcje konfiguracji" },
   "helpSection_flags": { "message": "Opcje konfiguracji" },
   "helpSection_cmds": { "message": "Polecenia informacyjne" },
+  "optionDesc_uiLang": { "message": "Kod języka ISO 639-1 do wyświetlania interfejsu użytkownika w" },
   "optionDesc_config": { "message": "Załaduj niestandardowy plik konfiguracyjny" },
   "optionDesc_quiet": { "message": "Wyłącz wszystkie rejestrowanie z wyjątkiem błędów" },
   "optionDesc_init": { "message": "Utwórz plik konfiguracyjny (w katalogu głównym projektu)" },

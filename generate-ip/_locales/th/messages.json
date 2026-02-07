@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "ตัวเลือกพารามิเตอร์" },
   "helpSection_flags": { "message": "ตัวเลือกบูลีน" },
   "helpSection_cmds": { "message": "คำสั่งข้อมูล" },
+  "optionDesc_uiLang": { "message": "รหัสภาษา ISO 639 -1 เพื่อแสดง UI ใน" },
   "optionDesc_qty": { "message": "สร้างที่อยู่ IP n รายการ" },
   "optionDesc_config": { "message": "โหลดไฟล์การกำหนดค่าที่กำหนดเอง" },
   "optionDesc_ipv6": { "message": "สร้างที่อยู่ IPv6" },

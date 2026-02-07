@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "ブール値のオプション" },
   "helpSection_params": { "message": "パラメータオプション" },
   "helpSection_cmds": { "message": "情報コマンド" },
+  "optionDesc_uiLang": { "message": "UIを表示する言語のISO 639 -1コード" },
   "inputPathDesc_main": { "message": "縮小する JS ファイルまたはJavaScriptファイルを含むディレクトリへのパス" },
   "inputPathDesc_extra": { "message": "現在の作業ディレクトリと相対的に" },
   "outputPathDesc_main": { "message": "縮小されたファイルが保存されるファイルまたはディレクトリへのパス" },

@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "အကန့်အသတ်ရွေးချယ်စရာများ" },
   "helpSection_flags": { "message": "Boolean ရွေးစရာများ" },
   "helpSection_cmds": { "message": "သတင်းအချက်အလက်ဆိုင်ရာ ညွှန်ကြားချက်များ" },
+  "optionDesc_uiLang": { "message": "ISO ကို 639-1 ဘာသာစကားကုဒ် UI ကိုပြသရန်" },
   "optionDesc_length": { "message": "N အလျား ၏ စကားဝှက်(များ) ကို ထုတ်ပါ" },
   "optionDesc_qty": { "message": "စကားဝှက်(များ) ကိုထုတ်လုပ်ပါ" },
   "optionDesc_config": { "message": "စိတ်ကြိုက် config ဖိုင်ကို ဖွင့်ပါ" },

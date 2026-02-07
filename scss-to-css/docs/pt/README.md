@@ -155,6 +155,7 @@ Opções booleanas:
 Opções de parâmetros:
  --ignores="dir/,file1.scss,file2.scss"   Ficheiros/diretórios a eliminar da compilação.
  --comment="comment"                      Anexe o comentário do cabeçalho ao CSS compilado. Separe por linha usando '\n'.
+ --ui-lang="code"                         Código ISO 639-1 do idioma para visualizar a interface do utilizador.
  --config="path/to/file"                  Carregar ficheiro de configuração personalizado.
 
 Comandos:

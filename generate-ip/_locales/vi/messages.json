@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Tùy chọn thông số" },
   "helpSection_flags": { "message": "Tùy chọn Boolean" },
   "helpSection_cmds": { "message": "Lệnh thông tin" },
+  "optionDesc_uiLang": { "message": "Mã ngôn ngữ ISO 639-1 để hiển thị giao diện người dùng trong" },
   "optionDesc_qty": { "message": "Tạo n địa chỉ IP" },
   "optionDesc_config": { "message": "Tải tệp cấu hình tùy chỉnh" },
   "optionDesc_ipv6": { "message": "Tạo địa chỉ IPv6" },

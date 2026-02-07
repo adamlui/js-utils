@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parametrivaihtoehdot" },
   "helpSection_flags": { "message": "Boolen vaihtoehdot" },
   "helpSection_cmds": { "message": "Tietokomennot" },
+  "optionDesc_uiLang": { "message": "Iso 639-1 -kielikoodi käyttöliittymän näyttämiseksi" },
   "optionDesc_length": { "message": "Luo salasana(t), joiden pituus on n" },
   "optionDesc_qty": { "message": "Luo n salasanaa" },
   "optionDesc_config": { "message": "Lataa mukautettu asetustiedosto" },

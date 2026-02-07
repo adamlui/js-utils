@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Filifiliga Parameter" },
   "helpSection_flags": { "message": "Filifiliga Boolean" },
   "helpSection_cmds": { "message": "Poloaiga Info" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 code o le gagana e faaali atu UI i" },
   "optionDesc_length": { "message": "Fausia upu faataga(s) o le umi N" },
   "optionDesc_qty": { "message": "Fausia n upu faataga(s)" },
   "optionDesc_config": { "message": "Load patino config faila" },

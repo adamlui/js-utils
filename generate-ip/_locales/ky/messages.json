@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Параметр параметрлери" },
   "helpSection_flags": { "message": "Boolean параметрлери" },
   "helpSection_cmds": { "message": "Маалымат буйруктары" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 тил коду UI көрсөтүү үчүн" },
   "optionDesc_qty": { "message": "Н IP дарегин(даректерин) жаратуу" },
   "optionDesc_config": { "message": "Өзгөчө конфигурация файлын жүктөө" },
   "optionDesc_ipv6": { "message": "IPv6 дарегин жаратуу" },

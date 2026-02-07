@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Параметр параметрлери" },
   "helpSection_flags": { "message": "Boolean параметрлери" },
   "helpSection_cmds": { "message": "Маалымат буйруктары" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 тил коду UI көрсөтүү үчүн" },
   "optionDesc_length": { "message": "Н узундугунун сырсөзүн(сырсөзүн) жаратуу" },
   "optionDesc_qty": { "message": "Сырсөздү(сырсөздөрдү) жаратуу" },
   "optionDesc_config": { "message": "Өзгөчө конфигурация файлын жүктөө" },

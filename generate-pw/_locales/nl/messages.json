@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parameteropties" },
   "helpSection_flags": { "message": "Booleaanse opties" },
   "helpSection_cmds": { "message": "Info commando 's" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 taalcode om de gebruikersinterface weer te geven in" },
   "optionDesc_length": { "message": "Genereer wachtwoord(en) van n lengte" },
   "optionDesc_qty": { "message": "Genereer n wachtwoord(en)" },
   "optionDesc_config": { "message": "Aangepast configuratiebestand laden" },

@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Параметрҳо" },
   "helpSection_flags": { "message": "Параметрҳои Boolean" },
   "helpSection_cmds": { "message": "Фармонҳои иттилоотӣ" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 рамзи забон барои намоиши UI дар" },
   "optionDesc_length": { "message": "Эҷод кардани гузарвожаи дарозии n" },
   "optionDesc_qty": { "message": "Эҷод кардани n гузарвожа(ҳо)" },
   "optionDesc_config": { "message": "Боркунии файли танзимоти фармоишӣ" },

@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Filifiliga Boolean" },
   "helpSection_params": { "message": "Filifiliga Parameter" },
   "helpSection_cmds": { "message": "Poloaiga" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 code o le gagana e faaali atu UI i" },
   "inputPathDesc_main": { "message": "Ala i le SCSS faila po o le faatonuga o loo i ai faila SCSS e tatau ona tuufaatasia" },
   "inputPathDesc_extra": { "message": "faatusatusa i le Faatonu o Galuega i le taimi nei" },
   "outputPathDesc_main": { "message": "Ala i faila po o faatonuga o le a teuina faila sourcemap CSS +" },

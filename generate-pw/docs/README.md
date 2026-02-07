@@ -283,6 +283,7 @@ Parameter options:
  --qty=n                     Generate n password(s).
  --charset=chars             Only include chars in password(s).
  --exclude=chars             Exclude chars from password(s).
+ --ui-lang="code"            ISO 639-1 code of language to display UI in.
  --config="path/to/file"     Load custom config file.
 
 Boolean options:

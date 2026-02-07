@@ -151,6 +151,7 @@ $ minify-js input_folder output_folder
 參數選項：
  --ignores="dir/,file1.js,file2.js"   要排除在壓縮之外的檔案/目錄。
  --comment="comment"                  將標題註解新增到縮小的程式碼中。使用 '\n' 按行分隔。
+ --ui-lang="code"                     用於顯示使用者介面的語言的 ISO 639-1 代碼。
  --config="path/to/file"              Load custom config file.
 
 訊息命令：

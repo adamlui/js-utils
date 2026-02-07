@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Konzani zosankha" },
   "helpSection_flags": { "message": "Konzani zosankha" },
   "helpSection_cmds": { "message": "ZOKHUDZ" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 malamulo chilankhulo kusonyeza UI mu" },
   "optionDesc_config": { "message": "Katundu mwambo config wapamwamba" },
   "optionDesc_quiet": { "message": "Kupondereza mitengo yonse kupatula zolakwika" },
   "optionDesc_init": { "message": "Pangani fayilo ya config (muzu wa polojekiti)" },

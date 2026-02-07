@@ -279,6 +279,7 @@ $ generate-pw
  --qty=n                     產生 n 個密碼。
  --charset=chars             密碼中僅包含 chars。
  --exclude=chars             從密碼中排除 chars。
+ --ui-lang="code"            用於顯示使用者介面的語言的 ISO 639-1 代碼。
  --config="path/to/file"     載入自訂設定檔。
 
 布林選項：

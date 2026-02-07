@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "प्यारामिटर विकल्पहरू" },
   "helpSection_flags": { "message": "बुलियन विकल्पहरू" },
   "helpSection_cmds": { "message": "सूचना आदेशहरू" },
+  "optionDesc_uiLang": { "message": "UI प्रदर्शन गर्न भाषाको ISO 639 -1 कोड" },
   "optionDesc_qty": { "message": "N IP ठेगाना(हरू) उत्पन्न गर्नुहोस्" },
   "optionDesc_config": { "message": "अनुकूलन कन्फिग फाइल लोड गर्नुहोस्" },
   "optionDesc_ipv6": { "message": "IPv6 ठेगाना उत्पन्न गर्नुहोस्" },

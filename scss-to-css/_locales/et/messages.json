@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Tõeväärtuse valikud" },
   "helpSection_params": { "message": "Parameetri valikud" },
   "helpSection_cmds": { "message": "KÃ¤sud" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 keelekood kasutajaliidese kuvamiseks" },
   "inputPathDesc_main": { "message": "Kompileeritavaid SCSS-faile sisaldava SCSS-faili või -kataloogi tee" },
   "inputPathDesc_extra": { "message": "praeguse töökataloogi suhtes" },
   "outputPathDesc_main": { "message": "Faili või kataloogi tee, kuhu salvestatakse CSS + sourcemap-failid" },

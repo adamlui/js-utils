@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Ditlhopho tsa Boolean" },
   "helpSection_params": { "message": "Dipharametara tse o ka tlhophang mo go tsone" },
   "helpSection_cmds": { "message": "Ditaelo" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 code of language to display UI in" },
   "inputPathDesc_main": { "message": "Path to SCSS file kgotsa directory e e nang le difaele tsa SCSS e e tlileng go kgobokanngwa" },
   "inputPathDesc_extra": { "message": "go tsamaisana le kaedi ya ga jaana ya tiro" },
   "outputPathDesc_main": { "message": "Path to file or directory moo difaele tsa CSS + sourcemap di tlileng go bolokiwa teng" },

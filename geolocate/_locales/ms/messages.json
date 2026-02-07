@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Pilihan parameter" },
   "helpSection_flags": { "message": "Pilihan konfigurasi" },
   "helpSection_cmds": { "message": "Perintah maklumat" },
+  "optionDesc_uiLang": { "message": "Kod bahasa ISO 639-1 untuk memaparkan UI" },
   "optionDesc_config": { "message": "Muat fail konfigurasi tersuai" },
   "optionDesc_quiet": { "message": "Sekat semua pembalakan kecuali ralat" },
   "optionDesc_init": { "message": "Cipta fail konfigurasi (dalam akar projek)" },

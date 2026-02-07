@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "ਬੂਲੀਅਨ ਵਿਕਲਪ" },
   "helpSection_params": { "message": "ਪੈਰਾਮੀਟਰ ਵਿਕਲਪ" },
   "helpSection_cmds": { "message": "ਹੁਕਮ" },
+  "optionDesc_uiLang": { "message": "ਵਿੱਚ UI ਵੇਖਾਉਣ ਲਈ ਭਾਸ਼ਾ ਦਾ ISO 639-1 ਕੋਡ" },
   "inputPathDesc_main": { "message": "JavaScript ਫਾਈਲ ਜਾਂ ਡਾਇਰੈਕਟਰੀ ਲਈ ਮਾਰਗ ਜਿਸ ਵਿੱਚ JavaScript ਫਾਈਲਾਂ ਨੂੰ ਛੋਟਾ ਕੀਤਾ ਜਾਣਾ ਹੈ" },
   "inputPathDesc_extra": { "message": "ਮੌਜੂਦਾ ਵਰਕਿੰਗ ਡਾਇਰੈਕਟਰੀ ਦੇ ਅਨੁਸਾਰ" },
   "outputPathDesc_main": { "message": "ਫਾਈਲ ਜਾਂ ਡਾਇਰੈਕਟਰੀ ਦਾ ਮਾਰਗ ਜਿੱਥੇ ਮਿਨੀਫਾਈਡ ਫਾਈਲਾਂ ਸਟੋਰ ਕੀਤੀਆਂ ਜਾਣਗੀਆਂ।" },

@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Boolean valmøguleikar" },
   "helpSection_params": { "message": "Parametrar valmøguleikar" },
   "helpSection_cmds": { "message": "Byrjað" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 málkód at vísa UI í" },
   "inputPathDesc_main": { "message": "Vegurin til SCSS-fílu ella leiðbeining, sum hevur SCSS-fílar at seta saman" },
   "inputPathDesc_extra": { "message": "viðurskifti við verandi arbeiðsleiðara" },
   "outputPathDesc_main": { "message": "Veg til fílu ella leiðbeining, har CSS + sourcemap-fílar verða goymdir" },

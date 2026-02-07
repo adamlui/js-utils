@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Lungelelanisa izinto onokukhetha kuzo" },
   "helpSection_flags": { "message": "Lungelelanisa izinto onokukhetha kuzo" },
   "helpSection_cmds": { "message": "Imiyalelo yenkcazelo" },
+  "optionDesc_uiLang": { "message": "Ikhowudi yolwimi ye-ISO 639-1 yokubonisa i-UI" },
   "optionDesc_config": { "message": "Faka ifayile yokumisela ekhethekileyo" },
   "optionDesc_quiet": { "message": "Cima konke ukungena ngaphandle kweempazamo" },
   "optionDesc_init": { "message": "Yenza ifayile yoqwalaselo (kwingcambu yeprojekthi)" },

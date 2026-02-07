@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Možnosti konfigurácie" },
   "helpSection_flags": { "message": "Možnosti konfigurácie" },
   "helpSection_cmds": { "message": "Informačné príkazy" },
+  "optionDesc_uiLang": { "message": "Kód jazyka ISO 639-1, v ktorom sa má zobraziť používateľské rozhranie" },
   "optionDesc_config": { "message": "Načítať vlastný konfiguračný súbor" },
   "optionDesc_quiet": { "message": "Potlačiť všetky protokoly okrem chýb" },
   "optionDesc_init": { "message": "Vytvoriť konfiguračný súbor (v koreňovom adresári projektu)" },

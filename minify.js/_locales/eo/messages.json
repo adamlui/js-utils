@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Buleaj opcioj" },
   "helpSection_params": { "message": "Parametraj opcioj" },
   "helpSection_cmds": { "message": "Informkomandoj" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kodo de lingvo por elmontri UI en" },
   "inputPathDesc_main": { "message": "Pado al JavaScript-dosiero aŭ adresaro enhavanta JavaScript-dosierojn por esti minifikitaj" },
   "inputPathDesc_extra": { "message": "relativa al la aktuala labordosierujo" },
   "outputPathDesc_main": { "message": "Vojo al dosiero aŭ dosierujo kie minifikitaj dosieroj estos konservitaj" },

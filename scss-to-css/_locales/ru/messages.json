@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Логические параметры" },
   "helpSection_params": { "message": "Параметры параметров" },
   "helpSection_cmds": { "message": "Команды" },
+  "optionDesc_uiLang": { "message": "Код языка ISO 639-1 для отображения пользовательского интерфейса" },
   "inputPathDesc_main": { "message": "Путь к файлу или каталогу SCSS, содержащему файлы SCSS для компиляции" },
   "inputPathDesc_extra": { "message": "относительно текущего рабочего каталога" },
   "outputPathDesc_main": { "message": "Путь к файлу или каталогу, в котором будут храниться исходные файлы CSS +" },

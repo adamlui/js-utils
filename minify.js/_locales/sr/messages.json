@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Bulove opcije" },
   "helpSection_params": { "message": "Opcije parametara BLM" },
   "helpSection_cmds": { "message": "Info komande" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kôd jezika za prikaz korisničkog interfejsa u" },
   "inputPathDesc_main": { "message": "Putanja do JavaScript datoteke ili direktorijuma koji sadrži JavaScript datoteke za umanjenje" },
   "inputPathDesc_extra": { "message": "u odnosu na trenutni radni direktorijum" },
   "outputPathDesc_main": { "message": "Putanja do datoteke ili direktorijuma gde će se čuvati minifikovane datoteke" },

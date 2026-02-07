@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Опции за була" },
   "helpSection_params": { "message": "Опции за параметри" },
   "helpSection_cmds": { "message": "Информативни команди" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 код на јазик за прикажување на UI во" },
   "inputPathDesc_main": { "message": "Патека до JavaScript датотека или директориум што содржи JavaScript датотеки што треба да се минимизираат" },
   "inputPathDesc_extra": { "message": "во однос на тековниот работен именик" },
   "outputPathDesc_main": { "message": "Патека до датотека или директориум каде што ќе бидат зачувани минифицирани датотеки" },

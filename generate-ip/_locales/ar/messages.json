@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "خيارات المتغير" },
   "helpSection_flags": { "message": "خيارات منطقية" },
   "helpSection_cmds": { "message": "أوامر المعلومات" },
+  "optionDesc_uiLang": { "message": "رمز لغة ISO 639-1 لعرض واجهة المستخدم في" },
   "optionDesc_qty": { "message": "إنشاء عنوان(عناوين) IP" },
   "optionDesc_config": { "message": "تحميل ملف التكوين المخصص" },
   "optionDesc_ipv6": { "message": "إنشاء عنوان IPv6" },

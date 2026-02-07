@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Booleovské možnosti" },
   "helpSection_params": { "message": "Možnosti parametrů" },
   "helpSection_cmds": { "message": "Příkazy" },
+  "optionDesc_uiLang": { "message": "Kód jazyka ISO 639-1 pro zobrazení uživatelského rozhraní" },
   "inputPathDesc_main": { "message": "Cesta k souboru SCSS nebo adresáři obsahujícímu soubory SCSS, které mají být kompilovány" },
   "inputPathDesc_extra": { "message": "vzhledem k aktuálnímu pracovnímu adresáři" },
   "outputPathDesc_main": { "message": "Cesta k souboru nebo adresáři, kde budou uloženy soubory CSS + sourcemap" },

@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parameteralternativ" },
   "helpSection_flags": { "message": "Booleska alternativ" },
   "helpSection_cmds": { "message": "INFO-kommandon" },
+  "optionDesc_uiLang": { "message": "ISO 639-1-kod för språk för att visa användargränssnitt i" },
   "optionDesc_qty": { "message": "Generera n IP-adress(er)" },
   "optionDesc_config": { "message": "Ladda anpassad konfigurationsfil" },
   "optionDesc_ipv6": { "message": "Generera IPv6-adress" },

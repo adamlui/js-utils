@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Boolean options" },
   "helpSection_params": { "message": "Parameter options" },
   "helpSection_cmds": { "message": "Commands" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 code of language to display UI in" },
   "inputPathDesc_main": { "message": "Path to SCSS file or directory containing SCSS files to be compiled" },
   "inputPathDesc_extra": { "message": "relative to the current working directory" },
   "outputPathDesc_main": { "message": "Path to file or directory where CSS + sourcemap files will be stored" },

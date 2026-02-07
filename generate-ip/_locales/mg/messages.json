@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Safidy momba ny marika" },
   "helpSection_flags": { "message": "Safidy Boleanina" },
   "helpSection_cmds": { "message": "Baikon'ny fampahalalana" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 fehezan-dalàna ny fiteny mba haneho UI in" },
   "optionDesc_qty": { "message": "Hiteraka adiresy IP (es)" },
   "optionDesc_config": { "message": "Maka ilay raki-kirakira safidy" },
   "optionDesc_ipv6": { "message": "Mamorona adiresy IPv6" },

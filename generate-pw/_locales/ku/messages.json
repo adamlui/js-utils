@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Vebijarkên Parameterê" },
   "helpSection_flags": { "message": "Vebijarkên Boolean" },
   "helpSection_cmds": { "message": "Fermanên agahdariyê" },
+  "optionDesc_uiLang": { "message": "Koda ISO 639-1 ya zimanê ji bo nîşandana UI-ê" },
   "optionDesc_length": { "message": "Şîfre(yên) bi dirêjahiya n biafirînin" },
   "optionDesc_qty": { "message": "N şîfre(n) çêbike" },
   "optionDesc_config": { "message": "Pelê mîhengkirina xwerû bar bike" },

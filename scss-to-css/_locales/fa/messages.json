@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "گزینه‌های بولی" },
   "helpSection_params": { "message": "گزینه‌های پارامتر" },
   "helpSection_cmds": { "message": "فرمان ها" },
+  "optionDesc_uiLang": { "message": "کد زبان ISO 639-1 برای نمایش رابط کاربری" },
   "inputPathDesc_main": { "message": "مسیر فایل SCSS یا دایرکتوری حاوی فایل‌های SCSS که باید کامپایل شوند" },
   "inputPathDesc_extra": { "message": "نسبت به دایرکتوری کاری فعلی" },
   "outputPathDesc_main": { "message": "مسیر فایل یا دایرکتوری که فایل‌های CSS + sourcemap در آن ذخیره خواهند شد" },

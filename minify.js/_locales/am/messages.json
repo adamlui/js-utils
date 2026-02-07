@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Boolean አማራጮች" },
   "helpSection_params": { "message": "የፓራሜትር አማራጮች" },
   "helpSection_cmds": { "message": "መረጃ ትዕዛዞች" },
+  "optionDesc_uiLang": { "message": "የ ISO 639-1 የቋንቋ ኮድ UI ን በ ውስጥ ለማሳየት" },
   "inputPathDesc_main": { "message": "የጃቫስክሪፕት ፋይሎችን ወደሚቀነስበት የጃቫስክሪፕት ፋይል ወይም ማውጫ መንገድ" },
   "inputPathDesc_extra": { "message": "የአሁኑ የሥራ ዝርዝር" },
   "outputPathDesc_main": { "message": "የተቆራረጡ ፋይሎች ወደሚከማቹበት ፋይል ወይም ማውጫ መንገድ" },

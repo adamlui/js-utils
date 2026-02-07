@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "بولین آپشنز" },
   "helpSection_params": { "message": "پیرامیٹر کے اختیارات" },
   "helpSection_cmds": { "message": "معلومات کے احکامات" },
+  "optionDesc_uiLang": { "message": "UI ظاہر کرنے کے لیے ISO 639-1 زبان کا کوڈ" },
   "inputPathDesc_main": { "message": "جاوا اسکرپٹ فائل یا ڈائرکٹری کا راستہ جس میں جاوا اسکرپٹ فائلوں کو چھوٹا کیا جانا ہے" },
   "inputPathDesc_extra": { "message": "موجودہ ورکنگ ڈائریکٹری سے متعلق" },
   "outputPathDesc_main": { "message": "فائل یا ڈائریکٹری کا راستہ جہاں چھوٹی فائلیں محفوظ کی جائیں گی" },

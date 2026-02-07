@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Параметр параметрлери" },
   "helpSection_flags": { "message": "Параметрлерди конфигурациял" },
   "helpSection_cmds": { "message": "Маалымат буйруктары" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 тил коду UI көрсөтүү үчүн" },
   "optionDesc_config": { "message": "Өзгөчө конфигурация файлын жүктөө" },
   "optionDesc_quiet": { "message": "Каталардан башка бардык жазууларды басуу" },
   "optionDesc_init": { "message": "Конфигурация файлын түзүү (долбоордун тамыры менен)" },

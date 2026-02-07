@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Επιλογές παραμέτρων" },
   "helpSection_flags": { "message": "Επιλογές διαμόρφωσης" },
   "helpSection_cmds": { "message": "Εντολές πληροφοριών" },
+  "optionDesc_uiLang": { "message": "Κωδικός γλώσσας ISO 639-1 για εμφάνιση διεπαφής χρήστη σε" },
   "optionDesc_config": { "message": "Φόρτωση προσαρμοσμένου αρχείου διαμόρφωσης" },
   "optionDesc_quiet": { "message": "Καταργήστε όλες τις καταγραφές εκτός από τα σφάλματα" },
   "optionDesc_init": { "message": "Δημιουργία αρχείου διαμόρφωσης (στη ρίζα του έργου)" },

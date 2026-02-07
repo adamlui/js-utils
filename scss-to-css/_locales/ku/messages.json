@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Vebijarkên rast" },
   "helpSection_params": { "message": "Vebijarkên parametreyan" },
   "helpSection_cmds": { "message": "Ferman" },
+  "optionDesc_uiLang": { "message": "Koda ISO 639-1 ya zimanê ji bo nîşandana UI-ê" },
   "inputPathDesc_main": { "message": "Riya pelê SCSS an jî peldanka ku pelên SCSS yên ku dê werin berhevkirin dihewîne" },
   "inputPathDesc_extra": { "message": "nisbet bi navnîşana xebata heyî re" },
   "outputPathDesc_main": { "message": "Riya pel an jî peldanka ku pelên CSS + sourcemap lê dê werin hilanîn" },

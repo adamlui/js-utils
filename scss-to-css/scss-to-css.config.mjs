@@ -13,6 +13,7 @@ export default {
     // Info options
     dryRun: false,            // don't actually minify the file(s), just show if they will be processed
     quietMode: false,         // suppress all logging except errors
+    uiLang: '',               // ISO 639-1 code of language to display UI in
 
     // Input options
     includeDotFolders: false, // include dotfolders in file search

@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Dipharametara tse o ka tlhophang mo go tsone" },
   "helpSection_flags": { "message": "Ditlhopho tsa Boolean" },
   "helpSection_cmds": { "message": "Ditaelo" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 code of language to display UI in" },
   "optionDesc_qty": { "message": "Tlhagisa diaterese tsa IP" },
   "optionDesc_config": { "message": "Laisa faele ya thulaganyo e e tlwaelegileng" },
   "optionDesc_ipv6": { "message": "Tlhagisa aterese ya IPv6" },

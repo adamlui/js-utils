@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Boolean ရွေးစရာများ" },
   "helpSection_params": { "message": "အကန့်အသတ်ရွေးချယ်စရာများ" },
   "helpSection_cmds": { "message": "Commands" },
+  "optionDesc_uiLang": { "message": "ISO ကို 639-1 ဘာသာစကားကုဒ် UI ကိုပြသရန်" },
   "inputPathDesc_main": { "message": "စုဆောင်းရမည့် SCSS ဖိုင်များ သို့မဟုတ် SCSS ဖိုင်များပါဝင်သောဖိုင်တွဲသို့လမ်းကြောင်း" },
   "inputPathDesc_extra": { "message": "လက်ရှိအလုပ်အကိုင်ညွှန်ကြားမှု ဦး စီးဌာန" },
   "outputPathDesc_main": { "message": "CSS + ရင်းမြစ်မြေပုံဖိုင်များကိုသိမ်းဆည်းထားမည့်ဖိုင်သို့မဟုတ် directory သို့လမ်းကြောင်း" },

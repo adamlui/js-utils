@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Paraméteropciók" },
   "helpSection_flags": { "message": "Logikai opciók" },
   "helpSection_cmds": { "message": "Információs parancsok" },
+  "optionDesc_uiLang": { "message": "A felhasználói felület megjelenítéséhez használt nyelv ISO 639-1 kódja" },
   "optionDesc_qty": { "message": "N IP-cím(ek) generálása" },
   "optionDesc_config": { "message": "Egyéni konfigurációs fájl betöltése" },
   "optionDesc_ipv6": { "message": "IPv6-cím létrehozása" },

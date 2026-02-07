@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Бульдік параметрлер" },
   "helpSection_params": { "message": "Параметр опциялары" },
   "helpSection_cmds": { "message": "ÐÐ¾Ð¼Ð°Ð½Ð´Ð°Ð»Ð°Ñ" },
+  "optionDesc_uiLang": { "message": "Пайдаланушы интерфейсін көрсету үшін ISO 639-1 тіл коды" },
   "inputPathDesc_main": { "message": "Құрастырылатын SCSS файлдары бар SCSS файлына немесе каталогына жол" },
   "inputPathDesc_extra": { "message": "ағымдағы жұмыс каталогына қатысты" },
   "outputPathDesc_main": { "message": "CSS + бастапқы картасы файлдары сақталатын файлға немесе каталогқа жол" },

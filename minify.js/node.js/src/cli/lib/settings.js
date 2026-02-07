@@ -32,6 +32,8 @@ module.exports = {
             type: 'param', regex: /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/ },
         comment: {
             type: 'param', regex: /^--?comments?(?:=.*)?$/ },
+        uiLang: {
+            type: 'param', regex: /^--?ui-?lang(?:=.*|$)/ },
         config: {
             type: 'param', regex: /^--?config(?:=.*|$)/ },
         init: {

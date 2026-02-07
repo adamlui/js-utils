@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parameteralternativer" },
   "helpSection_flags": { "message": "Boolske alternativer" },
   "helpSection_cmds": { "message": "Info kommandoer" },
+  "optionDesc_uiLang": { "message": "ISO 639-1-kode for språk som skal vises brukergrensesnitt i" },
   "optionDesc_length": { "message": "Generer passord på n lengde" },
   "optionDesc_qty": { "message": "Generer n passord" },
   "optionDesc_config": { "message": "Last inn tilpasset konfigurasjonsfil" },

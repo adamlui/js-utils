@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Možnosti parametrov" },
   "helpSection_flags": { "message": "Booleovské možnosti" },
   "helpSection_cmds": { "message": "Informačné príkazy" },
+  "optionDesc_uiLang": { "message": "Kód jazyka ISO 639-1, v ktorom sa má zobraziť používateľské rozhranie" },
   "optionDesc_qty": { "message": "Generovať n IP adries" },
   "optionDesc_config": { "message": "Načítať vlastný konfiguračný súbor" },
   "optionDesc_ipv6": { "message": "Generovať adresu IPv6" },

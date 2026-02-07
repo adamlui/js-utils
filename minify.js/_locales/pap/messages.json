@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Opcion Boolean" },
   "helpSection_params": { "message": "Opcion Parámetro" },
   "helpSection_cmds": { "message": "Komandante di Informashon" },
+  "optionDesc_uiLang": { "message": "Documente similare cu ISO 639-1 Code of Language" },
   "inputPathDesc_main": { "message": "Camino a Javascript Archivo o directorio conteniendo Javascript Archivos para Minificar" },
   "inputPathDesc_extra": { "message": "relashoná ku e maneho aktual" },
   "outputPathDesc_main": { "message": "Página principal > Ciencia > Archivo de archivo de archivo de archivo de archivo de archivo" },

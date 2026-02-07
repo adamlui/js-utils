@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Параметрҳои Boolean" },
   "helpSection_params": { "message": "Параметрҳо" },
   "helpSection_cmds": { "message": "Фармонҳои иттилоотӣ" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 рамзи забон барои намоиши UI дар" },
   "inputPathDesc_main": { "message": "Роҳча ба файли JavaScript ё феҳристи дорои файлҳои JavaScript барои минисатсия" },
   "inputPathDesc_extra": { "message": "относительно текущего каталога" },
   "outputPathDesc_main": { "message": "Роҳча ба файл ё феҳрист, ки дар он файлҳои миниётурашуда нигоҳ дошта мешаванд" },

@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Kōwhiringa Boolean" },
   "helpSection_params": { "message": "Kōwhiringa parameter" },
   "helpSection_cmds": { "message": "Whakahau" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 waehere reo ki te whakaatu UI i roto i" },
   "inputPathDesc_main": { "message": "He ara ki te kōnae SCSS, he aratohu rānei kei roto i ngā kōnae SCSS hei kohikohi" },
   "inputPathDesc_extra": { "message": "e pā ana ki te aratohu mahi o nāianei" },
   "outputPathDesc_main": { "message": "He ara ki te kōnae, ki te aratohu ranei ka rokiroki ngā kōnae CSS + sourcemap" },

@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "ബൂളിയൻ ഓപ്ഷനുകൾ" },
   "helpSection_params": { "message": "പാരാമീറ്റർ ഓപ്ഷനുകൾ" },
   "helpSection_cmds": { "message": "വിവര കമാന്‍ഡുകള്‍" },
+  "optionDesc_uiLang": { "message": "യുഐ പ്രദർശിപ്പിക്കുന്നതിനുള്ള ISO 639-1 ഭാഷാ കോഡ്" },
   "inputPathDesc_main": { "message": "ജാവാസ്ക്രിപ്റ്റ് ഫയലിലേക്കുള്ള പാത്ത് അല്ലെങ്കിൽ ജാവാസ്ക്രിപ്റ്റ് ഫയലുകൾ അടങ്ങിയ ഡയറക്ടറി ചെറുതാക്കണം" },
   "inputPathDesc_extra": { "message": "നിലവിലെ വർക്കിംഗ് ഡയറക്ടറിയുമായി ബന്ധപ്പെട്ട്" },
   "outputPathDesc_main": { "message": "മിനിഫൈഡ് ഫയലുകൾ സൂക്ഷിക്കുന്ന ഫയലിലേക്കോ ഡയറക്ടറിയിലേക്കോ ഉള്ള പാത" },

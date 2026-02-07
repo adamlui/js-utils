@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Logikai opciók" },
   "helpSection_params": { "message": "Paraméteropciók" },
   "helpSection_cmds": { "message": "Információs parancsok" },
+  "optionDesc_uiLang": { "message": "A felhasználói felület megjelenítéséhez használt nyelv ISO 639-1 kódja" },
   "inputPathDesc_main": { "message": "A tömörítendő JavaScript-fájlokat tartalmazó JavaScript-fájl vagy -könyvtár elérési útja" },
   "inputPathDesc_extra": { "message": "az aktuális munkakönyvtárhoz képest" },
   "outputPathDesc_main": { "message": "A tömörített fájlok tárolására szolgáló fájl vagy könyvtár elérési útja" },

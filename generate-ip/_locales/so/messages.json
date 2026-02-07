@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Fursadaha Parameter" },
   "helpSection_flags": { "message": "Xulashooyinka Boolean" },
   "helpSection_cmds": { "message": "Amarada Macluumaadka" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 code luqadda si ay u muujiyaan UI in" },
   "optionDesc_qty": { "message": "Abuur n cinwaanka IP (es)" },
   "optionDesc_config": { "message": "U rar faylka qaabeynta caadada" },
   "optionDesc_ipv6": { "message": "Abuur cinwaanka IPv6" },

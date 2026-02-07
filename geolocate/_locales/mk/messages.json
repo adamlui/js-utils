@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Опции за параметри" },
   "helpSection_flags": { "message": "Конфигурирајте ги опциите" },
   "helpSection_cmds": { "message": "Информативни команди" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 код на јазик за прикажување на UI во" },
   "optionDesc_config": { "message": "Вчитај прилагодена конфигурациска датотека" },
   "optionDesc_quiet": { "message": "Потисни ги сите евиденции освен грешките" },
   "optionDesc_init": { "message": "Создајте конфигурациска датотека (во коренот на проектот)" },

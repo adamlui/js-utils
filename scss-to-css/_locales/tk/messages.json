@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Boolean opsiýalary" },
   "helpSection_params": { "message": "Parametr saýlamalary" },
   "helpSection_cmds": { "message": "Buýruklar" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 dil kodyny görkezmek üçin" },
   "inputPathDesc_main": { "message": "SCSS faýlyna ýa-da SCSS faýlyna ýol" },
   "inputPathDesc_extra": { "message": "häzirki iş direktory bilen bagly" },
   "outputPathDesc_main": { "message": "CSS + serişdesiniň faýllary saklanýan faýl ýa-da katalog ýoly" },

@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parameter opsies" },
   "helpSection_flags": { "message": "Boolse opsies" },
   "helpSection_cmds": { "message": "Inligtingopdragte" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kode van taal te vertoon UI in" },
   "optionDesc_length": { "message": "Genereer wagwoord(s) van n lengte" },
   "optionDesc_qty": { "message": "Genereer 'n wagwoord(s)" },
   "optionDesc_config": { "message": "Laai persoonlike konfigurasielêer" },

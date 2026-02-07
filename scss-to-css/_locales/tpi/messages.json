@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Ol Boolean opsen" },
   "helpSection_params": { "message": "Parametres opsen" },
   "helpSection_cmds": { "message": "Ol lo" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kod bilong tokples bilong soim UI long" },
   "inputPathDesc_main": { "message": "Rot i go long SCSS file o directory i gat SCSS files long bungim" },
   "inputPathDesc_extra": { "message": "ol i save yusim ol dispela samting long mekim wok bilong God" },
   "outputPathDesc_main": { "message": "Rot i go long fail o folda we CSS + sourcemap fail bai stap" },

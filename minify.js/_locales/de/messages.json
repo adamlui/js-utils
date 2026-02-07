@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Boolesche Optionen" },
   "helpSection_params": { "message": "Parameteroptionen" },
   "helpSection_cmds": { "message": "Info-Befehle" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 Sprachcode zur Anzeige der Benutzeroberfläche in" },
   "inputPathDesc_main": { "message": "Pfad zu JavaScript-Datei oder Verzeichnis, das JavaScript-Dateien enthält, die minimiert werden sollen" },
   "inputPathDesc_extra": { "message": "relativ zum aktuellen Arbeitsverzeichnis" },
   "outputPathDesc_main": { "message": "Pfad zu Datei oder Verzeichnis, in dem minimierte Dateien gespeichert werden" },

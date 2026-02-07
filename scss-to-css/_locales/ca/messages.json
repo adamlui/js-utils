@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Opcions booleanes" },
   "helpSection_params": { "message": "Opcions de paràmetres" },
   "helpSection_cmds": { "message": "Ordres" },
+  "optionDesc_uiLang": { "message": "Codi de llengua ISO 639-1 per mostrar la interfície d'usuari" },
   "inputPathDesc_main": { "message": "Ruta al fitxer SCSS o directori que conté fitxers SCSS a compilar" },
   "inputPathDesc_extra": { "message": "en relació amb el directori de treball actual" },
   "outputPathDesc_main": { "message": "Ruta al fitxer o directori on s'emmagatzemaran els fitxers CSS + mapa d'origen" },

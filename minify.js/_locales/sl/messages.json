@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Logične možnosti" },
   "helpSection_params": { "message": "Parametri BLM opreacij" },
   "helpSection_cmds": { "message": "Info ukazi" },
+  "optionDesc_uiLang": { "message": "Koda jezika ISO 639-1 za prikaz uporabniškega vmesnika v" },
   "inputPathDesc_main": { "message": "Pot do datoteke JavaScript ali imenika, ki vsebuje datoteke JavaScript, ki jih je treba pomanjšati" },
   "inputPathDesc_extra": { "message": "glede na trenutni delovni imenik" },
   "outputPathDesc_main": { "message": "Pot do datoteke ali imenika, kjer bodo shranjene pomanjšane datoteke" },

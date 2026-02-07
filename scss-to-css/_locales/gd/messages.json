@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Roghainnean Boole" },
   "helpSection_params": { "message": "Roghainnean a 'pharaiméadair" },
   "helpSection_cmds": { "message": "ÀITHNEACHDAN" },
+  "optionDesc_uiLang": { "message": "ISO 639 -1 Code of Language gus UI a thaisbeanadh ann an UI" },
   "inputPathDesc_main": { "message": "Slighe gu faidhle no pasgan SCSS anns a bheil faidhlichean SCSS ri chur ri chèile" },
   "inputPathDesc_extra": { "message": "an Stiùireadh Obrach a th 'ann an - diugh" },
   "outputPathDesc_main": { "message": "An t - slighe gu faidhle no pasgan far am bi faidhlichean mapa - stòr CSS + air an stòradh" },

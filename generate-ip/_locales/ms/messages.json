@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Pilihan parameter" },
   "helpSection_flags": { "message": "Pilihan boolean" },
   "helpSection_cmds": { "message": "Perintah maklumat" },
+  "optionDesc_uiLang": { "message": "Kod bahasa ISO 639-1 untuk memaparkan UI" },
   "optionDesc_qty": { "message": "Jana n alamat IP" },
   "optionDesc_config": { "message": "Muat fail konfigurasi tersuai" },
   "optionDesc_ipv6": { "message": "Jana alamat IPv6" },

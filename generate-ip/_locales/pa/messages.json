@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "ਪੈਰਾਮੀਟਰ ਵਿਕਲਪ" },
   "helpSection_flags": { "message": "ਬੂਲੀਅਨ ਵਿਕਲਪ" },
   "helpSection_cmds": { "message": "ਜਾਣਕਾਰੀ ਕਮਾਂਡਾਂ" },
+  "optionDesc_uiLang": { "message": "ਵਿੱਚ UI ਵੇਖਾਉਣ ਲਈ ਭਾਸ਼ਾ ਦਾ ISO 639-1 ਕੋਡ" },
   "optionDesc_qty": { "message": "N IP ਐਡਰੈੱਸ ਤਿਆਰ ਕਰੋ (es)" },
   "optionDesc_config": { "message": "ਕਸਟਮ ਸੰਰਚਨਾ ਫਾਇਲ ਲੋਡ ਕਰੋ" },
   "optionDesc_ipv6": { "message": "IPv6 ਐਡਰੈੱਸ ਤਿਆਰ ਕਰੋ" },

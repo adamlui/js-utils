@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Kōwhiringa parameter" },
   "helpSection_flags": { "message": "Kōwhiringa whirihora" },
   "helpSection_cmds": { "message": "Ngā Whakahau" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 waehere reo ki te whakaatu UI i roto i" },
   "optionDesc_config": { "message": "Uta kōnae whirihoranga ritenga" },
   "optionDesc_quiet": { "message": "Tautoko i te logging katoa engari hapa" },
   "optionDesc_init": { "message": "Hangaia he konae whirihoranga (i roto i te pakiaka kaupapa)" },

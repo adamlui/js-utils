@@ -283,6 +283,7 @@ Options des paramètres:
  --qty=n                     Générez n mot(s) de passe.
  --charset=cars              Incluez uniquement des cars dans le(s) mot(s) de passe.
  --exclude=cars              Exclure les cars des mots de passe.
+ --ui-lang="code"            Code ISO 639-1 de la langue dans laquelle afficher l'interface utilisateur.
  --config="path/to/file"     Charger le fichier de configuration personnalisé.
 
 Options booléennes:

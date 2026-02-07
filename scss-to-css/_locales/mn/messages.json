@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Boolean хувилбарууд" },
   "helpSection_params": { "message": "Параметерын сонголтууд" },
   "helpSection_cmds": { "message": "Тушаалууд" },
+  "optionDesc_uiLang": { "message": "UI-ийг харуулахын тулд ISO 639-1 хэлний код" },
   "inputPathDesc_main": { "message": "Эмхэтгэгдэх ёстой SCSS файл эсвэл SCSS файл агуулсан лавлах руу зам" },
   "inputPathDesc_extra": { "message": "одоогийн ажлын лавлахтай хамааралтай" },
   "outputPathDesc_main": { "message": "CSS + sourcemap файл хадгалах файл эсвэл лавлах зам" },

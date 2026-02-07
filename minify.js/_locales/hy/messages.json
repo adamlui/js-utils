@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Բուլյան ընտրանքներ" },
   "helpSection_params": { "message": "Պարամետրի տարբերակներ" },
   "helpSection_cmds": { "message": "Տեղեկությունների հրամաններ" },
+  "optionDesc_uiLang": { "message": "ISO 639 -1 լեզվի կոդը UI - ում ցուցադրելու համար" },
   "inputPathDesc_main": { "message": "Ուղի դեպի JavaScript ֆայլ կամ գրացուցակ, որը պարունակում է JavaScript ֆայլեր, որոնք պետք է minified" },
   "inputPathDesc_extra": { "message": "ընթացիկ աշխատանքային գրացուցակի հետ կապված" },
   "outputPathDesc_main": { "message": "Ճանապարհ դեպի ֆայլ կամ գրացուցակ, որտեղ պահվելու են մանրացված ֆայլեր" },

@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parametrų parinktys" },
   "helpSection_flags": { "message": "Loginės parinktys" },
   "helpSection_cmds": { "message": "Informacijos komandos" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kalbos kodas, skirtas vartotojo sąsajai rodyti" },
   "optionDesc_qty": { "message": "Generuoti n IP adresą(-us)" },
   "optionDesc_config": { "message": "Įkelti pasirinktinį konfigūracijos failą" },
   "optionDesc_ipv6": { "message": "Generuoti IPv6 adresą" },

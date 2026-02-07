@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "ኣማራጺታት ፓራሜትር" },
   "helpSection_flags": { "message": "ናይ ቡሊያን ኣማራጺታት" },
   "helpSection_cmds": { "message": "መምርሒታት ሓበሬታ" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 ኮድ ቋንቋ ኣብ" },
   "optionDesc_qty": { "message": "N IP ኣድራሻ(es) ኣማዕብል" },
   "optionDesc_config": { "message": "ብውልቂ እተዳለወ ፋይል ኣንብር" },
   "optionDesc_ipv6": { "message": "ኣድራሻ IPv6 ኣማዕብል" },

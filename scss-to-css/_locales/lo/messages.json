@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "ທາງເລືອກ Boolean" },
   "helpSection_params": { "message": "ຕົວເລືອກພາລາມິເຕີ" },
   "helpSection_cmds": { "message": "ຄຳສັ່ງ" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 ລະຫັດພາສາທີ່ຈະສະແດງ UI ໃນ" },
   "inputPathDesc_main": { "message": "ເສັ້ນທາງໄປຫາເອກະສານ SCSS ຫຼືໄດເລກະທໍລີທີ່ມີເອກະສານ SCSS ທີ່ຈະຄັດລອກ" },
   "inputPathDesc_extra": { "message": "ຫນ້າທີ່ເຊື່ອມຕໍ່ຫາ current - ວິກິວັດຈະນານຸກົມ" },
   "outputPathDesc_main": { "message": "ເສັ້ນທາງໄປຫາເອກະສານຫລືໄດເລກະທໍລີບ່ອນທີ່ໄຟລ໌ CSS + sourcemap ຈະຖືກເກັບໄວ້" },

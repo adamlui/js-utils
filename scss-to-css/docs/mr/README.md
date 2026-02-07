@@ -155,6 +155,7 @@ $ scss-to-css input_folder output_folder
 पॅरामीटर पर्याय:
  --ignores="dir/,file1.scss,file2.scss"   संकलनातून वगळायच्या फाइल्स/डिरेक्टरीज.
  --comment="comment"                      संकलित CSS वर शीर्षलेख टिप्पणी प्रीपेंड करा. '\n' वापरून ओळीनुसार विभक्त करा.
+ --ui-lang="code"                         UI प्रदर्शित करण्यासाठी ISO 639-1 भाषेचा कोड.
  --config="path/to/file"                  सानुकूल कॉन्फिगरेशन फाइल लोड करा.
 
 कमांड्स:

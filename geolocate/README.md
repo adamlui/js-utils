@@ -67,6 +67,7 @@ Sample output:
 
 ```
 Parameter options:
+ --ui-lang="code"            ISO 639-1 code of language to display UI in.
  --config="path/to/file"     Load custom config file.
 
 Boolean options:

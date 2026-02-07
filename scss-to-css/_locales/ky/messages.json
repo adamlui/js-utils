@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Boolean параметрлери" },
   "helpSection_params": { "message": "Параметр параметрлери" },
   "helpSection_cmds": { "message": "Командалар" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 тил коду UI көрсөтүү үчүн" },
   "inputPathDesc_main": { "message": "Түзүлө турган SCSS файлына же каталогуна өтүү жолу" },
   "inputPathDesc_extra": { "message": "учурдагы иштөө каталогуна карата" },
   "outputPathDesc_main": { "message": "CSS + баштапкы карта файлдары сактала турган файлга же каталогго өтүү жолу" },

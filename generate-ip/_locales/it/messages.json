@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Opzioni dei parametri" },
   "helpSection_flags": { "message": "Opzioni booleane" },
   "helpSection_cmds": { "message": "Comandi info" },
+  "optionDesc_uiLang": { "message": "Codice ISO 639-1 della lingua in cui visualizzare l'interfaccia utente" },
   "optionDesc_qty": { "message": "Genera n indirizzi IP" },
   "optionDesc_config": { "message": "Carica il file di configurazione personalizzato" },
   "optionDesc_ipv6": { "message": "Genera indirizzo IPv6" },

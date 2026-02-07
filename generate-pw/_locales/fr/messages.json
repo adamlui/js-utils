@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Options de paramètres" },
   "helpSection_flags": { "message": "Options" },
   "helpSection_cmds": { "message": "Commandes info" },
+  "optionDesc_uiLang": { "message": "Code de langue ISO 639-1 pour afficher l'interface utilisateur dans" },
   "optionDesc_length": { "message": "Générer mot(s) de passe de n longueur" },
   "optionDesc_qty": { "message": "Générer n mot(s) de passe" },
   "optionDesc_config": { "message": "Fichier de configuration personnalisé" },

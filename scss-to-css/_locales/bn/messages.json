@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "বুলিয়ান বিকল্প" },
   "helpSection_params": { "message": "প্যারামিটার বিকল্প" },
   "helpSection_cmds": { "message": "কমান্ডcommand for" },
+  "optionDesc_uiLang": { "message": "UI প্রদর্শনের জন্য ISO 639-1 ভাষার কোড" },
   "inputPathDesc_main": { "message": "এসসিএসএস ফাইল বা এসসিএসএস ফাইল ধারণকারী ডিরেক্টরিতে পাথ কম্পাইল করা হবে" },
   "inputPathDesc_extra": { "message": "বর্তমান ওয়ার্কিং ডিরেক্টরির সাথে সম্পর্কিত" },
   "outputPathDesc_main": { "message": "ফাইল বা ডিরেক্টরির পাথ যেখানে CSS + সোর্সম্যাপ ফাইল সংরক্ষণ করা হবে" },

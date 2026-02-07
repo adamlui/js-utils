@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Boolean опциялары" },
   "helpSection_params": { "message": "Параметр опциялары" },
   "helpSection_cmds": { "message": "Ақпараттық командалар" },
+  "optionDesc_uiLang": { "message": "Пайдаланушы интерфейсін көрсету үшін ISO 639-1 тіл коды" },
   "inputPathDesc_main": { "message": "Кішірейтілетін JavaScript файлдары бар JavaScript файлына немесе каталогына жол" },
   "inputPathDesc_extra": { "message": "ағымдағы жұмыс каталогына қатысты" },
   "outputPathDesc_main": { "message": "Минималды файлдар сақталатын файлға немесе каталогқа жол" },

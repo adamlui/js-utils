@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Boolean valmøguleikar" },
   "helpSection_params": { "message": "Parametrar valmøguleikar" },
   "helpSection_cmds": { "message": "Upplýsingar boð" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 málkód at vísa UI í" },
   "inputPathDesc_main": { "message": "Veg til JavaScript-fílu ella leiðbeining, sum hevur JavaScript-fílar at minifisera" },
   "inputPathDesc_extra": { "message": "viðurskifti við verandi arbeiðsleiðara" },
   "outputPathDesc_main": { "message": "Veg til fílu ella leiðbeining, har minifiseraðar fílur verða goymdar" },

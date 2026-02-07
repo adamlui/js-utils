@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "هو- نه غوراوي" },
   "helpSection_params": { "message": "د پاراميټر اختیارونه" },
   "helpSection_cmds": { "message": "بولۍ ليکه" },
+  "optionDesc_uiLang": { "message": "په کې د UI ښودلو لپاره د ISO 639-1 د ژبې کوډ" },
   "inputPathDesc_main": { "message": "د SCSS دوتنې ته لاره یا نوملړ ته چې د SCSS فایلونه پکې شامل وي باید ترتیب شي" },
   "inputPathDesc_extra": { "message": "د اوسني کاري لارښود سره تړاو لري" },
   "outputPathDesc_main": { "message": "د فایل یا لارښود لپاره لاره چیرې چې CSS + sourcemap دوتنې به زیرمه شي" },

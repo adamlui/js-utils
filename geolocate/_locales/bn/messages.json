@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "প্যারামিটার বিকল্প" },
   "helpSection_flags": { "message": "কনফিগার অপশন" },
   "helpSection_cmds": { "message": "তথ্য কমান্ড" },
+  "optionDesc_uiLang": { "message": "UI প্রদর্শনের জন্য ISO 639-1 ভাষার কোড" },
   "optionDesc_config": { "message": "কাস্টম কনফিগ ফাইল লোড করুন" },
   "optionDesc_quiet": { "message": "ত্রুটি ব্যতীত সমস্ত লগিং দমন করুন" },
   "optionDesc_init": { "message": "কনফিগ ফাইল তৈরি করুন (প্রজেক্ট রুটের মধ্যে)" },

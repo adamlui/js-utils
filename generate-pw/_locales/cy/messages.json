@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Opsiynau paramedr" },
   "helpSection_flags": { "message": "Opsiynau Boole" },
   "helpSection_cmds": { "message": "Gorchmynion gwybodaeth" },
+  "optionDesc_uiLang": { "message": "ISO 639 -1 cod iaith i ddangos UI yn" },
   "optionDesc_length": { "message": "Creu cyfrinair(iau) o hyd n" },
   "optionDesc_qty": { "message": "Creu cyfrinair(au) n" },
   "optionDesc_config": { "message": "Llwytho ffeil cyfluniad cyfaddas" },

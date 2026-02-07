@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Parametrų parinktys" },
   "helpSection_flags": { "message": "Konfigūracijos parinktys" },
   "helpSection_cmds": { "message": "Informacijos komandos" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kalbos kodas, skirtas vartotojo sąsajai rodyti" },
   "optionDesc_config": { "message": "Įkelti pasirinktinį konfigūracijos failą" },
   "optionDesc_quiet": { "message": "Slėpti visus registravimus, išskyrus klaidas" },
   "optionDesc_init": { "message": "Sukurti konfigūracijos failą (projekto šaknyje)" },

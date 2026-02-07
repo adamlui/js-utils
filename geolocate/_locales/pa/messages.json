@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "ਸੰਰਚਨਾ ਚੋਣਾਂ" },
   "helpSection_flags": { "message": "ਸੰਰਚਨਾ ਚੋਣਾਂ" },
   "helpSection_cmds": { "message": "ਜਾਣਕਾਰੀ ਕਮਾਂਡਾਂ" },
+  "optionDesc_uiLang": { "message": "ਵਿੱਚ UI ਵੇਖਾਉਣ ਲਈ ਭਾਸ਼ਾ ਦਾ ISO 639-1 ਕੋਡ" },
   "optionDesc_config": { "message": "ਕਸਟਮ ਸੰਰਚਨਾ ਫਾਇਲ ਲੋਡ ਕਰੋ" },
   "optionDesc_quiet": { "message": "ਗਲਤੀਆਂ ਨੂੰ ਛੱਡ ਕੇ ਸਭ ਲਾਗਿੰਗ ਦਬਾਓ" },
   "optionDesc_init": { "message": "ਸੰਰਚਨਾ ਫਾਇਲ ਬਣਾਓ (ਪਰੋਜੈਕਟ ਰੂਟ ਵਿੱਚ)" },

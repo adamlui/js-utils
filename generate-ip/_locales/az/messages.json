@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parametr seçimləri" },
   "helpSection_flags": { "message": "Buolean seçimləri" },
   "helpSection_cmds": { "message": "Məlumat əmrləri" },
+  "optionDesc_uiLang": { "message": "İSO 639-1-də UI-nı göstərmək üçün dilin kodu" },
   "optionDesc_qty": { "message": "N İP ünvan(lar) ı yaradın" },
   "optionDesc_config": { "message": "Xüsusi konfiqurasiya faylını yükləyin" },
   "optionDesc_ipv6": { "message": "IPv6 ünvanı yaradın" },

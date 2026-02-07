@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Vebijarkên parametreyan" },
   "helpSection_flags": { "message": "Vebijarkên mîhengkirinê" },
   "helpSection_cmds": { "message": "Fermanên agahdariyê" },
+  "optionDesc_uiLang": { "message": "Koda ISO 639-1 ya zimanê ji bo nîşandana UI-ê" },
   "optionDesc_config": { "message": "Pelê mîhengkirina xwerû bar bike" },
   "optionDesc_quiet": { "message": "Hemî têketinê ji bilî xeletiyan bişkînin" },
   "optionDesc_init": { "message": "Pelê mîhengkirinê biafirîne (di rootê projeyê de)" },

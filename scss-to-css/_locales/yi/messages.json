@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "בוליאַן אָפּציעס" },
   "helpSection_params": { "message": "פּאַראַמעטער אָפּציעס" },
   "helpSection_cmds": { "message": "באַפֿעלן" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 קאָד פֿון שפּראַך צו ווײַזן באַניצער־אינטערפֿייס אין" },
   "inputPathDesc_main": { "message": "דרך צו SCSS טעקע אדער וועגווייזער וואס אנטהאלט SCSS טעקעס צו ווערן קאמפיילט" },
   "inputPathDesc_extra": { "message": "באַצוג צו דער איצטיקער אַרבעטס־דירעקטאָריע" },
   "outputPathDesc_main": { "message": "דרך צו טעקע אדער דירעקטארי וואו CSS + קוואל-מאפע טעקעס וועלן ווערן געהאלטן" },

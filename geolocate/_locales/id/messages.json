@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Opsi parameter" },
   "helpSection_flags": { "message": "Opsi konfigurasi" },
   "helpSection_cmds": { "message": "Perintah info" },
+  "optionDesc_uiLang": { "message": "Kode bahasa ISO 639 -1 untuk menampilkan UI di" },
   "optionDesc_config": { "message": "Muat file konfigurasi kustom" },
   "optionDesc_quiet": { "message": "Cegah semua pencatatan kecuali kesalahan" },
   "optionDesc_init": { "message": "Buat file konfigurasi (di root proyek)" },

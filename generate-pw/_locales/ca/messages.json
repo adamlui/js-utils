@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Opcions de paràmetres" },
   "helpSection_flags": { "message": "Opcions booleanes" },
   "helpSection_cmds": { "message": "Ordres d'informació" },
+  "optionDesc_uiLang": { "message": "Codi de llengua ISO 639-1 per mostrar la interfície d'usuari" },
   "optionDesc_length": { "message": "Generar contrasenya(s) de longitud n" },
   "optionDesc_qty": { "message": "Genera n contrasenya(s)" },
   "optionDesc_config": { "message": "Carrega un fitxer de configuració personalitzat" },

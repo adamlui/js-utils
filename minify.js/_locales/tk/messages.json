@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Mantıksal Seçenekler" },
   "helpSection_params": { "message": "Parametr saýlamalary" },
   "helpSection_cmds": { "message": "Öwrenme tabşyryklary" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 dil kodyny görkezmek üçin" },
   "inputPathDesc_main": { "message": "JavaScript faýlyna ýa-da javascript faýlyna ýol" },
   "inputPathDesc_extra": { "message": "häzirki iş direktory bilen bagly" },
   "outputPathDesc_main": { "message": "Faýlyň ýa-da katalogyň ýoly" },

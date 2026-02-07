@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Boolean zvokusarudza" },
   "helpSection_params": { "message": "Parameter zvokusarudza" },
   "helpSection_cmds": { "message": "Info mirairo" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 remutauro kuratidza UI muna" },
   "inputPathDesc_main": { "message": "Nzira kuti JavaScript faira kana Directory rine JavaScript mafaira kuti minified" },
   "inputPathDesc_extra": { "message": "maererano neazvino anoshanda dhairekitori" },
   "outputPathDesc_main": { "message": "Nzira kune faira kana dhairekitori uko mafaira akachengetedzwa achachengetwa" },

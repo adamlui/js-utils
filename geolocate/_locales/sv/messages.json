@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Konfigurera alternativ" },
   "helpSection_flags": { "message": "Konfigurera alternativ" },
   "helpSection_cmds": { "message": "INFO-kommandon" },
+  "optionDesc_uiLang": { "message": "ISO 639-1-kod för språk för att visa användargränssnitt i" },
   "optionDesc_config": { "message": "Ladda anpassad konfigurationsfil" },
   "optionDesc_quiet": { "message": "Dölj all loggning utom fel" },
   "optionDesc_init": { "message": "Skapa konfigurationsfil (i projektets rot)" },

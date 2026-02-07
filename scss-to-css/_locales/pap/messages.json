@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Opcion Boolean" },
   "helpSection_params": { "message": "Opcion Parámetro" },
   "helpSection_cmds": { "message": "Komando" },
+  "optionDesc_uiLang": { "message": "Documente similare cu ISO 639-1 Code of Language" },
   "inputPathDesc_main": { "message": "Página principal > Ciencia > Contenido de archivo de archivo de archivo de archivo de archivo de archivo de archivo de archivo" },
   "inputPathDesc_extra": { "message": "relashoná ku e maneho aktual" },
   "outputPathDesc_main": { "message": "Página principal Ensayos Archivo CSS + sourcemap" },

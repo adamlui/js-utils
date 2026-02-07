@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "ជម្រើស ប៊ូលីន" },
   "helpSection_params": { "message": "ជម្រើសប៉ារ៉ាម៉ែត្រ" },
   "helpSection_cmds": { "message": "áá¶áááááááá¶" },
+  "optionDesc_uiLang": { "message": "កូដភាសា ISO 639-1 ដើម្បីបង្ហាញ UI នៅក្នុង" },
   "inputPathDesc_main": { "message": "ផ្លូវ ទៅ ឯកសារ SCSS ឬ ថត ដែល មាន ឯកសារ SCSS ដែល ត្រូវ ចងក្រង" },
   "inputPathDesc_extra": { "message": "ទាក់ទងនឹងថតការងារបច្ចុប្បន្ន" },
   "outputPathDesc_main": { "message": "ផ្លូវ ទៅ ឯកសារ ឬ ថត ដែល ឯកសារ ផែនទី ប្រភព CSS+ នឹង ត្រូវ បាន ទុក" },

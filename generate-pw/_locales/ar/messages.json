@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "خيارات المتغير" },
   "helpSection_flags": { "message": "خيارات منطقية" },
   "helpSection_cmds": { "message": "أوامر المعلومات" },
+  "optionDesc_uiLang": { "message": "رمز لغة ISO 639-1 لعرض واجهة المستخدم في" },
   "optionDesc_length": { "message": "إنشاء كلمة(كلمات) مرور بطول ن" },
   "optionDesc_qty": { "message": "إنشاء كلمة(كلمات) مرور" },
   "optionDesc_config": { "message": "تحميل ملف التكوين المخصص" },

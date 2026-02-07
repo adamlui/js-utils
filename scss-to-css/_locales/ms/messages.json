@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Pilihan boolean" },
   "helpSection_params": { "message": "Pilihan parameter" },
   "helpSection_cmds": { "message": "Arahan Baris" },
+  "optionDesc_uiLang": { "message": "Kod bahasa ISO 639-1 untuk memaparkan UI" },
   "inputPathDesc_main": { "message": "Laluan ke fail SCSS atau direktori yang mengandungi fail SCSS untuk disusun" },
   "inputPathDesc_extra": { "message": "relatif kepada direktori kerja semasa" },
   "outputPathDesc_main": { "message": "Laluan ke fail atau direktori di mana fail peta sumber CSS + akan disimpan" },

@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "ທາງເລືອກ Boolean" },
   "helpSection_params": { "message": "ຕົວເລືອກພາລາມິເຕີ" },
   "helpSection_cmds": { "message": "ຄໍາສັ່ງ Info" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 ລະຫັດພາສາທີ່ຈະສະແດງ UI ໃນ" },
   "inputPathDesc_main": { "message": "ເສັ້ນທາງໄປຫາເອກະສານ JavaScript ຫຼືໄດເລກະທໍລີທີ່ມີໄຟລ໌ JavaScript ທີ່ຕ້ອງຖືກ minified" },
   "inputPathDesc_extra": { "message": "ຫນ້າທີ່ເຊື່ອມຕໍ່ຫາ current - ວິກິວັດຈະນານຸກົມ" },
   "outputPathDesc_main": { "message": "ເສັ້ນທາງໄປຫາແຟ້ມຫຼືໄດເລກະທໍລີ ບ່ອນທີ່ແຟ້ມທີ່ນ້ອຍທີ່ສຸດຈະຖືກເກັບໄວ້" },

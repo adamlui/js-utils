@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Opsi parameter" },
   "helpSection_flags": { "message": "Opsi boolean" },
   "helpSection_cmds": { "message": "Perintah info" },
+  "optionDesc_uiLang": { "message": "Kode bahasa ISO 639 -1 untuk menampilkan UI di" },
   "optionDesc_length": { "message": "Hasilkan kata sandi dengan panjang n" },
   "optionDesc_qty": { "message": "Hasilkan n kata sandi" },
   "optionDesc_config": { "message": "Muat file konfigurasi kustom" },

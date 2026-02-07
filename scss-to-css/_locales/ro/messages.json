@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Opțiuni booleene" },
   "helpSection_params": { "message": "Opțiuni parametri" },
   "helpSection_cmds": { "message": "Comenzi" },
+  "optionDesc_uiLang": { "message": "Codul ISO 639-1 al limbii pentru afișarea UI în" },
   "inputPathDesc_main": { "message": "Calea către fișierul sau directorul SCSS care conține fișiere SCSS care urmează să fie compilate" },
   "inputPathDesc_extra": { "message": "în raport cu directorul curent de lucru" },
   "outputPathDesc_main": { "message": "Calea către fișierul sau directorul în care vor fi stocate fișierele sourcemap CSS +" },

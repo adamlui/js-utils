@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Tõeväärtuse valikud" },
   "helpSection_params": { "message": "Parameetri valikud" },
   "helpSection_cmds": { "message": "Teabekäsud" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 keelekood kasutajaliidese kuvamiseks" },
   "inputPathDesc_main": { "message": "Javascripti faili või kataloogi tee, mis sisaldab minimeeritavaid Javascripti faile" },
   "inputPathDesc_extra": { "message": "praeguse töökataloogi suhtes" },
   "outputPathDesc_main": { "message": "Faili või kataloogi tee, kuhu minifailid salvestatakse" },

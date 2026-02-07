@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Tùy chọn Boolean" },
   "helpSection_params": { "message": "Tùy chọn thông số" },
   "helpSection_cmds": { "message": "Lệnh" },
+  "optionDesc_uiLang": { "message": "Mã ngôn ngữ ISO 639-1 để hiển thị giao diện người dùng trong" },
   "inputPathDesc_main": { "message": "Đường dẫn đến tệp SCSS hoặc thư mục chứa các tệp SCSS sẽ được biên dịch" },
   "inputPathDesc_extra": { "message": "so với thư mục làm việc hiện tại" },
   "outputPathDesc_main": { "message": "Đường dẫn đến tệp hoặc thư mục nơi lưu trữ tệp bản đồ nguồn CSS +" },

@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Parameteroptionen" },
   "helpSection_flags": { "message": "Einstellungen bearbeiten" },
   "helpSection_cmds": { "message": "Info-Befehle" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 Sprachcode zur Anzeige der Benutzeroberfläche in" },
   "optionDesc_config": { "message": "Benutzerdefinierte Konfigurationsdatei laden" },
   "optionDesc_quiet": { "message": "Alle Protokolle mit Ausnahme von Fehlern unterdrücken" },
   "optionDesc_init": { "message": "Konfigurationsdatei erstellen (im Projektstammverzeichnis)" },

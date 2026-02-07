@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parametrar valmøguleikar" },
   "helpSection_flags": { "message": "Boolean valmøguleikar" },
   "helpSection_cmds": { "message": "Upplýsingar boð" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 málkód at vísa UI í" },
   "optionDesc_qty": { "message": "IP-adressurat kanna" },
   "optionDesc_config": { "message": "Legg til rættis konfiguratiónsfíla" },
   "optionDesc_ipv6": { "message": "IPv6 adressur" },

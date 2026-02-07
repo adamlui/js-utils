@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "אפשרויות פרמטר" },
   "helpSection_flags": { "message": "אפשרויות בוליאניות" },
   "helpSection_cmds": { "message": "פקודות מידע" },
+  "optionDesc_uiLang": { "message": "קוד שפה ISO 639 -1 להצגה בממשק המשתמש" },
   "optionDesc_length": { "message": "צור סיסמאותבאורך n" },
   "optionDesc_qty": { "message": "צור n סיסמאות" },
   "optionDesc_config": { "message": "טעינת קובץ תצורה מותאם אישית" },

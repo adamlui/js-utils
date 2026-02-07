@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "گزینه های بولی" },
   "helpSection_params": { "message": "گزینه های پارامتر" },
   "helpSection_cmds": { "message": "دستورات اطلاعات" },
+  "optionDesc_uiLang": { "message": "کد زبان ISO 639-1 برای نمایش رابط کاربری" },
   "inputPathDesc_main": { "message": "مسیر فایل جاوا اسکریپت یا دایرکتوری حاوی فایل های جاوا اسکریپت که باید کوچک شوند" },
   "inputPathDesc_extra": { "message": "نسبت به فهرست کاری فعلی" },
   "outputPathDesc_main": { "message": "مسیر فایل یا دایرکتوری که فایل های کوچک شده در آن ذخیره می شوند" },

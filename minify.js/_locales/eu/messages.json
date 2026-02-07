@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Aukera boolearrak" },
   "helpSection_params": { "message": "Parametro aukerak" },
   "helpSection_cmds": { "message": "Info komandoak" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 UI bistaratzeko hizkuntzaren kodea" },
   "inputPathDesc_main": { "message": "Txikitu beharreko JavaScript fitxategi edo direktoriorako bidea" },
   "inputPathDesc_extra": { "message": "uneko lan-direktorioarekiko" },
   "outputPathDesc_main": { "message": "Txikitutako fitxategiak gordeko diren fitxategi edo direktoriorako bidea" },

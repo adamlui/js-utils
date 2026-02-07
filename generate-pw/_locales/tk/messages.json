@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parametr saýlamalary" },
   "helpSection_flags": { "message": "Mantıksal Seçenekler" },
   "helpSection_cmds": { "message": "Öwrenme tabşyryklary" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 dil kodyny görkezmek üçin" },
   "optionDesc_length": { "message": "N uzynlygynyňparoluny (lar) ýaratmak" },
   "optionDesc_qty": { "message": "Parol (lar) ýarat" },
   "optionDesc_config": { "message": "Özgür konfigurasy faýly ýükle" },

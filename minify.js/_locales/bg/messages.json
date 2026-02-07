@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Булеви опции" },
   "helpSection_params": { "message": "Опции за параметрите" },
   "helpSection_cmds": { "message": "Команди за информация" },
+  "optionDesc_uiLang": { "message": "ISO 639 -1 код на езика за показване на потребителския интерфейс в" },
   "inputPathDesc_main": { "message": "Път до JavaScript файл или директория, съдържаща JavaScript файлове за минимизиране" },
   "inputPathDesc_extra": { "message": "спрямо текущата работна директория" },
   "outputPathDesc_main": { "message": "Път до файл или директория, където ще се съхраняват миниатюрни файлове" },

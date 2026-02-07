@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "參數選項" },
   "helpSection_flags": { "message": "布林選項" },
   "helpSection_cmds": { "message": "信息命令" },
+  "optionDesc_uiLang": { "message": "用於顯示UI的語言ISO 639-1代碼" },
   "optionDesc_length": { "message": "產生 n 個長度的密碼" },
   "optionDesc_qty": { "message": "產生 n 個密碼" },
   "optionDesc_config": { "message": "載入自訂組態檔" },

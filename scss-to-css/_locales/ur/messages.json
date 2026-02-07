@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "بولین آپشنز" },
   "helpSection_params": { "message": "پیرامیٹر کے اختیارات" },
   "helpSection_cmds": { "message": "کمانڈز" },
+  "optionDesc_uiLang": { "message": "UI ظاہر کرنے کے لیے ISO 639-1 زبان کا کوڈ" },
   "inputPathDesc_main": { "message": "مرتب کی جانے والی SCSS فائلوں پر مشتمل SCSS فائل یا ڈائرکٹری کا راستہ" },
   "inputPathDesc_extra": { "message": "موجودہ ورکنگ ڈائریکٹری سے متعلق" },
   "outputPathDesc_main": { "message": "فائل یا ڈائریکٹری کا راستہ جہاں CSS + سورس میپ فائلیں محفوظ کی جائیں گی" },

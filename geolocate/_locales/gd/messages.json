@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Roghainnean a 'pharaiméadair" },
   "helpSection_flags": { "message": "Roghainnean rèiteachaidh" },
   "helpSection_cmds": { "message": "Àithnean fiosrachaidh" },
+  "optionDesc_uiLang": { "message": "ISO 639 -1 Code of Language gus UI a thaisbeanadh ann an UI" },
   "optionDesc_config": { "message": "Luchdaich faidhle rèiteachaidh gnàthaichte" },
   "optionDesc_quiet": { "message": "Cuir às do gach logadh ach a - mhàin mearachdan" },
   "optionDesc_init": { "message": "Cruthaich faidhle rèiteachaidh (ann am freumh a 'phròiseict)" },

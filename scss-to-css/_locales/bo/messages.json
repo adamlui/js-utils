@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "བུ་ལིན་གདམ་ཁ།" },
   "helpSection_params": { "message": "ཚད་འཇལ་བྱེད་ཀྱི་འདེམས་སྟངས" },
   "helpSection_cmds": { "message": "བཀའ་སློབ །" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 སྐད་ཡིག་གི་ཁ་བྱང་།" },
   "inputPathDesc_main": { "message": "SCSS ཡིག་ཆ་བཟོ་རྒྱུའི་ལམ་སྟོན ། ཡང་ན་ཡིག་ཆ་བཟོ་རྒྱུའི་SCSS ཡིག་ཆ་ཡོད་པའི་ཡིག་ཆའི་ཁ་བྱང་" },
   "inputPathDesc_extra": { "message": "ད་ལྟའི་དྲ་གནས ། དྲ་གནས་གཙོ་ངོས ། >" },
   "outputPathDesc_main": { "message": "CSS + sourcemap ཡིག་ཆ་གསོག་འཇོག་བྱེད་སའི་ཡིག་སྣོད་དང་ཡིག་སྣོད་ལ་ལམ་" },

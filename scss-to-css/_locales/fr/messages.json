@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Options:" },
   "helpSection_params": { "message": "Options de paramètres" },
   "helpSection_cmds": { "message": "Commandes" },
+  "optionDesc_uiLang": { "message": "Code de langue ISO 639-1 pour afficher l'interface utilisateur dans" },
   "inputPathDesc_main": { "message": "Chemin d'accès au fichier SCSS ou répertoire contenant les fichiers SCSS à compiler" },
   "inputPathDesc_extra": { "message": "par rapport au répertoire de travail actuel" },
   "outputPathDesc_main": { "message": "Chemin vers le fichier ou le répertoire où les fichiers CSS + sourcemap seront stockés" },

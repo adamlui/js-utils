@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Boolean zvokusarudza" },
   "helpSection_params": { "message": "Parameter zvokusarudza" },
   "helpSection_cmds": { "message": "Mirairo" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 remutauro kuratidza UI muna" },
   "inputPathDesc_main": { "message": "Nzira kuna SCSS faira kana dhairekitori rine SCSS mafaira kuunganidzwa" },
   "inputPathDesc_extra": { "message": "maererano neazvino anoshanda dhairekitori" },
   "outputPathDesc_main": { "message": "Nzira yefaira kana dhairekitori apo CSS + sourcemap mafaira achachengetwa" },

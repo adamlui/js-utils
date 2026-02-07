@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Nā koho Boolean" },
   "helpSection_params": { "message": "Nā koho palena" },
   "helpSection_cmds": { "message": "Nā kauoha ʻike" },
+  "optionDesc_uiLang": { "message": "ʻO ke code ʻōlelo ISO 639-1 e hōʻike i ka UI ma" },
   "inputPathDesc_main": { "message": "ʻO ke ala i ka faila JavaScript a i ʻole ka papa kuhikuhi i loaʻa nā faila JavaScript e hoʻemi ʻia" },
   "inputPathDesc_extra": { "message": "pili i ka papa kuhikuhi hana o kēia manawa" },
   "outputPathDesc_main": { "message": "Ala i ka waihona a i ʻole ka papa kuhikuhi kahi e mālama ʻia ai nā faila liʻiliʻi" },

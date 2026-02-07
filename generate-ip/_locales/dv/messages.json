@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "ޕެރަމިޓަރ އޮޕްޝަންސް" },
   "helpSection_flags": { "message": "ބޫލިއަން އޮޕްޝަންސް" },
   "helpSection_cmds": { "message": "އިންފޯ ކޮމާންޑުތައް" },
+  "optionDesc_uiLang": { "message": "ޔޫއައި ދައްކާލުމަށް އައިއެސްއޯ 639-1 ކޯޑް އޮފް ލޭންގުއޭޖް" },
   "optionDesc_qty": { "message": "ޖެނެރޭޓް އެން އައިޕީ އެޑްރެސް (އެސް)" },
   "optionDesc_config": { "message": "ކަސްޓަމް ކޮންފިގް ފައިލް ލޯޑް ކުރާށެވެ" },
   "optionDesc_ipv6": { "message": "އައިޕީވީ6 އެޑްރެސް ޖެނެރޭޓްކުރުން" },

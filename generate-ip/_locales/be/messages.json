@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Параметры параметраў" },
   "helpSection_flags": { "message": "Лагічныя параметры" },
   "helpSection_cmds": { "message": "Інфармацыйныя каманды" },
+  "optionDesc_uiLang": { "message": "Код мовы ISO 639-1 для адлюстравання карыстацкага інтэрфейсу ў" },
   "optionDesc_qty": { "message": "Стварыць п IP-адрас(ы)" },
   "optionDesc_config": { "message": "Загрузіць уласны файл канфігурацыі" },
   "optionDesc_ipv6": { "message": "Стварыць адрас IPv6" },

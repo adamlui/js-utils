@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Opsyon Boolean" },
   "helpSection_params": { "message": "Opsyon paramèt" },
   "helpSection_cmds": { "message": "Kòmandman Enfòmasyon" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kòd langaj pou montre UI nan" },
   "inputPathDesc_main": { "message": "Chemen nan dosye JavaScript oswa anyè ki gen dosye JavaScript yo dwe minifye" },
   "inputPathDesc_extra": { "message": "relatif nan anyè k ap travay aktyèl la/relatif a anyè" },
   "outputPathDesc_main": { "message": "Chemen nan dosye oswa anyè kote dosye minifye yo pral estoke" },

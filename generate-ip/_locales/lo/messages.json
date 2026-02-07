@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "ຕົວເລືອກພາລາມິເຕີ" },
   "helpSection_flags": { "message": "ທາງເລືອກ Boolean" },
   "helpSection_cmds": { "message": "ຄໍາສັ່ງ Info" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 ລະຫັດພາສາທີ່ຈະສະແດງ UI ໃນ" },
   "optionDesc_qty": { "message": "ສ້າງທີ່ຢູ່ IP(es)" },
   "optionDesc_config": { "message": "ໂຫຼດເອກະສານຕັ້ງຄ່າທີ່ກຳນົດເອງ" },
   "optionDesc_ipv6": { "message": "ສ້າງທີ່ຢູ່ IPv6" },

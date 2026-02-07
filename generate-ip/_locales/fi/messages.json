@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parametrivaihtoehdot" },
   "helpSection_flags": { "message": "Boolen vaihtoehdot" },
   "helpSection_cmds": { "message": "Tietokomennot" },
+  "optionDesc_uiLang": { "message": "Iso 639-1 -kielikoodi käyttöliittymän näyttämiseksi" },
   "optionDesc_qty": { "message": "Luo n IP-osoitetta" },
   "optionDesc_config": { "message": "Lataa mukautettu asetustiedosto" },
   "optionDesc_ipv6": { "message": "Luo IPv6-osoite" },

@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Filifiliga Parameter" },
   "helpSection_flags": { "message": "Filifiliga Boolean" },
   "helpSection_cmds": { "message": "Poloaiga Info" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 code o le gagana e faaali atu UI i" },
   "optionDesc_qty": { "message": "Fausia n IP tuatusi(es)" },
   "optionDesc_config": { "message": "Load patino config faila" },
   "optionDesc_ipv6": { "message": "Fausia IPv6 tuatusi" },

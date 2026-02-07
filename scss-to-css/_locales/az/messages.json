@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Buolean seçimləri" },
   "helpSection_params": { "message": "Parametr seçimləri" },
   "helpSection_cmds": { "message": "Əmrlər" },
+  "optionDesc_uiLang": { "message": "İSO 639-1-də UI-nı göstərmək üçün dilin kodu" },
   "inputPathDesc_main": { "message": "Tərkibində SCSS faylları olan SCSS faylı və ya kataloquna gedən yol tərtib edilməlidir" },
   "inputPathDesc_extra": { "message": "cari iş kataloquna nisbətən" },
   "outputPathDesc_main": { "message": "CSS + turşcemap fayllarının saxlanılacağı fayl və ya kataloqa gedən yol" },

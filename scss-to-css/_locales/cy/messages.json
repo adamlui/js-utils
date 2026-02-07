@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Opsiynau Boole" },
   "helpSection_params": { "message": "Opsiynau paramedr" },
   "helpSection_cmds": { "message": "Gorchymyn" },
+  "optionDesc_uiLang": { "message": "ISO 639 -1 cod iaith i ddangos UI yn" },
   "inputPathDesc_main": { "message": "Llwybr i ffeil neu gyfeiriadur SCSS sy'n cynnwys ffeiliau SCSS i'w llunio" },
   "inputPathDesc_extra": { "message": "ynghylch y cyfeiriadur gwaith presennol" },
   "outputPathDesc_main": { "message": "Llwybr i ffeil neu gyfeiriadur lle bydd ffeiliau map ffynhonnell CSS + yn cael eu storio" },

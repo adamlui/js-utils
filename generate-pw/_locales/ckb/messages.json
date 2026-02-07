@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "هەڵبژاردنی پارامەتری" },
   "helpSection_flags": { "message": "هه ‌ ڵبژاردنه ‌ کانی بۆۆلین" },
   "helpSection_cmds": { "message": "فەرمانەکانی زانیاری" },
+  "optionDesc_uiLang": { "message": "ئایزۆ 639-1 کۆدی زمان بۆ پیشاندانی UI" },
   "optionDesc_length": { "message": "وشەنامەی بێژە کردن: بێژە کردن و وشە پێوەندیدارەکان بە length لە فۆرڤۆ length (لە" },
   "optionDesc_qty": { "message": "وشەنامەی بێژە کردن: بێژە کردن و وشەپێوەندیدارەکان بە N (s)" },
   "optionDesc_config": { "message": "پەڕگەی ڕێکخستنی تایبەت باربکە" },

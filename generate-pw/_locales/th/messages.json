@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "ตัวเลือกพารามิเตอร์" },
   "helpSection_flags": { "message": "ตัวเลือกบูลีน" },
   "helpSection_cmds": { "message": "คำสั่งข้อมูล" },
+  "optionDesc_uiLang": { "message": "รหัสภาษา ISO 639 -1 เพื่อแสดง UI ใน" },
   "optionDesc_length": { "message": "สร้างรหัสผ่านจำนวน n ความยาว" },
   "optionDesc_qty": { "message": "สร้างรหัสผ่าน n รหัสผ่าน" },
   "optionDesc_config": { "message": "โหลดไฟล์การกำหนดค่าที่กำหนดเอง" },

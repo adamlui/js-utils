@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "ตัวเลือกบูลีน" },
   "helpSection_params": { "message": "ตัวเลือกพารามิเตอร์" },
   "helpSection_cmds": { "message": "à¸à¸³à¸ªà¸±à¹à¸" },
+  "optionDesc_uiLang": { "message": "รหัสภาษา ISO 639 -1 เพื่อแสดง UI ใน" },
   "inputPathDesc_main": { "message": "เส้นทางไปยังไฟล์ SCSS หรือไดเรกทอรีที่มีไฟล์ SCSS ที่จะคอมไพล์" },
   "inputPathDesc_extra": { "message": "สัมพันธ์กับไดเรกทอรีการทำงานปัจจุบัน" },
   "outputPathDesc_main": { "message": "เส้นทางไปยังไฟล์หรือไดเรกทอรีที่จะจัดเก็บไฟล์ CSS + sourcemap" },

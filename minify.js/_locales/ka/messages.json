@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "ლოგიკური პარამეტრები" },
   "helpSection_params": { "message": "პარამეტრის პარამეტრები" },
   "helpSection_cmds": { "message": "ბრძანებები" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 ენის კოდი UI-ს საჩვენებლად" },
   "inputPathDesc_main": { "message": "Ბილიკი JavaScript ფაილამდე ან საქაღალდეში, რომელიც შეიცავს JavaScript ფაილებს" },
   "inputPathDesc_extra": { "message": "მიმდინარე სამუშაო საქაღალდესთან მიმართებაში" },
   "outputPathDesc_main": { "message": "Ბილიკი ფაილამდე ან საქაღალდეში, სადაც შენახული იქნება მინიფიცირებული ფაილები" },

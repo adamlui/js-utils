@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Opzioni booleane" },
   "helpSection_params": { "message": "Opzioni dei parametri" },
   "helpSection_cmds": { "message": "Comandi info" },
+  "optionDesc_uiLang": { "message": "Codice ISO 639-1 della lingua in cui visualizzare l'interfaccia utente" },
   "inputPathDesc_main": { "message": "Percorso del file JavaScript o della directory contenente i file JavaScript da minimizzare" },
   "inputPathDesc_extra": { "message": "rispetto alla directory di lavoro corrente" },
   "outputPathDesc_main": { "message": "Percorso del file o della directory in cui verranno archiviati i file minimizzati" },

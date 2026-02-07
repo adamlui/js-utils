@@ -40,6 +40,7 @@
   "helpSection_params": { "message": "Opțiuni de configurare" },
   "helpSection_flags": { "message": "Opțiuni de configurare" },
   "helpSection_cmds": { "message": "Comenzi Info" },
+  "optionDesc_uiLang": { "message": "Codul ISO 639-1 al limbii pentru afișarea UI în" },
   "optionDesc_config": { "message": "Încărcați fișierul de configurare personalizat" },
   "optionDesc_quiet": { "message": "Suprimați toate înregistrările, cu excepția erorilor" },
   "optionDesc_init": { "message": "Creați fișierul de configurare (în rădăcina proiectului)" },

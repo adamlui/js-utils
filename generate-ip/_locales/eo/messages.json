@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parametraj opcioj" },
   "helpSection_flags": { "message": "Buleaj opcioj" },
   "helpSection_cmds": { "message": "Informkomandoj" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kodo de lingvo por elmontri UI en" },
   "optionDesc_qty": { "message": "Generi IP-adreson(j) n" },
   "optionDesc_config": { "message": "Ŝargi propran agordodosieron" },
   "optionDesc_ipv6": { "message": "Generi IPv6-adreson" },

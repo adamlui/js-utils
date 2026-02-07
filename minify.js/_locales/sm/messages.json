@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Filifiliga Boolean" },
   "helpSection_params": { "message": "Filifiliga Parameter" },
   "helpSection_cmds": { "message": "Poloaiga Info" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 code o le gagana e faaali atu UI i" },
   "inputPathDesc_main": { "message": "Ala i faila JavaScript po o faatonuga e aofia ai faila JavaScript e tatau ona minified" },
   "inputPathDesc_extra": { "message": "faatusatusa i le Faatonu o Galuega i le taimi nei" },
   "outputPathDesc_main": { "message": "Ala i faila po o faatonuga o le a teuina faila minified" },

@@ -21,7 +21,9 @@
 
     // Init CLI data
     Object.assign(globalThis.cli ??= {}, require(`../${ env.devMode ? '../' : 'data/' }package-data.json`))
-    cli.msgs = await getMsgs(env.sysLang = env.debugMode ? generateRandomLang({ excludes: ['en'] }) : getSysLang())
+    settings.load('uiLang')
+    env.sysLang = cli.config.uiLang || ( env.debugMode ? generateRandomLang({ excludes: ['en'] }) : getSysLang() )
+    cli.msgs = await getMsgs(env.sysLang)
     cli.urls.docs += '/#-command-line-usage'
     if (!(env.sysLang).startsWith('en')){ // localize cli.urls.docs
         cli.docLocale = env.sysLang.replace('_', '-').toLowerCase()

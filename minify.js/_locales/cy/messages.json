@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Opsiynau Boole" },
   "helpSection_params": { "message": "Opsiynau paramedr" },
   "helpSection_cmds": { "message": "Gorchmynion gwybodaeth" },
+  "optionDesc_uiLang": { "message": "ISO 639 -1 cod iaith i ddangos UI yn" },
   "inputPathDesc_main": { "message": "Llwybr i ffeil neu gyfeiriadur Javascript sy'n cynnwys ffeiliau Javascript i'w minimeiddio" },
   "inputPathDesc_extra": { "message": "ynghylch y cyfeiriadur gwaith presennol" },
   "outputPathDesc_main": { "message": "Llwybr i ffeil neu gyfeiriadur lle bydd ffeiliau bach yn cael eu storio" },

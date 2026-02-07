@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "پیرامیٹر کے اختیارات" },
   "helpSection_flags": { "message": "بولین آپشنز" },
   "helpSection_cmds": { "message": "معلومات کے احکامات" },
+  "optionDesc_uiLang": { "message": "UI ظاہر کرنے کے لیے ISO 639-1 زبان کا کوڈ" },
   "optionDesc_length": { "message": "N لمبائی کا پاس ورڈ(پاس ورڈز) تیار کریں" },
   "optionDesc_qty": { "message": "N پاس ورڈ(پاس ورڈز) جنریٹ کریں" },
   "optionDesc_config": { "message": "کسٹم کنفیگ فائل لوڈ کریں" },

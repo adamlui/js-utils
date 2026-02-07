@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Parameter zvokusarudza" },
   "helpSection_flags": { "message": "Boolean zvokusarudza" },
   "helpSection_cmds": { "message": "Info mirairo" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 remutauro kuratidza UI muna" },
   "optionDesc_length": { "message": "Gadzira password(s) ye n urefu" },
   "optionDesc_qty": { "message": "Gadzira n password(s)" },
   "optionDesc_config": { "message": "Load custom config file" },

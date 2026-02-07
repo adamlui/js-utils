@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Δυαδικές επιλογές" },
   "helpSection_params": { "message": "Επιλογές παραμέτρων" },
   "helpSection_cmds": { "message": "Εντολές πληροφοριών" },
+  "optionDesc_uiLang": { "message": "Κωδικός γλώσσας ISO 639-1 για εμφάνιση διεπαφής χρήστη σε" },
   "inputPathDesc_main": { "message": "Διαδρομή προς το αρχείο ή τον κατάλογο JavaScript που περιέχει αρχεία JavaScript προς ελαχιστοποίηση" },
   "inputPathDesc_extra": { "message": "σε σχέση με τον τρέχοντα κατάλογο εργασίας" },
   "outputPathDesc_main": { "message": "Διαδρομή προς το αρχείο ή τον κατάλογο όπου θα αποθηκεύονται τα ελαχιστοποιημένα αρχεία" },

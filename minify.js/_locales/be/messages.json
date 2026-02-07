@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Лагічныя параметры" },
   "helpSection_params": { "message": "Параметры параметраў" },
   "helpSection_cmds": { "message": "Інфармацыйныя каманды" },
+  "optionDesc_uiLang": { "message": "Код мовы ISO 639-1 для адлюстравання карыстацкага інтэрфейсу ў" },
   "inputPathDesc_main": { "message": "Шлях да файла або каталога JavaScript, які змяшчае файлы JavaScript, якія трэба мінімізаваць" },
   "inputPathDesc_extra": { "message": "адносна бягучага працоўнага каталога" },
   "outputPathDesc_main": { "message": "Шлях да файла або каталога, дзе будуць захоўвацца мініяцюрныя файлы" },

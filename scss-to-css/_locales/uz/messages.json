@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Boolean variantlari" },
   "helpSection_params": { "message": "Parametr variantlari" },
   "helpSection_cmds": { "message": "Buyruqlar" },
+  "optionDesc_uiLang": { "message": "UI ni ko'rsatish uchun ISO 639-1 til kodi" },
   "inputPathDesc_main": { "message": "Kompilyatsiya qilinadigan SCSS fayllarini o'z ichiga olgan SCSS fayli yoki katalogiga yo'l" },
   "inputPathDesc_extra": { "message": "joriy ishchi katalogga nisbatan" },
   "outputPathDesc_main": { "message": "CSS + manba xaritasi fayllari saqlanadigan fayl yoki katalogga yo'l" },

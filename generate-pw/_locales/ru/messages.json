@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Параметры параметров" },
   "helpSection_flags": { "message": "Логические параметры" },
   "helpSection_cmds": { "message": "Информационные команды" },
+  "optionDesc_uiLang": { "message": "Код языка ISO 639-1 для отображения пользовательского интерфейса" },
   "optionDesc_length": { "message": "Сгенерировать пароль(ы) длиной n" },
   "optionDesc_qty": { "message": "Сгенерировать n паролей" },
   "optionDesc_config": { "message": "Загрузить пользовательский файл конфигурации" },

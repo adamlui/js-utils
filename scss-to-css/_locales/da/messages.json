@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Boolske muligheder" },
   "helpSection_params": { "message": "Parameterindstillinger" },
   "helpSection_cmds": { "message": "Kommandoer" },
+  "optionDesc_uiLang": { "message": "ISO 639-1-kode for sprog til visning af brugergrænseflade i" },
   "inputPathDesc_main": { "message": "Sti til SCSS-fil eller mappe, der indeholder SCSS-filer, der skal kompileres" },
   "inputPathDesc_extra": { "message": "i forhold til den aktuelle arbejdsmappe" },
   "outputPathDesc_main": { "message": "Sti til fil eller mappe, hvor CSS+sourcemap-filer gemmes" },

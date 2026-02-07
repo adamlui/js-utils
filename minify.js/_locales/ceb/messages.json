@@ -45,6 +45,7 @@
   "helpSection_flags": { "message": "Mga kapilian sa Boolean" },
   "helpSection_params": { "message": "Mga kapilian sa parameter" },
   "helpSection_cmds": { "message": "Mga mando sa info" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 nga kodigo sa sinultian aron ipakita ang UI sa" },
   "inputPathDesc_main": { "message": "Pamaagi sa JavaScript file o direktoryo nga adunay mga file sa JavaScript nga pagminusan" },
   "inputPathDesc_extra": { "message": "karon nga Direktoryo sa Pagtrabaho" },
   "outputPathDesc_main": { "message": "Pamaagi sa file o direktoryo diin tipigan ang mga minified file" },

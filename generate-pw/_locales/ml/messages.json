@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "പാരാമീറ്റർ ഓപ്ഷനുകൾ" },
   "helpSection_flags": { "message": "ബൂളിയൻ ഓപ്ഷനുകൾ" },
   "helpSection_cmds": { "message": "വിവര കമാന്‍ഡുകള്‍" },
+  "optionDesc_uiLang": { "message": "യുഐ പ്രദർശിപ്പിക്കുന്നതിനുള്ള ISO 639-1 ഭാഷാ കോഡ്" },
   "optionDesc_length": { "message": "N നീളത്തിന്റെ പാസ്‌വേഡ്(കൾ) സൃഷ്ടിക്കുക" },
   "optionDesc_qty": { "message": "N പാസ്‌വേഡ്(കൾ) സൃഷ്ടിക്കുക" },
   "optionDesc_config": { "message": "ഇഷ്ടാനുസൃത കോൺഫിഗറേഷൻ ഫയൽ ലോഡ് ചെയ്യുക" },

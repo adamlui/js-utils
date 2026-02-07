@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "အကန့်အသတ်ရွေးချယ်စရာများ" },
   "helpSection_flags": { "message": "Boolean ရွေးစရာများ" },
   "helpSection_cmds": { "message": "သတင်းအချက်အလက်ဆိုင်ရာ ညွှန်ကြားချက်များ" },
+  "optionDesc_uiLang": { "message": "ISO ကို 639-1 ဘာသာစကားကုဒ် UI ကိုပြသရန်" },
   "optionDesc_qty": { "message": "N IP လိပ်စာကို Generate (es)" },
   "optionDesc_config": { "message": "စိတ်ကြိုက် config ဖိုင်ကို ဖွင့်ပါ" },
   "optionDesc_ipv6": { "message": "IPv6 လိပ်စာ Generate" },

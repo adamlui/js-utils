@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Booleaanse opties" },
   "helpSection_params": { "message": "Parameteropties" },
   "helpSection_cmds": { "message": "Bevelen" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 taalcode om de gebruikersinterface weer te geven in" },
   "inputPathDesc_main": { "message": "Pad naar SCSS-bestand of map met SCSS-bestanden die moeten worden gecompileerd" },
   "inputPathDesc_extra": { "message": "ten opzichte van de huidige werkmap" },
   "outputPathDesc_main": { "message": "Pad naar bestand of map waar CSS + sourcemap-bestanden worden opgeslagen" },

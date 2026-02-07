@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "參數選項" },
   "helpSection_flags": { "message": "布林選項" },
   "helpSection_cmds": { "message": "信息命令" },
+  "optionDesc_uiLang": { "message": "用於顯示UI的語言ISO 639-1代碼" },
   "optionDesc_qty": { "message": "生成 n 個 IP 位址" },
   "optionDesc_config": { "message": "載入自訂組態檔" },
   "optionDesc_ipv6": { "message": "生成 IPv6 地址" },

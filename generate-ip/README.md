@@ -369,6 +369,7 @@ Sample output:
 ```
 Parameter options:
  --qty=n                     Generate n IP address(es).
+ --ui-lang="code"            ISO 639-1 code of language to display UI in.
  --config="path/to/file"     Load custom config file.
 
 Boolean options:

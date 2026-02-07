@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Booleove opcije" },
   "helpSection_params": { "message": "i opcije parametara" },
   "helpSection_cmds": { "message": "Komentar" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kod jezika za prikaz korisničkog sučelja u" },
   "inputPathDesc_main": { "message": "Putanja do SCSS datoteke ili direktorija koji sadrži SCSS datoteke koje treba kompajlirati" },
   "inputPathDesc_extra": { "message": "u odnosu na trenutni radni direktorij" },
   "outputPathDesc_main": { "message": "Putanja do datoteke ili direktorija gdje će biti pohranjene CSS + sourcemap datoteke" },

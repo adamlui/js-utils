@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Opțiuni parametri" },
   "helpSection_flags": { "message": "Opțiuni booleene" },
   "helpSection_cmds": { "message": "Comenzi Info" },
+  "optionDesc_uiLang": { "message": "Codul ISO 639-1 al limbii pentru afișarea UI în" },
   "optionDesc_qty": { "message": "Generați n adrese IP" },
   "optionDesc_config": { "message": "Încărcați fișierul de configurare personalizat" },
   "optionDesc_ipv6": { "message": "Generare adresă IPv6" },

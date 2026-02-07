@@ -33,6 +33,7 @@
   "helpSection_params": { "message": "Valkostir færibreytna" },
   "helpSection_flags": { "message": "Boole-valkostir" },
   "helpSection_cmds": { "message": "Upplýsingaskipanir" },
+  "optionDesc_uiLang": { "message": "ISO 639-1 kóði tungumáls til að sýna notendaviðmót í" },
   "optionDesc_length": { "message": "Búðu til lykilorð sem eru n lengd" },
   "optionDesc_qty": { "message": "Búa til n lykilorð" },
   "optionDesc_config": { "message": "Hlaða inn sérsniðinni stilliskrá" },

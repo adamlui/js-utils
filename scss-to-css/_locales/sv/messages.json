@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Booleska alternativ" },
   "helpSection_params": { "message": "Parameteralternativ" },
   "helpSection_cmds": { "message": "~Kommandon" },
+  "optionDesc_uiLang": { "message": "ISO 639-1-kod för språk för att visa användargränssnitt i" },
   "inputPathDesc_main": { "message": "Sökväg till SCSS-fil eller katalog som innehåller SCSS-filer som ska kompileras" },
   "inputPathDesc_extra": { "message": "i förhållande till den aktuella arbetskatalogen" },
   "outputPathDesc_main": { "message": "Sökväg till fil eller katalog där CSS + sourcemap-filer kommer att lagras" },

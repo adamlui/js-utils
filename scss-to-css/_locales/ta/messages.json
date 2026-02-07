@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "பூலியன் விருப்பங்கள்" },
   "helpSection_params": { "message": "அளவுரு விருப்பங்கள்" },
   "helpSection_cmds": { "message": "à®à®µà®£à®®à¯" },
+  "optionDesc_uiLang": { "message": "UI ஐக் காண்பிக்க ISO 639-1 மொழிக் குறியீடு" },
   "inputPathDesc_main": { "message": "SCSS கோப்பு அல்லது SCSS கோப்புகளைக் கொண்ட அடைவுக்கான பாதை தொகுக்கப்பட வேண்டும்" },
   "inputPathDesc_extra": { "message": "தற்போதைய வேலை கோப்பகத்துடன் தொடர்புடையது" },
   "outputPathDesc_main": { "message": "CSS + sourcemap கோப்புகள் சேமிக்கப்படும் கோப்பு அல்லது அடைவுக்கான பாதை" },

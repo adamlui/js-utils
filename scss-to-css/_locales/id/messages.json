@@ -46,6 +46,7 @@
   "helpSection_flags": { "message": "Opsi boolean" },
   "helpSection_params": { "message": "Opsi parameter" },
   "helpSection_cmds": { "message": "Perintah" },
+  "optionDesc_uiLang": { "message": "Kode bahasa ISO 639 -1 untuk menampilkan UI di" },
   "inputPathDesc_main": { "message": "Path ke file SCSS atau direktori yang berisi file SCSS yang akan dikompilasi" },
   "inputPathDesc_extra": { "message": "relatif terhadap direktori kerja saat ini" },
   "outputPathDesc_main": { "message": "Path ke file atau direktori tempat file peta sumber CSS + akan disimpan" },
