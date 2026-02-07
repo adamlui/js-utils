@@ -9,17 +9,16 @@ module.exports = {
     async getDocLocales() {
         cli.version ??= require(`./pkg${ env.devMode ? '' : '.min' }.js`).getVer('local')
         const verTag = cli.version ? `${cli.name}-${cli.version}` : 'latest',
-              jsdURL = `${cli.urls.jsdelivr}@${verTag}/${cli.name}/docs/`
+              jsdURL = `${cli.urls.jsdelivr}@${verTag}/${cli.name}/docs/`,
+              locales = []
         try {
             const respText = await (await data.fetch(jsdURL)).text(),
-                  reLocale = /href=".*\/docs\/([^/]+)\/"/g,
-                  locales = []
+                  reLocale = /href=".*\/docs\/([^/]+)\/"/g
             let match ; while ((match = reLocale.exec(respText))) locales.push(match[1]) // store locale dir names
-            return locales
         } catch (err) {
             log.warn(`${cli.msgs.warn_docLocalesFetchFailed}:`, err.message)
-            return []
         }
+        return locales
     },
 
     generateRandomLang({ includes = [], excludes = [] } = {}) {
