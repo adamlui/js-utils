@@ -68,11 +68,11 @@ module.exports = {
 
         if (!langCode.startsWith('en')) { // fetch non-English msgs from jsDelivr
             const msgHostURL = `${cli.urls.jsdelivr}@${cli.commitHashes.locales}/_locales/`
-            let msgHref = `${msgHostURL}${langCode}/messages.json`
-            while ((this.msgFetchesTried ||= 0) < 3)
+            let msgHref = `${msgHostURL}${langCode}/messages.json`, msgFetchesTried = 0
+            while (msgFetchesTried < 3)
                 try { // fetch remote msgs
                     msgs = data.flatten(await (await data.fetch(msgHref)).json())
-                    this.msgFetchesTried = 0 ; break
+                    break
                 } catch (err) { // retry up to 2X (region-stripped + EN)
                     this.msgFetchesTried++ ; if (this.msgFetchesTried >= 3) break
                     log.debug(msgHref = langCode.includes('-') && this.msgFetchesTried == 1 ?
