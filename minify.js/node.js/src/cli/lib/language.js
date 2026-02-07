@@ -4,7 +4,8 @@ const data = require(`./data${ env.devMode ? '' : '.min' }.js`),
 module.exports = {
 
     formatCode(langCode) { // to match locale dir name
-        return langCode.replace(/(\w{2})[-_](\w{2})/, (_, lang, region) => `${lang}_${region.toUpperCase()}`) },
+        return langCode.replace(
+            /([a-z]{2,8})[-_]([a-z]{2})/i, (_, lang, region) =>`${lang.toLowerCase()}_${region.toUpperCase()}`) },
 
     generateRandomLang({ includes = [], excludes = [] } = {}) {
         const fs = require('fs'),
@@ -40,7 +41,7 @@ module.exports = {
         let randomLang = 'en'
         if (locales.length)
             randomLang = locales[Math.floor(Math.random() * locales.length)]
-        log.debug(`Random language:  ${randomLang}\n`)
+        log.debug(`Random language: ${randomLang}\n`)
 
         return randomLang
     },
@@ -67,7 +68,7 @@ module.exports = {
 
         if (!langCode.startsWith('en')) { // fetch non-English msgs from jsDelivr
             const msgHostURL = `${cli.urls.jsdelivr}@${cli.commitHashes.locales}/_locales/`
-            let msgHref = `${msgHostURL}${langCode.replace('-', '_')}/messages.json`
+            let msgHref = `${msgHostURL}${langCode}/messages.json`
             while ((this.msgFetchesTried ||= 0) < 3)
                 try { // fetch remote msgs
                     msgs = data.flatten(await (await data.fetch(msgHref)).json())
@@ -98,7 +99,6 @@ module.exports = {
             const pe = process.env
             return (pe.LANG || pe.LANGUAGE || pe.LC_ALL || pe.LC_MESSAGES || pe.LC_NAME || 'en')
                 .split('.')[0] // strip encoding e.g. .UTF-8
-                .split('_')[0] // strip region
         }
     }
 }
