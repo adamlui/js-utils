@@ -35,7 +35,7 @@
     }
 
     // Log/copy GEO result(s)
-    settings.load()
+    settings.load() // all keys
     const geoResults = await geo.locate(validIPs, { verbose: !cli.config.quietMode })
     if (!geoResults) process.exit(1)
     if (!cli.config.quietMode && geoResults.length == 1) log.geoData(geoResults[0])

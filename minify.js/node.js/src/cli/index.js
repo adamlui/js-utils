@@ -57,7 +57,7 @@
     }
 
     // Find all eligible JavaScript files or arg-passed file
-    settings.load()
+    settings.load() // all keys
     const srcFiles = inputPath.endsWith('.js') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
         : findJS(inputPath, {
             recursive: !cli.config.noRecursion,

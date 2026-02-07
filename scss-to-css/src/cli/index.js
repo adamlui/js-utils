@@ -57,7 +57,7 @@
     }
 
     // Find all eligible source files or arg-passed file
-    settings.load()
+    settings.load() // all keys
     const srcFiles = /s[ac]ss$/.test(inputPath) && !fs.statSync(inputPath).isDirectory() ? [inputPath]
         : findSCSS(inputPath, {
             recursive: !cli.config.noRecursion,
