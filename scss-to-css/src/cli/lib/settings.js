@@ -81,6 +81,7 @@ module.exports = {
 
         if (!cli.configPathTried) { // init config file path
             const configArg = env.args.find(arg => this.controls.config.regex.test(arg))
+
             if (configArg) { // resolve input path, then validate
                 if (!/=/.test(configArg))
                     log.errorAndExit(`[${configArg}] ${cli.msgs.error_mustIncludePath}`)
@@ -88,16 +89,18 @@ module.exports = {
                 cli.configPath = path.isAbsolute(inputPath) ? inputPath : path.resolve(process.cwd(), inputPath)
                 if (!fs.existsSync(cli.configPath))
                     log.configURLandExit(`${cli.msgs.error_configFileNotFound}:`, cli.configPath)
+
             } else // auto-discover .config.[cm]?js file
                 for (const ext of ['mjs', 'cjs', 'js']) {
                     const autoPath = path.resolve(process.cwd(), this.configFilename.replace(/\.[^.]+$/, `.${ext}`))
                     if (fs.existsSync(autoPath)) { cli.configPath = autoPath ; break }
                 }
+
             cli.configPathTried = true
         }
 
-        if (cli.configPath)
-            try { // to load from config file
+        if (cli.configPath) // load from config file
+            try {
                 const mod = require(cli.configPath), fileConfig = mod?.default ?? mod
                 if (!fileConfig || typeof fileConfig != 'object')
                     log.configURLandExit(`${cli.msgs.error_invalidConfigFile}.`)
@@ -116,6 +119,7 @@ module.exports = {
                 log.errorAndExit(`[${arg}] ${cli.msgs.error_notRecognized}.`)
             if (!inputCtrlKeys.includes(ctrlKey))
                 return // don't process env.args when load() specific keys
+
             const ctrl = this.controls[ctrlKey] ; if (ctrl.type == 'cmd') return
             let ctrlKeyVal = ctrl.type == 'param' ? arg.split('=')[1]?.trim() : true
 
