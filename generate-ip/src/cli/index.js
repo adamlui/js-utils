@@ -19,9 +19,9 @@
     // Init CLI data
     Object.assign(globalThis.cli ??= {}, require(`../${ env.devMode ? '../' : 'data/' }package-data.json`))
     settings.load('uiLang')
-    env.sysLang = cli.config.uiLang || (
+    cli.lang = cli.config.uiLang || (
         env.debugMode ? language.generateRandomLang({ excludes: ['en'] }) : language.getSysLang() )
-    cli.msgs = await language.getMsgs(env.sysLang)
+    cli.msgs = await language.getMsgs(cli.lang)
     cli.urls.docs += '/#-command-line-usage'
 
     // Exec CMD arg if passed

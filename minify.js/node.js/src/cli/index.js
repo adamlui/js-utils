@@ -21,13 +21,13 @@
     // Init CLI data
     Object.assign(globalThis.cli ??= {}, require(`../${ env.devMode ? '../' : 'data/' }package-data.json`))
     settings.load('uiLang')
-    env.sysLang = cli.config.uiLang || (
+    cli.lang = cli.config.uiLang || (
         env.debugMode ? language.generateRandomLang({ excludes: ['en'] }) : language.getSysLang() )
-    cli.msgs = await language.getMsgs(env.sysLang)
-    if (env.sysLang.startsWith('en'))
+    cli.msgs = await language.getMsgs(cli.lang)
+    if (cli.lang.startsWith('en'))
         cli.urls.docs += '/#-command-line-usage'
     else { // localize cli.urls.docs
-        cli.docLocale = env.sysLang.replace('_', '-').toLowerCase()
+        cli.docLocale = cli.lang.replace('_', '-').toLowerCase()
         if ((await language.getDocLocales()).includes(cli.docLocale))
             log.debug(cli.urls.docs += `/${cli.docLocale}#readme`)
     }
