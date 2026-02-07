@@ -8,7 +8,6 @@ module.exports = {
     configFilename: 'geolocate.config.mjs',
 
     controls: {
-        uiLang: { type: 'param', regex: /^--?ui-?lang(?:=.*|$)/ },
         config: { type: 'param', regex: /^--?config(?:=.*|$)/ },
         quietMode: { type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
         init: { type: 'cmd', regex: /^-{0,2}i(?:nit)?$/ },
@@ -89,7 +88,7 @@ module.exports = {
             if (/^[^-]|--?(?:config|debug)/.test(arg)) return
 
             const ctrlKey = Object.keys(this.controls).find(key => this.controls[key]?.regex?.test(arg))
-            if (!ctrlKey && !arguments.length) // invalid CLI arg passed, exit on arg-less load()
+            if (!ctrlKey && !arguments.length) // invalid CLI arg, exit on arg-less load() (after cli.msgs defined)
                 log.errorAndExit(`[${arg}] ${cli.msgs.error_notRecognized}.`)
             if (!inputCtrlKeys.includes(ctrlKey))
                 return // don't process env.args when load() specific keys
