@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "เรียกข้อมูลเวอร์ชันส่วนกลางไม่สำเร็จ" },
   "error_mustIncludePath": { "message": "ต้องมี = เส้นทาง" },
   "warn_configFileExists": { "message": "มีไฟล์การกำหนดค่าอยู่แล้ว" },
+  "warn_docLocalesFetchFailed": { "message": "เรียกดูเอกสารท้องถิ่นไม่สำเร็จ" },
   "info_exampleValidConfigFile": { "message": "ตัวอย่างไฟล์การกำหนดค่าที่ถูกต้อง" },
   "info_copyingToClip": { "message": "กำลังคัดลอกไปยังคลิปบอร์ด" },
   "info_moreHelp": { "message": "หากต้องการความช่วยเหลือเพิ่มเติม" },

@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Глобал хувилбарыг авч чадсангүй" },
   "error_mustIncludePath": { "message": "оруулах ёстой =зам" },
   "warn_configFileExists": { "message": "Тохиргооны файл аль хэдийн байна" },
+  "warn_docLocalesFetchFailed": { "message": "Баримтын байршлыг авч чадсангүй" },
   "info_exampleValidConfigFile": { "message": "Хүчинтэй тохиргооны файлын жишээ" },
   "info_copyingToClip": { "message": "Түр санах ой руу хуулах" },
   "info_moreHelp": { "message": "Нэмэлт тусламж" },

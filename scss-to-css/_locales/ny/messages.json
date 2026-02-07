@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Kutenga fayilo yakutali ya config kuchokera" },
   "warn_remoteConfigNotFound": { "message": "Fayilo ya config yakutali sinapezeke" },
   "warn_remoteConfigFailed": { "message": "Kulephera kutenga fayilo yakutali ya config" },
+  "warn_docLocalesFetchFailed": { "message": "Kulephera kutenga malo a DOC" },
   "tip_editToSetDefaults": { "message": "Sinthani fayiloyi kuti musinthe zolakwika" },
   "tip_cliArgsPrioritized": { "message": "Mitsutso ya CLI nthawi zonse imanyalanyaza mfundo izi" },
   "helpSection_usage": { "message": "Ntchito" },

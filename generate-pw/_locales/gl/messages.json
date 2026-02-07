@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Fallou a obtención da versión global" },
   "error_mustIncludePath": { "message": "debe incluír =sendero" },
   "warn_configFileExists": { "message": "Xa existe o ficheiro de configuración" },
+  "warn_docLocalesFetchFailed": { "message": "Non foi posíbel obter os locais de doc" },
   "info_exampleValidConfigFile": { "message": "Exemplo de ficheiro de configuración válido" },
   "info_copyingToClip": { "message": "Copiando para o portarretallos" },
   "info_moreHelp": { "message": "Para máis axuda" },

@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Globalne različice ni bilo mogoče pridobiti" },
   "error_mustIncludePath": { "message": "mora vsebovati =pot" },
   "warn_configFileExists": { "message": "Konfiguracijska datoteka že obstaja" },
+  "warn_docLocalesFetchFailed": { "message": "Lokacij dokumenta ni bilo mogoče pridobiti" },
   "info_exampleValidConfigFile": { "message": "Primer veljavne konfiguracijske datoteke" },
   "info_copyingToClip": { "message": "Kopiranje v odlagališče" },
   "info_moreHelp": { "message": "Za več pomoči" },

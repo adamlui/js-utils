@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Kuri Rusange Verisiyo" },
   "error_mustIncludePath": { "message": "gushyiramo =Inzira" },
   "warn_configFileExists": { "message": "IDOSIYE" },
+  "warn_docLocalesFetchFailed": { "message": "Kuri Imirongo- ntambike" },
   "info_exampleValidConfigFile": { "message": "Urugero Byemewe IDOSIYE" },
   "info_copyingToClip": { "message": "Kwandukura kuri clip clip" },
   "info_moreHelp": { "message": "Kubindi bisobanuro" },

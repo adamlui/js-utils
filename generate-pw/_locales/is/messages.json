@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Ekki tókst að sækja alþjóðlega útgáfu" },
   "error_mustIncludePath": { "message": "verður að innihalda =path" },
   "warn_configFileExists": { "message": "Stillingaskrá er þegar til" },
+  "warn_docLocalesFetchFailed": { "message": "Ekki tókst að ná í staðsetningar skjals" },
   "info_exampleValidConfigFile": { "message": "Dæmi um gilda uppsetningarskrá" },
   "info_copyingToClip": { "message": "Afrita á klemmuspjald" },
   "info_moreHelp": { "message": "Fyrir frekari aðstoð" },

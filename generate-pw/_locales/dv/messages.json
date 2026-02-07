@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "ގްލޯބަލް ވާޝަން ގެނައުމަށް ނާކާމިޔާބުވިއެވެ" },
   "error_mustIncludePath": { "message": "ހިމަނަންވާނީ =މަގު" },
   "warn_configFileExists": { "message": "ކޮންފިގް ފައިލް މިހާރުވެސް އެބަހުއްޓެވެ" },
+  "warn_docLocalesFetchFailed": { "message": "ޑޮކް ލޮކޭޝަންތައް ގެނައުމަށް ނާކާމިޔާބުވިއެވެ" },
   "info_exampleValidConfigFile": { "message": "މިސާލު ސައްހަ ކޮންފިގް ފައިލް" },
   "info_copyingToClip": { "message": "ކްލިޕްބޯޑަށް ކޮޕީ ކުރުން" },
   "info_moreHelp": { "message": "އިތުރު އެހީއަށް" },

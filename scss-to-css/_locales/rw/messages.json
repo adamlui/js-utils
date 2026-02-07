@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "IDOSIYE Bivuye" },
   "warn_remoteConfigNotFound": { "message": "IDOSIYE OYA Byabonetse" },
   "warn_remoteConfigFailed": { "message": "Kuri IDOSIYE" },
+  "warn_docLocalesFetchFailed": { "message": "Kuri Imirongo- ntambike" },
   "tip_editToSetDefaults": { "message": "Iyi IDOSIYE Kuri Kunoza Mburabuzi" },
   "tip_cliArgsPrioritized": { "message": "Impaka za CLI zihora zirenga ku ndangagaciro" },
   "helpSection_usage": { "message": "Ubutumwa" },

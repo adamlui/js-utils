@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Go tsaya faele ya remote config go tswa go" },
   "warn_remoteConfigNotFound": { "message": "Faele ya Remote config ga e a bonwa" },
   "warn_remoteConfigFailed": { "message": "O reteletswe ke go tsaya faele ya config e e dirwang kgakala" },
+  "warn_docLocalesFetchFailed": { "message": "O reteletswe ke go tsaya mafelo a Doc" },
   "tip_editToSetDefaults": { "message": "Rulaganya faele eno gore o dire dilo tse di sa tlwaelegang ka namana" },
   "tip_cliArgsPrioritized": { "message": "Dingangisano tsa CLI ka metlha di phimola boleng jono" },
   "helpSection_usage": { "message": "Tiriso" },

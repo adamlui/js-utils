@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "विश्वव्यापी संस्करण प्राप्त गर्न असफल भयो" },
   "error_mustIncludePath": { "message": "समावेश गर्नु पर्छ =PATH" },
   "warn_configFileExists": { "message": "कन्फिग फाइल पहिले नै अवस्थित छ" },
+  "warn_docLocalesFetchFailed": { "message": "डक स्थानहरू प्राप्त गर्न असफल भयो" },
   "info_exampleValidConfigFile": { "message": "उदाहरण मान्य कन्फिग फाइल" },
   "info_copyingToClip": { "message": "क्लिपबोर्डमा प्रतिलिपि गर्दैछ" },
   "info_moreHelp": { "message": "थप मद्दतको लागि" },

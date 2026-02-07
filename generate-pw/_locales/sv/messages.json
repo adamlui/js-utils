@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Det gick inte att hämta global version" },
   "error_mustIncludePath": { "message": "måste inkludera =sökväg" },
   "warn_configFileExists": { "message": "Konfigurationsfilen finns redan" },
+  "warn_docLocalesFetchFailed": { "message": "Det gick inte att hämta lokala dokument" },
   "info_exampleValidConfigFile": { "message": "Exempel på giltig konfigurationsfil" },
   "info_copyingToClip": { "message": "Kopiera till klippbordet" },
   "info_moreHelp": { "message": "För mer hjälp" },

@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Obteniendo archivo de configuración remota de" },
   "warn_remoteConfigNotFound": { "message": "Archivo de configuración remota no encontrado" },
   "warn_remoteConfigFailed": { "message": "No se ha podido recuperar el archivo de configuración remota" },
+  "warn_docLocalesFetchFailed": { "message": "No se ha podido obtener la configuración regional del documento" },
   "tip_editToSetDefaults": { "message": "Editar este archivo para personalizar los valores predeterminados" },
   "tip_cliArgsPrioritized": { "message": "Los argumentos CLI siempre anulan estos valores" },
   "helpSection_usage": { "message": "Uso" },

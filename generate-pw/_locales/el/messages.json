@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Αποτυχία λήψης καθολικής έκδοσης" },
   "error_mustIncludePath": { "message": "πρέπει να περιλαμβάνει =διαδρομή" },
   "warn_configFileExists": { "message": "Το αρχείο διαμόρφωσης υπάρχει ήδη" },
+  "warn_docLocalesFetchFailed": { "message": "Αποτυχία λήψης τοπικών ρυθμίσεων εγγράφου" },
   "info_exampleValidConfigFile": { "message": "Παράδειγμα έγκυρου αρχείου διαμόρφωσης" },
   "info_copyingToClip": { "message": "Αντιγραφή στο πρόχειρο" },
   "info_moreHelp": { "message": "Για περισσότερη βοήθεια" },

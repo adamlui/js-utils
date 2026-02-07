@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Afaylu n uγewwaṛ n ufaylu n ufaylu seg" },
   "warn_remoteConfigNotFound": { "message": "Afaylu n uγewwaṛ ur yettwafen ara" },
   "warn_remoteConfigFailed": { "message": "Ur yeddi ara ad yekkes afaylu n uγewwaṛ n ufaylu" },
+  "warn_docLocalesFetchFailed": { "message": "Isebtar i yellan ddaw-a sɛan aseɣwen ɣer Tmaziɣt" },
   "tip_editToSetDefaults": { "message": "Snifel afaylu-a akken ad tbeddleḍ tuccḍa" },
   "tip_cliArgsPrioritized": { "message": "Isebtar i yellan ddaw-a sɛan aseɣwen ɣer CLI" },
   "helpSection_usage": { "message": "Aseqdec:" },

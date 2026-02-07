@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "ລົ້ມເຫຼວໃນການຮວບຮວມຮຸ່ນທົ່ວໂລກ" },
   "error_mustIncludePath": { "message": "ຕ້ອງລວມ =ເສັ້ນທາງ" },
   "warn_configFileExists": { "message": "ໄຟລ໌ການຕັ້ງຄ່າມີຢູ່ແລ້ວ" },
+  "warn_docLocalesFetchFailed": { "message": "ລົ້ມເຫຼວໃນການຮວບຮວມສະຖານທີ່ doc" },
   "info_exampleValidConfigFile": { "message": "ຕົວຢ່າງເອກະສານ config ທີ່ຖືກຕ້ອງ" },
   "info_copyingToClip": { "message": "ສໍາເນົາໄປທີ່ຄລິບບອດ" },
   "info_moreHelp": { "message": "ສໍາ ລັບການຊ່ວຍເຫຼືອເພີ່ມເຕີມ" },

@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Falha ao obter a versão global" },
   "error_mustIncludePath": { "message": "deve incluir =caminho" },
   "warn_configFileExists": { "message": "O ficheiro de configuração já existe" },
+  "warn_docLocalesFetchFailed": { "message": "Falha ao buscar localidades de documentos" },
   "info_exampleValidConfigFile": { "message": "Exemplo de ficheiro de configuração válido" },
   "info_copyingToClip": { "message": "A copiar para a área de transferência" },
   "info_moreHelp": { "message": "Para obter mais ajuda" },

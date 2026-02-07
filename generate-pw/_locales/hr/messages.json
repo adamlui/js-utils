@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Dohvaćanje globalne verzije nije uspjelo" },
   "error_mustIncludePath": { "message": "mora sadržavati =putanju" },
   "warn_configFileExists": { "message": "Konfiguracijska datoteka već postoji" },
+  "warn_docLocalesFetchFailed": { "message": "Dohvaćanje lokaliteta dokumenata nije uspjelo" },
   "info_exampleValidConfigFile": { "message": "Primjer valjane konfiguracijske datoteke" },
   "info_copyingToClip": { "message": "Kopiranje u međuspremnik" },
   "info_moreHelp": { "message": "Za dodatnu pomoć" },

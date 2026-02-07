@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Ilanda ifayela lokulungisa elikude kusuka" },
   "warn_remoteConfigNotFound": { "message": "Ifayela lokulungisa kude alitholakali" },
   "warn_remoteConfigFailed": { "message": "Yehlulekile ukulanda ifayela lokumisa elikude" },
+  "warn_docLocalesFetchFailed": { "message": "Yehlulekile ukulanda izindawo ze-doc" },
   "tip_editToSetDefaults": { "message": "Hlela leli fayela ukuze uqoke okuzenzakalelayo" },
   "tip_cliArgsPrioritized": { "message": "Izimpikiswano ze-CLI zihlala zichitha lezi zindinganiso" },
   "helpSection_usage": { "message": "Ukusetshenziswa" },

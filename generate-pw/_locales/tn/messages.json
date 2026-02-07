@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "O reteletswe ke go batla mofuta wa lefatshe ka bophara" },
   "error_mustIncludePath": { "message": "e tshwanetse go akaretsa = tsela" },
   "warn_configFileExists": { "message": "Faele ya Config e setse e le teng" },
+  "warn_docLocalesFetchFailed": { "message": "O reteletswe ke go tsaya mafelo a Doc" },
   "info_exampleValidConfigFile": { "message": "Sekao sa faele e e amogelesegang ya" },
   "info_copyingToClip": { "message": "Go kopolola go ya go clipboard" },
   "info_moreHelp": { "message": "Go bona thuso go ya pele" },

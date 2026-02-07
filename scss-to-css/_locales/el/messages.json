@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Γίνεται λήψη του αρχείου απομακρυσμένης διαμόρφωσης από" },
   "warn_remoteConfigNotFound": { "message": "Το απομακρυσμένο αρχείο διαμόρφωσης δεν βρέθηκε" },
   "warn_remoteConfigFailed": { "message": "Αποτυχία λήψης αρχείου απομακρυσμένης διαμόρφωσης" },
+  "warn_docLocalesFetchFailed": { "message": "Αποτυχία λήψης τοπικών ρυθμίσεων εγγράφου" },
   "tip_editToSetDefaults": { "message": "Επεξεργαστείτε αυτό το αρχείο για να προσαρμόσετε τις προεπιλογές" },
   "tip_cliArgsPrioritized": { "message": "Τα ορίσματα CLI παρακάμπτουν πάντα αυτές τις τιμές" },
   "helpSection_usage": { "message": "Χρήση" },

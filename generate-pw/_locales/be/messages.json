@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Немагчыма атрымаць глабальную версію" },
   "error_mustIncludePath": { "message": "павінна ўключаць =шлях" },
   "warn_configFileExists": { "message": "Файл канфігурацыі ўжо існуе" },
+  "warn_docLocalesFetchFailed": { "message": "Немагчыма атрымаць лакальныя дакументы" },
   "info_exampleValidConfigFile": { "message": "Дапушчальны прыклад файла канфігурацыі" },
   "info_copyingToClip": { "message": "Значэнне" },
   "info_moreHelp": { "message": "Для атрымання дадатковай дапамогі" },

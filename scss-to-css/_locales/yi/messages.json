@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "נעמט ארויס א ווייטער קאנפיגאציע טעקע פון" },
   "warn_remoteConfigNotFound": { "message": "ווייַט קאָנפיג טעקע נישט געפֿונען" },
   "warn_remoteConfigFailed": { "message": "נישט געקענט ברענגען די ווייטערע קאנפיגאציע טעקע" },
+  "warn_docLocalesFetchFailed": { "message": "נישט געקענט ברענגען דאקומענט לאקאלן" },
   "tip_editToSetDefaults": { "message": "רעדאַקטירן דעם טעקע צו קאַסטאַמייזן דיפאָלטס" },
   "tip_cliArgsPrioritized": { "message": "CLI אַרגומענטן איבערשרייַבן שטענדיק די ווערטן" },
   "helpSection_usage": { "message": "באַניץ" },

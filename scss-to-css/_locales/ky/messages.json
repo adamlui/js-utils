@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Конфигурация файлын алыстан алуу" },
   "warn_remoteConfigNotFound": { "message": "Алыстан конфигурация файлы табылган жок" },
   "warn_remoteConfigFailed": { "message": "Алыскы конфигурация файлын алуу ишке ашпады" },
+  "warn_docLocalesFetchFailed": { "message": "Doc locales-action" },
   "tip_editToSetDefaults": { "message": "Undo-type" },
   "tip_cliArgsPrioritized": { "message": "CLI аргументтери ар дайым бул маанилерди жокко чыгарат" },
   "helpSection_usage": { "message": "Колдонулушу:" },

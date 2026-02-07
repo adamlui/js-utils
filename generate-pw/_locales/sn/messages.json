@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Akakundikana kuwana shanduro yepasi rose" },
   "error_mustIncludePath": { "message": "must include =nzira" },
   "warn_configFileExists": { "message": "Gadzirisa faira ratovapo" },
+  "warn_docLocalesFetchFailed": { "message": "Akakundikana kutora doc locales" },
   "info_exampleValidConfigFile": { "message": "Muenzaniso unoshanda config file" },
   "info_copyingToClip": { "message": "Kutevedzera kuti clipboard" },
   "info_moreHelp": { "message": "Kuti uwane rumwe rubatsiro" },

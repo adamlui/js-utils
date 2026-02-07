@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "ዓለምለኻዊ ቅጅል" },
   "error_mustIncludePath": { "message": "መገዲ =መገዲ" },
   "warn_configFileExists": { "message": "ፋይል ቀዲሙ ኣሎ" },
+  "warn_docLocalesFetchFailed": { "message": "ናይ ዶክ ቦታታት ምሓዝ ኣይከኣለን ።" },
   "info_exampleValidConfigFile": { "message": "ኣብነት እሙን ናይ ውጥን ፋይል" },
   "info_copyingToClip": { "message": "ናብ ክሊፕቦርድ ምምላስ" },
   "info_moreHelp": { "message": "ዝያዳ ሓገዝ" },

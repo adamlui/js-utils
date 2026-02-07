@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Gagal mengambil versi global" },
   "error_mustIncludePath": { "message": "harus menyertakan =path" },
   "warn_configFileExists": { "message": "File konfigurasi sudah ada" },
+  "warn_docLocalesFetchFailed": { "message": "Gagal mengambil lokal dokumen" },
   "info_exampleValidConfigFile": { "message": "Contoh file konfigurasi yang valid" },
   "info_copyingToClip": { "message": "Menyalin ke clipboard" },
   "info_moreHelp": { "message": "Untuk bantuan lebih lanjut" },

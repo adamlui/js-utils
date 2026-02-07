@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Globale Version konnte nicht abgerufen werden" },
   "error_mustIncludePath": { "message": "must include =path" },
   "warn_configFileExists": { "message": "Die Konfigurationsdatei ist bereits vorhanden" },
+  "warn_docLocalesFetchFailed": { "message": "Doc-Gebietsschemata konnten nicht abgerufen werden" },
   "info_exampleValidConfigFile": { "message": "Beispiel gültige Konfigurationsdatei" },
   "info_copyingToClip": { "message": "Kopiere in Zwischenablage" },
   "info_moreHelp": { "message": "Für weitere Hilfe" },

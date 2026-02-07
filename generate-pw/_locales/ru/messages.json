@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Не удалось получить глобальную версию" },
   "error_mustIncludePath": { "message": "must include =path" },
   "warn_configFileExists": { "message": "Конфигурационный файл уже существует" },
+  "warn_docLocalesFetchFailed": { "message": "Не удалось получить локали документов" },
   "info_exampleValidConfigFile": { "message": "Пример допустимого файла конфигурации" },
   "info_copyingToClip": { "message": "Копирование в буфер обмена" },
   "info_moreHelp": { "message": "Для получения дополнительной помощи читать" },

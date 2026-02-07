@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Fáa fjarskipað konfiguratiónsfíli frá" },
   "warn_remoteConfigNotFound": { "message": "Fjarskiftisfíla ikki funnin" },
   "warn_remoteConfigFailed": { "message": "Miseydnaðist at fáa fjarskiftis konfiguratiónsfílu" },
+  "warn_docLocalesFetchFailed": { "message": "Miseydnaðist at fáa doc lokals" },
   "tip_editToSetDefaults": { "message": "Rætta hesa fílu fyri at tillaga feilir" },
   "tip_cliArgsPrioritized": { "message": "CLI argumentir altíð ignorera hesi virðir" },
   "helpSection_usage": { "message": "Brúka" },

@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Sæki fjarstillingarskrá frá" },
   "warn_remoteConfigNotFound": { "message": "Fjarstýrð stillingaskrá fannst ekki" },
   "warn_remoteConfigFailed": { "message": "Ekki tókst að sækja fjarstillingarskrá" },
+  "warn_docLocalesFetchFailed": { "message": "Ekki tókst að ná í staðsetningar skjals" },
   "tip_editToSetDefaults": { "message": "Breyttu þessari skrá til að sérsníða sjálfgefin gildi" },
   "tip_cliArgsPrioritized": { "message": "CLI rök hníga alltaf að þessum gildum" },
   "helpSection_usage": { "message": "Notkun" },

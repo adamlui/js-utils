@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Versiunea globală nu a putut fi preluată" },
   "error_mustIncludePath": { "message": "trebuie să includă =cale" },
   "warn_configFileExists": { "message": "Fișierul de configurare există deja" },
+  "warn_docLocalesFetchFailed": { "message": "Preluarea localizărilor documentelor a eșuat" },
   "info_exampleValidConfigFile": { "message": "Exemplu de fișier de configurare valid" },
   "info_copyingToClip": { "message": "Copiez în clipboard" },
   "info_moreHelp": { "message": "Pentru mai mult ajutor" },

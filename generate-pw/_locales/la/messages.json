@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Non potest imaginum versione global" },
   "error_mustIncludePath": { "message": "coniutere =path" },
   "warn_configFileExists": { "message": "Tabula Configuendi sunt" },
+  "warn_docLocalesFetchFailed": { "message": "Cogitas" },
   "info_exampleValidConfigFile": { "message": "Exemplaria valid configuendum" },
   "info_copyingToClip": { "message": "Clipboard" },
   "info_moreHelp": { "message": "Auxilium more" },

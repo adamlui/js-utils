@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Remote-Konfigurationsdatei wird abgerufen von" },
   "warn_remoteConfigNotFound": { "message": "Remote-Konfigurationsdatei nicht gefunden" },
   "warn_remoteConfigFailed": { "message": "Fehler beim Abrufen der Remote-Konfigurationsdatei" },
+  "warn_docLocalesFetchFailed": { "message": "Doc-Gebietsschemata konnten nicht abgerufen werden" },
   "tip_editToSetDefaults": { "message": "Bearbeiten Sie diese Datei, um die Standardeinstellungen anzupassen" },
   "tip_cliArgsPrioritized": { "message": "CLI-Argumente überschreiben diese Werte immer" },
   "helpSection_usage": { "message": "Verwendung" },

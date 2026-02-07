@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Henter ekstern konfigurasjonsfil fra" },
   "warn_remoteConfigNotFound": { "message": "Ekstern konfigurasjonsfil ikke funnet" },
   "warn_remoteConfigFailed": { "message": "Kunne ikke hente den eksterne konfigurasjonsfilen" },
+  "warn_docLocalesFetchFailed": { "message": "Kunne ikke hente dokumentets språkinnstillinger" },
   "tip_editToSetDefaults": { "message": "Rediger denne filen for å tilpasse standardverdiene" },
   "tip_cliArgsPrioritized": { "message": "CLI-argumenter overstyrer alltid disse verdiene" },
   "helpSection_usage": { "message": "Bruk" },

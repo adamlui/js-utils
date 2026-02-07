@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Nie udało się pobrać wersji globalnej" },
   "error_mustIncludePath": { "message": "must include =ścieżka" },
   "warn_configFileExists": { "message": "Plik konfiguracyjny już istnieje" },
+  "warn_docLocalesFetchFailed": { "message": "Nie udało się pobrać lokalizacji dokumentów" },
   "info_exampleValidConfigFile": { "message": "Przykład prawidłowego pliku konfiguracyjnego" },
   "info_copyingToClip": { "message": "Kopiowanie do schowka" },
   "info_moreHelp": { "message": ", aby otrzymali dalszą pomoc" },

@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Nepavyko gauti visuotinės versijos" },
   "error_mustIncludePath": { "message": "turi būti =kelias" },
   "warn_configFileExists": { "message": "Konfigūracijos failas jau yra" },
+  "warn_docLocalesFetchFailed": { "message": "Nepavyko gauti dokumentų lokalių" },
   "info_exampleValidConfigFile": { "message": "VALID konfigūracijos failo pavyzdys" },
   "info_copyingToClip": { "message": "Kopijuojama į laikiną talpyklę" },
   "info_moreHelp": { "message": "Daugiau pagalbos" },

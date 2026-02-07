@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "@ info: whatsthis" },
   "error_mustIncludePath": { "message": "devas inkluzivi =vojo" },
   "warn_configFileExists": { "message": "Agordodosiero jam ekzistas" },
+  "warn_docLocalesFetchFailed": { "message": "@ info: whatsthis" },
   "info_exampleValidConfigFile": { "message": "Ekzempla valida agordodosiero" },
   "info_copyingToClip": { "message": "Kopiante al interdeponejo" },
   "info_moreHelp": { "message": "Por pli da helpo" },

@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "شکستی هێنا لە بەدەستهێنانی ڤێرژنی جیهانی" },
   "error_mustIncludePath": { "message": "پێویستە_ماڵپه ڕی سانا" },
   "warn_configFileExists": { "message": "پەڕگەی ڕێکخستن پێشتر بوونی هەیە" },
+  "warn_docLocalesFetchFailed": { "message": "دۆزینەوەی دۆکیۆمێنتەکان شکستی هێنا" },
   "info_exampleValidConfigFile": { "message": "نموونەی پەڕگەی ڕێکخستنێکی دروست" },
   "info_copyingToClip": { "message": "کۆپی کردن بۆ تەختەی ڤیدیۆ" },
   "info_moreHelp": { "message": "یارمەتی زیاتر" },

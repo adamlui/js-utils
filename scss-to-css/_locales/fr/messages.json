@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Récupération du fichier de configuration distant à partir de" },
   "warn_remoteConfigNotFound": { "message": "Fichier de configuration à distance introuvable" },
   "warn_remoteConfigFailed": { "message": "Échec de la récupération du fichier de configuration distant" },
+  "warn_docLocalesFetchFailed": { "message": "Échec de la récupération des paramètres régionaux du document" },
   "tip_editToSetDefaults": { "message": "Modifiez ce fichier pour personnaliser les valeurs par défaut" },
   "tip_cliArgsPrioritized": { "message": "Les arguments CLI remplacent toujours ces valeurs" },
   "helpSection_usage": { "message": "Utilisation" },

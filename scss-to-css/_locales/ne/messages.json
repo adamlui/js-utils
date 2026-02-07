@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "यसबाट टाढाको कन्फिग फाइल तान्दै" },
   "warn_remoteConfigNotFound": { "message": "टाढाको कन्फिग फाइल फेला परेन" },
   "warn_remoteConfigFailed": { "message": "टाढाको कन्फिग फाइल तान्न असफल भयो" },
+  "warn_docLocalesFetchFailed": { "message": "डक स्थानहरू प्राप्त गर्न असफल भयो" },
   "tip_editToSetDefaults": { "message": "पूर्वनिर्धारितहरू अनुकूलित गर्न यो फाइल सम्पादन गर्नुहोस्" },
   "tip_cliArgsPrioritized": { "message": "CLI आर्गुमेन्टहरूले सधैं यी मानहरूलाई ओभरराइड गर्छन्" },
   "helpSection_usage": { "message": "प्रयोग" },

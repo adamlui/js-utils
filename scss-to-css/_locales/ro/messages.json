@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Preluarea fișierului de configurare la distanță de la" },
   "warn_remoteConfigNotFound": { "message": "Fișierul de configurare de la distanță nu a fost" },
   "warn_remoteConfigFailed": { "message": "Preluarea fișierului de configurare de la distanță a eșuat" },
+  "warn_docLocalesFetchFailed": { "message": "Preluarea localizărilor documentelor a eșuat" },
   "tip_editToSetDefaults": { "message": "Editați acest fișier pentru a personaliza valorile implicite" },
   "tip_cliArgsPrioritized": { "message": "Argumentele CLI suprascriu întotdeauna aceste valori" },
   "helpSection_usage": { "message": "Utilizare" },

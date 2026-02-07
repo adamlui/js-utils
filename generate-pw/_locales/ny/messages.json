@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Analephera kutenga Baibulo lonse" },
   "error_mustIncludePath": { "message": "ayenera kuphatikizapo =njira" },
   "warn_configFileExists": { "message": "Konzani fayilo yomwe ilipo kale" },
+  "warn_docLocalesFetchFailed": { "message": "Kulephera kutenga malo a DOC" },
   "info_exampleValidConfigFile": { "message": "Chitsanzo chovomerezeka cha fayilo ya config" },
   "info_copyingToClip": { "message": "Kukopera kuti clipboard" },
   "info_moreHelp": { "message": "Kuti muthandizidwe kwambiri" },

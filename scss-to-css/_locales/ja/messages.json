@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "からリモート構成ファイルを取得しています" },
   "warn_remoteConfigNotFound": { "message": "リモート ファイルが見つかりません" },
   "warn_remoteConfigFailed": { "message": "リモート構成ファイルを取得できませんでした" },
+  "warn_docLocalesFetchFailed": { "message": "ドキュメントのロケールを取得できませんでした" },
   "tip_editToSetDefaults": { "message": "デフォルトをカスタマイズするには、このファイルを編集してください" },
   "tip_cliArgsPrioritized": { "message": "CLI引数は常にこれらの値を上書きします" },
   "helpSection_usage": { "message": "使用" },

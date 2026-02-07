@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "ཐག་རིང་གི་ཡིག་སྣོད་ཚུ་ སྤོ་བཤུད་འབད་" },
   "warn_remoteConfigNotFound": { "message": "སྒྲིག་འཇུག་བྱས་ཚད། ཐེངས་ 3 ལས་ཉུང་བ། ཐོན་རིམ་" },
   "warn_remoteConfigFailed": { "message": "ཐག་རིང་གི་སྒྲིག་གཞི་ཡིག་སྣོད་འཚོལ་མ་ཚུགས།" },
+  "warn_docLocalesFetchFailed": { "message": "ཡིག་ཆ་གནས་ས་འཚོལ་མ་ཚུགས།" },
   "tip_editToSetDefaults": { "message": "འདི་བཟུམ་གྱི་ཡིག་སྣོད་ཚུ་ རང་ལུགས་སྒྲིག་ནི་གི་དོན་ལུ་ བསྒྱུར་བཅོས་འབད་" },
   "tip_cliArgsPrioritized": { "message": "CLIགི་རྩོད་གཞི་ཚུ་ ཨ་རྟག་རང་ གོང་གསལ་གྱི་གོང་ཚད་ཚུ་ལས་བརྒལ་ཏེ་ འགྱོ་དོ་ཡོདཔ་ཨིན།" },
   "helpSection_usage": { "message": "ལག་ལེན་འཐབ་ཐབས།" },

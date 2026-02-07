@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "グローバルバージョンの取得に失敗しました" },
   "error_mustIncludePath": { "message": "必ず含める必要がある = パス" },
   "warn_configFileExists": { "message": "構成ファイルは既に存在します" },
+  "warn_docLocalesFetchFailed": { "message": "ドキュメントのロケールを取得できませんでした" },
   "info_exampleValidConfigFile": { "message": "有効な設定ファイルの例" },
   "info_copyingToClip": { "message": "クリップボードにコピーしています" },
   "info_moreHelp": { "message": "ヘルプをもっと読む" },

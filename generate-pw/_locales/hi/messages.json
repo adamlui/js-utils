@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "ग्लोबल वर्ज़न लाने में विफल" },
   "error_mustIncludePath": { "message": "इसमें शामिल होना चाहिए =PATH" },
   "warn_configFileExists": { "message": "कॉन्फ़िग फ़ाइल पहले से मौजूद है" },
+  "warn_docLocalesFetchFailed": { "message": "डॉक लोकेशन लाने में विफल" },
   "info_exampleValidConfigFile": { "message": "उदाहरण मान्य कॉन्फ़िगरेशन फ़ाइल" },
   "info_copyingToClip": { "message": "क्लिपबोर्ड पर कॉपी किया जा रहा है" },
   "info_moreHelp": { "message": "ज़्यादा मदद के लिए" },

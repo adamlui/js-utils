@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Global versiyani olishda xatolik yuz berdi" },
   "error_mustIncludePath": { "message": "=path ni o'z ichiga olishi kerak" },
   "warn_configFileExists": { "message": "Konfiguratsiya fayli allaqachon mavjud" },
+  "warn_docLocalesFetchFailed": { "message": "Hujjat lokalizatsiyasini olib bo'lmadi" },
   "info_exampleValidConfigFile": { "message": "Misol uchun amal qiluvchi konfiguratsiya fayli" },
   "info_copyingToClip": { "message": "Buferga nusxalanmoqda" },
   "info_moreHelp": { "message": "Ko'proq yordam uchun" },

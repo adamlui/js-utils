@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Dünýäniň nusgasyny tapyp bilmedim" },
   "error_mustIncludePath": { "message": "ýolbaşçylyk maslahatynyň (Ýolbaşçylykmaslahaty" },
   "warn_configFileExists": { "message": "Faýly öňden konfigurat et" },
+  "warn_docLocalesFetchFailed": { "message": "Doku ýerleri tapyp bilmedim" },
   "info_exampleValidConfigFile": { "message": "Mysal geçerli konfigurasiýa faýly" },
   "info_copyingToClip": { "message": "Klipbordda kopy etmek" },
   "info_moreHelp": { "message": "Köpräk kömek etmek üçin" },

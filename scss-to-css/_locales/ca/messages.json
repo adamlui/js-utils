@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "S'està obtenint el fitxer de configuració remota de" },
   "warn_remoteConfigNotFound": { "message": "No s'ha trobat el fitxer de configuració remota" },
   "warn_remoteConfigFailed": { "message": "No s'ha pogut obtenir el fitxer de configuració remota" },
+  "warn_docLocalesFetchFailed": { "message": "No s'ha pogut obtenir la localització del document" },
   "tip_editToSetDefaults": { "message": "Edita aquest fitxer per personalitzar els valors predeterminats" },
   "tip_cliArgsPrioritized": { "message": "Els arguments CLI sempre anul·len aquests valors" },
   "helpSection_usage": { "message": "Ús" },

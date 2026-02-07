@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Ua le mafai ona maua le lomiga i le lalolagi atoa" },
   "error_mustIncludePath": { "message": "e tatau ona aofia ai =ala" },
   "warn_configFileExists": { "message": "Config faila ua uma ona i ai" },
+  "warn_docLocalesFetchFailed": { "message": "O le a le mea e fai ai le doc locales" },
   "info_exampleValidConfigFile": { "message": "Faataitaiga aloaia config faila" },
   "info_copyingToClip": { "message": "Kopi i le clipboard" },
   "info_moreHelp": { "message": "Mo nisi fesoasoani" },

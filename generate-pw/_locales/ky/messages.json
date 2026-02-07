@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Дүйнөлүк нускасын алуу ишке ашпады" },
   "error_mustIncludePath": { "message": "жол =жолду камтышы керек" },
   "warn_configFileExists": { "message": "Файлды конфигурациялоо мурунтан эле бар" },
+  "warn_docLocalesFetchFailed": { "message": "Doc locales-action" },
   "info_exampleValidConfigFile": { "message": "Үлгү жарактуу конфигурация файлы" },
   "info_copyingToClip": { "message": "Алмашуу буферине көчүрүү" },
   "info_moreHelp": { "message": "Көбүрөөк маалымат алуу үчүн" },

@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "กำลังเรียกไฟล์การกำหนดค่าระยะไกลจาก" },
   "warn_remoteConfigNotFound": { "message": "ไม่พบไฟล์การกำหนดค่าระยะไกล" },
   "warn_remoteConfigFailed": { "message": "เรียกดูไฟล์การกำหนดค่าระยะไกลไม่สำเร็จ" },
+  "warn_docLocalesFetchFailed": { "message": "เรียกดูเอกสารท้องถิ่นไม่สำเร็จ" },
   "tip_editToSetDefaults": { "message": "แก้ไขไฟล์นี้เพื่อปรับแต่งค่าเริ่มต้น" },
   "tip_cliArgsPrioritized": { "message": "อาร์กิวเมนต์ CLI แทนที่ค่าเหล่านี้เสมอ" },
   "helpSection_usage": { "message": "การใช้งาน" },

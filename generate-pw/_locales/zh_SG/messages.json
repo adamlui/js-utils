@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "获取全局版本失败" },
   "error_mustIncludePath": { "message": "必须包含=路径" },
   "warn_configFileExists": { "message": "配置文件已存在" },
+  "warn_docLocalesFetchFailed": { "message": "获取文档区域设置失败" },
   "info_exampleValidConfigFile": { "message": "有效配置文件示例" },
   "info_copyingToClip": { "message": "复制到剪贴板" },
   "info_moreHelp": { "message": "需要更多帮助" },

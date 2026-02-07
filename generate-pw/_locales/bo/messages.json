@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "འཛམ་གླིང་གི་འགྲེལ་བཤད་འཚོལ་མ་ཐུབ་པ" },
   "error_mustIncludePath": { "message": "ཕྱོགས་སྟོན་་་་གཙོ་ངོས ། \"རྩོམ་རིག\"" },
   "warn_configFileExists": { "message": "རིམ་སྒྲིག་ཡིག་ཆ་སྔོན་ནས་ཡོད།" },
+  "warn_docLocalesFetchFailed": { "message": "ཡིག་ཆ་གནས་ཡུལ་འཚོལ་མི་ཐུབ་པ" },
   "info_exampleValidConfigFile": { "message": "དཔེར་ན ： སྒྲིག་འཇུག་བྱས་ཚད ། ཐེངས་བཅུ་གཉིས་པ །" },
   "info_copyingToClip": { "message": "བཤུད་སྒྲོམ་ནང་འདྲ་ཕབ་བྱེད་པ།" },
   "info_moreHelp": { "message": "སྐྱབས་གྲོགས་ཀྱི་ཆེད་དུ་" },

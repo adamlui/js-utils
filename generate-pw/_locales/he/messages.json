@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "טעינת הגרסה הגלובלית נכשלה" },
   "error_mustIncludePath": { "message": "חייב לכלול =PATH" },
   "warn_configFileExists": { "message": "קובץ התצורה כבר קיים" },
+  "warn_docLocalesFetchFailed": { "message": "טעינת אזורי המסמכים נכשלה" },
   "info_exampleValidConfigFile": { "message": "דוגמה לקובץ תצורה חוקי" },
   "info_copyingToClip": { "message": "מעתיק אל הלוח" },
   "info_moreHelp": { "message": "לקבלת עזרה נוספת" },

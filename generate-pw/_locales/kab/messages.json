@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Ur yeddi ara ad d-nefk asenfaṛ n umaḍal" },
   "error_mustIncludePath": { "message": "yessefk ad tqedceḍ =Abrid" },
   "warn_configFileExists": { "message": "Afaylu uffir yella yakan" },
+  "warn_docLocalesFetchFailed": { "message": "Isebtar i yellan ddaw-a sɛan aseɣwen ɣer Tmaziɣt" },
   "info_exampleValidConfigFile": { "message": "Amedya n ufaylu yettwaxedmen" },
   "info_copyingToClip": { "message": "Asnulfu ɣer Clippboard" },
   "info_moreHelp": { "message": "I ugar n tallelt" },

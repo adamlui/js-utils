@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Haal afgeleë konfigurasielêer van" },
   "warn_remoteConfigNotFound": { "message": "Afgeleë konfigurasielêer nie gevind nie" },
   "warn_remoteConfigFailed": { "message": "Kon nie afgeleë konfigurasielêer gaan haal nie" },
+  "warn_docLocalesFetchFailed": { "message": "Kon nie doc-plaaslikes gaan haal nie" },
   "tip_editToSetDefaults": { "message": "Redigeer hierdie lêer om verstek aan te pas" },
   "tip_cliArgsPrioritized": { "message": "CLI argumente ignoreer altyd hierdie waardes" },
   "helpSection_usage": { "message": "Gebruik" },

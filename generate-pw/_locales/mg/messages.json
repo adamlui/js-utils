@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Tsy nahavita naka ny kinova ankapobe" },
   "error_mustIncludePath": { "message": "tsy maintsy ahitana =sori-dàlana" },
   "warn_configFileExists": { "message": "Efa misy ilay raki-kirakira" },
+  "warn_docLocalesFetchFailed": { "message": "Tsy afaka naka ny toeran'ilay tahirin-kevitra" },
   "info_exampleValidConfigFile": { "message": "Ohatra ny raki-kirakira azo ekena" },
   "info_copyingToClip": { "message": "Mandika mankany amin'ny fanindri-taratasy" },
   "info_moreHelp": { "message": "Raha mila fanampiana bebe kokoa" },

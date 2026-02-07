@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Натавонистам нусхаи глобалиро гирам" },
   "error_mustIncludePath": { "message": "бояд дар бар гирад =PATH" },
   "warn_configFileExists": { "message": "Батанзимдарории файл аллакай вуҷуд дорад" },
+  "warn_docLocalesFetchFailed": { "message": "Натавонистам локалҳои DOC- ро гирам" },
   "info_exampleValidConfigFile": { "message": "Намунаи файли конфигуратсияи дуруст" },
   "info_copyingToClip": { "message": "Нусха бардоштан дар буфери иваз" },
   "info_moreHelp": { "message": "Para sa karagdagang tul" },

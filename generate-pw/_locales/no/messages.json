@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Kunne ikke hente den globale versjonen" },
   "error_mustIncludePath": { "message": "må inkludere =sti" },
   "warn_configFileExists": { "message": "Konfigurasjonsfilen finnes allerede" },
+  "warn_docLocalesFetchFailed": { "message": "Kunne ikke hente dokumentets språkinnstillinger" },
   "info_exampleValidConfigFile": { "message": "Eksempel på gyldig konfigurasjonsfil" },
   "info_copyingToClip": { "message": "Kopierer til utklippstavlen" },
   "info_moreHelp": { "message": "For mer hjelp" },

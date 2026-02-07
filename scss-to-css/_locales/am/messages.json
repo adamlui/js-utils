@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Fetching የርቀት ውቅር ፋይል ከ" },
   "warn_remoteConfigNotFound": { "message": "የርቀት ውቅር ፋይል አልተገኘም" },
   "warn_remoteConfigFailed": { "message": "የርቀት ውቅር ፋይልን ማንሳት አልተሳካም" },
+  "warn_docLocalesFetchFailed": { "message": "ዶክ አካባቢዎችን ማንሳት አልተቻለም" },
   "tip_editToSetDefaults": { "message": "ጉድለቶችን ለማበጀት ይህንን ፋይል ያርትዑ" },
   "tip_cliArgsPrioritized": { "message": "የ CLI ክርክሮች ሁል ጊዜ እነዚህን እሴቶች ያሸንፋሉ" },
   "helpSection_usage": { "message": "መልዕክት" },

@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Kaugkonfiguratsioonifaili toomine asukoh" },
   "warn_remoteConfigNotFound": { "message": "Kaugkonfiguratsioonifaili ei leitud" },
   "warn_remoteConfigFailed": { "message": "Kaugkonfiguratsioonifaili toomine nurjus" },
+  "warn_docLocalesFetchFailed": { "message": "Dokumendi lokaatide toomine nurjus" },
   "tip_editToSetDefaults": { "message": "Redigeeri seda faili vaikeväärtuste kohandamiseks" },
   "tip_cliArgsPrioritized": { "message": "CLI argumendid alistavad alati need väärtused" },
   "helpSection_usage": { "message": "Kasutus" },

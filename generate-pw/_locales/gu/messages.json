@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "વૈશ્વિક સંસ્કરણ મેળવવામાં નિષ્ફળ" },
   "error_mustIncludePath": { "message": "સમાવેશ કરવો જ જોઇએ =PATH" },
   "warn_configFileExists": { "message": "રૂપરેખાંકન ફાઇલ પહેલાથી જ અસ્તિત્વમાં છે" },
+  "warn_docLocalesFetchFailed": { "message": "DOC લોકેલ્સ મેળવવામાં નિષ્ફળતા" },
   "info_exampleValidConfigFile": { "message": "ઉદાહરણ માન્ય રૂપરેખાંકન ફાઇલ" },
   "info_copyingToClip": { "message": "ક્લિપબોર્ડ પર કૉપિ કરી રહ્યું છે" },
   "info_moreHelp": { "message": "વધુ મદદ માટે" },

@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Imeshindwa kupata toleo la kimataifa" },
   "error_mustIncludePath": { "message": "lazima ijumuishe =PATH" },
   "warn_configFileExists": { "message": "Sanidi faili tayari lipo" },
+  "warn_docLocalesFetchFailed": { "message": "Imeshindwa kupata maeneo ya doc" },
   "info_exampleValidConfigFile": { "message": "Mfano faili halali ya usanidi" },
   "info_copyingToClip": { "message": "Kunakili kwenye ubao wa kunakili" },
   "info_moreHelp": { "message": "Kwa msaada zaidi" },

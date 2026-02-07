@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "បានបរាជ័យក្នុងការទៅយកកំណែសកល" },
   "error_mustIncludePath": { "message": "ត្រូវតែរួមបញ្ចូល =ផ្លូវ" },
   "warn_configFileExists": { "message": "ឯកសារកំណត់រចនាសម្ព័ន្ធមានរួចហើយ" },
+  "warn_docLocalesFetchFailed": { "message": "មិន បាន សម្រេចក្នុងការទៅយកទីតាំងឯកសារ" },
   "info_exampleValidConfigFile": { "message": "ឯកសារកំណត់រចនាសម្ព័ន្ធត្រឹមត្រូវឧទាហរណ៍" },
   "info_copyingToClip": { "message": "កំពុងបិទភ្ជាប់ពីក្ដារតម្បៀតខ្ទាស់" },
   "info_moreHelp": { "message": "សម្រាប់ជំនួយបន្ថែម" },

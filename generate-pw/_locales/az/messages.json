@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Qlobal versiyanı əldə etmək alınmadı" },
   "error_mustIncludePath": { "message": "=yol daxil edilməlidir" },
   "warn_configFileExists": { "message": "Faylı konfiqurasiya edin artıq" },
+  "warn_docLocalesFetchFailed": { "message": "Dosye yerlərini gətirmək alınmadı" },
   "info_exampleValidConfigFile": { "message": "Nümunə üçün etibarlı konfiqurasiya faylı" },
   "info_copyingToClip": { "message": "Mübadilə buferinə kopyal" },
   "info_moreHelp": { "message": "Daha çox yardım üçün" },

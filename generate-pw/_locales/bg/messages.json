@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Неуспешно извличане на глобалната версия" },
   "error_mustIncludePath": { "message": "трябва да включва =път" },
   "warn_configFileExists": { "message": "Файлът за конфигуриране вече съществува" },
+  "warn_docLocalesFetchFailed": { "message": "Неуспешно извличане на DOC локали" },
   "info_exampleValidConfigFile": { "message": "Примерен валиден конфигурационен файл" },
   "info_copyingToClip": { "message": "Копиране в клипборда" },
   "info_moreHelp": { "message": "За повече помощ" },

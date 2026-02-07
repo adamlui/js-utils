@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Impossibile recuperare la versione globale" },
   "error_mustIncludePath": { "message": "deve includere =percorso" },
   "warn_configFileExists": { "message": "Il file di configurazione esiste già" },
+  "warn_docLocalesFetchFailed": { "message": "Impossibile recuperare le impostazioni locali del documento" },
   "info_exampleValidConfigFile": { "message": "Esempio di file di configurazione valido" },
   "info_copyingToClip": { "message": "Copia negli Appunti" },
   "info_moreHelp": { "message": "Per ulteriore assistenza" },

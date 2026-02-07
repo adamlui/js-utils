@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Error al obtener la versión global" },
   "error_mustIncludePath": { "message": "must include =path" },
   "warn_configFileExists": { "message": "El archivo de configuración ya existe" },
+  "warn_docLocalesFetchFailed": { "message": "No se ha podido obtener la configuración regional del documento" },
   "info_exampleValidConfigFile": { "message": "Ejemplo de archivo de configuración válido" },
   "info_copyingToClip": { "message": "Copiar al portapapeles fue" },
   "info_moreHelp": { "message": "Para obtener más ayuda" },

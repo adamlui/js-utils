@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "ການຮວບຮວມໄຟລ໌ຕັ້ງຄ່າຫ່າງໄກສອກຫຼີກຈາກ" },
   "warn_remoteConfigNotFound": { "message": "ບໍ່ພົບໄຟລ໌ຕັ້ງຄ່າຫ່າງໄກສອກຫຼີກ" },
   "warn_remoteConfigFailed": { "message": "ການຮວບຮວມໄຟລ໌ຕັ້ງຄ່າຫ່າງໄກສອກຫຼີກບໍ່ສຳເລັດ" },
+  "warn_docLocalesFetchFailed": { "message": "ລົ້ມເຫຼວໃນການຮວບຮວມສະຖານທີ່ doc" },
   "tip_editToSetDefaults": { "message": "ແກ້ໄຂເອກະສານນີ້ເພື່ອປັບແຕ່ງຄ່າເລີ່ມຕົ້ນ" },
   "tip_cliArgsPrioritized": { "message": "ການໂຕ້ຖຽງ CLI ສະເຫມີ overlook ຄຸນຄ່າເຫຼົ່ານີ້" },
   "helpSection_usage": { "message": "ການນຳໃຊ້" },

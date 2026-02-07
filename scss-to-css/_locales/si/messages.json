@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "දුරස්ථ සැකසුම් ගොනුව ලබා ගනිමින්" },
   "warn_remoteConfigNotFound": { "message": "දුරස්ථ සැකසුම් ගොනුව හමු නොවීය" },
   "warn_remoteConfigFailed": { "message": "දුරස්ථ සැකසුම් ගොනුව ලබා ගැනීමට අසමත් විය" },
+  "warn_docLocalesFetchFailed": { "message": "ලේඛන ස්ථාන ලබා ගැනීමට අසමත් විය" },
   "tip_editToSetDefaults": { "message": "පෙරනිමි රිසිකරණය කිරීමට මෙම ගොනුව සංස්කරණය කරන්න" },
   "tip_cliArgsPrioritized": { "message": "CLI තර්ක සෑම විටම මෙම අගයන් අභිබවා යයි" },
   "helpSection_usage": { "message": "භාවිතය" },

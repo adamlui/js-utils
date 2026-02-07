@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Fela Anikulapo Kuti Global Version" },
   "error_mustIncludePath": { "message": "fela Anikulapo Kuti =path" },
   "warn_configFileExists": { "message": "Config file kale" },
+  "warn_docLocalesFetchFailed": { "message": "Fela Anikulapo Kuti Doc Locales" },
   "info_exampleValidConfigFile": { "message": "Ifilangililo fya fipe fya fipe fya fipe" },
   "info_copyingToClip": { "message": "Kopololeni ku clipboard" },
   "info_moreHelp": { "message": "Ukwishibilapo nafimbi pa kwafwa" },

@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Globaalin version nouto epäonnistui" },
   "error_mustIncludePath": { "message": "on sisällettävä =polku" },
   "warn_configFileExists": { "message": "Konfigurointitiedosto on jo olemassa" },
+  "warn_docLocalesFetchFailed": { "message": "Asiakirjapaikkojen noutaminen epäonnistui" },
   "info_exampleValidConfigFile": { "message": "Esimerkki kelvollisesta asetustiedostosta" },
   "info_copyingToClip": { "message": "Kopioin leikepöydälle" },
   "info_moreHelp": { "message": "Saat lisäohjeita" },

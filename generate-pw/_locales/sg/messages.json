@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "A yeke na lege ni pëpe ti wara mbeni ye so ayeke na yâ ti dunia kue" },
   "error_mustIncludePath": { "message": "a lingbi ti tene so a yeke na lege ni pëpe" },
   "warn_configFileExists": { "message": "Faïl so ayeke dä awe" },
+  "warn_docLocalesFetchFailed": { "message": "A yeke wara ni pëpe na ndo ti Doc Locales" },
   "info_exampleValidConfigFile": { "message": "Tapande ti faïl so ayeke na lege ni" },
   "info_copyingToClip": { "message": "Gbu li ti mo na ndo ti clipboard ni" },
   "info_moreHelp": { "message": "Ti mû maboko na mo" },

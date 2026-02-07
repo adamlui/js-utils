@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "سے ریموٹ کنفیگ فائل حاصل کی جا رہی ہے" },
   "warn_remoteConfigNotFound": { "message": "ریموٹ کنفیگ فائل نہیں ملی" },
   "warn_remoteConfigFailed": { "message": "ریموٹ کنفیگ فائل حاصل کرنے میں ناکامی" },
+  "warn_docLocalesFetchFailed": { "message": "دستاویز کے لوکلز حاصل کرنے میں ناکامی" },
   "tip_editToSetDefaults": { "message": "ڈیفالٹس کو حسب ضرورت بنانے کے لیے اس فائل میں ترمیم کریں" },
   "tip_cliArgsPrioritized": { "message": "CLI دلائل ہمیشہ ان اقدار کو اوور رائیڈ کرتے ہیں" },
   "helpSection_usage": { "message": "استعمال" },

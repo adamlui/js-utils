@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Inakusanya faili ya usanidi wa mbali kutoka" },
   "warn_remoteConfigNotFound": { "message": "Faili la usanidi wa mbali halijapatikana" },
   "warn_remoteConfigFailed": { "message": "Imeshindwa kupata faili ya usanidi wa mbali" },
+  "warn_docLocalesFetchFailed": { "message": "Imeshindwa kupata maeneo ya doc" },
   "tip_editToSetDefaults": { "message": "Hariri faili hili ili ubadilishe chaguo-msingi" },
   "tip_cliArgsPrioritized": { "message": "Hoja za CLI kila wakati zinabatilisha maadili haya" },
   "helpSection_usage": { "message": "Matumizi" },

@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Gagal mendapatkan versi global" },
   "error_mustIncludePath": { "message": "mesti sertakan =laluan" },
   "warn_configFileExists": { "message": "Fail konfigurasi sudah wujud" },
+  "warn_docLocalesFetchFailed": { "message": "Gagal mendapatkan dokumen setempat" },
   "info_exampleValidConfigFile": { "message": "Contoh fail konfigurasi yang sah" },
   "info_copyingToClip": { "message": "Menyalin ke klipbod" },
   "info_moreHelp": { "message": "Untuk bantuan lanjut" },

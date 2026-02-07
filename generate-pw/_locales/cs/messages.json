@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Načtení globální verze se nezdařilo" },
   "error_mustIncludePath": { "message": "musí obsahovat =cesta" },
   "warn_configFileExists": { "message": "Konfigurační soubor již existuje" },
+  "warn_docLocalesFetchFailed": { "message": "Načtení národních prostředí dokumentů se nezdařilo" },
   "info_exampleValidConfigFile": { "message": "Příklad platného konfiguračního souboru" },
   "info_copyingToClip": { "message": "Kopírování do schránky" },
   "info_moreHelp": { "message": "Další pomoc" },

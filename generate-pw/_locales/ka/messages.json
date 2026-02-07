@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Გლობალური ვერსიის გამოთხოვის შეცდომა" },
   "error_mustIncludePath": { "message": "უნდა შეიცავდეს =path-ს" },
   "warn_configFileExists": { "message": "კონფიგურაციის ფაილი უკვე არსებობს" },
+  "warn_docLocalesFetchFailed": { "message": "Დოკუმენტის ლოკალების გამოთხოვის შეცდომა" },
   "info_exampleValidConfigFile": { "message": "ვალიდური კონფიგურაციის ფაილის მაგალითი" },
   "info_copyingToClip": { "message": "კოპირება ბუფერში" },
   "info_moreHelp": { "message": "დამატებითი დახმარებისთვის" },

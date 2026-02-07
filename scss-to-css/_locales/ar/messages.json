@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "جلب ملف التكوين عن بعد من" },
   "warn_remoteConfigNotFound": { "message": "لم يتم العثور على ملف التكوين عن بعد" },
   "warn_remoteConfigFailed": { "message": "فشل إحضار ملف التكوين عن بُعد" },
+  "warn_docLocalesFetchFailed": { "message": "تعذر إحضار مواقع المستندات" },
   "tip_editToSetDefaults": { "message": "تعديل هذا الملف لتخصيص الإعدادات الافتراضية" },
   "tip_cliArgsPrioritized": { "message": "تتجاوز وسيطات واجهة سطر الأوامر دائمًا هذه القيم" },
   "helpSection_usage": { "message": "الاستخدام" },

@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Ayikwazanga ukufumana inguqulelo yomhlaba wonke" },
   "error_mustIncludePath": { "message": "kufuneka iquke =indlela" },
   "warn_configFileExists": { "message": "Lungisa ifayile sele ikhona" },
+  "warn_docLocalesFetchFailed": { "message": "Ayiphumelelanga ukukhangela ii-doc locales" },
   "info_exampleValidConfigFile": { "message": "Umzekelo wefayile echanileyo yokuqwalasela" },
   "info_copyingToClip": { "message": "ikhuphela kwibhodi eqhotyoshwayo" },
   "info_moreHelp": { "message": "Ukuze ufumane uncedo olungakumbi" },

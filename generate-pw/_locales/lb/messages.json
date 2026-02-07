@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Konnt d'global Versioun net fannen" },
   "error_mustIncludePath": { "message": "muss =Pfad enthalen" },
   "warn_configFileExists": { "message": "D'Konfiguratiounsdatei gëtt et schonn" },
+  "warn_docLocalesFetchFailed": { "message": "Dok Lokale gefunden" },
   "info_exampleValidConfigFile": { "message": "Example valid config file" },
   "info_copyingToClip": { "message": "An d'Zwëschespäicher kopéieren" },
   "info_moreHelp": { "message": "Fir méi Hëllef" },

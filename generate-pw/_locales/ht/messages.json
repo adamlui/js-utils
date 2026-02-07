@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Li pa t rive jwenn vèsyon mondyal la" },
   "error_mustIncludePath": { "message": "dwe gen ladan =chemen" },
   "warn_configFileExists": { "message": "Config dosye deja egziste" },
+  "warn_docLocalesFetchFailed": { "message": "Li pa t rive jwenn lokal doktè yo" },
   "info_exampleValidConfigFile": { "message": "Egzanp dosye konfigirasyon ki valab" },
   "info_copyingToClip": { "message": "Kopi nan tablo" },
   "info_moreHelp": { "message": "Pou plis èd/Pour plus d '" },

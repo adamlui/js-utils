@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Преземање далечинска конфигурациска датотека од" },
   "warn_remoteConfigNotFound": { "message": "Далечинската конфигурациска датотека не е пронајдена" },
   "warn_remoteConfigFailed": { "message": "Не успеа да се преземе далечинска конфигурациска датотека" },
+  "warn_docLocalesFetchFailed": { "message": "Не успеаја да се преземат локалитети на DOC" },
   "tip_editToSetDefaults": { "message": "Уредете ја оваа датотека за да ги прилагодите стандардните вредности" },
   "tip_cliArgsPrioritized": { "message": "Аргументите на CLI секогаш ги надминуваат овие вредности" },
   "helpSection_usage": { "message": "Употреба" },

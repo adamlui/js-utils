@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Failed to fetch global version" },
   "error_mustIncludePath": { "message": "must include =path" },
   "warn_configFileExists": { "message": "Config file already exists" },
+  "warn_docLocalesFetchFailed": { "message": "Failed to fetch doc locales" },
   "info_exampleValidConfigFile": { "message": "Example valid config file" },
   "error_firstArgNotExist": { "message": "First argument can only be an existing file or directory" },
   "error_doesNotExist": { "message": "does not exist" },

@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Methwyd cyrchu'r fersiwn eang" },
   "error_mustIncludePath": { "message": "rhaid cynnwys =llwybr" },
   "warn_configFileExists": { "message": "Ffeil cyfluniad yn bodoli'n barod" },
+  "warn_docLocalesFetchFailed": { "message": "Methwyd cyrchu lleoliadau'r doc" },
   "info_exampleValidConfigFile": { "message": "Enghraifft o ffeil cyfluniad dilys" },
   "info_copyingToClip": { "message": "Copïo i&apos; r gludfwrdd" },
   "info_moreHelp": { "message": "Am fwy o help" },

@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "File Remo configuendum ad" },
   "warn_remoteConfigNotFound": { "message": "Tabularia configus Remote non est" },
   "warn_remoteConfigFailed": { "message": "Remote config file" },
+  "warn_docLocalesFetchFailed": { "message": "Cogitas" },
   "tip_editToSetDefaults": { "message": "Mutare the file to customize defaults" },
   "tip_cliArgsPrioritized": { "message": "REGIUM CLI ADLUM OMNIBUS OVNIBUS LEGESIAE" },
   "helpSection_usage": { "message": "consumptio" },

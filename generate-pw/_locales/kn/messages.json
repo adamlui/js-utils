@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "ಜಾಗತಿಕ ಆವೃತ್ತಿಯನ್ನು ಪಡೆಯಲು ವಿಫಲವಾಗಿದೆ" },
   "error_mustIncludePath": { "message": "ಒಳಗೊಂಡಿರಬೇಕು =ಮಾರ್ಗ" },
   "warn_configFileExists": { "message": "ಕಾನ್ಫಿಗರ್ ಫೈಲ್ ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ" },
+  "warn_docLocalesFetchFailed": { "message": "ಡಾಕ್ಯುಮೆಂಟ್ ಸ್ಥಳಗಳನ್ನು ಪಡೆಯಲು ವಿಫಲವಾಗಿದೆ" },
   "info_exampleValidConfigFile": { "message": "ಉದಾಹರಣೆ ಮಾನ್ಯ ಕಾನ್ಫಿಗರೇಶನ್ ಫೈಲ್" },
   "info_copyingToClip": { "message": "ಕ್ಲಿಪ್ ‌ ಬೋರ್ಡ್ ‌ ಗೆ ನಕಲಿಸಲಾಗುತ್ತಿದೆ" },
   "info_moreHelp": { "message": "ಹೆಚ್ಚಿನ ಸಹಾಯಕ್ಕಾಗಿ" },

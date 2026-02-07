@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Không thể tìm nạp phiên bản toàn cầu" },
   "error_mustIncludePath": { "message": "phải bao gồm =PATH" },
   "warn_configFileExists": { "message": "Tệp cấu hình đã tồn tại" },
+  "warn_docLocalesFetchFailed": { "message": "Không thể tìm nạp địa phương của tài liệu" },
   "info_exampleValidConfigFile": { "message": "Ví dụ về tệp cấu hình hợp lệ" },
   "info_copyingToClip": { "message": "Đang chép vào bảng nháp" },
   "info_moreHelp": { "message": "Để được trợ giúp thêm" },

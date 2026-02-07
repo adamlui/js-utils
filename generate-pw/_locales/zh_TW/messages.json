@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "無法擷取全球版本" },
   "error_mustIncludePath": { "message": "必須包含 =path" },
   "warn_configFileExists": { "message": "配置文件已存在" },
+  "warn_docLocalesFetchFailed": { "message": "無法擷取文件語言環境" },
   "info_exampleValidConfigFile": { "message": "有效配置文件示例" },
   "info_copyingToClip": { "message": "正在複製到剪貼簿" },
   "info_moreHelp": { "message": "如需更多協助" },

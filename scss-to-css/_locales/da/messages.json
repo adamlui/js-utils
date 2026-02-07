@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Henter fjernkonfigurationsfil fra" },
   "warn_remoteConfigNotFound": { "message": "Fjernkonfigurationsfil ikke fundet" },
   "warn_remoteConfigFailed": { "message": "Kunne ikke hente fjernkonfigurationsfil" },
+  "warn_docLocalesFetchFailed": { "message": "Kunne ikke hente lokale dokumenter" },
   "tip_editToSetDefaults": { "message": "Rediger denne fil for at tilpasse standardindstillinger" },
   "tip_cliArgsPrioritized": { "message": "CLI-argumenter tilsidesætter altid disse værdier" },
   "helpSection_usage": { "message": "Anvendelse" },

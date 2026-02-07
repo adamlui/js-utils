@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "ကမ္ဘာလုံးဆိုင်ရာ ဗားရှင်းကို ရယူရန် မအောင်မြင်ပါ" },
   "error_mustIncludePath": { "message": "ပါဝင်ရမည် =လမ်းကြောင်း" },
   "warn_configFileExists": { "message": "Config ဖိုင်ရှိပြီးသား" },
+  "warn_docLocalesFetchFailed": { "message": "စာရွက်စာတမ်းတည်နေရာများကို ရယူရန် မအောင်မြင်ပါ" },
   "info_exampleValidConfigFile": { "message": "ဥပမာ မှန်ကန်သော config ဖိုင်" },
   "info_copyingToClip": { "message": "ကလစ်ဘုတ်သို့ ကူးယူနေသည်" },
   "info_moreHelp": { "message": "နောက်ထပ်အကူအညီအတွက်" },

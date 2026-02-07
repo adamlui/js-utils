@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Globaalse versiooni toomine nurjus" },
   "error_mustIncludePath": { "message": "peab sisaldama =rada" },
   "warn_configFileExists": { "message": "Konfiguratsioonifail on juba olemas" },
+  "warn_docLocalesFetchFailed": { "message": "Dokumendi lokaatide toomine nurjus" },
   "info_exampleValidConfigFile": { "message": "Kehtiva konfiguratsioonifaili näide" },
   "info_copyingToClip": { "message": "Kopeerimine lõikepuhvrisse" },
   "info_moreHelp": { "message": "Lisateabe saamiseks" },

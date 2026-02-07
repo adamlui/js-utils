@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Cyrchu ffeil cyfluniad pell o" },
   "warn_remoteConfigNotFound": { "message": "Ni chanfuwyd y ffeil cyfluniad pell" },
   "warn_remoteConfigFailed": { "message": "Methwyd cyrchu'r ffeil cyfluniad pell" },
+  "warn_docLocalesFetchFailed": { "message": "Methwyd cyrchu lleoliadau'r doc" },
   "tip_editToSetDefaults": { "message": "Golygu 'r ffeil yma i gyfaddasu rhagosodiadau" },
   "tip_cliArgsPrioritized": { "message": "Mae ymresymiadau CLI bob amser yn diystyru'r gwerthoedd hyn" },
   "helpSection_usage": { "message": "Defnydd" },

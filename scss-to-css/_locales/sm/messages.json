@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Fetching mamao config faila mai" },
   "warn_remoteConfigNotFound": { "message": "Remote config faila e leʻi maua" },
   "warn_remoteConfigFailed": { "message": "Leiloa e fetch mamao config faila" },
+  "warn_docLocalesFetchFailed": { "message": "O le a le mea e fai ai le doc locales" },
   "tip_editToSetDefaults": { "message": "Faasaʻo lenei faila e customize defaults" },
   "tip_cliArgsPrioritized": { "message": "O finauga a le CLI e sili atu i nei tulaga faatauaina i taimi uma" },
   "helpSection_usage": { "message": "Faʻaaogaina" },

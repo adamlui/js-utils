@@ -12,7 +12,6 @@
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
         { generatePassword } = require(`../generate-pw${ env.devMode ? '' : '.min' }.js`),
-          github = require(`./lib/github${ env.devMode ? '' : '.min' }.js`),
           language = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
           log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
           settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
@@ -26,7 +25,7 @@
     cli.urls.docs += '/#-command-line-usage'
     if (!(env.sysLang).startsWith('en')){ // localize cli.urls.docs
         cli.docLocale = env.sysLang.replace('_', '-').toLowerCase()
-        cli.docLocales = await github.getDirContents({ path: 'generate-pw/docs', type: 'dir' })
+        cli.docLocales = await language.getDocLocales()
         if (cli.docLocales.includes(cli.docLocale))
             cli.urls.docs = cli.urls.docs.replace(/\/[^/]+$/g, `/${cli.docLocale}#readme`)
     }

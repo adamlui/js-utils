@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Pelê mîhengkirina dûr ji tê wergirtin" },
   "warn_remoteConfigNotFound": { "message": "Pelê mîhengkirina dûr nehat dîtin" },
   "warn_remoteConfigFailed": { "message": "Pelê mîhengkirina dûr nehat wergirtin" },
+  "warn_docLocalesFetchFailed": { "message": "Nekarî cihên belgeyê werbigire" },
   "tip_editToSetDefaults": { "message": "Ji bo xwerûkirina mîhengan vê pelê biguherîne" },
   "tip_cliArgsPrioritized": { "message": "Argumanên CLI her gav van nirxan derbas dikin" },
   "helpSection_usage": { "message": "RûpelkerName" },

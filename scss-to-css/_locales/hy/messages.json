@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Հեռակառավարվող կոնֆիգուրացիոն ֆայլի ստացում" },
   "warn_remoteConfigNotFound": { "message": "Հեռակա կոնֆիգուրացիայի ֆայլը չի գտնվել" },
   "warn_remoteConfigFailed": { "message": "Չհաջողվեց ստանալ հեռակառավարվող կոնֆիգուրացիոն ֆայլը" },
+  "warn_docLocalesFetchFailed": { "message": "Չհաջողվեց ստանալ փաստաթղթերի տեղամասերը" },
   "tip_editToSetDefaults": { "message": "Փոփոխեք այս ֆայլը ՝ կանխադրված ֆայլերը հարմարեցնելու համար" },
   "tip_cliArgsPrioritized": { "message": "CLI - ի փաստարկները միշտ անտեսում են այս արժեքները" },
   "helpSection_usage": { "message": "օգտագործում" },

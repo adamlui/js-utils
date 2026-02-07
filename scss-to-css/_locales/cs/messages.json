@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Načítání vzdáleného konfiguračního souboru z" },
   "warn_remoteConfigNotFound": { "message": "Vzdálený konfigurační soubor nebyl nalezen" },
   "warn_remoteConfigFailed": { "message": "Načtení vzdáleného konfiguračního souboru se nezdařilo" },
+  "warn_docLocalesFetchFailed": { "message": "Načtení národních prostředí dokumentů se nezdařilo" },
   "tip_editToSetDefaults": { "message": "Upravit tento soubor pro přizpůsobení výchozích hodnot" },
   "tip_cliArgsPrioritized": { "message": "Argumenty CLI vždy přepíší tyto hodnoty" },
   "helpSection_usage": { "message": "Použití" },

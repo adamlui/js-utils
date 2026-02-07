@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "నుండి రిమోట్ కాన్ఫిగరేషన్ ఫైల్ ‌ ను తీసుకువస్తోంది" },
   "warn_remoteConfigNotFound": { "message": "రిమోట్ కాన్ఫిగరేషన్ ఫైల్ కనుగొనబడలేదు" },
   "warn_remoteConfigFailed": { "message": "రిమోట్ కాన్ఫిగరేషన్ ఫైల్ ‌ ను పొందడంలో విఫలమైంది" },
+  "warn_docLocalesFetchFailed": { "message": "డాక్యుమెంట్ ‌ లొకేషన్ ‌ లను పొందడంలో విఫలమైంది" },
   "tip_editToSetDefaults": { "message": "డిఫాల్ట్ ‌ లను అనుకూలీకరించడానికి ఈ ఫైల్ ‌ ను సవరించండి" },
   "tip_cliArgsPrioritized": { "message": "CLI వాదనలు ఎల్లప్పుడూ ఈ విలువలను భర్తీ చేస్తాయి" },
   "helpSection_usage": { "message": "వినిమయం" },

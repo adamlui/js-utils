@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Атрыманне аддаленага файла канфігурацыі з" },
   "warn_remoteConfigNotFound": { "message": "Аддалены файл канфігурацыі не знойдзены" },
   "warn_remoteConfigFailed": { "message": "Немагчыма атрымаць файл аддаленых канфігурацый" },
+  "warn_docLocalesFetchFailed": { "message": "Немагчыма атрымаць лакальныя дакументы" },
   "tip_editToSetDefaults": { "message": "Рэдагаваць гэты файл, каб наладзіць па змаўчанні" },
   "tip_cliArgsPrioritized": { "message": "Аргументы CLI заўсёды перавызначаюць гэтыя значэнні" },
   "helpSection_usage": { "message": "Выкарыстанне" },

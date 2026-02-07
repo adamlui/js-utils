@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Haetaan etämääritystiedostoa kohteesta" },
   "warn_remoteConfigNotFound": { "message": "Etäkonfig-tiedostoa ei löydy" },
   "warn_remoteConfigFailed": { "message": "Etämääritystiedoston nouto epäonnistui" },
+  "warn_docLocalesFetchFailed": { "message": "Asiakirjapaikkojen noutaminen epäonnistui" },
   "tip_editToSetDefaults": { "message": "Muokkaa tätä tiedostoa mukauttaaksesi oletuksia" },
   "tip_cliArgsPrioritized": { "message": "CLI-argumentit ohittavat aina nämä arvot" },
   "helpSection_usage": { "message": "Käyttö" },

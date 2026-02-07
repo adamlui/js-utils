@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Tað eydnaðist ikki at fáa eina heildarútgávu" },
   "error_mustIncludePath": { "message": "vegur =vegur" },
   "warn_configFileExists": { "message": "Set upp fílu, sum longu er til" },
+  "warn_docLocalesFetchFailed": { "message": "Miseydnaðist at fáa doc lokals" },
   "info_exampleValidConfigFile": { "message": "Dømi góð konfiguratiónsfíla" },
   "info_copyingToClip": { "message": "At koppa á klippborðið" },
   "info_moreHelp": { "message": "Fyri at fáa meira hjálp" },

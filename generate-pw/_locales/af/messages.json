@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Kon nie globale weergawe kry nie" },
   "error_mustIncludePath": { "message": "moet insluit =pad" },
   "warn_configFileExists": { "message": "Konfigureer lêer bestaan reeds" },
+  "warn_docLocalesFetchFailed": { "message": "Kon nie doc-plaaslikes gaan haal nie" },
   "info_exampleValidConfigFile": { "message": "Voorbeeld geldige konfigurasielêer" },
   "info_copyingToClip": { "message": "Besig om te kopiëer na klipbord" },
   "info_moreHelp": { "message": "Vir meer hulp" },

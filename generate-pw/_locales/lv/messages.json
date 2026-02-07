@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "Neizdevās iegūt globālo versiju" },
   "error_mustIncludePath": { "message": "jāietver =ceļš" },
   "warn_configFileExists": { "message": "Konfigurācijas fails jau pastāv" },
+  "warn_docLocalesFetchFailed": { "message": "Neizdevās ielādēt dokumentu lokalizācijas" },
   "info_exampleValidConfigFile": { "message": "Derīga konfigurācijas faila piemērs" },
   "info_copyingToClip": { "message": "Notiek kopēšana starpliktuvē" },
   "info_moreHelp": { "message": "Lai saņemtu papildu palīdzību" },

@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "বিশ্বব্যাপী সংস্করণ আনতে ব্যর্থ হয়েছে" },
   "error_mustIncludePath": { "message": "অবশ্যই অন্তর্ভুক্ত করতে হবে =PATH" },
   "warn_configFileExists": { "message": "কনফিগ ফাইল ইতিমধ্যে বিদ্যমান" },
+  "warn_docLocalesFetchFailed": { "message": "ডক লোকালগুলি আনতে ব্যর্থ হয়েছে" },
   "info_exampleValidConfigFile": { "message": "উদাহরণ বৈধ কনফিগ ফাইল" },
   "info_copyingToClip": { "message": "ক্লিপবোর্ডে অনুলিপি করা হচ্ছে" },
   "info_moreHelp": { "message": "আরও সাহায্যের জন্য" },

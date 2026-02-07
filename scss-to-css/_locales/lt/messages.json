@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Gaunamas nuotolinės konfigūracijos failas iš" },
   "warn_remoteConfigNotFound": { "message": "Nuotolinės konfigūracijos failas nerastas" },
   "warn_remoteConfigFailed": { "message": "Nepavyko gauti nuotolinio konfigūracijos failo" },
+  "warn_docLocalesFetchFailed": { "message": "Nepavyko gauti dokumentų lokalių" },
   "tip_editToSetDefaults": { "message": "Redaguokite šį failą, kad pritaikytumėte numatytuosius nustatymus" },
   "tip_cliArgsPrioritized": { "message": "CLI argumentai visada nepaiso šių reikšmių" },
   "helpSection_usage": { "message": "Naudojimasis" },

@@ -13,7 +13,6 @@
     const compile = require(`./lib/compile${ env.devMode ? '' : '.min' }.js`),
         { findSCSS } = require(`../scss-to-css${ env.devMode ? '' : '.min' }.js`),
           fs = require('fs'),
-          github = require(`./lib/github${ env.devMode ? '' : '.min' }.js`),
           language = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
           log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
           path = require('path'),
@@ -28,7 +27,7 @@
     cli.urls.docs += '/#-command-line-usage'
     if (!(env.sysLang).startsWith('en')){ // localize cli.urls.docs
         cli.docLocale = env.sysLang.replace('_', '-').toLowerCase()
-        cli.docLocales = await github.getDirContents({ path: 'docs', type: 'dir' })
+        cli.docLocales = await language.getDocLocales()
         if (cli.docLocales.includes(cli.docLocale))
             cli.urls.docs = cli.urls.docs.replace(/\/[^/]+$/g, `/${cli.docLocale}#readme`)
     }

@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Elprenante foran agordodosieron de" },
   "warn_remoteConfigNotFound": { "message": "Fora agordodosiero ne troveblas" },
   "warn_remoteConfigFailed": { "message": "@ info: whatsthis" },
+  "warn_docLocalesFetchFailed": { "message": "@ info: whatsthis" },
   "tip_editToSetDefaults": { "message": "Redakti tiun dosieron por agordi defaŭltojn" },
   "tip_cliArgsPrioritized": { "message": "CLI-argumentoj ĉiam superregas tiujn valorojn" },
   "helpSection_usage": { "message": "Uzado" },

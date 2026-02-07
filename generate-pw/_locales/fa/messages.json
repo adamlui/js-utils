@@ -17,6 +17,7 @@
   "error_failedToFetchGlobalVer": { "message": "دریافت نسخه جهانی ناموفق بود" },
   "error_mustIncludePath": { "message": "باید شامل =path باشد" },
   "warn_configFileExists": { "message": "فایل پیکربندی از قبل وجود دارد" },
+  "warn_docLocalesFetchFailed": { "message": "دریافت محل‌های سند ناموفق بود" },
   "info_exampleValidConfigFile": { "message": "نمونه فایل پیکربندی معتبر" },
   "info_copyingToClip": { "message": "در حال کپی کردن در کلیپ بورد" },
   "info_moreHelp": { "message": "برای اطلاعات بیشتر بخوانید" },

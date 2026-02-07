@@ -39,6 +39,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "다음에서 원격 구성 파일 가져오는 중" },
   "warn_remoteConfigNotFound": { "message": "원격 구성 파일을 찾을 수 없습니다" },
   "warn_remoteConfigFailed": { "message": "원격 구성 파일을 가져오는 데 실패했습니다" },
+  "warn_docLocalesFetchFailed": { "message": "문서 로케일 가져오기 실패" },
   "tip_editToSetDefaults": { "message": "기본값을 사용자 지정하려면 이 파일을 편집하세요" },
   "tip_cliArgsPrioritized": { "message": "CLI 인수는 항상 이러한 값을 재정의합니다" },
   "helpSection_usage": { "message": "사용" },
