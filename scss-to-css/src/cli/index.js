@@ -20,7 +20,7 @@
 
     // Init CLI data
     Object.assign(globalThis.cli ??= {}, require(`../${ env.devMode ? '../' : 'data/' }package-data.json`))
-    cli.lang = settings.load('uiLang').uiLang || (
+    cli.lang = settings.load('uiLang') || (
         env.debugMode ? language.generateRandomLang({ excludes: ['en'] }) : language.getSysLang() )
     cli.msgs = await language.getMsgs(cli.lang)
     if (cli.lang.startsWith('en'))
