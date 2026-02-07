@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024-2026 အာဒံ Lui & MIT လိုင်စင်အောက်ရှိပံ့ပိုးသူများ" },
-  "prefix_error": { "message": "ချို့ယွင်းချက်" },
-  "prefix_tip": { "message": "အကြံပြုချက်" },
-  "prefix_warning": { "message": "သတိပေးချက်" },
   "prefix_globalVer": { "message": "ကမ္ဘာလုံးဆိုင်ရာဗားရှင်း" },
   "prefix_localVer": { "message": "ပြည်တွင်းဗားရှင်း" },
   "prefix_source": { "message": "အရင်းအမြစ်" },

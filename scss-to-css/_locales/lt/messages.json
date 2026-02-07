@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui ir bendraautoriai pagal MIT LICENCIJĄ" },
-  "prefix_error": { "message": "KLAIDA" },
-  "prefix_tip": { "message": "PATARIMAS" },
-  "prefix_warning": { "message": "ĮSPĖJIMAS" },
   "prefix_globalVer": { "message": "Visuotinė versija" },
   "prefix_localVer": { "message": "Vietinė versija" },
   "prefix_source": { "message": "Šaltinis" },

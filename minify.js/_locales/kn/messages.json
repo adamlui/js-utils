@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 ಆಡಮ್ ಲೂಯಿ ಮತ್ತು ಎಂಐಟಿ ಪರವಾನಗಿ ಅಡಿಯಲ್ಲಿ ಕೊಡುಗೆದಾರರು" },
-  "prefix_error": { "message": "ದೋಷ" },
-  "prefix_tip": { "message": "ಸಲಹೆ" },
-  "prefix_warning": { "message": "ಎಚ್ಚರಿಕೆ" },
   "prefix_globalVer": { "message": "ಜಾಗತಿಕ ಆವೃತ್ತಿ" },
   "prefix_localVer": { "message": "ಸ್ಥಳೀಯ ಆವೃತ್ತಿ" },
   "prefix_source": { "message": "ಮೂಲ" },

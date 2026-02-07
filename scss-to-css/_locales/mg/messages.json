@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & mpandray anjara eo ambany lisansa MIT" },
-  "prefix_error": { "message": "TSY FETEZANA:" },
-  "prefix_tip": { "message": "Fikafika" },
-  "prefix_warning": { "message": "Fampilazana" },
   "prefix_globalVer": { "message": "Ny versiona faranydia" },
   "prefix_localVer": { "message": "Kinovan'ny toerana" },
   "prefix_source": { "message": "Loharano" },

@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 אדאם לוי און מיטארבעטער אונטער דער MIT ליצענץ" },
-  "prefix_error": { "message": "color-profile-policy" },
-  "prefix_tip": { "message": "טיפּ" },
-  "prefix_warning": { "message": "message-severity" },
   "prefix_globalVer": { "message": "גלאבאלע ווערסיע" },
   "prefix_localVer": { "message": "לאקאלע ווערסיע" },
   "prefix_source": { "message": "מקור" },

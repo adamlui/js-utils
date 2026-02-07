@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui og meðhöfundar undir MIT-leyfinu" },
-  "prefix_error": { "message": "VILLA" },
-  "prefix_tip": { "message": "Stimpill" },
-  "prefix_warning": { "message": "VARÚÐ" },
   "prefix_globalVer": { "message": "Heildarútgáfa" },
   "prefix_localVer": { "message": "Staðbundin útgáfa" },
   "prefix_source": { "message": "Heimild" },

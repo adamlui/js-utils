@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Adam LUI ve MIT lisansı kapsamında katkıda bulunanlar" },
-  "prefix_error": { "message": "HATA" },
-  "prefix_tip": { "message": "MEDICAL SCHOOL" },
-  "prefix_warning": { "message": "UYARI" },
   "prefix_globalVer": { "message": "Genel sürüm" },
   "prefix_localVer": { "message": "Yerel sürüm" },
   "prefix_source": { "message": "Kaynak" },

@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & bidragsgivare under MIT-licensen" },
-  "prefix_error": { "message": "FEL" },
-  "prefix_tip": { "message": "TIPS" },
-  "prefix_warning": { "message": "VARNING" },
   "prefix_globalVer": { "message": "Global version" },
   "prefix_localVer": { "message": "Lokal version" },
   "prefix_source": { "message": "Källa" },

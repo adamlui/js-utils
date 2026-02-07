@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & confrontations under the MIT License" },
-  "prefix_error": { "message": "TUCCḌA" },
-  "prefix_tip": { "message": "Taxbalut" },
-  "prefix_warning": { "message": "Ɣur-k·m" },
   "prefix_globalVer": { "message": "Asebter n umaḍal" },
   "prefix_localVer": { "message": "Asebter amezwaru" },
   "prefix_source": { "message": "Aqbalu" },

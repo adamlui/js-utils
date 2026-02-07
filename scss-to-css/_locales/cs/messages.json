@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui a přispěvatelé v rámci licence MIT" },
-  "prefix_error": { "message": "CHYBA" },
-  "prefix_tip": { "message": "TIP" },
-  "prefix_warning": { "message": "VAROVÁNÍ" },
   "prefix_globalVer": { "message": "Globální verze" },
   "prefix_localVer": { "message": " - Místní verze" },
   "prefix_source": { "message": "Zdroj" },

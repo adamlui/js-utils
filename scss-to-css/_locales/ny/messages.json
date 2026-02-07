@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & othandizira pansi pa chilolezo cha MIT" },
-  "prefix_error": { "message": "Mphulupulu" },
-  "prefix_tip": { "message": "Lumikizanani nafe" },
-  "prefix_warning": { "message": "Kuchenjeza" },
   "prefix_globalVer": { "message": "Baibulo lonse" },
   "prefix_localVer": { "message": "Baibulo m 'dera" },
   "prefix_source": { "message": "Lumikizanani nafe" },

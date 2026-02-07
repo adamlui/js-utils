@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 ადამ ლუი და MIT ლიცენზიის ფარგლებში შემომწირველები" },
-  "prefix_error": { "message": "შეცდომა" },
-  "prefix_tip": { "message": "მნშნ" },
-  "prefix_warning": { "message": "გაფრთხილება" },
   "prefix_globalVer": { "message": "გლობალური ვერსია" },
   "prefix_localVer": { "message": "ადგილობრივი ვერსია" },
   "prefix_source": { "message": "წყარო" },

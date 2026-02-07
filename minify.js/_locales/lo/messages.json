@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & ຜູ້ປະກອບສ່ວນພາຍໃຕ້ໃບອະນຸຍາດ MIT" },
-  "prefix_error": { "message": "ຂໍ້ຜິດພາດ" },
-  "prefix_tip": { "message": "ເຄັດລັບ" },
-  "prefix_warning": { "message": "ຄໍາເຕືອນ" },
   "prefix_globalVer": { "message": "ສະບັບທົ່ວໂລກ" },
   "prefix_localVer": { "message": "ສະບັບທ້ອງຖິ່ນ" },
   "prefix_source": { "message": "ແຫຼ່ງຂໍ້ມູນ" },

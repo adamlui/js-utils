@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 ئادەم لوی و بەشداربووان لەژێر مۆڵەتی MIT" },
-  "prefix_error": { "message": "هەڵە" },
-  "prefix_tip": { "message": "تێبینی بەسود" },
-  "prefix_warning": { "message": "ئاگادارکردنەوە" },
   "prefix_globalVer": { "message": "وەشانی جیهانی" },
   "prefix_localVer": { "message": "ڤێرژنی ناوخۆیی" },
   "prefix_source": { "message": "سەرچاوە" },

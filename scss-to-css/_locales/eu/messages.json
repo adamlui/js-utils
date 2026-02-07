@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui eta kolaboratzaileak MIT lizentziapean" },
-  "prefix_error": { "message": "errorea" },
-  "prefix_tip": { "message": "IRADOKIZUNA" },
-  "prefix_warning": { "message": "Kontuz" },
   "prefix_globalVer": { "message": "Bertsio globala" },
   "prefix_localVer": { "message": "Tokiko bertsioa" },
   "prefix_source": { "message": "Iturria" },

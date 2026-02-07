@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 آدم لوي والمساهمون بموجب ترخيص معهد ماساتشوستس للتكنولوجيا" },
-  "prefix_error": { "message": "خطأ" },
-  "prefix_tip": { "message": "مجمع توازن الصناعي" },
-  "prefix_warning": { "message": "تحذير" },
   "prefix_globalVer": { "message": "الإصدار العالمي" },
   "prefix_localVer": { "message": "النسخة المحلية" },
   "prefix_source": { "message": "المصدر" },

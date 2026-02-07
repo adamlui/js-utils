@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & mga nag-ambag ubos sa lisensya sa MIT" },
-  "prefix_error": { "message": "Sayop" },
-  "prefix_tip": { "message": "TIP" },
-  "prefix_warning": { "message": "Pasidaan" },
   "prefix_globalVer": { "message": "Global nga bersyon" },
   "prefix_localVer": { "message": "Lokal nga bersyon" },
   "prefix_source": { "message": "Gigikanan" },

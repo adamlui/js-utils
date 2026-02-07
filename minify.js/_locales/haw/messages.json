@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & nā mea kōkua ma lalo o ka laikini MIT" },
-  "prefix_error": { "message": "HALA" },
-  "prefix_tip": { "message": "ʻŌlelo Aʻo" },
-  "prefix_warning": { "message": "ʻŌLELO AʻO" },
   "prefix_globalVer": { "message": "Mana honua" },
   "prefix_localVer": { "message": "Mana kūloko" },
   "prefix_source": { "message": "Puna" },

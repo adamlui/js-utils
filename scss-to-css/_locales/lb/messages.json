@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & Contributeuren ënner der MIT Lizenz" },
-  "prefix_error": { "message": "Feeler" },
-  "prefix_tip": { "message": "<x id=\"1\"/>Tipp" },
-  "prefix_warning": { "message": "Warnung" },
   "prefix_globalVer": { "message": "Globale Versioun" },
   "prefix_localVer": { "message": "Lokal Versioun" },
   "prefix_source": { "message": "Quell" },

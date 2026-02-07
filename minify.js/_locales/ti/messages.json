@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 ኣዳም ሉዊ & ኣበርክቶ ዝገበሩ ኣብ ትሕቲ ናይ MIT ፍቓድ" },
-  "prefix_error": { "message": "ስሕተት" },
-  "prefix_tip": { "message": "ምኽሪ" },
-  "prefix_warning": { "message": "ምኸዳን" },
   "prefix_globalVer": { "message": "ዓለምለኻዊ ቅጅል" },
   "prefix_localVer": { "message": "ናይ ከባቢ ቅጅል" },
   "prefix_source": { "message": "ምንጪ" },

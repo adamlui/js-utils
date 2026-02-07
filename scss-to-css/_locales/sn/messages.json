@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & vabatsiri pasi MIT rezinesi" },
-  "prefix_error": { "message": "Kanganiso" },
-  "prefix_tip": { "message": "Zano" },
-  "prefix_warning": { "message": "Yambiro" },
   "prefix_globalVer": { "message": "Shanduro yepasi rose" },
   "prefix_localVer": { "message": "Shanduro yemunharaunda" },
   "prefix_source": { "message": "Kunobva" },

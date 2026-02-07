@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & kontributor di bawah lisensi MIT" },
-  "prefix_error": { "message": "KESALAHAN" },
-  "prefix_tip": { "message": "Tips" },
-  "prefix_warning": { "message": "PERINGATAN" },
   "prefix_globalVer": { "message": "Versi global" },
   "prefix_localVer": { "message": "Versi Lokal" },
   "prefix_source": { "message": "Sumber" },

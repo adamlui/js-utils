@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024-2026 ཨ་དམ་ལུའུ་དང་ མཉམ་འབྲེལ་འབད་མི་ MIT གི་འོག་ལུ་" },
-  "prefix_error": { "message": "ནོར་འཁྲུལ་" },
-  "prefix_tip": { "message": "ཐབ་ཚིག" },
-  "prefix_warning": { "message": "ཉེན་བརྡ་" },
   "prefix_globalVer": { "message": "འཛམ་གླིང་གི་འགྱུར་རིམ།" },
   "prefix_localVer": { "message": "ས་གནས་ཀྱི་འགྱུར་ཁུངས།" },
   "prefix_source": { "message": "འབྱུང་ཁུངས།" },

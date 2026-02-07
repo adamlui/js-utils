@@ -1,9 +1,6 @@
 {
   "appName": { "message": "geolocate" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui s ufus n MIT" },
-  "prefix_error": { "message": "TUCCḌA" },
-  "prefix_tip": { "message": "Taxbalut" },
-  "prefix_warning": { "message": "Ɣur-k·m" },
   "prefix_globalVer": { "message": "Asebter n umaḍal" },
   "prefix_localVer": { "message": "Asebter amezwaru" },
   "prefix_source": { "message": "Aqbalu" },

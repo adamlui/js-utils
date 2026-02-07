@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui та співавтори за ліцензією MIT" },
-  "prefix_error": { "message": "ПОМИЛКА" },
-  "prefix_tip": { "message": "ПІДКАЗКА" },
-  "prefix_warning": { "message": "ПОПЕРЕДЖЕННЯ" },
   "prefix_globalVer": { "message": "Глобальна версія" },
   "prefix_localVer": { "message": "Локальна версія" },
   "prefix_source": { "message": "Джерело" },

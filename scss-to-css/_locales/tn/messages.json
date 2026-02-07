@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui le baabi ka fa tlase ga laesense ya MIT" },
-  "prefix_error": { "message": "Phoso" },
-  "prefix_tip": { "message": "Kgakololo" },
-  "prefix_warning": { "message": "Temošo" },
   "prefix_globalVer": { "message": "Mofuta wa lefatshe lotlhe" },
   "prefix_localVer": { "message": "Mofuta wa selegae" },
   "prefix_source": { "message": "Motswedi" },

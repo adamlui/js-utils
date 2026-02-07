@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & contributors under the MIT license" },
-  "prefix_error": { "message": "Cholakwika" },
-  "prefix_tip": { "message": "Lumikizanani nafe" },
-  "prefix_warning": { "message": "Kuchenjeza" },
   "prefix_globalVer": { "message": "Mtundu wapadziko lonse lapansi" },
   "prefix_localVer": { "message": "Mtundu wakomweko" },
   "prefix_source": { "message": "Chitsime" },

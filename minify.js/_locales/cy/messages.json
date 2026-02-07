@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui a chyfranwyr o dan drwydded MIT" },
-  "prefix_error": { "message": "GWALL" },
-  "prefix_tip": { "message": "AWGRYM" },
-  "prefix_warning": { "message": "Rhybudd" },
   "prefix_globalVer": { "message": "Fersiwn eang" },
   "prefix_localVer": { "message": "Fersiwn lleol" },
   "prefix_source": { "message": "Ffynhonnell" },

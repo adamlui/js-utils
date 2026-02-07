@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Адам Луи & MIT лицензиясы боюнча салым" },
-  "prefix_error": { "message": "Ката" },
-  "prefix_tip": { "message": "Кеңеш" },
-  "prefix_warning": { "message": "message-severity" },
   "prefix_globalVer": { "message": "Глобалдык версия" },
   "prefix_localVer": { "message": "Жергиликтүү версия" },
   "prefix_source": { "message": "Булак" },

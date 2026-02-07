@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "Anno XIII XIIIX & UNIVERSITATIS MIT LICENSE" },
-  "prefix_error": { "message": "erratum" },
-  "prefix_tip": { "message": "ad apicem nasi" },
-  "prefix_warning": { "message": "Stock label" },
   "prefix_globalVer": { "message": "Globosa version" },
   "prefix_localVer": { "message": "Familia Localis" },
   "prefix_source": { "message": "Fons" },

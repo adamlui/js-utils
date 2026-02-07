@@ -1,9 +1,6 @@
 {
   "appName": { "message": "geolocate" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui með MIT-leyfi" },
-  "prefix_error": { "message": "VILLA" },
-  "prefix_tip": { "message": "Stimpill" },
-  "prefix_warning": { "message": "VARÚÐ" },
   "prefix_globalVer": { "message": "Heildarútgáfa" },
   "prefix_localVer": { "message": "Staðbundin útgáfa" },
   "prefix_source": { "message": "Heimild" },

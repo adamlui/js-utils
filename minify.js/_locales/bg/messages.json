@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Адам Луи и сътрудници под лиценза на МАСАЧУЗЕТСКИЯ ТЕХНОЛОГИЧЕН ИНСТИТУТ" },
-  "prefix_error": { "message": "ГРЕШКА" },
-  "prefix_tip": { "message": "СЪВЕТ" },
-  "prefix_warning": { "message": "ПРЕДУПРЕЖДЕНИЕ" },
   "prefix_globalVer": { "message": "Глобална версия" },
   "prefix_localVer": { "message": "Локална версия" },
   "prefix_source": { "message": "Източник" },

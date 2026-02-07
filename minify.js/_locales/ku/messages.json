@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & beşdar di bin lîsansa MIT de" },
-  "prefix_error": { "message": "ÇEWTÎ" },
-  "prefix_tip": { "message": "Tîp" },
-  "prefix_warning": { "message": "HIŞYARÎ" },
   "prefix_globalVer": { "message": "Guhertoya gerdûnî" },
   "prefix_localVer": { "message": "Guhertoya herêmî" },
   "prefix_source": { "message": "Çavkanî" },

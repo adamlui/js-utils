@@ -1,9 +1,6 @@
 {
   "appName": { "message": "geolocate" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui по лицензии MIT" },
-  "prefix_error": { "message": "ОШИБКА" },
-  "prefix_tip": { "message": "СОВЕТ" },
-  "prefix_warning": { "message": "ВНИМАНИЕ" },
   "prefix_globalVer": { "message": "Глобальная версия" },
   "prefix_localVer": { "message": "Локальная версия" },
   "prefix_source": { "message": "Источник" },

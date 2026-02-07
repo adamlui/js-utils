@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Адам Луи и соработниците под лиценцата на МИТ" },
-  "prefix_error": { "message": "ГРЕШКА" },
-  "prefix_tip": { "message": "Совет:" },
-  "prefix_warning": { "message": "ПРЕДУПРЕДУВАЊЕ" },
   "prefix_globalVer": { "message": "Глобална верзија" },
   "prefix_localVer": { "message": "Локална верзија" },
   "prefix_source": { "message": "Извор" },

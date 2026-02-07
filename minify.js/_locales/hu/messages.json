@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui és közreműködők az MIT licenc alapján" },
-  "prefix_error": { "message": "HIBA" },
-  "prefix_tip": { "message": "TIPP" },
-  "prefix_warning": { "message": "FIGYELMEZTETÉS" },
   "prefix_globalVer": { "message": "Globális verzió" },
   "prefix_localVer": { "message": "Helyi verzió" },
   "prefix_source": { "message": "Forrás" },

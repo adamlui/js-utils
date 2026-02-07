@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Адам Луи және MIT лицензиясы бойынша салымшылар" },
-  "prefix_error": { "message": "Қателік" },
-  "prefix_tip": { "message": "КЕҢЕС" },
-  "prefix_warning": { "message": "ЕСКЕРТУ" },
   "prefix_globalVer": { "message": "Жаһандық нұсқа" },
   "prefix_localVer": { "message": "Жергілікті нұсқа" },
   "prefix_source": { "message": "Бастапқы дерек" },

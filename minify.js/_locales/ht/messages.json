@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & kontribitè anba lisans MIT" },
-  "prefix_error": { "message": "Erè" },
-  "prefix_tip": { "message": "poubwa /pwent/konsey/yon ti kal/yon ti jan/tip/un bout/ pourboire/conseil/pointe/astuce/astuces/remarque /le serveur" },
-  "prefix_warning": { "message": "AVÈTISMAN" },
   "prefix_globalVer": { "message": "Vèsyon mondyal" },
   "prefix_localVer": { "message": "Vèsyon lokal" },
   "prefix_source": { "message": "Sous" },

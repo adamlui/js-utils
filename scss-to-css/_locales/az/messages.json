@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui və MIT lisenziyası əsasında töhfə verənlər" },
-  "prefix_error": { "message": "XƏTA" },
-  "prefix_tip": { "message": "İpucu" },
-  "prefix_warning": { "message": "XƏBƏRDARLIQ" },
   "prefix_globalVer": { "message": "Qlobal versiya" },
   "prefix_localVer": { "message": "Yerli versiya" },
   "prefix_source": { "message": "Mənbə" },

@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui și colaboratorii sub licența MIT" },
-  "prefix_error": { "message": "EROARE" },
-  "prefix_tip": { "message": "Ridicare" },
-  "prefix_warning": { "message": "AVERTISMENT" },
   "prefix_globalVer": { "message": "Versiune globală" },
   "prefix_localVer": { "message": "Versiunea locală" },
   "prefix_source": { "message": "Sursă" },

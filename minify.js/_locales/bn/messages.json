@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 অ্যাডাম লুই এবং এমআইটি লাইসেন্সের অধীনে অবদানকারী" },
-  "prefix_error": { "message": "ত্রুটি" },
-  "prefix_tip": { "message": "পরামর্শ" },
-  "prefix_warning": { "message": "এই মর্মে সতর্ক করা হচ্ছে" },
   "prefix_globalVer": { "message": "গ্লোবাল সংস্করণ" },
   "prefix_localVer": { "message": "স্থানীয় সংস্করণ" },
   "prefix_source": { "message": "উৎস" },

@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024 -2026 Adam LuiとMITライセンスの貢献者" },
-  "prefix_error": { "message": "エラー" },
-  "prefix_tip": { "message": "ヒント" },
-  "prefix_warning": { "message": "警告" },
   "prefix_globalVer": { "message": "グローバルバージョン" },
   "prefix_localVer": { "message": "ローカルバージョン" },
   "prefix_source": { "message": "出典" },

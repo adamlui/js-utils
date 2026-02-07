@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024 -2026 Ադամ Լուի և Մասաչուսեթսի տեխնոլոգիական ինստիտուտի (MIT) արտոնագրի ներքո ներդրումներ կատարողներ" },
-  "prefix_error": { "message": "ՍԽԱԼ" },
-  "prefix_tip": { "message": "ԽՈՐՀՈՒՐԴ" },
-  "prefix_warning": { "message": "ՈՒՇԱԴՐՈՒԹՅՈՒՆ" },
   "prefix_globalVer": { "message": "Ընդհանուր տարբերակ" },
   "prefix_localVer": { "message": "Տեղական տարբերակ" },
   "prefix_source": { "message": "Ծագումը" },

@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & contributors na gbe ti licence MIT" },
-  "prefix_error": { "message": "ERROR Mbi" },
-  "prefix_tip": { "message": "Tipu (Tipu)" },
-  "prefix_warning": { "message": "Wango Wango" },
   "prefix_globalVer": { "message": "Mbeni ye so ayeke na yâ ti dunia kue" },
   "prefix_localVer": { "message": "A yeke na yâ ti Bible ti kodoro ni" },
   "prefix_source": { "message": "Mbengue Source" },

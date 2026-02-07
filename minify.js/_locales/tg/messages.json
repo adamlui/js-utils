@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Одам Lui & саҳмгузорон дар доираи иҷозатномаи MIT" },
-  "prefix_error": { "message": "ХАТОГӢ" },
-  "prefix_tip": { "message": "МАСЛИҲАТ" },
-  "prefix_warning": { "message": "Огоҳӣ" },
   "prefix_globalVer": { "message": "Версияи умумӣ" },
   "prefix_localVer": { "message": "Версияи локалӣ" },
   "prefix_source": { "message": "Манбаъ" },

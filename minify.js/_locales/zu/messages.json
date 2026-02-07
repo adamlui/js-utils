@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & abanikeli ngaphansi KWELAYISENSI YE-MIT" },
-  "prefix_error": { "message": "Iphutha" },
-  "prefix_tip": { "message": "ICEBISO" },
-  "prefix_warning": { "message": "Isixwayiso" },
   "prefix_globalVer": { "message": "Uhlobo lomhlaba wonke" },
   "prefix_localVer": { "message": "Uhlobo lwendawo" },
   "prefix_source": { "message": "SourceForge" },

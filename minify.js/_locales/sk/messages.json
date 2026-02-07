@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui a prispievatelia v rámci licencie MIT" },
-  "prefix_error": { "message": "CHYBA" },
-  "prefix_tip": { "message": "TIP" },
-  "prefix_warning": { "message": "VAROVANIE" },
   "prefix_globalVer": { "message": "Globálna verzia" },
   "prefix_localVer": { "message": "Miestna verzia" },
   "prefix_source": { "message": "Zdroj" },

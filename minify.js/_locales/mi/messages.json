@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & kaiwhiwhi i raro i te raihana MIT" },
-  "prefix_error": { "message": "He" },
-  "prefix_tip": { "message": "Kura huna" },
-  "prefix_warning": { "message": "Kupu tūpato" },
   "prefix_globalVer": { "message": "Te putanga o te ao" },
   "prefix_localVer": { "message": "Ngā putanga ā-rohe" },
   "prefix_source": { "message": "SourceForge" },

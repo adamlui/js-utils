@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Адам Луі і ўдзельнікі ліцэнзіі MIT" },
-  "prefix_error": { "message": "ПАМЫЛКА" },
-  "prefix_tip": { "message": "Падказка" },
-  "prefix_warning": { "message": "ПАПЯРЭДЖАНЬНЕ" },
   "prefix_globalVer": { "message": "Глабальная версія" },
   "prefix_localVer": { "message": "Мясцовая версія" },
   "prefix_source": { "message": "Крыніца" },

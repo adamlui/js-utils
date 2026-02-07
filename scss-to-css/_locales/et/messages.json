@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & kaasautorid MIT litsentsi alusel" },
-  "prefix_error": { "message": "VIGA" },
-  "prefix_tip": { "message": "NÄPUNÄIDE" },
-  "prefix_warning": { "message": "HOIATUS" },
   "prefix_globalVer": { "message": "Globaalne versioon" },
   "prefix_localVer": { "message": "Kohalik versioon" },
   "prefix_source": { "message": "Allikas" },

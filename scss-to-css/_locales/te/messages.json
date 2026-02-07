@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 ఆడమ్ లూయి & MIT లైసెన్స్ కింద కంట్రిబ్యూటర్ ‌ లు" },
-  "prefix_error": { "message": "దోషం" },
-  "prefix_tip": { "message": "చిట్కా" },
-  "prefix_warning": { "message": "హెచ్చరిక" },
   "prefix_globalVer": { "message": "గ్లోబల్ వెర్షన్" },
   "prefix_localVer": { "message": "స్థానిక వెర్షన్" },
   "prefix_source": { "message": "మూలం" },

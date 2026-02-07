@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & stuðlar undir MIT-lisensuni" },
-  "prefix_error": { "message": "BREK" },
-  "prefix_tip": { "message": "Ráðgeving" },
-  "prefix_warning": { "message": "Ávaring" },
   "prefix_globalVer": { "message": "Globalt útgáva" },
   "prefix_localVer": { "message": "Lokalu útgávan" },
   "prefix_source": { "message": "Kelda:" },

@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & beşdarvan di bin lîsansa MIT de" },
-  "prefix_error": { "message": "ÇEWTÎ" },
-  "prefix_tip": { "message": "Tîp" },
-  "prefix_warning": { "message": "HIŞYARÎ" },
   "prefix_globalVer": { "message": "Versiyona gerdûnî" },
   "prefix_localVer": { "message": "Versiyona herêmî" },
   "prefix_source": { "message": "Çavkanî" },

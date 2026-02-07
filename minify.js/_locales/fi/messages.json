@@ -1,9 +1,6 @@
 {
   "appName": { "message": "minify.js" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui & avustajat MIT-lisenssillä" },
-  "prefix_error": { "message": "VIRHE" },
-  "prefix_tip": { "message": "KÄRKI" },
-  "prefix_warning": { "message": "VAROITUS" },
   "prefix_globalVer": { "message": "Globaali versio" },
   "prefix_localVer": { "message": "Paikallinen versio" },
   "prefix_source": { "message": "Lähde" },

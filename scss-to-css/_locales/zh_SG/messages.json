@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui和MIT许可证下的贡献者" },
-  "prefix_error": { "message": "错误" },
-  "prefix_tip": { "message": "建议" },
-  "prefix_warning": { "message": "警告" },
   "prefix_globalVer": { "message": "全局版本" },
   "prefix_localVer": { "message": "本地版本" },
   "prefix_source": { "message": "人员来源" },

@@ -1,9 +1,6 @@
 {
   "appName": { "message": "scss-to-css" },
   "appCopyright": { "message": "© 2024–2026 Adam Lui in sodelavci v skladu z licenco MIT" },
-  "prefix_error": { "message": "NAPAKA" },
-  "prefix_tip": { "message": "NASVET" },
-  "prefix_warning": { "message": "OPOZORILO" },
   "prefix_globalVer": { "message": "Globalna različica" },
   "prefix_localVer": { "message": "Lokalna različica" },
   "prefix_source": { "message": "Vir" },
