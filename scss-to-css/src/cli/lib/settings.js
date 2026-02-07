@@ -28,6 +28,8 @@ module.exports = {
             type: 'param', regex: /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/ },
         comment: {
             type: 'param', regex: /^--?comments?(?:=.*|$)/ },
+        uiLang: {
+            type: 'param', regex: /^--?ui-?lang(?:=.*|$)/ },
         config: {
             type: 'param', regex: /^--?config(?:=.*|$)/ },
         init: {
@@ -112,7 +114,8 @@ module.exports = {
             const ctrlKey = Object.keys(this.controls).find(key => this.controls[key]?.regex?.test(arg))
             if (!ctrlKey && !arguments.length) // invalid CLI arg passed, exit on arg-less load()
                 log.errorAndExit(`[${arg}] ${cli.msgs.error_notRecognized}.`)
-            if (!inputCtrlKeys.includes(ctrlKey)) return // don't process env.args when load() specific keys
+            if (!inputCtrlKeys.includes(ctrlKey))
+                return // don't process env.args when load() specific keys
             const ctrl = this.controls[ctrlKey] ; if (ctrl.type == 'cmd') return
             let ctrlKeyVal = ctrl.type == 'param' ? arg.split('=')[1]?.trim() : true
 

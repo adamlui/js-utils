@@ -9,6 +9,7 @@ module.exports = {
 
     controls: {
         qty: { type: 'param', defaultVal: 1, regex: /^--?qu?a?n?ti?t?y(?:=.*|$)/, parser: val => parseInt(val, 10) },
+        uiLang: { type: 'param', regex: /^--?ui-?lang(?:=.*|$)/ },
         config: { type: 'param', regex: /^--?config(?:=.*|$)/ },
         ipv6mode: { type: 'flag', mode: true, regex: /^--?(?:ip)?v?6(?:-?mode)?$/ },
         macMode: { type: 'flag', mode: true, regex: /^--?m(?:ac)?(?:-?mode)?$/ },
@@ -92,7 +93,8 @@ module.exports = {
             const ctrlKey = Object.keys(this.controls).find(key => this.controls[key]?.regex?.test(arg))
             if (!ctrlKey && !arguments.length) // invalid CLI arg passed, exit on arg-less load()
                 log.errorAndExit(`[${arg}] ${cli.msgs.error_notRecognized}.`)
-            if (!inputCtrlKeys.includes(ctrlKey)) return // don't process env.args when load() specific keys
+            if (!inputCtrlKeys.includes(ctrlKey))
+                return // don't process env.args when load() specific keys
             const ctrl = this.controls[ctrlKey] ; if (ctrl.type == 'cmd') return
             let ctrlKeyVal = ctrl.type == 'param' ? arg.split('=')[1]?.trim() : true
 
