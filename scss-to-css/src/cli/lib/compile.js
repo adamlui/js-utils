@@ -67,7 +67,6 @@ module.exports = {
                 if (!cli.config.relativeOutput && relPath) { // preserve folder structure
                     const outputPath = path.resolve(process.cwd(), outputArg || 'css'),
                           relativeDir = path.dirname(relPath)
-                console.log(outputPath)
                     outputDir = relativeDir != '.' ? path.join(outputPath, relativeDir) : outputPath
                     outputFilename = `${path.basename(srcPath, '.scss')}${ cli.config.noMinify ? '' : '.min' }.css`
                 } else {
