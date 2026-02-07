@@ -7,6 +7,7 @@ module.exports = {
         bo: '\x1b[38;5;214m', // bright orange
         bg: '\x1b[1;92m',     // bright green
         bw: '\x1b[1;97m',     // bright white
+        gry: '\x1b[90m',      // gray
         blk: '\x1b[30m',      // black
         tlBG: '\x1b[106m'     // teal bg
     },

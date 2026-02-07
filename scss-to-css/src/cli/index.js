@@ -70,7 +70,7 @@
     if (cli.config.dryRun) {
         if (srcFiles.length) {
             log.info(`${cli.msgs.info_scssFilesToBeCompiled}:`)
-            srcFiles.forEach(file => console.info(file))
+            srcFiles.forEach(file => console.info(log.colors.gry, file, log.colors.nc))
         } else // no files found
             log.info(`\n${cli.msgs.info_noSCSSfilesWillBeCompiled}.`)
     } else
