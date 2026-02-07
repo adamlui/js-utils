@@ -216,16 +216,18 @@ const ipv6 = {
         const pieces = address.split(/::?/),
               lastPiece = pieces[pieces.length -1]
         const isValidIPv6 = !( // false if any dq condition matches
-                  address.includes('::') && address.split('::').length > 2 // 2+ '::'
-               || /:{3,}/.test(address) // 3+ consecutive ':'
-               || pieces.length < 2 || pieces.length > 8 // 1 or 9+ hex pieces
-               || pieces.some(piece => // hex piece invalid
-                      !/^[\da-f]{1,4}$/i.test(piece) // for not being 1-4 valid chars
-                          && (piece != lastPiece // except last piece
-                              || !ipv4.validate( // where IPv4-mapping appended invalid address
-                                      lastPiece.replace( // determined by stripping valid length suffixes first
-                                          /\/(?:12[0-8]|[1-9]?\d)$/, ''), { verbose: false }
-                  )))
+            address.includes('::') && address.split('::').length > 2 // 2+ '::'
+                || /:{3,}/.test(address) // 3+ consecutive ':'
+                || pieces.length < 2 || pieces.length > 8 // 1 or 9+ hex pieces
+                || pieces.some(piece => // hex piece invalid
+                    !/^[\da-f]{1,4}$/i.test(piece) // for not being 1-4 valid chars
+                        && (piece != lastPiece // except last piece
+                            || !ipv4.validate( // where IPv4-mapping appended invalid address
+                                    lastPiece.replace( // determined by stripping valid length suffixes first
+                                        /\/(?:12[0-8]|[1-9]?\d)$/, ''), { verbose: false }
+                                )
+                        )
+                )
         )
 
         // Log/return final result
@@ -259,8 +261,7 @@ const mac = {
                 macAddresses.push(this.generate({ ...options, qty: 1, verbose: false }))
         else { // generate single MAC address
             const [prefix, suffix] = Array.from({ length: 2 }, () => {
-                const parts = []
-                for (let i = 0 ; i < 3 ; i++) parts.push(random.hex(2))
+                const parts = [] ; for (let i = 0 ; i < 3 ; i++) parts.push(random.hex(2))
                 return parts.join(':')
             })
             macAddresses.push(`${prefix}:${suffix}`)
