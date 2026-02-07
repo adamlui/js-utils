@@ -24,12 +24,12 @@
     env.sysLang = cli.config.uiLang || (
         env.debugMode ? language.generateRandomLang({ excludes: ['en'] }) : language.getSysLang() )
     cli.msgs = await language.getMsgs(env.sysLang)
-    cli.urls.docs += '/#-command-line-usage'
-    if (!(env.sysLang).startsWith('en')){ // localize cli.urls.docs
+    if (env.sysLang.startsWith('en'))
+        cli.urls.docs += '/#-command-line-usage'
+    else { // localize cli.urls.docs
         cli.docLocale = env.sysLang.replace('_', '-').toLowerCase()
-        cli.docLocales = await language.getDocLocales()
-        if (cli.docLocales.includes(cli.docLocale))
-            cli.urls.docs = cli.urls.docs.replace(/\/[^/]+$/g, `/${cli.docLocale}#readme`)
+        if ((await language.getDocLocales()).includes(cli.docLocale))
+            cli.urls.docs += `/${cli.docLocale}#readme`
     }
 
     // Exec CMD arg if passed
