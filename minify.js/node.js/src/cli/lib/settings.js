@@ -31,7 +31,7 @@ module.exports = {
         ignores: {
             type: 'param', regex: /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/ },
         comment: {
-            type: 'param', regex: /^--?comments?(?:=.*|$)/ },
+            type: 'param', regex: /^--?comments?(?:=.*)?$/ },
         config: {
             type: 'param', regex: /^--?config(?:=.*|$)/ },
         init: {
@@ -71,59 +71,66 @@ module.exports = {
     },
 
     load(ctrlKeys = Object.keys(this.controls)) {
+        ctrlKeys = [].concat(ctrlKeys) // force array
 
-        // Init defaults
-        ctrlKeys.forEach(key => {
-            const ctrl = this.controls[key] ; if (ctrl.mode || ctrl.type == 'cmd') return
-            cli.config[key] ??= ctrl.defaultVal ?? ( ctrl.type == 'flag' ? false : '' )
-        })
+        if (!cli.defaultsSet) { // init defaults
+            ctrlKeys.forEach(key => {
+                const ctrl = this.controls[key] ; if (ctrl.mode || ctrl.type == 'cmd') return
+                cli.config[key] ??= ctrl.defaultVal ?? ( ctrl.type == 'flag' ? false : '' )
+            })
+            cli.defaultsSet = true
+        }
 
-        // Load from config file
-        let configPath
-        const configArg = env.args.find(arg => this.controls.config.regex.test(arg))
-        if (configArg) { // resolve input path, then validate
-            if (!/=/.test(configArg))
-                log.errorAndExit(`[${configArg}] ${cli.msgs.error_mustIncludePath}`)
-            const inputPath = configArg.split('=')[1]
-            configPath = path.isAbsolute(inputPath) ? inputPath : path.resolve(process.cwd(), inputPath)
-            if (!fs.existsSync(configPath))
-                log.configURLandExit(`${cli.msgs.error_configFileNotFound}:`, configPath)
-        } else // auto-discover .config.[cm]?js file
-            for (const ext of ['mjs', 'cjs', 'js']) {
-                const autoPath = path.resolve(process.cwd(), this.configFilename.replace(/\.[^.]+$/, `.${ext}`))
-                if (fs.existsSync(autoPath)) { configPath = autoPath ; break }
-            }
-        if (configPath)
-            try { // to load config file
-                const mod = require(configPath), fileConfig = mod?.default ?? mod
-                if (!fileConfig || typeof fileConfig != 'object')
-                    log.configURLandExit(`${cli.msgs.error_invalidConfigFile}.`)
-                Object.assign(cli.config, fileConfig)
-            } catch (err) {
-                log.configURLandExit(`${cli.msgs.error_failedToLoadConfigFile}:`, configPath, `\n${err.message}`) }
-
-        // Load from CLI args (overriding config file)
-        env.args.forEach(arg => {
-            if (/^[^-]|--?(?:config|debug)/.test(arg)) return
-
-            const ctrlKey = ctrlKeys.find(key => this.controls[key]?.regex?.test(arg))
-            if (!ctrlKey) log.errorAndExit(`[${arg}] ${cli.msgs.error_notRecognized}.`)
-            const ctrl = this.controls[ctrlKey] ; if (ctrl.type == 'cmd') return
-            let ctrlKeyVal = ctrl.type == 'param' ? arg.split('=')[1]?.trim() : true
-
-            if (ctrl.mode) // set cli.config.mode to mode name
-                cli.config.mode = ctrlKey.replace(/mode$/i, '').toLowerCase()
-
-            else { // init flag/param cli.config[ctrlKey] val
-                const parser = ctrl.parser
-                if (parser) {
-                    ctrlKeyVal = parser(ctrlKeyVal)
-                    if (isNaN(ctrlKeyVal) || ctrlKeyVal < 1)
-                        log.errorAndExit(`[${ctrlKey}] ${cli.msgs.error_nonPositiveNum}.`)
+        if (!cli.configFileTried) { // load config file
+            let configPath
+            const configArg = env.args.find(arg => this.controls.config.regex.test(arg))
+            if (configArg) { // resolve input path, then validate
+                if (!/=/.test(configArg))
+                    log.errorAndExit(`[${configArg}] ${cli.msgs.error_mustIncludePath}`)
+                const inputPath = configArg.split('=')[1]
+                configPath = path.isAbsolute(inputPath) ? inputPath : path.resolve(process.cwd(), inputPath)
+                if (!fs.existsSync(configPath))
+                    log.configURLandExit(`${cli.msgs.error_configFileNotFound}:`, configPath)
+            } else // auto-discover .config.[cm]?js file
+                for (const ext of ['mjs', 'cjs', 'js']) {
+                    const autoPath = path.resolve(process.cwd(), this.configFilename.replace(/\.[^.]+$/, `.${ext}`))
+                    if (fs.existsSync(autoPath)) { configPath = autoPath ; break }
                 }
-                cli.config[ctrlKey] = ctrlKeyVal
-            }
-        })
+            if (configPath)
+                try { // to load config file
+                    const mod = require(configPath), fileConfig = mod?.default ?? mod
+                    if (!fileConfig || typeof fileConfig != 'object')
+                        log.configURLandExit(`${cli.msgs.error_invalidConfigFile}.`)
+                    Object.assign(cli.config, fileConfig)
+                } catch (err) {
+                    log.configURLandExit(`${cli.msgs.error_failedToLoadConfigFile}:`, configPath, `\n${err.message}`) }
+            cli.configFileTried = true
+        }
+
+        if (!cli.argsSet) {
+            env.args.forEach(arg => { // load CLI arg (overriding config file)
+                if (/^[^-]|--?(?:config|debug)/.test(arg)) return
+
+                const ctrlKey = Object.keys(this.controls).find(key => this.controls[key]?.regex?.test(arg))
+                if (!ctrlKey) log.errorAndExit(`[${arg}] ${cli.msgs.error_notRecognized}.`)
+                const ctrl = this.controls[ctrlKey] ; if (ctrl.type == 'cmd') return
+                let ctrlKeyVal = ctrl.type == 'param' ? arg.split('=')[1]?.trim() : true
+
+                if (ctrl.mode) // set cli.config.mode to mode name
+                    cli.config.mode = ctrlKey.replace(/mode$/i, '').toLowerCase()
+
+                else { // init flag/param cli.config[ctrlKey] val
+                    const parser = ctrl.parser
+                    if (parser) {
+                        ctrlKeyVal = parser(ctrlKeyVal)
+                        if (isNaN(ctrlKeyVal) || ctrlKeyVal < 1)
+                            log.errorAndExit(`[${ctrlKey}] ${cli.msgs.error_nonPositiveNum}.`)
+                    }
+                    cli.config[ctrlKey] = ctrlKeyVal
+                }
+            })
+            cli.argsSet = true
+        }
 
         return cli.config
     }
