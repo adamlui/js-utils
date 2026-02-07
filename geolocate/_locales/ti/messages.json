@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "ፋይል ኣይተረኽበን" },
   "error_failedToLoadConfigFile": { "message": "ዝተዋሃበ ፋይል ክጭፍልቕ ኣይከኣለን" },
   "error_failedToFetchGlobalVer": { "message": "ዓለምለኻዊ ቅጅል" },
+  "error_failedToFetchSysLang": { "message": "ናይ ስርዓት ቋንቋ ዘይምፍላጥ" },
   "error_mustIncludePath": { "message": "መገዲ =መገዲ" },
   "warn_configFileExists": { "message": "ፋይል ቀዲሙ ኣሎ" },
   "info_exampleValidConfigFile": { "message": "ኣብነት እሙን ናይ ውጥን ፋይል" },

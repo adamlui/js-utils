@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Konfiguratiounsdatei net fonnt" },
   "error_failedToLoadConfigFile": { "message": "Konfiguratiounsdatei konnt net geluede ginn" },
   "error_failedToFetchGlobalVer": { "message": "Konnt d'global Versioun net fannen" },
+  "error_failedToFetchSysLang": { "message": "Systemsprooch feelgeschloen" },
   "error_mustIncludePath": { "message": "muss =Pfad enthalen" },
   "warn_configFileExists": { "message": "D'Konfiguratiounsdatei gëtt et schonn" },
   "warn_docLocalesFetchFailed": { "message": "Dok Lokale gefunden" },

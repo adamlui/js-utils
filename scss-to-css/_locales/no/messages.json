@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Konfigurasjonsfilen ble ikke funnet" },
   "error_failedToLoadConfigFile": { "message": "Kunne ikke laste inn konfigurasjonsfilen" },
   "error_failedToFetchGlobalVer": { "message": "Kunne ikke hente den globale versjonen" },
+  "error_failedToFetchSysLang": { "message": "Klarte ikke å hente systemspråket" },
   "error_mustIncludePath": { "message": "må inkludere =sti" },
   "warn_configFileExists": { "message": "Konfigurasjonsfilen finnes allerede" },
   "info_exampleValidConfigFile": { "message": "Eksempel på gyldig konfigurasjonsfil" },

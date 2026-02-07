@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "کنفیگ فائل نہیں ملی" },
   "error_failedToLoadConfigFile": { "message": "کنفیگ فائل لوڈ کرنے میں ناکامی" },
   "error_failedToFetchGlobalVer": { "message": "عالمی ورژن حاصل کرنے میں ناکام" },
+  "error_failedToFetchSysLang": { "message": "سسٹم کی زبان حاصل کرنے میں ناکامی" },
   "error_mustIncludePath": { "message": "شامل ہونا ضروری ہے =PATH" },
   "warn_configFileExists": { "message": "کنفیگ فائل پہلے سے موجود ہے" },
   "info_exampleValidConfigFile": { "message": "مثال کے طور پر درست کنفیگ فائل" },

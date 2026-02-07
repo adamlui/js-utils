@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Sanidi faili haipatikani" },
   "error_failedToLoadConfigFile": { "message": "Imeshindwa kupakia faili la usanidi" },
   "error_failedToFetchGlobalVer": { "message": "Imeshindwa kupata toleo la kimataifa" },
+  "error_failedToFetchSysLang": { "message": "Imeshindwa kupata lugha ya mfumo" },
   "error_mustIncludePath": { "message": "lazima ijumuishe =PATH" },
   "warn_configFileExists": { "message": "Sanidi faili tayari lipo" },
   "info_exampleValidConfigFile": { "message": "Mfano faili halali ya usanidi" },

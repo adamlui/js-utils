@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Файл конфигурации% s не найден" },
   "error_failedToLoadConfigFile": { "message": "Не удалось загрузить файл конфигурации" },
   "error_failedToFetchGlobalVer": { "message": "Не удалось получить глобальную версию" },
+  "error_failedToFetchSysLang": { "message": "Не удалось получить системный язык" },
   "error_mustIncludePath": { "message": "must include =path" },
   "warn_configFileExists": { "message": "Конфигурационный файл уже существует" },
   "info_exampleValidConfigFile": { "message": "Пример допустимого файла конфигурации" },

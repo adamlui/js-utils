@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Hiç bir faýl tapylmady" },
   "error_failedToLoadConfigFile": { "message": "Konfigurasy faýlyň ýüklenmegi başarmady" },
   "error_failedToFetchGlobalVer": { "message": "Dünýäniň nusgasyny tapyp bilmedim" },
+  "error_failedToFetchSysLang": { "message": "Sistem dilini tapmakda başarnyksyz" },
   "error_mustIncludePath": { "message": "ýolbaşçylyk maslahatynyň (Ýolbaşçylykmaslahaty" },
   "warn_configFileExists": { "message": "Faýly öňden konfigurat et" },
   "info_exampleValidConfigFile": { "message": "Mysal geçerli konfigurasiýa faýly" },

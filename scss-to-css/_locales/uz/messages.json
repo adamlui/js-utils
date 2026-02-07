@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Konfiguratsiya fayli topilmadi" },
   "error_failedToLoadConfigFile": { "message": "Konfiguratsiya faylini yuklab bo'lmadi" },
   "error_failedToFetchGlobalVer": { "message": "Global versiyani olishda xatolik yuz berdi" },
+  "error_failedToFetchSysLang": { "message": "Tizim tilini olishda xatolik yuz berdi" },
   "error_mustIncludePath": { "message": "=path ni o'z ichiga olishi kerak" },
   "warn_configFileExists": { "message": "Konfiguratsiya fayli allaqachon mavjud" },
   "info_exampleValidConfigFile": { "message": "Misol uchun amal qiluvchi konfiguratsiya fayli" },

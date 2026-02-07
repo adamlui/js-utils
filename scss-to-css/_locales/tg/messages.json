@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Танзимоти файл ёфт нашуд" },
   "error_failedToLoadConfigFile": { "message": "Файли конфигуратсия пурбор карда нашуд" },
   "error_failedToFetchGlobalVer": { "message": "Натавонистам нусхаи глобалиро гирам" },
+  "error_failedToFetchSysLang": { "message": "Натавонистам забони системаро гирам" },
   "error_mustIncludePath": { "message": "бояд дар бар гирад =PATH" },
   "warn_configFileExists": { "message": "Батанзимдарории файл аллакай вуҷуд дорад" },
   "info_exampleValidConfigFile": { "message": "Намунаи файли конфигуратсияи дуруст" },

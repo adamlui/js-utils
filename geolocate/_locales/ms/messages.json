@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Fail konfigurasi tidak ditemui" },
   "error_failedToLoadConfigFile": { "message": "Gagal memuat fail konfig %s" },
   "error_failedToFetchGlobalVer": { "message": "Gagal mendapatkan versi global" },
+  "error_failedToFetchSysLang": { "message": "Gagal mendapatkan bahasa sistem" },
   "error_mustIncludePath": { "message": "mesti sertakan =laluan" },
   "warn_configFileExists": { "message": "Fail konfigurasi sudah wujud" },
   "info_exampleValidConfigFile": { "message": "Contoh fail konfigurasi yang sah" },

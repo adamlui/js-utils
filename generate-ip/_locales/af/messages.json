@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Konfigureer lêer nie gevind nie" },
   "error_failedToLoadConfigFile": { "message": "Kon nie konfigurasielêer laai nie" },
   "error_failedToFetchGlobalVer": { "message": "Kon nie globale weergawe kry nie" },
+  "error_failedToFetchSysLang": { "message": "Kon nie stelseltaal gaan haal nie" },
   "error_mustIncludePath": { "message": "moet insluit =pad" },
   "warn_configFileExists": { "message": "Konfigureer lêer bestaan reeds" },
   "info_exampleValidConfigFile": { "message": "Voorbeeld geldige konfigurasielêer" },

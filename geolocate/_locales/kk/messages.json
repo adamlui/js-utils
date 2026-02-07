@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Файлды конфигурациялау табылмады" },
   "error_failedToLoadConfigFile": { "message": "Конфигурация файлын жүктеу сәтсіз аяқталды" },
   "error_failedToFetchGlobalVer": { "message": "Дүниежүзілік нұсқаны алу сәтсіз аяқталды" },
+  "error_failedToFetchSysLang": { "message": "Жүйе тілін алу сәтсіз аяқталды" },
   "error_mustIncludePath": { "message": "=жолды қамтуы керек" },
   "warn_configFileExists": { "message": "Файлды баптау бұрыннан бар" },
   "info_exampleValidConfigFile": { "message": "Мысал жарамды конфигурация файлы" },

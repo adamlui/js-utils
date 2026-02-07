@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "لم يتم العثور على ملف التكوين" },
   "error_failedToLoadConfigFile": { "message": "فشل تحميل ملف التكوين" },
   "error_failedToFetchGlobalVer": { "message": "تعذر جلب الإصدار العالمي" },
+  "error_failedToFetchSysLang": { "message": "تعذر جلب لغة النظام" },
   "error_mustIncludePath": { "message": "يجب أن تتضمن =مسار" },
   "warn_configFileExists": { "message": "ملف التكوين موجود بالفعل" },
   "info_exampleValidConfigFile": { "message": "مثال على ملف تكوين صالح" },

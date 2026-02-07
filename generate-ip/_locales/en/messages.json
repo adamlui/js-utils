@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Config file not found" },
   "error_failedToLoadConfigFile": { "message": "Failed to load config file" },
   "error_failedToFetchGlobalVer": { "message": "Failed to fetch global version" },
+  "error_failedToFetchSysLang": { "message": "Failed to fetch system language" },
   "error_mustIncludePath": { "message": "must include =path" },
   "warn_configFileExists": { "message": "Config file already exists" },
   "info_exampleValidConfigFile": { "message": "Example valid config file" },

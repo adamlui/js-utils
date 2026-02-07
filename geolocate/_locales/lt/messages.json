@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Konfigūracijos failas nerastas" },
   "error_failedToLoadConfigFile": { "message": "Nepavyko įkelti konfigūracijos failo" },
   "error_failedToFetchGlobalVer": { "message": "Nepavyko gauti visuotinės versijos" },
+  "error_failedToFetchSysLang": { "message": "Nepavyko gauti sistemos kalbos" },
   "error_mustIncludePath": { "message": "turi būti =kelias" },
   "warn_configFileExists": { "message": "Konfigūracijos failas jau yra" },
   "info_exampleValidConfigFile": { "message": "VALID konfigūracijos failo pavyzdys" },

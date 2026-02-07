@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Qwalasela ifayili ayifumanekanga" },
   "error_failedToLoadConfigFile": { "message": "Ayiphumelelanga ukufaka ifayile yoqwalaselo" },
   "error_failedToFetchGlobalVer": { "message": "Ayikwazanga ukufumana inguqulelo yomhlaba wonke" },
+  "error_failedToFetchSysLang": { "message": "Ayiphumelelanga ukukhangela ulwimi lwenkqubo" },
   "error_mustIncludePath": { "message": "kufuneka iquke =indlela" },
   "warn_configFileExists": { "message": "Lungisa ifayile sele ikhona" },
   "info_exampleValidConfigFile": { "message": "Umzekelo wefayile echanileyo yokuqwalasela" },

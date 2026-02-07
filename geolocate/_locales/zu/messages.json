@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Lungisa ifayela alitholakali" },
   "error_failedToLoadConfigFile": { "message": "Yehlulekile ukulayisha ifayela lokumisa" },
   "error_failedToFetchGlobalVer": { "message": "Yehlulekile ukuthola inguqulo yomhlaba wonke" },
+  "error_failedToFetchSysLang": { "message": "Yehlulekile ukulanda ulimi lwesistimu" },
   "error_mustIncludePath": { "message": "kumele kufake =indlela" },
   "warn_configFileExists": { "message": "Lungisa ifayela selivele likhona" },
   "info_exampleValidConfigFile": { "message": "Isibonelo sefayela elivumelekile lokumisa" },

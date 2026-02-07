@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Файл конфігурації не знайдено" },
   "error_failedToLoadConfigFile": { "message": "Не вдалося завантажити файл конфігурації" },
   "error_failedToFetchGlobalVer": { "message": "Не вдалося отримати глобальну версію" },
+  "error_failedToFetchSysLang": { "message": "Не вдалося отримати мову системи" },
   "error_mustIncludePath": { "message": "must include =path" },
   "warn_configFileExists": { "message": "Файл конфігурації вже існує" },
   "info_exampleValidConfigFile": { "message": "Приклад дійсного файлу конфігурації" },

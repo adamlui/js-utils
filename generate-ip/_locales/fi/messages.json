@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Konfig. tiedostoa ei löytynyt" },
   "error_failedToLoadConfigFile": { "message": "Konfigurointitiedoston lataaminen epäonnistui" },
   "error_failedToFetchGlobalVer": { "message": "Globaalin version nouto epäonnistui" },
+  "error_failedToFetchSysLang": { "message": "Järjestelmän kielen noutaminen epäonnistui" },
   "error_mustIncludePath": { "message": "on sisällettävä =polku" },
   "warn_configFileExists": { "message": "Konfigurointitiedosto on jo olemassa" },
   "info_exampleValidConfigFile": { "message": "Esimerkki kelvollisesta asetustiedostosta" },

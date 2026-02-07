@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "ʻAʻole i loaʻa ka faila hoʻonohonoho" },
   "error_failedToLoadConfigFile": { "message": "ʻAʻole i hiki ke hoʻouka i ka faila hoʻonohonoho" },
   "error_failedToFetchGlobalVer": { "message": "ʻAʻole i hiki ke kiʻi i ka mana honua" },
+  "error_failedToFetchSysLang": { "message": "ʻAʻole i hiki ke kiʻi i ka ʻōlelo ʻōnaehana" },
   "error_mustIncludePath": { "message": "pono e hoʻokomo i ka =ala" },
   "warn_configFileExists": { "message": "Ua loaʻa mua ka faila hoʻonohonoho" },
   "info_exampleValidConfigFile": { "message": "Laʻana o ka faila hoʻonohonoho kūpono" },

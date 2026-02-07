@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "ບໍ່ພົບໄຟລ໌ການຕັ້ງຄ່າ" },
   "error_failedToLoadConfigFile": { "message": "ລົ້ມເຫຼວໃນການໂຫຼດໄຟລ໌ຕັ້ງຄ່າ" },
   "error_failedToFetchGlobalVer": { "message": "ລົ້ມເຫຼວໃນການຮວບຮວມຮຸ່ນທົ່ວໂລກ" },
+  "error_failedToFetchSysLang": { "message": "ການຮວບຮວມພາສາລະບົບບໍ່ສຳເລັດ" },
   "error_mustIncludePath": { "message": "ຕ້ອງລວມ =ເສັ້ນທາງ" },
   "warn_configFileExists": { "message": "ໄຟລ໌ການຕັ້ງຄ່າມີຢູ່ແລ້ວ" },
   "info_exampleValidConfigFile": { "message": "ຕົວຢ່າງເອກະສານ config ທີ່ຖືກຕ້ອງ" },

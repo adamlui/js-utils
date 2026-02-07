@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Config ဖိုင်ကိုမတွေ့ပါ" },
   "error_failedToLoadConfigFile": { "message": "Config ဖိုင်ကိုဖွင့်ရန်မအောင်မြင်ပါ" },
   "error_failedToFetchGlobalVer": { "message": "ကမ္ဘာလုံးဆိုင်ရာ ဗားရှင်းကို ရယူရန် မအောင်မြင်ပါ" },
+  "error_failedToFetchSysLang": { "message": "စနစ်ဘာသာစကား ရယူရန် မအောင်မြင်ပါ" },
   "error_mustIncludePath": { "message": "ပါဝင်ရမည် =လမ်းကြောင်း" },
   "warn_configFileExists": { "message": "Config ဖိုင်ရှိပြီးသား" },
   "info_exampleValidConfigFile": { "message": "ဥပမာ မှန်ကန်သော config ဖိုင်" },

@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "কনফিগ ফাইল পাওয়া যায়নি" },
   "error_failedToLoadConfigFile": { "message": "কনফিগ ফাইল লোড করতে ব্যর্থ হয়েছে" },
   "error_failedToFetchGlobalVer": { "message": "বিশ্বব্যাপী সংস্করণ আনতে ব্যর্থ হয়েছে" },
+  "error_failedToFetchSysLang": { "message": "সিস্টেম ভাষা আনতে ব্যর্থ হয়েছে" },
   "error_mustIncludePath": { "message": "অবশ্যই অন্তর্ভুক্ত করতে হবে =PATH" },
   "warn_configFileExists": { "message": "কনফিগ ফাইল ইতিমধ্যে বিদ্যমান" },
   "info_exampleValidConfigFile": { "message": "উদাহরণ বৈধ কনফিগ ফাইল" },

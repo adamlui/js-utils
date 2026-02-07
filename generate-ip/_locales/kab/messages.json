@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Afaylu ur yettwafen ara" },
   "error_failedToLoadConfigFile": { "message": "Ur yeddi ara ad yettwakkes ufaylu yettwakkes" },
   "error_failedToFetchGlobalVer": { "message": "Ur yeddi ara ad d-nefk asenfaṛ n umaḍal" },
+  "error_failedToFetchSysLang": { "message": "Idioma deg xinag - Ur yezmir ara" },
   "error_mustIncludePath": { "message": "yessefk ad tqedceḍ =Abrid" },
   "warn_configFileExists": { "message": "Afaylu uffir yella yakan" },
   "info_exampleValidConfigFile": { "message": "Amedya n ufaylu yettwaxedmen" },

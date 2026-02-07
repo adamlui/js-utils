@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Config faila e leʻi maua" },
   "error_failedToLoadConfigFile": { "message": "Le mafai ona utaina faila config" },
   "error_failedToFetchGlobalVer": { "message": "Ua le mafai ona maua le lomiga i le lalolagi atoa" },
+  "error_failedToFetchSysLang": { "message": "Le mafai ona maua le gagana o le faiga" },
   "error_mustIncludePath": { "message": "e tatau ona aofia ai =ala" },
   "warn_configFileExists": { "message": "Config faila ua uma ona i ai" },
   "info_exampleValidConfigFile": { "message": "Faataitaiga aloaia config faila" },

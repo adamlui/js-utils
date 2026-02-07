@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "configuratiebestand '%s' niet gevonden" },
   "error_failedToLoadConfigFile": { "message": "Kon configuratiebestand niet laden" },
   "error_failedToFetchGlobalVer": { "message": "Kon globale versie niet ophalen" },
+  "error_failedToFetchSysLang": { "message": "Kan systeemtaal niet ophalen" },
   "error_mustIncludePath": { "message": "moet =pad bevatten" },
   "warn_configFileExists": { "message": "Configuratiebestand bestaat al" },
   "info_exampleValidConfigFile": { "message": "Voorbeeld geldig configuratiebestand" },

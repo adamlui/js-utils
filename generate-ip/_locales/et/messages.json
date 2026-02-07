@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Konfiguratsioonifaili ei leitud" },
   "error_failedToLoadConfigFile": { "message": "Konfiguratsioonifaili laadimine nurjus" },
   "error_failedToFetchGlobalVer": { "message": "Globaalse versiooni toomine nurjus" },
+  "error_failedToFetchSysLang": { "message": "Süsteemi keele toomine nurjus" },
   "error_mustIncludePath": { "message": "peab sisaldama =rada" },
   "warn_configFileExists": { "message": "Konfiguratsioonifail on juba olemas" },
   "info_exampleValidConfigFile": { "message": "Kehtiva konfiguratsioonifaili näide" },

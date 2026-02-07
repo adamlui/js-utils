@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Datei net fonnt konfiguréieren" },
   "error_failedToLoadConfigFile": { "message": "Konnt d'Konfiguratiounsdatei net lueden" },
   "error_failedToFetchGlobalVer": { "message": "Konnt d'global Versioun net fannen" },
+  "error_failedToFetchSysLang": { "message": "Systemsprooch feelgeschloen" },
   "error_mustIncludePath": { "message": "must mat =path" },
   "warn_configFileExists": { "message": "Datei konfiguréieren existéiert schonn" },
   "info_exampleValidConfigFile": { "message": "Beispill valabel Konfiguratiounsdatei" },

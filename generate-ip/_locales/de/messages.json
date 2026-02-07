@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Konfigurationsdatei nicht gefunden" },
   "error_failedToLoadConfigFile": { "message": "Konfigurationsdatei konnte nicht geladen werden" },
   "error_failedToFetchGlobalVer": { "message": "Globale Version konnte nicht abgerufen werden" },
+  "error_failedToFetchSysLang": { "message": "Systemsprache konnte nicht abgerufen werden" },
   "error_mustIncludePath": { "message": "must include =path" },
   "warn_configFileExists": { "message": "Die Konfigurationsdatei ist bereits vorhanden" },
   "info_exampleValidConfigFile": { "message": "Beispiel gültige Konfigurationsdatei" },

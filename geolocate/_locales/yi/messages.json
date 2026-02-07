@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "קאָנפיגוראַציע טעקע נישט געפֿונען" },
   "error_failedToLoadConfigFile": { "message": "נישט געלונגען צו לאָדן קאָנפיג טעקע" },
   "error_failedToFetchGlobalVer": { "message": "נישט געקענט ברענגען גלאבאלע ווערסיע" },
+  "error_failedToFetchSysLang": { "message": "נישט געקענט ברענגען סיסטעם שפראך" },
   "error_mustIncludePath": { "message": "מוז ארייננעמען =path" },
   "warn_configFileExists": { "message": "קאָנפיגוראַציע טעקע עקזיסטירט שוין" },
   "info_exampleValidConfigFile": { "message": "בייַשפּיל גילטיק קאָנפיג טעקע" },

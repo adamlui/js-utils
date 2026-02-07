@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Tsy hita ilay raki-kirakira" },
   "error_failedToLoadConfigFile": { "message": "Tsy azo ilay raki-kirakira" },
   "error_failedToFetchGlobalVer": { "message": "Tsy nahavita naka ny kinova ankapobe" },
+  "error_failedToFetchSysLang": { "message": "Tsy afaka naka ny fitenin'ny rafitra" },
   "error_mustIncludePath": { "message": "tsy maintsy ahitana =sori-dàlana" },
   "warn_configFileExists": { "message": "Efa misy ilay raki-kirakira" },
   "info_exampleValidConfigFile": { "message": "Ohatra ny raki-kirakira azo ekena" },

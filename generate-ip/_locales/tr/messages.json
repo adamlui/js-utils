@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Yapılandırma dosyası bulunamadı" },
   "error_failedToLoadConfigFile": { "message": "Yapılandırma dosyası yüklenemedi" },
   "error_failedToFetchGlobalVer": { "message": "Genel sürüm getirilemedi" },
+  "error_failedToFetchSysLang": { "message": "Sistem dili alınamadı" },
   "error_mustIncludePath": { "message": "içermelidir =yol" },
   "warn_configFileExists": { "message": "Yapılandırma dosyası zaten var" },
   "info_exampleValidConfigFile": { "message": "Örnek geçerli yapılandırma dosyası" },

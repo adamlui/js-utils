@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Тохируулах файл олдсонгүй" },
   "error_failedToLoadConfigFile": { "message": "Тохиргооны файлыг ачаалж чадсангүй" },
   "error_failedToFetchGlobalVer": { "message": "Глобал хувилбарыг авч чадсангүй" },
+  "error_failedToFetchSysLang": { "message": "Системийн хэлийг авч чадсангүй" },
   "error_mustIncludePath": { "message": "оруулах ёстой =зам" },
   "warn_configFileExists": { "message": "Тохиргооны файл аль хэдийн байна" },
   "info_exampleValidConfigFile": { "message": "Хүчинтэй тохиргооны файлын жишээ" },

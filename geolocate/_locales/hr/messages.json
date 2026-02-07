@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Konfiguracijska datoteka nije pronađena" },
   "error_failedToLoadConfigFile": { "message": "Učitavanje konfiguracijske datoteke nije uspjelo" },
   "error_failedToFetchGlobalVer": { "message": "Dohvaćanje globalne verzije nije uspjelo" },
+  "error_failedToFetchSysLang": { "message": "Dohvaćanje jezika sustava nije uspjelo" },
   "error_mustIncludePath": { "message": "mora sadržavati =putanju" },
   "warn_configFileExists": { "message": "Konfiguracijska datoteka već postoji" },
   "info_exampleValidConfigFile": { "message": "Primjer valjane konfiguracijske datoteke" },

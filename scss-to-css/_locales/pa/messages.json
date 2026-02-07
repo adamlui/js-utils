@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "ਸੰਰਚਨਾ ਫਾਇਲ ਨਹੀਂ ਲੱਭੀ" },
   "error_failedToLoadConfigFile": { "message": "ਸੰਰਚਨਾ ਫਾਇਲ ਲੋਡ ਕਰਨ ਲਈ ਫੇਲ੍ਹ" },
   "error_failedToFetchGlobalVer": { "message": "ਗਲੋਬਲ ਵਰਜਨ ਲੈਣ ਲਈ ਫੇਲ੍ਹ ਹੈ" },
+  "error_failedToFetchSysLang": { "message": "ਸਿਸਟਮ ਭਾਸ਼ਾ ਲੈਣ ਲਈ ਫੇਲ੍ਹ ਹੈ" },
   "error_mustIncludePath": { "message": "must include =ਰਸਤਾ ਸ਼ਾਮਲ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ" },
   "warn_configFileExists": { "message": "ਸੰਰਚਨਾ ਫਾਇਲ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ" },
   "info_exampleValidConfigFile": { "message": "ਉਦਾਹਰਨ ਵੈਧ ਸੰਰਚਨਾ ਫਾਇਲ" },

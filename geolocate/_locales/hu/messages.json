@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "A konfigurációs fájl nem található" },
   "error_failedToLoadConfigFile": { "message": "Konfigurációs fájl betöltése sikertelen" },
   "error_failedToFetchGlobalVer": { "message": "Globális verzió lekérése sikertelen" },
+  "error_failedToFetchSysLang": { "message": "Nem sikerült lekérni a rendszer nyelvét" },
   "error_mustIncludePath": { "message": "must include =elérési út" },
   "warn_configFileExists": { "message": "A konfigurációs fájl már létezik" },
   "info_exampleValidConfigFile": { "message": "Példa érvényes konfigurációs fájlra" },

@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "קובץ התצורה לא נמצא" },
   "error_failedToLoadConfigFile": { "message": "טעינת קובץ התצורה נכשלה" },
   "error_failedToFetchGlobalVer": { "message": "טעינת הגרסה הגלובלית נכשלה" },
+  "error_failedToFetchSysLang": { "message": "טעינת שפת המערכת נכשלה" },
   "error_mustIncludePath": { "message": "חייב לכלול =PATH" },
   "warn_configFileExists": { "message": "קובץ התצורה כבר קיים" },
   "info_exampleValidConfigFile": { "message": "דוגמה לקובץ תצורה חוקי" },

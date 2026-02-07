@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Faele ya Config ga e a bonwa" },
   "error_failedToLoadConfigFile": { "message": "O reteletswe ke go louta faele ya config" },
   "error_failedToFetchGlobalVer": { "message": "O reteletswe ke go batla mofuta wa lefatshe ka bophara" },
+  "error_failedToFetchSysLang": { "message": "O reteletswe ke go batla puo ya tsamaiso" },
   "error_mustIncludePath": { "message": "e tshwanetse go akaretsa = tsela" },
   "warn_configFileExists": { "message": "Faele ya Config e setse e le teng" },
   "info_exampleValidConfigFile": { "message": "Sekao sa faele e e amogelesegang ya" },

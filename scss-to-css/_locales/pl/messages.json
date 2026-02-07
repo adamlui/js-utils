@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Nie znaleziono pliku konfiguracyjnego" },
   "error_failedToLoadConfigFile": { "message": "Nie udało się załadować pliku konfiguracyjnego" },
   "error_failedToFetchGlobalVer": { "message": "Nie udało się pobrać wersji globalnej" },
+  "error_failedToFetchSysLang": { "message": "Nie udało się pobrać języka systemu" },
   "error_mustIncludePath": { "message": "must include =ścieżka" },
   "warn_configFileExists": { "message": "Plik konfiguracyjny już istnieje" },
   "info_exampleValidConfigFile": { "message": "Przykład prawidłowego pliku konfiguracyjnego" },

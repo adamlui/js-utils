@@ -86,19 +86,19 @@ module.exports = {
     },
 
     getSysLang() {
-        if (process.platform == 'win32')
-            try {
+        try {
+            if (process.platform == 'win32')
                 return require('child_process').execSync(
                     '(Get-Culture).TwoLetterISOLanguageName', { shell: 'powershell', encoding: 'utf-8' }
                 ).trim()
-            } catch (err) {
-                log.error('ERROR loading system language:', err.message)
-                return 'en'
+            else { // macOS/Linux
+                const pe = process.env
+                return (pe.LANG || pe.LANGUAGE || pe.LC_ALL || pe.LC_MESSAGES || pe.LC_NAME)
+                    .split('.')[0] // strip encoding e.g. .UTF-8
             }
-        else { // macOS/Linux
-            const pe = process.env
-            return (pe.LANG || pe.LANGUAGE || pe.LC_ALL || pe.LC_MESSAGES || pe.LC_NAME || 'en')
-                .split('.')[0] // strip encoding e.g. .UTF-8
+        } catch (err) {
+            log.error(`${cli.msgs.error_failedToFetchSysLang}:`, err.message)
+            return 'en'
         }
     }
 }

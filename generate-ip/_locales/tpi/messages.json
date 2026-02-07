@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "I no gat wanpela samting i stap long dispela hap" },
   "error_failedToLoadConfigFile": { "message": "I no gat rot long putim konfiguresen long fail" },
   "error_failedToFetchGlobalVer": { "message": "Ol i no inap painim wanpela Baibel long olgeta hap" },
+  "error_failedToFetchSysLang": { "message": "Ol i no inap painim tokples bilong sistem" },
   "error_mustIncludePath": { "message": "em i mas i go = em i mas i go" },
   "warn_configFileExists": { "message": "Konfigim fail i stap pinis" },
   "info_exampleValidConfigFile": { "message": "Wanpela gutpela piksa bilong dispela fail" },

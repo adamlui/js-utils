@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Wala nakit-an ang file sa config" },
   "error_failedToLoadConfigFile": { "message": "Napakyas sa pag-load sa file sa config" },
   "error_failedToFetchGlobalVer": { "message": "Napakyas sa pagkuha sa global nga bersyon" },
+  "error_failedToFetchSysLang": { "message": "Pagkapakyas sa pag-instalar sa sinultian nga sistema" },
   "error_mustIncludePath": { "message": "kinahanglan nga maglakip =path" },
   "warn_configFileExists": { "message": "Ang file sa config anaa na" },
   "info_exampleValidConfigFile": { "message": "Pananglitan balido nga config file" },

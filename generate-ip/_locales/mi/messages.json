@@ -12,6 +12,7 @@
   "error_configFileNotFound": { "message": "Kōnae Config e kore e kitea" },
   "error_failedToLoadConfigFile": { "message": "Kaore i taea te utaina i te konae whirihora" },
   "error_failedToFetchGlobalVer": { "message": "Kaore i taea te tango i te putanga o te ao" },
+  "error_failedToFetchSysLang": { "message": "Kaore e taea te whakamahi i te reo o te pūnaha" },
   "error_mustIncludePath": { "message": "me whakauru =ara" },
   "warn_configFileExists": { "message": "Kei te wātea te kōnae Config" },
   "info_exampleValidConfigFile": { "message": "Tauira kōnae config whaimana" },
