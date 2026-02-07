@@ -102,13 +102,13 @@ module.exports = {
         console.info(`\n${
             cli.msgs.info_moreHelp}, ${cli.msgs.info_type} ${cli.name.split('/')[1]} --help' ${
                 cli.msgs.info_or} ${cli.msgs.info_visit}\n${
-                this.colors.bw}${cli.urls.docs}${this.colors.nc}`
+                    this.colors.bw}${cli.urls.docs}${this.colors.nc}`
         )
     },
 
     version() {
         const { getVer } = require(`./pkg${ env.devMode ? '' : '.min' }.js`)
-        this.info(`${cli.name}`)
+        this.info(cli.name)
         this.data(`${
             cli.msgs.prefix_globalVer}: ${ getVer('global') || 'none' }\n${
             cli.msgs.prefix_localVer }: ${ getVer('local')  || 'none' }`
