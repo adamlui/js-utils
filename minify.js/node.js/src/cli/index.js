@@ -13,23 +13,12 @@
     const compile = require(`./lib/compile${ env.devMode ? '' : '.min' }.js`),
         { findJS } = require(`../minify${ env.devMode ? '' : '.min' }.js`),
           fs = require('fs'),
-          language = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
+          initCLI = require(`./lib/init${ env.devMode ? '' : '.min' }.js`),
           log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
           path = require('path'),
           settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
 
-    // Init CLI data
-    Object.assign(globalThis.cli ??= {}, require(`../${ env.devMode ? '../' : 'data/' }package-data.json`))
-    cli.lang = settings.load('uiLang') || (
-        env.debugMode ? language.generateRandomLang({ excludes: ['en'] }) : language.getSysLang() )
-    cli.msgs = await language.getMsgs(cli.lang)
-    if (cli.lang.startsWith('en'))
-        cli.urls.docs += '/#-command-line-usage'
-    else { // localize cli.urls.docs
-        cli.docLocale = cli.lang.replace('_', '-').toLowerCase()
-        if ((await language.getDocLocales()).includes(cli.docLocale))
-            log.debug(cli.urls.docs += `/${cli.docLocale}#readme`)
-    }
+    await initCLI()
 
     // Exec CMD arg if passed
     for (const arg of env.args) {
