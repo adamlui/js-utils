@@ -3,6 +3,9 @@ const data = require(`./data${ env.devMode ? '' : '.min' }.js`),
 
 module.exports = {
 
+    formatCode(langCode) { // to match locale dir name
+        return langCode.replace(/(\w{2})[-_](\w{2})/, (_, lang, region) => `${lang}_${region.toUpperCase()}`) },
+
     generateRandomLang({ includes = [], excludes = [] } = {}) {
         const fs = require('fs'),
               path = require('path')
@@ -43,6 +46,7 @@ module.exports = {
     },
 
     async getMsgs(langCode = 'en') {
+        langCode = module.exports.formatCode(langCode)
         let msgs = data.flatten( // local ones
             require(`../../${ env.devMode ? '../../_locales/en/' : 'data/' }messages.json`))
 
