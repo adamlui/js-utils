@@ -125,6 +125,6 @@ module.exports = {
             }
         })
 
-        return arguments.length == 1 ? cli.config[ctrlKeys] : cli.config
+        return arguments.length == 1 ? cli.config[inputCtrlKeys[0]] : cli.config
     }
 }
