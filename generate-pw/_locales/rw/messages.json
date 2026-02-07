@@ -33,7 +33,7 @@
   "helpSection_params": { "message": "Amahitamo ya Parameter" },
   "helpSection_flags": { "message": "Amahitamo ya Boolean" },
   "helpSection_cmds": { "message": "Amabwiriza" },
-  "optionDesc_uiLang": { "message": "ISO 6391 Code of Language image in image" },
+  "optionDesc_uiLang": { "message": "Kode ya ISO 639-1 y'ururimi rwo kwerekanamo UI." },
   "optionDesc_length": { "message": "Kora ijambo ryibanga ryuburebure bwa n" },
   "optionDesc_qty": { "message": "Kora ijambo ryibanga n" },
   "optionDesc_config": { "message": "Kunoza IDOSIYE" },
