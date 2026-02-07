@@ -59,14 +59,16 @@
     "url": "git+https://github.com/adamlui/minify.js.git"
   },
   "keywords": [
+    "api",
+    "cli",
+    "compression",
+    "files",
     "javascript",
-    "utilities",
+    "js",
     "js-utils",
     "minifier",
-    "api",
-    "js",
-    "cli",
-    "utils"
+    "uglifier",
+    "utilities"
   ],
   "bugs": {
     "url": "https://github.com/adamlui/minify.js/issues"

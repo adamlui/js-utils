@@ -55,12 +55,15 @@
     "url": "git+https://github.com/adamlui/js-utils.git"
   },
   "keywords": [
+    "api",
+    "cli",
+    "data",
     "geolocate",
     "geolocation",
     "ip",
     "networking",
-    "api",
-    "cli"
+    "sluething",
+    "utility"
   ],
   "bugs": {
     "url": "https://github.com/adamlui/js-utils/issues"

@@ -57,12 +57,16 @@
     "url": "git+https://github.com/adamlui/js-utils.git"
   },
   "keywords": [
-    "password",
-    "generator",
-    "unique",
-    "generate",
     "api",
-    "cli"
+    "cli",
+    "generate",
+    "generator",
+    "password",
+    "random",
+    "rng",
+    "security",
+    "unique",
+    "utility"
   ],
   "bugs": {
     "url": "https://github.com/adamlui/js-utils/issues"

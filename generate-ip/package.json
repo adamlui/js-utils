@@ -53,16 +53,20 @@
     "url": "git+https://github.com/adamlui/js-utils.git"
   },
   "keywords": [
-    "ip",
-    "generator",
-    "unique",
-    "generate",
+    "address",
     "api",
     "cli",
-    "address",
+    "generate",
+    "generator",
+    "internet",
+    "ip",
     "ipv4",
     "ipv6",
-    "mac"
+    "mac",
+    "network",
+    "privacy",
+    "utility",
+    "unique"
   ],
   "bugs": {
     "url": "https://github.com/adamlui/js-utils/issues"

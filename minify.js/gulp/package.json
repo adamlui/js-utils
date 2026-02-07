@@ -47,15 +47,16 @@
     "url": "git+https://github.com/adamlui/minify.js.git"
   },
   "keywords": [
-    "javascript",
-    "utilities",
-    "js-utils",
-    "minifier",
     "api",
-    "js",
-    "utils",
+    "compression",
+    "files",
+    "gulpfriendly",
     "gulpplugin",
-    "gulpfriendly"
+    "javascript",
+    "js-utils",
+    "js",
+    "minifier",
+    "utilities"
   ],
   "bugs": {
     "url": "https://github.com/adamlui/minify.js/issues"
