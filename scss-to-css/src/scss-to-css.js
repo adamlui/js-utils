@@ -1,4 +1,4 @@
-// © 2024 Adam Lui & contributors under the MIT license.
+// © 2024–2026 Adam Lui & contributors under the MIT license.
 // Source: https://github.com/adamlui/scss-to-css/tree/main/src
 // Documentation: https://github.com/adamlui/scss-to-css/tree/main/docs
 
