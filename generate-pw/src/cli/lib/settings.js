@@ -41,9 +41,9 @@ module.exports = {
             fs.copyFileSync(paths.src, paths.target) // use found template
 
         else { // use jsDelivr copy
+            cli.version ??= require(`./pkg${ env.devMode ? '' : '.min' }.js`).getVer('local')
             const data = require(`./data${ env.devMode ? '' : '.min' }.js`),
-                  pkgVer = require(`./pkg${ env.devMode ? '' : '.min' }.js`).getVer('local'),
-                  verTag = pkgVer ? `${cli.name}-${pkgVer}` : 'latest',
+                  verTag = cli.version ? `${cli.name}-${cli.version}` : 'latest',
                   jsdURL = `${cli.urls.jsdelivr}@${verTag}/${cli.name}/${filename}`
 
             log.data(`${cli.msgs.info_fetchingRemoteConfigFrom} ${jsdURL}...`)
