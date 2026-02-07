@@ -7,6 +7,7 @@ module.exports = {
         bo: '\x1b[38;5;214m', // bright orange
         bg: '\x1b[1;92m',     // bright green
         bw: '\x1b[1;97m',     // bright white
+        gry: '\x1b[90m',      // gray
         blk: '\x1b[30m',      // black
         tlBG: '\x1b[106m'     // teal bg
     },
@@ -15,6 +16,7 @@ module.exports = {
     configURLandExit(...args) { this.error(...args) ; this.configURL() ; process.exit(1) },
     data(msg) { console.log(`\n${this.colors.bw}${msg}${this.colors.nc}`) },
     debug(msg) { if (env.debugMode) console.debug(`\n${this.colors.bo}DEBUG:`, msg, this.colors.nc, '\n') },
+    dim(msg) { console.log(`${this.colors.gry}${msg}${this.colors.nc}`) },
     error(...args) { console.error(`\n${this.colors.br}ERROR:`, ...args, this.colors.nc) },
     errorAndExit(...args) { this.error(...args) ; this.helpCmdAndDocURL() ; process.exit(1) },
     ifNotQuiet(msg) { if (!cli.config.quietMode) console.info(msg) },
