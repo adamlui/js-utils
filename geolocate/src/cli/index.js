@@ -12,15 +12,16 @@
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
           geo = require(`../geolocate${ env.devMode ? '' : '.min' }.js`),
-        { generateRandomLang, getMsgs, getSysLang } = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
+          language = require(`./lib/language${ env.devMode ? '' : '.min' }.js`),
           log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
           settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
 
     // Init CLI data
     Object.assign(globalThis.cli ??= {}, require(`../${ env.devMode ? '../' : 'data/' }package-data.json`))
     settings.load('uiLang')
-    env.sysLang = cli.config.uiLang || ( env.debugMode ? generateRandomLang({ excludes: ['en'] }) : getSysLang() )
-    cli.msgs = await getMsgs(env.sysLang)
+    env.sysLang = cli.config.uiLang || (
+        env.debugMode ? language.generateRandomLang({ excludes: ['en'] }) : language.getSysLang() )
+    cli.msgs = await language.getMsgs(env.sysLang)
     cli.urls.docs += '/#-command-line-usage'
 
     // Process ARGS
