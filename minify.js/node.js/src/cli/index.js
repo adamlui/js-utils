@@ -29,7 +29,7 @@
     else { // localize cli.urls.docs
         cli.docLocale = env.sysLang.replace('_', '-').toLowerCase()
         if ((await language.getDocLocales()).includes(cli.docLocale))
-            cli.urls.docs += `/${cli.docLocale}#readme`
+            log.debug(cli.urls.docs += `/${cli.docLocale}#readme`)
     }
 
     // Exec CMD arg if passed
