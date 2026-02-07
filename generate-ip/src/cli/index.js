@@ -26,7 +26,6 @@
     }
 
     // Log/copy random IP(s)
-    settings.load() // all keys
     const genOptions = { qty: cli.config.qty, verbose: !cli.config.quietMode },
           ipResult = { ipv4, ipv6, mac }[cli.config.mode || 'ipv4'].generate(genOptions)
     log.ifNotQuiet(`\n${cli.msgs.info_copyingToClip}...`)

@@ -7,4 +7,6 @@ module.exports = async function initCLI() {
         env.debugMode ? language.generateRandomLang({ excludes: ['en'] }) : language.getSysLang() )
     cli.msgs = await language.getMsgs(cli.lang)
     cli.urls.docs += '/#-command-line-usage'
+
+    settings.load() // all control keys
 }

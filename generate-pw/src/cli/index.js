@@ -26,7 +26,6 @@
     }
 
     // Copy random PASSWORD(s)
-    settings.load() // all keys
     const genOptions = {
         length: cli.config.length,
         qty: cli.config.qty,

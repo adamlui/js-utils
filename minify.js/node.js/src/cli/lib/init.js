@@ -15,4 +15,6 @@ module.exports = async function initCLI() {
         if ((await language.getDocLocales()).includes(cli.docLocale))
             log.debug(cli.urls.docs += `/${cli.docLocale}#readme`)
     }
+
+    settings.load() // all control keys
 }
