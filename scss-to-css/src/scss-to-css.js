@@ -6,7 +6,8 @@ const fs = require('fs'),
       path = require('path'),
       sass = require('sass')
 
-Object.assign(globalThis.api ??= {}, require(`${ /[\\/]src(?:[\\/]|$)/i.test(__dirname) ? '../' : './data/' }package-data.json`))
+Object.assign(globalThis.api ??= {},
+    require(`${ /[\\/]src(?:[\\/]|$)/i.test(__dirname) ? '../' : './data/' }package-data.json`))
 api.aliases = {
     compile: ['build', 'Build', 'Compile', 'compress', 'Compress', 'minify', 'Minify'],
     findSCSS: ['find', 'Find', 'findscss', 'findScss', 'Findscss', 'FindScss', 'FindSCSS', 'search', 'Search']
