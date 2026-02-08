@@ -2,6 +2,7 @@ const log = require(`./log${env.modExt}`),
       settings = require(`./settings${env.modExt}`)
 
 module.exports = {
+
     async cli() {
         const language = require(`./language${env.modExt}`)
 
