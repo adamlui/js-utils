@@ -13,14 +13,13 @@
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
         { generatePassword } = require(`../generate-pw${env.modExt}`),
-          initCLI = require(`./lib/init${env.modExt}`),
-          log = require(`./lib/log${env.modExt}`),
-          settings = require(`./lib/settings${env.modExt}`)
+          init = require(`./lib/init${env.modExt}`),
+          log = require(`./lib/log${env.modExt}`)
 
-    await initCLI()
+    await init.cli()
 
     // Exec CMD arg if passed
-    if (cli.config.init) return settings.initConfigFile()
+    if (cli.config.init) return init.configFile()
     else if (cli.config.help) return log.help()
     else if (cli.config.version) return log.version()
 

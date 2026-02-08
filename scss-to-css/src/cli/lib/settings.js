@@ -40,34 +40,6 @@ module.exports = {
             type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
     },
 
-    async initConfigFile(filename = this.configFilename) {
-        const paths = { target: path.resolve(process.cwd(), filename) }
-
-        if (fs.existsSync(paths.target)) // use existing config file
-            return log.warn(`${cli.msgs.warn_configFileExists}:`, paths.target)
-        if (fs.existsSync(paths.src = path.resolve(__dirname, `../../${ env.devMode ? '../' : 'data/' }${filename}`)))
-            fs.copyFileSync(paths.src, paths.target) // use found template
-
-        else { // use jsDelivr copy
-            cli.version ??= require(`./pkg${env.modExt}`).getVer('local')
-            const data = require(`./data${env.modExt}`),
-                  verTag = cli.version ? `v${cli.version}` : 'latest',
-                  jsdURL = `${cli.urls.jsdelivr}@${verTag}/${filename}`
-
-            log.data(`${cli.msgs.info_fetchingRemoteConfigFrom} ${jsdURL}...`)
-            try {
-                const resp = await data.fetch(jsdURL)
-                if (resp.ok) data.atomicWrite(paths.target, await resp.text())
-                else return log.warn(`${cli.msgs.warn_remoteConfigNotFound}: ${jsdURL} (${resp.status})`)
-            } catch (err) {
-                return log.warn(`${cli.msgs.warn_remoteConfigFailed}: ${jsdURL} ${err.message}`) }
-        }
-
-        log.success(`${cli.msgs.info_configFileCreated}: ${paths.target}\n`)
-        log.tip(`${cli.msgs.tip_editToSetDefaults}.`)
-        log.tip(`${cli.msgs.tip_cliArgsPrioritized}.`)
-    },
-
     load(ctrlKeys = Object.keys(this.controls)) {
         const inputCtrlKeys = [].concat(ctrlKeys) // force array
 
@@ -112,7 +84,7 @@ module.exports = {
                 log.configURLandExit(`${cli.msgs.error_failedToLoadConfigFile}:`, cli.configPath, `\n${err.message}`) }
 
         env.args.forEach(arg => { // load from CLI arg (overriding config file loads)
-            if (/^[^-]|--?(?:config|debug)/.test(arg)) return
+            if (/^[^-]|--?(?:config|debug)/.test(arg) && arg != 'init') return
 
             const ctrlKey = Object.keys(this.controls).find(key => this.controls[key]?.regex?.test(arg))
             if (!ctrlKey && !arguments.length) // invalid CLI arg, exit on arg-less load() (after cli.msgs defined)
