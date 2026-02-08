@@ -1,4 +1,5 @@
-const log = require(`./log${env.modExt}`),
+const dataPath = `../../${ env.devMode ? '../' : 'data/' }`,
+      log = require(`./log${env.modExt}`),
       settings = require(`./settings${env.modExt}`)
 
 module.exports = {
@@ -6,7 +7,7 @@ module.exports = {
     async cli() {
         const language = require(`./language${env.modExt}`)
 
-        Object.assign(globalThis.cli ??= {}, require(`../../${ env.devMode ? '../' : 'data/' }package-data.json`))
+        Object.assign(globalThis.cli ??= {}, require(`${dataPath}package-data.json`))
         cli.lang = settings.load('uiLang') || (
             env.debugMode ? language.generateRandomLang({ excludes: ['en'] }) : language.getSysLang() )
         cli.msgs = await language.getMsgs(cli.lang)
@@ -29,7 +30,7 @@ module.exports = {
 
         if (fs.existsSync(paths.target)) // use existing config file
             return log.warn(`${cli.msgs.warn_configFileExists}:`, paths.target)
-        if (fs.existsSync(paths.src = path.resolve(__dirname, `../../${ env.devMode ? '../' : 'data/' }${filename}`)))
+        if (fs.existsSync(paths.src = path.resolve(__dirname, `${dataPath}${filename}`)))
             fs.copyFileSync(paths.src, paths.target) // use found template
 
         else { // use jsDelivr copy
