@@ -22,11 +22,9 @@
     await initCLI()
 
     // Exec CMD arg if passed
-    for (const arg of env.args) {
-        if (settings.controls.init.regex.test(arg)) return settings.initConfigFile()
-        else if (settings.controls.help.regex.test(arg)) return log.help()
-        else if (settings.controls.version.regex.test(arg)) return log.version()
-    }
+    if (cli.config.init) return settings.initConfigFile()
+    else if (cli.config.help) return log.help()
+    else if (cli.config.version) return log.version()
 
     // Init I/O args
     const [inputArg = '', outputArg = ''] = // default to empty strings for error-less handling

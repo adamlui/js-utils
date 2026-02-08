@@ -77,8 +77,8 @@ module.exports = {
 
         if (!arguments.length && !cli.defaultsSet) { // init all defaults on arg-less load()
             inputCtrlKeys.forEach(key => {
-                const ctrl = this.controls[key] ; if (ctrl.mode || ctrl.type == 'cmd') return
-                cli.config[key] ??= ctrl.defaultVal ?? ( ctrl.type == 'flag' ? false : '' )
+                const ctrl = this.controls[key] ; if (ctrl.mode) return
+                cli.config[key] ??= ctrl.defaultVal ?? ( ctrl.type == 'param' ? '' : false )
             })
             cli.defaultsSet = true
         }
@@ -124,13 +124,13 @@ module.exports = {
             if (!inputCtrlKeys.includes(ctrlKey))
                 return // don't process env.args when load() specific keys
 
-            const ctrl = this.controls[ctrlKey] ; if (ctrl.type == 'cmd') return
+            const ctrl = this.controls[ctrlKey]
             let ctrlKeyVal = ctrl.type == 'param' ? arg.split('=')[1]?.trim() : true
 
             if (ctrl.mode) // set cli.config.mode to mode name
                 cli.config.mode = ctrlKey.replace(/mode$/i, '').toLowerCase()
 
-            else { // init flag/param cli.config[ctrlKey] val
+            else { // init flag/param/cmd cli.config[ctrlKey] val
                 const parser = ctrl.parser
                 if (parser) {
                     ctrlKeyVal = parser(ctrlKeyVal)

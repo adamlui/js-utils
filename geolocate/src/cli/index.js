@@ -19,16 +19,15 @@
 
     await initCLI()
 
-    // Process ARGS
+    // Exec CMD arg if passed
+    if (cli.config.init) return settings.initConfigFile()
+    else if (cli.config.help) return log.help()
+    else if (cli.config.version) return log.version()
+
+    // Process IP args
     const validIPs = []
-    for (const arg of env.args) {
-        const isInitCmd = settings.controls.init.regex.test(arg)
-        if (isInitCmd) return settings.initConfigFile()
-        else if (settings.controls.help.regex.test(arg)) return log.help()
-        else if (settings.controls.version.regex.test(arg)) return log.version()
-        else if (!arg.startsWith('-') && !isInitCmd) // load IP from leading-dash-less arg
-            validIPs.push(arg.replace(/[[\]]/g, '')) // strip outer '[]' in case copied from docs
-    }
+    for (const arg of env.args) if (!arg.startsWith('-')) // load IP from leading-dash-less arg
+        validIPs.push(arg.replace(/[[\]]/g, '')) // strip outer '[]' in case copied from docs
 
     // Log/copy GEO result(s)
     const geoResults = await geo.locate(validIPs, { verbose: !cli.config.quietMode })
