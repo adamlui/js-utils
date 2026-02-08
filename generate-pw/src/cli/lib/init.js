@@ -9,13 +9,14 @@ module.exports = {
         Object.assign(globalThis.cli ??= {}, require(`../../${ env.devMode ? '../' : 'data/' }package-data.json`))
         cli.lang = settings.load('uiLang') || (
             env.debugMode ? language.generateRandomLang({ excludes: ['en'] }) : language.getSysLang() )
-        cli.msgs = await language.getMsgs(cli.lang)
+        cli.msgs ??= await language.getMsgs(cli.lang)
         if (cli.lang.startsWith('en'))
-            cli.urls.docs += '/#-command-line-usage'
-        else { // localize cli.urls.docs
-            cli.docLocale = cli.lang.replace('_', '-').toLowerCase()
-            if ((await language.getDocLocales()).includes(cli.docLocale))
-                log.debug(cli.urls.docs += `/${cli.docLocale}#readme`)
+            cli.urls.cliDocs ||= `${cli.urls.docs}/#-command-line-usage`
+        else {
+            cli.docLocale ||= cli.lang.replace('_', '-').toLowerCase()
+            cli.docLocales ??= await language.getDocLocales()
+            if (!cli.urls.localDocs && cli.docLocales.includes(cli.docLocale))
+                log.debug(cli.urls.localDocs = `${cli.urls.docs}/${cli.docLocale}#readme`)
         }
 
         settings.load() // all control keys
