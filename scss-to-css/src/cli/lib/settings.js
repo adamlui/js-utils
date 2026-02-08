@@ -87,7 +87,7 @@ module.exports = {
             if (/^[^-]|--?(?:config|debug)/.test(arg) && arg != 'init') return
 
             const ctrlKey = Object.keys(this.controls).find(key => this.controls[key]?.regex?.test(arg))
-            if (!ctrlKey && !arguments.length) // invalid CLI arg, exit on arg-less load() (after cli.msgs defined)
+            if (!ctrlKey && cli.msgs) // invalid CLI arg
                 log.errorAndExit(`[${arg}] ${cli.msgs.error_notRecognized}.`)
             if (!inputCtrlKeys.includes(ctrlKey))
                 return // don't process env.args when load() specific keys
