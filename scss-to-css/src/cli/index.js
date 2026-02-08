@@ -52,7 +52,7 @@
         })
 
     // Print/compile files
-    if (cli.config.dryRun) {
+    if (env.debugMode || cli.config.dryRun) {
         if (srcFiles.length) {
             log.info(`${cli.msgs.info_scssFilesToBeCompiled}:`)
             srcFiles.forEach(file => log.dim(file))
