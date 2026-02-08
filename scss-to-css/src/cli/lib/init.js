@@ -16,7 +16,7 @@ module.exports = {
         else {
             cli.docLocale = cli.lang.replace('_', '-').toLowerCase()
             cli.docLocales ??= await language.getDocLocales()
-            if (cli.docLocales.includes(cli.docLocale))
+            if (cli.docLocales?.includes(cli.docLocale))
                 log.debug(cli.urls.cliDocs = `${cli.urls.docs}/${cli.docLocale}#readme`)
         }
 
