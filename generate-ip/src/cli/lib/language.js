@@ -48,7 +48,7 @@ module.exports = {
 
     async getMsgs(langCode = 'en') {
         langCode = module.exports.formatCode(langCode)
-        if (env.msgs && langCode == (cli.lang ||= module.exports.getLanguage())) return env.msgs
+        if (env.msgs && langCode == cli.lang) return env.msgs
         let msgs = data.flatten( // local ones
             require(`../../${ env.devMode ? '../_locales/en/' : 'data/' }messages.json`))
 
