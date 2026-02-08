@@ -94,12 +94,12 @@ module.exports = {
             if (!ctrlKey && cli.msgs) log.errorAndExit(`[${arg}] ${cli.msgs.error_notRecognized}.`)
             if (!inputCtrlKeys.includes(ctrlKey)) return // don't process env.args when load() specific keys
             const ctrl = this.controls[ctrlKey]
-            let ctrlKeyVal = ctrl.type == 'param' ? arg.split('=')[1]?.trim() : true
 
             if (ctrl.mode) // set cli.config.mode to mode name
                 cli.config.mode = ctrlKey.replace(/mode$/i, '').toLowerCase()
 
             else { // init flag/param/cmd cli.config[ctrlKey] val
+                let ctrlKeyVal = ctrl.type == 'param' ? arg.split('=')[1]?.trim() : true
                 const parser = ctrl.parser
                 if (parser) {
                     ctrlKeyVal = parser(ctrlKeyVal)
