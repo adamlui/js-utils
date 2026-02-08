@@ -13,9 +13,9 @@ module.exports = {
         if (cli.lang.startsWith('en'))
             cli.urls.cliDocs ||= `${cli.urls.docs}/#-command-line-usage`
         else {
-            cli.docLocale ||= cli.lang.replace('_', '-').toLowerCase()
+            cli.docLocale = cli.lang.replace('_', '-').toLowerCase()
             cli.docLocales ??= await language.getDocLocales()
-            if (!cli.urls.localDocs && cli.docLocales.includes(cli.docLocale))
+            if (cli.docLocales.includes(cli.docLocale))
                 log.debug(cli.urls.localDocs = `${cli.urls.docs}/${cli.docLocale}#readme`)
         }
 
