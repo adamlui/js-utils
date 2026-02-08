@@ -11,12 +11,12 @@ module.exports = {
             env.debugMode ? language.generateRandomLang({ excludes: ['en'] }) : language.getSysLang() )
         cli.msgs = await language.getMsgs(cli.lang)
         if (cli.lang.startsWith('en'))
-            cli.urls.cliDocs ||= `${cli.urls.docs}/#-command-line-usage`
+            cli.urls.cliDocs = `${cli.urls.docs}/#-command-line-usage`
         else {
             cli.docLocale = cli.lang.replace('_', '-').toLowerCase()
             cli.docLocales ??= await language.getDocLocales()
             if (cli.docLocales.includes(cli.docLocale))
-                log.debug(cli.urls.localDocs = `${cli.urls.docs}/${cli.docLocale}#readme`)
+                log.debug(cli.urls.cliDocs = `${cli.urls.docs}/${cli.docLocale}#readme`)
         }
 
         settings.load() // all control keys

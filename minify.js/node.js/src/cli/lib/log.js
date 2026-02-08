@@ -71,8 +71,8 @@ module.exports = {
         }
         includeSections.forEach(section => // print valid arg elems
             helpSections[section]?.forEach(line => printHelpMsg(line, /header|usage/.test(section) ? 1 : 37)))
-        console.info(
-            `\n${cli.msgs.info_moreHelp}, ${cli.msgs.info_visit}: ${this.colors.bw}${cli.urls.docs}${this.colors.nc}`)
+        console.info(`\n${cli.msgs.info_moreHelp}, ${
+            cli.msgs.info_visit}: ${this.colors.bw}${cli.urls.cliDocs}${this.colors.nc}`)
 
         function printHelpMsg(msg, indent) { // wrap msg + indent 2nd+ lines
             const terminalWidth = process.stdout.columns || 80,
