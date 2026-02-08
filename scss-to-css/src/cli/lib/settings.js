@@ -90,9 +90,9 @@ module.exports = {
                 if (!fs.existsSync(cli.configPath))
                     log.configURLandExit(`${cli.msgs.error_configFileNotFound}:`, cli.configPath)
 
-            } else // auto-discover .config.[cm]?js file
-                for (const ext of ['mjs', 'cjs', 'js']) {
-                    const autoPath = path.resolve(process.cwd(), this.configFilename.replace(/\.[^.]+$/, `.${ext}`))
+            } else // auto-discover .config.[mc]?js file
+                for (const configExt of ['.mjs', '.cjs', '.js']) {
+                    const autoPath = path.resolve(process.cwd(), this.configFilename.replace(/\.[^.]+$/, configExt))
                     if (fs.existsSync(autoPath)) { cli.configPath = autoPath ; break }
                 }
 
