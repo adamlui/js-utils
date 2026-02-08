@@ -89,7 +89,6 @@ module.exports = {
             const ctrlKey = Object.keys(this.controls).find(key => this.controls[key]?.regex?.test(arg))
             if (!ctrlKey && cli.msgs) log.errorAndExit(`[${arg}] ${cli.msgs.error_notRecognized}.`)
             if (!inputCtrlKeys.includes(ctrlKey)) return // don't process env.args when load() specific keys
-
             const ctrl = this.controls[ctrlKey]
             let ctrlKeyVal = ctrl.type == 'param' ? arg.split('=')[1]?.trim() : true
 
