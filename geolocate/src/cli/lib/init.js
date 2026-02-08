@@ -1,6 +1,6 @@
 module.exports = async function initCLI() {
-    const language = require(`./language${ env.devMode ? '' : '.min' }.js`),
-          settings = require(`./settings${ env.devMode ? '' : '.min' }.js`)
+    const language = require(`./language${env.modExt}`),
+          settings = require(`./settings${env.modExt}`)
 
     Object.assign(globalThis.cli ??= {}, require(`../../${ env.devMode ? '../' : 'data/' }package-data.json`))
     cli.lang = settings.load('uiLang') || (

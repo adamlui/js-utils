@@ -8,15 +8,16 @@
         devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname)
     }
     env.debugMode = env.args.some(arg => /^--?debug(?:-?mode)?$/.test(arg))
+    env.modExt = `${ env.devMode ? '' : '.min' }.js`
 
     // Import LIBS
-    const compile = require(`./lib/compile${ env.devMode ? '' : '.min' }.js`),
-        { findJS } = require(`../minify${ env.devMode ? '' : '.min' }.js`),
+    const compile = require(`./lib/compile${env.modExt}`),
+        { findJS } = require(`../minify${env.modExt}`),
           fs = require('fs'),
-          initCLI = require(`./lib/init${ env.devMode ? '' : '.min' }.js`),
-          log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
+          initCLI = require(`./lib/init${env.modExt}`),
+          log = require(`./lib/log${env.modExt}`),
           path = require('path'),
-          settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
+          settings = require(`./lib/settings${env.modExt}`)
 
     await initCLI()
 

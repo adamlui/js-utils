@@ -1,5 +1,5 @@
-const data = require(`./data${ env.devMode ? '' : '.min' }.js`),
-      log = require(`./log${ env.devMode ? '' : '.min' }.js`)
+const data = require(`./data${env.modExt}`),
+      log = require(`./log${env.modExt}`)
 
 module.exports = {
 
@@ -47,7 +47,7 @@ module.exports = {
     },
 
     async getDocLocales() {
-        cli.version ??= require(`./pkg${ env.devMode ? '' : '.min' }.js`).getVer('local')
+        cli.version ??= require(`./pkg${env.modExt}`).getVer('local')
         const verTag = cli.version ? `node-v${cli.version}` : 'latest',
               jsdURL = `${cli.urls.jsdelivr}@${verTag}/node.js/docs/`,
               locales = []

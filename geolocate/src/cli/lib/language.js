@@ -1,5 +1,5 @@
-const data = require(`./data${ env.devMode ? '' : '.min' }.js`),
-      log = require(`./log${ env.devMode ? '' : '.min' }.js`)
+const data = require(`./data${env.modExt}`),
+      log = require(`./log${env.modExt}`)
 
 module.exports = {
 

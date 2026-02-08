@@ -108,7 +108,7 @@ module.exports = {
     },
 
     version() {
-        const { getVer } = require(`./pkg${ env.devMode ? '' : '.min' }.js`)
+        const { getVer } = require(`./pkg${env.modExt}`)
         this.info(cli.name)
         this.data(`${
             cli.msgs.prefix_globalVer}: ${ getVer('global') || 'none' }\n${

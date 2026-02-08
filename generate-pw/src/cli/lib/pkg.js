@@ -1,4 +1,4 @@
-const log = require(`./log${ env.devMode ? '' : '.min' }.js`)
+const log = require(`./log${env.modExt}`)
 
 module.exports = {
     getVer(type = 'any') { // or <'global'|'local'>

@@ -1,5 +1,5 @@
 const fs = require('fs'),
-      log = require(`./log${ env.devMode ? '' : '.min' }.js`),
+      log = require(`./log${env.modExt}`),
       path = require('path')
 
 ;(globalThis.cli ??= {}).config = {}
@@ -25,8 +25,8 @@ module.exports = {
             fs.copyFileSync(paths.src, paths.target) // use found template
 
         else { // use jsDelivr copy
-            cli.version ??= require(`./pkg${ env.devMode ? '' : '.min' }.js`).getVer('local')
-            const data = require(`./data${ env.devMode ? '' : '.min' }.js`),
+            cli.version ??= require(`./pkg${env.modExt}`).getVer('local')
+            const data = require(`./data${env.modExt}`),
                   pkgName = cli.name.split('/')[1],
                   verTag = cli.version ? `${pkgName}-${cli.version}` : 'latest',
                   jsdURL = `${cli.urls.jsdelivr}@${verTag}/${pkgName}/${filename}`

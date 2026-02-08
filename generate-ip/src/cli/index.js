@@ -8,13 +8,14 @@
         devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname)
     }
     env.debugMode = env.args.some(arg => /^--?debug(?:-?mode)?$/.test(arg))
+    env.modExt = `${ env.devMode ? '' : '.min' }.js`
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
-          initCLI = require(`./lib/init${ env.devMode ? '' : '.min' }.js`),
-        { ipv4, ipv6, mac } = require(`../generate-ip${ env.devMode ? '' : '.min' }.js`),
-          log = require(`./lib/log${ env.devMode ? '' : '.min' }.js`),
-          settings = require(`./lib/settings${ env.devMode ? '' : '.min' }.js`)
+          initCLI = require(`./lib/init${env.modExt}`),
+        { ipv4, ipv6, mac } = require(`../generate-ip${env.modExt}`),
+          log = require(`./lib/log${env.modExt}`),
+          settings = require(`./lib/settings${env.modExt}`)
 
     await initCLI()
 
