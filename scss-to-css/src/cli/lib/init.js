@@ -2,7 +2,8 @@ const log = require(`./log${env.modExt}`),
       settings = require(`./settings${env.modExt}`)
 
 module.exports = {
-    async initCLI() {
+
+    async cli() {
         const language = require(`./language${env.modExt}`)
 
         Object.assign(globalThis.cli ??= {}, require(`../../${ env.devMode ? '../' : 'data/' }package-data.json`))

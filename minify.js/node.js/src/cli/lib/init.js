@@ -2,7 +2,8 @@ const log = require(`./log${env.modExt}`),
       settings = require(`./settings${env.modExt}`)
 
 module.exports = {
-    async initCLI() {
+
+    async cli() {
         const language = require(`./language${env.modExt}`)
 
         Object.assign(globalThis.cli ??= {}, require(`../../${ env.devMode ? '../' : 'data/' }package-data.json`))
@@ -33,8 +34,8 @@ module.exports = {
         else { // use jsDelivr copy
             cli.version ??= require(`./pkg${env.modExt}`).getVer('local')
             const data = require(`./data${env.modExt}`),
-                    verTag = cli.version ? `node-v${cli.version}` : 'latest',
-                    jsdURL = `${cli.urls.jsdelivr}@${verTag}/node.js/${filename}`
+                  verTag = cli.version ? `node-v${cli.version}` : 'latest',
+                  jsdURL = `${cli.urls.jsdelivr}@${verTag}/node.js/${filename}`
 
             log.data(`${cli.msgs.info_fetchingRemoteConfigFrom} ${jsdURL}...`)
             try {
