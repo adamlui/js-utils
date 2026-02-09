@@ -1,4 +1,5 @@
 module.exports = {
+
     pkgVerURL(version) {
         version ||= cli.version ||= require(`./pkg${env.modExt}`).getVer('local') || 'none'
         const pkgName = cli.name.split('/')[1],
