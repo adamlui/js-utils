@@ -34,7 +34,7 @@ module.exports = {
         else { // use jsDelivr copy
             cli.version ||= require(`./pkg${env.modExt}`).getVer('local') || 'none'
             const data = require(`./data${env.modExt}`),
-                  verTag = cli.version != 'none' ? `node-v${cli.version}` : 'latest',
+                  verTag = cli.version == 'none' ? 'latest' : `node-v${cli.version}`,
                   jsdURL = `${cli.urls.jsdelivr}@${verTag}/node.js/${filename}`
 
             log.data(`${cli.msgs.info_fetchingRemoteConfigFrom} ${jsdURL}...`)

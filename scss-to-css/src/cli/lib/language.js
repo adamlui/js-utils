@@ -48,7 +48,7 @@ module.exports = {
 
     async getDocLocales() {
         cli.version ||= require(`./pkg${env.modExt}`).getVer('local') || 'none'
-        const verTag = cli.version != 'none' ? `v${cli.version}` : 'latest',
+        const verTag = cli.version == 'none' ? 'latest' : `v${cli.version}`,
               jsdURL = `${cli.urls.jsdelivr}@${verTag}/docs/`,
               locales = []
         try {

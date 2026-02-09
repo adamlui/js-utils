@@ -29,7 +29,7 @@ module.exports = {
             cli.version ||= require(`./pkg${env.modExt}`).getVer('local') || 'none'
             const data = require(`./data${env.modExt}`),
                   pkgName = cli.name.split('/')[1],
-                  verTag = cli.version != 'none' ? `${pkgName}-${cli.version}` : 'latest',
+                  verTag = cli.version == 'none' ? 'latest' : `${pkgName}-${cli.version}`,
                   jsdURL = `${cli.urls.jsdelivr}@${verTag}/${pkgName}/${filename}`
 
             log.data(`${cli.msgs.info_fetchingRemoteConfigFrom} ${jsdURL}...`)
