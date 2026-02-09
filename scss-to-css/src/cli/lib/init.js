@@ -32,7 +32,7 @@ module.exports = {
             fs.copyFileSync(paths.src, paths.target) // use found template
 
         else { // use jsDelivr copy
-            cli.version ??= require(`./pkg${env.modExt}`).getVer('local')
+            cli.version ||= require(`./pkg${env.modExt}`).getVer('local') || 'none'
             const data = require(`./data${env.modExt}`),
                   verTag = cli.version ? `v${cli.version}` : 'latest',
                   jsdURL = `${cli.urls.jsdelivr}@${verTag}/${filename}`

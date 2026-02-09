@@ -26,7 +26,7 @@ module.exports = {
             fs.copyFileSync(paths.src, paths.target) // use found template
 
         else { // use jsDelivr copy
-            cli.version ??= require(`./pkg${env.modExt}`).getVer('local')
+            cli.version ||= require(`./pkg${env.modExt}`).getVer('local') || 'none'
             const data = require(`./data${env.modExt}`),
                   pkgName = cli.name.split('/')[1],
                   verTag = cli.version ? `${pkgName}-${cli.version}` : 'latest',
