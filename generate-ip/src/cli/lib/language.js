@@ -49,11 +49,12 @@ module.exports = {
     async getMsgs(langCode = 'en') {
         langCode = module.exports.formatCode(langCode)
         if (env.msgs && langCode == cli.lang) return env.msgs
+
         let msgs = data.flatten( // local ones
             require(`../../${ env.devMode ? '../_locales/en/' : 'data/' }messages.json`))
 
         if (!langCode.startsWith('en')) { // fetch non-English msgs from jsDelivr
-            const msgHostURL = `${cli.urls.jsdelivr}@${cli.commitHashes.locales}/${cli.name}/_locales/`
+            const msgHostURL = `${require(`./jsdelivr${env.modExt}`).commitURL(cli.commitHashes.locales)}/_locales/`
             let msgHref = `${msgHostURL}${langCode}/messages.json`, msgFetchesTried = 0
             while (msgFetchesTried < 3)
                 try { // fetch remote msgs

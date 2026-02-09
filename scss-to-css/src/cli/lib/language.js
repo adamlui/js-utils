@@ -48,8 +48,7 @@ module.exports = {
 
     async getDocLocales() {
         cli.version ||= require(`./pkg${env.modExt}`).getVer('local') || 'none'
-        const url = require(`./url${env.modExt}`),
-              jsdURL = `${cli.urls.jsdelivr}@${url.createJSDverTag()}/docs/`,
+        const jsdURL = `${require(`./jsdelivr${env.modExt}`).pkgVerURL()}/docs/`,
               locales = []
         try {
             const respText = await (await data.fetch(jsdURL)).text(),
@@ -64,11 +63,12 @@ module.exports = {
     async getMsgs(langCode = 'en') {
         langCode = module.exports.formatCode(langCode)
         if (env.msgs && langCode == cli.lang) return env.msgs
+
         let msgs = data.flatten( // local ones
             require(`../../${ env.devMode ? '../_locales/en/' : 'data/' }messages.json`))
 
         if (!langCode.startsWith('en')) { // fetch non-English msgs from jsDelivr
-            const msgHostURL = `${cli.urls.jsdelivr}@${cli.commitHashes.locales}/_locales/`
+            const msgHostURL = `${require(`./jsdelivr${env.modExt}`).commitURL(cli.commitHashes.locales)}/_locales/`
             let msgHref = `${msgHostURL}${langCode}/messages.json`, msgFetchesTried = 0
             while (msgFetchesTried < 3)
                 try { // fetch remote msgs
