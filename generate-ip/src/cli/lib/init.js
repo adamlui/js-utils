@@ -1,19 +1,18 @@
-const dataPath = `../../${ env.devMode ? '../' : 'data/' }`,
+const language = require(`./language${env.modExt}`),
       log = require(`./log${env.modExt}`),
       settings = require(`./settings${env.modExt}`)
+
+const dataPath = `../../${ env.devMode ? '../' : 'data/' }`
 
 module.exports = {
 
     async cli() {
-        const language = require(`./language${env.modExt}`)
-
         Object.assign(globalThis.cli ??= {}, require(`${dataPath}package-data.json`))
         cli.lang = settings.load('uiLang') || (
             env.debugMode ? language.generateRandomLang({ excludes: ['en'] }) : language.getSysLang() )
         cli.msgs = await language.getMsgs(cli.lang)
         cli.urls.cliDocs ||= `${cli.urls.docs}/#-command-line-usage`
-
-        settings.load() // all control keys
+        settings.load() // all keys to cli.config
     },
 
     async configFile(filename = settings.configFilename) {
