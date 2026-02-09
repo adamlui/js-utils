@@ -5,6 +5,5 @@ module.exports = {
         return `${cli.urls.jsdelivr}@${verTag}/${cli.name}`
     },
 
-    commitURL(hash = 'latest') {
-        return `${cli.urls.jsdelivr}@${hash}/${cli.name}` }
+    commitURL(hash = 'latest') { return `${cli.urls.jsdelivr}@${hash}/${cli.name}` }
 }
