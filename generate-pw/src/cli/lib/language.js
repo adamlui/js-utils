@@ -9,8 +9,8 @@ module.exports = {
 
     async getDocLocales() {
         cli.version ||= require(`./pkg${env.modExt}`).getVer('local') || 'none'
-        const verTag = cli.version == 'none' ? 'latest' : `${cli.name}-${cli.version}`,
-              jsdURL = `${cli.urls.jsdelivr}@${verTag}/${cli.name}/docs/`,
+        const url = require(`./url${env.modExt}`),
+              jsdURL = `${cli.urls.jsdelivr}@${url.createJSDverTag()}/${cli.name}/docs/`,
               locales = []
         try {
             const respText = await (await data.fetch(jsdURL)).text(),
