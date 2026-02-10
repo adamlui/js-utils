@@ -24,9 +24,11 @@
     else if (cli.config.version) return log.version()
 
     // Log/copy random IP(s)
-    const genOptions = { qty: cli.config.qty, verbose: !cli.config.quietMode },
-          ipResult = { ipv4, ipv6, mac }[cli.config.mode || 'ipv4'].generate(genOptions)
+    const genOptions = {
+        qty: cli.config.qty, verbose: !cli.config.quietMode,
+        sequential: cli.config.sequential, network: cli.config.network
+    }
+    clipboardy.writeSync([].concat({ ipv4, ipv6, mac }[cli.config.mode || 'ipv4'].generate(genOptions)).join('\n'))
     log.ifNotQuiet(`\n${cli.msgs.info_copyingToClip}...`)
-    clipboardy.writeSync([].concat(ipResult).join('\n'))
 
 })()

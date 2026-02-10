@@ -40,12 +40,14 @@ module.exports = {
                 `\n${this.colors.bw}o ${cli.msgs.helpSection_params}:${this.colors.nc}`,
                 ` --qty=n                     ${cli.msgs.optionDesc_qty}.`,
                 ` --ui-lang="code"            ${cli.msgs.optionDesc_uiLang}.`,
-                ` --config="path/to/file"     ${cli.msgs.optionDesc_config}.`
+                ` --config="path/to/file"     ${cli.msgs.optionDesc_config}.`,
+                ` --network="address"         ${cli.msgs.optionDesc_network}.`
             ],
             flags: [
                 `\n${this.colors.bw}o ${cli.msgs.helpSection_flags}:${this.colors.nc}`,
                 ` -6, --ipv6                  ${cli.msgs.optionDesc_ipv6}.`,
                 ` -m, --mac                   ${cli.msgs.optionDesc_mac}.`,
+                ` -s, --sequential            ${cli.msgs.optionDesc_sequential}.`,
                 ` -q, --quiet                 ${cli.msgs.optionDesc_quiet}.`
             ],
             cmds: [

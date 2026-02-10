@@ -20,8 +20,10 @@ const ipv4 = {
               exampleCall = 'ipv4.generate({ verbose: false, qty: 3 })'
 
         const defaultOptions = {
-            verbose: true, // enable logging
-            qty: 1         // number of IP addresses to generate
+            verbose: true,     // show logging in console/terminal
+            qty: 1,            // number of IP addresses to generate
+            sequential: false, // generate addresses in sequence
+            network: null      // starting network address (required for sequential mode)
         }
 
         log.prefix = 'ipv4.generate()'
@@ -33,13 +35,25 @@ const ipv4 = {
         // Generate IPv4 address(es)
         if (options.verbose) log.info(`Generating IPv4 address${ options.qty > 1 ? 'es' : '' }...`)
         const ips = []
-        if (options.qty > 1) // generate array of [qty] IP strings
+        if (options.sequential) { // generate IPS incrementing from options.network
+            if (!options.network || !this.validate(options.network))
+                log.errorHelpURLandThrow({ helpURL: docURL,
+                    errMsg: 'options.network must be a valid IP when options.sequential is `true`.' })
+            else if (!options.qty || options.qty <= 1)
+                log.errorHelpURLandThrow({ helpURL: docURL,
+                    errMsg: 'options.qty must be > 1 when options.sequential is `true`.' })
+            const [startA, startB, startC, startD] = options.network.split('.').map(Number)
             for (let i = 0 ; i < options.qty ; i++)
-                ips.push(this.generate({ ...options, qty: 1, verbose: false }))
-        else { // generate single IP
-            const segments = []
-            for (let i = 0 ; i < 4 ; i++) segments.push(random.int(0, 256))
-            ips.push(segments.join('.'))
+                ips.push(`${startA}.${startB}.${startC}.${startD +i}`)
+        } else { // generate random IPs
+            if (options.qty > 1) // generate array of [qty] IP strings
+                for (let i = 0 ; i < options.qty ; i++)
+                    ips.push(this.generate({ ...options, qty: 1, verbose: false }))
+            else { // generate single IP
+                const segments = []
+                for (let i = 0 ; i < 4 ; i++) segments.push(random.int(0, 256))
+                ips.push(segments.join('.'))
+            }
         }
         const ipResult = options.qty > 1 ? ips : ips[0]
 
@@ -95,10 +109,12 @@ const ipv6 = {
               exampleCall = 'ipv6.generate({ leadingZeros: true, qty: 5 })'
 
         const defaultOptions = {
-            verbose: true,       // enable logging
+            verbose: true,       // show logging in console/terminal
             qty: 1,              // number of IP addresses to generate
             leadingZeros: false, // include leading zeros in hex pieces
-            doubleColon: true    // replace series of zeros w/ '::'
+            doubleColon: true,   // replace series of zeros w/ '::'
+            sequential: false,   // generate addresses in sequence
+            network: null        // starting network address (required for sequential mode)
         }
 
         log.prefix = 'ipv6.generate()'
@@ -111,14 +127,29 @@ const ipv6 = {
         if (options.verbose)
             log.info(`Generating IPv6 address${ options.qty > 1 ? 'es' : '' }...`)
         const ips = []
-        if (options.qty > 1) // generate array of [qty] IP strings
-            for (let i = 0 ; i < options.qty ; i++)
-                ips.push(this.generate({ ...options, qty: 1, verbose: false }))
-        else { // generate single IP
-            const pieces = [], { qty, ...nonQtyOptions } = options // eslint-disable-line no-unused-vars
-            for (let i = 0 ; i < 8 ; i++) // generate 8x 16-bit hex pieces
-                pieces.push(random.hex(4))
-            ips.push(this.format(pieces.join(':'), { ...nonQtyOptions, verbose: false }))
+        if (options.sequential) { // generate IPs incrementing from options.network
+            if (!options.network || !this.validate(options.network))
+                log.errorHelpURLandThrow({ helpURL: docURL,
+                    errMsg: 'options.network must be a valid IP when options.sequential is `true`.' })
+            else if (!options.qty || options.qty <= 1)
+                log.errorHelpURLandThrow({ helpURL: docURL,
+                    errMsg: 'options.qty must be > 1 when options.sequential is `true`.' })
+            const segments = options.network.split(':').map(segment => parseInt(segment, 16) || 0)
+            for (let i = 0 ; i < options.qty ; i++) {
+                const current = segments[7] ; segments[7] = current +i
+                if (segments[7] > current +1) // gap exists
+                    segments[7] = current +1 // correct it
+                ips.push(segments.map(s => s.toString(16).padStart(4, '0')).join(':'))
+            }
+        } else { // generate random IPs
+            if (options.qty > 1) // generate array of [qty] IP strings
+                for (let i = 0 ; i < options.qty ; i++)
+                    ips.push(this.generate({ ...options, qty: 1, verbose: false }))
+            else { // generate single IP
+                const pieces = [], { qty, sequential, network, ...usefulOptions } = options // eslint-disable-line no-unused-vars
+                for (let i = 0 ; i < 8 ; i++) pieces.push(random.hex(4))
+                ips.push(this.format(pieces.join(':'), { ...usefulOptions, verbose: false }))
+            }
         }
         const ipResult = options.qty > 1 ? ips : ips[0]
 
@@ -136,7 +167,7 @@ const ipv6 = {
               exampleCall = `ipv6.format('0d::ffff:192.1.56.10/96', { leadingZeros: true, doubleColon: false })`
 
         const defaultOptions = {
-            verbose: true,       // enable logging
+            verbose: true,       // show logging in console/terminal
             leadingZeros: false, // include leading zeros in hex pieces
             doubleColon: true    // replace series of zeros w/ '::'
         }
@@ -197,7 +228,7 @@ const ipv6 = {
 
         const docURL = 'https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#ipv6validateaddress-options',
               exampleCall = `ipv6.validate('0:0:0:0:0:ffff:192.1.56.10/96', { verbose: false })`,
-              defaultOptions = { verbose: true } // enable logging
+              defaultOptions = { verbose: true } // show logging in console/terminal
 
         log.prefix = 'ipv6.validate()'
 
@@ -243,8 +274,10 @@ const mac = {
               exampleCall = 'mac.generate({ verbose: false, qty: 2 })'
 
         const defaultOptions = {
-            verbose: true, // enable logging
-            qty: 1         // number of MAC addresses to generate
+            verbose: true,     // show logging in console/terminal
+            qty: 1,            // number of MAC addresses to generate
+            sequential: false, // generate addresses in sequence
+            network: null      // starting network address (required for sequential mode)
         }
 
         log.prefix = 'mac.generate()'
@@ -256,15 +289,31 @@ const mac = {
         // Generate MAC address
         if (options.verbose) log.info(`Generating MAC address${ options.qty > 1 ? 'es' : '' }...`)
         const macAddresses = []
-        if (options.qty > 1) // generate array of [qty] MAC address strings
-            for (let i = 0 ; i < options.qty ; i++)
-                macAddresses.push(this.generate({ ...options, qty: 1, verbose: false }))
-        else { // generate single MAC address
-            const [prefix, suffix] = Array.from({ length: 2 }, () => {
-                const parts = [] ; for (let i = 0 ; i < 3 ; i++) parts.push(random.hex(2))
-                return parts.join(':')
-            })
-            macAddresses.push(`${prefix}:${suffix}`)
+        if (options.sequential) { // generate MACs incrementing from options.network
+            if (!options.network || !this.validate(options.network))
+                log.errorHelpURLandThrow({ helpURL: docURL,
+                    errMsg: 'options.network must be a valid MAC when options.sequential is `true`.' })
+            else if (!options.qty || options.qty <= 1)
+                log.errorHelpURLandThrow({ helpURL: docURL,
+                    errMsg: 'options.qty must be > 1 when options.sequential is `true`.' })
+            const networkParts = options.network.split(':').map(part => parseInt(part, 16) || 0)
+            for (let i = 0; i < options.qty; i++) {
+                const current = networkParts[5] ; networkParts[5] = current + i
+                if (networkParts[5] > current +1) // gap exists
+                    networkParts[5] = current +1 // correct it
+                macAddresses.push(networkParts.map(part => part.toString(16).padStart(2, '0')).join(':'))
+            }
+        } else { // generate random MACs
+            if (options.qty > 1) // generate array of [qty] MAC address strings
+                for (let i = 0 ; i < options.qty ; i++)
+                    macAddresses.push(this.generate({ ...options, qty: 1, verbose: false }))
+            else { // generate single MAC address
+                const [prefix, suffix] = Array.from({ length: 2 }, () => {
+                    const parts = [] ; for (let i = 0 ; i < 3 ; i++) parts.push(random.hex(2))
+                    return parts.join(':')
+                })
+                macAddresses.push(`${prefix}:${suffix}`)
+            }
         }
         const macResult = options.qty > 1 ? macAddresses : macAddresses[0]
 
@@ -361,6 +410,7 @@ const log = {
     prefix: api.name,
 
     error(...args) { console.error(`${this.prefix} » ERROR:`, ...args) },
+    errorHelpURLandThrow({ errMsg, helpURL }) { this.error(errMsg) ; this.helpURL(helpURL) ; throw new Error(errMsg) },
     helpURL(url = api.urls?.docs) { this.info('For more help, please visit', url) },
     info(...args) { console.info(`${this.prefix} »`, ...args) },
 

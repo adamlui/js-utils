@@ -151,10 +151,12 @@ ipv4.generate() » 194.84.176.172, 192.186.53.120, 50.191.111.87
 
 Available options:
 
-Name        | Type    | Description                         | Default Value
-------------|---------|-------------------------------------|---------------
-`verbose`   | Boolean | Show logging in console/terminal.   | `true`
-`qty`       | Integer | Number of IP addresses to generate. | `1`
+Name         | Type    | Description                                              | Default Value
+-------------|---------|----------------------------------------------------------|---------------
+`verbose`    | Boolean | Show logging in console/terminal.                        | `true`
+`qty`        | Integer | Number of IP addresses to generate.                      | `1`
+`sequential` | Boolean | Generate addresses in sequence.                          | `false`
+`network`    | String  | starting network address (required for sequential mode). | `null`
 
 #
 
@@ -220,12 +222,14 @@ ipv6.generate() » 8218:19b9:7709:4282:65e1:7ee:319e:32ef, e940:754d:ae46:ae18:9
 
 Available options:
 
-Name           | Type    | Description                          | Default Value
----------------|---------|--------------------------------------|---------------
-`verbose`      | Boolean | Show logging in console/terminal.    | `true`
-`qty`          | Integer | Number of IP addresses to generate.  | `1`
-`leadingZeros` | Boolean | Include leading zeros in hex pieces. | `false`
-`doubleColon`  | Boolean | Replace series of zeros w/ `::`      | `true`
+Name           | Type    | Description                                              | Default Value
+---------------|---------|----------------------------------------------------------|---------------
+`verbose`      | Boolean | Show logging in console/terminal.                        | `true`
+`qty`          | Integer | Number of IP addresses to generate.                      | `1`
+`leadingZeros` | Boolean | Include leading zeros in hex pieces.                     | `false`
+`doubleColon`  | Boolean | Replace series of zeros w/ `::`                          | `true`
+`sequential`   | Boolean | Generate addresses in sequence.                          | `false`
+`network`      | String  | Starting network address (required for sequential mode). | `null`
 
 #
 
@@ -315,10 +319,12 @@ mac.generate() » 1d:3a:af:21:b1:8c, af:fb:6f:b6:1b:8a
 
 Available options:
 
-Name           | Type    | Description                          | Default Value
----------------|---------|--------------------------------------|---------------
-`verbose`      | Boolean | Show logging in console/terminal.    | `true`
-`qty`          | Integer | Number of IP addresses to generate.  | `1`
+Name           | Type    | Description                                              | Default Value
+---------------|---------|----------------------------------------------------------|---------------
+`verbose`      | Boolean | Show logging in console/terminal.                        | `true`
+`qty`          | Integer | Number of IP addresses to generate.                      | `1`
+`sequential`   | Boolean | Generate addresses in sequence.                          | `false`
+`network`      | String  | Starting network address (required for sequential mode). | `null`
 
 #
 
@@ -371,10 +377,12 @@ Parameter options:
  --qty=n                     Generate n IP address(es).
  --ui-lang="code"            ISO 639-1 code of language to display UI in.
  --config="path/to/file"     Load custom config file.
+ --network="address"         Starting network address (required for sequential mode).
 
 Boolean options:
  -6, --ipv6                  Generate IPv6 address.
  -m, --mac                   Generate MAC address.
+ -s, --sequential            Generate addresses in sequence.
  -q, --quiet                 Suppress all logging except errors.
 
 Commands:

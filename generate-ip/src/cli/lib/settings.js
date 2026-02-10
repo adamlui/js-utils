@@ -9,11 +9,13 @@ module.exports = {
 
     controls: {
         qty: { type: 'param', valType: 'positiveInt', defaultVal: 1, regex: /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
+        network: { type: 'param', regex: /^--network(?:=.*|$)/ },
         uiLang: { type: 'param', valType: 'langCode', regex: /^--?ui-?lang(?:=.*|$)/ },
         config: { type: 'param', valType: 'filepath', regex: /^--?config(?:=.*|$)/ },
         ipv6mode: { type: 'flag', mode: true, regex: /^--?(?:ip)?v?6(?:-?mode)?$/ },
         macMode: { type: 'flag', mode: true, regex: /^--?m(?:ac)?(?:-?mode)?$/ },
         quietMode: { type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
+        sequential: { type: 'flag', regex: /^--(?:s|equen(?:tial|ce))$/ },
         init: { type: 'cmd', regex: /^-{0,2}i(?:nit)?$/ },
         help: { type: 'cmd', regex: /^--?h(?:elp)?$/ },
         version: { type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
@@ -102,7 +104,16 @@ module.exports = {
                     if (configVal && !language.validateLangCode(configVal))
                         log.errorAndExit(`[${key}] ${cli.msgs.error_invalidLangCode}: ${configVal}`)
                 }
-            })[ctrl.valType]()
+            })[ctrl.valType]?.()
+
+            if (cli.config.sequential) {
+                if (!cli.config.network)
+                    log.errorAndExit(
+                        `--network ${cli.msgs.error_isRequired} ${cli.msgs.error_whenPassing} --sequential.`)
+                else if (cli.config.qty <= 1)
+                    log.errorAndExit(
+                        `--qty ${cli.msgs.error_mustBeGreaterThanOne} ${cli.msgs.error_whenPassing} --sequential.`)
+            }
         }
     }
 }
