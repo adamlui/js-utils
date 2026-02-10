@@ -45,19 +45,19 @@ function generatePassword(options = {}) {
           exampleCall = 'generatePassword({ verbose: false, numbers: true })'
 
     const defaultOptions = {
-        verbose: true,              // enable logging
-        length: 12,                 // length of password
-        qty: 1,                     // number of passwords to generate
-        strength: '',               // <'weak'|'basic'|'strong'> apply strength preset
-        charset: '',                // characters to include
-        exclude: '',                // characters to exclude
-        numbers: true,              // include numberChars
-        symbols: true,              // include symbolChars
-        lowercase: true,            // include lowercase letters
-        uppercase: true,            // include uppercase letters
-        similarChars: false,        // include similar chars (e.g. o,0,O,i,l,1,|)
-        strict: true,               // require at least one char from each enabled set
-        entropy: false              // calculate/log estimated entropy (bits)
+        verbose: true,       // enable logging
+        length: 12,          // length of password
+        qty: 1,              // number of passwords to generate
+        strength: '',        // <'weak'|'basic'|'strong'> apply strength preset
+        charset: '',         // characters to include
+        exclude: '',         // characters to exclude
+        numbers: true,       // include numberChars
+        symbols: true,       // include symbolChars
+        lowercase: true,     // include lowercase letters
+        uppercase: true,     // include uppercase letters
+        similarChars: false, // include similar chars (e.g. o,0,O,i,l,1,|)
+        strict: true,        // require at least one char from each enabled set
+        entropy: false       // calculate/log estimated entropy (bits)
     }
 
     log.prefix = 'generatePassword()'
@@ -142,18 +142,18 @@ function generatePasswords(qty, options = {}) {
           exampleCall = 'generatePasswords(3, { verbose: false, symbols: true })'
 
     const defaultOptions = {
-        verbose: true,              // enable logging
-        length: 12,                 // length of password
-        strength: '',               // <'weak'|'basic'|'strong'> apply strength preset
-        charset: '',                // characters to include
-        exclude: '',                // characters to exclude
-        numbers: true,              // include numberChars
-        symbols: true,              // include symbolChars
-        lowercase: true,            // include lowercase letters
-        uppercase: true,            // include uppercase letters
-        similarChars: false,        // include similar chars (e.g. o,0,O,i,l,1,|)
-        strict: true,               // require at least one char from each enabled set
-        entropy: false              // calculate/log estimated entropy (bits)
+        verbose: true,       // enable logging
+        length: 12,          // length of password
+        strength: '',        // <'weak'|'basic'|'strong'> apply strength preset
+        charset: '',         // characters to include
+        exclude: '',         // characters to exclude
+        numbers: true,       // include numberChars
+        symbols: true,       // include symbolChars
+        lowercase: true,     // include lowercase letters
+        uppercase: true,     // include uppercase letters
+        similarChars: false, // include similar chars (e.g. o,0,O,i,l,1,|)
+        strict: true,        // require at least one char from each enabled set
+        entropy: false       // calculate/log estimated entropy (bits)
     }
 
     log.prefix = 'generatePasswords()'
