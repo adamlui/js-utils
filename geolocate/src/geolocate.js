@@ -48,7 +48,7 @@ async function geolocate(ips, options = {}) {
             log.info('Success!', 'Check returned array.')
         return geoData
     } catch (err) {
-            log.error(err.message) }
+        log.error(err.message) }
 }
 
 function fetchData(url) {
