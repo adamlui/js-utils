@@ -409,8 +409,8 @@ const random = {
 const log = {
     prefix: api.name,
 
-    error(...args) { console.error(`${this.prefix} » ERROR:`, ...args) },
     errHelpURLandThrow({ errMsg, helpURL }) { this.error(errMsg) ; this.helpURL(helpURL) ; throw new Error(errMsg) },
+    error(...args) { console.error(`${this.prefix} » ERROR:`, ...args) },
     helpURL(url = api.urls?.docs) { this.info('For more help, please visit', url) },
     info(...args) { console.info(`${this.prefix} »`, ...args) },
 
