@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Lỗi khi đọc phiên bản gói cục bộ" },
   "error_notRecognized": { "message": "không được công nhận" },
   "error_nonPositiveNum": { "message": "đối số chỉ có thể là > 0" },
+  "error_invalidFilepath": { "message": "phải là đường dẫn tệp hiện có hợp lệ. Đã nhận" },
+  "error_invalidLangCode": { "message": "là mã ngôn ngữ không hợp lệ" },
   "error_invalidURL": { "message": "URL không hợp lệ" },
   "error_invalidConfigFile": { "message": "Tệp cấu hình phải xuất một đối tượng" },
   "error_configFileNotFound": { "message": "Không tìm thấy tệp cấu hình" },

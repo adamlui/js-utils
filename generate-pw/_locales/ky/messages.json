@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Жергиликтүү топтомдун нускасын окуу катасы" },
   "error_notRecognized": { "message": "табылган жок" },
   "error_nonPositiveNum": { "message": "аргумент гана болушу мүмкүн > 0" },
+  "error_invalidFilepath": { "message": "жарактуу бар файл жолдору болушу керек. Get" },
+  "error_invalidLangCode": { "message": "жараксыз тил коду" },
   "error_invalidURL": { "message": "Туура эмес дарек" },
   "error_invalidConfigFile": { "message": "Файлды конфигурациялоо объектти экспорттошу керек" },
   "error_configFileNotFound": { "message": "Файлды конфигурациялоо табылган жок" },

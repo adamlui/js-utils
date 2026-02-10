@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Version fenestrare pergere pergere" },
   "error_notRecognized": { "message": "nullus homo" },
   "error_nonPositiveNum": { "message": "argument can only be > 0" },
+  "error_invalidFilepath": { "message": "adiquam valida existuntur. Got" },
+  "error_invalidLangCode": { "message": "étiquette maliquam linguae" },
   "error_invalidURL": { "message": "Invalidum URL" },
   "error_invalidConfigFile": { "message": "Forma Configuendi ad export an object" },
   "error_configFileNotFound": { "message": "Tabula Configuendi non est" },

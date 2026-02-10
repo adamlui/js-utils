@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "ဒေသတွင်း အထုပ်ဗားရှင်းကို ဖတ်ရှုရာတွင် ချို့ယွင်းချက်ရှိသည်" },
   "error_notRecognized": { "message": "အသိအမှတ်မပြုပါ" },
   "error_nonPositiveNum": { "message": "0 ကိုသာ အသံုးျပဳႏိုင္ပါသည္ ။" },
+  "error_invalidFilepath": { "message": "မှန်ကန်တဲ့ ရှိပြီးသား ဖိုင်လမ်းကြောင်း ဖြစ်ရပါမယ် ။ ရပါပြီ" },
+  "error_invalidLangCode": { "message": "မမှန်ကန်သော ဘာသာစကားကုဒ် ဖြစ်ပါသည်" },
   "error_invalidURL": { "message": "URL မမှန်ကန်ပါ" },
   "error_invalidConfigFile": { "message": "Config ဖိုင်သည် အရာဝတ္ထုတစ်ခုကို တင်ပို့ရမည်" },
   "error_configFileNotFound": { "message": "Config ဖိုင်ကိုမတွေ့ပါ" },

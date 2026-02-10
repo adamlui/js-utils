@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Żball fil-qari tal-verżjoni tal-pakkett lokali" },
   "error_notRecognized": { "message": "Mhux rikonoxxut" },
   "error_nonPositiveNum": { "message": "l-argument jista' jkun biss > 0" },
+  "error_invalidFilepath": { "message": "trid tkun passaġġ tal-fajl validu eżistenti. Got" },
+  "error_invalidLangCode": { "message": "huwa kodiċi tal-lingwa mhux validu" },
   "error_invalidURL": { "message": "URL mhux tajjeb" },
   "error_invalidConfigFile": { "message": "Il-fajl tal-konfigurazzjoni għandu jesporta oġġett" },
   "error_configFileNotFound": { "message": "Il-fajl tal-konfigurazzjoni ma nstabx" },

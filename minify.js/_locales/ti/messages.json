@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "ናይ ከባቢ ፓኬጅ ቅጅል ምንባብ ጌጋ" },
   "error_notRecognized": { "message": "ኣይተፈልጠን ።" },
   "error_nonPositiveNum": { "message": "እቲ ክርክር > 0 ጥራይ እዩ ክኸውን ዝኽእል" },
+  "error_invalidFilepath": { "message": "ሕጂ ዘሎ ናይ ፋይል መገዲ ክኸውን ኣለዎ ።" },
+  "error_invalidLangCode": { "message": "ዘይሕጋዊ ናይ ቋንቋ ኮድ" },
   "error_invalidURL": { "message": "ዘይቕቡል URL" },
   "error_invalidConfigFile": { "message": "ፋይል ኮንዲግ ንሓደ ነገር ክስደድ ኣለዎ" },
   "error_configFileNotFound": { "message": "ፋይል ኣይተረኽበን" },

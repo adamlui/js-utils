@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "შეცდომა ლოკალური პაკეტის ვერსიის წაკითხვისას მოხდა." },
   "error_notRecognized": { "message": "ფაილის ტიპი ამოუცნობია" },
   "error_nonPositiveNum": { "message": "არგუმენტი შეიძლება იყოს მხოლოდ > 0" },
+  "error_invalidFilepath": { "message": "უნდა იყოს სწორი არსებული ფაილის ბილიკი. მიღებული" },
+  "error_invalidLangCode": { "message": "არასწორი ენის კოდია" },
   "error_invalidURL": { "message": "არასწორი URL" },
   "error_invalidConfigFile": { "message": "კონფიგურაციის ფაილმა უნდა ექსპორტირება მოახდინოს ობიექტზე" },
   "error_configFileNotFound": { "message": "კონფიგურაციის ფაილი ვერ ვიპოვე" },

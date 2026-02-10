@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Mahalliy paket versiyasini o'qishda xatolik yuz berdi" },
   "error_notRecognized": { "message": "aniqlanmadi" },
   "error_nonPositiveNum": { "message": "argument faqat > 0 bo'lishi mumkin" },
+  "error_invalidFilepath": { "message": "mavjud fayl yo'li to'g'ri bo'lishi kerak. Oldi" },
+  "error_invalidLangCode": { "message": "yaroqsiz til kodi" },
   "error_invalidURL": { "message": "KDE qopchiq xizmati" },
   "error_invalidConfigFile": { "message": "Konfiguratsiya fayli obyektni eksport qilishi kerak" },
   "error_configFileNotFound": { "message": "Konfiguratsiya fayli topilmadi" },

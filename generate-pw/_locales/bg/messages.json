@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Грешка при четене на локалната версия на пакета" },
   "error_notRecognized": { "message": "не е разпознато" },
   "error_nonPositiveNum": { "message": "аргументът може да бъде само > 0" },
+  "error_invalidFilepath": { "message": "трябва да е валиден съществуващ файлов път. Получих" },
+  "error_invalidLangCode": { "message": "е невалиден езиков код" },
   "error_invalidURL": { "message": "Невалиден URL" },
   "error_invalidConfigFile": { "message": "Конфигурационният файл трябва да експортира обект" },
   "error_configFileNotFound": { "message": "Файлът за конфигуриране не е намерен" },

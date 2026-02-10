@@ -12,13 +12,13 @@ module.exports = {
             const minifyResult = minify(inputPath, {
                 verbose: false,
                 mangle: !cli.config.noMangle,
-                comment: cli.config.comment?.replace(/\\n/g, '\n'),
+                comment: cli.config.comment,
                 relativeOutput: false,
                 recursive: !cli.config.noRecursion,
                 dotFolders: cli.config.includeDotFolders,
                 dotFiles: cli.config.includeDotFiles,
                 rewriteImports: cli.config.rewriteImports,
-                ignores: cli.config.ignores ? cli.config.ignores.split(',').map(ignore => ignore.trim()) : []
+                ignores: cli.config.ignores
             })
             if (minifyResult) {
                 if (minifyResult.error) failedPaths.push(inputPath)
@@ -28,7 +28,7 @@ module.exports = {
             const minifyResult = minify(jsPath, {
                 verbose: !cli.config.quietMode,
                 mangle: !cli.config.noMangle,
-                comment: cli.config.comment?.replace(/\\n/g, '\n')
+                comment: cli.config
             })
             if (minifyResult.error) failedPaths.push(jsPath)
             return minifyResult

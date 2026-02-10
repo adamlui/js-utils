@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Impazamo yokufunda uhlobo lwephakheji yasekuhlaleni" },
   "error_notRecognized": { "message": "ayibonakali" },
   "error_nonPositiveNum": { "message": "impikiswano inokuba > 0 kuphela" },
+  "error_invalidFilepath": { "message": "kufuneka ibe yindlela efanelekileyo yefayile ekhoyo. Ufumene" },
+  "error_invalidLangCode": { "message": "yikhowudi yolwimi engachananga" },
   "error_invalidURL": { "message": "Amagama efayile aceliweyo% 1 ayikhangeleki isebenza kum. Qinisekisa ukuba igama lefayile livalelwe kuchaphulo olu phindwe kabini" },
   "error_invalidConfigFile": { "message": "Qwalasela ifayile kufuneka ithumele into" },
   "error_configFileNotFound": { "message": "Qwalasela ifayili ayifumanekanga" },

@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Klaida skaitant vietinio paketo versiją" },
   "error_notRecognized": { "message": "neatpažintas" },
   "error_nonPositiveNum": { "message": "argumentas gali būti tik > 0" },
+  "error_invalidFilepath": { "message": "turi būti galiojantis esamo failo kelias. Gauta" },
+  "error_invalidLangCode": { "message": "yra neteisingas kalbos kodas" },
   "error_invalidURL": { "message": "Neteisingas URL" },
   "error_invalidConfigFile": { "message": "Konfigūracijos failas turi eksportuoti objektą" },
   "error_configFileNotFound": { "message": "Konfigūracijos failas nerastas" },

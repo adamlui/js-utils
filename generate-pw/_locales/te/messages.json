@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "స్థానిక ప్యాకేజీ సంస్కరణను చదవడంలో లోపం" },
   "error_notRecognized": { "message": "గుర్తించబడలేదు" },
   "error_nonPositiveNum": { "message": "ఆర్గ్యుమెంట్ > 0 మాత్రమే ఉంటుంది" },
+  "error_invalidFilepath": { "message": "చెల్లుబాటు అయ్యే ఫైల్ మార్గం అయి ఉండాలి. వచ్చింది" },
+  "error_invalidLangCode": { "message": "చెల్లని భాషా కోడ్" },
   "error_invalidURL": { "message": "చెల్లని URL" },
   "error_invalidConfigFile": { "message": "కాన్ఫిగర్ ఫైల్ తప్పనిసరిగా ఒక వస్తువును ఎగుమతి చేయాలి" },
   "error_configFileNotFound": { "message": "కాన్ఫిగరేషన్ ఫైల్ కనుగొనబడలేదు" },

@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Phoso fa o bala mofuta wa pakana ya mo lefelong la lona" },
   "error_notRecognized": { "message": "ga a itsiwe" },
   "error_nonPositiveNum": { "message": "ngangisano e ka nna > 0 fela" },
+  "error_invalidFilepath": { "message": "e tshwanetse go nna tsela e e tshwanetseng ya faele e e leng teng. Got" },
+  "error_invalidLangCode": { "message": "ke khoutu e e sa siamang ya puo" },
   "error_invalidURL": { "message": "URL e e sa siamang" },
   "error_invalidConfigFile": { "message": "Faele ya thulaganyo e tshwanetse go romela selo kwa ntle" },
   "error_configFileNotFound": { "message": "Faele ya Config ga e a bonwa" },

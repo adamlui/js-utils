@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "የአካባቢ ጥቅል ስሪት ማንበብ ስህተት" },
   "error_notRecognized": { "message": "እውቅና አልተሰጠውም" },
   "error_nonPositiveNum": { "message": "ክርክር ብቻ ሊሆን ይችላል > 0" },
+  "error_invalidFilepath": { "message": "ትክክለኛ ነባር የፋይል መንገድ መሆን አለበት. አግኝቷል" },
+  "error_invalidLangCode": { "message": "ልክ ያልሆነ የቋንቋ ኮድ ነው" },
   "error_invalidURL": { "message": "ልክ ያልሆነ ዩአርኤል" },
   "error_invalidConfigFile": { "message": "Config ፋይል አንድ ነገር ወደ ውጭ መላክ አለበት" },
   "error_configFileNotFound": { "message": "ፋይል አልተገኘም ያዋቅሩ" },

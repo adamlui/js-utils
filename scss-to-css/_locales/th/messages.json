@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "เกิดข้อผิดพลาดในการอ่านเวอร์ชันแพคเก" },
   "error_notRecognized": { "message": "ไม่ได้รับการยอมรับ" },
   "error_nonPositiveNum": { "message": "อาร์กิวเมนต์สามารถเป็น > 0 เท่านั้น" },
+  "error_invalidFilepath": { "message": "ต้องเป็นพาธไฟล์ที่มีอยู่ที่ถูกต้อง GOT" },
+  "error_invalidLangCode": { "message": "เป็นรหัสภาษาที่ไม่ถูกต้อง" },
   "error_invalidURL": { "message": "URL ไม่ถูกต้อง" },
   "error_invalidConfigFile": { "message": "ไฟล์การกำหนดค่าต้องส่งออกออบเจ็กต์" },
   "error_configFileNotFound": { "message": "ไม่พบไฟล์การกำหนดค่า" },

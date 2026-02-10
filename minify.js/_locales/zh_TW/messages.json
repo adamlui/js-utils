@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "讀取本機套件版本時發生錯誤" },
   "error_notRecognized": { "message": "無法識別" },
   "error_nonPositiveNum": { "message": "引數只能大於0" },
+  "error_invalidFilepath": { "message": "必須是有效的現有檔案路徑。取得" },
+  "error_invalidLangCode": { "message": "是無效的語言代碼" },
   "error_invalidURL": { "message": "無效的網址" },
   "error_invalidConfigFile": { "message": "配置檔案必須匯出物件" },
   "error_configFileNotFound": { "message": "未找到配置文件" },

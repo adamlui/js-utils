@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "ຜິດພາດໃນການອ່ານລຸ້ນແພັກເກັດໃນທ້ອງຖິ່ນ" },
   "error_notRecognized": { "message": "ບໍ່ຮັບຮູ້" },
   "error_nonPositiveNum": { "message": "ການໂຕ້ຖຽງສາມາດເປັນພຽງແຕ່ > 0" },
+  "error_invalidFilepath": { "message": "ຕ້ອງເປັນເສັ້ນທາງເອກະສານທີ່ມີຢູ່ແລ້ວທີ່ຖືກຕ້ອງ. ໄດ້ຮັບ" },
+  "error_invalidLangCode": { "message": "ແມ່ນລະຫັດພາສາທີ່ບໍ່ຖືກຕ້ອງ" },
   "error_invalidURL": { "message": "URL ບໍ່ຖືກຕ້ອງ" },
   "error_invalidConfigFile": { "message": "ໄຟລ໌ການຕັ້ງຄ່າຕ້ອງສົ່ງອອກວັດຖຸ" },
   "error_configFileNotFound": { "message": "ບໍ່ພົບໄຟລ໌ການຕັ້ງຄ່າ" },

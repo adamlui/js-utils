@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Errore durante la lettura della versione del pacchetto locale" },
   "error_notRecognized": { "message": "non riconosciuti" },
   "error_nonPositiveNum": { "message": "l'argomento può essere solo > 0" },
+  "error_invalidFilepath": { "message": "deve essere un percorso di file esistente valido. Ottenuto" },
+  "error_invalidLangCode": { "message": "è un codice lingua non valido" },
   "error_invalidURL": { "message": "URL non valido" },
   "error_invalidConfigFile": { "message": "Il file di configurazione deve esportare un oggetto" },
   "error_configFileNotFound": { "message": "File di configurazione non trovato" },

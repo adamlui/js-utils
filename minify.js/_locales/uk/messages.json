@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Помилка читання версії локального пакета" },
   "error_notRecognized": { "message": "не розпізнаний" },
   "error_nonPositiveNum": { "message": "аргумент може бути лише > 0" },
+  "error_invalidFilepath": { "message": "має бути дійсним існуючим шляхом до файлу. Отримано" },
+  "error_invalidLangCode": { "message": "є недійсним кодом мови" },
   "error_invalidURL": { "message": "Недійсна URL-адреса" },
   "error_invalidConfigFile": { "message": "Файл конфігурації повинен експортувати об 'єкт" },
   "error_configFileNotFound": { "message": "Файл конфігурації не знайдено" },

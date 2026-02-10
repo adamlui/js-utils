@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Erreur lors de la lecture de la version du package local" },
   "error_notRecognized": { "message": "Non-reconnu" },
   "error_nonPositiveNum": { "message": "argument ne peut être > 0" },
+  "error_invalidFilepath": { "message": "doit être un chemin de fichier existant valide. Obtenu" },
+  "error_invalidLangCode": { "message": "est un code de langue invalide" },
   "error_invalidURL": { "message": "URL Invalide" },
   "error_invalidConfigFile": { "message": "Le fichier de configuration doit exporter un objet" },
   "error_configFileNotFound": { "message": "Le fichier de configuration est introuvable" },

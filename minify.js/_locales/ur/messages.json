@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "مقامی پیکج ورژن پڑھنے میں خرابی" },
   "error_notRecognized": { "message": "پہچانا نہیں گیا" },
   "error_nonPositiveNum": { "message": "دلیل صرف > 0 ہو سکتی ہے" },
+  "error_invalidFilepath": { "message": "ایک درست موجودہ فائل کا راستہ ہونا چاہیے ۔ مل گیا" },
+  "error_invalidLangCode": { "message": "ایک غلط زبان کا کوڈ ہے" },
   "error_invalidURL": { "message": "غلط URL" },
   "error_invalidConfigFile": { "message": "کنفیگ فائل کو ایک آبجیکٹ برآمد کرنا ضروری ہے" },
   "error_configFileNotFound": { "message": "کنفیگ فائل نہیں ملی" },

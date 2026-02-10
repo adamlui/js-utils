@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Porogaramu Verisiyo" },
   "error_notRecognized": { "message": "oYA" },
   "error_nonPositiveNum": { "message": "ishobora gusanga ari 0" },
+  "error_invalidFilepath": { "message": "a Byemewe IDOSIYE Inzira" },
+  "error_invalidLangCode": { "message": "ni Sibyo Ururimi: Inyandikoporogaramu" },
   "error_invalidURL": { "message": "Sibyo" },
   "error_invalidConfigFile": { "message": "IDOSIYE Kohereza Igikoresho" },
   "error_configFileNotFound": { "message": "IDOSIYE OYA Byabonetse" },

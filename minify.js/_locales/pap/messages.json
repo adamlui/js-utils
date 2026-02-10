@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Read Comentario Biblico Con Ap Pake Version" },
   "error_notRecognized": { "message": "no Reconocido" },
   "error_nonPositiveNum": { "message": "por Soledad > 0" },
+  "error_invalidFilepath": { "message": "must be a Valid Existing Archive" },
+  "error_invalidLangCode": { "message": "un Codigo Lenguaje Invalido" },
   "error_invalidURL": { "message": "Invalididad URL" },
   "error_invalidConfigFile": { "message": "Archivo para Exportar un Objeto" },
   "error_configFileNotFound": { "message": "Archive for No Found" },

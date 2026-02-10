@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "स्थानीय प्याकेज संस्करण पढ्दा त्रुटि" },
   "error_notRecognized": { "message": "पहिचान नगरिएको" },
   "error_nonPositiveNum": { "message": "तर्क > 0 मात्र हुन सक्छ" },
+  "error_invalidFilepath": { "message": "मान्य अवस्थित फाइल मार्ग हुनुपर्दछ । प्राप्त भयो" },
+  "error_invalidLangCode": { "message": "अमान्य भाषा कोड हो" },
   "error_invalidURL": { "message": "अवैध यू आर एल" },
   "error_invalidConfigFile": { "message": "कन्फिग फाइलले वस्तु निर्यात गर्नुपर्दछ" },
   "error_configFileNotFound": { "message": "कन्फिग फाइल फेला परेन" },

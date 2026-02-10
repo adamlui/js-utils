@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Feilur við at lesa lokalu pakkaútgávu" },
   "error_notRecognized": { "message": "ikki viðurkennd" },
   "error_nonPositiveNum": { "message": "argument kann bert vera > 0" },
+  "error_invalidFilepath": { "message": "tað skal vera ein galdandi verandi skráarvegur." },
+  "error_invalidLangCode": { "message": "tað er ein ógildandi málsligur kóði" },
   "error_invalidURL": { "message": "Ógildugt URL" },
   "error_invalidConfigFile": { "message": "Skipa fílu skal útflyta eitt objekt" },
   "error_configFileNotFound": { "message": "Finna fílu ikki funnin" },

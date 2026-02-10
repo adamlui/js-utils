@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Грешка при читањето на локалната верзија на пакетот" },
   "error_notRecognized": { "message": "не е препознаено" },
   "error_nonPositiveNum": { "message": "аргументот може да биде само > 0" },
+  "error_invalidFilepath": { "message": "мора да биде важечка постоечка патека на датотеката. Добив" },
+  "error_invalidLangCode": { "message": "е неважечки јазичен код" },
   "error_invalidURL": { "message": "Невалидна URL" },
   "error_invalidConfigFile": { "message": "Датотеката за конфигурација мора да извезе објект" },
   "error_configFileNotFound": { "message": "Датотеката за конфигурација не е пронајдена" },

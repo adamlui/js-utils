@@ -48,7 +48,7 @@
         : findSCSS(inputPath, {
             recursive: !cli.config.noRecursion,
             verbose: !cli.config.quietMode,
-            ignores: (cli.config.ignores?.split(',') ?? []).map(ignore => ignore.trim())
+            ignores: cli.config.ignores
         })
 
     // Print/compile files

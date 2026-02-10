@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "ಸ್ಥಳೀಯ ಪ್ಯಾಕೇಜ್ ಆವೃತ್ತಿಯನ್ನು ಓದುವಲ್ಲಿ ದೋಷ" },
   "error_notRecognized": { "message": "ಗುರುತಿಸಲಾಗಿಲ್ಲ" },
   "error_nonPositiveNum": { "message": "ಆರ್ಗ್ಯುಮೆಂಟ್ ಕೇವಲ > 0 ಆಗಿರಬಹುದು" },
+  "error_invalidFilepath": { "message": "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಮಾನ್ಯ ಫೈಲ್ ಮಾರ್ಗವಾಗಿರಬೇಕು. ಸಿಕ್ಕಿದೆ" },
+  "error_invalidLangCode": { "message": "ಇದು ಅಮಾನ್ಯ ಭಾಷೆಯ ಕೋಡ್ ಆಗಿದೆ" },
   "error_invalidURL": { "message": "Url ಸರಿಯಾಗಿಲ್ಲ" },
   "error_invalidConfigFile": { "message": "ಕಾನ್ಫಿಗರ್ ಫೈಲ್ ವಸ್ತುವನ್ನು ರಫ್ತು ಮಾಡಬೇಕು" },
   "error_configFileNotFound": { "message": "ಕಾನ್ಫಿಗರ್ ಫೈಲ್ ಕಂಡುಬಂದಿಲ್ಲ" },

@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Nisy olana teo am-pamakiana ny kinovan'ny fonosana an-toerana" },
   "error_notRecognized": { "message": "tsy fantatra" },
   "error_nonPositiveNum": { "message": "tsy misy fotoana… Tohiny" },
+  "error_invalidFilepath": { "message": "tsy maintsy ho marina ny sori-dàlan'ny rakitra efa misy. Got" },
+  "error_invalidLangCode": { "message": "dia tsy mety ny fehezan-dalàna momba ny fiteny" },
   "error_invalidURL": { "message": "URL diso" },
   "error_invalidConfigFile": { "message": "Tsy maintsy manondrana zavatra iray ny raki-kirakira" },
   "error_configFileNotFound": { "message": "Tsy hita ilay raki-kirakira" },

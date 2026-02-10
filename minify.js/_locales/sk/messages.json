@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Chyba pri čítaní lokálnej verzie balíka" },
   "error_notRecognized": { "message": "Kód nebol rozpoznaný" },
   "error_nonPositiveNum": { "message": "argument môže byť iba > 0" },
+  "error_invalidFilepath": { "message": "musí byť platná existujúca cesta k súboru. Mám" },
+  "error_invalidLangCode": { "message": "je neplatný jazykový kód" },
   "error_invalidURL": { "message": "Neplatná adresa URL" },
   "error_invalidConfigFile": { "message": "Konfiguračný súbor musí exportovať objekt" },
   "error_configFileNotFound": { "message": "Konfiguračný súbor sa nenašiel" },

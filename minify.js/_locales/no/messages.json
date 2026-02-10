@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Feil ved lesing av lokal pakkeversjon" },
   "error_notRecognized": { "message": "ikke gjenkjent" },
   "error_nonPositiveNum": { "message": "argumentet kan bare være > 0" },
+  "error_invalidFilepath": { "message": "må være en gyldig eksisterende filsti. Fikk" },
+  "error_invalidLangCode": { "message": "er en ugyldig språkkode" },
   "error_invalidURL": { "message": "Ugyldig nettadresse" },
   "error_invalidConfigFile": { "message": "Konfigurasjonsfilen må eksportere et objekt" },
   "error_configFileNotFound": { "message": "Konfigurasjonsfilen ble ikke funnet" },

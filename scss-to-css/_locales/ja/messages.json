@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "ローカルパッケージバージョンの読み取り中にエラーが発生しまし" },
   "error_notRecognized": { "message": "認識されていない" },
   "error_nonPositiveNum": { "message": "引数は0以上にする必要があります" },
+  "error_invalidFilepath": { "message": "有効な既存のファイルパスでなければなりません。取得" },
+  "error_invalidLangCode": { "message": "は無効な言語コードです" },
   "error_invalidURL": { "message": "無効なURL" },
   "error_invalidConfigFile": { "message": "構成ファイルはオブジェクトをエクスポートする必要があります" },
   "error_configFileNotFound": { "message": "構成ファイルが見つかりません" },

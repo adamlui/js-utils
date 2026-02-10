@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "ਲੋਕਲ ਪੈਕੇਜ ਵਰਜਨ ਪੜ੍ਹਨ ਦੌਰਾਨ ਗਲਤੀ" },
   "error_notRecognized": { "message": "ਪਛਾਣਿਆ ਨਹੀਂ ਗਿਆ" },
   "error_nonPositiveNum": { "message": "ਦਲੀਲ ਸਿਰਫ > 0 ਹੋ ਸਕਦੀ ਹੈ" },
+  "error_invalidFilepath": { "message": "ਇੱਕ ਵੈਧ ਮੌਜੂਦਾ ਫਾਇਲ ਮਾਰਗ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ । GOT" },
+  "error_invalidLangCode": { "message": "ਇੱਕ ਅਵੈਧ ਭਾਸ਼ਾ ਕੋਡ ਹੈ" },
   "error_invalidURL": { "message": "ਅਵੈਧ URL" },
   "error_invalidConfigFile": { "message": "ਸੰਰਚਨਾ ਫਾਇਲ ਨੂੰ ਇੱਕ ਆਬਜੈਕਟ ਨਿਰਯਾਤ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ" },
   "error_configFileNotFound": { "message": "ਸੰਰਚਨਾ ਫਾਇਲ ਨਹੀਂ ਲੱਭੀ" },

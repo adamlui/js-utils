@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Gwall wrth ddarllen fersiwn pecyn lleol" },
   "error_notRecognized": { "message": "heb ei gydnabod" },
   "error_nonPositiveNum": { "message": "gall fod yn 0 yn unig" },
+  "error_invalidFilepath": { "message": "rhaid iddo fod yn llwybr ffeil dilys sy'n bodoli eisoes. Wedi" },
+  "error_invalidLangCode": { "message": "iaith annilys" },
   "error_invalidURL": { "message": "URL annilys" },
   "error_invalidConfigFile": { "message": "Rhaid i'r ffeil cyfluniad allforio gwrthrych" },
   "error_configFileNotFound": { "message": "Ni chanfuwyd y ffeil cyfluniad" },

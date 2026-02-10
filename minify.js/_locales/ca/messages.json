@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "S'ha produït un error en llegir la vers" },
   "error_notRecognized": { "message": "no reconegut" },
   "error_nonPositiveNum": { "message": "l'argument només pot ser > 0" },
+  "error_invalidFilepath": { "message": "ha de ser un camí d'accés al fitxer vàlid existent. D'acord" },
+  "error_invalidLangCode": { "message": "és un codi d'idioma no vàlid" },
   "error_invalidURL": { "message": "Adreça URL no vàlida" },
   "error_invalidConfigFile": { "message": "El fitxer de configuració ha d'exportar un objecte" },
   "error_configFileNotFound": { "message": "No s'ha trobat el fitxer de configuració" },

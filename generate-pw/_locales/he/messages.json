@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "שגיאה בקריאת גרסת החבילה המקומית" },
   "error_notRecognized": { "message": "לא מזוהה" },
   "error_nonPositiveNum": { "message": "הארגומנט יכול להיות רק > 0" },
+  "error_invalidFilepath": { "message": "חייב להיות נתיב קובץ קיים חוקי. קיבלתי" },
+  "error_invalidLangCode": { "message": "הוא קוד שפה לא חוקי" },
   "error_invalidURL": { "message": "כתובת לא תקפה" },
   "error_invalidConfigFile": { "message": "קובץ תצורה חייב לייצא אובייקט" },
   "error_configFileNotFound": { "message": "קובץ התצורה לא נמצא" },

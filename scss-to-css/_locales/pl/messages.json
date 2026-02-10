@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Błąd podczas odczytu lokalnej wersji pakietu" },
   "error_notRecognized": { "message": "nierozpoznane" },
   "error_nonPositiveNum": { "message": "argument może być tylko > 0" },
+  "error_invalidFilepath": { "message": "musi być prawidłową istniejącą ścieżką pliku. Got" },
+  "error_invalidLangCode": { "message": "jest nieprawidłowym kodem języka" },
   "error_invalidURL": { "message": "Nieprawidłowy adres URL" },
   "error_invalidConfigFile": { "message": "Plik konfiguracyjny musi eksportować obiekt" },
   "error_configFileNotFound": { "message": "Nie znaleziono pliku konfiguracyjnego" },

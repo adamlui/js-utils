@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Sayup sa pagbasa sa lokal nga bersyon sa pakete" },
   "error_notRecognized": { "message": "wala mailhi" },
   "error_nonPositiveNum": { "message": "argumento lang ang pwede > 0" },
+  "error_invalidFilepath": { "message": "kinahanglan nga usa ka balido nga kasamtangan nga file path.GOT" },
+  "error_invalidLangCode": { "message": "usa ka Dili Maayo nga Kodigo sa Pinulongan" },
   "error_invalidURL": { "message": "Dili balido nga URL" },
   "error_invalidConfigFile": { "message": "Ang file sa config kinahanglan mag-export sa usa ka butang" },
   "error_configFileNotFound": { "message": "Wala nakit-an ang file sa config" },

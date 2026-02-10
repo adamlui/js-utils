@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Virhe paikallisen paketin version lukemisessa" },
   "error_notRecognized": { "message": "ei tunnistettu" },
   "error_nonPositiveNum": { "message": "argumentti voi olla vain > 0" },
+  "error_invalidFilepath": { "message": "on oltava kelvollinen olemassa oleva tiedostopolku. Sain" },
+  "error_invalidLangCode": { "message": "on virheellinen kielikoodi" },
   "error_invalidURL": { "message": "Virheellinen URL" },
   "error_invalidConfigFile": { "message": "Määritystiedoston on vietävä objekti" },
   "error_configFileNotFound": { "message": "Konfig. tiedostoa ei löytynyt" },

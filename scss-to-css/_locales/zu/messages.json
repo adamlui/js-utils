@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Iphutha ekufundeni uhlelo lwephakeji lendawo" },
   "error_notRecognized": { "message": "akuqashelwa" },
   "error_nonPositiveNum": { "message": "impikiswano ingaba > 0 kuphela" },
+  "error_invalidFilepath": { "message": "kumele kube yindlela yefayela evumelekile ekhona. Got" },
+  "error_invalidLangCode": { "message": "iyikhodi yolimi engavumelekile" },
   "error_invalidURL": { "message": "I-URL engavumelekile" },
   "error_invalidConfigFile": { "message": "Lungiselela ifayela kufanele lithumele into" },
   "error_configFileNotFound": { "message": "Lungisa ifayela alitholakali" },

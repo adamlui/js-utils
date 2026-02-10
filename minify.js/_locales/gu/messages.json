@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "સ્થાનિક પેકેજ સંસ્કરણ વાંચવામાં ભૂલ" },
   "error_notRecognized": { "message": "ઓળખી શકાયું નથી" },
   "error_nonPositiveNum": { "message": "દલીલ ફક્ત > 0 હોઈ શકે છે" },
+  "error_invalidFilepath": { "message": "માન્ય અસ્તિત્વમાં છે તે ફાઇલ પાથ હોવો જોઈએ. મળ્યું" },
+  "error_invalidLangCode": { "message": "અમાન્ય ભાષા કોડ છે" },
   "error_invalidURL": { "message": "અયોગ્ય URL" },
   "error_invalidConfigFile": { "message": "રૂપરેખાંકન ફાઇલને ઑબ્જેક્ટ નિકાસ કરવી આવશ્યક છે" },
   "error_configFileNotFound": { "message": "રૂપરેખાંકન ફાઇલ મળી નથી" },

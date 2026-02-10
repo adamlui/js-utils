@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Kesalahan membaca versi paket lokal" },
   "error_notRecognized": { "message": "tidak diakui" },
   "error_nonPositiveNum": { "message": "argumen hanya bisa > 0" },
+  "error_invalidFilepath": { "message": "harus berupa path file yang sudah ada yang valid. Got" },
+  "error_invalidLangCode": { "message": "adalah kode bahasa yang tidak valid" },
   "error_invalidURL": { "message": "URL Tidak Valid" },
   "error_invalidConfigFile": { "message": "File konfigurasi harus mengekspor objek" },
   "error_configFileNotFound": { "message": "File konfigurasi tidak ditemukan" },

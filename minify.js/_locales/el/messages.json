@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Σφάλμα κατά την ανάγνωση της τοπικής έκδοσης πακέτου" },
   "error_notRecognized": { "message": "που δεν αναγνωρίζονται" },
   "error_nonPositiveNum": { "message": "το όρισμα μπορεί να είναι μόνο > 0" },
+  "error_invalidFilepath": { "message": "πρέπει να είναι μια έγκυρη υπάρχουσα διαδρομή αρχείου. Ελήφθη" },
+  "error_invalidLangCode": { "message": "είναι μη έγκυρος κωδικός γλώσσας" },
   "error_invalidURL": { "message": "Μη έγκυρo URL" },
   "error_invalidConfigFile": { "message": "Το αρχείο διαμόρφωσης πρέπει να εξάγει ένα αντικείμενο" },
   "error_configFileNotFound": { "message": "Δεν βρέθηκε το αρχείο Config" },

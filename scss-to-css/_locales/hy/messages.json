@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Չհաջողվեց կարդալ տեղական փաթեթի տարբերակը" },
   "error_notRecognized": { "message": "ճանաչված չէ" },
   "error_nonPositiveNum": { "message": "փաստարկը կարող է լինել միայն > 0" },
+  "error_invalidFilepath": { "message": "պետք է լինի վավեր գոյություն ունեցող ֆայլի ուղի: Ստացվեց" },
+  "error_invalidLangCode": { "message": "լեզվի անվավեր կոդ է" },
   "error_invalidURL": { "message": "Անվավեր URL" },
   "error_invalidConfigFile": { "message": "Config ֆայլը պետք է արտահանի օբյեկտ" },
   "error_configFileNotFound": { "message": "Config ֆայլը չի գտնվել" },

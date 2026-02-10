@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Aconteceu un erro ao ler a versión do paquete local" },
   "error_notRecognized": { "message": "non recoñecidos" },
   "error_nonPositiveNum": { "message": "argumento só pode ser > 0" },
+  "error_invalidFilepath": { "message": "debe ser unha rota de ficheiros válida. Obtívose" },
+  "error_invalidLangCode": { "message": "é un código de idioma non válido" },
   "error_invalidURL": { "message": "O URL non é válido" },
   "error_invalidConfigFile": { "message": "O ficheiro de configuración debe exportar un obxecto" },
   "error_configFileNotFound": { "message": "Non se atopou o ficheiro de configuración" },

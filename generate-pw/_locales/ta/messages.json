@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "உள்ளூர் பேக்கேஜ் பதிப்பைப் படிப்பதில் பிழை" },
   "error_notRecognized": { "message": "அடையாளம் காணப்படவில்லை" },
   "error_nonPositiveNum": { "message": "வாதம் > 0 ஆக மட்டுமே இருக்க முடியும்" },
+  "error_invalidFilepath": { "message": "செல்லுபடியாகும் கோப்பு பாதையாக இருக்க வேண்டும். கிடைத்தது" },
+  "error_invalidLangCode": { "message": "செல்லுபடியாகாத மொழி குறியீடு" },
   "error_invalidURL": { "message": "கோப்புப் பெயர் தவறு" },
   "error_invalidConfigFile": { "message": "கட்டமைப்பு கோப்பு ஒரு பொருளை ஏற்றுமதி செய்ய வேண்டும்" },
   "error_configFileNotFound": { "message": "கட்டமைப்பு கோப்பு காணப்படவில்லை" },

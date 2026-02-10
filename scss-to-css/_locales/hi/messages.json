@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "पैकेज का लोकल वर्ज़न पढ़ने में गड़बड़ी हुई" },
   "error_notRecognized": { "message": "पहचाना नहीं गया" },
   "error_nonPositiveNum": { "message": "तर्क केवल > 0 हो सकता है" },
+  "error_invalidFilepath": { "message": "एक मान्य मौजूदा फ़ाइल पथ होना चाहिए। मिल गया" },
+  "error_invalidLangCode": { "message": "एक अमान्य भाषा कोड है" },
   "error_invalidURL": { "message": "अमान्य URL" },
   "error_invalidConfigFile": { "message": "कॉन्फ़िग फ़ाइल को किसी ऑब्जेक्ट को एक्सपोर्ट करना होगा" },
   "error_configFileNotFound": { "message": "कॉन्फ़िग फ़ाइल नहीं मिली" },

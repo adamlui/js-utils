@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Fejl ved læsning af lokal pakkeversion" },
   "error_notRecognized": { "message": "Ikke genkendt Ingen" },
   "error_nonPositiveNum": { "message": "argument kan kun være > 0" },
+  "error_invalidFilepath": { "message": "skal være en gyldig eksisterende filsti. Fik" },
+  "error_invalidLangCode": { "message": "er en ugyldig sprogkode" },
   "error_invalidURL": { "message": "Ugyldig URL" },
   "error_invalidConfigFile": { "message": "Konfigurationsfilen skal eksportere et objekt" },
   "error_configFileNotFound": { "message": "Konfigurationsfil ikke fundet" },

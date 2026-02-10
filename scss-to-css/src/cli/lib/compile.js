@@ -12,12 +12,12 @@ module.exports = {
             const compileResult = compile(inputPath, {
                 verbose: false,
                 minify: !cli.config.noMinify,
-                comment: cli.config.comment?.replace(/\\n/g, '\n'),
+                comment: cli.config.comment,
                 relativeOutput: false,
                 recursive: !cli.config.noRecursion,
                 dotFolders: cli.config.includeDotFolders,
                 sourceMaps: !cli.config.noSourceMaps,
-                ignores: cli.config.ignores ? cli.config.ignores.split(',').map(ignore => ignore.trim()) : []
+                ignores: cli.config.ignores
             })
             if (compileResult) {
                 if (compileResult.error) failedPaths.push(inputPath)
@@ -28,7 +28,7 @@ module.exports = {
                 verbose: !cli.config.quietMode,
                 minify: !cli.config.noMinify,
                 sourceMaps: !cli.config.noSourceMaps,
-                comment: cli.config.comment?.replace(/\\n/g, '\n')
+                comment: cli.config.comment
             })
             if (compileResult.error) failedPaths.push(scssPath)
             return compileResult

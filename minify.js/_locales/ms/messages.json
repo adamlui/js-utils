@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Ralat membaca versi pakej tempatan" },
   "error_notRecognized": { "message": "Tidak dikonsikan semula" },
   "error_nonPositiveNum": { "message": "argumen hanya boleh > 0" },
+  "error_invalidFilepath": { "message": "mesti laluan fail sedia ada yang sah. Dapat" },
+  "error_invalidLangCode": { "message": "adalah kod bahasa yang tidak sah" },
   "error_invalidURL": { "message": "URL tidak sah" },
   "error_invalidConfigFile": { "message": "Fail konfigurasi mesti mengeksport objek" },
   "error_configFileNotFound": { "message": "Fail konfigurasi tidak ditemui" },

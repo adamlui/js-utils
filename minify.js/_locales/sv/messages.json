@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Fel vid läsning av lokal paketversion" },
   "error_notRecognized": { "message": "ej värderade" },
   "error_nonPositiveNum": { "message": "argument kan bara vara > 0" },
+  "error_invalidFilepath": { "message": "måste vara en giltig befintlig filsökväg. Fick" },
+  "error_invalidLangCode": { "message": "är en ogiltig språkkod" },
   "error_invalidURL": { "message": "Ogiltig URL" },
   "error_invalidConfigFile": { "message": "Konfigurationsfilen måste exportera ett objekt" },
   "error_configFileNotFound": { "message": "Konfigurationsfilen hittades inte" },

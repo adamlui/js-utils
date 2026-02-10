@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Kanganiso pakuverenga vhezheni yepakeji yemuno" },
   "error_notRecognized": { "message": "haizivikanwe" },
   "error_nonPositiveNum": { "message": "nharo kunogona chete > 0" },
+  "error_invalidFilepath": { "message": "inofanira kuva inoshanda iripo faira nzira. Got" },
+  "error_invalidLangCode": { "message": "is an invalid language code" },
   "error_invalidURL": { "message": "URL isiriyo" },
   "error_invalidConfigFile": { "message": "Config file must export an object" },
   "error_configFileNotFound": { "message": "Gadzirisa faira risina kuwanikwa" },

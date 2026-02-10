@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Орон нутгийн багцын хувилбарыг уншихад алдаа гарлаа" },
   "error_notRecognized": { "message": "тодорхойгүй" },
   "error_nonPositiveNum": { "message": "аргумент нь зөвхөн > 0 байж болно" },
+  "error_invalidFilepath": { "message": "хүчин төгөлдөр файлын зам байх ёстой. Got" },
+  "error_invalidLangCode": { "message": "буруу хэлний код байна" },
   "error_invalidURL": { "message": "Хүчингүй URL" },
   "error_invalidConfigFile": { "message": "Тохиргооны файл нь объект экспортлох ёстой" },
   "error_configFileNotFound": { "message": "Тохируулах файл олдсонгүй" },

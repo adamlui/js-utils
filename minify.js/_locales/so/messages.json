@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Khalad akhrinta nooca xirmada maxalliga ah" },
   "error_notRecognized": { "message": "aan la aqoonsaneyn" },
   "error_nonPositiveNum": { "message": "doodu waxay noqon kartaa oo kaliya > 0" },
+  "error_invalidFilepath": { "message": "waa in ay ahaataa waddo faylal sax ah oo jira. Got" },
+  "error_invalidLangCode": { "message": "waa koodh luqadeed oo aan sax ahayn." },
   "error_invalidURL": { "message": "Mareeg aan sax ahayn" },
   "error_invalidConfigFile": { "message": "Faylka Config waa inuu dhoofiyaa shay" },
   "error_configFileNotFound": { "message": "Faylka Config lama helin" },

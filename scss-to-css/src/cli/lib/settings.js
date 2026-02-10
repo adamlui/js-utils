@@ -25,13 +25,17 @@ module.exports = {
         quietMode: {
             type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
         ignores: {
-            type: 'param', regex: /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/ },
+            type: 'param', parser: val => val.split(',').map(val => val.trim()),
+            regex: /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/
+        },
         comment: {
-            type: 'param', regex: /^--?comments?(?:=.*|$)/ },
+            type: 'param', parser: val => val.replace(/\\n/g, '\n'),
+            regex: /^--?comments?(?:=.*)?$/
+        },
         uiLang: {
-            type: 'param', regex: /^--?ui-?lang(?:=.*|$)/ },
+            type: 'param', valType: 'langCode', regex: /^--?ui-?lang(?:=.*|$)/ },
         config: {
-            type: 'param', regex: /^--?config(?:=.*|$)/ },
+            type: 'param', valType: 'filepath', regex: /^--?config(?:=.*|$)/ },
         init: {
             type: 'cmd', regex: /^-{0,2}i(?:nit)?$/ },
         help: {
@@ -85,27 +89,45 @@ module.exports = {
 
         env.args.forEach(arg => { // load from CLI arg (overriding config file loads)
             if (/^[^-]|--?(?:config|debug)/.test(arg) && arg != 'init') return
-
             const ctrlKey = Object.keys(this.controls).find(key => this.controls[key]?.regex?.test(arg))
             if (!ctrlKey && cli.msgs) log.errorAndExit(`[${arg}] ${cli.msgs.error_notRecognized}.`)
             if (!inputCtrlKeys.includes(ctrlKey)) return // don't process env.args when load() specific keys
             const ctrl = this.controls[ctrlKey]
-
             if (ctrl.mode) // set cli.config.mode to mode name
                 cli.config.mode = ctrlKey.replace(/mode$/i, '').toLowerCase()
-
-            else { // init flag/param/cmd cli.config[ctrlKey] val
-                let ctrlKeyVal = ctrl.type == 'param' ? arg.split('=')[1]?.trim() : true
-                const parser = ctrl.parser
-                if (parser) {
-                    ctrlKeyVal = parser(ctrlKeyVal)
-                    if (isNaN(ctrlKeyVal) || ctrlKeyVal < 1)
-                        log.errorAndExit(`[${ctrlKey}] ${cli.msgs.error_nonPositiveNum}.`)
-                }
-                cli.config[ctrlKey] = ctrlKeyVal
-            }
+            else // init flag/param/cmd cli.config[ctrlKey] val
+                cli.config[ctrlKey] = ctrl.type == 'param' ? arg.split('=')[1]?.trim() ?? '' : true
         })
 
+        this.parseValidateConfig(inputCtrlKeys)
+
         return inputCtrlKeys.length == 1 ? cli.config[inputCtrlKeys[0]] : cli.config
+    },
+
+    parseValidateConfig(ctrlKeys = Object.keys(this.controls)) {
+        const language = require(`./language${env.modExt}`)
+        for (const key of [].concat(ctrlKeys)) {
+            const ctrl = this.controls[key]
+            const configVal = cli.config[key] ; if (configVal == null) continue
+
+            ({ // parse/validate by ctrl.valType
+                positiveInt() {
+                    const numVal = parseInt(configVal, 10)
+                    if (isNaN(numVal) || numVal < 1)
+                        log.errorAndExit(`[${key}] ${cli.msgs.error_nonPositiveNum}: ${configVal}`)
+                    cli.config[key] = numVal
+                },
+                filepath() {
+                    if (configVal && !fs.existsSync(configVal))
+                        log.errorAndExit(`[${key}] ${cli.msgs.error_invalidFilepath}: ${configVal}`)
+                },
+                langCode() {
+                    if (configVal && !language.validateLangCode(configVal))
+                        log.errorAndExit(`[${key}] ${cli.msgs.error_invalidLangCode}: ${configVal}`)
+                }
+            })[ctrl.valType]?.()
+
+            if (ctrl.parser) cli.config[key] = ctrl.parser(configVal)
+        }
     }
 }

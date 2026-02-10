@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "ލޯކަލް ޕެކޭޖް ވަރޝަން ކިޔުމުގައި ގޯހެއް" },
   "error_notRecognized": { "message": "ދެނެގަނެވިފައެއް ނުވެއެވެ" },
   "error_nonPositiveNum": { "message": "އަރގިއުމެންޓް ވާނީ ހަމައެކަނި > 0 އަށެވެ" },
+  "error_invalidFilepath": { "message": "ސައްހަ މިހާރު ހުރި ފައިލް މަގަކަށް ވާންޖެހެއެވެ. ލިބިއްޖެ" },
+  "error_invalidLangCode": { "message": "އަކީ ސައްހަ ނޫން ބަހުގެ ކޯޑެކެވެ" },
   "error_invalidURL": { "message": "ސައްހަ ނޫން ޔޫ.އާރ.އެލް" },
   "error_invalidConfigFile": { "message": "ކޮންފިގް ފައިލް އިން އެއްޗެއް އެކްސްޕޯޓް ކުރަން ޖެހެއެވެ" },
   "error_configFileNotFound": { "message": "ކޮންފިގް ފައިލް ނުފެނެއެވެ" },

@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "He hewa i ka heluhelu ʻana i ka mana pūʻolo kūloko" },
   "error_notRecognized": { "message": "ʻike ʻole ʻia" },
   "error_nonPositiveNum": { "message": "hiki ke > 0 wale nō ka hoʻopaʻapaʻa" },
+  "error_invalidFilepath": { "message": "pono e lilo i ala faila kūpono. Loaʻa" },
+  "error_invalidLangCode": { "message": "he code ʻōlelo kūpono ʻole ia" },
   "error_invalidURL": { "message": "Hūnā hewa ʻole" },
   "error_invalidConfigFile": { "message": "Pono ka faila hoʻonohonoho e hoʻokuʻu aku i kahi mea" },
   "error_configFileNotFound": { "message": "ʻAʻole i loaʻa ka faila hoʻonohonoho" },

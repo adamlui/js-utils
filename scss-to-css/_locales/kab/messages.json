@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Tuccḍa taɣuri n uḍebsi amezwaru" },
   "error_notRecognized": { "message": "ur yettwassnen ara" },
   "error_nonPositiveNum": { "message": "izmir Izmir > 0" },
+  "error_invalidFilepath": { "message": "ilaq ad yili d abrid n ufaylu yettwaxedmen. Ilaq ad" },
+  "error_invalidLangCode": { "message": "idioma deg xinag - Idioma deg xinag -" },
   "error_invalidURL": { "message": "URL mačči d tarameγtut" },
   "error_invalidConfigFile": { "message": "Afaylu n ufaylu ilaq ad yettwakkes uɣbalu" },
   "error_configFileNotFound": { "message": "Afaylu ur yettwafen ara" },

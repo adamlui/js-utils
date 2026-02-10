@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Pogreška pri čitanju verzije lokalnog paketa" },
   "error_notRecognized": { "message": "Ne raspoznato" },
   "error_nonPositiveNum": { "message": "argument može biti samo > 0" },
+  "error_invalidFilepath": { "message": "mora biti važeći postojeći put datoteke. Imam" },
+  "error_invalidLangCode": { "message": "je nevažeći kod jezika" },
   "error_invalidURL": { "message": "Neispravna URL adresa" },
   "error_invalidConfigFile": { "message": "Konfiguracijska datoteka mora izvesti objekt" },
   "error_configFileNotFound": { "message": "Konfiguracijska datoteka nije pronađena" },

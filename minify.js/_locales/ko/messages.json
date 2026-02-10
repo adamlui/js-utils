@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "로컬 패키지 버전을 읽는 중 오류 발생" },
   "error_notRecognized": { "message": "인식할 수 없는 파일" },
   "error_nonPositiveNum": { "message": "인수는 > 0이어야 합니다" },
+  "error_invalidFilepath": { "message": "유효한 기존 파일 경로여야 합니다. Got" },
+  "error_invalidLangCode": { "message": "은 (는) 잘못된 언어 코드입니다." },
   "error_invalidURL": { "message": "잘못된 주소" },
   "error_invalidConfigFile": { "message": "구성 파일은 개체를 내보내야 합니다" },
   "error_configFileNotFound": { "message": "구성 파일을 찾을 수 없습니다" },

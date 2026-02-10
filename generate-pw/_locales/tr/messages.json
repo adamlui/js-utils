@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Yerel paket sürümü okunurken hata oluştu" },
   "error_notRecognized": { "message": "tanınmamış" },
   "error_nonPositiveNum": { "message": "argüman sadece > 0 olabilir" },
+  "error_invalidFilepath": { "message": "geçerli bir mevcut dosya yolu olmalıdır. Alındı" },
+  "error_invalidLangCode": { "message": "geçersiz bir dil kodudur" },
   "error_invalidURL": { "message": "Adres geçersiz" },
   "error_invalidConfigFile": { "message": "Yapılandırma dosyası bir nesneyi dışa aktarmalıdır" },
   "error_configFileNotFound": { "message": "Yapılandırma dosyası bulunamadı" },

@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Mearachd a 'leughadh dreach ionadail a' phacaid" },
   "error_notRecognized": { "message": "gun aithneachadh" },
   "error_nonPositiveNum": { "message": "chan urrainn dha a bhith ach 0" },
+  "error_invalidFilepath": { "message": "feumaidh gur e slighe faidhle dhligheach a th 'ann. Got" },
+  "error_invalidLangCode": { "message": "'S e eadar - theangair neo - eisimeileach a th' ann" },
   "error_invalidURL": { "message": "URL neo-dhligheach" },
   "error_invalidConfigFile": { "message": "Feumaidh am faidhle rèiteachaidh nì a thoirt a - mach" },
   "error_configFileNotFound": { "message": "Cha deach am faidhle rèiteachaidh a lorg" },

@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Napaka pri branju različice lokalnega paketa" },
   "error_notRecognized": { "message": "Ni prepoznan" },
   "error_nonPositiveNum": { "message": "argument je lahko samo > 0" },
+  "error_invalidFilepath": { "message": "mora biti veljavna obstoječa pot datoteke. Imam" },
+  "error_invalidLangCode": { "message": "je neveljavna jezikovna koda" },
   "error_invalidURL": { "message": "Neveljaven URL" },
   "error_invalidConfigFile": { "message": "Konfiguracijska datoteka mora izvoziti predmet" },
   "error_configFileNotFound": { "message": "Konfiguracijske datoteke ni mogoče najti" },

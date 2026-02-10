@@ -101,5 +101,7 @@ module.exports = {
             log.error(`${cli.msgs.error_failedToFetchSysLang}:`, err.message)
             return 'en'
         }
-    }
+    },
+
+    validateLangCode(code) { return typeof code != 'string' ? false : /^[a-z]{2,8}(?:[-_][a-z]{2,3})?$/i.test(code) }
 }

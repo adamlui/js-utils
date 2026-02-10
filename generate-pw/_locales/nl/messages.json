@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Fout bij het lezen van lokale pakketversie" },
   "error_notRecognized": { "message": "Niet herkend" },
   "error_nonPositiveNum": { "message": "argument kan alleen > 0 zijn" },
+  "error_invalidFilepath": { "message": "moet een geldig bestaand bestandspad zijn. Gekregen" },
+  "error_invalidLangCode": { "message": "is een ongeldige taalcode" },
   "error_invalidURL": { "message": "Ongeldige URL" },
   "error_invalidConfigFile": { "message": "Config-bestand moet een object exporteren" },
   "error_configFileNotFound": { "message": "configuratiebestand '%s' niet gevonden" },

@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Ошибка при чтении версии локального пакета" },
   "error_notRecognized": { "message": "неидентифицированный" },
   "error_nonPositiveNum": { "message": "аргумент может быть только > 0" },
+  "error_invalidFilepath": { "message": "должен быть допустимый существующий путь к файлу. Получено" },
+  "error_invalidLangCode": { "message": "является недопустимым кодом языка" },
   "error_invalidURL": { "message": "Неверный URL" },
   "error_invalidConfigFile": { "message": "Файл конфигурации должен экспортировать объект" },
   "error_configFileNotFound": { "message": "Файл конфигурации% s не найден" },

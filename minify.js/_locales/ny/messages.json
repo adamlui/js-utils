@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Kulakwitsa kuwerenga phukusi la m 'deralo" },
   "error_notRecognized": { "message": "sizikudziwika" },
   "error_nonPositiveNum": { "message": "kutsutsana kungakhale kokha > 0" },
+  "error_invalidFilepath": { "message": "ayenera kukhala ovomerezeka alipo wapamwamba njira. Got" },
+  "error_invalidLangCode": { "message": "ndi malamulo a chilankhulo chopanda pake" },
   "error_invalidURL": { "message": "URL yolakwika" },
   "error_invalidConfigFile": { "message": "Konzani fayilo iyenera kutumiza chinthu" },
   "error_configFileNotFound": { "message": "Konzani fayilo yomwe sinapezeke" },

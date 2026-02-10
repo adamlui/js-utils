@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Хатогӣ дар хондани версияи бастаи локалӣ" },
   "error_notRecognized": { "message": "эътироф нашудааст" },
   "error_nonPositiveNum": { "message": "argument can be only > 0" },
+  "error_invalidFilepath": { "message": "kailangan ay isang wastong mayroong file path. Got" },
+  "error_invalidLangCode": { "message": "isang hindi wastong wika code" },
   "error_invalidURL": { "message": "URL- и нодуруст" },
   "error_invalidConfigFile": { "message": "Ð  Ð ° Ð ¼ Ð ¾ Ð ¸ Ñ  Ð" },
   "error_configFileNotFound": { "message": "Танзимоти файл ёфт нашуд" },

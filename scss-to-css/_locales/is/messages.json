@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Villa við að lesa staðbundna pakkaútgáfu" },
   "error_notRecognized": { "message": "ekki viðurkennt" },
   "error_nonPositiveNum": { "message": "frumbreyta getur aðeins verið > 0" },
+  "error_invalidFilepath": { "message": "verður að vera gild skráarslóð sem þegar er til. Got" },
+  "error_invalidLangCode": { "message": "er ógildur tungumálakóði" },
   "error_invalidURL": { "message": "Ógild slóð" },
   "error_invalidConfigFile": { "message": "Stillingaskrá verður að flytja út hlut" },
   "error_configFileNotFound": { "message": "Stillingaskrá fannst ekki" },

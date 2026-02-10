@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "Lasot lokālās pakotnes versiju, radās kļūda" },
   "error_notRecognized": { "message": "Nav atpazīts" },
   "error_nonPositiveNum": { "message": "arguments var būt tikai > 0" },
+  "error_invalidFilepath": { "message": "jābūt derīgam esošam faila ceļam. Iegūts" },
+  "error_invalidLangCode": { "message": "ir nederīgs valodas kods" },
   "error_invalidURL": { "message": "NederÄ«gs URI:% 1" },
   "error_invalidConfigFile": { "message": "Konfigurācijas failam ir jāeksportē objekts" },
   "error_configFileNotFound": { "message": "Konfigurācijas fails nav atrasts" },

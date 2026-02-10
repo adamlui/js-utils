@@ -7,6 +7,8 @@
   "error_readingLocalPkgVer": { "message": "កំហុស ក្នុង ការ អាន កំណែ កញ្ចប់ មូលដ្ឋាន" },
   "error_notRecognized": { "message": "មិនត្រឹមត្រូវ" },
   "error_nonPositiveNum": { "message": "អាគុយម៉ង់អាចមានតែ > 0" },
+  "error_invalidFilepath": { "message": "ត្រូវ តែ ជា ផ្លូវ ឯកសារ ដែល មាន សុពលភាព & # 160; ។ Got" },
+  "error_invalidLangCode": { "message": "គឺជាលេខកូដភាសាដែលមិនត្រឹមត្រូវ" },
   "error_invalidURL": { "message": "URL មិនត្រឹមត្រូវ" },
   "error_invalidConfigFile": { "message": "ឯកសារ កំណត់ រចនាសម្ព័ន្ធ ត្រូវ តែ នាំចេញ វត្ថុ" },
   "error_configFileNotFound": { "message": "រកមិនឃើញឯកសារកំណត់រចនាសម្ព័ន្ធទេ" },
