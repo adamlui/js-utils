@@ -9,5 +9,6 @@
  */
 
 export default {
+    uiLang: '',      // ISO 639-1 code of language to display UI in
     quietMode: false // suppress all logging except errors
 }
