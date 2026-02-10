@@ -216,7 +216,7 @@ function strictify(password, requiredCharTypes = ['numbers', 'symbols', 'lower',
         }
     if (password.length < requiredCharTypes.length) { // trim requiredCharTypes
         while (requiredCharTypes.length > password.length)
-            requiredCharTypes.splice(Math.floor(Math.random() * requiredCharTypes.length), 1)
+            requiredCharTypes.splice(randomInt(0, requiredCharTypes.length), 1)
         log.info(`Reduced required char types to: ${requiredCharTypes.join(', ')}`)
     }
 
