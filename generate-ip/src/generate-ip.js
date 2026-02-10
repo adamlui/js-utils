@@ -37,10 +37,10 @@ const ipv4 = {
         const ips = []
         if (options.sequential) { // generate IPS incrementing from options.network
             if (!options.network || !this.validate(options.network))
-                log.errorHelpURLandThrow({ helpURL: docURL,
+                log.errHelpURLandThrow({ helpURL: docURL,
                     errMsg: 'options.network must be a valid IP when options.sequential is `true`.' })
             else if (!options.qty || options.qty <= 1)
-                log.errorHelpURLandThrow({ helpURL: docURL,
+                log.errHelpURLandThrow({ helpURL: docURL,
                     errMsg: 'options.qty must be > 1 when options.sequential is `true`.' })
             const [startA, startB, startC, startD] = options.network.split('.').map(Number)
             for (let i = 0 ; i < options.qty ; i++)
@@ -129,10 +129,10 @@ const ipv6 = {
         const ips = []
         if (options.sequential) { // generate IPs incrementing from options.network
             if (!options.network || !this.validate(options.network))
-                log.errorHelpURLandThrow({ helpURL: docURL,
+                log.errHelpURLandThrow({ helpURL: docURL,
                     errMsg: 'options.network must be a valid IP when options.sequential is `true`.' })
             else if (!options.qty || options.qty <= 1)
-                log.errorHelpURLandThrow({ helpURL: docURL,
+                log.errHelpURLandThrow({ helpURL: docURL,
                     errMsg: 'options.qty must be > 1 when options.sequential is `true`.' })
             const segments = options.network.split(':').map(segment => parseInt(segment, 16) || 0)
             for (let i = 0 ; i < options.qty ; i++) {
@@ -291,10 +291,10 @@ const mac = {
         const macAddresses = []
         if (options.sequential) { // generate MACs incrementing from options.network
             if (!options.network || !this.validate(options.network))
-                log.errorHelpURLandThrow({ helpURL: docURL,
+                log.errHelpURLandThrow({ helpURL: docURL,
                     errMsg: 'options.network must be a valid MAC when options.sequential is `true`.' })
             else if (!options.qty || options.qty <= 1)
-                log.errorHelpURLandThrow({ helpURL: docURL,
+                log.errHelpURLandThrow({ helpURL: docURL,
                     errMsg: 'options.qty must be > 1 when options.sequential is `true`.' })
             const networkParts = options.network.split(':').map(part => parseInt(part, 16) || 0)
             for (let i = 0; i < options.qty; i++) {
@@ -410,7 +410,7 @@ const log = {
     prefix: api.name,
 
     error(...args) { console.error(`${this.prefix} » ERROR:`, ...args) },
-    errorHelpURLandThrow({ errMsg, helpURL }) { this.error(errMsg) ; this.helpURL(helpURL) ; throw new Error(errMsg) },
+    errHelpURLandThrow({ errMsg, helpURL }) { this.error(errMsg) ; this.helpURL(helpURL) ; throw new Error(errMsg) },
     helpURL(url = api.urls?.docs) { this.info('For more help, please visit', url) },
     info(...args) { console.info(`${this.prefix} »`, ...args) },
 
