@@ -43,7 +43,7 @@ module.exports = {
     load(ctrlKeys = Object.keys(this.controls)) {
         const inputCtrlKeys = [].concat(ctrlKeys) // force array
 
-        if (!arguments.length && !cli.defaultsSet) { // init all defaults on arg-less load()
+        if (!cli.defaultsSet && !arguments.length) { // init all defaults on arg-less load()
             inputCtrlKeys.forEach(key => {
                 const ctrl = this.controls[key] ; if (ctrl.mode) return
                 cli.config[key] ??= ctrl.defaultVal ?? ( ctrl.type == 'param' ? '' : false )
