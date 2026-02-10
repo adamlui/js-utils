@@ -74,10 +74,8 @@ const ipv4 = {
         log.prefix = 'ipv4.validate()'
 
         // Validate address as arg
-        if (typeof address != 'string') {
-            log.error('1st arg <address> must be a string.')
-            return log.helpURL(docURL)
-        }
+        if (typeof address != 'string')
+            log.errHelpURLandThrow({ errMsg: '1st arg <address> must be a string.', helpURL: docURL })
 
         // Validate/init options
         if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
@@ -175,14 +173,10 @@ const ipv6 = {
         log.prefix = 'ipv6.format()'
 
         // Validate address
-        if (typeof ipv6address != 'string') {
-            log.error('1st arg <ipv6address> must be a string.')
-            return log.helpURL(docURL)
-        }
-        if (!this.validate(ipv6address, { verbose: false})) {
-            log.error(`${ipv6address} is not a valid IPv6 address.`)
-            return log.helpURL(docURL)
-        }
+        if (typeof ipv6address != 'string')
+            log.errHelpURLandThrow({ errMsg: '1st arg <ipv6address> must be a string.', helpURL: docURL })
+        if (!this.validate(ipv6address, { verbose: false}))
+            log.errHelpURLandThrow({ errMsg: `${ipv6address} is not a valid IPv6 address.`, helpURL: docURL })
 
         // Validate/init options
         if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
@@ -233,10 +227,8 @@ const ipv6 = {
         log.prefix = 'ipv6.validate()'
 
         // Validate address as arg
-        if (typeof address != 'string') {
-            log.error('1st arg <address> must be a string.')
-            return log.helpURL(docURL)
-        }
+        if (typeof address != 'string')
+            log.errHelpURLandThrow({ errMsg: '1st arg <address> must be a string.', helpURL: docURL })
 
         // Validate/init options
         if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
@@ -333,10 +325,8 @@ const mac = {
         log.prefix = 'mac.validate()'
 
         // Validate address as arg
-        if (typeof address != 'string') {
-            log.error('1st arg <address> must be a string.')
-            return log.helpURL(docURL)
-        }
+        if (typeof address != 'string')
+            log.errHelpURLandThrow({ errMsg: '1st arg <address> must be a string.', helpURL: docURL })
 
         // Validate/init options
         if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return

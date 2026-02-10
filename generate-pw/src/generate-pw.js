@@ -160,10 +160,8 @@ function generatePasswords(qty, options = {}) {
 
     // Validate qty
     qty = parseInt(qty, 10)
-    if (isNaN(qty) || qty < 1) {
-        log.error('1st arg <qty> can only be an integer > 0.')
-        return log.helpURL(docURL)
-    }
+    if (isNaN(qty) || qty < 1)
+        log.errHelpURLandThrow({ errMsg: '1st arg <qty> can only be an integer > 0.', helpURL: docURL })
 
     // Validate/init options
     if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
@@ -196,10 +194,8 @@ function strictify(password, requiredCharTypes = ['numbers', 'symbols', 'lower',
     log.prefix = 'strictify()'
 
     // Validate password
-    if (typeof password != 'string') {
-        log.error('1st arg <password> must be a string.')
-        return log.helpURL(docURL)
-    }
+    if (typeof password != 'string')
+        log.errHelpURLandThrow({ errMsg: '1st arg <password> must be a string.', helpURL: docURL })
 
     // Validate requiredCharTypes
     const validCharTypes = ['numbers', 'symbols', 'lower', 'upper']
@@ -272,10 +268,8 @@ function validateStrength(password, options = {}) {
     log.prefix = 'validateStrength()'
 
     // Validate password
-    if (typeof password != 'string') {
-        log.error('1st arg <password> must be a string.')
-        return log.helpURL(docURL)
-    }
+    if (typeof password != 'string')
+        log.errHelpURLandThrow({ errMsg: '1st arg <password> must be a string.', helpURL: docURL })
 
     // Validate/init options
     if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
@@ -369,6 +363,7 @@ function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
 const log = {
     prefix: api.name,
 
+    errHelpURLandThrow({ errMsg, helpURL }) { this.error(errMsg) ; this.helpURL(helpURL) ; throw new Error(errMsg) },
     error(...args) { console.error(`${this.prefix} » ERROR:`, ...args) },
     helpURL(url = api.urls?.docs) { this.info('For more help, please visit', url) },
     info(...args) { console.info(`${this.prefix} »`, ...args) },

@@ -28,10 +28,9 @@ function findSCSS(searchDir, options = {}) {
     log.prefix = 'findSCSS()'
 
     // Validate searchDir
-    if (typeof searchDir != 'string') {
-        log.error('1st arg <searchDir> must be a string.')
-        return log.helpURL(docURL)
-    } else { // verify searchDir path existence
+    if (typeof searchDir != 'string')
+        log.errHelpURLandThrow({ errMsg: '1st arg <searchDir> must be a string.', helpURL: docURL })
+    else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir)
         if (!fs.existsSync(searchPath)) {
             log.error('1st arg <searchDir> must be an existing directory.')
@@ -95,10 +94,8 @@ function compile(input, options = {}) {
     log.prefix = 'compile()'
 
     // Validate input
-    if (typeof input != 'string') {
-        log.error('1st arg <input> must be a string.')
-        return log.helpURL(docURL)
-    }
+    if (typeof input != 'string')
+        log.errHelpURLandThrow({ errMsg: '1st arg <input> must be a string.', helpURL: docURL })
 
     // Validate/init options
     if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
@@ -214,6 +211,7 @@ function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
 const log = {
     prefix: api.name,
 
+    errHelpURLandThrow({ errMsg, helpURL }) { this.error(errMsg) ; this.helpURL(helpURL) ; throw new Error(errMsg) },
     error(...args) { console.error(`${this.prefix} » ERROR:`, ...args) },
     helpURL(url = api.urls?.docs) { this.info('For more help, please visit', url) },
     info(...args) { console.info(`${this.prefix} »`, ...args) },
