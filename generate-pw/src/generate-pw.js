@@ -214,6 +214,11 @@ function strictify(password, requiredCharTypes = ['numbers', 'symbols', 'lower',
             ].join('\n'))
             return
         }
+    if (password.length < requiredCharTypes.length) { // trim requiredCharTypes
+        while (requiredCharTypes.length > password.length)
+            requiredCharTypes.splice(Math.floor(Math.random() * requiredCharTypes.length), 1)
+        log.info(`Reduced required char types to: ${requiredCharTypes.join(', ')}`)
+    }
 
     // Validate/init options
     if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
