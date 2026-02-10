@@ -111,10 +111,12 @@ module.exports = {
     parseValidateConfig(ctrlKeys = Object.keys(this.controls)) {
         const language = require(`./language${env.modExt}`)
         for (const key of [].concat(ctrlKeys)) {
-            const ctrl = this.controls[key]
-            const configVal = cli.config[key] ; if (configVal == null) continue
+            const ctrl = this.controls[key], configVal = cli.config[key]
 
-            ({ // parse/validate by ctrl.valType
+            if (ctrl.parser && !ctrl.parsed) {
+                cli.config[key] = ctrl.parser(configVal) ; ctrl.parsed = true }
+
+            if (ctrl.valType) ({
                 positiveInt() {
                     const numVal = parseInt(configVal, 10)
                     if (isNaN(numVal) || numVal < 1)
@@ -129,9 +131,7 @@ module.exports = {
                     if (configVal && !language.validateLangCode(configVal))
                         log.errorAndExit(`[${key}] ${cli.msgs.error_invalidLangCode}: ${configVal}`)
                 }
-            })[ctrl.valType]?.()
-
-            if (ctrl.parser) cli.config[key] = ctrl.parser(configVal)
+            })[ctrl.valType]()
         }
     }
 }
