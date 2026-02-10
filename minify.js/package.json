@@ -18,7 +18,7 @@
     "lint:all": "eslint .",
     "lint:fix": "eslint . --fix --cache",
     "lint:fix-all": "eslint . --fix",
-    "translate": "py utils/translate-en-messages.py"
+    "translate": "py utils/translate-messages"
   },
   "devDependencies": {
     "@eslint/json": "^1.0.0",

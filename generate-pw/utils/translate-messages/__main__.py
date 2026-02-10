@@ -1,12 +1,12 @@
 '''
-Name:         translate-en-messages.py
-Version:      2026.2.10.27
+Name:         translate-en-messages
+Version:      2026.2.10.29
 Author:       Adam Lui
 Description:  Translate en/messages.json to other locales
 Homepage:     https://github.com/adamlui/python-utils
 Support:      https://github.com/adamlui/python-utils/issues
 Sponsor:      https://github.com/sponsors/adamlui
-Notes:        Use --help to print CLI arguments.
+Notes:        Use --help to print CLI args.
 '''
 
 import argparse, os, json
