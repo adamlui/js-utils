@@ -20,7 +20,7 @@ function findJS(searchDir, options = {}) {
 
     const defaultOptions = {
         recursive: true,   // recursively search for nested files in searchDir passed
-        verbose: true,     // enable logging
+        verbose: true,     // show logging in console/terminal
         dotFolders: false, // include dotfolders in file search
         dotFiles: false,   // include dotfiles in file search
         ignores: []        // files/dirs to exclude from search results
@@ -85,7 +85,7 @@ function minify(input, options = {}) {
 
     const defaultOptions = {
         recursive: true,       // recursively search for nested files if dir path passed
-        verbose: true,         // enable logging
+        verbose: true,         // show logging in console/terminal
         dotFolders: false,     // include dotfolders in file search
         dotFiles: false,       // include dotfiles in file search
         mangle: true,          // shorten var names (typically to one character)

@@ -12,7 +12,7 @@ function minify(input, output, options = {}) {
     // Init options
     const defaultOptions = {
         recursive: true,   // recursively search for nested files if dir path passed
-        verbose: true,     // enable logging
+        verbose: true,     // show logging in console/terminal
         dotFolders: false, // include dotfolders in file search
         dotFiles: false,   // include dotfiles in file search
         mangle: true,      // shorten var names (typically to one character)

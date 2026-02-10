@@ -45,7 +45,7 @@ function generatePassword(options = {}) {
           exampleCall = 'generatePassword({ verbose: false, numbers: true })'
 
     const defaultOptions = {
-        verbose: true,       // enable logging
+        verbose: true,       // show logging in console/terminal
         length: 12,          // length of password
         qty: 1,              // number of passwords to generate
         strength: '',        // <'weak'|'basic'|'strong'> apply strength preset
@@ -142,7 +142,7 @@ function generatePasswords(qty, options = {}) {
           exampleCall = 'generatePasswords(3, { verbose: false, symbols: true })'
 
     const defaultOptions = {
-        verbose: true,       // enable logging
+        verbose: true,       // show logging in console/terminal
         length: 12,          // length of password
         strength: '',        // <'weak'|'basic'|'strong'> apply strength preset
         charset: '',         // characters to include

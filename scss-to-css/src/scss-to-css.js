@@ -20,7 +20,7 @@ function findSCSS(searchDir, options = {}) {
 
     const defaultOptions = {
         recursive: true,   // recursively search for nested files in searchDir passed
-        verbose: true,     // enable logging
+        verbose: true,     // show logging in console/terminal
         dotFolders: false, // include dotfolders in file search
         ignores: []        // files/dirs to exclude from search results
     }
@@ -83,7 +83,7 @@ function compile(input, options = {}) {
 
     const defaultOptions = {
         recursive: true,       // recursively search for nested files if dir path passed
-        verbose: true,         // enable logging
+        verbose: true,         // show logging in console/terminal
         dotFolders: false,     // include dotfolders in file search
         minify: true,          // minify output CSS
         sourceMaps: true,      // generate CSS source maps

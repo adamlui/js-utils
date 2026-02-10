@@ -12,7 +12,7 @@ async function geolocate(ips, options = {}) {
 
     const docURL = 'https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#locateips-options',
           exampleCall = `geolocate('8.8.8.8', { verbose: false })`,
-          defaultOptions = { verbose: true /* enable logging */ }
+          defaultOptions = { verbose: true /* show logging in console/terminal */ }
 
     log.prefix = 'geolocate()'
 
