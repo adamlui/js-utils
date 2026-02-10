@@ -113,7 +113,7 @@ function generatePassword(options = {}) {
         }
 
         // Enforce strict mode if enabled
-        if (options.strict) {
+        if (options.strict && !options.charset) {
             if (options.verbose && !fromGeneratePasswords) log.info('Enforcing strict mode...')
             const charTypes = ['numbers', 'symbols', 'lower', 'upper'],
                   requiredCharTypes = charTypes.filter(charType => options[charType] || options[`${charType}case`])
