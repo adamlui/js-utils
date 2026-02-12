@@ -12,8 +12,8 @@
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
+          generateIP = require(`../generate-ip${env.modExt}`),
           init = require(`./lib/init${env.modExt}`),
-        { ipv4, ipv6, mac } = require(`../generate-ip${env.modExt}`),
           log = require(`./lib/log${env.modExt}`)
 
     await init.cli()
@@ -28,7 +28,7 @@
         qty: cli.config.qty, verbose: !cli.config.quietMode,
         sequential: cli.config.sequential, network: cli.config.network
     }
-    clipboardy.writeSync([].concat({ ipv4, ipv6, mac }[cli.config.mode || 'ipv4'].generate(genOptions)).join('\n'))
+    clipboardy.writeSync([].concat(generateIP[cli.config.mode || 'ipv4'].generate(genOptions)).join('\n'))
     log.ifNotQuiet(`\n${cli.msgs.info_copyingToClip}...`)
 
 })()
