@@ -25,8 +25,10 @@
 
     // Log/copy random IP(s)
     const genOptions = {
-        qty: cli.config.qty, verbose: !cli.config.quietMode,
-        sequential: cli.config.sequential, network: cli.config.network
+        qty: cli.config.qty,
+        sequential: cli.config.sequential,
+        network: cli.config.network,
+        verbose: !cli.config.quietMode
     }
     clipboardy.writeSync([].concat(generateIP[cli.config.mode || 'ipv4'].generate(genOptions)).join('\n'))
     log.ifNotQuiet(`\n${cli.msgs.info_copyingToClip}...`)
