@@ -43,7 +43,7 @@
     "build:data": "node utils/build --data",
     "build:json": "node utils/build --json",
     "debug": "node src/cli --debug",
-    "translate": "py utils/translate-messages",
+    "translate": "translate-messages",
     "bump:patch": "bash utils/bump.sh patch",
     "bump:minor": "bash utils/bump.sh minor",
     "bump:major": "bash utils/bump.sh major"
