@@ -10,23 +10,27 @@ module.exports = {
     controls: {
         length: { type: 'param', valType: 'positiveInt', defaultVal: 12, regex: /^--?length(?:=.*|$)/},
         qty: { type: 'param', valType: 'positiveInt', defaultVal: 1, regex: /^--?qu?a?n?ti?t?y(?:=.*|$)/},
-        charset: { type: 'param', regex: /^--?charse?t?(?:=.*|$)/ },
+        charset: { type: 'param', regex: /^--?char[-_]?se?t?(?:=.*|$)/ },
         excludeChars: { type: 'param', regex:/^--?exclude(?:=.*|$)/ },
-        uiLang: { type: 'param', valType: 'langCode', regex: /^--?ui-?lang(?:=.*|$)/ },
+        uiLang: { type: 'param', valType: 'langCode', regex: /^--?ui[-_]?lang(?:=.*|$)/ },
         config: { type: 'param', valType: 'filepath', regex: /^--?config(?:=.*|$)/ },
         weak: { type: 'flag', mode: true, regex: /^--?(?:w|weak)$/ },
         basic: { type: 'flag',  mode: true, regex: /^--?(?:b|basic)$/ },
         strong: { type: 'flag', mode: true, regex: /^--?(?:t|strong)$/ },
-        excludeNums: { type: 'flag', regex: /^--?(?:N|(?:exclude|disable|no)-?num(?:ber)?s?=?(?:true|1)?)$/ },
-        excludeSymbols: { type: 'flag', regex: /^--?(?:Y|(?:exclude|disable|no)-?symbols?=?(?:true|1)?)$/ },
+        excludeNums: { type: 'flag', regex: /^--?(?:N|(?:exclude|disable|no)[-_]?num(?:ber)?s?=?(?:true|1)?)$/ },
+        excludeSymbols: { type: 'flag', regex: /^--?(?:Y|(?:exclude|disable|no)[-_]?symbols?=?(?:true|1)?)$/ },
         excludeLowerChars: {
-            type: 'flag', regex: /^--?(?:L|(?:exclude|disable|no)-?lower-?(?:case)?|lower-?(?:case)?=(?:false|0))$/},
+            type: 'flag',
+            regex: /^--?(?:L|(?:exclude|disable|no)[-_]?lower[-_]?(?:case)?|lower[-_]?(?:case)?=(?:false|0))$/
+        },
         excludeUpperChars: {
-            type: 'flag', regex: /^--?(?:U|(?:exclude|disable|no)-?upper-?(?:case)?|upper-?(?:case)?=(?:false|0))$/},
-        similarChars: { type: 'flag', regex: /^--?(?:s|(?:include-?)?similar-?chars?=?(?:true|1)?)$/ },
-        unstrict: { type: 'flag', regex: /^--?(?:S|(?:un-?strict)?(?:-?mode)?)$/ },
+            type: 'flag',
+            regex: /^--?(?:U|(?:exclude|disable|no)[-_]?upper[-_]?(?:case)?|upper[-_]?(?:case)?=(?:false|0))$/
+        },
+        similarChars: { type: 'flag', regex: /^--?(?:s|(?:include[-_]?)?similar[-_]?chars?=?(?:true|1)?)$/ },
+        unstrict: { type: 'flag', regex: /^--?(?:S|(?:un[-_]?strict)?(?:[-_]?mode)?)$/ },
         entropy: { type: 'flag', regex: /^--?e(?:ntropy)?$/ },
-        quietMode: { type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
+        quietMode: { type: 'flag', regex: /^--?q(?:uiet)?(?:[-_]?mode)?$/ },
         init: { type: 'cmd', regex: /^-{0,2}i(?:nit)?$/ },
         help: { type: 'cmd', regex: /^--?h(?:elp)?$/ },
         version: { type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }

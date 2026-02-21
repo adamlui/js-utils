@@ -9,31 +9,29 @@ module.exports = {
 
     controls: {
         dryRun: {
-            type: 'flag', regex: /^--?(?:n|dry-?run)$/ },
+            type: 'flag', regex: /^--?(?:n|dry[-_]?run)$/ },
         includeDotFolders: {
-            type: 'flag', regex: /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/ },
+            type: 'flag', regex: /^--?(?:dd?|(?:include[-_]?)?dot[-_]?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/ },
         noSourceMaps: {
-            type: 'flag', regex: /^--?(?:S|(?:exclude|disable|no)-?so?u?rce?-?maps?|so?u?rce?-?maps?=(?:false|0))$/ },
+            type: 'flag', regex: /^--?(?:S|(?:exclude|disable|no)[-_]?so?u?rce?[-_]?maps?|so?u?rce?[-_]?maps?=(?:false|0))$/ },
         noRecursion: {
-            type: 'flag', regex: /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/ },
+            type: 'flag', regex: /^--?(?:R|(?:disable|no)[-_]?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/ },
         noMinify: {
-            type: 'flag', regex: /^--?(?:M|(?:disable|no)-?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/ },
+            type: 'flag', regex: /^--?(?:M|(?:disable|no)[-_]?minif(?:y|ication)|minif(?:y|ication)=(?:false|0))$/ },
         relativeOutput: {
-            type: 'flag', regex: /^--?(?:r|relative-?output?=?(?:true|1)?)$/ },
+            type: 'flag', regex: /^--?(?:r|relative[-_]?output?=?(?:true|1)?)$/ },
         copy: {
             type: 'flag', regex: /^--?c(?:opy)?$/ },
         quietMode: {
-            type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
+            type: 'flag', regex: /^--?q(?:uiet)?(?:[-_]?mode)?$/ },
         ignores: {
             type: 'param', parser: val => val.split(',').map(val => val.trim()),
-            regex: /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/
+            regex: /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?[-_]?files?)?)(?:=.*|$)/
         },
         comment: {
-            type: 'param', parser: val => val.replace(/\\n/g, '\n'),
-            regex: /^--?comments?(?:=.*)?$/
-        },
+            type: 'param', parser: val => val.replace(/\\n/g, '\n'), regex: /^--?comments?(?:=.*)?$/ },
         uiLang: {
-            type: 'param', valType: 'langCode', regex: /^--?ui-?lang(?:=.*|$)/ },
+            type: 'param', valType: 'langCode', regex: /^--?ui[-_]?lang(?:=.*|$)/ },
         config: {
             type: 'param', valType: 'filepath', regex: /^--?config(?:=.*|$)/ },
         init: {

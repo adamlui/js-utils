@@ -9,35 +9,35 @@ module.exports = {
 
     controls: {
         dryRun: {
-            type: 'flag', regex: /^--?(?:n|dry-?run)$/ },
+            type: 'flag', regex: /^--?(?:n|dry[-_]?run)$/ },
         includeDotFolders: {
-            type: 'flag', regex: /^--?(?:dd?|(?:include-?)?dot-?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/ },
+            type: 'flag', regex: /^--?(?:dd?|(?:include[-_]?)?dot[-_]?(?:folder|dir(?:ector(?:y|ie))?)s?=?(?:true|1)?)$/ },
         includeDotFiles: {
-            type: 'flag', regex: /^--?(?:df|D|(?:include-?)?dot-?files?=?(?:true|1)?)$/ },
+            type: 'flag', regex: /^--?(?:df|D|(?:include[-_]?)?dot[-_]?files?=?(?:true|1)?)$/ },
         noRecursion: {
-            type: 'flag', regex: /^--?(?:R|(?:disable|no)-?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/ },
+            type: 'flag', regex: /^--?(?:R|(?:disable|no)[-_]?recursi(?:on|ve)|recursi(?:on|ve)=(?:false|0))$/ },
         noMangle: {
-            type: 'flag', regex: /^--?(?:M|(?:disable|no)-?mangle|mangle=(?:false|0))$/ },
+            type: 'flag', regex: /^--?(?:M|(?:disable|no)[-_]?mangle|mangle=(?:false|0))$/ },
         noFilenameChange: {
-            type: 'flag', regex: /^--?(?:X|(?:disable|no)-?(?:file)?name-?change|(?:file)?name-?change=(?:false|0))$/ },
+            type: 'flag',
+            regex: /^--?(?:X|(?:disable|no)[-_]?(?:file)?name[-_]?change|(?:file)?name[-_]?change=(?:false|0))$/
+        },
         rewriteImports: {
-            type: 'flag', regex: /^--?(?:i|rewrite-?imports?=?(?:true|1)?)$/ },
+            type: 'flag', regex: /^--?(?:i|rewrite[-_]?imports?=?(?:true|1)?)$/ },
         copy: {
             type: 'flag', regex: /^--?c(?:opy)?$/ },
         relativeOutput: {
-            type: 'flag', regex: /^--?(?:r|relative-?output?=?(?:true|1)?)$/ },
+            type: 'flag', regex: /^--?(?:r|relative[-_]?output?=?(?:true|1)?)$/ },
         quietMode: {
-            type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
+            type: 'flag', regex: /^--?q(?:uiet)?(?:[-_]?mode)?$/ },
         ignores: {
             type: 'param', parser: val => val.split(',').map(val => val.trim()),
-            regex: /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?-?files?)?)(?:=.*|$)/
+            regex: /^--?(?:ignores?|(?:ignore|skip|exclude)(?:d?[-_]?files?)?)(?:=.*|$)/
         },
         comment: {
-            type: 'param', parser: val => val.replace(/\\n/g, '\n'),
-            regex: /^--?comments?(?:=.*)?$/
-        },
+            type: 'param', parser: val => val.replace(/\\n/g, '\n'), regex: /^--?comments?(?:=.*)?$/ },
         uiLang: {
-            type: 'param', valType: 'langCode', regex: /^--?ui-?lang(?:=.*|$)/ },
+            type: 'param', valType: 'langCode', regex: /^--?ui[-_]?lang(?:=.*|$)/ },
         config: {
             type: 'param', valType: 'filepath', regex: /^--?config(?:=.*|$)/ },
         init: {

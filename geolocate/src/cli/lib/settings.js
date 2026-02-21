@@ -8,9 +8,9 @@ module.exports = {
     configFilename: 'geolocate.config.mjs',
 
     controls: {
-        uiLang: { type: 'param', valType: 'langCode', regex: /^--?ui-?lang(?:=.*|$)/ },
+        uiLang: { type: 'param', valType: 'langCode', regex: /^--?ui[-_]?lang(?:=.*|$)/ },
         config: { type: 'param', valType: 'filepath', regex: /^--?config(?:=.*|$)/ },
-        quietMode: { type: 'flag', regex: /^--?q(?:uiet)?(?:-?mode)?$/ },
+        quietMode: { type: 'flag', regex: /^--?q(?:uiet)?(?:[-_]?mode)?$/ },
         init: { type: 'cmd', regex: /^-{0,2}i(?:nit)?$/ },
         help: { type: 'cmd', regex: /^--?h(?:elp)?$/ },
         version: { type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
