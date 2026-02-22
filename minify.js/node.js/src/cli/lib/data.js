@@ -15,7 +15,7 @@ module.exports = {
             require(protocol).get(url, resp => {
                 let rawData = ''
                 resp.on('data', chunk => rawData += chunk)
-                resp.on('end', () => resolve({ json: () => JSON.parse(rawData) }))
+                resp.on('end', () => resolve({ json: () => JSON.parse(rawData), text: () => rawData }))
             }).on('error', reject)
         }) : fetch(url) // using Node.js fetch()
     },
