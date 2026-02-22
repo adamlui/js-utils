@@ -7,6 +7,7 @@
 // NOTE: Pass --json to copy JSON only
 
 const { execSync } = require('child_process'),
+        file = require('./lib/file'),
         fs = require('fs'),
        _log = require('../src/cli/lib/log')
 
@@ -27,9 +28,9 @@ if (!script.config.jsOnly) {
     if (fs.existsSync(dataOutDir)) // clear existing data
         fs.rmSync(dataOutDir, { recursive: true })
     fs.mkdirSync(dataOutDir, { recursive: true })
-    verboseCopy(`../_locales/en/${filenames.msgs}`, `${dataOutDir}/${filenames.msgs}`)
-    verboseCopy(filenames.pkgData, `${dataOutDir}/${filenames.pkgData}`)
-    if (!script.config.jsonOnly) verboseCopy(filenames.config, `${dataOutDir}/${filenames.config}`)
+    file.copy(`../_locales/en/${filenames.msgs}`, `${dataOutDir}/${filenames.msgs}`)
+    file.copy(filenames.pkgData, `${dataOutDir}/${filenames.pkgData}`)
+    if (!script.config.jsonOnly) file.copy(filenames.config, `${dataOutDir}/${filenames.config}`)
 }
 
 // Copy/minify JS
@@ -45,8 +46,3 @@ if (!script.config.dataOnly) {
 }
 
 _log.success(`${pkg.name} v${pkg.version} build complete!`)
-
-function verboseCopy(src, dest) {
-    console.info(`Copying ${_log.colors.bo}${src}${_log.colors.nc} to ${_log.colors.by}${dest}${_log.colors.nc}...`)
-    fs.copyFileSync(src, dest)
-}
