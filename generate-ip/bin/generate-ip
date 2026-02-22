@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
 require('child_process').spawnSync(
-    'node', [require('path').join(__dirname, '../dist/cli'), '--ipv4', ...process.argv.slice(2)],
+    'node', [require('path').join(__dirname, '../dist/cli'), ...process.argv.slice(2)],
     { stdio: 'inherit' }
 )
