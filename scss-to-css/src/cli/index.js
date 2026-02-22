@@ -5,8 +5,8 @@
 
     globalThis.env = {
         args: process.argv.slice(2),
-        paths: { lib: './lib' },
-        devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname)
+        devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname),
+        paths: { lib: './lib' }
     }
     env.debugMode = env.args.some(arg => /^--?debug(?:[-_]?mode)?$/.test(arg))
 
