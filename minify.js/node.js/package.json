@@ -78,5 +78,8 @@
   "dependencies": {
     "node-clipboardy": "^1.0.3",
     "uglify-js": "^3.19.3"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
   }
 }
