@@ -5,16 +5,17 @@
 
     globalThis.env = {
         args: process.argv.slice(2),
+        paths: { lib: './lib' },
         devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname)
     }
     env.debugMode = env.args.some(arg => /^--?debug(?:-?mode)?$/.test(arg))
 
     // Import LIBS
-    const compile = require('./lib/compile'),
+    const compile = require(`${env.paths.lib}/compile`),
         { findJS } = require(`../minify${ env.devMode ? '' : '.min' }.js`),
           fs = require('fs'),
-          init = require('./lib/init'),
-          log = require('./lib/log'),
+          init = require(`${env.paths.lib}/init`),
+          log = require(`${env.paths.lib}/log`),
           path = require('path')
 
     await init.cli()

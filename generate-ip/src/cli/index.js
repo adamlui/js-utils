@@ -5,6 +5,7 @@
 
     globalThis.env = {
         args: process.argv.slice(2),
+        paths: { lib: './lib' },
         devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname)
     }
     env.debugMode = env.args.some(arg => /^--?debug(?:-?mode)?$/.test(arg))
@@ -12,8 +13,8 @@
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
           generateIP = require(`../generate-ip${ env.devMode ? '' : '.min' }.js`),
-          init = require('./lib/init'),
-          log = require('./lib/log')
+          init = require(`${env.paths.lib}/init`),
+          log = require(`${env.paths.lib}/log`)
 
     await init.cli()
 
