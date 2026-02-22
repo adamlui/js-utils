@@ -38,6 +38,7 @@
     "doc": "./docs"
   },
   "scripts": {
+    "dev": "npm run build && npm i -g",
     "build": "node utils/build",
     "build:js": "node utils/build --js",
     "build:data": "node utils/build --data",
