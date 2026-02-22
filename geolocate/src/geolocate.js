@@ -60,7 +60,7 @@ function fetchData(url) {
                 require(protocol).get(url, resp => {
                     let rawData = ''
                     resp.on('data', chunk => rawData += chunk)
-                    resp.on('end', () => resolve({ json: () => JSON.parse(rawData) }))
+                    resp.on('end', () => resolve({ json: () => JSON.parse(rawData), text: () => rawData }))
                 }).on('error', err => reject(new Error(err.message)))
             } catch (err) { reject(new Error('Environment not supported.')) }
         })
