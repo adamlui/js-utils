@@ -7,7 +7,7 @@ import regexp from 'eslint-plugin-regexp'
 import stylisticJS from '@stylistic/eslint-plugin'
 
 export default [
-    { ignores: ['**/sandbox/', '**/*.min.js', '**/package-lock.json'] },
+    { ignores: ['**/dist/', '**/sandbox/', '**/*.min.js', '**/package-lock.json'] },
     {
         files: ['**/*.{js,mjs}'],
         languageOptions: {
