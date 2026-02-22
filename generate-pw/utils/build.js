@@ -29,7 +29,7 @@ if (!cli.config.jsOnly) {
     if (!cli.config.jsonOnly) fs.copyFileSync(filenames.config, `${dataOutDir}/${filenames.config}`)
 }
 
-// Minify JS
+// Copy/minify JS
 if (!cli.config.dataOnly) {
     cli.headerComment = `© ${cli.copyrightYear} ${cli.author} under the ${cli.license} license.\\n`
                       + `Source: ${cli.urls.src}\\nDocumentation: ${cli.urls.docs}`
@@ -37,5 +37,5 @@ if (!cli.config.dataOnly) {
         for (const item of fs.readdirSync('dist', { recursive: true }))
             if (!/data(?:[/\\]|$)/.test(item)) fs.rmSync(`dist/${item}`, { recursive: true, force: true })
     execSync(`npx minify-js src dist --ignores=cli --comment="${cli.headerComment}"`, { stdio: 'inherit' })
-    fs.cpSync('src/cli', 'dist/cli', { recursive: true })
+    execSync(`npx copyfiles -e "**/*cache*/**" "src/cli/**/*" dist`, { stdio: 'inherit' })
 }
