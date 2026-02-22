@@ -48,7 +48,7 @@
     "lint:fix": "eslint . --fix --cache",
     "lint:fix-all": "eslint . --fix",
     "translate": "translate-messages",
-    "dev": "npm run build && npm i -g && scss-to-css -h",
+    "dev": "npm run build && npm i -g && scss-to-css --help",
     "build": "node utils/build",
     "build:js": "node utils/build --js",
     "build:data": "node utils/build --data",

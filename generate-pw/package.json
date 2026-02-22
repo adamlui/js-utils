@@ -42,7 +42,7 @@
     "doc": "./docs"
   },
   "scripts": {
-    "dev": "npm run build && npm i -g && generate-pw -h",
+    "dev": "npm run build && npm i -g && generate-pw --help",
     "build": "node utils/build",
     "build:js": "node utils/build --js",
     "build:data": "node utils/build --data",
