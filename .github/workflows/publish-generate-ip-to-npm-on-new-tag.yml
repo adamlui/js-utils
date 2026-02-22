@@ -18,4 +18,4 @@ jobs:
           registry-url: https://registry.npmjs.org
       - run: cd generate-ip && npm ci
       - run: cd generate-ip && npm run build
-      - run: cd generate-ip && npm publish --access public --provenance
+      - run: cd generate-ip && npm publish --provenance
