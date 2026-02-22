@@ -34,13 +34,13 @@ if (!script.config.jsOnly) {
 
 // Copy/minify JS
 if (!script.config.dataOnly) {
-    pkg.headerComment = `© ${pkg.copyrightYear} ${pkg.author} under the ${pkg.license} license.\\n`
-                      + `Source: ${pkg.urls.src}\\nDocumentation: ${pkg.urls.docs}`
+    pkg.apiHeaderComment = `© ${pkg.copyrightYear} ${pkg.author} under the ${pkg.license} license.\\n`
+                         + `Source: ${pkg.urls.src}\\nDocumentation: ${pkg.urls.docs}`
     const execOptions = { stdio: 'inherit' }
     if (fs.existsSync('dist'))
         for (const item of fs.readdirSync('dist', { recursive: true }))
             if (!/data(?:[/\\]|$)/.test(item)) fs.rmSync(`dist/${item}`, { recursive: true, force: true })
-    execSync(`node src/cli src dist --ignores=cli --comment="${pkg.headerComment}"`, execOptions)
+    execSync(`node src/cli src dist --ignores=cli --comment="${pkg.apiHeaderComment}"`, execOptions)
     execSync(`npx copyfiles -V -e "**/*cache*/**" -u 1 "src/cli/**" dist`, execOptions)
 }
 
