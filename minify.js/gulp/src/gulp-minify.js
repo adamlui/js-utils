@@ -5,7 +5,7 @@
 const minifyJS = require('@adamlui/minify.js'),
       fs = require('fs'),
       path = require('path'),
-      { Transform } = require('stream')
+    { Transform } = require('stream')
 
 function minify(input, output, options = {}) {
 
