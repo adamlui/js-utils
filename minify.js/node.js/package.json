@@ -40,10 +40,10 @@
   "directories": {
     "lib": "./dist",
     "doc": "./docs",
-    "test": "./utils/test"
+    "test": "./utils/testing"
   },
   "scripts": {
-    "test": "bash utils/test/minify-cli.test.sh",
+    "test": "bash utils/testing/minify-cli.test.sh",
     "dev": "npm run build && npm i -g && minify-js --help",
     "build": "node utils/build",
     "build:js": "node utils/build --js",
