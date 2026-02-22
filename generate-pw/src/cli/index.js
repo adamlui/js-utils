@@ -8,7 +8,7 @@
         paths: { lib: './lib' },
         devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname)
     }
-    env.debugMode = env.args.some(arg => /^--?debug(?:-?mode)?$/.test(arg))
+    env.debugMode = env.args.some(arg => /^--?debug(?:[-_]?mode)?$/.test(arg))
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
