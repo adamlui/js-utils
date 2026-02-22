@@ -6,6 +6,9 @@
 // NOTE: Pass --data to copy data only
 // NOTE: Pass --json to copy JSON only
 
+const pkg = require('../package-data.json')
+pkg.version = require('../package.json').version
+
 const { execSync } = require('child_process'),
         file = require('./lib/file'),
         fs = require('fs'),
@@ -17,9 +20,6 @@ script.config = {
     jsOnly: script.args.some(arg => /^--?(?:js|minify)$/.test(arg)),
     jsonOnly: script.args.some(arg => /^--?json$/.test(arg))
 }
-
-const pkg = require('../package-data.json')
-pkg.version = require('../package.json').version
 
 // Copy data
 if (!script.config.jsOnly) {
