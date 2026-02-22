@@ -14,13 +14,13 @@ async function geolocate(ips, options = {}) {
           exampleCall = `geolocate('8.8.8.8', { verbose: false })`,
           defaultOptions = { verbose: true /* show logging in console/terminal */ }
 
-    logger.prefix = 'geolocate()'
+    _log.prefix = 'geolocate()'
 
     // Init/validate IP(s)
     ips = [].concat(ips) // normalize to array
     ips[0] ||= await getOwnIP() // fill own IP if none passed
     for (const ip of ips) {
-        if (options.verbose) logger.info(`Validating ${ip}...`)
+        if (options.verbose) _log.info(`Validating ${ip}...`)
         let ipIsValid
         try { // to use Node.js generate-ip for validation
             ipIsValid = require('generate-ip').ipv4.validate
@@ -29,26 +29,26 @@ async function geolocate(ips, options = {}) {
             ipIsValid = window.ipv4.validate
         }
         if (ipIsValid && !ipIsValid(ip, { verbose: false }))
-            return logger.error(`${ip} is not a valid IPv4 address.`)
+            return _log.error(`${ip} is not a valid IPv4 address.`)
     }
 
     // Validate/init options
-    if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
+    if (!_validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
     try { // to fetch/get/return geolocation data
         const geoData = []
         for (const ip of ips) {
-            if (options.verbose) logger.info(`Fetching geolocation data for ${ip}...`)
+            if (options.verbose) _log.info(`Fetching geolocation data for ${ip}...`)
             const resp = await fetchData(`http://ip-api.com/json/${ip}`),
                 { status, org, as, query, ...filteredData } = await resp.json() // eslint-disable-line no-unused-vars
             geoData.push({ ip, ...filteredData })
         }
         if (options.verbose && typeof window != 'undefined')
-            logger.info('Success!', 'Check returned array.')
+            _log.info('Success!', 'Check returned array.')
         return geoData
     } catch (err) {
-        logger.error(err.message) }
+        _log.error(err.message) }
 }
 
 function fetchData(url) {
@@ -77,13 +77,13 @@ async function getOwnIP() {
                         const { exec } = require('child_process'),
                               { promisify } = require('util'), execAsync = promisify(exec),
                               { stdout, stderr } = await execAsync('curl -s ifconfig.me')
-                        return stderr ? logger.error(stderr) : stdout.trim()
-                    } catch (err) { logger.error(err.message) }
+                        return stderr ? _log.error(stderr) : stdout.trim()
+                    } catch (err) { _log.error(err.message) }
                 })
     )
 }
 
-function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
+function _validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
 
     // Init option strings/types
     const booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
@@ -93,25 +93,25 @@ function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
     if (typeof options != 'object') { // validate as obj
         let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) +1
         optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
-        logger.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
-        logger.info('Example valid call:', exampleCall)
-        logger.validOptions(defaultOptions) ; logger.helpURL(helpURL)
+        _log.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
+        _log.info('Example valid call:', exampleCall)
+        _log.validOptions(defaultOptions) ; _log.helpURL(helpURL)
         return false
     }
     for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
-            logger.error(`\`${key}\` is an invalid option.`)
-            logger.validOptions(defaultOptions) ; logger.helpURL(helpURL)
+            _log.error(`\`${key}\` is an invalid option.`)
+            _log.validOptions(defaultOptions) ; _log.helpURL(helpURL)
             return false
         } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
-            logger.error(`[${key}] option can only be \`true\` or \`false\`.`)
-            logger.helpURL(helpURL)
+            _log.error(`[${key}] option can only be \`true\` or \`false\`.`)
+            _log.helpURL(helpURL)
             return false
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10)
             if (isNaN(options[key]) || options[key] < 1) {
-                logger.error(`[${key}] option can only be an integer > 0.`)
-                logger.helpURL(helpURL)
+                _log.error(`[${key}] option can only be an integer > 0.`)
+                _log.helpURL(helpURL)
                 return false
             }
         }
@@ -120,7 +120,7 @@ function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
     return true
 }
 
-const logger = {
+const _log = {
     prefix: api.name,
 
     error(...args) { console.error(`${this.prefix} » ERROR:`, ...args) },

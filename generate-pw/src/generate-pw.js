@@ -54,10 +54,10 @@ function generatePassword(options = {}) {
         entropy: false       // calculate/log estimated entropy (bits)
     }
 
-    logger.prefix = 'generatePassword()'
+    _log.prefix = 'generatePassword()'
 
     // Validate/init options
-    if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
+    if (!_validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
     if (options.strength) { // apply strength preset
@@ -74,7 +74,7 @@ function generatePassword(options = {}) {
 
         // Init password's char set
         if (options.verbose && !fromGeneratePasswords)
-            logger.info('Initializing character set...')
+            _log.info('Initializing character set...')
         let pwCharset = options.charset?.toString() || ( // use passed [charset], or construct from options
             ( options.numbers ? api.charsets.numbers : '' )
            +( options.symbols ? api.charsets.symbols : '' )
@@ -87,19 +87,19 @@ function generatePassword(options = {}) {
         // Exclude passed `exclude` chars
         if (options.exclude) {
             if (options.verbose && !fromGeneratePasswords)
-                logger.info('Removing excluded characters...')
+                _log.info('Removing excluded characters...')
             pwCharset = pwCharset.replace(new RegExp(`[${options.exclude}]`, 'g'), '')
         }
 
         // include similar chars if `similarChars` is `true`
         if (!options.similarChars) {
             if (options.verbose && !fromGeneratePasswords)
-                logger.info('Excluding similar characters...')
+                _log.info('Excluding similar characters...')
             pwCharset = pwCharset.replace(/[o0Oil1|]/g, '')
         }
 
         // Generate unstrict password
-        if (options.verbose && !fromGeneratePasswords) logger.info('Generating password...')
+        if (options.verbose && !fromGeneratePasswords) _log.info('Generating password...')
         let password = ''
         for (let i = 0 ; i < options.length ; i++) {
             const randomIdx = randomInt(0, pwCharset.length)
@@ -108,7 +108,7 @@ function generatePassword(options = {}) {
 
         // Enforce strict mode if enabled
         if (options.strict && !options.charset) {
-            if (options.verbose && !fromGeneratePasswords) logger.info('Enforcing strict mode...')
+            if (options.verbose && !fromGeneratePasswords) _log.info('Enforcing strict mode...')
             const charTypes = ['numbers', 'symbols', 'lower', 'upper'],
                   requiredCharTypes = charTypes.filter(charType => options[charType] || options[`${charType}case`])
             password = strictify(password, requiredCharTypes)
@@ -116,13 +116,13 @@ function generatePassword(options = {}) {
 
         if (options.verbose) { // log password/entropy
             if (!fromGeneratePasswords) {
-                logger.info('Password generated!')
-                if (typeof window != 'undefined') logger.info('Check returned string.')
+                _log.info('Password generated!')
+                if (typeof window != 'undefined') _log.info('Check returned string.')
             }
             if (options.entropy) {
                 const usedCharsetLength = pwCharset.length,
                       entropyBits = usedCharsetLength < 2 ? 0 : Math.log2(usedCharsetLength ** password.length)
-                logger.info(`Estimated entropy: ${entropyBits.toFixed(2)} bits (charset length: ${usedCharsetLength})`)
+                _log.info(`Estimated entropy: ${entropyBits.toFixed(2)} bits (charset length: ${usedCharsetLength})`)
             }
         }
 
@@ -150,15 +150,15 @@ function generatePasswords(qty, options = {}) {
         entropy: false       // calculate/log estimated entropy (bits)
     }
 
-    logger.prefix = 'generatePasswords()'
+    _log.prefix = 'generatePasswords()'
 
     // Validate qty
     qty = parseInt(qty, 10)
     if (isNaN(qty) || qty < 1)
-        logger.errHelpURLandThrow({ errMsg: '1st arg <qty> can only be an integer > 0.', helpURL: docURL })
+        _log.errHelpURLandThrow({ errMsg: '1st arg <qty> can only be an integer > 0.', helpURL: docURL })
 
     // Validate/init options
-    if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
+    if (!_validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
     if (options.strength) { // apply strength preset
@@ -167,14 +167,14 @@ function generatePasswords(qty, options = {}) {
     }
 
     // Generate passwords
-    if (options.verbose) logger.info(`Generating password${ qty > 1 ? 's' : '' }...`)
+    if (options.verbose) _log.info(`Generating password${ qty > 1 ? 's' : '' }...`)
     const passwords = []
     for (let i = 0 ; i < qty ; i++) passwords.push(generatePassword(options))
 
     // Log/return final result
     if (options.verbose) {
-        logger.info(`Password${ qty > 1 ? 's' : '' } generated!`)
-        if (typeof window != 'undefined') logger.info('Check returned array.')
+        _log.info(`Password${ qty > 1 ? 's' : '' } generated!`)
+        if (typeof window != 'undefined') _log.info('Check returned array.')
     }
     return passwords
 }
@@ -185,19 +185,19 @@ function strictify(password, requiredCharTypes = ['numbers', 'symbols', 'lower',
           exampleCall = `strictify('pa55word', ['symbol', 'upper'], { verbose: false })`,
           defaultOptions = { verbose: true /* enable logging */ }
 
-    logger.prefix = 'strictify()'
+    _log.prefix = 'strictify()'
 
     // Validate password
     if (typeof password != 'string')
-        logger.errHelpURLandThrow({ errMsg: '1st arg <password> must be a string.', helpURL: docURL })
+        _log.errHelpURLandThrow({ errMsg: '1st arg <password> must be a string.', helpURL: docURL })
 
     // Validate requiredCharTypes
     const validCharTypes = ['numbers', 'symbols', 'lower', 'upper']
     requiredCharTypes = [].concat(requiredCharTypes) // normalize to array
     for (const charType of requiredCharTypes)
         if (!validCharTypes.includes(charType)) {
-            logger.error(`2nd arg \`${charType}\` is an invalid character type.`)
-            logger.info([
+            _log.error(`2nd arg \`${charType}\` is an invalid character type.`)
+            _log.info([
                 `Valid character types: ['${validCharTypes.join(`', '`)}']`,
                 `Pass one as a string or more as an array, or all types will be required.`,
                 `For more help, please visit ${docURL}`
@@ -207,11 +207,11 @@ function strictify(password, requiredCharTypes = ['numbers', 'symbols', 'lower',
     if (password.length < requiredCharTypes.length) { // trim requiredCharTypes
         while (requiredCharTypes.length > password.length)
             requiredCharTypes.splice(randomInt(0, requiredCharTypes.length), 1)
-        logger.info(`Reduced required char types to: ${requiredCharTypes.join(', ')}`)
+        _log.info(`Reduced required char types to: ${requiredCharTypes.join(', ')}`)
     }
 
     // Validate/init options
-    if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
+    if (!_validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
     // Init mod flags + untouchable positions
@@ -222,7 +222,7 @@ function strictify(password, requiredCharTypes = ['numbers', 'symbols', 'lower',
             hasFlags[charType] = true ; untouchablePositions.push(i) }
 
     // Modify password if unstrict
-    if (options.verbose) logger.info(`Strictifying password...`)
+    if (options.verbose) _log.info(`Strictifying password...`)
     const maxReplacements = Math.min(password.length, requiredCharTypes.length)
     let replacementCnt = 0, strictPW = password
     for (const charType of requiredCharTypes) {
@@ -242,11 +242,11 @@ function strictify(password, requiredCharTypes = ['numbers', 'symbols', 'lower',
     // Log/return final result
     if (options.verbose) {
         if (replacementCnt > 0) {
-            logger.info(`Password is now strict!`)
-            logger.info(`Check returned string.`)
+            _log.info(`Password is now strict!`)
+            _log.info(`Check returned string.`)
         } else {
-            logger.info(`Password already includes ${requiredCharTypes.join(' + ')} characters!`)
-            logger.info(`No modifications made.`)
+            _log.info(`Password already includes ${requiredCharTypes.join(' + ')} characters!`)
+            _log.info(`No modifications made.`)
         }
     }
     return strictPW
@@ -259,17 +259,17 @@ function validateStrength(password, options = {}) {
           strengthCriteria = { minlength: 12, minLower: 1, minUpper: 1, minNumber: 1, minSymbol: 1 },
           defaultOptions = { verbose: true /* enable logging */ }
 
-    logger.prefix = 'validateStrength()'
+    _log.prefix = 'validateStrength()'
 
     // Validate password
     if (typeof password != 'string')
-        logger.errHelpURLandThrow({ errMsg: '1st arg <password> must be a string.', helpURL: docURL })
+        _log.errHelpURLandThrow({ errMsg: '1st arg <password> must be a string.', helpURL: docURL })
 
     // Validate/init options
-    if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
+    if (!_validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
     options = { ...defaultOptions, ...options } // merge validated options w/ missing default ones
 
-    if (options.verbose) logger.info('Validating password strength...')
+    if (options.verbose) _log.info('Validating password strength...')
 
     // Count occurrences of each char type
     const charCnts = { lower: 0, upper: 0, number: 0, symbol: 0 }
@@ -296,8 +296,8 @@ function validateStrength(password, options = {}) {
 
     // Log/return final result
     if (options.verbose) {
-        logger.info('Password strength validated!')
-        logger.info('Check returned object for score/recommendations.')
+        _log.info('Password strength validated!')
+        _log.info('Check returned object for score/recommendations.')
     }
     return { strengthScore, recommendations, isGood: strengthScore >= 80 }
 }
@@ -311,7 +311,7 @@ function randomInt(min, max) {
         return require('crypto').randomInt(min, max)
 }
 
-function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
+function _validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
 
     // Init option strings/types
     const booleanOptions = Object.keys(defaultOptions).filter(key => typeof defaultOptions[key] == 'boolean'),
@@ -321,31 +321,31 @@ function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
     if (typeof options != 'object') { // validate as obj
         let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) +1
         optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
-        logger.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
-        logger.info('Example valid call:', exampleCall)
-        logger.validOptions(defaultOptions) ; logger.helpURL(helpURL)
+        _log.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
+        _log.info('Example valid call:', exampleCall)
+        _log.validOptions(defaultOptions) ; _log.helpURL(helpURL)
         return false
     }
     const validStrengths = ['weak', 'basic', 'strong']
     if ('strength' in options && options.strength && !validStrengths.includes(options.strength.toLowerCase())) {
-        logger.error(`[strength] must be one of: ${validStrengths.join(', ')}`)
-        logger.helpURL(helpURL)
+        _log.error(`[strength] must be one of: ${validStrengths.join(', ')}`)
+        _log.helpURL(helpURL)
         return false
     }
     for (const key in options) { // validate each key
         if (!Object.prototype.hasOwnProperty.call(defaultOptions, key)) {
-            logger.error(`\`${key}\` is an invalid option.`)
-            logger.validOptions(defaultOptions) ; logger.helpURL(helpURL)
+            _log.error(`\`${key}\` is an invalid option.`)
+            _log.validOptions(defaultOptions) ; _log.helpURL(helpURL)
             return false
         } else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
-            logger.error(`[${key}] option can only be \`true\` or \`false\`.`)
-            logger.helpURL(helpURL)
+            _log.error(`[${key}] option can only be \`true\` or \`false\`.`)
+            _log.helpURL(helpURL)
             return false
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10)
             if (isNaN(options[key]) || options[key] < 1) {
-                logger.error(`[${key}] option can only be an integer > 0.`)
-                logger.helpURL(helpURL)
+                _log.error(`[${key}] option can only be an integer > 0.`)
+                _log.helpURL(helpURL)
                 return false
             }
         }
@@ -354,7 +354,7 @@ function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
     return true
 }
 
-const logger = {
+const _log = {
     prefix: api.name,
 
     errHelpURLandThrow({ errMsg, helpURL }) { this.error(errMsg) ; this.helpURL(helpURL) ; throw new Error(errMsg) },
