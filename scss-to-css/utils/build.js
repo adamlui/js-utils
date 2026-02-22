@@ -2,7 +2,7 @@
 
 // Copies data/JS + minifies API to dist/
 
-// NOTE: Pass --<js|minify> to minify JS only
+// NOTE: Pass --js to copy/minify JS only
 // NOTE: Pass --data to copy data only
 // NOTE: Pass --json to copy JSON only
 
@@ -12,7 +12,7 @@ pkg.version = require('../package.json').version
 const script = { args: process.argv.slice(2) }
 script.config = {
     dataOnly: script.args.some(arg => /^--?data$/.test(arg)),
-    jsOnly: script.args.some(arg => /^--?(?:js|minify)$/.test(arg)),
+    jsOnly: script.args.some(arg => /^--?js$/.test(arg)),
     jsonOnly: script.args.some(arg => /^--?json$/.test(arg))
 }
 
