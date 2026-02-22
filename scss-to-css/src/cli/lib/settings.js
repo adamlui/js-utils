@@ -96,7 +96,7 @@ module.exports = {
             else { // init flag/param/cmd cli.config[ctrlKey] val
                 if (ctrl.type == 'param')
                     cli.config[ctrlKey] =
-                        arg.includes('=') ? arg.split('=')[1]?.trim() ?? '' // =val
+                        arg.includes('=') ? arg.split('=')[1]?.trim() || '' // =val
                       : (i +1 < env.args.length && !env.args[i +1].startsWith('-')) ? env.args[++i] // dashless val
                       : '' // val-less --param passed
                 else // flag/cmd
