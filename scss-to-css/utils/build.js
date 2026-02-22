@@ -6,13 +6,13 @@
 // NOTE: Pass --data to copy data only
 // NOTE: Pass --json to copy JSON only
 
-const pkg = require('../package-data.json')
-pkg.version = require('../package.json').version
-
 const { execSync } = require('child_process'),
         file = require('./lib/file'),
         fs = require('fs'),
        _log = require('../src/cli/lib/log')
+
+const pkg = require('../package-data.json')
+pkg.version = require('../package.json').version
 
 const script = { args: process.argv.slice(2) }
 script.config = {
