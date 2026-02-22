@@ -92,7 +92,7 @@ module.exports = {
 
         for (let i = 0 ; i < env.args.length ; i++) { // load from CLI arg (overriding config file loads)
             const arg = env.args[i]
-            if (/^[^-]|--?(?:config|debug)/.test(arg) && arg != 'init') return
+            if (/^[^-]|--?(?:config|debug)/.test(arg) && arg != 'init') continue
             const ctrlKey = Object.keys(this.controls).find(key => this.controls[key]?.regex?.test(arg))
             if (!ctrlKey && cli.msgs) log.errorAndExit(`[${arg}] ${cli.msgs.error_notRecognized}.`)
             if (!inputCtrlKeys.includes(ctrlKey)) return // don't process env.args when load() specific keys
