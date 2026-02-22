@@ -34,8 +34,8 @@
     "!docs/*/"
   ],
   "bin": {
-    "minifyjs": "dist/cli/index.min.js",
-    "minify-js": "dist/cli/index.min.js"
+    "minifyjs": "dist/cli/index.js",
+    "minify-js": "dist/cli/index.js"
   },
   "directories": {
     "lib": "./dist",

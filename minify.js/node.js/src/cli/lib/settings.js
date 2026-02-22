@@ -1,5 +1,5 @@
 const fs = require('fs'),
-      log = require(`./log${env.modExt}`),
+      log = require('./log'),
       path = require('path')
 
 ;(globalThis.cli ??= {}).config = {}
@@ -109,7 +109,7 @@ module.exports = {
     },
 
     parseValidateConfig(ctrlKeys = Object.keys(this.controls)) {
-        const language = require(`./language${env.modExt}`)
+        const language = require('./language')
         for (const key of [].concat(ctrlKeys)) {
             const ctrl = this.controls[key], configVal = cli.config[key]
 

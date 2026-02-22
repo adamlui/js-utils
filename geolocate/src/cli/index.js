@@ -8,13 +8,12 @@
         devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname)
     }
     env.debugMode = env.args.some(arg => /^--?debug(?:-?mode)?$/.test(arg))
-    env.modExt = `${ env.devMode ? '' : '.min' }.js`
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
-          geo = require(`../geolocate${env.modExt}`),
-          init = require(`./lib/init${env.modExt}`),
-          log = require(`./lib/log${env.modExt}`)
+          geo = require(`../geolocate${ env.devMode ? '' : '.min' }.js`),
+          init = require('./lib/init'),
+          log = require('./lib/log')
 
     await init.cli()
 

@@ -64,9 +64,9 @@ node utils/build
 # Update jsDelivr URLs for GitHub assets w/ commit hash
 echo -e "${BY}\nUpdating jsDelivr URLs for GitHub assets w/ commit hash...${NC}"
 bump_hash=$(git rev-parse HEAD)
-old_file=$(<dist/cli/index.min.js)
-sed -i -E "s|(cdn\.jsdelivr\.net\/gh\/[^/]+\/[^@/\"']+)[^/\"']*|\1@$bump_hash|g" dist/cli/index.min.js
-new_file=$(<dist/cli/index.min.js)
+old_file=$(<dist/cli/index.js)
+sed -i -E "s|(cdn\.jsdelivr\.net\/gh\/[^/]+\/[^@/\"']+)[^/\"']*|\1@$bump_hash|g" dist/cli/index.js
+new_file=$(<dist/cli/index.js)
 if [[ "$old_file" != "$new_file" ]]
     then echo -e "${BW}$bump_hash${NC}"
     else echo "No jsDelivr URLs for GH assets found in built files."

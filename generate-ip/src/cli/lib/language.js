@@ -1,5 +1,5 @@
-const data = require(`./data${env.modExt}`),
-      log = require(`./log${env.modExt}`)
+const data = require('./data'),
+      log = require('./log')
 
 module.exports = {
 
@@ -54,7 +54,7 @@ module.exports = {
             require(`../../${ env.devMode ? '../_locales/en/' : 'data/' }messages.json`))
 
         if (!langCode.startsWith('en')) { // fetch non-English msgs from jsDelivr
-            const msgHostURL = `${require(`./jsdelivr${env.modExt}`).commitURL(cli.commitHashes.locales)}/_locales/`
+            const msgHostURL = `${require('./jsdelivr').commitURL(cli.commitHashes.locales)}/_locales/`
             let msgHref = `${msgHostURL}${langCode}/messages.json`, msgFetchesTried = 0
             while (msgFetchesTried < 3)
                 try { // fetch remote msgs

@@ -1,8 +1,8 @@
-const log = require(`./log${env.modExt}`)
+const log = require('./log')
 
 module.exports = {
     scss({ srcFiles, inputPath, inputArg, outputArg }) {
-        const { compile } = require(`../../scss-to-css${env.modExt}`),
+        const { compile } = require(`../../scss-to-css${ env.devMode ? '' : '.min' }.js`),
                 fs = require('fs'),
                 path = require('path')
 

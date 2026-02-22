@@ -21,7 +21,8 @@ cli.config = {
 if (!cli.config.jsOnly) {
     const dataOutDir = 'dist/data',
           filenames = { pkgData: 'package-data.json', msgs: 'messages.json', config: 'scss-to-css.config.mjs' }
-    fs.rmSync('dist', { recursive: true, force: true })
+    if (fs.existsSync(dataOutDir)) // clear existing data
+        fs.rmSync(dataOutDir, { recursive: true })
     fs.mkdirSync(dataOutDir, { recursive: true })
     fs.copyFileSync(`_locales/en/${filenames.msgs}`, `${dataOutDir}/${filenames.msgs}`)
     fs.copyFileSync(filenames.pkgData, `${dataOutDir}/${filenames.pkgData}`)
@@ -32,5 +33,9 @@ if (!cli.config.jsOnly) {
 if (!cli.config.dataOnly) {
     cli.headerComment = `© ${cli.copyrightYear} ${cli.author} under the ${cli.license} license.\\n`
                       + `Source: ${cli.urls.src}\\nDocumentation: ${cli.urls.docs}`
-    execSync(`npx minify-js src dist --comment="${cli.headerComment}"`, { stdio: 'inherit' })
+    if (fs.existsSync('dist'))
+        for (const item of fs.readdirSync('dist', { recursive: true }))
+            if (!/data(?:[/\\]|$)/.test(item)) fs.rmSync(`dist/${item}`, { recursive: true, force: true })
+    execSync(`npx minify-js src dist --ignores=cli --comment="${cli.headerComment}"`, { stdio: 'inherit' })
+    fs.cpSync('src/cli', 'dist/cli', { recursive: true })
 }

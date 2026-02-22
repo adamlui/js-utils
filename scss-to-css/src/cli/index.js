@@ -8,14 +8,13 @@
         devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname)
     }
     env.debugMode = env.args.some(arg => /^--?debug(?:-?mode)?$/.test(arg))
-    env.modExt = `${ env.devMode ? '' : '.min' }.js`
 
     // Import LIBS
-    const compile = require(`./lib/compile${env.modExt}`),
-        { findSCSS } = require(`../scss-to-css${env.modExt}`),
+    const compile = require('./lib/compile'),
+        { findSCSS } = require(`../scss-to-css${ env.devMode ? '' : '.min' }.js`),
           fs = require('fs'),
-          init = require(`./lib/init${env.modExt}`),
-          log = require(`./lib/log${env.modExt}`),
+          init = require('./lib/init'),
+          log = require('./lib/log'),
           path = require('path')
 
     await init.cli()

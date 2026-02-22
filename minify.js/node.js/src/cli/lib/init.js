@@ -1,6 +1,6 @@
-const language = require(`./language${env.modExt}`),
-      log = require(`./log${env.modExt}`),
-      settings = require(`./settings${env.modExt}`)
+const language = require('./language'),
+      log = require('./log'),
+      settings = require('./settings')
 
 const dataPath = `../../${ env.devMode ? '../' : 'data/' }`
 
@@ -32,10 +32,10 @@ module.exports = {
             fs.copyFileSync(paths.src, paths.target) // use found template
 
         else { // use jsDelivr copy
-            const jsdURL = `${require(`./jsdelivr${env.modExt}`).pkgVerURL}/${filename}/`
+            const jsdURL = `${require('./jsdelivr').pkgVerURL}/${filename}/`
             log.data(`${cli.msgs.info_fetchingRemoteConfigFrom} ${jsdURL}...`)
             try {
-                const data = require(`./data${env.modExt}`),
+                const data = require('./data'),
                       resp = await data.fetch(jsdURL)
                 if (resp.ok) data.atomicWrite(paths.target, await resp.text())
                 else return log.warn(`${cli.msgs.warn_remoteConfigNotFound}: ${jsdURL} (${resp.status})`)

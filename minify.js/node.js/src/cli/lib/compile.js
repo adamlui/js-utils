@@ -1,9 +1,9 @@
-const log = require(`./log${env.modExt}`)
+const log = require('./log')
 
 module.exports = {
     js({ srcFiles, inputPath, inputArg, outputArg }) {
         const fs = require('fs'),
-            { minify } = require(`../../minify${env.modExt}`),
+            { minify } = require(`../../minify${ env.devMode ? '' : '.min' }.js`),
               path = require('path')
 
         // Build array of minification data
