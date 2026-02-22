@@ -5,11 +5,7 @@
 
 Object.assign(globalThis.api ??= {}, {
     name: 'generate-ip',
-    aliases: {
-        ipv4: ['ipV4', 'IPv4', 'IPV4', 'Ipv4', 'IpV4', 'ip', 'IP', 'Ip'],
-        ipv6: ['ipV6', 'IPv6', 'IPV6', 'Ipv6', 'IpV6'],
-        mac: ['MAC', 'Mac', 'ethernet', 'Ethernet']
-    }
+    regex: { ipv4: /^ip$|v4/i, ipv6: /v6/i, mac: /^(?:mac|ethernet)$/i }
 })
 
 const ipv4 = {
@@ -415,11 +411,11 @@ const logger = {
     }
 }
 
-api.exports = { ipv4, ipv6, mac }
-try { module.exports = { ...api.exports }} catch (err) {} // for Node.js
+api.exports = new Proxy({ ipv4, ipv6, mac }, {
+    get(target, requestedAPI) {
+        for (const [apiName, apiRegex] of Object.entries(api.regex))
+            if (apiRegex.test(requestedAPI)) return target[apiName]
+    }
+})
+try { module.exports = api.exports } catch (err) {} // for Node.js
 try { Object.assign(window, api.exports) } catch (err) {} // for browsers
-for (const ipAPI in api.aliases) // export aliases
-    api.aliases[ipAPI].forEach(alias => {
-        try { module.exports[alias] ??= module.exports[ipAPI] } catch (err) {} // for Node.js
-        try { window[alias] ??= window[ipAPI] } catch (err) {} // for browsers
-    });

@@ -8,9 +8,9 @@ const fs = require('fs'),
 
 Object.assign(globalThis.api ??= {},
     require(`${ /[\\/]src(?:[\\/]|$)/i.test(__dirname) ? '../' : './data/' }package-data.json`))
-api.aliases = {
-    minify: ['build', 'Build', 'compile', 'Compile', 'compress', 'Compress', 'Minify'],
-    findJS: ['find', 'Find', 'findjs', 'findJs', 'Findjs', 'FindJs', 'FindJS', 'search', 'Search']
+api.regex = {
+    minify: /^(?:build|comp(?:ile|ress)|minify)$/i,
+    findJS: /^(?:find|search)(?:js)?$/i
 }
 
 function findJS(searchDir, options = {}) {
@@ -248,6 +248,10 @@ const logger = {
     }
 }
 
-module.exports = { minify, findJS }
-for (const fn in api.aliases) // export aliases
-    api.aliases[fn].forEach(alias => module.exports[alias] ??= module.exports[fn]);
+api.exports = new Proxy({ minify, findJS }, {
+    get(target, requestedMethod) {
+        for (const [methodName, methodRegex] of Object.entries(api.regex))
+            if (methodRegex.test(requestedMethod)) return target[methodName]
+    }
+})
+try { module.exports = api.exports } catch (err) {}

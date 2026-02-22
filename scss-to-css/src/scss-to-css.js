@@ -8,9 +8,9 @@ const fs = require('fs'),
 
 Object.assign(globalThis.api ??= {},
     require(`${ /[\\/]src(?:[\\/]|$)/i.test(__dirname) ? '../' : './data/' }package-data.json`))
-api.aliases = {
-    compile: ['build', 'Build', 'Compile', 'compress', 'Compress', 'minify', 'Minify'],
-    findSCSS: ['find', 'Find', 'findscss', 'findScss', 'Findscss', 'FindScss', 'FindSCSS', 'search', 'Search']
+api.regex = {
+    compile: /^(?:build|comp(?:ile|ress)|minify)$/i,
+    findSCSS: /^(?:find|search)(?:scss)?$/i
 }
 
 function findSCSS(searchDir, options = {}) {
@@ -227,6 +227,10 @@ const logger = {
     }
 }
 
-module.exports = { compile, findSCSS }
-for (const fn in api.aliases) // export aliases
-    api.aliases[fn].forEach(alias => module.exports[alias] ??= module.exports[fn]);
+api.exports = new Proxy({ compile, findSCSS }, {
+    get(target, requestedMethod) {
+        for (const [methodName, methodRegex] of Object.entries(api.regex))
+            if (methodRegex.test(requestedMethod)) return target[methodName]
+    }
+})
+try { module.exports = api.exports } catch (err) {}

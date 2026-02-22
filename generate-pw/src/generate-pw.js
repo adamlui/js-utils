@@ -5,17 +5,11 @@
 
 Object.assign(globalThis.api ??= {}, {
     name: 'generate-pw',
-    aliases: {
-        generatePassword: [
-            'generate', 'generatepassword', 'generatepw', 'generatePw', 'generatePW',
-            'Generate', 'Generatepassword', 'GeneratePassword', 'Generatepw', 'GeneratePw', 'GeneratePW'
-        ],
-        generatePasswords: [
-            'generatepasswords', 'generatepws', 'generatePws', 'generatePWs', 'generatePWS',
-            'Generatepasswords', 'GeneratePasswords', 'Generatepws', 'GeneratePws', 'GeneratePWs', 'GeneratePWS'
-        ],
-        strictify: ['Strictify'],
-        validateStrength: ['validate', 'Validate', 'validatestrength', 'Validatestrength', 'ValidateStrength']
+    regex: {
+        generatePassword: /^gen(?:erate)?(?:password|pw)?$/i,
+        generatePasswords: /^gen(?:erate)?(?:password|pw)s$/i,
+        strictify: /^strictify$/i,
+        validateStrength: /^validate(?:strength)?$/i
     },
     charsets: {
         lower: 'abcdefghijklmnopqrstuvwxyz',
@@ -379,10 +373,11 @@ const logger = {
     }
 }
 
-api.exports = { generatePassword, generatePasswords, strictify, validateStrength }
-try { module.exports = { ...api.exports }} catch (err) {} // for Node.js
-try { window.pw = { ...api.exports }} catch (err) {} // for browsers
-for (const fn in api.aliases) { // export aliases
-    try { api.aliases[fn].forEach(alias => module.exports[alias] ??= module.exports[fn]) } catch (err) {} // for Node.js
-    try { api.aliases[fn].forEach(alias => window.pw[alias] ??= window.pw[fn]) } catch (err) {} // for browsers
-}
+api.exports = new Proxy({ generatePassword, generatePasswords, strictify, validateStrength }, {
+    get(target, requestedMethod) {
+        for (const [methodName, methodRegex] of Object.entries(api.regex))
+            if (methodRegex.test(requestedMethod)) return target[methodName]
+    }
+})
+try { module.exports = api.exports } catch (err) {} // for Node.js
+try { Object.assign(window, api.exports) } catch (err) {} // for browsers

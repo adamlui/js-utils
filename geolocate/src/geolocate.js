@@ -5,7 +5,7 @@
 
 Object.assign(globalThis.api ??= {}, {
     name: 'geolocate',
-    aliases: { geolocate: ['Geolocate', 'geoLocate', 'GeoLocate', 'locate', 'Locate'] }
+    regex: { geolocate: /^(?:geo)?locate$/i }
 })
 
 async function geolocate(ips, options = {}) {
@@ -138,9 +138,11 @@ const logger = {
     }
 }
 
-try { module.exports = { geolocate }} catch (err) {} // for Node.js
-try { window.geo = { geolocate }} catch (err) {} // for browsers
-for (const fn in api.aliases) { // export aliases
-    try { api.aliases[fn].forEach(alias => module.exports[alias] ??= module.exports[fn]) } catch (err) {} // for Node.js
-    try { api.aliases[fn].forEach(alias => window.geo[alias] ??= window.geo[fn]) } catch (err) {} // for browsers
-}
+api.exports = new Proxy({ geolocate }, {
+    get(target, requestedMethod) {
+        for (const [methodName, methodRegex] of Object.entries(api.regex))
+            if (methodRegex.test(requestedMethod)) return target[methodName]
+    }
+})
+try { module.exports = api.exports } catch (err) {} // for Node.js
+try { Object.assign(window, api.exports) } catch (err) {} // for browsers
