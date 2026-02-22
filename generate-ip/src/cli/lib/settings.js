@@ -8,10 +8,10 @@ module.exports = {
     configFilename: 'generate-ip.config.mjs',
 
     controls: {
-        qty: { type: 'param', valType: 'positiveInt', defaultVal: 1, regex: /^--?qu?a?n?ti?t?y(?:=.*|$)/ },
-        network: { type: 'param', regex: /^--network(?:=.*|$)/ },
-        uiLang: { type: 'param', valType: 'langCode', regex: /^--?ui[-_]?lang(?:=.*|$)/ },
-        config: { type: 'param', valType: 'filepath', regex: /^--?config(?:=.*|$)/ },
+        qty: { type: 'param', valType: 'positiveInt', defaultVal: 1, regex: /^--?qu?a?n?ti?t?y(?:[=\s].*|$)/ },
+        network: { type: 'param', regex: /^--network(?:[=\s].*|$)/ },
+        uiLang: { type: 'param', valType: 'langCode', regex: /^--?ui[-_]?lang(?:[=\s].*|$)/ },
+        config: { type: 'param', valType: 'filepath', regex: /^--?config(?:[=\s].*|$)/ },
         ipv6mode: { type: 'flag', mode: true, regex: /^--?(?:ip)?v?6(?:[-_]?mode)?$/ },
         macMode: { type: 'flag', mode: true, regex: /^--?m(?:ac)?(?:[-_]?mode)?$/ },
         quietMode: { type: 'flag', regex: /^--?q(?:uiet)?(?:[-_]?mode)?$/ },
@@ -64,7 +64,8 @@ module.exports = {
             } catch (err) {
                 log.configURLandExit(`${cli.msgs.error_failedToLoadConfigFile}:`, cli.configPath, `\n${err.message}`) }
 
-        env.args.forEach(arg => { // load from CLI arg (overriding config file loads)
+        for (let i = 0 ; i < env.args.length ; i++) { // load from CLI arg (overriding config file loads)
+            const arg = env.args[i]
             if (/^[^-]|--?(?:config|debug)/.test(arg) && arg != 'init') return
             const ctrlKey = Object.keys(this.controls).find(key => this.controls[key]?.regex?.test(arg))
             if (!ctrlKey && cli.msgs) log.errorAndExit(`[${arg}] ${cli.msgs.error_notRecognized}.`)
@@ -72,9 +73,16 @@ module.exports = {
             const ctrl = this.controls[ctrlKey]
             if (ctrl.mode) // set cli.config.mode to mode name
                 cli.config.mode = ctrlKey.replace(/mode$/i, '').toLowerCase()
-            else // init flag/param/cmd cli.config[ctrlKey] val
-                cli.config[ctrlKey] = ctrl.type == 'param' ? arg.split('=')[1]?.trim() ?? '' : true
-        })
+            else { // init flag/param/cmd cli.config[ctrlKey] val
+                if (ctrl.type == 'param')
+                    cli.config[ctrlKey] =
+                        arg.includes('=') ? arg.split('=')[1]?.trim() ?? '' // =val
+                      : (i +1 < env.args.length && !env.args[i +1].startsWith('-')) ? env.args[++i] // dashless val
+                      : '' // val-less --key passed
+                else // flag/cmd
+                    cli.config[ctrlKey] = true
+            }
+        }
 
         this.parseValidateConfig(inputCtrlKeys)
 
