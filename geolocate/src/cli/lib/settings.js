@@ -1,5 +1,4 @@
 const fs = require('fs'),
-      log = require('./log'),
       path = require('path')
 
 ;(globalThis.cli ??= {}).config = {}

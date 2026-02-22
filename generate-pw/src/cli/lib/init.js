@@ -1,5 +1,4 @@
 const language = require('./language'),
-      log = require('./log'),
       settings = require('./settings')
 
 const dataPath = `../../${ env.modes.dev ? '../' : 'data/' }`

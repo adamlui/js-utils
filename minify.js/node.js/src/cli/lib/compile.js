@@ -1,5 +1,3 @@
-const log = require('./log')
-
 module.exports = {
     js({ srcFiles, inputPath, inputArg, outputArg }) {
         const fs = require('fs'),

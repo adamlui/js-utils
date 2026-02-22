@@ -12,7 +12,10 @@ export default [
         files: ['**/*.{js,mjs}'],
         languageOptions: {
             ecmaVersion: 'latest', sourceType: 'script',
-            globals: { ...globals.browser, ...globals.node, api: 'writable', cli: 'writable', env: 'writable' }
+            globals: {
+                ...globals.browser, ...globals.node,
+                api: 'writable', cli: 'writable', env: 'writable', log: 'writable'
+            }
         },
         plugins: { 'import': importPlugin, 'js-styles': stylisticJS, regexp },
         rules: {

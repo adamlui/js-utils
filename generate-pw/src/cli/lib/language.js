@@ -1,5 +1,4 @@
-const data = require('./data'),
-      log = require('./log')
+const data = require('./data')
 
 module.exports = {
 

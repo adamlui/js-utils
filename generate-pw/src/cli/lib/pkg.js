@@ -1,5 +1,3 @@
-const log = require('./log')
-
 module.exports = {
     getVer(type = 'any') { // or <'global'|'local'>
         let pkgVer

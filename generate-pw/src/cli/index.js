@@ -11,10 +11,10 @@
     env.modes.debug = env.args.some(arg => /^--?debug(?:[-_]?mode)?$/.test(arg))
 
     // Import LIBS
+    globalThis.log = require(`${env.paths.lib}/log`)
     const clipboardy = require('node-clipboardy'),
         { generatePassword } = require(`../generate-pw${ env.modes.dev ? '' : '.min' }.js`),
-          init = require(`${env.paths.lib}/init`),
-          log = require(`${env.paths.lib}/log`)
+          init = require(`${env.paths.lib}/init`)
 
     await init.cli()
 

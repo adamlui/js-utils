@@ -11,11 +11,11 @@
     env.modes.debug = env.args.some(arg => /^--?debug(?:[-_]?mode)?$/.test(arg))
 
     // Import LIBS
+    globalThis.log = require(`${env.paths.lib}/log`)
     const compile = require(`${env.paths.lib}/compile`),
         { findJS } = require(`../minify${ env.modes.dev ? '' : '.min' }.js`),
           fs = require('fs'),
           init = require(`${env.paths.lib}/init`),
-          log = require(`${env.paths.lib}/log`),
           path = require('path')
 
     await init.cli()
