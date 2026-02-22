@@ -26,17 +26,17 @@ function findJS(searchDir, options = {}) {
         ignores: []        // files/dirs to exclude from search results
     }
 
-    log.prefix = 'findJS()'
+    logger.prefix = 'findJS()'
 
     // Validate searchDir
     if (typeof searchDir != 'string')
-        log.errHelpURLandThrow({ errMsg: '1st arg <searchDir> must be a string.', helpURL: docURL })
+        logger.errHelpURLandThrow({ errMsg: '1st arg <searchDir> must be a string.', helpURL: docURL })
     else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir)
         if (!fs.existsSync(searchPath)) {
-            log.error('1st arg <searchDir> must be an existing directory.')
-            log.error(`${searchPath} does not exist.`)
-            return log.helpURL(docURL)
+            logger.error('1st arg <searchDir> must be an existing directory.')
+            logger.error(`${searchPath} does not exist.`)
+            return logger.helpURL(docURL)
         }
     }
 
@@ -48,7 +48,7 @@ function findJS(searchDir, options = {}) {
     // Search for unminified JS
     const dirFiles = fs.readdirSync(searchDir), jsFiles = []
     if (options.verbose && !options.isRecursing)
-        log.info('Searching for unminified JS files...')
+        logger.info('Searching for unminified JS files...')
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file)
         const shouldIgnore = options.ignores.some(pattern =>
@@ -56,7 +56,7 @@ function findJS(searchDir, options = {}) {
           : file == pattern
         )
         if (shouldIgnore) {
-            if (options.verbose) log.info(`** ${file} ignored`)
+            if (options.verbose) logger.info(`** ${file} ignored`)
         } else if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
             && options.recursive // only proceed if recursion enabled
             && (options.dotFolders || !file.startsWith('.')) // exclude dotfolders if prohibited
@@ -69,10 +69,10 @@ function findJS(searchDir, options = {}) {
 
     // Log/return final result
     if (options.verbose && !options.isRecursing) {
-        log.info('Search complete!',
+        logger.info('Search complete!',
             `${ jsFiles.length || 'No' } file${ jsFiles.length == 1 ? '' : 's' } found.`)
         if (findJS.caller?.name != 'minify' && typeof window != 'undefined')
-            log.info('Check returned array.')
+            logger.info('Check returned array.')
     }
     return options.isRecursing || jsFiles.length ? jsFiles : []
 }
@@ -94,11 +94,11 @@ function minify(input, options = {}) {
         comment: ''            // header comment to prepend to minified code
     }
 
-    log.prefix = 'minify()'
+    logger.prefix = 'minify()'
 
     // Validate input
     if (typeof input != 'string')
-        log.errHelpURLandThrow({ errMsg: '1st arg <input> must be a string.', helpURL: docURL })
+        logger.errHelpURLandThrow({ errMsg: '1st arg <input> must be a string.', helpURL: docURL })
 
     // Validate/init options
     if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
@@ -114,11 +114,11 @@ function minify(input, options = {}) {
         if (stats.isFile()) {
             if (!/\.[cm]?jsx?$/i.test(input)) {
                 const err = new Error(`${input} is not a JavaScript file (.js, .mjs, .cjs, .jsx)`)
-                log.error(err.message)
+                logger.error(err.message)
                 fs.closeSync(fd)
                 return { code: '', srcPath: path.resolve(process.cwd(), input), error: err }
             }
-            if (options.verbose) log.info(`** Minifying ${input}...`)
+            if (options.verbose) logger.info(`** Minifying ${input}...`)
             const buffer = Buffer.alloc(stats.size)
             fs.readSync(fd, buffer, 0, stats.size, 0)
             fs.closeSync(fd)
@@ -126,15 +126,15 @@ function minify(input, options = {}) {
             if (options.comment)
                 minifyResult.code = prependComment(minifyResult.code, options.comment)
             if (minifyResult.error)
-                log.error(minifyResult.error.message)
+                logger.error(minifyResult.error.message)
             else if (options.verbose && typeof window != 'undefined')
-                log.info('Minification complete! Check returned object.')
+                logger.info('Minification complete! Check returned object.')
             return { code: minifyResult.code, srcPath: path.resolve(process.cwd(), input), error: minifyResult.error }
 
         } else { // dir path passed
             fs.closeSync(fd)
             const minifyResult = findJS(input, options)?.map(jsPath => { // minify found JS files
-                if (options.verbose) log.info(`** Minifying ${jsPath}...`)
+                if (options.verbose) logger.info(`** Minifying ${jsPath}...`)
                 const srcCode = fs.readFileSync(jsPath, 'utf8'),
                       minifyResult = uglifyJS.minify(srcCode, minifyOptions),
                       relPath = options.relativeOutput ? undefined
@@ -142,28 +142,28 @@ function minify(input, options = {}) {
                 if (options.comment)
                     minifyResult.code = prependComment(minifyResult.code, options.comment)
                 if (minifyResult.error)
-                    log.error(minifyResult.error.message)
+                    logger.error(minifyResult.error.message)
                 return { code: minifyResult.code, srcPath: jsPath, relPath, error: minifyResult.error }
             }).filter(data => !data.error) // filter out failed minifications
             if (options.verbose) {
                 if (minifyResult.length && typeof window != 'undefined')
-                    log.info('Minification complete! Check returned object.')
+                    logger.info('Minification complete! Check returned object.')
                 else
-                    log.info('No unminified JavaScript files processed.')
+                    logger.info('No unminified JavaScript files processed.')
             }
 
             // Rewrite import paths if enabled and multiple files processed
             if (options.rewriteImports && minifyResult && minifyResult.length > 1) {
-                if (options.verbose) log.info('** Rewriting import paths...')
+                if (options.verbose) logger.info('** Rewriting import paths...')
                 const minifiedFiles = minifyResult.map(file => path.basename(file.srcPath, '.js'))
                 minifyResult.forEach(minifiedFile => minifiedFiles.forEach(filename => {
                     const reMatch = new RegExp(`(\\./?)?\\b${filename}\\.js(['"])`, 'g'),
                           before = minifiedFile.code
                     minifiedFile.code = minifiedFile.code.replace(reMatch, `$1${filename}.min.js$2`)
                     if (before != minifiedFile.code && options.verbose)
-                        log.info(`Updated ${filename}.js in ${path.basename(minifiedFile.srcPath)}`)
+                        logger.info(`Updated ${filename}.js in ${path.basename(minifiedFile.srcPath)}`)
                 }))
-                if (options.verbose) log.info('Import paths rewritten.')
+                if (options.verbose) logger.info('Import paths rewritten.')
             }
 
             return minifyResult
@@ -173,14 +173,14 @@ function minify(input, options = {}) {
         if (err.code == 'ENOENT') { // minify based on src code arg
             const isGulpEnv = process.argv.some(arg => arg.includes('gulp'))
             if (options.verbose && !isGulpEnv)
-                log.info('** Minifying passed source code...')
+                logger.info('** Minifying passed source code...')
             const minifyResult = uglifyJS.minify(input, minifyOptions)
             if (options.comment)
                 minifyResult.code = prependComment(minifyResult.code, options.comment)
             if (minifyResult.error)
-                log.error(minifyResult.error.message)
+                logger.error(minifyResult.error.message)
             else if (options.verbose && !isGulpEnv)
-                log.info('Minification complete! Check returned object.')
+                logger.info('Minification complete! Check returned object.')
             return { code: minifyResult.code, srcPath: undefined, error: minifyResult.error }
         }
         throw err
@@ -204,23 +204,23 @@ function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
     if (typeof options != 'object') { // validate as obj
         let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) +1
         optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
-        log.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
-        log.info('Example valid call:', exampleCall)
-        log.validOptions(defaultOptions) ; log.helpURL(helpURL)
+        logger.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
+        logger.info('Example valid call:', exampleCall)
+        logger.validOptions(defaultOptions) ; logger.helpURL(helpURL)
         return false
     }
     for (const key in options) { // validate each key
         if (key == 'isRecursing' || !Object.prototype.hasOwnProperty.call(defaultOptions, key))
             continue // to next key
         else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
-            log.error(`[${key}] option can only be \`true\` or \`false\`.`)
-            log.helpURL(helpURL)
+            logger.error(`[${key}] option can only be \`true\` or \`false\`.`)
+            logger.helpURL(helpURL)
             return false
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10)
             if (isNaN(options[key]) || options[key] < 1) {
-                log.error(`[${key}] option can only be an integer > 0.`)
-                log.helpURL(helpURL)
+                logger.error(`[${key}] option can only be an integer > 0.`)
+                logger.helpURL(helpURL)
                 return false
             }
         }
@@ -229,7 +229,7 @@ function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
     return true
 }
 
-const log = {
+const logger = {
     prefix: api.name,
 
     errHelpURLandThrow({ errMsg, helpURL }) { this.error(errMsg) ; this.helpURL(helpURL) ; throw new Error(errMsg) },

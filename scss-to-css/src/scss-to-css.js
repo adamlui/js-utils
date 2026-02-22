@@ -25,17 +25,17 @@ function findSCSS(searchDir, options = {}) {
         ignores: []        // files/dirs to exclude from search results
     }
 
-    log.prefix = 'findSCSS()'
+    logger.prefix = 'findSCSS()'
 
     // Validate searchDir
     if (typeof searchDir != 'string')
-        log.errHelpURLandThrow({ errMsg: '1st arg <searchDir> must be a string.', helpURL: docURL })
+        logger.errHelpURLandThrow({ errMsg: '1st arg <searchDir> must be a string.', helpURL: docURL })
     else { // verify searchDir path existence
         const searchPath = path.resolve(process.cwd(), searchDir)
         if (!fs.existsSync(searchPath)) {
-            log.error('1st arg <searchDir> must be an existing directory.')
-            log.error(`${searchPath} does not exist.`)
-            return log.helpURL(docURL)
+            logger.error('1st arg <searchDir> must be an existing directory.')
+            logger.error(`${searchPath} does not exist.`)
+            return logger.helpURL(docURL)
         }
     }
 
@@ -47,7 +47,7 @@ function findSCSS(searchDir, options = {}) {
     // Search for files
     const dirFiles = fs.readdirSync(searchDir), scssFiles = []
     if (options.verbose && !options.isRecursing)
-        log.info('Searching for files...')
+        logger.info('Searching for files...')
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file)
         const shouldIgnore = options.ignores.some(pattern =>
@@ -55,7 +55,7 @@ function findSCSS(searchDir, options = {}) {
           : file == pattern
         )
         if (shouldIgnore) {
-            if (options.verbose) log.info(`** ${file} ignored`)
+            if (options.verbose) logger.info(`** ${file} ignored`)
         } else if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
             && options.recursive // only proceed if recursion enabled
             && (options.dotFolders || !file.startsWith('.')) // exclude dotfolders if prohibited
@@ -67,10 +67,10 @@ function findSCSS(searchDir, options = {}) {
 
     // Log/return final results
     if (options.verbose && !options.isRecursing) {
-        log.info('Search complete!',
+        logger.info('Search complete!',
             `${ scssFiles.length || 'No' } file${ scssFiles.length == 1 ? '' : 's' } found.`)
         if (findSCSS.caller?.name != 'compile' && typeof window != 'undefined')
-            log.info('Check returned array.')
+            logger.info('Check returned array.')
     }
     return options.isRecursing || scssFiles.length ? scssFiles : []
 }
@@ -91,11 +91,11 @@ function compile(input, options = {}) {
         comment: ''            // header comment to prepend to compiled CSS
     }
 
-    log.prefix = 'compile()'
+    logger.prefix = 'compile()'
 
     // Validate input
     if (typeof input != 'string')
-        log.errHelpURLandThrow({ errMsg: '1st arg <input> must be a string.', helpURL: docURL })
+        logger.errHelpURLandThrow({ errMsg: '1st arg <input> must be a string.', helpURL: docURL })
 
     // Validate/init options
     if (!validateOptions({ options, defaultOptions, helpURL: docURL, exampleCall })) return
@@ -110,24 +110,24 @@ function compile(input, options = {}) {
     }
     if (fs.existsSync(input)) { // compile based on path arg
         if (/s[ac]ss$/.test(input) && fs.statSync(input).isFile()) { // file path passed
-            if (options.verbose) log.info(`** Compiling ${input}...`)
+            if (options.verbose) logger.info(`** Compiling ${input}...`)
             try { // to compile file passed
                 const compileResult = sass.compile(input, compileOptions)
                 if (options.comment)
                     compileResult.css = prependComment(compileResult.css, options.comment)
                 if (options.verbose && typeof window != 'undefined')
-                    log.info('Compilation complete! Check returned object.')
+                    logger.info('Compilation complete! Check returned object.')
                 return {
                     code: compileResult.css, srcMap: compileResult.sourceMap,
                     srcPath: path.resolve(process.cwd(), input), error: undefined
                 }
             } catch (err) {
-                log.error(err.message)
+                logger.error(err.message)
                 return { code: undefined, srcMap: undefined, srcPath: undefined, error: err }
             }
         } else { // dir path passed
             const compileResult = findSCSS(input, options)?.map(scssPath => { // compile found SCSS files
-                if (options.verbose) log.info(`** Compiling ${scssPath}...`)
+                if (options.verbose) logger.info(`** Compiling ${scssPath}...`)
                 try { // to compile found file
                     const compileResult = sass.compile(scssPath, compileOptions),
                           relPath = options.relativeOutput ? undefined
@@ -139,28 +139,28 @@ function compile(input, options = {}) {
                         error: undefined
                     }
                 } catch (err) {
-                    log.error(err.message)
+                    logger.error(err.message)
                     return { code: undefined, srcMap: undefined, srcPath: undefined, error: err }
                 }
             }).filter(data => !data.error ) // filter out failed compilations
             if (options.verbose) {
                 if (compileResult.length && typeof window != 'undefined')
-                    log.info('Compilation complete! Check returned object.')
+                    logger.info('Compilation complete! Check returned object.')
                 else
-                    log.info('No SCSS files processed.')
+                    logger.info('No SCSS files processed.')
             }
             return compileResult
         }
     } else { // compile based on src code arg
         if (options.verbose)
-            log.info('** Compiling passed source code...')
+            logger.info('** Compiling passed source code...')
         try { // to compile passed src code
             const compileResult = sass.compileString(input, compileOptions)
             if (options.comment)
                 compileResult.css = prependComment(compileResult.css, options.comment)
             return { code: compileResult.css, srcMap: compileResult.sourceMap, srcPath: undefined, error: undefined }
         } catch (err) {
-            log.error(err.message)
+            logger.error(err.message)
             return { code: undefined, srcMap: undefined, srcPath: undefined, error: err }
         }
     }
@@ -183,23 +183,23 @@ function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
     if (typeof options != 'object') { // validate as obj
         let optionsPos = exampleCall.split(',').findIndex(arg => arg.trim().startsWith('{')) +1
         optionsPos += ['st','nd','rd'][optionsPos -1] || 'th' // append ordinal suffix
-        log.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
-        log.info('Example valid call:', exampleCall)
-        log.validOptions(defaultOptions) ; log.helpURL(helpURL)
+        logger.error(`${ optionsPos == '0th' ? '[O' : optionsPos + ' arg [o' }ptions] can only be an object of key/vals.`)
+        logger.info('Example valid call:', exampleCall)
+        logger.validOptions(defaultOptions) ; logger.helpURL(helpURL)
         return false
     }
     for (const key in options) { // validate each key
         if (key == 'isRecursing' || !Object.prototype.hasOwnProperty.call(defaultOptions, key))
             continue // to next key
         else if (booleanOptions.includes(key) && typeof options[key] != 'boolean') {
-            log.error(`[${key}] option can only be \`true\` or \`false\`.`)
-            log.helpURL(helpURL)
+            logger.error(`[${key}] option can only be \`true\` or \`false\`.`)
+            logger.helpURL(helpURL)
             return false
         } else if (integerOptions.includes(key)) {
             options[key] = parseInt(options[key], 10)
             if (isNaN(options[key]) || options[key] < 1) {
-                log.error(`[${key}] option can only be an integer > 0.`)
-                log.helpURL(helpURL)
+                logger.error(`[${key}] option can only be an integer > 0.`)
+                logger.helpURL(helpURL)
                 return false
             }
         }
@@ -208,7 +208,7 @@ function validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
     return true
 }
 
-const log = {
+const logger = {
     prefix: api.name,
 
     errHelpURLandThrow({ errMsg, helpURL }) { this.error(errMsg) ; this.helpURL(helpURL) ; throw new Error(errMsg) },
