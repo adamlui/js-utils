@@ -5,14 +5,14 @@
 
     globalThis.env = {
         args: process.argv.slice(2),
-        devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname),
+        modes: { dev: /[\\/]src(?:[\\/]|$)/i.test(__dirname) },
         paths: { lib: './lib' }
     }
-    env.debugMode = env.args.some(arg => /^--?debug(?:[-_]?mode)?$/.test(arg))
+    env.modes.debug = env.args.some(arg => /^--?debug(?:[-_]?mode)?$/.test(arg))
 
     // Import LIBS
     const compile = require(`${env.paths.lib}/compile`),
-        { findJS } = require(`../minify${ env.devMode ? '' : '.min' }.js`),
+        { findJS } = require(`../minify${ env.modes.dev ? '' : '.min' }.js`),
           fs = require('fs'),
           init = require(`${env.paths.lib}/init`),
           log = require(`${env.paths.lib}/log`),
@@ -52,7 +52,7 @@
         })
 
     // Print/compile files
-    if (env.debugMode || cli.config.dryRun) {
+    if (env.modes.debug || cli.config.dryRun) {
         if (srcFiles.length) {
             log.info(`${cli.msgs.info_filesToBeMinned}:`)
             srcFiles.forEach(file => log.dim(file))

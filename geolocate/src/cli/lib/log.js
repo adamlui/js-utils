@@ -15,7 +15,7 @@ module.exports = {
     configURL() { this.info(`\n${cli.msgs.info_exampleValidConfigFile}: ${cli.urls.config}`) },
     configURLandExit(...args) { this.error(...args) ; this.configURL() ; process.exit(1) },
     data(msg) { console.log(`\n${this.colors.bw}${msg}${this.colors.nc}`) },
-    debug(msg) { if (env.debugMode) console.debug(`\n${this.colors.bo}DEBUG:`, msg, this.colors.nc, '\n') },
+    debug(msg) { if (env.modes.debug) console.debug(`\n${this.colors.bo}DEBUG:`, msg, this.colors.nc, '\n') },
     dim(msg) { console.log(`${this.colors.gry}${msg}${this.colors.nc}`) },
     error(...args) { console.error(`\n${this.colors.br}ERROR:`, ...args, this.colors.nc) },
     errorAndExit(...args) { this.error(...args) ; this.helpCmdAndDocURL() ; process.exit(1) },

@@ -3,7 +3,7 @@ const log = require('./log')
 module.exports = {
     js({ srcFiles, inputPath, inputArg, outputArg }) {
         const fs = require('fs'),
-            { minify } = require(`../../minify${ env.devMode ? '' : '.min' }.js`),
+            { minify } = require(`../../minify${ env.modes.dev ? '' : '.min' }.js`),
               path = require('path')
 
         // Build array of minification data

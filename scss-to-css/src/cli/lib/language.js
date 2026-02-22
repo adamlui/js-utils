@@ -65,7 +65,7 @@ module.exports = {
         if (env.msgs && langCode == cli.lang) return env.msgs // don't re-fetch same msgs
 
         let msgs = data.flatten( // local ones
-            require(`../../${ env.devMode ? '../_locales/en/' : 'data/' }messages.json`))
+            require(`../../${ env.modes.dev ? '../_locales/en/' : 'data/' }messages.json`))
 
         if (!langCode.startsWith('en')) { // fetch non-English msgs from jsDelivr
             const msgHostURL = `${require('./jsdelivr').commitURL(cli.commitHashes.locales)}/_locales/`

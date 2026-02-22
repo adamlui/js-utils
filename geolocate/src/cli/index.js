@@ -5,14 +5,14 @@
 
     globalThis.env = {
         args: process.argv.slice(2),
-        devMode: /[\\/]src(?:[\\/]|$)/i.test(__dirname),
+        modes: { dev: /[\\/]src(?:[\\/]|$)/i.test(__dirname) },
         paths: { lib: './lib' }
     }
-    env.debugMode = env.args.some(arg => /^--?debug(?:[-_]?mode)?$/.test(arg))
+    env.modes.debug = env.args.some(arg => /^--?debug(?:[-_]?mode)?$/.test(arg))
 
     // Import LIBS
     const clipboardy = require('node-clipboardy'),
-          geo = require(`../geolocate${ env.devMode ? '' : '.min' }.js`),
+          geo = require(`../geolocate${ env.modes.dev ? '' : '.min' }.js`),
           init = require(`${env.paths.lib}/init`),
           log = require(`${env.paths.lib}/log`)
 

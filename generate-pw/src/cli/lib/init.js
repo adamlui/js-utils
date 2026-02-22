@@ -2,14 +2,14 @@ const language = require('./language'),
       log = require('./log'),
       settings = require('./settings')
 
-const dataPath = `../../${ env.devMode ? '../' : 'data/' }`
+const dataPath = `../../${ env.modes.dev ? '../' : 'data/' }`
 
 module.exports = {
 
     async cli() {
         Object.assign(globalThis.cli ??= {}, require(`${dataPath}package-data.json`))
         cli.lang = settings.load('uiLang') || (
-            env.debugMode ? language.generateRandomLang({ excludes: ['en'] }) : language.getSysLang() )
+            env.modes.debug ? language.generateRandomLang({ excludes: ['en'] }) : language.getSysLang() )
         cli.msgs = await language.getMsgs(cli.lang)
         cli.urls.cliDocs = `${cli.urls.docs}/#-command-line-usage`
         if (!cli.lang.startsWith('en')) { // localize cli.urls.cliDocs
