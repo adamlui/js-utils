@@ -248,10 +248,9 @@ const logger = {
     }
 }
 
-api.exports = new Proxy({ minify, findJS }, {
+module.exports = new Proxy({ minify, findJS }, {
     get(target, requestedMethod) {
         for (const [methodName, methodRegex] of Object.entries(api.regex))
             if (methodRegex.test(requestedMethod)) return target[methodName]
     }
 })
-module.exports = api.exports

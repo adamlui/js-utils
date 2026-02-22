@@ -227,10 +227,9 @@ const logger = {
     }
 }
 
-api.exports = new Proxy({ compile, findSCSS }, {
+module.exports = new Proxy({ compile, findSCSS }, {
     get(target, requestedMethod) {
         for (const [methodName, methodRegex] of Object.entries(api.regex))
             if (methodRegex.test(requestedMethod)) return target[methodName]
     }
 })
-module.exports = api.exports
