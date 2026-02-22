@@ -233,4 +233,4 @@ api.exports = new Proxy({ compile, findSCSS }, {
             if (methodRegex.test(requestedMethod)) return target[methodName]
     }
 })
-try { module.exports = api.exports } catch (err) {}
+module.exports = api.exports
