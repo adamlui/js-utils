@@ -16,6 +16,6 @@ jobs:
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org
-      - run: npm install -g npm
       - run: cd geolocate && npm ci
+      - run: cd geolocate && npm run build
       - run: cd geolocate && npm publish --provenance

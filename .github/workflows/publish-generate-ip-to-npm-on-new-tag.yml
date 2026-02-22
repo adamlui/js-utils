@@ -16,6 +16,6 @@ jobs:
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org
-      - run: npm install -g npm
       - run: cd generate-ip && npm ci
+      - run: cd generate-ip && npm run build
       - run: cd generate-ip && npm publish --access public --provenance
