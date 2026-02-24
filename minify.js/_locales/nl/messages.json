@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Kon doc-locales niet ophalen" },
   "warn_remoteConfigNotFound": { "message": "Configuratiebestand op afstand niet gevonden" },
   "warn_remoteConfigFailed": { "message": "Kon configuratiebestand op afstand niet ophalen" },
+  "warn_option": { "message": "Optie" },
+  "warn_noLongerHasAnyEffect": { "message": "heeft geen effect meer" },
   "info_exampleValidConfigFile": { "message": "Voorbeeld geldig configuratiebestand" },
   "info_exampleValidCmd": { "message": "Voorbeeld geldig commando" },
   "info_filesToBeMinned": { "message": "JavaScript-bestanden die moeten worden geminimaliseerd" },

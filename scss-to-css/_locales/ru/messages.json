@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Конфигурационный файл уже существует" },
   "warn_remoteConfigNotFound": { "message": "Файл удаленной конфигурации не найден" },
   "warn_remoteConfigFailed": { "message": "Не удалось получить удаленный файл конфигурации" },
+  "warn_option": { "message": "Опция" },
+  "warn_noLongerHasAnyEffect": { "message": "больше не имеет никакого эффекта" },
   "warn_docLocalesFetchFailed": { "message": "Не удалось получить локали документов" },
   "info_exampleValidConfigFile": { "message": "Пример допустимого файла конфигурации" },
   "info_exampleValidCmd": { "message": "Пример допустимой команды" },

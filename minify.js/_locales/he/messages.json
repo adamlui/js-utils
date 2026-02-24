@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "טעינת אזורי המסמכים נכשלה" },
   "warn_remoteConfigNotFound": { "message": "קובץ התצורה מרחוק לא נמצא" },
   "warn_remoteConfigFailed": { "message": "טעינת קובץ התצורה מרחוק נכשלה" },
+  "warn_option": { "message": "אפשרות" },
+  "warn_noLongerHasAnyEffect": { "message": "כבר אין לו כל השפעה" },
   "info_exampleValidConfigFile": { "message": "דוגמה לקובץ תצורה חוקי" },
   "info_exampleValidCmd": { "message": "דוגמה לפקודה חוקית" },
   "info_filesToBeMinned": { "message": "קובצי JavaScript שיש למזער" },

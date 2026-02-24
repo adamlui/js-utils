@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Тохиргооны файл аль хэдийн байна" },
   "warn_remoteConfigNotFound": { "message": "Алсын тохиргооны файл олдсонгүй" },
   "warn_remoteConfigFailed": { "message": "Алсын тохиргооны файлыг авч чадсангүй" },
+  "warn_option": { "message": "Тохиргоо" },
+  "warn_noLongerHasAnyEffect": { "message": "цаашид ямар ч нөлөөгүй" },
   "warn_docLocalesFetchFailed": { "message": "Баримтын байршлыг авч чадсангүй" },
   "info_exampleValidConfigFile": { "message": "Хүчинтэй тохиргооны файлын жишээ" },
   "info_exampleValidCmd": { "message": "Хүчинтэй командын жишээ" },

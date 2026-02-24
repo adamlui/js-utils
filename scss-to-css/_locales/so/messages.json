@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Faylka Config ayaa hore u jiray" },
   "warn_remoteConfigNotFound": { "message": "Faylka qaabeynta fog lama helin" },
   "warn_remoteConfigFailed": { "message": "Ku guuldareystay inuu soo qaado faylka qaabeynta fog" },
+  "warn_option": { "message": "Ikhtiyaar" },
+  "warn_noLongerHasAnyEffect": { "message": "mar dambe ma laha wax saameyn ah." },
   "warn_docLocalesFetchFailed": { "message": "Ku guuldareystay in ay qaadaan goobaha doc" },
   "info_exampleValidConfigFile": { "message": "Tusaalaha faylka qaabeynta ansax ah" },
   "info_exampleValidCmd": { "message": "Tusaalaha amarka ansax ah" },

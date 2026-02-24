@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Неуспешно извличане на DOC локали" },
   "warn_remoteConfigNotFound": { "message": "Отдалеченият конфигурационен файл не е намерен" },
   "warn_remoteConfigFailed": { "message": "Неуспешно извличане на отдалечен конфигурационен файл" },
+  "warn_option": { "message": "Опция" },
+  "warn_noLongerHasAnyEffect": { "message": "вече няма ефект" },
   "info_exampleValidConfigFile": { "message": "Примерен валиден конфигурационен файл" },
   "info_exampleValidCmd": { "message": "Примерна валидна команда" },
   "info_filesToBeMinned": { "message": "JavaScript файлове за минимизиране" },

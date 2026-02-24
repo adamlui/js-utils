@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Немагчыма атрымаць лакальныя дакументы" },
   "warn_remoteConfigNotFound": { "message": "Аддалены файл канфігурацыі не знойдзены" },
   "warn_remoteConfigFailed": { "message": "Немагчыма атрымаць файл аддаленых канфігурацый" },
+  "warn_option": { "message": "Варыянт" },
+  "warn_noLongerHasAnyEffect": { "message": "больш не мае эфекту" },
   "info_exampleValidConfigFile": { "message": "Дапушчальны прыклад файла канфігурацыі" },
   "info_exampleValidCmd": { "message": "Прыклад сапраўднай каманды" },
   "info_filesToBeMinned": { "message": "Файлы JavaScript, якія будуць зведзены да мінімуму" },

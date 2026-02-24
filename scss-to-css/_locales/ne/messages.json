@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "कन्फिग फाइल पहिले नै अवस्थित छ" },
   "warn_remoteConfigNotFound": { "message": "टाढाको कन्फिग फाइल फेला परेन" },
   "warn_remoteConfigFailed": { "message": "टाढाको कन्फिग फाइल तान्न असफल भयो" },
+  "warn_option": { "message": "विकल्प" },
+  "warn_noLongerHasAnyEffect": { "message": "अब कुनै असर पर्दैन" },
   "warn_docLocalesFetchFailed": { "message": "डक स्थानहरू प्राप्त गर्न असफल भयो" },
   "info_exampleValidConfigFile": { "message": "उदाहरण मान्य कन्फिग फाइल" },
   "info_exampleValidCmd": { "message": "उदाहरण मान्य आदेश" },

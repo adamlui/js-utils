@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "د سازونې دوتنه د مخکې نه شتون لري" },
   "warn_remoteConfigNotFound": { "message": "لر سازونې دوتنه ونه موندل شوه" },
   "warn_remoteConfigFailed": { "message": "د لرې سازونې دوتنې په راوستلو کې پاتې راغی" },
+  "warn_option": { "message": "اتنخاب" },
+  "warn_noLongerHasAnyEffect": { "message": "نور هیڅ اغیزه نه لري" },
   "warn_docLocalesFetchFailed": { "message": "د سند ځای په راوړلو کې پاتې راغلی" },
   "info_exampleValidConfigFile": { "message": "د اعتبار وړ ترتیب فایل مثال" },
   "info_exampleValidCmd": { "message": "د اعتبار وړ کمانډ مثال" },

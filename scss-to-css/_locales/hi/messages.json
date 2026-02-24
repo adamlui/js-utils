@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "कॉन्फ़िग फ़ाइल पहले से मौजूद है" },
   "warn_remoteConfigNotFound": { "message": "रिमोट कॉन्फ़िगरेशन फ़ाइल नहीं मिली" },
   "warn_remoteConfigFailed": { "message": "रिमोट कॉन्फ़िगरेशन फ़ाइल लाने में विफल" },
+  "warn_option": { "message": "विकल्प" },
+  "warn_noLongerHasAnyEffect": { "message": "अब कोई प्रभाव नहीं पड़ता है" },
   "warn_docLocalesFetchFailed": { "message": "डॉक लोकेशन लाने में विफल" },
   "info_exampleValidConfigFile": { "message": "उदाहरण मान्य कॉन्फ़िगरेशन फ़ाइल" },
   "info_exampleValidCmd": { "message": "उदाहरण मान्य कमांड" },

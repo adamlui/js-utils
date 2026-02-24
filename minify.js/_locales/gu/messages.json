@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "DOC લોકેલ્સ મેળવવામાં નિષ્ફળતા" },
   "warn_remoteConfigNotFound": { "message": "દૂરસ્થ રૂપરેખાંકન ફાઇલ મળી નથી" },
   "warn_remoteConfigFailed": { "message": "દૂરસ્થ રૂપરેખાંકન ફાઇલને મેળવવામાં નિષ્ફળતા" },
+  "warn_option": { "message": "વિકલ્પ" },
+  "warn_noLongerHasAnyEffect": { "message": "હવે કોઈ અસર થતી નથી" },
   "info_exampleValidConfigFile": { "message": "ઉદાહરણ માન્ય રૂપરેખાંકન ફાઇલ" },
   "info_exampleValidCmd": { "message": "ઉદાહરણ માન્ય આદેશ" },
   "info_filesToBeMinned": { "message": "જાવાસ્ક્રિપ્ટ ફાઇલોને મિનિફાઇડ કરવાની છે" },

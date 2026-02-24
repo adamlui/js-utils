@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Yehlulekile ukulanda izindawo ze-doc" },
   "warn_remoteConfigNotFound": { "message": "Ifayela lokulungisa kude alitholakali" },
   "warn_remoteConfigFailed": { "message": "Yehlulekile ukulanda ifayela lokumisa elikude" },
+  "warn_option": { "message": "Indlela yokuzikhethela" },
+  "warn_noLongerHasAnyEffect": { "message": "ayisekho imiphumela" },
   "info_exampleValidConfigFile": { "message": "Isibonelo sefayela elivumelekile lokumisa" },
   "info_exampleValidCmd": { "message": "Isibonelo somyalo ovumelekile" },
   "info_filesToBeMinned": { "message": "Amafayela e-JavaScript azokuncishiswa" },

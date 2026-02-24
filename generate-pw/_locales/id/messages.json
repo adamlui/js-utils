@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "Gagal mengambil lokal dokumen" },
   "warn_remoteConfigNotFound": { "message": "File konfigurasi jarak jauh tidak ditemukan" },
   "warn_remoteConfigFailed": { "message": "Gagal mengambil file konfigurasi jarak jauh" },
+  "warn_option": { "message": "Opsi" },
+  "warn_noLongerHasAnyEffect": { "message": "tidak lagi berpengaruh" },
   "info_exampleValidConfigFile": { "message": "Contoh file konfigurasi yang valid" },
   "info_copyingToClip": { "message": "Menyalin ke clipboard" },
   "info_moreHelp": { "message": "Untuk bantuan lebih lanjut" },

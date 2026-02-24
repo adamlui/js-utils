@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Konfiguračný súbor už existuje" },
   "warn_remoteConfigNotFound": { "message": "Vzdialený konfiguračný súbor sa nenašiel" },
   "warn_remoteConfigFailed": { "message": "Nepodarilo sa načítať vzdialený konfiguračný súbor" },
+  "warn_option": { "message": "Možnosť" },
+  "warn_noLongerHasAnyEffect": { "message": "už nemá žiadny účinok" },
   "warn_docLocalesFetchFailed": { "message": "Nepodarilo sa načítať miestne nastavenia dokumentov" },
   "info_exampleValidConfigFile": { "message": "Príklad platného konfiguračného súboru" },
   "info_exampleValidCmd": { "message": "Príklad platného príkazu" },

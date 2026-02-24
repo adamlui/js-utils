@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Không thể tìm nạp địa phương của tài liệu" },
   "warn_remoteConfigNotFound": { "message": "Không tìm thấy tệp cấu hình từ xa" },
   "warn_remoteConfigFailed": { "message": "Không thể tìm nạp tệp cấu hình từ xa" },
+  "warn_option": { "message": "Tùy chọn" },
+  "warn_noLongerHasAnyEffect": { "message": "không còn hiệu lực nữa" },
   "info_exampleValidConfigFile": { "message": "Ví dụ về tệp cấu hình hợp lệ" },
   "info_exampleValidCmd": { "message": "Ví dụ lệnh hợp lệ" },
   "info_filesToBeMinned": { "message": "Các tệp JavaScript sẽ được thu nhỏ" },

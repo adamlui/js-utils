@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Faele ya Config e setse e le teng" },
   "warn_remoteConfigNotFound": { "message": "Faele ya Remote config ga e a bonwa" },
   "warn_remoteConfigFailed": { "message": "O reteletswe ke go tsaya faele ya config e e dirwang kgakala" },
+  "warn_option": { "message": "Tlhopho" },
+  "warn_noLongerHasAnyEffect": { "message": "ga e tlhole e na le diphelelo dipe" },
   "warn_docLocalesFetchFailed": { "message": "O reteletswe ke go tsaya mafelo a Doc" },
   "info_exampleValidConfigFile": { "message": "Sekao sa faele e e amogelesegang ya" },
   "info_exampleValidCmd": { "message": "Sekao sa taelo e e amogelesegang" },

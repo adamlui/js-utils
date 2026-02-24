@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Დოკუმენტის ლოკალების გამოთხოვის შეცდომა" },
   "warn_remoteConfigNotFound": { "message": "დისტანციური კონფიგურაციის ფაილი ვერ მოიძებნა" },
   "warn_remoteConfigFailed": { "message": "Დაშორებული კონფიგურაციის ფაილის გამოთხოვის შეცდომა" },
+  "warn_option": { "message": "Ვარიანტი" },
+  "warn_noLongerHasAnyEffect": { "message": "აღარ აქვს რაიმე ეფექტი" },
   "info_exampleValidConfigFile": { "message": "ვალიდური კონფიგურაციის ფაილის მაგალითი" },
   "info_exampleValidCmd": { "message": "Მოქმედი ბრძანების მაგალითი" },
   "info_filesToBeMinned": { "message": "Გასამარტივებელი JavaScript ფაილები" },

@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "קאָנפיגוראַציע טעקע עקזיסטירט שוין" },
   "warn_remoteConfigNotFound": { "message": "ווייַט קאָנפיג טעקע נישט געפֿונען" },
   "warn_remoteConfigFailed": { "message": "נישט געקענט ברענגען די ווייטערע קאנפיגאציע טעקע" },
+  "warn_option": { "message": "אָפּציע" },
+  "warn_noLongerHasAnyEffect": { "message": "האט מער נישט קיין שום ווירקונג" },
   "warn_docLocalesFetchFailed": { "message": "נישט געקענט ברענגען דאקומענט לאקאלן" },
   "info_exampleValidConfigFile": { "message": "בייַשפּיל גילטיק קאָנפיג טעקע" },
   "info_exampleValidCmd": { "message": "בייַשפּיל גילטיק באַפֿעל" },

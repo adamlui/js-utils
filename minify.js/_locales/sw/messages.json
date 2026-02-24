@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Imeshindwa kupata maeneo ya doc" },
   "warn_remoteConfigNotFound": { "message": "Faili la usanidi wa mbali halijapatikana" },
   "warn_remoteConfigFailed": { "message": "Imeshindwa kupata faili ya usanidi wa mbali" },
+  "warn_option": { "message": "Chaguo" },
+  "warn_noLongerHasAnyEffect": { "message": "haina athari yoyote tena" },
   "info_exampleValidConfigFile": { "message": "Mfano faili halali ya usanidi" },
   "info_exampleValidCmd": { "message": "Mfano amri halali" },
   "info_filesToBeMinned": { "message": "Mafaili ya JavaScript yatakayopunguzwa" },

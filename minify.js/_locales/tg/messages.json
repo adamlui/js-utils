@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Натавонистам локалҳои DOC- ро гирам" },
   "warn_remoteConfigNotFound": { "message": "Файли конфигуратсияи дурдаст ёфт нашуд" },
   "warn_remoteConfigFailed": { "message": "Файли конфигуратсияи дурдаст гирифта нашуд" },
+  "warn_option": { "message": "Параметрҳо" },
+  "warn_noLongerHasAnyEffect": { "message": "дигар таъсир надорад" },
   "info_exampleValidConfigFile": { "message": "Намунаи файли конфигуратсияи дуруст" },
   "info_exampleValidCmd": { "message": "Фармони дурусти мисол" },
   "info_filesToBeMinned": { "message": "Файлҳои JavaScript миниётуравӣ мешаванд" },

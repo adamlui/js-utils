@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "ཡིག་ཆ་གནས་ས་འཚོལ་མ་ཚུགས།" },
   "warn_remoteConfigNotFound": { "message": "སྒྲིག་འཇུག་བྱས་ཚད། ཐེངས་ 3 ལས་ཉུང་བ། ཐོན་རིམ་" },
   "warn_remoteConfigFailed": { "message": "ཐག་རིང་གི་སྒྲིག་གཞི་ཡིག་སྣོད་འཚོལ་མ་ཚུགས།" },
+  "warn_option": { "message": "གདམ་ཁ་" },
+  "warn_noLongerHasAnyEffect": { "message": "ད་ལྟོའི་བར་ན་ཡང་ ཕན་ཐོགས་ག་ནི་ཡང་མེད།" },
   "info_exampleValidConfigFile": { "message": "དཔེ་སྒྲོམ་བདེན་པའི་སྒྲིག་གཞི་ཡིག་སྣོད་" },
   "info_exampleValidCmd": { "message": "དཔེ་སྒྲོམ་བདེན་པའི་བཀའ་རྒྱ་" },
   "info_filesToBeMinned": { "message": "JavaScript ཡིག་སྣོད་ཚུ་ Minified འབད་ནི་ཨིན།" },

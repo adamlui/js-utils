@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Не вдалося отримати локалі документів" },
   "warn_remoteConfigNotFound": { "message": "Файл віддаленої конфігурації не знайдено" },
   "warn_remoteConfigFailed": { "message": "Не вдалося отримати файл віддаленої конфігурації" },
+  "warn_option": { "message": "Варіант" },
+  "warn_noLongerHasAnyEffect": { "message": "більше не має ніякого ефекту" },
   "info_exampleValidConfigFile": { "message": "Приклад дійсного файлу конфігурації" },
   "info_exampleValidCmd": { "message": "Приклад дійсної команди" },
   "info_filesToBeMinned": { "message": "Файли JavaScript, які потрібно мінімізувати" },

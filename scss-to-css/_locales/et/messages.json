@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Konfiguratsioonifail on juba olemas" },
   "warn_remoteConfigNotFound": { "message": "Kaugkonfiguratsioonifaili ei leitud" },
   "warn_remoteConfigFailed": { "message": "Kaugkonfiguratsioonifaili toomine nurjus" },
+  "warn_option": { "message": "Valik" },
+  "warn_noLongerHasAnyEffect": { "message": "ei avalda enam mõju" },
   "warn_docLocalesFetchFailed": { "message": "Dokumendi lokaatide toomine nurjus" },
   "info_exampleValidConfigFile": { "message": "Kehtiva konfiguratsioonifaili näide" },
   "info_exampleValidCmd": { "message": "Kehtiva käsu näide" },

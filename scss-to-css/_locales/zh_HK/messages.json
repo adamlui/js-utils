@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "配置文件已存在" },
   "warn_remoteConfigNotFound": { "message": "找不到遠端配置檔案" },
   "warn_remoteConfigFailed": { "message": "無法擷取遠端配置檔案" },
+  "warn_option": { "message": "選項" },
+  "warn_noLongerHasAnyEffect": { "message": "不再有任何效果" },
   "warn_docLocalesFetchFailed": { "message": "無法擷取文件語言環境" },
   "info_exampleValidConfigFile": { "message": "有效配置文件示例" },
   "info_exampleValidCmd": { "message": "有效命令示例" },

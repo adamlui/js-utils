@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "डक स्थानहरू प्राप्त गर्न असफल भयो" },
   "warn_remoteConfigNotFound": { "message": "टाढाको कन्फिग फाइल फेला परेन" },
   "warn_remoteConfigFailed": { "message": "टाढाको कन्फिग फाइल तान्न असफल भयो" },
+  "warn_option": { "message": "विकल्प" },
+  "warn_noLongerHasAnyEffect": { "message": "अब कुनै असर पर्दैन" },
   "info_exampleValidConfigFile": { "message": "उदाहरण मान्य कन्फिग फाइल" },
   "info_exampleValidCmd": { "message": "उदाहरण मान्य आदेश" },
   "info_filesToBeMinned": { "message": "जाभास्क्रिप्ट फाइलहरू मिनिफाइ गर्ने" },

@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Dh'fhàillig le faighinn locales doc" },
   "warn_remoteConfigNotFound": { "message": "Cha deach am faidhle cumraíochta iomallach a lorg" },
   "warn_remoteConfigFailed": { "message": "Dh'fhàillig le togail an fhaidhle cumraíochta iomallach" },
+  "warn_option": { "message": "Roghainn" },
+  "warn_noLongerHasAnyEffect": { "message": "chan eil buaidh sam bith aige tuilleadh" },
   "info_exampleValidConfigFile": { "message": "Faidhle rèiteachaidh dligheach mar eisimpleir" },
   "info_exampleValidCmd": { "message": "Mar eisimpleir àithne dhligheach" },
   "info_filesToBeMinned": { "message": "Faidhlichean JavaScript ri mion - sgrùdadh" },

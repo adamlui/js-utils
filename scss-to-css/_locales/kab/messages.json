@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Afaylu uffir yella yakan" },
   "warn_remoteConfigNotFound": { "message": "Afaylu n uγewwaṛ ur yettwafen ara" },
   "warn_remoteConfigFailed": { "message": "Ur yeddi ara ad yekkes afaylu n uγewwaṛ n ufaylu" },
+  "warn_option": { "message": "Tifranin" },
+  "warn_noLongerHasAnyEffect": { "message": "no effect yet" },
   "warn_docLocalesFetchFailed": { "message": "Isebtar i yellan ddaw-a sɛan aseɣwen ɣer Tmaziɣt" },
   "info_exampleValidConfigFile": { "message": "Amedya n ufaylu yettwaxedmen" },
   "info_exampleValidCmd": { "message": "Amedya n usaḍuf iṣeḥḥan" },

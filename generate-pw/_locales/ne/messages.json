@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "डक स्थानहरू प्राप्त गर्न असफल भयो" },
   "warn_remoteConfigNotFound": { "message": "टाढाको कन्फिग फाइल फेला परेन" },
   "warn_remoteConfigFailed": { "message": "टाढाको कन्फिग फाइल तान्न असफल भयो" },
+  "warn_option": { "message": "विकल्प" },
+  "warn_noLongerHasAnyEffect": { "message": "अब कुनै असर पर्दैन" },
   "info_exampleValidConfigFile": { "message": "उदाहरण मान्य कन्फिग फाइल" },
   "info_copyingToClip": { "message": "क्लिपबोर्डमा प्रतिलिपि गर्दैछ" },
   "info_moreHelp": { "message": "थप मद्दतको लागि" },

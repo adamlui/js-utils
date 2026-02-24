@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Datei konfiguréieren existéiert schonn" },
   "warn_remoteConfigNotFound": { "message": "Distanzkonfiguratiounsdatei net fonnt" },
   "warn_remoteConfigFailed": { "message": "Konnt d'Fernconfiguratiounsdatei net fannen" },
+  "warn_option": { "message": "Optioun" },
+  "warn_noLongerHasAnyEffect": { "message": "huet keen Effekt méi" },
   "warn_docLocalesFetchFailed": { "message": "Dok Lokale gefunden" },
   "info_exampleValidConfigFile": { "message": "Beispill valabel Konfiguratiounsdatei" },
   "info_exampleValidCmd": { "message": "Beispill valabel Kommando" },

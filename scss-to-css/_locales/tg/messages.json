@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Батанзимдарории файл аллакай вуҷуд дорад" },
   "warn_remoteConfigNotFound": { "message": "Файли конфигуратсияи дурдаст ёфт нашуд" },
   "warn_remoteConfigFailed": { "message": "Файли конфигуратсияи дурдаст гирифта нашуд" },
+  "warn_option": { "message": "Параметрҳо" },
+  "warn_noLongerHasAnyEffect": { "message": "дигар таъсир надорад" },
   "warn_docLocalesFetchFailed": { "message": "Натавонистам локалҳои DOC- ро гирам" },
   "info_exampleValidConfigFile": { "message": "Намунаи файли конфигуратсияи дуруст" },
   "info_exampleValidCmd": { "message": "Фармони дурусти мисол" },

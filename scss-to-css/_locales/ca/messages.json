@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "El fitxer de configuració ja existeix" },
   "warn_remoteConfigNotFound": { "message": "No s'ha trobat el fitxer de configuració remota" },
   "warn_remoteConfigFailed": { "message": "No s'ha pogut obtenir el fitxer de configuració remota" },
+  "warn_option": { "message": "Opció" },
+  "warn_noLongerHasAnyEffect": { "message": "ja no té cap efecte" },
   "warn_docLocalesFetchFailed": { "message": "No s'ha pogut obtenir la localització del document" },
   "info_exampleValidConfigFile": { "message": "Exemple de fitxer de configuració vàlid" },
   "info_exampleValidCmd": { "message": "Exemple d'ordre vàlida" },

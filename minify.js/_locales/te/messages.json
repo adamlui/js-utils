@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "డాక్యుమెంట్ ‌ లొకేషన్ ‌ లను పొందడంలో విఫలమైంది" },
   "warn_remoteConfigNotFound": { "message": "రిమోట్ కాన్ఫిగరేషన్ ఫైల్ కనుగొనబడలేదు" },
   "warn_remoteConfigFailed": { "message": "రిమోట్ కాన్ఫిగరేషన్ ఫైల్ ‌ ను పొందడంలో విఫలమైంది" },
+  "warn_option": { "message": "ఎంపిక" },
+  "warn_noLongerHasAnyEffect": { "message": "ఇకపై ఎటువంటి ప్రభావం ఉండదు" },
   "info_exampleValidConfigFile": { "message": "ఉదాహరణ చెల్లుబాటు అయ్యే కాన్ఫిగరేషన్ ఫైల్" },
   "info_exampleValidCmd": { "message": "ఉదాహరణ చెల్లుబాటు అయ్యే ఆదేశం" },
   "info_filesToBeMinned": { "message": "చిన్నదిగా చేయవలసిన జావాస్క్రిప్ట్ ఫైల్స్" },

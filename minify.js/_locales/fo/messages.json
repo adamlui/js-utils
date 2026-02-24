@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Miseydnaðist at fáa doc lokals" },
   "warn_remoteConfigNotFound": { "message": "Fjarskiftisfíla ikki funnin" },
   "warn_remoteConfigFailed": { "message": "Miseydnaðist at fáa fjarskiftis konfiguratiónsfílu" },
+  "warn_option": { "message": "Møguleiki" },
+  "warn_noLongerHasAnyEffect": { "message": "tað hevur ikki longur ávirkan" },
   "info_exampleValidConfigFile": { "message": "Dømi góð konfiguratiónsfíla" },
   "info_exampleValidCmd": { "message": "Dømi um gildið boð" },
   "info_filesToBeMinned": { "message": "Javascript-fílar, sum skulu verða minifiseraðir" },

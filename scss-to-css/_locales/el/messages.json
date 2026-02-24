@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Το αρχείο διαμόρφωσης υπάρχει ήδη" },
   "warn_remoteConfigNotFound": { "message": "Το απομακρυσμένο αρχείο διαμόρφωσης δεν βρέθηκε" },
   "warn_remoteConfigFailed": { "message": "Αποτυχία λήψης αρχείου απομακρυσμένης διαμόρφωσης" },
+  "warn_option": { "message": "Επιλογή" },
+  "warn_noLongerHasAnyEffect": { "message": "δεν έχει πλέον καμία επίδραση" },
   "warn_docLocalesFetchFailed": { "message": "Αποτυχία λήψης τοπικών ρυθμίσεων εγγράφου" },
   "info_exampleValidConfigFile": { "message": "Παράδειγμα έγκυρου αρχείου διαμόρφωσης" },
   "info_exampleValidCmd": { "message": "Παράδειγμα έγκυρης εντολής" },

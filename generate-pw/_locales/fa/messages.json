@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "دریافت محل‌های سند ناموفق بود" },
   "warn_remoteConfigNotFound": { "message": "فایل پیکربندی ریموت پیدا نشد" },
   "warn_remoteConfigFailed": { "message": "دریافت فایل پیکربندی از راه دور ناموفق بود" },
+  "warn_option": { "message": "گزینه" },
+  "warn_noLongerHasAnyEffect": { "message": "دیگر هیچ اثری ندارد" },
   "info_exampleValidConfigFile": { "message": "نمونه فایل پیکربندی معتبر" },
   "info_copyingToClip": { "message": "در حال کپی کردن در کلیپ بورد" },
   "info_moreHelp": { "message": "برای اطلاعات بیشتر بخوانید" },

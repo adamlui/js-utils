@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Config dosye deja egziste" },
   "warn_remoteConfigNotFound": { "message": "Dosye konfig adistans pa jwenn" },
   "warn_remoteConfigFailed": { "message": "Pa t 'jwenn dosye konfigirasyon aleka" },
+  "warn_option": { "message": "Opsyon" },
+  "warn_noLongerHasAnyEffect": { "message": "pa gen okenn efè ankò/pa gen okenn efè ankò/n" },
   "warn_docLocalesFetchFailed": { "message": "Li pa t rive jwenn lokal doktè yo" },
   "info_exampleValidConfigFile": { "message": "Egzanp dosye konfigirasyon ki valab" },
   "info_exampleValidCmd": { "message": "Egzanp lòd ki valab" },

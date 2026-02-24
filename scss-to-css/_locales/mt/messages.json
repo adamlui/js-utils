@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Il-fajl tal-konfigurazzjoni diġà jeżisti" },
   "warn_remoteConfigNotFound": { "message": "Il-fajl tal-konfigurazzjoni mill-bogħod ma nstabx" },
   "warn_remoteConfigFailed": { "message": "Ma rnexxilniex niksbu l-fajl tal-konfigurazzjoni mill-bogħod" },
+  "warn_option": { "message": "Għażla" },
+  "warn_noLongerHasAnyEffect": { "message": "m' għad m' għandu l-ebda effett" },
   "warn_docLocalesFetchFailed": { "message": "Ma rnexxilniex niksbu doc locales" },
   "info_exampleValidConfigFile": { "message": "Eżempju ta' fajl validu tal-konfig" },
   "info_exampleValidCmd": { "message": "Eżempju ta' kmand validu" },

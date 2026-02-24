@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "Баримтын байршлыг авч чадсангүй" },
   "warn_remoteConfigNotFound": { "message": "Алсын тохиргооны файл олдсонгүй" },
   "warn_remoteConfigFailed": { "message": "Алсын тохиргооны файлыг авч чадсангүй" },
+  "warn_option": { "message": "Тохиргоо" },
+  "warn_noLongerHasAnyEffect": { "message": "цаашид ямар ч нөлөөгүй" },
   "info_exampleValidConfigFile": { "message": "Хүчинтэй тохиргооны файлын жишээ" },
   "info_copyingToClip": { "message": "Түр санах ой руу хуулах" },
   "info_moreHelp": { "message": "Нэмэлт тусламж" },

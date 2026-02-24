@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Ekki tókst að ná í staðsetningar skjals" },
   "warn_remoteConfigNotFound": { "message": "Fjarstýrð stillingaskrá fannst ekki" },
   "warn_remoteConfigFailed": { "message": "Ekki tókst að sækja fjarstillingarskrá" },
+  "warn_option": { "message": "Valkostur" },
+  "warn_noLongerHasAnyEffect": { "message": "hefur ekki lengur nein áhrif" },
   "info_exampleValidConfigFile": { "message": "Dæmi um gilda uppsetningarskrá" },
   "info_exampleValidCmd": { "message": "Dæmi um gilda skipun" },
   "info_filesToBeMinned": { "message": "JavaScript skrár sem á að smána" },

@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Kaore i taea te tango i nga waahi doc" },
   "warn_remoteConfigNotFound": { "message": "Ko te konae whakatakotoranga mamao kaore i kitea" },
   "warn_remoteConfigFailed": { "message": "Kaore i taea te tango i te konae whirihoranga mamao" },
+  "warn_option": { "message": "Kōwhiringa" },
+  "warn_noLongerHasAnyEffect": { "message": "kaore ano kia whai hua" },
   "info_exampleValidConfigFile": { "message": "Tauira kōnae config whaimana" },
   "info_exampleValidCmd": { "message": "Tauira whakahau whaimana" },
   "info_filesToBeMinned": { "message": "Ko nga konae JavaScript hei whakaiti" },

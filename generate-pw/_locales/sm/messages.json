@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "O le a le mea e fai ai le doc locales" },
   "warn_remoteConfigNotFound": { "message": "Remote config faila e leʻi maua" },
   "warn_remoteConfigFailed": { "message": "Leiloa e fetch mamao config faila" },
+  "warn_option": { "message": "Filifiliga" },
+  "warn_noLongerHasAnyEffect": { "message": "e leai se aafiaga" },
   "info_exampleValidConfigFile": { "message": "Faataitaiga aloaia config faila" },
   "info_copyingToClip": { "message": "Kopi i le clipboard" },
   "info_moreHelp": { "message": "Mo nisi fesoasoani" },

@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Не успеаја да се преземат локалитети на DOC" },
   "warn_remoteConfigNotFound": { "message": "Далечинската конфигурациска датотека не е пронајдена" },
   "warn_remoteConfigFailed": { "message": "Не успеа да се преземе далечинска конфигурациска датотека" },
+  "warn_option": { "message": "Опција" },
+  "warn_noLongerHasAnyEffect": { "message": "веќе нема ефект" },
   "info_exampleValidConfigFile": { "message": "Пример важечка конфигурациска датотека" },
   "info_exampleValidCmd": { "message": "Пример за важечка команда" },
   "info_filesToBeMinned": { "message": "Датотеки со JavaScript што треба да се минимизираат" },

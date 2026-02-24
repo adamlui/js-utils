@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "No s'ha pogut obtenir la localització del document" },
   "warn_remoteConfigNotFound": { "message": "No s'ha trobat el fitxer de configuració remota" },
   "warn_remoteConfigFailed": { "message": "No s'ha pogut obtenir el fitxer de configuració remota" },
+  "warn_option": { "message": "Opció" },
+  "warn_noLongerHasAnyEffect": { "message": "ja no té cap efecte" },
   "info_exampleValidConfigFile": { "message": "Exemple de fitxer de configuració vàlid" },
   "info_exampleValidCmd": { "message": "Exemple d'ordre vàlida" },
   "info_filesToBeMinned": { "message": "Fitxers JavaScript que s'han de minificar" },

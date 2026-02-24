@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "មិន បាន សម្រេចក្នុងការទៅយកទីតាំងឯកសារ" },
   "warn_remoteConfigNotFound": { "message": "រកមិនឃើញឯកសារកំណត់រចនាសម្ព័ន្ធពីចម្ងាយទេ" },
   "warn_remoteConfigFailed": { "message": "បាន បរាជ័យ ក្នុង ការ ទៅ យក ឯកសារ កំណត់ រចនា សម្ព័ន្ធ ពី ចម្ងាយ" },
+  "warn_option": { "message": "ជម្រើស" },
+  "warn_noLongerHasAnyEffect": { "message": "លែងមានឥទ្ធិពលទៀតហើយ" },
   "info_exampleValidConfigFile": { "message": "ឯកសារកំណត់រចនាសម្ព័ន្ធត្រឹមត្រូវឧទាហរណ៍" },
   "info_exampleValidCmd": { "message": "ឧទាហរណ៍ ពាក្យ បញ្ជា ត្រឹមត្រូវ" },
   "info_filesToBeMinned": { "message": "ឯកសារ JavaScript ដែល ត្រូវ បាន បង្រួម អប្បបរមា" },

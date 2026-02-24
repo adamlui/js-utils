@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "Nem sikerült lekérni a dokumentumok helyeit" },
   "warn_remoteConfigNotFound": { "message": "A távoli konfigurációs fájl nem található" },
   "warn_remoteConfigFailed": { "message": "Távoli konfigurációs fájl lekérése sikertelen" },
+  "warn_option": { "message": "Opció" },
+  "warn_noLongerHasAnyEffect": { "message": "már nincs hatása" },
   "info_exampleValidConfigFile": { "message": "Példa érvényes konfigurációs fájlra" },
   "info_copyingToClip": { "message": "Másolás a vágólapra" },
   "info_moreHelp": { "message": "További segítségért" },

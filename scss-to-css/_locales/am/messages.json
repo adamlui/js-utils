@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "ፋይል አስቀድሞ አለ ያዋቅሩ" },
   "warn_remoteConfigNotFound": { "message": "የርቀት ውቅር ፋይል አልተገኘም" },
   "warn_remoteConfigFailed": { "message": "የርቀት ውቅር ፋይልን ማንሳት አልተሳካም" },
+  "warn_option": { "message": "አማራጭ" },
+  "warn_noLongerHasAnyEffect": { "message": "ከአሁን በኋላ ምንም ውጤት የለውም" },
   "warn_docLocalesFetchFailed": { "message": "ዶክ አካባቢዎችን ማንሳት አልተቻለም" },
   "info_exampleValidConfigFile": { "message": "ምሳሌ ትክክለኛ የውቅረት ፋይል" },
   "info_exampleValidCmd": { "message": "ምሳሌ ትክክለኛ ትዕዛዝ" },

@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Fișierul de configurare există deja" },
   "warn_remoteConfigNotFound": { "message": "Fișierul de configurare de la distanță nu a fost" },
   "warn_remoteConfigFailed": { "message": "Preluarea fișierului de configurare de la distanță a eșuat" },
+  "warn_option": { "message": "Opțiune" },
+  "warn_noLongerHasAnyEffect": { "message": "nu mai are niciun efect" },
   "warn_docLocalesFetchFailed": { "message": "Preluarea localizărilor documentelor a eșuat" },
   "info_exampleValidConfigFile": { "message": "Exemplu de fișier de configurare valid" },
   "info_exampleValidCmd": { "message": "Exemplu de comandă validă" },

@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "문서 로케일 가져오기 실패" },
   "warn_remoteConfigNotFound": { "message": "원격 구성 파일을 찾을 수 없습니다" },
   "warn_remoteConfigFailed": { "message": "원격 구성 파일을 가져오는 데 실패했습니다" },
+  "warn_option": { "message": "옵션" },
+  "warn_noLongerHasAnyEffect": { "message": "더 이상 효과가 없습니다" },
   "info_exampleValidConfigFile": { "message": "유효한 구성 파일의 예" },
   "info_exampleValidCmd": { "message": "유효한 명령의 예" },
   "info_filesToBeMinned": { "message": "축소할 JavaScript 파일" },

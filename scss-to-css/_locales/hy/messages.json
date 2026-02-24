@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Կոնֆիգ ֆայլն արդեն գոյություն ունի" },
   "warn_remoteConfigNotFound": { "message": "Հեռակա կոնֆիգուրացիայի ֆայլը չի գտնվել" },
   "warn_remoteConfigFailed": { "message": "Չհաջողվեց ստանալ հեռակառավարվող կոնֆիգուրացիոն ֆայլը" },
+  "warn_option": { "message": "Տարբերակ" },
+  "warn_noLongerHasAnyEffect": { "message": "այլևս ոչ մի ազդեցություն չունի" },
   "warn_docLocalesFetchFailed": { "message": "Չհաջողվեց ստանալ փաստաթղթերի տեղամասերը" },
   "info_exampleValidConfigFile": { "message": "Վավեր կոնֆիգուրացիոն ֆայլի օրինակ" },
   "info_exampleValidCmd": { "message": "Վավեր հրահանգի օրինակ" },

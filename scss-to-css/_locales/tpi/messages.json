@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Konfigim fail i stap pinis" },
   "warn_remoteConfigNotFound": { "message": "Ol i no painim wanpela hap bilong dispela hap" },
   "warn_remoteConfigFailed": { "message": "I no gat rot long painim wanpela remote config file" },
+  "warn_option": { "message": "Opsion" },
+  "warn_noLongerHasAnyEffect": { "message": "i no gat wanpela samting moa" },
   "warn_docLocalesFetchFailed": { "message": "Ol i no inap painim ol ples bilong ol dokta" },
   "info_exampleValidConfigFile": { "message": "Wanpela gutpela piksa bilong dispela fail" },
   "info_exampleValidCmd": { "message": "Wanpela gutpela eksampel" },

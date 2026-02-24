@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Config faila ua uma ona i ai" },
   "warn_remoteConfigNotFound": { "message": "Remote config faila e leʻi maua" },
   "warn_remoteConfigFailed": { "message": "Leiloa e fetch mamao config faila" },
+  "warn_option": { "message": "Filifiliga" },
+  "warn_noLongerHasAnyEffect": { "message": "e leai se aafiaga" },
   "warn_docLocalesFetchFailed": { "message": "O le a le mea e fai ai le doc locales" },
   "info_exampleValidConfigFile": { "message": "Faataitaiga aloaia config faila" },
   "info_exampleValidCmd": { "message": "Faataitaiga poloaiga aoga" },

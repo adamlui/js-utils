@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "डॉक लोकेशन लाने में विफल" },
   "warn_remoteConfigNotFound": { "message": "रिमोट कॉन्फ़िगरेशन फ़ाइल नहीं मिली" },
   "warn_remoteConfigFailed": { "message": "रिमोट कॉन्फ़िगरेशन फ़ाइल लाने में विफल" },
+  "warn_option": { "message": "विकल्प" },
+  "warn_noLongerHasAnyEffect": { "message": "अब कोई प्रभाव नहीं पड़ता है" },
   "info_exampleValidConfigFile": { "message": "उदाहरण मान्य कॉन्फ़िगरेशन फ़ाइल" },
   "info_copyingToClip": { "message": "क्लिपबोर्ड पर कॉपी किया जा रहा है" },
   "info_moreHelp": { "message": "ज़्यादा मदद के लिए" },

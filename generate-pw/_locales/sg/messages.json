@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "A yeke wara ni pëpe na ndo ti Doc Locales" },
   "warn_remoteConfigNotFound": { "message": "Désolé Aucun résultat trouvé" },
   "warn_remoteConfigFailed": { "message": "Disable alert for Mbeni" },
+  "warn_option": { "message": "A yeke na lege ti kode ti sarango ye" },
+  "warn_noLongerHasAnyEffect": { "message": "a yeke sara ye na lege ni ape" },
   "info_exampleValidConfigFile": { "message": "Tapande ti faïl so ayeke na lege ni" },
   "info_copyingToClip": { "message": "Gbu li ti mo na ndo ti clipboard ni" },
   "info_moreHelp": { "message": "Ti mû maboko na mo" },

@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "構成ファイルは既に存在します" },
   "warn_remoteConfigNotFound": { "message": "リモート ファイルが見つかりません" },
   "warn_remoteConfigFailed": { "message": "リモート構成ファイルを取得できませんでした" },
+  "warn_option": { "message": "オプション" },
+  "warn_noLongerHasAnyEffect": { "message": "もはや何の効果もない" },
   "warn_docLocalesFetchFailed": { "message": "ドキュメントのロケールを取得できませんでした" },
   "info_exampleValidConfigFile": { "message": "有効な設定ファイルの例" },
   "info_exampleValidCmd": { "message": "有効なコマンドの例" },

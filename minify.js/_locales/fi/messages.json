@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Asiakirjapaikkojen noutaminen epäonnistui" },
   "warn_remoteConfigNotFound": { "message": "Etäkonfig-tiedostoa ei löydy" },
   "warn_remoteConfigFailed": { "message": "Etämääritystiedoston nouto epäonnistui" },
+  "warn_option": { "message": "Vaihtoehto" },
+  "warn_noLongerHasAnyEffect": { "message": "ei enää vaikuta" },
   "info_exampleValidConfigFile": { "message": "Esimerkki kelvollisesta asetustiedostosta" },
   "info_exampleValidCmd": { "message": "Esimerkki kelvollisesta komennosta" },
   "info_filesToBeMinned": { "message": "Minimoitavat JavaScript-tiedostot" },

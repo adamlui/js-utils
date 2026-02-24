@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "ކޮންފިގް ފައިލް މިހާރުވެސް އެބަހުއްޓެވެ" },
   "warn_remoteConfigNotFound": { "message": "ރިމޯޓް ކޮންފިގް ފައިލް ނުފެނެއެވެ" },
   "warn_remoteConfigFailed": { "message": "ރިމޯޓް ކޮންފިގް ފައިލް ގެނައުމަށް ނާކާމިޔާބުވިއެވެ" },
+  "warn_option": { "message": "ގޮތް" },
+  "warn_noLongerHasAnyEffect": { "message": "މިހާރު އެއްވެސް އަސަރެއް ނުކުރެއެވެ" },
   "warn_docLocalesFetchFailed": { "message": "ޑޮކް ލޮކޭޝަންތައް ގެނައުމަށް ނާކާމިޔާބުވިއެވެ" },
   "info_exampleValidConfigFile": { "message": "މިސާލު ސައްހަ ކޮންފިގް ފައިލް" },
   "info_exampleValidCmd": { "message": "މިސާލު ސައްހަ ކޮމާންޑެއް" },

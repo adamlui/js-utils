@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "डॉक लोकेशन लाने में विफल" },
   "warn_remoteConfigNotFound": { "message": "रिमोट कॉन्फ़िगरेशन फ़ाइल नहीं मिली" },
   "warn_remoteConfigFailed": { "message": "रिमोट कॉन्फ़िगरेशन फ़ाइल लाने में विफल" },
+  "warn_option": { "message": "विकल्प" },
+  "warn_noLongerHasAnyEffect": { "message": "अब कोई प्रभाव नहीं पड़ता है" },
   "info_exampleValidConfigFile": { "message": "उदाहरण मान्य कॉन्फ़िगरेशन फ़ाइल" },
   "info_exampleValidCmd": { "message": "उदाहरण मान्य कमांड" },
   "info_filesToBeMinned": { "message": "जावास्क्रिप्ट फ़ाइलों को छोटा किया जाना है" },

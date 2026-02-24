@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "ஆவண உள்ளமைவுகளைப் பெற முடியவில்லை" },
   "warn_remoteConfigNotFound": { "message": "தொலைநிலை உள்ளமைவு கோப்பு காணப்படவில்லை" },
   "warn_remoteConfigFailed": { "message": "தொலைநிலை உள்ளமைவு கோப்பைப் பெற முடியவில்லை" },
+  "warn_option": { "message": "விருப்பம்" },
+  "warn_noLongerHasAnyEffect": { "message": "இனி எந்த விளைவையும் ஏற்படுத்தாது" },
   "info_exampleValidConfigFile": { "message": "எடுத்துக்காட்டு செல்லுபடியாகும் உள்ளமைவு கோப்பு" },
   "info_exampleValidCmd": { "message": "எடுத்துக்காட்டு செல்லுபடியாகும் கட்டளை" },
   "info_filesToBeMinned": { "message": "ஜாவாஸ்கிரிப்ட் கோப்புகள் குறைக்கப்பட வேண்டும்" },

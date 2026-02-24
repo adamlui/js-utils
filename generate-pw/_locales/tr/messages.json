@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "Doküman yerel ayarları alınamadı" },
   "warn_remoteConfigNotFound": { "message": "Uzak yapılandırma dosyası bulunamadı" },
   "warn_remoteConfigFailed": { "message": "Uzak yapılandırma dosyası alınamadı" },
+  "warn_option": { "message": "Seçenek" },
+  "warn_noLongerHasAnyEffect": { "message": "artık hiçbir etkisi yok" },
   "info_exampleValidConfigFile": { "message": "Örnek geçerli yapılandırma dosyası" },
   "info_copyingToClip": { "message": "Panoya kopyalanıyor" },
   "info_moreHelp": { "message": "Daha fazla yardım için" },

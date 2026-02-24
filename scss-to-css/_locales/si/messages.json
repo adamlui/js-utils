@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "සැකසුම් ගොනුව දැනටමත් පවතී" },
   "warn_remoteConfigNotFound": { "message": "දුරස්ථ සැකසුම් ගොනුව හමු නොවීය" },
   "warn_remoteConfigFailed": { "message": "දුරස්ථ සැකසුම් ගොනුව ලබා ගැනීමට අසමත් විය" },
+  "warn_option": { "message": "විකල්පය" },
+  "warn_noLongerHasAnyEffect": { "message": "තව දුරටත් කිසිදු බලපෑමක් නැත" },
   "warn_docLocalesFetchFailed": { "message": "ලේඛන ස්ථාන ලබා ගැනීමට අසමත් විය" },
   "info_exampleValidConfigFile": { "message": "නිදසුන වලංගු වින් ‍ යාස ගොනුව" },
   "info_exampleValidCmd": { "message": "නිදසුන වලංගු විධානය" },

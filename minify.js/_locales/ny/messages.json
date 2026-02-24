@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Kulephera kutenga malo a DOC" },
   "warn_remoteConfigNotFound": { "message": "Fayilo ya config yakutali sinapezeke" },
   "warn_remoteConfigFailed": { "message": "Kulephera kutenga fayilo yakutali ya config" },
+  "warn_option": { "message": "Chosankha" },
+  "warn_noLongerHasAnyEffect": { "message": "palibe zotsatira" },
   "info_exampleValidConfigFile": { "message": "Chitsanzo chovomerezeka cha fayilo ya config" },
   "info_exampleValidCmd": { "message": "Chitsanzo cha lamulo lovomerezeka" },
   "info_filesToBeMinned": { "message": "Mafayilo a JavaScript omwe ayenera kusinthidwa" },

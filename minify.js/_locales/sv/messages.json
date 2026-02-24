@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Det gick inte att hämta lokala dokument" },
   "warn_remoteConfigNotFound": { "message": "Fjärrkonfigurationsfil hittades inte" },
   "warn_remoteConfigFailed": { "message": "Kunde inte hämta fjärrkonfigurationsfil" },
+  "warn_option": { "message": "Alternativ" },
+  "warn_noLongerHasAnyEffect": { "message": "inte längre har någon effekt" },
   "info_exampleValidConfigFile": { "message": "Exempel på giltig konfigurationsfil" },
   "info_exampleValidCmd": { "message": "Exempel på giltigt kommando" },
   "info_filesToBeMinned": { "message": "JavaScript-filer som ska förminskas" },

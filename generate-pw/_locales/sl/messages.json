@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "Lokacij dokumenta ni bilo mogoče pridobiti" },
   "warn_remoteConfigNotFound": { "message": "Oddaljene konfiguracijske datoteke ni mogoče najti" },
   "warn_remoteConfigFailed": { "message": "Oddaljene konfiguracijske datoteke ni bilo mogoče pridobiti" },
+  "warn_option": { "message": "Možnost" },
+  "warn_noLongerHasAnyEffect": { "message": "nima več nobenega učinka" },
   "info_exampleValidConfigFile": { "message": "Primer veljavne konfiguracijske datoteke" },
   "info_copyingToClip": { "message": "Kopiranje v odlagališče" },
   "info_moreHelp": { "message": "Za več pomoči" },

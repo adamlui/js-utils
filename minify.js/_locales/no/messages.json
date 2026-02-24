@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Kunne ikke hente dokumentets språkinnstillinger" },
   "warn_remoteConfigNotFound": { "message": "Ekstern konfigurasjonsfil ikke funnet" },
   "warn_remoteConfigFailed": { "message": "Kunne ikke hente den eksterne konfigurasjonsfilen" },
+  "warn_option": { "message": "Alternativ" },
+  "warn_noLongerHasAnyEffect": { "message": "har ikke lenger noen effekt" },
   "info_exampleValidConfigFile": { "message": "Eksempel på gyldig konfigurasjonsfil" },
   "info_exampleValidCmd": { "message": "Eksempel på gyldig kommando" },
   "info_filesToBeMinned": { "message": "JavaScript-filer som skal minimeres" },

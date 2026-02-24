@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Die Konfigurationsdatei ist bereits vorhanden" },
   "warn_remoteConfigNotFound": { "message": "Remote-Konfigurationsdatei nicht gefunden" },
   "warn_remoteConfigFailed": { "message": "Fehler beim Abrufen der Remote-Konfigurationsdatei" },
+  "warn_option": { "message": "Option" },
+  "warn_noLongerHasAnyEffect": { "message": "hat keine Wirkung mehr" },
   "warn_docLocalesFetchFailed": { "message": "Doc-Gebietsschemata konnten nicht abgerufen werden" },
   "info_exampleValidConfigFile": { "message": "Beispiel gültige Konfigurationsdatei" },
   "info_exampleValidCmd": { "message": "Beispiel gültiger Befehl" },

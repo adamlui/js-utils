@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "File konfigurasi sudah ada" },
   "warn_remoteConfigNotFound": { "message": "File konfigurasi jarak jauh tidak ditemukan" },
   "warn_remoteConfigFailed": { "message": "Gagal mengambil file konfigurasi jarak jauh" },
+  "warn_option": { "message": "Opsi" },
+  "warn_noLongerHasAnyEffect": { "message": "tidak lagi berpengaruh" },
   "warn_docLocalesFetchFailed": { "message": "Gagal mengambil lokal dokumen" },
   "info_exampleValidConfigFile": { "message": "Contoh file konfigurasi yang valid" },
   "info_exampleValidCmd": { "message": "Contoh perintah yang valid" },

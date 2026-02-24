@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Yapılandırma dosyası zaten var" },
   "warn_remoteConfigNotFound": { "message": "Uzak yapılandırma dosyası bulunamadı" },
   "warn_remoteConfigFailed": { "message": "Uzak yapılandırma dosyası alınamadı" },
+  "warn_option": { "message": "Seçenek" },
+  "warn_noLongerHasAnyEffect": { "message": "artık hiçbir etkisi yok" },
   "warn_docLocalesFetchFailed": { "message": "Doküman yerel ayarları alınamadı" },
   "info_exampleValidConfigFile": { "message": "Örnek geçerli yapılandırma dosyası" },
   "info_exampleValidCmd": { "message": "Örnek geçerli komut" },

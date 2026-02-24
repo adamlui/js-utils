@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Config ဖိုင်ရှိပြီးသား" },
   "warn_remoteConfigNotFound": { "message": "အဝေးမှ config ဖိုင်ကိုရှာမတွေ့ပါ" },
   "warn_remoteConfigFailed": { "message": "အဝေးထိန်း config ဖိုင်ကို ရယူရန် မအောင်မြင်ပါ" },
+  "warn_option": { "message": "ရွေးချယ်မှု" },
+  "warn_noLongerHasAnyEffect": { "message": "အကျိုးသက်ရောက်မှုမရှိတော့ပါ" },
   "warn_docLocalesFetchFailed": { "message": "စာရွက်စာတမ်းတည်နေရာများကို ရယူရန် မအောင်မြင်ပါ" },
   "info_exampleValidConfigFile": { "message": "ဥပမာ မှန်ကန်သော config ဖိုင်" },
   "info_exampleValidCmd": { "message": "နမူနာ မှန်ကန်သော ညွှန်ကြားချက်" },

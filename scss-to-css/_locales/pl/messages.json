@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Plik konfiguracyjny już istnieje" },
   "warn_remoteConfigNotFound": { "message": "Nie znaleziono zdalnego pliku konfiguracyjnego" },
   "warn_remoteConfigFailed": { "message": "Nie udało się pobrać zdalnego pliku konfiguracyjnego" },
+  "warn_option": { "message": "Opcja" },
+  "warn_noLongerHasAnyEffect": { "message": "nie ma już żadnego wpływu" },
   "warn_docLocalesFetchFailed": { "message": "Nie udało się pobrać lokalizacji dokumentów" },
   "info_exampleValidConfigFile": { "message": "Przykład prawidłowego pliku konfiguracyjnego" },
   "info_exampleValidCmd": { "message": "Przykład prawidłowego polecenia" },

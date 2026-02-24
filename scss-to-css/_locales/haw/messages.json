@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Ua loaʻa mua ka faila hoʻonohonoho" },
   "warn_remoteConfigNotFound": { "message": "ʻAʻole i loaʻa ka faila hoʻonohonoho mamao" },
   "warn_remoteConfigFailed": { "message": "ʻAʻole i hiki ke kiʻi i ka faila hoʻonohonoho mamao" },
+  "warn_option": { "message": "Koho" },
+  "warn_noLongerHasAnyEffect": { "message": "ʻaʻohe hopena hou" },
   "warn_docLocalesFetchFailed": { "message": "ʻAʻole i hiki ke kiʻi i nā wahi palapala" },
   "info_exampleValidConfigFile": { "message": "Laʻana o ka faila hoʻonohonoho kūpono" },
   "info_exampleValidCmd": { "message": "Kauoha kūpono hoʻohālike" },

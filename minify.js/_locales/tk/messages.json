@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Doku ýerleri tapyp bilmedim" },
   "warn_remoteConfigNotFound": { "message": "Uzakdan konfigurasiýa faýly tapylmady" },
   "warn_remoteConfigFailed": { "message": "Uzakdan konfigurasiýa faýly alynmady" },
+  "warn_option": { "message": "OPTION" },
+  "warn_noLongerHasAnyEffect": { "message": "indi hiç hili netije bermeýär" },
   "info_exampleValidConfigFile": { "message": "Mysal geçerli konfigurasiýa faýly" },
   "info_exampleValidCmd": { "message": "Mysal üçin geçerli tabşyryk" },
   "info_filesToBeMinned": { "message": "JavaScript faýllary minimize edilmeli" },

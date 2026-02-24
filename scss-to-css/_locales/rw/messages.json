@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "IDOSIYE" },
   "warn_remoteConfigNotFound": { "message": "IDOSIYE OYA Byabonetse" },
   "warn_remoteConfigFailed": { "message": "Kuri IDOSIYE" },
+  "warn_option": { "message": "Ihitamo" },
+  "warn_noLongerHasAnyEffect": { "message": "nta nkurikizi igifite" },
   "warn_docLocalesFetchFailed": { "message": "Kuri Imirongo- ntambike" },
   "info_exampleValidConfigFile": { "message": "Urugero Byemewe IDOSIYE" },
   "info_exampleValidCmd": { "message": "Urugero Byemewe Komandi:" },

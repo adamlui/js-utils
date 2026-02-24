@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Nem sikerült lekérni a dokumentumok helyeit" },
   "warn_remoteConfigNotFound": { "message": "A távoli konfigurációs fájl nem található" },
   "warn_remoteConfigFailed": { "message": "Távoli konfigurációs fájl lekérése sikertelen" },
+  "warn_option": { "message": "Opció" },
+  "warn_noLongerHasAnyEffect": { "message": "már nincs hatása" },
   "info_exampleValidConfigFile": { "message": "Példa érvényes konfigurációs fájlra" },
   "info_exampleValidCmd": { "message": "Példa érvényes parancsra" },
   "info_filesToBeMinned": { "message": "Minimalizálandó JavaScript-fájlok" },

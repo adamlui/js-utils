@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Dokumentuaren eskualdeko ezarpenak lortzea huts egin da" },
   "warn_remoteConfigNotFound": { "message": "Ez da urruneko konfigurazio fitxategia aurkitu" },
   "warn_remoteConfigFailed": { "message": "Ezin izan da urruneko konfigurazio fitxategia eskuratu" },
+  "warn_option": { "message": "Aukera" },
+  "warn_noLongerHasAnyEffect": { "message": "jada ez du inolako eraginik" },
   "info_exampleValidConfigFile": { "message": "Konfigurazio fitxategi baliodunaren adibidea" },
   "info_exampleValidCmd": { "message": "Baliozko komandoaren adibidea" },
   "info_filesToBeMinned": { "message": "JavaScript fitxategiak txikitu behar dira" },

@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "ລົ້ມເຫຼວໃນການຮວບຮວມສະຖານທີ່ doc" },
   "warn_remoteConfigNotFound": { "message": "ບໍ່ພົບໄຟລ໌ຕັ້ງຄ່າຫ່າງໄກສອກຫຼີກ" },
   "warn_remoteConfigFailed": { "message": "ການຮວບຮວມໄຟລ໌ຕັ້ງຄ່າຫ່າງໄກສອກຫຼີກບໍ່ສຳເລັດ" },
+  "warn_option": { "message": "ທາງເລືອກ" },
+  "warn_noLongerHasAnyEffect": { "message": "ບໍ່ ມີ ຜົນ ກະທົບ ອີກ" },
   "info_exampleValidConfigFile": { "message": "ຕົວຢ່າງເອກະສານ config ທີ່ຖືກຕ້ອງ" },
   "info_exampleValidCmd": { "message": "ຕົວຢ່າງ ຄໍາ ສັ່ງທີ່ຖືກຕ້ອງ" },
   "info_filesToBeMinned": { "message": "ໄຟລ໌ JavaScript ທີ່ຈະໄດ້ຮັບການ minified" },

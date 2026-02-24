@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Xa existe o ficheiro de configuración" },
   "warn_remoteConfigNotFound": { "message": "Non se atopou o ficheiro de configuración remota" },
   "warn_remoteConfigFailed": { "message": "Non foi posíbel obter o ficheiro de configuración remota" },
+  "warn_option": { "message": "Opción" },
+  "warn_noLongerHasAnyEffect": { "message": "xa non ten ningún efecto" },
   "warn_docLocalesFetchFailed": { "message": "Non foi posíbel obter os locais de doc" },
   "info_exampleValidConfigFile": { "message": "Exemplo de ficheiro de configuración válido" },
   "info_exampleValidCmd": { "message": "Comando válido de exemplo" },

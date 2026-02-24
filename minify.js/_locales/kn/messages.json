@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "ಡಾಕ್ಯುಮೆಂಟ್ ಸ್ಥಳಗಳನ್ನು ಪಡೆಯಲು ವಿಫಲವಾಗಿದೆ" },
   "warn_remoteConfigNotFound": { "message": "ರಿಮೋಟ್ ಕಾನ್ಫಿಗರೇಶನ್ ಫೈಲ್ ಕಂಡುಬಂದಿಲ್ಲ" },
   "warn_remoteConfigFailed": { "message": "ರಿಮೋಟ್ ಕಾನ್ಫಿಗರೇಶನ್ ಫೈಲ್ ಅನ್ನು ಪಡೆಯುವಲ್ಲಿ ವಿಫಲವಾಗಿದೆ" },
+  "warn_option": { "message": "ಆಯ್ಕೆ" },
+  "warn_noLongerHasAnyEffect": { "message": "ಇನ್ನು ಮುಂದೆ ಯಾವುದೇ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ" },
   "info_exampleValidConfigFile": { "message": "ಉದಾಹರಣೆ ಮಾನ್ಯ ಕಾನ್ಫಿಗರೇಶನ್ ಫೈಲ್" },
   "info_exampleValidCmd": { "message": "ಉದಾಹರಣೆ ಮಾನ್ಯ ಆಜ್ಞೆ" },
   "info_filesToBeMinned": { "message": "ಕಡಿಮೆ ಮಾಡಬೇಕಾದ ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಫೈಲ್ ಗಳು" },

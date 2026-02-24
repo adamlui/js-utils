@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Načtení národních prostředí dokumentů se nezdařilo" },
   "warn_remoteConfigNotFound": { "message": "Vzdálený konfigurační soubor nebyl nalezen" },
   "warn_remoteConfigFailed": { "message": "Načtení vzdáleného konfiguračního souboru se nezdařilo" },
+  "warn_option": { "message": "Možnost" },
+  "warn_noLongerHasAnyEffect": { "message": "již nemá žádný účinek" },
   "info_exampleValidConfigFile": { "message": "Příklad platného konfiguračního souboru" },
   "info_exampleValidCmd": { "message": "Příklad platného příkazu" },
   "info_filesToBeMinned": { "message": "Soubory JavaScript, které mají být zmenšeny" },

@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Échec de la récupération des paramètres régionaux du document" },
   "warn_remoteConfigNotFound": { "message": "Fichier de configuration à distance introuvable" },
   "warn_remoteConfigFailed": { "message": "Échec de la récupération du fichier de configuration distant" },
+  "warn_option": { "message": "Option" },
+  "warn_noLongerHasAnyEffect": { "message": "n'a plus d'effet" },
   "info_exampleValidConfigFile": { "message": "Exemple de fichier de configuration valide" },
   "info_exampleValidCmd": { "message": "Exemple de commande valide" },
   "info_filesToBeMinned": { "message": "Fichiers JavaScript à minifier" },

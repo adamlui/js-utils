@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "কনফিগ ফাইল ইতিমধ্যে বিদ্যমান" },
   "warn_remoteConfigNotFound": { "message": "রিমোট কনফিগ ফাইল পাওয়া যায়নি" },
   "warn_remoteConfigFailed": { "message": "রিমোট কনফিগ ফাইল আনতে ব্যর্থ হয়েছে" },
+  "warn_option": { "message": "বিকল্প" },
+  "warn_noLongerHasAnyEffect": { "message": "এখন আর কোনো প্রভাব নেই" },
   "warn_docLocalesFetchFailed": { "message": "ডক লোকালগুলি আনতে ব্যর্থ হয়েছে" },
   "info_exampleValidConfigFile": { "message": "উদাহরণ বৈধ কনফিগ ফাইল" },
   "info_exampleValidCmd": { "message": "উদাহরণ বৈধ কমান্ড" },

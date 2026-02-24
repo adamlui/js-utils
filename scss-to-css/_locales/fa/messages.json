@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "فایل پیکربندی از قبل وجود دارد" },
   "warn_remoteConfigNotFound": { "message": "فایل پیکربندی ریموت پیدا نشد" },
   "warn_remoteConfigFailed": { "message": "دریافت فایل پیکربندی از راه دور ناموفق بود" },
+  "warn_option": { "message": "گزینه" },
+  "warn_noLongerHasAnyEffect": { "message": "دیگر هیچ اثری ندارد" },
   "warn_docLocalesFetchFailed": { "message": "دریافت محل‌های سند ناموفق بود" },
   "info_exampleValidConfigFile": { "message": "نمونه فایل پیکربندی معتبر" },
   "info_exampleValidCmd": { "message": "مثال دستور معتبر" },

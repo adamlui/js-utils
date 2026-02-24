@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Impossibile recuperare le impostazioni locali del documento" },
   "warn_remoteConfigNotFound": { "message": "File di configurazione remoto non trovato" },
   "warn_remoteConfigFailed": { "message": "Impossibile recuperare il file di configurazione remoto" },
+  "warn_option": { "message": "Opzione" },
+  "warn_noLongerHasAnyEffect": { "message": "non ha più alcun effetto" },
   "info_exampleValidConfigFile": { "message": "Esempio di file di configurazione valido" },
   "info_exampleValidCmd": { "message": "Esempio comando valido" },
   "info_filesToBeMinned": { "message": "File JavaScript da minimizzare" },

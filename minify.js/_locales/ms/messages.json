@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Gagal mendapatkan dokumen setempat" },
   "warn_remoteConfigNotFound": { "message": "Fail konfigurasi jauh tidak ditemui" },
   "warn_remoteConfigFailed": { "message": "Gagal mendapatkan fail konfigurasi jauh" },
+  "warn_option": { "message": "Pilihan" },
+  "warn_noLongerHasAnyEffect": { "message": "tidak lagi memberi kesan" },
   "info_exampleValidConfigFile": { "message": "Contoh fail konfigurasi yang sah" },
   "info_exampleValidCmd": { "message": "Contoh perintah yang sah" },
   "info_filesToBeMinned": { "message": "Fail JavaScript untuk diminifikasikan" },

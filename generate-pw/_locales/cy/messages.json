@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "Methwyd cyrchu lleoliadau'r doc" },
   "warn_remoteConfigNotFound": { "message": "Ni chanfuwyd y ffeil cyfluniad pell" },
   "warn_remoteConfigFailed": { "message": "Methwyd cyrchu'r ffeil cyfluniad pell" },
+  "warn_option": { "message": "Opsiwn" },
+  "warn_noLongerHasAnyEffect": { "message": "nid yw bellach yn cael unrhyw effaith" },
   "info_exampleValidConfigFile": { "message": "Enghraifft o ffeil cyfluniad dilys" },
   "info_copyingToClip": { "message": "Copïo i&apos; r gludfwrdd" },
   "info_moreHelp": { "message": "Am fwy o help" },

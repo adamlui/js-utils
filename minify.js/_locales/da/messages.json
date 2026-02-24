@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Kunne ikke hente lokale dokumenter" },
   "warn_remoteConfigNotFound": { "message": "Fjernkonfigurationsfil ikke fundet" },
   "warn_remoteConfigFailed": { "message": "Kunne ikke hente fjernkonfigurationsfil" },
+  "warn_option": { "message": "Option" },
+  "warn_noLongerHasAnyEffect": { "message": "ikke længere har nogen effekt" },
   "info_exampleValidConfigFile": { "message": "Eksempel på gyldig konfigurationsfil" },
   "info_exampleValidCmd": { "message": "Eksempel på gyldig kommando" },
   "info_filesToBeMinned": { "message": "JavaScript-filer, der skal minificeres" },

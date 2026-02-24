@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "No te lo pierdas Doku Doku Doku" },
   "warn_remoteConfigNotFound": { "message": "Remote Config Archive No Found" },
   "warn_remoteConfigFailed": { "message": "No te pierdas Archivo Remote Config" },
+  "warn_option": { "message": "Opshon" },
+  "warn_noLongerHasAnyEffect": { "message": "no Mas Efecto" },
   "info_exampleValidConfigFile": { "message": "Documente similare cu Config File" },
   "info_copyingToClip": { "message": "Copiando a Clipboard" },
   "info_moreHelp": { "message": "Pa mas ayudo" },

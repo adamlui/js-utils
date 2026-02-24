@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Не удалось получить локали документов" },
   "warn_remoteConfigNotFound": { "message": "Файл удаленной конфигурации не найден" },
   "warn_remoteConfigFailed": { "message": "Не удалось получить удаленный файл конфигурации" },
+  "warn_option": { "message": "Опция" },
+  "warn_noLongerHasAnyEffect": { "message": "больше не имеет никакого эффекта" },
   "info_exampleValidConfigFile": { "message": "Пример допустимого файла конфигурации" },
   "info_exampleValidCmd": { "message": "Пример допустимой команды" },
   "info_filesToBeMinned": { "message": "Файлы JavaScript, которые необходимо минимизировать" },

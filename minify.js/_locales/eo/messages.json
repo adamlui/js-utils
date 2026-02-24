@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "@ info: whatsthis" },
   "warn_remoteConfigNotFound": { "message": "Fora agordodosiero ne troveblas" },
   "warn_remoteConfigFailed": { "message": "@ info: whatsthis" },
+  "warn_option": { "message": "Opcio" },
+  "warn_noLongerHasAnyEffect": { "message": "ne plu havas efekton" },
   "info_exampleValidConfigFile": { "message": "Ekzempla valida agordodosiero" },
   "info_exampleValidCmd": { "message": "Ekzemplo de valida komando" },
   "info_filesToBeMinned": { "message": "Ĝavoskriptdosieroj minifikendaj" },

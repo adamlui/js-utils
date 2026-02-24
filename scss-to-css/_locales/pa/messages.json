@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "ਸੰਰਚਨਾ ਫਾਇਲ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ" },
   "warn_remoteConfigNotFound": { "message": "ਰਿਮੋਟ ਸੰਰਚਨਾ ਫਾਇਲ ਨਹੀਂ ਲੱਭੀ" },
   "warn_remoteConfigFailed": { "message": "ਰਿਮੋਟ ਸੰਰਚਨਾ ਫਾਇਲ ਲੈਣ ਲਈ ਫੇਲ੍ਹ" },
+  "warn_option": { "message": "ਚੋਣ" },
+  "warn_noLongerHasAnyEffect": { "message": "ਹੁਣ ਕੋਈ ਪ੍ਰਭਾਵ ਨਹੀਂ ਹੈ" },
   "warn_docLocalesFetchFailed": { "message": "ਡੌਕੂਮੈਂਟ ਟਿਕਾਣੇ ਲੈਣ ਲਈ ਫੇਲ੍ਹ" },
   "info_exampleValidConfigFile": { "message": "ਉਦਾਹਰਨ ਵੈਧ ਸੰਰਚਨਾ ਫਾਇਲ" },
   "info_exampleValidCmd": { "message": "ਉਦਾਹਰਨ ਵੈਧ ਕਮਾਂਡ" },

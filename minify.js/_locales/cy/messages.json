@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Methwyd cyrchu lleoliadau'r doc" },
   "warn_remoteConfigNotFound": { "message": "Ni chanfuwyd y ffeil cyfluniad pell" },
   "warn_remoteConfigFailed": { "message": "Methwyd cyrchu'r ffeil cyfluniad pell" },
+  "warn_option": { "message": "Opsiwn" },
+  "warn_noLongerHasAnyEffect": { "message": "nid yw bellach yn cael unrhyw effaith" },
   "info_exampleValidConfigFile": { "message": "Enghraifft o ffeil cyfluniad dilys" },
   "info_exampleValidCmd": { "message": "Gorchymyn dilys enghreifftiol" },
   "info_filesToBeMinned": { "message": "Ffeiliau Javascript i'w minimeiddio" },

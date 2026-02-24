@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Preuzimanje lokaliteta dokumenata nije uspelo" },
   "warn_remoteConfigNotFound": { "message": "Udaljena konfiguraciona datoteka nije pronađena" },
   "warn_remoteConfigFailed": { "message": "Preuzimanje udaljene konfiguracione datoteke nije uspelo" },
+  "warn_option": { "message": "Opcija" },
+  "warn_noLongerHasAnyEffect": { "message": "više nema efekta" },
   "info_exampleValidConfigFile": { "message": "Primer važeće konfiguracione datoteke" },
   "info_exampleValidCmd": { "message": "Primer važeće komande" },
   "info_filesToBeMinned": { "message": "JavaScript datoteke za umanjenje" },

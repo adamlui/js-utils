@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Dok Lokale gefunden" },
   "warn_remoteConfigNotFound": { "message": "Distanzkonfiguratiounsdatei net fonnt" },
   "warn_remoteConfigFailed": { "message": "Konnt d'Fernconfiguratiounsdatei net fannen" },
+  "warn_option": { "message": "Optioun" },
+  "warn_noLongerHasAnyEffect": { "message": "huet keen Effekt méi" },
   "info_exampleValidConfigFile": { "message": "Beispill valabel Konfiguratiounsdatei" },
   "info_exampleValidCmd": { "message": "Beispill valabel Kommando" },
   "info_filesToBeMinned": { "message": "Javascript-Dateien sollen minifizéiert ginn" },

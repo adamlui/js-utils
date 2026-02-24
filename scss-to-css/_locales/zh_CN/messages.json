@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "配置文件已存在" },
   "warn_remoteConfigNotFound": { "message": "未找到远程配置文件" },
   "warn_remoteConfigFailed": { "message": "获取远程配置文件失败" },
+  "warn_option": { "message": "选项" },
+  "warn_noLongerHasAnyEffect": { "message": "不再有任何效果" },
   "warn_docLocalesFetchFailed": { "message": "获取文档区域设置失败" },
   "info_exampleValidConfigFile": { "message": "有效配置文件示例" },
   "info_exampleValidCmd": { "message": "有效命令示例" },

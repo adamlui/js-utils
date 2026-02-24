@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Ffeil cyfluniad yn bodoli'n barod" },
   "warn_remoteConfigNotFound": { "message": "Ni chanfuwyd y ffeil cyfluniad pell" },
   "warn_remoteConfigFailed": { "message": "Methwyd cyrchu'r ffeil cyfluniad pell" },
+  "warn_option": { "message": "Opsiwn" },
+  "warn_noLongerHasAnyEffect": { "message": "nid yw bellach yn cael unrhyw effaith" },
   "warn_docLocalesFetchFailed": { "message": "Methwyd cyrchu lleoliadau'r doc" },
   "info_exampleValidConfigFile": { "message": "Enghraifft o ffeil cyfluniad dilys" },
   "info_exampleValidCmd": { "message": "Gorchymyn dilys enghreifftiol" },

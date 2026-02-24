@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Nekarî cihên belgeyê werbigire" },
   "warn_remoteConfigNotFound": { "message": "Pelê mîhengkirina dûr nehat dîtin" },
   "warn_remoteConfigFailed": { "message": "Pelê mîhengkirina dûr nehat wergirtin" },
+  "warn_option": { "message": "Dibe" },
+  "warn_noLongerHasAnyEffect": { "message": "êdî bandorek tune" },
   "info_exampleValidConfigFile": { "message": "Nimûneya pelê mîhengê ya derbasdar" },
   "info_exampleValidCmd": { "message": "Mînak fermana derbasdar" },
   "info_filesToBeMinned": { "message": "Pelên JavaScriptê yên ku bêne kêm kirin" },

@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "קובץ התצורה כבר קיים" },
   "warn_remoteConfigNotFound": { "message": "קובץ התצורה מרחוק לא נמצא" },
   "warn_remoteConfigFailed": { "message": "טעינת קובץ התצורה מרחוק נכשלה" },
+  "warn_option": { "message": "אפשרות" },
+  "warn_noLongerHasAnyEffect": { "message": "כבר אין לו כל השפעה" },
   "warn_docLocalesFetchFailed": { "message": "טעינת אזורי המסמכים נכשלה" },
   "info_exampleValidConfigFile": { "message": "דוגמה לקובץ תצורה חוקי" },
   "info_exampleValidCmd": { "message": "דוגמה לפקודה חוקית" },

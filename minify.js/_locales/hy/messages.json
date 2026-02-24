@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Չհաջողվեց ստանալ փաստաթղթերի տեղամասերը" },
   "warn_remoteConfigNotFound": { "message": "Հեռակա կոնֆիգուրացիայի ֆայլը չի գտնվել" },
   "warn_remoteConfigFailed": { "message": "Չհաջողվեց ստանալ հեռակառավարվող կոնֆիգուրացիոն ֆայլը" },
+  "warn_option": { "message": "Տարբերակ" },
+  "warn_noLongerHasAnyEffect": { "message": "այլևս ոչ մի ազդեցություն չունի" },
   "info_exampleValidConfigFile": { "message": "Վավեր կոնֆիգուրացիոն ֆայլի օրինակ" },
   "info_exampleValidCmd": { "message": "Վավեր հրահանգի օրինակ" },
   "info_filesToBeMinned": { "message": "Նվազեցման ենթակա JavaScript ֆայլեր" },

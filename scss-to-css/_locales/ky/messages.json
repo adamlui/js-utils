@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Файлды конфигурациялоо мурунтан эле бар" },
   "warn_remoteConfigNotFound": { "message": "Алыстан конфигурация файлы табылган жок" },
   "warn_remoteConfigFailed": { "message": "Алыскы конфигурация файлын алуу ишке ашпады" },
+  "warn_option": { "message": "Параметр" },
+  "warn_noLongerHasAnyEffect": { "message": "мындан ары эч кандай таасирин тийгизбейт" },
   "warn_docLocalesFetchFailed": { "message": "Doc locales-action" },
   "info_exampleValidConfigFile": { "message": "Үлгү жарактуу конфигурация файлы" },
   "info_exampleValidCmd": { "message": "Үлгү жарактуу буйрук" },

@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Konfigurationsfilen finns redan" },
   "warn_remoteConfigNotFound": { "message": "Fjärrkonfigurationsfil hittades inte" },
   "warn_remoteConfigFailed": { "message": "Kunde inte hämta fjärrkonfigurationsfil" },
+  "warn_option": { "message": "Alternativ" },
+  "warn_noLongerHasAnyEffect": { "message": "inte längre har någon effekt" },
   "warn_docLocalesFetchFailed": { "message": "Det gick inte att hämta lokala dokument" },
   "info_exampleValidConfigFile": { "message": "Exempel på giltig konfigurationsfil" },
   "info_exampleValidCmd": { "message": "Exempel på giltigt kommando" },

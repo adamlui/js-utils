@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Konfigurointitiedosto on jo olemassa" },
   "warn_remoteConfigNotFound": { "message": "Etäkonfig-tiedostoa ei löydy" },
   "warn_remoteConfigFailed": { "message": "Etämääritystiedoston nouto epäonnistui" },
+  "warn_option": { "message": "Vaihtoehto" },
+  "warn_noLongerHasAnyEffect": { "message": "ei enää vaikuta" },
   "warn_docLocalesFetchFailed": { "message": "Asiakirjapaikkojen noutaminen epäonnistui" },
   "info_exampleValidConfigFile": { "message": "Esimerkki kelvollisesta asetustiedostosta" },
   "info_exampleValidCmd": { "message": "Esimerkki kelvollisesta komennosta" },

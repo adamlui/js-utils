@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Config file kale" },
   "warn_remoteConfigNotFound": { "message": "Remote Files Remote Files No Found" },
   "warn_remoteConfigFailed": { "message": "Fela Anikulapo Kuti Remote Config File" },
+  "warn_option": { "message": "Ukusalapo" },
+  "warn_noLongerHasAnyEffect": { "message": "no Longer Impact ukulele" },
   "warn_docLocalesFetchFailed": { "message": "Fela Anikulapo Kuti Doc Locales" },
   "info_exampleValidConfigFile": { "message": "Ifilangililo fya fipe fya fipe fya fipe" },
   "info_exampleValidCmd": { "message": "Icilangililo ca Mafunde Ayacindama" },

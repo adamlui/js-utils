@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Efa misy ilay raki-kirakira" },
   "warn_remoteConfigNotFound": { "message": "Tsy hita ilay raki-kirakira lavi-toerana" },
   "warn_remoteConfigFailed": { "message": "Tsy afaka naka ny raki-kirakira avy lavitra" },
+  "warn_option": { "message": "SAFIDY" },
+  "warn_noLongerHasAnyEffect": { "message": "tsy misy fiantraikany intsony." },
   "warn_docLocalesFetchFailed": { "message": "Tsy afaka naka ny toeran'ilay tahirin-kevitra" },
   "info_exampleValidConfigFile": { "message": "Ohatra ny raki-kirakira azo ekena" },
   "info_exampleValidCmd": { "message": "Baiko mety ohatra" },

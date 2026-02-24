@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Faylı konfiqurasiya edin artıq" },
   "warn_remoteConfigNotFound": { "message": "Uzaqdan konfiqurasiya faylı tapılmadı" },
   "warn_remoteConfigFailed": { "message": "Uzaqdan konfiqurasiya faylı alına bilmədi" },
+  "warn_option": { "message": "Seçim" },
+  "warn_noLongerHasAnyEffect": { "message": "artıq heç bir təsiri yoxdur" },
   "warn_docLocalesFetchFailed": { "message": "Dosye yerlərini gətirmək alınmadı" },
   "info_exampleValidConfigFile": { "message": "Nümunə üçün etibarlı konfiqurasiya faylı" },
   "info_exampleValidCmd": { "message": "Nümunə üçün etibarlı əmr" },

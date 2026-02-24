@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "Nie udało się pobrać lokalizacji dokumentów" },
   "warn_remoteConfigNotFound": { "message": "Nie znaleziono zdalnego pliku konfiguracyjnego" },
   "warn_remoteConfigFailed": { "message": "Nie udało się pobrać zdalnego pliku konfiguracyjnego" },
+  "warn_option": { "message": "Opcja" },
+  "warn_noLongerHasAnyEffect": { "message": "nie ma już żadnego wpływu" },
   "info_exampleValidConfigFile": { "message": "Przykład prawidłowego pliku konfiguracyjnego" },
   "info_copyingToClip": { "message": "Kopiowanie do schowka" },
   "info_moreHelp": { "message": ", aby otrzymali dalszą pomoc" },

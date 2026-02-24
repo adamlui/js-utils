@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "ドキュメントのロケールを取得できませんでした" },
   "warn_remoteConfigNotFound": { "message": "リモート ファイルが見つかりません" },
   "warn_remoteConfigFailed": { "message": "リモート構成ファイルを取得できませんでした" },
+  "warn_option": { "message": "オプション" },
+  "warn_noLongerHasAnyEffect": { "message": "もはや何の効果もない" },
   "info_exampleValidConfigFile": { "message": "有効な設定ファイルの例" },
   "info_exampleValidCmd": { "message": "有効なコマンドの例" },
   "info_filesToBeMinned": { "message": "縮小される JS ファイル" },

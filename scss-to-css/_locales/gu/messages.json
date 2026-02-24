@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "રૂપરેખાંકન ફાઇલ પહેલાથી જ અસ્તિત્વમાં છે" },
   "warn_remoteConfigNotFound": { "message": "દૂરસ્થ રૂપરેખાંકન ફાઇલ મળી નથી" },
   "warn_remoteConfigFailed": { "message": "દૂરસ્થ રૂપરેખાંકન ફાઇલને મેળવવામાં નિષ્ફળતા" },
+  "warn_option": { "message": "વિકલ્પ" },
+  "warn_noLongerHasAnyEffect": { "message": "હવે કોઈ અસર થતી નથી" },
   "warn_docLocalesFetchFailed": { "message": "DOC લોકેલ્સ મેળવવામાં નિષ્ફળતા" },
   "info_exampleValidConfigFile": { "message": "ઉદાહરણ માન્ય રૂપરેખાંકન ફાઇલ" },
   "info_exampleValidCmd": { "message": "ઉદાહરણ માન્ય આદેશ" },

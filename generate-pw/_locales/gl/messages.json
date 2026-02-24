@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "Non foi posíbel obter os locais de doc" },
   "warn_remoteConfigNotFound": { "message": "Non se atopou o ficheiro de configuración remota" },
   "warn_remoteConfigFailed": { "message": "Non foi posíbel obter o ficheiro de configuración remota" },
+  "warn_option": { "message": "Opción" },
+  "warn_noLongerHasAnyEffect": { "message": "xa non ten ningún efecto" },
   "info_exampleValidConfigFile": { "message": "Exemplo de ficheiro de configuración válido" },
   "info_copyingToClip": { "message": "Copiando para o portarretallos" },
   "info_moreHelp": { "message": "Para máis axuda" },

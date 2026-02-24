@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Ayiphumelelanga ukukhangela ii-doc locales" },
   "warn_remoteConfigNotFound": { "message": "Ifayili yokumisela kude ayifumanekanga" },
   "warn_remoteConfigFailed": { "message": "Ayiphumelelanga ukulanda ifayile yokumiselwa kwenkqubo ekwenye indawo" },
+  "warn_option": { "message": "Ukhetho" },
+  "warn_noLongerHasAnyEffect": { "message": "ayisachaphazeli nantoni na" },
   "info_exampleValidConfigFile": { "message": "Umzekelo wefayile echanileyo yokuqwalasela" },
   "info_exampleValidCmd": { "message": "Umzekelo womyalelo osebenzayo" },
   "info_filesToBeMinned": { "message": "Iifayile zeJavaScript eziza kuncitshiswa" },

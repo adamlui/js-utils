@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Cogitas" },
   "warn_remoteConfigNotFound": { "message": "Tabularia configus Remote non est" },
   "warn_remoteConfigFailed": { "message": "Remote config file" },
+  "warn_option": { "message": "Optio" },
+  "warn_noLongerHasAnyEffect": { "message": "nunquam non è effectis" },
   "info_exampleValidConfigFile": { "message": "Exemplaria valid configuendum" },
   "info_exampleValidCmd": { "message": "Exemplaria valid commandus" },
   "info_filesToBeMinned": { "message": "JavaScript files minibus" },

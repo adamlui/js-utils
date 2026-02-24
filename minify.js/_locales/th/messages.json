@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "เรียกดูเอกสารท้องถิ่นไม่สำเร็จ" },
   "warn_remoteConfigNotFound": { "message": "ไม่พบไฟล์การกำหนดค่าระยะไกล" },
   "warn_remoteConfigFailed": { "message": "เรียกดูไฟล์การกำหนดค่าระยะไกลไม่สำเร็จ" },
+  "warn_option": { "message": "ตัวเลือก" },
+  "warn_noLongerHasAnyEffect": { "message": "ไม่มีผลใดๆอีกต่อไป" },
   "info_exampleValidConfigFile": { "message": "ตัวอย่างไฟล์การกำหนดค่าที่ถูกต้อง" },
   "info_exampleValidCmd": { "message": "ตัวอย่างคำสั่งที่ถูกต้อง" },
   "info_filesToBeMinned": { "message": "ไฟล์จาวาสคริปต์ที่จะถูกย่อ" },

@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "O reteletswe ke go tsaya mafelo a Doc" },
   "warn_remoteConfigNotFound": { "message": "Faele ya Remote config ga e a bonwa" },
   "warn_remoteConfigFailed": { "message": "O reteletswe ke go tsaya faele ya config e e dirwang kgakala" },
+  "warn_option": { "message": "Tlhopho" },
+  "warn_noLongerHasAnyEffect": { "message": "ga e tlhole e na le diphelelo dipe" },
   "info_exampleValidConfigFile": { "message": "Sekao sa faele e e amogelesegang ya" },
   "info_copyingToClip": { "message": "Go kopolola go ya go clipboard" },
   "info_moreHelp": { "message": "Go bona thuso go ya pele" },

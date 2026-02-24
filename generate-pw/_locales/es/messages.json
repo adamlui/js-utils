@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "No se ha podido obtener la configuración regional del documento" },
   "warn_remoteConfigNotFound": { "message": "Archivo de configuración remota no encontrado" },
   "warn_remoteConfigFailed": { "message": "No se ha podido recuperar el archivo de configuración remota" },
+  "warn_option": { "message": "Opción" },
+  "warn_noLongerHasAnyEffect": { "message": "ya no tiene ningún efecto" },
   "info_exampleValidConfigFile": { "message": "Ejemplo de archivo de configuración válido" },
   "info_copyingToClip": { "message": "Copiar al portapapeles fue" },
   "info_moreHelp": { "message": "Para obtener más ayuda" },

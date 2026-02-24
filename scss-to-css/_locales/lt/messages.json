@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Konfigūracijos failas jau yra" },
   "warn_remoteConfigNotFound": { "message": "Nuotolinės konfigūracijos failas nerastas" },
   "warn_remoteConfigFailed": { "message": "Nepavyko gauti nuotolinio konfigūracijos failo" },
+  "warn_option": { "message": "Parinktis" },
+  "warn_noLongerHasAnyEffect": { "message": "nebeturi jokio poveikio" },
   "warn_docLocalesFetchFailed": { "message": "Nepavyko gauti dokumentų lokalių" },
   "info_exampleValidConfigFile": { "message": "VALID konfigūracijos failo pavyzdys" },
   "info_exampleValidCmd": { "message": "VALID komandos pavyzdys" },

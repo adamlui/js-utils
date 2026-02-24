@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "تعذر إحضار مواقع المستندات" },
   "warn_remoteConfigNotFound": { "message": "لم يتم العثور على ملف التكوين عن بعد" },
   "warn_remoteConfigFailed": { "message": "فشل إحضار ملف التكوين عن بُعد" },
+  "warn_option": { "message": "الخيار" },
+  "warn_noLongerHasAnyEffect": { "message": "لم يعد له أي تأثير" },
   "info_exampleValidConfigFile": { "message": "مثال على ملف تكوين صالح" },
   "info_exampleValidCmd": { "message": "مثال على أمر صالح" },
   "info_filesToBeMinned": { "message": "يجب تصغير ملفات جافا سكريبت" },

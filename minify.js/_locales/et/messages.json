@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Dokumendi lokaatide toomine nurjus" },
   "warn_remoteConfigNotFound": { "message": "Kaugkonfiguratsioonifaili ei leitud" },
   "warn_remoteConfigFailed": { "message": "Kaugkonfiguratsioonifaili toomine nurjus" },
+  "warn_option": { "message": "Valik" },
+  "warn_noLongerHasAnyEffect": { "message": "ei avalda enam mõju" },
   "info_exampleValidConfigFile": { "message": "Kehtiva konfiguratsioonifaili näide" },
   "info_exampleValidCmd": { "message": "Kehtiva käsu näide" },
   "info_filesToBeMinned": { "message": "Minimeeritavad JavaScripti failid" },

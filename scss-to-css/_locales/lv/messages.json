@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Konfigurācijas fails jau pastāv" },
   "warn_remoteConfigNotFound": { "message": "Attālās konfigurācijas fails nav atrasts" },
   "warn_remoteConfigFailed": { "message": "Neizdevās ielādēt attālās konfigurācijas failu" },
+  "warn_option": { "message": "Opcija" },
+  "warn_noLongerHasAnyEffect": { "message": "vairs nav nekādas ietekmes" },
   "warn_docLocalesFetchFailed": { "message": "Neizdevās ielādēt dokumentu lokalizācijas" },
   "info_exampleValidConfigFile": { "message": "Derīga konfigurācijas faila piemērs" },
   "info_exampleValidCmd": { "message": "Piemērs: derīga komanda" },

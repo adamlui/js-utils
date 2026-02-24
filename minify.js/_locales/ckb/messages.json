@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "دۆزینەوەی دۆکیۆمێنتەکان شکستی هێنا" },
   "warn_remoteConfigNotFound": { "message": "پەڕگەی ڕێکخستن لە دوورەوە نەدۆزرایەوە" },
   "warn_remoteConfigFailed": { "message": "شکستی هێنا لە دۆزینەوەی پەڕگەی ڕێکخستنی دوور" },
+  "warn_option": { "message": "هەڵبژاردن" },
+  "warn_noLongerHasAnyEffect": { "message": "چیتر هیچ کاریگەرییەک" },
   "info_exampleValidConfigFile": { "message": "نموونەی پەڕگەی ڕێکخستنێکی دروست" },
   "info_exampleValidCmd": { "message": "فەرمانێکی ڕاست بۆ نموونە" },
   "info_filesToBeMinned": { "message": "پەڕگەکانی جاڤاسکریپت بۆ مینلابردن" },

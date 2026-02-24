@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Failed to fetch doc locales" },
   "warn_remoteConfigNotFound": { "message": "Remote config file not found" },
   "warn_remoteConfigFailed": { "message": "Failed to fetch remote config file" },
+  "warn_option": { "message": "Option" },
+  "warn_noLongerHasAnyEffect": { "message": "no longer has any effect" },
   "info_exampleValidConfigFile": { "message": "Example valid config file" },
   "info_exampleValidCmd": { "message": "Example valid command" },
   "info_filesToBeMinned": { "message": "JS files to be minified" },

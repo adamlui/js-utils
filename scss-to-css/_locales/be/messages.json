@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Файл канфігурацыі ўжо існуе" },
   "warn_remoteConfigNotFound": { "message": "Аддалены файл канфігурацыі не знойдзены" },
   "warn_remoteConfigFailed": { "message": "Немагчыма атрымаць файл аддаленых канфігурацый" },
+  "warn_option": { "message": "Варыянт" },
+  "warn_noLongerHasAnyEffect": { "message": "больш не мае эфекту" },
   "warn_docLocalesFetchFailed": { "message": "Немагчыма атрымаць лакальныя дакументы" },
   "info_exampleValidConfigFile": { "message": "Дапушчальны прыклад файла канфігурацыі" },
   "info_exampleValidCmd": { "message": "Прыклад сапраўднай каманды" },

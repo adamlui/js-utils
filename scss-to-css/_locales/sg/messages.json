@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Faïl so ayeke dä awe" },
   "warn_remoteConfigNotFound": { "message": "Désolé Aucun résultat trouvé" },
   "warn_remoteConfigFailed": { "message": "Disable alert for Mbeni" },
+  "warn_option": { "message": "A yeke na lege ti kode ti sarango ye" },
+  "warn_noLongerHasAnyEffect": { "message": "a yeke sara ye na lege ni ape" },
   "warn_docLocalesFetchFailed": { "message": "A yeke wara ni pëpe na ndo ti Doc Locales" },
   "info_exampleValidConfigFile": { "message": "Tapande ti faïl so ayeke na lege ni" },
   "info_exampleValidCmd": { "message": "Mbeni tapande ti commandement so ayeke na lege ni" },

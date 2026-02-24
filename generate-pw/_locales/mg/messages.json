@@ -20,6 +20,8 @@
   "warn_docLocalesFetchFailed": { "message": "Tsy afaka naka ny toeran'ilay tahirin-kevitra" },
   "warn_remoteConfigNotFound": { "message": "Tsy hita ilay raki-kirakira lavi-toerana" },
   "warn_remoteConfigFailed": { "message": "Tsy afaka naka ny raki-kirakira avy lavitra" },
+  "warn_option": { "message": "SAFIDY" },
+  "warn_noLongerHasAnyEffect": { "message": "tsy misy fiantraikany intsony." },
   "info_exampleValidConfigFile": { "message": "Ohatra ny raki-kirakira azo ekena" },
   "info_copyingToClip": { "message": "Mandika mankany amin'ny fanindri-taratasy" },
   "info_moreHelp": { "message": "Raha mila fanampiana bebe kokoa" },

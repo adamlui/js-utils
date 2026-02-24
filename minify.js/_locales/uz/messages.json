@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Hujjat lokalizatsiyasini olib bo'lmadi" },
   "warn_remoteConfigNotFound": { "message": "Masofaviy konfiguratsiya fayli topilmadi" },
   "warn_remoteConfigFailed": { "message": "Masofaviy konfiguratsiya faylini olib bo'lmadi" },
+  "warn_option": { "message": "Variant" },
+  "warn_noLongerHasAnyEffect": { "message": "endi hech qanday ta'sir ko'rsatmaydi" },
   "info_exampleValidConfigFile": { "message": "Misol uchun amal qiluvchi konfiguratsiya fayli" },
   "info_exampleValidCmd": { "message": "To'g'ri buyruq misoli" },
   "info_filesToBeMinned": { "message": "JavaScript fayllari kichiklashtiriladi" },

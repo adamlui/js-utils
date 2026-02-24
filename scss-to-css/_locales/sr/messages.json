@@ -21,6 +21,8 @@
   "warn_configFileExists": { "message": "Konfiguraciona datoteka već postoji" },
   "warn_remoteConfigNotFound": { "message": "Udaljena konfiguraciona datoteka nije pronađena" },
   "warn_remoteConfigFailed": { "message": "Preuzimanje udaljene konfiguracione datoteke nije uspelo" },
+  "warn_option": { "message": "Opcija" },
+  "warn_noLongerHasAnyEffect": { "message": "više nema efekta" },
   "warn_docLocalesFetchFailed": { "message": "Preuzimanje lokaliteta dokumenata nije uspelo" },
   "info_exampleValidConfigFile": { "message": "Primer važeće konfiguracione datoteke" },
   "info_exampleValidCmd": { "message": "Primer važeće komande" },

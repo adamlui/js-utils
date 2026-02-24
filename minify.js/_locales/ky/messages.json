@@ -22,6 +22,8 @@
   "warn_docLocalesFetchFailed": { "message": "Doc locales-action" },
   "warn_remoteConfigNotFound": { "message": "Алыстан конфигурация файлы табылган жок" },
   "warn_remoteConfigFailed": { "message": "Алыскы конфигурация файлын алуу ишке ашпады" },
+  "warn_option": { "message": "Параметр" },
+  "warn_noLongerHasAnyEffect": { "message": "мындан ары эч кандай таасирин тийгизбейт" },
   "info_exampleValidConfigFile": { "message": "Үлгү жарактуу конфигурация файлы" },
   "info_exampleValidCmd": { "message": "Үлгү жарактуу буйрук" },
   "info_filesToBeMinned": { "message": "JavaScript файлдары минималдаштырылат" },
