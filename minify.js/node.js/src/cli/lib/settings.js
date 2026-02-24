@@ -85,10 +85,22 @@ module.exports = {
                 const mod = require(cli.configPath), fileConfig = mod?.default ?? mod
                 if (!fileConfig || typeof fileConfig != 'object')
                     log.configURLandExit(`${cli.msgs.error_invalidConfigFile}.`)
-                Object.assign(cli.config, arguments.length ?
-                    inputCtrlKeys.reduce((acc, key) => fileConfig[key] ? { ...acc, [key]: fileConfig[key] } : acc, {})
-                        : fileConfig // whole file on arg-less load()
-                )
+                ;(arguments.length ? inputCtrlKeys : Object.keys(fileConfig)).forEach(key => {
+                    if (!(key in fileConfig)) return
+                    const val = fileConfig[key], ctrl = this.controls[key]
+                    if (!ctrl) {
+                        if (this.configFileKeyWhitelist && !this.configFileKeyWhitelist.includes(key))
+                            log.invalidConfigKey(key)
+                        return
+                    } else if (ctrl.type == 'legacy' && ctrl.replacedBy) {
+                        if (key.toLowerCase().includes('no') != ctrl.replacedBy.toLowerCase().includes('no'))
+                            cli.config[ctrl.replacedBy] = !val  // assign opposite val to current key
+                        else // assign direct val to current key
+                            cli.config[ctrl.replacedBy] = val
+                        return log.configKeyReplacedBy(key, ctrl.replacedBy, val)
+                    }
+                    if (!cli.config[key]) cli.config[key] = val
+                })
             } catch (err) {
                 log.configURLandExit(`${cli.msgs.error_failedToLoadConfigFile}:`, cli.configPath, `\n${err.message}`) }
 
@@ -99,10 +111,7 @@ module.exports = {
             if (!ctrlKey && cli.msgs) log.errorAndExit(`[${arg}] ${cli.msgs.error_notRecognized}.`)
             if (!inputCtrlKeys.includes(ctrlKey)) return // don't process env.args when load() specific keys
             const ctrl = this.controls[ctrlKey]
-            if (ctrl.type == 'legacy') {
-                log.warn(`${cli.msgs.warn_option} ${arg} ${cli.msgs.warn_noLongerHasAnyEffect}.`)
-                continue
-            }
+            if (ctrl.type == 'legacy') { log.argDoesNothing(arg) ; continue }
             if (ctrl.mode) // set cli.config.mode to mode name
                 cli.config.mode = ctrlKey.replace(/mode$/i, '').toLowerCase()
             else { // init flag/param/cmd cli.config[ctrlKey] val

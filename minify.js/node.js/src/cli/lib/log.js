@@ -1,10 +1,13 @@
 const colors = require('./color'),
-    { getDownloads, getVer } = require('./pkg')
+    { getDownloads, getVer } = require('./pkg'),
+      string = require('./string')
+
+const nextMajVer = require('../../../package.json').version.replace(/^(\d+)\..*/, (_, major) => `${ +major +1 }.0.0`)
 
 module.exports = {
     colors,
 
-    configURL() { this.info(`\n${cli.msgs.info_exampleValidConfigFile}: ${cli.urls.config}`) },
+    configURL() { this.info(`${cli.msgs.info_exampleValidConfigFile}: ${cli.urls.config}`) },
     configURLandExit(...args) { this.error(...args); this.configURL(); process.exit(1) },
     data(msg) { console.log(`\n${colors.bw}${msg}${colors.nc}`) },
     debug(msg) { if (env.modes.debug) console.debug(`\n${colors.bo}DEBUG:`, msg, colors.nc, '\n') },
@@ -18,11 +21,29 @@ module.exports = {
     success(msg) { console.log(`\n${colors.bg}${msg}${colors.nc}`) },
     warn(...args) { console.warn(`\n${colors.bo}WARNING:`, ...args, colors.nc) },
 
+    argDoesNothing(arg) {
+        this.warn(`${cli.msgs.warn_option} ${arg} ${cli.msgs.warn_noLongerHasAnyEffect} ${
+                     cli.msgs.warn_andWillBeRemoved} @ v${nextMajVer}`)
+    },
+
+    configKeyReplacedBy(oldKey, newKey, oldVal) {
+        if (!this[`${oldKey}Warned`]) {
+            this.warn(
+                `${cli.msgs.info_configFile} ${cli.msgs.warn_option.toLowerCase()} '${oldKey}: ${oldVal}' ${
+                   cli.msgs.warn_hasBeenReplacedBy} '${
+                       newKey}: ${ isNegKey(oldKey) != isNegKey(newKey) ? !oldVal : oldVal }' ${
+                   cli.msgs.warn_andWillBeRemoved} @ v${nextMajVer}`
+            )
+            this[`${oldKey}Warned`] = true
+            function isNegKey(key) { /no|disable|exclude/i.test(key) }
+        }
+    },
+
     help(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'params', 'cmds']) {
         cli.prefix = `${this.colors.tlBG}${this.colors.blk} ${cli.name.replace(/^@[^/]+\//, '')} ${this.colors.nc} `
         const helpSections = {
             header: [
-                `\n├ ${cli.prefix}${cli.msgs.appCopyright}.`,
+                `\n├ ${cli.prefix}${cli.msgs.pkg_copyright}.`,
                 `${cli.prefix}${cli.msgs.prefix_source}: ${cli.urls.src}`
             ],
             usage: [
@@ -100,6 +121,24 @@ module.exports = {
                     colors.bw}${cli.urls.docs}${colors.nc}`
         )
     },
+
+    initCmd(invalidKey) {
+        if (invalidKey)
+            this.warn(
+                `${cli.msgs.error_invalidKey} '${invalidKey}' ${cli.msgs.error_foundIn}\n`
+                + `${log.colors.gry}${cli.configPath}`
+            )
+        if (!this.initTipped) {
+            this.break()
+            this.tip(`${
+                string.toTitleCase(cli.msgs.info_type)} '${cli.name} init' ${
+                    cli.msgs.info_toCreateDefaultConfig}`
+            )
+            this.initTipped = true
+        }
+    },
+
+    invalidConfigKey(key) { if (!this[`${key}Tipped`]) { this.initCmd(key) ; this[`${key}Tipped`] = true } },
 
     async stats(pkgName = cli.name, options = { ecosystem: 'npm', maxDays: 8, maxVers: 5, scheme: 'default' }) {
         const pkgStats = await getDownloads(pkgName, options),
