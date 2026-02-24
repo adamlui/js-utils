@@ -7,9 +7,9 @@ module.exports = {
 
     async cli() {
         Object.assign(globalThis.cli ??= {}, require(`${dataPath}package-data.json`))
-        cli.lang = settings.load('uiLang') || (
-            env.modes.debug ? language.generateRandomLang({ excludes: ['en'] }) : language.getSysLang() )
-        cli.msgs = await language.getMsgs(cli.lang)
+        cli.msgs = await language.getMsgs('en')
+        cli.msgs = await language.getMsgs(cli.lang = settings.load('uiLang') || (
+            env.modes.debug ? language.generateRandomLang({ excludes: ['en'] }) : language.getSysLang() ))
         cli.urls.cliDocs = `${cli.urls.docs}/#-command-line-usage`
         if (!cli.lang.startsWith('en')) { // localize cli.urls.cliDocs
             cli.docLocale = cli.lang.replace('_', '-').toLowerCase()
