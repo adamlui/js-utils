@@ -25,6 +25,7 @@
   "warn_noLongerHasAnyEffect": { "message": "a yeke sara ye na lege ni ape" },
   "warn_hasBeenReplacedBy": { "message": "a changé lo na" },
   "warn_andWillBeRemoved": { "message": "na fade a yeke zi ala" },
+  "warn_notFound": { "message": "A wara lo pëpe" },
   "info_configFile": { "message": "Faïl ti Config" },
   "info_exampleValidConfigFile": { "message": "Tapande ti faïl so ayeke na lege ni" },
   "info_copyingToClip": { "message": "Gbu li ti mo na ndo ti clipboard ni" },
