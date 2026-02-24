@@ -35,7 +35,7 @@ module.exports = {
                    cli.msgs.warn_andWillBeRemoved} @ v${nextMajVer}`
             )
             this[`${oldKey}Warned`] = true
-            function isNegKey(key) { /no|disable|exclude/i.test(key) }
+            function isNegKey(key) { return /no|disable|exclude/i.test(key) }
         }
     },
 
