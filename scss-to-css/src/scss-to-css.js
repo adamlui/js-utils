@@ -50,10 +50,10 @@ function findSCSS(searchDir, options = {}) {
         _log.info('Searching for files...')
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file)
-        const shouldIgnore = options.ignores.some(pattern =>
-            pattern.endsWith('/') ? filePath.split(path.sep).some(part => part == pattern.replace(/\/$/, ''))
-          : file == pattern
-        )
+        const shouldIgnore = options.ignores.some(ignore => {
+            ignore = ignore.replace(/\/$/, '')
+            return file == ignore ? true : filePath.split(path.sep).some(part => part == ignore)
+        })
         if (shouldIgnore) {
             if (options.verbose) _log.info(`** ${file} ignored`)
         } else if (fs.statSync(filePath).isDirectory() && file != 'node_modules' // folder found
