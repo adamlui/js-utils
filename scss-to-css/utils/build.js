@@ -2,7 +2,7 @@
 
 // Copies data/JS + minifies API to dist/
 
-// NOTE: Pass --js to copy/minify JS only
+// NOTE: Pass --js to copy JS only
 // NOTE: Pass --data to copy data only
 // NOTE: Pass --json to copy JSON only
 
@@ -33,16 +33,13 @@ if (!script.config.jsOnly) {
     if (!script.config.jsonOnly) file.copy(filenames.config, `${dataOutDir}/${filenames.config}`)
 }
 
-// Copy/minify JS
+// Copy JS
 if (!script.config.dataOnly) {
-    pkg.apiHeaderComment = `© ${pkg.copyrightYear} ${pkg.author} under the ${pkg.license} license.\\n`
-                         + `Source: ${pkg.urls.src}\\nDocumentation: ${pkg.urls.docs}`
     const execOptions = { stdio: 'inherit' }
     if (fs.existsSync('dist'))
         for (const item of fs.readdirSync('dist', { recursive: true }))
             if (!/data(?:[/\\]|$)/.test(item)) fs.rmSync(`dist/${item}`, { recursive: true, force: true })
-    execSync(`npx minify-js src dist --ignores=cli --comment="${pkg.apiHeaderComment}"`, execOptions)
-    execSync(`npx copyfiles -V -e "**/*cache*/**" -u 1 "src/cli/**" dist`, execOptions)
+    execSync(`npx copyfiles -V -e "**/*cache*/**" -u 1 "src/**/*" dist`, execOptions)
 }
 
 _log.success(`${pkg.name} v${pkg.version} build complete!`)

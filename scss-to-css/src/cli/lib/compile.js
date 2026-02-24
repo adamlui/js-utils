@@ -1,6 +1,6 @@
 module.exports = {
     scss({ srcFiles, inputPath, inputArg, outputArg }) {
-        const { compile } = require(`../../scss-to-css${ env.modes.dev ? '' : '.min' }.js`),
+        const { compile } = require('../../scss-to-css'),
                 fs = require('fs'),
                 path = require('path')
 

@@ -13,7 +13,7 @@
     // Import LIBS
     globalThis.log = require(`${env.paths.lib}/log`)
     const compile = require(`${env.paths.lib}/compile`),
-        { findJS } = require(`../minify${ env.modes.dev ? '' : '.min' }.js`),
+        { findJS } = require('../minify'),
           fs = require('fs'),
           init = require(`${env.paths.lib}/init`),
           path = require('path')

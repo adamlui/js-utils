@@ -1,7 +1,7 @@
 module.exports = {
     js({ srcFiles, inputPath, inputArg, outputArg }) {
         const fs = require('fs'),
-            { minify } = require(`../../minify${ env.modes.dev ? '' : '.min' }.js`),
+            { minify } = require('../../minify'),
               path = require('path')
 
         // Build array of minification data

@@ -13,7 +13,7 @@
     // Import LIBS
     globalThis.log = require(`${env.paths.lib}/log`)
     const compile = require(`${env.paths.lib}/compile`),
-        { findSCSS } = require(`../scss-to-css${ env.modes.dev ? '' : '.min' }.js`),
+        { findSCSS } = require('../scss-to-css'),
           fs = require('fs'),
           init = require(`${env.paths.lib}/init`),
           path = require('path')
