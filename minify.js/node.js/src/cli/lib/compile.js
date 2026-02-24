@@ -26,7 +26,7 @@ module.exports = {
             const minifyResult = minify(jsPath, {
                 verbose: !cli.config.quietMode,
                 mangle: !cli.config.noMangle,
-                comment: cli.config
+                comment: cli.config.comment
             })
             if (minifyResult.error) failedPaths.push(jsPath)
             return minifyResult
