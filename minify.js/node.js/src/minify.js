@@ -53,7 +53,7 @@ function findJS(searchDir, options = {}) {
         const filePath = path.resolve(searchDir, file)
         const shouldIgnore = options.ignores.some(ignore => {
             ignore = ignore.replace(/\/$/, '')
-            return file == ignore ? true : filePath.split(path.sep).some(part => part == ignore)
+            return file == ignore || filePath.split(path.sep).some(part => part == ignore)
         })
         if (shouldIgnore) {
             if (options.verbose) _log.info(`** ${file} ignored`)
