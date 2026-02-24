@@ -22,6 +22,7 @@
     if (cli.config.init) return init.configFile()
     else if (cli.config.help) return log.help()
     else if (cli.config.version) return log.version()
+    else if (cli.config.stats) return log.stats()
 
     // Log/copy random IP(s)
     const genOptions = {
@@ -30,7 +31,8 @@
         network: cli.config.network,
         verbose: !cli.config.quietMode
     }
+    log.break()
     clipboardy.writeSync([].concat(generateIP[cli.config.mode || 'ipv4'].generate(genOptions)).join('\n'))
-    log.ifNotQuiet(`\n${cli.msgs.info_copyingToClip}...`)
+    log.ifNotQuiet(`${cli.msgs.info_copyingToClip}...`)
 
 })()
