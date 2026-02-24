@@ -100,7 +100,7 @@ module.exports = {
                             cli.config[ctrl.replacedBy] = val
                         return log.configKeyReplacedBy(key, ctrl.replacedBy, val)
                     }
-                    if (!cli.config[key]) cli.config[key] = val
+                    cli.config[key] = val
                 })
                 if (!arguments.length) log.debug('Config file loaded!')
             } catch (err) {
