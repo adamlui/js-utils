@@ -163,6 +163,7 @@ Comandos:
  -h, --help                               Exibir tela de ajuda.
  -v, --version                            Mostrar número da versão.
      --stats                              Exibir estatísticas do npm.
+     --debug [targetKey]                  Exibir registos de depuração.
 ```
 
 #

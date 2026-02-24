@@ -10,7 +10,6 @@ module.exports = {
     configURL() { this.info(`${cli.msgs.info_exampleValidConfigFile}: ${cli.urls.config}`) },
     configURLandExit(...args) { this.error(...args); this.configURL(); process.exit(1) },
     data(msg) { console.log(`\n${colors.bw}${msg}${colors.nc}`) },
-    debug(msg) { if (env.modes.debug) console.debug(`\n${colors.bo}DEBUG:`, msg, colors.nc, '\n') },
     dim(msg) { console.log(`${colors.gry}${msg}${colors.nc}`) },
     error(...args) { console.error(`\n${colors.br}ERROR:`, ...args, colors.nc) },
     errorAndExit(...args) { this.error(...args); this.helpDocsCmdsDocsURL(); process.exit(1) },
@@ -37,6 +36,19 @@ module.exports = {
             this[`${oldKey}Warned`] = true
             function isNegKey(key) { return /no|disable|exclude/i.test(key) }
         }
+    },
+
+    debug(msg) {
+        if (!env.modes.debug) return
+        this.argIdx ??= env.args.findIndex(arg => /^--?(?:V|debug(?:[-_]?mode)?)$/.test(arg))
+        if (this.argIdx +1 < env.args.length && !env.args[this.argIdx +1].startsWith('-')) // use --debug [targetKey]
+            this.key ??= env.args[this.argIdx +1].replace('-', '_')
+        if (this.key)
+            this.val = cli.config[this.key] || `cli.config key "${this.key}" ${cli.msgs.warn_notFound.toLowerCase()}`
+        else
+            this.val = cli.config
+        msg += `\n${colors.gry}${JSON.stringify(this.val)}${colors.nc}`
+        console.debug(`\n${colors.by}DEBUG:`, msg, colors.nc)
     },
 
     help(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'params', 'cmds']) {
@@ -81,7 +93,8 @@ module.exports = {
                 `     --init                          ${cli.msgs.optionDesc_init}.`,
                 ` -h, --help                          ${cli.msgs.optionDesc_help}.`,
                 ` -v, --version                       ${cli.msgs.optionDesc_version}.`,
-                ` -v, --stats                         ${cli.msgs.optionDesc_stats}.`
+                ` -v, --stats                         ${cli.msgs.optionDesc_stats}.`,
+                ` -V, --debug                         ${cli.msgs.optionDesc_debug}.`
             ]
         }
         includeSections.forEach(section => // print valid arg elems

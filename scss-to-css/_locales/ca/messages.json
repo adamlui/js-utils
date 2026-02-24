@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "Crea un fitxer de configuració (a l'arrel del projecte)" },
   "optionDesc_help": { "message": "Mostra la pantalla d'ajuda" },
   "optionDesc_version": { "message": "Mostra el número de versió" },
-  "optionDesc_stats": { "message": "Mostra les estadístiques de npm" }
+  "optionDesc_stats": { "message": "Mostra les estadístiques de npm" },
+  "optionDesc_debug": { "message": "Mostra els registres de depuració" }
 }

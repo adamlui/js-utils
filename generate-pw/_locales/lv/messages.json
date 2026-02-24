@@ -62,5 +62,6 @@
   "optionDesc_help": { "message": "Parādīt palīdzības ekrānu" },
   "optionDesc_init": { "message": "Izveidot konfigurācijas failu (projekta saknē)" },
   "optionDesc_version": { "message": "Versijas numurs" },
-  "optionDesc_stats": { "message": "Rādīt npm statistiku" }
+  "optionDesc_stats": { "message": "Rādīt npm statistiku" },
+  "optionDesc_debug": { "message": "Rādīt atkļūdošanas žurnālus" }
 }

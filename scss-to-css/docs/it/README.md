@@ -163,6 +163,7 @@ Comandi:
  -h, --help                               Visualizza la schermata di aiuto.
  -v, --version                            Mostra il numero di versione.
      --stats                              Mostra le statistiche npm.
+     --debug [targetKey]                  Mostra i log di debug.
 ```
 
 #

@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "Pelê mîhengkirinê biafirîne (di rootê projeyê de)" },
   "optionDesc_help": { "message": "Ekrana alîkariyê nîşan bide" },
   "optionDesc_version": { "message": "IRQ" },
-  "optionDesc_stats": { "message": "Statîstîkên npm nîşan bide" }
+  "optionDesc_stats": { "message": "Statîstîkên npm nîşan bide" },
+  "optionDesc_debug": { "message": "Tomarên çareserkirina çewtiyan nîşan bide" }
 }

@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "Crear archivo de configuración (en la raíz del proyecto)" },
   "optionDesc_help": { "message": "Mostrar pantalla de ayuda" },
   "optionDesc_version": { "message": "Mostrar el número de versión" },
-  "optionDesc_stats": { "message": "Mostrar estadísticas de npm" }
+  "optionDesc_stats": { "message": "Mostrar estadísticas de npm" },
+  "optionDesc_debug": { "message": "Mostrar registros de depuración" }
 }

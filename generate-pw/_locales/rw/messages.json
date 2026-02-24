@@ -62,5 +62,6 @@
   "optionDesc_help": { "message": "Erekana ubufasha bwa ecran" },
   "optionDesc_init": { "message": "IDOSIYE in Umushinga Imizi" },
   "optionDesc_version": { "message": "Erekana nimero ya verisiyo" },
-  "optionDesc_stats": { "message": "Sitatisitiki" }
+  "optionDesc_stats": { "message": "Sitatisitiki" },
+  "optionDesc_debug": { "message": "Kosora amakosa" }
 }

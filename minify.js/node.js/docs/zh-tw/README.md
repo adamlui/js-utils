@@ -159,6 +159,7 @@ $ minify-js input_folder output_folder
  -h, --help                           顯示幫助畫面。
  -v, --version                        顯示版本號。
      --stats                          顯示 npm 統計資訊。
+     --debug [targetKey]              顯示調試日誌。
 ```
 
 #

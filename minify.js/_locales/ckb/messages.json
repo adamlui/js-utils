@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "دروستکردنی پەڕگەی ڕێکخستن (لە ڕەگی پرۆژەدا)" },
   "optionDesc_help": { "message": "شاشەی یارمەتی پیشان بدە" },
   "optionDesc_version": { "message": "ژمارەی وەشانی پیشان بدە" },
-  "optionDesc_stats": { "message": "دۆخی NPM پیشان بدە" }
+  "optionDesc_stats": { "message": "دۆخی NPM پیشان بدە" },
+  "optionDesc_debug": { "message": "نیشاندانی لۆگی پیلانگێڕان" }
 }

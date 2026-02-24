@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "IDOSIYE in Umushinga Imizi" },
   "optionDesc_help": { "message": "Ifashayobora Mugaragaza" },
   "optionDesc_version": { "message": "i Verisiyo Umubare" },
-  "optionDesc_stats": { "message": "Sitatisitiki" }
+  "optionDesc_stats": { "message": "Sitatisitiki" },
+  "optionDesc_debug": { "message": "Kosora amakosa" }
 }

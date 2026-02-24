@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "རིམ་སྒྲིག་ཡིག་ཆ་གསར་བཟོ། (ལས་གཞིའི་རྩ་བའི་ནང་)" },
   "optionDesc_help": { "message": "རོགས་རམ་བརྙན་རིས་མངོན་འཆར" },
   "optionDesc_version": { "message": "ཤོག་ངོས་ཀྱི་གྲངས་ཀ་སྟོན་པ" },
-  "optionDesc_stats": { "message": "NMརྩིས་ཁྲིད །" }
+  "optionDesc_stats": { "message": "NMརྩིས་ཁྲིད །" },
+  "optionDesc_debug": { "message": "འགོ་འཛུགས་ཐོ་འགོད་མངོན་འཆར (_D)" }
 }

@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "कन्फिग फाइल सिर्जना गर्नुहोस् (परियोजनाको मूलमा)" },
   "optionDesc_help": { "message": "मद्दत स्क्रिन प्रदर्शन गर्नुहोस्" },
   "optionDesc_version": { "message": "संस्करण नम्बर देखाउनुहोस्" },
-  "optionDesc_stats": { "message": "Npm तथ्याङ्क देखाउनुहोस्" }
+  "optionDesc_stats": { "message": "Npm तथ्याङ्क देखाउनुहोस्" },
+  "optionDesc_debug": { "message": "डिबग लगहरू देखाउनुहोस्" }
 }

@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "Konfigurationsdatei erstellen (im Projektstammverzeichnis)" },
   "optionDesc_help": { "message": "Hilfebildschirm anzeigen" },
   "optionDesc_version": { "message": "Versionsnummer anzeigen" },
-  "optionDesc_stats": { "message": "Npm-Statistiken anzeigen" }
+  "optionDesc_stats": { "message": "Npm-Statistiken anzeigen" },
+  "optionDesc_debug": { "message": "Debug-Protokolle anzeigen" }
 }

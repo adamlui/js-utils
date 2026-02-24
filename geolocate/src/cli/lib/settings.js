@@ -25,6 +25,7 @@ module.exports = {
                 cli.config[key] ??= ctrl.defaultVal ?? ( ctrl.type == 'param' ? '' : false )
             })
             cli.defaultsSet = true
+            log.debug('All cli.config default vals set!')
         }
 
         if (!cli.configPathTried) { // init config file path
@@ -68,6 +69,7 @@ module.exports = {
                     }
                     if (!cli.config[key]) cli.config[key] = val
                 })
+                if (!arguments.length) log.debug('Config file loaded!')
             } catch (err) {
                 log.configURLandExit(`${cli.msgs.error_failedToLoadConfigFile}:`, cli.configPath, `\n${err.message}`) }
 
@@ -92,7 +94,10 @@ module.exports = {
             }
         }
 
+        if (!arguments.length) log.debug('Args parsed!')
+
         this.parseValidateConfig(inputCtrlKeys)
+        if (!arguments.length) log.debug('All cli.config vals parsed/validated!')
 
         return inputCtrlKeys.length == 1 ? cli.config[inputCtrlKeys[0]] : cli.config
     },

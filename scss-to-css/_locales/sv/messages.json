@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "Skapa konfigurationsfil (i projektets rot)" },
   "optionDesc_help": { "message": "Visa hjälpskärmen" },
   "optionDesc_version": { "message": "Visa versionsinformation" },
-  "optionDesc_stats": { "message": "Visa npm-statistik" }
+  "optionDesc_stats": { "message": "Visa npm-statistik" },
+  "optionDesc_debug": { "message": "Visa felsökningsloggar" }
 }

@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "Конфигурация файлын құру (жоба түбірінде)" },
   "optionDesc_help": { "message": "Анықтама экранын көрсету" },
   "optionDesc_version": { "message": "Нұсқасының нөмірі" },
-  "optionDesc_stats": { "message": "NPM статистикасын көрсету" }
+  "optionDesc_stats": { "message": "NPM статистикасын көрсету" },
+  "optionDesc_debug": { "message": "Қадамдастыру журналдарын көрсету" }
 }

@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "Стварыць файл канфігурацыі (у корані праекта)" },
   "optionDesc_help": { "message": "  ?                       Паказаць даведку" },
   "optionDesc_version": { "message": "Паказаць нумар версіі" },
-  "optionDesc_stats": { "message": "Паказваць статыстыку NPM" }
+  "optionDesc_stats": { "message": "Паказваць статыстыку NPM" },
+  "optionDesc_debug": { "message": "Паказваць часопісы адладкі" }
 }

@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "Эҷод кардани файли конфигуратсия (дар решаи лоиҳа)" },
   "optionDesc_help": { "message": "Намоиши экрани кӯмак" },
   "optionDesc_version": { "message": "Номер производителя" },
-  "optionDesc_stats": { "message": "Намоиши омори npm" }
+  "optionDesc_stats": { "message": "Намоиши омори npm" },
+  "optionDesc_debug": { "message": "Намоиши сабти хатогиҳо" }
 }

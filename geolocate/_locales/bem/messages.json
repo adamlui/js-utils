@@ -54,5 +54,6 @@
   "optionDesc_init": { "message": "Panga failo iya mipangilwe (mu mushila wa mulimo)" },
   "optionDesc_help": { "message": "Lekisha Help Screen" },
   "optionDesc_version": { "message": "Tontonkanyeni pa nambala ya ciputulwa" },
-  "optionDesc_stats": { "message": "Lekisha NPM Stats" }
+  "optionDesc_stats": { "message": "Lekisha NPM Stats" },
+  "optionDesc_debug": { "message": "Show Debug Logs" }
 }

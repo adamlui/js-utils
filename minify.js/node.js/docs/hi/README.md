@@ -159,6 +159,7 @@ $ minify-js input_folder output_folder
  -h, --help                           सहायता स्क्रीन प्रदर्शित करें।
  -v, --version                        संस्करण संख्या दिखाएँ।
      --stats                          npm स्टैट्स दिखाएँ।
+     --debug [targetKey]              डीबग लॉग दिखाएँ।
 ```
 
 #

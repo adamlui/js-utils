@@ -163,6 +163,7 @@ $ scss-to-css input_folder output_folder
  -h, --help                               সাহায্য স্ক্রীন প্রদর্শন করুন।
  -v, --version                            সংস্করণ নম্বর দেখান।
      --stats                              npm পরিসংখ্যান দেখান।
+     --debug [targetKey]                  ডিবাগ লগ দেখান।
 ```
 
 #

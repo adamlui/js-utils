@@ -62,5 +62,6 @@
   "optionDesc_help": { "message": "Yardam ekrany görkez" },
   "optionDesc_init": { "message": "Konfigurasy faýlyny ýarat (projektiň köki bilen)" },
   "optionDesc_version": { "message": "VERSION NUMBERI" },
-  "optionDesc_stats": { "message": "NPM ştatlaryny görkez" }
+  "optionDesc_stats": { "message": "NPM ştatlaryny görkez" },
+  "optionDesc_debug": { "message": "Hata loglaryny görkez" }
 }

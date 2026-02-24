@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "Kreirajte konfiguracijsku datoteku (u korijenu projekta)" },
   "optionDesc_help": { "message": "Prikaži ekran za pomoć" },
   "optionDesc_version": { "message": "Broj verzije" },
-  "optionDesc_stats": { "message": "Prikaži npm statistiku" }
+  "optionDesc_stats": { "message": "Prikaži npm statistiku" },
+  "optionDesc_debug": { "message": "Prikaži evidenciju otklanjanja grešaka" }
 }

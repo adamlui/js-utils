@@ -163,6 +163,7 @@ Commando's:
  -h, --help                               Helpscherm weergeven.
  -v, --version                            Versienummer weergeven.
      --stats                              Toon npm-statistieken.
+     --debug [targetKey]                  Toon debuglogs.
 ```
 
 #

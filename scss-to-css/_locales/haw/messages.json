@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "E hana i ka faila hoʻonohonoho (ma ke kumu papahana)" },
   "optionDesc_help": { "message": "Hōʻike i ka pale kōkua" },
   "optionDesc_version": { "message": "Hōʻike i ka helu mana" },
-  "optionDesc_stats": { "message": "Hōʻike i nā helu npm" }
+  "optionDesc_stats": { "message": "Hōʻike i nā helu npm" },
+  "optionDesc_debug": { "message": "Hōʻike i nā moʻolelo debug" }
 }

@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "കോൺഫിഗർ ഫയൽ സൃഷ്ടിക്കുക (പ്രോജക്റ്റ് റൂട്ടിൽ)" },
   "optionDesc_help": { "message": "സഹായ സ്ക്രീൻ പ്രദർശിപ്പിക്കുക" },
   "optionDesc_version": { "message": "വില്‍പ്പനക്കാരനുള്ള സൂചകം" },
-  "optionDesc_stats": { "message": "Npm സ്ഥിതിവിവരക്കണക്കുകൾ കാണിക്കുക" }
+  "optionDesc_stats": { "message": "Npm സ്ഥിതിവിവരക്കണക്കുകൾ കാണിക്കുക" },
+  "optionDesc_debug": { "message": "ഡീബഗ് ലോഗുകള്‍ കാണിക്കുക" }
 }

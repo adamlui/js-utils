@@ -163,6 +163,7 @@ $ scss-to-css input_folder output_folder
  -h, --help                               ヘルプ画面を表示します。
  -v, --version                            バージョン番号を表示します。
      --stats                              npm の統計を表示します。
+     --debug [targetKey]                  デバッグ ログを表示します。
 ```
 
 #

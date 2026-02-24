@@ -62,5 +62,6 @@
   "optionDesc_help": { "message": "Birta hjálparskjá" },
   "optionDesc_init": { "message": "Búa til stillingarskrá (í frumtexta verkefnis)" },
   "optionDesc_version": { "message": "Útgáfunúmer" },
-  "optionDesc_stats": { "message": "Sýna npm tölfræði" }
+  "optionDesc_stats": { "message": "Sýna npm tölfræði" },
+  "optionDesc_debug": { "message": "Sýna aflúsunarannála" }
 }

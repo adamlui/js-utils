@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "Конфигурация файлын түзүү (долбоордун тамыры менен)" },
   "optionDesc_help": { "message": "Жардам экранын көрсөтүү" },
   "optionDesc_version": { "message": "Версиянын номерин көрсөтүү" },
-  "optionDesc_stats": { "message": "Көрсөтүү npm статистикасы" }
+  "optionDesc_stats": { "message": "Көрсөтүү npm статистикасы" },
+  "optionDesc_debug": { "message": "Dialogs-action" }
 }

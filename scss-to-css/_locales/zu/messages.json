@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "Yakha ifayela lokuhlela (empandeni yephrojekthi)" },
   "optionDesc_help": { "message": "Bonisa isikrini sosizo" },
   "optionDesc_version": { "message": "Veza inombolo yohlelo" },
-  "optionDesc_stats": { "message": "Veza izibalo ze-npm" }
+  "optionDesc_stats": { "message": "Veza izibalo ze-npm" },
+  "optionDesc_debug": { "message": "Bonisa amarekhodi okulungisa iphutha" }
 }

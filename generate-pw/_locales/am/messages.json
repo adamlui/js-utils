@@ -62,5 +62,6 @@
   "optionDesc_help": { "message": "የእገዛ ማያ ገጽ አሳይ" },
   "optionDesc_init": { "message": "የውቅረት ፋይል ይፍጠሩ (በፕሮጀክት ሥር)" },
   "optionDesc_version": { "message": "የስሪት ቁጥርን አሳይ" },
-  "optionDesc_stats": { "message": "Npm ስታቲስቲክስ አሳይ" }
+  "optionDesc_stats": { "message": "Npm ስታቲስቲክስ አሳይ" },
+  "optionDesc_debug": { "message": "የዴቡግ ምዝግብ ማስታወሻዎችን አሳይ" }
 }

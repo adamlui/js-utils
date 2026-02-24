@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "ສ້າງໄຟລ໌ config (ໃນຮາກໂຄງການ)" },
   "optionDesc_help": { "message": "ສະແດງໜ້າຈໍຊ່ວຍເຫຼືອ" },
   "optionDesc_version": { "message": "ໝາຍເລກຮຸ່ນ" },
-  "optionDesc_stats": { "message": "ສະແດງສະຖິຕິ npm" }
+  "optionDesc_stats": { "message": "ສະແດງສະຖິຕິ npm" },
+  "optionDesc_debug": { "message": "ສະແດງບັນທຶກການແກ້ໄຂ" }
 }

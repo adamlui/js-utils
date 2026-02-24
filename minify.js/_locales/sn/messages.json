@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "Create config file (in project root)" },
   "optionDesc_help": { "message": "Ratidza chidzitiro chekubatsira" },
   "optionDesc_version": { "message": "Ratidza nhamba yeshanduro" },
-  "optionDesc_stats": { "message": "Ratidza npm stats" }
+  "optionDesc_stats": { "message": "Ratidza npm stats" },
+  "optionDesc_debug": { "message": "Ratidza debug matanda" }
 }

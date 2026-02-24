@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "Opret konfigurationsfil (i projektroden)" },
   "optionDesc_help": { "message": "Vis hjælpeskærm" },
   "optionDesc_version": { "message": "Vis versionsnummer" },
-  "optionDesc_stats": { "message": "Vis npm-statistik" }
+  "optionDesc_stats": { "message": "Vis npm-statistik" },
+  "optionDesc_debug": { "message": "Vis fejlretningslogge" }
 }

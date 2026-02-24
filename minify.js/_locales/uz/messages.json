@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "Konfiguratsiya faylini yarating (loyiha ildizida)" },
   "optionDesc_help": { "message": "Yordam ekranini ko'rsatish" },
   "optionDesc_version": { "message": "Boʻsh joy" },
-  "optionDesc_stats": { "message": "npm statistikasini ko'rsatish" }
+  "optionDesc_stats": { "message": "npm statistikasini ko'rsatish" },
+  "optionDesc_debug": { "message": "Nosozliklarni tuzatish jurnallarini ko'rsatish" }
 }

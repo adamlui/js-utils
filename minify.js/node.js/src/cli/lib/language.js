@@ -40,7 +40,7 @@ module.exports = {
         let randomLang = 'en'
         if (locales.length)
             randomLang = locales[Math.floor(Math.random() * locales.length)]
-        log.debug(`Random language: ${randomLang}\n`)
+        log.debug(`Random language: ${randomLang}`)
 
         return randomLang
     },

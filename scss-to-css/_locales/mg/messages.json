@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "Mamorona raki-kirakira (ao amin'ny fototry ny tetikasa)" },
   "optionDesc_help": { "message": "Asehoy ny efijerin'ny toro-làlana" },
   "optionDesc_version": { "message": "Asehoy ny isan'ny kinova" },
-  "optionDesc_stats": { "message": "Asehoy ny stats npm" }
+  "optionDesc_stats": { "message": "Asehoy ny stats npm" },
+  "optionDesc_debug": { "message": "Asehoy ny raki-tatitry ny debugging" }
 }

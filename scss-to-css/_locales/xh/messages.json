@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "Yenza ifayile yoqwalaselo (kwingcambu yeprojekthi)" },
   "optionDesc_help": { "message": "Bonisa isikrini soncedo" },
   "optionDesc_version": { "message": "Inani Loguqulelo lomsebenzi" },
-  "optionDesc_stats": { "message": "Bonisa izibalo ze-npm" }
+  "optionDesc_stats": { "message": "Bonisa izibalo ze-npm" },
+  "optionDesc_debug": { "message": "Bonisa ii-logs ze-debug" }
 }

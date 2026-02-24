@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "ކޮންފިގް ފައިލް އުފެއްދުން (ޕްރޮޖެކްޓް ރޫޓްގައި)" },
   "optionDesc_help": { "message": "ޑިސްޕްލޭ ހެލްޕް ސްކްރީން" },
   "optionDesc_version": { "message": "ވަރޝަން ނަންބަރު ދައްކާށެވެ" },
-  "optionDesc_stats": { "message": "npm ސްޓެޓިސްޓިކްސް ދައްކާށެވެ" }
+  "optionDesc_stats": { "message": "npm ސްޓެޓިސްޓިކްސް ދައްކާށެވެ" },
+  "optionDesc_debug": { "message": "ޑީބަގް ލޮގްތައް ދައްކާށެވެ" }
 }

@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "ایجاد فایل پیکربندی (در ریشه پروژه)" },
   "optionDesc_help": { "message": "نمایش صفحه راهنما" },
   "optionDesc_version": { "message": "نمایش شماره نسخه" },
-  "optionDesc_stats": { "message": "نمایش آمار npm" }
+  "optionDesc_stats": { "message": "نمایش آمار npm" },
+  "optionDesc_debug": { "message": "نمایش گزارش‌های اشکال‌زدایی" }
 }

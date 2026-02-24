@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "Sukurti konfigūracijos failą (projekto šaknyje)" },
   "optionDesc_help": { "message": "Rodyti pagalbos ekraną" },
   "optionDesc_version": { "message": "Versijos numeris" },
-  "optionDesc_stats": { "message": "Rodyti npm statistiką" }
+  "optionDesc_stats": { "message": "Rodyti npm statistiką" },
+  "optionDesc_debug": { "message": "Rodyti derinimo žurnalus" }
 }

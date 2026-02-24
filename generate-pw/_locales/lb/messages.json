@@ -62,5 +62,6 @@
   "optionDesc_help": { "message": "Hëllefsbildschierm uweisen" },
   "optionDesc_init": { "message": "Konfiguratiounsdatei erstellen (am Projetroot)" },
   "optionDesc_version": { "message": "Versiounsnummer uweisen" },
-  "optionDesc_stats": { "message": "NPM-Statistiken uweisen" }
+  "optionDesc_stats": { "message": "NPM-Statistiken uweisen" },
+  "optionDesc_debug": { "message": "Entfälteg Logbicher uweisen" }
 }

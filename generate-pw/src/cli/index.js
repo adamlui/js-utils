@@ -8,7 +8,7 @@
         modes: { dev: /[\\/]src(?:[\\/]|$)/i.test(__dirname) },
         paths: { lib: './lib' }
     }
-    env.modes.debug = env.args.some(arg => /^--?debug(?:[-_]?mode)?$/.test(arg))
+    env.modes.debug = env.args.some(arg => /^--?(?:V|debug(?:[-_]?mode)?)$/.test(arg))
 
     // Import LIBS
     globalThis.log = require(`${env.paths.lib}/log`)

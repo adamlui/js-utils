@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "कॉन्फ़िगरेशन फ़ाइल बनाएँ (प्रोजेक्ट रूट में)" },
   "optionDesc_help": { "message": "सहायता स्क्रीन दिखाएँ" },
   "optionDesc_version": { "message": "संस्करण संख्या" },
-  "optionDesc_stats": { "message": "एनपीएम आंकड़े दिखाएँ" }
+  "optionDesc_stats": { "message": "एनपीएम आंकड़े दिखाएँ" },
+  "optionDesc_debug": { "message": "डिबग लॉग दिखाएँ" }
 }

@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "Skep konfigurasielêer (in projekwortel)" },
   "optionDesc_help": { "message": "Vertoon hulp skerm" },
   "optionDesc_version": { "message": "WEERGAWE-NOMMER" },
-  "optionDesc_stats": { "message": "Vertoon npm-statistieke" }
+  "optionDesc_stats": { "message": "Vertoon npm-statistieke" },
+  "optionDesc_debug": { "message": "Wys ontfoutlogboeke" }
 }

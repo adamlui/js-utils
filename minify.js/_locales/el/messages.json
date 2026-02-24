@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "Δημιουργία αρχείου διαμόρφωσης (στη ρίζα του έργου)" },
   "optionDesc_help": { "message": "Εμφάνιση οθόνης βοήθειας" },
   "optionDesc_version": { "message": "Αριθμός έκδοσης" },
-  "optionDesc_stats": { "message": "Εμφάνιση στατιστικών npm" }
+  "optionDesc_stats": { "message": "Εμφάνιση στατιστικών npm" },
+  "optionDesc_debug": { "message": "Εμφάνιση αρχείων καταγραφής εντοπισμού σφαλμάτων" }
 }

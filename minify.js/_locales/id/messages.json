@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "Buat file konfigurasi (di root proyek)" },
   "optionDesc_help": { "message": "Tampilkan layar bantuan" },
   "optionDesc_version": { "message": "Nomor Versi" },
-  "optionDesc_stats": { "message": "Tampilkan statistik npm" }
+  "optionDesc_stats": { "message": "Tampilkan statistik npm" },
+  "optionDesc_debug": { "message": "Tampilkan log debug" }
 }

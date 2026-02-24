@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "Utwórz plik konfiguracyjny (w katalogu głównym projektu)" },
   "optionDesc_help": { "message": "Wyświetl ekran pomocy" },
   "optionDesc_version": { "message": "Podaje numer wersji programu" },
-  "optionDesc_stats": { "message": "Pokaż statystyki npm" }
+  "optionDesc_stats": { "message": "Pokaż statystyki npm" },
+  "optionDesc_debug": { "message": "Pokaż dzienniki debugowania" }
 }

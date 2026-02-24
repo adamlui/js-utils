@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "Creați fișierul de configurare (în rădăcina proiectului)" },
   "optionDesc_help": { "message": "Afișați ecranul de ajutor" },
   "optionDesc_version": { "message": "Număr versiune" },
-  "optionDesc_stats": { "message": "Afișați statisticile npm" }
+  "optionDesc_stats": { "message": "Afișați statisticile npm" },
+  "optionDesc_debug": { "message": "Afișează jurnalele de depanare" }
 }

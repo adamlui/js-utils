@@ -163,6 +163,7 @@ $ scss-to-css input_folder output_folder
  -h, --help                               मदत स्क्रीन प्रदर्शित करा.
  -v, --version                            आवृत्ती क्रमांक दर्शवा.
      --stats                              npm आकडेवारी दाखवा.
+     --debug [targetKey]                  डीबग लॉग दाखवा.
 ```
 
 #

@@ -138,6 +138,7 @@ Commands:
  -h, --help                           Display help screen.
  -v, --version                        Show version number.
      --stats                          Show npm stats.
+     --debug [targetKey]              Show debug logs.
 ```
 
 #

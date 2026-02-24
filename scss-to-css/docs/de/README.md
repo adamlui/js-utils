@@ -163,6 +163,7 @@ Befehle:
  -h, --help                               Hilfebildschirm anzeigen.
  -v, --version                            Versionsnummer anzeigen.
      --stats                              npm-Statistiken anzeigen.
+     --debug [targetKey]                  Debug-Protokolle anzeigen.
 ```
 
 #

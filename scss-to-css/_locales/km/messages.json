@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "បង្កើត ឯកសារ កំណត់ រចនា សម្ព័ន្ធ (នៅ ក្នុង root គម្រោង)" },
   "optionDesc_help": { "message": "បង្ហាញអេក្រង់ជំនួយ" },
   "optionDesc_version": { "message": "បង្ហាញ​លេខ​កំណែ" },
-  "optionDesc_stats": { "message": "បង្ហាញ ស្ថិតិ npm" }
+  "optionDesc_stats": { "message": "បង្ហាញ ស្ថិតិ npm" },
+  "optionDesc_debug": { "message": "បង្ហាញ កំណត់ ហេតុ បំបាត់ កំហុស" }
 }

@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "Create config file (in project root)" },
   "optionDesc_help": { "message": "Pagina Auxilio" },
   "optionDesc_version": { "message": "neo number" },
-  "optionDesc_stats": { "message": "STATIS NPME" }
+  "optionDesc_stats": { "message": "STATIS NPME" },
+  "optionDesc_debug": { "message": "Scripta Edere" }
 }

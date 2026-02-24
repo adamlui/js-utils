@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "Тохиргооны файл үүсгэх (төслийн эхэнд)" },
   "optionDesc_help": { "message": "Тусламжийн дэлгэцийг харуулах" },
   "optionDesc_version": { "message": "Хувилбарын дугаар" },
-  "optionDesc_stats": { "message": "Npm статистикийг харуулах" }
+  "optionDesc_stats": { "message": "Npm статистикийг харуулах" },
+  "optionDesc_debug": { "message": "Дибагын логуудыг харуулах" }
 }

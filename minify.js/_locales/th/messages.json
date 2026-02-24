@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "สร้างไฟล์การกำหนดค่า (ในรูทโครงการ)" },
   "optionDesc_help": { "message": "หน้าจอวิธีใช้การแสดงผล" },
   "optionDesc_version": { "message": "à¸à¸·à¹à¸­à¸à¸­à¸à¸£à¸°à¸à¸à¹à¸ªà¸à¸à¸à¸¥" },
-  "optionDesc_stats": { "message": "แสดงสถิติ npm" }
+  "optionDesc_stats": { "message": "แสดงสถิติ npm" },
+  "optionDesc_debug": { "message": "แสดงบันทึกการดีบัก" }
 }

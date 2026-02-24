@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "Oħloq fajl tal-konfig (fl-għeruq tal-proġett)" },
   "optionDesc_help": { "message": "Uri l-iskrin tal-għajnuna" },
   "optionDesc_version": { "message": "Version Number" },
-  "optionDesc_stats": { "message": "Uri l-istatistika tal-NPM" }
+  "optionDesc_stats": { "message": "Uri l-istatistika tal-NPM" },
+  "optionDesc_debug": { "message": "Uri r-reġistri tad-debugs" }
 }

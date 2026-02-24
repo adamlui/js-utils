@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "Konfigurazio fitxategia sortu (proiektuaren erroan)" },
   "optionDesc_help": { "message": "Laguntza pantaila erakutsi" },
   "optionDesc_version": { "message": "Bertsio zenbakia" },
-  "optionDesc_stats": { "message": "Erakutsi npm estatistikak" }
+  "optionDesc_stats": { "message": "Erakutsi npm estatistikak" },
+  "optionDesc_debug": { "message": "Erakutsi arazketa-erregistroak" }
 }

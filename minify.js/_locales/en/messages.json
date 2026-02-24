@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "Create config file (in project root)" },
   "optionDesc_help": { "message": "Display help screen" },
   "optionDesc_version": { "message": "Show version number" },
-  "optionDesc_stats": { "message": "Show npm stats" }
+  "optionDesc_stats": { "message": "Show npm stats" },
+  "optionDesc_debug": { "message": "Show debug logs" }
 }

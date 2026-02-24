@@ -75,5 +75,6 @@
   "optionDesc_init": { "message": "کنفیگ فائل بنائیں (پروجیکٹ روٹ میں)" },
   "optionDesc_help": { "message": "مدد کی اسکرین ڈسپلے کریں" },
   "optionDesc_version": { "message": "ورژن نمبر دکھائیں" },
-  "optionDesc_stats": { "message": "Npm کے اعدادوشمار دکھائیں" }
+  "optionDesc_stats": { "message": "Npm کے اعدادوشمار دکھائیں" },
+  "optionDesc_debug": { "message": "ڈیبگ لاگز دکھائیں" }
 }

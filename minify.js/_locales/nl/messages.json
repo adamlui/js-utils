@@ -76,5 +76,6 @@
   "optionDesc_init": { "message": "Configuratiebestand aanmaken (in projecthoofdmap)" },
   "optionDesc_help": { "message": "Hulpscherm weergeven" },
   "optionDesc_version": { "message": "Het versienummer tonen" },
-  "optionDesc_stats": { "message": "Npm-statistieken weergeven" }
+  "optionDesc_stats": { "message": "Npm-statistieken weergeven" },
+  "optionDesc_debug": { "message": "Foutopsporingslogboeken weergeven" }
 }
