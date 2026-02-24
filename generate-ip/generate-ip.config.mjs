@@ -11,7 +11,7 @@
 export default {
     mode: 'ipv4',      // <ipv4|ipv6|mac> type of address to generate
     qty: 1,            // # of IPs to generate
-    dd: false, // generate addresses in sequence
+    sequential: false, // generate addresses in sequence
     network: null,     // starting network address (required for sequential mode)
     quietMode: false,  // suppress all logging except errors
     uiLang: ''         // ISO 639-1 code of language to display UI in
