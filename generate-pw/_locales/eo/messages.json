@@ -25,6 +25,7 @@
   "warn_option": { "message": "Opcio" },
   "warn_noLongerHasAnyEffect": { "message": "ne plu havas efekton" },
   "warn_hasBeenReplacedBy": { "message": "ĝi estis anstataŭigita per" },
+  "warn_andWillBeRemoved": { "message": "kaj estos forigita" },
   "info_configFile": { "message": "Agorddosiero" },
   "info_exampleValidConfigFile": { "message": "Ekzempla valida agordodosiero" },
   "info_copyingToClip": { "message": "Kopiante al interdeponejo" },

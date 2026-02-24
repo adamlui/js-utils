@@ -25,6 +25,7 @@
   "warn_option": { "message": "বিকল্প" },
   "warn_noLongerHasAnyEffect": { "message": "এখন আর কোনো প্রভাব নেই" },
   "warn_hasBeenReplacedBy": { "message": "দ্বারা প্রতিস্থাপিত হয়েছে" },
+  "warn_andWillBeRemoved": { "message": "এবং সরানো হবে" },
   "info_configFile": { "message": "ফাইল কনফিগার করুন" },
   "info_exampleValidConfigFile": { "message": "উদাহরণ বৈধ কনফিগ ফাইল" },
   "info_copyingToClip": { "message": "ক্লিপবোর্ডে অনুলিপি করা হচ্ছে" },

@@ -25,6 +25,7 @@
   "warn_option": { "message": "Filifiliga" },
   "warn_noLongerHasAnyEffect": { "message": "e leai se aafiaga" },
   "warn_hasBeenReplacedBy": { "message": "ua suia e" },
+  "warn_andWillBeRemoved": { "message": "ma o le a aveesea" },
   "info_configFile": { "message": "Faʻatulagaina o le faila" },
   "info_exampleValidConfigFile": { "message": "Faataitaiga aloaia config faila" },
   "info_copyingToClip": { "message": "Kopi i le clipboard" },

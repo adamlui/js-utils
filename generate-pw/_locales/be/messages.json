@@ -25,6 +25,7 @@
   "warn_option": { "message": "Варыянт" },
   "warn_noLongerHasAnyEffect": { "message": "больш не мае эфекту" },
   "warn_hasBeenReplacedBy": { "message": "быў заменены" },
+  "warn_andWillBeRemoved": { "message": "і будзе выдалены" },
   "info_configFile": { "message": "Файл канфігурацыі" },
   "info_exampleValidConfigFile": { "message": "Дапушчальны прыклад файла канфігурацыі" },
   "info_copyingToClip": { "message": "Значэнне" },

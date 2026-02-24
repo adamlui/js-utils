@@ -25,6 +25,7 @@
   "warn_option": { "message": "Option" },
   "warn_noLongerHasAnyEffect": { "message": "ikke længere har nogen effekt" },
   "warn_hasBeenReplacedBy": { "message": "er blevet erstattet af" },
+  "warn_andWillBeRemoved": { "message": "og vil blive fjernet" },
   "info_configFile": { "message": "Konfigurationsfil" },
   "info_exampleValidConfigFile": { "message": "Eksempel på gyldig konfigurationsfil" },
   "info_copyingToClip": { "message": "Kopierer til udklipsholder" },

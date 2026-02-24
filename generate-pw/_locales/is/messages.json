@@ -25,6 +25,7 @@
   "warn_option": { "message": "Valkostur" },
   "warn_noLongerHasAnyEffect": { "message": "hefur ekki lengur nein áhrif" },
   "warn_hasBeenReplacedBy": { "message": "hefur verið skipt út fyrir" },
+  "warn_andWillBeRemoved": { "message": "og verður fjarlægt" },
   "info_configFile": { "message": "Stillingaskrá" },
   "info_exampleValidConfigFile": { "message": "Dæmi um gilda uppsetningarskrá" },
   "info_copyingToClip": { "message": "Afrita á klemmuspjald" },

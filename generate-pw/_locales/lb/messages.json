@@ -25,6 +25,7 @@
   "warn_option": { "message": "Optioun" },
   "warn_noLongerHasAnyEffect": { "message": "huet keen Effekt méi" },
   "warn_hasBeenReplacedBy": { "message": "hien/si, hatt/et ass ersat ginn" },
+  "warn_andWillBeRemoved": { "message": "si ginn ewechge-trued-en/ge-tratt" },
   "info_configFile": { "message": "Datei konfiguréieren" },
   "info_exampleValidConfigFile": { "message": "Example valid config file" },
   "info_copyingToClip": { "message": "An d'Zwëschespäicher kopéieren" },

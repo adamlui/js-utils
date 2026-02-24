@@ -25,6 +25,7 @@
   "warn_option": { "message": "OPTION" },
   "warn_noLongerHasAnyEffect": { "message": "indi hiç hili netije bermeýär" },
   "warn_hasBeenReplacedBy": { "message": "ähli zat üýtgedildi" },
+  "warn_andWillBeRemoved": { "message": "we çykarylar" },
   "info_configFile": { "message": "Faýly Gaýd Et" },
   "info_exampleValidConfigFile": { "message": "Mysal geçerli konfigurasiýa faýly" },
   "info_copyingToClip": { "message": "Klipbordda kopy etmek" },

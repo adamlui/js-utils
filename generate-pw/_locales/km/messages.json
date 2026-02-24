@@ -25,6 +25,7 @@
   "warn_option": { "message": "ជម្រើស" },
   "warn_noLongerHasAnyEffect": { "message": "លែងមានឥទ្ធិពលទៀតហើយ" },
   "warn_hasBeenReplacedBy": { "message": "ត្រូវបានជំនួសដោយ" },
+  "warn_andWillBeRemoved": { "message": "ហើយនឹងត្រូវបានដកចេញ" },
   "info_configFile": { "message": "កំណត់ រចនាសម្ព័ន្ធ ឯកសារ" },
   "info_exampleValidConfigFile": { "message": "ឯកសារកំណត់រចនាសម្ព័ន្ធត្រឹមត្រូវឧទាហរណ៍" },
   "info_copyingToClip": { "message": "កំពុងបិទភ្ជាប់ពីក្ដារតម្បៀតខ្ទាស់" },

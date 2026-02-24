@@ -25,6 +25,7 @@
   "warn_option": { "message": "Optie" },
   "warn_noLongerHasAnyEffect": { "message": "heeft geen effect meer" },
   "warn_hasBeenReplacedBy": { "message": "is vervangen door" },
+  "warn_andWillBeRemoved": { "message": "en zal worden verwijderd" },
   "info_configFile": { "message": "Configuratiebestand" },
   "info_exampleValidConfigFile": { "message": "Voorbeeld geldig configuratiebestand" },
   "info_copyingToClip": { "message": "Kopiëren naar klembord" },

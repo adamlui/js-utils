@@ -25,6 +25,7 @@
   "warn_option": { "message": "گزینه" },
   "warn_noLongerHasAnyEffect": { "message": "دیگر هیچ اثری ندارد" },
   "warn_hasBeenReplacedBy": { "message": "جایگزین شده است" },
+  "warn_andWillBeRemoved": { "message": "و حذف خواهد شد" },
   "info_configFile": { "message": "فایل پیکربندی" },
   "info_exampleValidConfigFile": { "message": "نمونه فایل پیکربندی معتبر" },
   "info_copyingToClip": { "message": "در حال کپی کردن در کلیپ بورد" },

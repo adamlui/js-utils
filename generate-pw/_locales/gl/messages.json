@@ -25,6 +25,7 @@
   "warn_option": { "message": "Opción" },
   "warn_noLongerHasAnyEffect": { "message": "xa non ten ningún efecto" },
   "warn_hasBeenReplacedBy": { "message": "foi substituído por" },
+  "warn_andWillBeRemoved": { "message": "e será eliminado" },
   "info_configFile": { "message": "Ficheiro de configuración" },
   "info_exampleValidConfigFile": { "message": "Exemplo de ficheiro de configuración válido" },
   "info_copyingToClip": { "message": "Copiando para o portarretallos" },

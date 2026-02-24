@@ -25,6 +25,7 @@
   "warn_option": { "message": "Տարբերակ" },
   "warn_noLongerHasAnyEffect": { "message": "այլևս ոչ մի ազդեցություն չունի" },
   "warn_hasBeenReplacedBy": { "message": "փոխարինվել է" },
+  "warn_andWillBeRemoved": { "message": "և կհեռացվի" },
   "info_configFile": { "message": "Կարգավորել ֆայլը" },
   "info_exampleValidConfigFile": { "message": "Վավեր կոնֆիգուրացիոն ֆայլի օրինակ" },
   "info_copyingToClip": { "message": "Պատճենահանվում է շապիկի մեջ" },

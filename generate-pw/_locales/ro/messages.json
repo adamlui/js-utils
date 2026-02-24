@@ -25,6 +25,7 @@
   "warn_option": { "message": "Opțiune" },
   "warn_noLongerHasAnyEffect": { "message": "nu mai are niciun efect" },
   "warn_hasBeenReplacedBy": { "message": "a fost înlocuită cu" },
+  "warn_andWillBeRemoved": { "message": "și vor fi eliminate" },
   "info_configFile": { "message": "Fișier de configurare" },
   "info_exampleValidConfigFile": { "message": "Exemplu de fișier de configurare valid" },
   "info_copyingToClip": { "message": "Copiez în clipboard" },

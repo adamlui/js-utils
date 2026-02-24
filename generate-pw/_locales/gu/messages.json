@@ -25,6 +25,7 @@
   "warn_option": { "message": "વિકલ્પ" },
   "warn_noLongerHasAnyEffect": { "message": "હવે કોઈ અસર થતી નથી" },
   "warn_hasBeenReplacedBy": { "message": "દ્વારા બદલવામાં આવી છે" },
+  "warn_andWillBeRemoved": { "message": "અને દૂર કરવામાં આવશે" },
   "info_configFile": { "message": "રૂપરેખાંકન ફાઇલ" },
   "info_exampleValidConfigFile": { "message": "ઉદાહરણ માન્ય રૂપરેખાંકન ફાઇલ" },
   "info_copyingToClip": { "message": "ક્લિપબોર્ડ પર કૉપિ કરી રહ્યું છે" },

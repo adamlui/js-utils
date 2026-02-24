@@ -25,6 +25,7 @@
   "warn_option": { "message": "ምርጫ" },
   "warn_noLongerHasAnyEffect": { "message": "ሕጂ ዝኾነ ሳዕቤን የብሉን" },
   "warn_hasBeenReplacedBy": { "message": "ተተኪኡ" },
+  "warn_andWillBeRemoved": { "message": "ክወጽእ እዩ" },
   "info_configFile": { "message": "ፋይል ኣማዕብል" },
   "info_exampleValidConfigFile": { "message": "ኣብነት እሙን ናይ ውጥን ፋይል" },
   "info_copyingToClip": { "message": "ናብ ክሊፕቦርድ ምምላስ" },

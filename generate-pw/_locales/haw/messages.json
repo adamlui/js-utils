@@ -25,6 +25,7 @@
   "warn_option": { "message": "Koho" },
   "warn_noLongerHasAnyEffect": { "message": "ʻaʻohe hopena hou" },
   "warn_hasBeenReplacedBy": { "message": "ua pani ʻia e" },
+  "warn_andWillBeRemoved": { "message": "a e wehe ʻia aku" },
   "info_configFile": { "message": "Waihona hoʻonohonoho" },
   "info_exampleValidConfigFile": { "message": "Laʻana o ka faila hoʻonohonoho kūpono" },
   "info_copyingToClip": { "message": "Ke kope nei i ka papa ʻokiʻoki" },

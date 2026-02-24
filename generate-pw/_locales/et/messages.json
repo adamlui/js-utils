@@ -25,6 +25,7 @@
   "warn_option": { "message": "Valik" },
   "warn_noLongerHasAnyEffect": { "message": "ei avalda enam mõju" },
   "warn_hasBeenReplacedBy": { "message": "on asendatud järgmisega:" },
+  "warn_andWillBeRemoved": { "message": "ja eemaldatakse" },
   "info_configFile": { "message": "Konfiguratsioonifail" },
   "info_exampleValidConfigFile": { "message": "Kehtiva konfiguratsioonifaili näide" },
   "info_copyingToClip": { "message": "Kopeerimine lõikepuhvrisse" },

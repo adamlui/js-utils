@@ -25,6 +25,7 @@
   "warn_option": { "message": "Ihitamo" },
   "warn_noLongerHasAnyEffect": { "message": "nta nkurikizi igifite" },
   "warn_hasBeenReplacedBy": { "message": "yasimbuwe na" },
+  "warn_andWillBeRemoved": { "message": "kandi bizakurwaho" },
   "info_configFile": { "message": "IDOSIYE" },
   "info_exampleValidConfigFile": { "message": "Urugero Byemewe IDOSIYE" },
   "info_copyingToClip": { "message": "Kwandukura kuri clip clip" },

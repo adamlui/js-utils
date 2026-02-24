@@ -25,6 +25,7 @@
   "warn_option": { "message": "Параметрҳо" },
   "warn_noLongerHasAnyEffect": { "message": "дигар таъсир надорад" },
   "warn_hasBeenReplacedBy": { "message": "иваз карда шуд бо" },
+  "warn_andWillBeRemoved": { "message": "ва аз миён бардошта шавад" },
   "info_configFile": { "message": "Танзимоти файл" },
   "info_exampleValidConfigFile": { "message": "Намунаи файли конфигуратсияи дуруст" },
   "info_copyingToClip": { "message": "Нусха бардоштан дар буфери иваз" },

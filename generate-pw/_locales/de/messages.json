@@ -25,6 +25,7 @@
   "warn_option": { "message": "Option" },
   "warn_noLongerHasAnyEffect": { "message": "hat keine Wirkung mehr" },
   "warn_hasBeenReplacedBy": { "message": "wurde ersetzt durch" },
+  "warn_andWillBeRemoved": { "message": "und wird entfernt" },
   "info_configFile": { "message": "Config file" },
   "info_exampleValidConfigFile": { "message": "Beispiel gültige Konfigurationsdatei" },
   "info_copyingToClip": { "message": "Kopiere in Zwischenablage" },

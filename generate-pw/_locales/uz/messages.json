@@ -25,6 +25,7 @@
   "warn_option": { "message": "Variant" },
   "warn_noLongerHasAnyEffect": { "message": "endi hech qanday ta'sir ko'rsatmaydi" },
   "warn_hasBeenReplacedBy": { "message": "bilan almashtirildi" },
+  "warn_andWillBeRemoved": { "message": "va olib tashlanadi" },
   "info_configFile": { "message": "Konfiguratsiya fayli" },
   "info_exampleValidConfigFile": { "message": "Misol uchun amal qiluvchi konfiguratsiya fayli" },
   "info_copyingToClip": { "message": "Buferga nusxalanmoqda" },

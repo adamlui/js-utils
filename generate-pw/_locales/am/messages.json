@@ -25,6 +25,7 @@
   "warn_option": { "message": "አማራጭ" },
   "warn_noLongerHasAnyEffect": { "message": "ከአሁን በኋላ ምንም ውጤት የለውም" },
   "warn_hasBeenReplacedBy": { "message": "ተተክቷል" },
+  "warn_andWillBeRemoved": { "message": "እና ይወገዳል" },
   "info_configFile": { "message": "ፋይልን ያዋቅሩ" },
   "info_exampleValidConfigFile": { "message": "ምሳሌ ትክክለኛ የውቅረት ፋይል" },
   "info_copyingToClip": { "message": "ወደ ክሊፕቦርድ መቅዳት" },

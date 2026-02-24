@@ -25,6 +25,7 @@
   "warn_option": { "message": "Opsiwn" },
   "warn_noLongerHasAnyEffect": { "message": "nid yw bellach yn cael unrhyw effaith" },
   "warn_hasBeenReplacedBy": { "message": "wedi'i ddisodli gan" },
+  "warn_andWillBeRemoved": { "message": "a bydd yn cael ei dorri i ffwrdd," },
   "info_configFile": { "message": "Ffeil ffurfweddu" },
   "info_exampleValidConfigFile": { "message": "Enghraifft o ffeil cyfluniad dilys" },
   "info_copyingToClip": { "message": "Copïo i&apos; r gludfwrdd" },

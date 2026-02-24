@@ -25,6 +25,7 @@
   "warn_option": { "message": "விருப்பம்" },
   "warn_noLongerHasAnyEffect": { "message": "இனி எந்த விளைவையும் ஏற்படுத்தாது" },
   "warn_hasBeenReplacedBy": { "message": "மாற்றப்பட்டது" },
+  "warn_andWillBeRemoved": { "message": "மற்றும் அகற்றப்படும்" },
   "info_configFile": { "message": "கட்டமைப்பு கோப்பு" },
   "info_exampleValidConfigFile": { "message": "எடுத்துக்காட்டு செல்லுபடியாகும் உள்ளமைவு கோப்பு" },
   "info_copyingToClip": { "message": "பிடிப்புப்பலகைக்கு நகலாக்குகின்றது" },

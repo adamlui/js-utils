@@ -25,6 +25,7 @@
   "warn_option": { "message": "Alternativ" },
   "warn_noLongerHasAnyEffect": { "message": "inte längre har någon effekt" },
   "warn_hasBeenReplacedBy": { "message": "har ersatts av" },
+  "warn_andWillBeRemoved": { "message": "och kommer att tas bort" },
   "info_configFile": { "message": "Konfigurationsfil" },
   "info_exampleValidConfigFile": { "message": "Exempel på giltig konfigurationsfil" },
   "info_copyingToClip": { "message": "Kopiera till klippbordet" },

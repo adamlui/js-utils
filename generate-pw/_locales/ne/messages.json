@@ -25,6 +25,7 @@
   "warn_option": { "message": "विकल्प" },
   "warn_noLongerHasAnyEffect": { "message": "अब कुनै असर पर्दैन" },
   "warn_hasBeenReplacedBy": { "message": "द्वारा प्रतिस्थापित गरिएको छ" },
+  "warn_andWillBeRemoved": { "message": "र हटाइनेछ" },
   "info_configFile": { "message": "कन्फिग फाइल" },
   "info_exampleValidConfigFile": { "message": "उदाहरण मान्य कन्फिग फाइल" },
   "info_copyingToClip": { "message": "क्लिपबोर्डमा प्रतिलिपि गर्दैछ" },

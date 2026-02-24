@@ -25,6 +25,7 @@
   "warn_option": { "message": "Chosankha" },
   "warn_noLongerHasAnyEffect": { "message": "palibe zotsatira" },
   "warn_hasBeenReplacedBy": { "message": "wakhala m 'malo ndi" },
+  "warn_andWillBeRemoved": { "message": "ndipo adzachotsedwa" },
   "info_configFile": { "message": "Sinthani fayilo" },
   "info_exampleValidConfigFile": { "message": "Chitsanzo chovomerezeka cha fayilo ya config" },
   "info_copyingToClip": { "message": "Kukopera kuti clipboard" },

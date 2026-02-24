@@ -25,6 +25,7 @@
   "warn_option": { "message": "ທາງເລືອກ" },
   "warn_noLongerHasAnyEffect": { "message": "ບໍ່ ມີ ຜົນ ກະທົບ ອີກ" },
   "warn_hasBeenReplacedBy": { "message": "ມັນຖືກທົດແທນໂດຍ" },
+  "warn_andWillBeRemoved": { "message": "ແລະຈະຖືກປະໄວ້ທັງ ຫມົດ ດ້ວຍຕົວເອງ." },
   "info_configFile": { "message": "ໄຟລ໌ການຕັ້ງຄ່າ" },
   "info_exampleValidConfigFile": { "message": "ຕົວຢ່າງເອກະສານ config ທີ່ຖືກຕ້ອງ" },
   "info_copyingToClip": { "message": "ສໍາເນົາໄປທີ່ຄລິບບອດ" },

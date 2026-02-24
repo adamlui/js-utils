@@ -25,6 +25,7 @@
   "warn_option": { "message": "Tlhopho" },
   "warn_noLongerHasAnyEffect": { "message": "ga e tlhole e na le diphelelo dipe" },
   "warn_hasBeenReplacedBy": { "message": "e emisitswe ke" },
+  "warn_andWillBeRemoved": { "message": "mme e tlile go tlosiwa" },
   "info_configFile": { "message": "Rulaganya faele" },
   "info_exampleValidConfigFile": { "message": "Sekao sa faele e e amogelesegang ya" },
   "info_copyingToClip": { "message": "Go kopolola go ya go clipboard" },

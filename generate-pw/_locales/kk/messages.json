@@ -25,6 +25,7 @@
   "warn_option": { "message": "Опция" },
   "warn_noLongerHasAnyEffect": { "message": "бұдан былай әсер етпейді" },
   "warn_hasBeenReplacedBy": { "message": "ауыстырылды" },
+  "warn_andWillBeRemoved": { "message": "және жойылады" },
   "info_configFile": { "message": "Файлды конфигурациялау" },
   "info_exampleValidConfigFile": { "message": "Мысал жарамды конфигурация файлы" },
   "info_copyingToClip": { "message": "Алмасу буферіндегіні орналастыруда" },
