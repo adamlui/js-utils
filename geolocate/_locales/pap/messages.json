@@ -7,7 +7,7 @@
   "error_readingLocalPkgVer": { "message": "Read Comentario Biblico Con Ap Pake Version" },
   "error_notRecognized": { "message": "no Reconocido" },
   "error_nonPositiveNum": { "message": "por Soledad > 0" },
-  "error_invalidFilepath": { "message": "must be a valid existing file path. Got" },
+  "error_invalidFilepath": { "message": "mester ta un kaminda di archivo eksistente bálido. Tabatin" },
   "error_invalidLangCode": { "message": "is an invalid language code" },
   "error_invalidURL": { "message": "Invalididad URL" },
   "error_invalidConfigFile": { "message": "Archivo para Exportar un Objeto" },
@@ -45,5 +45,5 @@
   "optionDesc_quiet": { "message": "Tur Kuliner di Kuliner Kuliner" },
   "optionDesc_init": { "message": "Crear un archivo config (in proyecto root)" },
   "optionDesc_help": { "message": "Foto di Help Screenshot" },
-  "optionDesc_version": { "message": "Show Version Number" }
+  "optionDesc_version": { "message": "Mustra number di vershon" }
 }

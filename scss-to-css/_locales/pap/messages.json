@@ -7,7 +7,7 @@
   "error_readingLocalPkgVer": { "message": "Read Comentario Biblico Con Ap Pake Version" },
   "error_notRecognized": { "message": "no Reconocido" },
   "error_nonPositiveNum": { "message": "por Soledad > 0" },
-  "error_invalidFilepath": { "message": "must be a Valid Existing Archive" },
+  "error_invalidFilepath": { "message": "mester ta un kaminda di archivo eksistente bálido. Tabatin" },
   "error_invalidLangCode": { "message": "un Codigo Lenguaje Invalido" },
   "error_invalidURL": { "message": "Invalididad URL" },
   "error_invalidConfigFile": { "message": "Archivo para Exportar un Objeto" },
@@ -66,5 +66,5 @@
   "optionDesc_config": { "message": "Cargo Custom Config Archivo" },
   "optionDesc_init": { "message": "Crear un archivo config (in proyecto root)" },
   "optionDesc_help": { "message": "Foto di Help Screenshot" },
-  "optionDesc_version": { "message": "Show Version Number" }
+  "optionDesc_version": { "message": "Mustra number di vershon" }
 }
