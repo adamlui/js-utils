@@ -17,8 +17,7 @@ module.exports = {
         sequential: { type: 'flag', regex: /^--(?:s|equen(?:tial|ce))$/ },
         init: { type: 'cmd', regex: /^-{0,2}i(?:nit)?$/ },
         help: { type: 'cmd', regex: /^--?h(?:elp)?$/ },
-        version: { type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ },
-        stats: { type: 'cmd', regex: /^--?stats?$/ }
+        version: { type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
     },
 
     load(ctrlKeys = Object.keys(this.controls)) {
