@@ -46,7 +46,7 @@
   "tip_cliArgsPrioritized": { "message": "Les arguments CLI remplacent toujours ces valeurs" },
   "helpSection_usage": { "message": "Utilisation" },
   "helpSection_pathArgs": { "message": "Arguments de chemin" },
-  "helpSection_flags": { "message": "Options:" },
+  "helpSection_flags": { "message": "Options" },
   "helpSection_params": { "message": "Options de paramètres" },
   "helpSection_cmds": { "message": "Commandes" },
   "optionDesc_uiLang": { "message": "Code de langue ISO 639-1 pour afficher l'interface utilisateur dans" },

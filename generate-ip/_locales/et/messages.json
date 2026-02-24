@@ -16,7 +16,7 @@
   "error_failedToFetchGlobalVer": { "message": "Globaalse versiooni toomine nurjus" },
   "error_failedToFetchSysLang": { "message": "Süsteemi keele toomine nurjus" },
   "error_mustIncludePath": { "message": "peab sisaldama =rada" },
-  "error_isRequired": { "message": "teavet." },
+  "error_isRequired": { "message": "teavet" },
   "error_whenPassing": { "message": "möödumisel" },
   "error_mustBeGreaterThanOne": { "message": "peab olema > 1" },
   "warn_configFileExists": { "message": "Konfiguratsioonifail on juba olemas" },

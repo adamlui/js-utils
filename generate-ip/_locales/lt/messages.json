@@ -16,7 +16,7 @@
   "error_failedToFetchGlobalVer": { "message": "Nepavyko gauti visuotinės versijos" },
   "error_failedToFetchSysLang": { "message": "Nepavyko gauti sistemos kalbos" },
   "error_mustIncludePath": { "message": "turi būti =kelias" },
-  "error_isRequired": { "message": "privalomas." },
+  "error_isRequired": { "message": "privalomas" },
   "error_whenPassing": { "message": "pravažiuojant" },
   "error_mustBeGreaterThanOne": { "message": "turi būti > 1" },
   "warn_configFileExists": { "message": "Konfigūracijos failas jau yra" },

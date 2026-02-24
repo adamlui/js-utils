@@ -18,7 +18,7 @@
   "error_mustIncludePath": { "message": "འགྲུལ་སྐྱོད་ =འགྲུལ་སྐྱོད་" },
   "error_isRequired": { "message": "འདི་ཁག་ཆེཝ་ཨིན།" },
   "error_whenPassing": { "message": "ང་བཅས་ཕར་འགྱོ་ས་" },
-  "error_mustBeGreaterThanOne": { "message": "འོག་གི་ཤོག་ལེབ་ཚུ་ > 1 ལུ་ འབྲེལ་མཐུད་འབད་ཨིན:" },
+  "error_mustBeGreaterThanOne": { "message": "འོག་གི་ཤོག་ལེབ་ཚུ་ > 1 ལུ་ འབྲེལ་མཐུད་འབད་ཨིན" },
   "warn_configFileExists": { "message": "སེལ་འཐུ་འབད་ཡོད་པའི་ཡིག་སྣོད་ཚུ་ སེལ་འཐུ་འབད།" },
   "warn_remoteConfigNotFound": { "message": "སྒྲིག་འཇུག་བྱས་ཚད། ཐེངས་ 3 ལས་ཉུང་བ། ཐོན་རིམ་" },
   "warn_remoteConfigFailed": { "message": "ཐག་རིང་གི་སྒྲིག་གཞི་ཡིག་སྣོད་འཚོལ་མ་ཚུགས།" },

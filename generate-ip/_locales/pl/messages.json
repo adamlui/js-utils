@@ -18,7 +18,7 @@
   "error_mustIncludePath": { "message": "must include =ścieżka" },
   "error_isRequired": { "message": "Wymagane pole" },
   "error_whenPassing": { "message": "przy przejeździe" },
-  "error_mustBeGreaterThanOne": { "message": "Musi być 1." },
+  "error_mustBeGreaterThanOne": { "message": "Musi być 1" },
   "warn_configFileExists": { "message": "Plik konfiguracyjny już istnieje" },
   "warn_remoteConfigNotFound": { "message": "Nie znaleziono zdalnego pliku konfiguracyjnego" },
   "warn_remoteConfigFailed": { "message": "Nie udało się pobrać zdalnego pliku konfiguracyjnego" },

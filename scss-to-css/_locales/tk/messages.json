@@ -6,7 +6,7 @@
   "prefix_source": { "message": "Çeşme" },
   "error_readingLocalPkgVer": { "message": "Ýerli paket nusgasyny okamakda ýalňyşlyk" },
   "error_notRecognized": { "message": "alymady" },
-  "error_nonPositiveNum": { "message": "mysal üçin, 1 sany diňe 1 sany bilen deňeşdirilýär:" },
+  "error_nonPositiveNum": { "message": "mysal üçin, 1 sany diňe 1 sany bilen deňeşdirilýär" },
   "error_invalidFilepath": { "message": "bar faýl ýoly bolmaly. Get" },
   "error_invalidLangCode": { "message": "ýalan dil kodesi" },
   "error_invalidURL": { "message": "Ýalan URL" },

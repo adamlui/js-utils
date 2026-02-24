@@ -36,7 +36,7 @@
   "info_generated": { "message": "δημιουργούνται" },
   "info_noSCSSfilesProcessed": { "message": "Δεν έγινε επεξεργασία αρχείων SCSS" },
   "info_failedToCompile": { "message": "απέτυχε η μεταγλώττιση" },
-  "info_moreHelp": { "message": "Για περισσότερη βοήθεια:" },
+  "info_moreHelp": { "message": "Για περισσότερη βοήθεια" },
   "info_type": { "message": "type" },
   "info_or": { "message": "ή" },
   "info_visit": { "message": "επίσκεψη" },

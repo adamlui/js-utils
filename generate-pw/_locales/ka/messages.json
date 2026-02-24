@@ -4,7 +4,7 @@
   "prefix_globalVer": { "message": "გლობალური ვერსია" },
   "prefix_localVer": { "message": "ადგილობრივი ვერსია" },
   "prefix_source": { "message": "წყარო" },
-  "error_readingLocalPkgVer": { "message": "შეცდომა ლოკალური პაკეტის ვერსიის წაკითხვისას მოხდა." },
+  "error_readingLocalPkgVer": { "message": "შეცდომა ლოკალური პაკეტის ვერსიის წაკითხვისას მოხდა" },
   "error_notRecognized": { "message": "ფაილის ტიპი ამოუცნობია" },
   "error_nonPositiveNum": { "message": "არგუმენტი შეიძლება იყოს მხოლოდ > 0" },
   "error_invalidFilepath": { "message": "უნდა იყოს სწორი არსებული ფაილის ბილიკი. მიღებული" },

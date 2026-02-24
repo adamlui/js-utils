@@ -17,7 +17,7 @@
   "error_failedToFetchSysLang": { "message": "Չհաջողվեց ստանալ համակարգի լեզուն" },
   "error_mustIncludePath": { "message": "must include =path" },
   "error_firstArgNotExist": { "message": "Առաջին փաստարկը կարող է լինել միայն գոյություն ունեցող ֆայլ կամ գրացուցակ" },
-  "error_doesNotExist": { "message": "Նման գրառում գոյություն չունի:" },
+  "error_doesNotExist": { "message": "Նման գրառում գոյություն չունի" },
   "warn_configFileExists": { "message": "Կոնֆիգ ֆայլն արդեն գոյություն ունի" },
   "warn_remoteConfigNotFound": { "message": "Հեռակա կոնֆիգուրացիայի ֆայլը չի գտնվել" },
   "warn_remoteConfigFailed": { "message": "Չհաջողվեց ստանալ հեռակառավարվող կոնֆիգուրացիոն ֆայլը" },

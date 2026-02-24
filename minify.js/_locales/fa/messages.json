@@ -7,7 +7,7 @@
   "error_readingLocalPkgVer": { "message": "خطا در خواندن نسخه بسته محلی" },
   "error_notRecognized": { "message": "شناخته نشده است" },
   "error_nonPositiveNum": { "message": "آرگومان فقط می‌تواند بزرگتر از ۰ باشد" },
-  "error_invalidFilepath": { "message": "باید یک مسیر فایل معتبر و موجود باشد." },
+  "error_invalidFilepath": { "message": "باید یک مسیر فایل معتبر و موجود باشد" },
   "error_invalidLangCode": { "message": "کد زبان نامعتبر است" },
   "error_invalidURL": { "message": "URL نامعتبر است" },
   "error_invalidConfigFile": { "message": "فایل پیکربندی باید یک شیء را اکسپورت کند" },

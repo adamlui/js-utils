@@ -39,7 +39,7 @@
   "info_moreHelp": { "message": "Нэмэлт тусламж" },
   "info_type": { "message": "Судалгааны хэлбэр" },
   "info_or": { "message": "эсвэл" },
-  "info_visit": { "message": "Зочлох:" },
+  "info_visit": { "message": "Зочлох" },
   "info_configFileCreated": { "message": "Үүсгэсэн тохиргооны файл" },
   "info_fetchingRemoteConfigFrom": { "message": "-с зайнаас тохируулгын файлыг татаж авах" },
   "tip_editToSetDefaults": { "message": "Өгөгдмөлийг өөрчлөхийн тулд энэ файлыг засах" },

@@ -18,7 +18,7 @@
   "error_mustIncludePath": { "message": "mora vsebovati =pot" },
   "error_isRequired": { "message": "je obvezno polje" },
   "error_whenPassing": { "message": "pri prehodu" },
-  "error_mustBeGreaterThanOne": { "message": "''{  0  }'' mora biti {  1  }." },
+  "error_mustBeGreaterThanOne": { "message": "''{  0  }'' mora biti {  1  }" },
   "warn_configFileExists": { "message": "Konfiguracijska datoteka že obstaja" },
   "warn_remoteConfigNotFound": { "message": "Oddaljene konfiguracijske datoteke ni mogoče najti" },
   "warn_remoteConfigFailed": { "message": "Oddaljene konfiguracijske datoteke ni bilo mogoče pridobiti" },

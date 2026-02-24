@@ -16,7 +16,7 @@
   "error_failedToFetchGlobalVer": { "message": "د نړیوالې نسخې په ترلاسه کولو کې پاتې راغلی" },
   "error_failedToFetchSysLang": { "message": "د سیسټم په ژبې ترلاسه کولو کې پاتې راغلی" },
   "error_mustIncludePath": { "message": "باید شامل وي =لاره" },
-  "error_isRequired": { "message": "اړین دی." },
+  "error_isRequired": { "message": "اړین دی" },
   "error_whenPassing": { "message": "کله چې تیریږي" },
   "error_mustBeGreaterThanOne": { "message": "باید > 1 وي" },
   "warn_configFileExists": { "message": "د سازونې دوتنه د مخکې نه شتون لري" },

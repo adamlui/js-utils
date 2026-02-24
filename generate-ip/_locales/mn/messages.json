@@ -16,7 +16,7 @@
   "error_failedToFetchGlobalVer": { "message": "Глобал хувилбарыг авч чадсангүй" },
   "error_failedToFetchSysLang": { "message": "Системийн хэлийг авч чадсангүй" },
   "error_mustIncludePath": { "message": "оруулах ёстой =зам" },
-  "error_isRequired": { "message": "шаардлагатай." },
+  "error_isRequired": { "message": "шаардлагатай" },
   "error_whenPassing": { "message": "явах үед" },
   "error_mustBeGreaterThanOne": { "message": "байх ёстой > 1" },
   "warn_configFileExists": { "message": "Тохиргооны файл аль хэдийн байна" },

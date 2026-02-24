@@ -44,7 +44,7 @@
   "info_fetchingRemoteConfigFrom": { "message": "Конфигурация файлын алыстан алуу" },
   "tip_editToSetDefaults": { "message": "Undo-type" },
   "tip_cliArgsPrioritized": { "message": "CLI аргументтери ар дайым бул маанилерди жокко чыгарат" },
-  "helpSection_usage": { "message": "Колдонулушу:" },
+  "helpSection_usage": { "message": "Колдонулушу" },
   "helpSection_pathArgs": { "message": "Жолдун аргументтери" },
   "helpSection_flags": { "message": "Boolean параметрлери" },
   "helpSection_params": { "message": "Параметр параметрлери" },

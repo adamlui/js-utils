@@ -17,7 +17,7 @@
   "error_failedToFetchSysLang": { "message": "Sistemaren hizkuntza lortzea huts egin da" },
   "error_mustIncludePath": { "message": "=bidea barne hartu behar du" },
   "error_isRequired": { "message": "eskatua dago" },
-  "error_whenPassing": { "message": "pasatzean." },
+  "error_whenPassing": { "message": "pasatzean" },
   "error_mustBeGreaterThanOne": { "message": "1 baino gehiago izan behar du" },
   "warn_configFileExists": { "message": "Konfigurazio fitxategia dagoeneko existitzen da" },
   "warn_remoteConfigNotFound": { "message": "Ez da urruneko konfigurazio fitxategia aurkitu" },

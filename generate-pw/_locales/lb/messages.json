@@ -50,7 +50,7 @@
   "optionDesc_noLower": { "message": "Ënnerierdesch Buschtawen am Passwuert(en) ofsetzen" },
   "optionDesc_noUpper": { "message": "Uewerkuer Bréiwer am Passwuert(en) ofsetzen" },
   "optionDesc_similarChars": { "message": "Ähnlech Zeechen am Passwuert(en) enthalen" },
-  "optionDesc_unstrict": { "message": "Et brauch een net mindestens ee Charakter aus all zoulässege Charakter, deen am Passwuert(en) gesat gëtt." },
+  "optionDesc_unstrict": { "message": "Et brauch een net mindestens ee Charakter aus all zoulässege Charakter, deen am Passwuert(en) gesat gëtt" },
   "optionDesc_entropy": { "message": "Entropie berechnen/log berechnen" },
   "optionDesc_quiet": { "message": "Ënnerdréckt all Umeldung ausser Feeler" },
   "optionDesc_help": { "message": "Hëllefsbildschierm uweisen" },

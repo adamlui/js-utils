@@ -7,7 +7,7 @@
   "error_readingLocalPkgVer": { "message": "Mbeni ye so ayeke na lege ni ape ayeke so a yeke diko ni na yâ ti ambeti" },
   "error_notRecognized": { "message": "a hinga lo pëpe" },
   "error_nonPositiveNum": { "message": "tënë ni alingbi ti duti gi > 0" },
-  "error_invalidFilepath": { "message": "a lingbi ti duti mbeni lege ti faïl so ayeke dä awe." },
+  "error_invalidFilepath": { "message": "a lingbi ti duti mbeni lege ti faïl so ayeke dä awe" },
   "error_invalidLangCode": { "message": "a yeke mbeni kode ti yanga ti kodoro so ayeke na lege ni pëpe" },
   "error_invalidURL": { "message": "URL so ayeke na lege ni ape" },
   "error_invalidConfigFile": { "message": "A lingbi a fa mbeni ye so ayeke na yâ ti mbeni mbeti so a sû na mbeti" },

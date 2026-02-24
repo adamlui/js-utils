@@ -48,7 +48,7 @@
   "helpSection_pathArgs": { "message": "መወከሲታት" },
   "helpSection_flags": { "message": "ናይ ቡሊያን ኣማራጺታት" },
   "helpSection_params": { "message": "ኣማራጺታት ፓራሜትር" },
-  "helpSection_cmds": { "message": "commands:" },
+  "helpSection_cmds": { "message": "commands" },
   "optionDesc_uiLang": { "message": "ISO 639-1 ኮድ ቋንቋ ኣብ" },
   "inputPathDesc_main": { "message": "ናይ SCSS ፋይላት ዝሓዘ ናይ SCSS ፋይል ወይ መምርሒ" },
   "inputPathDesc_extra": { "message": "ምስ ናይ ሕጂ ናይ ስራሕ መምርሒ" },

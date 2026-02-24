@@ -48,7 +48,7 @@
   "helpSection_flags": { "message": "Amahitamo ya Boolean" },
   "helpSection_params": { "message": "Amahitamo ya Parameter" },
   "helpSection_cmds": { "message": "Amabwiriza" },
-  "optionDesc_uiLang": { "message": "Kode ya ISO 639-1 y'ururimi rwo kwerekanamo UI." },
+  "optionDesc_uiLang": { "message": "Kode ya ISO 639-1 y'ururimi rwo kwerekanamo UI" },
   "inputPathDesc_main": { "message": "Inzira kuri dosiye ya JS cyangwa ububiko burimo dosiye ya JS igomba kugabanywa" },
   "inputPathDesc_extra": { "message": "ugereranije nubuyobozi bukora" },
   "outputPathDesc_main": { "message": "Inzira ya dosiye cyangwa ububiko aho dosiye zagabanijwe zizabikwa" },

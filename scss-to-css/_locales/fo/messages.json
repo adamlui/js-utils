@@ -3,11 +3,11 @@
   "appCopyright": { "message": "© 2024–2026 Adam Lui & stuðlar undir MIT-lisensuni" },
   "prefix_globalVer": { "message": "Globalt útgáva" },
   "prefix_localVer": { "message": "Lokalu útgávan" },
-  "prefix_source": { "message": "Kelda:" },
+  "prefix_source": { "message": "Kelda" },
   "error_readingLocalPkgVer": { "message": "Feilur við at lesa lokalu pakkaútgávu" },
   "error_notRecognized": { "message": "ikki viðurkennd" },
   "error_nonPositiveNum": { "message": "argument kann bert vera > 0" },
-  "error_invalidFilepath": { "message": "tað skal vera ein galdandi verandi skráarvegur." },
+  "error_invalidFilepath": { "message": "tað skal vera ein galdandi verandi skráarvegur" },
   "error_invalidLangCode": { "message": "tað er ein ógildandi málsligur kóði" },
   "error_invalidURL": { "message": "Ógildugt URL" },
   "error_invalidConfigFile": { "message": "Skipa fílu skal útflyta eitt objekt" },
@@ -68,6 +68,6 @@
   "optionDesc_config": { "message": "Legg til rættis konfiguratiónsfíla" },
   "optionDesc_init": { "message": "Skapa konfiguratiónsfíla (í verkætlanarorði)" },
   "optionDesc_help": { "message": "Vís hjálparskjá" },
-  "optionDesc_version": { "message": "Vís útgávu nr." },
+  "optionDesc_version": { "message": "Vís útgávu nr" },
   "optionDesc_stats": { "message": "Vís NPM-statistikkar" }
 }

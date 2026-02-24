@@ -7,7 +7,7 @@
   "error_readingLocalPkgVer": { "message": "Ol i no inap ritim ol tok bilong ples" },
   "error_notRecognized": { "message": "ol i no save" },
   "error_nonPositiveNum": { "message": "i no gat wanpela samting i stap long dispela hap" },
-  "error_invalidFilepath": { "message": "em i mas i stap olsem wanpela rait i stap yet." },
+  "error_invalidFilepath": { "message": "em i mas i stap olsem wanpela rait i stap yet" },
   "error_invalidLangCode": { "message": "em i wanpela tokples i no gat as bilong en" },
   "error_invalidURL": { "message": "Ol URL i no stret" },
   "error_invalidConfigFile": { "message": "Ol i mas salim wanpela samting i go long narapela hap" },
