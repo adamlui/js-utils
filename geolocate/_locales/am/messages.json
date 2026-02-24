@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2026 አዳም ሉዊ በ MIT ፈቃድ ስር" },
+  "pkg_copyright": { "message": "© 2024–2026 አዳም ሉዊ በ MIT ፈቃድ ስር" },
   "prefix_globalVer": { "message": "ዓለም አቀፍ ስሪት" },
   "prefix_localVer": { "message": "አካባቢያዊ ስሪት" },
   "prefix_source": { "message": "ምንጭ" },

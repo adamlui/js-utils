@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui & tabaruceyaasha hoos liisanka MIT" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui & tabaruceyaasha hoos liisanka MIT" },
   "prefix_globalVer": { "message": "Nooca Caalamiga ah" },
   "prefix_localVer": { "message": "Nooca maxalliga ah" },
   "prefix_source": { "message": "Isha" },

@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui in sodelavci pod licenco MIT" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui in sodelavci pod licenco MIT" },
   "prefix_globalVer": { "message": "Globalna različica" },
   "prefix_localVer": { "message": "Lokalna različica" },
   "prefix_source": { "message": "Vir" },

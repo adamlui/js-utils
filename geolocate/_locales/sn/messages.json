@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui pasi pemvumo yeMIT" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui pasi pemvumo yeMIT" },
   "prefix_globalVer": { "message": "Shanduro yepasi rose" },
   "prefix_localVer": { "message": "Shanduro yemunharaunda" },
   "prefix_source": { "message": "Kunobva" },

@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui & penyumbang di bawah LESEN MIT" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui & penyumbang di bawah LESEN MIT" },
   "prefix_globalVer": { "message": "Versi global" },
   "prefix_localVer": { "message": "Versi tempatan" },
   "prefix_source": { "message": "Sumber" },

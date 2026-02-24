@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024 -2026 Adam Lui a chyfranwyr o dan drwydded MIT" },
+  "pkg_copyright": { "message": "© 2024 -2026 Adam Lui a chyfranwyr o dan drwydded MIT" },
   "prefix_globalVer": { "message": "Fersiwn eang" },
   "prefix_localVer": { "message": "Fersiwn lleol" },
   "prefix_source": { "message": "Ffynhonnell" },

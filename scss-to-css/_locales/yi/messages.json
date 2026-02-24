@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 אדאם לוי און מיטארבעטער אונטער דער MIT ליצענץ" },
+  "pkg_copyright": { "message": "© 2024–2026 אדאם לוי און מיטארבעטער אונטער דער MIT ליצענץ" },
   "prefix_globalVer": { "message": "גלאבאלע ווערסיע" },
   "prefix_localVer": { "message": "לאקאלע ווערסיע" },
   "prefix_source": { "message": "מקור" },

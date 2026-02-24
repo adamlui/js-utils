@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2026 එම්අයිටී බලපත් ‍ රය යටතේ ඇඩම් ලූයි" },
+  "pkg_copyright": { "message": "© 2024–2026 එම්අයිටී බලපත් ‍ රය යටතේ ඇඩම් ලූයි" },
   "prefix_globalVer": { "message": "ගෝලීය අනුවාදය" },
   "prefix_localVer": { "message": "දේශීය අනුවාදය" },
   "prefix_source": { "message": "මූල ගොනු" },

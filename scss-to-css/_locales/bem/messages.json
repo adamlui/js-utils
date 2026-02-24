@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 Amanda Lui & Contesters Under MIT License" },
+  "pkg_copyright": { "message": "© 2024–2026 Amanda Lui & Contesters Under MIT License" },
   "prefix_globalVer": { "message": "Ukupilibula kwa mu calo conse" },
   "prefix_localVer": { "message": "Bipasha Basu Local Version" },
   "prefix_source": { "message": "Ifishinte" },

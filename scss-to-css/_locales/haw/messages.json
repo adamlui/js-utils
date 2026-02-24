@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui & nā mea kōkua ma lalo o ka laikini MIT" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui & nā mea kōkua ma lalo o ka laikini MIT" },
   "prefix_globalVer": { "message": "Mana honua" },
   "prefix_localVer": { "message": "Mana kūloko" },
   "prefix_source": { "message": "Puna" },

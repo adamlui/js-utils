@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2026 ਐਡਮ Lui ਐਮਆਈਟੀ ਲਾਇਸੈਂਸ ਦੇ ਅਧੀਨ" },
+  "pkg_copyright": { "message": "© 2024–2026 ਐਡਮ Lui ਐਮਆਈਟੀ ਲਾਇਸੈਂਸ ਦੇ ਅਧੀਨ" },
   "prefix_globalVer": { "message": "ਗਲੋਬਲ ਵਰਜਨ" },
   "prefix_localVer": { "message": "ਲੋਕਲ ਵਰਜਨ" },
   "prefix_source": { "message": "Fonte" },

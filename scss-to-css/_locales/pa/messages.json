@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 ਐਡਮ Lui & ਐਮਆਈਟੀ ਲਾਇਸੈਂਸ ਦੇ ਅਧੀਨ ਯੋਗਦਾਨ ਪਾਉਣ ਵਾਲੇ" },
+  "pkg_copyright": { "message": "© 2024–2026 ਐਡਮ Lui & ਐਮਆਈਟੀ ਲਾਇਸੈਂਸ ਦੇ ਅਧੀਨ ਯੋਗਦਾਨ ਪਾਉਣ ਵਾਲੇ" },
   "prefix_globalVer": { "message": "ਗਲੋਬਲ ਵਰਜਨ" },
   "prefix_localVer": { "message": "ਲੋਕਲ ਵਰਜਨ" },
   "prefix_source": { "message": "Fonte" },

@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 ADUM LUI & AC PRAESCRIPTIATIONES QUAE LICENSE" },
+  "pkg_copyright": { "message": "© 2024–2026 ADUM LUI & AC PRAESCRIPTIATIONES QUAE LICENSE" },
   "prefix_globalVer": { "message": "Globosa version" },
   "prefix_localVer": { "message": "Familia Localis" },
   "prefix_source": { "message": "Fons" },

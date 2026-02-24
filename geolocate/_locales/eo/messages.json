@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui sub la MIT-permesilo" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui sub la MIT-permesilo" },
   "prefix_globalVer": { "message": "Tutmonda versio" },
   "prefix_localVer": { "message": "Loka versio" },
   "prefix_source": { "message": "Origino" },

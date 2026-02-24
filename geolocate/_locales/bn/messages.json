@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2026 অ্যাডাম লুই এমআইটি লাইসেন্সের অধীনে" },
+  "pkg_copyright": { "message": "© 2024–2026 অ্যাডাম লুই এমআইটি লাইসেন্সের অধীনে" },
   "prefix_globalVer": { "message": "গ্লোবাল সংস্করণ" },
   "prefix_localVer": { "message": "স্থানীয় সংস্করণ" },
   "prefix_source": { "message": "উৎস" },

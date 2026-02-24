@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 ایڈم لوئی اور ایم آئی ٹی لائسنس کے تحت تعاون کنندگان" },
+  "pkg_copyright": { "message": "© 2024–2026 ایڈم لوئی اور ایم آئی ٹی لائسنس کے تحت تعاون کنندگان" },
   "prefix_globalVer": { "message": "عالمی ورژن" },
   "prefix_localVer": { "message": "مقامی ورژن" },
   "prefix_source": { "message": "ماخذ" },

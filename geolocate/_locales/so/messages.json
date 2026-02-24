@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui oo hoos yimaada shatiga MIT" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui oo hoos yimaada shatiga MIT" },
   "prefix_globalVer": { "message": "Nooca Caalamiga ah" },
   "prefix_localVer": { "message": "Nooca maxalliga ah" },
   "prefix_source": { "message": "Isha" },

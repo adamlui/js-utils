@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2026 刘展鹏 (Adam Lui) 根据 MIT 许可" },
+  "pkg_copyright": { "message": "© 2024–2026 刘展鹏 (Adam Lui) 根据 MIT 许可" },
   "prefix_globalVer": { "message": "全局版本" },
   "prefix_localVer": { "message": "本地版本" },
   "prefix_source": { "message": "来源" },

@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024 -2026 Adam LUI ve MIT lisansı kapsamında katkıda bulunanlar" },
+  "pkg_copyright": { "message": "© 2024 -2026 Adam LUI ve MIT lisansı kapsamında katkıda bulunanlar" },
   "prefix_globalVer": { "message": "Genel sürüm" },
   "prefix_localVer": { "message": "Yerel sürüm" },
   "prefix_source": { "message": "Kaynak" },

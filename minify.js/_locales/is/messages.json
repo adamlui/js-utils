@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui og meðhöfundar undir MIT-leyfi" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui og meðhöfundar undir MIT-leyfi" },
   "prefix_globalVer": { "message": "Heildarútgáfa" },
   "prefix_localVer": { "message": "Staðbundin útgáfa" },
   "prefix_source": { "message": "Heimild" },

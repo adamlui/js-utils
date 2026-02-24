@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© ۲۰۲۴–۲۰۲۶ آدام لویی و همکاران تحت مجوز MIT" },
+  "pkg_copyright": { "message": "© ۲۰۲۴–۲۰۲۶ آدام لویی و همکاران تحت مجوز MIT" },
   "prefix_globalVer": { "message": "نسخه جهانی" },
   "prefix_localVer": { "message": "نسخه محلی" },
   "prefix_source": { "message": "منبع" },

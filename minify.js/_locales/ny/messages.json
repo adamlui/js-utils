@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui & contributors under the MIT license" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui & contributors under the MIT license" },
   "prefix_globalVer": { "message": "Mtundu wapadziko lonse lapansi" },
   "prefix_localVer": { "message": "Mtundu wakomweko" },
   "prefix_source": { "message": "Chitsime" },

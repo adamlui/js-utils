@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "Anno XIII XIIIX & UNIVERSITATIS MIT LICENSE" },
+  "pkg_copyright": { "message": "Anno XIII XIIIX & UNIVERSITATIS MIT LICENSE" },
   "prefix_globalVer": { "message": "Globosa version" },
   "prefix_localVer": { "message": "Familia Localis" },
   "prefix_source": { "message": "Fons" },

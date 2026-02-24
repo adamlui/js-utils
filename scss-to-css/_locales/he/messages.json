@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024 -2026 אדם לואי ותורמים תחת רישיון MIT" },
+  "pkg_copyright": { "message": "© 2024 -2026 אדם לואי ותורמים תחת רישיון MIT" },
   "prefix_globalVer": { "message": "גרסה גלובלית" },
   "prefix_localVer": { "message": "הגרסה המקומית" },
   "prefix_source": { "message": "מקור" },

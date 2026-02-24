@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui og bidragsytere under MIT-lisensen" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui og bidragsytere under MIT-lisensen" },
   "prefix_globalVer": { "message": "Global versjon" },
   "prefix_localVer": { "message": "Your local version" },
   "prefix_source": { "message": "Kilde" },

@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui & saofaga i lalo o le laisene MIT" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui & saofaga i lalo o le laisene MIT" },
   "prefix_globalVer": { "message": "Faaliliuga a le Lalolagi" },
   "prefix_localVer": { "message": "Faaliliuga i le lotoifale" },
   "prefix_source": { "message": "Mafu'aga" },

@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 ئادەم لوی و بەشداربووان لەژێر مۆڵەتی MIT" },
+  "pkg_copyright": { "message": "© 2024–2026 ئادەم لوی و بەشداربووان لەژێر مۆڵەتی MIT" },
   "prefix_globalVer": { "message": "وەشانی جیهانی" },
   "prefix_localVer": { "message": "ڤێرژنی ناوخۆیی" },
   "prefix_source": { "message": "سەرچاوە" },

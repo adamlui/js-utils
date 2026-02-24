@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 Адам Луи ба MIT лицензийн дагуу хувь нэмэр оруулагчид" },
+  "pkg_copyright": { "message": "© 2024–2026 Адам Луи ба MIT лицензийн дагуу хувь нэмэр оруулагчид" },
   "prefix_globalVer": { "message": "Дэлхийн хувилбар" },
   "prefix_localVer": { "message": "Дотоод хувилбар" },
   "prefix_source": { "message": "Эх сурвалж" },

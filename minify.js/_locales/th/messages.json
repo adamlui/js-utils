@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui และผู้ร่วมให้ข้อมูลภายใต้ใบอนุญาต MIT" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui และผู้ร่วมให้ข้อมูลภายใต้ใบอนุญาต MIT" },
   "prefix_globalVer": { "message": "เวอร์ชันส่วนกลาง" },
   "prefix_localVer": { "message": "เวอร์ชันในเครื่อง" },
   "prefix_source": { "message": "ภาษาต้นทาง" },

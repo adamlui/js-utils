@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui eta laguntzaileak MIT lizentziapean" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui eta laguntzaileak MIT lizentziapean" },
   "prefix_globalVer": { "message": "Bertsio globala" },
   "prefix_localVer": { "message": "Bertsio lokala" },
   "prefix_source": { "message": "Iturria" },

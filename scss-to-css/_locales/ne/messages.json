@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024 -2026 एडम लुई र एमआईटी इजाजतपत्र अन्तर्गत योगदानकर्ताहरू" },
+  "pkg_copyright": { "message": "© 2024 -2026 एडम लुई र एमआईटी इजाजतपत्र अन्तर्गत योगदानकर्ताहरू" },
   "prefix_globalVer": { "message": "विश्वव्यापी संस्करण" },
   "prefix_localVer": { "message": "स्थानीय संस्करण" },
   "prefix_source": { "message": "स्रोत" },

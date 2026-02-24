@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024-2026 Adam Lui & Contributor" },
+  "pkg_copyright": { "message": "© 2024-2026 Adam Lui & Contributor" },
   "prefix_globalVer": { "message": "Vershon Global" },
   "prefix_localVer": { "message": "Vershon lokal" },
   "prefix_source": { "message": "Fuente" },

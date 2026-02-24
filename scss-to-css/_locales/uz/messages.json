@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui va MIT litsenziyasi bo'yicha mualliflar" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui va MIT litsenziyasi bo'yicha mualliflar" },
   "prefix_globalVer": { "message": "Global versiya" },
   "prefix_localVer": { "message": "Mahalliy versiya" },
   "prefix_source": { "message": "Manba" },

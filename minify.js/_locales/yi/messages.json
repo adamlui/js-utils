@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui & מיטארבעטערס אונטער די MIT דערלויבעניש" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui & מיטארבעטערס אונטער די MIT דערלויבעניש" },
   "prefix_globalVer": { "message": "גלאבאלע ווערסיע" },
   "prefix_localVer": { "message": "לאקאלע ווערסיע" },
   "prefix_source": { "message": "מקור" },

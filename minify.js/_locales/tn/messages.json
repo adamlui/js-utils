@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui le baabi ka fa tlase ga laesense ya MIT" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui le baabi ka fa tlase ga laesense ya MIT" },
   "prefix_globalVer": { "message": "Mofuta wa lefatshe lotlhe" },
   "prefix_localVer": { "message": "Mofuta wa selegae" },
   "prefix_source": { "message": "Motswedi" },

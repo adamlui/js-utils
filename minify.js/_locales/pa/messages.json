@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui ਅਤੇ ਐਮਆਈਟੀ ਲਾਇਸੈਂਸ ਅਧੀਨ ਯੋਗਦਾਨ ਪਾਉਣ ਵਾਲੇ" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui ਅਤੇ ਐਮਆਈਟੀ ਲਾਇਸੈਂਸ ਅਧੀਨ ਯੋਗਦਾਨ ਪਾਉਣ ਵਾਲੇ" },
   "prefix_globalVer": { "message": "ਗਲੋਬਲ ਵਰਜ਼ਨ" },
   "prefix_localVer": { "message": "ਸਥਾਨਕ ਵਰਜਨ" },
   "prefix_source": { "message": "ਸਰੋਤ" },

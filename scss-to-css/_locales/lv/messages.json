@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui un līdzstrādnieki saskaņā ar MIT licenci" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui un līdzstrādnieki saskaņā ar MIT licenci" },
   "prefix_globalVer": { "message": "Globālā versija" },
   "prefix_localVer": { "message": "Vietējā versija" },
   "prefix_source": { "message": "Avots" },

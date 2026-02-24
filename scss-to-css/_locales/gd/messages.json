@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024 -2026 Adam Lui & luchd - tabhartais fo chead MIT" },
+  "pkg_copyright": { "message": "© 2024 -2026 Adam Lui & luchd - tabhartais fo chead MIT" },
   "prefix_globalVer": { "message": "Tionndadh cruinneil" },
   "prefix_localVer": { "message": "An tionndadh ionadail" },
   "prefix_source": { "message": "Stòr" },

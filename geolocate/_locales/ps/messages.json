@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2026 آدم لوی د MIT جواز لاندې" },
+  "pkg_copyright": { "message": "© 2024–2026 آدم لوی د MIT جواز لاندې" },
   "prefix_globalVer": { "message": "نړیواله نسخه" },
   "prefix_localVer": { "message": "ځايي نسخه" },
   "prefix_source": { "message": "سرچينه" },

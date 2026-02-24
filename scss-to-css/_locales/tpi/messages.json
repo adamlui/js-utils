@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui & ol contributor aninit long MIT lisens" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui & ol contributor aninit long MIT lisens" },
   "prefix_globalVer": { "message": "Global vesen" },
   "prefix_localVer": { "message": "Ol tok bilong ples" },
   "prefix_source": { "message": "Sos" },

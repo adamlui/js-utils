@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 Одам Lui & саҳмгузорон дар доираи иҷозатномаи MIT" },
+  "pkg_copyright": { "message": "© 2024–2026 Одам Lui & саҳмгузорон дар доираи иҷозатномаи MIT" },
   "prefix_globalVer": { "message": "Версияи умумӣ" },
   "prefix_localVer": { "message": "Версияи локалӣ" },
   "prefix_source": { "message": "Манбаъ" },

@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024-2026 Adam Lui & អ្នករួមចំណែកក្រោមអាជ្ញាប័ណ្ណ MIT" },
+  "pkg_copyright": { "message": "© 2024-2026 Adam Lui & អ្នករួមចំណែកក្រោមអាជ្ញាប័ណ្ណ MIT" },
   "prefix_globalVer": { "message": "កំណែសកល" },
   "prefix_localVer": { "message": "កំណែ មូលដ្ឋាន" },
   "prefix_source": { "message": "ប្រភព" },

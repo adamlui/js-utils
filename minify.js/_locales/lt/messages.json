@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui ir bendraautoriai pagal MIT LICENCIJĄ" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui ir bendraautoriai pagal MIT LICENCIJĄ" },
   "prefix_globalVer": { "message": "Visuotinė versija" },
   "prefix_localVer": { "message": "Vietinė versija" },
   "prefix_source": { "message": "Šaltinis" },

@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui na wachangiaji chini ya leseni ya Mit" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui na wachangiaji chini ya leseni ya Mit" },
   "prefix_globalVer": { "message": "Toleo la kimataifa" },
   "prefix_localVer": { "message": "Toleo la eneo husika" },
   "prefix_source": { "message": "SW" },

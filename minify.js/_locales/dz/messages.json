@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 ཨ་དམ་ལུའུ་དང་ མཉམ་འབྲེལ་འབད་མི་ MIT གི་འོག་ལུ་" },
+  "pkg_copyright": { "message": "© 2024–2026 ཨ་དམ་ལུའུ་དང་ མཉམ་འབྲེལ་འབད་མི་ MIT གི་འོག་ལུ་" },
   "prefix_globalVer": { "message": "འཛམ་གླིང་གི་འགྱུར་རིམ།" },
   "prefix_localVer": { "message": "ས་གནས་ཀྱི་འགྱུར་ཁུངས།" },
   "prefix_source": { "message": "འབྱུང་ཁུངས།" },

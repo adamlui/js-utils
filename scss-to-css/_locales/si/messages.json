@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 ඇඩම් ලූයි සහ MIT බලපත් ‍ රය යටතේ දායකයින්" },
+  "pkg_copyright": { "message": "© 2024–2026 ඇඩම් ලූයි සහ MIT බලපත් ‍ රය යටතේ දායකයින්" },
   "prefix_globalVer": { "message": "ගෝලීය අනුවාදය" },
   "prefix_localVer": { "message": "දේශීය අනුවාදය" },
   "prefix_source": { "message": "මූල ගොනු" },

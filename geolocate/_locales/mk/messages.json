@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui под лиценца на МИТ" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui под лиценца на МИТ" },
   "prefix_globalVer": { "message": "Глобална верзија" },
   "prefix_localVer": { "message": "Локална верзија" },
   "prefix_source": { "message": "Извор" },

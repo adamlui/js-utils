@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui & contributeurs sous licence MIT" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui & contributeurs sous licence MIT" },
   "prefix_globalVer": { "message": "Version globale" },
   "prefix_localVer": { "message": "Version locale" },
   "prefix_source": { "message": "Source" },

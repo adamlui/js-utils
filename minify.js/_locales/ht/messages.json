@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui & kontribitè anba lisans MIT" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui & kontribitè anba lisans MIT" },
   "prefix_globalVer": { "message": "Vèsyon mondyal" },
   "prefix_localVer": { "message": "Vèsyon lokal" },
   "prefix_source": { "message": "Sous" },

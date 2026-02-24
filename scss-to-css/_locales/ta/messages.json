@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 ஆடம் லூயி & MIT உரிமத்தின் கீழ் பங்களிப்பாளர்கள்" },
+  "pkg_copyright": { "message": "© 2024–2026 ஆடம் லூயி & MIT உரிமத்தின் கீழ் பங்களிப்பாளர்கள்" },
   "prefix_globalVer": { "message": "உலகளாவிய பதிப்பு" },
   "prefix_localVer": { "message": "உள்ளூர் பதிப்பு" },
   "prefix_source": { "message": "மூல" },

@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 ആദം ലൂയിയും എം‌ഐ‌ടി ലൈസൻസിന് കീഴിലുള്ള സംഭാവനക്കാരും" },
+  "pkg_copyright": { "message": "© 2024–2026 ആദം ലൂയിയും എം‌ഐ‌ടി ലൈസൻസിന് കീഴിലുള്ള സംഭാവനക്കാരും" },
   "prefix_globalVer": { "message": "ആഗോള പതിപ്പ്" },
   "prefix_localVer": { "message": "പ്രാദേശിക പതിപ്പ്" },
   "prefix_source": { "message": "ഉറവിടം" },

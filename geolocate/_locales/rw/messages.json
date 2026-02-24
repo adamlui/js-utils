@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui munsi ya MIT" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui munsi ya MIT" },
   "prefix_globalVer": { "message": "Imiterere yisi yose" },
   "prefix_localVer": { "message": "Imiterere yaho" },
   "prefix_source": { "message": "Inkomoko" },

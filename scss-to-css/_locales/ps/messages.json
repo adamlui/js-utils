@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 آدم لوی او د MIT جواز لاندې برخه اخیستونکي" },
+  "pkg_copyright": { "message": "© 2024–2026 آدم لوی او د MIT جواز لاندې برخه اخیستونکي" },
   "prefix_globalVer": { "message": "نړیواله نسخه" },
   "prefix_localVer": { "message": "ځايي نسخه" },
   "prefix_source": { "message": "سرچينه" },

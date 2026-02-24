@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui n'abaterankunga munsi ya MIT License" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui n'abaterankunga munsi ya MIT License" },
   "prefix_globalVer": { "message": "Verisiyo" },
   "prefix_localVer": { "message": "Verisiyo" },
   "prefix_source": { "message": "Inkomoko" },

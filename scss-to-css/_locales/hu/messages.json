@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui és közreműködők az MIT licenc alapján" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui és közreműködők az MIT licenc alapján" },
   "prefix_globalVer": { "message": "Globális verzió" },
   "prefix_localVer": { "message": "Helyi verzió" },
   "prefix_source": { "message": "Forrás" },

@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui 和 MIT 許可證下的貢獻者" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui 和 MIT 許可證下的貢獻者" },
   "prefix_globalVer": { "message": "全球版本" },
   "prefix_localVer": { "message": "本地版本" },
   "prefix_source": { "message": "來源" },

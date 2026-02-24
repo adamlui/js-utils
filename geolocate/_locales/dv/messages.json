@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© އެމްއައިޓީ ލައިސަންސްގެ ދަށުން 2024 ވަނަ އަހަރު އާދަމް ލުއި" },
+  "pkg_copyright": { "message": "© އެމްއައިޓީ ލައިސަންސްގެ ދަށުން 2024 ވަނަ އަހަރު އާދަމް ލުއި" },
   "prefix_globalVer": { "message": "ގްލޯބަލް ވާޝަން" },
   "prefix_localVer": { "message": "ލޯކަލް ވާޝަން" },
   "prefix_source": { "message": "ސޯސް" },

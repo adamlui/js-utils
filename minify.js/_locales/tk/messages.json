@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui & MIT lisenziýasy astyndaky sadakalar" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui & MIT lisenziýasy astyndaky sadakalar" },
   "prefix_globalVer": { "message": "Dünýewi görnüş" },
   "prefix_localVer": { "message": "Ýurduň terjimesi" },
   "prefix_source": { "message": "Çeşme" },

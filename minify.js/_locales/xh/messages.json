@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "minify.js" },
-  "appCopyright": { "message": "© 2024–2026 UAdam Lui nabantu abanikelayo phantsi KWELAYISENSI YE-MIT" },
+  "pkg_copyright": { "message": "© 2024–2026 UAdam Lui nabantu abanikelayo phantsi KWELAYISENSI YE-MIT" },
   "prefix_globalVer": { "message": "Uhlobo lomhlaba wonke" },
   "prefix_localVer": { "message": "Inguqulelo yasekuhlaleni" },
   "prefix_source": { "message": "Umthombo" },

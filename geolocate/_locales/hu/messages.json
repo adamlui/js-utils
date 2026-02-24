@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui MIT licenc alatt" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui MIT licenc alatt" },
   "prefix_globalVer": { "message": "Globális verzió" },
   "prefix_localVer": { "message": "Helyi verzió" },
   "prefix_source": { "message": "Forrás" },

@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui a prispievatelia v rámci licencie MIT" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui a prispievatelia v rámci licencie MIT" },
   "prefix_globalVer": { "message": "Globálna verzia" },
   "prefix_localVer": { "message": "Miestna verzia" },
   "prefix_source": { "message": "Zdroj" },

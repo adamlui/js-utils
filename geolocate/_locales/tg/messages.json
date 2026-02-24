@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "geolocate" },
-  "appCopyright": { "message": "© 2024–2026 Одам Луи таҳти литсензияи MIT" },
+  "pkg_copyright": { "message": "© 2024–2026 Одам Луи таҳти литсензияи MIT" },
   "prefix_globalVer": { "message": "Версияи умумӣ" },
   "prefix_localVer": { "message": "Версияи локалӣ" },
   "prefix_source": { "message": "Манбаъ" },

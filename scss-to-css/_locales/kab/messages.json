@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui & confrontations under the MIT License" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui & confrontations under the MIT License" },
   "prefix_globalVer": { "message": "Asebter n umaḍal" },
   "prefix_localVer": { "message": "Asebter amezwaru" },
   "prefix_source": { "message": "Aqbalu" },

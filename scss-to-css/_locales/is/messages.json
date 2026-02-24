@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 Adam Lui og meðhöfundar undir MIT-leyfinu" },
+  "pkg_copyright": { "message": "© 2024–2026 Adam Lui og meðhöfundar undir MIT-leyfinu" },
   "prefix_globalVer": { "message": "Heildarútgáfa" },
   "prefix_localVer": { "message": "Staðbundin útgáfa" },
   "prefix_source": { "message": "Heimild" },

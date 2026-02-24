@@ -1,6 +1,5 @@
 {
-  "appName": { "message": "scss-to-css" },
-  "appCopyright": { "message": "© 2024–2026 Адам Луи & MIT лицензиясы боюнча салым" },
+  "pkg_copyright": { "message": "© 2024–2026 Адам Луи & MIT лицензиясы боюнча салым" },
   "prefix_globalVer": { "message": "Глобалдык версия" },
   "prefix_localVer": { "message": "Жергиликтүү версия" },
   "prefix_source": { "message": "Булак" },
