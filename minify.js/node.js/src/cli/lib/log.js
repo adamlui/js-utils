@@ -13,7 +13,7 @@ module.exports = {
     debug(msg) { if (env.modes.debug) console.debug(`\n${colors.bo}DEBUG:`, msg, colors.nc, '\n') },
     dim(msg) { console.log(`${colors.gry}${msg}${colors.nc}`) },
     error(...args) { console.error(`\n${colors.br}ERROR:`, ...args, colors.nc) },
-    errorAndExit(...args) { this.error(...args); this.helpCmdAndDocURL(); process.exit(1) },
+    errorAndExit(...args) { this.error(...args); this.helpDocsCmdsDocsURL(); process.exit(1) },
     ifNotQuiet(msg) { if (!cli.config.quietMode) this.info(msg) },
     info(msg) { console.info(`\n${colors.schemes.default[0]}${msg}${colors.nc}`) },
     break() { console.log() },
@@ -114,11 +114,11 @@ module.exports = {
         }
     },
 
-    helpCmdAndDocURL() {
+    helpDocsCmdsDocsURL() {
         console.info(`\n${
-            cli.msgs.info_moreHelp}, ${cli.msgs.info_type} ${cli.name.split('/')[1]} --help' ${
-                cli.msgs.info_or} ${cli.msgs.info_visit}\n${
-                    colors.bw}${cli.urls.docs}${colors.nc}`
+            cli.msgs.info_moreHelp}, ${cli.msgs.info_type} ${
+                colors.bw}${cli.name.split('/')[1]} --<docs|help>${colors.nc} ${
+                cli.msgs.info_or} ${cli.msgs.info_visit}\n${colors.by}${cli.urls.docs}${colors.nc}`
         )
     },
 

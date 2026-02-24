@@ -39,7 +39,7 @@
         if (!fs.existsSync(scssInputPath)) {
             log.error(`${cli.msgs.error_firstArgNotExist}.\n${inputPath} ${cli.msgs.error_doesNotExist}.`)
             log.success(`${cli.msgs.info_exampleValidCmd}: \n» scss-to-css . output.min.css`)
-            log.helpCmdAndDocURL()
+            log.helpDocsCmdsDocsURL()
             process.exit(1)
         } else inputPath = scssInputPath
     }

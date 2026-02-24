@@ -39,7 +39,7 @@
         if (!fs.existsSync(jsInputPath)) {
             log.error(`${cli.msgs.error_firstArgNotExist}.\n${inputPath} ${cli.msgs.error_doesNotExist}.`)
             log.success(`${cli.msgs.info_exampleValidCmd}: \n» minify-js . output.min.js`)
-            log.helpCmdAndDocURL()
+            log.helpDocsCmdsDocsURL()
             process.exit(1)
         } else inputPath = jsInputPath
     }
