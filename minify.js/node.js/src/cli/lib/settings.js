@@ -54,7 +54,7 @@ module.exports = {
 
         if (!cli.defaultsSet && !arguments.length) { // init all defaults on arg-less load()
             inputCtrlKeys.forEach(key => {
-                const ctrl = this.controls[key] ; if (ctrl.mode) return
+                const ctrl = this.controls[key] ; if (ctrl.mode || ctrl.type == 'legacy') return
                 cli.config[key] ??= ctrl.defaultVal ?? ( ctrl.type == 'param' ? '' : false )
             })
             cli.defaultsSet = true
