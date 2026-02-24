@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "tað hevur ikki longur ávirkan" },
   "warn_hasBeenReplacedBy": { "message": "hann er skiftur fyri" },
   "warn_andWillBeRemoved": { "message": "og hann skal verða tikin av døgum," },
+  "warn_notFound": { "message": "Ikki funnið" },
   "info_configFile": { "message": "Konfigurera fílu" },
   "info_exampleValidConfigFile": { "message": "Dømi góð konfiguratiónsfíla" },
   "info_exampleValidCmd": { "message": "Dømi um gildið boð" },

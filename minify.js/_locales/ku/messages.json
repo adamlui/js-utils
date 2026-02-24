@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "êdî bandorek tune" },
   "warn_hasBeenReplacedBy": { "message": "ji hêla ve hatîye guhertin" },
   "warn_andWillBeRemoved": { "message": "û dê were rakirin" },
+  "warn_notFound": { "message": "Peyda nebû" },
   "info_configFile": { "message": "Pelê mîhengkirinê" },
   "info_exampleValidConfigFile": { "message": "Nimûneya pelê mîhengê ya derbasdar" },
   "info_exampleValidCmd": { "message": "Mînak fermana derbasdar" },

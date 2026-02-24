@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "цаашид ямар ч нөлөөгүй" },
   "warn_hasBeenReplacedBy": { "message": "орлуулсан" },
   "warn_andWillBeRemoved": { "message": "болон устгагдах болно" },
+  "warn_notFound": { "message": "Олдсонгүй" },
   "info_configFile": { "message": "Тохируулах файл" },
   "info_exampleValidConfigFile": { "message": "Хүчинтэй тохиргооны файлын жишээ" },
   "info_exampleValidCmd": { "message": "Хүчинтэй командын жишээ" },

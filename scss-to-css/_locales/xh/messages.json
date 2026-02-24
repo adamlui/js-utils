@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "ayisachaphazeli nantoni na" },
   "warn_hasBeenReplacedBy": { "message": "ithathelwe indawo yi-" },
   "warn_andWillBeRemoved": { "message": "kwaye iza kususwa" },
+  "warn_notFound": { "message": "Ayifumanekanga" },
   "info_configFile": { "message": "Misela ifayile" },
   "info_exampleValidConfigFile": { "message": "Umzekelo wefayile echanileyo yokuqwalasela" },
   "info_exampleValidCmd": { "message": "Umzekelo womyalelo osebenzayo" },

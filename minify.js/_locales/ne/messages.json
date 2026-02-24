@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "अब कुनै असर पर्दैन" },
   "warn_hasBeenReplacedBy": { "message": "द्वारा प्रतिस्थापित गरिएको छ" },
   "warn_andWillBeRemoved": { "message": "र हटाइनेछ" },
+  "warn_notFound": { "message": "फेला परेन" },
   "info_configFile": { "message": "कन्फिग फाइल" },
   "info_exampleValidConfigFile": { "message": "उदाहरण मान्य कन्फिग फाइल" },
   "info_exampleValidCmd": { "message": "उदाहरण मान्य आदेश" },

@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "نور هیڅ اغیزه نه لري" },
   "warn_hasBeenReplacedBy": { "message": "لخوا ځای په ځای شوی" },
   "warn_andWillBeRemoved": { "message": "او به لرې کړای شي" },
+  "warn_notFound": { "message": "ونه موندل شو" },
   "info_configFile": { "message": "دوتنه سازول" },
   "info_exampleValidConfigFile": { "message": "د اعتبار وړ ترتیب فایل مثال" },
   "info_exampleValidCmd": { "message": "د اعتبار وړ کمانډ مثال" },

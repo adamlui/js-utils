@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "tidak lagi memberi kesan" },
   "warn_hasBeenReplacedBy": { "message": "telah digantikan oleh" },
   "warn_andWillBeRemoved": { "message": "dan akan dibuang" },
+  "warn_notFound": { "message": "Tidak ditemui" },
   "info_configFile": { "message": "Fail konfigurasi" },
   "info_exampleValidConfigFile": { "message": "Contoh fail konfigurasi yang sah" },
   "info_exampleValidCmd": { "message": "Contoh perintah yang sah" },

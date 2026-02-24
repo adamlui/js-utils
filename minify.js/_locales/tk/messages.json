@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "indi hiç hili netije bermeýär" },
   "warn_hasBeenReplacedBy": { "message": "ähli zat üýtgedildi" },
   "warn_andWillBeRemoved": { "message": "we çykarylar" },
+  "warn_notFound": { "message": "Alymady" },
   "info_configFile": { "message": "Faýly Gaýd Et" },
   "info_exampleValidConfigFile": { "message": "Mysal geçerli konfigurasiýa faýly" },
   "info_exampleValidCmd": { "message": "Mysal üçin geçerli tabşyryk" },

@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "no Mas Efecto" },
   "warn_hasBeenReplacedBy": { "message": "a keda remplasá pa" },
   "warn_andWillBeRemoved": { "message": "y lo despierta" },
+  "warn_notFound": { "message": "No Found" },
   "info_configFile": { "message": "Archivo confidencial" },
   "info_exampleValidConfigFile": { "message": "Documente similare cu Config File" },
   "info_exampleValidCmd": { "message": "Ehempel di comando valido" },

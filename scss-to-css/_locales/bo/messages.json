@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "ད་ལྟའི་བར་ལ་དེའི་གྲུབ་འབྲས་གང་ཡང་མེད །" },
   "warn_hasBeenReplacedBy": { "message": "ཁོ་ཡི་ཚབ་ཏུ་" },
   "warn_andWillBeRemoved": { "message": "ཕྱིར་འཐེན་བྱེད་པར་འགྱུར །" },
+  "warn_notFound": { "message": "རྙེད་མ་བྱུང་།" },
   "info_configFile": { "message": "སྒྲིག་འཇུག་བྱས་ཚད །" },
   "info_exampleValidConfigFile": { "message": "དཔེར་ན ： སྒྲིག་འཇུག་བྱས་ཚད ། ཐེངས་བཅུ་གཉིས་པ །" },
   "info_exampleValidCmd": { "message": "དཔེར་ན ། བཀའ་སློབ །" },

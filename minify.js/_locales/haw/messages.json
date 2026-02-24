@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "ʻaʻohe hopena hou" },
   "warn_hasBeenReplacedBy": { "message": "ua pani ʻia e" },
   "warn_andWillBeRemoved": { "message": "a e wehe ʻia aku" },
+  "warn_notFound": { "message": "Loaʻa ʻole" },
   "info_configFile": { "message": "Waihona hoʻonohonoho" },
   "info_exampleValidConfigFile": { "message": "Laʻana o ka faila hoʻonohonoho kūpono" },
   "info_exampleValidCmd": { "message": "Laʻana kauoha kūpono" },

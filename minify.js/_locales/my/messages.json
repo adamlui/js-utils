@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "အကျိုးသက်ရောက်မှုမရှိတော့ပါ" },
   "warn_hasBeenReplacedBy": { "message": "အစားထိုးထားသည်" },
   "warn_andWillBeRemoved": { "message": "ဖယ်ရှားခြင်းခံရမည် ။" },
+  "warn_notFound": { "message": "မတွေ့ပါ" },
   "info_configFile": { "message": "ဖိုင်ကိုစီစဉ်ပါ" },
   "info_exampleValidConfigFile": { "message": "ဥပမာ မှန်ကန်သော config ဖိုင်" },
   "info_exampleValidCmd": { "message": "နမူနာ မှန်ကန်သော ညွှန်ကြားချက်" },

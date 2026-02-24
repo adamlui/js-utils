@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "ਹੁਣ ਕੋਈ ਪ੍ਰਭਾਵ ਨਹੀਂ ਹੈ" },
   "warn_hasBeenReplacedBy": { "message": "ਇਸ ਨਾਲ ਤਬਦੀਲ ਕੀਤਾ ਗਿਆ ਹੈ" },
   "warn_andWillBeRemoved": { "message": "ਅਤੇ ਹਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ" },
+  "warn_notFound": { "message": "ਨਹੀਂ ਲੱਭਿਆ" },
   "info_configFile": { "message": "ਫਾਇਲ ਸੰਰਚਨਾ" },
   "info_exampleValidConfigFile": { "message": "ਉਦਾਹਰਨ ਵੈਧ ਸੰਰਚਨਾ ਫਾਇਲ" },
   "info_exampleValidCmd": { "message": "ਉਦਾਹਰਨ ਵੈਧ ਕਮਾਂਡ" },

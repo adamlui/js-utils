@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "nid yw bellach yn cael unrhyw effaith" },
   "warn_hasBeenReplacedBy": { "message": "wedi'i ddisodli gan" },
   "warn_andWillBeRemoved": { "message": "a bydd yn cael ei dorri i ffwrdd," },
+  "warn_notFound": { "message": "Heb ei ganfod" },
   "info_configFile": { "message": "Ffeil ffurfweddu" },
   "info_exampleValidConfigFile": { "message": "Enghraifft o ffeil cyfluniad dilys" },
   "info_exampleValidCmd": { "message": "Gorchymyn dilys enghreifftiol" },

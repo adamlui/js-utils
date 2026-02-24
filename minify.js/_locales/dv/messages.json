@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "މިހާރު އެއްވެސް އަސަރެއް ނުކުރެއެވެ" },
   "warn_hasBeenReplacedBy": { "message": "ގެ ބަދަލުގައި…" },
   "warn_andWillBeRemoved": { "message": "އަދި ނައްތާލެވޭނެއެވެ" },
+  "warn_notFound": { "message": "ނުފެނޭ" },
   "info_configFile": { "message": "ކޮންފިގް ފައިލް" },
   "info_exampleValidConfigFile": { "message": "މިސާލު ސައްހަ ކޮންފިގް ފައިލް" },
   "info_exampleValidCmd": { "message": "މިސާލު ސައްހަ ކޮމާންޑެއް" },

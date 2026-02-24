@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "δεν έχει πλέον καμία επίδραση" },
   "warn_hasBeenReplacedBy": { "message": "έχει αντικατασταθεί από" },
   "warn_andWillBeRemoved": { "message": "και θα αφαιρεθούν" },
+  "warn_notFound": { "message": "Δεν βρέθηκε" },
   "info_configFile": { "message": "Αρχείο διαμόρφωσης" },
   "info_exampleValidConfigFile": { "message": "Παράδειγμα έγκυρου αρχείου διαμόρφωσης" },
   "info_exampleValidCmd": { "message": "Παράδειγμα έγκυρης εντολής" },

@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "ei enää vaikuta" },
   "warn_hasBeenReplacedBy": { "message": "on korvattu seuraavalla:" },
   "warn_andWillBeRemoved": { "message": "ja poistetaan" },
+  "warn_notFound": { "message": "Ei löytynyt" },
   "info_configFile": { "message": "Konfigurointitiedosto" },
   "info_exampleValidConfigFile": { "message": "Esimerkki kelvollisesta asetustiedostosta" },
   "info_exampleValidCmd": { "message": "Esimerkki kelvollisesta komennosta" },

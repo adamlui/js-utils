@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "i no gat wanpela samting moa" },
   "warn_hasBeenReplacedBy": { "message": "em inap senisim" },
   "warn_andWillBeRemoved": { "message": "na bai ol i rausim ol dispela samting" },
+  "warn_notFound": { "message": "No painim" },
   "info_configFile": { "message": "Konfigim fail" },
   "info_exampleValidConfigFile": { "message": "Wanpela gutpela piksa bilong dispela fail" },
   "info_exampleValidCmd": { "message": "Wanpela gutpela eksampel" },

@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "m' għad m' għandu l-ebda effett" },
   "warn_hasBeenReplacedBy": { "message": "ġie sostitwit bi" },
   "warn_andWillBeRemoved": { "message": "u se jitneħħa" },
+  "warn_notFound": { "message": "Ma nstabx" },
   "info_configFile": { "message": "Konfigurazzjoni tal-fajl" },
   "info_exampleValidConfigFile": { "message": "Eżempju ta' fajl validu tal-konfig" },
   "info_exampleValidCmd": { "message": "Eżempju ta' kmand validu" },

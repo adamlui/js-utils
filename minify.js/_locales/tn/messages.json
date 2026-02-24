@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "ga e tlhole e na le diphelelo dipe" },
   "warn_hasBeenReplacedBy": { "message": "e emisitswe ke" },
   "warn_andWillBeRemoved": { "message": "mme e tlile go tlosiwa" },
+  "warn_notFound": { "message": "Ga e a bonwa" },
   "info_configFile": { "message": "Rulaganya faele" },
   "info_exampleValidConfigFile": { "message": "Sekao sa faele e e amogelesegang ya" },
   "info_exampleValidCmd": { "message": "Sekao sa taelo e e amogelesegang" },

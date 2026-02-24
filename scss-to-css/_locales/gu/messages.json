@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "હવે કોઈ અસર થતી નથી" },
   "warn_hasBeenReplacedBy": { "message": "દ્વારા બદલવામાં આવી છે" },
   "warn_andWillBeRemoved": { "message": "અને દૂર કરવામાં આવશે" },
+  "warn_notFound": { "message": "મળ્યું નથી" },
   "info_configFile": { "message": "રૂપરેખાંકન ફાઇલ" },
   "info_exampleValidConfigFile": { "message": "ઉદાહરણ માન્ય રૂપરેખાંકન ફાઇલ" },
   "info_exampleValidCmd": { "message": "ઉદાહરણ માન્ય આદેશ" },

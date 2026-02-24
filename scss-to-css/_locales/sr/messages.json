@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "više nema efekta" },
   "warn_hasBeenReplacedBy": { "message": "je zamenjen sa" },
   "warn_andWillBeRemoved": { "message": "i biće uklonjeno" },
+  "warn_notFound": { "message": "Nije pronađeno" },
   "info_configFile": { "message": "Konfiguraciona datoteka" },
   "info_exampleValidConfigFile": { "message": "Primer važeće konfiguracione datoteke" },
   "info_exampleValidCmd": { "message": "Primer važeće komande" },

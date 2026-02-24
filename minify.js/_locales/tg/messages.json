@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "дигар таъсир надорад" },
   "warn_hasBeenReplacedBy": { "message": "иваз карда шуд бо" },
   "warn_andWillBeRemoved": { "message": "ва аз миён бардошта шавад" },
+  "warn_notFound": { "message": "Ёфт нашуд" },
   "info_configFile": { "message": "Танзимоти файл" },
   "info_exampleValidConfigFile": { "message": "Намунаи файли конфигуратсияи дуруст" },
   "info_exampleValidCmd": { "message": "Фармони дурусти мисол" },

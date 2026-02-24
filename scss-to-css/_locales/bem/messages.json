@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "no Longer Impact ukulele" },
   "warn_hasBeenReplacedBy": { "message": "yalili Yalila" },
   "warn_andWillBeRemoved": { "message": "kabili bakafumishiwapo" },
+  "warn_notFound": { "message": "Tababwenepo" },
   "info_configFile": { "message": "Config file" },
   "info_exampleValidConfigFile": { "message": "Ifilangililo fya fipe fya fipe fya fipe" },
   "info_exampleValidCmd": { "message": "Icilangililo ca Mafunde Ayacindama" },

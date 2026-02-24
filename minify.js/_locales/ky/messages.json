@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "мындан ары эч кандай таасирин тийгизбейт" },
   "warn_hasBeenReplacedBy": { "message": "менен алмаштырылды" },
   "warn_andWillBeRemoved": { "message": "жана алынып салынат" },
+  "warn_notFound": { "message": "Табылган жок" },
   "info_configFile": { "message": "Файлды конфигурациялоо" },
   "info_exampleValidConfigFile": { "message": "Үлгү жарактуу конфигурация файлы" },
   "info_exampleValidCmd": { "message": "Үлгү жарактуу буйрук" },

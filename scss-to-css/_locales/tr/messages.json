@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "artık hiçbir etkisi yok" },
   "warn_hasBeenReplacedBy": { "message": "şununla değiştirildi:" },
   "warn_andWillBeRemoved": { "message": "ve kaldırılacak" },
+  "warn_notFound": { "message": "Bulunamadı" },
   "info_configFile": { "message": "Yapılandırma dosyası" },
   "info_exampleValidConfigFile": { "message": "Örnek geçerli yapılandırma dosyası" },
   "info_exampleValidCmd": { "message": "Örnek geçerli komut" },

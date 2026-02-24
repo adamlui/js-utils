@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "no effect yet" },
   "warn_hasBeenReplacedBy": { "message": "yettwabeddel s" },
   "warn_andWillBeRemoved": { "message": "ad yettwakkes" },
+  "warn_notFound": { "message": "Ulac-it" },
   "info_configFile": { "message": "Snifel afaylu" },
   "info_exampleValidConfigFile": { "message": "Amedya n ufaylu yettwaxedmen" },
   "info_exampleValidCmd": { "message": "Amedya n usaḍuf iṣeḥḥan" },

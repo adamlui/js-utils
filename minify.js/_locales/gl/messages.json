@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "xa non ten ningún efecto" },
   "warn_hasBeenReplacedBy": { "message": "foi substituído por" },
   "warn_andWillBeRemoved": { "message": "e será eliminado" },
+  "warn_notFound": { "message": "Non atopado" },
   "info_configFile": { "message": "Ficheiro de configuración" },
   "info_exampleValidConfigFile": { "message": "Exemplo de ficheiro de configuración válido" },
   "info_exampleValidCmd": { "message": "Comando válido de exemplo" },

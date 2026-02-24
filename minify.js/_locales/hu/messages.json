@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "már nincs hatása" },
   "warn_hasBeenReplacedBy": { "message": "helyébe a következő szöveg lépett:" },
   "warn_andWillBeRemoved": { "message": "és el lesz távolítva" },
+  "warn_notFound": { "message": "Nem található" },
   "info_configFile": { "message": "Konfigurációs fájl" },
   "info_exampleValidConfigFile": { "message": "Példa érvényes konfigurációs fájlra" },
   "info_exampleValidCmd": { "message": "Példa érvényes parancsra" },

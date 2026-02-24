@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "pa gen okenn efè ankò/pa gen okenn efè ankò/n" },
   "warn_hasBeenReplacedBy": { "message": "te ranplase pa/a été remplacé" },
   "warn_andWillBeRemoved": { "message": "epi yo pral retire/et sera supprimé" },
+  "warn_notFound": { "message": "Pa jwenn" },
   "info_configFile": { "message": "Konfigire dosye a" },
   "info_exampleValidConfigFile": { "message": "Egzanp dosye konfigirasyon ki valab" },
   "info_exampleValidCmd": { "message": "Egzanp lòd ki valab" },

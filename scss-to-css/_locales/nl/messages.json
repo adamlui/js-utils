@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "heeft geen effect meer" },
   "warn_hasBeenReplacedBy": { "message": "is vervangen door" },
   "warn_andWillBeRemoved": { "message": "en zal worden verwijderd" },
+  "warn_notFound": { "message": "Niet gevonden" },
   "info_configFile": { "message": "Configuratiebestand" },
   "info_exampleValidConfigFile": { "message": "Voorbeeld geldig configuratiebestand" },
   "info_exampleValidCmd": { "message": "Voorbeeld geldig commando" },

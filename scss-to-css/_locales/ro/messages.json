@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "nu mai are niciun efect" },
   "warn_hasBeenReplacedBy": { "message": "a fost înlocuită cu" },
   "warn_andWillBeRemoved": { "message": "și vor fi eliminate" },
+  "warn_notFound": { "message": "Nu s-a găsit" },
   "info_configFile": { "message": "Fișier de configurare" },
   "info_exampleValidConfigFile": { "message": "Exemplu de fișier de configurare valid" },
   "info_exampleValidCmd": { "message": "Exemplu de comandă validă" },

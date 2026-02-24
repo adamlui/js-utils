@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "دیگر هیچ اثری ندارد" },
   "warn_hasBeenReplacedBy": { "message": "جایگزین شده است" },
   "warn_andWillBeRemoved": { "message": "و حذف خواهد شد" },
+  "warn_notFound": { "message": "یافت نشد" },
   "info_configFile": { "message": "فایل پیکربندی" },
   "info_exampleValidConfigFile": { "message": "نمونه فایل پیکربندی معتبر" },
   "info_exampleValidCmd": { "message": "مثال دستور معتبر" },

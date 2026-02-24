@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "palibe zotsatira" },
   "warn_hasBeenReplacedBy": { "message": "wakhala m 'malo ndi" },
   "warn_andWillBeRemoved": { "message": "ndipo adzachotsedwa" },
+  "warn_notFound": { "message": "Sanapezeke" },
   "info_configFile": { "message": "Sinthani fayilo" },
   "info_exampleValidConfigFile": { "message": "Chitsanzo chovomerezeka cha fayilo ya config" },
   "info_exampleValidCmd": { "message": "Chitsanzo cha lamulo lovomerezeka" },

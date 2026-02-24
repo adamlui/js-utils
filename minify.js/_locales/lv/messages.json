@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "vairs nav nekādas ietekmes" },
   "warn_hasBeenReplacedBy": { "message": "ir aizstāts ar" },
   "warn_andWillBeRemoved": { "message": "un tiks noņemts" },
+  "warn_notFound": { "message": "Nav atrasts" },
   "info_configFile": { "message": "Konfigurācijas fails" },
   "info_exampleValidConfigFile": { "message": "Derīga konfigurācijas faila piemērs" },
   "info_exampleValidCmd": { "message": "Piemērs: derīga komanda" },

@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "ಇನ್ನು ಮುಂದೆ ಯಾವುದೇ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ" },
   "warn_hasBeenReplacedBy": { "message": "ಇದನ್ನು ಬದಲಾಯಿಸಲಾಗಿದೆ" },
   "warn_andWillBeRemoved": { "message": "ಮತ್ತು ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ" },
+  "warn_notFound": { "message": "ಕಂಡುಬಂದಿಲ್ಲ" },
   "info_configFile": { "message": "ಕಾನ್ಫಿಗರ್ ಫೈಲ್" },
   "info_exampleValidConfigFile": { "message": "ಉದಾಹರಣೆ ಮಾನ್ಯ ಕಾನ್ಫಿಗರೇಶನ್ ಫೈಲ್" },
   "info_exampleValidCmd": { "message": "ಉದಾಹರಣೆ ಮಾನ್ಯ ಆಜ್ಞೆ" },

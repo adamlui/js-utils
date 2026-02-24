@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "веќе нема ефект" },
   "warn_hasBeenReplacedBy": { "message": "е заменет со" },
   "warn_andWillBeRemoved": { "message": "и ќе бидат отстранети" },
+  "warn_notFound": { "message": "Не е пронајдено" },
   "info_configFile": { "message": "Конфигурирај датотека" },
   "info_exampleValidConfigFile": { "message": "Пример важечка конфигурациска датотека" },
   "info_exampleValidCmd": { "message": "Пример за важечка команда" },

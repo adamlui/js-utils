@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "இனி எந்த விளைவையும் ஏற்படுத்தாது" },
   "warn_hasBeenReplacedBy": { "message": "மாற்றப்பட்டது" },
   "warn_andWillBeRemoved": { "message": "மற்றும் அகற்றப்படும்" },
+  "warn_notFound": { "message": "கிடைக்கவில்லை" },
   "info_configFile": { "message": "கட்டமைப்பு கோப்பு" },
   "info_exampleValidConfigFile": { "message": "எடுத்துக்காட்டு செல்லுபடியாகும் உள்ளமைவு கோப்பு" },
   "info_exampleValidCmd": { "message": "எடுத்துக்காட்டு செல்லுபடியாகும் கட்டளை" },

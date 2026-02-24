@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "nta nkurikizi igifite" },
   "warn_hasBeenReplacedBy": { "message": "yasimbuwe na" },
   "warn_andWillBeRemoved": { "message": "kandi bizakurwaho" },
+  "warn_notFound": { "message": "Ntibyabonetse" },
   "info_configFile": { "message": "IDOSIYE" },
   "info_exampleValidConfigFile": { "message": "Urugero Byemewe IDOSIYE" },
   "info_exampleValidCmd": { "message": "Urugero Byemewe Komandi" },

@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "აღარ აქვს რაიმე ეფექტი" },
   "warn_hasBeenReplacedBy": { "message": "შეიცვალა" },
   "warn_andWillBeRemoved": { "message": "და წაიშლება" },
+  "warn_notFound": { "message": "Ვერ მოიძებნა" },
   "info_configFile": { "message": "Კონფიგურაციის ფაილი" },
   "info_exampleValidConfigFile": { "message": "ვალიდური კონფიგურაციის ფაილის მაგალითი" },
   "info_exampleValidCmd": { "message": "Მოქმედი ბრძანების მაგალითი" },

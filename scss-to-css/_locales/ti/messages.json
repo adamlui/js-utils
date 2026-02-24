@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "ሕጂ ዝኾነ ሳዕቤን የብሉን" },
   "warn_hasBeenReplacedBy": { "message": "ተተኪኡ" },
   "warn_andWillBeRemoved": { "message": "ክወጽእ እዩ" },
+  "warn_notFound": { "message": "ኣይተረኽበን ።" },
   "info_configFile": { "message": "ፋይል ኣማዕብል" },
   "info_exampleValidConfigFile": { "message": "ኣብነት እሙን ናይ ውጥን ፋይል" },
   "info_exampleValidCmd": { "message": "ኣብነት እሙን ትእዛዝ" },

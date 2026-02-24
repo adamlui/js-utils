@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "không còn hiệu lực nữa" },
   "warn_hasBeenReplacedBy": { "message": "đã được thay thế bởi" },
   "warn_andWillBeRemoved": { "message": "và sẽ bị xóa" },
+  "warn_notFound": { "message": "Không tìm thấy" },
   "info_configFile": { "message": "Tệp cấu hình" },
   "info_exampleValidConfigFile": { "message": "Ví dụ về tệp cấu hình hợp lệ" },
   "info_exampleValidCmd": { "message": "Ví dụ lệnh hợp lệ" },

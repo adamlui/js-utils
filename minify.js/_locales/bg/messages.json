@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "вече няма ефект" },
   "warn_hasBeenReplacedBy": { "message": "е заменен от" },
   "warn_andWillBeRemoved": { "message": "и ще бъдат премахнати" },
+  "warn_notFound": { "message": "Не е намерено" },
   "info_configFile": { "message": "Конфигуриране на файл" },
   "info_exampleValidConfigFile": { "message": "Примерен валиден конфигурационен файл" },
   "info_exampleValidCmd": { "message": "Примерна валидна команда" },

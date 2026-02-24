@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "больше не имеет никакого эффекта" },
   "warn_hasBeenReplacedBy": { "message": "был заменен на" },
   "warn_andWillBeRemoved": { "message": "и будет удален" },
+  "warn_notFound": { "message": "Не найдено" },
   "info_configFile": { "message": "Конфигурационный файл" },
   "info_exampleValidConfigFile": { "message": "Пример допустимого файла конфигурации" },
   "info_exampleValidCmd": { "message": "Пример допустимой команды" },

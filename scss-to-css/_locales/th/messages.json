@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "ไม่มีผลใดๆอีกต่อไป" },
   "warn_hasBeenReplacedBy": { "message": "ถูกแทนที่โดย" },
   "warn_andWillBeRemoved": { "message": "และจะถูกลบออก" },
+  "warn_notFound": { "message": "ไม่พบ" },
   "info_configFile": { "message": "ไฟล์การกำหนดค่า" },
   "info_exampleValidConfigFile": { "message": "ตัวอย่างไฟล์การกำหนดค่าที่ถูกต้อง" },
   "info_exampleValidCmd": { "message": "ตัวอย่างคำสั่งที่ถูกต้อง" },

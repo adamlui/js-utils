@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "ei avalda enam mõju" },
   "warn_hasBeenReplacedBy": { "message": "on asendatud järgmisega:" },
   "warn_andWillBeRemoved": { "message": "ja eemaldatakse" },
+  "warn_notFound": { "message": "Ei leitud" },
   "info_configFile": { "message": "Konfiguratsioonifail" },
   "info_exampleValidConfigFile": { "message": "Kehtiva konfiguratsioonifaili näide" },
   "info_exampleValidCmd": { "message": "Kehtiva käsu näide" },

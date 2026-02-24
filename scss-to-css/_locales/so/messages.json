@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "mar dambe ma laha wax saameyn ah" },
   "warn_hasBeenReplacedBy": { "message": "waxaa lagu bedelay" },
   "warn_andWillBeRemoved": { "message": "waana laga saarayaa." },
+  "warn_notFound": { "message": "Lama helin" },
   "info_configFile": { "message": "Qalabaynta faylka" },
   "info_exampleValidConfigFile": { "message": "Tusaalaha faylka qaabeynta ansax ah" },
   "info_exampleValidCmd": { "message": "Tusaalaha amarka ansax ah" },

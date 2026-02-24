@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "бұдан былай әсер етпейді" },
   "warn_hasBeenReplacedBy": { "message": "ауыстырылды" },
   "warn_andWillBeRemoved": { "message": "және жойылады" },
+  "warn_notFound": { "message": "Табылған жоқ" },
   "info_configFile": { "message": "Файлды конфигурациялау" },
   "info_exampleValidConfigFile": { "message": "Мысал жарамды конфигурация файлы" },
   "info_exampleValidCmd": { "message": "Мысалдың жарамды пәрмені" },

@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "ja no té cap efecte" },
   "warn_hasBeenReplacedBy": { "message": "ha estat reemplaçat per" },
   "warn_andWillBeRemoved": { "message": "i s'eliminarà" },
+  "warn_notFound": { "message": "No s'ha trobat" },
   "info_configFile": { "message": "Fitxer de configuració" },
   "info_exampleValidConfigFile": { "message": "Exemple de fitxer de configuració vàlid" },
   "info_exampleValidCmd": { "message": "Exemple d'ordre vàlida" },

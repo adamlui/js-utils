@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "ayisekho imiphumela" },
   "warn_hasBeenReplacedBy": { "message": "ithathelwe indawo yi-" },
   "warn_andWillBeRemoved": { "message": "futhi izokhishwa" },
+  "warn_notFound": { "message": "Akutholakali" },
   "info_configFile": { "message": "Lungiselela ifayela" },
   "info_exampleValidConfigFile": { "message": "Isibonelo sefayela elivumelekile lokumisa" },
   "info_exampleValidCmd": { "message": "Isibonelo somyalo ovumelekile" },

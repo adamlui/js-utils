@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "artıq heç bir təsiri yoxdur" },
   "warn_hasBeenReplacedBy": { "message": "ilə əvəz edilmişdir:" },
   "warn_andWillBeRemoved": { "message": "və silinəcək" },
+  "warn_notFound": { "message": "Tapılmadı" },
   "info_configFile": { "message": "Faylı konfiqur" },
   "info_exampleValidConfigFile": { "message": "Nümunə üçün etibarlı konfiqurasiya faylı" },
   "info_exampleValidCmd": { "message": "Nümunə üçün etibarlı əmr" },

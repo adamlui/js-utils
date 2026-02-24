@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "כבר אין לו כל השפעה" },
   "warn_hasBeenReplacedBy": { "message": "הוחלף על ידי" },
   "warn_andWillBeRemoved": { "message": "ויוסרו" },
+  "warn_notFound": { "message": "לא נמצא" },
   "info_configFile": { "message": "קובץ תצורה" },
   "info_exampleValidConfigFile": { "message": "דוגמה לקובץ תצורה חוקי" },
   "info_exampleValidCmd": { "message": "דוגמה לפקודה חוקית" },

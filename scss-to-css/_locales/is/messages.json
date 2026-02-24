@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "hefur ekki lengur nein áhrif" },
   "warn_hasBeenReplacedBy": { "message": "hefur verið skipt út fyrir" },
   "warn_andWillBeRemoved": { "message": "og verður fjarlægt" },
+  "warn_notFound": { "message": "Fannst ekki" },
   "info_configFile": { "message": "Stillingaskrá" },
   "info_exampleValidConfigFile": { "message": "Dæmi um gilda uppsetningarskrá" },
   "info_exampleValidCmd": { "message": "Dæmi um gilda skipun" },

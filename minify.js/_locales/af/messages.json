@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "geen effek meer" },
   "warn_hasBeenReplacedBy": { "message": "se substituieste by" },
   "warn_andWillBeRemoved": { "message": "en sal verwyder word" },
+  "warn_notFound": { "message": "Nie gevind nie" },
   "info_configFile": { "message": "Konfigureer lêer" },
   "info_exampleValidConfigFile": { "message": "Voorbeeld geldige konfigurasielêer" },
   "info_exampleValidCmd": { "message": "Voorbeeld geldige opdrag" },

@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "chan eil buaidh sam bith aige tuilleadh" },
   "warn_hasBeenReplacedBy": { "message": "chaidh a h - ath - nuadhachadh" },
   "warn_andWillBeRemoved": { "message": "agus bithidh e air a thilgeadh air falbh" },
+  "warn_notFound": { "message": "Cha deach a lorg" },
   "info_configFile": { "message": "Faidhle rèiteachaidh" },
   "info_exampleValidConfigFile": { "message": "Faidhle rèiteachaidh dligheach mar eisimpleir" },
   "info_exampleValidCmd": { "message": "Mar eisimpleir àithne dhligheach" },

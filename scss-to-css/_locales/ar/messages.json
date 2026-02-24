@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "لم يعد له أي تأثير" },
   "warn_hasBeenReplacedBy": { "message": "تم استبداله بـ" },
   "warn_andWillBeRemoved": { "message": "وستتم إزالته" },
+  "warn_notFound": { "message": "غير موجود" },
   "info_configFile": { "message": "تكوين الملف" },
   "info_exampleValidConfigFile": { "message": "مثال على ملف تكوين صالح" },
   "info_exampleValidCmd": { "message": "مثال على أمر صالح" },

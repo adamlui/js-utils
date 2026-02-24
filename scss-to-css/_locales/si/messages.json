@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "තව දුරටත් කිසිදු බලපෑමක් නැත" },
   "warn_hasBeenReplacedBy": { "message": "විසින් ප් ‍ රතිස්ථාපනය කර ඇත" },
   "warn_andWillBeRemoved": { "message": "එවිට එය ඉවත් කරනු ලැබේ." },
+  "warn_notFound": { "message": "හමු නොවීය" },
   "info_configFile": { "message": "ගොනුව සකසන්න" },
   "info_exampleValidConfigFile": { "message": "නිදසුන වලංගු වින් ‍ යාස ගොනුව" },
   "info_exampleValidCmd": { "message": "නිදසුන වලංගු විධානය" },

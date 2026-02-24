@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "ikke længere har nogen effekt" },
   "warn_hasBeenReplacedBy": { "message": "er blevet erstattet af" },
   "warn_andWillBeRemoved": { "message": "og vil blive fjernet" },
+  "warn_notFound": { "message": "Ikke fundet" },
   "info_configFile": { "message": "Konfigurationsfil" },
   "info_exampleValidConfigFile": { "message": "Eksempel på gyldig konfigurationsfil" },
   "info_exampleValidCmd": { "message": "Eksempel på gyldig kommando" },

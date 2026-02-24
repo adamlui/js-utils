@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "もはや何の効果もない" },
   "warn_hasBeenReplacedBy": { "message": "に置き換えられました" },
   "warn_andWillBeRemoved": { "message": "削除されます" },
+  "warn_notFound": { "message": "見つかりません" },
   "info_configFile": { "message": "構成ファイル" },
   "info_exampleValidConfigFile": { "message": "有効な設定ファイルの例" },
   "info_exampleValidCmd": { "message": "有効なコマンドの例" },

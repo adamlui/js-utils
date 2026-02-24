@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "більше не має ніякого ефекту" },
   "warn_hasBeenReplacedBy": { "message": "було замінено на" },
   "warn_andWillBeRemoved": { "message": "і буде видалено" },
+  "warn_notFound": { "message": "Не знайдено" },
   "info_configFile": { "message": "Файл конфігурації" },
   "info_exampleValidConfigFile": { "message": "Приклад дійсного файлу конфігурації" },
   "info_exampleValidCmd": { "message": "Приклад дійсної команди" },

@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "האט מער נישט קיין שום ווירקונג" },
   "warn_hasBeenReplacedBy": { "message": "איז געוואָרן ערזעצט דורך" },
   "warn_andWillBeRemoved": { "message": "און וועט ווערן אַוועקגענומען" },
+  "warn_notFound": { "message": "נישט געפֿונען" },
   "info_configFile": { "message": "קאָנפיג טעקע" },
   "info_exampleValidConfigFile": { "message": "בייַשפּיל גילטיק קאָנפיג טעקע" },
   "info_exampleValidCmd": { "message": "בייַשפּיל גילטיק באַפֿעל" },

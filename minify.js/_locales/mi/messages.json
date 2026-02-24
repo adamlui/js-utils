@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "kaore ano kia whai hua" },
   "warn_hasBeenReplacedBy": { "message": "kua whakakapihia e" },
   "warn_andWillBeRemoved": { "message": "a ka tangohia atu" },
+  "warn_notFound": { "message": "Kaore i kitea" },
   "info_configFile": { "message": "Kōnae whirihora" },
   "info_exampleValidConfigFile": { "message": "Tauira kōnae config whaimana" },
   "info_exampleValidCmd": { "message": "Tauira whakahau whaimana" },

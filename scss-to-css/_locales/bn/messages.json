@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "এখন আর কোনো প্রভাব নেই" },
   "warn_hasBeenReplacedBy": { "message": "দ্বারা প্রতিস্থাপিত হয়েছে" },
   "warn_andWillBeRemoved": { "message": "এবং সরানো হবে" },
+  "warn_notFound": { "message": "পাওয়া যায়নি" },
   "info_configFile": { "message": "ফাইল কনফিগার করুন" },
   "info_exampleValidConfigFile": { "message": "উদাহরণ বৈধ কনফিগ ফাইল" },
   "info_exampleValidCmd": { "message": "উদাহরণ বৈধ কমান্ড" },

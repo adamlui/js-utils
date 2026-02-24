@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "ఇకపై ఎటువంటి ప్రభావం ఉండదు" },
   "warn_hasBeenReplacedBy": { "message": "ద్వారా భర్తీ చేయబడింది" },
   "warn_andWillBeRemoved": { "message": "మరియు తీసివేయబడుతుంది" },
+  "warn_notFound": { "message": "దొరకలేదు" },
   "info_configFile": { "message": "ఆకృతీకరణ ఫైల్" },
   "info_exampleValidConfigFile": { "message": "ఉదాహరణ చెల్లుబాటు అయ్యే కాన్ఫిగరేషన్ ఫైల్" },
   "info_exampleValidCmd": { "message": "ఉదాహరణ చెల్లుబాటు అయ్యే ఆదేశం" },

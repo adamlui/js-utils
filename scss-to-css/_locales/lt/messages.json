@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "nebeturi jokio poveikio" },
   "warn_hasBeenReplacedBy": { "message": "buvo pakeistas" },
   "warn_andWillBeRemoved": { "message": "ir bus pašalintas" },
+  "warn_notFound": { "message": "Nerasta" },
   "info_configFile": { "message": "Konfigūracijos failas" },
   "info_exampleValidConfigFile": { "message": "VALID konfigūracijos failo pavyzdys" },
   "info_exampleValidCmd": { "message": "VALID komandos pavyzdys" },

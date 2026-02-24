@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "jada ez du inolako eraginik" },
   "warn_hasBeenReplacedBy": { "message": "ordezkatu egin da" },
   "warn_andWillBeRemoved": { "message": "eta kendu egingo da" },
+  "warn_notFound": { "message": "Ez da aurkitu" },
   "info_configFile": { "message": "Konfigurazio fitxategia" },
   "info_exampleValidConfigFile": { "message": "Konfigurazio fitxategi baliodunaren adibidea" },
   "info_exampleValidCmd": { "message": "Baliozko komandoaren adibidea" },

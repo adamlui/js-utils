@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "больш не мае эфекту" },
   "warn_hasBeenReplacedBy": { "message": "быў заменены" },
   "warn_andWillBeRemoved": { "message": "і будзе выдалены" },
+  "warn_notFound": { "message": "Не знойдзена" },
   "info_configFile": { "message": "Файл канфігурацыі" },
   "info_exampleValidConfigFile": { "message": "Дапушчальны прыклад файла канфігурацыі" },
   "info_exampleValidCmd": { "message": "Прыклад сапраўднай каманды" },

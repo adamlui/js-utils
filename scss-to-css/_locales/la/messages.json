@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "nunquam non è effectis" },
   "warn_hasBeenReplacedBy": { "message": "oMNI INTERNATIONE" },
   "warn_andWillBeRemoved": { "message": "[ORI] Oremus sine salutatione" },
+  "warn_notFound": { "message": "Non foundus" },
   "info_configFile": { "message": "Tabularium Configurationes" },
   "info_exampleValidConfigFile": { "message": "Exemplaria valid configuendum" },
   "info_exampleValidCmd": { "message": "Exemplaria valid commandus" },

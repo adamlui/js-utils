@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "už nemá žiadny účinok" },
   "warn_hasBeenReplacedBy": { "message": "bol nahradený" },
   "warn_andWillBeRemoved": { "message": "a budú odstránené" },
+  "warn_notFound": { "message": "Nenájdené" },
   "info_configFile": { "message": "Konfiguračný súbor" },
   "info_exampleValidConfigFile": { "message": "Príklad platného konfiguračného súboru" },
   "info_exampleValidCmd": { "message": "Príklad platného príkazu" },

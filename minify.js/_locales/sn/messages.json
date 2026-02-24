@@ -27,6 +27,7 @@
   "warn_noLongerHasAnyEffect": { "message": "haisisina zvazvinoita" },
   "warn_hasBeenReplacedBy": { "message": "yakatsiviwa ne" },
   "warn_andWillBeRemoved": { "message": "uye vachabviswa" },
+  "warn_notFound": { "message": "Haina kuwanikwa" },
   "info_configFile": { "message": "Rongedza faira" },
   "info_exampleValidConfigFile": { "message": "Muenzaniso unoshanda config file" },
   "info_exampleValidCmd": { "message": "Muenzaniso murairo unoshanda" },
