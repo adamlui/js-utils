@@ -2,7 +2,7 @@
 
 # This script automates:
 # >>> bump versions in manifests + READMEs >>> commit bumps to Git
-# >>> build minified JS to dist/ >>> update jsDelivr URLs for GH assets in cli.min.js
+# >>> build minified JS to dist/ >>> update jsDelivr URLs for GH assets in cli/index.js
 # >>> commit build to Git >>> push all changes to GitHub >>> publish to npm (optional)
 
 # Init UI colors
