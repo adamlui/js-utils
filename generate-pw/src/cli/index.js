@@ -28,7 +28,7 @@
     const genOptions = {
         length: cli.config.length,
         qty: cli.config.qty,
-        strength: cli.config.mode,
+        strength: cli.config.mode || cli.config.strength,
         charset: cli.config.charset,
         exclude: cli.config.excludeChars,
         numbers: !cli.config.excludeNums,
