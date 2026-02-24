@@ -51,7 +51,7 @@ function generatePassword(options = {}) {
         uppercase: true,     // include uppercase letters
         similarChars: false, // include similar chars (e.g. o,0,O,i,l,1,|)
         strict: true,        // require at least one char from each enabled set
-        entropy: false       // calculate/log estimated entropy (bits)
+        entropy: true        // calculate/log estimated entropy (bits)
     }
 
     _log.prefix = 'generatePassword()'
@@ -147,7 +147,7 @@ function generatePasswords(qty, options = {}) {
         uppercase: true,     // include uppercase letters
         similarChars: false, // include similar chars (e.g. o,0,O,i,l,1,|)
         strict: true,        // require at least one char from each enabled set
-        entropy: false       // calculate/log estimated entropy (bits)
+        entropy: true        // calculate/log estimated entropy (bits)
     }
 
     _log.prefix = 'generatePasswords()'

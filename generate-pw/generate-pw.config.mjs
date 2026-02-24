@@ -26,7 +26,7 @@ export default {
     excludeChars: '',           // exclude chars from password(s)
 
     // Info options
-    entropy: false,             // calculate/log estimated entropy
+    noEntropy: false,           // calculate/log estimated entropy
     quietMode: false,           // suppress all logging except errors
     uiLang: ''                  // ISO 639-1 code of language to display UI in
 }

@@ -255,7 +255,7 @@ Nom                   | Taper   | Description                                   
 `uppercase`           | Booléen | Autoriser les lettres majuscules dans le(s) mot(s) de passe.                                    | `true`
 `similarChars`        | Booléen | Inclure des caractères similaires (par exemple o, 0, O, i, l, 1, |) dans le(s) mot(s) de passe. | `false`
 `strict`              | Booléen | Exiger au moins un caractère de chaque jeu de caractères autorisé dans le(s) mot(s) de passe.   | `true`
-`entropy`             | Booléen | Calculer/enregistrer l'entropie estimée.                                                        | `false`
+`entropy`             | Booléen | Calculer/enregistrer l'entropie estimée.                                                        | `true`
 
 ##### _*Uniquement disponible dans [`generatePassword([options])`](#generatepasswordoptions) puisque [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) prend un argument `qty`_
 
@@ -296,7 +296,7 @@ Options booléennes:
  -U, --no-uppercase          Interdire les lettres majuscules dans le(s) mot(s) de passe.
  -s, --similar-chars         Inclure des caractères similaires dans le(s) mot(s) de passe.
  -S, --unstrict              Ne pas exiger au moins un caractère de chaque ensemble de caractères autorisés dans le(s) mot(s) de passe.
- -e, --entropy               Calculer/enregistrer l'entropie estimée.
+ -E, --no-entropy            Calculer/enregistrer l'entropie estimée.
  -q, --quiet                 Supprime toute la journalisation, à l'exception des erreurs.
 
 Commandes:
@@ -327,7 +327,7 @@ export default {
     excludeUpperChars: false,   // interdire les majuscules dans le(s) mot(s) de passe
     similarChars: false,        // inclure des caractères similaires dans le(s) mot(s) de passe
     unstrict: false,            // ne pas exiger au moins un caractère de chaque ensemble de caractères autorisés dans le(s) mot(s) de passe
-    entropy: false,             // calculer/enregistrer l'entropie estimée
+    noEntropy: false,           // calculer/enregistrer l'entropie estimée
     quietMode: false            // supprimer tous les messages de journalisation sauf les erreurs
 }
 ```

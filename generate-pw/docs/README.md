@@ -255,7 +255,7 @@ Name                  | Type    | Description                                   
 `uppercase`           | Boolean | Allow uppercase letters in password(s).                                        | `true`
 `similarChars`        | Boolean | Include similar characters (e.g. o,0,O,i,l,1,\|) in password(s).               | `false`
 `strict`              | Boolean | Require at least one character from each allowed character set in password(s). | `true`
-`entropy`             | Boolean | Calculate/log estimated entropy.                                               | `false`
+`entropy`             | Boolean | Calculate/log estimated entropy.                                               | `true`
 
 ##### _*Only available in [`generatePassword([options])`](#generatepasswordoptions) since [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) takes a `qty` argument_
 
@@ -297,7 +297,7 @@ Boolean options:
  -S, --similar-chars         Include similar characters in password(s).
  -S, --unstrict              Don't require at least one character from
                              each allowed character set in password(s).
- -e, --entropy               Calculate/log estimated entropy.
+ -E, --no-entropy            Don't calculate/log estimated entropy.
  -q, --quiet                 Suppress all logging except errors.
 
 Commands:
@@ -328,7 +328,7 @@ export default {
     excludeUpperChars: false,   // disallow uppercase letters in password(s)
     similarChars: false,        // include similar chars in password(s)
     unstrict: false,            // don't require 1+ char from each allowed charset in password(s)
-    entropy: false,             // calculate/log estimated entropy
+    noEntropy: false,           // don't calculate/log estimated entropy
     quietMode: false            // suppress all logging except errors
 }
 ```

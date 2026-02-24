@@ -37,7 +37,7 @@
         uppercase: !cli.config.excludeUpperChars,
         similarChars: cli.config.similarChars,
         strict: !cli.config.unstrict,
-        entropy: cli.config.entropy,
+        entropy: !cli.config.noEntropy,
         verbose: !cli.config.quietMode
     }
     log.break()

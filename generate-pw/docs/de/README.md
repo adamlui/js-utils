@@ -255,7 +255,7 @@ Name                  | Geben Sie       | ein Beschreibung                      
 `uppercase`           | Boolescher Wert | Erlauben Sie Großbuchstaben in Passwörtern.                                       | `true`
 `similarChars`        | Boolescher Wert | Verwenden Sie ähnliche Zeichen (z. B. o, 0, O, i, l, 1, |) in den Passwörtern.    | `false`
 `strict`              | Boolescher Wert | Erfordern mindestens ein Zeichen aus jedem zulässigen Zeichensatz in Passwörtern. | `true`
-`entropy`             | Boolescher Wert | Berechnen/protokollieren Sie die geschätzte Entropie.                             | `false`
+`entropy`             | Boolescher Wert | Berechnen/protokollieren Sie die geschätzte Entropie.                             | `true`
 
 ##### _*Nur verfügbar in [`generatePassword([optionen])`](#generatepasswordoptionen), da [`generatePasswords(qty[, optionen])`](#generatepasswordsqty-optionen) ein `qty`-Argument annimmt_
 
@@ -296,7 +296,7 @@ Boolesche Optionen:
  -U, --no-uppercase          Großbuchstaben in Passwörtern nicht zulassen.
  -s, --similar-chars         Verwenden Sie ähnliche Zeichen in den Passwörtern.
  -S, --unstrict              Es ist nicht erforderlich, dass Passwörter mindestens ein Zeichen aus jedem zulässigen Zeichensatz enthalten.
- -e, --entropy               Berechnen/protokollieren Sie die geschätzte Entropie.
+ -E, --no-entropy            Berechnen/protokollieren Sie die geschätzte Entropie.
  -q, --quiet                 Unterdrücken Sie alle Protokolle außer Fehlern.
 
 Befehle:
@@ -327,7 +327,7 @@ export default {
     excludeUpperChars: false,   // Großbuchstaben in den Passwörtern ausschließen
     similarChars: false,        // Verwenden Sie ähnliche Zeichen in den Passwörtern
     unstrict: false,            // Es ist nicht erforderlich, dass Passwörter mindestens ein Zeichen aus jedem zulässigen Zeichensatz enthalten
-    entropy: false,             // Geschätzte Entropie berechnen/protokollieren
+    noEntropy: false,           // Geschätzte Entropie berechnen/protokollieren
     quietMode: false            // Alle Protokollmeldungen außer Fehlern unterdrücken
 }
 ```

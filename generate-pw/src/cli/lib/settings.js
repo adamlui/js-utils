@@ -5,6 +5,7 @@ const fs = require('fs'),
 
 module.exports = {
     configFilename: 'generate-pw.config.mjs',
+    configFileKeyWhitelist: ['strength'],
 
     controls: {
         length: { type: 'param', valType: 'positiveInt', defaultVal: 12, regex: /^--?length(?:[=\s].*|$)/},
@@ -28,12 +29,13 @@ module.exports = {
         },
         similarChars: { type: 'flag', regex: /^--?(?:s|(?:include[-_]?)?similar[-_]?chars?=?(?:true|1)?)$/ },
         unstrict: { type: 'flag', regex: /^--?(?:S|(?:un[-_]?strict)?(?:[-_]?mode)?)$/ },
-        entropy: { type: 'flag', regex: /^--?e(?:ntropy)?$/ },
+        noEntropy: { type: 'flag', regex: /^--?(?:E|no[-_]?e(?:ntropy)?)$/ },
         quietMode: { type: 'flag', regex: /^--?q(?:uiet)?(?:[-_]?mode)?$/ },
         init: { type: 'cmd', regex: /^-{0,2}i(?:nit)?$/ },
         help: { type: 'cmd', regex: /^--?h(?:elp)?$/ },
         version: { type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ },
-        stats: { type: 'cmd', regex: /^--?stats?$/ }
+        stats: { type: 'cmd', regex: /^--?stats?$/ },
+        entropy: { type: 'legacy', replacedBy: 'noEntropy', regex: /^--?e(?:ntropy)?$/ }
     },
 
     load(ctrlKeys = Object.keys(this.controls)) {
@@ -72,10 +74,22 @@ module.exports = {
                 const mod = require(cli.configPath), fileConfig = mod?.default ?? mod
                 if (!fileConfig || typeof fileConfig != 'object')
                     log.configURLandExit(`${cli.msgs.error_invalidConfigFile}.`)
-                Object.assign(cli.config, arguments.length ?
-                    inputCtrlKeys.reduce((acc, key) => fileConfig[key] ? { ...acc, [key]: fileConfig[key] } : acc, {})
-                        : fileConfig // whole file on arg-less load()
-                )
+                ;(arguments.length ? inputCtrlKeys : Object.keys(fileConfig)).forEach(key => {
+                    if (!(key in fileConfig)) return
+                    const val = fileConfig[key], ctrl = this.controls[key]
+                    if (!ctrl) {
+                        if (this.configFileKeyWhitelist && !this.configFileKeyWhitelist.includes(key))
+                            log.invalidConfigKey(key)
+                        return
+                    } else if (ctrl.type == 'legacy' && ctrl.replacedBy) {
+                        if (key.toLowerCase().includes('no') != ctrl.replacedBy.toLowerCase().includes('no'))
+                            cli.config[ctrl.replacedBy] = !val  // assign opposite val to current key
+                        else // assign direct val to current key
+                            cli.config[ctrl.replacedBy] = val
+                        return log.configKeyReplacedBy(key, ctrl.replacedBy, val)
+                    }
+                    if (!cli.config[key]) cli.config[key] = val
+                })
             } catch (err) {
                 log.configURLandExit(`${cli.msgs.error_failedToLoadConfigFile}:`, cli.configPath, `\n${err.message}`) }
 
@@ -86,10 +100,7 @@ module.exports = {
             if (!ctrlKey && cli.msgs) log.errorAndExit(`[${arg}] ${cli.msgs.error_notRecognized}.`)
             if (!inputCtrlKeys.includes(ctrlKey)) return // don't process env.args when load() specific keys
             const ctrl = this.controls[ctrlKey]
-            if (ctrl.type == 'legacy') {
-                log.warn(`${cli.msgs.warn_option} ${arg} ${cli.msgs.warn_noLongerHasAnyEffect}.`)
-                continue
-            }
+            if (ctrl.type == 'legacy') { log.argDoesNothing(arg) ; continue }
             if (ctrl.mode) // set cli.config.mode to mode name
                 cli.config.mode = ctrlKey.replace(/mode$/i, '').toLowerCase()
             else { // init flag/param/cmd cli.config[ctrlKey] val

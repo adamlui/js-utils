@@ -251,7 +251,7 @@ validateStrength() » Check returned object for score/recommendations.
 `uppercase`           | 布林值 | 密碼中允許使用大寫字母。                          | `true`
 `similarChars`        | 布林值 | 密碼中應包含相似字元（例如 o、0、O、i、l、1、\|）。 | `false`
 `strict`              | 布林值 | 要求密碼中每個允許的字元集中至少有一個字元。        | `true`
-`entropy`             | 布林值 | 計算/對數估計熵。                                 | `false`
+`entropy`             | 布林值 | 計算/對數估計熵。                                 | `true`
 
 ##### _*只在 [`generatePassword([options])`](#generatepasswordoptions) 中可用，因為 [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) 採用 `qty` 參數_
 
@@ -292,7 +292,7 @@ $ generate-pw
  -U, --no-uppercase          密碼中不允許使用大寫字母。
  -s, --similar-chars         密碼中應包含相似字元。
  -S, --unstrict              密码中无需包含每个允许字符集中的至少一个字符。
- -e, --entropy               計算/對數估計熵。
+ -E, --no-entropy            計算/對數估計熵。
  -q, --quiet                 禁止除錯誤之外的所有日誌記錄。
 
 訊息命令：
@@ -323,7 +323,7 @@ export default {
     excludeUpperChars: false,   // 密碼中不允許包含大寫字母
     similarChars: false,        // 密碼中應包含相似字元
     unstrict: false,            // 密码中无需包含每个允许字符集中的一个或多个字符
-    entropy: false,             // 計算/對數估計熵
+    noEntropy: false,           // 計算/對數估計熵
     quietMo​​de: false            // 禁止記錄除錯誤訊息以外的所有日誌
 }
 ```

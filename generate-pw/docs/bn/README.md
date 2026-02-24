@@ -253,7 +253,7 @@ validateStrength() » Check returned object for score/recommendations.
 `uppercase`           | বুলিয়ান  | পাসওয়ার্ডে বড় হাতের অক্ষরের অনুমতি দিন।                                   | `true`
 `similarChars`        | বুলিয়ান  | পাসওয়ার্ডে একই রকম দেখতে অক্ষর (যেমন o,0,O,i,l,1,\|) অন্তর্ভুক্ত করুন।      | `false`
 `strict`              | বুলিয়ান  | পাসওয়ার্ডে সেট করা প্রতিটি অনুমোদিত অক্ষর থেকে কমপক্ষে একটি অক্ষর প্রয়োজন। | `true`
-`entropy`             | Boolean | অনুমানকৃত এনট্রপি গণনা করুন/লগ করুন।                                    | `false`
+`entropy`             | Boolean | অনুমানকৃত এনট্রপি গণনা করুন/লগ করুন।                                    | `true`
 
 ##### _*শুধুমাত্র [`generatePassword([options])`](#generatepasswordoptions) এ উপলব্ধ যেহেতু [`generatePasswords(qty[, options])`](#generatepasswordsqty-options) একটি `qty` আর্গুমেন্ট নেয়_
 
@@ -294,7 +294,7 @@ $ generate-pw
  -U, --no-uppercase          পাসওয়ার্ড(গুলি) এ বড় হাতের অক্ষর অনুমোদন না করুন।
  -s, --similar-chars         পাসওয়ার্ডে একই রকম অক্ষর অন্তর্ভুক্ত করুন।
  -S, --unstrict              পাসওয়ার্ডে অনুমোদিত প্রতিটি অক্ষর সেট থেকে অন্তত একটি অক্ষর থাকা আবশ্যক নয়।
- -e, --entropy               অনুমানকৃত এনট্রপি গণনা করুন/লগ করুন।
+ -E, --no-entropy            অনুমানকৃত এনট্রপি গণনা করুন/লগ করুন।
  -q, --quiet                 ত্রুটি ছাড়া সব লগিং দমন করুন।
 
 কমান্ডসমূহ:
@@ -325,7 +325,7 @@ export default {
     excludeUpperChars: false,   // পাসওয়ার্ডে বড় হাতের অক্ষর ব্যবহারের অনুমতি দেবেন ন
     similarChars: false,        // পাসওয়ার্ডে একই রকম অক্ষর (যেমন o,0,O,i,l,1,\|) অন্তর্ভুক্ত করুন
     unstrict: false,            // পাসওয়ার্ডে অনুমোদিত প্রতিটি অক্ষর সেট থেকে ১টির বেশি অক্ষর থাকা আবশ্যক নয়
-    entropy: false,             // আনুমানিক এনট্রপি গণনা/লগ করুন
+    noEntropy: false,           // আনুমানিক এনট্রপি গণনা/লগ করুন
     quietMode: false            // ত্রুটি ছাড়া অন্য সব লগিং বন্ধ রাখুন
 }
 ```
