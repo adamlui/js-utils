@@ -23,7 +23,7 @@ export default {
     similarChars: false,        // include similar chars (e.g. o,0,O,i,l,1,\|) in password(s)
     unstrict: false,            // don't require 1+ char from each allowed charset in password(s)
     charset: '',                // only include chars in password(s)
-    exclude: '',                // exclude chars from password(s)
+    excludeChars: '',           // exclude chars from password(s)
 
     // Info options
     entropy: false,             // calculate/log estimated entropy
