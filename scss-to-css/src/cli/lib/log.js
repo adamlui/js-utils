@@ -1,29 +1,22 @@
-module.exports = {
+const colors = require('./color'),
+    { getDownloads, getVer } = require('./pkg')
 
-    colors: {
-        nc: '\x1b[0m',        // no color
-        br: '\x1b[1;91m',     // bright red
-        by: '\x1b[1;33m',     // bright yellow
-        bo: '\x1b[38;5;214m', // bright orange
-        bg: '\x1b[1;92m',     // bright green
-        bw: '\x1b[1;97m',     // bright white
-        gry: '\x1b[90m',      // gray
-        blk: '\x1b[30m',      // black
-        tlBG: '\x1b[106m'     // teal bg
-    },
+module.exports = {
+    colors,
 
     configURL() { this.info(`\n${cli.msgs.info_exampleValidConfigFile}: ${cli.urls.config}`) },
-    configURLandExit(...args) { this.error(...args) ; this.configURL() ; process.exit(1) },
-    data(msg) { console.log(`\n${this.colors.bw}${msg}${this.colors.nc}`) },
-    debug(msg) { if (env.modes.debug) console.debug(`\n${this.colors.bo}DEBUG:`, msg, this.colors.nc, '\n') },
-    dim(msg) { console.log(`${this.colors.gry}${msg}${this.colors.nc}`) },
-    error(...args) { console.error(`\n${this.colors.br}ERROR:`, ...args, this.colors.nc) },
-    errorAndExit(...args) { this.error(...args) ; this.helpCmdAndDocURL() ; process.exit(1) },
-    ifNotQuiet(msg) { if (!cli.config.quietMode) console.info(msg) },
-    info(msg) { console.info(`\n${this.colors.by}${msg}${this.colors.nc}`) },
-    tip(msg) { console.info(`${this.colors.by}TIP: ${msg}${this.colors.nc}`) },
-    success(msg) { console.log(`\n${this.colors.bg}${msg}${this.colors.nc}`) },
-    warn(...args) { console.warn(`\n${this.colors.bo}WARNING:`, ...args, this.colors.nc) },
+    configURLandExit(...args) { this.error(...args); this.configURL(); process.exit(1) },
+    data(msg) { console.log(`\n${colors.bw}${msg}${colors.nc}`) },
+    debug(msg) { if (env.modes.debug) console.debug(`\n${colors.bo}DEBUG:`, msg, colors.nc, '\n') },
+    dim(msg) { console.log(`${colors.gry}${msg}${colors.nc}`) },
+    error(...args) { console.error(`\n${colors.br}ERROR:`, ...args, colors.nc) },
+    errorAndExit(...args) { this.error(...args); this.helpCmdAndDocURL(); process.exit(1) },
+    ifNotQuiet(msg) { if (!cli.config.quietMode) this.info(msg) },
+    info(msg) { console.info(`\n${colors.schemes.default[0]}${msg}${colors.nc}`) },
+    break() { console.log() },
+    tip(msg) { console.info(`${colors.by}TIP: ${msg}${colors.nc}`) },
+    success(msg) { console.log(`\n${colors.bg}${msg}${colors.nc}`) },
+    warn(...args) { console.warn(`\n${colors.bo}WARNING:`, ...args, colors.nc) },
 
     help(includeSections = ['header', 'usage', 'pathArgs', 'flags', 'params', 'cmds']) {
         cli.prefix = `${this.colors.tlBG}${this.colors.blk} ${cli.name.replace(/^@[^/]+\//, '')} ${this.colors.nc} `
@@ -66,7 +59,8 @@ module.exports = {
                 `\n${this.colors.bw}o ${cli.msgs.helpSection_cmds}:${this.colors.nc}`,
                 ` -i, --init                              ${cli.msgs.optionDesc_init}.`,
                 ` -h, --help                              ${cli.msgs.optionDesc_help}.`,
-                ` -v, --version                           ${cli.msgs.optionDesc_version}.`
+                ` -v, --version                           ${cli.msgs.optionDesc_version}.`,
+                ` -v, --stats                             ${cli.msgs.optionDesc_stats}.`
             ]
         }
         includeSections.forEach(section => // print valid arg elems
@@ -103,12 +97,22 @@ module.exports = {
         console.info(`\n${
             cli.msgs.info_moreHelp}, ${cli.msgs.info_type} ${cli.name.split('/')[1]} --help' ${
                 cli.msgs.info_or} ${cli.msgs.info_visit}\n${
-                    this.colors.bw}${cli.urls.docs}${this.colors.nc}`
+                    colors.bw}${cli.urls.docs}${colors.nc}`
         )
     },
 
+    async stats(pkgName = cli.name, options = { ecosystem: 'npm', maxDays: 8, maxVers: 5, scheme: 'default' }) {
+        const pkgStats = await getDownloads(pkgName, options),
+              schemeData = colors.schemes[options.scheme]
+        if (!schemeData) return this.error(`Scheme '${options.scheme}' not found!`)
+        const colorMap = Object.fromEntries(schemeData.map((hex, idx) => [`c${idx}`, hex])),
+              statsTable = new (require('console-table-printer').Table)({ colorMap })
+        pkgStats.forEach((row, idx) => // build colored rows
+            statsTable.addRow(row, { color: `c${Math.floor(idx / pkgStats.length * schemeData.length)}` }))
+        statsTable.printTable()
+    },
+
     version() {
-        const { getVer } = require('./pkg')
         this.info(cli.name)
         this.data(`${
             cli.msgs.prefix_globalVer}: ${ getVer('global') || 'none' }\n${

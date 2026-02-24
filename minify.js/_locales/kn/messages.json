@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "ಕಸ್ಟಮ್ ಕಾನ್ಫಿಗರೇಶನ್ ಫೈಲ್ ಅನ್ನು ಲೋಡ್ ಮಾಡಿ" },
   "optionDesc_init": { "message": "ಕಾನ್ಫಿಗರ್ ಫೈಲ್ ರಚಿಸಿ (ಪ್ರಾಜೆಕ್ಟ್ ಮೂಲದಲ್ಲಿ)" },
   "optionDesc_help": { "message": "ಸಹಾಯ ಪರದೆಯನ್ನು ಪ್ರದರ್ಶಿಸಿ" },
-  "optionDesc_version": { "message": "ಆವೃತ್ತಿ ಸಂಖ್ಯೆಯನ್ನು ತೋರಿಸಿ" }
+  "optionDesc_version": { "message": "ಆವೃತ್ತಿ ಸಂಖ್ಯೆಯನ್ನು ತೋರಿಸಿ" },
+  "optionDesc_stats": { "message": "ಎನ್‌ಪಿಎಂ ಅಂಕಿಅಂಶಗಳನ್ನು ತೋರಿಸಿ" }
 }

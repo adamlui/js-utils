@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "કસ્ટમ રૂપરેખાંકન ફાઇલ લોડ કરો" },
   "optionDesc_init": { "message": "રૂપરેખાંકન ફાઇલ બનાવો (પ્રોજેક્ટ રુટમાં)" },
   "optionDesc_help": { "message": "સહાય સ્ક્રીન પ્રદર્શિત કરો" },
-  "optionDesc_version": { "message": "આવૃત્તિ ક્રમાંક" }
+  "optionDesc_version": { "message": "આવૃત્તિ ક્રમાંક" },
+  "optionDesc_stats": { "message": "Npm આંકડાઓ બતાવો" }
 }

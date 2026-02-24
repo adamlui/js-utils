@@ -80,6 +80,7 @@
     "uglify-js": "^3.19.3"
   },
   "devDependencies": {
+    "console-table-printer": "^2.15.0",
     "copyfiles": "^2.4.1"
   }
 }

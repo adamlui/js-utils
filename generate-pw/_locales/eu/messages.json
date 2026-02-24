@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "Ezabatu erregistro guztiak erroreak izan ezik" },
   "optionDesc_help": { "message": "Bistaratu laguntza-pantaila" },
   "optionDesc_init": { "message": "Konfigurazio fitxategia sortu (proiektuaren erroan)" },
-  "optionDesc_version": { "message": "Bertsio zenbakia" }
+  "optionDesc_version": { "message": "Bertsio zenbakia" },
+  "optionDesc_stats": { "message": "Erakutsi npm estatistikak" }
 }

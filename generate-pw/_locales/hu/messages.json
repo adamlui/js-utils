@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "Az összes naplózás letiltása a hibák kivételével" },
   "optionDesc_help": { "message": "Súgó képernyő megjelenítése" },
   "optionDesc_init": { "message": "Konfigurációs fájl létrehozása (a projekt gyökerében)" },
-  "optionDesc_version": { "message": "kiírja a verziószámot" }
+  "optionDesc_version": { "message": "kiírja a verziószámot" },
+  "optionDesc_stats": { "message": "NPM-statisztikák megjelenítése" }
 }

@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "دوديزه سازونې دوتنه لېښل" },
   "optionDesc_init": { "message": "(د پروژې په ریښه کې) سازونې دوتنه جوړه کړئ" },
   "optionDesc_help": { "message": "د مرستې سکرین ښکاره کړئ" },
-  "optionDesc_version": { "message": "د نسخې شمیره وښایاست" }
+  "optionDesc_version": { "message": "د نسخې شمیره وښایاست" },
+  "optionDesc_stats": { "message": "د npm احصایې ښکاره کړئ" }
 }

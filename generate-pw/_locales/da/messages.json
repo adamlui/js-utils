@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "Undertrykke al logning undtagen fejl" },
   "optionDesc_help": { "message": "Vis hjælpeskærm" },
   "optionDesc_init": { "message": "Opret konfigurationsfil (i projektroden)" },
-  "optionDesc_version": { "message": "Vis versionsnummer" }
+  "optionDesc_version": { "message": "Vis versionsnummer" },
+  "optionDesc_stats": { "message": "Vis npm-statistik" }
 }

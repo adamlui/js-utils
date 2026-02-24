@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "தனிப்பயன் உள்ளமைவு கோப்பை ஏற்றவும்" },
   "optionDesc_init": { "message": "கட்டமைப்பு கோப்பை உருவாக்கவும் (திட்ட மூலத்தில்)" },
   "optionDesc_help": { "message": "உதவித் திரையைக் காண்பி" },
-  "optionDesc_version": { "message": "பதிப்பெண்" }
+  "optionDesc_version": { "message": "பதிப்பெண்" },
+  "optionDesc_stats": { "message": "Npm புள்ளிவிவரங்களைக் காட்டு" }
 }

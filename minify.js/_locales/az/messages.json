@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "Xüsusi konfiqurasiya faylını yükləyin" },
   "optionDesc_init": { "message": "Konfiqurasiya faylı yaradın (layihə kökündə)" },
   "optionDesc_help": { "message": "Yardım ekranını göstər" },
-  "optionDesc_version": { "message": "Versiya nömrəsini göstər" }
+  "optionDesc_version": { "message": "Versiya nömrəsini göstər" },
+  "optionDesc_stats": { "message": "Gecə-gündüz statistikalarını göstər" }
 }

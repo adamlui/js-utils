@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "Tella' fajl tal-konfig personalizzat" },
   "optionDesc_init": { "message": "Oħloq fajl tal-konfig (fl-għeruq tal-proġett)" },
   "optionDesc_help": { "message": "Uri l-iskrin tal-għajnuna" },
-  "optionDesc_version": { "message": "Version Number" }
+  "optionDesc_version": { "message": "Version Number" },
+  "optionDesc_stats": { "message": "Uri l-istatistika tal-NPM" }
 }

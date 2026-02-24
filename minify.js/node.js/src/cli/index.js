@@ -24,6 +24,7 @@
     if (cli.config.init) return init.configFile()
     else if (cli.config.help) return log.help()
     else if (cli.config.version) return log.version()
+    else if (cli.config.stats) return log.stats()
 
     // Init I/O args
     const [inputArg = '', outputArg = ''] = // default to empty strings for error-less handling
@@ -44,6 +45,7 @@
     }
 
     // Find all eligible JavaScript files or arg-passed file
+    log.break()
     const srcFiles = inputPath.endsWith('.js') && !fs.statSync(inputPath).isDirectory() ? [inputPath]
         : findJS(inputPath, {
             recursive: !cli.config.noRecursion,

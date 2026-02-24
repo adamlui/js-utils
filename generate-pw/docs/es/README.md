@@ -303,6 +303,7 @@ Comandos:
  -i, --init                  Crear archivo de configuración (en la raíz del proyecto).
  -h, --help                  Mostrar pantalla de ayuda.
  -v, --version               Mostrar número de versión.
+     --stats                 Mostrar estadísticas de npm.
 ```
 
 #

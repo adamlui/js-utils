@@ -46,5 +46,6 @@
   "optionDesc_quiet": { "message": "Obustavi sve zapisivanje osim pogrešaka" },
   "optionDesc_init": { "message": "Kreirajte konfiguracijsku datoteku (u korijenu projekta)" },
   "optionDesc_help": { "message": "Prikažite zaslon za pomoć" },
-  "optionDesc_version": { "message": "Verzioniranje softvera" }
+  "optionDesc_version": { "message": "Verzioniranje softvera" },
+  "optionDesc_stats": { "message": "Prikaži npm statistike" }
 }

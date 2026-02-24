@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "Lataa mukautettu asetustiedosto" },
   "optionDesc_init": { "message": "Luo konfigurointitiedosto (projektin juuressa)" },
   "optionDesc_help": { "message": "Näytä ohjenäyttö" },
-  "optionDesc_version": { "message": "Näyttää versionumeron" }
+  "optionDesc_version": { "message": "Näyttää versionumeron" },
+  "optionDesc_stats": { "message": "Näytä npm-tilastot" }
 }

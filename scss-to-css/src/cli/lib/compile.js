@@ -59,7 +59,7 @@ module.exports = {
             require('node-clipboardy').writeSync(compileData[0].code)
 
         } else { // write array data to files
-            log.ifNotQuiet(`\n${cli.msgs.info_writing}${ compileData?.length > 1 ? 's' : '' }...`)
+            log.ifNotQuiet(`${cli.msgs.info_writing}${ compileData?.length > 1 ? 's' : '' }...`)
             compileData?.forEach(({ code, srcMap, srcPath, relPath }) => {
                 let outputDir, outputFilename
                 if (!cli.config.relativeOutput && relPath) { // preserve folder structure

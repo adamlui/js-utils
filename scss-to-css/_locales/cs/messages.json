@@ -66,5 +66,6 @@
   "optionDesc_config": { "message": "Načíst vlastní konfigurační soubor" },
   "optionDesc_init": { "message": "Vytvořit konfigurační soubor (v kořenovém adresáři projektu)" },
   "optionDesc_help": { "message": "Zobrazit obrazovku nápovědy" },
-  "optionDesc_version": { "message": "Zobrazí číslo verze" }
+  "optionDesc_version": { "message": "Zobrazí číslo verze" },
+  "optionDesc_stats": { "message": "Zobrazit statistiky npm" }
 }

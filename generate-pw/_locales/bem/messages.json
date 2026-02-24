@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "Fela Anikulapo Kuti - Fela Anikulapo Kuti" },
   "optionDesc_help": { "message": "Lekisha Help Screen" },
   "optionDesc_init": { "message": "Create file (in file file)" },
-  "optionDesc_version": { "message": "Tontonkanyeni pa nambala ya ciputulwa" }
+  "optionDesc_version": { "message": "Tontonkanyeni pa nambala ya ciputulwa" },
+  "optionDesc_stats": { "message": "Lekisha NPM Stats" }
 }

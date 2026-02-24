@@ -24,6 +24,7 @@
     if (cli.config.init) return init.configFile()
     else if (cli.config.help) return log.help()
     else if (cli.config.version) return log.version()
+    else if (cli.config.stats) return log.stats()
 
     // Init I/O args
     const [inputArg = '', outputArg = ''] = // default to empty strings for error-less handling
@@ -44,6 +45,7 @@
     }
 
     // Find all eligible source files or arg-passed file
+    log.break()
     const srcFiles = /s[ac]ss$/.test(inputPath) && !fs.statSync(inputPath).isDirectory() ? [inputPath]
         : findSCSS(inputPath, {
             recursive: !cli.config.noRecursion,
@@ -57,7 +59,7 @@
             log.info(`${cli.msgs.info_scssFilesToBeCompiled}:`)
             srcFiles.forEach(file => log.dim(file))
         } else // no files found
-            log.info(`\n${cli.msgs.info_noSCSSfilesWillBeCompiled}.`)
+            log.info(`${cli.msgs.info_noSCSSfilesWillBeCompiled}.`)
     } else
         compile.scss({ srcFiles, inputPath, inputArg, outputArg })
 

@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "Hatalar hariç tüm günlükleri bastır" },
   "optionDesc_help": { "message": "Yardım ekranını görüntüle" },
   "optionDesc_init": { "message": "Yapılandırma dosyası oluştur (proje kök dizininde)" },
-  "optionDesc_version": { "message": "Versiyon Numarası" }
+  "optionDesc_version": { "message": "Versiyon Numarası" },
+  "optionDesc_stats": { "message": "Npm istatistiklerini göster" }
 }

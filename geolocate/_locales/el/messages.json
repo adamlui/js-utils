@@ -45,5 +45,6 @@
   "optionDesc_quiet": { "message": "Καταργήστε όλες τις καταγραφές εκτός από τα σφάλματα" },
   "optionDesc_init": { "message": "Δημιουργία αρχείου διαμόρφωσης (στη ρίζα του έργου)" },
   "optionDesc_help": { "message": "Εμφάνιση οθόνης βοήθειας" },
-  "optionDesc_version": { "message": "Αριθμός έκδοσης" }
+  "optionDesc_version": { "message": "Αριθμός έκδοσης" },
+  "optionDesc_stats": { "message": "Εμφάνιση στατιστικών npm" }
 }

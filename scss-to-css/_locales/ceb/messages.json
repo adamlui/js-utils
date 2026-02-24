@@ -66,5 +66,6 @@
   "optionDesc_config": { "message": "I-load ang custom config file" },
   "optionDesc_init": { "message": "Paghimo file sa config (sa root sa proyekto)" },
   "optionDesc_help": { "message": "Ipakita ang screen sa tabang" },
-  "optionDesc_version": { "message": "Ipakita ang numero sa bersyon" }
+  "optionDesc_version": { "message": "Ipakita ang numero sa bersyon" },
+  "optionDesc_stats": { "message": "Ipakita ang npm stats" }
 }

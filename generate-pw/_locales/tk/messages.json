@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "Ýalňyşlyklardan başga ähli ýalňyşlyklary ýok etmek" },
   "optionDesc_help": { "message": "Yardam ekrany görkez" },
   "optionDesc_init": { "message": "Konfigurasy faýlyny ýarat (projektiň köki bilen)" },
-  "optionDesc_version": { "message": "VERSION NUMBERI" }
+  "optionDesc_version": { "message": "VERSION NUMBERI" },
+  "optionDesc_stats": { "message": "NPM ştatlaryny görkez" }
 }

@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "Waqqaf il-logging kollu ħlief l-iżbalji" },
   "optionDesc_help": { "message": "Uri l-iskrin tal-għajnuna" },
   "optionDesc_init": { "message": "Oħloq fajl tal-konfig (fl-għeruq tal-proġett)" },
-  "optionDesc_version": { "message": "Version Number" }
+  "optionDesc_version": { "message": "Version Number" },
+  "optionDesc_stats": { "message": "Uri l-istatistika tal-NPM" }
 }

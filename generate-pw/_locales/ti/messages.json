@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "ጌጋታት እንተዘይኮይኑ ፡ ንዅሉ ምዝገባታት ኣጥፍእ" },
   "optionDesc_help": { "message": "ናይ ሓገዝ ስክሪን ኣርኢ" },
   "optionDesc_init": { "message": "ናይ ውህደት ፋይል ፍጠር (ኣብ ናይ ፕሮጀክት ሱር)" },
-  "optionDesc_version": { "message": "ናይ ቅጅል ቁጽሪ ኣርኢ" }
+  "optionDesc_version": { "message": "ናይ ቅጅል ቁጽሪ ኣርኢ" },
+  "optionDesc_stats": { "message": "NPM ስታቲስቲክስ ኣርኢ" }
 }

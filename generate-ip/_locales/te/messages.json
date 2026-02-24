@@ -46,5 +46,6 @@
   "optionDesc_quiet": { "message": "లోపాలు మినహా అన్ని లాగింగ్ ‌ లను అణచివేయండి" },
   "optionDesc_init": { "message": "Create config file (in project root)" },
   "optionDesc_help": { "message": "సహాయక స్క్రీన్ ‌ ని ప్రదర్శించండి" },
-  "optionDesc_version": { "message": "సంస్కరణ సంఖ్యను చూపించు" }
+  "optionDesc_version": { "message": "సంస్కరణ సంఖ్యను చూపించు" },
+  "optionDesc_stats": { "message": "Npm గణాంకాలను చూపించు" }
 }

@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "Slökkva á öllum innskráningum nema villum" },
   "optionDesc_help": { "message": "Birta hjálparskjá" },
   "optionDesc_init": { "message": "Búa til stillingarskrá (í frumtexta verkefnis)" },
-  "optionDesc_version": { "message": "Útgáfunúmer" }
+  "optionDesc_version": { "message": "Útgáfunúmer" },
+  "optionDesc_stats": { "message": "Sýna npm tölfræði" }
 }

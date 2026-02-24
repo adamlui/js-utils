@@ -299,6 +299,7 @@ $ generate-pw
  -i, --init                  Create config file (in project root).
  -h, --help                  顯示幫助畫面。
  -v, --version               顯示版本號。
+     --stats                 顯示 npm 統計資訊。
 ```
 
 #

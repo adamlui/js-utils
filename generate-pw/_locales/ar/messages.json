@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "قم بإيقاف جميع عمليات التسجيل باستثناء الأخطاء" },
   "optionDesc_help": { "message": "عرض شاشة المساعدة" },
   "optionDesc_init": { "message": "إنشاء ملف تكوين (في جذر المشروع)" },
-  "optionDesc_version": { "message": "رقم الإصدار" }
+  "optionDesc_version": { "message": "رقم الإصدار" },
+  "optionDesc_stats": { "message": "عرض إحصائيات npm" }
 }

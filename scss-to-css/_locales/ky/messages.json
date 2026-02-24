@@ -66,5 +66,6 @@
   "optionDesc_config": { "message": "Өзгөчө конфигурация файлын жүктөө" },
   "optionDesc_init": { "message": "Конфигурация файлын түзүү (долбоордун тамыры менен)" },
   "optionDesc_help": { "message": "Жардам экранын көрсөтүү" },
-  "optionDesc_version": { "message": "Версиянын номерин көрсөтүү" }
+  "optionDesc_version": { "message": "Версиянын номерин көрсөтүү" },
+  "optionDesc_stats": { "message": "Көрсөтүү npm статистикасы" }
 }

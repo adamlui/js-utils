@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "Зареждане на персонализиран конфигурационен файл" },
   "optionDesc_init": { "message": "Създаване на конфигурационен файл (в корена на проекта)" },
   "optionDesc_help": { "message": "Показване на помощния екран" },
-  "optionDesc_version": { "message": "Version Number" }
+  "optionDesc_version": { "message": "Version Number" },
+  "optionDesc_stats": { "message": "Показване на статистика за npm" }
 }

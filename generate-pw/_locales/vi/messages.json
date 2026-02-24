@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "Chặn tất cả ghi nhật ký ngoại trừ lỗi" },
   "optionDesc_help": { "message": "Hiển thị màn hình trợ giúp" },
   "optionDesc_init": { "message": "Tạo tệp cấu hình (trong thư mục gốc của dự án)" },
-  "optionDesc_version": { "message": "Số Phiên bản" }
+  "optionDesc_version": { "message": "Số Phiên bản" },
+  "optionDesc_stats": { "message": "Hiển thị số liệu thống kê npm" }
 }

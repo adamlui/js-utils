@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "Undirskriva allar innmeldingar uttan feil" },
   "optionDesc_help": { "message": "Vís hjálparskjá" },
   "optionDesc_init": { "message": "Skapa konfiguratiónsfíla (í verkætlanarorði)" },
-  "optionDesc_version": { "message": "Vís útgávu nr" }
+  "optionDesc_version": { "message": "Vís útgávu nr" },
+  "optionDesc_stats": { "message": "Vís NPM-statistikkar" }
 }

@@ -46,5 +46,6 @@
   "optionDesc_quiet": { "message": "Потискане на всички записи, с изключение на грешките" },
   "optionDesc_init": { "message": "Създаване на конфигурационен файл (в корена на проекта)" },
   "optionDesc_help": { "message": "Показване на помощния екран" },
-  "optionDesc_version": { "message": "Version Number" }
+  "optionDesc_version": { "message": "Version Number" },
+  "optionDesc_stats": { "message": "Показване на статистика за npm" }
 }

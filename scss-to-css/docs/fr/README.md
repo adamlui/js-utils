@@ -162,6 +162,7 @@ Commandes:
  -i, --init                               Créer un fichier de configuration (à la racine du projet).
  -h, --help                               Afficher l'écran d'aide.
  -v, --version                            Afficher le numéro de version.
+     --stats                              Afficher les statistiques npm.
 ```
 
 #

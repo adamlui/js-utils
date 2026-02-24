@@ -66,5 +66,6 @@
   "optionDesc_config": { "message": "Laisa faele ya thulaganyo e e tlwaelegileng" },
   "optionDesc_init": { "message": "Tlhama faele ya thulaganyo (mo moding wa porojeke)" },
   "optionDesc_help": { "message": "Bontsha sekerini sa thuso" },
-  "optionDesc_version": { "message": "Nomoro ya kgatiso" }
+  "optionDesc_version": { "message": "Nomoro ya kgatiso" },
+  "optionDesc_stats": { "message": "SHOW NPM STATS" }
 }

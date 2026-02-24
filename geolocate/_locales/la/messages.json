@@ -45,5 +45,6 @@
   "optionDesc_quiet": { "message": "Exemplar omnes logiciendi except error" },
   "optionDesc_init": { "message": "Create config file (in project root)" },
   "optionDesc_help": { "message": "Pagina Auxilio" },
-  "optionDesc_version": { "message": "neo number" }
+  "optionDesc_version": { "message": "neo number" },
+  "optionDesc_stats": { "message": "STATIS NPME" }
 }

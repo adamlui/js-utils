@@ -45,5 +45,6 @@
   "optionDesc_quiet": { "message": "Cuir às do gach logadh ach a - mhàin mearachdan" },
   "optionDesc_init": { "message": "Cruthaich faidhle rèiteachaidh (ann am freumh a 'phròiseict)" },
   "optionDesc_help": { "message": "Seall sgrìn na cobhair" },
-  "optionDesc_version": { "message": "Seall àireamh an tionndaidh" }
+  "optionDesc_version": { "message": "Seall àireamh an tionndaidh" },
+  "optionDesc_stats": { "message": "Seall staitistig npm" }
 }

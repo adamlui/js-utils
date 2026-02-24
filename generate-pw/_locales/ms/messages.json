@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "Sekat semua pembalakan kecuali ralat" },
   "optionDesc_help": { "message": "Papar skrin bantuan" },
   "optionDesc_init": { "message": "Cipta fail konfigurasi (dalam akar projek)" },
-  "optionDesc_version": { "message": "Nombor Versi" }
+  "optionDesc_version": { "message": "Nombor Versi" },
+  "optionDesc_stats": { "message": "Tunjukkan statistik npm" }
 }

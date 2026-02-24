@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "تحميل ملف التكوين المخصص" },
   "optionDesc_init": { "message": "إنشاء ملف تكوين (في جذر المشروع)" },
   "optionDesc_help": { "message": "عرض شاشة المساعدة" },
-  "optionDesc_version": { "message": "رقم الإصدار" }
+  "optionDesc_version": { "message": "رقم الإصدار" },
+  "optionDesc_stats": { "message": "عرض إحصائيات npm" }
 }

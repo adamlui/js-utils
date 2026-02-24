@@ -66,5 +66,6 @@
   "optionDesc_config": { "message": "Katundu mwambo config wapamwamba" },
   "optionDesc_init": { "message": "Pangani fayilo ya config (muzu wa polojekiti)" },
   "optionDesc_help": { "message": "Onetsani zenera lothandizira" },
-  "optionDesc_version": { "message": "Onetsani nambala ya mtundu" }
+  "optionDesc_version": { "message": "Onetsani nambala ya mtundu" },
+  "optionDesc_stats": { "message": "Onetsani ziwerengero za npm" }
 }

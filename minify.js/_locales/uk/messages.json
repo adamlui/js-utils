@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "Завантажити користувацький файл конфігурації" },
   "optionDesc_init": { "message": "Створити файл конфігурації (в корені проекту)" },
   "optionDesc_help": { "message": "Відобразити екран довідки" },
-  "optionDesc_version": { "message": "Показати номер версії програми" }
+  "optionDesc_version": { "message": "Показати номер версії програми" },
+  "optionDesc_stats": { "message": "Показати статистику npm" }
 }

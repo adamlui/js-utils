@@ -78,6 +78,7 @@
   },
   "devDependencies": {
     "@adamlui/minify.js": "^2.3.1",
+    "console-table-printer": "^2.15.0",
     "copyfiles": "^2.4.1"
   }
 }

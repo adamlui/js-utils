@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "Faka ifayile yokumisela ekhethekileyo" },
   "optionDesc_init": { "message": "Yenza ifayile yoqwalaselo (kwingcambu yeprojekthi)" },
   "optionDesc_help": { "message": "Bonisa isikrini soncedo" },
-  "optionDesc_version": { "message": "Inani Loguqulelo lomsebenzi" }
+  "optionDesc_version": { "message": "Inani Loguqulelo lomsebenzi" },
+  "optionDesc_stats": { "message": "Bonisa izibalo ze-npm" }
 }

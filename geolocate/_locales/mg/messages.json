@@ -45,5 +45,6 @@
   "optionDesc_quiet": { "message": "Hanafoana ny logging rehetra afa-tsy fahadisoana" },
   "optionDesc_init": { "message": "Mamorona raki-kirakira (ao amin'ny fototry ny tetikasa)" },
   "optionDesc_help": { "message": "Asehoy ny efijerin'ny toro-làlana" },
-  "optionDesc_version": { "message": "Asehoy ny isan'ny kinova" }
+  "optionDesc_version": { "message": "Asehoy ny isan'ny kinova" },
+  "optionDesc_stats": { "message": "Asehoy ny stats npm" }
 }

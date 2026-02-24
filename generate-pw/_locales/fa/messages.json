@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "همه گزارش‌ها به جز خطاها را سرکوب کنید" },
   "optionDesc_help": { "message": "نمایش صفحه راهنما" },
   "optionDesc_init": { "message": "ایجاد فایل پیکربندی (در ریشه پروژه)" },
-  "optionDesc_version": { "message": "نمایش شماره نسخه" }
+  "optionDesc_version": { "message": "نمایش شماره نسخه" },
+  "optionDesc_stats": { "message": "نمایش آمار npm" }
 }

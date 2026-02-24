@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "Kunoza IDOSIYE" },
   "optionDesc_init": { "message": "IDOSIYE in Umushinga Imizi" },
   "optionDesc_help": { "message": "Erekana ubufasha bwa ecran" },
-  "optionDesc_version": { "message": "Erekana nimero ya verisiyo" }
+  "optionDesc_version": { "message": "Erekana nimero ya verisiyo" },
+  "optionDesc_stats": { "message": "Sitatisitiki" }
 }

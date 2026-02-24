@@ -22,6 +22,7 @@
     if (cli.config.init) return init.configFile()
     else if (cli.config.help) return log.help()
     else if (cli.config.version) return log.version()
+    else if (cli.config.stats) return log.stats()
 
     // Copy random PASSWORD(s)
     const genOptions = {
@@ -39,7 +40,8 @@
         entropy: cli.config.entropy,
         verbose: !cli.config.quietMode
     }
+    log.break()
     clipboardy.writeSync([].concat(generatePassword(genOptions)).join('\n'))
-    log.ifNotQuiet(`\n${cli.msgs.info_copyingToClip}...`)
+    log.ifNotQuiet(`${cli.msgs.info_copyingToClip}...`)
 
 })()

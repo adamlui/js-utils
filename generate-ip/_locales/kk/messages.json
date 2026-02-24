@@ -46,5 +46,6 @@
   "optionDesc_quiet": { "message": "Қателерден басқа барлық жүйеге кіруді болдырмау" },
   "optionDesc_init": { "message": "Конфигурация файлын құру (жоба түбірінде)" },
   "optionDesc_help": { "message": "Анықтама экранын көрсету" },
-  "optionDesc_version": { "message": "Нұсқасының нөмірі" }
+  "optionDesc_version": { "message": "Нұсқасының нөмірі" },
+  "optionDesc_stats": { "message": "NPM статистикасын көрсету" }
 }

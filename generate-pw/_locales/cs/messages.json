@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "Potlačit veškeré protokolování kromě chyb" },
   "optionDesc_help": { "message": "Zobrazit obrazovku nápovědy" },
   "optionDesc_init": { "message": "Vytvořit konfigurační soubor (v kořenovém adresáři projektu)" },
-  "optionDesc_version": { "message": "Zobrazí číslo verze" }
+  "optionDesc_version": { "message": "Zobrazí číslo verze" },
+  "optionDesc_stats": { "message": "Zobrazit statistiky npm" }
 }

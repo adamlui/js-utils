@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "Pelê mîhengkirina xwerû bar bike" },
   "optionDesc_init": { "message": "Pelê mîhengkirinê biafirîne (di rootê projeyê de)" },
   "optionDesc_help": { "message": "Dîmendera alîkariyê nîşan bide" },
-  "optionDesc_version": { "message": "IRQ" }
+  "optionDesc_version": { "message": "IRQ" },
+  "optionDesc_stats": { "message": "Statîstîkên npm nîşan bide" }
 }

@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "加载自定义配置文件" },
   "optionDesc_init": { "message": "创建配置文件（在项目根目录中）" },
   "optionDesc_help": { "message": "显示帮助屏幕" },
-  "optionDesc_version": { "message": "显示版本号" }
+  "optionDesc_version": { "message": "显示版本号" },
+  "optionDesc_stats": { "message": "显示npm统计数据" }
 }

@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "Muat fail konfigurasi tersuai" },
   "optionDesc_init": { "message": "Cipta fail konfigurasi (dalam akar projek)" },
   "optionDesc_help": { "message": "Papar skrin bantuan" },
-  "optionDesc_version": { "message": "Nombor Versi" }
+  "optionDesc_version": { "message": "Nombor Versi" },
+  "optionDesc_stats": { "message": "Tunjukkan statistik npm" }
 }

@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "ብውልቂ እተዳለወ ፋይል ኣንብር" },
   "optionDesc_init": { "message": "ናይ ውህደት ፋይል ፍጠር (ኣብ ናይ ፕሮጀክት ሱር)" },
   "optionDesc_help": { "message": "ናይ ሓገዝ ስክሪን ኣርኢ" },
-  "optionDesc_version": { "message": "ናይ ቅጅል ቁጽሪ ኣርኢ" }
+  "optionDesc_version": { "message": "ናይ ቅጅል ቁጽሪ ኣርኢ" },
+  "optionDesc_stats": { "message": "NPM ስታቲስቲክስ ኣርኢ" }
 }

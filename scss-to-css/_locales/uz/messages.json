@@ -66,5 +66,6 @@
   "optionDesc_config": { "message": "Maxsus konfiguratsiya faylini yuklash" },
   "optionDesc_init": { "message": "Konfiguratsiya faylini yarating (loyiha ildizida)" },
   "optionDesc_help": { "message": "Yordam ekranini ko'rsatish" },
-  "optionDesc_version": { "message": "Boʻsh joy" }
+  "optionDesc_version": { "message": "Boʻsh joy" },
+  "optionDesc_stats": { "message": "npm statistikasini ko'rsatish" }
 }

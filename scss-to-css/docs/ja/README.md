@@ -162,6 +162,7 @@ $ scss-to-css input_folder output_folder
  -i, --init                               設定ファイルを作成する（プロジェクトルートに作成されます）。
  -h, --help                               ヘルプ画面を表示します。
  -v, --version                            バージョン番号を表示します。
+     --stats                              npm の統計を表示します。
 ```
 
 #

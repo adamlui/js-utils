@@ -46,5 +46,6 @@
   "optionDesc_quiet": { "message": "Սեղմեք բոլոր տեղեկամատյանները, բացի սխալներից" },
   "optionDesc_init": { "message": "Ստեղծել կոնֆիգուրացիոն ֆայլ (նախագծի արմատում)" },
   "optionDesc_help": { "message": "Ցուցադրել օգնության էկրանը" },
-  "optionDesc_version": { "message": "Ցույց տալ տարբերակի համարը" }
+  "optionDesc_version": { "message": "Ցույց տալ տարբերակի համարը" },
+  "optionDesc_stats": { "message": "Ցույց տալ NPM վիճակագրությունը" }
 }

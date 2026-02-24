@@ -66,5 +66,6 @@
   "optionDesc_config": { "message": "Φόρτωση προσαρμοσμένου αρχείου διαμόρφωσης" },
   "optionDesc_init": { "message": "Δημιουργία αρχείου διαμόρφωσης (στη ρίζα του έργου)" },
   "optionDesc_help": { "message": "Εμφάνιση οθόνης βοήθειας" },
-  "optionDesc_version": { "message": "k" }
+  "optionDesc_version": { "message": "k" },
+  "optionDesc_stats": { "message": "Εμφάνιση στατιστικών npm" }
 }

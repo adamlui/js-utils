@@ -44,7 +44,9 @@ module.exports = {
         help: {
             type: 'cmd', regex: /^--?h(?:elp)?$/ },
         version: {
-            type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ }
+            type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ },
+        stats: {
+            type: 'cmd', regex: /^--?stats?$/ }
     },
 
     load(ctrlKeys = Object.keys(this.controls)) {

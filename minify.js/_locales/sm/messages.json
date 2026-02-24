@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "Load patino config faila" },
   "optionDesc_init": { "message": "Fausia config faila (i le galuega faatino root)" },
   "optionDesc_help": { "message": "Faaali atu le lau fesoasoani" },
-  "optionDesc_version": { "message": "Faaali atu le numera o le lomiga" }
+  "optionDesc_version": { "message": "Faaali atu le numera o le lomiga" },
+  "optionDesc_stats": { "message": "Faaali atu npm fuainumera" }
 }

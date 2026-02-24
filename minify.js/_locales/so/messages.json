@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "U rar faylka qaabeynta caadada" },
   "optionDesc_init": { "message": "Samee faylka qaabeynta (ee xididka mashruuca)" },
   "optionDesc_help": { "message": "Muuji shaashadda caawinta" },
-  "optionDesc_version": { "message": "Lambarka Nooca" }
+  "optionDesc_version": { "message": "Lambarka Nooca" },
+  "optionDesc_stats": { "message": "Muuji tirakoobka npm" }
 }

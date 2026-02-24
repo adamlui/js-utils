@@ -46,5 +46,6 @@
   "optionDesc_quiet": { "message": "غلطیوں کے علاوہ تمام لاگنگ کو دبائیں" },
   "optionDesc_init": { "message": "کنفیگ فائل بنائیں (پروجیکٹ روٹ میں)" },
   "optionDesc_help": { "message": "مدد کی اسکرین ڈسپلے کریں" },
-  "optionDesc_version": { "message": "ورژن نمبر دکھائیں" }
+  "optionDesc_version": { "message": "ورژن نمبر دکھائیں" },
+  "optionDesc_stats": { "message": "Npm کے اعدادوشمار دکھائیں" }
 }

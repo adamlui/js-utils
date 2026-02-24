@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "Kargatu konfigurazio fitxategi pertsonalizatua" },
   "optionDesc_init": { "message": "Konfigurazio fitxategia sortu (proiektuaren erroan)" },
   "optionDesc_help": { "message": "Bistaratu laguntza-pantaila" },
-  "optionDesc_version": { "message": "Bertsio zenbakia" }
+  "optionDesc_version": { "message": "Bertsio zenbakia" },
+  "optionDesc_stats": { "message": "Erakutsi npm estatistikak" }
 }

@@ -55,7 +55,7 @@ module.exports = {
             require('node-clipboardy').writeSync(minifyData[0].code)
 
         } else { // write array data to files
-            log.ifNotQuiet(`\n${cli.msgs.info_writing}${ minifyData?.length > 1 ? 's' : '' }...`)
+            log.ifNotQuiet(`${cli.msgs.info_writing}${ minifyData?.length > 1 ? 's' : '' }...`)
             minifyData?.forEach(({ code, srcPath, relPath }) => {
                 let outputDir, outputFilename
                 if (!cli.config.relativeOutput && relPath) { // preserve folder structure

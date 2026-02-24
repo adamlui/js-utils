@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "Aizliegt visu reģistrēšanu, izņemot kļūdas" },
   "optionDesc_help": { "message": "Parādīt palīdzības ekrānu" },
   "optionDesc_init": { "message": "Izveidot konfigurācijas failu (projekta saknē)" },
-  "optionDesc_version": { "message": "Versijas numurs" }
+  "optionDesc_version": { "message": "Versijas numurs" },
+  "optionDesc_stats": { "message": "Rādīt npm statistiku" }
 }

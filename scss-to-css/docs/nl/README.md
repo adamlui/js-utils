@@ -162,6 +162,7 @@ Commando's:
  -i, --init                               Maak een configuratiebestand aan (in de projectmap).
  -h, --help                               Helpscherm weergeven.
  -v, --version                            Versienummer weergeven.
+     --stats                              Toon npm-statistieken.
 ```
 
 #

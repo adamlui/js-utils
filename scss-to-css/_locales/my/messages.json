@@ -66,5 +66,6 @@
   "optionDesc_config": { "message": "စိတ်ကြိုက် config ဖိုင်ကို ဖွင့်ပါ" },
   "optionDesc_init": { "message": "Config ဖိုင်ကိုဖန်တီးပါ (ပရောဂျက်အမြစ်တွင်)" },
   "optionDesc_help": { "message": "အကူအညီ မျက်နှာပြင်ကို ပြသပါ" },
-  "optionDesc_version": { "message": "ဗားရှင်းနံပါတ်" }
+  "optionDesc_version": { "message": "ဗားရှင်းနံပါတ်" },
+  "optionDesc_stats": { "message": "NPM ကိန်းဂဏန်းများကို ပြပါ" }
 }

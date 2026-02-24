@@ -157,6 +157,7 @@ $ minify-js input_folder output_folder
      --init                           ਕੌਂਫਿਗ ਫਾਈਲ ਬਣਾਓ (ਪ੍ਰੋਜੈਕਟ ਰੂਟ ਵਿੱਚ)।
  -h, --help                           ਡਿਸਪਲੇ ਮਦਦ ਸਕ੍ਰੀਨ।
  -v, --version                        ਵਰਜਨ ਨੰਬਰ ਦਿਖਾਓ।
+     --stats                          npm ਅੰਕੜੇ ਦਿਖਾਓ।
 ```
 
 #

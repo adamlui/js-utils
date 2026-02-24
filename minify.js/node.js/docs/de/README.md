@@ -158,6 +158,7 @@ Befehle:
      --init                           Konfigurationsdatei erstellen (im Projektstammverzeichnis).
  -h, --help                           Hilfebildschirm anzeigen.
  -v, --version                        Versionsnummer anzeigen.
+     --stats                          npm-Statistiken anzeigen.
 ```
 
 #

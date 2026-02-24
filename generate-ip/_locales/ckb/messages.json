@@ -46,5 +46,6 @@
   "optionDesc_quiet": { "message": "سڕینەوەی هەموو هەڵەکان جگە لە هەڵەکان" },
   "optionDesc_init": { "message": "دروستکردنی پەڕگەی ڕێکخستن (لە ڕەگی پرۆژەدا)" },
   "optionDesc_help": { "message": "پیشاندانی شاشەی یارمەتی" },
-  "optionDesc_version": { "message": "ژمارەی وەشان پیشان بدە" }
+  "optionDesc_version": { "message": "ژمارەی وەشان پیشان بدە" },
+  "optionDesc_stats": { "message": "دۆخی NPM پیشان بدە" }
 }

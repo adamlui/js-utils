@@ -22,6 +22,7 @@
     if (cli.config.init) return init.configFile()
     else if (cli.config.help) return log.help()
     else if (cli.config.version) return log.version()
+    else if (cli.config.stats) return log.stats()
 
     // Process IP args
     const validIPs = []
@@ -29,10 +30,11 @@
         validIPs.push(arg.replace(/[[\]]/g, '')) // strip outer '[]' in case copied from docs
 
     // Log/copy GEO result(s)
+    log.break()
     const geoResults = await geo.locate(validIPs, { verbose: !cli.config.quietMode })
     if (!geoResults) process.exit(1)
     if (!cli.config.quietMode && geoResults.length == 1) log.geoData(geoResults[0])
-    log.ifNotQuiet(`\n${cli.msgs.info_copyingToClip}...`)
+    log.ifNotQuiet(`${cli.msgs.info_copyingToClip}...`)
     clipboardy.writeSync(JSON.stringify(geoResults, null, 2))
 
 })()

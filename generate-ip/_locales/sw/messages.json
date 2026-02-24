@@ -46,5 +46,6 @@
   "optionDesc_quiet": { "message": "Zima ukataji wote wa magogo isipokuwa hitilafu" },
   "optionDesc_init": { "message": "Unda faili ya usanidi (katika mizizi ya mradi)" },
   "optionDesc_help": { "message": "Onyesha skrini ya usaidizi" },
-  "optionDesc_version": { "message": "Onyesha nambari ya toleo" }
+  "optionDesc_version": { "message": "Onyesha nambari ya toleo" },
+  "optionDesc_stats": { "message": "Onyesha takwimu za npm" }
 }

@@ -158,6 +158,7 @@ $ minify-js input_folder output_folder
      --init                           创建配置文件（位于项目根目录）。
  -h, --help                           显示帮助屏幕。
  -v, --version                        显示版本号。
+     --stats                          显示 npm 统计信息。
 ```
 
 #

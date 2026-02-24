@@ -170,6 +170,7 @@ Commands:
  -i, --init                  Create config file (in project root).
  -h, --help                  Display help screen.
  -v, --version               Show version number.
+     --stats                 Show npm stats.
 ```
 
 #

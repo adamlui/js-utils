@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "Բեռնել անհատականացված կոնֆիգուրացիոն ֆայլը" },
   "optionDesc_init": { "message": "Ստեղծել կոնֆիգուրացիոն ֆայլ (նախագծի արմատում)" },
   "optionDesc_help": { "message": "Ցուցադրել օգնության էկրանը" },
-  "optionDesc_version": { "message": "Ցույց տալ տարբերակի համարը" }
+  "optionDesc_version": { "message": "Ցույց տալ տարբերակի համարը" },
+  "optionDesc_stats": { "message": "Ցույց տալ NPM վիճակագրությունը" }
 }

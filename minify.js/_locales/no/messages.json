@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "Last inn tilpasset konfigurasjonsfil" },
   "optionDesc_init": { "message": "Opprett konfigurasjonsfil (i prosjektroten)" },
   "optionDesc_help": { "message": "Vis hjelpeskjermen" },
-  "optionDesc_version": { "message": "Vis versjonsnummer" }
+  "optionDesc_version": { "message": "Vis versjonsnummer" },
+  "optionDesc_stats": { "message": "Vis npm-statistikk" }
 }

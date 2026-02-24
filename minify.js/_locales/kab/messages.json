@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "Sers afaylu n uγewwaṛ yettwakelsen" },
   "optionDesc_init": { "message": "Snulfu afaylu n usebter (deg uẓar n usebter)" },
   "optionDesc_help": { "message": "Sken allen n tallelt" },
-  "optionDesc_version": { "message": "Sken uṭṭun n usebter" }
+  "optionDesc_version": { "message": "Sken uṭṭun n usebter" },
+  "optionDesc_stats": { "message": "Sken istekkiyen npm" }
 }

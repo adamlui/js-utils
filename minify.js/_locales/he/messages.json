@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "טעינת קובץ תצורה מותאם אישית" },
   "optionDesc_init": { "message": "צור קובץ תצורה (בשורש הפרויקט)" },
   "optionDesc_help": { "message": "הצג מסך עזרה" },
-  "optionDesc_version": { "message": "גרסה" }
+  "optionDesc_version": { "message": "גרסה" },
+  "optionDesc_stats": { "message": "הצגת נתונים סטטיסטיים של npm" }
 }

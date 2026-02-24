@@ -67,5 +67,6 @@
   "optionDesc_config": { "message": "Cargar un ficheiro de configuración personalizado" },
   "optionDesc_init": { "message": "Crear un ficheiro de configuración (na raíz do proxecto)" },
   "optionDesc_help": { "message": "Mostrar a pantalla de axuda" },
-  "optionDesc_version": { "message": "Número de versión" }
+  "optionDesc_version": { "message": "Número de versión" },
+  "optionDesc_stats": { "message": "Mostrar as estatísticas de npm" }
 }

@@ -53,5 +53,6 @@
   "optionDesc_quiet": { "message": "פאַרשטיקן אַלע לאָגינג אַחוץ ערראָרס" },
   "optionDesc_help": { "message": "ווייַז הילף פאַרשטעלן" },
   "optionDesc_init": { "message": "שאַפֿן קאָנפֿיג טעקע (אין פּראָיעקט וואָרצל)" },
-  "optionDesc_version": { "message": "ווייַזן ווערסיע נומער" }
+  "optionDesc_version": { "message": "ווייַזן ווערסיע נומער" },
+  "optionDesc_stats": { "message": "ווייַזן npm סטאַטיסטיק" }
 }
