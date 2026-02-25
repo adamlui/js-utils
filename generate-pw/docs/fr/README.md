@@ -25,8 +25,8 @@
     <img height=31 src="https://img.shields.io/npm/dm/generate-pw?label=T%C3%A9l%C3%A9chargements&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-license">
     <img height=31 src="https://img.shields.io/badge/Licence-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.1.2">
-    <img height=31 src="https://img.shields.io/badge/Dernière_version-2.1.2-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.2.0">
+    <img height=31 src="https://img.shields.io/badge/Dernière_version-2.2.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/generate-pw?activeTab=code">
     <img height=31 src="https://img.shields.io/npm/unpacked-size/generate-pw?style=for-the-badge&logo=ebox&logoColor=white&labelColor=464646&color=blue&label=Taille%20d%C3%A9ball%C3%A9e"></a>
 <a href="#">
@@ -94,14 +94,14 @@ const pw = require('generate-pw')
 #### <> Balise de script HTML:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/generate-pw@2.1.2/dist/generate-pw.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/generate-pw@2.2.0/dist/generate-pw.min.js"></script>
 ```
 
 #### ES6:
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@2.1.2/dist/generate-pw.min.js')
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@2.2.0/dist/generate-pw.min.js')
     // Votre code ici...
 })()
 ```
@@ -110,7 +110,7 @@ const pw = require('generate-pw')
 
 ```js
 ...
-// @require https://cdn.jsdelivr.net/npm/generate-pw@2.1.2/dist/generate-pw.min.js
+// @require https://cdn.jsdelivr.net/npm/generate-pw@2.2.0/dist/generate-pw.min.js
 // ==/UserScript==
 
 // Votre code ici...
@@ -118,7 +118,7 @@ const pw = require('generate-pw')
 
 <br>
 
-**💡 Remarque:** Pour toujours importer la dernière version (non recommandé en production!), supprimez la balise de version `@2.1.2` de l'URL jsDelivr: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
+**💡 Remarque:** Pour toujours importer la dernière version (non recommandé en production!), supprimez la balise de version `@2.2.0` de l'URL jsDelivr: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
 
 <br>
 

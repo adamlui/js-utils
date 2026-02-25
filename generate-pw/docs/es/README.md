@@ -25,8 +25,8 @@
     <img height=31 src="https://img.shields.io/npm/dm/generate-pw?label=Descargas&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-licencia-mit">
     <img height=31 src="https://img.shields.io/badge/Licencia-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.1.2">
-    <img height=31 src="https://img.shields.io/badge/Ultima_Versión-2.1.2-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.2.0">
+    <img height=31 src="https://img.shields.io/badge/Ultima_Versión-2.2.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/generate-pw?activeTab=code">
     <img height=31 src="https://img.shields.io/npm/unpacked-size/generate-pw?style=for-the-badge&logo=ebox&logoColor=white&labelColor=464646&color=blue&label=Tama%C3%B1o%20Desempaquetado"></a>
 <a href="#">
@@ -94,14 +94,14 @@ const pw = require('generate-pw')
 #### <> Etiqueta de secuencia de comandos HTML:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/generate-pw@2.1.2/dist/generate-pw.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/generate-pw@2.2.0/dist/generate-pw.min.js"></script>
 ```
 
 #### ES6:
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@2.1.2/dist/generate-pw.min.js')
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@2.2.0/dist/generate-pw.min.js')
     // Tu código aquí...
 })()
 ```
@@ -110,7 +110,7 @@ const pw = require('generate-pw')
 
 ```js
 ...
-// @require https://cdn.jsdelivr.net/npm/generate-pw@2.1.2/dist/generate-pw.min.js
+// @require https://cdn.jsdelivr.net/npm/generate-pw@2.2.0/dist/generate-pw.min.js
 // ==/UserScript==
 
 // Tu código aquí...
@@ -118,7 +118,7 @@ const pw = require('generate-pw')
 
 <br>
 
-**💡 Nota:** Para importar siempre la última versión (¡no se recomienda en producción!), elimine la etiqueta de versión `@2.1.2` de la URL de jsDelivr: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
+**💡 Nota:** Para importar siempre la última versión (¡no se recomienda en producción!), elimine la etiqueta de versión `@2.2.0` de la URL de jsDelivr: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
 
 <br>
 

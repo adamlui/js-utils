@@ -25,8 +25,8 @@
     <img height=31 src="https://img.shields.io/npm/dm/generate-pw?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-license">
     <img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.1.2">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-2.1.2-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.2.0">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-2.2.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/generate-pw?activeTab=code">
     <img height=31 src="https://img.shields.io/npm/unpacked-size/generate-pw?style=for-the-badge&logo=ebox&logoColor=white&labelColor=464646&color=blue"></a>
 <a href="#">
@@ -94,14 +94,14 @@ const pw = require('generate-pw')
 #### <> HTML script tag:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/generate-pw@2.1.2/dist/generate-pw.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/generate-pw@2.2.0/dist/generate-pw.min.js"></script>
 ```
 
 #### ES6:
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@2.1.2/dist/generate-pw.min.js')
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@2.2.0/dist/generate-pw.min.js')
     // Your code here...
 })()
 ```
@@ -110,7 +110,7 @@ const pw = require('generate-pw')
 
 ```js
 ...
-// @require https://cdn.jsdelivr.net/npm/generate-pw@2.1.2/dist/generate-pw.min.js
+// @require https://cdn.jsdelivr.net/npm/generate-pw@2.2.0/dist/generate-pw.min.js
 // ==/UserScript==
 
 // Your code here...
@@ -118,7 +118,7 @@ const pw = require('generate-pw')
 
 <br>
 
-**💡 Note:** To always import the latest version (not recommended in production!) remove the `@2.1.2` version tag from the jsDelivr URL: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
+**💡 Note:** To always import the latest version (not recommended in production!) remove the `@2.2.0` version tag from the jsDelivr URL: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
 
 <br>
 
