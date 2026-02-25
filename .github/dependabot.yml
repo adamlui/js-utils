@@ -23,3 +23,15 @@ updates:
       dev-dependencies:
         dependency-type: development
     versioning-strategy: increase
+
+  - package-ecosystem: pip
+    directories:
+      - generate-ip/
+      - generate-pw/
+      - geolocate/
+      - minify.js/gulp/
+      - minify.js/node.js/
+      - scss-to-css/
+    schedule:
+      interval: daily
+    versioning-strategy: increase
