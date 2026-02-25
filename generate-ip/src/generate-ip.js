@@ -47,7 +47,7 @@ const ipv4 = {
                     ips.push(this.generate({ ...options, qty: 1, verbose: false }))
             else { // generate single IP
                 const segments = []
-                for (let i = 0 ; i < 4 ; i++) segments.push(random.int(0, 256))
+                for (let i = 0 ; i < 4 ; i++) segments.push(_random.int(0, 256))
                 ips.push(segments.join('.'))
             }
         }
@@ -141,7 +141,7 @@ const ipv6 = {
                     ips.push(this.generate({ ...options, qty: 1, verbose: false }))
             else { // generate single IP
                 const pieces = [], { qty, sequential, network, ...usefulOptions } = options // eslint-disable-line no-unused-vars
-                for (let i = 0 ; i < 8 ; i++) pieces.push(random.hex(4))
+                for (let i = 0 ; i < 8 ; i++) pieces.push(_random.hex(4))
                 ips.push(this.format(pieces.join(':'), { ...usefulOptions, verbose: false }))
             }
         }
@@ -297,7 +297,7 @@ const mac = {
                     macAddresses.push(this.generate({ ...options, qty: 1, verbose: false }))
             else { // generate single MAC address
                 const [prefix, suffix] = Array.from({ length: 2 }, () => {
-                    const parts = [] ; for (let i = 0 ; i < 3 ; i++) parts.push(random.hex(2))
+                    const parts = [] ; for (let i = 0 ; i < 3 ; i++) parts.push(_random.hex(2))
                     return parts.join(':')
                 })
                 macAddresses.push(`${prefix}:${suffix}`)
@@ -375,7 +375,7 @@ function _validateOptions({ options, defaultOptions, helpURL, exampleCall }) {
     return true
 }
 
-const random = {
+const _random = {
     int(min, max) {
         if (typeof require == 'undefined') { // use browser crypto API || Math.random()
             const browserCrypto = window.crypto || window.msCrypto,
@@ -387,7 +387,7 @@ const random = {
 
     hex(digits) {
         let hex = ''
-        for (let i = 0 ; i < digits ; i++) hex += random.int(0, 16).toString(16)
+        for (let i = 0 ; i < digits ; i++) hex += _random.int(0, 16).toString(16)
         return hex
     }
 }
