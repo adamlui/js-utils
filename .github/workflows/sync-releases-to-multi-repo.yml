@@ -73,7 +73,7 @@ jobs:
           # Publish new or update existing release
           echo "Publishing release..."
           RELEASE_NOTES+="\n\n###### _Auto-synced from https://github.com/adamlui/js-utils/releases"
-          RELEASE_NOTES+=" by [kudo-sync-bot](https://github.com/kudo-sync-bot)_"
+          RELEASE_NOTES+=" by_ :robot: [kudo-sync-bot](https://github.com/kudo-sync-bot)"
 
           if [ "$RELEASE_EXISTS" = false ] ; then
             # CREATE new release
