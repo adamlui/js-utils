@@ -50,9 +50,9 @@ function findSCSS(searchDir, options = {}) {
         _log.info('Searching for files...')
     dirFiles.forEach(file => {
         const filePath = path.resolve(searchDir, file)
-        const shouldIgnore = options.ignores.some(ignore => {
+        const shouldIgnore = options.ignores?.length && options.ignores.filter(Boolean).some(ignore => {
             ignore = ignore.replace(/\/$/, '')
-            return file == ignore || filePath.split(path.sep).some(part => part == ignore)
+            return file == ignore || filePath.split(path.sep).includes(ignore)
         })
         if (shouldIgnore) {
             if (options.verbose) _log.info(`** ${file} ignored`)
