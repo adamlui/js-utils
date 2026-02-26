@@ -35,7 +35,7 @@ module.exports = {
         help: { type: 'cmd', regex: /^--?h(?:elp)?$/ },
         version: { type: 'cmd', regex: /^--?ve?r?s?i?o?n?$/ },
         stats: { type: 'cmd', regex: /^--?stats?$/ },
-        entropy: { legacy: true, type: 'flag', replacedBy: 'noEntropy', regex: /^--?e(?:ntropy)?$/ }
+        legacy_entropy: { type: 'flag', replacedBy: 'noEntropy', regex: /^--?e(?:ntropy)?$/ }
     },
 
     isNegKey(key) { return /^(?:no|disable|exclude)[A-Z]/.test(key) },
@@ -45,7 +45,7 @@ module.exports = {
 
         if (!cli.defaultsSet && !arguments.length) { // init all defaults on arg-less load()
             inputCtrlKeys.forEach(key => {
-                const ctrl = this.controls[key] ; if (ctrl.mode || ctrl.legacy) return
+                const ctrl = this.controls[key] ; if (ctrl.mode || key.startsWith('legacy')) return
                 cli.config[key] ??= ctrl.defaultVal ?? ( ctrl.type == 'param' ? '' : false )
             })
             cli.defaultsSet = true
@@ -84,7 +84,7 @@ module.exports = {
                         if (this.configFileKeyWhitelist && !this.configFileKeyWhitelist.includes(key))
                             log.invalidConfigKey(key)
                         return
-                    } else if (ctrl.legacy && ctrl.replacedBy) {
+                    } else if (key.startsWith('legacy') && ctrl.replacedBy) {
                         if (this.isNegKey(key) != this.isNegKey(ctrl.replacedBy))
                             cli.config[ctrl.replacedBy] = !val  // assign opposite val to current key
                         else // assign direct val to current key
@@ -103,8 +103,8 @@ module.exports = {
             const ctrlKey = Object.keys(this.controls).find(key => this.controls[key]?.regex?.test(arg))
             if (!ctrlKey && cli.msgs) log.errorAndExit(`[${arg}] ${cli.msgs.error_notRecognized}.`)
             if (!inputCtrlKeys.includes(ctrlKey)) return // don't process env.args when load() specific keys
+            if (ctrlKey.startsWith('legacy')) { log.argDoesNothing(arg) ; continue }
             const ctrl = this.controls[ctrlKey]
-            if (ctrl.legacy) { log.argDoesNothing(arg) ; continue }
             if (ctrl.mode) // set cli.config.mode to mode name
                 cli.config.mode = ctrlKey.replace(/mode$/i, '').toLowerCase()
             else { // init flag/param/cmd cli.config[ctrlKey] val
