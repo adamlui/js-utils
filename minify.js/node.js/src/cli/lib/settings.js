@@ -96,7 +96,7 @@ module.exports = {
                             log.invalidConfigKey(key)
                         return
                     } else if (ctrl.legacy && ctrl.replacedBy) {
-                        if (key.toLowerCase().includes('no') != ctrl.replacedBy.toLowerCase().includes('no'))
+                        if (this.isNegKey(key) != this.isNegKey(ctrl.replacedBy))
                             cli.config[ctrl.replacedBy] = !val  // assign opposite val to current key
                         else // assign direct val to current key
                             cli.config[ctrl.replacedBy] = val
