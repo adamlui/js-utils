@@ -156,7 +156,7 @@ Name         | Type    | Description                                            
 `verbose`    | Boolean | Show logging in console/terminal.                        | `true`
 `qty`        | Integer | Number of IP addresses to generate.                      | `1`
 `sequential` | Boolean | Generate addresses in sequence.                          | `false`
-`network`    | String  | starting network address (required for sequential mode). | `null`
+`network`    | String  | Starting network address (required for sequential mode). | `null`
 
 #
 
