@@ -27,7 +27,7 @@
 
 ### सर्व SCSS फाईल्स minified CSS मध्ये पुनरावृत्तीने संकलित करा.
 
-<a href="https://www.npmjs.com/package/@adamlui/scss-to-css">
+<a href="https://npmstar.com/compare/@adamlui%2Fscss-to-css">
     <img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-%E0%A4%AA%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%A8%E0%A4%BE">
     <img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>

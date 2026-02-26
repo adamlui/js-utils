@@ -21,7 +21,7 @@
 
 ### Generieren, stärken und validieren Sie kryptografisch sichere Passwörter nach dem Zufallsprinzip.
 
-<a href="https://www.npmjs.com/package/generate-pw">
+<a href="https://npmstar.com/compare/generate-pw">
     <img height=31 src="https://img.shields.io/npm/dm/generate-pw?label=Herunterladungen&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-lizenz">
     <img height=31 src="https://img.shields.io/badge/Lizenz-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>

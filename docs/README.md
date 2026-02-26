@@ -2,7 +2,7 @@
 
 # 🛠️ JavaScript utilities
 
-<a href="#">
+<a href="https://npmstar.com/compare/@adamlui%2Fgeolocate-vs-@adamlui%2Fminify.js-vs-@adamlui%2Fscss-to-css-vs-generate-ip-vs-generate-pw-vs-gulp-minify.js?timeRange=all">
     <img height=31 src="https://img.shields.io/badge/Downloads-8.6K/month-44cc11.svg?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
 <a href="LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>

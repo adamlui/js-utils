@@ -23,7 +23,7 @@
 
 ### Recursively minify all JavaScript files
 
-<a href="https://www.npmjs.com/package/@adamlui/minify.js">
+<a href="https://npmstar.com/compare/@adamlui%2Fminify.js">
     <img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fminify.js?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-license">
     <img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>

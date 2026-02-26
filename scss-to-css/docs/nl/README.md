@@ -27,7 +27,7 @@
 
 ### Compileer alle SCSS-bestanden recursief in verkleinde CSS.
 
-<a href="https://www.npmjs.com/package/@adamlui/scss-to-css">
+<a href="https://npmstar.com/compare/@adamlui%2Fscss-to-css">
     <img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-licentie">
     <img height=31 src="https://img.shields.io/badge/Licentie-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>

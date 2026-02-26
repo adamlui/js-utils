@@ -21,7 +21,7 @@
 
 ### 随机生成、强化和验证加密安全密码。
 
-<a href="https://www.npmjs.com/package/generate-pw">
+<a href="https://npmstar.com/compare/generate-pw">
     <img height=31 src="https://img.shields.io/npm/dm/generate-pw?label=%E4%B8%8B%E8%BD%BD&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-%E8%AE%B8%E5%8F%AF%E8%AF%81">
     <img height=31 src="https://img.shields.io/badge/许可证-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>

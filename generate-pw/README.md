@@ -21,7 +21,7 @@
 
 ### Randomly generate, strengthen, and validate cryptographically-secure passwords.
 
-<a href="https://www.npmjs.com/package/generate-pw">
+<a href="https://npmstar.com/compare/generate-pw">
     <img height=31 src="https://img.shields.io/npm/dm/generate-pw?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-license">
     <img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>

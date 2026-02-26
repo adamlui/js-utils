@@ -21,7 +21,7 @@
 
 ### क्रिप्टोग्राफ़िक रूप से सुरक्षित पासवर्ड को बेतरतीब ढंग से उत्पन्न, मजबूत और मान्य करें।
 
-<a href="https://www.npmjs.com/package/generate-pw">
+<a href="https://npmstar.com/compare/generate-pw">
     <img height=31 src="https://img.shields.io/npm/dm/generate-pw?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-लाइसेंस">
     <img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
