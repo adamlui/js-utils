@@ -1,11 +1,11 @@
 module.exports = {
 
-    pkgVerURL(version) {
+    getPkgVerURL(version) {
         version ||= cli.version ||= require('./pkg').getVer('local') || 'none'
         const pkgName = cli.name.split('/')[1],
               verTag = !/^\d+\.\d+\.\d+$/.test(version) ? 'latest' : `${pkgName}-${version}`
         return `${cli.urls.jsdelivr}@${verTag}/${pkgName}`
     },
 
-    commitURL(hash = 'latest') { return `${cli.urls.jsdelivr}@${hash}/${cli.name.split('/')[1]}` }
+    getCommitURL(hash = 'latest') { return `${cli.urls.jsdelivr}@${hash}/${cli.name.split('/')[1]}` }
 }
