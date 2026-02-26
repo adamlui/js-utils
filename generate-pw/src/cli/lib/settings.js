@@ -38,6 +38,8 @@ module.exports = {
         entropy: { legacy: true, type: 'flag', replacedBy: 'noEntropy', regex: /^--?e(?:ntropy)?$/ }
     },
 
+    isNegKey(key) { return /^(?:no|disable|exclude)[A-Z]/.test(key) },
+
     load(ctrlKeys = Object.keys(this.controls)) {
         const inputCtrlKeys = [].concat(ctrlKeys) // force array
 

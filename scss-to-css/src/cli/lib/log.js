@@ -1,5 +1,6 @@
 const colors = require('./color'),
     { getDownloads, getVer } = require('./pkg'),
+      settings = require('./settings'),
       string = require('./string')
 
 const nextMajVer = require('../../../package.json').version.replace(/^(\d+)\..*/, (_, major) => `${ +major +1 }.0.0`)
@@ -30,11 +31,10 @@ module.exports = {
             this.warn(
                 `${cli.msgs.info_configFile} ${cli.msgs.warn_option.toLowerCase()} '${oldKey}: ${oldVal}' ${
                    cli.msgs.warn_hasBeenReplacedBy} '${
-                       newKey}: ${ isNegKey(oldKey) != isNegKey(newKey) ? !oldVal : oldVal }' ${
+                       newKey}: ${ settings.isNegKey(oldKey) != settings.isNegKey(newKey) ? !oldVal : oldVal }' ${
                    cli.msgs.warn_andWillBeRemoved} @ v${nextMajVer}`
             )
             this[`${oldKey}Warned`] = true
-            function isNegKey(key) { return /^(?:no|disable|exclude)[A-Z]/.test(key) }
         }
     },
 

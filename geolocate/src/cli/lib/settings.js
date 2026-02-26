@@ -16,6 +16,8 @@ module.exports = {
         stats: { type: 'cmd', regex: /^--?stats?$/ }
     },
 
+    isNegKey(key) { return /^(?:no|disable|exclude)[A-Z]/.test(key) },
+
     load(ctrlKeys = Object.keys(this.controls)) {
         const inputCtrlKeys = [].concat(ctrlKeys) // force array
 
