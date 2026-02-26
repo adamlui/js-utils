@@ -263,7 +263,7 @@ Nom                   | Taper   | Description                                   
 
 ## 💻 Utilisation de la ligne de commande
 
-Lorsqu'il est installé [globalement](#-installation), **generate-pw** peut également être utilisé à partir de la ligne de commande. La commande de base est :
+La commande **generate-pw** peut également être utilisée directement en ligne de commande. La commande de base est :
 
 ```
 $ generate-pw

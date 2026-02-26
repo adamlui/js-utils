@@ -263,7 +263,7 @@ Nombre                | Tipo     | Descripción                                 
 
 ## 💻 Uso de la línea de comando
 
-Cuando se instala [globalmente](#-instalación), **generate-pw** también se puede usar desde la línea de comando. El comando básico es:
+**generate-pw** también se puede usar directamente desde la línea de comandos. El comando básico es:
 
 ```
 $ generate-pw

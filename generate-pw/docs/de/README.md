@@ -263,7 +263,7 @@ Name                  | Geben Sie       | ein Beschreibung                      
 
 ## 💻 Verwendung der Befehlszeile
 
-Bei [globaler](#-installation) Installation kann **generate-pw** auch über die Befehlszeile verwendet werden. Der Grundbefehl lautet:
+**generate-pw** kann auch direkt über die Kommandozeile verwendet werden. Der Basisbefehl lautet:
 
 ```
 $ generate-pw

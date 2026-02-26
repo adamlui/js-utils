@@ -259,7 +259,7 @@ validateStrength() » Check returned object for score/recommendations.
 
 ## 💻 命令列使用
 
-全域安裝時，**generate-pw** 也可以從命令列使用。 基本指令是：
+**generate-pw** 也可以直接從命令列使用。基本指令是：
 
 ```
 $ generate-pw

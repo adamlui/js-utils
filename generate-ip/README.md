@@ -356,7 +356,7 @@ Name        | Type    | Description                       | Default Value
 
 ## 💻 Command line usage
 
-When installed [globally](#-installation), **generate-ip** can also be used from the command line. The basic command is:
+**generate-ip** can also be used directly from the command line. The basic command is:
 
 ```
 $ generate-ip
