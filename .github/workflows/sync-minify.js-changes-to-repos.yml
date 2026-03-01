@@ -80,7 +80,7 @@ jobs:
 
       - name: Sync minify.js/ to adamlui/minify.js/
         run: |
-          rsync -avhr --delete --filter='P /.*' \
+          rsync -avhc --delete --filter='P /.*' \
             ${{ github.workspace }}/adamlui/js-utils/minify.js/ \
             ${{ github.workspace }}/adamlui/minify.js/
 
@@ -88,7 +88,7 @@ jobs:
         env:
           COMMIT_MSG: ${{ github.event.head_commit.message }}
         run: |
-          DELIM="EOF_$(uuidgen)"
+          DELIM="EOF_$(uuidgen)"d
           echo "ESCAPED_MSG<<$DELIM" >> "$GITHUB_ENV"
           echo "$COMMIT_MSG" | sed 's/`/\`/g' >> "$GITHUB_ENV"
           echo "$DELIM" >> "$GITHUB_ENV"
