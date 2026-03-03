@@ -19,7 +19,7 @@ module.exports = {
                 try { return JSON.parse(fs.readFileSync(localeCache, 'utf8')) } catch (err) {}
 
             // Discover pkg _locales
-            const localesDir = path.resolve(process.cwd(), '_locales')
+            const localesDir = path.resolve(__dirname, '../../../_locales')
             if (!fs.existsSync(localesDir)) return ['en']
             const locales = fs.readdirSync(localesDir, { withFileTypes: true })
                 .filter(entry => entry.isDirectory()).map(entry => entry.name)
