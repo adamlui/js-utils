@@ -51,9 +51,7 @@ module.exports = {
         locales = locales.filter(locale => !excludeSet.has(locale))
 
         // Get random language
-        let randomLang = 'en'
-        if (locales.length)
-            randomLang = locales[Math.floor(Math.random() * locales.length)]
+        const randomLang = locales.length ? locales[Math.floor(Math.random() * locales.length)] : 'en'
         log.debug(`Random language: ${randomLang}`)
 
         return randomLang
