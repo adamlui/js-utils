@@ -13,7 +13,7 @@ module.exports = {
         let locales = includes.length ? includes : (() => {
 
             // Read cache if found
-            const cacheDir = path.join(__dirname, '..', '.cache'),
+            const cacheDir = path.join(__dirname, '../../.cache'),
                   localeCache = path.join(cacheDir, 'locales.json')
             if (fs.existsSync(localeCache))
                 try { return JSON.parse(fs.readFileSync(localeCache, 'utf8')) } catch (err) {}
