@@ -47,6 +47,5 @@ module.exports = {
         })
         env.modes.debug = env.args.some(arg => /^--?(?:V|debug(?:[-_]?mode)?)$/.test(arg))
         env.paths = { libData: `../../${ env.modes.dev ? '..' : 'data' }` }
-        env.paths = { libData: `../../${ env.modes.dev ? '..' : 'data' }` }
     }
 }
