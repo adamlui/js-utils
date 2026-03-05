@@ -65,17 +65,17 @@ module.exports = {
             require(`../../${ env.modes.dev ? '../_locales/en' : 'data' }/messages.json`))
 
         if (!langCode.startsWith('en')) { // fetch non-English msgs from jsDelivr
-            const msgHostURL = `${require('./jsdelivr').getCommitURL(cli.commitHashes.locales)}/_locales`
-            let msgHref = `${msgHostURL}/${langCode}/messages.json`, msgFetchesTried = 0
+            const msgBaseURL = `${require('./jsdelivr').getCommitURL(cli.commitHashes.locales)}/_locales`
+            let msgURL = `${msgBaseURL}/${langCode}/messages.json`, msgFetchesTried = 0
             while (msgFetchesTried < 3)
                 try { // fetch remote msgs
-                    msgs = data.flatten(await (await data.fetch(msgHref)).json())
+                    msgs = data.flatten(await (await data.fetch(msgURL)).json())
                     break
                 } catch (err) { // retry up to 2X (region-stripped + EN)
                     msgFetchesTried++ ; if (msgFetchesTried >= 3) break
-                    log.debug(msgHref = langCode.includes('-') && msgFetchesTried == 1 ?
-                        msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // strip region before retrying
-                            : `${msgHostURL}/en/messages.json` // else use EN msgs
+                    log.debug(msgURL = langCode.includes('-') && msgFetchesTried == 1 ?
+                        msgURL.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // strip region before retrying
+                            : `${msgBaseURL}/en/messages.json` // else use EN msgs
                     )
                 }
         }
