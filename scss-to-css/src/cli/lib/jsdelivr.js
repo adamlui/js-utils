@@ -6,5 +6,5 @@ module.exports = {
         return `${cli.urls.jsdelivr.pkg}@${verTag}`
     },
 
-    getCommitURL(hash = 'latest') { return `${cli.urls.jsdelivr}@${hash}` }
+    getCommitURL(hash = 'latest') { return `${cli.urls.jsdelivr.pkg}@${hash}` }
 }
