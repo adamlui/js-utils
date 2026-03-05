@@ -4,12 +4,11 @@
     'use strict'
 
     // Init ENV
-    globalThis.env = { paths: { lib: './lib' }}
-    const init = require(`${env.paths.lib}/init`)
+    const init = require('./lib/init')
     init.env()
 
     // Import LIBS
-    globalThis.log = require(`${env.paths.lib}/log`)
+    globalThis.log = require('./lib/log')
     const clipboardy = require('node-clipboardy'),
         { generatePassword } = require(`../generate-pw${ env.modes.dev ? '' : '.min' }.js`)
 

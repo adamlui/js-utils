@@ -4,7 +4,7 @@ const language = require('./language'),
 module.exports = {
 
     async cli() {
-        Object.assign(globalThis.cli ??= {}, require(`${env.dataPath}package-data.json`))
+        Object.assign(globalThis.cli ??= {}, require(`${env.paths.libData}package-data.json`))
         cli.msgs = await language.getMsgs('en')
         cli.msgs = await language.getMsgs(cli.lang = settings.load('uiLang') || (
             env.modes.debug ? language.generateRandomLang({ excludes: ['en'] }) : language.getSysLang() ))
@@ -25,7 +25,7 @@ module.exports = {
 
         if (fs.existsSync(paths.target)) // use existing config file
             return log.warn(`${cli.msgs.warn_configFileExists}:`, paths.target)
-        if (fs.existsSync(paths.src = path.resolve(__dirname, `${env.dataPath}${filename}`)))
+        if (fs.existsSync(paths.src = path.resolve(__dirname, `${env.paths.libData}${filename}`)))
             fs.copyFileSync(paths.src, paths.target) // use found template
 
         else { // use jsDelivr copy
@@ -49,7 +49,7 @@ module.exports = {
         Object.assign(globalThis.env ??= {}, {
             args: process.argv.slice(2),
             modes: { dev: /[\\/]src(?:[\\/]|$)/i.test(__dirname) },
-            get dataPath() { return `../../${ env.modes.dev ? '../' : 'data/' }` }
+            paths: { get libData() { return `../../${ env.modes.dev ? '../' : 'data/' }` }}
         })
         env.modes.debug = env.args.some(arg => /^--?(?:V|debug(?:[-_]?mode)?)$/.test(arg))
     }
