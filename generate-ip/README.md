@@ -2,9 +2,9 @@
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/logos/generate-ip/white-logo.png?7768152"><img width=700 src="https://media.generate-ip.org/images/logos/generate-ip/black-logo.png?7768152"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/generate-ip/assets/images/logos/generate-ip/white-logo.png"><img width=700 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/generate-ip/assets/images/logos/generate-ip/black-logo.png"></picture>
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.generate-ip.org/images/icons/node-graph/white/icon55x49.png?b4eb06e"><img width=23 src="https://media.generate-ip.org/images/icons/node-graph/black/icon55x49.png?b4eb06e"></picture> &nbsp;Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/white/icon55x49.png"><img width=23 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/black/icon55x49.png"></picture> &nbsp;Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.
 
 <br>
 
@@ -364,7 +364,7 @@ $ generate-ip
 
 Sample output:
 
-<img src="https://media.generate-ip.org/images/screenshots/cli/generate-ip-cmd-output.png?0d36e26">
+<img src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/screenshots/cli/generate-ip-cmd-output.png">
 
 📝 **Note:** To generate other address types, type `generate-ipv6` or `generate-mac`
 
@@ -441,7 +441,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [CLI usage](https://docs.generatepw.org/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png?0d36e26"><img height=22 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png?0d36e26"></picture> [geolocate](https://js-utils.org/geolocate) &nbsp;<a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?v=0d36e26"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.org/geolocate) &nbsp;<a href="https://github.com/toolleeo/cli-apps#networking"><img height=18 src="https://assets.js-utils.org/images/badges/awesome/badge.svg?v=0d36e26"></a>
 
 > Fetch IP geolocation data from the CLI.
 <br>[Install](https://docs.geolocatejs.org/#-installation) /

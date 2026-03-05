@@ -36,7 +36,7 @@
 <a href="https://github.com/toolleeo/cli-apps#programming">
     <img height=31 src="https://img.shields.io/badge/中提到-Awesome-ff69b4?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
-<img src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@3d56890/node.js/media/images/screenshots/cli/minify-js-docs-cmd-output.png">
+<img src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@b8f432a/node.js/assets/images/screenshots/cli/minify-js-docs-cmd-output.png">
 
 <br>
 

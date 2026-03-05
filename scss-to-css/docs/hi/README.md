@@ -78,7 +78,7 @@ $ scss-to-css
 
 नमूना आउटपुट:
 
-<img src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@b74edea/node.js/media/images/screenshots/cli/scss-to-css-docs-cmd-output.png">
+<img src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@fe2867e/assets/images/screenshots/cli/scss-to-css-docs-cmd-output.png">
 
 **📝 नोट:** स्रोत मानचित्र भी डिफ़ॉल्ट रूप से उत्पन्न होते हैं जब तक कि `-S` या `--no-source-maps` पारित नहीं हो जाता।
 

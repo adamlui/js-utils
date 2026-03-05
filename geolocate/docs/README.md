@@ -1,6 +1,6 @@
 <a id="top"></a>
 
-# <picture><source media="(prefers-color-scheme: dark)" srcset="https://media.geolocatejs.org/images/icons/wire-globe/white/icon32.png?0d36e26"><img height=28 src="https://media.geolocatejs.org/images/icons/wire-globe/black/icon32.png?0d36e26"></picture> geolocate
+# <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/white/icon32.png"><img height=28 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/black/icon32.png"></picture> geolocate
 
 ### Fetch IP geolocation data from the CLI.
 
@@ -57,7 +57,7 @@ $ geolocate [ip1] [ip2] [...]
 
 Sample output:
 
-<img src="https://media.geolocatejs.org/images/screenshots/cli/geolocate-8.8.8.8-cmd-output.png?0d36e26">
+<img src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/screenshots/cli/geolocate-8.8.8.8-cmd-output.png">
 
 **📝 Note:** If no IPv4 address is passed, your own one will be used.
 
