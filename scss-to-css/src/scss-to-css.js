@@ -7,7 +7,7 @@ const fs = require('fs'),
       sass = require('sass')
 
 Object.assign(globalThis.api ??= {},
-    require(`${ /[\\/]src(?:[\\/]|$)/i.test(__dirname) ? '../' : './data/' }package-data.json`))
+    require(`${ /[\\/]src(?:[\\/]|$)/i.test(__dirname) ? '..' : './data' }/package-data.json`))
 api.regex = {
     compile: /^(?:build|comp(?:ile|ress)|minify)$/i,
     findSCSS: /^(?:find|search)(?:scss)?$/i

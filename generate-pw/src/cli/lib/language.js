@@ -62,11 +62,11 @@ module.exports = {
         if (env.msgs && langCode == cli.lang) return env.msgs // don't re-fetch same msgs
 
         let msgs = data.flatten( // local ones
-            require(`../../${ env.modes.dev ? '../_locales/en/' : 'data/' }messages.json`))
+            require(`../../${ env.modes.dev ? '../_locales/en' : 'data' }/messages.json`))
 
         if (!langCode.startsWith('en')) { // fetch non-English msgs from jsDelivr
-            const msgHostURL = `${require('./jsdelivr').getCommitURL(cli.commitHashes.locales)}/_locales/`
-            let msgHref = `${msgHostURL}${langCode}/messages.json`, msgFetchesTried = 0
+            const msgHostURL = `${require('./jsdelivr').getCommitURL(cli.commitHashes.locales)}/_locales`
+            let msgHref = `${msgHostURL}/${langCode}/messages.json`, msgFetchesTried = 0
             while (msgFetchesTried < 3)
                 try { // fetch remote msgs
                     msgs = data.flatten(await (await data.fetch(msgHref)).json())
@@ -75,7 +75,7 @@ module.exports = {
                     msgFetchesTried++ ; if (msgFetchesTried >= 3) break
                     log.debug(msgHref = langCode.includes('-') && msgFetchesTried == 1 ?
                         msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // strip region before retrying
-                            : `${msgHostURL}en/messages.json` // else use EN msgs
+                            : `${msgHostURL}/en/messages.json` // else use EN msgs
                     )
                 }
         }

@@ -7,7 +7,7 @@ const fs = require('fs'),
       uglifyJS = require('uglify-js')
 
 Object.assign(globalThis.api ??= {},
-    require(`${ /[\\/]src(?:[\\/]|$)/i.test(__dirname) ? '../' : './data/' }package-data.json`))
+    require(`${ /[\\/]src(?:[\\/]|$)/i.test(__dirname) ? '..' : './data' }/package-data.json`))
 api.regex = {
     minify: /^(?:build|comp(?:ile|ress)|minify)$/i,
     findJS: /^(?:find|search)(?:js)?$/i
