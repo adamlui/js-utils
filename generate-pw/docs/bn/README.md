@@ -25,8 +25,8 @@
     <img height=31 src="https://img.shields.io/npm/dm/generate-pw?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%B8%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%B8">
     <img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.2.0">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-2.2.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.3.0">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-2.3.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/generate-pw?activeTab=code">
     <img height=31 src="https://img.shields.io/npm/unpacked-size/generate-pw?style=for-the-badge&logo=ebox&logoColor=white&labelColor=464646&color=blue"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_js-utils:generate-pw/src/generate-pw.js">
@@ -92,14 +92,14 @@ const pw = require('generate-pw')
 #### <> HTML স্ক্রিপ্ট ট্যাগ:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/generate-pw@2.2.0/dist/generate-pw.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/generate-pw@2.3.0/dist/generate-pw.min.js"></script>
 ```
 
 #### ES6:
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@2.2.0/dist/generate-pw.min.js')
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@2.3.0/dist/generate-pw.min.js')
     // আপনার কোড এখানে...
 })()
 ```
@@ -108,7 +108,7 @@ const pw = require('generate-pw')
 
 ```js
 ...
-// @require https://cdn.jsdelivr.net/npm/generate-pw@2.2.0/dist/generate-pw.min.js
+// @require https://cdn.jsdelivr.net/npm/generate-pw@2.3.0/dist/generate-pw.min.js
 // ==/UserScript==
 
 // আপনার কোড এখানে...
@@ -116,7 +116,7 @@ const pw = require('generate-pw')
 
 <br>
 
-**💡 দ্রষ্টব্য:** সর্বদা সর্বশেষ সংস্করণ আমদানি করতে (উৎপাদনে প্রস্তাবিত নয়!) jsDelivr URL থেকে `@2.2.0` সংস্করণ ট্যাগটি সরান: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
+**💡 দ্রষ্টব্য:** সর্বদা সর্বশেষ সংস্করণ আমদানি করতে (উৎপাদনে প্রস্তাবিত নয়!) jsDelivr URL থেকে `@2.3.0` সংস্করণ ট্যাগটি সরান: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
 
 <br>
 

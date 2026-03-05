@@ -25,8 +25,8 @@
     <img height=31 src="https://img.shields.io/npm/dm/generate-pw?label=Herunterladungen&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-lizenz">
     <img height=31 src="https://img.shields.io/badge/Lizenz-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.2.0">
-    <img height=31 src="https://img.shields.io/badge/Neueste_Version-2.2.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.3.0">
+    <img height=31 src="https://img.shields.io/badge/Neueste_Version-2.3.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/generate-pw?activeTab=code">
     <img height=31 src="https://img.shields.io/npm/unpacked-size/generate-pw?label=Ausgepackte%20Gr%C3%B6%C3%9Fe&style=for-the-badge&logo=ebox&logoColor=white&labelColor=464646&color=blue"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_js-utils:generate-pw/src/generate-pw.js">
@@ -92,14 +92,14 @@ const pw = require('generate-pw')
 #### <> HTML-Skript-Tag:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/generate-pw@2.2.0/dist/generate-pw.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/generate-pw@2.3.0/dist/generate-pw.min.js"></script>
 ```
 
 #### ES6:
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@2.2.0/dist/generate-pw.min.js')
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@2.3.0/dist/generate-pw.min.js')
     // Ihr Code hier...
 })()
 ```
@@ -108,7 +108,7 @@ const pw = require('generate-pw')
 
 ```js
 ...
-// @require https://cdn.jsdelivr.net/npm/generate-pw@2.2.0/dist/generate-pw.min.js
+// @require https://cdn.jsdelivr.net/npm/generate-pw@2.3.0/dist/generate-pw.min.js
 // ==/UserScript==
 
 // Ihr Code hier...
@@ -116,7 +116,7 @@ const pw = require('generate-pw')
 
 <br>
 
-**💡 Hinweis:** Um immer die neueste Version zu importieren (in der Produktion nicht empfohlen!), entfernen Sie das Versions-Tag `@2.2.0` aus der jsDelivr-URL: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
+**💡 Hinweis:** Um immer die neueste Version zu importieren (in der Produktion nicht empfohlen!), entfernen Sie das Versions-Tag `@2.3.0` aus der jsDelivr-URL: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
 
 <br>
 
