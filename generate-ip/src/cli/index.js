@@ -3,18 +3,15 @@
 (async () => {
     'use strict'
 
-    globalThis.env = {
-        args: process.argv.slice(2),
-        modes: { dev: /[\\/]src(?:[\\/]|$)/i.test(__dirname) },
-        paths: { lib: './lib' }
-    }
-    env.modes.debug = env.args.some(arg => /^--?(?:V|debug(?:[-_]?mode)?)$/.test(arg))
+    // Init ENV
+    globalThis.env = { paths: { lib: './lib' }}
+    const init = require(`${env.paths.lib}/init`)
+    init.env()
 
     // Import LIBS
     globalThis.log = require(`${env.paths.lib}/log`)
     const clipboardy = require('node-clipboardy'),
-          generateIP = require(`../generate-ip${ env.modes.dev ? '' : '.min' }.js`),
-          init = require(`${env.paths.lib}/init`)
+          generateIP = require(`../generate-ip${ env.modes.dev ? '' : '.min' }.js`)
 
     await init.cli()
 

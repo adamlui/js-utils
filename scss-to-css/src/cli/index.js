@@ -3,19 +3,16 @@
 (async () => {
     'use strict'
 
-    globalThis.env = {
-        args: process.argv.slice(2),
-        modes: { dev: /[\\/]src(?:[\\/]|$)/i.test(__dirname) },
-        paths: { lib: './lib' }
-    }
-    env.modes.debug = env.args.some(arg => /^--?(?:V|debug(?:[-_]?mode)?)$/.test(arg))
+    // Init ENV
+    globalThis.env = { paths: { lib: './lib' }}
+    const init = require(`${env.paths.lib}/init`)
+    init.env()
 
     // Import LIBS
     globalThis.log = require(`${env.paths.lib}/log`)
     const compile = require(`${env.paths.lib}/compile`),
         { findSCSS } = require('../scss-to-css'),
           fs = require('fs'),
-          init = require(`${env.paths.lib}/init`),
           path = require('path')
 
     await init.cli()
