@@ -34,8 +34,10 @@
     "!docs/*/"
   ],
   "bin": {
+    "generate-pw": "dist/cli/index.js",
     "generatepw": "dist/cli/index.js",
-    "generate-pw": "dist/cli/index.js"
+    "gen-pw": "dist/cli/index.js",
+    "genpw": "dist/cli/index.js"
   },
   "directories": {
     "lib": "./dist",
