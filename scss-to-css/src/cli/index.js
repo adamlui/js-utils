@@ -9,7 +9,7 @@
 
     // Import LIBS
     globalThis.log = require('./lib/log')
-    const compile = require('.lib/compile'),
+    const compile = require('./lib/compile'),
         { findSCSS } = require('../scss-to-css'),
           fs = require('fs'),
           path = require('path')
