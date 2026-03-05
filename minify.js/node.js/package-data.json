@@ -8,7 +8,10 @@
     "config": "https://github.com/adamlui/minify.js/blob/main/node.js/minify.config.mjs",
     "docs": "https://github.com/adamlui/minify.js/tree/main/node.js/docs",
     "github": "https://github.com/adamlui/minify.js",
-    "jsdelivr": "https://cdn.jsdelivr.net/gh/adamlui/minify.js",
+    "jsdelivr": {
+      "jsutils": "https://cdn.jsdelivr.net/gh/adamlui/js-utils",
+      "pkg": "https://cdn.jsdelivr.net/gh/adamlui/minify.js"
+    },
     "npm": "https://www.npmjs.com/package/@adamlui/minify.js",
     "src": "https://github.com/adamlui/minify.js/tree/main/node.js/src"
   },
