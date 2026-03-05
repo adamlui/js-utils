@@ -9,7 +9,7 @@
 
     // Import LIBS
     globalThis.log = require('./lib/log')
-    const compile = require(`${env.paths.lib}/compile`),
+    const compile = require('.lib/compile'),
         { findJS } = require('../minify'),
           fs = require('fs'),
           path = require('path')
