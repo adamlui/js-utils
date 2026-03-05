@@ -78,6 +78,7 @@
     "url": "https://github.com/adamlui/minify.js/issues"
   },
   "dependencies": {
+    "is-unicode-supported": "^2.1.0",
     "node-clipboardy": "^1.0.3",
     "uglify-js": "^3.19.3"
   },
