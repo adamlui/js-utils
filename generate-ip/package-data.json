@@ -3,7 +3,7 @@
   "author": "Adam Lui & contributors",
   "license": "MIT",
   "copyrightYear": "2024–2026",
-  "cmdFormat": "generate-[ip|ipv6|mac] [options|commands]",
+  "cmdFormat": "generate-<ip|ipv6|mac> [options|commands]",
   "urls": {
     "config": "https://github.com/adamlui/js-utils/blob/main/generate-ip/generate-ip.config.mjs",
     "docs": "https://github.com/adamlui/js-utils/tree/main/generate-ip/docs",
