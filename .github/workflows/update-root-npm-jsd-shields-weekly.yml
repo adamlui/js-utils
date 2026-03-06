@@ -103,7 +103,7 @@ jobs:
       
       - name: Update README shields
         run: |
-          cd ${{ github.workspace }}/adamlui/js-utils
+          cd ${{ github.workspace }}/adamlui/js-utils/docs
 
           TOTAL_DOWNLOADS="${{ env.TOTAL_DOWNLOADS }}"
           TOTAL_REQUESTS="${{ env.TOTAL_REQUESTS }}"
