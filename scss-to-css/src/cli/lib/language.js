@@ -67,7 +67,7 @@ module.exports = {
         if (!langCode.startsWith('en')) { // fetch non-English msgs from jsDelivr
             try { // check if terminal supports non-Latin scripts
                 const nonLatinLocales = await (await data.fetch(
-                    `${cli.urls.jsdelivr}@${cli.commitHashes.data}/assets/data/non-latin-locales.json`
+                    `${cli.urls.jsdelivr.jsutils}@${cli.commitHashes.data}/assets/data/non-latin-locales.json`
                 )).json()
                 if (nonLatinLocales.includes(langCode.split('-')[0]) && !env.supports.unicode)
                     return msgs // en ones
