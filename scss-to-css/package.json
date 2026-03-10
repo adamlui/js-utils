@@ -81,7 +81,7 @@
   "dependencies": {
     "is-unicode-supported": "^2.1.0",
     "node-clipboardy": "^1.0.3",
-    "sass": "^1.97.3"
+    "sass": "^1.98.0"
   },
   "devDependencies": {
     "@eslint/json": "^1.1.0",
