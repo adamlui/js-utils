@@ -48,7 +48,7 @@
 
 > Recursively minify all JavaScript files.
 <br>[Install](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js#-installation) /
-[Readme](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js/#readme) /
+[Readme](https://github.com/adamlui/js-utils/tree/main/minify.js/#readme) /
 [CLI usage](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js#-command-line-usage) /
 [API usage](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js#-api-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
