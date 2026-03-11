@@ -1,5 +1,17 @@
 <a id="top"></a>
 
+<div align="right">
+    <h6>
+        <picture>
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@7c33be0/assets/images/icons/earth/white/icon32.svg">
+            <img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@7c33be0/assets/images/icons/earth/black/icon32.svg">
+        </picture>
+        &nbsp;简体中文 |
+        <a href="../..#readme">English</a> |
+        <a href="../zh-tw/#readme">繁體中文</a>
+    </h6>
+</div>
+
 # 🛠️ JavaScript 工具
 
 <a href="https://npmstar.com/compare/@adamlui%2Fgeolocate-vs-@adamlui%2Fminify.js-vs-@adamlui%2Fscss-to-css-vs-generate-ip-vs-generate-pw-vs-gulp-minify.js?timeRange=all">

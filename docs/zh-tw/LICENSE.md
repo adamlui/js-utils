@@ -1,3 +1,15 @@
+<div align="right">
+    <h6>
+        <picture>
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.js-utils.org/images/icons/earth/white/icon32.svg?v=7c33be0">
+            <img height=14 src="https://assets.js-utils.org/images/icons/earth/black/icon32.svg?v=7c33be0">
+        </picture>
+        &nbsp;繁體中文 |
+        <a href="../LICENSE.md">English</a> |
+        <a href="../zh-cn/LICENSE.md">简体中文</a>
+    </h6>
+</div>
+
 # 🏛️ MIT 許可證
 
 **版權所有 © 2023–2026 [Adam Lui](https://github.com/adamlui) 及貢獻者。**
