@@ -8,18 +8,18 @@
         </picture>
         &nbsp;हिंदी |
         <a href="../..#readme">English</a> |
-        <a href="../zh-cn#readme">简体中文</a> |
-        <a href="../zh-tw#readme">繁體中文</a> |
-        <a href="../ja#readme">日本語</a> |
-        <a href="../bn#readme">বাংলা</a> |
-        <a href="../mr#readme">मराठी</a> |
-        <a href="../pa#readme">ਪੰਜਾਬੀ</a> |
-        <a href="../de#readme">Deutsch</a> |
-        <a href="../es#readme">Español</a> |
-        <a href="../fr#readme">Français</a> |
-        <a href="../it#readme">Italiano</a> |
-        <a href="../nl#readme">Nederlands</a> |
-        <a href="../pt#readme">Português</a>
+        <a href="../zh-cn/#readme">简体中文</a> |
+        <a href="../zh-tw/#readme">繁體中文</a> |
+        <a href="../ja/#readme">日本語</a> |
+        <a href="../bn/#readme">বাংলা</a> |
+        <a href="../mr/#readme">मराठी</a> |
+        <a href="../pa/#readme">ਪੰਜਾਬੀ</a> |
+        <a href="../de/#readme">Deutsch</a> |
+        <a href="../es/#readme">Español</a> |
+        <a href="../fr/#readme">Français</a> |
+        <a href="../it/#readme">Italiano</a> |
+        <a href="../nl/#readme">Nederlands</a> |
+        <a href="../pt/#readme">Português</a>
     </h6>
 </div>
 
@@ -37,7 +37,7 @@
     <img height=31 src="https://img.shields.io/npm/unpacked-size/%40adamlui%2Fscss-to-css?style=for-the-badge&logo=ebox&logoColor=white&color=blue&labelColor=464646"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_scss-to-css:src/scss-to-css.js">
     <img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_scss-to-css%3Asrc%2Fscss-to-css.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></a>
-<a href="https://github.com/toolleeo/cli-apps#conversion">
+<a href="https://github.com/toolleeo/cli-apps/#conversion">
     <img height=31 src="https://img.shields.io/badge/Mentioned_in-Awesome-ff69b4?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
 <img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
@@ -315,11 +315,11 @@ findSCSS() » Check returned array.
 
 ## 🛠️ संबंधित उपयोगिताएँ
 
-### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?v=7e4a141"></a>
+### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?v=7e4a141"></a>
 
 > सभी जावास्क्रिप्ट फ़ाइलों को पुनरावर्ती रूप से छोटा करें।
 <br>[स्थापित करना](https://minify-js.org/docs/hi#-%E0%A4%87%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A4%BE%E0%A4%B2%E0%A5%87%E0%A4%B6%E0%A4%A8) /
-[रीडमी](https://minify-js.org/docs/hi#readme) /
+[रीडमी](https://minify-js.org/docs/hi/#readme) /
 [सीएलआई उपयोग](https://minify-js.org/docs/hi#-%E0%A4%95%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%A1-%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%A8-%E0%A4%89%E0%A4%AA%E0%A4%AF%E0%A5%8B%E0%A4%97) /
 [एपीआई उपयोग](https://minify-js.org/docs/hi#-api-%E0%A4%89%E0%A4%AA%E0%A4%AF%E0%A5%8B%E0%A4%97) /
 [चर्चा करना](https://github.com/adamlui/minify.js/discussions)
