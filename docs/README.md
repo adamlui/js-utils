@@ -13,7 +13,7 @@
 <a href="#">
     <img height=31 src="https://img.shields.io/badge/jsDelivr_Requests-10,000+/month-2bbbd8.svg?logo=jsdelivr&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
-> ### Essential JavaScript libraries/utilities for Node.js and the web
+> ### Essential JavaScript libraries/utilities for Node.js and the web.
 
 <img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/separators/aqua-gradient.png">
 
