@@ -164,11 +164,11 @@ $ minify-js input_folder output_folder
 
 #
 
-### Configuration file
+### 設定檔
 
-**minify.js** can be customized using a `minify.config.mjs` or `minify.config.js` placed in your project root.
+**minify.js** 可以透過將 `minify.config.mjs` 或 `minify.config.js` 放置在專案根目錄中進行自訂。
 
-Example defaults:
+預設值範例：
 
 ```js
 export default {
@@ -187,7 +187,7 @@ export default {
 }
 ```
 
-💡 Run `minify-js init` to generate a template `minify.config.mjs` in your project root.
+💡 運行 `minify-js init` 在專案根目錄下產生模板 `minify.config.mjs`。
 
 <br>
 

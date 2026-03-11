@@ -303,11 +303,11 @@ $ generate-pw
 
 #
 
-### Configuration file
+### 設定檔
 
-**generate-pw** can be customized using a `generate-pw.config.mjs` or `generate-pw.config.js` placed in your project root.
+**generate-pw** 可以透過將 `generate-pw.config.mjs` 或 `generate-pw.config.js` 放置在專案根目錄中進行自訂。
 
-Example defaults:
+預設值範例：
 
 ```js
 export default {
@@ -327,7 +327,7 @@ export default {
 }
 ```
 
-💡 Run `generate-pw init` to generate a template `generate-pw.config.mjs` in your project root.
+💡 執行 `generate-pw init` 在專案根目錄下產生範本 `generate-pw.config.mjs`。
 
 <br>
 

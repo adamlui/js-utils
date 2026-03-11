@@ -168,11 +168,11 @@ $ scss-to-css input_folder output_folder
 
 #
 
-### Configuration file
+### 設定檔
 
-**scss-to-css** can be customized using a `scss-to-css.config.mjs` or `scss-to-css.config.js` placed in your project root.
+**scss-to-css** 可以透過放置在專案根目錄下的 `scss-to-css.config.mjs` 或 `scss-to-css.config.js` 進行自訂。
 
-Example defaults:
+預設值範例：
 
 ```js
 export default {
@@ -189,7 +189,7 @@ export default {
 }
 ```
 
-💡 Run `scss-to-css init` to generate a template `scss-to-css.config.mjs` in your project root.
+💡 執行 `scss-to-css init` 以在專案根目錄中產生範本 `scss-to-css.config.mjs`。
 
 <br>
 
