@@ -23,4 +23,4 @@
 
 # 🛡️ Politica di Sicurezza
 
-Se trovi una vulnerabilità, segui le istruzioni per la segnalazione su https://tidelift.com/security
+Se riscontri una vulnerabilità, invia un'e-mail a security@tidelift.com e la correzione verrà coordinata entro 2 giorni lavorativi.

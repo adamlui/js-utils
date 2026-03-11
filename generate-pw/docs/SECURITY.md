@@ -17,4 +17,4 @@
 
 # 🛡️ Security Policy
 
-If you find a vulnerability, please follow the reporting instructions @ https://tidelift.com/security
+If you find a vulnerability, please e-mail security@tidelift.com and a fix will be coordinated within 2 business days.

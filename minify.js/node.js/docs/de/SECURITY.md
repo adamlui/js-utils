@@ -19,4 +19,4 @@
 
 # 🛡️ Sicherheitsrichtlinie
 
-Wenn Sie eine Schwachstelle finden, folgen Sie bitte den Anweisungen zum Melden @ https://tidelift.com/security
+Wenn Sie eine Sicherheitslücke finden, senden Sie bitte eine E-Mail an security@tidelift.com. Die Behebung des Problems wird innerhalb von 2 Werktagen koordiniert.
