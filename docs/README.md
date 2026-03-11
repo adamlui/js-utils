@@ -22,7 +22,7 @@
 > Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.
 <br>[Install](https://github.com/adamlui/js-utils/tree/main/generate-ip/#-installation) /
 [Readme](https://github.com/adamlui/js-utils/tree/main/generate-ip/#-readme) /
-[API usage](https://github.com/adamlui/js-utils/tree/main/generate-ip/#-api-usage) /
+[API usage](https://github.com/adamlui/js-utils/tree/main/generate-ip/#-importing-the-apis) /
 [CLI usage](https://github.com/adamlui/js-utils/tree/main/generate-ip/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
@@ -31,7 +31,7 @@
 > Randomly generate, strengthen, and validate cryptographically-secure passwords.
 <br>[Install](https://github.com/adamlui/js-utils/tree/main/generate-pw/#-installation) /
 [Readme](https://github.com/adamlui/js-utils/tree/main/generate-pw/#-readme) /
-[API usage](https://github.com/adamlui/js-utils/tree/main/generate-pw/#-api-usage) /
+[API usage](https://github.com/adamlui/js-utils/tree/main/generate-pw/#-importing-the-api) /
 [CLI usage](https://github.com/adamlui/js-utils/tree/main/generate-pw/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
@@ -40,7 +40,7 @@
 > Fetch IP geolocation data from the CLI.
 <br>[Install](https://github.com/adamlui/js-utils/tree/main/geolocate/#-installation) /
 [Readme](https://github.com/adamlui/js-utils/tree/main/geolocate/#-readme) /
-[API usage](https://github.com/adamlui/js-utils/tree/main/geolocate/#-api-usage) /
+[API usage](https://github.com/adamlui/js-utils/tree/main/geolocate/#-importing-the-api) /
 [CLI usage](https://github.com/adamlui/js-utils/tree/main/geolocate/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
