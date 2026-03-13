@@ -12,8 +12,8 @@
     <img height=31 src="https://img.shields.io/npm/dm/generate-ip?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-license">
     <img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/generate-ip-2.9.0">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-2.9.0-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/generate-ip-2.9.1">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-2.9.1-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/generate-ip?activeTab=code">
     <img height=31 src="https://img.shields.io/npm/unpacked-size/generate-ip?style=for-the-badge&logo=ebox&logoColor=white&labelColor=464646&color=blue"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=adamlui_js-utils:generate-ip/src/generate-ip.js">
@@ -87,14 +87,14 @@ const { ipv4, ipv6, mac } = require('generate-ip')
 #### <> HTML script tag:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/generate-ip@2.9.0/dist/generate-ip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/generate-ip@2.9.1/dist/generate-ip.min.js"></script>
 ```
 
 #### ES6:
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-ip@2.9.0/dist/generate-ip.min.js')
+    await import('https://cdn.jsdelivr.net/npm/generate-ip@2.9.1/dist/generate-ip.min.js')
     // Your code here...
 })()
 ```
@@ -103,7 +103,7 @@ const { ipv4, ipv6, mac } = require('generate-ip')
 
 ```js
 ...
-// @require https://cdn.jsdelivr.net/npm/generate-ip@2.9.0/dist/generate-ip.min.js
+// @require https://cdn.jsdelivr.net/npm/generate-ip@2.9.1/dist/generate-ip.min.js
 // ==/UserScript==
 
 // Your code here...
@@ -111,7 +111,7 @@ const { ipv4, ipv6, mac } = require('generate-ip')
 
 <br>
 
-📝 **Note:** To always import the latest version (not recommended in production!) remove the `@2.9.0` version tag from the jsDelivr URL: `https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js`
+📝 **Note:** To always import the latest version (not recommended in production!) remove the `@2.9.1` version tag from the jsDelivr URL: `https://cdn.jsdelivr.net/npm/generate-ip/dist/generate-ip.min.js`
 
 <br>
 
