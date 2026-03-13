@@ -35,8 +35,8 @@
   ],
   "bin": {
     "minify-js": "dist/cli/index.js",
-    "minifyjs": "dist/cli/index.js",
     "min-js": "dist/cli/index.js",
+    "minifyjs": "dist/cli/index.js",
     "minjs": "dist/cli/index.js"
   },
   "directories": {
