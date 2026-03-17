@@ -1,2 +1,2 @@
-remove-json-keys~=1.8.3
+remove-json-keys~=1.9.1
 translate-messages~=1.8.3
