@@ -336,6 +336,6 @@ findJS() » Check returned array.
 
 <img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://js-utils.org">**अधिक JavaScript उपयुक्तता**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**अधिक JavaScript उपयुक्तता**</a> /
 <a href="https://github.com/adamlui/minify.js/discussions">चर्चा करा</a> /
 <a href="#top">परत वर जा ↑</a>
