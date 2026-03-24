@@ -9,12 +9,12 @@ updates:
   - package-ecosystem: npm
     directories:
       - /
-      - generate-ip/
-      - generate-pw/
-      - geolocate/
-      - minify.js/gulp/
-      - minify.js/node.js/
-      - scss-to-css/
+      - /generate-ip
+      - /generate-pw
+      - /geolocate
+      - /minify.js/gulp
+      - /minify.js/node.js
+      - /scss-to-css
     schedule:
       interval: daily
     groups:
@@ -26,12 +26,12 @@ updates:
 
   - package-ecosystem: pip
     directories:
-      - generate-ip/
-      - generate-pw/
-      - geolocate/
-      - minify.js/gulp/
-      - minify.js/node.js/
-      - scss-to-css/
+      - /generate-ip
+      - /generate-pw
+      - /geolocate
+      - /minify.js/gulp
+      - /minify.js/node.js
+      - /scss-to-css
     schedule:
       interval: daily
     groups:
