@@ -35,7 +35,7 @@
     <img height=31 src="https://img.shields.io/badge/Ultima_Versione-2.4.1-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css?activeTab=code">
     <img height=31 src="https://img.shields.io/npm/unpacked-size/%40adamlui%2Fscss-to-css?label=Dimensioni+Senza+Confezione&style=for-the-badge&logo=ebox&logoColor=white&color=blue&labelColor=464646"></a>
-<a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&selected=adamlui_js-utils%3Ascss-to-css&id=adamlui_js-utils">
+<a href="https://sonarcloud.io/component_measures?metric=vulnerabilities&selected=adamlui_js-utils%3Ascss-to-css&id=adamlui_js-utils">
     <img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_scss-to-css%3Asrc%2Fscss-to-css.js%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonar&logoColor=white&labelColor=464646&label=Vulnerabilit%C3%A0&color=gold"></a>
 <a href="https://github.com/toolleeo/cli-apps/#conversion">
     <img height=31 src="https://img.shields.io/badge/Menzionato_in-Awesome-ff69b4?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
