@@ -322,7 +322,7 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 <br>[Installieren](https://github.com/adamlui/minify.js/tree/main/node.js/docs/de/#-installation) /
 [CLI-Nutzung](https://github.com/adamlui/minify.js/tree/main/node.js/docs/de/#-verwendung-der-befehlszeile) /
 [API-Nutzung](https://github.com/adamlui/minify.js/tree/main/node.js/docs/de/#-api-nutzung) /
-[Liesmich](https://github.com/adamlui/minify.js/tree/main/docs/de/#readme) /
+[Liesmich](https://github.com/adamlui/minify.js/tree/main/node.js/docs/de/#readme) /
 [Diskutieren](https://github.com/adamlui/minify.js/discussions)
 
 <br>
