@@ -1,4 +1,4 @@
-name: Check links on push + PR
+name: Validate links on push + PR
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6.0.2
 
-      - name: Check links
+      - name: Validate links
         uses: lycheeverse/lychee-action@v2.8.0
         with:
           # Check all files, ignore ok/redir/blocked/rate-limited
