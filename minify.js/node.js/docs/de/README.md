@@ -326,10 +326,10 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 ### [{ } scss-to-css](https://scsstocss.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@63bbeed/assets/images/badges/awesome/badge.svg"></a>
 
 > Kompilieren Sie alle SCSS-Dateien rekursiv in minimiertes CSS.
-<br>[Installieren](https://node.scsstocss.org/#-installation) /
-[Liesmich](https://node.scsstocss.org/#readme) /
-[CLI-Nutzung](https://node.scsstocss.org/#-command-line-usage) /
-[API-Nutzung](https://node.scsstocss.org/#-api-usage) /
+<br>[Installieren](https://github.com/adamlui/scss-to-css/#-installation) /
+[Liesmich](https://github.com/adamlui/scss-to-css/#readme) /
+[CLI-Nutzung](https://github.com/adamlui/scss-to-css/#-command-line-usage) /
+[API-Nutzung](https://github.com/adamlui/scss-to-css/#-api-usage) /
 [Diskutieren](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>

@@ -327,10 +327,10 @@ findJS() » Check returned array.
 ### [{ } scss-to-css](https://scsstocss.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@63bbeed/assets/images/badges/awesome/badge.svg"></a>
 
 > পুনরাবৃত্তভাবে সমস্ত SCSS ফাইল মিনিফাইড CSS-এ কম্পাইল করুন।
-<br>[ইনস্টল করুন](https://node.scsstocss.org/#-installation) /
-[রিডমি](https://node.scsstocss.org/#readme) /
-[CLI ব্যবহার](https://node.scsstocss.org/#-command-line-usage) /
-[API ব্যবহার](https://node.scsstocss.org/#-api-usage) /
+<br>[ইনস্টল করুন](https://github.com/adamlui/scss-to-css/#-installation) /
+[রিডমি](https://github.com/adamlui/scss-to-css/#readme) /
+[CLI ব্যবহার](https://github.com/adamlui/scss-to-css/#-command-line-usage) /
+[API ব্যবহার](https://github.com/adamlui/scss-to-css/#-api-usage) /
 [আলোচনা করা](https://github.com/adamlui/scss-to-css/discussions)
 
 <br>
