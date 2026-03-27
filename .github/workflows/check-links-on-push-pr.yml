@@ -22,7 +22,7 @@ jobs:
       - name: Check links
         uses: lycheeverse/lychee-action@v2.8.0
         with:
-          # Check all MD files, ignore ok/redir/blocked/rate-limited, exclude commonly down domains
+          # Check all MD files, ignore ok/redir/blocked/rate-limited
           args: >
             "*.md" "**/*.md"
             --verbose --no-progress
