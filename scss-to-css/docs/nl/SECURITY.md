@@ -23,4 +23,4 @@
 
 # 🛡️ Veiligheidsbeleid
 
-Als u een beveiligingslek ontdekt, kunt u een e-mail sturen naar security@tidelift.com. Er zal binnen 2 werkdagen een oplossing worden geregeld.
+Als u een beveiligingslek ontdekt, kunt u een e-mail sturen naar <security@tidelift.com>. Er zal binnen 2 werkdagen een oplossing worden geregeld.

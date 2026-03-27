@@ -19,4 +19,4 @@
 
 # 🛡️ Politica de seguridad
 
-Si encuentra una vulnerabilidad, envíe un correo electrónico a security@tidelift.com y se coordinará una solución dentro de 2 días hábiles.
+Si encuentra una vulnerabilidad, envíe un correo electrónico a <security@tidelift.com> y se coordinará una solución dentro de 2 días hábiles.

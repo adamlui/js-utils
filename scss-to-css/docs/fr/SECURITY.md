@@ -23,4 +23,4 @@
 
 # 🛡️ Politique de sécurité
 
-Si vous découvrez une vulnérabilité, veuillez envoyer un courriel à security@tidelift.com et une solution sera mise en place dans un délai de 2 jours ouvrables.
+Si vous découvrez une vulnérabilité, veuillez envoyer un courriel à <security@tidelift.com> et une solution sera mise en place dans un délai de 2 jours ouvrables.
