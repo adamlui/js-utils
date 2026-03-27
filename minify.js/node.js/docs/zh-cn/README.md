@@ -1,8 +1,8 @@
 <div align="right">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/earth/white/icon32.svg?v=ad67551">
-            <img height=14 src="https://assets.minify-js.org/images/icons/earth/black/icon32.svg?v=ad67551">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/icons/earth/white/icon32.svg">
+            <img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/icons/earth/black/icon32.svg">
         </picture>
         &nbsp;简体中文 |
         <a href="../..#readme">English</a> |
@@ -40,7 +40,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 
 ## ⚡ 如何安装
 
@@ -64,9 +64,9 @@ $ npm install @adamlui/minify.js
 
 <br>
 
-<a href="https://github.com/sponsors/adamlui"><img src="https://assets.minify-js.org/images/banners/sponsor/$10/banner1660x260.png?v=63bbeed"></a>
+<a href="https://github.com/sponsors/adamlui"><img src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@63bbeed/assets/images/banners/sponsor/$10/banner1660x260.png"></a>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 
 ## 💻 命令行使用
 
@@ -191,7 +191,7 @@ export default {
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 
 ## 🔌 API 使用
 
@@ -298,7 +298,7 @@ findJS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 
 ## 🏛️ MIT 许可证
 
@@ -312,18 +312,18 @@ findJS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 
 ## 🛠️ 相关实用程序
 
-### [</> minify.js (Gulp)](https://github.com/adamlui/minify.js/tree/main/gulp/) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=63bbeed"></a>
+### [</> minify.js (Gulp)](https://github.com/adamlui/minify.js/tree/main/gulp/) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@63bbeed/assets/images/badges/awesome/badge.svg"></a>
 
 > Gulp 插件可递归地缩小所有 JavaScript 文件。
 <br>[安装](https://github.com/adamlui/minify.js/tree/main/gulp/#-installation) /
 [自述文件](https://github.com/adamlui/minify.js/tree/main/gulp/#readme) /
 [讨论](https://github.com/adamlui/minify.js/discussions)
 
-### [{ } scss-to-css](https://scsstocss.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=63bbeed"></a>
+### [{ } scss-to-css](https://scsstocss.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@63bbeed/assets/images/badges/awesome/badge.svg"></a>
 
 > 将所有 SCSS 文件递归编译为缩小的 CSS。
 <br>[安装](https://node.scsstocss.org/#-installation) /
@@ -334,8 +334,8 @@ findJS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**更多 JavaScript 实用程序**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**更多 JavaScript 实用程序**</a> /
 <a href="https://github.com/adamlui/minify.js/discussions">讨论</a> /
 <a href="#top">回到顶部 ↑</a>

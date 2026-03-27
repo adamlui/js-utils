@@ -3,8 +3,8 @@
 <div align="center">
     <h6>
         <picture>
-            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/earth/white/icon32.svg?v=7e4a141">
-            <img height=14 src="https://assets.scsstocss.org/images/icons/earth/black/icon32.svg?v=7e4a141">
+            <source type="image/svg+xml" media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/icons/earth/white/icon32.svg">
+            <img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/icons/earth/black/icon32.svg">
         </picture>
         &nbsp;ਪੰਜਾਬੀ |
         <a href="../..#readme">English</a> |
@@ -40,7 +40,7 @@
 <a href="https://github.com/toolleeo/cli-apps/#conversion">
     <img height=31 src="https://img.shields.io/badge/Mentioned_in-Awesome-ff69b4?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/separators/aqua-gradient.png">
 
 ## ⚡ ਇੰਸਟਾਲੇਸ਼ਨ
 
@@ -64,9 +64,9 @@ $ npm install @adamlui/scss-to-css
 
 <br>
 
-<a href="https://github.com/sponsors/adamlui"><img src="https://assets.scsstocss.org/images/banners/sponsor/$10/banner1660x260.png?v=f3129dd"></a>
+<a href="https://github.com/sponsors/adamlui"><img src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@f3129dd/assets/images/banners/sponsor/$10/banner1660x260.png"></a>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/separators/aqua-gradient.png">
 
 ## 💻 ਕਮਾਂਡ ਲਾਈਨ ਦੀ ਵਰਤੋਂ
 
@@ -193,7 +193,7 @@ $ scss-to-css input_folder output_folder
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/separators/aqua-gradient.png">
 
 ## 🔌 API ਵਰਤੋਂ
 
@@ -298,7 +298,7 @@ findSCSS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/separators/aqua-gradient.png">
 
 ## 🏛️ MIT ਲਾਇਸੈਂਸ
 
@@ -312,11 +312,11 @@ findSCSS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/separators/aqua-gradient.png">
 
 ## 🛠️ ਸੰਬੰਧਿਤ ਉਪਯੋਗਤਾਵਾਂ
 
-### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://assets.scsstocss.org/images/badges/awesome/badge.svg?v=7e4a141"></a>
+### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/badges/awesome/badge.svg"></a>
 
 > ਸਾਰੀਆਂ JavaScript ਫਾਈਲਾਂ ਨੂੰ ਆਵਰਤੀ ਤੌਰ 'ਤੇ ਛੋਟਾ ਕਰੋ।
 <br>[ਇੰਸਟਾਲ ਕਰੋ](https://minify-js.org/docs/pa#-%E0%A8%87%E0%A9%B0%E0%A8%B8%E0%A8%9F%E0%A8%BE%E0%A8%B2%E0%A9%87%E0%A8%B8%E0%A8%BC%E0%A8%A8) /
@@ -327,8 +327,8 @@ findSCSS() » Check returned array.
 
 <br>
 
-<img height=6px width="100%" src="https://assets.scsstocss.org/images/separators/aqua-gradient.png?v=7e4a141">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/separators/aqua-gradient.png">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.scsstocss.org/images/icons/home/white/icon32x27.png?v=7e4a141"><img height=13 src="https://assets.scsstocss.org/images/icons/home/dark-gray/icon32x27.png?v=7e4a141"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**ਹੋਰ JavaScript ਉਪਯੋਗਤਾਵਾਂ**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**ਹੋਰ JavaScript ਉਪਯੋਗਤਾਵਾਂ**</a> /
 <a href="https://github.com/adamlui/scss-to-css/discussions">ਚਰਚਾ ਕਰੋ</a> /
 <a href="#top">ਸਿਖਰ 'ਤੇ ਵਾਪਸ ਜਾਓ ↑</a>

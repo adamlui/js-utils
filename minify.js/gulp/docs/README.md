@@ -1,6 +1,6 @@
 <a id="top"></a>
 
-# </> minify.js <picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/platforms/gulp/white/icon50x30.svg?v=c100aeb"><img height=25 src="https://assets.minify-js.org/images/icons/platforms/gulp/red/icon50x30.svg?v=c100aeb"></picture>
+# </> minify.js <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/minify.js@c100aeb/assets/images/icons/platforms/gulp/white/icon50x30.svg"><img height=25 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@c100aeb/assets/images/icons/platforms/gulp/red/icon50x30.svg"></picture>
 
 ### Recursively minify all JavaScript files.
 
@@ -17,7 +17,7 @@
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 
 ## 💡 About
 
@@ -25,7 +25,7 @@
 
 For a quick start on using Gulp: https://gulpjs.com/docs/en/getting-started/quick-start/
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 
 ## ⚡ Installation
 
@@ -43,9 +43,9 @@ $ npm install gulp-minify.js
 
 <br>
 
-<a href="https://github.com/sponsors/adamlui"><img src="https://assets.minify-js.org/images/banners/sponsor/$10/banner1660x260.png?v=63bbeed"></a>
+<a href="https://github.com/sponsors/adamlui"><img src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@63bbeed/assets/images/banners/sponsor/$10/banner1660x260.png"></a>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 
 ## 💻 Usage
 
@@ -99,7 +99,7 @@ Name         | Type    | Desciption                                             
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 
 ## 🏛️ MIT License
 
@@ -113,11 +113,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 
 ## 🛠️ Related utilities
 
-### [</> minify.js (Node.js)](https://github.com/adamlui/minify.js/tree/main/node.js/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=b78dcd3"></a>
+### [</> minify.js (Node.js)](https://github.com/adamlui/minify.js/tree/main/node.js/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@b78dcd3/assets/images/badges/awesome/badge.svg"></a>
 
 > Recursively minify all JavaScript files.
 <br>[Install](https://github.com/adamlui/minify.js/tree/main/node.js/#-installation) /
@@ -126,7 +126,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [API usage](https://github.com/adamlui/minify.js/tree/main/node.js/#-api-usage) /
 [Discuss](https://github.com/adamlui/minify.js/discussions)
 
-### [{ } scss-to-css](https://scsstocss.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://assets.minify-js.org/images/badges/awesome/badge.svg?v=b78dcd3"></a>
+### [{ } scss-to-css](https://scsstocss.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@b78dcd3/assets/images/badges/awesome/badge.svg"></a>
 
 > Recursively compile all SCSS files into minified CSS.
 <br>[Install](https://node.scsstocss.org/#-installation) /
@@ -137,8 +137,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <br>
 
-<img height=6px width="100%" src="https://assets.minify-js.org/images/separators/aqua-gradient.png?v=ad67551">
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://assets.minify-js.org/images/icons/home/white/icon32x27.png?v=ad67551"><img height=13 src="https://assets.minify-js.org/images/icons/home/dark-gray/icon32x27.png?v=ad67551"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**More JavaScript utilities**</a> /
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**More JavaScript utilities**</a> /
 <a href="https://github.com/adamlui/minify.js/discussions">Discuss</a> /
 <a href="#top">Back to top ↑</a>
