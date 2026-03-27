@@ -324,7 +324,7 @@ findJS() » Check returned array.
 [রিডমি](https://github.com/adamlui/minify.js/tree/main/gulp/#readme) /
 [আলোচনা করা](https://github.com/adamlui/minify.js/discussions)
 
-### [{ } scss-to-css](https://scsstocss.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@63bbeed/assets/images/badges/awesome/badge.svg"></a>
+### [{ } scss-to-css](https://github.com/adamlui/scss-to-css/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@63bbeed/assets/images/badges/awesome/badge.svg"></a>
 
 > পুনরাবৃত্তভাবে সমস্ত SCSS ফাইল মিনিফাইড CSS-এ কম্পাইল করুন।
 <br>[ইনস্টল করুন](https://github.com/adamlui/scss-to-css/#-installation) /

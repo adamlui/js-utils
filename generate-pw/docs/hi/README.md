@@ -349,22 +349,22 @@ export default {
 
 ## 🛠️ संबंधित उपयोगिताएँ
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://js-utils.org/generate-ip) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://github.com/adamlui/js-utils/tree/main/generate-ip/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > IPv4 + IPv6 + MAC पतों को बेतरतीब ढंग से उत्पन्न, प्रारूपित और मान्य करें।
-<br>[स्थापित करना](https://docs.generate-ip.org/#-installation) /
-[रीडमी](https://docs.generate-ip.org/#readme) /
-[एपीआई उपयोग](https://docs.generate-ip.org/#-api-usage) /
-[सीएलआई उपयोग](https://docs.generate-ip.org/#-command-line-usage) /
+<br>[स्थापित करना](https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#-installation) /
+[रीडमी](https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#readme) /
+[एपीआई उपयोग](https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#-api-usage) /
+[सीएलआई उपयोग](https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#-command-line-usage) /
 [चर्चा करना](https://github.com/adamlui/js-utils/discussions)
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.org/geolocate) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://github.com/adamlui/js-utils/tree/main/geolocate/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > सीएलआई से आईपी जियोलोकेशन डेटा प्राप्त करें।
-<br>[स्थापित करना](https://docs.geolocatejs.org/#-installation) /
-[रीडमी](https://docs.geolocatejs.org/#readme) /
-[सीएलआई उपयोग](https://docs.geolocatejs.org/#-command-line-usage) /
-[एपीआई उपयोग](https://docs.geolocatejs.org/#-api-usage) /
+<br>[स्थापित करना](https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-installation) /
+[रीडमी](https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#readme) /
+[सीएलआई उपयोग](https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-command-line-usage) /
+[एपीआई उपयोग](https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-api-usage) /
 [चर्चा करना](https://github.com/adamlui/js-utils/discussions)
 
 <br>

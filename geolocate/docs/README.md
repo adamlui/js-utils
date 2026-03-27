@@ -221,22 +221,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## 🛠️ Related utilities
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://js-utils.org/generate-ip) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://github.com/adamlui/js-utils/tree/main/generate-ip/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.
-<br>[Install](https://docs.generate-ip.org/#-installation) /
-[Readme](https://docs.generate-ip.org/#readme) /
-[API usage](https://docs.generate-ip.org/#-api-usage) /
-[CLI usage](https://docs.generate-ip.org/#-command-line-usage) /
+<br>[Install](https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#-installation) /
+[Readme](https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#readme) /
+[API usage](https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#-api-usage) /
+[CLI usage](https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
 ### [🔒 generate-pw](https://github.com/adamlui/js-utils/tree/main/generate-pw/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#password-managers"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > Randomly generate, strengthen, and validate cryptographically-secure passwords.
-<br>[Install](https://docs.generatepw.org/#-installation) /
-[Readme](https://docs.generatepw.org/#readme) /
-[API usage](https://docs.generatepw.org/#-api-usage) /
-[CLI usage](https://docs.generatepw.org/#-command-line-usage) /
+<br>[Install](https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/#-installation) /
+[Readme](https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/#readme) /
+[API usage](https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/#-api-usage) /
+[CLI usage](https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
 <br>

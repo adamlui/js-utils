@@ -349,22 +349,22 @@ export default {
 
 ## 🛠️ 相關實用程式
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://js-utils.org/generate-ip) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://github.com/adamlui/js-utils/tree/main/generate-ip/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > Randomly generate, format, and validate IPv4/I隨機產生、格式化和驗證 IPv4 + IPv6 + MAC 位址。Pv6 addresses.
-<br>[安裝](https://docs.generate-ip.org/#-installation) /
-[自述文件](https://docs.generate-ip.org/#readme) /
-[API 使用](https://docs.generate-ip.org/#-api-usage) /
-[CLI 用法](https://docs.generate-ip.org/#-command-line-usage) /
+<br>[安裝](https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#-installation) /
+[自述文件](https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#readme) /
+[API 使用](https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#-api-usage) /
+[CLI 用法](https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#-command-line-usage) /
 [討論](https://github.com/adamlui/js-utils/discussions)
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.org/geolocate) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://github.com/adamlui/js-utils/tree/main/geolocate/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > 從 CLI 取得 IP 地理位置資料。
-<br>[安裝](https://docs.geolocatejs.org/#-installation) /
-[自述文件](https://docs.geolocatejs.org/#readme) /
-[CLI 用法](https://docs.geolocatejs.org/#-command-line-usage) /
-[API 使用](https://docs.geolocatejs.org/#-api-usage) /
+<br>[安裝](https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-installation) /
+[自述文件](https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#readme) /
+[CLI 用法](https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-command-line-usage) /
+[API 使用](https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-api-usage) /
 [討論](https://github.com/adamlui/js-utils/discussions)
 
 <br>

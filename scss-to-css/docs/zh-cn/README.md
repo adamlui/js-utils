@@ -316,13 +316,13 @@ findSCSS() » Check returned array.
 
 ## 🛠️ 相关实用程序
 
-### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/badges/awesome/badge.svg"></a>
+### [</> minify.js](https://github.com/adamlui/minify.js/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/badges/awesome/badge.svg"></a>
 
 > 递归地缩小所有 JavaScript 文件。
-<br>[安装](https://minify-js.org/docs/zh-cn#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85) /
-[自述文件](https://minify-js.org/docs/zh-cn/#readme) /
-[CLI 用法](https://minify-js.org/docs/zh-cn#-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%BD%BF%E7%94%A8) /
-[API 使用](https://minify-js.org/docs/zh-cn#-api-%E4%BD%BF%E7%94%A8) /
+<br>[安装](https://github.com/adamlui/minify.js/tree/main/docs/zh-cn#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85) /
+[自述文件](https://github.com/adamlui/minify.js/tree/main/docs/zh-cn/#readme) /
+[CLI 用法](https://github.com/adamlui/minify.js/tree/main/docs/zh-cn#-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%BD%BF%E7%94%A8) /
+[API 使用](https://github.com/adamlui/minify.js/tree/main/docs/zh-cn#-api-%E4%BD%BF%E7%94%A8) /
 [讨论](https://github.com/adamlui/minify.js/discussions)
 
 <br>

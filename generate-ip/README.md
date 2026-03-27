@@ -435,19 +435,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ### [🔒 generate-pw](https://github.com/adamlui/js-utils/tree/main/generate-pw/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#password-managers"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > Randomly generate, strengthen, and validate cryptographically-secure passwords.
-<br>[Install](https://docs.generatepw.org/#-installation) /
-[Readme](https://docs.generatepw.org/#readme) /
-[API usage](https://docs.generatepw.org/#-api-usage) /
-[CLI usage](https://docs.generatepw.org/#-command-line-usage) /
+<br>[Install](https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/#-installation) /
+[Readme](https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/#readme) /
+[API usage](https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/#-api-usage) /
+[CLI usage](https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.org/geolocate) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://github.com/adamlui/js-utils/tree/main/geolocate/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > Fetch IP geolocation data from the CLI.
-<br>[Install](https://docs.geolocatejs.org/#-installation) /
-[Readme](https://docs.geolocatejs.org/#readme) /
-[CLI usage](https://docs.geolocatejs.org/#-command-line-usage) /
-[API usage](https://docs.geolocatejs.org/#-api-usage) /
+<br>[Install](https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-installation) /
+[Readme](https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#readme) /
+[CLI usage](https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-command-line-usage) /
+[API usage](https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-api-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
 <br>

@@ -316,13 +316,13 @@ findSCSS() » Check returned array.
 
 ## 🛠️ সম্পর্কিত ইউটিলিটি
 
-### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/badges/awesome/badge.svg"></a>
+### [</> minify.js](https://github.com/adamlui/minify.js/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/badges/awesome/badge.svg"></a>
 
 > সব জাভাস্ক্রিপ্ট ফাইল পুনরাবৃত্তিমূলকভাবে ছোট করুন।
-<br>[ইনস্টল করুন](https://minify-js.org/docs/bn#-%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE%E0%A6%AA%E0%A6%A8) /
-[রিডমি](https://minify-js.org/docs/bn/#readme) /
-[CLI ব্যবহার](https://minify-js.org/docs/bn#-%E0%A6%95%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A1-%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%A8-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B9%E0%A6%BE%E0%A6%B0) /
-[API ব্যবহার](https://minify-js.org/docs/bn#-api-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B9%E0%A6%BE%E0%A6%B0) /
+<br>[ইনস্টল করুন](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js/docs/bn/#-%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE%E0%A6%AA%E0%A6%A8) /
+[রিডমি](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js/docs/bn/#readme) /
+[CLI ব্যবহার](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js/docs/bn/#-%E0%A6%95%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A1-%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%A8-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B9%E0%A6%BE%E0%A6%B0) /
+[API ব্যবহার](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js/docs/bn/#-api-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B9%E0%A6%BE%E0%A6%B0) /
 [আলোচনা করা](https://github.com/adamlui/minify.js/discussions)
 
 <br>

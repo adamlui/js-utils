@@ -316,13 +316,13 @@ IL SOFTWARE VIENE FORNITO "COSÌ COM'È", SENZA GARANZIA DI ALCUN TIPO, ESPLICIT
 
 ## 🛠️ Utilità correlate
 
-### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/badges/awesome/badge.svg"></a>
+### [</> minify.js](https://github.com/adamlui/minify.js/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/badges/awesome/badge.svg"></a>
 
 > Minimizza ricorsivamente tutti i file JavaScript.
-<br>[Installare](https://node.minify-js.org/#-installation) /
-[Leggimi](https://node.minify-js.org/#readme) /
-[Utilizzo della CLI](https://node.minify-js.org/#-command-line-usage) /
-[Utilizzo dell'API](https://node.minify-js.org/#-api-usage) /
+<br>[Installare](https://github.com/adamlui/minify.js/tree/main/node.js/#-installation) /
+[Leggimi](https://github.com/adamlui/minify.js/tree/main/node.js/#readme) /
+[Utilizzo della CLI](https://github.com/adamlui/minify.js/tree/main/node.js/#-command-line-usage) /
+[Utilizzo dell'API](https://github.com/adamlui/minify.js/tree/main/node.js/#-api-usage) /
 [Discutere](https://github.com/adamlui/minify.js/discussions)
 
 <br>

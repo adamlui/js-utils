@@ -316,13 +316,13 @@ DE SOFTWARE WORDT GELEVERD "AS IS", ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIE
 
 ## 🛠️ Gerelateerde hulpprogramma's
 
-### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/badges/awesome/badge.svg"></a>
+### [</> minify.js](https://github.com/adamlui/minify.js/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/badges/awesome/badge.svg"></a>
 
 > Verklein alle JavaScript-bestanden recursief.
-<br>[Installeren](https://node.minify-js.org/#-installation) /
-[Leesmij](https://node.minify-js.org/#readme) /
-[CLI-gebruik](https://node.minify-js.org/#-command-line-usage) /
-[API-gebruik](https://node.minify-js.org/#-api-usage) /
+<br>[Installeren](https://github.com/adamlui/minify.js/tree/main/node.js/#-installation) /
+[Leesmij](https://github.com/adamlui/minify.js/tree/main/node.js/#readme) /
+[CLI-gebruik](https://github.com/adamlui/minify.js/tree/main/node.js/#-command-line-usage) /
+[API-gebruik](https://github.com/adamlui/minify.js/tree/main/node.js/#-api-usage) /
 [Bespreken](https://github.com/adamlui/minify.js/discussions)
 
 <br>

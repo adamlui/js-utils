@@ -316,13 +316,13 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 ## 🛠️ Verwandte Dienstprogramme
 
-### [</> minify.js](https://minify-js.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/badges/awesome/badge.svg"></a>
+### [</> minify.js](https://github.com/adamlui/minify.js/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/badges/awesome/badge.svg"></a>
 
 > Alle JavaScript-Dateien rekursiv verkleinern.
-<br>[Installieren](https://minify-js.org/docs/de#-installation) /
-[CLI-Nutzung](https://minify-js.org/docs/de#-verwendung-der-befehlszeile) /
-[API-Nutzung](https://minify-js.org/docs/de#-api-nutzung) /
-[Liesmich](https://minify-js.org/docs/de/#readme) /
+<br>[Installieren](https://github.com/adamlui/minify.js/tree/main/node.js/docs/de/#-installation) /
+[CLI-Nutzung](https://github.com/adamlui/minify.js/tree/main/node.js/docs/de/#-verwendung-der-befehlszeile) /
+[API-Nutzung](https://github.com/adamlui/minify.js/tree/main/node.js/docs/de/#-api-nutzung) /
+[Liesmich](https://github.com/adamlui/minify.js/tree/main/docs/de/#readme) /
 [Diskutieren](https://github.com/adamlui/minify.js/discussions)
 
 <br>

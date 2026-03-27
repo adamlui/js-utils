@@ -323,7 +323,7 @@ findJS() » Check returned array.
 [自述文件](https://github.com/adamlui/minify.js/tree/main/gulp/#readme) /
 [讨论](https://github.com/adamlui/minify.js/discussions)
 
-### [{ } scss-to-css](https://scsstocss.org) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@63bbeed/assets/images/badges/awesome/badge.svg"></a>
+### [{ } scss-to-css](https://github.com/adamlui/scss-to-css/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@63bbeed/assets/images/badges/awesome/badge.svg"></a>
 
 > 将所有 SCSS 文件递归编译为缩小的 CSS。
 <br>[安装](https://github.com/adamlui/scss-to-css/#-installation) /

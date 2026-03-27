@@ -353,22 +353,22 @@ LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMP
 
 ## 🛠️ Utilitaires associés
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://js-utils.org/generate-ip) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/black/icon55x49.png"></picture> [generate-ip](https://github.com/adamlui/js-utils/tree/main/generate-ip/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > Générez, formatez et validez de manière aléatoire des adresses IPv4 + IPv6 + MAC.
-<br>[Installer](https://docs.generate-ip.org/#-installation) /
-[Lisez-moi](https://docs.generate-ip.org/#readme) /
-[Utilisation de l'API](https://docs.generate-ip.org/#-api-usage) /
-[Utilisation de la CLI](https://docs.generate-ip.org/#-command-line-usage) /
+<br>[Installer](https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#-installation) /
+[Lisez-moi](https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#readme) /
+[Utilisation de l'API](https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#-api-usage) /
+[Utilisation de la CLI](https://github.com/adamlui/js-utils/tree/main/generate-ip/docs/#-command-line-usage) /
 [Discuter](https://github.com/adamlui/js-utils/discussions)
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://js-utils.org/geolocate) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/black/icon32.png"></picture> [geolocate](https://github.com/adamlui/js-utils/tree/main/geolocate/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > Récupérez les données de géolocalisation IP à partir de la CLI.
-<br>[Installer](https://docs.geolocatejs.org/#-installation) /
-[Lisez-moi](https://docs.geolocatejs.org/#readme) /
-[Utilisation de la CLI](https://docs.geolocatejs.org/#-command-line-usage) /
-[Utilisation de l'API](https://docs.geolocatejs.org/#-api-usage) /
+<br>[Installer](https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-installation) /
+[Lisez-moi](https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#readme) /
+[Utilisation de la CLI](https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-command-line-usage) /
+[Utilisation de l'API](https://github.com/adamlui/js-utils/tree/main/geolocate/docs/#-api-usage) /
 [Discuter](https://github.com/adamlui/js-utils/discussions)
 
 <br>
