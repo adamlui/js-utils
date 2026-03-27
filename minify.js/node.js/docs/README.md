@@ -5,15 +5,15 @@
             <img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/icons/earth/black/icon32.svg">
         </picture>
         &nbsp;English |
-        <a href="./zh-cn/#readme">简体中文</a> |
-        <a href="./zh-tw/#readme">繁體中文</a> |
-        <a href="./hi/#readme">हिंदी</a> |
-        <a href="./bn/#readme">বাংলা</a> |
-        <a href="./mr/#readme">मराठी</a> |
-        <a href="./pa/#readme">ਪੰਜਾਬੀ</a> |
-        <a href="./de/#readme">Deutsch</a> |
-        <a href="./es/#readme">Español</a> |
-        <a href="./fr/#readme">Français</a>
+        <a href="https://github.com/adamlui/js-utils/blob/main/minify.js/node.js/docs/zh-cn/#readme">简体中文</a> |
+        <a href="https://github.com/adamlui/js-utils/blob/main/minify.js/node.js/docs/zh-tw/#readme">繁體中文</a> |
+        <a href="https://github.com/adamlui/js-utils/blob/main/minify.js/node.js/docs/hi/#readme">हिंदी</a> |
+        <a href="https://github.com/adamlui/js-utils/blob/main/minify.js/node.js/docs/bn/#readme">বাংলা</a> |
+        <a href="https://github.com/adamlui/js-utils/blob/main/minify.js/node.js/docs/mr/#readme">मराठी</a> |
+        <a href="https://github.com/adamlui/js-utils/blob/main/minify.js/node.js/docs/pa/#readme">ਪੰਜਾਬੀ</a> |
+        <a href="https://github.com/adamlui/js-utils/blob/main/minify.js/node.js/docs/de/#readme">Deutsch</a> |
+        <a href="https://github.com/adamlui/js-utils/blob/main/minify.js/node.js/docs/es/#readme">Español</a> |
+        <a href="https://github.com/adamlui/js-utils/blob/main/minify.js/node.js/docs/fr/#readme">Français</a>
     </h6>
 </div>
 
