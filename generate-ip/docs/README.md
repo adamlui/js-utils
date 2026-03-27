@@ -432,7 +432,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## 🛠️ Related utilities
 
-### [🔒 generate-pw](../generate-pw) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#password-managers"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
+### [🔒 generate-pw](https://github.com/adamlui/js-utils/tree/main/generate-pw/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#password-managers"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > Randomly generate, strengthen, and validate cryptographically-secure passwords.
 <br>[Install](https://docs.generatepw.org/#-installation) /
