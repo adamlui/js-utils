@@ -33,7 +33,7 @@
 
 > 随机生成、格式化和验证 IPv4 + IPv6 + MAC 地址。
 <br>[安装](https://github.com/adamlui/js-utils/tree/main/generate-ip/#-installation) /
-[自述文件](https://github.com/adamlui/js-utils/tree/main/generate-ip/#-readme) /
+[自述文件](https://github.com/adamlui/js-utils/tree/main/generate-ip/#readme) /
 [API 使用情况](https://github.com/adamlui/js-utils/tree/main/generate-ip/#-importing-the-apis) /
 [CLI 使用](https://github.com/adamlui/js-utils/tree/main/generate-ip/#-command-line-usage) /
 [讨论](https://github.com/adamlui/js-utils/discussions)
@@ -51,7 +51,7 @@
 
 > 从命令行界面获取 IP 地理位置数据。
 <br>[安装](https://github.com/adamlui/js-utils/tree/main/geolocate/#-installation) /
-[自述文件](https://github.com/adamlui/js-utils/tree/main/geolocate/#-readme) /
+[自述文件](https://github.com/adamlui/js-utils/tree/main/geolocate/#readme) /
 [API 使用情况](https://github.com/adamlui/js-utils/tree/main/geolocate/#-importing-the-api) /
 [CLI 使用](https://github.com/adamlui/js-utils/tree/main/geolocate/#-command-line-usage) /
 [讨论](https://github.com/adamlui/js-utils/discussions)

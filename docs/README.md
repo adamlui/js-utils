@@ -33,7 +33,7 @@
 
 > Randomly generate, format, and validate IPv4 + IPv6 + MAC addresses.
 <br>[Install](https://github.com/adamlui/js-utils/tree/main/generate-ip/#-installation) /
-[Readme](https://github.com/adamlui/js-utils/tree/main/generate-ip/#-readme) /
+[Readme](https://github.com/adamlui/js-utils/tree/main/generate-ip/#readme) /
 [API usage](https://github.com/adamlui/js-utils/tree/main/generate-ip/#-importing-the-apis) /
 [CLI usage](https://github.com/adamlui/js-utils/tree/main/generate-ip/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
@@ -42,7 +42,7 @@
 
 > Randomly generate, strengthen, and validate cryptographically-secure passwords.
 <br>[Install](https://github.com/adamlui/js-utils/tree/main/generate-pw/#-installation) /
-[Readme](https://github.com/adamlui/js-utils/tree/main/generate-pw/#-readme) /
+[Readme](https://github.com/adamlui/js-utils/tree/main/generate-pw/#readme) /
 [API usage](https://github.com/adamlui/js-utils/tree/main/generate-pw/#-importing-the-api) /
 [CLI usage](https://github.com/adamlui/js-utils/tree/main/generate-pw/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
@@ -51,7 +51,7 @@
 
 > Fetch IP geolocation data from the CLI.
 <br>[Install](https://github.com/adamlui/js-utils/tree/main/geolocate/#-installation) /
-[Readme](https://github.com/adamlui/js-utils/tree/main/geolocate/#-readme) /
+[Readme](https://github.com/adamlui/js-utils/tree/main/geolocate/#readme) /
 [API usage](https://github.com/adamlui/js-utils/tree/main/geolocate/#-importing-the-api) /
 [CLI usage](https://github.com/adamlui/js-utils/tree/main/geolocate/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
@@ -69,7 +69,7 @@
 
 > Recursively compile all SCSS files into minified CSS.
 <br>[Install](https://github.com/adamlui/js-utils/tree/main/scss-to-css/#-installation) /
-[Readme](https://github.com/adamlui/js-utils/tree/main/scss-to-css/#-readme) /
+[Readme](https://github.com/adamlui/js-utils/tree/main/scss-to-css/#readme) /
 [API usage](https://github.com/adamlui/js-utils/tree/main/scss-to-css/#-api-usage) /
 [CLI usage](https://github.com/adamlui/js-utils/tree/main/scss-to-css/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
