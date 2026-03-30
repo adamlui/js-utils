@@ -85,7 +85,7 @@
   },
   "devDependencies": {
     "@eslint/json": "^1.2.0",
-    "@eslint/markdown": "^8.0.0",
+    "@eslint/markdown": "^8.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
     "console-table-printer": "^2.15.0",
     "copyfiles": "^2.4.1",
