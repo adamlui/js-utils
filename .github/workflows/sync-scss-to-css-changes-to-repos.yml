@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    if: (github.repository == 'adamlui/js-utils') && (github.event.commits[0].committer.username != 'kudo-sync-bot')
+    if: (github.repository == 'adamlui/js-utils') && !contains(github.event.head_commit.message, '[auto-sync]')
     runs-on: ubuntu-24.04
     permissions:
       contents: read
@@ -88,13 +88,13 @@ jobs:
         if: env.SYNC_SRC
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
-          git pull && git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from $SYNC_SRC]" || true
+          git add . && git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from $SYNC_SRC]" || true
+          git pull --rebase 
           git push
 
       - name: Push changes to adamlui/scss-to-css
         run: |
           cd ${{ github.workspace }}/adamlui/scss-to-css
-          git pull && git add .
-          git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/scss-to-css]" || true
+          git add . && git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/scss-to-css]" || true
+          git pull --rebase 
           git push
