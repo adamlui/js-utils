@@ -3,7 +3,7 @@ name: Sync changes to **/bump.sh
 on:
   push:
     branches: [main]
-    paths: ["**/bump.sh"]
+    paths: ["**/bump.sh"] 
 
 concurrency:
   group: sync-changes-to-repos
