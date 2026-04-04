@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths: [minify.js/**]
 
+concurrency:
+  group: sync-changes-to-repos
+
 jobs:
   build:
     if: (github.repository == 'adamlui/js-utils') && !contains(github.event.head_commit.message, '[auto-sync')
