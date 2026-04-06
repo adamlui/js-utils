@@ -57,26 +57,6 @@ find . -name "README.md" -exec git add {} +
 git add package*.json
 git commit -n -m "Bumped $pkg_name versions to $new_ver"
 
-# Build minified JS to dist/
-echo -e "${BY}\nBuilding minified JS...\n${NC}"
-node utils/build
-
-# Update jsDelivr URLs for GitHub assets w/ commit hash
-echo -e "${BY}\nUpdating jsDelivr URLs for GitHub assets w/ commit hash...${NC}"
-bump_hash=$(git rev-parse HEAD)
-old_file=$(<dist/cli/index.js)
-sed -i -E "s|(cdn\.jsdelivr\.net\/gh\/[^/]+\/[^@/\"']+)[^/\"']*|\1@$bump_hash|g" dist/cli/index.js
-new_file=$(<dist/cli/index.js)
-if [[ "$old_file" != "$new_file" ]]
-    then echo -e "${BW}$bump_hash${NC}"
-    else echo "No jsDelivr URLs for GH assets found in built files."
-fi
-
-# Commit build to Git
-echo -e "${BY}\nCommitting build to Git...\n${NC}"
-git add ./dist
-git commit -n -m "Built $pkg_name v$new_ver"
-
 # Push all changes to GiHub
 echo -e "${BY}\nPushing to GitHub...\n${NC}"
 git push
