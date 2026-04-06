@@ -35,10 +35,6 @@
   "bin": {
     "geolocate": "dist/cli/index.js"
   },
-  "directories": {
-    "lib": "./dist",
-    "doc": "./docs"
-  },
   "scripts": {
     "dev": "npm run build && npm i -g && geolocate --help",
     "build": "node utils/build",

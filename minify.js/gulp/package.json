@@ -32,10 +32,6 @@
     "dist/",
     "docs/"
   ],
-  "directories": {
-    "lib": "./dist",
-    "doc": "./docs"
-  },
   "scripts": {
     "dev": "npm run build && npm i -g",
     "build": "node utils/build",

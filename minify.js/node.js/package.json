@@ -39,11 +39,6 @@
     "minifyjs": "dist/cli/index.js",
     "minjs": "dist/cli/index.js"
   },
-  "directories": {
-    "lib": "./dist",
-    "doc": "./docs",
-    "test": "./utils/testing"
-  },
   "scripts": {
     "test": "bash utils/testing/minify-cli.test.sh",
     "dev": "npm run build && npm i -g && minify-js --help",

@@ -33,9 +33,7 @@
     "docs/"
   ],
   "directories": {
-    "bin": "./bin",
-    "lib": "./dist",
-    "doc": "./docs"
+    "bin": "./bin"
   },
   "scripts": {
     "dev": "npm run build && npm i -g && generate-ip --help",

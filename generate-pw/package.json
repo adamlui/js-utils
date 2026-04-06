@@ -39,10 +39,6 @@
     "generatepw": "dist/cli/index.js",
     "genpw": "dist/cli/index.js"
   },
-  "directories": {
-    "lib": "./dist",
-    "doc": "./docs"
-  },
   "scripts": {
     "dev": "npm run build && npm i -g && generate-pw --help",
     "build": "node utils/build",
