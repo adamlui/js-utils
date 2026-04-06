@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# This script automates:
-# >>> bump versions in manifests + READMEs >>> commit bumps to Git
-# >>> build minified JS to dist/ >>> update jsDelivr URLs for GH assets in cli/index.js
-# >>> commit build to Git >>> push all changes to GitHub >>> publish to npm (optional)
-
 # Init UI colors
 NC="\033[0m"    # no color
 BR="\033[1;91m" # bright red
