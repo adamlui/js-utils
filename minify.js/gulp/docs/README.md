@@ -4,10 +4,10 @@
 
 ### Recursively minify all JavaScript files.
 
-<a href="#%EF%B8%8F-mit-license">
-    <img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/minify.js/releases/tag/gulp-v1.0.15">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.15-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="#%EF%B8%8F-mit-license">
+    <img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/gulp-minify.js?activeTab=code">
     <img height=31 src="https://img.shields.io/npm/unpacked-size/gulp-minify.js?style=for-the-badge&logo=ebox&logoColor=white&color=blue&labelColor=464646"></a>
 <a href="https://sonarcloud.io/component_measures?metric=vulnerabilities&selected=adamlui_js-utils%3Aminify.js%2Fgulp&id=adamlui_js-utils">
