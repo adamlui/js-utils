@@ -29,6 +29,14 @@
 
 <img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/separators/aqua-gradient.png">
 
+### <a href="https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme">🤖 ai-personas</a>
+
+> 1000+ 專為大型語言模型（LLM）與智能體設計的 AI 人設。
+<br>[安裝](https://github.com/adamlui/js-utils/tree/main/ai-personas/#-installation) /
+[自述文件](https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme) /
+[API 使用情況](https://github.com/adamlui/js-utils/tree/main/ai-personas/#-usage) /
+[討論](https://github.com/adamlui/js-utils/discussions)
+
 ### <a href="https://github.com/adamlui/js-utils/tree/main/generate-ip/#readme"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/black/icon55x49.png"></picture> generate-ip</a> <a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > 隨機產生、格式化和驗證 IPv4 + IPv6 + MAC 位址。
