@@ -3,7 +3,7 @@
 # > ai-personas
 
 <a href="https://github.com/KudoAI/ai-personas/releases/tag/node.js-v1.0.0">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.1-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-license">
     <img height=31 src="https://img.shields.io/badge/License-CC0--1.0/MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/KudoAI/ai-personas">
@@ -151,8 +151,8 @@ Prompt B: I want you to act as a DAX terminal...
 const systemPrompt = ai_personas['Study Planner'].prompt
 
 const messages = [
-    {'role': 'system', 'content': systemPrompt},
-    {'role': 'user', 'content': 'Create a weekly study plan for calculus'}
+    { 'role': 'system', 'content': systemPrompt },
+    { 'role': 'user', 'content': 'Create a weekly study plan for calculus' }
 ]
 ```
 
