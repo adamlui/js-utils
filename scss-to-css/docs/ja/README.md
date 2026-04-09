@@ -331,4 +331,6 @@ findSCSS() » Check returned array.
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**その他の JavaScript ユーティリティ**</a> /
 <a href="https://github.com/adamlui/scss-to-css/discussions">話し合う</a> /
+<a href="https://github.com/adamlui/scss-to-css/issues">バグを報告する</a> /
+<a href="mailto:security@tidelift.com">脆弱性を報告する</a> /
 <a href="#top">トップに戻る ↑</a>

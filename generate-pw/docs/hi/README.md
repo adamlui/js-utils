@@ -373,4 +373,6 @@ export default {
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**अधिक जावास्क्रिप्ट उपयोगिताएँ**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">चर्चा करना</a> /
+<a href="https://github.com/adamlui/js-utils/issues">बग की रिपोर्ट करें</a> /
+<a href="mailto:security@tidelift.com">कमजोरी की रिपोर्ट करें</a> /
 <a href="#top">वापस शीर्ष पर ↑</a>

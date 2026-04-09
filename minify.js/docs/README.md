@@ -310,4 +310,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**More JavaScript utilities**</a> /
 <a href="https://github.com/adamlui/minify.js/discussions">Discuss</a> /
+<a href="https://github.com/adamlui/minify.js/issues">Report bug</a> /
+<a href="mailto:security@tidelift.com">Report vulnerability</a> /
 <a href="#top">Back to top ↑</a>

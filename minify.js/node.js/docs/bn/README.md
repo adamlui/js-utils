@@ -339,4 +339,6 @@ findJS() » Check returned array.
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**আরো জাভাস্ক্রিপ্ট ইউটিলিটি**</a> /
 <a href="https://github.com/adamlui/minify.js/discussions">আলোচনা করা</a> /
+<a href="https://github.com/adamlui/minify.js/issues">ত্রুটি জানান</a> /
+<a href="mailto:security@tidelift.com">দুর্বলতা জানান</a> /
 <a href="#top">উপরে ফিরে যাও ↑</a>

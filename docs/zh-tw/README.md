@@ -87,4 +87,6 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@ef1089a/assets/images/icons/tag/white/icon16.svg"><img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@ef1089a/assets/images/icons/tag/dark-gray/icon16.svg"></picture>
 <a href="https://github.com/adamlui/js-utils/releases">**最新發布**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">討論</a> /
+<a href="https://github.com/adamlui/js-utils/issues">報告錯誤</a> /
+<a href="mailto:security@tidelift.com">報告漏洞</a> /
 <a href="#top">回到頂部 ↑</a>

@@ -87,4 +87,6 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@ef1089a/assets/images/icons/tag/white/icon16.svg"><img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@ef1089a/assets/images/icons/tag/dark-gray/icon16.svg"></picture>
 <a href="https://github.com/adamlui/js-utils/releases">**Latest releases**</a> /
 <a href="https://github.com/adamlui/js-utils/discussions">Discuss</a> /
+<a href="https://github.com/adamlui/js-utils/issues">Report bug</a> /
+<a href="mailto:security@tidelift.com">Report vulnerability</a> /
 <a href="#top">Back to top ↑</a>

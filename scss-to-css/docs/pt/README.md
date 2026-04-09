@@ -331,4 +331,6 @@ O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**Mais utilitários JavaScript**</a> /
 <a href="https://github.com/adamlui/scss-to-css/discussions">Discutir</a> /
+<a href="https://github.com/adamlui/scss-to-css/issues">Reportar erro</a> /
+<a href="mailto:security@tidelift.com">Reportar vulnerabilidade</a> /
 <a href="#top">De volta ao topo ↑</a>

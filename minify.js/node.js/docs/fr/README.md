@@ -338,4 +338,6 @@ LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMP
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**Plus d'utilitaires JavaScript**</a> /
 <a href="https://github.com/adamlui/minify.js/discussions">Discuter</a> /
+<a href="https://github.com/adamlui/minify.js/issues">Signaler un bug</a> /
+<a href="mailto:security@tidelift.com">Signaler une vulnérabilité</a> /
 <a href="#top">Retour au sommet ↑</a>

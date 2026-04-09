@@ -331,4 +331,6 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ ZUR VERFÜGUNG GESTELLT, OHNE JEGLICHE AUSDR
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**Weitere JavaScript-Dienstprogramme**</a> /
 <a href="https://github.com/adamlui/scss-to-css/discussions">Diskutieren</a> /
+<a href="https://github.com/adamlui/scss-to-css/issues">Fehler melden</a> /
+<a href="mailto:security@tidelift.com">Schwachstelle melden</a> /
 <a href="#top">Zurück nach oben ↑</a>
