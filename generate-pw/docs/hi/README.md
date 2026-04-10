@@ -23,8 +23,8 @@
 
 <a href="https://npmstar.com/compare/generate-pw">
     <img height=31 src="https://img.shields.io/npm/dm/generate-pw?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.3.1">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-2.3.1-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.3.2">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-2.3.2-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-लाइसेंस">
     <img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/generate-pw?activeTab=code">
@@ -90,14 +90,14 @@ const pw = require('generate-pw')
 #### <> HTML स्क्रिप्ट टैग:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/generate-pw@2.3.1/dist/generate-pw.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/generate-pw@2.3.2/dist/generate-pw.min.js"></script>
 ```
 
 #### ES6:
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@2.3.1/dist/generate-pw.min.js')
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@2.3.2/dist/generate-pw.min.js')
     // आपका कोड यहाँ...
 })()
 ```
@@ -106,7 +106,7 @@ const pw = require('generate-pw')
 
 ```js
 ...
-// @require https://cdn.jsdelivr.net/npm/generate-pw@2.3.1/dist/generate-pw.min.js
+// @require https://cdn.jsdelivr.net/npm/generate-pw@2.3.2/dist/generate-pw.min.js
 // ==/UserScript==
 
 // आपका कोड यहाँ...
@@ -114,7 +114,7 @@ const pw = require('generate-pw')
 
 <br>
 
-**💡 ध्यान दें:** हमेशा नवीनतम संस्करण आयात करने के लिए (उत्पादन में अनुशंसित नहीं!) jsDelivr URL से `@2.3.1` संस्करण टैग हटा दें: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
+**💡 ध्यान दें:** हमेशा नवीनतम संस्करण आयात करने के लिए (उत्पादन में अनुशंसित नहीं!) jsDelivr URL से `@2.3.2` संस्करण टैग हटा दें: `https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
 
 <br>
 
