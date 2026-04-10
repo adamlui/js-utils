@@ -13,6 +13,16 @@ jobs:
       contents: read
     env:
       REPO_SYNC_PAT: ${{ secrets.REPO_SYNC_PAT }}
+
+    steps:
+      - name: Generate KSB token
+        id: ksb-token
+        uses: actions/create-github-app-token@v3.0.0
+        with:
+          app-id: ${{ secrets.KSB_APP_ID }}
+          private-key: ${{ secrets.KSB_PRIVATE_KEY }}
+          owner: KudoAI
+
     steps:
       - name: Sync release to adamlui/<app-repo>
         run: |
@@ -77,7 +87,7 @@ jobs:
               printf '{"tag_name": "%s","name": "%s","body": "%s"}' \
                 "$TARGET_RELEASE_TAG_NAME" "$RELEASE_TITLE" "$RELEASE_NOTES")
             create_release_response=$(
-              curl -s -S -X POST -H "Authorization: token $REPO_SYNC_PAT" \
+              curl -s -S -X POST -H "Authorization: Bearer ${{ steps.ksb-token.outputs.token }}" \
                    -H "Content-Type: application/json" -d "$create_release_payload" "$create_release_url")
             upload_url=$(echo "$create_release_response" | sed -nE 's|.*"upload_url": "(.*)".*|\1|p' | sed 's|{.*}||')
           else
@@ -87,13 +97,13 @@ jobs:
             update_release_payload=$(
               printf '{"name": "%s","body": "%s"}' \
                 "$RELEASE_TITLE" "$RELEASE_NOTES")
-            patch_response=$(curl -s -S -X PATCH -H "Authorization: token $REPO_SYNC_PAT" \
+            patch_response=$(curl -s -S -X PATCH -H "Authorization: Bearer ${{ steps.ksb-token.outputs.token }}" \
                  -H "Content-Type: application/json" -d "$update_release_payload" "$update_release_url")
             if echo "$patch_response" | grep -q '"message"'; then
                 echo "ERROR: Failed to update release: $patch_response"
                 exit 1
             fi
-            release_get_response=$(curl -s -S -H "Authorization: token $REPO_SYNC_PAT" \
+            release_get_response=$(curl -s -S -H "Authorization: Bearer ${{ steps.ksb-token.outputs.token }}" \
               "https://api.github.com/repos/adamlui/$release_app_name/releases/tags/$TARGET_RELEASE_TAG_NAME")
             upload_url=$(echo "$release_get_response" | sed -nE 's|.*"upload_url": "(.*)".*|\1|p' | sed 's|{.*}||')
           fi
