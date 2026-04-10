@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-24.04
     permissions:
       contents: read
-    env:
-      REPO_SYNC_PAT: ${{ secrets.REPO_SYNC_PAT }}
 
     steps:
       - name: Generate KSB token
