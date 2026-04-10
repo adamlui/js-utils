@@ -56,7 +56,7 @@ jobs:
           fi
 
           # Append auto-sync trailer
-          RELEASE_NOTES+="\n###### _Auto-synced from https://github.com/adamlui/js-utils/releases"
+          RELEASE_NOTES+="\n\n###### _Auto-synced from https://github.com/adamlui/js-utils/releases"
           RELEASE_NOTES+=" by_ :robot: [kudo-sync-bot](https://github.com/kudo-sync-bot)"
 
           if [ "$RELEASE_EXISTS" = false ] ; then
