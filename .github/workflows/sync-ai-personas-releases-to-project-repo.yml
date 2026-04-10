@@ -3,7 +3,6 @@ name: Sync ai-personas releases to KudoAI/ai-personas
 on:
   release:
     types: [published, edited]
-    tags: ["ai-personas*"]
 
 jobs:
   sync-release:
@@ -29,6 +28,7 @@ jobs:
           RELEASE_TAG="${{ github.event.release.tag_name }}"
           echo "Source Title: $RELEASE_TITLE"
           echo "Source Tag: $RELEASE_TAG"
+          [[ "$RELEASE_TAG" == ai-personas* ]] || exit 0
 
           RELEASE_JSON=$(curl -s "https://api.github.com/repos/adamlui/js-utils/releases/tags/$RELEASE_TAG")
           RELEASE_NOTES=$(echo "$RELEASE_JSON" | sed -nE 's/.*"body": "(.*)".*/\1/p')
