@@ -28,6 +28,7 @@ jobs:
           echo "Source Tag: $RELEASE_TAG"
           [[ "$RELEASE_TAG" == ai-personas* ]] || exit 0
 
+          TARGET_REPO="KudoAI/ai-personas"
           RELEASE_JSON=$(curl -s "https://api.github.com/repos/adamlui/js-utils/releases/tags/$RELEASE_TAG")
           RELEASE_NOTES=$(echo "$RELEASE_JSON" | sed -nE 's/.*"body": "(.*)".*/\1/p')
 
@@ -45,7 +46,7 @@ jobs:
 
           # Check release exists in KudoAI/ai-personas
           RELEASE_CHECK_RESP=$(curl -s \
-            "https://api.github.com/repos/KudoAI/ai-personas/releases/tags/$TARGET_RELEASE_TAG")
+            "https://api.github.com/repos/$TARGET_REPO/releases/tags/$TARGET_RELEASE_TAG")
           TARGET_RELEASE_ID=$(echo "$RELEASE_CHECK_RESP" | sed -nE 's/.*"id":[[:space:]]*([0-9]+).*/\1/p' | head -1)
           if [ -n "$TARGET_RELEASE_ID" ] ; then
             RELEASE_EXISTS=true
@@ -61,7 +62,7 @@ jobs:
 
           if [ "$RELEASE_EXISTS" = false ] ; then
             echo "Creating new release..."
-            create_release_url="https://api.github.com/repos/KudoAI/ai-personas/releases"
+            create_release_url="https://api.github.com/repos/$TARGET_REPO/releases"
             create_release_payload=$(
               printf '{"tag_name": "%s","name": "%s","body": "%s"}' \
                 "$TARGET_RELEASE_TAG" "$TARGET_RELEASE_TITLE" "$RELEASE_NOTES")
@@ -75,7 +76,7 @@ jobs:
             upload_url=$(echo "$create_release_resp" | sed -nE 's|.*"upload_url": "(.*)".*|\1|p' | sed 's|{.*}||')
           else
             echo "Updating existing release..."
-            update_release_url="https://api.github.com/repos/KudoAI/ai-personas/releases/$TARGET_RELEASE_ID"
+            update_release_url="https://api.github.com/repos/$TARGET_REPO/releases/$TARGET_RELEASE_ID"
             update_release_payload=$(
               printf '{"name": "%s","body": "%s"}' \
                 "$TARGET_RELEASE_TITLE" "$RELEASE_NOTES")
@@ -87,8 +88,8 @@ jobs:
               exit 1
             fi
             get_release_resp=$(curl -s -S -H "Authorization: Bearer ${{ steps.ksb-token.outputs.token }}" \
-              "https://api.github.com/repos/KudoAI/ai-personas/releases/tags/$TARGET_RELEASE_TAG")
+              "https://api.github.com/repos/$TARGET_REPO/releases/tags/$TARGET_RELEASE_TAG")
             upload_url=$(echo "$get_release_resp" | sed -nE 's|.*"upload_url": "(.*)".*|\1|p' | sed 's|{.*}||')
           fi
 
-          echo "Release synced to KudoAI/ai-personas ($TARGET_RELEASE_TAG)!"
+          echo "Release synced to $TARGET_REPO ($TARGET_RELEASE_TAG)!"
