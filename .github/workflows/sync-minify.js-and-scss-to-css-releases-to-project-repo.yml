@@ -43,7 +43,7 @@ jobs:
 
           TARGET_RELEASE_TITLE="$RELEASE_TITLE"
           TARGET_RELEASE_TAG=$(echo "$RELEASE_TAG" | sed -E '
-            s/^minify\.js-(node|gulp)-([0-9.]+)$/\1-v\2/;
+            s/^minify\.js-(node(\.js)?|gulp)-([0-9.]+)$/\1-v\3/;
             s/^scss-to-css-([0-9.]+)$/v\1/
           ')
           echo "Target Title: $TARGET_RELEASE_TITLE"
