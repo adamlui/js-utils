@@ -3,6 +3,7 @@ name: Sync minify.js + scss-to-css releases to adamlui/<app-repo>
 on:
   release:
     types: [published, edited]
+    tags: ["minify.js*", "scss-to-css*"]
 
 jobs:
   sync-release:
