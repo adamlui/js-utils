@@ -25,8 +25,10 @@ jobs:
         run: |
           # Get release title/tag/notes from event
           RELEASE_TITLE="${{ github.event.release.name }}"
-          release_tag_name="${{ github.event.release.tag_name }}"# Exit if this is not a supported repo release
-          [[ "$release_tag_name" == minify.js* || "$release_tag_name" == scss-to-css* ]] || exit 0
+          RELEASE_TAG="${{ github.event.release.tag_name }}"
+          echo "Source Title: $RELEASE_TITLE"
+          echo "Source Tag: $RELEASE_TAG"
+          [[ "$RELEASE_TAG" == minify.js* || "$RELEASE_TAG" == scss-to-css* ]] || exit 0
 
           # Get fresh release data from API
           this_release=$(curl -s https://api.github.com/repos/adamlui/js-utils/releases/tags/$release_tag_name)
