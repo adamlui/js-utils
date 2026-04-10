@@ -45,7 +45,7 @@ jobs:
           echo "Target Title: $TARGET_RELEASE_TITLE"
           echo "Target Tag: $TARGET_RELEASE_TAG"
 
-          # Check release exists in ai-personas
+          # Check release exists in KudoAI/ai-personas
           RELEASE_CHECK_RESP=$(curl -s \
             "https://api.github.com/repos/KudoAI/ai-personas/releases/tags/$TARGET_RELEASE_TAG")
           TARGET_RELEASE_ID=$(echo "$RELEASE_CHECK_RESP" | sed -nE 's/.*"id":[[:space:]]*([0-9]+).*/\1/p' | head -1)
