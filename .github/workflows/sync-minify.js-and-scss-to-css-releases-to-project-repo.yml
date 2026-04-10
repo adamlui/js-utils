@@ -31,8 +31,6 @@ jobs:
           if [[ "$RELEASE_TAG" == minify.js-* ]] ; then PKG_NAME="minify.js"
           elif [[ "$RELEASE_TAG" == scss-to-css-* ]] ; then PKG_NAME="scss-to-css" ; fi
           TARGET_REPO="adamlui/$PKG_NAME"
-          echo "Target Repo: $TARGET_REPO"
-
           RELEASE_JSON=$(curl -s "https://api.github.com/repos/adamlui/js-utils/releases/tags/$RELEASE_TAG")
           RELEASE_NOTES=$(echo "$RELEASE_JSON" | sed -nE 's/.*"body": "(.*)".*/\1/p')
 
