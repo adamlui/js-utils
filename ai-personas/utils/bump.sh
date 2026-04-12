@@ -63,4 +63,4 @@ git commit -n -m "Bumped $pkg_name versions to $new_ver"
 echo -e "${BY}\nPushing to GitHub...\n${NC}"
 git push
 
-echo -e "\n${BG}Successfully bumped to v$new_ver!${NC}"
+echo -e "${BG}\nSuccessfully bumped to v$new_ver!${NC}"
