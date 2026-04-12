@@ -3,7 +3,7 @@ name: Sync README.md between ai-personas/ ⟷ ai-personas/docs/, then ai-persona
 on:
   push:
     branches: [main]
-    paths: [ai-personas/**]
+    paths: [ai-personas/**/README.md]
 
 jobs:
   build:
