@@ -33,16 +33,12 @@ jobs:
       - name: Sync README.md between minify.js/gulp/ & minify.js/gulp/docs
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
-
-          # Init paths/content/mod timestamps
           root_readme="./minify.js/gulp/README.md"
           root_readme_content=$(git show HEAD:"$root_readme")
           root_readme_modified=$(git log -1 --format="%ct" -- "$root_readme")
           docs_readme="./minify.js/gulp/docs/README.md"
           docs_readme_content=$(git show HEAD:"$docs_readme")
           docs_readme_modified=$(git log -1 --format="%ct" -- "$docs_readme")
-
-          # Perform syncs of diff READMEs
           if [[ "$root_readme_content" != "$docs_readme_content" ]] ; then
             echo "readme_updated=true" >> $GITHUB_ENV
             if (( $root_readme_modified > $docs_readme_modified )) ; then
@@ -57,16 +53,12 @@ jobs:
       - name: Sync README.md between minify.js/node.js/ & minify.js/node.js/docs
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
-
-          # Init paths/content/mod timestamps
           root_readme="./minify.js/node.js/README.md"
           root_readme_content=$(git show HEAD:"$root_readme")
           root_readme_modified=$(git log -1 --format="%ct" -- "$root_readme")
           docs_readme="./minify.js/node.js/docs/README.md"
           docs_readme_content=$(git show HEAD:"$docs_readme")
           docs_readme_modified=$(git log -1 --format="%ct" -- "$docs_readme")
-
-          # Perform syncs of diff READMEs
           if [[ "$root_readme_content" != "$docs_readme_content" ]] ; then
             echo "readme_updated=true" >> $GITHUB_ENV
             if (( $root_readme_modified > $docs_readme_modified )) ; then
