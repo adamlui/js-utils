@@ -43,20 +43,22 @@ sed_actions=(
 find . -name 'README.md' "${sed_actions[@]}"
 echo "v$new_ver"
 
-echo -e "\n${BY}Loading kudo-sync-bot GPG signing key...${NC}"
+echo -e "${BY}\nChanging Git author/committer to kudo-sync-bot...\n${NC}"
 if [ -n "$GPG_KEYS_PATH" ] ; then
     KEY_PATH="$GPG_KEYS_PATH/kudo-sync-bot-private-key.asc"
     if [ -f "$KEY_PATH" ] ; then gpg --batch --import "$KEY_PATH" ; fi
     KEY_ID_PATH="$GPG_KEYS_PATH/kudo-sync-bot-key-id.txt"
     if [ -f "$KEY_ID_PATH" ] ; then KEY_ID="$(cat "$KEY_ID_PATH")" ; fi
 fi
+export GIT_AUTHOR_NAME="kudo-sync-bot"
+export GIT_AUTHOR_EMAIL="auto-sync@kudoai.com"
+export GIT_COMMITTER_NAME="kudo-sync-bot"
+export GIT_COMMITTER_EMAIL="auto-sync@kudoai.com"
 
 echo -e "${BY}\nCommitting bumps to Git...\n${NC}"
 find . -name "README.md" -exec git add {} +
 git add package*.json
-git -c user.name="kudo-sync-bot" -c user.email="auto-sync@kudoai.com" \
-    -c commit.gpgsign=true ${KEY_ID:+-c user.signingkey="$KEY_ID"} \
-    commit -n -m "Bumped $pkg_name versions to $new_ver"
+git commit -n -m "Bumped $pkg_name versions to $new_ver"
 
 echo -e "${BY}\nPushing to GitHub...\n${NC}"
 git push
