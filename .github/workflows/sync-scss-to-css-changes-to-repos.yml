@@ -89,6 +89,7 @@ jobs:
       - name: Push changes to adamlui/scss-to-css
         run: |
           cd ${{ github.workspace }}/adamlui/scss-to-css
-          git add . && git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/scss-to-css]" || true
+          git add . && git commit -n -m \
+            "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/scss-to-css]" || true
           git pull --rebase 
           git push
