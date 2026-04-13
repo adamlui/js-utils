@@ -23,8 +23,8 @@
 
 <a href="https://npmstar.com/compare/generate-pw">
     <img height=31 src="https://img.shields.io/npm/dm/generate-pw?label=%E4%B8%8B%E8%BC%89&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.3.2">
-    <img height=31 src="https://img.shields.io/badge/最新版本-2.3.2-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.3.3">
+    <img height=31 src="https://img.shields.io/badge/最新版本-2.3.3-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-%E8%AE%B8%E5%8F%AF%E8%AF%81">
     <img height=31 src="https://img.shields.io/badge/許可證-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/generate-pw?activeTab=code">
@@ -90,14 +90,14 @@ const pw = require('generate-pw')
 #### <>  腳本標籤:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/generate-pw@2.3.2/dist/generate-pw.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/generate-pw@2.3.3/dist/generate-pw.min.js"></script>
 ```
 
 #### ES6:
 
 ```js
 (async () => {
-    await import('https://cdn.jsdelivr.net/npm/generate-pw@2.3.2/dist/generate-pw.min.js')
+    await import('https://cdn.jsdelivr.net/npm/generate-pw@2.3.3/dist/generate-pw.min.js')
     // 你的程式碼在這裡...
 })()
 ```
@@ -106,7 +106,7 @@ const pw = require('generate-pw')
 
 ```js
 ...
-// @require https://cdn.jsdelivr.net/npm/generate-pw@2.3.2/dist/generate-pw.min.js
+// @require https://cdn.jsdelivr.net/npm/generate-pw@2.3.3/dist/generate-pw.min.js
 // ==/UserScript==
 
 // 你的程式碼在這裡...
@@ -114,7 +114,7 @@ const pw = require('generate-pw')
 
 <br>
 
-**💡 注意:** 若要始終匯入最新版本（不建議在生產中使用！），請從 jsDelivr URL 中刪除 `@2.3.2` 版本標籤：`https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
+**💡 注意:** 若要始終匯入最新版本（不建議在生產中使用！），請從 jsDelivr URL 中刪除 `@2.3.3` 版本標籤：`https://cdn.jsdelivr.net/npm/generate-pw/dist/generate-pw.min.js`
 
 <br>
 
