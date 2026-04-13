@@ -73,6 +73,14 @@
 [API 使用情況](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js/docs/zh-tw/#-api-%E4%BD%BF%E7%94%A8) /
 [討論](https://github.com/adamlui/js-utils/discussions)
 
+### [🇨🇳 non-latin-locales](https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#readme)
+
+> ISO 639-1（2 個字母）代碼，用於非拉丁語系地區。
+<br>[安裝](https://github.com/adamlui/js-utils/tree/main/non-latin-locales#-installation) /
+[自述文件](https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#readme) /
+[API 使用情況](https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#-usage) /
+[討論](https://github.com/adamlui/js-utils/discussions)
+
 ### [{ } scss-to-css](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-tw/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > 遞歸地將所有 SCSS 檔案編譯成壓縮後的 CSS。

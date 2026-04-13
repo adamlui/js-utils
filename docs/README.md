@@ -73,6 +73,14 @@
 [API usage](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js#-api-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
+### [🇨🇳 non-latin-locales](https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#readme)
+
+> ISO 639-1 (2-letter) codes for non-Latin locales.
+<br>[Install](https://github.com/adamlui/js-utils/tree/main/non-latin-locales#-installation) /
+[Readme](https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#readme) /
+[API usage](https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#-usage) /
+[Discuss](https://github.com/adamlui/js-utils/discussions)
+
 ### [{ } scss-to-css](https://github.com/adamlui/js-utils/tree/main/scss-to-css/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > Recursively compile all SCSS files into minified CSS.
