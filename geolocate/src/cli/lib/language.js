@@ -51,15 +51,8 @@ module.exports = {
             require(`../../${ env.modes.dev ? '../_locales/en' : 'data' }/messages.json`))
 
         if (!langCode.startsWith('en')) { // fetch non-English msgs from jsDelivr
-            try { // check if terminal supports non-Latin scripts
-                const nonLatinLocales = await (await data.fetch(
-                    `${cli.urls.jsdelivr}@${cli.commitHashes.data}/assets/data/non-latin-locales.json`
-                )).json()
-                if (nonLatinLocales.includes(langCode.split('-')[0]) && !env.supports.unicode)
-                    return msgs // en ones
-            } catch (err) {
-                log.debug(`Failed to fetch non-Latin locales: ${err}`)
-            }
+            if (require('non-latin-locales').includes(langCode.split('_')[0]) && !env.supports.unicode)
+                return msgs // EN ones
             const msgBaseURL = `${require('./jsdelivr').getCommitURL(cli.commitHashes.locales)}/_locales`
             let msgURL = `${msgBaseURL}/${langCode}/messages.json`, msgFetchesTried = 0
             while (msgFetchesTried < 3)
