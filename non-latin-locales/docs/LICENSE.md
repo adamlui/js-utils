@@ -1,6 +1,6 @@
 # 🏛️ MIT License
 
-**Copyright © 2026 [Adam Lui](https://www.kudoai.com)**
+**Copyright © 2026 [Adam Lui](https://github.com/adamlui)**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
