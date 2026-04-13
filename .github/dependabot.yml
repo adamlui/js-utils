@@ -12,6 +12,7 @@ updates:
       - /generate-ip
       - /generate-pw
       - /geolocate
+      - /latin-locales
       - /minify.js/gulp
       - /minify.js/node.js
       - /non-latin-locales

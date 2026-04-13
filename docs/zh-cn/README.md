@@ -64,6 +64,14 @@
 [CLI 使用](https://github.com/adamlui/js-utils/tree/main/geolocate/#-command-line-usage) /
 [讨论](https://github.com/adamlui/js-utils/discussions)
 
+### [🇪🇸 latin-locales](https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#readme)
+
+> 拉丁语系语言环境的 ISO 639-1（双字母）代码。
+<br>[安装](https://github.com/adamlui/js-utils/tree/main/latin-locales#-installation) /
+[自述文件](https://github.com/adamlui/js-utils/tree/main/latin-locales/#readme) /
+[API 使用情况](https://github.com/adamlui/js-utils/tree/main/latin-locales/#-usage) /
+[讨论](https://github.com/adamlui/js-utils/discussions)
+
 ### [</> minify.js](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js/docs/zh-cn/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > 递归地压缩所有 JavaScript 文件。

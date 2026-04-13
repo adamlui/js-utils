@@ -64,6 +64,14 @@
 [CLI usage](https://github.com/adamlui/js-utils/tree/main/geolocate/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/js-utils/discussions)
 
+### [🇪🇸 latin-locales](https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#readme)
+
+> ISO 639-1 (2-letter) codes for Latin locales.
+<br>[Install](https://github.com/adamlui/js-utils/tree/main/latin-locales#-installation) /
+[Readme](https://github.com/adamlui/js-utils/tree/main/latin-locales/#readme) /
+[API usage](https://github.com/adamlui/js-utils/tree/main/latin-locales/#-usage) /
+[Discuss](https://github.com/adamlui/js-utils/discussions)
+
 ### [</> minify.js](https://github.com/adamlui/js-utils/tree/main/minify.js/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > Recursively minify all JavaScript files.
