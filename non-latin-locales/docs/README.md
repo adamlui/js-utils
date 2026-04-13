@@ -37,7 +37,7 @@ console.log(nonLatinLocales)
 #### CommonJS (CJS):
 
 ```js
-const personas = require('non-latin-locales')
+const nonLatinLocales = require('non-latin-locales')
 
 console.log(nonLatinLocales)
 // => ['ab', 'am', 'ar', 'as', 'av', 'az', 'ba', 'be', 'bg', ...]
