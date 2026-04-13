@@ -1,0 +1,21 @@
+name: Publish latin-locales to npm on new tag
+
+on:
+  push:
+    tags: [latin-locales*]
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6.0.2
+      - uses: actions/setup-node@v6.3.0
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+      - run: cd non-latin-locales && npm ci
+      - run: cd non-latin-locales && npm run build
+      - run: cd non-latin-locales && npm publish --provenance
