@@ -1,0 +1,71 @@
+{
+  "name": "non-latin-locales",
+  "version": "1.0.0",
+  "description": "ISO 639-1 (2-letter) codes for non-Latin locales requiring advanced Unicode support",
+  "author": {
+    "name": "Adam Lui",
+    "email": "adam@kudoai.com",
+    "url": "https://github.com/adamlui"
+  },
+  "homepage": "https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#readme",
+  "license": "MIT",
+  "funding": [
+    {
+      "type": "github",
+      "url": "http://github.com/sponsors/adamlui"
+    },
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/adamlui"
+    },
+    {
+      "type": "paypal",
+      "url": "https://paypal.me/adamlui"
+    }
+  ],
+  "main": "dist/index.js",
+  "files": [
+    "dist/",
+    "docs/"
+  ],
+  "scripts": {
+    "build": "node utils/build",
+    "bump:patch": "bash utils/bump.sh patch",
+    "bump:minor": "bash utils/bump.sh minor",
+    "bump:feat": "npm run bump:minor",
+    "bump:major": "bash utils/bump.sh major",
+    "lint": "eslint . --cache",
+    "lint:all": "eslint .",
+    "lint:fix": "eslint . --fix --cache",
+    "lint:fix-all": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamlui/js-utils.git"
+  },
+  "keywords": [
+    "charset",
+    "detection",
+    "i18n",
+    "internationalization",
+    "json",
+    "language",
+    "latin",
+    "locale",
+    "localization",
+    "non-latin",
+    "script",
+    "unicode"
+  ],
+  "bugs": {
+    "url": "https://github.com/adamlui/js-utils/issues"
+  },
+  "devDependencies": {
+    "@eslint/json": "^1.2.0",
+    "@eslint/markdown": "^8.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint": "^9.39.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-regexp": "^3.1.0"
+  }
+}

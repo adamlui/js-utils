@@ -14,6 +14,7 @@ updates:
       - /geolocate
       - /minify.js/gulp
       - /minify.js/node.js
+      - /non-latin-locales
       - /scss-to-css
     schedule:
       interval: daily
