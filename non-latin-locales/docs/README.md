@@ -2,8 +2,8 @@
 
 # > non-latin-locales
 
-<a href="https://github.com/adamlui/js-utils/releases/tag/non-latin-locales-1.0.0">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/non-latin-locales-1.0.1">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.1-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/blob/main/non-latin-locales/docs/LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/js-utils">
@@ -13,7 +13,7 @@
 
 > ### _ISO 639-1 (2-letter) codes for non-Latin locales requiring advanced Unicode support._
 
-It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/js-utils@non-latin-locales-1.0.0/non-latin-locales/non-latin-locales.json), so you can use it in any environment.
+It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/js-utils@non-latin-locales-1.0.1/non-latin-locales/non-latin-locales.json), so you can use it in any environment.
 
 ## ⚡ Installation
 

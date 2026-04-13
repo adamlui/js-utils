@@ -1,6 +1,6 @@
 {
   "name": "non-latin-locales",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ISO 639-1 (2-letter) codes for non-Latin locales requiring advanced Unicode support",
   "author": {
     "name": "Adam Lui",
