@@ -14,7 +14,7 @@
 
 # 🛠️ JavaScript 工具
 
-<a href="https://npmstar.com/compare/@adamlui%2Fgeolocate-vs-@adamlui%2Fminify.js-vs-@adamlui%2Fscss-to-css-vs-@kudoai%2Fai-personas-vs-generate-ip-vs-generate-pw-vs-gulp-minify.js-vs-latin-locales-vs-non-latin-locales?timeRange=all">
+<a href="https://npm-compare.com/@adamlui/geolocate,@adamlui/minify.js,@adamlui/scss-to-css,@kudoai/ai-personas,generate-ip,generate-pw,gulp-minify.js,latin-locales,non-latin-locales/#timeRange=ALL">
     <img height=31 src="https://img.shields.io/badge/%E4%B8%8B%E8%BD%BD-5.4K/%E6%9C%88-44cc11.svg?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/%E6%89%A7%E7%85%A7-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
