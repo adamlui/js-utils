@@ -4,7 +4,7 @@
 
 ### Fetch IP geolocation data from the CLI.
 
-<a href="https://npmstar.com/compare/@adamlui%2Fgeolocate">
+<a href="https://npm-compare.com/@adamlui/geolocate/#timeRange=ALL">
     <img height=31 src="https://img.shields.io/npm/dm/@adamlui/geolocate?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/geolocate-2.4.3">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-2.4.3-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>

@@ -29,7 +29,7 @@
 
 ### Recursively compile all SCSS files into minified CSS
 
-<a href="https://npmstar.com/compare/@adamlui%2Fscss-to-css">
+<a href="https://npm-compare.com/@adamlui/scss-to-css/#timeRange=ALL">
     <img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-2.4.4">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-2.4.4-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>

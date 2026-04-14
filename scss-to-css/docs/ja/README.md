@@ -27,7 +27,7 @@
 
 ### すべての SCSS ファイルを再帰的に圧縮された CSS にコンパイルします。
 
-<a href="https://npmstar.com/compare/@adamlui%2Fscss-to-css">
+<a href="https://npm-compare.com/@adamlui/scss-to-css/#timeRange=ALL">
     <img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge&label=%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-2.4.4">
     <img height=31 src="https://img.shields.io/badge/最新のビルド-2.4.4-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>

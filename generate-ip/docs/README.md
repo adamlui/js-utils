@@ -8,7 +8,7 @@
 
 <br>
 
-<a href="https://npmstar.com/compare/generate-ip">
+<a href="https://npm-compare.com/generate-ip/#timeRange=ALL">
     <img height=31 src="https://img.shields.io/npm/dm/generate-ip?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/generate-ip-2.9.3">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-2.9.3-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>

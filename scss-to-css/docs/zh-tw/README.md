@@ -27,7 +27,7 @@
 
 ### 將所有 SCSS 檔案遞歸編譯為縮小的 CSS。
 
-<a href="https://npmstar.com/compare/@adamlui%2Fscss-to-css">
+<a href="https://npm-compare.com/@adamlui/scss-to-css/#timeRange=ALL">
     <img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?label=%E4%B8%8B%E8%BC%89&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-2.4.4">
     <img height=31 src="https://img.shields.io/badge/最新版本-2.4.4-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>

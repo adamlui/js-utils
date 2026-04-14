@@ -21,7 +21,7 @@
 
 ### Genere, fortalezca y valide aleatoriamente contraseñas criptográficamente seguras.
 
-<a href="https://npmstar.com/compare/generate-pw">
+<a href="https://npm-compare.com/generate-pw/#timeRange=ALL">
     <img height=31 src="https://img.shields.io/npm/dm/generate-pw?label=Descargas&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.3.3">
     <img height=31 src="https://img.shields.io/badge/Ultima_Versión-2.3.3-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
