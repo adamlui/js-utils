@@ -114,7 +114,7 @@ jobs:
           # Update npm shield
           if [ "$TOTAL_DOWNLOADS" == "0" ] ; then echo "Error getting total npm downloads"
           else # perform update
-            for readme in README.md $(find . -name README.md) ; do
+            for readme in $(find . -name README.md) ; do
               old_readme=$(<"$readme")
               sed -i -E "s|-[0-9.,km+]+(.*-44cc11\.svg)|-$TOTAL_DOWNLOADS\1|Ig" "$readme"
               new_readme=$(<"$readme")
