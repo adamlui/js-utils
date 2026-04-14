@@ -16,6 +16,6 @@ jobs:
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org
-      - run: cd non-latin-locales && npm ci
-      - run: cd non-latin-locales && npm run build
-      - run: cd non-latin-locales && npm publish --provenance
+      - run: cd latin-locales && npm ci
+      - run: cd latin-locales && npm run build
+      - run: cd latin-locales && npm publish --provenance
