@@ -15,7 +15,7 @@
 # 🛠️ JavaScript 工具
 
 <a href="https://npmstar.com/compare/@adamlui%2Fgeolocate-vs-@adamlui%2Fminify.js-vs-@adamlui%2Fscss-to-css-vs-@kudoai%2Fai-personas-vs-generate-ip-vs-generate-pw-vs-gulp-minify.js-vs-latin-locales-vs-non-latin-locales?timeRange=all">
-    <img height=31 src="https://img.shields.io/badge/%E4%B8%8B%E8%BD%BD-7.2K/month-44cc11.svg?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+    <img height=31 src="https://img.shields.io/badge/%E4%B8%8B%E8%BD%BD-7.2K/%E6%9C%88-44cc11.svg?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/%E6%89%A7%E7%85%A7-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/js-utils">
@@ -23,7 +23,7 @@
 <a href="https://sonarcloud.io/component_measures?metric=vulnerabilities&id=adamlui_js-utils">
     <img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_js-utils%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonar&logoColor=white&labelColor=464646&label=%E6%BC%8F%E6%B4%9E&color=gold"></a>
 <a href="#">
-    <img height=31 src="https://img.shields.io/badge/jsDelivr_%E8%AF%B7%E6%B1%82-10,000+/month-2bbbd8.svg?logo=jsdelivr&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+    <img height=31 src="https://img.shields.io/badge/jsDelivr_%E8%AF%B7%E6%B1%82-10,000+/%E6%9C%88-2bbbd8.svg?logo=jsdelivr&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
 > ### Node.js 和 Web 必备的 JavaScript 库/实用程序。
 
