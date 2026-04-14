@@ -171,7 +171,6 @@ jobs:
         if: env.SHIELDS_UPDATED == 'true'
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
-          git pull # again to sync w/ concurrent workflow updates
-          git add .
-          git commit -n -m "$COMMIT_MSG" || true
+          git add . && git commit -n -m "$COMMIT_MSG" || true
+          git pull --rebase
           git push
