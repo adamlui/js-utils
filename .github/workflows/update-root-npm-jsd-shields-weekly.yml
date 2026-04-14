@@ -115,7 +115,7 @@ jobs:
           if [ "$TOTAL_DOWNLOADS" == "0" ] ; then echo "Error getting total npm downloads"
           else # perform update
             old_readme=$(<README.md)
-            sed -i -E "s|(badge/Downloads-)[0-9.,km+]+|\1$TOTAL_DOWNLOADS|Ig" README.md
+            sed -i -E "s|-[0-9.,km+]+([^-]+-44cc11\.svg)|-$TOTAL_DOWNLOADS\1|Ig" README.md
             new_readme=$(<README.md)
             if [ "$old_readme" != "$new_readme" ] ; then downloads_updated=true ; fi
             if [ "$downloads_updated" = true ] ; then echo "npm shield updated to $TOTAL_DOWNLOADS"
