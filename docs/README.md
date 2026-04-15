@@ -75,7 +75,7 @@
     <summary>🇪🇸 ISO 639-1 (2-letter) codes for Latin locales.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/js-utils/tree/main/latin-locales/#readme">
-            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/latin-locales/assets/images/dataset-preview.png"></a>
+            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@2017672/latin-locales/images/dataset-preview.png"></a>
     </blockquote>
 </details>
 
@@ -98,7 +98,7 @@
     <summary>🇨🇳 ISO 639-1 (2-letter) codes for non-Latin locales.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#readme">
-            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/non-latin-locales/assets/images/dataset-preview.png"></a>
+            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@2017672/non-latin-locales/images/dataset-preview.png"></a>
     </blockquote>
 </details>
 
