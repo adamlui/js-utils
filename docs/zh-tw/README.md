@@ -12,6 +12,8 @@
     </h6>
 </div>
 
+<div align="center">
+
 # 🛠️ JavaScript 工具
 
 <a href="https://npm-compare.com/@adamlui/geolocate,@adamlui/minify.js,@adamlui/scss-to-css,@kudoai/ai-personas,generate-ip,generate-pw,gulp-minify.js,latin-locales,non-latin-locales/#timeRange=ALL">
@@ -25,7 +27,9 @@
 <a href="#">
     <img height=31 src="https://img.shields.io/badge/jsDelivr_%E8%AB%8B%E6%B1%82-10,000+/%E6%9C%88-2bbbd8.svg?logo=jsdelivr&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
-> ### Node.js 和 Web 必備的 JavaScript 函式庫/實用程式。
+### Node.js 和 Web 必備的 JavaScript 函式庫/實用程式。
+
+</div>
 
 <img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/separators/aqua-gradient.png">
 
