@@ -13,7 +13,7 @@
 
 > ### _ISO 639-1 (2-letter) codes for Latin locales that don't require advanced Unicode support._
 
-It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/js-utils@latin-locales-1.0.0/latin-locales/latin-locales.json), so you can use it in any environment.
+It's just a [JSON file](https://cdn.jsdelivr.net/npm/latin-locales@1.0.0/dist/latin-locales.json), so you can use it in any environment.
 
 ## ⚡ Installation
 
