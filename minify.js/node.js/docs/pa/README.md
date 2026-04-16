@@ -314,7 +314,7 @@ findJS() » Check returned array.
 ## 🧠 ਯੋਗਦਾਨ ਪਾਉਣ ਵਾਲੇ
 
 <a href="https://github.com/adamlui/minify.js/graphs/contributors">
-    <img height=45 width="auto" src="https://contrib.rocks/image?repo=adamlui/minify.js" /></a>
+    <img height=45 width="auto" src="https://contrib.rocks/image?repo=adamlui/minify.js&anon=1" /></a>
 <br><br>
 
 ਸਾਰੇ ਯੋਗਦਾਨਾਂ ਦਾ ਬਹੁਤ ਸਵਾਗਤ ਹੈ!
