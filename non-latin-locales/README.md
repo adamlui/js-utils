@@ -25,7 +25,7 @@ npm install non-latin-locales
 
 ## 🔌 Usage
 
-#### ES Modules (ESM):
+#### <img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@a669c5d/assets/images/icons/module-systems/esm/icon32.png"> ES Modules (ESM):
 
 ```js
 import nonLatinLocales from 'non-latin-locales'
@@ -34,7 +34,7 @@ console.log(nonLatinLocales)
 // => ['ab', 'am', 'ar', 'as', 'av', 'az', 'ba', 'be', 'bg', ...]
 ```
 
-#### CommonJS (CJS):
+#### <img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@a669c5d/assets/images/icons/module-systems/cjs/icon32.png"> CommonJS (CJS):
 
 ```js
 const nonLatinLocales = require('non-latin-locales')
