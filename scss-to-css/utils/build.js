@@ -28,7 +28,7 @@ if (!script.config.jsOnly) {
     if (fs.existsSync(dataOutDir)) // clear existing data
         fs.rmSync(dataOutDir, { recursive: true })
     fs.mkdirSync(dataOutDir, { recursive: true })
-    file.copy(`_locales/en/${filenames.msgs}`, `${dataOutDir}/${filenames.msgs}`)
+    file.copy(`data/_locales/en/${filenames.msgs}`, `${dataOutDir}/${filenames.msgs}`)
     file.copy(filenames.pkgData, `${dataOutDir}/${filenames.pkgData}`)
     if (!script.config.jsonOnly) file.copy(filenames.config, `${dataOutDir}/${filenames.config}`)
 }
