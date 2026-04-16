@@ -310,9 +310,17 @@ La notice de copyright ci-dessus et cette autorisation doivent être incluses da
 
 LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMPLICITE, Y COMPRIS MAIS SANS S'Y LIMITER LES GARANTIES DE QUALITÉ MARCHANDE, D'ADAPTATION À UN USAGE PARTICULIER ET D'ABSENCE DE CONTREFAÇON. EN AUCUN CAS, LES AUTEURS OU LES TITULAIRES DU COPYRIGHT NE SERONT RESPONSABLES DE TOUTE RÉCLAMATION, DOMMAGE OU AUTRE RESPONSABILITÉ, QUE CE SOIT DANS UNE ACTION CONTRACTUELLE, DÉLICTUELLE OU AUTRE, DÉCOULANT DE, OU EN RELATION AVEC LE LOGICIEL OU L'UTILISATION OU AUTRES TRANSACTIONS DANS LE LOGICIEL.
 
-<br>
+<hr>
 
-<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
+## 🧠 Contributeurs
+
+<a href="https://github.com/adamlui/minify.js/graphs/contributors">
+    <img height=45 width="auto" src="https://contrib.rocks/image?repo=adamlui/minify.js" /></a>
+<br><br>
+
+Toutes les contributions sont les bienvenues !
+
+<hr>
 
 ## 🛠️ Utilitaires associés
 
@@ -332,7 +340,9 @@ LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMP
 [Utilisation de l'API](https://github.com/adamlui/scss-to-css/#-api-usage) /
 [Discuter](https://github.com/adamlui/scss-to-css/discussions)
 
-<br>
+
+<!-- FOOTER -->
+
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 

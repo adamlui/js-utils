@@ -311,9 +311,17 @@ findJS() » Check returned array.
 
 সফ্টওয়্যারটি "যেমন আছে" প্রদান করা হয়, কোনো প্রকারের ওয়্যারেন্টি ছাড়াই, প্রকাশ বা উহ্য, যার মধ্যে রয়েছে কিন্তু কোনো বিশেষ উদ্দেশ্যমূলক কাজের জন্য ব্যবসায়িকতা, উপযুক্ততার ওয়্যারেন্টিগুলির মধ্যে সীমাবদ্ধ নয়৷ কোনও ক্ষেত্রেই লেখক বা কপিরাইট ধারক কোনও দাবি, ক্ষতি বা অন্যান্য দায়দায়িত্বের জন্য দায়বদ্ধ হবেন না, চুক্তির কোনও ক্রিয়াকলাপে, টর্ট বা অন্যথায়, পরবর্তী সময়ে, আমাদের থেকে উদ্ভূত অন্যান্য লেনদেন সফটওয়্যার।
 
-<br>
+<hr>
 
-<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
+## 🧠 অবদানকারীগণ
+
+<a href="https://github.com/adamlui/minify.js/graphs/contributors">
+    <img height=45 width="auto" src="https://contrib.rocks/image?repo=adamlui/minify.js" /></a>
+<br><br>
+
+সকল অবদান সাদরে গৃহীত!
+
+<hr>
 
 ## 🛠️ সম্পর্কিত ইউটিলিটি
 
@@ -333,7 +341,9 @@ findJS() » Check returned array.
 [API ব্যবহার](https://github.com/adamlui/scss-to-css/#-api-usage) /
 [আলোচনা করা](https://github.com/adamlui/scss-to-css/discussions)
 
-<br>
+
+<!-- FOOTER -->
+
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 

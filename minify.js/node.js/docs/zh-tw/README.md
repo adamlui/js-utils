@@ -310,9 +310,17 @@ findJS() » Check returned array.
 
 本軟體『依現況』提供，不提供任何形式的明示或保證暗示的，包括但不限於適銷性保證，適用於特定目的和非侵權。 在任何情況下都不得作者或版權持有人對任何索賠、損害或其他責任，無論是在合約、侵權或其他方面的行為中，由以下原因引起，出於或與軟體或使用或其他交易有關軟體。
 
-<br>
+<hr>
 
-<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
+## 🧠 貢獻者
+
+<a href="https://github.com/adamlui/minify.js/graphs/contributors">
+    <img height=45 width="auto" src="https://contrib.rocks/image?repo=adamlui/minify.js" /></a>
+<br><br>
+
+我們非常歡迎所有貢獻！
+
+<hr>
 
 ## 🛠️ 相關實用程式
 
@@ -332,7 +340,9 @@ findJS() » Check returned array.
 [API 使用](https://github.com/adamlui/scss-to-css/#-api-usage) /
 [討論](https://github.com/adamlui/scss-to-css/discussions)
 
-<br>
+
+<!-- FOOTER -->
+
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 

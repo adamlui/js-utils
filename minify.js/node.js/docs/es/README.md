@@ -308,9 +308,17 @@ El aviso de derechos de autor anterior y este aviso de permiso se incluirán en 
 
 EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA, INCLUYENDO, PERO NO LIMITADO A, LAS GARANTÍAS DE COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO LOS AUTORES O TITULARES DE DERECHOS DE AUTOR SERÁN RESPONSABLES DE NINGÚN RECLAMO, DAÑO U OTRA RESPONSABILIDAD, YA SEA EN UNA ACCIÓN CONTRACTUAL, AGRAVIO O DE OTRA MANERA, QUE SURJA DE, FUERA DE O EN RELACIÓN CON EL SOFTWARE O EL USO U OTRAS NEGOCIOS EN EL SOFTWARE.
 
-<br>
+<hr>
 
-<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
+## 🧠 Colaboradores
+
+<a href="https://github.com/adamlui/minify.js/graphs/contributors">
+    <img height=45 width="auto" src="https://contrib.rocks/image?repo=adamlui/minify.js" /></a>
+<br><br>
+
+¡Todas las contribuciones son muy bienvenidas!
+
+<hr>
 
 ## 🛠️ Utilidades relacionadas
 
@@ -330,7 +338,9 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 [Uso de API](https://github.com/adamlui/scss-to-css/#-api-usage) /
 [Conversar](https://github.com/adamlui/scss-to-css/discussions)
 
-<br>
+
+<!-- FOOTER -->
+
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 
