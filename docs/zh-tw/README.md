@@ -17,7 +17,7 @@
 # 🛠️ JavaScript 工具
 
 <a href="https://npm-compare.com/@adamlui/geolocate,@adamlui/minify.js,@adamlui/scss-to-css,@kudoai/ai-personas,generate-ip,generate-pw,gulp-minify.js,latin-locales,non-latin-locales/#timeRange=ALL">
-    <img height=31 src="https://img.shields.io/badge/%E4%B8%8B%E8%BC%89-5.4K/%E6%9C%88-44cc11.svg?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+    <img height=31 src="https://img.shields.io/badge/%E4%B8%8B%E8%BC%89-5.8K/%E6%9C%88-44cc11.svg?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/%E5%9F%B7%E7%85%A7-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/js-utils">
