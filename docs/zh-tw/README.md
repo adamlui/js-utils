@@ -102,7 +102,21 @@
 [CLI 使用](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-tw/#-%E5%91%BD%E4%BB%A4%E5%88%97%E4%BD%BF%E7%94%A8) /
 [討論](https://github.com/adamlui/js-utils/discussions)
 
-<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/separators/aqua-gradient.png">
+<a href="#"><img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png"></a>
+
+## 🧠 Contributors
+
+<a href="https://github.com/adamlui/js-utils/graphs/contributors">
+    <img height=45 width="auto" src="https://contrib.rocks/image?repo=adamlui/js-utils" /></a>
+<br><br>
+
+非常歡迎一切貢獻！
+
+<a href="#"><img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/separators/aqua-gradient.png"></a>
+
+
+<!--FOOTER-->
+
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@ef1089a/assets/images/icons/tag/white/icon16.svg"><img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@ef1089a/assets/images/icons/tag/dark-gray/icon16.svg"></picture>
 <a href="https://github.com/adamlui/js-utils/releases">**最新發布**</a> /
