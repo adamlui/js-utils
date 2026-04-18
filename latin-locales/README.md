@@ -1,7 +1,8 @@
 <a id="top"></a>
 
 # > latin-locales
-
+<a href="https://npm-compare.com/latin-locales/#timeRange=ALL">
+    <img height=31 src="https://img.shields.io/npm/dm/latin-locales?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/latin-locales-1.0.0">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/blob/main/latin-locales/docs/LICENSE.md">
