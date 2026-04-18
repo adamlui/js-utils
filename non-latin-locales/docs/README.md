@@ -2,6 +2,8 @@
 
 # > non-latin-locales
 
+<a href="https://npm-compare.com/non-latin-locales/#timeRange=ALL">
+    <img height=31 src="https://img.shields.io/npm/dm/non-latin-locales?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/releases/tag/non-latin-locales-1.0.1">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.1-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/blob/main/non-latin-locales/docs/LICENSE.md">
