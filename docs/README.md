@@ -121,9 +121,9 @@
 
 <!-- MINIFY.JS -->
 
-### [</> minify.js](https://github.com/adamlui/js-utils/tree/main/minify.js/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/badges/awesome/badge.svg"></a>
+### [minify.js](https://github.com/adamlui/js-utils/tree/main/minify.js/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/badges/awesome/badge.svg"></a>
 
-> Recursively minify all JavaScript files.
+> </> Recursively minify all JavaScript files.
 <br>[Install](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js#-installation) /
 [Readme](https://github.com/adamlui/js-utils/tree/main/minify.js/#readme) /
 [CLI usage](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js#-command-line-usage) /
@@ -132,9 +132,9 @@
 
 <!-- SCSS-TO-CSS -->
 
-### [{ } scss-to-css](https://github.com/adamlui/js-utils/tree/main/scss-to-css/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/badges/awesome/badge.svg"></a>
+### [scss-to-css](https://github.com/adamlui/js-utils/tree/main/scss-to-css/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/badges/awesome/badge.svg"></a>
 
-> Recursively compile all SCSS files into minified CSS.
+> { } Recursively compile all SCSS files into minified CSS.
 <br>[Install](https://github.com/adamlui/js-utils/tree/main/scss-to-css/#-installation) /
 [Readme](https://github.com/adamlui/js-utils/tree/main/scss-to-css/#readme) /
 [API usage](https://github.com/adamlui/js-utils/tree/main/scss-to-css/#-api-usage) /
@@ -181,9 +181,9 @@
 
 <!-- GENERATE-PW -->
 
-### [🔒 generate-pw](https://github.com/adamlui/js-utils/tree/main/generate-pw/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#password-managers"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/badges/awesome/badge.svg"></a> 
+### [generate-pw](https://github.com/adamlui/js-utils/tree/main/generate-pw/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#password-managers"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/badges/awesome/badge.svg"></a> 
 
-> Randomly generate, strengthen, and validate cryptographically-secure passwords.
+> 🔒 Randomly generate, strengthen, and validate cryptographically-secure passwords.
 <br>[Install](https://github.com/adamlui/js-utils/tree/main/generate-pw/#-installation) /
 [Readme](https://github.com/adamlui/js-utils/tree/main/generate-pw/#readme) /
 [API usage](https://github.com/adamlui/js-utils/tree/main/generate-pw/#-importing-the-api) /
