@@ -49,7 +49,7 @@
 ### <a href="https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme">ai-personas</a>
 
 <details>
-    <summary>🤖 1,000+ AI personas for LLMs and agents.</summary>
+    <summary>🤖 1,200+ AI personas for LLMs and agents.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme">
             <img width=750 src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@c77849c/assets/images/screenshots/dataset-preview.png"></a>

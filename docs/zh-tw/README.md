@@ -35,7 +35,7 @@
 
 ### <a href="https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme">🤖 ai-personas</a>
 
-> 1000+ 專為大型語言模型（LLM）與智能體設計的 AI 人設。
+> 1,200+ 專為大型語言模型（LLM）與智能體設計的 AI 人設。
 <br>[安裝](https://github.com/adamlui/js-utils/tree/main/ai-personas/#-installation) /
 [自述文件](https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme) /
 [API 使用情況](https://github.com/adamlui/js-utils/tree/main/ai-personas/#-usage) /
