@@ -31,8 +31,7 @@ updates:
       - /generate-ip
       - /generate-pw
       - /geolocate
-      - /minify.js/gulp
-      - /minify.js/node.js
+      - /minify.js
       - /scss-to-css
     schedule:
       interval: daily
