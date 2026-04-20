@@ -36,7 +36,7 @@ import dataLangs from 'data-languages'
 
 jsonLangData = dataLangs.JSON
 
-console.log(jsonLangData.extensions) // => ['.4DForm', '.4DProject', '.avsc', ...]
+console.log(jsonLangData.extensions) // => [ '.4DForm', '.4DProject', '.avsc', ... ]
 ```
 
 #### <a href="#-commonjs-cjs"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@dbdea4b/assets/images/icons/module-systems/cjs/icon32.png"></a> CommonJS (CJS):
@@ -46,7 +46,7 @@ const dataLangs = require('data-languages')
 
 jsonLangData = dataLangs.JSON
 
-console.log(jsonLangData.extensions) // => ['.4DForm', '.4DProject', '.avsc', ...]
+console.log(jsonLangData.extensions) // => [ '.4DForm', '.4DProject', '.avsc', ... ]
 ```
 
 <hr>

@@ -37,7 +37,7 @@ import computerLangs from 'computer-languages'
 pyLangData = computerLangs.Python
 
 console.log(pyLangData.type) // => programming
-console.log(pyLangData.extensions) // => ['.cgi', '.fcgi', '.gyp', ...]
+console.log(pyLangData.extensions) // => [ '.cgi', '.fcgi', '.gyp', ... ]
 ```
 
 #### <a href="#-commonjs-cjs"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@dbdea4b/assets/images/icons/module-systems/cjs/icon32.png"></a> CommonJS (CJS):
@@ -46,7 +46,7 @@ console.log(pyLangData.extensions) // => ['.cgi', '.fcgi', '.gyp', ...]
 const computerLangs = require('computer-languages')
 
 console.log(pyLangData.type) // => programming
-console.log(pyLangData.extensions) // => ['.cgi', '.fcgi', '.gyp', ...]
+console.log(pyLangData.extensions) // => [ '.cgi', '.fcgi', '.gyp', ... ]
 ```
 
 <hr>
@@ -58,7 +58,7 @@ Get extension(s) for a language:
 ```js
 jsExts = computerLangs.JavaScript.extensions
 
-console.log(jsExts) // => ['._js', '.bones', '.cjs', '.es', ...]
+console.log(jsExts) // => [ '._js', '.bones', '.cjs', '.es', ... ]
 ```
 
 Get language(s) from an extension:
@@ -80,7 +80,7 @@ Filter by language type:
 const markupLangs = Object.keys(computerLangs)
     .filter(lang => computerLangs[lang].type == 'markup')
 
-console.log(markupLangs) // => ['Antlers', 'API Blueprint', 'Astro', 'BibTeX', ...]
+console.log(markupLangs) // => [ 'Antlers', 'API Blueprint', 'Astro', 'BibTeX', ... ]
 console.log(`${markupLangs.length} markup languages`) // -> 69 markup languages
 ```
 

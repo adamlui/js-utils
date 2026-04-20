@@ -33,7 +33,7 @@ npm install non-latin-locales
 import nonLatinLocales from 'non-latin-locales'
 
 console.log(nonLatinLocales)
-// => ['ab', 'am', 'ar', 'as', 'av', 'az', 'ba', 'be', 'bg', ...]
+// => [ 'ab', 'am', 'ar', 'as', 'av', 'az', 'ba', 'be', 'bg', ... ]
 ```
 
 #### <img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@a669c5d/assets/images/icons/module-systems/cjs/icon32.png"> CommonJS (CJS):
@@ -42,7 +42,7 @@ console.log(nonLatinLocales)
 const nonLatinLocales = require('non-latin-locales')
 
 console.log(nonLatinLocales)
-// => ['ab', 'am', 'ar', 'as', 'av', 'az', 'ba', 'be', 'bg', ...]
+// => [ 'ab', 'am', 'ar', 'as', 'av', 'az', 'ba', 'be', 'bg', ... ]
 ```
 
 ## 🏛️ MIT License

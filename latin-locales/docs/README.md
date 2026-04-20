@@ -32,7 +32,7 @@ npm install latin-locales
 import latinLocales from 'latin-locales'
 
 console.log(latinLocales)
-// => ['aa', 'ae', 'af', 'ak', 'an', 'ay', 'bi', 'bm', 'br', ...]
+// => [ 'aa', 'ae', 'af', 'ak', 'an', 'ay', 'bi', 'bm', 'br', ... ]
 ```
 
 #### <img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@a669c5d/assets/images/icons/module-systems/cjs/icon32.png"> CommonJS (CJS):
@@ -41,7 +41,7 @@ console.log(latinLocales)
 const latinLocales = require('latin-locales')
 
 console.log(latinLocales)
-// => ['aa', 'ae', 'af', 'ak', 'an', 'ay', 'bi', 'bm', 'br', ...]
+// => [ 'aa', 'ae', 'af', 'ak', 'an', 'ay', 'bi', 'bm', 'br', ... ]
 ```
 
 ## 🏛️ MIT License
