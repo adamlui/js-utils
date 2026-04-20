@@ -33,9 +33,9 @@
 
 <img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/separators/aqua-gradient.png">
 
-### <a href="https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme">🤖 ai-personas</a>
+### <a href="https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme">ai-personas</a>
 
-> 1,200+ 专为大型语言模型（LLM）与智能体设计的 AI 人设。
+> 🤖 1,200+ 专为大型语言模型（LLM）与智能体设计的 AI 人设。
 <br>[安装](https://github.com/adamlui/js-utils/tree/main/ai-personas/#-installation) /
 [自述文件](https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme) /
 [API 使用情况](https://github.com/adamlui/js-utils/tree/main/ai-personas/#-usage) /
@@ -87,36 +87,36 @@
         讨论</a>
 </blockquote>
 
-### <a href="https://github.com/adamlui/js-utils/tree/main/generate-ip/#readme"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/white/icon55x49.png"><img height=21 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/black/icon55x49.png"></picture> generate-ip</a> <a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
+### <a href="https://github.com/adamlui/js-utils/tree/main/generate-ip/#readme">generate-ip</a> <a href="https://github.com/toolleeo/cli-apps/#networking"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
-> 随机生成、格式化和验证 IPv4 + IPv6 + MAC 地址。
+> <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/white/icon55x49.png"><img height=15 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5c34563/generate-ip/assets/images/icons/node-graph/black/icon55x49.png"></picture> 随机生成、格式化和验证 IPv4 + IPv6 + MAC 地址。
 <br>[安装](https://github.com/adamlui/js-utils/tree/main/generate-ip/#-installation) /
 [自述文件](https://github.com/adamlui/js-utils/tree/main/generate-ip/#readme) /
 [API 使用情况](https://github.com/adamlui/js-utils/tree/main/generate-ip/#-importing-the-apis) /
 [CLI 使用](https://github.com/adamlui/js-utils/tree/main/generate-ip/#-command-line-usage) /
 [讨论](https://github.com/adamlui/js-utils/discussions)
 
-### [🔒 generate-pw](https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/zh-cn/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#password-managers"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
+### [generate-pw](https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/zh-cn/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#password-managers"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
-> 随机生成、加强和验证加密安全的密码。
+> 🔒 随机生成、加强和验证加密安全的密码。
 <br>[安装](https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/zh-cn/#-%E5%AE%89%E8%A3%85) /
 [自述文件](https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/zh-cn/#readme) /
 [API 使用情况](https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/zh-cn/#-%E5%AF%BC%E5%85%A5-api) /
 [CLI 使用](https://github.com/adamlui/js-utils/tree/main/generate-pw/docs/zh-cn/#-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%BD%BF%E7%94%A8) /
 [讨论](https://github.com/adamlui/js-utils/discussions)
 
-### <a href="https://github.com/adamlui/js-utils/tree/main/geolocate/#readme"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/white/icon32.png"><img height=22 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/black/icon32.png"></picture> geolocate</a>
+### <a href="https://github.com/adamlui/js-utils/tree/main/geolocate/#readme">geolocate</a>
 
-> 从命令行界面获取 IP 地理位置数据。
+> <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/white/icon32.png"><img height=15 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d3424a/geolocate/assets/images/icons/wire-globe/black/icon32.png"></picture> 从命令行界面获取 IP 地理位置数据。
 <br>[安装](https://github.com/adamlui/js-utils/tree/main/geolocate/#-installation) /
 [自述文件](https://github.com/adamlui/js-utils/tree/main/geolocate/#readme) /
 [API 使用情况](https://github.com/adamlui/js-utils/tree/main/geolocate/#-importing-the-api) /
 [CLI 使用](https://github.com/adamlui/js-utils/tree/main/geolocate/#-command-line-usage) /
 [讨论](https://github.com/adamlui/js-utils/discussions)
 
-### [🇪🇸 latin-locales](https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#readme)
+### [latin-locales](https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#readme)
 
-> 拉丁语系语言环境的 ISO 639-1（双字母）代码。
+> 🇪🇸 拉丁语系语言环境的 ISO 639-1（双字母）代码。
 <br>[安装](https://github.com/adamlui/js-utils/tree/main/latin-locales#-installation) /
 [自述文件](https://github.com/adamlui/js-utils/tree/main/latin-locales/#readme) /
 [API 使用情况](https://github.com/adamlui/js-utils/tree/main/latin-locales/#-usage) /
@@ -145,26 +145,26 @@
         讨论</a>
 </blockquote>
 
-### [</> minify.js](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js/docs/zh-cn/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
+### [minify.js](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js/docs/zh-cn/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
-> 递归地压缩所有 JavaScript 文件。
+> </> 递归地压缩所有 JavaScript 文件。
 <br>[安装](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js/docs/zh-cn/#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85) /
 [自述文件](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js/docs/zh-cn/#readme) /
 [CLI 使用](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js/docs/zh-cn/#-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%BD%BF%E7%94%A8) /
 [API 使用情况](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js/docs/zh-cn/#-api-%E4%BD%BF%E7%94%A8) /
 [讨论](https://github.com/adamlui/js-utils/discussions)
 
-### [🇨🇳 non-latin-locales](https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#readme)
+### [non-latin-locales](https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#readme)
 
-> 非拉丁语系语言环境的 ISO 639-1（双字母）代码。
+> 🇨🇳 非拉丁语系语言环境的 ISO 639-1（双字母）代码。
 <br>[安装](https://github.com/adamlui/js-utils/tree/main/non-latin-locales#-installation) /
 [自述文件](https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#readme) /
 [API 使用情况](https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#-usage) /
 [讨论](https://github.com/adamlui/js-utils/discussions)
 
-### [{ } scss-to-css](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-cn/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
+### [scss-to-css](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-cn/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
-> 递归地将所有 SCSS 文件编译成压缩后的 CSS。
+> { } 递归地将所有 SCSS 文件编译成压缩后的 CSS。
 <br>[安装](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-cn/#-%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85) /
 [自述文件](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-cn/#readme) /
 [API 使用情况](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-cn/#-api-%E4%BD%BF%E7%94%A8) /
