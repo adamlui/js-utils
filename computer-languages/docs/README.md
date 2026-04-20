@@ -99,7 +99,7 @@ Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 <details>
     <summary><b>computer-languages (Python)</b></summary>
     <br>
-    <a href="https://github.com/adamlui/js-utils/tree/main/computer-languages/#readme">
+    <a href="https://github.com/adamlui/python-utils/tree/main/computer-languages/#readme">
         <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@4229cfe/computer-languages/assets/images/dataset-preview.png">
     </a>
 </details>
