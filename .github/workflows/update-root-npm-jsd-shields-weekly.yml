@@ -26,6 +26,7 @@ jobs:
           NPM_PKGS=(
             "@adamlui/geolocate"
             "@adamlui/minify.js"
+            "@adamlui/programming-languages"
             "@adamlui/scss-to-css"
             "@kudoai/ai-personas"
             "computer-languages"
@@ -35,10 +36,10 @@ jobs:
             "gulp-minify.js"
             "latin-locales"
             "markup-languages"
-            "non-latin-locales" 
           )
           JSD_NPM_PKGS=( # that expose JSD link to npm files
             "@adamlui/geolocate"
+            "@adamlui/programming-languages"
             "@kudoai/ai-personas"
             "computer-languages"
             "data-languages"

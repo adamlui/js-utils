@@ -182,6 +182,29 @@
         Discuss</a>
 </blockquote>
 
+<!-- PROGRAMMING-LANGUAGES -->
+
+### <a href="https://github.com/adamlui/js-utils/tree/main/programming-languages/#readme">programming-languages</a>
+
+<details>
+    <summary>💻 File extensions for programming languages.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/js-utils/tree/main/programming-languages/#readme">
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@latest/programming-languages/assets/images/dataset-preview.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/adamlui/js-utils/tree/main/programming-languages/#-installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/programming-languages/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/programming-languages/#-usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/js-utils/discussions">
+        Discuss</a>
+</blockquote>
+
 <a href="#"><img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png"></a>
 
 

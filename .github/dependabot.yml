@@ -19,6 +19,7 @@ updates:
       - /minify.js/gulp
       - /minify.js/node.js
       - /non-latin-locales
+      - /programming-languages
       - /scss-to-css
     schedule:
       interval: daily
