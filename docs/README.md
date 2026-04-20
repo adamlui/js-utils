@@ -90,6 +90,29 @@
         Discuss</a>
 </blockquote>
 
+<!-- DATA-LANGUAGES -->
+
+### <a href="https://github.com/adamlui/js-utils/tree/main/data-languages/#readme">data-languages</a>
+
+<details>
+    <summary>🧾 File extensions for data languages.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/js-utils/tree/main/data-languages/#readme">
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@latest/data-languages/assets/images/dataset-preview.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/adamlui/js-utils/tree/main/data-languages/#-installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/data-languages/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/data-languages/#-usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/js-utils/discussions">
+        Discuss</a>
+</blockquote>
+
 <!-- LATIN-LOCALES -->
 
 ### <a href="https://github.com/adamlui/js-utils/tree/main/latin-locales/#readme">latin-locales</a>
