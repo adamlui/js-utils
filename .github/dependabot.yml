@@ -15,6 +15,7 @@ updates:
       - /generate-pw
       - /geolocate
       - /latin-locales
+      - /markup-languages
       - /minify.js/gulp
       - /minify.js/node.js
       - /non-latin-locales

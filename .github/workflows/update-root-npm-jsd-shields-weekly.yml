@@ -34,6 +34,7 @@ jobs:
             "generate-pw"
             "gulp-minify.js"
             "latin-locales"
+            "markup-languages"
             "non-latin-locales" 
           )
           JSD_NPM_PKGS=( # that expose JSD link to npm files
@@ -44,6 +45,7 @@ jobs:
             "generate-ip"
             "generate-pw"
             "latin-locales"
+            "markup-languages"
             "non-latin-locales"
           )
           JSD_GH_REPOS=( # for all JS projects
