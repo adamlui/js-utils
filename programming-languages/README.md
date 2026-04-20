@@ -1,6 +1,6 @@
 <a id="top"></a>
 
-# 💻 programming-languages
+# ⌨️ programming-languages
 
 <a href="https://github.com/adamlui/js-utils/releases/tag/programming-languages-1.0.0">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
@@ -118,7 +118,7 @@ Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 <!-- PROGRAMMING-LANGUAGES (PYTHON) -->
 
 <details>
-    <summary><b>💻 programming-languages (Python)</b></summary>
+    <summary><b>⌨️ programming-languages (Python)</b></summary>
     <br>
     <a href="https://github.com/adamlui/python-utils/tree/main/programming-languages/#readme">
         <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@4229cfe/programming-languages/assets/images/dataset-preview.png">
