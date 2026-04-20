@@ -76,6 +76,7 @@ function getLangFromPath(filepath) {
         .map(([lang]) => lang)
     return langMatches.length == 1 ? langMatches[0] : langMatches
 }
+
 console.log(getLangFromPath('index.html')) // => [ 'Ecmarkup', 'HTML' ]
 console.log(getLangFromPath('style.css'))  // => CSS
 console.log(getLangFromPath('script.js'))  // => [] (use programming-languages pkg)

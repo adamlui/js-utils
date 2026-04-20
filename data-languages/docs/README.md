@@ -76,6 +76,7 @@ function getLangFromPath(filepath) {
         .map(([lang]) => lang)
     return langMatches.length == 1 ? langMatches[0] : langMatches
 }
+
 console.log(getLangFromPath('steam.vdf'))               // => Valve Data Format
 console.log(getLangFromPath('Sublime.sublime-snippet')) // => XML
 console.log(getLangFromPath('README.md'))               // => [] (use prose-languages pkg)
