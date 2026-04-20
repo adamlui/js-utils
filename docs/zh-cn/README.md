@@ -49,7 +49,7 @@
     <summary>💻 计算机语言的文件扩展名。</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/js-utils/tree/main/computer-languages/#readme">
-            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/computer-languages/assets/images/dataset-preview.png"></a>
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@latest/computer-languages/assets/images/dataset-preview.png"></a>
     </blockquote>
 </details>
 

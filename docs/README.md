@@ -52,7 +52,7 @@
     <summary>🤖 1,200+ AI personas for LLMs and agents.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme">
-            <img width=750 src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@c77849c/assets/images/screenshots/dataset-preview.png"></a>
+            <img width=750 src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/screenshots/dataset-preview.png"></a>
     </blockquote>
 </details>
 
@@ -75,7 +75,7 @@
     <summary>💻 File extensions for computer languages.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/js-utils/tree/main/computer-languages/#readme">
-            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/computer-languages/assets/images/dataset-preview.png"></a>
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@latest/computer-languages/assets/images/dataset-preview.png"></a>
     </blockquote>
 </details>
 
@@ -98,7 +98,7 @@
     <summary>🇪🇸 ISO 639-1 (2-letter) codes for Latin locales.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/js-utils/tree/main/latin-locales/#readme">
-            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@2017672/latin-locales/images/dataset-preview.png"></a>
+            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@latest/latin-locales/images/dataset-preview.png"></a>
     </blockquote>
 </details>
 
@@ -121,7 +121,7 @@
     <summary>🇨🇳 ISO 639-1 (2-letter) codes for non-Latin locales.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#readme">
-            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@2017672/non-latin-locales/images/dataset-preview.png"></a>
+            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@latest/non-latin-locales/images/dataset-preview.png"></a>
     </blockquote>
 </details>
 
