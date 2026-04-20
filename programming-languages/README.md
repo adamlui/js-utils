@@ -90,7 +90,7 @@ Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 
 <hr>
 
-## 📜 Related
+## 📦 Related
 
 <!-- DATA-LANGUAGES -->
 

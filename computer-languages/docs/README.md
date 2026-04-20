@@ -92,7 +92,7 @@ Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 
 <hr>
 
-## 📜 Related
+## 📦 Related
 
 <!-- COMPUTER-LANGUAGES (PYTHON) -->
 
