@@ -10,6 +10,7 @@ updates:
     directories:
       - /
       - /computer-languages
+      - /data-languages
       - /generate-ip
       - /generate-pw
       - /geolocate
