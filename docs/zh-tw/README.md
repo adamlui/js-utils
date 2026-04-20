@@ -185,6 +185,31 @@
         討論</a>
 </blockquote>
 
+<!-- PROSE-LANGUAGES -->
+
+### <a href="https://github.com/adamlui/js-utils/tree/main/prose-languages/#readme">prose-languages</a>
+
+<details>
+    <summary>📝 散文語言的檔案副檔名。</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/js-utils/tree/main/prose-languages/#readme">
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@latest/prose-languages/assets/images/dataset.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/adamlui/js-utils/tree/main/prose-languages/#-installation">
+        安裝</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/prose-languages/#readme">
+        自述文件</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/prose-languages/#-usage">
+        API 使用情況</a> /
+    <a href="https://github.com/adamlui/js-utils/discussions">
+        討論</a>
+</blockquote>
+
+<a href="#"><img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png"></a>
+
 ### [scss-to-css](https://github.com/adamlui/js-utils/tree/main/scss-to-css/docs/zh-tw/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#conversion"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > { } 遞歸地將所有 SCSS 檔案編譯成壓縮後的 CSS。

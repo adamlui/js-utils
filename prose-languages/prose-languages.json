@@ -1,0 +1,22 @@
+{
+  "AsciiDoc": { "extensions": [".adoc",".asc",".asciidoc"] },
+  "Creole": { "extensions": [".creole"] },
+  "Gemini": { "extensions": [".gmi"] },
+  "Gettext Catalog": { "extensions": [".po",".pot"] },
+  "Markdown": {
+    "extensions": [".livemd",".markdown",".md",".mdown",".mdwn",".mkd",".mkdn",".mkdown",".ronn",".scd",".workbook"]
+  },
+  "Muse": { "extensions": [".muse"] },
+  "Org": { "extensions": [".org"] },
+  "Pod": { "extensions": [".pod"] },
+  "Pod 6": { "extensions": [".pod",".pod6"] },
+  "RDoc": { "extensions": [".rdoc"] },
+  "reStructuredText": { "extensions": [".rest",".rest.txt",".rst",".rst.txt"] },
+  "RMarkdown": { "extensions": [".qmd",".rmd"] },
+  "Sweave": { "extensions": [".rnw"] },
+  "Texinfo": { "extensions": [".texi",".texinfo",".txi"] },
+  "Text": { "extensions": [".fr",".nb",".ncl",".no",".txt"] },
+  "Textile": { "extensions": [".textile"] },
+  "Vim Help File": { "extensions": [".txt"] },
+  "Wikitext": { "extensions": [".mediawiki",".wiki",".wikitext"] }
+}

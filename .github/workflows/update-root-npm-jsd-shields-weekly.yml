@@ -36,6 +36,8 @@ jobs:
             "gulp-minify.js"
             "latin-locales"
             "markup-languages"
+            "non-latin-locales"
+            "prose-languages"
           )
           JSD_NPM_PKGS=( # that expose JSD link to npm files
             "@adamlui/geolocate"
@@ -48,6 +50,7 @@ jobs:
             "latin-locales"
             "markup-languages"
             "non-latin-locales"
+            "prose-languages"
           )
           JSD_GH_REPOS=( # for all JS projects
             "adamlui/js-utils"

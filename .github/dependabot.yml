@@ -20,6 +20,7 @@ updates:
       - /minify.js/node.js
       - /non-latin-locales
       - /programming-languages
+      - /prose-languages
       - /scss-to-css
     schedule:
       interval: daily

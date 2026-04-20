@@ -205,6 +205,29 @@
         Discuss</a>
 </blockquote>
 
+<!-- PROSE-LANGUAGES -->
+
+### <a href="https://github.com/adamlui/js-utils/tree/main/prose-languages/#readme">prose-languages</a>
+
+<details>
+    <summary>📝 File extensions for prose languages.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/js-utils/tree/main/prose-languages/#readme">
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@latest/prose-languages/assets/images/dataset.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/adamlui/js-utils/tree/main/prose-languages/#-installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/prose-languages/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/prose-languages/#-usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/js-utils/discussions">
+        Discuss</a>
+</blockquote>
+
 <a href="#"><img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png"></a>
 
 
