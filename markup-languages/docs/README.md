@@ -94,7 +94,7 @@ Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 <!-- DATA-LANGUAGES -->
 
 <details>
-    <summary><b>💻 data-languages</b></summary>
+    <summary><b>🧾 data-languages</b></summary>
     <br>
     <a href="https://github.com/adamlui/js-utils/tree/main/data-languages/#readme">
         <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@latest/data-languages/assets/images/dataset-preview.png">
