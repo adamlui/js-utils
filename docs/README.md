@@ -205,6 +205,29 @@
         Discuss</a>
 </blockquote>
 
+<!-- PROJECT-MARKERS -->
+
+### <a href="https://github.com/adamlui/js-utils/tree/main/project-markers/#readme">project-markers</a>
+
+<details>
+    <summary>🏷️ Common project root markers.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/js-utils/tree/main/project-markers/#readme">
+            <img width=375 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@latest/project-markers/assets/images/dataset-preview.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/adamlui/js-utils/tree/main/project-markers/#-installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/project-markers/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/project-markers/#-usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/js-utils/discussions">
+        Discuss</a>
+</blockquote>
+
 <!-- PROSE-LANGUAGES -->
 
 ### <a href="https://github.com/adamlui/js-utils/tree/main/prose-languages/#readme">prose-languages</a>

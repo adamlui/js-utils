@@ -37,6 +37,7 @@ jobs:
             "latin-locales"
             "markup-languages"
             "non-latin-locales"
+            "project-markers"
             "prose-languages"
           )
           JSD_NPM_PKGS=( # that expose JSD link to npm files
@@ -50,6 +51,7 @@ jobs:
             "latin-locales"
             "markup-languages"
             "non-latin-locales"
+            "project-markers"
             "prose-languages"
           )
           JSD_GH_REPOS=( # for all JS projects
