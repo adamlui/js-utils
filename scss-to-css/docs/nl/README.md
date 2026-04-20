@@ -329,8 +329,11 @@ DE SOFTWARE WORDT GELEVERD "AS IS", ZONDER ENIGE GARANTIE, EXPLICIET OF IMPLICIE
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/separators/aqua-gradient.png">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**Meer JavaScript-hulpprogramma's**</a> /
+[<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@21bf981/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@21bf981/assets/images/icons/home/dark-gray/icon32x27.png"></picture>][js-utils]
+[**Meer JavaScript-hulpprogramma's **][js-utils] /
 <a href="https://github.com/adamlui/scss-to-css/discussions">Bespreken</a> /
 <a href="https://github.com/adamlui/scss-to-css/issues">Een bug melden</a> /
 <a href="mailto:security@tidelift.com">Een kwetsbaarheid melden</a> /
 <a href="#top">Terug naar boven ↑</a>
+
+[js-utils]: https://github.com/adamlui/js-utils/#readme

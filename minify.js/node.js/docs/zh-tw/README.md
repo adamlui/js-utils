@@ -346,8 +346,11 @@ findJS() » Check returned array.
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/separators/aqua-gradient.png">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/minify.js@ad67551/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**更多 JavaScript 實用程式**</a> /
+[<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@21bf981/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@21bf981/assets/images/icons/home/dark-gray/icon32x27.png"></picture>][js-utils]
+[**更多 JavaScript 實用程式 **][js-utils] /
 <a href="https://github.com/adamlui/minify.js/discussions">讨论</a> /
 <a href="https://github.com/adamlui/minify.js/issues">報告錯誤</a> /
 <a href="mailto:security@tidelift.com">報告漏洞</a> /
 <a href="#top">回到顶部 ↑</a>
+
+[js-utils]: https://github.com/adamlui/js-utils/#readme

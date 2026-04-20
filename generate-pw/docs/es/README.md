@@ -373,8 +373,11 @@ EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**Más utilidades de JavaScript**</a> /
+[<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@21bf981/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@21bf981/assets/images/icons/home/dark-gray/icon32x27.png"></picture>][js-utils]
+[**Más utilidades de JavaScript**][js-utils] /
 <a href="https://github.com/adamlui/js-utils/discussions">Conversar</a> /
 <a href="https://github.com/adamlui/js-utils/issues">Reportar error</a> /
 <a href="mailto:security@tidelift.com">Reportar vulnerabilidad</a> /
 <a href="#top">Volver arriba ↑</a>
+
+[js-utils]: https://github.com/adamlui/js-utils/#readme

@@ -375,8 +375,11 @@ LE LOGICIEL EST FOURNI "TEL QUEL", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMP
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**Plus d'utilitaires JavaScript**</a> /
+[<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@21bf981/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@21bf981/assets/images/icons/home/dark-gray/icon32x27.png"></picture>][js-utils]
+[**Plus d'utilitaires JavaScript**][js-utils] /
 <a href="https://github.com/adamlui/js-utils/discussions">Discuter</a> /
 <a href="https://github.com/adamlui/js-utils/issues">Signaler un bug</a> /
 <a href="mailto:security@tidelift.com">Signaler une vulnérabilité</a> /
 <a href="#top">Retour au sommet ↑</a>
+
+[js-utils]: https://github.com/adamlui/js-utils/#readme

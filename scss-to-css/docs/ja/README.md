@@ -329,8 +329,11 @@ findSCSS() » Check returned array.
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/separators/aqua-gradient.png">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href="https://github.com/adamlui/js-utils/#readme">**その他の JavaScript ユーティリティ**</a> /
+[<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@21bf981/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@21bf981/assets/images/icons/home/dark-gray/icon32x27.png"></picture>][js-utils]
+[**その他の JavaScript ユーティリティ **][js-utils] /
 <a href="https://github.com/adamlui/scss-to-css/discussions">話し合う</a> /
 <a href="https://github.com/adamlui/scss-to-css/issues">バグを報告する</a> /
 <a href="mailto:security@tidelift.com">脆弱性を報告する</a> /
 <a href="#top">トップに戻る ↑</a>
+
+[js-utils]: https://github.com/adamlui/js-utils/#readme
