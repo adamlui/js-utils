@@ -16,7 +16,7 @@
 
 # 🛠️ JavaScript utilities
 
-<a href="https://npm-compare.com/@adamlui/geolocate,@adamlui/minify.js,@adamlui/scss-to-css,@kudoai/ai-personas,generate-ip,generate-pw,gulp-minify.js,latin-locales,non-latin-locales/#timeRange=ALL">
+<a href="https://npm-compare.com/@adamlui/geolocate,@adamlui/minify.js,@adamlui/programming-languages,@adamlui/scss-to-css,@kudoai/ai-personas,computer-languages,data-languages,generate-ip,generate-pw,gulp-minify.js,latin-locales,markup-languages,non-latin-locales,project-markers,prose-languages/#timeRange=ALL">
     <img height=31 src="https://img.shields.io/badge/Downloads-5.8K/month-44cc11.svg?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
