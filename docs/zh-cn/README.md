@@ -122,6 +122,29 @@
 [API 使用情况](https://github.com/adamlui/js-utils/tree/main/latin-locales/#-usage) /
 [讨论](https://github.com/adamlui/js-utils/discussions)
 
+<!-- MARKUP-LANGUAGES -->
+
+### <a href="https://github.com/adamlui/js-utils/tree/main/markup-languages/#readme">markup-languages</a>
+
+<details>
+    <summary>📄 标记语言的文件扩展名。</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/js-utils/tree/main/markup-languages/#readme">
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@latest/markup-languages/assets/images/dataset-preview.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/adamlui/js-utils/tree/main/markup-languages/#-installation">
+        安装</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/markup-languages/#readme">
+        自述文件</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/markup-languages/#-usage">
+        API 使用情况</a> /
+    <a href="https://github.com/adamlui/js-utils/discussions">
+        讨论</a>
+</blockquote>
+
 ### [</> minify.js](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js/docs/zh-cn/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > 递归地压缩所有 JavaScript 文件。

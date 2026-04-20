@@ -122,6 +122,29 @@
 [API 使用情況](https://github.com/adamlui/js-utils/tree/main/latin-locales/#-usage) /
 [討論](https://github.com/adamlui/js-utils/discussions)
 
+<!-- MARKUP-LANGUAGES -->
+
+### <a href="https://github.com/adamlui/js-utils/tree/main/markup-languages/#readme">markup-languages</a>
+
+<details>
+    <summary>📄 標記語言的檔案副檔名。</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/js-utils/tree/main/markup-languages/#readme">
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@latest/markup-languages/assets/images/dataset-preview.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/adamlui/js-utils/tree/main/markup-languages/#-installation">
+        安裝</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/markup-languages/#readme">
+        自述文件</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/markup-languages/#-usage">
+        API 使用情況</a> /
+    <a href="https://github.com/adamlui/js-utils/discussions">
+        討論</a>
+</blockquote>
+
 ### [</> minify.js](https://github.com/adamlui/js-utils/tree/main/minify.js/node.js/docs/zh-tw/#readme) &nbsp;<a href="https://github.com/toolleeo/cli-apps/#programming"><img height=18 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@0d36e26/assets/images/badges/awesome/badge.svg"></a>
 
 > 遞歸地壓縮所有 JavaScript 檔案。

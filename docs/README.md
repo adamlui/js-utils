@@ -136,6 +136,29 @@
         Discuss</a>
 </blockquote>
 
+<!-- MARKUP-LANGUAGES -->
+
+### <a href="https://github.com/adamlui/js-utils/tree/main/markup-languages/#readme">markup-languages</a>
+
+<details>
+    <summary>🧾 File extensions for markup languages.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/js-utils/tree/main/markup-languages/#readme">
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@latest/markup-languages/assets/images/dataset-preview.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/adamlui/js-utils/tree/main/markup-languages/#-installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/markup-languages/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/markup-languages/#-usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/js-utils/discussions">
+        Discuss</a>
+</blockquote>
+
 <!-- NON-LATIN-LOCALES -->
 
 ### <a href="https://github.com/adamlui/js-utils/tree/main/non-latin-locales/#readme">non-latin-locales</a>
