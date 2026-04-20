@@ -115,7 +115,7 @@ Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 [markup-langs-api-usage]: https://github.com/adamlui/js-utils/tree/main/markup-languages/#-usage
 [markup-langs-discuss]: https://github.com/adamlui/js-utils/discussions
 
-<!-- prose-languages (PYTHON) -->
+<!-- PROSE-LANGUAGES (PYTHON) -->
 
 <details>
     <summary><b>📝 prose-languages (Python)</b></summary>

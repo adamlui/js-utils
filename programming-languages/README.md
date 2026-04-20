@@ -115,7 +115,7 @@ Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 [data-langs-api-usage]: https://github.com/adamlui/js-utils/tree/main/data-languages/#-usage
 [data-langs-discuss]: https://github.com/adamlui/js-utils/discussions
 
-<!-- programming-languages (PYTHON) -->
+<!-- PROGRAMMING-LANGUAGES (PYTHON) -->
 
 <details>
     <summary><b>💻 programming-languages (Python)</b></summary>
