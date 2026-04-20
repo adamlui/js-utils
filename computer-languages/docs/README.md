@@ -114,7 +114,7 @@ Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 
 [computer-langs-py-install]: https://github.com/adamlui/python-utils/tree/main/computer-languages/#installation
 [computer-langs-py-readme]: https://github.com/adamlui/python-utils/tree/main/computer-languages/#readme
-[computer-langs-py-api-usage]: https://github.com/adamlui/python-utils/tree/main/python/#usage
+[computer-langs-py-api-usage]: https://github.com/adamlui/python-utils/tree/main/computer-languages/#usage
 [computer-langs-py-discuss]: https://github.com/adamlui/python-utils/discussions
 
 

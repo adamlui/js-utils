@@ -134,7 +134,7 @@ Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 
 [data-langs-py-install]: https://github.com/adamlui/python-utils/tree/main/data-languages/#installation
 [data-langs-py-readme]: https://github.com/adamlui/python-utils/tree/main/data-languages/#readme
-[data-langs-py-api-usage]: https://github.com/adamlui/python-utils/tree/main/python/#usage
+[data-langs-py-api-usage]: https://github.com/adamlui/python-utils/tree/main/data-languages/#usage
 [data-langs-py-discuss]: https://github.com/adamlui/python-utils/discussions
 
 
