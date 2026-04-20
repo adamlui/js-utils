@@ -91,10 +91,33 @@ Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 
 ## 📜 Related
 
+<!-- COMPUTER-LANGUAGES -->
+
+<details>
+    <summary><b>💻 computer-languages</b></summary>
+    <br>
+    <a href="https://github.com/adamlui/js-utils/tree/main/computer-languages/#readme">
+        <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@latest/computer-languages/assets/images/dataset-preview.png">
+    </a>
+</details>
+
+> [<img height=14 width="auto" src="https://cdn.jsdelivr.net/gh//adamlui/js-utils@dbdea4b/assets/images/icons/runtimes/node.js/icon25x28.png">][computer-langs-install]
+> [Install][computer-langs-install] /
+> [<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/paper-sheet/white.svg"><img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/paper-sheet/black.svg"></picture>][computer-langs-readme]
+> [Readme][computer-langs-readme] /
+> 🔌 [API usage][computer-langs-api-usage] /
+> [<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/speech-bubble-square/white.svg"><img height="12.5" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/speech-bubble-square/black.svg"></picture>][computer-langs-discuss]
+> [Discuss][computer-langs-discuss]
+
+[computer-langs-install]: https://github.com/adamlui/js-utils/tree/main/computer-languages/#-installation
+[computer-langs-readme]: https://github.com/adamlui/js-utils/tree/main/computer-languages/#readme
+[computer-langs-api-usage]: https://github.com/adamlui/js-utils/tree/main/computer-languages/#-usage
+[computer-langs-discuss]: https://github.com/adamlui/js-utils/discussions
+
 <!-- DATA-LANGUAGES (PYTHON) -->
 
 <details>
-    <summary><b>data-languages (Python)</b></summary>
+    <summary><b>🧾 data-languages (Python)</b></summary>
     <br>
     <a href="https://github.com/adamlui/python-utils/tree/main/data-languages/#readme">
         <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@4229cfe/data-languages/assets/images/dataset-preview.png">
