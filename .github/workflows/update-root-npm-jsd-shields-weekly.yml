@@ -24,14 +24,34 @@ jobs:
       - name: Fetch/sum npm download + git clone + JSD request counts
         run: |
           NPM_PKGS=(
-            "@adamlui/geolocate" "@adamlui/minify.js" "@adamlui/scss-to-css" "@kudoai/ai-personas" "generate-ip"
-            "generate-pw" "gulp-minify.js" "latin-locales" "non-latin-locales" 
+            "@adamlui/geolocate"
+            "@adamlui/minify.js"
+            "@adamlui/scss-to-css"
+            "@kudoai/ai-personas"
+            "computer-languages"
+            "generate-ip"
+            "generate-pw"
+            "gulp-minify.js"
+            "latin-locales"
+            "non-latin-locales" 
           )
-          JSD_NPM_PKGS=(
-            "@adamlui/geolocate" "@kudoai/ai-personas" "generate-ip" "generate-pw" "latin-locales" "non-latin-locales")
-          JSD_GH_REPOS=("adamlui/js-utils" "adamlui/minify.js" "adamlui/scss-to-css" "KudoAI/ai-personas")
+          JSD_NPM_PKGS=( # that expose JSD link to npm files
+            "@adamlui/geolocate"
+            "@kudoai/ai-personas"
+            "computer-languages"
+            "generate-ip"
+            "generate-pw"
+            "latin-locales"
+            "non-latin-locales"
+          )
+          JSD_GH_REPOS=( # for all JS projects
+            "adamlui/js-utils"
+            "adamlui/minify.js"
+            "adamlui/scss-to-css"
+            "KudoAI/ai-personas"
+          )
 
-          expand_num() { # expand nums abbreviated w/ 'k' or 'm' suffix to integers
+          expand_num() { # abbreviated w/ 'k' or 'm' suffix to integers
             local num=$(echo "$1" | tr '[:upper:]' '[:lower:]') # convert to lowercase
             if [[ $num =~ k$ ]] ; then
               num="${num%k}" # remove 'k' suffix

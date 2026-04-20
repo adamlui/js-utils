@@ -67,6 +67,29 @@
         Discuss</a>
 </blockquote>
 
+<!-- COMPUTER-LANGUAGES -->
+
+### <a href="https://github.com/adamlui/js-utils/tree/main/computer-languages/#readme">computer-languages</a>
+
+<details>
+    <summary>💻 File extensions for computer languages.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/js-utils/tree/main/computer-languages/#readme">
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils/computer-languages/assets/images/dataset-preview.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/adamlui/js-utils/tree/main/computer-languages/#-installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/computer-languages/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/computer-languages/#-usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/js-utils/discussions">
+        Discuss</a>
+</blockquote>
+
 <!-- LATIN-LOCALES -->
 
 ### <a href="https://github.com/adamlui/js-utils/tree/main/latin-locales/#readme">latin-locales</a>

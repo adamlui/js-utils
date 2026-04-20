@@ -9,6 +9,7 @@ updates:
   - package-ecosystem: npm
     directories:
       - /
+      - /computer-languages
       - /generate-ip
       - /generate-pw
       - /geolocate
