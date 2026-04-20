@@ -1,6 +1,6 @@
 <a id="top"></a>
 
-# 💻 project-markers
+# 🏷️ project-markers
 
 <a href="https://github.com/adamlui/js-utils/releases/tag/project-markers-1.0.0">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
@@ -60,6 +60,33 @@ The list includes hundreds of markers from many tools and ecosystems, including:
 ## MIT License
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui)
+
+<hr>
+
+## 📦 Related
+
+<!-- PROJECT-MARKERS (PYTHON) -->
+
+<details>
+    <summary><b>🏷️ project-markers (Python)</b></summary>
+    <br>
+    <a href="https://github.com/adamlui/python-utils/tree/main/project-markers/#readme">
+        <img width="333" height="auto" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@4229cfe/project-markers/assets/images/dataset-preview.png">
+    </a>
+</details>
+
+> [<img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b110c1e/assets/images/icons/python/icon32.png">][project-markers-py-install]
+> [Install][project-markers-py-install] /
+> [<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/paper-sheet/white.svg"><img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/paper-sheet/black.svg"></picture>][project-markers-py-readme]
+> [Readme][project-markers-py-readme] /
+> 🔌 [API usage][project-markers-py-api-usage] /
+> [<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/speech-bubble-square/white.svg"><img height="12.5" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/speech-bubble-square/black.svg"></picture>][project-markers-py-discuss]
+> [Discuss][project-markers-py-discuss]
+
+[project-markers-py-install]: https://github.com/adamlui/python-utils/tree/main/project-markers/#installation
+[project-markers-py-readme]: https://github.com/adamlui/python-utils/tree/main/project-markers/#readme
+[project-markers-py-api-usage]: https://github.com/adamlui/python-utils/tree/main/project-markers/#usage
+[project-markers-py-discuss]: https://github.com/adamlui/python-utils/discussions
 
 
 <!-- FOOTER -->
