@@ -6,6 +6,8 @@
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/blob/main/computer-languages/docs/LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://www.codefactor.io/repository/github/adamlui/js-utils">
+    <img height=31 src="https://img.shields.io/codefactor/grade/github/adamlui/js-utils?label=Code+Quality&logo=codefactor&logoColor=white&labelColor=464646&color=a0fc55&style=for-the-badge"></a>
 <a href="https://sonarcloud.io/component_measures?metric=vulnerabilities&selected=adamlui_js-utils%3Acomputer-languages&id=adamlui_js-utils">
     <img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_js-utils%3Acomputer-languages%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonar&logoColor=white&labelColor=464646&label=Vulnerabilities&color=fafc74"></a>
 
@@ -87,6 +89,33 @@ console.log(`${markupLangs.length} markup languages`) // -> 69 markup languages
 ## MIT License
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui)
+
+<hr>
+
+## 📜 Related
+
+<!-- COMPUTER-LANGUAGES (PYTHON) -->
+
+<details>
+    <summary><b>computer-languages (Python)</b></summary>
+    <br>
+    <a href="https://github.com/adamlui/js-utils/tree/main/computer-languages/#readme">
+        <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@4229cfe/computer-languages/assets/images/dataset-preview.png">
+    </a>
+</details>
+
+> [<img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b110c1e/assets/images/icons/python/icon32.png">][ap-py-install]
+> [Install][ap-py-install] /
+> [<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/paper-sheet/white.svg"><img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/paper-sheet/black.svg"></picture>][ap-py-readme]
+> [Readme][ap-py-readme] /
+> 🔌 [API usage][ap-py-api-usage] /
+> [<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/speech-bubble-square/white.svg"><img height="12.5" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/speech-bubble-square/black.svg"></picture>][ap-py-discuss]
+> [Discuss][ap-py-discuss]
+
+[ap-py-install]: https://github.com/KudoAI/ai-personas/tree/main/python/#-installation
+[ap-py-readme]: https://github.com/KudoAI/ai-personas/tree/main/python/#readme
+[ap-py-api-usage]: https://github.com/KudoAI/ai-personas/tree/main/python/#-usage
+[ap-py-discuss]: https://github.com/KudoAI/ai-personas/discussions
 
 
 <!-- FOOTER -->
