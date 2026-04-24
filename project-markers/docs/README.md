@@ -15,6 +15,8 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/npm/project-markers@1.0.0/dist/project-markers.json), so you can use it in any environment.
 
+<img height=175 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@project-markers-1.0.0/project-markers/assets/images/dataset-preview.png">
+
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png"></a>
 
 ## ⚡ Installation

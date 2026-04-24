@@ -16,6 +16,8 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/npm/latin-locales@1.0.0/dist/latin-locales.json), so you can use it in any environment.
 
+<img height=175 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@latest/latin-locales/images/dataset-preview.png">
+
 ## ⚡ Installation
 
 From your project root:

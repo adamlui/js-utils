@@ -15,6 +15,8 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/npm/@adamlui/programming-languages@1.0.0/dist/programming-languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 700+ languages known to GitHub). Data is updated via script and released via new package version.
 
+<img height=222 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@programming-languages-1.0.0/programming-languages/assets/images/dataset-preview.png">
+
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png"></a>
 
 ## ⚡ Installation
@@ -63,7 +65,7 @@ function getLang(fileExt) {
     return langMatches.length == 1 ? langMatches[0] : langMatches
 }
 
-console.log(getLang('.al')) // => [ 'AL', 'Perl' ]
+console.log(getLang('.al')) // => AL
 ```
 
 Get language(s) from a file path:
@@ -77,7 +79,7 @@ function getLangFromPath(filepath) {
     return langMatches.length == 1 ? langMatches[0] : langMatches
 }
 
-console.log(getLangFromPath('main.rs')) // => [ 'RenderScript', 'Rust' ]
+console.log(getLangFromPath('main.rs')) // => Rust
 console.log(getLangFromPath('script.kt'))  // => Kotlin
 console.log(getLangFromPath('data.avsc'))  // => [] (use data-languages pkg)
 ```
