@@ -15,7 +15,7 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/npm/computer-languages@1.0.0/dist/computer-languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 700+ languages known to GitHub). Data is updated via script and released via new package version.
 
-<img height=222 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@computer-languages-1.0.0/computer-languages/assets/images/dataset-preview.png">
+<img height=175 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@computer-languages-1.0.0/computer-languages/assets/images/dataset-preview.png">
 
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png"></a>
 
