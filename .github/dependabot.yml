@@ -9,6 +9,7 @@ updates:
   - package-ecosystem: npm
     directories:
       - /
+      - /ai-personas
       - /computer-languages
       - /data-languages
       - /generate-ip
@@ -20,6 +21,7 @@ updates:
       - /minify.js/node.js
       - /non-latin-locales
       - /programming-languages
+      - /project-markers
       - /prose-languages
       - /scss-to-css
     schedule:
