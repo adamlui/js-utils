@@ -23,8 +23,8 @@
 
 <a href="https://npm-compare.com/generate-pw/#timeRange=ALL">
     <img height=31 src="https://img.shields.io/npm/dm/generate-pw?label=%E4%B8%8B%E8%BD%BD&logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.3.3">
-    <img height=31 src="https://img.shields.io/badge/最新版本-2.3.3-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/generate-pw-2.3.4">
+    <img height=31 src="https://img.shields.io/badge/最新版本-2.3.4-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-%E8%AE%B8%E5%8F%AF%E8%AF%81">
     <img height=31 src="https://img.shields.io/badge/许可证-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/generate-pw?activeTab=code">
