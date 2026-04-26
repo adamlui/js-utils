@@ -16,14 +16,14 @@ jobs:
       contents: read
       id-token: write
     steps:
+      - run: |
+          TAG="${{ github.event.release.tag_name }}"
+          PROJECT="${TAG%-*}"
+          echo "PROJECT=$PROJECT" >> $GITHUB_ENV
       - uses: actions/checkout@v6.0.2
       - uses: actions/setup-node@v6.4.0
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org
-      - run: |
-          TAG="${{ github.event.release.tag_name }}"
-          PROJECT="${TAG%-*}"
-          echo "PROJECT=$PROJECT" >> $GITHUB_ENV
       - run: |
           cd ${{ env.PROJECT }} && npm ci && npm run build && npm publish --provenance
