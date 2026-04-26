@@ -12,7 +12,7 @@ jobs:
         && !contains(github.event.release.tag_name, 'minify')
         && !contains(github.event.release.tag_name, 'scss-to-css')
       }}
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       id-token: write
@@ -23,8 +23,8 @@ jobs:
           node-version: 24
           registry-url: https://registry.npmjs.org
       - run: |
-          TAG="${{ github.event.ref }}"
-          PROJECT="${TAG#refs/tags/}"   # Remove 'refs/tags/' from the tag name
+          TAG="${{ github.event.release.tag_name }}"
+          PROJECT="${TAG%-*}"
           echo "PROJECT=$PROJECT" >> $GITHUB_ENV
       - run: |
           cd ${{ env.PROJECT }} && npm ci && npm run build && npm publish --provenance
