@@ -1,6 +1,6 @@
 {
   "name": "@adamlui/geolocate",
-  "version": "2.4.3",
+  "version": "2.4.4",
   "description": "Fetch IP geolocation data from the CLI.",
   "author": {
     "name": "Adam Lui",
