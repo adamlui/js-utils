@@ -7,7 +7,11 @@ on:
 
 jobs:
   publish:
-    if: "!contains(github.event.release.tag_name, 'ai-personas') && !contains(github.event.release.tag_name, 'minify') && !contains(github.event.release.tag_name, 'scss-to-css')"
+    if: ${{
+           !contains(github.event.release.tag_name, 'ai-personas')
+        && !contains(github.event.release.tag_name, 'minify')
+        && !contains(github.event.release.tag_name, 'scss-to-css')
+      }}
     runs-on: ubuntu-22.04
     permissions:
       contents: read
