@@ -8,7 +8,8 @@ on:
 jobs:
   publish:
     if: ${{ 
-         startsWith(github.event.release.tag_name, 'minify') == false 
+         startsWith(github.event.release.tag_name, 'ai-personas') == false 
+      || startsWith(github.event.release.tag_name, 'minify') == false 
       || startsWith(github.event.release.tag_name, 'scss-to-css') == false 
     }}
     permissions:
