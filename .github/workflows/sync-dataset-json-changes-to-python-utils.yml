@@ -38,18 +38,13 @@ jobs:
           repository: adamlui/python-utils
           path: adamlui/python-utils
 
-      - name: Determine changed datasets
+      - name: Determine changed dataset
         run: |
-          changed_files="${{ github.event.head_commit.added || '' }} ${{ github.event.head_commit.modified || '' }}"
-          changed_files="${changed_files//[\[\]\"]/}"
-          datasets=()
-          for file in $changed_files ; do
-            if [[ "$file" == *.json ]] ; then
-              datasets+=("$(basename "$file" .json)")
-            fi
-          done
-          echo "DATASETS=${datasets[*]}" >> $GITHUB_ENV
-          echo "Extracted datasets: ${datasets[*]}"
+          changed_file="${{ github.event.head_commit.added[0] || github.event.head_commit.modified[0] || github.event.path }}"
+          if [[ -z "$changed_file" ]] ; then changed_file=$(echo "${{ github.event.paths[0] }}" ) ; fi
+          dataset=$(basename "$changed_file" .json)
+          echo "DATASET=$dataset" >> $GITHUB_ENV
+          echo "Extracted dataset: $dataset"
 
       - name: Sync each <dataset>.json → adamlui/python-utils/<dataset>
         run: |
