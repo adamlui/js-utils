@@ -31,7 +31,7 @@
 
 **generate-ip** is a lightweight, easy-to-use library that allows you to randomly generate, format & validate IP address(es).
 
-- **No external dependencies —** Only built-in crypto methods used for secure randomization
+- **Secure randomization —** Uses built-in crypto methods
 - **Multi-protocol support —** IPv4 + IPv6 + MAC addresses supported
 - **Multi-environment support —** Use in Node.js or the web browser
 - **Command line usable —** Just type `generate-ip`, that's it
