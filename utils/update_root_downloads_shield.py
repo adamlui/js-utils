@@ -23,10 +23,10 @@ NPM_PKGS = [
 NPM_STATS_API_URL = 'https://api.npmjs.org/downloads/point/0000-01-01:9999-12-31/{pkg}'
 
 def get_pkg_downloads(pkg: str, max_retries: int = 5, get_delay: int = 1) -> int:
-    url = NPM_STATS_API_URL.format(pkg=pkg)
+    api_url = NPM_STATS_API_URL.format(pkg=pkg)
     for idx in range(max_retries):
         try:
-            with urlopen(url) as resp : return int(json.load(resp).get('downloads', 0))
+            with urlopen(api_url) as resp : return int(json.load(resp).get('downloads', 0))
         except (HTTPError, ValueError) as err:
             retry_delay = (idx +1) * get_delay
             print(f'NPM [{pkg}] error: {err}. Retrying in {retry_delay}s...')
