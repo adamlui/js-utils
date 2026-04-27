@@ -13,7 +13,7 @@
 <a href="https://github.com/adamlui/js-utils/releases/tag/generate-ip-2.9.4">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-2.9.4-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-license">
-    <img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+    <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/generate-ip?activeTab=code">
     <img height=31 src="https://img.shields.io/npm/unpacked-size/generate-ip?style=for-the-badge&logo=ebox&logoColor=white&labelColor=464646&color=blue"></a>
 <a href="https://sonarcloud.io/component_measures?metric=vulnerabilities&selected=adamlui_js-utils%3Agenerate-ip&id=adamlui_js-utils">
@@ -21,7 +21,7 @@
 <a href="https://github.com/toolleeo/cli-apps/#networking">
     <img height=31 src="https://img.shields.io/badge/Mentioned_in-Awesome-ff69b4?logo=awesomelists&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.jsdelivr.com/package/npm/generate-ip?tab=stats">
-    <img height=31 src="https://img.shields.io/jsdelivr/npm/hm/generate-ip?style=for-the-badge&logo=jsdelivr&logoColor=white&label=jsDelivr%20Hits&labelColor=464646&color=49c5d8"></a>
+    <img height=31 src="https://img.shields.io/jsdelivr/npm/hm/generate-ip?style=for-the-badge&logo=jsdelivr&logoColor=white&label=jsDelivr%20Hits&labelColor=464646&color=7bb7fc"></a>
 
 </div>
 

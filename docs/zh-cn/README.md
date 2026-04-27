@@ -19,13 +19,13 @@
 <a href="https://npm-compare.com/@adamlui/geolocate,@adamlui/minify.js,@adamlui/programming-languages,@adamlui/scss-to-css,@kudoai/ai-personas,computer-languages,data-languages,generate-ip,generate-pw,gulp-minify.js,latin-locales,markup-languages,non-latin-locales,project-markers,prose-languages/#timeRange=ALL">
     <img height=31 src="https://img.shields.io/badge/%E4%B8%8B%E8%BD%BD-7.1K/%E6%9C%88-44cc11.svg?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="LICENSE.md">
-    <img height=31 src="https://img.shields.io/badge/%E6%89%A7%E7%85%A7-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+    <img height=31 src="https://img.shields.io/badge/%E6%89%A7%E7%85%A7-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/js-utils">
     <img height=31 src="https://img.shields.io/codefactor/grade/github/adamlui/js-utils?label=%E4%BB%A3%E7%A0%81%E8%B4%A8%E9%87%8F&logo=codefactor&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge"></a>
 <a href="https://sonarcloud.io/component_measures?metric=vulnerabilities&id=adamlui_js-utils">
     <img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_js-utils%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonar&logoColor=white&labelColor=464646&label=%E6%BC%8F%E6%B4%9E&color=ffef00"></a>
 <a href="#">
-    <img height=31 src="https://img.shields.io/badge/jsDelivr_%E8%AF%B7%E6%B1%82-10,000+/%E6%9C%88-2bbbd8.svg?logo=jsdelivr&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+    <img height=31 src="https://img.shields.io/badge/jsDelivr_%E8%AF%B7%E6%B1%82-10,000+/%E6%9C%88-7bb7fc.svg?logo=jsdelivr&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
 ### Node.js 和 Web 必备的 JavaScript 库/实用程序。
 
