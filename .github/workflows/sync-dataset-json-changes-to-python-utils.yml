@@ -23,7 +23,6 @@ jobs:
       TZ: PST8PDT
 
     steps:
-
       - name: Checkout adamlui/js-utils
         uses: actions/checkout@v6.0.2
         with:
@@ -51,19 +50,18 @@ jobs:
           echo "DATASET=$dataset" >> $GITHUB_ENV
           echo "Extracted dataset: $dataset"
 
-      - name: Sync each <dataset>.json → adamlui/python-utils/<dataset>
+      - name: Sync <dataset>.json → adamlui/python-utils/<dataset>
         run: |
-          for dataset in ${{ env.DATASETS }} ; do
-            echo "Syncing $dataset.json"
-            src_file=$(find ${{ github.workspace }}/adamlui/js-utils -name "$dataset.json" -type f | head -n 1)
-            if [[ -z "$src_file" ]] ; then
-              echo "No source file found for $dataset"
-              exit 1
-            fi
-            dest_dir="${{ github.workspace }}/adamlui/python-utils/$dataset"
-            mkdir -p "$dest_dir"
-            cp -f "$src_file" "$dest_dir/$dataset.json"
-          done
+          dataset="${{ env.DATASET }}"
+          echo "Syncing $dataset.json"
+          src_file=$(find ${{ github.workspace }}/adamlui/js-utils -name "$dataset.json" -type f | head -n 1)
+          if [[ -z "$src_file" ]] ; then
+            echo "No source file found for $dataset"
+            exit 1
+          fi
+          dest_dir="${{ github.workspace }}/adamlui/python-utils/$dataset"
+          mkdir -p "$dest_dir"
+          cp -f "$src_file" "$dest_dir/$dataset.json"
 
       - name: Escape backticks in commit msg
         env:
