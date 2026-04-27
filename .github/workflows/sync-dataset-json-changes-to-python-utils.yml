@@ -59,13 +59,15 @@ jobs:
             echo "No source file found for $dataset"
             exit 1
           fi
-          dest_dir="${{ github.workspace }}/adamlui/python-utils/$dataset"
+          snake_dataset=$(echo "$dataset" | tr '-' '_')
+          dest_dir="${{ github.workspace }}/adamlui/python-utils/src/$snake_dataset"
           mkdir -p "$dest_dir"
           cp -f "$src_file" "$dest_dir/$dataset.json"
+          COMMIT_MSG="${{ github.event.head_commit.message }} ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/$dataset]"
 
       - name: Escape backticks in commit msg
         env:
-          COMMIT_MSG: ${{ github.event.head_commit.message }}
+          COMMIT_MSG: ${{ steps.sync.outputs.COMMIT_MSG || env.COMMIT_MSG }}
         run: |
           DELIM="EOF_$(uuidgen)"
           echo "ESCAPED_MSG<<$DELIM" >> "$GITHUB_ENV"
@@ -86,7 +88,6 @@ jobs:
       - name: Push changes to adamlui/python-utils
         run: |
           cd ${{ github.workspace }}/adamlui/python-utils
-          git add . && git commit -n -m \
-            "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main]" || true
+          git add . && git commit -n -m "$ESCAPED_MSG" || true
           git pull --rebase
           git push
