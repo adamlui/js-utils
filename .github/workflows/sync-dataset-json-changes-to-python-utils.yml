@@ -40,9 +40,9 @@ jobs:
 
       - name: Determine changed datasets
         run: |
-          changed_files=("${{ github.event.head_commit.added[@] }}" "${{ github.event.head_commit.modified[@] }}")
+          changed_files="${{ github.event.head_commit.added || '' }} ${{ github.event.head_commit.modified || '' }}"
           datasets=()
-          for file in "${changed_files[@]}" ; do
+          for file in $changed_files ; do
             if [[ "$file" == *.json ]] ; then
               dataset=$(basename "$file" .json)
               datasets+=("$dataset")
