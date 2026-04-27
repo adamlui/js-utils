@@ -40,8 +40,9 @@ jobs:
 
       - name: Determine changed dataset
         run: |
-          changed_file="${{ github.event.head_commit.added[0] || github.event.head_commit.modified[0] || github.event.path }}"
-          if [[ -z "$changed_file" ]] ; then changed_file=$(echo "${{ github.event.paths[0] }}" ) ; fi
+          SHA="${{ github.sha }}"
+          REPO="${{ github.repository }}"
+          changed_file=$(gh api repos/$REPO/commits/$SHA | grep '"filename":' | head -n 1 | sed -E 's/.*"filename": "(.*)".*/\1/')
           dataset=$(basename "$changed_file" .json)
           echo "DATASET=$dataset" >> $GITHUB_ENV
           echo "Extracted dataset: $dataset"
