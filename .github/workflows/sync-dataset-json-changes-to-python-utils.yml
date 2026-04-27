@@ -78,6 +78,6 @@ jobs:
           ESCAPED_MSG=$(printf '%q' "$COMMIT_MSG")
           cd "${GITHUB_WORKSPACE}/adamlui/python-utils"
           git add "$dataset/src/$snake_dataset/$dataset.json"
-          git commit -n -m "$COMMIT_MSG" || echo "Nothing to commit"
+          git commit -n -m "$ESCAPED_MSG" || echo "Nothing to commit"
           git pull --rebase
           git push
