@@ -76,7 +76,7 @@ jobs:
           COMMIT_MSG="${RAW_COMMIT_MSG:-Update $dataset.json} ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/$dataset]"
           ESCAPED_MSG=$(printf '%q' "$COMMIT_MSG")
           cd "${GITHUB_WORKSPACE}/adamlui/python-utils"
-          git add "src/$snake_dataset/$dataset.json"
+          git add "$dataset/src/$snake_dataset/$dataset.json"
           git commit -n -m "$COMMIT_MSG" || echo "Nothing to commit"
           git pull --rebase
           git push
