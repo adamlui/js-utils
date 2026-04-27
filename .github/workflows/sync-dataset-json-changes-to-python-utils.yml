@@ -39,6 +39,8 @@ jobs:
           path: adamlui/python-utils
 
       - name: Determine changed dataset
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           SHA="${{ github.sha }}"
           REPO="${{ github.repository }}"
