@@ -14,7 +14,7 @@
 
 <div align="center">
 
-# 🛠️ JavaScript utilities
+# [<img height=25 width="auto" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/10906554?h=100&w=100&mask=circle&maxage=7d">](https://github.com/adamlui) adamlui / js-utils
 
 <a href="https://npm-compare.com/@adamlui/geolocate,@adamlui/minify.js,@adamlui/programming-languages,@adamlui/scss-to-css,@kudoai/ai-personas,computer-languages,data-languages,generate-ip,generate-pw,gulp-minify.js,latin-locales,markup-languages,non-latin-locales,project-markers,prose-languages/#timeRange=ALL">
     <img height=31 src="https://img.shields.io/badge/Downloads-7.1K/month-44cc11.svg?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
@@ -27,7 +27,7 @@
 <a href="#">
     <img height=31 src="https://img.shields.io/badge/jsDelivr_Requests-10,000+/month-7bb7fc.svg?logo=jsdelivr&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 
-### Essential JavaScript libraries/utilities for Node.js and the web.
+### 🛠️ Essential JavaScript libraries/utilities for Node.js and the web.
 
 <hr>
 
