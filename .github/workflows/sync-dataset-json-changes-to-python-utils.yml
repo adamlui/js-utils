@@ -44,7 +44,7 @@ jobs:
         run: |
           SHA="${{ github.sha }}"
           REPO="${{ github.repository }}"
-          changed_file=$(gh api repos/$REPO/commits/$SHA | grep '"filename":' | head -n 1 | sed -E 's/.*"filename": "(.*)".*/\1/')
+          changed_file=$(gh api repos/$REPO/commits/$SHA | grep -oP '"filename":\s*"\K[^"]+' | grep '\.json$' | head -n 1)
           changed_file="${changed_file//%2F//}"  # decode URL-encoded slashes (%2F → /)
           changed_file="${changed_file%%\?*}"    # remove any query string (?ref=...)
           dataset=$(basename "$changed_file" .json)
