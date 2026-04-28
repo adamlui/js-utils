@@ -42,7 +42,7 @@
 
 **generate-pw** is a lightweight, easy-to-use library that allows you to randomly generate, strengthen & validate cryptographically-secure password(s).
 
-- **No external dependencies —** Only built-in crypto methods used for secure randomization
+- **Secure randomization —** Uses built-in crypto methods
 - **Highly customizable —** Specify length, quantity, charsets to use, etc.
 - **Multi-environment support —** Use in Node.js or the web browser
 - **Command line usable —** Just type `generate-pw`, that's it

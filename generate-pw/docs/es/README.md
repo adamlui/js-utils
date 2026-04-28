@@ -42,9 +42,9 @@
 
 **generate-pw** es una biblioteca liviana y fácil de usar que le permite generar, fortalecer y validar aleatoriamente contraseñas criptográficamente seguras.
 
-- **Sin dependencias externas —** Solo se utilizan métodos criptográficos integrados para una aleatorización segura
-- **Altamente personalizable:** Especifique la longitud, la cantidad, los juegos de caracteres a usar, etc.
-- **Compatibilidad con múltiples entornos:** Uso en Node.js o el navegador web
+- **Aleatorización segura —** Utiliza métodos criptográficos integrados
+- **Altamente personalizable —** Especifique la longitud, la cantidad, los juegos de caracteres a usar, etc.
+- **Compatibilidad con múltiples entornos —** Uso en Node.js o el navegador web
 - **Línea de comando utilizable —** Simplemente escriba `generate-pw`, eso es todo
 
 <img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png">
