@@ -1,5 +1,5 @@
 {
-  "1C Enterprise": { "extensions": [".bsl",".os"] },
+  "1C Enterprise": { "extensions": [".bsl",".os", ".adam"] },
   "4D": { "extensions": [".4dm"] },
   "ABAP": { "extensions": [".abap"] },
   "ABAP CDS": { "extensions": [".asddls"] },
