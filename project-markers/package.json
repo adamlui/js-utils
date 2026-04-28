@@ -1,6 +1,6 @@
 {
   "name": "project-markers",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "List of files that indicate a project root.",
   "author": {
     "name": "Adam Lui",

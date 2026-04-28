@@ -2,8 +2,8 @@
 
 # 🏷️ project-markers
 
-<a href="https://github.com/adamlui/js-utils/releases/tag/project-markers-1.0.0">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/project-markers-1.1.0">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.1.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/js-utils/blob/main/project-markers/docs/LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/js-utils">
@@ -15,7 +15,7 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/npm/project-markers@1.0.0/dist/project-markers.json), so you can use it in any environment.
 
-<img height=175 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@project-markers-1.0.0/project-markers/assets/images/dataset-preview.png">
+<img height=175 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@project-markers-1.1.0/project-markers/assets/images/dataset-preview.png">
 
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png"></a>
 
