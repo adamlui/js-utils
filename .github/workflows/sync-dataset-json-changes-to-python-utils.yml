@@ -4,14 +4,14 @@ on:
   push:
     branches: [main]
     paths:
-      - "computer-languages.json"
-      - "data-languages.json"
-      - "latin-locales.json"
-      - "markup-languages.json"
-      - "non-latin-locales.json"
-      - "project-markers.json"
-      - "programming-languages.json"
-      - "prose-languages.json"
+      - "**/computer-languages.json"
+      - "**/data-languages.json"
+      - "**/latin-locales.json"
+      - "**/markup-languages.json"
+      - "**/non-latin-locales.json"
+      - "**/project-markers.json"
+      - "**/programming-languages.json"
+      - "**/prose-languages.json"
 
 jobs:
   build:
