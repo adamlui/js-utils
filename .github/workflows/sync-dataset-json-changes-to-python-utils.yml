@@ -70,8 +70,8 @@ jobs:
         run: |
           dataset="${{ env.DATASET }}"
           msg="${RAW_COMMIT_MSG:-Update $dataset.json}"
-          printf '%s\n' "$msg" > commit_msg.txt
-          echo "↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/$dataset]" >> commit_msg.txt
+          printf '%s ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/%s]\n' \
+            "$msg" "$dataset" > commit_msg.txt
 
       - name: Sync <dataset>.json → adamlui/python-utils/<dataset>
         run: |
