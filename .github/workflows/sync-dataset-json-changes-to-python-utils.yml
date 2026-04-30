@@ -21,24 +21,18 @@ jobs:
       contents: read
     env:
       TZ: PST8PDT
-
     steps:
-      - name: Checkout adamlui/js-utils
-        uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.2
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
           path: adamlui/js-utils
           fetch-depth: 2
-
-      - name: Checkout adamlui/python-utils
-        uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.2
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
           repository: adamlui/python-utils
           path: adamlui/python-utils
-
-      - name: Determine changed dataset
-        env:
+      - env:
           GH_TOKEN: ${{ github.token }}
         run: |
           SHA="${{ github.sha }}"
@@ -52,9 +46,7 @@ jobs:
           dataset=$(basename "$changed_file" .json)
           echo "DATASET=$dataset" >> $GITHUB_ENV
           echo "Extracted dataset: $dataset"
-
-      - name: Config committer
-        env:
+      - env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
           GPG_PRIVATE_ID: ${{ secrets.GPG_PRIVATE_ID }}
         run: |
@@ -63,18 +55,14 @@ jobs:
           git config --global user.name "kudo-sync-bot"
           git config --global user.email "auto-sync@kudoai.com"
           git config --global user.signingkey "$GPG_PRIVATE_ID"
-
-      - name: Escape commit message
-        env:
+      - env:
           RAW_COMMIT_MSG: ${{ github.event.head_commit.message }}
         run: |
           dataset="${{ env.DATASET }}"
           msg="${RAW_COMMIT_MSG:-Update $dataset.json}"
           printf '%s ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/%s]\n' \
             "$msg" "$dataset" > commit_msg.txt
-
-      - name: Sync <dataset>.json → adamlui/python-utils/<dataset>
-        run: |
+      - run: |
           dataset="${{ env.DATASET }}"
           echo "Syncing $dataset.json"
           snake_dataset=$(echo "$dataset" | tr '-' '_')

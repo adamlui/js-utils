@@ -13,18 +13,13 @@ jobs:
       contents: read
     env:
       TZ: PST8PDT
-
     steps:
-
-      - name: Checkout adamlui/js-utils
-        uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.2
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
           path: adamlui/js-utils
           fetch-depth: 2
-
-      - name: Sync README.md between <pkg>/ and <pkg>/docs
-        run: |
+      - run: |
           cd ${{ github.workspace }}/adamlui/js-utils
 
           # Init pkg paths
@@ -61,18 +56,14 @@ jobs:
 
           # Expose sync src for commit msg in next step
           echo "SYNC_SRC=$src_folder" >> $GITHUB_ENV
-
-      - name: Escape backticks in commit msg
-        env:
+      - env:
           COMMIT_MSG: ${{ github.event.head_commit.message }}
         run: |
           DELIM="EOF_$(uuidgen)"
           echo "ESCAPED_MSG<<$DELIM" >> "$GITHUB_ENV"
           echo "$COMMIT_MSG" | sed 's/`/\`/g' >> "$GITHUB_ENV"
           echo "$DELIM" >> "$GITHUB_ENV"
-
-      - name: Config committer
-        env:
+      - env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
           GPG_PRIVATE_ID: ${{ secrets.GPG_PRIVATE_ID }}
         run: |
@@ -81,9 +72,7 @@ jobs:
           git config --global user.name "kudo-sync-bot"
           git config --global user.email "auto-sync@kudoai.com"
           git config --global user.signingkey "$GPG_PRIVATE_ID"
-
-      - name: Push changes to adamlui/js-utils
-        if: env.SYNC_SRC
+      - if: env.SYNC_SRC
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           git pull # again to sync w/ concurrent workflow updates

@@ -12,17 +12,12 @@ jobs:
       contents: read
     env:
       TZ: PST8PDT
-
     steps:
-
-      - name: Checkout adamlui/js-utils
-        uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.2
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
           path: adamlui/js-utils
-
-      - name: Fetch/sum npm download + git clone + JSD request counts
-        run: |
+      - run: |
           NPM_PKGS=(
             "@adamlui/geolocate"
             "@adamlui/minify.js"
@@ -136,9 +131,7 @@ jobs:
           # Expose totals for update step next
           echo "TOTAL_DOWNLOADS=$formatted_total_downloads" >> $GITHUB_ENV
           echo "TOTAL_REQUESTS=$formatted_total_requests" >> $GITHUB_ENV
-
-      - name: Update README shields
-        run: |
+      - run: |
           cd ${{ github.workspace }}/adamlui/js-utils/docs
 
           TOTAL_DOWNLOADS="${{ env.TOTAL_DOWNLOADS }}"
@@ -187,9 +180,7 @@ jobs:
 
           # Set Updated flag to check in subseuqent steps
           if (( "$shield_types_updated" > 0 )) ; then echo "SHIELDS_UPDATED=true" >> $GITHUB_ENV ; fi
-
-      - name: Config committer
-        if: env.SHIELDS_UPDATED == 'true'
+      - if: env.SHIELDS_UPDATED == 'true'
         env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
           GPG_PRIVATE_ID: ${{ secrets.GPG_PRIVATE_ID }}
@@ -199,9 +190,7 @@ jobs:
           git config --global user.name "kudo-sync-bot"
           git config --global user.email "auto-sync@kudoai.com"
           git config --global user.signingkey "$GPG_PRIVATE_ID"
-
-      - name: Push changes to adamlui/js-utils
-        if: env.SHIELDS_UPDATED == 'true'
+      - if: env.SHIELDS_UPDATED == 'true'
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           git add . && git commit -n -m "$COMMIT_MSG" || true

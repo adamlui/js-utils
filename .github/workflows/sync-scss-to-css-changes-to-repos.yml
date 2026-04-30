@@ -13,25 +13,18 @@ jobs:
       contents: read
     env:
       TZ: PST8PDT
-
     steps:
-
-      - name: Checkout adamlui/js-utils
-        uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.2
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
           path: adamlui/js-utils
           fetch-depth: 2
-
-      - name: Checkout adamlui/scss-to-css
-        uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.2
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
           repository: adamlui/scss-to-css
           path: adamlui/scss-to-css
-
-      - name: Sync README.md between scss-to-css/ & scss-to-css/docs
-        run: |
+      - run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           root_readme="./scss-to-css/README.md"
           root_readme_content=$(git show HEAD:"$root_readme")
@@ -51,24 +44,18 @@ jobs:
             fi
           fi
           echo "SYNC_SRC=$src_folder" >> $GITHUB_ENV
-
-      - name: Sync scss-to-css/ to adamlui/scss-to-css/
-        run: |
+      - run: |
           rsync -avhc --delete --filter='P /.*' \
             ${{ github.workspace }}/adamlui/js-utils/scss-to-css/ \
             ${{ github.workspace }}/adamlui/scss-to-css/
-
-      - name: Escape backticks in commit msg
-        env:
+      - env:
           COMMIT_MSG: ${{ github.event.head_commit.message }}
         run: |
           DELIM="EOF_$(uuidgen)"
           echo "ESCAPED_MSG<<$DELIM" >> "$GITHUB_ENV"
           echo "$COMMIT_MSG" | sed 's/`/\`/g' >> "$GITHUB_ENV"
           echo "$DELIM" >> "$GITHUB_ENV"
-
-      - name: Config committer
-        env:
+      - env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
           GPG_PRIVATE_ID: ${{ secrets.GPG_PRIVATE_ID }}
         run: |
@@ -77,17 +64,13 @@ jobs:
           git config --global user.name "kudo-sync-bot"
           git config --global user.email "auto-sync@kudoai.com"
           git config --global user.signingkey "$GPG_PRIVATE_ID"
-
-      - name: Push changes to adamlui/js-utils
-        if: env.SYNC_SRC
+      - if: env.SYNC_SRC
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           git add . && git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from $SYNC_SRC]" || true
           git pull --rebase 
           git push
-
-      - name: Push changes to adamlui/scss-to-css
-        run: |
+      - run: |
           cd ${{ github.workspace }}/adamlui/scss-to-css
           git add . && git commit -n -m \
             "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/scss-to-css]" || true

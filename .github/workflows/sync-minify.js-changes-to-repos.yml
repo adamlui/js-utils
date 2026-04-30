@@ -13,25 +13,18 @@ jobs:
       contents: read
     env:
       TZ: PST8PDT
-
     steps:
-
-      - name: Checkout adamlui/js-utils
-        uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.2
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
           path: adamlui/js-utils
           fetch-depth: 2
-
-      - name: Checkout adamlui/minify.js
-        uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.2
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
           repository: adamlui/minify.js
           path: adamlui/minify.js
-
-      - name: Sync README.md between minify.js/gulp/ & minify.js/gulp/docs
-        run: |
+      - run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           root_readme="./minify.js/gulp/README.md"
           root_readme_content=$(git show HEAD:"$root_readme")
@@ -49,9 +42,7 @@ jobs:
               echo "Copied $docs_readme to $root_readme"
             fi
           fi
-
-      - name: Sync README.md between minify.js/node.js/ & minify.js/node.js/docs
-        run: |
+      - run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           root_readme="./minify.js/node.js/README.md"
           root_readme_content=$(git show HEAD:"$root_readme")
@@ -69,24 +60,18 @@ jobs:
               echo "Copied $docs_readme to $root_readme"
             fi
           fi
-
-      - name: Sync minify.js/ to adamlui/minify.js/
-        run: |
+      - run: |
           rsync -avhc --delete --filter='P /.*' \
             ${{ github.workspace }}/adamlui/js-utils/minify.js/ \
             ${{ github.workspace }}/adamlui/minify.js/
-
-      - name: Escape backticks in commit msg
-        env:
+      - env:
           COMMIT_MSG: ${{ github.event.head_commit.message }}
         run: |
           DELIM="EOF_$(uuidgen)"
           echo "ESCAPED_MSG<<$DELIM" >> "$GITHUB_ENV"
           echo "$COMMIT_MSG" | sed 's/`/\`/g' >> "$GITHUB_ENV"
           echo "$DELIM" >> "$GITHUB_ENV"
-
-      - name: Config committer
-        env:
+      - env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
           GPG_PRIVATE_ID: ${{ secrets.GPG_PRIVATE_ID }}
         run: |
@@ -95,18 +80,14 @@ jobs:
           git config --global user.name "kudo-sync-bot"
           git config --global user.email "auto-sync@kudoai.com"
           git config --global user.signingkey "$GPG_PRIVATE_ID"
-
-      - name: Push changes to adamlui/js-utils
-        if: env.readme_updated
+      - if: env.readme_updated
         run: |
           cd ${{ github.workspace }}/adamlui/js-utils
           git add . && git commit -n -m \
             "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/minify.js]" || true
           git pull --rebase 
           git push
-
-      - name: Push changes to adamlui/minify.js
-        run: |
+      - run: |
           cd ${{ github.workspace }}/adamlui/minify.js
           git add . && git commit -n -m \
             "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/js-utils/tree/main/minify.js]" || true

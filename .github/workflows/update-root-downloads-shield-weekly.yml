@@ -12,21 +12,14 @@ jobs:
       contents: write
     env:
       TZ: PST8PDT
-
     steps:
-
-      - name: Checkout adamlui/js-utils
-        uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.2
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
-
-      - name: Set up Python
-        uses: actions/setup-python@v6.2.0
+      - uses: actions/setup-python@v6.2.0
         with:
           python-version: 3.x
-
-      - name: Update README shield
-        id: update_shield
+      - id: update_shield
         run: |
           output=$(python3 utils/update_root_downloads_shield.py)
           echo "$output"
@@ -35,9 +28,7 @@ jobs:
           else
             echo "SHIELD_UPDATED=false" >> $GITHUB_ENV
           fi
-
-      - name: Push changes
-        if: env.SHIELD_UPDATED == 'true'
+      - if: env.SHIELD_UPDATED == 'true'
         env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
           GPG_PRIVATE_ID: ${{ secrets.GPG_PRIVATE_ID }}
