@@ -9,6 +9,7 @@ NPM_PKGS = [
     '@adamlui/programming-languages',
     '@adamlui/scss-to-css',
     '@kudoai/ai-personas',
+    '@kudoai/chatgpt.js',
     'computer-languages',
     'data-languages',
     'generate-ip',

@@ -1,0 +1,94 @@
+{
+  "name": "@kudoai/chatgpt.js",
+  "version": "4.0.0",
+  "description": "Client-side JavaScript library for ChatGPT",
+  "author": {
+    "name": "KudoAI & contributors",
+    "email": "contact@kudoai.com",
+    "url": "https://www.kudoai.com"
+  },
+  "homepage": "https://chatgpt.js.org",
+  "license": "MIT",
+  "funding": [
+    {
+      "type": "github",
+      "url": "http://github.com/sponsors/KudoAI"
+    }
+  ],
+  "main": "dist/chatgpt.min.js",
+  "files": [
+    "src/chatgpt.js",
+    "dist/",
+    "docs/*.md"
+  ],
+  "bin": {
+    "chatgpt-js": "dist/cli/index.js",
+    "chatgpt": "dist/cli/index.js",
+    "cjs": "dist/cli/index.js"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "dev:docs": "node utils/preview-docs",
+    "lint": "eslint . --cache",
+    "lint:all": "eslint .",
+    "lint:fix": "eslint . --fix --cache",
+    "lint:fix-all": "eslint . --fix",
+    "translate": "translate-messages",
+    "build": "bash utils/build.sh",
+    "build:js": "npm run build",
+    "build:js-docs": "minify-js docs/assets/js/src docs/assets/js/min --no-mangle",
+    "build:docs-js": "npm run build:js-docs",
+    "build:css": "scss-to-css . dist",
+    "bump:patch": "bash utils/bump.sh patch",
+    "bump:minor": "bash utils/bump.sh minor",
+    "bump:major": "bash utils/bump.sh major",
+    "publish:patch": "bash utils/bump.sh patch --publish",
+    "publish:minor": "bash utils/bump.sh minor --publish",
+    "publish:major": "bash utils/bump.sh major --publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KudoAI/chatgpt.js.git"
+  },
+  "keywords": [
+    "ai",
+    "artificial intelligence",
+    "bot",
+    "chat",
+    "chatbot",
+    "chatgpt",
+    "clientside",
+    "conversational ai",
+    "frontend",
+    "gpt",
+    "gpt3",
+    "gpt4",
+    "javascript",
+    "library",
+    "machine learning",
+    "ml",
+    "nlp",
+    "openai"
+  ],
+  "bugs": "https://github.com/KudoAI/chatgpt.js/issues",
+  "dependencies": {
+    "console-table-printer": "^2.15.0",
+    "is-unicode-supported": "^2.1.0",
+    "non-latin-locales": "^1.0.1"
+  },
+  "devDependencies": {
+    "@adamlui/minify.js": "^2.5.3",
+    "@adamlui/scss-to-css": "^2.4.4",
+    "@eslint/css": "^1.1.0",
+    "@eslint/json": "^1.2.0",
+    "@eslint/markdown": "^8.0.1",
+    "@html-eslint/eslint-plugin": "^0.60.0",
+    "@html-eslint/parser": "^0.60.0",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint": "^9.39.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-regexp": "^3.1.0",
+    "get-port": "^7.2.0",
+    "husky": "^9.1.7"
+  }
+}

@@ -31,6 +31,7 @@
 
 <hr>
 
+🤖 [AI](#-ai) •
 📊 [Datasets](#-datasets-) •
 📑 [File Conversion](#-file-conversion-) •
 🌐 [Networking](#-networking-) •
@@ -41,6 +42,56 @@
 <img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png">
 
 
+## 🤖 AI <!-- CATEGORY -->
+
+
+<!-- AI-PERSONAS -->
+
+### <a href="https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme">ai-personas</a>
+
+<details>
+    <summary>💬 1,200+ AI personas for LLMs and agents.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme">
+            <img width=750 src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/screenshots/dataset-preview.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/adamlui/js-utils/tree/main/ai-personas/#-installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/js-utils/tree/main/ai-personas/#-usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/js-utils/discussions">
+        Discuss</a>
+</blockquote>
+
+<!-- CHATGPT.JS -->
+
+### <a href="https://github.com/adamlui/js-utils/tree/main/chatgpt.js/#readme">chatgpt.js</a>
+
+<details>
+    <summary>🤖 A powerful JavaScript library for ChatGPT.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/js-utils/tree/main/chatgpt.js/#readme">
+            <img width=750 src="https://cdn.jsdelivr.net/gh/KudoAI/chatgpt.js@82a928c/assets/images/screenshots/made-with-chatgpt.js.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/KudoAI/chatgpt.js/#-installation">
+        Install</a> /
+    <a href="https://github.com/KudoAI/chatgpt.js/#readme">
+        Readme</a> /
+    <a href="https://github.com/KudoAI/chatgpt.js/#-usage">
+        API usage</a> /
+    <a href="https://github.com/KudoAI/chatgpt.js/discussions">
+        Discuss</a>
+</blockquote>
+
+
 ## 📊 Datasets <!-- CATEGORY -->
 
 
@@ -49,7 +100,7 @@
 ### <a href="https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme">ai-personas</a>
 
 <details>
-    <summary>🤖 1,200+ AI personas for LLMs and agents.</summary>
+    <summary>💬 1,200+ AI personas for LLMs and agents.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme">
             <img width=750 src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/screenshots/dataset-preview.png"></a>

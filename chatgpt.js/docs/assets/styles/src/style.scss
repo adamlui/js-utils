@@ -1,0 +1,543 @@
+@charset 'UTF-8';
+
+@use "sass:list";
+@use "sass:string";
+
+/* FUNCTIONS */
+
+@function str-replace($haystack, $needle, $replace-txt) {
+    $index: string.index($haystack, $needle);
+    @if $index {
+        @return string.slice($haystack, 1, $index - 1) + $replace-txt
+              + str-replace(string.slice($haystack, $index + string.length($needle)), $needle, $replace-txt);
+    }
+    @return $haystack;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'Eurostile Extended Black';
+    src: local('Eurostile Extended Black'), local('EurostileExtendedBlack'),
+         url('../../fonts/eurostile-extended-black/EurostileExtendedBlack.otf') format('opentype'),
+         url('../../fonts/eurostile-extended-black/EurostileExtendedBlack.ttf') format('truetype'),
+         url('../../fonts/eurostile-extended-black/EurostileExtendedBlack.woff') format('woff'),
+         url('../../fonts/eurostile-extended-black/EurostileExtendedBlack.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Major Mono Display';
+    src: local('Major Mono Display'), local('MajorMonoDisplay-Regular'),
+         url('../../fonts/major-mono-display/MajorMonoDisplay-Regular.otf') format('opentype'),
+         url('../../fonts/major-mono-display/MajorMonoDisplay-Regular.ttf') format('truetype'),
+         url('../../fonts/major-mono-display/MajorMonoDisplay-Regular.woff') format('woff'),
+         url('../../fonts/major-mono-display/MajorMonoDisplay-Regular.woff2') format('woff2');
+}
+@font-face{
+    font-family: 'PolySans Neutral';
+    src: local('PolySans Neutral'), local('PolySansNeutral-Regular'),
+         url('../../fonts/polysans-neutral/PolySansNeutral.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/polysans-neutral/PolySansNeutral.woff') format('woff'),
+         url('../../fonts/polysans-neutral/PolySansNeutral.woff2') format('woff2'),
+         url('../../fonts/polysans-neutral/PolySansNeutral.ttf') format('truetype');
+    font-weight:normal; font-style:normal; font-display:swap;
+}
+$font-families: (
+    'IBM Plex Mono': (
+        ('IBMPlexMono-Thin', 100, normal),
+        ('IBMPlexMono-ThinItalic', 100, italic),
+        ('IBMPlexMono-ExtraLight', 200, normal),
+        ('IBMPlexMono-ExtraLightItalic', 200, italic),
+        ('IBMPlexMono-Light', 300, normal),
+        ('IBMPlexMono-LightItalic', 300, italic),
+        ('IBMPlexMono-Regular', 400, normal),
+        ('IBMPlexMono-Medium', 500, normal),
+        ('IBMPlexMono-MediumItalic', 500, italic),
+        ('IBMPlexMono-SemiBold', 600, normal),
+        ('IBMPlexMono-SemiBoldItalic', 600, italic),
+        ('IBMPlexMono-Bold', 700, normal),
+        ('IBMPlexMono-BoldItalic', 700, italic)
+    )
+);
+@mixin font-face($font-family, $full-name, $postscript-name, $font-weight, $font-style) {
+    $font-family-dashed: string.to-lower-case(str-replace($font-family, ' ', '-'));
+    @font-face {
+        font-family: $font-family;
+        src:
+            local('#{$full-name}'), local('#{$postscript-name}'),
+            url('../../fonts/#{$font-family-dashed}/otf/#{$postscript-name}.otf') format('opentype'),
+            url('../../fonts/#{$font-family-dashed}/ttf/#{$postscript-name}.ttf') format('truetype'),
+            url('../../fonts/#{$font-family-dashed}/woff/#{$postscript-name}.woff') format('woff'),
+            url('../../fonts/#{$font-family-dashed}/woff2/#{$postscript-name}.woff2') format('woff2');
+        font-weight: $font-weight; font-style: $font-style;
+    }
+}
+@each $font-family, $variations in $font-families {
+    @each $variation in $variations {
+
+        // Extract elements
+        $postscript-name: list.nth($variation, 1);
+        $font-weight: list.nth($variation, 2);
+        $font-style: list.nth($variation, 3);
+
+        // Generate full name (w/ style) for 1st `local()`
+        $full-name: '#{$font-family}';
+        $style: string.slice($postscript-name, string.index($postscript-name, '-') + 1);
+        @if $style != 'Regular' { // insert spaces
+
+            // Find indices of uppercase letters
+            $upper-indices: ();
+            @for $i from 2 through string.length($style) { // start at 2 since 1st char is irrelevant to spacing
+                $char: string.slice($style, $i, $i);
+                @if $char == string.to-upper-case($char) { $upper-indices: list.append($upper-indices, $i); }
+            }
+
+            // Insert spaces if needed
+            @if list.length($upper-indices) > 0 {
+                $offset: 0;
+                @each $index in $upper-indices {
+                    $index: $index + $offset; // since each iteration increases length +1
+                    $style: string.insert($style, ' ', $index); // insert the space
+                    $offset: $offset + 1;
+                }
+            }
+
+            $full-name: '#{$font-family} #{$style}';
+        }
+
+        @include font-face($font-family, $full-name, $postscript-name, $font-weight, $font-style);
+    }
+}
+
+/* VARIABLES */
+
+:root {
+  --fade-transition: 0.2s cubic-bezier(0.165,0.84,0.44,1),
+    transform 0.5s cubic-bezier(0.165,0.84,0.44,1) 0.15s }
+$green: lime; $blue: #64ffff; $kudo-depth: .225vw;
+$no-select: (
+    user-select: none, -webkit-user-select: none, -khtml-user-select: none, -moz-user-select: none,
+   -ms-user-select: none, -o-user-select: none, -webkit-touch-callout: none, -webkit-tap-highlight-color: transparent
+);
+
+/* GENERAL */
+
+.app-nav a.active { border-bottom: 2px solid $green}
+a { word-break: break-word }
+.top-gradient { /* for Star Wars effect (from `../../js/onload-hacks.js`) */
+    position: fixed ; top: 0 ; left: 0 ; width: 100% ; height: 20vh ;
+    background-image: linear-gradient(to top, transparent, #000) ;
+    pointer-events: none ; z-index: 1 }
+
+/* Scrollbar */
+* { scrollbar-color: rgb(210,210,210) #1a1a1a ; scrollbar-width: thin } /* Firefox */
+::-webkit-scrollbar { width: 10px ; height: 10px } /* Chromium/Safari */
+::-webkit-scrollbar-thumb { background: white ; border-radius: 4px ; border: 1px black solid }
+::-webkit-scrollbar-thumb:hover { background: rgb(210,210,210) }
+::-webkit-scrollbar-track { background: #1a1a1a }
+
+/* Fade animations */
+.menu-fadeup { opacity: 0 ; transform: translateY(5px) }
+.menu-fadeup.visible {
+    opacity: 1 ; transform: translateY(0) ;
+    transition: var(--fade-transition) ;
+       -webkit-transition: var(--fade-transition) ; -moz-transition: var(--fade-transition) ;
+       -o-transition: var(--fade-transition) ; -ms-transition: var(--fade-transition) }
+.content-fadeup { opacity: 0 ; transform: translateY(20px) }
+.content-fadeup.visible { opacity: 1 ; transform: translateY(0) ;
+    transition: var(--fade-transition) ;
+       -webkit-transition: var(--fade-transition) ; -moz-transition: var(--fade-transition) ;
+       -o-transition: var(--fade-transition) ; -ms-transition: var(--fade-transition) }
+.content-faderight { opacity: 0 ; transform: translateX(-20px) }
+.content-fadeleft { opacity: 0 ; transform: translateX(20px) }
+.content-faderight.visible, .content-fadeleft.visible {
+    opacity: 1 ; transform: translateX(0) ;
+    transition: var(--fade-transition) ;
+       -webkit-transition: var(--fade-transition) ; -moz-transition: var(--fade-transition) ;
+       -o-transition: var(--fade-transition) ; -ms-transition: var(--fade-transition) }
+
+/* KudoAI logo */
+#kudoai {
+    position: fixed ; top: 15px ; left: 35px ;
+    font-family: 'Major Mono Display' ; font-size: 2.25vw ; z-index: 500 ;
+    @each $property, $value in $no-select { #{$property}: #{$value}; }}
+#kudoai a { color: white ; text-decoration: none }
+.kudo { font-size: 135% ; text-shadow: $kudo-depth $kudo-depth white ; padding-right: 4px }
+#kudoai a:hover .kudo, .kudo.hover {  /* slide 'kudo' + shadow circularly on hover */
+    position: relative ; animation: circular-slide 1.8s linear infinite }
+@keyframes circular-slide {
+    0%, 100% { top: 0 ;  left: 0 ; text-shadow: $kudo-depth $kudo-depth }
+    25% { top: 0 ; left: $kudo-depth ; text-shadow: -$kudo-depth $kudo-depth }
+    50% { top: $kudo-depth ; left: $kudo-depth ; text-shadow: -$kudo-depth (-$kudo-depth) }
+    75% { top: $kudo-depth ; left: 0 ; text-shadow: $kudo-depth (-$kudo-depth) }}
+
+/* GitHub badge */
+.github-corner { z-index: 5 } /* to cover .top-gradient */
+.github-corner svg { fill: white ; color: black ; height: 115px ; width: 115px }
+
+/* Starry background (from `../../js/src/starry-background.js`) */
+canvas { position: fixed ; width: 100% ; height: 100% ; pointer-events: none }
+
+/* COVER */
+
+.cover-main > img { margin: 25px 0 7px ; width: 98% ; max-width: 1589px } /* cover logo */
+.cover-main { color: white } /* all cover txt color */
+section.cover p { /* cover tagline size / weight / position */
+    font-family: 'Major Mono Display', 'IBM Plex Mono', 'Roboto Mono', Monaco, courier, monospace !important ;
+    font-size: 1.75rem !important ; font-weight: bold ; margin-bottom: 48px ; line-height: 2.3rem !important }
+
+/* Buttons */
+.cover-main > p:last-child a { /* all buttons */
+    font-family: 'IBM Plex Mono', 'Roboto Mono', Monaco, courier, monospace !important ;
+    text-transform: uppercase ; font-size: 1.35rem !important ; color: white !important ;
+    border-width: 3px !important ; border-radius: 0 !important ; border-color: white !important ;
+    padding: 16px 68px !important ; transition: 0.04s !important ;
+    @each $property, $value in $no-select { #{$property}: #{$value}; }}
+.cover-main > p:last-child a:hover { /* 1st button hover */
+    background: blue ; color: white !important ; opacity: 1 !important }
+.cover-main > p:last-child a:last-child { /* 2nd button */
+    padding: 16px 60px !important ; border-color: white !important ; font-weight: bold ;
+    background: white !important ; color: black !important }
+.cover-main > p:last-child a:last-child:hover { /* 2nd button hover */
+    background: blue !important ; border-color: blue !important ; color: white !important }
+
+/* NAV */
+
+.app-nav { right: 35px ; top: 15px }
+.app-nav a { color: white !important ; font-size: 1.5rem }
+
+/* LANGUAGE SELECTOR */
+
+#language-selector { position: relative ; top: -25px ; right: 32px }
+#language-selector svg {
+    position: relative ; top: 9px ; right: 9px ; cursor: pointer }
+#language-selector a { font-size: 30px }
+#language-selector li { width: 88% ; /* to center acive stripe + hover overlay */
+    margin-right: unset } /* to cancel .app-nav li { margin: 0 1rem } creates h-bar */
+#language-menu {
+    display: none ; position: absolute ; top: 127% ; right: -49px ;
+    width: 256px ; height: 87vh ; overflow: scroll ; font-size: 28px !important; text-align: left ;
+    background: rgba(0,0,0,0.75) ; border: 3px solid #cccccc ; border-radius: 4px ;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2) ; padding: 5px 0 ; z-index: 1 }
+.dropdown--hoverable:hover #language-menu { display: block }
+.dropdown-link {
+    display: block ; padding: 5px 15px ; color: #333333 ;
+    text-decoration: none ; transition: none !important }
+#language-selector li:hover { background: $green }
+.dropdown-link:hover { color: black !important}
+#dropdown-button { position: relative ; padding-right: 20px }
+#dropdown-button:after {
+    content: '▼' ; position: absolute ; right: -18px ; top: 0.159rem ;
+    transform: scale(0.7) }
+
+/* SIDEBAR */
+
+.sidebar-toggle { bottom: 36px ; left: 29px ; background: transparent ;
+   @each $property, $value in $no-select { #{$property}: #{$value}; }}
+.sidebar-toggle:hover .sidebar-toggle-button { opacity: 1 }
+.sidebar-toggle span { /* color/size/space toggle bars */
+    background: white ; width: 20px ; height: 3px ; margin-bottom: 5px }
+.sidebar { background: transparent ; padding-right: 5px !important }
+.app-name { display: none }
+.sidebar-nav { padding-top: 20px }
+.sidebar-nav > ul:first-of-type { margin-top: 5vh } /* add gap between logo and links */
+.sidebar a { font-size: 2.1rem !important ; line-height: 3.8rem ; color: white !important }
+.sidebar li.active > a { border-right: 0 !important } /* move line indicator from active links... */
+.sidebar li.nav-active { border-right: 4px solid $green ;  /* ...to active li's */
+    padding-right: 15px } /* ...so padding can be applied */
+.sidebar ul > ul { margin: 0 0 12px 26px } /* indent subheadings */
+.sidebar ul > li:first-child { margin-top: 8px } /* lower subheadings */
+.sidebar ul > ul a { font-size: 2rem !important ; line-height: 3.1rem } /* shrink subheadings */
+.sidebar li img { display: none } /* hide sub icons */
+.search { background: white ; font-size: 1.3rem }
+.matching-post { transform: scale(.7) ; margin: -31px }
+.app-name-link img { padding: 0 2px }
+.sidebar-nav > ul > li:first-of-type, /* hide description */
+.sidebar-nav > ul > ul > ul:nth-of-type(2), /* hide showcase apps */
+.sidebar-nav > ul > ul:first-of-type + li { display: none } /* hide mystery <li> before contributors */
+
+/* MAIN */
+
+body { background: black ; color: white ; cursor: url('../../cursors/futuristic/pointer.cur'), auto ;
+    font-family: 'PolySans Neutral', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif }
+strong, .anchor span { color: white !important } /* whiten all strongs & headings */
+main a { color: $blue !important }
+#repo-cover { display: none } /* hide repo cover */
+main h2 { /* headings */
+    text-align: center ; margin: 8.4rem 0 5rem !important ; font-size: 6rem !important ;
+    font-family: 'Eurostile Extended Black', Georgia, Cambria, Times New Roman, Times, serif ;
+    text-transform: uppercase }
+main h2 span { word-break: break-word }
+main h2 a { pointer-events: none }
+.anchor:hover { text-decoration: none }
+main h3 { font-size: 3.6rem !important ; margin: 4.75rem 0 2rem !important }
+main p { font-size: 1.78rem !important ; line-height: 2.65rem !important}
+main blockquote { border-left: 4px solid $green !important }
+main blockquote strong { color: yellow !important } /* tips' title */
+main blockquote em { color: #87a99d !important } /* tips' italics */
+main blockquote p { /* tips content */
+    border-left: none ; width: 38vw ; font-size: 1.5rem !important ; line-height: 2.1rem !important ;
+    text-align: left ; float: right ; position: relative ; left: 29px }
+main blockquote:first-of-type p { margin-top: 55px !important } /* Greasemonkey tip */
+main blockquote:nth-of-type(2) p { margin-top: 25px !important } /* Chrome tip */
+img[src*='separator'] { display: none } /* hide section separators */
+main h2 + p { /* blurbs after headings w/o tips */
+    font-size: 2.75rem !important ; text-align: center ; margin-top: -85px !important }
+main li::marker { font-size: 1.4rem }
+
+/* Code */
+main pre { width: 100% ; /* to avoid shrinking from adjacent left/right floats */
+    margin: 65px 0 !important }
+main code { line-height: 2.1rem !important }
+main pre, main code, .punctuation {
+    font-family: 'Roboto Mono', Monaco, courier, monospace !important ; position: relative ;
+    font-size: 1.35rem !important ; color: white !important ; background: rgba(0,0,0,0.35) !important ;
+    margin-bottom: 1px } /* fix bottom border disappears glitch */
+.punctuation { background: rgba(0,0,0,0) !important; } /* clear bg for scanlines */
+main pre code::before { /* add scanlines */
+    content: '' ; display: block ; 
+    position: absolute ; top: 0 ; left: 0 ; right: 0 ; bottom: 0 ;
+    background: linear-gradient(to bottom, rgba(0,128,128,0) 50%, rgba(0,255,255,0.2) 50%) ;
+    background-size: 100% 5px }
+main pre code { border: $blue 2px solid ; border-radius: 12px !important ; padding: 26px !important }
+main p code {
+    font-size: 1.3rem !important ; position: relative ; bottom: 2px ;
+    padding: 2px 12px 5px !important ; margin: 0 5px !important ; word-break: break-word ;
+    border: white 1px solid ; border-radius: 8px !important }
+main pre:after { display: none } /* hide lang indicator */
+.docsify-copy-code-button {    
+    font-size: 1.1rem !important ; background: rgba(0,0,0,0) !important ; color: white !important ;
+    padding: 13px 18px 13px 15px !important ; right: 30px !important ; top: 2px !important }
+.success, .error { font-size: 1.1rem !important }
+main li pre { margin: 65px 0 !important }
+.token.string { color: $green }
+.token.comment { color: #b6e3d4 }
+.token.function, .token.keyword, .token.boolean, .token.number { color: #ffcb00 }
+
+/* Shields */
+#shields { margin: 125px 0 305px }
+#shields img { height: 48px ; margin: 4px -2px }
+
+/* About section */
+#intro + p { /* ABOUT description */
+    margin-top: -282px !important ; font-size: 3.3rem !important ; color: #bbb ;
+    line-height: 4.3rem !important ; text-align: right ; width: 59% }
+#intro ~ ul:first-of-type { display: none } /* hide readme feature list */
+#intro h2 span { display: none !important } /* hide ABOUT heading */
+#feature-list { /* generated in `../../js/src/online-modifier.js` */
+    font-family: 'IBM Plex Mono', 'Roboto Mono', Monaco, courier, monospace !important ;
+    font-size: 1.4rem ; color: $green ; position: relative ; float: right ;
+    height: 100px ; top: -311px ; right: -90px ; width: 41% ; margin-bottom: 200px }
+
+/* Headings */
+h2 { padding-top: 211px } /* add gaps for prettier parallax */
+
+/* Golden Sponsors */
+#golden-sponsors { display: flex ; flex-direction: column ; margin: 360px 0 -155px }
+#golden-sponsors > h3 { font-size: 35px !important ; color: white ; width: 80vw }
+#golden-sponsors > #creatives {
+    display: flex ; flex-direction: row ; align-items: center ; width: 80vw ; margin-bottom: 430px }
+#golden-sponsors img { width: 85% }
+#golden-sponsors > #creatives > div { padding: 81px 115px } /* pad sponsors */
+#warp > h3 { font-size: 31px !important } /* tagline */
+#warp > i > a { font-size: 19px } /* platform availability */
+
+/* Greasemonkey/Chrome sections */
+#-greasemonkey, #-chrome { text-align: center ; margin-bottom: 55px !important }
+main blockquote + p { font-size: 1.85rem !important ; width: 50% ; text-align: right }
+main pre + p, main pre + p + p { text-align: center ; padding: 0 10vw }
+main ol { margin-top: 95px ; padding: 0 9vw 0 12vw !important }
+
+/* Usage section */
+#usage ~ pre + p { /* 1st p after pre */
+    text-align: left !important ; margin: 65px 0 0 !important }
+#usage ~ pre + p + p { /* 2nd p after pre */
+    text-align: right !important ; float: right !important ; margin-bottom: 152px }
+
+/* Demo vid */
+iframe { min-width: fit-content ; width: 100% ; max-width: 855px ; aspect-ratio: 16/7 }
+
+/* Showcase */
+#showcase ~ h3:nth-of-type(even):not(#contributors ~ *),
+#showcase ~ h3 + p:nth-of-type(even):not(#contributors ~ *) { text-align: right }
+#showcase ~ h3 + p + p:not(#contributors ~ *), /* 1st showcase tile */
+#showcase ~ h3 + p + p ~ p:not(#contributors ~ *) { /* 2nd+ showcase tiles + CTA */
+    text-align: center !important }
+#showcase-cta {
+    font-size: 2.5rem !important ; line-height: 3.5rem !important ;
+    padding: 0 10vw ; margin-top: -29px }
+main h3 img { /* app icons */
+    height: 39px !important ; width: auto !important ; margin: 0 19px -2px 0 }
+main h3 a { /* app titles */
+    text-decoration: none ; color: white !important }
+main h3 a:hover { text-decoration: underline #42b983 }
+img[src*="/tiles/"] { width: 74vw ; border: 1px solid white ; margin: 32px 0 }
+a[href*='mailto:showcase'] { word-break: keep-all }
+
+/* Contributors */
+#contributors, #contributors ~ p { text-align: center !important } /* center contributors section */
+#contributors + p { /* contributors description */
+    font-family: 'IBM Plex Mono', 'Roboto Mono', Monaco, courier, monospace !important ;
+    font-size: 1.7rem !important ; padding: 0 12vw }
+#contributors + p + div { padding: 0 7vw 43px } /* pad container of avatars */
+#contributors + p + div img { /* avatars */
+    border-radius: 50% ; /* add circular mask */
+    width: 4.2vw } /* resize */
+#contributors ~ br { display: none } /* hide trailing line break */
+
+/* Footer */
+#footer { text-align: center ; margin: -119px 0 -105px } /* general position */
+img[src*="logos/partners"] { margin: 21px -27px } /* reduce x-spacing */
+img[src*="logos/partners/cloudflare"] { width: 9vw }
+img[src*="logos/partners/iproyal"] { width: 9vw }
+img[src*="logos/partners/microsoft"] { width: 11vw }
+img[src*="logos/partners/warp"] { width: 8vw }
+#mc_embed_signup h2 { /* 1st CTA */
+    margin: 15px 0 3.5rem !important ;
+    font-size: 2.68rem !important ; color: white ; -webkit-text-stroke: 1px black }
+.mc-field-group { margin: -4px 0 195px } /* input row div v-margins */
+.mc-field-group input { height: 55px } /* input row height */
+input#mce-EMAIL { /* email field */
+    border-radius: 0 ; width: 32% ; min-width: 250px ;
+    margin-bottom: 18px ; border: 1px solid #ccc ; outline: none }
+input#mce-EMAIL, input#mce-EMAIL::placeholder { font-size: 1.55rem ; text-indent: 15px }
+#mc-embedded-subscribe { /* sub button */
+    font-size: 1.45rem ; color: white ; background: black ; cursor: pointer ;
+    width: 200px ; margin-left: -6px ; border-radius: 0 ; border: 1px ;
+    border: white solid ; position: relative ; bottom: 1px } /* correct for font-size shifting */
+#copyright-footer {
+    font-family: 'IBM Plex Mono', 'Roboto Mono', Monaco, courier, monospace !important ;
+    text-align: center ; margin: 69px 0 25px ; font-size: 1.15rem ; line-height: 29px }
+#copyright-footer span { /* copyright notice */
+    position: relative ; bottom: 2px }
+#copyright-footer a { color: white !important ; font-weight: 400 ; text-decoration-line: underline }
+
+/* MOBILE tweaks */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    #intro ~ p:first-of-type { line-height: 3.6rem !important }
+    main h2 { font-size: 5rem !important }
+    main h3 { font-size: 3.55rem !important }
+    main p, main blockquote + p, main blockquote + p + p {
+        font-size: 1.85rem !important ; line-height: 2.7rem !important }
+    main p code {
+        font-size: 1.5rem !important ; padding: 2px 9px !important ; border-radius: 8px !important }
+}
+
+@media screen and (max-width: 767px) {
+    article { padding: 0 }
+    .markdown-section { max-width: 96% }
+    .github-corner svg { height: 88px ; width: 88px }
+
+    #kudoai { transform: scale(1.7); margin-top: 5.2px; }
+
+    /* LANGUAGE SELECTOR */
+    #language-selector { transform: scale(0.7) ; right: 0 !important }
+    #language-selector a { font-size: 26px }
+    #language-selector svg { width: 28px ; height: 28px }
+
+    /* COVER */
+
+    .cover-main { padding-top: 21px } /* make room for lang selector + GitHub badge */
+    section.cover, .cover-main { margin: 0 !important }
+    .cover-main > img { width: 100% ; margin-bottom: 0 } /* cover logo */
+    section.cover p { /* cover description */
+        font-size: 6.3vw !important ; line-height: 4.3vh !important }
+    .cover-main > p:last-child a, .cover-main > p:last-child a:last-child { /* buttons */
+        padding: 12px 43px !important }
+    blockquote { margin: 0 !important; }
+
+    /* BUTTONS */
+
+    .sidebar-toggle { bottom: 33px ; left: 5px ; background: transparent !important }
+    .back-to-top { bottom: 39px ; right: 10px }
+
+    /* SHIELDS */
+
+    #shields { display: none }
+
+    /* ABOUT */
+
+    #intro ~ p:first-of-type { /* ABOUT description */
+        font-size: 2.8rem !important ; line-height: 3.1rem !important ;
+        margin: -236px 0 490px !important }
+    #feature-list { /* generated in `../../js/src/onload-modifier.js` */
+        font-size: 1.7rem! important ; margin-bottom: -136px !important ;
+        position: relative ; width: inherit ; left: 16px ; top: -244px ; float: none }
+    
+    /* BODY */
+
+    $mobile-p-size: 1.85rem;
+    main li::marker { font-size: 1.84rem !important } /* unzoom list markers */
+
+    /* Headings */
+    main h2 { font-size: 3rem !important ; padding: 0 12px 0 16px !important }
+    main h3 { font-size: 2.5rem !important }
+    main h3 img { height: 32px !important } /* platform icons */
+
+    /* Text */
+    main p {
+        font-size: $mobile-p-size !important ; width: inherit !important ;
+        text-align: center !important ; line-height: 2.5rem !important ;
+        word-wrap: break-word }
+    main blockquote { /* platform tips parent */
+        margin: 0 18px !important }
+    main blockquote p { /* platform tips */
+        float: none ; left: 0 }
+    main blockquote + p, main pre + p { /* code-block neighbor p's */
+        font-size: 1.65rem !important ; margin: 0 17px !important }
+    main pre + p, main pre + p + p { padding: 0 !important } /* remove padding from 2x p's following code blocks */
+    main ol { width: inherit ; margin: 0 32px ; padding: 0 0 0 15px !important } /* platform steps parent */
+    main ol p { text-align: left !important ; word-break: break-word } /* platform steps */
+
+    /* Code */
+    main code, .token { font-size: 1.2rem !important } /* shrink font */
+    main pre { padding: 0 0.11rem !important } /* widen blocks */
+    main li pre { /* widen/center li blocks */
+        padding: 0 !important } 
+    main p code { /* zoom/pad p code */
+        font-size: 1.45rem !important ; padding: 2px 8px !important }
+    .docsify-copy-code-button { display: none }
+
+    /* Usage section */
+    #usage ~ pre + p, #usage ~ pre + p + p { /* re-size/center text */
+        font-size: $mobile-p-size !important ; text-align: center !important ;
+        margin: 63px 0 !important ; float: none !important }
+
+    /* Showcase */
+    #showcase ~ h3, #showcase ~ p { text-align: center !important } /* center titles */
+
+    /* Contributors */
+    #contributors + p { /* shrink contributors description font, remove padding */
+        font-size: 1.5rem !important ; padding: 0 5px !important }
+    #contributors + p + div { /* avatars container */
+        padding: 0 !important ; /* remove side-padding */
+        margin-bottom: 197px } /* shove footer away */
+    #contributors + p + div img { width: 69px !important } /* resize contributor avatars */
+
+    /* Footer */
+    #mc_embed_signup h2 { /* CTA */
+        font-size: 2.55rem !important ; /* shrink font */
+        left: -21px !important } /* nudge right to re-center */
+    input#mce-EMAIL, input#mce-EMAIL::placeholder { /* email input txt/placeholder */
+        text-indent: 0 !important ; text-align: center } /* center them */
+}
+
+/* Phone */
+@media screen and (max-width: 480px) {
+
+    /* Golden Sponsors */
+    #golden-sponsors > h3 { font-size: 25px !important } /* reduce heading size */
+    #golden-sponsors > #creatives > div { padding-left: 0 ; padding-right: 0 } /* remove x-pad from sponsors */
+    #golden-sponsors > #creatives { margin-bottom: 300px } /* reduce bottom margin */
+
+    /* Footer */
+    #contributors + p + div { /* avatars container */
+        margin-bottom: 85px } /* reduce mobile shove footer away */
+    #footer { margin-top: 121px } /* reduce desktop top-margin */
+    p:has(+ a > img[src*=partners]) { margin-bottom: 33px } /* add gap after partners heading */
+    img[src*="logos/partners"] { margin-left: 15vw }
+    img[src*="logos/partners/cloudflare"] { width: 55vw }
+    img[src*="logos/partners/iproyal"] { width: 55vw }
+    img[src*="logos/partners/microsoft"] { width: 59vw ; margin: 15px 0 }
+    img[src*="logos/partners/warp"] { width: 47vw }
+}

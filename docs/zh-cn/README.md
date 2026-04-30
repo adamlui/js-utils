@@ -35,11 +35,34 @@
 
 ### <a href="https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme">ai-personas</a>
 
-> 🤖 1,200+ 专为大型语言模型（LLM）与智能体设计的 AI 人设。
+> 💬 1,200+ 专为大型语言模型（LLM）与智能体设计的 AI 人设。
 <br>[安装](https://github.com/adamlui/js-utils/tree/main/ai-personas/#-installation) /
 [自述文件](https://github.com/adamlui/js-utils/tree/main/ai-personas/#readme) /
 [API 使用情况](https://github.com/adamlui/js-utils/tree/main/ai-personas/#-usage) /
 [讨论](https://github.com/adamlui/js-utils/discussions)
+
+<!-- CHATGPT.JS -->
+
+### <a href="https://github.com/adamlui/js-utils/tree/main/chatgpt.js/#readme">chatgpt.js</a>
+
+<details>
+    <summary>🤖 A powerful JavaScript library for ChatGPT.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/js-utils/tree/main/chatgpt.js/#readme">
+            <img width=750 src="https://cdn.jsdelivr.net/gh/KudoAI/chatgpt.js@82a928c/assets/images/screenshots/made-with-chatgpt.js.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/KudoAI/chatgpt.js/tree/main/docs/zh-cn/#-%E5%AE%89%E8%A3%85">
+        安装</a> /
+    <a href="https://github.com/KudoAI/chatgpt.js/tree/main/docs/zh-cn/#readme">
+        自述文件</a> /
+    <a href="https://github.com/KudoAI/chatgpt.js/tree/main/docs/zh-cn/#-%E7%94%A8%E6%B3%95">
+        API 使用情况</a> /
+    <a href="https://github.com/KudoAI/chatgpt.js/discussions">
+        讨论</a>
+</blockquote>
 
 <!-- COMPUTER-LANGUAGES -->
 

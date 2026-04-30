@@ -29,6 +29,7 @@ jobs:
             "@adamlui/programming-languages"
             "@adamlui/scss-to-css"
             "@kudoai/ai-personas"
+            "@kudoai/chatgpt.js"
             "computer-languages"
             "data-languages"
             "generate-ip"
@@ -44,6 +45,7 @@ jobs:
             "@adamlui/geolocate"
             "@adamlui/programming-languages"
             "@kudoai/ai-personas"
+            "@kudoai/chatgpt.js"
             "computer-languages"
             "data-languages"
             "generate-ip"
@@ -59,6 +61,7 @@ jobs:
             "adamlui/minify.js"
             "adamlui/scss-to-css"
             "KudoAI/ai-personas"
+            "KudoAI/chatgpt.js"
           )
 
           expand_num() { # abbreviated w/ 'k' or 'm' suffix to integers

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TM38HFHEYK"></script>
+        <script type="text/javascript">window.location.href = 'https://github.com/KudoAI/chatgpt.js/#readme'</script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date()); gtag('config', 'G-TM38HFHEYK');
+        </script>
+        <meta charset="UTF-8">
+        <title>chatgpt.js — A powerful client-side JavaScript library for ChatGPT</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="A powerful client-side JavaScript library for ChatGPT">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="chatgpt.js — A powerful JavaScript library for ChatGPT">
+        <meta property="og:description"
+              content="200k+ monthly jsDelivr hits • 1.5k+ stars on GitHub • Free & open source!">
+        <meta property="og:type" content="website">
+        <meta property="og:image"
+              content="https://assets.chatgptjs.org/images/screenshots/landing-cover-stars.png?v=main">
+        <meta property="og:url" content="https://chatgpt.js.org">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@adamllui">
+        <meta name="twitter:creator" content="@adamllui">
+        <meta name="twitter:title" content="chatgpt.js — A powerful JavaScript library for ChatGPT">
+        <meta name="twitter:description"
+              content="200k+ monthly jsDelivr hits • 1.5k+ stars on GitHub • Free & open source!">
+        <meta name="twitter:image"
+              content="https://assets.chatgptjs.org/images/screenshots/landing-cover-stars.png?v=main">
+        <meta name="google-site-verification" content="utVAmxdNQemcHisuTaJfTGqmBxksvGrtlAWvKEpStDU">
+        <link rel="preload" as="image"
+              href="https://cdn.jsdelivr.net/gh/KudoAI/chatgpt.js@058fdea/assets/images/logos/chatgpt.js/with-reflection/darkmode/logo-1504x334.png"
+              integrity="sha384-ykOyBykwtgkpQ5QY092qoogHHxoz+QcLjme8myYRm2EeqIS29i0AyL+1q8okGWXN">
+        <link rel="icon" type="image/x-icon" href="assets/favicons/favicon48.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+              integrity="sha384-jCK82M2ExfkqAO/MYBKMjP1qC4AvZ4/Duf2gVWOy3RPn26uz+KW5I+9S39za1Fqv">
+        <link rel="stylesheet" href="assets/styles/dist/style.min.css">
+    </head>
+    <body>
+        <div id="kudoai"> <!-- corner logo -->
+            <a href="https://kudoai.com" target="_blank" rel="noopener"><span class="kudo">kudo</span>Ai</a>
+        </div>
+        <canvas></canvas> <!-- for `assets/js/src/starry-background.js` -->
+        <nav>
+            <div id="language-selector">
+                <svg style="margin-bottom: 3px" xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 0 512 512">
+                    <path fill="white" d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5v39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9v39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7v-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1H257c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+                </svg>
+                <a href="#" aria-haspopup="true" aria-expanded="false" role="button" id="dropdown-button"></a>
+                <ul id="language-menu">
+                    <li><a href="#/" target="_self" class="dropdown-link">English</a></li>
+                    <li><a href="#/zh-cn/" target="_self" class="dropdown-link">简体中文</a></li>
+                    <li><a href="#/zh-tw/" target="_self" class="dropdown-link">繁體中文</a></li>
+                    <li><a href="#/ja/" target="_self" class="dropdown-link">日本</a></li>
+                    <li><a href="#/ko/" target="_self" class="dropdown-link">한국인</a></li>
+                    <li><a href="#/hi/" target="_self" class="dropdown-link">हिंदी</a></li>
+                    <li><a href="#/ne/" target="_self" class="dropdown-link">नेपाली</a></li>
+                    <li><a href="#/de/" target="_self" class="dropdown-link">Deutsch</a></li>
+                    <li><a href="#/es/" target="_self" class="dropdown-link">Español</a></li>
+                    <li><a href="#/fr/" target="_self" class="dropdown-link">Français</a></li>
+                    <li><a href="#/it/" target="_self" class="dropdown-link">Italiano</a></li>
+                    <li><a href="#/nl/" target="_self" class="dropdown-link">Nederlands</a></li>
+                    <li><a href="#/pt/" target="_self" class="dropdown-link">Português</a></li>
+                    <li><a href="#/ru/" target="_self" class="dropdown-link">Английский</a></li>
+                    <li><a href="#/vi/" target="_self" class="dropdown-link">Việt</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="app"></div>
+        <script>
+            window.$docsify = {
+                name: 'chatgpt.js', repo: 'KudoAI/chatgpt.js',
+                coverpage: ['/', '/zh-cn/', '/zh-tw/', '/ja/', '/ko/', '/hi/', '/ne/', '/de/',
+                    '/es/', '/fr/', '/it/', '/nl/', '/pt/', '/ru/', '/vi/'],
+                maxLevel: 3,
+                search: {
+                    paths: 'auto',
+                    placeholder: { 
+                        '/zh-cn/': '搜索', '/zh-tw/': '搜索', '/ja/': '찾다', '/ko/': '検索', '/hi/': 'खोज', '/ne/' : 'खोज', 
+                        '/de/': 'Suchen', '/es/': 'Buscar', '/fr/': 'Recherche', '/it/': 'Ricerca', '/nl/': 'Zoekopdracht',
+                        '/pt/': 'Procurar', '/ru/': 'Поиск', '/vi/': 'Tìm kiếm', '/': 'Search' },
+                    noData: { 
+                        '/zh-cn/': '没有结果!', '/zh-tw/': '沒有結果!', '/ja/': '結果がありません!', '/ko/': '결과가 없습니다!',
+                        '/hi/': 'कोई परिणाम नहीं!', '/ne/' : 'कुनै परिणाम छैन!', '/de/': 'Keine Ergebnisse!',
+                        '/es/': '¡No hay resultados!', '/fr/': 'Aucun résultat!', '/it/': 'Nessun risultato!',
+                        '/nl/': 'Geen resultaten!', '/pt/': 'Sem resultados!', '/ru/': 'Результатов нет!',
+                        '/vi/': 'Ko có kết quả!', '/': 'No results!' },
+                    pathNamespaces: /^(\/(zh-cn|zh-tw|ja|ko|hi|ne|de|es|fr|it|nl|pt|ru|vi))?/
+                }
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js" integrity="sha384-KaHhgnx/OTLoJ4J33SSJsF4x1pk4I7q3s5ZOfIDHJYl6IG7Oyn2vNDsHiWJe46fD" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js" integrity="sha384-LthJPBJ4RGco78kBY+EmKz5rmISZ5vrtAu3+l2ALQ2mrZHOe6Wyf6knyKjeC4cL6" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js" integrity="sha384-dATla6z98CccJpUA4MaUwhapbWiF1imvUV6z2RLOUJwB3thwGVdsmnAOKDxiYEV0" crossorigin="anonymous"></script>
+        <script src="assets/js/min/starry-background.min.js"></script>
+        <script src="assets/js/min/onload-hacks.min.js"></script>
+        <script src="assets/js/min/copy-code-button.min.js"></script>
+    </body>
+</html>
