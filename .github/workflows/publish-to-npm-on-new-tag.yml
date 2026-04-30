@@ -8,6 +8,7 @@ jobs:
   publish:
     if: ${{
            !contains(github.event.release.tag_name, 'ai-personas')
+        && !contains(github.event.release.tag_name, 'chatgpt.js')
         && !contains(github.event.release.tag_name, 'minify')
         && !contains(github.event.release.tag_name, 'scss-to-css')
       }}
