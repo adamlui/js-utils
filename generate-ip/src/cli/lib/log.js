@@ -53,6 +53,8 @@ module.exports = {
 
     help(includeSections = ['header', 'usage', 'params', 'flags', 'cmds']) {
         cli.prefix = `${this.colors.tlBG}${this.colors.blk}\x1b[30m ${cli.name} ${this.colors.nc} `
+        console.log(cli)
+        process.exit()
         const helpSections = {
             header: [
                 `\n├ ${cli.prefix}${cli.msgs.pkg_copyright}.`,
