@@ -29,7 +29,7 @@ echo -e "${BY}Bumping versions in package manifests...${BW}"
 npm version --no-git-tag-version "$new_ver"
 
 echo -e "${BY}\nBumping versions in READMEs...${BW}"
-pkg_name=$(node -pe "require('./package.json').name" | sed -e 's/^@[a-zA-Z0-9-]*\///' -e 's/^@//')
+pkg_name=$(basename "$(node -pe "require('./package.json').name")")
 sed_actions=(
     # Latest Build shield link
     -exec sed -i -E "s|(tag/[^0-9]+)[0-9]+\.[0-9]+\.[0-9]+|\1$new_ver|g" {} +
