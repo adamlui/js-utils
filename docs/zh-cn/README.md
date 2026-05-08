@@ -17,7 +17,7 @@
 # [<img height=25 width="auto" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/10906554?h=100&w=100&mask=circle&maxage=7d">](https://github.com/adamlui) adamlui / js-utils
 
 <a href="#">
-    <img height=31 src="https://img.shields.io/badge/%E4%B8%8B%E8%BD%BD-90,000+-af68ff.svg?logo=npm&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+    <img height=31 src="https://img.shields.io/badge/%E4%B8%8B%E8%BD%BD-100,000+-af68ff.svg?logo=npm&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/%E6%89%A7%E7%85%A7-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/js-utils">
