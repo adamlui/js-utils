@@ -39,5 +39,5 @@ jobs:
           git config --global user.email "auto-sync@kudoai.com"
           git config --global user.signingkey "$GPG_PRIVATE_ID"
           git add docs/README.md
-          git commit -n -m "Updated downloads shield counter in root README"
+          git commit -a -n -m "Updated downloads shield counter in root README"
           git push
