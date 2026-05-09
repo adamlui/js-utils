@@ -11,7 +11,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - id: ksb-token
+      - id: krb-token
         uses: actions/create-github-app-token@v3.1.1
         with:
           client-id: ${{ secrets.KRB_APP_ID }}
@@ -63,7 +63,7 @@ jobs:
               printf '{"tag_name": "%s","name": "%s","body": "%s"}' \
                 "$TARGET_RELEASE_TAG" "$TARGET_RELEASE_TITLE" "$RELEASE_NOTES")
             create_release_resp=$(
-              curl -s -S -X POST -H "Authorization: Bearer ${{ steps.ksb-token.outputs.token }}" \
+              curl -s -S -X POST -H "Authorization: Bearer ${{ steps.krb-token.outputs.token }}" \
                    -H "Content-Type: application/json" -d "$create_release_payload" "$create_release_url")
             if echo "$create_release_resp" | grep -q '"message"' ; then
               echo "ERROR: Failed to create release: $create_release_resp"
@@ -77,13 +77,13 @@ jobs:
               printf '{"name": "%s","body": "%s"}' \
                 "$TARGET_RELEASE_TITLE" "$RELEASE_NOTES")
             patch_release_resp=$(
-              curl -s -S -X PATCH -H "Authorization: Bearer ${{ steps.ksb-token.outputs.token }}" \
+              curl -s -S -X PATCH -H "Authorization: Bearer ${{ steps.krb-token.outputs.token }}" \
                    -H "Content-Type: application/json" -d "$update_release_payload" "$update_release_url")
             if echo "$patch_release_resp" | grep -q '"message"' ; then
               echo "ERROR: Failed to update release: $patch_release_resp"
               exit 1
             fi
-            get_release_resp=$(curl -s -S -H "Authorization: Bearer ${{ steps.ksb-token.outputs.token }}" \
+            get_release_resp=$(curl -s -S -H "Authorization: Bearer ${{ steps.krb-token.outputs.token }}" \
               "https://api.github.com/repos/$TARGET_REPO/releases/tags/$TARGET_RELEASE_TAG")
             upload_url=$(echo "$get_release_resp" | sed -nE 's|.*"upload_url": "(.*)".*|\1|p' | sed 's|{.*}||')
           fi
