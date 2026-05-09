@@ -35,8 +35,8 @@ jobs:
           RELEASE_NOTES=$(echo "$RELEASE_NOTES" | \
             sed 's|📃|:page_with_curl:|g; s|🚀|:rocket:|g; s|🧠|:brain:|g; s|💻|:computer:|g')
 
-          TARGET_RELEASE_TITLE=$(echo "$RELEASE_TITLE" | sed -E 's/ (v[0-9]+\.[0-9]+\.[0-9]+)/ (Node.js) \1/')
-          TARGET_RELEASE_TAG="node.js-v$(echo "$RELEASE_TAG" | sed -E 's/^chatgpt.js-([0-9.]+)$/\1/')"
+          TARGET_RELEASE_TITLE=$RELEASE_TITLE
+          TARGET_RELEASE_TAG="v$(echo "$RELEASE_TAG" | sed -E 's/^chatgpt.js-([0-9.]+)$/\1/')"
           echo "Target Title: $TARGET_RELEASE_TITLE"
           echo "Target Tag: $TARGET_RELEASE_TAG"
 
