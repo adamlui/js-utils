@@ -721,6 +721,7 @@
   "Solidity": { "type": "programming", "extensions": [".sol"] },
   "SourcePawn": { "type": "programming", "extensions": [".inc",".sp"] },
   "SPARQL": { "type": "data", "extensions": [".rq",".sparql"] },
+  "SpiceDB Schema": { "type": "data", "extensions": [".zed"] },
   "Spline Font Database": { "type": "data", "extensions": [".sfd"] },
   "SQF": { "type": "programming", "extensions": [".hqf",".sqf"] },
   "SQL": { "type": "data", "extensions": [".ddl",".inc",".mysql",".prc",".sql",".tab",".udf",".viw"] },
