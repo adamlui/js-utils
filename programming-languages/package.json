@@ -1,6 +1,9 @@
 {
   "name": "@adamlui/programming-languages",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "description": "File extensions for programming languages.",
   "author": {
     "name": "Adam Lui",
