@@ -133,6 +133,7 @@
   "SELinux Policy": { "extensions": [".te"] },
   "Simple File Verification": { "extensions": [".sfv"] },
   "SPARQL": { "extensions": [".rq",".sparql"] },
+  "SpiceDB Schema": { "extensions": [".zed"] },
   "Spline Font Database": { "extensions": [".sfd"] },
   "SQL": { "extensions": [".ddl",".inc",".mysql",".prc",".sql",".tab",".udf",".viw"] },
   "STAR": { "extensions": [".star"] },
