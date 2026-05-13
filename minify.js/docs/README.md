@@ -5,7 +5,7 @@
 ### Recursively minify all JavaScript files.
 
 <a href="#">
-    <img height=31 src="https://img.shields.io/badge/Downloads-1.7K/month-44cc11.svg?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+    <img height=31 src="https://img.shields.io/badge/Downloads-1.8K/month-44cc11.svg?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-license">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/minify.js">
