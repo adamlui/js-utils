@@ -90,7 +90,7 @@ module.exports = {
                 ` -i, --init                  ${cli.msgs.optionDesc_init}.`,
                 ` -h, --help                  ${cli.msgs.optionDesc_help}.`,
                 ` -v, --version               ${cli.msgs.optionDesc_version}.`,
-                ` -v, --stats                 ${cli.msgs.optionDesc_stats}.`,
+                `     --stats                 ${cli.msgs.optionDesc_stats}.`,
                 ` -V, --debug                 ${cli.msgs.optionDesc_debug}.`
             ]
         }
