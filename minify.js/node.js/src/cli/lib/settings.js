@@ -128,7 +128,6 @@ module.exports = {
                     cli.config[ctrlKey] = true
             }
         }
-
         if (!arguments.length) log.debug('Args parsed!')
 
         this.parseValidateConfig(inputCtrlKeys)
@@ -138,7 +137,6 @@ module.exports = {
     },
 
     parseValidateConfig(ctrlKeys = Object.keys(this.controls)) {
-        const language = require('./language')
         for (const key of [].concat(ctrlKeys)) {
             const ctrl = this.controls[key], configVal = cli.config[key]
 
@@ -157,7 +155,7 @@ module.exports = {
                         log.errorAndExit(`[${key}] ${cli.msgs.error_invalidFilepath}: ${configVal}`)
                 },
                 langCode() {
-                    if (configVal && !language.validateLangCode(configVal))
+                    if (configVal && !require('./language').validateLangCode(configVal))
                         log.errorAndExit(`[${key}] ${cli.msgs.error_invalidLangCode}: ${configVal}`)
                 }
             })[ctrl.valType]()
