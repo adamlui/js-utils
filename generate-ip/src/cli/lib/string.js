@@ -1,8 +1,14 @@
-module.exports = {
-    toTitleCase(str) { return str.toLowerCase().replace(/\b\w/g, char => char.toUpperCase()) },
+const path = require('path')
 
-    looksLikePath(str) {
-        const path = require('path')
-        return path.isAbsolute(str) || str.includes(path.sep) || /^\.\.?[\\/]/.test(str) || path.extname(str)
-    }
+module.exports = {
+
+    looksLikePath(str) { return typeof str == 'string' && (path.isAbsolute(str) || /^\.\.?[\\/]/.test(str)) },
+
+    looksLikeURL(str) {
+        if (!str || typeof str != 'string') return false
+        try { return /^https?:$/.test(new URL(str).protocol) }
+        catch (err) { return false }
+    },
+
+    toTitleCase(str) { return str.toLowerCase().replace(/\b\w/g, char => char.toUpperCase()) }
 }
