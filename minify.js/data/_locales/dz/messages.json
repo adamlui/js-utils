@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ས་གནས་ཀྱི་པེ་ཅིན། གསར་འགྱུར་བཀླག་ནི་ལུ་འཛོལ་བ་" },
   "error_notRecognized": { "message": "མ་ཤེས་པར་" },
   "error_nonPositiveNum": { "message": "གདམ་ཁ་ ཁ་སྐོང་ཚུ་སྟོནམ་ཨིན།" },
+  "error_requiresVal": { "message": "ཁྱོད་ཀྱིས་ གནས་གོང་ཅིག་དགོ་" },
   "error_invalidFilepath": { "message": "ད་ཡོད་པའི་ཡིག་སྣོད་ལམ་དེ་ ཆ་གནས་ཡོད་དགོཔ་ཨིན།" },
   "error_invalidLangCode": { "message": "འདི་སྐད་ཡིག་གི་ལྡེ་མིག་ཅིག་ཨིན།" },
   "error_invalidURL": { "message": "ནོར་འཁྲུལ་ཅན་གྱི་ཨུ་རེལ།" },
@@ -48,25 +49,37 @@
   "info_configFileCreated": { "message": "གཞི་སྒྲིག་ཡིག་སྣོད་ཅིག་བཟོ་ཡོདཔ་ཨིན།" },
   "info_fetchingRemoteConfigFrom": { "message": "ཐག་རིང་གི་ཡིག་སྣོད་ཚུ་ སྤོ་བཤུད་འབད་" },
   "tip_editToSetDefaults": { "message": "འདི་བཟུམ་གྱི་ཡིག་སྣོད་ཚུ་ རང་ལུགས་སྒྲིག་ནི་གི་དོན་ལུ་ བསྒྱུར་བཅོས་འབད་" },
-  "tip_cliArgsPrioritized": { "message": "CLIགི་རྩོད་གཞི་ཚུ་ ཨ་རྟག་རང་ གོང་གསལ་གྱི་གོང་ཚད་ཚུ་ལས་བརྒལ་ཏེ་ འགྱོ་དོ་ཡོདཔ་ཨིན།" },
+  "tip_cliArgsPrioritized": {
+    "message": "CLIགི་རྩོད་གཞི་ཚུ་ ཨ་རྟག་རང་ གོང་གསལ་གྱི་གོང་ཚད་ཚུ་ལས་བརྒལ་ཏེ་ འགྱོ་དོ་ཡོདཔ་ཨིན།"
+  },
   "helpSection_usage": { "message": "ལག་ལེན་འཐབ་ཐབས།" },
   "helpSection_pathArgs": { "message": "ལམ་གྱི་རྩོད་གཞི་" },
   "helpSection_flags": { "message": "Boolean གདམ་ཁ་" },
   "helpSection_params": { "message": "ཚད་འཇལ་ནིའི་ གདམ་ཁ་" },
   "helpSection_cmds": { "message": "བརྡ་དོན་གྱི་བཀའ་རྒྱ་" },
   "optionDesc_uiLang": { "message": "ཨའི་ཟ་ཨོ་༦༣༩-༡ གི་སྐད་ཡིག་གི་ལྡེ་མིག་འདི་ ཨའི་ཟ་ཨོ་༦༣༩-༡ ལུ་སྟོན་" },
-  "inputPathDesc_main": { "message": "JavaScript ཡིག་སྣོད་ ཡང་ན་ ཡིག་སྣོད་ནང་ལུ་ JavaScript ཡིག་སྣོད་ཚུ་ Minified འབད་ནི་ལུ་ལམ་" },
+  "inputPathDesc_main": {
+    "message": "JavaScript ཡིག་སྣོད་ ཡང་ན་ ཡིག་སྣོད་ནང་ལུ་ JavaScript ཡིག་སྣོད་ཚུ་ Minified འབད་ནི་ལུ་ལམ་"
+  },
   "inputPathDesc_extra": { "message": "ད་ལྟོའི་འཆར་གཞི་ཚུ་ བསྐྱར་ཞིབ་འབད་" },
   "outputPathDesc_main": { "message": "ཡིག་སྣོད་དང་ ཡིག་སྣོད་ཚུ་ནང་ ཡིག་སྣོད་ཆུང་ཆུང་ཚུ་བཞག་སའི་ལམ་" },
   "outputPathDesc_extra": { "message": "ཡིག་སྣོད་ངོ་མ་གི་ས་སྒོ་དང་འབྲེལ་ཡོད་ (མ་བྱིན་པ་ཅིན་ min/ ལག་ལེན་འཐབ་ཨིན།)" },
-  "optionDesc_dryRun": { "message": "ཁྱོད་ཀྱིས་ཡིག་སྣོད་ (ཚུ་) འདི་མ་ཉུང་བར་བཟོ་བ་ཅིན་ འདི་ཚུ་ལག་ལེན་འཐབ་ནི་ཨིན་ན་སྟོན་ནི་རྐྱངམ་གཅིག་ཨིན།" },
+  "optionDesc_dryRun": {
+    "message": "ཁྱོད་ཀྱིས་ཡིག་སྣོད་ (ཚུ་) འདི་མ་ཉུང་བར་བཟོ་བ་ཅིན་ འདི་ཚུ་ལག་ལེན་འཐབ་ནི་ཨིན་ན་སྟོན་ནི་རྐྱངམ་གཅིག་ཨིན།"
+  },
   "optionDesc_dotfolders": { "message": "ཡིག་སྣོད་འཚོལ་བའི་ནང་ dotfolders ཚུ་བཀོད།" },
   "optionDesc_dotfiles": { "message": "ཡིག་སྣོད་འཚོལ་བའི་ནང་ dotfiles ནང་བཙུགས་འབད།" },
   "optionDesc_noRecursion": { "message": "ཡིག་སྣོད་བསྐྱར་ཞིབ་འཚོལ་འབད་བཏུབ་བཟོ།" },
   "optionDesc_noMangle": { "message": "མོང་སྒར་མིང་ཚུ་ རྩ་སྒྲིག་འབད།" },
-  "optionDesc_noFilenameChange": { "message": "ཡིག་སྣོད་རྒྱ་བསྐྱེད་འདི་ .min.js ལུ་བསྒྱུར་བཅོས་འབད་ནི་ལུ་ རྩ་སྒྲིག་འབད།" },
-  "optionDesc_copy": { "message": "ཡིག་སྣོད་འདི་ ཡིག་སྣོད་ནང་འབྲི་ནི་མེན་པར་ ཡིག་སྣོད་ནང་ ཡིག་སྣོད་ནང་ ཡིག་སྣོད་འབད་ནིའི་ཚབ་ལུ་ ཡིག་སྣོད་ནང་ ཡིག་སྣོད་འབད་ཡོད་པའི་ཡིག་སྣོད་འདི་ ཡིག་སྣ" },
-  "optionDesc_relativeOutput": { "message": "འབྱུང་ཁུངས་ཀྱི་ཡིག་སྣོད་རེ་རེ་ལུ་ འབྱུང་ཁུངས་ཀྱི་ཡིག་སྣོད་ཚུ་ ནང་འདྲེན་འབད་ནིའི་ཚབ་ལུ་ འབྱུང་ཁུངས་ཀྱི་ཡིག་སྣོད་ཚུ་" },
+  "optionDesc_noFilenameChange": {
+    "message": "ཡིག་སྣོད་རྒྱ་བསྐྱེད་འདི་ .min.js ལུ་བསྒྱུར་བཅོས་འབད་ནི་ལུ་ རྩ་སྒྲིག་འབད།"
+  },
+  "optionDesc_copy": {
+    "message": "ཡིག་སྣོད་འདི་ ཡིག་སྣོད་ནང་འབྲི་ནི་མེན་པར་ ཡིག་སྣོད་ནང་ ཡིག་སྣོད་ནང་ ཡིག་སྣོད་འབད་ནིའི་ཚབ་ལུ་ ཡིག་སྣོད་ནང་ ཡིག་སྣོད་འབད་ཡོད་པའི་ཡིག་སྣོད་འདི་ ཡིག་སྣ"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "འབྱུང་ཁུངས་ཀྱི་ཡིག་སྣོད་རེ་རེ་ལུ་ འབྱུང་ཁུངས་ཀྱི་ཡིག་སྣོད་ཚུ་ ནང་འདྲེན་འབད་ནིའི་ཚབ་ལུ་ འབྱུང་ཁུངས་ཀྱི་ཡིག་སྣོད་ཚུ་"
+  },
   "optionDesc_rewriteImports": { "message": ".js ལས་ .min.js ནང་འདྲེན་ལམ་ཚུ་ ད་ལྟོའི་བར་ན་ཡང་བཟོ་བཀོད་འབད་" },
   "optionDesc_quiet": { "message": "འཛོལ་བ་མ་གཏོགས་ གཞན་ག་ནི་ཡང་མ་འབད།" },
   "optionDesc_ignores": { "message": "ཡིག་སྣོད་/ཡིག་སྣོད་ཚུ་ Minification ལས་ཕྱིར་འབུད་འབད་" },

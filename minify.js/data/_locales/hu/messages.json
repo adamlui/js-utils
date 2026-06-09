@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Hiba a helyi csomagverzió olvasásakor" },
   "error_notRecognized": { "message": "nem felismerhető" },
   "error_nonPositiveNum": { "message": "argumentum csak > 0 lehet" },
+  "error_requiresVal": { "message": "értéket igényel" },
   "error_invalidFilepath": { "message": "érvényes fájl elérési útnak kell lennie. Megvan" },
   "error_invalidLangCode": { "message": "érvénytelen nyelvkód" },
   "error_invalidURL": { "message": "Hibás URL cím" },
@@ -55,7 +56,9 @@
   "helpSection_params": { "message": "Paraméteropciók" },
   "helpSection_cmds": { "message": "Információs parancsok" },
   "optionDesc_uiLang": { "message": "A felhasználói felület megjelenítéséhez használt nyelv ISO 639-1 kódja" },
-  "inputPathDesc_main": { "message": "A tömörítendő JavaScript-fájlokat tartalmazó JavaScript-fájl vagy -könyvtár elérési útja" },
+  "inputPathDesc_main": {
+    "message": "A tömörítendő JavaScript-fájlokat tartalmazó JavaScript-fájl vagy -könyvtár elérési útja"
+  },
   "inputPathDesc_extra": { "message": "az aktuális munkakönyvtárhoz képest" },
   "outputPathDesc_main": { "message": "A tömörített fájlok tárolására szolgáló fájl vagy könyvtár elérési útja" },
   "outputPathDesc_extra": { "message": "az eredeti fájl helyéhez képest (ha nincs megadva, min/ használatos)" },
@@ -65,8 +68,12 @@
   "optionDesc_noRecursion": { "message": "Rekurzív fájlkeresés letiltása" },
   "optionDesc_noMangle": { "message": "Nevek összevonásának letiltása" },
   "optionDesc_noFilenameChange": { "message": "Fájlkiterjesztés módosításának letiltása .min.js fájlra" },
-  "optionDesc_copy": { "message": "Minifikált kód másolása a vágólapra ahelyett, hogy fájlba írna, ha egyetlen forrásfájl feldolgozásra kerül" },
-  "optionDesc_relativeOutput": { "message": "Kimeneti fájlok az egyes forrásfájlokhoz viszonyítva, nem pedig a bemeneti gyökérhez" },
+  "optionDesc_copy": {
+    "message": "Minifikált kód másolása a vágólapra ahelyett, hogy fájlba írna, ha egyetlen forrásfájl feldolgozásra kerül"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Kimeneti fájlok az egyes forrásfájlokhoz viszonyítva, nem pedig a bemeneti gyökérhez"
+  },
   "optionDesc_rewriteImports": { "message": "Importálási útvonalak frissítése .js fájlból .min.js fájlba" },
   "optionDesc_quiet": { "message": "Az összes naplózás letiltása a hibák kivételével" },
   "optionDesc_ignores": { "message": "Minifikációból kizárandó fájlok/könyvtárak" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "შეცდომა ლოკალური პაკეტის ვერსიის წაკითხვისას მოხდა" },
   "error_notRecognized": { "message": "ფაილის ტიპი ამოუცნობია" },
   "error_nonPositiveNum": { "message": "არგუმენტი შეიძლება იყოს მხოლოდ > 0" },
+  "error_requiresVal": { "message": "მოითხოვს მნიშვნელობას" },
   "error_invalidFilepath": { "message": "უნდა იყოს სწორი არსებული ფაილის ბილიკი. მიღებული" },
   "error_invalidLangCode": { "message": "არასწორი ენის კოდია" },
   "error_invalidURL": { "message": "არასწორი URL" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Პაროლ(ებ) ში პატარა ასოების გაუქმება" },
   "optionDesc_noUpper": { "message": "Დიდი ასოების გაუქმება პაროლ(ებ) ში" },
   "optionDesc_similarChars": { "message": "Პაროლ(ებ) ში მსგავსი სიმბოლოების შეტანა" },
-  "optionDesc_unstrict": { "message": "Პაროლ(ებ) ში თითოეული დაშვებული სიმბოლოს ნაკრებიდან არ მოითხოვოთ მინიმუმ ერთი სიმბოლო" },
+  "optionDesc_unstrict": {
+    "message": "Პაროლ(ებ) ში თითოეული დაშვებული სიმბოლოს ნაკრებიდან არ მოითხოვოთ მინიმუმ ერთი სიმბოლო"
+  },
   "optionDesc_noEntropy": { "message": "Არ გამოთვალოთ/არ შეამოწმოთ სავარაუდო ენტროპია" },
   "optionDesc_quiet": { "message": "ყველა ჟურნალის დაბლოკვა, შეცდომების გარდა" },
   "optionDesc_help": { "message": "დახმარების ეკრანის ჩვენება" },

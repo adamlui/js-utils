@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Eraro dum legado de loka pakaĵa versio" },
   "error_notRecognized": { "message": "ne rekonita" },
   "error_nonPositiveNum": { "message": "argumento povas esti nur > 0" },
+  "error_requiresVal": { "message": "bezonas valoron" },
   "error_invalidFilepath": { "message": "devas esti valida ekzistanta dosiervojo. Ricevis" },
   "error_invalidLangCode": { "message": "estas nevalida lingvokodo" },
   "error_invalidURL": { "message": "Nevalida URL" },

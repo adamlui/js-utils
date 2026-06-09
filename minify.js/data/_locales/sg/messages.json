@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Mbeni ye so ayeke na lege ni ape ayeke so a yeke diko ni na yâ ti ambeti" },
   "error_notRecognized": { "message": "a hinga lo pëpe" },
   "error_nonPositiveNum": { "message": "tënë ni alingbi ti duti gi > 0" },
+  "error_requiresVal": { "message": "e yeke na bezoin ti mbeni ye so ayeke kota ye mingi" },
   "error_invalidFilepath": { "message": "a lingbi ti duti mbeni lege ti faïl so ayeke dä awe" },
   "error_invalidLangCode": { "message": "a yeke mbeni kode ti yanga ti kodoro so ayeke na lege ni pëpe" },
   "error_invalidURL": { "message": "URL so ayeke na lege ni ape" },
@@ -44,29 +45,41 @@
   "info_type": { "message": "mara ti zo" },
   "info_or": { "message": "lani wala to bani" },
   "info_visit": { "message": "visit Mbi" },
-  "info_toCreateDefaultConfig": { "message": "create article Delete article Get articles list Update article Get articles list Update article" },
+  "info_toCreateDefaultConfig": {
+    "message": "create article Delete article Get articles list Update article Get articles list Update article"
+  },
   "info_configFileCreated": { "message": "Faïl so a leke ni" },
   "info_fetchingRemoteConfigFrom": { "message": "Disable alert for Mbeni" },
   "tip_editToSetDefaults": { "message": "Gbian faïl so ti leke ambeni ye so ayeke na lege ni ape" },
-  "tip_cliArgsPrioritized": { "message": "A yeke lakue na lege ti atënë ti CLI si a yeke hon ndo ti aye so ayeke na yâ ti Bible" },
+  "tip_cliArgsPrioritized": {
+    "message": "A yeke lakue na lege ti atënë ti CLI si a yeke hon ndo ti aye so ayeke na yâ ti Bible"
+  },
   "helpSection_usage": { "message": "Use of ti vs. tu" },
   "helpSection_pathArgs": { "message": "Lege ti fango tënë" },
   "helpSection_flags": { "message": "Aye so mo lingbi ti sara ti mû maboko na mo" },
   "helpSection_params": { "message": "Akpengba ye so mo lingbi ti sara" },
   "helpSection_cmds": { "message": "Aye so afa so a yeke nzoni e sara" },
   "optionDesc_uiLang": { "message": "ISO 639-1 code ti yanga ti kodoro ti fa UI na" },
-  "inputPathDesc_main": { "message": "Lege ti faïl ti JavaScript wala ti faïl ti faïl ti JavaScript so a lingbi a fâ ni" },
+  "inputPathDesc_main": {
+    "message": "Lege ti faïl ti JavaScript wala ti faïl ti faïl ti JavaScript so a lingbi a fâ ni"
+  },
   "inputPathDesc_extra": { "message": "a yeke na lege ti a-directeur ti kua so ayeke dä laso" },
   "outputPathDesc_main": { "message": "Lege ti faïl wala ti faïl so a yeke bata ni" },
-  "outputPathDesc_extra": { "message": "a yeke na lege ti kode ti fango tënë ti mbeni zo so ayeke na yâ ti mbeni mbeti so a sû na mbeti ti lo" },
+  "outputPathDesc_extra": {
+    "message": "a yeke na lege ti kode ti fango tënë ti mbeni zo so ayeke na yâ ti mbeni mbeti so a sû na mbeti ti lo"
+  },
   "optionDesc_dryRun": { "message": "A yeke nzoni mo sara kua na mbeni ye so ayeke na lege ni ape" },
   "optionDesc_dotfolders": { "message": "A yeke wara azo ti gingo nda ti ambeti na yâ ti mbeni gingo nda ti ambeti" },
   "optionDesc_dotfiles": { "message": "A yeke wara a-file na yâ ti gingo a-file" },
   "optionDesc_noRecursion": { "message": "Disable alert for Mbeni" },
   "optionDesc_noMangle": { "message": "A yeke wara iri ti azo so ayeke na yâ ti mbeni kete kete kete kete kete kete" },
   "optionDesc_noFilenameChange": { "message": "Kangbi ni Kangbi ni Kangbi ni.min.js" },
-  "optionDesc_copy": { "message": "A yeke wara kode so a leke ni na yâ ti clipboard ahon ti sû ni na yâ ti mbeni oko oko oko oko oko oko oko oko oko oko oko oko oko oko oko oko oko oko" },
-  "optionDesc_relativeOutput": { "message": "A yeke sigigi na a-fichier so ague oko na a-fichier oko oko ahon ti tene a zia ni na yâ ti a-fichier ni" },
+  "optionDesc_copy": {
+    "message": "A yeke wara kode so a leke ni na yâ ti clipboard ahon ti sû ni na yâ ti mbeni oko oko oko oko oko oko oko oko oko oko oko oko oko oko oko oko oko oko"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "A yeke sigigi na a-fichier so ague oko na a-fichier oko oko ahon ti tene a zia ni na yâ ti a-fichier ni"
+  },
   "optionDesc_rewriteImports": { "message": "Na yâ ti article so, a yeke wara tënë ti fango tënë na ndo ti Internet" },
   "optionDesc_quiet": { "message": "A yeke kanga lege na azo kue ti sara ye na lege ni ape me a yeke gi na lege ni" },
   "optionDesc_ignores": { "message": "A-file/a-directory ti kanga lege na minification" },

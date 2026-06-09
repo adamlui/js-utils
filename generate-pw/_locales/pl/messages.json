@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Błąd podczas odczytu lokalnej wersji pakietu" },
   "error_notRecognized": { "message": "nierozpoznane" },
   "error_nonPositiveNum": { "message": "argument może być tylko > 0" },
+  "error_requiresVal": { "message": "wymaga wartości" },
   "error_invalidFilepath": { "message": "musi być prawidłową istniejącą ścieżką pliku. Got" },
   "error_invalidLangCode": { "message": "jest nieprawidłowym kodem języka" },
   "error_invalidURL": { "message": "Nieprawidłowy adres URL" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Nie zezwalaj na małe litery w haśle(ach)" },
   "optionDesc_noUpper": { "message": "Nie zezwalaj na wielkie litery w haśle(ach)" },
   "optionDesc_similarChars": { "message": "Uwzględnij podobne znaki w haśle(ach)" },
-  "optionDesc_unstrict": { "message": "Nie wymagaj co najmniej jednego znaku z każdego dozwolonego zestawu znaków w haśle(ach)" },
+  "optionDesc_unstrict": {
+    "message": "Nie wymagaj co najmniej jednego znaku z każdego dozwolonego zestawu znaków w haśle(ach)"
+  },
   "optionDesc_noEntropy": { "message": "Nie obliczaj/nie rejestruj oszacowanej entropii" },
   "optionDesc_quiet": { "message": "Wyłącz wszystkie rejestrowanie z wyjątkiem błędów" },
   "optionDesc_help": { "message": "Wyświetl ekran pomocy" },

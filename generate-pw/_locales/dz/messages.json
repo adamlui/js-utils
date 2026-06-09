@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ས་གནས་ཀྱི་པེ་ཅིན། གསར་འགྱུར་བཀླག་ནི་ལུ་འཛོལ་བ་" },
   "error_notRecognized": { "message": "མ་ཤེས་པར་" },
   "error_nonPositiveNum": { "message": "གདམ་ཁ་ ཁ་སྐོང་ཚུ་སྟོནམ་ཨིན།" },
+  "error_requiresVal": { "message": "ཁྱོད་ཀྱིས་ གནས་གོང་ཅིག་དགོ་" },
   "error_invalidFilepath": { "message": "ད་ཡོད་པའི་ཡིག་སྣོད་ལམ་དེ་ ཆ་གནས་ཡོད་དགོཔ་ཨིན།" },
   "error_invalidLangCode": { "message": "འདི་སྐད་ཡིག་གི་ལྡེ་མིག་ཅིག་ཨིན།" },
   "error_invalidURL": { "message": "ནོར་འཁྲུལ་ཅན་གྱི་ཨུ་རེལ།" },
@@ -37,7 +38,9 @@
   "info_configFileCreated": { "message": "གཞི་སྒྲིག་ཡིག་སྣོད་ཅིག་བཟོ་ཡོདཔ་ཨིན།" },
   "info_fetchingRemoteConfigFrom": { "message": "ཐག་རིང་གི་ཡིག་སྣོད་ཚུ་ སྤོ་བཤུད་འབད་" },
   "tip_editToSetDefaults": { "message": "འདི་བཟུམ་གྱི་ཡིག་སྣོད་ཚུ་ རང་ལུགས་སྒྲིག་ནི་གི་དོན་ལུ་ བསྒྱུར་བཅོས་འབད་" },
-  "tip_cliArgsPrioritized": { "message": "CLIགི་རྩོད་གཞི་ཚུ་ ཨ་རྟག་རང་ གོང་གསལ་གྱི་གོང་ཚད་ཚུ་ལས་བརྒལ་ཏེ་ འགྱོ་དོ་ཡོདཔ་ཨིན།" },
+  "tip_cliArgsPrioritized": {
+    "message": "CLIགི་རྩོད་གཞི་ཚུ་ ཨ་རྟག་རང་ གོང་གསལ་གྱི་གོང་ཚད་ཚུ་ལས་བརྒལ་ཏེ་ འགྱོ་དོ་ཡོདཔ་ཨིན།"
+  },
   "helpSection_usage": { "message": "ལག་ལེན་འཐབ་ཐབས།" },
   "helpSection_params": { "message": "ཚད་འཇལ་ནིའི་ གདམ་ཁ་" },
   "helpSection_flags": { "message": "Boolean གདམ་ཁ་" },
@@ -56,7 +59,9 @@
   "optionDesc_noLower": { "message": "འོག་གི་ཡིག་འབྲུ་ཚུ་ Password (s) ནང་སེལ་འཐུ་འབད།" },
   "optionDesc_noUpper": { "message": "Password (s) ནང་གི་Uppercase letters འདི་སེལ་འཐུ་འབད།" },
   "optionDesc_similarChars": { "message": "Password (s) ནང་འདྲ་མཉམ་གི་ཡིག་འབྲུ་ཚུ་བཙུགས་དགོ།" },
-  "optionDesc_unstrict": { "message": "ཁྱོད་ཀྱིས་ Password (s) ནང་བཀོད་ཡོད་པའི་ Password (s) ནང་བཀོད་ཡོད་པའི་ Password (s) ཚུ་ནང་ལས་ཉུང་ཤོས་ཅིག་མ་དགོ་" },
+  "optionDesc_unstrict": {
+    "message": "ཁྱོད་ཀྱིས་ Password (s) ནང་བཀོད་ཡོད་པའི་ Password (s) ནང་བཀོད་ཡོད་པའི་ Password (s) ཚུ་ནང་ལས་ཉུང་ཤོས་ཅིག་མ་དགོ་"
+  },
   "optionDesc_noEntropy": { "message": "རྩིས་མ་རྐྱབ་/log estimated entropy" },
   "optionDesc_quiet": { "message": "འཛོལ་བ་མ་གཏོགས་ གཞན་ག་ནི་ཡང་མ་འབད།" },
   "optionDesc_help": { "message": "གྲོགས་རམ་གི་མཐོང་སྣོད་སྟོན་" },

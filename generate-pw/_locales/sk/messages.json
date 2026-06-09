@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Chyba pri čítaní lokálnej verzie balíka" },
   "error_notRecognized": { "message": "Kód nebol rozpoznaný" },
   "error_nonPositiveNum": { "message": "argument môže byť iba > 0" },
+  "error_requiresVal": { "message": "vyžaduje hodnotu" },
   "error_invalidFilepath": { "message": "musí byť platná existujúca cesta k súboru. Mám" },
   "error_invalidLangCode": { "message": "je neplatný jazykový kód" },
   "error_invalidURL": { "message": "Neplatná adresa URL" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Zakázať malé písmená v hesle(heslách)" },
   "optionDesc_noUpper": { "message": "Zakázať veľké písmená v hesle(heslách)" },
   "optionDesc_similarChars": { "message": "Zahrnúť podobné znaky do hesla(hesiel)" },
-  "optionDesc_unstrict": { "message": "Nevyžadovať aspoň jeden znak z každého povoleného znaku nastaveného v hesle(heslách)" },
+  "optionDesc_unstrict": {
+    "message": "Nevyžadovať aspoň jeden znak z každého povoleného znaku nastaveného v hesle(heslách)"
+  },
   "optionDesc_noEntropy": { "message": "Nepočítať/nezaznamenávať odhadovanú entropiu" },
   "optionDesc_quiet": { "message": "Potlačiť všetky protokoly okrem chýb" },
   "optionDesc_help": { "message": "Zobraziť obrazovku pomocníka" },

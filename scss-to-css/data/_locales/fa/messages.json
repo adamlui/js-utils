@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "خطا در خواندن نسخه بسته محلی" },
   "error_notRecognized": { "message": "به رسمیت شناخته نشده" },
   "error_nonPositiveNum": { "message": "آرگومان فقط می‌تواند بزرگتر از ۰ باشد" },
+  "error_requiresVal": { "message": "نیاز به یک مقدار دارد" },
   "error_invalidFilepath": { "message": "باید یک مسیر فایل معتبر و موجود باشد" },
   "error_invalidLangCode": { "message": "کد زبان نامعتبر است" },
   "error_invalidURL": { "message": "URL نامعتبر است" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "جلوگیری از تولید نقشه‌های منبع" },
   "optionDesc_noMinify": { "message": "غیرفعال کردن کوچک‌سازی CSS خروجی" },
   "optionDesc_noRecursion": { "message": "غیرفعال کردن جستجوی بازگشتی فایل" },
-  "optionDesc_copy": { "message": "اگر یک فایل منبع واحد پردازش می‌شود، به جای نوشتن در فایل، CSS کامپایل شده را در کلیپ‌بورد کپی می‌کند" },
+  "optionDesc_copy": {
+    "message": "اگر یک فایل منبع واحد پردازش می‌شود، به جای نوشتن در فایل، CSS کامپایل شده را در کلیپ‌بورد کپی می‌کند"
+  },
   "optionDesc_relativeOutput": { "message": "فایل‌های خروجی نسبت به هر فایل منبع به جای فایل ریشه ورودی" },
   "optionDesc_quiet": { "message": "جلوگیری از ثبت تمام گزارش‌ها به جز خطاها" },
   "optionDesc_ignores": { "message": "فایل‌ها/دایرکتوری‌هایی که باید از کامپایل مستثنی شوند" },

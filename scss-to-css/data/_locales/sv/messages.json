@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Fel vid läsning av lokal paketversion" },
   "error_notRecognized": { "message": "ej värderade" },
   "error_nonPositiveNum": { "message": "argument kan bara vara > 0" },
+  "error_requiresVal": { "message": "kräver ett värde" },
   "error_invalidFilepath": { "message": "måste vara en giltig befintlig filsökväg. Fick" },
   "error_invalidLangCode": { "message": "är en ogiltig språkkod" },
   "error_invalidURL": { "message": "Ogiltig URL" },
@@ -65,8 +66,12 @@
   "optionDesc_noSourceMaps": { "message": "Förhindra att källkartor genereras" },
   "optionDesc_noMinify": { "message": "Inaktivera minifiering av utdata CSS" },
   "optionDesc_noRecursion": { "message": "Inaktivera rekursiv filsökning" },
-  "optionDesc_copy": { "message": "Kopiera kompilerad CSS till urklipp istället för att skriva till fil om en enda källfil bearbetas" },
-  "optionDesc_relativeOutput": { "message": "Utdatafiler i förhållande till varje källfil istället för att mata in rot" },
+  "optionDesc_copy": {
+    "message": "Kopiera kompilerad CSS till urklipp istället för att skriva till fil om en enda källfil bearbetas"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Utdatafiler i förhållande till varje källfil istället för att mata in rot"
+  },
   "optionDesc_quiet": { "message": "Dölj all loggning utom fel" },
   "optionDesc_ignores": { "message": "Filer/kataloger att utesluta från kompilering" },
   "optionDesc_commentMain": { "message": "Förbered rubrikkommentar till kompilerad CSS" },

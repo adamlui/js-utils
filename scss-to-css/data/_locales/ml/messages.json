@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ലോക്കൽ പാക്കേജ് പതിപ്പ് വായിക്കുന്നതിൽ പിശക്" },
   "error_notRecognized": { "message": "തിരിച്ചറിഞ്ഞിട്ടില്ല" },
   "error_nonPositiveNum": { "message": "ആർഗ്യുമെന്റിന് > 0 മാത്രമേ ആകാൻ കഴിയൂ" },
+  "error_requiresVal": { "message": "ഒരു മൂല്യം ആവശ്യമാണ്" },
   "error_invalidFilepath": { "message": "സാധുവായ ഒരു ഫയൽ പാത്ത് ആയിരിക്കണം. ലഭിച്ചു" },
   "error_invalidLangCode": { "message": "ഒരു അസാധുവായ ഭാഷാ കോഡാണ്" },
   "error_invalidURL": { "message": "തെറ്റായ സ്ക്രിപ്റ്റ് നിര്‍ദ്ദേശം" },
@@ -65,8 +66,12 @@
   "optionDesc_noSourceMaps": { "message": "ഉറവിട മാപ്പുകൾ ജനറേറ്റ് ചെയ്യുന്നത് തടയുക" },
   "optionDesc_noMinify": { "message": "ഔട്ട്പുട്ട് CSS-ന്റെ മിനിഫിക്കേഷൻ അപ്രാപ്തമാക്കുക" },
   "optionDesc_noRecursion": { "message": "ആവർത്തന ഫയൽ തിരയൽ അപ്രാപ്തമാക്കുക" },
-  "optionDesc_copy": { "message": "ഒരൊറ്റ ഉറവിട ഫയൽ പ്രോസസ്സ് ചെയ്യുകയാണെങ്കിൽ ഫയലിലേക്ക് എഴുതുന്നതിനുപകരം കംപൈൽ ചെയ്ത CSS ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തുക" },
-  "optionDesc_relativeOutput": { "message": "ഇൻപുട്ട് റൂട്ടിന് പകരം ഓരോ സോഴ്‌സ് ഫയലുമായി ബന്ധപ്പെട്ട ഫയലുകൾ ഔട്ട്പുട്ട് ചെയ്യുക" },
+  "optionDesc_copy": {
+    "message": "ഒരൊറ്റ ഉറവിട ഫയൽ പ്രോസസ്സ് ചെയ്യുകയാണെങ്കിൽ ഫയലിലേക്ക് എഴുതുന്നതിനുപകരം കംപൈൽ ചെയ്ത CSS ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തുക"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "ഇൻപുട്ട് റൂട്ടിന് പകരം ഓരോ സോഴ്‌സ് ഫയലുമായി ബന്ധപ്പെട്ട ഫയലുകൾ ഔട്ട്പുട്ട് ചെയ്യുക"
+  },
   "optionDesc_quiet": { "message": "പിശകുകൾ ഒഴികെ എല്ലാ ലോഗിംഗും അടിച്ചമർത്തുക" },
   "optionDesc_ignores": { "message": "സമാഹാരത്തിൽ നിന്ന് ഒഴിവാക്കേണ്ട ഫയലുകൾ/ഡയറക്ടറികൾ" },
   "optionDesc_commentMain": { "message": "കംപൈൽ ചെയ്ത CSS-ലേക്ക് ഹെഡർ അഭിപ്രായം മുൻകൂട്ടി തയ്യാറാക്കുക" },

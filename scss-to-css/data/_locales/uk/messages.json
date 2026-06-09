@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Помилка читання версії локального пакета" },
   "error_notRecognized": { "message": "не розпізнаний" },
   "error_nonPositiveNum": { "message": "аргумент може бути лише > 0" },
+  "error_requiresVal": { "message": "вимагає значення" },
   "error_invalidFilepath": { "message": "має бути дійсним існуючим шляхом до файлу. Отримано" },
   "error_invalidLangCode": { "message": "є недійсним кодом мови" },
   "error_invalidURL": { "message": "Недійсна URL-адреса" },
@@ -56,7 +57,9 @@
   "helpSection_params": { "message": "Параметри параметрів" },
   "helpSection_cmds": { "message": "Команди" },
   "optionDesc_uiLang": { "message": "Код мови ISO 639-1 для відображення інтерфейсу користувача" },
-  "inputPathDesc_main": { "message": "Шлях до файлу або каталогу SCSS, що містить файли SCSS, що підлягають компіляції" },
+  "inputPathDesc_main": {
+    "message": "Шлях до файлу або каталогу SCSS, що містить файли SCSS, що підлягають компіляції"
+  },
   "inputPathDesc_extra": { "message": "відносно поточного робочого каталогу" },
   "outputPathDesc_main": { "message": "Шлях до файлу або каталогу, де будуть зберігатися файли CSS + sourcemap" },
   "outputPathDesc_extra": { "message": "відносно кореня вводу (якщо не вказано, використовується css/)" },
@@ -65,7 +68,9 @@
   "optionDesc_noSourceMaps": { "message": "Запобігання генеруванню вихідних карт" },
   "optionDesc_noMinify": { "message": "Вимкнути мініфікацію вихідного CSS" },
   "optionDesc_noRecursion": { "message": "Вимкнути рекурсивний пошук файлів" },
-  "optionDesc_copy": { "message": "Копіювати скомпільований CSS до буфера обміну замість запису до файлу, якщо обробляється один вихідний файл" },
+  "optionDesc_copy": {
+    "message": "Копіювати скомпільований CSS до буфера обміну замість запису до файлу, якщо обробляється один вихідний файл"
+  },
   "optionDesc_relativeOutput": { "message": "Вихідні файли відносно кожного вихідного файлу замість вхідного кореня" },
   "optionDesc_quiet": { "message": "Придушити всі журнали, крім помилок" },
   "optionDesc_ignores": { "message": "Файли/каталоги, які потрібно виключити з компіляції" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Ошибка при чтении версии локального пакета" },
   "error_notRecognized": { "message": "неидентифицированный" },
   "error_nonPositiveNum": { "message": "аргумент может быть только > 0" },
+  "error_requiresVal": { "message": "требует значения" },
   "error_invalidFilepath": { "message": "должен быть допустимый существующий путь к файлу. Получено" },
   "error_invalidLangCode": { "message": "является недопустимым кодом языка" },
   "error_invalidURL": { "message": "Неверный URL" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Запретить использование строчных букв в паролях" },
   "optionDesc_noUpper": { "message": "Запретить использование прописных букв в паролях" },
   "optionDesc_similarChars": { "message": "Включите похожие символы в пароли" },
-  "optionDesc_unstrict": { "message": "Не требуйте хотя бы одного символа из каждого разрешенного символа, установленного в пароле(-ах)" },
+  "optionDesc_unstrict": {
+    "message": "Не требуйте хотя бы одного символа из каждого разрешенного символа, установленного в пароле(-ах)"
+  },
   "optionDesc_noEntropy": { "message": "Не рассчитывать/регистрировать оценочную энтропию" },
   "optionDesc_quiet": { "message": "Подавление всех журналов, кроме ошибок" },
   "optionDesc_help": { "message": "Показать экран помощи" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "સ્થાનિક પેકેજ સંસ્કરણ વાંચવામાં ભૂલ" },
   "error_notRecognized": { "message": "ઓળખી શકાયું નથી" },
   "error_nonPositiveNum": { "message": "દલીલ ફક્ત > 0 હોઈ શકે છે" },
+  "error_requiresVal": { "message": "મૂલ્યની જરૂર છે" },
   "error_invalidFilepath": { "message": "માન્ય અસ્તિત્વમાં છે તે ફાઇલ પાથ હોવો જોઈએ. મળ્યું" },
   "error_invalidLangCode": { "message": "અમાન્ય ભાષા કોડ છે" },
   "error_invalidURL": { "message": "અયોગ્ય URL" },
@@ -60,12 +61,16 @@
   "inputPathDesc_extra": { "message": "વર્તમાન કાર્યકારી ડિરેક્ટરી સંબંધિત" },
   "outputPathDesc_main": { "message": "ફાઇલ અથવા ડિરેક્ટરીનો પાથ જ્યાં CSS + સ્રોતમેપ ફાઇલો સંગ્રહિત કરવામાં આવશે" },
   "outputPathDesc_extra": { "message": "ઇનપુટ રુટ સંબંધિત (જો પૂરી પાડવામાં ન આવે તો, css/નો ઉપયોગ થાય છે)" },
-  "optionDesc_dryRun": { "message": "ખરેખર ફાઇલ(ઓ) કમ્પાઇલ કરશો નહીં, ફક્ત બતાવો કે તેઓ પર પ્રક્રિયા કરવામાં આવશે કે નહીં" },
+  "optionDesc_dryRun": {
+    "message": "ખરેખર ફાઇલ(ઓ) કમ્પાઇલ કરશો નહીં, ફક્ત બતાવો કે તેઓ પર પ્રક્રિયા કરવામાં આવશે કે નહીં"
+  },
   "optionDesc_dotfolders": { "message": "ફાઇલ શોધમાં ડોટફોલ્ડર્સ શામેલ કરો" },
   "optionDesc_noSourceMaps": { "message": "સ્રોત નકશાને ઉત્પન્ન થવાથી અટકાવો" },
   "optionDesc_noMinify": { "message": "આઉટપુટ CSS નું મિનિફિકેશન અક્ષમ કરો" },
   "optionDesc_noRecursion": { "message": "રિકર્સિવ ફાઇલ શોધવાનું અક્ષમ કરો" },
-  "optionDesc_copy": { "message": "જો સિંગલ સોર્સ ફાઇલ પર પ્રક્રિયા કરવામાં આવે તો ફાઇલ પર લખવાને બદલે કમ્પાઇલ કરેલ CSS ને ક્લિપબોર્ડ પર કૉપિ કરો" },
+  "optionDesc_copy": {
+    "message": "જો સિંગલ સોર્સ ફાઇલ પર પ્રક્રિયા કરવામાં આવે તો ફાઇલ પર લખવાને બદલે કમ્પાઇલ કરેલ CSS ને ક્લિપબોર્ડ પર કૉપિ કરો"
+  },
   "optionDesc_relativeOutput": { "message": "ઇનપુટ રુટને બદલે દરેક સ્રોત ફાઇલની સંબંધિત આઉટપુટ ફાઇલો" },
   "optionDesc_quiet": { "message": "ભૂલો સિવાય તમામ લોગીંગને દબાવો" },
   "optionDesc_ignores": { "message": "સંકલનમાંથી બાકાત રાખવા માટેની ફાઇલો/ડિરેક્ટરીઓ" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Hitilafu wakati wa kusoma toleo la kifurushi cha" },
   "error_notRecognized": { "message": "haijatambuliwa" },
   "error_nonPositiveNum": { "message": "hoja inaweza tu kuwa > 0" },
+  "error_requiresVal": { "message": "inahitaji thamani" },
   "error_invalidFilepath": { "message": "lazima iwe njia sahihi ya faili iliyopo. Umeelewa" },
   "error_invalidLangCode": { "message": "ni msimbo batili wa lugha" },
   "error_invalidURL": { "message": "URL si sahihi" },
@@ -65,8 +66,12 @@
   "optionDesc_noSourceMaps": { "message": "Zuia ramani chanzi kutengenezwa" },
   "optionDesc_noMinify": { "message": "Lemaza uchanganuzi wa CSS ya pato" },
   "optionDesc_noRecursion": { "message": "Lemaza utafutaji wa faili unaojirudia" },
-  "optionDesc_copy": { "message": "Nakili CSS iliyokusanywa kwenye ubao wa kunakili badala ya kuandika kwenye faili ikiwa faili moja ya chanzo inachakatwa" },
-  "optionDesc_relativeOutput": { "message": "Faili za pato zinazohusiana na kila faili ya chanzo badala ya kuingiza mizizi" },
+  "optionDesc_copy": {
+    "message": "Nakili CSS iliyokusanywa kwenye ubao wa kunakili badala ya kuandika kwenye faili ikiwa faili moja ya chanzo inachakatwa"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Faili za pato zinazohusiana na kila faili ya chanzo badala ya kuingiza mizizi"
+  },
   "optionDesc_quiet": { "message": "Zima ukataji wote wa magogo isipokuwa hitilafu" },
   "optionDesc_ignores": { "message": "Faili/saraka za kuwatenga kwenye mkusanyiko" },
   "optionDesc_commentMain": { "message": "Andaa maoni ya kichwa kwenye CSS iliyokusanywa" },

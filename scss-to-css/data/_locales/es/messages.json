@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Error al leer la versión local del paquete" },
   "error_notRecognized": { "message": "No reconocido" },
   "error_nonPositiveNum": { "message": "argumento solo puede ser > 0" },
+  "error_requiresVal": { "message": "requiere un valor" },
   "error_invalidFilepath": { "message": "debe ser una ruta de archivo existente válida. Entendido" },
   "error_invalidLangCode": { "message": "es un código de idioma no válido" },
   "error_invalidURL": { "message": "URL no válida" },
@@ -58,15 +59,21 @@
   "optionDesc_uiLang": { "message": "Código de idioma ISO 639-1 para mostrar la interfaz de usuario en" },
   "inputPathDesc_main": { "message": "Ruta al archivo SCSS o directorio que contiene archivos SCSS a compilar" },
   "inputPathDesc_extra": { "message": "en relación con el directorio de trabajo actual" },
-  "outputPathDesc_main": { "message": "Ruta al archivo o directorio donde se almacenarán los archivos CSS + mapa fuente" },
+  "outputPathDesc_main": {
+    "message": "Ruta al archivo o directorio donde se almacenarán los archivos CSS + mapa fuente"
+  },
   "outputPathDesc_extra": { "message": "en relación con la raíz de entrada (si no se proporciona, se utiliza css/)" },
   "optionDesc_dryRun": { "message": "En realidad, no compile los archivos, solo muestre si se procesarán" },
   "optionDesc_dotfolders": { "message": "Incluir carpetas de puntos en la búsqueda de archivos" },
   "optionDesc_noSourceMaps": { "message": "Evitar que se generen mapas de origen" },
   "optionDesc_noMinify": { "message": "Desactivar la minificación del CSS de salida" },
   "optionDesc_noRecursion": { "message": "Desactivar la búsqueda recursiva de archivos" },
-  "optionDesc_copy": { "message": "Copie el CSS compilado en el portapapeles en lugar de escribir en el archivo si se procesa un solo archivo de origen" },
-  "optionDesc_relativeOutput": { "message": "Archivos de salida relativos a cada archivo de origen en lugar de a la raíz de entrada" },
+  "optionDesc_copy": {
+    "message": "Copie el CSS compilado en el portapapeles en lugar de escribir en el archivo si se procesa un solo archivo de origen"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Archivos de salida relativos a cada archivo de origen en lugar de a la raíz de entrada"
+  },
   "optionDesc_quiet": { "message": "Suprimir todos los registros excepto los errores" },
   "optionDesc_ignores": { "message": "Archivos/directorios a excluir de la compilación" },
   "optionDesc_commentMain": { "message": "Anterior comentario de encabezado a CSS compilado" },

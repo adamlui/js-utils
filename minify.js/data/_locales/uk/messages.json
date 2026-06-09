@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Помилка читання версії локального пакета" },
   "error_notRecognized": { "message": "не розпізнаний" },
   "error_nonPositiveNum": { "message": "аргумент може бути лише > 0" },
+  "error_requiresVal": { "message": "вимагає значення" },
   "error_invalidFilepath": { "message": "має бути дійсним існуючим шляхом до файлу. Отримано" },
   "error_invalidLangCode": { "message": "є недійсним кодом мови" },
   "error_invalidURL": { "message": "Недійсна URL-адреса" },
@@ -55,17 +56,23 @@
   "helpSection_params": { "message": "Параметри параметрів" },
   "helpSection_cmds": { "message": "Інформаційні команди" },
   "optionDesc_uiLang": { "message": "Код мови ISO 639-1 для відображення інтерфейсу користувача" },
-  "inputPathDesc_main": { "message": "Шлях до файлу або каталогу JavaScript, що містить файли JavaScript, які потрібно мінімізувати" },
+  "inputPathDesc_main": {
+    "message": "Шлях до файлу або каталогу JavaScript, що містить файли JavaScript, які потрібно мінімізувати"
+  },
   "inputPathDesc_extra": { "message": "відносно поточного робочого каталогу" },
   "outputPathDesc_main": { "message": "Шлях до файлу або каталогу, де будуть зберігатися мініфіковані файли" },
-  "outputPathDesc_extra": { "message": "відносно початкового розташування файлу (якщо не вказано, використовується min/)" },
+  "outputPathDesc_extra": {
+    "message": "відносно початкового розташування файлу (якщо не вказано, використовується min/)"
+  },
   "optionDesc_dryRun": { "message": "Насправді не мінімізуйте файли, просто покажіть, чи будуть вони оброблені" },
   "optionDesc_dotfolders": { "message": "Включити папки з крапками в пошук файлів" },
   "optionDesc_dotfiles": { "message": "Включити крапкові файли в пошук файлів" },
   "optionDesc_noRecursion": { "message": "Вимкнути рекурсивний пошук файлів" },
   "optionDesc_noMangle": { "message": "Вимкнути каліцтво імен" },
   "optionDesc_noFilenameChange": { "message": "Вимкнути зміну розширення файлу на .min.js" },
-  "optionDesc_copy": { "message": "Скопіюйте мініфікований код до буфера обміну замість запису до файлу, якщо обробляється один вихідний файл" },
+  "optionDesc_copy": {
+    "message": "Скопіюйте мініфікований код до буфера обміну замість запису до файлу, якщо обробляється один вихідний файл"
+  },
   "optionDesc_relativeOutput": { "message": "Вихідні файли відносно кожного вихідного файлу замість вхідного кореня" },
   "optionDesc_rewriteImports": { "message": "Оновлення шляхів імпорту з .js до .min.js" },
   "optionDesc_quiet": { "message": "Придушити всі журнали, крім помилок" },

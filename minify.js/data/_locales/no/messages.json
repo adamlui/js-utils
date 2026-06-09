@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Feil ved lesing av lokal pakkeversjon" },
   "error_notRecognized": { "message": "ikke gjenkjent" },
   "error_nonPositiveNum": { "message": "argumentet kan bare være > 0" },
+  "error_requiresVal": { "message": "krever en verdi" },
   "error_invalidFilepath": { "message": "må være en gyldig eksisterende filsti. Fikk" },
   "error_invalidLangCode": { "message": "er en ugyldig språkkode" },
   "error_invalidURL": { "message": "Ugyldig nettadresse" },
@@ -55,17 +56,23 @@
   "helpSection_params": { "message": "Parameteralternativer" },
   "helpSection_cmds": { "message": "Kommandoer" },
   "optionDesc_uiLang": { "message": "ISO 639-1-kode for språk som skal vises brukergrensesnitt i" },
-  "inputPathDesc_main": { "message": "Sti til JavaScript-fil eller katalog som inneholder JavaScript-filer som skal minimeres" },
+  "inputPathDesc_main": {
+    "message": "Sti til JavaScript-fil eller katalog som inneholder JavaScript-filer som skal minimeres"
+  },
   "inputPathDesc_extra": { "message": "i forhold til gjeldende arbeidsmappe" },
   "outputPathDesc_main": { "message": "Sti til fil eller katalog der minifiserte filer skal lagres" },
-  "outputPathDesc_extra": { "message": "i forhold til den opprinnelige filplasseringen (hvis ikke oppgitt, brukes min/)" },
+  "outputPathDesc_extra": {
+    "message": "i forhold til den opprinnelige filplasseringen (hvis ikke oppgitt, brukes min/)"
+  },
   "optionDesc_dryRun": { "message": "Ikke minimer filen(e), bare vis om de vil bli behandlet" },
   "optionDesc_dotfolders": { "message": "Inkluder punktmapper i filsøk" },
   "optionDesc_dotfiles": { "message": "Inkluder dotfiles i filsøk" },
   "optionDesc_noRecursion": { "message": "Deaktiver rekursiv filsøking" },
   "optionDesc_noMangle": { "message": "Deaktiver navneforfalskning" },
   "optionDesc_noFilenameChange": { "message": "Deaktiver endring av filtype til .min.js" },
-  "optionDesc_copy": { "message": "Kopier forminsket kode til utklippstavlen i stedet for å skrive til filen hvis en enkelt kildefil behandles" },
+  "optionDesc_copy": {
+    "message": "Kopier forminsket kode til utklippstavlen i stedet for å skrive til filen hvis en enkelt kildefil behandles"
+  },
   "optionDesc_relativeOutput": { "message": "Utdatafiler relativt til hver kildefil i stedet for til inputrotfilen" },
   "optionDesc_rewriteImports": { "message": "Oppdater importstier fra .js til .min.js" },
   "optionDesc_quiet": { "message": "Undertrykk all logging unntatt feil" },

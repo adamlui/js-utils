@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Klaida skaitant vietinio paketo versiją" },
   "error_notRecognized": { "message": "neatpažintas" },
   "error_nonPositiveNum": { "message": "argumentas gali būti tik > 0" },
+  "error_requiresVal": { "message": "reikia reikšmės" },
   "error_invalidFilepath": { "message": "turi būti galiojantis esamo failo kelias. Gauta" },
   "error_invalidLangCode": { "message": "yra neteisingas kalbos kodas" },
   "error_invalidURL": { "message": "Neteisingas URL" },
@@ -65,8 +66,12 @@
   "optionDesc_noSourceMaps": { "message": "Neleisti generuoti šaltinių žemėlapių" },
   "optionDesc_noMinify": { "message": "Išjungti išvesties CSS sumažinimą" },
   "optionDesc_noRecursion": { "message": "Išjungti rekursinę failų paiešką" },
-  "optionDesc_copy": { "message": "Nukopijuokite sukompiliuotą CSS į iškarpinę, o ne rašykite į failą, jei apdorojamas vieno šaltinio failas" },
-  "optionDesc_relativeOutput": { "message": "Išvesties failai, susiję su kiekvienu šaltinio failu, o ne su įvesties šaknimi" },
+  "optionDesc_copy": {
+    "message": "Nukopijuokite sukompiliuotą CSS į iškarpinę, o ne rašykite į failą, jei apdorojamas vieno šaltinio failas"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Išvesties failai, susiję su kiekvienu šaltinio failu, o ne su įvesties šaknimi"
+  },
   "optionDesc_quiet": { "message": "Slėpti visus registravimus, išskyrus klaidas" },
   "optionDesc_ignores": { "message": "Į kompiliaciją neįtraukiami failai/katalogai" },
   "optionDesc_commentMain": { "message": "Iš anksto pridėti antraštės komentarą prie sukompiliuoto CSS" },

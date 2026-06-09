@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Жергілікті пакет нұсқасын оқу қатесі" },
   "error_notRecognized": { "message": "мойындалмады" },
   "error_nonPositiveNum": { "message": "аргумент тек > 0 болуы мүмкін" },
+  "error_requiresVal": { "message": "мәнді қажет етеді" },
   "error_invalidFilepath": { "message": "қолданыстағы файл жолы болуы керек. Алынған" },
   "error_invalidLangCode": { "message": "жарамсыз тіл коды болып табылады" },
   "error_invalidURL": { "message": "Жарамсыз URL" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "Бастапқы карталардың пайда болуына жол бермеңіз" },
   "optionDesc_noMinify": { "message": "Шығыс CSS минификациясын өшіру" },
   "optionDesc_noRecursion": { "message": "Рекурсивті файлды іздеуді өшіру" },
-  "optionDesc_copy": { "message": "Жинақталған CSS-ті бір бастапқы файл өңделсе, файлға жазу орнына алмасу буферіне көшіру" },
+  "optionDesc_copy": {
+    "message": "Жинақталған CSS-ті бір бастапқы файл өңделсе, файлға жазу орнына алмасу буферіне көшіру"
+  },
   "optionDesc_relativeOutput": { "message": "Кіріс түбіріне емес, әр бастапқы файлға қатысты шығыс файлдары" },
   "optionDesc_quiet": { "message": "Қателерден басқа барлық жүйеге кіруді болдырмау" },
   "optionDesc_ignores": { "message": "Компиляциядан шығарылатын файлдар/каталогтар" },

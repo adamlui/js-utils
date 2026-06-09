@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Орон нутгийн багцын хувилбарыг уншихад алдаа гарлаа" },
   "error_notRecognized": { "message": "тодорхойгүй" },
   "error_nonPositiveNum": { "message": "аргумент нь зөвхөн > 0 байж болно" },
+  "error_requiresVal": { "message": "үнэ цэнийг шаарддаг" },
   "error_invalidFilepath": { "message": "хүчин төгөлдөр файлын зам байх ёстой. Got" },
   "error_invalidLangCode": { "message": "буруу хэлний код байна" },
   "error_invalidURL": { "message": "Хүчингүй URL" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "Үүсгэсэн эх газрын зургийг урьдчилан сэргийлэх" },
   "optionDesc_noMinify": { "message": "Гаралтын CSSийг багасгахыг идэвхгүй болгох" },
   "optionDesc_noRecursion": { "message": "Recursive файл хайхыг идэвхгүй болгох" },
-  "optionDesc_copy": { "message": "Нэг эх файл боловсруулагдсан бол файл руу бичиж бичихийн оронд CSS-ийг нэгтгэсэн хуулах" },
+  "optionDesc_copy": {
+    "message": "Нэг эх файл боловсруулагдсан бол файл руу бичиж бичихийн оронд CSS-ийг нэгтгэсэн хуулах"
+  },
   "optionDesc_relativeOutput": { "message": "Оруулахын оронд эх файл бүртэй холбоотой гаралтын файлууд" },
   "optionDesc_quiet": { "message": "Алдаанаас бусад бүх бүртгэлийг арилгах" },
   "optionDesc_ignores": { "message": "Бүртгэлээс хасах файл/сан" },

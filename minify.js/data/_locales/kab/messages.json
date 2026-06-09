@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Tuccḍa taɣuri n uḍebsi amezwaru" },
   "error_notRecognized": { "message": "ur yettwassnen ara" },
   "error_nonPositiveNum": { "message": "izmir Izmir > 0" },
+  "error_requiresVal": { "message": "teḥwaǧ azal" },
   "error_invalidFilepath": { "message": "ilaq ad yili d abrid n ufaylu yettwaxedmen. Ilaq ad" },
   "error_invalidLangCode": { "message": "idioma deg xinag - Idioma deg xinag -" },
   "error_invalidURL": { "message": "URL mačči d tarameγtut" },
@@ -55,7 +56,9 @@
   "helpSection_params": { "message": "Iɣewwaṛen n uzegrir" },
   "helpSection_cmds": { "message": "Iɣewwaṛen n isefka" },
   "optionDesc_uiLang": { "message": "Tutlayt ISO 639-1 i wakken ad d-tban deg" },
-  "inputPathDesc_main": { "message": "Abrid ɣer ufaylu JavaScript neɣ afaylu n tbaḍnit yesɛan isefka JavaScript i ilaq ad yettwakksen" },
+  "inputPathDesc_main": {
+    "message": "Abrid ɣer ufaylu JavaScript neɣ afaylu n tbaḍnit yesɛan isefka JavaScript i ilaq ad yettwakksen"
+  },
   "inputPathDesc_extra": { "message": "relatif à la recherche d 'un plan cul" },
   "outputPathDesc_main": { "message": "Abrid ɣer ufaylu neɣ aɣbalu anida ara yettwasekles yifuyla yettwasekles" },
   "outputPathDesc_extra": { "message": "asebter n ufaylu amezwaru (ma yella ur yettwaseqdac ara, min/ yettwaseqdac)" },
@@ -65,7 +68,9 @@
   "optionDesc_noRecursion": { "message": "Snulfu afaylu yettnadi" },
   "optionDesc_noMangle": { "message": "Snifel ismawen n tmaziɣt" },
   "optionDesc_noFilenameChange": { "message": "Kkes asenfaṛ n ufaylu i .min.js" },
-  "optionDesc_copy": { "message": "Kkes aɣbalu yettwafernen ɣer tkarḍa n uḍebsi wala tira ɣer ufaylu ma yella yettwaseqdec ufaylu n udiwenni kan" },
+  "optionDesc_copy": {
+    "message": "Kkes aɣbalu yettwafernen ɣer tkarḍa n uḍebsi wala tira ɣer ufaylu ma yella yettwaseqdec ufaylu n udiwenni kan"
+  },
   "optionDesc_relativeOutput": { "message": "Asebded n yifuyla i yal afaylu n uɣbalu n uɣbalu wala ad yekcem aẓar" },
   "optionDesc_rewriteImports": { "message": "Asebded iberdan seg .js ar .min.js" },
   "optionDesc_quiet": { "message": "Sizdeg akk tuccḍiwin anagar tuccḍiwin" },

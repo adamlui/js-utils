@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "స్థానిక ప్యాకేజీ సంస్కరణను చదవడంలో లోపం" },
   "error_notRecognized": { "message": "గుర్తించబడలేదు" },
   "error_nonPositiveNum": { "message": "ఆర్గ్యుమెంట్ > 0 మాత్రమే ఉంటుంది" },
+  "error_requiresVal": { "message": "విలువ అవసరం" },
   "error_invalidFilepath": { "message": "చెల్లుబాటు అయ్యే ఫైల్ మార్గం అయి ఉండాలి. వచ్చింది" },
   "error_invalidLangCode": { "message": "చెల్లని భాషా కోడ్" },
   "error_invalidURL": { "message": "చెల్లని URL" },
@@ -55,7 +56,9 @@
   "helpSection_params": { "message": "పరామితి ఎంపికలు" },
   "helpSection_cmds": { "message": "సమాచార ఆదేశాలు" },
   "optionDesc_uiLang": { "message": "UIని ప్రదర్శించడానికి ISO 639-1 భాషా కోడ్" },
-  "inputPathDesc_main": { "message": "జావాస్క్రిప్ట్ ఫైల్ ‌ కు మార్గం లేదా చిన్నదిగా చేయవలసిన జావాస్క్రిప్ట్ ఫైల్ ‌ లను కలిగి ఉన్న డైరెక్టరీ" },
+  "inputPathDesc_main": {
+    "message": "జావాస్క్రిప్ట్ ఫైల్ ‌ కు మార్గం లేదా చిన్నదిగా చేయవలసిన జావాస్క్రిప్ట్ ఫైల్ ‌ లను కలిగి ఉన్న డైరెక్టరీ"
+  },
   "inputPathDesc_extra": { "message": "ప్రస్తుత వర్కింగ్ డైరెక్టరీకి సంబంధించి" },
   "outputPathDesc_main": { "message": "మినిఫైడ్ ఫైల్ ‌ లు నిల్వ చేయబడే ఫైల్ లేదా డైరెక్టరీకి మార్గం" },
   "outputPathDesc_extra": { "message": "అసలు ఫైల్ స్థానానికి సంబంధించి (అందించకపోతే, నిమి/ ఉపయోగించబడుతుంది)" },
@@ -65,8 +68,12 @@
   "optionDesc_noRecursion": { "message": "పునరావృత ఫైల్ శోధనను నిలిపివేయండి" },
   "optionDesc_noMangle": { "message": "మాంగ్లింగ్ పేర్లను నిలిపివేయండి" },
   "optionDesc_noFilenameChange": { "message": ".min.jsకు ఫైల్ పొడిగింపును మార్చడాన్ని నిలిపివేయండి" },
-  "optionDesc_copy": { "message": "సింగిల్ సోర్స్ ఫైల్ ప్రాసెస్ చేయబడితే ఫైల్ ‌ కు రాయడానికి బదులుగా మినిఫైడ్ కోడ్ ‌ ను క్లిప్ ‌ బోర్డ్ ‌ కు కాపీ చేయండి" },
-  "optionDesc_relativeOutput": { "message": "ఇన్ ‌ పుట్ రూట్ ‌ కు బదులుగా ప్రతి సోర్స్ ఫైల్ ‌ కు సంబంధించిన అవుట్ ‌ పుట్ ఫైల్స్" },
+  "optionDesc_copy": {
+    "message": "సింగిల్ సోర్స్ ఫైల్ ప్రాసెస్ చేయబడితే ఫైల్ ‌ కు రాయడానికి బదులుగా మినిఫైడ్ కోడ్ ‌ ను క్లిప్ ‌ బోర్డ్ ‌ కు కాపీ చేయండి"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "ఇన్ ‌ పుట్ రూట్ ‌ కు బదులుగా ప్రతి సోర్స్ ఫైల్ ‌ కు సంబంధించిన అవుట్ ‌ పుట్ ఫైల్స్"
+  },
   "optionDesc_rewriteImports": { "message": ".js నుండి .min.js వరకు దిగుమతి మార్గాలను అప్ ‌ డేట్ చేయండి" },
   "optionDesc_quiet": { "message": "లోపాలు మినహా అన్ని లాగింగ్ ‌ లను అణచివేయండి" },
   "optionDesc_ignores": { "message": "మినిఫికేషన్ నుండి మినహాయించాల్సిన ఫైల్స్/డైరెక్టరీలు" },

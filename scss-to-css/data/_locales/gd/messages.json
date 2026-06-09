@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Mearachd a 'leughadh dreach ionadail a' phacaid" },
   "error_notRecognized": { "message": "gun aithneachadh" },
   "error_nonPositiveNum": { "message": "chan urrainn dha a bhith ach 0" },
+  "error_requiresVal": { "message": "tha feum air luach" },
   "error_invalidFilepath": { "message": "feumaidh gur e slighe faidhle dhligheach a th 'ann. Got" },
   "error_invalidLangCode": { "message": "'S e eadar - theangair neo - eisimeileach a th' ann" },
   "error_invalidURL": { "message": "URL neo-dhligheach" },
@@ -17,7 +18,9 @@
   "error_failedToFetchGlobalVer": { "message": "Dh'fhàillig le togail an tionndaidh choitcheann" },
   "error_failedToFetchSysLang": { "message": "Dh'fhàillig le togail cànan an t - siostaim" },
   "error_mustIncludePath": { "message": "feumaidh gu bheil an t - slighe" },
-  "error_firstArgNotExist": { "message": "Chan urrainn don chiad argamaid a bhith ach faidhle no pasgan a tha ann mar - thà" },
+  "error_firstArgNotExist": {
+    "message": "Chan urrainn don chiad argamaid a bhith ach faidhle no pasgan a tha ann mar - thà"
+  },
   "error_doesNotExist": { "message": "Chan eil am faidhle ann" },
   "warn_configFileExists": { "message": "Tha am faidhle rèiteachaidh ann mar - thà" },
   "warn_docLocalesFetchFailed": { "message": "Dh'fhàillig le faighinn locales doc" },
@@ -56,17 +59,27 @@
   "helpSection_params": { "message": "Roghainnean a 'pharaiméadair" },
   "helpSection_cmds": { "message": "ÀITHNEACHDAN" },
   "optionDesc_uiLang": { "message": "ISO 639 -1 Code of Language gus UI a thaisbeanadh ann an UI" },
-  "inputPathDesc_main": { "message": "Slighe gu faidhle no pasgan SCSS anns a bheil faidhlichean SCSS ri chur ri chèile" },
+  "inputPathDesc_main": {
+    "message": "Slighe gu faidhle no pasgan SCSS anns a bheil faidhlichean SCSS ri chur ri chèile"
+  },
   "inputPathDesc_extra": { "message": "an Stiùireadh Obrach a th 'ann an - diugh" },
-  "outputPathDesc_main": { "message": "An t - slighe gu faidhle no pasgan far am bi faidhlichean mapa - stòr CSS + air an stòradh" },
+  "outputPathDesc_main": {
+    "message": "An t - slighe gu faidhle no pasgan far am bi faidhlichean mapa - stòr CSS + air an stòradh"
+  },
   "outputPathDesc_extra": { "message": "ro - ràdh (mura h - eil e air a thoirt seachad, tha css/air a chleachdadh)" },
-  "optionDesc_dryRun": { "message": "Na bi a 'cruinneachadh an fhaidhle(s), dìreach seall a bheil iad air an giullachd" },
+  "optionDesc_dryRun": {
+    "message": "Na bi a 'cruinneachadh an fhaidhle(s), dìreach seall a bheil iad air an giullachd"
+  },
   "optionDesc_dotfolders": { "message": "Cuir pasgain a - steach ann an lorg nam faidhle" },
   "optionDesc_noSourceMaps": { "message": "Cuir bacadh air mapaichean bho thùs bho bhith air an cruthachadh" },
   "optionDesc_noMinify": { "message": "Cuir à comas minification an toraidh CSS" },
   "optionDesc_noRecursion": { "message": "Cuir à comas lorg nam faidhle ath - chùrsach" },
-  "optionDesc_copy": { "message": "Dèan lethbhreac dhen CSS a chaidh a chur ri chèile air an stòr - bhòrd an àite a bhith a 'sgrìobhadh dhan fhaidhle ma thèid am faidhle tùsail singilte a phròiseasadh" },
-  "optionDesc_relativeOutput": { "message": "Faidhlichean an às - chuir co - cheangailte ri gach faidhle tùsail an àite a bhith a 'cur freumh a - steach" },
+  "optionDesc_copy": {
+    "message": "Dèan lethbhreac dhen CSS a chaidh a chur ri chèile air an stòr - bhòrd an àite a bhith a 'sgrìobhadh dhan fhaidhle ma thèid am faidhle tùsail singilte a phròiseasadh"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Faidhlichean an às - chuir co - cheangailte ri gach faidhle tùsail an àite a bhith a 'cur freumh a - steach"
+  },
   "optionDesc_quiet": { "message": "Cuir às do gach logadh ach a - mhàin mearachdan" },
   "optionDesc_ignores": { "message": "Faidhlichean/pasganan airson an dùnadh a - mach à cruinneachadh" },
   "optionDesc_commentMain": { "message": "Prepend header comment to compiled CSS" },

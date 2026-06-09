@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Lasot lokālās pakotnes versiju, radās kļūda" },
   "error_notRecognized": { "message": "Nav atpazīts" },
   "error_nonPositiveNum": { "message": "arguments var būt tikai > 0" },
+  "error_requiresVal": { "message": "nepieciešama vērtība" },
   "error_invalidFilepath": { "message": "jābūt derīgam esošam faila ceļam. Iegūts" },
   "error_invalidLangCode": { "message": "ir nederīgs valodas kods" },
   "error_invalidURL": { "message": "NederÄ«gs URI:% 1" },
@@ -55,17 +56,23 @@
   "helpSection_params": { "message": "Parametru opcijas" },
   "helpSection_cmds": { "message": "Informācijas komandas" },
   "optionDesc_uiLang": { "message": "ISO 639-1 valodas kods, lai parādītu UI" },
-  "inputPathDesc_main": { "message": "Ceļš uz JavaScript failu vai direktoriju, kas satur minimizējamos JavaScript failus" },
+  "inputPathDesc_main": {
+    "message": "Ceļš uz JavaScript failu vai direktoriju, kas satur minimizējamos JavaScript failus"
+  },
   "inputPathDesc_extra": { "message": "attiecībā pret pašreizējo darba direktoriju" },
   "outputPathDesc_main": { "message": "Ceļš uz failu vai direktoriju, kurā tiks glabāti minimizētie faili" },
-  "outputPathDesc_extra": { "message": "attiecībā pret sākotnējo faila atrašanās vietu (ja nav norādīts, tiek izmantots min/)" },
+  "outputPathDesc_extra": {
+    "message": "attiecībā pret sākotnējo faila atrašanās vietu (ja nav norādīts, tiek izmantots min/)"
+  },
   "optionDesc_dryRun": { "message": "Faktiski nesamaziniet failu(-us), vienkārši parādiet, vai tie tiks apstrādāti" },
   "optionDesc_dotfolders": { "message": "Iekļaut punktu mapes failu meklēšanā" },
   "optionDesc_dotfiles": { "message": "Iekļaut dotfailus failu meklēšanā" },
   "optionDesc_noRecursion": { "message": "Atspējot rekursīvo failu meklēšanu" },
   "optionDesc_noMangle": { "message": "Atspējot vārdu sakārtošanu" },
   "optionDesc_noFilenameChange": { "message": "Atspējot faila paplašinājuma maiņu uz .min.js" },
-  "optionDesc_copy": { "message": "Kopējiet samazināto kodu starpliktuvē, nevis rakstiet failā, ja tiek apstrādāts viena avota fails" },
+  "optionDesc_copy": {
+    "message": "Kopējiet samazināto kodu starpliktuvē, nevis rakstiet failā, ja tiek apstrādāts viena avota fails"
+  },
   "optionDesc_relativeOutput": { "message": "Izvades faili attiecībā pret katru avota failu, nevis uz ievades sakni" },
   "optionDesc_rewriteImports": { "message": "Atjauniniet importēšanas ceļus no .js uz .min.js" },
   "optionDesc_quiet": { "message": "Aizliegt visu reģistrēšanu, izņemot kļūdas" },

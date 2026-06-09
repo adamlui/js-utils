@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ਲੋਕਲ ਪੈਕੇਜ ਵਰਜਨ ਪੜ੍ਹਨ ਦੌਰਾਨ ਗਲਤੀ" },
   "error_notRecognized": { "message": "ਪਛਾਣਿਆ ਨਹੀਂ ਗਿਆ" },
   "error_nonPositiveNum": { "message": "ਦਲੀਲ ਸਿਰਫ > 0 ਹੋ ਸਕਦੀ ਹੈ" },
+  "error_requiresVal": { "message": "ਮੁੱਲ ਦੀ ਲੋੜ ਹੈ" },
   "error_invalidFilepath": { "message": "ਇੱਕ ਵੈਧ ਮੌਜੂਦਾ ਫਾਇਲ ਮਾਰਗ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ । GOT" },
   "error_invalidLangCode": { "message": "ਇੱਕ ਅਵੈਧ ਭਾਸ਼ਾ ਕੋਡ ਹੈ" },
   "error_invalidURL": { "message": "ਅਵੈਧ URL" },
@@ -55,17 +56,23 @@
   "helpSection_params": { "message": "ਪੈਰਾਮੀਟਰ ਵਿਕਲਪ" },
   "helpSection_cmds": { "message": "ਹੁਕਮ" },
   "optionDesc_uiLang": { "message": "ਵਿੱਚ UI ਵੇਖਾਉਣ ਲਈ ਭਾਸ਼ਾ ਦਾ ISO 639-1 ਕੋਡ" },
-  "inputPathDesc_main": { "message": "JavaScript ਫਾਈਲ ਜਾਂ ਡਾਇਰੈਕਟਰੀ ਲਈ ਮਾਰਗ ਜਿਸ ਵਿੱਚ JavaScript ਫਾਈਲਾਂ ਨੂੰ ਛੋਟਾ ਕੀਤਾ ਜਾਣਾ ਹੈ" },
+  "inputPathDesc_main": {
+    "message": "JavaScript ਫਾਈਲ ਜਾਂ ਡਾਇਰੈਕਟਰੀ ਲਈ ਮਾਰਗ ਜਿਸ ਵਿੱਚ JavaScript ਫਾਈਲਾਂ ਨੂੰ ਛੋਟਾ ਕੀਤਾ ਜਾਣਾ ਹੈ"
+  },
   "inputPathDesc_extra": { "message": "ਮੌਜੂਦਾ ਵਰਕਿੰਗ ਡਾਇਰੈਕਟਰੀ ਦੇ ਅਨੁਸਾਰ" },
   "outputPathDesc_main": { "message": "ਫਾਈਲ ਜਾਂ ਡਾਇਰੈਕਟਰੀ ਦਾ ਮਾਰਗ ਜਿੱਥੇ ਮਿਨੀਫਾਈਡ ਫਾਈਲਾਂ ਸਟੋਰ ਕੀਤੀਆਂ ਜਾਣਗੀਆਂ।" },
   "outputPathDesc_extra": { "message": "ਅਸਲੀ ਫਾਈਲ ਟਿਕਾਣੇ ਦੇ ਅਨੁਸਾਰ (ਜੇਕਰ ਨਹੀਂ ਦਿੱਤਾ ਗਿਆ ਹੈ, ਤਾਂ min/ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ)" },
-  "optionDesc_dryRun": { "message": "ਫਾਈਲਾਂ ਨੂੰ ਅਸਲ ਵਿੱਚ ਛੋਟਾ ਨਾ ਕਰੋ, ਸਿਰਫ਼ ਇਹ ਦਿਖਾਓ ਕਿ ਕੀ ਉਹਨਾਂ 'ਤੇ ਕਾਰਵਾਈ ਕੀਤੀ ਜਾਵੇਗੀ।" },
+  "optionDesc_dryRun": {
+    "message": "ਫਾਈਲਾਂ ਨੂੰ ਅਸਲ ਵਿੱਚ ਛੋਟਾ ਨਾ ਕਰੋ, ਸਿਰਫ਼ ਇਹ ਦਿਖਾਓ ਕਿ ਕੀ ਉਹਨਾਂ 'ਤੇ ਕਾਰਵਾਈ ਕੀਤੀ ਜਾਵੇਗੀ।"
+  },
   "optionDesc_dotfolders": { "message": "ਫਾਈਲ ਖੋਜ ਵਿੱਚ ਡੌਟਫੋਲਡਰ ਸ਼ਾਮਲ ਕਰੋ" },
   "optionDesc_dotfiles": { "message": "ਫਾਈਲ ਖੋਜ ਵਿੱਚ ਡੌਟਫਾਈਲਾਂ ਸ਼ਾਮਲ ਕਰੋ" },
   "optionDesc_noRecursion": { "message": "ਰਿਕਰਸਿਵ ਫਾਈਲ ਖੋਜ ਨੂੰ ਅਯੋਗ ਕਰੋ" },
   "optionDesc_noMangle": { "message": "ਨਾਮਾਂ ਨੂੰ ਜੋੜਨਾ ਬੰਦ ਕਰੋ" },
   "optionDesc_noFilenameChange": { "message": ".min.js ਲਈ ਫਾਇਲ ਐਕਸਟੈਂਸ਼ਨ ਬਦਲਣਾ ਆਯੋਗ" },
-  "optionDesc_copy": { "message": "ਫਾਈਲ ਵਿੱਚ ਲਿਖਣ ਦੀ ਬਜਾਏ ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਮਿਨੀਫਾਈਡ ਕੋਡ ਦੀ ਨਕਲ ਕਰੋ ਜੇ ਸਿੰਗਲ ਸਰੋਤ ਫਾਈਲ ਤੇ ਕਾਰਵਾਈ ਕੀਤੀ ਜਾਂਦੀ ਹੈ" },
+  "optionDesc_copy": {
+    "message": "ਫਾਈਲ ਵਿੱਚ ਲਿਖਣ ਦੀ ਬਜਾਏ ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਮਿਨੀਫਾਈਡ ਕੋਡ ਦੀ ਨਕਲ ਕਰੋ ਜੇ ਸਿੰਗਲ ਸਰੋਤ ਫਾਈਲ ਤੇ ਕਾਰਵਾਈ ਕੀਤੀ ਜਾਂਦੀ ਹੈ"
+  },
   "optionDesc_relativeOutput": { "message": "ਇੰਪੁੱਟ ਰੂਟ ਦੀ ਬਜਾਏ ਹਰੇਕ ਸਰੋਤ ਫਾਇਲ ਨਾਲ ਸੰਬੰਧਿਤ ਆਉਟਪੁੱਟ ਫਾਇਲਾਂ" },
   "optionDesc_rewriteImports": { "message": ".js ਤੋਂ .min.js ਲਈ ਇੰਪੋਰਟ ਮਾਰਗ ਅੱਪਡੇਟ ਕਰੋ" },
   "optionDesc_quiet": { "message": "ਗਲਤੀਆਂ ਨੂੰ ਛੱਡ ਕੇ ਸਾਰੇ ਲੌਗਿੰਗ ਨੂੰ ਦਬਾਓ" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "S'ha produït un error en llegir la vers" },
   "error_notRecognized": { "message": "no reconegut" },
   "error_nonPositiveNum": { "message": "l'argument només pot ser > 0" },
+  "error_requiresVal": { "message": "requereix un valor" },
   "error_invalidFilepath": { "message": "ha de ser un camí d'accés al fitxer vàlid existent. D'acord" },
   "error_invalidLangCode": { "message": "és un codi d'idioma no vàlid" },
   "error_invalidURL": { "message": "Adreça URL no vàlida" },
@@ -55,18 +56,26 @@
   "helpSection_params": { "message": "Opcions de paràmetres" },
   "helpSection_cmds": { "message": "Ordres d'informació" },
   "optionDesc_uiLang": { "message": "Codi de llengua ISO 639-1 per mostrar la interfície d'usuari" },
-  "inputPathDesc_main": { "message": "Ruta al fitxer JavaScript o directori que conté fitxers JavaScript que s'han de minificar" },
+  "inputPathDesc_main": {
+    "message": "Ruta al fitxer JavaScript o directori que conté fitxers JavaScript que s'han de minificar"
+  },
   "inputPathDesc_extra": { "message": "en relació amb el directori de treball actual" },
   "outputPathDesc_main": { "message": "Ruta al fitxer o directori on s'emmagatzemaran els fitxers minificats" },
-  "outputPathDesc_extra": { "message": "en relació amb la ubicació original del fitxer (si no s'indica, s'utilitza min/)" },
+  "outputPathDesc_extra": {
+    "message": "en relació amb la ubicació original del fitxer (si no s'indica, s'utilitza min/)"
+  },
   "optionDesc_dryRun": { "message": "En realitat, no minifiquis els fitxers, només mostra si es processaran" },
   "optionDesc_dotfolders": { "message": "Inclou carpetes de punts a la cerca de fitxers" },
   "optionDesc_dotfiles": { "message": "Inclou els fitxers de punt a la cerca de fitxers" },
   "optionDesc_noRecursion": { "message": "Desactiva la cerca recursiva de fitxers" },
   "optionDesc_noMangle": { "message": "Inhabilita els noms de manipulació" },
   "optionDesc_noFilenameChange": { "message": "Desactiva el canvi de l'extensió del fitxer a .min.js" },
-  "optionDesc_copy": { "message": "Copia el codi minificat al porta-retalls en lloc d'escriure al fitxer si es processa un únic fitxer font" },
-  "optionDesc_relativeOutput": { "message": "Fitxers de sortida relatius a cada fitxer font en lloc d'a l'arrel d'entrada" },
+  "optionDesc_copy": {
+    "message": "Copia el codi minificat al porta-retalls en lloc d'escriure al fitxer si es processa un únic fitxer font"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Fitxers de sortida relatius a cada fitxer font en lloc d'a l'arrel d'entrada"
+  },
   "optionDesc_rewriteImports": { "message": "Actualitza els camins d'importació de .js a .min.js" },
   "optionDesc_quiet": { "message": "Suprimeix tot el registre, excepte els errors" },
   "optionDesc_ignores": { "message": "Fitxers/directoris a excloure de la minificació" },

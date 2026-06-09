@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Fejl ved læsning af lokal pakkeversion" },
   "error_notRecognized": { "message": "Ikke genkendt Ingen" },
   "error_nonPositiveNum": { "message": "argument kan kun være > 0" },
+  "error_requiresVal": { "message": "kræver en værdi" },
   "error_invalidFilepath": { "message": "skal være en gyldig eksisterende filsti. Fik" },
   "error_invalidLangCode": { "message": "er en ugyldig sprogkode" },
   "error_invalidURL": { "message": "Ugyldig URL" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "Forhindre kildekort i at blive genereret" },
   "optionDesc_noMinify": { "message": "Deaktiver minificering af output CSS" },
   "optionDesc_noRecursion": { "message": "Deaktiver rekursiv filsøgning" },
-  "optionDesc_copy": { "message": "Kopier kompileret CSS til udklipsholder i stedet for at skrive til fil, hvis enkelt kildefil behandles" },
+  "optionDesc_copy": {
+    "message": "Kopier kompileret CSS til udklipsholder i stedet for at skrive til fil, hvis enkelt kildefil behandles"
+  },
   "optionDesc_relativeOutput": { "message": "Outputfiler i forhold til hver kildefil i stedet for at indtaste rod" },
   "optionDesc_quiet": { "message": "Undertrykke al logning undtagen fejl" },
   "optionDesc_ignores": { "message": "Filer/kataloger, der skal udelukkes fra kompilering" },

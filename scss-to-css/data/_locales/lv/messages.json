@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Lasot lokālās pakotnes versiju, radās kļūda" },
   "error_notRecognized": { "message": "Nav atpazīts" },
   "error_nonPositiveNum": { "message": "arguments var būt tikai > 0" },
+  "error_requiresVal": { "message": "nepieciešama vērtība" },
   "error_invalidFilepath": { "message": "jābūt derīgam esošam faila ceļam. Iegūts" },
   "error_invalidLangCode": { "message": "ir nederīgs valodas kods" },
   "error_invalidURL": { "message": "NederÄ«gs URI:% 1" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "Neļaut ģenerēt avota kartes" },
   "optionDesc_noMinify": { "message": "Atspējot izvades CSS samazināšanu" },
   "optionDesc_noRecursion": { "message": "Atspējot rekursīvo failu meklēšanu" },
-  "optionDesc_copy": { "message": "Kopējiet kompilēto CSS starpliktuvē, nevis rakstiet failā, ja tiek apstrādāts viena avota fails" },
+  "optionDesc_copy": {
+    "message": "Kopējiet kompilēto CSS starpliktuvē, nevis rakstiet failā, ja tiek apstrādāts viena avota fails"
+  },
   "optionDesc_relativeOutput": { "message": "Izvades faili attiecībā pret katru avota failu, nevis uz ievades sakni" },
   "optionDesc_quiet": { "message": "Aizliegt visu reģistrēšanu, izņemot kļūdas" },
   "optionDesc_ignores": { "message": "No kompilācijas izslēdzamie faili/direktorijas" },

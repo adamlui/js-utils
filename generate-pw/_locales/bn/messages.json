@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "স্থানীয় প্যাকেজ সংস্করণ পড়তে ত্রুটি" },
   "error_notRecognized": { "message": "স্বীকৃত নয়" },
   "error_nonPositiveNum": { "message": "যুক্তি শুধুমাত্র হতে পারে > 0" },
+  "error_requiresVal": { "message": "একটি মান প্রয়োজন" },
   "error_invalidFilepath": { "message": "অবশ্যই একটি বৈধ বিদ্যমান ফাইল পাথ হতে হবে । পেয়েছেন" },
   "error_invalidLangCode": { "message": "একটি অবৈধ ভাষা কোড" },
   "error_invalidURL": { "message": "অবৈধ ইউ- আর- এল" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "পাসওয়ার্ড(গুলি) এ ছোট হাতের অক্ষরগুলিকে অস্বীকার করুন" },
   "optionDesc_noUpper": { "message": "পাসওয়ার্ড(গুলি) -এ বড় হাতের অক্ষরগুলিকে অস্বীকার করুন" },
   "optionDesc_similarChars": { "message": "পাসওয়ার্ড(গুলি) এ অনুরূপ অক্ষর অন্তর্ভুক্ত করুন" },
-  "optionDesc_unstrict": { "message": "পাসওয়ার্ড(গুলি) এ সেট করা প্রতিটি অনুমোদিত অক্ষর থেকে কমপক্ষে একটি অক্ষরের প্রয়োজন নেই" },
+  "optionDesc_unstrict": {
+    "message": "পাসওয়ার্ড(গুলি) এ সেট করা প্রতিটি অনুমোদিত অক্ষর থেকে কমপক্ষে একটি অক্ষরের প্রয়োজন নেই"
+  },
   "optionDesc_noEntropy": { "message": "আনুমানিক এনট্রপি গণনা/লগ করবেন না" },
   "optionDesc_quiet": { "message": "ত্রুটি ব্যতীত সমস্ত লগিং দমন করুন" },
   "optionDesc_help": { "message": "সহায়তা স্ক্রিন প্রদর্শন করুন" },

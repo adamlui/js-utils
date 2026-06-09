@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Ralat membaca versi pakej tempatan" },
   "error_notRecognized": { "message": "Tidak dikonsikan semula" },
   "error_nonPositiveNum": { "message": "argumen hanya boleh > 0" },
+  "error_requiresVal": { "message": "memerlukan nilai" },
   "error_invalidFilepath": { "message": "mesti laluan fail sedia ada yang sah. Dapat" },
   "error_invalidLangCode": { "message": "adalah kod bahasa yang tidak sah" },
   "error_invalidURL": { "message": "URL tidak sah" },
@@ -65,8 +66,12 @@
   "optionDesc_noSourceMaps": { "message": "Halang peta sumber daripada dijana" },
   "optionDesc_noMinify": { "message": "Lumpuhkan minifikasi CSS output" },
   "optionDesc_noRecursion": { "message": "Lumpuhkan carian fail rekursif" },
-  "optionDesc_copy": { "message": "Salin CSS yang dikompilasi ke papan klip dan bukannya menulis ke fail jika fail sumber tunggal diproses" },
-  "optionDesc_relativeOutput": { "message": "Fail output relatif kepada setiap fail sumber dan bukannya kepada akar input" },
+  "optionDesc_copy": {
+    "message": "Salin CSS yang dikompilasi ke papan klip dan bukannya menulis ke fail jika fail sumber tunggal diproses"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Fail output relatif kepada setiap fail sumber dan bukannya kepada akar input"
+  },
   "optionDesc_quiet": { "message": "Sekat semua pembalakan kecuali ralat" },
   "optionDesc_ignores": { "message": "Fail/direktori untuk dikecualikan daripada penyusunan" },
   "optionDesc_commentMain": { "message": "Komen pengepala bergantung kepada CSS yang dikompilasi" },

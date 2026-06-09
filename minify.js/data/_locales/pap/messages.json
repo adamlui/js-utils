@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Read Comentario Biblico Con Ap Pake Version" },
   "error_notRecognized": { "message": "no Reconocido" },
   "error_nonPositiveNum": { "message": "por Soledad > 0" },
+  "error_requiresVal": { "message": "mester di un balor" },
   "error_invalidFilepath": { "message": "mester ta un kaminda di archivo eksistente bálido. Tabatin" },
   "error_invalidLangCode": { "message": "un Codigo Lenguaje Invalido" },
   "error_invalidURL": { "message": "Invalididad URL" },
@@ -55,17 +56,25 @@
   "helpSection_params": { "message": "Opcion Parámetro" },
   "helpSection_cmds": { "message": "Komandante di Informashon" },
   "optionDesc_uiLang": { "message": "Documente similare cu ISO 639-1 Code of Language" },
-  "inputPathDesc_main": { "message": "Camino a Javascript Archivo o directorio conteniendo Javascript Archivos para Minificar" },
+  "inputPathDesc_main": {
+    "message": "Camino a Javascript Archivo o directorio conteniendo Javascript Archivos para Minificar"
+  },
   "inputPathDesc_extra": { "message": "relashoná ku e maneho aktual" },
-  "outputPathDesc_main": { "message": "Página principal > Ciencia > Archivo de archivo de archivo de archivo de archivo de archivo" },
-  "outputPathDesc_extra": { "message": "página principal > Temas Variados > Si No Lo Creo No Lo Creo (Si No Lo Creo No Lo Creo)" },
+  "outputPathDesc_main": {
+    "message": "Página principal > Ciencia > Archivo de archivo de archivo de archivo de archivo de archivo"
+  },
+  "outputPathDesc_extra": {
+    "message": "página principal > Temas Variados > Si No Lo Creo No Lo Creo (Si No Lo Creo No Lo Creo)"
+  },
   "optionDesc_dryRun": { "message": "No descuides el archivo(s), solo descuides el archivo (s)" },
   "optionDesc_dotfolders": { "message": "Dokumen Serupa dengan Archivo de Buscar" },
   "optionDesc_dotfiles": { "message": "Dokumen Serupa dengan Archivo de Buscar" },
   "optionDesc_noRecursion": { "message": "Buscar Archivo Recursivo" },
   "optionDesc_noMangle": { "message": "Mal Di Testa Nombres" },
   "optionDesc_noFilenameChange": { "message": "Cambio de Archivo Extension a .min.js" },
-  "optionDesc_copy": { "message": "Copiar Codigo Minificado Para Clipboard Enbes De Escribir Un Archivo Si Fuera Un Solo Fuente" },
+  "optionDesc_copy": {
+    "message": "Copiar Codigo Minificado Para Clipboard Enbes De Escribir Un Archivo Si Fuera Un Solo Fuente"
+  },
   "optionDesc_relativeOutput": { "message": "Documenti simili a Archivo de Fuente enbes de Ingreso" },
   "optionDesc_rewriteImports": { "message": "Importacion de camiones .JS a .min.JS" },
   "optionDesc_quiet": { "message": "Tur Kuliner di Kuliner Kuliner" },

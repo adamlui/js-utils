@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Gwall wrth ddarllen fersiwn pecyn lleol" },
   "error_notRecognized": { "message": "heb ei gydnabod" },
   "error_nonPositiveNum": { "message": "gall fod yn 0 yn unig" },
+  "error_requiresVal": { "message": "mae angen gwerth" },
   "error_invalidFilepath": { "message": "rhaid iddo fod yn llwybr ffeil dilys sy'n bodoli eisoes. Wedi" },
   "error_invalidLangCode": { "message": "iaith annilys" },
   "error_invalidURL": { "message": "URL annilys" },
@@ -17,7 +18,9 @@
   "error_failedToFetchGlobalVer": { "message": "Methwyd cyrchu'r fersiwn eang" },
   "error_failedToFetchSysLang": { "message": "Methwyd cyrchu iaith y system" },
   "error_mustIncludePath": { "message": "rhaid cynnwys =llwybr" },
-  "error_firstArgNotExist": { "message": "Dim ond ffeil neu gyfeiriadur sy'n bodoli y gall y ddadl gyntaf fod yn ffeil neu gyfeiriadur" },
+  "error_firstArgNotExist": {
+    "message": "Dim ond ffeil neu gyfeiriadur sy'n bodoli y gall y ddadl gyntaf fod yn ffeil neu gyfeiriadur"
+  },
   "error_doesNotExist": { "message": "ddim yn bodoli" },
   "warn_configFileExists": { "message": "Ffeil cyfluniad yn bodoli'n barod" },
   "warn_docLocalesFetchFailed": { "message": "Methwyd cyrchu lleoliadau'r doc" },
@@ -55,18 +58,28 @@
   "helpSection_params": { "message": "Opsiynau paramedr" },
   "helpSection_cmds": { "message": "Gorchmynion gwybodaeth" },
   "optionDesc_uiLang": { "message": "ISO 639 -1 cod iaith i ddangos UI yn" },
-  "inputPathDesc_main": { "message": "Llwybr i ffeil neu gyfeiriadur Javascript sy'n cynnwys ffeiliau Javascript i'w minimeiddio" },
+  "inputPathDesc_main": {
+    "message": "Llwybr i ffeil neu gyfeiriadur Javascript sy'n cynnwys ffeiliau Javascript i'w minimeiddio"
+  },
   "inputPathDesc_extra": { "message": "ynghylch y cyfeiriadur gwaith presennol" },
   "outputPathDesc_main": { "message": "Llwybr i ffeil neu gyfeiriadur lle bydd ffeiliau bach yn cael eu storio" },
-  "outputPathDesc_extra": { "message": "lleoliad gwreiddiol y ffeil (os nad yw'n cael ei ddarparu, min/ yn cael ei ddefnyddio)" },
-  "optionDesc_dryRun": { "message": "Peidiwch â minimize y ffeil(au) mewn gwirionedd, dim ond dangos os byddant yn cael eu prosesu" },
+  "outputPathDesc_extra": {
+    "message": "lleoliad gwreiddiol y ffeil (os nad yw'n cael ei ddarparu, min/ yn cael ei ddefnyddio)"
+  },
+  "optionDesc_dryRun": {
+    "message": "Peidiwch â minimize y ffeil(au) mewn gwirionedd, dim ond dangos os byddant yn cael eu prosesu"
+  },
   "optionDesc_dotfolders": { "message": "Cynnwys plygyll dotiau yn y chwiliad ffeil" },
   "optionDesc_dotfiles": { "message": "Cynnwys ffeiliau dot yn y chwiliad ffeil" },
   "optionDesc_noRecursion": { "message": "Analluogi chwilio ffeiliau ailadroddus" },
   "optionDesc_noMangle": { "message": "Analluogi enwau manglo" },
   "optionDesc_noFilenameChange": { "message": "Analluogi newid estyniad ffeil i .min.js" },
-  "optionDesc_copy": { "message": "Copïo cod mân i'r clipfwrdd yn lle ysgrifennu i ffeil os yw ffeil ffynhonnell sengl yn cael ei phrosesu" },
-  "optionDesc_relativeOutput": { "message": "Ffeiliau allbwn mewn perthynas â phob ffeil ffynhonnell yn lle mewnbynnu gwraidd" },
+  "optionDesc_copy": {
+    "message": "Copïo cod mân i'r clipfwrdd yn lle ysgrifennu i ffeil os yw ffeil ffynhonnell sengl yn cael ei phrosesu"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Ffeiliau allbwn mewn perthynas â phob ffeil ffynhonnell yn lle mewnbynnu gwraidd"
+  },
   "optionDesc_rewriteImports": { "message": "Diweddaru llwybrau mewnforio o .js i .min.js" },
   "optionDesc_quiet": { "message": "Atal pob cofnod ac eithrio gwallau" },
   "optionDesc_ignores": { "message": "Ffeiliau/cyfeiriaduron i'w heithrio o minification" },

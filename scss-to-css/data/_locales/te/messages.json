@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "స్థానిక ప్యాకేజీ సంస్కరణను చదవడంలో లోపం" },
   "error_notRecognized": { "message": "గుర్తించబడలేదు" },
   "error_nonPositiveNum": { "message": "ఆర్గ్యుమెంట్ > 0 మాత్రమే ఉంటుంది" },
+  "error_requiresVal": { "message": "విలువ అవసరం" },
   "error_invalidFilepath": { "message": "చెల్లుబాటు అయ్యే ఫైల్ మార్గం అయి ఉండాలి. వచ్చింది" },
   "error_invalidLangCode": { "message": "చెల్లని భాషా కోడ్" },
   "error_invalidURL": { "message": "చెల్లని URL" },
@@ -60,13 +61,19 @@
   "inputPathDesc_extra": { "message": "ప్రస్తుత వర్కింగ్ డైరెక్టరీకి సంబంధించి" },
   "outputPathDesc_main": { "message": "CSS + సోర్స్ మ్యాప్ ఫైల్స్ నిల్వ చేయబడే ఫైల్ లేదా డైరెక్టరీకి మార్గం" },
   "outputPathDesc_extra": { "message": "ఇన్ ‌ పుట్ రూట్ ‌ కు సంబంధించి (అందించకపోతే, css/ ఉపయోగించబడుతుంది)" },
-  "optionDesc_dryRun": { "message": "వాస్తవానికి ఫైల్(ల) ను కంపైల్ చేయవద్దు, అవి ప్రాసెస్ చేయబడుతున్నాయో లేదో చూపించండి" },
+  "optionDesc_dryRun": {
+    "message": "వాస్తవానికి ఫైల్(ల) ను కంపైల్ చేయవద్దు, అవి ప్రాసెస్ చేయబడుతున్నాయో లేదో చూపించండి"
+  },
   "optionDesc_dotfolders": { "message": "ఫైల్ శోధనలో డాట్ ‌ ఫోల్డర్ ‌ లను చేర్చండి" },
   "optionDesc_noSourceMaps": { "message": "సోర్స్ మ్యాప్ ‌ లు జనరేట్ కాకుండా నిరోధించండి" },
   "optionDesc_noMinify": { "message": "అవుట్ ‌ పుట్ CSS యొక్క మినిఫికేషన్ ‌ ను నిలిపివేయండి" },
   "optionDesc_noRecursion": { "message": "పునరావృత ఫైల్ శోధనను నిలిపివేయండి" },
-  "optionDesc_copy": { "message": "సింగిల్ సోర్స్ ఫైల్ ప్రాసెస్ చేయబడితే ఫైల్ ‌ కు రాయడానికి బదులుగా కంపైల్ చేసిన CSSను క్లిప్ ‌ బోర్డ్ ‌ కు కాపీ చేయండి" },
-  "optionDesc_relativeOutput": { "message": "ఇన్ ‌ పుట్ రూట్ ‌ కు బదులుగా ప్రతి సోర్స్ ఫైల్ ‌ కు సంబంధించిన అవుట్ ‌ పుట్ ఫైల్స్" },
+  "optionDesc_copy": {
+    "message": "సింగిల్ సోర్స్ ఫైల్ ప్రాసెస్ చేయబడితే ఫైల్ ‌ కు రాయడానికి బదులుగా కంపైల్ చేసిన CSSను క్లిప్ ‌ బోర్డ్ ‌ కు కాపీ చేయండి"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "ఇన్ ‌ పుట్ రూట్ ‌ కు బదులుగా ప్రతి సోర్స్ ఫైల్ ‌ కు సంబంధించిన అవుట్ ‌ పుట్ ఫైల్స్"
+  },
   "optionDesc_quiet": { "message": "లోపాలు మినహా అన్ని లాగింగ్ ‌ లను అణచివేయండి" },
   "optionDesc_ignores": { "message": "సంకలనం నుండి మినహాయించాల్సిన ఫైళ్ళు/డైరెక్టరీలు" },
   "optionDesc_commentMain": { "message": "సంకలనం చేసిన CSSకు శీర్షిక వ్యాఖ్యను సిద్ధం చేయండి" },

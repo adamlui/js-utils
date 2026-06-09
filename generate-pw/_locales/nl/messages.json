@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Fout bij het lezen van lokale pakketversie" },
   "error_notRecognized": { "message": "Niet herkend" },
   "error_nonPositiveNum": { "message": "argument kan alleen > 0 zijn" },
+  "error_requiresVal": { "message": "vereist een waarde" },
   "error_invalidFilepath": { "message": "moet een geldig bestaand bestandspad zijn. Gekregen" },
   "error_invalidLangCode": { "message": "is een ongeldige taalcode" },
   "error_invalidURL": { "message": "Ongeldige URL" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Kleine letters in wachtwoord(en) niet toestaan" },
   "optionDesc_noUpper": { "message": "Hoofdletters in wachtwoord(en) niet toestaan" },
   "optionDesc_similarChars": { "message": "Vergelijkbare tekens opnemen in wachtwoord(en)" },
-  "optionDesc_unstrict": { "message": "Vereist niet ten minste één teken van elke toegestane tekenset in wachtwoord(en)" },
+  "optionDesc_unstrict": {
+    "message": "Vereist niet ten minste één teken van elke toegestane tekenset in wachtwoord(en)"
+  },
   "optionDesc_noEntropy": { "message": "Geschatte entropie niet berekenen/loggen" },
   "optionDesc_quiet": { "message": "Alle logboekregistraties onderdrukken, behalve fouten" },
   "optionDesc_help": { "message": "Hulpscherm weergeven" },

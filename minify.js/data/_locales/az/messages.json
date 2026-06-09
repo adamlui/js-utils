@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Yerli paket versiyasını oxuyarkən xəta baş verdi" },
   "error_notRecognized": { "message": "tanınmayıb" },
   "error_nonPositiveNum": { "message": "arqument yalnız > 0 ola bilər" },
+  "error_requiresVal": { "message": "dəyər tələb edir" },
   "error_invalidFilepath": { "message": "düzgün mövcud fayl yolu olmalıdır. Anladım" },
   "error_invalidLangCode": { "message": "etibarsız dil kodudur" },
   "error_invalidURL": { "message": "Yanlış URL" },
@@ -55,17 +56,23 @@
   "helpSection_params": { "message": "Parametr seçimləri" },
   "helpSection_cmds": { "message": "Məlumat əmrləri" },
   "optionDesc_uiLang": { "message": "İSO 639-1-də UI-nı göstərmək üçün dilin kodu" },
-  "inputPathDesc_main": { "message": "Dəqiqləşdiriləcək JavaScript faylları olan JavaScript faylına və ya kataloquna gedən yol" },
+  "inputPathDesc_main": {
+    "message": "Dəqiqləşdiriləcək JavaScript faylları olan JavaScript faylına və ya kataloquna gedən yol"
+  },
   "inputPathDesc_extra": { "message": "cari iş kataloquna nisbətən" },
   "outputPathDesc_main": { "message": "Minimum faylların saxlanılacağı fayl və ya kataloqa gedən yol" },
   "outputPathDesc_extra": { "message": "orijinal fayl mövqeyinə nisbətən (təmin edilməyibsə, min/ istifadə olunur)" },
-  "optionDesc_dryRun": { "message": "Faylı faktiki olaraq minimallaşdırmayın, sadəcə emal edilib-edilməyəcəyini göstərin" },
+  "optionDesc_dryRun": {
+    "message": "Faylı faktiki olaraq minimallaşdırmayın, sadəcə emal edilib-edilməyəcəyini göstərin"
+  },
   "optionDesc_dotfolders": { "message": "Dotfolderləri fayl axtarışına daxil edin" },
   "optionDesc_dotfiles": { "message": "Dotfilləri fayl axtarışına daxil edin" },
   "optionDesc_noRecursion": { "message": "Rekursiv fayl axtarışını qeyri-aktiv et" },
   "optionDesc_noMangle": { "message": "Manqrinq adlarını deaktiv et" },
   "optionDesc_noFilenameChange": { "message": "Fayl uzantısının .min.js-ə dəyişdirilməsini deaktiv edin" },
-  "optionDesc_copy": { "message": "Tək mənbə faylı işlənərsə, fayla yazmaq əvəzinə, minimuma endirilmiş kodu mübadilə buferinə kopyalayın" },
+  "optionDesc_copy": {
+    "message": "Tək mənbə faylı işlənərsə, fayla yazmaq əvəzinə, minimuma endirilmiş kodu mübadilə buferinə kopyalayın"
+  },
   "optionDesc_relativeOutput": { "message": "Giriş kökü əvəzinə hər mənbə faylına nisbətən çıxış faylları" },
   "optionDesc_rewriteImports": { "message": "İdxal yollarını .js-dən .min.js-ə yeniləyin" },
   "optionDesc_quiet": { "message": "Xətalardan başqa bütün girişləri bağlayın" },

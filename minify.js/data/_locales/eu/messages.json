@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Errorea tokiko paketearen bertsioa irakurtzean" },
   "error_notRecognized": { "message": "EZ DA EZAGUTZEN" },
   "error_nonPositiveNum": { "message": "argumentua 0 baino gehiago izan daiteke" },
+  "error_requiresVal": { "message": "balio bat behar du" },
   "error_invalidFilepath": { "message": "Baliozko fitxategi-bide bat izan behar du. Lortu da" },
   "error_invalidLangCode": { "message": "hizkuntza-kode baliogabea da" },
   "error_invalidURL": { "message": "Baliogabeko URLa" },
@@ -17,7 +18,9 @@
   "error_failedToFetchGlobalVer": { "message": "Huts egin da bertsio globala lortzean" },
   "error_failedToFetchSysLang": { "message": "Sistemaren hizkuntza lortzea huts egin da" },
   "error_mustIncludePath": { "message": "=bidea barne hartu behar du" },
-  "error_firstArgNotExist": { "message": "Lehen argumentua lehendik dagoen fitxategi edo direktorio bat izan daiteke soilik" },
+  "error_firstArgNotExist": {
+    "message": "Lehen argumentua lehendik dagoen fitxategi edo direktorio bat izan daiteke soilik"
+  },
   "error_doesNotExist": { "message": "ez dago" },
   "warn_configFileExists": { "message": "Konfigurazio fitxategia dagoeneko existitzen da" },
   "warn_docLocalesFetchFailed": { "message": "Dokumentuaren eskualdeko ezarpenak lortzea huts egin da" },
@@ -58,15 +61,21 @@
   "inputPathDesc_main": { "message": "Txikitu beharreko JavaScript fitxategi edo direktoriorako bidea" },
   "inputPathDesc_extra": { "message": "uneko lan-direktorioarekiko" },
   "outputPathDesc_main": { "message": "Txikitutako fitxategiak gordeko diren fitxategi edo direktoriorako bidea" },
-  "outputPathDesc_extra": { "message": "jatorrizko fitxategiaren kokapenari dagokionez (ematea ez bada, min/ erabiltzen da)" },
+  "outputPathDesc_extra": {
+    "message": "jatorrizko fitxategiaren kokapenari dagokionez (ematea ez bada, min/ erabiltzen da)"
+  },
   "optionDesc_dryRun": { "message": "Ez txikitu fitxategia(k), erakutsi prozesatuko diren ala ez" },
   "optionDesc_dotfolders": { "message": "Sartu puntu-karpetak fitxategien bilaketan" },
   "optionDesc_dotfiles": { "message": "Sartu dotfitxategiak fitxategien bilaketan" },
   "optionDesc_noRecursion": { "message": "Desgaitu fitxategien bilaketa errekurtsiboa" },
   "optionDesc_noMangle": { "message": "Desgaitu izenak nahastea" },
   "optionDesc_noFilenameChange": { "message": "Desgaitu fitxategi-luzapena .min.js-era aldatzea" },
-  "optionDesc_copy": { "message": "Kopiatu txikitutako kodea arbelean fitxategian idatzi ordez iturburu-fitxategi bakarra prozesatzen bada" },
-  "optionDesc_relativeOutput": { "message": "Irteerako fitxategiak iturburu-fitxategi bakoitzari dagozkionak, erro-fitxategira sartu beharrean" },
+  "optionDesc_copy": {
+    "message": "Kopiatu txikitutako kodea arbelean fitxategian idatzi ordez iturburu-fitxategi bakarra prozesatzen bada"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Irteerako fitxategiak iturburu-fitxategi bakoitzari dagozkionak, erro-fitxategira sartu beharrean"
+  },
   "optionDesc_rewriteImports": { "message": "Eguneratu inportazio-bideak .js-tik .min.js-ra" },
   "optionDesc_quiet": { "message": "Ezabatu erregistro guztiak erroreak izan ezik" },
   "optionDesc_ignores": { "message": "Txikitzetik kanpo utzi beharreko fitxategiak/direktorioak" },

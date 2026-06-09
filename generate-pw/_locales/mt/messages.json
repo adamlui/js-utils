@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Żball fil-qari tal-verżjoni tal-pakkett lokali" },
   "error_notRecognized": { "message": "Mhux rikonoxxut" },
   "error_nonPositiveNum": { "message": "l-argument jista' jkun biss > 0" },
+  "error_requiresVal": { "message": "jeħtieġ valur" },
   "error_invalidFilepath": { "message": "trid tkun passaġġ tal-fajl validu eżistenti. Got" },
   "error_invalidLangCode": { "message": "huwa kodiċi tal-lingwa mhux validu" },
   "error_invalidURL": { "message": "URL mhux tajjeb" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Tħallix ittri żgħar fil-password(s)" },
   "optionDesc_noUpper": { "message": "Neħħi l-ittri kbar fil-password(s)" },
   "optionDesc_similarChars": { "message": "Inkludi karattri simili fil-password(s)" },
-  "optionDesc_unstrict": { "message": "M' għandekx bżonn mill-inqas karattru wieħed minn kull karattru permess issettjat fil-password(s)" },
+  "optionDesc_unstrict": {
+    "message": "M' għandekx bżonn mill-inqas karattru wieħed minn kull karattru permess issettjat fil-password(s)"
+  },
   "optionDesc_noEntropy": { "message": "Tikkalkulax/tirreġistra l-entropija stmata" },
   "optionDesc_quiet": { "message": "Waqqaf il-logging kollu ħlief l-iżbalji" },
   "optionDesc_help": { "message": "Uri l-iskrin tal-għajnuna" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Yerel paket sürümü okunurken hata oluştu" },
   "error_notRecognized": { "message": "tanınmamış" },
   "error_nonPositiveNum": { "message": "argüman sadece > 0 olabilir" },
+  "error_requiresVal": { "message": "bir değer gerektirir" },
   "error_invalidFilepath": { "message": "geçerli bir mevcut dosya yolu olmalıdır. Alındı" },
   "error_invalidLangCode": { "message": "geçersiz bir dil kodudur" },
   "error_invalidURL": { "message": "Adres geçersiz" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "Kaynak haritaların oluşturulmasını engelle" },
   "optionDesc_noMinify": { "message": "Çıkış CSS'sinin küçültülmesini devre dışı bırak" },
   "optionDesc_noRecursion": { "message": "Yinelemeli dosya aramayı devre dışı bırak" },
-  "optionDesc_copy": { "message": "Tek kaynak dosya işleniyorsa, derlenmiş CSS'yi dosyaya yazmak yerine panoya kopyalayın" },
+  "optionDesc_copy": {
+    "message": "Tek kaynak dosya işleniyorsa, derlenmiş CSS'yi dosyaya yazmak yerine panoya kopyalayın"
+  },
   "optionDesc_relativeOutput": { "message": "Giriş kökü yerine her kaynak dosyaya göre çıktı dosyaları" },
   "optionDesc_quiet": { "message": "Hatalar hariç tüm günlükleri bastır" },
   "optionDesc_ignores": { "message": "Derlemeden hariç tutulacak dosyalar/dizinler" },

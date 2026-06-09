@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Ol i no inap ritim ol tok bilong ples" },
   "error_notRecognized": { "message": "ol i no save" },
   "error_nonPositiveNum": { "message": "i no gat wanpela samting i stap long dispela hap" },
+  "error_requiresVal": { "message": "yumi mas kisim gutpela samting" },
   "error_invalidFilepath": { "message": "em i mas i stap olsem wanpela rait i stap yet" },
   "error_invalidLangCode": { "message": "em i wanpela tokples i no gat as bilong en" },
   "error_invalidURL": { "message": "Ol URL i no stret" },
@@ -65,8 +66,12 @@
   "optionDesc_noSourceMaps": { "message": "Ol i no inap wokim mak bilong ol samting" },
   "optionDesc_noMinify": { "message": "Disable minification of output CSS" },
   "optionDesc_noRecursion": { "message": "Disable recursive file search" },
-  "optionDesc_copy": { "message": "Kopiim CSS long clipboard long ples bilong raitim long file sapos wanpela source file i wok long kamap" },
-  "optionDesc_relativeOutput": { "message": "Ol i save kisim ol dispela samting long olgeta hap bilong graun, na ol i no save kisim ol dispela samting long olgeta hap bilong graun" },
+  "optionDesc_copy": {
+    "message": "Kopiim CSS long clipboard long ples bilong raitim long file sapos wanpela source file i wok long kamap"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Ol i save kisim ol dispela samting long olgeta hap bilong graun, na ol i no save kisim ol dispela samting long olgeta hap bilong graun"
+  },
   "optionDesc_quiet": { "message": "Ol i save rausim olgeta tok i stap long en, tasol ol i no save mekim ol" },
   "optionDesc_ignores": { "message": "Ol fail/direktori bilong rausim long kompilesen" },
   "optionDesc_commentMain": { "message": "Prepare header comment to compiled CSS" },

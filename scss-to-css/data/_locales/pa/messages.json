@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ਲੋਕਲ ਪੈਕੇਜ ਵਰਜਨ ਪੜ੍ਹਨ ਦੌਰਾਨ ਗਲਤੀ" },
   "error_notRecognized": { "message": "ਪਛਾਣਿਆ ਨਹੀਂ" },
   "error_nonPositiveNum": { "message": "ਦਲੀਲ ਸਿਰਫ > 0 ਹੋ ਸਕਦੀ ਹੈ" },
+  "error_requiresVal": { "message": "ਮੁੱਲ ਦੀ ਲੋੜ ਹੈ" },
   "error_invalidFilepath": { "message": "ਇੱਕ ਵੈਧ ਮੌਜੂਦਾ ਫਾਇਲ ਮਾਰਗ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ । GOT" },
   "error_invalidLangCode": { "message": "ਇੱਕ ਅਵੈਧ ਭਾਸ਼ਾ ਕੋਡ ਹੈ" },
   "error_invalidURL": { "message": "ਗਲਤ URL" },
@@ -60,12 +61,16 @@
   "inputPathDesc_extra": { "message": "ਮੌਜੂਦਾ ਵਰਕਿੰਗ ਡਾਇਰੈਕਟਰੀ ਦੇ ਸੰਬੰਧ ਵਿੱਚ" },
   "outputPathDesc_main": { "message": "ਫਾਇਲ ਜਾਂ ਡਾਇਰੈਕਟਰੀ ਲਈ ਮਾਰਗ, ਜਿੱਥੇ CSS + ਸਰੋਤ-ਮੈਪ ਫਾਇਲਾਂ ਸੰਭਾਲੀਆਂ ਜਾਣਗੀਆਂ" },
   "outputPathDesc_extra": { "message": "ਇਨਪੁਟ ਰੂਟ ਦੇ ਅਨੁਸਾਰੀ (ਜੇ ਪ੍ਰਦਾਨ ਨਹੀਂ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਤਾਂ css/ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ)" },
-  "optionDesc_dryRun": { "message": "ਅਸਲ ਵਿੱਚ ਫਾਈਲ(ਜ਼) ਨੂੰ ਕੰਪਾਇਲ ਨਾ ਕਰੋ, ਸਿਰਫ ਦਿਖਾਓ ਕਿ ਕੀ ਉਨ੍ਹਾਂ 'ਤੇ ਕਾਰਵਾਈ ਕੀਤੀ ਜਾਏਗੀ" },
+  "optionDesc_dryRun": {
+    "message": "ਅਸਲ ਵਿੱਚ ਫਾਈਲ(ਜ਼) ਨੂੰ ਕੰਪਾਇਲ ਨਾ ਕਰੋ, ਸਿਰਫ ਦਿਖਾਓ ਕਿ ਕੀ ਉਨ੍ਹਾਂ 'ਤੇ ਕਾਰਵਾਈ ਕੀਤੀ ਜਾਏਗੀ"
+  },
   "optionDesc_dotfolders": { "message": "ਫਾਇਲ ਖੋਜ ਵਿੱਚ ਡਾਟਫੋਲਡਰ ਸ਼ਾਮਲ" },
   "optionDesc_noSourceMaps": { "message": "ਸਰੋਤ ਨਕਸ਼ੇ ਤਿਆਰ ਹੋਣ ਤੋਂ ਰੋਕੋ" },
   "optionDesc_noMinify": { "message": "ਆਉਟਪੁੱਟ CSS ਦੀ ਮਿਨੀਫਿਕੇਸ਼ਨ ਨੂੰ ਅਸਮਰੱਥ ਬਣਾਓ" },
   "optionDesc_noRecursion": { "message": "ਲਗਾਤਾਰ ਫਾਇਲ ਖੋਜ ਆਯੋਗ" },
-  "optionDesc_copy": { "message": "ਕੰਪਾਇਲ CSS ਨੂੰ ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਕਾਪੀ ਕਰੋ ਫਾਇਲ ਵਿੱਚ ਲਿਖਣ ਦੀ ਬਜਾਏ ਜੇ ਸਿੰਗਲ ਸੋਰਸ ਫਾਈਲ ਤੇ ਕਾਰਵਾਈ ਕੀਤੀ ਜਾਂਦੀ ਹੈ" },
+  "optionDesc_copy": {
+    "message": "ਕੰਪਾਇਲ CSS ਨੂੰ ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਕਾਪੀ ਕਰੋ ਫਾਇਲ ਵਿੱਚ ਲਿਖਣ ਦੀ ਬਜਾਏ ਜੇ ਸਿੰਗਲ ਸੋਰਸ ਫਾਈਲ ਤੇ ਕਾਰਵਾਈ ਕੀਤੀ ਜਾਂਦੀ ਹੈ"
+  },
   "optionDesc_relativeOutput": { "message": "ਇੰਪੁੱਟ ਰੂਟ ਦੀ ਬਜਾਏ ਹਰੇਕ ਸਰੋਤ ਫਾਇਲ ਨਾਲ ਸੰਬੰਧਿਤ ਆਉਟਪੁੱਟ ਫਾਇਲਾਂ" },
   "optionDesc_quiet": { "message": "ਗਲਤੀਆਂ ਨੂੰ ਛੱਡ ਕੇ ਸਭ ਲਾਗਿੰਗ ਦਬਾਓ" },
   "optionDesc_ignores": { "message": "ਸੰਕਲਨ ਤੋਂ ਬਾਹਰ ਰੱਖਣ ਲਈ ਫਾਇਲਾਂ/ਡਾਇਰੈਕਟਰੀਆਂ" },

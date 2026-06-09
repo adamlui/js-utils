@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Eraro dum legado de loka pakaĵa versio" },
   "error_notRecognized": { "message": "ne rekonita" },
   "error_nonPositiveNum": { "message": "argumento povas esti nur > 0" },
+  "error_requiresVal": { "message": "bezonas valoron" },
   "error_invalidFilepath": { "message": "devas esti valida ekzistanta dosiervojo. Ricevis" },
   "error_invalidLangCode": { "message": "estas nevalida lingvokodo" },
   "error_invalidURL": { "message": "Nevalida URL" },
@@ -55,7 +56,9 @@
   "helpSection_params": { "message": "Parametraj opcioj" },
   "helpSection_cmds": { "message": "Informkomandoj" },
   "optionDesc_uiLang": { "message": "ISO 639-1 kodo de lingvo por elmontri UI en" },
-  "inputPathDesc_main": { "message": "Pado al JavaScript-dosiero aŭ adresaro enhavanta JavaScript-dosierojn por esti minifikitaj" },
+  "inputPathDesc_main": {
+    "message": "Pado al JavaScript-dosiero aŭ adresaro enhavanta JavaScript-dosierojn por esti minifikitaj"
+  },
   "inputPathDesc_extra": { "message": "relativa al la aktuala labordosierujo" },
   "outputPathDesc_main": { "message": "Vojo al dosiero aŭ dosierujo kie minifikitaj dosieroj estos konservitaj" },
   "outputPathDesc_extra": { "message": "relative al origina dosierloko (se ne disponigita, min./ estas uzita)" },
@@ -65,7 +68,9 @@
   "optionDesc_noRecursion": { "message": "Malebligi serĉadon de rekursiva dosiero" },
   "optionDesc_noMangle": { "message": "Malebligi mistraktajn nomojn" },
   "optionDesc_noFilenameChange": { "message": "Malŝalti ŝanĝantan dosieretendaĵon al .min.js" },
-  "optionDesc_copy": { "message": "Kopii minifikitan kodon al poŝo anstataŭ skribi dosieron se ununura fontodosiero estas prilaborita" },
+  "optionDesc_copy": {
+    "message": "Kopii minifikitan kodon al poŝo anstataŭ skribi dosieron se ununura fontodosiero estas prilaborita"
+  },
   "optionDesc_relativeOutput": { "message": "Eligdosieroj relative al ĉiu fontdosiero anstataŭe de por enigi radikon" },
   "optionDesc_rewriteImports": { "message": "Ĝisdatigi importajn vojojn de .js al .min.js" },
   "optionDesc_quiet": { "message": "Subpremi ĉiujn registradojn krom eraroj" },

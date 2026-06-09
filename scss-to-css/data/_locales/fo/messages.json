@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Feilur við at lesa lokalu pakkaútgávu" },
   "error_notRecognized": { "message": "ikki viðurkennd" },
   "error_nonPositiveNum": { "message": "argument kann bert vera > 0" },
+  "error_requiresVal": { "message": "tað krevur eitt virði" },
   "error_invalidFilepath": { "message": "tað skal vera ein galdandi verandi skráarvegur" },
   "error_invalidLangCode": { "message": "tað er ein ógildandi málsligur kóði" },
   "error_invalidURL": { "message": "Ógildugt URL" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "At forða fyri, at keldur kort verða skapt" },
   "optionDesc_noMinify": { "message": "Minifisering av CSS-útgávuni" },
   "optionDesc_noRecursion": { "message": "At sløkkja rekursiv fílu leiting" },
-  "optionDesc_copy": { "message": "Kopiera samansettan CSS til klipbrett ístaðin fyri at skriva til fílu, um einastandandi keldurfíla verður viðgjørd" },
+  "optionDesc_copy": {
+    "message": "Kopiera samansettan CSS til klipbrett ístaðin fyri at skriva til fílu, um einastandandi keldurfíla verður viðgjørd"
+  },
   "optionDesc_relativeOutput": { "message": "Útgangsfílar í mun til hvørja keldurfílu ístaðin fyri innleggsrót" },
   "optionDesc_quiet": { "message": "Undirskriva allar innmeldingar uttan feil" },
   "optionDesc_ignores": { "message": "Fílar/leiðbeiningar at útiloka frá samansetingini" },

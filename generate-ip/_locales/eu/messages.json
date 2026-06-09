@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Errorea tokiko paketearen bertsioa irakurtzean" },
   "error_notRecognized": { "message": "EZ DA EZAGUTZEN" },
   "error_nonPositiveNum": { "message": "argumentua > 0 bakarrik izan daiteke" },
+  "error_requiresVal": { "message": "balio bat behar du" },
   "error_invalidFilepath": { "message": "Baliozko fitxategi-bide bat izan behar du. Lortu da" },
   "error_invalidLangCode": { "message": "hizkuntza-kode baliogabea da" },
   "error_invalidURL": { "message": "Baliogabeko URLa" },

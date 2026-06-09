@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "مقامی پیکج ورژن پڑھنے میں خرابی" },
   "error_notRecognized": { "message": "پہچانا نہیں گیا" },
   "error_nonPositiveNum": { "message": "دلیل صرف > 0 ہو سکتی ہے" },
+  "error_requiresVal": { "message": "قدر کی ضرورت ہے" },
   "error_invalidFilepath": { "message": "ایک درست موجودہ فائل کا راستہ ہونا چاہیے ۔ مل گیا" },
   "error_invalidLangCode": { "message": "ایک غلط زبان کا کوڈ ہے" },
   "error_invalidURL": { "message": "غلط URL" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "پاس ورڈ(زبانیں) میں چھوٹے حروف کی اجازت نہ دیں" },
   "optionDesc_noUpper": { "message": "پاس ورڈ(زبانیں) میں بڑے حروف کی اجازت نہ دیں" },
   "optionDesc_similarChars": { "message": "پاس ورڈ(پاس ورڈز) میں ملتے جلتے کریکٹرز شامل کریں" },
-  "optionDesc_unstrict": { "message": "پاس ورڈ (زبانیں) میں سیٹ کردہ ہر اجازت یافتہ کریکٹر سے کم از کم ایک کریکٹر کی ضرورت نہیں ہے" },
+  "optionDesc_unstrict": {
+    "message": "پاس ورڈ (زبانیں) میں سیٹ کردہ ہر اجازت یافتہ کریکٹر سے کم از کم ایک کریکٹر کی ضرورت نہیں ہے"
+  },
   "optionDesc_noEntropy": { "message": "تخمینی اینٹروپی کا حساب نہ لگائیں/لاگ ان نہ کریں" },
   "optionDesc_quiet": { "message": "غلطیوں کے علاوہ تمام لاگنگ کو دبائیں" },
   "optionDesc_help": { "message": "مدد کی اسکرین ڈسپلے کریں" },

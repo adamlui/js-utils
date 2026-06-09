@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "पैकेज का लोकल वर्ज़न पढ़ने में गड़बड़ी हुई" },
   "error_notRecognized": { "message": "पहचाना नहीं गया" },
   "error_nonPositiveNum": { "message": "तर्क केवल > 0 हो सकता है" },
+  "error_requiresVal": { "message": "एक मान की आवश्यकता है" },
   "error_invalidFilepath": { "message": "एक मान्य मौजूदा फ़ाइल पथ होना चाहिए। मिल गया" },
   "error_invalidLangCode": { "message": "एक अमान्य भाषा कोड है" },
   "error_invalidURL": { "message": "अमान्य URL" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "पासवर्ड में लोअरकेस अक्षरों को नामंज़ूर करें" },
   "optionDesc_noUpper": { "message": "पासवर्ड में अपरकेस अक्षरों को नामंज़ूर करें" },
   "optionDesc_similarChars": { "message": "पासवर्ड में मिलते - जुलते कैरेक्टर शामिल करें" },
-  "optionDesc_unstrict": { "message": "पासवर्ड(ओं) में सेट किए गए प्रत्येक अनुमत वर्ण से कम से कम एक वर्ण की आवश्यकता नहीं है" },
+  "optionDesc_unstrict": {
+    "message": "पासवर्ड(ओं) में सेट किए गए प्रत्येक अनुमत वर्ण से कम से कम एक वर्ण की आवश्यकता नहीं है"
+  },
   "optionDesc_noEntropy": { "message": "अनुमानित एंट्रॉपी की गणना/लॉग न करें" },
   "optionDesc_quiet": { "message": "त्रुटियों को छोड़कर सभी लॉगिंग को दबाएं" },
   "optionDesc_help": { "message": "सहायता स्क्रीन दिखाएँ" },

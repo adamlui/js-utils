@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Erreur lors de la lecture de la version du package local" },
   "error_notRecognized": { "message": "Non-reconnu" },
   "error_nonPositiveNum": { "message": "argument ne peut être > 0" },
+  "error_requiresVal": { "message": "nécessite une valeur" },
   "error_invalidFilepath": { "message": "doit être un chemin de fichier existant valide. Obtenu" },
   "error_invalidLangCode": { "message": "est un code de langue invalide" },
   "error_invalidURL": { "message": "URL Invalide" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Interdire les lettres minuscules dans le (s) mot(s) de passe" },
   "optionDesc_noUpper": { "message": "Interdire les lettres majuscules dans le (s) mot(s) de passe" },
   "optionDesc_similarChars": { "message": "Inclure des caractères similaires dans le (s) mot(s) de passe" },
-  "optionDesc_unstrict": { "message": "Ne nécessite pas au moins un caractère de chaque jeu de caractères autorisé dans le (s) mot(s) de passe" },
+  "optionDesc_unstrict": {
+    "message": "Ne nécessite pas au moins un caractère de chaque jeu de caractères autorisé dans le (s) mot(s) de passe"
+  },
   "optionDesc_noEntropy": { "message": "Ne pas calculer/enregistrer l'entropie estimée" },
   "optionDesc_quiet": { "message": "Supprimer tous les journaux sauf les erreurs" },
   "optionDesc_help": { "message": "Affichage de l’aide" },

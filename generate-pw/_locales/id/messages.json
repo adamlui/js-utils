@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Kesalahan membaca versi paket lokal" },
   "error_notRecognized": { "message": "tidak diakui" },
   "error_nonPositiveNum": { "message": "argumen hanya bisa > 0" },
+  "error_requiresVal": { "message": "membutuhkan nilai" },
   "error_invalidFilepath": { "message": "harus berupa path file yang sudah ada yang valid. Got" },
   "error_invalidLangCode": { "message": "adalah kode bahasa yang tidak valid" },
   "error_invalidURL": { "message": "URL Tidak Valid" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Larang huruf kecil dalam kata sandi" },
   "optionDesc_noUpper": { "message": "Larang huruf besar dalam kata sandi" },
   "optionDesc_similarChars": { "message": "Sertakan karakter serupa dalam kata sandi" },
-  "optionDesc_unstrict": { "message": "Tidak memerlukan setidaknya satu karakter dari setiap set karakter yang diizinkan dalam kata sandi" },
+  "optionDesc_unstrict": {
+    "message": "Tidak memerlukan setidaknya satu karakter dari setiap set karakter yang diizinkan dalam kata sandi"
+  },
   "optionDesc_noEntropy": { "message": "Jangan hitung/catat estimasi entropi" },
   "optionDesc_quiet": { "message": "Cegah semua pencatatan kecuali kesalahan" },
   "optionDesc_help": { "message": "Tampilkan layar bantuan" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ಸ್ಥಳೀಯ ಪ್ಯಾಕೇಜ್ ಆವೃತ್ತಿಯನ್ನು ಓದುವಲ್ಲಿ ದೋಷ" },
   "error_notRecognized": { "message": "ಗುರುತಿಸಲಾಗಿಲ್ಲ" },
   "error_nonPositiveNum": { "message": "ಆರ್ಗ್ಯುಮೆಂಟ್ ಕೇವಲ > 0 ಆಗಿರಬಹುದು" },
+  "error_requiresVal": { "message": "ಮೌಲ್ಯದ ಅಗತ್ಯವಿದೆ" },
   "error_invalidFilepath": { "message": "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಮಾನ್ಯ ಫೈಲ್ ಮಾರ್ಗವಾಗಿರಬೇಕು. ಸಿಕ್ಕಿದೆ" },
   "error_invalidLangCode": { "message": "ಇದು ಅಮಾನ್ಯ ಭಾಷೆಯ ಕೋಡ್ ಆಗಿದೆ" },
   "error_invalidURL": { "message": "ಅಮಾನ್ಯ URL" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "ಪಾಸ್ ‌ ವರ್ಡ್(ಗಳಲ್ಲಿ) ನಲ್ಲಿ ಸಣ್ಣ ಅಕ್ಷರಗಳನ್ನು ಅನುಮತಿಸಬೇಡಿ" },
   "optionDesc_noUpper": { "message": "ಪಾಸ್ ‌ ವರ್ಡ್(ಗಳಲ್ಲಿ) ನಲ್ಲಿ ದೊಡ್ಡಕ್ಷರ ಅಕ್ಷರಗಳನ್ನು ಅನುಮತಿಸಬೇಡಿ" },
   "optionDesc_similarChars": { "message": "ಪಾಸ್‌ವರ್ಡ್(ಗಳಲ್ಲಿ) ಇದೇ ರೀತಿಯ ಅಕ್ಷರಗಳನ್ನು ಸೇರಿಸಿ" },
-  "optionDesc_unstrict": { "message": "ಪಾಸ್‌ವರ್ಡ್(ಗಳಲ್ಲಿ) ಸೆಟ್ ಮಾಡಲಾದ ಪ್ರತಿ ಅನುಮತಿಸಲಾದ ಅಕ್ಷರದಿಂದ ಕನಿಷ್ಠ ಒಂದು ಅಕ್ಷರವು ಅಗತ್ಯವಿಲ್ಲ" },
+  "optionDesc_unstrict": {
+    "message": "ಪಾಸ್‌ವರ್ಡ್(ಗಳಲ್ಲಿ) ಸೆಟ್ ಮಾಡಲಾದ ಪ್ರತಿ ಅನುಮತಿಸಲಾದ ಅಕ್ಷರದಿಂದ ಕನಿಷ್ಠ ಒಂದು ಅಕ್ಷರವು ಅಗತ್ಯವಿಲ್ಲ"
+  },
   "optionDesc_noEntropy": { "message": "ಅಂದಾಜು ಎಂಟ್ರೊಪಿ ಲೆಕ್ಕಹಾಕಬೇಡಿ/ಲಾಗ್ ಮಾಡಬೇಡಿ" },
   "optionDesc_quiet": { "message": "ದೋಷಗಳನ್ನು ಹೊರತುಪಡಿಸಿ ಎಲ್ಲಾ ಲಾಗಿಂಗ್ ಅನ್ನು ನಿಗ್ರಹಿಸಿ" },
   "optionDesc_help": { "message": "ಸಹಾಯ ಪರದೆಯನ್ನು ಪ್ರದರ್ಶಿಸಿ" },

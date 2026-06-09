@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Erro ao ler a versão do pacote local" },
   "error_notRecognized": { "message": "Não é reconhecida" },
   "error_nonPositiveNum": { "message": "argumento só pode ser > 0" },
+  "error_requiresVal": { "message": "requer um valor" },
   "error_invalidFilepath": { "message": "deve ser um caminho de ficheiro existente válido. Tem" },
   "error_invalidLangCode": { "message": "é um código de idioma inválido" },
   "error_invalidURL": { "message": "Endereço inválido" },
@@ -55,18 +56,28 @@
   "helpSection_params": { "message": "Opções de parâmetros" },
   "helpSection_cmds": { "message": "Comandos de informação" },
   "optionDesc_uiLang": { "message": "Código ISO 639-1 do idioma para exibir a interface do usuário" },
-  "inputPathDesc_main": { "message": "Caminho para o ficheiro JavaScript ou diretório que contém ficheiros JavaScript a serem minificados" },
+  "inputPathDesc_main": {
+    "message": "Caminho para o ficheiro JavaScript ou diretório que contém ficheiros JavaScript a serem minificados"
+  },
   "inputPathDesc_extra": { "message": "absoluto ou um caminho relativo para o directório de trabalho actual" },
-  "outputPathDesc_main": { "message": "Caminho para o ficheiro ou diretório onde os ficheiros minificados serão armazenados" },
+  "outputPathDesc_main": {
+    "message": "Caminho para o ficheiro ou diretório onde os ficheiros minificados serão armazenados"
+  },
   "outputPathDesc_extra": { "message": "em relação ao local do arquivo original (se não for fornecido, min/ é usado)" },
-  "optionDesc_dryRun": { "message": "Na verdade, não diminua o (s) arquivo(s), apenas mostre se eles serão processados" },
+  "optionDesc_dryRun": {
+    "message": "Na verdade, não diminua o (s) arquivo(s), apenas mostre se eles serão processados"
+  },
   "optionDesc_dotfolders": { "message": "Incluir pastas de pontos na pesquisa de ficheiros" },
   "optionDesc_dotfiles": { "message": "Incluir ficheiros de pontos na pesquisa de ficheiros" },
   "optionDesc_noRecursion": { "message": "Desativar a pesquisa recursiva de ficheiros" },
   "optionDesc_noMangle": { "message": "Desativar nomes mutilados" },
   "optionDesc_noFilenameChange": { "message": "Desativar a alteração da extensão do ficheiro para .min.js" },
-  "optionDesc_copy": { "message": "Copie o código minificado para a área de transferência em vez de gravar no arquivo se um único arquivo de origem for processado" },
-  "optionDesc_relativeOutput": { "message": "Arquivos de saída relativos a cada arquivo de origem em vez de à raiz de entrada" },
+  "optionDesc_copy": {
+    "message": "Copie o código minificado para a área de transferência em vez de gravar no arquivo se um único arquivo de origem for processado"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Arquivos de saída relativos a cada arquivo de origem em vez de à raiz de entrada"
+  },
   "optionDesc_rewriteImports": { "message": "Atualizar caminhos de importação de .js para .min.js" },
   "optionDesc_quiet": { "message": "Suprimir todos os registos, exceto erros" },
   "optionDesc_ignores": { "message": "Arquivos/diretórios a excluir da minificação" },

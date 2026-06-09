@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ຜິດພາດໃນການອ່ານລຸ້ນແພັກເກັດໃນທ້ອງຖິ່ນ" },
   "error_notRecognized": { "message": "ບໍ່ຮັບຮູ້" },
   "error_nonPositiveNum": { "message": "ການໂຕ້ຖຽງສາມາດເປັນພຽງແຕ່ > 0" },
+  "error_requiresVal": { "message": "ຮຽກຮ້ອງໃຫ້ມີຄຸນຄ່າ" },
   "error_invalidFilepath": { "message": "ຕ້ອງເປັນເສັ້ນທາງເອກະສານທີ່ມີຢູ່ແລ້ວທີ່ຖືກຕ້ອງ. ໄດ້ຮັບ" },
   "error_invalidLangCode": { "message": "ແມ່ນລະຫັດພາສາທີ່ບໍ່ຖືກຕ້ອງ" },
   "error_invalidURL": { "message": "URL ບໍ່ຖືກຕ້ອງ" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "ບໍ່ອະນຸຍາດຕົວອັກສອນນ້ອຍໃນລະຫັດຜ່ານ" },
   "optionDesc_noUpper": { "message": "ປະຕິເສດຕົວອັກສອນຕົວອັກສອນໃຫຍ່ໃນລະຫັດຜ່ານ" },
   "optionDesc_similarChars": { "message": "ລວມຕົວອັກສອນທີ່ຄ້າຍຄືກັນໃນລະຫັດຜ່ານ (s)" },
-  "optionDesc_unstrict": { "message": "ບໍ່ ຈໍາ ເປັນຕ້ອງມີຢ່າງ ຫນ້ອຍ ຫນຶ່ງ ຕົວອັກສອນຈາກແຕ່ລະຕົວອັກສອນທີ່ອະນຸຍາດໃນລະຫັດຜ່ານ (s)" },
+  "optionDesc_unstrict": {
+    "message": "ບໍ່ ຈໍາ ເປັນຕ້ອງມີຢ່າງ ຫນ້ອຍ ຫນຶ່ງ ຕົວອັກສອນຈາກແຕ່ລະຕົວອັກສອນທີ່ອະນຸຍາດໃນລະຫັດຜ່ານ (s)"
+  },
   "optionDesc_noEntropy": { "message": "ບໍ່ຄິດໄລ່/log ຄາດຄະເນ entropy" },
   "optionDesc_quiet": { "message": "ສະກັດກັ້ນການຕັດໄມ້ທັງໝົດ ຍົກເວັ້ນຂໍ້ຜິດພາດ" },
   "optionDesc_help": { "message": "ສະແດງໜ້າຈໍຊ່ວຍເຫຼືອ" },

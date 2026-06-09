@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Feilur við at lesa lokalu pakkaútgávu" },
   "error_notRecognized": { "message": "ikki viðurkennd" },
   "error_nonPositiveNum": { "message": "argument kann bert vera > 0" },
+  "error_requiresVal": { "message": "tað krevur eitt virði" },
   "error_invalidFilepath": { "message": "tað skal vera ein galdandi verandi skráarvegur" },
   "error_invalidLangCode": { "message": "tað er ein ógildandi málsligur kóði" },
   "error_invalidURL": { "message": "Ógildugt URL" },
@@ -55,17 +56,23 @@
   "helpSection_params": { "message": "Parametrar valmøguleikar" },
   "helpSection_cmds": { "message": "Upplýsingar boð" },
   "optionDesc_uiLang": { "message": "ISO 639-1 málkód at vísa UI í" },
-  "inputPathDesc_main": { "message": "Veg til JavaScript-fílu ella leiðbeining, sum hevur JavaScript-fílar at minifisera" },
+  "inputPathDesc_main": {
+    "message": "Veg til JavaScript-fílu ella leiðbeining, sum hevur JavaScript-fílar at minifisera"
+  },
   "inputPathDesc_extra": { "message": "viðurskifti við verandi arbeiðsleiðara" },
   "outputPathDesc_main": { "message": "Veg til fílu ella leiðbeining, har minifiseraðar fílur verða goymdar" },
-  "outputPathDesc_extra": { "message": "í mun til upprunaliga staðsetingina av skránni (um ikki verður latin, verður min/ brúkt)" },
+  "outputPathDesc_extra": {
+    "message": "í mun til upprunaliga staðsetingina av skránni (um ikki verður latin, verður min/ brúkt)"
+  },
   "optionDesc_dryRun": { "message": "Ikki at minka um skránna (ar), bara vísa, um tey verða viðgjørd" },
   "optionDesc_dotfolders": { "message": "Innleggja dotfoldarar í leiting av fílum" },
   "optionDesc_dotfiles": { "message": "Innlegg dotfiles í leiting av fílum" },
   "optionDesc_noRecursion": { "message": "At sløkkja rekursiv fílu leiting" },
   "optionDesc_noMangle": { "message": "At sløkkja nøvnini" },
   "optionDesc_noFilenameChange": { "message": "Broyt at broyta skráarútbygging til .min.js" },
-  "optionDesc_copy": { "message": "Kopiera minifiseraða kóða til klipbrett ístaðin fyri at skriva til fílu, um einastandandi keldurfíla verður viðgjørd" },
+  "optionDesc_copy": {
+    "message": "Kopiera minifiseraða kóða til klipbrett ístaðin fyri at skriva til fílu, um einastandandi keldurfíla verður viðgjørd"
+  },
   "optionDesc_relativeOutput": { "message": "Útgangsfílar í mun til hvørja keldurfílu ístaðin fyri innleggsrót" },
   "optionDesc_rewriteImports": { "message": "Uppdatera innflytingarleiðir frá .js til .min.js" },
   "optionDesc_quiet": { "message": "Undirskriva allar innmeldingar uttan feil" },

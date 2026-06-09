@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Fel vid läsning av lokal paketversion" },
   "error_notRecognized": { "message": "ej värderade" },
   "error_nonPositiveNum": { "message": "argument kan bara vara > 0" },
+  "error_requiresVal": { "message": "kräver ett värde" },
   "error_invalidFilepath": { "message": "måste vara en giltig befintlig filsökväg. Fick" },
   "error_invalidLangCode": { "message": "är en ogiltig språkkod" },
   "error_invalidURL": { "message": "Ogiltig URL" },
@@ -55,18 +56,26 @@
   "helpSection_params": { "message": "Parameteralternativ" },
   "helpSection_cmds": { "message": "INFO-kommandon" },
   "optionDesc_uiLang": { "message": "ISO 639-1-kod för språk för att visa användargränssnitt i" },
-  "inputPathDesc_main": { "message": "Sökväg till JavaScript-fil eller katalog som innehåller JavaScript-filer som ska förminskas" },
+  "inputPathDesc_main": {
+    "message": "Sökväg till JavaScript-fil eller katalog som innehåller JavaScript-filer som ska förminskas"
+  },
   "inputPathDesc_extra": { "message": "i förhållande till den aktuella arbetskatalogen" },
   "outputPathDesc_main": { "message": "Sökväg till fil eller katalog där minifierade filer kommer att lagras" },
-  "outputPathDesc_extra": { "message": "i förhållande till den ursprungliga filplatsen (om den inte anges, används min/)" },
+  "outputPathDesc_extra": {
+    "message": "i förhållande till den ursprungliga filplatsen (om den inte anges, används min/)"
+  },
   "optionDesc_dryRun": { "message": "Minifiera faktiskt inte filen/filerna, visa bara om de kommer att behandlas" },
   "optionDesc_dotfolders": { "message": "Inkludera punktmappar i filsökning" },
   "optionDesc_dotfiles": { "message": "Inkludera punktfiler i filsökningen" },
   "optionDesc_noRecursion": { "message": "Inaktivera rekursiv filsökning" },
   "optionDesc_noMangle": { "message": "Inaktivera manglingnamn" },
   "optionDesc_noFilenameChange": { "message": "Inaktivera ändring av filtillägg till .min.js" },
-  "optionDesc_copy": { "message": "Kopiera minifierad kod till urklipp istället för att skriva till fil om en enda källfil bearbetas" },
-  "optionDesc_relativeOutput": { "message": "Utdatafiler i förhållande till varje källfil istället för att mata in rot" },
+  "optionDesc_copy": {
+    "message": "Kopiera minifierad kod till urklipp istället för att skriva till fil om en enda källfil bearbetas"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Utdatafiler i förhållande till varje källfil istället för att mata in rot"
+  },
   "optionDesc_rewriteImports": { "message": "Uppdatera importvägar från .js till .min.js" },
   "optionDesc_quiet": { "message": "Dölj all loggning utom fel" },
   "optionDesc_ignores": { "message": "Filer/kataloger att utesluta från minifiering" },

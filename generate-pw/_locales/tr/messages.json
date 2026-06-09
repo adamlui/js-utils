@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Yerel paket sürümü okunurken hata oluştu" },
   "error_notRecognized": { "message": "tanınmamış" },
   "error_nonPositiveNum": { "message": "argüman sadece > 0 olabilir" },
+  "error_requiresVal": { "message": "bir değer gerektirir" },
   "error_invalidFilepath": { "message": "geçerli bir mevcut dosya yolu olmalıdır. Alındı" },
   "error_invalidLangCode": { "message": "geçersiz bir dil kodudur" },
   "error_invalidURL": { "message": "Adres geçersiz" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Parolalarda küçük harflere izin verme" },
   "optionDesc_noUpper": { "message": "Parola(lar) da büyük harflere izin verme" },
   "optionDesc_similarChars": { "message": "Parolalara benzer karakterler ekleyin" },
-  "optionDesc_unstrict": { "message": "Parola(lar) da izin verilen her karakter kümesinden en az bir karakter gerektirmez" },
+  "optionDesc_unstrict": {
+    "message": "Parola(lar) da izin verilen her karakter kümesinden en az bir karakter gerektirmez"
+  },
   "optionDesc_noEntropy": { "message": "Tahmini entropiyi hesaplamayın/kaydetmeyin" },
   "optionDesc_quiet": { "message": "Hatalar hariç tüm günlükleri bastır" },
   "optionDesc_help": { "message": "Yardım ekranını görüntüle" },

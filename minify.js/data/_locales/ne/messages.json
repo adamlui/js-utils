@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "स्थानीय प्याकेज संस्करण पढ्दा त्रुटि" },
   "error_notRecognized": { "message": "पहिचान नगरिएको" },
   "error_nonPositiveNum": { "message": "तर्क > 0 मात्र हुन सक्छ" },
+  "error_requiresVal": { "message": "एउटा मान चाहिन्छ" },
   "error_invalidFilepath": { "message": "मान्य अवस्थित फाइल मार्ग हुनुपर्दछ । प्राप्त भयो" },
   "error_invalidLangCode": { "message": "अमान्य भाषा कोड हो" },
   "error_invalidURL": { "message": "अवैध यू आर एल" },
@@ -55,18 +56,26 @@
   "helpSection_params": { "message": "प्यारामिटर विकल्पहरू" },
   "helpSection_cmds": { "message": "सूचना आदेशहरू" },
   "optionDesc_uiLang": { "message": "UI प्रदर्शन गर्न भाषाको ISO 639 -1 कोड" },
-  "inputPathDesc_main": { "message": "जाभास्क्रिप्ट फाइल वा जाभास्क्रिप्ट फाइलहरू समावेश गर्ने डाइरेक्टरीको बाटोलाई सानो बनाइनेछ" },
+  "inputPathDesc_main": {
+    "message": "जाभास्क्रिप्ट फाइल वा जाभास्क्रिप्ट फाइलहरू समावेश गर्ने डाइरेक्टरीको बाटोलाई सानो बनाइनेछ"
+  },
   "inputPathDesc_extra": { "message": "हालको कार्य डाइरेक्टरीको सापेक्ष" },
   "outputPathDesc_main": { "message": "फाइल वा डाइरेक्टरीको बाटो जहाँ साना फाइलहरू भण्डारण गरिनेछ" },
   "outputPathDesc_extra": { "message": "मूल फाइल स्थानको सापेक्ष (यदि प्रदान गरिएको छैन भने, न्यूनतम/प्रयोग गरिन्छ)" },
-  "optionDesc_dryRun": { "message": "वास्तवमा फाइल(हरू) लाई सानो नबनाउनुहोस्, तिनीहरू प्रशोधन हुने छन् कि छैनन् भनेर देखाउनुहोस्" },
+  "optionDesc_dryRun": {
+    "message": "वास्तवमा फाइल(हरू) लाई सानो नबनाउनुहोस्, तिनीहरू प्रशोधन हुने छन् कि छैनन् भनेर देखाउनुहोस्"
+  },
   "optionDesc_dotfolders": { "message": "फाइल खोजीमा डटफोल्डरहरू समावेश गर्नुहोस्" },
   "optionDesc_dotfiles": { "message": "फाइल खोजीमा डटफाइलहरू समावेश गर्नुहोस्" },
   "optionDesc_noRecursion": { "message": "पुनरावर्ती फाइल खोजी अक्षम पार्नुहोस्" },
   "optionDesc_noMangle": { "message": "मङ्गलिंग नामहरू अक्षम गर्नुहोस्" },
   "optionDesc_noFilenameChange": { "message": ".min.js मा फाइल विस्तार परिवर्तन गर्न अक्षम गर्नुहोस्" },
-  "optionDesc_copy": { "message": "यदि एकल स्रोत फाइल प्रशोधन गरिएको छ भने फाइलमा लेख्नुको सट्टा क्लिपबोर्डमा मिनीफाइड कोड प्रतिलिपि गर्नुहोस्" },
-  "optionDesc_relativeOutput": { "message": "आगत रूटको सट्टा प्रत्येक स्रोत फाइलसँग सम्बन्धित फाइलहरू निर्गत गर्नुहोस्" },
+  "optionDesc_copy": {
+    "message": "यदि एकल स्रोत फाइल प्रशोधन गरिएको छ भने फाइलमा लेख्नुको सट्टा क्लिपबोर्डमा मिनीफाइड कोड प्रतिलिपि गर्नुहोस्"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "आगत रूटको सट्टा प्रत्येक स्रोत फाइलसँग सम्बन्धित फाइलहरू निर्गत गर्नुहोस्"
+  },
   "optionDesc_rewriteImports": { "message": ".js बाट .min.js मा आयात मार्गहरू अद्यावधिक गर्नुहोस्" },
   "optionDesc_quiet": { "message": "त्रुटिहरू बाहेक सबै लगिङलाई दबाउनुहोस्" },
   "optionDesc_ignores": { "message": "फाइलहरू/डाइरेक्टरीहरू minification बाट बहिष्कृत गर्न" },

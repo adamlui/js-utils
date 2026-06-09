@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "He hewa i ka heluhelu ʻana i ka mana pūʻolo kūloko" },
   "error_notRecognized": { "message": "ʻike ʻole ʻia" },
   "error_nonPositiveNum": { "message": "hiki ke > 0 wale nō ka hoʻopaʻapaʻa" },
+  "error_requiresVal": { "message": "koi i kahi waiwai" },
   "error_invalidFilepath": { "message": "pono e lilo i ala faila kūpono. Loaʻa" },
   "error_invalidLangCode": { "message": "he code ʻōlelo kūpono ʻole ia" },
   "error_invalidURL": { "message": "Hūnā hewa ʻole" },
@@ -55,9 +56,13 @@
   "helpSection_params": { "message": "Nā koho palena" },
   "helpSection_cmds": { "message": "Nā kauoha ʻike" },
   "optionDesc_uiLang": { "message": "ʻO ke code ʻōlelo ISO 639-1 e hōʻike i ka UI ma" },
-  "inputPathDesc_main": { "message": "ʻO ke ala i ka faila JavaScript a i ʻole ka papa kuhikuhi i loaʻa nā faila JavaScript e hoʻemi ʻia" },
+  "inputPathDesc_main": {
+    "message": "ʻO ke ala i ka faila JavaScript a i ʻole ka papa kuhikuhi i loaʻa nā faila JavaScript e hoʻemi ʻia"
+  },
   "inputPathDesc_extra": { "message": "pili i ka papa kuhikuhi hana o kēia manawa" },
-  "outputPathDesc_main": { "message": "Ala i ka waihona a i ʻole ka papa kuhikuhi kahi e mālama ʻia ai nā faila liʻiliʻi" },
+  "outputPathDesc_main": {
+    "message": "Ala i ka waihona a i ʻole ka papa kuhikuhi kahi e mālama ʻia ai nā faila liʻiliʻi"
+  },
   "outputPathDesc_extra": { "message": "pili i kahi waihona kumu (inā ʻaʻole hāʻawi ʻia, hoʻohana ʻia ka min/)" },
   "optionDesc_dryRun": { "message": "Mai hōʻemi maoli i nā faila, e hōʻike wale inā e hana ʻia" },
   "optionDesc_dotfolders": { "message": "E hoʻokomo i nā waihona kiko ma ka huli waihona" },
@@ -65,8 +70,12 @@
   "optionDesc_noRecursion": { "message": "Hoʻopau i ka huli ʻana i nā faila" },
   "optionDesc_noMangle": { "message": "Hoʻopau i nā inoa mangling" },
   "optionDesc_noFilenameChange": { "message": "Hoʻopau i ka hoʻololi ʻana i ka hoʻonui ʻana i ka faila iā .min.js" },
-  "optionDesc_copy": { "message": "E kope i ka code liʻiliʻi i ka clipboard ma kahi o ke kākau ʻana i ka faila inā hoʻoili ʻia ka faila kumu hoʻokahi" },
-  "optionDesc_relativeOutput": { "message": "Hoʻopuka i nā faila e pili ana i kēlā me kēia faila kumu ma kahi o ke komo ʻana i ke aʻa" },
+  "optionDesc_copy": {
+    "message": "E kope i ka code liʻiliʻi i ka clipboard ma kahi o ke kākau ʻana i ka faila inā hoʻoili ʻia ka faila kumu hoʻokahi"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Hoʻopuka i nā faila e pili ana i kēlā me kēia faila kumu ma kahi o ke komo ʻana i ke aʻa"
+  },
   "optionDesc_rewriteImports": { "message": "Hoʻohou i nā ala lawe mai mai .js a i .min.js" },
   "optionDesc_quiet": { "message": "Kāohi i ka hoʻopaʻa inoa a pau koe nā hewa" },
   "optionDesc_ignores": { "message": "Nā faila/papa kuhikuhi e kāpae ʻia mai ka minification" },

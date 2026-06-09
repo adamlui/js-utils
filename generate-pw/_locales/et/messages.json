@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Tõrge kohaliku paketi versiooni lugemisel" },
   "error_notRecognized": { "message": "Tundmatu fail" },
   "error_nonPositiveNum": { "message": "argument võib olla ainult > 0" },
+  "error_requiresVal": { "message": "nõuab väärtust" },
   "error_invalidFilepath": { "message": "peab olema kehtiv olemasolev failitee. Sain" },
   "error_invalidLangCode": { "message": "on kehtetu keelekood" },
   "error_invalidURL": { "message": "Kehtetu URL" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Keela parooli(de) s väiketähed" },
   "optionDesc_noUpper": { "message": "Keela parooli(de) s suurtähed" },
   "optionDesc_similarChars": { "message": "Kaasa sarnased tähemärgid parooli(de) sse" },
-  "optionDesc_unstrict": { "message": "Ei nõua vähemalt ühte tähemärki igast paroolis(paroolides) määratud lubatud tähemärgist" },
+  "optionDesc_unstrict": {
+    "message": "Ei nõua vähemalt ühte tähemärki igast paroolis(paroolides) määratud lubatud tähemärgist"
+  },
   "optionDesc_noEntropy": { "message": "Ära arvuta/logi hinnangulist entroopiat" },
   "optionDesc_quiet": { "message": "Tühista kogu logimine, välja arvatud vead" },
   "optionDesc_help": { "message": "Abi ekraani kuvamine" },

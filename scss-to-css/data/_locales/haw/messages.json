@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "He hewa i ka heluhelu ʻana i ka mana pūʻolo kūloko" },
   "error_notRecognized": { "message": "ʻaʻole i ʻike ʻia" },
   "error_nonPositiveNum": { "message": "hiki ke > 0 wale nō ka hoʻopaʻapaʻa" },
+  "error_requiresVal": { "message": "koi i kahi waiwai" },
   "error_invalidFilepath": { "message": "pono e lilo i ala faila kūpono. Loaʻa" },
   "error_invalidLangCode": { "message": "he code ʻōlelo kūpono ʻole ia" },
   "error_invalidURL": { "message": "URL kūpono ʻole" },
@@ -56,17 +57,25 @@
   "helpSection_params": { "message": "Nā koho palena" },
   "helpSection_cmds": { "message": "Nā Kauoha" },
   "optionDesc_uiLang": { "message": "ʻO ke code ʻōlelo ISO 639-1 e hōʻike i ka UI ma" },
-  "inputPathDesc_main": { "message": "Ala i ka faila SCSS a i ʻole ka papa kuhikuhi e loaʻa ana nā faila SCSS e hōʻuluʻulu ʻia" },
+  "inputPathDesc_main": {
+    "message": "Ala i ka faila SCSS a i ʻole ka papa kuhikuhi e loaʻa ana nā faila SCSS e hōʻuluʻulu ʻia"
+  },
   "inputPathDesc_extra": { "message": "e pili ana i ka papa kuhikuhi hana o kēia manawa" },
-  "outputPathDesc_main": { "message": "Ke ala i ka faila a i ʻole ka papa kuhikuhi kahi e mālama ʻia ai nā faila CSS + sourcemap" },
+  "outputPathDesc_main": {
+    "message": "Ke ala i ka faila a i ʻole ka papa kuhikuhi kahi e mālama ʻia ai nā faila CSS + sourcemap"
+  },
   "outputPathDesc_extra": { "message": "e pili ana i ke kumu hoʻokomo (inā ʻaʻole i hāʻawi ʻia, hoʻohana ʻia ka css/)" },
   "optionDesc_dryRun": { "message": "Mai hōʻuluʻulu maoli i nā faila, e hōʻike wale inā e hana ʻia lākou" },
   "optionDesc_dotfolders": { "message": "E hoʻokomo i nā waihona kiko i ka huli faila" },
   "optionDesc_noSourceMaps": { "message": "Kāohi i ka hana ʻia ʻana o nā palapala kumu" },
   "optionDesc_noMinify": { "message": "E hoʻopau i ka hoʻemi ʻana o ka CSS hoʻopuka" },
   "optionDesc_noRecursion": { "message": "E hoʻopau i ka huli ʻana i nā faila recursive" },
-  "optionDesc_copy": { "message": "E kope i ka CSS i hōʻuluʻulu ʻia i ka papa clipboard ma kahi o ke kākau ʻana i ka faila inā hana ʻia ka faila kumu hoʻokahi" },
-  "optionDesc_relativeOutput": { "message": "Hoʻopuka i nā faila e pili ana i kēlā me kēia faila kumu ma kahi o ke komo ʻana i ke aʻa" },
+  "optionDesc_copy": {
+    "message": "E kope i ka CSS i hōʻuluʻulu ʻia i ka papa clipboard ma kahi o ke kākau ʻana i ka faila inā hana ʻia ka faila kumu hoʻokahi"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Hoʻopuka i nā faila e pili ana i kēlā me kēia faila kumu ma kahi o ke komo ʻana i ke aʻa"
+  },
   "optionDesc_quiet": { "message": "E kāohi i nā hoʻopaʻa inoa āpau koe wale nō nā hewa" },
   "optionDesc_ignores": { "message": "Nā faila/papa kuhikuhi e kāpae ʻia mai ka hōʻuluʻulu ʻana" },
   "optionDesc_commentMain": { "message": "E hoʻomākaukau i ka manaʻo poʻomanaʻo i ka CSS i hōʻuluʻulu ʻia" },

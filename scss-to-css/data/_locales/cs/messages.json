@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Chyba při čtení místní verze balíčku" },
   "error_notRecognized": { "message": "\"Nerozpoznáno\"" },
   "error_nonPositiveNum": { "message": "argument může být pouze > 0" },
+  "error_requiresVal": { "message": "vyžaduje hodnotu" },
   "error_invalidFilepath": { "message": "musí být platná existující cesta k souboru. Mám" },
   "error_invalidLangCode": { "message": "je neplatný jazykový kód" },
   "error_invalidURL": { "message": "Neplatná adresa URL" },
@@ -56,7 +57,9 @@
   "helpSection_params": { "message": "Možnosti parametrů" },
   "helpSection_cmds": { "message": "Příkazy" },
   "optionDesc_uiLang": { "message": "Kód jazyka ISO 639-1 pro zobrazení uživatelského rozhraní" },
-  "inputPathDesc_main": { "message": "Cesta k souboru SCSS nebo adresáři obsahujícímu soubory SCSS, které mají být kompilovány" },
+  "inputPathDesc_main": {
+    "message": "Cesta k souboru SCSS nebo adresáři obsahujícímu soubory SCSS, které mají být kompilovány"
+  },
   "inputPathDesc_extra": { "message": "vzhledem k aktuálnímu pracovnímu adresáři" },
   "outputPathDesc_main": { "message": "Cesta k souboru nebo adresáři, kde budou uloženy soubory CSS + sourcemap" },
   "outputPathDesc_extra": { "message": "vzhledem ke vstupnímu kořenu (pokud není zadán, použije se css/)" },
@@ -65,8 +68,12 @@
   "optionDesc_noSourceMaps": { "message": "Zabránit generování zdrojových map" },
   "optionDesc_noMinify": { "message": "Zakázat minifikaci výstupního CSS" },
   "optionDesc_noRecursion": { "message": "Zakázat rekurzivní vyhledávání souborů" },
-  "optionDesc_copy": { "message": "Zkopírovat zkompilovaný CSS do schránky namísto zápisu do souboru, pokud je zpracován jeden zdrojový soubor" },
-  "optionDesc_relativeOutput": { "message": "Výstupní soubory související s každým zdrojovým souborem namísto vstupu kořenového adresáře" },
+  "optionDesc_copy": {
+    "message": "Zkopírovat zkompilovaný CSS do schránky namísto zápisu do souboru, pokud je zpracován jeden zdrojový soubor"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Výstupní soubory související s každým zdrojovým souborem namísto vstupu kořenového adresáře"
+  },
   "optionDesc_quiet": { "message": "Potlačit veškeré protokolování kromě chyb" },
   "optionDesc_ignores": { "message": "Soubory/adresáře, které chcete vyloučit z kompilace" },
   "optionDesc_commentMain": { "message": "Předložit komentář záhlaví ke kompilovanému CSS" },

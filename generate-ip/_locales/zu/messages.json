@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Iphutha ekufundeni uhlelo lwephakeji lendawo" },
   "error_notRecognized": { "message": "akuqashelwa" },
   "error_nonPositiveNum": { "message": "impikiswano ingaba > 0 kuphela" },
+  "error_requiresVal": { "message": "kudinga inani" },
   "error_invalidFilepath": { "message": "kumele kube yindlela yefayela evumelekile ekhona. Got" },
   "error_invalidLangCode": { "message": "iyikhodi yolimi engavumelekile" },
   "error_invalidURL": { "message": "I-URL engavumelekile" },

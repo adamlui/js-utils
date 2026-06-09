@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Napaka pri branju različice lokalnega paketa" },
   "error_notRecognized": { "message": "Ni prepoznan" },
   "error_nonPositiveNum": { "message": "argument je lahko samo > 0" },
+  "error_requiresVal": { "message": "zahteva vrednost" },
   "error_invalidFilepath": { "message": "mora biti veljavna obstoječa pot datoteke. Imam" },
   "error_invalidLangCode": { "message": "je neveljavna jezikovna koda" },
   "error_invalidURL": { "message": "Neveljaven URL" },
@@ -56,7 +57,9 @@
   "helpSection_params": { "message": "Parametri BLM opreacij" },
   "helpSection_cmds": { "message": "Ukazi" },
   "optionDesc_uiLang": { "message": "Koda jezika ISO 639-1 za prikaz uporabniškega vmesnika v" },
-  "inputPathDesc_main": { "message": "Pot do datoteke SCSS ali imenika, ki vsebuje datoteke SCSS, ki jih je treba prevesti" },
+  "inputPathDesc_main": {
+    "message": "Pot do datoteke SCSS ali imenika, ki vsebuje datoteke SCSS, ki jih je treba prevesti"
+  },
   "inputPathDesc_extra": { "message": "glede na trenutni delovni imenik" },
   "outputPathDesc_main": { "message": "Pot do datoteke ali imenika, kjer bodo shranjene datoteke CSS + sourcemap" },
   "outputPathDesc_extra": { "message": "glede na vhodni koren (če ni naveden, se uporablja css/)" },
@@ -65,7 +68,9 @@
   "optionDesc_noSourceMaps": { "message": "Preprečite ustvarjanje izvornih zemljevidov" },
   "optionDesc_noMinify": { "message": "Onemogoči minifikacijo izhodnega CSS" },
   "optionDesc_noRecursion": { "message": "Onemogoči rekurzivno iskanje datotek" },
-  "optionDesc_copy": { "message": "Kopiraj prevedeni CSS v odložišče namesto pisanja v datoteko, če se obdeluje ena sama izvorna datoteka" },
+  "optionDesc_copy": {
+    "message": "Kopiraj prevedeni CSS v odložišče namesto pisanja v datoteko, če se obdeluje ena sama izvorna datoteka"
+  },
   "optionDesc_relativeOutput": { "message": "Izhodne datoteke glede na vsako izvorno datoteko namesto za vnos korena" },
   "optionDesc_quiet": { "message": "Prepreči vse beleženje, razen napak" },
   "optionDesc_ignores": { "message": "Datoteke/imeniki, ki jih želite izključiti iz prevajanja" },

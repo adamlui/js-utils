@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Fehler beim Lesen der lokalen Paketversion" },
   "error_notRecognized": { "message": "Nicht erkannt" },
   "error_nonPositiveNum": { "message": "argument kann nur > 0 sein" },
+  "error_requiresVal": { "message": "erfordert einen Wert" },
   "error_invalidFilepath": { "message": "muss ein gültiger bestehender Dateipfad sein. Got" },
   "error_invalidLangCode": { "message": "ist ein ungültiger Sprachcode" },
   "error_invalidURL": { "message": "Ungültige URL" },
@@ -17,7 +18,9 @@
   "error_failedToFetchGlobalVer": { "message": "Globale Version konnte nicht abgerufen werden" },
   "error_failedToFetchSysLang": { "message": "Systemsprache konnte nicht abgerufen werden" },
   "error_mustIncludePath": { "message": "must include =path" },
-  "error_firstArgNotExist": { "message": "Das erste Argument kann nur eine vorhandene Datei oder ein vorhandenes Verzeichnis sein" },
+  "error_firstArgNotExist": {
+    "message": "Das erste Argument kann nur eine vorhandene Datei oder ein vorhandenes Verzeichnis sein"
+  },
   "error_doesNotExist": { "message": "existiert nicht" },
   "warn_configFileExists": { "message": "Die Konfigurationsdatei ist bereits vorhanden" },
   "warn_docLocalesFetchFailed": { "message": "Doc-Gebietsschemata konnten nicht abgerufen werden" },
@@ -56,17 +59,27 @@
   "helpSection_params": { "message": "Parameteroptionen" },
   "helpSection_cmds": { "message": "Befehle" },
   "optionDesc_uiLang": { "message": "ISO 639-1 Sprachcode zur Anzeige der Benutzeroberfläche in" },
-  "inputPathDesc_main": { "message": "Pfad zur SCSS-Datei oder zum Verzeichnis, das die zu kompilierenden SCSS-Dateien enthält" },
+  "inputPathDesc_main": {
+    "message": "Pfad zur SCSS-Datei oder zum Verzeichnis, das die zu kompilierenden SCSS-Dateien enthält"
+  },
   "inputPathDesc_extra": { "message": "relativ zum aktuellen Arbeitsverzeichnis" },
-  "outputPathDesc_main": { "message": "Pfad zu Datei oder Verzeichnis, in dem CSS + Sourcemap-Dateien gespeichert werden" },
+  "outputPathDesc_main": {
+    "message": "Pfad zu Datei oder Verzeichnis, in dem CSS + Sourcemap-Dateien gespeichert werden"
+  },
   "outputPathDesc_extra": { "message": "relativ zum Eingangsstamm (falls nicht angegeben, wird css/verwendet)" },
-  "optionDesc_dryRun": { "message": "Kompilieren Sie die Datei(en) nicht wirklich, zeigen Sie einfach an, ob sie verarbeitet werden" },
+  "optionDesc_dryRun": {
+    "message": "Kompilieren Sie die Datei(en) nicht wirklich, zeigen Sie einfach an, ob sie verarbeitet werden"
+  },
   "optionDesc_dotfolders": { "message": "Punktordner in die Dateisuche einbeziehen" },
   "optionDesc_noSourceMaps": { "message": "Verhindern, dass Quellkarten generiert werden" },
   "optionDesc_noMinify": { "message": "Minifizierung des Ausgabe-CSS deaktivieren" },
   "optionDesc_noRecursion": { "message": "Rekursive Dateisuche deaktivieren" },
-  "optionDesc_copy": { "message": "Kompiliertes CSS in die Zwischenablage kopieren, anstatt in die Datei zu schreiben, wenn eine einzelne Quelldatei verarbeitet wird" },
-  "optionDesc_relativeOutput": { "message": "Ausgabedateien relativ zu jeder Quelldatei statt zum Eingabestammverzeichnis" },
+  "optionDesc_copy": {
+    "message": "Kompiliertes CSS in die Zwischenablage kopieren, anstatt in die Datei zu schreiben, wenn eine einzelne Quelldatei verarbeitet wird"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Ausgabedateien relativ zu jeder Quelldatei statt zum Eingabestammverzeichnis"
+  },
   "optionDesc_quiet": { "message": "Alle Protokolle mit Ausnahme von Fehlern unterdrücken" },
   "optionDesc_ignores": { "message": "Dateien/Verzeichnisse, die von der Kompilierung ausgeschlossen werden sollen" },
   "optionDesc_commentMain": { "message": "Header-Kommentar vor dem kompilierten CSS einfügen" },

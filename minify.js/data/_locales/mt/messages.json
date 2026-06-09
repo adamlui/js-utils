@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Żball fil-qari tal-verżjoni tal-pakkett lokali" },
   "error_notRecognized": { "message": "Mhux rikonoxxut" },
   "error_nonPositiveNum": { "message": "l-argument jista' jkun biss > 0" },
+  "error_requiresVal": { "message": "jeħtieġ valur" },
   "error_invalidFilepath": { "message": "trid tkun passaġġ tal-fajl validu eżistenti. Got" },
   "error_invalidLangCode": { "message": "huwa kodiċi tal-lingwa mhux validu" },
   "error_invalidURL": { "message": "URL mhux tajjeb" },
@@ -55,7 +56,9 @@
   "helpSection_params": { "message": "Għażliet tal-parametri" },
   "helpSection_cmds": { "message": "Kmand tal-informazzjoni" },
   "optionDesc_uiLang": { "message": "Kodiċi tal-lingwa ISO 639-1 biex turi l-UI fi" },
-  "inputPathDesc_main": { "message": "Il-mogħdija għall-fajl jew id-direttorju JavaScript li fih il-fajls JavaScript li għandhom jiġu mminifikati" },
+  "inputPathDesc_main": {
+    "message": "Il-mogħdija għall-fajl jew id-direttorju JavaScript li fih il-fajls JavaScript li għandhom jiġu mminifikati"
+  },
   "inputPathDesc_extra": { "message": "meta mqabbel mad-direttorju tax-xogħol attwali" },
   "outputPathDesc_main": { "message": "Il-mogħdija għall-fajl jew id-direttorju fejn se jinħażnu l-fajls minifikati" },
   "outputPathDesc_extra": { "message": "meta mqabbel mal-post tal-fajl oriġinali (jekk mhux ipprovdut, min/ jintuża)" },
@@ -65,8 +68,12 @@
   "optionDesc_noRecursion": { "message": "Itfi t-tiftix rekursiv tal-fajls" },
   "optionDesc_noMangle": { "message": "Itfi l-ismijiet li ma jidhrux" },
   "optionDesc_noFilenameChange": { "message": "Iddiżattiva l-estensjoni tal-fajl li qed jinbidel għal .min.js" },
-  "optionDesc_copy": { "message": "Ikkopja l-kodiċi minimizzat għall-klipbord minflok tikteb biex tiffajlja jekk jiġi pproċessat fajl b' sors wieħed" },
-  "optionDesc_relativeOutput": { "message": "Il-fajls tal-output meta mqabbla ma' kull fajl tas-sors minflok mal-għeruq tal-input" },
+  "optionDesc_copy": {
+    "message": "Ikkopja l-kodiċi minimizzat għall-klipbord minflok tikteb biex tiffajlja jekk jiġi pproċessat fajl b' sors wieħed"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Il-fajls tal-output meta mqabbla ma' kull fajl tas-sors minflok mal-għeruq tal-input"
+  },
   "optionDesc_rewriteImports": { "message": "Aġġorna l-mogħdijiet tal-importazzjoni minn .js għal .min.js" },
   "optionDesc_quiet": { "message": "Waqqaf il-logging kollu ħlief l-iżbalji" },
   "optionDesc_ignores": { "message": "Fajls/direttorji biex teskludi mill-minifikazzjoni" },

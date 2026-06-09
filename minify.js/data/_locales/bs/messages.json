@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Greška pri čitanju verzije lokalnog paketa" },
   "error_notRecognized": { "message": "nije prepoznato" },
   "error_nonPositiveNum": { "message": "argument može biti samo > 0" },
+  "error_requiresVal": { "message": "zahtijeva vrijednost" },
   "error_invalidFilepath": { "message": "mora biti važeća postojeća putanja datoteke. Imam" },
   "error_invalidLangCode": { "message": "je nevažeći kod jezika" },
   "error_invalidURL": { "message": "Nevažeći URL" },
@@ -55,18 +56,26 @@
   "helpSection_params": { "message": "i opcije parametara" },
   "helpSection_cmds": { "message": "Komande za informacije" },
   "optionDesc_uiLang": { "message": "ISO 639-1 kod jezika za prikaz korisničkog sučelja u" },
-  "inputPathDesc_main": { "message": "Putanja do JavaScript datoteke ili direktorija koji sadrži JavaScript datoteke za umanjenje" },
+  "inputPathDesc_main": {
+    "message": "Putanja do JavaScript datoteke ili direktorija koji sadrži JavaScript datoteke za umanjenje"
+  },
   "inputPathDesc_extra": { "message": "u odnosu na trenutni radni direktorij" },
   "outputPathDesc_main": { "message": "Putanja do datoteke ili direktorija gdje će se čuvati minificirane datoteke" },
-  "outputPathDesc_extra": { "message": "u odnosu na originalnu lokaciju datoteke (ako nije navedeno, koristi se min./)" },
+  "outputPathDesc_extra": {
+    "message": "u odnosu na originalnu lokaciju datoteke (ako nije navedeno, koristi se min./)"
+  },
   "optionDesc_dryRun": { "message": "Nemojte zapravo smanjivati datoteke, samo pokažite da li će biti obrađene" },
   "optionDesc_dotfolders": { "message": "Uključi mape s tačkama u pretraživanje datoteka" },
   "optionDesc_dotfiles": { "message": "Uključite datoteke tačaka u pretraživanje datoteka" },
   "optionDesc_noRecursion": { "message": "Onemogući pretraživanje rekurzivnih datoteka" },
   "optionDesc_noMangle": { "message": "Onemogući nazive mangiranja" },
   "optionDesc_noFilenameChange": { "message": "Onemogući promjenu ekstenzije datoteke u .min.js" },
-  "optionDesc_copy": { "message": "Kopirajte umanjeni kôd u međuspremnik umjesto pisanja u datoteku ako se obrađuje pojedinačna izvorna datoteka" },
-  "optionDesc_relativeOutput": { "message": "Izlazne datoteke u odnosu na svaku izvornu datoteku umjesto za unos korijena" },
+  "optionDesc_copy": {
+    "message": "Kopirajte umanjeni kôd u međuspremnik umjesto pisanja u datoteku ako se obrađuje pojedinačna izvorna datoteka"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Izlazne datoteke u odnosu na svaku izvornu datoteku umjesto za unos korijena"
+  },
   "optionDesc_rewriteImports": { "message": "Ažurirajte putanje uvoza iz .js u .min.js" },
   "optionDesc_quiet": { "message": "Zatvorite sve evidencije osim grešaka" },
   "optionDesc_ignores": { "message": "Datoteke/direktoriji za isključivanje iz minifikacije" },

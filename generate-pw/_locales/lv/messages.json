@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Lasot lokālās pakotnes versiju, radās kļūda" },
   "error_notRecognized": { "message": "Nav atpazīts" },
   "error_nonPositiveNum": { "message": "arguments var būt tikai > 0" },
+  "error_requiresVal": { "message": "nepieciešama vērtība" },
   "error_invalidFilepath": { "message": "jābūt derīgam esošam faila ceļam. Iegūts" },
   "error_invalidLangCode": { "message": "ir nederīgs valodas kods" },
   "error_invalidURL": { "message": "NederÄ«gs URI:% 1" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Neļaut parolē(-ēs) izmantot mazos burtus" },
   "optionDesc_noUpper": { "message": "Parolē(-ēs) neatļaut lielos burtus" },
   "optionDesc_similarChars": { "message": "Iekļaut līdzīgas rakstzīmes parolē(-ēs)" },
-  "optionDesc_unstrict": { "message": "Neprasiet vismaz vienu rakstzīmi no katras parolē(-ēs) atļautās rakstzīmju kopas" },
+  "optionDesc_unstrict": {
+    "message": "Neprasiet vismaz vienu rakstzīmi no katras parolē(-ēs) atļautās rakstzīmju kopas"
+  },
   "optionDesc_noEntropy": { "message": "Neaprēķināt/nereģistrēt aplēsto entropiju" },
   "optionDesc_quiet": { "message": "Aizliegt visu reģistrēšanu, izņemot kļūdas" },
   "optionDesc_help": { "message": "Parādīt palīdzības ekrānu" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Fout met lees van plaaslike pakketweergawe" },
   "error_notRecognized": { "message": "nie erken nie" },
   "error_nonPositiveNum": { "message": "argument kan net wees > 0" },
+  "error_requiresVal": { "message": "behoefte aan waarde" },
   "error_invalidFilepath": { "message": "moet 'n geldige bestaande lêerpad wees. Het" },
   "error_invalidLangCode": { "message": "is 'n ongeldige taal kode" },
   "error_invalidURL": { "message": "Ongeldige URL" },
@@ -55,17 +56,23 @@
   "helpSection_params": { "message": "Parameter opsies" },
   "helpSection_cmds": { "message": "Inligtingopdragte" },
   "optionDesc_uiLang": { "message": "ISO 639-1 kode van taal te vertoon UI in" },
-  "inputPathDesc_main": { "message": "Pad na JavaScript-lêer of gids wat JavaScript-lêers bevat wat geminifiseer moet word" },
+  "inputPathDesc_main": {
+    "message": "Pad na JavaScript-lêer of gids wat JavaScript-lêers bevat wat geminifiseer moet word"
+  },
   "inputPathDesc_extra": { "message": "huidige werkende gids" },
   "outputPathDesc_main": { "message": "Pad na lêer of gids waar verkleinde lêers gestoor sal word" },
-  "outputPathDesc_extra": { "message": "relatief tot die oorspronklike lêer plek (indien nie verskaf, min/ gebruik word)" },
+  "outputPathDesc_extra": {
+    "message": "relatief tot die oorspronklike lêer plek (indien nie verskaf, min/ gebruik word)"
+  },
   "optionDesc_dryRun": { "message": "Moenie die lêer(s) eintlik verklein nie, wys net of dit verwerk sal word" },
   "optionDesc_dotfolders": { "message": "Sluit dotgidse in lêersoektog in" },
   "optionDesc_dotfiles": { "message": "Sluit dotfiles in lêersoektog in" },
   "optionDesc_noRecursion": { "message": "Deaktiveer rekursiewe lêersoektog" },
   "optionDesc_noMangle": { "message": "Deaktiveer mangling name" },
   "optionDesc_noFilenameChange": { "message": "Deaktiveer die verandering van lêer uitbreiding na .min.js" },
-  "optionDesc_copy": { "message": "Kopieer geminificeerde kode na knipbord in plaas daarvan om na lêer te skryf as enkelbronlêer verwerk word" },
+  "optionDesc_copy": {
+    "message": "Kopieer geminificeerde kode na knipbord in plaas daarvan om na lêer te skryf as enkelbronlêer verwerk word"
+  },
   "optionDesc_relativeOutput": { "message": "Uitset lêers relatief tot elke bron lêer in plaas van insette wortel" },
   "optionDesc_rewriteImports": { "message": "Dateer invoerpaaie van .js na .min.js op" },
   "optionDesc_quiet": { "message": "Onderdruk alle aanmelding behalwe foute" },

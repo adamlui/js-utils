@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Errore durante la lettura della versione del pacchetto locale" },
   "error_notRecognized": { "message": "non riconosciuti" },
   "error_nonPositiveNum": { "message": "l'argomento può essere solo > 0" },
+  "error_requiresVal": { "message": "richiede un valore" },
   "error_invalidFilepath": { "message": "deve essere un percorso di file esistente valido. Ottenuto" },
   "error_invalidLangCode": { "message": "è un codice lingua non valido" },
   "error_invalidURL": { "message": "URL non valido" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Non consentire lettere minuscole nelle password" },
   "optionDesc_noUpper": { "message": "Non consentire lettere maiuscole nelle password" },
   "optionDesc_similarChars": { "message": "Includi caratteri simili nelle password" },
-  "optionDesc_unstrict": { "message": "Non richiedere almeno un carattere per ogni set di caratteri consentito nelle password" },
+  "optionDesc_unstrict": {
+    "message": "Non richiedere almeno un carattere per ogni set di caratteri consentito nelle password"
+  },
   "optionDesc_noEntropy": { "message": "Non calcolare/registrare l'entropia stimata" },
   "optionDesc_quiet": { "message": "Elimina tutte le registrazioni ad eccezione degli errori" },
   "optionDesc_help": { "message": "Visualizza la schermata di aiuto" },

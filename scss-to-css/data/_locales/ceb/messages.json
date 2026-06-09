@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Sayup sa pagbasa sa lokal nga bersyon sa pakete" },
   "error_notRecognized": { "message": "wala mailhi" },
   "error_nonPositiveNum": { "message": "argumento lang ang pwede > 0" },
+  "error_requiresVal": { "message": "nagkinahanglan og usa ka bili" },
   "error_invalidFilepath": { "message": "kinahanglan nga usa ka balido nga kasamtangan nga file path.GOT" },
   "error_invalidLangCode": { "message": "usa ka Dili Maayo nga Kodigo sa Pinulongan" },
   "error_invalidURL": { "message": "Dili balido nga URL" },
@@ -65,8 +66,12 @@
   "optionDesc_noSourceMaps": { "message": "Paglikay sa mga mapa sa gigikanan gikan sa pagmugna" },
   "optionDesc_noMinify": { "message": "I-disable ang minification sa output CSS" },
   "optionDesc_noRecursion": { "message": "I-disable ang recursive file nga pagpangita" },
-  "optionDesc_copy": { "message": "Kopyaha ang natipon nga CSS sa clipboard imbis nga magsulat aron mag-file kung ang usa ka gigikanan nga file giproseso" },
-  "optionDesc_relativeOutput": { "message": "Output files nga may kalabutan sa matag tinubdan file sa baylo nga sa input gamut" },
+  "optionDesc_copy": {
+    "message": "Kopyaha ang natipon nga CSS sa clipboard imbis nga magsulat aron mag-file kung ang usa ka gigikanan nga file giproseso"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Output files nga may kalabutan sa matag tinubdan file sa baylo nga sa input gamut"
+  },
   "optionDesc_quiet": { "message": "Pugngan ang tanan nga pag-log gawas sa mga sayup" },
   "optionDesc_ignores": { "message": "Mga file/direktoryo nga dili iapil gikan sa pagtipon" },
   "optionDesc_commentMain": { "message": "Prepend header komento sa compiled CSS" },

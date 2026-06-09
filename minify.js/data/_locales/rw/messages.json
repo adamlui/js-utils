@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Porogaramu Verisiyo" },
   "error_notRecognized": { "message": "ntibimenyekana" },
   "error_nonPositiveNum": { "message": "ishobora gusanga ari 0" },
+  "error_requiresVal": { "message": "a Agaciro" },
   "error_invalidFilepath": { "message": "a Byemewe IDOSIYE Inzira" },
   "error_invalidLangCode": { "message": "ni Sibyo Ururimi: Inyandikoporogaramu" },
   "error_invalidURL": { "message": "URL itemewe" },
@@ -65,7 +66,9 @@
   "optionDesc_noRecursion": { "message": "Hagarika gushakisha dosiye isubiramo" },
   "optionDesc_noMangle": { "message": "Hagarika amazina manging" },
   "optionDesc_noFilenameChange": { "message": "IDOSIYE Umugereka Kuri min.js" },
-  "optionDesc_copy": { "message": "Inyandikoporogaramu Kuri Ububikokoporora Bya Kuri IDOSIYE NIBA UMWE Inkomoko IDOSIYE ni" },
+  "optionDesc_copy": {
+    "message": "Inyandikoporogaramu Kuri Ububikokoporora Bya Kuri IDOSIYE NIBA UMWE Inkomoko IDOSIYE ni"
+  },
   "optionDesc_relativeOutput": { "message": "Idosiye Bifitanye isano Kuri Inkomoko IDOSIYE Bya Kuri Iyinjiza Imizi" },
   "optionDesc_rewriteImports": { "message": "Kuzana Inzira Bivuye Kuri min.js" },
   "optionDesc_quiet": { "message": "Kuraho ibiti byose usibye amakosa" },

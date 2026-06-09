@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ലോക്കൽ പാക്കേജ് പതിപ്പ് വായിക്കുന്നതിൽ പിശക്" },
   "error_notRecognized": { "message": "തിരിച്ചറിഞ്ഞിട്ടില്ല" },
   "error_nonPositiveNum": { "message": "ആർഗ്യുമെന്റിന് > 0 മാത്രമേ ആകാൻ കഴിയൂ" },
+  "error_requiresVal": { "message": "ഒരു മൂല്യം ആവശ്യമാണ്" },
   "error_invalidFilepath": { "message": "സാധുവായ ഒരു ഫയൽ പാത്ത് ആയിരിക്കണം. ലഭിച്ചു" },
   "error_invalidLangCode": { "message": "ഒരു അസാധുവായ ഭാഷാ കോഡാണ്" },
   "error_invalidURL": { "message": "തെറ്റായ സ്ക്രിപ്റ്റ് നിര്‍ദ്ദേശം" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "പാസ്‌വേഡ്(കളിൽ) ചെറിയ അക്ഷരങ്ങൾ അനുവദിക്കരുത്" },
   "optionDesc_noUpper": { "message": "പാസ്‌വേഡ്(കളിൽ) വലിയക്ഷരങ്ങൾ അനുവദിക്കരുത്" },
   "optionDesc_similarChars": { "message": "പാസ്‌വേഡിൽ(കൾ) സമാനമായ പ്രതീകങ്ങൾ ഉൾപ്പെടുത്തുക" },
-  "optionDesc_unstrict": { "message": "പാസ്‌വേഡ്(കൾ) യിൽ അനുവദനീയമായ ഓരോ പ്രതീകത്തിൽ നിന്നും കുറഞ്ഞത് ഒരു പ്രതീകമെങ്കിലും ആവശ്യമില്ല" },
+  "optionDesc_unstrict": {
+    "message": "പാസ്‌വേഡ്(കൾ) യിൽ അനുവദനീയമായ ഓരോ പ്രതീകത്തിൽ നിന്നും കുറഞ്ഞത് ഒരു പ്രതീകമെങ്കിലും ആവശ്യമില്ല"
+  },
   "optionDesc_noEntropy": { "message": "കണക്കാക്കിയ എൻട്രോപ്പി കണക്കാക്കരുത്/രേഖപ്പെടുത്തരുത്" },
   "optionDesc_quiet": { "message": "പിശകുകൾ ഒഴികെ എല്ലാ ലോഗിംഗും അടിച്ചമർത്തുക" },
   "optionDesc_help": { "message": "സഹായ സ്ക്രീൻ പ്രദർശിപ്പിക്കുക" },

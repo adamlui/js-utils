@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "កំហុស ក្នុង ការ អាន កំណែ កញ្ចប់ មូលដ្ឋាន" },
   "error_notRecognized": { "message": "មិនត្រឹមត្រូវ" },
   "error_nonPositiveNum": { "message": "អាគុយម៉ង់អាចមានតែ > 0" },
+  "error_requiresVal": { "message": "តម្រូវឱ្យមានតម្លៃ" },
   "error_invalidFilepath": { "message": "ត្រូវ តែ ជា ផ្លូវ ឯកសារ ដែល មាន សុពលភាព & # 160; ។ Got" },
   "error_invalidLangCode": { "message": "គឺជាលេខកូដភាសាដែលមិនត្រឹមត្រូវ" },
   "error_invalidURL": { "message": "URL មិនត្រឹមត្រូវ" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "មិន អនុញ្ញាត តួអក្សរ តូច ក្នុង ពាក្យ សម្ងាត់" },
   "optionDesc_noUpper": { "message": "មិន អនុញ្ញាត តួអក្សរ ធំ ក្នុង ពាក្យ សម្ងាត់" },
   "optionDesc_similarChars": { "message": "រួមបញ្ចូលតួអក្សរស្រដៀងគ្នានៅក្នុងពាក្យសម្ងាត់" },
-  "optionDesc_unstrict": { "message": "មិនត្រូវការយ៉ាងហោចណាស់តួអក្សរមួយពីតួអក្សរដែលបានអនុញ្ញាតនីមួយៗដែលបានកំណត់នៅក្នុងពាក្យសម្ងាត់" },
+  "optionDesc_unstrict": {
+    "message": "មិនត្រូវការយ៉ាងហោចណាស់តួអក្សរមួយពីតួអក្សរដែលបានអនុញ្ញាតនីមួយៗដែលបានកំណត់នៅក្នុងពាក្យសម្ងាត់"
+  },
   "optionDesc_noEntropy": { "message": "កុំគណនា/កំណត់ហេតុប៉ាន់ស្មាន Entropy" },
   "optionDesc_quiet": { "message": "បង្ក្រាបការកាប់ឈើទាំងអស់លើកលែងតែកំហុស" },
   "optionDesc_help": { "message": "បង្ហាញអេក្រង់ជំនួយ" },

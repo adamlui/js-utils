@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Faitau sese le lomiga afifi i le lotoifale" },
   "error_notRecognized": { "message": "e le o iloa" },
   "error_nonPositiveNum": { "message": "finauga e mafai ona na o > 0" },
+  "error_requiresVal": { "message": "manaomia se taua" },
   "error_invalidFilepath": { "message": "e tatau ona avea ma se ala faila o loo i ai nei. maua" },
   "error_invalidLangCode": { "message": "o se code o le gagana e le aoga" },
   "error_invalidURL": { "message": "URL Invalid" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Faʻasaʻolotoina lalo o mataitusi i le upu faataga(s)" },
   "optionDesc_noUpper": { "message": "Faʻaumatia tusi pito i luga i le upu faataga(s)" },
   "optionDesc_similarChars": { "message": "Faʻaaofia tutusa mataitusi i upu faataga(s)" },
-  "optionDesc_unstrict": { "message": "Aua le manaomia le itiiti ifo ma le tasi uiga mai tagata uma faatagaina ua faatulaga i le upu faataga(s)" },
+  "optionDesc_unstrict": {
+    "message": "Aua le manaomia le itiiti ifo ma le tasi uiga mai tagata uma faatagaina ua faatulaga i le upu faataga(s)"
+  },
   "optionDesc_noEntropy": { "message": "Aua le fuafuaina/log fuafuaina entropy" },
   "optionDesc_quiet": { "message": "Suppress logging uma vagana ai mea sese" },
   "optionDesc_help": { "message": "Faaali atu le lau fesoasoani" },

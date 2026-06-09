@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Faitau sese le lomiga afifi i le lotoifale" },
   "error_notRecognized": { "message": "e le o iloa" },
   "error_nonPositiveNum": { "message": "finauga e mafai ona na o > 0" },
+  "error_requiresVal": { "message": "manaomia se taua" },
   "error_invalidFilepath": { "message": "e tatau ona avea ma se ala faila o loo i ai nei. maua" },
   "error_invalidLangCode": { "message": "o se code o le gagana e le aoga" },
   "error_invalidURL": { "message": "URL Invalid" },
@@ -17,7 +18,9 @@
   "error_failedToFetchGlobalVer": { "message": "Ua le mafai ona maua le lomiga i le lalolagi atoa" },
   "error_failedToFetchSysLang": { "message": "Le mafai ona maua le gagana o le faiga" },
   "error_mustIncludePath": { "message": "e tatau ona aofia ai =ala" },
-  "error_firstArgNotExist": { "message": "O le finauga muamua e mafai ona na o se faila po o se faatonuga o loo i ai nei" },
+  "error_firstArgNotExist": {
+    "message": "O le finauga muamua e mafai ona na o se faila po o se faatonuga o loo i ai nei"
+  },
   "error_doesNotExist": { "message": "e leai se mea e fai" },
   "warn_configFileExists": { "message": "Config faila ua uma ona i ai" },
   "warn_docLocalesFetchFailed": { "message": "O le a le mea e fai ai le doc locales" },
@@ -55,17 +58,23 @@
   "helpSection_params": { "message": "Filifiliga Parameter" },
   "helpSection_cmds": { "message": "Poloaiga Info" },
   "optionDesc_uiLang": { "message": "ISO 639-1 code o le gagana e faaali atu UI i" },
-  "inputPathDesc_main": { "message": "Ala i faila JavaScript po o faatonuga e aofia ai faila JavaScript e tatau ona minified" },
+  "inputPathDesc_main": {
+    "message": "Ala i faila JavaScript po o faatonuga e aofia ai faila JavaScript e tatau ona minified"
+  },
   "inputPathDesc_extra": { "message": "faatusatusa i le Faatonu o Galuega i le taimi nei" },
   "outputPathDesc_main": { "message": "Ala i faila po o faatonuga o le a teuina faila minified" },
-  "outputPathDesc_extra": { "message": "e tusa ai ma le nofoaga muamua o faila (pe afai e le o tuuina atu, min/ o loo faaaogaina)" },
+  "outputPathDesc_extra": {
+    "message": "e tusa ai ma le nofoaga muamua o faila (pe afai e le o tuuina atu, min/ o loo faaaogaina)"
+  },
   "optionDesc_dryRun": { "message": "Aua le faʻavaivaia le faila(s), na o le faʻaalia pe o le a faʻagasolo" },
   "optionDesc_dotfolders": { "message": "Faʻaaofia dotfolders i le sailiga faila" },
   "optionDesc_dotfiles": { "message": "Faʻaaofia dotfiles i le sailiga faila" },
   "optionDesc_noRecursion": { "message": "Faʻaletonu toe faʻafoʻi faila sailiga" },
   "optionDesc_noMangle": { "message": "Faʻaleagaina o igoa o le mangling" },
   "optionDesc_noFilenameChange": { "message": "Disable suia faila faalauteleina i.min.js" },
-  "optionDesc_copy": { "message": "Kopi minified code i clipboard nai lo le tusitusi e faila pe afai o le tasi punaoa faila o loo faagasolo" },
+  "optionDesc_copy": {
+    "message": "Kopi minified code i clipboard nai lo le tusitusi e faila pe afai o le tasi punaoa faila o loo faagasolo"
+  },
   "optionDesc_relativeOutput": { "message": "Output faila e faatusatusa i faila puna taitasi nai lo le sao aʻa" },
   "optionDesc_rewriteImports": { "message": "Update auala faaulufale mai mai mai.js i.min.js" },
   "optionDesc_quiet": { "message": "Suppress logging uma vagana ai mea sese" },

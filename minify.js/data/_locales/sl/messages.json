@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Napaka pri branju različice lokalnega paketa" },
   "error_notRecognized": { "message": "Ni prepoznan" },
   "error_nonPositiveNum": { "message": "argument je lahko samo > 0" },
+  "error_requiresVal": { "message": "zahteva vrednost" },
   "error_invalidFilepath": { "message": "mora biti veljavna obstoječa pot datoteke. Imam" },
   "error_invalidLangCode": { "message": "je neveljavna jezikovna koda" },
   "error_invalidURL": { "message": "Neveljaven URL" },
@@ -55,7 +56,9 @@
   "helpSection_params": { "message": "Parametri BLM opreacij" },
   "helpSection_cmds": { "message": "Info ukazi" },
   "optionDesc_uiLang": { "message": "Koda jezika ISO 639-1 za prikaz uporabniškega vmesnika v" },
-  "inputPathDesc_main": { "message": "Pot do datoteke JavaScript ali imenika, ki vsebuje datoteke JavaScript, ki jih je treba pomanjšati" },
+  "inputPathDesc_main": {
+    "message": "Pot do datoteke JavaScript ali imenika, ki vsebuje datoteke JavaScript, ki jih je treba pomanjšati"
+  },
   "inputPathDesc_extra": { "message": "glede na trenutni delovni imenik" },
   "outputPathDesc_main": { "message": "Pot do datoteke ali imenika, kjer bodo shranjene pomanjšane datoteke" },
   "outputPathDesc_extra": { "message": "glede na prvotno lokacijo datoteke (če ni na voljo, se uporabi min/)" },
@@ -65,7 +68,9 @@
   "optionDesc_noRecursion": { "message": "Onemogoči rekurzivno iskanje datotek" },
   "optionDesc_noMangle": { "message": "Onemogoči imena mangiranja" },
   "optionDesc_noFilenameChange": { "message": "Onemogoči spreminjanje končnice datoteke v .min.js" },
-  "optionDesc_copy": { "message": "Kopirajte pomanjšano kodo v odložišče namesto pisanja v datoteko, če se obdeluje ena sama izvorna datoteka" },
+  "optionDesc_copy": {
+    "message": "Kopirajte pomanjšano kodo v odložišče namesto pisanja v datoteko, če se obdeluje ena sama izvorna datoteka"
+  },
   "optionDesc_relativeOutput": { "message": "Izhodne datoteke glede na vsako izvorno datoteko namesto za vnos korena" },
   "optionDesc_rewriteImports": { "message": "Posodobite poti uvoza iz .js v .min.js" },
   "optionDesc_quiet": { "message": "Prepreči vse beleženje, razen napak" },

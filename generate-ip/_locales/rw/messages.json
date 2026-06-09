@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Porogaramu Verisiyo" },
   "error_notRecognized": { "message": "ntibimenyekana" },
   "error_nonPositiveNum": { "message": "impaka zirashobora gusa > 0" },
+  "error_requiresVal": { "message": "a Agaciro" },
   "error_invalidFilepath": { "message": "a Byemewe IDOSIYE Inzira" },
   "error_invalidLangCode": { "message": "ni Sibyo Ururimi: Inyandikoporogaramu" },
   "error_invalidURL": { "message": "URL itemewe" },

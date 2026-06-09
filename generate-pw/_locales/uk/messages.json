@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Помилка читання версії локального пакета" },
   "error_notRecognized": { "message": "не розпізнаний" },
   "error_nonPositiveNum": { "message": "аргумент може бути лише > 0" },
+  "error_requiresVal": { "message": "вимагає значення" },
   "error_invalidFilepath": { "message": "має бути дійсним існуючим шляхом до файлу. Отримано" },
   "error_invalidLangCode": { "message": "є недійсним кодом мови" },
   "error_invalidURL": { "message": "Недійсна URL-адреса" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Заборонити використання малих літер у паролях" },
   "optionDesc_noUpper": { "message": "Заборонити великі літери в паролях" },
   "optionDesc_similarChars": { "message": "Вкажіть схожі символи в паролях" },
-  "optionDesc_unstrict": { "message": "Не вимагайте принаймні одного символу з кожного дозволеного символу, встановленого в паролі" },
+  "optionDesc_unstrict": {
+    "message": "Не вимагайте принаймні одного символу з кожного дозволеного символу, встановленого в паролі"
+  },
   "optionDesc_noEntropy": { "message": "Не обчислювати/реєструвати розрахункову ентропію" },
   "optionDesc_quiet": { "message": "Придушити всі журнали, крім помилок" },
   "optionDesc_help": { "message": "Відобразити екран довідки" },

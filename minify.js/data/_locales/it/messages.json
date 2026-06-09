@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Errore durante la lettura della versione del pacchetto locale" },
   "error_notRecognized": { "message": "non riconosciuti" },
   "error_nonPositiveNum": { "message": "l'argomento può essere solo > 0" },
+  "error_requiresVal": { "message": "richiede un valore" },
   "error_invalidFilepath": { "message": "deve essere un percorso di file esistente valido. Ottenuto" },
   "error_invalidLangCode": { "message": "è un codice lingua non valido" },
   "error_invalidURL": { "message": "URL non valido" },
@@ -55,18 +56,28 @@
   "helpSection_params": { "message": "Opzioni dei parametri" },
   "helpSection_cmds": { "message": "Comandi info" },
   "optionDesc_uiLang": { "message": "Codice ISO 639-1 della lingua in cui visualizzare l'interfaccia utente" },
-  "inputPathDesc_main": { "message": "Percorso del file JavaScript o della directory contenente i file JavaScript da minimizzare" },
+  "inputPathDesc_main": {
+    "message": "Percorso del file JavaScript o della directory contenente i file JavaScript da minimizzare"
+  },
   "inputPathDesc_extra": { "message": "rispetto alla directory di lavoro corrente" },
-  "outputPathDesc_main": { "message": "Percorso del file o della directory in cui verranno archiviati i file minimizzati" },
-  "outputPathDesc_extra": { "message": "rispetto alla posizione originale del file (se non fornito, viene utilizzato min/)" },
+  "outputPathDesc_main": {
+    "message": "Percorso del file o della directory in cui verranno archiviati i file minimizzati"
+  },
+  "outputPathDesc_extra": {
+    "message": "rispetto alla posizione originale del file (se non fornito, viene utilizzato min/)"
+  },
   "optionDesc_dryRun": { "message": "Non minimizzare i file, mostra solo se verranno elaborati" },
   "optionDesc_dotfolders": { "message": "Includi cartelle puntate nella ricerca di file" },
   "optionDesc_dotfiles": { "message": "Includi dotfile nella ricerca di file" },
   "optionDesc_noRecursion": { "message": "Disabilita la ricerca ricorsiva dei file" },
   "optionDesc_noMangle": { "message": "Disabilita nomi di mangling" },
   "optionDesc_noFilenameChange": { "message": "Disabilita la modifica dell'estensione del file in .min.js" },
-  "optionDesc_copy": { "message": "Copia il codice minimizzato negli appunti invece di scriverlo sul file se viene elaborato un singolo file di origine" },
-  "optionDesc_relativeOutput": { "message": "File di output relativi a ciascun file di origine anziché alla radice di input" },
+  "optionDesc_copy": {
+    "message": "Copia il codice minimizzato negli appunti invece di scriverlo sul file se viene elaborato un singolo file di origine"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "File di output relativi a ciascun file di origine anziché alla radice di input"
+  },
   "optionDesc_rewriteImports": { "message": "Aggiorna i percorsi di importazione da .js a .min.js" },
   "optionDesc_quiet": { "message": "Elimina tutte le registrazioni ad eccezione degli errori" },
   "optionDesc_ignores": { "message": "File/directory da escludere dalla minimizzazione" },

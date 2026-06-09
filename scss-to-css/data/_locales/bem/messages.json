@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Bipasha Basu Local Package Version" },
   "error_notRecognized": { "message": "tabeshiba" },
   "error_nonPositiveNum": { "message": "fela Anikulapo Kuti > 0" },
+  "error_requiresVal": { "message": "akabila Value" },
   "error_invalidFilepath": { "message": "fela Anikulapo Kuti Fela Anikulapo Kuti" },
   "error_invalidLangCode": { "message": "ilembo lya lulimi ulushaba na maka" },
   "error_invalidURL": { "message": "URL yabula amaka" },
@@ -58,14 +59,20 @@
   "optionDesc_uiLang": { "message": "ISO 639-1 Code of Language Ukulele Tabs in Ukulele Tabs" },
   "inputPathDesc_main": { "message": "Fela Anikulapo Kuti SCSS file or directory containing Fela Anikulapo Kuti" },
   "inputPathDesc_extra": { "message": "about Mulya Wulandari" },
-  "outputPathDesc_main": { "message": "Fela Anikulapo Kuti Fela Anikulapo Kuti Fela Anikulapo Kuti CSS + sourcemap files" },
+  "outputPathDesc_main": {
+    "message": "Fela Anikulapo Kuti Fela Anikulapo Kuti Fela Anikulapo Kuti CSS + sourcemap files"
+  },
   "outputPathDesc_extra": { "message": "(src) = \"s2.3\" > (src) = \"s2.3\" > (s2.3)" },
-  "optionDesc_dryRun": { "message": "Mwileka ifi file file file file file file file file file file file file file file file" },
+  "optionDesc_dryRun": {
+    "message": "Mwileka ifi file file file file file file file file file file file file file file file"
+  },
   "optionDesc_dotfolders": { "message": "Fela Anikulapo Kuti in file search" },
   "optionDesc_noSourceMaps": { "message": "Fela Anikulapo Kuti Source Maps" },
   "optionDesc_noMinify": { "message": "Amankila Amankila Amankila CSS" },
   "optionDesc_noRecursion": { "message": "Ukulele Recipe Ukulele Search" },
-  "optionDesc_copy": { "message": "Kopololeni ifili mu fipepala fya pa kompyuta ukucila ukulemba ifili mu fipepala fya pa kompyuta" },
+  "optionDesc_copy": {
+    "message": "Kopololeni ifili mu fipepala fya pa kompyuta ukucila ukulemba ifili mu fipepala fya pa kompyuta"
+  },
   "optionDesc_relativeOutput": { "message": "Fela Anikulapo Kuti - Fela Anikulapo Kuti" },
   "optionDesc_quiet": { "message": "Fela Anikulapo Kuti - Fela Anikulapo Kuti" },
   "optionDesc_ignores": { "message": "Files/Bipasha Basu" },

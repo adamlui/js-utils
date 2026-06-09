@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Хатогӣ дар хондани версияи бастаи локалӣ" },
   "error_notRecognized": { "message": "эътироф нашудааст" },
   "error_nonPositiveNum": { "message": "argument can be only > 0" },
+  "error_requiresVal": { "message": "nangangailangan ng halaga" },
   "error_invalidFilepath": { "message": "kailangan ay isang wastong mayroong file path. Got" },
   "error_invalidLangCode": { "message": "isang hindi wastong wika code" },
   "error_invalidURL": { "message": "URL- и нодуруст" },
@@ -58,14 +59,20 @@
   "optionDesc_uiLang": { "message": "ISO 639-1 рамзи забон барои намоиши UI дар" },
   "inputPathDesc_main": { "message": "Роҳча ба файли SCSS ё феҳристи дорои файлҳои SCSS, ки бояд тартиб дода шаванд" },
   "inputPathDesc_extra": { "message": "относительно текущего каталога" },
-  "outputPathDesc_main": { "message": "Роҳча ба файл ё феҳрист, ки дар он файлҳои сарчашмаи харитаи CSS + нигоҳ дошта мешаванд" },
+  "outputPathDesc_main": {
+    "message": "Роҳча ба файл ё феҳрист, ки дар он файлҳои сарчашмаи харитаи CSS + нигоҳ дошта мешаванд"
+  },
   "outputPathDesc_extra": { "message": "нисбат ба решаи вуруд (агар таъмин нашуда бошад, css/истифода мешавад)" },
-  "optionDesc_dryRun": { "message": "Дар асл файлро тартиб надиҳед, танҳо нишон диҳед, ки оё онҳо коркард карда мешаванд" },
+  "optionDesc_dryRun": {
+    "message": "Дар асл файлро тартиб надиҳед, танҳо нишон диҳед, ки оё онҳо коркард карда мешаванд"
+  },
   "optionDesc_dotfolders": { "message": "Дохил кардани ҷузвдонҳои нуқта дар ҷустуҷӯи файл" },
   "optionDesc_noSourceMaps": { "message": "Пешгирии харитаҳои сарчашма аз тавлиди онҳо" },
   "optionDesc_noMinify": { "message": "CSS- и бароришро ғайрифаъол созед" },
   "optionDesc_noRecursion": { "message": "Ҷустуҷӯи файли рекурсивӣ ғайрифаъол кунед" },
-  "optionDesc_copy": { "message": "Нусхабардории CSS ба силули мухобиротӣ ба ҷои навиштан ба файл, агар файли ягонаи сарчашма коркард шуда бошад" },
+  "optionDesc_copy": {
+    "message": "Нусхабардории CSS ба силули мухобиротӣ ба ҷои навиштан ба файл, агар файли ягонаи сарчашма коркард шуда бошад"
+  },
   "optionDesc_relativeOutput": { "message": "Баровардани файлҳо нисбат ба ҳар як файли сарчашма ба ҷои решаи вуруд" },
   "optionDesc_quiet": { "message": "Ғайри хатогӣ ҳамаи қайдкуниҳоро пахш кунед" },
   "optionDesc_ignores": { "message": "Файлҳо/феҳристҳо барои истисно кардан аз таркиб" },

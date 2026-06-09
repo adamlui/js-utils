@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Read Comentario Biblico Con Ap Pake Version" },
   "error_notRecognized": { "message": "no Reconocido" },
   "error_nonPositiveNum": { "message": "por Soledad > 0" },
+  "error_requiresVal": { "message": "mester di un balor" },
   "error_invalidFilepath": { "message": "mester ta un kaminda di archivo eksistente bálido. Tabatin" },
   "error_invalidLangCode": { "message": "un Codigo Lenguaje Invalido" },
   "error_invalidURL": { "message": "Invalididad URL" },
@@ -56,7 +57,9 @@
   "helpSection_params": { "message": "Opcion Parámetro" },
   "helpSection_cmds": { "message": "Komando" },
   "optionDesc_uiLang": { "message": "Documente similare cu ISO 639-1 Code of Language" },
-  "inputPathDesc_main": { "message": "Página principal > Ciencia > Contenido de archivo de archivo de archivo de archivo de archivo de archivo de archivo de archivo" },
+  "inputPathDesc_main": {
+    "message": "Página principal > Ciencia > Contenido de archivo de archivo de archivo de archivo de archivo de archivo de archivo de archivo"
+  },
   "inputPathDesc_extra": { "message": "relashoná ku e maneho aktual" },
   "outputPathDesc_main": { "message": "Página principal Ensayos Archivo CSS + sourcemap" },
   "outputPathDesc_extra": { "message": "página principal > Negocios > Si No Lo Creo No Lo Creo No Lo Creo" },
@@ -65,7 +68,9 @@
   "optionDesc_noSourceMaps": { "message": "Evitá Mapa de Fuente" },
   "optionDesc_noMinify": { "message": "Minificacion de Produccion CSS" },
   "optionDesc_noRecursion": { "message": "Buscar Archivo Recursivo" },
-  "optionDesc_copy": { "message": "Copy compilacion CSS para clipboard enbes di skirbi pa file si un solo fuente di archivo ta procesa" },
+  "optionDesc_copy": {
+    "message": "Copy compilacion CSS para clipboard enbes di skirbi pa file si un solo fuente di archivo ta procesa"
+  },
   "optionDesc_relativeOutput": { "message": "Documenti simili a Archivo de Fuente enbes de Ingreso" },
   "optionDesc_quiet": { "message": "Tur Kuliner di Kuliner Kuliner" },
   "optionDesc_ignores": { "message": "Archivo/Archivo para la compilacion" },

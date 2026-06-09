@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Iphutha ekufundeni uhlelo lwephakeji lendawo" },
   "error_notRecognized": { "message": "akuqashelwa" },
   "error_nonPositiveNum": { "message": "impikiswano ingaba > 0 kuphela" },
+  "error_requiresVal": { "message": "kudinga inani" },
   "error_invalidFilepath": { "message": "kumele kube yindlela yefayela evumelekile ekhona. Got" },
   "error_invalidLangCode": { "message": "iyikhodi yolimi engavumelekile" },
   "error_invalidURL": { "message": "I-URL engavumelekile" },
@@ -56,17 +57,25 @@
   "helpSection_params": { "message": "Izinketho zepharamitha" },
   "helpSection_cmds": { "message": "Imiyalo" },
   "optionDesc_uiLang": { "message": "Ikhodi yolimi ye-ISO 639-1 yokubonisa i-UI ku-" },
-  "inputPathDesc_main": { "message": "Indlela eya kufayela le-SCSS noma enkombeni equkethe amafayela e-SCSS okufanele aqoqwe" },
+  "inputPathDesc_main": {
+    "message": "Indlela eya kufayela le-SCSS noma enkombeni equkethe amafayela e-SCSS okufanele aqoqwe"
+  },
   "inputPathDesc_extra": { "message": "maqondana nesiqondisi sokusebenza samanje" },
-  "outputPathDesc_main": { "message": "Indlela eya kufayela noma enkombeni lapho amafayela e-CSS + sourcemap azogcinwa khona" },
+  "outputPathDesc_main": {
+    "message": "Indlela eya kufayela noma enkombeni lapho amafayela e-CSS + sourcemap azogcinwa khona"
+  },
   "outputPathDesc_extra": { "message": "maqondana nempande yokufaka (uma inganikezwanga, i-css/ iyasetshenziswa)" },
   "optionDesc_dryRun": { "message": "Ungawahlanganisi ngempela amafayela, vele ubonise ukuthi azocutshungulwa yini" },
   "optionDesc_dotfolders": { "message": "Faka amafolda amachashazi kusesho lwefayela" },
   "optionDesc_noSourceMaps": { "message": "Vimbela ukwenziwa kwamabalazwe omthombo" },
   "optionDesc_noMinify": { "message": "Vala ukunciphisa okukhiphayo kwe-CSS" },
   "optionDesc_noRecursion": { "message": "Vala ukusesha kwefayela okuphindayo" },
-  "optionDesc_copy": { "message": "Kopisha i-CSS ehlanganisiwe ebhodini lokunamathisela esikhundleni sokubhala kufayela uma ifayela lomthombo owodwa liphroseswa" },
-  "optionDesc_relativeOutput": { "message": "Amafayela okukhipha ahlobene nefayela ngalinye lomthombo esikhundleni sokufaka impande" },
+  "optionDesc_copy": {
+    "message": "Kopisha i-CSS ehlanganisiwe ebhodini lokunamathisela esikhundleni sokubhala kufayela uma ifayela lomthombo owodwa liphroseswa"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Amafayela okukhipha ahlobene nefayela ngalinye lomthombo esikhundleni sokufaka impande"
+  },
   "optionDesc_quiet": { "message": "Cindezela konke ukungena ngemvume ngaphandle kwamaphutha" },
   "optionDesc_ignores": { "message": "Amafayela/izinkomba ukuze ungahlanganisi" },
   "optionDesc_commentMain": { "message": "Lungiselela ukuphawula kwekhanda ku-CSS ehlanganisiwe" },

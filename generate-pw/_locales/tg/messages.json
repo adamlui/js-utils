@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Хатогӣ дар хондани версияи бастаи локалӣ" },
   "error_notRecognized": { "message": "эътироф нашудааст" },
   "error_nonPositiveNum": { "message": "argument can be only > 0" },
+  "error_requiresVal": { "message": "nangangailangan ng halaga" },
   "error_invalidFilepath": { "message": "kailangan ay isang wastong mayroong file path. Got" },
   "error_invalidLangCode": { "message": "isang hindi wastong wika code" },
   "error_invalidURL": { "message": "URL- и нодуруст" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Рад кардани ҳарфи ночиз дар гузарвожа(ҳо)" },
   "optionDesc_noUpper": { "message": "Рад кардани ҳарфи болоӣ дар гузарвожа(ҳо)" },
   "optionDesc_similarChars": { "message": "Дохил кардани аломатҳои шабеҳ дар гузарвожа(ҳо)" },
-  "optionDesc_unstrict": { "message": "Hindi kailangan ng hindi bababa sa isang character mula sa bawat pinapayagang character na set sa password(mga)" },
+  "optionDesc_unstrict": {
+    "message": "Hindi kailangan ng hindi bababa sa isang character mula sa bawat pinapayagang character na set sa password(mga)"
+  },
   "optionDesc_noEntropy": { "message": "Hindi kalkulahan/mag-log ang texmang entropy" },
   "optionDesc_quiet": { "message": "Ғайри хатогӣ ҳамаи қайдкуниҳоро пахш кунед" },
   "optionDesc_help": { "message": "Намоиши экрани кӯмак" },

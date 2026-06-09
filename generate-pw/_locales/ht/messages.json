@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Erè lekti vèsyon pakè lokal yo" },
   "error_notRecognized": { "message": "pa rekonèt/pa rekonèt" },
   "error_nonPositiveNum": { "message": "agiman ka sèlman > 0" },
+  "error_requiresVal": { "message": "mande pou yon valè/demande d '" },
   "error_invalidFilepath": { "message": "dwe yon valab chemen dosye ki egziste deja. Got" },
   "error_invalidLangCode": { "message": "se yon kòd langaj envalid/est un code lingu" },
   "error_invalidURL": { "message": "URL ki pa valab" },

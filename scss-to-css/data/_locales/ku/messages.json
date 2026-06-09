@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Çewtiya xwendina guhertoya pakêta herêmî" },
   "error_notRecognized": { "message": "nayê naskirin" },
   "error_nonPositiveNum": { "message": "arguman tenê dikare > 0 be" },
+  "error_requiresVal": { "message": "nirxek hewce dike" },
   "error_invalidFilepath": { "message": "divê rêyeke pelê heyî ya derbasdar be" },
   "error_invalidLangCode": { "message": "kodeke zimanî ya nederbasdar e" },
   "error_invalidURL": { "message": "URL ya nederbasdar" },
@@ -42,9 +43,13 @@
   "info_noSCSSfilesProcessed": { "message": "Pelên SCSS nehatine pêvajokirin" },
   "info_failedToCompile": { "message": "nehat berhevkirin" },
   "info_moreHelp": { "message": "Ji bo bêtir alîkariyê" },
-  "info_type": { "message": "جۆر، چاپ دەکات، وێنە، نموونە، نووسین، چەشن، ئاست، چین، شێوە، پۆل، ڕێباز، بابەت\n[پزیشکی]: 1-نیشانە، دروشم، مۆر، تییپ 2-نموونەیەکی ئاسایی تێکڕا، بابەت 3-(لە نەخۆشیدا) نیشانەکانی جیاکەرەوەی تا، نەخۆشی.. ھتد یەک\n[زەویزانی]: نموونە، نقومی دەکات\n[ئامار]: تەرز، تیپ، شێواز، جۆر، چەشن\n[رۆژنامەوانی]: جۆر\n[ھونەر]: نموونە، تەرز\n[کۆمپیوتەر]: جۆر، چاپکردن" },
+  "info_type": {
+    "message": "جۆر، چاپ دەکات، وێنە، نموونە، نووسین، چەشن، ئاست، چین، شێوە، پۆل، ڕێباز، بابەت\n[پزیشکی]: 1-نیشانە، دروشم، مۆر، تییپ 2-نموونەیەکی ئاسایی تێکڕا، بابەت 3-(لە نەخۆشیدا) نیشانەکانی جیاکەرەوەی تا، نەخۆشی.. ھتد یەک\n[زەویزانی]: نموونە، نقومی دەکات\n[ئامار]: تەرز، تیپ، شێواز، جۆر، چەشن\n[رۆژنامەوانی]: جۆر\n[ھونەر]: نموونە، تەرز\n[کۆمپیوتەر]: جۆر، چاپکردن"
+  },
   "info_or": { "message": "an" },
-  "info_visit": { "message": "سەرلێدان، سەردان، قسە لەگەڵ کردن، تووش بوون (بەڵا)، سزادان، سەردانی دەکات، پشکنین، گەڕان لە" },
+  "info_visit": {
+    "message": "سەرلێدان، سەردان، قسە لەگەڵ کردن، تووش بوون (بەڵا)، سزادان، سەردانی دەکات، پشکنین، گەڕان لە"
+  },
   "info_toCreateDefaultConfig": { "message": "ji bo çêkirina pelê mîhengê ya xwerû" },
   "info_configFileCreated": { "message": "Pelê mîhengê hat afirandin" },
   "info_fetchingRemoteConfigFrom": { "message": "Pelê mîhengkirina dûr ji tê wergirtin" },
@@ -56,7 +61,9 @@
   "helpSection_params": { "message": "Vebijarkên parametreyan" },
   "helpSection_cmds": { "message": "Ferman" },
   "optionDesc_uiLang": { "message": "Koda ISO 639-1 ya zimanê ji bo nîşandana UI-ê" },
-  "inputPathDesc_main": { "message": "Riya pelê SCSS an jî peldanka ku pelên SCSS yên ku dê werin berhevkirin dihewîne" },
+  "inputPathDesc_main": {
+    "message": "Riya pelê SCSS an jî peldanka ku pelên SCSS yên ku dê werin berhevkirin dihewîne"
+  },
   "inputPathDesc_extra": { "message": "nisbet bi navnîşana xebata heyî re" },
   "outputPathDesc_main": { "message": "Riya pel an jî peldanka ku pelên CSS + sourcemap lê dê werin hilanîn" },
   "outputPathDesc_extra": { "message": "nisbî bi koka têketinê re (eger neyê dayîn, css/ tê bikaranîn)" },
@@ -65,7 +72,9 @@
   "optionDesc_noSourceMaps": { "message": "Astengkirina çêkirina nexşeyên çavkaniyê" },
   "optionDesc_noMinify": { "message": "Minîfîkasyona CSS-ya derketinê neçalak bike" },
   "optionDesc_noRecursion": { "message": "Lêgerîna pelan a dubarekirî neçalak bike" },
-  "optionDesc_copy": { "message": "Ger pelek çavkaniyek yekane were pêvajokirin, CSS-ya berhevkirî li şûna nivîsandina li pelê li ser clipboardê kopî bike" },
+  "optionDesc_copy": {
+    "message": "Ger pelek çavkaniyek yekane were pêvajokirin, CSS-ya berhevkirî li şûna nivîsandina li pelê li ser clipboardê kopî bike"
+  },
   "optionDesc_relativeOutput": { "message": "Pelên têkildarî her pelê çavkaniyê derxe li şûna ku bi rootê têxe" },
   "optionDesc_quiet": { "message": "Hemû tomarkirin ji bilî xeletiyan veşêre" },
   "optionDesc_ignores": { "message": "Pel/pelrêçên ku ji berhevkirinê werin derxistin" },

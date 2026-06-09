@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "مقامی پیکج ورژن پڑھنے میں خرابی" },
   "error_notRecognized": { "message": "پہچانا نہیں گیا" },
   "error_nonPositiveNum": { "message": "دلیل صرف > 0 ہو سکتی ہے" },
+  "error_requiresVal": { "message": "قدر کی ضرورت ہے" },
   "error_invalidFilepath": { "message": "ایک درست موجودہ فائل کا راستہ ہونا چاہیے ۔ مل گیا" },
   "error_invalidLangCode": { "message": "ایک غلط زبان کا کوڈ ہے" },
   "error_invalidURL": { "message": "غلط URL" },
@@ -55,17 +56,25 @@
   "helpSection_params": { "message": "پیرامیٹر کے اختیارات" },
   "helpSection_cmds": { "message": "معلومات کے احکامات" },
   "optionDesc_uiLang": { "message": "UI ظاہر کرنے کے لیے ISO 639-1 زبان کا کوڈ" },
-  "inputPathDesc_main": { "message": "جاوا اسکرپٹ فائل یا ڈائرکٹری کا راستہ جس میں جاوا اسکرپٹ فائلوں کو چھوٹا کیا جانا ہے" },
+  "inputPathDesc_main": {
+    "message": "جاوا اسکرپٹ فائل یا ڈائرکٹری کا راستہ جس میں جاوا اسکرپٹ فائلوں کو چھوٹا کیا جانا ہے"
+  },
   "inputPathDesc_extra": { "message": "موجودہ ورکنگ ڈائریکٹری سے متعلق" },
   "outputPathDesc_main": { "message": "فائل یا ڈائریکٹری کا راستہ جہاں چھوٹی فائلیں محفوظ کی جائیں گی" },
-  "outputPathDesc_extra": { "message": "اصل فائل کے مقام سے متعلق (اگر فراہم نہیں کیا جاتا ہے تو، منٹ/استعمال کیا جاتا ہے)" },
-  "optionDesc_dryRun": { "message": "اصل میں فائل(فائلوں) کو چھوٹا نہ کریں، بس دکھائیں کہ آیا ان پر کارروائی کی جائے گی" },
+  "outputPathDesc_extra": {
+    "message": "اصل فائل کے مقام سے متعلق (اگر فراہم نہیں کیا جاتا ہے تو، منٹ/استعمال کیا جاتا ہے)"
+  },
+  "optionDesc_dryRun": {
+    "message": "اصل میں فائل(فائلوں) کو چھوٹا نہ کریں، بس دکھائیں کہ آیا ان پر کارروائی کی جائے گی"
+  },
   "optionDesc_dotfolders": { "message": "فائل کی تلاش میں ڈاٹ فولڈرز شامل کریں" },
   "optionDesc_dotfiles": { "message": "فائل کی تلاش میں ڈاٹ فائلیں شامل کریں" },
   "optionDesc_noRecursion": { "message": "بار بار چلنے والی فائل کی تلاش کو غیر فعال کریں" },
   "optionDesc_noMangle": { "message": "مینگلنگ ناموں کو غیر فعال کریں" },
   "optionDesc_noFilenameChange": { "message": "فائل کی توسیع کو .min.js میں تبدیل کرنا غیر فعال کریں" },
-  "optionDesc_copy": { "message": "اگر واحد ماخذ فائل پر کارروائی کی جاتی ہے تو فائل میں لکھنے کے بجائے چھوٹے کوڈ کو کلپ بورڈ میں کاپی کریں" },
+  "optionDesc_copy": {
+    "message": "اگر واحد ماخذ فائل پر کارروائی کی جاتی ہے تو فائل میں لکھنے کے بجائے چھوٹے کوڈ کو کلپ بورڈ میں کاپی کریں"
+  },
   "optionDesc_relativeOutput": { "message": "ان پٹ روٹ کے بجائے ہر سورس فائل سے متعلق آؤٹ پٹ فائلیں" },
   "optionDesc_rewriteImports": { "message": ".js سے .min.js تک درآمد کے راستے اپ ڈیٹ کریں" },
   "optionDesc_quiet": { "message": "غلطیوں کے علاوہ تمام لاگنگ کو دبائیں" },

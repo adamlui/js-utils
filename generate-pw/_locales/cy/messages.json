@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Gwall wrth ddarllen fersiwn pecyn lleol" },
   "error_notRecognized": { "message": "heb ei gydnabod" },
   "error_nonPositiveNum": { "message": "gall fod yn 0 yn unig" },
+  "error_requiresVal": { "message": "mae angen gwerth" },
   "error_invalidFilepath": { "message": "rhaid iddo fod yn llwybr ffeil dilys sy'n bodoli eisoes. Wedi" },
   "error_invalidLangCode": { "message": "iaith annilys" },
   "error_invalidURL": { "message": "URL annilys" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Analluogi llythrennau bach yn y cyfrinair(nau)" },
   "optionDesc_noUpper": { "message": "Analluogi prif lythrennau mewn cyfrinair(iau)" },
   "optionDesc_similarChars": { "message": "Cynnwys nodau tebyg yn y cyfrinair(nau)" },
-  "optionDesc_unstrict": { "message": "Peidiwch â gofyn am o leiaf un nod o bob nod a ganiateir a osodir mewn cyfrinair(au)" },
+  "optionDesc_unstrict": {
+    "message": "Peidiwch â gofyn am o leiaf un nod o bob nod a ganiateir a osodir mewn cyfrinair(au)"
+  },
   "optionDesc_noEntropy": { "message": "Peidio â chyfrifo/cofnodi entropi amcangyfrifedig" },
   "optionDesc_quiet": { "message": "Atal pob cofnod ac eithrio gwallau" },
   "optionDesc_help": { "message": "Dangos y sgrin gymorth" },

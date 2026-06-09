@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Feeler beim Liesen vun der lokaler Paketeversioun" },
   "error_notRecognized": { "message": "net unerkannt" },
   "error_nonPositiveNum": { "message": "argument can just be ass > 0" },
+  "error_requiresVal": { "message": "den Wert nötig" },
   "error_invalidFilepath": { "message": "muss e gültege existente Fichier Wee sinn. krut" },
   "error_invalidLangCode": { "message": "i am an Invalid Code" },
   "error_invalidURL": { "message": "InvalidCA" },
@@ -17,7 +18,9 @@
   "error_failedToFetchGlobalVer": { "message": "Konnt d'global Versioun net fannen" },
   "error_failedToFetchSysLang": { "message": "Systemsprooch feelgeschloen" },
   "error_mustIncludePath": { "message": "must mat =path" },
-  "error_firstArgNotExist": { "message": "Déi éischt Argumenter kënnen nëmmen eng existent Datei oder Verzeechnes sinn" },
+  "error_firstArgNotExist": {
+    "message": "Déi éischt Argumenter kënnen nëmmen eng existent Datei oder Verzeechnes sinn"
+  },
   "error_doesNotExist": { "message": "doesn't Exist" },
   "warn_configFileExists": { "message": "Datei konfiguréieren existéiert schonn" },
   "warn_docLocalesFetchFailed": { "message": "Dok Lokale gefunden" },
@@ -59,13 +62,19 @@
   "inputPathDesc_main": { "message": "Weg zu SCSS Datei oder Verzeechnes mat SCSS Dateien ze kompiléieren" },
   "inputPathDesc_extra": { "message": "zum aktuellen Jobcenter" },
   "outputPathDesc_main": { "message": "Wee op Datei oder Verzeechnes wou CSS + Sourcemap Dateien gespäichert ginn" },
-  "outputPathDesc_extra": { "message": "relativ zu Input-Wurzel (wenn nicht zur Verfügung gestellt, css/ ist gebraucht)" },
-  "optionDesc_dryRun": { "message": "Nicht die Datei(s) tatsächlich kompilieren, einfach zeigen, ob sie verarbeiten wuerde" },
+  "outputPathDesc_extra": {
+    "message": "relativ zu Input-Wurzel (wenn nicht zur Verfügung gestellt, css/ ist gebraucht)"
+  },
+  "optionDesc_dryRun": {
+    "message": "Nicht die Datei(s) tatsächlich kompilieren, einfach zeigen, ob sie verarbeiten wuerde"
+  },
   "optionDesc_dotfolders": { "message": "Inkludéiert dotfolders an Fichier Sich" },
   "optionDesc_noSourceMaps": { "message": "Verhënnert datt Quellekaarten erstallt ginn" },
   "optionDesc_noMinify": { "message": "Minifikatioun vum Output CSS deaktivéieren" },
   "optionDesc_noRecursion": { "message": "Rekursiv Datei sichen deaktivéieren" },
-  "optionDesc_copy": { "message": "Kopie kompiléiert CSS op Clipboard anstatt op Datei ze schreiwen wann eng Quell Datei veraarbecht gëtt" },
+  "optionDesc_copy": {
+    "message": "Kopie kompiléiert CSS op Clipboard anstatt op Datei ze schreiwen wann eng Quell Datei veraarbecht gëtt"
+  },
   "optionDesc_relativeOutput": { "message": "Ausgabdateien relativ zu jeder Quelldatei statt zu Inputwort" },
   "optionDesc_quiet": { "message": "Ënnerdréckt all Umeldung ausser Feeler" },
   "optionDesc_ignores": { "message": "Dateien/Verzeechnes aus der Kompilatioun auszeschléissen" },

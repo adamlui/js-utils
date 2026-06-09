@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Kesalahan membaca versi paket lokal" },
   "error_notRecognized": { "message": "tidak diakui" },
   "error_nonPositiveNum": { "message": "argumen hanya bisa > 0" },
+  "error_requiresVal": { "message": "membutuhkan nilai" },
   "error_invalidFilepath": { "message": "harus berupa path file yang sudah ada yang valid. Got" },
   "error_invalidLangCode": { "message": "adalah kode bahasa yang tidak valid" },
   "error_invalidURL": { "message": "URL Tidak Valid" },
@@ -55,17 +56,23 @@
   "helpSection_params": { "message": "Opsi parameter" },
   "helpSection_cmds": { "message": "Perintah info" },
   "optionDesc_uiLang": { "message": "Kode bahasa ISO 639 -1 untuk menampilkan UI di" },
-  "inputPathDesc_main": { "message": "Path ke file JavaScript atau direktori yang berisi file JavaScript untuk diminifikasi" },
+  "inputPathDesc_main": {
+    "message": "Path ke file JavaScript atau direktori yang berisi file JavaScript untuk diminifikasi"
+  },
   "inputPathDesc_extra": { "message": "relatif terhadap direktori kerja saat ini" },
   "outputPathDesc_main": { "message": "Jalur ke file atau direktori tempat file minified akan disimpan" },
   "outputPathDesc_extra": { "message": "relatif terhadap lokasi file asli (jika tidak disediakan, min/ digunakan)" },
-  "optionDesc_dryRun": { "message": "Jangan benar - benar mengecilkan file, cukup tunjukkan apakah mereka akan diproses" },
+  "optionDesc_dryRun": {
+    "message": "Jangan benar - benar mengecilkan file, cukup tunjukkan apakah mereka akan diproses"
+  },
   "optionDesc_dotfolders": { "message": "Sertakan dotfolder dalam pencarian file" },
   "optionDesc_dotfiles": { "message": "Sertakan file titik dalam pencarian file" },
   "optionDesc_noRecursion": { "message": "Nonaktifkan pencarian file rekursif" },
   "optionDesc_noMangle": { "message": "Nonaktifkan nama mangling" },
   "optionDesc_noFilenameChange": { "message": "Nonaktifkan perubahan ekstensi file ke .min.js" },
-  "optionDesc_copy": { "message": "Salin kode yang diperkecil ke clipboard alih - alih menulis ke file jika file sumber tunggal diproses" },
+  "optionDesc_copy": {
+    "message": "Salin kode yang diperkecil ke clipboard alih - alih menulis ke file jika file sumber tunggal diproses"
+  },
   "optionDesc_relativeOutput": { "message": "File output relatif terhadap setiap file sumber, bukan ke root input" },
   "optionDesc_rewriteImports": { "message": "Perbarui jalur impor dari .js ke .min.js" },
   "optionDesc_quiet": { "message": "Cegah semua pencatatan kecuali kesalahan" },

@@ -1,11 +1,14 @@
 {
-  "pkg_copyright": { "message": "© 2024 -2026 Адам Луи и сътрудници съгласно лиценза на МАСАЧУЗЕТСКИЯ ТЕХНОЛОГИЧЕН ИНСТИТУТ" },
+  "pkg_copyright": {
+    "message": "© 2024 -2026 Адам Луи и сътрудници съгласно лиценза на МАСАЧУЗЕТСКИЯ ТЕХНОЛОГИЧЕН ИНСТИТУТ"
+  },
   "prefix_globalVer": { "message": "Глобална версия" },
   "prefix_localVer": { "message": "Локална версия" },
   "prefix_source": { "message": "Източник" },
   "error_readingLocalPkgVer": { "message": "Грешка при четене на локалната версия на пакета" },
   "error_notRecognized": { "message": "не е разпознато" },
   "error_nonPositiveNum": { "message": "аргументът може да бъде само > 0" },
+  "error_requiresVal": { "message": "изисква стойност" },
   "error_invalidFilepath": { "message": "трябва да е валиден съществуващ файлов път. Получих" },
   "error_invalidLangCode": { "message": "е невалиден езиков код" },
   "error_invalidURL": { "message": "Невалиден URL" },
@@ -36,7 +39,9 @@
   "info_copyingToClip": { "message": "Копиране в клипборда" },
   "info_writing": { "message": "Запис във файл" },
   "info_compilationComplete": { "message": "Компилацията е завършена" },
-  "info_file": { "message": "\"файлIncompatible database driver' s \"\"% 1\"\" version: found version% 2, expected version% 3.% 1.% 2% 1.% 2\"" },
+  "info_file": {
+    "message": "\"файлIncompatible database driver' s \"\"% 1\"\" version: found version% 2, expected version% 3.% 1.% 2% 1.% 2\""
+  },
   "info_srcMap": { "message": "карта на източника" },
   "info_generated": { "message": "генериран" },
   "info_noSCSSfilesProcessed": { "message": "Не са обработени SCSS файлове" },
@@ -56,7 +61,9 @@
   "helpSection_params": { "message": "Опции за параметрите" },
   "helpSection_cmds": { "message": "?љ?????&#176;??????" },
   "optionDesc_uiLang": { "message": "ISO 639 -1 код на езика за показване на потребителския интерфейс в" },
-  "inputPathDesc_main": { "message": "Път до SCSS файл или директория, съдържаща SCSS файлове, които трябва да бъдат компилирани" },
+  "inputPathDesc_main": {
+    "message": "Път до SCSS файл или директория, съдържаща SCSS файлове, които трябва да бъдат компилирани"
+  },
   "inputPathDesc_extra": { "message": "спрямо текущата работна директория" },
   "outputPathDesc_main": { "message": "Път до файл или директория, където ще се съхраняват CSS + sourcemap файлове" },
   "outputPathDesc_extra": { "message": "спрямо входния корен (ако не е предоставен, се използва css /)" },
@@ -65,7 +72,9 @@
   "optionDesc_noSourceMaps": { "message": "Предотвратяване на генерирането на изходни карти" },
   "optionDesc_noMinify": { "message": "Деактивиране на минимизирането на изходния CSS" },
   "optionDesc_noRecursion": { "message": "Деактивиране на рекурсивното търсене на файлове" },
-  "optionDesc_copy": { "message": "Копирайте компилирания CSS в клипборда, вместо да пишете във файла, ако се обработва единичен изходен файл" },
+  "optionDesc_copy": {
+    "message": "Копирайте компилирания CSS в клипборда, вместо да пишете във файла, ако се обработва единичен изходен файл"
+  },
   "optionDesc_relativeOutput": { "message": "Изходни файлове спрямо всеки изходен файл, вместо към входния корен" },
   "optionDesc_quiet": { "message": "Потискане на всички записи, с изключение на грешките" },
   "optionDesc_ignores": { "message": "Файлове/директории за изключване от компилация" },

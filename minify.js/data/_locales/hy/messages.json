@@ -1,11 +1,14 @@
 {
-  "pkg_copyright": { "message": "© 2024–2026 Ադամ Լուի և Մասաչուսեթսի տեխնոլոգիական ինստիտուտի (MIT) արտոնագրի ներքո ներդրումներ կատարողներ" },
+  "pkg_copyright": {
+    "message": "© 2024–2026 Ադամ Լուի և Մասաչուսեթսի տեխնոլոգիական ինստիտուտի (MIT) արտոնագրի ներքո ներդրումներ կատարողներ"
+  },
   "prefix_globalVer": { "message": "Ընդհանուր տարբերակ" },
   "prefix_localVer": { "message": "Տեղական տարբերակ" },
   "prefix_source": { "message": "Ծագումը" },
   "error_readingLocalPkgVer": { "message": "Չհաջողվեց կարդալ տեղական փաթեթի տարբերակը" },
   "error_notRecognized": { "message": "ճանաչված չէ" },
   "error_nonPositiveNum": { "message": "փաստարկը կարող է լինել միայն > 0" },
+  "error_requiresVal": { "message": "պահանջում է արժեք" },
   "error_invalidFilepath": { "message": "պետք է լինի վավեր գոյություն ունեցող ֆայլի ուղի: Ստացվեց" },
   "error_invalidLangCode": { "message": "լեզվի անվավեր կոդ է" },
   "error_invalidURL": { "message": "Անվավեր URL" },
@@ -55,18 +58,28 @@
   "helpSection_params": { "message": "Պարամետրի տարբերակներ" },
   "helpSection_cmds": { "message": "Տեղեկությունների հրամաններ" },
   "optionDesc_uiLang": { "message": "ISO 639 -1 լեզվի կոդը UI - ում ցուցադրելու համար" },
-  "inputPathDesc_main": { "message": "Ուղի դեպի JavaScript ֆայլ կամ գրացուցակ, որը պարունակում է JavaScript ֆայլեր, որոնք պետք է minified" },
+  "inputPathDesc_main": {
+    "message": "Ուղի դեպի JavaScript ֆայլ կամ գրացուցակ, որը պարունակում է JavaScript ֆայլեր, որոնք պետք է minified"
+  },
   "inputPathDesc_extra": { "message": "ընթացիկ աշխատանքային գրացուցակի հետ կապված" },
   "outputPathDesc_main": { "message": "Ճանապարհ դեպի ֆայլ կամ գրացուցակ, որտեղ պահվելու են մանրացված ֆայլեր" },
-  "outputPathDesc_extra": { "message": "սկզբնական ֆայլի գտնվելու վայրի համեմատությամբ (եթե տրամադրված չէ, ապա օգտագործվում է նվազագույնը)" },
-  "optionDesc_dryRun": { "message": "Իրականում մի փոքր կրճատեք ֆայլ(եր) ը, պարզապես ցույց տվեք, թե արդյոք դրանք մշակվելու են" },
+  "outputPathDesc_extra": {
+    "message": "սկզբնական ֆայլի գտնվելու վայրի համեմատությամբ (եթե տրամադրված չէ, ապա օգտագործվում է նվազագույնը)"
+  },
+  "optionDesc_dryRun": {
+    "message": "Իրականում մի փոքր կրճատեք ֆայլ(եր) ը, պարզապես ցույց տվեք, թե արդյոք դրանք մշակվելու են"
+  },
   "optionDesc_dotfolders": { "message": "Ներառեք կետային թղթապանակներ ֆայլի որոնման մեջ" },
   "optionDesc_dotfiles": { "message": "Ֆայլերի որոնման մեջ ներառեք կետային ֆայլեր" },
   "optionDesc_noRecursion": { "message": "Անջատել ռեկուրսիվ ֆայլի որոնումը" },
   "optionDesc_noMangle": { "message": "Անջատել մանիպուլյացիայի անունները" },
   "optionDesc_noFilenameChange": { "message": "Անջատել փոփոխվող ֆայլի ընդլայնումը .min.js- ին" },
-  "optionDesc_copy": { "message": "Պատճենեք փոքրացված կոդը ֆայլի համար գրելու փոխարեն, եթե մշակվում է մեկ աղբյուրի ֆայլ" },
-  "optionDesc_relativeOutput": { "message": "Մուտքագրեք ֆայլեր յուրաքանչյուր սկզբնաղբյուր ֆայլի համեմատությամբ ՝ արմատ մուտքագրելու փոխարեն" },
+  "optionDesc_copy": {
+    "message": "Պատճենեք փոքրացված կոդը ֆայլի համար գրելու փոխարեն, եթե մշակվում է մեկ աղբյուրի ֆայլ"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Մուտքագրեք ֆայլեր յուրաքանչյուր սկզբնաղբյուր ֆայլի համեմատությամբ ՝ արմատ մուտքագրելու փոխարեն"
+  },
   "optionDesc_rewriteImports": { "message": "Թարմացրեք ներմուծման ուղիները .js - ից մինչև .min.js" },
   "optionDesc_quiet": { "message": "Սեղմեք բոլոր տեղեկամատյանները, բացի սխալներից" },
   "optionDesc_ignores": { "message": "Նվազեցումը բացառող ֆայլեր/գրացուցակներ" },

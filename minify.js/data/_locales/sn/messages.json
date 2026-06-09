@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Kanganiso pakuverenga vhezheni yepakeji yemuno" },
   "error_notRecognized": { "message": "haizivikanwe" },
   "error_nonPositiveNum": { "message": "nharo kunogona chete > 0" },
+  "error_requiresVal": { "message": "inoda kukosha" },
   "error_invalidFilepath": { "message": "inofanira kuva inoshanda iripo faira nzira. Got" },
   "error_invalidLangCode": { "message": "is an invalid language code" },
   "error_invalidURL": { "message": "URL isiriyo" },
@@ -55,7 +56,9 @@
   "helpSection_params": { "message": "Parameter zvokusarudza" },
   "helpSection_cmds": { "message": "Info mirairo" },
   "optionDesc_uiLang": { "message": "ISO 639-1 remutauro kuratidza UI muna" },
-  "inputPathDesc_main": { "message": "Nzira kuti JavaScript faira kana Directory rine JavaScript mafaira kuti minified" },
+  "inputPathDesc_main": {
+    "message": "Nzira kuti JavaScript faira kana Directory rine JavaScript mafaira kuti minified"
+  },
   "inputPathDesc_extra": { "message": "maererano neazvino anoshanda dhairekitori" },
   "outputPathDesc_main": { "message": "Nzira kune faira kana dhairekitori uko mafaira akachengetedzwa achachengetwa" },
   "outputPathDesc_extra": { "message": "maererano yepakutanga faira nzvimbo (kana asina kupiwa, min/ rinoshandiswa)" },
@@ -65,8 +68,12 @@
   "optionDesc_noRecursion": { "message": "Dzima recursive file searching" },
   "optionDesc_noMangle": { "message": "Kuremadza mangling mazita" },
   "optionDesc_noFilenameChange": { "message": "Kurega kuchinja faira chiwedzerwa kuti .min.js" },
-  "optionDesc_copy": { "message": "Copy minified code to clipboard instead of writing to file if single source file is processed" },
-  "optionDesc_relativeOutput": { "message": "Mafaira ekubudisa ane chekuita nefaira rimwe nerimwe rekunobva pane kupinza mudzi" },
+  "optionDesc_copy": {
+    "message": "Copy minified code to clipboard instead of writing to file if single source file is processed"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Mafaira ekubudisa ane chekuita nefaira rimwe nerimwe rekunobva pane kupinza mudzi"
+  },
   "optionDesc_rewriteImports": { "message": "Gadzirisa nzira dzekupinza kubva ku .js kuenda ku .min.js" },
   "optionDesc_quiet": { "message": "Dzvinyirira kutema matanda ese kunze kwekukanganisa" },
   "optionDesc_ignores": { "message": "Mafaira/madhairekitori ekubvisa kubva mukuderedza" },

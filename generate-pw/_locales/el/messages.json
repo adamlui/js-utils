@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Σφάλμα κατά την ανάγνωση της τοπικής έκδοσης πακέτου" },
   "error_notRecognized": { "message": "που δεν αναγνωρίζονται" },
   "error_nonPositiveNum": { "message": "το όρισμα μπορεί να είναι μόνο > 0" },
+  "error_requiresVal": { "message": "απαιτεί μια τιμή" },
   "error_invalidFilepath": { "message": "πρέπει να είναι μια έγκυρη υπάρχουσα διαδρομή αρχείου. Ελήφθη" },
   "error_invalidLangCode": { "message": "είναι μη έγκυρος κωδικός γλώσσας" },
   "error_invalidURL": { "message": "Μη έγκυρo URL" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Να μην επιτρέπονται πεζά γράμματα στους κωδικούς πρόσβασης" },
   "optionDesc_noUpper": { "message": "Να μην επιτρέπονται τα κεφαλαία γράμματα στους κωδικούς πρόσβασης" },
   "optionDesc_similarChars": { "message": "Συμπεριλάβετε παρόμοιους χαρακτήρες στους κωδικούς πρόσβασης" },
-  "optionDesc_unstrict": { "message": "Δεν απαιτείται τουλάχιστον ένας χαρακτήρας από κάθε επιτρεπόμενο σύνολο χαρακτήρων στους κωδικούς πρόσβασης" },
+  "optionDesc_unstrict": {
+    "message": "Δεν απαιτείται τουλάχιστον ένας χαρακτήρας από κάθε επιτρεπόμενο σύνολο χαρακτήρων στους κωδικούς πρόσβασης"
+  },
   "optionDesc_noEntropy": { "message": "Μην υπολογίζετε/καταγράφετε την εκτιμώμενη εντροπία" },
   "optionDesc_quiet": { "message": "Καταργήστε όλες τις καταγραφές εκτός από τα σφάλματα" },
   "optionDesc_help": { "message": "Εμφάνιση οθόνης βοήθειας" },

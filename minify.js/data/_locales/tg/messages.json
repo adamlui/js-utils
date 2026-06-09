@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Хатогӣ дар хондани версияи бастаи локалӣ" },
   "error_notRecognized": { "message": "эътироф нашудааст" },
   "error_nonPositiveNum": { "message": "argument can be only > 0" },
+  "error_requiresVal": { "message": "nangangailangan ng halaga" },
   "error_invalidFilepath": { "message": "kailangan ay isang wastong mayroong file path. Got" },
   "error_invalidLangCode": { "message": "isang hindi wastong wika code" },
   "error_invalidURL": { "message": "URL- и нодуруст" },
@@ -58,14 +59,18 @@
   "inputPathDesc_main": { "message": "Роҳча ба файли JavaScript ё феҳристи дорои файлҳои JavaScript барои минисатсия" },
   "inputPathDesc_extra": { "message": "относительно текущего каталога" },
   "outputPathDesc_main": { "message": "Роҳча ба файл ё феҳрист, ки дар он файлҳои миниётурашуда нигоҳ дошта мешаванд" },
-  "outputPathDesc_extra": { "message": "нисбат ба ҷойгиршавии файли аслӣ (агар пешниҳод нашуда бошад, min/ истифода мешавад)" },
+  "outputPathDesc_extra": {
+    "message": "нисбат ба ҷойгиршавии файли аслӣ (агар пешниҳод нашуда бошад, min/ истифода мешавад)"
+  },
   "optionDesc_dryRun": { "message": "Оё дар ҳақиқат minify файл(ҳо), танҳо нишон агар онҳо коркард хоҳад шуд" },
   "optionDesc_dotfolders": { "message": "Дохил кардани ҷузвдонҳои нуқта дар ҷустуҷӯи файл" },
   "optionDesc_dotfiles": { "message": "Дар ҷустуҷӯи файл нуқтаҳоро дохил кунед" },
   "optionDesc_noRecursion": { "message": "Ҷустуҷӯи файли рекурсивӣ ғайрифаъол кунед" },
   "optionDesc_noMangle": { "message": "Ғайрифаъол кардани номҳои mangling" },
   "optionDesc_noFilenameChange": { "message": "Тағйири густариши файлро ба .min.js ғайрифаъол созед" },
-  "optionDesc_copy": { "message": "Нусхабардории коди миниётурашуда ба силули мухобиротӣ ба ҷои навиштан ба файл, агар файли ягонаи сарчашма коркард шуда бошад" },
+  "optionDesc_copy": {
+    "message": "Нусхабардории коди миниётурашуда ба силули мухобиротӣ ба ҷои навиштан ба файл, агар файли ягонаи сарчашма коркард шуда бошад"
+  },
   "optionDesc_relativeOutput": { "message": "Баровардани файлҳо нисбат ба ҳар як файли сарчашма ба ҷои решаи вуруд" },
   "optionDesc_rewriteImports": { "message": "I-update ang mga pag-import ng mga path mula sa .js sa .min.js" },
   "optionDesc_quiet": { "message": "Ғайри хатогӣ ҳамаи қайдкуниҳоро пахш кунед" },

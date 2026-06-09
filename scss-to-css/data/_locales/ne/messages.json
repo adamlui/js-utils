@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "स्थानीय प्याकेज संस्करण पढ्दा त्रुटि" },
   "error_notRecognized": { "message": "पहिचान नगरिएको" },
   "error_nonPositiveNum": { "message": "तर्क > 0 मात्र हुन सक्छ" },
+  "error_requiresVal": { "message": "एउटा मान चाहिन्छ" },
   "error_invalidFilepath": { "message": "मान्य अवस्थित फाइल मार्ग हुनुपर्दछ । प्राप्त भयो" },
   "error_invalidLangCode": { "message": "अमान्य भाषा कोड हो" },
   "error_invalidURL": { "message": "अवैध यू आर एल" },
@@ -60,12 +61,16 @@
   "inputPathDesc_extra": { "message": "हालको काम गर्ने निर्देशिकाको सापेक्षमा" },
   "outputPathDesc_main": { "message": "फाइल वा डाइरेक्टरीको बाटो जहाँ CSS + सोर्सम्याप फाइलहरू भण्डारण गरिनेछ" },
   "outputPathDesc_extra": { "message": "इनपुट रूटको सापेक्षमा (यदि प्रदान गरिएको छैन भने, css/ प्रयोग गरिन्छ)" },
-  "optionDesc_dryRun": { "message": "फाइल(हरू) लाई वास्तवमा कम्पाइल नगर्नुहोस्, केवल देखाउनुहोस् कि तिनीहरू प्रशोधन हुनेछन् कि छैनन्।" },
+  "optionDesc_dryRun": {
+    "message": "फाइल(हरू) लाई वास्तवमा कम्पाइल नगर्नुहोस्, केवल देखाउनुहोस् कि तिनीहरू प्रशोधन हुनेछन् कि छैनन्।"
+  },
   "optionDesc_dotfolders": { "message": "फाइल खोजमा डटफोल्डरहरू समावेश गर्नुहोस्" },
   "optionDesc_noSourceMaps": { "message": "स्रोत नक्साहरू उत्पन्न हुनबाट रोक्नुहोस्" },
   "optionDesc_noMinify": { "message": "आउटपुट CSS को मिनिफिकेशन असक्षम पार्नुहोस्" },
   "optionDesc_noRecursion": { "message": "पुनरावर्ती फाइल खोजी असक्षम पार्नुहोस्" },
-  "optionDesc_copy": { "message": "यदि एकल स्रोत फाइल प्रशोधन गरिएको छ भने फाइलमा लेख्नुको सट्टा कम्पाइल गरिएको CSS क्लिपबोर्डमा प्रतिलिपि गर्नुहोस्।" },
+  "optionDesc_copy": {
+    "message": "यदि एकल स्रोत फाइल प्रशोधन गरिएको छ भने फाइलमा लेख्नुको सट्टा कम्पाइल गरिएको CSS क्लिपबोर्डमा प्रतिलिपि गर्नुहोस्।"
+  },
   "optionDesc_relativeOutput": { "message": "इनपुट रूटको सट्टा प्रत्येक स्रोत फाइलको सापेक्षमा आउटपुट फाइलहरू" },
   "optionDesc_quiet": { "message": "त्रुटिहरू बाहेक सबै लगिङ दबाउनुहोस्" },
   "optionDesc_ignores": { "message": "संकलनबाट बहिष्कार गर्नुपर्ने फाइलहरू/निर्देशिकाहरू" },

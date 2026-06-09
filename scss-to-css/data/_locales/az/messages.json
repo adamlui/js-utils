@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Yerli paket versiyasını oxuyarkən xəta baş verdi" },
   "error_notRecognized": { "message": "tanınmayıb" },
   "error_nonPositiveNum": { "message": "arqument yalnız > 0 ola bilər" },
+  "error_requiresVal": { "message": "dəyər tələb edir" },
   "error_invalidFilepath": { "message": "düzgün mövcud fayl yolu olmalıdır. Anladım" },
   "error_invalidLangCode": { "message": "etibarsız dil kodudur" },
   "error_invalidURL": { "message": "Yanlış URL" },
@@ -56,7 +57,9 @@
   "helpSection_params": { "message": "Parametr seçimləri" },
   "helpSection_cmds": { "message": "Əmrlər" },
   "optionDesc_uiLang": { "message": "İSO 639-1-də UI-nı göstərmək üçün dilin kodu" },
-  "inputPathDesc_main": { "message": "Tərkibində SCSS faylları olan SCSS faylı və ya kataloquna gedən yol tərtib edilməlidir" },
+  "inputPathDesc_main": {
+    "message": "Tərkibində SCSS faylları olan SCSS faylı və ya kataloquna gedən yol tərtib edilməlidir"
+  },
   "inputPathDesc_extra": { "message": "cari iş kataloquna nisbətən" },
   "outputPathDesc_main": { "message": "CSS + turşcemap fayllarının saxlanılacağı fayl və ya kataloqa gedən yol" },
   "outputPathDesc_extra": { "message": "giriş kökünə nisbətən (təmin edilməyibsə, css/istifadə olunur)" },
@@ -65,7 +68,9 @@
   "optionDesc_noSourceMaps": { "message": "Mənbə xəritələrinin yaranmasının qarşısını alın" },
   "optionDesc_noMinify": { "message": "Çıxış CSS-nin minifikasiyasını deaktiv edin" },
   "optionDesc_noRecursion": { "message": "Rekursiv fayl axtarışını qeyri-aktiv et" },
-  "optionDesc_copy": { "message": "Tək mənbə faylı işləndiyi halda tərtib edilmiş CSS-i fayla yazmaq əvəzinə mübadilə buferinə kopyalayın" },
+  "optionDesc_copy": {
+    "message": "Tək mənbə faylı işləndiyi halda tərtib edilmiş CSS-i fayla yazmaq əvəzinə mübadilə buferinə kopyalayın"
+  },
   "optionDesc_relativeOutput": { "message": "Giriş kökü əvəzinə hər mənbə faylına nisbətən çıxış faylları" },
   "optionDesc_quiet": { "message": "Xətalardan başqa bütün girişləri bağlayın" },
   "optionDesc_ignores": { "message": "Tərtibdən çıxmaq üçün fayllar/kataloqlar" },

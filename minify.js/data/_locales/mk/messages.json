@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Грешка при читањето на локалната верзија на пакетот" },
   "error_notRecognized": { "message": "не е препознаено" },
   "error_nonPositiveNum": { "message": "аргументот може да биде само > 0" },
+  "error_requiresVal": { "message": "бара вредност" },
   "error_invalidFilepath": { "message": "мора да биде важечка постоечка патека на датотеката. Добив" },
   "error_invalidLangCode": { "message": "е неважечки јазичен код" },
   "error_invalidURL": { "message": "Невалидна URL" },
@@ -55,18 +56,28 @@
   "helpSection_params": { "message": "Опции за параметри" },
   "helpSection_cmds": { "message": "Информативни команди" },
   "optionDesc_uiLang": { "message": "ISO 639-1 код на јазик за прикажување на UI во" },
-  "inputPathDesc_main": { "message": "Патека до JavaScript датотека или директориум што содржи JavaScript датотеки што треба да се минимизираат" },
+  "inputPathDesc_main": {
+    "message": "Патека до JavaScript датотека или директориум што содржи JavaScript датотеки што треба да се минимизираат"
+  },
   "inputPathDesc_extra": { "message": "во однос на тековниот работен именик" },
-  "outputPathDesc_main": { "message": "Патека до датотека или директориум каде што ќе бидат зачувани минифицирани датотеки" },
-  "outputPathDesc_extra": { "message": "во однос на оригиналната локација на датотеката (ако не е наведена, се користи min/)" },
+  "outputPathDesc_main": {
+    "message": "Патека до датотека или директориум каде што ќе бидат зачувани минифицирани датотеки"
+  },
+  "outputPathDesc_extra": {
+    "message": "во однос на оригиналната локација на датотеката (ако не е наведена, се користи min/)"
+  },
   "optionDesc_dryRun": { "message": "Не минимизирајте ги датотеките, само покажете дали ќе бидат обработени" },
   "optionDesc_dotfolders": { "message": "Вклучете ги папките со точки во пребарувањето датотеки" },
   "optionDesc_dotfiles": { "message": "Вклучете датотеки со точки во пребарувањето датотеки" },
   "optionDesc_noRecursion": { "message": "Оневозможи рекурзивно пребарување датотеки" },
   "optionDesc_noMangle": { "message": "Оневозможи менување имиња" },
   "optionDesc_noFilenameChange": { "message": "Оневозможете промена на наставката на датотеката во .min.js" },
-  "optionDesc_copy": { "message": "Копирајте го минимизираниот код на таблата со исечоци наместо да пишувате во датотека ако се обработува една изворна датотека" },
-  "optionDesc_relativeOutput": { "message": "Излезни датотеки во однос на секоја изворна датотека наместо на влезен корен" },
+  "optionDesc_copy": {
+    "message": "Копирајте го минимизираниот код на таблата со исечоци наместо да пишувате во датотека ако се обработува една изворна датотека"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Излезни датотеки во однос на секоја изворна датотека наместо на влезен корен"
+  },
   "optionDesc_rewriteImports": { "message": "Ажурирајте ги патеките за увоз од .js во .min.js" },
   "optionDesc_quiet": { "message": "Потисни ги сите евиденции освен грешките" },
   "optionDesc_ignores": { "message": "Датотеки/директориуми што треба да се исклучат од минификацијата" },

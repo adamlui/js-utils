@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ಸ್ಥಳೀಯ ಪ್ಯಾಕೇಜ್ ಆವೃತ್ತಿಯನ್ನು ಓದುವಲ್ಲಿ ದೋಷ" },
   "error_notRecognized": { "message": "ಗುರುತಿಸಲಾಗಿಲ್ಲ" },
   "error_nonPositiveNum": { "message": "ಆರ್ಗ್ಯುಮೆಂಟ್ ಕೇವಲ > 0 ಆಗಿರಬಹುದು" },
+  "error_requiresVal": { "message": "ಮೌಲ್ಯದ ಅಗತ್ಯವಿದೆ" },
   "error_invalidFilepath": { "message": "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಮಾನ್ಯ ಫೈಲ್ ಮಾರ್ಗವಾಗಿರಬೇಕು. ಸಿಕ್ಕಿದೆ" },
   "error_invalidLangCode": { "message": "ಇದು ಅಮಾನ್ಯ ಭಾಷೆಯ ಕೋಡ್ ಆಗಿದೆ" },
   "error_invalidURL": { "message": "Url ಸರಿಯಾಗಿಲ್ಲ" },
@@ -55,17 +56,23 @@
   "helpSection_params": { "message": "ಪ್ಯಾರಾಮೀಟರ್ ಆಯ್ಕೆಗಳು" },
   "helpSection_cmds": { "message": "ಮಾಹಿತಿ ಆಜ್ಞೆಗಳು" },
   "optionDesc_uiLang": { "message": "UI ಅನ್ನು ಪ್ರದರ್ಶಿಸಲು ISO 639-1 ಭಾಷೆಯ ಸಂಕೇತ" },
-  "inputPathDesc_main": { "message": "ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಫೈಲ್ ಗೆ ಮಾರ್ಗ ಅಥವಾ ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಫೈಲ್ ಗಳನ್ನು ಒಳಗೊಂಡಿರುವ ಡೈರೆಕ್ಟರಿಯನ್ನು ಚಿಕ್ಕದಾಗಿಸಬೇಕು" },
+  "inputPathDesc_main": {
+    "message": "ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಫೈಲ್ ಗೆ ಮಾರ್ಗ ಅಥವಾ ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಫೈಲ್ ಗಳನ್ನು ಒಳಗೊಂಡಿರುವ ಡೈರೆಕ್ಟರಿಯನ್ನು ಚಿಕ್ಕದಾಗಿಸಬೇಕು"
+  },
   "inputPathDesc_extra": { "message": "ಪ್ರಸ್ತುತ ವರ್ಕಿಂಗ್ ಡೈರೆಕ್ಟರಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ" },
   "outputPathDesc_main": { "message": "ಫೈಲ್ ಗೆ ಮಾರ್ಗ ಅಥವಾ ಚಿಕ್ಕದಾದ ಫೈಲ್ ಗಳನ್ನು ಸಂಗ್ರಹಿಸುವ ಡೈರೆಕ್ಟರಿ" },
   "outputPathDesc_extra": { "message": "ಮೂಲ ಫೈಲ್ ಸ್ಥಳಕ್ಕೆ ಸಂಬಂಧಿಸಿದಂತೆ (ಒದಗಿಸದಿದ್ದರೆ, ನಿಮಿಷ/ ಬಳಸಲಾಗುತ್ತದೆ)" },
-  "optionDesc_dryRun": { "message": "ಫೈಲ್(ಗಳನ್ನು) ವಾಸ್ತವವಾಗಿ ಕಡಿಮೆ ಮಾಡಬೇಡಿ, ಅವುಗಳನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತದೆಯೇ ಎಂದು ತೋರಿಸಿ" },
+  "optionDesc_dryRun": {
+    "message": "ಫೈಲ್(ಗಳನ್ನು) ವಾಸ್ತವವಾಗಿ ಕಡಿಮೆ ಮಾಡಬೇಡಿ, ಅವುಗಳನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತದೆಯೇ ಎಂದು ತೋರಿಸಿ"
+  },
   "optionDesc_dotfolders": { "message": "ಫೈಲ್ ಹುಡುಕಾಟದಲ್ಲಿ ಡಾಟ್ ಫೋಲ್ಡರ್ ಗಳನ್ನು ಸೇರಿಸಿ" },
   "optionDesc_dotfiles": { "message": "ಫೈಲ್ ಹುಡುಕಾಟದಲ್ಲಿ ಡಾಟ್ ಫೈಲ್ ಗಳನ್ನು ಸೇರಿಸಿ" },
   "optionDesc_noRecursion": { "message": "ಪುನರಾವರ್ತಿತ ಫೈಲ್ ಹುಡುಕಾಟವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ" },
   "optionDesc_noMangle": { "message": "ಮ್ಯಾಂಗ್ಲಿಂಗ್ ಹೆಸರುಗಳನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ" },
   "optionDesc_noFilenameChange": { "message": ".min.js ಗೆ ಫೈಲ್ ವಿಸ್ತರಣೆಯನ್ನು ಬದಲಾಯಿಸುವುದನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ" },
-  "optionDesc_copy": { "message": "ಒಂದೇ ಮೂಲ ಫೈಲ್ ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಿದರೆ ಫೈಲ್ ‌ ಗೆ ಬರೆಯುವ ಬದಲು ಮಿನಿಫೈಡ್ ಕೋಡ್ ಅನ್ನು ಕ್ಲಿಪ್ ‌ ಬೋರ್ಡ್ ‌ ಗೆ ನಕಲಿಸಿ" },
+  "optionDesc_copy": {
+    "message": "ಒಂದೇ ಮೂಲ ಫೈಲ್ ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಿದರೆ ಫೈಲ್ ‌ ಗೆ ಬರೆಯುವ ಬದಲು ಮಿನಿಫೈಡ್ ಕೋಡ್ ಅನ್ನು ಕ್ಲಿಪ್ ‌ ಬೋರ್ಡ್ ‌ ಗೆ ನಕಲಿಸಿ"
+  },
   "optionDesc_relativeOutput": { "message": "ಇನ್‌ಪುಟ್ ರೂಟ್‌ಗೆ ಬದಲಾಗಿ ಪ್ರತಿ ಮೂಲ ಫೈಲ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ಔಟ್‌ಪುಟ್ ಫೈಲ್‌ಗಳು" },
   "optionDesc_rewriteImports": { "message": ".js ನಿಂದ .min.js ಗೆ ಆಮದು ಮಾರ್ಗಗಳನ್ನು ನವೀಕರಿಸಿ" },
   "optionDesc_quiet": { "message": "ದೋಷಗಳನ್ನು ಹೊರತುಪಡಿಸಿ ಎಲ್ಲಾ ಲಾಗಿಂಗ್ ಅನ್ನು ನಿಗ್ರಹಿಸಿ" },

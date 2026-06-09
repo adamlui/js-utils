@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Kulakwitsa kuwerenga phukusi la m 'deralo" },
   "error_notRecognized": { "message": "osadziwika" },
   "error_nonPositiveNum": { "message": "kutsutsana kungakhale kokha > 0" },
+  "error_requiresVal": { "message": "amafunika mtengo" },
   "error_invalidFilepath": { "message": "ayenera kukhala ovomerezeka alipo wapamwamba njira. Got" },
   "error_invalidLangCode": { "message": "ndi malamulo a chilankhulo chopanda pake" },
   "error_invalidURL": { "message": "Lumikizanani nafe" },

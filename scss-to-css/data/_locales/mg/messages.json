@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Nisy olana teo am-pamakiana ny kinovan'ny fonosana an-toerana" },
   "error_notRecognized": { "message": "tsy fantatra" },
   "error_nonPositiveNum": { "message": "tsy misy fotoana… Tohiny" },
+  "error_requiresVal": { "message": "mitaky sanda" },
   "error_invalidFilepath": { "message": "tsy maintsy ho marina ny sori-dàlan'ny rakitra efa misy. Got" },
   "error_invalidLangCode": { "message": "dia tsy mety ny fehezan-dalàna momba ny fiteny" },
   "error_invalidURL": { "message": "URL diso" },
@@ -56,17 +57,27 @@
   "helpSection_params": { "message": "Safidy momba ny marika" },
   "helpSection_cmds": { "message": "Baiko" },
   "optionDesc_uiLang": { "message": "ISO 639-1 fehezan-dalàna ny fiteny mba haneho UI in" },
-  "inputPathDesc_main": { "message": "Ny sori-dàlana mankany amin'ny rakitra SCSS na laha-tahiry misy ny rakitra SCSS ho atambatra" },
+  "inputPathDesc_main": {
+    "message": "Ny sori-dàlana mankany amin'ny rakitra SCSS na laha-tahiry misy ny rakitra SCSS ho atambatra"
+  },
   "inputPathDesc_extra": { "message": "raha oharina amin'ny laha-tahiry momba ny asa amin'izao fotoana izao" },
-  "outputPathDesc_main": { "message": "Ny sori-dàlana ho an'ny rakitra na ny laha-tahiry hitahirizana ireo rakitra CSS + sourcemap" },
+  "outputPathDesc_main": {
+    "message": "Ny sori-dàlana ho an'ny rakitra na ny laha-tahiry hitahirizana ireo rakitra CSS + sourcemap"
+  },
   "outputPathDesc_extra": { "message": "raha oharina amin'ny faka fidirana (raha tsy omena, css/ ampiasaina)" },
-  "optionDesc_dryRun": { "message": "Aza tena manangona ny rakitra(s), mampiseho fotsiny raha toa ka ho ampiasaina izy ireo" },
+  "optionDesc_dryRun": {
+    "message": "Aza tena manangona ny rakitra(s), mampiseho fotsiny raha toa ka ho ampiasaina izy ireo"
+  },
   "optionDesc_dotfolders": { "message": "Ampidiro ao anatin'ny karoka rakitra ireo laha-tahiry fanampiny" },
   "optionDesc_noSourceMaps": { "message": "Manakana ny arsivan'ny loharano tsy hoforonina" },
   "optionDesc_noMinify": { "message": "Atsaharo ny fanamafisana ny famoahana CSS" },
   "optionDesc_noRecursion": { "message": "Atsaharo ny fizahana rakitra miverimberina" },
-  "optionDesc_copy": { "message": "Adikao ny CSS ao anaty fanindri-taratasy fa tsy hanoratra amin'ny rakitra raha toa ka efa mandeha ny rakitra tokana" },
-  "optionDesc_relativeOutput": { "message": "Rakitra famoahana miohatra amin'ny raki-doharano tsirairay fa tsy hametrahana faka" },
+  "optionDesc_copy": {
+    "message": "Adikao ny CSS ao anaty fanindri-taratasy fa tsy hanoratra amin'ny rakitra raha toa ka efa mandeha ny rakitra tokana"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Rakitra famoahana miohatra amin'ny raki-doharano tsirairay fa tsy hametrahana faka"
+  },
   "optionDesc_quiet": { "message": "Hanafoana ny logging rehetra afa-tsy fahadisoana" },
   "optionDesc_ignores": { "message": "Ny rakitra/lahatahiry azo esorina avy amin'ny compilation" },
   "optionDesc_commentMain": { "message": "Manomàna fanehoan-kevitra lohapejy amin'ny CSS" },

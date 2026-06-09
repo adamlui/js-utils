@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Tõrge kohaliku paketi versiooni lugemisel" },
   "error_notRecognized": { "message": "Tundmatu fail" },
   "error_nonPositiveNum": { "message": "argument võib olla ainult > 0" },
+  "error_requiresVal": { "message": "nõuab väärtust" },
   "error_invalidFilepath": { "message": "peab olema kehtiv olemasolev failitee. Sain" },
   "error_invalidLangCode": { "message": "on kehtetu keelekood" },
   "error_invalidURL": { "message": "Kehtetu URL" },

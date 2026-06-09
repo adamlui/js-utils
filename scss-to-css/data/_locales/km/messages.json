@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "កំហុស ក្នុង ការ អាន កំណែ កញ្ចប់ មូលដ្ឋាន" },
   "error_notRecognized": { "message": "មិនត្រឹមត្រូវ" },
   "error_nonPositiveNum": { "message": "អាគុយម៉ង់អាចមានតែ > 0" },
+  "error_requiresVal": { "message": "តម្រូវឱ្យមានតម្លៃ" },
   "error_invalidFilepath": { "message": "ត្រូវ តែ ជា ផ្លូវ ឯកសារ ដែល មាន សុពលភាព & # 160; ។ Got" },
   "error_invalidLangCode": { "message": "គឺជាលេខកូដភាសាដែលមិនត្រឹមត្រូវ" },
   "error_invalidURL": { "message": "URL មិនត្រឹមត្រូវ" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "ការពារផែនទីប្រភពពីការបង្កើត" },
   "optionDesc_noMinify": { "message": "បិទ ការ បង្រួម អប្បបរមា នៃ លទ្ធផល CSS" },
   "optionDesc_noRecursion": { "message": "បិទការស្វែងរកឯកសារហៅឡើងវិញ" },
-  "optionDesc_copy": { "message": "ចម្លង CSS ដែល បាន ចងក្រង ទៅ ក្ដារ តម្បៀត ខ្ទាស់ ជំនួស ឲ្យ ការ សរសេរ ទៅ ឯកសារ ប្រសិន បើ ឯកសារ ប្រភព តែ មួយ ត្រូវ បាន ដំណើរការ" },
+  "optionDesc_copy": {
+    "message": "ចម្លង CSS ដែល បាន ចងក្រង ទៅ ក្ដារ តម្បៀត ខ្ទាស់ ជំនួស ឲ្យ ការ សរសេរ ទៅ ឯកសារ ប្រសិន បើ ឯកសារ ប្រភព តែ មួយ ត្រូវ បាន ដំណើរការ"
+  },
   "optionDesc_relativeOutput": { "message": "ឯកសារ លទ្ធផល ទាក់ទង នឹង ឯកសារ ប្រភព នីមួយៗ ជំនួស ឲ្យ ការ បញ្ចូល root" },
   "optionDesc_quiet": { "message": "បង្ក្រាបការកាប់ឈើទាំងអស់លើកលែងតែកំហុស" },
   "optionDesc_ignores": { "message": "ឯកសារ/ថត ត្រូវ ដកចេញ ពី ការ ចងក្រង" },

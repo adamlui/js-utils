@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Жергиликтүү топтомдун нускасын окуу катасы" },
   "error_notRecognized": { "message": "табылган жок" },
   "error_nonPositiveNum": { "message": "аргумент гана болушу мүмкүн > 0" },
+  "error_requiresVal": { "message": "бир маанини талап кылат" },
   "error_invalidFilepath": { "message": "жарактуу бар файл жолдору болушу керек. Get" },
   "error_invalidLangCode": { "message": "жараксыз тил коду" },
   "error_invalidURL": { "message": "Туура эмес дарек" },

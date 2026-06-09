@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Kanganiso pakuverenga vhezheni yepakeji yemuno" },
   "error_notRecognized": { "message": "haizivikanwe" },
   "error_nonPositiveNum": { "message": "nharo kunogona chete > 0" },
+  "error_requiresVal": { "message": "inoda kukosha" },
   "error_invalidFilepath": { "message": "inofanira kuva inoshanda iripo faira nzira. Got" },
   "error_invalidLangCode": { "message": "is an invalid language code" },
   "error_invalidURL": { "message": "URL isiriyo" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Dzivisa mabhii maduku mu password(s)" },
   "optionDesc_noUpper": { "message": "Dzivisa mabhii makuru mu password(s)" },
   "optionDesc_similarChars": { "message": "Sanganisira zvakafanana mavara ari pasiwedhi(s)" },
-  "optionDesc_unstrict": { "message": "Regai zvinoda kanenge unhu mumwe nomumwe anobvumirwa unhu wakaiswa pasiwedhi(s)" },
+  "optionDesc_unstrict": {
+    "message": "Regai zvinoda kanenge unhu mumwe nomumwe anobvumirwa unhu wakaiswa pasiwedhi(s)"
+  },
   "optionDesc_noEntropy": { "message": "Regai ngaaverenge/danda inofungidzirwa entropy" },
   "optionDesc_quiet": { "message": "Dzvinyirira kutema matanda ese kunze kwekukanganisa" },
   "optionDesc_help": { "message": "Ratidza chidzitiro chekubatsira" },

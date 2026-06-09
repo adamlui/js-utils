@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ຜິດພາດໃນການອ່ານລຸ້ນແພັກເກັດໃນທ້ອງຖິ່ນ" },
   "error_notRecognized": { "message": "ບໍ່ຮັບຮູ້" },
   "error_nonPositiveNum": { "message": "ການໂຕ້ຖຽງສາມາດເປັນພຽງແຕ່ > 0" },
+  "error_requiresVal": { "message": "ຮຽກຮ້ອງໃຫ້ມີຄຸນຄ່າ" },
   "error_invalidFilepath": { "message": "ຕ້ອງເປັນເສັ້ນທາງເອກະສານທີ່ມີຢູ່ແລ້ວທີ່ຖືກຕ້ອງ. ໄດ້ຮັບ" },
   "error_invalidLangCode": { "message": "ແມ່ນລະຫັດພາສາທີ່ບໍ່ຖືກຕ້ອງ" },
   "error_invalidURL": { "message": "URL ບໍ່ຖືກຕ້ອງ" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "ປ້ອງກັນການສ້າງແຜນທີ່ແຫຼ່ງຂໍ້ມູນ" },
   "optionDesc_noMinify": { "message": "ປິດການຫຼຸດຂະໜາດຂອງ CSS ຜົນຜະລິດ" },
   "optionDesc_noRecursion": { "message": "ປິດໃຊ້ງານການຄົ້ນຫາແຟ້ມໃໝ່" },
-  "optionDesc_copy": { "message": "ສໍາ ເນົາ CSS ທີ່ຄັດລອກໄວ້ໃນ clipboard ແທນທີ່ຈະຂຽນໃສ່ເອກະສານຖ້າເອກະສານແຫຼ່ງດຽວຖືກປະມວນຜົນ" },
+  "optionDesc_copy": {
+    "message": "ສໍາ ເນົາ CSS ທີ່ຄັດລອກໄວ້ໃນ clipboard ແທນທີ່ຈະຂຽນໃສ່ເອກະສານຖ້າເອກະສານແຫຼ່ງດຽວຖືກປະມວນຜົນ"
+  },
   "optionDesc_relativeOutput": { "message": "ໄຟລ໌ຜົນຜະລິດທີ່ກ່ຽວຂ້ອງກັບແຕ່ລະໄຟລ໌ແຫຼ່ງແທນທີ່ຈະໃສ່ຮາກ" },
   "optionDesc_quiet": { "message": "ສະກັດກັ້ນການຕັດໄມ້ທັງໝົດ ຍົກເວັ້ນຂໍ້ຜິດພາດ" },
   "optionDesc_ignores": { "message": "ໄຟລ໌/ບັນຊີລາຍຊື່ທີ່ຈະຖືກຍົກເວັ້ນຈາກການລວບລວມ" },

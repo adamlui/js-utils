@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Fout met lees van plaaslike pakketweergawe" },
   "error_notRecognized": { "message": "nie erken nie" },
   "error_nonPositiveNum": { "message": "argument kan net wees > 0" },
+  "error_requiresVal": { "message": "behoefte aan waarde" },
   "error_invalidFilepath": { "message": "moet 'n geldige bestaande lêerpad wees. Het" },
   "error_invalidLangCode": { "message": "is 'n ongeldige taal kode" },
   "error_invalidURL": { "message": "Ongeldige URL" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "Voorkom dat bronkaarte gegenereer word" },
   "optionDesc_noMinify": { "message": "Deaktiveer minifikasie van uitset CSS" },
   "optionDesc_noRecursion": { "message": "Deaktiveer rekursiewe lêersoektog" },
-  "optionDesc_copy": { "message": "Kopieer saamgestelde CSS na knipbord in plaas daarvan om te skryf na lêer as enkelbronlêer verwerk word" },
+  "optionDesc_copy": {
+    "message": "Kopieer saamgestelde CSS na knipbord in plaas daarvan om te skryf na lêer as enkelbronlêer verwerk word"
+  },
   "optionDesc_relativeOutput": { "message": "Uitset lêers relatief tot elke bron lêer in plaas van insette wortel" },
   "optionDesc_quiet": { "message": "Onderdruk alle aanmelding behalwe foute" },
   "optionDesc_ignores": { "message": "Lêers/gidse om van samestelling uit te sluit" },

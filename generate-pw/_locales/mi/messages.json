@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Te pānui i te putanga o te kohinga ā-rohe" },
   "error_notRecognized": { "message": "e kore e mohiotia" },
   "error_nonPositiveNum": { "message": "ka taea e te tautohetohe anake > 0" },
+  "error_requiresVal": { "message": "e hiahiatia ana he uara" },
   "error_invalidFilepath": { "message": "me tika te ara kōnae o mua. Got" },
   "error_invalidLangCode": { "message": "he waehere reo kore e tika" },
   "error_invalidURL": { "message": "PRO Muhu" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Whakakorea nga reta iti i roto i te kupuhipa(s)" },
   "optionDesc_noUpper": { "message": "Whakakorea nga reta o runga i te kupuhipa(s)" },
   "optionDesc_similarChars": { "message": "Whakauruhia nga tohu rite ki te kupuhipa(s)" },
-  "optionDesc_unstrict": { "message": "Kaua e hiahia i te iti rawa kotahi pūāhua i ia pūāhua whakaaetia whakaturia i roto i te kupuhipa(s)" },
+  "optionDesc_unstrict": {
+    "message": "Kaua e hiahia i te iti rawa kotahi pūāhua i ia pūāhua whakaaetia whakaturia i roto i te kupuhipa(s)"
+  },
   "optionDesc_noEntropy": { "message": "Kaua e tātai/log tātai entropy" },
   "optionDesc_quiet": { "message": "Tautoko i te logging katoa engari hapa" },
   "optionDesc_help": { "message": "Whakaatuhia te mata awhina" },

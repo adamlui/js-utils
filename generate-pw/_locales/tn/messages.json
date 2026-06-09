@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Phoso fa o bala mofuta wa pakana ya mo lefelong la lona" },
   "error_notRecognized": { "message": "ga a itsiwe" },
   "error_nonPositiveNum": { "message": "ngangisano e ka nna > 0 fela" },
+  "error_requiresVal": { "message": "e tlhoka boleng" },
   "error_invalidFilepath": { "message": "e tshwanetse go nna tsela e e tshwanetseng ya faele e e leng teng. Got" },
   "error_invalidLangCode": { "message": "ke khoutu e e sa siamang ya puo" },
   "error_invalidURL": { "message": "URL e e sa siamang" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Go se letle ditlhaka tse dinnye mo sephuthelwaneng (di)" },
   "optionDesc_noUpper": { "message": "Go se letlelele ditlhaka tse dikgolo mo sephuthelwaneng (di)" },
   "optionDesc_similarChars": { "message": "Go akaretsa ditlhaka tse di tshwanang mo sephuthelwaneng (di)" },
-  "optionDesc_unstrict": { "message": "Ga ke batle bobotlana tlhaka e le nngwe go tswa mo tlhakeng nngwe le nngwe e e letleletsweng e e leng mo sephuthelwaneng (di)" },
+  "optionDesc_unstrict": {
+    "message": "Ga ke batle bobotlana tlhaka e le nngwe go tswa mo tlhakeng nngwe le nngwe e e letleletsweng e e leng mo sephuthelwaneng (di)"
+  },
   "optionDesc_noEntropy": { "message": "Ga ke balele entropy/log estimated entropy" },
   "optionDesc_quiet": { "message": "Go emisa dikgogo tsotlhe kwantle ga diphoso" },
   "optionDesc_help": { "message": "Bontsha sekerini sa thuso" },

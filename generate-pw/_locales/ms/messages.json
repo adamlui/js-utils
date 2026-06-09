@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Ralat membaca versi pakej tempatan" },
   "error_notRecognized": { "message": "Tidak dikonsikan semula" },
   "error_nonPositiveNum": { "message": "argumen hanya boleh > 0" },
+  "error_requiresVal": { "message": "memerlukan nilai" },
   "error_invalidFilepath": { "message": "mesti laluan fail sedia ada yang sah. Dapat" },
   "error_invalidLangCode": { "message": "adalah kod bahasa yang tidak sah" },
   "error_invalidURL": { "message": "URL tidak sah" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Jangan benarkan huruf kecil dalam kata laluan" },
   "optionDesc_noUpper": { "message": "Tidak membenarkan huruf besar dalam kata laluan" },
   "optionDesc_similarChars": { "message": "Sertakan aksara yang serupa dalam kata laluan" },
-  "optionDesc_unstrict": { "message": "Tidak memerlukan sekurang-kurangnya satu aksara daripada setiap set aksara yang dibenarkan dalam kata laluan" },
+  "optionDesc_unstrict": {
+    "message": "Tidak memerlukan sekurang-kurangnya satu aksara daripada setiap set aksara yang dibenarkan dalam kata laluan"
+  },
   "optionDesc_noEntropy": { "message": "Jangan kira/log anggaran entropi" },
   "optionDesc_quiet": { "message": "Sekat semua pembalakan kecuali ralat" },
   "optionDesc_help": { "message": "Papar skrin bantuan" },

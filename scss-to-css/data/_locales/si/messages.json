@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ප් ‍ රාදේශීය පැකේජ අනුවාදය කියවීමේ දෝෂයකි" },
   "error_notRecognized": { "message": "හඳුනාගෙන නැත" },
   "error_nonPositiveNum": { "message": "තර්කනය කළ හැක්කේ > > 0" },
+  "error_requiresVal": { "message": "වටිනාකමක් අවශ් ‍ යයි" },
   "error_invalidFilepath": { "message": "වලංගු පවතින ගොනු මාර්ගයක් විය යුතුය. වැටහුණි" },
   "error_invalidLangCode": { "message": "වලංගු නොවන භාෂා කේතයකි" },
   "error_invalidURL": { "message": "වලංගු නොවන URL" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "මූලාශ් ‍ ර සිතියම් ජනනය වීම වළක්වන්න" },
   "optionDesc_noMinify": { "message": "ප්රතිදානය අවම කිරීම අක්රීය කරන්න CSS" },
   "optionDesc_noRecursion": { "message": "පුනරාවර්තන ගොනු සෙවීම අක් ‍ රීය කරන්න" },
-  "optionDesc_copy": { "message": "තනි මූලාශ් ‍ ර ගොනුව සැකසෙන්නේ නම් ගොනුව ලිවීම වෙනුවට සම්පාදනය කරන ලද CSS ක්ලිප් පුවරුවට පිටපත් කරන්න" },
+  "optionDesc_copy": {
+    "message": "තනි මූලාශ් ‍ ර ගොනුව සැකසෙන්නේ නම් ගොනුව ලිවීම වෙනුවට සම්පාදනය කරන ලද CSS ක්ලිප් පුවරුවට පිටපත් කරන්න"
+  },
   "optionDesc_relativeOutput": { "message": "මූල ආදාන වෙනුවට එක් එක් මූලාශ් ‍ ර ගොනුවට සාපේක්ෂව ප් ‍ රතිදාන ගොනු" },
   "optionDesc_quiet": { "message": "සියලු පිවිසුම් යටපත් කරන්න දෝෂ හැර" },
   "optionDesc_ignores": { "message": "ගොනු/බහලුම් සම්පාදනයෙන් බැහැර කිරීමට" },

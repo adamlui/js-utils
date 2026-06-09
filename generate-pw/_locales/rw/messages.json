@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Porogaramu Verisiyo" },
   "error_notRecognized": { "message": "ntibimenyekana" },
   "error_nonPositiveNum": { "message": "impaka zirashobora gusa > 0" },
+  "error_requiresVal": { "message": "a Agaciro" },
   "error_invalidFilepath": { "message": "a Byemewe IDOSIYE Inzira" },
   "error_invalidLangCode": { "message": "ni Sibyo Ururimi: Inyandikoporogaramu" },
   "error_invalidURL": { "message": "URL itemewe" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Emera inyuguti nto mu ijambo ryibanga" },
   "optionDesc_noUpper": { "message": "Emera inyuguti nkuru mu ijambo ryibanga" },
   "optionDesc_similarChars": { "message": "Inyuguti in Ijambobanga(S)" },
-  "optionDesc_unstrict": { "message": "Ntukeneye nibura inyuguti imwe kuva kuri buri nyuguti ishyizweho muri ijambobanga(S)" },
+  "optionDesc_unstrict": {
+    "message": "Ntukeneye nibura inyuguti imwe kuva kuri buri nyuguti ishyizweho muri ijambobanga(S)"
+  },
   "optionDesc_noEntropy": { "message": "OYA Kubara LOG" },
   "optionDesc_quiet": { "message": "Kuraho ibiti byose usibye amakosa" },
   "optionDesc_help": { "message": "Erekana ubufasha bwa ecran" },

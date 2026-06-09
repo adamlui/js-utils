@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "He hewa i ka heluhelu ʻana i ka mana pūʻolo kūloko" },
   "error_notRecognized": { "message": "ʻike ʻole ʻia" },
   "error_nonPositiveNum": { "message": "hiki ke hoʻopaʻapaʻa > 0 wale nō" },
+  "error_requiresVal": { "message": "koi i kahi waiwai" },
   "error_invalidFilepath": { "message": "pono e lilo i ala faila kūpono. Loaʻa" },
   "error_invalidLangCode": { "message": "he code ʻōlelo kūpono ʻole ia" },
   "error_invalidURL": { "message": "Hūnā hewa ʻole" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "ʻAʻole ʻae i nā leka liʻiliʻi ma ka ʻōlelo huna" },
   "optionDesc_noUpper": { "message": "ʻAʻole ʻae i nā leka nui ma ka ʻōlelo huna" },
   "optionDesc_similarChars": { "message": "E hoʻokomo i nā huapalapala like i loko o nā ʻōlelo huna" },
-  "optionDesc_unstrict": { "message": "Mai koi aku i hoʻokahi huapalapala mai kēlā me kēia hoʻonohonoho huapalapala i ʻae ʻia i loko o ka(nā) ʻōlelo huna" },
+  "optionDesc_unstrict": {
+    "message": "Mai koi aku i hoʻokahi huapalapala mai kēlā me kēia hoʻonohonoho huapalapala i ʻae ʻia i loko o ka(nā) ʻōlelo huna"
+  },
   "optionDesc_noEntropy": { "message": "Mai helu/hoʻopaʻa i ka entropy i manaʻo ʻia" },
   "optionDesc_quiet": { "message": "Kāohi i ka hoʻopaʻa inoa a pau koe nā hewa" },
   "optionDesc_help": { "message": "Hōʻike i ka pale kōkua" },

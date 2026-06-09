@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Σφάλμα κατά την ανάγνωση της τοπικής έκδοσης πακέτου" },
   "error_notRecognized": { "message": "που δεν αναγνωρίζονται" },
   "error_nonPositiveNum": { "message": "το όρισμα μπορεί να είναι μόνο > 0" },
+  "error_requiresVal": { "message": "απαιτεί μια τιμή" },
   "error_invalidFilepath": { "message": "πρέπει να είναι μια έγκυρη υπάρχουσα διαδρομή αρχείου. Ελήφθη" },
   "error_invalidLangCode": { "message": "είναι μη έγκυρος κωδικός γλώσσας" },
   "error_invalidURL": { "message": "Μη έγκυρo URL" },
@@ -58,15 +59,23 @@
   "optionDesc_uiLang": { "message": "Κωδικός γλώσσας ISO 639-1 για εμφάνιση διεπαφής χρήστη σε" },
   "inputPathDesc_main": { "message": "Διαδρομή προς αρχείο ή κατάλογο SCSS που περιέχει αρχεία SCSS προς μεταγλώττιση" },
   "inputPathDesc_extra": { "message": "σε σχέση με τον τρέχοντα κατάλογο εργασίας" },
-  "outputPathDesc_main": { "message": "Διαδρομή προς το αρχείο ή τον κατάλογο όπου θα αποθηκεύονται τα αρχεία CSS + sourcemap" },
+  "outputPathDesc_main": {
+    "message": "Διαδρομή προς το αρχείο ή τον κατάλογο όπου θα αποθηκεύονται τα αρχεία CSS + sourcemap"
+  },
   "outputPathDesc_extra": { "message": "σε σχέση με τη ρίζα εισόδου (εάν δεν παρέχεται, χρησιμοποιείται το css/)" },
-  "optionDesc_dryRun": { "message": "Μην μεταγλωττίζετε στην πραγματικότητα τα αρχεία, απλώς δείξτε αν θα υποβληθούν σε επεξεργασία" },
+  "optionDesc_dryRun": {
+    "message": "Μην μεταγλωττίζετε στην πραγματικότητα τα αρχεία, απλώς δείξτε αν θα υποβληθούν σε επεξεργασία"
+  },
   "optionDesc_dotfolders": { "message": "Συμπερίληψη dotfolders στην αναζήτηση αρχείων" },
   "optionDesc_noSourceMaps": { "message": "Αποτροπή δημιουργίας χαρτών πηγής" },
   "optionDesc_noMinify": { "message": "Απενεργοποίηση ελαχιστοποίησης εξόδου CSS" },
   "optionDesc_noRecursion": { "message": "Απενεργοποίηση αναδρομικής αναζήτησης αρχείων" },
-  "optionDesc_copy": { "message": "Αντιγραφή μεταγλωττισμένου CSS στο πρόχειρο αντί για εγγραφή σε αρχείο εάν γίνεται επεξεργασία μεμονωμένου πηγαίου αρχείου" },
-  "optionDesc_relativeOutput": { "message": "Αρχεία εξόδου σχετικά με κάθε αρχείο προέλευσης αντί για την εισαγωγή ρίζας" },
+  "optionDesc_copy": {
+    "message": "Αντιγραφή μεταγλωττισμένου CSS στο πρόχειρο αντί για εγγραφή σε αρχείο εάν γίνεται επεξεργασία μεμονωμένου πηγαίου αρχείου"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Αρχεία εξόδου σχετικά με κάθε αρχείο προέλευσης αντί για την εισαγωγή ρίζας"
+  },
   "optionDesc_quiet": { "message": "Καταργήστε όλες τις καταγραφές εκτός από τα σφάλματα" },
   "optionDesc_ignores": { "message": "Αρχεία/κατάλογοι για εξαίρεση από τη μεταγλώττιση" },
   "optionDesc_commentMain": { "message": "Προετοιμασία σχολίου κεφαλίδας για μεταγλωττισμένο CSS" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "خطأ في قراءة إصدار الحزمة المحلية" },
   "error_notRecognized": { "message": "غير معترف بها" },
   "error_nonPositiveNum": { "message": "يمكن أن تكون الوسيطة > 0 فقط" },
+  "error_requiresVal": { "message": "تتطلب قيمة" },
   "error_invalidFilepath": { "message": "يجب أن يكون مسار ملف موجود صالح. حصلت" },
   "error_invalidLangCode": { "message": "هو رمز لغة غير صالح" },
   "error_invalidURL": { "message": "الرابط غير صحيح" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "منع إنشاء خرائط المصدر" },
   "optionDesc_noMinify": { "message": "تعطيل تصغير الإخراج CSS" },
   "optionDesc_noRecursion": { "message": "تعطيل البحث المتكرر عن الملفات" },
-  "optionDesc_copy": { "message": "نسخ CSS المترجمة إلى الحافظة بدلاً من الكتابة إلى الملف إذا تمت معالجة ملف مصدر واحد" },
+  "optionDesc_copy": {
+    "message": "نسخ CSS المترجمة إلى الحافظة بدلاً من الكتابة إلى الملف إذا تمت معالجة ملف مصدر واحد"
+  },
   "optionDesc_relativeOutput": { "message": "ملفات الإخراج المتعلقة بكل ملف مصدر بدلاً من جذر الإدخال" },
   "optionDesc_quiet": { "message": "منع جميع عمليات التسجيل باستثناء الأخطاء" },
   "optionDesc_ignores": { "message": "الملفات/الدلائل المراد استبعادها من التجميع" },

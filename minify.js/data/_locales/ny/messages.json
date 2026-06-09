@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Kulakwitsa kuwerenga phukusi la m 'deralo" },
   "error_notRecognized": { "message": "sizikudziwika" },
   "error_nonPositiveNum": { "message": "kutsutsana kungakhale kokha > 0" },
+  "error_requiresVal": { "message": "amafunika mtengo" },
   "error_invalidFilepath": { "message": "ayenera kukhala ovomerezeka alipo wapamwamba njira. Got" },
   "error_invalidLangCode": { "message": "ndi malamulo a chilankhulo chopanda pake" },
   "error_invalidURL": { "message": "URL yolakwika" },
@@ -55,18 +56,26 @@
   "helpSection_params": { "message": "Zosankha za magawo" },
   "helpSection_cmds": { "message": "Malamulo" },
   "optionDesc_uiLang": { "message": "ISO 639-1 malamulo chilankhulo kusonyeza UI mu" },
-  "inputPathDesc_main": { "message": "Njira yopita ku fayilo ya JavaScript kapena chikwatu chokhala ndi mafayilo a JavaScript kuti asinthidwe" },
+  "inputPathDesc_main": {
+    "message": "Njira yopita ku fayilo ya JavaScript kapena chikwatu chokhala ndi mafayilo a JavaScript kuti asinthidwe"
+  },
   "inputPathDesc_extra": { "message": "poyerekeza ndi chikwatu chogwirira ntchito chomwe chilipo pano" },
   "outputPathDesc_main": { "message": "Njira yopita ku fayilo kapena chikwatu komwe mafayilo osinthidwa adzasungidwa" },
-  "outputPathDesc_extra": { "message": "poyerekeza ndi komwe fayilo yoyambirira inali (ngati siinaperekedwe, mini/ imagwiritsidwa ntchito)" },
+  "outputPathDesc_extra": {
+    "message": "poyerekeza ndi komwe fayilo yoyambirira inali (ngati siinaperekedwe, mini/ imagwiritsidwa ntchito)"
+  },
   "optionDesc_dryRun": { "message": "Musachepetse mafayilo, ingowonetsani ngati adzakonzedwa" },
   "optionDesc_dotfolders": { "message": "Phatikizani ma dotfolders mu kufufuza mafayilo" },
   "optionDesc_dotfiles": { "message": "Phatikizani ma dotfiles mu kufufuza mafayilo" },
   "optionDesc_noRecursion": { "message": "Letsani kusaka mafayilo obwerezabwereza" },
   "optionDesc_noMangle": { "message": "Letsani mayina a anthu ophwanya malamulo" },
   "optionDesc_noFilenameChange": { "message": "Kulepheretsa kusintha kwa fayilo ku .min.js" },
-  "optionDesc_copy": { "message": "Koperani kachidindo minified kuti clipboard m 'malo kulemba file ngati limodzi gwero wapamwamba ndi kukonzedwa" },
-  "optionDesc_relativeOutput": { "message": "Linanena bungwe owona wachibale aliyense gwero wapamwamba m 'malo kulowetsa muzu" },
+  "optionDesc_copy": {
+    "message": "Koperani kachidindo minified kuti clipboard m 'malo kulemba file ngati limodzi gwero wapamwamba ndi kukonzedwa"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Linanena bungwe owona wachibale aliyense gwero wapamwamba m 'malo kulowetsa muzu"
+  },
   "optionDesc_rewriteImports": { "message": "Sinthani njira zoyendera kuchokera ku .js kupita ku .min.js" },
   "optionDesc_quiet": { "message": "Letsani zolemba zonse kupatula zolakwika" },
   "optionDesc_ignores": { "message": "Mafayilo/ma directories kuti asachotsedwe ku minification" },

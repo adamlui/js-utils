@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ප් ‍ රාදේශීය පැකේජ අනුවාදය කියවීමේ දෝෂයකි" },
   "error_notRecognized": { "message": "හඳුනාගෙන නැත" },
   "error_nonPositiveNum": { "message": "තර්කනය කළ හැක්කේ > > 0" },
+  "error_requiresVal": { "message": "වටිනාකමක් අවශ් ‍ යයි" },
   "error_invalidFilepath": { "message": "වලංගු පවතින ගොනු මාර්ගයක් විය යුතුය. වැටහුණි" },
   "error_invalidLangCode": { "message": "වලංගු නොවන භාෂා කේතයකි" },
   "error_invalidURL": { "message": "වලංගු නොවන URL" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Mearachd a 'leughadh dreach ionadail a' phacaid" },
   "error_notRecognized": { "message": "gun aithneachadh" },
   "error_nonPositiveNum": { "message": "chan urrainn dha a bhith ach 0" },
+  "error_requiresVal": { "message": "tha feum air luach" },
   "error_invalidFilepath": { "message": "feumaidh gur e slighe faidhle dhligheach a th 'ann. Got" },
   "error_invalidLangCode": { "message": "'S e eadar - theangair neo - eisimeileach a th' ann" },
   "error_invalidURL": { "message": "URL neo-dhligheach" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Cuir às do litrichean beaga ann am facal - faire(ean)" },
   "optionDesc_noUpper": { "message": "Cuir a - mach litrichean mòra ann am facal - faire(ean)" },
   "optionDesc_similarChars": { "message": "Cuir a - steach caractaran co - chosmhail ann am facal - faire(ean)" },
-  "optionDesc_unstrict": { "message": "Na bi feumach air co - dhiù aon charactar bho gach caractar ceadaichte a tha air a shuidheachadh ann am facal - faire(ean)" },
+  "optionDesc_unstrict": {
+    "message": "Na bi feumach air co - dhiù aon charactar bho gach caractar ceadaichte a tha air a shuidheachadh ann am facal - faire(ean)"
+  },
   "optionDesc_noEntropy": { "message": "Na bi a 'cunntadh/a' logadh tuairmse air entropy" },
   "optionDesc_quiet": { "message": "Cuir às do gach logadh ach a - mhàin mearachdan" },
   "optionDesc_help": { "message": "Seall sgrìn na cobhair" },

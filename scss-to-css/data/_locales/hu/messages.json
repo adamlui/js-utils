@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Hiba a helyi csomagverzió olvasásakor" },
   "error_notRecognized": { "message": "nem felismerhető" },
   "error_nonPositiveNum": { "message": "argumentum csak > 0 lehet" },
+  "error_requiresVal": { "message": "értéket igényel" },
   "error_invalidFilepath": { "message": "érvényes fájl elérési útnak kell lennie. Megvan" },
   "error_invalidLangCode": { "message": "érvénytelen nyelvkód" },
   "error_invalidURL": { "message": "Hibás URL cím" },
@@ -60,13 +61,19 @@
   "inputPathDesc_extra": { "message": "az aktuális munkakönyvtárhoz képest" },
   "outputPathDesc_main": { "message": "A CSS + sourcemap fájlok tárolására szolgáló fájl vagy könyvtár elérési útja" },
   "outputPathDesc_extra": { "message": "a bemeneti gyökérhez képest (ha nincs megadva, css/ van használva)" },
-  "optionDesc_dryRun": { "message": "Ne fordítsa le ténylegesen a fájlo(ka) t, csak mutassa meg, hogy feldolgozásra kerülnek-e" },
+  "optionDesc_dryRun": {
+    "message": "Ne fordítsa le ténylegesen a fájlo(ka) t, csak mutassa meg, hogy feldolgozásra kerülnek-e"
+  },
   "optionDesc_dotfolders": { "message": "Pontmappák belefoglalása a fájlkeresésbe" },
   "optionDesc_noSourceMaps": { "message": "A forrástérképek létrehozásának megakadályozása" },
   "optionDesc_noMinify": { "message": "A kimeneti CSS minifikálásának letiltása" },
   "optionDesc_noRecursion": { "message": "Rekurzív fájlkeresés letiltása" },
-  "optionDesc_copy": { "message": "Másolja a lefordított CSS-t a vágólapra, ahelyett, hogy fájlba írna, ha egyetlen forrásfájl feldolgozásra kerül" },
-  "optionDesc_relativeOutput": { "message": "Kimeneti fájlok az egyes forrásfájlokhoz viszonyítva, nem pedig a bemeneti gyökérhez" },
+  "optionDesc_copy": {
+    "message": "Másolja a lefordított CSS-t a vágólapra, ahelyett, hogy fájlba írna, ha egyetlen forrásfájl feldolgozásra kerül"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Kimeneti fájlok az egyes forrásfájlokhoz viszonyítva, nem pedig a bemeneti gyökérhez"
+  },
   "optionDesc_quiet": { "message": "Az összes naplózás letiltása a hibák kivételével" },
   "optionDesc_ignores": { "message": "A fordításból kizárandó fájlok/könyvtárak" },
   "optionDesc_commentMain": { "message": "Fejléc megjegyzés előkészítése lefordított CSS-be" },

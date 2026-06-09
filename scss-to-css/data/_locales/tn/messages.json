@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Phoso fa o bala mofuta wa pakana ya mo lefelong la lona" },
   "error_notRecognized": { "message": "ga a itsiwe" },
   "error_nonPositiveNum": { "message": "ngangisano e ka nna > 0 fela" },
+  "error_requiresVal": { "message": "e tlhoka boleng" },
   "error_invalidFilepath": { "message": "e tshwanetse go nna tsela e e tshwanetseng ya faele e e leng teng. Got" },
   "error_invalidLangCode": { "message": "ke khoutu e e sa siamang ya puo" },
   "error_invalidURL": { "message": "URL e e sa siamang" },
@@ -56,17 +57,25 @@
   "helpSection_params": { "message": "Dipharametara tse o ka tlhophang mo go tsone" },
   "helpSection_cmds": { "message": "Ditaelo" },
   "optionDesc_uiLang": { "message": "ISO 639-1 code of language to display UI in" },
-  "inputPathDesc_main": { "message": "Path to SCSS file kgotsa directory e e nang le difaele tsa SCSS e e tlileng go kgobokanngwa" },
+  "inputPathDesc_main": {
+    "message": "Path to SCSS file kgotsa directory e e nang le difaele tsa SCSS e e tlileng go kgobokanngwa"
+  },
   "inputPathDesc_extra": { "message": "go tsamaisana le kaedi ya ga jaana ya tiro" },
-  "outputPathDesc_main": { "message": "Path to file or directory moo difaele tsa CSS + sourcemap di tlileng go bolokiwa teng" },
+  "outputPathDesc_main": {
+    "message": "Path to file or directory moo difaele tsa CSS + sourcemap di tlileng go bolokiwa teng"
+  },
   "outputPathDesc_extra": { "message": "malebang le modi o o tsenngwang (fa go sa tlamelwa ka one, go dirisiwa css/)" },
   "optionDesc_dryRun": { "message": "Tota ga o kgobokanye (di) faele, bontsha fela gore a di tlile go berekiwa" },
   "optionDesc_dotfolders": { "message": "Go akaretša difolda tša dikhoutu mo go nyakišišo ya difaele" },
   "optionDesc_noSourceMaps": { "message": "Go thibela gore dimmapa tsa motswedi wa tshedimosetso di seka tsa dirwa" },
   "optionDesc_noMinify": { "message": "Go dira gore CSS e se ka ya tlhola e dira gore go nne le selekanyo se" },
   "optionDesc_noRecursion": { "message": "Go dira gore go seka ga diragala go batla faele e e boeletsang" },
-  "optionDesc_copy": { "message": "Khopi e e kopantsweng ya CSS go clipboard mo boemong jwa go e kwalela faele fa faele ya motswedi o le mongwe e berekisiwa" },
-  "optionDesc_relativeOutput": { "message": "Difaele tsa dikumo tse di amanang le faele nngwe le nngwe ya motswedi mo boemong jwa go tsenya modi" },
+  "optionDesc_copy": {
+    "message": "Khopi e e kopantsweng ya CSS go clipboard mo boemong jwa go e kwalela faele fa faele ya motswedi o le mongwe e berekisiwa"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Difaele tsa dikumo tse di amanang le faele nngwe le nngwe ya motswedi mo boemong jwa go tsenya modi"
+  },
   "optionDesc_quiet": { "message": "Go emisa dikgogo tsotlhe kwantle ga diphoso" },
   "optionDesc_ignores": { "message": "Difaele/dikaedi tse di tshwanelang go sa akarediwe mo kgobokanyong" },
   "optionDesc_commentMain": { "message": "REPAPEND HEADER COMMENT TO CSS COMPILED" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Lỗi khi đọc phiên bản gói cục bộ" },
   "error_notRecognized": { "message": "không được công nhận" },
   "error_nonPositiveNum": { "message": "đối số chỉ có thể là > 0" },
+  "error_requiresVal": { "message": "yêu cầu một giá trị" },
   "error_invalidFilepath": { "message": "phải là đường dẫn tệp hiện có hợp lệ. Đã nhận" },
   "error_invalidLangCode": { "message": "là mã ngôn ngữ không hợp lệ" },
   "error_invalidURL": { "message": "URL không hợp lệ" },
@@ -65,8 +66,12 @@
   "optionDesc_noSourceMaps": { "message": "Ngăn không cho tạo bản đồ nguồn" },
   "optionDesc_noMinify": { "message": "Tắt thu nhỏ CSS đầu ra" },
   "optionDesc_noRecursion": { "message": "Tắt tính năng tìm kiếm tệp đệ quy" },
-  "optionDesc_copy": { "message": "Sao chép CSS đã biên dịch vào khay nhớ tạm thay vì ghi vào tệp nếu tệp nguồn duy nhất được xử lý" },
-  "optionDesc_relativeOutput": { "message": "Các tệp đầu ra liên quan đến từng tệp nguồn thay vì vào thư mục gốc đầu vào" },
+  "optionDesc_copy": {
+    "message": "Sao chép CSS đã biên dịch vào khay nhớ tạm thay vì ghi vào tệp nếu tệp nguồn duy nhất được xử lý"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Các tệp đầu ra liên quan đến từng tệp nguồn thay vì vào thư mục gốc đầu vào"
+  },
   "optionDesc_quiet": { "message": "Chặn tất cả ghi nhật ký ngoại trừ lỗi" },
   "optionDesc_ignores": { "message": "Các tệp/thư mục để loại trừ khỏi biên dịch" },
   "optionDesc_commentMain": { "message": "Thêm nhận xét tiêu đề vào CSS đã biên dịch" },

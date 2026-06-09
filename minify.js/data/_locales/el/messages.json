@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Σφάλμα κατά την ανάγνωση της τοπικής έκδοσης πακέτου" },
   "error_notRecognized": { "message": "που δεν αναγνωρίζονται" },
   "error_nonPositiveNum": { "message": "το όρισμα μπορεί να είναι μόνο > 0" },
+  "error_requiresVal": { "message": "απαιτεί μια τιμή" },
   "error_invalidFilepath": { "message": "πρέπει να είναι μια έγκυρη υπάρχουσα διαδρομή αρχείου. Ελήφθη" },
   "error_invalidLangCode": { "message": "είναι μη έγκυρος κωδικός γλώσσας" },
   "error_invalidURL": { "message": "Μη έγκυρo URL" },
@@ -55,18 +56,30 @@
   "helpSection_params": { "message": "Επιλογές παραμέτρων" },
   "helpSection_cmds": { "message": "Εντολές πληροφοριών" },
   "optionDesc_uiLang": { "message": "Κωδικός γλώσσας ISO 639-1 για εμφάνιση διεπαφής χρήστη σε" },
-  "inputPathDesc_main": { "message": "Διαδρομή προς το αρχείο ή τον κατάλογο JavaScript που περιέχει αρχεία JavaScript προς ελαχιστοποίηση" },
+  "inputPathDesc_main": {
+    "message": "Διαδρομή προς το αρχείο ή τον κατάλογο JavaScript που περιέχει αρχεία JavaScript προς ελαχιστοποίηση"
+  },
   "inputPathDesc_extra": { "message": "σε σχέση με τον τρέχοντα κατάλογο εργασίας" },
-  "outputPathDesc_main": { "message": "Διαδρομή προς το αρχείο ή τον κατάλογο όπου θα αποθηκεύονται τα ελαχιστοποιημένα αρχεία" },
-  "outputPathDesc_extra": { "message": "σε σχέση με την αρχική θέση του αρχείου (εάν δεν παρέχεται, χρησιμοποιείται min/)" },
-  "optionDesc_dryRun": { "message": "Μην ελαχιστοποιείτε πραγματικά τα αρχεία, απλώς δείξτε αν θα υποβληθούν σε επεξεργασία" },
+  "outputPathDesc_main": {
+    "message": "Διαδρομή προς το αρχείο ή τον κατάλογο όπου θα αποθηκεύονται τα ελαχιστοποιημένα αρχεία"
+  },
+  "outputPathDesc_extra": {
+    "message": "σε σχέση με την αρχική θέση του αρχείου (εάν δεν παρέχεται, χρησιμοποιείται min/)"
+  },
+  "optionDesc_dryRun": {
+    "message": "Μην ελαχιστοποιείτε πραγματικά τα αρχεία, απλώς δείξτε αν θα υποβληθούν σε επεξεργασία"
+  },
   "optionDesc_dotfolders": { "message": "Συμπερίληψη dotfolders στην αναζήτηση αρχείων" },
   "optionDesc_dotfiles": { "message": "Συμπερίληψη αρχείων dot στην αναζήτηση αρχείων" },
   "optionDesc_noRecursion": { "message": "Απενεργοποίηση αναδρομικής αναζήτησης αρχείων" },
   "optionDesc_noMangle": { "message": "Απενεργοποίηση παραμορφωτικών ονομάτων" },
   "optionDesc_noFilenameChange": { "message": "Απενεργοποίηση αλλαγής επέκτασης αρχείου σε .min.js" },
-  "optionDesc_copy": { "message": "Αντιγραφή ελαχιστοποιημένου κώδικα στο πρόχειρο αντί για εγγραφή σε αρχείο εάν γίνεται επεξεργασία μεμονωμένου πηγαίου αρχείου" },
-  "optionDesc_relativeOutput": { "message": "Αρχεία εξόδου σχετικά με κάθε αρχείο προέλευσης αντί για την εισαγωγή ρίζας" },
+  "optionDesc_copy": {
+    "message": "Αντιγραφή ελαχιστοποιημένου κώδικα στο πρόχειρο αντί για εγγραφή σε αρχείο εάν γίνεται επεξεργασία μεμονωμένου πηγαίου αρχείου"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Αρχεία εξόδου σχετικά με κάθε αρχείο προέλευσης αντί για την εισαγωγή ρίζας"
+  },
   "optionDesc_rewriteImports": { "message": "Ενημέρωση διαδρομών εισαγωγής από .js σε .min.js" },
   "optionDesc_quiet": { "message": "Καταργήστε όλες τις καταγραφές εκτός από τα σφάλματα" },
   "optionDesc_ignores": { "message": "Αρχεία/κατάλογοι για εξαίρεση από την ελαχιστοποίηση" },

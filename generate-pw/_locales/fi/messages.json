@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Virhe paikallisen paketin version lukemisessa" },
   "error_notRecognized": { "message": "ei tunnistettu" },
   "error_nonPositiveNum": { "message": "argumentti voi olla vain > 0" },
+  "error_requiresVal": { "message": "vaatii arvon" },
   "error_invalidFilepath": { "message": "on oltava kelvollinen olemassa oleva tiedostopolku. Sain" },
   "error_invalidLangCode": { "message": "on virheellinen kielikoodi" },
   "error_invalidURL": { "message": "Virheellinen URL" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Kiellä pienet kirjaimet salasanoissa" },
   "optionDesc_noUpper": { "message": "Estä isot kirjaimet salasanoissa" },
   "optionDesc_similarChars": { "message": "Sisällytä samanlaiset merkit salasanoihin" },
-  "optionDesc_unstrict": { "message": "Älä vaadi vähintään yhtä merkkiä jokaisesta salasanoissa asetetusta sallitusta merkistä" },
+  "optionDesc_unstrict": {
+    "message": "Älä vaadi vähintään yhtä merkkiä jokaisesta salasanoissa asetetusta sallitusta merkistä"
+  },
   "optionDesc_noEntropy": { "message": "Älä laske/kirjaa arvioitua entropiaa" },
   "optionDesc_quiet": { "message": "Poista kaikki kirjaukset paitsi virheet" },
   "optionDesc_help": { "message": "Näytä ohjenäyttö" },

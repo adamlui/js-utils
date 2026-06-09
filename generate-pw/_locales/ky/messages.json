@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Жергиликтүү топтомдун нускасын окуу катасы" },
   "error_notRecognized": { "message": "табылган жок" },
   "error_nonPositiveNum": { "message": "аргумент гана болушу мүмкүн > 0" },
+  "error_requiresVal": { "message": "бир маанини талап кылат" },
   "error_invalidFilepath": { "message": "жарактуу бар файл жолдору болушу керек. Get" },
   "error_invalidLangCode": { "message": "жараксыз тил коду" },
   "error_invalidURL": { "message": "Туура эмес дарек" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Сырсөздө (лерде) кичине тамгаларды четке кагуу" },
   "optionDesc_noUpper": { "message": "Сырсөз(дар) менен негизги тамгаларды четке кагуу" },
   "optionDesc_similarChars": { "message": "Сырсөзгө окшош белгилерди киргизүү" },
-  "optionDesc_unstrict": { "message": "Сырсөздө (лерде) белгиленген ар бир уруксат берилген белгиден жок дегенде бир белги талап кылынбайт" },
+  "optionDesc_unstrict": {
+    "message": "Сырсөздө (лерде) белгиленген ар бир уруксат берилген белгиден жок дегенде бир белги талап кылынбайт"
+  },
   "optionDesc_noEntropy": { "message": "Сметалык энтропияны эсептөө/жазуу жок" },
   "optionDesc_quiet": { "message": "Каталардан башка бардык жазууларды басуу" },
   "optionDesc_help": { "message": "Жардам экранын көрсөтүү" },

@@ -6,9 +6,12 @@
   "error_readingLocalPkgVer": { "message": "Impazamo yokufunda uhlobo lwephakheji yasekuhlaleni" },
   "error_notRecognized": { "message": "ayibonakali" },
   "error_nonPositiveNum": { "message": "impikiswano inokuba > 0 kuphela" },
+  "error_requiresVal": { "message": "ifuna ixabiso" },
   "error_invalidFilepath": { "message": "kufuneka ibe yindlela efanelekileyo yefayile ekhoyo. Ufumene" },
   "error_invalidLangCode": { "message": "yikhowudi yolwimi engachananga" },
-  "error_invalidURL": { "message": "Amagama efayile aceliweyo% 1 ayikhangeleki isebenza kum. Qinisekisa ukuba igama lefayile livalelwe kuchaphulo olu phindwe kabini" },
+  "error_invalidURL": {
+    "message": "Amagama efayile aceliweyo% 1 ayikhangeleki isebenza kum. Qinisekisa ukuba igama lefayile livalelwe kuchaphulo olu phindwe kabini"
+  },
   "error_invalidConfigFile": { "message": "Qwalasela ifayile kufuneka ithumele into" },
   "error_invalidKey": { "message": "Isitshixo asichananga" },
   "error_foundIn": { "message": "ifunyenwe kwi" },
@@ -56,7 +59,9 @@
   "optionDesc_noLower": { "message": "Ungavumeli oonobumba abancinci kwi-password(ii)" },
   "optionDesc_noUpper": { "message": "Ungavumeli oonobumba abakhulu kwi-password(ii)" },
   "optionDesc_similarChars": { "message": "Faka oonobumba abafanayo kwiphasiwedi" },
-  "optionDesc_unstrict": { "message": "Akufuneki ubuncinane unobumba omnye kunobumba ngamnye ovumelekileyo osetwe kwiphasiwedi(iiphasiwedi)" },
+  "optionDesc_unstrict": {
+    "message": "Akufuneki ubuncinane unobumba omnye kunobumba ngamnye ovumelekileyo osetwe kwiphasiwedi(iiphasiwedi)"
+  },
   "optionDesc_noEntropy": { "message": "Sukubala/ukubala uqikelelo lwe-entropy" },
   "optionDesc_quiet": { "message": "Cima konke ukungena ngaphandle kweempazamo" },
   "optionDesc_help": { "message": "Bonisa isikrini soncedo" },

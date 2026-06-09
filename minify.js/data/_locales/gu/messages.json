@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "સ્થાનિક પેકેજ સંસ્કરણ વાંચવામાં ભૂલ" },
   "error_notRecognized": { "message": "ઓળખી શકાયું નથી" },
   "error_nonPositiveNum": { "message": "દલીલ ફક્ત > 0 હોઈ શકે છે" },
+  "error_requiresVal": { "message": "મૂલ્યની જરૂર છે" },
   "error_invalidFilepath": { "message": "માન્ય અસ્તિત્વમાં છે તે ફાઇલ પાથ હોવો જોઈએ. મળ્યું" },
   "error_invalidLangCode": { "message": "અમાન્ય ભાષા કોડ છે" },
   "error_invalidURL": { "message": "અયોગ્ય URL" },
@@ -59,13 +60,17 @@
   "inputPathDesc_extra": { "message": "વર્તમાન કાર્યકારી ડિરેક્ટરી સંબંધિત" },
   "outputPathDesc_main": { "message": "ફાઇલ અથવા ડિરેક્ટરીનો પાથ જ્યાં મિનિફાઇડ ફાઇલો સંગ્રહિત કરવામાં આવશે" },
   "outputPathDesc_extra": { "message": "મૂળ ફાઇલ સ્થાન સાથે સંબંધિત (જો પૂરી પાડવામાં ન આવે તો, મિનિટ/વપરાય છે)" },
-  "optionDesc_dryRun": { "message": "ખરેખર ફાઇલ(ઓ) ને નાનું કરશો નહીં, ફક્ત બતાવો કે તેઓ પર પ્રક્રિયા કરવામાં આવશે કે નહીં" },
+  "optionDesc_dryRun": {
+    "message": "ખરેખર ફાઇલ(ઓ) ને નાનું કરશો નહીં, ફક્ત બતાવો કે તેઓ પર પ્રક્રિયા કરવામાં આવશે કે નહીં"
+  },
   "optionDesc_dotfolders": { "message": "ફાઇલ શોધમાં ડોટફોલ્ડર્સ શામેલ કરો" },
   "optionDesc_dotfiles": { "message": "ફાઇલ શોધમાં ડોટફાઇલો શામેલ કરો" },
   "optionDesc_noRecursion": { "message": "રિકર્સિવ ફાઇલ શોધવાનું અક્ષમ કરો" },
   "optionDesc_noMangle": { "message": "મેંગલિંગ નામો અક્ષમ કરો" },
   "optionDesc_noFilenameChange": { "message": ".min.js માં ફાઇલ એક્સ્ટેંશન બદલવાનું અક્ષમ કરો" },
-  "optionDesc_copy": { "message": "જો સિંગલ સોર્સ ફાઇલ પર પ્રક્રિયા કરવામાં આવે તો ફાઇલ પર લખવાને બદલે ક્લિપબોર્ડ પર મિનિફાઇડ કોડની નકલ કરો" },
+  "optionDesc_copy": {
+    "message": "જો સિંગલ સોર્સ ફાઇલ પર પ્રક્રિયા કરવામાં આવે તો ફાઇલ પર લખવાને બદલે ક્લિપબોર્ડ પર મિનિફાઇડ કોડની નકલ કરો"
+  },
   "optionDesc_relativeOutput": { "message": "ઇનપુટ રુટને બદલે દરેક સ્રોત ફાઇલની સંબંધિત આઉટપુટ ફાઇલો" },
   "optionDesc_rewriteImports": { "message": ".js થી .min.js સુધી આયાત પાથ અપડેટ કરો" },
   "optionDesc_quiet": { "message": "ભૂલો સિવાય તમામ લોગીંગને દબાવો" },

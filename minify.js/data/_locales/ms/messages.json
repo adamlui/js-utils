@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Ralat membaca versi pakej tempatan" },
   "error_notRecognized": { "message": "Tidak dikonsikan semula" },
   "error_nonPositiveNum": { "message": "argumen hanya boleh > 0" },
+  "error_requiresVal": { "message": "memerlukan nilai" },
   "error_invalidFilepath": { "message": "mesti laluan fail sedia ada yang sah. Dapat" },
   "error_invalidLangCode": { "message": "adalah kod bahasa yang tidak sah" },
   "error_invalidURL": { "message": "URL tidak sah" },
@@ -55,7 +56,9 @@
   "helpSection_params": { "message": "Pilihan parameter" },
   "helpSection_cmds": { "message": "Perintah maklumat" },
   "optionDesc_uiLang": { "message": "Kod bahasa ISO 639-1 untuk memaparkan UI" },
-  "inputPathDesc_main": { "message": "Laluan ke fail JavaScript atau direktori yang mengandungi fail JavaScript untuk diminifikasikan" },
+  "inputPathDesc_main": {
+    "message": "Laluan ke fail JavaScript atau direktori yang mengandungi fail JavaScript untuk diminifikasikan"
+  },
   "inputPathDesc_extra": { "message": "relatif kepada direktori kerja semasa" },
   "outputPathDesc_main": { "message": "Laluan ke fail atau direktori di mana fail minified akan disimpan" },
   "outputPathDesc_extra": { "message": "berbanding dengan lokasi fail asal (jika tidak disediakan, min/ digunakan)" },
@@ -65,8 +68,12 @@
   "optionDesc_noRecursion": { "message": "Lumpuhkan carian fail rekursif" },
   "optionDesc_noMangle": { "message": "Nyahdayakan nama mangling" },
   "optionDesc_noFilenameChange": { "message": "Lumpuhkan perubahan sambungan fail ke .min.js" },
-  "optionDesc_copy": { "message": "Salin kod minified ke papan klip dan bukannya menulis ke fail jika fail sumber tunggal diproses" },
-  "optionDesc_relativeOutput": { "message": "Fail output relatif kepada setiap fail sumber dan bukannya kepada akar input" },
+  "optionDesc_copy": {
+    "message": "Salin kod minified ke papan klip dan bukannya menulis ke fail jika fail sumber tunggal diproses"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Fail output relatif kepada setiap fail sumber dan bukannya kepada akar input"
+  },
   "optionDesc_rewriteImports": { "message": "Kemas kini laluan import dari .js ke .min.js" },
   "optionDesc_quiet": { "message": "Sekat semua pembalakan kecuali ralat" },
   "optionDesc_ignores": { "message": "Fail/direktori untuk dikecualikan daripada minifikasi" },

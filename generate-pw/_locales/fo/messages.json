@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Feilur við at lesa lokalu pakkaútgávu" },
   "error_notRecognized": { "message": "ikki viðurkennd" },
   "error_nonPositiveNum": { "message": "argument kann bert vera > 0" },
+  "error_requiresVal": { "message": "tað krevur eitt virði" },
   "error_invalidFilepath": { "message": "tað skal vera ein galdandi verandi skráarvegur" },
   "error_invalidLangCode": { "message": "tað er ein ógildandi málsligur kóði" },
   "error_invalidURL": { "message": "Ógildugt URL" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Avnokta smærri bókstavir í loyniorð(um)" },
   "optionDesc_noUpper": { "message": "Loyvi uppskriftir í loyniorð(um)" },
   "optionDesc_similarChars": { "message": "Skriva líknandi persónar í loyniorð(s)" },
-  "optionDesc_unstrict": { "message": "Tað krevur ikki minst eitt karakter av hvørjum loyvum, sum er settur í loyniorð(um)" },
+  "optionDesc_unstrict": {
+    "message": "Tað krevur ikki minst eitt karakter av hvørjum loyvum, sum er settur í loyniorð(um)"
+  },
   "optionDesc_noEntropy": { "message": "Ikki rokna/log mettar entropy" },
   "optionDesc_quiet": { "message": "Undirskriva allar innmeldingar uttan feil" },
   "optionDesc_help": { "message": "Vís hjálparskjá" },

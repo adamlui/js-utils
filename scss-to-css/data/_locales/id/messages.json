@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Kesalahan membaca versi paket lokal" },
   "error_notRecognized": { "message": "tidak diakui" },
   "error_nonPositiveNum": { "message": "argumen hanya bisa > 0" },
+  "error_requiresVal": { "message": "membutuhkan nilai" },
   "error_invalidFilepath": { "message": "harus berupa path file yang sudah ada yang valid. Got" },
   "error_invalidLangCode": { "message": "adalah kode bahasa yang tidak valid" },
   "error_invalidURL": { "message": "URL Tidak Valid" },
@@ -60,12 +61,16 @@
   "inputPathDesc_extra": { "message": "relatif terhadap direktori kerja saat ini" },
   "outputPathDesc_main": { "message": "Path ke file atau direktori tempat file peta sumber CSS + akan disimpan" },
   "outputPathDesc_extra": { "message": "relatif terhadap input root (jika tidak disediakan, css/ digunakan)" },
-  "optionDesc_dryRun": { "message": "Jangan benar - benar mengkompilasi file, cukup tunjukkan apakah mereka akan diproses" },
+  "optionDesc_dryRun": {
+    "message": "Jangan benar - benar mengkompilasi file, cukup tunjukkan apakah mereka akan diproses"
+  },
   "optionDesc_dotfolders": { "message": "Sertakan dotfolder dalam pencarian file" },
   "optionDesc_noSourceMaps": { "message": "Cegah peta sumber dibuat" },
   "optionDesc_noMinify": { "message": "Nonaktifkan minifikasi CSS output" },
   "optionDesc_noRecursion": { "message": "Nonaktifkan pencarian file rekursif" },
-  "optionDesc_copy": { "message": "Salin CSS yang dikompilasi ke clipboard alih - alih menulis ke file jika file sumber tunggal diproses" },
+  "optionDesc_copy": {
+    "message": "Salin CSS yang dikompilasi ke clipboard alih - alih menulis ke file jika file sumber tunggal diproses"
+  },
   "optionDesc_relativeOutput": { "message": "File output relatif terhadap setiap file sumber, bukan ke root input" },
   "optionDesc_quiet": { "message": "Cegah semua pencatatan kecuali kesalahan" },
   "optionDesc_ignores": { "message": "File/direktori untuk dikecualikan dari kompilasi" },

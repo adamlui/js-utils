@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "স্থানীয় প্যাকেজ সংস্করণ পড়তে ত্রুটি" },
   "error_notRecognized": { "message": "স্বীকৃত নয়" },
   "error_nonPositiveNum": { "message": "যুক্তি শুধুমাত্র হতে পারে > 0" },
+  "error_requiresVal": { "message": "একটি মান প্রয়োজন" },
   "error_invalidFilepath": { "message": "অবশ্যই একটি বৈধ বিদ্যমান ফাইল পাথ হতে হবে । পেয়েছেন" },
   "error_invalidLangCode": { "message": "একটি অবৈধ ভাষা কোড" },
   "error_invalidURL": { "message": "অবৈধ ইউ- আর- এল" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "সোর্স ম্যাপ তৈরি করা থেকে বিরত থাকুন" },
   "optionDesc_noMinify": { "message": "আউটপুট CSS এর মিনিফিকেশন নিষ্ক্রিয় করুন" },
   "optionDesc_noRecursion": { "message": "পুনরাবৃত্তিমূলক ফাইল অনুসন্ধান অক্ষম করুন" },
-  "optionDesc_copy": { "message": "একক উত্স ফাইল প্রক্রিয়া করা হলে ফাইলে লেখার পরিবর্তে সংকলিত সিএসএস ক্লিপবোর্ডে অনুলিপি করুন" },
+  "optionDesc_copy": {
+    "message": "একক উত্স ফাইল প্রক্রিয়া করা হলে ফাইলে লেখার পরিবর্তে সংকলিত সিএসএস ক্লিপবোর্ডে অনুলিপি করুন"
+  },
   "optionDesc_relativeOutput": { "message": "ইনপুট রুটের পরিবর্তে প্রতিটি উত্স ফাইলের সাথে সম্পর্কিত আউটপুট ফাইল" },
   "optionDesc_quiet": { "message": "ত্রুটি ব্যতীত সমস্ত লগিং দমন করুন" },
   "optionDesc_ignores": { "message": "সংকলন থেকে বাদ দেওয়ার জন্য ফাইল/ডিরেক্টরি" },

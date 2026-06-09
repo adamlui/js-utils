@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Mahalliy paket versiyasini o'qishda xatolik yuz berdi" },
   "error_notRecognized": { "message": "aniqlanmadi" },
   "error_nonPositiveNum": { "message": "argument faqat > 0 bo'lishi mumkin" },
+  "error_requiresVal": { "message": "qiymat talab qiladi" },
   "error_invalidFilepath": { "message": "mavjud fayl yo'li to'g'ri bo'lishi kerak. Oldi" },
   "error_invalidLangCode": { "message": "yaroqsiz til kodi" },
   "error_invalidURL": { "message": "KDE qopchiq xizmati" },
@@ -56,17 +57,25 @@
   "helpSection_params": { "message": "Parametr variantlari" },
   "helpSection_cmds": { "message": "Buyruqlar" },
   "optionDesc_uiLang": { "message": "UI ni ko'rsatish uchun ISO 639-1 til kodi" },
-  "inputPathDesc_main": { "message": "Kompilyatsiya qilinadigan SCSS fayllarini o'z ichiga olgan SCSS fayli yoki katalogiga yo'l" },
+  "inputPathDesc_main": {
+    "message": "Kompilyatsiya qilinadigan SCSS fayllarini o'z ichiga olgan SCSS fayli yoki katalogiga yo'l"
+  },
   "inputPathDesc_extra": { "message": "joriy ishchi katalogga nisbatan" },
   "outputPathDesc_main": { "message": "CSS + manba xaritasi fayllari saqlanadigan fayl yoki katalogga yo'l" },
   "outputPathDesc_extra": { "message": "kirish ildiziga nisbatan (agar taqdim etilmagan bo'lsa, css/ ishlatiladi)" },
-  "optionDesc_dryRun": { "message": "Fayl(lar)ni aslida kompilyatsiya qilmang, shunchaki ular qayta ishlanadimi yoki yo'qligini ko'rsating" },
+  "optionDesc_dryRun": {
+    "message": "Fayl(lar)ni aslida kompilyatsiya qilmang, shunchaki ular qayta ishlanadimi yoki yo'qligini ko'rsating"
+  },
   "optionDesc_dotfolders": { "message": "Fayl qidiruviga nuqtali papkalarni qo'shish" },
   "optionDesc_noSourceMaps": { "message": "Manba xaritalarining yaratilishiga yo'l qo'ymaslik" },
   "optionDesc_noMinify": { "message": "Chiqish CSS-ni minifatsiya qilishni o'chirib qo'ying" },
   "optionDesc_noRecursion": { "message": "Rekursiv fayl qidiruvini o'chirib qo'yish" },
-  "optionDesc_copy": { "message": "Agar bitta manbali fayl qayta ishlansa, kompilyatsiya qilingan CSS faylini faylga yozish o'rniga buferga nusxalash" },
-  "optionDesc_relativeOutput": { "message": "Root fayliga emas, balki har bir manba fayliga nisbatan fayllarni chiqarish" },
+  "optionDesc_copy": {
+    "message": "Agar bitta manbali fayl qayta ishlansa, kompilyatsiya qilingan CSS faylini faylga yozish o'rniga buferga nusxalash"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Root fayliga emas, balki har bir manba fayliga nisbatan fayllarni chiqarish"
+  },
   "optionDesc_quiet": { "message": "Xatolardan tashqari barcha jurnallarni o'chirish" },
   "optionDesc_ignores": { "message": "Kompilyatsiyadan chiqarib tashlanadigan fayllar/kataloglar" },
   "optionDesc_commentMain": { "message": "Sarlavha izohini kompilyatsiya qilingan CSS ga oldindan qo'shish" },

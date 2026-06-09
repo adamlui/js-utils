@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "مقامی پیکج ورژن پڑھنے میں خرابی" },
   "error_notRecognized": { "message": "پہچانا نہیں گیا" },
   "error_nonPositiveNum": { "message": "دلیل صرف > 0 ہو سکتی ہے" },
+  "error_requiresVal": { "message": "قدر کی ضرورت ہے" },
   "error_invalidFilepath": { "message": "ایک درست موجودہ فائل کا راستہ ہونا چاہیے ۔ مل گیا" },
   "error_invalidLangCode": { "message": "ایک غلط زبان کا کوڈ ہے" },
   "error_invalidURL": { "message": "غلط URL" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "ماخذ کے نقشوں کو جنریٹ ہونے سے روکیں" },
   "optionDesc_noMinify": { "message": "آؤٹ پٹ CSS کی minification کو غیر فعال کریں" },
   "optionDesc_noRecursion": { "message": "بار بار چلنے والی فائل کی تلاش کو غیر فعال کریں" },
-  "optionDesc_copy": { "message": "اگر واحد ماخذ فائل پر کارروائی کی جاتی ہے تو فائل میں لکھنے کے بجائے مرتب کردہ CSS کو کلپ بورڈ میں کاپی کریں" },
+  "optionDesc_copy": {
+    "message": "اگر واحد ماخذ فائل پر کارروائی کی جاتی ہے تو فائل میں لکھنے کے بجائے مرتب کردہ CSS کو کلپ بورڈ میں کاپی کریں"
+  },
   "optionDesc_relativeOutput": { "message": "ان پٹ روٹ کے بجائے ہر سورس فائل سے متعلق آؤٹ پٹ فائلیں" },
   "optionDesc_quiet": { "message": "غلطیوں کے علاوہ تمام لاگنگ کو دبائیں" },
   "optionDesc_ignores": { "message": "تالیف سے خارج کرنے کے لیے فائلیں/ڈائریکٹریز" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Erè lekti vèsyon pakè lokal yo" },
   "error_notRecognized": { "message": "pa rekonèt/pa rekonèt" },
   "error_nonPositiveNum": { "message": "agiman ka sèlman > 0" },
+  "error_requiresVal": { "message": "mande pou yon valè/demande d '" },
   "error_invalidFilepath": { "message": "dwe yon valab chemen dosye ki egziste deja. Got" },
   "error_invalidLangCode": { "message": "se yon kòd langaj envalid/est un code lingu" },
   "error_invalidURL": { "message": "URL ki pa valab" },
@@ -36,7 +37,9 @@
   "info_copyingToClip": { "message": "Kopi nan tablo" },
   "info_writing": { "message": "Ekri nan dosye" },
   "info_compilationComplete": { "message": "Konpilasyon konplè" },
-  "info_file": { "message": "dosye/ranpli/lim /fil/fichier/les documents/documents/dossier/le dossier/déclaration/soumettre/ classification/classeur/limer/lime/ficher/ soumettre/mettre dans le dossier/se souiller/trompeur/marcher/se présenter candidat/envoyer/ envoyer/déposer" },
+  "info_file": {
+    "message": "dosye/ranpli/lim /fil/fichier/les documents/documents/dossier/le dossier/déclaration/soumettre/ classification/classeur/limer/lime/ficher/ soumettre/mettre dans le dossier/se souiller/trompeur/marcher/se présenter candidat/envoyer/ envoyer/déposer"
+  },
   "info_srcMap": { "message": "sous kat jeyografik/sous kat jeyografik" },
   "info_generated": { "message": "pwodwi" },
   "info_noSCSSfilesProcessed": { "message": "Pa gen dosye SCSS trete" },
@@ -65,7 +68,9 @@
   "optionDesc_noSourceMaps": { "message": "Anpeche kat sous yo soti nan ke yo te pwodwi" },
   "optionDesc_noMinify": { "message": "Enfim minifikasyon pwodiksyon CSS" },
   "optionDesc_noRecursion": { "message": "Désactivez recursive fichiers recursive recursive" },
-  "optionDesc_copy": { "message": "Kopi CSS konpile nan clipboard olye pou yo ekri nan dosye si se dosye sous sèl trete" },
+  "optionDesc_copy": {
+    "message": "Kopi CSS konpile nan clipboard olye pou yo ekri nan dosye si se dosye sous sèl trete"
+  },
   "optionDesc_relativeOutput": { "message": "Dosye Sòti relatif a chak dosye sous olye pou yo rasin opinyon" },
   "optionDesc_quiet": { "message": "Siprime tout antre eksepte erè" },
   "optionDesc_ignores": { "message": "Dosye/repèrtwar pou eskli nan konpilasyon" },

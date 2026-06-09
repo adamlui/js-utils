@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Phoso fa o bala mofuta wa pakana ya mo lefelong la lona" },
   "error_notRecognized": { "message": "ga a itsiwe" },
   "error_nonPositiveNum": { "message": "ngangisano e ka nna > 0 fela" },
+  "error_requiresVal": { "message": "e tlhoka boleng" },
   "error_invalidFilepath": { "message": "e tshwanetse go nna tsela e e tshwanetseng ya faele e e leng teng. Got" },
   "error_invalidLangCode": { "message": "ke khoutu e e sa siamang ya puo" },
   "error_invalidURL": { "message": "URL e e sa siamang" },
@@ -57,17 +58,29 @@
   "optionDesc_uiLang": { "message": "ISO 639-1 code of language to display UI in" },
   "inputPathDesc_main": { "message": "Path to JavaScript file or directory with JavaScript files to be minified" },
   "inputPathDesc_extra": { "message": "go tsamaisana le kaedi ya ga jaana ya tiro" },
-  "outputPathDesc_main": { "message": "Path to file or directory moo difaele tse di minified di tlileng go bolokiwa teng" },
-  "outputPathDesc_extra": { "message": "go tsamaisana le lefelo la faele ya kwa tshimologong (fa go sa tlamelwa ka lone, go dirisiwa metsotso e se kae)" },
-  "optionDesc_dryRun": { "message": "O seka wa dira gore faele(difaele) e seka ya fokodiwa, bontsha fela gore a e tlile go berekiwa" },
+  "outputPathDesc_main": {
+    "message": "Path to file or directory moo difaele tse di minified di tlileng go bolokiwa teng"
+  },
+  "outputPathDesc_extra": {
+    "message": "go tsamaisana le lefelo la faele ya kwa tshimologong (fa go sa tlamelwa ka lone, go dirisiwa metsotso e se kae)"
+  },
+  "optionDesc_dryRun": {
+    "message": "O seka wa dira gore faele(difaele) e seka ya fokodiwa, bontsha fela gore a e tlile go berekiwa"
+  },
   "optionDesc_dotfolders": { "message": "Go akaretša difolda tša dikhoutu mo go nyakišišo ya difaele" },
   "optionDesc_dotfiles": { "message": "Go akaretsa difaele mo patlisisong ya faele" },
   "optionDesc_noRecursion": { "message": "Go dira gore go seka ga diragala go batla faele e e boeletsang" },
   "optionDesc_noMangle": { "message": "Go dira gore maina a gago a se ka a dirisiwa" },
   "optionDesc_noFilenameChange": { "message": "Kgoreletsa go fetola katoloso ya faele go ya go .min.js" },
-  "optionDesc_copy": { "message": "Khopi ya khoutu ya minified go clipboard mo boemong jwa go kwalela faele faele ya motswedi o le mongwe e berekisiwa" },
-  "optionDesc_relativeOutput": { "message": "Difaele tsa dikumo tse di amanang le faele nngwe le nngwe ya motswedi mo boemong jwa go tsenya modi" },
-  "optionDesc_rewriteImports": { "message": "Ntshwafatsa ditsela tsa go romela dilo kwa ntle go tswa go .js go ya go .min.js" },
+  "optionDesc_copy": {
+    "message": "Khopi ya khoutu ya minified go clipboard mo boemong jwa go kwalela faele faele ya motswedi o le mongwe e berekisiwa"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Difaele tsa dikumo tse di amanang le faele nngwe le nngwe ya motswedi mo boemong jwa go tsenya modi"
+  },
+  "optionDesc_rewriteImports": {
+    "message": "Ntshwafatsa ditsela tsa go romela dilo kwa ntle go tswa go .js go ya go .min.js"
+  },
   "optionDesc_quiet": { "message": "Go emisa dikgogo tsotlhe kwantle ga diphoso" },
   "optionDesc_ignores": { "message": "Difaele/dikwadiso tse di tshwanelang go sa akarediwe mo menining" },
   "optionDesc_commentMain": { "message": "REPAPEND HEADER COMMIED CODE" },

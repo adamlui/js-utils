@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Żball fil-qari tal-verżjoni tal-pakkett lokali" },
   "error_notRecognized": { "message": "Mhux rikonoxxut" },
   "error_nonPositiveNum": { "message": "l-argument jista' jkun biss > 0" },
+  "error_requiresVal": { "message": "jeħtieġ valur" },
   "error_invalidFilepath": { "message": "trid tkun passaġġ tal-fajl validu eżistenti. Got" },
   "error_invalidLangCode": { "message": "huwa kodiċi tal-lingwa mhux validu" },
   "error_invalidURL": { "message": "URL mhux tajjeb" },
@@ -56,17 +57,25 @@
   "helpSection_params": { "message": "Għażliet tal-parametri" },
   "helpSection_cmds": { "message": "Kmand" },
   "optionDesc_uiLang": { "message": "Kodiċi tal-lingwa ISO 639-1 biex turi l-UI fi" },
-  "inputPathDesc_main": { "message": "Path għal fajl SCSS jew direttorju li fih fajls SCSS li għandhom jiġu kkompilati" },
+  "inputPathDesc_main": {
+    "message": "Path għal fajl SCSS jew direttorju li fih fajls SCSS li għandhom jiġu kkompilati"
+  },
   "inputPathDesc_extra": { "message": "meta mqabbel mad-direttorju tax-xogħol attwali" },
-  "outputPathDesc_main": { "message": "Mogħdija għall-fajl jew direttorju fejn se jinħażnu l-fajls tal-mappa sors CSS +" },
+  "outputPathDesc_main": {
+    "message": "Mogħdija għall-fajl jew direttorju fejn se jinħażnu l-fajls tal-mappa sors CSS +"
+  },
   "outputPathDesc_extra": { "message": "meta mqabbel mal-għeruq tal-input (jekk mhux ipprovdut, jintuża css/)" },
   "optionDesc_dryRun": { "message": "Fil-fatt tiġborx il-fajl(s), sempliċement uri jekk humiex se jiġu pproċessati" },
   "optionDesc_dotfolders": { "message": "Inkludi d-dotfolders fit-tfittxija tal-fajl" },
   "optionDesc_noSourceMaps": { "message": "Ipprevjeni li l-mapep tas-sors jiġu ġġenerati" },
   "optionDesc_noMinify": { "message": "Itfi l-minifikazzjoni tal-output CSS" },
   "optionDesc_noRecursion": { "message": "Itfi t-tiftix rekursiv tal-fajls" },
-  "optionDesc_copy": { "message": "Ikkopja CSS ikkompilata fil-klipbord minflok tikteb biex tiffajlja jekk jiġi pproċessat fajl b' sors wieħed" },
-  "optionDesc_relativeOutput": { "message": "Il-fajls tal-output meta mqabbla ma' kull fajl tas-sors minflok mal-għeruq tal-input" },
+  "optionDesc_copy": {
+    "message": "Ikkopja CSS ikkompilata fil-klipbord minflok tikteb biex tiffajlja jekk jiġi pproċessat fajl b' sors wieħed"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Il-fajls tal-output meta mqabbla ma' kull fajl tas-sors minflok mal-għeruq tal-input"
+  },
   "optionDesc_quiet": { "message": "Waqqaf il-logging kollu ħlief l-iżbalji" },
   "optionDesc_ignores": { "message": "Fajls/direttorji li għandhom jiġu esklużi mill-kompilazzjoni" },
   "optionDesc_commentMain": { "message": "Ipprepara l-kumment tal-intestatura għas-CSS ikkompilata" },

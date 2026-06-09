@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Villa við að lesa staðbundna pakkaútgáfu" },
   "error_notRecognized": { "message": "ekki viðurkennt" },
   "error_nonPositiveNum": { "message": "frumbreyta getur aðeins verið > 0" },
+  "error_requiresVal": { "message": "krefst gildis" },
   "error_invalidFilepath": { "message": "verður að vera gild skráarslóð sem þegar er til. Got" },
   "error_invalidLangCode": { "message": "er ógildur tungumálakóði" },
   "error_invalidURL": { "message": "Ógild slóð" },
@@ -55,17 +56,23 @@
   "helpSection_params": { "message": "Valkostir færibreytna" },
   "helpSection_cmds": { "message": "Upplýsingaskipanir" },
   "optionDesc_uiLang": { "message": "ISO 639-1 kóði tungumáls til að sýna notendaviðmót í" },
-  "inputPathDesc_main": { "message": "Slóð að JavaScript skrá eða möppu sem inniheldur JavaScript skrár sem á að smána" },
+  "inputPathDesc_main": {
+    "message": "Slóð að JavaScript skrá eða möppu sem inniheldur JavaScript skrár sem á að smána"
+  },
   "inputPathDesc_extra": { "message": "miðað við núverandi vinnumöppu" },
   "outputPathDesc_main": { "message": "Slóð að skrá eða möppu þar sem minified skrár verða geymdar" },
-  "outputPathDesc_extra": { "message": "miðað við upprunalega staðsetningu skráar (ef það er ekki gefið upp er min/ is notað)" },
+  "outputPathDesc_extra": {
+    "message": "miðað við upprunalega staðsetningu skráar (ef það er ekki gefið upp er min/ is notað)"
+  },
   "optionDesc_dryRun": { "message": "Ekki smækka skrána eða skrárnar í raun, sýndu bara hvort unnið verði úr þeim" },
   "optionDesc_dotfolders": { "message": "Hafa punktamöppur með í skráaleit" },
   "optionDesc_dotfiles": { "message": "Hafa punkta í skráaleit" },
   "optionDesc_noRecursion": { "message": "Afvirkja endurtekna skráaleit" },
   "optionDesc_noMangle": { "message": "Afvirkja slöngunöfn" },
   "optionDesc_noFilenameChange": { "message": "Afvirkja breytingu á skráarendingu til .min.js" },
-  "optionDesc_copy": { "message": "Afritaðu minified kóða á klemmuspjald í stað þess að skrifa til að skrá ef unnið er úr einni frumskrá" },
+  "optionDesc_copy": {
+    "message": "Afritaðu minified kóða á klemmuspjald í stað þess að skrifa til að skrá ef unnið er úr einni frumskrá"
+  },
   "optionDesc_relativeOutput": { "message": "Úttaksskrár tengdar hverri frumskrá í stað inntaksrótar" },
   "optionDesc_rewriteImports": { "message": "Uppfærðu innflutningsleiðir frá .js til .min.js" },
   "optionDesc_quiet": { "message": "Slökkva á öllum innskráningum nema villum" },

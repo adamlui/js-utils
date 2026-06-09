@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "טעות ביי לייענען לאקאלע פעקעדזש ווערסיע" },
   "error_notRecognized": { "message": "נישט דערקענט" },
   "error_nonPositiveNum": { "message": "אַרגומענט קען נאָר זײַן > 0" },
+  "error_requiresVal": { "message": "פארלאנגט א ווערט" },
   "error_invalidFilepath": { "message": "מוז זיין א גילטיגע עקזיסטירנדע טעקע דרך. באקומען" },
   "error_invalidLangCode": { "message": "איז אַן אומגילטיקער שפּראַך קאָד" },
   "error_invalidURL": { "message": "אומגילטיקע URL" },
@@ -65,8 +66,12 @@
   "optionDesc_noSourceMaps": { "message": "פאַרהיטן קוואַל מאַפּעס פון ווערן דזשענערירט" },
   "optionDesc_noMinify": { "message": "דיאַקטיווירן מיניפיקאַציע פון ​​רעזולטאַט CSS" },
   "optionDesc_noRecursion": { "message": "דיאַקטיווירן רעקורסיוו טעקע זוכן" },
-  "optionDesc_copy": { "message": "קאפירן קאמפיילירטע CSS צום קליפּבאָרד אַנשטאָט שרייבן צו טעקע אויב איין-קוואַל טעקע ווערט פּראַסעסט" },
-  "optionDesc_relativeOutput": { "message": "ארויסגעבן טעקעס אין באַצוג צו יעדער מקור טעקע אַנשטאָט צו אַרייַנשרייַבן וואָרצל" },
+  "optionDesc_copy": {
+    "message": "קאפירן קאמפיילירטע CSS צום קליפּבאָרד אַנשטאָט שרייבן צו טעקע אויב איין-קוואַל טעקע ווערט פּראַסעסט"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "ארויסגעבן טעקעס אין באַצוג צו יעדער מקור טעקע אַנשטאָט צו אַרייַנשרייַבן וואָרצל"
+  },
   "optionDesc_quiet": { "message": "אונטערדריקן אלע לאגינג אחוץ ערראָרס" },
   "optionDesc_ignores": { "message": "טעקעס/דירעקטאָריעס צו אויסשליסן פון קאָמפּילאַציע" },
   "optionDesc_commentMain": { "message": "לייג צו קעפל קאמענטאר צום קאמפיילירטן CSS" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Chyba pri čítaní lokálnej verzie balíka" },
   "error_notRecognized": { "message": "Kód nebol rozpoznaný" },
   "error_nonPositiveNum": { "message": "argument môže byť iba > 0" },
+  "error_requiresVal": { "message": "vyžaduje hodnotu" },
   "error_invalidFilepath": { "message": "musí byť platná existujúca cesta k súboru. Mám" },
   "error_invalidLangCode": { "message": "je neplatný jazykový kód" },
   "error_invalidURL": { "message": "Neplatná adresa URL" },
@@ -56,7 +57,9 @@
   "helpSection_params": { "message": "Možnosti parametrov" },
   "helpSection_cmds": { "message": "Príkazy" },
   "optionDesc_uiLang": { "message": "Kód jazyka ISO 639-1, v ktorom sa má zobraziť používateľské rozhranie" },
-  "inputPathDesc_main": { "message": "Cesta k súboru SCSS alebo adresáru obsahujúcemu súbory SCSS, ktoré sa majú kompilovať" },
+  "inputPathDesc_main": {
+    "message": "Cesta k súboru SCSS alebo adresáru obsahujúcemu súbory SCSS, ktoré sa majú kompilovať"
+  },
   "inputPathDesc_extra": { "message": "vo vzťahu k aktuálnemu pracovnému adresáru" },
   "outputPathDesc_main": { "message": "Cesta k súboru alebo adresáru, kde budú uložené súbory CSS + sourcemap" },
   "outputPathDesc_extra": { "message": "vzhľadom na vstupný koreň (ak nie je zadaný, použije sa css/)" },
@@ -65,8 +68,12 @@
   "optionDesc_noSourceMaps": { "message": "Zabrániť generovaniu zdrojových máp" },
   "optionDesc_noMinify": { "message": "Zakázať minifikáciu výstupného CSS" },
   "optionDesc_noRecursion": { "message": "Zakázať rekurzívne vyhľadávanie súborov" },
-  "optionDesc_copy": { "message": "Kopírovať skompilované CSS do schránky namiesto zápisu do súboru, ak sa spracováva jeden zdrojový súbor" },
-  "optionDesc_relativeOutput": { "message": "Výstupné súbory relatívne ku každému zdrojovému súboru namiesto vstupu root" },
+  "optionDesc_copy": {
+    "message": "Kopírovať skompilované CSS do schránky namiesto zápisu do súboru, ak sa spracováva jeden zdrojový súbor"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Výstupné súbory relatívne ku každému zdrojovému súboru namiesto vstupu root"
+  },
   "optionDesc_quiet": { "message": "Potlačiť všetky protokoly okrem chýb" },
   "optionDesc_ignores": { "message": "Súbory/adresáre, ktoré sa majú vylúčiť z kompilácie" },
   "optionDesc_commentMain": { "message": "Predložiť komentár hlavičky k zostavenému CSS" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Aconteceu un erro ao ler a versión do paquete local" },
   "error_notRecognized": { "message": "non recoñecidos" },
   "error_nonPositiveNum": { "message": "argumento só pode ser > 0" },
+  "error_requiresVal": { "message": "require un valor" },
   "error_invalidFilepath": { "message": "debe ser unha rota de ficheiros válida. Obtívose" },
   "error_invalidLangCode": { "message": "é un código de idioma non válido" },
   "error_invalidURL": { "message": "O URL non é válido" },
@@ -36,7 +37,9 @@
   "info_copyingToClip": { "message": "Copiando para o portarretallos" },
   "info_writing": { "message": "A escribir no ficheiro" },
   "info_compilationComplete": { "message": "Compilación completa" },
-  "info_file": { "message": "FicheiroIncompatible database driver&apos; s \"% 1\" version: found version% 2, expected version% 3.% 1.% 2% 1.% 2" },
+  "info_file": {
+    "message": "FicheiroIncompatible database driver&apos; s \"% 1\" version: found version% 2, expected version% 3.% 1.% 2% 1.% 2"
+  },
   "info_srcMap": { "message": "mapa fonte" },
   "info_generated": { "message": "xerado" },
   "info_noSCSSfilesProcessed": { "message": "Non hai ficheiros SCSS procesados" },
@@ -58,15 +61,21 @@
   "optionDesc_uiLang": { "message": "ISO 639-1 código de idioma para mostrar UI en" },
   "inputPathDesc_main": { "message": "Rota ao ficheiro SCSS ou directorio que contén ficheiros SCSS a compilar" },
   "inputPathDesc_extra": { "message": "relativo ao directorio de traballo actual" },
-  "outputPathDesc_main": { "message": "Camiño ao ficheiro ou directorio onde se almacenarán os ficheiros CSS+sourcemap" },
+  "outputPathDesc_main": {
+    "message": "Camiño ao ficheiro ou directorio onde se almacenarán os ficheiros CSS+sourcemap"
+  },
   "outputPathDesc_extra": { "message": "relativo a raíz de entrada (si no se proporciona, se utiliza css/" },
   "optionDesc_dryRun": { "message": "Non compilar o (s) ficheiro(s), só mostrar se serán procesados" },
   "optionDesc_dotfolders": { "message": "Incluír cartafoles de puntos na procura de ficheiros" },
   "optionDesc_noSourceMaps": { "message": "Impedir que se xeren mapas fonte" },
   "optionDesc_noMinify": { "message": "Desactivar a minificación do CSS de saída" },
   "optionDesc_noRecursion": { "message": "Desactivar a procura recursiva de ficheiros" },
-  "optionDesc_copy": { "message": "Copiar o CSS compilado no portarretallos no canto de escribir no ficheiro se se procesa un único ficheiro de orixe" },
-  "optionDesc_relativeOutput": { "message": "Saír ficheiros en relación a cada ficheiro de orixe en lugar de introducir a raíz" },
+  "optionDesc_copy": {
+    "message": "Copiar o CSS compilado no portarretallos no canto de escribir no ficheiro se se procesa un único ficheiro de orixe"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Saír ficheiros en relación a cada ficheiro de orixe en lugar de introducir a raíz"
+  },
   "optionDesc_quiet": { "message": "Suprimir todo o rexistro agás erros" },
   "optionDesc_ignores": { "message": "Ficheiros/directorios para excluír da compilación" },
   "optionDesc_commentMain": { "message": "Engadir un comentario de cabeceira a CSS compilado" },

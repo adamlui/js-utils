@@ -6,9 +6,12 @@
   "error_readingLocalPkgVer": { "message": "Impazamo yokufunda uhlobo lwephakheji yasekuhlaleni" },
   "error_notRecognized": { "message": "ayibonakali" },
   "error_nonPositiveNum": { "message": "impikiswano inokuba > 0 kuphela" },
+  "error_requiresVal": { "message": "ifuna ixabiso" },
   "error_invalidFilepath": { "message": "kufuneka ibe yindlela efanelekileyo yefayile ekhoyo. Ufumene" },
   "error_invalidLangCode": { "message": "yikhowudi yolwimi engachananga" },
-  "error_invalidURL": { "message": "Amagama efayile aceliweyo% 1 ayikhangeleki isebenza kum. Qinisekisa ukuba igama lefayile livalelwe kuchaphulo olu phindwe kabini" },
+  "error_invalidURL": {
+    "message": "Amagama efayile aceliweyo% 1 ayikhangeleki isebenza kum. Qinisekisa ukuba igama lefayile livalelwe kuchaphulo olu phindwe kabini"
+  },
   "error_invalidConfigFile": { "message": "Qwalasela ifayile kufuneka ithumele into" },
   "error_invalidKey": { "message": "Isitshixo asichananga" },
   "error_foundIn": { "message": "ifunyenwe kwi" },
@@ -17,7 +20,9 @@
   "error_failedToFetchGlobalVer": { "message": "Ayikwazanga ukufumana inguqulelo yomhlaba wonke" },
   "error_failedToFetchSysLang": { "message": "Ayiphumelelanga ukukhangela ulwimi lwenkqubo" },
   "error_mustIncludePath": { "message": "kufuneka iquke =indlela" },
-  "error_firstArgNotExist": { "message": "Impikiswano yokuqala inokuba yifayile okanye uvimba weefayili okhoyo kuphela" },
+  "error_firstArgNotExist": {
+    "message": "Impikiswano yokuqala inokuba yifayile okanye uvimba weefayili okhoyo kuphela"
+  },
   "error_doesNotExist": { "message": "ayikho" },
   "warn_configFileExists": { "message": "Lungisa ifayile sele ikhona" },
   "warn_docLocalesFetchFailed": { "message": "Ayiphumelelanga ukukhangela ii-doc locales" },
@@ -36,7 +41,9 @@
   "info_copyingToClip": { "message": "ikhuphela kwibhodi eqhotyoshwayo" },
   "info_writing": { "message": "Ukubhalela kwifayile" },
   "info_minComplete": { "message": "Ukunciphisa kugqityiwe" },
-  "info_file": { "message": "Incompatible database driver&apos; s \"% 1\" version: found version% 2, expected version% 3.% 1.% 2% 1.% 2" },
+  "info_file": {
+    "message": "Incompatible database driver&apos; s \"% 1\" version: found version% 2, expected version% 3.% 1.% 2% 1.% 2"
+  },
   "info_minified": { "message": "incitshisiwe" },
   "info_noFilesProcessed": { "message": "Akukho fayile yeJavaScript engagqitywanga" },
   "info_failedToMinify": { "message": "ayiphumelelanga ukunciphisa" },
@@ -55,18 +62,28 @@
   "helpSection_params": { "message": "Iiparamitha onokukhetha kuzo" },
   "helpSection_cmds": { "message": "Imiyalelo yenkcazelo" },
   "optionDesc_uiLang": { "message": "Ikhowudi yolwimi ye-ISO 639-1 yokubonisa i-UI" },
-  "inputPathDesc_main": { "message": "Indlela eya kwifayile yeJavaScript okanye kulawulo oluneefayile zeJavaScript eziza kulungiswa" },
+  "inputPathDesc_main": {
+    "message": "Indlela eya kwifayile yeJavaScript okanye kulawulo oluneefayile zeJavaScript eziza kulungiswa"
+  },
   "inputPathDesc_extra": { "message": "ngokunxulumene neefayili zokusebenza ezikhoyo ngoku" },
-  "outputPathDesc_main": { "message": "Indlela eya kwifayile okanye kulawulo apho iifayile ezincitshisiweyo ziza kugcinwa khona" },
-  "outputPathDesc_extra": { "message": "ngokunxulumene nendawo ekuyo ifayile yokuqala (ukuba ayinikezwanga, min/ isetyenzisiwe)" },
+  "outputPathDesc_main": {
+    "message": "Indlela eya kwifayile okanye kulawulo apho iifayile ezincitshisiweyo ziza kugcinwa khona"
+  },
+  "outputPathDesc_extra": {
+    "message": "ngokunxulumene nendawo ekuyo ifayile yokuqala (ukuba ayinikezwanga, min/ isetyenzisiwe)"
+  },
   "optionDesc_dryRun": { "message": "Sukuzinciphisa iifayile, vele ubonise ukuba ziza kuhoywa na" },
   "optionDesc_dotfolders": { "message": "Faka iifolda zamachaphaza xa kukhangelwa iifayile" },
   "optionDesc_dotfiles": { "message": "Faka iifayile zamachaphaza xa kukhangelwa iifayile" },
   "optionDesc_noRecursion": { "message": "Vala ukukhangela kwakhona ifayile" },
   "optionDesc_noMangle": { "message": "Vala amagama okungcola" },
   "optionDesc_noFilenameChange": { "message": "Vala ukutshintsha ukongezwa kwefayile kwi .min.js" },
-  "optionDesc_copy": { "message": "Khuphela ikhowudi encitshisiweyo kwibhodi yekliphu endaweni yokubhala kwifayile ukuba ifayile enye yemvelaphi iyaqhubekeka" },
-  "optionDesc_relativeOutput": { "message": "Iifayile zemveliso ezinxulumene nefayile nganye yomthombo endaweni yokufaka ingcambu" },
+  "optionDesc_copy": {
+    "message": "Khuphela ikhowudi encitshisiweyo kwibhodi yekliphu endaweni yokubhala kwifayile ukuba ifayile enye yemvelaphi iyaqhubekeka"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Iifayile zemveliso ezinxulumene nefayile nganye yomthombo endaweni yokufaka ingcambu"
+  },
   "optionDesc_rewriteImports": { "message": "Hlaziya iindlela zokungenisa ukusuka kwi-.js ukuya ku-.min.js" },
   "optionDesc_quiet": { "message": "Cima konke ukungena ngaphandle kweempazamo" },
   "optionDesc_ignores": { "message": "Iifayile/izalathisi zokungafaki kwisicatshulwa" },

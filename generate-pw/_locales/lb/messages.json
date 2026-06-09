@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Feeler beim Liesen vun der lokaler Paketeversioun" },
   "error_notRecognized": { "message": "net unerkannt" },
   "error_nonPositiveNum": { "message": "D'Argument kann nëmme méi wéi 0 sinn" },
+  "error_requiresVal": { "message": "den Wert nötig" },
   "error_invalidFilepath": { "message": "muss e gültege existente Fichier Wee sinn. krut" },
   "error_invalidLangCode": { "message": "i am an Invalid Code" },
   "error_invalidURL": { "message": "InvalidCA" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Ënnerierdesch Buschtawen am Passwuert(en) ofsetzen" },
   "optionDesc_noUpper": { "message": "Uewerkuer Bréiwer am Passwuert(en) ofsetzen" },
   "optionDesc_similarChars": { "message": "Ähnlech Zeechen am Passwuert(en) enthalen" },
-  "optionDesc_unstrict": { "message": "Et brauch een net mindestens ee Charakter aus all zoulässege Charakter, deen am Passwuert(en) gesat gëtt" },
+  "optionDesc_unstrict": {
+    "message": "Et brauch een net mindestens ee Charakter aus all zoulässege Charakter, deen am Passwuert(en) gesat gëtt"
+  },
   "optionDesc_noEntropy": { "message": "Net berechnen/loggen geschätzte Entropie" },
   "optionDesc_quiet": { "message": "Ënnerdréckt all Umeldung ausser Feeler" },
   "optionDesc_help": { "message": "Hëllefsbildschierm uweisen" },

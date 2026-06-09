@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "خطأ في قراءة إصدار الحزمة المحلية" },
   "error_notRecognized": { "message": "غير معترف بها" },
   "error_nonPositiveNum": { "message": "يمكن أن تكون الوسيطة > 0 فقط" },
+  "error_requiresVal": { "message": "تتطلب قيمة" },
   "error_invalidFilepath": { "message": "يجب أن يكون مسار ملف موجود صالح. حصلت" },
   "error_invalidLangCode": { "message": "هو رمز لغة غير صالح" },
   "error_invalidURL": { "message": "الرابط غير صحيح" },
@@ -55,17 +56,25 @@
   "helpSection_params": { "message": "خيارات المتغير" },
   "helpSection_cmds": { "message": "أوامر المعلومات" },
   "optionDesc_uiLang": { "message": "رمز لغة ISO 639-1 لعرض واجهة المستخدم في" },
-  "inputPathDesc_main": { "message": "المسار إلى ملف أو دليل جافا سكريبت الذي يحتوي على ملفات جافا سكريبت المراد تصغيرها" },
+  "inputPathDesc_main": {
+    "message": "المسار إلى ملف أو دليل جافا سكريبت الذي يحتوي على ملفات جافا سكريبت المراد تصغيرها"
+  },
   "inputPathDesc_extra": { "message": "نسبة إلى دليل العمل الحالي" },
   "outputPathDesc_main": { "message": "المسار إلى الملف أو الدليل حيث سيتم تخزين الملفات المصغرة" },
-  "outputPathDesc_extra": { "message": "بالنسبة إلى موقع الملف الأصلي (إذا لم يتم توفيره، يتم استخدام الحد الأدنى/الحد الأدنى)" },
-  "optionDesc_dryRun": { "message": "لا تقم في الواقع بتصغير الملف(الملفات)، ما عليك سوى إظهار ما إذا كانت ستتم معالجتها" },
+  "outputPathDesc_extra": {
+    "message": "بالنسبة إلى موقع الملف الأصلي (إذا لم يتم توفيره، يتم استخدام الحد الأدنى/الحد الأدنى)"
+  },
+  "optionDesc_dryRun": {
+    "message": "لا تقم في الواقع بتصغير الملف(الملفات)، ما عليك سوى إظهار ما إذا كانت ستتم معالجتها"
+  },
   "optionDesc_dotfolders": { "message": "تضمين مجلدات نقطية في البحث عن الملفات" },
   "optionDesc_dotfiles": { "message": "تضمين الملفات النقطية في البحث عن الملفات" },
   "optionDesc_noRecursion": { "message": "تعطيل البحث المتكرر عن الملفات" },
   "optionDesc_noMangle": { "message": "تعطيل أسماء التشويش" },
   "optionDesc_noFilenameChange": { "message": "تعطيل تغيير امتداد الملف إلى .min.js" },
-  "optionDesc_copy": { "message": "انسخ الرمز المصغر إلى الحافظة بدلاً من الكتابة إلى الملف إذا تمت معالجة ملف مصدر واحد" },
+  "optionDesc_copy": {
+    "message": "انسخ الرمز المصغر إلى الحافظة بدلاً من الكتابة إلى الملف إذا تمت معالجة ملف مصدر واحد"
+  },
   "optionDesc_relativeOutput": { "message": "ملفات الإخراج المتعلقة بكل ملف مصدر بدلاً من جذر الإدخال" },
   "optionDesc_rewriteImports": { "message": "تحديث مسارات الاستيراد من .js إلى .min.js" },
   "optionDesc_quiet": { "message": "قم بإيقاف جميع عمليات التسجيل باستثناء الأخطاء" },

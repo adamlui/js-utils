@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Iphutha ekufundeni uhlelo lwephakeji lendawo" },
   "error_notRecognized": { "message": "akuqashelwa" },
   "error_nonPositiveNum": { "message": "impikiswano ingaba > 0 kuphela" },
+  "error_requiresVal": { "message": "kudinga inani" },
   "error_invalidFilepath": { "message": "kumele kube yindlela yefayela evumelekile ekhona. Got" },
   "error_invalidLangCode": { "message": "iyikhodi yolimi engavumelekile" },
   "error_invalidURL": { "message": "I-URL engavumelekile" },
@@ -55,18 +56,26 @@
   "helpSection_params": { "message": "Izinketho zepharamitha" },
   "helpSection_cmds": { "message": "Imiyalo yemininingwane" },
   "optionDesc_uiLang": { "message": "Ikhodi yolimi ye-ISO 639-1 yokubonisa i-UI ku-" },
-  "inputPathDesc_main": { "message": "Indlela eya kufayela le-JavaScript noma enkombeni equkethe amafayela e-JavaScript okumele alinganiselwe" },
+  "inputPathDesc_main": {
+    "message": "Indlela eya kufayela le-JavaScript noma enkombeni equkethe amafayela e-JavaScript okumele alinganiselwe"
+  },
   "inputPathDesc_extra": { "message": "maqondana nesiqondisi sokusebenza samanje" },
   "outputPathDesc_main": { "message": "Indlela eya kufayela noma enkombeni lapho amafayela amancane azogcinwa khona" },
-  "outputPathDesc_extra": { "message": "maqondana nendawo yefayela yasekuqaleni (uma inganikezwanga, min/ isetshenziswa)" },
+  "outputPathDesc_extra": {
+    "message": "maqondana nendawo yefayela yasekuqaleni (uma inganikezwanga, min/ isetshenziswa)"
+  },
   "optionDesc_dryRun": { "message": "Ungawanciphisi ngempela amafayela, vele ubonise ukuthi azocutshungulwa yini" },
   "optionDesc_dotfolders": { "message": "Faka amafolda amachashazi kusesho lwefayela" },
   "optionDesc_dotfiles": { "message": "Faka amachashazi osesho lwefayela" },
   "optionDesc_noRecursion": { "message": "Vala ukusesha kwefayela okuphindayo" },
   "optionDesc_noMangle": { "message": "Vala amagama ahlabayo" },
   "optionDesc_noFilenameChange": { "message": "Vala ukushintsha isandiso sefayela sibe .min.js" },
-  "optionDesc_copy": { "message": "Kopisha ikhodi encishisiwe ebhodini lokunamathisela esikhundleni sokubhalela ifayela uma ifayela lomthombo owodwa liphroseswa" },
-  "optionDesc_relativeOutput": { "message": "Amafayela okukhipha ahlobene nefayela ngalinye lomthombo esikhundleni sokufaka impande" },
+  "optionDesc_copy": {
+    "message": "Kopisha ikhodi encishisiwe ebhodini lokunamathisela esikhundleni sokubhalela ifayela uma ifayela lomthombo owodwa liphroseswa"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Amafayela okukhipha ahlobene nefayela ngalinye lomthombo esikhundleni sokufaka impande"
+  },
   "optionDesc_rewriteImports": { "message": "Buyekeza izindlela zokungenisa kusuka ku-.js kuya ku-.min.js" },
   "optionDesc_quiet": { "message": "Cindezela konke ukungena ngemvume ngaphandle kwamaphutha" },
   "optionDesc_ignores": { "message": "Amafayela/izinkomba ukuze ungabandakanyi ekunciphiseni" },

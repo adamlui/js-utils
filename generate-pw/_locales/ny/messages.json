@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Kulakwitsa kuwerenga phukusi la m 'deralo" },
   "error_notRecognized": { "message": "osadziwika" },
   "error_nonPositiveNum": { "message": "kutsutsana kungakhale kokha > 0" },
+  "error_requiresVal": { "message": "amafunika mtengo" },
   "error_invalidFilepath": { "message": "ayenera kukhala ovomerezeka alipo wapamwamba njira. Got" },
   "error_invalidLangCode": { "message": "ndi malamulo a chilankhulo chopanda pake" },
   "error_invalidURL": { "message": "Lumikizanani nafe" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Sungunulani zilembo zazing 'ono mu mawu achinsinsi(s)" },
   "optionDesc_noUpper": { "message": "Sakanizani zilembo zapamwamba mu mawu achinsinsi(s)" },
   "optionDesc_similarChars": { "message": "Phatikizani zilembo zofanana mu mawu achinsinsi(s)" },
-  "optionDesc_unstrict": { "message": "Musati amafuna osachepera munthu mmodzi aliyense amaloledwa khalidwe anapereka achinsinsi(s)" },
+  "optionDesc_unstrict": {
+    "message": "Musati amafuna osachepera munthu mmodzi aliyense amaloledwa khalidwe anapereka achinsinsi(s)"
+  },
   "optionDesc_noEntropy": { "message": "Musamawerenge/log kuyerekezera entropy" },
   "optionDesc_quiet": { "message": "Kupondereza mitengo yonse kupatula zolakwika" },
   "optionDesc_help": { "message": "Onetsani zenera lothandizira" },

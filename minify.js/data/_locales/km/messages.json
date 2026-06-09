@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "កំហុស ក្នុង ការ អាន កំណែ កញ្ចប់ មូលដ្ឋាន" },
   "error_notRecognized": { "message": "មិនត្រឹមត្រូវ" },
   "error_nonPositiveNum": { "message": "អាគុយម៉ង់អាចមានតែ > 0" },
+  "error_requiresVal": { "message": "តម្រូវឱ្យមានតម្លៃ" },
   "error_invalidFilepath": { "message": "ត្រូវ តែ ជា ផ្លូវ ឯកសារ ដែល មាន សុពលភាព & # 160; ។ Got" },
   "error_invalidLangCode": { "message": "គឺជាលេខកូដភាសាដែលមិនត្រឹមត្រូវ" },
   "error_invalidURL": { "message": "URL មិនត្រឹមត្រូវ" },
@@ -59,13 +60,17 @@
   "inputPathDesc_extra": { "message": "ទាក់ទងនឹងថតការងារបច្ចុប្បន្ន" },
   "outputPathDesc_main": { "message": "ផ្លូវ ទៅ ឯកសារ ឬ ថត ដែល ឯកសារ អប្បបរមា នឹង ត្រូវ បាន ទុក" },
   "outputPathDesc_extra": { "message": "ទាក់ទងនឹងទីតាំងឯកសារដើម (ប្រសិនបើមិនបានផ្តល់អប្បបរមា/ ត្រូវបានប្រើ)" },
-  "optionDesc_dryRun": { "message": "កុំ ធ្វើ ឲ្យ ឯកសារ តូច បំផុត នោះ ទេ គ្រាន់ តែ បង្ហាញ ថា តើ វា នឹង ត្រូវ ដំណើរការ ឬ យ៉ាង ណា" },
+  "optionDesc_dryRun": {
+    "message": "កុំ ធ្វើ ឲ្យ ឯកសារ តូច បំផុត នោះ ទេ គ្រាន់ តែ បង្ហាញ ថា តើ វា នឹង ត្រូវ ដំណើរការ ឬ យ៉ាង ណា"
+  },
   "optionDesc_dotfolders": { "message": "រួម បញ្ចូល ថត dotfolder ក្នុង ការ ស្វែងរក ឯកសារ" },
   "optionDesc_dotfiles": { "message": "រួមបញ្ចូលឯកសារ dotfiles ក្នុងការស្វែងរកឯកសារ" },
   "optionDesc_noRecursion": { "message": "បិទការស្វែងរកឯកសារហៅឡើងវិញ" },
   "optionDesc_noMangle": { "message": "មិនអនុញ្ញាតឲ្យមានឈ្មោះបោកបញ្ឆោត" },
   "optionDesc_noFilenameChange": { "message": "បិទការផ្លាស់ប្តូរកន្ទុយឯកសារទៅ .min.js" },
-  "optionDesc_copy": { "message": "ចម្លង កូដ តូច ទៅ ក្ដារ តម្បៀត ខ្ទាស់ ជំនួស ឲ្យ ការ សរសេរ ទៅ ឯកសារ ប្រសិន បើ ឯកសារ ប្រភព តែ មួយ ត្រូវ បាន ដំណើរការ" },
+  "optionDesc_copy": {
+    "message": "ចម្លង កូដ តូច ទៅ ក្ដារ តម្បៀត ខ្ទាស់ ជំនួស ឲ្យ ការ សរសេរ ទៅ ឯកសារ ប្រសិន បើ ឯកសារ ប្រភព តែ មួយ ត្រូវ បាន ដំណើរការ"
+  },
   "optionDesc_relativeOutput": { "message": "ឯកសារ លទ្ធផល ទាក់ទង នឹង ឯកសារ ប្រភព នីមួយៗ ជំនួស ឲ្យ ការ បញ្ចូល root" },
   "optionDesc_rewriteImports": { "message": "អាប់ដេតផ្លូវនាំចូលពី .js ទៅ .min.js" },
   "optionDesc_quiet": { "message": "បង្ក្រាបការកាប់ឈើទាំងអស់លើកលែងតែកំហុស" },

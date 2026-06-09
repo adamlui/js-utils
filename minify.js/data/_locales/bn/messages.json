@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "স্থানীয় প্যাকেজ সংস্করণ পড়তে ত্রুটি" },
   "error_notRecognized": { "message": "স্বীকৃত নয়" },
   "error_nonPositiveNum": { "message": "যুক্তি শুধুমাত্র হতে পারে > 0" },
+  "error_requiresVal": { "message": "একটি মান প্রয়োজন" },
   "error_invalidFilepath": { "message": "অবশ্যই একটি বৈধ বিদ্যমান ফাইল পাথ হতে হবে । পেয়েছেন" },
   "error_invalidLangCode": { "message": "একটি অবৈধ ভাষা কোড" },
   "error_invalidURL": { "message": "অবৈধ ইউ- আর- এল" },
@@ -55,17 +56,23 @@
   "helpSection_params": { "message": "প্যারামিটার বিকল্প" },
   "helpSection_cmds": { "message": "তথ্য কমান্ড" },
   "optionDesc_uiLang": { "message": "UI প্রদর্শনের জন্য ISO 639-1 ভাষার কোড" },
-  "inputPathDesc_main": { "message": "জাভাস্ক্রিপ্ট ফাইল বা ডিরেক্টরির পাথ যা জাভাস্ক্রিপ্ট ফাইল ধারণ করে তা minified করা হবে" },
+  "inputPathDesc_main": {
+    "message": "জাভাস্ক্রিপ্ট ফাইল বা ডিরেক্টরির পাথ যা জাভাস্ক্রিপ্ট ফাইল ধারণ করে তা minified করা হবে"
+  },
   "inputPathDesc_extra": { "message": "বর্তমান ওয়ার্কিং ডিরেক্টরির সাথে সম্পর্কিত" },
   "outputPathDesc_main": { "message": "ফাইল বা ডিরেক্টরির পাথ যেখানে minified ফাইল সংরক্ষণ করা হবে" },
-  "outputPathDesc_extra": { "message": "মূল ফাইলের অবস্থানের সাথে সম্পর্কিত (যদি প্রদান না করা হয়, মিনিট/ব্যবহার করা হয়)" },
+  "outputPathDesc_extra": {
+    "message": "মূল ফাইলের অবস্থানের সাথে সম্পর্কিত (যদি প্রদান না করা হয়, মিনিট/ব্যবহার করা হয়)"
+  },
   "optionDesc_dryRun": { "message": "আসলে ফাইল(গুলি) মিনিফাই করবেন না, কেবল তাদের প্রক্রিয়া করা হবে কিনা তা দেখান" },
   "optionDesc_dotfolders": { "message": "ফাইল অনুসন্ধানে ডটফোল্ডার অন্তর্ভুক্ত করুন" },
   "optionDesc_dotfiles": { "message": "ফাইল অনুসন্ধানে ডট ফাইল অন্তর্ভুক্ত করুন" },
   "optionDesc_noRecursion": { "message": "পুনরাবৃত্তিমূলক ফাইল অনুসন্ধান অক্ষম করুন" },
   "optionDesc_noMangle": { "message": "ম্যানগ্লিং নামগুলি অক্ষম করুন" },
   "optionDesc_noFilenameChange": { "message": ".min.js এ ফাইল এক্সটেনশান পরিবর্তন করা অক্ষম করুন" },
-  "optionDesc_copy": { "message": "একক উত্স ফাইল প্রক্রিয়া করা হলে ফাইলে লেখার পরিবর্তে মিনিফাইড কোডটি ক্লিপবোর্ডে অনুলিপি করুন" },
+  "optionDesc_copy": {
+    "message": "একক উত্স ফাইল প্রক্রিয়া করা হলে ফাইলে লেখার পরিবর্তে মিনিফাইড কোডটি ক্লিপবোর্ডে অনুলিপি করুন"
+  },
   "optionDesc_relativeOutput": { "message": "ইনপুট রুটের পরিবর্তে প্রতিটি উত্স ফাইলের সাথে সম্পর্কিত আউটপুট ফাইল" },
   "optionDesc_rewriteImports": { "message": ".js থেকে .min.js এ আমদানির পথ আপডেট করুন" },
   "optionDesc_quiet": { "message": "ত্রুটি ব্যতীত সমস্ত লগিং দমন করুন" },

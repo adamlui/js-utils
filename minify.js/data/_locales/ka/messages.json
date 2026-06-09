@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "შეცდომა ლოკალური პაკეტის ვერსიის წაკითხვისას მოხდა" },
   "error_notRecognized": { "message": "ფაილის ტიპი ამოუცნობია" },
   "error_nonPositiveNum": { "message": "არგუმენტი შეიძლება იყოს მხოლოდ > 0" },
+  "error_requiresVal": { "message": "მოითხოვს მნიშვნელობას" },
   "error_invalidFilepath": { "message": "უნდა იყოს სწორი არსებული ფაილის ბილიკი. მიღებული" },
   "error_invalidLangCode": { "message": "არასწორი ენის კოდია" },
   "error_invalidURL": { "message": "არასწორი URL" },
@@ -58,15 +59,21 @@
   "inputPathDesc_main": { "message": "Ბილიკი JavaScript ფაილამდე ან საქაღალდეში, რომელიც შეიცავს JavaScript ფაილებს" },
   "inputPathDesc_extra": { "message": "მიმდინარე სამუშაო საქაღალდესთან მიმართებაში" },
   "outputPathDesc_main": { "message": "Ბილიკი ფაილამდე ან საქაღალდეში, სადაც შენახული იქნება მინიფიცირებული ფაილები" },
-  "outputPathDesc_extra": { "message": "ფაილის თავდაპირველ ადგილმდებარეობასთან მიმართებაში (თუ არ არის მოწოდებული, მინ./გამოიყენება)" },
+  "outputPathDesc_extra": {
+    "message": "ფაილის თავდაპირველ ადგილმდებარეობასთან მიმართებაში (თუ არ არის მოწოდებული, მინ./გამოიყენება)"
+  },
   "optionDesc_dryRun": { "message": "Ფაქტობრივად, ნუ შეამცირებთ ფაილ(ებ) ს, უბრალოდ აჩვენეთ, დამუშავდება თუ არა ისინი" },
   "optionDesc_dotfolders": { "message": "Ფაილის ძებნაში წერტილოვანი საქაღალდეების ჩართვა" },
   "optionDesc_dotfiles": { "message": "Ფაილის ძებნაში წერტილოვანი ფაილების ჩართვა" },
   "optionDesc_noRecursion": { "message": "Რეკურსიული ფაილის ძებნის გამორთვა" },
   "optionDesc_noMangle": { "message": "Მანაქანის სახელების გამორთვა" },
   "optionDesc_noFilenameChange": { "message": "Გამორთეთ ფაილის გაფართოების შეცვლა .min.js-ზე" },
-  "optionDesc_copy": { "message": "Გადააკოპირეთ მინიფიცირებული კოდი გაცვლის ბუფერში და არა ჩაწერეთ ფაილში, თუ ერთი საწყისი ფაილი მუშავდება" },
-  "optionDesc_relativeOutput": { "message": "Გამოიტანეთ ფაილები თითოეული საწყისი ფაილის მიმართ, ნაცვლად root-ის შეყვანისა" },
+  "optionDesc_copy": {
+    "message": "Გადააკოპირეთ მინიფიცირებული კოდი გაცვლის ბუფერში და არა ჩაწერეთ ფაილში, თუ ერთი საწყისი ფაილი მუშავდება"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Გამოიტანეთ ფაილები თითოეული საწყისი ფაილის მიმართ, ნაცვლად root-ის შეყვანისა"
+  },
   "optionDesc_rewriteImports": { "message": "Განაახლეთ იმპორტის ბილიკები .js-დან .min.js-ზე" },
   "optionDesc_quiet": { "message": "ყველა ჟურნალის დაბლოკვა, შეცდომების გარდა" },
   "optionDesc_ignores": { "message": "Მინიფიკაციიდან გამოსარიცხი ფაილები/საქაღალდეები" },

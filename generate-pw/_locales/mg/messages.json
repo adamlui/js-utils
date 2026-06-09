@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Nisy olana teo am-pamakiana ny kinovan'ny fonosana an-toerana" },
   "error_notRecognized": { "message": "tsy fantatra" },
   "error_nonPositiveNum": { "message": "tsy misy fotoana… Tohiny" },
+  "error_requiresVal": { "message": "mitaky sanda" },
   "error_invalidFilepath": { "message": "tsy maintsy ho marina ny sori-dàlan'ny rakitra efa misy. Got" },
   "error_invalidLangCode": { "message": "dia tsy mety ny fehezan-dalàna momba ny fiteny" },
   "error_invalidURL": { "message": "URL diso" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Disallow smallcase litera in password(s)" },
   "optionDesc_noUpper": { "message": "Mamafa ireo taratasy lehibe amin'ny tenimiafina(s)" },
   "optionDesc_similarChars": { "message": "Ampidiro ao amin'ny tenimiafinany marika mitovy" },
-  "optionDesc_unstrict": { "message": "Tsy mitaky endri-tsoratra iray farafahakeliny avy amin'ny marika ekena tsirairay faritana amin'ny tenimiafina" },
+  "optionDesc_unstrict": {
+    "message": "Tsy mitaky endri-tsoratra iray farafahakeliny avy amin'ny marika ekena tsirairay faritana amin'ny tenimiafina"
+  },
   "optionDesc_noEntropy": { "message": "Aza kajy/vatan-kazo tombanana entropy" },
   "optionDesc_quiet": { "message": "Hanafoana ny logging rehetra afa-tsy fahadisoana" },
   "optionDesc_help": { "message": "Asehoy ny efijerin'ny toro-làlana" },

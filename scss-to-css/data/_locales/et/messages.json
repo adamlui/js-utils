@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Tõrge kohaliku paketi versiooni lugemisel" },
   "error_notRecognized": { "message": "Tundmatu fail" },
   "error_nonPositiveNum": { "message": "argument võib olla ainult > 0" },
+  "error_requiresVal": { "message": "nõuab väärtust" },
   "error_invalidFilepath": { "message": "peab olema kehtiv olemasolev failitee. Sain" },
   "error_invalidLangCode": { "message": "on kehtetu keelekood" },
   "error_invalidURL": { "message": "Kehtetu URL" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "Väldi lähtekaartide loomist" },
   "optionDesc_noMinify": { "message": "Keela väljundi CSS-i minimeerimine" },
   "optionDesc_noRecursion": { "message": "Keela rekursiivne failiotsing" },
-  "optionDesc_copy": { "message": "Kopeeri kompileeritud CSS lõikelauale, selle asemel et faili kirjutada, kui töödeldakse ühte lähtefaili" },
+  "optionDesc_copy": {
+    "message": "Kopeeri kompileeritud CSS lõikelauale, selle asemel et faili kirjutada, kui töödeldakse ühte lähtefaili"
+  },
   "optionDesc_relativeOutput": { "message": "Väljundfailid iga lähtefaili suhtes, selle asemel, et sisestada juurfail" },
   "optionDesc_quiet": { "message": "Tühista kogu logimine, välja arvatud vead" },
   "optionDesc_ignores": { "message": "Kompileerimisest väljajäetavad failid/kataloogid" },

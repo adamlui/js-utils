@@ -1,11 +1,14 @@
 {
-  "pkg_copyright": { "message": "© 2024 -2026 Ադամ Լուի և Մասաչուսեթսի տեխնոլոգիական ինստիտուտի (MIT) արտոնագրի ներքո ներդրումներ կատարողներ" },
+  "pkg_copyright": {
+    "message": "© 2024 -2026 Ադամ Լուի և Մասաչուսեթսի տեխնոլոգիական ինստիտուտի (MIT) արտոնագրի ներքո ներդրումներ կատարողներ"
+  },
   "prefix_globalVer": { "message": "Ընդհանուր տարբերակ" },
   "prefix_localVer": { "message": "Տեղական տարբերակ" },
   "prefix_source": { "message": "Ծագումը" },
   "error_readingLocalPkgVer": { "message": "Չհաջողվեց կարդալ տեղական փաթեթի տարբերակը" },
   "error_notRecognized": { "message": "ճանաչված չէ" },
   "error_nonPositiveNum": { "message": "փաստարկը կարող է լինել միայն > 0" },
+  "error_requiresVal": { "message": "պահանջում է արժեք" },
   "error_invalidFilepath": { "message": "պետք է լինի վավեր գոյություն ունեցող ֆայլի ուղի: Ստացվեց" },
   "error_invalidLangCode": { "message": "լեզվի անվավեր կոդ է" },
   "error_invalidURL": { "message": "Անվավեր URL" },
@@ -56,17 +59,27 @@
   "helpSection_params": { "message": "Պարամետրի տարբերակներ" },
   "helpSection_cmds": { "message": "Հրամաններ" },
   "optionDesc_uiLang": { "message": "ISO 639 -1 լեզվի կոդը UI - ում ցուցադրելու համար" },
-  "inputPathDesc_main": { "message": "Ուղի դեպի SCSS ֆայլ կամ գրացուցակ, որը պարունակում է SCSS ֆայլեր, որոնք պետք է կազմվեն" },
+  "inputPathDesc_main": {
+    "message": "Ուղի դեպի SCSS ֆայլ կամ գրացուցակ, որը պարունակում է SCSS ֆայլեր, որոնք պետք է կազմվեն"
+  },
   "inputPathDesc_extra": { "message": "ընթացիկ աշխատանքային գրացուցակի հետ կապված" },
-  "outputPathDesc_main": { "message": "Ճանապարհ դեպի ֆայլ կամ գրացուցակ, որտեղ պահվելու են CSS + աղբյուրի քարտեզի ֆայլերը" },
+  "outputPathDesc_main": {
+    "message": "Ճանապարհ դեպի ֆայլ կամ գրացուցակ, որտեղ պահվելու են CSS + աղբյուրի քարտեզի ֆայլերը"
+  },
   "outputPathDesc_extra": { "message": "մուտքային արմատից (եթե տրամադրված չէ, օգտագործվում է css /)" },
-  "optionDesc_dryRun": { "message": "Իրականում մի կազմեք ֆայլ(եր) ը, պարզապես ցույց տվեք, թե արդյոք դրանք մշակվելու են" },
+  "optionDesc_dryRun": {
+    "message": "Իրականում մի կազմեք ֆայլ(եր) ը, պարզապես ցույց տվեք, թե արդյոք դրանք մշակվելու են"
+  },
   "optionDesc_dotfolders": { "message": "Ներառեք կետային թղթապանակներ ֆայլի որոնման մեջ" },
   "optionDesc_noSourceMaps": { "message": "Կանխել աղբյուրի քարտեզների ստեղծումը" },
   "optionDesc_noMinify": { "message": "Անջատել ելքային CSS - ի minification - ը" },
   "optionDesc_noRecursion": { "message": "Անջատել ռեկուրսիվ ֆայլի որոնումը" },
-  "optionDesc_copy": { "message": "Կազմված CSS - ը պատճենեք ֆայլի համար գրելու փոխարեն, եթե մշակվում է մեկ աղբյուրի ֆայլ" },
-  "optionDesc_relativeOutput": { "message": "Մուտքագրեք ֆայլեր յուրաքանչյուր սկզբնաղբյուր ֆայլի համեմատությամբ ՝ արմատ մուտքագրելու փոխարեն" },
+  "optionDesc_copy": {
+    "message": "Կազմված CSS - ը պատճենեք ֆայլի համար գրելու փոխարեն, եթե մշակվում է մեկ աղբյուրի ֆայլ"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Մուտքագրեք ֆայլեր յուրաքանչյուր սկզբնաղբյուր ֆայլի համեմատությամբ ՝ արմատ մուտքագրելու փոխարեն"
+  },
   "optionDesc_quiet": { "message": "Սեղմեք բոլոր տեղեկամատյանները, բացի սխալներից" },
   "optionDesc_ignores": { "message": "Ֆայլեր/գրացուցակներ, որոնք պետք է բացառել կոմպիլյացիայից" },
   "optionDesc_commentMain": { "message": "Նախապատրաստեք վերնագրի մեկնաբանությունը կազմված CSS - ին" },

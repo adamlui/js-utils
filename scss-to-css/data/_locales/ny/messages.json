@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Kulakwitsa kuwerenga phukusi la m 'deralo" },
   "error_notRecognized": { "message": "osadziwika" },
   "error_nonPositiveNum": { "message": "kutsutsana kungakhale kokha > 0" },
+  "error_requiresVal": { "message": "amafunika mtengo" },
   "error_invalidFilepath": { "message": "ayenera kukhala ovomerezeka alipo wapamwamba njira. Got" },
   "error_invalidLangCode": { "message": "ndi malamulo a chilankhulo chopanda pake" },
   "error_invalidURL": { "message": "Lumikizanani nafe" },
@@ -56,17 +57,27 @@
   "helpSection_params": { "message": "Zosankha za Parameter" },
   "helpSection_cmds": { "message": "ZOKHUDZ" },
   "optionDesc_uiLang": { "message": "ISO 639-1 malamulo chilankhulo kusonyeza UI mu" },
-  "inputPathDesc_main": { "message": "Njira yopita ku fayilo ya SCSS kapena chikwatu chomwe chili ndi mafayilo a SCSS omwe ayenera kusonkhanitsidwa" },
+  "inputPathDesc_main": {
+    "message": "Njira yopita ku fayilo ya SCSS kapena chikwatu chomwe chili ndi mafayilo a SCSS omwe ayenera kusonkhanitsidwa"
+  },
   "inputPathDesc_extra": { "message": "wachibale ndi panopa ntchito kalozera" },
-  "outputPathDesc_main": { "message": "Njira yopita ku fayilo kapena chikwatu kumene mafayilo a CSS + sourcemap adzasungidwa" },
-  "outputPathDesc_extra": { "message": "zokhudzana ndi mizu yolowetsa (ngati sinaperekedwe, css/ imagwiritsidwa ntchito)" },
+  "outputPathDesc_main": {
+    "message": "Njira yopita ku fayilo kapena chikwatu kumene mafayilo a CSS + sourcemap adzasungidwa"
+  },
+  "outputPathDesc_extra": {
+    "message": "zokhudzana ndi mizu yolowetsa (ngati sinaperekedwe, css/ imagwiritsidwa ntchito)"
+  },
   "optionDesc_dryRun": { "message": "Osasonkhanitsa fayilo(s), ingowonetsani ngati zidzakonzedwa" },
   "optionDesc_dotfolders": { "message": "Phatikizani ma dotfolders pakufufuza mafayilo" },
   "optionDesc_noSourceMaps": { "message": "Pewani mapu a gwero kuti asapangidwe" },
   "optionDesc_noMinify": { "message": "Kulepheretsa minification wa linanena bungwe CSS" },
   "optionDesc_noRecursion": { "message": "Kuletsa mobwerezabwereza wapamwamba kufufuza" },
-  "optionDesc_copy": { "message": "Lembani CSS yosonkhanitsidwa ku clipboard m 'malo molemba fayilo ngati fayilo imodzi imakonzedwa" },
-  "optionDesc_relativeOutput": { "message": "Linanena bungwe owona wachibale aliyense gwero wapamwamba m 'malo kulowetsa muzu" },
+  "optionDesc_copy": {
+    "message": "Lembani CSS yosonkhanitsidwa ku clipboard m 'malo molemba fayilo ngati fayilo imodzi imakonzedwa"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Linanena bungwe owona wachibale aliyense gwero wapamwamba m 'malo kulowetsa muzu"
+  },
   "optionDesc_quiet": { "message": "Kupondereza mitengo yonse kupatula zolakwika" },
   "optionDesc_ignores": { "message": "Mafayilo/ma directories kuti asaphatikizidwe" },
   "optionDesc_commentMain": { "message": "Prepend mutu ndemanga kuti analemba CSS" },

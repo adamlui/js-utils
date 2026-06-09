@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Faitau sese le lomiga afifi i le lotoifale" },
   "error_notRecognized": { "message": "e le o iloa" },
   "error_nonPositiveNum": { "message": "finauga e mafai ona na o > 0" },
+  "error_requiresVal": { "message": "manaomia se taua" },
   "error_invalidFilepath": { "message": "e tatau ona avea ma se ala faila o loo i ai nei. maua" },
   "error_invalidLangCode": { "message": "o se code o le gagana e le aoga" },
   "error_invalidURL": { "message": "URL Invalid" },
@@ -17,7 +18,9 @@
   "error_failedToFetchGlobalVer": { "message": "Ua le mafai ona maua le lomiga i le lalolagi atoa" },
   "error_failedToFetchSysLang": { "message": "Le mafai ona maua le gagana o le faiga" },
   "error_mustIncludePath": { "message": "e tatau ona aofia ai =ala" },
-  "error_firstArgNotExist": { "message": "O le finauga muamua e mafai ona na o se faila po o se faatonuga o loo i ai nei" },
+  "error_firstArgNotExist": {
+    "message": "O le finauga muamua e mafai ona na o se faila po o se faatonuga o loo i ai nei"
+  },
   "error_doesNotExist": { "message": "e leai se mea e fai" },
   "warn_configFileExists": { "message": "Config faila ua uma ona i ai" },
   "warn_docLocalesFetchFailed": { "message": "O le a le mea e fai ai le doc locales" },
@@ -56,7 +59,9 @@
   "helpSection_params": { "message": "Filifiliga Parameter" },
   "helpSection_cmds": { "message": "Poloaiga" },
   "optionDesc_uiLang": { "message": "ISO 639-1 code o le gagana e faaali atu UI i" },
-  "inputPathDesc_main": { "message": "Ala i le SCSS faila po o le faatonuga o loo i ai faila SCSS e tatau ona tuufaatasia" },
+  "inputPathDesc_main": {
+    "message": "Ala i le SCSS faila po o le faatonuga o loo i ai faila SCSS e tatau ona tuufaatasia"
+  },
   "inputPathDesc_extra": { "message": "faatusatusa i le Faatonu o Galuega i le taimi nei" },
   "outputPathDesc_main": { "message": "Ala i faila po o faatonuga o le a teuina faila sourcemap CSS +" },
   "outputPathDesc_extra": { "message": "e tusa ai ma le sao aʻa (pe afai e le tuuina atu, css/ e faaaoga)" },
@@ -65,7 +70,9 @@
   "optionDesc_noSourceMaps": { "message": "Puipuia faʻafanua puna mai le gaosiaina" },
   "optionDesc_noMinify": { "message": "Le mafai minification o galuega faatino CSS" },
   "optionDesc_noRecursion": { "message": "Faʻaletonu toe faʻafoʻi faila sailiga" },
-  "optionDesc_copy": { "message": "Kopi tuufaatasia CSS i clipboard nai lo le tusia e faila pe afai o loo faagasolo se faila puna e tasi" },
+  "optionDesc_copy": {
+    "message": "Kopi tuufaatasia CSS i clipboard nai lo le tusia e faila pe afai o loo faagasolo se faila puna e tasi"
+  },
   "optionDesc_relativeOutput": { "message": "Output faila e faatusatusa i faila puna taitasi nai lo le sao aʻa" },
   "optionDesc_quiet": { "message": "Suppress logging uma vagana ai mea sese" },
   "optionDesc_ignores": { "message": "Faʻamaumauga/faʻatonuga e faʻateʻaina mai le faʻaputuga" },

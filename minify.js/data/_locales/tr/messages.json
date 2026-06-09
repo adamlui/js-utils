@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Yerel paket sürümü okunurken hata oluştu" },
   "error_notRecognized": { "message": "tanınmamış" },
   "error_nonPositiveNum": { "message": "argüman sadece > 0 olabilir" },
+  "error_requiresVal": { "message": "bir değer gerektirir" },
   "error_invalidFilepath": { "message": "geçerli bir mevcut dosya yolu olmalıdır. Alındı" },
   "error_invalidLangCode": { "message": "geçersiz bir dil kodudur" },
   "error_invalidURL": { "message": "Adres geçersiz" },
@@ -55,7 +56,9 @@
   "helpSection_params": { "message": "Parametre seçenekleri" },
   "helpSection_cmds": { "message": "Bilgi komutları" },
   "optionDesc_uiLang": { "message": "ISO 639 -1 kullanıcı arayüzünü görüntülemek için dil kodu" },
-  "inputPathDesc_main": { "message": "Küçültülecek JavaScript dosyalarını içeren JavaScript dosyasının veya dizininin yolu" },
+  "inputPathDesc_main": {
+    "message": "Küçültülecek JavaScript dosyalarını içeren JavaScript dosyasının veya dizininin yolu"
+  },
   "inputPathDesc_extra": { "message": "mevcut çalışma dizinine göre" },
   "outputPathDesc_main": { "message": "Küçültülmüş dosyaların depolanacağı dosya veya dizin yolu" },
   "outputPathDesc_extra": { "message": "orijinal dosya konumuna göre (sağlanmamışsa, min/ kullanılır)" },
@@ -65,7 +68,9 @@
   "optionDesc_noRecursion": { "message": "Yinelemeli dosya aramayı devre dışı bırak" },
   "optionDesc_noMangle": { "message": "Parçalama adlarını devre dışı bırak" },
   "optionDesc_noFilenameChange": { "message": "Dosya uzantısını .min.js olarak değiştirmeyi devre dışı bırak" },
-  "optionDesc_copy": { "message": "Tek kaynak dosya işlenirse dosyaya yazmak yerine küçültülmüş kodu panoya kopyalayın" },
+  "optionDesc_copy": {
+    "message": "Tek kaynak dosya işlenirse dosyaya yazmak yerine küçültülmüş kodu panoya kopyalayın"
+  },
   "optionDesc_relativeOutput": { "message": "Giriş kökü yerine her kaynak dosyaya göre çıktı dosyaları" },
   "optionDesc_rewriteImports": { "message": ".js dosyasındaki içe aktarma yollarını .min.js olarak güncelleyin" },
   "optionDesc_quiet": { "message": "Hatalar hariç tüm günlükleri bastır" },

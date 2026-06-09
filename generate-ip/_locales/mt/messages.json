@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Żball fil-qari tal-verżjoni tal-pakkett lokali" },
   "error_notRecognized": { "message": "Mhux rikonoxxut" },
   "error_nonPositiveNum": { "message": "l-argument jista' jkun biss > 0" },
+  "error_requiresVal": { "message": "jeħtieġ valur" },
   "error_invalidFilepath": { "message": "trid tkun passaġġ tal-fajl validu eżistenti. Got" },
   "error_invalidLangCode": { "message": "huwa kodiċi tal-lingwa mhux validu" },
   "error_invalidURL": { "message": "URL mhux tajjeb" },

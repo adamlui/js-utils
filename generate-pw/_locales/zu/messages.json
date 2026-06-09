@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Iphutha ekufundeni uhlelo lwephakeji lendawo" },
   "error_notRecognized": { "message": "akuqashelwa" },
   "error_nonPositiveNum": { "message": "impikiswano ingaba > 0 kuphela" },
+  "error_requiresVal": { "message": "kudinga inani" },
   "error_invalidFilepath": { "message": "kumele kube yindlela yefayela evumelekile ekhona. Got" },
   "error_invalidLangCode": { "message": "iyikhodi yolimi engavumelekile" },
   "error_invalidURL": { "message": "I-URL engavumelekile" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Ungavumeli izinhlamvu ezincane ngephasiwedi" },
   "optionDesc_noUpper": { "message": "Ungavumeli izinhlamvu ezinkulu kwiphasiwedi" },
   "optionDesc_similarChars": { "message": "Faka izinhlamvu ezifanayo kuphasiwedi" },
-  "optionDesc_unstrict": { "message": "Akudingeki okungenani uhlamvu olulodwa ohlamvwini ngalunye oluvunyelwe lusethwe kuphasiwedi(iphasiwedi)" },
+  "optionDesc_unstrict": {
+    "message": "Akudingeki okungenani uhlamvu olulodwa ohlamvwini ngalunye oluvunyelwe lusethwe kuphasiwedi(iphasiwedi)"
+  },
   "optionDesc_noEntropy": { "message": "Ungabali/ungabhali i-entropy elinganiselwe" },
   "optionDesc_quiet": { "message": "Cindezela konke ukungena ngemvume ngaphandle kwamaphutha" },
   "optionDesc_help": { "message": "Bonisa isikrini sosizo" },

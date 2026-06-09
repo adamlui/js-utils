@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Napaka pri branju različice lokalnega paketa" },
   "error_notRecognized": { "message": "Ni prepoznan" },
   "error_nonPositiveNum": { "message": "argument je lahko samo > 0" },
+  "error_requiresVal": { "message": "zahteva vrednost" },
   "error_invalidFilepath": { "message": "mora biti veljavna obstoječa pot datoteke. Imam" },
   "error_invalidLangCode": { "message": "je neveljavna jezikovna koda" },
   "error_invalidURL": { "message": "Neveljaven URL" },

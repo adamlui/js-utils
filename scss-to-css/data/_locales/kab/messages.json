@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Tuccḍa taɣuri n uḍebsi amezwaru" },
   "error_notRecognized": { "message": "ur yettwassnen ara" },
   "error_nonPositiveNum": { "message": "izmir Izmir > 0" },
+  "error_requiresVal": { "message": "teḥwaǧ azal" },
   "error_invalidFilepath": { "message": "ilaq ad yili d abrid n ufaylu yettwaxedmen. Ilaq ad" },
   "error_invalidLangCode": { "message": "idioma deg xinag - Idioma deg xinag -" },
   "error_invalidURL": { "message": "URL mačči d tarameγtut" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "Seḥbes tkarḍiwin n usenfaṛ seg usnulfu" },
   "optionDesc_noMinify": { "message": "Kkes asfaylu n usfaylu CSS" },
   "optionDesc_noRecursion": { "message": "Snulfu afaylu yettnadi" },
-  "optionDesc_copy": { "message": "Kkes CSS yettwakelsen ɣer Clipboard wala ad yaru akken ad yekcem ma yella yettwaseqdec ufaylu n udiwenni kan" },
+  "optionDesc_copy": {
+    "message": "Kkes CSS yettwakelsen ɣer Clipboard wala ad yaru akken ad yekcem ma yella yettwaseqdec ufaylu n udiwenni kan"
+  },
   "optionDesc_relativeOutput": { "message": "Asebded n yifuyla i yal afaylu n uɣbalu n uɣbalu wala ad yekcem aẓar" },
   "optionDesc_quiet": { "message": "Sizdeg akk tuccḍiwin anagar tuccḍiwin" },
   "optionDesc_ignores": { "message": "Ifuyla/isefka i wakken ad ten-nekkes seg uẓeṭṭa" },

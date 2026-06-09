@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Te pānui i te putanga o te kohinga ā-rohe" },
   "error_notRecognized": { "message": "e kore e mohiotia" },
   "error_nonPositiveNum": { "message": "ka taea e te tautohetohe anake > 0" },
+  "error_requiresVal": { "message": "e hiahiatia ana he uara" },
   "error_invalidFilepath": { "message": "me tika te ara kōnae o mua. Got" },
   "error_invalidLangCode": { "message": "he waehere reo kore e tika" },
   "error_invalidURL": { "message": "PRO Muhu" },
@@ -56,17 +57,25 @@
   "helpSection_params": { "message": "Kōwhiringa parameter" },
   "helpSection_cmds": { "message": "Whakahau" },
   "optionDesc_uiLang": { "message": "ISO 639-1 waehere reo ki te whakaatu UI i roto i" },
-  "inputPathDesc_main": { "message": "He ara ki te kōnae SCSS, he aratohu rānei kei roto i ngā kōnae SCSS hei kohikohi" },
+  "inputPathDesc_main": {
+    "message": "He ara ki te kōnae SCSS, he aratohu rānei kei roto i ngā kōnae SCSS hei kohikohi"
+  },
   "inputPathDesc_extra": { "message": "e pā ana ki te aratohu mahi o nāianei" },
   "outputPathDesc_main": { "message": "He ara ki te kōnae, ki te aratohu ranei ka rokiroki ngā kōnae CSS + sourcemap" },
-  "outputPathDesc_extra": { "message": "e pā ana ki te pakiaka whakauru (ki te kore e whakaratohia, ka whakamahia te css/" },
+  "outputPathDesc_extra": {
+    "message": "e pā ana ki te pakiaka whakauru (ki te kore e whakaratohia, ka whakamahia te css/"
+  },
   "optionDesc_dryRun": { "message": "Kaua e whakariterite i te konae(s), whakaatu noa mena ka tukatukahia" },
   "optionDesc_dotfolders": { "message": "Whakauruhia nga dotfolders i roto i te rapu kōnae" },
   "optionDesc_noSourceMaps": { "message": "Te aukati i nga mahere puna mai i te whakaputa" },
   "optionDesc_noMinify": { "message": "Te whakaiti i te CSS putanga" },
   "optionDesc_noRecursion": { "message": "Whakakorea te rapu kōnae recursive" },
-  "optionDesc_copy": { "message": "Copy compiled CSS ki clipboard kaua ki te tuhi ki te kōnae mēnā ka tukatukahia he kōnae pūtake kotahi" },
-  "optionDesc_relativeOutput": { "message": "Nga konae whakaputa e pa ana ki ia konae puna kaua ki te pakiaka whakauru" },
+  "optionDesc_copy": {
+    "message": "Copy compiled CSS ki clipboard kaua ki te tuhi ki te kōnae mēnā ka tukatukahia he kōnae pūtake kotahi"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Nga konae whakaputa e pa ana ki ia konae puna kaua ki te pakiaka whakauru"
+  },
   "optionDesc_quiet": { "message": "Tautoko i te logging katoa engari hapa" },
   "optionDesc_ignores": { "message": "Ngā kōnae/ngā aratohu hei whakakore i te kohinga" },
   "optionDesc_commentMain": { "message": "Whakaritehia nga korero upoko ki te CSS kua oti te kohikohi" },

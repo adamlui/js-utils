@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Błąd podczas odczytu lokalnej wersji pakietu" },
   "error_notRecognized": { "message": "nierozpoznane" },
   "error_nonPositiveNum": { "message": "argument może być tylko > 0" },
+  "error_requiresVal": { "message": "wymaga wartości" },
   "error_invalidFilepath": { "message": "musi być prawidłową istniejącą ścieżką pliku. Got" },
   "error_invalidLangCode": { "message": "jest nieprawidłowym kodem języka" },
   "error_invalidURL": { "message": "Nieprawidłowy adres URL" },
@@ -55,9 +56,13 @@
   "helpSection_params": { "message": "Opcje parametrów" },
   "helpSection_cmds": { "message": "Polecenia informacyjne" },
   "optionDesc_uiLang": { "message": "Kod języka ISO 639-1 do wyświetlania interfejsu użytkownika w" },
-  "inputPathDesc_main": { "message": "Ścieżka do pliku JavaScript lub katalogu zawierającego pliki JavaScript do zminimalizowania" },
+  "inputPathDesc_main": {
+    "message": "Ścieżka do pliku JavaScript lub katalogu zawierającego pliki JavaScript do zminimalizowania"
+  },
   "inputPathDesc_extra": { "message": "do bieżącego katalogu roboczego" },
-  "outputPathDesc_main": { "message": "Ścieżka do pliku lub katalogu, w którym będą przechowywane zminimalizowane pliki" },
+  "outputPathDesc_main": {
+    "message": "Ścieżka do pliku lub katalogu, w którym będą przechowywane zminimalizowane pliki"
+  },
   "outputPathDesc_extra": { "message": "względem oryginalnej lokalizacji pliku (jeśli nie podano, stosuje się min/)" },
   "optionDesc_dryRun": { "message": "Nie minimalizuj plików, po prostu pokaż, czy będą przetwarzane" },
   "optionDesc_dotfolders": { "message": "Uwzględnij foldery kropkowe w wyszukiwaniu plików" },
@@ -65,8 +70,12 @@
   "optionDesc_noRecursion": { "message": "Wyłącz rekursywne wyszukiwanie plików" },
   "optionDesc_noMangle": { "message": "Wyłącz manipulowanie nazwami" },
   "optionDesc_noFilenameChange": { "message": "Wyłącz zmianę rozszerzenia pliku na .min.js" },
-  "optionDesc_copy": { "message": "Skopiuj zminimalizowany kod do schowka zamiast zapisywać go do pliku, jeśli przetwarzany jest pojedynczy plik źródłowy" },
-  "optionDesc_relativeOutput": { "message": "Pliki wyjściowe powiązane z każdym plikiem źródłowym zamiast z głównym plikiem wejściowym" },
+  "optionDesc_copy": {
+    "message": "Skopiuj zminimalizowany kod do schowka zamiast zapisywać go do pliku, jeśli przetwarzany jest pojedynczy plik źródłowy"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Pliki wyjściowe powiązane z każdym plikiem źródłowym zamiast z głównym plikiem wejściowym"
+  },
   "optionDesc_rewriteImports": { "message": "Zaktualizuj ścieżki importu z .js na .min.js" },
   "optionDesc_quiet": { "message": "Wyłącz wszystkie rejestrowanie z wyjątkiem błędów" },
   "optionDesc_ignores": { "message": "Pliki/katalogi do wykluczenia z minifikacji" },

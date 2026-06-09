@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Sayup sa pagbasa sa lokal nga bersyon sa pakete" },
   "error_notRecognized": { "message": "wala mailhi" },
   "error_nonPositiveNum": { "message": "argumento lang ang pwede > 0" },
+  "error_requiresVal": { "message": "nagkinahanglan og usa ka bili" },
   "error_invalidFilepath": { "message": "kinahanglan nga usa ka balido nga kasamtangan nga file path.GOT" },
   "error_invalidLangCode": { "message": "usa ka Dili Maayo nga Kodigo sa Pinulongan" },
   "error_invalidURL": { "message": "Dili balido nga URL" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "I-disable ang gagmay nga mga letra sa (mga) password" },
   "optionDesc_noUpper": { "message": "I-disable ang mga letra sa uppercase sa (mga) password" },
   "optionDesc_similarChars": { "message": "Ilakip ang susama nga mga karakter sa (mga) password" },
-  "optionDesc_unstrict": { "message": "Dili kinahanglan labing menos usa ka karakter gikan sa matag gitugotan nga karakter nga gitakda sa (mga) password" },
+  "optionDesc_unstrict": {
+    "message": "Dili kinahanglan labing menos usa ka karakter gikan sa matag gitugotan nga karakter nga gitakda sa (mga) password"
+  },
   "optionDesc_noEntropy": { "message": "Ayaw pag-ihap/pag-log gibanabana nga entropy" },
   "optionDesc_quiet": { "message": "Pugngan ang tanan nga pag-log gawas sa mga sayup" },
   "optionDesc_help": { "message": "Ipakita ang screen sa tabang" },

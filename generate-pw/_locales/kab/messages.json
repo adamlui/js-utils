@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Tuccḍa taɣuri n uḍebsi amezwaru" },
   "error_notRecognized": { "message": "ur yettwassnen ara" },
   "error_nonPositiveNum": { "message": "izmir Izmir > 0" },
+  "error_requiresVal": { "message": "teḥwaǧ azal" },
   "error_invalidFilepath": { "message": "ilaq ad yili d abrid n ufaylu yettwaxedmen. Ilaq ad" },
   "error_invalidLangCode": { "message": "idioma deg xinag - Idioma deg xinag -" },
   "error_invalidURL": { "message": "URL mačči d tarameγtut" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Sfeḍ iferdisen deg wawal n tbaḍnit(s)" },
   "optionDesc_noUpper": { "message": "Sfeḍ tabratt n ufeggag deg wawal uffir(s)" },
   "optionDesc_similarChars": { "message": "Sekcem isebtaren am wigi deg wawal uffir(s)" },
-  "optionDesc_unstrict": { "message": "Ur teḥwaǧeḍ ara xerṣum yiwen n uḍris seg yal amagrad yettwafernen deg wawal n tbaḍnit(s)" },
+  "optionDesc_unstrict": {
+    "message": "Ur teḥwaǧeḍ ara xerṣum yiwen n uḍris seg yal amagrad yettwafernen deg wawal n tbaḍnit(s)"
+  },
   "optionDesc_noEntropy": { "message": "Don 't use/impose entropy" },
   "optionDesc_quiet": { "message": "Sizdeg akk tuccḍiwin anagar tuccḍiwin" },
   "optionDesc_help": { "message": "Sken allen n tallelt" },

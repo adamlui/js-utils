@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ས་གནས་ཀྱི་སྦྲེལ་མཐུད ། ཀློག་རྒྱུ་ནོར་འཁྲུལ་བྱུང་འདུག" },
   "error_notRecognized": { "message": "ངོ་མི་ཤེས་པ" },
   "error_nonPositiveNum": { "message": "གྲོས་བསྡུར་བྱེད་ནུས་པ་གཅིག་པུ་> 0" },
+  "error_requiresVal": { "message": "ཚད་གཞི་ཞིག་གཏན་འབེབས་བྱེད་དགོས །" },
   "error_invalidFilepath": { "message": "གནས་ཡོད་པའི་ཡིག་ཆ་ལམ་ངེས་པར་དུ་གནས་དགོས་པ" },
   "error_invalidLangCode": { "message": "སྐད་ཡིག་གི་མིང་།" },
   "error_invalidURL": { "message": "མ་འོས་པའི་དྲ་ཚིགས །" },
@@ -17,7 +18,9 @@
   "error_failedToFetchGlobalVer": { "message": "འཛམ་གླིང་གི་འགྲེལ་བཤད་འཚོལ་མ་ཐུབ་པ" },
   "error_failedToFetchSysLang": { "message": "ལམ་ལུགས་སྐད་ཡིག་ཐོབ་མ་ཐུབ་པ" },
   "error_mustIncludePath": { "message": "ཕྱོགས་སྟོན་་་་གཙོ་ངོས ། \"རྩོམ་རིག\"" },
-  "error_firstArgNotExist": { "message": "ཐོག་མའི་རྩོད་རྙོག་དེ་ད་ལྟ་ཡོད་པའི་ཡིག་ཆ་ཞིག་དང་། ཡང་ན་ཁ་བྱང་ཞིག་མ་གཏོགས་གཞན་ཞིག་མིན །" },
+  "error_firstArgNotExist": {
+    "message": "ཐོག་མའི་རྩོད་རྙོག་དེ་ད་ལྟ་ཡོད་པའི་ཡིག་ཆ་ཞིག་དང་། ཡང་ན་ཁ་བྱང་ཞིག་མ་གཏོགས་གཞན་ཞིག་མིན །"
+  },
   "error_doesNotExist": { "message": "སྡེ་ཚན་མི་གནས།" },
   "warn_configFileExists": { "message": "རིམ་སྒྲིག་ཡིག་ཆ་སྔོན་ནས་ཡོད།" },
   "warn_docLocalesFetchFailed": { "message": "ཡིག་ཆ་གནས་ཡུལ་འཚོལ་མི་ཐུབ་པ" },
@@ -59,14 +62,20 @@
   "inputPathDesc_extra": { "message": "ད་ལྟའི་དྲ་གནས ། དྲ་གནས་གཙོ་ངོས ། >" },
   "outputPathDesc_main": { "message": "ཡིག་ཆ་ཆུང་ཆུང་གསོག་འཇོག་བྱེད་པའི་ཡིག་ཆ་དང་ཡིག་ཆའི་ལམ་" },
   "outputPathDesc_extra": { "message": "གཞི་རྟེན་ཡིག་ཆ་གི་གནས་སྟངས་དང་འབྲེལ་བ ། (མ་བཀོད་ན ། min/ ལག་ལེན་འཐབ་དགོས །)" },
-  "optionDesc_dryRun": { "message": "དོན་དམ་དུ་ཡིག་ཆ་(དག་) རྣམས་ཉུང་དུ་གཏོང་མི་དགོས ། དེ་དག་ལ་བཀོད་པ་མིན་པར་སྟོན་དགོས །" },
+  "optionDesc_dryRun": {
+    "message": "དོན་དམ་དུ་ཡིག་ཆ་(དག་) རྣམས་ཉུང་དུ་གཏོང་མི་དགོས ། དེ་དག་ལ་བཀོད་པ་མིན་པར་སྟོན་དགོས །"
+  },
   "optionDesc_dotfolders": { "message": "ཡིག་ཆ་འཚོལ་བཤེར་ནང་dotfolders་བཀོད །" },
   "optionDesc_dotfiles": { "message": "ཡིག་ཆ་འཚོལ་བཤེར་ནང་dotfiles་སྣོན །" },
   "optionDesc_noRecursion": { "message": "ཡིག་ཆ་བསྐྱར་བཅོས་འཚོལ་བཤེར་ནུས་མེད་བཟོ" },
   "optionDesc_noMangle": { "message": "མོང་སྒར་མིང་མི་ཆོག་པ" },
   "optionDesc_noFilenameChange": { "message": "ཡིག་ཆའི་རྒྱ་བསྐྱེད་ .min.js ལ་བརྗེ་སྒྱུར་བྱེད་མི་ཐུབ།" },
-  "optionDesc_copy": { "message": "ཡིག་ཆ་གཅིག་ལས་ཀ་བྱས་པ་ཡིན་ན་ཡིག་ཆ་ལ་འབྲི་བའི་ཚབ་ཏུ་ཡིག་ཆ་ཆུང་བའི་ཡིག་ཆ་ལ་འདྲ་བཤུ་བྱེད་པ" },
-  "optionDesc_relativeOutput": { "message": "ནང་འཇུག་རྩ་བའི་ཚབ་ཏུ་འབྱུང་ཁུངས་གང་རུང་གི་ཡིག་ཆ་དང་འབྲེལ་བའི་ཕྱིར་འདོན་བྱེད་པ" },
+  "optionDesc_copy": {
+    "message": "ཡིག་ཆ་གཅིག་ལས་ཀ་བྱས་པ་ཡིན་ན་ཡིག་ཆ་ལ་འབྲི་བའི་ཚབ་ཏུ་ཡིག་ཆ་ཆུང་བའི་ཡིག་ཆ་ལ་འདྲ་བཤུ་བྱེད་པ"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "ནང་འཇུག་རྩ་བའི་ཚབ་ཏུ་འབྱུང་ཁུངས་གང་རུང་གི་ཡིག་ཆ་དང་འབྲེལ་བའི་ཕྱིར་འདོན་བྱེད་པ"
+  },
   "optionDesc_rewriteImports": { "message": ".js ནས་.min.js བར་གྱི་ནང་འདྲེན་ལམ་རྣམས་གསར་བཅོས་བྱེད །" },
   "optionDesc_quiet": { "message": "འཛོལ་བ་མ་གཏོགས་གཞན་གྱི་མིང་ཐོ་ཚང་མ་ཕྱིར་འབུད་བྱེད་པ" },
   "optionDesc_ignores": { "message": "ཡིག་ཆ །/ཡིག་ཆ །" },

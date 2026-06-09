@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Fehler beim Lesen der lokalen Paketversion" },
   "error_notRecognized": { "message": "Nicht erkannt" },
   "error_nonPositiveNum": { "message": "argument kann nur > 0 sein" },
+  "error_requiresVal": { "message": "erfordert einen Wert" },
   "error_invalidFilepath": { "message": "muss ein gültiger bestehender Dateipfad sein. Got" },
   "error_invalidLangCode": { "message": "ist ein ungültiger Sprachcode" },
   "error_invalidURL": { "message": "Ungültige URL" },
@@ -17,7 +18,9 @@
   "error_failedToFetchGlobalVer": { "message": "Globale Version konnte nicht abgerufen werden" },
   "error_failedToFetchSysLang": { "message": "Systemsprache konnte nicht abgerufen werden" },
   "error_mustIncludePath": { "message": "must include =path" },
-  "error_firstArgNotExist": { "message": "Das erste Argument kann nur eine vorhandene Datei oder ein vorhandenes Verzeichnis sein" },
+  "error_firstArgNotExist": {
+    "message": "Das erste Argument kann nur eine vorhandene Datei oder ein vorhandenes Verzeichnis sein"
+  },
   "error_doesNotExist": { "message": "existiert nicht" },
   "warn_configFileExists": { "message": "Die Konfigurationsdatei ist bereits vorhanden" },
   "warn_docLocalesFetchFailed": { "message": "Doc-Gebietsschemata konnten nicht abgerufen werden" },
@@ -55,18 +58,28 @@
   "helpSection_params": { "message": "Parameteroptionen" },
   "helpSection_cmds": { "message": "Info-Befehle" },
   "optionDesc_uiLang": { "message": "ISO 639-1 Sprachcode zur Anzeige der Benutzeroberfläche in" },
-  "inputPathDesc_main": { "message": "Pfad zu JavaScript-Datei oder Verzeichnis, das JavaScript-Dateien enthält, die minimiert werden sollen" },
+  "inputPathDesc_main": {
+    "message": "Pfad zu JavaScript-Datei oder Verzeichnis, das JavaScript-Dateien enthält, die minimiert werden sollen"
+  },
   "inputPathDesc_extra": { "message": "relativ zum aktuellen Arbeitsverzeichnis" },
   "outputPathDesc_main": { "message": "Pfad zu Datei oder Verzeichnis, in dem minimierte Dateien gespeichert werden" },
-  "outputPathDesc_extra": { "message": "relativ zum ursprünglichen Dateispeicherort (falls nicht angegeben, wird min/ verwendet)" },
-  "optionDesc_dryRun": { "message": "Verkleinern Sie die Datei(en) nicht wirklich, zeigen Sie einfach an, ob sie verarbeitet werden" },
+  "outputPathDesc_extra": {
+    "message": "relativ zum ursprünglichen Dateispeicherort (falls nicht angegeben, wird min/ verwendet)"
+  },
+  "optionDesc_dryRun": {
+    "message": "Verkleinern Sie die Datei(en) nicht wirklich, zeigen Sie einfach an, ob sie verarbeitet werden"
+  },
   "optionDesc_dotfolders": { "message": "Punktordner in die Dateisuche einbeziehen" },
   "optionDesc_dotfiles": { "message": "Punktdateien in Dateisuche einbeziehen" },
   "optionDesc_noRecursion": { "message": "Rekursive Dateisuche deaktivieren" },
   "optionDesc_noMangle": { "message": "Mangelnde Namen deaktivieren" },
   "optionDesc_noFilenameChange": { "message": "Ändern der Dateierweiterung in .min.js deaktivieren" },
-  "optionDesc_copy": { "message": "Kopieren Sie minimierten Code in die Zwischenablage, anstatt in die Datei zu schreiben, wenn eine einzelne Quelldatei verarbeitet wird" },
-  "optionDesc_relativeOutput": { "message": "Ausgabedateien relativ zu jeder Quelldatei statt zum Eingabestammverzeichnis" },
+  "optionDesc_copy": {
+    "message": "Kopieren Sie minimierten Code in die Zwischenablage, anstatt in die Datei zu schreiben, wenn eine einzelne Quelldatei verarbeitet wird"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Ausgabedateien relativ zu jeder Quelldatei statt zum Eingabestammverzeichnis"
+  },
   "optionDesc_rewriteImports": { "message": "Importpfade von .js auf .min.js aktualisieren" },
   "optionDesc_quiet": { "message": "Alle Protokolle mit Ausnahme von Fehlern unterdrücken" },
   "optionDesc_ignores": { "message": "Dateien/Verzeichnisse, die von der Minifizierung ausgeschlossen werden sollen" },

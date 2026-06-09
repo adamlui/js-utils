@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "د ځایی بنډل نسخې په لوستلو کې تېروتنه" },
   "error_notRecognized": { "message": "پیژندل شوی نه دی" },
   "error_nonPositiveNum": { "message": "استدلال یوازې > 0 کیدی شي" },
+  "error_requiresVal": { "message": "یو ارزښت ته اړتیا لري" },
   "error_invalidFilepath": { "message": "باید د اعتبار وړ موجوده فایل لاره وي. پوه شو" },
   "error_invalidLangCode": { "message": "د ژبې یو ناسم کوډ دی" },
   "error_invalidURL": { "message": "URL ناسم" },
@@ -65,7 +66,9 @@
   "optionDesc_noRecursion": { "message": "د تکرار شوې دوتنې لټون غیر فعال کړئ" },
   "optionDesc_noMangle": { "message": "د لاسرسۍ نومونه غیر فعال کړئ" },
   "optionDesc_noFilenameChange": { "message": ".min.js ته د دوتنې شاتاړی بدلول غیر فعال کړئ" },
-  "optionDesc_copy": { "message": "که چیرې د واحد سرچینې فایل پروسس شي نو فایل ته د لیکلو پرځای یې لږ کوډ کلیپ بورډ ته کاپي کړئ" },
+  "optionDesc_copy": {
+    "message": "که چیرې د واحد سرچینې فایل پروسس شي نو فایل ته د لیکلو پرځای یې لږ کوډ کلیپ بورډ ته کاپي کړئ"
+  },
   "optionDesc_relativeOutput": { "message": "د ننوتۍ ریښې پر ځای د هرې سرچینې دوتنې سره د وتۍ فایلونه" },
   "optionDesc_rewriteImports": { "message": "له .js څخه .min.js ته د وارداتو لارې تازه کړئ" },
   "optionDesc_quiet": { "message": "د تېروتنو پرته ټول ننوتل (logging) پټ کړئ" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Грешка при читањето на локалната верзија на пакетот" },
   "error_notRecognized": { "message": "не е препознаено" },
   "error_nonPositiveNum": { "message": "аргументот може да биде само > 0" },
+  "error_requiresVal": { "message": "бара вредност" },
   "error_invalidFilepath": { "message": "мора да биде важечка постоечка патека на датотеката. Добив" },
   "error_invalidLangCode": { "message": "е неважечки јазичен код" },
   "error_invalidURL": { "message": "Невалидна URL" },
@@ -56,17 +57,25 @@
   "helpSection_params": { "message": "Опции за параметри" },
   "helpSection_cmds": { "message": "ÐÐ¾Ð¼Ð°Ð½Ð´Ð¸" },
   "optionDesc_uiLang": { "message": "ISO 639-1 код на јазик за прикажување на UI во" },
-  "inputPathDesc_main": { "message": "Патека до SCSS датотека или директориум што содржи SCSS датотеки што треба да се состават" },
+  "inputPathDesc_main": {
+    "message": "Патека до SCSS датотека или директориум што содржи SCSS датотеки што треба да се состават"
+  },
   "inputPathDesc_extra": { "message": "во однос на тековниот работен именик" },
-  "outputPathDesc_main": { "message": "Патека до датотека или директориум каде што ќе се чуваат CSS + sourcemap датотеки" },
+  "outputPathDesc_main": {
+    "message": "Патека до датотека или директориум каде што ќе се чуваат CSS + sourcemap датотеки"
+  },
   "outputPathDesc_extra": { "message": "во однос на влезниот корен (ако не е обезбеден, се користи css/)" },
   "optionDesc_dryRun": { "message": "Не ги составувајте датотеките, само покажете дали ќе бидат обработени" },
   "optionDesc_dotfolders": { "message": "Вклучете ги папките со точки во пребарувањето датотеки" },
   "optionDesc_noSourceMaps": { "message": "Спречете генерирање на изворни мапи" },
   "optionDesc_noMinify": { "message": "Оневозможи минимизирање на излезниот CSS" },
   "optionDesc_noRecursion": { "message": "Оневозможи рекурзивно пребарување датотеки" },
-  "optionDesc_copy": { "message": "Копирајте го компајлираниот CSS на таблата со исечоци наместо да пишувате во датотека ако се обработува една изворна датотека" },
-  "optionDesc_relativeOutput": { "message": "Излезни датотеки во однос на секоја изворна датотека наместо на влезен корен" },
+  "optionDesc_copy": {
+    "message": "Копирајте го компајлираниот CSS на таблата со исечоци наместо да пишувате во датотека ако се обработува една изворна датотека"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Излезни датотеки во однос на секоја изворна датотека наместо на влезен корен"
+  },
   "optionDesc_quiet": { "message": "Потисни ги сите евиденции освен грешките" },
   "optionDesc_ignores": { "message": "Датотеки/директориуми што треба да се исклучат од компилацијата" },
   "optionDesc_commentMain": { "message": "Препуштете го коментарот на заглавието на компајлираниот CSS" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ဒေသတွင်း အထုပ်ဗားရှင်းကို ဖတ်ရှုရာတွင် ချို့ယွင်းချက်ရှိသည်" },
   "error_notRecognized": { "message": "အသိအမှတ်မပြုပါ" },
   "error_nonPositiveNum": { "message": "0 ကိုသာ အသံုးျပဳႏိုင္ပါသည္ ။" },
+  "error_requiresVal": { "message": "တန်ဖိုးတစ်ခု လိုအပ်သည်" },
   "error_invalidFilepath": { "message": "မှန်ကန်တဲ့ ရှိပြီးသား ဖိုင်လမ်းကြောင်း ဖြစ်ရပါမယ် ။ ရပါပြီ" },
   "error_invalidLangCode": { "message": "မမှန်ကန်သော ဘာသာစကားကုဒ် ဖြစ်ပါသည်" },
   "error_invalidURL": { "message": "URL မမှန်ကန်ပါ" },
@@ -55,18 +56,26 @@
   "helpSection_params": { "message": "အကန့်အသတ်ရွေးချယ်စရာများ" },
   "helpSection_cmds": { "message": "သတင်းအချက်အလက်ဆိုင်ရာ ညွှန်ကြားချက်များ" },
   "optionDesc_uiLang": { "message": "ISO ကို 639-1 ဘာသာစကားကုဒ် UI ကိုပြသရန်" },
-  "inputPathDesc_main": { "message": "Minified လုပ်ရန် JavaScript ဖိုင်များပါဝင်သော JavaScript ဖိုင် သို့မဟုတ် directory သို့ လမ်းကြောင်း" },
+  "inputPathDesc_main": {
+    "message": "Minified လုပ်ရန် JavaScript ဖိုင်များပါဝင်သော JavaScript ဖိုင် သို့မဟုတ် directory သို့ လမ်းကြောင်း"
+  },
   "inputPathDesc_extra": { "message": "လက်ရှိအလုပ်အကိုင်ညွှန်ကြားမှု ဦး စီးဌာန" },
   "outputPathDesc_main": { "message": "အသေးစားဖိုင်များကို သိမ်းဆည်းထားမည့် ဖိုင် သို့မဟုတ် လမ်းညွှန်ဆီ လမ်းကြောင်း" },
   "outputPathDesc_extra": { "message": "မူရင်းဖိုင်တည်နေရာနှင့် ပတ်သက် ၍ (မပေးပါကမိနစ်/ အသုံးပြုသည်)" },
-  "optionDesc_dryRun": { "message": "ဖိုင်(များ) ကို အမှန်တကယ်အသေးအဖွဲမလုပ်ပါနှင့် ၊ ၎ င်းတို့ကို စီမံလုပ်ဆောင်မည်ဆိုပါက ပြသပါ" },
+  "optionDesc_dryRun": {
+    "message": "ဖိုင်(များ) ကို အမှန်တကယ်အသေးအဖွဲမလုပ်ပါနှင့် ၊ ၎ င်းတို့ကို စီမံလုပ်ဆောင်မည်ဆိုပါက ပြသပါ"
+  },
   "optionDesc_dotfolders": { "message": "ဖိုင်ရှာဖွေမှုတွင် dotfolders ကိုထည့်သွင်းပါ" },
   "optionDesc_dotfiles": { "message": "ဖိုင်ရှာဖွေမှုတွင် dotfiles ကိုထည့်သွင်းပါ" },
   "optionDesc_noRecursion": { "message": "ထပ်တလဲလဲ ဖိုင်ရှာဖွေခြင်းကို ပိတ်ပါ" },
   "optionDesc_noMangle": { "message": "Mangling အမည်များကိုပိတ်ပါ" },
   "optionDesc_noFilenameChange": { "message": ".min.js သို့ ဖိုင် extension ပြောင်းခြင်းကို ပိတ်ပါ" },
-  "optionDesc_copy": { "message": "တစ်ခုတည်းသော အရင်းအမြစ်ဖိုင်ကို လုပ်ဆောင်နေပါက ဖိုင်ရေးမည့်အစား အသေးစားကုဒ်ကို ကလစ်ဘုတ်သို့ မိတ္တူကူးပါ" },
-  "optionDesc_relativeOutput": { "message": "အမြစ်ထည့်သွင်းမည့်အစား ရင်းမြစ်ဖိုင်တစ်ခုချင်းစီနှင့် ဆက်စပ်သော ဖိုင်များကို ထုတ်ယူပါ" },
+  "optionDesc_copy": {
+    "message": "တစ်ခုတည်းသော အရင်းအမြစ်ဖိုင်ကို လုပ်ဆောင်နေပါက ဖိုင်ရေးမည့်အစား အသေးစားကုဒ်ကို ကလစ်ဘုတ်သို့ မိတ္တူကူးပါ"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "အမြစ်ထည့်သွင်းမည့်အစား ရင်းမြစ်ဖိုင်တစ်ခုချင်းစီနှင့် ဆက်စပ်သော ဖိုင်များကို ထုတ်ယူပါ"
+  },
   "optionDesc_rewriteImports": { "message": ".js မှ .min.js သို့သွင်းကုန်လမ်းကြောင်းများကို အပ်ဒိတ်လုပ်ပါ" },
   "optionDesc_quiet": { "message": "အမှားအယွင်းများမှလွဲ ၍ လော့ဂ်အင်အားလုံးကိုဖိနှိပ်ပါ" },
   "optionDesc_ignores": { "message": "Minification မှဖယ်ထုတ်ရန်ဖိုင်များ/directory များ" },

@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ဒေသတွင်း အထုပ်ဗားရှင်းကို ဖတ်ရှုရာတွင် ချို့ယွင်းချက်ရှိသည်" },
   "error_notRecognized": { "message": "အသိအမှတ်မပြုပါ" },
   "error_nonPositiveNum": { "message": "0 ကိုသာ အသံုးျပဳႏိုင္ပါသည္ ။" },
+  "error_requiresVal": { "message": "တန်ဖိုးတစ်ခု လိုအပ်သည်" },
   "error_invalidFilepath": { "message": "မှန်ကန်တဲ့ ရှိပြီးသား ဖိုင်လမ်းကြောင်း ဖြစ်ရပါမယ် ။ ရပါပြီ" },
   "error_invalidLangCode": { "message": "မမှန်ကန်သော ဘာသာစကားကုဒ် ဖြစ်ပါသည်" },
   "error_invalidURL": { "message": "URL မမှန်ကန်ပါ" },
@@ -56,17 +57,25 @@
   "helpSection_params": { "message": "အကန့်အသတ်ရွေးချယ်စရာများ" },
   "helpSection_cmds": { "message": "Commands" },
   "optionDesc_uiLang": { "message": "ISO ကို 639-1 ဘာသာစကားကုဒ် UI ကိုပြသရန်" },
-  "inputPathDesc_main": { "message": "စုဆောင်းရမည့် SCSS ဖိုင်များ သို့မဟုတ် SCSS ဖိုင်များပါဝင်သောဖိုင်တွဲသို့လမ်းကြောင်း" },
+  "inputPathDesc_main": {
+    "message": "စုဆောင်းရမည့် SCSS ဖိုင်များ သို့မဟုတ် SCSS ဖိုင်များပါဝင်သောဖိုင်တွဲသို့လမ်းကြောင်း"
+  },
   "inputPathDesc_extra": { "message": "လက်ရှိအလုပ်အကိုင်ညွှန်ကြားမှု ဦး စီးဌာန" },
-  "outputPathDesc_main": { "message": "CSS + ရင်းမြစ်မြေပုံဖိုင်များကိုသိမ်းဆည်းထားမည့်ဖိုင်သို့မဟုတ် directory သို့လမ်းကြောင်း" },
+  "outputPathDesc_main": {
+    "message": "CSS + ရင်းမြစ်မြေပုံဖိုင်များကိုသိမ်းဆည်းထားမည့်ဖိုင်သို့မဟုတ် directory သို့လမ်းကြောင်း"
+  },
   "outputPathDesc_extra": { "message": "input ကိုအမြစ် (မထောက်ပံ့လျှင်, CSS ကို/ အသုံးပြုသည်)" },
   "optionDesc_dryRun": { "message": "ဖိုင္(မ်ား) ကို အမွန္တကယ္ မစုစည္းပါႏွင့္ ၊ ၎ တို႔ကို လုပ္ေဆာင္မည္ဆိုပါက ျပသပါ" },
   "optionDesc_dotfolders": { "message": "ဖိုင်ရှာဖွေမှုတွင် dotfolders ကိုထည့်သွင်းပါ" },
   "optionDesc_noSourceMaps": { "message": "အရင်းအမြစ်မြေပုံများကိုထုတ်လုပ်ခြင်းမှကာကွယ်ပါ" },
   "optionDesc_noMinify": { "message": "Output ကို CSS ကို minification ကို disable လုပ်ပါ" },
   "optionDesc_noRecursion": { "message": "ထပ်တလဲလဲ ဖိုင်ရှာဖွေခြင်းကို ပိတ်ပါ" },
-  "optionDesc_copy": { "message": "တစ်ခုတည်းသောအရင်းအမြစ်ဖိုင်ကိုလုပ်ဆောင်ပါကဖိုင်ကိုရေးမည့်အစားစုစည်းထားသော CSS ကို clipboard သို့ကူးယူပါ" },
-  "optionDesc_relativeOutput": { "message": "အမြစ်ထည့်သွင်းမည့်အစား ရင်းမြစ်ဖိုင်တစ်ခုချင်းစီနှင့် ဆက်စပ်သော ဖိုင်များကို ထုတ်ယူပါ" },
+  "optionDesc_copy": {
+    "message": "တစ်ခုတည်းသောအရင်းအမြစ်ဖိုင်ကိုလုပ်ဆောင်ပါကဖိုင်ကိုရေးမည့်အစားစုစည်းထားသော CSS ကို clipboard သို့ကူးယူပါ"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "အမြစ်ထည့်သွင်းမည့်အစား ရင်းမြစ်ဖိုင်တစ်ခုချင်းစီနှင့် ဆက်စပ်သော ဖိုင်များကို ထုတ်ယူပါ"
+  },
   "optionDesc_quiet": { "message": "အမှားအယွင်းများမှလွဲ ၍ လော့ဂ်အင်အားလုံးကိုဖိနှိပ်ပါ" },
   "optionDesc_ignores": { "message": "စုစည်းမှုမှ ဖယ်ထုတ်ရန် ဖိုင်များ/လမ်းညွှန်များ" },
   "optionDesc_commentMain": { "message": "စုစည်းထားသော CSS သို့ ခေါင်းစီးမှတ်ချက်ကို ကြိုတင်ပြင်ဆင်ပါ" },

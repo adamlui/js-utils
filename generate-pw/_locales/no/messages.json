@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Feil ved lesing av lokal pakkeversjon" },
   "error_notRecognized": { "message": "Ikke gjenkjent" },
   "error_nonPositiveNum": { "message": "argumentet kan bare være > 0" },
+  "error_requiresVal": { "message": "krever en verdi" },
   "error_invalidFilepath": { "message": "må være en gyldig eksisterende filsti. Fikk" },
   "error_invalidLangCode": { "message": "er en ugyldig språkkode" },
   "error_invalidURL": { "message": "Ugyldig URL" },

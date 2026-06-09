@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ဒေသတွင်း အထုပ်ဗားရှင်းကို ဖတ်ရှုရာတွင် ချို့ယွင်းချက်ရှိသည်" },
   "error_notRecognized": { "message": "အသိအမှတ်မပြုပါ" },
   "error_nonPositiveNum": { "message": "0 ကိုသာ အသံုးျပဳႏိုင္ပါသည္ ။" },
+  "error_requiresVal": { "message": "တန်ဖိုးတစ်ခု လိုအပ်သည်" },
   "error_invalidFilepath": { "message": "မှန်ကန်တဲ့ ရှိပြီးသား ဖိုင်လမ်းကြောင်း ဖြစ်ရပါမယ် ။ ရပါပြီ" },
   "error_invalidLangCode": { "message": "မမှန်ကန်သော ဘာသာစကားကုဒ် ဖြစ်ပါသည်" },
   "error_invalidURL": { "message": "URL မမှန်ကန်ပါ" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "စကားဝှက်(များ) ရှိ စာလုံးအသေးများကို ခွင့်မပြုပါ" },
   "optionDesc_noUpper": { "message": "စကားဝှက်(များ) တွင် အပေါ်ထပ်စာလုံးများကို ခွင့်မပြုပါ" },
   "optionDesc_similarChars": { "message": "စကားဝှက်(များ) တွင်အလားတူအက္ခရာများပါ ၀ င်သည်" },
-  "optionDesc_unstrict": { "message": "စကားဝှက်(များ) တွင်ခွင့်ပြုထားသောစာလုံးတစ်ခုစီမှအနည်းဆုံးစာလုံးတစ်လုံးမလိုအပ်ပါ" },
+  "optionDesc_unstrict": {
+    "message": "စကားဝှက်(များ) တွင်ခွင့်ပြုထားသောစာလုံးတစ်ခုစီမှအနည်းဆုံးစာလုံးတစ်လုံးမလိုအပ်ပါ"
+  },
   "optionDesc_noEntropy": { "message": "ခန့်မှန်းထားသော အင်ထရိုပီကို တွက်ချက်ခြင်း/မှတ်တမ်းတင်ခြင်း မပြုလုပ်ပါနှင့်" },
   "optionDesc_quiet": { "message": "အမှားအယွင်းများမှလွဲ ၍ လော့ဂ်အင်အားလုံးကိုဖိနှိပ်ပါ" },
   "optionDesc_help": { "message": "အကူအညီ မျက်နှာပြင်ကို ပြသပါ" },

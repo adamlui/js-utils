@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Greška pri čitanju verzije lokalnog paketa" },
   "error_notRecognized": { "message": "nije prepoznato" },
   "error_nonPositiveNum": { "message": "argument može biti samo > 0" },
+  "error_requiresVal": { "message": "zahteva vrednost" },
   "error_invalidFilepath": { "message": "mora biti važeća postojeća putanja datoteke. Imam" },
   "error_invalidLangCode": { "message": "je nevažeća šifra jezika" },
   "error_invalidURL": { "message": "Pogrešan URL" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Zabranite mala slova u lozinkama" },
   "optionDesc_noUpper": { "message": "Zabranite velika slova u lozinkama" },
   "optionDesc_similarChars": { "message": "Uključite slične znakove u lozinke" },
-  "optionDesc_unstrict": { "message": "Ne zahtevajte najmanje jedan znak od svakog dozvoljenog znaka postavljenog u lozinkama" },
+  "optionDesc_unstrict": {
+    "message": "Ne zahtevajte najmanje jedan znak od svakog dozvoljenog znaka postavljenog u lozinkama"
+  },
   "optionDesc_noEntropy": { "message": "Ne izračunavaj/evidentiraj procenjenu entropiju" },
   "optionDesc_quiet": { "message": "Obustavi svu evidenciju osim grešaka" },
   "optionDesc_help": { "message": "Prikažite ekran za pomoć" },

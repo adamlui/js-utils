@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Грешка при четене на локалната версия на пакета" },
   "error_notRecognized": { "message": "не е разпознато" },
   "error_nonPositiveNum": { "message": "аргументът може да бъде само > 0" },
+  "error_requiresVal": { "message": "изисква стойност" },
   "error_invalidFilepath": { "message": "трябва да е валиден съществуващ файлов път. Получих" },
   "error_invalidLangCode": { "message": "е невалиден езиков код" },
   "error_invalidURL": { "message": "Невалиден URL" },
@@ -36,7 +37,9 @@
   "info_copyingToClip": { "message": "Копиране в клипборда" },
   "info_writing": { "message": "Запис във файл" },
   "info_minComplete": { "message": "Минимизирането е завършено" },
-  "info_file": { "message": "\"файлIncompatible database driver' s \"\"% 1\"\" version: found version% 2, expected version% 3.% 1.% 2% 1.% 2\"" },
+  "info_file": {
+    "message": "\"файлIncompatible database driver' s \"\"% 1\"\" version: found version% 2, expected version% 3.% 1.% 2% 1.% 2\""
+  },
   "info_minified": { "message": "минимизиран" },
   "info_noFilesProcessed": { "message": "Няма обработени непроменени JavaScript файлове" },
   "info_failedToMinify": { "message": "неуспешно минимизиране" },
@@ -55,17 +58,23 @@
   "helpSection_params": { "message": "Опции за параметрите" },
   "helpSection_cmds": { "message": "Команди за информация" },
   "optionDesc_uiLang": { "message": "ISO 639 -1 код на езика за показване на потребителския интерфейс в" },
-  "inputPathDesc_main": { "message": "Път до JavaScript файл или директория, съдържаща JavaScript файлове за минимизиране" },
+  "inputPathDesc_main": {
+    "message": "Път до JavaScript файл или директория, съдържаща JavaScript файлове за минимизиране"
+  },
   "inputPathDesc_extra": { "message": "спрямо текущата работна директория" },
   "outputPathDesc_main": { "message": "Път до файл или директория, където ще се съхраняват миниатюрни файлове" },
-  "outputPathDesc_extra": { "message": "спрямо първоначалното местоположение на файла (ако не е предоставено, се използва min /)" },
+  "outputPathDesc_extra": {
+    "message": "спрямо първоначалното местоположение на файла (ако не е предоставено, се използва min /)"
+  },
   "optionDesc_dryRun": { "message": "Всъщност не минимизирайте файловете, просто покажете дали ще бъдат обработени" },
   "optionDesc_dotfolders": { "message": "Включване на папки с точки в търсенето на файлове" },
   "optionDesc_dotfiles": { "message": "Включване на файлове с точки в търсенето на файлове" },
   "optionDesc_noRecursion": { "message": "Деактивиране на рекурсивното търсене на файлове" },
   "optionDesc_noMangle": { "message": "Деактивиране на обезобразяването на имена" },
   "optionDesc_noFilenameChange": { "message": "Деактивиране на промяната на разширението на файла на .min.js" },
-  "optionDesc_copy": { "message": "Копирайте минимизирания код в клипборда, вместо да пишете във файла, ако се обработва единичен изходен файл" },
+  "optionDesc_copy": {
+    "message": "Копирайте минимизирания код в клипборда, вместо да пишете във файла, ако се обработва единичен изходен файл"
+  },
   "optionDesc_relativeOutput": { "message": "Изходни файлове спрямо всеки изходен файл, вместо към входния корен" },
   "optionDesc_rewriteImports": { "message": "Актуализиране на пътищата за импортиране от .js до .min.js" },
   "optionDesc_quiet": { "message": "Потискане на всички записи, с изключение на грешките" },

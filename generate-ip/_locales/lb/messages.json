@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Feeler beim Liesen vun der lokaler Paketeversioun" },
   "error_notRecognized": { "message": "net unerkannt" },
   "error_nonPositiveNum": { "message": "argument can just be ass > 0" },
+  "error_requiresVal": { "message": "den Wert nötig" },
   "error_invalidFilepath": { "message": "muss e gültege existente Fichier Wee sinn. krut" },
   "error_invalidLangCode": { "message": "i am an Invalid Code" },
   "error_invalidURL": { "message": "InvalidCA" },

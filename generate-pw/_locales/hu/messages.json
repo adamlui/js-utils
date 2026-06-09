@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Hiba a helyi csomagverzió olvasásakor" },
   "error_notRecognized": { "message": "nem felismerhető" },
   "error_nonPositiveNum": { "message": "argumentum csak > 0 lehet" },
+  "error_requiresVal": { "message": "értéket igényel" },
   "error_invalidFilepath": { "message": "érvényes fájl elérési útnak kell lennie. Megvan" },
   "error_invalidLangCode": { "message": "érvénytelen nyelvkód" },
   "error_invalidURL": { "message": "Hibás URL cím" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Kisbetű (k) tiltása a jelszó(k) ban" },
   "optionDesc_noUpper": { "message": "Nagybetűk letiltása a jelszó(k) ban" },
   "optionDesc_similarChars": { "message": "Hasonló karakterek szerepeltetése a jelszó(k) ban" },
-  "optionDesc_unstrict": { "message": "Ne követeljen meg legalább egy karaktert a jelszó(jelszavak) minden megengedett karakterkészletéből" },
+  "optionDesc_unstrict": {
+    "message": "Ne követeljen meg legalább egy karaktert a jelszó(jelszavak) minden megengedett karakterkészletéből"
+  },
   "optionDesc_noEntropy": { "message": "Ne számolja/naplózza a becsült entrópiát" },
   "optionDesc_quiet": { "message": "Az összes naplózás letiltása a hibák kivételével" },
   "optionDesc_help": { "message": "Súgó képernyő megjelenítése" },

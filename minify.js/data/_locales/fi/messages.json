@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Virhe paikallisen paketin version lukemisessa" },
   "error_notRecognized": { "message": "ei tunnistettu" },
   "error_nonPositiveNum": { "message": "argumentti voi olla vain > 0" },
+  "error_requiresVal": { "message": "vaatii arvon" },
   "error_invalidFilepath": { "message": "on oltava kelvollinen olemassa oleva tiedostopolku. Sain" },
   "error_invalidLangCode": { "message": "on virheellinen kielikoodi" },
   "error_invalidURL": { "message": "Virheellinen URL" },
@@ -55,7 +56,9 @@
   "helpSection_params": { "message": "Parametrivaihtoehdot" },
   "helpSection_cmds": { "message": "Tietokomennot" },
   "optionDesc_uiLang": { "message": "Iso 639-1 -kielikoodi käyttöliittymän näyttämiseksi" },
-  "inputPathDesc_main": { "message": "Polku JavaScript-tiedostoon tai hakemistoon, joka sisältää pienennettäviä JavaScript-tiedostoja" },
+  "inputPathDesc_main": {
+    "message": "Polku JavaScript-tiedostoon tai hakemistoon, joka sisältää pienennettäviä JavaScript-tiedostoja"
+  },
   "inputPathDesc_extra": { "message": "suhteessa nykyiseen työhakemistoon" },
   "outputPathDesc_main": { "message": "Polku tiedostoon tai hakemistoon, johon pienennetyt tiedostot tallennetaan" },
   "outputPathDesc_extra": { "message": "suhteessa alkuperäiseen tiedoston sijaintiin (jos ei annettu, min/ käytetään)" },
@@ -65,8 +68,12 @@
   "optionDesc_noRecursion": { "message": "Poista rekursiivinen tiedostohaku käytöstä" },
   "optionDesc_noMangle": { "message": "Poista mangling-nimet käytöstä" },
   "optionDesc_noFilenameChange": { "message": "Poista tiedostopäätteen muuttaminen muotoon .min.js" },
-  "optionDesc_copy": { "message": "Kopioi pienennetty koodi leikepöydälle sen sijaan, että kirjoittaisit tiedostoon, jos käsitellään yksittäistä lähdetiedostoa" },
-  "optionDesc_relativeOutput": { "message": "Tulosta tiedostot suhteessa kuhunkin lähdetiedostoon sen sijaan, että syöttäisit juuritiedoston" },
+  "optionDesc_copy": {
+    "message": "Kopioi pienennetty koodi leikepöydälle sen sijaan, että kirjoittaisit tiedostoon, jos käsitellään yksittäistä lähdetiedostoa"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Tulosta tiedostot suhteessa kuhunkin lähdetiedostoon sen sijaan, että syöttäisit juuritiedoston"
+  },
   "optionDesc_rewriteImports": { "message": "Päivitä tuontipolut .js: stä .min.js: ään" },
   "optionDesc_quiet": { "message": "Poista kaikki kirjaukset paitsi virheet" },
   "optionDesc_ignores": { "message": "Minifikaatiosta suljettavat tiedostot/hakemistot" },

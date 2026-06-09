@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Gwall wrth ddarllen fersiwn pecyn lleol" },
   "error_notRecognized": { "message": "heb ei gydnabod" },
   "error_nonPositiveNum": { "message": "gall fod yn 0 yn unig" },
+  "error_requiresVal": { "message": "mae angen gwerth" },
   "error_invalidFilepath": { "message": "rhaid iddo fod yn llwybr ffeil dilys sy'n bodoli eisoes. Wedi" },
   "error_invalidLangCode": { "message": "iaith annilys" },
   "error_invalidURL": { "message": "URL annilys" },
@@ -17,7 +18,9 @@
   "error_failedToFetchGlobalVer": { "message": "Methwyd cyrchu'r fersiwn eang" },
   "error_failedToFetchSysLang": { "message": "Methwyd cyrchu iaith y system" },
   "error_mustIncludePath": { "message": "rhaid cynnwys =llwybr" },
-  "error_firstArgNotExist": { "message": "Dim ond ffeil neu gyfeiriadur sy'n bodoli y gall y ddadl gyntaf fod yn ffeil neu gyfeiriadur" },
+  "error_firstArgNotExist": {
+    "message": "Dim ond ffeil neu gyfeiriadur sy'n bodoli y gall y ddadl gyntaf fod yn ffeil neu gyfeiriadur"
+  },
   "error_doesNotExist": { "message": "ddim yn bodoli" },
   "warn_configFileExists": { "message": "Ffeil cyfluniad yn bodoli'n barod" },
   "warn_docLocalesFetchFailed": { "message": "Methwyd cyrchu lleoliadau'r doc" },
@@ -58,15 +61,23 @@
   "optionDesc_uiLang": { "message": "ISO 639 -1 cod iaith i ddangos UI yn" },
   "inputPathDesc_main": { "message": "Llwybr i ffeil neu gyfeiriadur SCSS sy'n cynnwys ffeiliau SCSS i'w llunio" },
   "inputPathDesc_extra": { "message": "ynghylch y cyfeiriadur gwaith presennol" },
-  "outputPathDesc_main": { "message": "Llwybr i ffeil neu gyfeiriadur lle bydd ffeiliau map ffynhonnell CSS + yn cael eu storio" },
+  "outputPathDesc_main": {
+    "message": "Llwybr i ffeil neu gyfeiriadur lle bydd ffeiliau map ffynhonnell CSS + yn cael eu storio"
+  },
   "outputPathDesc_extra": { "message": "gwraidd mewnbwn (os nad yw'n cael ei ddarparu, css/ yn cael ei ddefnyddio)" },
-  "optionDesc_dryRun": { "message": "Peidio â chyfrifo'r ffeil(au) mewn gwirionedd, dim ond dangos a fyddant yn cael eu prosesu" },
+  "optionDesc_dryRun": {
+    "message": "Peidio â chyfrifo'r ffeil(au) mewn gwirionedd, dim ond dangos a fyddant yn cael eu prosesu"
+  },
   "optionDesc_dotfolders": { "message": "Cynnwys plygyll dotiau yn y chwiliad ffeil" },
   "optionDesc_noSourceMaps": { "message": "Atal mapiau ffynhonnell rhag cael eu cynhyrchu" },
   "optionDesc_noMinify": { "message": "Analluogi minification allbwn CSS" },
   "optionDesc_noRecursion": { "message": "Analluogi chwilio ffeiliau ailadroddus" },
-  "optionDesc_copy": { "message": "Copïo CSS a luniwyd i'r clipfwrdd yn lle ysgrifennu i ffeil os yw ffeil ffynhonnell sengl yn cael ei phrosesu" },
-  "optionDesc_relativeOutput": { "message": "Ffeiliau allbwn mewn perthynas â phob ffeil ffynhonnell yn lle mewnbynnu gwraidd" },
+  "optionDesc_copy": {
+    "message": "Copïo CSS a luniwyd i'r clipfwrdd yn lle ysgrifennu i ffeil os yw ffeil ffynhonnell sengl yn cael ei phrosesu"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Ffeiliau allbwn mewn perthynas â phob ffeil ffynhonnell yn lle mewnbynnu gwraidd"
+  },
   "optionDesc_quiet": { "message": "Atal pob cofnod ac eithrio gwallau" },
   "optionDesc_ignores": { "message": "Ffeiliau/cyfeiriaduron i'w heithrio o'r casgliad" },
   "optionDesc_commentMain": { "message": "Rhagosod sylw pennyn i lunio CSS" },

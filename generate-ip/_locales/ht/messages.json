@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Erè lekti vèsyon pakè lokal yo" },
   "error_notRecognized": { "message": "pa rekonèt/pa rekonèt" },
   "error_nonPositiveNum": { "message": "agiman ka sèlman > 0" },
+  "error_requiresVal": { "message": "mande pou yon valè/demande d '" },
   "error_invalidFilepath": { "message": "dwe yon valab chemen dosye ki egziste deja. Got" },
   "error_invalidLangCode": { "message": "se yon kòd langaj envalid/est un code lingu" },
   "error_invalidURL": { "message": "URL ki pa valab" },
@@ -17,7 +18,9 @@
   "error_failedToFetchGlobalVer": { "message": "Li pa t rive jwenn vèsyon mondyal la" },
   "error_failedToFetchSysLang": { "message": "Pa t 'jwenn langaj sistèm" },
   "error_mustIncludePath": { "message": "dwe gen ladan =chemen" },
-  "error_isRequired": { "message": "obligatwa/se obligatwa / ki nesesè/est requis/est exigé/ est absolument nécessaire/est requis/est requise/exigences" },
+  "error_isRequired": {
+    "message": "obligatwa/se obligatwa / ki nesesè/est requis/est exigé/ est absolument nécessaire/est requis/est requise/exigences"
+  },
   "error_whenPassing": { "message": "lè wap pase/en passant" },
   "error_mustBeGreaterThanOne": { "message": "dwe > 1" },
   "warn_configFileExists": { "message": "Config dosye deja egziste" },

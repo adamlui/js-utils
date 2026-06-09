@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Erreur lors de la lecture de la version du package local" },
   "error_notRecognized": { "message": "Non-reconnu" },
   "error_nonPositiveNum": { "message": "argument ne peut être > 0" },
+  "error_requiresVal": { "message": "nécessite une valeur" },
   "error_invalidFilepath": { "message": "doit être un chemin de fichier existant valide. Obtenu" },
   "error_invalidLangCode": { "message": "est un code de langue invalide" },
   "error_invalidURL": { "message": "URL Invalide" },
@@ -56,17 +57,29 @@
   "helpSection_params": { "message": "Options de paramètres" },
   "helpSection_cmds": { "message": "Commandes" },
   "optionDesc_uiLang": { "message": "Code de langue ISO 639-1 pour afficher l'interface utilisateur dans" },
-  "inputPathDesc_main": { "message": "Chemin d'accès au fichier SCSS ou répertoire contenant les fichiers SCSS à compiler" },
+  "inputPathDesc_main": {
+    "message": "Chemin d'accès au fichier SCSS ou répertoire contenant les fichiers SCSS à compiler"
+  },
   "inputPathDesc_extra": { "message": "par rapport au répertoire de travail actuel" },
-  "outputPathDesc_main": { "message": "Chemin vers le fichier ou le répertoire où les fichiers CSS + sourcemap seront stockés" },
-  "outputPathDesc_extra": { "message": "par rapport à la racine d'entrée (si elle n'est pas fournie, css/ est utilisé)" },
-  "optionDesc_dryRun": { "message": "Ne compilez pas réellement le (s) fichier(s), montrez simplement s'ils seront traités" },
+  "outputPathDesc_main": {
+    "message": "Chemin vers le fichier ou le répertoire où les fichiers CSS + sourcemap seront stockés"
+  },
+  "outputPathDesc_extra": {
+    "message": "par rapport à la racine d'entrée (si elle n'est pas fournie, css/ est utilisé)"
+  },
+  "optionDesc_dryRun": {
+    "message": "Ne compilez pas réellement le (s) fichier(s), montrez simplement s'ils seront traités"
+  },
   "optionDesc_dotfolders": { "message": "Inclure les dossiers à points dans la recherche de fichiers" },
   "optionDesc_noSourceMaps": { "message": "Empêcher la génération de cartes sources" },
   "optionDesc_noMinify": { "message": "Désactiver la minification du CSS de sortie" },
   "optionDesc_noRecursion": { "message": "Désactiver la recherche récursive de fichiers" },
-  "optionDesc_copy": { "message": "Copier le CSS compilé dans le presse-papiers au lieu d'écrire dans le fichier si un seul fichier source est traité" },
-  "optionDesc_relativeOutput": { "message": "Fichiers de sortie relatifs à chaque fichier source au lieu de la racine d'entrée" },
+  "optionDesc_copy": {
+    "message": "Copier le CSS compilé dans le presse-papiers au lieu d'écrire dans le fichier si un seul fichier source est traité"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Fichiers de sortie relatifs à chaque fichier source au lieu de la racine d'entrée"
+  },
   "optionDesc_quiet": { "message": "Supprimer tous les journaux sauf les erreurs" },
   "optionDesc_ignores": { "message": "Fichiers/répertoires à exclure de la compilation" },
   "optionDesc_commentMain": { "message": "Prépendre le commentaire d'en-tête au CSS compilé" },

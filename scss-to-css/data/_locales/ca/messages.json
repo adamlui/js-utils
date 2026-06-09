@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "S'ha produït un error en llegir la vers" },
   "error_notRecognized": { "message": "no reconegut" },
   "error_nonPositiveNum": { "message": "l'argument només pot ser > 0" },
+  "error_requiresVal": { "message": "requereix un valor" },
   "error_invalidFilepath": { "message": "ha de ser un camí d'accés al fitxer vàlid existent. D'acord" },
   "error_invalidLangCode": { "message": "és un codi d'idioma no vàlid" },
   "error_invalidURL": { "message": "Adreça URL no vàlida" },
@@ -65,8 +66,12 @@
   "optionDesc_noSourceMaps": { "message": "Evita que es generin mapes d'origen" },
   "optionDesc_noMinify": { "message": "Desactiva la minificació del CSS de sortida" },
   "optionDesc_noRecursion": { "message": "Desactiva la cerca recursiva de fitxers" },
-  "optionDesc_copy": { "message": "Copia el CSS compilat al porta-retalls en lloc d'escriure al fitxer si es processa un únic fitxer font" },
-  "optionDesc_relativeOutput": { "message": "Fitxers de sortida relatius a cada fitxer font en lloc d'a l'arrel d'entrada" },
+  "optionDesc_copy": {
+    "message": "Copia el CSS compilat al porta-retalls en lloc d'escriure al fitxer si es processa un únic fitxer font"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Fitxers de sortida relatius a cada fitxer font en lloc d'a l'arrel d'entrada"
+  },
   "optionDesc_quiet": { "message": "Suprimeix tot el registre, excepte els errors" },
   "optionDesc_ignores": { "message": "Fitxers/directoris a excloure de la compilació" },
   "optionDesc_commentMain": { "message": "Afegeix el comentari de la capçalera al CSS compilat" },

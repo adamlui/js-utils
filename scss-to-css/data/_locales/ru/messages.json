@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Ошибка при чтении версии локального пакета" },
   "error_notRecognized": { "message": "неидентифицированный" },
   "error_nonPositiveNum": { "message": "аргумент может быть только > 0" },
+  "error_requiresVal": { "message": "требует значения" },
   "error_invalidFilepath": { "message": "должен быть допустимый существующий путь к файлу. Получено" },
   "error_invalidLangCode": { "message": "является недопустимым кодом языка" },
   "error_invalidURL": { "message": "Недопустимый URL-адрес" },
@@ -65,8 +66,12 @@
   "optionDesc_noSourceMaps": { "message": "Предотвращение создания исходных карт" },
   "optionDesc_noMinify": { "message": "Отключить минификацию выходного CSS" },
   "optionDesc_noRecursion": { "message": "Отключить рекурсивный поиск файлов" },
-  "optionDesc_copy": { "message": "Копировать скомпилированный CSS в буфер обмена вместо записи в файл, если обрабатывается один исходный файл" },
-  "optionDesc_relativeOutput": { "message": "Выходные файлы относительно каждого исходного файла вместо входного корня" },
+  "optionDesc_copy": {
+    "message": "Копировать скомпилированный CSS в буфер обмена вместо записи в файл, если обрабатывается один исходный файл"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Выходные файлы относительно каждого исходного файла вместо входного корня"
+  },
   "optionDesc_quiet": { "message": "Подавление всех журналов, кроме ошибок" },
   "optionDesc_ignores": { "message": "Файлы/каталоги для исключения из компиляции" },
   "optionDesc_commentMain": { "message": "Добавить комментарий заголовка к скомпилированному CSS" },

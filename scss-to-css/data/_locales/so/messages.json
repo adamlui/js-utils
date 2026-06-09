@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Khalad akhrinta nooca xirmada maxalliga ah" },
   "error_notRecognized": { "message": "aan la aqoonsaneyn" },
   "error_nonPositiveNum": { "message": "doodu waxay noqon kartaa oo kaliya > 0" },
+  "error_requiresVal": { "message": "waxay u baahan tahay qiime" },
   "error_invalidFilepath": { "message": "waa in ay ahaataa waddo faylal sax ah oo jira. Got" },
   "error_invalidLangCode": { "message": "waa koodh luqadeed oo aan sax ahayn" },
   "error_invalidURL": { "message": "Mareeg aan sax ahayn" },
@@ -57,16 +58,26 @@
   "helpSection_cmds": { "message": "Amarada" },
   "optionDesc_uiLang": { "message": "ISO 639-1 code luqadda si ay u muujiyaan UI in" },
   "inputPathDesc_main": { "message": "Jidka faylka SCSS ama tusaha oo ay ku jiraan faylasha SCSS in la soo ururiyo" },
-  "inputPathDesc_extra": { "message": "previous article Ra 'iisul Wasaare Khayre Oo Maanta La Kulmay Wafdi Ka Socda Galmudug" },
+  "inputPathDesc_extra": {
+    "message": "previous article Ra 'iisul Wasaare Khayre Oo Maanta La Kulmay Wafdi Ka Socda Galmudug"
+  },
   "outputPathDesc_main": { "message": "Jidka faylka ama tusaha halkaas oo faylasha CSS + sourcemap lagu kaydin doono" },
-  "outputPathDesc_extra": { "message": "xidhiidhka xididka gelitaanka (haddii aan la bixin, css/ waxaa loo isticmaalaa)" },
-  "optionDesc_dryRun": { "message": "Ha isku dayin inaad soo dejiso faylka(yada), kaliya muuji haddii la shaqeyn doono" },
+  "outputPathDesc_extra": {
+    "message": "xidhiidhka xididka gelitaanka (haddii aan la bixin, css/ waxaa loo isticmaalaa)"
+  },
+  "optionDesc_dryRun": {
+    "message": "Ha isku dayin inaad soo dejiso faylka(yada), kaliya muuji haddii la shaqeyn doono"
+  },
   "optionDesc_dotfolders": { "message": "Ku dar dotfolders raadinta faylka" },
   "optionDesc_noSourceMaps": { "message": "Ka hortagga khariidadaha ilaha laga soo saaro" },
   "optionDesc_noMinify": { "message": "Disable yaraynta wax soo saarka CSS" },
   "optionDesc_noRecursion": { "message": "Disable raadinta faylka soo noqnoqda" },
-  "optionDesc_copy": { "message": "Nuqul ka kooban CSS in clipboard halkii qoraal si ay u soo gudbiyaan haddii file il keliya laga baaraandego" },
-  "optionDesc_relativeOutput": { "message": "Faylasha Output qaraabo ah file il kasta halkii si ay u soo geliyaan xididka" },
+  "optionDesc_copy": {
+    "message": "Nuqul ka kooban CSS in clipboard halkii qoraal si ay u soo gudbiyaan haddii file il keliya laga baaraandego"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Faylasha Output qaraabo ah file il kasta halkii si ay u soo geliyaan xididka"
+  },
   "optionDesc_quiet": { "message": "Xannib dhammaan gelitaanka marka laga reebo khaladaadka" },
   "optionDesc_ignores": { "message": "Faylasha/buugaagta si looga fogaado ururinta" },
   "optionDesc_commentMain": { "message": "U diyaari faallo madaxeed si ay u ururiyaan CSS" },

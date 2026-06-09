@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Çewtiya xwendina guhertoya pakêta herêmî" },
   "error_notRecognized": { "message": "nayê naskirin" },
   "error_nonPositiveNum": { "message": "arguman tenê dikare> 0 be" },
+  "error_requiresVal": { "message": "nirxek hewce dike" },
   "error_invalidFilepath": { "message": "divê rêyeke pelê heyî ya derbasdar be" },
   "error_invalidLangCode": { "message": "kodeke zimanî ya nederbasdar e" },
   "error_invalidURL": { "message": "URL ya nederbasdar" },
@@ -32,9 +33,13 @@
   "info_exampleValidConfigFile": { "message": "Nimûneya pelê mîhengê ya derbasdar" },
   "info_copyingToClip": { "message": "Kopîkirina li ser clipboard" },
   "info_moreHelp": { "message": "Ji bo bêtir alîkariyê" },
-  "info_type": { "message": "جۆر، چاپ دەکات، وێنە، نموونە، نووسین، چەشن، ئاست، چین، شێوە، پۆل، ڕێباز، بابەت\n[پزیشکی]: 1-نیشانە، دروشم، مۆر، تییپ 2-نموونەیەکی ئاسایی تێکڕا، بابەت 3-(لە نەخۆشیدا) نیشانەکانی جیاکەرەوەی تا، نەخۆشی.. ھتد یەک\n[زەویزانی]: نموونە، نقومی دەکات\n[ئامار]: تەرز، تیپ، شێواز، جۆر، چەشن\n[رۆژنامەوانی]: جۆر\n[ھونەر]: نموونە، تەرز\n[کۆمپیوتەر]: جۆر، چاپکردن" },
+  "info_type": {
+    "message": "جۆر، چاپ دەکات، وێنە، نموونە، نووسین، چەشن، ئاست، چین، شێوە، پۆل، ڕێباز، بابەت\n[پزیشکی]: 1-نیشانە، دروشم، مۆر، تییپ 2-نموونەیەکی ئاسایی تێکڕا، بابەت 3-(لە نەخۆشیدا) نیشانەکانی جیاکەرەوەی تا، نەخۆشی.. ھتد یەک\n[زەویزانی]: نموونە، نقومی دەکات\n[ئامار]: تەرز، تیپ، شێواز، جۆر، چەشن\n[رۆژنامەوانی]: جۆر\n[ھونەر]: نموونە، تەرز\n[کۆمپیوتەر]: جۆر، چاپکردن"
+  },
   "info_or": { "message": "an" },
-  "info_visit": { "message": "سەرلێدان، سەردان، قسە لەگەڵ کردن، تووش بوون (بەڵا)، سزادان، سەردانی دەکات، پشکنین، گەڕان لە" },
+  "info_visit": {
+    "message": "سەرلێدان، سەردان، قسە لەگەڵ کردن، تووش بوون (بەڵا)، سزادان، سەردانی دەکات، پشکنین، گەڕان لە"
+  },
   "info_toCreateDefaultConfig": { "message": "ji bo çêkirina pelê mîhengê ya xwerû" },
   "info_configFileCreated": { "message": "Pelê mîhengê hat afirandin" },
   "info_fetchingRemoteConfigFrom": { "message": "Pelê mîhengkirina dûr ji tê wergirtin" },

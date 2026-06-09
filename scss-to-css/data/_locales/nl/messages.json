@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Fout bij het lezen van lokale pakketversie" },
   "error_notRecognized": { "message": "Niet herkend" },
   "error_nonPositiveNum": { "message": "argument kan alleen > 0 zijn" },
+  "error_requiresVal": { "message": "vereist een waarde" },
   "error_invalidFilepath": { "message": "moet een geldig bestaand bestandspad zijn. Gekregen" },
   "error_invalidLangCode": { "message": "is een ongeldige taalcode" },
   "error_invalidURL": { "message": "Ongeldige URL" },
@@ -65,8 +66,12 @@
   "optionDesc_noSourceMaps": { "message": "Voorkomen dat brontoewijzingen worden gegenereerd" },
   "optionDesc_noMinify": { "message": "Minificatie van uitvoer CSS uitschakelen" },
   "optionDesc_noRecursion": { "message": "Recursief zoeken naar bestanden uitschakelen" },
-  "optionDesc_copy": { "message": "Kopieer gecompileerde CSS naar klembord in plaats van naar bestand te schrijven als één bronbestand wordt verwerkt" },
-  "optionDesc_relativeOutput": { "message": "Uitvoerbestanden ten opzichte van elk bronbestand in plaats van naar de root-invoer" },
+  "optionDesc_copy": {
+    "message": "Kopieer gecompileerde CSS naar klembord in plaats van naar bestand te schrijven als één bronbestand wordt verwerkt"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Uitvoerbestanden ten opzichte van elk bronbestand in plaats van naar de root-invoer"
+  },
   "optionDesc_quiet": { "message": "Alle logboekregistraties onderdrukken, behalve fouten" },
   "optionDesc_ignores": { "message": "Bestanden/mappen om uit te sluiten van compilatie" },
   "optionDesc_commentMain": { "message": "Koptekstcommentaar voorafgeven aan gecompileerde CSS" },

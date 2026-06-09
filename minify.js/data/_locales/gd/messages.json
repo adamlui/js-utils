@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Mearachd a 'leughadh dreach ionadail a' phacaid" },
   "error_notRecognized": { "message": "gun aithneachadh" },
   "error_nonPositiveNum": { "message": "chan urrainn dha a bhith ach 0" },
+  "error_requiresVal": { "message": "tha feum air luach" },
   "error_invalidFilepath": { "message": "feumaidh gur e slighe faidhle dhligheach a th 'ann. Got" },
   "error_invalidLangCode": { "message": "'S e eadar - theangair neo - eisimeileach a th' ann" },
   "error_invalidURL": { "message": "URL neo-dhligheach" },
@@ -17,7 +18,9 @@
   "error_failedToFetchGlobalVer": { "message": "Dh'fhàillig le togail an tionndaidh choitcheann" },
   "error_failedToFetchSysLang": { "message": "Dh'fhàillig le togail cànan an t - siostaim" },
   "error_mustIncludePath": { "message": "feumaidh gu bheil an t - slighe" },
-  "error_firstArgNotExist": { "message": "Chan urrainn don chiad argamaid a bhith ach faidhle no pasgan a tha ann mar - thà" },
+  "error_firstArgNotExist": {
+    "message": "Chan urrainn don chiad argamaid a bhith ach faidhle no pasgan a tha ann mar - thà"
+  },
   "error_doesNotExist": { "message": "Chan eil am faidhle ann" },
   "warn_configFileExists": { "message": "Tha am faidhle rèiteachaidh ann mar - thà" },
   "warn_docLocalesFetchFailed": { "message": "Dh'fhàillig le faighinn locales doc" },
@@ -55,18 +58,28 @@
   "helpSection_params": { "message": "Roghainnean a 'pharaiméadair" },
   "helpSection_cmds": { "message": "Àithnean fiosrachaidh" },
   "optionDesc_uiLang": { "message": "ISO 639 -1 Code of Language gus UI a thaisbeanadh ann an UI" },
-  "inputPathDesc_main": { "message": "Slighe gu faidhle JavaScript no pasgan anns a bheil faidhlichean JavaScript ri mion - sgrùdadh" },
+  "inputPathDesc_main": {
+    "message": "Slighe gu faidhle JavaScript no pasgan anns a bheil faidhlichean JavaScript ri mion - sgrùdadh"
+  },
   "inputPathDesc_extra": { "message": "an Stiùireadh Obrach a th 'ann an - diugh" },
   "outputPathDesc_main": { "message": "An t - slighe gu faidhle no pasgan far an tèid faidhlichean beaga a stòradh" },
-  "outputPathDesc_extra": { "message": "àite tùsail an fhaidhle (mura h - eil e air a thoirt seachad, thèid min/ a chleachdadh)" },
-  "optionDesc_dryRun": { "message": "Na dèan mion - sgrùdadh air an fhaidhle(ean), dìreach seall ma thèid an giullachd" },
+  "outputPathDesc_extra": {
+    "message": "àite tùsail an fhaidhle (mura h - eil e air a thoirt seachad, thèid min/ a chleachdadh)"
+  },
+  "optionDesc_dryRun": {
+    "message": "Na dèan mion - sgrùdadh air an fhaidhle(ean), dìreach seall ma thèid an giullachd"
+  },
   "optionDesc_dotfolders": { "message": "Cuir pasgain a - steach ann an lorg nam faidhle" },
   "optionDesc_dotfiles": { "message": "Cuir na dotagan a - steach ann an lorg nam faidhle" },
   "optionDesc_noRecursion": { "message": "Cuir à comas lorg nam faidhle ath - chùrsach" },
   "optionDesc_noMangle": { "message": "Cuir ainmean mangailte à comas" },
   "optionDesc_noFilenameChange": { "message": "Cuir à comas leudachadh an fhaidhle gu .min.js" },
-  "optionDesc_copy": { "message": "Dèan lethbhreac dhen chòd mhionaideach air an stòr - bhòrd an àite a bhith a 'sgrìobhadh dhan fhaidhle ma thèid am faidhle tùsail singilte a phròiseasadh" },
-  "optionDesc_relativeOutput": { "message": "Faidhlichean an às - chuir co - cheangailte ri gach faidhle tùsail an àite a bhith a 'cur freumh a - steach" },
+  "optionDesc_copy": {
+    "message": "Dèan lethbhreac dhen chòd mhionaideach air an stòr - bhòrd an àite a bhith a 'sgrìobhadh dhan fhaidhle ma thèid am faidhle tùsail singilte a phròiseasadh"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Faidhlichean an às - chuir co - cheangailte ri gach faidhle tùsail an àite a bhith a 'cur freumh a - steach"
+  },
   "optionDesc_rewriteImports": { "message": "Ùraich slighean in - mhalairt bho .js gu .min.js" },
   "optionDesc_quiet": { "message": "Cuir às do gach logadh ach a - mhàin mearachdan" },
   "optionDesc_ignores": { "message": "Faidhlichean/pasganan airson an dùnadh a - mach à minification" },

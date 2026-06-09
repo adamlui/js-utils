@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "ಸ್ಥಳೀಯ ಪ್ಯಾಕೇಜ್ ಆವೃತ್ತಿಯನ್ನು ಓದುವಲ್ಲಿ ದೋಷ" },
   "error_notRecognized": { "message": "ಗುರುತಿಸಲಾಗಿಲ್ಲ" },
   "error_nonPositiveNum": { "message": "ಆರ್ಗ್ಯುಮೆಂಟ್ ಕೇವಲ > 0 ಆಗಿರಬಹುದು" },
+  "error_requiresVal": { "message": "ಮೌಲ್ಯದ ಅಗತ್ಯವಿದೆ" },
   "error_invalidFilepath": { "message": "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಮಾನ್ಯ ಫೈಲ್ ಮಾರ್ಗವಾಗಿರಬೇಕು. ಸಿಕ್ಕಿದೆ" },
   "error_invalidLangCode": { "message": "ಇದು ಅಮಾನ್ಯ ಭಾಷೆಯ ಕೋಡ್ ಆಗಿದೆ" },
   "error_invalidURL": { "message": "Url ಸರಿಯಾಗಿಲ್ಲ" },
@@ -60,12 +61,16 @@
   "inputPathDesc_extra": { "message": "ಪ್ರಸ್ತುತ ವರ್ಕಿಂಗ್ ಡೈರೆಕ್ಟರಿಗೆ ಸಂಬಂಧಿಸಿದಂತೆ" },
   "outputPathDesc_main": { "message": "CSS + ಮೂಲ ನಕ್ಷೆ ಫೈಲ್‌ಗಳನ್ನು ಸಂಗ್ರಹಿಸುವ ಫೈಲ್ ಅಥವಾ ಡೈರೆಕ್ಟರಿಗೆ ಮಾರ್ಗ" },
   "outputPathDesc_extra": { "message": "ಇನ್‌ಪುಟ್ ರೂಟ್‌ಗೆ ಸಂಬಂಧಿಸಿದಂತೆ (ಒದಗಿಸದಿದ್ದರೆ, css/ ಬಳಸಲಾಗುತ್ತದೆ)" },
-  "optionDesc_dryRun": { "message": "ಫೈಲ್(ಗಳನ್ನು) ನಿಜವಾಗಿ ಕಂಪೈಲ್ ಮಾಡಬೇಡಿ, ಅವುಗಳನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತದೆಯೇ ಎಂದು ತೋರಿಸಿ" },
+  "optionDesc_dryRun": {
+    "message": "ಫೈಲ್(ಗಳನ್ನು) ನಿಜವಾಗಿ ಕಂಪೈಲ್ ಮಾಡಬೇಡಿ, ಅವುಗಳನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತದೆಯೇ ಎಂದು ತೋರಿಸಿ"
+  },
   "optionDesc_dotfolders": { "message": "ಫೈಲ್ ಹುಡುಕಾಟದಲ್ಲಿ ಡಾಟ್‌ಫೋಲ್ಡರ್‌ಗಳನ್ನು ಸೇರಿಸಿ" },
   "optionDesc_noSourceMaps": { "message": "ಮೂಲ ನಕ್ಷೆಗಳನ್ನು ರಚಿಸುವುದನ್ನು ತಡೆಯಿರಿ" },
   "optionDesc_noMinify": { "message": "ಔಟ್‌ಪುಟ್ CSS ನ ಗಣಿಗಾರಿಕೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ" },
   "optionDesc_noRecursion": { "message": "ಪುನರಾವರ್ತಿತ ಫೈಲ್ ಹುಡುಕಾಟವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ" },
-  "optionDesc_copy": { "message": "ಒಂದೇ ಮೂಲ ಫೈಲ್ ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಿದರೆ ಫೈಲ್ ಮಾಡಲು ಬರೆಯುವ ಬದಲು ಸಂಕಲಿಸಿದ CSS ಅನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಿ" },
+  "optionDesc_copy": {
+    "message": "ಒಂದೇ ಮೂಲ ಫೈಲ್ ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಿದರೆ ಫೈಲ್ ಮಾಡಲು ಬರೆಯುವ ಬದಲು ಸಂಕಲಿಸಿದ CSS ಅನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಿ"
+  },
   "optionDesc_relativeOutput": { "message": "ಇನ್‌ಪುಟ್ ರೂಟ್‌ಗೆ ಬದಲಾಗಿ ಪ್ರತಿ ಮೂಲ ಫೈಲ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ಔಟ್‌ಪುಟ್ ಫೈಲ್‌ಗಳು" },
   "optionDesc_quiet": { "message": "ದೋಷಗಳನ್ನು ಹೊರತುಪಡಿಸಿ ಎಲ್ಲಾ ಲಾಗಿಂಗ್ ಅನ್ನು ನಿಗ್ರಹಿಸಿ" },
   "optionDesc_ignores": { "message": "ಸಂಕಲನದಿಂದ ಹೊರಗಿಡಬೇಕಾದ ಫೈಲ್‌ಗಳು/ಡೈರೆಕ್ಟರಿಗಳು" },

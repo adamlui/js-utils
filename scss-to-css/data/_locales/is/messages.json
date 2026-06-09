@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Villa við að lesa staðbundna pakkaútgáfu" },
   "error_notRecognized": { "message": "ekki viðurkennt" },
   "error_nonPositiveNum": { "message": "frumbreyta getur aðeins verið > 0" },
+  "error_requiresVal": { "message": "krefst gildis" },
   "error_invalidFilepath": { "message": "verður að vera gild skráarslóð sem þegar er til. Got" },
   "error_invalidLangCode": { "message": "er ógildur tungumálakóði" },
   "error_invalidURL": { "message": "Ógild slóð" },
@@ -65,7 +66,9 @@
   "optionDesc_noSourceMaps": { "message": "Koma í veg fyrir að frumkort verði til" },
   "optionDesc_noMinify": { "message": "Slökkva á mölun úttaks CSS" },
   "optionDesc_noRecursion": { "message": "Afvirkja endurtekna skráaleit" },
-  "optionDesc_copy": { "message": "Afritaðu þjappað CSS á klemmuspjald í stað þess að skrifa til að skrá ef unnið er með eina frumskrá" },
+  "optionDesc_copy": {
+    "message": "Afritaðu þjappað CSS á klemmuspjald í stað þess að skrifa til að skrá ef unnið er með eina frumskrá"
+  },
   "optionDesc_relativeOutput": { "message": "Úttaksskrár tengdar hverri frumskrá í stað inntaksrótar" },
   "optionDesc_quiet": { "message": "Slökkva á öllum innskráningum nema villum" },
   "optionDesc_ignores": { "message": "Skrár/möppur til að útiloka frá samantekt" },

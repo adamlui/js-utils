@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Bipasha Basu Local Package Version" },
   "error_notRecognized": { "message": "tabeshiba" },
   "error_nonPositiveNum": { "message": "fela Anikulapo Kuti > 0" },
+  "error_requiresVal": { "message": "akabila Value" },
   "error_invalidFilepath": { "message": "fela Anikulapo Kuti Fela Anikulapo Kuti" },
   "error_invalidLangCode": { "message": "ilembo lya lulimi ulushaba na maka" },
   "error_invalidURL": { "message": "URL yabula amaka" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Ukulele Tabs in Password(s)" },
   "optionDesc_noUpper": { "message": "Ukulele Tabs ukulele tabs in password(s)" },
   "optionDesc_similarChars": { "message": "Sangeni ifilembo fimo fine mu password(s)" },
-  "optionDesc_unstrict": { "message": "Tamufwilepo ukupyungisha impindi imo pa kupyungisha impindi imo pa kupyungisha impindi imo" },
+  "optionDesc_unstrict": {
+    "message": "Tamufwilepo ukupyungisha impindi imo pa kupyungisha impindi imo pa kupyungisha impindi imo"
+  },
   "optionDesc_noEntropy": { "message": "Takuma Ishibashi/Takuma Ishibashi Entropy" },
   "optionDesc_quiet": { "message": "Fela Anikulapo Kuti - Fela Anikulapo Kuti" },
   "optionDesc_help": { "message": "Lekisha Help Screen" },

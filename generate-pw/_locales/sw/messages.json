@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Hitilafu wakati wa kusoma toleo la kifurushi cha" },
   "error_notRecognized": { "message": "haijatambuliwa" },
   "error_nonPositiveNum": { "message": "hoja inaweza tu kuwa > 0" },
+  "error_requiresVal": { "message": "inahitaji thamani" },
   "error_invalidFilepath": { "message": "lazima iwe njia sahihi ya faili iliyopo. Umeelewa" },
   "error_invalidLangCode": { "message": "ni msimbo batili wa lugha" },
   "error_invalidURL": { "message": "URL si sahihi" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Usiruhusu herufi ndogo katika nenosiri" },
   "optionDesc_noUpper": { "message": "Usiruhusu herufi kubwa katika nenosiri" },
   "optionDesc_similarChars": { "message": "Jumuisha herufi zinazofanana katika nenosiri" },
-  "optionDesc_unstrict": { "message": "Usihitaji angalau herufi moja kutoka kwa kila herufi inayoruhusiwa iliyowekwa kwenye nenosiri" },
+  "optionDesc_unstrict": {
+    "message": "Usihitaji angalau herufi moja kutoka kwa kila herufi inayoruhusiwa iliyowekwa kwenye nenosiri"
+  },
   "optionDesc_noEntropy": { "message": "Usihesabu/kumbukumbu ya makadirio ya entropy" },
   "optionDesc_quiet": { "message": "Zima ukataji wote wa magogo isipokuwa hitilafu" },
   "optionDesc_help": { "message": "Onyesha skrini ya usaidizi" },

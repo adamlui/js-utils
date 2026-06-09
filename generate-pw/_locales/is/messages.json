@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Villa við að lesa staðbundna pakkaútgáfu" },
   "error_notRecognized": { "message": "ekki viðurkennt" },
   "error_nonPositiveNum": { "message": "frumbreyta getur aðeins verið > 0" },
+  "error_requiresVal": { "message": "krefst gildis" },
   "error_invalidFilepath": { "message": "verður að vera gild skráarslóð sem þegar er til. Got" },
   "error_invalidLangCode": { "message": "er ógildur tungumálakóði" },
   "error_invalidURL": { "message": "Ógild slóð" },
@@ -56,7 +57,9 @@
   "optionDesc_noLower": { "message": "Ekki leyfa lágstafi í lykilorðieða -orðum" },
   "optionDesc_noUpper": { "message": "Ekki leyfa hástafi í lykilorðieða -orðum" },
   "optionDesc_similarChars": { "message": "Vertu með svipaða stafi í lykilorðieða -orðum" },
-  "optionDesc_unstrict": { "message": "Ekki krefjast að minnsta kosti eins stafs úr hverjum leyfðum staf sem stilltur er í lykilorði eða -orðum" },
+  "optionDesc_unstrict": {
+    "message": "Ekki krefjast að minnsta kosti eins stafs úr hverjum leyfðum staf sem stilltur er í lykilorði eða -orðum"
+  },
   "optionDesc_noEntropy": { "message": "Ekki reikna/skrá áætlaða óreiðu" },
   "optionDesc_quiet": { "message": "Slökkva á öllum innskráningum nema villum" },
   "optionDesc_help": { "message": "Birta hjálparskjá" },

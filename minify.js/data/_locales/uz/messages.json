@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Mahalliy paket versiyasini o'qishda xatolik yuz berdi" },
   "error_notRecognized": { "message": "aniqlanmadi" },
   "error_nonPositiveNum": { "message": "argument faqat > 0 bo'lishi mumkin" },
+  "error_requiresVal": { "message": "qiymat talab qiladi" },
   "error_invalidFilepath": { "message": "mavjud fayl yo'li to'g'ri bo'lishi kerak. Oldi" },
   "error_invalidLangCode": { "message": "yaroqsiz til kodi" },
   "error_invalidURL": { "message": "KDE qopchiq xizmati" },
@@ -55,7 +56,9 @@
   "helpSection_params": { "message": "Parametr variantlari" },
   "helpSection_cmds": { "message": "Ma'lumot buyruqlari" },
   "optionDesc_uiLang": { "message": "UI ni ko'rsatish uchun ISO 639-1 til kodi" },
-  "inputPathDesc_main": { "message": "JavaScript fayliga yoki JavaScript fayllarini o'z ichiga olgan katalogga yo'l kichiklashtiriladi" },
+  "inputPathDesc_main": {
+    "message": "JavaScript fayliga yoki JavaScript fayllarini o'z ichiga olgan katalogga yo'l kichiklashtiriladi"
+  },
   "inputPathDesc_extra": { "message": "joriy ishchi katalogga nisbatan" },
   "outputPathDesc_main": { "message": "Kichkinalashtirilgan fayllar saqlanadigan fayl yoki katalogga yo'l" },
   "outputPathDesc_extra": { "message": "asl fayl joylashuviga nisbatan (agar ko'rsatilmagan bo'lsa, min/ ishlatiladi)" },
@@ -65,8 +68,12 @@
   "optionDesc_noRecursion": { "message": "Rekursiv fayllarni qidirishni o'chiring" },
   "optionDesc_noMangle": { "message": "Nomlarni o'zgartirishni o'chirib qo'ying" },
   "optionDesc_noFilenameChange": { "message": "Fayl kengaytmasini .min.js ga o‘zgartirishni o‘chirib qo‘ying" },
-  "optionDesc_copy": { "message": "Bitta manba fayli qayta ishlansa, faylga yozish oʻrniga kichiklashtirilgan kodni vaqtinchalik xotiraga nusxalash" },
-  "optionDesc_relativeOutput": { "message": "Root fayliga emas, balki har bir manba fayliga nisbatan fayllarni chiqarish" },
+  "optionDesc_copy": {
+    "message": "Bitta manba fayli qayta ishlansa, faylga yozish oʻrniga kichiklashtirilgan kodni vaqtinchalik xotiraga nusxalash"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Root fayliga emas, balki har bir manba fayliga nisbatan fayllarni chiqarish"
+  },
   "optionDesc_rewriteImports": { "message": ".js dan .min.js ga import yo'llarini yangilang" },
   "optionDesc_quiet": { "message": "Xatolardan tashqari barcha jurnallarni bostirish" },
   "optionDesc_ignores": { "message": "Minififikatsiyadan chiqarib tashlanadigan fayllar/kataloglar" },

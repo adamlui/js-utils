@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Aconteceu un erro ao ler a versión do paquete local" },
   "error_notRecognized": { "message": "non recoñecidos" },
   "error_nonPositiveNum": { "message": "argumento só pode ser > 0" },
+  "error_requiresVal": { "message": "require un valor" },
   "error_invalidFilepath": { "message": "debe ser unha rota de ficheiros válida. Obtívose" },
   "error_invalidLangCode": { "message": "é un código de idioma non válido" },
   "error_invalidURL": { "message": "O URL non é válido" },
@@ -36,7 +37,9 @@
   "info_copyingToClip": { "message": "Copiando para o portarretallos" },
   "info_writing": { "message": "A escribir no ficheiro" },
   "info_minComplete": { "message": "Minificación completa" },
-  "info_file": { "message": "FicheiroIncompatible database driver&apos; s \"% 1\" version: found version% 2, expected version% 3.% 1.% 2% 1.% 2" },
+  "info_file": {
+    "message": "FicheiroIncompatible database driver&apos; s \"% 1\" version: found version% 2, expected version% 3.% 1.% 2% 1.% 2"
+  },
   "info_minified": { "message": "minifundio" },
   "info_noFilesProcessed": { "message": "Non se procesaron ficheiros JavaScript non minificados" },
   "info_failedToMinify": { "message": "non se puido minificar" },
@@ -55,18 +58,26 @@
   "helpSection_params": { "message": "Opcións de parámetro" },
   "helpSection_cmds": { "message": "Comandos de información" },
   "optionDesc_uiLang": { "message": "ISO 639-1 código de idioma para mostrar UI en" },
-  "inputPathDesc_main": { "message": "Camiño ao ficheiro ou directorio JavaScript que contén ficheiros JavaScript a minificar" },
+  "inputPathDesc_main": {
+    "message": "Camiño ao ficheiro ou directorio JavaScript que contén ficheiros JavaScript a minificar"
+  },
   "inputPathDesc_extra": { "message": "relativo ao directorio de traballo actual" },
   "outputPathDesc_main": { "message": "Camiño ao ficheiro ou directorio onde se almacenarán os ficheiros minificados" },
-  "outputPathDesc_extra": { "message": "en relación coa localización orixinal do ficheiro (se non se fornece, utilízase min/)" },
+  "outputPathDesc_extra": {
+    "message": "en relación coa localización orixinal do ficheiro (se non se fornece, utilízase min/)"
+  },
   "optionDesc_dryRun": { "message": "Non minifique realmente o (s) ficheiro(s), só mostre se serán procesados" },
   "optionDesc_dotfolders": { "message": "Incluír cartafoles de puntos na procura de ficheiros" },
   "optionDesc_dotfiles": { "message": "Incluír ficheiros de punto na procura de ficheiros" },
   "optionDesc_noRecursion": { "message": "Desactivar a procura recursiva de ficheiros" },
   "optionDesc_noMangle": { "message": "Desactivar os nomes de mangle" },
   "optionDesc_noFilenameChange": { "message": "Desactivar o cambio de extensión de ficheiro a .min.js" },
-  "optionDesc_copy": { "message": "Copiar o código minificado no portarretallos no canto de escribir no ficheiro se se procesa o ficheiro de orixe única" },
-  "optionDesc_relativeOutput": { "message": "Saír ficheiros en relación a cada ficheiro de orixe en lugar de introducir a raíz" },
+  "optionDesc_copy": {
+    "message": "Copiar o código minificado no portarretallos no canto de escribir no ficheiro se se procesa o ficheiro de orixe única"
+  },
+  "optionDesc_relativeOutput": {
+    "message": "Saír ficheiros en relación a cada ficheiro de orixe en lugar de introducir a raíz"
+  },
   "optionDesc_rewriteImports": { "message": "Actualizar importar rutas de .js a .min.js" },
   "optionDesc_quiet": { "message": "Suprimir todo o rexistro agás erros" },
   "optionDesc_ignores": { "message": "Ficheiros/directorios para excluír da minificación" },
