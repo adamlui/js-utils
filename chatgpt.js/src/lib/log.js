@@ -1,9 +1,9 @@
-const colors = require('./color'),
-    { getDownloads, getVer } = require('./pkg'),
-      settings = require('./settings'),
-      string = require('../../lib/string')
+const colors = require('../cli/lib/color'),
+    { getDownloads, getVer } = require('../cli/lib/pkg'),
+      settings = require('../cli/lib/settings'),
+      string = require('./string')
 
-const nextMajVer = require('../../../package.json').version.replace(/^(\d+)\..*/, (_, major) => `${ +major +1 }.0.0`)
+const nextMajVer = require('../../package.json').version.replace(/^(\d+)\..*/, (_, major) => `${ +major +1 }.0.0`)
 
 module.exports = {
     colors,
@@ -68,6 +68,7 @@ module.exports = {
                 `\n${this.colors.bw}o ${cli.msgs.helpSection_params}:${this.colors.nc}`,
                 ` -p, --provider <provider>            ${cli.msgs.optionDesc_provider}.`,
                 ` -u, --ui-lang <code>                 ${cli.msgs.optionDesc_uiLang}.`,
+                ` -L, --reply-lang <text>              ${cli.msgs.optionDesc_replyLang}.`,
                 ` -q, --query <msg>                    ${cli.msgs.optionDesc_query}.`,
                 ` -s, --summarize <filepath|text|url>  ${cli.msgs.optionDesc_summarize}.`,
                 ` -a, --ascii-art [subject]            ${cli.msgs.optionDesc_asciiArt}.`,
