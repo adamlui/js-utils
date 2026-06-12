@@ -61,11 +61,11 @@ module.exports = {
                 `${cli.prefix}${cli.msgs.prefix_source}: ${cli.urls.src}`
             ],
             usage: [
-                `\n${this.colors.bw}o ${cli.msgs.helpSection_usage}:${this.colors.nc}`,
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_usage.toLowerCase()}:${this.colors.nc}`,
                 ` ${this.colors.bw}» ${this.colors.bg}${cli.cmdFormat}${this.colors.nc}`
             ],
             params: [
-                `\n${this.colors.bw}o ${cli.msgs.helpSection_params}:${this.colors.nc}`,
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_params.toLowerCase()}:${this.colors.nc}`,
                 ` --length=n                  ${cli.msgs.optionDesc_length}.`,
                 ` --qty=n                     ${cli.msgs.optionDesc_qty}.`,
                 ` --charset=chars             ${cli.msgs.optionDesc_charset}.`,
@@ -74,7 +74,7 @@ module.exports = {
                 ` --config="path/to/file"     ${cli.msgs.optionDesc_config}.`
             ],
             flags: [
-                `\n${this.colors.bw}o ${cli.msgs.helpSection_flags}:${this.colors.nc}`,
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_flags.toLowerCase()}:${this.colors.nc}`,
                 ` -w, --weak                  ${cli.msgs.optionDesc_weak}.`,
                 ` -b, --basic                 ${cli.msgs.optionDesc_basic}.`,
                 ` -t, --strong                ${cli.msgs.optionDesc_strong}.`,
@@ -88,7 +88,7 @@ module.exports = {
                 ` -q, --quiet                 ${cli.msgs.optionDesc_quiet}.`
             ],
             cmds: [
-                `\n${this.colors.bw}o ${cli.msgs.helpSection_cmds}:${this.colors.nc}`,
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_cmds.toLowerCase()}:${this.colors.nc}`,
                 ` -i, --init                  ${cli.msgs.optionDesc_init}.`,
                 ` -h, --help                  ${cli.msgs.optionDesc_help}.`,
                 ` -v, --version               ${cli.msgs.optionDesc_version}.`,

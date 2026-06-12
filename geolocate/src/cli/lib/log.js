@@ -76,20 +76,20 @@ module.exports = {
                 `${cli.prefix}${cli.msgs.prefix_source}: ${cli.urls.src}`
             ],
             usage: [
-                `\n${this.colors.bw}o ${cli.msgs.helpSection_usage}:${this.colors.nc}`,
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_usage.toLowerCase()}:${this.colors.nc}`,
                 ` ${this.colors.bw}» ${this.colors.bg}${cli.cmdFormat}${this.colors.nc}`
             ],
             params: [
-                `\n${this.colors.bw}o ${cli.msgs.helpSection_params}:${this.colors.nc}`,
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_params.toLowerCase()}:${this.colors.nc}`,
                 ` --ui-lang="code"            ${cli.msgs.optionDesc_uiLang}.`,
                 ` --config="path/to/file"     ${cli.msgs.optionDesc_config}.`
             ],
             flags: [
-                `\n${this.colors.bw}o ${cli.msgs.helpSection_flags}:${this.colors.nc}`,
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_flags.toLowerCase()}:${this.colors.nc}`,
                 ` -q, --quiet                 ${cli.msgs.optionDesc_quiet}.`
             ],
             cmds: [
-                `\n${this.colors.bw}o ${cli.msgs.helpSection_cmds}:${this.colors.nc}`,
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_cmds.toLowerCase()}:${this.colors.nc}`,
                 ` -i, --init                  ${cli.msgs.optionDesc_init}.`,
                 ` -h, --help                  ${cli.msgs.optionDesc_help}.`,
                 ` -v, --version               ${cli.msgs.optionDesc_version}.`,

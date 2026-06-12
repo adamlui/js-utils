@@ -61,16 +61,16 @@ module.exports = {
                 `${cli.prefix}${cli.msgs.prefix_source}: ${cli.urls.src}`
             ],
             usage: [
-                `\n${this.colors.bw}o ${cli.msgs.helpSection_usage}:${this.colors.nc}`,
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_usage.toLowerCase()}:${this.colors.nc}`,
                 ` ${this.colors.bw}» ${this.colors.bg}${cli.cmdFormat}${this.colors.nc}`
             ],
             pathArgs: [
-                `\n${this.colors.bw}o ${cli.msgs.helpSection_pathArgs}:${this.colors.nc}`,
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_pathArgs.toLowerCase()}:${this.colors.nc}`,
                 ` [inputPath]                         ${cli.msgs.inputPathDesc_main}, ${cli.msgs.inputPathDesc_extra}.`,
                 ` [outputPath]                        ${cli.msgs.outputPathDesc_main}, ${cli.msgs.outputPathDesc_extra}.`
             ],
             flags: [
-                `\n${this.colors.bw}o ${cli.msgs.helpSection_flags}:${this.colors.nc}`,
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_flags.toLowerCase()}:${this.colors.nc}`,
                 ` -n, --dry-run                       ${cli.msgs.optionDesc_dryRun}.`,
                 ` -d, --include-dotfolders            ${cli.msgs.optionDesc_dotfolders}.`,
                 ` -D, --include-dotfiles              ${cli.msgs.optionDesc_dotfiles}.`,
@@ -83,7 +83,7 @@ module.exports = {
                 ` -q, --quiet                         ${cli.msgs.optionDesc_quiet}.`
             ],
             params: [
-                `\n${this.colors.bw}o ${cli.msgs.helpSection_params}:${this.colors.nc}`,
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_params.toLowerCase()}:${this.colors.nc}`,
                 `--ignores="dir/,file1.js,file2.js"   ${cli.msgs.optionDesc_ignores}.`,
                 `--comment="comment"                  ${cli.msgs.optionDesc_commentMain}.`
                                                  +  ` ${cli.msgs.optionDesc_commentExtra}.`,
@@ -91,7 +91,7 @@ module.exports = {
                 ` --config="path/to/file"             ${cli.msgs.optionDesc_config}.`
             ],
             cmds: [
-                `\n${this.colors.bw}o ${cli.msgs.helpSection_cmds}:${this.colors.nc}`,
+                `\n${this.colors.bw}o ${cli.msgs.helpSection_cmds.toLowerCase()}:${this.colors.nc}`,
                 `     --init                          ${cli.msgs.optionDesc_init}.`,
                 ` -h, --help                          ${cli.msgs.optionDesc_help}.`,
                 ` -v, --version                       ${cli.msgs.optionDesc_version}.`,
