@@ -47,7 +47,7 @@
   "geoLabel_timeZone": { "message": "Time zone" },
   "helpSection_usage": { "message": "Usage" },
   "helpSection_params": { "message": "Parameter options" },
-  "helpSection_flags": { "message": "Config options" },
+  "helpSection_flags": { "message": "Flags" },
   "helpSection_cmds": { "message": "Commands" },
   "optionDesc_uiLang": { "message": "ISO 639-1 code of language to display UI in" },
   "optionDesc_config": { "message": "Load custom config file" },

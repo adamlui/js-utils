@@ -6,9 +6,12 @@
   "error_readingLocalPkgVer": { "message": "Impazamo yokufunda uhlobo lwephakheji yasekuhlaleni" },
   "error_notRecognized": { "message": "ayibonakali" },
   "error_nonPositiveNum": { "message": "impikiswano inokuba > 0 kuphela" },
+  "error_requiresVal": { "message": "ifuna ixabiso" },
   "error_invalidFilepath": { "message": "must be a valid existing file path. Got" },
   "error_invalidLangCode": { "message": "is an invalid language code" },
-  "error_invalidURL": { "message": "Amagama efayile aceliweyo% 1 ayikhangeleki isebenza kum. Qinisekisa ukuba igama lefayile livalelwe kuchaphulo olu phindwe kabini" },
+  "error_invalidURL": {
+    "message": "Amagama efayile aceliweyo% 1 ayikhangeleki isebenza kum. Qinisekisa ukuba igama lefayile livalelwe kuchaphulo olu phindwe kabini"
+  },
   "error_invalidConfigFile": { "message": "Qwalasela ifayile kufuneka ithumele into" },
   "error_invalidKey": { "message": "Isitshixo asichananga" },
   "error_foundIn": { "message": "ifunyenwe kwi" },
@@ -46,7 +49,7 @@
   "geoLabel_timeZone": { "message": "Izowuni yexesha" },
   "helpSection_usage": { "message": "Umyalezo" },
   "helpSection_params": { "message": "Lungelelanisa izinto onokukhetha kuzo" },
-  "helpSection_flags": { "message": "Lungelelanisa izinto onokukhetha kuzo" },
+  "helpSection_flags": { "message": "Iiflegi" },
   "helpSection_cmds": { "message": "Imiyalelo yenkcazelo" },
   "optionDesc_uiLang": { "message": "Ikhowudi yolwimi ye-ISO 639-1 yokubonisa i-UI" },
   "optionDesc_config": { "message": "Faka ifayile yokumisela ekhethekileyo" },

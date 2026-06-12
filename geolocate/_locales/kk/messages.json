@@ -6,6 +6,7 @@
   "error_readingLocalPkgVer": { "message": "Жергілікті пакет нұсқасын оқу қатесі" },
   "error_notRecognized": { "message": "мойындалмады" },
   "error_nonPositiveNum": { "message": "аргумент тек > 0 болуы мүмкін" },
+  "error_requiresVal": { "message": "мәнді қажет етеді" },
   "error_invalidFilepath": { "message": "must be a valid existing file path. Got" },
   "error_invalidLangCode": { "message": "is an invalid language code" },
   "error_invalidURL": { "message": "Жарамсыз URL" },
@@ -38,7 +39,9 @@
   "tip_editToSetDefaults": { "message": "Әдепкі мәндерді теңшеу үшін осы файлды өңдеңіз" },
   "tip_cliArgsPrioritized": { "message": "CLI аргументтері бұл мәндерді әрдайым жоққа шығарады" },
   "geoLabel_country": { "message": "Ел" },
-  "geoLabel_region": { "message": "KPilot- ÑÑÒ£ Ð°Ð´Ñ. ÐºÑÑÐ°Ð¿ÑÐ°ÑÑÐ½ ÒÐ°ÑÐ°Ñ Ð°ÑÐ½Ð°ÑÑÐ½ÑÒ£ Ð¿Ð°ÑÐ°Ð¼ÐµÑÑÐ»ÐµÑÑ" },
+  "geoLabel_region": {
+    "message": "KPilot- ÑÑÒ£ Ð°Ð´Ñ. ÐºÑÑÐ°Ð¿ÑÐ°ÑÑÐ½ ÒÐ°ÑÐ°Ñ Ð°ÑÐ½Ð°ÑÑÐ½ÑÒ£ Ð¿Ð°ÑÐ°Ð¼ÐµÑÑÐ»ÐµÑÑ"
+  },
   "geoLabel_city": { "message": "Қала" },
   "geoLabel_zip": { "message": "Пошта индексі" },
   "geoLabel_lat": { "message": "Географиялық ендігі" },
@@ -46,7 +49,7 @@
   "geoLabel_timeZone": { "message": "Қалған уақыт@ label" },
   "helpSection_usage": { "message": "ТолуыName" },
   "helpSection_params": { "message": "Параметр опциялары" },
-  "helpSection_flags": { "message": "Параметрлерді теңшеу" },
+  "helpSection_flags": { "message": "Тулар" },
   "helpSection_cmds": { "message": "Ақпараттық командалар" },
   "optionDesc_uiLang": { "message": "Пайдаланушы интерфейсін көрсету үшін ISO 639-1 тіл коды" },
   "optionDesc_config": { "message": "Теңшелетін конфигурация файлын жүктеу" },
