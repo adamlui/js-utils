@@ -22,7 +22,7 @@ jobs:
           TAG="${{ github.event.release.tag_name }}"
           PROJECT="${TAG%-*}"
           echo "PROJECT=$PROJECT" >> $GITHUB_ENV
-      - uses: actions/checkout@v6.0.3
+      - uses: actions/checkout@v7.0.0
       - uses: actions/setup-node@v6.4.0
         with:
           node-version: 24
