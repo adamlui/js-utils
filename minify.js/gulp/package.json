@@ -61,8 +61,8 @@
   },
   "devDependencies": {
     "@adamlui/minify.js": "^2.5.3",
-    "@eslint/json": "^2.0.0",
-    "@eslint/markdown": "^8.0.2",
+    "@eslint/json": "^2.0.1",
+    "@eslint/markdown": "^8.0.3",
     "@stylistic/eslint-plugin": "^5.10.0",
     "eslint": "^9.39.4",
     "eslint-plugin-import": "^2.32.0",
