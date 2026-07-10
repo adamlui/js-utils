@@ -73,7 +73,7 @@
     "non-latin-locales": "^1.0.1"
   },
   "devDependencies": {
-    "@adamlui/minify.js": "^2.5.3",
+    "@adamlui/minify.js": "^2.5.4",
     "@eslint/js": "^10.0.1",
     "@eslint/json": "^2.0.1",
     "@eslint/markdown": "^8.0.3",
