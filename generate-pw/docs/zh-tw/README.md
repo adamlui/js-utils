@@ -7,7 +7,7 @@
             <img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/icons/earth/black/icon32.svg">
         </picture>
         &nbsp;繁體中文 |
-        <a href="../..#readme">English</a> |
+        <a href="../../#readme">English</a> |
         <a href="../zh-cn/#readme">简体中文</a> |
         <a href="../hi/#readme">हिंदी</a> |
         <a href="../bn/#readme">বাংলা</a> |
