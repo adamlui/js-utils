@@ -104,7 +104,7 @@ Copyright © 2026 [Adam Lui](https://github.com/adamlui)
     </a>
 </details>
 
-> [<img height=14 width="auto" src="https://cdn.jsdelivr.net/gh//adamlui/js-utils@dbdea4b/assets/images/icons/runtimes/node.js/icon25x28.png">][data-langs-install]
+> [<img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@5b255b1/assets/images/icons/runtimes/node.js/icon25x28.png">][data-langs-install]
 > [Install][data-langs-install] /
 > [<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/paper-sheet/white.svg"><img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/paper-sheet/black.svg"></picture>][data-langs-readme]
 > [Readme][data-langs-readme] /
