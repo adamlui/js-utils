@@ -7,7 +7,7 @@
             <img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/scss-to-css@7e4a141/assets/images/icons/earth/black/icon32.svg">
         </picture>
         &nbsp;Nederlands |
-        <a href="../..#readme">English</a> |
+        <a href="../../#readme">English</a> |
         <a href="../zh-cn/#readme">简体中文</a> |
         <a href="../zh-tw/#readme">繁體中文</a> |
         <a href="../ja/#readme">日本語</a> |
@@ -29,8 +29,8 @@
 
 <a href="https://npm-compare.com/@adamlui/scss-to-css/#timeRange=ALL">
     <img height=31 src="https://img.shields.io/npm/dm/%40adamlui%2Fscss-to-css?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-2.4.4">
-    <img height=31 src="https://img.shields.io/badge/Nieuwste_Constructie-2.4.4-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/js-utils/releases/tag/scss-to-css-2.4.5">
+    <img height=31 src="https://img.shields.io/badge/Nieuwste_Constructie-2.4.5-44cc11.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-mit-licentie">
     <img height=31 src="https://img.shields.io/badge/Licentie-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.npmjs.com/package/@adamlui/scss-to-css?activeTab=code">
