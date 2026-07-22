@@ -28,4 +28,4 @@ jobs:
           node-version: 24
           registry-url: https://registry.npmjs.org
       - run: |
-          cd ${{ env.PROJECT }} && npm ci && npm run build && npm publish --provenance
+          cd ${{ env.PROJECT }} && npm ci --ignore-scripts && npm run build && npm publish --provenance
