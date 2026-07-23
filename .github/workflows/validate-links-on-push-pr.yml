@@ -19,4 +19,3 @@ jobs:
         with:
           paths: '**/*.md'
           statusCodes: '{ "403": "skip", "408": "skip", "429": "skip" }'
-          linksToSkip: '^https://assets\\.(?:bravegpt\\.com|chatgptjs\\.org)(?:/|$)'
